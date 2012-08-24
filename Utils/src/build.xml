@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<project name="Applets" basedir=".">
+  
+  <target name="CountdownClock" description="Create executable jar">
+	       
+   <property name="app" value="CountdownClock" />
+	<property name="dist" location="C:/pkgs/dist" />
+	<property name="dir" location="${dist}/applets" />
+	   
+	<mkdir dir="${dir}" />
+	      
+   <copy todir="${dir}" overwrite="true">
+      <fileset dir="../classes">
+         <include name="CountdownClock.class" />
+      </fileset>
+   </copy>
+           
+  	<delete file="${dir}/${app}.jar" />
+	<jar destfile="${dir}/${app}.jar">
+	  <manifest>
+	    <attribute name="Main-Class" value="CountdownClock"/>
+	    <attribute name="Class-Path" value="*"/>
+	  </manifest>
+	  <fileset dir="../classes">
+	    <include name="*.class" />
+	  </fileset>
+	</jar>
+
+	</target>
+	
+</project>
