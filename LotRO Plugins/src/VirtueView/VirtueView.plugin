@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Plugin>
+	<Information>
+		<Name>VirtueView</Name>
+		<Author>Mosby of Landroval</Author>
+		<Version>1.0-beta</Version>
+		<Description>Shows deeds which reward a Virtue bonus, based on selected virtues and/or regions.</Description>
+		<Image>Palantiri/VirtueView/Resources/logo.jpg</Image>
+	</Information>
+	<Package>Palantiri.VirtueView.Main</Package>
+</Plugin>

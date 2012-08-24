@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Plugin>
+	<Information>
+		<Name>GambitGuide</Name>
+		<Author>Mosby of Landroval</Author>
+		<Version>1.0-beta</Version>
+		<Description>Shows Warden gambits based on selected effects, stances, etc.</Description>
+		<Image>Palantiri/GambitGuide/Resources/logo.jpg</Image>
+	</Information>
+	<Package>Palantiri.GambitGuide.Main</Package>
+</Plugin>
