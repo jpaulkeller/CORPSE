@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jnlp codebase="https://legacyapps.oberonassociates.com/portal/acronym/">
+
+  <information>
+    <title>Oberon Acronym Extractor</title>
+    <vendor>Oberon Associates</vendor>
+    <description>Extracts and defines acronyms.</description>
+    <offline-allowed/>
+    <shortcut online="true">
+       <desktop/>
+    </shortcut>
+  </information>
+  
+  <security>
+    <all-permissions/>
+  </security>
+  
+  <resources>
+    <j2se version="1.5+" max-heap-size="512m"/>
+    <jar href="AcronymExtractor.jar" main="true"/>
+    <jar href="iText-2.1.5.jar"/>
+    <jar href="iText-rtf-2.1.5.jar"/>
+    <jar href="poi-3.5-beta5-20090219.jar"/>
+    <jar href="poi-scratchpad-3.5-beta5-20090219.jar"/>
+    <jar href="swingx-0.9.5.jar"/>
+    <jar href="jtds-1.2.2.jar"/>
+    <nativelib href="jtds-native.jar"/>
+  </resources>
+  
+  <application-desc main-class="oberon.proposal.acronym.AcronymExtractor">        
+  </application-desc>  
+</jnlp>

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<project name="Oberon Proposal Tools" basedir=".">
+  
+  <property name="dist" value="C:/pkgs/dist" />
+  <property name="dir" location="${dist}/acronym" />
+  <property name="app" value="AcronymExtractor" />
+
+  <target name="Acronym Extractor">
+            
+   <mkdir dir="${dir}" />
+   <mkdir dir="${dir}/jars" />
+            
+   <copy todir="${dir}" overwrite="true">
+      <fileset dir=".">
+         <include name="${app}.jnlp" />
+      </fileset>
+   </copy>
+         
+   <copy todir="${dir}/jars" overwrite="true">
+      <fileset dir="../../lib">
+         <include name="iText-2.1.5.jar" />
+         <include name="iText-rtf-2.1.5.jar" />
+         <include name="jtds-1.2.2.jar" />
+         <include name="jtds-native.jar" />
+         <include name="poi-3.5-beta5-20090219.jar" />
+         <include name="poi-ooxml-3.5-beta5-20090219.jar" />
+         <include name="poi-scratchpad-3.5-beta5-20090219.jar" />
+         <include name="swingx-0.9.5.jar" />
+      </fileset>
+   </copy>
+            
+   <delete file="${dir}/jars/${app}.jar" />
+   <jar destfile="${dir}/jars/${app}.jar">
+     <manifest>
+      <attribute name="Main-Class" value="oberon.proposal.acronym.AcronymExtractor"/>
+       <attribute name="Class-Path" value="jars/*"/>
+     </manifest>
+     <fileset dir="../../classes">
+       <include name="**/*.class" />
+     </fileset>
+     <fileset dir="../..">
+       <include name="icons/DataStore.gif" />
+       <include name="icons/Diagram.gif" />
+       <include name="icons/DocumentDiagram.gif" />
+       <include name="icons/DocumentIn.gif" />
+       <include name="icons/DocumentScan.gif" />
+       <include name="icons/DocumentList.gif" />
+       <include name="icons/DocumentSelect.gif" />
+       <include name="icons/FolderDocument.gif" />
+       <include name="icons/SaveAsHTML.gif" />
+       <include name="icons/SaveAsEXCEL.gif" />
+       <include name="icons/ArrowDownSmall.gif" />
+       <include name="icons/RowDelete.gif" />
+       <include name="icons/RowNew.gif" />
+       <include name="icons/SheetNew.gif" />
+       <include name="icons/Magnify.gif" />
+       <include name="icons/Printer.gif" />
+     </fileset>
+   </jar>
+   
+   <signjar alias="oberon" keystore="${dist}/keystore" storepass="vgy78uhb">
+      <fileset dir="${dir}/jars" includes="*.jar" />
+   </signjar>
+
+  </target>
+
+</project>
