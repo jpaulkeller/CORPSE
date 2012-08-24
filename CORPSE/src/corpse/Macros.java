@@ -13,7 +13,7 @@ public final class Macros
    
    private static final Stack<String> TOKEN_STACK = new Stack<String>();
    
-   static final Pattern TOKEN = Pattern.compile ("\\{([^{]+)\\}");
+   static final Pattern TOKEN = Pattern.compile ("\\{([^{}]+)\\}");
    
    static final Pattern ROLL = // {#}
       Pattern.compile ("\\{(\\d+)\\}");
@@ -48,7 +48,7 @@ public final class Macros
    // [50/50] CONDITION (all-or-nothing format): {{2}=2?ALL}
    // [50/50] CONDITION (either/or format)     : {{2}=2?YES:NO}
    // [70/30] CONDITION (using > operator)     : {{10}>7?RARE:COMMON}
-   // Note: the first element of the inner expression (e.g., {2} will be 
+   // Note: the first element of the inner expression (e.g., {2}) will be 
    // resolved prior to the evaluation the outer expression, and so the 
    // first group of the pattern includes just the number.  It is necessary
    // to use the braces though, to support more complex patterns such as:
@@ -77,12 +77,14 @@ public final class Macros
                        Pattern.quote (COMMENT_CHAR + HEADER_CHAR + FOOTNOTE_CHAR +
                                       SEPR_CHAR + SOURCE_CHAR + TITLE_CHAR) +
                        "].*", Pattern.MULTILINE);
-
-   private static final String NAME = "([A-Za-z][-_A-Za-z0-9]*)";
+   
+   static final String NAME = "([A-Za-z][-_A-Za-z0-9]*)";
+   
+   private static final String QTY = "(?:(\\d+) +)?";
    private static final String TABLE = "=?" + NAME; // TBD {=Quality }
    private static final String SUBSET = "(?:\\" + SUBSET_CHAR + NAME + "?)?";
    private static final String COLUMN = "(?:\\" + COLUMN_CHAR + NAME + "?)?";
-   private static final String QTY = "(?:(\\d+) +)?";
+   
    private static final Pattern TABLE_XREF = // {# Table:Subset@Column} 
       Pattern.compile ("\\{" + QTY + TABLE + SUBSET + COLUMN + " *\\}");
 
@@ -94,27 +96,38 @@ public final class Macros
       Pattern.compile ("\\{!N(?:AME)?\\}", Pattern.CASE_INSENSITIVE);
    
    private Macros() { }
-   
+
    public static String resolve (final String entry)
    {
       String resolvedEntry = entry;
       
       Matcher m;
-      int prevStart = -1;
-      while ((m = TOKEN.matcher (resolvedEntry)).find()) // loop for nested tokens
+      while ((m = TOKEN.matcher (resolvedEntry)).find()) // loop for multiple tokens
       {
-         if (m.start() != prevStart)
-         {
-            resolvedEntry = resolveExpressions (resolvedEntry);
-            resolvedEntry = resolveMacros (resolvedEntry);
-            resolvedEntry = resolveScripts (resolvedEntry);
-            resolvedEntry = resolveTables (resolvedEntry);
-            prevStart = m.start();
-         }
-         else
-            break; // avoid infinite loop
-      }
+         String token = m.group();
+         String resolvedToken;
+         resolvedToken = resolveTables (token);
+         if (resolvedToken.equals(token))
+            resolvedToken = resolveExpressions (token);
+         if (resolvedToken.equals(token))
+            resolvedToken = resolveMacros (token);
+         if (resolvedToken.equals(token))
+            resolvedToken = resolveScripts (token);
+         if (resolvedToken.equals(token))
+            resolvedToken = m.replaceFirst ("<$1>"); // avoid infinite loop
          
+         try
+         {
+            resolvedEntry = m.replaceFirst(resolvedToken);
+         }
+         catch (Exception x)
+         {
+            System.out.println("Entry: " + entry);
+            System.out.println("Groups: " + m.groupCount());
+            x.printStackTrace(System.err);
+         }
+      }
+      
       return resolvedEntry;
    }
 
@@ -128,22 +141,22 @@ public final class Macros
       else if ((m = DICE.matcher (entry)).matches())
          return resolveDice (m);
       else if ((m = NORM.matcher (entry)).matches())
-         return resolveNorm (m);
+          return resolveNorm (m);
       return 0;
    }
    
-   public static int getMax (final String entry)
+   public static int getMax (final String token)
    {
       int max = 0;
       
       Matcher m;
-      if ((m = ROLL.matcher (entry)).matches())
+      if ((m = ROLL.matcher (token)).matches())
          max = Integer.parseInt (m.group (1));
       
-      else if ((m = RANGE.matcher (entry)).matches())
+      else if ((m = RANGE.matcher (token)).matches())
          max = Integer.parseInt (m.group (2));
       
-      else if ((m = DICE.matcher (entry)).matches())
+      else if ((m = DICE.matcher (token)).matches())
       {
          int count = Integer.parseInt (m.group (1));
          int sides = Integer.parseInt (m.group (2));
@@ -156,33 +169,45 @@ public final class Macros
             max += operator.equals ("+") ? bonus : -bonus; 
          }
       }
-      else if ((m = NORM.matcher (entry)).matches())
+      else if ((m = NORM.matcher (token)).matches())
          max = Integer.parseInt (m.group (2));
       
       return max;
    }
 
-   private static String resolveExpressions (final String entry)
+   private static String resolveExpressions (final String token)
    {
-      String resolvedEntry = entry;
-      resolvedEntry = resolveRolls (resolvedEntry);
-      resolvedEntry = resolveRanges (resolvedEntry);
-      resolvedEntry = resolveDice (resolvedEntry);
-      resolvedEntry = resolveCharges (resolvedEntry);
-      resolvedEntry = resolveConditions (resolvedEntry);
-      resolvedEntry = resolveOneOfs (resolvedEntry);
-      if (DEBUG && !entry.equals (resolvedEntry))
-         System.out.println ("EXP [" + entry + "] = [" + resolvedEntry + "]");
-      return resolvedEntry;
+      String resolvedToken;
+      resolvedToken = resolveRolls (token);
+      if (resolvedToken.equals(token))
+         resolvedToken = resolveRanges (token);
+      if (resolvedToken.equals(token))
+         resolvedToken = resolveDice (token);
+      if (resolvedToken.equals(token))
+         resolvedToken = resolveNorm (token);
+      if (resolvedToken.equals(token))
+         resolvedToken = resolveCharges (token);
+      if (resolvedToken.equals(token))
+         resolvedToken = resolveConditions (token);
+      if (resolvedToken.equals(token))
+         resolvedToken = resolveOneOfs(token);
+      
+      if (DEBUG && !token.equals (resolvedToken))
+          System.out.println ("resolveExpressions: [" + token + "] = [" + resolvedToken + "]");
+      return resolvedToken;
    }
 
-   private static String resolveRolls (final String entry)
+   private static String resolveRolls (final String token)
    {
-      String resolvedEntry = entry;
-      Matcher m;
-      if ((m = ROLL.matcher (resolvedEntry)).find())
-         resolvedEntry = m.replaceFirst (resolveRoll  (m) + "");
-      return resolvedEntry;
+      String resolvedToken = token;
+      Matcher m = ROLL.matcher (resolvedToken);
+      if (m.matches())
+      {
+         resolvedToken = m.replaceFirst (resolveRoll  (m) + "");
+         if (DEBUG && !token.equals (resolvedToken))
+            System.out.println ("resolveRolls: [" + token + "] = [" + resolvedToken + "]");
+      }
+      return resolvedToken;
    }
    
    private static int resolveRoll (final Matcher m)
@@ -191,13 +216,17 @@ public final class Macros
       return RandomEntry.get (range) + 1;
    }
 
-   private static String resolveRanges (final String entry)
+   private static String resolveRanges (final String token)
    {
-      String resolvedEntry = entry;
-      Matcher m;
-      if ((m = RANGE.matcher (resolvedEntry)).find())
-         resolvedEntry = m.replaceFirst (resolveRange (m) + "");
-      return resolvedEntry;
+      String resolvedToken = token;
+      Matcher m = RANGE.matcher (resolvedToken);
+      if (m.matches())
+      {
+         resolvedToken = m.replaceFirst (resolveRange (m) + "");
+         if (DEBUG && !token.equals (resolvedToken))
+            System.out.println ("resolveRanges: [" + token + "] = [" + resolvedToken + "]");
+      }
+      return resolvedToken;
    }
 
    private static int resolveRange (final Matcher m)
@@ -208,26 +237,32 @@ public final class Macros
       return RandomEntry.get (range) + from;
    }
 
-   private static String resolveCharges (final String entry)
+   private static String resolveCharges (final String token)
    {
-      String resolvedEntry = entry;
-      Matcher m;
-      if ((m = CHARGES.matcher (resolvedEntry)).find())
+      String resolved = token;
+      Matcher m = CHARGES.matcher (resolved);
+      if (m.matches())
       {
          int max = Integer.parseInt (m.group (1));
          int roll = RandomEntry.get (max) + 1;
-         resolvedEntry = m.replaceFirst (roll + "/" + max);
+         resolved = m.replaceFirst (roll + "/" + max);
+         if (DEBUG && !token.equals (resolved))
+             System.out.println ("resolveCharges: [" + token + "] = [" + resolved + "]");
       }
-      return resolvedEntry;
+      return resolved;
    }
 
-   private static String resolveDice (final String entry)
+   private static String resolveDice (final String token)
    {
-      String resolvedEntry = entry;
-      Matcher m;
-      if ((m = DICE.matcher (resolvedEntry)).find())
-         resolvedEntry = m.replaceFirst (resolveDice (m) + "");
-      return resolvedEntry;
+      String resolved = token;
+      Matcher m = DICE.matcher (resolved);
+      if (m.matches())
+      {
+         resolved = m.replaceFirst (resolveDice (m) + "");
+         if (DEBUG && !token.equals (resolved))
+             System.out.println ("resolveDice: [" + token + "] = [" + resolved + "]");
+      }
+      return resolved;
    }
 
    private static int resolveDice (final Matcher m)
@@ -250,6 +285,19 @@ public final class Macros
       return roll;
    }
 
+   private static String resolveNorm (final String token)
+   {
+      String resolved = token;
+      Matcher m = NORM.matcher (resolved);
+      if (m.matches())
+      {
+         resolved = m.replaceFirst (resolveNorm (m) + "");
+         if (DEBUG && !token.equals (resolved))
+             System.out.println ("resolveNorm: [" + token + "] = [" + resolved + "]");
+      }
+      return resolved;
+   }
+
    private static int resolveNorm (final Matcher m)
    {
       int mean = Integer.parseInt (m.group (1));
@@ -257,11 +305,11 @@ public final class Macros
       return RandomEntry.getExp (mean, max);
    }
 
-   private static String resolveConditions (final String entry)
+   private static String resolveConditions (final String token)
    {
-      String resolvedEntry = entry;
-      Matcher m;
-      if ((m = CONDITION.matcher (resolvedEntry)).find())
+      String resolved = token;
+      Matcher m = CONDITION.matcher (resolved);
+      if (m.matches())
       {
          int roll       = Integer.parseInt (m.group (1));
          String oper    = m.group (2);
@@ -279,40 +327,46 @@ public final class Macros
          else if (oper.equals ("<"))
             satisfied = roll < target;
          
-         resolvedEntry = m.replaceFirst (satisfied ? ifVal : elseVal); 
+         resolved = m.replaceFirst (satisfied ? ifVal : elseVal); 
+         if (DEBUG && !token.equals (resolved))
+             System.out.println ("resolveConditions: [" + token + "] = [" + resolved + "]");
       }
-      return resolvedEntry;
+      return resolved;
    }
 
-   private static String resolveOneOfs (final String entry)
+   private static String resolveOneOfs (final String token)
    {
-      String resolvedEntry = entry;
-      Matcher m;
-      if ((m = ONE_OF.matcher (resolvedEntry)).find())
+      String resolved = token;
+      Matcher m = ONE_OF.matcher (resolved);
+      if (m.matches())
       {
          String[] tokens = Token.tokenizeAllowEmpty (m.group (1), ONE_OF_CHAR);
          int roll = RandomEntry.get (tokens.length);
-         resolvedEntry = m.replaceFirst (tokens[roll]); 
+         resolved = m.replaceFirst (tokens[roll]); 
+         if (DEBUG && !token.equals (resolved))
+             System.out.println ("resolveOneOfs: [" + token + "] = [" + resolved + "]");
       }
-      return resolvedEntry;
+      return resolved;
    }
 
-   private static String resolveMacros (final String entry)
+   private static String resolveMacros (final String token)
    {
-      String resolvedEntry = entry;
-      Matcher m;
-      if ((m = NAME_MACRO.matcher (resolvedEntry)).find())
-         resolvedEntry = m.replaceFirst (Name.getRandomName());
-      if (DEBUG && !entry.equals (resolvedEntry))
-         System.out.println ("MAC [" + entry + "] = [" + resolvedEntry + "]");
-      return resolvedEntry;
+      String resolved = token;
+      Matcher m = NAME_MACRO.matcher (resolved);
+      if (m.matches())
+      {
+         resolved = m.replaceFirst (Name.getRandomName());
+         if (DEBUG && !token.equals (resolved))
+            System.out.println ("resolveMacros: [" + token + "] = [" + resolved + "]");
+      }
+      return resolved;
    }
 
-   private static String resolveScripts (final String entry)
+   private static String resolveScripts (final String token)
    {
-      String resolvedEntry = entry;
-      Matcher m;
-      if ((m = SCRIPT_XREF.matcher (resolvedEntry)).find())
+      String resolved = token;
+      Matcher m = SCRIPT_XREF.matcher (resolved);
+      if (m.matches())
       {
          int count = 1;
          if (m.group (1) != null)
@@ -331,8 +385,8 @@ public final class Macros
                if (depth > 1) // allow limited recursion (e.g., for Potion of Delusion)
                {
                   System.err.println ("Recursive script error: " + name);
-                  String loop = "<" + name + ">";
-                  resolvedEntry = m.replaceFirst (Matcher.quoteReplacement (loop));
+                  String loop = TokenRenderer.INVALID_OPEN + name + TokenRenderer.INVALID_CLOSE;
+                  resolved = m.replaceFirst (Matcher.quoteReplacement (loop));
                }
             }
             TOKEN_STACK.push (name);
@@ -341,21 +395,22 @@ public final class Macros
             StringBuilder buf = new StringBuilder();
             for (int i = 0; i < count; i++)
                buf.append (script.resolve());
-            resolvedEntry = m.replaceFirst (Matcher.quoteReplacement (buf.toString()));
+            resolved = m.replaceFirst (Matcher.quoteReplacement (buf.toString()));
             
             TOKEN_STACK.pop();
          }
+         
+         if (DEBUG && !token.equals (resolved))
+            System.out.println ("resolveScripts: [" + token + "] = [" + resolved + "]");
       }
-      if (DEBUG && !entry.equals (resolvedEntry))
-         System.out.println ("SCR [" + entry + "] = [" + resolvedEntry + "]");
-      return resolvedEntry;
+      return resolved;
    }
 
    private static String resolveTables (final String entry)
    {
-      String resolvedEntry = entry;
-      Matcher m;
-      if ((m = TABLE_XREF.matcher (resolvedEntry)).find())
+      String resolved = entry;
+      Matcher m = TABLE_XREF.matcher (resolved);
+      if (m.matches())
       {
          int count = 1;
          if (m.group (1) != null)
@@ -366,7 +421,6 @@ public final class Macros
             String xrefTbl = m.group (2);
             String xrefSub = m.group (3);
             String xrefCol = m.group (4);
-            // System.out.println ("Macros resolveTable: " + token);
             
             // avoid infinite loop references
             if (TOKEN_STACK.contains (token))
@@ -379,7 +433,7 @@ public final class Macros
                {
                   System.err.println ("Recursive token error: " + token);
                   String loop = getInvalidTableToken (xrefTbl, xrefSub, xrefCol);
-                  resolvedEntry = m.replaceFirst (Matcher.quoteReplacement (loop));
+                  resolved = m.replaceFirst (Matcher.quoteReplacement (loop));
                }
             }
             TOKEN_STACK.push (token);
@@ -391,34 +445,37 @@ public final class Macros
             {
                String xref = RandomEntry.get (xrefTbl, xrefSub, xrefCol);
                if (xref == null)
+               {
+                  System.err.println ("Invalid reference: " + entry);
                   xref = getInvalidTableToken (xrefTbl, xrefSub, xrefCol);
+               }
                buf.append (xref);
                if (count > 1)
                   buf.append ("\n");
             }
 
-            resolvedEntry = m.replaceFirst (Matcher.quoteReplacement (buf.toString()));
+            resolved = m.replaceFirst (Matcher.quoteReplacement (buf.toString()));
             
             TOKEN_STACK.pop();
+            
+            if (DEBUG && !entry.equals (resolved))
+               System.out.println ("resolveTables: [" + entry + "] = [" + resolved + "]");
          }
       }
-      if (DEBUG && !entry.equals (resolvedEntry))
-         System.out.println ("TBL [" + entry + "] = [" + resolvedEntry + "]");
-      return resolvedEntry;
+      
+      return resolved;
    }
    
-   private static String getInvalidTableToken (final String table, 
-                                               final String subset,
-                                               final String column)
+   private static String getInvalidTableToken (final String table, final String subset, final String column)
    {
       StringBuilder sb = new StringBuilder();
-      sb.append ("<");
+      sb.append (TokenRenderer.INVALID_OPEN);
       sb.append (table);
       if (subset != null)
          sb.append (SUBSET_CHAR + subset);
       if (column != null)
          sb.append (COLUMN_CHAR + column);
-      sb.append (">");
+      sb.append (TokenRenderer.INVALID_CLOSE);
 
       return sb.toString();
    }
@@ -427,6 +484,12 @@ public final class Macros
    {
       Table.populate (new File ("data/Tables"));
       String entry = "{Metal" + SUBSET_CHAR + "}";
+      System.out.println (entry + " = " + Macros.resolve (entry));
+
+      entry = "Smell: {{3}=3?{SmellAdjective} }{Smell}";
+      System.out.println (entry + " = " + Macros.resolve (entry));
+      
+      entry ="Description: {Color}{{5}=5?, with bits of {Reagent} floating in it}";
       System.out.println (entry + " = " + Macros.resolve (entry));
    }
 }

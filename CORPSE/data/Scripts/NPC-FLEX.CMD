@@ -19,7 +19,7 @@
 
 * Generate and show some pocket stuff (with 2% chance of gem)
   Currency: {Silver?{0-100}} sp{{100}<3? and a {Gem}}
-  Carrying: {TinyItem??}, {TinyItem??}, {TinyItem??}
+  Carrying: {TinyItem??}; {TinyItem??}; {TinyItem??}
 
 * Generate and show some equipment.
   Equipped with: {Equipment??}, {Equipment??}, {Equipment??}

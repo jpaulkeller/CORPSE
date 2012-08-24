@@ -22,8 +22,7 @@ public final class RandomEntry
    public static int get (final int max)
    {
       return (int) (random.nextDouble() * max);
-      
-      
+
    }
    
    public static int getExp (final int mean, final int max)
@@ -35,8 +34,7 @@ public final class RandomEntry
       return (int) Math.ceil (d);
    }
    
-   public static String get (final String tableName, final String subName, 
-                             String colName)
+   public static String get (final String tableName, final String subName, String colName)
    {
       String entry = null;
       

@@ -4,24 +4,33 @@ import gui.ComponentTools;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.File;
 
+import javax.swing.AbstractAction;
 import javax.swing.JButton;
+import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
+import javax.swing.KeyStroke;
 
 import utils.ImageTools;
 
 /** Computer-Oriented Role-Playing System & Environment */
 
+// TODO
+// Tab for each opened table
+// change CMD suffix
+// Figure out how to resolve CONDITIONS before resolving the inner values
+// Interactive color-coded display (click to re-generate, or manually override, etc)
+// use default macro for dice button (e.g, TitleMilitary:)
+
 public class CORPSE
 {
-   private static final long serialVersionUID = 1L;
-
    private JTabbedPane tabs;
    private JPanel mainPanel;
    private TreePanel tables;
@@ -38,7 +47,7 @@ public class CORPSE
    private void buildGUI()
    {
       Menus menus = new Menus (this);
-    
+      
       tables  = new TreePanel (this, "data/Tables", "tbl");
       scripts = new ScriptPanel (this, "data/Scripts", "cmd");
 
@@ -70,6 +79,10 @@ public class CORPSE
       // mainPanel.add (menus.getMenus(), BorderLayout.NORTH); TBD
       mainPanel.add (tabs, BorderLayout.CENTER);
       mainPanel.add (bottom, BorderLayout.SOUTH);
+
+      KeyStroke f5 = KeyStroke.getKeyStroke(KeyEvent.VK_F5, 0);
+      mainPanel.getActionMap().put("Refresh", new RefreshAction());
+      mainPanel.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(f5, "Refresh");
    }
 
    void roll()
@@ -98,14 +111,31 @@ public class CORPSE
    private class MyKeyListener extends KeyAdapter
    {
       @Override
-      public void keyReleased (final KeyEvent e)
+      public void keyPressed (final KeyEvent e)
       {
+         System.out.println("CORPSE.MyKeyListener.keyReleased()");
          int keyCode = e.getKeyCode ();
          if (keyCode == KeyEvent.VK_ENTER && entryButton.isEnabled())
             entryButton.doClick ();
       }
    }
 
+   class RefreshAction extends AbstractAction
+   {
+      public RefreshAction()
+      {
+         super("Refresh");
+      }
+      
+      public void actionPerformed(final ActionEvent e)
+      {
+         if (tabs.getSelectedIndex() == 0)
+            tables.refresh();
+         else
+            scripts.refresh();
+      }
+   }
+   
    public static void main (final String[] args)
    {
       ComponentTools.setDefaults();

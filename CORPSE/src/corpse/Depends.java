@@ -6,10 +6,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.util.SortedSet;
-import java.util.TreeSet;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
+import file.FileUtils;
 
 public final class Depends
 {
@@ -44,6 +43,13 @@ public final class Depends
             {
                String stripped = line.replace ('{', '[').replace ('}', ']');
                out.println (file + ";" + stripped + ";" + line);
+            }
+            
+            if (line.startsWith(Macros.SUBSET_CHAR))
+            {
+               Subset subset = new Subset(line);
+               String subsetXref = FileUtils.getNameWithoutSuffix(file) + Macros.SUBSET_CHAR + subset.getName();
+               out.println (file + "; [" + subsetXref + "] ; {" + subsetXref + "}");
             }
          }
          

@@ -6,11 +6,11 @@ import java.util.regex.Pattern;
 
 public class Subset
 {
+   private static final String FULL_TOKEN = "(\\{[^}]+\\})";
    static final Pattern PATTERN = 
       Pattern.compile ("\\" + Macros.SUBSET_CHAR + ".*");
    private static final Pattern SUBSET_PATTERN =
-      Pattern.compile ("\\" + Macros.SUBSET_CHAR + 
-                       " *([A-Za-z_]+) +(\\{[^}]+\\})(?: +" + Column.NAME + ")?");
+      Pattern.compile ("\\" + Macros.SUBSET_CHAR + " *" + Macros.NAME + " +" + FULL_TOKEN + "(?: +" + Column.NAME + ")?");
 
    private String name;
    private String roll;
@@ -67,7 +67,11 @@ public class Subset
       {
          Table table = Table.getTable (name);
          if (!table.subsets.isEmpty())
+         {
             System.out.println (table);
+            for (Subset subset : table.subsets.values())
+               System.out.println("  > " + subset + " = " + Macros.resolve("{" + name + Macros.SUBSET_CHAR + subset.getName() + "}"));
+         }
       }
    }
 }
