@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Plugin>
+	<Information>
+		<Name>FMHelper</Name>
+		<Author>Mosby of Landroval</Author>
+		<Version>1.0-beta</Version>
+		<Description>Sends a select FM to the chat window (helps with Draigoch raid).</Description>
+		<Image>Palantiri/FMHelper/Resources/logo.jpg</Image>
+	</Information>
+	<Package>Palantiri.FMHelper.Main</Package>
+</Plugin>

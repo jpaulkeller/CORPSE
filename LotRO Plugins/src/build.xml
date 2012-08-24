@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<project name="LOTRO Plugins" basedir=".">
+  
+  <property name="dir" location="C:/Users/J/Documents/The Lord of the Rings Online/Plugins/Palantiri" />
+  <mkdir dir="${dir}" />
+	
+   <target name="VirtueView" description="Install the VirtueView plugin into LOTRO">
+     <delete dir="${dir}/VirtueView" />
+     <mkdir dir="${dir}/VirtueView" />
+     <copy file="VirtueView/VirtueView.plugin" todir="${dir}" overwrite="true"/>
+     <copy todir="${dir}/VirtueView" overwrite="true">
+       <fileset dir="./VirtueView">
+         <exclude name="**/*.plugin" />
+       </fileset>
+     </copy>
+   </target>
+      
+   <target name="GambitGuide" description="Install the Gambit Guide plugin into LOTRO">
+     <delete dir="${dir}/GambitGuide" />
+     <mkdir dir="${dir}/GambitGuide" />
+     <copy file="GambitGuide/GambitGuide.plugin" todir="${dir}" overwrite="true"/>
+     <copy todir="${dir}/GambitGuide" overwrite="true">
+       <fileset dir="./GambitGuide">
+         <exclude name="**/*.plugin" />
+       </fileset>
+     </copy>
+   </target>
+      
+	  <target name="FM Helper" description="Install the FM Helper plugin into LOTRO">
+	    <delete dir="${dir}/FMHelper" />
+	    <mkdir dir="${dir}/FMHelper" />
+	    <copy file="FMHelper/FMHelper.plugin" todir="${dir}" overwrite="true"/>
+	    <copy todir="${dir}/FMHelper" overwrite="true">
+	      <fileset dir="./FMHelper">
+	        <exclude name="**/*.plugin" />
+	      </fileset>
+	    </copy>
+	  </target>
+
+</project>
