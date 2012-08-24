@@ -1,0 +1,25 @@
+{Color} and {Color} {Inn-Type}
+{Color} {Creature} {Inn-Type}
+{Color} {Fauna} {Inn-Type}
+{Color} {Flora} {Inn-Type}
+{Color} {Made_Of} {Inn-Type}
+{Creature}'s {Organ} {Inn-Type}
+{Adjective} {Inn-Type}
+{Fauna} and {Creature} {Inn-Type}
+{Fauna}'s {Home}
+{Fauna}'s {Organ} {Inn-Type}
+{Flora} and {Flora} {Inn-Type}
+{Holder} of {Contents} {Inn-Type}
+{Inn-Type} by the {Site}
+{Inn-Type} of {EvocativeConcept}
+{Noise} {Creature} {Inn-Type}
+{Noise} {Fauna} {Inn-Type}
+{Noise} {Musical_Instrument} {Inn-Type}
+{Trait} {Class}'s {Inn-Type}
+{Trait} {Creature} {Inn-Type}
+{Trait} {Fauna} {Inn-Type}
+{Trait} {Race}'s {Inn-Type}
+{Trait} {Rank:Milit}'s {Inn-Type}
+{Trait} {Rank:Relig}'s {Inn-Type}
+{Trait} {Rank:Royal}'s {Inn-Type}
+{Famous-Inn}

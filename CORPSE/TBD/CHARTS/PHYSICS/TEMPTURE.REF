@@ -1,0 +1,32 @@
+
+? Sources: Page's pages
+
+TEMPERATURE EFFECTS (degrees Centigrade)
+------------------------------------------
+
+            Melting  Boiling  Thermal
+SUBSTANCE   Point    Point    Conductivity
+            (deg C)  (deg C)  (cal/cc/sec)
+---------   -------  -------  ------------
+Air                             .00006
+Alchohol     -130       78      .00046
+Aluminum      658     1800      .48
+Ammonia       -76      -33    
+Copper       1083     2310      .92
+Ether                  -34
+Glass                           .0001
+Gold      
+Iron         1530     2450      .08
+Lead          327     1525      .0005
+Mercury       -39      357      .0197
+Platinum     1755     3910      .17
+Silver        961     1955     1.01
+Tin           232
+Water(Ice)      0      100      .0014
+Wood (pine)                     .0004
+Zinc          419
+
+Note: Linear expansion will occur at the rate of approximately
+      .00001 per degree Centigrade
+      Gases expand at approximately .004 per degree Centigrade
+

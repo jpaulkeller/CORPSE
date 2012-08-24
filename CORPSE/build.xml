@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<project name="CORPSE" basedir=".">
+  
+  <property name="app" value="CORPSE" />
+  <property name="dir"
+    location="C:\pkgs\dist\CORPSE" />
+  <property name="zip" value="${dir}/${app}.zip" />
+  
+  <target name="package" description="Create executable jar, and zip everything">
+    
+    <delete file="${dir}/${app}.jar" />
+    <jar destfile="${dir}/${app}.jar">
+      <manifest>
+        <attribute name="Main-Class" value="corpse.CORPSE"/>
+        <attribute name="Class-Path" value="jars/*"/>
+      </manifest>
+      
+      <fileset dir="classes">
+        <include name="**/*.class" />
+      </fileset>
+      <fileset dir="../Utils/classes">
+        <include name="**/*.class" />
+      </fileset>
+    </jar>
+
+    <!-- package entire project distributable -->
+    <delete file="${zip}" />
+    <zip destfile="${zip}">
+      <zipfileset dir="." prefix="${app}">
+        <include name="CORPSE.bat" />
+      </zipfileset>
+      <zipfileset dir="${dir}" prefix="${app}/jars">
+        <include name="${app}.jar" />
+      </zipfileset>
+      <zipfileset dir="../Resources/jars" prefix="${app}/jars">
+         <include name="icons.jar" />
+         <include name="swingx-0.9.5.jar" />
+      </zipfileset>
+      <zipfileset dir="src" prefix="${app}/src">
+         <include name="**/*.java" />
+      </zipfileset>
+      <zipfileset dir="../Utils/src" prefix="${app}/src">
+         <include name="**/*.java" />
+      </zipfileset>
+    </zip>
+    
+  </target>
+  
+</project>

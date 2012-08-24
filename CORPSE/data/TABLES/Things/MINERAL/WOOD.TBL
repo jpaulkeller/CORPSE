@@ -1,0 +1,41 @@
+
+? Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
+?          Values from DRAGON Magazine #83, page 10.
+? TBD merge with Tree.tbl
+
+: Fruit {6} Wood
+
+@ Wood     1  16
+@ Lbs/CFt 18   9
+@ Notes   27  20
+
+. FRUIT-BEARING TREES
+Apple-wood          45
+Cherry
+Citrus-wood
+Coconut
+Date-wood
+Plum-wood
+
+. OTHER TREES
+Ash                 45
+Balsa                8
+Bamboo              22
+Black Ash
+Birch
+Camphor             62    Volatile, pungent
+Cedar               33
+Cork                15
+Ebony               75
+Iron-wood
+Lebethron
+Lignum vitae        76
+Mahogany            41
+Maple
+Oak                 46
+Palm
+Pine                26
+Sycamore            28
+Teak                55
+Willow              30
+Yew

@@ -1,0 +1,20 @@
+
+!   Attempted Action      Class Constant   STR DEX AGI CON  INT WIS DIS CHA
+! ---------------------   --------------   --- --- --- ---  --- --- --- ---
+
+: Action   1 21
+: CC      25 14
+: AttrUse 42 36
+
+Cast Spell              (varies)          .   .   .   .    1   .   .   .
+Climb                   Thievery          2   1   4   .    1   1   1   .
+Disarm Trap             Thievery          .   3   .   .    1   .   2   .
+Dodge Attack            Defense           .   .   1   .    .   .   .   .
+Find Trap               Thievery          .   1   .   .    3   1   1   .
+Hide In Shadows         Stealth           .   .   1   .    1   1   1   .
+Move Silently           Stealth           .   .   3   .    1   1   1   .
+Open Lock               Thievery          .   3   .   .    1   .   1   .
+Parry Attack            Defense           1   2   .   .    .   .   .   .
+Read Language           Languages         .   .   .   .    1   .   .   .
+Steal (Pick-pocket)     Thievery          .   2   .   .    1   .   .   .
+Turn (Dispell) Undead   Faith             .   .   .   .    .   1   1   .

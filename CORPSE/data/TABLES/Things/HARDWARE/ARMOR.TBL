@@ -1,0 +1,42 @@
+@ Armor      1 18
+@ Defense   20  4
+@ Class     29  3
+@ Agi_Mod   37  2
+@ Condition 44 13
+@ Quality   60 15
+
+None                -1      10       0
+Natural              *      **       0
+Clothing             0       9       0     {Quality:}      {Quality:}
+Padding              1       8      -1     {Quality:}      {Quality:}
+Leather              2       7      -2     {Quality:}      {Quality:Magic}
+Cuir Boulli          3       6      -3     {Quality:}      {Quality:Magic}
+Studded Leather      3       6      -3     {Quality:}      {Quality:Magic}
+Ring Mail            3       6      -3     {Quality:}      {Quality:Magic}
+Light Chain Mail     3       6      -3     {Quality:}      {Quality:Magic}
+Brigandine           3       6      -3     {Quality:}      {Quality:Magic}
+Splint Mail          3       6      -3     {Quality:}      {Quality:Magic}
+Scale Mail           4       5      -4     {Quality:}      {Quality:Magic}
+Elven Chain Mail     4       5      -3     {Quality:}      {Quality:Magic}
+Chain Mail           4       5      -4     {Quality:}      {Quality:Magic}
+Banded Mail          4       5      -4     {Quality:}      {Quality:Magic}
+Field Plate Mail     5       4      -5     {Quality:}      {Quality:Magic}
+Heavy Chain Mail     5       4      -5     {Quality:}      {Quality:Magic}
+Dwarf Chain Mail     5       4      -4     {Quality:}      {Quality:Magic}
+Plate & Chain Mail   5       4      -5     {Quality:}      {Quality:Magic}
+Full Plate Mail      6       3      -6     {Quality:}      {Quality:Magic}
+Buckler            (+1)     (8)     -1     {Quality:}      {Quality:Magic}
+Shield             (+2)     (7)     -2     {Quality:}      {Quality:Magic}
+Large Shield       (+3)     (6)     -3     {Quality:}      {Quality:Magic}
+
+]    *     The protection level of natural armor varies, depending      ]
+]          on the creature.  A general guideline follows:               ]
+]               Hide, Furry    : (e.g., Giant Bear)    2                ]
+]                     Leathery : (e.g., Dinosaur)      3                ]
+]               Chiten         : (e.g., Giant Beetle) 3-5               ]
+]               Carapace       : (e.g., Giant Turtle) 5-7               ]
+]               Shell          : (e.g., Giant Crab)   4-6               ]
+]               Armor          : (e.g., Armadillo)     5                ]
+]                                                                       ]
+]   **  Note that Natural Armor does not affect the creature's agility. ]
+]       It is possible to combine Natural Armor with another armor.     ]

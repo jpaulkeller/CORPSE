@@ -1,0 +1,58 @@
+ ==========================================================================
+ |  CHANCE = TO  |    Base % Chance=To  =  Training * ( Level + Ability ) |
+ |     SYSTEM    |    % Chance=To       =  Base = Situational Difficulty  |
+ ==========================================================================
+
+  ACTION :  Parry                  ATTRIBUTE(S) :  Dex, Dex, Str
+
+  DESCRIPTION / NOTES :  To avoid attack by blocking with shield, weapon,
+     or limb.  Only those characters who have an "Unarmed" proficiency
+     greater than 0, or Unarmed Class Constant greater than 2 may Parry
+     easily without an object (others will Parry at -25%).  Similarly,
+     weaponless attackers will suffer the base damage if a weapon (or
+     spiked shield, etc.) is used to Parry them.
+     For Training, use the character's Class Constant for "Defense".
+
+  TIME REQUIRED :  Base Attack Time / 2
+
+  SITUATIONAL CONSIDERATIONS :  Attacker's level; attacker's weapon type;
+    object (if any) used to parry.  Both the speed and size of the weapon(s)
+    involved should be considered.
+
+  -----------     ------------------------------------------------------
+   ROLL (d%)             EFFECTS  vs. What Would Have Been A Hit
+  -----------     ------------------------------------------------------
+
+   01 ........... Parried; attacker drops weapon or takes extra base damage;
+                  Changes Critical (or Serious) to miss.
+   <= 10% CT .... Parried; attacker loses Base Attack Time seconds;
+                  Changes Critical to normal hit, or Serious to miss.
+   < CT ......... Successful parry; changes Critical to Serious,
+                  or Serious to normal hit,  or normal hit to miss.
+   = CT ......... Successful, as above; but roll to check weapon (if used).
+                  Use d6 for normal weapon, d4 for fragile, d8 for sturdy.
+                  If roll is highest possible (e.g., 6 on d6), then the
+                  weapon breaks or tangles (as appropriate), otherwise the
+                  weapon is dropped (2d4 seconds to recover).
+                  Modify the die used if the attacker's weapon is lighter or
+                  heavier than normal.  Treat shields as sturdy weapons.
+                  Characters parrying without weapon or shield will take
+                  attacker's base damage.
+   <= Base ...... Unsuccessful.
+   > Base ....... Unsuccessful; and lose Base Attack Time more seconds.
+   00 (100) ..... Unsuccessful as above; also weapon/shield/arm breaks.
+
+  -----------     ------------------------------------------------------
+   ROLL (d%)             EFFECTS  vs. What Would Have Been A Miss
+  -----------     ------------------------------------------------------
+
+   01 ........... +25 on next Attack-Constant.
+   <= 10% CT .... +10 on next Attack-Constant.
+   < CT ......... No effect.
+   = CT ......... Save vs. Dex or drop weapon/shield (2d4 secs to recover).
+   <= Base ...... No effect.
+   > Base ....... Lose Base Attack Time additional seconds.
+   00 (100) ..... Drop weapon/shield (2d4 seconds to recover).
+
+ ===========================================================================
+

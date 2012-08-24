@@ -1,0 +1,30 @@
+GEOMETRY CALCULATIONS
+---------------------
+
+CONSTANTS
+    PI = 3.14159...
+
+AREA CALCULATION
+    Arc           = ((angle / 180) x PI) / 2
+    Circle        = PI x radius x radius
+    Cone          = PI x radius x (length + radius)
+    Cylinder      = 2 x PI x radius x (height + radius)
+    Parallelogram = base x height
+    Polygon       = apothem x perimeter / 2
+    Prism         = perimeter x length
+    Pyramid       = perimeter x length / 2
+    Rectangle     = base x height
+    Sphere        = PI x diameter x diameter
+    Torus         = 4 x PI x radius(ring) x radius(tube)
+    Trapezoid     = ((base + top) x height) / 2
+    Triangle      = (base x height) / 2
+
+VOLUME CALCULATION
+    Cone          = PI x radius x radius x height / 3
+    Cylinder      = AREA(base) x height
+    Paraboloid    = PI x radius x radius x height / 2
+    Prism         = AREA(base) x height
+    Pyramid       = AREA(base) x height / 3
+    Sphere        = 4/3 x PI x radius x radius x radius
+
+

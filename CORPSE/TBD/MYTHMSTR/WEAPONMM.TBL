@@ -1,0 +1,144 @@
+! WEAPONS
+
+Bardiche, Coral Dragon Slayer (Kn, Pa, Ar, Ni): 5-17 Damage, +1 Hit, x 3 vs Dragons
+Bardiche, Icy (Kn, Pa, Ar, Ni): 4-16 Damage, +2 Cold Damage
+Battle Axe, Glass (Kn, Pa, Ar): 3-15 Damage
+Battle Axe (Kn, Pa, Ar): 3-15 Damage
+Broad Sword, Steel (Kn, Pa, Ar): 9-18 Damage, +3 Hit
+Broad Sword, Silver (Kn, Pa, Ar): 7-16 Damage, +2 Hit
+Broad Sword, Coral (Kn, Pa, Ar,): 4-13 Damage, +1 Hit
+Broad Sword, Gold (Kn, Pa, Ar): 11-20 Damage, +4 Hit
+Broad Sword, Steel Dragon Slayer (Kn, Pa, Ar): 9-18 Damage, +3 Hit, x 3 vs Dragons
+Broad Sword, Lapis (Kn, Pa, Ar): 5-14 Damage, +2 Hit
+Broad Sword, Quartz (Kn, Pa, Ar): 8-17 Damage, +5 Hit
+Broad Sword, Lapis Beast Bopper (Kn, Pa, Ar): 5-14 Damage, x 3 vs Beasts
+Broad Sword, Brass (Kn, Pa, Ar): 0-8 Damage, +3 Hit
+Broad Sword (Kn, Pa, Ar): 3-12 Damage
+Broad Sword, Static (Kn, Pa, Ar): 3-12 Damage, +4 Electrical Damage
+Broad Sword, Flaming (Kn, Pa, Ar): 3-12 Damage, +10 Fire Damage
+Club, Static (All): 1-3 Damage, +4 Electrical Damage
+Club, Steel (All): 7-9 Damage, +3 Hit
+Crossbow (Kn, Pa, Ar, Ni): 4-8 Damage
+Crossbow, Lapis (Kn, Pa, Ar, Ni): 6-10 Damage, +2 Hit
+Crossbow, Silver (Kn, Pa, Ar, Ni): 8-12 Damage, +2 Hit
+Crossbow, Brass (Kn, Pa, Ar, Ni): 0-4 Damage, +3 Hit
+Crossbow, Iron (Kn, Pa, Ar, Ni): 6-10 Damage, +1 Hit
+Crossbow, Pearl (Kn, Pa, Ar, Ni): 6-10 Damage, +2 Hit
+Crossbow, Acidic (Kn, Pa, Ar, Ni): 4-8 Damage, +2 Poison/Acid Damage
+Crossbow, Wooden (Kn, Pa, Ar, Ni): 1-5 Damage, -3 Hit
+Cudgel (Kn, Pa, Ar, Cl, Ni): 1-6 Damage
+Cudgel, Ruby (Kn, Pa, Ar, Cl, Ni): 13-18 Damage, +6 Hit
+Cutlass (Kn, Pa, Ar): 2-8 Damage
+Cutlass, Sparking (Kn, Pa, Ar): 2-8 Damage, +3 Electricity Damage
+Cutlass, Bronze (Kn, Pa, Ar): 0-6 Damage, +2 Hit
+Cutlass, Flaming (Kn, Pa, Ar): 2-8 Damage, +10 Fire Damage
+Cutlass, Pyric (Kn, Pa, Ar): 2-8 Damage, +4 Fire Damage
+Dagger, Iron (Kn, Pa, Ar, So, Ni): 4-6 Damage, +1 Hit
+Dagger, Dense (Kn, Pa, Ar, So, Ni): 2-4 Damage, +4 Electrical Damage
+Dagger, Obsidian (Kn, Pa, Ar, So, Ni): 52-54 Damage, +10 Hit
+Flail (Kn, Pa, Ar, Cl, Ni): 1-10 Damage
+Flail, Frost (Kn, Pa, Ar, Cl, Ni): 1-10 Damage, +4 Cold Damage
+Flail, Leather (Kn, Pa, Ar, Cl, Ni): 0-4 Damage, -4 Hit
+Flail, Platinum Dragon Slayer (Kn, Pa, Ar, Cl, Ni): 11-20 Damage, +6 Hit, x 3 vs Dragons
+Flail, Pyric (Kn, Pa, Ar, Cl, Ni): 1-10 Damage, +4 Fire Damage
+Flail, Lapis (Kn, Pa, Ar, Cl, Ni): 3-12 Damage, +2 Hit
+Flail, Gold (Kn, Pa, Ar, Cl, Ni): 9-18 Damage, +4 Hit
+Flamberge (Kn, Pa, Ar): 4-20 Damage
+Flamberge, Brass (Kn, Pa, Ar): 0-16 Damage, +3 Hit
+Glaive (Kn, Pa, Ar, Ni): 4-12 Damage
+Glaive, Iron (Kn, Pa, Ar, Ni): 6-14 Damage, +1 Hit
+Glaive, Brass (Kn, Pa, Ar, Ni): 0-8 Damage, +3 Hit
+Grand Axe, Bronze (Kn, Pa, Ar): 1-16 Damage, +2 Hit
+Grand Axe, Amber (Kn, Pa, Ar): 6-21 Damage, +5 Hit
+Great Axe, Gold (Kn, Pa, Ar): 11-29 Damage, +4 Hit
+Great Axe, Venemous (Kn, Pa, Ar): 3-21 Damage, +4 Acid/Poison Damage
+Great Axe, Amber (Kn, Pa, Ar): 6-24 Damage, +3 Hit
+Great Axe, Flaming (Kn, Pa, Ar): 3-21 Damage, +10 Fire Damage
+Halberd, Brass (Kn, Pa, Ar, Ni): 0-14 Damage, +3 Hit
+Hammer (Kn, Pa, Ar, Cl, Ni): 2-10 Damage
+Hand Axe, Icy (Kn, Pa, Ar, Ni): 2-6 Damage, +2 Cold Damage
+Hand Axe (Kn, Pa, Ar, Ni): 2-6 Damage
+Hand Axe, Iron (Kn, Pa, Ar, Ni): 4-8 Damage, +1 Hit
+Hand Axe, Steel (Kn, Pa, Ar, Ni): 8-12 Damage, +3 Hit
+Katana (Kn, Pa, Ni): 4-12 Damage
+Katana, Sparking (Kn, Pa, Ni): 4-12 Damage, +3 Electrical Damage
+Katana, Bronze (Kn, Pa, Ni): 2-10 Damage, +2 Hit
+Long Bow, Steel (Kn, Pa, Ar, Ni): 11-16 Damage, +3 Hit
+Long Bow, Silver (Kn, Pa, Ar, Ni): 9-14 Damage, +2 Hit
+Long Bow, Cryo (Kn, Pa, Ar, Ni): 5-10 Damage, +20 Cold Damage
+Long Bow, Bronze (Kn, Pa, Ar, Ni): 3-8 Damage, +2 Hit
+Long Bow (Kn, Pa, Ar, Ni): 5-10 Damage
+Long Bow, Dyna (Kn, Pa, Ar, Ni): 5-10 Damage, +20 Electrical Damage
+Long Bow, Lapis (Kn, Pa, Ar, Ni): 7-12 Damage, +2 Hit
+Long Sword, Fiery (Kn, Pa, Ar): 3-9 Damage, +3 Fire Damage
+Long Sword, Dense (Kn, Pa, Ar): 3-9 Damage, +4 Energy Damage
+Long Sword, Flaming (Kn, Pa, Ar): 3-9 Damage, +10 Fire Damage
+Long Sword (Kn, Pa, Ar): 3-9 Damage
+Long Sword, Venemous (Kn, Pa, Ar): 3-9 Damage, +4 Acid/Poison Damage
+Long Sword, Amber (Kn, Pa, Ar): 6-12 Damage, +3 Hit
+Long Sword, Shocking (Kn, Pa, Ar): 3-9 Damage, +10 Electrical Damage
+Long Sword, Silver (Kn, Pa, Ar): 7-13 Damage, +2 Hit
+Mace, Pearl (Kn, Pa, Ar, Cl, Ni): 4-10 Damage, +2 Hit
+Maul (Kn, Pa, Ar, Cl, Ni): 1-8 Damage
+Maul, Shocking (Kn, Pa, Ar, Cl, Ni): 1-8 Damage, +10 Electricity Damage
+Maul, Crystal (Kn, Pa, Ar, Cl, Ni): 2-9 Damage, +1 Hit
+Nunchakas, Magical (Kn, Pa, Ni): 2-6 Damage, +10 Magic Damage
+Pike, Cryo (Kn, Pa, Ar, Ni): 2-16 Damage, +20 Cold Damage
+Pike, Lapis (Kn, Pa, Ar, Ni): 4-18 Damage, +2 Hit
+Pike, Steel (Kn, Pa, Ar, Ni): 8-22 Damage, +3 Hit
+Pike, Gold (Kn, Pa, Ar, Ni): 10-24 Damage, +4 Hit
+Sabre (Kn, Pa, Ar): 4-8 Damage
+Sabre, Fiery (Kn, Pa, Ar): 4-8 Damage, +3 Fire Damage
+Sabre, Frost (Kn, Pa, Ar): 4-8 Damage, +4 Cold Damage
+Sabre, Cold (Kn, Pa, Ar): 4-8 Damage, +10 Cold Damage
+Sabre, Steel (Kn, Pa, Ar): 10-14 Damage, +3 Hit
+Scimitar (Kn, Pa, Ar): 2-10 Damage
+Scimitar, Thermal (Kn, Pa, Ar): 2-10 Damage, +15 Energy Damage
+Scimitar, Flaming (Kn, Pa, Ar): 2-10 Damage, +10 Fire Damage
+Scimitar, Icy (Kn, Pa, Ar): 2-10 Damage, +2 Cold Damage
+Scimitar, Iron (Kn, Pa, Ar): 4-12 Damage, +1 Hit
+Scimitar, Lapis (Kn, Pa, Ar): 4-12 Damage, +2 Hit
+Scimitar, Fuming (Kn, Pa, Ar): 2-10 Damage, +5 Fire Damage
+Short Bow, Venemous (Kn, Pa, Ar, Ni): 3-6 Damage, +4 Acid/Poison Damage
+Short Bow, Gold (Kn, Pa, Ar, Ni): 11-14 Damage, +4 Hit
+Short Bow, Pyric (Kn, Pa, Ar, Ni): 3-6 Damage, +4 Fire Damage
+Short Bow, Steel (Kn, Pa, Ar, Ni): 9-12 Damage, +3 Hit
+Short Bow, Bronze (Kn, Pa, Ar, Ni): 1-4 Damage, +2 Hit
+Short Bow (Kn, Pa, Ar, Ni): 3-6 Damage
+Short Bow, Amber Beast Bopper (Kn, Pa, Ar, Ni): 6-9 Damage, +3 Hit, x 3 vs Beasts
+Short Sword (Kn, Pa, Ar): 2-6 Damage
+Short Sword, Fuming (Kn, Pa, Ar): 2-6 Damage, +5 Fire Damage
+Short Sword, Leather (Kn, Pa, Ar): 0 Damage, -4 Hit
+Short Sword, Wooden (Kn, Pa, Ar): 0-3 Damage, -3 Hit
+Short Sword, Amber (Kn, Pa, Ar): 5-9 Damage, +3 Hit
+Short Sword, Lapis (Kn, Pa, Ar): 4-8 Damage, +2 Hit
+Short Sword, Steel (Kn, Pa, Ar): 8-12 Damage, +3 Hit
+Short Sword, Static (Kn, Pa, Ar): 2-6 Damage, +4 Electrical Damage
+Short Sword, Bronze (Kn, Pa, Ar): 0-4 Damage, +2 Hit
+Short Sword, Gold (Kn, Pa, Ar): 10-14 Damage, +4 Hit
+Sling (Kn, Pa, Ar, Ni): 2-4 Damage
+Sling, Shocking (Kn, Pa, Ar, Ni): 2-4 Damage, +10 Electrical Damage
+Sling, Fuming (Kn, Pa, Ar, Ni): 2-4 Damage, +5 Fire Damage
+Sling, Steel (Kn, Pa, Ar, Ni): 8-10 Damage, +3 Hit
+Spear (Kn, Pa, Ar, Ni): 1-9 Damage
+Spear, Pyric (Kn, Pa, Ar, Ni) 1-9 Damage, +4 Fire Damage
+Spear, Power (Kn, Pa, Ar, Ni): 1-9 Damage, + 10 Electrical Damage
+Spear, Freezing (Kn, Pa, Ar, Ni): 1-9 Damage, +5 Cold Damage
+Spear, Crystal (Kn, Pa, Ar, Ni) 2-10 Damage, +1 Hit
+Spear, Dense (Kn, Pa, Ar, Ni): 1-9 Damage, +4 Energy Damage
+Staff (All): 2-8 Damage
+Staff, Lapis (All): 4-10 Damage, +2 Hit
+Staff, Steel Undead Eater (All): 8-14 Damage, +3 Hit, x 3 vs Undead
+Staff, Sparking (All): 2-8 Dam, +3 E Damage
+Staff, Iron (All): 4-10 Damage, +1 Hit
+Staff, Venemous (All) 2-8 Damage, +4 Poison/Acid
+Staff, Bronze (All): 0-6 Damage, +2 Hit
+Staff, Amber (All): 5-11 Damage, +3 Hit
+Staff, Coral (All): 3-9 Damage, +1 Hit
+Trident, Platinum (Kn, Pa, Ar, Ni): 12-22 Damage, +6 Hit
+Trident, Ruby (Kn, Pa, Ar, Ni): 14-24 Damage, +6 Hit
+Trident, Shocking (Kn, Pa, Ar, Ni): 2-12 Damage, +10 Electrical Damage
+Wakazashi (Kn, Pa, Ni): 3-9 Damage
+Wakazashi, Steel (Kn, Pa, Ni): 9-15 Damage, +3 Hit
+Wakazashi, Flaming (Kn, Pa, Ni): 3-9 Damage, +10 Fire Damage
+Wakazashi, Lapis (Kn, Pa, Ni): 5-11 Damage, +2 Hit

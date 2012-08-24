@@ -1,0 +1,66 @@
+
+? Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
+?          Values from DRAGON Magazine #83, page 10.
+
+: Metal        {30} Metal
+: Normal       {20} Metal
+: Alloy         {4} Metal
+: Element    {5-15} Metal
+: Mine       {5-40} Metal
+: Precious  {16-20} Metal
+: Special   {21-30} Metal
+: Ore       {31-40} Metal
+
+@ Metal    1 16
+@ Lbs/CFt 20  4
+@ Notes   27 40
+
+. ALLOYS
+Bronze             550
+Brass              530
+Steel              500
+Tin                475
+
+. METAL ELEMENTS
+Aluminum           170
+Cobalt             546    Lustrous, grey, ductile
+Iron               475
+Lead               710
+Magnesium          110
+Mercury            845    Liquid at room temperature
+Nickle             555
+Titanium           280
+Tungsten          1205
+Vanadium
+Zinc               445
+
+. PRECIOUS METALS
+Copper             560
+Gold              1205
+Electrum
+Platinum          1340
+Silver             650
+
+. ENCHANTED / FANTASTIC METALS
+Adamantine         400
+Azurium            150    Organic metal
+Celebsul           100    Etherial "spirit silver"
+Galvorn                   Meteoric metal
+Impervium          500
+Ithildin           150    Enchanted mithril
+Meteoric iron
+Mithril            200    Elvish silver
+Obdurite
+Orichalcum         800    Atlantean metal
+
+. ORES
+Azurite
+Biotite            180    Contains iron ore
+Calamine           265    Ore containing zinc
+Cinnabar           507    Mercuric (poison, red dye)
+Dolomite           177    Ore containing magnesium
+Feldspar           165    Ore containing aluminum
+Galena             465    Ore containing lead & coal
+Hematite           315    Ore containing iron
+Magnetite          310    Ore containing iron
+Malachite          240    Ore containing copper

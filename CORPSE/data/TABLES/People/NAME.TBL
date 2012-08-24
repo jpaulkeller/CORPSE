@@ -1,0 +1,50 @@
+
+! Name Pattern
+
+* C = consonant
+* V = vowel
+* W = double-vowel (dipthong) such as OU
+* D = double-consonant (digraph) such as DR
+* N = eNding digraph such as ND
+* R = repeating consonant such as RR
+
+DV
+VN
+DW
+WN
+
+CVC
+VCV
+DVC
+CVN
+DVN
+VRV
+
+VCW
+VRW
+WCV
+WRV
+
+CWC
+WCW
+DWC
+CWN
+DWN
+WRW
+
+CVCV
+VCVC
+DVDV
+CVDV
+DVCV
+VDVC
+CVNV
+VCVN
+DVNV
+VDVN
+
+CVC-CVC
+CVC-VCV
+VCV-VCV
+VCV-CVC
+

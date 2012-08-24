@@ -1,0 +1,16 @@
+
+? Sources: Neverwinter Journal.NWN
+
+!    ARMORS USED IN NEVERWINTER
+
+!              Weight         Maximum
+! Armor Type   in gp.   AC    Movement*
+! ----------   ------   --    ----------
+None          0       10       -         
+Shield        50       9#      -         
+Leather       150      8    12 squares
+Ring          250      7     9 squares 
+Scale         400      6     6 squares
+Chain         300      5     9 squares
+Banded        350      4     9 squares
+Plate         450      3     6 squares

@@ -1,0 +1,42 @@
+
+? Sources: identification of source/related material
+
+* This is a comment-line (notice the "*" character in the beginning).
+* This file gives examples of how to use all the types of control
+* mechanisms provided by the CORPSE program.
+
+* This macro creates an infinite loop for demonstration purposes.
+: Error {1}
+
+* Examples of Errors and Warnings
+
+* (1) Forced RECURSION OVERFLOW error, see the manual for more details.
+  Forced recursion error: {AAA:Error} 
+
+* (2) Invalid CONDITION example (missing/invalid operator)
+  {2 2?Missing:Operator}
+
+* (3) Missing TABLE
+  Missing Table: {MISSING}
+
+* (4) Missing FIELD
+  Missing Field: {AAA:Missing}
+
+* (5) Missing MACRO
+  Missing Macro: {AAA:Missing}
+
+* (6) Empty Token
+  Empty Token: {}
+
+. ----------------------------------------------------------
+
+* (7-12) Some simple ways to emphasize sub-sections of text (using colors):
+  Normal value
+  (Value) with (parentheses) included
+  [Value] with [Brackets] included
+  Value with <Angle brackets> included
+  Value with both (a parenthetical [and bracketed] expression) included
+  Value with both [a bracketed (and parenthetical) expression] included
+
+* This ad hoc subset syntax is not yet supported, but might be useful:
+* Table STRUCTURE value: {AAA:3 - 4}

@@ -1,0 +1,51 @@
+
+? Sources: Microprose Darklands
+
+* Note: Cost is dependent on quality.
+*       Quality of weaponry (but not missiles) varies
+*       depending on locale (usually):
+*          Pawn Shop       17
+*          Foreign Market  25
+*          Smithy          25+ (costs more than Artisans)
+*          Swordsmith      26- (can go as low as 23)
+*          Artisan         27
+*          City            33
+
+! Type     Weapon             Lbs  City  Arts  SwdS  Smth  FMkt  Pawn
+! ------   ----------------   ---  ----  ----  ----  ----  ----  ----
+Ammo     - Arrow              1                 4           4     4
+Ammo     - Ball               1                 8           8     8
+Ammo     - Quarrel            1                 6           6     6
+Bows     Composite Bow        7                    3100*
+Bows     Crossbow             9               294               217
+Bows     Longbow
+Bows     Short Bow            6               257   310   279   191
+Edged    Battle Axe           8   809               575
+Edged    Dagger               1                67
+Edged    Falchion             4   266         208         199   136
+Edged    Field Axe            5                43          41    28
+Edged    Hand Axe
+Edged    Long Sword           6                     354
+Edged    Poinard              1   128          96   107    96    66
+Edged    Short Sword          3               208
+Edged    Two-handed Sword    10  1078         809         778   529
+Flail    Military Flail       4   270   211   202         195
+Flail    Two-handed Flail     8   266         208    27         136
+Impact   Club                 5    33    26    25          24    17
+Impact   Giant Cudgel        15   266   216   208   221   199   136
+Impact   Great Hammer         9  1212         910
+Impact   Mace                 4   266   216   208   221   199   136
+Impact   Maul                12   319   259   249   265   240   164
+Impact   Military Hammer      3   530         414   442   398   271
+Missile  Arbalest            19                                 433
+Missile  Iron Handgun        14                                 596
+Missile  Brass Handgun
+Pole     Halberd             12   690   559   539   575
+Pole     Long Spear           9   213   173   167   177   160   110
+Pole     Pike                17   266   216   208   221   199   136
+Pole     Quarterstaff         7    22    18    17    19    17    12
+Pole     Short Spear          7   160   130   125   133   120    82
+Thrown   Dart                 1                      38
+Thrown   Javelin              3                      27    24    24
+Thrown   Throwing Axe         1                59          59    59
+Thrown   Throwing Knife       1                      48
