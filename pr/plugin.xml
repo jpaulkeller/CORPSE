@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.ui.actionSets">
+      <actionSet
+         label="Peer Review Action Set"
+         visible="true"
+         id="pr.actionSet">
+         <menu
+            label="&amp;JACOB"
+            id="jacobMenu">
+            <separator name="jacobGroup"></separator>
+         </menu>
+         <action
+            label="&amp;Peer Review"
+            tooltip="Open changed files"
+            icon="icons/PeerReview.png"
+            class="pr.actions.LoadChangedFiles"
+            menubarPath="jacobMenu/jacobGroup"
+            toolbarPath="jacobGroup"
+            id="pr.actions.LoadChangedFiles">
+         </action>
+         <action
+            label="&amp;Open DIRT Task"
+            tooltip="Open a DIRT task"
+            icon="icons/DIRT.gif"
+            class="pr.actions.OpenDIRT"
+            menubarPath="jacobMenu/jacobGroup"
+            toolbarPath="jacobGroup"
+            id="pr.actions.OpenDIRT">
+         </action>
+      </actionSet>
+   </extension>
+</plugin>
