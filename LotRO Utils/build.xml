@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<project name="LOTRO" basedir=".">
+  
+  <target name="DeedOrganizer" description="Create executable jar, and zip everything">
+	    
+   <property name="app" value="DeedOrganizer" />
+   <property name="dist" location="C:/pkgs/dist" />
+   <property name="dir" location="${dist}/Palantiri" />
+   <property name="zip" value="${dir}/${app}-1.0.zip" />
+   
+   <mkdir dir="${dir}" />
+   <mkdir dir="${dir}/jars" />
+	   
+   <copy todir="${dir}" overwrite="true">
+      <fileset dir="bin">
+         <include name="${app}.jnlp" />
+      </fileset>
+   </copy>
+	         
+   <copy todir="${dir}/jars" overwrite="true">
+      <fileset dir="../Utils/jars">
+         <include name="swingx-0.9.5.jar" />
+      </fileset>
+   </copy>
+	   
+   <delete file="${dir}/jars/${app}.jar" />
+   <jar destfile="${dir}/jars/${app}.jar">
+    <manifest>
+      <attribute name="Main-Class" value="lotro.deed.DeedOrganizer"/>
+      <attribute name="Class-Path" value="jars/*"/>
+    </manifest>
+    <fileset dir="classes">
+      <include name="**/*.class" />
+    </fileset>
+    <fileset dir="../Utils/classes">
+      <include name="**/*.class" />
+    </fileset>
+    <fileset dir=".">
+      <include name="icons/**/*.gif" />
+    </fileset>
+   </jar>
+
+   <signjar alias="palantiri" keystore="${dist}/keystore.pal" storepass="vgy78uhb">
+      <fileset dir="${dir}/jars" includes="*.jar" />
+   </signjar>
+
+   <!-- package entire project distributable -->
+   <delete file="${zip}" />
+   <zip destfile="${zip}">
+     <zipfileset dir="${dir}" prefix="${app}">
+      <include name="${app}.jnlp" />
+      <include name="jars" />
+     </zipfileset>
+   </zip>
+
+  </target>
+	
+  <target name="RaidOrganizer" description="Create executable jar, and zip everything">
+	       
+   <property name="app" value="RaidOrganizer" />
+	<property name="dist" location="C:/pkgs/dist" />
+	<property name="dir" location="${dist}/Palantiri" />
+	<property name="zip" value="${dir}/${app}-1.0a.zip" />
+	   
+	<mkdir dir="${dir}" />
+	<mkdir dir="${dir}/jars" />
+	      
+	<copy todir="${dir}" overwrite="true">
+	  <fileset dir="bin">
+	    <include name="${app}.jnlp" />
+	  </fileset>
+	</copy>
+	            
+    <copy todir="${dir}/jars" overwrite="true">
+      <fileset dir="../Utils/jars">
+        <include name="swingx-0.9.5.jar" />
+      </fileset>
+    </copy>
+ 	   
+	<delete file="${dir}/jars/${app}.jar" />
+	<jar destfile="${dir}/jars/${app}.jar">
+	  <manifest>
+	    <attribute name="Main-Class" value="lotro.raid.RaidOrganizer"/>
+	    <attribute name="Class-Path" value="jars/*"/>
+	  </manifest>
+	  <fileset dir="classes">
+	    <include name="**/*.class" />
+	  </fileset>
+      <fileset dir="../Utils/classes">
+	    <include name="**/*.class" />
+	  </fileset>
+	  <fileset dir=".">
+	    <include name="icons/**/*.gif" />
+	  </fileset>
+	</jar>
+
+    <signjar alias="palantiri" keystore="${dist}/keystore.pal" storepass="vgy78uhb">
+      <fileset dir="${dir}/jars" includes="*.jar" />
+    </signjar>
+
+	<!-- package entire project distributable -->
+	<delete file="${zip}" />
+	<zip destfile="${zip}">
+	  <zipfileset dir="${dir}" prefix="${app}">
+	    <include name="${app}.jnlp" />
+	    <include name="jars" />
+	  </zipfileset>
+	</zip>
+
+	</target>
+	
+  <target name="Radiance Chart" description="Create executable jar, and zip everything">
+	          
+    <property name="app" value="RadianceChart" />
+    <property name="dist" location="C:/pkgs/dist" />
+    <property name="dir" location="${dist}/Palantiri" />
+    <property name="zip" value="${dir}/${app}-1.0.zip" />
+	      
+    <mkdir dir="${dir}" />
+    <mkdir dir="${dir}/jars" />
+	         
+    <copy todir="${dir}" overwrite="true">
+      <fileset dir="bin">
+        <include name="${app}.jnlp" />
+      </fileset>
+    </copy>
+	               
+    <delete file="${dir}/jars/${app}.jar" />
+    <jar destfile="${dir}/jars/${app}.jar">
+      <manifest>
+        <attribute name="Main-Class" value="lotro.my.reports.ReportRadiance"/>
+        <attribute name="Class-Path" value="jars/*"/>
+      </manifest>
+      <fileset dir="classes">
+        <include name="**/*.class" />
+      </fileset>
+    </jar>
+
+    <signjar alias="palantiri" keystore="${dist}/keystore.pal" storepass="vgy78uhb">
+      <fileset dir="${dir}/jars" includes="*.jar" />
+    </signjar>
+
+    <!-- package entire project distributable -->
+    <delete file="${zip}" />
+    <zip destfile="${zip}">
+      <zipfileset dir="${dir}" prefix="${app}">
+        <include name="${app}.jnlp" />
+        <include name="jars" />
+      </zipfileset>
+    </zip>
+
+  </target>
+	   
+  <target name="LOTRO Jars" description="Create jar">
+    <property name="dir" location="C:/pkgs/workspace/KinCharts/war/WEB-INF/lib" />
+  	
+    <delete file="${dir}/lotro.jar" />
+    <jar destfile="${dir}/lotro.jar">
+      <fileset dir="classes">
+        <include name="**/*.class" />
+      </fileset>
+    </jar>
+  	
+    <delete file="${dir}/utils.jar" />
+    <jar destfile="${dir}/utils.jar">
+      <fileset dir="../Utils/classes">
+        <include name="**/*.class" />
+      </fileset>
+    </jar>
+  	
+    <delete file="${dir}/icons.jar" />
+    <jar destfile="${dir}/icons.jar">
+      <fileset dir="../Resources">
+        <include name="icons/16/documents/Folder.gif" />
+        <include name="icons/16/documents/Page Edit.gif" />
+        <include name="icons/20/**/*.gif" />
+      </fileset>
+    </jar>
+  </target>
+	
+</project>
