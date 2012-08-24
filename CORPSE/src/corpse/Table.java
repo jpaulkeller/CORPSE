@@ -77,13 +77,13 @@ public class Table extends ArrayList<String>
    
    public String resolve (final String entry)
    {
-      String resolved = Macros.resolve (entry);
+      String resolved = Macros.resolve (entry); // recurse to support embedded tokens
 
       Matcher m;
       while ((m = Macros.TOKEN.matcher (resolved)).find())
       {
-         System.err.println (file + " unsupported token: " + m.group (0)); // TBD
-         resolved = m.replaceFirst ("<" + m.group (1) + ">");
+         System.err.println (file + " unsupported token: " + m.group (0));
+         resolved = m.replaceFirst (TokenRenderer.INVALID_OPEN + m.group (1) + TokenRenderer.INVALID_CLOSE);
       }
 
       return resolved;

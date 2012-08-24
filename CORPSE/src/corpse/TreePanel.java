@@ -61,8 +61,7 @@ public class TreePanel extends JSplitPane
       
       tabs = new JTabbedPane();
       tabs.addChangeListener (new TabListener());
-      tabs.addTab ("Raw Text", ImageTools.getIcon ("icons/20/markers/CheckAll.gif"), 
-                   new JScrollPane (raw));
+      tabs.addTab ("Raw Text", ImageTools.getIcon ("icons/20/markers/CheckAll.gif"), new JScrollPane (raw));
       tabs.addTab ("Processed", ImageTools.getIcon ("icons/20/markers/CheckAll.gif"), resolved);
       
       // scroll.setBorder (Utils.BORDER);
@@ -140,14 +139,19 @@ public class TreePanel extends JSplitPane
    {
       public void valueChanged (final TreeSelectionEvent e)
       {
-         File file = getSelectedFile();
-         if (file != null)
-         {
-            raw.setText (FileUtils.getText (file));
-            raw.setCaretPosition (0);
-            if (tabs.getSelectedIndex() == 1)
-               resolve();
-         }
+         applySelection();
+      }
+   }
+   
+   public void applySelection()
+   {
+      File file = getSelectedFile();
+      if (file != null)
+      {
+         raw.setText (FileUtils.getText (file));
+         raw.setCaretPosition (0);
+         if (tabs.getSelectedIndex() == 1)
+            resolve();
       }
    }
    
@@ -189,8 +193,7 @@ public class TreePanel extends JSplitPane
       TreePath tp = tree.getSelectionPath();
       if (tp != null)
       {
-         DefaultMutableTreeNode node =
-            (DefaultMutableTreeNode) tp.getLastPathComponent();
+         DefaultMutableTreeNode node = (DefaultMutableTreeNode) tp.getLastPathComponent();
          if (node.isLeaf())
             file = (File) node.getUserObject();
       }
@@ -219,5 +222,12 @@ public class TreePanel extends JSplitPane
       }
       
       return table;
+   }
+   
+   void refresh()
+   {
+      if (tabs.getSelectedIndex() == 0)
+         Table.populate (new File ("data/Tables"));
+      applySelection();
    }
 }

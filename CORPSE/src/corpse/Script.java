@@ -1,6 +1,8 @@
 package corpse;
 
 import java.awt.Component;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -18,17 +20,15 @@ import javax.swing.JOptionPane;
 
 public class Script
 {
-   private static final long serialVersionUID = 1L;
-   
    // includes a script, but ignores any embedded randomize commands? // TBD
    static final Pattern INCLUDE_LINE   = Pattern.compile ("[+] *(.*) *");
    
    static final Pattern RANDOMIZE_LINE = Pattern.compile ("# *(.*)");
    
-   static final Pattern ASSIGNMENT = Pattern.compile ("\\{([^{}]+)=([^{}]+)\\}");
+   static final Pattern ASSIGNMENT = Pattern.compile ("\\{([^{}]+)=([^{}?]+)\\}");
    
    // {prompt?default} where the default value is optional, and the prompt must
-   // start with a non-numeric (to avoid confusion with the CONDITION token).
+   // start with a non-numeric (to avoid confusion with the CONDITIONAL token).
    static final Pattern QUERY =
       Pattern.compile ("\\{([^{}?0-9][^{}?]+?)[?]([^{}]+)?\\}");
    
@@ -58,18 +58,8 @@ public class Script
                continue;
             if (line.equals ("")) // ignore blank lines
                continue;
-            
-            int prevStart = -1;
-            while ((m = Macros.TOKEN.matcher (line)).find()) // loop for nested tokens
-            {
-               if (m.start() != prevStart)
-               {
-                  line = resolve (line);
-                  prevStart = m.start();
-               }
-               else
-                  line = m.replaceFirst ("<$1>"); // avoid infinite loop
-            }
+
+            line = resolve(line);
             
             if ((m = INCLUDE_LINE.matcher (line)).matches())
                buf.append (include (m.group (1)));
@@ -92,12 +82,34 @@ public class Script
 
    public String resolve (final String entry)
    {
-      String resolvedEntry = entry;
-      resolvedEntry = resolveVariables (resolvedEntry);
-      resolvedEntry = resolveAssignments (resolvedEntry);
-      resolvedEntry = resolveQueries (resolvedEntry);
-      resolvedEntry = Macros.resolve (resolvedEntry);
-      return resolvedEntry;
+      String line = entry;
+      Matcher m;
+      while ((m = Macros.TOKEN.matcher (line)).find()) // loop for multiple tokens
+      {
+         String token = m.group();
+         // System.out.println("Token: " + token);
+         String resolvedToken;
+         resolvedToken = resolveVariables (token);
+         if (resolvedToken.equals(token))
+         {
+            resolvedToken = resolveAssignments (token);
+            // System.out.println("ASN Token: " + token + " R: " + resolvedToken);
+         }
+         if (resolvedToken.equals(token))
+            resolvedToken = resolveQueries (token);
+         if (resolvedToken.equals(token))
+         {
+            resolvedToken = Macros.resolve (token);
+            // System.out.println("MAC Token: " + token + " R: " + resolvedToken);
+         }
+            
+         if (resolvedToken.equals(token))
+            line = m.replaceFirst ("<$1>"); // avoid infinite loop
+         else
+            line = m.replaceFirst(resolvedToken);
+         // System.out.println("Line = " + line);
+      }
+      return line;
    }
    
    private String resolveVariables (final String entry)
@@ -110,7 +122,7 @@ public class Script
          resolvedEntry = resolvedEntry.replaceAll (pattern, value); 
       }
       if (Macros.DEBUG && !entry.equals (resolvedEntry))
-         System.out.println ("VAR [" + entry + "] = [" + resolvedEntry + "]");
+         System.out.println ("resolveVariables: [" + entry + "] = [" + resolvedEntry + "]");
       return resolvedEntry;
    }
 
@@ -124,7 +136,7 @@ public class Script
          resolvedEntry = m.replaceFirst (Matcher.quoteReplacement (m.group (2)));
       }
       if (Macros.DEBUG && !entry.equals (resolvedEntry))
-         System.out.println ("ASN [" + entry + "] = [" + resolvedEntry + "]");
+         System.out.println ("resolveAssignments: [" + entry + "] = [" + resolvedEntry + "]");
       return resolvedEntry;
    }
    
@@ -145,7 +157,7 @@ public class Script
             resolvedEntry = m.replaceFirst (Matcher.quoteReplacement (answer));
       }
       if (Macros.DEBUG && !entry.equals (resolvedEntry))
-         System.out.println ("QRY [" + entry + "] = [" + resolvedEntry + "]");
+         System.out.println ("resolveQueries: [" + entry + "] = [" + resolvedEntry + "]");
       return resolvedEntry;
    }
       
@@ -157,11 +169,8 @@ public class Script
    
    private void randomize (final String seed)
    {
-      if (seed != null)
-      {
-         System.out.println ("Randomizing: " + seed);
+      if (seed != null && !seed.isEmpty())
          RandomEntry.setSeed (seed.hashCode());
-      }
       else
          RandomEntry.randomize();
    }
@@ -170,7 +179,11 @@ public class Script
    {
       Table.populate (new File ("data/Tables"));
       // Script script = new Script ("data/Scripts/TREASURE.CMD");
-      Script script = new Script ("data/Scripts/NPC.CMD");
+      // Script script = new Script ("data/Scripts/NPC.CMD");
+      Script script = new Script ("data/Scripts/Potion.CMD");
       System.out.println (script.resolve());
+      
+      //String line = "Smell: {{3}=3?{SmellAdjective} }{Smell}";
+      //System.out.println (script.resolve(line));
    }
 }

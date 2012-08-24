@@ -16,7 +16,10 @@ public class TokenRenderer extends ColoredTableRenderer
 {
    private static final long serialVersionUID = 1;
    
-   private static final Pattern ERROR = Pattern.compile ("<(.+)>");
+   public static final String INVALID_OPEN = "<";
+   public static final String INVALID_CLOSE = ">";
+   
+   private static final Pattern ERROR = Pattern.compile (INVALID_OPEN + "(.+)" + INVALID_CLOSE);
    
    @Override
    public Component getTableCellRendererComponent (final JTable table,
