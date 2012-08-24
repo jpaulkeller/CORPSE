@@ -1,0 +1,74 @@
+
+? Sources: NeverWinter, America OnLine
+
+! CREATURE           AC   HP   XP   SPECIAL
+! -----------------  --   --  ----  --------------
+Anhkheg             2    5  
+Basilisk            4   24  1616  Gaze petrifies
+Beholder
+Bugbear             5   10
+Centaur
+Centipede (Giant)
+Cockatrice
+Crocodile (Giant)   5   10   100
+Displacer Beast
+Dracolich
+Dragon, Black
+Dragon, Bronze
+Dragon, Red
+Dragon, White
+Drider
+Efreeti
+Ettin
+Frog (Giant)                  63  Swallows
+Gargoyle
+Ghoul
+Giant, Cloud
+Giant, Fire
+Giant, Frost
+Giant, Hill
+Giant, Storm
+Gnoll                    6   
+Goblin              4    6
+Golem
+Griffon             3
+Hell Hound
+Hippogriff          5   12   560
+Hobgoblin
+Hydra
+Kobold
+Kraken Spy          5    8    57
+Lich
+Lizard (Giant)      5   10    65
+Lizard Men              15
+Manticore
+Margoyle
+Mastodon
+Medusa                            Gaze petrifies
+Minotaur
+Mobat
+Mummy
+Neo-Otyugh
+Ogre                5   21   215
+Otyugh
+Phase Spider
+Purple Worm
+Remorhaz
+Scorpion (Giant)    4   31
+Shambling Mound
+Skeleton            4             1/2 dmg frm edged wpns    
+Skeleton (Giant)
+Slug (Giant)
+Snake (Giant)       5   13   729  Poison
+Sphinx
+Spider (Giant)                    Poison
+Stirge
+Thief               2    6    50  Backstab
+Tiger               5   25
+Troll               4   36        Regenerate?
+Umber Hulk
+Warg
+Wild Boar           7   12        Fight after death
+Wolf                     8    39
+Wyvern
+Zombie

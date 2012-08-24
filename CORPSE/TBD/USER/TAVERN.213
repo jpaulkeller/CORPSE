@@ -1,0 +1,47 @@
+
+ File  : TAVERN.213
+ Source: CORPSE Command File TAVERN.CMD
+ Date  : 21:30 August 16, 1991
+
+
+
+>>>>>>>>>>>>> Welcome to The <@> <<<<<<<<<<<<
+Your bartender, <@NAME>, is a <@Gender> @RACE
+  who is <@TRAIT1> and <@TRAIT2>
+
+The following individuals are currently in the bar:
+<@> @RACE @PROF
+  <@Gender> is <@TRAIT1> and <@TRAIT2>
+ @Silver sp; @Item1; @Item2; @Item3
+<@> @RACE @PROF
+  <@Gender> is <@TRAIT1> and <@TRAIT2>
+ @Silver sp; @Item1; @Item2; @Item3
+<@> @RACE @PROF
+  <@Gender> is <@TRAIT1> and <@TRAIT2>
+ @Silver sp; @Item1; @Item2; @Item3
+<@> @RACE @PROF
+  <@Gender> is <@TRAIT1> and <@TRAIT2>
+ @Silver sp; @Item1; @Item2; @Item3
+
+Chests contain @1 gold, @2 silver, @3 copper
+
+
+>>>>>>>>>>>>> Welcome to The <@> <<<<<<<<<<<<
+Your bartender, <@NAME>, is a <@Gender> @RACE
+  who is <@TRAIT1> and <@TRAIT2>
+
+The following individuals are currently in the bar:
+<@> @RACE @PROF
+  <@Gender> is <@TRAIT1> and <@TRAIT2>
+ @Silver sp; @Item1; @Item2; @Item3
+<@> @RACE @PROF
+  <@Gender> is <@TRAIT1> and <@TRAIT2>
+ @Silver sp; @Item1; @Item2; @Item3
+<@> @RACE @PROF
+  <@Gender> is <@TRAIT1> and <@TRAIT2>
+ @Silver sp; @Item1; @Item2; @Item3
+<@> @RACE @PROF
+  <@Gender> is <@TRAIT1> and <@TRAIT2>
+ @Silver sp; @Item1; @Item2; @Item3
+
+Chests contain @1 gold, @2 silver, @3 copper

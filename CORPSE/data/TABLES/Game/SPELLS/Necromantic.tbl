@@ -1,0 +1,78 @@
+? Sources: See SPELL.TBL
+
+@ Level    1  2
+@ Spell    5 24
+@ Type    31  7
+@ Element 43  5
+@ Source  53  6
+@ Class   61  4
+
+!Lv     Spell Name            Type(s)     Element   Source  Clss
+!-- ------------------------  ----------  -------   ------  ----
+ 6) AGING                     NEC&ALT     LIFE      Dgn:V1  WITC
+ 2) AID                       NEC         LIFE      TSRPH2  CLER
+ 3) ANIMATE DEAD              NEC         DEATH     TSRPH2  CLER
+ 1) ANIMATE SKELETONS         NEC&ANI     DEATH     Dgn:V4  DEAT
+ 1) ANIMATE ZOMBIES           NEC&ANI     DEATH     Dgn:V4  DEAT
+ 4) AWAKEN                    NEC                   Dgn:V2  HEAL
+ 0) COUGH                     NEC                   Dgn:V3  MAGE
+ 3) CURE BLINDNESS            NEC                   TSRPH2  CLER
+ 5) CURE CRITICAL WOUNDS      NEC                   TSRPH2  CLER
+ 6) CURE CRITICAL WOUNDS      NEC                   TSRPH2  DRUI
+ 7) CURE DEAFNESS             NEC                   Dgn:V2  HEAL
+ 3) CURE DISEASE              NEC                   TSRPH2  CLER
+ 3) CURE DISEASE              NEC                   TSRPH2  DRUI
+ 5) CURE INSANITY             NEC                   Dgn:V2  HEAL
+ 1) CURE LIGHT WOUNDS         NEC                   TSRPH2  CLER
+ 2) CURE LIGHT WOUNDS         NEC                   TSRPH2  DRUI
+ 5) CURE PARALYSIS            NEC                   Dgn:V2  HEAL
+ 4) CURE SERIOUS WOUNDS       NEC                   TSRPH2  CLER
+ 4) CURE SERIOUS WOUNDS       NEC                   TSRPH2  DRUI
+ 2) DEATH PRAYER              NEC&SPI               Dgn:V4  CLER
+ 6) DEATH SPELL               NEC                   TSRPH2  MAGE
+ 1) DETECT DISEASE            DIV&NEC               Dgn:V2  HEAL
+ 2) DETECT LIFE               DIV&NEC     LIFE      Dgn:V4  CLER
+ 1) ENDURE COLD               NEC                   TSRPH2  CLER
+ 1) ENDURE HEAT               NEC                   TSRPH2  CLER
+ 3) FEIGN DEATH               NEC                   TSRPH2  CLER
+ 2) FEIGN DEATH               NEC                   TSRPH2  DRUI
+ 3) FEIGN DEATH               NEC                   TSRPH2  MAGE
+ 7) FINGER OF DEATH           NEC                   TSRPH2  DRUI
+ 3) GHAST PRODUCTION          NEC&ANI               Dgn:V4  DEAT
+ 5) GHOST PRODUCTION          NEC&ANI               Dgn:V4  DEAT
+ 0) GIGGLE                    NEC                   Dgn:V3  MAGE
+ 3) HASTE                     ALT/NEC               TSRPH2  MAGE
+ 6) HEAL/HARM                 NEC                   TSRPH2  CLER
+ 5) HOLD UNDEAD               HYP&NEC               Dgn:V4  DEAT
+ 6) LICHDOM                   NEC                   Dgn:V4  DEAT
+ 5) LONGEVITY                 NEC                   Dgn:V2  HEAL
+ 4) MUMMY PRODUCTION          NEC&ANI               Dgn:V4  DEAT
+ 4) NEUTRALIZE POISON         NEC                   TSRPH2  CLER
+ 3) NEUTRALIZE POISON         NEC                   TSRPH2  DRUI
+ 2) NEUTRALIZE POISON         NEC                   Dgn:V2  HEAL
+ 0) NOD                       NEC                   Dgn:V3  MAGE
+ 8) POWER WORD, BLIND         NEC                   TSRPH2  MAGE
+ 9) POWER WORD, KILL          NEC                   TSRPH2  MAGE
+ 5) RAISE DEAD                NEC                   TSRPH2  CLER
+ 7) REGENERATE                NEC                   TSRPH2  CLER
+ 7) REINCARNATE               NEC                   TSRPH2  DRUI
+ 6) REINCARNATION             NEC                   TSRPH2  MAGE
+    REJUVENATION              NEC                   Dgn:V1  WITC
+ 1) RESIST COLD               NEC                   TSRPH2  CLER
+ 2) RESIST FIRE               NEC         FIRE      TSRPH2  CLER
+ 7) RESTORATION               NEC                   TSRPH2  CLER
+ 7) RESURRECTION              NEC                   TSRPH2  CLER
+ 0) SCRATCH                   NEC                   Dgn:V3  MAGE
+ 5) SIZE CONTROL              ALT&NEC               Dgn:V2  HEAL
+ 3) SLOW                      HYP/NEC               TSRPH2  MAGE
+ 2) SLOW POISON               NEC                   TSRPH2  CLER
+ 3) SPEAK WITH DEAD           EMP&NEC               TSRPH2  CLER
+ 0) TWITCH                    NEC                   Dgn:V3  MAGE
+ 6) UNDEAD PRODUCTION         NEC&ANI               Dgn:V4  DEAT
+ 6) VAMPIRE/SPECTRE PROD.     NEC&ANI               Dgn:V4  DEAT
+ 3) WATER BREATHING           ALT/NEC     WATER     TSRPH2  DRUI
+ 3) WATER BREATHING           ALT/NEC     WATER     TSRPH2  MAGE
+ 4) WIGHT PRODUCTION          NEC&ANI               Dgn:V4  DEAT
+ 0) WINK (BLINK)              NEC                   Dgn:V3  MAGE
+ 2) WITHDRAW                  NEC                   TSRPH2  CLER
+ 4) WRAITH PRODUCTION         NEC&ANI               Dgn:V4  DEAT

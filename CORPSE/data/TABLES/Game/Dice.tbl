@@ -1,0 +1,16 @@
+{Trait} {!Name}
+{!Name} the {Trait}
+{!Name} the {Color}
+{Color} {!Name}
+The {Color} {Disaster}
+The {Color} {EvocativeConcept}
+The {Color} {Job}
+The {Color} {Weapon}
+The {Trait} {Disaster}
+The {Trait} {EvocativeConcept}
+The {Trait} {Job}
+The {Trait} {Weapon}
+{Disaster} of {EvocativeConcept}
+{Job} of {EvocativeConcept}
+{Weapon} of {EvocativeConcept}
+{4|6|8|10|12|20}-sider of {EvocativeConcept}

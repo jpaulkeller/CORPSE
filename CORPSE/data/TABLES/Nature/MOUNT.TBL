@@ -1,0 +1,39 @@
+? Sources: Best of DRAGON, Volume IV, page 48
+
+@ Mount 5 20
+
+!                    TRAINING    WEIGHT    MAX  AVG   DISTANCE
+!   M O U N T        CLASS *    CARRYABLE  SPD  SPD   PER DAY  DIET
+!   ------------     --------   ---------  ---  ---   -------- ----
+
+600 Horse
+100 Giant beetle
+050 Mule
+050 Donkey
+050 Crooda
+020 Camel
+015 Huskies
+015 Taun-taun
+015 Mammoth
+015 Giant {avian}
+010 Giant wolf
+010 Bantha
+010 Sabre cat
+010 Giant lizard
+010 Giant {mammal}
+005 Pegasus
+010 Hippogryph
+005 Griffon
+005 Dinosaur
+005 Pterosaur
+    Pteranodon
+002 Nightmare
+002 Dragon
+001 Special
+    Manticore
+    Androsphinx
+    Criosphinx
+    Gynosphynx
+    Hieracosphinx
+    Wyvern
+    Chimera

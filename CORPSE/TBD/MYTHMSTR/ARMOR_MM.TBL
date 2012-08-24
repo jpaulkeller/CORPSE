@@ -1,0 +1,181 @@
+! Armor/Accessories 
+
+Belt, Lucky (All): +20 Luck
+Belt, Spell (All): +4 Spell Points
+Belt, Seething (All): +20 Fire Resistance
+Belt, Acidic (All): +10 Acid/Poison Resistance
+Belt, Thought (All): +8 Intelligence
+Belt, Defender (All): +6 AC Bonus
+Belt, Fiery (All): +7 Fire Resistance
+Belt, Speed (All): +12 Speed
+Belt, Electric (All): +20 Electricity Resistance
+Belt, Fuming (All): +12 Fire Resistance
+Belt, Giant (All): +12 Might
+Belt, Thunder (All): +17 Might
+Belt, Swift (All): +3 Speed
+
+Boots, Amber (All): +4 AC Bonus
+Boots, Lapis (All): +3 AC Bonus
+Boots, Leather (All): +1 AC Bonus
+Boots, Magical (All): +1 AC Bonus, +10 Magic Resistance
+Boots, Silver (All): +3 AC Bonus
+Boots, Steel (All): +5 AC Bonus
+Boots, Bronze (All): +0 AC Bonus
+Boots, Crystal (All): +2 AC Bonus
+Boots, Ebony (All): +5 AC Bonus
+Boots, Dense (All): +1 AC Bonus, +9 Electricity Resistance
+Boots, Flickering (All): +1 AC Bonus, +5 Electricity Resistance
+Boots, Gold (All): +7 AC Bonus
+Boots, Fuming (All): +1 AC Bonus, +12 Fire Resistance
+
+Broach, Sonic (All): +11 Energy R
+Broach, Mind (All): +3 Intellect
+Broach, Icy (All): +5 Cold Resistance
+
+Cameo, Speed (All): +12 Speed
+
+Cape, Glass (All): +1 AC Bonus
+Cape, Leather (All): +1 AC Bonus
+Cape, Mystic (All): +1 AC Bonus, +5 Magic Resistance
+Cape, Silver (All): +3 AC Bonus
+Cape, Iron (All): +2 AC Bonus
+
+Chain Mail (Kn, Pa, Ar, Cl): +6 AC Bonus
+Chain Mail, Lapis (Kn, Pa, Ar, Cl): +8 AC Bonus
+Chain Mail, Bronze (Kn, Pa, Ar, Cl): +5 AC Bonus
+Chain Mail, Lapis (Kn, Pa, Ar, Cl): +8 AC Bonus
+Chain Mail, Silver (Kn, Pa, Ar, Cl): +8 AC Bonus
+Chain Mail, Fiery (Kn, Pa, Ar, Cl): +6 AC Bonus, +7 Fire Resistance
+
+Charm, Sonic (All): +11 Energy R
+Charm, Radiating (All): +20 Electricity Resistance
+
+Cloak, Coral (All): +2 AC Bonus
+Cloak, Flaming (All): +1 AC Bonus, +15 Fire Resistance
+Cloak, Pearl (All): +3 AC Bonus
+Cloak, Silver (All): +3 AC Bonus
+Cloak, Lapis (All): +3 AC Bonus
+Cloak, Brass (All): -1 AC Bonus
+Cloak, Fuming (All): +1 AC Bonus, +12 Fire Resistance
+Cloak, Brass (All): -1 AC Bonus
+
+Gauntlets (All): +1 AC Bonus
+Gauntlets, Crystal (All): +2 AC Bonus
+Gauntlets, Coral (All): +2 AC Bonus
+Gauntlets, Icy (All): +1 AC Bonus, +5 Coldl Resistance
+Gauntlets, Static (All): +1 AC Bonus, +9 Electricity Resistance
+Gauntlets, Incandescent (All): +1 AC Bonus, +7 Electricity Resistance
+Gauntlets, Leather (All): +1 AC Bonus
+Gauntlets, Rapid (All): +1 AC Bonus, +8 Speed
+Gauntlets, Flashing (All): +1 AC Bonus, +12 Electricity R
+Gauntlets, Acidic (All): +1 AC Bonus, +10 Acid/Poison Resistance
+Gauntlets, Gold (All): +7 AC Bonus
+Gauntlets, Bronze (All): +0 AC Bonus
+Gauntlets, Lapis (All): +4 AC Bonus
+Gauntlets, Iron (All): +2 AC Bonus
+Gauntlets, Pyric (All): +1 AC Bonus, +9 Fire Resistance
+
+Helm (All): +2 AC Bonus
+Helm, Amber (All): +5 AC Bonus
+Helm, Wooden (All): -1 AC Bonus
+Helm, Acidic (All): +2 AC Bonus, +10 Acid/Poison Resistance
+Helm, Lapis (All): +4 AC Bonus
+Helm, Brass (All): +0 AC Bonus
+Helm, Silver (All): +4 AC Bonus
+Helm, Pearl (All): +4 AC Bonus
+Helm, Coral (All): +3 AC Bonus
+Helm, Quartz (All): +7 AC Bonus
+
+Medal, Vigor (All): +4 Hit Points
+Medal, Winners (All): +15 Luck
+
+Necklace, Chance (All): +10 Luck
+Necklace, Icy (All): +5 Cl Resistance
+Necklace, Cold (All): +20 Cold Resistance
+
+Pendant, Fuming (All): +12 Fire Resistance
+
+Plate Armor, Static (Kn, Pa): +10 AC Bonus, +9 Electricity Resistance
+Plate Armor, Flashing (Kn, Pa): +10 AC Bonus, +12 Electricity Resistance
+Plate Armor, Mystic (Kn, Pa): +10 AC Bonus, +5 Electricity Resistance
+Plate Armor (Kn, Pa): +10 AC Bonus
+Plate Armor, Fiery (Kn, Pa): +10 AC Bonus, +7 Fire Resistance
+Plate Armor, Bronze (Kn, Pa): +9 AC Bonus
+Plate Armor, Quartz (Kn, Pa): +15 AC Bonus
+
+Plate Mail, Coral (Kn, Pa): +9 AC Bonus
+Plate Mail, Brass (Kn, Pa): +6 AC Bonus 
+Plate Mail, Pearl (Kn, Pa): +10 AC Bonus
+Plate Mail, Dense (Kn, Pa): +8 AC Bonus, +9 Electricity Resistance
+Plate Mail (Kn, Pa):  +8 AC Bonus
+
+Ring Mail (Kn, Pa, Ar, Cl, Ni): +5 AC Bonus
+Ring Mail, Blazing (Kn, Pa, Ar, Cl, Ni): +5 AC Bonus, +25 Fire Resistance
+Ring Mail, Flaming (Kn, Pa, Ar, Cl, Ni): +5 AC Bonus, +15 Fire Resistance
+Ring Mail, Platinum (Kn, Pa, Ar, Cl, Ni): +13 AC Bonus
+Ring Mail, Gold (Kn, Pa, Ar, Cl, Ni): +11 AC Bonus
+Ring Mail, Silver (Kn, Pa, Ar, Cl, Ni): +7 AC Bonus
+Ring Mail, Winner's (Kn, Pa, Ar, Cl, Ni): +5 AC Bonus, +15 Luck
+Ring Mail, Thermal (Kn, Pa, Ar, Cl, Ni) +5 AC Bonus, +15 Energy Resistance
+
+Ring, Static (All): +9 Electricity R
+Ring, Mystic (All): +5 Magic Resistance
+Ring, Mugger (All): +4 Thievery
+Ring, Thought (All): +8 Intelligence
+Ring, Venemous (All): +15 Acid/Poison R
+Ring, Burgler (All): +6 Thievery
+Ring, Glowing (All): +5 Electricity Resistance
+Ring, Holy (All): +30 Personality
+Ring, Flashing (All): +12 Electricity Resistance
+Ring, Flaming (All): +15 Fire R
+Ring, Accurate (All): +5 Accuracy
+Ring, Speed (All): +12 Speed
+Ring, Sonic (All): +11 Energy Resistance
+Ring, Charming (All): +5 Personality
+Ring, Acidic (All): +10 Acid/Poison Resistance
+Ring, Strength (All): +3 Might
+Ring, Toxic (All): +25 Acid/Poison Resistance
+Ring, Castors (All): +8 Spell Points
+
+Robes (All): +2 AC Bonus
+Robes, Wooden (All): -1 AC Bonus
+Robes, Toxic (All): +2 AC Bonus, +25 Acid/Poison R
+Robes, Platinum (All): +10 AC Bonus
+Robes, Crystal (All): +3 AC Bonus
+Robes, Venemous (All): +2 AC Bonus, +15 Acid/Poison Resistance
+Robes, Fuming (All): +2 AC Bonus, +12 Fire Resistance
+Robes, Amber (All): +5 AC Bonus
+
+Scale Armor, Iron (Kn, Pa, Ar, Cl, Ni): +5 AC Bonus
+Scale Armor, Marksman (Kn, Pa, Ar, Cl, Ni): +4 AC Bonus, +10 Accuracy
+Scale Armor, Steel (Kn, Pa, Ar, Cl, Ni): +8 AC Bonus
+Scale Armor (Kn, Pa, Ar, Cl, Ni): +4 AC Bonus
+Scale Armor, Dense (Kn, Pa, Ar, Cl, Ni): +4 AC Bonus, +9 Electricity Resistance
+
+Scarab, Flaming (All): +15 Fire Resistance
+Scarab, Swift (All): +3 Speed
+
+Shield Platinum (Kn, Pa, Cl): +12 AC Bonus
+Shield, Ruby (Kn, Pa, Cl): +14 AC Bonus
+Shield, Icy (Kn, Pa, Cl): +4 AC Bonus, +5 Cold Resistance
+Shield, Silver (Kn, Pa, Cl): +6 AC Bonus
+Shield, Shocking (Kn, Pa, Cl): +4 AC Bonus, +15 Electricity Resistance
+Shield, Sonic (Kn, Pa, Cl): +4 AC Bonus, +11 Energy Resistance
+Shield, Gold (Kn, Pa, Cl): +10 AC Bonus
+Shield, Brass (Kn, Pa, Cl): +2 AC Bonus
+Shield, Mystic (Kn, Pa, Cl): +4 AC Bonus, +5 Magic Resistance
+Shield, Leather (Kn, Pa, Cl): +4 AC Bonus
+Shield, Iron (Kn, Pa, Cl): +5 AC Bonus
+Shield, Lapis (Kn, Pa, Cl): +6 AC Bonus
+Shield, Steel (Kn, Pa, Cl): +8 AC Bonus
+Shield, Dense (Kn, Pa, Cl): +4 AC Bonus, +9 Energy Resistance
+Shield, Ebony (Kn, Pa, Cl): +8 AC Bonus
+Shield, Iron (Kn, Pa, Cl): +5 AC Bonus
+Shield, Bronze (Kn, Pa, Cl): +3 AC Bonus
+
+Splint Mail, Steel (Kn, Pa, Cl): +11 AC Bonus
+Splint Mail, Ebony (Kn, Pa, Cl): +11 AC Bonus
+Splint Mail (Kn, Pa, Cl): +7 AC Bonus
+Splint Mail, Lapis (Kn, Pa, Cl): +9 AC Bonus
+Splint Mail, Emerald (Kn, Pa, Cl): +19 AC Bonus
+Splint Mail, Freezing (Kn, Pa, Cl): +7 AC Bonus, +15 Cold Resistance

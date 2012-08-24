@@ -1,0 +1,54 @@
+  ACTION :  Control Undead        ATTRIBUTE(S) :  Wis, Dis
+
+  DESCRIPTION / NOTES :  To cause one or more undead creatures to
+     perform desired actions on command.  It is not possible for more
+     than one character to simultaneously Control Undead.
+     For Training, use the character's Class Constant for "Faith".
+
+  TIME REQUIRED :  ( ( 11 - Character's Level ) * Undead's Level secs.
+
+  SITUATIONAL CONSIDERATIONS :  Level of undead; number of undead;
+     If the targeted undead are currently under the control/dominion
+     of another creature, then that control must be broken or the
+     Situational Difficulty is doubled.
+
+  -----------     ------------------------------------------------------
+   ROLL (d%)                             EFFECTS
+  -----------     ------------------------------------------------------
+
+   01 ........... Successful, the undead are completely controlled;
+                  such control lasts until broken.
+                  Any attempt to Turn is at -25%.
+   <= 10% CT .... Successful; control lasts 1 hour per level of controller.
+                  Any attempt to Turn is at -10%.
+   < CT ......... Successful, the undead is(are) Controlled for 10 minutes
+                  per level of the controller.
+   = CT ......... Successful as above; but controller must Save vs. Dis
+                  each 10 minutes or lose control; and he must roll on
+                  the Mind Shock chart (with +5).
+   <= Base ...... Unsuccessful; may try again with S = old S + 20
+                  only if Save vs. Discipline is made.
+   > Base ....... Unsuccessful; the undead attack controller who also
+                  loses 10 on any subsequent Control attempt (for
+                  this encounter).
+   00 (100) ..... Unsuccessful; the undead immediately attack controller;
+                  and each receives +10 for all Attack-Con rolls.
+                  Controller loses 25 on subsequent Control attempt
+                  (for this encounter); and he must roll on the Mind Shock
+                  chart (with +2).
+
+     The character must decide whether to Turn or Dispell prior to
+     attempting the action.  A character cannot Dispell any undead
+     of a higher level than he is, but he may Dispell more than one
+     undead of equal or lower level.  It is also possible (and advisable)
+     for more than one character to "join forces" and attempt to Turn or
+     Dispell undead simultaneously.  If this is done, both characters
+     must roll, and only the best attempt (i.e., the roll in the lowest
+     range category) is considered.  Conversely, an evil character may
+     decide to interfere with an attempt to Turn/Dispell undead.  If so,
+     then add (his Chance-To Control Undead - his roll) to the turner's
+     Situational Difficulty (S) value.  If the targeted undead are
+     currently under the control/dominion of another creature, then
+     that control must be broken or the undead cannot be made to flee.
+     They may only be Dispelled; or, at best, made to avoid the
+     successful turner.

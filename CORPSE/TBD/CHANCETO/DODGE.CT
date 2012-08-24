@@ -1,0 +1,45 @@
+  ACTION :  Dodge                  ATTRIBUTE(S) :  Agility (Modified)
+
+  DESCRIPTION / NOTES :  To avoid attack by moving.  It is possible to
+     dodge multiple attacks with a single dodge (i.e., the time factor
+     is only considered once).  The character must roll separately for
+     each attack, increasing the situational difficulty by 10 cumulative
+     for each subsequent roll (e.g., S = 40, 50, 60, ...).
+     For Training, use the character's Class Constant for "Defense".
+
+  TIME REQUIRED :  Base Attack Time / 2
+
+  SITUATIONAL CONSIDERATIONS :  Attacker's level; terrain; obstacles.
+
+  -----------     ------------------------------------------------------
+   ROLL (d%)             EFFECTS  vs. What Would Have Been A Hit
+  -----------     ------------------------------------------------------
+
+   01 ........... Dodged; +25 on next Defense-Constant;
+                  Changes Critical (or Serious) to miss.
+   <= 10% CT .... Dodged; +10 on next Defense-Constant;
+                  Changes Critical to normal hit, or Serious to miss.
+   < CT ......... Successful dodge; changes Critical to Serious,
+                  or Serious to normal hit, or normal hit to miss.
+   = CT ......... Successful, as above; but Save vs. (AgM - damage
+                  taken) or fall.
+   <= Base ...... Unsuccessful.
+   > Base ....... Unsuccessful; and lose Base Attack Time more seconds.
+   00 (100) ..... Unsuccessful as above; also subtract d10*5 from D-Con
+                  and re-evaluate the attack.
+
+  -----------     ------------------------------------------------------
+   ROLL (d%)             EFFECTS  vs. What Would Have Been A Miss
+  -----------     ------------------------------------------------------
+
+   01 ........... +25 on next Attack-Constant.
+   <= 10% CT .... +10 on next Attack-Constant.
+   < CT ......... No effect.
+   = CT ......... Save vs. AgM or fall.
+   <= Base ...... No effect.
+   > Base ....... Lose Base Attack Time additional seconds.
+   00 (100) ..... Fall and therefore lose ((20 - AgM) / 2) seconds;
+                  Save vs. Dex or drop held item(s).
+
+ ===========================================================================
+

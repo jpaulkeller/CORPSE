@@ -1,0 +1,167 @@
+
+? Sources:  AD&D Dungeoneer's Survival Guide, page 56
+?           Facts on File Visual Dictionary
+?           GURPS Basic Set, 3rd edition, page 212
+
+* Note: Costs can vary as much as -50% to +100% based on quality,
+*       condition and supply & demand.
+
+@ Equipment     1 21
+@ Cost         22 10  
+@ Unit/Size    32 12
+@ Weight_(lbs) 44 10
+@ Quality      54 20
+
+Air bladder            150                     2     {Quality:}
+Anvil                                        125     {Quality:}
+Arrowhead                                            {Quality:}
+Awl                                                  {Quality:}
+Backpack                20                     2     {Quality:}
+Bait/Lure                5                     0.1   {Quality:}
+Bandages                                             {Quality:}
+Barrel, small           20                    30     {Quality:}
+Basket, large            4                     1     {Quality:}
+Basket, small            1                     0.1   {Quality:}
+Bell                    10                     0.5   {Quality:}
+Bellows, small                                       {Quality:}
+Belt, leather           10                     3     {Quality:}
+Belt pouch, large       10                     1     {Quality:}
+Belt pouch, small        7                     0.5   {Quality:}
+Blanket (wool)          15                     5     {Quality:}
+Block & tackle          50                     5     {Quality:}
+Boat, collapsible     5000                    60     {Quality:}
+Bolt case               10                     1     {Quality:}
+Book, large            200                    10     {Quality:}
+Book, small                                          {Quality:}
+Boots, hard            100                     5     {Quality:}
+Boots, soft             60                     3     {Quality:}
+Bottle, ceramic          3     (/ qt)          1     {Quality:}
+Box, small gold       1000                     2     {Quality:}
+Box, small lead        200                     2     {Quality:}
+Brazier                                              {Quality:}
+Broom                                                {Quality:}
+Brush                                                {Quality:}
+Bucket                   5                     3     {Quality:}
+Cable (3000 lb)        100     (/50 ft)       20     {Quality:}
+Cage, bird               5                     5     {Quality:}
+Caltrops                                             {Quality:}
+Candle                   0.1                   0.1   {Quality:}
+Candlestick                                          {Quality:}
+Canoe, small          1000                    80     {Quality:}
+Canoe, large          3000                   160     {Quality:}
+Canvas                   4     (/ sq yd)       1     {Quality:}
+Chain, heavy            40     (/ ft)          3     {Quality:}
+Chain, light            30     (/ ft)          1     {Quality:}
+Chalk, powder            0.1                   0.1   {Quality:}
+Chalk, stick             0.2                   0.1   {Quality:}
+Chest, large            20                    25     {Quality:}
+Chest, small            10                    10     {Quality:}
+Chisel                                               {Quality:}
+Clamp                                                {Quality:}
+Cloth, common           70     (/10 sq yds)   10     {Quality:}
+Cloth, fine            500     (/10 sq yds)   10     {Quality:}
+Cloth, rich           1000     (/10 sq yds)   10     {Quality:}
+Collar (animal)                                      {Quality:}
+Cord (100 lb)            1     (/10 yds)       0.5   {Quality:}
+Crampons               400                     2     {Quality:}
+Crowbar                 30                           {Quality:}
+Drill, iron             50                     5     {Quality:}
+File                                                 {Quality:}
+First aid kit           30                     2     {Quality:}
+Fishhook                 1                     -     {Quality:}
+Fishing line (10 lb)     1     (/100 yds)      1     {Quality:}
+Fishing net              5     (/ sq yd)       1     {Quality:}
+Flask                   15                     1     {Quality:}
+Flint & steel            5                     0.1   {Quality:}
+Glass bottle           100                     0.4   {Quality:}
+Glass vial              50                     0.1   {Quality:}
+Gloves                                               {Quality:}
+Grappling hook          10                     4     {Quality:}
+Hammer, sledge          15                     8     {Quality:}
+Hammer, carpenter's      5                     2     {Quality:}
+Hatchet                 15                     2     {Quality:}
+Harness                 40                     3     {Quality:}
+Hoe                                                  {Quality:}
+Hoof pick                                            {Quality:}
+Holy water             250     (/ quart)       2.5   {Quality:}
+Horn                   100                     3     {Quality:}
+Hourglass              250                     1     {Quality:}
+Incense                 50                     0.1   {Quality:}
+Iron pot                 5                     2     {Quality:}
+Kayak                 2500                    50     {Quality:}
+Ladder, 10 ft            0.5                  20     {Quality:}
+Lantern, beacon       1000                     5     {Quality:}
+Lantern, bullseye      120                     3     {Quality:}
+Lantern, hooded         70                     2     {Quality:}
+Lantern, waterproof    500                     5     {Quality:}
+Lard                     0.5   (/ pint)        2     {Quality:}
+Leash                                                {Quality:}
+Leather punch                                        {Quality:}
+Lock & key             300                     1     {Quality:}
+Lockpick                20                     0.1   {Quality:}
+Lodestone                                            {Quality:}
+Loom                                                 {Quality:}
+Magnifying glass      1000                     0.1   {Quality:}
+Map/scroll case          8                     0.5   {Quality:}
+Medical kit            200                    10     {Quality:}
+Merchant's scale        20                     1     {Quality:}
+Mirror, small metal    100                     0.1   {Quality:}
+{Musical_Instrument}   500                     2     {Quality:}
+Nails                                                {Quality:}
+Needle                                               {Quality:}
+Oar                                                  {Quality:}
+Oil, lamp                0.6   (/ flask)       1     {Quality:}
+Oil, Greek fire        100     (/ flask)       2     {Quality:}
+Oil, waterproofing      10     (/ flask)       2     {Quality:}
+Paper                   20     (/ sheet)       -     {Quality:}
+Papyrus                  8     (/ sheet)       -     {Quality:}
+Parchment               10     (/ sheet)       -     {Quality:}
+Perfume                 50     (/ vial)        0.1   {Quality:}
+Pickaxe                200                    20     {Quality:}
+Pipe, copper                                         {Quality:}
+Pipe, smoking                                        {Quality:}
+Piton                    0.3                   0.5   {Quality:}
+Poker, fireplace                                     {Quality:}
+Pole                     5     (/ foot)        1     {Quality:}
+Pouch, leather                                       {Quality:}
+Pulley                 250                     6     {Quality:}
+Quiver                   8                     1     {Quality:}
+Reed, hollow             1                     0.1   {Quality:}
+Robe or cloak           75                     5     {Quality:}
+Rope, heavy (1000 lb)   25     (/50 ft)       12     {Quality:}
+Rope, hemp (300 lb)     10     (/50 ft)        8     {Quality:}
+Rope, silk (500 lb)    100     (/50 ft)        4     {Quality:}
+Sack, large              2                     0.5   {Quality:}
+Sack, small              0.5                   0.1   {Quality:}
+Saddle & Tack          200                    40     {Quality:}
+Scissors                                             {Quality:}
+Sealing/candle wax      10     (/ lb)          1     {Quality:}
+Sextant, brass        1500                     3     {Quality:}
+Sewing needle            5                     -     {Quality:}
+Shovel                 100                    18     {Quality:}
+Signet ring or seal     50                     0.1   {Quality:}
+Silk                   200     (/ sq yd)       0.1   {Quality:}
+Silverware                                           {Quality:}
+Sleeping roll/bag       40                    15     {Quality:}
+Soap                     5     (/ lb)          1     {Quality:}
+Spice                    1     (/ dose)        -     {Quality:}
+Spike, iron              1                     1     {Quality:}
+Spinning wheel                                       {Quality:}
+Spyglass              1000                     1     {Quality:}
+Staff                    5                    10     {Quality:}
+Tent, large (4)        250     (10-man)       20     {Quality:}
+Tent, pavillion (20)  1000                    50     {Quality:}
+Tent, small (2)         50     (2-man)        10     {Quality:}
+Thief's kit            300                     1     {Quality:}
+Tinderbox               10                     2     {Quality:}
+Tongs                                                {Quality:}
+Toothpicks                                           {Quality:}
+Torch                    0.1                   1     {Quality:}
+Towel                    0.5                   0.5   {Quality:}
+Utensiles                                            {Quality:}
+Water clock           1000                   200     {Quality:}
+Whetstone                0.2                   1     {Quality:}
+Whistle                  3                     0.1   {Quality:}
+Wineskin                 8                     1     {Quality:}
+Winter blanket           5                     3     {Quality:}
+Writing Ink             80     (/ vial)        0.1   {Quality:}

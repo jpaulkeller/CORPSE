@@ -1,0 +1,28 @@
+
+: Name          1 15
+: Level        16  2
+: Class        32 10
+: Race         20 11
+: Attributes   43 32
+
+* Strength     43  3
+* Dexterity    47  3
+* Agility      51  3
+* Constitution 55  3
+* Intelligence 59  3
+* Wisdom       63  3
+* Discipline   67  3
+* Charisma     71  3
+
+Cascus          2  Human       Cleric      13  14  17  15  13  17  13  12  
+Chena (M)       1  Elf         Mage        10  15  17  14  17  16  14  16
+Chena (T)       1  Elf         Thief       10  15  17  14  17  16  14  16
+Cherdesure (F)  1  Elf         Fighter     16  11  17  12  15   9   7  14
+Cherdesure (M)  1  Elf         Mage        16  11  17  12  15   9   7  14
+Dweldin         1  Halfling    Thief       11  10  14   9  11  12  13  12
+Grikk           1  Orc         Changer     13  12  18  18  10  11  16  10
+Keldor          8  Human       Ranger      18  17  13  15  14  16  12  11
+Shadow          1  Human       Cleric      13  14  10  14  13  16   6  11
+Simerli         1  Elf         Fighter     13  11  12  13  12  13  15  14
+Thorindal       1  Dwarf       Barbarian   14  10  13  11   9  12  14   7
+Ture            4  Half Elf    Druid       13  16  12  12  17  15  14  15

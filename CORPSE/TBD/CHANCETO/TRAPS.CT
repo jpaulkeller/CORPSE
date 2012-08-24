@@ -1,0 +1,45 @@
+ ==========================================================================
+ |  CHANCE = TO  |    Base % Chance=To  =  Training * ( Level + Ability ) |
+ |     SYSTEM    |    % Chance=To       =  Base = Situational Difficulty  |
+ ==========================================================================
+
+  ACTION :  (Dis)Arm Trap          ATTRIBUTE(S) :  Dex, Dis, Int
+
+  DESCRIPTION / NOTES :  To deactivate (or set) a mechanical trap.
+     For more detailed information, see the section on Traps.
+     For Training, use the character's Class Constant for "Traps".
+
+  TIME REQUIRED :  ( 11 - Character's Level ) * Trap Level ) minutes.
+
+  SITUATIONAL CONSIDERATIONS :  Level of Trap (1 to 10); tools; supplies;
+     working conditions (e.g., distractions, available light).
+
+  -----------     ------------------------------------------------------
+   ROLL (d%)             EFFECTS  vs. Arming A Trap
+  -----------     ------------------------------------------------------
+
+   01 ........... Successful; and +5 added to Trap Level.
+   <= 10% CT .... Successful; and +2 added to Trap Level.
+   < CT ......... Successful.
+   = CT ......... Successful; but Save vs Dex or break trap/tool.
+   <= Base ...... Unsuccessful; may try again with S = old S + 10.
+   > Base ....... Unsuccessful; break trap/tool.
+   00 (100) ..... Unsuccessful; trap is activated!
+
+  -----------     ------------------------------------------------------
+   ROLL (d%)             EFFECTS  vs. Disarming A Trap
+  -----------     ------------------------------------------------------
+
+   01 ........... Trap disarmed, +25% on attempt to re-arm trap;
+                  Permanently disarmed (if applicable & desired);
+                  Save 5 minutes per trap level disarming time.
+   <= 10% CT .... Trap disarmed, +10% on attempt to re-arm trap;
+                  Save 2 minutes per trap level disarming time.
+   < CT ......... Successful, the trap is disarmed.
+   = CT ......... Successful, but tool is broken.
+   <= Base ...... Unsuccessful; roll d6, 6 means trap/tool breaks,
+                  else may try again with Situational Difficulty + 10.
+   > Base ....... Unsuccessful and the trap is activated.
+   00 (100) ..... As above, and no save is allowed!
+
+ ===========================================================================

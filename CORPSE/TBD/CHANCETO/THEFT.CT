@@ -1,0 +1,29 @@
+ ==========================================================================
+ |  CHANCE = TO  |    Base % Chance=To  =  Training * ( Level + Ability ) |
+ |     SYSTEM    |    % Chance=To       =  Base = Situational Difficulty  |
+ ==========================================================================
+
+  ACTION :  Theft (Pick-pocket)    ATTRIBUTE(S) :  Dex, Dex, Int
+
+  DESCRIPTION / NOTES :  To steal small objects from a creature.
+     For more detailed information, see the section on Theft.
+     For Training, use the character's Class Constant for "Thievery".
+
+  TIME REQUIRED :  Variable.
+
+  SITUATIONAL CONSIDERATIONS :  Level of victim (1 to 10); perception/
+     condition of victim; target location; environment; distractions.
+
+  -----------     ------------------------------------------------------
+   ROLL (d%)                           EFFECTS
+  -----------     ------------------------------------------------------
+
+   01 ........... Successful; +25 on next attempt, same victim.
+   <= 10% CT .... Successful; +10 on next attempt, same victim.
+   < CT ......... Successful.
+   = CT ......... Successful; but some incriminating sign is left.
+   <= Base ...... Unsuccessful; may try again with S = old S + 20.
+   > Base ....... Unsuccessful; detected.
+   00 (100) ..... Unsuccessful; caught in the act!
+
+ ===========================================================================

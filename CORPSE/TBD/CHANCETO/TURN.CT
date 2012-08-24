@@ -1,0 +1,51 @@
+ ==========================================================================
+ |  CHANCE = TO  |    Base % Chance=To  =  Training * ( Level + Ability ) |
+ |     SYSTEM    |    % Chance=To       =  Base = Situational Difficulty  |
+ ==========================================================================
+
+  ACTION :  Turn (Dispell) Undead    ATTRIBUTE(S) :  Wis, Dis
+
+  DESCRIPTION / NOTES :  To cause one or more undead creatures to
+     flee from (or avoid) the "turner", through the use of spiritual
+     faith and presentation of a holy symbol, relic, or artifact.
+     Dispelling the undead will physically destroy them (generally
+     by causing them to become corporeal and then age almost instantly).
+     For more detailed information, see the section on Undead.
+     For Training, use the character's Class Constant for "Faith".
+
+  TIME REQUIRED :  ( ( 11 - Character's Level ) * Undead's Level secs.
+
+  SITUATIONAL CONSIDERATIONS :  Level of undead; number of undead;
+     presence of other undead/attackers (i.e., morale considerations);
+     quality of holy symbol; additional accouterments such as holy water,
+     garlic, bright light, fire, silver, etc.; setting.  If the character
+     elects to Dispell, the S value is doubled!  After doubling, subtract
+     ((5 - Area ETL) * 5) from S. Note that this number may be positive or
+     negative.
+
+  -----------     ------------------------------------------------------
+   ROLL (d%)                             EFFECTS
+  -----------     ------------------------------------------------------
+
+   01 ........... Successful; and the undead are dispelled!
+                  Turner gains +25 on subsequent Turn attempt
+                  (for this encounter only).
+   <= 10% CT .... Successful; turner gains +10 on subsequent Turn attempt
+                  (for this encounter only).
+   < CT ......... Successful, the undead is(are) Turned/Dispelled.
+   = CT ......... Successful; but turner loses d6*5 on subsequent Turn
+                  attempt (for this encounter only); and he must roll on
+                  the Mind Shock chart (with +5).
+   <= Base ...... Unsuccessful; may try again with S = old S + 20
+                  only if Save vs. Discipline is made.
+   > Base ....... Unsuccessful; the undead attack turner unless they
+                  are being controlled somehow.  Turner loses 10 on
+                  subsequent Turn attempt (for this encounter only).
+   00 (100) ..... Unsuccessful; the undead immediately attack turner,
+                  and each receives +10 for all Attack-Con rolls.
+                  Turner loses 25 on subsequent Turn attempt
+                  (for this encounter only); and he must roll on
+                  the Mind Shock chart (with +2).
+
+ ===========================================================================
+

@@ -1,0 +1,38 @@
+? Sources: See SPELL.TBL
+
+@ Level    1  2
+@ Spell    5 24
+@ Type    31  7
+@ Element 43  5
+@ Source  53  6
+@ Class   61  4
+
+!Lv     Spell Name            Type(s)     Element   Source  Clss
+!-- ------------------------  ----------  -------   ------  ----
+ 4) ABJURE                    ABJ                   TSRPH2  CLER
+ 6) ANTI-ANIMAL SHELL         ABJ         LIFE      TSRPH2  DRUI
+ 6) ANTI-MAGIC SHELL          ABJ/MET     ENERGY    TSRPH2  MAGE
+ 5) ANTI-PLANT SHELL          ABJ         EARTH     TSRPH2  DRUI
+ 3) DISMISS UNDEAD            ABJ         DEATH     Dgn:V4  CLER
+ 6) FORBIDDANCE               ABJ                   TSRPH2  CLER
+ 3) GLYPH OF WARDING          ABJ&INV               TSRPH2  CLER
+ 1) INVISIBILITY TO UNDEAD    ALT/ABJ     DEATH     TSRPH2  CLER
+ 3) NON-DETECTION             ABJ                   TSRPH2  ILLU
+ 2) PROTECTION FROM CANTRIPS  ABJ                   TSRPH2  MAGE
+ 1) PROTECTION FROM EVIL      ABJ&SPI               TSRPH2  CLER/MAGE
+ 4) PROTECTION FROM EVIL (10) ABJ&SPI               TSRPH2  CLER
+ 3) PROTECTION FROM EVIL (10) ABJ&SPI               TSRPH2  MAGE
+ 3) PROTECTION FROM FIRE      ABJ         FIRE      TSRPH2  DRUI
+ 4) PROTECTION FROM LIGHTNING ABJ         FIRE      TSRPH2  DRUI
+ 4) PROTECTION FROM MISSILES  ABJ                   CORPSE  META
+ 3) PROTECTION FROM MISSILES  ABJ                   TSRPH2  MAGE
+ 5) PROTECTION FROM WEAPONRY  ABJ                   CORPSE  META
+ 1) SANCTUARY                 ABJ                   TSRPH2  CLER
+ 1) SCREEN                    ABJ                   CORPSE  META
+ 8) SERTEN'S SPELL IMMUNITY   MET/ABJ               TSRPH2  MAGE
+ 5) TURN GOLEMS               ABJ                   CORPSE  META
+ 4) TURN LYCANTROPES          ABJ                   CORPSE  META
+ 6) TURN WOOD                 ABJ         EARTH     TSRPH2  DRUI
+ 4) WARD, MINOR               INV&ABJ               Dgn:V4  CLER
+ 5) WARD, MAJOR               INV&ABJ               Dgn:V4  CLER
+ 2) WYVERN WATCH              ABJ                   TSRPH2  CLER
