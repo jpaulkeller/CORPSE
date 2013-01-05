@@ -194,11 +194,11 @@ public final class ServerActivity
 
 		String url = "http://forums.lotro.com/forumdisplay.php?77-Servers";
 
-		// String title = "Threads Updated Since " + firstMDY + " (by server)";
-		// app.getServers(url, SERVER_PATTERN); // server activity
+		String title = "Threads Updated Since " + firstMDY + " (by server)";
+		app.getServers(url, SERVER_PATTERN); // server activity
 		
-		String title = "PvMP Threads Updated Since " + firstMDY + " (by server)";
-		app.getServers(url, PVMP_PATTERN); // optional for PvMP (updates the server links)
+		// String title = "PvMP Threads Updated Since " + firstMDY + " (by server)";
+		// app.getServers(url, PVMP_PATTERN); // optional for PvMP (updates the server links)
 		
 		for (String serverName : app.servers.keySet())
 			app.getPages(serverName);
