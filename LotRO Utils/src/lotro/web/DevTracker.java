@@ -30,6 +30,7 @@ import gui.TranslucentColor;
 public final class DevTracker
 {
    private static final SimpleDateFormat MDY = new SimpleDateFormat ("MM-dd-yyyy");
+   private static final SimpleDateFormat YYYY = new SimpleDateFormat ("yyyy");
    private static final SimpleDateFormat YYYYMM = new SimpleDateFormat ("yyyy-MM");
    private static final SimpleDateFormat MONTH = new SimpleDateFormat ("MMM");
    
@@ -99,7 +100,9 @@ public final class DevTracker
    private NumericMap<String, Integer> byDev = new NumericMap<String, Integer> (Integer.class);
    private NumericMap<String, Integer> byDevActive = new NumericMap<String, Integer> (Integer.class);
    private NumericMap<String, Integer> byForum = new NumericMap<String, Integer> (Integer.class);
+   private NumericMap<String, Integer> byTopic = new NumericMap<String, Integer> (Integer.class);
    private NumericMap<String, Integer> byMonth = new NumericMap<String, Integer> (Integer.class);
+   private NumericMap<String, Integer> byYear = new NumericMap<String, Integer> (Integer.class);
    private CollectionMap<String, Post> suggestionsByTopic = new CollectionMap<String, Post>();
 
    private DevTracker()
@@ -123,6 +126,8 @@ public final class DevTracker
 
          String page = FileUtils.getText (is, "UTF8");
 
+         Date prevDate = null;
+         
          Matcher matcher = POST_PATTERN.matcher (page);
          while (matcher.find())
          {
@@ -136,10 +141,16 @@ public final class DevTracker
             try
             {
                date = MDY.parse (mdy);
+               if (!date.equals (prevDate))
+               {
+                  System.out.println (" > " + date);
+                  prevDate = date;
+               }
                if (date.before (firstDate))
                   return false;
             }
             catch (ParseException x) { }
+            
             if (date != null && date.before (lastDate))
             {
                Post post = new Post (dev, date, forum, topic, id);
@@ -150,11 +161,11 @@ public final class DevTracker
       }
       catch (MalformedURLException x)
       {
-         System.err.println (x);
+         System.err.println (x + ": " + address);
       }
       catch (IOException x)
       {
-         System.err.println (x);
+         System.err.println (x + ": " + address);
       }
       finally
       {
@@ -223,6 +234,7 @@ public final class DevTracker
          byDev.plus (post.dev, 1);
          byForum.plus (post.forum, 1);
          byMonth.plus (YYYYMM.format (post.date), 1);
+         byYear.plus (YYYY.format (post.date), 1);
          if (post.forum.equals ("Suggestions"))
             suggestionsByTopic.putElement (post.topic, post);
       }
@@ -234,8 +246,130 @@ public final class DevTracker
             byDevActive.put (dev, count);
       }
       
-      String path = FileUtils.MY_DESK + File.separator + "WordCount.txt";
-      writeMap (wordCount, path, false);
+      if (!wordCount.isEmpty())
+      {
+         String path = FileUtils.MY_DESK + File.separator + "WordCount.txt";
+         writeMap (wordCount, path, false);
+      }
+      
+      organizeByTopic();
+   }
+
+   private void organizeByTopic()
+   {
+      for (String forum : byForum.keySet())
+      {
+         if (forum.contains("Announcements") ||
+             forum.contains("Official") ||
+             forum.contains("Store"))
+            byTopic.plus("Official", byForum.getInt(forum));
+         
+         else if (forum.contains("General"))
+            byTopic.plus("General", byForum.getInt(forum));
+         
+         else if (forum.contains("Suggestions"))
+            byTopic.plus("Suggestions", byForum.getInt(forum));
+         
+         else if (forum.contains("Community") ||
+               forum.contains("Feedback") ||
+               forum.contains("Fansite") ||
+               forum.contains("Postcards") ||
+               forum.contains("Hall of Fame") ||
+               forum.contains("Events") ||
+               forum.contains("Tolkien") ||
+               forum.contains("Off-Topic"))
+            byTopic.plus("Community", byForum.getInt(forum));
+         
+         else if (forum.contains("Quests") ||
+               forum.contains("Instances") ||
+               forum.contains("Legendary Items") ||
+               forum.contains("War-steeds") ||
+               forum.contains("Mounted Combat") ||
+               
+               forum.contains("Crafting") ||
+               forum.equals("Cook") ||
+               forum.equals("Farmer") ||
+               forum.equals("Forester") ||
+               forum.equals("Jeweller") ||
+               forum.equals("Metalsmith") ||
+               forum.equals("Propector") ||
+               forum.equals("Scholar") ||
+               forum.equals("Tailor") ||
+               forum.equals("Weaponsmith") ||
+               forum.equals("Woodworker") ||
+               
+               forum.contains("Races") ||
+               forum.equals("Burglars") ||
+               forum.equals("Captains") ||
+               forum.equals("Champions") ||
+               forum.equals("Guardians") ||
+               forum.equals("Hunters") ||
+               forum.equals("Lore-masters") ||
+               forum.equals("Minstrels") ||
+               forum.equals("Rune-keepers") ||
+               forum.equals("Wardens") ||
+               
+               forum.contains("Housing") ||
+               forum.contains("Kinships") ||
+               forum.contains("Cosmetics") ||
+               forum.contains("Roleplaying") ||
+               forum.contains("Music") ||
+               
+               forum.contains("Scripting") ||
+               forum.contains("API") ||
+               forum.contains("Plugins") ||
+               
+               forum.contains("User Interface") ||
+               
+               forum.contains("Monster play") ||
+               forum.equals("Creeps") ||
+               forum.equals("Freeps"))
+            
+            byTopic.plus("Game Play and Systems", byForum.getInt(forum));
+         
+         else if (forum.contains("Deutsch") ||
+               forum.contains("Français") ||
+               forum.contains("[DE") ||
+               forum.contains("[FR"))
+            byTopic.plus("Non-English", byForum.getInt(forum));
+         
+         else if (forum.contains("Arkenstone") ||
+               forum.contains("Brandywine") ||
+               forum.contains("Crickhollow") ||
+               forum.contains("Dwarrowdelf") ||
+               forum.contains("Eldar") ||
+               forum.contains("Elendilmir") ||
+               forum.contains("Evernight") ||
+               forum.contains("Firefoot") ||
+               forum.contains("Gilrain") ||
+               forum.contains("Gladden") ||
+               forum.contains("Imladris") ||
+               forum.contains("Landroval") ||
+               forum.contains("Laurelin") ||
+               forum.contains("Meneldor") ||
+               forum.contains("Nimrodel") ||
+               forum.contains("Riddermark") ||
+               forum.contains("Silverlode") ||
+               forum.contains("Snowbourn") ||
+               forum.contains("Vilya") ||
+               forum.contains("Windfola") ||
+               forum.contains("Withywindle") ||
+               forum.contains("Bullroarer"))
+            byTopic.plus("Servers", byForum.getInt(forum));
+         
+         else if (forum.contains("Support") ||
+               forum.contains("Technical") ||
+               forum.contains("Knowledge") ||
+               forum.contains("Assistance"))
+            byTopic.plus("Customer Support", byForum.getInt(forum));
+         
+         else
+         {
+            System.out.println("Forum: " + forum);
+            byTopic.plus("Other", byForum.getInt(forum));
+         }
+      }
+      
    }
 
    public static void writeMap (final Map<String, Integer> map, final String path,
@@ -264,15 +398,15 @@ public final class DevTracker
    
    public static void main (final String[] args) throws Exception
    {
-      String firstMDY = "01-01-2011";
-      String lastMDY = "12-31-2011";
+      String firstMDY = "01-01-2012";
+      String lastMDY = "12-31-2012";
       Date firstDate = MDY.parse (firstMDY);
       Date lastDate = MDY.parse (lastMDY);
 
       DevTracker tracker = new DevTracker();
       
-      String url = "http://forums.lotro.com/turbine_tracker.php?tracker=dev&pp=25&page=";
-      int page = 1;  // start ~137 for 2008
+      String url = "http://forums.lotro.com/turbine_tracker.php?tracker=devT&pp=25&page=";
+      int page = 1;
       while (tracker.scrape (url + page, firstDate, lastDate))
          page++;
       tracker.organize();
@@ -281,8 +415,7 @@ public final class DevTracker
 
       // --------------------------------------------------------------------
       
-      GoogleChart chart = new GoogleChart ("Dev Posts In Class Forums " + dates,
-                                           GoogleChart.ChartType.Pie);
+      GoogleChart chart = new GoogleChart ("Dev Posts In Class Forums " + dates, GoogleChart.ChartType.Pie);
       chart.put (GoogleChart.ChartProp.Width, "600");
       chart.put (GoogleChart.ChartProp.Height, "400");
 
@@ -305,16 +438,36 @@ public final class DevTracker
       
       // --------------------------------------------------------------------
       
-      chart = new GoogleChart ("Dev Posts " + dates,
-                               GoogleChart.ChartType.Pie);
+      chart = new GoogleChart ("Dev Posts By Forum " + dates, GoogleChart.ChartType.BarHorizontalGrouped);
+      chart.put (GoogleChart.ChartProp.Width, "600");
+      chart.put (GoogleChart.ChartProp.Height, "400");
+
+      Color[] gradient = Gradient.createMultiGradient (new Color[] {
+            new Color (181, 32, 255), Color.blue, Color.green, Color.yellow },
+            tracker.byTopic.size());
+
+      int index = 0;
+      for (String topic : tracker.byTopic.keySet())
+      {
+         String color = TranslucentColor.toHex (gradient [index++], "");
+         chart.addValue (topic, tracker.byTopic.getInt (topic), color);
+      }
+      
+      if (chart.size() > 0)
+         chart.show();
+      System.out.println();
+      
+      // --------------------------------------------------------------------
+      
+      chart = new GoogleChart ("Dev Posts " + dates, GoogleChart.ChartType.Pie);
       chart.put (GoogleChart.ChartProp.Width, "600");
       chart.put (GoogleChart.ChartProp.Height, "400");
       
-      Color[] gradient = Gradient.createMultiGradient (new Color[] {
-               new Color (181, 32, 255), Color.blue, Color.green, Color.yellow },
-               tracker.byDev.size());
+      gradient = Gradient.createMultiGradient (new Color[] {
+            new Color (181, 32, 255), Color.blue, Color.green, Color.yellow },
+            tracker.byDev.size());
 
-      int index = 0;
+      index = 0;
       for (String dev : tracker.byDev.keySet())
       {
          String color = TranslucentColor.toHex (gradient [index++], "");
@@ -327,8 +480,7 @@ public final class DevTracker
       // --------------------------------------------------------------------
       // more than MIN_POSTS only
       
-      chart = new GoogleChart (MIN_POSTS + "%2B Dev Posts " + dates,
-                               GoogleChart.ChartType.Pie);
+      chart = new GoogleChart (MIN_POSTS + "%2B Dev Posts " + dates, GoogleChart.ChartType.Pie);
       chart.put (GoogleChart.ChartProp.Width, "600");
       chart.put (GoogleChart.ChartProp.Height, "400");
       
@@ -340,8 +492,7 @@ public final class DevTracker
       for (String dev : tracker.byDevActive.keySet())
       {
          String color = TranslucentColor.toHex (gradient [index++], "");
-         if (dev.equals ("Zombie"))
-            color = "FF3333";
+         // if (dev.equals ("Zombie")) color = "FF3333";
          chart.addValue (dev, tracker.byDevActive.getInt (dev), color);
       }
       if (chart.size() > 0)
@@ -350,14 +501,13 @@ public final class DevTracker
       
       // --------------------------------------------------------------------
       
-      chart = new GoogleChart ("Dev Posts By Month " + dates,
-                               GoogleChart.ChartType.BarHorizontalGrouped);
+      chart = new GoogleChart ("Dev Posts By Month " + dates, GoogleChart.ChartType.BarHorizontalGrouped);
       chart.put (GoogleChart.ChartProp.Width, "600");
       chart.put (GoogleChart.ChartProp.Height, "400");
       
       gradient = new Color[] { new Color (181, 32, 255), Color.blue, Color.green, Color.yellow };
       if (tracker.byMonth.size() > 1)
-    	  gradient = Gradient.createMultiGradient (gradient, tracker.byMonth.size());
+        gradient = Gradient.createMultiGradient (gradient, tracker.byMonth.size());
 
       index = 0;
       for (String month : tracker.byMonth.keySet())
@@ -366,6 +516,28 @@ public final class DevTracker
          String label = MONTH.format (date);
          String color = TranslucentColor.toHex (gradient [index++], "");
          chart.addValue (label, tracker.byMonth.getInt (month), color);
+      }
+      if (chart.size() > 0)
+         chart.show();
+      System.out.println();
+      
+      // --------------------------------------------------------------------
+      
+      chart = new GoogleChart ("Dev Posts By Year " + dates, GoogleChart.ChartType.BarHorizontalGrouped);
+      chart.put (GoogleChart.ChartProp.Width, "600");
+      chart.put (GoogleChart.ChartProp.Height, "400");
+      
+      gradient = new Color[] { new Color (181, 32, 255), Color.blue, Color.green, Color.yellow };
+      if (tracker.byYear.size() > 1)
+        gradient = Gradient.createMultiGradient (gradient, tracker.byYear.size());
+
+      index = 0;
+      for (String year : tracker.byYear.keySet())
+      {
+         Date date = YYYY.parse (year);
+         String label = YYYY.format (date);
+         String color = TranslucentColor.toHex (gradient [index++], "");
+         chart.addValue (label, tracker.byYear.getInt (year), color);
       }
       if (chart.size() > 0)
          chart.show();
