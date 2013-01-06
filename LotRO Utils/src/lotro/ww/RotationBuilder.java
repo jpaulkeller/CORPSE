@@ -1,5 +1,7 @@
 package lotro.ww;
 
+import gui.ComponentTools;
+
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.FlowLayout;
@@ -12,7 +14,9 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.ToolTipManager;
 
 import state.ComponentEnabler;
 import state.StateModel;
@@ -20,7 +24,7 @@ import state.StateModel;
 public class RotationBuilder extends JFrame implements ActionListener
 {
    private JTextField rotationKeys;
-   private JTextField rotationGambits;
+   private JTextArea rotationGambits;
    private ComponentEnabler enabler;
    private StateModel stateModel;
 
@@ -43,7 +47,6 @@ public class RotationBuilder extends JFrame implements ActionListener
          
          for (String keys : gambit.getKeys())
             row.add(makeButton(gambit, keys));
-         // JPanel withName = ComponentTools.getTitledPanel(row, gambit.getName());
          grid.add(row); 
       }
       
@@ -54,10 +57,10 @@ public class RotationBuilder extends JFrame implements ActionListener
       buttons.add(reset);
 
       rotationKeys = new JTextField(50);
-      rotationGambits = new JTextField(50);
-      JPanel rotation = new JPanel(new GridLayout(2, 1));
-      rotation.add(rotationKeys);
-      rotation.add(rotationGambits);
+      rotationGambits = new JTextArea(6, 50);
+      JPanel rotation = new JPanel(new BorderLayout());
+      rotation.add(rotationKeys, BorderLayout.NORTH);
+      rotation.add(rotationGambits, BorderLayout.CENTER);
       
       Container c = getContentPane();
       c.setLayout (new BorderLayout());
@@ -77,13 +80,18 @@ public class RotationBuilder extends JFrame implements ActionListener
       btn.addActionListener (this);
       btn.setToolTipText(gambit.getToolTip());
 
-      // add a state for each key
-      String[] used = new String[keys.length()];
-      for (int i = 0; i < keys.length(); i++)
-         used[i] = keys.charAt (i) + "";
-      
       enabler.enableWhen (btn, StateModel.DEFAULT_STATE);
-      enabler.disableWhen (btn, used);
+      
+      String builder = Gambit.keyMapping.getKey(keys);  
+      if (builder != null && builder.length() == 2 && builder.charAt(0) == builder.charAt(1)) // handle RR,GG,YY
+         enabler.disableWhen (btn, keys);
+      else
+         for (char c : keys.toCharArray()) // add a state for each mastery key
+         {
+            builder = Gambit.keyMapping.getKey(c + "");
+            if (builder.length() > 1) // don't disable for R, G, Y
+               enabler.disableWhen (btn, c + "");
+         }
 
       return btn;
    }
@@ -102,9 +110,19 @@ public class RotationBuilder extends JFrame implements ActionListener
       {
          GambitButton button = (GambitButton) e.getSource();
          rotationKeys.setText(rotationKeys.getText() + command + ", ");
-         rotationGambits.setText(rotationGambits.getText() + button.getGambit().getName() + ", ");
-         for (int i = 0; i < command.length(); i++)
-            stateModel.addState (command.charAt (i) + "");
+         rotationGambits.append(command + ": " + button.getGambit() + "\n");
+         
+         String builder = Gambit.keyMapping.getKey(command);  
+         if (builder != null && builder.length() == 2 && builder.charAt(0) == builder.charAt(1)) // handle RR,GG,YY
+            stateModel.addState (command);
+         else
+            for (char c : command.toCharArray())
+            {
+               builder = Gambit.keyMapping.getKey(c + "");
+               System.out.println(c + " > " + builder);
+               if (builder.length() > 1) // no state for for R, G, Y
+                  stateModel.addState (c + "");
+            }
       }
    }
    
@@ -122,5 +140,16 @@ public class RotationBuilder extends JFrame implements ActionListener
       {
          return gambit;
       }
+   }
+   
+   public static void main(String[] args)
+   {
+      Map<String, Gambit> gambits = GambitData.load();
+      
+      ComponentTools.setLookAndFeel();
+      ToolTipManager.sharedInstance().setDismissDelay(30000);
+      RotationBuilder rb = new RotationBuilder(gambits);
+      ComponentTools.centerComponent(rb);
+      rb.setVisible(true);
    }
 }
