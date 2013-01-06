@@ -1,13 +1,13 @@
 package lotro.ww;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
+import model.CrossMap;
 
 public class Gambit
 {
-   private static Map<String, String> keyMapping = new HashMap<String, String>();
+   public static CrossMap<String, String> keyMapping = new CrossMap<String, String>();
    static
    {
       keyMapping.put("RG", "1");
@@ -19,9 +19,9 @@ public class Gambit
       keyMapping.put("R", "7");
       keyMapping.put("G", "8");
       keyMapping.put("Y", "9");
-      keyMapping.put("RR", "A"); // 10
-      keyMapping.put("GG", "B"); // 11
-      keyMapping.put("YY", "C"); // 12
+      keyMapping.put("RR", "G10");
+      keyMapping.put("GG", "G11");
+      keyMapping.put("YY", "G12");
    }
    
    private String name;
@@ -53,6 +53,7 @@ public class Gambit
       this.offense = offense;
       this.defense = defense;
       this.heal = heal;
+      this.threat = threat;
       this.other = other;
    }
    
@@ -123,6 +124,7 @@ public class Gambit
       List<String> permutation;
       if (builders.length() == 2)
       {
+         // 2
          permutation = new ArrayList<String>();
          permutation.add(builders);
          permutations.add(permutation);
@@ -143,6 +145,13 @@ public class Gambit
       }
       else if (builders.length() == 4)
       {
+         // 2-2
+         permutation = new ArrayList<String>();
+         permutation.add(builders.substring(0, 2));
+         permutation.add(builders.substring(2));
+         if (!permutation.get(0).equals(permutation.get(1)))
+            permutations.add(permutation);
+         
          // 1-1-2
          permutation = new ArrayList<String>();
          permutation.add(builders.substring(0, 1));
@@ -163,13 +172,6 @@ public class Gambit
          permutation.add(builders.substring(2, 3));
          permutation.add(builders.substring(3));
          permutations.add(permutation);
-
-         // 2-2
-         permutation = new ArrayList<String>();
-         permutation.add(builders.substring(0, 2));
-         permutation.add(builders.substring(2));
-         if (!permutation.get(0).equals(permutation.get(1)))
-            permutations.add(permutation);
       }
       else if (builders.length() == 5)
       {
@@ -196,9 +198,55 @@ public class Gambit
          permutation.add(builders.substring(4));
          if (!permutation.get(0).equals(permutation.get(1)))
             permutations.add(permutation);
+         
+         // 1-1-1-2
+         permutation = new ArrayList<String>();
+         permutation.add(builders.substring(0, 1));
+         permutation.add(builders.substring(1, 2));
+         permutation.add(builders.substring(2, 3));
+         permutation.add(builders.substring(3));
+         permutations.add(permutation);
+         
+         // 1-1-2-1
+         permutation = new ArrayList<String>();
+         permutation.add(builders.substring(0, 1));
+         permutation.add(builders.substring(1, 2));
+         permutation.add(builders.substring(2, 4));
+         permutation.add(builders.substring(4));
+         permutations.add(permutation);
+         
+         // 1-2-1-1
+         permutation = new ArrayList<String>();
+         permutation.add(builders.substring(0, 1));
+         permutation.add(builders.substring(1, 3));
+         permutation.add(builders.substring(3, 4));
+         permutation.add(builders.substring(4));
+         permutations.add(permutation);
+         
+         // 2-1-1-1
+         permutation = new ArrayList<String>();
+         permutation.add(builders.substring(0, 2));
+         permutation.add(builders.substring(2, 3));
+         permutation.add(builders.substring(3, 4));
+         permutation.add(builders.substring(4));
+         permutations.add(permutation);
+      }
+
+      // split into single keys for basic builders (except for Potency gambits)
+      if (builders.charAt(0) != builders.charAt(1) && builders.length() < 5)
+      {
+         permutation = new ArrayList<String>();
+         for (char c : builders.toCharArray())
+            permutation.add(c + "");
+         permutations.add(permutation);
       }
          
       return permutations;
+   }
+
+   public static String getKey(final String builder)
+   {
+      return keyMapping.get(builder);
    }
    
    private void determineKeys()
@@ -246,22 +294,25 @@ public class Gambit
    
    public String toString()
    {
-      StringBuilder sb = new StringBuilder(name);
+      StringBuilder sb = new StringBuilder();
       
-      sb.append(" L:" + level);
-      sb.append(" R:" + range + "m ");
+      sb.append("[" + level + "] ");
+      sb.append(name);
+      sb.append(" (" + builders + "):");
+      if (range > 2.5)
+         sb.append(" " + range + "m ");
       if (maxTargets > 1)
-         sb.append(" T:" + maxTargets + " ");
+         sb.append(" #T:" + maxTargets + " ");
       if (offense != null)
-         sb.append(" O:" + offense);
+         sb.append(" Dmg:" + offense);
       if (defense != null)
-         sb.append(" D:" + defense);
+         sb.append("; " + defense);
       if (heal != null)
-         sb.append(" H:" + heal);
+         sb.append("; " + heal);
       if (threat != null)
-         sb.append(" A: " + threat);
+         sb.append("; Thr: " + threat);
       if (other != null)
-         sb.append(" " + other);
+         sb.append("; " + other);
       
       return sb.toString();
    }
