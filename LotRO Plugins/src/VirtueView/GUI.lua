@@ -13,7 +13,11 @@ import "Palantiri.VirtueView.UI.ListBoxItem"
 -- TODO
 -- background image for main panel
 -- icon
--- options
+-- option
+-- Region-like pulldown for Deed-type (Quest, Slay, Item, etc)
+-- slot for Max Level
+-- Region: All, Eriador, Rhovanion
+-- Zone: Bree, etc (current region)
 
 GUI = class(Turbine.UI.Lotro.Window);
 

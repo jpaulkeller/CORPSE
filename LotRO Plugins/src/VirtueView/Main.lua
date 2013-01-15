@@ -38,7 +38,7 @@ local function updateScreenCoords(widget)
 end
 
 gui = GUI();
-gui:SetVisible(true);
+-- gui:SetVisible(true);
 
 -- Make sure everything is visible on the screen
 updateScreenCoords(gui);
