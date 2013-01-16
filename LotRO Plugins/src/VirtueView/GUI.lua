@@ -14,7 +14,6 @@ import "Palantiri.VirtueView.UI.ListBoxItem"
 -- background image for main panel
 -- icon
 -- option
--- Region-like pulldown for Deed-type (Quest, Slay, Item, etc)
 -- slot for Max Level
 -- Region: All, Eriador, Rhovanion
 -- Zone: Bree, etc (current region)
@@ -40,21 +39,27 @@ function GUI:Constructor()
 	self.focusBgColor = Turbine.UI.Color(1, 0.5, 0.5, 0.5);
 
 	local margin = 20;
+	local x = margin + 20;
 	local y = 35;
+	local width;
 	
 	-- Build the UI
 	
 	self.regionLbl = Palantiri.VirtueView.UI.Label();
 	self.regionLbl:SetParent(self);
-	self.regionLbl:SetSize(120, 20);
-	self.regionLbl:SetPosition(margin + 80, y);
+	width = 80;
+	self.regionLbl:SetSize(width, 20);
+	self.regionLbl:SetPosition(x, y);
+	x = x + width + 20;
 	self.regionLbl:SetText("Region:");
 	self.regionLbl:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleRight);
 	
 	self.regionCombo = Palantiri.VirtueView.UI.ComboBox();
 	self.regionCombo:SetParent(self);
-	self.regionCombo:SetSize(400, 20);
-	self.regionCombo:SetPosition(margin + 80 + 120 + 10, y);
+	width = 250;
+	self.regionCombo:SetSize(width, 20);
+	self.regionCombo:SetPosition(x, y);
+	x = x + width + 20;
 	
     -- add the elements to a set, and sort them
     local set = {}
@@ -74,6 +79,41 @@ function GUI:Constructor()
        self:SaveSettings();
        self:LoadMatchingDeeds();
 	end
+	
+	self.typeLbl = Palantiri.VirtueView.UI.Label();
+	self.typeLbl:SetParent(self);
+	width = 60;
+	self.typeLbl:SetSize(width, 20);
+	self.typeLbl:SetPosition(x, y);
+	x = x + width + 20;
+	self.typeLbl:SetText("Type:");
+	self.typeLbl:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleRight);
+	
+	self.typeCombo = Palantiri.VirtueView.UI.ComboBox();
+	self.typeCombo:SetParent(self);
+	width = 100;
+	self.typeCombo:SetSize(width, 20);
+	self.typeCombo:SetPosition(x, y);
+	
+    -- add the elements to a set, and sort them
+    local set = {}
+	for _, rec in ipairs(virtueTable) do set[rec.type] = true; end
+	types = {}
+	for pair in pairs (set) do table.insert(types, pair); end
+	table.sort(types);
+	table.insert(types, 1, "Any");
+	
+	for i, type in ipairs(types) do
+      item = self.typeCombo:AddItem(type, i);
+      item:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
+	end
+	
+	self.typeCombo:SetSelection(self.settings.type);
+	self.typeCombo.SelectedIndexChanged = function(sender, args)
+       self:SaveSettings();
+       self:LoadMatchingDeeds();
+	end
+	
 	y = y + 30;
 	
 	local virtWidth = 110;
@@ -119,22 +159,31 @@ function GUI:Constructor()
 end
 
 function GUI:LoadMatchingDeeds()
+   local region = regions[self.settings.region];
+   local includeRegion = (region == "Any");
+   
+   local type = types[self.settings.type];
+   local includeType = (type == "Any");
+    
    self.deedList:RemoveAll();
    
-   local region = regions[self.settings.region];
-   if (region == "Any") then
-      for _, rec in ipairs(virtueTable) do
-         if (self.settings.selectedVirtues[rec.virtue]) then
-            self:AddDeed(rec, true);
-	     end 
-      end
-   else
-      for _, rec in ipairs(virtueTable) do
-         if (region == rec.region and self.settings.selectedVirtues[rec.virtue]) then
-	        self:AddDeed(rec, false);
-	     end 
-      end
+   for _, rec in ipairs(virtueTable) do
+      if (self:InRegion(rec, region)) then
+         if (self:OfType(rec, type)) then
+            if (self.settings.selectedVirtues[rec.virtue]) then
+               self:AddDeed(rec, includeRegion, includeType);
+            end 
+         end 
+      end 
    end
+end
+
+function GUI:InRegion(rec, region)
+   return (region == "Any") or (region == rec.region);
+end
+
+function GUI:OfType(rec, type)
+   return (type == "Any") or (type == rec.type);
 end
 
 function GUI:AddItem(listBox, str)
@@ -147,12 +196,16 @@ function GUI:AddItem(listBox, str)
    item.StateChanged = function(sender, args) listBox:FireEvent(); end -- listen
 end
 	
-function GUI:AddDeed(rec, includeRegion)
+function GUI:AddDeed(rec, includeRegion, includeType)
    local item = Palantiri.VirtueView.UI.CheckBox();
-   if (includeRegion) then
+   if (includeRegion and includeType) then
       item:SetText(rec.reward .. " " .. rec.virtue .. " [" .. rec.type .. "] " .. rec.deed .. " in " .. rec.region);
-   else
+   elseif (includeRegion) then
+      item:SetText(rec.reward .. " " .. rec.virtue .. " " .. rec.deed .. " in " .. rec.region);
+   elseif (includeType) then
       item:SetText(rec.reward .. " " .. rec.virtue .. " [" .. rec.type .. "] " .. rec.deed);
+   else
+      item:SetText(rec.reward .. " " .. rec.virtue .. " " .. rec.deed);
    end
    
    if (self.settings.selectedDeeds[rec.region .. ":" .. rec.deed]) then
@@ -192,6 +245,9 @@ function GUI:LoadSettings()
    if (not self.settings.region) then
       self.settings.region = self.region;
    end
+   if (not self.settings.type) then
+      self.settings.type = self.type;
+   end
    if (not self.settings.selectedVirtues) then
       self.settings.selectedVirtues = {}
    end
@@ -208,6 +264,7 @@ function GUI:SaveSettings()
 	end
 	
 	self.settings.region = self.regionCombo:GetSelection();
+	self.settings.type = self.typeCombo:GetSelection();
 	self.settings.selectedVirtues = self.virtueList:GetSelected(); 
 	
 	Turbine.PluginData.Save(Turbine.DataScope.Character, "PalantiriVirtueViewSettings", self.settings);
