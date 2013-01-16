@@ -15,8 +15,6 @@ import "Palantiri.VirtueView.UI.ListBoxItem"
 -- icon
 -- option
 -- slot for Max Level
--- Region: All, Eriador, Rhovanion
--- Zone: Bree, etc (current region)
 
 GUI = class(Turbine.UI.Lotro.Window);
 
@@ -39,27 +37,66 @@ function GUI:Constructor()
 	self.focusBgColor = Turbine.UI.Color(1, 0.5, 0.5, 0.5);
 
 	local margin = 20;
-	local x = margin + 20;
+	local x = margin + 8;
 	local y = 35;
 	local width;
 	
 	-- Build the UI
+	
+	-- Zones
+	
+	self.zoneLbl = Palantiri.VirtueView.UI.Label();
+	self.zoneLbl:SetParent(self);
+	width = 80;
+	self.zoneLbl:SetSize(width, 20);
+	self.zoneLbl:SetPosition(x, y);
+	x = x + width + 15;
+	self.zoneLbl:SetText("Zone:");
+	self.zoneLbl:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleRight);
+	
+	self.zoneCombo = Palantiri.VirtueView.UI.ComboBox();
+	self.zoneCombo:SetParent(self);
+	width = 140;
+	self.zoneCombo:SetSize(width, 20);
+	self.zoneCombo:SetPosition(x, y);
+	x = x + width + 15;
+	
+    -- add the elements to a set, and sort them
+    local set = {}
+	for _, rec in ipairs(virtueTable) do set[rec.zone] = true; end
+	zones = {}
+	for pair in pairs (set) do table.insert(zones, pair); end
+	table.sort(zones);
+	table.insert(zones, 1, "Any");
+	
+	for i, zone in ipairs(zones) do
+      item = self.zoneCombo:AddItem(zone, i);
+      item:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleLeft);
+	end
+	
+	self.zoneCombo:SetSelection(self.settings.zone);
+	self.zoneCombo.SelectedIndexChanged = function(sender, args)
+       self:SaveSettings();
+       self:LoadMatchingDeeds();
+	end
+
+	-- Regions
 	
 	self.regionLbl = Palantiri.VirtueView.UI.Label();
 	self.regionLbl:SetParent(self);
 	width = 80;
 	self.regionLbl:SetSize(width, 20);
 	self.regionLbl:SetPosition(x, y);
-	x = x + width + 20;
+	x = x + width + 15;
 	self.regionLbl:SetText("Region:");
 	self.regionLbl:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleRight);
 	
 	self.regionCombo = Palantiri.VirtueView.UI.ComboBox();
 	self.regionCombo:SetParent(self);
-	width = 250;
+	width = 280;
 	self.regionCombo:SetSize(width, 20);
 	self.regionCombo:SetPosition(x, y);
-	x = x + width + 20;
+	x = x + width + 15;
 	
     -- add the elements to a set, and sort them
     local set = {}
@@ -79,13 +116,15 @@ function GUI:Constructor()
        self:SaveSettings();
        self:LoadMatchingDeeds();
 	end
-	
+
+    -- Types
+    
 	self.typeLbl = Palantiri.VirtueView.UI.Label();
 	self.typeLbl:SetParent(self);
 	width = 60;
 	self.typeLbl:SetSize(width, 20);
 	self.typeLbl:SetPosition(x, y);
-	x = x + width + 20;
+	x = x + width + 15;
 	self.typeLbl:SetText("Type:");
 	self.typeLbl:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleRight);
 	
@@ -159,6 +198,9 @@ function GUI:Constructor()
 end
 
 function GUI:LoadMatchingDeeds()
+   local zone = zones[self.settings.zone];
+   local includeZone = (zone == "Any");
+   
    local region = regions[self.settings.region];
    local includeRegion = (region == "Any");
    
@@ -168,14 +210,20 @@ function GUI:LoadMatchingDeeds()
    self.deedList:RemoveAll();
    
    for _, rec in ipairs(virtueTable) do
-      if (self:InRegion(rec, region)) then
-         if (self:OfType(rec, type)) then
-            if (self.settings.selectedVirtues[rec.virtue]) then
-               self:AddDeed(rec, includeRegion, includeType);
+      if (self:InZone(rec, zone)) then
+         if (self:InRegion(rec, region)) then
+            if (self:OfType(rec, type)) then
+               if (self.settings.selectedVirtues[rec.virtue]) then
+                  self:AddDeed(rec, includeZone, includeRegion, includeType);
+               end 
             end 
          end 
       end 
    end
+end
+
+function GUI:InZone(rec, zone)
+   return (zone == "Any") or (zone == rec.zone);
 end
 
 function GUI:InRegion(rec, region)
@@ -196,16 +244,25 @@ function GUI:AddItem(listBox, str)
    item.StateChanged = function(sender, args) listBox:FireEvent(); end -- listen
 end
 	
-function GUI:AddDeed(rec, includeRegion, includeType)
+function GUI:AddDeed(rec, includeZone, includeRegion, includeType)
    local item = Palantiri.VirtueView.UI.CheckBox();
-   if (includeRegion and includeType) then
+   
+   if (includeZone and includeRegion and includeType) then
+      item:SetText(rec.reward .. " " .. rec.virtue .. " [" .. rec.type .. "] " .. rec.deed .. " in " .. rec.zone .. " " .. rec.region);
+   elseif (includeZone and includeRegion) then
+      item:SetText(rec.reward .. " " .. rec.virtue .. " - " .. rec.deed .. " in " .. rec.zone .. " " .. rec.region);
+   elseif (includeZone and includeType) then
+      item:SetText(rec.reward .. " " .. rec.virtue .. " [" .. rec.type .. "] " .. rec.deed .. " in " .. rec.zone);
+   elseif (includeRegion and includeType) then
       item:SetText(rec.reward .. " " .. rec.virtue .. " [" .. rec.type .. "] " .. rec.deed .. " in " .. rec.region);
+   elseif (includeZone) then
+      item:SetText(rec.reward .. " " .. rec.virtue .. " - " .. rec.deed .. " in " .. rec.zone);
    elseif (includeRegion) then
-      item:SetText(rec.reward .. " " .. rec.virtue .. " " .. rec.deed .. " in " .. rec.region);
+      item:SetText(rec.reward .. " " .. rec.virtue .. " - " .. rec.deed .. " in " .. rec.region);
    elseif (includeType) then
       item:SetText(rec.reward .. " " .. rec.virtue .. " [" .. rec.type .. "] " .. rec.deed);
    else
-      item:SetText(rec.reward .. " " .. rec.virtue .. " " .. rec.deed);
+      item:SetText(rec.reward .. " " .. rec.virtue .. " - " .. rec.deed);
    end
    
    if (self.settings.selectedDeeds[rec.region .. ":" .. rec.deed]) then
@@ -242,6 +299,9 @@ function GUI:LoadSettings()
       self.settings.positionY = 100;
    end
 	
+   if (not self.settings.zone) then
+      self.settings.zone = self.zone;
+   end
    if (not self.settings.region) then
       self.settings.region = self.region;
    end
@@ -263,6 +323,7 @@ function GUI:SaveSettings()
 		return;
 	end
 	
+	self.settings.zone = self.zoneCombo:GetSelection();
 	self.settings.region = self.regionCombo:GetSelection();
 	self.settings.type = self.typeCombo:GetSelection();
 	self.settings.selectedVirtues = self.virtueList:GetSelected(); 
