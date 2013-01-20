@@ -247,23 +247,27 @@ end
 function GUI:AddDeed(rec, includeZone, includeRegion, includeType)
    local item = Palantiri.VirtueView.UI.CheckBox();
    
-   if (includeZone and includeRegion and includeType) then
-      item:SetText(rec.reward .. " " .. rec.virtue .. " [" .. rec.type .. "] " .. rec.deed .. " in " .. rec.zone .. " " .. rec.region);
-   elseif (includeZone and includeRegion) then
-      item:SetText(rec.reward .. " " .. rec.virtue .. " - " .. rec.deed .. " in " .. rec.zone .. " " .. rec.region);
-   elseif (includeZone and includeType) then
-      item:SetText(rec.reward .. " " .. rec.virtue .. " [" .. rec.type .. "] " .. rec.deed .. " in " .. rec.zone);
-   elseif (includeRegion and includeType) then
-      item:SetText(rec.reward .. " " .. rec.virtue .. " [" .. rec.type .. "] " .. rec.deed .. " in " .. rec.region);
+   local where = "";
+   if (includeZone and includeRegion) then
+      where = rec.zone .. "/" .. rec.region;
    elseif (includeZone) then
-      item:SetText(rec.reward .. " " .. rec.virtue .. " - " .. rec.deed .. " in " .. rec.zone);
+      where = rec.zone .. " ";
    elseif (includeRegion) then
-      item:SetText(rec.reward .. " " .. rec.virtue .. " - " .. rec.deed .. " in " .. rec.region);
-   elseif (includeType) then
-      item:SetText(rec.reward .. " " .. rec.virtue .. " [" .. rec.type .. "] " .. rec.deed);
-   else
-      item:SetText(rec.reward .. " " .. rec.virtue .. " - " .. rec.deed);
+      where = rec.region .. " ";
    end
+      
+   local type = " - ";
+   if (includeType) then
+      type = " (" .. rec.type .. ") ";
+   end
+      
+   local reward = "";
+   Turbine.Shell.WriteLine("SIZE: " .. self:ElementCount(self.settings.selectedVirtues));
+   if (self:ElementCount(self.settings.selectedVirtues) > 1) then
+      reward = " (" .. rec.reward .. " " .. rec.virtue .. ")";
+   end
+
+   item:SetText(where .. type .. rec.deed .. reward);
    
    if (self.settings.selectedDeeds[rec.region .. ":" .. rec.deed]) then
       item:SetChecked(true);
@@ -282,6 +286,12 @@ end
 	
 function GUI:GetRegion()
 	return self.regionCombo:GetSelection();
+end
+
+function GUI:ElementCount(T)
+  local count = 0
+  for _ in pairs(T) do count = count + 1 end
+  return count
 end
 
 function GUI:LoadSettings()
