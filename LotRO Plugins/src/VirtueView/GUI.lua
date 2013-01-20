@@ -262,7 +262,6 @@ function GUI:AddDeed(rec, includeZone, includeRegion, includeType)
    end
       
    local reward = "";
-   Turbine.Shell.WriteLine("SIZE: " .. self:ElementCount(self.settings.selectedVirtues));
    if (self:ElementCount(self.settings.selectedVirtues) > 1) then
       reward = " (" .. rec.reward .. " " .. rec.virtue .. ")";
    end
