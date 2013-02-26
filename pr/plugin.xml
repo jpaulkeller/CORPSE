@@ -31,4 +31,16 @@
          </action>
       </actionSet>
    </extension>
+   <extension point="org.eclipse.ui.preferencePages">
+      <page
+            class="pr.JACOBPreferencePage"
+            id="JACOBPreferencePage"
+            name="JACOB">
+      </page>
+      <page id="PeerReviewPreferencePage"
+         name="JACOB Peer Review"
+         class="pr.PreferencePage"
+         category="JACOBPreferencePage">
+      </page>
+   </extension>
 </plugin>
