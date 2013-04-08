@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import lotro.models.Alliance;
 import lotro.models.Character;
 import lotro.models.Kinship;
 import lotro.models.Player;

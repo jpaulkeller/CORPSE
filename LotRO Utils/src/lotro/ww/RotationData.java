@@ -13,35 +13,6 @@ public class RotationData
 
    public static List<Rotation> load()
    {
-      /*
-      keyMapping.put("RG", "1");
-      keyMapping.put("GY", "2");
-      keyMapping.put("YG", "3");
-      keyMapping.put("RY", "4");
-      keyMapping.put("GR", "5");
-      keyMapping.put("YR", "6");
-      keyMapping.put("R", "7");
-      keyMapping.put("G", "8");
-      keyMapping.put("Y", "9");
-      keyMapping.put("RR", "G10");
-      keyMapping.put("GG", "G11");
-      keyMapping.put("YY", "G12");
-
-      keyMapping.put("RR", "1");
-      keyMapping.put("GG", "2");
-      keyMapping.put("YY", "3");
-      keyMapping.put("R", "4");
-      keyMapping.put("G", "5");
-      keyMapping.put("Y", "6");
-      keyMapping.put("RG", "7");
-      keyMapping.put("GY", "8");
-      keyMapping.put("YG", "9");
-      keyMapping.put("RY", "A");
-      keyMapping.put("GR", "B");
-      keyMapping.put("YR", "C");
-      
-      */
-
       addRotation("Single Target DPS", "GR", "GY", "GG", "RG,R", "YG,Y,G", "RY", "YR"); 
       addRotation("Healing", "GR", "Y,RG", "GG", "GY,G,YG", "RY", "R,YR"); 
       addRotation("AoE DPS", "RY,GR", "Y,G", "Y,RG", "YY", "YR,G,YG", "Y,G,Y,GY"); 

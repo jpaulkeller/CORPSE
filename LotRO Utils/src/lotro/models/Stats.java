@@ -118,9 +118,17 @@ public enum Stats
    }
    
    @Override
-   public String toString() // insert spaces to separate words
+   public String toString()
    {
-      return super.toString().replaceAll ("\\B([A-Z][a-z])", " $1");
+      // insert spaces to separate words
+      String s = super.toString().replaceAll ("\\B([A-Z][a-z])", " $1");
+      // abbreviate some words
+      s = s.replace("Critical", "Crit");
+      s = s.replace("Defense", "Def");
+      s = s.replace("Physical", "Phys");
+      s = s.replace("Tactical", "Tact");
+      s = s.replace("Mitigation", "Mit");
+      return s;
    }
    
    public static Stats parse (final String s)

@@ -5,7 +5,7 @@ import java.util.TreeSet;
 
 public enum Klass
 {
-   Unknown ("?", "FFFFFF", "black"),
+   None ("", "FFFFFF", "black"),
    Burglar ("B", "000000", "white"),
    Captain ("Cpt", "77FFFF", "black"), // teal
    Champion ("Ch", "FBA017", "black"), // orange
@@ -15,6 +15,7 @@ public enum Klass
    Minstrel ("M", "77FF77", "black"), // light green
    RuneKeeper ("RK", "FF00FF", "black"), // magenta
    Warden ("W", "AF7817", "white"), // tan
+   Unknown ("?", "FFFFFF", "black"),
    
    Blackarrow ("BA", "000000", "white"),
    Defiler ("D", "DDDD44", "black"), // yellowish
@@ -72,9 +73,15 @@ public enum Klass
       return fgColor;
    }
    
+   @Override
+   public String toString()
+   {
+      return this.equals(Klass.None) ? "" : super.toString();
+   }
+   
    public static Klass parse (final String name)
    {
-      Klass klass = Klass.Unknown;
+      Klass klass = Klass.None;
       if (name != null)
       {
          for (Klass c : Klass.values())
@@ -101,8 +108,10 @@ public enum Klass
             klass = Klass.RuneKeeper;
          else if (name.toLowerCase().contains ("warden"))
             klass = Klass.Warden;
-         else if (!name.toLowerCase().contains ("unknown") &&
-                  !name.toLowerCase().contains ("&nbsp;"))
+         else if (name.toLowerCase().contains ("unknown"))
+            klass = Klass.Unknown;
+         
+         else if (!name.toLowerCase().contains ("&nbsp;"))
             System.err.println ("Invalid Class: " + name);
       }
       return klass;

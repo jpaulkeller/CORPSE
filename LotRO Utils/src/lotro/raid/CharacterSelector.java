@@ -20,6 +20,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
@@ -43,6 +44,7 @@ import lotro.models.CharacterListModel;
 import lotro.models.Kinship;
 import lotro.models.Klass;
 import lotro.models.Player;
+import lotro.models.Rank;
 import lotro.my.xml.CharacterXML;
 import lotro.my.xml.KinshipXML;
 import model.CollectionModel;
@@ -52,6 +54,7 @@ import model.ObservableDelegator;
 public class CharacterSelector implements ObservableDelegator 
 {
    private JPanel panel;
+   private JPanel charPanel;
    private JList charList;
    private String worldGiven;
    private String kinGiven;
@@ -71,6 +74,7 @@ public class CharacterSelector implements ObservableDelegator
    private TextItem charItem;
    private ComboBoxItem playerItem;
    private ComboBoxItem classItem;
+   private ComboBoxItem rankItem;
    private RangeSlider levelSlider;
 
    public CharacterSelector (final String world, // optional
@@ -95,6 +99,7 @@ public class CharacterSelector implements ObservableDelegator
       if (includePlayers)
          makePlayerItem (listener);
       makeClassItem (listener);
+      makeRankItem (listener);
       makeLevelSlider (listener);
 
       Border up = BorderFactory.createRaisedBevelBorder();
@@ -106,6 +111,7 @@ public class CharacterSelector implements ObservableDelegator
       if (includePlayers)
          filters.add (playerItem.getTitledPanel());
       filters.add (classItem.getTitledPanel());
+      filters.add (rankItem.getTitledPanel());
       filters.setBorder (border);
       
       JPanel controls = new JPanel (new BorderLayout());
@@ -125,9 +131,13 @@ public class CharacterSelector implements ObservableDelegator
       
       charList = new DragDropList (filteredCharacters, DnDConstants.ACTION_COPY);
       
+      charPanel  = new JPanel (new BorderLayout());
+      charPanel.setBorder (new TitledBorder ("Filtered Characters"));
+      charPanel.add(new JScrollPane (charList), BorderLayout.CENTER);
+      
       panel = new JPanel (new BorderLayout());
       panel.add (top, BorderLayout.NORTH);
-      panel.add (new JScrollPane (charList), BorderLayout.CENTER);
+      panel.add (charPanel, BorderLayout.CENTER);
    }
 
    private void makeWorldItem (final String world)
@@ -165,9 +175,11 @@ public class CharacterSelector implements ObservableDelegator
       {
          kinships = new CollectionModel<String> (new TreeSet<String>());
          kinships.add ("Creepshow");
+         kinships.add ("Irony and Spite");
          kinships.add ("Knights of the White Lady");
          kinships.add ("The Dark Blade");
          kinships.add ("The Palantiri");
+         kinships.add ("Valar Guild");
          
          kinItem = new ComboBoxItem ("Kinship / Tribe");
          kinItem.setToolTipText ("Select or enter a Kinship (or Tribe) name");
@@ -203,10 +215,21 @@ public class CharacterSelector implements ObservableDelegator
       classItem = new ComboBoxItem ("Class");
       classItem.setToolTipText ("Select a class to filter the Character list");
       List<Klass> classes = new ArrayList<Klass>();
-      classes.add (Klass.Unknown);
+      classes.add (Klass.None);
       classes.addAll (Klass.FREEPS);
+      classes.add (Klass.Unknown);
       classItem.setModel (new CollectionModel<Klass> (classes));
       classItem.addValueChangeListener (listener);
+   }
+
+   private void makeRankItem (final MyChangeListener listener)
+   {
+      rankItem = new ComboBoxItem ("Rank");
+      rankItem.setToolTipText ("Select a kinship rank to filter the Character list");
+      List<Rank> ranks = new ArrayList<Rank>();
+      ranks.addAll (Arrays.asList(Rank.values()));
+      rankItem.setModel (new CollectionModel<Rank> (ranks));
+      rankItem.addValueChangeListener (listener);
    }
 
    private void makeLevelSlider (final MyChangeListener listener)
@@ -222,7 +245,10 @@ public class CharacterSelector implements ObservableDelegator
 
    public void add (final Character ch)
    {
-      allCharacters.add (ch);
+      synchronized (allCharacters)
+      {
+         allCharacters.add (ch);
+      }
       SwingUtilities.invokeLater (new Runnable()
       {
          public void run()
@@ -231,6 +257,11 @@ public class CharacterSelector implements ObservableDelegator
             {
                filteredCharacters.add (ch);
             }
+            
+            String title = "Filtered Characters (" + size() + "/" + total() + ")";
+            ((TitledBorder) charPanel.getBorder()).setTitle (title);
+            charPanel.repaint();
+            
             if (includePlayers && ch.getPlayer() != null)
                playerModel.add (ch.getPlayer());
          }
@@ -247,6 +278,14 @@ public class CharacterSelector implements ObservableDelegator
       synchronized (filteredCharacters)
       {
          return filteredCharacters.size();
+      }
+   }
+   
+   public int total()
+   {
+      synchronized (allCharacters)
+      {
+         return allCharacters.size();
       }
    }
    
@@ -296,7 +335,15 @@ public class CharacterSelector implements ObservableDelegator
          {
             public void run()
             {
-               allCharacters.clear();
+               synchronized (allCharacters)
+               {
+                  allCharacters.clear();
+               }
+               synchronized (filteredCharacters)
+               {
+                  filteredCharacters.clear();
+               }
+               
                KinshipXML xml = new KinshipXML();
                xml.setLookupPlayer (includePlayers);
                kinLoaded = xml.scrapeURL (world, kinName);
@@ -311,6 +358,7 @@ public class CharacterSelector implements ObservableDelegator
                observable.registerChange ("Loaded " + kinName + " kinship");
             }
          });
+         
          thread.start();
       }
    }
@@ -374,27 +422,44 @@ public class CharacterSelector implements ObservableDelegator
       {
          filteredCharacters.clear();
          
-         for (Character ch : allCharacters)
+         synchronized (allCharacters)
          {
-            if (ch.getLevel() < levelSlider.getLowValue())
-               continue;
-            else if (ch.getLevel() > levelSlider.getHighValue())
-               continue;
-            
-            Klass klass = (Klass) classItem.getValue();
-            if (klass != null && klass != Klass.Unknown && klass != ch.getKlass())
-               continue;
-            
-            String charFilter = (String) charItem.getValue();
-            if (charFilter != null && !charFilter.equals (""))
-               if (!ch.getName().toLowerCase().contains (charFilter.toLowerCase()))
+            for (Character ch : allCharacters)
+            {
+               if (ch.getLevel() < levelSlider.getLowValue())
                   continue;
-            
-            if (includePlayers && !matchesPlayer (ch))
-               continue;
-            
-            filteredCharacters.add (ch);
+               else if (ch.getLevel() > levelSlider.getHighValue())
+                  continue;
+               
+               Klass klass = (Klass) classItem.getValue();
+               if (klass != null && klass != Klass.None && klass != ch.getKlass())
+                  continue;
+               
+               Rank rank = (Rank) rankItem.getValue();
+               if (rank != null && rank != Rank.None && ch.getRank().ordinal() < rank.ordinal())
+                  continue;
+               
+               String charFilter = (String) charItem.getValue();
+               if (charFilter != null && !charFilter.equals (""))
+                  if (!ch.getName().toLowerCase().contains (charFilter.toLowerCase()))
+                     continue;
+               
+               if (includePlayers && !matchesPlayer (ch))
+                  continue;
+               
+               filteredCharacters.add (ch);
+            }
          }
+         
+         SwingUtilities.invokeLater (new Runnable()
+         {
+            public void run()
+            {
+               String title = "Filtered Characters (" + size() + "/" + total() + ")";
+               ((TitledBorder) charPanel.getBorder()).setTitle (title);
+               charPanel.repaint();
+            }
+         });
       }
    }
       

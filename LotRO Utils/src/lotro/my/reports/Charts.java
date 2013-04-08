@@ -9,32 +9,56 @@ import lotro.models.Alliance;
 import lotro.models.Character;
 import lotro.models.Kinship;
 import lotro.models.Klass;
+import lotro.models.Rank;
+import lotro.my.reports.FilterFactory.LevelFilter;
 import lotro.my.xml.KinshipXML;
 import lotro.web.Dropbox;
 import file.FileUtils;
 
 public final class Charts
 {
+   private static final int FILTER_THRESHOLD = 49;
+   
    private Kinship kinship;
    
    public void chartKinship(final Kinship kinship) 
    {
       this.kinship = kinship;
+      int level = 0;
+
+      LevelFilter levelFilter = (LevelFilter) FilterFactory.getLevelFilter (level);
+      kinship.setFilter (levelFilter);
+      kinship.addFilter (FilterFactory.getKinRankFilter (Rank.Member));
+
+      int size = kinship.size(true, false); // just count Members+ only
       
-      kinship.setFilter (FilterFactory.getLevelFilter (40));
-      Report app = new ReportStats (kinship, "Stats 40+");
+      level = 40;
+      if (size > FILTER_THRESHOLD)
+         levelFilter.setLevels(level, Character.MAX_LEVEL);
+      String suffix = level > 0 ? " " + level + "+" : "";
+      Report app = new ReportStats (kinship, "Stats" + suffix);
       app.saveFile();
       
-      kinship.setFilter (FilterFactory.getLevelFilter (70));
-      app.setName ("Stats 70+");
-      app.saveFile();
+      if (size > FILTER_THRESHOLD)
+      {
+         level = 70;
+         levelFilter.setLevels(level, Character.MAX_LEVEL);
+         suffix = level > 0 ? " " + level + "+" : "";
+         app.setName ("Stats" + suffix);
+         app.saveFile();
+      }
       
       kinship.setFilter (new ReportCraft.CraftFilter (6));
       app = new ReportCraft (kinship, "Master Crafters");
       app.saveFile();
       
-      kinship.setFilter (FilterFactory.getLevelFilter (66));
-      app = new ReportGear (kinship, "Gear");
+      if (size > FILTER_THRESHOLD)
+      {
+         level = 66;
+         levelFilter.setLevels(level, Character.MAX_LEVEL);
+      }
+      suffix = level > 0 ? " " + level + "+" : "";
+      app = new ReportGear (kinship, "Gear" + suffix);
       app.saveFile();
       
       kinship.setFilter (null);
@@ -114,12 +138,13 @@ public final class Charts
       
       xml.setLookupPlayer (true);
       alliance.addKinship (xml.scrapeURL ("Landroval", "The Palantiri"));
+      // alliance.addKinship (xml.scrapeURL ("Elendilmir", "Black Isle"));
 
       for (Kinship kinship : alliance.getKinships())
          charts.chartKinship (kinship);
       
       if (alliance.size() > 1)
-    	 charts.chartKinship (alliance);
+         charts.chartKinship (alliance);
       
       charts.extraCharts();
    }
