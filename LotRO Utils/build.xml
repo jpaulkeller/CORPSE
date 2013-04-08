@@ -4,7 +4,7 @@
   <target name="DeedOrganizer" description="Create executable jar, and zip everything">
 	    
    <property name="app" value="DeedOrganizer" />
-   <property name="dist" location="C:/pkgs/dist" />
+   <property name="dist" location="D:/pkgs/dist" />
    <property name="dir" location="${dist}/Palantiri" />
    <property name="zip" value="${dir}/${app}-1.0.zip" />
    
@@ -18,7 +18,7 @@
    </copy>
 	         
    <copy todir="${dir}/jars" overwrite="true">
-      <fileset dir="../Utils/jars">
+      <fileset dir="../LotRO Utils/jars">
          <include name="swingx-0.9.5.jar" />
       </fileset>
    </copy>
@@ -32,7 +32,7 @@
     <fileset dir="classes">
       <include name="**/*.class" />
     </fileset>
-    <fileset dir="../Utils/classes">
+    <fileset dir="../LotRO Utils/classes">
       <include name="**/*.class" />
     </fileset>
     <fileset dir=".">
@@ -58,7 +58,7 @@
   <target name="RaidOrganizer" description="Create executable jar, and zip everything">
 	       
    <property name="app" value="RaidOrganizer" />
-	<property name="dist" location="C:/pkgs/dist" />
+	<property name="dist" location="D:/pkgs/dist" />
 	<property name="dir" location="${dist}/Palantiri" />
 	<property name="zip" value="${dir}/${app}-1.0a.zip" />
 	   
@@ -72,7 +72,7 @@
 	</copy>
 	            
     <copy todir="${dir}/jars" overwrite="true">
-      <fileset dir="../Utils/jars">
+      <fileset dir="../LotRO Utils/jars">
         <include name="swingx-0.9.5.jar" />
       </fileset>
     </copy>
@@ -86,7 +86,7 @@
 	  <fileset dir="classes">
 	    <include name="**/*.class" />
 	  </fileset>
-      <fileset dir="../Utils/classes">
+      <fileset dir="../LotRO Utils/classes">
 	    <include name="**/*.class" />
 	  </fileset>
 	  <fileset dir=".">
@@ -112,7 +112,7 @@
   <target name="Radiance Chart" description="Create executable jar, and zip everything">
 	          
     <property name="app" value="RadianceChart" />
-    <property name="dist" location="C:/pkgs/dist" />
+    <property name="dist" location="D:/pkgs/dist" />
     <property name="dir" location="${dist}/Palantiri" />
     <property name="zip" value="${dir}/${app}-1.0.zip" />
 	      
@@ -152,7 +152,7 @@
   </target>
 	   
   <target name="LOTRO Jars" description="Create jar">
-    <property name="dir" location="C:/pkgs/workspace/KinCharts/war/WEB-INF/lib" />
+    <property name="dir" location="D:/pkgs/workspace/KinCharts/lib" />
   	
     <delete file="${dir}/lotro.jar" />
     <jar destfile="${dir}/lotro.jar">
@@ -163,14 +163,16 @@
   	
     <delete file="${dir}/utils.jar" />
     <jar destfile="${dir}/utils.jar">
-      <fileset dir="../Utils/classes">
-        <include name="**/*.class" />
+      <fileset dir="../../Personal/Utils/bin">
+         <include name="gui/Gradient*.class" />
+         <include name="gui/TranslucentColor*.class" />
+      	<include name="web/GoogleChart*.class" />
       </fileset>
     </jar>
   	
     <delete file="${dir}/icons.jar" />
     <jar destfile="${dir}/icons.jar">
-      <fileset dir="../Resources">
+      <fileset dir="../../Resources">
         <include name="icons/16/documents/Folder.gif" />
         <include name="icons/16/documents/Page Edit.gif" />
         <include name="icons/20/**/*.gif" />

@@ -2,8 +2,14 @@ package lotro.models;
 
 public enum Rank
 {
-   Unknown, Recruit, Member, Officer, Leader;
+   None, Recruit, Member, Officer, Leader, Unknown;
 
+   @Override
+   public String toString()
+   {
+      return this.equals(Rank.None) ? "" : super.toString();
+   }
+   
    public static Rank parse (final String name)
    {
       if (name != null)
@@ -12,6 +18,6 @@ public enum Rank
                return rank;
 
       System.err.println ("Invalid Rank: " + name);
-      return Rank.Unknown;
+      return Rank.None;
    }
 }

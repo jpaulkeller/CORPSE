@@ -117,8 +117,10 @@ public final class ReportGear extends Report
       KinshipXML xml = new KinshipXML();
       xml.setIncludeDetails (true);
       xml.setLookupPlayer (true);
-      Kinship kinship = xml.scrapeURL ("Landroval", "The Palantiri");
-      kinship.setFilter (FilterFactory.getLevelFilter (50));
+      // Kinship kinship = xml.scrapeURL ("Landroval", "The Palantiri");
+      // kinship.setFilter (FilterFactory.getLevelFilter (50));
+      Kinship kinship = xml.scrapeURL ("Elendilmir", "Black Isle");
+
       Report app = new ReportGear (kinship, "Gear");
       app.saveFile();
    }

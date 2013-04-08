@@ -20,7 +20,7 @@ import file.FileUtils;
 
 public class Character implements Comparable<Character>
 {
-   public static final int MAX_LEVEL = 75; 
+   public static final int MAX_LEVEL = 85; 
    
    // {Player}, Name, Race, Class, Level
    private static final Pattern CHAR_PATTERN = Pattern.compile
@@ -88,7 +88,7 @@ public class Character implements Comparable<Character>
    
    public boolean isFreep()
    {
-      return Race.FREEPS.contains (race);
+      return !Race.CREEPS.contains (race);
    }
    
    public void setName (final String name)

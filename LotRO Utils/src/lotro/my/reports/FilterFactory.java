@@ -2,6 +2,7 @@ package lotro.my.reports;
 
 import lotro.models.Character;
 import lotro.models.Klass;
+import lotro.models.Rank;
 
 public final class FilterFactory
 {
@@ -22,6 +23,11 @@ public final class FilterFactory
       return new ClassFilter (klass);
    }
 
+   public static CharacterFilter getKinRankFilter (final Rank minRank)
+   {
+      return new KinRankFilter (minRank);
+   }
+
    static class LevelFilter implements CharacterFilter
    {
       private int minLevel = 0;
@@ -33,6 +39,11 @@ public final class FilterFactory
       }
       
       public LevelFilter (final int minLevel, final int maxLevel)
+      {
+         setLevels(minLevel, maxLevel);
+      }
+      
+      public void setLevels(final int minLevel, final int maxLevel)
       {
          this.minLevel = minLevel;
          this.maxLevel = maxLevel;
@@ -56,6 +67,21 @@ public final class FilterFactory
       public boolean include (final Character ch)
       {
          return ch.getKlass() == klass;
+      }
+   }
+
+   static class KinRankFilter implements CharacterFilter
+   {
+      private Rank minRank;
+      
+      public KinRankFilter (final Rank minRank)
+      {
+         this.minRank = minRank;
+      }
+      
+      public boolean include (final Character ch)
+      {
+         return ch.getRank().ordinal() >= minRank.ordinal();
       }
    }
 }

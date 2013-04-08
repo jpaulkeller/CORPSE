@@ -165,7 +165,7 @@ public final class Dashboard extends JApplet
       
       candidatePanel = new JPanel (new BorderLayout());
       candidatePanel.add (new JScrollPane (candidateView), BorderLayout.CENTER);
-      candidatePanel.setBorder (new TitledBorder ("Characters"));
+      candidatePanel.setBorder (new TitledBorder ("Selected Characters"));
       candidatePanel.setPreferredSize (candidatePanel.getMinimumSize());
       
       panel.add (charChooser.getComponent());
@@ -223,7 +223,7 @@ public final class Dashboard extends JApplet
       
       private void updateView (final ListDataEvent e)
       {
-         String title = "Characters (" + characters.size() + ")";
+         String title = "Selected Characters (" + characters.size() + ")";
          ((TitledBorder) candidatePanel.getBorder()).setTitle (title);
          candidatePanel.repaint();
          updateReport();
