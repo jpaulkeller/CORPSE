@@ -2,8 +2,8 @@
 	<Information>
 		<Name>VirtueView</Name>
 		<Author>Mosby of Landroval</Author>
-		<Version>1.1</Version>
-		<Description>Shows deeds which reward a Virtue bonus, based on selected virtues and/or regions.  Use "/vv show" to display.</Description>
+		<Version>1.2</Version>
+		<Description>Shows deeds which reward a Virtue bonus, based on selected virtues, regions, zones, or type.  Use "/vv show" to display.</Description>
 		<Image>Palantiri/VirtueView/Resources/logo.jpg</Image>
 	</Information>
 	<Package>Palantiri.VirtueView.Main</Package>
