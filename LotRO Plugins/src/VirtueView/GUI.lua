@@ -9,12 +9,15 @@ import "Palantiri.VirtueView.UI.ComboBox";
 import "Palantiri.VirtueView.UI.Label";
 import "Palantiri.VirtueView.UI.ListBox";
 import "Palantiri.VirtueView.UI.ListBoxItem"
+import "Palantiri.VirtueView.UI.TextBox"
+
+-- API docs: http://www.lotrointerface.com/wiki
+-- Turbine.Shell.WriteLine("debug");
 
 -- TODO
 -- background image for main panel
 -- icon
 -- option
--- slot for Max Level
 
 GUI = class(Turbine.UI.Lotro.Window);
 
@@ -36,8 +39,8 @@ function GUI:Constructor()
 	self:SetAllowDrop(false);
 	self.focusBgColor = Turbine.UI.Color(1, 0.5, 0.5, 0.5);
 
-	local margin = 20;
-	local x = margin + 8;
+	local margin = 5;
+	local x = margin + 5;
 	local y = 35;
 	local width;
 	
@@ -47,19 +50,19 @@ function GUI:Constructor()
 	
 	self.zoneLbl = Palantiri.VirtueView.UI.Label();
 	self.zoneLbl:SetParent(self);
-	width = 80;
+	width = 70;
 	self.zoneLbl:SetSize(width, 20);
 	self.zoneLbl:SetPosition(x, y);
-	x = x + width + 15;
+	x = x + width + 5;
 	self.zoneLbl:SetText("Zone:");
 	self.zoneLbl:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleRight);
 	
 	self.zoneCombo = Palantiri.VirtueView.UI.ComboBox();
 	self.zoneCombo:SetParent(self);
-	width = 140;
+	width = 130;
 	self.zoneCombo:SetSize(width, 20);
 	self.zoneCombo:SetPosition(x, y);
-	x = x + width + 15;
+	x = x + width + 5;
 	
     -- add the elements to a set, and sort them
     local set = {}
@@ -84,19 +87,19 @@ function GUI:Constructor()
 	
 	self.regionLbl = Palantiri.VirtueView.UI.Label();
 	self.regionLbl:SetParent(self);
-	width = 80;
+	width = 70;
 	self.regionLbl:SetSize(width, 20);
 	self.regionLbl:SetPosition(x, y);
-	x = x + width + 15;
+	x = x + width + 5;
 	self.regionLbl:SetText("Region:");
 	self.regionLbl:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleRight);
 	
 	self.regionCombo = Palantiri.VirtueView.UI.ComboBox();
 	self.regionCombo:SetParent(self);
-	width = 280;
+	width = 270;
 	self.regionCombo:SetSize(width, 20);
 	self.regionCombo:SetPosition(x, y);
-	x = x + width + 15;
+	x = x + width + 5;
 	
     -- add the elements to a set, and sort them
     local set = {}
@@ -121,18 +124,19 @@ function GUI:Constructor()
     
 	self.typeLbl = Palantiri.VirtueView.UI.Label();
 	self.typeLbl:SetParent(self);
-	width = 60;
+	width = 50;
 	self.typeLbl:SetSize(width, 20);
 	self.typeLbl:SetPosition(x, y);
-	x = x + width + 15;
+	x = x + width + 5;
 	self.typeLbl:SetText("Type:");
 	self.typeLbl:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleRight);
 	
 	self.typeCombo = Palantiri.VirtueView.UI.ComboBox();
 	self.typeCombo:SetParent(self);
-	width = 100;
+	width = 90;
 	self.typeCombo:SetSize(width, 20);
 	self.typeCombo:SetPosition(x, y);
+	x = x + width + 5;
 	
     -- add the elements to a set, and sort them
     local set = {}
@@ -152,6 +156,32 @@ function GUI:Constructor()
        self:SaveSettings();
        self:LoadMatchingDeeds();
 	end
+
+    -- Max Level
+    	
+	self.maxLevelLbl = Palantiri.VirtueView.UI.Label();
+	self.maxLevelLbl:SetParent(self);
+	width = 90;
+	self.maxLevelLbl:SetSize(width, 20);
+	self.maxLevelLbl:SetPosition(x, y);
+	x = x + width + 5;
+	self.maxLevelLbl:SetText("Max Level:");
+	self.maxLevelLbl:SetTextAlignment(Turbine.UI.ContentAlignment.MiddleRight);
+	
+	self.maxLevelText = Palantiri.VirtueView.UI.TextBox();
+	self.maxLevelText:SetParent(self);
+	width = 40;
+	self.maxLevelText:SetSize(width, 20);
+	self.maxLevelText:SetPosition(x, y);
+	self.maxLevelText:SetText(self.settings.maxLevel);
+	x = x + width + 5;
+	
+	self.maxLevelText.TextChanged = function(sender, args)
+       self:SaveSettings();
+       self:LoadMatchingDeeds();
+	end
+	
+	-- end controls
 	
 	y = y + 30;
 	
@@ -206,6 +236,8 @@ function GUI:LoadMatchingDeeds()
    
    local type = types[self.settings.type];
    local includeType = (type == "Any");
+   
+   local maxLevel = self.settings.maxLevel;
     
    self.deedList:RemoveAll();
    
@@ -213,8 +245,10 @@ function GUI:LoadMatchingDeeds()
       if (self:InZone(rec, zone)) then
          if (self:InRegion(rec, region)) then
             if (self:OfType(rec, type)) then
-               if (self.settings.selectedVirtues[rec.virtue]) then
-                  self:AddDeed(rec, includeZone, includeRegion, includeType);
+               if (self:underLevel(rec, maxLevel)) then
+                  if (self.settings.selectedVirtues[rec.virtue]) then
+                     self:AddDeed(rec, includeZone, includeRegion, includeType);
+                  end 
                end 
             end 
          end 
@@ -232,6 +266,10 @@ end
 
 function GUI:OfType(rec, type)
    return (type == "Any") or (type == rec.type);
+end
+
+function GUI:underLevel(rec, maxLevel)
+   return (maxLevel >= rec.level);
 end
 
 function GUI:AddItem(listBox, str)
@@ -266,7 +304,14 @@ function GUI:AddDeed(rec, includeZone, includeRegion, includeType)
       reward = " (" .. rec.reward .. " " .. rec.virtue .. ")";
    end
 
-   item:SetText(where .. type .. rec.deed .. reward);
+   local level = " - Level ";
+   if (rec.level == 0) then
+      level = level .. "? ";
+   else
+      level = level .. rec.level .. " ";
+   end
+   
+   item:SetText(where .. type .. rec.deed .. level .. reward);
    
    if (self.settings.selectedDeeds[rec.region .. ":" .. rec.deed]) then
       item:SetChecked(true);
@@ -324,6 +369,10 @@ function GUI:LoadSettings()
       self.settings.selectedDeeds = {}
    end
     
+   if (not self.settings.maxLevel) then
+      self.settings.maxLevel = 99;
+   end
+	
 	self.loading = false;
 end
 
@@ -336,6 +385,7 @@ function GUI:SaveSettings()
 	self.settings.region = self.regionCombo:GetSelection();
 	self.settings.type = self.typeCombo:GetSelection();
 	self.settings.selectedVirtues = self.virtueList:GetSelected(); 
+	self.settings.maxLevel = self.maxLevelText:GetNumber();
 	
 	Turbine.PluginData.Save(Turbine.DataScope.Character, "PalantiriVirtueViewSettings", self.settings);
 end
