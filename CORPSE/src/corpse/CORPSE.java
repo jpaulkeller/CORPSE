@@ -58,8 +58,7 @@ public class CORPSE
       quickSlot = new JTextField (15);
       quickSlot.addKeyListener (new MyKeyListener());
       quickSlot.setToolTipText
-         ("For a quick random value, enter any table name or dice expression " +
-          "(e.g., INN-NAME or 3d6)");
+         ("For a quick random value, enter any table name or dice expression (e.g., INN-NAME or 3d6)");
       
       progress = new JProgressBar (0, 100);
       progress.setFont (new Font ("Arial", Font.BOLD, 14));
@@ -89,7 +88,7 @@ public class CORPSE
    {
       String macro = quickSlot.getText();
       if (macro != null && !macro.equals (""))
-         progress.setString (Macros.resolve ("{" + macro + "}"));
+         progress.setString (Macros.resolve ("{" + macro + "}", null));
       else
          tables.roll();
    }
@@ -113,10 +112,11 @@ public class CORPSE
       @Override
       public void keyPressed (final KeyEvent e)
       {
+         // TODO Incremental search of the Table/Script tree, highlight when found
          System.out.println("CORPSE.MyKeyListener.keyReleased()");
-         int keyCode = e.getKeyCode ();
+         int keyCode = e.getKeyCode();
          if (keyCode == KeyEvent.VK_ENTER && entryButton.isEnabled())
-            entryButton.doClick ();
+            entryButton.doClick();
       }
    }
 
