@@ -117,7 +117,7 @@ public final class Name
    {
       List<String> list = null;
       
-      String entry = RandomEntry.get ("NAME", null, null);
+      String entry = RandomEntry.get ("NAME", null, null, null);
       StringBuilder pattern = new StringBuilder (entry); 
       StringBuilder name = new StringBuilder(); 
       for (int i = 0; i < pattern.length(); i++)

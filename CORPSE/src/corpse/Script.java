@@ -99,7 +99,7 @@ public class Script
             resolvedToken = resolveQueries (token);
          if (resolvedToken.equals(token))
          {
-            resolvedToken = Macros.resolve (token);
+            resolvedToken = Macros.resolve (token, null);
             // System.out.println("MAC Token: " + token + " R: " + resolvedToken);
          }
             
@@ -151,7 +151,7 @@ public class Script
          String defaultValue = m.group (2);
          // handle quick-query syntax: Token?? => Token?{Token}                  
          if (defaultValue != null && defaultValue.equals ("?"))
-            defaultValue = Macros.resolve ("{" + message + "}");
+            defaultValue = Macros.resolve ("{" + message + "}", null);
          String answer = JOptionPane.showInputDialog (owner, message, defaultValue);
          if (answer != null)
             resolvedEntry = m.replaceFirst (Matcher.quoteReplacement (answer));

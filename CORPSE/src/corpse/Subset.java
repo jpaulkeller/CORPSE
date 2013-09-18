@@ -16,13 +16,13 @@ public class Subset
    private String roll;
    private String columnName;
    
-   public Subset (final String entry)
+   public Subset (final Table table, final String entry)
    {
       Matcher m = SUBSET_PATTERN.matcher (entry);
       if (m.find())
       {
          name       = m.group (1);
-         roll       = m.group (2);
+         roll       = m.group (2).replace("I", table.imported + "");
          columnName = m.group (3);
       }
       else
@@ -70,7 +70,8 @@ public class Subset
          {
             System.out.println (table);
             for (Subset subset : table.subsets.values())
-               System.out.println("  > " + subset + " = " + Macros.resolve("{" + name + Macros.SUBSET_CHAR + subset.getName() + "}"));
+               System.out.println("  > " + subset + " = " + 
+                     Macros.resolve("{" + name + Macros.SUBSET_CHAR + subset.getName() + "}", null));
          }
       }
    }

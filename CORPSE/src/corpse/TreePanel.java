@@ -205,7 +205,7 @@ public class TreePanel extends JSplitPane
       String table = getSelectedTable();
       if (table != null)
       {
-         String entry = RandomEntry.get (table, null, null);
+         String entry = RandomEntry.get (table, null, null, null);
          app.setText (entry);
       }
    }
