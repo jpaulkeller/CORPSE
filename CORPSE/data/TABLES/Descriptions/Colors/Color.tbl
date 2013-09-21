@@ -1,10 +1,17 @@
-{Black}
-{Blue}
-{Brown}
-{Green}
-{Red}
-{Violet}
-{White}
-{Yellow}
-{Metallic}
-{Gem}-colored
++ {Black}
++ {Blue}
++ {Brown}
++ {Green}
++ {Red}
++ {Violet}
++ {White}
++ {Yellow}
++ {Metallic}
+5 {Gem}-colored
+3 {Sheen} {Color:Basic}
+3 {Color:Simple} with {specks|swirls|flakes|hints|patches|streaks|stripes} of {Color:Simple}
+2-5 {Color:Simple} with {Color:Simple} {highlights|spots}
+{mottled|a blend of|shifting} {Color:Simple} and {Color:Simple}
+
+: Basic {=I-8}
+: Simple {I}
