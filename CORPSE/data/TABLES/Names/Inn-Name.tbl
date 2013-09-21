@@ -1,0 +1,26 @@
+{Color:Basic} and {Color{#!.!.*| }} {Inn-Type}
+{Color:Basic} {Creature{#!.!.*| }} {Inn-Type}
+{Color:Basic} {Fauna{#!.!.*| }} {Inn-Type}
+{Color:Basic} {Flora{#!.!.*| }} {Inn-Type}
+{Color:Basic} {Made_Of{#!.!.*| }} {Inn-Type}
+{Creature}'s {Organ{#!.!.*| }} {Inn-Type}
+{Adjective} {Inn-Type}
+{Fauna} and {Creature{#!.!.*| }} {Inn-Type}
+{Fauna}'s {Home}
+{Fauna}'s {Organ{#!.!.*| }} {Inn-Type}
+{Flora} and {Flora} {Inn-Type}
+{Holder} of {Contents} {Inn-Type}
+{Inn-Type} by the {Site}
+{Inn-Type} of {EvocativeConcept}
+{Noise} {Creature{#!.!.*| }} {Inn-Type}
+{Noise} {Fauna{#!.!.*| }} {Inn-Type}
+{Noise} {Musical_Instrument{#!.!.*| }} {Inn-Type}
+{Texture} {SiteArtificial{#!.!.*| }} {Inn-Type}
+{Trait} {{Class@Class#!.!.*|Class}}'s {Inn-Type}
+{Trait} {Creature{#!.!.*| }} {Inn-Type}
+{Trait} {Fauna{#!.!.*| }} {Inn-Type}
+{Trait} {{Race@Race#!.!.*|Race}}'s {Inn-Type}
+{Trait} {Rank:Milit}'s {Inn-Type}
+{Trait} {Rank:Relig}'s {Inn-Type}
+{Trait} {Rank:Royal}'s {Inn-Type}
+{Famous-Inn}
