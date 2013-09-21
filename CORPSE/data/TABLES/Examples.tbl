@@ -4,6 +4,7 @@
   QUANTITY [2-4]: {2-4} (even distribution 2,3,4)
   QUANTITY [2d4]: {2d4} (bell curve 2,3,4,5,6,7,8)
   QUANTITY [3d4-2]: {3d4-2} (bell curve 1-10)
+  QUANTITY [3,10]: {3,10} (normal distribution where mean = 3, max = 10)
   CHARGES [#/5-10]: {#/{5-10}} (random number with a random upper bound)
 
 * Simple list element selection:
@@ -21,10 +22,11 @@
 
   TABLE value: [Weapon] = {Weapon}
   
-  MACRO value: {Quality:Magic}
-  DEFAULT MACRO value: {Quality}
-  FIELD value: {Gender@Pronoun}
-  DEFAULT FIELD value: {Gender}
+  MACRO value [Quality:Magic]: {Quality:Magic}
+  DEFAULT MACRO value [Quality]: {Quality}
+  FIELD value [Gender@Pronoun]: {Gender@Pronoun}
+  DEFAULT FIELD value [Gender]: {Gender}
+  FILTER value [Fauna#P.*]: {Fauna#P.*}
 
 * A randomly created name (see NAME.TBL)
 

@@ -12,7 +12,7 @@ Invitation {to|from} {Title} {!Name}
 Inventory
 Letter {to|from} {Title} {!Name}
 License for {Skill}
-License to own {Fauna}
+License to {own|hunt|sell|trade|kill|protect} {Fauna}
 Love letter
 Map {of|to} {Structure}
 Map of {Region}
@@ -20,10 +20,10 @@ Map of a {Terrain}
 Membership card, {Job}'s guild
 Message to {!Name}
 News-clipping about {Disaster}
-Note
+{Illegible|Hastily scribbled} Note
 Page from book about {Domain}
 Pass
-Permit
+Permit to {own|hunt|sell|trade|kill|protect} {Fauna}
 Playing Card
 Poem
 Proclamation from {Rank:Royal} {!Name}
