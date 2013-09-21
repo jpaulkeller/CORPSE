@@ -6,11 +6,12 @@ import java.util.regex.Pattern;
 
 public class Subset
 {
+   static final Pattern PATTERN = Pattern.compile ("\\" + Macros.SUBSET_CHAR + ".*");
+   static final Pattern SUBSET_REF = // {Table:Subset}
+         Pattern.compile (Macros.NAME + Macros.SUBSET_CHAR + Macros.NAME + "?");
    private static final String FULL_TOKEN = "(\\{[^}]+\\})";
-   static final Pattern PATTERN = 
-      Pattern.compile ("\\" + Macros.SUBSET_CHAR + ".*");
    private static final Pattern SUBSET_PATTERN =
-      Pattern.compile ("\\" + Macros.SUBSET_CHAR + " *" + Macros.NAME + " +" + FULL_TOKEN + "(?: +" + Column.NAME + ")?");
+         Pattern.compile ("\\" + Macros.SUBSET_CHAR + " *" + Macros.NAME + " +" + FULL_TOKEN + "(?: +" + Column.NAME + ")?");
 
    private String name;
    private String roll;
@@ -22,7 +23,7 @@ public class Subset
       if (m.find())
       {
          name       = m.group (1);
-         roll       = m.group (2).replace("I", table.imported + "");
+         roll       = m.group (2).replace("I", table.imported + ""); // I is used in SubsetRef only
          columnName = m.group (3);
       }
       else
@@ -34,6 +35,11 @@ public class Subset
       return Macros.resolveNumber (roll);
    }
 
+   public int getMin()
+   {
+      return Macros.getMin (roll);
+   }
+   
    public int getMax()
    {
       return Macros.getMax (roll);
@@ -70,8 +76,7 @@ public class Subset
          {
             System.out.println (table);
             for (Subset subset : table.subsets.values())
-               System.out.println("  > " + subset + " = " + 
-                     Macros.resolve("{" + name + Macros.SUBSET_CHAR + subset.getName() + "}", null));
+               System.out.println("  > " + subset + " = " + Macros.resolve("{" + name + Macros.SUBSET_CHAR + subset.getName() + "}", null));
          }
       }
    }

@@ -15,6 +15,7 @@ public final class Quantity
       Matcher getMatcher();
       void setToken(final String token);
       int get();
+      int getMin();
       int getMax();
       String resolve();
    }
@@ -64,6 +65,11 @@ public final class Quantity
          return Integer.parseInt (getMatcher().group (1));
       }
    
+      public int getMin()
+      {
+         return get();
+      }
+      
       public int getMax()
       {
          return get();
@@ -81,7 +87,12 @@ public final class Quantity
       {
          return RandomEntry.get (getMax()) + 1;
       }
-   
+      
+      public int getMin()
+      {
+         return 1;
+      }
+      
       public int getMax()
       {
          return Integer.parseInt (getMatcher().group (1));
@@ -103,6 +114,11 @@ public final class Quantity
          return RandomEntry.get (range) + from;
       }
    
+      public int getMin()
+      {
+         return Integer.parseInt (getMatcher().group (1));
+      }
+      
       public int getMax()
       {
          return Integer.parseInt (getMatcher().group (2));
@@ -121,6 +137,11 @@ public final class Quantity
          return RandomEntry.get (getMax());
       }
    
+      public int getMin()
+      {
+         return 1;
+      }
+      
       public int getMax()
       {
          int i = Integer.parseInt (getMatcher().group (1));
@@ -160,6 +181,22 @@ public final class Quantity
          return roll;
       }
    
+      public int getMin()
+      {
+         Matcher m = getMatcher();
+         int count = m.group(1) == null ? 1 : Integer.parseInt (m.group (1));
+         int min = count;
+         
+         String operator = m.group (3);
+         if (operator != null)
+         {
+            int bonus = Integer.parseInt (m.group (4));
+            min += operator.equals ("+") ? bonus : -bonus; 
+         }
+         
+         return min;
+      }
+      
       public int getMax()
       {
          Matcher m = getMatcher();
@@ -205,7 +242,14 @@ public final class Quantity
          }
          return roll;
       }
-   
+      
+      public int getMin()
+      {
+         Matcher m = getMatcher();
+         int count = m.group(1) == null ? 1 : Integer.parseInt (m.group (1));
+         return count;
+      }
+      
       public int getMax()
       {
          return Integer.MAX_VALUE; // there is no max for open rolls (TODO: throw exception?)
@@ -239,6 +283,12 @@ public final class Quantity
          return total;
       }
    
+      public int getMin()
+      {
+         Matcher m = getMatcher();
+         return Integer.parseInt (m.group (1)); // keep
+      }
+      
       public int getMax()
       {
          Matcher m = getMatcher();
@@ -266,6 +316,11 @@ public final class Quantity
          return RandomEntry.getExp (mean, max);
       }
    
+      public int getMin()
+      {
+         return 1;
+      }
+      
       public int getMax()
       {
          return Integer.parseInt (getMatcher().group (2));
@@ -283,9 +338,15 @@ public final class Quantity
       
       public int get()
       {
+         // TODO allow 0?
          return RandomEntry.get (getMax()) + 1;
       }
    
+      public int getMin()
+      {
+         return 1; // TODO allow 0?
+      }
+      
       public int getMax()
       {
          return Integer.parseInt (getMatcher().group (1));
@@ -375,6 +436,11 @@ public final class Quantity
       return numeric.resolve();
    }
    
+   public int getMin()
+   {
+      return numeric.getMin(); 
+   }
+
    public int getMax()
    {
       return numeric.getMax(); 

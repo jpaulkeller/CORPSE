@@ -2,9 +2,6 @@ package corpse;
 
 import java.io.File;
 import java.util.Random;
-import java.util.regex.Pattern;
-
-import javax.swing.table.DefaultTableModel;
 
 public final class RandomEntry
 {
@@ -58,41 +55,43 @@ public final class RandomEntry
          
          if (filter != null)
          {
-            Table filteredTable = new Table(tableName + filter, true);
-            Pattern pattern = Pattern.compile(filter);
-            DefaultTableModel model = table.getModel();
-            for (int row = 0; row < model.getRowCount(); row++)
-            {
-               entry = table.getColumn (row, colName, filter);
-               if (pattern.matcher(entry).matches())
-                  filteredTable.add(entry);
-            }
-            if (model.getRowCount() > 0)
+            Table filteredTable = new Table(tableName, filter);
+            // TODO: colName?
+            if (filteredTable.size() > 0)
                table = filteredTable;
          }
          
-         if (!table.isEmpty())
+         try
          {
-            if (index < 0)
-               index = RandomEntry.get (table.size());
-            
-            try
-            {
-               entry = table.getColumn (index, colName, null);
-               if (entry != null)
-               {
-                  entry = table.resolve (entry, null);
-                  // trim leading, trailing, and redundant embedded spaces
-                  entry = entry.trim().replaceAll ("  +", " ");
-               }
-            }
-            catch (IndexOutOfBoundsException x)
-            {
-               System.err.println (x);
-               System.err.println ("Table: " + tableName + "; Subset: " + subName +
-                     "; Column: " + colName + "; Filter: " + filter + "; Entry: " + index);
-               x.printStackTrace();
-            }
+            entry = get(table, index, colName);
+         }
+         catch (IndexOutOfBoundsException x)
+         {
+            System.err.println (x);
+            System.err.println ("Table: " + table.getName() + "; Subset: " + subName +
+                  "; Column: " + colName + "; Filter: " + filter + "; Entry: " + index);
+            x.printStackTrace();
+         }
+      }
+      
+      return entry;
+   }
+      
+   public static String get (final Table table, int index, String colName)
+   {
+      String entry = null;
+      
+      if (!table.isEmpty())
+      {
+         if (index < 0)
+            index = RandomEntry.get (table.size());
+         
+         entry = table.getColumn (index, colName, null);
+         if (entry != null)
+         {
+            entry = table.resolve (entry, null);
+            // trim leading, trailing, and redundant embedded spaces
+            entry = entry.trim().replaceAll ("  +", " ");
          }
       }
 

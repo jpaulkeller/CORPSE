@@ -75,7 +75,7 @@ public class CORPSE
       bottom.add (progress, BorderLayout.CENTER);
       
       mainPanel = new JPanel (new BorderLayout());
-      // mainPanel.add (menus.getMenus(), BorderLayout.NORTH); TBD
+      // mainPanel.add (menus.getMenus(), BorderLayout.NORTH); TODO
       mainPanel.add (tabs, BorderLayout.CENTER);
       mainPanel.add (bottom, BorderLayout.SOUTH);
 
@@ -122,6 +122,8 @@ public class CORPSE
 
    class RefreshAction extends AbstractAction
    {
+      private static final long serialVersionUID = 1L;
+
       public RefreshAction()
       {
          super("Refresh");

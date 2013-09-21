@@ -26,23 +26,22 @@ public class Table extends ArrayList<String>
    private static final String ENCODING = "UTF8";
    private static final DecimalFormat LINE_NUM = new DecimalFormat ("0000"); 
    
-   // TODO: Fix subsets to deal with included tables (such as Color.tbl)
-   // TODO: weight based on quantity (without expanding)
-   // TODO: filter as expanding
    // TODO: track quantity by line? then use L# for those quantities?
+   // TODO: matrix (like name generators in KoDT #200)
    
    // # {Table}
    private static final Pattern WEIGHTED_LINE = Pattern.compile ("(\\d+) +(.+)");
    // #-# {Table}
    private static final Pattern RANGE_LINE = Pattern.compile ("(\\d+)-(\\d+) +(.+)");
-   // + {Table} (or "text{Table}text", but at most one {Table})
-   private static final Pattern INCLUDED_TBL = 
-         Pattern.compile ("[" + Macros.INCLUDE_CHAR + "] *([^{]*)\\{(.+)\\}([^{]*)");
+   
+   // + {Table} (or "text{Table}text", but at most one {Table}) // TODO: support subset columns
+   private static final Pattern INCLUDED_TBL = Pattern.compile ("[" + Macros.INCLUDE_CHAR + "] *([^{]*)\\{([^}]+)\\}([^{]*)");
 
    static SortedMap<String, Table> tables = new TreeMap<String, Table>();
    
    private File file;
    private String tableName;
+   private Pattern filter;
    private List<String> title = new ArrayList<String>();
    private List<String> source = new ArrayList<String>();
    
@@ -85,10 +84,19 @@ public class Table extends ArrayList<String>
    }
    
    // for filtered tables
-   public Table (final String name, final boolean unused)
+   public Table (final String name, final String filterRegex)
    {
-      // TODO
-      tableName = name;
+      Table unfiltered = Table.getTable(name);
+      file = new File(unfiltered.file.getAbsolutePath());
+      tableName = name + "#" + filterRegex;
+      filter = Pattern.compile(filterRegex);
+      importTable();
+      tables.put (tableName, this);
+   }
+   
+   public String getName()
+   {
+      return tableName;
    }
    
    public String resolve (final String entry, final String filter)
@@ -199,55 +207,77 @@ public class Table extends ArrayList<String>
          else if (line.startsWith (Macros.SEPR_CHAR))
             ; // do nothing
 
-         // Included tables are used to provide an even distribution of elements from multiple sub-tables of 
-         // different sizes.  Each element has the same chance of selection.  See Site.tbl for an example.
          else if ((m = INCLUDED_TBL.matcher (line)).matches())
-         {
-            String name = m.group(2);
-            if (Macros.DEBUG) System.out.println("INCLUDED: " + name + " into " + tableName);
-            Table subTable = Table.getTable (name);
-            for (String subLine : subTable)
-            {
-               add (m.group(1) + subLine + m.group(3));
-               imported++;
-            }
-            /*
-            int weight = subTable.size();
-            for (int i = 0; i < weight; i++)
-               add ("{" + name + "}");
-               */
-         }
-         
-         // Range lines are used to provide a random number of chances for a particular line.
+            includeTable(m);
          else if ((m = RANGE_LINE.matcher (line)).matches())
-         {
-            String text = m.group(3);
-            if (Macros.DEBUG) System.out.println("RANGE: " + text + " into " + tableName);
-            int from = Integer.parseInt (m.group (1));
-            int to   = Integer.parseInt (m.group (2));
-            for (int i = from; i <= to; i++)
-            {
-               add (text);
-               imported++;
-            }
-         }
-         
-         // Weighted lines are used to provide a specified number of chances for a particular line.
+            includeRange(m);
          else if ((m = WEIGHTED_LINE.matcher (line)).matches())
-         {
-            String text = m.group(2);
-            if (Macros.DEBUG) System.out.println("WEIGHTED: " + text + " into " + tableName);
-            int weight = Integer.parseInt (m.group (1));
-            for (int i = 0; i < weight; i++)
-            {
-               add (text);
-               imported++;
-            }
-         }
+            includeWeighted(m);
          
          else if (line.trim().length() > 0) // ignore blank lines
             add (line);
       }
+   }
+
+   // Included tables are used to provide an even distribution of elements from multiple sub-tables of 
+   // different sizes.  Each element has the same chance of selection.  See Site.tbl for an example.
+   
+   private void includeTable(final Matcher m)
+   {
+      
+      String name = m.group(2);
+      if (Macros.DEBUG) System.out.println("INCLUDED: " + name + " into " + tableName);
+      
+      Matcher subsetMatcher = Subset.SUBSET_REF.matcher(name);
+      if (subsetMatcher.matches())
+      {
+         name = subsetMatcher.group(1);
+         String subsetName = subsetMatcher.group(2);
+         String colName = subsetMatcher.groupCount() >= 3 ? subsetMatcher.group(3) : null;
+         
+         Table subTable = Table.getTable (name);
+         Subset subset = subTable.getSubset(subsetName);
+         int min = subset.getMin();
+         int max = subset.getMax();
+         for (int i = min; i <= max; i++)
+         {
+            String entry = RandomEntry.get(subTable, i - 1, colName);
+            if (add (m.group(1) + entry + m.group(3)))
+               imported++;
+         }
+      }
+      else
+      {
+         Table subTable = Table.getTable (name);
+         for (String subLine : subTable)
+            if (add (m.group(1) + subLine + m.group(3)))
+               imported++;
+      }
+   }
+
+   // Range lines are used to provide a random number of chances for a particular line.
+   
+   private void includeRange(final Matcher m)
+   {
+      int from = Integer.parseInt (m.group (1));
+      int to = Integer.parseInt (m.group (2));
+      String text = m.group(3);
+      if (Macros.DEBUG) System.out.println("RANGE: " + text + " into " + tableName);
+      for (int i = from; i <= to; i++)
+         if (add (text))
+            imported++;
+   }
+
+   // Weighted lines are used to provide a specified number of chances for a particular line.
+   
+   private void includeWeighted(final Matcher m)
+   {
+      int weight = Integer.parseInt (m.group (1));
+      String text = m.group(2);
+      if (Macros.DEBUG) System.out.println("WEIGHTED: " + text + " into " + tableName);
+      for (int i = 0; i < weight; i++)
+         if (add (text))
+            imported++;
    }
    
    private void addColumn (final Matcher m)
@@ -375,6 +405,14 @@ public class Table extends ArrayList<String>
          return getValueAt (0, c).getClass();
       }
    }
+
+   @Override
+   public boolean add(final String line)
+   {
+      if (filter == null || filter.matcher(line).matches())
+         return super.add(line);
+      return false;
+   }
    
    public static void main (final String[] args)
    {
@@ -387,7 +425,17 @@ public class Table extends ArrayList<String>
       }
       System.out.println();
       
-      Table table = Table.getTable ("DEPENDS");
+      Table table;
+
+      // test including a subset
+      table = Table.getTable ("METALLIC");
       table.export();
+      System.out.println();
+      
+      // test a filter
+      new Table("COLOR", "C.+");
+      table = Table.getTable ("COLOR#C.+");
+      table.export();
+      System.out.println();
    }
 }
