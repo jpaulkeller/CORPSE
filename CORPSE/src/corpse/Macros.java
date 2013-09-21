@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 import str.Token;
 
@@ -24,6 +25,7 @@ public final class Macros
    static final String SUBSET_CHAR    = ":";
    static final String ONE_OF_CHAR    = "|";
    static final String FILTER_CHAR    = "#";
+   static final String REF_CHAR       = "!";
    
    static final Pattern COMMENT_LINE =
       Pattern.compile ("^[" + 
@@ -45,8 +47,9 @@ public final class Macros
    static final Pattern CONDITION =
       Pattern.compile ("\\{(\\d+)([=<>])(\\d+)[?]([^:]+)(?::([^:{}]+))?\\}");
 
-   // {one|two|three|four} -- chooses one option, with equal chance for each
+   // {one|two|three|four} -- chooses one option, with equal chance for each 
    static final Pattern ONE_OF = Pattern.compile ("\\{([^|{]+([|][^|{]*)+)\\}");
+   // TODO: empty option:  {opt1|opt2|}
    // TODO: weighted options: {#:opt1|#:opt2|...}
    
    static final String NAME = "([A-Za-z][-_A-Za-z0-9]*)";
@@ -57,7 +60,7 @@ public final class Macros
    private static final String COLUMN = "(?:\\" + COLUMN_CHAR + NAME + "?)?";
    private static final String FILTER = "(?:\\" + FILTER_CHAR + "([^}]+)?)?";
    
-   private static final Pattern TABLE_XREF = // {# Table:Subset@Column} 
+   private static final Pattern TABLE_XREF = // {# Table:Subset@Column#Filter} 
       Pattern.compile ("\\{" + QTY + TABLE + SUBSET + COLUMN + FILTER + " *\\}");
 
    private static final Pattern SCRIPT_XREF = // {# Script.cmd}
@@ -65,6 +68,8 @@ public final class Macros
 
    private static final Pattern NAME_MACRO = 
       Pattern.compile ("\\{!N(?:AME)?\\}", Pattern.CASE_INSENSITIVE);
+   
+   private static String lastResolved; // for back-references
    
    private Macros() { }
 
@@ -76,20 +81,19 @@ public final class Macros
       while ((m = TOKEN.matcher (resolvedEntry)).find()) // loop for multiple tokens
       {
          String token = m.group();
-         String resolvedToken;
-         resolvedToken = resolveTables (token, filter);
-         if (resolvedToken.equals(token))
-            resolvedToken = resolveExpressions (token);
-         if (resolvedToken.equals(token))
-            resolvedToken = resolveMacros (token);
-         if (resolvedToken.equals(token))
-            resolvedToken = resolveScripts (token);
+         String resolvedToken = token;
+         
+         resolvedToken = resolveExpressions (resolvedToken);
+         resolvedToken = resolveReferences (resolvedToken);
+         resolvedToken = resolveTables (resolvedToken, filter);
+         resolvedToken = resolveMacros (resolvedToken);
+         resolvedToken = resolveScripts (resolvedToken);
          if (resolvedToken.equals(token))
             resolvedToken = m.replaceFirst ("<$1>"); // avoid infinite loop
          
          try
          {
-            resolvedEntry = m.replaceFirst(resolvedToken);
+            resolvedEntry = m.replaceFirst(Matcher.quoteReplacement(resolvedToken));
          }
          catch (Exception x)
          {
@@ -98,6 +102,8 @@ public final class Macros
             x.printStackTrace(System.err);
          }
       }
+      
+      lastResolved = resolvedEntry; // TODO: only capture user-specified ones?
       
       return resolvedEntry;
    }
@@ -110,9 +116,54 @@ public final class Macros
       return qty;
    }
    
+   public static int getMin (final String token)
+   {
+      return new Quantity(token).getMin();
+   }
+
    public static int getMax (final String token)
    {
       return new Quantity(token).getMax();
+   }
+
+   private static Pattern BACK_REF = Pattern.compile(REF_CHAR + "([^" + REF_CHAR + "]+)" + REF_CHAR);
+   
+   private static String resolveReferences (final String token)
+   {
+      String resolvedToken = token;
+      
+      Matcher m = BACK_REF.matcher (token);
+      while (m.find())
+      {
+         String replacement = "";
+         if (lastResolved != null)
+         {
+            String regex = m.group(1);
+            try
+            {
+               Pattern p = Pattern.compile(regex);
+               Matcher backRefMatcher = p.matcher(lastResolved);
+               if (backRefMatcher.find())
+               {
+                  if (backRefMatcher.groupCount() > 0)
+                     replacement = backRefMatcher.group(1);
+                  else
+                     replacement = backRefMatcher.group();
+               }
+            }
+            catch (PatternSyntaxException x)
+            {
+               System.out.println("Invalid reference in " + token + ": [" + regex + "]");
+            }
+         }
+         else
+            System.out.println("Warning: Back reference without previous token!");
+         resolvedToken = m.replaceFirst(replacement);
+      }
+      
+      if (DEBUG && !token.equals (resolvedToken))
+         System.out.println ("resolveReferences: [" + token + "] = [" + resolvedToken + "]");
+      return resolvedToken;
    }
 
    private static String resolveExpressions (final String token)
@@ -125,7 +176,7 @@ public final class Macros
          resolvedToken = resolveOneOfs(token);
       
       if (DEBUG && !token.equals (resolvedToken))
-          System.out.println ("resolveExpressions: [" + token + "] = [" + resolvedToken + "]");
+         System.out.println ("resolveExpressions: [" + token + "] = [" + resolvedToken + "]");
       return resolvedToken;
    }
 
@@ -256,8 +307,9 @@ public final class Macros
             String xrefSub = m.group (3);
             String xrefCol = m.group (4);
             String xrefFil = m.group (5);
-            if (xrefFil == null && filter != null) // TODO
+            if (xrefFil == null && filter != null)
                xrefFil = filter;
+            // System.out.println("token [" + token + "] sub [" + xrefSub + "] col [" + xrefCol + "] fil [" + xrefFil + "]");
             
             // avoid infinite loop references
             if (TOKEN_STACK.contains (token))
@@ -325,13 +377,29 @@ public final class Macros
       Macros.DEBUG = true;
       
       Table.populate (new File ("data/Tables"));
-      String entry = "{Metal" + SUBSET_CHAR + "}";
+      String entry;
+      
+      entry = "{Metal" + SUBSET_CHAR + "}";
       System.out.println (entry + " = " + Macros.resolve (entry, null));
 
       entry = "Smell: {{3}=3?{SmellAdjective} }{Smell}";
       System.out.println (entry + " = " + Macros.resolve (entry, null));
       
       entry ="Description: {Color}{{5}=5?, with bits of {Reagent} floating in it}";
+      System.out.println (entry + " = " + Macros.resolve (entry, null));
+      
+      entry ="Filter: {Noise#S.+}";
+      System.out.println (entry + " = " + Macros.resolve (entry, null));
+      
+      entry ="Filter: {Color:Basic#S.+}";
+      System.out.println (entry + " = " + Macros.resolve (entry, null));
+      
+      // test a back-reference to produce alliteration
+      entry ="Filter: {Noise} {Fauna#!.!.*}";
+      System.out.println (entry + " = " + Macros.resolve (entry, null));
+      
+      // test a back-reference with a column
+      entry ="{Trait} {Class@Class#!.!.*}";
       System.out.println (entry + " = " + Macros.resolve (entry, null));
    }
 }
