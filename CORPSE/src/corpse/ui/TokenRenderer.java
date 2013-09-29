@@ -1,4 +1,4 @@
-package corpse;
+package corpse.ui;
 
 import gui.db.ColoredTableRenderer;
 

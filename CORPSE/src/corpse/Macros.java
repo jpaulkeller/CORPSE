@@ -6,11 +6,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
+import corpse.ui.TokenRenderer;
+
 import str.Token;
 
 public final class Macros
 {
-   public static boolean DEBUG = true;
+   public static boolean DEBUG = false;
    
    private static final Stack<String> TOKEN_STACK = new Stack<String>();
    
@@ -52,23 +54,20 @@ public final class Macros
    // TODO: empty option:  {opt1|opt2|}
    // TODO: weighted options: {#:opt1|#:opt2|...}
    
-   static final String NAME = "([A-Za-z][-_A-Za-z0-9]*)";
+   static final String NAME = "([A-Z](?: ?[-_A-Z0-9]+){0,})";
    
    private static final String QTY = "(?:(\\d+) +)?";
-   private static final String TABLE = "=?" + NAME; // TODO {=Quality }
+   private static final String TABLE = NAME;
    private static final String SUBSET = "(?:\\" + SUBSET_CHAR + NAME + "?)?";
-   private static final String COLUMN = "(?:\\" + COLUMN_CHAR + NAME + "?)?";
+   private static final String COLUMN = "(?:\\" + COLUMN_CHAR + Column.NAME + "?)?";
    private static final String FILTER = "(?:\\" + FILTER_CHAR + "([^}]+)?)?";
    
-   private static final Pattern TABLE_XREF = // {# Table:Subset@Column#Filter} 
-      Pattern.compile ("\\{" + QTY + TABLE + SUBSET + COLUMN + FILTER + " *\\}");
+   static final Pattern TABLE_XREF = // {# Table:Subset@Column#Filter} 
+      Pattern.compile ("\\{" + QTY + TABLE + SUBSET + COLUMN + FILTER + " *\\}", Pattern.CASE_INSENSITIVE);
 
    private static final Pattern SCRIPT_XREF = // {# Script.cmd}
       Pattern.compile ("\\{" + QTY + NAME + "[.]cmd\\}", Pattern.CASE_INSENSITIVE);
 
-   private static final Pattern NAME_MACRO = 
-      Pattern.compile ("\\{!N(?:AME)?\\}", Pattern.CASE_INSENSITIVE);
-   
    private static String lastResolved; // for back-references
    
    private Macros() { }
@@ -86,10 +85,10 @@ public final class Macros
          resolvedToken = resolveExpressions (resolvedToken);
          resolvedToken = resolveReferences (resolvedToken);
          resolvedToken = resolveTables (resolvedToken, filter);
-         resolvedToken = resolveMacros (resolvedToken);
          resolvedToken = resolveScripts (resolvedToken);
          if (resolvedToken.equals(token))
             resolvedToken = m.replaceFirst ("<$1>"); // avoid infinite loop
+         resolvedToken = matchCase(token, resolvedToken);
          
          try
          {
@@ -141,7 +140,7 @@ public final class Macros
             String regex = m.group(1);
             try
             {
-               Pattern p = Pattern.compile(regex);
+               Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
                Matcher backRefMatcher = p.matcher(lastResolved);
                if (backRefMatcher.find())
                {
@@ -234,19 +233,6 @@ public final class Macros
       return resolved;
    }
 
-   private static String resolveMacros (final String token)
-   {
-      String resolved = token;
-      Matcher m = NAME_MACRO.matcher (resolved);
-      if (m.matches())
-      {
-         resolved = m.replaceFirst (Name.getRandomName());
-         if (DEBUG && !token.equals (resolved))
-            System.out.println ("resolveMacros: [" + token + "] = [" + resolved + "]");
-      }
-      return resolved;
-   }
-
    private static String resolveScripts (final String token)
    {
       String resolved = token;
@@ -276,7 +262,7 @@ public final class Macros
             }
             TOKEN_STACK.push (name);
 
-            Script script = new Script ("data/Scripts/" + name + ".CMD");
+            Script script = Script.getScript(name);
             StringBuilder buf = new StringBuilder();
             for (int i = 0; i < count; i++)
                buf.append (script.resolve());
@@ -309,7 +295,7 @@ public final class Macros
             String xrefFil = m.group (5);
             if (xrefFil == null && filter != null)
                xrefFil = filter;
-            // System.out.println("token [" + token + "] sub [" + xrefSub + "] col [" + xrefCol + "] fil [" + xrefFil + "]");
+            System.out.println("token [" + token + "] sub [" + xrefSub + "] col [" + xrefCol + "] fil [" + xrefFil + "]");
             
             // avoid infinite loop references
             if (TOKEN_STACK.contains (token))
@@ -349,9 +335,23 @@ public final class Macros
             
             if (DEBUG && !entry.equals (resolved))
                System.out.println ("resolveTables: [" + entry + "] = [" + resolved + "]");
+
          }
       }
       
+      return resolved;
+   }
+
+   // Make the case of the resolved token match the case of the token.
+   
+   private static String matchCase(final String token, String resolved)
+   {
+      if (token.toLowerCase().equals(token))
+         resolved = resolved.toLowerCase();
+      else if (token.toUpperCase().equals(token) || resolved.length() <= 1) 
+         resolved = resolved.toUpperCase();
+      else
+         resolved = resolved.substring(0, 1).toUpperCase() + resolved.substring(1).toLowerCase();
       return resolved;
    }
    
@@ -378,6 +378,9 @@ public final class Macros
       
       Table.populate (new File ("data/Tables"));
       String entry;
+      
+      entry = "{Island Event}";
+      System.out.println (entry + " = " + Macros.resolve (entry, null));
       
       entry = "{Metal" + SUBSET_CHAR + "}";
       System.out.println (entry + " = " + Macros.resolve (entry, null));
