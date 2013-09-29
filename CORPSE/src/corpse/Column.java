@@ -1,20 +1,21 @@
 package corpse;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Column implements Comparable<Column>
 {
-   // TBD: allow multi-columns (like Job Title+Profession)
+   // TODO: allow multi-columns (like Job Title+Profession)
 
    private static final Pattern COLUMN = Pattern.compile ("([^;]+)(?: *; *)?");
    
-   static final String NAME = "([-A-Za-z0-9_/()]+)";
-      static final Pattern COLUMN_FIXED = 
-      Pattern.compile (Macros.COLUMN_CHAR + " *" + NAME + " +(\\d+) +(\\d+) *");
+   static final String NAME = "([-A-Z0-9_/()]+)";
+   static final Pattern COLUMN_FIXED = 
+      Pattern.compile ("^" + Macros.COLUMN_CHAR + " *" + NAME + " +(\\d+) +(\\d+) *", Pattern.CASE_INSENSITIVE);
    static final Pattern COLUMN_CSV = 
-      Pattern.compile (Macros.COLUMN_CHAR + " *" + NAME + " *");
+      Pattern.compile ("^" + Macros.COLUMN_CHAR + " *" + NAME + " *", Pattern.CASE_INSENSITIVE);
 
    private String name;
    private int index;
@@ -90,7 +91,7 @@ public class Column implements Comparable<Column>
    {
       Table.populate (new File ("data/Tables"));
       
-      for (String name : Table.tables.keySet())
+      for (String name : new ArrayList<String>(Table.tables.keySet()))
       {
          Table table = Table.getTable (name);
          if (!table.columns.isEmpty())

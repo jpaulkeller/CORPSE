@@ -3,6 +3,7 @@ package corpse;
 import gui.ComponentTools;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
@@ -18,16 +19,23 @@ import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 
+import corpse.ui.ScriptPanel;
+import corpse.ui.TreePanel;
+
 import utils.ImageTools;
 
 /** Computer-Oriented Role-Playing System & Environment */
 
 // TODO
-// Tab for each opened table
-// change CMD suffix
+// include/weight/etc for scripts? eg. Custom.cmd
+// change CMD suffix?
 // Figure out how to resolve CONDITIONS before resolving the inner values
 // Interactive color-coded display (click to re-generate, or manually override, etc)
 // use default macro for dice button (e.g, TitleMilitary:)
+// matrix (e.g. name generators in KoDT #200)
+// change subset from ": Mine {5-40}" to ": Mine 5 40"
+// This ad hoc subset syntax is not yet supported, but might be useful: Table STRUCTURE value: {AAA:3 - 4}
+// splash and progress bar
 
 public class CORPSE
 {
@@ -75,7 +83,9 @@ public class CORPSE
       bottom.add (progress, BorderLayout.CENTER);
       
       mainPanel = new JPanel (new BorderLayout());
-      // mainPanel.add (menus.getMenus(), BorderLayout.NORTH); TODO
+      mainPanel.setPreferredSize(new Dimension(900, 600));
+      
+      mainPanel.add (menus.getMenus(), BorderLayout.NORTH);
       mainPanel.add (tabs, BorderLayout.CENTER);
       mainPanel.add (bottom, BorderLayout.SOUTH);
 
@@ -93,7 +103,7 @@ public class CORPSE
          tables.roll();
    }
    
-   void setText (final String text)
+   public void setText (final String text)
    {
       progress.setString (text);
    }
@@ -107,12 +117,12 @@ public class CORPSE
       scripts.setDividerLocation (0.25);
    }
 
+   // TODO: is this used?
    private class MyKeyListener extends KeyAdapter
    {
       @Override
       public void keyPressed (final KeyEvent e)
       {
-         // TODO Incremental search of the Table/Script tree, highlight when found
          System.out.println("CORPSE.MyKeyListener.keyReleased()");
          int keyCode = e.getKeyCode();
          if (keyCode == KeyEvent.VK_ENTER && entryButton.isEnabled())
@@ -142,6 +152,7 @@ public class CORPSE
    {
       ComponentTools.setDefaults();
       Table.populate (new File ("data/Tables"));
+      Script.populate (new File ("data/Scripts"));
 
       CORPSE app = new CORPSE();
       app.buildGUI();

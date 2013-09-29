@@ -26,7 +26,7 @@ public class Menus
    private static final String EXIT      = "Exit";
    private static final String HELP      = "Help";
    private static final String OPTIONS   = "Options";
-   static         final String ROLL      = "Roll";
+   static final         String ROLL      = "Roll";
    
    private ActionListener buttonListener = new ButtonListener();
    // private About about;

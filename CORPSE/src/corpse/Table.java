@@ -3,6 +3,7 @@ package corpse;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -17,37 +18,36 @@ import java.util.regex.Pattern;
 
 import javax.swing.table.DefaultTableModel;
 
+import corpse.ui.TokenRenderer;
 import file.FileUtils;
 
 public class Table extends ArrayList<String>
 {
+   // the master list of tables (names must be unique)
+   public static SortedMap<String, Table> tables = new TreeMap<String, Table>();
+      
    private static final long serialVersionUID = 1L;
    
    private static final String ENCODING = "UTF8";
    private static final DecimalFormat LINE_NUM = new DecimalFormat ("0000"); 
    
-   // TODO: track quantity by line? then use L# for those quantities?
-   // TODO: matrix (like name generators in KoDT #200)
-   
    // # {Table}
-   private static final Pattern WEIGHTED_LINE = Pattern.compile ("(\\d+) +(.+)");
+   static final Pattern WEIGHTED_LINE = Pattern.compile ("^(\\d+) +(.+)");
    // #-# {Table}
-   private static final Pattern RANGE_LINE = Pattern.compile ("(\\d+)-(\\d+) +(.+)");
+   static final Pattern RANGE_LINE = Pattern.compile ("^(\\d+)-(\\d+) +(.+)");
    
    // + {Table} (or "text{Table}text", but at most one {Table}) // TODO: support subset columns
-   private static final Pattern INCLUDED_TBL = Pattern.compile ("[" + Macros.INCLUDE_CHAR + "] *([^{]*)\\{([^}]+)\\}([^{]*)");
+   static final Pattern INCLUDED_TBL = Pattern.compile ("^[" + Macros.INCLUDE_CHAR + "] *([^{]*)\\{([^}]+)\\}([^{]*)");
 
-   static SortedMap<String, Table> tables = new TreeMap<String, Table>();
-   
-   private File file;
-   private String tableName;
-   private Pattern filter;
+   protected String tableName;
+   protected File file;
+   protected Pattern filter;
    private List<String> title = new ArrayList<String>();
    private List<String> source = new ArrayList<String>();
    
    SortedMap<String, Column> columns = new TreeMap<String, Column>();
    SortedMap<String, Subset> subsets = new TreeMap<String, Subset>();
-   int imported = 0; // total number of imported lines (includes weighted lines)
+   int included = 0; // total number of imported lines (includes weighted lines)
    
    // For example of subset usage, see the MADE_OF.TBL and COLOR.TBL.
 
@@ -71,16 +71,27 @@ public class Table extends ArrayList<String>
             table.importTable();
       }
       else
+      {
          System.err.println ("Table not yet loaded: " + name);
+         Thread.dumpStack(); // TODO
+      }
       
       return table;
    }
    
-   public Table (final String path)
+   protected Table()
+   {
+   }
+         
+   private Table (final String path)
    {
       file = new File (path);
       tableName = FileUtils.getNameWithoutSuffix (file).toUpperCase();
-      tables.put (tableName, this);
+      Table table = tables.get(tableName);
+      if (table == null)
+         tables.put (tableName, this);
+      else
+         System.err.println("Ignoring duplicate table name: " + path + ", " + table.getFile());
    }
    
    // for filtered tables
@@ -93,10 +104,15 @@ public class Table extends ArrayList<String>
       importTable();
       tables.put (tableName, this);
    }
-   
+
    public String getName()
    {
       return tableName;
+   }
+   
+   public File getFile()
+   {
+      return file;
    }
    
    public String resolve (final String entry, final String filter)
@@ -133,7 +149,7 @@ public class Table extends ArrayList<String>
       return subset;
    }
 
-   private Column getColumn (final String columnName)
+   Column getColumn (final String columnName)
    {
       String key = columnName != null ? columnName.toUpperCase() : tableName;
       Column column = columns.get (key);
@@ -161,18 +177,18 @@ public class Table extends ArrayList<String>
       return unresolved;
    }
    
-   private void importTable()
+   void importTable()
    {
       String line = null;
+      BufferedReader br = null;
       try
       {
          FileInputStream fis = new FileInputStream (file);
          InputStreamReader isr = new InputStreamReader (fis, ENCODING);
-         BufferedReader br = new BufferedReader (isr);
+         br = new BufferedReader (isr);
          
          while ((line = br.readLine()) != null)
             parseLine (line);
-         fis.close();
          validate();
       }
       catch (Exception x)
@@ -181,18 +197,23 @@ public class Table extends ArrayList<String>
          System.err.println ("Line: " + line);
          x.printStackTrace (System.err);
       }
+      finally
+      {
+         if (br != null)
+            try { br.close(); } catch (IOException x) { }
+      }
    }
 
-   private void parseLine (final String line)
+   void parseLine (final String line)
    {
       if (line.length() > 0)
       {
          Matcher m;
-         if ((m = Column.COLUMN_FIXED.matcher (line)).matches())
+         if ((m = Column.COLUMN_FIXED.matcher (line)).find())
             addColumn (m);
-         else if ((m = Column.COLUMN_CSV.matcher (line)).matches())
+         else if ((m = Column.COLUMN_CSV.matcher (line)).find())
             addColumn (m);
-         else if (Subset.PATTERN.matcher (line).matches()) 
+         else if (Subset.SUBSET_PATTERN.matcher (line).find()) 
             addSubset (line);
          else if (line.startsWith (Macros.SOURCE_CHAR))
             source.add (line.substring (1).trim());
@@ -207,11 +228,11 @@ public class Table extends ArrayList<String>
          else if (line.startsWith (Macros.SEPR_CHAR))
             ; // do nothing
 
-         else if ((m = INCLUDED_TBL.matcher (line)).matches())
+         else if ((m = INCLUDED_TBL.matcher (line)).find())
             includeTable(m);
-         else if ((m = RANGE_LINE.matcher (line)).matches())
+         else if ((m = RANGE_LINE.matcher (line)).find())
             includeRange(m);
-         else if ((m = WEIGHTED_LINE.matcher (line)).matches())
+         else if ((m = WEIGHTED_LINE.matcher (line)).find())
             includeWeighted(m);
          
          else if (line.trim().length() > 0) // ignore blank lines
@@ -224,35 +245,16 @@ public class Table extends ArrayList<String>
    
    private void includeTable(final Matcher m)
    {
-      
       String name = m.group(2);
       if (Macros.DEBUG) System.out.println("INCLUDED: " + name + " into " + tableName);
-      
-      Matcher subsetMatcher = Subset.SUBSET_REF.matcher(name);
-      if (subsetMatcher.matches())
-      {
-         name = subsetMatcher.group(1);
-         String subsetName = subsetMatcher.group(2);
-         String colName = subsetMatcher.groupCount() >= 3 ? subsetMatcher.group(3) : null;
-         
-         Table subTable = Table.getTable (name);
-         Subset subset = subTable.getSubset(subsetName);
-         int min = subset.getMin();
-         int max = subset.getMax();
-         for (int i = min; i <= max; i++)
-         {
-            String entry = RandomEntry.get(subTable, i - 1, colName);
-            if (add (m.group(1) + entry + m.group(3)))
-               imported++;
-         }
-      }
-      else
-      {
-         Table subTable = Table.getTable (name);
-         for (String subLine : subTable)
-            if (add (m.group(1) + subLine + m.group(3)))
-               imported++;
-      }
+
+      String token = "{" + name + "}";
+      Table table = tables.get (token);
+      if (table == null)
+         table = new SubTable (token); // resolve the table before including
+      for (String line : table)
+         if (add (m.group(1) + line + m.group(3)))
+            included++;
    }
 
    // Range lines are used to provide a random number of chances for a particular line.
@@ -265,7 +267,7 @@ public class Table extends ArrayList<String>
       if (Macros.DEBUG) System.out.println("RANGE: " + text + " into " + tableName);
       for (int i = from; i <= to; i++)
          if (add (text))
-            imported++;
+            included++;
    }
 
    // Weighted lines are used to provide a specified number of chances for a particular line.
@@ -277,7 +279,7 @@ public class Table extends ArrayList<String>
       if (Macros.DEBUG) System.out.println("WEIGHTED: " + text + " into " + tableName);
       for (int i = 0; i < weight; i++)
          if (add (text))
-            imported++;
+            included++;
    }
    
    private void addColumn (final Matcher m)
@@ -299,17 +301,13 @@ public class Table extends ArrayList<String>
    public DefaultTableModel getModel()
    {
       DefaultTableModel model = new MyTableModel();
-      
-      /* TBD
-      // clear the model
-      while (model.getRowCount() > 0)
-         model.removeRow (0);
-      model.setColumnCount (0);
-      */
-
       SortedSet<Column> sorted = new TreeSet<Column>(); // by order in file
       
       model.addColumn ("#");
+      
+      if (!subsets.isEmpty())
+         model.addColumn ("Subset");
+
       if (columns.isEmpty()) // just one column; each line is the value
          model.addColumn (tableName);
       else
@@ -318,7 +316,7 @@ public class Table extends ArrayList<String>
          for (Column column : sorted)
             model.addColumn (column.getName());
       }
-
+      
       int i = 1;
       for (String unresolvedEntry : this)
          addRow (model, sorted, i++, unresolvedEntry);
@@ -330,15 +328,28 @@ public class Table extends ArrayList<String>
                         final SortedSet<Column> sorted,
                         final int i, final String entry)
    {
-      // System.out.println ("Entry = [" + entry + "]"); // TBD
+      // System.out.println ("Entry = [" + entry + "]"); // TODO
       Vector<Object> row = new Vector<Object>();
       row.add (i);
+      
+      if (!subsets.isEmpty())
+      {
+         StringBuilder rowSubsets = new StringBuilder();
+         for (Subset subset : subsets.values())
+            if (i >= subset.getMin() && i <= subset.getMax())
+            {
+               if (rowSubsets.length() > 0)
+                  rowSubsets.append(", ");
+               rowSubsets.append(subset.getName());
+            }
+         row.add(rowSubsets.toString());
+      }
       
       if (sorted.isEmpty())
          row.add (resolve (entry.trim(), null));
       else for (Column column : sorted)
       {
-         // if (i == 1) System.out.println ("Column: " + column); // TBD
+         // if (i == 1) System.out.println ("Column: " + column); // TODO
          String field = column.getValue (entry);
          row.add (resolve (field, null));
       }
@@ -346,12 +357,12 @@ public class Table extends ArrayList<String>
       model.addRow (row);
    }
    
-   private void validate()
+   void validate()
    {
       if (!subsets.isEmpty())
       {
          // TODO warn if imported > 0
-         if (imported > 0)
+         if (included > 0)
             System.err.println("Warning: Subset with imported files: " + tableName);
          for (Subset subset : subsets.values())
             if (subset.getMax() > size())
@@ -360,7 +371,7 @@ public class Table extends ArrayList<String>
       }
    }
    
-   private void export()
+   void export()
    {
       if (source.size() > 0)
          for (String line : source)
@@ -405,7 +416,7 @@ public class Table extends ArrayList<String>
          return getValueAt (0, c).getClass();
       }
    }
-
+   
    @Override
    public boolean add(final String line)
    {
@@ -418,7 +429,7 @@ public class Table extends ArrayList<String>
    {
       Table.populate (new File ("data/Tables"));
       
-      for (String name : Table.tables.keySet())
+      for (String name : new ArrayList<String>(Table.tables.keySet()))
       {
          Table table = Table.getTable (name);
          System.out.println (table);

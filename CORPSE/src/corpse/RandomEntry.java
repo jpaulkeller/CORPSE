@@ -36,6 +36,7 @@ public final class RandomEntry
    
    public static String get (final String tableName, final String subName, String colName, final String filter)
    {
+      // System.out.println("RandomEntry.get: tbl [" + tableName + "] sub [" + subName + "] col [" + colName + "] fil [" + filter + "]");
       String entry = null;
       
       Table table = Table.getTable (tableName);
@@ -141,5 +142,8 @@ public final class RandomEntry
       System.out.println ("avg: " + (total / runs));
       for (int i = 0; i < range; i++)
          System.out.println ((i + 1) + " = " + count[i]);
+      System.out.println();
+      
+      System.out.println (entry + " = " + RandomEntry.get ("Job", null, "Job", "I.*"));
    }
 }
