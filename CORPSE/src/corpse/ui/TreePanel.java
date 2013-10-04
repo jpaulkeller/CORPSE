@@ -8,6 +8,8 @@ import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.FileFilter;
 import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -36,6 +38,8 @@ import gui.db.TableView;
 public class TreePanel extends JSplitPane
 {
    private static final long serialVersionUID = 1L;
+   
+   private Map<String, JPanel> cardsByName = new HashMap<String, JPanel>();
    
    private CORPSE app;
    private String dir;
@@ -167,13 +171,13 @@ public class TreePanel extends JSplitPane
       if (file != null)
       {
          JTextArea raw = findRaw(name);
-         System.out.println("TreePanel.loadRaw(): " + raw); // TODO
          if (raw == null)
             raw = makeRaw(name);
          
          raw.setText (FileUtils.getText (file));
          raw.setCaretPosition (0);
          tabs.setSelectedIndex(tabs.indexOfTab(name));
+         tabs.validate();
       }
    }
 
@@ -186,10 +190,10 @@ public class TreePanel extends JSplitPane
          Component c = tabs.getComponentAt(index);
          if (c != null)
          {
-            JScrollPane scroll = (JScrollPane) c;
+            JPanel cards = (JPanel) c;
+            JScrollPane scroll = (JScrollPane) cards.getComponent(0); 
             JViewport viewport = (JViewport) scroll.getComponent(0);
-            JPanel panel = (JPanel) viewport.getComponent(0);
-            raw = (JTextArea) panel.getComponent(0);
+            raw = (JTextArea) viewport.getComponent(0);
          }
       }
       return raw;
@@ -197,12 +201,14 @@ public class TreePanel extends JSplitPane
 
    private JTextArea makeRaw(final String name)
    {
-      System.out.println("TreePanel.makeRaw(): " + name); // TODO
       JTextArea raw = new JTextArea (20, 80);
       raw.setEditable (false); // TODO
       JPanel cards = new JPanel(new CardLayout());
-      cards.add(raw, "raw");
-      JLabel label = tabs.addToggleTab (name, new JScrollPane (cards));
+      cardsByName.put(name, cards); // TODO prefix name with Table/Script?
+      // TODO: remove entry when tab is closed
+      cards.add(new JScrollPane(raw), "raw");
+      
+      JLabel label = tabs.addToggleTab (name, null, cards, "Double-click to swap between raw and resolved views");
       label.addMouseListener(new ToggleListener(cards));
       return raw;
    }
@@ -219,7 +225,8 @@ public class TreePanel extends JSplitPane
             resolved = makeResolved(name);
          
          Component view = populateResolved(table, name);
-         resolved.add (new JScrollPane (view));
+         resolved.add (new JScrollPane (view)); // the scroller here also gives us the column headers 
+         resolved.validate();
          
          tabs.setSelectedIndex(tabs.indexOfTab(name));
       }
@@ -244,11 +251,9 @@ public class TreePanel extends JSplitPane
          Component c = tabs.getComponentAt(index);
          if (c != null)
          {
-            JScrollPane scroll = (JScrollPane) c;
-            JViewport viewport = (JViewport) scroll.getComponent(0);
-            JPanel panel = (JPanel) viewport.getComponent(0);
-            if (panel.getComponentCount() > 1)
-               resolved = (JPanel) panel.getComponent(1);
+            JPanel cards = (JPanel) c;
+            if (cards.getComponentCount() > 1)
+               resolved = (JPanel) cards.getComponent(1);
          }
       }
       return resolved;
@@ -257,10 +262,7 @@ public class TreePanel extends JSplitPane
    protected JPanel makeResolved(final String name)
    {
       JPanel resolved = new JPanel (new BorderLayout());
-      Component c = tabs.getSelectedComponent();
-      JScrollPane scroll = (JScrollPane) c;
-      JViewport viewport = (JViewport) scroll.getComponent(0);
-      JPanel cards = (JPanel) viewport.getComponent(0);
+      JPanel cards = cardsByName.get(name); 
       cards.add(resolved, "resolved");
       return resolved;
    }

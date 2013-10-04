@@ -43,6 +43,7 @@ public final class RandomEntry
       if (table != null)
       {
          int index = -1;
+         
          if (subName != null)
          {
             Subset subset = table.getSubset (subName);
@@ -56,9 +57,25 @@ public final class RandomEntry
          
          if (filter != null)
          {
-            Table filteredTable = new Table(tableName, filter);
-            // TODO: colName?
-            if (filteredTable.size() > 0)
+            index = -1; // subset is no longer valid since we're going to filter the data
+            
+            // Token format: {# Table:Subset@Column#Filter}
+            String token = "{" + tableName;
+            if (subName != null)
+               token += Constants.SUBSET_CHAR + subName;
+            if (colName != null)
+            {
+               token += Constants.COLUMN_CHAR + colName;
+               colName = null; // don't want to apply it twice
+            }
+            token += Constants.FILTER_CHAR + filter  + "}";
+            
+            Table filteredTable = Table.TABLES.get (token);
+            if (filteredTable == null)
+               filteredTable = new SubTable (token); // resolve the table before rolling a value
+            // Table filteredTable = new Table(tableName, filter);
+            
+            if (filteredTable.size() > 0) // if no filtered entries match, just use the normal table?
                table = filteredTable;
          }
          
@@ -102,6 +119,7 @@ public final class RandomEntry
    public static void main (final String[] args)
    {
       RandomEntry.setSeed (0);
+      System.out.println("Random numbers (1-9):");
       for (int i = 0; i < 10; i++)
       {
          for (int j = 0; j < 10; j++)
@@ -110,22 +128,6 @@ public final class RandomEntry
       }
       System.out.println();
       
-      Table.populate (new File ("data/Tables"));
-
-      // String tableName = "TREASURE";
-      // String tableName = "REAGENT";
-      String tableName = "INN-NAME";
-      for (int i = 0; i < 10; i++)
-      {
-         String entry = RandomEntry.get (tableName, null, null, null);
-         System.out.println (tableName + " " + i + ": " + entry);
-      }
-      System.out.println();
-      
-      String entry = RandomEntry.get ("MATERIAL", "Wand", null, null); 
-      System.out.println ("Wand: " + entry);
-      System.out.println();
-
       // test RandomEntry.getExp()
       RandomEntry.randomize();
       int runs = 1000, range = 15;
@@ -139,11 +141,27 @@ public final class RandomEntry
          total += r;
          count[r - 1]++;
       }
-      System.out.println ("avg: " + (total / runs));
       for (int i = 0; i < range; i++)
          System.out.println ((i + 1) + " = " + count[i]);
+      System.out.println ("Average (should be near " + mean + "): " + (total / runs));
       System.out.println();
       
-      System.out.println (entry + " = " + RandomEntry.get ("Job", null, "Job", "I.*"));
+      Table.populate (new File ("data/Tables"));
+
+      // String tableName = "TREASURE";
+      // String tableName = "REAGENT";
+      String tableName = "INN-NAME";
+      for (int i = 1; i <= 10; i++)
+      {
+         String entry = RandomEntry.get (tableName, null, null, null);
+         System.out.println (tableName + " " + i + ": " + entry);
+      }
+      System.out.println();
+      
+      String entry = RandomEntry.get ("TSR Material", "Wand", null, null); 
+      System.out.println ("Wand: " + entry);
+      System.out.println();
+
+      System.out.println ("Job starting with I: " + RandomEntry.get ("Job", null, "Job", "I.*"));
    }
 }

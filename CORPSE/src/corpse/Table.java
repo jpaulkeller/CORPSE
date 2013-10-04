@@ -23,22 +23,15 @@ import file.FileUtils;
 
 public class Table extends ArrayList<String>
 {
-   // the master list of tables (names must be unique)
-   public static SortedMap<String, Table> tables = new TreeMap<String, Table>();
-      
-   private static final long serialVersionUID = 1L;
+   public static final String ENCODING = "UTF8";
    
-   private static final String ENCODING = "UTF8";
+   private static final long serialVersionUID = 1L;
+
    private static final DecimalFormat LINE_NUM = new DecimalFormat ("0000"); 
    
-   // # {Table}
-   static final Pattern WEIGHTED_LINE = Pattern.compile ("^(\\d+) +(.+)");
-   // #-# {Table}
-   static final Pattern RANGE_LINE = Pattern.compile ("^(\\d+)-(\\d+) +(.+)");
-   
-   // + {Table} (or "text{Table}text", but at most one {Table}) // TODO: support subset columns
-   static final Pattern INCLUDED_TBL = Pattern.compile ("^[" + Macros.INCLUDE_CHAR + "] *([^{]*)\\{([^}]+)\\}([^{]*)");
-
+   // the master list of tables by name (names must be unique)
+   protected static final SortedMap<String, Table> TABLES = new TreeMap<String, Table>();
+      
    protected String tableName;
    protected File file;
    protected Pattern filter;
@@ -64,7 +57,7 @@ public class Table extends ArrayList<String>
    
    public static Table getTable (final String name)
    {
-      Table table = tables.get (name.toUpperCase());
+      Table table = TABLES.get (name.toUpperCase());
       if (table != null)
       {
          if (table.isEmpty())
@@ -73,10 +66,15 @@ public class Table extends ArrayList<String>
       else
       {
          System.err.println ("Table not yet loaded: " + name);
-         Thread.dumpStack(); // TODO
+         Thread.dumpStack();
       }
       
       return table;
+   }
+   
+   public static List<Table> getTables()
+   {
+      return new ArrayList<Table>(TABLES.values());
    }
    
    protected Table()
@@ -87,11 +85,11 @@ public class Table extends ArrayList<String>
    {
       file = new File (path);
       tableName = FileUtils.getNameWithoutSuffix (file).toUpperCase();
-      Table table = tables.get(tableName);
+      Table table = TABLES.get(tableName);
       if (table == null)
-         tables.put (tableName, this);
+         TABLES.put (tableName, this);
       else
-         System.err.println("Ignoring duplicate table name: " + path + ", " + table.getFile());
+         System.err.println("Ignoring duplicate table name: " + path + " (already loaded: " + table.getFile() + ")");
    }
    
    // for filtered tables
@@ -102,7 +100,7 @@ public class Table extends ArrayList<String>
       tableName = name + "#" + filterRegex;
       filter = Pattern.compile(filterRegex);
       importTable();
-      tables.put (tableName, this);
+      TABLES.put (tableName, this);
    }
 
    public String getName()
@@ -117,13 +115,17 @@ public class Table extends ArrayList<String>
    
    public String resolve (final String entry, final String filter)
    {
-      String resolved = Macros.resolve (entry, filter); // recurse to support embedded tokens
-
-      Matcher m;
-      while ((m = Macros.TOKEN.matcher (resolved)).find())
+      String resolved = entry;
+      
+      Matcher m = Constants.TOKEN.matcher (resolved);
+      if (m.find())
       {
-         System.err.println (file + " unsupported token: " + m.group (0));
-         resolved = m.replaceFirst (TokenRenderer.INVALID_OPEN + m.group (1) + TokenRenderer.INVALID_CLOSE);
+         resolved = Macros.resolve (entry, filter); // recurse to support embedded tokens
+         while ((m = Constants.TOKEN.matcher (resolved)).find())
+         {
+            System.err.println (file + " unsupported token: " + m.group (0));
+            resolved = m.replaceFirst (TokenRenderer.INVALID_OPEN + m.group (1) + TokenRenderer.INVALID_CLOSE);
+         }
       }
 
       return resolved;
@@ -177,6 +179,37 @@ public class Table extends ArrayList<String>
       return unresolved;
    }
    
+   public List<String> search(final String pattern)
+   {
+      List<String> matches = new ArrayList<String>();
+      
+      String line = null;
+      BufferedReader br = null;
+      try
+      {
+         FileInputStream fis = new FileInputStream (file);
+         InputStreamReader isr = new InputStreamReader (fis, ENCODING);
+         br = new BufferedReader (isr);
+         
+         while ((line = br.readLine()) != null)
+            if (line.toUpperCase().contains(pattern))
+               matches.add(line);
+      }
+      catch (Exception x)
+      {
+         System.err.println ("File: " + file);
+         System.err.println ("Line: " + line);
+         x.printStackTrace (System.err);
+      }
+      finally
+      {
+         if (br != null)
+            try { br.close(); } catch (IOException x) { }
+      }
+      
+      return matches;
+   }
+   
    void importTable()
    {
       String line = null;
@@ -209,30 +242,30 @@ public class Table extends ArrayList<String>
       if (line.length() > 0)
       {
          Matcher m;
-         if ((m = Column.COLUMN_FIXED.matcher (line)).find())
+         if ((m = Constants.COLUMN_FIXED.matcher (line)).find())
             addColumn (m);
-         else if ((m = Column.COLUMN_CSV.matcher (line)).find())
+         else if ((m = Constants.COLUMN_CSV.matcher (line)).find())
             addColumn (m);
-         else if (Subset.SUBSET_PATTERN.matcher (line).find()) 
+         else if (Constants.SUBSET_PATTERN.matcher (line).find()) 
             addSubset (line);
-         else if (line.startsWith (Macros.SOURCE_CHAR))
+         else if (line.startsWith (Constants.SOURCE_CHAR))
             source.add (line.substring (1).trim());
-         else if (line.startsWith (Macros.TITLE_CHAR))
+         else if (line.startsWith (Constants.TITLE_CHAR))
             title.add (line.substring (1).trim());
-         else if (line.startsWith (Macros.COMMENT_CHAR))
+         else if (line.startsWith (Constants.COMMENT_CHAR))
             ; // do nothing
-         else if (line.startsWith (Macros.FOOTNOTE_CHAR))
+         else if (line.startsWith (Constants.FOOTNOTE_CHAR))
             ; // do nothing
-         else if (line.startsWith (Macros.HEADER_CHAR))
+         else if (line.startsWith (Constants.HEADER_CHAR))
             ; // do nothing
-         else if (line.startsWith (Macros.SEPR_CHAR))
+         else if (line.startsWith (Constants.SEPR_CHAR))
             ; // do nothing
 
-         else if ((m = INCLUDED_TBL.matcher (line)).find())
+         else if ((m = Constants.INCLUDED_TBL.matcher (line)).find())
             includeTable(m);
-         else if ((m = RANGE_LINE.matcher (line)).find())
+         else if ((m = Constants.RANGE_LINE.matcher (line)).find())
             includeRange(m);
-         else if ((m = WEIGHTED_LINE.matcher (line)).find())
+         else if ((m = Constants.WEIGHTED_LINE.matcher (line)).find())
             includeWeighted(m);
          
          else if (line.trim().length() > 0) // ignore blank lines
@@ -246,12 +279,17 @@ public class Table extends ArrayList<String>
    private void includeTable(final Matcher m)
    {
       String name = m.group(2);
-      if (Macros.DEBUG) System.out.println("INCLUDED: " + name + " into " + tableName);
+      // if (Macros.DEBUG) System.out.println("INCLUDED: " + name + " into " + tableName);
 
       String token = "{" + name + "}";
-      Table table = tables.get (token);
+      Table table = TABLES.get (token);
       if (table == null)
-         table = new SubTable (token); // resolve the table before including
+      {
+         if (Constants.SIMPLE_TABLE.matcher(name).matches())
+            table = Table.getTable(name);
+         else // resolve any tables with columns/subsets/filters
+            table = new SubTable (token); // resolve the table before including
+      }
       for (String line : table)
          if (add (m.group(1) + line + m.group(3)))
             included++;
@@ -264,7 +302,7 @@ public class Table extends ArrayList<String>
       int from = Integer.parseInt (m.group (1));
       int to = Integer.parseInt (m.group (2));
       String text = m.group(3);
-      if (Macros.DEBUG) System.out.println("RANGE: " + text + " into " + tableName);
+      // if (Macros.DEBUG) System.out.println("RANGE: " + text + " into " + tableName);
       for (int i = from; i <= to; i++)
          if (add (text))
             included++;
@@ -276,7 +314,7 @@ public class Table extends ArrayList<String>
    {
       int weight = Integer.parseInt (m.group (1));
       String text = m.group(2);
-      if (Macros.DEBUG) System.out.println("WEIGHTED: " + text + " into " + tableName);
+      // if (Macros.DEBUG) System.out.println("WEIGHTED: " + text + " into " + tableName);
       for (int i = 0; i < weight; i++)
          if (add (text))
             included++;
@@ -362,8 +400,7 @@ public class Table extends ArrayList<String>
       if (!subsets.isEmpty())
       {
          // TODO warn if imported > 0
-         if (included > 0)
-            System.err.println("Warning: Subset with imported files: " + tableName);
+         // if (included > 0) System.err.println("Warning: Subset with imported files: " + tableName);
          for (Subset subset : subsets.values())
             if (subset.getMax() > size())
                System.err.println ("Invalid subset in " + file + ": " + subset +
@@ -429,7 +466,7 @@ public class Table extends ArrayList<String>
    {
       Table.populate (new File ("data/Tables"));
       
-      for (String name : new ArrayList<String>(Table.tables.keySet()))
+      for (String name : new ArrayList<String>(Table.TABLES.keySet()))
       {
          Table table = Table.getTable (name);
          System.out.println (table);

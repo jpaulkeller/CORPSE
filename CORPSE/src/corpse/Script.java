@@ -6,7 +6,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -25,17 +27,6 @@ public class Script
 {
    // the master list of scripts (names must be unique)
    public static SortedMap<String, Script> scripts = new TreeMap<String, Script>();
-   
-   // includes a script, but ignores any embedded randomize commands? // TODO
-   static final Pattern INCLUDE_LINE = Pattern.compile ("[+] *(.*) *");
-   
-   static final Pattern RANDOMIZE_LINE = Pattern.compile ("# *(.*)");
-   
-   static final Pattern ASSIGNMENT = Pattern.compile ("\\{([^{}]+)=([^{}?]+)\\}");
-   
-   // {prompt?default} where the default value is optional, and the prompt must
-   // start with a non-numeric (to avoid confusion with the CONDITIONAL token).
-   static final Pattern QUERY = Pattern.compile ("\\{([^{}?0-9][^{}?]+?)[?]([^{}]+)?\\}");
    
    private String name;
    private File file;
@@ -96,7 +87,7 @@ public class Script
          String line = null;
          while ((line = br.readLine()) != null)
          {
-            if (Macros.COMMENT_LINE.matcher (line).matches())
+            if (Constants.COMMENT_LINE.matcher (line).matches())
                continue;
             if (line.trim().equals ("")) // ignore blank lines
                continue;
@@ -105,9 +96,9 @@ public class Script
             if (line == null) // user cancelled
                return null;
             
-            if ((m = INCLUDE_LINE.matcher (line)).matches())
+            if ((m = Constants.INCLUDE_LINE.matcher (line)).matches())
                buf.append (include (m.group (1)));
-            else if ((m = RANDOMIZE_LINE.matcher (line)).matches())
+            else if ((m = Constants.RANDOMIZE_LINE.matcher (line)).matches())
                randomize (m.group (1));
             else if (!line.equals (""))
                buf.append (line + "\n");
@@ -132,7 +123,7 @@ public class Script
       String line = entry;
       
       Matcher m;
-      while ((m = Macros.TOKEN.matcher (line)).find()) // loop for multiple tokens
+      while ((m = Constants.TOKEN.matcher (line)).find()) // loop for multiple tokens
       {
          String token = m.group();
          String resolvedToken;
@@ -184,7 +175,7 @@ public class Script
    {
       String resolvedEntry = entry;
       Matcher m;
-      while ((m = ASSIGNMENT.matcher (resolvedEntry)).find())
+      while ((m = Constants.ASSIGNMENT.matcher (resolvedEntry)).find())
       {
          variables.put (m.group (1), m.group (2));
          resolvedEntry = m.replaceFirst (Matcher.quoteReplacement (m.group (2)));
@@ -204,7 +195,7 @@ public class Script
       Object[] options = null; // TODO support multiple choice pattern
 
       Matcher m;
-      while ((m = QUERY.matcher (resolvedEntry)).find())
+      while ((m = Constants.QUERY.matcher (resolvedEntry)).find())
       {
          String message = m.group (1);
          String defaultValue = m.group (2);
@@ -238,6 +229,37 @@ public class Script
          RandomEntry.randomize();
    }
    
+   public List<String> search(final String pattern)
+   {
+      List<String> matches = new ArrayList<String>();
+      
+      String line = null;
+      BufferedReader br = null;
+      try
+      {
+         FileInputStream fis = new FileInputStream (file);
+         InputStreamReader isr = new InputStreamReader (fis, Table.ENCODING);
+         br = new BufferedReader (isr);
+         
+         while ((line = br.readLine()) != null)
+            if (line.toUpperCase().contains(pattern))
+               matches.add(line);
+      }
+      catch (Exception x)
+      {
+         System.err.println ("File: " + file);
+         System.err.println ("Line: " + line);
+         x.printStackTrace (System.err);
+      }
+      finally
+      {
+         if (br != null)
+            try { br.close(); } catch (IOException x) { }
+      }
+      
+      return matches;
+   }
+   
    public static void main (final String[] args)
    {
       Table.populate (new File ("data/Tables"));
@@ -249,8 +271,5 @@ public class Script
       String resolved = script.resolve();
       if (resolved != null)
          System.out.println (resolved);
-      
-      //String line = "Smell: {{3}=3?{SmellAdjective} }{Smell}";
-      //System.out.println (script.resolve(line));
    }
 }
