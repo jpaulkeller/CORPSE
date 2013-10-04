@@ -1,31 +1,17 @@
 package corpse;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Subset
 {
-   // TODO simplify range format
-   // : SubsetName {Quantity} ColumnName
-   // : SubsetName {to} ColumnName
-   // : SubsetName {from-to} ColumnName
-   private static final String RANGE_TOKEN = "(\\{[^}]+\\})";
-   private static final String SUBSET_REGEX = "^\\" + Macros.SUBSET_CHAR + " *" + Macros.NAME + " +" 
-         + RANGE_TOKEN + "(?: +" + Column.NAME + ")?"; 
-   static final Pattern SUBSET_PATTERN = Pattern.compile (SUBSET_REGEX, Pattern.CASE_INSENSITIVE);
-
-   static final Pattern SUBSET_REF = // {Table:Subset}
-         Pattern.compile (Macros.NAME + Macros.SUBSET_CHAR + Macros.NAME + "?", Pattern.CASE_INSENSITIVE);
-   
    private String name;
    private String roll;
    private String columnName;
    
    public Subset (final Table table, final String entry)
    {
-      Matcher m = SUBSET_PATTERN.matcher (entry);
+      Matcher m = Constants.SUBSET_PATTERN.matcher (entry);
       if (m.find())
       {
          name       = m.group (1);
@@ -75,14 +61,15 @@ public class Subset
    {
       Table.populate (new File ("data/Tables"));
       
-      for (String name : new ArrayList<String>(Table.tables.keySet()))
+      for (Table table : Table.getTables())
       {
-         Table table = Table.getTable (name);
+         table.importTable();
          if (!table.subsets.isEmpty())
          {
             System.out.println (table);
             for (Subset subset : table.subsets.values())
-               System.out.println("  > " + subset + " = " + Macros.resolve("{" + name + Macros.SUBSET_CHAR + subset.getName() + "}", null));
+               System.out.println("  > " + subset + " = " + 
+                     Macros.resolve("{" + table.getName() + Constants.SUBSET_CHAR + subset.getName() + "}", null));
          }
       }
    }

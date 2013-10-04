@@ -15,19 +15,23 @@ import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
-import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 
-import corpse.ui.ScriptPanel;
-import corpse.ui.TreePanel;
-
 import utils.ImageTools;
+import corpse.ui.ScriptPanel;
+import corpse.ui.TabPane;
+import corpse.ui.TreePanel;
 
 /** Computer-Oriented Role-Playing System & Environment */
 
 // TODO
+// maybe built-in global filters for common ones (e.g. no-spaces)?
+// add a !token which resolves to the last resolved (so we can avoid adding 's' to plural entries)
+// export text
+// player vs. DM views of data
 // include/weight/etc for scripts? eg. Custom.cmd
+// allow multi-columns (like Job Title+Profession)
 // change CMD suffix?
 // Figure out how to resolve CONDITIONS before resolving the inner values
 // Interactive color-coded display (click to re-generate, or manually override, etc)
@@ -37,9 +41,14 @@ import utils.ImageTools;
 // This ad hoc subset syntax is not yet supported, but might be useful: Table STRUCTURE value: {AAA:3 - 4}
 // splash and progress bar
 
+// TODO simplify range format
+// : SubsetName {Quantity} ColumnName
+// : SubsetName {to} ColumnName
+// : SubsetName {from-to} ColumnName
+
 public class CORPSE
 {
-   private JTabbedPane tabs;
+   private TabPane tabs;
    private JPanel mainPanel;
    private TreePanel tables;
    private TreePanel scripts;
@@ -59,7 +68,7 @@ public class CORPSE
       tables  = new TreePanel (this, "data/Tables", "tbl");
       scripts = new ScriptPanel (this, "data/Scripts", "cmd");
 
-      tabs = new JTabbedPane();
+      tabs = new TabPane();
       tabs.addTab ("Tables", ImageTools.getIcon ("icons/20/gui/Table.gif"), tables);
       tabs.addTab ("Scripts", ImageTools.getIcon ("icons/20/objects/GearGreen.gif"), scripts);
       
@@ -101,6 +110,11 @@ public class CORPSE
          progress.setString (Macros.resolve ("{" + macro + "}", null));
       else
          tables.roll();
+   }
+   
+   public void search()
+   {
+      Search.search(mainPanel, tabs);
    }
    
    public void setText (final String text)
@@ -145,6 +159,7 @@ public class CORPSE
             tables.refresh();
          else
             scripts.refresh();
+         // TODO: when focus is in the dice roll slot, just refresh it
       }
    }
    

@@ -12,14 +12,13 @@ public class SubTable extends Table
    private Column column;
    private int count;
    
-   
    // Get a populated/resolved table (with subset, column, and filter applied).
    // Token format: {# Table:Subset@Column#Filter}
    // Note: The numeric prefix is optional, and ignored (TODO).
    
    public SubTable (final String token)
    {
-      Matcher m = Macros.TABLE_XREF.matcher (token);
+      Matcher m = Constants.TABLE_XREF.matcher (token);
       if (m.matches())
       {
          String xrefTbl = m.group (2);
@@ -27,12 +26,12 @@ public class SubTable extends Table
          String xrefCol = m.group (4);
          String xrefFil = m.group (5);
 
-         if (xrefSub == null && token.contains (Macros.SUBSET_CHAR)) // e.g., Metal:
+         if (xrefSub == null && token.contains (Constants.SUBSET_CHAR)) // e.g., Metal:
             xrefSub = xrefTbl;
-         if (xrefCol == null && token.contains (Macros.COLUMN_CHAR)) // e.g., Job@
+         if (xrefCol == null && token.contains (Constants.COLUMN_CHAR)) // e.g., Job@
             xrefCol = xrefTbl;
          
-         // System.out.println("token [" + token + "] tbl [" + xrefTbl + "] sub [" + xrefSub + "] col [" + xrefCol + "] fil [" + xrefFil + "]");
+         System.out.println("token [" + token + "] tbl [" + xrefTbl + "] sub [" + xrefSub + "] col [" + xrefCol + "] fil [" + xrefFil + "]");
          
          Table unfiltered = Table.getTable(xrefTbl);
          tableName = token;
@@ -42,11 +41,11 @@ public class SubTable extends Table
          if (xrefCol != null)
             column = unfiltered.getColumn(xrefCol);
          if (xrefFil != null)
-            filter = Pattern.compile(xrefFil); // TODO try/catch
+            filter = Pattern.compile(xrefFil, Pattern.CASE_INSENSITIVE); // TODO try/catch
          
          count = 0;
          importTable();
-         tables.put (tableName, this);
+         TABLES.put (tableName, this);
       }
       else
          System.out.println("Invalid TABLE token: " + token);
@@ -62,7 +61,10 @@ public class SubTable extends Table
          if (column != null)
             entry = column.getValue(line);
          if (filter == null || filter.matcher(entry).matches())
+         {
+            System.out.println(" > " + entry); //TODO
             return super.add(entry);
+         }
       }
       // else System.out.println(count + " is out of subset: " + line); //TODO
       

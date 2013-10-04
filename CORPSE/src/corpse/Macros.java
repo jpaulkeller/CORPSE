@@ -1,14 +1,20 @@
 package corpse;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-import corpse.ui.TokenRenderer;
-
 import str.Token;
+import corpse.ui.TokenRenderer;
+import file.FileUtils;
+
+import corpse.Constants;
 
 public final class Macros
 {
@@ -16,72 +22,22 @@ public final class Macros
    
    private static final Stack<String> TOKEN_STACK = new Stack<String>();
    
-   static final String COMMENT_CHAR   = "*";
-   static final String FOOTNOTE_CHAR  = "]";
-   static final String HEADER_CHAR    = ".";
-   static final String SEPR_CHAR      = "-";
-   static final String SOURCE_CHAR    = "?";
-   static final String TITLE_CHAR     = "!";
-   static final String INCLUDE_CHAR   = "+";
-   static final String COLUMN_CHAR    = "@";
-   static final String SUBSET_CHAR    = ":";
-   static final String ONE_OF_CHAR    = "|";
-   static final String FILTER_CHAR    = "#";
-   static final String REF_CHAR       = "!";
-   
-   static final Pattern COMMENT_LINE =
-      Pattern.compile ("^[" + 
-                       Pattern.quote (COMMENT_CHAR + HEADER_CHAR + FOOTNOTE_CHAR +
-                                      SEPR_CHAR + SOURCE_CHAR + TITLE_CHAR) +
-                       "].*", Pattern.MULTILINE);
-   
-   static final Pattern TOKEN = Pattern.compile ("\\{([^{}]+)\\}");
-   
-   // [50/50] CONDITION (all-or-nothing format): {{2}=2?ALL}
-   // [50/50] CONDITION (either/or format)     : {{2}=2?YES:NO}
-   // [70/30] CONDITION (using > operator)     : {{10}>7?RARE:COMMON}
-   
-   // Note: the first element of the inner expression (e.g., {2}) will be 
-   // resolved prior to the evaluation the outer expression, and so the 
-   // first group of the pattern includes just the number.  The first element
-   // may be any numeric expression supported by Quantity.java.
-   // BELL-CURVE CONDITION (embedded roll)     : {{3d6}<13?Normal:Good} 
-   static final Pattern CONDITION =
-      Pattern.compile ("\\{(\\d+)([=<>])(\\d+)[?]([^:]+)(?::([^:{}]+))?\\}");
-
-   // {one|two|three|four} -- chooses one option, with equal chance for each 
-   static final Pattern ONE_OF = Pattern.compile ("\\{([^|{]+([|][^|{]*)+)\\}");
-   // TODO: empty option:  {opt1|opt2|}
-   // TODO: weighted options: {#:opt1|#:opt2|...}
-   
-   static final String NAME = "([A-Z](?: ?[-_A-Z0-9]+){0,})";
-   
-   private static final String QTY = "(?:(\\d+) +)?";
-   private static final String TABLE = NAME;
-   private static final String SUBSET = "(?:\\" + SUBSET_CHAR + NAME + "?)?";
-   private static final String COLUMN = "(?:\\" + COLUMN_CHAR + Column.NAME + "?)?";
-   private static final String FILTER = "(?:\\" + FILTER_CHAR + "([^}]+)?)?";
-   
-   static final Pattern TABLE_XREF = // {# Table:Subset@Column#Filter} 
-      Pattern.compile ("\\{" + QTY + TABLE + SUBSET + COLUMN + FILTER + " *\\}", Pattern.CASE_INSENSITIVE);
-
-   private static final Pattern SCRIPT_XREF = // {# Script.cmd}
-      Pattern.compile ("\\{" + QTY + NAME + "[.]cmd\\}", Pattern.CASE_INSENSITIVE);
-
-   private static String lastResolved; // for back-references
+   private static List<String> lastResolved = new ArrayList<String>(); // for back-references
    
    private Macros() { }
 
    public static String resolve (final String entry, final String filter)
    {
       String resolvedEntry = entry;
+      lastResolved.clear();
       
       Matcher m;
-      while ((m = TOKEN.matcher (resolvedEntry)).find()) // loop for multiple tokens
+      while ((m = Constants.TOKEN.matcher (resolvedEntry)).find()) // loop for multiple tokens
       {
          String token = m.group();
          String resolvedToken = token;
          
+         resolvedToken = resolveVariables (resolvedToken);
          resolvedToken = resolveExpressions (resolvedToken);
          resolvedToken = resolveReferences (resolvedToken);
          resolvedToken = resolveTables (resolvedToken, filter);
@@ -89,6 +45,8 @@ public final class Macros
          if (resolvedToken.equals(token))
             resolvedToken = m.replaceFirst ("<$1>"); // avoid infinite loop
          resolvedToken = matchCase(token, resolvedToken);
+         
+         lastResolved.add(resolvedToken); // TODO: only capture user-specified ones?
          
          try
          {
@@ -102,11 +60,45 @@ public final class Macros
          }
       }
       
-      lastResolved = resolvedEntry; // TODO: only capture user-specified ones?
-      
       return resolvedEntry;
    }
 
+   private static final String VARIABLE_REGEX = "(\\{![^}]+\\})";
+   private static final Pattern VARIABLE_TOKEN = Pattern.compile(VARIABLE_REGEX);
+   // {!1} = #[^-_ ]+ // one word
+   private static final Pattern VARIABLE = Pattern.compile(VARIABLE_REGEX + "=(.+) //.*");
+
+   private static final Map<String, String> VARIABLES = new HashMap<String, String>();
+   static
+   {
+      List<String> lines = FileUtils.getList("data/Variables.txt", FileUtils.UTF8, true);
+      for (String line : lines)
+      {
+         Matcher m = VARIABLE.matcher(line);
+         if (m.matches())
+            VARIABLES.put(m.group(1), m.group(2));
+      }
+   }
+   
+   public static String resolveVariables (final String entry)
+   {
+      String resolvedToken = entry;
+      
+      Matcher m = VARIABLE_TOKEN.matcher (resolvedToken);
+      while (m.find())
+      {
+         String replacement = VARIABLES.get(m.group(1));
+         if (replacement != null)
+            resolvedToken = m.replaceFirst(Matcher.quoteReplacement(replacement));
+         else
+            resolvedToken = m.replaceFirst("<" + m.group(0) + ">");
+      }
+      
+      if (DEBUG && !entry.equals (resolvedToken))
+         System.out.println ("resolveVariables: [" + entry + "] = [" + resolvedToken + "]");
+      return resolvedToken;
+   }
+   
    public static int resolveNumber (final String entry)
    {
       int qty = 0;
@@ -125,23 +117,21 @@ public final class Macros
       return new Quantity(token).getMax();
    }
 
-   private static Pattern BACK_REF = Pattern.compile(REF_CHAR + "([^" + REF_CHAR + "]+)" + REF_CHAR);
-   
    private static String resolveReferences (final String token)
    {
       String resolvedToken = token;
       
-      Matcher m = BACK_REF.matcher (token);
+      Matcher m = Constants.BACK_REF.matcher (token);
       while (m.find())
       {
          String replacement = "";
-         if (lastResolved != null)
+         if (!lastResolved.isEmpty())
          {
             String regex = m.group(1);
             try
             {
                Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
-               Matcher backRefMatcher = p.matcher(lastResolved);
+               Matcher backRefMatcher = p.matcher(lastResolved.get(lastResolved.size() - 1));
                if (backRefMatcher.find())
                {
                   if (backRefMatcher.groupCount() > 0)
@@ -192,7 +182,7 @@ public final class Macros
    private static String resolveConditions (final String token)
    {
       String resolved = token;
-      Matcher m = CONDITION.matcher (resolved);
+      Matcher m = Constants.CONDITION.matcher (resolved);
       if (m.matches())
       {
          int roll       = Integer.parseInt (m.group (1));
@@ -221,10 +211,10 @@ public final class Macros
    private static String resolveOneOfs (final String token)
    {
       String resolved = token;
-      Matcher m = ONE_OF.matcher (resolved);
+      Matcher m = Constants.ONE_OF.matcher (resolved);
       if (m.matches())
       {
-         String[] tokens = Token.tokenizeAllowEmpty (m.group (1), ONE_OF_CHAR);
+         String[] tokens = Token.tokenizeAllowEmpty (m.group (1), Constants.ONE_OF_CHAR);
          int roll = RandomEntry.get (tokens.length);
          resolved = m.replaceFirst (tokens[roll]); 
          if (DEBUG && !token.equals (resolved))
@@ -236,7 +226,7 @@ public final class Macros
    private static String resolveScripts (final String token)
    {
       String resolved = token;
-      Matcher m = SCRIPT_XREF.matcher (resolved);
+      Matcher m = Constants.SCRIPT_XREF.matcher (resolved);
       if (m.matches())
       {
          int count = 1;
@@ -280,7 +270,7 @@ public final class Macros
    private static String resolveTables (final String entry, final String filter)
    {
       String resolved = entry;
-      Matcher m = TABLE_XREF.matcher (resolved);
+      Matcher m = Constants.TABLE_XREF.matcher (resolved);
       if (m.matches())
       {
          int count = 1;
@@ -293,9 +283,13 @@ public final class Macros
             String xrefSub = m.group (3);
             String xrefCol = m.group (4);
             String xrefFil = m.group (5);
+            
             if (xrefFil == null && filter != null)
                xrefFil = filter;
-            System.out.println("token [" + token + "] sub [" + xrefSub + "] col [" + xrefCol + "] fil [" + xrefFil + "]");
+            if (xrefSub == null && token.contains (Constants.SUBSET_CHAR)) // e.g., Metal:
+               xrefSub = xrefTbl;
+            
+            // System.out.println("token [" + token + "] sub [" + xrefSub + "] col [" + xrefCol + "] fil [" + xrefFil + "]");
             
             // avoid infinite loop references
             if (TOKEN_STACK.contains (token))
@@ -311,31 +305,32 @@ public final class Macros
                   resolved = m.replaceFirst (Matcher.quoteReplacement (loop));
                }
             }
-            TOKEN_STACK.push (token);
             
-            if (xrefSub == null && token.contains (SUBSET_CHAR)) // e.g., Metal:
-               xrefSub = xrefTbl;
-            StringBuilder buf = new StringBuilder();
-            for (int i = 0; i < count; i++)
+            if (entry.equals(resolved))
             {
-               String xref = RandomEntry.get (xrefTbl, xrefSub, xrefCol, xrefFil);
-               if (xref == null)
+               TOKEN_STACK.push (token);
+               
+               StringBuilder buf = new StringBuilder();
+               for (int i = 0; i < count; i++)
                {
-                  System.err.println ("Invalid reference: " + entry);
-                  xref = getInvalidTableToken (xrefTbl, xrefSub, xrefCol, xrefFil);
+                  String xref = RandomEntry.get (xrefTbl, xrefSub, xrefCol, xrefFil);
+                  if (xref == null)
+                  {
+                     System.err.println ("Invalid reference: " + entry);
+                     xref = getInvalidTableToken (xrefTbl, xrefSub, xrefCol, xrefFil);
+                  }
+                  buf.append (xref);
+                  if (count > 1)
+                     buf.append ("\n");
                }
-               buf.append (xref);
-               if (count > 1)
-                  buf.append ("\n");
+               
+               resolved = m.replaceFirst (Matcher.quoteReplacement (buf.toString()));
+               
+               TOKEN_STACK.pop();
             }
-
-            resolved = m.replaceFirst (Matcher.quoteReplacement (buf.toString()));
-            
-            TOKEN_STACK.pop();
             
             if (DEBUG && !entry.equals (resolved))
                System.out.println ("resolveTables: [" + entry + "] = [" + resolved + "]");
-
          }
       }
       
@@ -355,18 +350,17 @@ public final class Macros
       return resolved;
    }
    
-   private static String getInvalidTableToken (final String table, final String subset, final String column,
-         final String filter)
+   private static String getInvalidTableToken (final String table, final String subset, final String column, final String filter)
    {
       StringBuilder sb = new StringBuilder();
       sb.append (TokenRenderer.INVALID_OPEN);
       sb.append (table);
       if (subset != null)
-         sb.append (SUBSET_CHAR + subset);
+         sb.append (Constants.SUBSET_CHAR + subset);
       if (column != null)
-         sb.append (COLUMN_CHAR + column);
+         sb.append (Constants.COLUMN_CHAR + column);
       if (filter != null)
-         sb.append (FILTER_CHAR + filter);
+         sb.append (Constants.FILTER_CHAR + filter);
       sb.append (TokenRenderer.INVALID_CLOSE);
 
       return sb.toString();
@@ -382,16 +376,16 @@ public final class Macros
       entry = "{Island Event}";
       System.out.println (entry + " = " + Macros.resolve (entry, null));
       
-      entry = "{Metal" + SUBSET_CHAR + "}";
+      entry = "{Metal" + Constants.SUBSET_CHAR + "}";
       System.out.println (entry + " = " + Macros.resolve (entry, null));
 
-      entry = "Smell: {{3}=3?{SmellAdjective} }{Smell}";
-      System.out.println (entry + " = " + Macros.resolve (entry, null));
-      
       entry ="Description: {Color}{{5}=5?, with bits of {Reagent} floating in it}";
       System.out.println (entry + " = " + Macros.resolve (entry, null));
       
       entry ="Filter: {Noise#S.+}";
+      System.out.println (entry + " = " + Macros.resolve (entry, null));
+      
+      entry ="Filter Variable: {Color:Basic{!1}}";
       System.out.println (entry + " = " + Macros.resolve (entry, null));
       
       entry ="Filter: {Color:Basic#S.+}";
