@@ -1,0 +1,3 @@
+{!OneWord}=#[^-_ ]+ // one word
+{!SameFirstLetter}=#{#{!}:.}.* // repeat the first letter in the previous resolved token
+{!OneWordWithSameFirstLetter}=#{#{!}:.}[^-_ ]+ // one word; repeat the first letter in the previous resolved token
