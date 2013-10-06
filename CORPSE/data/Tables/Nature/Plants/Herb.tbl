@@ -1,0 +1,222 @@
+? http://www.legolas.org/items/herb.html
+? Illustrated Guide to Herbs For RPGs 5th Edition, by Shaun Hately
+? http://www.republicofnewhome.org/lair/games/herb5/herb5illo.html
+? TODO: check Asheron's Call
+
+@ Herb 1 20
+@ Cost 21 15  Raw/Prepared
+@ Purpose 36 25
+@ Season 61 10  Spring, Summer, Autumn, Winter, All 
+@ Zone 79 10    Temperate, Cold, Tropical, Sub-tropical, Polar
+@ Locale 97 10 Coastal, Desert, Forest, Grassland, Hills, Jungle, Mountains, Rivers, Rural, Special, Swamp, Underworld, Urban, Volcanic, Wasteland
+
+! HERB              COST           PURPOSE                  SEASON            ZONE              LOCALE
+
+Adder's Tongue      5gp/15gp       anti-infection           Sp                Te                Ru
+Adgana              10gp/500gp     raises attributes        Sp                Te                Ru
+Agrimony            2gp/8gp        bruises, sprains         Su                Te                Fo
+Aldaka              100gp/1000gp   blindness                Wi                Cd                Mo
+Alether             10gp/100gp     combat skills            Sp/Su             Te                Ru
+Alkanet             2gp/2gp        antidote                 Su                Te                Ru
+All-Heal            2gp/10gp       healing                  Au                Te                Fo
+Aloe                5cp/5cp        healing, burns           Au/Wi             Te                Gr
+Amrans              50gp/50gp      healing                  Sp                Te                Ri/Ru
+Angelica            5sp/1gp        coughing                 Su                Te                Mo
+Anise               1gp/1gp        cures hiccups            Su                Te                Ru
+Anserke             75gp/75gp      bleeding                 Su                Tr                Co
+Archangelica        5sp/5sp        colds, flu               Su                Te                Sw
+Arfandas            2sp/3sp        fractures                Au/Wi             Cd                Ri
+Arkasu              12gp/12gp      healing                  Au                Te                Gr
+Arlan               20sp/20sp      healing                  Au                Cd                Gr
+Arnica              1gp/1gp        bruising                 Su                Te/Cd             Mo
+Arnuminas           6gp/6gp        tissue damage            Au                Te                Gr
+Arpusar             7gp/30gp       muscle damage            Au                Cd                Ri
+Asarabacca          3gp/7gp        renders docile           Sp                Te                Fo
+Ash                 5gp/8gp        fevers, snakebite        Sp                Te                Fo
+Ashline             50gp/500gp     petrification            Wi/Sp             Te                Mo
+Athelas             200gp/200gp    cures fear/dread         Au                Te                Fo
+Atigax              40gp/70gp      protects eyesight        Wi                Te                Gr
+Attanar             8gp/8gp        fevers                   Au/Wi             Te                Gr
+Balm                3gp/5gp        menstrual pains          Su                St                Fo
+Barberry            4gp/9gp        liver disorders          Su                Te                Ru
+Base Mullein        10sp/10sp      burns                    Al                Te                Ru
+Basil               3sp/3sp        antidote                 Su                Te                Ru
+Bastit              3sp/3sp        repels insects           Al                Te                All
+Belan               40gp/40gp      bleeding                 Su                Tr                Co
+Belladona, Sprig    4cp                                            
+Belramba            60gp/180gp     nerve damage             Su                Te                Fo
+Bilberry            500gp/3000gp   infravision              Sp                Te                Fo
+Birthnot            2cp/2cp        contraceptive            Al                Te                Hi
+Bishop's Weed       4gp/10gp       plague                   Su                Te                Ru
+Bittermourn         1000gp and up  longevity                Wi                Po                All
+Blackberry          1gp/1gp        bleeding                 Sp                Te                Ru
+Blackroot           4gp/4gp        healing                  Su                Te                All
+Black Rose          100gp/100g     liquid absorption        Sp/Su             Te                All
+Bloodkeep           4sp/4sp        bleeding                 Sp                Te                Co
+Borage              1gp/10gp       fever                    Sp                Te                Fo
+Breldiar            50gp/50gp      alters perception        Sp                Te                Vo
+Bull-Rush           2sp/3sp        sleep                    Al                Te/St             Sw
+Burdock             10gp/30gp      syphilis                 Sp                Te                Ru
+Bursthelas          110gp/1000gp   fractures                Su                Te                Gr
+Caffar              10gp/10gp      psi enhancement          Su/Au             Tr                De
+Calamus             5gp/15gp       restores hearing         Sp/Su             Te                Sw
+Calcena Mushroom    100gp/1000gp   hallucinogenic           Al                All               Un
+Callin              5gp/25gp       heart attacks            Au                Te                Ju
+Cat's Tail          1gp/3gp        heals heels              Su                Te                Fo
+Cephalophage        100gp/100gp                             Al                Te                Sp
+Chamomile           2gp/3gp        calming effect           Sp/Su             Te                Ru
+Chervil             10gp/10gp      dissolve clots           Al                Te                Fo
+Cinquefoil          10gp/15gp      aphrodisiac              Su                Te                Ru
+Colewort            6sp/6sp        sobriety                 Sp/Su             Te                Fo
+Coltsfoot           2gp/4gp        anti-infection           Sp/Su             Te                Mo
+Comfrey             4gp/10gp       fractures                Sp                Te                Ru
+Cow Parsnip         3gp/10gp       madness                  Al                Te                Fo
+Cow-Wheat           2gp/3gp        intoxication             Su                Te                Gr
+Culkas              35gp/35gp      sunburn                  Al                Tr                De
+Dagmather           6gp/28gp       tissue damage            Su                Te                Gr
+Dainaberry          2gp/8gp        induces sleep            Au                Te                Ri
+Darnell             3gp/7gp        dims sight               Au                Te                Fo
+Darsurion           3sp/3sp        healing                  Wi                Cd                Mo
+Deadly-Nightshade   4gp/8gp        sleep                    Su                Te                Fo
+Degiik              100gp/100gp    maintains life           Su                Tr                Co
+Delrean             3sp/3sp        repels insects           Wi                Te                Fo
+Dittany             1gp/5gp        anti-infection           Su/Au             Te                Ri
+Dog Rose            1sp/10sp       prevents scurvy          Su/Au             Te                Ru/Ur
+Draaf               5sp/5sp        healing                  Sp                St                Co
+Dragontears         100gp/100gp    healing                  Sp                Te                De
+Dragonwort          100gp/300gp    smallpox, plague         Sp                Cd                Mo
+Dwarf Mallow        1gp/3gp        bee stings               Sp                Te                Sw
+Ebur                22gp/22gp      healing                  Sp                Te                Co
+Edram               30gp/30gp      fractures                Wi                Cd                Ri
+Eldaas              2gp/4gp        nausea                   Sp/Su             Te                Co
+Elecampane          1sp/1sp        induces vomiting         Wi/Sp             Te                Ru
+Elvish  Galingale   1gp/2gp        raise bloodflow          Sp/Su             Po                Fo
+Entriste            25gp/25gp      antidote                 Su                St                De
+Falsifal            3gp/3gp        burns, blood loss        Sp                Te                Sw
+Febfendu            90gp/900gp     deafness                 Wi                Cd                Ri/Co
+Felmather           10gp/10gp      awaken                   Sp                Te                Co
+Fennel              5sp/1gp        relieves hunger          Au                Te                Ru
+Fetherfew           2gp/4gp        vertigo                  Su                Te/St             Fo
+Fire-Flower         1000-1000000gp healing                  Su                St/Tr             Mo
+Floure-De-Luce      3gp/10gp       bruises                  Al                Te                Gr
+Footleaf            10sp/10sp      protects feet            Sp/Su/Au          Te                Ru
+Fumitore            3gp/6gp        hair prevention          Sp/Su             Cd/Te             Co
+Gallowbrush         10gp/50gp      induces sleep            Wi                Te                Ru
+Garden Flax         3gp/6gp        pain removal             Sp/Su             Te                Fo
+Garlic, Bud         5cp                                            
+Gariig              55gp/70gp      healing                  Su                Tr                De
+Gefnul              200gp/500gp    healing                  Su                Po                Vo
+Goat's Rue          6gp/15gp       antidote                 Su                Te                Fo
+Golden Crown        1gp/2gp        bleeding                 Sp                St                Ru
+Golden Lungwort     1gp/2gp        heals ears               Su                Te/St             Fo
+Guardseye           100gp/100gp    detect life              Al                Cd                Gr
+Gylvir              100gp/100gp    breathe water            Au                Te                Co
+Hare's Ears         2gp/5gp        skin disease             Su                Te                Mo
+Harfy               150gp/150gp    bleeding                 Su                Te                Gr
+Hart's Tongue       2gp/2gp        lowers libido            Al                Te                Fo
+Hawkweed            4gp/6gp        improves eyesight        Al                Te                Fo
+Healwell            1sp/1sp        healing                  Su                Te                All
+Henbane             1gp/3gp        antidote                 Su/Au             Te                Ru
+Horehound           1gp/5gp        antidote                 Su                Te                Co
+Horseweed           7gp/7gp        strengthen horse         Sp/Su/Au          Te                Gr
+Ironhard            15gp/15gp      hardens skin             Su/Au             Te                Hi
+Jaffray             10gp/15gp      antidote                 Su                Tr                De
+Jinab               5gp/7gp        keeps awake              Al                St                Ru
+Jojojopo            9sp/9sp        frostbite                Au                Po                Mo
+Juniper             4gp/4gp        relieve muscles          Su                Te/St             Mo
+Kathkusa            50gp/50gp      raise strength           Wi                Po                Wa
+Kelventari          19gp/19gp      burns                    Al                Te                Fo
+Kilmakur            65gp/300gp     fire protection          Su                Te                Gr
+Klagul              30gp/50gp      infravision              Su                Te                Gr
+Kylathar            20gp/20gp      alters attributes        Su/Au             St                Fo
+Laishaberries       20gp/40gp      heal/disease             Su/Au             Cd                Fo
+Land Caltrops       2gp/5gp        snakebite                Su                Tr                Fo
+Larnurma            10gp/100gp     ease pain, heal          Sp                Te                Ru
+Laumspur            100gp/500gp    heal                     Sp                Te                Fo
+Leopard's Bane      5gp/5gp        poison animals           Su                Te                Gr
+Lesser Centaury     5gp/5gp        antidote                 Su                Te/Cd             Mo
+Lungwort            1gp/3gp        relieves lungs           Sp                Te                Ru
+Makebate            1gp/2gp        scorpion stings          Al                Tr/St             De
+Mandrake            3gp/5gp        sleep                    Sp                Te                Fo
+Marigold            2gp/10gp       antiseptic               Sp/Su             Te                Ru/Ur
+Marjerome           2gp/6gp        jaundice                 Al                Te                Gr
+Marsh Mallow        5gp/8gp        burns                    Al                Te                Co
+Maruera             50gp/100gp     breathing                Sp/Su             St/Tr             Mo
+Masterwort          2gp/7gp        plague                   Su                Te                Ru
+Megillos            1gp/3gp        improves eyesight        Wi                Cd                Mo
+Melander            12sp/20sp      disease resist           Wi                Cd                Ri
+Milkworte           4gp/8gp        cholera                  Sp/Su             Te                Ru
+Mirenna             10gp/10gp      healing                  Wi                Cd                Mo
+Mountain Garlick    8gp/9gp        repels spirits?          Al                Te/Cd             Mo
+Mountain Setwall    1gp/3gp        hair growth              Al                Te                Mo
+Mugwort             2gp/4gp        prevents collapse        Su                Te                Ru
+Napweed             1gp/1gp        poison protection        Sp                Te                Ru
+Navew               4gp/12gp       antidote                 Wi                St/Tr             Ri
+Nightcall           50gp/50gp      enhances senses          Su                Tr                De
+Oede                1000gp/1000gp  ?                        Sp                Te                Ru
+Oiolosse            1200gp/1200gp  see description          Wi                Po                Fo
+Olus Veritis        5gp/10gp       compels truth            Wi                Te/Cd             Ri
+Olvar               300gp/300gp    prevents death           Wi                Po                Co
+Orach               2gp/10gp       jaundice                 Su                Te                Fo
+Pallast             5sp/1gp        pain relief              Su                Te                Sw
+Palma Eldath        3gp/3gp        warmth                   Al                Cd/Po             Mo
+Pargen              2000gp/2000gp  resurrection             Su                Tr                Ju
+Pattran             10gp/10gp      induces sleep            Su                Te                Fo
+Pennyroyal          3gp/3gp        insect repellent         Sp                Te                Ru/Ur
+Peony               1gp/2gp        healing                  Sp                Te                Ru
+Periwinkle          1gp/10gp       bleeding                 Sp                Te                Ru
+Petiveria           1gp/3gp        swelling/bruising        Su                St/Tr             Ru
+Prince's Feather    1gp/2gp        bleeding                 Su/Au             Te                Ru
+Rampalt             5cp/5cp        congestion               Su                Te                Fo
+Rewk                9sp/1gp        healing                  Au                Te                Ru
+Ribwort Plantain    1gp/1gp        bruising                 Sp                Te/St             Ur
+Rose Campion        1gp/3gp        scorpion stings          Su                Te                Fo
+Rue                 1gp/1gp        antidote                 Su                Te                Ru
+Sabito              100gp/500gp    breathing                Su                Tr                Co
+Saddilia            100gp/300gp    raises attributes        Su/Au             Te                Gr
+Saffron             20gp/100gp     raises attributes        Au/Wi             Te                Fo
+Sanicle             5gp/30gp       bleeding                 Au/Su/Wi          Te                Fo
+Saracen Confound    1gp/20gp       fevers                   Su                Te                Ru
+Scented Mayweed     8gp/15gp       blindness                Su                Te                Fo
+Serapias Turbith    4gp/7gp        healing                  Sp/Su             Te                Gr
+Sessali             1gp/4gp        antidote                 Au/Sp/Su          St                Co
+Shepherd's Purse    5gp/12gp       bleeding                 Al                Te                Gr
+Silverthorn         1000gp/10000gp antidote                 Al                Te                Mo
+Sinquoi             2gp/3gp        dilates time             Su                St                Ru
+Snakespike          5gp/7gp        inflammation             Sp                Te                Co
+Spanish Nut         10gp/100gp     aphrodisiac              Al                Te/St             Fo
+Spiderwort          4gp/10gp       spider bites             Sp/Su             Te                Sp
+Spring Adonis       3gp/8gp        relieves heart           Sp                Cd                Mo
+Strawberry          2gp/2gp        leprosy                  Su                Te                Ru
+Suaeysit            10gp/50gp      energy                   Au                Cd                Fo
+Sweet Trefoile      1gp/3gp        falling damage           Sp/Su             Te                Fo
+Tai-Gi              2gp/3gp        enhances senses          Su                St                Ru
+Tamarindes          1gp/2gp        quenches thirst          Al                Tr                Fo
+Tamariske           5gp/7gp        anti-infection           Al                Te                Ru
+Tateesha            1sp/10gp       raises int               Al                St                Sw
+Tempin              5gp/5gp        antidote                 Su                Te                Fo
+Tephrosia           2gp/3gp        calming effect           Sp/Su/Au          Tr                Co
+Terbas              2gp/2gp        nerve damage             Sp                Te                Fo
+Teriko Weed         2gp/3gp        contraceptive            Sp/Su             St                Ru
+Thorn Apple         1gp/1gp        pain relief              Sp/Su             Te/St             Ru
+Throw-Waxe          2gp/3gp        scarring                 Sp/Su             Te                Fo
+Thurl               1sp/2sp        healing                  Au                Te                Fo
+Thyme               2gp/5gp        antiseptic               Sp                Te/Cd             Ru
+Ur                  3gp/3gp        food substitute          Wi                Te                Gr
+Valerian            1gp/2gp        eases fits               Sp                Te                Gr
+Vinuk               8sp/8sp        awaken                   Su                Te                Gr
+White Bryony        1gp/2gp        pneumonia                Au                Te                Fo
+Whitecandle         5gp/5gp        pain relief              Au                Te/St             Fo
+Willow-Herb         5gp/5gp        snake repellent          Su                Te                Fo
+Winclamit           100gp/100gp    healing                  Sp                Te                Fo
+Wolfsbane           20gp/40gp      lycanthropy              Su/Au             Te                Hi
+Wolfsbane (whole)   100gp/100gp    antidote                 Su                Te                Fo
+Woodrose            1gp/1gp        makes merry              Su                Te                Ri
+Wood Sorrel         2gp/4gp        cools                    Su/Au             Tr                De
+Wormwood            2gp/2gp        antiseptic               Sp                Te                Ru
+Yaran               8sp/8sp        enhances senses          Au                Te                Gr
+Yarrow              10gp/10gp      bleeding                 Su                Te                Ru
+Yavethalion         45gp/45gp      healing                  Au                Te                Co
+Young Lad's Love    1gp/1gp        frostbite                Su/Au             Te/St             Fo
+Zulsendra           70gp/70gp      increase move            Su                Tr                Un
+Zur                 12gp/50gp      enhances senses          Wi                Cd                Un

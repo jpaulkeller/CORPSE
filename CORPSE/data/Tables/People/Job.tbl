@@ -1,0 +1,308 @@
+? Sources: TSR DM's Guide 2nd edition page 105
+?          TSR DM's Guide 2nd edition page 112
+?          Fantasy Hero, page 23
+?          http://www.svincent.com/MagicJar/Economics/MedievalOccupations.html
+?          http://en.wikipedia.org/wiki/List_of_occupations
+?          http://www.rmhh.co.uk/occup/
+?          http://www.svincent.com/MagicJar/Economics/MedievalOccupations.html
+
+@ Title  1 20
+@ Job   21 30
+@ Notes 51 60
+
+                    Accountant
+                    Acrobat
+{Rank:@Guild}       Actor
+                    Administrator
+{Rank:@Guild}       Alchemist                     (Good with potions, poisons, +2 healing)
+                    Alderman                      (A town or city official)
+{Rank:@Guild}       Ambassador                    To the {Race}s
+{Rank:@Guild}       Animal Trainer                (esp. {Fauna})
+{Rank:@Guild}       Apothecary                    Current: {Flora}; {Flora}
+{Rank:@Guild}       Architect
+{Rank:@Guild}       Armorer                       (Specialty is {ARMOR})
+{Rank:@Guild}       Arrowsmith                    (A maker of arrowheads)
+{Rank:@Guild}       Artisan
+{Rank:@Guild}       Artist
+{Rank:@Class}       Assassin                      Lvl: {Rank:@Level}Guild Rank: {Rank:@Guild}
+{Rank:@Guild}       Astrologer                    (+1 on Divination spells)
+{Rank:@Guild}       Astronomer
+{Rank:@Level}       Athlete
+                    Bailiff                       (manager of craftsmen and servants; arrests; executes)
+{Rank:@Guild}       Baker
+{Rank:@Level}       Bandit
+{Rank:@Guild}       Banker
+{Rank:@Class}       Barbarian                     Lvl: {Rank:@Level}
+{Rank:@Guild}       Barber
+{Rank:@Guild}       Bard                          (esp. {Musical_Instrument})
+{Rank:@Class}       Bard                          Lvl: {Rank:@Level}Guild Rank: {Rank:@Guild}
+                    Barkeeper
+{Rank:@Guild}       Barrister
+{Rank:@Guild}       Barterer                      (Specializing in {Equipment})
+{Rank:@Guild}       Basket-maker
+{Rank:@Guild}       Beekeeper
+                    Beggar                        (+1 on Disguise)
+{Rank:@Guild}       Bellfounder                   (A caster of bells)
+{Rank:@Guild}       Black Marketeer
+{Rank:@Guild}       Blacksmith
+{Rank:@Guild}       Bladesmith                    (A smith who specializes in sword blades)
+{Rank:@Level}       Bloomer                       (A iron-smelting forge worker)
+{Rank:@Guild}       Boatwright
+{Rank:@Guild}       Body Artist
+{Rank:@Guild}       Bookbinder
+                    Boothaler                     (marauder, plunderer)             
+{Rank:@Academic}    Botanist                      +2 heal, poison; ({Flora})
+{Rank:@Level}       Bounty Hunter                 {WEAPON}, {ARMOR}
+{Rank:@Guild}       Bowyer
+{Rank:@Guild}       Brazier                       (A brass smith; sometimes traveling)
+{Rank:@Guild}       Breeder                       (esp. {fauna})
+{Rank:@Guild}       Brewer
+{Rank:@Guild}       Brick-maker
+{Rank:@Level}       Brigand
+                    Burglar
+{Rank:@Guild}       Butcher
+{Rank:@Guild}       Calligrapher
+                    Camp follower
+                    Caretaker
+{Rank:@Guild}       Carpenter
+{Rank:@Guild}       Cartographer                  esp. {Terrain} and {Region}
+{Rank:@Guild}       Cartwright
+{Rank:@Military}    Castellan                     {WEAPON}, {ARMOR}
+                    Catchpole                     (One who finds and brings in debtors)
+                    Chamberlain                   Overseer of the domain of a {Rank:@Royalty}
+                    Chancellor                    Secretary of {TitleFeudal:Noble} {Name}
+{Rank:@Guild}       Chandler
+{Rank:@Class}       Changer ({Order})             Lvl: {Rank:@Level}
+{Rank:@Level}       Chapman                       (A traveling peddler)
+{Rank:@Guild}       Chef
+{Rank:@Level}       Churl                         (A farmer, usually of some wealth)
+{Rank:@Class}       Cleric                        {Rank:@Religious} of {Religion}; {WEAPON}
+{Rank:@Guild}       Clothier
+{Rank:@Guild}       Cobbler
+{Rank:@Guild}       Coiner/Minter                 (A maker of coins)
+{Rank:@Level}       Collector                     {Equipment}
+{Rank:@Level}       Collier                       (A charcoal burner - for smelting)
+                    Constable                     (Commander/warden of the town/castle guard)
+{Rank:@Level}       Cook
+{Rank:@Guild}       Cooper
+{Rank:@Guild}       Coppersmith
+                    Councilor                     (A city official or advisor of the court)
+                    Courtier
+                    Crier
+                    Crossbowman
+{Rank:@Guild}       Cutler                        (A maker of knives and silverware)
+{Rank:@Guild}       Dancer
+{Rank:@Guild}       Diplomat                      An ambassador to a {Rank:@Royalty}
+{Rank:@Guild}       Diviner                       (+1 on Divination spells)
+{Rank:@Guild}       Dragoman                      esp. {Terrain}; knows {Race}
+{Rank:@Guild}       Draper                        (A cloth merchant)
+{Rank:@Guild}       Driver                        (esp. {Mount})
+{Rank:@Guild}       Drover                        (esp. {Mount})
+{Rank:@Class}       Druid                         {Rank:@Religious}; {WEAPON}
+                    Drummer
+                    Drunk
+{Rank:@Level}       Dueler                        {WEAPON}, {ARMOR}
+{Rank:@Guild}       Dyer
+{Rank:@Guild}       Emblazoner
+{Rank:@Guild}       Embroiderer                   (A needleworker who decorates fabric)
+{Rank:@Guild}       Enameler                      (A jeweler specializing in enamel work)
+{Rank:@Guild}       Engineer
+{Rank:@Guild}       Engraver                      (A jeweler specializing in engraving)
+                    Exchequer                     (The person responsible for the king's revenue)
+{Rank:@Military}    Executioner
+{Rank:@Guild}       Falconer
+{Rank:@Level}       Farmer                        (esp. {Flora}; {Flora})
+{Rank:@Guild}       Farrier                       (A maker of horseshoes)
+                    Fence                         (one who trades in stolen goods)
+{Rank:@Class}       Fighter                       Lvl: {Rank:@Level}; {WEAPON}, {ARMOR}
+{Rank:@Level}       Fisherman
+{Rank:@Guild}       Fletcher
+{Rank:@Guild}       Florist                       (esp. {Flower}; {Flower})
+                    Footpad                       (one who robs pedestrians) 
+{Rank:@Guild}       Forester                      (esp. {Tree}; {Tree})
+{Rank:@Guild}       Fortune Teller                (+1 on Divination spells)
+{Rank:@Level}       Fowler
+{Rank:@Level}       Freighter                     (A hauler of goods)
+{Rank:@Guild}       Fuller                        (A felt-maker)
+{Rank:@Level}       Furrier                       (esp. {fur and pelts})
+                    Gambler
+{Rank:@Level}       Gardener                      (esp. {Flora}; {Flora})
+{Rank:@Guild}       Gem-cutter                    (A jeweler specializing in gemstones)
+{Rank:@Guild}       Geologist                     (esp. {Made Of:Geology})
+{Rank:@Guild}       Gilder                        (A craftsman of gilt gold and silver)
+{Rank:@Guild}       Gladiator                     {WEAPON}, {ARMOR}
+{Rank:@Guild}       Glassblower                   (A maker of glass items)
+{Rank:@Guild}       Glazier                       (One who cuts and sets glass)
+{Rank:@Guild}       Glover                        (A maker of gloves)
+{Rank:@Guild}       Goldsmith
+{Rank:@Level}       Grocer                        (A wholesaler of everyday items)
+{Rank:@Guild}       Groom                         (esp. {Mount})
+{Rank:@Military}    Guard                         {WEAPON}, {ARMOR}
+{Rank:@Guild}       Guide                         esp. {Terrain} in {Region}
+{Rank:@Level}       Gypsy
+{Rank:@Level}       Haberdasher                   (A merchant of thread, needles, etc.)
+{Rank:@Guild}       Hatter
+                    Hayward                       (An officer in charge of fences and hedges)
+{Rank:@Class}       Healer                        Lvl: {Rank:@Level} Guild Rank: {Rank:@Guild}
+{Rank:@Guild}       Herald                        (A courtier (esp. etiquette and heraldry))
+{Rank:@Guild}       Herbalist                     (esp. {Herb}; {Herb})
+                    Hermit
+{Rank:@Guild}       Hewer                         (esp. {Mineral}; digger)
+{Rank:@Academic}    Historian
+{Rank:@Guild}       Horner                        (A worker of horn)
+{Rank:@Guild}       Hosier                        (A maker of hose and garters)
+{Rank:@Level}       Hosteler                      (An innkeeper)
+{Rank:@Level}       Hunter                        (esp. {Fauna})
+{Rank:@Guild}       Husbandman                    (esp. {Fauna})
+{Rank:@Guild}       Hypnotist
+{Rank:@Class}       Illusionist                   Lvl: {Rank:@Level}Guild Rank: {Rank:@Guild}
+{Rank:@Guild}       Ink-maker
+{Rank:@Level}       Innkeeper
+                    Instructor ({Skill})
+{Rank:@Guild}       Instrument maker              (esp. {Musical_Instrument})
+{Rank:@Guild}       Interpreter                   (+2 on Languages, +5 {Race})
+                    Interrogator
+{Rank:@Level}       Ironmonger                    (A dealer of iron products)
+                    Jailer
+{Rank:@Guild}       Jester
+{Rank:@Guild}       Jeweler                       (esp. {Gem})
+{Rank:@Guild}       Joiner                        (A cabinet or furniture maker)
+                    Judge
+{Rank:@Guild}       Juggler
+{Rank:@Level}       Knife-grinder                 (A sharpener of knives)
+{Rank:@Level}       Laborer
+{Rank:@Guild}       Lapidary
+                    Laundress
+                    Lawyer
+{Rank:@Guild}       Leather craftsman
+{Rank:@Level}       Leech
+{Rank:@Academic}    Librarian
+{Rank:@Level}       Limeburner                    (A maker of lime for mortar)
+{Rank:@Level}       Limner                        (A painter)
+                    Liner                         (Traces property boundaries in the city)
+{Rank:@Guild}       Linguist                      (esp. {Race})
+                    Linkboy                       (A lantern- or torch-bearer)
+{Rank:@Guild}       Linker
+{Rank:@Guild}       Liveryman
+{Rank:@Guild}       Locksmith                     (A smith specializing in locks & keys)
+{Rank:@Class}       Mage                          Lvl: {Rank:@Level} Guild Rank: {Rank:@Guild}
+{Rank:@Guild}       Magician of {Magic}: {Spell}
+                    Magistrate                    (a judge)
+{Rank:@Guild}       Marbler                       (A cutter and carver of marble)
+{Rank:@Guild}       Mason                         (A worker in building stones, etc.)
+                    Masseur
+                    Mechanic
+{Rank:@Military}    Mercenary                     {WEAPON}, {ARMOR}
+{Rank:@Guild}       Mercer                        (A cloth dealer)
+{Rank:@Guild}       Merchant                      (Specializing in {Equipment})
+{Rank:@Level}       Messenger
+{Rank:@Guild}       Metal craftsman
+{Rank:@Class}       Metallist                     Lvl: {Rank:@Level} Guild Rank: {Rank:@Guild}
+{Rank:@Guild}       Miller                        (One who operates a grain mill)
+{Rank:@Guild}       Miner                         (esp. {Mine})
+{Rank:@Guild}       Minstrel                      (Usually {Musical_Instrument})
+{Rank:@Class}       Monk                          {Rank:@Religious} of {Religion}; {WEAPON}
+{Rank:@Guild}       Musician                      (esp. {Musical_Instrument})
+{Rank:@Guild}       Nailsmith                     (A smith specializing in nails)
+                    Naturalist
+{Rank:@Guild}       Navigator                     esp. {Terrain} in {Region}
+{Rank:@Guild}       Net-maker
+{Rank:@Class}       Ninja                         Lvl: {Rank:@Level}
+{Rank:@Royalty}        Nobleman                      (Someone with royal blood)
+{Rank:@Guild}       Oculist
+{Rank:@Guild}       Oracle                        (+1 on Divination spells)
+{Rank:@Level}       Outlaw
+{Rank:@Level}       Painter
+{Rank:@Class}       Paladin of {Religion}         {WEAPON}, {ARMOR}
+{Rank:@Guild}       Parchment-maker
+{Rank:@Level}       Pearl-diver
+{Rank:@Guild}       Pewterer                      (A smith specializing in pewter)
+{Rank:@Guild}       Physician
+                    Pickpocket
+{Rank:@Religious}   Pilgrim                       (Temple of {Religion})
+{Rank:@Guild}       Plasterer                     (A specialist in plastering)
+                    Ploughman                     (A worker of the field)
+                    Poacher                       (one who illegally kills animals)
+                    Poet
+{Rank:@Guild}       Politician
+{Rank:@Guild}       Potter
+{Rank:@Guild}       Poulterer                     (A dealer of chickens and other poultry)
+{Rank:@Religious}   Priest                        (Temple of {Religion})
+{Rank:@Class}       Prophet                       Lvl: {Rank:@Level} Guild Rank: {Rank:@Guild}
+{Rank:@Guild}       Prospector                    (esp. {Mine})
+                    Pursuivant                    (officer of arms, ranks below herald, similar duties)
+                    Purveyor                      Army supplier for a {Rank:@Royalty}
+{Rank:@Guild}       Quarrier                      (One who digs and cuts stone)
+{Rank:@Class}       Ranger                        Lvl: {Rank:@Level}
+{Rank:@Level}       Ratter
+                    Reeve                         (church warden; administrator)
+{Rank:@Class}       Rogue                         Lvl: {Rank:@Level}
+{Rank:@Guild}       Roper
+{Rank:@Level}       Ruffian                       {WEAPON}, {ARMOR}
+{Rank:@Class}       Rune Weaver                   Lvl: {Rank:@Level} Guild Rank: {Rank:@Guild}
+{Rank:@Guild}       Saddler                       (A maker of saddles, bridles, etc.)
+{Rank:@Academic}    Sage                          (Domain: {Domain})
+{Rank:@Military}    Sailor
+{Rank:@Class}       Samurai                       {Rank:@Guild}: {WEAPON}, {ARMOR}
+{Rank:@Military}    Sapper                        {WEAPON}, {ARMOR}
+{Rank:@Guild}       Sawyer
+{Rank:@Academic}    Scholar                       (Domain: {Domain})
+{Rank:@Level}       Scout                         esp. {Terrain} in {Region}
+{Rank:@Guild}       Scribe
+                    Scrivener                     (A copyist)
+                    Scrounger
+{Rank:@Guild}       Sculptor
+                    Seamstress
+{Rank:@Guild}       Seer
+{Rank:@Level}       Servant
+{Rank:@Religious}   Shaman of {Magic}; {Spell}
+{Rank:@Guild}       Sheather                      (A maker of scabbards and knife sheaths)
+{Rank:@Level}       Shepherd
+                    Sheriff                       Local representative for a {Rank:@Royalty}
+{Rank:@Guild}       Ship-builder
+{Rank:@Military}    Siege Engineer                {WEAPON}, {ARMOR}
+{Rank:@Guild}       Silk-maker
+{Rank:@Guild}       Silversmith
+                    Singer
+{Rank:@Level}       Skinner                       (A butcher who prepares hides for tanning)
+                    Slave
+{Rank:@Guild}       Smelter
+{Rank:@Guild}       Smith
+{Rank:@Guild}       Smuggler                      (esp. {Smuggled})
+{Rank:@Military}    Soldier                       {WEAPON}, {ARMOR}
+{Rank:@Guild}       Soothsayer                    (+1 on Divination spells)
+{Rank:@Guild}       Spy
+{Rank:@Guild}       Stableman                     (esp. {Mount})
+{Rank:@Military}    Strategist
+{Rank:@Guild}       Steward
+{Rank:@Guild}       Stone-carver
+{Rank:@Level}       Storekeep
+                    Summoner                      (officer of the court who serves subpoenas)
+                    Surgeon
+{Rank:@Guild}       Surveyor                      esp. {Terrain} in {Region}
+{Rank:@Level}       Swineherd                     (A keeper of pigs)
+{Rank:@Military}    Tactician
+{Rank:@Guild}       Tailor
+{Rank:@Guild}       Tanner
+{Rank:@Academic}    Teacher                       (Domain: {Domain})
+{Rank:@Guild}       Teamster                      (esp. {Mount} teams)
+{Rank:@Guild}       Thatcher
+{Rank:@Class}       Thief                         Lvl: {Rank:@Level} Guild Rank: {Rank:@Guild}
+{Rank:@Guild}       Tinker                        (A travelling smith who repairs items)
+                    Tracker            
+{Rank:@Guild}       Trader                        (Specializing in {Equipment})
+{Rank:@Guild}       Translator                    (+2 on Languages, +5 {Race})
+{Rank:@Level}       Trapper                       (esp. {Fauna})
+                    Tronager                      (Scale-master at a port or gate)
+{Rank:@Guild}       Veterinarian                  (esp. {Fauna})
+{Rank:@Guild}       Vintner
+                    Waiter
+                    Warden                        A regional guardian for a {Rank:@Royalty}
+{Rank:@Military}    Watchman                      {WEAPON}, {ARMOR}
+{Rank:@Guild}       Weapons Master                (Specialty is {WEAPON})
+{Rank:@Guild}       Weaponsmith                   (esp. {WEAPON})
+{Rank:@Guild}       Weaver                        (One who makes fabric)
+{Rank:@Guild}       WireWorker                    (A smith specializing in chain mail)
+                    Woodward                      (the keeper of a forest)
+{Rank:@Guild}       Woodworker
+                    Writer

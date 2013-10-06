@@ -1,0 +1,69 @@
+? Sources: ZTX Treasure software
+? http://www.legolas.org/items/furnish.html
+
+@ Furnishing  1 20
+@ Cost       21 12
+@ Weight     33 10
+@ Quality    43 20
+
+Armchair, Padded    3 gp        40        {Quality:}
+Armchair, Wooden    1 gp        30        {Quality:}
+Bed, Double         8 gp        150       {Quality:}
+Bed,Single          5 gp        90        {Quality:}
+Bench, Padded       4 gp        20        {Quality:}
+Bench, Wooden       2 gp        15        {Quality:}
+Blanket                                   {Quality:}
+Bookcase, Metal     15 gp       250       {Quality:}
+Bookcase, Wood      5 gp        100       {Quality:}
+Bowl, Pewter        2 sp        1.5       {Quality:}
+Bowl, Pottery       5 cp        1.5       {Quality:}
+Bowl, Silver        9 gp        1.5       {Quality:}
+Buffet              7 gp        5         {Quality:}
+Cabinet             3-8 gp      80        {Quality:}
+Carpet              1-10 cp/sy  2/sy      {Quality:}
+Chair, Padded       2 gp        25        {Quality:}
+Chair, Wooden       1 gp        18        {Quality:}
+Chandelier          20 gp+      30        {Quality:}
+Chest of drawers    5-7 gp      70        {Quality:}
+Cup, Pewter         2 sp        0.5       {Quality:}
+Cup, Pottery        4 cp        0.4       {Quality:}
+Cup, Silver         2 ep        0.5       {Quality:}
+Curtains/drapes     1-4 sp/sy   1/sy      {Quality:}
+Cushion             1 sp  1               {Quality:}
+Cutlery, Copper     1 sp/pc     0.5/pc    {Quality:}
+Cutlery, Pewter     2 sp/pc     0.5/pc    {Quality:}
+Cutlery, Silver     5 gp/pc     0.5/pc    {Quality:}
+Decanter, Crystal   10 gp       6         {Quality:}
+Decanter, Pottery   3 cp        5.5       {Quality:}
+Decanter, Silver    5 gp        6         {Quality:}
+Dais                                      {Quality:}
+Desk                15 gp       35        {Quality:}
+Divan                                     {Quality:}
+Goblet, Crystal     4 gp        1         {Quality:}
+Goblet, Pewter      4 sp        1         {Quality:}
+Goblet, Silver      2 ep        1         {Quality:}
+Hamper              7-15 cp     4         {Quality:}
+Hassock                                   {Quality:}
+Kettle, Iron        2-12 gp     1-6       {Quality:}
+Loom                3-7 gp      200       {Quality:}
+Lounge                                    {Quality:}
+Mat                 15 cp       5         {Quality:}
+Mattress, Feather   2-4 gp      20-30     {Quality:}
+Mattress, Straw     1-3 gp      15-25     {Quality:}
+Mirror              10-15 gp/sf 2/sf      {Quality:}
+Musnud                                    {Quality:}
+Pillion                                   {Quality:}
+Pillow, Feather    1-2 sp       1.5       {Quality:}
+Plate, Pewter      8 sp         0.7       {Quality:}
+Plate, Pottery     8 cp         0.6       {Quality:}
+Plate, Silver      2 gp         0.7       {Quality:}
+Rug, Small         1 sp+        5         {Quality:}
+Rug, Large         3 sp+        50        {Quality:}
+Sconce, Wall       5 cp         5         {Quality:}
+Sofa/couch         30 gp        75        {Quality:}
+Stool              3 gp         8         {Quality:}
+Table              2 sp/sf      5/sf      {Quality:}
+Throne                                    {Quality:}
+Tub                2-5 gp       10        {Quality:}    
+Wardrobe, Plain    15 gp        50        {Quality:}
+Wardrobe, Fancy    25 gp+       85        {Quality:}

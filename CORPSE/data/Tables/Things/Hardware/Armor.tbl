@@ -1,0 +1,191 @@
+? http://www.legolas.org/items/armor.html
+
+@ Armor      1 18
+@ Defense   20  4
+@ Class     29  3
+@ Agi_Mod   37  2
+@ Condition 44 13
+@ Quality   60 15
+
+None                -1      10       0
+Natural              *      **       0
+Clothing             0       9       0     {Quality:}      {Quality:}
+Padding              1       8      -1     {Quality:}      {Quality:}
+Leather              2       7      -2     {Quality:}      {Quality:Magic}
+Cuir Boulli          3       6      -3     {Quality:}      {Quality:Magic}
+Studded Leather      3       6      -3     {Quality:}      {Quality:Magic}
+Ring Mail            3       6      -3     {Quality:}      {Quality:Magic}
+Light Chain Mail     3       6      -3     {Quality:}      {Quality:Magic}
+Brigandine           3       6      -3     {Quality:}      {Quality:Magic}
+Splint Mail          3       6      -3     {Quality:}      {Quality:Magic}
+Scale Mail           4       5      -4     {Quality:}      {Quality:Magic}
+Elven Chain Mail     4       5      -3     {Quality:}      {Quality:Magic}
+Chain Mail           4       5      -4     {Quality:}      {Quality:Magic}
+Banded Mail          4       5      -4     {Quality:}      {Quality:Magic}
+Field Plate Mail     5       4      -5     {Quality:}      {Quality:Magic}
+Heavy Chain Mail     5       4      -5     {Quality:}      {Quality:Magic}
+Dwarf Chain Mail     5       4      -4     {Quality:}      {Quality:Magic}
+Plate & Chain Mail   5       4      -5     {Quality:}      {Quality:Magic}
+Full Plate Mail      6       3      -6     {Quality:}      {Quality:Magic}
+Buckler            (+1)     (8)     -1     {Quality:}      {Quality:Magic}
+Shield             (+2)     (7)     -2     {Quality:}      {Quality:Magic}
+Large Shield       (+3)     (6)     -3     {Quality:}      {Quality:Magic}
+
+]    *     The protection level of natural armor varies, depending      ]
+]          on the creature.  A general guideline follows:               ]
+]               Hide, Furry    : (e.g., Giant Bear)    2                ]
+]                     Leathery : (e.g., Dinosaur)      3                ]
+]               Chiten         : (e.g., Giant Beetle) 3-5               ]
+]               Carapace       : (e.g., Giant Turtle) 5-7               ]
+]               Shell          : (e.g., Giant Crab)   4-6               ]
+]               Armor          : (e.g., Armadillo)     5                ]
+]                                                                       ]
+]   **  Note that Natural Armor does not affect the creature's agility. ]
+]       It is possible to combine Natural Armor with another armor.     ]
+
+AD&D
+Armor                     Cost    Wt    AC   Dp     S     P     B
+                     
+Armor Padding               3 gp    5    9    3     0    -1    -1
+Augmented Mail            175 gp   44    4   28    +2    +1    -2
+Banded Mail               200 gp   35    4   30    +2     0    +1
+Bar Mail                  200 gp   40    4   29    +2    +1    -2
+Brigandine, Metal         120 gp   35    6   20    +1    +1     0
+Brigandine, Wood           80 gp   26    7   10     0    +1     0
+Brigandine, Horn           80 gp   26    7   10     0    +1     0
+Bronze Plate              400 gp   45    4   30    +2     0    -1
+Chain Mail                 75 gp   40    5   25    +2     0    -2
+Cuir-bouilli               20 gp   15    7   14     0    -1     0
+Double Mail               160 gp   45    4   29    +2     0    -2
+Gauntlets, leather          2 gp    2    -    5     -     -     -
+Gauntlets, chain            5 gp  2.5    -   10     -     -     -
+Gauntlets, plate            7 gp  3.5    -   13     -     -     -
+Gauntlets, plate (full)    15 gp  2.5    -   15     -     -     -
+Helm, Cap                   3 gp    1    1*   5     -     -     -
+Helm, Coif                  8 gp    2    2*  15     -     -     -
+Helmet, Basinet            10 gp    5    2*  25     -     -     -
+Helmet, Great              30 gp   10    3*  35     -     -     -
+Helmet, Open Faced         10 gp    4    2*  20     -     -     -
+Hide                       15 gp   30    6   20     0    -2     0
+Leather                     5 gp   10    8   10     0    -2     0
+Lamellar, Metal           210 gp   36    4   26     0    +1     0
+Lamellar, Wood            120 gp   20    5   10     0    +1     0
+Lamellar, Horn            120 gp   20    5   10     0    +1     0
+Padded                      4 gp   10    8   10     0    -2     0
+Plate, Mail               600 gp   50    3   35    +3     0     0
+Plate, Field             2000 gp   60    2   40    +3    +1     0
+Plate, Full              4-10k gp  70    1   45    +4    +3     0
+Ring Mail                 100 gp   30    7   15    +1    +1     0
+Scale Mail, Metal         120 gp   40    6   20     0    +1     0
+Scale Mail, Horn           80 gp   20    7   10     0    +1     0
+Scale Mail, Horn           80 gp   20    7   10     0    +1     0
+Shield, Body               15 gp   15    1#  35     -     -     -
+Shield, Buckler             5 gp    3    1%  10     -     -     -
+Shield, Large              13 gp   13    1%  30     -     -     -
+Shield, Medium             10 gp   10    1%  25     -     -     -
+Shield, Small               7 gp    5    1%  10     -     -     -
+Shield, Small wooden        1 gp    3    1%   8     -     -     -
+Splint Mail                80 gp   40    4   30     0    +1    +2
+Studded Leather            20 gp   25    7   15    +2    +1     0
+
+Dp's = Damage points, Each time the armor is hit, it takes 1 dp.
+at 0 dp's, the armor is useless. Armor can be repaired at any smithy.
+The * means AC for head and neck only, and the +1
+% is just the shield bonus to base armor class
+# is just the shield bonus to base armor class, this is 2 against missle weapons
+
+   GURPS
+Armor    PD    DR
+      
+Armor Padding  0  1
+Augmented Mail    3  4
+Banded Mail    4  4
+Bar Mail    3  4
+Brigandine, Metal    2  3
+Brigandine, Wood or Horn   2  2
+Bronze Plate   4  4
+Chain Mail  3  4
+Cuir-bouilli   2  2
+Double Mail    3  4
+Gauntlets,leather    2  2
+Gauntlets,chain mail    3  3
+Gauntlets,plate mail    3  4
+Gauntlets,plate,full    4  4
+Helm, Cap   1  1
+Helm, Coif  3  3
+Helmet, Basinet   3  4
+Helmet, Great  4  7
+Helmet, Open Faced   4  5
+Hide  2  2
+Leather  1  1
+Lamellar, Metal   4  4
+Lamellar, Wood or Horn  3  4
+Padded   1  1
+Plate, Mail    4  5
+Plate, Field   4  6
+Plate, Full    4  7
+Ring Mail   2  3
+Scale Mail, Metal    3  4
+Scale Mail, Wood or Horn   2  3
+Shield, Body   4  0
+Shield, Buckler   1  0
+Shield, Large  4  0
+Shield, Medium    3  0
+Shield, Small  2  0
+Shield, Small wooden    2  0
+Splint Mail    4  4
+Studded Leather   2  2
+
+   Palladium
+Armor    Cut   Chop  Thrust   Impact   Dex
+               
+Armor Padding  2  0  0  0  0
+Augmented Mail    9  7  5  1  2
+Banded Mail    9  9  9  1  2
+Bar Mail    8  6  3  1  2
+Brigandine, Metal    9  9  8  2  3
+Brigandine, Wood or Horn   7  7  6  2  3
+Bronze Plate   7  7  7  1  2
+Chain Mail  7  6  2  1  1
+Cuir-bouilli   5  3  5  1  1
+Double Mail    9  7  4  1  2
+Hide  3  2  3  1  1
+Leather  2  1  1  1  1
+Lamellar, Metal   9  9  8  1  3
+Lamellar, Wood or Horn  7  7  6  1  3
+Padded   4  1  2  3  1
+Plate, Mail    10    10    10    1  2
+Plate, Field   11    11    11    1  2
+Plate, Full    12    12    12    1  2
+Ring Mail   5  3  4  1  1
+Scale Mail, Metal    9  8  8  1  2
+Scale Mail, Wood or Horn   7  6  5  1  2
+Splint Mail    9  9  9  1  2
+Studded Leather   4  2  3  1  2
+
+   Ars Magica
+Armor    Load  Expense  Cuirass  Hauberk  Full
+               
+Armor Padding  .5/1.5/2    Inex  1  2  3
+Augmented Mail    4/6/7    Expn  9  13    15
+Banded Mail    4/6/7    Expn  9  13    15
+Bar Mail    4/6/7    Expn  9  13    15
+Brigandine, Metal    1/2.5/2.5   Inex  4  6  7
+Brigandine, Wood or Horn   1/2.5/2.5   Inex  2  5  6
+Bronze Plate   4/6/7    Expn  9  13    15
+Chain Mail  3.5/5/6  Expn  8  12    14
+Cuir-bouilli   1/2.5/2.5   Inex  2  5  6
+Double Mail    4/6/7    Expn  9  13    15
+Hide  1/2.5/2.5   Inex  2  5  6
+Leather  .5/1.5/2    Inex  1  3  4
+Lamellar, Metal   3.5/5/6  Expn  9  13    15
+Lamellar, Wood or Horn  3/4.5/5.5   Expn  8  12    14
+Padded   .5/1.5/2    Inex  1  3  4
+Plate, Mail    6/9/11   Vexp  10    15    17
+Plate, Field   7/10/12  Vexp  11    16    18
+Plate, Full    8/11/13  Vexp  12    17    19
+Ring Mail   1.5/3/4  Stan  4  7  8
+Scale Mail, Metal    2/4.5/5.5   Stan  5  9  11
+Scale Mail, Wood or Horn   1.5/3/4  Stan  4  7  8
+Splint Mail    3.5/5/6  Expn  9  13    15
+Studded Leather   1.5/3/4  Stan  4  7  8

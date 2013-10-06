@@ -1,0 +1,33 @@
+: Common
+black
+blue
+brown
+green
+grey
+purple
+red
+white
+yellow
+
+: Basic
++ {Black}
++ {Blue}
++ {Brown}
++ {Green}
++ {Red}
++ {Violet}
++ {White}
++ {Yellow}
+
+: Fancy
+{Metallic}
+{Gem{!OneWord}}-colored
+{Sheen} {Color:Basic}
+
+: Special
+{Color:Simple} with {specks|swirls|flakes|hints|patches|streaks|stripes} of {Color:Simple}
+{Color:Simple} with {Color:Simple} {highlights|spots}
+{mottled|a blend of|shifting|dappled} {Color:Simple} and {Color:Simple}
+
+: Simple = Basic + Fancy
+ 
