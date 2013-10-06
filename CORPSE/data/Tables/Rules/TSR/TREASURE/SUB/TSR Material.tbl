@@ -1,0 +1,11 @@
+? Sources: TSR DMG2, page 151 + others
+* For use with Rods, etc.
+* The weights were set by JPK
+
+* Wands are not usually metal, so this macro can be used.
+: Wand {5-15}
+
+4 {Metal:}
+9 {Wood}
+1 Ivory
+1 Bone

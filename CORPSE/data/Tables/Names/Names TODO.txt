@@ -1,0 +1,846 @@
+1  1  1-3   Abi-simti.
+1  1  4-6   Ahassunu.
+1  2  1-3   Ahatiwaqrat.
+1  2  4-6   Ahunatum.
+1  3  1-3   Alittum.
+1  3  4-6   Ammat-Baal.
+1  4  1-3   Amurritum.
+1  4  4-6   Arah-Sammat.
+1  5  1-3   Arinna.
+1  5  4-6   Arwi-a.
+1  6  1-3   Assur-sharrat.
+1  6  4-6   Athaliah.
+2  1  1-3   Baranamtara.
+2  1  4-6   Belessunu.
+2  2  1-3   Bikku-lum.
+2  2  4-6   Bittatum.
+2  3  1-3   Daqqartum.
+2  3  4-6   Dunnasha.
+2  4  1-3   Elamassi.
+2  4  4-6   Enanedu.
+2  5  1-3   Enannatum.
+2  5  4-6   Eshargamelat.
+2  6  1-3   Habadjilat.
+2  6  4-6   Habannatum.
+3  1  1-3   Humusi.
+3  1  4-6   Hunabatum.
+3  2  1-3   Iltani.
+3  2  4-6   Ilusha-hegal.
+3  3  1-3   Ishtar-belessa.
+3  3  4-6   Ishtar-gamelat.
+3  4  1-3   Ishtar-ibbi.
+3  4  4-6   Ishtar-rabi-at.
+3  5  1-3   Kammani.
+3  5  4-6   Ku-aya.
+3  6  1-3   Liwwiresagil.
+3  6  4-6   Manatum.
+4  1  1-3   Mekubi.
+4  1  4-6   Muallit-sherua.
+4  2  1-3   Munawirtum.
+4  2  4-6   Nakurtum.
+4  3  1-3   Naqia.
+4  3  4-6   Ninab.
+4  4  1-3   Nin-kagina.
+4  4  4-6   Ninduzu.
+4  5  1-3   Nintur.
+4  5  4-6   Nis-Anat.
+4  6  1-3   Nuptaya.
+4  6  4-6   Nuratum.
+5  1  1-3   Rahab.
+5  1  4-6   Sammuramat.
+5  2  1-3   Samhat.
+5  2  4-6   Samshi.
+5  3  1-3   Sarai.
+5  3  4-6   Sapurtum.
+5  4  1-3   Shaddita.
+5  4  4-6   Sharrat-sippar.
+5  5  1-3   Siduri.
+5  5  4-6   Simanat.
+5  6  1-3   Sin-nada.
+5  6  4-6   Summirat-ishtar.
+6  1  1-3   Tabni-ishtar.
+6  1  4-6   Takurtum.
+6  2  1-3   Taram-uram.
+6  2  4-6   Tamar.
+6  3  1-3   Tasmetum-sharrat.
+6  3  4-6   Telpunnaya.
+6  4  1-3   Tisha-Lim.
+6  4  4-6   Tukkin-khatta.
+6  5  1-3   Ummi-waqrat.
+6  5  4-6   Yadidatum.
+6  6  1-3   Wurusemu.
+6  6  4-6   Zakutu.
+1  1  1  Abdi-arah.
+1  1  2  Abdu-Heba.
+1  1  3  Abiditan.
+1  1  4  Abi-eshu.
+1  1  5  Abiyamuta.
+1  1  6  Abuwaqar.
+1  2  1  Adda-kalla.
+1  2  1  Addi-liblut.
+1  2  2  Agga.
+1  2  3  Aham-nishi.
+1  2  4  Ahatiwaqrat.
+1  2  5  Ahikibani.
+1  2  5  Ahiman.
+1  2  5  Ahi-shagish.
+1  2  6  Ah-kalla.
+1  3  1  Ahum.
+1  3  1  Ahum-waqar.
+1  3  2  Ahuratum.
+1  3  2  Ahu-shina.
+1  3  3  Akiya.
+1  3  4  Ali-ellati.
+1  3  5  Allala.
+1  3  6  Ammi-ditana.
+1  4  1  Amnanu.
+1  4  2  Apil-ashnan.
+1  4  2  Apil-ilishu.
+1  4  2  Apilsha.
+1  4  3  Apiyatum.
+1  4  4  Appanili.
+1  4  5  Arammadara.
+1  4  6  Arnuwanda.
+1  5  1  Ashi-qurud.
+1  5  2  Ashmadu.
+1  5  3  Asharidu.
+1  5  4  Assurna'da.
+1  5  5  Assur-dan.
+1  5  5  Assur-susuli.
+1  5  5  Assur-taklaku.
+1  5  6  Awil-aya.
+1  5  6  Awiliya.
+1  5  6  Awil-ninurta.
+1  5  6  Awil-shamash.
+1  6  1  Aziru.
+1  6  2  Azi.
+1  6  3  Azuzum.
+1  6  4  Babati.
+1  6  5  Baya.
+1  6  6  Bakshishum.
+2  1  1  Baasha.
+2  1  2  Balak.
+2  1  3  Balaam.
+2  1  4  Balasi.
+2  1  5  Baladan.
+2  1  6  Bar-Gush.
+2  2  1  Baqqanum.
+2  2  2  roll again: 1-2 Belanum 3-4 Belakum 5-6 Bel-Akum.
+2  2  3  Belshimani.
+2  2  4  Beli-Ashared.
+2  2  5  roll again: 1-2 Bel-Ibni 3-4 Bel-Shamin 5-6 Bel-Shazzar.
+2  2  6  Belshunu.
+2  3  1  Ben-Hadad.
+2  3  2  Benteshina.
+2  3  3  Bilalama.
+2  3  4  Burnaburiash.
+2  3  5  roll again: 1-3 Buhazum 4-6 Burrukam.
+2  3  6  roll again: 1-3 Dazuzum 4-6 Duququm.
+2  4  1  Ditanu.
+2  4  2  Durrimush.
+2  4  3  Ea-nasir.
+2  4  4  Ebarti.
+2  4  5  Ekur-zakir.
+2  4  6  roll again: 1-3 El-Ah 4-6 El-Isha.
+2  5  1  Ellu-mushu.
+2  5  2  Eluti.
+2  5  3  Enlilbani.
+2  5  4  roll again: 1-2 Enlil-ennam 3-4 Enlil-kurgalani 5-6 Enlil-zi-shagal.
+2  5  5  Ennam-belum.
+2  5  6  Enentarzi.
+2  6  1  Eshmunazar.
+2  6  2  roll again: 1-3 Etel-pisha 4-6 Etel-pi-sharrim.
+2  6  3  roll again: 1-3 Etirum 4-6 Etum.
+2  6  4  Gazualum.
+2  6  5  Geshur.
+2  6  6  roll again: 1-3 Gimil-lum 4-6 Gimil-ninurta.
+3  1  1  roll again: 1-3 Hadad-Shuma 4-6 Hadad-ezer.
+3  1  2  Hadaya.
+3  1  3  Hallushu.
+3  1  4  Heana.
+3  1  5  Hunhalbida.
+3  1  6  Huttupum.
+3  2  1  roll again: 1-2 Ibbi-adad 3-4 Ibbi-shahan 5-6 Ibi.
+3  2  2  roll again: 1-3 Iblinum 4-6 Ibnatum.
+3  2  3  Ibni-amurru.
+3  2  4  Idrimi.
+3  2  5  roll again: 1-2 Iddin-Enlil 3-4 Iddin-Ilum 5-6 Iddin-Ninshubur.
+3  2  6  Igmilum.
+3  3  1  Ila-kabkabu.
+3  3  2  roll again: 1-3 Ilanum 4-6 Ilialum.
+3  3  3  roll again: 1-3 Ili-idinnam 4-6 Ili-iqisham.
+3  3  4  Illuratum.
+3  3  5  roll again: 1-3 Ilshu-abushu 4-6 Ilshubani.
+3  3  6  Imdiilum.
+3  4  1  Imgua.
+3  4  2  Inim-shara.
+3  4  3  Iphur-kishi.
+3  4  4  Ipqatum.
+3  4  5  roll again: 1-2 Ipqu-adad 3-4 Ipqu-annunitum 5-6 Ipqu-aya.
+3  4  6  Iptiyamuta.
+3  5  1  roll again: 1-3 Irra 4-6 Irrara.
+3  5  2  roll again: 1 Ishme-adad 2-3 Ishme-dagan 4-5 Ishme-Ea 6 Ishme-karab.
+3  5  3  Kadashman.
+3  5  4  Kandalanu.
+3  5  5  Karaindash.
+3  5  6  Kassis.
+3  6  1  Kikuid.
+3  6  2  Kubburum.
+3  6  3  Kudiya.
+3  6  4  roll again: 1-2 Ku-enlila 3-4 Ku-inanna 5-6 Ku-ningal.
+3  6  5  Kurhitti-mushtesher.
+3  6  6  Kurumtum.
+4  1  1  Kuwari.
+4  1  2  Lamusa.
+4  1  3  La'um.
+4  1  4  roll again: 1 Lipit-ea 2-3 Lipit-enlil 4-5 Lipit-ishtar 6 Lipit-tishpak.
+4  1  5  Lubarna.
+4  1  6  roll again: 1-2 Lu-amarsuenaka 3 Lu-bau 4 Lu-dingira 5-6 Lu-enlila.
+4  2  1  roll again: 1-3 Luga 4-6 Lugatum.
+4  2  2  roll again: 1-2 Lugal-azida 3-4 Lugalkam 5-6 Lugal-urudu.
+4  2  3  roll again: 1 Lu-inana 2 Lu-nin-ilduma 3-4 Lu-ninurta 5-6 Lu-shalim.
+4  2  4  Macath.
+4  2  5  Malgum-liblut.
+4  2  6  roll again: 1-2 Marduk-asir 3-4 Marduk-shakin 5-6 Marduk-balassu.
+4  3  1  Mari-ersetim.
+4  3  2  Maru-yatum.
+4  3  3  Mattaki.
+4  3  4  Mazdata.
+4  3  5  Melishipak.
+4  3  6  Merodach-baladan.
+4  4  1  Mezizi.
+4  4  2  Minninum.
+4  4  3  Mukannishum.
+4  4  4  Munawirtum.
+4  4  5  Muurgallu.
+4  4  6  Mut-kabid.
+4  5  1  Mutu-bisir.
+4  5  2  Nabopalassar.
+4  5  3  roll again: 1-3 Nabu-Nasir 4-6 Nabu-bani.
+4  5  4  Namhu.
+4  5  5  Nammahani.
+4  5  6  Namzu.
+4  6  1  Narubtum.
+4  6  2  Nasha.
+4  6  3  roll again: 1-3 Nergal-etir 4-6 Nergal-erish.
+4  6  4  Nidnatum.
+4  6  5  Nin-unumun-ki-ag.
+4  6  6  Ninurta-ra'im-zerim.
+5  1  1  roll again: 1-2 Nur-ishtar 3-4 Nur-kubi 5-6 Nur-shamash.
+5  1  2  Pirhum.
+5  1  3  Pushuken.
+5  1  4  Puzu.
+5  1  5  roll again: 1-2 Puzur-assur 3-4 Puzur-erra 5-6 Puzur-ishtar.
+5  1  6  Qisht-ea.
+5  2  1  Rabi-sillashu.
+5  2  2  Rakhianu.
+5  2  3  Rashil.
+5  2  4  Rimush.
+5  2  5  Sagil-zimu.
+5  2  6  Salu.
+5  3  1  Sangara.
+5  3  2  Sargon.
+5  3  3  Seskalla.
+5  3  4  Shalanum.
+5  3  5  Shalim-tehhushu.
+5  3  6  Shalmaneser.
+5  4  1  Shallurum.
+5  4  2  roll again: 1 Shamash-andulli 2 Shamash-gamil 3-4 Shamash-hazir 5-6 Shamash-nasir.
+5  4  3  Shatamurrim.
+5  4  4  Sharkali-Shari.
+5  4  5  Sherumili.
+5  4  6  Shesh-kalla.
+5  5  1  Shesai.
+5  5  2  Shubnalu.
+5  5  3  Shummanla-shamash.
+5  5  4  Shulgi.
+5  5  5  Shuppilu-Liumesh.
+5  5  6  Shuqallilum.
+5  6  1  Sidu.
+5  6  2  Sig-ersetim.
+5  6  3  roll again: 1-3 Sinnashi 4-6 Sinnasir.
+5  6  4  Sumalika.
+5  6  5  roll again: 1-3 Sumuil 4-6 Sumu-la-el.
+5  6  6  roll again: 1-3 Talmai 4-6 Talmi-Teshub.
+6  1  1  Taribatum.
+6  1  2  Tarkhulara.
+6  1  3  Tirigan.
+6  1  4  Tubityamuta.
+6  1  5  roll again: 1-3 Turam 4-6 Turam-dagan.
+6  1  6  Tuttar-shar.
+6  2  1  Ubarum.
+6  2  2  Udama.
+6  2  3  Udish.
+6  2  4  Ugazum.
+6  2  5  roll again: 1 Ur-dumizida 2 Ur-gula 3 Ur-lama 4 Urshubula 5 Ur-shulpae 6 Ur-Zaba.
+6  2  6  Uselli.
+6  3  1  Uta-misharam.
+6  3  2  roll again: 1 Warad-enlil 2 Warad-iliya 3-4 Warad-ishtar 4 Warad-kubi 5 Warad-murrim.
+6  3  3  Warassuni.
+6  3  4  roll again: 1-3 Wardum 4-6 Watrum.
+6  3  5  Wusum-beli.
+6  3  6  Yahurum.
+6  4  1  Yamquzzuhalamma.
+6  4  2  Yashub-yahad.
+6  4  3  Yayatum.
+6  4  4  Zamaranum.
+6  4  5  Zaninum.
+6  4  6  roll again: 1-3 Eth-Baal 4-6 Zeru-Baal.
+6  5  1  Ziyatum.
+6  5  2  Zummabu.
+6  5  3  roll again: 1 Yasmah-addu 2 Askur-addu 3 Ishhi-addu 4 Samsi-addu 5 Shamshi-addu 6 Yassur-addu.
+6  5  4  roll again: 1-2 Kudur-Enlil 3-4 Nabi-Enlil 5-6 Shubat-Enlil.
+6  5  5  roll again: 1-2 Hanun-dagan 3-4 Puzrish-dagan 5 Sillush-dagan 6 Zimri-dagan.
+6  5  6  roll again: 1-2 Rish-shamash 3-4 Shummanla-shamash 5-6 Warad-shamash.
+6  6  1  roll again: 1-2 Awil-ishtar 3-4 Bunu-ishtar 5-6 Utul-ishtar.
+6  6  2  roll again: 1-2 Ibal-pi-el 3-4 Milki-la-el 5 Samu-El 6 Werket-El.
+6  6  3  roll again: 1-2 Ad-mat-ili 3-4 Nawirum-ili 5-6 Ayar-ilum.
+6  6  4  roll again: 1 Damqi-ilishu 2 Mannumki-iliya 3 Mar-iltum 4-5 Zababa-il 6 Qishti-ilabrat.
+6  6  5  roll again: 1-2 Yaggit-lim 3-4 Yahdun-lim 5-6 Yarim-lim.
+6  6  6  roll again: 1-3 Ikuppi-adad 4-6 Remanni-Adad.
+ 
+ 
+Names: Barbarians, Female
+source or inspiration: James Hutchings
+ 
+This table and the one below have a mixture of British, Irish, German and Scandinavian names.
+ 
+Roll 3 dice.
+1st dice 2nd dice 3rd dice result
+ 
+ 
+Names: Elves, Female
+source or inspiration: James Hutchings, original information from J.R.R. Tolkien.
+Thanks to Wikipedia for the lists that these tables are based on.
+ 
+This table and the one below freely mix the two main elven languages in Tolkien's books (Quenya and Sindarin), as well as the various different kinds of names that elves could have (such as seperate names given by their mother and father)
+ 
+Roll 3 dice.
+
+
+1st dice 2nd dice 3rd dice result
+6  3  4-6   Roll again but add 'Curu' to the start of the name. For example 'Daeron' becomes 'Curudaeron'. Means 'Skilled'.
+6  4  1-3   Roll again but add 'Pitya' to the start of the name. Means 'Little'.
+6  4  4-6   Roll again but add 'Mori' to the start of the name. Means 'Dark'.
+6  5  1-3   Roll again but add 'Telun' to the start of the name. Means 'Last' (implying 'youngest descendent of...').
+6  5  4-6   Roll again but add 'Turka' to the start of the name. Means 'Strong-willed'.
+6  6  1-3   Roll again but get rid of the last syllable and replace it with 'rod'. For example 'Gelmir' becomes 'Gelrod'. Means 'Mighty descendent of...'.
+6  6  4-6   Roll again but if the name ends in a consonant, add 'ion' at the end (for example 'Gelmir' becomes 'Gelmirion'). Or if the name ends in a vowel, get rid of that letter and add 'ion' at the end (for example 'Ingwe' becomes 'Ingwion'). Means 'Son of..'.
+ 
+ 
+Names: Hobbits, Female
+source or inspiration: James Hutchings, original information from J.R.R. Tolkien.
+Thanks to Wikipedia for the lists that these tables are based on.
+ 
+Roll 3 dice.
+1st dice 2nd dice 3rd dice result
+6  6  5-6   'Young' or 'Old' (depending on age - roll again, ignoring this result or any nickname, for this hobbit's real name. For example, if you roll Otho Bracegirdle, they are generally known as Young Otho Bracegirdle, presumably to distinguish them from 'Old Otho Bracegirdle', or vice versa).
+ 
+ 
+Names: Hobbits, Last Names
+source or inspiration: James Hutchings, original information from J.R.R. Tolkien.
+Thanks to Wikipedia for the lists that these tables are based on.
+ 
+Roll 3 dice.
+1st dice 2nd dice 3rd dice result
+ 
+ 
+Names: Martian, Structure
+source or inspiration: Flynn
+ 
+These names are based on those in the 'Mars' series by Edgar Rice Burroughs.
+
+They can be used for both male and female characters.
+
+A result of (A) means roll on 'Names: Martian A' below, and similar for (B).
+
+If the result has more than one (A) or more than one (B), roll separately for each.
+ 
+Roll 1 dice.
+dice roll   First Name  Second Name
+1 or 2   (A)   (A)(B)
+3  (A)(B)   (A)(B)
+4 or 5   (A)(B)   none
+6  (A)   none
+ 
+ 
+Names: Martian A
+source or inspiration: Flynn
+ 
+Roll 2 dice.
+1st dice 2nd dice result
+1  1  Am
+1  2  Banth
+1  3  Carth
+1  4  Dur
+1  5  Flor
+1  6  Gant
+2  1  Haj
+2  2  Ham
+2  3  Il
+2  4  Jad
+2  5  Kand
+2  6  Kant
+3  1  Lan
+3  2  Mat
+3  3  Nast
+3  4  Or
+3  5  Pand
+3  6  Parth
+4  1  Roj
+4  2  Sark
+4  3  Sol
+4  4  Sor
+4  5  Tal
+4  6  Tar
+5  1  Tark
+5  2  Tav
+5  3  Thor
+5  4  Thur
+5  5  Thuv
+5  6  Ul
+6  1  Um
+6  2  Val
+6  3  Vor
+6  4  Xax
+6  5  Yerst
+6  6  Zand
+ 
+ 
+Names: Martian B
+source or inspiration: Flynn
+ 
+Roll 2 dice.
+1st dice 2nd dice result
+1  1  a
+1  2  ab
+1  3  ad
+1  4  ah
+1  5  ai
+1  6  aj
+2  1  ak
+2  2  al
+2  3  am
+2  4  an
+2  5  ang
+2  6  ar
+3  1  ark
+3  2  as
+3  3  at
+3  4  ed
+3  5  ek
+3  6  el
+4  1  i
+4  2  ia
+4  3  ion
+4  4  is
+4  5  o
+4  6  ok
+5  1  olian
+5  2  on
+5  3  or
+5  4  oris
+5  5  os
+5  6  u
+6  1  ul
+6  2  um
+6  3  un
+6  4  ur
+6  5  uren
+6  6  us
+ 
+ 
+Names: Native American, Female (translated)
+source or inspiration: James Hutchings
+ 
+Roll 2 dice.
+1st dice 2nd dice result
+1  1  Blood-Red.
+1  2  Bluebird.
+1  3  Bluebird Eye.
+1  4  Burning Fire.
+1  5  Corn Mother.
+1  6  Coyote Chasing Deer.
+2  1  Crow Mother Spirit.
+2  2  Deer Jumping Downhill.
+2  3  Dressed in Furs.
+2  4  Elk.
+2  5  Grandmother.
+2  6  Laughing Maiden.
+3  1  Leaping Water.
+3  2  New Moon.
+3  3  Night.
+3  4  Of the Wind.
+3  5  Owl.
+3  6  Protector.
+4  1  Rattlesnake Handler.
+4  2  Red Cloud At Sunset.
+4  3  Returning Moon.
+4  4  She Is Not Sterile.
+4  5  She Is Playful.
+4  6  She Who Bathes With Her Knees.
+5  1  Sight of Day.
+5  2  Sight of the Sun.
+5  3  Sings.
+5  4  Snake Flower.
+5  5  Snake Maiden.
+5  6  Spider-Woman At Middle Age.
+6  1  Stays At Home.
+6  2  Sweet Gum Tree.
+6  3  Turtle.
+6  4  Useful To All.
+6  5  Wears Red.
+6  6  White Buffalo.
+ 
+ 
+Names: Native American, Male (translated)
+source or inspiration: James Hutchings
+ 
+Roll 2 dice.
+1st dice 2nd dice result
+1  1  Ashamed.
+1  2  Bear Making Dust.
+1  3  Black Hoof.
+1  4  Canoe Man.
+1  5  Cheating.
+1  6  Cornstalk.
+2  1  Crier Chief.
+2  2  Dull Knife.
+2  3  Evil.
+2  4  Feathered Water Snake.
+2  5  Friend To Everyone.
+2  6  Has Three Fingers.
+3  1  He Fights.
+3  2  He Interrupts.
+3  3  He Keeps Watch.
+3  4  He Laughs.
+3  5  He Lies.
+3  6  He Lives Alone.
+4  1  He Sits At Home.
+4  2  He Who Whistles.
+4  3  Lean Bear.
+4  4  Little Robe.
+4  5  Little Wolf.
+4  6  Lives In the Forest.
+5  1  Locust.
+5  2  Mud Mound.
+5  3  Porcupine Bear.
+5  4  Screech Owl Spirit.
+5  5  Star Blanket.
+5  6  Talking Bird.
+6  1  Tall Bull.
+6  2  Wears A Red Shirt.
+6  3  Whirlwind.
+6  4  White Antelope.
+6  5  White Crow.
+6  6  Wild Condor.
+ 
+ 
+
+Names: Star Wars, First Names A
+source or inspiration: James Hutchings, original information from various creators.
+Thanks to Wikipedia for the lists that these tables are based on.
+ 
+First roll two dice. If the total is exactly 2 or 4, then the character has 3 elements in their first name. Roll on this table, then table B below, then table C, and combine in that order.
+If the total is anything else, then the character has two elements in their name. Roll only on this table, then on table C below.
+ 
+Roll 3 dice.
+1st dice 2nd dice 3rd dice result
+1  1  1-3   Aay
+1  1  4-6   Ad
+1  2  1-3   Al
+1  2  4-6   Am
+1  3  1-3   An
+1  3  4-6   An
+1  4  1-3   Ar
+1  4  4-6   Bai
+1  5  1-3   Bai
+1  5  4-6   Ba
+1  6  1-3   Ba
+1  6  4-6   Be
+2  1  1-3   Be
+2  1  4-6   Bi
+2  2  1-3   Bo
+2  2  4-6   Bol
+2  3  1-3   Bor
+2  3  4-6   Boss
+2  4  1-3   Bre
+2  4  4-6   Bre
+2  5  1-3   Ca
+2  5  4-6   Car
+2  6  1-3   Clie
+2  6  4-6   Da
+3  1  1-3   Da
+3  1  4-6   De
+3  2  1-3   Den
+3  2  4-6   Do
+3  3  1-3   Fi
+3  3  4-6   Ga
+3  4  1-3   Gar
+3  4  4-6   Gree
+3  5  1-3   Ja
+3  5  4-6   Jab
+3  6  1-3   Jan
+3  6  4-6   Jo
+4  1  1-3   Jo
+4  1  4-6   Ken
+4  2  1-3   Klaa
+4  2  4-6   La
+4  3  1-3   Lan
+4  3  4-6   Log
+4  4  1-3   Lor
+4  4  4-6   Ma
+4  5  1-3   Ma
+4  5  4-6   Mo
+4  6  1-3   Mo
+4  6  4-6   Na
+5  1  1-3   Na
+5  1  4-6   Nu
+5  2  1-3   Ool
+5  2  4-6   Opp
+5  3  1-3   Ow
+5  3  4-6   Pad
+5  4  1-3   Pon
+5  4  4-6   Ray
+5  5  1-3   Roo
+5  5  4-6   Ru
+5  6  1-3   Ru
+5  6  4-6   Sa
+6  1  1-3   Sa
+6  1  4-6   Se
+6  2  1-3   Si
+6  2  4-6   Sta
+6  3  1-3   Tau
+6  3  4-6   Vi
+6  4  1-3   Wa
+6  4  4-6   Wu
+6  5  1-3   Ya
+6  5  4-6   Yo
+6  6  1-3   Za
+6  6  4-6   Ze
+ 
+ 
+Names: Star Wars, First Names B
+source or inspiration: James Hutchings, original information from various creators.
+Thanks to Wikipedia for the lists that these tables are based on.
+ 
+Roll 2 dice.
+1st dice 2nd dice result
+1-2   1-2   ba
+1-2   3-4   bul
+1-2   5-6   don
+3-4   1-2   ed
+3-4   3-4   hi
+3-4   5-6   la
+5-6   1-2   rin
+5-6   3-4   ta
+5-6   5-6   til
+ 
+ 
+Names: Star Wars, First Names C
+source or inspiration: James Hutchings, original information from various creators.
+Thanks to Wikipedia for the lists that these tables are based on.
+ 
+Roll 3 dice.
+1st dice 2nd dice 3rd dice result
+1  1  1-3   a.
+1  1  4-6   ba.
+1  2  1-3   ba.
+1  2  4-6   bé.
+1  3  1-3   ché.
+1  3  4-6   ck.
+1  4  1-3   d.
+1  4  4-6   da.
+1  5  1-3   da.
+1  5  4-6   da.
+1  6  1-3   dal.
+1  6  4-6   dan.
+2  1  1-3   dan.
+2  1  4-6   do.
+2  2  1-3   do.
+2  2  4-6   do.
+2  3  1-3   elle.
+2  3  4-6   en.
+2  4  1-3   gar.
+2  4  4-6   gg.
+2  5  1-3   go.
+2  5  4-6   gor.
+2  6  1-3   ha.
+2  6  4-6   her.
+3  1  1-3   i.
+3  1  4-6   k.
+3  2  1-3   k.
+3  2  4-6   kin.
+3  3  1-3   l.
+3  3  4-6   l.
+3  4  1-3   la.
+3  4  4-6   les.
+3  5  1-3   lim.
+3  5  4-6   list.
+3  6  1-3   lux.
+3  6  4-6   m.
+4  1  1-3   m.
+4  1  4-6   ma.
+4  2  1-3   maw.
+4  2  4-6   mé.
+4  3  1-3   mus.
+4  3  4-6   n.
+4  4  1-3   n.
+4  4  4-6   n.
+4  5  1-3   n.
+4  5  4-6   na.
+4  6  1-3   na.
+4  6  4-6   ne.
+5  1  1-3   né.
+5  1  4-6   nis.
+5  2  1-3   o.
+5  2  4-6   o.
+5  3  1-3   pa.
+5  3  4-6   ra.
+5  4  1-3   ray.
+5  4  4-6   rb.
+5  5  1-3   ris.
+5  5  4-6   ru.
+5  6  1-3   s.
+5  6  4-6   s.
+6  1  1-3   s.
+6  1  4-6   si.
+6  2  1-3   ss.
+6  2  4-6   ta.
+6  3  1-3   te.
+6  3  4-6   th.
+6  4  1-3   to or tto.
+6  4  4-6   tu.
+6  5  1-3   v.
+6  5  4-6   vel.
+6  6  1-3   vin.
+6  6  4-6   vo.
+ 
+ 
+Names: Star Wars, Last Names A
+source or inspiration: James Hutchings, original information from various creators.
+Thanks to Wikipedia for the lists that these tables are based on.
+ 
+First roll two dice. If the total is exactly 7 or 10, then the character has 3 elements in their last name. Roll on this table, then table B below, then table B again, and combine in that order.
+If the total is exactly 4, then the character has four elements in their name. Roll on table A, table B, table A, table B.
+If the total is anything else, then the character's last name has two elements. Roll on table A then table B.
+ 
+Roll 3 dice.
+1st dice 2nd dice 3rd dice result
+1  1-2   1-2   Ack
+1  1-2   3-4   Al
+1  1-2   5-6   Am
+1  3-4   1-2   Ba
+1  3-4   3-4   Bib
+1  3-4   5-6   Bib
+1  5-6   1-2   Bil
+1  5-6   3-4   Cal
+1  5-6   5-6   Cho
+2  1-2   1-2   Cry
+2  1-2   3-4   Da
+2  1-2   5-6   Da
+2  3-4   1-2   Daa
+2  3-4   3-4   Der
+2  3-4   5-6   Dis
+2  5-6   1-2   Doo
+2  5-6   3-4   Ev
+2  5-6   5-6   Ev
+3  1-2   1-2   Fel
+3  1-2   3-4   For
+3  1-2   5-6   Gal
+3  3-4   1-2   Gol
+3  3-4   3-4   Gun
+3  3-4   5-6   Gun
+3  5-6   1-2   Haa
+3  5-6   3-4   Jam
+3  5-6   5-6   Ju
+4  1-2   1-2   Kli
+4  1-2   3-4   Li
+4  1-2   5-6   Li
+4  3-4   1-2   Mot
+4  3-4   3-4   Moth
+4  3-4   5-6   Mun
+4  5-6   1-2   Na
+4  5-6   3-4   Nee
+4  5-6   5-6   Nee
+5  1-2   1-2   O
+5  1-2   3-4   Or
+5  1-2   5-6   Pal
+5  3-4   1-2   Pan
+5  3-4   3-4   Ral
+5  3-4   5-6   Ral
+5  5-6   1-2   Re
+5  5-6   3-4   Riee
+5  5-6   5-6   Se
+6  1-2   1-2   Se
+6  1-2   3-4   Si
+6  1-2   5-6   Si
+6  3-4   1-2   Tar
+6  3-4   3-4   Ter
+6  3-4   5-6   Va
+6  5-6   1-2   Win
+6  5-6   3-4   Zu
+6  5-6   5-6   Zu
+ 
+ 
+Names: Star Wars, Last Names B
+source or inspiration: James Hutchings, original information from various creators.
+Thanks to Wikipedia for the lists that these tables are based on.
+ 
+Roll 3 dice.
+1st dice 2nd dice 3rd dice result
+1  1-2   1-2   a.
+1  1-2   3-4   a.
+1  1-2   5-6   a.
+1  3-4   1-2   an.
+1  3-4   3-4   an.
+1  3-4   5-6   ba.
+1  5-6   1-2   ba.
+1  5-6   3-4   bar.
+1  5-6   5-6   ble.
+2  1-2   1-2   bo.
+2  1-2   3-4   ca.
+2  1-2   5-6   cu.
+2  3-4   1-2   da.
+2  3-4   3-4   da.
+2  3-4   5-6   di.
+2  5-6   1-2   don.
+2  5-6   3-4   du.
+2  5-6   5-6   ga.
+3  1-2   1-2   i.
+3  1-2   3-4   il.
+3  1-2   5-6   ka.
+3  3-4   1-2   ka.
+3  3-4   3-4   kan.
+3  3-4   5-6   ko.
+3  5-6   1-2   ku.
+3  5-6   3-4   kuss or ckuss.
+3  5-6   5-6   la.
+4  1-2   1-2   la.
+4  1-2   3-4   la.
+4  1-2   5-6   li.
+4  3-4   1-2   lie.
+4  3-4   3-4   lin.
+4  3-4   5-6   lor.
+4  5-6   1-2   ma.
+4  5-6   3-4   mas.
+4  5-6   5-6   na.
+5  1-2   1-2   na.
+5  1-2   3-4   nes.
+5  1-2   5-6   nyd.
+5  3-4   1-2   pa.
+5  3-4   3-4   pals.
+5  3-4   5-6   ra.
+5  5-6   1-2   ra.
+5  5-6   3-4   ray.
+5  5-6   5-6   rik.
+6  1-2   1-2   ris.
+6  1-2   3-4   sik.
+6  1-2   5-6   ter.
+6  3-4   1-2   th.
+6  3-4   3-4   ti.
+6  3-4   5-6   tu.
+6  5-6   1-2   um.
+6  5-6   3-4   vi.
+6  5-6   5-6   zan.
+ 

@@ -1,0 +1,73 @@
+? Sources: See SPELL.TBL
+
+@ Level    1  2
+@ Spell    5 24
+@ Type    31  7
+@ Element 43  5
+@ Source  53  6
+@ Class   61  4
+
+!Lv     Spell Name            Type(s)     Element   Source  Clss
+!-- ------------------------  ----------  -------   ------  ----
+ 5) ADVANCED ILLUSION         ILL+                  TSRPH2  ILLU
+ 7) ALTER REALITY             ALT&ILL               TSRPH2  ILLU
+ 1) AUDIBLE GLAMER            ILL                   TSRPH2  ILLU
+ 2) AUDIBLE GLAMER            ILL                   TSRPH2  MAGE
+ 2) BLUR                      ILL                   TSRPH2  ILLU
+ 1) CHANGE SELF               ILL                   TSRPH2  ILLU
+ 1) COLOR SPRAY               HYP&ILL               TSRPH2  ILLU
+ 1) COLOR SPRAY               ILL&HYP               TSRPH2  ILLU
+ 0) COLORED LIGHTS            ILL                   Dgn:V3  ILLU
+ 3) CONTINUAL DARKNESS        ILL         VOID      TSRPH2  ILLU
+ 0) CREAK                     ILL                   Dgn:V3  MAGE
+ 1) DANCING LIGHTS            ILL                   TSRPH2  ILLU
+ 1) DANCING LIGHTS            ILL                   TSRPH2  MAGE
+ 1) DARKNESS                  ILL         VOID      TSRPH2  ILLU
+ 6) DEMI-SHADOW MAGIC         ALT&ILL               TSRPH2  ILLU
+ 5) DEMI-SHADOW MONSTERS      ALT&ILL               TSRPH2  ILLU
+ 0) DIM                       ILL                   Dgn:V3  ILLU
+ 3) DISPEL ILLUSION           ILL                   TSRPH2  ILLU
+ 5) DISTANCE DISTORTION       ILL                   TSRPH2  MAGE
+ 2) FOOLS' GOLD               ALT/ILL               TSRPH2  MAGE
+ 0) FOOTFALL                  ILL                   Dgn:V3  MAGE
+ 1) GAZE REFLECTION           ILL                   TSRPH2  ILLU
+ 0) GROAN                     ILL                   Dgn:V3  MAGE
+ 4) HALLUCINATORY FOREST      ILL                   TSRPH2  DRUI
+ 3) HALLUCINATORY TERRAIN     ILL                   TSRPH2  ILLU
+ 4) HALLUCINATORY TERRAIN     ILL                   TSRPH2  MAGE
+ 0) HAZE                      ILL                   Dgn:V3  ILLU
+ 0) HIDE                      ILL                   Dgn:V3  MAGE
+ 2) HYPNOTIC PATTERN          HYP&ILL               TSRPH2  ILLU
+ 4) IMPROVED INVISIBILITY     ILL                   TSRPH2  ILLU
+ 2) IMPROVED PHANTASMAL FORCE ILL                   TSRPH2  ILLU
+ 2) INVISIBILITY              ILL                   TSRPH2  ILLU
+ 3) INVISIBILITY              ILL                   TSRPH2  MAGE
+ 0) MASK                      ILL                   Dgn:V3  ILLU
+ 7) MASS INVISIBILTY          ILL                   TSRPH2  MAGE
+ 4) MASSMORPH                 ILL                   TSRPH2  ILLU
+ 0) MIRAGE                    ILL                   Dgn:V3  ILLU
+ 2) MIRROR IMAGE              ILL                   TSRPH2  ILLU
+ 2) MIRROR IMAGE              ILL                   TSRPH2  MAGE
+ 0) MOAN                      ILL                   Dgn:V3  MAGE
+ 0) NOISE                     ILL                   Dgn:V3  ILLU
+ 0) PALM                      ILL                   Dgn:V3  MAGE
+ 6) PERMANENT ILLUSION        ILL                   TSRPH2  ILLU
+ 3) PHANTASMAL FORCE          ILL                   TSRPH2  MAGE
+ 1) PHANTASMAL FORCE          ILL                   TSRPH2  ILLU?
+ 6) PROGRAMMED ILLUSION       ILL                   TSRPH2  ILLU
+ 6) PROJECT IMAGE             ILL                   TSRPH2  MAGE
+ 5) PROJECTED IMAGE           ALT&ILL               TSRPH2  ILLU
+ 0) RAINBOW                   ILL                   Dgn:V3  ILLU
+ 0) RATTLE                    ILL                   Dgn:V3  MAGE
+ 6) SHADES                    ALT&ILL               TSRPH2  ILLU
+ 5) SHADOW DOOR               HYP&ILL               TSRPH2  ILLU
+ 5) SHADOW MAGIC              ALT&ILL               TSRPH2  ILLU
+ 4) SHADOW MONSTERS           ALT&ILL               TSRPH2  ILLU
+ 3) SPECTRAL FORCE            ILL                   TSRPH2  ILLU
+ 2) SPECTRAL HAND             MET&ILL               TSRPH2  ILLU
+ 0) TAP                       ILL                   Dgn:V3  MAGE
+ 0) THUMP                     ILL                   Dgn:V3  MAGE
+ 0) TWO-D'LUSION              ILL                   Dgn:V3  ILLU
+ 6) VEIL                      HYP&ILL               TSRPH2  ILLU
+ 2) VENTRILOQUISM             ILL                   TSRPH2  ILLU
+ 0) WHISTLE                   ILL                   Dgn:V3  MAGE

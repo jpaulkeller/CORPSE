@@ -1,0 +1,11 @@
+! Gender
+
+@ Gender
+@ Pronoun
+@ Abbrev
+@ Child
+@ Parent
+@ Sibling
+
+1 Female;She;F;daughter;mother;sister
+3 Male;He;M;son;father;brother

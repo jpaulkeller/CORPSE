@@ -1,0 +1,26 @@
+
+* This file gives examples of various improper uses of mechanisms provided by the CORPSE program.
+
+* This subset creates an infinite loop for demonstration purposes.
+: Error {1}
+
+* Forced RECURSION OVERFLOW error, see the manual for more details.
+  Forced recursion error: {Errors:Error} 
+
+* Invalid CONDITION example (missing/invalid operator)
+  {2 2?Missing:Operator}
+
+* Missing TABLE
+  Missing Table: {Missing}
+
+* Missing COLUMN
+  Missing Column: {Errors@Missing}
+
+* Missing SUBSET
+  Missing Subset: {Errors:Missing}
+
+* Invalid FILTER
+  Invalid Filter: {Errors#a(b}
+
+* Empty Token
+  Empty Token: {}

@@ -1,0 +1,15 @@
+
+? Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
+?          Values from DRAGON Magazine #83, page 10.
+
+: Geology {10}
+: Natural {16}
+: Hard    {21}
+
+2 {Gem}
+4 {Metal:}
+3 {Mineral}
+1 {Organic}
+6 {Wood}
+5 {Man Made}
+1 {Fabric}

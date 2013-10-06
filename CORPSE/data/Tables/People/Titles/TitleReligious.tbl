@@ -1,0 +1,20 @@
+Acolyte
+Brother
+Friar
+Prelate
+Vicar
+Prior
+Deacon
+Abbot
+Priest
+Bishop
+Missionary
+Apostle
+High Priest
+Archbishop
+Cardinal
+Pope
+
+: TitleGuild {5,16}
+
+? Source: http://en.wikipedia.org/wiki/Category:Religious_leaders

@@ -1,0 +1,71 @@
+? http://www.legolas.org/items/thief.html
+
+@ Thief Gear
+@ Cost  
+@ Weight   
+@ Legality
+         
+Acid, Metal-eating, 1 Vial **    50 gp     0.2   L
+Aniseed, vial                     2 sp           L
+Arm Sling                         2 cp           L
+Armor, Silenced                 750 gp+   50     S
+Arrow, Major grapple             10 gp     1     L/S
+Arrow, Minor grapple              6 gp     0.6   L/S
+Arrow, Stone biter                1 gp           L
+Arrow, Stone biter, Adamantite    7 gp           L
+Arrow, Wood biter                 8 sp           L
+Blinding Powder                   Var            L/S/I
+Boots, Blade                     15 gp     3     I
+Boots, Footpad's                  8 gp     3     I
+Boots, Hollow                    15 gp     3     I
+Bow, Folding                     45 gp     2     L/S
+Caltrops (10)                     3 gp     1     L/S
+Cards, Marked, Deck **            5 gp     0.2   I
+Catstink, (vial) **              40 gp           S/I
+Charcoal, Bundle                  2 cp           L
+Chisels, lock, set of 3           2 gp     1     L
+Crowbar                           6 sp     4     L
+Dagger, Climbing                  5 gp     1     L
+Darksuit                         30 gp     5     S
+Dice, Biased, Bone (box of 4)     5 gp           I
+Dice, Biased, Ivory (box of 4)   20 gp           I
+Dog Pepper, Packet                1 sp           L/S
+Funnel, Small                     3 cp     0.1   L
+Glass Cutter, Handled           120 gp     1     L/I
+Gloves, Clawed **                20 gp     1     I
+Grappling Iron                    3 gp     2     L
+Hacksaw                           3 gp     1     L
+Hacksaw Blade                     6 sp           L
+Housebreaker's Harness **        25 gp     2     I
+Keymaking Set                    60 gp     6     I
+Knife, Death **                  12 gp     1     S/I
+Lamp, Hand (w/ silvered mirror)  10 gp     1     L/S
+Lamp, Hand Warming                2 sp     0.3   L
+Leather Straps (pair)             3 sp     1     L
+Limewood Strips (10)              3 cp           L
+Listening Cone (Brass)            2 gp     0.3   L
+Marbles, bag (30)                 2 cp           L
+Metal File                        5 sp     0.2   L
+Mini Blade                        5 cp           L
+Overshoes, Clawed                15 gp     1     I
+Ring, Pin, Iron                   2 gp           S/I
+Ring, Pin, Silver                10 gp           S/I
+Ring, Razor, Iron                 2 gp           S/I
+Ring, Razor, Silver              10 gp           S/I
+Scabbard, False **               12 gp    (1-2)  L/S
+Sharkskin                        12gp/sf   1/sf  L/S
+Sheath, Wrist                     3 sp           S
+Shoes, Water, Pair                5 gp     1     S/I
+Skeleton Key                     Var.            I
+Spikes, Climbing, Iron (10)       5 sp     4     L
+Sword Stick **                   25 gp     4     L/S
+Theives Picks                    30 gp     1     I
+Wax (block)                       3 cp           L
+Weaponblack (vial)                2 gp     0.2   S
+Wire Cutters                      1 gp     0.2   L/S
+Woodland Suit                    35 gp     5     L/S
+
+L = Legal
+S = Shady
+I = Illegal
+** Indicates hard to find item

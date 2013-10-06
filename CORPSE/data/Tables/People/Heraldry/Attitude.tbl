@@ -1,0 +1,31 @@
+Rampant;rearing up
+Passant;striding
+{Sejant|Sejant erect};sitting
+Couchant;lying down
+Courant;running
+Dormant;sleeping
+Salient;leaping
+Statant;standing
+Affronte;displayed, facing viewer, wings spread
+Rousant;rising
+Volant;flying
+Trussed
+Vigilant
+Segreant;rampant, but for winged quadrapeds such as dragons
+{Combatant|Respectant};facing towards each other
+Addorsed;facing away from each other
+Naiant;swimming
+Hauriant;vertical with head up (for sea creatures)
+Urinant;vertical with head down (for sea creatures)
+Glissant;gliding (undulant)
+Nowed;knotted (for serpents)
+Guardant;head facing viewer
+Reguardant;head facing backwards
+
+: Beasts {1-8}
+: Birds {9-13}
+: Other {14-21}
+: Facing {22-23}
+
+@ Attitude
+@ Description

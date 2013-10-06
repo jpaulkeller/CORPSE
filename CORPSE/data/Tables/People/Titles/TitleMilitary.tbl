@@ -1,0 +1,23 @@
+Enlistee
+Trainee
+Private
+Corporal
+Sergeant
+Lieutenant
+Staff Sergeant
+Captain
+Warrant Officer
+Master Sergeant
+Major
+Commander
+Chief Master Sergeant
+Lt Colonel
+Colonel
+General
+Admiral
+Field Marshal
+Supreme Commander
+
+: TitleMilitary {4,19}
+
+? Source: http://en.wikipedia.org/wiki/Category:Military_ranks
