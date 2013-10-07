@@ -1,86 +1,77 @@
 ? Sources: GURPS1 = Generic Universal RolePlaying System (Basic, 3rd edition)
 ? http://www.legolas.org/items/arms.html
 
-!                 Attack   Base   Min Min  Weight  Use  Type  Range/  Cost
-! Weapon Name      Time   Damage  Dex Str  (Oz.)              Lngth"  (sp)
-! -----------     ------  ------  --- ---  ------  ---  ----  ------  ----
+!                 Atck  Base   Min  Min   Weight   Use  Type  Range  Cost
+! Weapon Name     Time  Dmg    Dex  Str   (Oz.)               Len"   (sp)
+! -----------     ----  ----   ---  ---   ------   ---  ----  ------ ----
 
-@ Weapon  1 18
-@ Time   19  2
-@ Damage 27  1
-@ MinDex 33  2
-@ MinStr 37  2
-@ Weight 42  6
-@ Use    50  3
-@ Type   55  4
-@ Range  61  6
-@ Cost   69  4
+@Weapon           Time  Dmg    Dex   Str  Weight   Use  Type  Range  Cost
 
-UNARMED            0      2      5-  5      0     B     U      0      0
-DAGGER             1      3      6   6     20    P,S   H/M  6-20     20
- KNIFE             1      2      6   6     15    P,S   H/M     6     10
- LONG KNIFE        1      3      6   6     25    P,S    H     15     30
- DIRK              1      3      6   6     20    P,S   H/M    12     20
-RAPIER             1      3     10   7            P     H     36
- EPEE              1      3     10   7            P     H      ?
- FOIL              1      3     10   7            P     H
-SABRE              2      4      8   8            S     H     36
- SCIMITAR          2      4      8   8            S     H     36
- CUTLASS           3      4      8   8            S     H      M
-SWORD              3      5      8   9    150    P,S    H      M     250
- SHORT SWORD       2      4      8   8     50    P,S    H     24     100
- LONG SWORD        3      5      8  10           P,S    H     45     300
- KATANA            3      6     10+  8           P,S    H      M     500
- BROAD SWORD       4      6      8+ 10           PSC    H     42     300
- ESTOC             3      5      8+  9           P,S    H      M     350
- FALCHION          4      6      8+ 10           PSC    H      M     400
- BASTARD SWORD     4      6      8+ 10           PSC    H     54     325
- 2-HND SWORD       5      7      8* 12    225    PSC    H     72     500
-SICKLE             2      3      7   7     50    S,C    H     25      10
-SCYTHE             4      5      7   7           S,C    P
-MACE               2      4      7   9    100     B     H     22      50
- MAUL              2      4      7   9            B     H     18
- CLUB              2      3      7   8     50     B     H      M    { 10
- 2-HANDED MACE     4      6      7* 10    150     B     H     30      80
- 2-HND FLAIL       5      6      8* 10    240     B     H     40     150
- FLAIL             4      5      9   9     80     B     H      M      80
- MORNING STAR      4      6     10+  9            B     H     48
- WAR HAMMER        5      7      7+ 10     90     B     H     40      30
+UNARMED            0      2      5-    5      0     B     U      0      0
+DAGGER             1      3      6     6     20    P,S   H/M  6-20     20
+ KNIFE             1      2      6     6     15    P,S   H/M     6     10
+ LONG KNIFE        1      3      6     6     25    P,S    H     15     30
+ DIRK              1      3      6     6     20    P,S   H/M    12     20
+RAPIER             1      3     10     7            P     H     36
+ EPEE              1      3     10     7            P     H      ?
+ FOIL              1      3     10     7            P     H
+SABRE              2      4      8     8            S     H     36
+ SCIMITAR          2      4      8     8            S     H     36
+ CUTLASS           3      4      8     8            S     H      M
+SWORD              3      5      8     9    150    P,S    H      M     250
+ SHORT SWORD       2      4      8     8     50    P,S    H     24     100
+ LONG SWORD        3      5      8    10           P,S    H     45     300
+ KATANA            3      6     10+    8           P,S    H      M     500
+ BROAD SWORD       4      6      8+   10           PSC    H     42     300
+ ESTOC             3      5      8+    9           P,S    H      M     350
+ FALCHION          4      6      8+   10           PSC    H      M     400
+ BASTARD SWORD     4      6      8+   10           PSC    H     54     325
+ 2-HND SWORD       5      7      8*   12    225    PSC    H     72     500
+SICKLE             2      3      7     7     50    S,C    H     25      10
+SCYTHE             4      5      7     7           S,C    P
+MACE               2      4      7     9    100     B     H     22      50
+ MAUL              2      4      7     9            B     H     18
+ CLUB              2      3      7     8     50     B     H      M     <10
+ 2-HANDED MACE     4      6      7*   10    150     B     H     30      80
+ 2-HND FLAIL       5      6      8*   10    240     B     H     40     150
+ FLAIL             4      5      9     9     80     B     H      M      80
+ MORNING STAR      4      6     10+    9            B     H     48
+ WAR HAMMER        5      7      7+   10     90     B     H     40      30
  MATTOCK
-WAR PICK           6      7      8* 10    100    B,P    H     36      80
-1-HANDED PICK      4      4      9   9     65    B,P    H      M      70
-AXE                4      6      8+  8    100     C     H     36      35
- HATCHET           3      3      7   6     32     C    H/M    16      15
- HAND AXE          3      5      8   7     85     C    H/M    20      20
- BATTLE AXE        5      7      8*  9    120     C     H     48      50
+WAR PICK           6      7      8*   10    100    B,P    H     36      80
+1-HANDED PICK      4      4      9     9     65    B,P    H      M      70
+AXE                4      6      8+    8    100     C     H     36      35
+ HATCHET           3      3      7     6     32     C    H/M    16      15
+ HAND AXE          3      5      8     7     85     C    H/M    20      20
+ BATTLE AXE        5      7      8*    9    120     C     H     48      50
 
-STAFF              2      3      8*  7            B    H/P     L    { 10
- QUARTER STAFF     2      3      8*  7     65     B    H/P     84   { 10
- WAR STAFF         2      4      8*  8           B,P   H/P     L      10
-TRIDENT            4      5      7   8     80     P    H/P     60    150
-SPEAR              5      6      7   8     75     P    H/P     L      10
- SHORT SPEAR       4      5      7+  7            P    H/M     72
- LONG SPEAR        6      6      7*  9            P     P     144
- LANCE             6      9      8  11    225     P     P     144    150
+STAFF              2      3      8*    7            B    H/P     L      10
+ QUARTER STAFF     2      3      8*    7     65     B    H/P     84     10
+ WAR STAFF         2      4      8*    8           B,P   H/P     L      10
+TRIDENT            4      5      7     8     80     P    H/P     60    150
+SPEAR              5      6      7     8     75     P    H/P     L      10
+ SHORT SPEAR       4      5      7+    7            P    H/M     72
+ LONG SPEAR        6      6      7*    9            P     P     144
+ LANCE             6      9      8    11    225     P     P     144    150
 
-POLE ARMS          6      6      7* 10    225     *     P      90    100
+POLE ARMS          6      6      7*   10    225     *     P      90    100
 
-BOW                1      -      9*  8     40     -     L     18     500
- COMPOSITE BOW     1      1      9*  9     45     -     L     20    1000
- SHORT BOW         1      -      9*  7     25     -     L     15     300
- LONG BOW          2      1      9*  9     50     -     L   22=240+Y/72"   750
- CROSS BOW         2      -      7*  7    150     -     L     20     400
- HEAVY CROSS BOW   3      -      7*  9    224     -     L   24=475Y  500
- LIGHT CROSS BOW   1      -      8*  7    112     -     L     18     350
- HAND CROSS BOW    1      -      9   5     48     -     L      6    3000
-DART               1      1      8   4      4     P     M      4       5
-BLOW GUN/PIPE      1      -      #-        16     -     L     84"     50
-SHURIKEN           2      3                       P     M      2       5
-THROWING AXE       4      4      8   7     75     C     M      3      10
-JAVELIN            4      4      7   7     40     P     M      6      50
-HARPOON            5      6      7   9    100     P     M      3     200
-SLING              2      -      9-  5      1     -     L      -       1
-STAFF SLING        4      -      9-  6     30     -     L    x.5       2
+BOW                1      -      9*    8     40     -     L     18     500
+ COMPOSITE BOW     1      1      9*    9     45     -     L     20    1000
+ SHORT BOW         1      -      9*    7     25     -     L     15     300
+ LONG BOW          2      1      9*    9     50     -     L   22=240+Y/72"   750
+ CROSS BOW         2      -      7*    7    150     -     L     20     400
+ HEAVY CROSS BOW   3      -      7*    9    224     -     L   24=475Y  500
+ LIGHT CROSS BOW   1      -      8*    7    112     -     L     18     350
+ HAND CROSS BOW    1      -      9     5     48     -     L      6    3000
+DART               1      1      8     4      4     P     M      4       5
+BLOW GUN/PIPE      1      -      ?     -     16     -     L     84"     50
+SHURIKEN           2      3                         P     M      2       5
+THROWING AXE       4      4      8     7     75     C     M      3      10
+JAVELIN            4      4      7     7     40     P     M      6      50
+HARPOON            5      6      7     9    100     P     M      3     200
+SLING              2      -      9-    5      1     -     L      -       1
+STAFF SLING        4      -      9-    6     30     -     L    x.5       2
 
          AD&D
 Arms  Cost  Weight   Damage   S  T  Sp    ROF   Range

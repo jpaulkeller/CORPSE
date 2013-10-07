@@ -7,11 +7,11 @@
 * Note: Costs can vary as much as -50% to +100% based on quality,
 *       condition and supply & demand.
 
-@ Equipment     1 21
-@ Cost         22 10  
-@ Unit/Size    32 12
-@ Weight_(lbs) 44 10
-@ Quality      54 20
+@ Equipment     21
+@ Cost          10  
+@ Unit/Size     12
+@ Weight_(lbs)  10
+@ Quality       20
 
 Air bladder            15g                     2     {Quality:}
 Anvil                                        125     {Quality:}

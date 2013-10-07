@@ -1,14 +1,10 @@
-@ Magic    1 20
-@ Element 12  5
-
-: Element = Plane + Void
-
 Abjuration
 Alteration
 Animation
 Conjuration
 Divination
 Empathic
+Elemental: {Element}
 Enchantment
 Evocation
 Hypnotic
@@ -20,11 +16,3 @@ Natural
 Necromantic
 Spiritual
 Transference
-
-: Plane
-Elemental: Air
-Elemental: Earth
-Elemental: Fire
-Elemental: Water
-: Void
-Elemental: Void

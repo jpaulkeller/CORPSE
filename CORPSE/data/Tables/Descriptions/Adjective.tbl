@@ -217,14 +217,14 @@ Wizardly
 Wonderful
 Wondrous
 Young
-{Action}
-{Appearance}
-{Color}
-{Feeling}
-{Mood}
-{Noise}
-{Shape}
-{Size}
-{Taste}
-{Texture}
-{Trait}
++ {Appearance}
++ {Color:Simple}
++ {Feeling}
++ {Mood}
++ {Noise}
++ {Participles}
++ {Shape}
++ {Size}
++ {Taste{!OneWord}}
++ {Texture}
++ {Trait}

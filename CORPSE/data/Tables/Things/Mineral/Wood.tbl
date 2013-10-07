@@ -3,9 +3,7 @@
 ?          Values from DRAGON Magazine #83, page 10.
 ? TODO merge with Tree.tbl
 
-@ Wood     1  16
-@ Lbs/CFt 18   9
-@ Notes   27  20
+@Wood            Lbs/CFt  Notes
 
 Ash                 45
 Balsa                8

@@ -1,10 +1,10 @@
 ? Sources: ZTX Treasure software
 ? http://www.legolas.org/items/furnish.html
 
-@ Furnishing  1 20
-@ Cost       21 12
-@ Weight     33 10
-@ Quality    43 20
+@ Furnishing  20
+@ Cost        12
+@ Weight      10
+@ Quality     20
 
 Armchair, Padded    3 gp        40        {Quality:}
 Armchair, Wooden    1 gp        30        {Quality:}

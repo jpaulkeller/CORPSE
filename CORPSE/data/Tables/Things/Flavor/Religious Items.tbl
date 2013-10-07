@@ -1,8 +1,6 @@
 ? http://www.legolas.org/items/religious.html
 
-@ Religious Items 1 25
-@ Cost 26 10
-@ Weight 36 10
+@Religious Items        Cost      Weight
 
 Incense Stick             1 gp+     0.1
 Holy Symbol, Iron         2 gp      3
