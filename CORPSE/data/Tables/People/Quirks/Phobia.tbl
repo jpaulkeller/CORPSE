@@ -1,7 +1,8 @@
 ? Sources: Phobias v2.0 November 1991, Acumen Software by: Adrian B. Danieli
 
-@ Phobia 1 20
+@Phobia             Description
 
+Ablutophobia        fear of washing or bathing
 Acarophobia         Fear of skin infestation by mites and ticks
 Acerophobia         Fear of sourness
 Acousticophobia     Fear of noise
@@ -22,9 +23,9 @@ Anthrophobia        Fear of people
 Antlophobia         Fear of floods
 Aphephobia          Fear of touching or being touched
 Apiphobia           Fear of bees
-Arachnephobia       Fear of spiders (also ARACHNOPHOBIA)
+Arachnophobia       Fear of spiders
 Asthenophobia       Fear of weakness
-Astraphobia         Fear of being struck by lightning
+Astraphobia         Fear of lightning and thunderstorms
 Astrophobia         Fear of the stars
 Ataxiophobia        Fear of disorder
 Atelophobia         Fear of imperfection
@@ -32,6 +33,7 @@ Atephobia           Fear of ruin
 Aulophobia          Fear of flutes
 Aurophobia          Fear of gold
 Auroraphobia        Fear of auroral lights
+Automatonophobia    Fear of anything that falsely represents a sentient being
 Automysophobia      Fear of dirtying oneself
 Autophobia          Fear of being by oneself
 Bacillophobia       Fear of germs (also MICROBIOPHOBIA)
@@ -47,6 +49,7 @@ Bogyphobia          Fear of demons and goblins
 Botanophobia        Fear of plants and flowers
 Brontophobia        Fear of thunder and thunderstorms
 Cainophobia         Fear of novelty
+Caligynephobia      Fear of beautiful women
 Carnophobia         Fear of meat
 Cathisophobia       Fear of sitting down
 Catoptrophobia      Fear of mirrors
@@ -126,7 +129,7 @@ Hormephobia         Fear of shock
 Hyalophobia         Fear of glass
 Hydrophobia         Fear of water; fear of rabies
 Hygrophobia         Fear of liquids, especially wine or water
-Hylephobia          Fear of wood
+Hylophobia          Fear of wood/forests
 Hypengyophobia      Fear of responsibility
 Hypnophobia         Fear of sleep
 Hypsipphobia        Fear of high places
@@ -235,8 +238,8 @@ Selaphobia          Fear of flashes
 Selenophobia        Fear of the moon
 Siderophobia        Fear of the stars
 Sitophobia          Fear of food
-Sprectrophobia      Fear of specters or phantoms
 Spheksophobia       Fear of wasps
+Sprectrophobia      Fear of specters or phantoms
 Stenophobia         Fear of narrow spaces
 Taphephobia         Fear of being buried alive; fear of graves
 Tapinophobia        Fear of small things
@@ -252,23 +255,9 @@ Tonitrophobia       Fear of thunder
 Topophobia          Fear of performing; of certain places/situations
 Toxicophobia        Fear of poisoning
 Traumatophobia      Fear of war or physical injury
+Triskaidekaphobia - Fear of the number thirteen (or of groups of thirteen things).
 Vermiphobia         Fear of worms
 Xenophobia          Fear of strangers of foreigners
 Xylophobia          Fear of the forest
 Zelophobia          Fear of jealousy
 Zoophobia           Fear of animals
-
-1  1-3   Ablutophobia - fear of washing or bathing. If your game world is one in which most characters don't bathe anyway, the GM may re-roll.
-1  4-6   Aibohphobia - fear of anagrams (words which read the same backwards as forwards). Spells have a small chance (for example 1 in 6) of containing anagrams.
-2  1-3   Automatonophobia - Fear of anything that falsly represents a sentient being, such as ventriloquist's dummies or wax statues. The GM may re-roll in the case of creatures who are themselves automotons.
-2  4-6   Roll again:
-1-3 Arachnopobia - fear of spiders. The GM may re-roll in the case of creatures who either live on spiders, or are themselves spider- or insect-like
-4-6 Ophidiophobia - fear of snakes. The GM may re-roll in the case of creatures who either live on snakes, or are themselves snake- or lizard-like.
-3  1-3   Acrophobia - fear of heights. The GM should re-roll in the case of flying creatures.
-3  4-6   Astraphobia - fear of lightning and thunderstorms.
-4  1-3   Caligynephobia - Fear of beautiful women.
-4  4-6   Claustrophobia - fear of enclosed spaces. Dungeons are likely to contain such spaces. The phobia may also mean that the character can't wear helmets with visors, or suffers penalties when doing so. The GM may re-roll in the case of creatures who have evolved to live underground, for example dwarves and gnomes.
-5  1-3   Galeophobia - Fear of cats. The GM may re-roll in the case of creatures who either live on cats, or are themselves cat-like.
-5  4-6   Hylophobia - Fear of forests. The GM may re-roll in the case of creatures who have evolved to live in forests, for example (in some game worlds) elves.
-6  1-3   Xenophobia - fear of a specific, randomly determined intelligent species other than the character's own. If a particular species is very common in your game world (for example humans), it may be too harsh to give a character a phobia of that species. If so, the GM may decide not to have that species as one of the possible targets of xenophobia. Members of a species that the character is afraid of will find it easier to intimidate them, but harder to establish friendly relations.
-6  4-6   Triskaidekaphobia - Fear of the number thirteen (or of groups of thirteen things).

@@ -1,8 +1,6 @@
 ? http://www.legolas.org/items/transport.html
 
-@ Transport 1 21
-@ Cost 23 12
-@ Weight 36 12
+@Transport           Cost           Weight
       
 Barge                    500 gp   
 Barge                      1 gp/sy      10/sy
@@ -41,8 +39,8 @@ Raft                     100 gp
 Sail                      20 gp
 Sailboat    
 Sedan Chair              100 gp   
-Ship, Merchant, Large 15,000 gp    250,000
-Ship, Merchant, Small  5,000 gp    200,000
+Merchant Ship, Large  15,000 gp    250,000
+Merchant Ship, Small   5,000 gp    200,000
 Ship, War             20,000 gp    300,000
 Wagon, Closed            250 gp      2,000
 Wagon, Open              150 gp      1,500

@@ -6,9 +6,7 @@
 : Normal = Alloy + Element + Precious
 : Mine = Element + Precious + Ore
 
-@ Metal    1 16
-@ Lbs/CFt 20  4
-@ Notes   27 40
+@Metal           Lbs/CFt  Notes
 
 : Alloy
 Bronze             550

@@ -3,12 +3,12 @@
 ? http://www.republicofnewhome.org/lair/games/herb5/herb5illo.html
 ? TODO: check Asheron's Call
 
-@ Herb 1 20
-@ Cost 21 15  Raw/Prepared
-@ Purpose 36 25
-@ Season 61 10  Spring, Summer, Autumn, Winter, All 
-@ Zone 79 10    Temperate, Cold, Tropical, Sub-tropical, Polar
-@ Locale 97 10 Coastal, Desert, Forest, Grassland, Hills, Jungle, Mountains, Rivers, Rural, Special, Swamp, Underworld, Urban, Volcanic, Wasteland
+@ Herb 20
+@ Cost 15  Raw/Prepared
+@ Purpose 25
+@ Season 10  Spring, Summer, Autumn, Winter, All 
+@ Zone 10    Temperate, Cold, Tropical, Sub-tropical, Polar
+@ Locale 10 Coastal, Desert, Forest, Grassland, Hills, Jungle, Mountains, Rivers, Rural, Special, Swamp, Underworld, Urban, Volcanic, Wasteland
 
 ! HERB              COST           PURPOSE                  SEASON            ZONE              LOCALE
 

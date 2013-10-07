@@ -1,11 +1,11 @@
 ? http://www.legolas.org/items/armor.html
 
-@ Armor      1 18
-@ Defense   20  4
-@ Class     29  3
-@ Agi_Mod   37  2
-@ Condition 44 13
-@ Quality   60 15
+@ Armor      18
+@ Defense     4
+@ Class       3
+@ Agi_Mod     2
+@ Condition  13
+@ Quality    15
 
 None                -1      10       0
 Natural              *      **       0

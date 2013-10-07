@@ -1,10 +1,11 @@
-!             ||------------------|---------------------------|----------
-!             ||   U D    S T F   | MAGIC CATEGORY ABILITIES  |PRIORITIES
-!             || A N F H  T H A L | ------------------------- |----------
-!-------------|| R A N E  L V I A | A A C D E E E H I I M N S | SDACIWDC
-!  C L A S S  || M R S A  T R T N | B L O I M N V Y L N T E P | TEGONIIH
-!-------------|| S M E L  H Y H G | J T N V P C O P L V A C I | RXINTSSA
-@ Class 1 16
+@ Class 16
+
+!             |------------------|---------------------------|----------
+!             |   U D    S T F   | MAGIC CATEGORY ABILITIES  |PRIORITIES
+!             | A N F H  T H A L | ------------------------- |----------
+!-------------| R A N E  L V I A | A A C D E E E H I I M N S | SDACIWDC
+!  C L A S S  | M R S A  T R T N | B L O I M N V Y L N T E P | TEGONIIH
+!-------------| S M E L  H Y H G | J T N V P C O P L V A C I | RXINTSSA
 
 Assassin        4 4 4 3  5 4 1 3   - - - - - - - - - - - - -   43182756
 Barbarian       5 4 4 3  3 1 1 1   - - - - - - - - - - - - -   14326587
