@@ -26,25 +26,26 @@ import corpse.ui.TreePanel;
 /** Computer-Oriented Role-Playing System & Environment */
 
 // TODO
-// maybe built-in global filters for common ones (e.g. no-spaces)?
-// add a !token which resolves to the last resolved (so we can avoid adding 's' to plural entries)
-// export text
-// player vs. DM views of data
-// include/weight/etc for scripts? eg. Custom.cmd
-// allow multi-columns (like Job Title+Profession)
-// change CMD suffix?
-// Figure out how to resolve CONDITIONS before resolving the inner values
-// Interactive color-coded display (click to re-generate, or manually override, etc)
-// use default macro for dice button (e.g, TitleMilitary:)
-// matrix (e.g. name generators in KoDT #200)
-// change subset from ": Mine {5-40}" to ": Mine 5 40"
-// This ad hoc subset syntax is not yet supported, but might be useful: Table STRUCTURE value: {AAA:3 - 4}
-// splash and progress bar
+//fix WEAPON table
+//export text
+//include/weight/etc for scripts? eg. Custom.cmd
+//support composite columns (like Job xxx = Title + Profession)
+//change CMD suffix?
+//when focus is in the dice roll slot, F5 should just refresh it
+//use default macro for dice button (e.g, TitleMilitary:)
+//This ad hoc subset syntax is not yet supported, but might be useful: Table STRUCTURE value: {AAA:3 - 4}
+// Reset should restore the cursor/row position if possible
+// Depends - show raw token, resolved, tables used in
 
-// TODO simplify range format
-// : SubsetName {Quantity} ColumnName
-// : SubsetName {to} ColumnName
-// : SubsetName {from-to} ColumnName
+// drag&drop from tree to panels and to dice slot
+//player vs. DM views of data
+//Figure out how to resolve CONDITIONS before resolving the inner values
+//Interactive color-coded display (click to re-generate, or manually override, etc)
+//matrix (e.g. name generators in KoDT #200)
+//splash and progress bar
+
+// TODO data
+// convert all costs to a standard generic number ~1sp
 
 public class CORPSE
 {
@@ -75,7 +76,7 @@ public class CORPSE
       quickSlot = new JTextField (15);
       quickSlot.addKeyListener (new MyKeyListener());
       quickSlot.setToolTipText
-         ("For a quick random value, enter any table name or dice expression (e.g., INN-NAME or 3d6)");
+         ("For a quick random value, enter any table name or dice expression (e.g., INN NAME or 3d6)");
       
       progress = new JProgressBar (0, 100);
       progress.setFont (new Font ("Arial", Font.BOLD, 14));
@@ -107,7 +108,7 @@ public class CORPSE
    {
       String macro = quickSlot.getText();
       if (macro != null && !macro.equals (""))
-         progress.setString (Macros.resolve ("{" + macro + "}", null));
+         progress.setString (Macros.resolve ("{" + macro + "}"));
       else
          tables.roll();
    }
@@ -155,16 +156,27 @@ public class CORPSE
       
       public void actionPerformed(final ActionEvent e)
       {
-         if (tabs.getSelectedIndex() == 0)
-            tables.refresh();
-         else
-            scripts.refresh();
-         // TODO: when focus is in the dice roll slot, just refresh it
+         refresh();
       }
+   }
+   
+   public void refresh()
+   {
+      if (tabs.getSelectedIndex() == 0)
+         tables.refresh();
+      else
+         scripts.refresh();
+   }
+   
+   public void export()
+   {
+      System.out.println("CORPSE.export()"); // TODO
    }
    
    public static void main (final String[] args)
    {
+      // Macros.DEBUG = true;
+
       ComponentTools.setDefaults();
       Table.populate (new File ("data/Tables"));
       Script.populate (new File ("data/Scripts"));

@@ -31,7 +31,7 @@ public class SubTable extends Table
          if (xrefCol == null && token.contains (Constants.COLUMN_CHAR)) // e.g., Job@
             xrefCol = xrefTbl;
          
-         System.out.println("token [" + token + "] tbl [" + xrefTbl + "] sub [" + xrefSub + "] col [" + xrefCol + "] fil [" + xrefFil + "]");
+         // System.out.println("token [" + token + "] tbl [" + xrefTbl + "] sub [" + xrefSub + "] col [" + xrefCol + "] fil [" + xrefFil + "]");
          
          Table unfiltered = Table.getTable(xrefTbl);
          tableName = token;
@@ -61,10 +61,7 @@ public class SubTable extends Table
          if (column != null)
             entry = column.getValue(line);
          if (filter == null || filter.matcher(entry).matches())
-         {
-            System.out.println(" > " + entry); //TODO
             return super.add(entry);
-         }
       }
       // else System.out.println(count + " is out of subset: " + line); //TODO
       
