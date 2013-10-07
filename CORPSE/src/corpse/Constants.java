@@ -1,6 +1,14 @@
 package corpse;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import file.FileUtils;
 
 public class Constants
 {
@@ -16,14 +24,15 @@ public class Constants
    static final String SOURCE_CHAR    = "?";
    static final String SUBSET_CHAR    = ":";
    static final String TITLE_CHAR     = "!";
+
+   static final String IGNORE = COMMENT_CHAR + HEADER_CHAR + FOOTNOTE_CHAR + SEPR_CHAR + SOURCE_CHAR + TITLE_CHAR; 
+   static final Pattern COMMENT = Pattern.compile ("^[" + Pattern.quote (IGNORE) + "]", Pattern.MULTILINE);
    
-   static final Pattern COMMENT_LINE =
-      Pattern.compile ("^[" + 
-                       Pattern.quote (COMMENT_CHAR + HEADER_CHAR + FOOTNOTE_CHAR + SEPR_CHAR + SOURCE_CHAR + TITLE_CHAR) +
-                       "].*", Pattern.MULTILINE);
+   static final String NAME = "([A-Z](?: ?[-_A-Z0-9]+){0,10})"; // use {0,10} to avoid infinite loop
+   static final String COLUMN_NAME = "([A-Z0-9](?: ?[-_A-Z0-9/()]+){0,10})";
+   static final String TABLE_REGEX = NAME;
    
-   static final String NAME = "([A-Z](?: ?[-_A-Z0-9]+){0,})";
-   static final String COLUMN_NAME = "([-A-Z0-9_/()]+)";
+   static final Pattern NAME_PATTERN = Pattern.compile(NAME, Pattern.CASE_INSENSITIVE);
    
    static final Pattern TOKEN = Pattern.compile ("\\{([^{}]+)\\}");
    
@@ -44,53 +53,81 @@ public class Constants
    // TODO: empty option:  {opt1|opt2|}
    // TODO: weighted options: {#:opt1|#:opt2|...}
    
-   static final String TABLE_REGEX = NAME;
    static final Pattern SIMPLE_TABLE = Pattern.compile(TABLE_REGEX, Pattern.CASE_INSENSITIVE);
    
-   private static final String QTY = "(?:(\\d+) +)?";
+   private static final String QTY = "(?:(\\d+)\\s+)?";
    private static final String SUBSET = "(?:\\" + SUBSET_CHAR + NAME + "?)?";
    private static final String COLUMN = "(?:\\" + COLUMN_CHAR + COLUMN_NAME + "?)?";
    private static final String FILTER = "(?:\\" + FILTER_CHAR + "([^}]+)?)?";
    
-   static final Pattern TABLE_XREF = // {# Table:Subset@Column#Filter} 
-      Pattern.compile ("\\{" + QTY + TABLE_REGEX + SUBSET + COLUMN + FILTER + " *\\}", Pattern.CASE_INSENSITIVE);
+   static final Pattern TABLE_XREF = // {1 Table:Subset@Column#Filter} 
+      Pattern.compile ("\\{" + QTY + TABLE_REGEX + SUBSET + COLUMN + FILTER + "\\s*\\}", Pattern.CASE_INSENSITIVE);
 
-   static final Pattern SCRIPT_XREF = // {# Script.cmd}
+   static final Pattern SCRIPT_XREF = // {1 Script.cmd}
       Pattern.compile ("\\{" + QTY + NAME + "[.]cmd\\}", Pattern.CASE_INSENSITIVE);
 
-   static Pattern BACK_REF = Pattern.compile(REF_CHAR + "([^" + REF_CHAR + "]+)" + REF_CHAR);
+   // {#text:regex} (e.g. {#text:.} would resolve to the first letter of the text) 
+   static Pattern FILTER_TOKEN = Pattern.compile("\\{" + FILTER_CHAR + "(.+):([^}]+)\\}");
    
-   static final Pattern COLUMN_SEMI = Pattern.compile ("([^;]+)(?: *; *)?"); // TODO what is this?
-   
-   static final Pattern COLUMN_FIXED = 
-      Pattern.compile ("^" + COLUMN_CHAR + " *" + NAME + " +(\\d+) +(\\d+) *", Pattern.CASE_INSENSITIVE);
-   static final Pattern COLUMN_CSV = 
-      Pattern.compile ("^" + COLUMN_CHAR + " *" + NAME + " *", Pattern.CASE_INSENSITIVE);
+   // TODO use \\s for white-space
    
    // includes a script, but ignores any embedded randomize commands? // TODO
-   static final Pattern INCLUDE_LINE = Pattern.compile ("[+] *(.*) *");
+   static final Pattern INCLUDE_LINE = Pattern.compile ("[+]\\s*(.*)\\s*");
    
-   static final Pattern RANDOMIZE_LINE = Pattern.compile ("# *(.*)");
+   static final Pattern RANDOMIZE_LINE = Pattern.compile ("#\\s*(.*)");
    
    static final Pattern ASSIGNMENT = Pattern.compile ("\\{([^{}]+)=([^{}?]+)\\}");
    
    // {prompt?default} where the default value is optional, and the prompt must
    // start with a non-numeric (to avoid confusion with the CONDITIONAL token).
    static final Pattern QUERY = Pattern.compile ("\\{([^{}?0-9][^{}?]+?)[?]([^{}]+)?\\}");
-   
-   private static final String RANGE_TOKEN = "(\\{[^}]+\\})";
-   private static final String SUBSET_REGEX = 
-         "^\\" + SUBSET_CHAR + " *" + NAME + " +" + RANGE_TOKEN + "(?: +" + COLUMN_NAME + ")?"; 
-   static final Pattern SUBSET_PATTERN = Pattern.compile (SUBSET_REGEX, Pattern.CASE_INSENSITIVE);
 
-   static final Pattern SUBSET_REF = // {Table:Subset}
-         Pattern.compile (NAME + SUBSET_CHAR + NAME + "?", Pattern.CASE_INSENSITIVE);
-   
    // # {Table}
-   static final Pattern WEIGHTED_LINE = Pattern.compile ("^(\\d+) +(.+)");
+   static final Pattern WEIGHTED_LINE = Pattern.compile ("^(\\d+)\\s+(.+)");
    // #-# {Table}
-   static final Pattern RANGE_LINE = Pattern.compile ("^(\\d+)-(\\d+) +(.+)");
+   static final Pattern RANGE_LINE = Pattern.compile ("^(\\d+)-(\\d+)\\s+(.+)");
    
    // + {Table} (or "text{Table}text", but at most one {Table}) // TODO: support subset columns
-   static final Pattern INCLUDED_TBL = Pattern.compile ("^[" + INCLUDE_CHAR + "] *([^{]*)\\{([^}]+)\\}([^{]*)");
+   static final Pattern INCLUDED_TBL = Pattern.compile ("^[" + INCLUDE_CHAR + "]\\s*([^{]*)\\{([^}]+)\\}([^{]*)");
+   
+   static final String LAST_RESOLVED_TOKEN = "{!}";
+   
+   private static final String VARIABLE_REGEX = "\\{(![^}]*)\\}";
+   static final Pattern VARIABLE_TOKEN = Pattern.compile(VARIABLE_REGEX);
+   private static final Pattern VARIABLE = Pattern.compile(VARIABLE_REGEX + "=(.+) //.*"); // {!OneWord}=#[^-_ ]+ // one word
+   static final Map<String, String> VARIABLES = new HashMap<String, String>();
+   static { loadVariables(); }
+
+   private static final Pattern PROPERTY = Pattern.compile("([^=]+)=(.+)"); // noun=nouns
+   static final Pattern PLURAL_TOKEN = Pattern.compile("\\{\\+(.+)\\}"); // {+thing} => things
+   static final SortedMap<String, String> PLURALS = new TreeMap<String, String>();
+   static { loadPlurals(); }
+
+   private static void loadVariables()
+   {
+      List<String> lines = FileUtils.getList("data/Variables.txt", FileUtils.UTF8, true);
+      for (String line : lines)
+      {
+         Matcher m = VARIABLE.matcher(line);
+         if (m.matches())
+            VARIABLES.put(m.group(1).toUpperCase(), m.group(2));
+      }
+      System.out.println(VARIABLES.size() + " variables loaded.");
+   }
+   
+   private static void loadPlurals()
+   {
+      List<String> lines = FileUtils.getList("data/Plurals.txt", FileUtils.UTF8, true);
+      for (String line : lines)
+      {
+         Matcher m = PROPERTY.matcher(line);
+         if (m.matches())
+            PLURALS.put(m.group(1).toUpperCase(), m.group(2));
+      }
+      System.out.println(PLURALS.size() + " plurals loaded.");
+   }
+   
+   public static void main(String[] args)
+   {
+   }
 }

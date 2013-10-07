@@ -38,11 +38,12 @@ public class Table extends ArrayList<String>
    private List<String> title = new ArrayList<String>();
    private List<String> source = new ArrayList<String>();
    
-   SortedMap<String, Column> columns = new TreeMap<String, Column>();
-   SortedMap<String, Subset> subsets = new TreeMap<String, Subset>();
+   private SortedMap<String, Column> columns = new TreeMap<String, Column>();
+   private SortedMap<String, Subset> subsets = new TreeMap<String, Subset>();
+   
    int included = 0; // total number of imported lines (includes weighted lines)
    
-   // For example of subset usage, see the MADE_OF.TBL and COLOR.TBL.
+   // For example of subset usage, see the MADE OF.TBL and COLOR.TBL.
 
    public static void populate (final File dir)
    {
@@ -66,7 +67,7 @@ public class Table extends ArrayList<String>
       else
       {
          System.err.println ("Table not yet loaded: " + name);
-         Thread.dumpStack();
+         // Thread.dumpStack();
       }
       
       return table;
@@ -120,7 +121,14 @@ public class Table extends ArrayList<String>
       Matcher m = Constants.TOKEN.matcher (resolved);
       if (m.find())
       {
-         resolved = Macros.resolve (entry, filter); // recurse to support embedded tokens
+         if (filter == null)
+            resolved = Macros.resolve (entry); // recurse to support embedded tokens
+         else
+         {
+            System.out.println("Table.resolve() [" + entry + "]  Filter = [" + filter + "]"); // TODO
+            resolved = Macros.resolve (entry, filter); // recurse to support embedded tokens
+         }
+         
          while ((m = Constants.TOKEN.matcher (resolved)).find())
          {
             System.err.println (file + " unsupported token: " + m.group (0));
@@ -142,6 +150,11 @@ public class Table extends ArrayList<String>
       return entry;
    }
 
+   SortedMap<String, Subset> getSubsets()
+   {
+      return subsets;
+   }
+   
    Subset getSubset (final String subsetName)
    {
       String key = subsetName != null ? subsetName.toUpperCase() : tableName;
@@ -151,6 +164,11 @@ public class Table extends ArrayList<String>
       return subset;
    }
 
+   SortedMap<String, Column> getColumns()
+   {
+      return columns;
+   }
+   
    Column getColumn (final String columnName)
    {
       String key = columnName != null ? columnName.toUpperCase() : tableName;
@@ -173,7 +191,7 @@ public class Table extends ArrayList<String>
       {
          System.err.println ("File: " + file);
          System.err.println ("Line: " + unresolvedEntry);
-         System.err.println ("Column: " + columnName);
+         System.err.println ("Missing Column: " + columnName);
          x.printStackTrace (System.err);
       }
       return unresolved;
@@ -222,6 +240,7 @@ public class Table extends ArrayList<String>
          
          while ((line = br.readLine()) != null)
             parseLine (line);
+         Subset.finish(this);
          validate();
       }
       catch (Exception x)
@@ -242,12 +261,10 @@ public class Table extends ArrayList<String>
       if (line.length() > 0)
       {
          Matcher m;
-         if ((m = Constants.COLUMN_FIXED.matcher (line)).find())
-            addColumn (m);
-         else if ((m = Constants.COLUMN_CSV.matcher (line)).find())
-            addColumn (m);
-         else if (Constants.SUBSET_PATTERN.matcher (line).find()) 
-            addSubset (line);
+         if (line.startsWith(Constants.COLUMN_CHAR))
+            Column.parse(this, line);
+         else if (line.startsWith(Constants.SUBSET_CHAR))
+            Subset.parse(this, line);
          else if (line.startsWith (Constants.SOURCE_CHAR))
             source.add (line.substring (1).trim());
          else if (line.startsWith (Constants.TITLE_CHAR))
@@ -320,19 +337,13 @@ public class Table extends ArrayList<String>
             included++;
    }
    
-   private void addColumn (final Matcher m)
+   void addColumn (final Column column)
    {
-      Column column;
-      if (m.groupCount() == 1)
-         column = new Column (m.group (1), columns.size());
-      else
-         column = new Column (m, columns.size());
       columns.put (column.getName().toUpperCase(), column);
    }
    
-   private void addSubset (final String line)
+   void addSubset (final Subset subset)
    {
-      Subset subset = new Subset (this, line);
       subsets.put (subset.getName().toUpperCase(), subset);
    }
    

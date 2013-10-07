@@ -24,8 +24,10 @@ public class Menus
 {
    private static final String ABOUT     = "About";
    private static final String EXIT      = "Exit";
+   private static final String EXPORT    = "Export";
    private static final String HELP      = "Help";
    private static final String OPTIONS   = "Options";
+   private static final String REFRESH   = "Refresh";
    static final         String ROLL      = "Roll";
    private static final String SEARCH    = "Search";
    
@@ -61,6 +63,8 @@ public class Menus
       JMenu menu = new JMenu ("File");
       menu.setMnemonic ('F');
       menu.add (makeMenuItem (SEARCH, 'S', "20/objects/Magnify.gif", "Search all data files for an entered pattern"));
+      menu.add (makeMenuItem (EXPORT, 'x', "20/documents/DocumentUse.gif", "Export the current view to a file"));
+      menu.add (makeMenuItem (REFRESH, 'R', "20/flow/Loop.gif", "Reload the data"));
       menu.add (makeMenuItem (OPTIONS, 'O', "20/gui/Form.gif", "Edit configuration options"));
       menu.addSeparator();
       menu.add (makeMenuItem (EXIT, 'E', "XRed.gif", "Exit this application"));
@@ -108,8 +112,10 @@ public class Menus
          String cmd = e.getActionCommand();         
          if      (cmd.equals (ABOUT))     about();
          else if (cmd.equals (EXIT))      System.exit (0);
+         else if (cmd.equals (EXPORT))    app.export();
          else if (cmd.equals (HELP))      showFile ("data/readme.txt", "CORPSE Quick Help"); 
          else if (cmd.equals (OPTIONS))   setOptions();
+         else if (cmd.equals (REFRESH))   app.refresh();
          else if (cmd.equals (ROLL))      app.roll();
          else if (cmd.equals (SEARCH))    app.search();
          else

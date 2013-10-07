@@ -50,8 +50,10 @@ public final class RandomEntry
             if (subset != null)
             {
                index = subset.random() - 1;
+               /* TODO
                if (subset.getColumnName() != null && colName == null)
                   colName = subset.getColumnName();
+                  */
             }
          }
          
@@ -150,7 +152,7 @@ public final class RandomEntry
 
       // String tableName = "TREASURE";
       // String tableName = "REAGENT";
-      String tableName = "INN-NAME";
+      String tableName = "INN NAME";
       for (int i = 1; i <= 10; i++)
       {
          String entry = RandomEntry.get (tableName, null, null, null);

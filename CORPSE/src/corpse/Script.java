@@ -87,9 +87,9 @@ public class Script
          String line = null;
          while ((line = br.readLine()) != null)
          {
-            if (Constants.COMMENT_LINE.matcher (line).matches())
-               continue;
             if (line.trim().equals ("")) // ignore blank lines
+               continue;
+            if (Constants.COMMENT.matcher (line).find())
                continue;
 
             line = resolve(line);
@@ -143,7 +143,7 @@ public class Script
          
          if (resolvedToken.equals(token))
          {
-            resolvedToken = Macros.resolve (token, null);
+            resolvedToken = Macros.resolve (token);
             System.out.println("MAC Token: " + token + " R: " + resolvedToken); // TODO
          }
             
@@ -201,7 +201,7 @@ public class Script
          String defaultValue = m.group (2);
          // handle quick-query syntax: Token?? => Token?{Token}                  
          if (defaultValue != null && defaultValue.equals ("?"))
-            defaultValue = Macros.resolve ("{" + message + "}", null);
+            defaultValue = Macros.resolve ("{" + message + "}");
          String answer = (String) JOptionPane.showInputDialog (owner, message, title, JOptionPane.QUESTION_MESSAGE, 
                icon, options, defaultValue);
          if (answer != null)

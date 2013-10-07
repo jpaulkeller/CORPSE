@@ -1,20 +1,14 @@
 package corpse;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.Stack;
+import java.util.Vector;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 import str.Token;
 import corpse.ui.TokenRenderer;
-import file.FileUtils;
-
-import corpse.Constants;
 
 public final class Macros
 {
@@ -22,10 +16,18 @@ public final class Macros
    
    private static final Stack<String> TOKEN_STACK = new Stack<String>();
    
-   private static List<String> lastResolved = new ArrayList<String>(); // for back-references
+   private static Vector<String> lastResolved = new Vector<String>(); // for back-references
    
    private Macros() { }
 
+   public static String resolve (final String entry) // for debugging
+   {
+      String resolved = resolve(entry, null);
+      if (DEBUG)
+         System.out.println(entry + " = [" + resolved + "]");
+      return resolved;
+   }
+   
    public static String resolve (final String entry, final String filter)
    {
       String resolvedEntry = entry;
@@ -37,16 +39,19 @@ public final class Macros
          String token = m.group();
          String resolvedToken = token;
          
-         resolvedToken = resolveVariables (resolvedToken);
          resolvedToken = resolveExpressions (resolvedToken);
-         resolvedToken = resolveReferences (resolvedToken);
          resolvedToken = resolveTables (resolvedToken, filter);
          resolvedToken = resolveScripts (resolvedToken);
          if (resolvedToken.equals(token))
             resolvedToken = m.replaceFirst ("<$1>"); // avoid infinite loop
-         resolvedToken = matchCase(token, resolvedToken);
          
-         lastResolved.add(resolvedToken); // TODO: only capture user-specified ones?
+         String caseSample = token;
+         if (caseSample.equals(Constants.LAST_RESOLVED_TOKEN) && !lastResolved.isEmpty())
+            caseSample = lastResolved.lastElement(); 
+         resolvedToken = matchCase(caseSample, resolvedToken);
+         
+         if (!resolvedToken.contains("{")) // don't capture other tokens (e.g. variables)?
+            lastResolved.add(resolvedToken); // TODO: only capture user-specified ones?
          
          try
          {
@@ -63,42 +68,6 @@ public final class Macros
       return resolvedEntry;
    }
 
-   private static final String VARIABLE_REGEX = "(\\{![^}]+\\})";
-   private static final Pattern VARIABLE_TOKEN = Pattern.compile(VARIABLE_REGEX);
-   // {!1} = #[^-_ ]+ // one word
-   private static final Pattern VARIABLE = Pattern.compile(VARIABLE_REGEX + "=(.+) //.*");
-
-   private static final Map<String, String> VARIABLES = new HashMap<String, String>();
-   static
-   {
-      List<String> lines = FileUtils.getList("data/Variables.txt", FileUtils.UTF8, true);
-      for (String line : lines)
-      {
-         Matcher m = VARIABLE.matcher(line);
-         if (m.matches())
-            VARIABLES.put(m.group(1), m.group(2));
-      }
-   }
-   
-   public static String resolveVariables (final String entry)
-   {
-      String resolvedToken = entry;
-      
-      Matcher m = VARIABLE_TOKEN.matcher (resolvedToken);
-      while (m.find())
-      {
-         String replacement = VARIABLES.get(m.group(1));
-         if (replacement != null)
-            resolvedToken = m.replaceFirst(Matcher.quoteReplacement(replacement));
-         else
-            resolvedToken = m.replaceFirst("<" + m.group(0) + ">");
-      }
-      
-      if (DEBUG && !entry.equals (resolvedToken))
-         System.out.println ("resolveVariables: [" + entry + "] = [" + resolvedToken + "]");
-      return resolvedToken;
-   }
-   
    public static int resolveNumber (final String entry)
    {
       int qty = 0;
@@ -117,65 +86,115 @@ public final class Macros
       return new Quantity(token).getMax();
    }
 
-   private static String resolveReferences (final String token)
-   {
-      String resolvedToken = token;
-      
-      Matcher m = Constants.BACK_REF.matcher (token);
-      while (m.find())
-      {
-         String replacement = "";
-         if (!lastResolved.isEmpty())
-         {
-            String regex = m.group(1);
-            try
-            {
-               Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
-               Matcher backRefMatcher = p.matcher(lastResolved.get(lastResolved.size() - 1));
-               if (backRefMatcher.find())
-               {
-                  if (backRefMatcher.groupCount() > 0)
-                     replacement = backRefMatcher.group(1);
-                  else
-                     replacement = backRefMatcher.group();
-               }
-            }
-            catch (PatternSyntaxException x)
-            {
-               System.out.println("Invalid reference in " + token + ": [" + regex + "]");
-            }
-         }
-         else
-            System.out.println("Warning: Back reference without previous token!");
-         resolvedToken = m.replaceFirst(replacement);
-      }
-      
-      if (DEBUG && !token.equals (resolvedToken))
-         System.out.println ("resolveReferences: [" + token + "] = [" + resolvedToken + "]");
-      return resolvedToken;
-   }
-
    private static String resolveExpressions (final String token)
    {
       String resolvedToken;
       resolvedToken = resolveQuantity (token);
+      if (resolvedToken.equals(token))
+         resolvedToken = resolveVariables (token);
+      if (resolvedToken.equals(token))
+         resolvedToken = resolvePlurals (token);
+      if (resolvedToken.equals(token))
+         resolvedToken = resolveFilters (token);
       if (resolvedToken.equals(token))
          resolvedToken = resolveConditions (token);
       if (resolvedToken.equals(token))
          resolvedToken = resolveOneOfs(token);
       
       if (DEBUG && !token.equals (resolvedToken))
-         System.out.println ("resolveExpressions: [" + token + "] = [" + resolvedToken + "]");
+         System.out.println ("  resolveExpressions: [" + token + "] = [" + resolvedToken + "]");
       return resolvedToken;
    }
 
+   private static String resolveVariables (final String token)
+   {
+      String resolvedToken = token;
+      
+      Matcher m = Constants.VARIABLE_TOKEN.matcher (resolvedToken);
+      if (m.find())
+      {
+         String replacement = Constants.VARIABLES.get(m.group(1).toUpperCase());
+         if (m.group(0).equals(Constants.LAST_RESOLVED_TOKEN) && !lastResolved.isEmpty())
+            resolvedToken = m.replaceFirst(Matcher.quoteReplacement(lastResolved.lastElement()));
+         else if (replacement != null) // found a matching variable
+            resolvedToken = m.replaceFirst(Matcher.quoteReplacement(replacement));
+         else
+            resolvedToken = m.replaceFirst("<" + m.group(1) + ">");
+      }
+      
+      if (DEBUG && !token.equals (resolvedToken))
+         System.out.println ("  resolveVariables: [" + token + "] = [" + resolvedToken + "]");
+      return resolvedToken;
+   }
+   
+   private static String resolveFilters (final String token)
+   {
+      String resolvedToken = token;
+      
+      Matcher m = Constants.FILTER_TOKEN.matcher (resolvedToken);
+      if (m.matches())
+      {
+         String text = m.group(1);
+         String regex = m.group(2);
+         try
+         {
+            Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+            Matcher filterMatcher = p.matcher(text);
+            if (filterMatcher.find())
+            {
+               String replacement = "";
+               if (filterMatcher.groupCount() > 0)
+                  replacement = filterMatcher.group(1);
+               else
+                  replacement = filterMatcher.group();
+               resolvedToken = m.replaceFirst(replacement);
+            }
+            else
+               resolvedToken = m.replaceFirst(text);
+         }
+         catch (PatternSyntaxException x)
+         {
+            System.err.println("Invalid filter pattern in " + token + ": [" + regex + "]");
+         }
+      }
+      
+      if (DEBUG && !token.equals (resolvedToken))
+         System.out.println ("  resolveFilters: [" + token + "] = [" + resolvedToken + "]");
+      return resolvedToken;
+   }
+
+   private static String resolvePlurals (final String token)
+   {
+      String resolvedToken = token;
+      
+      Matcher m = Constants.PLURAL_TOKEN.matcher (resolvedToken);
+      if (m.matches())
+      {
+         String text = m.group(1).toUpperCase();
+         String replacement = Constants.PLURALS.get(text);
+         
+         if (replacement != null) // found the appropriate plural form
+            resolvedToken = m.replaceFirst(replacement);
+         else if (text.endsWith("S"))
+            resolvedToken = text + "es";
+         else if (text.endsWith("Y"))
+            resolvedToken = text.substring(0, text.length() - 1) + "ies"; // strip Y, add IES
+         else
+            resolvedToken = text + "s";
+      }
+      
+      if (DEBUG && !token.equals (resolvedToken))
+         System.out.println ("  resolvePlurals: [" + token + "] = [" + resolvedToken + "]");
+      return resolvedToken;
+   }
+   
    private static String resolveQuantity (final String token)
    {
       String resolvedToken = token;
       if (Quantity.is(token))
          resolvedToken = "" + new Quantity(token).resolve();
       if (DEBUG && !token.equals (resolvedToken))
-         System.out.println ("resolveQuantity: [" + token + "] = [" + resolvedToken + "]");
+         System.out.println ("  resolveQuantity: [" + token + "] = [" + resolvedToken + "]");
       return resolvedToken;
    }
    
@@ -203,7 +222,7 @@ public final class Macros
          
          resolved = m.replaceFirst (satisfied ? ifVal : elseVal); 
          if (DEBUG && !token.equals (resolved))
-             System.out.println ("resolveConditions: [" + token + "] = [" + resolved + "]");
+             System.out.println ("  resolveConditions: [" + token + "] = [" + resolved + "]");
       }
       return resolved;
    }
@@ -218,7 +237,7 @@ public final class Macros
          int roll = RandomEntry.get (tokens.length);
          resolved = m.replaceFirst (tokens[roll]); 
          if (DEBUG && !token.equals (resolved))
-             System.out.println ("resolveOneOfs: [" + token + "] = [" + resolved + "]");
+             System.out.println ("  resolveOneOfs: [" + token + "] = [" + resolved + "]");
       }
       return resolved;
    }
@@ -262,7 +281,7 @@ public final class Macros
          }
          
          if (DEBUG && !token.equals (resolved))
-            System.out.println ("resolveScripts: [" + token + "] = [" + resolved + "]");
+            System.out.println ("  resolveScripts: [" + token + "] = [" + resolved + "]");
       }
       return resolved;
    }
@@ -330,7 +349,7 @@ public final class Macros
             }
             
             if (DEBUG && !entry.equals (resolved))
-               System.out.println ("resolveTables: [" + entry + "] = [" + resolved + "]");
+               System.out.println ("  resolveTables: [" + entry + "] = [" + resolved + "]");
          }
       }
       
@@ -371,32 +390,20 @@ public final class Macros
       Macros.DEBUG = true;
       
       Table.populate (new File ("data/Tables"));
-      String entry;
+      Script.populate (new File ("data/Scripts"));
       
-      entry = "{Island Event}";
-      System.out.println (entry + " = " + Macros.resolve (entry, null));
-      
-      entry = "{Metal" + Constants.SUBSET_CHAR + "}";
-      System.out.println (entry + " = " + Macros.resolve (entry, null));
-
-      entry ="Description: {Color}{{5}=5?, with bits of {Reagent} floating in it}";
-      System.out.println (entry + " = " + Macros.resolve (entry, null));
-      
-      entry ="Filter: {Noise#S.+}";
-      System.out.println (entry + " = " + Macros.resolve (entry, null));
-      
-      entry ="Filter Variable: {Color:Basic{!1}}";
-      System.out.println (entry + " = " + Macros.resolve (entry, null));
-      
-      entry ="Filter: {Color:Basic#S.+}";
-      System.out.println (entry + " = " + Macros.resolve (entry, null));
-      
-      // test a back-reference to produce alliteration
-      entry ="Filter: {Noise} {Fauna#!.!.*}";
-      System.out.println (entry + " = " + Macros.resolve (entry, null));
-      
-      // test a back-reference with a column
-      entry ="{Trait} {Class@Class#!.!.*}";
-      System.out.println (entry + " = " + Macros.resolve (entry, null));
+      /*
+      Macros.resolve ("{Island Event}");
+      Macros.resolve ("{Metal" + Constants.SUBSET_CHAR + "}");
+      Macros.resolve ("Description: {Color}{{5}=5?, with bits of {Reagent} floating in it}");
+      Macros.resolve ("Filter: {Noise#S.+}");
+      Macros.resolve ("Filter Variable: {Color:Basic{!OneWord}}");
+      Macros.resolve ("Filter: {Color:Basic#S.+}");
+      Macros.resolve ("{Color} " + Constants.LAST_RESOLVED_TOKEN); // test last resolved
+      Macros.resolve ("{#text:.}"); // test a filtered token
+      Macros.resolve ("{Color} {Fauna#{#{!}:.}.*}"); // test a back-reference with a filter
+      Macros.resolve ("{+thing} {+moss} {+fly} {+mouse}"); // test plurals
+      */
+      Macros.resolve ("{Weapon}");
    }
 }
