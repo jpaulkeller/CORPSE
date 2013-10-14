@@ -68,7 +68,7 @@ public class TreePanel extends JSplitPane
       tree.setRootVisible (false);
       tree.setEditable (false);
       tree.addTreeSelectionListener (new TreeListener());
-      tree.addMouseListener (new ClickListener()); // to handle double-clicks
+      tree.addMouseListener (new TreeNodeClickListener()); // to handle double-clicks
 
       treeFilter = new JTextField();
       treeFilter.getDocument().addDocumentListener (new FilterListener());
@@ -137,6 +137,7 @@ public class TreePanel extends JSplitPane
          this.suffix = "." + suffix.toLowerCase();
       }
       
+      @Override
       public boolean accept (final File f)
       {
          return f.isDirectory() || f.getName().toLowerCase().endsWith (suffix);
@@ -145,6 +146,7 @@ public class TreePanel extends JSplitPane
    
    class TreeListener implements TreeSelectionListener
    {
+      @Override
       public void valueChanged (final TreeSelectionEvent e)
       {
          applySelection();
@@ -161,11 +163,11 @@ public class TreePanel extends JSplitPane
          if (index >= 0)
             tabs.setSelectedIndex(index);
          else
-            loadRaw(name);
+            loadRaw(name, 0);
       }
    }
 
-   private void loadRaw(final String name)
+   private void loadRaw(final String name, final int caret)
    {
       File file = getFile(name);
       if (file != null)
@@ -175,7 +177,7 @@ public class TreePanel extends JSplitPane
             raw = makeRaw(name);
          
          raw.setText (FileUtils.getText (file));
-         raw.setCaretPosition (0);
+         try { raw.setCaretPosition (caret); } catch (IllegalArgumentException x) { }
          tabs.setSelectedIndex(tabs.indexOfTab(name));
          tabs.validate();
       }
@@ -183,8 +185,14 @@ public class TreePanel extends JSplitPane
 
    private JTextArea findRaw(final String name)
    {
-      JTextArea raw = null;
       int index = tabs.indexOfTab(name);
+      JTextArea raw = findRaw(index);
+      return raw;
+   }
+
+   private JTextArea findRaw(final int index)
+   {
+      JTextArea raw = null;
       if (index >= 0)
       {
          Component c = tabs.getComponentAt(index);
@@ -213,7 +221,7 @@ public class TreePanel extends JSplitPane
       return raw;
    }
    
-   protected void loadResolved(final String name)
+   protected void loadResolved(final String name, final int row)
    {
       Table table = Table.getTable (name);
       if (table != null)
@@ -224,15 +232,17 @@ public class TreePanel extends JSplitPane
          else
             resolved = makeResolved(name);
          
-         Component view = populateResolved(table, name);
+         JXTable view = populateResolved(table, name);
          resolved.add (new JScrollPane (view)); // the scroller here also gives us the column headers 
          resolved.validate();
+         System.out.println("ROW = " + row); //TODO
+         view.scrollRowToVisible(row);
          
          tabs.setSelectedIndex(tabs.indexOfTab(name));
       }
    }
 
-   private Component populateResolved(final Table table, final String name)
+   private JXTable populateResolved(final Table table, final String name)
    {
       DefaultTableModel model = table.getModel();
       JXTable view = new TableView (model, name, new TokenRenderer()).getView();
@@ -244,8 +254,14 @@ public class TreePanel extends JSplitPane
 
    protected JPanel findResolved(final String name)
    {
-      JPanel resolved = null;
       int index = tabs.indexOfTab(name);
+      JPanel resolved = findResolved(index);
+      return resolved;
+   }
+
+   private JPanel findResolved(final int index)
+   {
+      JPanel resolved = null;
       if (index >= 0)
       {
          Component c = tabs.getComponentAt(index);
@@ -312,8 +328,33 @@ public class TreePanel extends JSplitPane
    public void refresh()
    {
       refreshTree();
-      refreshRaw();
-      refreshResolved();
+      refreshRaw(getRawCaretPosition());
+      refreshResolved(getResolvedPosition());
+   }
+
+   private int getRawCaretPosition()
+   {
+      int caret = 0;
+      int index = tabs.getSelectedIndex();
+      JTextArea raw = findRaw(index);
+      if (raw != null)
+         caret = raw.getCaretPosition();
+      return caret;
+   }
+
+   protected int getResolvedPosition()
+   {
+      int row = 0;
+      int index = tabs.getSelectedIndex();
+      JPanel resolved = findResolved(index);
+      if (resolved != null)
+      {
+         JScrollPane scroll = (JScrollPane) resolved.getComponent(0);
+         JViewport viewport = (JViewport) scroll.getComponent(0);
+         JXTable view = (JXTable) viewport.getComponent(0);
+         row = view.getSelectedRow(); // TODO - visible row, not selected
+      }
+      return row;
    }
 
    private void refreshTree()
@@ -323,23 +364,23 @@ public class TreePanel extends JSplitPane
       tree.expandAll(); // TODO?
    }
    
-   private void refreshRaw()
+   private void refreshRaw(final int caret)
    {
       int tabIndex = tabs.getSelectedIndex();
       if (tabIndex >= 0)
       {
          String title = tabs.getTitleAt(tabIndex);
-         loadRaw(title);
+         loadRaw(title, caret);
       }
    }
 
-   private void refreshResolved()
+   private void refreshResolved(final int row)
    {
       int tabIndex = tabs.getSelectedIndex();
       if (tabIndex >= 0)
       {
          String title = tabs.getTitleAt(tabIndex);
-         loadResolved(title);
+         loadResolved(title, row);
       }
    }
 
@@ -378,13 +419,18 @@ public class TreePanel extends JSplitPane
       }
    }
    
-   class ClickListener extends MouseAdapter
+   class TreeNodeClickListener extends MouseAdapter
    {
       @Override
       public void mouseClicked (final MouseEvent e)
       {
          if (e.getClickCount() > 1) // support double-click selection
+         {
+            String table = getSelectedTable();
+            if (table != null)
+               app.setQuickSlot(table);
             roll();
+         }
       }
    }
    
@@ -415,7 +461,7 @@ public class TreePanel extends JSplitPane
             {
                JLabel label = (JLabel) e.getSource();
                String name = label.getText();
-               loadResolved(name);
+               loadResolved(name, 0);
             }
             layout.next(cards);
          }

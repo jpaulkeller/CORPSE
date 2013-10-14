@@ -35,6 +35,7 @@ public class InvisibleTreeModel extends DefaultTreeModel
       return filterIsActive;
    }
 
+   @Override
    public Object getChild(Object parent, int index)
    {
       if (filterIsActive && parent instanceof InvisibleNode)
@@ -43,6 +44,7 @@ public class InvisibleTreeModel extends DefaultTreeModel
       return ((TreeNode) parent).getChildAt(index);
    }
 
+   @Override
    public int getChildCount(Object parent)
    {
       if (filterIsActive && parent instanceof InvisibleNode)

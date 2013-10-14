@@ -9,12 +9,15 @@
  *  
  * 3) Define a roll, such as ": Title {2d10}".  This allows bell-curves when selecting a random row from the subset.
  * 
- * 4) Combine subsets such as ": Metal = Alloy + Normal + Precious" (where all names are non-combined subsets in that table).
+ * 4) Composite subsets such as ": Metal = Alloy + Normal + Precious" (where all names are non-composite subsets in that table).
+ * 
+ * 5) Filter subsets, such as ": Military = .*military.*".
+ * 
+ * To reference a subset, you would use {Table:Subset} -- or just {:Subset} within the table, as a shortcut. 
  */
 
 package corpse;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -29,19 +32,21 @@ public class Subset
    
    // : Name
    // : Name {1-10)
-   private static final String SUBSET_REGEX = "^\\" + SC + " *" + SN + "(?: +" + RANGE_TOKEN + ")?";
+   private static final String SUBSET_REGEX = "^\\" + SC + " *" + SN + "(?: +" + RANGE_TOKEN + ")?" + Constants.COMMENT;
    private static final Pattern SUBSET = Pattern.compile (SUBSET_REGEX, Pattern.CASE_INSENSITIVE);
    
    // : Name = name + name + name (up to 20)
    private static final String META_SUBSET_REGEX = "^\\" + SC + " *" + SN + " *= *(" + SN + "(?: *\\+ *" + SN + "){0,20})";
    private static final Pattern COMPOSITE_SUBSET = Pattern.compile (META_SUBSET_REGEX, Pattern.CASE_INSENSITIVE);
 
-   // {Table:Subset}
-   // private static final Pattern SUBSET_REF = Pattern.compile (Constants.NAME + SC + SN + "?", Pattern.CASE_INSENSITIVE);
-   
+   // : Name = regex
+   private static final String FILTER_REGEX = "^\\" + SC + " *" + SN + " *= *(.*)";
+   private static final Pattern FILTER_SUBSET = Pattern.compile (FILTER_REGEX, Pattern.CASE_INSENSITIVE);
+
    private String name;
    private String roll;
    private int min, max;
+   private Pattern pattern;
    
    private List<String> composites = new ArrayList<String>();
    
@@ -60,6 +65,13 @@ public class Subset
          Matcher nameMatcher = Constants.NAME_PATTERN.matcher(m.group(2));
          while (nameMatcher.find())
             subset.composites.add(nameMatcher.group(1));
+         table.addSubset(subset);
+      }
+      else if ((m = FILTER_SUBSET.matcher (entry)).find())
+      {
+         subset = new Subset();
+         subset.name = m.group (1);
+         subset.pattern = Pattern.compile(m.group(2).trim(), Pattern.CASE_INSENSITIVE); // TODO try/catch
          table.addSubset(subset);
       }
       else if ((m = SUBSET.matcher (entry)).find())
@@ -114,6 +126,16 @@ public class Subset
             s.setRoll("{" + s.getMin() + "-" + table.size() + "}");
    }
    
+   public boolean includes(final int row, final String line)
+   {
+      boolean include = false;
+      if (pattern != null)
+         include = pattern.matcher(line).matches();
+      else
+         include = (row >= min && row <= max);
+      return include;
+   }
+   
    public int random()
    {
       return Macros.resolveNumber (roll);
@@ -141,13 +163,17 @@ public class Subset
       sb.append (name + " " + roll + " ");
       for (String composite : composites)
          sb.append(composite + " + ");
+      if (pattern != null)
+         sb.append(" filter=[" + pattern.pattern() + "]");
       return sb.toString();
    }
    
    public static void main (final String[] args)
    {
-      Table.populate (new File ("data/Tables"));
+      CORPSE.init(true);
 
+      Table t = Table.getTable("FLORA");
+      
       for (Table table : Table.getTables())
       {
          table.importTable();
@@ -156,8 +182,8 @@ public class Subset
             System.out.println (table);
             for (Subset subset : table.getSubsets().values())
             {
-               String token = "{" + table.getName() + Constants.SUBSET_CHAR + subset.getName() + "}";
-               System.out.println("  > " + token + " = " + Macros.resolve(token));
+               String token = "{" + table.getName().toLowerCase() + Constants.SUBSET_CHAR + subset.getName() + "}";
+               System.out.println("  > " + token + " = " + Macros.resolve(table.getName(), token));
             }
          }
       }

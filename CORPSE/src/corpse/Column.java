@@ -24,7 +24,6 @@
 
 package corpse;
 
-import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -32,18 +31,23 @@ public class Column implements Comparable<Column>
 {
    private static final String CC = Constants.COLUMN_CHAR;
    private static final String CN = Constants.COLUMN_NAME;
+
+   private static final Pattern CN_PATTERN = Pattern.compile (CN, Pattern.CASE_INSENSITIVE);
    
    // @ Name
-   private static final Pattern COLUMN = Pattern.compile ("^\\" + CC + "\\s*" + CN, Pattern.CASE_INSENSITIVE);
+   private static final Pattern COLUMN = 
+         Pattern.compile ("^\\" + CC + "\\s*" + CN + Constants.COMMENT, Pattern.CASE_INSENSITIVE);
    // @ Name width
-   private static final Pattern COLUMN_FIXED = Pattern.compile ("^\\" + CC + "\\s*" + CN + "\\s+(\\d+)", Pattern.CASE_INSENSITIVE);
+   private static final Pattern COLUMN_FIXED = 
+         Pattern.compile ("^\\" + CC + "\\s*" + CN + "\\s+(\\d+) + Constants.COMMENT", Pattern.CASE_INSENSITIVE);
    // @ Name start width
-   private static final Pattern COLUMN_FULL = Pattern.compile ("^" + CC + "\\s*" + CN + "\\s+(\\d+)\\s+(\\d+)", Pattern.CASE_INSENSITIVE);
+   private static final Pattern COLUMN_FULL = 
+         Pattern.compile ("^" + CC + "\\s*" + CN + "\\s+(\\d+)\\s+(\\d+) + Constants.COMMENT", Pattern.CASE_INSENSITIVE);
    // @ First    Second     Third    ...
-   private static final String HEADER_REGEX = "^\\" + CC + "(\\s*" + CN + "(?:\\s\\s+" + CN + "){1,20})";
+   private static final String HEADER_REGEX = "^\\" + CC + "(\\s*" + CN + "(?:\\s\\s+" + CN + "){1,20})" + Constants.COMMENT;
    private static final Pattern COLUMN_HEADER = Pattern.compile (HEADER_REGEX, Pattern.CASE_INSENSITIVE);
    // @ Name1, Name2, ... (2 to 20)
-   private static final String CSV_REGEX = "^\\" + CC + "\\s*(" + CN + "(?:,\\s*" + CN + "){1,20})";
+   private static final String CSV_REGEX = "^\\" + CC + "\\s*(" + CN + "(?:,\\s*" + CN + "){1,20})" + Constants.COMMENT;
    private static final Pattern COLUMNS_CSV = Pattern.compile (CSV_REGEX, Pattern.CASE_INSENSITIVE);
 
    // field1;field2;...
@@ -78,7 +82,7 @@ public class Column implements Comparable<Column>
       }
       else if ((m = COLUMNS_CSV.matcher (entry)).find()) // First, Second, ...
       {
-         Matcher nameMatcher = Constants.NAME_PATTERN.matcher(m.group(1));
+         Matcher nameMatcher = CN_PATTERN.matcher(m.group(1));
          while (nameMatcher.find())
             table.addColumn(new Column(nameMatcher.group(1), table.getColumns().size()));
       }
@@ -92,7 +96,7 @@ public class Column implements Comparable<Column>
 
    private static void parseColumnHeader(final Table table, final String header)
    {
-      Matcher m = Constants.NAME_PATTERN.matcher(header);
+      Matcher m = CN_PATTERN.matcher(header);
       while (m.find())
       {
          Column column = new Column();
@@ -183,6 +187,7 @@ public class Column implements Comparable<Column>
       return "[" + index + "] " + name + " " + start + " " + width;
    }
 
+   @Override
    public int compareTo (final Column other)
    {
       return index - other.index;
@@ -190,7 +195,13 @@ public class Column implements Comparable<Column>
    
    public static void main (final String[] args)
    {
-      Table.populate (new File ("data/Tables"));
+      CORPSE.init(true);
+
+      /*
+      Table table = Table.getTable("METAL");
+      if (!table.getColumns().isEmpty())
+         System.out.println (table);
+         */
       
       for (Table table : Table.getTables())
       {

@@ -1,6 +1,5 @@
 package corpse;
 
-import java.io.File;
 import java.util.Random;
 
 public final class RandomEntry
@@ -148,7 +147,7 @@ public final class RandomEntry
       System.out.println ("Average (should be near " + mean + "): " + (total / runs));
       System.out.println();
       
-      Table.populate (new File ("data/Tables"));
+      CORPSE.init(true);
 
       // String tableName = "TREASURE";
       // String tableName = "REAGENT";
