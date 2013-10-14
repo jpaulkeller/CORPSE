@@ -17,8 +17,11 @@ import javax.swing.JPanel;
 import javax.swing.JProgressBar;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 import utils.ImageTools;
+import corpse.ui.Menus;
 import corpse.ui.ScriptPanel;
 import corpse.ui.TabPane;
 import corpse.ui.TreePanel;
@@ -26,23 +29,30 @@ import corpse.ui.TreePanel;
 /** Computer-Oriented Role-Playing System & Environment */
 
 // TODO
-//fix WEAPON table
 //export text
 //include/weight/etc for scripts? eg. Custom.cmd
 //support composite columns (like Job xxx = Title + Profession)
 //change CMD suffix?
-//when focus is in the dice roll slot, F5 should just refresh it
-//use default macro for dice button (e.g, TitleMilitary:)
 //This ad hoc subset syntax is not yet supported, but might be useful: Table STRUCTURE value: {AAA:3 - 4}
-// Reset should restore the cursor/row position if possible
-// Depends - show raw token, resolved, tables used in
+//Reset should restore the row position if possible
+//Depends - show raw token, resolved, tables used in
+//refresh should reload the table (update subsets, columns)
+//refresh should reload the tables and update the tree (pick up new tables)
+//support include lines with prefixes like ">> {{4d2-3} reagent}" in potion.cmd
+//consolidate comment characters
 
-// drag&drop from tree to panels and to dice slot
+//named filters? see Professions.tbl
+
+//test embedded subsets in weighted lines TSR SCROLL
+//consider allowing unique (or local) column names to work as shortcuts (e.g. @Royalty)
+//matrix (e.g. name generators in KoDT #200)
+//splash and progress bar
+//allow comments after subsets/columns
+
+//consider extending ArrayList to support WeightedList (store weight; don't duplicate element) 
 //player vs. DM views of data
 //Figure out how to resolve CONDITIONS before resolving the inner values
 //Interactive color-coded display (click to re-generate, or manually override, etc)
-//matrix (e.g. name generators in KoDT #200)
-//splash and progress bar
 
 // TODO data
 // convert all costs to a standard generic number ~1sp
@@ -56,6 +66,18 @@ public class CORPSE
    private JProgressBar progress;
    private JTextField quickSlot; 
    private JButton entryButton;
+   
+   public static void init(final boolean debug)
+   {
+      Macros.DEBUG = debug;
+      Table.populate (new File ("data/Tables"));
+      Script.populate (new File ("data/Scripts"));
+   }
+   
+   public CORPSE()
+   {
+      init(false);
+   }
    
    public JPanel getMainPanel()
    {
@@ -73,18 +95,18 @@ public class CORPSE
       tabs.addTab ("Tables", ImageTools.getIcon ("icons/20/gui/Table.gif"), tables);
       tabs.addTab ("Scripts", ImageTools.getIcon ("icons/20/objects/GearGreen.gif"), scripts);
       
-      quickSlot = new JTextField (15);
+      entryButton = menus.makeButton (Menus.ROLL, null, "Click to roll an entry from the selected table");
+      entryButton.setEnabled(false);
+
+      quickSlot = new JTextField (30);
       quickSlot.addKeyListener (new MyKeyListener());
-      quickSlot.setToolTipText
-         ("For a quick random value, enter any table name or dice expression (e.g., INN NAME or 3d6)");
+      quickSlot.setToolTipText ("For a quick random value, enter any table name or dice expression (e.g., INN NAME or 3d6)");
+      quickSlot.getDocument().addDocumentListener (new QuickSlotListener());
       
       progress = new JProgressBar (0, 100);
       progress.setFont (new Font ("Arial", Font.BOLD, 14));
       progress.setStringPainted (true);
       
-      entryButton = menus.makeButton (Menus.ROLL, "icons/20/objects/Dice.gif",
-      "Click to roll an entry from the selected table");
-
       final JPanel left =  new JPanel (new BorderLayout());
       left.add (entryButton, BorderLayout.WEST);
       left.add (quickSlot, BorderLayout.CENTER);
@@ -104,11 +126,11 @@ public class CORPSE
       mainPanel.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(f5, "Refresh");
    }
 
-   void roll()
+   public void roll()
    {
       String macro = quickSlot.getText();
       if (macro != null && !macro.equals (""))
-         progress.setString (Macros.resolve ("{" + macro + "}"));
+         progress.setString (Macros.resolve (null, "{" + macro + "}")); // TODO currently selected?
       else
          tables.roll();
    }
@@ -132,16 +154,18 @@ public class CORPSE
       scripts.setDividerLocation (0.25);
    }
 
-   // TODO: is this used?
+   // when the user pressed "ENTER", this fill generate a random entry
    private class MyKeyListener extends KeyAdapter
    {
       @Override
       public void keyPressed (final KeyEvent e)
       {
-         System.out.println("CORPSE.MyKeyListener.keyReleased()");
-         int keyCode = e.getKeyCode();
-         if (keyCode == KeyEvent.VK_ENTER && entryButton.isEnabled())
-            entryButton.doClick();
+         if (entryButton.isEnabled())
+         {
+            int keyCode = e.getKeyCode();
+            if (keyCode == KeyEvent.VK_ENTER || keyCode == KeyEvent.VK_F5)
+               entryButton.doClick();
+         }
       }
    }
 
@@ -154,6 +178,7 @@ public class CORPSE
          super("Refresh");
       }
       
+      @Override
       public void actionPerformed(final ActionEvent e)
       {
          refresh();
@@ -173,14 +198,34 @@ public class CORPSE
       System.out.println("CORPSE.export()"); // TODO
    }
    
+   public void setQuickSlot(final String text)
+   {
+      quickSlot.setText(text);
+   }
+   
+   class QuickSlotListener implements DocumentListener
+   {
+      // implement DocumentListener
+      @Override
+      public void removeUpdate  (final DocumentEvent e) { valueChanged(); }
+      @Override
+      public void changedUpdate (final DocumentEvent e) { valueChanged(); }
+      @Override
+      public void insertUpdate  (final DocumentEvent e) { valueChanged(); }
+
+      private void valueChanged()
+      {
+         String resolve = null;
+         if (!quickSlot.getText().isEmpty())
+            resolve = Macros.resolve (null, "{" + quickSlot.getText() + "}"); // TODO currently selected?
+         entryButton.setEnabled(resolve != null && !resolve.matches("<.+>"));
+      }
+   }
+   
    public static void main (final String[] args)
    {
-      // Macros.DEBUG = true;
-
-      ComponentTools.setDefaults();
-      Table.populate (new File ("data/Tables"));
-      Script.populate (new File ("data/Scripts"));
-
+      ComponentTools.setLookAndFeelNimbus();
+      
       CORPSE app = new CORPSE();
       app.buildGUI();
       app.open();

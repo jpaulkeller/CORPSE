@@ -1,6 +1,5 @@
 package corpse;
 
-import java.io.File;
 import java.util.Stack;
 import java.util.Vector;
 import java.util.regex.Matcher;
@@ -20,15 +19,15 @@ public final class Macros
    
    private Macros() { }
 
-   public static String resolve (final String entry) // for debugging
+   public static String resolve (final String tableOrScriptName, final String entry) // for debugging
    {
-      String resolved = resolve(entry, null);
+      String resolved = resolve(tableOrScriptName, entry, null);
       if (DEBUG)
          System.out.println(entry + " = [" + resolved + "]");
       return resolved;
    }
    
-   public static String resolve (final String entry, final String filter)
+   public static String resolve (final String tableOrScriptName, final String entry, final String filter)
    {
       String resolvedEntry = entry;
       lastResolved.clear();
@@ -40,7 +39,7 @@ public final class Macros
          String resolvedToken = token;
          
          resolvedToken = resolveExpressions (resolvedToken);
-         resolvedToken = resolveTables (resolvedToken, filter);
+         resolvedToken = resolveTables (tableOrScriptName, resolvedToken, filter);
          resolvedToken = resolveScripts (resolvedToken);
          if (resolvedToken.equals(token))
             resolvedToken = m.replaceFirst ("<$1>"); // avoid infinite loop
@@ -70,10 +69,11 @@ public final class Macros
 
    public static int resolveNumber (final String entry)
    {
-      int qty = 0;
-      if (Quantity.is(entry))
-         qty = new Quantity(entry).get();
-      return qty;
+      int resolved = 0;
+      Quantity qty = Quantity.getQuantity(entry);
+      if (qty != null)
+         resolved = qty.get();
+      return resolved;
    }
    
    public static int getMin (final String token)
@@ -86,7 +86,7 @@ public final class Macros
       return new Quantity(token).getMax();
    }
 
-   private static String resolveExpressions (final String token)
+   public static String resolveExpressions (final String token)
    {
       String resolvedToken;
       resolvedToken = resolveQuantity (token);
@@ -191,8 +191,9 @@ public final class Macros
    private static String resolveQuantity (final String token)
    {
       String resolvedToken = token;
-      if (Quantity.is(token))
-         resolvedToken = "" + new Quantity(token).resolve();
+      Quantity qty = Quantity.getQuantity(token);
+      if (qty != null)
+         resolvedToken = "" + qty.resolve();
       if (DEBUG && !token.equals (resolvedToken))
          System.out.println ("  resolveQuantity: [" + token + "] = [" + resolvedToken + "]");
       return resolvedToken;
@@ -286,71 +287,90 @@ public final class Macros
       return resolved;
    }
 
-   private static String resolveTables (final String entry, final String filter)
+   private static String resolveTables (final String tableOrScriptName, final String entry, final String filter)
    {
       String resolved = entry;
-      Matcher m = Constants.TABLE_XREF.matcher (resolved);
-      if (m.matches())
+      
+      int count = 0;
+      String token = null;
+      String xrefTbl = null;
+      String xrefSub = null;
+      String xrefCol = null;
+      String xrefFil = null;
+      
+      Matcher m = Constants.SUBSET_REF.matcher (resolved);
+      if (m.matches() && tableOrScriptName != null)
       {
-         int count = 1;
+         count = 1;
+         token   = m.group (0);
+         xrefSub = m.group (1);
+         xrefCol = m.group (2);
+         xrefFil = m.group (3);
+         xrefTbl = matchCase(xrefSub + xrefCol, tableOrScriptName.toLowerCase());
+         System.err.println("Macros.resolveTables(): " + tableOrScriptName + " -> " + xrefTbl); // TODO
+      }
+      else if ((m = Constants.TABLE_XREF.matcher (resolved)).matches())
+      {
+         count = 1;
          if (m.group (1) != null)
             count = Integer.parseInt (m.group (1));
-         if (count > 0)
+         
+         token   = m.group (0);
+         xrefTbl = m.group (2);
+         xrefSub = m.group (3);
+         xrefCol = m.group (4);
+         xrefFil = m.group (5);
+      }
+      
+      if (count > 0)
+      {
+         if (xrefFil == null && filter != null)
+            xrefFil = filter;
+         if (xrefSub == null && token.contains (Constants.SUBSET_CHAR)) // e.g., Metal:
+            xrefSub = xrefTbl;
+         
+         // System.out.println("Macros [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
+         
+         // avoid infinite loop references
+         if (TOKEN_STACK.contains (token))
          {
-            String token   = m.group (0);
-            String xrefTbl = m.group (2);
-            String xrefSub = m.group (3);
-            String xrefCol = m.group (4);
-            String xrefFil = m.group (5);
-            
-            if (xrefFil == null && filter != null)
-               xrefFil = filter;
-            if (xrefSub == null && token.contains (Constants.SUBSET_CHAR)) // e.g., Metal:
-               xrefSub = xrefTbl;
-            
-            // System.out.println("token [" + token + "] sub [" + xrefSub + "] col [" + xrefCol + "] fil [" + xrefFil + "]");
-            
-            // avoid infinite loop references
-            if (TOKEN_STACK.contains (token))
+            int depth = 0;
+            for (String s : TOKEN_STACK)
+               if (s.equals (token))
+                  depth++;
+            if (depth > 1) // allow limited recursion (e.g., for Potion of Delusion)
             {
-               int depth = 0;
-               for (String s : TOKEN_STACK)
-                  if (s.equals (token))
-                     depth++;
-               if (depth > 1) // allow limited recursion (e.g., for Potion of Delusion)
-               {
-                  System.err.println ("Recursive token error: " + token);
-                  String loop = getInvalidTableToken (xrefTbl, xrefSub, xrefCol, xrefFil);
-                  resolved = m.replaceFirst (Matcher.quoteReplacement (loop));
-               }
+               System.err.println ("Recursive token error: " + token);
+               String loop = getInvalidTableToken (xrefTbl, xrefSub, xrefCol, xrefFil);
+               resolved = m.replaceFirst (Matcher.quoteReplacement (loop));
             }
-            
-            if (entry.equals(resolved))
-            {
-               TOKEN_STACK.push (token);
-               
-               StringBuilder buf = new StringBuilder();
-               for (int i = 0; i < count; i++)
-               {
-                  String xref = RandomEntry.get (xrefTbl, xrefSub, xrefCol, xrefFil);
-                  if (xref == null)
-                  {
-                     System.err.println ("Invalid reference: " + entry);
-                     xref = getInvalidTableToken (xrefTbl, xrefSub, xrefCol, xrefFil);
-                  }
-                  buf.append (xref);
-                  if (count > 1)
-                     buf.append ("\n");
-               }
-               
-               resolved = m.replaceFirst (Matcher.quoteReplacement (buf.toString()));
-               
-               TOKEN_STACK.pop();
-            }
-            
-            if (DEBUG && !entry.equals (resolved))
-               System.out.println ("  resolveTables: [" + entry + "] = [" + resolved + "]");
          }
+         
+         if (entry.equals(resolved))
+         {
+            TOKEN_STACK.push (token);
+            
+            StringBuilder buf = new StringBuilder();
+            for (int i = 0; i < count; i++)
+            {
+               String xref = RandomEntry.get (xrefTbl, xrefSub, xrefCol, xrefFil);
+               if (xref == null)
+               {
+                  System.err.println ("Invalid reference: " + entry);
+                  xref = getInvalidTableToken (xrefTbl, xrefSub, xrefCol, xrefFil);
+               }
+               buf.append (xref);
+               if (count > 1)
+                  buf.append ("\n");
+            }
+            
+            resolved = m.replaceFirst (Matcher.quoteReplacement (buf.toString()));
+            
+            TOKEN_STACK.pop();
+         }
+         
+         if (DEBUG && !entry.equals (resolved))
+            System.out.println ("  resolveTables: [" + entry + "] = [" + resolved + "]");
       }
       
       return resolved;
@@ -360,11 +380,13 @@ public final class Macros
    
    private static String matchCase(final String token, String resolved)
    {
-      if (token.toLowerCase().equals(token))
+      if (resolved.toUpperCase().equals(resolved))
+         ; // do nothing; leave the value all uppercase (for acronyms)
+      else if (token.toLowerCase().equals(token)) // all lower
          resolved = resolved.toLowerCase();
-      else if (token.toUpperCase().equals(token) || resolved.length() <= 1) 
+      else if (token.toUpperCase().equals(token) || resolved.length() <= 1) // all upper 
          resolved = resolved.toUpperCase();
-      else
+      else // cap-init
          resolved = resolved.substring(0, 1).toUpperCase() + resolved.substring(1).toLowerCase();
       return resolved;
    }
@@ -389,21 +411,18 @@ public final class Macros
    {
       Macros.DEBUG = true;
       
-      Table.populate (new File ("data/Tables"));
-      Script.populate (new File ("data/Scripts"));
+      CORPSE.init(true);
       
-      /*
-      Macros.resolve ("{Island Event}");
-      Macros.resolve ("{Metal" + Constants.SUBSET_CHAR + "}");
-      Macros.resolve ("Description: {Color}{{5}=5?, with bits of {Reagent} floating in it}");
-      Macros.resolve ("Filter: {Noise#S.+}");
-      Macros.resolve ("Filter Variable: {Color:Basic{!OneWord}}");
-      Macros.resolve ("Filter: {Color:Basic#S.+}");
-      Macros.resolve ("{Color} " + Constants.LAST_RESOLVED_TOKEN); // test last resolved
-      Macros.resolve ("{#text:.}"); // test a filtered token
-      Macros.resolve ("{Color} {Fauna#{#{!}:.}.*}"); // test a back-reference with a filter
-      Macros.resolve ("{+thing} {+moss} {+fly} {+mouse}"); // test plurals
-      */
-      Macros.resolve ("{Weapon}");
+      Macros.resolve (null, "{Island Event}");
+      Macros.resolve (null, "{Metal" + Constants.SUBSET_CHAR + "}");
+      Macros.resolve (null, "Description: {Color}{{5}=5?, with bits of {Reagent} floating in it}");
+      Macros.resolve (null, "Filter: {Noise#S.+}");
+      Macros.resolve (null, "Filter Variable: {Color:Basic{!OneWord}}");
+      Macros.resolve (null, "Filter: {Color:Basic#S.+}");
+      Macros.resolve (null, "{Color} " + Constants.LAST_RESOLVED_TOKEN); // test last resolved
+      Macros.resolve (null, "{#text:.}"); // test a filtered token
+      Macros.resolve (null, "{Color} {Fauna#{#{!}:.}.*}"); // test a back-reference with a filter
+      Macros.resolve (null, "{+thing} {+moss} {+fly} {+mouse}"); // test plurals
+      Macros.resolve ("Barsoom Plot", "{:Villain}"); // test subset short-cut
    }
 }

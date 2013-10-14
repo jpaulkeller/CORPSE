@@ -25,7 +25,13 @@ public class ScriptPanel extends TreePanel
    }
 
    @Override
-   protected void loadResolved(final String name)
+   protected int getResolvedPosition()
+   {
+      return 0; // TODO
+   }
+
+   @Override
+   protected void loadResolved(final String name, final int caret)
    {
       Script script = Script.getScript(name);
       if (script != null)

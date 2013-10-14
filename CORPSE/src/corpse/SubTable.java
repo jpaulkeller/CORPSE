@@ -21,6 +21,7 @@ public class SubTable extends Table
       Matcher m = Constants.TABLE_XREF.matcher (token);
       if (m.matches())
       {
+         // String qty = m.group (1);
          String xrefTbl = m.group (2);
          String xrefSub = m.group (3);
          String xrefCol = m.group (4);
@@ -31,7 +32,7 @@ public class SubTable extends Table
          if (xrefCol == null && token.contains (Constants.COLUMN_CHAR)) // e.g., Job@
             xrefCol = xrefTbl;
          
-         // System.out.println("token [" + token + "] tbl [" + xrefTbl + "] sub [" + xrefSub + "] col [" + xrefCol + "] fil [" + xrefFil + "]");
+         // System.out.println("[" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
          
          Table unfiltered = Table.getTable(xrefTbl);
          tableName = token;
@@ -48,14 +49,14 @@ public class SubTable extends Table
          TABLES.put (tableName, this);
       }
       else
-         System.out.println("Invalid TABLE token: " + token);
+         System.out.println("Invalid table token: " + token);
    }
 
    @Override
    public boolean add(final String line)
    {
       count++;
-      if (subset == null || (count >= subset.getMin() && count <= subset.getMax()))
+      if (subset == null || subset.includes(count, line))
       {
          String entry = line;
          if (column != null)
@@ -63,8 +64,6 @@ public class SubTable extends Table
          if (filter == null || filter.matcher(entry).matches())
             return super.add(entry);
       }
-      // else System.out.println(count + " is out of subset: " + line); //TODO
-      
       return false;
    }
    
@@ -76,11 +75,10 @@ public class SubTable extends Table
    
    public static void main (final String[] args)
    {
-      Table.populate (new File ("data/Tables"));
+      CORPSE.init(true);
       
       SubTable table;
 
-      /*
       // test column and filter
       table = new SubTable ("{Job@#G.*}");
       table.export();
@@ -90,14 +88,11 @@ public class SubTable extends Table
       table = new SubTable ("{Color:Basic#C.*}");
       table.export();
       System.out.println();
-      */
       
       table = new SubTable ("{Metallic}");
       table.export();
       System.out.println();
       
       // TODO: override subset, etc
-      // TODO: test Color with Gem, etc
-      // TODO: Change to TableView?
    }
 }

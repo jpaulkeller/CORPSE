@@ -61,6 +61,7 @@ public class TabPane extends JTabbedPane
          return tabName;
       }
       
+      @Override
       public void actionPerformed(final ActionEvent evt) 
       {
          int index = TabPane.this.indexOfTab(getTabName());

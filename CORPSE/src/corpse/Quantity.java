@@ -28,25 +28,29 @@ public final class Quantity
       
       public NumericAdapter(final String regex)
       {
-         this.regex = regex;
-         this.pattern = Pattern.compile(regex);
+         this.regex = "^" + regex + "$";
+         this.pattern = Pattern.compile(this.regex);
       }
       
+      @Override
       public String getRegex()
       {
          return regex;
       }
       
+      @Override
       public void setToken(final String token)
       {
          this.matcher = pattern.matcher(token);         
       }
       
+      @Override
       public Matcher getMatcher()
       {
          return matcher; 
       }
       
+      @Override
       public String resolve()
       {
          return "" + get(); // default implementation just returns the value
@@ -57,45 +61,77 @@ public final class Quantity
    {
       public Constant()
       {
-         super("^(\\d+)$");
+         super("(\\d+)");
       }
       
+      @Override
       public int get()
       {
          return Integer.parseInt (getMatcher().group (1));
       }
    
+      @Override
       public int getMin()
       {
          return get();
       }
       
+      @Override
       public int getMax()
       {
          return get();
       }
    }
    
-   static class Roll extends NumericAdapter // {#} same as d# or 1d# (TODO: % for d100?)
+   static class Roll extends NumericAdapter // {#} same as d# or 1d#
    {
       public Roll()
       {
-         super("^\\{(\\d+)\\}$");
+         super("\\{(\\d+)\\}");
       }
       
+      @Override
       public int get()
       {
          return RandomEntry.get (getMax()) + 1;
       }
       
+      @Override
       public int getMin()
       {
          return 1;
       }
       
+      @Override
       public int getMax()
       {
          return Integer.parseInt (getMatcher().group (1));
+      }
+   }
+   
+   static class Percent extends NumericAdapter // % (same as d100)
+   {
+      public Percent()
+      {
+         super("%");
+      }
+      
+      @Override
+      public int get()
+      {
+         return RandomEntry.get (getMax()) + 1;
+      }
+      
+      @Override
+      public int getMin()
+      {
+         return 1;
+      }
+      
+      @Override
+      public int getMax()
+      {
+         return 100;
       }
    }
    
@@ -103,9 +139,10 @@ public final class Quantity
    {
       public Range()
       {
-         super("^\\{(\\d+) *- *(\\d+)\\}$");
+         super("\\{(\\d+) *- *(\\d+)\\}");
       }
       
+      @Override
       public int get()
       {
          int from = Integer.parseInt (getMatcher().group (1));
@@ -114,11 +151,13 @@ public final class Quantity
          return RandomEntry.get (range) + from;
       }
    
+      @Override
       public int getMin()
       {
          return Integer.parseInt (getMatcher().group (1));
       }
       
+      @Override
       public int getMax()
       {
          return Integer.parseInt (getMatcher().group (2));
@@ -129,19 +168,22 @@ public final class Quantity
    {
       public Formula()
       {
-         super("^\\{= *(\\d+) *([-+]) *(\\d+)\\}$");
+         super("\\{= *(\\d+) *([-+]) *(\\d+)\\}");
       }
       
+      @Override
       public int get()
       {
          return RandomEntry.get (getMax());
       }
    
+      @Override
       public int getMin()
       {
          return 1;
       }
       
+      @Override
       public int getMax()
       {
          int i = Integer.parseInt (getMatcher().group (1));
@@ -157,9 +199,10 @@ public final class Quantity
    {
       public Dice()
       {
-         super("^\\{(\\d+)? *[dD] *(\\d+)(?:([-+])(\\d+))?\\}$");
+         super("\\{(\\d+)? *[dD] *(\\d+)(?:([-+])(\\d+))?\\}");
       }
       
+      @Override
       public int get()
       {
          Matcher m = getMatcher();
@@ -181,6 +224,7 @@ public final class Quantity
          return roll;
       }
    
+      @Override
       public int getMin()
       {
          Matcher m = getMatcher();
@@ -197,6 +241,7 @@ public final class Quantity
          return min;
       }
       
+      @Override
       public int getMax()
       {
          Matcher m = getMatcher();
@@ -224,9 +269,10 @@ public final class Quantity
    {
       public Open()
       {
-         super("^\\{(\\d+)? *[tT] *(\\d+)}$");
+         super("\\{(\\d+)? *[tT] *(\\d+)}");
       }
       
+      @Override
       public int get()
       {
          Matcher m = getMatcher();
@@ -243,6 +289,7 @@ public final class Quantity
          return roll;
       }
       
+      @Override
       public int getMin()
       {
          Matcher m = getMatcher();
@@ -250,6 +297,7 @@ public final class Quantity
          return count;
       }
       
+      @Override
       public int getMax()
       {
          return Integer.MAX_VALUE; // there is no max for open rolls (TODO: throw exception?)
@@ -262,9 +310,10 @@ public final class Quantity
    {
       public Best()
       {
-         super("^\\{(\\d+)/(\\d+) *[dD] *(\\d+)}$");
+         super("\\{(\\d+)/(\\d+) *[dD] *(\\d+)}");
       }
       
+      @Override
       public int get()
       {
          Matcher m = getMatcher();
@@ -283,12 +332,14 @@ public final class Quantity
          return total;
       }
    
+      @Override
       public int getMin()
       {
          Matcher m = getMatcher();
          return Integer.parseInt (m.group (1)); // keep
       }
       
+      @Override
       public int getMax()
       {
          Matcher m = getMatcher();
@@ -305,9 +356,10 @@ public final class Quantity
    {
       public Norm()
       {
-         super("^\\{(\\d+), *(\\d+)\\}$");
+         super("\\{(\\d+), *(\\d+)\\}");
       }
       
+      @Override
       public int get()
       {
          Matcher m = getMatcher();
@@ -316,11 +368,13 @@ public final class Quantity
          return RandomEntry.getExp (mean, max);
       }
    
+      @Override
       public int getMin()
       {
          return 1;
       }
       
+      @Override
       public int getMax()
       {
          return Integer.parseInt (getMatcher().group (2));
@@ -333,25 +387,29 @@ public final class Quantity
    {
       public Charges()
       {
-         super("^\\{#/(\\d+)\\}$");
+         super("\\{#/(\\d+)\\}");
       }
       
+      @Override
       public int get()
       {
          // TODO allow 0?
          return RandomEntry.get (getMax()) + 1;
       }
    
+      @Override
       public int getMin()
       {
          return 1; // TODO allow 0?
       }
       
+      @Override
       public int getMax()
       {
          return Integer.parseInt (getMatcher().group (1));
       }
       
+      @Override
       public String resolve()
       {
          return get() + "/" + getMax();
@@ -360,6 +418,7 @@ public final class Quantity
 
    private static final Numeric CONSTANT = new Constant();
    private static final Numeric ROLL = new Roll();
+   private static final Numeric PERCENT = new Percent();
    private static final Numeric RANGE = new Range();
    private static final Numeric FORMULA = new Formula();
    private static final Numeric DICE = new Dice();
@@ -373,6 +432,7 @@ public final class Quantity
    {
       numerics.add(CONSTANT);
       numerics.add(ROLL);
+      numerics.add(PERCENT);
       numerics.add(RANGE);
       numerics.add(FORMULA);
       numerics.add(DICE);
@@ -395,15 +455,15 @@ public final class Quantity
       REGEX = s.toString();
    }
    
-   public static boolean is(final String token)
+   public static Quantity getQuantity(final String token)
    {
       for (Numeric n : numerics)
       {
          n.setToken(token);
          if (n.getMatcher().matches())
-            return true; // found a match
+            return new Quantity(token);
       }
-      return false;
+      return null;
    }
    
    private Numeric numeric;
@@ -419,7 +479,7 @@ public final class Quantity
             return;
          }
       }
-     throw new IllegalArgumentException("Invalid QUANTITY token: " + token);
+      throw new IllegalArgumentException("Invalid QUANTITY token: " + token);
    }
 
    /** Resolve the expression, and return it as an int. */
@@ -445,6 +505,22 @@ public final class Quantity
    {
       return numeric.getMax(); 
    }
+   
+   public static Numeric startsWith(final String line)
+   {
+      int brk = line.indexOf(' ');
+      if (brk > 0)
+      {
+         String token = line.substring(0, brk); // first word
+         for (Numeric n : numerics)
+         {
+            n.setToken(token);
+            if (n.getMatcher().find())
+               return n;
+         }
+      }
+      return null;
+   }
 
    public static void main (final String[] args)
    {
@@ -452,6 +528,7 @@ public final class Quantity
       tokens.add("invalid");
       tokens.add("5"); // CONSTANT
       tokens.add("{5}"); // ROLL
+      tokens.add("%"); // PERCENT
       tokens.add("{10-20}"); // RANGE
       tokens.add("{=5+10}"); // FORMULA
       tokens.add("{=10-3}"); // FORMULA
@@ -467,11 +544,11 @@ public final class Quantity
       
       for (String token : tokens)
       {
-         if (Quantity.is (token))
+         Quantity qty = Quantity.getQuantity(token);
+         if (qty != null)
          {
-            Quantity qty = new Quantity(token);
-            System.out.println (token + " [" + qty.numeric.getClass().getName() + "] = " + qty.resolve() 
-                  + "; max = " + qty.getMax());
+            String type = qty.numeric.getClass().getName().substring("corpse.Quantity$".length());
+            System.out.println (token + " " + type + " = " + qty.resolve() + "; max = " + qty.getMax());
          }
          else
             System.out.println ("Invalid: " + token);

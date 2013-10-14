@@ -1,4 +1,4 @@
-package corpse;
+package corpse.ui;
 
 import java.awt.Insets;
 import java.awt.Toolkit;
@@ -7,7 +7,10 @@ import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JComponent;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -15,9 +18,12 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
+import javax.swing.SwingConstants;
 
 import utils.ImageTools;
 import utils.Utils;
+import corpse.CORPSE;
+import corpse.Script;
 import file.FileUtils;
 
 public class Menus
@@ -27,8 +33,9 @@ public class Menus
    private static final String EXPORT    = "Export";
    private static final String HELP      = "Help";
    private static final String OPTIONS   = "Options";
+   private static final String PROMPTS   = "Prompts";
    private static final String REFRESH   = "Refresh";
-   static final         String ROLL      = "Roll";
+   public  static final String ROLL      = "Roll";
    private static final String SEARCH    = "Search";
    
    private ActionListener buttonListener = new ButtonListener();
@@ -44,7 +51,7 @@ public class Menus
       menus = makeMenus();
    }
 
-   JMenuBar getMenus()
+   public JMenuBar getMenus()
    {
       enable();
       return menus;
@@ -66,6 +73,7 @@ public class Menus
       menu.add (makeMenuItem (EXPORT, 'x', "20/documents/DocumentUse.gif", "Export the current view to a file"));
       menu.add (makeMenuItem (REFRESH, 'R', "20/flow/Loop.gif", "Reload the data"));
       menu.add (makeMenuItem (OPTIONS, 'O', "20/gui/Form.gif", "Edit configuration options"));
+      menu.add (makeCheckItem (PROMPTS, 'P', "20/objects/QueryChoose.gif", true, null, "Toggle interactive script prompts"));
       menu.addSeparator();
       menu.add (makeMenuItem (EXIT, 'E', "XRed.gif", "Exit this application"));
       return menu;
@@ -94,10 +102,38 @@ public class Menus
       return mi;
    }
    
-   JButton makeButton (final String command, final String iconName, final String tip)
+   private JCheckBoxMenuItem makeCheckItem (final String label, final char mnemonic,
+         final String iconFile, final boolean state,
+         final ButtonGroup group, final String tipText)
    {
-      JButton button = new JButton (ImageTools.getIcon (iconName));
-      button.setMargin (new Insets (0, 0, 0, 0));
+      JCheckBoxMenuItem mi;
+      ImageIcon icon = ImageTools.getIcon ("icons/" + iconFile);
+      if (icon != null)
+         mi = new JCheckBoxMenuItem (label, icon, state);
+      else
+         mi = new JCheckBoxMenuItem (label, state);
+      mi.setHorizontalTextPosition (SwingConstants.RIGHT);
+      mi.setMnemonic (mnemonic);
+      mi.setActionCommand (label);
+      mi.setToolTipText (tipText);
+      mi.addActionListener (buttonListener);
+      if (group != null)
+         group.add (mi);
+      invokers.put (label, mi);
+      return mi;
+   }
+
+   public JButton makeButton (final String command, final String iconName, final String tip)
+   {
+      JButton button = new JButton();
+      if (iconName != null)
+      {
+         button.setIcon(ImageTools.getIcon (iconName));
+         button.setMargin (new Insets (0, 0, 0, 0));
+      }
+      else
+         button.setText(command);
+      
       button.setActionCommand (command);
       button.setToolTipText (tip);
       button.addActionListener (buttonListener);
@@ -107,6 +143,7 @@ public class Menus
    
    class ButtonListener implements ActionListener
    {
+      @Override
       public void actionPerformed (final ActionEvent e)
       {
          String cmd = e.getActionCommand();         
@@ -115,6 +152,7 @@ public class Menus
          else if (cmd.equals (EXPORT))    app.export();
          else if (cmd.equals (HELP))      showFile ("data/readme.txt", "CORPSE Quick Help"); 
          else if (cmd.equals (OPTIONS))   setOptions();
+         else if (cmd.equals (PROMPTS))   Script.togglePrompts();
          else if (cmd.equals (REFRESH))   app.refresh();
          else if (cmd.equals (ROLL))      app.roll();
          else if (cmd.equals (SEARCH))    app.search();
@@ -133,9 +171,8 @@ public class Menus
    
    private void about()
    {
-      JOptionPane.showMessageDialog
-         (app.getMainPanel(), "Version 0.7 beta",
-          "About CORPSE", JOptionPane.INFORMATION_MESSAGE);
+      JOptionPane.showMessageDialog (app.getMainPanel(), "Version 0.7 beta",
+            "About CORPSE", JOptionPane.INFORMATION_MESSAGE);
 
       /*
       if (about == null)

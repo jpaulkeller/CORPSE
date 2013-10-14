@@ -31,6 +31,7 @@ public class About extends ImagePanel implements ActionListener
 
    private static final FilenameFilter GIF_FILTER = new FilenameFilter()
    {
+      @Override
       public boolean accept (final File dir, final String name)
       {
          return name.toLowerCase().startsWith ("about") &&
@@ -150,6 +151,7 @@ public class About extends ImagePanel implements ActionListener
       yh[i] = (int) (Math.sin(y[i]) * nudgeY) + nudgeY;
    }
 
+   @Override
    public void actionPerformed (final ActionEvent e)
    {
       if (isVisible())

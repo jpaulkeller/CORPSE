@@ -28,6 +28,8 @@ public class Script
    // the master list of scripts (names must be unique)
    public static SortedMap<String, Script> scripts = new TreeMap<String, Script>();
    
+   private static boolean promptsEnabled = true; // must match Menus value
+   
    private String name;
    private File file;
    private Map<String, String> variables = new HashMap<String, String>();
@@ -72,6 +74,11 @@ public class Script
       return file;
    }
    
+   public static void togglePrompts()
+   {
+      promptsEnabled = !promptsEnabled;
+   }
+   
    public String resolve() // TODO: thread
    {
       StringBuilder buf = new StringBuilder();
@@ -89,7 +96,7 @@ public class Script
          {
             if (line.trim().equals ("")) // ignore blank lines
                continue;
-            if (Constants.COMMENT.matcher (line).find())
+            if (Constants.COMMENT_LINE.matcher (line).find())
                continue;
 
             line = resolve(line);
@@ -143,7 +150,7 @@ public class Script
          
          if (resolvedToken.equals(token))
          {
-            resolvedToken = Macros.resolve (token);
+            resolvedToken = Macros.resolve (getName(), token);
             System.out.println("MAC Token: " + token + " R: " + resolvedToken); // TODO
          }
             
@@ -199,11 +206,13 @@ public class Script
       {
          String message = m.group (1);
          String defaultValue = m.group (2);
-         // handle quick-query syntax: Token?? => Token?{Token}                  
+         // handle quick-query syntax: Token?? => Token?{Token}
          if (defaultValue != null && defaultValue.equals ("?"))
-            defaultValue = Macros.resolve ("{" + message + "}");
-         String answer = (String) JOptionPane.showInputDialog (owner, message, title, JOptionPane.QUESTION_MESSAGE, 
-               icon, options, defaultValue);
+            defaultValue = Macros.resolve (getName(), "{" + message + "}");
+         String answer = defaultValue;
+         if (promptsEnabled)
+            answer = (String) JOptionPane.showInputDialog (owner, message, title, JOptionPane.QUESTION_MESSAGE, 
+                  icon, options, defaultValue);
          if (answer != null)
             resolvedEntry = m.replaceFirst (Matcher.quoteReplacement (answer));
          else // user cancelled
@@ -262,8 +271,7 @@ public class Script
    
    public static void main (final String[] args)
    {
-      Table.populate (new File ("data/Tables"));
-      Script.populate (new File ("data/Scripts"));
+      CORPSE.init(true);
       
       // Script script = Script.getScript ("Treasure");
       // Script script = Script.getScript ("NPC");

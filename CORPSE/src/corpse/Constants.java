@@ -25,15 +25,17 @@ public class Constants
    static final String SUBSET_CHAR    = ":";
    static final String TITLE_CHAR     = "!";
 
-   static final String IGNORE = COMMENT_CHAR + HEADER_CHAR + FOOTNOTE_CHAR + SEPR_CHAR + SOURCE_CHAR + TITLE_CHAR; 
-   static final Pattern COMMENT = Pattern.compile ("^[" + Pattern.quote (IGNORE) + "]", Pattern.MULTILINE);
+   private static final String IGNORE = COMMENT_CHAR + HEADER_CHAR + FOOTNOTE_CHAR + SEPR_CHAR + SOURCE_CHAR + TITLE_CHAR; 
+   static final Pattern COMMENT_LINE = Pattern.compile ("^[" + Pattern.quote (IGNORE) + "]", Pattern.MULTILINE);
+   
+   static final String COMMENT = "(?:\\s*//.*$)?";
    
    static final String NAME = "([A-Z](?: ?[-_A-Z0-9]+){0,10})"; // use {0,10} to avoid infinite loop
    static final String COLUMN_NAME = "([A-Z0-9](?: ?[-_A-Z0-9/()]+){0,10})";
-   static final String TABLE_REGEX = NAME;
+   private static final String TABLE_NAME = NAME;
    
    static final Pattern NAME_PATTERN = Pattern.compile(NAME, Pattern.CASE_INSENSITIVE);
-   
+   static final Pattern SIMPLE_TABLE = Pattern.compile(TABLE_NAME, Pattern.CASE_INSENSITIVE);
    static final Pattern TOKEN = Pattern.compile ("\\{([^{}]+)\\}");
    
    // [50/50] CONDITION (all-or-nothing format): {{2}=2?ALL}
@@ -45,23 +47,27 @@ public class Constants
    // first group of the pattern includes just the number.  The first element
    // may be any numeric expression supported by Quantity.java.
    // BELL-CURVE CONDITION (embedded roll)     : {{3d6}<13?Normal:Good} 
-   static final Pattern CONDITION =
-      Pattern.compile ("\\{(\\d+)([=<>])(\\d+)[?]([^:]+)(?::([^:{}]+))?\\}");
+   static final Pattern CONDITION = Pattern.compile ("\\{(\\d+)([=<>])(\\d+)[?]([^:]+)(?::([^:{}]+))?\\}");
 
    // {one|two|three|four} -- chooses one option, with equal chance for each 
    static final Pattern ONE_OF = Pattern.compile ("\\{([^|{]+([|][^|{]*)+)\\}");
    // TODO: empty option:  {opt1|opt2|}
    // TODO: weighted options: {#:opt1|#:opt2|...}
-   
-   static final Pattern SIMPLE_TABLE = Pattern.compile(TABLE_REGEX, Pattern.CASE_INSENSITIVE);
-   
+
+   // {prompt?default} where the default value is optional, and the prompt must
+   // start with a non-numeric (to avoid confusion with the CONDITIONAL token).
+   static final Pattern QUERY = Pattern.compile ("\\{([^{}?0-9][^{}?]+?)[?]([^{}]+)?\\}");
+
    private static final String QTY = "(?:(\\d+)\\s+)?";
    private static final String SUBSET = "(?:\\" + SUBSET_CHAR + NAME + "?)?";
    private static final String COLUMN = "(?:\\" + COLUMN_CHAR + COLUMN_NAME + "?)?";
    private static final String FILTER = "(?:\\" + FILTER_CHAR + "([^}]+)?)?";
    
-   static final Pattern TABLE_XREF = // {1 Table:Subset@Column#Filter} 
-      Pattern.compile ("\\{" + QTY + TABLE_REGEX + SUBSET + COLUMN + FILTER + "\\s*\\}", Pattern.CASE_INSENSITIVE);
+   // {1 Table:Subset@Column#Filter} 
+   private static final String TABLE_REF_REGEX = TABLE_NAME + SUBSET + COLUMN + FILTER; 
+   static final Pattern TABLE_XREF = Pattern.compile ("\\{" + QTY + TABLE_REF_REGEX + "\\s*\\}", Pattern.CASE_INSENSITIVE);
+   // {Subset@Column#Filter} -- short-cut for a subset reference (Within the table) 
+   static final Pattern SUBSET_REF = Pattern.compile ("\\{" + SUBSET + COLUMN + FILTER + "\\}", Pattern.CASE_INSENSITIVE);
 
    static final Pattern SCRIPT_XREF = // {1 Script.cmd}
       Pattern.compile ("\\{" + QTY + NAME + "[.]cmd\\}", Pattern.CASE_INSENSITIVE);
@@ -69,26 +75,16 @@ public class Constants
    // {#text:regex} (e.g. {#text:.} would resolve to the first letter of the text) 
    static Pattern FILTER_TOKEN = Pattern.compile("\\{" + FILTER_CHAR + "(.+):([^}]+)\\}");
    
-   // TODO use \\s for white-space
-   
-   // includes a script, but ignores any embedded randomize commands? // TODO
-   static final Pattern INCLUDE_LINE = Pattern.compile ("[+]\\s*(.*)\\s*");
-   
    static final Pattern RANDOMIZE_LINE = Pattern.compile ("#\\s*(.*)");
    
    static final Pattern ASSIGNMENT = Pattern.compile ("\\{([^{}]+)=([^{}?]+)\\}");
    
-   // {prompt?default} where the default value is optional, and the prompt must
-   // start with a non-numeric (to avoid confusion with the CONDITIONAL token).
-   static final Pattern QUERY = Pattern.compile ("\\{([^{}?0-9][^{}?]+?)[?]([^{}]+)?\\}");
-
-   // # {Table}
-   static final Pattern WEIGHTED_LINE = Pattern.compile ("^(\\d+)\\s+(.+)");
-   // #-# {Table}
-   static final Pattern RANGE_LINE = Pattern.compile ("^(\\d+)-(\\d+)\\s+(.+)");
+   // includes a script, but ignores any embedded randomize commands? // TODO
+   static final Pattern INCLUDE_LINE = Pattern.compile ("[+]\\s*(.*)\\s*");
    
-   // + {Table} (or "text{Table}text", but at most one {Table}) // TODO: support subset columns
-   static final Pattern INCLUDED_TBL = Pattern.compile ("^[" + INCLUDE_CHAR + "]\\s*([^{]*)\\{([^}]+)\\}([^{]*)");
+   // + prefix{Table XRef}suffix
+   static final Pattern INCLUDED_TBL = 
+         Pattern.compile ("^[" + INCLUDE_CHAR + "]\\s*([^{]*)\\{(" + TABLE_REF_REGEX + ")\\}([^{]*)", Pattern.CASE_INSENSITIVE);
    
    static final String LAST_RESOLVED_TOKEN = "{!}";
    
