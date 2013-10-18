@@ -2,38 +2,37 @@ package corpse;
 
 import java.io.File;
 import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-public class SubTable extends Table
+public final class SubTable extends Table
 {
    private static final long serialVersionUID = 1L;
-   
+
    private Subset subset;
    private Column column;
    private int count;
-   
+
    // Get a populated/resolved table (with subset, column, and filter applied).
    // Token format: {# Table:Subset@Column#Filter}
-   // Note: The numeric prefix is optional, and ignored (TODO).
-   
-   public SubTable (final String token)
+   // Note: The numeric prefix is ignored.
+
+   public SubTable(final String token)
    {
-      Matcher m = Constants.TABLE_XREF.matcher (token);
+      Matcher m = Constants.TABLE_XREF.matcher(token);
       if (m.matches())
       {
          // String qty = m.group (1);
-         String xrefTbl = m.group (2);
-         String xrefSub = m.group (3);
-         String xrefCol = m.group (4);
-         String xrefFil = m.group (5);
+         String xrefTbl = m.group(2);
+         String xrefSub = m.group(3);
+         String xrefCol = m.group(4);
+         String xrefFil = m.group(5);
 
-         if (xrefSub == null && token.contains (Constants.SUBSET_CHAR)) // e.g., Metal:
+         if (xrefSub == null && token.contains(Constants.SUBSET_CHAR)) // e.g., Metal:
             xrefSub = xrefTbl;
-         if (xrefCol == null && token.contains (Constants.COLUMN_CHAR)) // e.g., Job@
+         if (xrefCol == null && token.contains(Constants.COLUMN_CHAR)) // e.g., Job@
             xrefCol = xrefTbl;
-         
+
          // System.out.println("[" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
-         
+
          Table unfiltered = Table.getTable(xrefTbl);
          tableName = token;
          file = new File(unfiltered.file.getAbsolutePath());
@@ -42,11 +41,11 @@ public class SubTable extends Table
          if (xrefCol != null)
             column = unfiltered.getColumn(xrefCol);
          if (xrefFil != null)
-            filter = Pattern.compile(xrefFil, Pattern.CASE_INSENSITIVE); // TODO try/catch
-         
+            filter = CORPSE.safeCompile("Invalid filter in " + token, xrefFil);
+
          count = 0;
          importTable();
-         TABLES.put (tableName, this);
+         TABLES.put(tableName, this);
       }
       else
          System.out.println("Invalid table token: " + token);
@@ -66,33 +65,31 @@ public class SubTable extends Table
       }
       return false;
    }
-   
+
    @Override
    void validate()
    {
-      // We don't want to validate subsets here, since the table is filtered.  Columns could be validated.
+      // We don't want to validate subsets here, since the table is filtered. Columns could be validated.
    }
-   
-   public static void main (final String[] args)
+
+   public static void main(final String[] args)
    {
       CORPSE.init(true);
-      
+
       SubTable table;
 
       // test column and filter
-      table = new SubTable ("{Job@#G.*}");
+      table = new SubTable("{Job@#G.*}");
       table.export();
       System.out.println();
 
       // test subset and filter
-      table = new SubTable ("{Color:Basic#C.*}");
+      table = new SubTable("{Color:Basic#C.*}");
       table.export();
       System.out.println();
-      
-      table = new SubTable ("{Metallic}");
+
+      table = new SubTable("{Metallic}");
       table.export();
       System.out.println();
-      
-      // TODO: override subset, etc
    }
 }

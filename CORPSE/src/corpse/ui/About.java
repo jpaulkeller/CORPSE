@@ -32,10 +32,9 @@ public class About extends ImagePanel implements ActionListener
    private static final FilenameFilter GIF_FILTER = new FilenameFilter()
    {
       @Override
-      public boolean accept (final File dir, final String name)
+      public boolean accept(final File dir, final String name)
       {
-         return name.toLowerCase().startsWith ("about") &&
-                name.toLowerCase().endsWith ("gif");
+         return name.toLowerCase().startsWith("about") && name.toLowerCase().endsWith("gif");
       }
    };
 
@@ -47,91 +46,88 @@ public class About extends ImagePanel implements ActionListener
    private Timer animator;
    private Random rand = new Random();
 
-   public About (final String dir, final String splash)
+   public About(final String dir, final String splash)
    {
-      super (dir + File.separator + splash);
-      
-      Dimension dim =
-         new Dimension (getImage().getWidth (null), getImage().getHeight (null));
-      setPreferredSize (dim);
+      super(dir + File.separator + splash);
+
+      Dimension dim = new Dimension(getImage().getWidth(null), getImage().getHeight(null));
+      setPreferredSize(dim);
 
       JPanel p1 = new JPanel();
-      p1.setLayout (new BoxLayout (p1, BoxLayout.Y_AXIS));
-      p1.setOpaque (false);
+      p1.setLayout(new BoxLayout(p1, BoxLayout.Y_AXIS));
+      p1.setOpaque(false);
 
-      Font font = new Font ("Comic Sans MS", Font.BOLD, 24);
-      addComponent (p1, new JLabel ("DEED ORGANIZER"), font);
-      font = new Font ("Comic Sans MS", Font.PLAIN, 18);
-      addComponent (p1, new JLabel ("by Mosby of Landroval"), font);
-      font = new Font ("Comic Sans MS", Font.PLAIN, 16);
-      addComponent (p1, new JLabel ("palantiri.guildportal.com"), font);
-      addComponent (p1, new JLabel ("version 1.0"), font);
-      addComponent (p1, new JLabel ("released June 2007"), font);
+      Font font = new Font("Comic Sans MS", Font.BOLD, 24);
+      addComponent(p1, new JLabel("DEED ORGANIZER"), font);
+      font = new Font("Comic Sans MS", Font.PLAIN, 18);
+      addComponent(p1, new JLabel("by Mosby of Landroval"), font);
+      font = new Font("Comic Sans MS", Font.PLAIN, 16);
+      addComponent(p1, new JLabel("palantiri.guildportal.com"), font);
+      addComponent(p1, new JLabel("version 1.0"), font);
+      addComponent(p1, new JLabel("released June 2007"), font);
 
       JPanel p2 = new JPanel();
-      p2.setLayout (new BoxLayout (p2, BoxLayout.Y_AXIS));
-      p2.setOpaque (false);
-      
-      font = new Font ("Comic Sans MS", Font.PLAIN, 14);
-      JTextArea footnote = new JTextArea 
-         ("This software is free.  In-game donations (mailed to Mosby on Landroval) " +
-          "are appreciated, and will be used as prizes for Palantiri-hosted events.  " +
-          "Thank you!");
-      footnote.setOpaque (false);
-      footnote.setLineWrap (true);
-      footnote.setWrapStyleWord (true);
-      footnote.setForeground (Color.yellow);
-      addComponent (p2, footnote, font);
+      p2.setLayout(new BoxLayout(p2, BoxLayout.Y_AXIS));
+      p2.setOpaque(false);
 
-      setLayout (new BorderLayout());
-      add (p1, BorderLayout.CENTER);
-      add (p2, BorderLayout.SOUTH);
+      font = new Font("Comic Sans MS", Font.PLAIN, 14);
+      JTextArea footnote = new JTextArea("This software is free.  In-game donations (mailed to Mosby on Landroval) "
+               + "are appreciated, and will be used as prizes for Palantiri-hosted events.  " + "Thank you!");
+      footnote.setOpaque(false);
+      footnote.setLineWrap(true);
+      footnote.setWrapStyleWord(true);
+      footnote.setForeground(Color.yellow);
+      addComponent(p2, footnote, font);
 
-      makeImages (dir);
+      setLayout(new BorderLayout());
+      add(p1, BorderLayout.CENTER);
+      add(p2, BorderLayout.SOUTH);
+
+      makeImages(dir);
       go();
    }
 
-   private void addComponent (final Container p, final JComponent c, final Font font)
+   private void addComponent(final Container p, final JComponent c, final Font font)
    {
-      c.setFont (font);
-      c.setAlignmentX (Component.CENTER_ALIGNMENT);
-      p.add (c);
+      c.setFont(font);
+      c.setAlignmentX(Component.CENTER_ALIGNMENT);
+      p.add(c);
    }
 
-   private void makeImages (final String path)
+   private void makeImages(final String path)
    {
-      File file = new File (path);
-      numImages = file.listFiles (GIF_FILTER).length;
-      
+      File file = new File(path);
+      numImages = file.listFiles(GIF_FILTER).length;
+
       icon = new ImageIcon[numImages];
       x = new double[numImages];
       y = new double[numImages];
       xh = new int[numImages];
       yh = new int[numImages];
-      
+
       int i = 0;
-      for (File f : file.listFiles (GIF_FILTER))
-         icon[i++] = new ImageIcon (f.getPath());
+      for (File f : file.listFiles(GIF_FILTER))
+         icon[i++] = new ImageIcon(f.getPath());
    }
 
    public void go()
    {
-      animator = new Timer (66, this);
-      animator.setInitialDelay (3000);
+      animator = new Timer(66, this);
+      animator.setInitialDelay(3000);
       animator.start();
    }
 
    @Override
-   public void paint (final Graphics g)
+   public void paint(final Graphics g)
    {
-      super.paint (g);
+      super.paint(g);
       for (int i = 0; i < numImages; i++)
       {
          if (x[i] > 3 * i)
          {
-            nudge (i);
+            nudge(i);
             if (isVisible())
-               g.drawImage (icon[i].getImage(), xh[i], yh[i], this);
+               g.drawImage(icon[i].getImage(), xh[i], yh[i], this);
          }
          else
          {
@@ -141,29 +137,28 @@ public class About extends ImagePanel implements ActionListener
       }
    }
 
-   public void nudge (final int i)
+   public void nudge(final int i)
    {
-      x[i] += (double) rand.nextInt (1000) / 8756;
-      y[i] += (double) rand.nextInt (1000) / 5432;
-      int nudgeX = (int) (((double) getWidth()  / 2) * .8);
+      x[i] += (double) rand.nextInt(1000) / 8756;
+      y[i] += (double) rand.nextInt(1000) / 5432;
+      int nudgeX = (int) (((double) getWidth() / 2) * .8);
       int nudgeY = (int) (((double) getHeight() / 2) * .8);
       xh[i] = (int) (Math.sin(x[i]) * nudgeX) + nudgeX;
       yh[i] = (int) (Math.sin(y[i]) * nudgeY) + nudgeY;
    }
 
    @Override
-   public void actionPerformed (final ActionEvent e)
+   public void actionPerformed(final ActionEvent e)
    {
       if (isVisible())
          repaint();
       else
          animator.stop();
    }
-   
-   public static void main (final String[] args)
+
+   public static void main(final String[] args)
    {
-      About about = new About ("data", "Splash.jpg");
-      ComponentTools.open (about, "About");
+      About about = new About("data", "Splash.jpg");
+      ComponentTools.open(about, "About");
    }
 }
-

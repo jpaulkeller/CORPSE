@@ -23,42 +23,42 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Subset
+public final class Subset
 {
    private static final String SC = Constants.SUBSET_CHAR;
    private static final String SN = Constants.NAME;
-   
+
    private static final String RANGE_TOKEN = "(\\{[^}]+\\})"; // should be a valid roll
-   
+
    // : Name
    // : Name {1-10)
    private static final String SUBSET_REGEX = "^\\" + SC + " *" + SN + "(?: +" + RANGE_TOKEN + ")?" + Constants.COMMENT;
-   private static final Pattern SUBSET = Pattern.compile (SUBSET_REGEX, Pattern.CASE_INSENSITIVE);
-   
+   private static final Pattern SUBSET = Pattern.compile(SUBSET_REGEX, Pattern.CASE_INSENSITIVE);
+
    // : Name = name + name + name (up to 20)
    private static final String META_SUBSET_REGEX = "^\\" + SC + " *" + SN + " *= *(" + SN + "(?: *\\+ *" + SN + "){0,20})";
-   private static final Pattern COMPOSITE_SUBSET = Pattern.compile (META_SUBSET_REGEX, Pattern.CASE_INSENSITIVE);
+   private static final Pattern COMPOSITE_SUBSET = Pattern.compile(META_SUBSET_REGEX, Pattern.CASE_INSENSITIVE);
 
    // : Name = regex
    private static final String FILTER_REGEX = "^\\" + SC + " *" + SN + " *= *(.*)";
-   private static final Pattern FILTER_SUBSET = Pattern.compile (FILTER_REGEX, Pattern.CASE_INSENSITIVE);
+   private static final Pattern FILTER_SUBSET = Pattern.compile(FILTER_REGEX, Pattern.CASE_INSENSITIVE);
 
    private String name;
    private String roll;
    private int min, max;
    private Pattern pattern;
-   
+
    private List<String> composites = new ArrayList<String>();
-   
+
    public static void parse(final Table table, final String entry)
    {
       Subset subset = null;
-      
+
       Matcher m;
-      if ((m = COMPOSITE_SUBSET.matcher (entry)).find())
+      if ((m = COMPOSITE_SUBSET.matcher(entry)).find())
       {
          subset = new Subset();
-         subset.name = m.group (1);
+         subset.name = m.group(1);
          subset.min = Integer.MAX_VALUE; // set in finish()
          subset.max = Integer.MIN_VALUE; // set in finish()
 
@@ -67,20 +67,22 @@ public class Subset
             subset.composites.add(nameMatcher.group(1));
          table.addSubset(subset);
       }
-      else if ((m = FILTER_SUBSET.matcher (entry)).find())
+      else if ((m = FILTER_SUBSET.matcher(entry)).find())
       {
          subset = new Subset();
-         subset.name = m.group (1);
-         subset.pattern = Pattern.compile(m.group(2).trim(), Pattern.CASE_INSENSITIVE); // TODO try/catch
+         subset.name = m.group(1);
+         String regex = m.group(2).trim();
+         subset.pattern = CORPSE.safeCompile("Invalid subset filter", regex);
          table.addSubset(subset);
       }
-      else if ((m = SUBSET.matcher (entry)).find())
+      else if ((m = SUBSET.matcher(entry)).find())
       {
          subset = new Subset();
-         subset.name = m.group (1);
+         subset.name = m.group(1);
          if (m.group(2) != null)
-            subset.setRoll(m.group (2));
-         else // support embedded subsets
+            subset.setRoll(m.group(2));
+         else
+         // support embedded subsets
          {
             Subset.closeSubset(table);
             subset.min = table.size() + 1;
@@ -89,20 +91,20 @@ public class Subset
          table.addSubset(subset);
       }
       else
-         System.err.println ("Invalid subset in " + table.getFile() + ": " + entry);
+         System.err.println("Invalid subset in " + table.getFile() + ": " + entry);
    }
-   
+
    void setRoll(final String roll)
    {
       this.roll = roll;
-      min = Macros.getMin (roll);
-      max = Macros.getMax (roll);
+      min = Macros.getMin(roll);
+      max = Macros.getMax(roll);
    }
 
    static void finish(final Table table)
    {
       closeSubset(table);
-      
+
       for (Subset s : table.getSubsets().values())
          if (!s.composites.isEmpty())
          {
@@ -118,14 +120,14 @@ public class Subset
             s.setRoll("{" + s.min + "-" + s.max + "}");
          }
    }
-   
+
    private static void closeSubset(final Table table) // close any "open" subset
    {
       for (Subset s : table.getSubsets().values())
          if (s.getMax() == 0) // should be 1 at most
             s.setRoll("{" + s.getMin() + "-" + table.size() + "}");
    }
-   
+
    public boolean includes(final int row, final String line)
    {
       boolean include = false;
@@ -135,22 +137,22 @@ public class Subset
          include = (row >= min && row <= max);
       return include;
    }
-   
+
    public int random()
    {
-      return Macros.resolveNumber (roll);
+      return Macros.resolveNumber(roll);
    }
 
    public int getMin()
    {
       return min;
    }
-   
+
    public int getMax()
    {
       return max;
    }
-   
+
    public String getName()
    {
       return name;
@@ -160,26 +162,24 @@ public class Subset
    public String toString()
    {
       StringBuilder sb = new StringBuilder();
-      sb.append (name + " " + roll + " ");
+      sb.append(name + " " + roll + " ");
       for (String composite : composites)
          sb.append(composite + " + ");
       if (pattern != null)
          sb.append(" filter=[" + pattern.pattern() + "]");
       return sb.toString();
    }
-   
-   public static void main (final String[] args)
+
+   public static void main(final String[] args)
    {
       CORPSE.init(true);
 
-      Table t = Table.getTable("FLORA");
-      
       for (Table table : Table.getTables())
       {
          table.importTable();
          if (!table.getSubsets().isEmpty())
          {
-            System.out.println (table);
+            System.out.println(table);
             for (Subset subset : table.getSubsets().values())
             {
                String token = "{" + table.getName().toLowerCase() + Constants.SUBSET_CHAR + subset.getName() + "}";

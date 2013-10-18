@@ -9,23 +9,23 @@ public class InvisibleTreeModel extends DefaultTreeModel
    
    protected boolean filterIsActive;
 
-   public InvisibleTreeModel(TreeNode root)
+   public InvisibleTreeModel(final TreeNode root)
    {
       this(root, false);
    }
 
-   public InvisibleTreeModel(TreeNode root, boolean asksAllowsChildren)
+   public InvisibleTreeModel(final TreeNode root, final boolean asksAllowsChildren)
    {
       this(root, false, false);
    }
 
-   public InvisibleTreeModel(TreeNode root, boolean asksAllowsChildren, boolean filterIsActive)
+   public InvisibleTreeModel(final TreeNode root, final boolean asksAllowsChildren, final boolean filterIsActive)
    {
       super(root, asksAllowsChildren);
       this.filterIsActive = filterIsActive;
    }
 
-   public void activateFilter(boolean newValue)
+   public void activateFilter(final boolean newValue)
    {
       filterIsActive = newValue;
    }
@@ -36,7 +36,7 @@ public class InvisibleTreeModel extends DefaultTreeModel
    }
 
    @Override
-   public Object getChild(Object parent, int index)
+   public Object getChild(final Object parent, final int index)
    {
       if (filterIsActive && parent instanceof InvisibleNode)
          return ((InvisibleNode) parent).getChildAt(index, filterIsActive);
@@ -45,7 +45,7 @@ public class InvisibleTreeModel extends DefaultTreeModel
    }
 
    @Override
-   public int getChildCount(Object parent)
+   public int getChildCount(final Object parent)
    {
       if (filterIsActive && parent instanceof InvisibleNode)
          return ((InvisibleNode) parent).getChildCount(filterIsActive);

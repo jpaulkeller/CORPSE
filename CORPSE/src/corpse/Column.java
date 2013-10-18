@@ -27,32 +27,31 @@ package corpse;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Column implements Comparable<Column>
+public final class Column implements Comparable<Column>
 {
    private static final String CC = Constants.COLUMN_CHAR;
    private static final String CN = Constants.COLUMN_NAME;
 
-   private static final Pattern CN_PATTERN = Pattern.compile (CN, Pattern.CASE_INSENSITIVE);
-   
+   private static final Pattern CN_PATTERN = Pattern.compile(CN, Pattern.CASE_INSENSITIVE);
+
    // @ Name
-   private static final Pattern COLUMN = 
-         Pattern.compile ("^\\" + CC + "\\s*" + CN + Constants.COMMENT, Pattern.CASE_INSENSITIVE);
+   private static final Pattern COLUMN = Pattern.compile("^\\" + CC + "\\s*" + CN + Constants.COMMENT, Pattern.CASE_INSENSITIVE);
    // @ Name width
-   private static final Pattern COLUMN_FIXED = 
-         Pattern.compile ("^\\" + CC + "\\s*" + CN + "\\s+(\\d+) + Constants.COMMENT", Pattern.CASE_INSENSITIVE);
+   private static final Pattern COLUMN_FIXED = Pattern.compile("^\\" + CC + "\\s*" + CN + "\\s+(\\d+) + Constants.COMMENT",
+                                                               Pattern.CASE_INSENSITIVE);
    // @ Name start width
-   private static final Pattern COLUMN_FULL = 
-         Pattern.compile ("^" + CC + "\\s*" + CN + "\\s+(\\d+)\\s+(\\d+) + Constants.COMMENT", Pattern.CASE_INSENSITIVE);
-   // @ First    Second     Third    ...
+   private static final Pattern COLUMN_FULL = Pattern.compile("^" + CC + "\\s*" + CN + "\\s+(\\d+)\\s+(\\d+) + Constants.COMMENT",
+                                                              Pattern.CASE_INSENSITIVE);
+   // @ First Second Third ...
    private static final String HEADER_REGEX = "^\\" + CC + "(\\s*" + CN + "(?:\\s\\s+" + CN + "){1,20})" + Constants.COMMENT;
-   private static final Pattern COLUMN_HEADER = Pattern.compile (HEADER_REGEX, Pattern.CASE_INSENSITIVE);
+   private static final Pattern COLUMN_HEADER = Pattern.compile(HEADER_REGEX, Pattern.CASE_INSENSITIVE);
    // @ Name1, Name2, ... (2 to 20)
    private static final String CSV_REGEX = "^\\" + CC + "\\s*(" + CN + "(?:,\\s*" + CN + "){1,20})" + Constants.COMMENT;
-   private static final Pattern COLUMNS_CSV = Pattern.compile (CSV_REGEX, Pattern.CASE_INSENSITIVE);
+   private static final Pattern COLUMNS_CSV = Pattern.compile(CSV_REGEX, Pattern.CASE_INSENSITIVE);
 
    // field1;field2;...
-   private static final Pattern DELIMITED_DATA = Pattern.compile ("([^;]+)(?: *; *)?");
-   
+   private static final Pattern DELIMITED_DATA = Pattern.compile("([^;]+)(?: *; *)?");
+
    private String name;
    private int index;
    private int start; // 1-based
@@ -61,37 +60,37 @@ public class Column implements Comparable<Column>
    public static void parse(final Table table, final String entry)
    {
       Matcher m;
-      if ((m = COLUMN_FULL.matcher (entry)).find()) // Name start width
+      if ((m = COLUMN_FULL.matcher(entry)).find()) // Name start width
       {
          Column column = new Column();
-         column.name = m.group (1);
-         column.start = Integer.parseInt(m.group (2));
-         column.width = Integer.parseInt (m.group (3));
+         column.name = m.group(1);
+         column.start = Integer.parseInt(m.group(2));
+         column.width = Integer.parseInt(m.group(3));
          column.index = table.getColumns().size();
          table.addColumn(column);
          System.err.println("Upgrade " + table.getName() + " column format: " + column.name);
       }
-      else if ((m = COLUMN_FIXED.matcher (entry)).find()) // Name width
+      else if ((m = COLUMN_FIXED.matcher(entry)).find()) // Name width
       {
          Column column = new Column();
-         column.name = m.group (1);
+         column.name = m.group(1);
          column.index = table.getColumns().size();
-         column.width = Integer.parseInt(m.group (2));
+         column.width = Integer.parseInt(m.group(2));
          column.start = column.index == 0 ? 1 : Column.getNextStart(table, column);
          table.addColumn(column);
       }
-      else if ((m = COLUMNS_CSV.matcher (entry)).find()) // First, Second, ...
+      else if ((m = COLUMNS_CSV.matcher(entry)).find()) // First, Second, ...
       {
          Matcher nameMatcher = CN_PATTERN.matcher(m.group(1));
          while (nameMatcher.find())
             table.addColumn(new Column(nameMatcher.group(1), table.getColumns().size()));
       }
-      else if ((m = COLUMN_HEADER.matcher (entry)).find()) // First  Second  ...
+      else if ((m = COLUMN_HEADER.matcher(entry)).find()) // First Second ...
          parseColumnHeader(table, m.group(1));
-      else if ((m = COLUMN.matcher (entry)).find()) // Name width
+      else if ((m = COLUMN.matcher(entry)).find()) // Name width
          table.addColumn(new Column(m.group(1), table.getColumns().size()));
       else
-         System.err.println ("Invalid column in " + table.getFile() + ": " + entry);
+         System.err.println("Invalid column in " + table.getFile() + ": " + entry);
    }
 
    private static void parseColumnHeader(final Table table, final String header)
@@ -104,26 +103,28 @@ public class Column implements Comparable<Column>
          column.index = table.getColumns().size();
          column.start = (m.start() == 0 ? 0 : m.start() + Constants.COLUMN_CHAR.length()) + 1;
          table.addColumn(column);
-         
+
          if (column.index > 0)
          {
             Column prev = Column.getColumn(table, column.index - 1);
-            prev.width = column.start - prev.start; // determine the width of the previous column
+            prev.width = column.start - prev.start; // determine the width of
+                                                    // the previous column
          }
       }
-      // note the final column won't have a width, so we'll just go to the end-of-line when we extract it
+      // note the final column won't have a width, so we'll just go to the
+      // end-of-line when we extract it
    }
 
    private Column()
    {
    }
-   
-   private Column (final String name, final int index)
+
+   private Column(final String name, final int index)
    {
-      this (name, 0, 0, index);
+      this(name, 0, 0, index);
    }
-   
-   private Column (final String name, final int start, final int length, final int index)
+
+   private Column(final String name, final int start, final int length, final int index)
    {
       this.name = name;
       this.start = start;
@@ -139,8 +140,9 @@ public class Column implements Comparable<Column>
             column = c;
       return column;
    }
-   
-   // determine the start of the given column, based on the start/width of the previous column
+
+   // determine the start of the given column, based on the start/width of the
+   // previous column
    private static int getNextStart(final Table table, final Column column)
    {
       int start = 1;
@@ -149,38 +151,39 @@ public class Column implements Comparable<Column>
             start = c.start + c.width;
       return start;
    }
-   
+
    public String getName()
    {
       return name;
    }
-   
-   public String getValue (final String unresolvedEntry)
+
+   public String getValue(final String unresolvedEntry)
    {
       String field = "";
-      
+
       if (start == 0)
       {
-         Matcher m = DELIMITED_DATA.matcher (unresolvedEntry);
+         Matcher m = DELIMITED_DATA.matcher(unresolvedEntry);
          for (int i = 0; i < index; i++)
             m.find(); // skip the first N-1 entries
          if (m.find())
-            field = m.group (1);
+            field = m.group(1);
       }
-      else // fixed-width
+      else
+      // fixed-width
       {
          int from = start - 1;
          int end = from + width;
          int len = unresolvedEntry.length();
          if (end <= len && width > 0)
-            field = unresolvedEntry.substring (from, end).trim();
+            field = unresolvedEntry.substring(from, end).trim();
          else if (from < len)
-            field = unresolvedEntry.substring (from).trim();
+            field = unresolvedEntry.substring(from).trim();
       }
-      
+
       return field;
    }
-   
+
    @Override
    public String toString()
    {
@@ -188,26 +191,25 @@ public class Column implements Comparable<Column>
    }
 
    @Override
-   public int compareTo (final Column other)
+   public int compareTo(final Column other)
    {
       return index - other.index;
    }
-   
-   public static void main (final String[] args)
+
+   public static void main(final String[] args)
    {
       CORPSE.init(true);
 
       /*
-      Table table = Table.getTable("METAL");
-      if (!table.getColumns().isEmpty())
-         System.out.println (table);
-         */
-      
+       * Table table = Table.getTable("METAL"); if
+       * (!table.getColumns().isEmpty()) System.out.println (table);
+       */
+
       for (Table table : Table.getTables())
       {
          table.importTable();
          if (!table.getColumns().isEmpty())
-            System.out.println (table);
+            System.out.println(table);
       }
    }
 }
