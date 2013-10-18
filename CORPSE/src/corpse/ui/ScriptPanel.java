@@ -9,15 +9,15 @@ import javax.swing.JTextArea;
 import corpse.CORPSE;
 import corpse.Script;
 
-public class ScriptPanel extends TreePanel 
+public class ScriptPanel extends TreePanel
 {
    private static final long serialVersionUID = 1L;
 
-   public ScriptPanel (final CORPSE app, final String dir, final String suffix)
+   public ScriptPanel(final CORPSE app, final String dir, final String suffix)
    {
-      super (app, dir, suffix);
+      super(app, dir, suffix);
    }
-   
+
    @Override
    protected File getFile(final String name)
    {
@@ -27,7 +27,7 @@ public class ScriptPanel extends TreePanel
    @Override
    protected int getResolvedPosition()
    {
-      return 0; // TODO
+      return getRawCaretPosition();
    }
 
    @Override
@@ -41,13 +41,13 @@ public class ScriptPanel extends TreePanel
             resolved.removeAll();
          else
             resolved = makeResolved(name);
-         
+
          JTextArea textArea = new JTextArea();
-         textArea.setText (script.resolve());
-         
-         resolved.add (new JScrollPane (textArea));
+         textArea.setText(script.resolve());
+
+         resolved.add(new JScrollPane(textArea));
          resolved.validate();
-         
+
          tabs.setSelectedIndex(tabs.indexOfTab(name));
       }
    }
@@ -55,6 +55,6 @@ public class ScriptPanel extends TreePanel
    @Override
    public void roll()
    {
-      // resolve(); TODO
+      // scripts don't resolve to a single value
    }
 }

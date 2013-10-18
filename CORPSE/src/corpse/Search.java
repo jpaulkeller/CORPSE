@@ -14,19 +14,24 @@ import javax.swing.text.html.HTMLEditorKit;
 import utils.ImageTools;
 import corpse.ui.TabPane;
 
-public class Search
+public final class Search
 {
-   private static Icon SEARCH_ICON = ImageTools.getIcon ("icons/20/objects/Magnify.gif");
-         
+   private static final Icon SEARCH_ICON = ImageTools.getIcon("icons/20/objects/Magnify.gif");
+   
+   private Search()
+   {
+      // prevent instantiation
+   }
+
    public static void search(final Component owner, final TabPane tabs)
    {
       String message = "Enter Search Pattern";
       String title = "Search Data Files";
       int type = JOptionPane.QUESTION_MESSAGE;
-      Icon icon = ImageTools.getIcon ("20/objects/Magnify.gif");
+      Icon icon = ImageTools.getIcon("20/objects/Magnify.gif");
       String defaultValue = null;
-      
-      String pattern = (String) JOptionPane.showInputDialog (owner, message, title, type, icon, null, defaultValue);
+
+      String pattern = (String) JOptionPane.showInputDialog(owner, message, title, type, icon, null, defaultValue);
       if (pattern != null && !pattern.isEmpty())
       {
          StringBuilder html = search(pattern);
@@ -34,32 +39,31 @@ public class Search
          // FileUtils.writeFile(new File("C:/Users/J/Desktop/test.html"), html.toString(), false);
       }
    }
-   
+
    private static StringBuilder search(final String pattern)
    {
       StringBuilder html = new StringBuilder();
-      html.append ("<meta http-equiv=\"content-type\" content=\"text-html; charset=utf-8\">\n");
-      html.append ("<html>\n");
-      html.append ("<body>\n\n");
-      
+      html.append("<meta http-equiv=\"content-type\" content=\"text-html; charset=utf-8\">\n");
+      html.append("<html>\n");
+      html.append("<body>\n\n");
+
       // not supported by java's HTML
       /*
-      html.append ("<style type=\"text/css\">\n");
-      html.append ("em.match { font-style: normal; background-color: yellow }\n");
-      html.append ("</style>\n\b");
-      */
+       * html.append ("<style type=\"text/css\">\n"); html.append ("em.match { font-style: normal; background-color: yellow }\n");
+       * html.append ("</style>\n\b");
+       */
 
-      html.append ("<h2>Search: " + pattern + "</h2>\n");
+      html.append("<h2>Search: " + pattern + "</h2>\n");
 
       Pattern p = Pattern.compile("(" + Pattern.quote(pattern) + ")", Pattern.CASE_INSENSITIVE);
       String upper = pattern.toUpperCase();
-      
+
       searchTables(html, p, upper);
       searchScripts(html, p, upper);
-      
-      html.append ("</body>\n");
-      html.append ("</html>\n");
-      
+
+      html.append("</body>\n");
+      html.append("</html>\n");
+
       return html;
    }
 
@@ -69,10 +73,10 @@ public class Search
       {
          if ("DEPENDS/ERRORS/EXAMPLES".contains(table.getName().toUpperCase()))
             continue;
-         
+
          if (table.getName().toUpperCase().contains(upper))
-            html.append("<h3>" + hilight(p, table.getName()) + " (" + table.getFile()+ ")</h3>\n");
-         
+            html.append("<h3>" + hilight(p, table.getName()) + " (" + table.getFile() + ")</h3>\n");
+
          List<String> matches = table.search(upper);
          if (!matches.isEmpty())
          {
@@ -88,11 +92,11 @@ public class Search
 
    private static void searchScripts(final StringBuilder html, final Pattern p, final String upper)
    {
-      for (Script script : Script.scripts.values())
+      for (Script script : Script.SCRIPTS.values())
       {
          if (script.getName().toUpperCase().contains(upper))
-            html.append("<h3>" + hilight(p, script.getName()) + " (" + script.getFile()+ ")</h3>\n");
-         
+            html.append("<h3>" + hilight(p, script.getName()) + " (" + script.getFile() + ")</h3>\n");
+
          List<String> matches = script.search(upper);
          if (!matches.isEmpty())
          {
@@ -109,7 +113,7 @@ public class Search
    private static String hilight(final Pattern pattern, final String text)
    {
       Matcher m = pattern.matcher(text);
-      // return m.replaceAll("<em class=match>$1</em>"); // not supported by java's HTML      
+      // return m.replaceAll("<em class=match>$1</em>"); // not supported by java's HTML
       return m.replaceAll("<font bgcolor=yellow>$1</font>");
    }
 
@@ -118,22 +122,22 @@ public class Search
       try
       {
          JTextPane htmlPane = new JTextPane();
-         htmlPane.setBackground (null);
-         htmlPane.setEditable (false);
-         htmlPane.setEditorKit (new HTMLEditorKit());
-         htmlPane.setText (html.toString());
+         htmlPane.setBackground(null);
+         htmlPane.setEditable(false);
+         htmlPane.setEditorKit(new HTMLEditorKit());
+         htmlPane.setText(html.toString());
          htmlPane.setCaretPosition(0);
-         
+
          Component searchResults = new JScrollPane(htmlPane);
-         tabs.addToggleTab (pattern, SEARCH_ICON, searchResults, "Search results for: " + pattern);
+         tabs.addToggleTab(pattern, SEARCH_ICON, searchResults, "Search results for: " + pattern);
 
          int index = tabs.indexOfTab(pattern);
          tabs.setSelectedIndex(index);
-         
+
       }
-      catch (Exception x) 
+      catch (Exception x)
       {
-         System.err.println (x.getMessage());
+         System.err.println(x.getMessage());
       }
    }
 }
