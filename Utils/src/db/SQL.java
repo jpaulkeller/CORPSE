@@ -75,6 +75,7 @@ public class SQL implements DAO
          conn.rollback();
    }
 
+   @Override
    public void close()
    {
       try { conn.close(); } catch (SQLException x) { System.err.println (x); }
@@ -235,6 +236,7 @@ public class SQL implements DAO
       return s;
    }
 
+   @Override
    public int execute (final CharSequence update) throws SQLException
    {
       int rowsChanged = 0;
@@ -448,6 +450,7 @@ public class SQL implements DAO
     * @return a (possibly empty) list of the selected field's values
     * for all matching records
     */
+   @Override
    public List<String> getList (final CharSequence select) throws SQLException
    {
       List<String> list = new ArrayList<String>();
@@ -575,6 +578,7 @@ public class SQL implements DAO
     * Warning: Functions such as SUM(col) return blank names.  To avoid this
     * problem, use 'select SUM(Field) as FieldSum ...' 
     */
+   @Override
    public Model getModel (final CharSequence select) throws SQLException
    {
       Model model = new Model (SQLU.getTableName (select));

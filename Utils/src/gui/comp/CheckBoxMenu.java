@@ -102,6 +102,7 @@ public class CheckBoxMenu<T>
       JPanel panel = getPanel (new Dimension (400, 200));
       JPanel btnPanel = createBtnPanel (new ActionListener()
       {
+         @Override
          public void actionPerformed (final ActionEvent event)
          {
             String action = event.getActionCommand();

@@ -107,6 +107,7 @@ public class ListOrderable<E> extends JPanel
    
    private class ButtonHandler implements ActionListener
    {
+      @Override
       public void actionPerformed (final ActionEvent e)
       {
          int index = list.getSelectedIndex();
@@ -133,6 +134,7 @@ public class ListOrderable<E> extends JPanel
 
    private class SelectionListener implements ListSelectionListener
    {
+      @Override
       public void valueChanged (final ListSelectionEvent arg0)
       {
          enableButtons();

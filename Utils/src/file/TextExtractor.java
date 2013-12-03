@@ -13,7 +13,6 @@ import javax.swing.JPanel;
 
 import state.StateModel;
 import utils.Config;
-import utils.Options;
 import web.ReadURL;
 
 public class TextExtractor
@@ -86,6 +85,7 @@ public class TextExtractor
    
    private class FileListener implements ValueChangeListener
    {
+      @Override
       public void valueChanged (final ValueChangeEvent e)
       {
          if (item.isValid())

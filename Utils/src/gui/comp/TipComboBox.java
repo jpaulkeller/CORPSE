@@ -244,6 +244,7 @@ public class TipComboBox extends JComboBox
 
       JButton btn = new JButton ("OK");
       btn.addActionListener (new ActionListener() {
+         @Override
          public void actionPerformed (final ActionEvent e)
          {
             System.out.println ("Month: " + box1.getSelectedIndex() + " " +

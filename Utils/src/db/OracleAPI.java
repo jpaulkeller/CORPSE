@@ -161,6 +161,7 @@ public final class OracleAPI implements DatabaseAPI
     *
     * @return the requested field's value from the first record
     */
+   @Override
    public String getString (final CharSequence select) throws SQLException
    {
       return sql.getString (select);
@@ -171,6 +172,7 @@ public final class OracleAPI implements DatabaseAPI
     * of the first row as a number.  The query should result in a single value;
     * such as "select count(*) from ..."
     */
+   @Override
    public double getDouble (final CharSequence select) throws SQLException
    {
       return sql.getDouble (select);
@@ -182,6 +184,7 @@ public final class OracleAPI implements DatabaseAPI
     *
     * @return the requested field's value from the first record
     */
+   @Override
    public Date getDate (final CharSequence select) throws SQLException
    {
       return sql.getDate (select);
@@ -193,6 +196,7 @@ public final class OracleAPI implements DatabaseAPI
     *
     * @return the requested field's value from the first record
     */
+   @Override
    public Timestamp getTimestamp (final CharSequence select) throws SQLException
    {
       return sql.getTimestamp (select);
@@ -206,6 +210,7 @@ public final class OracleAPI implements DatabaseAPI
     * for all matching records
     */
    
+   @Override
    public List<String> getList (final CharSequence select) throws SQLException
    {
       return sql.getList (select);
@@ -218,6 +223,7 @@ public final class OracleAPI implements DatabaseAPI
     *
     * @return a mapping of the selected field values for all matching records
     */
+   @Override
    public Map<String, String> getMapping (final CharSequence select)
    throws SQLException
    {
@@ -234,6 +240,7 @@ public final class OracleAPI implements DatabaseAPI
     *
     * @return a mapping of the fields to values for a single row
     */
+   @Override
    public Map<String, String> getFieldMap (final CharSequence select) 
    throws SQLException
    {
@@ -256,6 +263,7 @@ public final class OracleAPI implements DatabaseAPI
     * Warning: Functions such as SUM(col) return blank names.  To avoid this
     * problem, use 'select SUM(Field) as FieldSum ...' 
     */
+   @Override
    public Model getTable (final CharSequence select) throws SQLException
    {
       return sql.getModel (select);
@@ -280,6 +288,7 @@ public final class OracleAPI implements DatabaseAPI
    /** 
     * Executes the given SQL statement, and returns the number of records affected. 
     */
+   @Override
    public int execute (final CharSequence update) throws SQLException
    {
       return sql.execute (update);
@@ -292,6 +301,7 @@ public final class OracleAPI implements DatabaseAPI
     * the insert succeeded; otherwise null is returned.  For example: 
     * INSERT INTO MyTable (Key, Col2, Col3) VALUES ('%1$s', 2, 'Three')
     */
+   @Override
    public String insertWithGuid (final CharSequence insertFormat)
    throws SQLException
    {
@@ -304,6 +314,7 @@ public final class OracleAPI implements DatabaseAPI
     * serves as the Primary Key.  The GUID is returned if the insert succeeded;
     * otherwise null is returned. 
     */
+   @Override
    public String insertWithGuid (final String table, final Object... values) 
    throws SQLException
    {

@@ -171,6 +171,7 @@ public class DebuggableStatement implements PreparedStatement
     *
     * @throws SQLException the sQL exception
     */
+   @Override
    public void addBatch() throws SQLException
    {
       ps.addBatch();
@@ -182,6 +183,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param ignored the sql
     * @throws SQLException the sQL exception
     */
+   @Override
    public void addBatch(final String ignored) throws SQLException
    {
       throw new UnsupportedOperationException("Use addBatch() instead: " + ignored);
@@ -192,6 +194,7 @@ public class DebuggableStatement implements PreparedStatement
     *
     * @throws SQLException the sQL exception
     */
+   @Override
    public void cancel() throws SQLException
    {
       ps.cancel();
@@ -202,6 +205,7 @@ public class DebuggableStatement implements PreparedStatement
     *
     * @throws SQLException the sQL exception
     */
+   @Override
    public void clearBatch() throws SQLException
    {
       ps.clearBatch();
@@ -212,6 +216,7 @@ public class DebuggableStatement implements PreparedStatement
     *
     * @throws SQLException the sQL exception
     */
+   @Override
    public void clearParameters() throws SQLException
    {
       ps.clearParameters();
@@ -222,6 +227,7 @@ public class DebuggableStatement implements PreparedStatement
     *
     * @throws SQLException the sQL exception
     */
+   @Override
    public void clearWarnings() throws SQLException
    {
       ps.clearWarnings();
@@ -232,6 +238,7 @@ public class DebuggableStatement implements PreparedStatement
     *
     * @throws SQLException the sQL exception
     */
+   @Override
    public void close() throws SQLException
    {
       ps.close();
@@ -252,6 +259,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return results of query
     * @throws SQLException the sQL exception
     */
+   @Override
    public boolean execute() throws SQLException
    {
       // execute query
@@ -275,6 +283,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return results of query
     * @throws SQLException the sQL exception
     */
+   @Override
    public boolean execute(final String ignored) throws SQLException
    {
       throw new UnsupportedOperationException("Use execute() instead: " + ignored);
@@ -313,6 +322,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return results of query
     * @throws SQLException the sQL exception
     */
+   @Override
    public int[] executeBatch() throws SQLException
    {
       // execute query
@@ -333,6 +343,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return results of query
     * @throws SQLException the sQL exception
     */
+   @Override
    public ResultSet executeQuery() throws SQLException
    {
       // execute query
@@ -356,6 +367,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return results of query
     * @throws SQLException the sQL exception
     */
+   @Override
    public ResultSet executeQuery(final String ignored) throws SQLException
    {
       // execute query
@@ -377,6 +389,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return results of query
     * @throws SQLException the sQL exception
     */
+   @Override
    public int executeUpdate() throws SQLException
    {
       // execute query
@@ -400,6 +413,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return results of query
     * @throws SQLException the sQL exception
     */
+   @Override
    public int executeUpdate(final String ignored) throws SQLException
    {
       throw new UnsupportedOperationException("Use executeUpdate() instead: " + ignored);
@@ -438,6 +452,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the connection
     * @throws SQLException the sQL exception
     */
+   @Override
    public Connection getConnection() throws SQLException
    {
       return ps.getConnection();
@@ -449,6 +464,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the fetch direction
     * @throws SQLException the sQL exception
     */
+   @Override
    public int getFetchDirection() throws SQLException
    {
       return ps.getFetchDirection();
@@ -460,6 +476,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the fetch size
     * @throws SQLException the sQL exception
     */
+   @Override
    public int getFetchSize() throws SQLException
    {
       return ps.getFetchSize();
@@ -471,6 +488,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the max field size
     * @throws SQLException the sQL exception
     */
+   @Override
    public int getMaxFieldSize() throws SQLException
    {
       return ps.getMaxFieldSize();
@@ -482,6 +500,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the max rows
     * @throws SQLException the sQL exception
     */
+   @Override
    public int getMaxRows() throws SQLException
    {
       return ps.getMaxRows();
@@ -493,6 +512,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the meta data
     * @throws SQLException the sQL exception
     */
+   @Override
    public ResultSetMetaData getMetaData() throws SQLException
    {
       return ps.getMetaData();
@@ -504,6 +524,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the more results
     * @throws SQLException the sQL exception
     */
+   @Override
    public boolean getMoreResults() throws SQLException
    {
       return ps.getMoreResults();
@@ -515,6 +536,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the query timeout
     * @throws SQLException the sQL exception
     */
+   @Override
    public int getQueryTimeout() throws SQLException
    {
       return ps.getQueryTimeout();
@@ -526,6 +548,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the result set
     * @throws SQLException the sQL exception
     */
+   @Override
    public ResultSet getResultSet() throws SQLException
    {
       return ps.getResultSet();
@@ -537,6 +560,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the result set concurrency
     * @throws SQLException the sQL exception
     */
+   @Override
    public int getResultSetConcurrency() throws SQLException
    {
       return ps.getResultSetConcurrency();
@@ -548,6 +572,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the result set type
     * @throws SQLException the sQL exception
     */
+   @Override
    public int getResultSetType() throws SQLException
    {
       return ps.getResultSetType();
@@ -569,6 +594,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the update count
     * @throws SQLException the sQL exception
     */
+   @Override
    public int getUpdateCount() throws SQLException
    {
       return ps.getUpdateCount();
@@ -580,6 +606,7 @@ public class DebuggableStatement implements PreparedStatement
     * @return the warnings
     * @throws SQLException the sQL exception
     */
+   @Override
    public SQLWarning getWarnings() throws SQLException
    {
       return ps.getWarnings();
@@ -613,6 +640,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setArray(final int i, final java.sql.Array x) throws SQLException
    {
       saveObject(i, x);
@@ -648,6 +676,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param length the length
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setAsciiStream(final int parameterIndex, final InputStream x, 
                               final long length) throws SQLException
    {
@@ -662,6 +691,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setBigDecimal(final int parameterIndex, final BigDecimal x) throws SQLException
    {
       saveObject(parameterIndex, x);
@@ -714,6 +744,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setBlob(final int parameterIndex, final Blob x) throws SQLException
    {
       saveObject(parameterIndex, x);
@@ -748,6 +779,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setBoolean(final int parameterIndex, final boolean x) throws SQLException
    {
       saveObject(parameterIndex, new Boolean(x));
@@ -761,6 +793,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setByte(final int parameterIndex, final byte x) throws SQLException
    {
       saveObject(parameterIndex, new Byte(x));
@@ -774,6 +807,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setBytes(final int parameterIndex, final byte[] x) throws SQLException
    {
       saveObject(parameterIndex, (x == null ? "NULL" : "byte[] length=" + x.length));
@@ -799,6 +833,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param length length of InputStream
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setCharacterStream(final int parameterIndex, final Reader reader, 
                                   final int length) throws SQLException
    {
@@ -847,6 +882,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setClob(final int i, final Clob x) throws SQLException
    {
       saveObject(i, x);
@@ -908,6 +944,7 @@ public class DebuggableStatement implements PreparedStatement
    /* (non-Javadoc)
     * @see java.sql.Statement#setCursorName(java.lang.String)
     */
+   @Override
    public void setCursorName(final String name) throws SQLException
    {
       ps.setCursorName(name);
@@ -920,6 +957,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setDate(final int parameterIndex, final java.sql.Date x) throws SQLException
    {
       saveObject(parameterIndex, x);
@@ -936,6 +974,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param cal uses x to set time
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setDate(final int parameterIndex, final java.sql.Date x, 
                        final Calendar cal) throws SQLException
    {
@@ -951,6 +990,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setDouble(final int parameterIndex, final double x) throws SQLException
    {
       saveObject(parameterIndex, new Double(x));
@@ -963,6 +1003,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param enable the new escape processing
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setEscapeProcessing(final boolean enable) throws SQLException
    {
       ps.setEscapeProcessing(enable);
@@ -984,6 +1025,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param direction the new fetch direction
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setFetchDirection(final int direction) throws SQLException
    {
       ps.setFetchDirection(direction);
@@ -995,6 +1037,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param rows the new fetch size
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setFetchSize(final int rows) throws SQLException
    {
       ps.setFetchSize(rows);
@@ -1007,6 +1050,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setFloat(final int parameterIndex, final float x) throws SQLException
    {
       saveObject(parameterIndex, new Float(x));
@@ -1020,6 +1064,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setInt(final int parameterIndex, final int x) throws SQLException
    {
       saveObject(parameterIndex, new Integer(x));
@@ -1033,6 +1078,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setLong(final int parameterIndex, final long x) throws SQLException
    {
       saveObject(parameterIndex, new Long(x));
@@ -1045,6 +1091,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param max the new max field size
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setMaxFieldSize(final int max) throws SQLException
    {
       ps.setMaxFieldSize(max);
@@ -1056,6 +1103,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param max the new max rows
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setMaxRows(final int max) throws SQLException
    {
       ps.setMaxRows(max);
@@ -1068,6 +1116,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param sqlType the sql type
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setNull(final int parameterIndex, final int sqlType) throws SQLException
    {
       saveObject(parameterIndex, "NULL");
@@ -1082,6 +1131,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param typeName type of Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setNull(final int parameterIndex, final int sqlType, 
                        final String typeName) throws SQLException
    {
@@ -1097,6 +1147,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setObject(final int parameterIndex, final Object x) throws SQLException
    {
       saveObject(parameterIndex, (x == null ? "NULL" : x.getClass().getName()));
@@ -1112,6 +1163,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param targetSqlType database type
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setObject(final int parameterIndex, final Object x, 
                          final int targetSqlType) throws SQLException
    {
@@ -1129,6 +1181,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param scale see PreparedStatement
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setObject(final int parameterIndex, final Object x, 
                          final int targetSqlType, final int scale) throws SQLException
    {
@@ -1142,6 +1195,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param seconds the new query timeout
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setQueryTimeout(final int seconds) throws SQLException
    {
       ps.setQueryTimeout(seconds);
@@ -1161,6 +1215,7 @@ public class DebuggableStatement implements PreparedStatement
     * @throws SQLException the sQL exception
     */
 
+   @Override
    public void setRef(final int i, final Ref x) throws SQLException
    {
       saveObject(i, x);
@@ -1174,6 +1229,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setShort(final int parameterIndex, final short x) throws SQLException
    {
       saveObject(parameterIndex, new Short(x));
@@ -1192,6 +1248,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setString(final int parameterIndex, final String x) throws SQLException
    {
       saveObject(parameterIndex, x);
@@ -1215,6 +1272,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setTime(final int parameterIndex, final Time x) throws SQLException
    {
       saveObject(parameterIndex, x);
@@ -1231,6 +1289,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param cal sets time based on x
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setTime(final int parameterIndex, final Time x, 
                        final Calendar cal) throws SQLException
    {
@@ -1246,6 +1305,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param x parameter Object
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setTimestamp(final int parameterIndex, final Timestamp x) throws SQLException
    {
       saveObject(parameterIndex, x);
@@ -1263,6 +1323,7 @@ public class DebuggableStatement implements PreparedStatement
     * @param cal sets time based on x
     * @throws SQLException the sQL exception
     */
+   @Override
    public void setTimestamp(final int parameterIndex, final Timestamp x, 
                             final Calendar cal) throws SQLException
    {
@@ -1284,6 +1345,7 @@ public class DebuggableStatement implements PreparedStatement
     * @deprecated
     */
    @Deprecated
+   @Override
    public void setUnicodeStream(final int parameterIndex, final InputStream x, 
                                 final int length) throws SQLException
    {
