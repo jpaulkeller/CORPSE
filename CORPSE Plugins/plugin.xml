@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+
+<!-- objectClass="org.eclipse.core.resources.IFile" -->
+
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.ui.IEditorInput"
+            nameFilter="*.*"
+            id="CORPSE_Plugins.contribution1">
+         <menu
+               label="CORPSE"
+               path="additions"
+               id="CORPSE_Plugins.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Open Table"
+               class="corpse.popup.actions.OpenTableAction"
+               menubarPath="CORPSE_Plugins.menu1/group1"
+               enablesFor="1"
+               id="CORPSE_Plugins.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+</plugin>
