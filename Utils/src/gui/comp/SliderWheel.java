@@ -95,6 +95,7 @@ public class SliderWheel extends JSlider implements MouseWheelListener
       return increment;
    }
 
+   @Override
    public void mouseWheelMoved (final MouseWheelEvent e)
    {
       int currentValue = getValue();
@@ -117,14 +118,15 @@ public class SliderWheel extends JSlider implements MouseWheelListener
       // slider.setPreferredSize (new Dimension (180, 45));
 
       slider.addChangeListener (new ChangeListener()
+      {
+         @Override
+         public void stateChanged (final ChangeEvent e)
          {
-            public void stateChanged (final ChangeEvent e)
-            {
-               JSlider jSlider = (JSlider) e.getSource();
-               if (!jSlider.getValueIsAdjusting())
-                  System.out.println (jSlider.getValue() + "");
-            }
-         });
+            JSlider jSlider = (JSlider) e.getSource();
+            if (!jSlider.getValueIsAdjusting())
+               System.out.println (jSlider.getValue() + "");
+         }
+      });
 
       ComponentTools.open (slider, "SliderWheel");
    }

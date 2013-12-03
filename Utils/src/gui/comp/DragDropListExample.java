@@ -97,6 +97,7 @@ public class DragDropListExample extends JList
 
                SwingUtilities.invokeLater (new Runnable()
                {
+                  @Override
                   public void run()
                   {
                      DragDropListExample.this.clearSelection();
@@ -116,6 +117,7 @@ public class DragDropListExample extends JList
 
                SwingUtilities.invokeLater (new Runnable()
                {
+                  @Override
                   public void run()
                   {
                      DragDropListExample.this.clearSelection();
@@ -170,19 +172,21 @@ public class DragDropListExample extends JList
          data = d;
       }
 
-      public Object getTransferData (final DataFlavor flavor)
-      throws UnsupportedFlavorException, IOException
+      @Override
+      public Object getTransferData (final DataFlavor flavor) throws UnsupportedFlavorException, IOException
       {
          if (flavor.equals (DRAG_DROP_LIST_FLAVOR))
             return DragDropListData.this;
          return null;
       }
 
+      @Override
       public DataFlavor[] getTransferDataFlavors()
       {
          return supportedFlavors;
       }
 
+      @Override
       public boolean isDataFlavorSupported (final DataFlavor flavor)
       {
          return true;

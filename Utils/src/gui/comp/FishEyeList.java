@@ -432,20 +432,24 @@ public final class FishEyeList extends JPanel
          spinThread.start();
       }
 
+      @Override
       public synchronized void mouseClicked (final MouseEvent me)
       {
       }
 
+      @Override
       public synchronized void mousePressed (final MouseEvent me)
       {
          accelerate (me);
       }
 
+      @Override
       public synchronized void mouseEntered (final MouseEvent me)
       {
          accelerate (me);
       }
 
+      @Override
       public synchronized void mouseReleased (final MouseEvent me)
       {
          if (me.getButton() == MouseEvent.BUTTON1)
@@ -460,6 +464,7 @@ public final class FishEyeList extends JPanel
          }
       }
 
+      @Override
       public synchronized void mouseExited (final MouseEvent me)
       {
          if (me.getModifiersEx() == MouseEvent.BUTTON1_DOWN_MASK)

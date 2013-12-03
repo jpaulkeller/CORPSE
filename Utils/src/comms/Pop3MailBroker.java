@@ -110,6 +110,7 @@ public class Pop3MailBroker
    {
       Thread thread = new Thread (new Runnable()
       {
+         @Override
          public void run()
          {
             fetchMail (interval);
@@ -185,6 +186,7 @@ public class Pop3MailBroker
       
       pop3.addStatusListener (new StatusListener() 
       {
+         @Override
          public void processStatus (final StatusEvent e)
          {
             System.out.println ("> Status: " + e.getStatusString());
@@ -193,6 +195,7 @@ public class Pop3MailBroker
       
       pop3.addMsgListener (new MessageListener()
       {
+         @Override
          public void messageReceived (final MessageEvent e)
          {
             MimeMessage message = e.getMessage();

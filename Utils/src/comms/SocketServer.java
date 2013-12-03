@@ -54,6 +54,7 @@ public class SocketServer extends Observable implements Runnable
       }
    }
 
+   @Override
    public synchronized void run()
    {
       while (!shouldStop)
@@ -111,6 +112,7 @@ public class SocketServer extends Observable implements Runnable
       {
          SocketServer server = new SocketServer ("SocketServer", port);
          server.addObserver (new Observer() {
+            @Override
             public void update (final Observable o, final Object request)
             {
                System.out.println ("Server received: " + request);

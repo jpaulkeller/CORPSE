@@ -105,6 +105,7 @@ public class CountdownClock extends Applet implements Runnable
    }
 
    // Run method to recalculate the countdown string
+   @Override
    public void run()
    {
       while (!stopped)

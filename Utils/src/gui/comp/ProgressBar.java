@@ -21,6 +21,7 @@ public class ProgressBar extends JProgressBar
    {
       SwingUtilities.invokeLater (new Runnable()
       {
+         @Override
          public void run()
          {
             ProgressBar.super.setString (text);
@@ -35,6 +36,7 @@ public class ProgressBar extends JProgressBar
    {
       SwingUtilities.invokeLater (new Runnable()
       {
+         @Override
          public void run()
          {
             ProgressBar.super.setIndeterminate (newValue);
@@ -47,6 +49,7 @@ public class ProgressBar extends JProgressBar
    {
       SwingUtilities.invokeLater (new Runnable()
       {
+         @Override
          public void run()
          {
             ProgressBar.super.setValue (n);
@@ -58,6 +61,7 @@ public class ProgressBar extends JProgressBar
    {
       SwingUtilities.invokeLater (new Runnable()
       {
+         @Override
          public void run()
          {
             ProgressBar.super.setIndeterminate (false);

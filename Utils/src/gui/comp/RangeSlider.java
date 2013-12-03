@@ -142,6 +142,7 @@ public class RangeSlider extends JComponent
     */
    protected class RangeSliderChangeListener implements ChangeListener
    {
+      @Override
       public void stateChanged (final ChangeEvent e)
       {
          fireChangeEvent();

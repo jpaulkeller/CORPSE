@@ -89,6 +89,11 @@ public class TableView
       return name;
    }
    
+   public TableModel getModel()
+   {
+      return model;
+   }
+   
    public void setModel (final TableModel model)
    {
       this.model = model;
@@ -192,6 +197,7 @@ public class TableView
          addButtons (panel);
 
       JScrollPane scroller = new JScrollPane (view);
+      scroller.getVerticalScrollBar().setUnitIncrement(16);
       scroller.setPreferredSize (new Dimension (w, h));
       panel.add (scroller, BorderLayout.CENTER);
       

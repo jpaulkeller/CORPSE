@@ -14,7 +14,7 @@ public class StateModel implements Serializable
 {
    private static final long serialVersionUID = 0;
 
-   static final String DEFAULT_STATE = "StateModel.DefaultState";
+   public static final String DEFAULT_STATE = "StateModel.DefaultState";
    public static final Cursor DEFAULT_CURSOR =
       Cursor.getPredefinedCursor (Cursor.DEFAULT_CURSOR);
 
@@ -77,6 +77,11 @@ public class StateModel implements Serializable
       }
    }
 
+   public void clear()
+   {
+      states.clear();
+   }
+   
    /** Adds or removes the given state, depending on the given active flag. */
    
    public void updateState (final String state, final boolean active)

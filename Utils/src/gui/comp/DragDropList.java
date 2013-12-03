@@ -79,6 +79,7 @@ implements DragSourceListener, DragGestureListener
     * drag-initiating gesture and is notifying this listener in order for it
     * to initiate the action for the user. */
 
+   @Override
    public void dragGestureRecognized (final DragGestureEvent e)
    {
       if (dragGestureAllowed (e))
@@ -90,6 +91,7 @@ implements DragSourceListener, DragGestureListener
       }
    }
 
+   @Override
    public void dragDropEnd (final DragSourceDropEvent event)
    {
       ListModel model = getModel();
@@ -116,6 +118,7 @@ implements DragSourceListener, DragGestureListener
       }
    }
 
+   @Override
    public void dragEnter (final DragSourceDragEvent e)
    {
       DragSourceContext context = e.getDragSourceContext();
@@ -124,14 +127,17 @@ implements DragSourceListener, DragGestureListener
       context.setCursor (cursor); 
    }
 
+   @Override
    public void dragExit (final DragSourceEvent event)
    {
    }
 
+   @Override
    public void dragOver (final DragSourceDragEvent event)
    {
    }
 
+   @Override
    public void dropActionChanged (final DragSourceDragEvent event)
    {
    }
@@ -183,17 +189,19 @@ implements DragSourceListener, DragGestureListener
          this.data = data;
       }
 
-      public Object getTransferData (final DataFlavor flavor)
-      throws UnsupportedFlavorException, IOException
+      @Override
+      public Object getTransferData (final DataFlavor flavor) throws UnsupportedFlavorException, IOException
       {
          return flavor.equals (DRAG_DROP_LIST_FLAVOR) ? this : null;
       }
 
+      @Override
       public DataFlavor[] getTransferDataFlavors()
       {
          return supportedFlavors;
       }
 
+      @Override
       public boolean isDataFlavorSupported (final DataFlavor flavor)
       {
          return flavor == DRAG_DROP_LIST_FLAVOR;
@@ -245,6 +253,7 @@ implements DragSourceListener, DragGestureListener
             e.rejectDrag();
       }
 
+      @Override
       public void drop (final DropTargetDropEvent e)
       {
          DragDropListData data = getData (e.getTransferable());
