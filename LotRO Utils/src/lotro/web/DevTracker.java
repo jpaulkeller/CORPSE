@@ -82,18 +82,31 @@ public final class DevTracker
          return YYYYMM.format (date) + " by " + dev + " in " + forum + ": " + topic;
       }
 
+      @Override
       public int compareTo (final Post o)
       {
          return toString().compareTo (o.toString());
       }
    }
 
+   // pre 2013
+   /*
    private static final Pattern POST_PATTERN = 
       Pattern.compile ("<tr>.*?" +
                        "<a href=\"showthread.php[?]&postid=(\\d+)[^>]*\">([^<]*)</a>.*?" +
                        "<div.*?([0-9]{2}-[0-9]{2}-[0-9]{4}) *<span class=\"time\">" +
                        ".*?</span><br>.*?by ([A-Za-z]+).*?</div>.*?" +
                        "<a href=\"forumdisplay.php[^>]*>([^<]+)</a>.*?</tr>",
+                       Pattern.DOTALL | Pattern.MULTILINE);
+                       */
+   
+   // groups: PostID, Topic, MDY, Dev, Forum
+   private static final Pattern POST_PATTERN = 
+      Pattern.compile ("<div class=\"trackerbit\">.*?" +
+                       "<a href=\"showthread.php[?]&postid=(\\d+)[^>]*\">([^<]*)</a>.*?" + // Post and Topic
+                       "([0-9]{2}-[0-9]{2}-[0-9]{4}) *<span class=\"time\">.*?" + // MDY
+                       "by ([A-Za-z]+).*?</div>.*?" + // Dev
+                       "<a href=\"forumdisplay.php[^>]*>([^<]+)</a>", // Forum
                        Pattern.DOTALL | Pattern.MULTILINE);
 
    private List<Post> posts = new ArrayList<Post>();
@@ -107,7 +120,7 @@ public final class DevTracker
 
    private DevTracker()
    {
-      /* prevent instantiation */
+      // prevent instantiation
    }
 
    public boolean scrape (final String address,
@@ -119,24 +132,37 @@ public final class DevTracker
       InputStream is = null;
       try
       {
-         if (address.startsWith ("http://"))
-            is = new URL (address).openStream();
+         if (address.startsWith ("http"))
+         {
+            // if (Login.login (owner, address))
+            // is = new URL (address).openStream();
+            is = BypassSSL.openStream(address);
+         }
          else
             is = new FileInputStream (address);
 
          String page = FileUtils.getText (is, "UTF8");
-
+         // System.out.println(page); //TODO
+         
          Date prevDate = null;
          
          Matcher matcher = POST_PATTERN.matcher (page);
          while (matcher.find())
          {
-            String id    = matcher.group (1); 
+            String id    = matcher.group (1); // post ID 
             String topic = matcher.group (2);
             String mdy   = matcher.group (3);
             String dev   = matcher.group (4);
             String forum = matcher.group (5);
             Date date = null;
+            
+            /*
+            System.out.println("ID    = [" + id + "]"); 
+            System.out.println("Topic = [" + topic + "]");
+            System.out.println("Date  = [" + mdy + "]");
+            System.out.println("Dev   = [" + dev + "]");
+            System.out.println("Forum = [" + forum + "]");
+            */
 
             try
             {
@@ -396,19 +422,86 @@ public final class DevTracker
       }
    }
    
+   /*
+   private static void setupCookies()
+   {
+      HttpClient client = new HttpClient();
+      client.getHostConfiguration().setHost (HOST, 80, "http");
+      client.getParams().setCookiePolicy (CookiePolicy.RFC_2109);
+      // client.getParams().setCookiePolicy (CookiePolicy.NETSCAPE);
+      // client.getParams().setCookiePolicy (CookiePolicy.BROWSER_COMPATIBILITY);
+
+      PostMethod post = new PostMethod ("/login/login2.asp");
+      NameValuePair action   = new NameValuePair ("submit", "Login");
+      NameValuePair userid   = new NameValuePair ("email", "jpaulkeller@comcast.net");
+      NameValuePair password = new NameValuePair ("password", "nagshead");
+      post.setRequestBody (new NameValuePair[] { action, userid, password });
+
+      execute (client, post);
+      showCookies (client);
+   }
+   
+   private static void showCookies (final HttpClient client)
+   {
+      Cookie[] cookies = client.getState().getCookies();
+      System.out.println("Cookies: ");
+      for (int i = 0; i < cookies.length; i++)
+         System.out.println(" - " + cookies[i].toExternalForm());
+   }
+
+   private static String execute (final HttpClient client, final HttpMethod method)
+   {
+      String response = null;
+
+      try
+      {
+         method.setDoAuthentication (true);
+         // method.setFollowRedirects (true);
+
+         int statusCode = client.executeMethod (method);
+         if (statusCode != HttpStatus.SC_OK)
+            System.err.println ("Method failed: " + method.getStatusLine());
+
+         // Read the response body.
+         // Use caution: ensure correct character encoding and is not binary data
+         response = method.getResponseBodyAsString();
+       }
+       catch (HttpException e)
+       {
+          System.err.println ("Fatal protocol violation: " + e.getMessage());
+          e.printStackTrace();
+       }
+       catch (IOException e)
+       {
+          System.err.println ("Fatal transport error: " + e.getMessage());
+          e.printStackTrace();
+       }
+       finally
+       {
+          method.releaseConnection();
+       }
+
+       return response;
+   }
+   */
+   
    public static void main (final String[] args) throws Exception
    {
-      String firstMDY = "01-01-2012";
-      String lastMDY = "12-31-2012";
+      String firstMDY = "01-01-2013"; // TODO
+      String lastMDY = "12-31-2013";
       Date firstDate = MDY.parse (firstMDY);
       Date lastDate = MDY.parse (lastMDY);
 
       DevTracker tracker = new DevTracker();
       
-      String url = "http://forums.lotro.com/turbine_tracker.php?tracker=devT&pp=25&page=";
+      // String url = "http://forums.lotro.com/turbine_tracker.php?tracker=devT&pp=25&page=";
+      String url = "https://www.lotro.com/forums/post_tracker.php?tracker=devtracker&searchid=&pp=25&page=";
       int page = 1;
       while (tracker.scrape (url + page, firstDate, lastDate))
+      {
          page++;
+         // if (page >= 3) break;
+      }
       tracker.organize();
       
       String dates = "(" + firstMDY + " to " + lastMDY + ")"; 
@@ -423,7 +516,7 @@ public final class DevTracker
       for (String forum : tracker.byForum.keySet())
       {
          Klass klass = Klass.parse (forum);
-         if (klass != Klass.Unknown)
+         if (klass != Klass.Unknown && klass != Klass.None)
             chart.addValue (forum, tracker.byForum.getInt (forum), klass.getColorBG (""));
          else if (forum.equalsIgnoreCase ("Monster play") ||         
                   forum.equalsIgnoreCase ("Freeps") ||         
@@ -438,7 +531,7 @@ public final class DevTracker
       
       // --------------------------------------------------------------------
       
-      chart = new GoogleChart ("Dev Posts By Forum " + dates, GoogleChart.ChartType.BarHorizontalGrouped);
+      chart = new GoogleChart ("Dev Posts By Topic " + dates, GoogleChart.ChartType.BarHorizontalGrouped);
       chart.put (GoogleChart.ChartProp.Width, "600");
       chart.put (GoogleChart.ChartProp.Height, "400");
 
