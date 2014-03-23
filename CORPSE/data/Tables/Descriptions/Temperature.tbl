@@ -1,0 +1,9 @@
+freezing
+cold
+cool
+ambient
+warm
+hot
+boiling
+
+: Temperature {2d4-1}

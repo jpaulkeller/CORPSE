@@ -1,27 +1,27 @@
-Minuscule
-Tiny
-Very small
-Small
-Medium
-Large
-Very large
-Huge
-Gigantic
-Enormous
+minuscule
+tiny
+very small
+small
+average
+large
+very large
+huge
+massive
+gigantic
+enormous
 
-Average
-Big
-Fat
-Little 
-Long 
-Massive
-Miniature
-Narrow
-Petite
-Short 
-Skinny
-Tall 
-Tiny
-Wide
+big
+fat
+little 
+long 
+medium
+miniature
+narrow
+petite
+short 
+skinny
+tall 
+tiny
+wide
 
-: Size {3d4-2}
+: Size {2d6-1}
