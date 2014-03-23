@@ -1,35 +1,27 @@
-abyss
+the abyss
 affliction
-agent
-anchor
+the anchor
 anguish
-armour
-arrival
 augury
-aura
 banishment
-bargain
 beauty
 binding
 blindness
 blood
-bolt
 bond
-bronze
-cage
-cloud
+civilization
+clouds
 command
 compassion
 conjuration
 conquest
 contagion
-cornucopia
-curse
+the curse
 damnation
-dance
+the dance
 darkness
-dawn
-dead
+the dawn
+the dead
 death
 decay
 deceit
@@ -41,25 +33,21 @@ destiny
 destruction
 distress
 diversion
-dodge
 doom
-door
+doors
+portals
 dragons
 dread
 dreams
 dust
 dweomer
-enchanter
-eternal peril
+enchantment
 evocation
-eye
+eyes
 famine
 fate
 fear
 fever
-fey
-figment
-finger
 fire
 flame
 flesh
@@ -68,56 +56,49 @@ forgiveness
 fright
 frost
 fury
-gate
-gaze
-globe
-gloom
-goddess
-gods
+gates
+the globe
+the gloom
+the goddess
+the gods
 gold
 grace
 greed
 growth
-guardian
-hand
 harmony
-hate
+healing
 heaven
-heavens
-hex
+the heavens
 hope
 ice
-idol
-inferno
+idols
+the inferno
 insult
 iron
 joy
 justice
 laughter
-leap
 life
 light
 lightning
-lost
+the lost
 love
+luck
 madness
+magic
 malice
-map's edge
+the world's edge
 mercy
-meteor
+meteors
 mirage
 misery
 misfortune
-mist
-mists
-mithril
-mouth
-net
+the mist
 night
 no return
-oath
+oaths
 pain
-pattern
+the pattern
 peace
 pestilence
 phantom
@@ -126,6 +107,7 @@ plague
 prosperity
 rage
 refuge
+resurrection
 retreat
 retribution
 revenge
@@ -142,29 +124,29 @@ shield
 sigil
 silver
 skulls
-sky
 sleep
-sleigh
 sorrow
-soul
-spark
-sphere
-stone
+the soul
+the sphere
+the stone
 storms
 strife
 suffering
 suggestion
 summoning
-swarm
-swoon
-sword
 swords
-talisman
+the talisman
 terror
+travel
 the abyss
 the earth
+the harvest
+the lost
 the sea
 the sky
+the stars
+the sun
+the swarm
 the void
 thunder
 tide
@@ -182,6 +164,7 @@ vista
 wall
 war
 ward
+wealth
 web
 weird
 whimsy
@@ -194,32 +177,29 @@ youth
 {number}
 
 : evil
-the {monster}{s|}
 blood
 bones
 chaos
-the {evocative adjective} cult
 curses
-the dead
 death
 demons
 despair
+destruction
 deviltry
+disasters
 dissolution
 doom
-the dweller{s|} in the {dark site}
-{evocative adjective} dweomercraeft
 evil
 fire
 frost
-the {3-13} geases
 gloom
+hatred
 hells
 horrors
 ichor
 id insinuation
-the {evocative adjective} idol
 iron
+lies
 madness
 mirrors
 mists
@@ -227,7 +207,6 @@ monsters
 mystery
 necromancy
 oblivion
-the {evocative adjective} one{s|}
 peril
 phantasms
 random harlots
@@ -237,11 +216,20 @@ sigils
 skulls
 slaughter
 sorcery
-the syzygy
 terror
-torment
-treasure
+the dead
+the dweller{s|} in the {dark site}
+the undead
 the undercity
 the underworld
 the unholy
 the unknown
+the {3-13} geases
+the {evocative adjective} cult
+the {evocative adjective} idol
+the {evocative adjective} one{s|}
+the {monster}{s|}
+torment
+treachery
+trickery
+{evocative adjective} dweomercraeft
