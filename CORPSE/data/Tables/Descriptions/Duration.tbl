@@ -1,9 +1,11 @@
-: Brief {1-4}
+round
+minute
+hour
+day
+week
+month
+year
 
-Round
-Minute
-Hour
-Day
-Week
-Month
-Year
+: Brief {1-3}
+: Moderate {3-4}
+: Long {4-7}

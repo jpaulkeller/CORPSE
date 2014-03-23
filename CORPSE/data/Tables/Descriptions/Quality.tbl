@@ -1,20 +1,20 @@
-Cursed -{5}
-Broken
-Terrible
-Inferior
-Shoddy
-Poor
-Adequate
-Average
-Fair
-Good
-Very Good
-Excellent
-Superb
-Exceptional
-Extraordinary
-Enchanted
-Magical +{5}
+cursed -{5}
+broken
+terrible
+inferior
+shoddy
+poor
+adequate
+average
+fair
+good
+very good
+excellent
+superb
+exceptional
+extraordinary
+enchanted
+magical +{5}
 
 : Quality {3d5-1}
 : Magic   {2d9-1}

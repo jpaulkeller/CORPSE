@@ -1,12 +1,12 @@
-Common
-Common
-Common
-Uncommon
-Uncommon
-Scarce
-Exotic
-Rare
-Very Rare
-Unique
+very common
+common
+common
+uncommon
+uncommon
+scarce
+exotic
+rare
+very rare
+unique
 
 : Rarity {3d4-2}
