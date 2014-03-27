@@ -35,8 +35,6 @@ public class Table extends ArrayList<String>
    protected String tableName;
    protected File file;
    protected Pattern filter;
-   private List<String> title = new ArrayList<String>();
-   private List<String> source = new ArrayList<String>();
 
    private SortedMap<String, Column> columns = new TreeMap<String, Column>();
    private SortedMap<String, Subset> subsets = new TreeMap<String, Subset>();
@@ -255,19 +253,8 @@ public class Table extends ArrayList<String>
             Column.parse(this, line);
          else if (line.startsWith(Constants.SUBSET_CHAR))
             Subset.parse(this, line);
-         else if (line.startsWith(Constants.SOURCE_CHAR))
-            source.add(line.substring(1).trim());
-         else if (line.startsWith(Constants.TITLE_CHAR))
-            title.add(line.substring(1).trim());
          else if (line.startsWith(Constants.COMMENT_CHAR))
             ; // do nothing
-         else if (line.startsWith(Constants.FOOTNOTE_CHAR))
-            ; // do nothing
-         else if (line.startsWith(Constants.HEADER_CHAR))
-            ; // do nothing
-         else if (line.startsWith(Constants.SEPR_CHAR))
-            ; // do nothing
-
          else if (line.trim().length() == 0)
             ; // ignore blank lines
          else if (line.startsWith(Constants.INCLUDE_CHAR))
@@ -326,6 +313,7 @@ public class Table extends ArrayList<String>
 
    void addColumn(final Column column)
    {
+      System.out.println(column); //TODO
       columns.put(column.getName().toUpperCase(), column);
    }
 
@@ -397,20 +385,15 @@ public class Table extends ArrayList<String>
 
    void export()
    {
-      if (source.size() > 0)
-         for (String line : source)
-            System.out.println("  Source: " + line);
       if (!subsets.isEmpty())
          for (Subset subset : subsets.values())
             System.out.println("  Subset: " + subset);
+      
       if (!columns.isEmpty())
          for (Column column : columns.values())
             System.out.println("  Column: " + column);
 
       System.out.println();
-      if (title.size() > 0)
-         for (String line : title)
-            System.out.println("      " + line);
 
       int i = 1;
       for (String entry : this)

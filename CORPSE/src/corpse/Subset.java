@@ -31,7 +31,7 @@ public final class Subset
    private static final String RANGE_TOKEN = "(\\{[^}]+\\})"; // should be a valid roll
 
    // : Name
-   // : Name {1-10)
+   // : Name {1-10}
    private static final String SUBSET_REGEX = "^\\" + SC + " *" + SN + "(?: +" + RANGE_TOKEN + ")?" + Constants.COMMENT;
    private static final Pattern SUBSET = Pattern.compile(SUBSET_REGEX, Pattern.CASE_INSENSITIVE);
 
@@ -81,8 +81,7 @@ public final class Subset
          subset.name = m.group(1);
          if (m.group(2) != null)
             subset.setRoll(m.group(2));
-         else
-         // support embedded subsets
+         else // support embedded subsets
          {
             Subset.closeSubset(table);
             subset.min = table.size() + 1;

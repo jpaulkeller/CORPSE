@@ -13,20 +13,14 @@ import file.FileUtils;
 public final class Constants
 {
    static final String COLUMN_CHAR   = "@";
-   static final String COMMENT_CHAR  = "*";
+   static final String COMMENT_CHAR  = "/";
    static final String FILTER_CHAR   = "#";
-   static final String FOOTNOTE_CHAR = "]";
-   static final String HEADER_CHAR   = ".";
    static final String INCLUDE_CHAR  = "+";
    static final String ONE_OF_CHAR   = "|";
    static final String REF_CHAR      = "!";
-   static final String SEPR_CHAR     = "-";
-   static final String SOURCE_CHAR   = "?";
    static final String SUBSET_CHAR   = ":";
-   static final String TITLE_CHAR    = "!";
 
-   private static final String IGNORE = COMMENT_CHAR + HEADER_CHAR + FOOTNOTE_CHAR + SEPR_CHAR + SOURCE_CHAR + TITLE_CHAR;
-   static final Pattern COMMENT_LINE = Pattern.compile("^[" + Pattern.quote(IGNORE) + "]", Pattern.MULTILINE);
+   static final Pattern COMMENT_LINE = Pattern.compile("^[" + Pattern.quote(COMMENT_CHAR) + "]", Pattern.MULTILINE);
 
    static final String COMMENT = "(?:\\s*//.*$)?";
 
@@ -38,13 +32,16 @@ public final class Constants
    static final Pattern SIMPLE_TABLE = Pattern.compile(TABLE_NAME, Pattern.CASE_INSENSITIVE);
    static final Pattern TOKEN = Pattern.compile("\\{([^{}]+)\\}");
 
+   // [10/90] CONDITION (using % operator) : {10%?Rare:Common}
+   static final Pattern PERCENT_CONDITION = Pattern.compile("\\{(\\d+)%[?]([^:]+)(?::([^:{}]+))?\\}");
+   
    // [50/50] CONDITION (all-or-nothing format): {{2}=2?ALL}
    // [50/50] CONDITION (either/or format) : {{2}=2?YES:NO}
-   // [70/30] CONDITION (using > operator) : {{10}>7?RARE:COMMON}
-
-   // Note: the first element of the inner expression (e.g., {2}) will be resolved prior to the evaluation the outer 
-   // expression, and so the first group of the pattern includes just the number. The first element may be any numeric 
-   // expression supported by Quantity.java.
+   // [70/30] CONDITION (using > operator) : {{10}>7?UNCOMMON:COMMON}
+   
+   // Note: the first element of the inner expression (e.g., {2}) will be resolved prior to the evaluation
+   // the outer expression, and so the first group of the pattern includes just the number. The first element
+   // may be any numeric expression supported by Quantity.java.
    // BELL-CURVE CONDITION (embedded roll) : {{3d6}<13?Normal:Good}
    static final Pattern CONDITION = Pattern.compile("\\{(\\d+)([=<>])(\\d+)[?]([^:]+)(?::([^:{}]+))?\\}");
 

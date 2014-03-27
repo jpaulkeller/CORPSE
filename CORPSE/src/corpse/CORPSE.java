@@ -33,38 +33,57 @@ import corpse.ui.TreePanel;
 /** Computer-Oriented Role-Playing System & Environment */
 
 // TODO
-// refresh should reload the table (update subsets, columns)
-// refresh should reload the tables and update the tree (pick up new tables)
+// generate HTML from scripts!  Tavern.cmd
+// structured variables: table.column (e.g. gender.pronoun, gender.possessive, etc)
+// SoundX filter
+// if {table} defaults to {table@table}, how do you get the full entry?
+// show footnotes in resolved view? (Reagent.tbl)
+// ghost-columns - add a post-processor to auto-generate columns like Quality/Condition/cost/etc
+// filter to remove trailing parenthesized text (Equipment.tbl) 
+// filter to reformat "General, Specific" to "Specific General" (Equipment.tbl) part of Column?
+// why doesn't TSR Giant range prefix work? (in resolved view, and as a random text)
+// how to resolve male/female titles
+// "snowflake" charts (for emotion, weather, etc)
+// figure out a way to cap-init a sentence w/o cap-initing each word
+// support UnitOfMeasure fields! which use dynamic currency conversion settings
 
 // export text
 // include/weight/etc for scripts? eg. Custom.cmd
 // support composite columns (like Job xxx = Title + Profession)
 // change CMD suffix?
-// Depends - show raw token, resolved, tables used in
-// support include lines with prefixes like ">> {{4d2-3} reagent}" in potion.cmd
+// support include lines with prefixes like ">> {{4d2-3} reagent}" in potion.cmd 
 // consolidate comment characters
+
+// use fixed-width font for raw view of tables
+
+// support .html files (table, definition)
+// support .wiki files
+
+// determine numeric fields in resolved view renderer
 
 // named filters? see Professions.tbl
 
 // test embedded subsets in weighted lines TSR SCROLL
-// consider allowing unique (or local) column names to work as shortcuts (e.g.
-// @Royalty)
+// consider allowing unique (or local) column names to work as shortcuts (e.g. @Royalty)
 // matrix (e.g. name generators in KoDT #200)
 
+// : TitleGuild {7,15} -- consider {~7} format
+
 // splash and progress bar
-// consider extending ArrayList to support WeightedList (store weight; don't
-// duplicate element)
+// consider extending ArrayList to support WeightedList (store weight; don't duplicate element)
 // player vs. DM views of data
 // Figure out how to resolve CONDITIONS before resolving the inner values
 
-// Interactive color-coded display (click to re-generate, or manually override,
-// etc)
+// Interactive color-coded display (click to re-generate, or manually override, etc)
 // A FIRST-like annotated-HTML GUI. Click on the random entries to re-roll or
 // select a new value (for scripts)
 
 // TODO data
 // convert all costs to a standard generic number ~1sp
 // merge job/profession tables
+
+// prompt should have re-roll button
+// deal with null return from prompt better
 
 public final class CORPSE
 {
@@ -198,6 +217,12 @@ public final class CORPSE
 
    public void refresh()
    {
+      Table.TABLES.clear();
+      Script.SCRIPTS.clear();
+      
+      Table.populate(new File("data/Tables"));
+      Script.populate(new File("data/Scripts"));
+      
       if (tabs.getSelectedIndex() == 0)
          tables.refresh();
       else

@@ -163,14 +163,15 @@ public final class Macros
       Matcher m = Constants.PLURAL_TOKEN.matcher(resolvedToken);
       if (m.matches())
       {
-         String text = m.group(1).toUpperCase();
-         String replacement = Constants.PLURALS.get(text);
+         String text = m.group(1);
+         String upper = text.toUpperCase();
+         String replacement = Constants.PLURALS.get(upper);
 
          if (replacement != null) // found the appropriate plural form
             resolvedToken = m.replaceFirst(replacement);
-         else if (text.endsWith("S"))
+         else if (upper.endsWith("S") || upper.endsWith("X"))
             resolvedToken = text + "es";
-         else if (text.endsWith("Y"))
+         else if (upper.endsWith("Y"))
             resolvedToken = text.substring(0, text.length() - 1) + "ies"; // strip Y, add IES
          else
             resolvedToken = text + "s";
@@ -195,7 +196,24 @@ public final class Macros
    private static String resolveConditions(final String token)
    {
       String resolved = token;
-      Matcher m = Constants.CONDITION.matcher(resolved);
+      
+      Matcher m = Constants.PERCENT_CONDITION.matcher(resolved);
+      if (m.matches())
+      {
+         int percent = Integer.parseInt(m.group(1));
+         String ifVal = m.group(2);
+         String elseVal = m.group(3);
+         if (elseVal == null)
+            elseVal = "";
+         
+         int roll = RandomEntry.get(100);
+         boolean satisfied = roll <= percent;
+         resolved = m.replaceFirst(satisfied ? ifVal : elseVal);
+         if (DEBUG && !token.equals(resolved))
+            System.out.println("  resolvePercent: [" + token + "] = [" + resolved + "]");
+      }
+      
+      m = Constants.CONDITION.matcher(resolved);
       if (m.matches())
       {
          int roll = Integer.parseInt(m.group(1));
@@ -218,6 +236,7 @@ public final class Macros
          if (DEBUG && !token.equals(resolved))
             System.out.println("  resolveConditions: [" + token + "] = [" + resolved + "]");
       }
+      
       return resolved;
    }
 
@@ -371,19 +390,25 @@ public final class Macros
    }
 
    // Make the case of the resolved token match the case of the token.
+   
+   private static final Pattern TO_CAPITALIZE = Pattern.compile("\\b([a-z])");
 
-   private static String matchCase(final String token, String resolved)
+   private static String matchCase(final String token, final String resolved)
    {
+      String caseMatched = resolved;
       if (resolved.toUpperCase().equals(resolved))
          ; // do nothing; leave the value all uppercase (for acronyms)
       else if (token.toLowerCase().equals(token)) // all lower
-         resolved = resolved.toLowerCase();
+         caseMatched = resolved.toLowerCase();
       else if (token.toUpperCase().equals(token) || resolved.length() <= 1) // all upper
-         resolved = resolved.toUpperCase();
-      else
-         // cap-init
-         resolved = resolved.substring(0, 1).toUpperCase() + resolved.substring(1).toLowerCase();
-      return resolved;
+         caseMatched = resolved.toUpperCase();
+      else // cap-init all words
+      {
+         Matcher m;
+         while ((m = TO_CAPITALIZE.matcher(caseMatched)).find())
+            caseMatched = m.replaceFirst(m.group(1).toUpperCase());
+      }
+      return caseMatched;
    }
 
    private static String getInvalidTableToken(final String table, final String subset, final String column, final String filter)
@@ -407,7 +432,9 @@ public final class Macros
       Macros.DEBUG = true;
 
       CORPSE.init(true);
+      RandomEntry.randomize();
 
+      Macros.resolve(null, "{75%?Yes:No}");
       Macros.resolve(null, "{Island Event}");
       Macros.resolve(null, "{Metal" + Constants.SUBSET_CHAR + "}");
       Macros.resolve(null, "Description: {Color}{{5}=5?, with bits of {Reagent} floating in it}");
