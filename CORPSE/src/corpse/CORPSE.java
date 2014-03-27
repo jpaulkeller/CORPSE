@@ -35,10 +35,10 @@ import corpse.ui.TreePanel;
 // TODO
 // generate HTML from scripts!  Tavern.cmd
 // structured variables: table.column (e.g. gender.pronoun, gender.possessive, etc)
+// columns that affect other columns (e.g. Cost modified by Quality)?
 // SoundX filter
 // if {table} defaults to {table@table}, how do you get the full entry?
 // show footnotes in resolved view? (Reagent.tbl)
-// ghost-columns - add a post-processor to auto-generate columns like Quality/Condition/cost/etc
 // filter to remove trailing parenthesized text (Equipment.tbl) 
 // filter to reformat "General, Specific" to "Specific General" (Equipment.tbl) part of Column?
 // why doesn't TSR Giant range prefix work? (in resolved view, and as a random text)
