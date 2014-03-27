@@ -17,7 +17,6 @@ public final class Constants
    static final String FILTER_CHAR   = "#";
    static final String INCLUDE_CHAR  = "+";
    static final String ONE_OF_CHAR   = "|";
-   static final String REF_CHAR      = "!";
    static final String SUBSET_CHAR   = ":";
 
    static final Pattern COMMENT_LINE = Pattern.compile("^[" + Pattern.quote(COMMENT_CHAR) + "]", Pattern.MULTILINE);

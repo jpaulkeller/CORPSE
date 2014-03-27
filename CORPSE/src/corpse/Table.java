@@ -39,7 +39,7 @@ public class Table extends ArrayList<String>
    private SortedMap<String, Column> columns = new TreeMap<String, Column>();
    private SortedMap<String, Subset> subsets = new TreeMap<String, Subset>();
 
-   // For example of subset usage, see the MADE OF.TBL and COLOR.TBL.
+   // For examples of subset usage, see the MADE OF.TBL and COLOR.TBL.
 
    public static void populate(final File dir)
    {
@@ -313,7 +313,6 @@ public class Table extends ArrayList<String>
 
    void addColumn(final Column column)
    {
-      System.out.println(column); //TODO
       columns.put(column.getName().toUpperCase(), column);
    }
 

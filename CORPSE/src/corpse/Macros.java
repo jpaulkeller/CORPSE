@@ -11,6 +11,7 @@ import corpse.ui.TokenRenderer;
 public final class Macros
 {
    public static boolean DEBUG = false;
+   private static boolean TEST = false;
 
    private static final Stack<String> TOKEN_STACK = new Stack<String>();
 
@@ -23,7 +24,7 @@ public final class Macros
    public static String resolve(final String tableOrScriptName, final String entry) // for debugging
    {
       String resolved = resolve(tableOrScriptName, entry, null);
-      if (DEBUG)
+      if (DEBUG || TEST)
          System.out.println(entry + " = [" + resolved + "]");
       return resolved;
    }
@@ -429,22 +430,21 @@ public final class Macros
 
    public static void main(final String[] args)
    {
-      Macros.DEBUG = true;
-
-      CORPSE.init(true);
+      Macros.TEST = true;
+      CORPSE.init(false); // toggle debug
       RandomEntry.randomize();
 
-      Macros.resolve(null, "{75%?Yes:No}");
+      Macros.resolve(null, "{50%?Yes:No}");
       Macros.resolve(null, "{Island Event}");
       Macros.resolve(null, "{Metal" + Constants.SUBSET_CHAR + "}");
-      Macros.resolve(null, "Description: {Color}{{5}=5?, with bits of {Reagent} floating in it}");
+      Macros.resolve(null, "Description: {Color}{20%?, with bits of {Reagent} floating in it}");
       Macros.resolve(null, "Filter: {Noise#S.+}");
       Macros.resolve(null, "Filter Variable: {Color:Basic{!OneWord}}");
       Macros.resolve(null, "Filter: {Color:Basic#S.+}");
-      Macros.resolve(null, "{Color} " + Constants.LAST_RESOLVED_TOKEN); // test last resolved
-      Macros.resolve(null, "{#text:.}"); // test a filtered token
+      Macros.resolve(null, "{Color} " + Constants.LAST_RESOLVED_TOKEN);
+      Macros.resolve(null, "{#text:.}"); // filtered token
       Macros.resolve(null, "{Color} {Fauna#{#{!}:.}.*}"); // test a back-reference with a filter
-      Macros.resolve(null, "{+thing} {+moss} {+fly} {+mouse}"); // test plurals
+      Macros.resolve(null, "{+thing} {+moss} {+fly} {+mouse} {+fox}"); // test plurals
       Macros.resolve("Barsoom Plot", "{:Villain}"); // test subset short-cut
    }
 }

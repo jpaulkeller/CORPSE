@@ -51,7 +51,7 @@ public final class Column implements Comparable<Column>
    private static final String CSV_REGEX = "^\\" + CC + "\\s*(" + CN + "(?:[,;]\\s*" + CN + "){1,20})" + Constants.COMMENT;
    private static final Pattern COLUMNS_CSV = Pattern.compile(CSV_REGEX, Pattern.CASE_INSENSITIVE);
 
-   // @ Name Token (e.g. Quality {quality}
+   // @ Name Token (e.g. Quality {quality:})
    private static final Pattern GHOST_COLUMN = 
             Pattern.compile("^\\" + CC + "\\s*" + CN + "\\s+" + Constants.TOKEN + Constants.COMMENT, 
                             Pattern.CASE_INSENSITIVE);
@@ -63,6 +63,7 @@ public final class Column implements Comparable<Column>
    private int index;
    private int start; // 1-based
    private int width;
+   private String token; // for ghost columns
 
    public static void parse(final Table table, final String entry)
    {
@@ -93,6 +94,7 @@ public final class Column implements Comparable<Column>
          column.index = table.getColumns().size();
          column.width = -1; // TODO
          column.start = -1; // TODO
+         column.token = "{" + m.group(2) + "}";
          table.addColumn(column);
       }
       else if ((m = COLUMNS_CSV.matcher(entry)).find()) // First, Second, ...
@@ -183,8 +185,11 @@ public final class Column implements Comparable<Column>
          if (m.find())
             field = m.group(1);
       }
-      else
-      // fixed-width
+      else if (start < 0) // ghost column
+      {
+         field = token;
+      }
+      else // fixed-width
       {
          int from = start - 1;
          int end = from + width;
