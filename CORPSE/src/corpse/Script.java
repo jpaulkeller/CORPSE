@@ -19,6 +19,7 @@ import javax.swing.Icon;
 import javax.swing.JOptionPane;
 
 import file.FileUtils;
+import gui.comp.TipComboBox;
 
 public final class Script
 {
@@ -193,26 +194,37 @@ public final class Script
       String resolvedEntry = entry;
 
       Component owner = null; // TODO
-      String title = "";
       Icon icon = null;
-      Object[] options = null; // TODO support multiple choice pattern
+      int type = JOptionPane.QUESTION_MESSAGE;
+      Object[] options = null;
 
       Matcher m;
       while ((m = Constants.QUERY.matcher(resolvedEntry)).find())
       {
-         String message = m.group(1);
+         String title = m.group(1);
+         Object message = m.group(1);
          String defaultValue = m.group(2);
-         // TODO handle quick-query syntax: Token?? => Token?{Token}
+         
+         // quick-query syntax: Token?? => Token?{Token}
          if (defaultValue != null && defaultValue.equals("?"))
             defaultValue = Macros.resolve(getName(), "{" + message + "}");
+         else if (defaultValue != null && defaultValue.equals("*")) // offer multiple choices TODO
+         {
+            String[] randomOptions = new String[7];
+            for (int i = 0; i < randomOptions.length; i++)
+               randomOptions[i] = Macros.resolve(getName(), "{" + message + "}");
+            // TipComboBox box = new TipComboBox(randomOptions);
+            // box.setEditable(true);
+            options =  randomOptions;
+            defaultValue = randomOptions[0];
+         }
+         
          String answer = defaultValue;
          if (promptsEnabled)
-            answer = (String) JOptionPane.showInputDialog(owner, message, title, JOptionPane.QUESTION_MESSAGE, icon, options,
-                                                          defaultValue);
+            answer = (String) JOptionPane.showInputDialog(owner, message, title, type, icon, options, defaultValue);
          if (answer != null)
             resolvedEntry = m.replaceFirst(Matcher.quoteReplacement(answer));
-         else
-            // user cancelled
+         else // user cancelled
             return null;
       }
 

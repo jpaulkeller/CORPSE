@@ -36,21 +36,28 @@ public final class Column implements Comparable<Column>
 
    // @ Name
    private static final Pattern COLUMN = Pattern.compile("^\\" + CC + "\\s*" + CN + Constants.COMMENT, Pattern.CASE_INSENSITIVE);
+   
    // @ Name width
-   private static final Pattern COLUMN_FIXED = Pattern.compile("^\\" + CC + "\\s*" + CN + "\\s+(\\d+) + Constants.COMMENT",
+   private static final Pattern COLUMN_FIXED = Pattern.compile("^\\" + CC + "\\s*" + CN + "\\s+(\\d+)" + Constants.COMMENT,
                                                                Pattern.CASE_INSENSITIVE);
    // @ Name start width
-   private static final Pattern COLUMN_FULL = Pattern.compile("^" + CC + "\\s*" + CN + "\\s+(\\d+)\\s+(\\d+) + Constants.COMMENT",
+   private static final Pattern COLUMN_FULL = Pattern.compile("^" + CC + "\\s*" + CN + "\\s+(\\d+)\\s+(\\d+)" + Constants.COMMENT,
                                                               Pattern.CASE_INSENSITIVE);
-   // @ First Second Third ...
+   // @ First Second Third ... (up to 20) -- Alteration.tbl
    private static final String HEADER_REGEX = "^\\" + CC + "(\\s*" + CN + "(?:\\s\\s+" + CN + "){1,20})" + Constants.COMMENT;
    private static final Pattern COLUMN_HEADER = Pattern.compile(HEADER_REGEX, Pattern.CASE_INSENSITIVE);
+   
    // @ Name1, Name2, ... (2 to 20)
-   private static final String CSV_REGEX = "^\\" + CC + "\\s*(" + CN + "(?:,\\s*" + CN + "){1,20})" + Constants.COMMENT;
+   private static final String CSV_REGEX = "^\\" + CC + "\\s*(" + CN + "(?:[,;]\\s*" + CN + "){1,20})" + Constants.COMMENT;
    private static final Pattern COLUMNS_CSV = Pattern.compile(CSV_REGEX, Pattern.CASE_INSENSITIVE);
 
+   // @ Name Token (e.g. Quality {quality}
+   private static final Pattern GHOST_COLUMN = 
+            Pattern.compile("^\\" + CC + "\\s*" + CN + "\\s+" + Constants.TOKEN + Constants.COMMENT, 
+                            Pattern.CASE_INSENSITIVE);
+   
    // field1;field2;...
-   private static final Pattern DELIMITED_DATA = Pattern.compile("([^;]+)(?: *; *)?");
+   private static final Pattern DELIMITED_DATA = Pattern.compile("([^;]*)(?: *; *)?");
 
    private String name;
    private int index;
@@ -77,6 +84,15 @@ public final class Column implements Comparable<Column>
          column.index = table.getColumns().size();
          column.width = Integer.parseInt(m.group(2));
          column.start = column.index == 0 ? 1 : Column.getNextStart(table, column);
+         table.addColumn(column);
+      }
+      else if ((m = GHOST_COLUMN.matcher(entry)).find()) // Name Token
+      {
+         Column column = new Column();
+         column.name = m.group(1);
+         column.index = table.getColumns().size();
+         column.width = -1; // TODO
+         column.start = -1; // TODO
          table.addColumn(column);
       }
       else if ((m = COLUMNS_CSV.matcher(entry)).find()) // First, Second, ...
@@ -107,12 +123,10 @@ public final class Column implements Comparable<Column>
          if (column.index > 0)
          {
             Column prev = Column.getColumn(table, column.index - 1);
-            prev.width = column.start - prev.start; // determine the width of
-                                                    // the previous column
+            prev.width = column.start - prev.start; // determine the width of the previous column
          }
       }
-      // note the final column won't have a width, so we'll just go to the
-      // end-of-line when we extract it
+      // note the final column won't have a width, so we'll just go to the end-of-line when we extract it
    }
 
    private Column()
@@ -200,16 +214,22 @@ public final class Column implements Comparable<Column>
    {
       CORPSE.init(true);
 
-      /*
-       * Table table = Table.getTable("METAL"); if
-       * (!table.getColumns().isEmpty()) System.out.println (table);
-       */
-
-      for (Table table : Table.getTables())
+      String test = "EQUIPMENT";
+      
+      if (test != null)
       {
-         table.importTable();
-         if (!table.getColumns().isEmpty())
-            System.out.println(table);
+         Table table = Table.getTable(test); 
+         if (!table.getColumns().isEmpty()) 
+            System.out.println (table);
+      }
+      else // test all
+      {
+         for (Table table : Table.getTables())
+         {
+            table.importTable();
+            if (!table.getColumns().isEmpty())
+               System.out.println(table);
+         }
       }
    }
 }
