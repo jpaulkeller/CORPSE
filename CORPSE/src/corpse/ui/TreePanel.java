@@ -3,6 +3,7 @@ package corpse.ui;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Component;
+import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
@@ -38,6 +39,8 @@ import gui.db.TableView;
 public class TreePanel extends JSplitPane implements TabListener
 {
    private static final long serialVersionUID = 1L;
+   
+   private static final Font FIXED_WIDTH = new Font(Font.DIALOG_INPUT, Font.PLAIN, 12);
 
    private Map<String, JPanel> cardsByName = new HashMap<String, JPanel>();
 
@@ -217,6 +220,7 @@ public class TreePanel extends JSplitPane implements TabListener
    private JTextArea makeRaw(final String name)
    {
       JTextArea raw = new JTextArea(20, 80);
+      raw.setFont(FIXED_WIDTH);
       raw.setEditable(false); // TODO
       JPanel cards = new JPanel(new CardLayout());
       cardsByName.put(name, cards); // TODO prefix name with Table/Script to ensure unique?
@@ -315,7 +319,7 @@ public class TreePanel extends JSplitPane implements TabListener
       String table = getSelectedTable();
       if (table != null)
       {
-         String entry = RandomEntry.get(table, null, null, null);
+         String entry = RandomEntry.get(table, table, table, null);
          app.setText(entry);
       }
    }

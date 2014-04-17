@@ -12,7 +12,7 @@ public final class SubTable extends Table
    private int count;
 
    // Get a populated/resolved table (with subset, column, and filter applied).
-   // Token format: {# Table:Subset@Column#Filter}
+   // Token format: {# Table:Subset.Column#Filter}
    // Note: The numeric prefix is ignored.
 
    public SubTable(final String token)
@@ -22,33 +22,50 @@ public final class SubTable extends Table
       {
          // String qty = m.group (1);
          String xrefTbl = m.group(2);
-         String xrefSub = m.group(3);
-         String xrefCol = m.group(4);
-         String xrefFil = m.group(5);
+         String xrefSub = null;
+         String xrefCol = null;
+         String xrefFil = null;
+         
+         if (Constants.INCLUDE_CHAR.equals(m.group(6))) // {Table+}
+            xrefFil = m.group(7);
+         else // {Table:Subset.Column#Filter}
+         {
+            xrefSub = m.group(3);
+            xrefCol = m.group(4);
+            xrefFil = m.group(5);
+            
+            // TODO: must handle Table:.# (see also Macros.java)
+            
+            // support default subsets and columns
+            if (xrefCol == null)
+               xrefCol = xrefTbl;
+            if (xrefSub == null)
+               xrefSub = xrefTbl;
+         }
 
-         if (xrefSub == null && token.contains(Constants.SUBSET_CHAR)) // e.g., Metal:
-            xrefSub = xrefTbl;
-         if (xrefCol == null && token.contains(Constants.COLUMN_CHAR)) // e.g., Job@
-            xrefCol = xrefTbl;
-
-         // System.out.println("[" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
-
-         Table unfiltered = Table.getTable(xrefTbl);
-         tableName = token;
-         file = new File(unfiltered.file.getAbsolutePath());
-         if (xrefSub != null)
-            subset = unfiltered.getSubset(xrefSub);
-         if (xrefCol != null)
-            column = unfiltered.getColumn(xrefCol);
-         if (xrefFil != null)
-            filter = CORPSE.safeCompile("Invalid filter in " + token, xrefFil);
-
-         count = 0;
-         importTable();
-         TABLES.put(tableName, this);
+         importTable(token, xrefTbl, xrefSub, xrefCol, xrefFil);
       }
       else
          System.out.println("Invalid table token: " + token);
+   }
+
+   private void importTable(final String token, String xrefTbl, String xrefSub, String xrefCol, String xrefFil)
+   {
+      // System.out.println("SubTable [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
+
+      Table unfiltered = Table.getTable(xrefTbl);
+      tableName = token;
+      file = new File(unfiltered.file.getAbsolutePath());
+      if (xrefSub != null)
+         subset = unfiltered.getSubset(xrefSub);
+      if (xrefCol != null)
+         column = unfiltered.getColumn(xrefCol);
+      if (xrefFil != null)
+         filter = CORPSE.safeCompile("Invalid filter in " + token, xrefFil);
+
+      count = 0;
+      importTable();
+      TABLES.put(tableName, this);
    }
 
    @Override
@@ -72,24 +89,25 @@ public final class SubTable extends Table
       // We don't want to validate subsets here, since the table is filtered. Columns could be validated.
    }
 
+   private static void test(final String token, final String test)
+   {
+      System.out.println("Test: " + test + " - " + token);
+      SubTable table = new SubTable(token);
+      table.export();
+      System.out.println();
+   }
+   
    public static void main(final String[] args)
    {
       CORPSE.init(true);
 
-      SubTable table;
-
-      // test column and filter
-      table = new SubTable("{Job@#G.*}");
-      table.export();
-      System.out.println();
-
-      // test subset and filter
-      table = new SubTable("{Color:Basic#C.*}");
-      table.export();
-      System.out.println();
-
-      table = new SubTable("{Metallic}");
-      table.export();
-      System.out.println();
+      // test("{Profession.#G.*}", "column and filter");
+      // test("{Color:Basic#C.*}", "subset and filter");
+      // test("{Metallic}", "included file");
+      // test("{Calendar:Astronomical}", "subset");
+      test("{Gender}", "default column");
+      test("{Gender+}", "full line (don't use default column)");
+      test("{Quality}", "default subset");
+      test("{Quality+}", "full line (don't use default subset)");
    }
 }
