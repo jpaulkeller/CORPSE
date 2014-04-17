@@ -71,7 +71,7 @@ public final class Search
    {
       for (Table table : Table.getTables())
       {
-         if ("DEPENDS/ERRORS/EXAMPLES".contains(table.getName().toUpperCase()))
+         if ("DEPENDS/ERRORS/SAMPLES".contains(table.getName().toUpperCase()))
             continue;
 
          if (table.getName().toUpperCase().contains(upper))

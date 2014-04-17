@@ -23,17 +23,29 @@ public final class RandomEntry
    public static int get(final int max)
    {
       return (int) (random.nextDouble() * max);
-
    }
 
-   public static int getExp(final int mean, final int max)
+   // For best results, the standard deviation should be about 1/3 of the maximum value.
+   
+   public static int getGaussian(double mean, double stdDev, final int max)
    {
-      double d;
-      do
+      double x = 0;
+      
+      while (x < 1 || x > max)
       {
-         d = -mean * Math.log(random.nextDouble());
-      } while (d >= max);
-      return (int) Math.ceil(d);
+         double v, w;
+         do
+         {
+            v = 2 * random.nextDouble() - 1;
+            double v2 = 2 * random.nextDouble() - 1;
+            w = v * v + v2 * v2;
+         } while (w > 1);
+         
+         double y = v * Math.sqrt(-2 * Math.log(w) / w);
+         x = Math.round(mean + y * stdDev);
+      }
+      
+      return (int) x;
    }
 
    public static String get(final String tableName, final String subName, String colName, final String filter)
@@ -57,7 +69,7 @@ public final class RandomEntry
          {
             index = -1; // subset is no longer valid since we're going to filter the data
 
-            // Token format: {# Table:Subset@Column#Filter}
+            // Token format: {# Table:Subset.Column#Filter}
             String token = "{" + tableName;
             if (subName != null)
                token += Constants.SUBSET_CHAR + subName;
@@ -71,7 +83,6 @@ public final class RandomEntry
             Table filteredTable = Table.TABLES.get(token);
             if (filteredTable == null)
                filteredTable = new SubTable(token); // resolve the table before rolling a value
-            // Table filteredTable = new Table(tableName, filter);
 
             if (filteredTable.size() > 0) // if no filtered entries match, just use the normal table?
                table = filteredTable;
@@ -79,7 +90,7 @@ public final class RandomEntry
 
          try
          {
-            entry = get(table, index, colName);
+            entry = get(table, index, colName, filter);
          }
          catch (IndexOutOfBoundsException x)
          {
@@ -93,7 +104,7 @@ public final class RandomEntry
       return entry;
    }
 
-   public static String get(final Table table, int index, final String colName)
+   public static String get(final Table table, int index, final String colName, final String filter)
    {
       String entry = null;
 
@@ -102,10 +113,10 @@ public final class RandomEntry
          if (index < 0)
             index = RandomEntry.get(table.size());
 
-         entry = table.getColumn(index, colName, null);
+         entry = table.getColumn(index, colName, filter);
          if (entry != null)
          {
-            entry = table.resolve(entry, null);
+            entry = table.resolve(entry, filter);
             // trim leading, trailing, and redundant embedded spaces
             entry = entry.trim().replaceAll("  +", " ");
          }
@@ -126,22 +137,26 @@ public final class RandomEntry
       }
       System.out.println();
 
-      // test RandomEntry.getExp()
+      // test RandomEntry.getGaussian()
       RandomEntry.randomize();
-      int runs = 1000, range = 15;
+      int runs = 1000, range = 10;
       double max = 0, total = 0;
       int[] count = new int[range];
       int mean = 4;
+      double stdDev = range / 3;
+      
       for (int i = 0; i < runs; i++)
       {
-         int r = Math.abs(RandomEntry.getExp(mean, range));
+         int r = Math.abs(RandomEntry.getGaussian(mean, stdDev, range));
          max = Math.max(max, r);
          total += r;
          count[r - 1]++;
       }
+      
       for (int i = 0; i < range; i++)
          System.out.println((i + 1) + " = " + count[i]);
-      System.out.println("Average (should be near " + mean + "): " + (total / runs));
+      System.out.println("Avg (~= " + mean + "): " + (total / runs));
+      System.out.println("Max (<= " + range + "): " + max);
       System.out.println();
 
       CORPSE.init(true);
@@ -160,6 +175,6 @@ public final class RandomEntry
       System.out.println("Wand: " + entry);
       System.out.println();
 
-      System.out.println("Job starting with I: " + RandomEntry.get("Job", null, "Job", "I.*"));
+      System.out.println("Professions starting with I: " + RandomEntry.get("Profession", null, "Profession", "I.*"));
    }
 }

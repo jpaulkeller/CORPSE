@@ -12,23 +12,26 @@ import file.FileUtils;
 
 public final class Constants
 {
-   static final String COLUMN_CHAR   = "@";
+   static final String DATA_PATH = "data/Tables";
+   
+   static final String COLUMN_CHAR   = ".";
    static final String COMMENT_CHAR  = "/";
    static final String FILTER_CHAR   = "#";
    static final String INCLUDE_CHAR  = "+";
-   static final String ONE_OF_CHAR   = "|";
+   static final String ONE_OF_CHAR_1 = "|";
+   static final String ONE_OF_CHAR_2 = "/";
    static final String SUBSET_CHAR   = ":";
 
    static final Pattern COMMENT_LINE = Pattern.compile("^[" + Pattern.quote(COMMENT_CHAR) + "]", Pattern.MULTILINE);
 
-   static final String COMMENT = "(?:\\s*//.*$)?";
+   static final String COMMENT = "(?:\\s*/.*$)?";
 
    static final String NAME = "([A-Z](?: ?[-_A-Z0-9]+){0,10})"; // use {0,10} to avoid infinite loop
    static final String COLUMN_NAME = "([A-Z0-9](?: ?[-_A-Z0-9/()]+){0,10})";
    private static final String TABLE_NAME = NAME;
 
    static final Pattern NAME_PATTERN = Pattern.compile(NAME, Pattern.CASE_INSENSITIVE);
-   static final Pattern SIMPLE_TABLE = Pattern.compile(TABLE_NAME, Pattern.CASE_INSENSITIVE);
+   static final Pattern SIMPLE_TABLE = Pattern.compile(TABLE_NAME + "[+]", Pattern.CASE_INSENSITIVE);
    static final Pattern TOKEN = Pattern.compile("\\{([^{}]+)\\}");
 
    // [10/90] CONDITION (using % operator) : {10%?Rare:Common}
@@ -45,22 +48,26 @@ public final class Constants
    static final Pattern CONDITION = Pattern.compile("\\{(\\d+)([=<>])(\\d+)[?]([^:]+)(?::([^:{}]+))?\\}");
 
    // {one|two|three|four} -- chooses one option, with equal chance for each (options may be empty)
-   static final Pattern ONE_OF = Pattern.compile("\\{([^|{]+([|][^|{]*)+)\\}");
+   static final Pattern ONE_OF = Pattern.compile("\\{([^|/{]+([|/][^|{]*)+)\\}");
    // TODO: weighted options: {#:opt1|#:opt2|...}
+   // TODO: {common>uncommon>scarce>rare} weighted 4/3/2/1?
 
    // {prompt?default} where the default value is optional, and the prompt must
    // start with a non-numeric (to avoid confusion with the CONDITIONAL token).
    static final Pattern QUERY = Pattern.compile("\\{([^{}?0-9][^{}?]+?)[?]([^{}]+)?\\}");
 
+   // {1 Table:Subset.Column#Filter} 
+   // {1 Table+#Filter} means don't use the default subset or column; return the entire line 
    private static final String QTY = "(?:(\\d+)\\s+)?";
-   private static final String SUBSET = "(?:\\" + SUBSET_CHAR + NAME + "?)?";
+   private static final String SUBSET = "(?:\\" + SUBSET_CHAR + "\\s*" + NAME + "?)?";
    private static final String COLUMN = "(?:\\" + COLUMN_CHAR + COLUMN_NAME + "?)?";
    private static final String FILTER = "(?:\\" + FILTER_CHAR + "([^}]+)?)?";
-
-   // {1 Table:Subset@Column#Filter}
-   private static final String TABLE_REF_REGEX = TABLE_NAME + SUBSET + COLUMN + FILTER;
-   static final Pattern TABLE_XREF = Pattern.compile("\\{" + QTY + TABLE_REF_REGEX + "\\s*\\}", Pattern.CASE_INSENSITIVE);
-   // {Subset@Column#Filter} -- short-cut for a subset reference (Within the table)
+   private static final String PARTIAL = SUBSET + COLUMN + FILTER;
+   private static final String FULL = "([+])" + FILTER;
+   private static final String XREF_REGEX = QTY + TABLE_NAME + "(?:(?:" + PARTIAL + ")|(?:" + FULL + "))?";
+   static final Pattern TABLE_XREF = Pattern.compile("\\{" + XREF_REGEX + "\\s*\\}", Pattern.CASE_INSENSITIVE);
+   
+   // {:Subset.Column#Filter} -- short-cut for a subset reference (Within the table)
    static final Pattern SUBSET_REF = Pattern.compile("\\{" + SUBSET + COLUMN + FILTER + "\\}", Pattern.CASE_INSENSITIVE);
 
    static final Pattern SCRIPT_XREF = // {1 Script.cmd}
@@ -77,9 +84,12 @@ public final class Constants
    static final Pattern INCLUDE_LINE = Pattern.compile("[+]\\s*(.*)\\s*");
 
    // + prefix{Table XRef}suffix
-   static final Pattern INCLUDED_TBL = Pattern.compile("^[" + INCLUDE_CHAR + "]\\s*([^{]*)\\{(" + TABLE_REF_REGEX + ")\\}([^{]*)",
-                                                       Pattern.CASE_INSENSITIVE);
+   static final Pattern INCLUDED_TBL = 
+      Pattern.compile("^[" + INCLUDE_CHAR + "]\\s*([^{]*)\\{(" + XREF_REGEX + ")\\}([^{]*)",
+                      Pattern.CASE_INSENSITIVE);
 
+   static final Pattern FORMAT_TOKEN = Pattern.compile("\\{\\~(.+)\\}"); // {~last, first} => first last
+   
    static final String LAST_RESOLVED_TOKEN = "{!}";
 
    private static final String VARIABLE_REGEX = "\\{(![^}]*)\\}";

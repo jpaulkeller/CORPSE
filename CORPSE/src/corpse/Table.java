@@ -17,6 +17,7 @@ import java.util.regex.Pattern;
 
 import javax.swing.table.DefaultTableModel;
 
+import utils.Utils;
 import corpse.Quantity.Numeric;
 import corpse.ui.TokenRenderer;
 import file.FileUtils;
@@ -47,7 +48,7 @@ public class Table extends ArrayList<String>
       {
          if (f.isDirectory() && !f.getName().startsWith("."))
             populate(f);
-         else if (f.isFile())
+         else if (f.isFile() && f.getName().toLowerCase().endsWith(".tbl"))
             new Table(f.getPath());
       }
    }
@@ -143,10 +144,14 @@ public class Table extends ArrayList<String>
 
    Subset getSubset(final String subsetName)
    {
-      String key = subsetName != null ? subsetName.toUpperCase() : tableName;
-      Subset subset = subsets.get(key);
-      if (subset == null && subsetName != null)
-         System.err.println("Missing " + file + " subset: [" + subsetName + "]");
+      Subset subset = null;
+      if (subsetName != null)
+      {
+         String key = subsetName.toUpperCase();
+         subset = subsets.get(key);
+         if (subset == null && !subsetName.equalsIgnoreCase(tableName))
+            System.err.println("Missing " + file + " subset: [" + subsetName + "]");
+      }
       return subset;
    }
 
@@ -157,10 +162,14 @@ public class Table extends ArrayList<String>
 
    Column getColumn(final String columnName)
    {
-      String key = columnName != null ? columnName.toUpperCase() : tableName;
-      Column column = columns.get(key);
-      if (column == null && columnName != null && !columnName.equals("*"))
-         System.err.println("Missing " + file + " column: [" + key + "]");
+      Column column = null;
+      if (columnName != null)
+      {
+         String key = columnName.toUpperCase();
+         column = columns.get(key);
+         if (column == null && !columnName.equalsIgnoreCase(tableName))
+            System.err.println("Missing " + file + " column: [" + key + "]\n" + Utils.getStack("^corpse[.].*"));
+      }
       return column;
    }
 
@@ -268,7 +277,7 @@ public class Table extends ArrayList<String>
    }
 
    // Included tables are used to provide an even distribution of elements from multiple sub-tables of
-   // different sizes. Each element has the same chance of selection. See Site.tbl for an example.
+   // different sizes. Each element has the same chance of selection. See Site.tbl or Flora.tbl as examples.
 
    private void includeTable(final String line)
    {
@@ -289,8 +298,7 @@ public class Table extends ArrayList<String>
          {
             if (Constants.SIMPLE_TABLE.matcher(tableRef).matches())
                table = Table.getTable(tableRef);
-            else
-               // columns/subsets/filters
+            else // columns/subsets/filters
                table = new SubTable(token); // resolve the table before including
          }
          for (String entry : table)
@@ -431,6 +439,14 @@ public class Table extends ArrayList<String>
       return false;
    }
 
+   private static void test(final String token, final String test)
+   {
+      System.out.println("Test: " + test + " - " + token);
+      Table table = Table.getTable(token);
+      table.export();
+      System.out.println();
+   }
+   
    public static void main(final String[] args)
    {
       CORPSE.init(true);
@@ -442,22 +458,12 @@ public class Table extends ArrayList<String>
       }
       System.out.println();
 
-      Table table;
+      test("METALLIC", "including a subset");
+      test("Mine", "weighted lines");
 
-      // test including a subset
-      table = Table.getTable("METALLIC");
-      table.export();
-      System.out.println();
-
-      // test a filter
-      new Table("COLOR", "C.+");
-      table = Table.getTable("COLOR#C.+");
-      table.export();
-      System.out.println();
-
-      // test weighted lines
-      table = Table.getTable("Mine");
-      table.export();
-      System.out.println();
+      new Table("COLOR", "C.+"); // TODO: there must be a better way to pre-load the filtered table
+      test("COLOR#C.+", "filter");
+      
+      test("Flora", "including a table with a default subset");
    }
 }

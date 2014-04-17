@@ -44,7 +44,7 @@ public final class Macros
          resolvedToken = resolveTables(tableOrScriptName, resolvedToken, filter);
          resolvedToken = resolveScripts(resolvedToken);
          if (resolvedToken.equals(token))
-            resolvedToken = m.replaceFirst("<$1>"); // avoid infinite loop
+            resolvedToken = "<" + m.group(1) + ">"; // avoid infinite loop
 
          String caseSample = token;
          if (caseSample.equals(Constants.LAST_RESOLVED_TOKEN) && !lastResolved.isEmpty())
@@ -96,6 +96,8 @@ public final class Macros
          resolvedToken = resolveVariables(token);
       if (resolvedToken.equals(token))
          resolvedToken = resolvePlurals(token);
+      if (resolvedToken.equals(token))
+         resolvedToken = resolveFormatter(token);
       if (resolvedToken.equals(token))
          resolvedToken = resolveFilters(token);
       if (resolvedToken.equals(token))
@@ -154,6 +156,37 @@ public final class Macros
 
       if (DEBUG && !token.equals(resolvedToken))
          System.out.println("  resolveFilters: [" + token + "] = [" + resolvedToken + "]");
+      return resolvedToken;
+   }
+
+   private static final Pattern FORMAT_PART = Pattern.compile("\\s*([^,]+)");
+   private static final Pattern FORMAT_COMMA = Pattern.compile("([^,]+)(?:,\\s*([^,]+)){1,4}"); // chain, iron, heavy 
+   private static final Pattern FORMAT_PAREN = Pattern.compile("([^(]+?)\\s*\\(([^)]+)\\)"); // tent (large)
+   
+   private static String resolveFormatter(final String token)
+   {
+      String resolvedToken = token;
+
+      Matcher m = Constants.FORMAT_TOKEN.matcher(resolvedToken);
+      if (m.matches())
+      {
+         resolvedToken = m.group(1); 
+         m = FORMAT_COMMA.matcher(resolvedToken);
+         if (m.matches())
+         {
+            m = FORMAT_PART.matcher(resolvedToken);
+            resolvedToken = null;
+            while (m.find())
+               resolvedToken = m.group(1) + (resolvedToken != null ? " " + resolvedToken : "");
+         }
+         
+         m = FORMAT_PAREN.matcher(resolvedToken);
+         if (m.matches())
+            resolvedToken = m.group(2) + " " + m.group(1);
+      }
+
+      if (DEBUG && !token.equals(resolvedToken))
+         System.out.println("  resolveFormatter: [" + token + "] = [" + resolvedToken + "]");
       return resolvedToken;
    }
 
@@ -248,7 +281,11 @@ public final class Macros
       if (m.matches())
       {
          // add a terminator, in case the last token is empty
-         String[] tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR, Constants.ONE_OF_CHAR);
+         String[] tokens;
+         if (m.group(1).contains(Constants.ONE_OF_CHAR_1))
+            tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_1, Constants.ONE_OF_CHAR_1);
+         else
+            tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_2, Constants.ONE_OF_CHAR_2);
          int roll = RandomEntry.get(tokens.length);
          resolved = m.replaceFirst(tokens[roll]);
          if (DEBUG && !token.equals(resolved))
@@ -324,26 +361,37 @@ public final class Macros
       }
       else if ((m = Constants.TABLE_XREF.matcher(resolved)).matches())
       {
+         token = m.group(0);
+         
          count = 1;
          if (m.group(1) != null)
             count = Integer.parseInt(m.group(1));
 
-         token = m.group(0);
          xrefTbl = m.group(2);
-         xrefSub = m.group(3);
-         xrefCol = m.group(4);
-         xrefFil = m.group(5);
+         
+         if (Constants.INCLUDE_CHAR.equals(m.group(6))) // {Table+}
+            xrefFil = m.group(7);
+         else // {Table:Subset.Column#Filter}
+         {
+            xrefSub = m.group(3);
+            xrefCol = m.group(4);
+            xrefFil = m.group(5);
+            
+            // support default subsets and columns
+            if (xrefCol == null)
+               xrefCol = xrefTbl;
+            if (xrefSub == null)
+               xrefSub = xrefTbl;
+         }
       }
 
       if (count > 0)
       {
+         // TODO: must handle Table:.# (see also SubTable.java)
          if (xrefFil == null && filter != null)
             xrefFil = filter;
-         if (xrefSub == null && token.contains(Constants.SUBSET_CHAR)) // e.g., Metal:
-            xrefSub = xrefTbl;
 
-         // System.out.println("Macros [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil +
-         // "]");
+         // System.out.println("Macros [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
 
          // avoid infinite loop references
          if (TOKEN_STACK.contains(token))
@@ -397,12 +445,14 @@ public final class Macros
    private static String matchCase(final String token, final String resolved)
    {
       String caseMatched = resolved;
-      if (resolved.toUpperCase().equals(resolved))
+      if (resolved.isEmpty())
+         ; // nothing to do
+      else if (resolved.toUpperCase().equals(resolved))
          ; // do nothing; leave the value all uppercase (for acronyms)
       else if (token.toLowerCase().equals(token)) // all lower
          caseMatched = resolved.toLowerCase();
-      else if (token.toUpperCase().equals(token) || resolved.length() <= 1) // all upper
-         caseMatched = resolved.toUpperCase();
+      else if (token.toUpperCase().equals(token)) // all upper
+         ; // do nothing; leave the value as-is (good for sentences)
       else // cap-init all words
       {
          Matcher m;
@@ -431,9 +481,10 @@ public final class Macros
    public static void main(final String[] args)
    {
       Macros.TEST = true;
-      CORPSE.init(false); // toggle debug
+      CORPSE.init(true); // toggle debug
       RandomEntry.randomize();
 
+      /*
       Macros.resolve(null, "{50%?Yes:No}");
       Macros.resolve(null, "{Island Event}");
       Macros.resolve(null, "{Metal" + Constants.SUBSET_CHAR + "}");
@@ -443,8 +494,13 @@ public final class Macros
       Macros.resolve(null, "Filter: {Color:Basic#S.+}");
       Macros.resolve(null, "{Color} " + Constants.LAST_RESOLVED_TOKEN);
       Macros.resolve(null, "{#text:.}"); // filtered token
-      Macros.resolve(null, "{Color} {Fauna#{#{!}:.}.*}"); // test a back-reference with a filter
+      Macros.resolve(null, "{Color} {Fauna#{#{!}:.}.*}"); // back-reference with a filter
       Macros.resolve(null, "{+thing} {+moss} {+fly} {+mouse} {+fox}"); // test plurals
-      Macros.resolve("Barsoom Plot", "{:Villain}"); // test subset short-cut
+      Macros.resolve(null, "{~last, first} / {~chain, gold, fine} / {~boat (large)}"); // formatter
+      Macros.resolve("Barsoom Plot", "{:Villain}"); // subset short-cut
+      Macros.resolve(null, "{equipment+}"); // full line
+      Macros.resolve(null, "{equipment}"); // default column
+      */
+      Macros.resolve(null, "Filter: {Name#S.+}");
    }
 }

@@ -4,20 +4,20 @@
  *
  * For FIXED WIDTH values:
  * 
- * 1) You can just specify the width "@ Name 10".  The column will start at 1 + the end of
+ * 1) You can just specify the width ". Name 10".  The column will start at 1 + the end of
  *    the previous column.  (Values are trimmed as they are extracted, so extra white-space won't matter.)
  * 
- * 2) You can specify the starting position and width like "@ Name 1 20".  This format should only
+ * 2) You can specify the starting position and width like ". Name 1 20".  This format should only
  *    be used if necessary, since it's harder to maintain.
  *  
  * 3) Fixed width columns can also be defined on one line, aligned with the data (separated by at least 2 spaces):
- *    @Name            Cost      Weight       etc...
- *    Note that if the first column name appears next to the @ (as above), it will be treated as starting at 1 (instead of 2).  
+ *    .Name            Cost      Weight       etc...
+ *    Note that if the first column name appears next to the . (as above), it will be treated as starting at 1 (instead of 2).  
  *    This format is easy to use and maintain, but does limit the width of your column names.
  *
  * For DELIMITED values (such as CSV):
  * 
- * 4) You can simply specify all the column names on one line (@ First, Second, ...)
+ * 4) You can simply specify all the column names on one line (. First, Second, ...)
  * 
  * 5) Or you can just list the columns in order, one per line. 
  */
@@ -34,29 +34,28 @@ public final class Column implements Comparable<Column>
 
    private static final Pattern CN_PATTERN = Pattern.compile(CN, Pattern.CASE_INSENSITIVE);
 
-   // @ Name
+   // . Name
    private static final Pattern COLUMN = Pattern.compile("^\\" + CC + "\\s*" + CN + Constants.COMMENT, Pattern.CASE_INSENSITIVE);
    
-   // @ Name width
+   // . Name width
    private static final Pattern COLUMN_FIXED = Pattern.compile("^\\" + CC + "\\s*" + CN + "\\s+(\\d+)" + Constants.COMMENT,
                                                                Pattern.CASE_INSENSITIVE);
-   // @ Name start width
+   // . Name start width (obsolete format)
    private static final Pattern COLUMN_FULL = Pattern.compile("^" + CC + "\\s*" + CN + "\\s+(\\d+)\\s+(\\d+)" + Constants.COMMENT,
                                                               Pattern.CASE_INSENSITIVE);
-   // @ First Second Third ... (up to 20) -- Alteration.tbl
+   // . First  Second  Third ... (up to 20; min 2-space separation) -- Alteration.tbl
    private static final String HEADER_REGEX = "^\\" + CC + "(\\s*" + CN + "(?:\\s\\s+" + CN + "){1,20})" + Constants.COMMENT;
    private static final Pattern COLUMN_HEADER = Pattern.compile(HEADER_REGEX, Pattern.CASE_INSENSITIVE);
    
-   // @ Name1, Name2, ... (2 to 20)
+   // . Name1, Name2, ... (2 to 20)
    private static final String CSV_REGEX = "^\\" + CC + "\\s*(" + CN + "(?:[,;]\\s*" + CN + "){1,20})" + Constants.COMMENT;
    private static final Pattern COLUMNS_CSV = Pattern.compile(CSV_REGEX, Pattern.CASE_INSENSITIVE);
 
-   // @ Name Token (e.g. Quality {quality:})
-   private static final Pattern GHOST_COLUMN = 
-            Pattern.compile("^\\" + CC + "\\s*" + CN + "\\s+" + Constants.TOKEN + Constants.COMMENT, 
-                            Pattern.CASE_INSENSITIVE);
+   // . Name Token (e.g. Quality {quality:})
+   private static final Pattern GHOST_COLUMN = Pattern.compile("^\\" + CC + "\\s*" + CN + "\\s+" + Constants.TOKEN + Constants.COMMENT, 
+                                                               Pattern.CASE_INSENSITIVE);
    
-   // field1;field2;...
+   // value 1;value 2;...
    private static final Pattern DELIMITED_DATA = Pattern.compile("([^;]*)(?: *; *)?");
 
    private String name;

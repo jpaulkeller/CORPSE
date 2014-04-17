@@ -19,7 +19,6 @@ import javax.swing.Icon;
 import javax.swing.JOptionPane;
 
 import file.FileUtils;
-import gui.comp.TipComboBox;
 
 public final class Script
 {
@@ -38,7 +37,7 @@ public final class Script
       {
          if (f.isDirectory() && !f.getName().startsWith("."))
             populate(f);
-         else if (f.isFile())
+         else if (f.isFile() && f.getName().toLowerCase().endsWith(".cmd"))
             new Script(f.getPath());
       }
    }
@@ -92,7 +91,7 @@ public final class Script
          String line = null;
          while ((line = br.readLine()) != null)
          {
-            if (line.trim().equals("")) // ignore blank lines
+            if (line.equals("")) // ignore blank lines
                continue;
             if (Constants.COMMENT_LINE.matcher(line).find())
                continue;
@@ -213,6 +212,7 @@ public final class Script
             String[] randomOptions = new String[7];
             for (int i = 0; i < randomOptions.length; i++)
                randomOptions[i] = Macros.resolve(getName(), "{" + message + "}");
+            // import gui.comp.TipComboBox;
             // TipComboBox box = new TipComboBox(randomOptions);
             // box.setEditable(true);
             options =  randomOptions;
@@ -235,7 +235,8 @@ public final class Script
 
    private String include(final String scriptName)
    {
-      Script script = new Script("data/Scripts/" + scriptName); // TODO
+      // Script script = new Script(Constants.DATA_PATH + File.separator + scriptName); // TODO
+      Script script = Script.getScript(scriptName); // TODO
       return script.resolve();
    }
 
@@ -285,6 +286,7 @@ public final class Script
       // Script script = Script.getScript ("NPC");
       Script script = Script.getScript("Potion");
       String resolved = script.resolve();
+      System.out.println("-------------------------------------------------------------");
       if (resolved != null)
          System.out.println(resolved);
    }

@@ -109,11 +109,11 @@ public final class Quantity
       }
    }
 
-   static class Percent extends NumericAdapter // % (same as d100)
+   static class Percent extends NumericAdapter // {%} (same as d100)
    {
       public Percent()
       {
-         super("%");
+         super("\\{%\\}");
       }
 
       @Override
@@ -164,17 +164,17 @@ public final class Quantity
       }
    }
 
-   static class Formula extends NumericAdapter // {#+#}
+   static class Formula extends NumericAdapter // {=#+#}
    {
       public Formula()
       {
-         super("\\{= *(\\d+) *([-+]) *(\\d+)\\}");
+         super("\\{= *(\\d+) *([-+*/^]) *(\\d+(?:[.]\\d+)?)\\}");
       }
 
       @Override
       public int get()
       {
-         return RandomEntry.get(getMax());
+         return getMax();
       }
 
       @Override
@@ -187,19 +187,27 @@ public final class Quantity
       public int getMax()
       {
          int i = Integer.parseInt(getMatcher().group(1));
-         int j = Integer.parseInt(getMatcher().group(3));
-         if (getMatcher().group(2).equals("+"))
-            return i + j;
-         // else if (getMatcher().group (2).equals("-"))
-         return i - j;
+         float j = Float.parseFloat(getMatcher().group(3));
+         String operator = getMatcher().group(2); 
+         if (operator.equals("+"))
+            return i + (int) j;
+         else if (operator.equals("-"))
+            return i - (int) j;
+         else if (operator.equals("*"))
+            return i * (int) j;
+         else if (operator.equals("/"))
+            return Math.round(i / j);
+         else if (operator.equals("^"))
+            return (int) Math.round(Math.pow(i, j));
+         return 1;
       }
    }
 
-   static class Dice extends NumericAdapter // {#d#+#} The extra +# is optional. The operator can be + or -.
+   static class Dice extends NumericAdapter // {#d#+#} The extra +# is optional. Operators: +, -, *, /
    {
       public Dice()
       {
-         super("\\{(\\d+)? *[dD] *(\\d+)(?:([-+])(\\d+))?\\}");
+         super("\\{(\\d+)? *[dD] *(\\d+)(?:([-+*/])(\\d+))?\\}");
       }
 
       @Override
@@ -220,6 +228,10 @@ public final class Quantity
                roll += bonus;
             else if (operator.equals("-"))
                roll -= bonus;
+            else if (operator.equals("*"))
+               roll *= bonus;
+            else if (operator.equals("/"))
+               roll /= bonus;
          }
          return roll;
       }
@@ -370,7 +382,8 @@ public final class Quantity
          Matcher m = getMatcher();
          int mean = Integer.parseInt(m.group(1));
          int max = Integer.parseInt(m.group(2));
-         return RandomEntry.getExp(mean, max);
+         double stdDev = max / 3.0;
+         return RandomEntry.getGaussian(mean, stdDev, max);
       }
 
       @Override
@@ -530,12 +543,18 @@ public final class Quantity
    {
       List<String> tokens = new ArrayList<String>();
       tokens.add("invalid");
-      tokens.add("5"); // CONSTANT
+      tokens.add("5"); // CONSTANT (not a token)
+      
       tokens.add("{5}"); // ROLL
-      tokens.add("%"); // PERCENT
+      tokens.add("{%}"); // PERCENT
       tokens.add("{10-20}"); // RANGE
+      
       tokens.add("{=5+10}"); // FORMULA
       tokens.add("{=10-3}"); // FORMULA
+      tokens.add("{=3*2}"); // FORMULA
+      tokens.add("{=12/2}"); // FORMULA
+      tokens.add("{=5^2}"); // FORMULA (square)
+      tokens.add("{=100^0.5}"); // FORMULA (square root)
 
       tokens.add("{3d6}"); // DICE
       tokens.add("{d12}"); // DICE
@@ -552,7 +571,14 @@ public final class Quantity
          if (qty != null)
          {
             String type = qty.numeric.getClass().getName().substring("corpse.Quantity$".length());
-            System.out.println(token + " " + type + " = " + qty.resolve() + "; max = " + qty.getMax());
+            
+            int total = 0;
+            for (int i = 0; i < 1000; i++)
+               total += qty.get();
+            int average = Math.round(total / 1000f);
+               
+            System.out.println(token + " " + type + " = " + qty.resolve() + 
+                               " (avg = " + average + ", max = " + qty.getMax() + ")");
          }
          else
             System.out.println("Invalid: " + token);
