@@ -19,6 +19,7 @@
 package corpse;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -162,8 +163,9 @@ public final class Subset
    {
       StringBuilder sb = new StringBuilder();
       sb.append(name + " " + roll + " ");
-      for (String composite : composites)
-         sb.append(composite + " + ");
+      Iterator<String> iter = composites.iterator();
+      while (iter.hasNext())
+         sb.append(iter.next() + (iter.hasNext() ? " + " : ""));
       if (pattern != null)
          sb.append(" filter=[" + pattern.pattern() + "]");
       return sb.toString();

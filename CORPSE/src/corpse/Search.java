@@ -1,5 +1,7 @@
 package corpse;
 
+import gui.comp.ProgressBar;
+
 import java.awt.Component;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -23,7 +25,7 @@ public final class Search
       // prevent instantiation
    }
 
-   public static void search(final Component owner, final TabPane tabs)
+   public static void search(final Component owner, final TabPane tabs, final ProgressBar progress)
    {
       String message = "Enter Search Pattern";
       String title = "Search Data Files";
@@ -31,15 +33,25 @@ public final class Search
       Icon icon = ImageTools.getIcon("20/objects/Magnify.gif");
       String defaultValue = null;
 
-      String pattern = (String) JOptionPane.showInputDialog(owner, message, title, type, icon, null, defaultValue);
+      final String pattern = (String) JOptionPane.showInputDialog(owner, message, title, type, icon, null, defaultValue);
       if (pattern != null && !pattern.isEmpty())
       {
-         StringBuilder html = search(pattern);
-         showSearchResults(tabs, html, pattern);
-         // FileUtils.writeFile(new File("C:/Users/J/Desktop/test.html"), html.toString(), false);
+         new Thread() 
+         {
+            @Override
+            public void run()
+            {
+               progress.setIndeterminate(true);
+               StringBuilder html = search(pattern);
+               progress.setIndeterminate(false);
+               showSearchResults(tabs, html, pattern);
+               // FileUtils.writeFile(new File("C:/Users/J/Desktop/test.html"), html.toString(), false);
+            }
+         }.start();
       }
    }
 
+   
    private static StringBuilder search(final String pattern)
    {
       StringBuilder html = new StringBuilder();

@@ -203,7 +203,7 @@ public final class Macros
 
          if (replacement != null) // found the appropriate plural form
             resolvedToken = m.replaceFirst(replacement);
-         else if (upper.endsWith("S") || upper.endsWith("X"))
+         else if (upper.endsWith("S") || upper.endsWith("X") || upper.endsWith("SH"))
             resolvedToken = text + "es";
          else if (upper.endsWith("Y"))
             resolvedToken = text.substring(0, text.length() - 1) + "ies"; // strip Y, add IES
@@ -500,7 +500,9 @@ public final class Macros
       Macros.resolve("Barsoom Plot", "{:Villain}"); // subset short-cut
       Macros.resolve(null, "{equipment+}"); // full line
       Macros.resolve(null, "{equipment}"); // default column
-      */
       Macros.resolve(null, "Filter: {Name#S.+}");
+      Macros.resolve(null, "2 * 5 = {=2*5}");
+      */
+      Macros.resolve(null, "Alteration = {Alteration}");
    }
 }

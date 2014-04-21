@@ -23,7 +23,7 @@ public class TokenRenderer extends ColoredTableRenderer
 
    @Override
    public Component getTableCellRendererComponent(final JTable table, final Object value, final boolean isSelected,
-            final boolean hasFocus, final int row, final int viewColumn)
+                                                  final boolean hasFocus, final int row, final int viewColumn)
    {
       JComponent cell = (JComponent) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, viewColumn);
 

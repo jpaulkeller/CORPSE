@@ -14,8 +14,7 @@ import java.util.Map;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JSplitPane;
+import javax.swing.JScrollPane;import javax.swing.JSplitPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JViewport;
@@ -258,6 +257,7 @@ public class TreePanel extends JSplitPane implements TabListener
    private JXTable populateResolved(final Table table, final String name)
    {
       DefaultTableModel model = table.getModel();
+      
       JXTable view = new TableView(model, name, new TokenRenderer()).getView();
       view.setEditable(true);
       view.getTableHeader().setReorderingAllowed(false);

@@ -24,8 +24,13 @@
 
 package corpse;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import utils.Utils;
 
 public final class Column implements Comparable<Column>
 {
@@ -55,44 +60,66 @@ public final class Column implements Comparable<Column>
    private static final Pattern GHOST_COLUMN = Pattern.compile("^\\" + CC + "\\s*" + CN + "\\s+" + Constants.TOKEN + Constants.COMMENT, 
                                                                Pattern.CASE_INSENSITIVE);
    
+   // . Name = name + name + name (up to 20)
+   private static final String META_COLUMN_REGEX = "^\\" + CC + " *" + CN + " *= *(" + CN + "(?: *\\+ *" + CN + "){0,20})";
+   private static final Pattern COMPOSITE_COLUMN = Pattern.compile(META_COLUMN_REGEX, Pattern.CASE_INSENSITIVE);
+
    // value 1;value 2;...
    private static final Pattern DELIMITED_DATA = Pattern.compile("([^;]*)(?: *; *)?");
 
+   private Table table;
    private String name;
    private int index;
    private int start; // 1-based
    private int width;
    private String token; // for ghost columns
 
+   private List<String> composites = new ArrayList<String>();
+
    public static void parse(final Table table, final String entry)
    {
+      Column column = null;
+      
       Matcher m;
-      if ((m = COLUMN_FULL.matcher(entry)).find()) // Name start width
+      if ((m = COMPOSITE_COLUMN.matcher(entry)).find())
       {
-         Column column = new Column();
+         column = new Column(table);
          column.name = m.group(1);
+         column.index = table.getColumns().size();
+         column.start = 0;
+         column.width = 0;
+
+         Matcher nameMatcher = CN_PATTERN.matcher(m.group(2));
+         while (nameMatcher.find())
+            column.composites.add(nameMatcher.group(1));
+         table.addColumn(column);
+      }
+      else if ((m = COLUMN_FULL.matcher(entry)).find()) // Name start width
+      {
+         column = new Column(table);
+         column.name = m.group(1);
+         column.index = table.getColumns().size();
          column.start = Integer.parseInt(m.group(2));
          column.width = Integer.parseInt(m.group(3));
-         column.index = table.getColumns().size();
          table.addColumn(column);
          System.err.println("Upgrade " + table.getName() + " column format: " + column.name);
       }
       else if ((m = COLUMN_FIXED.matcher(entry)).find()) // Name width
       {
-         Column column = new Column();
+         column = new Column(table);
          column.name = m.group(1);
          column.index = table.getColumns().size();
-         column.width = Integer.parseInt(m.group(2));
          column.start = column.index == 0 ? 1 : Column.getNextStart(table, column);
+         column.width = Integer.parseInt(m.group(2));
          table.addColumn(column);
       }
       else if ((m = GHOST_COLUMN.matcher(entry)).find()) // Name Token
       {
-         Column column = new Column();
+         column = new Column(table);
          column.name = m.group(1);
          column.index = table.getColumns().size();
-         column.width = -1; // TODO
-         column.start = -1; // TODO
+         column.start = -1;
+         column.width = -1;
          column.token = "{" + m.group(2) + "}";
          table.addColumn(column);
       }
@@ -100,12 +127,12 @@ public final class Column implements Comparable<Column>
       {
          Matcher nameMatcher = CN_PATTERN.matcher(m.group(1));
          while (nameMatcher.find())
-            table.addColumn(new Column(nameMatcher.group(1), table.getColumns().size()));
+            table.addColumn(new Column(table, nameMatcher.group(1), table.getColumns().size()));
       }
       else if ((m = COLUMN_HEADER.matcher(entry)).find()) // First Second ...
          parseColumnHeader(table, m.group(1));
       else if ((m = COLUMN.matcher(entry)).find()) // Name width
-         table.addColumn(new Column(m.group(1), table.getColumns().size()));
+         table.addColumn(new Column(table, m.group(1), table.getColumns().size()));
       else
          System.err.println("Invalid column in " + table.getFile() + ": " + entry);
    }
@@ -115,7 +142,7 @@ public final class Column implements Comparable<Column>
       Matcher m = CN_PATTERN.matcher(header);
       while (m.find())
       {
-         Column column = new Column();
+         Column column = new Column(table);
          column.name = m.group(1);
          column.index = table.getColumns().size();
          column.start = (m.start() == 0 ? 0 : m.start() + Constants.COLUMN_CHAR.length()) + 1;
@@ -130,17 +157,19 @@ public final class Column implements Comparable<Column>
       // note the final column won't have a width, so we'll just go to the end-of-line when we extract it
    }
 
-   private Column()
+   private Column(final Table table)
    {
+      this.table = table;
    }
 
-   private Column(final String name, final int index)
+   private Column(final Table table, final String name, final int index)
    {
-      this(name, 0, 0, index);
+      this(table, name, 0, 0, index);
    }
 
-   private Column(final String name, final int start, final int length, final int index)
+   private Column(final Table table, final String name, final int start, final int length, final int index)
    {
+      this.table = table;
       this.name = name;
       this.start = start;
       this.width = length;
@@ -156,8 +185,13 @@ public final class Column implements Comparable<Column>
       return column;
    }
 
-   // determine the start of the given column, based on the start/width of the
-   // previous column
+   static boolean isComposite(final Table table, final String colName)
+   {
+      // TODO
+      return false;
+   }
+   
+   // determine the start of the given column, based on the start/width of the previous column
    private static int getNextStart(final Table table, final Column column)
    {
       int start = 1;
@@ -176,7 +210,23 @@ public final class Column implements Comparable<Column>
    {
       String field = "";
 
-      if (start == 0)
+      if (!composites.isEmpty())
+      {
+         for (String composite : composites)
+         {
+            Column col = table.getColumn(composite);
+            if (col != null)
+               field += col.getValue(unresolvedEntry);
+            else
+            {
+               if (composite.equals("_")) // hack
+                  composite = " ";
+               if (!field.isEmpty())
+                  field += composite; // support Field1 + _ + Field2
+            }
+         }
+      }
+      else if (start == 0)
       {
          Matcher m = DELIMITED_DATA.matcher(unresolvedEntry);
          for (int i = 0; i < index; i++)
@@ -184,10 +234,8 @@ public final class Column implements Comparable<Column>
          if (m.find())
             field = m.group(1);
       }
-      else if (start < 0) // ghost column
-      {
+      else if (start == -1) // ghost column
          field = token;
-      }
       else // fixed-width
       {
          int from = start - 1;
@@ -205,7 +253,18 @@ public final class Column implements Comparable<Column>
    @Override
    public String toString()
    {
-      return "[" + index + "] " + name + " " + start + " " + width;
+      StringBuilder sb = new StringBuilder();
+      sb.append("[" + index + "] " + name);
+      if (composites.isEmpty())
+         sb.append(" " + start + " " + width);
+      else
+      {
+         sb.append(" = ");
+         Iterator<String> iter = composites.iterator();
+         while (iter.hasNext())
+            sb.append(iter.next() + (iter.hasNext() ? " + " : ""));
+      }
+      return sb.toString();
    }
 
    @Override
@@ -218,7 +277,9 @@ public final class Column implements Comparable<Column>
    {
       CORPSE.init(true);
 
-      String test = "EQUIPMENT";
+      // String test = "EQUIPMENT";
+      // String test = "Alteration";
+      String test = "Profession";
       
       if (test != null)
       {

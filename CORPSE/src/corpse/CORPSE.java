@@ -1,6 +1,7 @@
 package corpse;
 
 import gui.ComponentTools;
+import gui.comp.ProgressBar;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -18,7 +19,6 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JProgressBar;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 import javax.swing.event.DocumentEvent;
@@ -34,33 +34,26 @@ import corpse.ui.TreePanel;
 
 // TODO bugs
 // why doesn't TSR Giant range prefix work? (in resolved view, and as a random text)
-// script include (with numeric prefix) doesn't honor column (see Potion.cmd)
 
 // TODO data changes
-// separate components/organic reagents
 
 // TODO minor enhancements
-// progress bar for Search
 // change CMD suffix?
 // SoundX filter?
 // show footnotes in resolved view? (Reagent.tbl)
 // how to resolve male/female titles (Title Feudal) Maybe column like Title/Female with values like Prince/Princess
 // figure out a way to cap-init a sentence w/o cap-initing each word
-//improve case-matching to deal with 's, words like "and/of/etc", proper nouns
-//improve case-matching: {UPPER} Don't change case; {lower} lower-case all; {Cap-init} upper each word?
-// TitleGuild {7,15} -- consider {~7} format
+// improve case-matching to deal with 's, words like "and/of/etc", proper nouns
 // deal with null return from prompt better
-// right-justify numeric fields (class.tbl)
 // consider allowing ":" as field separator
 
 // TODO moderate enhancements
 // fix {+Table} included tables to apply default column/subset
 // export text
-// support composite columns (like Job xxx = Title + Profession)
-// support .html files (table, definition)
+// // support .html files (table, definition)
 // support .wiki files
 // named filters? see Professions.tbl
-// splash and progress bar
+// splash
 // consider allowing unique (or local) column names to work as shortcuts (e.g. .Cost)
 // consider extending ArrayList to support WeightedList (store weight; don't duplicate element)
 // Figure out how to resolve CONDITIONS before resolving the inner values
@@ -79,11 +72,16 @@ import corpse.ui.TreePanel;
 // UI - Add option on top with pull-downs to: Resolve [#] [Table]:[Subset].[Column]#[Filter]
 
 // TODO misc
+// support looping in scripts (Kingdom.cmd)
 // include/weight/etc for scripts? eg. Custom.cmd
 // support include lines with prefixes like ">> {{4d2-3} reagent}" in potion.cmd 
 // test embedded subsets in weighted lines TSR SCROLL
 // determine numeric fields in resolved view renderer
 // consider: if there is a default subset, don't show other subsets in the resolved tabular view (e.g. Book)
+// consider: support hidden columns
+// ignore composite columns with 1 simple field (for the resolved view)
+// why aren't composite columns (e.g Profession.Job) case-matched?
+// variable to not match the previous roll (Menu.tbl, {berry}{25%? and {berry}} pie)
 
 public final class CORPSE
 {
@@ -93,7 +91,7 @@ public final class CORPSE
    private TabPane tabs;
    private TreePanel tables;
    private TreePanel scripts;
-   private JProgressBar progress;
+   private ProgressBar progress;
    private JTextField quickSlot;
    private JButton entryButton;
 
@@ -133,7 +131,7 @@ public final class CORPSE
       quickSlot.setToolTipText("For a quick random value, enter any table name or dice expression (e.g., INN NAME or 3d6)");
       quickSlot.getDocument().addDocumentListener(new QuickSlotListener());
 
-      progress = new JProgressBar(0, 100);
+      progress = new ProgressBar();
       progress.setFont(new Font("Arial", Font.BOLD, 14));
       progress.setStringPainted(true);
 
@@ -167,7 +165,7 @@ public final class CORPSE
 
    public void search()
    {
-      Search.search(mainPanel, tabs);
+      Search.search(mainPanel, tabs, progress);
    }
 
    public void setText(final String text)

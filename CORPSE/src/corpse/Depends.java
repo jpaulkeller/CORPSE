@@ -67,7 +67,7 @@ public final class Depends
          InputStreamReader isr = new InputStreamReader(fis);
          BufferedReader br = new BufferedReader(isr);
 
-         while ((line = br.readLine()) != null)
+         while ((line = br.readLine()) != null && !line.startsWith(Constants.EOF))
          {
             if (!line.startsWith(Constants.SUBSET_CHAR) && line.contains("{"))
             {
