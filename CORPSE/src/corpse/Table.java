@@ -167,7 +167,7 @@ public class Table extends ArrayList<String>
       {
          String key = columnName.toUpperCase();
          column = columns.get(key);
-         if (column == null && !columnName.equalsIgnoreCase(tableName))
+         if (column == null && !columnName.equalsIgnoreCase(tableName) && !Column.isComposite(this, columnName))
             System.err.println("Missing " + file + " column: [" + key + "]\n" + Utils.getStack("^corpse[.].*"));
       }
       return column;
@@ -234,7 +234,7 @@ public class Table extends ArrayList<String>
             InputStreamReader isr = new InputStreamReader(fis, ENCODING);
             br = new BufferedReader(isr);
 
-            while ((line = br.readLine()) != null)
+            while ((line = br.readLine()) != null && !line.startsWith(Constants.EOF))
                parseLine(line);
             Subset.finish(this);
             validate();
@@ -331,7 +331,7 @@ public class Table extends ArrayList<String>
 
    public DefaultTableModel getModel()
    {
-      DefaultTableModel model = new MyTableModel();
+      DefaultTableModel model = new DefaultTableModel();
       SortedSet<Column> sorted = new TreeSet<Column>(); // by order in file
 
       model.addColumn("#");
@@ -355,6 +355,9 @@ public class Table extends ArrayList<String>
       return model;
    }
 
+   private static final Pattern INTEGER = Pattern.compile("-?[0-9]+");
+   private static final Pattern FLOAT = Pattern.compile("-?[0-9]+[.][0-9]+");
+
    private void addRow(final DefaultTableModel model, final SortedSet<Column> sorted, final int i, final String entry)
    {
       Vector<Object> row = new Vector<Object>();
@@ -376,8 +379,18 @@ public class Table extends ArrayList<String>
       if (sorted.isEmpty())
          row.add(resolve(entry.trim(), null));
       else
+      {
          for (Column column : sorted)
-            row.add(resolve(column.getValue(entry), null));
+         {
+            String value = resolve(column.getValue(entry), null);
+            if (value != null && INTEGER.matcher(value.toString()).matches())
+               row.add(Integer.parseInt(value)); // so numeric values are right-aligned
+            else if (value != null && FLOAT.matcher(value.toString()).matches())
+               row.add(Double.parseDouble(value)); // so numeric values are right-aligned
+            else
+               row.add(value);
+         }
+      }
 
       model.addRow(row);
    }
@@ -404,7 +417,7 @@ public class Table extends ArrayList<String>
 
       int i = 1;
       for (String entry : this)
-         System.out.println("  " + LINE_NUM.format(i++) + ") " + entry);
+         System.out.println("  " + LINE_NUM.format(i++) + ") " + entry); // TODO: sprintf?
    }
 
    @Override
@@ -418,17 +431,6 @@ public class Table extends ArrayList<String>
       if (!subsets.isEmpty())
          sb.append("\n  Subsets: " + subsets);
       return sb.toString();
-   }
-
-   private static class MyTableModel extends DefaultTableModel
-   {
-      private static final long serialVersionUID = 1L;
-
-      @Override
-      public Class<?> getColumnClass(final int c)
-      {
-         return getValueAt(0, c).getClass();
-      }
    }
 
    @Override
@@ -451,6 +453,7 @@ public class Table extends ArrayList<String>
    {
       CORPSE.init(true);
 
+      /*
       for (String name : new ArrayList<String>(Table.TABLES.keySet()))
       {
          Table table = Table.getTable(name);
@@ -463,6 +466,7 @@ public class Table extends ArrayList<String>
 
       new Table("COLOR", "C.+"); // TODO: there must be a better way to pre-load the filtered table
       test("COLOR#C.+", "filter");
+      */
       
       test("Flora", "including a table with a default subset");
    }

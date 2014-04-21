@@ -89,7 +89,7 @@ public final class Script
          Matcher m;
 
          String line = null;
-         while ((line = br.readLine()) != null)
+         while ((line = br.readLine()) != null && !line.startsWith(Constants.EOF))
          {
             if (line.equals("")) // ignore blank lines
                continue;

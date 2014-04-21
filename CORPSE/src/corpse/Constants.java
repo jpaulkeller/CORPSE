@@ -21,13 +21,14 @@ public final class Constants
    static final String ONE_OF_CHAR_1 = "|";
    static final String ONE_OF_CHAR_2 = "/";
    static final String SUBSET_CHAR   = ":";
+   static final String EOF           = "===";
 
    static final Pattern COMMENT_LINE = Pattern.compile("^[" + Pattern.quote(COMMENT_CHAR) + "]", Pattern.MULTILINE);
 
    static final String COMMENT = "(?:\\s*/.*$)?";
 
    static final String NAME = "([A-Z](?: ?[-_A-Z0-9]+){0,10})"; // use {0,10} to avoid infinite loop
-   static final String COLUMN_NAME = "([A-Z0-9](?: ?[-_A-Z0-9/()]+){0,10})";
+   static final String COLUMN_NAME = "([-_A-Z0-9](?: ?[-_A-Z0-9/()]+){0,10})";
    private static final String TABLE_NAME = NAME;
 
    static final Pattern NAME_PATTERN = Pattern.compile(NAME, Pattern.CASE_INSENSITIVE);

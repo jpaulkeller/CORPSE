@@ -164,11 +164,15 @@ public final class Quantity
       }
    }
 
+   private static final String OPERATOR = "([-+*/^])";
+   private static final String FLOAT = "(\\d+(?:[.]\\d+)?)";
+   
    static class Formula extends NumericAdapter // {=#+#}
    {
+      
       public Formula()
       {
-         super("\\{= *(\\d+) *([-+*/^]) *(\\d+(?:[.]\\d+)?)\\}");
+         super("\\{=\\s*" + FLOAT + "\\s*" + OPERATOR + "\\s*" + FLOAT + "\\s*\\}");
       }
 
       @Override
@@ -186,19 +190,20 @@ public final class Quantity
       @Override
       public int getMax()
       {
-         int i = Integer.parseInt(getMatcher().group(1));
+         float i = Float.parseFloat(getMatcher().group(1));
          float j = Float.parseFloat(getMatcher().group(3));
-         String operator = getMatcher().group(2); 
+         String operator = getMatcher().group(2);
+         
          if (operator.equals("+"))
-            return i + (int) j;
+            return Math.round(i + j);
          else if (operator.equals("-"))
-            return i - (int) j;
+            return Math.round(i - j);
          else if (operator.equals("*"))
-            return i * (int) j;
+            return Math.round(i * j);
          else if (operator.equals("/"))
             return Math.round(i / j);
          else if (operator.equals("^"))
-            return (int) Math.round(Math.pow(i, j));
+            return Math.round((float) Math.pow(i, j));
          return 1;
       }
    }
