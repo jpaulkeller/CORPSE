@@ -34,15 +34,11 @@ public class TabPane extends JTabbedPane
       JPanel header = new JPanel(new BorderLayout());
       header.setOpaque(false);
 
-      JLabel label = new JLabel(title);
-      label.setBorder(BorderFactory.createEmptyBorder(0, 5, 0, 5));
-      label.setToolTipText(tip);
-
       JButton closeBtn = new JButton(CLOSE_ICON);
       closeBtn.setMargin(new Insets(0, 0, 0, 0));
       closeBtn.addActionListener(new CloseActionHandler(title));
 
-      header.add(new JLabel(icon), BorderLayout.WEST);
+      JLabel label = new JLabel(title, icon, JLabel.LEFT);
       header.add(label, BorderLayout.CENTER);
       header.add(closeBtn, BorderLayout.EAST);
 

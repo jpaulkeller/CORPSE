@@ -32,27 +32,22 @@ import corpse.ui.TreePanel;
 
 /** CORPSE - Computer-Oriented Role-Playing System & Environment */
 
-// TODO bugs
-// why doesn't TSR Giant range prefix work? (in resolved view, and as a random text)
-
 // TODO data changes
 
 // TODO minor enhancements
 // change CMD suffix?
-// SoundX filter?
+// SoundX filter? or for Searches?
 // show footnotes in resolved view? (Reagent.tbl)
 // how to resolve male/female titles (Title Feudal) Maybe column like Title/Female with values like Prince/Princess
-// figure out a way to cap-init a sentence w/o cap-initing each word
+// figure out a way to cap-init a sentence w/o cap-initing each word?
 // improve case-matching to deal with 's, words like "and/of/etc", proper nouns
 // deal with null return from prompt better
-// consider allowing ":" as field separator
+// consider allowing ":" as field separator (specified in Column declaration?), or CSV format (val, "a, b", val3)
 
 // TODO moderate enhancements
-// fix {+Table} included tables to apply default column/subset
 // export text
-// // support .html files (table, definition)
+// support .html files (table, definition)
 // support .wiki files
-// named filters? see Professions.tbl
 // splash
 // consider allowing unique (or local) column names to work as shortcuts (e.g. .Cost)
 // consider extending ArrayList to support WeightedList (store weight; don't duplicate element)
@@ -63,7 +58,6 @@ import corpse.ui.TreePanel;
 // TODO major enhancements
 // matrix (e.g. name generators in KoDT #200)
 // columns that affect other columns (e.g. Cost modified by Quality)?
-// generate HTML from scripts (Tavern.cmd)
 // a FIRST-like annotated-HTML GUI. Click on the random entries to re-roll or select a new value (for scripts). Interactive color-coded display (click to re-generate, or manually override, etc)
 // prompt should have re-roll button
 // "snowflake" charts (for emotion, weather, etc)
@@ -72,16 +66,19 @@ import corpse.ui.TreePanel;
 // UI - Add option on top with pull-downs to: Resolve [#] [Table]:[Subset].[Column]#[Filter]
 
 // TODO misc
-// support looping in scripts (Kingdom.cmd)
 // include/weight/etc for scripts? eg. Custom.cmd
-// support include lines with prefixes like ">> {{4d2-3} reagent}" in potion.cmd 
 // test embedded subsets in weighted lines TSR SCROLL
-// determine numeric fields in resolved view renderer
 // consider: if there is a default subset, don't show other subsets in the resolved tabular view (e.g. Book)
 // consider: support hidden columns
 // ignore composite columns with 1 simple field (for the resolved view)
 // why aren't composite columns (e.g Profession.Job) case-matched?
-// variable to not match the previous roll (Menu.tbl, {berry}{25%? and {berry}} pie)
+// support filtering of local xrefs (see Menu.tbl)
+// a vs an, like plurals
+// remember which tables/scrips were open, and maybe the selected one, search text, etc
+// while-loop for Kingdom.cmd
+
+// TODO data
+// convert scripts to HTML (Tavern.cmd)
 
 public final class CORPSE
 {
@@ -117,7 +114,7 @@ public final class CORPSE
       Menus menus = new Menus(this);
 
       tables = new TreePanel(this, Constants.DATA_PATH, "tbl");
-      scripts = new ScriptPanel(this, Constants.DATA_PATH, "cmd");
+      scripts = new ScriptPanel(this, Constants.DATA_PATH, Constants.SCRIPT_SUFFIX);
 
       tabs = new TabPane();
       tabs.addTab("Tables", ImageTools.getIcon("icons/20/gui/Table.gif"), tables);

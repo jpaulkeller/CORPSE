@@ -13,6 +13,7 @@ import file.FileUtils;
 public final class Constants
 {
    static final String DATA_PATH = "data/Tables";
+   static final String SCRIPT_SUFFIX = "cmd";
    
    static final String COLUMN_CHAR   = ".";
    static final String COMMENT_CHAR  = "/";
@@ -32,7 +33,7 @@ public final class Constants
    private static final String TABLE_NAME = NAME;
 
    static final Pattern NAME_PATTERN = Pattern.compile(NAME, Pattern.CASE_INSENSITIVE);
-   static final Pattern SIMPLE_TABLE = Pattern.compile(TABLE_NAME + "[+]", Pattern.CASE_INSENSITIVE);
+   static final Pattern SIMPLE_TABLE = Pattern.compile(TABLE_NAME, Pattern.CASE_INSENSITIVE);
    static final Pattern TOKEN = Pattern.compile("\\{([^{}]+)\\}");
 
    // [10/90] CONDITION (using % operator) : {10%?Rare:Common}
@@ -57,22 +58,22 @@ public final class Constants
    // start with a non-numeric (to avoid confusion with the CONDITIONAL token).
    static final Pattern QUERY = Pattern.compile("\\{([^{}?0-9][^{}?]+?)[?]([^{}]+)?\\}");
 
-   // {1 Table:Subset.Column#Filter} 
-   // {1 Table+#Filter} means don't use the default subset or column; return the entire line 
-   private static final String QTY = "(?:(\\d+)\\s+)?";
+   // {Table:Subset.Column#Filter} 
+   // {Table+#Filter} means don't use the default subset or column; return the entire line 
    private static final String SUBSET = "(?:\\" + SUBSET_CHAR + "\\s*" + NAME + "?)?";
    private static final String COLUMN = "(?:\\" + COLUMN_CHAR + COLUMN_NAME + "?)?";
    private static final String FILTER = "(?:\\" + FILTER_CHAR + "([^}]+)?)?";
    private static final String PARTIAL = SUBSET + COLUMN + FILTER;
    private static final String FULL = "([+])" + FILTER;
-   private static final String XREF_REGEX = QTY + TABLE_NAME + "(?:(?:" + PARTIAL + ")|(?:" + FULL + "))?";
+   private static final String XREF_REGEX = TABLE_NAME + "(?:(?:" + PARTIAL + ")|(?:" + FULL + "))?";
    static final Pattern TABLE_XREF = Pattern.compile("\\{" + XREF_REGEX + "\\s*\\}", Pattern.CASE_INSENSITIVE);
    
    // {:Subset.Column#Filter} -- short-cut for a subset reference (Within the table)
    static final Pattern SUBSET_REF = Pattern.compile("\\{" + SUBSET + COLUMN + FILTER + "\\}", Pattern.CASE_INSENSITIVE);
 
+   private static final String QTY = "(?:(\\d+)\\s+)?";
    static final Pattern SCRIPT_XREF = // {1 Script.cmd}
-   Pattern.compile("\\{" + QTY + NAME + "[.]cmd\\}", Pattern.CASE_INSENSITIVE);
+      Pattern.compile("\\{" + QTY + NAME + "[.]" + SCRIPT_SUFFIX + "\\}", Pattern.CASE_INSENSITIVE);
 
    // {#text:regex} (e.g. {#text:.} would resolve to the first letter of the text)
    static final Pattern FILTER_TOKEN = Pattern.compile("\\{" + FILTER_CHAR + "(.+):([^}]+)\\}");

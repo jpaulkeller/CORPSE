@@ -5,6 +5,8 @@ import java.io.File;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.JTextPane;
+import javax.swing.text.html.HTMLEditorKit;
 
 import corpse.CORPSE;
 import corpse.Script;
@@ -42,10 +44,24 @@ public class ScriptPanel extends TreePanel
          else
             resolved = makeResolved(name);
 
-         JTextArea textArea = new JTextArea();
-         textArea.setText(script.resolve());
-
-         resolved.add(new JScrollPane(textArea));
+         String text = script.resolve();
+         if (text.contains("<html>"))
+         {
+            JTextPane htmlPane = new JTextPane();
+            htmlPane.setBackground(null);
+            htmlPane.setEditable(false);
+            htmlPane.setEditorKit(new HTMLEditorKit());
+            htmlPane.setText(text);
+            htmlPane.setCaretPosition(0);
+            resolved.add(new JScrollPane(htmlPane));
+         }
+         else
+         {
+            JTextArea textArea = new JTextArea();
+            textArea.setText(text);
+            resolved.add(new JScrollPane(textArea));
+         }
+         
          resolved.validate();
 
          tabs.setSelectedIndex(tabs.indexOfTab(name));

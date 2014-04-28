@@ -39,6 +39,7 @@ public class Table extends ArrayList<String>
 
    private SortedMap<String, Column> columns = new TreeMap<String, Column>();
    private SortedMap<String, Subset> subsets = new TreeMap<String, Subset>();
+   private List<String> imported = new ArrayList<String>();
 
    // For examples of subset usage, see the MADE OF.TBL and COLOR.TBL.
 
@@ -270,9 +271,8 @@ public class Table extends ArrayList<String>
             includeTable(line);
          else if ((numeric = Quantity.startsWith(line)) != null)
             includeWeighted(numeric, line);
-
          else
-            add(line);
+            add(line); // add a normal table entry
       }
    }
 
@@ -290,8 +290,11 @@ public class Table extends ArrayList<String>
          String tableRef = m.group(2);
          String suffix = m.group(m.groupCount());
 
-         // if (Macros.DEBUG) System.out.println("INCLUDED: " + tableRef + " into " + tableName);
+         // if (Macros.DEBUG) 
+         System.out.println("INCLUDED: " + tableRef + " into " + tableName);
 
+         addSubset(Subset.parseIncludedTableAsSubset(this, tableRef));
+         
          String token = "{" + tableRef + "}";
          Table table = TABLES.get(token);
          if (table == null)
@@ -303,6 +306,8 @@ public class Table extends ArrayList<String>
          }
          for (String entry : table)
             add(prefix + entry + suffix);
+         
+         imported.add(tableRef);
       }
    }
 
@@ -314,7 +319,7 @@ public class Table extends ArrayList<String>
       int to = num.getMax();
       int brk = line.indexOf(' ');
       String text = line.substring(brk + 1);
-      // if (Macros.DEBUG) System.out.println("RANGE: " + text + " into " + tableName);
+      // if (Macros.DEBUG) System.out.println("Include Weighted: " + text + " into " + tableName);
       for (int i = from; i <= to; i++)
          add(text);
    }
@@ -430,6 +435,15 @@ public class Table extends ArrayList<String>
          sb.append("\n  Columns: " + columns);
       if (!subsets.isEmpty())
          sb.append("\n  Subsets: " + subsets);
+      
+      if (!imported.isEmpty())
+      {
+         sb.append("\n  Imported: " + imported);
+         for (String importedTable : imported)
+            if (!subsets.containsKey(importedTable.toUpperCase()))
+               System.err.println("Warning: possible subset/import conflict in " + getName() + ": " + importedTable);
+      }
+         
       return sb.toString();
    }
 
@@ -462,12 +476,11 @@ public class Table extends ArrayList<String>
       System.out.println();
 
       test("METALLIC", "including a subset");
-      test("Mine", "weighted lines");
-
       new Table("COLOR", "C.+"); // TODO: there must be a better way to pre-load the filtered table
       test("COLOR#C.+", "filter");
-      */
-      
       test("Flora", "including a table with a default subset");
+      test("Spell", "including a subset");
+      */
+      test("Mine", "weighted lines");
    }
 }
