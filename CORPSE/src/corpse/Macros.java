@@ -342,7 +342,6 @@ public final class Macros
    {
       String resolved = entry;
 
-      int count = 0;
       String token = null;
       String xrefTbl = null;
       String xrefSub = null;
@@ -352,7 +351,6 @@ public final class Macros
       Matcher m = Constants.SUBSET_REF.matcher(resolved);
       if (m.matches() && tableOrScriptName != null)
       {
-         count = 1;
          token = m.group(0);
          xrefSub = m.group(1);
          xrefCol = m.group(2);
@@ -363,19 +361,15 @@ public final class Macros
       {
          token = m.group(0);
          
-         count = 1;
-         if (m.group(1) != null)
-            count = Integer.parseInt(m.group(1));
-
-         xrefTbl = m.group(2);
+         xrefTbl = m.group(1);
          
-         if (Constants.INCLUDE_CHAR.equals(m.group(6))) // {Table+}
-            xrefFil = m.group(7);
+         if (Constants.INCLUDE_CHAR.equals(m.group(5))) // {Table+}
+            xrefFil = m.group(6);
          else // {Table:Subset.Column#Filter}
          {
-            xrefSub = m.group(3);
-            xrefCol = m.group(4);
-            xrefFil = m.group(5);
+            xrefSub = m.group(2);
+            xrefCol = m.group(3);
+            xrefFil = m.group(4);
             
             // support default subsets and columns
             if (xrefCol == null)
@@ -385,7 +379,7 @@ public final class Macros
          }
       }
 
-      if (count > 0)
+      if (xrefTbl != null)
       {
          // TODO: must handle Table:.# (see also SubTable.java)
          if (xrefFil == null && filter != null)
@@ -412,21 +406,14 @@ public final class Macros
          {
             TOKEN_STACK.push(token);
 
-            StringBuilder buf = new StringBuilder();
-            for (int i = 0; i < count; i++)
+            String xref = RandomEntry.get(xrefTbl, xrefSub, xrefCol, xrefFil);
+            if (xref == null)
             {
-               String xref = RandomEntry.get(xrefTbl, xrefSub, xrefCol, xrefFil);
-               if (xref == null)
-               {
-                  System.err.println("Invalid reference: " + entry);
-                  xref = getInvalidTableToken(xrefTbl, xrefSub, xrefCol, xrefFil);
-               }
-               buf.append(xref);
-               if (count > 1)
-                  buf.append("\n");
+               System.err.println("Invalid reference: " + entry);
+               xref = getInvalidTableToken(xrefTbl, xrefSub, xrefCol, xrefFil);
             }
 
-            resolved = m.replaceFirst(Matcher.quoteReplacement(buf.toString()));
+            resolved = m.replaceFirst(Matcher.quoteReplacement(xref));
 
             TOKEN_STACK.pop();
          }

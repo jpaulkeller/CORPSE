@@ -25,6 +25,12 @@ public final class Script
    // the master list of scripts (names must be unique)
    public static final SortedMap<String, Script> SCRIPTS = new TreeMap<String, Script>();
 
+   private static final String SCRIPT_COMMAND = "!";
+   private static final Pattern LOOP_BEGIN =
+      Pattern.compile("^" + SCRIPT_COMMAND + "\\s*loop\\s*(.+)", Pattern.CASE_INSENSITIVE);
+   private static final Pattern LOOP_END = 
+      Pattern.compile("^" + SCRIPT_COMMAND + "\\s*end", Pattern.CASE_INSENSITIVE);
+         
    private static boolean promptsEnabled = true; // must match Menus value
 
    private String name;
@@ -37,7 +43,7 @@ public final class Script
       {
          if (f.isDirectory() && !f.getName().startsWith("."))
             populate(f);
-         else if (f.isFile() && f.getName().toLowerCase().endsWith(".cmd"))
+         else if (f.isFile() && f.getName().toLowerCase().endsWith("." + Constants.SCRIPT_SUFFIX))
             new Script(f.getPath());
       }
    }
@@ -75,7 +81,7 @@ public final class Script
    {
       promptsEnabled = !promptsEnabled;
    }
-
+   
    public String resolve() // TODO: thread
    {
       StringBuilder buf = new StringBuilder();
@@ -95,6 +101,11 @@ public final class Script
                continue;
             if (Constants.COMMENT_LINE.matcher(line).find())
                continue;
+            if (line.startsWith(SCRIPT_COMMAND))
+            {
+               parseScriptCommand(br, line, buf);
+               continue;
+            }
 
             line = resolve(line);
             if (line == null) // user cancelled
@@ -121,6 +132,26 @@ public final class Script
       return buf.toString();
    }
 
+   private void parseScriptCommand(final BufferedReader br, final String command, final StringBuilder buf)
+      throws IOException
+   {
+      Matcher m = LOOP_BEGIN.matcher(command);
+      if (m.matches())
+      {
+         int count = Macros.resolveNumber(m.group(1));
+         if (count > 0)
+         {
+            List<String> lines = new ArrayList<String>();
+            String line;
+            while ((line = br.readLine()) != null && !LOOP_END.matcher(line).find())
+               lines.add(line);
+            for (int i = 0; i < count; i++)
+               for (String loopLine : lines)
+                  buf.append(resolve(loopLine));
+         }
+      }
+   }
+   
    public String resolve(final String entry)
    {
       String line = entry;

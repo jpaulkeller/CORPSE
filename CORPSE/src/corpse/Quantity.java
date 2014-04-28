@@ -83,6 +83,34 @@ public final class Quantity
       }
    }
 
+   static class ConstantRange extends NumericAdapter // #-#
+   {
+      public ConstantRange()
+      {
+         super("(\\d+)[-](\\d+)");
+      }
+
+      @Override
+      public int get()
+      {
+         int from = getMin();
+         int to = getMax();
+         return to - from + 1;
+      }
+
+      @Override
+      public int getMin()
+      {
+         return Integer.parseInt(getMatcher().group(1));
+      }
+
+      @Override
+      public int getMax()
+      {
+         return Integer.parseInt(getMatcher().group(2));
+      }
+   }
+
    static class Roll extends NumericAdapter // {#} same as d# or 1d#
    {
       public Roll()
@@ -145,8 +173,8 @@ public final class Quantity
       @Override
       public int get()
       {
-         int from = Integer.parseInt(getMatcher().group(1));
-         int to = Integer.parseInt(getMatcher().group(2));
+         int from = getMin();
+         int to = getMax();
          int range = to - from + 1;
          return RandomEntry.get(range) + from;
       }
@@ -439,6 +467,7 @@ public final class Quantity
    }
 
    private static final Numeric CONSTANT = new Constant();
+   private static final Numeric CONSTANT_RANGE = new ConstantRange();
    private static final Numeric ROLL = new Roll();
    private static final Numeric PERCENT = new Percent();
    private static final Numeric RANGE = new Range();
@@ -453,6 +482,7 @@ public final class Quantity
    static
    {
       numerics.add(CONSTANT);
+      numerics.add(CONSTANT_RANGE);
       numerics.add(ROLL);
       numerics.add(PERCENT);
       numerics.add(RANGE);
@@ -549,6 +579,7 @@ public final class Quantity
       List<String> tokens = new ArrayList<String>();
       tokens.add("invalid");
       tokens.add("5"); // CONSTANT (not a token)
+      tokens.add("6-10"); // CONSTANT range (not a token)
       
       tokens.add("{5}"); // ROLL
       tokens.add("{%}"); // PERCENT

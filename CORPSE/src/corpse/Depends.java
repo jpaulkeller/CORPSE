@@ -11,11 +11,15 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeMap;
 import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import file.FileUtils;
 
 public final class Depends
 {
+   private static final Pattern COLLISION = // multiple references to the same table 
+      Pattern.compile("(" + Constants.TABLE_XREF + ").*\\1", Pattern.CASE_INSENSITIVE);
+         
    private static final Map<String, String> TOKENS = new TreeMap<String, String>(); // token to file
    
    private static File dependsOut;
@@ -66,9 +70,11 @@ public final class Depends
          FileInputStream fis = new FileInputStream(file);
          InputStreamReader isr = new InputStreamReader(fis);
          BufferedReader br = new BufferedReader(isr);
+         int lineNum = 0; 
 
          while ((line = br.readLine()) != null && !line.startsWith(Constants.EOF))
          {
+            lineNum++;
             if (!line.startsWith(Constants.SUBSET_CHAR) && line.contains("{"))
             {
                // String stripped = line.replace('{', '[').replace('}', ']');
@@ -83,6 +89,11 @@ public final class Depends
                   TOKENS.put(token, file.toString());
                }
             }
+            
+            // check for possible collision
+            Matcher m = COLLISION.matcher(line);
+            if (m.find())
+               System.out.println("Warning (possible collision) on " + lineNum + ": " + line);
          }
          
          fis.close();

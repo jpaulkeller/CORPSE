@@ -83,7 +83,7 @@ public final class Search
    {
       for (Table table : Table.getTables())
       {
-         if ("DEPENDS/ERRORS/SAMPLES".contains(table.getName().toUpperCase()))
+         if (table.getFile().getPath().toUpperCase().contains("SAMPLES"))
             continue;
 
          if (table.getName().toUpperCase().contains(upper))

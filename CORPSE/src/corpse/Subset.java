@@ -53,47 +53,64 @@ public final class Subset
 
    public static void parse(final Table table, final String entry)
    {
-      Subset subset = null;
-
       Matcher m;
       if ((m = COMPOSITE_SUBSET.matcher(entry)).find())
-      {
-         subset = new Subset();
-         subset.name = m.group(1);
-         subset.min = Integer.MAX_VALUE; // set in finish()
-         subset.max = Integer.MIN_VALUE; // set in finish()
-
-         Matcher nameMatcher = Constants.NAME_PATTERN.matcher(m.group(2));
-         while (nameMatcher.find())
-            subset.composites.add(nameMatcher.group(1));
-         table.addSubset(subset);
-      }
+         table.addSubset(parseCompositeSubset(m));
       else if ((m = FILTER_SUBSET.matcher(entry)).find())
-      {
-         subset = new Subset();
-         subset.name = m.group(1);
-         String regex = m.group(2).trim();
-         subset.pattern = CORPSE.safeCompile("Invalid subset filter", regex);
-         table.addSubset(subset);
-      }
+         table.addSubset(parseFilterSubset(m));
       else if ((m = SUBSET.matcher(entry)).find())
-      {
-         subset = new Subset();
-         subset.name = m.group(1);
-         if (m.group(2) != null)
-            subset.setRoll(m.group(2));
-         else // support embedded subsets
-         {
-            Subset.closeSubset(table);
-            subset.min = table.size() + 1;
-            // max will be set when the next subset is read (or EOF)
-         }
-         table.addSubset(subset);
-      }
+         table.addSubset(parseSubset(table, m));
       else
          System.err.println("Invalid subset in " + table.getFile() + ": " + entry);
    }
 
+   private static Subset parseCompositeSubset(Matcher m)
+   {
+      Subset subset = new Subset();
+      subset.name = m.group(1);
+      subset.min = Integer.MAX_VALUE; // set in finish()
+      subset.max = Integer.MIN_VALUE; // set in finish()
+
+      Matcher nameMatcher = Constants.NAME_PATTERN.matcher(m.group(2));
+      while (nameMatcher.find())
+         subset.composites.add(nameMatcher.group(1));
+      return subset;
+   }
+
+   private static Subset parseFilterSubset(Matcher m)
+   {
+      Subset subset = new Subset();
+      subset.name = m.group(1);
+      String regex = m.group(2).trim();
+      subset.pattern = CORPSE.safeCompile("Invalid subset filter", regex);
+      return subset;
+   }
+
+   private static Subset parseSubset(final Table table, Matcher m)
+   {
+      Subset subset = new Subset();
+      subset.name = m.group(1);
+      if (m.group(2) != null)
+         subset.setRoll(m.group(2));
+      else // support embedded subsets
+      {
+         Subset.closeSubset(table);
+         subset.min = table.size() + 1;
+         // max will be set when the next subset is read (or EOF)
+      }
+      return subset;
+   }
+
+   static Subset parseIncludedTableAsSubset(final Table table, final String token)
+   {
+      Subset subset = new Subset();
+      subset.name = token; // TODO
+      Subset.closeSubset(table);
+      subset.min = table.size() + 1;
+      // max will be set when the next subset is read (or EOF)
+      return subset;
+   }
+   
    void setRoll(final String roll)
    {
       this.roll = roll;

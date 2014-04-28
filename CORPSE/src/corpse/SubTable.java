@@ -20,19 +20,18 @@ public final class SubTable extends Table
       Matcher m = Constants.TABLE_XREF.matcher(token);
       if (m.matches())
       {
-         // String qty = m.group (1);
-         String xrefTbl = m.group(2);
+         String xrefTbl = m.group(1);
          String xrefSub = null;
          String xrefCol = null;
          String xrefFil = null;
          
-         if (Constants.INCLUDE_CHAR.equals(m.group(6))) // {Table+}
-            xrefFil = m.group(7);
+         if (Constants.INCLUDE_CHAR.equals(m.group(5))) // {Table+}
+            xrefFil = m.group(6);
          else // {Table:Subset.Column#Filter}
          {
-            xrefSub = m.group(3);
-            xrefCol = m.group(4);
-            xrefFil = m.group(5);
+            xrefSub = m.group(2);
+            xrefCol = m.group(3);
+            xrefFil = m.group(4);
             
             // TODO: must handle Table:.# (see also Macros.java)
             
@@ -105,9 +104,10 @@ public final class SubTable extends Table
       // test("{Color:Basic#C.*}", "subset and filter");
       // test("{Metallic}", "included file");
       // test("{Calendar:Astronomical}", "subset");
-      test("{Gender}", "default column");
-      test("{Gender+}", "full line (don't use default column)");
-      test("{Quality}", "default subset");
-      test("{Quality+}", "full line (don't use default subset)");
+      // test("{Gender}", "default column");
+      // test("{Gender+}", "full line (don't use default column)");
+      // test("{Quality}", "default subset");
+      // test("{Quality+}", "full line (don't use default subset)");
+      test("{DiffTest#.+(?<!Common)}", "negative look-ahead regex to prevent collision");
    }
 }
