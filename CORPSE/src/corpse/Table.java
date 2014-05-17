@@ -41,8 +41,6 @@ public class Table extends ArrayList<String>
    private SortedMap<String, Subset> subsets = new TreeMap<String, Subset>();
    private List<String> imported = new ArrayList<String>();
 
-   // For examples of subset usage, see the MADE OF.TBL and COLOR.TBL.
-
    public static void populate(final File dir)
    {
       for (File f : dir.listFiles())
@@ -60,7 +58,10 @@ public class Table extends ArrayList<String>
       if (table != null)
          table.importTable();
       else
+      {
          System.err.println("Table not yet loaded: " + name);
+         System.err.println(Utils.getStack(null));
+      }
       return table;
    }
 
@@ -89,7 +90,7 @@ public class Table extends ArrayList<String>
    {
       Table unfiltered = Table.getTable(name);
       file = new File(unfiltered.file.getAbsolutePath());
-      tableName = name + "#" + filterRegex;
+      tableName = name + Constants.FILTER_CHAR + filterRegex + Constants.FILTER_CHAR;
       filter = CORPSE.safeCompile("Invalid subset filter", filterRegex);
       importTable();
       TABLES.put(tableName, this);
@@ -112,11 +113,7 @@ public class Table extends ArrayList<String>
       Matcher m = Constants.TOKEN.matcher(resolved);
       if (m.find())
       {
-         if (filter == null)
-            resolved = Macros.resolve(getName(), entry); // recurse to support embedded tokens
-         else
-            resolved = Macros.resolve(getName(), entry, filter); // recurse to support embedded tokens
-
+         resolved = Macros.resolve(getName(), entry, filter); // recurse to support embedded tokens
          while ((m = Constants.TOKEN.matcher(resolved)).find())
          {
             System.err.println(file + " unsupported token: " + m.group(0));
@@ -168,7 +165,8 @@ public class Table extends ArrayList<String>
       {
          String key = columnName.toUpperCase();
          column = columns.get(key);
-         if (column == null && !columnName.equalsIgnoreCase(tableName) && !Column.isComposite(this, columnName))
+         if (column == null && !columnName.equalsIgnoreCase("ALL") && 
+             !columnName.equalsIgnoreCase(tableName) && !Column.isComposite(this, columnName))
             System.err.println("Missing " + file + " column: [" + key + "]\n" + Utils.getStack("^corpse[.].*"));
       }
       return column;
@@ -179,9 +177,12 @@ public class Table extends ArrayList<String>
       String unresolved = unresolvedEntry;
       try
       {
-         Column column = getColumn(columnName);
-         if (column != null)
-            unresolved = column.getValue(unresolvedEntry);
+         if (columnName != null && !columnName.equalsIgnoreCase("all"))
+         {
+            Column column = getColumn(columnName);
+            if (column != null)
+               unresolved = column.getValue(unresolvedEntry);
+         }
       }
       catch (Exception x)
       {
@@ -290,8 +291,8 @@ public class Table extends ArrayList<String>
          String tableRef = m.group(2);
          String suffix = m.group(m.groupCount());
 
-         // if (Macros.DEBUG) 
-         System.out.println("INCLUDED: " + tableRef + " into " + tableName);
+         if (Macros.DEBUG) 
+            System.out.println("INCLUDED: " + tableRef + " into " + tableName);
 
          addSubset(Subset.parseIncludedTableAsSubset(this, tableRef));
          
@@ -476,11 +477,19 @@ public class Table extends ArrayList<String>
       System.out.println();
 
       test("METALLIC", "including a subset");
-      new Table("COLOR", "C.+"); // TODO: there must be a better way to pre-load the filtered table
-      test("COLOR#C.+", "filter");
       test("Flora", "including a table with a default subset");
       test("Spell", "including a subset");
-      */
       test("Mine", "weighted lines");
+      
+      // TODO: there must be a better way to pre-load the filtered table
+      new Table("COLOR", "C.+");
+      test("COLOR#C.+#", "filter");
+      new Table("COLOR", ".*(EE|RO).*");
+      test("COLOR#.*(EE|RO).*#", "filter with alteration");
+      new Table("SPELL", ".*(WALK|FALL).*");
+      test("SPELL#.*(WALK|FALL).*#", "filter with alteration");
+      */
+      
+      test("Profession#.*craftsman.*#", "filter subsets");
    }
 }

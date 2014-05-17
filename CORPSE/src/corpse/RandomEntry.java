@@ -69,8 +69,10 @@ public final class RandomEntry
          {
             index = -1; // subset is no longer valid since we're going to filter the data
 
-            // Token format: {# Table:Subset.Column#Filter}
+            // Token format: {# Table:Subset.Column#Filter#}
             String token = "{" + tableName;
+            if (subName == null && colName == null)
+               token += Constants.INCLUDE_CHAR;
             if (subName != null)
                token += Constants.SUBSET_CHAR + subName;
             if (colName != null)
@@ -78,7 +80,7 @@ public final class RandomEntry
                token += Constants.COLUMN_CHAR + colName;
                colName = null; // don't want to apply it twice
             }
-            token += Constants.FILTER_CHAR + filter + "}";
+            token += Constants.FILTER_CHAR + filter + Constants.FILTER_CHAR + "}";
 
             Table filteredTable = Table.TABLES.get(token);
             if (filteredTable == null)
@@ -118,7 +120,7 @@ public final class RandomEntry
          {
             entry = table.resolve(entry, filter);
             // trim leading, trailing, and redundant embedded spaces
-            entry = entry.trim().replaceAll("  +", " ");
+            entry = entry.trim(); // TODO .replaceAll("  +", " ");
          }
       }
 

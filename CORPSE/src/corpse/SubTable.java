@@ -12,8 +12,7 @@ public final class SubTable extends Table
    private int count;
 
    // Get a populated/resolved table (with subset, column, and filter applied).
-   // Token format: {# Table:Subset.Column#Filter}
-   // Note: The numeric prefix is ignored.
+   // Token format: {Table:Subset.Column#Filter#}
 
    public SubTable(final String token)
    {
@@ -25,9 +24,9 @@ public final class SubTable extends Table
          String xrefCol = null;
          String xrefFil = null;
          
-         if (Constants.INCLUDE_CHAR.equals(m.group(5))) // {Table+}
+         if (Constants.INCLUDE_CHAR.equals(m.group(5))) // {Table+#Filter#} don't default subsets/columns
             xrefFil = m.group(6);
-         else // {Table:Subset.Column#Filter}
+         else // {Table:Subset.Column#Filter#}
          {
             xrefSub = m.group(2);
             xrefCol = m.group(3);
@@ -76,8 +75,12 @@ public final class SubTable extends Table
          String entry = line;
          if (column != null)
             entry = column.getValue(line);
-         if (filter == null || filter.matcher(entry).matches())
+         if (filter == null)
             return super.add(entry);
+         
+         Matcher m = filter.matcher(entry); 
+         if (m.matches())
+            return m.groupCount() > 0 ? super.add(m.group(1)) : super.add(entry);
       }
       return false;
    }
@@ -100,14 +103,17 @@ public final class SubTable extends Table
    {
       CORPSE.init(true);
 
-      // test("{Profession.#G.*}", "column and filter");
-      // test("{Color:Basic#C.*}", "subset and filter");
+      // test("{Profession.#G.*#}", "column and filter");
+      // test("{Color:Basic#C.*#}", "subset and filter");
       // test("{Metallic}", "included file");
       // test("{Calendar:Astronomical}", "subset");
       // test("{Gender}", "default column");
       // test("{Gender+}", "full line (don't use default column)");
       // test("{Quality}", "default subset");
       // test("{Quality+}", "full line (don't use default subset)");
-      test("{DiffTest#.+(?<!Common)}", "negative look-ahead regex to prevent collision");
+      // test("{DiffTest#.+(?<!Common)#}", "negative look-ahead regex to prevent collision");
+      // test("{Color#.*(ee|ro).*#}", "filter with alteration");
+      // test("{Profession+#.*craftsman.*#}", "filter subsets");
+      test("{Profession:Criminal}", "subset filter");
    }
 }

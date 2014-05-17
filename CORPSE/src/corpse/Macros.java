@@ -10,6 +10,8 @@ import corpse.ui.TokenRenderer;
 
 public final class Macros
 {
+   private static final Pattern VOWEL = Pattern.compile("^[aeiou]", Pattern.CASE_INSENSITIVE);
+   
    public static boolean DEBUG = false;
    private static boolean TEST = false;
 
@@ -19,14 +21,6 @@ public final class Macros
 
    private Macros()
    {
-   }
-
-   public static String resolve(final String tableOrScriptName, final String entry) // for debugging
-   {
-      String resolved = resolve(tableOrScriptName, entry, null);
-      if (DEBUG || TEST)
-         System.out.println(entry + " = [" + resolved + "]");
-      return resolved;
    }
 
    public static String resolve(final String tableOrScriptName, final String entry, final String filter)
@@ -43,8 +37,8 @@ public final class Macros
          resolvedToken = resolveExpressions(resolvedToken);
          resolvedToken = resolveTables(tableOrScriptName, resolvedToken, filter);
          resolvedToken = resolveScripts(resolvedToken);
-         if (resolvedToken.equals(token))
-            resolvedToken = "<" + m.group(1) + ">"; // avoid infinite loop
+         if (resolvedToken.equals(token)) // avoid infinite loop
+            resolvedToken = TokenRenderer.INVALID_OPEN + m.group(1) + TokenRenderer.INVALID_CLOSE;
 
          String caseSample = token;
          if (caseSample.equals(Constants.LAST_RESOLVED_TOKEN) && !lastResolved.isEmpty())
@@ -57,6 +51,15 @@ public final class Macros
          try
          {
             resolvedEntry = m.replaceFirst(Matcher.quoteReplacement(resolvedToken));
+            // fix "a" vs "an"
+            if (VOWEL.matcher(resolvedToken).find()) // starts with a vowel
+            {
+               Pattern article = Pattern.compile("\\b(a) " + resolvedToken, Pattern.CASE_INSENSITIVE);
+               Matcher m2 = article.matcher(resolvedEntry) ;
+               if (m2.find()) // preceded by "a" but should be "an"
+                  resolvedEntry = m2.replaceFirst("$1n " + Matcher.quoteReplacement(resolvedToken));
+            }
+                  
          }
          catch (Exception x)
          {
@@ -66,6 +69,8 @@ public final class Macros
          }
       }
 
+      if (DEBUG || TEST)
+         System.out.println(entry + " = [" + resolvedEntry + "]");
       return resolvedEntry;
    }
 
@@ -143,11 +148,7 @@ public final class Macros
          Matcher filterMatcher = p.matcher(text);
          if (filterMatcher.find())
          {
-            String replacement = "";
-            if (filterMatcher.groupCount() > 0)
-               replacement = filterMatcher.group(1);
-            else
-               replacement = filterMatcher.group();
+            String replacement = filterMatcher.groupCount() > 0 ? filterMatcher.group(1) : filterMatcher.group();
             resolvedToken = m.replaceFirst(replacement);
          }
          else
@@ -203,9 +204,9 @@ public final class Macros
 
          if (replacement != null) // found the appropriate plural form
             resolvedToken = m.replaceFirst(replacement);
-         else if (upper.endsWith("S") || upper.endsWith("X") || upper.endsWith("SH"))
+         else if (upper.endsWith("S") || upper.endsWith("X") || upper.endsWith("SH") || upper.endsWith("CH"))
             resolvedToken = text + "es";
-         else if (upper.endsWith("Y"))
+         else if (upper.endsWith("Y") && !upper.endsWith("EY"))
             resolvedToken = text.substring(0, text.length() - 1) + "ies"; // strip Y, add IES
          else
             resolvedToken = text + "s";
@@ -274,20 +275,35 @@ public final class Macros
       return resolved;
    }
 
+   private static final String F = Constants.FILTER_CHAR; 
+   private static final String NOT_F = "[^" + F + "]+";
+   private static final Pattern FILTER = Pattern.compile("(" + F + NOT_F + ")\\|(" + NOT_F + F + ")");
+   
    private static String resolveOneOfs(final String token)
    {
       String resolved = token;
       Matcher m = Constants.ONE_OF.matcher(resolved);
       if (m.matches())
       {
-         // add a terminator, in case the last token is empty
-         String[] tokens;
-         if (m.group(1).contains(Constants.ONE_OF_CHAR_1))
-            tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_1, Constants.ONE_OF_CHAR_1);
-         else
-            tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_2, Constants.ONE_OF_CHAR_2);
-         int roll = RandomEntry.get(tokens.length);
-         resolved = m.replaceFirst(tokens[roll]);
+         // hack to allow alteration in regex filters ({Color#.*a|e.*#|Color#.*i|o.*#})
+         Matcher fm = FILTER.matcher(resolved);
+         while (fm.find())
+            resolved = fm.replaceAll("$1!!$2"); // replace "|" with "!!" 
+         
+         m = Constants.ONE_OF.matcher(resolved);
+         if (m.matches()) // make sure there's still alteration to split
+         {
+            // add a terminator, in case the last token is empty
+            String[] tokens;
+            if (m.group(1).contains(Constants.ONE_OF_CHAR_1))
+               tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_1, Constants.ONE_OF_CHAR_1);
+            else
+               tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_2, Constants.ONE_OF_CHAR_2);
+            int roll = RandomEntry.get(tokens.length);
+            resolved = m.replaceFirst(tokens[roll]);
+         }
+         
+         resolved = resolved.replace("!!", "|"); // restore any regex filter alteration
          if (DEBUG && !token.equals(resolved))
             System.out.println("  resolveOneOfs: [" + token + "] = [" + resolved + "]");
       }
@@ -348,7 +364,7 @@ public final class Macros
       String xrefCol = null;
       String xrefFil = null;
 
-      Matcher m = Constants.SUBSET_REF.matcher(resolved);
+      Matcher m = Constants.INTERNAL_REF.matcher(resolved);
       if (m.matches() && tableOrScriptName != null)
       {
          token = m.group(0);
@@ -363,9 +379,14 @@ public final class Macros
          
          xrefTbl = m.group(1);
          
-         if (Constants.INCLUDE_CHAR.equals(m.group(5))) // {Table+}
+         if (Constants.INCLUDE_CHAR.equals(m.group(5))) // {Table+#Filter#}
+         {
+            // TODO
+            // xrefTbl += "+"; // we want the entire line for this table
+            // new Table(xrefTbl, xrefFil); // load the full table
             xrefFil = m.group(6);
-         else // {Table:Subset.Column#Filter}
+         }
+         else // {Table:Subset.Column#Filter#}
          {
             xrefSub = m.group(2);
             xrefCol = m.group(3);
@@ -472,24 +493,29 @@ public final class Macros
       RandomEntry.randomize();
 
       /*
-      Macros.resolve(null, "{50%?Yes:No}");
-      Macros.resolve(null, "{Island Event}");
-      Macros.resolve(null, "{Metal" + Constants.SUBSET_CHAR + "}");
-      Macros.resolve(null, "Description: {Color}{20%?, with bits of {Reagent} floating in it}");
-      Macros.resolve(null, "Filter: {Noise#S.+}");
-      Macros.resolve(null, "Filter Variable: {Color:Basic{!OneWord}}");
-      Macros.resolve(null, "Filter: {Color:Basic#S.+}");
-      Macros.resolve(null, "{Color} " + Constants.LAST_RESOLVED_TOKEN);
-      Macros.resolve(null, "{#text:.}"); // filtered token
-      Macros.resolve(null, "{Color} {Fauna#{#{!}:.}.*}"); // back-reference with a filter
-      Macros.resolve(null, "{+thing} {+moss} {+fly} {+mouse} {+fox}"); // test plurals
-      Macros.resolve(null, "{~last, first} / {~chain, gold, fine} / {~boat (large)}"); // formatter
-      Macros.resolve("Barsoom Plot", "{:Villain}"); // subset short-cut
-      Macros.resolve(null, "{equipment+}"); // full line
-      Macros.resolve(null, "{equipment}"); // default column
-      Macros.resolve(null, "Filter: {Name#S.+}");
-      Macros.resolve(null, "2 * 5 = {=2*5}");
+      Macros.resolve(null, "{50%?Yes:No}", null);
+      Macros.resolve(null, "{Island Event}", null);
+      Macros.resolve(null, "{Metal" + Constants.SUBSET_CHAR + "}", null);
+      Macros.resolve(null, "Description: {Color}{20%?, with bits of {Reagent} floating in it}", null);
+      Macros.resolve(null, "Filter: {Noise#S.+#}", null);
+      Macros.resolve(null, "Filter Variable: {Color:Basic{!OneWord}}", null);
+      Macros.resolve(null, "Filter: {Color:Basic#S.+#}", null);
+      Macros.resolve(null, "{Color} " + Constants.LAST_RESOLVED_TOKEN, null);
+      Macros.resolve(null, "{#text:.}", null); // filtered token
+      Macros.resolve(null, "{Color} {Fauna#{#{!}:.}.*#}", null); // back-reference with a filter
+      Macros.resolve(null, "{+thing} {+moss} {+fly} {+mouse} {+fox}", null); // test plurals
+      Macros.resolve(null, "{~last, first} / {~chain, gold, fine} / {~boat (large)}", null); // formatter
+      Macros.resolve("Barsoom Plot", "{:Villain}", null); // subset short-cut
+      Macros.resolve(null, "{equipment+}", null); // full line
+      Macros.resolve(null, "{equipment}", null); // default column
+      Macros.resolve(null, "2 * 5 = {=2*5}", null);
+      Macros.resolve(null, "Alteration = {Alteration}", null);
+      Macros.resolve(null, "Filter Alteration = {Spell#.*(walk|fall).*#}", null);
+      Macros.resolve(null, "Filter and One-Of Alteration = {{Color#.*a|e.*#}|{Color#.*i|o.*#}}", null);
+      Macros.resolve(null, "Filter: {Name#S.+#}", null);
+      Macros.resolve(null, "{Profession:Craftsman}", null); // filter subset
+      Macros.resolve(null, "{Profession.all#^([^ ]+) .*craftsman.*#}", null); // filter vs all with group
       */
-      Macros.resolve(null, "Alteration = {Alteration}");
+      Macros.resolve(null, "{#{Profession+#.*craftsman.*#}:^(.*?)  }", null); // filter vs all with group
    }
 }

@@ -25,6 +25,8 @@ public final class Script
    // the master list of scripts (names must be unique)
    public static final SortedMap<String, Script> SCRIPTS = new TreeMap<String, Script>();
 
+   private final static Pattern IGNORE_HTML = Pattern.compile("html>|body>", Pattern.CASE_INSENSITIVE);
+   
    private static final String SCRIPT_COMMAND = "!";
    private static final Pattern LOOP_BEGIN =
       Pattern.compile("^" + SCRIPT_COMMAND + "\\s*loop\\s*(.+)", Pattern.CASE_INSENSITIVE);
@@ -82,7 +84,12 @@ public final class Script
       promptsEnabled = !promptsEnabled;
    }
    
-   public String resolve() // TODO: thread
+   public String resolve()
+   {
+      return resolve(false);
+   }
+   
+   public String resolve(final boolean nested) // TODO: thread
    {
       StringBuilder buf = new StringBuilder();
 
@@ -92,31 +99,16 @@ public final class Script
          FileInputStream fis = new FileInputStream(file);
          InputStreamReader isr = new InputStreamReader(fis);
          br = new BufferedReader(isr);
-         Matcher m;
 
          String line = null;
          while ((line = br.readLine()) != null && !line.startsWith(Constants.EOF))
          {
-            if (line.equals("")) // ignore blank lines
-               continue;
-            if (Constants.COMMENT_LINE.matcher(line).find())
+            if (nested && IGNORE_HTML.matcher(line).find())
                continue;
             if (line.startsWith(SCRIPT_COMMAND))
-            {
-               parseScriptCommand(br, line, buf);
-               continue;
-            }
-
-            line = resolve(line);
-            if (line == null) // user cancelled
-               return null;
-
-            if ((m = Constants.INCLUDE_LINE.matcher(line)).matches())
-               buf.append(include(m.group(1)));
-            else if ((m = Constants.RANDOMIZE_LINE.matcher(line)).matches())
-               randomize(m.group(1));
-            else if (!line.equals(""))
-               buf.append(line + "\n");
+               parseScriptCommand(br, resolve(line), buf);
+            else
+               processLine(line, buf);
          }
       }
       catch (IOException x)
@@ -138,18 +130,42 @@ public final class Script
       Matcher m = LOOP_BEGIN.matcher(command);
       if (m.matches())
       {
+         String line;
          int count = Macros.resolveNumber(m.group(1));
          if (count > 0)
          {
             List<String> lines = new ArrayList<String>();
-            String line;
             while ((line = br.readLine()) != null && !LOOP_END.matcher(line).find())
                lines.add(line);
+            
             for (int i = 0; i < count; i++)
                for (String loopLine : lines)
-                  buf.append(resolve(loopLine));
+                  processLine(loopLine, buf);
          }
+         else
+            while ((line = br.readLine()) != null && !LOOP_END.matcher(line).find())
+               ; // skip to the end of the loop
       }
+   }
+   
+   private void processLine(final String line, final StringBuilder buf)
+   {
+      if (line.equals("")) // ignore blank lines
+         return;
+      if (Constants.COMMENT_LINE.matcher(line).find())
+         return;
+
+      String resolved = resolve(line);
+      if (resolved == null) // user cancelled
+         return;
+
+      Matcher m;
+      if ((m = Constants.INCLUDE_LINE.matcher(resolved)).matches())
+         buf.append(include(m.group(1)));
+      else if ((m = Constants.RANDOMIZE_LINE.matcher(resolved)).matches())
+         randomize(m.group(1));
+      else if (!resolved.equals(""))
+         buf.append(resolved + "\n");
    }
    
    public String resolve(final String entry)
@@ -177,7 +193,7 @@ public final class Script
 
          if (resolvedToken.equals(token))
          {
-            resolvedToken = Macros.resolve(getName(), token);
+            resolvedToken = Macros.resolve(getName(), token, null);
             // System.out.println("Script macro Token: " + token + " R: " + resolvedToken);
          }
 
@@ -219,17 +235,26 @@ public final class Script
       return resolvedEntry;
    }
 
+   private static final String F = Constants.FILTER_CHAR; 
+   private static final String NOT_F = "[^" + F + "]+";
+   private static final Pattern FILTER = Pattern.compile("(" + F + NOT_F + ")\\?(" + NOT_F + F + ")");
+   
    private String resolveQueries(final String entry)
    {
-      String resolvedEntry = entry;
+      String resolved = entry;
 
       Component owner = null; // TODO
       Icon icon = null;
       int type = JOptionPane.QUESTION_MESSAGE;
       Object[] options = null;
 
+      // hack to allow question-mark in regex filters
+      Matcher fm = FILTER.matcher(resolved);
+      while (fm.find())
+         resolved = fm.replaceAll("$1!!$2"); // replace "?" with "!!"
+            
       Matcher m;
-      while ((m = Constants.QUERY.matcher(resolvedEntry)).find())
+      while ((m = Constants.QUERY.matcher(resolved)).find())
       {
          String title = m.group(1);
          Object message = m.group(1);
@@ -237,12 +262,12 @@ public final class Script
          
          // quick-query syntax: Token?? => Token?{Token}
          if (defaultValue != null && defaultValue.equals("?"))
-            defaultValue = Macros.resolve(getName(), "{" + message + "}");
+            defaultValue = Macros.resolve(getName(), "{" + message + "}", null);
          else if (defaultValue != null && defaultValue.equals("*")) // offer multiple choices TODO
          {
             String[] randomOptions = new String[7];
             for (int i = 0; i < randomOptions.length; i++)
-               randomOptions[i] = Macros.resolve(getName(), "{" + message + "}");
+               randomOptions[i] = Macros.resolve(getName(), "{" + message + "}", null);
             // import gui.comp.TipComboBox;
             // TipComboBox box = new TipComboBox(randomOptions);
             // box.setEditable(true);
@@ -254,21 +279,22 @@ public final class Script
          if (promptsEnabled)
             answer = (String) JOptionPane.showInputDialog(owner, message, title, type, icon, options, defaultValue);
          if (answer != null)
-            resolvedEntry = m.replaceFirst(Matcher.quoteReplacement(answer));
+            resolved = m.replaceFirst(Matcher.quoteReplacement(answer));
          else // user cancelled
             return null;
       }
 
-      if (Macros.DEBUG && !entry.equals(resolvedEntry))
-         System.out.println("resolveQueries: [" + entry + "] = [" + resolvedEntry + "]");
-      return resolvedEntry;
+      resolved = resolved.replace("!!", "?"); // restore any regex question-marks
+      if (Macros.DEBUG && !entry.equals(resolved))
+         System.out.println("resolveQueries: [" + entry + "] = [" + resolved + "]");
+      return resolved;
    }
 
    private String include(final String scriptName)
    {
       // Script script = new Script(Constants.DATA_PATH + File.separator + scriptName); // TODO
       Script script = Script.getScript(scriptName); // TODO
-      return script.resolve();
+      return script.resolve(true);
    }
 
    private void randomize(final String seed)
