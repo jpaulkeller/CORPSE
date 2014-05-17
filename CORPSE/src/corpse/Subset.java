@@ -201,7 +201,7 @@ public final class Subset
             for (Subset subset : table.getSubsets().values())
             {
                String token = "{" + table.getName().toLowerCase() + Constants.SUBSET_CHAR + subset.getName() + "}";
-               System.out.println("  > " + token + " = " + Macros.resolve(table.getName(), token));
+               System.out.println("  > " + token + " = " + Macros.resolve(table.getName(), token, null));
             }
          }
       }

@@ -33,6 +33,7 @@ import corpse.ui.TreePanel;
 /** CORPSE - Computer-Oriented Role-Playing System & Environment */
 
 // TODO data changes
+// convert scripts to HTML (Tavern.cmd)
 
 // TODO minor enhancements
 // change CMD suffix?
@@ -42,20 +43,22 @@ import corpse.ui.TreePanel;
 // figure out a way to cap-init a sentence w/o cap-initing each word?
 // improve case-matching to deal with 's, words like "and/of/etc", proper nouns
 // deal with null return from prompt better
-// consider allowing ":" as field separator (specified in Column declaration?), or CSV format (val, "a, b", val3)
+// consider allowing ":" as field separator (specified in Column declaration?)
+// CSV format (val, "a, b", val3)
 
 // TODO moderate enhancements
 // export text
 // support .html files (table, definition)
 // support .wiki files
 // splash
-// consider allowing unique (or local) column names to work as shortcuts (e.g. .Cost)
 // consider extending ArrayList to support WeightedList (store weight; don't duplicate element)
 // Figure out how to resolve CONDITIONS before resolving the inner values
 // structured tokens: table.column; roll once, access multiple times (e.g. gender.pronoun, gender.possessive, etc).
 // keep track of annotated resolved tokens for the current table (in a map?); repeat them.  {Name@Name}, {@Name} to re-use. 
 //
 // TODO major enhancements
+// consider applying filter based on its position in the token (e.g Profession#filter#:column)
+// change Table to not populate, just use SubTable?
 // matrix (e.g. name generators in KoDT #200)
 // columns that affect other columns (e.g. Cost modified by Quality)?
 // a FIRST-like annotated-HTML GUI. Click on the random entries to re-roll or select a new value (for scripts). Interactive color-coded display (click to re-generate, or manually override, etc)
@@ -63,22 +66,21 @@ import corpse.ui.TreePanel;
 // "snowflake" charts (for emotion, weather, etc)
 // support UnitOfMeasure fields! which use dynamic currency conversion settings (or convert all costs to a standard generic number ~1sp)
 // player vs. DM views of data
-// UI - Add option on top with pull-downs to: Resolve [#] [Table]:[Subset].[Column]#[Filter]
+// UI - Add option on top with pull-downs to: Resolve [#] [Table]:[Subset].[Column]#[Filter]#
 
 // TODO misc
 // include/weight/etc for scripts? eg. Custom.cmd
 // test embedded subsets in weighted lines TSR SCROLL
 // consider: if there is a default subset, don't show other subsets in the resolved tabular view (e.g. Book)
-// consider: support hidden columns
+// consider: support hidden columns (maybe :: prefix? private, invisible outside of file)
 // ignore composite columns with 1 simple field (for the resolved view)
 // why aren't composite columns (e.g Profession.Job) case-matched?
 // support filtering of local xrefs (see Menu.tbl)
-// a vs an, like plurals
-// remember which tables/scrips were open, and maybe the selected one, search text, etc
+// remember which tables/scripts were open, and maybe the selected one, search text, etc
 // while-loop for Kingdom.cmd
-
-// TODO data
-// convert scripts to HTML (Tavern.cmd)
+// if-condition for Poison.cmd (antidote)
+// table-loop for each entry?
+// why is Depends so slow?
 
 public final class CORPSE
 {
@@ -155,7 +157,7 @@ public final class CORPSE
    {
       String macro = quickSlot.getText();
       if (macro != null && !macro.equals(""))
-         progress.setString(Macros.resolve(null, "{" + macro + "}")); // TODO currently selected?
+         progress.setString(Macros.resolve(null, "{" + macro + "}", null)); // TODO currently selected?
       else
          tables.roll();
    }
@@ -281,7 +283,7 @@ public final class CORPSE
       {
          String resolve = null;
          if (!quickSlot.getText().isEmpty())
-            resolve = Macros.resolve(null, "{" + quickSlot.getText() + "}"); // TODO currently selected?
+            resolve = Macros.resolve(null, "{" + quickSlot.getText() + "}", null); // TODO currently selected?
          entryButton.setEnabled(resolve != null && !resolve.matches("<.+>"));
       }
    }

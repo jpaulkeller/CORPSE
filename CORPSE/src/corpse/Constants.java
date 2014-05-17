@@ -50,7 +50,8 @@ public final class Constants
    static final Pattern CONDITION = Pattern.compile("\\{(\\d+)([=<>])(\\d+)[?]([^:]+)(?::([^:{}]+))?\\}");
 
    // {one|two|three|four} -- chooses one option, with equal chance for each (options may be empty)
-   static final Pattern ONE_OF = Pattern.compile("\\{([^|/{]+([|/][^|{]*)+)\\}");
+   private static final String ONE_OF_CHAR = "[" + ONE_OF_CHAR_1 + ONE_OF_CHAR_2 + "]"; 
+   static final Pattern ONE_OF = Pattern.compile("\\{([^|/{]+(" + ONE_OF_CHAR + "[^|{]*)+)\\}");
    // TODO: weighted options: {#:opt1|#:opt2|...}
    // TODO: {common>uncommon>scarce>rare} weighted 4/3/2/1?
 
@@ -58,23 +59,24 @@ public final class Constants
    // start with a non-numeric (to avoid confusion with the CONDITIONAL token).
    static final Pattern QUERY = Pattern.compile("\\{([^{}?0-9][^{}?]+?)[?]([^{}]+)?\\}");
 
-   // {Table:Subset.Column#Filter} 
-   // {Table+#Filter} means don't use the default subset or column; return the entire line 
+   // {Table:Subset.Column#Filter#} 
+   // {Table+#Filter#} means don't use the default subset or column; return the entire line 
    private static final String SUBSET = "(?:\\" + SUBSET_CHAR + "\\s*" + NAME + "?)?";
    private static final String COLUMN = "(?:\\" + COLUMN_CHAR + COLUMN_NAME + "?)?";
-   private static final String FILTER = "(?:\\" + FILTER_CHAR + "([^}]+)?)?";
+   private static final String FILTER = "(?:\\" + FILTER_CHAR + "([^}]+)" + FILTER_CHAR + ")?";
    private static final String PARTIAL = SUBSET + COLUMN + FILTER;
    private static final String FULL = "([+])" + FILTER;
    private static final String XREF_REGEX = TABLE_NAME + "(?:(?:" + PARTIAL + ")|(?:" + FULL + "))?";
    static final Pattern TABLE_XREF = Pattern.compile("\\{" + XREF_REGEX + "\\s*\\}", Pattern.CASE_INSENSITIVE);
    
-   // {:Subset.Column#Filter} -- short-cut for a subset reference (Within the table)
-   static final Pattern SUBSET_REF = Pattern.compile("\\{" + SUBSET + COLUMN + FILTER + "\\}", Pattern.CASE_INSENSITIVE);
+   // {:Subset.Column#Filter#} -- short-cut for a subset reference (within the table)
+   static final Pattern INTERNAL_REF = Pattern.compile("\\{" + SUBSET + COLUMN + FILTER + "\\}", Pattern.CASE_INSENSITIVE);
 
    private static final String QTY = "(?:(\\d+)\\s+)?";
    static final Pattern SCRIPT_XREF = // {1 Script.cmd}
       Pattern.compile("\\{" + QTY + NAME + "[.]" + SCRIPT_SUFFIX + "\\}", Pattern.CASE_INSENSITIVE);
 
+   // TODO: do we need to terminate the regex here too?
    // {#text:regex} (e.g. {#text:.} would resolve to the first letter of the text)
    static final Pattern FILTER_TOKEN = Pattern.compile("\\{" + FILTER_CHAR + "(.+):([^}]+)\\}");
 
@@ -96,7 +98,7 @@ public final class Constants
 
    private static final String VARIABLE_REGEX = "\\{(![^}]*)\\}";
    static final Pattern VARIABLE_TOKEN = Pattern.compile(VARIABLE_REGEX);
-   private static final Pattern VARIABLE = Pattern.compile(VARIABLE_REGEX + "=(.+) //.*"); // {!OneWord}=#[^-_]+ // one word
+   private static final Pattern VARIABLE = Pattern.compile(VARIABLE_REGEX + "=(.+) //.*"); // {!OneWord}=#[^-_]+# // one word
    static final Map<String, String> VARIABLES = new HashMap<String, String>();
    static
    {
@@ -104,7 +106,7 @@ public final class Constants
    }
 
    private static final Pattern PROPERTY = Pattern.compile("([^=]+)=(.+)"); // noun=nouns
-   static final Pattern PLURAL_TOKEN = Pattern.compile("\\{\\+(.+)\\}"); // {+thing} => things
+   static final Pattern PLURAL_TOKEN = Pattern.compile("\\{(.+)\\+\\}"); // {thing+} => things
    static final SortedMap<String, String> PLURALS = new TreeMap<String, String>();
    static
    {
