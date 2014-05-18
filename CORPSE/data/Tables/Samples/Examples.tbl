@@ -1,0 +1,77 @@
+.Example         Syntax                              Resolved                           Notes
+
+/ The following are different ways to get a random number value:
+: Quantity
+Quantity         [5]                                 {5}                                short hand for 1-5
+Quantity         [d12]                               {d12}                              same as [12]
+Quantity         [%]                                 {%}                                short hand for 1-100
+Quantity         [2-4]                               {2-4}                              even distribution 2,3,4
+Quantity         [=3+2]                              {=3+2}                             formula (+)
+Quantity         [=3-2]                              {=3-2}                             formula (-)
+Quantity         [=3*2]                              {=3*2}                             formula (*)
+Quantity         [=6/2]                              {=6/2}                             formula (/)
+Quantity         [3d6]                               {3d6}                              bell curve 3-18
+Quantity         [3t6]                               {3t6}                              open-ended (roll another die for each 6)
+Quantity         [3/4d6]                             {3/4d6}                            best 3 of 4 d6
+Quantity         [3d4-2]                             {3d4-2}                            bell curve 1-10
+Quantity         [3,10]                              {3,10}                             normal distribution where mean = 3, max = 10
+Quantity/Max     [#/5-10]                            {#/{5-10}}                         random # w/ random upper bound (e.g. wand charges)
+
+/ Simple list element selection:
+: One Of
+One Of           [spring|summer|fall|winter]         {spring|summer|fall|winter}
+Also One Of      [day/night]                         {day/night}
+  
+/ Examples of a conditions:
+: Condition
+Percent Check    [50%?Heads:Tails]                   {50%?Heads:Tails}                  percent with either/or format
+Percent Check    [75%?Yes]                           {75%?Yes}                          percent with all-or-nothing format
+Bell Curve       [[3d6]<13?Normal:Good]              {{3d6}<13?Normal:Good}             embedded roll, using > operator 
+
+/ Table look-ups:
+: Column
+Column           [Equipment.Cost]                    {Equipment.Cost}
+                 [Gender.Pronoun]                    {Gender.Pronoun}
+Full Line        [Equipment+]                        {Equipment+}                       override a default column to include the full line
+Default Column   [Equipment]                         {Equipment}                        equivalent to [Equipment.Equipment]
+                 [Gender]                            {Gender}
+Virtual Column   [Equipment.Quality]                 {Equipment.Quality}                a column which will be generated for each row
+Local Column     [.Example]                          {.Example}                         local (to this file) column
+
+: Subset
+Subset           [Quality:Magic]                     {Quality:Magic}
+Full Table       [Quality+]                          {Quality+}                         override a default subset to include all rows
+Default Subset   [Quality]                           {Quality}                          equivalent to [Quality.Quality]
+Local Subset     [:Quantity.Resolved]                {:Quantity.Resolved}               local (to this file) subset with column
+Subset Filter    [Profession:Criminal]               {Profession:Criminal}              a subset which is defined as a regex filter
+
+: Filter
+Filter           [Fauna#P.*#]                        {Fauna#P.*#}
+Filter           [Name#P.*#]                         {Name#P.*#}
+Filter Variable  [Name] [Fauna[!SameFirstLetter]]    {Name} {Fauna{!SameFirstLetter}}
+Collision        [DiffTest]/[DiffTest]               {DiffTest}/{DiffTest}              high risk of collision
+Different        [DiffTest]/[DiffTest[!Different]]   {DiffTest}/{DiffTest{!Different}}  prevent collision
+Filter Subset    [Herb#.*h.*#]                       {Herb#.*h.*#}                      any Herb that contains the letter "h"
+Filter Subset    [Menu:Game#.*t.*#]                  {Menu:Game#.*t.*#}                 any Menu:Game that contains the letter "t"
+Filter Other     [Profession+#.*craftsman.*#]        {Profession+#.*craftsman.*#}       filter on a column other than the default
+
+/ Formatting:
+: Formatted
+Format CSV       [~wolf, dire]                       {~wolf, dire}                      standardizes comma-separated values
+Format CSV       [~wolf, dire, big]                  {~wolf, dire, big}                 standardizes comma-separated values
+Format Paren     [~chain (gold)]                     {~chain (gold)}                    standardizes parenthesized values
+Format Mixed     [~golem, iron (pieces)]             {~golem, iron (pieces)}            standardizes both
+All Lower        [elf name]                          {elf name}
+Unchanged        [ELF NAME]                          {ELF NAME}
+Cap Init         [Color]                             {Color}
+Regex            [#[Plot Twist]:.....]               {#{Plot Twist}:.....}              replaced with the first text matching the given regex
+Plural           [+[tiny item]]                      {{tiny item}+}                     override as needed in Plurals.txt
+Article          a [apple|pear]                      a {apple|pear}                     automatic a/an conversion
+
+=== everything after this will be ignored (except for searches)
+
+test
+
+/ Script syntax - move to Script Example.cmd?
+/                 [Gender?[Gender.Pronoun]]           {Gender?{Gender.Pronoun}}
+/                 [Trait??]                           {Trait??}
