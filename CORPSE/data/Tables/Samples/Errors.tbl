@@ -1,0 +1,19 @@
+/ This file gives examples of various improper uses of mechanisms provided by the CORPSE program.
+
+/ This subset creates an infinite loop for demonstration purposes.
+: Error {1}
+
+  Forced recursion error: {Errors:Error} 
+
+/ Invalid CONDITION example (missing/invalid operator)
+  {2 2?Missing:Operator}
+
+  Missing Table: {Missing}
+
+  Missing Column: {Errors.Missing}
+
+  Missing Subset: {Errors:Missing}
+
+  Invalid Filter: {Errors#a(b#}
+
+  Empty Token: {}
