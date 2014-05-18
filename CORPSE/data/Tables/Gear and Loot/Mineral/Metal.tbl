@@ -1,0 +1,64 @@
+
+/ Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
+/          Values from DRAGON Magazine #83, page 10.
+
+: Metal = Alloy + Element + Precious + Special
+: Normal = Alloy + Element + Precious
+: Mine = Element + Precious + Ore
+: Enchantable = Precious + Special
+
+.Metal           Lbs/CFt  Notes
+
+: Alloy
+bronze             550
+brass              530
+pewter
+steel              500
+tin                475
+
+: Element
+aluminum           170
+cobalt             546    lustrous, grey, ductile
+iron               475
+iron (rusty)
+lead               710
+magnesium          110
+mercury            845    liquid at room temperature
+nickle             555
+titanium           280
+tungsten          1205
+vanadium
+zinc               445
+
+: Precious
+copper             560
+gold              1205
+electrum
+platinum          1340
+silver             650
+
+: Special
+adamantine         400    bypasses most hardness and DR
+azurium            150    organic metal
+celebsul           100    ethereal "spirit silver"
+cold iron                 effective against fey
+galvorn                   meteoric metal
+impervium          500
+ithildin           150    enchanted mithril
+meteoric iron
+mithril            200    elvish silver
+obdurite
+orichalcum         800    atlantean metal
+valerian steel
+
+: Ore
+azurite
+biotite            180    contains iron ore
+calamine           265    ore containing zinc
+cinnabar           507    mercuric (poison, red dye)
+dolomite           177    ore containing magnesium
+feldspar           165    ore containing aluminum
+galena             465    ore containing lead & coal
+hematite           315    ore containing iron
+magnetite          310    ore containing iron
+malachite          240    ore containing copper

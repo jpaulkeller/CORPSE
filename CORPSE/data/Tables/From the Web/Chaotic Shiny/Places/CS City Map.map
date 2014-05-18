@@ -1,0 +1,143 @@
+/ http://chaoticshiny.com/citymapgen.php
+
+__ __ __ __ __
+__ __ 1  2  3
+__ __ 4  5  __
+__ __ 6  7  __
+1: Temple District
+2: Residential District
+3: Crafters' District
+4: Guilds' District
+5: Academic District
+6: Military District
+7: Barracks District
+1. Temple District
+1  __ __ __ __
+__ __ 2  3  __
+__ __ __ __ 4
+__ __ 5  __ 6
+1: Embalmer's
+2: Shrine of the God of Evil
+3: Tavern
+4: Shrine of the Godess of Truth
+5: Shrine of the God of Alchemy
+6: House
+Major Streets
+none
+
+Minor Streets
+East Raven Street
+East Kingfisher Street
+
+
+2. Residential District
+__ 1  __ 2  __
+3  S1 S1 __ __
+__ S1 __ 4  __
+__ __ 5  __ __
+1: Apartment
+2: Shack
+3: Apartment
+4: Food shop
+5: House
+Major Streets
+Street 1: Sailor Street
+
+Minor Streets
+Lord Street
+Viper Street
+Magpie Row
+
+
+3. Crafters' District
+S1 __ __ __ __
+S1 S1 __ 1  2
+__ __ __ __ __
+__ __ __ __ 3
+1: Apartment
+2: Mason
+3: Thatcher
+Major Streets
+Street 1: Oak Way
+
+Minor Streets
+Upper Jester Lane
+Witch Street
+
+
+4. Guilds' District
+1  __ __ __ __
+__ 2  3  __ __
+__ 4  5  __ 6
+7  __ __ __ __
+1: Artist
+2: Jewelry Shop
+3: Ritual supplies
+4: Clothing shop
+5: Blacksmith
+6: Religious shop
+7: Jewelry Shop
+Major Streets
+none
+
+Minor Streets
+South Carnation Row
+King Avenue
+
+
+5. Academic District
+1  2  3  __ __
+__ S1 __ __ __
+4  5  S1 S1 S1
+__ 6  __ 7  8
+1: Park
+2: University
+3: Astrology tower
+4: Bookshop
+5: House
+6: Astrology tower
+7: Mages' College
+8: Minstrels' School
+Major Streets
+Street 1: Hyena Street
+
+Minor Streets
+West Sapphire Street
+Diamond Avenue
+
+
+6. Military District
+1  __ __ __ __
+2  __ __ __ 3
+__ __ 4  __ __
+5  __ __ __ __
+1: Arena
+2: Barracks
+3: Blacksmith
+4: Brothel
+5: Storehouse
+Major Streets
+none
+
+Minor Streets
+Lower Opal Row
+Swan Avenue
+Lower Gypsy Street
+
+
+7. Barracks District
+__ __ __ __ __
+__ __ __ __ __
+__ 1  __ __ 2
+3  __ __ __ __
+1: Guardhouse
+2: Farrier
+3: Storehouse
+Major Streets
+none
+
+Minor Streets
+Minstrel Way
+Sunflower Street
+East Teak Avenue
+

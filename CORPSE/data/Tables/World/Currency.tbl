@@ -1,0 +1,15 @@
+/ http://www.dragonsfoot.org/forums/viewtopic.php?f=1&t=59853
+
+.Nickname     Face          Coin            Abbrev    Exchange    CP
+
+bit                         ceramic bit     b                        0.1
+                            tin piece       t          1 bit         0.1
+              hammer        iron piece      i          2 bits        0.2
+
+: Currency              
+half          feather       bronze piece    z          5 bits        0.5
+pence         wheel         copper piece    c         10 bits        1
+noble         moon          silver piece    s         10 cp         10
+duke          shield        electrum piece  e          5 sp         50 
+crown         star          gold piece      g         10 sp        100
+royal         dragon        platinum piece  p         10 gp       1000

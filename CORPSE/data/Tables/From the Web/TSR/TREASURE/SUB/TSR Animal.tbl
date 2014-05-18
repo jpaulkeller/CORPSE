@@ -1,0 +1,12 @@
+
+/ Sources: TSR DMG2, page 141
+
+/ Animals Controlled By Potion
+
+01-04 mammal/marsupial
+05-08 avian
+09-12 reptile/amphibian
+13-15 fish
+16-17 mammal/marsupial/avian
+18-19 reptile/amphibian/fish
+20-20 all non-magical animals

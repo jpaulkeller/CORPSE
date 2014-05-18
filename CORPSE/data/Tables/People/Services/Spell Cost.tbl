@@ -1,59 +1,59 @@
-? http://www.legolas.org/items/spells.html
+/ http://www.legolas.org/items/spells.html
 
-Spells   Cost
+.Spell               Cost
    
-Alarm    150 gp/loc
-Armor    100 gp/loc
-Astral Spell   5,000 gp/person
-Atonement   500 gp/lot
-Augury   300 gp
-Bless    5 gp/loc
-Commune  5,000 gp
-Continual Light   500 gp
-Control Weather   10,000 gp
-Cure Blindness    1,000 gp
-Cure Disease   1,000 gp
-Cure Light Wounds    100 gp
-Cure Serious Wounds  350 gp
-Cure Critical Wounds    600 gp
-Detect Evil/Good  100 gp
-Detect Magic   150 gp
-Dispel Evil/Good  1,000 gp
-Dispel Magic   100 gp/loc
-Divination  1,000 gp
-Earthquake  100,000 gp
-Exorcise    1,000 gp/hour
-Find the Path  500 gp/loc
-Gate  500,000 gp
-Glyph of Warding  100 gp/loc
-Heal  200 gp/hit point
-Identify    250 gp
-Invisibility   300 gp
-Knock    1,000 gp
-Know Alignment    1,000 gp/loc
-Leomund's Trap    500 gp
-Locate Object  500 gp
-Magic Mouth    800 gp/word
-Mending  50 gp
-Neutralize Poison    1,000 gp
-Part Water  1,000 gp/loc
-Plane Shift    40,000 gp
-Prayer   50 gp/loc
-Preserve    100 gp
-Protection From evil    50 gp/loc
-Purify Food & Drink  100 gp
-Raise Dead  750 gp/loc
-Raise Dead Fully  7,500 gp/loc
-Regenerate  15,000 gp
-Remove Curse   500 gp/loc
-Resist Cold    50 gp/loc
-Resist Fire    100 gp/loc
-Restoration    20,000 gp
-Silence  100 gp/loc
-Slow Poison    200 gp/loc
-Speak With Dead   100 gp/loc
-Strength    1,000 gp/loc
-Tongues  500 gp/loc
-Ture Seeing    400 gp/loc
-Wizard Lock    100 gp/loc
-Write    300 gp
+alarm                   150 gp/loc
+armor                   100 gp/loc
+astral spell           5000 gp/person
+atonement               500 gp/lot
+augury                  300 gp
+bless                     5 gp/loc
+commune                5000 gp
+continual light         500 gp
+control weather       10000 gp
+cure blindness         1000 gp
+cure disease           1000 gp
+cure light wounds       100 gp
+cure serious wounds     350 gp
+cure critical wounds    600 gp
+detect evil/good        100 gp
+detect magic            150 gp
+dispel evil/good       1000 gp
+dispel magic            100 gp/loc
+divination             1000 gp
+earthquake           100000 gp
+exorcise               1000 gp/hour
+find the path           500 gp/loc
+gate                 500000 gp
+glyph of warding        100 gp/loc
+heal                    200 gp/hit point
+identify                250 gp
+invisibility            300 gp
+knock                  1000 gp
+know alignment         1000 gp/loc
+leomund's trap          500 gp
+locate object           500 gp
+magic mouth             800 gp/word
+mending                  50 gp
+neutralize poison      1000 gp
+part water             1000 gp/loc
+plane shift           40000 gp
+prayer                   50 gp/loc
+preserve                100 gp
+protection from evil     50 gp/loc
+purify food & drink     100 gp
+raise dead              750 gp/loc
+raise dead fully       7500 gp/loc
+regenerate            15000 gp
+remove curse            500 gp/loc
+resist cold              50 gp/loc
+resist fire             100 gp/loc
+restoration           20000 gp
+silence                 100 gp/loc
+slow poison             200 gp/loc
+speak with dead         100 gp/loc
+strength               1000 gp/loc
+tongues                 500 gp/loc
+ture seeing             400 gp/loc
+wizard lock             100 gp/loc
+write                   300 gp

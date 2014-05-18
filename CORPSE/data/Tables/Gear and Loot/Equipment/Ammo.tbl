@@ -1,0 +1,42 @@
+.Ammo                     Cost   Lbs   Damage      S  T  Sp  RoF   Range
+
+arrow, barbed              1 sp  0.2   1-6/1-6     s  p  -
+arrow, blunt-head          1 cp  0.2   1-3/1-3     s  p  -
+arrow, broad-head          1 sp  0.2   2-7/1-6     s  p  -
+arrow, corded (120')       6 gp  2.5   1-3/1-2     s  p  -
+arrow, daikyu              5 bp  0.2   1-8/1-6     m  p  -
+arrow, flaming             5 gp  0.4   2-7/2-8     s  p  -
+arrow, flight             25 bp  0.1   1-6/1-6     s  p  -
+arrow, flight x12          3 sp  1.2
+arrow, frog crotch         1 sp  0.2   1-6/1-3     s  p  -
+arrow, grappling (120')   10 gp    3   1-4/1-3     s  p  -
+arrow, humming bulb        2 sp  0.2   1-2/1-2     s  p  -
+arrow, normal              1 cp  0.2   1-6/1-6     s  p  -
+arrow, normal x12          1 sp  2.4
+arrow, sheaf               5 cp  0.1   1-8/1-8     s  p  -
+arrow, sheaf x12           6 sp  1.2
+arrow, silver              1 gp  0.2   1-6/1-6     s  p  -
+arrow, spiral              1 gp  0.2   2-7/2-7     s  p  -
+arrow, stone               2 bp  0.1   1-4/1-4     s  p  -
+arrow, stone x12           3 cp  1.2
+arrow, wooden              5 bp  0.2   1-5/1-3     s  p  -
+atlatl spear               1 gp  2
+blowgun needle, barbed     1 sp  0.1   1-2/1-2     s  p  -
+blowgun needle, normal     2 cp  0.1   1-1/1-1     s  p  -
+quarrel/bolt, hand         1 gp  0.1   1-6/1-6     s  p  -
+quarrel/bolt, hand x20    20 gp  2
+quarrel/bolt, heavy        1 sp  0.1   1-12/1-12   s  p  -
+quarrel/bolt, heavy x20    2 gp  2
+quarrel/bolt, light        1 sp  0.1   1-8/1-8  s  p  -
+quarrel/bolt, light x20    2 gp  2
+quarrel/bolt, medium       1 sp  0.1   1-10/1-10   s  p  -
+quarrel/bolt, medium x20   2 gp  2
+sling bullet               1 cp  0.2   2-5/2-5     s  b  -     1   5/10/20
+sling bullet x20           2 sp  4
+sling stone                -     0.2   1-4/1-4     s  b  -     1   4/8/16
+sling stone x20            -     4     
+staff sling stinkpot       1 sp  2     1-3/1-3     s  b  -   2/1   -/3-6/9
+
+/ Ammunition is priced by lot. 
+/ Repeating crossbows use the same bolts as the regular crossbow, but come in a mag of 5, and costs 1 gp for the full 5 bolt mag. 
+/ The mag by itself costs 5sp and weighs 1lb with 5 bolts.

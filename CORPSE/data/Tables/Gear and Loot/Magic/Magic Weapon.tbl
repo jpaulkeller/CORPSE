@@ -1,0 +1,90 @@
+/ http://eberronunlimited.wikidot.com/magic-weapon-special-abilities
+
+Magic Weapon Special Abilities
+As magic items go, magic weapons are a staple of all campaigns.
+Magic weapons have enhancement bonuses ranging from +1 to +5. They apply these bonuses to both attack and damage rolls when used in combat. All magic weapons are also masterwork weapons, but their masterwork bonus on attack rolls does not stack with their enhancement bonus on attack rolls.
+Weapons come in two basic categories: melee and ranged. Some of the weapons listed as melee weapons (for example, daggers) can also be used as ranged weapons. In this case, their enhancement bonus applies to either type of attack. In addition to an enhancement bonus, weapons may have special abilities, such as the ability to flame or the ability to attack on their own. Special abilities count as additional bonuses for determining the market value of the item, but do not modify attack or damage bonuses (except where specifically noted). A single weapon cannot have a modified bonus (enhancement bonus plus special ability bonus equivalents) higher than +10. A weapon with a special ability must have at least a +1 enhancement bonus.
+A weapon or a kind of ammunition may be made of an unusual material. Roll d%: 01–95 indicates that the item is of a standard sort, and 96–100 indicates that it is made of a special substance such as alchemical silver or cold iron (see Special Materials, page 283).
+Caster Level for Weapons: The caster level of a weapon with a special ability is given in the item description. For an item with only an enhancement bonus and no other abilities, the caster level is three times the enhancement bonus. If an item has both an enhancement bonus and a special ability, the higher of the two caster level requirements must be met.
+Additional Damage Dice: Some magic weapons deal additional dice of damage. Unlike other modifiers to damage, additional dice of damage are not multiplied when the attacker scores a critical hit.
+Ranged Weapons and Ammunition: The enhancement bonus from a ranged weapon does not stack with the enhancement bonus from ammunition. Only the higher of the two enhancement bonuses applies.
+Ammunition fired from a projectile weapon with an enhancement bonus of +1 or higher is treated as a magic weapon for the purpose of overcoming damage reduction. For example, a sling stone hurled from a +1 sling is treated as a magic weapon. Similarly, ammunition fired from a projectile weapon with an alignment (such as a +1 holy longbow or a masterwork crossbow under the effect of the align weapon spell) gains the alignment of that projectile weapon (in addition to any alignment it may already have). For example, a +1 unholy arrow fired from a +2 anarchic shortbow would be both evil-aligned and chaos-aligned (the former from its own unholy special ability, the latter from the shortbow).
+Magic Ammunition and Breakage: When a magic arrow, crossbow bolt, or sling bullet misses its target, there is a 50% chance it breaks or otherwise is rendered useless. A magic arrow, bolt, or bullet that hits is destroyed.
+Light Generation: Fully 30% of magic weapons shed light equivalent to a light spell (bright light in a 20-foot radius, shadowy light in a 40-foot radius). These glowing weapons are quite obviously magical. Such a weapon can’t be concealed when drawn, nor can its light be shut off. Some of the specific weapons detailed below always or never glow, as defined in their descriptions.
+Hardness and Hit Points: An attacker cannot damage a magic weapon that has an enhancement bonus unless his own weapon has at least as high an enhancement bonus as the weapon or shield struck. Each +1 of enhancement bonus also adds 1 to the weapon’s or shield’s hardness and hit points. (See Table 8–8, page 158 of the Player’s Handbook, for common weapon hardnesses and hit points.)
+Activation: Usually a character benefits from a magic weapon in the same way a character benefits from a mundane weapon—by attacking with it. If a weapon has a special ability that the user needs to activate (such as the sunlight power of a sun blade), then the user usually needs to utter a command word (a standard action).
+Magic Weapons and Critical Hits: Some weapon qualities and some specific weapons have an extra effect on a critical hit. A flaming burst weapon, for example, does extra fire damage on a critical hit. This special effect functions against creatures not subject to critical hits, such as undead, elementals, and constructs. When fighting against such creatures, roll for critical hits as you would against humanoids or any other creature subject to critical hits. On a successful critical roll, apply the special effect, but do not multiply the weapon’s regular damage. For example, if Jozan rolls a natural 20 on his attack roll against an iron golem when using a mace of smiting, he rolls again. If he rolls high enough to hit the iron golem’s AC, then he does not apply double damage. Instead, he destroys the construct outright.
+Weapons for Unusually Sized Creatures: The cost of weapons for creatures who are neither Small nor Medium varies from the values given on Tables 7–11, 7–12, and 7–13, as described under Weapon Qualities on page 114 of the Player’s Handbook. The cost of the masterwork quality and any magical enhancement remains the same.
+
+Weapon Special Ability Cost
+
+Weapon Bonus   Base Price
++1 2,000gp
++2 8,000gp
++3 18,000gp
++4 32,000gp
++5 50,000gp
++6 72,000gp
++7 98,000gp
++8 128,000gp
++9 162,000gp
++10   200,000gp
+Note: If ammunition is enchanted, price is for 50 of arrows, bolts or bullets. I.e. 10x +1 Arrows would cost about 400gp.
+
+Melee Weapon Special Abilities
+
+Name  Base Price Modifier  Source
+Illuminating   +500gp   MIC
+Aquatic  +2000gp  MIC
+Bane  +1 Bonus DMG
+Defending   +1 Bonus DMG
+Flaming  +1 Bonus DMG
+Frost +1 Bonus DMG
+Shock +1 Bonus DMG
+Ghost Touch +1 Bonus DMG
+Guided   +1 Bonus Pathfinder #10
+Keen  +1 Bonus DMG
+Ki Focus +1 Bonus DMG
+Merciful +1 Bonus DMG
+Mighty Cleaving   +1 Bonus DMG
+Spell Storing  +1 Bonus DMG
+Thundering  +1 Bonus DMG
+Vicious  +1 Bonus DMG
+Anarchic +2 Bonus DMG
+Axiomatic   +2 Bonus DMG
+Disruption  +2 Bonus DMG
+Flaming Burst  +2 Bonus DMG
+Icy Burst   +2 Bonus DMG
+Holy  +2 Bonus DMG
+Shocking Burst +2 Bonus DMG
+Unholy   +2 Bonus DMG
+Wounding +2 Bonus DMG
+Speed +3 Bonus DMG
+Brilliant Energy  +4 Bonus DMG
+Dancing  +4 Bonus DMG
+Vorpal   +5 Bonus DMG
+Ranged Weapon Special Abilities
+
+Name  Base Price Modifier  Source
+Bane  +1 Bonus DMG
+Distance +1 Bonus DMG
+Flaming  +1 Bonus DMG
+Frost +1 Bonus DMG
+Merciful +1 Bonus DMG
+Returning   +1 Bonus DMG
+Shock +1 Bonus DMG
+Seeking  +1 Bonus DMG
+Thundering  +1 Bonus DMG
+Anarchic +2 Bonus DMG
+Axiomatic   +2 Bonus DMG
+Flaming Burst  +2 Bonus DMG
+Holy  +2 Bonus DMG
+Icy Burst   +2 Bonus DMG
+Shocking Burst +2 Bonus DMG
+Unholy   +2 Bonus DMG
+Speed +3 Bonus DMG
+Brilliant Energy  +4 Bonus DMG
+
+
+Name  Effect   Cost  Source
+Bracers of Wind   Bonus to ranged, penalty to enemy ranged  10,000gp Magic of Eberron

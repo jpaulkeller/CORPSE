@@ -1,0 +1,60 @@
+/ http://roll1d12.blogspot.com/2012/07/semi-unknown-were-things.html
+
+: Were-thing
+were-{:beast}; trigger: {:trigger}; proclivity: {:proclivity}; vulnerability: {:vulnerability}
+
+: Beast
+Rooster
+Ape
+Butterfly
+Badger
+Worm
+Swine
+Devil
+Paramecium
+Lamprey eel
+Whale
+Virus
+Famous monarch
+
+: Trigger
+Solstice/equinox
+Ascending constellation
+Toll of church bells
+Sundown
+Return of predictably regular comet
+Exposure to subterranean gases
+Hunger pangs
+Thunderstorms
+Sudden highly-charged emotion
+Pain/injury
+Victory at arms
+At will
+
+: Proclivity
+Hunger for flesh
+Thirst for blood
+Killing for sport
+Self-destruction
+War on property
+Urge to smash the state
+Hell-bent on undermining religion/desecrating shrines
+Must reproduce w/human host
+Evil oratory
+Seeks to irritate and disrupt
+Attention-seeking behavior
+Looking to merely humiliate/satirize humanity
+
+: Vulnerability
+Random metal ({metal})
+Several thousand pounds of crushing force
+Lightning strike
+Withering criticism
+Overdose of opiates
+Severe food allergy
+True love
+Gluttony
+Empathy for the innocent
+Exposure to moon dust
+A certain song
+Large sums of money 

@@ -1,0 +1,20 @@
+// inspired by http://donjon.bin.sh/fantasy/random/#quest
+
+: Quest
+{PROTAGANIST} seeks a party to {:TASK}.{33%?  But {plot twist}.}
+
+: Task
+capture {PROTAGANIST}
+destroy the {Special Item}
+discover the fate of {Group Name} lost in {Dungeon Name}
+defend the {Place} from {ANTAGONIST} 
+escort {a caravan|an old man|a group of pilgrims|the {Special Item}} safely to the {PLACE}
+expose a {trait:bad} {PROTAGANIST}
+find a cure for {Disease}
+find {PROTAGANIST}
+prove themselves worthy by slaying {ANTAGONIST}
+{50%?find and }explore {Dungeon Name}
+{50%?find and }kill {PROTAGANIST}
+{50%?find and }recover {Special Item} from {ANTAGONIST}
+{50%?find and }rescue {PROTAGANIST} from {ANTAGONIST}
+ 

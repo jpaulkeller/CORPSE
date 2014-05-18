@@ -1,0 +1,69 @@
+/ Potions/Philters/Elixirs are consumed to activate
+/ Oils are applied topically
+/ Tinctures are organic extractions
+
+: Loot
+{:POTION} ({2d4} doses in a {2d3-1}-{volume:portable} {container:potions})
+
+: Potion
+
+Elixir of Health
+Elixir of Madness ({neurosis})
+Elixir of youth
+Oil of Acid Resistance
+Oil of Disenchantment
+Oil of Etherealness
+Oil of Fiery Burning
+Oil of Fumbling
+Oil of Impact
+Oil of Slipperiness
+Oil of Timelessness
+Oil of Enchantment: {enchantment}
+Oil of Evocation: {evocation}
+Oil of Illusion: {illusion}
+Oil of Defense: {natural defense}
+Philter of Glibness
+Philter of Love
+Philter of Persuasiveness
+Philter of Stammering and Stuttering
+Poison ({poison})
+Potion of Animal Control ({Order})
+Potion of Clairaudience
+Potion of Clairvoyance
+Potion of Climbing
+Potion of Delusion ({potion})
+Potion of Diminution
+Potion of ESP
+Potion of Extra Healing
+Potion of Fire Breath
+Potion of Fire Resistance
+Potion of Flying
+Potion of Gaseous Form
+Potion of Growth
+Potion of Healing
+Potion of Heroism
+Potion of Invisibility
+Potion of Invulnerability
+Potion of Levitation
+Potion of Longevity
+Potion of Plant Control
+Potion of Polymorph Self
+Potion of Rainbow Hues
+Potion of Speed
+Potion of Super-heroism
+Potion of Sweet Water
+Potion of Treasure Finding
+Potion of Undead Control ({Undead})
+Potion of Ventriloquism
+Potion of Vitality
+Potion of Water Breathing
+Potion of Alteration: {Alteration}
+Potion of Divination: {Divination}
+Potion of Empathy: {Empathic}
+Potion of {Humanoid} control (TSR: {TSR humanoid})
+Potion of {Hypnotic}
+Potion of {Necromantic}
+Potion of {TSR Dragon} Dragon Control
+Potion of {TSR Giant} Giant Control
+Potion of {TSR Giant} Giant Strength
+{d12 potion}

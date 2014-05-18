@@ -1,0 +1,62 @@
+: General
+accessories
+ammunition
+arms
+armor
+art
+books
+clothing
+equipment
+fur and pelts
+gems
+jewelery
+live animals
+musical instruments
+produce
+provisions
+reagents
+shoes
+spell components
+spices
+wine
+
+: Specific
+{ammo}
+{armor}
+{art}
+{~{clothing}}
+{device}
+{equipment}
+{fabric}
+{fauna}
+{flora}
+{furnishing}
+{gem}
+{made of}
+{musical instrument}
+{tack}
+{tiny item}
+{wand}
+{weapon}
+
+: Consumable
+{{fruit}+}
+{{vegetable}+}
+{menu}
+{menu:drink}
+{provisions}
+{spice}
+
+: Magic
+{alchemy}
+{charm}
+{familiar}
+{potion}
+{reagent}
+{spell component}
+{treasure}
+
+: Illicit
+{poison}
+{smuggled}
+{thief gear}

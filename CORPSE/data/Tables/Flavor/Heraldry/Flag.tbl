@@ -1,0 +1,41 @@
+/ Inspired by http://chaoticshiny.com/flaggen.php
+/ http://www.midcoast.com/~martucci/flags/designs/shapes.html
+
+: Flag
+The flag is {:shape} {33%?with {:foreground} on:with} {:background}{10%?, {:extra}}{10%?, {:condition}}.
+
+: Background
+a solid field of {color:common}
+a checkered field of {color:dark} and {color:light} 
+a tricolor background of {color:simple}, {color:simple{!different}}, and {color:simple{!different}} {horizontal|vertical} stripes
+{number:twototwelve} {color:dark} and {color:light} stripes
+
+: Foreground
+a {small |large | }{color} {charge}{20%? in the {center|{top|bottom} {left|right}}}
+a {color:fancy} {charge}
+{number:twototwelve} {{charge}+}
+a {charge} and {charge{!different}}
+
+: Shape
+a rectangle (2:3)
+a square
+{a banner (3:2)|a pennant}
+a double-square (1:2)
+{a burgee|a triangle|a double triangle}
+{a swallowtail|a swallowtail with tongue}
+{pointed|shield-shaped|rounded}
+
+: Extra
+edged with flammules
+with a {color:common} border
+with a {color:common} bar across the {top|bottom|left|right} edge
+
+: Condition
+dripping with blood
+frayed at the edges
+moth-eaten
+scorched
+showing signs of age
+stained
+tattered
+torn asunder

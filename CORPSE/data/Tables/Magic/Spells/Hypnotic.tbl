@@ -1,0 +1,72 @@
+/ Sources: See SPELL.TBL
+
+.Level  Spell                         Type           Element      Source     Class
+.Hypnotic = Spell
+  
+ 1      animal friendship             hyp/emp        life         tsrph2     drui
+ 2      blindness                     hyp                         tsrph2     illu
+ 5      chaos                         hyp                         tsrph2     illu
+ 4      charm monster                 hyp            life         tsrph2     mage
+ 1      charm person                  hyp            life         tsrph2     mage
+ 2      charm person or mammal        hyp            life         tsrph2     drui
+ 7      charm plants                  hyp            earth        tsrph2     mage
+ 4      charm undead                  hyp            death        dgn:v4     deat
+ 1      color spray                   hyp&ill                     tsrph2     illu
+ 1      color spray                   ill&hyp                     tsrph2     illu
+ 1      command                       hyp                         tsrph2     cler
+ 7      confusion                     hyp                         tsrph2     drui
+ 4      confusion                     hyp                         tsrph2     illu
+ 4      confusion                     hyp                         tsrph2     mage
+ 2      deafness                      hyp                         tsrph2     illu
+ 4      dispel exhaustion             hyp                         tsrph2     illu
+ 0      distract                      hyp                         dgn:v3     mage
+ 4      emotion                       emp&hyp                     tsrph2     illu
+ 3      enthrall                      hyp                         dgn:v4     cler
+ 3      fear                          hyp                         tsrph2     illu
+ 4      fear                          hyp                         tsrph2     mage
+ 6      feeblemind                    hyp                         tsrph2     drui
+ 4      fire charm                    hyp&inv        fire         tsrph2     mage
+ 2      forget                        hyp                         tsrph2     mage
+ 1      friends                       hyp                         tsrph2     mage
+ 6      geas                          hyp                         tsrph2     mage
+ 3      hold animal                   hyp                         tsrph2     drui
+ 3      hold creatures                hyp                         corpse     meta
+ 5      hold monster                  hyp                         tsrph2     mage
+ 2      hold person                   hyp                         tsrph2     cler
+ 3      hold person                   hyp                         tsrph2     mage
+ 4      hold plant                    hyp            earth        tsrph2     drui
+ 5      hold undead                   hyp&nec                     dgn:v4     deat
+ 2      hypnotic pattern              hyp&ill                     tsrph2     illu
+ 1      hypnotism                     hyp                         tsrph2     illu
+ 3      illusionary script            hyp                         tsrph2     illu
+ 3      invisibility                  hyp                         tsrph2     illu
+ 8      mass charm                    hyp                         tsrph2     mage
+ 6      mass suggestion               hyp                         tsrph2     illu
+ 8      mind blank                    hyp                         tsrph2     mage
+ 8      otto's irresistible dance     hyp                         tsrph2     mage
+ 3      paralyzation                  hyp                         tsrph2     illu
+ 4      phantasmal killer             hyp                         tsrph2     illu
+ 7      power word, stun              hyp                         tsrph2     mage
+ 5      quest                         hyp                         tsrph2     cler
+ 4      rary's mnemonic enhancer      hyp                         tsrph2     mage
+ 2      ray of enfeeblement           hyp                         tsrph2     mage
+ 3      ray of paralysis              inv&hyp                     dgn:v4     deat
+ 1      remember                      hyp                         corpse     seer
+ 4      remove charm                  hyp                                    cler
+ 1      remove fear                   hyp                         tsrph2     cler
+ 2      scare                         hyp                         tsrph2     mage
+ 1      scribe                        hyp                         dgn:v4     cler
+ 4      scroll                        hyp                         dgn:v4     cler
+ 5      shadow door                   hyp&ill                     tsrph2     illu
+ 4      shadow summoning              evo&hyp                     dgn:v4     deat
+ 1      sleep                         hyp                         tsrph2     mage
+ 3      slow                          hyp/nec                     tsrph2     mage
+ 2      snake charm                   hyp                         tsrph2     cler
+ 1      spook                         hyp                         tsrph2     mage
+ 3      suggestion                    hyp                         tsrph2     illu
+ 3      suggestion                    hyp                         tsrph2     mage
+ 7      symbol                        alt&hyp                     tsrph2     cler
+ 2      tasha's laughter              emp&hyp                     tsrph2     mage
+ 2      total recall                  hyp                         corpse     seer
+ 2      trance                        hyp                         corpse     meta
+ 6      veil                          hyp&ill                     tsrph2     illu

@@ -1,0 +1,91 @@
+/ http://eberronunlimited.wikidot.com/traps
+/ http://chaoticshiny.com/trapgen.php
+
+.Trap              CR   Cost   Type                Effect
+   
+Alarm                                              An alarm brings many hostile creatures in {2d6} {duration:brief}.  {50%?In addition a net drops, trapping anyone who fails to get out of the way.}
+Ambush                                             A door slides open, revealing a hidden alcove which contains an unliving guardian (if the GM uses the tables in the Creatures section, count this creature as an Animate).
+Anti-magic                                         An anti-magic field may cause magic items to temporarily or permanently lose their properties. Magic creatures, and living magic items, will suffer damage or be destroyed, but will also be likely to sense the field from far away.
+Gas                                                A cloud of gas is released: {D12 Dungeon Fog}
+Ice                                                The area magically becomes arctic: the walls and floor turn to slippery ice, and the temperature drops. Characters may fall and/or suffer damage from the severe cold. Many of the dungeon's inhabitants may return to their lairs until the effect passes. Duration: {2d3} {duration:moderate}
+Projectile                                         Projectiles are released from a hidden mechanism in the wall {33%?{poison }{arrows|daggers|spears|darts}.
+Ramp                                               One or two people fall 1 level, taking damage as appropriate, due to a {collapsing floor|hidden trapdoor|magically disappearing section of floor}.
+Rock fall                                          Rocks fall {ahead of|behind} the party. It will take {2d4} hours to clear the obstacle (divided by the number of people working).
+Smoke                                              Smoke rises from the floor, obscuring the heroes' vision. {50%?{D12 DUNGEON FOG}:The smoke has no other bad effect.}
+Snare               1          Mechanical/Touch    Non-lethal dmg + snare  
+Spectral Scorpion   5          Magical/Proximity   Incorp touch attack + paralysis  
+Stink                                              Anyone who fails to dodge is sprayed with a {cloud of mist|jet of liquid}, which makes them more likely to be smelled by predators.
+Teleportation beam                                 Anyone who fails to dodge is teleported.
+
+Pit (acid, spikes, water etc)
+Turrets
+Scythe pendulum
+Tripwire
+Hidden spikes
+Spinning blades
+Snare
+Flame jet
+Arrow trap
+Electrified surface
+
+Trigger: making noise in a certain area   Effect: nonlethal poison gas  Radius: relatively small (those very close to trigger)
+Detection: easy   
+ 
+Trigger: saying a certain word or phrase  Effect: magical shock wave Radius: somewhat large (most of party)
+Detection: very difficult  Special: effect centered on random target, not necessarily trigger (if applicable)
+ 
+Trigger: monster/enemy killed Effect: spikes from the floor Radius: somewhat large (most of party)
+Detection: fairly easy  Special: triggering of trap accompanied by flashy pyrotechnics (if applicable)
+ 
+Trigger: making noise in a certain area   Effect: (temporarily) swaps characters' classes Radius: very large (entire vicinity)
+Detection: very difficult  Special: more than one character must trigger the trap for it to take effect (if applicable)
+ 
+Trigger: walking over something  Effect: null magic field   Radius: very large (entire vicinity)
+Detection: very difficult  Special: everything associated with the trap vanishes once the damage is complete (if applicable)
+ 
+Trigger: related to an item of furniture  Effect: deep pit opens  Radius: relatively small (those very close to trigger)
+Detection: incredibly difficult  
+ 
+Trigger: opening a door Effect: poisoned arrows from the wall(s)/door   Radius: somewhat large (most of party)
+Detection: difficult Special: damage inflicted by the trap cannot be healed with magic (if applicable)
+ 
+Trigger: flipping a lever  Effect: encases character(s) in ice Radius: somewhat large (most of party)
+Detection: nearly impossible  Special: triggering of trap accompanied by flashy pyrotechnics (if applicable)
+ 
+Trigger: interacting with an item (eg drinking potion)   Effect: spikes from the wall/door   Radius: relatively small (those very close to trigger)
+Detection: somewhat difficult Special: effect centered on random target, not necessarily trigger (if applicable)
+ 
+Trigger: unique (eg, swinging on a rope)  Effect: fire(ball) from the ceiling Radius: relatively small (those very close to trigger)
+Detection: somewhat difficult 
+ 
+ Trigger: walking over something Effect: fire(ball) from the ceiling Radius: very small (triggering character only)
+Detection: somewhat difficult 
+ 
+Trigger: interacting with an item (eg drinking potion)   Effect: crossbow bolts from the wall(s)/door Radius: medium (those near trigger)
+Detection: difficult Special: everything associated with the trap vanishes once the damage is complete (if applicable)
+ 
+Trigger: related to an item of furniture  Effect: magical shock wave Radius: medium (those near trigger)
+Detection: somewhat difficult 
+ 
+Trigger: making noise in a certain area   Effect: pit with spikes opens Radius: large (likely entire party)
+Detection: difficult Special: trap effects will continue until somehow disabled (rather than being in a burst) (if applicable)
+ 
+Trigger: trying to open fake door   Effect: scalding water from the ceiling   Radius: relatively small (those very close to trigger)
+Detection: nearly impossible  Special: effects are invisible to those not affected (if applicable)
+ 
+Trigger: closing a door Effect: chasm opens  Radius: somewhat large (most of party)
+Detection: somewhat difficult Special: remains of some sort nearby give a warning as to the trap's effects (if applicable)
+ 
+Trigger: attempting to unlock a door   Effect: nonlethal poison gas  Radius: somewhat large (most of party)
+Detection: nearly impossible  
+ 
+Trigger: related to an item of furniture  Effect: spikes from the floor Radius: somewhat large (most of party)
+Detection: difficult 
+ 
+Trigger: unique (eg, swinging on a rope)  Effect: room begins to flood with harmful substance   Speed: very quick, and exits (b)locked
+Detection: easy   Special: symbols/runes nearby in another language explain the trap to those who can read it (if applicable)
+ 
+Trigger: making noise in a certain area   Effect: spikes from the wall/door   Radius: very large (entire vicinity)
+Detection: difficult Special: timed - does not go off right away (if applicable)
+
+ 

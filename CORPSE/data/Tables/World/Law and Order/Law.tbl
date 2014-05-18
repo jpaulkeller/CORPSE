@@ -1,0 +1,15 @@
+/ inspired by http://chaoticshiny.com/lawgen.php
+
+The penalty for {75%?{:intent} }{25%?{:degree} }{crime} is {punishment}. 
+
+: intent
+attempted
+egregious
+reckless
+unconfirmed/unintentional
+willful
+
+: degree
+petty
+moderate
+severe

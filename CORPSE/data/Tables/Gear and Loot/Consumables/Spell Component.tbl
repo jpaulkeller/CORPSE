@@ -1,0 +1,342 @@
+/ Sources: Best of DRAGON, Volume IV, page 37
+/          DRAGON #147, page 24
+/          Microprose Darklands
+
+.Spell Component     Rarity     Cost    Sources
+
+acid                 uncommon    1gp/oz alchemist, brick-maker, engraver, mason
+acorns               common      5cp/lb forests
+adder stomach        scarce      5cp/lb collection
+alcohol              common      1gp/qt alchemist, dyer, jeweler, tanner, etc.
+alkaline [1]         scarce      5gp/oz alchemist, gathering, physician
+alum                 uncommon    1gp/oz alchemist, barber, dyer, physician
+amaryllis [2]        scarce     24gp/dz botanist, druid
+animal hoof          uncommon    1gp/oz alchemist, physician, stable, vet
+antimoni             uncommon
+aqua regia           uncommon
+arsenic              rare
+augury sticks        special    50pp/ea fabricated by a jeweler
+bag, tiny            common     15sp/ea leather-worker, tanner, tailor
+bark                 common      1cp/lb carpenter, druid, gathering, mill
+bat {organ}          scarce     10gp/oz gathering, magic shop
+bat, fire (ichor)               50pp/dr 
+bead, crystal        common      5sp/ea glassblower, jeweler
+beeswax              everyday    1cp/oz beekeeper, bowyer/fletcher, market
+beetle, fire (glnds)            30pp/ea
+beholder eye                    50pp/ea
+bell, small          uncommon   20gp/ea jeweler, musician, clock-maker
+berries              {rarity}   15gp/lb druid, market, gathering
+bitumen [3]          uncommon    5gp/oz alchemist, cooper, carpenter
+blink dog heart                 75pp/ea
+blood, dragon        very rare  50pp/oz alchemist, magic shop
+blood, human [4]     rare       10pp/oz alchemist, physician
+blood, mammal        uncommon    1gp/oz alchemist, butcher
+bone                 common      1gp/lb alchemist, butcher, physician
+bone, undead         rare       50gp/ea alchemist, magic shop
+brandy, drop         common      1gp/pt tavern, vintner
+brass dust           common      5sp/oz armorer, smith, etc.
+brazier              uncommon   25gp/ea chandler, smith, temple
+brimstone            uncommon
+bromine [5]          scarce      5gp/oz alchemist
+bronze disc          common     15sp/ea armorer, engraver, smith
+bulette hide                    50pp/ea
+burrs                everyday    1cp/oz gathering, stable
+butter               everyday    5cp/lb dairy, farm, market, tavern
+candles              {rarity}    varies chandler
+carbon/charcoal      common      1cp/oz chandler, library, smith
+carp, live           scarce      1sp/ea bait shop, fishmonger
+carrot               scarce      1sp/oz alchemist, market, herbalist
+castor beans [6]     rare       10gp/oz alchemist, dyer, physician
+chalk                common      1sp/ea quarry
+chamomile            uncommon
+changestaff          special    50mp/ea special
+citric acid          uncommon    1gp/pt market
+clay                 common      1gp/lb potter, sculptor, brick-maker
+cloth                everyday    varies tailor, weaver, sail-maker
+club, oaken          common      1gp/ea weapon shop, wood carver
+coal                 common      1gp/lb brick-maker, quarry, smith
+cocoa                uncommon
+cocoon               uncommon    5sp/ea druid, gathering, silk-maker
+cone, crystal        scarce     10gp/ea glassblower, jeweler
+copper piece         everyday    1cp/ea
+copper wire          common      1gp/ft smith
+corn extract         common      2sp/oz alchemist, market, herbalist
+couatl feather                  10mp/ea
+cricket, live        uncommon    1gp/ea bait shop, gathering
+crystal              uncommon    5gp/ea glassblower, jeweler
+cyclops eye                     25pp/ea
+dart                 uncommon    5sp/ea weapons shop
+demon ichor          very rare  75pp/oz alchemist, magic shop
+devil, styx (tlsmn)             50mp/ea
+displacer beast hide            75pp/ea
+djinni blood                    10mp/vl
+doll (replica)       special    30pp/ea fabricated by a mage
+down                 common      1sp/lb bowyer/fletcher, farm
+dragon bones         rare       50pp/ea magic shop
+driftwood            common      free   gathering
+drum, small          uncommon   10gp/ea musician
+dung                 everyday    1gp/lb farm, stable
+dust                 everyday    free   gathering
+eagle eye            rare       20gp/ea alchemist, magic shop
+earth, {terrain}     varies      varies gathering
+efreet blood                    10mp/vl
+egg, rotten          uncommon    1cp/ea farm, market
+eggshell             common      1cp/ea farm, market
+elemental, smoke                20mp/vl
+elixir               {rarity}   ?pp/oz alchemist
+evergreen            common      1sp/lb druid, mill
+eye of fear & flame             70mp/ea 
+eye killer eye                  50pp/ea
+eyelash              everyday    free   gathering
+eyelash, exotic      very rare  10pp/ea alchemist, magic shop
+fan                  common      3gp/ea tailor
+fat/lard             everyday    1cp/lb farm, market
+feather, exotic      scarce     15gp/ea tailor
+firefly, live        uncommon    1sp/ea gathering
+firefly tail         uncommon    5sp/ea magic shop
+flail snail shell               30pp/ea
+fleece               common      1gp/lb farm, fuller, tailor, weaver
+flesh, human [7]     rare       50gp/ea alchemist, magic shop, physician
+flint                common     10sp/ea armorer, chandler, smith, etc.
+flour, white         common      1sp/lb market, miller
+flower petal         everyday    free   gathering
+fossil               uncommon    free   gathering
+fur                  common     10gp/ea furrier, tailor, farm, fuller
+garlic               common      5cp/cl market, herbalist, tavern
+gauze                common      1sp/yd physician, healer, weaver
+gibbering mouth                 10mp/ea
+glass                uncommon   10gp/sh glassblower
+glass, {color}       uncommon    4gp/ea glassblower, jeweler
+gloomwing wings                 50pp/ea
+glove                common      3gp/pr leather-worker, tailor
+glove, snakeskin     scarce     25gp/pr tailor
+gold                 uncommon    1gp/gp goldsmith, jeweler
+golem, iron (pieces)            40pp/ea
+grain                everyday    1sp/lb bakery, brewery, farm, market, miller
+granite              common      1sp/oz quarry, mason
+grasshopper legs     uncommon    5sp/ea gathering, magic shop
+gum arabic [8]       uncommon    2gp/oz alchemist, bakery, physician
+gut                  uncommon    1gp/yd butcher, musician shop
+hammer, war          common      1gp/ea weapon maker
+hawk eye             scarce     15gp/ea alchemist, falconer, magic shop
+hen heart            uncommon    1sp/ea butcher, farm
+herring scales       uncommon    2gp/oz alchemist, fishmonger
+holly                common      5sp/oz druid, gathering
+hollyphant trunk                20mp/ea
+honey comb           everyday    1sp/pt alchemist, beekeeper, market
+horn, carved         uncommon    1gp/ea carver, stable
+horn, silver         special    10pp/ea fabricated by a silversmith
+humus [9]            common      1cp/lb farm
+ice [10]             varies      varies
+imp blood                       75pp/vl
+incense              common      1gp/ea chandler, temple
+ink                  uncommon   10gp/oz alchemist
+ink, exotic          rare       30pp/oz alchemist
+invisible stlkr bld             75pp/ea
+iron                 common      3gp/ea smith, etc.
+iron pyrite          uncommon    5gp/lb alchemist, magic shop
+jade circlet         rare       50mp/ea jeweler
+lampblack/soot       common      3cp/oz chandler, scribe, painter
+leaf, poisonous      common      1sp/ea druid, gathering
+leather loop         common      3sp/ea leather-worker, tanner
+leek                 common      5cp/ea market, tavern
+licorice root        scarce     15sp/oz alchemist, herbalise, tavern
+lime                 uncommon    1gp/lb alchemist, quarry, mason
+loam                 common      1gp/lb brick-maker, farm, foundry, quarry
+lodestone            rare       25gp/ea astonomer, navigator, chandler
+lolth spider silk               10ap/ea
+mandrake root        scarce     15sp/ea alchemist, herbalist, physician
+manganese            rare
+marble               uncommon    1gp/i3 mason, quarry
+marsh vapor/methane  rare
+marigold             common      1cp/ea druid, florist, gathering
+mercuric-nitrite     rare       50gp/oz alchemist, physician
+mercury [11]         scarce     25gp/oz alchemist, physician
+mica                 uncommon    1gp/i3 mason, quarry
+milkfat, solid       common      5sp/pt dairy, market
+mirror, silver       uncommon   20gp/ea jeweler, silversmith
+mistletoe            uncommon   10sp/lf gathering
+mithril plate        rare       50gp/oz armory, jeweler, smith
+moonseed [12]        scarce      5gp/ea druid, florist, herbalist
+mushroom             rare       50gp/oz alchemist, herbalist, physician
+myconid spores                  10mp/vl
+nail                 common      3cp/ea cooper, carpenter, smith
+naptha               rare
+necromancer skull               50mp/ea
+nettle leaves        uncommon   10gp/oz alchemist, druid, herbalist
+nickel
+nightmare hoof                  50mp/ea
+nut shells           common      1sp/lb market, gathering
+oak bark/leaf        common      1sp/lb druid, gathering
+obliviax                        50pp/ea
+octopus tentacle     rare       50gp/ea fishmonger
+oil                  common      1gp/qt alchemist, chandler
+oil, sweet           uncommon    5gp/qt alchemist, bakery
+ointment             {rarity}    ?gp/oz alchemist, physician
+orpiment             rare
+paddle, wooden       common      1sp/ea carpenter, woodcarver
+parchment            common     10sp/sh scribe, etc.
+peas, split          common      3cp/lb market
+phosphorus           uncommon    5gp/oz alchemist, artist
+pigment, {color}     uncommon    5gp/oz alchemist, artist
+pine cone            common      1cp/ea druid, gathering
+pine tar             common      5sp/pt alchemist, carpenter, painter
+pineal gland[13]     rare       25pp/ea alchemist, magic shop, physician
+pins, silver         uncommon    1sp/ea jeweler, silversmith
+pitch                common      5sp/pt carpenter, painter
+pitchblende
+planetar feather                50mp/ea
+plaque, ivory        special    20pp/ea fabricated by a jeweler
+plums, dried         common      2cp/dz market
+pork rind            common      5cp/lb butcher, market, tavern
+potion               {rarity}    ?pp/ea alchemist, magic shop
+prayer beads         common     50gp/ea temple
+prism, mineral       uncommon    5gp/ea glassblower, jeweler
+raisin               common      3cp/lb market
+reed                 common      1cp/lb gathering, mill, weaver
+resin                {rarity}    ?sp/oz alchemist, physician
+rhubarb leaf         uncommon    5sp/oz alchemist, herbalist
+roc eye              very rare  50pp/ea alchemist, magic shop
+rock                 everyday    free   gathering
+rod, amber/glass     uncommon   15gp/ea glassblower, jeweler
+rope                 common      2cp/yd outfitter, rope-maker
+rose petals          common      1cp/ea florist
+salt / rock salt     common      1gp/lb market
+saltpeter            uncommon    1gp/oz stable, quarry
+sand, {color}        uncommon    1gp/oz alchemist, gathering
+sandman sand                    30pp/pn
+scroll               scarce     35gp/ea scribe
+seashell             common      1sp/ea fishmonger, jeweler, gathering
+sesame seeds         uncommon    2gp/lb herbalist
+shamrock leaf        uncommon    5sp/ea druid, gathering
+shovel, tiny         special    50gp/ea fabricated by a jeweler
+silk                 scarce     15pp/yd clothier, tailor, weaver
+silver               common      1sp/sp jeweler, silversmith
+sinew                uncommon    1gp/ea alchemist, butcher
+skunk cabbage        uncommon    1gp/ea druid, gathering
+slug fluid           rare       50gp/pt alchemist
+smoke                everyday    free   any fire source
+snake scales         scarce     10gp/ea alchemist, magic shop
+snow [10]            varies      varies
+druid soil                      25sp/lb druid's grove
+solar feather                   50mp/ea
+son of kyuss skull              10mp/ea
+spectre dust                    50pp/vl
+spectre essence      very rare  75pp/oz alchemist, magic shop
+spell book [14]      rare       10mp/sp magic shop
+sphere, crystal      uncommon    5gp/ea glassblower, jeweler
+spider, phase, web              10mp/ea
+squid secretion      rare       50gp/pt alchemist
+stalactite           scarce      5gp/ea gathering
+statuette            special    15mp/ea fabricated by the mage
+steel                uncommon   35gp/lb smith
+stone, square        common      1cp/ea quarry, mason
+straw                common      5sp/bl farm, stable
+string/thread        everyday    1cp/yd clothier, craft shop, tailor, weaver
+stylus               uncommon    1gp/ea engraver
+sugar                common      1gp/lb market, tavern
+sulphur              uncommon    1gp/oz alchemist
+sumac                uncommon    1gp/oz druid, gathering
+talc                 uncommon    1gp/oz alchemist
+tallow               common      1cp/lb chandler
+tea, herb            uncommon    3gp/lb herbalist
+telegraph vine                  50pp/ea
+thief ear                       10mp/ea
+thorns               common      1sp/lb druid, gathering
+troglodyte gland                25pp/ea
+tort                 common      3sp/ea bakery
+tube, golden         special    10mp/ea fabricated by goldsmith or jeweler
+turtle shell         common      3sp/ea fishmonger, jeweler
+treacle              common      5sp/qt alchemist, market
+tuning fork          special    25gp/ea fabricated by a musical smith
+twigs                everyday     free  gathering
+umber hulk blood     very rare  75gp/pt alchemist
+vampire dust         very rare  10mp/oz alchemist, magic shop
+vellum               rare       50gp/sh scribe
+vermillion           uncommon   10gp/oz alchemist, dyer
+vestments            uncommon   35pp/ea tailor, temple
+vial                 common      1gp/ea alchemist, glassblower
+vinegar              common      5cp/qt market, tavern, vintner
+volt tail                       50pp/ea
+water, {terrain}     varies      varies gathering
+wax                  common      1sp/lb chandler
+weapon, tiny         special    50pp/ea fabricated by a weapons maker
+whip, braided        special    15gp/ea fabricated by a tailor
+whistle, silver      special    50gp/ea fabricated by a silversmith
+whitewash            common      1gp/gl painter
+willow branch        common      1cp/yd carpenter, druid, gathering
+wood, piece          everyday    free   gathering
+wool                 common      1cp/oz farm, fuller, tailor, weaver
+wraith dust                     50pp/vl
+wytchwood [15]       uncommon    5gp/pc druid
+ziggurat, clay       special    10pp/ea fabricated by potter or sculptor
+zink                 uncommon
+
+{fabric}
+{gem}
+{man made}
+{metal}
+{mineral}
+{wood}
+{reagent}
+
+/  Cost Information:
+/  ----------------------------------
+/  AP = Adamantite pieces (1 = 10 mp)
+/  MP = Mithril    pieces (1 = 10 pp)
+/  PP = Platinum   pieces (1 = 10 gp)
+/  GP = Gold       pieces (1 = 10 sp)
+/  SP = Silver     pieces (1 = 10 cp)
+/  CP = Copper     pieces
+
+/  Unit Information:
+/  -----------------
+/  BL = bale
+/  CL = clove
+/  DR = dram
+/  DZ = dozen (12)
+/  EA = each
+/  GL = gallon
+/  I3 = cubic inch
+/  LB = pound
+/  OZ = ounce
+/  PC = piece
+/  PN = pinch
+/  PT = pint
+/  QT = quart
+/  SH = sheet
+/  VL = vial
+/  YD = yard
+
+/  [1] - Alkaline salts are found in natural water and arid soils
+
+/  [2] - Amaryllis (Hypoxis) stalks are also called Belladonna lilies.
+
+/  [3] - Bitumen is obtained by distillation from coal or petroleum,
+/        and is occasionally found naturally.
+
+/  [4] - Human blood is rare due to taboos only.
+
+/  [5] - Bromine salts are obtained from sea water and are only
+/        uncommon in the vicinity of the ocean.
+
+/  [6] - Castor beans are common in African/Asian climates.
+
+/  [7] - Same as [4], and worse.
+
+/  [8] - Gum arabic is a gum resin exuded by Acacia trees.  Since it
+/        travels well and has many uses, it is only uncommon.
+
+/  [9] - Humus is found in compost heaps.
+
+/ [10] - Ice or snow is obviously climate dependent.
+
+/ [11] - Mercury (or quicksilver) was thought to have medicinal uses.
+
+/ [12] - Moonseed plants are found in moderate and temperate climates.
+
+/ [13] - Same as [7], and worse.
+
+/ [14] - Spell books are treated in detail in Best of DRAGON, Vol III.
+
+/ [15] - Wytchwood, found in temperate climates, is also known as Witch Elm.

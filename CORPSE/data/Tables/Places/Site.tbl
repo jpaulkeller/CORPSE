@@ -1,5 +1,99 @@
-? Sources: D&D Rules Cylcopedia, page 271
+/ Sources: D&D Rules Cylcopedia, page 271
 
-+ {Site Artificial}
-+ {Site Natural}
-{
+: Artificial
+barrows
+battlefield
+bridge
+cache of supplies
+campsite
+canal
+castle
+cave
+cemetery
+channel
+city
+college
+dam
+ditch
+drainage tunnel
+dungeon
+ferry
+ford
+fort
+hamlet
+irrigation ditch
+mass grave
+outpost
+park
+pasture
+path
+pit
+portal
+reservoir
+road
+shipwreck
+stone circle
+territory marker
+town
+trail
+village
+waterway
+well
+wharf
+{mineral} quarry 
+{mine} mine 
+{structure}
+{structure} destroyed by {disaster}
+{wood:fruit} orchard 
+{abandoned|haunted|ruins of a|underground} {structure}
+
+: Natural
+beaver dam
+canyon
+cavern
+chasm
+cliff
+coast
+copse
+cove
+desert
+escarpment
+forest
+glade
+gorge
+grotto
+grove of {wood} 
+gully
+hollow tree
+hot spring
+isle
+jungle
+lagoon
+lake
+landslide
+marsh
+meadow
+mire
+mountain pass
+natural ford
+oasis
+plateau
+pool
+promontory
+quicksand
+rapids
+ravine
+reef
+river
+shrine ({Religion})
+spring
+swamp
+thicket
+valley
+vista
+volcano
+waterfall
+wellspring
+{fauna} tracks 
+{fauna} trail
+{fauna} {den|lair|nest} 

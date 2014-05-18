@@ -1,0 +1,28 @@
+/ Sources: See SPELL.TBL
+
+.Level  Spell                         Type           Element      Source     Class
+.MetaMagic = Spell
+  
+ 6      anti-magic shell              abj/met        energy       tsrph2     mage
+ 5      death release                 met            death        corpse     meta
+ 3      dispel magic                  met                         tsrph2     cler
+ 4      dispel magic                  met                         tsrph2     drui
+ 3      dispel magic                  met                         tsrph2     mage
+ 3      dispell magic                 met                         corpse     meta
+ 4      endure                        met                         corpse     meta
+ 4      extension 1                   met                         tsrph2     mage
+ 5      extension 2                   met                         tsrph2     mage
+ 6      extension 3                   met                         tsrph2     mage
+ 2      misdirection                  div&met                     tsrph2     illu
+ 3      pause                         met                         corpse     meta
+ 8      permanency                    met                         tsrph2     mage
+ 3      reflect                       met                         corpse     meta
+ 2      release                       met                         corpse     meta
+ 1      renew                         met                         corpse     meta
+ 1      repeat                        met                         corpse     meta
+ 8      serten's spell immunity       met/abj                     tsrph2     mage
+ 2      spectral hand                 met&ill                     tsrph2     illu
+ 3      spell hold                    met                         corpse     meta
+ 2      spell lock                    met                         corpse     meta
+ 4      spell store                   met                         corpse     meta
+ 4      transfer                      met                         corpse     meta

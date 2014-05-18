@@ -1,0 +1,83 @@
+/ source or inspiration: James Hutchings
+
+: Fought Over 
+{a child|an adult} {:who}
+the people of {:group}
+the land of {:land}
+{:item}
+
+: Who 
+who is the heir to a position
+who has important information
+who is ordinary in all ways
+who has remarkable skill in {magic|art|sport|craft|oratory|religion}
+
+: Group
+a family
+a hamlet
+an outpost
+a village
+a town
+a city
+a province
+a country
+a tribe of {humanoid}
+a religious sect
+a wilderness tribe
+a coven of witches
+a school of magic
+a knightly order
+{Group Name}
+
+: Land
+a house
+a farm
+a hamlet
+an outpost
+a village
+a town
+a city
+a province
+a country
+{site}
+
+: Item
+{Artifact Name}
+magical power
+{Relic}
+{art}
+historical value
+an item of military value
+an item of purely monetary value
+
+: Conflict
+Open War: people working for the opposing sides will openly attack each other, intending to fight to the death.
+Secret War: people working for the opposing sides will attack each other, intending to fight to the death, but must hide their acts from the law and public opinion.
+Theft: people working for the opposing sides will steal from each other, and this might lead to violence - although they aren't trying to assassinate each other as above.
+Crime vs the Law: one side in the conflict is a criminal organisation, the other represents the law. The criminal side will have the advantage that they can use means that the law won't, while the law has the ability to act openly and the support of the population.
+Rebels vs the Empire: Similar to the above. However the criminals have good motives and the support of the population, and the law will do things that the criminals won't.
+Political Conflict: people working for the opposing sides are mainly trying to win the support of the population. They won't do violence to each other.
+ 
+/ You might want to roll more than once on this table, and combine the results. 
+/ For example, 'an insane serial murderer' and 'a powerful demon' might indicate that the 
+/ lunatic serves the demon, and hopes to raise it using the blood of their victims.
+ 
+: Villains
+A powerful monster, such as a dragon.
+A powerful demon (optionally, roll on the two 'Evil Magic Creatures - Titles' tables in the 'Magic and Religion' section).
+A mad wizard, witch, sorceress etc (optionally, roll on the 'Magic Specialties' and the two 'Familiars' tables in the 'Magic and Religion' section).
+An insane serial murderer.
+An evil king or prince (optionally, roll on the 'Titles of an Aristocratic Ruler' table in the 'Settlements and Countries' section).
+An evil queen (optionally, roll on the 'Titles of an Aristocratic Ruler' table in the 'Settlements and Countries' section).
+An army of monsters, such as goblins.
+Barbarian invaders.
+'Civilised' invaders.
+Alien invaders.
+A group of assassins.
+A group of thieves.
+A group of pirates.
+A group of vampires.
+The followers of an evil god.
+Roll again ignoring this result. The villain or villains are controlling the body of a child or children.
+Roll again, ignoring this result. The villain or villains are widely loved and believed to be good.
+Roll again, ignoring this result. The villain or villains used to be good, but turned evil.

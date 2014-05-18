@@ -1,3 +1,4 @@
+: Size {2d6-1}
 minuscule
 tiny
 very small
@@ -10,18 +11,30 @@ massive
 gigantic
 enormous
 
-big
-fat
-little 
 long 
 medium
 miniature
 narrow
-petite
-short 
-skinny
-tall 
 tiny
 wide
 
-: Size {2d6-1}
+: Person
+big
+fat
+fit
+little
+obese 
+petite
+short 
+skinny
+stout
+tall
+trim 
+
+: Simile
+a pea
+an acorn
+a coin
+a walnut
+- golf ball
+{an apple|a sparrow}

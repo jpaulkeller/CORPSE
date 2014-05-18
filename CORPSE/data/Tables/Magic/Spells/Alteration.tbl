@@ -1,0 +1,155 @@
+/ Sources: See SPELL.TBL
+
+.Level  Spell                         Type           Element      Source     Class
+.Alteration = Spell
+
+ 6      accelerated metabolism        alt            life         dgn148     mage
+ 1      affect normal fires           alt            fire         tsrph2     mage
+ 6      aging                         nec&alt        life         dgn:v1     witc
+ 5      air walk                      alt            air          tsrph2     cler
+ 1      alter                         alt                         corpse     meta
+ 7      alter reality                 alt&ill                     tsrph2     illu
+ 2      alter self                    alt                         tsrph2     mage
+ 5      animal growth                 alt            life         tsrph2     drui
+ 5      animal growth                 alt            life         tsrph2     mage
+ 4      arnvid's unseen limb          con&alt                     dgn148     mage
+ 3      attraction                    alt                         corpse     meta
+ 2      barkskin                      alt                         tsrph2     drui
+ 0      bluelight                     alt                         dgn:v3     mage
+ 5      bridge                        alt&con                     corpse     meta
+ 1      cantrip                       alt/inv                     tsrph2     mage
+ 0      change                        alt                         dgn:v3     mage
+ 0      clean                         alt                         dgn:v3     mage
+ 1      cloud                         alt            air          corpse     meta
+ 0      color                         alt                         dgn:v3     mage
+ 3      continual light               alt                         tsrph2     cler
+ 3      continual light               alt                         tsrph2     illu
+ 2      continual light               alt                         tsrph2     mage
+ 7      control weather               alt            a/w          tsrph2     cler
+ 1      create water                  alt/con        water        tsrph2     cler
+ 2      create water                  alt/con        water        tsrph2     drui
+ 2      darkness                      alt            void         corpse     meta
+ 2      darkness (15)                 alt            void         tsrph2     mage
+ 2      deeppockets                   enc&alt        void         tsrph2     mage
+ 6      demi-shadow magic             alt&ill                     tsrph2     illu
+ 5      demi-shadow monsters          alt&ill                     tsrph2     illu
+ 3      dig                           alt            earth        corpse     meta
+ 4      dig                           alt            earth        tsrph2     mage
+ 4      dimension door                alt???                      tsrph2     mage
+        dissipation                   alt/met                     dgn:v1     witc
+ 0      dry                           alt            water        dgn:v3     mage
+ 0      dust/dusty                    alt            earth        dgn:v3     mage
+ 7      earthquake                    alt            earth        tsrph2     cler
+ 4      empath                        emp&alt                     dgn148     mage
+ 2      enlarge                       alt                         corpse     meta
+ 1      enlarge                       alt                         tsrph2     mage
+ 1      erase                         alt                         tsrph2     mage
+ 5      ethereal armor                alt&enc        void         corpse     meta
+ 8      exchange                      emp&alt                     dgn148     mage
+ 4      eye of death                  alt&enc                     corpse     meta
+ 1      faerie fire                   alt                         tsrph2     drui
+ 1      feather fall                  alt            air          tsrph2     mage
+ 2      fire trap                     alt&inv        fire         tsrph2     drui
+ 0      firefinger                    alt            fire         dgn:v3     mage
+ 5      flesh to iron                 alt                         corpse     meta
+ 3      fly                           alt&kin        air          tsrph2     mage
+ 2      fog cloud                     alt            air          tsrph2     illu
+ 2      fools' gold                   alt/ill                     tsrph2     mage
+ 1      form mercury                  alt            earth        corpse     meta
+ 3      form metal                    alt            earth        corpse     meta
+ 0      freshen/curdle/wilt           alt                         dgn:v3     mage
+ 3      freeze/heat metal             alt            earth        dgn:v3     alch
+ 7      gate                          evo&alt        void         tsrph2     cler
+ 0      hairy                         alt                         dgn:v3     mage
+ 1      hand fire                     alt            fire         dgn:v4     cler
+ 3      haste                         alt/nec                     tsrph2     mage
+ 2      heat metal                    alt            earth        corpse     meta
+ 2      heat metal                    alt            earth        tsrph2     drui
+ 1      hold portal                   alt                         tsrph2     mage
+ 3      infravision                   alt                         tsrph2     mage
+ 2      invisibility                  alt                         tsrph2     mage
+ 1      invisibility to animals       alt            life         tsrph2     drui
+ 1      invisibility to undead        alt/abj        death        tsrph2     cler
+ 2      irritation                    alt                         tsrph2     mage
+ 2      iron flesh                    alt                         corpse     meta
+ 2      iron hand                     alt                         corpse     meta
+ 1      jump                          alt                         tsrph2     mage
+ 4      life force transfer           emp&alt                     dgn148     mage
+ 1      light                         alt                         tsrph2     cler
+ 1      light                         alt                         tsrph2     illu
+ 1      light                         alt                         tsrph2     mage
+ 7      limited wish                  alt                         tsrph2     mage
+ 1      lock                          alt                         corpse     meta
+ 4      lower water                   alt            water        tsrph2     cler
+ 6      lower water                   alt            water        tsrph2     mage
+ 4      melt                          alt                         corpse     meta
+ 1      mending                       alt                         dgn:v3     alch
+ 1      message                       alt                         tsrph2     mage
+ 5      metal to mercury              alt            earth        corpse     meta
+ 3      metal turn                    alt            earth        corpse     meta
+ 0      mute                          alt                         dgn:v3     mage
+ 4      paralyze                      alt                         corpse     meta
+ 6      part water                    alt            water        tsrph2     cler
+ 6      part water                    alt            water        tsrph2     mage
+ 5      pass wall                     alt                         corpse     meta
+ 1      pass without trace            alt                         tsrph2     drui
+ 5      passwall                      alt                         tsrph2     mage
+ 4      phase metal                   alt            e/v          corpse     meta
+        pit                           alt                         dgn:v1     witc
+ 1      plant death                   alt            earth        dgn:v4     deat
+ 3      plant growth                  alt            earth        tsrph2     drui
+ 4      plant growth                  alt            earth        tsrph2     mage
+ 0      polish                        alt                         dgn:v3     mage
+ 8      polymorph any object          alt                         tsrph2     mage
+ 4      polymorph other               alt                         tsrph2     mage
+ 4      polymorph self                alt                         tsrph2     mage
+ 7      prismatic spray               alt                         tsrph2     illu
+ 7      prismatic wall                alt                         tsrph2     illu
+ 5      projected image               alt&ill                     tsrph2     illu
+ 1      purify food & drink           alt                         tsrph2     cler
+ 1      purify water                  alt            water        corpse     meta
+ 1      purify water                  alt            water        tsrph2     drui
+ 3      quench fire                   alt            fire         corpse     meta
+ 3      reinforce                     alt                         corpse     meta
+ 6      shades                        alt&ill                     tsrph2     illu
+ 2      shadow                        alt&enc                     corpse     meta
+ 5      shadow magic                  alt&ill                     tsrph2     illu
+ 4      shadow monsters               alt&ill                     tsrph2     illu
+ 9      shape change                  alt                         tsrph2     mage
+ 2      sharpen                       alt                         corpse     meta
+ 2      shatter                       alt                         tsrph2     mage
+ 0      shine/tarnish                 alt                         dgn:v3     mage
+ 1      shocking grasp                alt                         corpse     meta
+ 2      silence (15)                  alt                         tsrph2     cler
+ 5      size control                  alt&nec                     dgn:v2     heal
+ 3      slow                          alt                         corpse     meta
+ 1      spider climb                  alt                         tsrph2     mage
+ 0      sprout                        alt                         dgn:v3     mage
+ 4      sticks to snakes              alt                         tsrph2     cler
+ 0      stitch/ravel                  alt                         dgn:v3     mage
+ 3      stone shape                   alt            earth        tsrph2     drui
+ 5      stone shape                   alt            earth        tsrph2     mage
+ 6      stone to flesh                alt                         tsrph2     mage
+ 2      strength                      alt                         tsrph2     mage
+ 7      symbol                        alt&hyp                     tsrph2     cler
+ 9      temporal stasis               alt                         tsrph2     mage
+ 0      tie/knot/tangle/untie         alt                         dgn:v3     mage
+ 9      time stop                     alt                         tsrph2     mage
+ 4      transmute                     alt                         corpse     meta
+ 7      transmute metal to wood       alt            earth        tsrph2     drui
+ 5      transmute rock to mud         alt            earth        tsrph2     drui
+ 5      transmute rock to mud         alt            earth        tsrph2     mage
+ 5      transmute rock to ore         alt            earth        dgn:v3     alch
+ 6      transmute water to dust       alt            e/w          tsrph2     mage/cler
+ 1      wall of fog                   alt            a/w          tsrph2     illu
+ 6      wall of thorns                alt            earth        tsrph2     drui
+ 2      warp wood                     alt            earth        tsrph2     drui
+ 3      water breathing               alt/nec        water        tsrph2     drui
+ 3      water breathing               alt/nec        water        tsrph2     mage
+        weight alteration             alt                         dgn:v1     witc
+ 2      whispering wind               alt                         tsrph2     mage
+ 7      wind walk                     alt&tra        air          tsrph2     cler
+ 9      wish                          alt                         tsrph2     mage
+ 2      wizard lock                   alt                         tsrph2     mage
+ 1      wizard mark                   alt                         tsrph2     mage
+ 0      wrap                          alt                         dgn:v3     mage

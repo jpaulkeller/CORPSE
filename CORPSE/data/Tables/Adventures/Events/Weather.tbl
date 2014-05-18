@@ -1,0 +1,17 @@
+.Spring     Summer      Fall        Winter
+hot         heatwave    hot         sunny
+sunny       hot         sunny       bright
+sunny       hot         bright      breezy
+bright      sunny       breezy      dull
+bright      sunny       dull        mist
+breezy      bright      dull        windy
+dull        bright      mist        overcast
+dull        breezy      mist        overcast
+mist        dull        windy       light rain
+windy       mist        overcast    heavy rain
+overcast    windy       light rain  heavy rain
+light rain  overcast    heavy rain  fog
+light rain  light rain  heavy rain  fog
+heavy rain  light rain  fog         sleet
+fog         heavy rain  fog         snow
+sleet       fog         sleet       snow

@@ -1,0 +1,36 @@
+/ inspired by http://chaoticshiny.com/charmgen.php
+
+: Charm
+{:material} {:piece} with {:decoration}{50%? on the front and {:decoration} on the back}; {:power}
+
+: Piece
+bracelet
+charm
+earring
+necklace
+ring
+
+: Material
+{bone|claw|shell|talon}
+{gem}
+{metal:enchantable}
+{wood}
+
+: Decoration
+a {charge}
+a {fauna}
+a {sigil}
+a {tiny item}
+a {~{weapon}}
+nothing
+{a glyph|glyphs}
+{a rune|runes}
+
+: Style
+asymmetrical
+ornate
+radial symmetry
+interlocking shapes
+
+: Power
+cast {Spell} once per day

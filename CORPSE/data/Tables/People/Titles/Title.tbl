@@ -1,8 +1,7 @@
-+ {TitleAcademic}
-+ {TitleBad}
-+ {TitleGood}
-+ {TitleFeudal}
-+ {TitleGuild}
-+ {TitleMilitary}
-+ {TitleReligious}
-+ {Job}
++ {title academic}
++ {title bad}
++ {title good}
++ {title feudal}
++ {title guild}
++ {title military}
++ {title religious}

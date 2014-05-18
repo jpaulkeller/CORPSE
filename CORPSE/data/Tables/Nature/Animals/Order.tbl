@@ -1,13 +1,13 @@
-@Order     Notes
+.Order     Notes
 
-Avian      Birds
-Canine     Dogs, foxes, wolves
-Feline     Cats, lions, tigers, etc.
-Insectoid  Bugs, other insects and spiders
-Mammalian  Mammals
-Phidian    Worms
-Piscine    Fish, crustaceans
-Reptilian  Reptiles and amphibians
-Rodentian  Rats and other rodents
-Ursine     Bears
-Fauna      All animals
+avian      birds
+canine     dogs, foxes, wolves
+feline     cats, lions, tigers, etc.
+insectoid  bugs, other insects and spiders
+mammalian  mammals
+phidian    worms
+piscine    fish, crustaceans
+reptilian  reptiles and amphibians
+rodentian  rats and other rodents
+ursine     bears
+fauna      all animals

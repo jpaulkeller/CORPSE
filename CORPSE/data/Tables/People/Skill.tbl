@@ -1,0 +1,452 @@
+
+/ Sources: DRAGON Magazine, #148, page 22
+/          DRAGON Magazine, #156, page 37
+/          DRAGON Magazine, #164, page 28
+/          AD&D Dungeoneer's Survival Guide, page 26
+/          AD&D Oriental Adventures, page 21, 53
+/          Boy Scouts Merit Badges
+/          Fantasy Hero, page 16
+/          D&D Rules Cyclopedia, page 82
+/          GURPS (and RPG-Asst)
+
+.Skill                          Cost
+
+absolute direction              5 pts
+absolute timing                 5 pts
+acrobatics
+acting (drama)*
+acute hearing                   2 pts/level
+acute taste and smell           2 pts/level
+acute vision                    2 pts/level
+aerial fighting
+alchemy
+alertness                       5 pts/level
+alternate magics
+ambidexterity                   10 pts
+animal driving
+animal empathy                  5 pts
+animal handling
+animal husbandry (breeding)
+animal lore
+animal mimicry
+animal packing
+animal training*
+archery
+artistic
+avoidance
+backpacking
+backstabbing (lethal strike)
+balance (& rope-walking)
+bargaining
+base defense
+basketry
+blind-fighting
+blind-shooting
+boating*
+bravery
+brawling
+breakfall
+breath control
+calligraphy
+camouflage
+camping
+canoeing
+carousing
+cartography*
+ceremony
+chanting
+charioteering
+charisma                        5 pts/level
+cheating
+clerical investment             5 or more pts, gm's discretion
+climbing, rocks
+climbing, ropes
+climbing, trees
+climbing, walls
+combat reflexes                 15 pts
+command
+common sense                    10 pts
+concealment
+conversation
+cooking*
+courtier
+craft+
+dancing
+danger sense                    15 pts
+deception
+deduction
+demolition
+detect deception
+diagnosis
+diplomacy
+disguise
+diving
+dodging
+double-jointed                  5 pts
+drawing (drafting)
+drawing (sketching)
+dressage
+eidetic memory                  30/60 pts
+empathy                         15 pts
+endurance
+engineering
+equestrian
+escape
+etiquette
+evaluation
+evasion
+falconry
+falling safely
+farming
+fast-talk
+fire building
+first aid
+fishing
+flower arranging
+food tasting
+foraging
+forestry
+forgery
+free fall
+fungus identification
+gambling
+game-playing
+gardening
+genealogy
+ground fighting
+healing
+heraldry
+hiding
+high pain threshold             10 pts
+hiking
+horsemanship
+horsemanship, combat
+hunting
+hypnotism
+iaijutsu (weapon-drawing)
+immunity to disease             10 pts
+interrogation
+intimidation
+intuition                       15 pts
+juggling*
+jumping
+kayaking
+knowledge ({domain})
+labor
+landscaping
+language ({race})
+language talent                 2 pts/level
+law and justice
+leadership
+legal enforcement powers        5, 10 or 15 pts
+lightning calculator            5 pts
+linguistics
+lip reading
+listening
+literacy                        0 or 10 pts
+lock-picking
+long-distance signalling
+longevity                       40 pts
+luck                            15 or 30 pts
+magic resistance                2 pts/level
+magical aptitude (magery)       15 points for first level 10 points/level 
+magical engineering
+marksmanship
+mathematical ability            10 pts
+mathematics
+medical
+military rank                   5 pts/level of rank
+military strategy
+military tactics
+mimicry
+mountaineering
+muscle
+music ({musical instrument})
+musical ability                 1 pt/level
+mysticism
+naturalist
+nature lore
+navigation
+night vision                    10 pts
+oratory
+orienteering
+origami
+painting
+paramedical
+parrying
+perception
+performance
+peripheral vision               15 pts
+persuasion
+pick-pocketing
+piloting+
+plant lore
+playing ({musical instrument})
+poetry
+politics
+professional ({profession})
+quick-draw
+rapid healing                   5 pts
+reading
+religion
+reputation                      variable
+riding, basic ({mount})
+riding, combat ({mount})
+rope use
+running
+sailing
+scaling (team climbing)
+scholastics
+science+
+scrounging
+sculpting
+seamanship
+shadowing
+sign language
+signaling+
+singing*
+skiing
+skin-diving
+sleight-of-hand
+slow respiration
+snare setting
+sound analysis
+spelunking
+stalking
+status                          variable
+stealth (hiding in shadows)
+stealth (silent movement)
+stealth (traceless movement)
+storytelling
+strategy
+street-wisdom
+strong will                     4 pts/level
+surveying
+survival, {region}
+survival, {terrain}
+swimming
+tactics
+teaching
+throwing
+toughness                       10/25 pts
+tracking
+trading
+trap (dis)arming
+trapping (snare-crafting)
+undersea combat
+unusual background              10 or more pts
+vaulting (with or without pole)
+ventriloquism
+veterinary
+vocational ({profession})
+voice                           10 pts
+water skills
+wealth                          variable
+weapon mastery
+weather forecasting
+whitewater rafting
+wrestling
+writing
+
+: animal
+animal handling (mh) 
+falconry        (ma) 
+packing         (mh) 
+riding          (pa)
+teamster        (ma)
+veterinary      (mh)
+
+: artistic
+artist          (mh)
+bard            (ma)
+calligraphy     (pa)
+dancing         (pa)
+musical instrument    (mh)
+photography     (ma)
+poetry          (ma)
+sculpting       (pa)
+singing         (pe)
+writing         (ma)
+
+: athletic
+acrobatics      (ph)
+breath control  (mvh)
+free fall       (pa)
+jumping         (pe)
+parachuting     (pe)
+running         (ph)
+scuba           (ma)
+skiing          (ph)
+sports          (pa)
+swimming        (pe)
+throwing        (ph)
+
+: combat/weapon
+axe/mace        (pa)
+axe throwing    (pe)
+battlesuit      (ma)
+beam weapons    (pe)
+blackjack       (pe)
+black powder weapon        (pe)
+blowpipe        (ph)
+bolas           (pa)
+bow             (ph)
+brawling        (pe)
+broadsword      (pa)
+buckler         (pe)
+crossbow        (pe)
+fast-draw       (pe)
+fencing         (pa)
+flail           (ph)
+force shield    (pe)
+force sword     (pa)
+gunner          (pa)
+guns            (pe)
+judo            (ph)
+karate          (ph)
+knife           (pe)
+knife throwing  (pe)
+lance           (pa)
+lasso (riata)   (pa)
+net             (ph)
+polearm         (pa)
+shield          (pe)
+shortsword      (pa)
+sling           (ph)
+spear           (pa)
+spear thrower   (pa)
+spear throwing  (pe)
+speed-load      (pe)
+staff           (ph)
+thrown weapon   (pe)
+two-handed axe/mace      (pa)
+two-handed sword         (pa)
+whip            (pa)
+armoury         (ma)
+blacksmith      (ma)
+carpentry       (me)
+cooking         (me)
+jeweler         (mh)
+leatherworking  (me)
+
+: craft
+mechanic        (ma)
+pottery         (ma)
+shipbuilding    (mh)
+woodworking     (pa)
+
+: language
+gesture         (me)
+sign language   (ma)
+telegraphy      (me)
+
+: medical
+diagnosis       (mh)
+first aid       (me)
+hypnotism       (mh)
+physician       (mh)
+surgery         (mvh)
+
+: outdoor
+climbing        (pa)
+fishing         (me)
+naturalist      (mh)
+navigation      (mh)
+seamanship      (me)
+survival        (ma)
+tracking        (ma)
+
+: professional
+accounting      (mh)
+computer operation     (me)
+electronics operation     (ma)
+heraldry        (ma)
+law             (mh)
+
+: psionic
+agronomy        (ma)
+alchemy         (mvh)
+anthropology    (mh)
+archaeology     (mh)
+architecture    (ma)
+astrogation     (ma)
+
+: scientific        
+astronomy       (mh)
+biochemistry    (mvh)
+botany          (mh)
+chemistry       (mh)
+computer programming   (mh)
+criminology     (ma)
+ecology         (ma)
+economics       (mh)
+electronics     (mh)
+engineer        (mh)
+forensics       (mh)
+genetics        (mvh)
+geology         (mh)
+history         (mh)
+linguistics     (mvh)
+literature      (mh)
+mathematics     (mh)
+metallurgy      (mh)
+meteorology     (ma)
+nuclear physics (mvh)
+occultism       (ma)
+physics         (mh)
+physiology      (mvh)
+prospecting     (ma)
+psychology      (mh)
+research        (ma)
+theology        (mh)
+zoology         (mh)
+
+: social
+acting          (ma)
+administration  (ma)
+area knowledge  (me)
+carousing       (pa)
+diplomacy       (mh)
+fast-talk       (ma)
+gambling        (ma)
+leadership      (ma)
+merchant        (ma)
+performance     (ma)
+politics        (ma)
+savoir-faire    (me)
+sex appeal      (ma)
+strategy        (mh)
+tactics         (mh)
+teaching        (ma)
+
+: thief/spy        
+camouflage      (me)
+demolition      (ma)
+detect lies     (mh)
+disguise        (ma)
+escape          (ph)
+forgery         (mh)
+holdout         (ma)
+intelligence analysis      (mh)
+interrogation   (ma)
+lip reading     (ma)
+lockpicking     (ma)
+pickpocket      (ph)
+poisons         (mh)
+scrounging      (me)
+shadowing       (ma)
+sleight of hand (ph)
+stealth         (pa)
+streetwise      (ma)
+traps           (ma)
+underwater demolition    (ma)
+ventriloquism   (mh)
+
+: vehicle
+bicycling       (pe)
+boating         (pa)
+driving         (pa)
+motorcycle      (pe)
+piloting        (pa)
+powerboat       (pa)
+vacc suit       (ma)

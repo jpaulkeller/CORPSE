@@ -1,0 +1,17 @@
+// inspired by http://donjon.bin.sh/fantasy/name/#setting
+
+: Battle
+The {Pseudo Class} {:Type}
+The {Evocative:Mean} {:Type}
+The {:Type} of{ the | }{Place Name}
+The {:Type} of {Name}{25%? the {Evocative:Adj}}
+The {:Type} of {Number:Plural} {{Weapon}+}
+The {:Type} of {Evocative:Mean} {Evocative:Evil}
+The {:Type} of {Evocative:Mean} {{Pseudo Class}+}
+
+: Type
+battle
+campaign
+crusade
+siege
+war{20%?s}

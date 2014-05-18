@@ -1,0 +1,77 @@
+: Who {1-7}
+All the people
+The old ones
+Men
+Women
+The {best warriors|warriors}
+The {priests|priestesses|mages|healers}
+The rulers
+
+: Custom {8-19} 
+act as if they hate
+act as if they love
+avoid
+burn
+bury
+completely ignore
+drown
+eat
+obey
+sacrifice
+serve
+worship
+ 
+: Whom {20-31} 
+children
+insects
+plants
+rocks
+snakes
+strangers
+the women
+the men
+those older than themselves
+those younger than themselves
+trees
+{livestock}
+
+: Who2 {32-38} 
+{custom:who}
+slaves
+criminals
+children
+foreigners
+corpses
+{livestock}
+
+: Verb {39-40}
+live in a
+are kept in a
+
+: Type {41-50}
+cramped
+floating
+hidden
+huge
+locked
+metal
+secret
+spherical
+underground
+wooden
+ 
+: Where {51-58}
+cage
+caravan
+cave
+pit
+tent
+temple
+tower
+{structure}
+
+: When {59-62}
+at night
+during the day
+in the {summer|fall|winter|spring}
+during holidays

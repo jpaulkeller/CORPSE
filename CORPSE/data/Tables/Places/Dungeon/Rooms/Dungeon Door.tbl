@@ -1,0 +1,75 @@
+: Dungeon Door
+8 {:type}; {:state}; made of {:material}{10%?; covered by {:covered by}}{10%?; {:special}} 
+1 doorway covered by hanging {leather|fur|cloth|strings of {beads|bells|{tiny item}}}
+1 doorway blocked by {:blocked by}
+
+: Type
+8 normal door
+1 portcullis
+1 sliding "pocket" door
+
+: State
+6 {10%?{stuck|spiked} }closed{10%?, {concealed|secret}}{50%?, {magically|mechanically} locked}
+3 closed{10%?, {concealed|secret}}{50%?, {magically|mechanically} locked}{20%?, trapped - {:trap}}
+1 {10%?{stuck|spiked} }open
+
+: Material
+7 {10%?{reinforced|rotting|scorched} }{wood}
+2 {stone|granite|marble|obsidian|slate}
+1 {metal}
+
+: Covered By
+bone
+book covers
+leather
+poisonous vines
+recycled shields
+{crustacean|tortoise} shell
+{fur and pelt.animal} pelts
+{reptile} hide
+
+: Blocked By
+boulder
+tree trunk
+curtain
+tapestry
+pile of {debris|bodies|rocks}
+illusion
+wall of {fire|ice|water|smoke}
+
+: Trap
+// damage typically 1d6 per level of dungeon
+acid shower-head above
+flame shoots up from holes in front
+block falls from ceiling
+charged with electricity
+pit opens
+sleeping gas
+spiked portcullis drops from ceiling
+poisoned needle in handle
+spear trap
+crossbow trap
+bell rings, roll for wandering monster
+teleporter
+
+: Special
+acid scars on door
+ancient pictograms
+arcane writing (read magic required to decipher)
+bas relief of demonic face (10% delivers magic mouth message)
+charred corpse in front of door
+comedic graffiti
+scratches on door
+holy symbol on chain hangs from doorknob
+human-shaped outline charred onto door
+magic circle inscribed on door
+message box hangs on door, contains {d4-1} messages
+obscene graffiti
+peephole (looks {in|out})
+sign on door reads "management" in orcish
+small bouquet of flowers placed outside door
+smell of delicious cooking meat exudes from door
+smell of perfume lingers around door
+smell of rotting meat exudes from door
+warning sign on door
+{liquid} seeping from under door

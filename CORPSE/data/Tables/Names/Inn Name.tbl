@@ -1,32 +1,37 @@
+{Adjective{!OneWord}} {Fauna{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
+{Adjective{!OneWord}} {Profession{!OneWordWithSameFirstLetter}} {Inn Type}
+{Adjective{!OneWord}} {Inn Type}
+{Charge{!OneWord}} and {Charge{!OneWord}}
 {Color:Basic{!OneWord}} and {Color:Basic{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
-{Color:Basic{!OneWord}} {Creature{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {Color:Basic{!OneWord}} {Charge{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
+{Color:Basic{!OneWord}} {Creature{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {Color:Basic{!OneWord}} {Fauna{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {Color:Basic{!OneWord}} {Flora{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {Color:Basic{!OneWord}} {Made Of{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {Color:Basic{!OneWord}} {Transport{!OneWord}} {Inn Type}
 {Creature{!OneWord}}'s {Organ{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
-{Adjective{!OneWord}} {Inn Type}
-{Adjective{!OneWord}} {Fauna{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
-{Charge{!OneWord}} and {Charge{!OneWord}}
+{Disposition} {Profession{!OneWordWithSameFirstLetter}} {Inn Type}
+{Disposition} {Humanoid{!OneWordWithSameFirstLetter}} {Inn Type}
 {Fauna{!OneWord}} and {Creature{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {Fauna{!OneWord}}'s {Home}
 {Fauna{!OneWord}}'s {Organ{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
-{Flora{!OneWord}+} and {Flora{!OneWord}+} {Inn Type}
+{{Flora{!OneWord}+}} and {{Flora{!OneWord}+}} {Inn Type}
 {Holder{!OneWord}} of {Contents{!OneWord}} {Inn Type}
 {Inn Type} by the {Site}
-{Inn Type} of {Evocative Noun}
-{Job{!OneWord}}'s {Evocative Noun{!OneWordWithSameFirstLetter}} {Inn Type}
+{Inn Type} of {Evocative:Noun}
+{Mood} {Humanoid{!OneWordWithSameFirstLetter}} {Inn Type}
+{Mood} {Profession{!OneWordWithSameFirstLetter}} {Inn Type}
 {Noise{!OneWord}} {Creature{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {Noise{!OneWord}} {Fauna{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
-{Noise{!OneWord}} {Musical_Instrument{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
-{Number} {+{Fauna{{!OneWordWithSameFirstLetter}|{!OneWord}}}} {Inn Type}
-{Number} {+{Tiny Item{{!OneWordWithSameFirstLetter}|{!OneWord}}}} {Inn Type}
-{Texture{!OneWord}} {Site Artificial{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
-{Trait{!OneWord}} {{Class@Class{!OneWordWithSameFirstLetter}|Class}}'s {Inn Type}
+{Noise{!OneWord}} {Musical Instrument{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
+{Number:TwoToFive} {{Fauna{{!OneWordWithSameFirstLetter}|{!OneWord}+}}} {Inn Type}
+{Number:TwoToFive} {{Tiny Item{{!OneWordWithSameFirstLetter}|{!OneWord}+}}} {Inn Type}
+{Profession{!OneWord}}'s {Evocative:Noun{!OneWordWithSameFirstLetter}} {Inn Type}
+{Texture{!OneWord}} {Site:Artificial{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {Trait{!OneWord}} {Creature{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {Trait{!OneWord}} {Fauna{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
-{Trait{!OneWord}} {{Job@Job{!OneWordWithSameFirstLetter}|Job}} {Inn Type}
-{Trait{!OneWord}} {{Race@Race{!OneWordWithSameFirstLetter}|Race}}'s {Inn Type}
-{Trait{!OneWord}} {Rank@{Academic|Military|Religious|Royalty}}'s {Inn Type}
+{Trait{!OneWord}} {{Class.Class{!OneWordWithSameFirstLetter}|Class}}'s {Inn Type}
+{Trait{!OneWord}} {{Profession.Profession{!OneWordWithSameFirstLetter}|Profession}} {Inn Type}
+{Trait{!OneWord}} {{Race.Race{!OneWordWithSameFirstLetter}|Race}}'s {Inn Type}
+{Trait{!OneWord}} {{Title Academic}|{Title Military}|{Title Religious}|{Title Feudal}}'s {Inn Type}
 {Famous Inn}

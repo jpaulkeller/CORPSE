@@ -1,0 +1,52 @@
+/ inspired by http://chaoticshiny.com/artgen.php
+
+. Art
+. Style {:style}
+. Condition {condition}
+. Value {value}
+
+: Art
+20 {size} {:MEDIUM}
+
+: Medium
+{:statue} of {:OF}
+{:drawing} depicting {:SUBJECT}
+
+: Statue
+{made of:hard} {bust|figurine|sculpture|statue}
+portrait
+
+: Of
+a {humanoid}
+a {fauna}
+a {monster}
+a {profession}
+{Divine Name}
+
+: Drawing 
+carving
+diorama
+drawing
+engraving
+etching
+mosaic
+mural
+sketch
+{oil|wall|watercolor} painting
+
+: Subject
+a {event}
+a {flora}
+a {~{furnishing}}
+a {musical instrument}
+a {site}
+{:OF}
+
+: Style
+archaic
+distinctive
+exotic
+impressionistic
+popular
+realistic
+unusual

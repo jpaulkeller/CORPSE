@@ -1,9 +1,26 @@
-Two
-Three
-Four
-Five
-Six
-Seven
-Eight
-Nine
-Ten
+one
+two
+three
+four
+five
+six
+seven
+eight
+nine
+ten
+eleven
+twelve
+thirteen
+twenty
+fifty
+ninety-nine
+{:twotofive} dozen
+{:twotofive} score
+{:twototen} hundred
+{:twototen} thousand
+
+: Ten {10}
+: TwoToFive {2-5}
+: TwoToTen {2-10}
+: TwoToTwelve {2-12}
+: Plural {2-20}
