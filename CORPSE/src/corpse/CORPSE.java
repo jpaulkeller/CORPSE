@@ -37,16 +37,15 @@ import corpse.ui.TreePanel;
 
 // TODO minor enhancements
 // change CMD suffix?
-// SoundX filter? or for Searches?
 // show footnotes in resolved view? (Reagent.tbl)
 // how to resolve male/female titles (Title Feudal) Maybe column like Title/Female with values like Prince/Princess
 // figure out a way to cap-init a sentence w/o cap-initing each word?
-// improve case-matching to deal with 's, words like "and/of/etc", proper nouns
 // deal with null return from prompt better
 // consider allowing ":" as field separator (specified in Column declaration?)
 // CSV format (val, "a, b", val3)
 
 // TODO moderate enhancements
+// SoundX filter? or for Searches?
 // export text
 // support .html files (table, definition)
 // support .wiki files
@@ -80,7 +79,6 @@ import corpse.ui.TreePanel;
 // while-loop for Kingdom.cmd
 // if-condition for Poison.cmd (antidote)
 // table-loop for each entry?
-// why is Depends so slow?
 
 public final class CORPSE
 {

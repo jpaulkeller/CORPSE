@@ -30,8 +30,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import utils.Utils;
-
 public final class Column implements Comparable<Column>
 {
    private static final String CC = Constants.COLUMN_CHAR;
@@ -187,8 +185,8 @@ public final class Column implements Comparable<Column>
 
    static boolean isComposite(final Table table, final String colName)
    {
-      // TODO
-      return false;
+      Column col = table.getColumn(colName);
+      return col != null && !col.composites.isEmpty();
    }
    
    // determine the start of the given column, based on the start/width of the previous column

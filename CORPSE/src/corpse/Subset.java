@@ -104,7 +104,7 @@ public final class Subset
    static Subset parseIncludedTableAsSubset(final Table table, final String token)
    {
       Subset subset = new Subset();
-      subset.name = token; // TODO
+      subset.name = token.replaceAll("[^A-Za-z0-9]", "");
       Subset.closeSubset(table);
       subset.min = table.size() + 1;
       // max will be set when the next subset is read (or EOF)

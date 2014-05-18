@@ -19,7 +19,8 @@ public class TokenRenderer extends ColoredTableRenderer
    public static final String INVALID_OPEN = "<";
    public static final String INVALID_CLOSE = ">";
 
-   private static final Pattern ERROR = Pattern.compile(INVALID_OPEN + "(.+)" + INVALID_CLOSE);
+   // match unresolved tokens (but ignore the <!> last-match pattern)
+   private static final Pattern ERROR = Pattern.compile(INVALID_OPEN + "([^!]+)" + INVALID_CLOSE);
 
    @Override
    public Component getTableCellRendererComponent(final JTable table, final Object value, final boolean isSelected,
