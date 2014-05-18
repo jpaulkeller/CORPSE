@@ -1,0 +1,94 @@
+: Container
+bag
+barrel
+basket
+box
+cask
+cauldron
+chest
+crate
+pan
+puncheon
+pyx
+quiver
+retort
+sack
+skeel
+tube
+urn
+{fabric} bag
+{fabric} pack
+{fabric} pouch
+
+: Liquids
+amphora
+barrel
+bottle
+bundle
+cask
+cauldron
+chalice
+crucible
+decanter
+flagon
+flask
+goblet
+jorum
+jug
+kettle
+pail
+pan
+pitcher
+pot
+puncheon
+skeel
+tankard
+{70%?glass:{70%?{metal}:ceramic}} vase
+{made of:hard} bowl
+{made of:hard} bucket
+{made of:hard} cup
+{made of:hard} ewer
+{made of:hard} mug
+
+: Drink
+cup
+flagon
+horn
+mug
+tankard
+
+: Potions
+{33%?{:description} }{:potion container}{33%? {:decoration}}
+
+: Potion Container
+alembic
+beaker
+bottle
+decanter
+jug
+retort
+urn
+vessel
+{80%?glass:{gem}} vial
+{metal:precious} reliquary
+{metal} flask
+
+: Description
+carved 
+dusty
+dirty
+fancy
+immaculate
+plain
+stained
+
+: Decoration
+decorated with a pattern of lines
+etched with a depiction of a {site}
+inlaid with {metal:enchantable}
+inscribed with runes
+marked with scratches
+painted {color:simple}
+protected with {metal:precious} wire
+sealed with wax
+wrapped in {fabric}

@@ -1,0 +1,67 @@
+/ Sources: ZTX Treasure software
+/ http://www.legolas.org/items/furnish.html
+
+.Furnishing         Cost        Weight
+.Quality {quality}
+
+armchair, padded    3 gp        40        
+armchair, wooden    1 gp        30        
+bed, double         8 gp        150       
+bed,single          5 gp        90        
+bench, padded       4 gp        20        
+bench, wooden       2 gp        15        
+blanket                                   
+bookcase, metal     15 gp       250       
+bookcase, wood      5 gp        100       
+bowl, pewter        2 sp        1.5       
+bowl, pottery       5 cp        1.5       
+bowl, silver        9 gp        1.5       
+buffet              7 gp        5         
+cabinet             3-8 gp      80        
+carpet              1-10 cp/sy  2/sy      
+chair, padded       2 gp        25        
+chair, wooden       1 gp        18        
+chandelier          20 gp+      30        
+chest of drawers    5-7 gp      70        
+cup, pewter         2 sp        0.5       
+cup, pottery        4 cp        0.4       
+cup, silver         2 ep        0.5       
+curtains/drapes     1-4 sp/sy   1/sy      
+cushion             1 sp  1               
+cutlery, copper     1 sp/pc     0.5/pc    
+cutlery, pewter     2 sp/pc     0.5/pc    
+cutlery, silver     5 gp/pc     0.5/pc    
+decanter, crystal   10 gp       6         
+decanter, pottery   3 cp        5.5       
+decanter, silver    5 gp        6         
+dais                                      
+desk                15 gp       35        
+divan                                     
+goblet, crystal     4 gp        1         
+goblet, pewter      4 sp        1         
+goblet, silver      2 ep        1         
+hamper              7-15 cp     4         
+hassock                                   
+kettle, iron        2-12 gp     1-6       
+loom                3-7 gp      200       
+lounge                                    
+mat                 15 cp       5         
+mattress, feather   2-4 gp      20-30     
+mattress, straw     1-3 gp      15-25     
+mirror              10-15 gp/sf 2/sf      
+musnud                                    
+pillion                                   
+pillow, feather     1-2 sp       1.5       
+plate, pewter       8 sp         0.7       
+plate, pottery      8 cp         0.6       
+plate, silver       2 gp         0.7       
+rug, small          1 sp+        5         
+rug, large          3 sp+        50        
+sconce, wall        5 cp         5         
+sofa/couch          30 gp        75        
+stool               3 gp         8         
+table               2 sp/sf      5/sf      
+throne                                    
+tub                 2-5 gp       10            
+wardrobe, plain     15 gp        50        
+wardrobe, fancy     25 gp+       85        

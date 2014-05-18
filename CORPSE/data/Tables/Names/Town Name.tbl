@@ -1,0 +1,79 @@
+: Town Name
+{20%?{:Prefix} }{Generated Name}{25%?{:suffix}}{20%? {:Postfix}}
+{15%?{:Prefix} }{Generated Name}{10%?{:suffix}}{10%? {:join} {50%?{:Postfix}:{Generated Name}}}
+
+: Prefix
+east
+great
+higher
+little
+lower
+new
+north
+old
+south
+upper
+west
+
+: Join
+by the
+on
+on the
+upon
+
+: Suffix
+borough
+burg
+bury
+castle
+den
+end
+field
+ford
+hall
+ham
+hurst
+land
+ley
+shire
+side
+ton
+ville
+wick
+wood
+worth
+
+: Postfix
+abbey
+arbor
+beach
+bridge
+castle
+corner
+crossing
+dale
+downs
+edge
+field
+fen
+ferry
+ford
+fork
+glen
+green
+heath
+hall
+hill
+hunt
+manor
+mill
+moor
+park
+parish
+point
+port
+riding
+ward
+water
+wood
+yard

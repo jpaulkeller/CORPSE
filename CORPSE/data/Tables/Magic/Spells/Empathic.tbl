@@ -1,0 +1,39 @@
+/ Sources: See SPELL.TBL
+
+.Level  Spell                         Type           Element      Source     Class
+.Empathic = Spell
+  
+ 1      animal friendship             hyp/emp        life         tsrph2     drui
+ 5      commune                       emp&spi                     tsrph2     cler
+ 5      commune with nature           emp            earth        tsrph2     drui
+ 5      communicate                   div&emp                     dgn:v4     cler
+ 1      comprehend languages          emp                         tsrph2     mage
+ 4      contact other plane           emp                         corpse     seer
+ 5      contact other plane           emp                         tsrph2     mage
+ 4      detect lie                    div/emp                     tsrph2     cler
+ 4      emotion                       emp&hyp                     tsrph2     illu
+ 4      empath                        emp&alt                     dgn148     mage
+ 1      empathy                       emp                         corpse     seer
+ 2      esp                           emp                         tsrph2     mage
+ 2      esp                           emp                         corpse     seer
+ 8      exchange                      emp&alt                     dgn148     mage
+ 4      life force transfer           emp&alt                     dgn148     mage
+ 3      mind search                   emp                         corpse     seer
+ 1      speak with animals            emp                         corpse     seer
+ 2      speak with animals            emp                         tsrph2     cler
+ 1      speak with animals            emp                         tsrph2     drui
+ 3      speak with dead               emp&nec                     tsrph2     cler
+ 3      speak with elements           emp                         corpse     seer
+ 6      speak with monsters           emp                         tsrph2     cler
+ 2      speak with plants             emp            earth        corpse     seer
+ 4      speak with plants             emp            earth        tsrph2     cler
+ 4      speak with plants             emp            earth        tsrph2     drui
+ 2      speak with the dead           emp                         corpse     seer
+ 6      stone tell                    emp            earth        tsrph2     cler
+ 2      tasha's laughter              emp&hyp                     tsrph2     mage
+ 1      taunt                         emp                         tsrph2     mage
+ 1      tongues                       emp                         corpse     seer
+ 4      tongues                       emp                         tsrph2     cler
+ 3      tongues                       emp                         tsrph2     mage
+ 2      translate                     emp                         dgn:v4     cler
+ 6      vampire dagger                enc&emp                     dgn148     mage

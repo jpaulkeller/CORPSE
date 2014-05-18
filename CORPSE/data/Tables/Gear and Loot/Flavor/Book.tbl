@@ -1,0 +1,222 @@
+// http://donjon.bin.sh/fantasy/name/#setting
+// various
+
+: Famous
+The {Title Feudal.{Male|Female}} of the {{Tiny Item}+}
+{Name#R.*#}'s Rules of Order
+{Name} {Profession} and the Order of the {Fauna}
+{Number:Plural} Shades of {Color:Simple}
+{Name} and {Name}
+How To Serve {Humanoid}
+The {Size} {Title}
+A {:Category} of {Number} {{Site}+}
+The {Fauna}, the {Class}, and the {~{Furnishing}}
+The {Degree:Adjective} {Feeling} {Insect}
+The {Number:TwoToTen} Habits of {Degree:Adjective} Successful {{Humanoid}+}
+
+: Book
+A {:Prefix} {:Category} on the {33%?{:Adjective} }{:Subject}{10%?, {:Suffix}}
+The Rise and Fall of the {:Adjective} {:Subject}{10%?, {:Suffix}}
+A {Race} in Shackles: Overcoming the Curse
+The {{:Personal}|{50%?{:Prefix} }{:Short}} of {20%?{Title} }{Name}{20%? the {Evocative Title}}
+A {Field|Pictorial} Guide to the {{Fauna}|{Flora}|{Humanoid}} of the {:Place}{10%?, {:Suffix}}
+An Argument Against {Evocative:Evil}
+Anatomy of the {Fauna}{10%?, {:Suffix}}
+The {Evocative:Adj} {:Category}{10%?, {:Suffix}}
+{Number:TwoToTwelve} {:Short}{10%?, {:Suffix}}
+Atlas of the {:Place}{10%?, {:Suffix}}
+{:Type} of {Domain}{10%?, {:Suffix}}
+Tales from the {{Inn Name}|{:Place}}
+A How To Guide for the Would Be {Profession}
+{Name}'s {Adjective{!MaybeSameFirstLetter}} {:Type{!MaybeSameFirstLetter}} 
+Deciphering the Language of {Humanoid}
+{:Famous}
+{:Place} Survival, A Beginner's Guide
+Disciplining the Wayward {Child|Pet|{Hireling Type}}
+{Monster}: Myth or Fact?
+{Domain} {:Short} of the {Group Name}
+{Fauna}: A {Chef|Hunter}'s Guide{10%?, {:Suffix}}
+A Guide to Overcoming Your {Phobia}
+The {Profession}'s Almanac{10%?, {:Suffix}}
+{Domain} for Dummies
+Poisons and Their Antidotes
+Diseases  and Their Cures
+{Name}'s {Dictionary|Encyclopedia}
+{Domain}: The {Title Guild}'s Handbook
+{Name}: The {:Adjective} {Comedies|Tragedies}
+Maps and Floorplans of the City of {Place Name}
+Heraldric Devices from {Epoch}
+Ensignia of the {Humanoid} {Castes|Clans|Tribes}
+Lineage of the Noble Families of the {Ordinal} Age
+{:Short} of the {Profession} Guild
+{:Short} of the {Epoch}
+The Battle of {Generated Name} and the Fall of {Place Name}
+{{Monster}+} of the {:Place}
+
+Manners
+Protocol
+
+{Color:Simple} and {Color:Simple{!Different}}
+Black Nights and Red Blood: A History of Lost Harnfell.
+Bleak Happenings: A history of the Mindplague.
+Bridges: The Secrets of their lasting Construction and Maintenence.
+Chants and Prayers to Placate the Sea.
+Debauchery and the Church: A Guide to Combining The Two.
+Filing & Photocopying: Role-Playing in a World of High Technology.map
+Fishing Lures for every Season.
+
+
+books from Harry Potter (Monster Book of Monsters)
+Letters to the Major: A Bordercaptain's Shame.
+Limericks for an Elven Fete.
+My Five Humans: An Ogre's Tale.
+One Bridge Too Many: Last Stand of the Excitran Cavalry.
+Ornamental Dogs and their uses in Modern Cuisine.
+Otyugh and I.
+Popular Dress and Hairstyles of the Second Age.
+Preventing Pox.
+Sewage and Irrigation of the Modern Jail.
+Shields and Bucklers of the Late Devalian Rennaisance.
+Siege Engines and their Construction and Use.
+Small Things and Gnomes.
+Small Wonder: Rise and Fall of the Halfling King.
+The Cat-Gods of Olix.
+The Demonic Tablets of Polemnes
+The Elysian Tome of Akleis
+The Enchiridion of Chaos
+The Encyclopedia Geraximus: Volume Thirty Four Ch-Cz.
+The Flora and Fungi of the Grey Forest.
+The Lost Erotica of the Orcs.
+The Lost Shrine of Amberdown: Found?.
+The Luminous Grimoire of Gimli
+The Teachings of the Great Nordoolus.
+The Thirty-Seven Useful Parts of the Catoblepas.
+The Travels and Travails of Willus and Feng.
+
+: Type
+Book
+Codex
+Compendium
+Folio
+Ledger
+Lexicon
+Libram
+Grimoire
+Manuscript
+Portfolio
+Scroll
+Tome
+
+: Category
+Account
+Almanac
+Annal
+Anthology
+Atlas
+Chronicle
+Dissertation
+Encyclopedia
+Ephemeris
+Epic
+Field Guild
+Handbook
+Journal
+Legend
+Log
+Manual
+Memoir
+Opus
+Pictorial Guide
+Research
+Saga
+Study
+Tract
+Treatise
+
+: Personal
+Advice
+Analysis
+Autobiography
+Biography
+Diary
+Philosophy
+Scripture
+
+: Short
+Articles
+Confessions
+Correspondence
+Chants
+Drawings
+Essays
+Experiments
+Fables
+Formulas
+Incantations
+Letters
+Manuscripts
+Maps
+Parchments
+Plays
+Poems
+Prayers
+Prophecies
+Quotes
+Recipes
+Research Notes
+Schematics
+Scrolls
+Secrets
+Sketches
+Songs
+Speeches
+Stories
+Tales
+Techniques
+Theories
+Verses
+Warnings
+Writings
+ 
+: Prefix
+Abridged
+Annotated
+Collated
+Collected
+Illustrated
+Gathered
+Redacted
+Revised
+Unexplained
+
+: Suffix
+Abridged
+Advanced
+Annotated
+Brief
+Complete
+Illustrated
+Redacted
+Restricted
+Revised
+Summarized
+Volume {Number}
+
+: Adjective
+{Color:Simple}
+{Evocative:Adj}
+{Ordinal}
+
+: Subject
+{Cataclysm}
+{Domain}
+{Evocative:Noun}
+{Group Name}
+{Humanoid} {Castes|Clans|Tribes} of the {:Place}
+{:Place}
+{Region}
+
+: Place
+{Place Name} {Biome}
+{Place Name} {Terrain}
+{Region}

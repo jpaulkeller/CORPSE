@@ -1,57 +1,49 @@
-? http://www.legolas.org/items/construct.html
+/ http://www.legolas.org/items/construct.html
 
-Construction   Cost  Dp's
+.Construction            Cost     Dp's
       
-Arrow slit  3 gp  
-Arrow slit, Crossletted    5 gp  
-Barbican    4000 gp  150 dp
-Bartizan, 10'd, 20'h    500 gp   25 dp
-Batter, Plinth or splay    100 gp   20 dp
-Battlement,14'l   50 gp    12 dp
-Building, Stone   750 gp   10 dp
-Building, Wood    250 gp   8-16 dp
-Buttress, Stone,     
-3'w, 5'd, 10'h    150 gp   20 dp
-Catwalk, Wooden, 10'l   20 gp    2 dp
-Ditch, 100'l, 10'd, 20'w   150 gp   
-Door, Iron, 4'w, 7'h    100 gp   10 dp
-Door, Secret, 2'w, 4'h  75 gp    1 dp
-Door, Trap, 2'w, 3'l    50 gp    1 dp
-Door, Wooden, 4'w, 7'h  25 gp    1 dp
-Door, Wooden, Reinforced,     
-4'w, 7'h    75 gp    3 dp
-Drawbridge, 10'w, 15'l  500 gp   10-15 dp
-Embrasure shutters   5 gp  4 dp
-Gate  250 gp   8-12 dp
-Gatehouse, Stone  2000 gp  120 dp
-Hoardings, Wooden, 10'l    25 gp    2 dp
-Machicolation, Stone, 10'l    250 gp   
-Merlon, 4'w, 3'd, 5'h   10 gp    10 dp
-Merlon, With arrow slit,      
-4'w, 3'd, 5'h  15 gp    10 dp
-Moat, 100'l, 10'd, 20'w    350 gp   
-Murder hole    15 gp    
-Palisade, Wooden,       
-100'l, 10'h    150 gp   6-12 dp
-Parapet, Stone, 10'l    25 gp    20 dp
-Pilaster, 5'w, 3'd, 10'h   50 gp    15 dp
-Pit, 5'cube    10 gp    
-Portcullis, 10'w, 15'h  500 gp   12 dp
-Rampart, Earth, 100'l, 10'h   150 gp   20 dp
-Stairs, Stone, 10'rise, 3'w   50 gp    5 dp
-Stairs, Wooden, 10'rise, 3'w  10 gp    1-3 dp
-Tower, Round, 20'd, 30'h   1000 gp  40 dp
-Tower, Round, 30'd, 30'h   2000 gp  60 dp
-Tower, Round, 40'd, 30'h   3000 gp  80 dp
-Tower, Square, 10'sq, 30'h    750 gp   30 dp
-Tower, Square, 20'sq, 30'h    1500 gp  40 dp
-Tower, Square, 30'sq, 30'h    2500 gp  50 dp
-Tunnel, Underground,       
-5'w, 8'h, 10'l    150 gp   5 dp
-Wall, Bastion,       
-5'w, 20'h, 40'l   750 gp   40 dp
-Wall, Curtain,       
-10'w, 20'h, 100'l    1500 gp  20 dp
-Window, Shuttered, 2'w, 4'h   5 gp  4 dp
-Window, Shuttered &     
-Barred, 2'w, 4'h  10 gp    12 dp
+arrow slit                  3 gp  
+arrow slit, crossletted     5 gp  
+barbican                 4000 gp  150 dp
+bartizan, 10'd, 20'h      500 gp   25 dp
+batter, plinth or splay   100 gp   20 dp
+battlement,14'l            50 gp   12 dp
+building, stone           750 gp   10 dp
+building, wood            250 gp   8-16 dp
+buttress, stone, 3x5x10   150 gp   20 dp
+catwalk, wooden, 10'l      20 gp    2 dp
+ditch, 10x20x100          150 gp   
+door, iron                100 gp   10 dp
+door, secret               75 gp    1 dp
+door, trap                 50 gp    1 dp
+door, wooden               25 gp    1 dp
+door, wooden, reinforced   75 gp    3 dp
+drawbridge, 10x15         500 gp   10-15 dp
+embrasure shutters          5 gp    4 dp
+gate                      250 gp    8-12 dp
+gatehouse, stone         2000 gp  120 dp
+hoardings, wooden, 10'     25 gp    2 dp
+machicolation, stone, 10' 250 gp   
+merlon, 4x5x3              10 gp   10 dp
+merlon, with arrow slit    15 gp   10 dp
+moat, 100'l, 10'd, 20'w   350 gp   
+murder hole                15 gp    
+palisade, wooden, 100x10  150 gp    6-12 dp
+parapet, stone, 10'l       25 gp   20 dp
+pilaster, 5'w, 3'd, 10'h   50 gp   15 dp
+pit, 5'cube                10 gp    
+portcullis, 10'w, 15'h    500 gp   12 dp
+rampart, earth, 100x10    150 gp   20 dp
+stairs, stone, 10x3        50 gp    5 dp
+stairs, wooden, 10x3       10 gp    1-3 dp
+tower, round, 20x30      1000 gp   40 dp
+tower, round, 30x30      2000 gp   60 dp
+tower, round, 40x30      3000 gp   80 dp
+tower, square, 10x30      750 gp   30 dp
+tower, square, 20x30     1500 gp   40 dp
+tower, square, 30x30     2500 gp   50 dp
+tunnel, 5x8x10            150 gp    5 dp
+wall, bastion, 5x20x40    750 gp   40 dp
+wall, curtain, 10x20x100 1500 gp   20 dp
+window, shuttered           5 gp    4 dp
+window, shuttered/barred   10 gp   12 dp

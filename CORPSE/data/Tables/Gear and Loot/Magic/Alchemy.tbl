@@ -1,0 +1,64 @@
+/ http://eberronunlimited.wikidot.com/alchemical-items
+/ Complete Adventurer pg 118
+
+/ DC is Alchemy crafting Difficulty Check
+
+.Item                     Cost      DC     Weight      Duration
+
+acid                       10 gp    15
+alchemist's fire           20 gp    20
+antitoxin                  50 gp    25
+armorbright (flask)        50 gp    25       1 lb
+blackeye (vial)             1 gp    15     1/2 lb
+blend cream                50 gp    20       1 lb      1 hour   
+candle, focusing          100 gp    25       1 lb      1 hour   
+catstink                   50 gp    20                 10 minutes  
+deep draught               10 gp    15     1/2 lb
+fareye oil                 25 gp    20                 1 minute 
+flash pellet               50 gp    25                 1 round + 1 round 
+freeglide                  20 gp    20                 1 hour   
+hawk's ointment            50 gp    25                 2 minutes/10 minutes 
+healer's balm              10 gp    20                 1 minute 
+ironthorn extract (flask)  25 gp    20       1 lb
+keenear powder             20 gp    20                 1 minute 
+keepcool salve (pot)       50 gp    20     1/2 lb
+liquid salt (flask)       200 gp     '       1 lb
+lockslip grease            50 gp    20                 1 minute 
+nature's draught           50 gp    25                 12 hours 
+oleum (flask)              30 gp     '       1 lb
+shapesand (jug)           100 gp    25      12 lb
+slumber sand (flask)       50 gp    12       1 lb
+smokestick                 20 gp    20
+softfoot move silently     50 gp    20       1 lb      1 hour   
+sunrod                      2 gp    25
+sunshade lotion (flask)    20 gp    20       1 lb
+suregrip                   20 gp    20                 1 minute 
+tanglefoot bag             50 gp    25
+thunderstone               30 gp    25
+tindertwig                  1 gp    20
+
+/ Blend Cream: This pale gray cream dulls the color of flesh, fur, scales, and hair. It allows those affected to better blend with background and shadow, making it easier to hide. Applying blend cream is a standard action that provokes attacks of opportunity. Blend cream provides a +1 alchemical bonus on Hide checks. The effects of blend cream last for 1 hour. Blend cream gives no ability to hide in plain sight or without sufficient cover.
+
+/ Candle, Focusing: This large green taper burns quickly, lasting only 1 hour despite its size. While burning, a focusing candle fills the air with a fresh, crisp odor. The candle is a great boon to those engaged in strenuous mental activity (Appraise, Decipher Script, Forgery, Search). Characters within 20 feet of a burning candle gain a +1 circumstance bonus on Appraise, Decipher Script, Forgery, and Search checks. When making a skill check that takes more than one action to complete (such as Decipher Script), characters gain the bonus from a focusing candle only if they spend the entire duration of the check within 20 feet of the burning candle.
+
+/ Catstink: A dose of this alchemical compound sprinkled on your trail temporarily confuses the scent ability of any creature. Any creature using scent to track you must succeed on a DC 15 Survival check or lose your trail. If the trail is lost, the creature can attempt to relocate it using the normal rules for the Track feat, but the check DC increases by 2. The odor of catstink remains in effect for 10 minutes after the substance is used. Sprinkling catstink on one's trail is a standard action that provokes attacks of opportunity.
+
+/ Fareye Oil: When applied to the eyes, this clear oil sharpens the user's vision for a short time, providing a +1 alchemical bonus on Spot checks for 1 minute. One dose of fareye oil is enough to affect the eyes of a creature of any size, but the creature must have eyes to gain any benefit from the oil. Applying fareye oil is a standard action that provokes attacks of opportunity.
+
+/ Flash Pellet: This tiny brittle object is often disguised as a button or other decoration. You can throw a flash pellet as a ranged attack with a range increment of 5 feet. When thrown against a hard surface, it bursts with a bright flash of light. All creatures within a 5-foot-radius burst must succeed on a DC 15 Fortitude save or be blinded for 1 round and dazzled for 1 round after that.
+
+/ Freeglide: This greenish-gray gel can be applied to a creature's hide, hair, clothing, or armor. The gel makes the affected surface slippery and hard to grab or hold, providing a +1 alchemical bonus on Escape Artist checks for 1 hour. One dose of freeglide is enough to coat one Medium creature. Applying freeglide is a standard action that provokes attacks of opportunity. If freeglide is applied over clothing or armor, its benefits are lost if the armor or clothing is removed. Likewise, if it is applied to a creature's skin or hide, its benefit is lost if the creature later dons clothing or armor. (Escape Artist)
+
+/ Hawk's Ointment: This thick, acidic gel temporarily sharpens the user's vision. Once its beneficial effects wear off, however, the gel burns and stings the eyes for a few minutes. After spreading the gel over her eyes, a character gains a +1 bonus on Search and Spot checks for 2 minutes. After that time, she takes a '2 penalty on Search and Spot checks for 10 minutes. Characters can halve the remaining duration of the penalty by spending a round washing out their eyes with clean water. Applying hawk's ointment or washing out one's eyes is a full-round action that provokes attacks of opportunity. (Search, Spot)
+
+/ Healer's Balm: This smooth, sweet-smelling balm allows a healer to better soothe the effects of wounds, disease, and poison. Healer's balm provides a +1 alchemical bonus on Heal checks made to help an affected creature. The effects of healer's balm last for 1 minute. One dose of healer's balm is enough to coat one Medium creature. Applying healer's balm is a standard action that provokes attacks of opportunity. It can be applied as part of a standard action made to administer first aid, treat a wound, or treat poison.
+
+/ Keenear Powder: This dry white powder sharpens a creature's hearing when applied to the ear. The powder is effective for only a short time, so it is more often used by those trying to avoid guards or sentries than by those tasked with guarding an area for a longer time. Keenear powder provides a +1 alchemical bonus on Listen checks for 1 minute. One dose of keenear powder is enough to affect the hearing of a creature of any size, but the creature must have ears to gain any benefit from the powder. Applying keenear powder is a standard action that provokes attacks of opportunity. (Listen)
+
+/ Lockslip Grease: Lockslip grease is a thick reddish oil that loosens the mechanical workings of nonmagical locks. The grease is effective for a short time and provides a slight edge to those attempting to pick a lock. Lockslip grease provides a +1 alchemical bonus on Open Lock checks made against the affected lock for 1 minute. One dose of lockslip grease is enough to affect the mechanism of a lock of any size. Although lockslip grease can affect any kind of mundane mechanical lock, it has no effect on magic locks. Applying lockslip grease to a lock is a standard action that provokes attacks of opportunity. (Open Lock)
+
+/ Nature's Draught: This substance is a murky, pungent liquid. When consumed, nature's draught causes subtle changes in the user's scent. Animals respond well to a character who has consumed nature's draught, finding her less threatening and easier to trust. Drinking a vial of nature's draught provides a +1 alchemical bonus on Handle Animal and wild empathy checks made during the next 12 hours. (Handle Animal, wild empathy)
+
+/ Softfoot: Softfoot is a fine gray powder that muffles sound when applied to the bottom of a foot or boot. It provides a +1 alchemical bonus on Move Silently checks for 1 hour. One dose of softfoot is enough to affect one Medium creature that has one pair of feet; each additional pair of feet (or similar appendages) requires another dose. Applying softfoot is a standard action that provokes attacks of opportunity. If softfoot is applied over a boot or other foot covering, its benefit is lost if the foot covering is removed. Likewise, if it is applied to a creature's skin or hide, its benefit is lost if the creature later dons footwear.
+
+/ Suregrip: This thick white paste, when applied to hands and feet, strengthens and steadies the user's grip, making it easier for the character to climb. Suregrip provides a +1 alchemical bonus on Climb checks for 1 minute. One dose of suregrip is enough to cover the hands and feet of one Medium creature. Applying suregrip is a standard action that provokes attacks of opportunity. (Climb)

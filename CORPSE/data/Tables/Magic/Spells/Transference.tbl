@@ -1,0 +1,16 @@
+.Level  Spell                         Type           Element      Source     Class
+.Transference = Spell
+  
+ 7      astral spell                  tra            void         tsrph2     cler
+ 7      astral spell                  tra            void         tsrph2     illu
+ 9      astral spell                  tra            void         tsrph2     mage
+ 3      blink                         tra                         tsrph2     mage
+ 7      duo-dimension                 tra                         tsrph2     mage
+ 9      gate                          tra            void         tsrph2     mage
+ 5      pass plant                    tra            earth        tsrph2     drui
+ 5      plane shift                   tra                         tsrph2     cler
+ 4      plant door                    tra            earth        tsrph2     drui
+ 5      teleport                      tra                         tsrph2     mage
+ 7      teleport without error        tra                         tsrph2     mage
+ 6      transport via plants          tra            earth        tsrph2     drui
+ 6      word of recall                tra                         tsrph2     cler

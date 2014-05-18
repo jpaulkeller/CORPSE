@@ -1,0 +1,22 @@
+/ Sources: TSR DM's Guide 2nd Edition, page 135, table 88
+
+Belt of {Abjuration}
+Boots of {Spell#.*(walk|fall).*#}
+Bracers of {Abjuration}
+Ring of {{Animation}|{Enchantment}}
+Scroll of {Spell}
+Tome of {Spiritual}
+Rod of {{Conjuration}|{MetaMagic}} ({#/{41-50}} charges), {30-42}" {metal:enchantable}
+Staff of {{Conjuration}|{Invocation}} ({#/{20-25}} charges), {5-6}' {wood}
+{Amulet|Necklace|Pendant} of {{Evocation}|{Hypnotic}|{Necromantic}}
+{Armor}
+{Charm}
+{Cloak|Robe} of {{Illusion}|{Transference}}
+{Equipment}
+{Gloves|Gauntlets} of {{Environmental}|{Kinetic}}
+{Goggles|Mask} of {Divination}
+{Helm|Hood} of {Empathic}
+Wand of {{Alteration}|{Conjuration}} ({#/{81-100}} charges), {wand:material} {wand:mix} {made of:hard} 
+{Musical Instrument} of {{Conjuration}|{Evocation}|{Illusion}}
+{Potion:Loot}
+{Weapon}

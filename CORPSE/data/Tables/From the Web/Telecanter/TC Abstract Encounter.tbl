@@ -1,0 +1,31 @@
+/ http://recedingrules.blogspot.com/2009/07/telecanters-dm-spurs-encounters.html
+
+: TC Abstract Encounter
+{:what} {:sense} {direction} {distance}
+ 
+: What 
+artifact
+creature
+element
+terrain
+
+: Sense
+sight
+sound
+smell
+touch
+hunch
+
+: Mood
+auspicious
+beneficial
+creepy
+evidence
+familiar
+hazardous
+hidden
+mundane
+ominous
+unexpected
+weird
+wondrous

@@ -1,91 +1,91 @@
-? Sources: GURPS Basic Set (3rd edition), supplement
+/ Sources: GURPS Basic Set (3rd edition), supplement
 
-. SOCIAL DISADVANTAGES
-Code of Honor
-Constrained (by code)
-Dependents
-Duties
-Enemies
-Impoverished
-Low status
-Odious Personal Habits
-Poverty
-Primitive
-Religious
-Reputation
-Scarred
-Social Stigma
-Status
+: Social
+code of honor
+constrained (by code)
+dependents
+duties
+enemies
+impoverished
+low status
+odious personal habits
+poverty
+primitive
+religious
+reputation
+scarred
+social stigma
+status
 
-. PHYSICAL DISADVANTAGES
-Age
-Blindness
-Color-blindness
-Crippled
-Deafness
-Diseased ({Disease})
-Eunuch
-Fat
-Hard-of-hearing
-Hemophilia
-Injured
-Juvenile
-Lame
-Low-pain-threshold
-Mute
-No sense of smell/taste
-One Arm
-One Eye
-One Hand
-One Leg
-Overweight
-Poisoned ({Poison})
-Poor vision
-Sensitive (to pain)
-Skinny
-Starving
-Stuttering
-Youth
+: Physical
+age
+blindness
+color-blindness
+crippled
+deafness
+diseased ({disease})
+eunuch
+fat
+hard-of-hearing
+hemophilia
+injured
+juvenile
+lame
+low-pain-threshold
+mute
+no sense of smell/taste
+one arm
+one eye
+one hand
+one leg
+overweight
+poisoned ({poison})
+poor vision
+sensitive (to pain)
+skinny
+starving
+stuttering
+youth
 
-. MENTAL DISADVANTAGES
-Absent Minded
-Bad Temper
-Berserk
-Bloodlust
-Bully
-Combat Paralysis
-Compulsive Behavior
-Compulsive Lying
-Cowardice
-Delusions
-Dyslexia
-Fanaticism
-Gluttony
-Greed
-Gullibility
-Honesty
-Illiteracy
-Impulsiveness
-Intolerance
-Jealousy
-Kleptomania
-Laziness
-Lecherousness
-Megalomania
-Miserliness
-Neurotic ({Neurosis})
-Overconfidence
-Pacifism
-Paranoia
-Phobic ({Phobia})
-Psychotic ({Neurosis})
-Pyromania
-Sadism
-Shyness
-Split Personality
-Stubbornness
-Too {Trait}
-Truthfulness
-Unluckiness
-Vow
-Weak Will
+: Mental
+absent minded
+bad temper
+berserk
+bloodlust
+bully
+combat paralysis
+compulsive behavior
+compulsive lying
+cowardice
+delusions
+dyslexia
+fanaticism
+gluttony
+greed
+gullibility
+honesty
+illiteracy
+impulsiveness
+intolerance
+jealousy
+kleptomania
+laziness
+lecherousness
+megalomania
+miserliness
+neurotic ({neurosis})
+overconfidence
+pacifism
+paranoia
+phobic ({phobia})
+psychotic ({neurosis})
+pyromania
+sadism
+shyness
+split personality
+stubbornness
+too {trait}
+truthfulness
+unluckiness
+vow
+weak will

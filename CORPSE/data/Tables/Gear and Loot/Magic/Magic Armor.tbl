@@ -1,0 +1,132 @@
+/ http://eberronunlimited.wikidot.com/armor-properties
+
+Armor Properties
+Magic armor is a common but vital item. In general, it protects the wearer to a greater extent than nonmagical armor. Magic armor bonuses are enhancement bonuses, never rise above +5, and stack with regular armor bonuses (and with shield and magic shield enhancement bonuses). All magic armor is also masterwork armor, reducing armor check penalties by 1.
+In addition to an enhancement bonus, armor may have special abilities, such as the ability to resist critical hits or to help the wearer hide. Special abilities count as additional bonuses for determining the market value of an item, but do not improve AC. A suit of armor cannot have an effective bonus (enhancement plus special ability bonus equivalents) higher than +10. A suit of armor with a special ability must have at least a +1 enhancement bonus.
+A suit of armor or a shield may be made of an unusual material. Roll d%: 01–95 indicates that the item is of a standard sort, and 96–100 indicates that it is made of a special substance such as adamantine or mithral (see Special Materials).
+Armor is always created so that even if the type of armor comes with boots or gauntlets, these pieces can be switched for other magic boots or gauntlets.
+Caster Level for Armor and Shields: The caster level of a magic shield or magic armor with a special ability is given in the item description. For an item with only an enhancement bonus, the caster level is three times the enhancement bonus. If an item has both an enhancement bonus and a special ability, the higher of the two caster level requirements must be met.
+Shields: Shield enhancement bonuses stack with armor enhancement bonuses, so that a +1 heavy steel shield and +1 chainmail grant a total bonus of +9 to AC. Shield enhancement bonuses do not act as attack or damage bonuses when the shield is used in a bash. The bashing special ability, however, does grant a +1 bonus on attack and damage rolls (see the special ability description). You could, in fact, build a shield that also acted as a magic weapon, but the cost of the enhancement bonus on attack rolls would need to be added into the cost of the shield and its enhancement bonus to AC. For example, a +1 buckler with +1 shield spikes would cost 3,475 gp (15 gp for the basic buckler, 150 to make it masterwork, 1,000 for the +1 bonus to AC, 10 gp for the spikes, 300 to make them masterwork, and 2,000 to make the spikes a +1 weapon).
+As with armor, special abilities built into the shield add to the market value in the form of additions to the bonus of the shield, although they do not improve AC. A shield cannot have an effective bonus (enhancement plus special ability bonus equivalents) higher than +10. A shield with a special ability must have at least a +1 enhancement bonus.
+Shield Hardness and Hit Points: Each +1 of enhancement bonus adds 2 to a shield’s hardness and +10 to its hit points. For example, a +3 heavy steel shield has hardness 16 and 50 hp. (See Table 8–8, page 158 of the Player’s Handbook, for common shield hardness and hit points.)
+Activation: Usually a character benefits from magic armor and shields in exactly the way a character benefits from nonmagical armor and shields—by wearing them. If armor or a shield has a special ability that the user needs to activate (such as with an animated shield), then the user usually needs to utter the command word (a standard action).
+Armor for Unusual Creatures: The cost of armor for nonhumanoid creatures, as well as for creatures who are neither Small nor Medium, varies from the values given on Tables 7–3 and 7–4, as described in the Armor for Unusual Creatures sidebar on page 123 of the Player’s Handbook. The cost of the masterwork quality and any magical enhancement remains the same.
+
+Armor and Shields Cost
+
+Enhancement Base Price
++1 1,000gp
++2 4,000gp
++3 9,000gp
++4 16,000gp
++5 25,000gp
++6 36,000gp
++7 49,000gp
++8 64,000gp
++9 81,000gp
++10   100,000gp
+Magic Armor and Shield Special Ability Descriptions
+Most magic armor and shields only have enhancement bonuses. Such items can also have one or more of the special abilities detailed below. Armor or a shield with a special ability must have at least a +1 enhancement bonus.
+
+Hardness and Hit Points: Each +1 of enhancement bonus adds 2 to the hardness of a suit of armor or shield, and 10 to its hit points. Only the armor or shield’s actual enhancement bonus to Armor Class applies; special properties with an enhancement bonus equivalent for the purpose of determining market price don’t increase the hardness or hit points of armor or a shield.
+Armor Subtypes: Some armor or shield entries have a subtype, either “synergy” or “relic,” in brackets following the entry’s name. A synergy item has a prerequisite, typically an existing special property already imbued into the armor to be enhanced. A relic item has special effectiveness for a character devoted to a particular deity.
+Additional rules for creating and using these items appear in Chapter 6.
+
+Magic Armor Special Abilities
+
+Name  Effect   Cost  Source
+Agility  +1 on Reflex saves   +500 gp  MIC
+Stamina  +1 on Fortitude saves   +500 gp  MIC
+Blueshine   Immune to acid damage and rust, +2 on Hide, metal armor only   +1,500 gp   MIC
+Easy travel Carry medium load as light load, walk 10 hours a day with no Con check  +1,500 gp   MIC
+Called   Call armor to you on command  +2,000 gp   MIC
+Commander   +2 on Diplomacy, allies within 30 ft. gain +1 on Will saves and –5 on Hide +2,000 gp   MIC
+Glamered Can change to look like normal clothing, on command   +2,700 gp   DMG
+Daylight Daylight for 30 minutes/day   +3,000 gp   MIC
+Mindarmor   3/day gain +5 on Will saves against mind-affecting spells and abilities +3,000 gp   MIC
+Acidic   Deals 2d4 points of acid damage/round on contact   +1 bonus MIC
+Anchoring   +5 bonus on checks to resist being moved  +1 bonus MIC
+Anchoring, greaterS  +10 bonus on checks to resist being moved +1 bonus MIC
+Blurring 3/day blur for 5 rounds +1 bonus MIC
+Death ward  1/day ignore death effect or negative energy effect   +1 bonus MIC
+Displacement   1/day displacement for 5 rounds  +1 bonus MIC
+Dragondodger   Evasion ability against breath weapons, light armor only +1 bonus MIC
+Ectoplasmic feedback 1d6 damage to incorporeal creatures +1 bonus MIC
+Energy defenseS   3/day 1d6+10 energy damage to attacker +1 bonus MIC
+Fortification, light 25% chance to negate criticals, sneak attacks   +1 bonus DMG
+Ghost ward  Armor’s enhancement bonus applies against touch attacks  +1 bonus MIC
+Mobility Gain benefit of Mobility feat, light armor only +1 bonus MIC
+Nimbleness  Maximum Dex bonus 1 higher, armor check penalty 2 less   +1 bonus MIC
+Soulbound   Stores up to 2 points of essentia for enhancement bonuses   +1 bonus MIC
+Styptic  Stabilized if dying, resistance to blood-draining attacks   +1 bonus MIC
+Twilight Arcane spell failure chance reduced by 10%   +1 bonus MIC
+Balance  +5 competence bonus on Balance   +3,750 gp   MIC
+Shadow   +5 on Hide  +3,750 gp   DMG
+Silent moves   +5 on Move Silently  +3,750 gp   DMG
+Slick +5 on Escape Artist  +3,750 gp   DMG
+Agility, improved +3 on Reflex saves   +4,000 gp   MIC
+Buoyant  +2 on Swim, no armor check penalty on Swim checks  +4,000 gp   MIC
+Landing  Ignore first 60 ft. of fall damage, always land on feet  +4,000 gp   MIC
+Stamina, improved +3 on Fortitude saves   +4,000 gp   MIC
+Quickness   +5 ft. to land speed +5,000 gp   MIC
+Gilled   Water-breathing wearer breathes and speaks freely in air +6,000 gp   MIC
+Linked   3/day telepathic bond with other linked item wearers for 1 hour   +6,000 gp   MIC
+Speed 3/day haste for 1 round +6,000 gp   MIC
+Agility, greater  +5 on Reflex saves   +8,000 gp   MIC
+Healing  1/day healed of 2d8+5 damage  +8,000 gp   MIC
+Stamina, greater  +5 on Fortitude saves   +8,000 gp   MIC
+Axeblock Damage reduction 5/bludgeoning or piercing   +2 bonus MIC
+Beastskin   Armor effective in wild shape +2 bonus MIC
+Blurring, greater As blur spell for 10 minutes, at will  +2 bonus MIC
+Energy immunity   1/day gain immunity to energy damage of choice for 1 minute +2 bonus MIC
+Hammerblock Damage reduction 5/piercing or slashing   +2 bonus MIC
+Retaliation Deals damage when you are attacked  +2 bonus MIC
+Soulbound, greater   Stores up to 4 points of essentia for enhancement bonuses   +2 bonus MIC
+Spearblock  Damage reduction 5/bludgeoning or slashing   +2 bonus MIC
+Spell resistance (13)   Spell resistance 13  +2 bonus DMG
+Woodwalk 3/day tree stride for 1 round +9,000 gp   MIC
+Magic-eating   Heal 1 point per spell level if you save against a spell +10,000 gp  MIC
+Balance, improved +10 competence bonus on Balance  +11,250 gp  MIC
+Deepdweller Breathe and function in deep water, see twice as far underwater   +12,000 gp  MIC
+Bane blind  Imperceptible to specified creature type  +15,000 gp  MIC
+Blinking 1/day blink +15,000 gp  MIC
+Fearsome 3/day panics creatures within 20 ft. for 1 round   +15,000 gp  MIC
+Shadow, improved  +10 on Hide +15,000 gp  DMG
+Silent moves, improved  +10 on Move Silently +15,000 gp  DMG
+Slick, improved   +10 on Escape Artist +15,000 gp  DMG
+Fortification, moderate 75% chance to negate critical hits, sneak attacks  +3 bonus DMG
+Ghost touch Effective against, can be used by incorporeal creatures  +3 bonus DMG
+Invulnerability   DR 5/magic  +3 bonus DMG
+Roaring  Reflects nonmagic projectiles, +4 on initiative +3 bonus MIC
+Spell resistance (15)   Spell resistance 15  +3 bonus DMG
+Vanishing   2/day completely undetectable for up to 3 minutes  +3 bonus MIC
+Wild  Bonuses apply while in wild shape   +3 bonus DMG
+Acid resistance   Absorbs 10 points of acid damage per attack  +18,000 gp  DMG
+Cold resistance   Absorbs 10 points of cold damage per attack  +18,000 gp  DMG
+Electricity resistance  Absorbs 10 points of electricity damage per attack +18,000 gp  DMG
+Fire resistance   Absorbs 10 points of fire damage per attack  +18,000 gp  DMG
+Sonic resistance  Absorbs 10 points of sonic damage per attack +18,000 gp  DMG
+Balance, greater  +15 competence bonus on Balance  +18,750 gp  MIC
+Aporter  Transports you up to 800 ft. as dimension door  +20,000 gp  MIC
+Healing, greater  2/day healed of 3d8+15 damage +24,000 gp  MIC
+Radiant  Resistance 10 against all energy attacks; radiates light +4 bonus MIC
+Menacing 3/day panics one creature within 30 ft. for 5 rounds  +30,000 gp  MIC
+Shadow, greater   +15 on Hide +33,750 gp  DMG
+Silent moves, greater   +15 on Move Silently +33,750 gp  DMG
+Slick, greater +15 on Escape Artist +33,750 gp  DMG
+Fortification, heavy Always negates critical hits, sneak attacks  +5 bonus DMG
+Freedom  Continual freedom of movement +5 bonus MIC
+Spell resistance (19)   Spell resistance 19  +5 bonus DMG
+Masking  Continual nondetection  +40,000 gp  MIC
+Acid resistance, improved  Absorbs 20 points of acid damage per attack  +42,000 gp  DMG
+Cold resistance, improved  Absorbs 20 points of cold damage per attack  +42,000 gp  DMG
+Electricity resistance, improved Absorbs 20 points of electricity damage per attack +42,000 gp  DMG
+Fire resistance, improved  Absorbs 20 points of fire damage per attack  +42,000 gp  DMG
+Sonic resistance, improved Absorbs 20 points of sonic damage per attack +42,000 gp  DMG
+Etherealness   1/day can become ethereal  +49,000 gp  DMG
+Undead controlling   Control up to 26 HD of undead per day  +49,000 gp  DMG
+Acid resistance, greater   Absorbs 30 points of acid damage per attack  +66,000 gp  DMG
+Cold resistance, greater   Absorbs 30 points of cold damage per attack  +66,000 gp  DMG
+Electricity resistance, greater  Absorbs 30 points of electricity damage per attack +66,000 gp  DMG
+Fire resistance, greater   Absorbs 30 points of fire damage per attack  +66,000 gp  DMG
+Sonic resistance, greater  Absorbs 30 points of sonic damage per attack +66,000 gp  DMG

@@ -1,0 +1,11 @@
+: Artifact
+{Evocative:Nice} {~{:Object}} of {Evocative:Good}
+{Evocative:Mean} {~{:Object}} of {Evocative:Evil}
+{Generated Name}'s {Metal:Enchantable} {~{:Object}}
+{Evocative:Adj} {~{Organ}} of {Generated Name}
+
+: Object
+{armor}
+{weapon}
+{tiny item}
+{equipment}

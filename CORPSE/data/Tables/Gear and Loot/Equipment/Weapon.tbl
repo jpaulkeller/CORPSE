@@ -1,0 +1,436 @@
+/ GURPS1 = Generic Universal RolePlaying System (Basic, 3rd edition)
+/ http://www.legolas.org/items/arms.html
+/ Player's Handbook, Sandstorm, Races of Eberron, Heroes of Battle
+
+/ MASTERWORK WEAPONS
+/ A masterwork weapon is a finely crafted version of a normal weapon. 
+/ Wielding it provides a +1 enhancement bonus on attack rolls.
+/ You can't add the masterwork quality to a weapon after it is created; it must be crafted as a masterwork weapon.
+/ The masterwork quality adds 300 gp to the cost of a normal weapon (or 6 gp to the cost of a single unit of ammunition, such as an arrow).
+/ For example, a masterwork bastard sword costs 335 gp, while a set of 10 masterwork arrows costs 70 gp. 
+/ Adding the masterwork quality to a double weapon costs twice the normal increase (+600 gp).
+/ Masterwork ammunition is damaged (effectively destroyed) when used. 
+/ The enhancement bonus of masterwork ammunition does not stack with any enhancement bonus of the projectile weapon firing it.
+/ All magic weapons are automatically considered to be of masterwork quality. 
+/ The enhancement bonus granted by the masterwork quality doesn't stack with the enhancement bonus provided by the weapon's magic.
+/ Even though some types of armor and shields (such as spiked shields) can be used as weapons, you can't create a masterwork version of such an item that confers an enhancement bonus on attack rolls.
+/ Instead, masterwork armor and shields have lessened armor check penalties (see Masterwork Armor).
+
+.Weapon                      Cost                Dmg (S)                  Dmg (M)      Dmg (L)          Critical          Range Incr       Weight        Type                      Source
+
+: Unarmed
+gauntlet                     2gp                 1d2                      1d3          1d4              x2                -                1lb           bludgeoning               player's handbook
+unarmed strike                                   1d2 [3]                  1d3 [3]      1d4 [3]          x2                -                -             bludgeoning               player's handbook
+
+: Simple Light
+spiked gauntlet              5gp                 1d3                      1d4          1d6              x2                -                1lb           piercing                  player's handbook
+light mace                   5gp                 1d4                      1d6          1d8              x2                -                4lb           bludgeoning               player's handbook
+dagger                       2gp                 1d3                      1d4          1d6              19-20/x2          10ft             1lb           piercing or slashing      player's handbook
+punching dagger              2gp                 1d3                      1d4          1d6              x3                -                1lb           piercing                  player's handbook
+sickle                       6gp                 1d4                      1d6          1d8              x2                -                2lb           slashing                  player's handbook
+
+: Simple One-Handed Melee
+club                         -                   1d4                      1d6          1d8              x2                10ft             3lb           bludgeoning               player's handbook
+heavy mace                   12gp                1d6                      1d8          2d6              x2                -                8lb           bludgeoning               player's handbook
+morningstar                  8gp                 1d6                      1d8          2d6              x2                -                6lb           bludgeoning and piercing  player's handbook
+shortspear                   1gp                 1d4                      1d6          1d8              x2                20ft             3lb           piercing                  player's handbook
+
+: Simple Two-Handed Melee
+longspear [4]                5gp                 1d6                      1d8          2d6              x3                -                9lb           piercing                  player's handbook
+quarterstaff [5]             -                   1d4/1d4                  1d6/1d6      1d8/1d8          x2                -                4lb           bludgeoning               player's handbook
+spear                        2gp                 1d6                      1d8          2d6              x3                20ft             6lb           piercing                  player's handbook
+
+: Simple Ranged
+heavy crossbow               50gp                1d8                      1d10         2d8              19-20/x2          120ft            8lb           piercing                  player's handbook
+light crossbow               35gp                1d6                      1d8          2d6              19-20/x2          80ft             4lb           piercing                  player's handbook
+dart                         5sp                 1d3                      1d4          1d6              x2                20ft             1/2lb         piercing                  player's handbook
+javelin                      1gp                 1d4                      1d6          1d8              x2                30ft             2lb           piercing                  player's handbook
+sling                        -                   1d3                      1d4          1d6              x2                50ft             0lb           bludgeoning               player's handbook
+
+: Martial Light
+throwing axe                 8gp                 1d4                      1d6          1d8              x2                10ft             2lb           slashing                  player's handbook
+light hammer                 1gp                 1d3                      1d4          1d6              x2                20ft             2lb           bludgeoning               player's handbook
+handaxe                      6gp                 1d4                      1d6          1d8              x3                -                3lb           slashing                  player's handbook
+kukri                        8gp                 1d3                      1d4          1d6              18-20/x2          -                2lb           slashing                  player's handbook
+light pick                   4gp                 1d3                      1d4          1d6              x4                -                3lb           piercing                  player's handbook
+sap                          1gp                 1d4 [3]                  1d6 [3]      1d8 [3]          x2                -                2lb           bludgeoning               player's handbook
+short sword                  10 gp               1d4                      1d6          1d8              19-20/x2          -                2lb           piercing                  player's handbook
+spiked armor                 special             1d4                      1d6          1d8              x2                -                special       piercing                  player's handbook
+light shield                 special             1d2                      1d3          1d4              x2                -                special       bludgeoning               player's handbook
+spiked light shield          special             1d3                      1d4          1d6              x2                -                special       piercing                  player's handbook
+
+: Martial One-Handed Melee
+battleaxe                    10 gp               1d6                      1d8          2d6              x3                -                6lb.          slashing                  player's handbook
+flail                        8 gp                1d6                      1d8          2d6              x2                -                5lb.          bludgeoning               player's handbook
+longsword                    15 gp               1d6                      1d8          2d6              19-20/x2          -                4lb.          slashing                  player's handbook
+heavy pick                   8 gp                1d4                      1d6          1d8              x4                -                6lb.          piercing                  player's handbook
+rapier                       20 gp               1d4                      1d6          1d8              18-20/x2          -                2lb.          piercing                  player's handbook
+scimitar                     15 gp               1d4                      1d6          1d8              18-20/x2          -                4lb.          slashing                  player's handbook
+heavy shield                 special             1d3                      1d4          1d6              x2                -                special       bludgeoning               player's handbook
+heavy spiked shield          special             1d4                      1d6          1d8              x2                -                special       piercing                  player's handbook
+trident                      15 gp               1d6                      1d8          2d6              x2                -                4lb.          piercing                  player's handbook
+warhammer                    12 gp               1d6                      1d8          2d6              x3                -                5lb.          bludgeoning               player's handbook
+
+: Martial Two-Handed Melee
+falchion                     75 gp               1d6                      2d4          2d6              18?20/?2          ?                8lb.          slashing                  player's handbook
+glaive [4]                    8 gp               1d8                      1d10         2d8              ?3                ?                10lb.         slashing                  player's handbook
+greataxe                     20 gp               1d10                     1d12         3d6              ?3                ?                12lb.         slashing                  player's handbook
+greatclub                    5 gp                1d8                      1d10         2d8              x2                ?                8lb.          bludgeoning               player's handbook
+heavy flail                  15 gp               1d8                      1d10         2d8              19?20/?2          ?                10lb.         bludgeoning               player's handbook
+greatsword                   50 gp               1d10                     2d6          3d6              19?20/?2          ?                8lb.          slashing                  player's handbook
+guisarme [4]                 9 gp                1d6                      2d4          2d6              ?3                ?                12lb.         slashing                  player's handbook
+halberd                      10 gp               1d8                      1d10         2d8              ?3                ?                12lb.         piercing or slashing      player's handbook
+lance [4]                    10 gp               1d6                      1d8          2d6              ?3                ?                10lb.         piercing                  player's handbook
+ranseur [4]                  10 gp               1d6                      2d4          2d6              ?3                ?                12lb.         piercing                  player's handbook
+scythe                       18 gp               1d6                      2d4          2d6              ?4                ?                10lb.         piercing or slashing      player's handbook
+
+: Martial Ranged
+longbow                      75 gp               1d6                      1d8          2d6              ?3                100 ft.          3lb.          piercing                  player's handbook
+composite longbow            100 gp              1d6                      1d8          2d6              ?3                110 ft.          3lb.          piercing                  player's handbook
+shortbow                     30 gp               1d4                      1d6          1d8              ?3                60 ft.           2lb.          piercing                  player's handbook
+composite shortbow           75 gp               1d4                      1d6          1d8              ?3                70 ft.           2lb.          piercing                  player's handbook
+atlatl                       10 gp               1d3                      1d4          1d6              ?3                50 ft.           2lb.          piercing                  sandstorm
+
+: Exotic Light Melee
+drow long knife              15 gp               1d4                      1d6          1d8              19?20/?2          10 ft.           2lb.          piercing                  races of eberron
+dwarven buckler-axe          20 gp               1d4                      1d6          1d8              x3                ?                4lb.          slashing                  complete warrior
+collapsing crescent fan      40 gp               1d4                      1d6          1d8              19?20/?2          ?                2lb.          slashing                  sandstorm
+eagle's claw                 20 gp               1d4                      1d6          1d8              18?20/?2          ?                2lb.          slashing and piercing     sandstorm
+elven lightblade             50 gp               1d4                      1d6          1d8              18?20/?2          ?                1lb.          piercing                  complete warrior
+fingerblade                  45 gp               1d4                      1d6          1d8              ?3                ?                2lb.          piercing                  sandstorm
+gnome tortoise blade         10 gp               1d4                      1d6          1d8              19?20/?2          ?                3lb.          piercing                  complete warrior
+kama                         2 gp                1d4                      1d6          1d8              ?2                ?                2lb.          slashing                  player's handbook
+manople [6]                  35 gp               1d4                      1d6          1d8              19?20/?2          ?                1lb.          slashing or piercing      sandstorm
+nunchaku                     2 gp                1d4                      1d6          1d8              ?2                ?                2lb.          bludgeoning               player's handbook
+sai                          1 gp                1d3                      1d4          1d6              ?2                10 ft.           1lb.          bludgeoning               player's handbook
+siangham                     3 gp                1d4                      1d6          1d8              ?2                ?                1lb.          piercing                  player's handbook
+scorpion claws               160 gp              1d4                      1d6          1d8              ?2                ?                6lb.          slashing or piercing      sandstorm
+
+: Exotic One-Handed Melee
+bastard sword                35 gp               1d8                      1d10         2d8              19?20/?2          ?                6lb.          slashing                  player's handbook
+dire pick                    30 gp               1d6                      1d8          2d6              ?4                ?                12lb.         piercing                  complete warrior
+elven thinblade              100 gp              1d6                      1d8          2d6              18?20/?2          ?                3lb.          piercing                  complete warrior
+great scimitar               200 gp              1d6                      1d8          2d6              18?20/?2          ?                8lb.          slashing                  sandstorm
+khopesh                      16 gp               1d4                      1d6          1d8              18?20/?2          ?                4lb.          slashing                  sandstorm
+maul                         15 gp               1d8                      1d10         2d8              ?3                ?                20lb.         bludgeoning               complete warrior
+ribbonweave                  70 gp               1d6                      1d8          2d6              19?20/?2          ?                3lb.          slashing                  races of eberron
+scorpion-tail whip           75 gp               1d3 [3]                  1d4 [3]      1d6 [3]          ?2 (plus poison)  ?                3lb.          slashing or piercing      sandstorm
+scourge                      20 gp               1d6                      1d8          2d6              ?2                ?                2lb.          slashing                  complete warrior
+thrombash [7]                15 gp               1d4                      1d6          1d8              ?3                10 ft.           3lb.          piercing or slashing      sandstorm
+dwarven waraxe               30 gp               1d8                      1d10         2d8              ?3                ?                8lb.          slashing                  player's handbook
+warmace                      25 gp               1d10                     1d12         3d6              ?2                ?                10lb.         bludgeoning               complete warrior
+whip [4]                     1 gp                1d2 [3]                  1d3 [3]      1d4 [3]          ?2                -                2lb.          slashing                  player's handbook
+
+: Exotic Two-Handed Melee
+battlehorn [5]               50 gp               1d6/1d6                  1d8/1d8      2d6/2d6          ?3                ?                10lb.         piercing                  sandstorm
+crescent scythe [5]          18 gp               1d6/1d6                  1d8/1d8      2d6/2d6          ?3                ?                20lb.         slashing                  sandstorm
+dire flail [5]               90 gp               1d6/1d6                  1d8/1d8      2d6/2d6          ?2                ?                10lb.         bludgeoning               player's handbook
+double hammer [5]            70 gp               1d6/1d6                  1d8/1d8      2d6/2d6          ?3                ?                18lb.         bludgeoning               complete warrior
+double khopesh [5]           30 gp               1d4/1d4                  1d6/1d6      1d8/1d8          18?20/?2          ?                8lb.          slashing                  sandstorm
+drow scorpion chain          25 gp               1d4                      1d6          1d8              19?20/?2          ?                12lb.         slashing                  races of eberron
+dwarven urgosh [5]           50 gp               1d6/1d4                  1d8/1d6      2d6/1d8          ?3                ?                12lb.         slashing or piercing      player's handbook
+gnome hooked hammer [5]      20 gp               1d6/1d4                  1d8/1d6      2d6/1d8          ?3/?4             ?                6lb.          bludgeoning and piercing  player's handbook
+goliath greathammer          30 gp               1d10                     1d12         3d6              ?4                ?                30lb.         bludgeoning               races of stone
+greatspear [4]               25 gp               1d10                     2d6          3d6              ?3                10 ft.           9lb.          piercing                  complete warrior
+great falchion               100 gp              1d8                      1d12         3d6              18?20/?2          ?                12lb.         slashing                  sandstorm
+heavy poleaxe [4]            20 gp               1d10                     2d6          3d6              ?3                ?                15lb.         piercing or slashing      complete warrior
+lajatang [5]                 90 gp               1d6/1d6                  1d8/1d8      2d6/2d6          ?2                ?                7lb.          slashing                  complete warrior
+mancatcher [4]               20 gp               1d3[3]                   1d4[3]       1d6[3]           ?2                ?                8lb.          bludgeoning               complete warrior
+orc double axe [5]           60 gp               1d6/1d6                  1d8/1d8      2d6/2d6          ?3                ?                15lb.         slashing                  player's handbook
+spiked chain [4]             25 gp               1d6                      2d4          2d6              ?2                ?                10lb.         piercing                  player's handbook
+two bladed sword [5]         100 gp              1d6/1d6                  1d8/1d8      2d6/2d6          19?20/?2          ?                10lb.         slashing                  player's handbook
+
+: Exotic Ranged
+blowgun                      15 gp               1d2                      1d3          1d4              ?2                10 ft.           2lb.          piercing                  complete warrior
+bolas                        5 gp                1d3 [3]                  1d4 [3]      1d6 [3]          ?2                10 ft.           2lb.          bludgeoning               player's handbook
+bolas, barbed                10 gp               1d3                      1d4          1d6              ?2                10 ft.           3lb.          piercing
+crossbow, hand               100 gp              1d3                      1d4          1d6              19?20/?2          30 ft.           2lb.          piercing                  player's handbook
+crossbow, repeating heavy    400 gp              1d8                      1d10         2d8              19?20/?2          120 ft.          12lb.         piercing                  player's handbook
+crossbow, repeating light    250 gp              1d6                      1d8          2d6              19?20/?2          80 ft.           6lb.          piercing                  player's handbook
+greatbow                     150 gp              1d8                      1d10         2d8              ?3                120 ft.          6lb.          piercing                  complete warrior
+greatbow, composite          200 gp              1d8                      1d10         2d8              ?3                130 ft.          6lb.          piercing                  complete warrior
+net                          20 gp               ?                        ?            -                ?                 10 ft.           6lb.          ?                         player's handbook
+shuriken                     2sp                 1                        1d2          1d3              ?2                10 ft.           1/2lb.        piercing                  player's handbook
+boomerang                    10 gp               1d3 [3]                  1d4 [3]      1d6 [3]          ?2                20 ft.           2lb.          bludgeoning               sandstorm
+desert throwing-knife        3 gp                1d4                      1d6          1d8              19?20/?2          15 ft.           1lb.          piercing                  sandstorm
+kylie                        15 gp               1d4                      1d6          1d8              ?2                20 ft.           5lb.          bludgeoning               sandstorm
+
+/ [1] Weight figures are for Medium weapons. A Small weapon weighs half as much, and a Large weapon weighs twice as much.
+/ [2] When two types are given, the weapon is both types (meaning the damage is divided between the two types) if the entry specifies AND, or either type (player's choice at time of attack) if the entry specifies OR.
+/ [3] The weapon deals nonlethal damage rather than lethal damage.
+/ [4] Reach weapon.
+/ [5] Double weapon.
+/ [6] This weapon can also be used as a shield. See Armor for details.
+/ [7] This weapon can be used in melee as a martial weapon but is an exotic weapon when thrown.
+
+/                 Atck  Base   Min  Min   Weight   Use  Type  Range  Cost
+/ Weapon Name     Time  Dmg    Dex  Str   (Oz.)               Len"   (sp)
+/ -----------     ----  ----   ---  ---   ------   ---  ----  ------ ----
+
+.Weapon           Time  Dmg    Dex   Str  Weight   Use  Type  Range  Cost
+
+unarmed            0      2      5-    5      0     b     u      0       0
+dagger             1      3      6     6     20    p,s   h/m  6-20      20
+ knife             1      2      6     6     15    p,s   h/m     6      10
+ long knife        1      3      6     6     25    p,s    h     15      30
+ dirk              1      3      6     6     20    p,s   h/m    12      20
+rapier             1      3     10     7            p     h     36
+ epee              1      3     10     7            p     h      ?
+ foil              1      3     10     7            p     h
+sabre              2      4      8     8            s     h     36
+ scimitar          2      4      8     8            s     h     36
+ cutlass           3      4      8     8            s     h      m
+sword              3      5      8     9    150    p,s    h      m     250
+ short sword       2      4      8     8     50    p,s    h     24     100
+ long sword        3      5      8    10           p,s    h     45     300
+ katana            3      6     10+    8           p,s    h      m     500
+ broad sword       4      6      8+   10           psc    h     42     300
+ estoc             3      5      8+    9           p,s    h      m     350
+ falchion          4      6      8+   10           psc    h      m     400
+ bastard sword     4      6      8+   10           psc    h     54     325
+ 2-hnd sword       5      7      8*   12    225    psc    h     72     500
+sickle             2      3      7     7     50    s,c    h     25      10
+scythe             4      5      7     7           s,c    p
+mace               2      4      7     9    100     b     h     22      50
+ maul              2      4      7     9            b     h     18
+ club              2      3      7     8     50     b     h      m     <10
+ 2-handed mace     4      6      7*   10    150     b     h     30      80
+ 2-hnd flail       5      6      8*   10    240     b     h     40     150
+ flail             4      5      9     9     80     b     h      m      80
+ morning star      4      6     10+    9            b     h     48
+ war hammer        5      7      7+   10     90     b     h     40      30
+ mattock
+war pick           6      7      8*   10    100    b,p    h     36      80
+1-handed pick      4      4      9     9     65    b,p    h      m      70
+axe                4      6      8+    8    100     c     h     36      35
+ hatchet           3      3      7     6     32     c    h/m    16      15
+ hand axe          3      5      8     7     85     c    h/m    20      20
+ battle axe        5      7      8*    9    120     c     h     48      50
+
+staff              2      3      8*    7            b    h/p     l      10
+ quarter staff     2      3      8*    7     65     b    h/p     84     10
+ war staff         2      4      8*    8           b,p   h/p     l      10
+trident            4      5      7     8     80     p    h/p     60    150
+spear              5      6      7     8     75     p    h/p     l      10
+ short spear       4      5      7+    7            p    h/m     72
+ long spear        6      6      7*    9            p     p     144
+ lance             6      9      8    11    225     p     p     144    150
+
+pole arms          6      6      7*   10    225     *     p      90    100
+
+bow                1      -      9*    8     40     -     l     18     500
+ composite bow     1      1      9*    9     45     -     l     20    1000
+ short bow         1      -      9*    7     25     -     l     15     300
+ long bow          2      1      9*    9     50     -     l   22=240+y/72"   750
+ cross bow         2      -      7*    7    150     -     l     20     400
+ heavy cross bow   3      -      7*    9    224     -     l   24=475y  500
+ light cross bow   1      -      8*    7    112     -     l     18     350
+ hand cross bow    1      -      9     5     48     -     l      6    3000
+dart               1      1      8     4      4     p     m      4       5
+blow gun/pipe      1      -      ?     -     16     -     l     84"     50
+shuriken           2      3                         p     m      2       5
+throwing axe       4      4      8     7     75     c     m      3      10
+javelin            4      4      7     7     40     p     m      6      50
+harpoon            5      6      7     9    100     p     m      3     200
+sling              2      -      9-    5      1     -     l      -       1
+staff sling        4      -      9-    6     30     -     l    x.5       2
+
+
+Bladed Weapons
+dagger or dirk             2 gp  1  1-4/1-3  s  p  2  2/1   1/2/3
+dagger, bone               1 sp  1  1-2/1-2  s  p  2  2/1   1/2/3
+dagger, parrying           5 gp  1  1-3/1-3  s  p  2  2/1   .5/1/2
+dagger, stone              2 sp  1  1-3/1-2  s  p  2  2/1   1/2/3
+knife                      5 sp  0.5   1-3/1-2  s  p/s   2  2/1   1/2/3
+knife, bone                3 cp  0.5   1-2/1-2  s  p/s   2  2/1   1/2/3
+knife, stone               5 cp  0.5   1-2/1-2  s  p/s   2  2/1   1/2/3
+main-gauche **             3 gp  2  1-4/1-3  s  p/s   2
+stiletto                   5 sp  0.5   1-3/1-2  s  p  2  2/1   1/2/3
+sword, bastard            25 gp    10    1-8/1-12    m  s  6
+2-handed                  25 gp    10    2-8/2-16    m  s  8
+sword, broad              10 gp    8.5   2-8/2-7  m  s  5
+sword, claymore           25 gp    10    1-10/3-18   l  s  10
+sword, cutlass            12 gp    4  1-6/1-8  m  s  3
+sword, drusus             50 gp    3  2-7/2-9  m  s  3
+sword, falchion           17 gp    8  2-7/2-8  m  s  5
+sword, katana            100 gp   6  1-10/1-12   m  s/p   4
+two handed                 100 gp   6  2-12/2-12   m  s/p   4
+sword, kopesh             10 gp    7  2-8/1-6  m  s  9
+sword, long               15 gp    4  1-8/1-12    m  s  5
+sword, rapier             15 gp    3.5   2-7/2-9  m  p  4
+sword, saber              17 gp    5  2-7/2-9  m  s  4
+sword, scimitar           15 gp    4  1-8/1-8  m  s  5
+sword, short              10 gp    3  1-6/1-8  s  p  3
+sword, 2-handed           50 gp    15    1-10/3-18   l  s  10
+sword, wakizashi          50 gp    3  1-8/1-8  m  s/p   3
+sword, wooden, boku-toh    1 gp  3  1-4/1-2  -  -  -
+
+Hafted Weapons
+axe, battle, 2-handed     15 gp    17    1-10/1-12   l  s  12
+axe, battle                5 gp  7  1-8/1-8  m  s  7
+axe, hand                  1 gp  5  1-6/1-4  m  s  4  1
+club                       -  3  1-6/1-3  m  b  4  1  1/2/3
+flail, footman's          15 gp    15    2-7/2-8  m  b  7
+flail, horseman's          8 gp  5  2-5/2-5  m  b  6
+hammer, maul               5 gp  10    1-6/1-8  m  b  9
+hammer, war                2 gp  5  2-5/1-4  m  b  4  1  1/2/3
+mace, footman's            8 gp  10    2-7/1-6  m  b  7
+mace, horseman's           5 gp  6  1-6/1-4  m  b  6
+morning star              10 gp    12    2-8/2-7  m  p/b   7
+pick, military, footman's  8 gp  6  2-7/2-8  m  p  7
+pick, military, horseman's 7 gp  4  2-5/1-4  m  p  6
+sickle                     6 sp  3  1-6/1-4  s  s  4
+
+Misc Weapons
+aklys                      2 gp  3.5   1-6/1-3  -  -  -
+atlatl   1 gp  1  -  -  -  -
+blackjack   2 sp  5  1-4/1-2  -  -  -
+belaying pin   2 cp  2  1-3/1-3  s  b  4
+bolas    5 sp  2  1-3/1-2  m  b  8  1  3/6/9
+caltrop  2 sp  0.4   1-1/1-2  s  p  -
+caviler  450 gp   11    1-8/1-8  m  p  12    1/4   4/8/14
+cestus   1 gp  2  1-4/1-3  s  s  2
+chain    5 sp  3  2-5/1-4  l  b  5  *  .5/1/2
+fang  1 gp  3  1-6/1-4  -  -  -
+gaff/hook, attached  2 gp  2  1-4/1-3  s  p  2
+gaff/hook, held   5 cp  2  1-4/1-3  s  p  2
+garrot   1 sp  0.1   1-4/1-6  s  -  3
+jo stick    1 gp  4  1-6/1-4  l  p  4
+lasso    5 cp  2  -  l  -  10    *  1/2/3
+net   5 gp  10    -  m  -  10    *  1/2/3
+ninja-to & scabbard  5 gp  5.5   1-8/1-6  -  -  -
+nunchaku    1 gp  3  1-6/1-6  m  b  3
+sai   8 sp  2  1-4/1-2  -  -  -
+sap   1 gp  1  1-2/1-2  s  b  2
+scourge  1 gp  2  1-4/1-2  s  -  5
+spiked buckler    10 gp    3.5   1-4/1-3  -  -  -
+three-piece rod   2 gp  5  1-6/1-4  -  -  -
+tui-fa   5 gp  1.5   1-6/1-4  -  -  -
+whip,metal  8 gp  7.5   2-5/1-4  m  -  8
+whip,rawhide   1 gp  2  1-2/1-2  m  -  8
+
+Missle Weapons
+arquebus    500 gp   10    1-10/1-10   m  p  15    1/3   5/15/21
+axe, throwing  1 gp  5  1-6/1-4  m  s  4  1  1/2/3
+blowgun  10 gp    2     l  -  5  2/1   1/2/3
+blunderbus  500 gp   12    1-4/1-4  m  p  15    1/3   1/2/3
+bow, composite, long, flight  100 gp   3  -  l  -  7  2/1   6/12/21
+sheaf    -  -  -  -  -  -  2/1   4/8/17
+bow, composite, short   75 gp    2  -  m  -  6  2/1   5/10/18
+bow, daiku  100 gp   3  -  l  -  7  2/1   7/14/21
+bow, long, flight    75 gp    3  -  l  -  8  2/1   7/14/21
+sheaf    -  -  -  -  -  -  2/1   5/10/17
+bow, short  30 gp    2  -  m  -  7  2/1   5/10/15
+crossbow, hand    300 gp   3  -  s  -  5  1  2/4/6
+crossbow, heavy   50 gp    14    -  m  -  11    1/2   8/16/24
+crossbow, light   35 gp    7  -  m  -  7  1  6/12/18
+crossbow, light,
+repeating 10 bolts   120 gp   8.5   -  m  -  5  3/2   5/11/16
+crossbow, medium  40 gp    8.5   -  m  -  9  2/3   7/13/21
+dart,throwing  5 sp  0.5   1-3/1-2  s  p  2  3/1   1/2/4
+harpoon  20 gp    5  2-5/2-7  l  p  7  1  1/2/3
+two handed    20 gp    5  2-8/2-12    l  p  7  1  1/2/3
+javelin  5 sp  2  1-4/1-4  l  p  4  1  2/4/6
+two handed    5 sp  2  1-6/1-6  l  p  4  1  2/4/6
+javelin, stone    5 cp  2  1-4/1-4  m  p  4  1  1/2/3
+two handed    5 cp  2  2-5/1-6  m  p  4  1  1/2/3
+musket   800 gp   20    1-12/1-12   m  p  17    1/4   6/18/24
+shuriken,spike,large    5 sp  0.2   1-4/1-3  1  s  p  2/1   2/4/6
+shuriken,spike,small    3 sp  0.1   1-3/1-3  1  s  p  2/1   2/4/6
+shuriken,star,large  8 sp  0.3   1-6/1-4  1  s  p  2/1   2/4/6
+shuriken,star,small  5 sp  0.2   1-4/1-4  1  s  p  2/1   2/4/6
+sling    5 cp  0.1   -  s  -  6  -  -
+staff sling    2 sp  2  -  m  -  11    2/1   -/3-6/9
+starwheel pistol  1000 gp  5  1-4/1-4  s  p  10    1/3   3/6/9
+
+Pole Weapons
+bo stick    2 cp  4  1-3/1-3  l  b  4
+lance, heavy @    15 gp    15    3-9/3-18    l  p  8
+lance, jousting @    20 gp    20    0-2/0-1  l  p  6
+lance, light @    6 gp  5  1-6/1-8  l  p  10
+lance, medium @   10 gp    10    2-7/2-12    l  p  7
+mancatcher  30 gp    8  1-2/1-2  l  -  7
+polearm, awl pike #  3 gp  8  1-6/1-12    l  p  13
+polearm, bardiche    7 gp  12    2-8/3-12    l  s  9
+polearm, bec de corbin  8 gp  10    1-8/1-6  l  p/b   9
+polearm, bill-guisarme  7 gp  15    2-8/1-10    l  p/s   10
+polearm, fauchard    5 gp  7  1-6/1-8  l  p/s   8
+polearm, fauchard-fork  8 gp  9  1-8/1-10    l  p/s   8
+polearm, glaive *    6 gp  8  1-6/1-10    l  s  8
+polearm, glaive-guisarme *    10 gp    10    2-8/2-12    l  p/s   9
+polearm, guisarme    5 gp  8  2-8/1-8  l  s  8
+polearm, guisarme-voulge   7 gp  15    2-8/2-8  l  p/s   10
+polearm, halberd  9 gp  15    1-10/2-12   l  p/s   9
+polearm, hook fauchard  10 gp    8  1-4/1-4  l  p/s   9
+polearm, lucern hammer #   7 gp  15    2-8/1-6  l  p/b   9
+polearm, military fork *   5 gp  7.5   1-8/2-8  l  p  7
+polearm, naginata #  8 gp  10    1-8/1-10    l  p  7
+polearm, partisan #  10 gp    8  1-6/2-7  l  p  9
+polearm, ranseur #   6 gp  7  2-8/2-8  l  p  8
+polearm, spetum #    5 gp  7  2-7/2-12    l  p  8
+polearm, tetsubo  2 gp  7  1-8/1-8  l  p  8
+polearm, voulge #    5 gp  12.5  2-8/2-8  l  s  10
+quarterstaff   1 bp  4  1-6/1-6  l  b  4
+spear    8 sp  5  1-6/1-8  m  p  6  1  1/2/3
+two handed #  8 sp  5  2-9/2-12    m  p  6  1  1/2/3
+spear, long    5 gp  8  1-8/2-9  l  p  8
+two handed #  5 gp  8  2-12/3-18   l  p  8
+spear, stone   8 cp  5  1-4/1-6  m  p  6  1  1/2/3
+two handed    8 cp  5  1-6/2-8  m  p  6  1  1/2/3
+trident  15 gp    5  2-7/3-12    l  p  7  1  0/1/2
+two handed    15 gp    5  2-9/3-12    l  p  7  1  0/1/2
+
+/ * This Weapon inflicts Double Damage against charging creatures of L or greater
+/ ** This Weapon can dismount a rider on a successful hit
+/ @ This Weapon inflicts double damage when used from the back of a charging mount
+/ # This Weapon inflicts double damage when firmly set to receive charge
+
+Smoke Powder Weapons
+Smoke Powder Weapons    Charge   Backfire    BF Dmg   Ad
+Arquebus    1  (1-2)    1d6   10
+Blunderbus  1  (1/2)    1D6   X
+Caviler  1  (1-2)    1D4   8
+Musket   2  (1-3)    1D8   12
+Starwheel Pistol  1  (1-2)    1D6   4
+Charge = Number of charges of smoke powder required for one shot
+Backfire = Weapon backfires if these numbers are rolled on the attack roll
+BF Dmg = Backfire Damage = Damage inflicted on user in event of backfire
+Ad = Additional = If this number is rolled for damage, score this much damage and roll again.
+
+/ PRIMITIVE WEAPONS
+
+/ Many so-called exotic weapons are weapons more common to primitive cultures, such as Stone Age humans. To reflect that fact, the DM could allow primitive cultures (or even some of the more savage races, such as lizardfolk) to treat blowguns as simple weapons and any or all the following exotic weapons as martial weapons: bolas, barbed bolas, boomerang, greater blowgun, and net. As a tradeoff, you could rule that such races treat bows and crossbows (of all sorts) as exotic weapons. If you want to play such a character, work out a fair balance with your DM.
+
+/ IMPROVISED WEAPONS
+
+/ As detailed in the Player�s Handbook, objects not crafted to be used as weapons may nonetheless find use in combat. This is most true in the stereotypical tavern brawl, but any time a character can�t or doesn�t want to use a weapon, he needs to know how effective the closest object is in a fight.
+/ Any creature using an improvised weapon�from a broken bottle to a barstool�in a fi ght is considered to be nonproficient with it and thus takes a �4 penalty on attack rolls made with it. An improvised weapon scores a threat (a possible critical hit) on a natural roll of 20 and deals double damage on a critical hit. An improvised thrown weapon has a range increment of 10 feet.
+/ What about fighting with ladders, wagon wheels, or coils of rope? In the hands of a determined (or desperate) individual, these oddly shaped objects offer a wide variety of options in combat. Of course, you must still deal with the �4 penalty on attack rolls made with such a weapon, but sometimes you have to make use of what�s available!
+/ Bull Rush: If you perform a bull rush while carrying a big, sturdy object (such as a bench or table), you add a +2 bonus on your Strength check to push back the defender.
+/ Defense: Objects with lots of surface area (such as tables) grant you a +2 shield bonus to Armor Class (or a +4 shield bonus to AC if you use the total defense action), but require two hands to use.
+/ Disarm: Any object with a lot of protrusions (such as a chair or a broken wagon wheel) or that can easily ensnare objects (such as a cloak or a ladder) grants the wielder a +2 bonus on opposed attack rolls made to disarm an enemy (including the roll to avoid being disarmed if such an attempt fails).
+/ Entangle: Any sheetlike flexible object (such as a carpet or tapestry) can entangle an opponent with a successful ranged touch attack. An entangled creature takes a �2 penalty on attack rolls and a �4 penalty to Dexterity, can move at only half speed, cannot run or charge, and may have difficulty casting spells (see the Concentration skill description). Escaping from such an object requires a standard action and a DC 10 Escape Artist check. These objects are treated as two-handed weapons.
+/ Reach: Long objects (such as ladders) have reach, allowing a Small or Medium character to strike at opponents up to 10 feet away (but not at adjacent foes). These objects are treated as two-handed weapons.
+/ Trip: An object with protrustions at the end (such as a hat rack or a barstool) or that can wrap around a leg (such as a chain) can be used to make trip attempts. If you are tripped during your own trip attempt, you can drop the improvised weapon to avoid being tripped.
+
+/ Improvised Weapon Damage
+
+/ Most improvised weapons deal between 1d3 and 1d6 points of damage (usually bludgeoning, but possibly piercing or slashing). 
+/ For more guidance on how much damage a weapon deals, see the table below. For every additional 200 pounds of an object's weight 
+/ beyond 400 pounds, it deals an additional 1d6 points of damage, if used as an improvised weapon.
+/ If an object weighs up to 2 pounds, a Medium character can treat it as a light weapon. Objects between 2 and 10 pounds are 
+/ one-handed weapons for Medium characters, and objects weighing 11 to 50 pounds are two handed weapons. Halve these numbers 
+/ for every size category below medium, and double them for every size category above Medium.
+
+.Object Weight     Damage[1]           Examples
+less than 2lb[2]   1d3                 Mug, Torch
+2lb. - 5lb.        1d4                 Lantern, Manacles
+6lb. - 10lb.       1d6                 Chair, Shovel
+11lb. - 25lb.      1d8                 Ladder, Small table
+25lb. - 50lb.      2d6                 Barrel (Empty)
+51lb. - 100lb.     3d6                 Chest (Full), big table
+101lb. - 200lb.    4d6                 Cart
+201lb. - 400lb.    5d6                 Wagon
+
+/ [1] A sharp object deals damage as an object of twice it's weight. So a broken bottle (1lb.), deals 1d4 points of damage, not 1d3. Conversely, a soft or malleable object, such as a melon, deals damage as an object of half its weight, and the damage is non-lethal.
+/ [2] If an item has no weight worth noting, it doesn't any damage when used as a weapon.

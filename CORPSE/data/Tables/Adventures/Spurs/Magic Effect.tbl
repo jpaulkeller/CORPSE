@@ -1,0 +1,25 @@
+: Magic Effect
+target: {:target}, delay: {:delay}, lasts: {:duration}, {:power} effect: {spell.spell}
+
+: Target
+wielder/self
+touch
+projectile
+point blank area of effect
+target area of effect
+
+: Delay
+instantaneous
+within {3d20} {seconds|minutes}
+
+: Duration
+instantaneous
+up to {3d20} {seconds|minutes}
+up to {20} hours
+up to {4} {days|weeks|months|years}
+permanent
+
+: Power
+weak
+moderate
+strong

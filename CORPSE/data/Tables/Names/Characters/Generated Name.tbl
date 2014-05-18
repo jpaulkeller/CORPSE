@@ -1,0 +1,57 @@
+// 3
+{Consonant}{vowel}{consonant}
+{Digraph}{vowel}
+{Vowel}{consonant}{vowel}
+{Vowel}{ending}
+
+// 4
+{Consonant}{dipthong}{consonant}
+{Consonant}{vowel}{consonant}{vowel}
+{Consonant}{vowel}{ending}
+{Digraph}{dipthong}
+{Digraph}{vowel}{consonant}
+{Dipthong}{consonant}{vowel}
+{Dipthong}{ending}
+{Vowel}{repeat}{vowel}
+{Vowel}{consonant}{dipthong}
+{Vowel}{consonant}{vowel}{consonant}
+{Vowel}{repeat}{dipthong}
+
+// 5
+{Consonant}{dipthong}{ending}
+{Consonant}{vowel}{consonant}{vowel}{consonant}
+{Consonant}{vowel}{digraph}{vowel}
+{Consonant}{vowel}{ending}{vowel}
+{Consonant}{vowel}{repeat}{vowel}
+{Digraph}{dipthong}{consonant}
+{Digraph}{vowel}{consonant}{vowel}
+{Digraph}{vowel}{ending}
+{Dipthong}{consonant}{dipthong}
+{Dipthong}{repeat}{vowel}
+{Vowel}{consonant}{vowel}{ending}
+
+// 6
+{Consonant}{vowel}{consonant}{vowel}{consonant}{vowel}
+{Consonant}{vowel}{consonant}{vowel}{ending}
+{Digraph}{dipthong}{ending}
+{Digraph}{vowel}{digraph}{vowel}
+{Digraph}{vowel}{ending}{vowel}
+{Digraph}{vowel}{consonant}{vowel}{consonant}
+{Dipthong}{repeat}{dipthong}
+{Vowel}{consonant}{vowel}{consonant}{digraph}
+{Vowel}{digraph}{vowel}{consonant}
+{Vowel}{digraph}{vowel}{ending}
+
+// 7
+{Consonant}{vowel}{consonant}{dipthong}{ending}
+
+// 8
+{Consonant}{vowel}{consonant}{digraph}{vowel}{ending}
+{Consonant}{vowel}{ending}{consonant}{vowel}{ending}
+{Consonant}{vowel}{ending}{consonant}{vowel}{repeat}
+
+// hyphenated
+{Consonant}{vowel}{consonant}-{consonant}{vowel}{consonant}
+{Consonant}{vowel}{consonant}-{vowel}{consonant}{vowel}
+{Vowel}{consonant}{vowel}-{vowel}{consonant}{vowel}
+{Vowel}{consonant}{vowel}-{consonant}{vowel}{consonant}

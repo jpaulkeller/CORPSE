@@ -1,0 +1,146 @@
+.Level  Spell                         Type           Element      Source     Class  
+ 5      airy water                                   a/w          tsrph2     mage
+ 8      antipathy-sympathy                                        tsrph2     mage
+ 5      avoidance                                                 tsrph2     mage
+        banish                                                    dgn:v1     witc
+ 7      banishment                                                tsrph2     mage
+ 8      bigby's clenched fist                                     tsrph2     mage
+ 9      bigby's crushing hand                                     tsrph2     mage
+ 6      bigby's forceful hand                                     tsrph2     mage
+ 7      bigby's grasping hand                                     tsrph2     mage
+ 5      bigby's interposing hand                                  tsrph2     mage
+ 8      binding                                                   tsrph2     mage
+ 7      cacodemon                                                 tsrph2     mage
+        calm                                                      dgn:v1     witc
+ 6      chain lightning                                           tsrph2     mage
+ 7      changestaff                                               tsrph2     pr
+ 7      chariot of sustarre                                       tsrph2     drui
+        circle of blindness                                       dgn:v1     witc
+ 4      cloak of bravery                                          tsrph2     cler
+ 8      clone                                                     tsrph2     mage
+ 5      cloudkill                                    air          tsrph2     mage
+        comfort                                                   dgn:v1     witc
+ 5      cone of cold                                              tsrph2     mage
+ 4      contagion                                                 tsrph2     mage
+ 6      contingency                                               tsrph2     mage
+        control undead                               death        dgn:v1     witc
+ 9      crystalbrittle                                            tsrph2     mage
+        curse                                                     dgn:v1     witc
+        curtain wall                                              dgn:v1     witc
+ 2      death armor                                               dgn:v4     deat
+ 6      death fog                                                 tsrph2     ----
+ 3      delude                                                    tsrph2     ----
+ 8      demand                                                    tsrph2     mage
+        diminish                                                  dgn:v1     witc
+ 5      dismissal                                                 tsrph2     mage
+ 5      domination                                                tsrph2     ----
+ 7      drawmij's instant summons                                 tsrph2     mage
+ 5      dream                                                     tsrph2     ----
+ 4      energy                                                    dgn:v2     heal
+ 9      energy drain                                              tsrph2     mage
+ 4      enervation                                                tsrph2     mage
+ 6      ensnarement                                               tsrph2     mage
+ 4      evard's black tentacles                                   tsrph2     mage
+ 7      exaction                                                  tsrph2     cler
+ 0      exterminate                                               dgn:v3     mage
+ 6      eyebite                                                   tsrph2     ----
+ 5      false vision                                              tsrph2     mage
+ 5      feeblemind                                                tsrph2     mage
+        fire box                                     fire         dgn:v1     witc
+ 6      fire seeds                                   fire         tsrph2     drui
+ 4      fire shield                                  fire         tsrph2     mage
+ 4      fire trap                                    fire         tsrph2     mage
+ 3      flame arrow                                  fire         tsrph2     mage
+ 3      flame walk                                   fire         tsrph2     cler
+ 7      forcecage                                                 tsrph2     mage
+ 4      free action                                               tsrph2     cler
+ 4      fumble                                                    tsrph2     mage
+ 4      giant insect                                              tsrph2     drui
+ 6      glassee                                                   tsrph2     mage
+ 8      glassteel                                                 tsrph2     mage
+ 6      globe of invulnerability                                  tsrph2     mage
+ 6      guards and wards                                          tsrph2     mage
+ 6      heroes' feast                                             tsrph2     cler
+ 4      illusionary wall                                          tsrph2     mage
+ 4      imbue with spell ability                                  tsrph2     cler
+ 9      imprisonment                                              tsrph2     mage
+ 8      incendiary cloud                             a/f          tsrph2     mage
+        intensify                                                 dgn:v1     witc
+ 3      invisibility, 10' radius                                  tsrph2     mage
+ 3      item                                                      tsrph2     mage
+ 5      leomund's lamentable bel.                                 tsrph2     mage
+ 5      leomund's secret chest                                    tsrph2     mage
+ 4      leomund's secure shelter                                  tsrph2     mage
+ 3      leomund's tiny hut                                        tsrph2     mage
+ 6      liveoak                                                   tsrph2     drui
+ 5      magic font                                                tsrph2     cler
+ 5      magic jar                                                 tsrph2     mage
+ 4      magic mirror                                              tsrph2     mage
+ 4      massmorph                                                 tsrph2     mage
+ 8      maze                                                      tsrph2     mage
+ 3      meld into stone                                           tsrph2     cler
+ 3      melf's minute meteors                                     tsrph2     mage
+ 4      minor globe of invuln.                                    tsrph2     mage
+ 6      mirage arcana                                             tsrph2     mage
+ 6      mislead                                                   tsrph2     mage
+ 5      moonbeam                                                  tsrph2     cler
+ 9      mordenkainen's disjunct.                                  tsrph2     mage
+ 5      mordenkainen's hound                                      tsrph2     mage
+ 7      mordenkainen's mansion                                    tsrph2     mage
+ 7      mordenkainen's sword                                      tsrph2     mage
+ 6      move earth                                   earth        tsrph2     mage
+ 3      negative plane projection                                 tsrph2     cler
+ 7      neutralize gas                                            dgn:v2     heal
+ 6      otiluke's freezing sphere                                 tsrph2     mage
+ 4      otiluke's resilient sphere                                tsrph2     mage
+ 8      otiluke's telekinetic sph.                                tsrph2     mage
+        paralyzing pit                                            dgn:v1     witc
+ 3      phantom steed                                             tsrph2     mage
+ 7      phase door                                                tsrph2     mage
+        poison touch                                              dgn:v1     witc
+ 9      prismatic sphere                                          tsrph2     mage
+        quake                                        earth        dgn:v1     witc
+ 4      rainbow pattern                                           tsrph2     mage
+ 4      reflecting pool                                           tsrph2     cler
+        reflections                                               dgn:v1     witc
+ 3      remove paralysis                                          tsrph2     cler
+ 8      screen                                                    tsrph2     mage
+ 3      secret page                                               tsrph2     mage
+ 5      seeming                                                   tsrph2     mage
+ 5      sending                                                   tsrph2     mage
+ 3      sepia snake sigil                                         tsrph2     mage
+ 7      sequester                                                 tsrph2     mage
+ 7      shadow walk                                               tsrph2     mage
+ 4      shout                                                     tsrph2     mage
+ 7      simulacrum                                                tsrph2     mage
+ 8      sink                                                      tsrph2     mage
+ 4      solid fog                                                 tsrph2     illu
+        solidify                                                  dgn:v1     witc
+ 4      spell immunity                                            tsrph2     cler
+ 7      spell turning                                             tsrph2     mage
+ 3      spike growth                                              tsrph2     cler
+ 5      spike stones                                              tsrph2     cler
+ 6      spiritwrack                                               tsrph2     mage
+ 3      starshine                                                 tsrph2     cler
+ 7      statue                                                    tsrph2     mage
+ 7      sterilize                                                 dgn:v2     heal
+ 4      stoneskin                                                 tsrph2     mage
+ 9      succor                                                    tsrph2     mage
+        summon elemental                                          dgn:v1     witc
+ 7      sunray                                                    tsrph2     cler
+ 8      symbol                                                    tsrph2     mage
+ 6      tenser's transformation                                   tsrph2     mage
+ 8      trap the soul                                             tsrph2     mage
+ 3      tree                                                      tsrph2     drui
+ 4      vacancy                                                   tsrph2     mage
+ 3      vampiric touch                                            tsrph2     mage
+ 7      vanish                                                    tsrph2     mage
+        vaporize                                     air          dgn:v1     witc
+        volcanic circle                                           dgn:v1     witc
+ 3      water walk                                   water        tsrph2     cler
+ 9      weird                                                     tsrph2     mage
+ 3      wind wall                                                 tsrph2     mage
+        wither                                                    dgn:v1     witc
+ 4      wizard eye                                                tsrph2     mage
+ 1      wizard glue                                               dgn:v3     alch
+ 3      wraithform                                                tsrph2     mage

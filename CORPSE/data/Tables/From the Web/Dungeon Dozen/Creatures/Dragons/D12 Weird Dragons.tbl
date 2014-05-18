@@ -1,0 +1,34 @@
+/ http://roll1d12.blogspot.com/2012/08/automatic-weird-dragons.html
+
+/ Assumptions: all dragons have bat-like wings (often vestigial/merely decorative), scintillant scales, elongated necks and tails
+
+: Weird Dragons
+The dragon has the head of a {:head}, and the body of a {:body}.  Breath attack: {d12 dragon breath}.  State of mind: {d12 dragon attitude}.  Current obsession: {d12 dragon obsession}.  Hoard includes: {d12 dragon hoard}.
+
+: Head
+caiman
+eagle
+hippopotamus
+housefly
+human
+lemur
+pit bull
+smilodon
+snail
+swan
+t-rex
+toad
+
+: Body
+apatosaurus
+centipede
+gecko
+hyena
+land whale
+mantis
+pangolin
+peacock
+polar bear
+quadrupedal anthropoid
+rooster
+serpent

@@ -1,25 +1,26 @@
-Acid spit (level {8}, {4}0' range)
-Corrosive slime trail (1d6)
-Corrosive spray ({4}d{2|3}, {10}' range)
-Drains blood
-Electrical bolt ({4}d{2|3}, {4}0' range)
-Electrical touch ({4}d{2|3})
-Energy drain
-Flame spray ({6}d{2|3} damage, {4}0' range)
-Poisonous bite (level {10})
-Poisonous skin (level {6})
-Poisonous spit (level {8}, {4}0' range)
-Poisonous spore (level {4}, 8' range)
-Poisonous spray (level {8}, 6' range)
-Poisonous sting (level {10}, {3}/day)
-Breath Weapon: The creature breathes fire or gas, like a dragon.
-Crush: If the creature manages to get hold of an enemy which is roughly its size or smaller, it will eventually crush it to death. This means that the victim will take damage automatically, and can't attack, until and unless they manage to break free. Creatures smaller than Medium roll again: they still have this ability, but it's unlikely to effect most player-characters.
-Swallow whole: This works in a similar way to Crush (above). However the creature can only swallow beings which are half its size or smaller. The victim can't attempt to break free - they can only be saved if the creature dies. The creature will dissolve armour first, and only then start to damage the character. Creatures smaller than twice the size of a human ('Large' on Creatures table 1) roll again: they still have this ability, but it's unlikely to effect most player-characters. Only Monsters and Folk can have this ability.
-Rust: The creatures' touch corrodes metal. This may effect armour, weapons, Animates etc. If the creature also has Crush or Swallow Whole, successfully doing so will corrode metal very quickly.
-Parasitoid: The creature lays its eggs in other species. Animates and Spirits may not have this ability.
-Spread Disease: The creature's touch can cause disease.
-Drain Magic: The creature's touch drains magical ability.
-Entangling Web: The creature spins webs which are likely to restrict the movement of victims.
-Steal Life: If The creature successfully causes damage, it heals as well.
-Magic: The creature has the ability to use a spell or spells.
-Paralysis: A particular kind of poison: rather than continue to do damage, the creature's attack may cause paralysis, until the poison is removed or a natural or magical antidote can be applied.
+. Natural Offense, Damage/Range/AoE/Duration, Description
+Acid spit; level {8}, {4}0' range;
+Corrosive slime trail; 1d6;
+Corrosive spray; {4}d{2|3}, {10}' range)
+Drains blood;;
+Electrical bolt; {4}d{2|3}, {4}0' range;
+Electrical touch; {4}d{2|3};
+Energy drain;;
+Flame spray; {6}d{2|3} damage, {4}0' range;
+Poisonous bite; level {10};
+Poisonous skin; level {6}l
+Poisonous spit; level {8}, {4}0' range;
+Poisonous spore; level {4}, 8' range;
+Poisonous spray; level {8}, 6' range;
+Poisonous sting; level {10}, {3}/day;
+Breath Weapon;; The creature breathes fire or gas, like a dragon.
+Crush;; If the creature manages to get hold of an enemy which is roughly its size or smaller, it will eventually crush it to death. This means that the victim will take damage automatically, and can't attack, until and unless they manage to break free. Creatures smaller than Medium roll again: they still have this ability, but it's unlikely to effect most player-characters.
+Swallow whole;; This works in a similar way to Crush (above). However the creature can only swallow beings which are half its size or smaller. The victim can't attempt to break free - they can only be saved if the creature dies. The creature will dissolve armour first, and only then start to damage the character. Creatures smaller than twice the size of a human ('Large' on Creatures table 1) roll again: they still have this ability, but it's unlikely to effect most player-characters. Only Monsters and Folk can have this ability.
+Rust;; The creatures' touch corrodes metal. This may effect armour, weapons, Animates etc. If the creature also has Crush or Swallow Whole, successfully doing so will corrode metal very quickly.
+Parasitoid;; The creature lays its eggs in other species. Animates and Spirits may not have this ability.
+Spread Disease;; The creature's touch can cause disease.
+Drain Magic;; The creature's touch drains magical ability.
+Entangling Web;; The creature spins webs which are likely to restrict the movement of victims.
+Steal Life;; If The creature successfully causes damage, it heals as well.
+Magic;; The creature has the ability to use a spell or spells.
+Paralysis;; A particular kind of poison: rather than continue to do damage, the creature's attack may cause paralysis, until the poison is removed or a natural or magical antidote can be applied.

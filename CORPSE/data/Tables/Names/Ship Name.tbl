@@ -1,8 +1,45 @@
-{Trait} {Fauna}
-{Color:Basic} {Fauna}
-{Appearance} {Fauna}
 {Adjective} {Fauna}
-{Trait} {TitleFeudal:Noble}
-{Color:Basic} {TitleFeudal:Noble}
-{Appearance} {TitleFeudal:Noble}
-{Adjective} {TitleFeudal:Noble}
+{Adjective} {Title Feudal:Noble}
+{Appearance} {Fauna}
+{Appearance} {Title Feudal:Noble}
+{Color:Basic} {Fauna}
+{Color:Basic} {Title Feudal:Noble}
+{Evocative:Adj} {Title Religious}
+{Trait} {Evocative:Noun}
+{Trait} {Fauna}
+{Trait:Good} {Title Feudal:Noble}
+
+The Blade of Mebrook
+The Emerald Blade
+The Empress of Alasband
+The Empress' Bounty
+The Golden Hammer
+The Gunslinger of Ulfljodbyr
+The Hammer of Baragzar
+The Hammerhead
+The Hydra
+The Jane
+The Jewel of Nirvana
+The Kite
+The Lady of Artharthveit
+The Lady of Cacot
+The Lamprey
+The Lance of Stygia
+The Mermaid
+The Monarch of Gionegriand
+The Monarch's Folly
+The Narvi
+The Nautilus
+The Nereid
+The Porpoise
+The Princess' Gem
+The Queen's Fortune
+The Sceptre of Avernus
+The Seawolf
+The Sovereign's Bounty
+The Star of Gunarukth
+The Steel Hammer
+The Stingray
+The Waveblade
+The White Star
+The Fencer of Allsteikfell

@@ -1,0 +1,27 @@
+serf;serf
+page;page
+squire;squire
+knight;dame
+seneschal;seneschal
+chevalier;chevalier
+nobleman;noblewoman
+baronet;lady
+baron;baroness
+lord;lady
+viscount;viscountess
+count;countess
+earl;countess
+marquis;marquess
+prince;princess
+duke;duchess
+king;queen
+emperor;empress
+
+. Male
+. Female
+. Title Feudal = Male
+
+: Noble {7-18}
+: Title Feudal {4,18}
+
+/ http://en.wikipedia.org/wiki/Category:Noble_titles

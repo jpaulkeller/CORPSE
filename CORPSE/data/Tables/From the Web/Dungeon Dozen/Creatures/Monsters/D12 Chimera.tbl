@@ -1,0 +1,46 @@
+/ http://roll1d12.blogspot.com/2012/10/instant-chimera.html
+
+: D12 Chimera
+Body: {: body}; Head: {: head}{25%? and {: head}{25%? and {: head}}}; Power: {: special power}.
+
+: Body
+crocodile
+t-rex
+giant porcupine
+rhino
+moose
+sasquatch
+ooze
+hill giant
+giant slug
+colossal mantis
+cave bear
+giant ape
+
+: Head
+flaming impala skull
+rabid pit bull
+snapping turtle
+vampire bat
+lamprey
+triceratops
+great white shark
+dragonfly nymph
+bighorn ram
+the most vicious newt imaginable
+spider
+devil
+
+: Special Power
+ray of withering
+flaming bile
+searing eyebeams
+enveloped by corrosive cloud
+weeps poison tears
+head(s) can separate from body, attack independently
+sings hypnotic ditties
+launches teeth as exploding projectiles
+impenetrable hide
+emits darkness
+blood transmits lethal disease
+gaze causes heads to explode

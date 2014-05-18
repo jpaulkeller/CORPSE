@@ -1,0 +1,86 @@
+.Level  Spell                         Type           Element      Source     Class  
+ 6      aging                         nec&alt        life         dgn:v1     witc
+ 7      alter reality                 alt&ill                     tsrph2     illu
+ 1      animate skeletons             nec&ani        death        dgn:v4     deat
+ 1      animate zombies               nec&ani        death        dgn:v4     deat
+ 4      arnvid's unseen limb          con&alt                     dgn148     mage
+ 5      blade barrier                 con&enc                     corpse     meta
+ 6      blade barrier                 con&enc                     tsrph2     cler
+ 3      bolt                          con&inv                     corpse     meta
+ 5      bridge                        alt&con                     corpse     meta
+ 4      chain                         con&enc                     corpse     meta
+ 1      color spray                   hyp&ill                     tsrph2     illu
+ 1      color spray                   ill&hyp                     tsrph2     illu
+ 4      commune                       div&spi                     corpse     seer
+ 5      commune                       emp&spi                     tsrph2     cler
+ 5      communicate                   div&emp                     dgn:v4     cler
+ 3      copper chalice                con&enc                     corpse     meta
+ 1      dart                          con&inv                     corpse     meta
+ 2      death prayer                  nec&spi                     dgn:v4     cler
+ 5      death wire                    con&enc                     corpse     meta
+ 2      deeppockets                   enc&alt        void         tsrph2     mage
+ 6      demi-shadow magic             alt&ill                     tsrph2     illu
+ 5      demi-shadow monsters          alt&ill                     tsrph2     illu
+ 1      detect disease                div&nec                     dgn:v2     heal
+ 1      detect evil                   div&spi                     tsrph2     cler
+ 2      detect life                   div&nec        life         dgn:v4     cler
+ 5      dispel evil                   evo&spi                     tsrph2     cler
+ 4      emotion                       emp&hyp                     tsrph2     illu
+ 4      empath                        emp&alt                     dgn148     mage
+ 5      ethereal armor                alt&enc        void         corpse     meta
+ 8      exchange                      emp&alt                     dgn148     mage
+ 4      eye of death                  alt&enc                     corpse     meta
+ 1      find familiar                 div&evo                     tsrph2     mage
+ 4      fire charm                    hyp&inv        fire         tsrph2     mage
+ 2      fire trap                     alt&inv        fire         tsrph2     drui
+ 2      flaming sphere                inv&con        fire         tsrph2     mage
+ 4      flute                         con&enc                     corpse     meta
+ 3      fly                           alt&kin        air          tsrph2     mage
+ 7      gate                          evo&alt        void         tsrph2     cler
+ 3      ghast production              nec&ani                     dgn:v4     deat
+ 5      ghost production              nec&ani                     dgn:v4     deat
+ 3      glyph of warding              abj&inv                     tsrph2     cler
+ 5      golden gauntlet               con&enc                     corpse     meta
+ 5      hold undead                   hyp&nec                     dgn:v4     deat
+ 7      holy (unholy) word            inv&spi                     tsrph2     cler
+ 3      horn                          con&enc                     corpse     meta
+ 2      hypnotic pattern              hyp&ill                     tsrph2     illu
+ 2      key                           con&div                     corpse     meta
+ 4      life force transfer           emp&alt                     dgn148     mage
+ 5      maze                          con&tra                     tsrph2     illu
+ 2      misdirection                  div&met                     tsrph2     illu
+ 4      molten blast                  con&inv        e/f          corpse     meta
+ 4      mummy production              nec&ani                     dgn:v4     deat
+ 3      net                           con&enc                     corpse     meta
+ 5      projected image               alt&ill                     tsrph2     illu
+ 1      protection from evil          abj&spi                     tsrph2     cler/mage
+ 4      protection from evil (10)     abj&spi                     tsrph2     cler
+ 3      protection from evil (10)     abj&spi                     tsrph2     mage
+ 3      ray of paralysis              inv&hyp                     dgn:v4     deat
+ 6      shades                        alt&ill                     tsrph2     illu
+ 2      shadow                        alt&enc                     corpse     meta
+ 5      shadow door                   hyp&ill                     tsrph2     illu
+ 5      shadow magic                  alt&ill                     tsrph2     illu
+ 4      shadow monsters               alt&ill                     tsrph2     illu
+ 4      shadow summoning              evo&hyp                     dgn:v4     deat
+ 3      shower of sparks              con&inv        e/f          corpse     meta
+ 2      shuriken                      con&inv                     corpse     meta
+ 4      silver circle                 con&enc                     corpse     meta
+ 4      silver shield                 con&enc                     corpse     meta
+ 4      silver shower                 con&enc                     corpse     meta
+ 4      silver steed                  con&enc                     corpse     meta
+ 5      size control                  alt&nec                     dgn:v2     heal
+ 2      sparks                        con&inv        e/f          corpse     meta
+ 3      speak with dead               emp&nec                     tsrph2     cler
+ 2      spectral hand                 met&ill                     tsrph2     illu
+ 7      symbol                        alt&hyp                     tsrph2     cler
+ 2      tasha's laughter              emp&hyp                     tsrph2     mage
+ 6      undead production             nec&ani                     dgn:v4     deat
+ 6      vampire dagger                enc&emp                     dgn148     mage
+ 6      vampire/spectre prod.         nec&ani                     dgn:v4     deat
+ 6      veil                          hyp&ill                     tsrph2     illu
+ 4      ward, minor                   inv&abj                     dgn:v4     cler
+ 5      ward, major                   inv&abj                     dgn:v4     cler
+ 4      wight production              nec&ani                     dgn:v4     deat
+ 7      wind walk                     alt&tra        air          tsrph2     cler
+ 4      wraith production             nec&ani                     dgn:v4     deat

@@ -1,0 +1,91 @@
+/ http://eberronunlimited.wikidot.com/shield-properties
+
+Shield Properties
+Magic armor is a common but vital item. In general, it protects the wearer to a greater extent than nonmagical armor. Magic armor bonuses are enhancement bonuses, never rise above +5, and stack with regular armor bonuses (and with shield and magic shield enhancement bonuses). All magic armor is also masterwork armor, reducing armor check penalties by 1.
+In addition to an enhancement bonus, armor may have special abilities, such as the ability to resist critical hits or to help the wearer hide. Special abilities count as additional bonuses for determining the market value of an item, but do not improve AC. A suit of armor cannot have an effective bonus (enhancement plus special ability bonus equivalents) higher than +10. A suit of armor with a special ability must have at least a +1 enhancement bonus.
+A suit of armor or a shield may be made of an unusual material. Roll d%: 01–95 indicates that the item is of a standard sort, and 96–100 indicates that it is made of a special substance such as adamantine or mithral (see Special Materials).
+Armor is always created so that even if the type of armor comes with boots or gauntlets, these pieces can be switched for other magic boots or gauntlets.
+Caster Level for Armor and Shields: The caster level of a magic shield or magic armor with a special ability is given in the item description. For an item with only an enhancement bonus, the caster level is three times the enhancement bonus. If an item has both an enhancement bonus and a special ability, the higher of the two caster level requirements must be met.
+Shields: Shield enhancement bonuses stack with armor enhancement bonuses, so that a +1 heavy steel shield and +1 chainmail grant a total bonus of +9 to AC. Shield enhancement bonuses do not act as attack or damage bonuses when the shield is used in a bash. The bashing special ability, however, does grant a +1 bonus on attack and damage rolls (see the special ability description). You could, in fact, build a shield that also acted as a magic weapon, but the cost of the enhancement bonus on attack rolls would need to be added into the cost of the shield and its enhancement bonus to AC. For example, a +1 buckler with +1 shield spikes would cost 3,475 gp (15 gp for the basic buckler, 150 to make it masterwork, 1,000 for the +1 bonus to AC, 10 gp for the spikes, 300 to make them masterwork, and 2,000 to make the spikes a +1 weapon).
+As with armor, special abilities built into the shield add to the market value in the form of additions to the bonus of the shield, although they do not improve AC. A shield cannot have an effective bonus (enhancement plus special ability bonus equivalents) higher than +10. A shield with a special ability must have at least a +1 enhancement bonus.
+Shield Hardness and Hit Points: Each +1 of enhancement bonus adds 2 to a shield’s hardness and +10 to its hit points. For example, a +3 heavy steel shield has hardness 16 and 50 hp. (See Table 8–8, page 158 of the Player’s Handbook, for common shield hardness and hit points.)
+Activation: Usually a character benefits from magic armor and shields in exactly the way a character benefits from nonmagical armor and shields—by wearing them. If armor or a shield has a special ability that the user needs to activate (such as with an animated shield), then the user usually needs to utter the command word (a standard action).
+Armor for Unusual Creatures: The cost of armor for nonhumanoid creatures, as well as for creatures who are neither Small nor Medium, varies from the values given on Tables 7–3 and 7–4, as described in the Armor for Unusual Creatures sidebar on page 123 of the Player’s Handbook. The cost of the masterwork quality and any magical enhancement remains the same.
+
+Armor and Shields Cost
+
+Enhancement Base Price
++1 1,000gp
++2 4,000gp
++3 9,000gp
++4 16,000gp
++5 25,000gp
++6 36,000gp
++7 49,000gp
++8 64,000gp
++9 81,000gp
++10   100,000gp
+Magic Armor and Shield Special Ability Descriptions
+Most magic armor and shields only have enhancement bonuses. Such items can also have one or more of the special abilities detailed below. Armor or a shield with a special ability must have at least a +1 enhancement bonus.
+
+Name  Effect   Cost  Source
+M9 Called Call shield to you on command +2,000 gp
+M9 Commander +2 on Diplomacy, allies within 30 ft. gain +1 on Will saves and –5 on Hide +2,000 gp
+M12 Heartening 2/day gain 5 temporary hit points for 5 minutes +2,000 gp
+M9 Daylight Daylight for 30 minutes/day +3,000 gp
+M13 Mindarmor 3/day gain +3 on Will saves against mind-affecting spells and abilities +3,000 gp
+M6 Acidic Deals 2d4 points of acid damage/round on contact +1 bonus
+M6 Anchoring +5 on checks to resist being moved +1 bonus
+M6 Anchoring, greaterS +10 on checks to resist being moved +1 bonus
+D218 Arrow catching Attracts, gives +1 bonus against projectiles and thrown weapons +1 bonus
+D218 Bashing Deals bashing damage as a weapon of two size categories larger +1 bonus
+D218 Blinding 2/day blinds all but you +1 bonus
+M10 Death ward 1/day ignore death effect or negative energy effect +1 bonus
+M11 Energy defenseS 3/day 1d6+10 energy damage to attacker +1 bonus
+D219 Fortification, light 25% chance to negate critical hits, sneak attacks +1 bonus
+M11 Ghost ward Shield’s enhancement bonus applies against touch attacks +1 bonus
+M13 Ranged Shield can be thrown as a weapon, returns to you; not tower shield +1 bonus
+M14 Soulbound Stores up to 2 points of essentia for enhancement bonuses +1 bonus
+M15 Variable Changes size on command +1 bonus
+M12 Linked 3/day telepathic bond with other linked item wearers for 1 hour +6,000 gp
+M12 Manifester 1/day draw 3 power points from shield +6,000 gp
+M14 Speed 3/day haste for 1 round +6,000 gp
+D218 Animated Floats within 2 ft. of you on command +2 bonus
+D218 Arrow deflection Protects you as Deflect Arrows feat +2 bonus
+M7 Axeblock Damage reduction 5/bludgeoning and piercing +2 bonus
+M10 Ectoplasmic wall 1/day wall of ectoplasm +2 bonus
+M11 Energy immunity 1/day gain immunity to energy damage of choice for 1 minute +2 bonus
+M12 Hammerblock Damage reduction 5/piercing and slashing +2 bonus
+M14 Soulbound, greaterS Stores up to 4 points of essentia for enhancement bonuses +2 bonus
+M14 Spearblock Damage reduction 5/bludgeoning and slashing +2 bonus
+D219 Spell resistance (13) Spell resistance 13 +2 bonus
+M7 Averter Enemies within 30 ft. can’t approach +13,000 gp
+M11 Fearsome 3/day panics creatures within 20 ft. +15,000 gp
+D219 Ghost touch Effective against, can be used by incorporeal creatures +3 bonus
+D219 Fortification, moderate 75% chance to negate critical hits, sneak attacks +3 bonus
+D219 Spell resistance (15) Spell resistance 15 +3 bonus
+M15 Vanishing 2/day completely undetectable for up to 3 minutes +3 bonus
+D219 Wild Bonuses apply while in wild shape +3 bonus
+D217 Acid resistance Absorbs 10 points of acid damage per attack +18,000 gp
+D218 Cold resistance Absorbs 10 points of cold damage per attack +18,000 gp
+D218 Electricity resistance Absorbs 10 points of electricity damage per attack +18,000 gp
+D218 Fire resistance Absorbs 10 points of fire damage per attack +18,000 gp
+D219 Sonic resistance Absorbs 10 points of sonic damage per attack +18,000 gp
+M6 Aporter Transports you up to 800 ft. as dimension door +20,000 gp
+D219 Spell resistance (17) Spell resistance 17 +4 bonus
+D219 Fortification, heavy Always negates critical hits, sneak attacks +5 bonus
+D219 Reflecting 1/day reflect a spell as spell turning +5 bonus
+D219 Spell resistance (19) Spell resistance 19 +5 bonus
+M15 Time buttress 1/day ignore all attacks, spells, and powers for 1 round +5 bonus
+D217 Acid resistance, improved Absorbs 20 points of acid damage per attack +42,000 gp
+D218 Cold resistance, improved Absorbs 20 points of cold damage per attack +42,000 gp
+D218 Electricity resistance, improved Absorbs 20 points of electricity damage per attack +42,000 gp
+D219 Fire resistance, improved Absorbs 20 points of fire damage per attack +42,000 gp
+D219 Sonic resistance, improved Absorbs 20 points of sonic damage per attack +42,000 gp
+D219 Undead controlling Control up to 26 HD of undead per day +49,000 gp
+D218 Acid resistance, greater Absorbs 30 points of acid damage per attack +66,000 gp
+D218 Cold resistance, greater Absorbs 30 points of cold damage per attack +66,000 gp
+D218 Electricity resistance, greater Absorbs 30 points of electricity damage per attack +66,000 gp
+D219 Fire resistance, greater Absorbs 30 points of fire damage per attack +66,000 gp
+D219 Sonic resistance, greater Absorbs 30 points of sonic damage per attack +66,000 gp
+
