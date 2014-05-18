@@ -184,6 +184,8 @@ public final class Macros
          m = FORMAT_PAREN.matcher(resolvedToken);
          if (m.matches())
             resolvedToken = m.group(2) + " " + m.group(1);
+         
+         resolvedToken = resolvedToken.replaceAll(" *\\[[0-9]+\\]", ""); // strip any footnotes
       }
 
       if (DEBUG && !token.equals(resolvedToken))
@@ -449,6 +451,8 @@ public final class Macros
    // Make the case of the resolved token match the case of the token.
    
    private static final Pattern TO_CAPITALIZE = Pattern.compile("\\b([a-z])");
+   private static final Pattern NO_CAP = 
+      Pattern.compile(" A | An | And | At | By | For | From | In | Of | On | Or | The | To | With ");
 
    private static String matchCase(final String token, final String resolved)
    {
@@ -466,6 +470,14 @@ public final class Macros
          Matcher m;
          while ((m = TO_CAPITALIZE.matcher(caseMatched)).find())
             caseMatched = m.replaceFirst(m.group(1).toUpperCase());
+         caseMatched = caseMatched.replace("'S", "'s"); // hack to fix possessive suffix
+         while ((m = NO_CAP.matcher(caseMatched)).find())
+            caseMatched = m.replaceFirst(m.group(0).toLowerCase());
+         // don't cap some words
+         /*
+         for (String ignore : new String[] { "A", "An", "And", "At", "By", "For", "From", "In", "Of", "On", "Or", "The", "To", "With", "Without" })
+            caseMatched = caseMatched.replace(" " + ignore + " ", " " + ignore.toLowerCase() + " ");
+            */
       }
       return caseMatched;
    }
@@ -515,7 +527,11 @@ public final class Macros
       Macros.resolve(null, "Filter: {Name#S.+#}", null);
       Macros.resolve(null, "{Profession:Craftsman}", null); // filter subset
       Macros.resolve(null, "{Profession.all#^([^ ]+) .*craftsman.*#}", null); // filter vs all with group
-      */
       Macros.resolve(null, "{#{Profession+#.*craftsman.*#}:^(.*?)  }", null); // filter vs all with group
+      */
+      
+      System.out.println("Aa: " + Macros.matchCase("Aa", "cap each word's first letter in the phrase")); 
+      System.out.println("AA: " + Macros.matchCase("AA", "Leave ALL words in the phrase alone"));
+      System.out.println("aa: " + Macros.matchCase("aa", "Lower Case ALL words in the phrase"));
    }
 }

@@ -18,7 +18,7 @@ import file.FileUtils;
 public final class Depends
 {
    private static final Pattern COLLISION = // multiple references to the same table 
-      Pattern.compile("(" + Constants.TABLE_XREF + ").*\\1", Pattern.CASE_INSENSITIVE);
+      Pattern.compile("(" + Constants.TABLE_XREF + ").+\\1", Pattern.CASE_INSENSITIVE);
          
    private static final Map<String, String> TOKENS = new TreeMap<String, String>(); // token to file
    
@@ -64,12 +64,13 @@ public final class Depends
          dpw.println(file + "; [" + subsetXref + "] ; {" + subsetXref + "}");
       }
 
+      BufferedReader br = null;
       String line = null;
       try
       {
          FileInputStream fis = new FileInputStream(file);
          InputStreamReader isr = new InputStreamReader(fis);
-         BufferedReader br = new BufferedReader(isr);
+         br = new BufferedReader(isr);
          int lineNum = 0; 
 
          while ((line = br.readLine()) != null && !line.startsWith(Constants.EOF))
@@ -77,15 +78,12 @@ public final class Depends
             lineNum++;
             if (!line.startsWith(Constants.SUBSET_CHAR) && line.contains("{"))
             {
-               // String stripped = line.replace('{', '[').replace('}', ']');
-               // dpw.println(file + ";" + stripped + ";" + line);
-               
                Matcher m = Constants.TOKEN.matcher(line);
                while (m.find())
                {
-                  String token = m.group(); 
-                  if (token.startsWith("{" + Constants.SUBSET_CHAR))
-                     token = "{" + FileUtils.getNameWithoutSuffix(file) + token.substring(1); // resolve local subset
+                  String token = m.group();
+                  if (token.startsWith("{" + Constants.SUBSET_CHAR) || token.startsWith("{" + Constants.COLUMN_CHAR))
+                     token = "{" + FileUtils.getNameWithoutSuffix(file) + token.substring(1); // resolve local refs
                   TOKENS.put(token, file.toString());
                }
             }
@@ -95,14 +93,16 @@ public final class Depends
             if (m.find())
                System.out.println("Warning (possible collision) on " + lineNum + ": " + line);
          }
-         
-         fis.close();
       }
       catch (IOException x)
       {
          System.err.println("File: " + file);
          System.err.println("Line: " + line);
          x.printStackTrace(System.err);
+      }
+      finally
+      {
+         FileUtils.close(br);
       }
    }
 
