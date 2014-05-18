@@ -1,0 +1,32 @@
+/ Sources: GURPS Basic Set (3rd edition), supplement
+/ http://eberronunlimited.wikidot.com/diseases
+/ see also {D12 Underworld Affliction}
+
+/ When a character is injured by a contaminated attack (such as a mummy�s slam attack, which can transmit mummy rot), touches an item smeared with diseased matter, or consumes disease- tainted food or drink, he must make an immediate Fortitude saving throw. If he succeeds, the disease has no effect�his immune system fought off the infection. If he fails, he takes damage after an incubation period. Once per day afterward, he must make a successful Fortitude saving throw to avoid repeated damage. Two successful saving throws in a row indicate that he has fought off the disease and recovers, taking no more damage.
+/ You can roll these Fortitude saving throws for the player so that he doesn�t know whether the disease has taken hold.
+
+.Disease            Infection       DC  Incubation    Damage              Source
+
+albinism
+blinding sickness   ingested        16   1d3 days     1d4 str[1]          DMG
+blindness
+cackle fever        inhaled         16     1 day      1d6 wis             DMG
+deafness
+demon fever         injury          18     1 day      1d6 con[2]          DMG
+devil chills[3]     injury          14   1d4 days     1d4 str             DMG
+dwarfism
+dyslexia
+epileptic
+filth fever         injury          12   1d3 days     1d3 dex, 1d3 con    DMG
+ghoul fever         injury (bite)   12     1 day      1d3 con, 1d3 dex    MM1
+hemophilia
+mindfire            inhaled         12     1 day      1d4 int             DMG
+mummy rot[4]        contact         20     1 day      1d6 con             DMG
+red ache            injury          15   1d3 days     1d6 str             DMG
+shakes              contact         13     1 day      1d8 dex             DMG
+slimy doom          contact         14     1 day      1d4 con[2]          DMG
+
+/ [1] Each time the victim takes 2 or more damage from the disease, he must make another Fortitude save or be permanently blinded.
+/ [2] When damaged, character must succeed on another saving throw or 1 point of damage is permanent drain instead.
+/ [3] The victim must make three successful Fortitude saving throws in a row to recover from devil chills.
+/ [4] Successful saves do not allow the character to recover. Only magical healing can save the character.

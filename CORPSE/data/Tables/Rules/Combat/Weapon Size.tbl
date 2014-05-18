@@ -1,0 +1,14 @@
+/ Weapon Damage - Conversion from Normal to Tiny/Large
+ 
+.Normal             Tiny                Large
+1d2                 ?                   1d3
+1d3                 1                   1d4
+1d4                 1d2                 1d6
+1d6                 1d3                 1d8
+1d8                 1d4                 2d6
+1d10                1d6                 2d8
+1d12                1d8                 3d6
+2d4                 1d4                 2d6
+2d6                 1d8                 3d6
+2d8                 1d10                3d8
+2d10                2d6                 4d8

@@ -1,73 +1,73 @@
-@ Race 13
-@ Save vs Chemical 3
-@ Save vs Natrual 3
-@ Save vs Magic 3
-@ Save vs Devices 4
-@ Perception 4
-@ StrMod 3
-@ DexMod 3
-@ AgiMod 3
-@ ConMod 3
-@ IntMod 3
-@ WisMod 3
-@ DisMod 3
-@ ChaMod 3
-@ Size 5
-@ Armor 3
-@ Avg Weight (lbs) 4
+. Race 13
+. Save Chemical 3
+. Save Natural 3
+. Save Magic 3
+. Save Devices 4
+. Perception 4
+. Str Mod 3
+. Dex Mod 3
+. Agi Mod 3
+. Con Mod 3
+. Int Mod 3
+. Wis Mod 3
+. Dis Mod 3
+. Cha Mod 3
+. Size 5
+. Armor 3
+. Avg Weight (lbs) 4
 
 : Race = Common + Humanoid
  
-!         |---------------------------------------------------------|
-!         |     N  S  D   P  |  ATTRIBUTE  MODIFIERS   |     A      |
-!         |  C  A  P  E   R  |-------------------------|  S  R      |
-!---------|  H  T  L  V   C  | S  D  A  C   I  W  D  C |  I  M  AVG |
-! R A C E |  E  R  L  C   P  | T  E  G  O   N  I  I  H |  Z  O   WT |
-!---------|  M  L  S  S   T  | R  X  I  N   T  S  S  A |  E  R  Lbs |
-!********************************************************************
+/         |---------------------------------------------------------|
+/         |     N  S  D   P  |  ATTRIBUTE  MODIFIERS   |     A      |
+/         |  C  A  P  E   R  |-------------------------|  S  R      |
+/---------|  H  T  L  V   C  | S  D  A  C   I  W  D  C |  I  M  AVG |
+/ R A C E |  E  R  L  C   P  | T  E  G  O   N  I  I  H |  Z  O   WT |
+/---------|  M  L  S  S   T  | R  X  I  N   T  S  S  A |  E  R  Lbs |
+/********************************************************************
 : Common
-Dwarf        5  5  3  5   0    1  1 -1  2   0  0  1 -1   -5  9   150
-Eldar        4  4  5  4   3    0  1  3  0   1  1  1  2    0  9   145
-Elf          4  4  5  4   3    0  1  3 -1   0  1  0  2    0  9   140
-Grey Elf     4  4  5  4   3    0  1  3 -1   0  0  1  2    0  9   140
-Half-Elf     4  4  4  4   2    0  0  1  0   0  0  0  1    0  9   155
-Half-Orc     4  3  2  4   1    0  0  0  0   0  0  0 -2    0  9   165
-Halfling     4  5  5  5   3   -3  3  1 -1   0  1  1 -1  -10  9    65
-Hobbit       4  5  5  5   3   -3  3  1 -1   0  1  1 -1  -10  9    65
-Human        3  3  3  3   1    0  0  0  0   0  0  0  0    0  9   180
-Orc          5  4  1  5   0    0  0  0  1   0 -1  0 -3    0  8   165
-Orkhaz       5  5  3  4   0    1  0  0  1   0  0  0 -2   -5  8   155
-Silvan       4  5  4  4   3    0  1  3 -1   0  1 -1  2    0  9   130
-Uruk         5  4  2  4   1    2  1  1  2   0 -1  0 -3    0  6   210
+dwarf        5  5  3  5   0    1  1 -1  2   0  0  1 -1   -5  9   150
+eldar        4  4  5  4   3    0  1  3  0   1  1  1  2    0  9   145
+elf          4  4  5  4   3    0  1  3 -1   0  1  0  2    0  9   140
+grey elf     4  4  5  4   3    0  1  3 -1   0  0  1  2    0  9   140
+half-elf     4  4  4  4   2    0  0  1  0   0  0  0  1    0  9   155
+half-orc     4  3  2  4   1    0  0  0  0   0  0  0 -2    0  9   165
+halfling     4  5  5  5   3   -3  3  1 -1   0  1  1 -1  -10  9    65
+hobbit       4  5  5  5   3   -3  3  1 -1   0  1  1 -1  -10  9    65
+human        3  3  3  3   1    0  0  0  0   0  0  0  0    0  9   180
+orc          5  4  1  5   0    0  0  0  1   0 -1  0 -3    0  8   165
+orkhaz       5  5  3  4   0    1  0  0  1   0  0  0 -2   -5  8   155
+silvan       4  5  4  4   3    0  1  3 -1   0  1 -1  2    0  9   130
+uruk         5  4  2  4   1    2  1  1  2   0 -1  0 -3    0  6   210
 
 : Humanoid
-Aarakocra    3  4  3  2   4    0  0  0  0   0  0  0  0    0  7   120
-Centaur      4  4  3  4   2    2  0 -2  2   0  1 -1  0   10  8  1600
-Lizard Man   5  4  3  2   2    1  1 -1  1   0 -1  0 -2    0  8   185
-Phraint      3  5  2  3   1    1  1  1  1   0  0  0 -3    5  3   220
-Rakshasa     3  4  5  3   2    1  0  1  1   1  0  1  1    0  5   180
-Rommach      4  4  4  2   3    0  0  0  0   0  0  0  0    0  8   180
-Satyr        3  4  3  4   2   -1  0  0  0   1  0  0 -1   -5  9   110
+aarakocra    3  4  3  2   4    0  0  0  0   0  0  0  0    0  7   120
+centaur      4  4  3  4   2    2  0 -2  2   0  1 -1  0   10  8  1600
+lizard man   5  4  3  2   2    1  1 -1  1   0 -1  0 -2    0  8   185
+phraint      3  5  2  3   1    1  1  1  1   0  0  0 -3    5  3   220
+rakshasa     3  4  5  3   2    1  0  1  1   1  0  1  1    0  5   180
+rommach      4  4  4  2   3    0  0  0  0   0  0  0  0    0  8   180
+satyr        3  4  3  4   2   -1  0  0  0   1  0  0 -1   -5  9   110
 
 : Fae
-Brownie      3  4  5  4   3   -3  3  3 -2   1  1  0  0  -10  7    35
-Drauglin     4  5  5  2   4    3  0  3  3   3  0  1  1   10  7  1200
-Dryad        3  5  4  2   3   -1  0  1  0   1  0  0  3  -10  9   110
-Frostman     5  4  4  3   0    0  0  0  0   0  0  0  0    0  8   170
-Gremlin      3  4  4  5   1    0  0  0  0   0  0  0  0   -5  7    40
-Leprechaun   4  4  3  3   3   -3  2  2 -1   2  1  0  0  -10  9    40
-Nymph        3  5  4  3   1   -1  0  0  0   2  0  0  3    0  9   120
-Pixie        4  4  3  3   2   -3 +2 +2 -2  +2  0  0  0  -20  9    50
-Sylph        3  5  3  3   1   -1  0  1  0   2  0  0  3    0  9   110
-Sprite       4  5  3  2   2   -3  2  2 -2   1  0  0  1  -15  9    40
+brownie      3  4  5  4   3   -3  3  3 -2   1  1  0  0  -10  7    35
+drauglin     4  5  5  2   4    3  0  3  3   3  0  1  1   10  7  1200
+dryad        3  5  4  2   3   -1  0  1  0   1  0  0  3  -10  9   110
+frostman     5  4  4  3   0    0  0  0  0   0  0  0  0    0  8   170
+gremlin      3  4  4  5   1    0  0  0  0   0  0  0  0   -5  7    40
+leprechaun   4  4  3  3   3   -3  2  2 -1   2  1  0  0  -10  9    40
+nymph        3  5  4  3   1   -1  0  0  0   2  0  0  3    0  9   120
+pixie        4  4  3  3   2   -3 +2 +2 -2  +2  0  0  0  -20  9    50
+sylph        3  5  3  3   1   -1  0  1  0   2  0  0  3    0  9   110
+sprite       4  5  3  2   2   -3  2  2 -2   1  0  0  1  -15  9    40
 
 : Mythical
-Couatl       4  5  4  1   3    3  0  1  3   3  2  2  0    5  5   600
-Item         2  2  1  0   0    0  0  0  0   0  0  0  0  -15  6     5
-Lamia        4  3  3  3   2    2  2  2  2   1  0  0  0    5  6   350
-Lamia Noble  4  3  3  3   2    3  0  3  3   1  0  0 -3    5  6   480
-Myrmidon     3  5  2  3   1    0  0  0  0   0  0  0  0    0  8   170
-Sphynx       4  4  3  3   1    3  0  1  2   2  2  1  0    5  5   480
-Unicorn      5  4  3  3   2    3  0  0  3   3  3  3  2   10  6  1200
-Vortikieri   3  4  3  1   1    0  0  0  0   0  0  0  0    0  9   160
-Will-o-wisp  4  4  5  5   0   -9 -9  0  0   0  0  0  0  -20  0     1
+couatl       4  5  4  1   3    3  0  1  3   3  2  2  0    5  5   600
+item         2  2  1  0   0    0  0  0  0   0  0  0  0  -15  6     5
+lamia        4  3  3  3   2    2  2  2  2   1  0  0  0    5  6   350
+lamia noble  4  3  3  3   2    3  0  3  3   1  0  0 -3    5  6   480
+myrmidon     3  5  2  3   1    0  0  0  0   0  0  0  0    0  8   170
+sphynx       4  4  3  3   1    3  0  1  2   2  2  1  0    5  5   480
+unicorn      5  4  3  3   2    3  0  0  3   3  3  3  2   10  6  1200
+vortikieri   3  4  3  1   1    0  0  0  0   0  0  0  0    0  9   160
+will-o-wisp  4  4  5  5   0   -9 -9  0  0   0  0  0  0  -20  0     1
