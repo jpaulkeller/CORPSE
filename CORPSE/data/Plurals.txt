@@ -1,2 +1,11 @@
+darts=darts
+deer=deer
+gloves=gloves
+goose=geese
+moose=moose
 mouse=mice
+peas=peas
+peppers=peppers
+squash=squash
+tacks=tacks
 tongs=tongs

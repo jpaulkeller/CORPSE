@@ -1,3 +1,5 @@
-{!OneWord}=#[^-_ ]+ // one word
-{!SameFirstLetter}=#{#{!}:.}.* // repeat the first letter in the previous resolved token
-{!OneWordWithSameFirstLetter}=#{#{!}:.}[^-_ ]+ // one word; repeat the first letter in the previous resolved token
+{!OneWord}=#[^-_ ]+# // one word
+{!SameFirstLetter}=#{#{!}:.}.*# // repeat the first letter in the previous resolved token
+{!MaybeSameFirstLetter}={50%?#{#{!}:.}.*#} // 50% chance to repeat the first letter in the previous resolved token
+{!OneWordWithSameFirstLetter}=#{#{!}:.}[^-_ ]+# // one word; repeat the first letter in the previous resolved token
+{!Different}=#.+(?<!{!})# // match anything but the previous resolved token
