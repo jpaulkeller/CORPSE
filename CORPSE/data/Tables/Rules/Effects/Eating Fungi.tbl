@@ -1,19 +1,15 @@
-1-2   1-2   mildly poisonous - likely to make the person who eats them sick (optionally roll on the 'Diseases 2: Symptoms' table above).
-1-2   3-4   highly poisonous - may kill someone who eats them, or make them sick (optionally roll on the 'Diseases 2: Symptoms' table above).
-1-2   5-6   neither nutritious nor poisonous.
-3-4   1-2   nutritious - may be eaten immediately, but if eaten too long after it's picked it will be (roll again: 1-2 of no nutritional value 3-4 mildly poisonous 5-6 mildly or highly poisonous, depending on how long).
-3-4   3-4   nutritious - and will keep its value for a long time after being picked.
-3-4   5-6   mildly poisonous if not cooked. If cooked, it is nutritious - but if left too long, it will be (roll again: 1-2 of no nutritional value 3-4 mildly poisonous 5-6 mildly or highly poisonous, depending on how long).
-5-6   1-2   nutritious, and has a medical use. Roll on 'Medical Effects of Fungi, Herbs etc' below.
-5-6   3-4   has a medical use (roll on 'Medical Effects of Fungi, Herbs etc' below) but no food value.
-5-6   5-6   has a medical use (roll on 'Medical Effects of Fungi, Herbs etc' below), but eating too much may result in it being mildly or highly poisonous. No food value.
-
-1-2   1-2   Calming. Roll two dice. The character is resistant to fear for that many hours.
-1-2   3-4   Deadens pain. Roll two dice. The character is resistant to pain for that many hours.
-1-2   5-6   Improves perception of magical effects. Roll two dice. The character is resistant to magical illusions for that many hours.
-3-4   1-2   As above, and the character's sight and hearing are also improved - or at least the character's ability to focus on them. As such they are less likely to wander into ambush, be unaware of someone sneaking up on them etc.
-3-4   3-4   Lowers blood flow. Roll 2 dice. The character needs less food and water, and poison will have a lesser effect, for that many hours. The character will however be sluggish and lethargic for the same priod of time.
-3-4   5-6   Lowers fatigue. The character can stay awake for up to 24 hours from when they last woke without suffering any ill effects. However after 18 hours they will have trouble concentrating, and after the 24 hours are up they are likely to fall asleep for 12 hours.
-5-6   1-2   Increases vigour. Roll 1 dice. The character is slightly stronger, more agile, can run faster and longer and so on for that many hours. However they are likely to be sluggish and lethargic until they next sleep.
-5-6   3-4   Improves natural healing. For the next two days the character will tend to get over illness and wounds more quickly.
-5-6   5-6   Gives a strange clarity. Roll 1 dice. The effects last for that many hours. The character will be less intelligent in general - but, strangely, will be more likely to notice when others are lying or concealing their true emotions.
+Calming - the character is resistant to fear for that {2d6} hours.
+Deadens pain - the character is resistant to pain for {2d6} hours.
+Gives a strange clarity for {6} hours. The character will be less intelligent in general; but, strangely, will be more likely to notice when others are lying or concealing their true emotions.
+Highly poisonous - may kill someone who eats them, or make them sick ({symptom})
+Improves natural healing. For the next two days the character will tend to get over illness and wounds more quickly.
+Improves perception of magical effects. The character is resistant to magical illusions for {2d6} hours.
+Improves sight and hearing (or at least the ability to focus on them). As such they are less likely to wander into ambush, be unaware of someone sneaking up on them etc.
+Increases vigour - the character is slightly stronger, more agile, can run faster and longer and so on for {6} hours. However they are likely to be sluggish and lethargic until they next sleep.
+Lowers blood flow - the character needs less food and water, and poison will have a lesser effect, for {2d6} hours. The character will however be sluggish and lethargic during that time.
+Lowers fatigue. The character can stay awake for up to 24 hours from when they last woke without suffering any ill effects. However after 18 hours they will have trouble concentrating, and after the 24 hours are up they are likely to fall asleep for 12 hours.
+Mildly poisonous - likely to make the person who eats them sick ({symptom})
+Mildly poisonous if not cooked. If cooked, it is nutritious - but if left too long, it will be {of no nutritional value|mildly poisonous|mildly or highly poisonous, depending on how long}
+Neither nutritious nor poisonous
+Nutritious - and will keep its value for a long time after being picked
+Nutritious - may be eaten immediately, but if eaten too long after it's picked it will be {of no nutritional value|mildly poisonous|mildly or highly poisonous, depending on how long}

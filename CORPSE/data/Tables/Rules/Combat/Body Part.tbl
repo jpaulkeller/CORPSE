@@ -1,23 +1,23 @@
-Head/Face
-{Left|Right} Ear
-{Left|Right} Eye
-Nose
-Mouth/Jaw
-Throat
-Chest
-Stomach
-{Upper|Lower} Back
-{Left|Right} Shoulder
-{Left|Right} Elbow
-{Left|Right} Wrist
-{Left|Right} Hand
-{Left|Right} {Thumb|Index Finger|Middle Finger|Ring Finger|Little Finger}
-Groin
-Hindquarters
-{Left|Right} Thigh
-{Left|Right} Knee
-{Left|Right} Ankle
-{Left|Right} Foot
-{Left|Right} Toe #{5}
+/ Source: KoDT #137, page 42
 
-? Source: KoDT #137, page 42
+chest
+groin
+head/face
+hindquarters
+mouth/jaw
+nose
+stomach
+throat
+{left|right} ankle
+{left|right} ear
+{left|right} elbow
+{left|right} eye
+{left|right} foot
+{left|right} hand
+{left|right} knee
+{left|right} shoulder
+{left|right} thigh
+{left|right} toe #{5}
+{left|right} wrist
+{left|right} {thumb|index finger|middle finger|ring finger|little finger}
+{upper|lower} back
