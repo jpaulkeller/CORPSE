@@ -1,0 +1,1075 @@
+<html>
+<body>
+
+<style type="text/css">
+em.cacher    { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #F8E484; }
+em.combo     { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #DDCCFF; }
+em.equipment { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #93F3FF; }
+em.event     { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #FFC4D2; }
+em.geocache  { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #254C00; }
+em.tb        { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #F2F2F2; }
+em.dnf       { font-style: normal; font-weight: bold; background-color: salmon }
+em.find      { font-style: normal; font-weight: bold; background-color: lightgreen }
+em.roll      { font-style: normal; font-weight: bold; background-color: yellow }
+em.ftf       { font-style: normal; font-weight: bold; color: blue; background-color: yellow }
+em.tbd       { font-style: normal; background-color: pink }
+.bug         { font-size: small; }
+</style>
+
+<table cellpadding=15>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>13-Year&nbsp;Cicadas</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/13-Year Cicadas.png" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>All players get -1 on all Search rolls in Forest tiles for the next 2 rounds.</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=salmon><b>Resolve Now</b></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Ancient&nbsp;Ruins</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Ancient Ruins.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You discover an artifact.  Draw 1 Equipment card.  You gain 1 point.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Archive&nbsp;Cache</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Archive Cache.png" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Choose any cache (not on the same tile as a player's token), and remove it from the board.  You lose 2 points.</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=salmon><b>Resolve Now</b></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Bad&nbsp;Coordinates</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Bad Coordinates.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn.  Ignore this card if you have the <em class=equipment>Cell&nbsp;Phone</em> or <em class=equipment>PDA</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Bad&nbsp;Weather</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Bad Weather.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn.  Ignore this card if you have the <em class=equipment>Emergency&nbsp;Radio</em> or <em class=equipment>Waterproof&nbsp;Jacket</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Barbed&nbsp;Wire</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Barbed Wire.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>-2 to your roll.  Ignore this card if you have the <em class=equipment>Gloves</em> or <em class=equipment>Utility&nbsp;Tool</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Bear&nbsp;Encounter</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Bear Encounter.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn. The player on your right moves your token 1 tile in any direction.  Ignore this card if you have the <em class=equipment>Ol'&nbsp;Blue</em> or <em class=equipment>Whistle</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Blisters</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Blisters.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You may move at most 2 tiles (per turn) until you skip a turn.  Ignore this card if you have the <em class=equipment>Hiking&nbsp;Boots</em> or <em class=equipment>First-aid&nbsp;Kit</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Bomb&nbsp;Squad</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Bomb Squad.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Remove the cache closest to your token from the board.  Ignore caches with player tokens in the same tile.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+</table></td>
+<p><hr><p>
+
+<table cellpadding=15>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Bragging&nbsp;Rights</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Bragging Rights.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Gain 1 point for every FTF coin you have.  Lose 1 point if you have none.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Broken&nbsp;Wrist</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Broken Wrist.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center> Jump your token to the Hospital.  End your turn, and skip your next turn.  Lose 4 points if you play this card on another player.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Bug&nbsp;Hog</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Bug Hog.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Lose 1 point for each Travel Bug you have.  Ignore this card if you have the <em class=equipment>Swag&nbsp;Bag</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Bug&nbsp;Swap</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Bug Swap.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Trade travel bugs with any other player.  You both gain 1 point.  If you have none, you may draw one first.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Bushwhacked</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Bushwhacked.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>If you are not on a path or Urban tile, lose 1 point and get -2 on your roll.  Ignore this card if you have the <em class=equipment>Ol'&nbsp;Blue</em> or <em class=equipment>Trail&nbsp;Guide</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Cache&nbsp;Maintenance</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Cache Maintenance.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>The cache nearest to you needed maintenance.  The player on your right moves the cache 1 tile in any direction.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Cache&nbsp;Pirates</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Cache Pirates.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Remove the cache farthest from your token from the board.</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=salmon><b>Resolve Now</b></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Call&nbsp;from&nbsp;the&nbsp;Boss</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Call from the Boss.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn and skip the next one.  Then draw one Equipment card.  Ignore this card if you have the <em class=equipment>Laptop</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Campsite&nbsp;Confusion</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Campsite Confusion.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>All players give one Equipment card to the player on their left.</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=salmon><b>Resolve Now</b></td></tr>
+  </table></td>
+
+</tr>
+
+</table></td>
+<p><hr><p>
+
+<table cellpadding=15>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Careless&nbsp;Cacher</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Careless Cacher.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You failed to properly re-hide the last cache you found.  All Search rolls for it get +1 (until it's found).  You lose 2 points.  Ignore this card if you have the <em class=equipment>Mirror</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Caught&nbsp;in&nbsp;the&nbsp;Rain</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Caught in the Rain.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Discard any one piece of equipment.  Ignore this card if you have the <em class=equipment>Waterproof&nbsp;Jacket</em> or <em class=equipment>Emergency&nbsp;Radio</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Creek&nbsp;Crossing</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Creek Crossing.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Oops! You slip crossing a small creek. End your turn.  Ignore this card if you have the <em class=equipment>Walking&nbsp;Stick</em> or <em class=equipment>Hiking&nbsp;Staff</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Dead&nbsp;Batteries</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Batteries.jpg" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn.  You may discard any Equipment card instead.  Ignore this card if you have the <em class=equipment>Safari&nbsp;Vest</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Dollar&nbsp;Store</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Dollar Store.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>If you're within 3 tiles of an Urban tile, end your turn.  Ignore this card if you have the <em class=equipment>Swag&nbsp;Bag</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Drought</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Drought.jpg" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Streams only cost 1 movement point to cross (for the next 2 rounds).</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=salmon><b>Resolve Now</b></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Early&nbsp;Frost</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Early Frost.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn.  Ignore this card if you have the <em class=equipment>Coat</em> or <em class=equipment>Gloves</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Equipment&nbsp;Rental</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Equipment Rental.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Select any equipment card from the deck.  You may keeps this equipment until you roll a <em class=dnf>DNF</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Eureka!</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Eureka!.png" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Keep this card.  You may discard it to solve any Puzzle Cache, or make a successful Search roll.</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=lightgreen><b>Discard To Resolve</b></td></tr>
+  </table></td>
+
+</tr>
+
+</table></td>
+<p><hr><p>
+
+<table cellpadding=15>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Feed&nbsp;The&nbsp;Trolls</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Feed The Trolls.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You stop to read the forums; end your turn.  Ignore this card if you have the <em class=equipment>Laptop</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Fire&nbsp;Ants</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Fire Ants.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn.  The player on your right moves your token 1 tile in any direction.  Ignore this card if you have the <em class=equipment>Gorp</em> or <em class=equipment>Long&nbsp;Pants</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Flash&nbsp;Flood</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Flash Flood.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Remove the nearest cache that is next to a stream from the board.  End your turn.  Ignore this card if you have the <em class=equipment>Waders</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Fox&nbsp;Hunt</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Fox Hunt.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You spot a red fox.  If you have <em class=equipment>Ol'&nbsp;Blue</em>, end your turn.  You gain 1 point.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Fresh&nbsp;Snow</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Snow.png" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>-1 to all rolls this round.</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=salmon><b>Resolve Now</b></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Ground&nbsp;Zero</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Ground Zero.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You may jump your token to the nearest cache location.  If you do, this counts as your turn.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Happy&nbsp;Birthday!</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Happy Birthday!.jpg" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Draw 1 Equipment card.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Heat&nbsp;Stroke</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Heat Stroke.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>-2 to your roll.  Ignore this card if you have the <em class=equipment>Hydration&nbsp;Pack</em>, <em class=equipment>Water&nbsp;Bottle</em> or <em class=equipment>Hat</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Heavy&nbsp;Rain</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Heavy Rain.png" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Streams cost 4 movement points to cross (for the next 2 rounds).</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=salmon><b>Resolve Now</b></td></tr>
+  </table></td>
+
+</tr>
+
+</table></td>
+<p><hr><p>
+
+<table cellpadding=15>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Helpful&nbsp;Hint</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Helpful Hint.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Keep this card.  You may discard it to get +2 on your roll.</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=lightgreen><b>Discard To Resolve</b></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Hidden&nbsp;Path</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Hidden Path.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You find a hidden path.  If you were moving, you get +3 on your Move roll.  If you were searching, you may take another turn.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>It's&nbsp;All&nbsp;About&nbsp;the&nbsp;Numbers!</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Numbers.gif" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Jump to the nearest level 1 cache you have not yet found.  End your turn unless you have the <em class=equipment>Mountain&nbsp;Bike</em> or <em class=equipment>Yellow&nbsp;Jeep</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>It's&nbsp;Not&nbsp;About&nbsp;the&nbsp;Numbers!</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Trophy.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You gain 1 point for each Multi-cache or Difficulty 5 cache you have found.  You lose 2 points if you have found none, unless you have the <em class=equipment>Binoculars</em> or <em class=equipment>Rope</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Ivory-billed&nbsp;Woodpecker</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Ivory-billed Woodpecker.jpg" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You spot a very rare bird.  Gain 2 points (4 if you have the <em class=equipment>Camera</em>).</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Killer&nbsp;Bees</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Good/Killer Bees.jpg" style="border:5px solid yellow" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You accidentally disturb a hive of angry bees; end your turn. The player on your right moves your token 2 tiles in any direction.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Leave&nbsp;No&nbsp;Trace</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Leave No Trace.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You carefully avoided the fragile flora.  You gain 2 points.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Litterbug</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Litterbug.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You left some garbage in the woods.  You lose 4 points.  Ignore this card if you have the <em class=equipment>CITO&nbsp;Bag</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Lost!</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Lost.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>The player on your right moves your token in any direction the number tiles equal to your roll.  Ignore this card if you have the <em class=equipment>Map</em> or <em class=equipment>Whistle</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+</table></td>
+<p><hr><p>
+
+<table cellpadding=15>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Lost&nbsp;Travel&nbsp;Bug</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Lost Travel Bug.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Discard a Travel Bug.  You lose 3 points.  Ignore this card if you don't have a Travel Bug.  Ignore this card if you have the <em class=equipment>Belt&nbsp;Pack</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Lost&nbsp;and&nbsp;Found</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Lost and Found.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Draw 1 Equipment card and give it to any other player.  You gain 2 points.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>May&nbsp;I&nbsp;Borrow&nbsp;That?</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Borrow.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Take any Equipment card from any player that has more points than you.  You lose 1 point.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Meet&nbsp;and&nbsp;Greet</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Event Cache.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Roll a random location.  Any player may jump to that tile.  All players who do receive 2 points.  Shuffle this card back into the deck.</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=salmon><b>Resolve Now</b></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Meet&nbsp;the&nbsp;Muggles</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Meet the Muggles.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You stop to explain geocaching.  End your turn unless you have the <em class=equipment>CITO&nbsp;Bag</em> or <em class=equipment>Geocoin</em>.  You gain 2 points.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Mine!</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Mine!.png" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You may take one Equipment card from the deck to complete a Combo.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Missed&nbsp;Anniversary</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Missed Anniversary.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Skip your next turn.  Discard any Equipment card.  You lose 1 point.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Mosquitoes</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Mosquitoes.jpg" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>-1 to your roll; -2 if you are in a Forest tile; end your turn if you are in a Swamp tile.  Ignore this card if you have the <em class=equipment>Insect&nbsp;Repellent</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Mud&nbsp;Slide</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Mud Slide.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn.  Discard one of your Equipment cards unless you have the <em class=equipment>Survival&nbsp;Strap</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+</table></td>
+<p><hr><p>
+
+<table cellpadding=15>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Muggled!</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Muggled!.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>The nearest level 1 or 2 Traditional cache has been emptied.  Remove any Travel Bugs it has.  It may still be found, but finders don't get to draw Equipment cards.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Night&nbsp;Caching</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Night Caching.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>All players not on an Urban tile skip their next turn.  Ignore this card if you have the <em class=equipment>Flashlight</em> or <em class=equipment>Head&nbsp;Lamp</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Out&nbsp;of&nbsp;Ink</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Out of Ink.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn while you try to improvise something to write with.  Ignore this card if you have the <em class=equipment>Backpack</em> or <em class=equipment>Pocket&nbsp;Knife</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Park&nbsp;Closed</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Park Closed.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn.  Does not affect <em class=cacher>Ranger&nbsp;Rachel</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Parking&nbsp;Ticket</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Parking Ticket.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Discard an Equipment card.  You lose 1 point.  Ignore this card if you have the <em class=equipment>Lucky&nbsp;Charm</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Pawn&nbsp;Shop</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Pawn Shop.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Draw 5 Equipment cards.  You may trade in any 1 of your Equipment cards for 1 of those 5.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Poison&nbsp;Ivy</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Poison Ivy.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>After finding your next cache, jump your token to your starting tile, and skip a turn.  Ignore this card if you have the <em class=equipment>Gloves</em> or <em class=equipment>Field&nbsp;Guide</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Pooh&nbsp;Sticks</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Pooh Sticks.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Jump your token to the nearest bridge, and end your turn.  You gain 1 point.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Private&nbsp;Property</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Private Property.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Explain what you're up to; end your turn.  You lose 2 points.  Ignore this card if you have the <em class=equipment>CITO&nbsp;Bag</em> or <em class=equipment>Trail&nbsp;Guide</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+</table></td>
+<p><hr><p>
+
+<table cellpadding=15>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Quench&nbsp;Your&nbsp;Thirst</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Quench Your Thirst.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn.  Ignore this card if you have the <em class=equipment>Hydration&nbsp;Pack</em> or <em class=equipment>Water&nbsp;Bottle</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Repair&nbsp;a&nbsp;Cache</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Repair a Cache.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You stop to repair a cache.  End your turn unless you have the <em class=equipment>Duct&nbsp;Tape</em> or <em class=equipment>Utility&nbsp;Tool</em>.  You gain 3 points.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Save&nbsp;a&nbsp;Turtle</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Save a Turtle.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You stop to help a turtle across the road.  End your turn unless you have the <em class=equipment>Field&nbsp;Guide</em>.  You gain 3 points.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Scenic&nbsp;View</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Good/Scenic View.gif" style="border:5px solid yellow" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn.  If you have the <em class=equipment>Camera</em>, skip your next turn too.  You gain 2 points.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Shortcut</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Shortcut.jpg" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Instead of rolling, you may jump up to 6 tiles this turn (or on your next move if you were searching).</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Signal&nbsp;Bounce</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Signal Bounce.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>The player on your right moves your token 1 tile in any direction.  Ignore this card if you have the <em class=equipment>External&nbsp;Antenna</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Sneaky&nbsp;Search</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Good/Sneaky Search.jpg" style="border:5px solid yellow" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Keep this card.  When you find a cache, you may discard it.  Other cachers on that tile do not get credit for the find.  You lose 1 point.</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=lightgreen><b>Discard To Resolve</b></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Soggy&nbsp;Log</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Soggy Log.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Skip a turn after finding your next cache (does not apply to multi-cache stages).  You lose 1 point.  Ignore this card if you have the <em class=equipment>Waterproof&nbsp;Jacket</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Solar&nbsp;Flares</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Solar Flares.png" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>No one is able to get a good signal; -2 on all Search rolls this round.  Ignore this card if you have the <em class=equipment>External&nbsp;Antenna</em>.</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=salmon><b>Resolve Now</b></td></tr>
+  </table></td>
+
+</tr>
+
+</table></td>
+<p><hr><p>
+
+<table cellpadding=15>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Spider&nbsp;Webs</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Spider Webs.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>-1 to your roll.  Ignore this card if you have the <em class=equipment>Walking&nbsp;Stick</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Steep&nbsp;Slope</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Steep Slope.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>If moving, end your turn.  If searching, -1 to your roll.  Ignore this card if you have the <em class=equipment>Hiking&nbsp;Staff</em> or <em class=equipment>Rope</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Stop&nbsp;For&nbsp;Directions</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Stop For Directions.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn, but get +3 to your next Move roll.  Ignore this card if you have the <em class=equipment>Cell&nbsp;Phone</em> or <em class=equipment>Map</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Suspicious&nbsp;Activity</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Police.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn.  Roll the dice: if you roll a <em class=dnf>DNF</em>, jump to the Police tile.  Ignore this card if you have the <em class=equipment>CITO&nbsp;Bag</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Thorns</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Thorns.jpg" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>-2 to your roll.  Ignore this card if you have the <em class=equipment>Gloves</em> or <em class=equipment>Long&nbsp;Pants</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Ticks</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Ticks.jpg" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Skip your next turn (you may finish this turn normally).  Ignore this card if you have the <em class=equipment>Gaiters</em>, <em class=equipment>Insect&nbsp;Repellent</em> or <em class=equipment>Long&nbsp;Pants</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Trade&nbsp;Up</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Trade Up.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You helped restock an empty cache.  Discard an Equipment card unless you have the <em class=equipment>Swag&nbsp;Bag</em>.  You gain 3 points.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Trash&nbsp;Out</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Trash Out.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You stop to pick up some trash.  End your turn unless you have the <em class=equipment>CITO&nbsp;Bag</em>.  You gain 3 points.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Twist&nbsp;and&nbsp;Shout</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Twist and Shout.jpg" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>All event cards (in play or held) are moved to the next player (clockwise).</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=salmon><b>Resolve Now</b></td></tr>
+  </table></td>
+
+</tr>
+
+</table></td>
+<p><hr><p>
+
+<table cellpadding=15>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Twisted&nbsp;Ankle</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Twisted Ankle.png" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn.  If you are not on a path, skip your next turn too.  Lose 2 points if you play this card on another player.  Ignore this card if you have the <em class=equipment>FRS&nbsp;Radio</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Upgrade</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Upgrade.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Draw an Equipment card, then give any one Equipment card you have to the player with the fewest equipment cards (other than yourself).  You gain 1 point.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Waterfall</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Good/Waterfall.jpg" style="border:5px solid yellow" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>The next player to end their turn at a waterfall gets 3 points (4 if they have the <em class=equipment>Camera</em>).</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=salmon><b>Resolve Now</b></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Waypoint&nbsp;My&nbsp;Car?</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/Waypoint.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>The player on your right moves your token 2 tiles in any direction.  Ignore this card if you have the <em class=equipment>Map</em> or <em class=equipment>Trail&nbsp;Guide</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Well-stocked&nbsp;Cache</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Well-stocked Cache.png" height=100></td></tr>
+    <tr><td height=125 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Keep this card.  You may discard it when you find a cache, to choose from 3 extra Equipment cards.</td></tr>
+        </table></td></tr>
+    <tr><td align=center bgcolor=lightgreen><b>Discard To Resolve</b></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>What&nbsp;Kind&nbsp;of&nbsp;Snake&nbsp;Is&nbsp;That?</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Snake.jpg" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>End your turn.  Roll the dice.  If you roll a <em class=dnf>DNF</em>, jump your token to the Hospital.  Ignore this card if you have the <em class=equipment>Field&nbsp;Guide</em> or <em class=equipment>Hiking&nbsp;Staff</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+<tr>
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Where's&nbsp;George?</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Events/Wheres George.jpg" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>You ran out of trinkets to trade.  You lose 1 point.  Ignore this card if you have the <em class=equipment>Swag&nbsp;Bag</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>Winter&nbsp;is&nbsp;Coming</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Sometimes it's just too cold for caching.  End your turn, and jump your token back to your starting location.  Ignore this card if you have the <em class=equipment>Coat</em> or <em class=equipment>Emergency&nbsp;Radio</em>.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+<td valign=top>
+  <table border=1>
+    <tr><td align=center bgcolor=#FFC4D2><b>You're&nbsp;Fired!</b></td></tr>
+    <tr><td colspan=2 align=center height=100 width=200><img align=center src="Cards/You're Fired!.jpg" style="border:5px solid red" height=100></td></tr>
+    <tr><td height=150 width=200>
+        <table cellpadding=5>
+          <tr><td align=center>Discard any Equipment card.  Take an extra turn after this one.</td></tr>
+        </table></td></tr>
+  </table></td>
+
+</tr>
+
+</table></td>
+<p><hr><p>
+
+</body>
+</html>
