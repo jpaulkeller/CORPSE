@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<project name="GPSQ" basedir=".">
+  
+  <target name="Map Maker" description="Create executable jar, and zip everything">
+	    
+   <property name="app" value="MapMaker" />
+   <property name="dist" location="C:/pkgs/dist" />
+   <property name="dir" location="${dist}/gps/map" />
+   <property name="zip" value="${dir}/${app}-beta.zip" />
+   
+   <mkdir dir="${dir}" />
+   <mkdir dir="${dir}/jars" />
+	   
+   <copy todir="${dir}" overwrite="true">
+      <fileset dir=".">
+         <include name="MapMaker.bat" />
+      </fileset>
+   	<fileset dir="..">
+         <include name="icons/**" />
+      </fileset>
+   </copy>
+	         
+   <delete file="${dir}/jars/${app}.jar" />
+   <jar destfile="${dir}/jars/${app}.jar">
+    <manifest>
+      <attribute name="Main-Class" value="map.MapMaker"/>
+      <attribute name="Class-Path" value="jars/*"/>
+    </manifest>
+    <fileset dir="../classes">
+      <include name="**/*.class" />
+    </fileset>
+    <fileset dir="../../Utils/classes">
+      <include name="**/*.class" />
+    </fileset>
+    <fileset dir="..">
+      <include name="icons/buttons/*.gif" />
+    </fileset>
+   </jar>
+
+   <signjar alias="palantiri" keystore="${dist}/keystore.pal" storepass="vgy78uhb">
+      <fileset dir="${dir}/jars" includes="*.jar" />
+   </signjar>
+
+   <!-- package entire project distributable -->
+   <delete file="${zip}" />
+   <zip destfile="${zip}">
+      <zipfileset dir="${dir}" prefix="${app}">
+         <include name="MapMaker.bat" />
+         <include name="data/**" />
+         <include name="icons/**" />
+         <include name="jars/**" />
+      </zipfileset>
+   </zip>
+
+  </target>
+	
+</project>
