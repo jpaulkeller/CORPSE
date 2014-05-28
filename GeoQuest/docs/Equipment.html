@@ -1,0 +1,460 @@
+<html>
+<body>
+
+<style type="text/css">
+em.cacher    { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #F8E484; }
+em.combo     { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #DDCCFF; }
+em.equipment { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #93F3FF; }
+em.event     { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #FFC4D2; }
+em.geocache  { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #254C00; }
+em.tb        { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #F2F2F2; }
+em.dnf       { font-style: normal; font-weight: bold; background-color: salmon }
+em.find      { font-style: normal; font-weight: bold; background-color: lightgreen }
+em.roll      { font-style: normal; font-weight: bold; background-color: yellow }
+em.ftf       { font-style: normal; font-weight: bold; color: blue; background-color: yellow }
+em.tbd       { font-style: normal; background-color: pink }
+.bug         { font-size: small; }
+</style>
+
+<table cellpadding=12>
+
+<tr>
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Backpack</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Backpack.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Provides 4 extra equipment slots, but you can't move more than 5 each turn.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Through&nbsp;Hiker</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Belt&nbsp;Pack</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Belt Pack.jpg" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Provides 2 extra equipment slots.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Hitchhiker</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Binoculars</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Binoculars.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 on any move roll 4 or higher.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Bird&nbsp;Watcher</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>CITO&nbsp;Bag</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/CITO.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>You may discard this card to gain 2 points.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Environmentalist</b></td></tr>
+</table></td>
+
+</tr>
+
+<tr>
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Camera</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Camera.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Gain 1 point per Event Cache attendee (only if you attend).</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Photographer</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Cell&nbsp;Phone</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/CellPhone.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>You may add 1 to your Search roll (if you do, gain 1 less point).</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Engineer</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Coat</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Coat.jpg" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Protects against some cold-related effects</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Insulation</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Duct&nbsp;Tape</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Duct Tape.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>You may discard this Equipment to prevent any Event from affecting you.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>MacGyver</b></td></tr>
+</table></td>
+
+</tr>
+
+<tr>
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Emergency&nbsp;Radio</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Emergency Radio.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Receives weather forecasts.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Weatherman</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>External&nbsp;Antenna</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Antenna.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Add 1 to your Search roll in Forest and Urban tiles.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Canyon&nbsp;Cacher</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>FRS&nbsp;Radio</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/FRS Radio.jpg" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>If you roll a <em class=find>FIND</em>, you may jump to any tile in your quadrant occupied by a player.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Search&nbsp;and&nbsp;Rescue</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Field&nbsp;Guide</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Field Guide.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>You may discard to solve any puzzle cache.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Bird&nbsp;Watcher</b></td></tr>
+</table></td>
+
+</tr>
+
+</table></td>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<table cellpadding=12>
+
+<tr>
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>First-aid&nbsp;Kit</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/First-aid Kit.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Discard to prevent any injury Event.  Gain 4 points if used on another player.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Paramedic</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Flashlight</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Flashlight.jpg" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 on Search rolls for caches not yet found by anyone.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Night&nbsp;Cacher</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Gaiters</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Gaiters.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 on Move rolls in Swamp terrain and when crossing a stream.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Marsh&nbsp;Madness</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Geocoin&nbsp;(1)</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Cards/Geocoin.jpg" style="border:5px solid red" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>This card counts as 3 points.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Coin&nbsp;Collector</b></td></tr>
+</table></td>
+
+</tr>
+
+<tr>
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Geocoin&nbsp;(2)</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Cards/Geocoin.jpg" style="border:5px solid red" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>This card counts as 3 points.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Coin&nbsp;Collector</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Gloves</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Gloves.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 on Search rolls for any level 3 or higher cache in a Forest tile.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Insulation</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Gorp</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Gorp.gif" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Discard this card to take another turn.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Trail&nbsp;Mix</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Hat</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Hat.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>You earn an extra point for every Event cache you attend.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Event&nbsp;Coordinator</b></td></tr>
+</table></td>
+
+</tr>
+
+<tr>
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Head&nbsp;Lamp</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Cards/Head Lamp.jpg" style="border:5px solid red" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+2 on Move rolls if both dice are blue.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Night&nbsp;Cacher</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Hiking&nbsp;Boots</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Good/HikingBoots.jpg" style="border:5px solid yellow" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 to Move rolls in Forest terrain.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Through&nbsp;Hiker</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Hiking&nbsp;Staff</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Cards/Hiking Staff.jpg" style="border:5px solid red" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 to Move rolls in Rocky terrain.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Event&nbsp;Coordinator</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Hydration&nbsp;Pack</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/HydrationPack.jpg" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Provides 2 extra equipment slots.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Road&nbsp;Warrior</b></td></tr>
+</table></td>
+
+</tr>
+
+</table></td>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<table cellpadding=12>
+
+<tr>
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Insect&nbsp;Repellent</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Good/BugSpray.jpg" style="border:5px solid yellow" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Can prevent several bug-related events.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Marsh&nbsp;Madness</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Laptop</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Laptop.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>You may solve any Puzzle cache using only 1 of the letters.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Engineer</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Long&nbsp;Pants</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Cards/LongPants.jpg" style="border:5px solid red" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Protects against some Events such as <em class=event>Thorns</em> and <em class=event>Ticks</em>.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Veteran</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Lucky&nbsp;Charm</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Lucky Charm.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>You get +1 whenever you roll doubles.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Karma</b></td></tr>
+</table></td>
+
+</tr>
+
+<tr>
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Map</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Map.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Can prevent the effects of getting lost.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Tracker</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Mirror</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Mirror.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 on Search rolls for caches in Urban areas.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Karma</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Mountain&nbsp;Bike</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Mountain Bike.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 to your Move roll if either die is 1.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Road&nbsp;Warrior</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Ol'&nbsp;Blue</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Good/Dog.jpg" style="border:5px solid yellow" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>You search for caches in adjacent tiles as if you were on them.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Tracker</b></td></tr>
+</table></td>
+
+</tr>
+
+<tr>
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>PDA</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/PDA.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>You may roll again if your first Search roll fails.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Hitchhiker</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Pocket&nbsp;Knife</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Pocket Knife.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 on Search rolls for any level 5 cache.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Eagle&nbsp;Scout</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Rope</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Rope.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Discard to ignore any event if you are in Rocky terrain.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Canyon&nbsp;Cacher</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Safari&nbsp;Vest</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Safari Vest.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Provides 3 extra equipment slots.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Photographer</b></td></tr>
+</table></td>
+
+</tr>
+
+</table></td>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<table cellpadding=12>
+
+<tr>
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Survival&nbsp;Strap</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Cards/Survival Strap.jpg" style="border:5px solid red" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>You may reroll if both dice are 1.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Paramedic</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Swag&nbsp;Bag</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Swag Bag.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Provides 2 extra equipment slots.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Naturalist</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Trail&nbsp;Guide</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Trail Guide.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>You may move 1 extra tile along a path each turn.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Trail&nbsp;Mix</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Utility&nbsp;Tool</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Utility Tool.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 on Search rolls for all Multi-caches.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>MacGyver</b></td></tr>
+</table></td>
+
+</tr>
+
+<tr>
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Waders</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Cards/Waders.jpg" style="border:5px solid red" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Crossing a stream only costs you 1 movement point.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Environmentalist</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Walking&nbsp;Stick</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Walking Stick.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 on Move rolls if either die is yellow</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Naturalist</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Water&nbsp;Bottle</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Water Bottle.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 on Move rolls if either die is blue.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Veteran</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Waterproof&nbsp;Jacket</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/GoreTex.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Provides 1 extra equipment slot.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Weatherman</b></td></tr>
+</table></td>
+
+</tr>
+
+<tr>
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Whistle</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Whistle.jpg" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>Good for clearing the pool, too.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Eagle&nbsp;Scout</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>Yellow&nbsp;Jeep</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Yellow Jeep.png" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>+1 on Move rolls on Urban and Clear tiles.</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>Search&nbsp;and&nbsp;Rescue</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>&nbsp</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Blank.gif" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>&nbsp</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>&nbsp</b></td></tr>
+</table></td>
+
+<td valign=top><table border=1>
+  <tr><td colspan=2 align=center bgcolor=#93F3FF><b>&nbsp</b></td></tr>
+  <tr><td colspan=2 align=center height=90 width=140>
+      <img align=center src="Equipment/Blank.gif" height=75></td></tr>
+  <tr><td colspan=2 align=center height=80 width=140>&nbsp</td></tr>
+  <tr><td align=center bgcolor=#DDCCFF><b>&nbsp</b></td></tr>
+</table></td>
+
+</tr>
+
+</table></td>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+</body>
+</html>
