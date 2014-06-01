@@ -2,6 +2,7 @@ package map.model;
 
 import java.awt.Image;
 import java.io.File;
+import java.util.Random;
 
 import javax.swing.ImageIcon;
 
