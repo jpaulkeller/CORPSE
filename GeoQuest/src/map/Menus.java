@@ -63,6 +63,8 @@ public class Menus
    private static final String CLR_STRM = "Clear Streams";
    private static final String CLR_PATH = "Clear Paths";
 
+   private static final String LAYER_ADD = "Add Layer";
+   
    private static final String GRID_NOT = "No Grid";
    private static final String GRID_SQR = "Square Grid";
    private static final String GRID_HEX = "Hex Grid";
@@ -129,6 +131,7 @@ public class Menus
       JMenuBar menubar = new JMenuBar();
       menubar.add (makeMapMenu());
       menubar.add (makeEditMenu());
+      menubar.add (makeLayerMenu());
       menubar.add (makeViewMenu());
       return menubar;
    }
@@ -182,6 +185,16 @@ public class Menus
       return menu;
    }
 
+   private JMenu makeLayerMenu()
+   {
+      JMenu menu = new JMenu ("Layer");
+      menu.setMnemonic ('L');
+      
+      menu.add (makeMenuItem (LAYER_ADD, KeyEvent.VK_A, "LayerAdd.gif", "Add a new layer (on top)"));
+      
+      return menu;
+   }
+
    private JMenu makeViewMenu()
    {
       JMenu menu = new JMenu ("View");
@@ -229,7 +242,7 @@ public class Menus
       tools.add (makeToggle (BOX, "BoxSelect.gif", false, modes, "Fill rectangular area"));
       tools.add (makeToggle (PATH, "Path.gif", false, modes, "Click or drag to create a path along selected points"));
       tools.add (makeToggle (STREAM, "Stream.gif", false, modes, "Click or drag to create a stream along selected points"));
-      tools.add (makeToggle (ERASE, "Eraser.gif", true, modes, "Click or drag to erase features"));
+      tools.add (makeToggle (ERASE, "Eraser.gif", true, modes, "Click or drag to erase features (one layer at a time)"));
 
       return tools;
    }
@@ -315,17 +328,20 @@ public class Menus
       public void actionPerformed (final ActionEvent e)
       {
          String cmd = e.getActionCommand();
-         if (handleFileCommand (cmd))
-            return;
          if (handleMapCommand (cmd))
             return;
-         if (moveMap (cmd))
+         if (handleEditCommand (cmd))
             return;
-         if (setGrid (cmd))
+         if (handleLayerCommand (cmd))
             return;
-         if (setScale (cmd))
+         
+         if (handleMoveCommand (cmd))
             return;
-         if (setMode (cmd))
+         if (handleGridCommand (cmd))
+            return;
+         if (handleScaleCommand (cmd))
+            return;
+         if (handleModeCommand (cmd))
             return;
          if (cmd.equals (EXIT))
             System.exit (0);
@@ -334,7 +350,7 @@ public class Menus
          app.setText ("Unsupported command: " + cmd);
       }
 
-      private boolean handleFileCommand (final String cmd)
+      private boolean handleMapCommand (final String cmd)
       {
          if (cmd.equals (NEW))
             app.newMap();
@@ -355,7 +371,7 @@ public class Menus
          return true;
       }
       
-      private boolean handleMapCommand (final String cmd)
+      private boolean handleEditCommand (final String cmd)
       {
          if (cmd.equals (UNDO))
             app.getMap().restore (MapModel.BACKUP_1);
@@ -370,7 +386,16 @@ public class Menus
          return true;
       }
       
-      private boolean moveMap (final String cmd)
+      private boolean handleLayerCommand (final String cmd)
+      {
+         if (cmd.equals (LAYER_ADD))
+            app.getMap().addLayer();
+         else
+            return false;
+         return true;
+      }
+      
+      private boolean handleMoveCommand (final String cmd)
       {
          Scale scale = app.getMap().getMapPanel().getScale();
          int width = app.getMap().getMapPanel().getMapWidth();
@@ -398,7 +423,7 @@ public class Menus
          return true;
       }
       
-      private boolean setGrid (final String cmd)
+      private boolean handleGridCommand (final String cmd)
       {
          if (cmd.equals (GRID_NOT))
             app.getMap().showGrid (Grid.None);
@@ -413,7 +438,7 @@ public class Menus
          return true;
       }
       
-      private boolean setScale (final String cmd)
+      private boolean handleScaleCommand (final String cmd)
       {
          if (cmd.equals (SCALE_1))
             app.getMap().getMapPanel().setScale (Scale.Full);
@@ -426,7 +451,7 @@ public class Menus
          return true;
       }
       
-      private boolean setMode (final String cmd)
+      private boolean handleModeCommand (final String cmd)
       {
          Mode mode = null;
          if (cmd.equals (DRAW))

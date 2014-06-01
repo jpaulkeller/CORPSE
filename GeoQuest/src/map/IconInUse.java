@@ -30,11 +30,11 @@ public class IconInUse implements Observer
    @Override
    public void update(Observable o, Object action)
    {
-      if (action.equals("load"))
+      if (action.equals(Map.MAP_LOADED))
          loadIcons();
-      else if (action.toString().startsWith("tile: "))
+      else if (action.toString().startsWith(Map.TILE_FIRST_USE))
          if (palette.getURLs().size() <= DynamicPalette.MAX_ICONS)
-            addToPalette(action.toString().substring(6));
+            addToPalette(action.toString().substring(Map.TILE_FIRST_USE.length()));
    }
 
    private int loadIcons()
@@ -42,11 +42,11 @@ public class IconInUse implements Observer
       CrossMap<String, Integer> tiles = map.getTiles();
       for (String path : tiles.keySet())
       {
-         File file = new File(root + path);
+         File file = new File(root + File.separator + path);
          if (file.exists())
             addToPalette(path);
          else
-            System.err.println("Missing icon: " + path);
+            System.err.println("Missing icon: " + file.getPath());
          
          if (palette.getURLs().size() == DynamicPalette.MAX_ICONS)
             break;
@@ -57,14 +57,11 @@ public class IconInUse implements Observer
 
    private void addToPalette(final String path)
    {
-      if (!path.contains("terrain")) // ignore terrain tiles
+      PaletteTile pi = addIcon (path);
+      if (pi != null)
       {
-         PaletteTile pi = addIcon (path);
-         if (pi != null)
-         {
-            pi.put ("SOURCE", root);
-            palette.getURLs().add (path);
-         }
+         pi.put ("SOURCE", root);
+         palette.getURLs().add (path);
       }
    }
 }

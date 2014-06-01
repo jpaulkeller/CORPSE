@@ -26,12 +26,23 @@ import utils.PrintUtil;
 
 // TODO
 // multiple layers with toggle button to hide
+// plot point icons (so they can overlap) instead of at a tile
 // right-click to erase
 // better Undo
 // pop-up (for eye-dropper?)
 // better tool icons
 // custom lines: styles/fills, width, randomness, grid-alignment
 // text!
+
+// tile sources:
+/*
+http://www.squareforge.com/pdf-forests.html
+http://www.plaintextures.com/grasstextures.php?urlcode=m7irGaPIQWG4Overr3IagiK2zuZVPuEuHiFX4rMascUwg2DVx30XhA8Y125%2BG9h4WAkBqz3%2FD8Hn0Lmc%2FNuoJg%3D%3D
+http://cgtextures.com/
+*/
+
+// map ideas
+// http://lotro-wiki.com/images/thumb/5/5e/Entwood_map.jpg/400px-Entwood_map.jpg
 
 /*
  How to print:
@@ -49,9 +60,10 @@ public class MapMaker implements Observer
    private Map map;
    private JFrame frame;
    private JSplitPane palettes;
-   private DynamicPalette terrainPalette;
+   private DynamicPalette terrainPalette; // ground
    private DynamicPalette featurePalette; // trees and such
-   private DynamicPalette usedPalette; // all icons currently used on the map
+   private DynamicPalette recentPalette; // tiles currently/recently used on the map
+   private LayerPanel layerPanel;
    private JPanel mainPanel;
    private JSplitPane split;
    private JProgressBar progress;
@@ -66,28 +78,31 @@ public class MapMaker implements Observer
 
       menus = new Menus (this);
     
-      terrainPalette = new DynamicPalette
-         (null, "Terrain (bottom layer)", IMAGE_ROOT, "terrain", new IconButtonListener (0));
-      terrainPalette.getPanel().setPreferredSize (new Dimension (200, 200));
-      
-      usedPalette = new DynamicPalette
-         (map, "Features In Use", IMAGE_ROOT, null, new IconButtonListener (1));
-      usedPalette.getPanel().setPreferredSize (new Dimension (200, 100));
+      IconButtonListener iconListener = new IconButtonListener();
+      recentPalette = new DynamicPalette(map, "Recent Tiles", IMAGE_ROOT, null, iconListener);
+      recentPalette.getPanel().setPreferredSize (new Dimension (200, 100));
             
-      featurePalette = new DynamicPalette
-         (null, "Features (top layer)", IMAGE_ROOT, "features", new IconButtonListener (1));
-      featurePalette.getPanel().setPreferredSize (new Dimension (200, 200));
+      featurePalette = new DynamicPalette(null, "Features (top layers)", IMAGE_ROOT, "features", iconListener);
+      featurePalette.getPanel().setMinimumSize (new Dimension (200, 120));
+      featurePalette.getPanel().setPreferredSize (new Dimension (200, 250));
                   
-      JPanel featurePanel = new JPanel(new BorderLayout());
-      featurePanel.add(usedPalette.getPanel(), BorderLayout.NORTH);
-      featurePanel.add(featurePalette.getPanel(), BorderLayout.CENTER);
+      terrainPalette = new DynamicPalette(null, "Terrain (bottom layer)", IMAGE_ROOT, "terrain", iconListener);
+      terrainPalette.getPanel().setMinimumSize (new Dimension (200, 120));
+      terrainPalette.getPanel().setPreferredSize (new Dimension (200, 250));
       
       palettes = new JSplitPane (JSplitPane.VERTICAL_SPLIT, true);
-      palettes.add (terrainPalette.getPanel(), JSplitPane.TOP);
-      palettes.add (featurePanel, JSplitPane.BOTTOM);
+      palettes.add (featurePalette.getPanel(), JSplitPane.TOP);
+      palettes.add (terrainPalette.getPanel(), JSplitPane.BOTTOM);
+
+      JPanel iconPanel = new JPanel(new BorderLayout());
+      iconPanel.add(recentPalette.getPanel(), BorderLayout.NORTH);
+      iconPanel.add(palettes, BorderLayout.CENTER);
+      
+      layerPanel = new LayerPanel(map);
       
       JPanel left = new JPanel (new BorderLayout());
-      left.add (palettes, BorderLayout.CENTER);
+      left.add (iconPanel, BorderLayout.CENTER);
+      left.add (layerPanel, BorderLayout.EAST);
 
       split = new JSplitPane (JSplitPane.HORIZONTAL_SPLIT, true);
       split.add (left, JSplitPane.LEFT);
@@ -115,8 +130,7 @@ public class MapMaker implements Observer
    public void open()
    {
       frame = ComponentTools.open ("Map Maker", null, mainPanel, null);
-      // must be done after the GUI is visible
-      palettes.setDividerLocation (0.35);
+      palettes.setDividerLocation (0.5); // must be done after the GUI is visible
    }
 
    public Map getMap()
@@ -232,26 +246,31 @@ public class MapMaker implements Observer
    }
    
    @Override
-   public void update (final Observable o, final Object action)
+   public void update (final Observable o, final Object obj)
    {
       if (progress != null)
-         progress.setString (action.toString());
+      {
+         String action = obj.toString();
+         // ignore actions that don't start with an uppercase letter
+         if (action != null && action.substring(0, 1).equals(action.substring(0, 1).toUpperCase()))
+            progress.setString (action);
+      }
    }
 
    class IconButtonListener implements ActionListener
    {
-      private int layer;
-      
-      public IconButtonListener (final int layer)
-      {
-         this.layer = layer;
-      }
-      
       @Override
       public void actionPerformed (final ActionEvent e)
       {
          PaletteTile tile = (PaletteTile) e.getSource();
-         map.setDrawTile (tile.getTile(), layer);
+         // TODO: consider using top dir as the default layer (by name)
+         int defaultLayer = tile.getFile().contains("terrain") ? 0 : 1;
+         if (defaultLayer == 0 && map.getDrawLayerIndex() != 0)
+            map.setDrawLayerIndex(defaultLayer);
+         else if (defaultLayer == 1 && map.getDrawLayerIndex() == 0) // only change if it's the terrain layer
+            map.setDrawLayerIndex(defaultLayer);
+         
+         map.setDrawTile (tile.getTile());
          menus.setDrawIcon (tile.getIcon());
          menus.enableIcon (true);
          

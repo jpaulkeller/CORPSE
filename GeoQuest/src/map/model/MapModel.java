@@ -4,10 +4,12 @@ package map.model;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Observable;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,6 +23,13 @@ public class MapModel extends Observable
 {
    public static final String BACKUP_0 = "data/backups/original.map";
    public static final String BACKUP_1 = "data/backups/recent.map";
+   
+   public static final String MAP_CLEARED = "Map cleared";
+   public static final String MAP_LOADED = "Map loaded";
+   public static final String DRAW_LAYER_SET = "draw layer set: "; // hidden
+   public static final String LAYER_ADDED = "Layer added";   
+   public static final String TILE_FIRST_USE = "tile: "; // hidden
+   public static final String TILE_SELECTED = "Tile selected: ";
    
    private int rowCount;
    private int colCount;
@@ -50,9 +59,9 @@ public class MapModel extends Observable
       clear();
       setSize (rows, cols);
       
-      while (layers.size() < 2)
+      while (layers.size() < 2) // start with 2 layers initially
          layers.add (new Layer (rows, cols, layers.size()));
-      fireChange ("Map cleared");
+      fireChange (MAP_CLEARED);
    }
    
    private void setSize (final int rows, final int cols)
@@ -118,7 +127,7 @@ public class MapModel extends Observable
       if (gridSize != pixels)
       {
          this.gridSize = pixels;
-         // props.put ("GridType", ); TBD
+         // props.put ("GridType", ); TODO
          props.put ("GridSize", gridSize + "");
          fireChange ("Grid size changed to: " + pixels);
       }
@@ -127,6 +136,12 @@ public class MapModel extends Observable
    public boolean isSquare()
    {
       return rowCount == colCount;
+   }
+   
+   public void addLayer()
+   {
+      layers.add (new Layer (rowCount, colCount, layers.size()));
+      fireChange (LAYER_ADDED);
    }
    
    public void resize (final int newRows, final int newCols, final Scale scale)
@@ -150,16 +165,16 @@ public class MapModel extends Observable
       needsSave = true;
       fireChange ("Map resized: " + newRows + " x " + newCols);
    }
-   
-   public void setDrawTile (final Tile tile, final int layer)
+
+   public void setDrawLayerIndex (final int layer)
    {
-      this.drawTile = tile;
       this.drawLayer = layer;
+      fireChange(DRAW_LAYER_SET + layer);
    }
    
-   public Tile getDrawTile()
+   public int getDrawLayerIndex()
    {
-      return drawTile;
+      return drawLayer;
    }
    
    public Layer getDrawLayer()
@@ -167,6 +182,17 @@ public class MapModel extends Observable
       return layers.get (drawLayer);
    }
    
+   public void setDrawTile (final Tile tile)
+   {
+      this.drawTile = tile;
+      fireChange(TILE_SELECTED + tile.getFile());
+   }
+   
+   public Tile getDrawTile()
+   {
+      return drawTile;
+   }
+
    public List<Layer> getLayers()
    {
       return layers;
@@ -189,14 +215,14 @@ public class MapModel extends Observable
    
    public void drawTile (final int row, final int col)
    {
-      setTile (layers.get (drawLayer), row, col, drawTile);
+      setTile (getDrawLayer(), row, col, drawTile);
    }
    
    public void fillTiles (final Cell cell)
    {
       if (drawTile != null && tiles.get (drawTile.getFile()) == null)
          tiles.put (drawTile.getFile(), tiles.size() + 1);
-      layers.get (drawLayer).fillTiles (cell, drawTile);
+      getDrawLayer().fillTiles (cell, drawTile);
    }
    
    public void setTile (final Layer layer, final Cell cell, final Tile tile)
@@ -209,8 +235,7 @@ public class MapModel extends Observable
       if (tile != null && tiles.get (tile.getFile()) == null) // first time for this tile
       {
          tiles.put (tile.getFile(), tiles.size() + 1);
-         if (layer.getDepth() == 1) // feature
-            fireChange("tile: " + tile.getFile());
+         fireChange(TILE_FIRST_USE + tile.getFile());
       }
       layer.setValue (row, col, tile);
       needsSave = true;
@@ -316,8 +341,7 @@ public class MapModel extends Observable
    private static final Pattern PROPERTY = Pattern.compile ("([A-Za-z ]+)=(.*)");
    private static final Pattern TILE_PROP = Pattern.compile ("([0-9]+)=(.*)");
    private static final Pattern TILE_RUN = Pattern.compile ("([0-9]+)x([0-9]+)");
-   private static final Pattern SEGMENT =
-      Pattern.compile ("[SP]: ([0-9]+),([0-9]+) ([0-9]+),([0-9]+)");
+   private static final Pattern SEGMENT = Pattern.compile ("[SP]: ([0-9]+),([0-9]+) ([0-9]+),([0-9]+)");
    
    public void load (final File file)
    {
@@ -330,7 +354,7 @@ public class MapModel extends Observable
       loadTiles (lines);
       loadLayers (lines);
       loadLines (lines);
-      fireChange ("load");
+      fireChange (MAP_LOADED);
    }
 
    private void loadProperties (final List<String> lines)
@@ -385,7 +409,7 @@ public class MapModel extends Observable
          }
       }
 
-      while (layers.size() < 2)
+      while (layers.size() < 2) // make sure we have at least 2 layers
          layers.add (new Layer (rowCount, colCount, layers.size()));
    }
 
@@ -417,14 +441,17 @@ public class MapModel extends Observable
       Collection<String> lines = new ArrayList<String>();
 
       // properties
-      props.put ("Version", "20080929");
+      props.put ("Version", "20140528");
       for (Map.Entry<String, String> entry : props.entrySet())
          lines.add (entry.getKey() + "=" + entry.getValue());
-
+      
       // tiles
-      for (java.util.Map.Entry<String, Integer> entry : tiles.entrySet())
-         lines.add (entry.getValue() + "=" + entry.getKey());
+      Set<Tile> tilesInUse = cleanTiles();
+      for (Tile tile : tilesInUse)
+         if (tile != null)
+            lines.add (tiles.get(tile.getFile()) + "=" + tile.getFile());
 
+      // map data
       for (Layer layer : layers)
          saveLayer (lines, layer); 
       
@@ -449,6 +476,14 @@ public class MapModel extends Observable
          else
             lines.add (pair.getCount() + "x0"); // null tile
       }
+   }
+   
+   private Set<Tile> cleanTiles()
+   {
+      Set<Tile> tilesInUse = new HashSet<Tile>();
+      for (Layer layer : layers)
+         tilesInUse.addAll(layer.getObjects());
+      return tilesInUse;
    }
 
    public void backup (final String fileName)
