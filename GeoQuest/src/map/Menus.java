@@ -28,6 +28,7 @@ import javax.swing.JToolBar;
 import javax.swing.SwingConstants;
 
 import map.model.MapModel;
+import map.model.Scale;
 import utils.ImageTools;
 
 public class Menus
@@ -397,18 +398,17 @@ public class Menus
       
       private boolean handleMoveCommand (final String cmd)
       {
-         Scale scale = app.getMap().getMapPanel().getScale();
          int width = app.getMap().getMapPanel().getMapWidth();
          int height = app.getMap().getMapPanel().getMapHeight();
          
          if (cmd.equals (SHIFT_UP))
-            app.getMap().roll (-1, 0, cmd, scale);
+            app.getMap().roll (-1, 0, cmd);
          else if (cmd.equals (SHIFT_DOWN))
-            app.getMap().roll (1, 0, cmd, scale);
+            app.getMap().roll (1, 0, cmd);
          else if (cmd.equals (SHIFT_LEFT))
-            app.getMap().roll (0, -1, cmd, scale);
+            app.getMap().roll (0, -1, cmd);
          else if (cmd.equals (SHIFT_RIGHT))
-            app.getMap().roll (0, 1, cmd, scale);
+            app.getMap().roll (0, 1, cmd);
          else if (cmd.equals (FLIP_H))
             app.getMap().flipTopBottom (height);
          else if (cmd.equals (FLIP_V))
@@ -416,8 +416,7 @@ public class Menus
          else if (cmd.equals (ROTATE))
             app.getMap().rotateCW (width);
          else if (cmd.equals (EXPAND))
-            app.getMap().resize(app.getMap().getRowCount() + 1, app.getMap().getColumnCount() + 1, 
-                                app.getMap().getMapPanel().getScale());
+            app.getMap().resize(app.getMap().getRowCount() + 1, app.getMap().getColumnCount() + 1);
          else
             return false;
          return true;

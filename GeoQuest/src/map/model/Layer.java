@@ -1,6 +1,5 @@
 package map.model;
 
-import map.MapPanel;
 import model.ObjectMatrix;
 
 public class Layer extends ObjectMatrix<Tile>
@@ -41,10 +40,10 @@ public class Layer extends ObjectMatrix<Tile>
    
    private void fillBlock (final Cell cell, final Tile tile)
    {
-      int topRow  = cell.getRow() - (cell.getRow() % MapPanel.CELLS_PER_GRID);
-      int leftCol = cell.getCol() - (cell.getCol() % MapPanel.CELLS_PER_GRID);
-      for (int row = topRow; row < topRow + MapPanel.CELLS_PER_GRID; row++)
-         for (int col = leftCol; col < leftCol + MapPanel.CELLS_PER_GRID; col++)
+      int topRow  = cell.getRow() - (cell.getRow() % Scale.CELLS_PER_GRID);
+      int leftCol = cell.getCol() - (cell.getCol() % Scale.CELLS_PER_GRID);
+      for (int row = topRow; row < topRow + Scale.CELLS_PER_GRID; row++)
+         for (int col = leftCol; col < leftCol + Scale.CELLS_PER_GRID; col++)
             setValue (row, col, tile);
    }
    

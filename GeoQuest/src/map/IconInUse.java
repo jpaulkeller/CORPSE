@@ -17,7 +17,8 @@ public class IconInUse implements Observer
       this.palette = palette;
       this.map = map;
       this.root = root;
-      map.addObserver(this);
+      if (map != null) // for testing DynamicPalette
+         map.addObserver(this);
    }
    
    private PaletteTile addIcon (final String relativePath)

@@ -13,10 +13,12 @@ import javax.swing.JButton;
 import javax.swing.ToolTipManager;
 
 import map.model.Tile;
+import map.model.Tiles;
 
 public class PaletteTile extends JButton
 {
    private static final long serialVersionUID = 1L;
+   private static final Tiles tiles = Tiles.getInstance();
 
    private DynamicPalette palette; // used to get the dynamic highlight pattern
    private Tile tile;
@@ -27,9 +29,9 @@ public class PaletteTile extends JButton
       properties = new LinkedHashMap<String, Object>();
       putFile (relativePath);
       
-      this.tile = new Tile (relativePath);
-      setIcon (new ImageIcon (tile.getImage()));
-      put ("Image", tile.getImage());
+      this.tile = tiles.get(relativePath);
+      ImageIcon icon = new ImageIcon (tile.getImage(DynamicPalette.getIconSize()));
+      setIcon (icon);
       
       setBackground (Color.white);
       setMargin (new Insets (0, 0, 0, 0));

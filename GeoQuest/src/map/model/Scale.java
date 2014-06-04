@@ -1,4 +1,4 @@
-package map;
+package map.model;
 
 public enum Scale
 {
@@ -6,7 +6,9 @@ public enum Scale
    Half (2),
    Quarter (4);
    
-   public static final int CELL_SIZE = 32;
+   public static final int CELL_SIZE = 64;
+   public static final int GRID_COUNT = 13;
+   public static final int CELLS_PER_GRID = 2;
 
    private int scaleFactor;
    
