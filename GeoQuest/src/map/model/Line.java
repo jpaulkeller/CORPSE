@@ -6,16 +6,13 @@ import java.awt.geom.Rectangle2D;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import map.Scale;
-
 public class Line
 {
-   private static final Pattern LINE_PATTERN = 
+   private static final Pattern LINE_PATTERN = // Type: x1,y1 x2,y2
       Pattern.compile ("(?:([PS]): )?([0-9]+),([0-9]+) ([0-9]+),([0-9]+)");
    
-   private Point from, to;
-   private int xOff, yOff;
    private String type;
+   private Point from, to;
    
    public Line (final String type, final Point from, final Point to)
    {
@@ -55,22 +52,6 @@ public class Line
       return to;
    }
    
-   public void offset (final int pixels)
-   {
-      xOff = (int) Math.round (Math.random() * pixels) - (pixels / 2);
-      yOff = (int) Math.round (Math.random() * pixels) - (pixels / 2);
-   }
-   
-   public int getX()
-   {
-      return xOff;
-   }
-   
-   public int getY()
-   {
-      return yOff;
-   }
-   
    // Clips the line (if necessary) to fit into the resized matrix.  Returns 
    // true if the new line intersects the matrix.
    
@@ -90,9 +71,9 @@ public class Line
    public void shift (final int rowDelta, final int colDelta, final Scale scale)
    {
       from.x += colDelta * scale.getCellSize();
-      from.y += rowDelta *  scale.getCellSize();
-      to.x += colDelta *  scale.getCellSize();
-      to.y += rowDelta *  scale.getCellSize();
+      from.y += rowDelta * scale.getCellSize();
+      to.x += colDelta * scale.getCellSize();
+      to.y += rowDelta * scale.getCellSize();
    }
 
    public void flipLeftRight (final int width)
@@ -122,9 +103,12 @@ public class Line
 
    private void flipOffsets()
    {
+      System.err.println("Line.flipOffsets() not implemented!"); // TODO
+      /*
       int tmp = xOff;
       xOff = yOff;
       yOff = tmp;
+      */
    }
    
    @Override

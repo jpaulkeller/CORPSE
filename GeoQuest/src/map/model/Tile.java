@@ -2,7 +2,8 @@ package map.model;
 
 import java.awt.Image;
 import java.io.File;
-import java.util.Random;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.swing.ImageIcon;
 
@@ -12,7 +13,7 @@ import utils.ImageTools;
 public class Tile
 {
    private String file;
-   private Image image;
+   private Map<Integer, Image> images = new HashMap<Integer, Image>();
    
    public Tile (final String relativePath)
    {
@@ -21,9 +22,6 @@ public class Tile
          System.err.println ("Missing tile image: " + fullPath);
       
       file = relativePath;
-      image = new ImageIcon (fullPath).getImage();
-      if (image != null)
-         image = ImageTools.scaleImage (image, 32, 32, Image.SCALE_SMOOTH, null);
    }
    
    public String getFile()
@@ -31,8 +29,17 @@ public class Tile
       return file;
    }
 
-   public Image getImage()
+   public Image getImage(final int size)
    {
+      Image image = images.get(size);
+      if (image == null)
+      {
+         String fullPath = MapMaker.IMAGE_ROOT + File.separator + file;
+         image = new ImageIcon (fullPath).getImage();
+         if (image != null)
+            image = ImageTools.scaleImage (image, size, size, Image.SCALE_SMOOTH, null);
+         images.put(size,  image); // cache it
+      }
       return image;
    }
    

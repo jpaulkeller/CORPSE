@@ -8,6 +8,7 @@ import javax.swing.JComponent;
 import javax.swing.JScrollPane;
 
 import map.model.MapModel;
+import map.model.Scale;
 import utils.ImageTools;
 import file.FileUtils;
 
@@ -19,7 +20,7 @@ public class Map extends MapModel
    
    public Map()
    {
-      super (39, 39);
+      super (Scale.GRID_COUNT * Scale.CELLS_PER_GRID, Scale.GRID_COUNT * Scale.CELLS_PER_GRID);
       mapPanel = new MapPanel (this);
       addObserver (mapPanel);
       

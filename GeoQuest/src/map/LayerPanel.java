@@ -15,6 +15,8 @@ import javax.swing.border.Border;
 
 public class LayerPanel extends JPanel implements ActionListener, Observer
 {
+   private static final long serialVersionUID = 1L;
+   
    private Map map;
    private java.util.Map<Integer, JRadioButton> buttons = new HashMap<Integer, JRadioButton>();
    private ButtonGroup group = new ButtonGroup();

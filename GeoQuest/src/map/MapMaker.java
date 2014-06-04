@@ -22,9 +22,11 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import map.model.MapModel;
+import map.model.Scale;
 import utils.PrintUtil;
 
 // TODO
+// translucent grid lines (80%)
 // multiple layers with toggle button to hide
 // plot point icons (so they can overlap) instead of at a tile
 // right-click to erase
@@ -39,6 +41,7 @@ import utils.PrintUtil;
 http://www.squareforge.com/pdf-forests.html
 http://www.plaintextures.com/grasstextures.php?urlcode=m7irGaPIQWG4Overr3IagiK2zuZVPuEuHiFX4rMascUwg2DVx30XhA8Y125%2BG9h4WAkBqz3%2FD8Hn0Lmc%2FNuoJg%3D%3D
 http://cgtextures.com/
+https://app.box.com/shared/ljb15vae1b (Dundjinni)
 */
 
 // map ideas
@@ -73,22 +76,24 @@ public class MapMaker implements Observer
    private void buildGUI()
    {
       map = new Map();
-      map.setGridSize (MapPanel.CELLS_PER_GRID * map.getMapPanel().getCellSize());
+      map.setGridSize (Scale.CELLS_PER_GRID * map.getMapPanel().getCellSize());
       map.addObserver (this);
 
       menus = new Menus (this);
-    
+
+      int minWidth = ((DynamicPalette.getIconSize() + 2) * DynamicPalette.getMinIconsPerRow()) + 40; // icons plus scroller
+      
       IconButtonListener iconListener = new IconButtonListener();
       recentPalette = new DynamicPalette(map, "Recent Tiles", IMAGE_ROOT, null, iconListener);
-      recentPalette.getPanel().setPreferredSize (new Dimension (200, 100));
+      recentPalette.getPanel().setPreferredSize (new Dimension (minWidth, 100));
             
       featurePalette = new DynamicPalette(null, "Features (top layers)", IMAGE_ROOT, "features", iconListener);
-      featurePalette.getPanel().setMinimumSize (new Dimension (200, 120));
-      featurePalette.getPanel().setPreferredSize (new Dimension (200, 250));
+      featurePalette.getPanel().setMinimumSize (new Dimension (minWidth, 120));
+      featurePalette.getPanel().setPreferredSize (new Dimension (minWidth, 250));
                   
       terrainPalette = new DynamicPalette(null, "Terrain (bottom layer)", IMAGE_ROOT, "terrain", iconListener);
-      terrainPalette.getPanel().setMinimumSize (new Dimension (200, 120));
-      terrainPalette.getPanel().setPreferredSize (new Dimension (200, 250));
+      terrainPalette.getPanel().setMinimumSize (new Dimension (minWidth, 120));
+      terrainPalette.getPanel().setPreferredSize (new Dimension (minWidth, 250));
       
       palettes = new JSplitPane (JSplitPane.VERTICAL_SPLIT, true);
       palettes.add (featurePalette.getPanel(), JSplitPane.TOP);
@@ -153,7 +158,7 @@ public class MapMaker implements Observer
          int newRows = Integer.parseInt (map.getProps().get ("Rows"));
          int newCols = Integer.parseInt (map.getProps().get ("Columns"));
          if (newRows != map.getRowCount() || newCols != map.getColumnCount())
-            map.resize (newRows, newCols, map.getMapPanel().getScale());
+            map.resize (newRows, newCols);
       }
    }
    
@@ -161,7 +166,8 @@ public class MapMaker implements Observer
    {
       if (map.needsSave())
          saveAs(); // offer to save
-      map.create (39, 39);
+      int cellsPerMap = Scale.GRID_COUNT * Scale.CELLS_PER_GRID;
+      map.create (cellsPerMap, cellsPerMap);
    }
    
    public void load()

@@ -39,8 +39,8 @@ import utils.Utils;
  */
 public class DynamicPalette
 {
-   static final int MAX_ICONS = 200;
-
+   public static final int MAX_ICONS = 200;
+   
    // private static final Icon SEARCH_ICON =
    //    ComponentTools.loadImageIcon ("icons/buttons/Magnify.gif", null);
 
@@ -64,19 +64,31 @@ public class DynamicPalette
    private Set<String> searches = new HashSet<String>();
    private Pattern highlightPattern;
    
+   public static int getIconSize()
+   {
+      return 48; // TODO make this dynamic
+   }
+
+   public static int getMinIconsPerRow()
+   {
+      if (getIconSize() <= 32) return 4;
+      else if (getIconSize() <= 64) return 3;
+      else return 2;
+   }
+   
    public DynamicPalette (final Map map, final String title, final String path, 
                           final String searchTerm, final ActionListener buttonListener)
    {
       this.path = path;
       this.buttonListener = buttonListener;
       
-      iconPanel = new JPanel (new GridLayout (0, 4));
+      iconPanel = new JPanel (new GridLayout (0, getMinIconsPerRow()));
       JPanel top = new JPanel (new BorderLayout());
       top.add (iconPanel, BorderLayout.NORTH); // so icons don't stretch
       JScrollPane scroll = new JScrollPane (top);
       scroll.setHorizontalScrollBarPolicy
          (ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-      scroll.getVerticalScrollBar().setUnitIncrement (32);
+      scroll.getVerticalScrollBar().setUnitIncrement (Math.round((getIconSize() + 3) / 3f));
       scroll.addComponentListener (new ResizeListener());
 
       panel = new JPanel (new BorderLayout());
@@ -167,7 +179,7 @@ public class DynamicPalette
          JScrollPane scroll = (JScrollPane) e.getSource();
          Dimension dim = scroll.getSize();
          int width = dim.width - scroll.getVerticalScrollBar().getWidth();
-         int columns = Math.max (4, (width / 34) - 1);
+         int columns = Math.max (getMinIconsPerRow(), (width / (getIconSize() + 2)) - 1);
          iconPanel.setLayout (new GridLayout (0, columns));
       }
    }

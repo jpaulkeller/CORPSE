@@ -14,7 +14,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import map.MapProps;
-import map.Scale;
 import model.CrossMap;
 import model.MatrixPair;
 import file.FileUtils;
@@ -43,15 +42,22 @@ public class MapModel extends Observable
    private File mapFile;
    private boolean needsSave;
    
+   private Scale scale = Scale.Full;
    private Tile drawTile; // the currently active tile to draw?
    private int drawLayer;
    
    // maps tile files to a unique index
-   private CrossMap<String, Integer> tiles = new CrossMap<String, Integer>();
+   private CrossMap<String, Integer> tileFiles = new CrossMap<String, Integer>();
+   private Tiles tiles = Tiles.getInstance();
    
    public MapModel (final int rows, final int cols)
    {
       create (rows, cols);
+   }
+   
+   public void setScale(final Scale scale)
+   {
+      this.scale = scale;
    }
    
    public void create (final int rows, final int cols)
@@ -79,7 +85,7 @@ public class MapModel extends Observable
       layers.clear();
       paths.clear();
       streams.clear();
-      tiles.clear();
+      tileFiles.clear();
       
       mapFile = null;
       needsSave = false;
@@ -104,7 +110,7 @@ public class MapModel extends Observable
    
    public CrossMap<String, Integer> getTiles()
    {
-      return tiles;
+      return tileFiles;
    }
    
    public int getRowCount()
@@ -144,7 +150,7 @@ public class MapModel extends Observable
       fireChange (LAYER_ADDED);
    }
    
-   public void resize (final int newRows, final int newCols, final Scale scale)
+   public void resize (final int newRows, final int newCols)
    {
       for (Layer layer : layers)
          layer.resize (newRows, newCols);
@@ -220,8 +226,8 @@ public class MapModel extends Observable
    
    public void fillTiles (final Cell cell)
    {
-      if (drawTile != null && tiles.get (drawTile.getFile()) == null)
-         tiles.put (drawTile.getFile(), tiles.size() + 1);
+      if (drawTile != null && tileFiles.get (drawTile.getFile()) == null)
+         tileFiles.put (drawTile.getFile(), tileFiles.size() + 1);
       getDrawLayer().fillTiles (cell, drawTile);
    }
    
@@ -232,17 +238,16 @@ public class MapModel extends Observable
    
    public void setTile (final Layer layer, final int row, final int col, final Tile tile)
    {
-      if (tile != null && tiles.get (tile.getFile()) == null) // first time for this tile
+      if (tile != null && tileFiles.get (tile.getFile()) == null) // first time for this tile
       {
-         tiles.put (tile.getFile(), tiles.size() + 1);
+         tileFiles.put (tile.getFile(), tileFiles.size() + 1);
          fireChange(TILE_FIRST_USE + tile.getFile());
       }
       layer.setValue (row, col, tile);
       needsSave = true;
    }
    
-   public void roll (final int rowDelta, final int colDelta, 
-                     final String direction, final Scale scale)
+   public void roll (final int rowDelta, final int colDelta, final String direction)
    {
       for (Layer layer : layers)
          layer.shift (rowDelta, colDelta);
@@ -305,13 +310,11 @@ public class MapModel extends Observable
    
    private void addStream (final Line stream)
    {
-      stream.offset (20); // based on tile size of 32
       streams.add (stream);
    }
    
    private void addPath (final Line path)
    {
-      path.offset (10); // based on tile size of 32
       paths.add (path);
    }
    
@@ -377,7 +380,7 @@ public class MapModel extends Observable
       {
          Matcher m = TILE_PROP.matcher (line);
          if (m.matches())
-            tiles.put (m.group (2), Integer.parseInt (m.group (1)));
+            tileFiles.put (m.group (2), Integer.parseInt (m.group (1)));
       }
    }
 
@@ -394,8 +397,9 @@ public class MapModel extends Observable
          {
             int count = Integer.parseInt (m.group (1));
             int index = Integer.parseInt (m.group (2));
-            String tileName = tiles.getKey (index);
-            Tile tile = tileName != null ? new Tile (tileName) : null;
+            String tileName = tileFiles.getKey (index);
+            Tile tile = tiles.get(tileName);
+            
             pairs.add (new MatrixPair<Tile> (count, tile));
             total += count;
             if (total == size)
@@ -449,7 +453,7 @@ public class MapModel extends Observable
       Set<Tile> tilesInUse = cleanTiles();
       for (Tile tile : tilesInUse)
          if (tile != null)
-            lines.add (tiles.get(tile.getFile()) + "=" + tile.getFile());
+            lines.add (tileFiles.get(tile.getFile()) + "=" + tile.getFile());
 
       // map data
       for (Layer layer : layers)
@@ -472,7 +476,7 @@ public class MapModel extends Observable
       {
          Tile tile = pair.getValue();
          if (tile != null)
-            lines.add (pair.getCount() + "x" + tiles.get (tile.getFile()));
+            lines.add (pair.getCount() + "x" + tileFiles.get (tile.getFile()));
          else
             lines.add (pair.getCount() + "x0"); // null tile
       }

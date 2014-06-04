@@ -76,8 +76,8 @@ public class IconSource
                String path = file.getPath().toUpperCase();
                if (searchTerm != null && !path.contains (searchTerm))
                   continue;
-               if (file.length() > MAX_BYTES)
-                  continue;
+               // if (file.length() > MAX_BYTES)
+               //   continue;
                if (!IMAGE_SUFFIX.matcher (path).matches())
                   continue;
                matches.add (file);

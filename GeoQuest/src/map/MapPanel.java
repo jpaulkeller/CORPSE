@@ -22,13 +22,12 @@ import javax.swing.JPanel;
 import map.model.Cell;
 import map.model.Layer;
 import map.model.MapModel;
+import map.model.Scale;
 import map.model.Tile;
 
 public class MapPanel extends JPanel implements Observer
 {
    private static final long serialVersionUID = 1L;
-
-   public static final int CELLS_PER_GRID = 3;
 
    private static Stroke pathPoint = getStroke(3);
    private static Component observer = null; // TBD
@@ -79,6 +78,7 @@ public class MapPanel extends JPanel implements Observer
    public void setScale(final Scale scale)
    {
       this.scale = scale;
+      model.setScale(scale);
       configure();
       repaint();
    }
@@ -101,6 +101,11 @@ public class MapPanel extends JPanel implements Observer
    public int getMapHeight()
    {
       return model.getRowCount() * scale.getCellSize();
+   }
+   
+   public int getLineWidth()
+   {
+      return outerWidth;
    }
 
    public void setMode(final Mode mode)
@@ -248,7 +253,7 @@ public class MapPanel extends JPanel implements Observer
 
       if (tile != null)
       {
-         Image image = tile.getImage();
+         Image image = tile.getImage(size);
          if (image != null)
          {
             int sx2 = image.getWidth(observer);
