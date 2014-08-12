@@ -35,6 +35,7 @@ public final class CardUtils
             if (new File ("docs/" + imagePath).exists())
                return imagePath;
          }
+      System.err.println("Missing " + preferredDir + " image: " + image);
       return null;
    }
    

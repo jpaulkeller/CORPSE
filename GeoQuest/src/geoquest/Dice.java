@@ -91,10 +91,9 @@ public enum Dice
          }
       }
 
-      // TARGET: 
-      System.out.println ("Avg: 3.0, Stream: 60%, Find%: 90,75,60,45,25, Cache: 3%, Doubles: 20% 60/40 play/keep");
+      System.out.println ("TARGET Avg: 3.0, Stream: 60%, Find%: 90,75,60,45,25, Cache: 3%, Doubles: 20% 60/40 play/keep");
 
-      System.out.print ("Avg: " + DF.format (total / 36f)); 
+      System.out.print ("ACTUAL Avg: " + DF.format (total / 36f)); 
       System.out.print (", Stream: " + Math.round (stream * 100f / 36) + "%"); // streams 
       System.out.print (", Find%: ");
       for (int toFind = 1; toFind <= 5; toFind++)

@@ -97,7 +97,7 @@ public class Cacher implements Card, Comparable<Cacher>
       add ("Volunteer Veda", "CITO Bag", "Veda gains 1 extra point for all Event cards that award her points. She must attend all Meet and Greet events.");
       add ("Wandering Warren", "Waders", "Warren finds his own path.  He doesn't get the +1 path bonus, but if he rolls a <em class=find>FIND</em> while moving, he may take an extra turn.");
       // TODO: change Scenic View to Point of Interest?
-      add ("Xander the Explorer", "External Antenna", "Xander gets 2 points for every Scenic View he visits.  He must end his turn on that tile, and he can only visit each once.");
+      add ("Xander the Explorer", "External Antenna", "Xander gets 2 points for every <em class=tile>Scenic View</em> he visits.  He must end his turn on that tile, and he can only visit each once.");
       add ("Yuppie Yuri", "Yellow Jeep", "When Yuri finds a cache, he may pay 2 points to keep both Equipment cards.");
       // TODO
       add ("Zealous Zach", "1 (random) Equipment Card", "Zach gets +1 on all Move rolls, as long as he has at least 2 empty Equipment slots.");

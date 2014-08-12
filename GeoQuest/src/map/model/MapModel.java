@@ -389,12 +389,17 @@ public class MapModel extends Observable
       List<MatrixPair<Tile>> pairs = new ArrayList<MatrixPair<Tile>>();
       int total = 0;
       int size = rowCount * colCount;
+      Layer layer = null;
       
       for (String line : lines)
       {
-         Matcher m = TILE_RUN.matcher (line);
+         Matcher m = Layer.LAYER.matcher (line);
          if (m.matches())
+            layers.add(layer = new Layer (line));
+         else if ((m = TILE_RUN.matcher (line)).matches())
          {
+            if (layer == null) // for backwards compatibility
+               layers.add(layer = new Layer(rowCount, colCount, layers.size()));
             int count = Integer.parseInt (m.group (1));
             int index = Integer.parseInt (m.group (2));
             String tileName = tileFiles.getKey (index);
@@ -404,11 +409,10 @@ public class MapModel extends Observable
             total += count;
             if (total == size)
             {
-               Layer layer = new Layer (rowCount, colCount, layers.size());
-               layers.add (layer);
                layer.setDataCompressed (pairs);
                pairs.clear();
                total = 0;
+               layer = null;
             }
          }
       }
@@ -471,6 +475,7 @@ public class MapModel extends Observable
 
    private void saveLayer (final Collection<String> lines, final Layer layer)
    {
+      lines.add(layer.toString());
       // save the given (run-length encoded) layer
       for (MatrixPair<Tile> pair : layer.getDataCompressed()) 
       {

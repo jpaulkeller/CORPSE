@@ -1,15 +1,76 @@
 package map.model;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import model.ObjectMatrix;
 
 public class Layer extends ObjectMatrix<Tile>
 {
+   private String name;
    private int depth;
+   private boolean hidden;
+   private boolean translucent;
+   private boolean offset; // randomly offset the position to provide some variety
+   private boolean rotate; // randomly rotate the icon to provide some variety
+   
+   private static final String BOOL = "(true|false)";
+   public static final Pattern LAYER = Pattern.compile ("Layer: ([^ ]+) " +
+                                                       " Depth: ([0-9]+) " +
+                                                       " Rows: ([0-9]+) " +
+                                                       " Columns: ([0-9]+) " +
+                                                       " Translucent: " + BOOL +
+                                                       " Hidden: " + BOOL +
+                                                       " Offset: " + BOOL +
+                                                       " Rotate: " + BOOL);
+
+   @Override
+   public String toString()
+   {
+      return "Layer: " + getName() + 
+            " Depth: " + depth + 
+            " Rows: " + getRowCount() + 
+            " Columns: " + getColumnCount() +
+            " Translucent: " + translucent +
+            " Hidden: " + hidden +
+            " Offset: " + offset +
+            " Rotate: " + rotate;
+   }
+   
+   public Layer (final String layerLine)
+   {
+      Matcher m = LAYER.matcher(layerLine);
+      if (m.matches())
+      {
+         int g = 1;
+         setName(m.group(g++)); // use the depth, for now
+         int depth = Integer.parseInt(m.group(g++));
+         int rows = Integer.parseInt(m.group(g++));
+         int cols = Integer.parseInt(m.group(g++));
+         translucent = Boolean.parseBoolean(m.group(g++));
+         hidden = Boolean.parseBoolean(m.group(g++));
+         offset = Boolean.parseBoolean(m.group(g++));
+         rotate = Boolean.parseBoolean(m.group(g++));
+         
+         setData(new Tile[rows][cols]);
+      }
+   }
    
    public Layer (final int rows, final int cols, final int depth)
    {
       super (rows, cols);
+      setName(depth + "");
       this.depth = depth;
+   }
+   
+   public void setName(final String name)
+   {
+      this.name = name;
+   }
+   
+   public String getName()
+   {
+      return name;
    }
    
    public int getDepth()
@@ -20,13 +81,6 @@ public class Layer extends ObjectMatrix<Tile>
    Tile getTile (final Cell cell)
    {
       return getValue (cell.getRow(), cell.getCol());
-   }
-   
-   @Override
-   public String toString()
-   {
-      return "Layer: " + depth + " " + getRowCount() + " rows, " +
-             getColumnCount() + " columns"; 
    }
    
    void fillTiles (final Cell cell, final Tile tile)
