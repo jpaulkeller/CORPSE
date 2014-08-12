@@ -28,7 +28,7 @@ import utils.PrintUtil;
 // TODO
 // translucent grid lines (80%)
 // multiple layers with toggle button to hide
-// plot point icons (so they can overlap) instead of at a tile
+// write the layer props before the data points in each layer (name, translucency, shift/rotate, visibility)
 // right-click to erase
 // better Undo
 // pop-up (for eye-dropper?)

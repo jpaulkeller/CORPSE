@@ -109,7 +109,6 @@ public class Equipment implements Card, Comparable<Equipment>
       add ("Safari Vest", "Provides 3 extra equipment slots.", null, "Photographer");
       add ("Swag Bag", "Provides 2 extra equipment slots.", null, "Naturalist");
       add ("Trail Guide", "You may move 1 extra tile along a path each turn.", null, "Trail Mix");
-      add ("Utility Tool", "+1 on Search rolls for all Multi-caches.", null, "MacGyver");
       add ("Waders", "Crossing a stream only costs you 1 movement point.", null, "Environmentalist");
       add ("Walking Stick", "+1 on Move rolls if either die is yellow", null, "Naturalist");
       add ("Water Bottle", "+1 on Move rolls if either die is blue.", null, "Veteran");
@@ -117,10 +116,12 @@ public class Equipment implements Card, Comparable<Equipment>
       add ("Yellow Jeep", "+1 on Move rolls on Urban and Clear tiles.", null, "Search and Rescue");
 
       // TODO new to print
+      add ("Survival Strap", "You may reroll if both dice are 1.", null, "Eagle Scout");
       add ("Pocket Knife", "+1 on Search rolls for any level 5 cache.", null, "Eagle Scout");
-      add ("Survival Strap", "You may reroll if both dice are 1.", null, "Paramedic");
-      add ("Whistle", "Good for clearing the pool, too.", null, "Eagle Scout"); // TODO
-      // add ("Bandana", "Protects against some heat-related effects", null, "Fashion ?");
+      add ("Whistle", "Good for clearing the pool, too.", null, "Life Guard");
+      add ("Bandana", "Protects against some heat-related effects", null, "Life Guard");
+      add ("Utility Tool", "+1 on Search rolls for all Multi-caches.", null, "MacGyver");
+      add ("Repair Kit", "You may discard to gain 2 points if you are on a cache.", null, "Paramedic");
       
       /*
       // OBSOLETE
