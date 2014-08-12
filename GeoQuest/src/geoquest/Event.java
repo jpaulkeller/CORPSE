@@ -192,7 +192,7 @@ public class Event implements Card, Comparable<Event>
       add ("Fresh Snow", Type.Now, 0, "-1 to all rolls this round.", "Snow");
       add ("Ground Zero", Type.Std, 0, "You may jump your token to the nearest cache location.  If you do, this counts as your turn.", null);
       add ("Happy Birthday!", Type.Std, 0, "Draw 1 Equipment card.", null);
-      add ("Heat Stroke", Type.Std, 0, "-2 to your roll.", null, "Hydration Pack", "Water Bottle", "Hat");
+      add ("Heat Stroke", Type.Std, 0, "-2 to your roll.", null, "Hydration Pack", "Bandana", "Hat", "Water Bottle");
       add ("Helpful Hint", Type.Discard, 0, "Keep this card.  You may discard it to get +2 on your roll.", null);
       add ("Hidden Path", Type.Std, 0, "You find a hidden path.  If you were moving, you get +3 on your Move roll.  If you were searching, you may take another turn.", null);
       add ("It's All About the Numbers!", Type.Std, 0, "Jump to the nearest level 1 cache you have not yet found.  End your turn unless", "Numbers", "Mountain Bike", "Yellow Jeep");
@@ -215,8 +215,7 @@ public class Event implements Card, Comparable<Event>
       add ("Park Closed", Type.Std, 0, "End your turn.  Does not affect <em class=cacher>Ranger&nbsp;Rachel</em>.", null);
       add ("Parking Ticket", Type.Std, -1, "Discard an Equipment card.", null, "Lucky Charm");
       add ("Pawn Shop", Type.Std, 0, "Draw five Equipment cards.  You may trade any of your Equipment cards for any of those five.", null);
-      add ("Point of Interest", Type.Std, 2, "End your turn.  Gain 2 extra points If you have the <em class=equipment>Binoculars</em> or <em class=equipment>Camera</em>.", null, "[Binoculars]", "[Camera]");
-      add ("Pooh Sticks", Type.Std, 1, "Jump your token to the nearest bridge, and end your turn.", null);
+      add ("Point of Interest", Type.Std, 0, "End your turn.  Gain 2 points (3 if you have the <em class=equipment>Binoculars</em> or <em class=equipment>Camera</em>).", "Scenic View", "[Binoculars]", "[Camera]");
       add ("Poison Ivy", Type.Std, 0, "After finding your next cache, jump your token to your starting tile, and skip a turn.", null, "Gloves", "Field Guide");
       add ("Private Property", Type.Std, -2, "Explain what you're up to; end your turn.", null, "CITO Bag", "Trail Guide");
       add ("Quench Your Thirst", Type.Std, 0, "End your turn.", null, "Hydration Pack", "Water Bottle");
@@ -229,6 +228,7 @@ public class Event implements Card, Comparable<Event>
       add ("Solar Flares", Type.Now, 0, "No one is able to get a good signal; -2 on all Search rolls this round.", null, "External Antenna");
       add ("Spider Webs", Type.Std, 0, "-1 to your roll.", null, "Walking Stick");
       add ("Steep Slope", Type.Std, 0, "If moving, end your turn.  If searching, -1 to your roll.", null, "Hiking Staff", "Rope");
+      add ("Stick Race", Type.Std, 1, "Jump your token to the nearest bridge, and end your turn.", "Pooh Sticks");
       add ("Stop For Directions", Type.Std, 0, "End your turn, but get +3 to your next Move roll.", null, "Cell Phone", "Map");
       add ("Suspicious Activity", Type.Std, 0, "End your turn.  Roll the dice: if you roll a <em class=dnf>DNF</em>, jump to the Police tile.", "Police", "CITO Bag");
       add ("Thorns", Type.Std, 0, "-2 to your roll.", null, "Gloves", "Long Pants");
@@ -246,7 +246,7 @@ public class Event implements Card, Comparable<Event>
       add ("You're Fired!", Type.Std, 0, "Discard any Equipment card.  Take an extra turn after this one.", null);
 
       // TODO: new cards, not yet printed
-      add ("Angry Bees", Type.Std, 0, "You accidentally disturb a hive of bees; end your turn. The player on your right moves your token 2 tiles in any direction.", "Killer Bees");
+      add ("Angry Bees", Type.Std, 0, "You accidentally disturb a hive of bees; end your turn. The player on your right moves your token 2 tiles in any direction.", "Killer Bees", "Bandana");
       add ("Heavy Rain", Type.Now, 0, "Streams cost 4 movement points to cross (for the next 2 rounds).", null);
       add ("Twist and Shout", Type.Now, 0, "All event cards (in play or held) are moved to the next player (clockwise).", null);
       add ("Perfect Pair", Type.Std, 0, "You may discard one Equipment card to select any other one from the deck.", null);
