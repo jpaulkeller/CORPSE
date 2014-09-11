@@ -4,8 +4,8 @@
 <body>
 
 <ul>
-  <li>Description:   Clear
-  <li>Temperature:   Moderate
+  <li>Description: Clear
+  <li>Temperature: Moderate
   <li>High: 79°F (26°C)
   <li>Low:  63°F (17°C)
   <li>Relative:   Warmer than normal

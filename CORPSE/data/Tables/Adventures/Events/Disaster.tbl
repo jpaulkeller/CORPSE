@@ -17,7 +17,6 @@ hurricane
 logjam
 meteor {strike|shower}
 mudslide
-plague
 population gain/loss
 resource gain/loss
 sandstorm
@@ -50,6 +49,8 @@ magical happening
 market {glut|shortage}
 migration
 onslaught
+pandemic
+plague
 pretender/usurper
 raiders
 rebellion
