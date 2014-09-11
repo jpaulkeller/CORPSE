@@ -1,4 +1,4 @@
-Sæthryth's Salve is a thick green paste that smells of mint and fish.  Applied to a freshly cut body part, even a head, it will keep that part alive and viable for up a week.  If the part is bound to a fresh wound within that week it will grow a healthy connection.
+{Generated Name}'s Salve is a thick green paste that smells of mint and fish.  Applied to a freshly cut body part, even a head, it will keep that part alive and viable for up a week.  If the part is bound to a fresh wound within that week it will grow a healthy connection.
 
 2  Portable trap: When any living thing steps on it, they will sink into it as if it were a pit of quicksand. The carpet can still be wrapped up and carried like a normal carpet.
 3  The carpet gives out an aura of homeliness, which might cause creatures near it to refrain from violence and feel relaxed and safe. The longer the carpet has stayed, unrolled, in the one place, the more likely it is to work.
