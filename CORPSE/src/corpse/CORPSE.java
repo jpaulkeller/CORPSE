@@ -38,7 +38,6 @@ import corpse.ui.TreePanel;
 // TODO minor enhancements
 // change CMD suffix?
 // show footnotes in resolved view? (Reagent.tbl)
-// how to resolve male/female titles (Title Feudal) Maybe column like Title/Female with values like Prince/Princess
 // figure out a way to cap-init a sentence w/o cap-initing each word?
 // deal with null return from prompt better
 // consider allowing ":" as field separator (specified in Column declaration?)
