@@ -1,0 +1,26 @@
+/ http://dndtools.eu/races/types/
+
+.Race Type; Hit Die; Attack Bonus; Good Fort Save; Good Reflex Save; Good Will Save
+
+Aberration; d8; Cleric (HD x 3/4); no; no; yes; 
+Animal; d8; Cleric (HD x 3/4); yes; yes; no; 
+Animal (good will); d8; Cleric (HD x 3/4); yes; yes; yes; 
+Construct; d10; Cleric (HD x 3/4); no; no; no; 
+Construct (Living Construct); d10; Cleric (HD x 3/4); no; no; no; 
+Dragon; d12; Fighter (as HD); yes; yes; yes; 
+Elemental (Air); d8; Cleric (HD x 3/4); no; yes; no; 
+Elemental (Earth); d8; Cleric (HD x 3/4); yes; no; no; 
+Elemental (Fire); d8; Cleric (HD x 3/4); no; yes; no; 
+Elemental (Water); d8; Cleric (HD x 3/4); yes; no; no; 
+Fey; d6; Wizard (HD x 1/2); no; yes; yes; 
+Giant; d8; Cleric (HD x 3/4); yes; no; no; 
+Humanoid (good fort); d8; Cleric (HD x 3/4); yes; no; no; 
+Humanoid (good reflex); d8; Cleric (HD x 3/4); no; yes; no; 
+Humanoid (good will); d8; Cleric (HD x 3/4); no; no; yes; 
+Magical Beast; d10; Fighter (as HD); yes; yes; no; 
+Monstrous humanoid; d8; Fighter (as HD); no; yes; yes; 
+Ooze; d10; Cleric (HD x 3/4); no; no; no; 
+Outsider; d8; Fighter (as HD); yes; yes; yes; 
+Plant; d8; Cleric (HD x 3/4); yes; no; no; 
+Undead; d12; Wizard (HD x 1/2); no; no; yes; 
+Vermin; d8; Cleric (HD x 3/4); yes; no; no; 
