@@ -248,6 +248,82 @@ whitewater rafting
 wrestling
 writing
 
+/ http://dndtools.eu/skills/
+.Skill; Attribute; Trained Only; Armor Check Penalty
+
+Alchemy; Int; yes; no; 
+Animal Empathy; Cha; yes; no; 
+Appraise; INT; no; no; 
+Autohypnosis; WIS; yes; no; 
+Balance; DEX; no; yes; 
+Bluff; CHA; no; no; 
+Climb; STR; no; yes; 
+Concentration; CON; no; no; 
+Control Shape; WIS; no; no; 
+Craft; INT; no; no; 
+Decipher Script; INT; yes; no; 
+Diplomacy; CHA; no; no; 
+Disable Device; INT; yes; no; 
+Disguise; CHA; no; no; 
+Escape Artist; DEX; no; yes; 
+Forgery; INT; no; no; 
+Gather Information; CHA; no; no; 
+Handle Animal; CHA; yes; no; 
+Heal; WIS; no; no; 
+Hide; DEX; no; yes; 
+Iaijutsu Focus; CHA; no; no; 
+Innuendo; Wis; yes; no; 
+Intimidate; CHA; no; no; 
+Intuit Direction; Wis; yes; no; 
+Jump; STR; no; yes; 
+Knowledge; Int; yes; no; 
+Knowledge (arcana); INT; yes; no; 
+Knowledge (architecture and engineering); INT; yes; no; 
+Knowledge (barbarian lore); INT; yes; no; 
+Knowledge (code of martial honor); INT; no; no; 
+Knowledge (dungeoneering); INT; yes; no; 
+Knowledge (geography); INT; yes; no; 
+Knowledge (history); INT; yes; no; 
+Knowledge (law); INT; no; no; 
+Knowledge (local); INT; yes; no; 
+Knowledge (nature); INT; yes; no; 
+Knowledge (nobility and royalty); INT; yes; no; 
+Knowledge (psionics); INT; yes; no; 
+Knowledge (religion); INT; yes; no; 
+Knowledge (Shadowlands); INT; yes; no; 
+Knowledge (spirits); INT; yes; no; 
+Knowledge (tactics); INT; no; no; 
+Knowledge (the planes); INT; yes; no; 
+Knowledge (war); INT; yes; no; 
+Knowledge (weaponry); INT; no; no; 
+Listen; WIS; no; no; 
+Lucid Dreaming; WIS; yes; no; 
+Martial Lore; INT; yes; no; 
+Move Silently; DEX; no; yes; 
+Open Lock; DEX; yes; no; 
+Perform; CHA; no; no; 
+Pick Pocket; Dex; yes; yes; 
+Profession; WIS; yes; no; 
+Psicraft; INT; yes; no; 
+Read Lips; Int; yes; no; 
+Ride; DEX; no; no; 
+Scry; Int; yes; no; 
+Search; INT; no; no; 
+Sense Motive; WIS; no; no; 
+Sleight of Hand; DEX; yes; yes; 
+Speak Language; None; yes; no; 
+Spellcraft; INT; yes; no; 
+Spot; WIS; no; no; 
+Survival; WIS; no; no; 
+Swim; STR; no; yes; 
+Truespeak; INT; yes; no; 
+Tumble; DEX; yes; yes; 
+Use Magic Device; CHA; yes; no; 
+Use Psionic Device; CHA; yes; no; 
+Use Rope; DEX; no; no; 
+Wilderness Lore; Wis; no; no; 
+
+
 : animal
 animal handling (mh) 
 falconry        (ma) 
