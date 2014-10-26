@@ -166,7 +166,9 @@ public class Table extends ArrayList<String>
          String key = columnName.toUpperCase();
          column = columns.get(key);
          if (column == null && !columnName.equalsIgnoreCase("ALL") && 
-             !columnName.equalsIgnoreCase(tableName) && !Column.isComposite(this, columnName))
+             !columnName.equalsIgnoreCase(tableName) && 
+             !columnName.equals("_")) // hack for composite columns 
+            // && !Column.isComposite(this, columnName)) // TODO infinite loop
             System.err.println("Missing " + file + " column: [" + key + "]\n" + Utils.getStack("^corpse[.].*"));
       }
       return column;

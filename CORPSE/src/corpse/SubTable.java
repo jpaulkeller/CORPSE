@@ -110,13 +110,14 @@ public final class SubTable extends Table
       // test("{Color:Basic#C.*#}", "subset and filter");
       // test("{Metallic}", "included file");
       // test("{Calendar:Astronomical}", "subset");
-      test("{Gender}", "default column");
-      test("{Gender!}", "full line (don't use default column)");
-      test("{Quality}", "default subset");
-      test("{Quality!}", "full line (don't use default subset)");
+      // test("{Gender}", "default column");
+      // test("{Gender!}", "full line (don't use default column)");
+      // test("{Quality}", "default subset");
+      // test("{Quality!}", "full line (don't use default subset)");
       // test("{DiffTest#.+(?<!Common)#}", "negative look-ahead regex to prevent collision");
       // test("{Color#.*(ee|ro).*#}", "filter with alteration");
       // test("{Profession+#.*craftsman.*#}", "filter subsets");
-      test("{Profession:Criminal}", "subset filter");
+      // test("{Profession:Criminal}", "subset filter");
+      test("{Profession.Job}", "composite column");
    }
 }
