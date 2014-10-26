@@ -25,20 +25,20 @@
 
 .Level  Spell                         Type           Element      Source     Class
   
-+ {Abjuration+}
-+ {Alteration+}
-+ {Animation+}
-+ {Conjuration+}
-+ {Divination+}
-+ {Empathic+}
-+ {Enchantment+}
-+ {Environmental+}
-+ {Evocation+}
-+ {Hypnotic+}
-+ {Illusion+}
-+ {Kinetic+}
-+ {MetaMagic+}
-+ {Necromantic+}
-+ {Spiritual+}
-+ {Transference+}
-+ {UNTYPED+}
++ {Abjuration!}
++ {Alteration!}
++ {Animation!}
++ {Conjuration!}
++ {Divination!}
++ {Empathic!}
++ {Enchantment!}
++ {Environmental!}
++ {Evocation!}
++ {Hypnotic!}
++ {Illusion!}
++ {Kinetic!}
++ {MetaMagic!}
++ {Necromantic!}
++ {Spiritual!}
++ {Transference!}
++ {UNTYPED!}

@@ -24,8 +24,11 @@ public final class SubTable extends Table
          String xrefCol = null;
          String xrefFil = null;
          
-         if (Constants.INCLUDE_CHAR.equals(m.group(5))) // {Table+#Filter#} don't default subsets/columns
+         if (Constants.ALL_CHAR.equals(m.group(5))) // {Table!#Filter#} don't default subsets/columns
+         {
             xrefFil = m.group(6);
+            System.out.println("SubTable.SubTable(): " + token + " = " + xrefFil); // TODO
+         }
          else // {Table:Subset.Column#Filter#}
          {
             xrefSub = m.group(2);
@@ -107,10 +110,10 @@ public final class SubTable extends Table
       // test("{Color:Basic#C.*#}", "subset and filter");
       // test("{Metallic}", "included file");
       // test("{Calendar:Astronomical}", "subset");
-      // test("{Gender}", "default column");
-      // test("{Gender+}", "full line (don't use default column)");
-      // test("{Quality}", "default subset");
-      // test("{Quality+}", "full line (don't use default subset)");
+      test("{Gender}", "default column");
+      test("{Gender!}", "full line (don't use default column)");
+      test("{Quality}", "default subset");
+      test("{Quality!}", "full line (don't use default subset)");
       // test("{DiffTest#.+(?<!Common)#}", "negative look-ahead regex to prevent collision");
       // test("{Color#.*(ee|ro).*#}", "filter with alteration");
       // test("{Profession+#.*craftsman.*#}", "filter subsets");

@@ -15,12 +15,14 @@ public final class Constants
    static final String DATA_PATH = "data/Tables";
    static final String SCRIPT_SUFFIX = "cmd";
    
+   static final String ALL_CHAR      = "!"; // use the full row or table
    static final String COLUMN_CHAR   = ".";
    static final String COMMENT_CHAR  = "/";
    static final String FILTER_CHAR   = "#";
    static final String INCLUDE_CHAR  = "+";
    static final String ONE_OF_CHAR_1 = "|";
    static final String ONE_OF_CHAR_2 = "/";
+   static final String PLURAL_CHAR   = "+";
    static final String SUBSET_CHAR   = ":";
    static final String EOF           = "===";
 
@@ -65,7 +67,7 @@ public final class Constants
    private static final String COLUMN = "(?:\\" + COLUMN_CHAR + COLUMN_NAME + "?)?";
    private static final String FILTER = "(?:\\" + FILTER_CHAR + "([^}]+)" + FILTER_CHAR + ")?";
    private static final String PARTIAL = SUBSET + COLUMN + FILTER;
-   private static final String FULL = "([+])" + FILTER;
+   private static final String FULL = "([" + ALL_CHAR + "])" + FILTER;
    private static final String XREF_REGEX = TABLE_NAME + "(?:(?:" + PARTIAL + ")|(?:" + FULL + "))?";
    static final Pattern TABLE_XREF = Pattern.compile("\\{" + XREF_REGEX + "\\s*\\}", Pattern.CASE_INSENSITIVE);
    
@@ -106,7 +108,8 @@ public final class Constants
    }
 
    private static final Pattern PROPERTY = Pattern.compile("([^=]+)=(.+)"); // noun=nouns
-   static final Pattern PLURAL_TOKEN = Pattern.compile("\\{(.+)\\+\\}"); // {thing+} => things
+   static final Pattern PLURAL_TOKEN = 
+      Pattern.compile("\\{(.+)" + Pattern.quote(Constants.PLURAL_CHAR) + "\\}"); // {thing+} => things
    static final SortedMap<String, String> PLURALS = new TreeMap<String, String>();
    static
    {
