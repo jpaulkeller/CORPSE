@@ -6,6 +6,7 @@ box
 cask
 cauldron
 chest
+coffer
 crate
 pan
 puncheon
@@ -25,6 +26,7 @@ amphora
 barrel
 bottle
 bundle
+carafe
 cask
 cauldron
 chalice
@@ -80,6 +82,7 @@ dirty
 fancy
 immaculate
 plain
+polished
 stained
 
 : Decoration
