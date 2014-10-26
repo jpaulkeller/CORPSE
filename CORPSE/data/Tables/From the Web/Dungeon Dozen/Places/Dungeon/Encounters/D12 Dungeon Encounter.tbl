@@ -1,5 +1,8 @@
-: Level1
-/ http://roll1d12.blogspot.com/2013/10/npc-encounters-dungeon-level-one.html
+: Level1 = Misc1 + Humanoid1 + Scavengers1
+/ http://roll1dblogspot.com/2014/07/the-wandering-monsters-encountered-each.html
+
+: Misc1
+/ http://roll1dblogspot.com/2013/10/npc-encounters-dungeon-level-one.html
 
 High level wizard in full regalia, torn, blood-spattered, black-feathered arrows in back, out of spells, dazed and desperate, clutches still-smoking wand of fireballs with single charge remaining
 Mystic levitating in lotus position, zooms through dungeon in search of (presumed dead) acolyte charmed into joining band of upstart scoundrels, issues brief but trenchant verbal dressing-down to any adventurers
@@ -14,8 +17,36 @@ Knight with crumpled helm and caved-in cuirass crawls toward the exit muttering 
 Thief concealing enchanted sextant (see entry 3) rushes to lower levels to meet underworld connections, knows secret way through the Corridor of Twenty Traps 
 Swarm of dark elf children tethered together by neck-harnesses scamper about snake-like having escaped their keeper, a ghastly troll hag now desperate enough to ask surface folk for assistance
 
+: Humanoid1
+Warpack of puny humanoids, armed to teeth, search for rumored evil hobbit assassins but minimally enthusiastic due to crappy pay, poor benefits package
+Noble paladin w/damn good reason for seizing treasures already captured/coveted by PCs, led by very bossy talking enchanted sword of the utmost lawful goodness, six jittery men-at-arms
+Invisible necromancer in a huff about vandalized zombie servitors rushes back to lair, carries on heated conversation w/self
+Supremely overconfident surface wizard of means hauled around in palanquin surrounded by scads of charmed hirelings
+Berserkers calming down after zombie beheading spree, dripping sweat, gore spattered, guzzle booze from wine skins
+Puny humanoid body-builders en route to gymnasium discuss feats of strength past and future
+Evil hobbits hired to assassinate necromancer try to remain unseen while attempting to flee the dungeon
+Lone troll w/enormous appetite after grueling bit of regeneration slums it on level one in search of easy chow, sick and tired of combat, seeks parlay where possible
+Blind sword master w/encyclopedic knowledge of proximate dungeon levels, returning to extract pay from necromancer after mission to level three, issues challenge for single combat to any w/sword
+Intelligent apes from nearby cave system carry great burlap sacks, hunt puny humanoids
+Evil priest and squad of action acolytes lead chain gang of surface humans earmarked for cult sacrifice on level three
+Warriors of entirely different evil cult roam corridors hoping to ambush, seize sacrifice candidates from priest in entry 11 for their own unspeakable deity
+
+: Scavengers1
+Weird giant rats
+Owlsnakes hungry for giant rats, no matter how weird
+Recently decapitated zombies stagger around at random flailing blindly at anything
+Large transparent ooze w/two struggling humans inside busy looking for private spot to digest cult warriors that took wrong turn
+Stench beetle shoots first, doesn't bother w/questions, sticky aromatic fluid accurate up to 30' ({D12 Stench Beetle})
+Huge spiders that travel by casting webs, swinging from ceiling like that comic book character, venom dissolves troll flesh like acid
+Intact zombies armed w/heads of decapitated fellows still capable of bite attacks
+Ceiling-crawling dungeon leeches as long as your arm, several bloated w/caustic troll blood
+Giant army ants drag dead cultists to nearby mound
+Flightless pteradactyls w/massive talons search for carrion
+Giant cave salamander w/spiked tail like stegosaurus makes beeline for stagnant pool on level two
+Skeletons of deceased acrobats w/moves like Jackie Chan on hunt for evil hobbit assassins
+
 : Level2
-/ http://roll1d12.blogspot.com/2013/10/npc-encounters-dungeon-level-two.html
+/ http://roll1dblogspot.com/2013/10/npc-encounters-dungeon-level-two.html
 
 Magic-user w/flaming beard howls with mad laughter, barely able to walk, propped up by several sabre-toothed ape servitors, en route to level ten in great haste, adventuring rabble quite beneath contempt
 Ogre field medic carrying black doctor's bag, extensive surface-war experience, will exchange dicey healing skills for cash, loves to dicker while patients bleed out 
@@ -28,11 +59,11 @@ Warrior with face melted by eldritch sorcery staggers to and fro senselessly, ha
 Intelligent giant lizard capable of speech attempts to convince adventurers to exterminate nearby colony of giant beetles with taste for intelligent lizard eggs, beetles keep getting more intelligent with every devoured clutch
 Evil merchant with two black eyes and blood streaming from nose staggers in a panic, carrying on about ruination, fleeing confrontation w/extremely dissatisfied vampire customer, travel sack loaded with concentrated wealth
 Multi-talented entertainer with cadre of hangers-on dragging trunks full of costumes, musical instruments, theatrical props, flees toward secret passage to surface, subject to summary execution following seditious portrayal of dungeon overlord
-Gill-man in jellyfish leather togs and fluid-filled glass dome helmet w/wicked black trident walks razor-tusked walrus on retractable tether while chatting with star-struck gaggle of humanoid royals about assassinating intelligent cephalopod from entry 6.
+Gill-man in jellyfish leather togs and fluid-filled glass dome helmet w/wicked black trident walks razor-tusked walrus on retractable tether while chatting with star-struck gaggle of humanoid royals about assassinating intelligent cephalopod from entry 
 
 : Level3
 
-/ http://roll1d12.blogspot.com/2013/10/npc-encounters-dungeon-level-three.html
+/ http://roll1dblogspot.com/2013/10/npc-encounters-dungeon-level-three.html
 
 Psychic sculptor: telekinetically operates rather fearsome hammer and chisel, tags dungeon walls w/obscene bas relief
 Celebrity witch rides headless giant bat at top speed through corridors pursued by throng of gibbering humanoid fans, clearly delighted with attention
@@ -48,7 +79,7 @@ The Sword of Inquiry, intelligent relic w/personality of a chat show host, cruis
 Expert monster wrangler in safari outfit meets w/ghoulish dungeon banker to discuss security options for proposed branch, site currently infested with entirely disposable humanoid population
 
 : Level4
-/ http://roll1d12.blogspot.com/2013/10/npc-encounters-dungeon-level-four.html
+/ http://roll1dblogspot.com/2013/10/npc-encounters-dungeon-level-four.html
 
 Three identical clones of unknown wizard, naked but for bloodstained hands, flee madly from crime scene, beards still dripping with amniotic fluid, each have terrible eyes
 Slender human with horse head, huge flaming glaive, stitches and staples visible at ragged neckline, totes bale of hay, satchel of sugar cubes, unable to speak but taps out messages with feet
@@ -64,7 +95,7 @@ Purveyor of fine poisons with case handcuffed to wrist, escorted to celebrity wi
 Synthetic humanoid, rejected for unanticipated level of hubris, escaped mass extermination then came across bodies of adventurers killed suddenly by poison gas, now wears cloak of concealment, carries stiletto enchanted to ignore armor, 2d4 exploding gems, small fortune in gold
 
 : Level5
-/ http://roll1d12.blogspot.com/2013/10/npc-encounters-dungeon-level-five.html
+/ http://roll1dblogspot.com/2013/10/npc-encounters-dungeon-level-five.html
 
 Tall fellow in high-collared black cloak looks like he wants to parley but then frog-like extensible tongue studded with razor-sharp obsidian starts darting about
 Experimental horse-man (man-head grafted sloppily onto pony-body): escaped from lab, in search of man-horse last seen on level four and good sorcerer/surgeon
@@ -80,7 +111,7 @@ Gill-man Homeland Security Chief in dapper jellyfish leather parade dress, surro
 Pre-human king of antediluvian provenance, accidentally freed from stony imprisonment by interlopers from surface, flexes restored muscles by kicking the ass of anyone who happens by while mental faculties slowly come back on-line
 
 : Level6
-/ http://roll1d12.blogspot.com/2013/10/npc-encounters-dungeon-level-six.html
+/ http://roll1dblogspot.com/2013/10/npc-encounters-dungeon-level-six.html
 
 Gibbering warrior w/crazy eyes carries on about "the mouth in the shadows" while wandering aimlessly dragging 50' rope tied into hangman's noose 
 Powerful sorcerer, stripped of goods, nude but for sigil-inscribed underpants, huge bruised knot on forehead, still groggy after suffering recent KO at the hands of fellow adventurers
@@ -96,7 +127,7 @@ Wizard w/perhaps the tallest conical hat on record tries to bamboozle last heali
 Warrior w/prehensile mustache, sole survivor of total party kill, willing to share location of museum loaded w/bejewelled statuary, doesn't mention that its also a breeding ground for weird chimera
 
 : Level7
-/ http://roll1d12.blogspot.com/2013/10/npc-encounters-dungeon-level-seven.html
+/ http://roll1dblogspot.com/2013/10/npc-encounters-dungeon-level-seven.html
 
 Big game hunter answering call for same issued by resident quasi-lich who feels proliferation of ropers obscures view of attractive scintillant gas cloud effusing from paleogean fissure, neanderthal side-kick drags cart loaded with specialized anti-monster implements
 Brewmaster general (half-drunk), muscles like steel bands due to hefting kegs day and night, mighty war-maul ready to smash any who interfere w/deliveries, equally mighty brew-apes (drunk) haul twelve varieties of craft beers and ales, each uniquely horrible
@@ -112,7 +143,7 @@ Dungeon census official, tall and gaunt humanoid with pair of luminous ocular en
 Real estate developer for dungeon overlord, human shaped but covered in glistening ebon scales, blood-red forked tongue waggling provocatively during lulls in conversation, constant unsettling smile, shows empty rooms to vampire looking for new digs
 
 : Level8
-/ http://roll1d12.blogspot.com/2013/10/npc-encounters-dungeon-level-eight.html
+/ http://roll1dblogspot.com/2013/10/npc-encounters-dungeon-level-eight.html
 
 Ten foot tall multi-tentacled service creature w/pleasant facial expression balances 2d4 trays loaded with exotic cocktails, glides toward nearby bacchanal, marsupial-like pouch stuffed with tips, unleashes stream of toxic bile if agitated
 Drunk and disorderly demon princeling, fresh from making public ass of self in front of superiors, could possibly achieve redemption w/particularly tasty human sacrifice were one to present itself
@@ -128,7 +159,7 @@ Dealer with the face of a star-nosed mole readies displays of wicked armaments e
 High priest of surface temple webbed to corner chants feebly, still unbroken despite obvious abuse, crudely written sign at feet reads "please punch me in the face"
 
 : Level9
-/ http://roll1d12.blogspot.com/2013/10/npc-encounters-dungeon-level-nine.html
+/ http://roll1dblogspot.com/2013/10/npc-encounters-dungeon-level-nine.html
 
 Partially stupefied giant, earmarked for cult sacrifice but now making a break for it, shaved, tattooed, diapered, envenomed darts sticking out of all parts north and south
 The All Henchmen Brigade: loose confederation of various former hirelings gone rogue, opportunistic treasure scavengers, they hate adventurers above all
@@ -144,7 +175,7 @@ Quite powerful sorcerer w/malfunctioning wand of teleportation, was aiming for s
 Hulking cult executioner, mighty arm in sling, attended by faithful axe caddy, seeks out emergency healing in order to complete sacrifices required by ritual already in progress
 
 : Level10
-/ http://roll1d12.blogspot.com/2013/10/npc-encounters-dungeon-level-ten.html
+/ http://roll1dblogspot.com/2013/10/npc-encounters-dungeon-level-ten.html
 
 Dungeon Overlord's chief of staff, scarred around head where extra brains surgically crammed in, just called onto carpet for constant security breaches, flop sweat, offers unregistered guests cash bribe for immediate departure via secret passage to surface
 Giant w/sledgehammer hand, sack of huge nails, takes down mummified remains of adventurers from display wall, cart load of freshies ready to go up
