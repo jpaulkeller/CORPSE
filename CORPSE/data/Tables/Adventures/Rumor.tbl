@@ -16,7 +16,7 @@ Strange {noise} has been heard {near the {site}|in the {merchant}}.
 {Dungeon Name} has a magical {dungeon feature}.
 {Dungeon Name} was {made|build|constructed|delved} in the time before the {Cataclysm}.
 A body has been pulled from the river, the name of an ancient and evil god carved into its forehead.
-A covered wagon has overturned, spilling hundreds of foreign {currency:coin}s into the street.
+A covered wagon has overturned, spilling hundreds of foreign {currency.coin}s into the street.
 A famous foreign gladiator is appearing at the arena tonight.
 A {humanoid} has been seen flying around the {pseudo class:magical} tower using a pair of artificial wings.
 A local lamplighter is the person to talk to if you want information on those who come out at night.

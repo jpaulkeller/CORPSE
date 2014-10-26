@@ -15,7 +15,7 @@ Quantity         [3t6]                               {3t6}                      
 Quantity         [3/4d6]                             {3/4d6}                            best 3 of 4 d6
 Quantity         [3d4-2]                             {3d4-2}                            bell curve 1-10
 Quantity         [3,10]                              {3,10}                             normal distribution where mean = 3, max = 10
-Quantity/Max     [#/5-10]                            {#/{5-10}}                         random # w/ random upper bound (e.g. wand charges)
+Quantity/Max     [#/[5-10]]                          {#/{5-10}}                         random # w/ random upper bound (e.g. wand charges)
 
 / Simple list element selection:
 : One Of
@@ -26,13 +26,13 @@ Also One Of      [day/night]                         {day/night}
 : Condition
 Percent Check    [50%?Heads:Tails]                   {50%?Heads:Tails}                  percent with either/or format
 Percent Check    [75%?Yes]                           {75%?Yes}                          percent with all-or-nothing format
-Bell Curve       [[3d6]<13?Normal:Good]              {{3d6}<13?Normal:Good}             embedded roll, using > operator 
+Bell Curve       [[3d6]<13?Normal:Good]              {{3d6}<13?Normal:Good}             embedded roll, using operator 
 
 / Table look-ups:
 : Column
 Column           [Equipment.Cost]                    {Equipment.Cost}
                  [Gender.Pronoun]                    {Gender.Pronoun}
-Full Line        [Equipment+]                        {Equipment+}                       override a default column to include the full line
+Full Line        [Equipment!]                        {Equipment!}                       override a default column to include the full line
 Default Column   [Equipment]                         {Equipment}                        equivalent to [Equipment.Equipment]
                  [Gender]                            {Gender}
 Virtual Column   [Equipment.Quality]                 {Equipment.Quality}                a column which will be generated for each row
@@ -40,7 +40,7 @@ Local Column     [.Example]                          {.Example}                 
 
 : Subset
 Subset           [Quality:Magic]                     {Quality:Magic}
-Full Table       [Quality+]                          {Quality+}                         override a default subset to include all rows
+Full Table       [Quality!]                          {Quality!}                         override a default subset to include all rows
 Default Subset   [Quality]                           {Quality}                          equivalent to [Quality.Quality]
 Local Subset     [:Quantity.Resolved]                {:Quantity.Resolved}               local (to this file) subset with column
 Subset Filter    [Profession:Criminal]               {Profession:Criminal}              a subset which is defined as a regex filter
@@ -65,7 +65,7 @@ All Lower        [elf name]                          {elf name}
 Unchanged        [ELF NAME]                          {ELF NAME}
 Cap Init         [Color]                             {Color}
 Regex            [#[Plot Twist]:.....]               {#{Plot Twist}:.....}              replaced with the first text matching the given regex
-Plural           [+[tiny item]]                      {{tiny item}+}                     override as needed in Plurals.txt
+Plural           [[tiny item]+]                      {{tiny item}+}                     override as needed in Plurals.txt
 Article          a [apple|pear]                      a {apple|pear}                     automatic a/an conversion
 
 === everything after this will be ignored (except for searches)

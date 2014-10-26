@@ -9,6 +9,7 @@
 {Color:Basic{!OneWord}} {Flora{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {Color:Basic{!OneWord}} {Made Of{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {Color:Basic{!OneWord}} {Transport{!OneWord}} {Inn Type}
+{Container{!OneWord}} of {Contents{!OneWord}} {Inn Type}
 {Creature{!OneWord}}'s {Organ{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {Disposition} {Profession{!OneWordWithSameFirstLetter}} {Inn Type}
 {Disposition} {Humanoid{!OneWordWithSameFirstLetter}} {Inn Type}
@@ -16,7 +17,6 @@
 {Fauna{!OneWord}}'s {Home}
 {Fauna{!OneWord}}'s {Organ{{!OneWordWithSameFirstLetter}|{!OneWord}}} {Inn Type}
 {{Flora{!OneWord}+}} and {{Flora{!OneWord}+}} {Inn Type}
-{Holder{!OneWord}} of {Contents{!OneWord}} {Inn Type}
 {Inn Type} by the {Site}
 {Inn Type} of {Evocative:Noun}
 {Mood} {Humanoid{!OneWordWithSameFirstLetter}} {Inn Type}

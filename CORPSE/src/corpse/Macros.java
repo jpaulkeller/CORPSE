@@ -381,10 +381,10 @@ public final class Macros
          
          xrefTbl = m.group(1);
          
-         if (Constants.INCLUDE_CHAR.equals(m.group(5))) // {Table+#Filter#}
+         if (Constants.ALL_CHAR.equals(m.group(5))) // {Table!#Filter#}
          {
             // TODO
-            // xrefTbl += "+"; // we want the entire line for this table
+            // xrefTbl += Contants.ALL_CHAR; // we want the entire line for this table
             // new Table(xrefTbl, xrefFil); // load the full table
             xrefFil = m.group(6);
          }
@@ -515,7 +515,6 @@ public final class Macros
       Macros.resolve(null, "{Color} " + Constants.LAST_RESOLVED_TOKEN, null);
       Macros.resolve(null, "{#text:.}", null); // filtered token
       Macros.resolve(null, "{Color} {Fauna#{#{!}:.}.*#}", null); // back-reference with a filter
-      Macros.resolve(null, "{+thing} {+moss} {+fly} {+mouse} {+fox}", null); // test plurals
       Macros.resolve(null, "{~last, first} / {~chain, gold, fine} / {~boat (large)}", null); // formatter
       Macros.resolve("Barsoom Plot", "{:Villain}", null); // subset short-cut
       Macros.resolve(null, "{equipment+}", null); // full line
@@ -529,6 +528,7 @@ public final class Macros
       Macros.resolve(null, "{Profession.all#^([^ ]+) .*craftsman.*#}", null); // filter vs all with group
       Macros.resolve(null, "{#{Profession+#.*craftsman.*#}:^(.*?)  }", null); // filter vs all with group
       */
+      Macros.resolve(null, "{thing+} {moss+} {fly+} {mouse+} {fox+}", null); // test plurals
       
       System.out.println("Aa: " + Macros.matchCase("Aa", "cap each word's first letter in the phrase")); 
       System.out.println("AA: " + Macros.matchCase("AA", "Leave ALL words in the phrase alone"));

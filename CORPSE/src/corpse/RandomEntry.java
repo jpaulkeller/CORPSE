@@ -72,7 +72,7 @@ public final class RandomEntry
             // Token format: {# Table:Subset.Column#Filter#}
             String token = "{" + tableName;
             if (subName == null && colName == null)
-               token += Constants.INCLUDE_CHAR;
+               token += Constants.ALL_CHAR;
             if (subName != null)
                token += Constants.SUBSET_CHAR + subName;
             if (colName != null)
