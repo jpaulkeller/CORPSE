@@ -17,6 +17,7 @@ miniature
 narrow
 tiny
 wide
+immense
 
 : Person
 big
@@ -36,5 +37,4 @@ a pea
 an acorn
 a coin
 a walnut
-- golf ball
 {an apple|a sparrow}
