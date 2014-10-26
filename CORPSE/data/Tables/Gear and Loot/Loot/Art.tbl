@@ -6,10 +6,10 @@
 . Value {value}
 
 : Art
-20 {size} {:MEDIUM}
+20 {50%?{small|large} }{:MEDIUM}
 
 : Medium
-{:statue} of {:OF}
+{:statue}{25%?tte} of {:OF}
 {:drawing} depicting {:SUBJECT}
 
 : Statue
@@ -32,6 +32,7 @@ etching
 mosaic
 mural
 sketch
+tapestry
 {oil|wall|watercolor} painting
 
 : Subject
@@ -44,9 +45,11 @@ a {site}
 
 : Style
 archaic
+baroque
 distinctive
 exotic
 impressionistic
+ornate
 popular
 realistic
 unusual

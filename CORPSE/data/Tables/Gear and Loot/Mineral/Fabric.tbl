@@ -1,3 +1,4 @@
+: Fabric
 brocade
 burlap
 cashmere
@@ -6,9 +7,21 @@ hide ({common|exotic})
 homespun
 feathers
 fur ({fur and pelt.animal})
+gold cloth
 hemp
 jute
 leather ({common|exotic})
 linen
 silk
+silver cloth
 wool
+
+: Magical
+embersilk
+felcloth
+frostweave
+mageweave
+netherweave
+runecloth
+spellspun
+soulbind

@@ -1,0 +1,38 @@
+: Luxury
+20 {:item}
+
+: Item
+{25%?{small|large} }{metal:precious} bell{25%? {:decorated}}
+{made of:hard} chalice{25%? {:decorated}}
+{made of:hard} drinking horn{25%? {:decorated}}
+{made of:hard} goblet{25%? {:decorated}}
+{metal:precious} crown{25%? {:decorated}}
+{metal:precious} tiara{25%? {:decorated}}
+{metal:precious} diadem{25%? {:decorated}}
+perfume
+{fabric} {male fine}{25%? {:material}}
+{fabric} {female fine}{25%? {:material}}
+{25%?{small|large} }pennant
+{25%?{small|large} }carpet
+{25%?{small|large} }decorative coat-of-arms
+{25%?{small|large} }ceremonial {weapon}
+fine wine ({d10}00 gp)
+
+: Decorated
+adorned with {:adornment}
+decorated with {:adornment}
+engraved with {:adornment}
+etched with {:adornment}
+inlaid with {:adornment}
+inscribed with {:adornment}
+ringed with {:adornment}
+studded with {:adornment}
+
+: Adornment 
+{metal:precious}
+{{gem}+}
+
+: material
+embroidered with {metal:precious} thread
+{lined|trimmed} with {fur and pelt} fur
+{stitched|threaded} with {metal:precious} thread

@@ -32,6 +32,7 @@ portal
 reservoir
 road
 shipwreck
+shrine ({Religion})
 stone circle
 territory marker
 town
@@ -85,7 +86,6 @@ rapids
 ravine
 reef
 river
-shrine ({Religion})
 spring
 swamp
 thicket
