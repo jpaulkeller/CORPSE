@@ -1,20 +1,39 @@
-{ammo}
-{armor}
-{art}
-{clothing}
-{equipment}
-{furnishing}
-{gem}
-{liquid}
-{made of}
-{musical instrument}
-{provisions}
-{reagent}
-{smuggled}
-{spice}
-{tack}
-{thief gear}
-{tiny item}
-{weapon}
-{{fruit}+}
-{{vegetable}+}
+Accessory: {~{accessory}}
+Ammo: {~{ammo}}
+Armor: {~{armor}}
+Art: {~{art}}
+Clothing: {~{clothing}}
+Component: {spell component}
+Equipment: {device}
+Equipment: {tack}
+Equipment: {~{equipment}}
+Equipment: {~{thief gear}}
+Fabric: {~{fabric}}
+Food: {crop}
+Food: {nuts}
+Food: {salad ingredient}
+Food: {{berry}+}
+Food: {{fruit}+}
+Food: {{vegetable}+}
+Food: {~{provisions}}
+Footware: {~{shoe}}
+Gem: {gem}
+Jewelery: {jewelery}
+Liquid: {liquid}
+Luxury: {luxury}
+Material: {~{made of}}
+Material: {~{man made}}
+Material: {~{material}}
+Material: {~{metal}}
+Material: {~{mineral}}
+Material: {~{organic}}
+Material: {~{wood}}
+Meat: {~{livestock}}
+Miscellaneous: {~{tiny item}}
+Musical Instrument: {musical instrument}
+Plant: {flora}
+Poison: {poison}
+Reagent: {reagent}
+Smuggled: {smuggled}
+Spice: {spice}
+Weapon: {~{weapon}}

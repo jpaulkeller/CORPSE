@@ -1,0 +1,89 @@
+.Type; Merchandise
+
+/ arms and armor
+Ammo; {~{ammo}}
+Armor; {~{armor}}
+Siege Weapon; {~{siege}}
+Weapon; {~{weapon}}
+
+/ art and luxuries
+Art; {art}
+Book; {BOOK}
+Gem; {gem}
+Luxury; {luxury}
+Musical Instrument; {musical instrument}
+
+/ clothing
+Accessory; {~{accessory}}
+Clothing; {~{clothing}}
+Jewelery; {jewelery}
+Footware; {~{shoe}}
+
+/ food
+Meal; {menu}
+Food; {nuts}
+Food; {~{provisions}}
+Food; {salad ingredient}
+Spice; {spice}
+Food; {berry}
+Food; {fruit}
+Food; {vegetable}
+
+/ furnishings
+Furnishing; {~{furnishing}}
+
+/ gear
+Container; {~{container}}
+Equipment; {~{equipment}}
+Tack; {~{tack}}
+Equipment; {~{thief gear}}
+
+/ magic
+Alchemy; {~{alchemy.item}}
+Robe (magical); {MAGIC ROBE.NAME}
+Tool (magical); {magic tool}
+Potion; {potion}
+Reagent; {reagent}
+Component; {spell component}
+Wand; {wand}
+
+/ materials
+Fabric; {~{fabric}}
+Material; {~{made of}}
+Material; {~{man made}}
+Material; {~{material}}
+Material; {~{metal}}
+Material; {~{mineral}}
+Material; {~{organic}}
+Material; {~{wood}}
+
+/ plants and animals
+Food; {crop}
+Animal; {~{fauna}}
+Plant; {flora}
+Livestock; {~{livestock}}
+Mount; {mount}
+Pet; {pet}
+
+/ property
+Property; {site;artificial}
+Property; {city site}
+Property; {mine}
+
+/ services and information
+Service; currency exchange
+Service; information
+Service; transportation
+Service; {hireling type}
+Service; {profession}
+Service; {room and board}
+Service; {~{services}}
+
+/ transportation
+Equipment; {~{transport}}
+
+/ miscellaneous
+Equipment; {device}
+Poison; {poison}
+Smuggled; {smuggled}
+Miscellaneous; {~{tiny item}}

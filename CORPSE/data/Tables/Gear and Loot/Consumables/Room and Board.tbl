@@ -2,32 +2,32 @@
 
 .Room and Board                       Cost
    
-ale, gallon                            2 sp
-banquet, per person                   10
+ale (/gallon)                          2 sp
+banquet (/person)                     10
 bread                                  5 cp
 cheese                                 4 sp
-common wine (per pitcher)              2 sp
+common room (/month)                  12 gp
+common room (/night)                   5 sp
+common room (/week)                    3 gp
+common room / city (/month)           20 gp
+common wine (/pitcher)                 2 sp
+double room (/month)                  58 gp
+double room (/night)                   2 gp
+double room (/week)                    9 gp
 egg or fresh vegetables                1 cp
-grain and stabling for horse (daily)   5 sp
-honey (lb)                             5 sp
+grain and stabling for horse (/day)    5 sp
+honey (/lb)                            5 sp
+latrine, private (/month)              2 gp
+meal, common (/day)                    3 sp
+meal, good (/day)                      5 sp
+meal, poor (/day)                      1 sp
 meat for 1 meal                        2 sp
-meal, common, 1 day                    3 sp
-meal, good, 1 day                      5 sp
-meal, poor, 1 day                      1 sp
-month, city, common room              20 gp
-month, city, poor room                 6 sp
-month, common room                    12 gp
-month, double room                    58 gp
-month, latrine, separate               2 gp
-month, poor room                       8 s
-month, private room                   29 gp
-night, common room                     5 sp
-night, double room                     2 gp
-night, poor room                       5 cp
-night, private room                    1 gp
-small beer (gallon)                    5 cp
-soup, quart                            5 cp
-week, common room                      3 gp
-week, double room                      9 gp
-week, poor room                        2 sp
-week, private room                     4 gp
+poor room (/month)                     8 s
+poor room (/night)                     5 cp
+poor room (/week)                      2 sp
+poor room / city (/month)              6 sp
+private room (/month)                 29 gp
+private room (/night)                  1 gp
+private room (/week)                   4 gp
+small beer (/gallon)                   5 cp
+soup (/quart)                          5 cp
