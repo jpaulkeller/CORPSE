@@ -1,3 +1,4 @@
+: Ordinal
 first
 second
 third
@@ -10,3 +11,17 @@ ninth
 tenth
 eleventh
 twelfth
+
+: Roman
+I
+II
+III
+IV
+V
+VI
+VII
+VII
+IX
+X
+XI
+XII

@@ -1,0 +1,4 @@
+{75%?{Title Feudal:Noble} }{Name} the {80%?{Trait:Good}:{Trait:Not Good}}
+{75%?{Title Feudal:Noble} }{Name} the {80%?{Title Good}:{Title Bad}}
+{75%?{Title Feudal:Noble} }{Name}{50%? {Ordinal:Roman}} 
+{33%?{Title Feudal:Noble} }{Name} the {50%?{{Trait|Evocative:Adj}} }{Pseudo Class}

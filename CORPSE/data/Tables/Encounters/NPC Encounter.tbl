@@ -1,0 +1,14 @@
+5 {man|woman|person}
+5 {profession}
+5 {race}
+5 {merchant|trader|vendor|peddler} of {{merchandise}+}
+3 {pseudo class}
+{boy|girl|child}
+{hireling type}
+{humanoid}
+{smuggler of|guard searching for} {~{smuggled}}
+{title academic}
+{title feudal}
+{title guild}
+{title military}
+{title religious}
