@@ -192,7 +192,7 @@ public final class Quantity
       }
    }
 
-   private static final String OPERATOR = "([-+*/^])";
+   private static final String OPERATOR = "([-+*x/^])";
    private static final String FLOAT = "(\\d+(?:[.]\\d+)?)";
    
    static class Formula extends NumericAdapter // {=#+#}
@@ -226,7 +226,7 @@ public final class Quantity
             return Math.round(i + j);
          else if (operator.equals("-"))
             return Math.round(i - j);
-         else if (operator.equals("*"))
+         else if (operator.equals("*") || operator.equals("x"))
             return Math.round(i * j);
          else if (operator.equals("/"))
             return Math.round(i / j);
@@ -236,11 +236,11 @@ public final class Quantity
       }
    }
 
-   static class Dice extends NumericAdapter // {#d#+#} The extra +# is optional. Operators: +, -, *, /
+   static class Dice extends NumericAdapter // {#d#+#} The extra +# is optional. Operators: +, -, *, x, /
    {
       public Dice()
       {
-         super("\\{(\\d+)? *[dD] *(\\d+)(?:([-+*/])(\\d+))?\\}");
+         super("\\{(\\d+)? *[dD] *(\\d+)(?:([-+*x/])(\\d+))?\\}");
       }
 
       @Override
@@ -261,7 +261,7 @@ public final class Quantity
                roll += bonus;
             else if (operator.equals("-"))
                roll -= bonus;
-            else if (operator.equals("*"))
+            else if (operator.equals("*") || operator.equals("x"))
                roll *= bonus;
             else if (operator.equals("/"))
                roll /= bonus;
@@ -588,6 +588,7 @@ public final class Quantity
       tokens.add("{=5+10}"); // FORMULA
       tokens.add("{=10-3}"); // FORMULA
       tokens.add("{=3*2}"); // FORMULA
+      tokens.add("{=3x2}"); // FORMULA
       tokens.add("{=12/2}"); // FORMULA
       tokens.add("{=5^2}"); // FORMULA (square)
       tokens.add("{=100^0.5}"); // FORMULA (square root)

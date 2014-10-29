@@ -32,6 +32,11 @@ import corpse.ui.TreePanel;
 
 /** CORPSE - Computer-Oriented Role-Playing System & Environment */
 
+// TODO high priority
+// .Line syntax to return a delimited string (or map) - e.g. Merchandise.Type Merchandise.Item
+// Better CSV handling (specify separator) - Merchandise.tbl
+// text which can control where to include it (prepend, append, etc) - Dressed.tbl
+
 // TODO data changes
 // convert scripts to HTML (Tavern.cmd)
 
@@ -44,6 +49,7 @@ import corpse.ui.TreePanel;
 // CSV format (val, "a, b", val3)
 
 // TODO moderate enhancements
+// global variables - such as "how common are elves?"
 // SoundX filter? or for Searches?
 // export text
 // support .html files (table, definition)

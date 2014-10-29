@@ -163,6 +163,7 @@ public final class Macros
    private static final Pattern FORMAT_PART = Pattern.compile("\\s*([^,]+)");
    private static final Pattern FORMAT_COMMA = Pattern.compile("([^,]+)(?:,\\s*([^,]+)){1,4}"); // chain, iron, heavy 
    private static final Pattern FORMAT_PAREN = Pattern.compile("([^(]+?)\\s*\\(([^)]+)\\)"); // tent (large)
+   private static final Pattern FORMAT_QTY = Pattern.compile("(.*) *(x[0-9]+) *(.+)"); // quarrel/bolt, hand x20
    
    private static String resolveFormatter(final String token)
    {
@@ -184,6 +185,10 @@ public final class Macros
          m = FORMAT_PAREN.matcher(resolvedToken);
          if (m.matches())
             resolvedToken = m.group(2) + " " + m.group(1);
+         
+         m = FORMAT_QTY.matcher(resolvedToken);
+         if (m.matches())
+            resolvedToken = m.group(1) + m.group(3) + " " + m.group(2);
          
          resolvedToken = resolvedToken.replaceAll(" *\\[[0-9]+\\]", ""); // strip any footnotes
       }
