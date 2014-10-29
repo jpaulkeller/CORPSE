@@ -1,0 +1,30 @@
+// http://donjon.bin.sh/fantasy/name/#setting
+
+: Group Name
+The {{Fauna}+} of {Place Name}
+The {{Weapon{!OneWord}}+} of {Place Name}
+The {Color:Basic} {{Weapon{!OneWord}}+}
+The {:Group} of the {20%?{Gem}} {Weapon{!OneWord}}
+The {:Group} of the {20%?{{Gem|Metal:Special|Color:Basic|Adjective}}} {{Weapon{!OneWord}|Fauna|Tiny Item}}
+The {:Group} of the {Tiny Item{!OneWord}}{20%? and {Tiny Item{!OneWord}}}
+The {{Color:Basic|Gem}} {:Group}
+{Name}'s {{Creature{!SameFirstLetter}}+}
+{Name}'s {{Fauna{!MaybeSameFirstLetter}}+}
+{Name}'s {{~{Tiny Item{!MaybeSameFirstLetter}}}+}
+{Name}'s {{Weapon{!MaybeSameFirstLetter}}+}
+{Name}'s {:Group{!MaybeSameFirstLetter}}
+
+: Group
+adventurers
+circle
+company
+convenant
+council
+crusaders
+fellowship
+guild
+heroes
+legion
+saviors
+order
+wayfarers

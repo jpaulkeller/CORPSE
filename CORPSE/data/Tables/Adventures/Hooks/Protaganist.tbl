@@ -3,5 +3,5 @@ A {50%?{mood}} {Humanoid} named {Name}
 A {50%?{mood}} {profession} named {Name}
 {Title Feudal:Noble} {Name}
 {Title Religious} {Name}
-The {#{Profession+#.*craftsman.*#}:^(.+?)  } Guild
+The {#{Profession!#.*craftsman.*#}:^(.+?)  } Guild
 the {20%?adjective} {title}
