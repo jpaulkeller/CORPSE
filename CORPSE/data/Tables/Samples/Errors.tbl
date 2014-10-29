@@ -8,11 +8,11 @@
 / Invalid CONDITION example (missing/invalid operator)
   {2 2?Missing:Operator}
 
-  Missing Table: {Missing}
+  Missing Table: {Missing Table}
 
-  Missing Column: {Errors.Missing}
+  Missing Column: {Errors.Missing Column}
 
-  Missing Subset: {Errors:Missing}
+  Missing Subset: {Errors:Missing Subset}
 
   Invalid Filter: {Errors#a(b#}
 

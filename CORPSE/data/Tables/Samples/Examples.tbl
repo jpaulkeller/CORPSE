@@ -8,7 +8,7 @@ Quantity         [%]                                 {%}                        
 Quantity         [2-4]                               {2-4}                              even distribution 2,3,4
 Quantity         [=3+2]                              {=3+2}                             formula (+)
 Quantity         [=3-2]                              {=3-2}                             formula (-)
-Quantity         [=3*2]                              {=3*2}                             formula (*)
+Quantity         [=3*2] or [=4x2]                    {=3*2}, {=4x2}                     formula (*)
 Quantity         [=6/2]                              {=6/2}                             formula (/)
 Quantity         [3d6]                               {3d6}                              bell curve 3-18
 Quantity         [3t6]                               {3t6}                              open-ended (roll another die for each 6)
@@ -37,6 +37,7 @@ Default Column   [Equipment]                         {Equipment}                
                  [Gender]                            {Gender}
 Virtual Column   [Equipment.Quality]                 {Equipment.Quality}                a column which will be generated for each row
 Local Column     [.Example]                          {.Example}                         local (to this file) column
+Composite Column [Profession.Job]                    {Profession.Job}                   a column composed of other columns
 
 : Subset
 Subset           [Quality:Magic]                     {Quality:Magic}
@@ -53,7 +54,7 @@ Collision        [DiffTest]/[DiffTest]               {DiffTest}/{DiffTest}      
 Different        [DiffTest]/[DiffTest[!Different]]   {DiffTest}/{DiffTest{!Different}}  prevent collision
 Filter Subset    [Herb#.*h.*#]                       {Herb#.*h.*#}                      any Herb that contains the letter "h"
 Filter Subset    [Menu:Game#.*t.*#]                  {Menu:Game#.*t.*#}                 any Menu:Game that contains the letter "t"
-Filter Other     [Profession+#.*craftsman.*#]        {Profession+#.*craftsman.*#}       filter on a column other than the default
+Filter Other     [Profession!#.*craftsman.*#]        {Profession!#.*craftsman.*#}       filter on a column other than the default
 
 / Formatting:
 : Formatted
