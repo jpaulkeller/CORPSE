@@ -1,34 +1,24 @@
-/ the person's current mood - how is he/she feeling right now?
-/ vs feeling / trait / disposition / attitude / reaction?
+/ There are several similar/related tables to determine a person's feelings and reaction:
+/ Disposition - a person's inherent qualities of mind and character; how that person feels in general
+/ Feeling - a person's emotional state; how that person usually feels
+/ Emotion - nouns corresponding to feelings
+/ Mood - a person's current mood - how that person is feeling right now (more ephemeral than the Feeling table)
+/ Attitude - how a person is inclined to react to a situation (and why, and can it be changed)
+/ Reaction - different and specific types of reactions 
 
++ disposition
++ feeling
+alert
 ambivalent
-alert 
-amused 
-angry
-anxious
-bewildered
+amused
 comfortable
-confused
-distracted 
-eager 
-elated
-enthusiastic
-excited
-exuberant
-frantic
-frightened
-furious
-gleeful
-good
-grumpy 
-guilty
+exhausted
+grouchy
 hungry
-lively
 lucky 
-puzzled
-relieved
-silly 
 sleepy
+startled
+upset
 victorious
+vindicated
 wonderful
-{disposition}

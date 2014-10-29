@@ -1,0 +1,16 @@
+: Dressed = Adjective + Wearing
+
+: Adjective
+expensively dressed
+flamboyantly dressed
+oddly dressed
+over-dressed
+shabbily dressed
+strangely dressed
+well-dressed
+
+: Wearing 
+wearing a {color:basic} {~{clothing}}
+wearing a {odd|military|religious} symbol
+wearing a {color:dark} cloak with a {color:light} {charge}
+disguised as a {appearance} {npc encounter}

@@ -1,0 +1,82 @@
+/ There are several similar/related tables to determine a person's feelings and reaction:
+/ Disposition - a person's inherent qualities of mind and character; how that person feels in general
+/ Feeling - a person's emotional state; how that person usually feels
+/ Emotion - nouns corresponding to feelings
+/ Mood - a person's current mood - how that person is feeling right now (more ephemeral than the Feeling table)
+/ Attitude - how a person is inclined to react to a situation (and why, and can it be changed)
+/ Reaction - different and specific types of reactions 
+
+.Root       Branch         Leaf
+
+afraid      anxious        overwhelmed
+afraid      anxious        worried
+afraid      humiliated     disrespected
+afraid      humiliated     ridiculed
+afraid      insecure       inadequate
+afraid      insecure       inferior
+afraid      rejected       alienated
+afraid      rejected       inadequate
+afraid      scared         frightened
+afraid      scared         terrified
+afraid      submissive     insignificant
+afraid      submissive     worthless
+angry       aggressive     hostile
+angry       aggressive     provoked
+angry       critical       sarcastic
+angry       critical       skeptical
+angry       distant        suspicious
+angry       distant        withdrawn
+angry       frustrated     infuriated
+angry       frustrated     irritated
+angry       hateful        jealous
+angry       hateful        resentful
+angry       hurt           devastated
+angry       hurt           embarrassed
+angry       mad            enraged
+angry       mad            furious
+angry       threatened     insecure
+angry       threatened     jealous
+disgusted   avoidance      aversion
+disgusted   avoidance      hesitant
+disgusted   awful          detest
+disgusted   awful          revolted
+disgusted   disappointed   repugnant
+disgusted   disappointed   revolted
+disgusted   disapproving   judgemental
+disgusted   disapproving   loathing
+happy       accepted       fulfilled
+happy       accepted       respected
+happy       interested     amused
+happy       interested     inquisitive
+happy       intimate       playful
+happy       intimate       sensitive
+happy       joyful         ecstatic
+happy       joyful         liberated
+happy       optimistic     inspired
+happy       optimistic     open
+happy       peaceful       hopeful
+happy       peaceful       loving
+happy       powerful       courageous
+happy       powerful       provocative
+happy       proud          confident
+happy       proud          important
+sad         abandoned      ignored
+sad         abandoned      victimized 
+sad         bored          apathetic
+sad         bored          indifferent
+sad         depressed      empty
+sad         depressed      inferior
+sad         despair        powerless
+sad         despair        vulnerable
+sad         guilty         ashamed
+sad         guilty         remorseful
+sad         lonely         abandoned
+sad         lonely         isolated
+surprised   amazed         astonished
+surprised   amazed         awed
+surprised   confused       disillusioned
+surprised   confused       perplexed
+surprised   excited        eager
+surprised   excited        energetic
+surprised   startled       dismayed
+surprised   startled       shocked
