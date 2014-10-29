@@ -1,5 +1,10 @@
-/ A person's inherent qualities of mind and character; how that person feels in general.
-/ vs trait / attitude / mood / reaction?
+/ There are several similar/related tables to determine a person's feelings and reaction:
+/ Disposition - a person's inherent qualities of mind and character; how that person feels in general
+/ Feeling - a person's emotional state; how that person usually feels
+/ Emotion - nouns corresponding to feelings
+/ Mood - a person's current mood - how that person is feeling right now (more ephemeral than the Feeling table)
+/ Attitude - how a person is inclined to react to a situation (and why, and can it be changed)
+/ Reaction - different and specific types of reactions 
 
 agreeable
 brave
@@ -24,4 +29,5 @@ reckless
 relaxed
 thoughtful
 vivacious
+wicked
 wild

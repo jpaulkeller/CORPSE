@@ -3,6 +3,7 @@
 
 : Good
 able
+adroit
 agreeable
 altruistic
 amazing
@@ -31,9 +32,11 @@ eager
 earnest
 easy-going
 elegant
+eloquent
 enchanting
 energetic
 faithful
+fair
 fearless
 fit
 forgiving
@@ -43,6 +46,8 @@ gifted
 golden
 good
 gracious
+grand
+glorious
 handsome
 happy
 hard working
@@ -66,6 +71,7 @@ lovable
 loyal
 lucky
 magnificent
+majestic
 merciful
 modest
 noble
@@ -97,6 +103,7 @@ sincere
 sinless
 smart
 steadfast
+strong
 studious
 sunny
 talented
@@ -112,6 +119,7 @@ vigorous
 virtuous
 witty
 worthy
+zealous
 
 : Bad
 absent-minded
@@ -271,6 +279,7 @@ augmentative
 bedeviling
 bizarre
 blustering
+bold
 bristly
 capricious
 cautious
@@ -391,6 +400,7 @@ soft-spoken
 solitary
 spendthrift
 stern
+strong
 stubborn
 sulky
 sullen
@@ -406,3 +416,6 @@ unhappy
 unstoppable
 vengeful
 wrathful
+
+: Not Good = Bad + Neutral
+: Not Bad = Good + Neutral

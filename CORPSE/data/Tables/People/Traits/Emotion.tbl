@@ -1,120 +1,141 @@
-: disgusted
-disapproving
-  judgemental
-  loathing
-disappointed
-  repugnant
-  revolted
-awful
-  revolted
-  detest
+/ There are several similar/related tables to determine a person's feelings and reaction:
+/ Disposition - a person's inherent qualities of mind and character; how that person feels in general
+/ Feeling - a person's emotional state; how that person usually feels
+/ Emotion - nouns corresponding to feelings (for filterable emotions, use the Emotion Tree table)
+/ Mood - a person's current mood - how that person is feeling right now (more ephemeral than the Feeling table)
+/ Attitude - how a person is inclined to react to a situation (and why, and can it be changed)
+/ Reaction - different and specific types of reactions 
+ 
+abandonment
+acceptance
+aggression
+alienation
+amazement
+amusement
+anger
+annoyance
+anxiety
+apathy
+astonishment
+aversion
 avoidance
-  aversion
-  hesitant
- 
-: sad
-guilty
-  remorseful
-  ashamed
-abandoned
-  ignored
-  victimized 
+awe
+bewilderment
+boredom
+bravery
+calmness
+caution
+cheerfulness
+confidence
+confusion
+content
+cooperation
+courage
+delight
+depression
 despair
-  powerless
-  vulnerable
-depressed
-  inferior
-  empty
-lonely
-  abandoned
-  isolated
-bored
-  apathetic
-  indifferent
-
-: happy
-joyful
-  liberated
-  ecstatic
-interested
-  amused
-  inquisitive
-proud
-  important
-  confident
-accepted
-  respected
-  fulfilled
-powerful
-  courageous
-  provocative
-peaceful
-  loving
-  hopeful
-intimate
-  playful
-  sensitive
-optimistic
-  inspired
-  open
- 
-: surprised
-startled
-  shocked
-  dismayed
-confused
-  disillusioned
-  perplexed
-amazed
-  astonished
-  awed
-excited
-  eager
-  energetic
- 
-: afraid
- humiliated
-  ridiculed
-  disrespected
- rejected
-  alienated
-  inadequate
-submissive
-  insignificant
-  worthless
-insecure
-  inferior
-  inadequate
-anxious
-  worried
-  overwhelmed
-scared
-  frightened
-  terrified
-
-: angry
-hurt
-  devastated
-  embarrassed
-threatened
-  jealous
-  insecure
-hateful
-  resentful
-  jealous
-mad
-  enraged
-  furious
-aggressive
-  provoked
-  hostile
-frustrated
-  infuriated
-  irritated
-distant
-  withdrawn
-  suspicious
-critical
-  skeptical
-  sarcastic
-  
+desperation
+determination
+detest
+devastation
+disappointment
+disapproval
+disgust
+disillusionment
+dismay
+disrespect
+distance
+distraction
+distrust
+eagerness
+ecstasy
+elation
+embarrassment
+empty
+encouragement
+enthusiasm
+excitement
+exuberance
+fear
+friendliness
+fright
+frustration
+fulfillment
+fun
+fury
+glee
+grumpiness
+guilt
+happiness
+hate
+helpfulness
+helplessness
+hesitance
+hope
+hostility
+humiliation
+hurtfulness
+importance
+inadequacy
+indifference
+inferiority
+infuriation
+inquisitiveness
+insecurity
+insignificance
+inspiration
+interest
+intimacy
+irritation
+isolation
+jealousy
+jolly
+joy
+judgement
+liberation
+loathing
+loneliness
+love
+merriment
+obedience
+openness
+optimism
+panic
+peacefulness
+perplexity
+playfulness
+powerfulness
+powerlessness
+pride
+puzzlement
+rage
+recklessness
+rejection
+relief
+remorse
+respect
+ridicule
+sadness
+sarcasm
+satisfaction
+sensitivity
+shame
+shock
+silliness
+skepticism
+stress
+submission
+surprise
+suspicion
+tension
+terror
+thoughtfulness
+threat
+trust
+victimization
+vivaciousness
+vulnerability
+wildness
+withdrawal
+worry
+worthlessness

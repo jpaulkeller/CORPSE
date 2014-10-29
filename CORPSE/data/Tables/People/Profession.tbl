@@ -52,6 +52,7 @@ administrator                              government
 advisor                                    government
 alabasterer                                craftsman                      worker in alabaster
 alchemist              {Title Guild}       scholar                        a medieval chemist (good with potions, poisons, +2 healing)
+acolyte                                    religious
 alderman                                   government                     A town or city official
 alewife                {Title Guild}       merchant                       a female alehouse keeper
 almoner                {Title Religious}   religious                      a distributer of money and food to the poor
@@ -533,6 +534,7 @@ prestidigitator                            magical
 priest                 {Title Religious}   religious                      temple of {Religion}
 primate                {Title Religious}   religious                      head of the Church in a country or region
 printer                                    craftsman          
+prisoner                                   criminal                                   
 privycleaner                               service            
 proctor                                    service                        a legal agent or representative
 professor                                  scholar

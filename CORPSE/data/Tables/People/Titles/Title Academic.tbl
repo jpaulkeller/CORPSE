@@ -1,19 +1,19 @@
-Student
-Trainee
-Counselor
-Trainer
-Guide
-Teacher
-Advisor
-Instructor
-Scholar
-Mentor
-Sage
-Professor
-Fellow
-Dominie
-Master
-Dean
-Don
+student
+trainee
+counselor
+trainer
+guide
+teacher
+advisor
+instructor
+scholar
+mentor
+sage
+professor
+fellow
+dominie
+master
+dean
+don
 
 : Title Academic {6, 17}
