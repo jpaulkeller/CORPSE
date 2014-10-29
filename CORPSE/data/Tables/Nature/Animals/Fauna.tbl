@@ -3,13 +3,15 @@
 + {mammal}
 + {marine}
 + {reptile}
++ {livestock}
++ {domesticated animal}
++ {pet}
 
 alligator
 alpaca
 anteater
 antelope
 armadillo
-army ants
 baboon
 badger
 bat
@@ -168,3 +170,248 @@ yak
 yeti
 zebra
 zebu
+
+=== animals and group names
+
+Albatross   Rookery
+Alligators  Congregation
+Apes  Shrewdness, Troop
+Antelope Herd
+Ants  Colony, Army, Swarm, Nest
+Asses Pace, Herd, Drove
+Auks  Colony, Flock, Raft
+Baboons  Troop, Flange
+Bacteria Culture
+Badgers  Cete, Colony, Set, Company
+Barracudas  Battery
+Bats  Colony, Cloud
+Bass  Shoal
+Bears (General)   Sloth, Sleuth
+Bears (Cubs)   Litter
+Beavers  Colony, Family
+Bees  Grist, Hive, Swarm, Nest
+Birds (Chicks) Brood, Clutch
+Birds (Flight) Flight
+Birds (Game)   Volary, Brace, Plump, Knob
+Birds (Ground) Flock, Dissimulation
+Birds (Sea) Wreck
+Bison Herd
+Bitterns Sedge, Seige
+Bloodhounds Sute
+Bobolinks   Chain
+Buffalo  Herd, Troop, Gang, Obstinancy
+Bullfinches Bellowing
+Bullocks Drove
+Butterflies Flight, Flutter, (Many more)
+Buzzards Wake
+Camels   Caravan, Train, Flock
+Capons   Mews
+Caribou  Herd
+Caterpillars   Army
+Cats (General) Clowder, Clutter, Pounce, Dout, Nuisance, Glorying, Glare
+Cats (Kittens) Kindle, Litter, Intrigue
+Cats (Wild) Destruction
+Cattle   Drove, Herd, Team
+Cheetahs Coalition
+Chickens (General)   Brood, Peep
+Chickens (Chicks) Clutch, Chattering
+Chinchilla  Colony
+Choughs  Clattering
+Clams Bed
+Cobras   Quiver
+Cockroaches Intrusion
+Cod   Lap
+Coots Cover, Raft
+Cormorants  Gulp
+Cows  Kine
+Coyotes  Band
+Crabs Cast
+Cranes   Sedge, Seige
+Crocodiles  Bask, Float
+Crows Murder, Horde, Parcel, Storytelling
+Curlews  Herd
+Deer (General) Herd, Leash, Gang
+Deer (Buck) Brace, Clash
+Deer (Roe)  Bevy
+Dogs (General) Kennel
+Dogs (Curs) Cowardice
+Dogs (Hounds)  Cry, Mute, Pack
+Dogs (Puppies) Litter
+Dogs (Wild) Pack
+Dolphins Pod
+Donkeys  Drove, Pace, Herd
+Dotterel Trip
+Doves (General)   Dule, Bevy, Cote, Dole, Paddling
+Doves (Turtle) Pitying, Piteousness
+Ducks (Flight) Flock
+Ducks (Ground) Brace, badling
+Ducks (Water)  Raft, Team, Paddling
+Dunlins  Fling
+Eagles   Convocation, Aerie
+Eels  Swarm, Bed, Fry
+Elephants   Herd, Memory
+Elk   Gang, Herd
+Emus  Mob
+Falcons  Cast
+Ferrets  Business, Cast, Fesnying
+Finches  Charm
+Fish (General) Draft, Nest, Shoal, School ("school" is possibly a corruption of shoal)
+Fish (Caught)  Catch, Drought, Haul
+Flamingoes  Stand, Flamboyance
+Flies Business, Swarm, Cloud
+Frogs Army, Colony, Knot
+Fox   Leash, Skulk, Earth, Lead, Troop
+Geese (General)   Flock
+Geese (Flight) Skein
+Geese (Ground) Gaggle, Herd, Corps
+Giraffes Tower
+Gnats Cloud, Horde, Swarm
+Gnus  Implausibility
+Goats Tribe, Trip, Drove, Herd, Flock
+Goldfinches Charm
+Goldfish Glint, Troubling
+Gorillas Band, Troop
+Goshawks Flight
+Grasshoppers   Cloud
+Greyhounds  Leash
+Grouse   Pack, Covey
+Guillemots  Bazaar
+Gulls Colony, Screech
+Guinea Fowl Confusion
+Hawks (General)   Cast
+Hawks (Flight) Kettle
+Hawks (Spiraling) Boil
+Hedgehogs   Array
+Herons   Sedge, Siege, Hedge
+Herring  Army, Shoal
+Hippopotamuses Bloat
+Hornets  Nest, Bike
+Horses (General)  Team, Harras, Stable, Troop, Stud (a group belonging to one owner)
+Horses (Colts) Rag, Rake
+Horses (Ponies)   String
+Horses (Wild)  Herd
+Hummingbirds   Charm
+Hyenas   Cackle, Clan
+Impalas  Herd
+Insects  Horde, Nest, Swarm, Rabble, Plague
+Jays  Party, Scold, Band
+Jellyfish   Smack, Brood
+Kangaroos   Troop, Mob, Herd
+Lapwings Deceit
+Larks Exaltation, Ascension
+Leopards Leap
+Lice  Flock
+Lions Pride, Sault, Troop
+Lizards  Lounge
+Locusts  Plague
+Magpies  Tiding, Gulp, Murder, Charm
+Mallards (General)   Brace
+Mallards (Flight) Sord
+Martens  Richness
+Mice  Mischief
+Midges   Bite
+Minnows  Shoal, Steam, Swarm
+Moles Labor, Company, Movement
+Monkeys  Troop, Barrel, Carload, Cartload, Tribe
+Moose Herd
+Mosquitoes  Scourge
+Mudhens  Fleet
+Mules Pack, Span, Barren, Rake
+Nightingales   Watch
+Otters   Romp, Bevy, Family, Raft
+Owls  Parliament, Stare
+Oxen  Team, Yoke, Drove
+Oysters  Bed
+Parrots  Company, Pandemonium
+Partridge   Covey, Bew
+Peacocks Muster, Ostentation, Pride
+Pekingese   Pomp
+Pelicans Pod
+Penguins (General)   Colony, Rookery, Huddle
+Penguins (Nursery)   Crèche
+Pheasants (General)  Nest, Nye
+Pheasants (Brood) Nide
+Pheasants (Take-Off) Bouquet
+Pigeons  Flight, Flock, Kit
+Pigs (General) Drift, Drove
+Pigs (Boars)   Singular, Sounder
+Pigs (Hogs) Team, Passel, Drift, Parcel
+Pigs (Piglets) Litter, Farrow
+Pigs (Swine)   Sounder
+Pilchards   Shoal
+Plovers (General) Congregation
+Plovers (Flight)  Wing
+Polecats Chine
+Porcupines  Prickle
+Porpoises   Herd, Pod, School, Crowd, Shoal
+Prairie Dogs   Coterie
+Ptarmigans  Covey
+Quail Bevy, Covey
+Rabbits (General) Colony, Warren, Bury, Trace, Trip
+Rabbits (Domestic)   Herd
+Rabbits (Hares)   Down, Husk
+Rabbits (Jackrabbit) Husk
+Rabbits (Young)   Litter, Nest
+Raccoons Gaze
+Rats  Colony, Pack, Plague, Swarm
+Rattlesnakes   Rhumba
+Ravens   Unkindness, Storytelling
+Reindeer Herd
+Rhinoceroses   Crash, Stubbornness
+Roebucks Bevy
+Rooks Building, Clamor, Parliament
+Ruffs Hill
+Salamandars Congress
+Salmon   Run
+Sandpipers  Fling
+Sardines Family
+Scorpions   Bed, Nest
+Seabirds Wreck
+Seals Pod, Bob, Harem, Herd, Rookery
+Sharks   Shiver, School, Shoal
+Sheep Drove, Flock, Down, Hurtle, Fold, Pack, Trip
+Sheldrakes  Doading
+Skylarks Exultation
+Squirrels   Dray, Scurry
+Snails   Escargatoire, Rout, Walk
+Snakes   Den, Nest, Pit, Bed, Knot
+Snipe Walk, Wisp
+Sparrows Host
+Spiders  Cluster, Clutter
+Springbok   Herd
+Squirrels   Dray, Scurry
+Starlings   Murmuration, Chattering
+Stingrays   Fever
+Stoats   Pack, Trip
+Storks   Mustering, Muster
+Swallows Flight, Gulp
+Swans (General)   Bevy, Bank, Herd
+Swans (Flight) Wedge, Flight
+Swifts   Flock
+Teal  Spring
+Termites Colony, Nest, Swarm, Brood
+Thrush   Mutation
+Tigers   Streak, Ambush
+Toads Knot, Knab, Nest
+Trout Hover
+Turkeys  Rafter, Gang, Posse
+Turtles  Bale, Nest, Turn, Dole
+Turtle Doves   Pitying, Dule
+Vipers   Generation, Nest
+Vultures Venue
+Vultures (Circling)  Kettle
+Walruses Herd, Pod
+Wasps Nest, Swarm
+Waterfowl   Knob, Plump
+Weasles  Gang, Colony, Pack
+Whales   Pod, Gam, Herd, School, Mod
+Widgeons Company
+Wildfowl Plump
+Wolves (General)  Pack
+Wolves (Moving)   Route, Rout
+Wombats  Wisdom
+Woodcocks   Fall
+Woodpeckers Descent
+Worms Bed, Clew, Bunch, Clat
+Wrens Herd
+Zebras   Zeal, Crossing, Dazzle, Cohorts, Herd
