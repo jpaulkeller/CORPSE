@@ -9,7 +9,7 @@
 20 {50%?{small|large} }{:MEDIUM}
 
 : Medium
-{:statue}{25%?tte} of {:OF}
+{:statue} of {:OF}
 {:drawing} depicting {:SUBJECT}
 
 : Statue

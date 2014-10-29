@@ -10,16 +10,16 @@ rare perfume
 rare spices
 silk cloth
 stolen goods
-tapestry
+tapestries
 weapons ({weapon})
-{equipment}
-{fabric}
-{fauna}
-{flora}
-{gem}
+{{equipment}+}
+{{fabric}+}
+{{fauna}+}
+{{flora}+}
+{{gem}+}
 {man made}
 {metal}
 {mineral}
 {organic}
-{reagent}
+{{reagent}+}
 {wood}
