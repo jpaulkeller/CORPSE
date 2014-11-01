@@ -38,6 +38,8 @@ Default Column   [Equipment]                         {Equipment}                
 Virtual Column   [Equipment.Quality]                 {Equipment.Quality}                a column which will be generated for each row
 Local Column     [.Example]                          {.Example}                         local (to this file) column
 Composite Column [Profession.Job]                    {Profession.Job}                   a column composed of other columns
+Capture/Extract  [H=Herb] [H.Herb] [H.Cost]          {H=Herb}{H.Herb} {H.Cost}          Capture and extract fields
+
 
 : Subset
 Subset           [Quality:Magic]                     {Quality:Magic}

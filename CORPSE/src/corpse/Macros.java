@@ -1,5 +1,8 @@
 package corpse;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Stack;
 import java.util.Vector;
 import java.util.regex.Matcher;
@@ -17,6 +20,9 @@ public final class Macros
 
    private static final Stack<String> TOKEN_STACK = new Stack<String>();
 
+   private static final Pattern ASSIGNMENT = Pattern.compile("\\{([A-Z]+)=([^}]+)\\}");
+   private static final Map<String, Assignment> assignments = new HashMap<String, Assignment>();
+            
    private static Vector<String> lastResolved = new Vector<String>(); // for back-references
 
    private Macros()
@@ -26,6 +32,7 @@ public final class Macros
    public static String resolve(final String tableOrScriptName, final String entry, final String filter)
    {
       String resolvedEntry = entry;
+      assignments.clear();
       lastResolved.clear();
 
       Matcher m;
@@ -37,6 +44,7 @@ public final class Macros
          resolvedToken = resolveExpressions(resolvedToken);
          resolvedToken = resolveTables(tableOrScriptName, resolvedToken, filter);
          resolvedToken = resolveScripts(resolvedToken);
+         
          if (resolvedToken.equals(token)) // avoid infinite loop
             resolvedToken = TokenRenderer.INVALID_OPEN + m.group(1) + TokenRenderer.INVALID_CLOSE;
 
@@ -95,8 +103,9 @@ public final class Macros
 
    public static String resolveExpressions(final String token)
    {
-      String resolvedToken;
-      resolvedToken = resolveQuantity(token);
+      String resolvedToken = resolveQuantity(token);
+      if (resolvedToken.equals(token))
+         resolvedToken = resolveAssignments(token);
       if (resolvedToken.equals(token))
          resolvedToken = resolveVariables(token);
       if (resolvedToken.equals(token))
@@ -453,6 +462,55 @@ public final class Macros
       return resolved;
    }
 
+   static class Assignment
+   {
+      private String line;
+      private Table table;
+      
+      public Assignment(final String tableName)
+      {
+         this.table = Table.getTable(tableName);
+         this.line = RandomEntry.get(tableName, null, null, null);
+      }
+      
+      public String get(final String columnName)
+      {
+         return table.getColumnValue(line, columnName);
+      }
+   }
+   
+   private static String resolveAssignments(final String token)
+   {
+      String resolvedToken = token;
+
+      Matcher m = ASSIGNMENT.matcher(resolvedToken);
+      if (m.find()) // store the assigned value
+      {
+         assignments.put(m.group(1), new Assignment(m.group(2)));
+         resolvedToken = m.replaceFirst("");
+      }
+      else // extract the desired value (or column) from the stored assignment
+      {
+         for (Entry<String, Assignment> entry : assignments.entrySet())
+         {
+            String regex = "\\{" + Pattern.quote(entry.getKey()) + "(?:[.]" + Constants.COLUMN_NAME + ")?\\}";
+            Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+            m = p.matcher(resolvedToken);
+            if (m.find())
+            {
+               Assignment a = entry.getValue();
+               String value = m.groupCount() == 1 ? a.get(m.group(1)) : a.line;
+               resolvedToken = m.replaceFirst(value);
+            }
+         }
+      }
+      
+      if (DEBUG && !token.equals(resolvedToken))
+         System.out.println("  resolveAssignments: [" + token + "] = [" + resolvedToken + "]");
+      return resolvedToken;
+   }
+
+
    // Make the case of the resolved token match the case of the token.
    
    private static final Pattern TO_CAPITALIZE = Pattern.compile("\\b([a-z])");
@@ -533,12 +591,14 @@ public final class Macros
       Macros.resolve(null, "{Profession.all#^([^ ]+) .*craftsman.*#}", null); // filter vs all with group
       Macros.resolve(null, "{#{Profession+#.*craftsman.*#}:^(.*?)  }", null); // filter vs all with group
       Macros.resolve(null, "{thing+} {moss+} {fly+} {mouse+} {fox+}", null); // test plurals
+      Macros.resolve(null, "{Profession.Job}", null); // composite column
       
       System.out.println("Aa: " + Macros.matchCase("Aa", "cap each word's first letter in the phrase")); 
       System.out.println("AA: " + Macros.matchCase("AA", "Leave ALL words in the phrase alone"));
       System.out.println("aa: " + Macros.matchCase("aa", "Lower Case ALL words in the phrase"));
       */
       
-      Macros.resolve(null, "{Profession.Job}", null); // composite column
+      Macros.resolve(null, "{H=Herb} Herb: {H.Herb} Cost: {H.Cost}", null); // assignment
+      // Macros.resolve(null, "{H=Herb} Herb: {H} Cost: {H}", null); // assignment
    }
 }

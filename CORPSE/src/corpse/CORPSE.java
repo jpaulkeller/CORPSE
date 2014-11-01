@@ -33,8 +33,6 @@ import corpse.ui.TreePanel;
 /** CORPSE - Computer-Oriented Role-Playing System & Environment */
 
 // TODO high priority
-// .Line syntax to return a delimited string (or map) - e.g. Merchandise.Type Merchandise.Item
-// Better CSV handling (specify separator) - Merchandise.tbl
 // text which can control where to include it (prepend, append, etc) - Dressed.tbl
 
 // TODO data changes
@@ -46,7 +44,8 @@ import corpse.ui.TreePanel;
 // figure out a way to cap-init a sentence w/o cap-initing each word?
 // deal with null return from prompt better
 // consider allowing ":" as field separator (specified in Column declaration?)
-// CSV format (val, "a, b", val3)
+// Better CSV handling (specify separator) - Merchandise.tbl
+// CSV quote format (val, "a, b", val3)
 
 // TODO moderate enhancements
 // global variables - such as "how common are elves?"
@@ -57,8 +56,6 @@ import corpse.ui.TreePanel;
 // splash
 // consider extending ArrayList to support WeightedList (store weight; don't duplicate element)
 // Figure out how to resolve CONDITIONS before resolving the inner values
-// structured tokens: table.column; roll once, access multiple times (e.g. gender.pronoun, gender.possessive, etc).
-// keep track of annotated resolved tokens for the current table (in a map?); repeat them.  {Name@Name}, {@Name} to re-use. 
 //
 // TODO major enhancements
 // consider applying filter based on its position in the token (e.g Profession#filter#:column)
