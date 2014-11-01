@@ -174,12 +174,12 @@ public class Table extends ArrayList<String>
       return column;
    }
 
-   private String getColumnValue(final String unresolvedEntry, final String columnName)
+   public String getColumnValue(final String unresolvedEntry, final String columnName)
    {
       String unresolved = unresolvedEntry;
       try
       {
-         if (columnName != null && !columnName.equalsIgnoreCase("all"))
+         if (columnName != null && !columnName.equalsIgnoreCase("ALL"))
          {
             Column column = getColumn(columnName);
             if (column != null)
