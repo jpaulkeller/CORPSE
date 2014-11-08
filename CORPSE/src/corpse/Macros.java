@@ -32,7 +32,7 @@ public final class Macros
    public static String resolve(final String tableOrScriptName, final String entry, final String filter)
    {
       String resolvedEntry = entry;
-      assignments.clear();
+      // assignments.clear(); TODO
       lastResolved.clear();
 
       Matcher m;
@@ -592,13 +592,14 @@ public final class Macros
       Macros.resolve(null, "{#{Profession+#.*craftsman.*#}:^(.*?)  }", null); // filter vs all with group
       Macros.resolve(null, "{thing+} {moss+} {fly+} {mouse+} {fox+}", null); // test plurals
       Macros.resolve(null, "{Profession.Job}", null); // composite column
+      Macros.resolve(null, "{H=Herb} Herb: {H.Herb} Cost: {H.Cost}", null); // assignment
+      Macros.resolve(null, "{Profession:Criminal}", null); // filter subset
       
       System.out.println("Aa: " + Macros.matchCase("Aa", "cap each word's first letter in the phrase")); 
       System.out.println("AA: " + Macros.matchCase("AA", "Leave ALL words in the phrase alone"));
       System.out.println("aa: " + Macros.matchCase("aa", "Lower Case ALL words in the phrase"));
       */
       
-      Macros.resolve(null, "{H=Herb} Herb: {H.Herb} Cost: {H.Cost}", null); // assignment
-      // Macros.resolve(null, "{H=Herb} Herb: {H} Cost: {H}", null); // assignment
+      Macros.resolve(null, "{Appearance} {Herb{!SameFirstLetter}}", null); // filter with column
    }
 }

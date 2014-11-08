@@ -58,14 +58,15 @@ public final class RandomEntry
       {
          int index = -1;
 
+         Subset subset = null;
          if (subName != null)
          {
-            Subset subset = table.getSubset(subName);
-            if (subset != null)
+            subset = table.getSubset(subName);
+            if (subset != null && !subset.hasFilter())
                index = subset.random() - 1;
          }
 
-         if (filter != null)
+         if (filter != null || (subset != null && subset.hasFilter()))
          {
             index = -1; // subset is no longer valid since we're going to filter the data
 
@@ -80,7 +81,9 @@ public final class RandomEntry
                token += Constants.COLUMN_CHAR + colName;
                colName = null; // don't want to apply it twice
             }
-            token += Constants.FILTER_CHAR + filter + Constants.FILTER_CHAR + "}";
+            if (filter != null)
+               token += Constants.FILTER_CHAR + filter + Constants.FILTER_CHAR;
+            token += "}";
 
             Table filteredTable = Table.TABLES.get(token);
             if (filteredTable == null)

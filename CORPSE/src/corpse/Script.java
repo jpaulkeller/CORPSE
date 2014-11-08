@@ -170,6 +170,7 @@ public final class Script
    
    public String resolve(final String entry)
    {
+      System.out.println("Script.resolve(): " + entry); // TODO
       String line = entry;
 
       Matcher m;

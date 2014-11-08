@@ -34,6 +34,8 @@ import corpse.ui.TreePanel;
 
 // TODO high priority
 // text which can control where to include it (prepend, append, etc) - Dressed.tbl
+// consider {Table.1} to get the first field, separated by at least 2 spaces - Herb
+// or some way to specify a regex, and extract the group -- e.g. Table.([^ ]+)
 
 // TODO data changes
 // convert scripts to HTML (Tavern.cmd)

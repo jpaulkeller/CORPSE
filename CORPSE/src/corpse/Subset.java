@@ -103,9 +103,9 @@ public final class Subset
 
    static Subset parseIncludedTableAsSubset(final Table table, final String token)
    {
-      Subset subset = new Subset();
-      subset.name = token.replaceAll("[^A-Za-z0-9]", "");
       Subset.closeSubset(table);
+      Subset subset = new Subset();
+      subset.name = token.replaceAll("[^A-Za-z0-9 ]", "");
       subset.min = table.size() + 1;
       // max will be set when the next subset is read (or EOF)
       return subset;
@@ -138,13 +138,18 @@ public final class Subset
          }
    }
 
-   private static void closeSubset(final Table table) // close any "open" subset
+   public static void closeSubset(final Table table) // close any "open" subset
    {
       for (Subset s : table.getSubsets().values())
          if (s.getMax() == 0) // should be 1 at most
             s.setRoll("{" + s.getMin() + "-" + table.size() + "}");
    }
 
+   public boolean hasFilter()
+   {
+      return pattern != null;
+   }
+   
    public boolean includes(final int row, final String line)
    {
       boolean include = false;

@@ -43,6 +43,12 @@ public final class Column implements Comparable<Column>
    // . Name width
    private static final Pattern COLUMN_FIXED = Pattern.compile("^\\" + CC + "\\s*" + CN + "\\s+(\\d+)" + Constants.COMMENT,
                                                                Pattern.CASE_INSENSITIVE);
+   
+   // . Name [regex] -- regex must contain a single group, which will be the column's value
+   private static final String REGEX = "\\[(.*\\(.+\\).*)\\]";
+   private static final Pattern COLUMN_REGEX = 
+      Pattern.compile("^\\" + CC + "\\s*" + CN + "\\s+" + REGEX + Constants.COMMENT, Pattern.CASE_INSENSITIVE);
+   
    // . Name start width (obsolete format)
    private static final Pattern COLUMN_FULL = Pattern.compile("^" + CC + "\\s*" + CN + "\\s+(\\d+)\\s+(\\d+)" + Constants.COMMENT,
                                                               Pattern.CASE_INSENSITIVE);
@@ -71,6 +77,7 @@ public final class Column implements Comparable<Column>
    private int start; // 1-based
    private int width;
    private String token; // for ghost columns
+   private Pattern pattern; // for regex columns
 
    private List<String> composites = new ArrayList<String>();
 
@@ -109,6 +116,16 @@ public final class Column implements Comparable<Column>
          column.index = table.getColumns().size();
          column.start = column.index == 0 ? 1 : Column.getNextStart(table, column);
          column.width = Integer.parseInt(m.group(2));
+         table.addColumn(column);
+      }
+      else if ((m = COLUMN_REGEX.matcher(entry)).find()) // Name [regex]
+      {
+         column = new Column(table);
+         column.name = m.group(1);
+         column.index = table.getColumns().size();
+         column.start = -1;
+         column.width = -1;
+         column.pattern = CORPSE.safeCompile(table.getName() + "." + column.name, m.group(2));
          table.addColumn(column);
       }
       else if ((m = GHOST_COLUMN.matcher(entry)).find()) // Name Token
@@ -232,7 +249,13 @@ public final class Column implements Comparable<Column>
          if (m.find())
             field = m.group(1);
       }
-      else if (start == -1) // ghost column
+      else if (pattern != null) // regex column
+      {
+         Matcher m = pattern.matcher(unresolvedEntry);
+         if (m.matches() && m.groupCount() > 0)
+            field = m.group(1);
+      }
+      else if (token != null) // ghost column
          field = token;
       else // fixed-width
       {
@@ -253,15 +276,19 @@ public final class Column implements Comparable<Column>
    {
       StringBuilder sb = new StringBuilder();
       sb.append("[" + index + "] " + name);
-      if (composites.isEmpty())
-         sb.append(" " + start + " " + width);
-      else
+      if (!composites.isEmpty())
       {
          sb.append(" = ");
          Iterator<String> iter = composites.iterator();
          while (iter.hasNext())
             sb.append(iter.next() + (iter.hasNext() ? " + " : ""));
       }
+      else if (token != null)
+         sb.append(" (token = " + token + ")");
+      else if (pattern != null)
+         sb.append(" (pattern = " + pattern + ")");
+      else
+         sb.append(" " + start + " " + width);
       return sb.toString();
    }
 
@@ -277,7 +304,8 @@ public final class Column implements Comparable<Column>
 
       // String test = "EQUIPMENT";
       // String test = "Alteration";
-      String test = "Profession";
+      // String test = "Profession";
+      String test = "Fauna";
       
       if (test != null)
       {
