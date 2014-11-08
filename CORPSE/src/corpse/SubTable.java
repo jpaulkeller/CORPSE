@@ -25,10 +25,7 @@ public final class SubTable extends Table
          String xrefFil = null;
          
          if (Constants.ALL_CHAR.equals(m.group(5))) // {Table!#Filter#} don't default subsets/columns
-         {
             xrefFil = m.group(6);
-            System.out.println("SubTable.SubTable(): " + token + " = " + xrefFil); // TODO
-         }
          else // {Table:Subset.Column#Filter#}
          {
             xrefSub = m.group(2);
@@ -117,7 +114,7 @@ public final class SubTable extends Table
       // test("{DiffTest#.+(?<!Common)#}", "negative look-ahead regex to prevent collision");
       // test("{Color#.*(ee|ro).*#}", "filter with alteration");
       // test("{Profession+#.*craftsman.*#}", "filter subsets");
-      // test("{Profession:Criminal}", "subset filter");
-      test("{Profession.Job}", "composite column");
+      test("{Profession:Criminal}", "subset filter");
+      // test("{Profession.Job}", "composite column");
    }
 }
