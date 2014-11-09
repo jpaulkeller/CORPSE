@@ -1,0 +1,12 @@
+: Street
+Cathedral {:General}
+{Name} {:General}
+{Profession}'s {:General}
+{Pseudo Class} {:General}
+
+: General
+alley
+parade
+side
+street
+way
