@@ -1,89 +1,127 @@
-.Type; Merchandise
+.Type               Merchandise
 
-/ arms and armor
-Ammo; {~{ammo}}
-Armor; {~{armor}}
-Siege Weapon; {~{siege}}
-Weapon; {~{weapon}}
+: General
+general             accessories
+general             ammunition
+general             arms
+general             armor
+general             art
+general             books
+general             clothing
+general             equipment
+general             food
+general             fur and pelts
+general             furnishings
+general             materials
+general             gems
+general             jewelery
+general             live animals
+general             musical instruments
+general             precious metals
+general             pottery
+general             produce
+general             property
+general             provisions
+general             reagents
+general             services
+general             shoes
+general             spell components
+general             spices
+general             transporation
+general             wine
 
-/ art and luxuries
-Art; {art}
-Book; {BOOK}
-Gem; {gem}
-Luxury; {luxury}
-Musical Instrument; {musical instrument}
+: Arms
+ammo                {~{ammo}}
+armor               {~{armor}}
+siege weapon        {~{siege}}
+weapon              {~{weapon}}
 
-/ clothing
-Accessory; {~{accessory}}
-Clothing; {~{clothing}}
-Jewelery; {jewelery}
-Footware; {~{shoe}}
+: Art
+art                 {art}
+book                {BOOK}
+gemstones           {gem}
+luxury              {luxury}
+musical instrument  {musical instrument}
 
-/ food
-Meal; {menu}
-Food; {nuts}
-Food; {~{provisions}}
-Food; {salad ingredient}
-Spice; {spice}
-Food; {berry}
-Food; {fruit}
-Food; {vegetable}
+: Clothing
+accessory            {~{accessory}}
+clothing             {~{clothing}}
+jewelery             {jewelery}
+footware             {~{shoe}}
 
-/ furnishings
-Furnishing; {~{furnishing}}
+: Consumable
+meal                 {menu}
+food                 {nuts}
+food                 {~{provisions}}
+food                 {salad ingredient}
+spice                {spice}
+food                 {berry}
+food                 {{fruit}+}
+food                 {{vegetable}+}
+drink                {menu:drink}
 
-/ gear
-Container; {~{container}}
-Equipment; {~{equipment}}
-Tack; {~{tack}}
-Equipment; {~{thief gear}}
+: Furnishings
+furnishing           {~{furnishing}}
 
-/ magic
-Alchemy; {~{alchemy.item}}
-Robe (magical); {MAGIC ROBE.NAME}
-Tool (magical); {magic tool}
-Potion; {potion}
-Reagent; {reagent}
-Component; {spell component}
-Wand; {wand}
+: Gear
+container            {~{container}}
+equipment            {~{equipment}}
+tack                 {~{tack}}
 
-/ materials
-Fabric; {~{fabric}}
-Material; {~{made of}}
-Material; {~{man made}}
-Material; {~{material}}
-Material; {~{metal}}
-Material; {~{mineral}}
-Material; {~{organic}}
-Material; {~{wood}}
+: Illicit
+poison               {poison}
+contraband           {smuggled}
+equipment            {~{thief gear}}
 
-/ plants and animals
-Food; {crop}
-Animal; {~{fauna}}
-Plant; {flora}
-Livestock; {~{livestock}}
-Mount; {mount}
-Pet; {pet}
+: Magic
+alchemy              {~{alchemy.item}}
+robe (magical)       {MAGIC ROBE.NAME}
+tool (magical)       {magic tool}
+potion               {potion}
+reagent              {reagent}
+component            {spell component}
+wand                 {wand}
+charm                {charm}
+familiar             {familiar}
+treasure             {treasure}
 
-/ property
-Property; {site;artificial}
-Property; {city site}
-Property; {mine}
+: Materials
+fabric               {~{fabric}}
+fur                  {fur and pelt} fur
+material             {~{made of}}
+material             {~{man made}}
+material             {~{material}}
+material             {~{metal}}
+material             {~{mineral}}
+material             {~{organic}}
+material             {~{wood}}
+precious metals      {~{metal:precious}}
 
-/ services and information
-Service; currency exchange
-Service; information
-Service; transportation
-Service; {hireling type}
-Service; {profession}
-Service; {room and board}
-Service; {~{services}}
+: Plants and Animals
+food                 {crop}
+animal               {~{fauna}}
+plant                {flora}
+livestock            {~{livestock}}
+mount                {mount}
+pet                  {pet}
 
-/ transportation
-Equipment; {~{transport}}
+: Property
+property             {site;artificial}
+property             {city site}
+property             {mine}
 
-/ miscellaneous
-Equipment; {device}
-Poison; {poison}
-Smuggled; {smuggled}
-Miscellaneous; {~{tiny item}}
+: Services
+service              currency exchange
+service              information
+service              transportation
+service              {hireling type}
+service              {profession}
+service              {room and board}
+service              {~{services}}
+
+: Transportation
+equipment            {~{transport}}
+
+: Miscellaneous
+equipment            {device}
+miscellaneous        {~{tiny item}}

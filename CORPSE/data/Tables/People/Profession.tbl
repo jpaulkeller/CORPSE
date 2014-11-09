@@ -80,7 +80,7 @@ bailiff                                    government                     manage
 baker                  {Title Guild}       craftsman       62             one who makes bread and other baked goods
 balanceimaker                              craftsman          
 bandit                 Level {10}          criminal       
-banker                 {Title Guild}       merchant
+banker                 {Title Guild}       service
 barbarian                                  itinerant
 barber                 {Title Guild}       service        151             one who cuts hair, also performed surgery and pulled teeth
 bard                   {Title Guild}       entertainer                    a minstrel (especially {musical instrument})
@@ -125,7 +125,7 @@ bodyservant                                service
 bonecarver                                 craftsman          
 book-binder            {Title Guild}       craftsman       1-in-3000             
 book-printer                               craftsman          
-book-sellers                               merchant        1-in-6300
+book-seller                                merchant        1-in-6300
 boothaler                                  criminal                       marauder, plunderer
 boothman               {Title Guild}       merchant                       one who sells grains
 botanist               {Title Academic}    scholar                        +2 heal, poison; ({flora})

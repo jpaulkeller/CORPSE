@@ -1,4 +1,5 @@
 .Example         Syntax                              Resolved                           Notes
+.First [(.+?)(?:  .*)?]
 
 / The following are different ways to get a random number value:
 : Quantity
