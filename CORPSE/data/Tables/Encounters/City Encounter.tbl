@@ -2,11 +2,8 @@
 10 {:PASSERBY}
 
 : Passerby
-A {:description} {NPC ENCOUNTER} {50%?{dressed:wearing} }{:ACTIVITY}
+A {NPC} {50%?{dressed:wearing} }{:ACTIVITY}
 A {:group} {20%?{:wearing} }{80%?{:GROUP ACTIVITY}}
-
-: Description
-{15%?{degree:adjective} }{appearance}{50%?{, {15%?{degree:adjective} }{feeling}| and {handicap}}}{20%? {age}}
 
 : Group
 {small |large |}{:group name} of {75%?{15%?{degree:adjective} }{appearance} }{{:member}+}
@@ -39,7 +36,7 @@ wearing {damaged|makeshift|polished} armor
 
 : Activity
 has a black eye and a split lip
-is arguing with a {:description} {npc encounter}
+is arguing with a {NPC}
 is asking for directions
 is begging for money
 is being chased by a guard
@@ -52,7 +49,7 @@ is conducting a tour
 is herding {herd animal}
 is in a big hurry
 is limping away leaving a trail of blood
-is making apologies to a {:description} {npc encounter}
+is making apologies to a {NPC}
 is riding a very expensive horse
 is sitting on the ground
 is smoking a long pipe 
@@ -70,9 +67,9 @@ was just tossed from a {shop|bar|inn}
 are blocking the road
 are carrying a large {container}
 are celebrating {FESTIVAL}
-are chasing a {:description} {npc encounter}
+are chasing a {NPC}
 are collecting {refuse|dead {pigeons|rats}|donations}
-are harassing a {:description} {npc encounter}
+are harassing a {NPC}
 are marching in formation
 are recovering from a fight
 are sacrificing a {fauna}

@@ -1,3 +1,5 @@
+:Liquid Feature
+
 bubbling
 chalky
 chunky
@@ -28,3 +30,9 @@ sparkling
 steaming
 swirling
 translucent
+
+: Extra
+with {bits|lumps|pieces|flakes} of {reagent} floating in it
+with {color:fancy} {accretions|residue|streaks} on the {surface|sides|bottom}
+with what looks like tiny {{insect}+} {swimming|crawling} in it
+with a small {tiny item} floating in it

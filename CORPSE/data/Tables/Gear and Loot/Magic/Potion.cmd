@@ -17,7 +17,7 @@
 <h2>Description</h2>
 <ul>
  <li>Color: {color}
- <li>Viscosity: {viscosity}{33%?, {liquid feature}}{20%?, with bits of {reagent} floating in it}
+ <li>Viscosity: {viscosity}{33%?, {liquid feature}}{20%?, {liquid feature:extra}}
  <li>Smell: {smell}
  <li>Taste: {taste}
  <li>Temperature: {20%?{temperature}:ambient}

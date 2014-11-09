@@ -1,14 +1,69 @@
+/ some inspired by http://www.seventhsanctum.com/generate.php?Genname=pirateshipnamer
+
+: Ship Name
 {Adjective} {Fauna}
 {Adjective} {Title Feudal:Noble}
-{Appearance} {Fauna}
+{Appearance} {Fauna{!MaybeSameFirstLetter}}
 {Appearance} {Title Feudal:Noble}
-{Color:Basic} {Fauna}
+{Color:Basic} {Fauna{!MaybeSameFirstLetter}}
 {Color:Basic} {Title Feudal:Noble}
 {Evocative:Adj} {Title Religious}
-{Trait} {Evocative:Noun}
-{Trait} {Fauna}
+{Trait} {Evocative:Noun{!MaybeSameFirstLetter}}
+{Trait} {Fauna{!MaybeSameFirstLetter}}
 {Trait:Good} {Title Feudal:Noble}
+{:Pirate}
+{:Pregen}
 
+: Pirate
+{25%?The }{Evocative:Mean} {Evocative:Not Good{!OneWord}}
+{25%?The }{:Subject}'s {:Object}
+{10%?The }{:Object} of the {:Subject}
+{25%?The }{Noise} {Profession:Criminal}
+{25%?The }{:Nautical Adj} {:Nautical Noun}
+
+: Subject
+Buccaneer
+Devil
+Hell
+Night
+Ocean
+Pirate
+Strumpet
+{Evocative:Noun}
+{Generated Name}
+
+: Object
+Anger
+Disgrace
+Doom
+Executioner
+Fall
+Hate
+Howl
+Lie
+Scream
+Skull
+{North|South|East|West}
+
+: Nautical Adj
+Briny
+Golden
+Soggy
+
+: Nautical Noun
+Barnacle
+Corsair
+Eel
+Kraken
+Manta
+Moray
+Serpent
+Shark
+Squid
+Stingray
+Whale
+
+: Pregen
 The Blade of Mebrook
 The Emerald Blade
 The Empress of Alasband

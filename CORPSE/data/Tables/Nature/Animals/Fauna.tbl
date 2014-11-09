@@ -3,7 +3,7 @@
 + {mammal}
 + {marine}
 + {reptile}
-+ {livestock}
++ {~{livestock}}
 + {domesticated animal}
 + {pet}
 
@@ -121,11 +121,9 @@ pig
 pigeon
 piranha
 polar bear
-polar bear 
 pony
 porcupine
 prairie dog
-prairie dog 
 python
 rabbit
 raccoon

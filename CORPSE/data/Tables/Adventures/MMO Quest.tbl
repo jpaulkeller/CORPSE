@@ -1,0 +1,6 @@
+{Capture/Kill/Slay} {d4x5} {fauna}
+Collect {d4x5} {{organ}+}
+Deliver a package to the {profession}
+Free a {NPC} from a band of {{humanoid}+}
+Gather {d4x5} {{~{spell component}}+}
+Get {reagent}

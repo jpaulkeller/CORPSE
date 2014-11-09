@@ -6,12 +6,12 @@ A cart overturned near the {landmark}, releasing a small {monster}.
 A tribe of {humanoid}s inhabit the {Dungeon Name}.
 A {:adjective} {:who} {:relates to}.
 A {:adjective} {:who}{50%? is:and a {50%?{:adjective}} {:who} are} {:goal}.
-A {merchant} has {:loot} hidden in its {attic|cellar}.
+A {profession:merchant} has {:loot} hidden in its {attic|cellar}.
 A {profession} has {:loot} hidden around his house.
 A {profession} knows a secret entrance into the {Dungeon Name}.
 Lots of {{gem}s|{metal:precious}} has been found in {Dungeon Name}.
 No one has ever come back alive from {Dungeon Name}.
-Strange {noise} has been heard {near the {site}|in the {merchant}}.
+Strange {noise} has been heard {near the {site}|in the {city site}}.
 {:Loot} was said to have been lost in {Dungeon Name}.
 {Dungeon Name} has a magical {dungeon feature}.
 {Dungeon Name} was {made|build|constructed|delved} in the time before the {Cataclysm}.

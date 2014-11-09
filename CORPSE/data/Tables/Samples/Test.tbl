@@ -1,4 +1,1 @@
-Full: {Herb!}
-Herb: {Herb}
-Cost: {Herb.Cost}
-Capture:  {H=Herb}{H.Herb} {H.Cost}
+{Appearance} {Fauna{!MaybeSameFirstLetter}}
