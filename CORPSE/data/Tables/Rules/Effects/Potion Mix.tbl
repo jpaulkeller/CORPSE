@@ -3,6 +3,6 @@
 Explosion for {20} damage
 The potions create a cloud of deadly gas
 The potions create a cloud of poisonous gas which causes {mild/partial|severe} {symptom} for {2d10} {duration:short}s
-First potion has {no|half|normal|double} effect; second potion has {no|half|normal|double} effect{50%?; also causes {symptom}}
+First potion has {no|half|normal|double} effect; second potion has {no|half|normal|double} effect{50%; also causes {symptom}}
 Combining the potions makes a new effect (not the effect of either potion)
 {D12 Potion Side-effect}

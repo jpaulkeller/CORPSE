@@ -21,7 +21,7 @@
 <li>Shop
   <ul>
     <li>Stall Type: {market stall} 
-    <li>Customers: {NPC}{50%?, {NPC}}{50%?, {NPC}}{50%?, {NPC}}
+    <li>Customers: {NPC}{50%, {NPC}}{50%, {NPC}}{50%, {NPC}}
     <li>Security: {none|nothing obvious}
   </ul>
 

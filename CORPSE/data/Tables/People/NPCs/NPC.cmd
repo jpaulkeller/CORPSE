@@ -15,22 +15,29 @@
 / Assign the entered name to "NPC" for re-use later.
 / Randomize using the name as the seed, for consistent results.
 # {NPC={NPC Name?{Name}}}
+<!--
+{W={10}} / wealth
+-->
 
 <!-- Show the name, generate and show a race and previous profession. -->
 <p><b>{NPC}</b>, {race} {profession}
 
 <ul>
-  <!-- Generate and show a gender and two personality traits. -->
-  <li>{Gender.Pronoun} is {degree} {trait} and {frequency} {disposition}.  Currently feeling {degree} {mood}.
-
+  <li>{Gender.Pronoun} is {degree} {trait} and {frequency} {disposition}.
+  <li>Currently feeling {degree} {mood}.
   <li>Appearance: {Appearance}
+  {50%<li>Handicap: {handicap}}
+  {50%<li>Quirk: {quirk}}
+  {50%<li>Motivation: {motivation}}
+  {50%<li>Phobia: {phobia!}}
  
   <!-- Generate and show some pocket stuff (with 2% chance of gem) -->
-  <li>Currency: {20%?{10} gp; }{0-100} sp; {0-30} cp{2%?; {gem}}
-  <li>Carrying: {tiny item}; {tiny item{!different}}; {tiny item{!different}}
+  <li>Currency: {{5*{W}}%?{10} gp; }{20*{W}} sp; {50} cp{{W}%?; {gem}}
+  <li>Wearing: {clothing}{{{W}*8}%?; {jewelery}}
+  <li>Carrying: {~{tiny item}}; {~{tiny item{!different}}}; {~{tiny item{!different}}}
  
   <!-- Generate and show some equipment. -->
-  <li>Equipped with: {equipment}; {equipment}; {equipment}
+  <li>Equipped with: {~{equipment}}; {~{equipment}}; {~{equipment}}
  
   <li>Str: {3d6} Dex: {3d6} Agi: {3d6} Con: {3d6} Int: {3d6} Wis: {3d6} Dis: {3d6} Cha: {3d6}
 </ul>

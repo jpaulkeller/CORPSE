@@ -18,7 +18,7 @@
   {Gender?{Gender.Pronoun}} is {Trait??} and {Trait??}
 
 * Generate and show some pocket stuff (with 2% chance of gem)
-  Currency: {Silver?{0-100}} sp{2%? and a {Gem}}
+  Currency: {Silver?{0-100}} sp{2% and a {Gem}}
   Carrying: {TinyItem??}; {TinyItem??}; {TinyItem??}
 
 * Generate and show some equipment.

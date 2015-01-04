@@ -49,7 +49,7 @@ public final class Subset
    private int min, max;
    private Pattern pattern;
 
-   private List<String> composites = new ArrayList<String>();
+   private List<String> composites = new ArrayList<>();
 
    public static void parse(final Table table, final String entry)
    {
@@ -64,7 +64,7 @@ public final class Subset
          System.err.println("Invalid subset in " + table.getFile() + ": " + entry);
    }
 
-   private static Subset parseCompositeSubset(Matcher m)
+   private static Subset parseCompositeSubset(final Matcher m)
    {
       Subset subset = new Subset();
       subset.name = m.group(1);
@@ -77,7 +77,7 @@ public final class Subset
       return subset;
    }
 
-   private static Subset parseFilterSubset(Matcher m)
+   private static Subset parseFilterSubset(final Matcher m)
    {
       Subset subset = new Subset();
       subset.name = m.group(1);
@@ -86,7 +86,7 @@ public final class Subset
       return subset;
    }
 
-   private static Subset parseSubset(final Table table, Matcher m)
+   private static Subset parseSubset(final Table table, final Matcher m)
    {
       Subset subset = new Subset();
       subset.name = m.group(1);
@@ -125,13 +125,16 @@ public final class Subset
       for (Subset s : table.getSubsets().values())
          if (!s.composites.isEmpty())
          {
+            s.min = 1;
+            s.max = 0;
             for (String composite : s.composites)
             {
                Subset child = table.getSubset(composite);
                if (child != null)
                {
-                  s.min = Math.min(s.min, child.min);
-                  s.max = Math.max(s.max, child.max);
+                  // s.min = Math.min(s.min, child.min);
+                  // s.max = Math.max(s.max, child.max);
+                  s.max += child.max - child.min + 1; 
                }
             }
             s.setRoll("{" + s.min + "-" + s.max + "}");
@@ -150,11 +153,21 @@ public final class Subset
       return pattern != null;
    }
    
-   public boolean includes(final int row, final String line)
+   public boolean includes(final Table table, final int row, final String line)
    {
       boolean include = false;
       if (pattern != null)
          include = pattern.matcher(line).matches();
+      else if (!composites.isEmpty())
+      {
+         for (String subsetName : composites)
+         {
+            Subset subset = table.getSubset(subsetName);
+            if (subset != null && subset.includes(table, row, line))
+               return true;
+         }
+         return false;
+      }
       else
          include = (row >= min && row <= max);
       return include;

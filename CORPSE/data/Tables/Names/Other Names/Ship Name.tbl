@@ -15,11 +15,11 @@
 {:Pregen}
 
 : Pirate
-{25%?The }{Evocative:Mean} {Evocative:Not Good{!OneWord}}
-{25%?The }{:Subject}'s {:Object}
-{10%?The }{:Object} of the {:Subject}
-{25%?The }{Noise} {Profession:Criminal}
-{25%?The }{:Nautical Adj} {:Nautical Noun}
+{25%The }{Evocative:Mean} {Evocative:Not Good{!OneWord}}
+{25%The }{:Subject}'s {:Object}
+{10%The }{:Object} of the {:Subject}
+{25%The }{Noise} {Profession:Criminal}
+{25%The }{:Nautical Adj} {:Nautical Noun}
 
 : Subject
 Buccaneer

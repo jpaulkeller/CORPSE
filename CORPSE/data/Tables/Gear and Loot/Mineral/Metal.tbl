@@ -3,6 +3,7 @@
 /          Values from DRAGON Magazine #83, page 10.
 
 : Metal = Alloy + Element + Precious + Special
+: Common = Alloy + Precious
 : Normal = Alloy + Element + Precious
 : Mine = Element + Precious + Ore
 : Enchantable = Precious + Special
@@ -20,7 +21,6 @@ tin                475
 aluminum           170
 cobalt             546    lustrous, grey, ductile
 iron               475
-iron (rusty)
 lead               710
 magnesium          110
 mercury            845    liquid at room temperature
@@ -50,6 +50,13 @@ mithril            200    elvish silver
 obdurite
 orichalcum         800    atlantean metal
 valerian steel
+
+: Weapon
+bronze
+iron
+steel
+silver
+titanium
 
 : Ore
 azurite

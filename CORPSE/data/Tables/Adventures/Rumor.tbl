@@ -5,7 +5,7 @@
 A cart overturned near the {landmark}, releasing a small {monster}.
 A tribe of {humanoid}s inhabit the {Dungeon Name}.
 A {:adjective} {:who} {:relates to}.
-A {:adjective} {:who}{50%? is:and a {50%?{:adjective}} {:who} are} {:goal}.
+A {:adjective} {:who}{50%? is:and a {50%{:adjective}} {:who} are} {:goal}.
 A {profession:merchant} has {:loot} hidden in its {attic|cellar}.
 A {profession} has {:loot} hidden around his house.
 A {profession} knows a secret entrance into the {Dungeon Name}.
@@ -171,7 +171,7 @@ was seen meeting with a {:adjective} {:who} near the {site}
 : Goal
 hiring for an expedition to {Dungeon Name}
 trying to {destroy|protect|recover|sell|steal} {:loot}
-trying to {avoid|assassinate|blackmail|save} {50%?{:adjective}} {:who}
+trying to {avoid|assassinate|blackmail|save} {50%{:adjective}} {:who}
 
 : Loot
 a hoard of treasure

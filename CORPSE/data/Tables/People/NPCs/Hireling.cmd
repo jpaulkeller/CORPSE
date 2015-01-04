@@ -1,23 +1,38 @@
-Age
-Gender
-From
-Description
-Trait
-Skill
-Hireling Type
-Alignment
-Religion
-Attribute
-Attitude
-Mood
+<html>
+<body>
 
-continuum!
+<h1>HIRELING: {Hireling={Name?{Name}}}</h1>
+<hr>
+ 
+/ Randomize using the name as the seed, for consistent results
+# {Name}
 
-Honour   3  4  5  6  7  8  9  10-11 12 13 14 15 16 17 18 Treachery      
-Humility 3  4  5  6  7  8  9  10-11 12 13 14 15 16 17 18 Pride    
-Kindness 3  4  5  6  7  8  9  10-11 12 13 14 15 16 17 18 Envy/Spite     
-Temperance  3  4  5  6  7  8  9  10-11 12 13 14 15 16 17 18 Gluttony    
-Chastity 3  4  5  6  7  8  9  10-11 12 13 14 15 16 17 18 Lust     
-Patience 3  4  5  6  7  8  9  10-11 12 13 14 15 16 17 18 Wrath    
-Generosity  3  4  5  6  7  8  9  10-11 12 13 14 15 16 17 18 Avarice     
-Fortitude   3  4  5  6  7  8  9  10-11 12 13 14 15 16 17 18 Sloth    
+<ul>
+  <li>Hireling Type: {hireling type}
+  <li>Skill: {skill}
+  <li>From: 
+  <li>Gender: {gender}
+  <li>Age: {age}
+  <li>Description: {appearance}
+  <li>Alignment: {alignment}
+  <li>Religion: 
+  <li>Attributes: {attribute.cmd}
+  <li>Trait: {degree} {trait}
+  <li>Disposition: {disposition}
+  <li>Feeling: {feeling}
+  <li>Mood: {mood}
+</ul>
+
+<ul>
+  <li>Treachery/Honor: {3d6}  
+  <li>Pride/Humility: {3d6}  
+  <li>Cruelty/Kindness: {3d6}  
+  <li>Gluttony/Temperance: {3d6}  
+  <li>Lust/Chastity: {3d6}  
+  <li>Wrath/Patience: {3d6}  
+  <li>Avarice/Generosity: {3d6}  
+  <li>Sloth/Fortitude: {3d6}  
+</ul>
+  
+</body>
+</html>

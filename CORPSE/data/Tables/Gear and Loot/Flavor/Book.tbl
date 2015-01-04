@@ -2,96 +2,69 @@
 // various
 
 : Famous
+A {:Category} of {Number} {{Site}+}
+How To Serve {Humanoid}
+The {Degree:Adjective} {Feeling} {Insect}
+The {Fauna}, the {Class}, and the {~{Furnishing}}
+The {Number:TwoToTen} Habits of {Degree:Adjective} Successful {{Humanoid}+}
+The {Size} {Title}
 The {Title Feudal.{Male|Female}} of the {{Tiny Item}+}
 {Name#R.*#}'s Rules of Order
+{Name} and {Name}
 {Name} {Profession} and the Order of the {Fauna}
 {Number:Plural} Shades of {Color:Simple}
-{Name} and {Name}
-How To Serve {Humanoid}
-The {Size} {Title}
-A {:Category} of {Number} {{Site}+}
-The {Fauna}, the {Class}, and the {~{Furnishing}}
-The {Degree:Adjective} {Feeling} {Insect}
-The {Number:TwoToTen} Habits of {Degree:Adjective} Successful {{Humanoid}+}
 
 : Book
-A {:Prefix} {:Category} on the {33%?{:Adjective} }{:Subject}{10%?, {:Suffix}}
-The Rise and Fall of the {:Adjective} {:Subject}{10%?, {:Suffix}}
-A {Race} in Shackles: Overcoming the Curse
-The {{:Personal}|{50%?{:Prefix} }{:Short}} of {20%?{Title} }{Name}{20%? the {Evocative Title}}
-A {Field|Pictorial} Guide to the {{Fauna}|{Flora}|{Humanoid}} of the {:Place}{10%?, {:Suffix}}
-An Argument Against {Evocative:Evil}
-Anatomy of the {Fauna}{10%?, {:Suffix}}
-The {Evocative:Adj} {:Category}{10%?, {:Suffix}}
-{Number:TwoToTwelve} {:Short}{10%?, {:Suffix}}
-Atlas of the {:Place}{10%?, {:Suffix}}
-{:Type} of {Domain}{10%?, {:Suffix}}
-Tales from the {{Inn Name}|{:Place}}
+A Guide to Overcoming Your {Phobia}
 A How To Guide for the Would Be {Profession}
-{Name}'s {Adjective{!MaybeSameFirstLetter}} {:Type{!MaybeSameFirstLetter}} 
+A {:Prefix} {:Category} on the {33%{:Adjective} }{:Subject}{10%, {:Suffix}}
+A {Field|Pictorial} Guide to the {{Fauna}|{Flora}|{Humanoid}} of the {:Place}{10%, {:Suffix}}
+A {Race} in Shackles: Overcoming the Curse
+An Argument Against {Evocative:Evil}
+Anatomy of the {Fauna}{10%, {:Suffix}}
+Atlas of the {:Place}{10%, {:Suffix}}
+Debauchery and the Church: A Guide to Combining The Two
 Deciphering the Language of {Humanoid}
+Disciplining the Wayward {Child|Pet|{Hireling Type}}
+Diseases  and Their Cures
+Ensignia of the {Humanoid} {Castes|Clans|Tribes}
+Fishing Lures for Every Season
+Heraldric Devices from {Epoch}
+Lineage of the Noble Families of the {Ordinal} Age
+Maps and Floorplans of the City of {Place Name}
+My {Number:TwoToFive} Humans: A {Humanoid:Uncommon}'s Tale.
+Poisons and Their Antidotes
+Prayers to Placate the God{50%dess} of {Religion}
+Preventing {Disease}
+Siege Engines: Construction and Use
+Small Wonder: Rise and Fall of the {Halfling|Gnome|Faery} {King|Queen}
+Tales from the {{Inn Name}|{:Place}}
+The Battle of {Generated Name} and the Fall of {Place Name}
+The Rise and Fall of the {:Adjective} {:Subject}{10%, {:Suffix}}
+The {Adjective} {:Category{!SameFirstLetter}} of {Name{!SameFirstLetter}}
+The {Evocative:Adj} {:Category}{10%, {:Suffix}}
+The {Profession}'s Almanac{10%, {:Suffix}}
+The {Twenty|Thirty}{50%-{Number:Nine}} Useful Parts of the {Monster}
+The {{:Personal}|{50%{:Prefix} }{:Short}} of {20%{Title} }{Name}{20% the {Evocative Title}}
 {:Famous}
 {:Place} Survival, A Beginner's Guide
-Disciplining the Wayward {Child|Pet|{Hireling Type}}
-{Monster}: Myth or Fact?
-{Domain} {:Short} of the {Group Name}
-{Fauna}: A {Chef|Hunter}'s Guide{10%?, {:Suffix}}
-A Guide to Overcoming Your {Phobia}
-The {Profession}'s Almanac{10%?, {:Suffix}}
-{Domain} for Dummies
-Poisons and Their Antidotes
-Diseases  and Their Cures
-{Name}'s {Dictionary|Encyclopedia}
-{Domain}: The {Title Guild}'s Handbook
-{Name}: The {:Adjective} {Comedies|Tragedies}
-Maps and Floorplans of the City of {Place Name}
-Heraldric Devices from {Epoch}
-Ensignia of the {Humanoid} {Castes|Clans|Tribes}
-Lineage of the Noble Families of the {Ordinal} Age
-{:Short} of the {Profession} Guild
 {:Short} of the {Epoch}
-The Battle of {Generated Name} and the Fall of {Place Name}
-{{Monster}+} of the {:Place}
-
-Manners
-Protocol
-
+{:Short} of the {Profession} Guild
+{:Type} of {Domain}{10%, {:Suffix}}
 {Color:Simple} and {Color:Simple{!Different}}
-Black Nights and Red Blood: A History of Lost Harnfell.
-Bleak Happenings: A History of the Mindplague.
-Bridges: The Secrets of their lasting Construction and Maintenence.
-Chants and Prayers to Placate the Sea.
-Debauchery and the Church: A Guide to Combining The Two.
-Filing & Photocopying: Role-Playing in a World of High Technology.map
-Fishing Lures for every Season.
-
-
-books from Harry Potter (Monster Book of Monsters)
-Letters to the Major: A Bordercaptain's Shame.
-Limericks for an Elven Fete.
-My Five Humans: An Ogre's Tale.
-One Bridge Too Many: Last Stand of the Excitran Cavalry.
-Ornamental Dogs and their uses in Modern Cuisine.
-Otyugh and I.
-Popular Dress and Hairstyles of the Second Age.
-Preventing Pox.
-Sewage and Irrigation of the Modern Jail.
-Shields and Bucklers of the Late Devalian Rennaisance.
-Siege Engines and their Construction and Use.
-Small Things and Gnomes.
-Small Wonder: Rise and Fall of the Halfling King.
-The Cat-Gods of Olix.
-The Demonic Tablets of Polemnes
-The Elysian Tome of Akleis
-The Enchiridion of Chaos
-The Encyclopedia Geraximus: Volume Thirty Four Ch-Cz.
-The Flora and Fungi of the Grey Forest.
-The Lost Erotica of the Orcs.
-The Lost Shrine of Amberdown: Found?.
-The Luminous Grimoire of Gimli
-The Teachings of the Great Nordoolus.
-The Thirty-Seven Useful Parts of the Catoblepas.
-The Travels and Travails of Willus and Feng.
+{Domain} for Dummies
+{Domain} {:Short} of the {Group Name}
+{Domain}: The {Title Guild}'s Handbook
+{Evocative:Mean} Happenings: A {:Category} of the {Cataclysm} 
+{Fauna}: A {Chef|Hunter}'s Guide{10%, {:Suffix}}
+{Monster}: Myth or Fact?
+{Name}'s {Adjective{!MaybeSameFirstLetter}} {:Type{!MaybeSameFirstLetter}} 
+{Name}'s {Dictionary|Encyclopedia}
+{Name}: The {:Adjective} {Comedies|Tragedies}
+{Number:TwoToTwelve} {:Short}{10%, {:Suffix}}
+{:Short} for a {Race:Common} {Event}
+{{Monster}+} of the {:Place}
+{{Site:Artificial}+}: Construction and Maintenance.
 
 : Type
 Book
@@ -120,6 +93,7 @@ Ephemeris
 Epic
 Field Guild
 Handbook
+History
 Journal
 Legend
 Log
@@ -141,6 +115,7 @@ Biography
 Diary
 Philosophy
 Scripture
+Teachings
 
 : Short
 Articles
@@ -154,6 +129,7 @@ Fables
 Formulas
 Incantations
 Letters
+Limericks
 Manuscripts
 Maps
 Parchments
@@ -220,3 +196,447 @@ Volume {Number}
 {Place Name} {Biome}
 {Place Name} {Terrain}
 {Region}
+
+===
+
+/ http://random-generator.com/index.php?title=ArcaneBooks
+
+1,“[foo]”[AuthorChance]
+
+;foo
+10,[Intro] [Discipline]
+2,[Gerund] the [AlchemyNoun] of [AbstractSubstance]
+1,[Experiments] [AbstractSubstance]
+1,[Experiments] [ArcaneSubstance]
+
+;Intro
+1,[HumorousIntro]
+1,[IntroAdj]
+1,[IntroAdj] Basis of
+1,[IntroAdj] Concepts of
+1,[IntroAdj] Foundations of
+1,[IntroAdj] Investigations of
+1,[IntroAdj] Manual on
+1,[IntroAdj] Models of
+1,[IntroAdj] Principles of
+1,[IntroAdj] Research on
+1,[IntroAdj] Techniques in
+1,[IntroAdj] Textbook of
+1,[IntroAdj] Theory of
+1,[IntroAdj] Writings Concerning
+1,A Child’s Guide to
+1,An Introduction to
+1,Getting Started with
+1,Guide to
+1,Inquiry into
+1,Learning About
+1,Recent Advances in
+1,Secrets of
+1,Solving Problems with
+
+;HumorousIntro
+1,How to Catch Fish with
+1,How to Lose Digits Fast with
+1,How to Get Chicks with
+1,How to Get Instantly Fired with
+1,How to Pad Your Resume with
+1,How to Sound Smart About
+1,Teaching Your Kids About
+1,The Dumb Goblin’s Guide to
+
+;IntroAdj
+1,Basic
+1,Advanced
+1,Arcane
+1,Alchemical
+1,Secret
+1,Hidden
+1,Thaumaturgical
+1,Comprehensive
+1,Practical
+1,Applied
+1,Mystic
+1,Concise
+1,Precise
+1,Historical
+1,Ancient
+1,Rediscovered
+1,Unknown
+1,Esoteric
+1,Cryptic
+1,Unified
+1,Universal
+1,Compleat
+1,Eldritch
+1,Otherplanar
+1,Unholy
+5,
+
+;Discipline
+15,[AbstractSubstance]
+5,[DivinationType]
+3,[DiscAdj] Energies
+2,[DiscAdj] Symbols
+1,[DiscAdj] Hierarchy
+1,[DiscAdj] Knowledge
+1,[DiscAdj] Mechanics
+1,[DiscAdj] Models
+1,[DiscAdj] Power
+1,[DiscAdj] Runes
+1,[DiscAdj] Structures
+1,[Utility.CreatureTypes] Crossbreeding
+1,[Utility.CreatureTypes] Dissection
+1,[Utility.CreatureTypes] Sentience
+1,Alchemy
+1,Alienistic Magic
+1,Anatomy
+1,Astrology
+1,Astronomy
+1,Binding Rituals
+1,Chirurgery
+1,Chronomancy
+1,Communication with [Utility.CreatureTypes]s
+1,Construct Creation
+1,Cryptology
+1,Demonology
+1,Diabolism
+1,Elementalism
+1,Fetish Magic
+1,Ley Lines
+1,Magical Crossbreeding
+1,Numerology
+1,Occultism
+1,Planar Travel
+1,Potionbrewing
+1,Rune Magic
+1,Sorcery
+1,Spellcasting
+1,Spellcraft
+1,Summoning [Utility.CreatureTypes]s
+1,Thaumaturgy
+1,the Orders of [DiscAdj] Beings
+1,Theurgy
+1,Witchcraft
+1,Wizardry
+
+;DivinationType
+70,[baz]omancy
+4,[biz]ology
+4,[buz]oscopy
+1,Arithmancy
+1,Augury
+1,Chirognomy
+1,Dowsing
+1,Metagnomy
+1,Meteormancy
+1,Moleosophy
+1,Palmistry
+1,Scapulimancy
+1,Tasseography
+1,Tephramancy
+
+;biz
+1,Astr
+1,Graph
+1,Numer
+1,Phren
+
+;buz
+1,Anem
+1,Ceraun
+1,Gel
+1,Metop
+
+;baz
+1,Aer
+1,Alectry
+1,Aleur
+1,Al
+1,Alphit
+1,Anthrop
+1,Apant
+1,Astragal
+1,Astr
+1,Austr
+1,Axi
+1,Bel
+1,Bibli
+1,Botan
+1,Capn
+1,Cart
+1,Catoptr
+1,Causim
+1,Cephal
+1,Cer
+1,Cha
+1,Cheir
+1,Cler
+1,Clid
+1,Comet
+1,Coscin
+1,Crit
+1,Cromni
+1,Crystall
+1,Cycl
+1,Daphn
+1,Demon
+1,Empyr
+1,Ge
+1,Gyr
+1,Hipp
+1,Hydr
+1,Icthy
+1,Lampad
+1,Lecan
+1,Liban
+1,Liter
+1,Lith
+1,My
+1,Myrm
+1,Necr
+1,Neph
+1,Ocul
+1,Oin
+1,Omphal
+1,Oneir
+1,On
+1,Onych
+1,Ophi
+1,Ov
+1,Peg
+1,Phyllorhod
+1,Plastr
+1,Pyr
+1,Rhabd
+1,Rhapsod
+1,Scat
+1,Sci
+1,Sider
+1,Spod
+1,Stich
+1,Stolis
+1,Tar
+1,Tir
+1,Xyl
+
+;DiscAdj
+1,Abyssal
+1,Acidic
+1,Alchemical
+1,Anarchic
+1,Ancient
+1,Aquatic
+1,Arcane
+1,Astral
+1,Astrological
+1,Astronomical
+1,Auran
+1,Axiomatic
+1,Celestial
+1,Chaotic
+1,Chromatic
+1,Chthonic
+1,Demonic
+1,Diabolic
+1,Draconic
+1,Eldritch
+1,Electric
+1,Elemental
+1,Ethereal
+1,Fiendish
+1,Fiery
+1,Fluid
+1,Gaseous
+1,Herbal
+1,Hidden
+1,Ignan
+1,Invisible
+1,Mineral
+1,Necromanic
+1,Organic
+1,Planar
+1,Pyroclastic
+1,Quasi-Elemental
+1,Secret
+1,Stygian
+1,Telluric
+1,Terran
+1,Thermal
+1,Umbral
+1,Unseen
+
+;Experiments
+1,Experiments with
+1,Research on
+1,Analysis of
+1,Uses for
+1,Magnifying [Wizard schools.mainCap] Spells with
+1,A Theory on the Nature of
+1,Rethinking the [AlchemyNoun] of
+
+;AlchemyNoun
+1,Basis
+1,Distillate
+1,Essence
+1,Vapor
+1,Form
+1,Foundation
+1,Nature
+1,Quintessence
+1,State
+1,Secrets
+1,Spirit
+1,Spirits
+1,Titration
+1,Uses
+10,[AlchemyAdjective] [AlchemyNoun]
+
+;AlchemyAdjective
+1,Hidden
+1,Natural
+1,Arcane
+1,Ancient
+1,Alchemical
+1,Pure
+1,Mystical
+1,Elemental
+1,Secret
+1,Unusual
+
+;Gerund
+1,Isolating
+1,Determining
+1,Divulging
+1,Extracting
+1,Purifying
+1,Distilling
+1,Uncovering
+1,Discovering
+1,Revealing
+1,Synthesizing
+1,Finding
+1,In Search of
+1,Unlocking
+1,Analyzing
+1,Examining
+1,Examining the Origins of
+1,Understanding
+9,[Experiments]
+
+;AbstractSubstance
+1,the Element of {{ucfirst:[Elements.all]}}
+1,{{ucfirst:[Wizard schools.main]}} Magic
+
+;ArcaneSubstance
+1,[Arcane Substance.main]
+
+;AuthorChance
+1,
+2,, by [ArcaneAuthor]
+
+;aa
+1,[Fantasy Names.MaleFirstName]
+
+;ArcaneAuthor
+1,[aa] the [ArcaneProfession]
+1,[aa] the [Honorific]
+1,[aa], [ArcaneProfession] [ArcaneRank]
+1,[aa], [Secret Society Title.main]
+1,[aa], the [Secret Society Title.TitleDescriptor] [ArcaneProfession]
+
+;Honorific
+1,Magnificent
+1,Powerful
+1,Great
+1,Dark
+1,White
+1,Grey
+1,Black
+1,Red
+1,Forbidden
+10,[Secret Society Title.TitleDescriptor]
+
+;ArcaneProfession
+5,Alchemist
+5,Arcanist
+5,Mage
+5,Spellcaster
+5,Wizard
+3,Enchanter
+3,Magician
+3,Magus
+3,Sorcerer
+3,Warlock
+2,Artificer
+2,Druid
+1,Conjurer
+1,Diviner
+1,Effigy master
+1,Evoker
+1,Illusionist
+1,Necromancer
+1,Spell Crafter
+1,Transmuter
+1,Wu Jen
+
+;ArcaneRank
+8,of the [ar]th Circle
+10,of the [Secret Society Title.NounDescriptor] [Secret Society Title.Noun]
+
+;ar
+1,Fif
+1,Six
+1,Seven
+1,Eigh
+1,Nin
+1,Ten
+1,Eleven
+1,Twelf
+
+</sgtable>
+
+Orig. by Dave Younce
+
+==Subtables==
+<!-- updated 2014-10-28 -->
+{{Fold|
+{{Cols|4|
+* AbstractSubstance
+* AlchemyAdjective
+* AlchemyNoun
+* ArcaneAuthor
+* ArcaneProfession
+* ArcaneRank
+* ArcaneSubstance
+* AuthorChance
+* DiscAdj
+* Discipline
+* DivinationType
+* Experiments
+* Gerund
+* Honorific
+* HumorousIntro
+* Intro
+* IntroAdj
+* main
+* also: foo, baz, biz, buz, aa, ar
+}}
+
+===
+
+Letters to the Major: A Bordercaptain's Shame.
+One Bridge Too Many: Last Stand of the Excitran Cavalry.
+Ornamental Dogs and their uses in Modern Cuisine.
+Otyugh and I.
+Popular Dress and Hairstyles of the Second Age.
+Sewage and Irrigation of the Modern Jail.
+Shields and Bucklers of the Late Devalian Rennaisance.
+The Cat-Gods of Olix.
+The Demonic Tablets of Polemnes
+The Elysian Tome of Akleis
+The Enchiridion of Chaos
+The Encyclopedia Geraximus: Volume Thirty Four Ch-Cz.
+The Flora and Fungi of the Grey Forest.
+The Lost Erotica of the Orcs.
+The Lost Shrine of Amberdown: Found?.
+The Travels and Travails of Willus and Feng.

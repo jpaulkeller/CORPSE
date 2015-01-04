@@ -4,10 +4,12 @@
 .Mount           Carry   Speed   Max    Distance/day     Diet
 
 : Mount
+destrier
+donkey
 horse
 mule
-donkey
 pony
+warhorse
 
 : Special
 androsphinx
@@ -71,20 +73,20 @@ Sandstorm
 
 Ashworm: The poison stingers of most domesticated ashworms are clipped.
 A tamed ashworm is suitable as a mount for a Medium humanoid. However, the rider must succeed on a DC 15 Ride check once every 24 hours if in a sandy environment or be swept off the back of the ashworm as it dives below the surface for 1d4 rounds before returning to its rider.
-An ashworm is hard to control in combat (see Mounted Combat, page 157 of the Player’s Handbook) unless it belongs to an ashworm dragoon (see page 66).
-An ashworm mount requires an exotic saddle, benefits from stabling, can wear custom barding (specially constructed, adding an additional 50% to the price), and requires feed like a normal mount (see Mounts and Related Gear, page 131 of the Player’s Handbook).
+An ashworm is hard to control in combat (see Mounted Combat, page 157 of the Playerï¿½s Handbook) unless it belongs to an ashworm dragoon (see page 66).
+An ashworm mount requires an exotic saddle, benefits from stabling, can wear custom barding (specially constructed, adding an additional 50% to the price), and requires feed like a normal mount (see Mounts and Related Gear, page 131 of the Playerï¿½s Handbook).
 
-Camel: The camel is the most common mount in the waste. A camel is appropriate as a mount for a Medium humanoid creature. Dromedary and two-humped camels are hard to control in combat (see Mounted Combat, page 157 of the Player’s Handbook), while war camels can be ridden into battle easily. Camels benefi t from stabling, can wear barding, and require feed like normal mounts (see Mounts and Related Gear, page 131 of the Player’s Handbook).
-Dust Twister: Using a dust twister (described on page 162) as a mount is something only the very rich, eccentric, or the magically gifted normally consider.  A tamed dust twister is suitable as a mount for a Medium or Large humanoid-shaped creature. Dust twisters are hard to control in combat (see Mounted Combat, page 157 of the Player’s Handbook). While riding, you appear to be held aloft in the center of the twister some 5 feet off the  ground as the dust twister races across the sand. However, you must succeed on a DC 15 Ride check once per day or be flung from the calm eye of the dust twister, taking 1d6 points of damage. A dust twister requires no saddle or stable, cannot wear barding, and does not require feed like a normal mount.
+Camel: The camel is the most common mount in the waste. A camel is appropriate as a mount for a Medium humanoid creature. Dromedary and two-humped camels are hard to control in combat (see Mounted Combat, page 157 of the Playerï¿½s Handbook), while war camels can be ridden into battle easily. Camels benefi t from stabling, can wear barding, and require feed like normal mounts (see Mounts and Related Gear, page 131 of the Playerï¿½s Handbook).
+Dust Twister: Using a dust twister (described on page 162) as a mount is something only the very rich, eccentric, or the magically gifted normally consider.  A tamed dust twister is suitable as a mount for a Medium or Large humanoid-shaped creature. Dust twisters are hard to control in combat (see Mounted Combat, page 157 of the Playerï¿½s Handbook). While riding, you appear to be held aloft in the center of the twister some 5 feet off the  ground as the dust twister races across the sand. However, you must succeed on a DC 15 Ride check once per day or be flung from the calm eye of the dust twister, taking 1d6 points of damage. A dust twister requires no saddle or stable, cannot wear barding, and does not require feed like a normal mount.
 
 Frostburn
 
 GLYPTODON
 Large Animal
 Hit Dice: 10d8+33 (72 hp)
-Initiative: –1
+Initiative: ï¿½1
 Speed: 20 ft. (4 squares), burrow 5 ft.
-Armor Class: 18 (–1 size, –1 Dex, +10 natural), touch 8,
+Armor Class: 18 (ï¿½1 size, ï¿½1 Dex, +10 natural), touch 8,
 fl at-footed 18
 Base Attack/Grapple: +7/+16
 Attack: Tail +11 melee (2d6+5/3)
@@ -100,19 +102,19 @@ Skills: Listen +8, Spot +8, Swim +8
 Feats: Alertness, Improved Natural Attack (tail), Power
 Attack, Toughness
 Environment: Cold plains
-Organization: Solitary, pair, colony (3–4), or herd (6–20)
+Organization: Solitary, pair, colony (3ï¿½4), or herd (6ï¿½20)
 Challenge Rating: 5
 Treasure: None
 Alignment: Always neutral
-Advancement: 11–15 HD (Large); 16–30 HD (Huge)
-Level Adjustment: —
+Advancement: 11ï¿½15 HD (Large); 16ï¿½30 HD (Huge)
+Level Adjustment: ï¿½
 This odd creature is the size of a draft horse, but its body is low
 to the ground and covered by a thick armor of leathery bands.
 A tail ending in a heavy spiked club of bone trails behind its
 dome-shaped body.
-Glyptodon (literally, “carved tooth”)
+Glyptodon (literally, ï¿½carved toothï¿½)
 is an enormous armadillo like
-creature—if an armadillo were
+creatureï¿½if an armadillo were
 the size of a small wagon. It has
 a short snout and powerful
 jaws, with no teeth in the
@@ -149,7 +151,7 @@ Trample (Ex): As a full-round action, a glyptodon can
 move up to twice its speed and literally run over Medium
 or smaller creatures. This attack deals 1d6+7 points of damage.
 Trampled opponents can make attacks of opportunity against the glyptodon at a
-–4 penalty. If they do not make
+ï¿½4 penalty. If they do not make
 attacks of opportunity, trampled
 opponents can attempt a DC 20 Refl ex
 save for half damage. The save DC is
@@ -174,8 +176,8 @@ while carrying a rider, but the rider cannot
 also attack unless he or she succeeds on a
 Ride check.
 Carrying Capacity: A light load for a glyptodon is
-up to 400 pounds; a medium load, 401–800 pounds; and
-a heavy load, 801–1,200 pounds. A glyptodon can drag
+up to 400 pounds; a medium load, 401ï¿½800 pounds; and
+a heavy load, 801ï¿½1,200 pounds. A glyptodon can drag
 6,000 pounds.
 
 MEGALOCEROS
@@ -183,7 +185,7 @@ Large Animal
 Hit Dice: 6d8+18 (45 hp)
 Initiative: +1
 Speed: 40 ft. (8 squares)
-Armor Class: 14 (–1 size, +1 Dex, +4 natural), touch 10,
+Armor Class: 14 (ï¿½1 size, +1 Dex, +4 natural), touch 10,
 fl at-footed 13
 Base Attack/Grapple: +4/+13
 Attack: Gore +8 melee (1d8+7)
@@ -196,22 +198,22 @@ Abilities: Str 20, Dex 12, Con 16, Int 2, Wis 11, Cha 8
 Skills: Listen +7, Spot +6
 Feats: Alertness, Endurance, Run
 Environment: Cold marshes
-Organization: Solitary or herd (6–20)
+Organization: Solitary or herd (6ï¿½20)
 Challenge Rating: 4
 Treasure: None
 Alignment: Always neutral
-Advancement: 7–12 HD (Large); 13–18 HD (Huge)
-Level Adjustment:—
+Advancement: 7ï¿½12 HD (Large); 13ï¿½18 HD (Huge)
+Level Adjustment:ï¿½
 This large elklike creature has shaggy fur and a huge set of antlers
 easily 10 feet across.
 The megaloceros is a large, powerful deer, standing up to
 7 feet tall at the shoulder with 100-pound antlers spanning
 12 feet. It favors lakes and bogs, and can be trained
-to serve as a mount. The creatures’ enormous antlered
+to serve as a mount. The creaturesï¿½ enormous antlered
 skulls are popular decorations for castles and hunting
 lodges. These beasts also serve as powerful totem animals
 for neanderthals and snow goblins, who call the animals
-“Great Snow Elk.”
+ï¿½Great Snow Elk.ï¿½
 Combat
 Megaloceroses prefer to avoid combat, except during
 mating season, when males are extremely aggressive and
@@ -242,7 +244,7 @@ its foe when it tries to toss the victim.
 The megaloceros does not need to move
 with its foe in order to throw its foe
 more than 5 feet. If the tossed victim
-beats the megaloceros’s Strength
+beats the megalocerosï¿½s Strength
 check, he remains in his current
 square with no ill effects and is
 not grappled any longer. Tossed
@@ -266,8 +268,8 @@ requires an exotic saddle. A megaloceros can fi ght while
 carrying a rider, but the rider cannot also attack unless he
 or she succeeds on a Ride check.
 Carrying Capacity: A light load for a megaloceros is
-up to 400 pounds; a medium load, 401–800 pounds; and
-a heavy load, 801–1,200 pounds. A megaloceros can drag
+up to 400 pounds; a medium load, 401ï¿½800 pounds; and
+a heavy load, 801ï¿½1,200 pounds. A megaloceros can drag
 6,000 pounds.
 
 WOOLLY MAMMOTH
@@ -275,7 +277,7 @@ Huge Animal
 Hit Dice: 14d8+98 (161 hp)
 Initiative: +0
 Speed: 40 ft. (8 squares)
-Armor Class: 17 (–2 size, –1 Dex, +10 natural), touch 7,
+Armor Class: 17 (ï¿½2 size, ï¿½1 Dex, +10 natural), touch 7,
 fl at-footed 17
 Base Attack/Grapple: +10/+30
 Attack: Gore +20 melee (2d10+18)
@@ -290,12 +292,12 @@ Skills: Listen +12, Spot +11
 Feats: Alertness, Endurance, Improved Bull Rush, Multiattack,
 Power Attack
 Environment: Cold plains
-Organization: Solitary or herd (4–16)
+Organization: Solitary or herd (4ï¿½16)
 Challenge Rating: 9
 Treasure: None
 Alignment: Always neutral
-Advancement: 15–20 HD (Huge); 21–28 HD (Gargantuan)
-Level Adjustment:—
+Advancement: 15ï¿½20 HD (Huge); 21ï¿½28 HD (Gargantuan)
+Level Adjustment:ï¿½
 Covered in brown, shaggy fur, this elephantlike creature has two
 huge, curving tusks and towers almost 15 feet tall.
 Woolly mammoths are members of a family of many
@@ -304,7 +306,7 @@ with surprising intelligence, large tusks, and a love of cold
 climates. The largest woolly mammoths live on the open
 steppes, where their sheer size protects them from most
 predators. The only exceptions are intelligent humanoids,
-such as humans, neanderthals, and orcs—and even these are
+such as humans, neanderthals, and orcsï¿½and even these are
 often reluctant to face down a woolly mammoth directly.
 The woolly mammoth has a shoulder height of about 15
 feet, weighs between 9 and 11 tons, and has tusks roughly
@@ -316,7 +318,7 @@ animals in woolly mammoth herds.
 Woolly mammoths often venerate
 the bones of their dead, and
 after any combat they return to
-the site of a herd member’s death.
+the site of a herd memberï¿½s death.
 In some cases, the woolly mammoths
 handle the bones of the dead years after the death of a mate, sibling, or child. Frost
 folk and others believe that this is how woolly mammoths
@@ -341,7 +343,7 @@ er), except that there is no attack of opportunity, since the
 woolly mammoth has already grabbed its foe when it tries
 to toss the victim. The woolly mammoth does not need to
 move with its foe in order to throw its foe more than 5 feet.
-If the tossed victim beats the woolly mammoth’s bull rush
+If the tossed victim beats the woolly mammothï¿½s bull rush
 check, he remains in his current square with no ill effects
 and is not grappled any longer. Tossed victims take impact
 damage on landing as if they had fallen a distance equal to
@@ -350,7 +352,7 @@ Trample (Ex): As a full-round action, a woolly mammoth
 can move up to twice its speed and literally run over Large
 or smaller creatures. This attack deals 2d8+18 points of
 damage. Trampled opponents can make attacks of opportunity
-against the woolly mammoth at a –4 penalty. If they do
+against the woolly mammoth at a ï¿½4 penalty. If they do
 not make attacks of opportunity, trampled opponents can
 attempt DC 29 Refl ex saves for half damage. The save DC is
 Strength-based.
@@ -371,8 +373,8 @@ and its thick hide. A woolly mammoth can fi ght while carrying
 a rider, but the rider cannot also attack except with
 a lance or a missile weapon.
 Carrying Capacity: A light load for a woolly mammoth
-is up to 5,592 pounds; a medium load, 5,593–11,184 pounds;
-and a heavy load, 11,185–16,776 pounds. A woolly mammoth
+is up to 5,592 pounds; a medium load, 5,593ï¿½11,184 pounds;
+and a heavy load, 11,185ï¿½16,776 pounds. A woolly mammoth
 can drag 40 tons.
 
 

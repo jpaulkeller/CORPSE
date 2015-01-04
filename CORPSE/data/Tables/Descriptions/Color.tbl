@@ -1,0 +1,235 @@
+: Basic = Black + Blue + Brown + Green + Red + Violet + White + Yellow
+: Simple = Common + Basic
+: Color = Common + Basic + Light + Dark + Fancy + Metallic + Special + Example
+
+: Common
+black
+blue
+brown
+green
+grey
+purple
+red
+white
+yellow
+
+: Black
+black
+charcoal-grey
+ebony
+grey
+ink-black
+jet
+pitch-black
+raven
+sable
+shadowy-grey
+smokey-grey
+sooty-black
+
+: Blue
+aqua
+aquamarine
+azure
+blue
+cerulean
+cornflower-blue
+cyan
+marine
+navy-blue
+periwinkle-blue
+royal-blue
+sapphire
+sky-blue
+slate-blue
+teal
+turquoise
+
+: Brown
+almond
+auburn
+beige
+brown
+burnt sienna
+burnt umber
+chocolate
+cream
+ecru
+fallow
+flax-colored
+khaki
+mahogany
+ochre
+sepia
+sienna
+tan
+taupe
+
+: Green
+chartreuse
+emerald-green
+forest-green
+green
+juniper-green
+lime-green
+olive-green
+pea-green
+sage-green
+sea-green
+verdant
+viridian
+
+: Red
+auburn
+blood-red
+blush
+brick-red
+cardinal
+carmine
+cherry-red
+coral
+crimson
+flame-red
+fuchsia
+gules
+garnet-colored
+magenta
+maroon
+orange
+peach
+red
+rose
+ruby-red
+pink
+puce
+russet
+salmon
+sanguine
+scarlet
+sienna
+terra cotta
+vermilion
+wine-colored
+
+: Violet
+indigo
+lavender
+lilac
+maroon
+mauve
+orchid
+plum
+purple
+violet
+
+: White
+alabaster
+bone
+chalky
+cream
+dove
+ivory
+mahogany
+milky
+pale
+pearl
+porcelain
+snow-white
+white
+
+: Yellow
+amber
+apricot
+blond
+buff
+canary-yellow
+ecru
+fallow
+flaxen
+golden
+honey-colored
+lemon-yellow
+mustard-yellow
+sandy
+saffron
+straw
+tawny
+yellow
+wheat
+
+: Light
+{light|pale} {:blue}
+{light|pale} {:green}
+{light|pale} {:red}
+{:white}
+{:yellow}
+
+: Dark
+{dark|deep} {:blue}
+{dark|deep} {:green}
+{dark|deep} {:red}
+{dark|deep} {:brown}
+{:black}
+{:violet}
+
+: Natural
+almond
+brown
+fallow
+forest-green
+green
+sea-green
+
+: Drab
+beige
+black
+brown
+grey
+tan
+
+: Metallic
++ {metal}-colored
+brassy
+coppery
+golden
+metallic
+rusty
+silvery
+steely
+
+: Sheen
+antique
+bright
+dark
+deep
+dull
+glistening
+glittering
+glossy
+glowing
+iridescent
+light
+lustrous
+polished
+shimmering
+shiny
+sparkly
+translucent
+velvety
+vibrant
+
+: Fancy
+{:metallic}
+{gem{!oneword}}-colored
+{:sheen} {:basic}
+
+: Special
+rainbow-hued
+{:simple} with {specks|swirls|flakes|hints|patches|streaks|stripes} of {:simple{!different}}
+{:simple} with {:simple{!different}} {highlights|spots}
+{75%{mottled|a blend of|shifting|dappled} }{:simple} and {:simple{!different}}
+
+: Example
+color of a robin's egg
+color of frost
+color of smoke

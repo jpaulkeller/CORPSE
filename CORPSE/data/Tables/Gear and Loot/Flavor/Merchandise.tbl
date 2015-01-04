@@ -27,7 +27,7 @@ general             services
 general             shoes
 general             spell components
 general             spices
-general             transporation
+general             transportation
 general             wine
 
 : Arms
@@ -50,15 +50,15 @@ jewelery             {jewelery}
 footware             {~{shoe}}
 
 : Consumable
-meal                 {menu}
-food                 {nuts}
-food                 {~{provisions}}
-food                 {salad ingredient}
-spice                {spice}
-food                 {berry}
-food                 {{fruit}+}
-food                 {{vegetable}+}
 drink                {menu:drink}
+food                 {berry}
+food                 {salad:ingredient}
+food                 {{fruit}+}
+food                 {{nut}+}
+food                 {{vegetable}+}
+food                 {~{provisions}}
+meal                 {menu}
+spice                {spice}
 
 : Furnishings
 furnishing           {~{furnishing}}
@@ -106,7 +106,7 @@ mount                {mount}
 pet                  {pet}
 
 : Property
-property             {site;artificial}
+property             {site:artificial}
 property             {city site}
 property             {mine}
 

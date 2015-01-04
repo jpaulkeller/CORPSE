@@ -1,3 +1,6 @@
+.Type [([^:]+?): (?:.+)]
+.Item [(?:[^:]+?): (.+)]
+
 Accessory: {~{accessory}}
 Ammo: {~{ammo}}
 Armor: {~{armor}}

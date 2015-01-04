@@ -1,11 +1,16 @@
-* http://heraldry.sca.org/armory/primer/index.html
-* http://www.puncher.co.uk/gen_herald.php
-* http://www.fantasyshields.com/
+<html>
+<body>
 
-* Generate a random name.
-* Ask the user for a name, using the random one as a default.
-* Assign the entered name to "NPC" for re-use later.
-* Randomize using the name as the seed, for consistent results.
+<!-- 
+/ http://heraldry.sca.org/armory/primer/index.html
+/ http://www.puncher.co.uk/gen_herald.php
+/ http://www.fantasyshields.com/
+
+/ Generate a random name.
+/ Ask the user for a name, using the random one as a default.
+/ Assign the entered name to "NPC" for re-use later.
+/ Randomize using the name as the seed, for consistent results.
+-->
 # {NPC={NPC Name?{Name}}}
 
 {METAL={Tincture:Metal}}
@@ -33,3 +38,6 @@
 .chief|{party|tierced} per {division}
 
 .pary per fess, in chief per pale
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+: Salad
+{:main}{75% {dressed|tossed} with {:ingredient}{50% and {:ingredient{!different}}}}
+
+: Main
+cabbage
+field greens
+greens
+mixed greens
+seasonal greens
+shredded greens
+spinach
+
+: Ingredient
+beans
+chicken
+crumbled cheese
+cucumbers
+fish eggs
+honey{20%comb}
+mushrooms
+onions
+potatoes
+red fennel
+tomatoes
+{diced|sliced} {vegetable}
+{roasted |salted |candied |}{{nut}+}
+{{berry}+}
+{{fruit}+}

@@ -38,6 +38,10 @@ public final class Constants
    static final Pattern SIMPLE_TABLE = Pattern.compile(TABLE_NAME, Pattern.CASE_INSENSITIVE);
    static final Pattern TOKEN = Pattern.compile("\\{([^{}]+)\\}");
 
+   // all-or-nothing percent : {50%yes}
+   static final Pattern PERCENT_CHANCE = Pattern.compile("\\{(\\d+)%([^}]+)\\}");
+
+   // if/else conditions:
    // [10/90] CONDITION (using % operator) : {10%?Rare:Common}
    static final Pattern PERCENT_CONDITION = Pattern.compile("\\{(\\d+)%[?]([^:]+)(?::([^:{}]+))?\\}");
    

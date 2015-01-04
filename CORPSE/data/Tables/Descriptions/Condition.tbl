@@ -1,4 +1,4 @@
-broken beyond repair
+damaged beyond repair
 damaged
 repaired
 heavily worn
@@ -9,3 +9,19 @@ excellent
 pristine
 
 : Condition {6, 9}
+
+: Clothing
+durable
+lined
+mildewed
+mended
+new
+patched
+reinforced
+rugged
+stained
+tailored
+threadbare
+torn
+worn
+{ill|loose|well}-fitting

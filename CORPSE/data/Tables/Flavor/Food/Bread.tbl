@@ -1,0 +1,52 @@
+: Bread
+{crusty |dark |fresh |soft |}{:type}{ and butter| with {:spread}|}
+{:side}
+
+: Type
+baguettes
+barley bread
+black bread
+bread
+peasant bread
+rolls
+rye bread
+seed bread
+sourdough bread
+wheat bread
+{number:twotofive}-grain bread
+{{fruit}|{nut}|{fruit} and {nut}} bread
+
+: Side
+cornbread
+crackers
+crescent rolls
+croissants
+dumplings
+flatbread
+foccacia
+frybread
+muffins
+oatmeal bread
+pancakes
+pita bread
+sweet bread
+toast
+unleavened bread
+{50%{{fruit}|{nut}|{fruit} and {nut}} }muffins
+{50%{{fruit}|{nut}|{fruit} and {nut}} }pancakes
+{75%{nut} }scones
+{menu:sweetener} bread
+{{fruit} |{nut} |{meat} |}biscuits
+
+: Spread
+butter
+fresh-churned butter
+fresh-ground {nut} butter
+herb butter
+melted cheese
+{menu:sweetener} butter
+{spice} butter
+{{fruit}|{berry}} butter
+{{fruit}|{berry}} jam
+{{fruit}|{berry}} jelly
+{{fruit}|{berry}} marmalade

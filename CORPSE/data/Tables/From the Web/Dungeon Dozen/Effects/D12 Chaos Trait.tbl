@@ -1,5 +1,5 @@
 : D12 Chaos Trait
-{:subtle}{25%?; {:obvious}}{5%?; {:extreme}}
+{:subtle}{25%; {:obvious}}{5%; {:extreme}}
 
 : Subtle
 / http://roll1d12.blogspot.com/2012/11/marks-of-chaos-1-subtle.html

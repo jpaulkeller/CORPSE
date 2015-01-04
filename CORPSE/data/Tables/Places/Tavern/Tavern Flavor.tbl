@@ -9,13 +9,14 @@ large firepit in the center of the common room
 local gossip
 particularly {25%?awful:tasty} {menu:main}
 quality of its menu
-quiet atmosphere
+{quiet|romantic} atmosphere
+secluded alcoves for discreet affairs
 strange noises coming from the {attic|cellar}
 talented {storytellers|minstrels|bards|performers|players}
 unusually spacious rooms
 variety of its beers and ales
-{20%?un}friendly ghost which wanders around {cellar|attic|halls|rooms|kitchen} after dark
-{30%?un}comfortable beds
+{20%un}friendly ghost which wanders around {cellar|attic|halls|rooms|kitchen} after dark
+{30%un}comfortable beds
 {appearance} courtesans
 {erotic|exotic} entertainment
 {excellent|lack of} security

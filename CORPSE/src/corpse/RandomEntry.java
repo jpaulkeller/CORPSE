@@ -50,7 +50,7 @@ public final class RandomEntry
 
    public static String get(final String tableName, final String subName, String colName, final String filter)
    {
-      // System.out.println("RandomEntry.get: T[" + tableName + "] S[" + subName + "] C[" + colName + "] F[" + filter + "]");
+      System.out.println("RandomEntry.get: T[" + tableName + "] S[" + subName + "] C[" + colName + "] F[" + filter + "]");
       String entry = null;
 
       Table table = Table.getTable(tableName);
@@ -77,10 +77,7 @@ public final class RandomEntry
             if (subName != null)
                token += Constants.SUBSET_CHAR + subName;
             if (colName != null)
-            {
                token += Constants.COLUMN_CHAR + colName;
-               colName = null; // don't want to apply it twice
-            }
             if (filter != null)
                token += Constants.FILTER_CHAR + filter + Constants.FILTER_CHAR;
             token += "}";
@@ -90,7 +87,10 @@ public final class RandomEntry
                filteredTable = new SubTable(token); // resolve the table before rolling a value
 
             if (filteredTable.size() > 0) // if no filtered entries match, just use the normal table?
+            {
                table = filteredTable;
+               colName = null; // don't want to apply it twice
+            }
          }
 
          try

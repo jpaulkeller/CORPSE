@@ -1,6 +1,6 @@
 : Town Name
-{20%?{:Prefix} }{Generated Name}{25%?{:suffix}}{20%? {:Postfix}}
-{15%?{:Prefix} }{Generated Name}{10%?{:suffix}}{10%? {:join} {50%?{:Postfix}:{Generated Name}}}
+{20%{:Prefix} }{Generated Name}{25%{:suffix}}{20% {:Postfix}}
+{15%{:Prefix} }{Generated Name}{10%{:suffix}}{10% {:join} {50%?{:Postfix}:{Generated Name}}}
 
 : Prefix
 east
@@ -40,6 +40,7 @@ side
 ton
 ville
 wick
+wold
 wood
 worth
 

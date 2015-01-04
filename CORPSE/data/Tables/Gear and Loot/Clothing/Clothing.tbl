@@ -27,6 +27,7 @@ cloth, silk          10 gp/sy  0.5/sy
 cloth, velvet         4 gp/sy  1/sy
 cloth, wool           8 bp/sy  2/sy
 dress                 9 cp+    4
+eyepatch
 fur trimming         10 gp+   
 girdle, broad         3 gp     1
 girdle, normal        2 gp     0.5
@@ -41,7 +42,9 @@ jacket, silk         80 gp     1
 jerkin                1 gp     7.5
 knife sheath          3 cp     0.5
 loincloth             1 cp     0.5
+mask
 mittens               3 sp     0.5
+pantaloons
 robe, poor            6 cp     5
 robe, common          9 sp     5
 robe, embroidered    20 gp     5
@@ -49,6 +52,8 @@ sandals               5 cp     1
 sash                  1 gp     0.5
 shirt/blouse          4 cp+    1
 shoes                 1 gp     1
+skirt
+slippers
 surcoat               6 sp     1
 tabard                6 sp     1
 toga, coarse          8 cp     1
@@ -56,3 +61,4 @@ trouser/skirt         3 cp+    1
 tunic                 8 sp     1
 vest, cloth           1 gp     1
 vest, fur           100 gp+    1.5
+vestments

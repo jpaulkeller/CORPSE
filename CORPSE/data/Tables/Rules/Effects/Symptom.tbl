@@ -57,6 +57,7 @@ itchiness;-{6} to char if seen, no move silently or hide, 50% chance of spell mi
 itching rashes
 joint aches;-1 to hit, movement slowed to half
 loss of coordination
+loss of feeling in {{right|left} {hand|foot}|both {hands|feet}}
 memory loss
 moderate pain 
 moodiness
@@ -77,7 +78,7 @@ rash;-{6} to charisma depending on context
 rashes
 red spots
 seizures;-{6} to char if seen, occur on specific # roll, unable to act for {6} rounds
-sensory loss;{33%?hearing}{33%? sight} {33%? touch} {33%? taste} {33%? smell} for {2d6}{duration:short}
+sensory loss;{33% hearing}{33% sight} {33% touch} {33% taste} {33% smell} for {2d6}{duration:short}
 shortness of breath
 skin sores
 slowed reaction times 

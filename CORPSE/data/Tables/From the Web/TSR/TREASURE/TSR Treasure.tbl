@@ -6,7 +6,7 @@
 36-40  Ring of {TSR Ring}
 41-41  {30-42}" {TSR Material} Rod of {TSR Rod} ({#/{41-50}} charges)
 42-42  {5-6}' {Wood} Staff {TSR Staff} ({#/{20-25}} charges)
-43-45  {TSR Material:Wand} {wand:mix} {made of} Wand of {TSR Wand} ({#/{81-100}} charges) {1%?Trapped!}
+43-45  {TSR Material:Wand} {wand:mix} {made of} Wand of {TSR Wand} ({#/{81-100}} charges) {1%Trapped!}
 46-46  {TSR Tome}
 47-48  {TSR Amulet}
 49-50  {TSR Cloak}
