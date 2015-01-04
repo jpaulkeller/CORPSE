@@ -32,9 +32,26 @@ stout
 tall
 trim 
 
-: Simile
-a pea
-an acorn
-a coin
-a walnut
-{an apple|a sparrow}
+: Simile Small
+pea
+acorn
+coin
+walnut
+apple
+sparrow
+
+: Simile Medium
+brick
+plate
+pitcher
+bucket
+
+: Simile Large
+dog
+barrel
+donkey
+horse
+ox
+
+: Simile = Simile Small + Simile Medium + Simile Large
+ 

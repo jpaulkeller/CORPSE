@@ -3,12 +3,12 @@
 
 .Trap              CR   Cost   Type                Effect
    
-Alarm                                              An alarm brings many hostile creatures in {2d6} {duration:brief}.  {50%?In addition a net drops, trapping anyone who fails to get out of the way.}
+Alarm                                              An alarm brings many hostile creatures in {2d6} {duration:brief}.  {50%In addition a net drops, trapping anyone who fails to get out of the way.}
 Ambush                                             A door slides open, revealing a hidden alcove which contains an unliving guardian (if the GM uses the tables in the Creatures section, count this creature as an Animate).
 Anti-magic                                         An anti-magic field may cause magic items to temporarily or permanently lose their properties. Magic creatures, and living magic items, will suffer damage or be destroyed, but will also be likely to sense the field from far away.
 Gas                                                A cloud of gas is released: {D12 Dungeon Fog}
 Ice                                                The area magically becomes arctic: the walls and floor turn to slippery ice, and the temperature drops. Characters may fall and/or suffer damage from the severe cold. Many of the dungeon's inhabitants may return to their lairs until the effect passes. Duration: {2d3} {duration:moderate}
-Projectile                                         Projectiles are released from a hidden mechanism in the wall {33%?{poison }{arrows|daggers|spears|darts}.
+Projectile                                         Projectiles are released from a hidden mechanism in the wall {33%poison }{arrows|daggers|spears|darts}.
 Ramp                                               One or two people fall 1 level, taking damage as appropriate, due to a {collapsing floor|hidden trapdoor|magically disappearing section of floor}.
 Rock fall                                          Rocks fall {ahead of|behind} the party. It will take {2d4} hours to clear the obstacle (divided by the number of people working).
 Smoke                                              Smoke rises from the floor, obscuring the heroes' vision. {50%?{D12 DUNGEON FOG}:The smoke has no other bad effect.}

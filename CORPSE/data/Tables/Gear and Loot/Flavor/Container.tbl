@@ -60,7 +60,7 @@ mug
 tankard
 
 : Potions
-{33%?{:description} }{:potion container}{33%? {:decoration}}
+{33%{:description} }{:potion container}{33% {:decoration}}
 
 : Potion Container
 alembic

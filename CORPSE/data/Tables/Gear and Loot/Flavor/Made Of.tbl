@@ -15,7 +15,19 @@
 5 {Man Made}
 
 : Fabric
-1 {Fabric}
+{Fabric}
+
+: Precious
+{Metal:Precious}
+amber
+bone
+coral
+crystal
+ivory
+jade
+jasper
+turquoise
+shell
 
 : Natural = Geology + Wood
 : Hard = Geology + Wood + ManMade

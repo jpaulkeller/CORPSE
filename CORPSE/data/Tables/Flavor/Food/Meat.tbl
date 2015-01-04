@@ -1,0 +1,90 @@
+: Meat
+bacon
+beef
+frog's legs
+ham 
+mutton
+pork
+veal
+venison
+{25%{leg|rack} of }lamb
+{:game} sausage
+{:large animal{20% exotic}} {:large animal part}
+
+: Game
+{:{small|large} animal{20% exotic}}
+
+: Small Animal
+coney
+frog
+goat
+lamb
+rabbit
+hare
+
+: Small Animal Exotic
+badger
+beaver
+bobcat
+coyote
+groundhog
+lizard
+lynx
+mouse
+muskrat
+porcupine
+raccoon
+seal
+snails
+turtle
+wolf
+
+: Large Animal
+beef
+boar
+ox
+sheep 
+
+: Large Animal Exotic
+alligator
+antelope
+bear
+caribou
+donkey
+elk 
+horse
+moose
+mule
+musk ox
+reindeer
+walrus
+whale
+
+: Large Animal Part
+heart
+liver
+ribs
+tail
+tenderloin
+tongue
+
+: Fowl
+capon
+chicken
+duck
+game hen
+goose
+grouse
+partridge
+pheasant
+pigeon
+quail
+turkey
+woodcock
+
+: Fowl Exotic
+dove
+hawk
+heron
+pea{cock|hen}
+swan

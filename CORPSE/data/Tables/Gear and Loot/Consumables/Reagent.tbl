@@ -2,25 +2,25 @@
 
 powdered {metal}
 {:misc}
-{berry}{20%? juice}{10%? gathered {:how}{10%?, {:how}}}
+{berry}{20% juice}{10% gathered {:how}{10%, {:how}}}
 {crushed|ground} {gem}
-{crushed|live} {insect}{10%? gathered {:how}{10%?, {:how}}}
-{fauna} {organ}{10%? gathered {:how}{10%?, {:how}}}
-{flower} {leaf|nectar|petal|pollen|root|stalk|thorn}{10%? gathered {:how}{10%?, {:how}}}
-{fruit}{20%? seed}{10%? gathered {:how}{10%?, {:how}}}
-{fungus}{20%? {spores|extract}}{10%? gathered {:how}{10%?, {:how}}}
-{herb} {leaf|root|seed|sprig}{10%? gathered {:how}{10%?, {:how}}}
-{liquid}
+{crushed|live} {insect}{10% gathered {:how}{10%, {:how}}}
+{fauna} {organ}{10% gathered {:how}{10%, {:how}}}
+{flower} {leaf|nectar|petal|pollen|root|stalk|thorn}{10% gathered {:how}{10%, {:how}}}
+{fruit}{20% seed}{10% gathered {:how}{10%, {:how}}}
+{fungus}{20% {spores|extract}}{10% gathered {:how}{10%, {:how}}}
+{herb} {leaf|root|seed|sprig}{10% gathered {:how}{10%, {:how}}}
+{20%{concentrated|distilled} }{liquid}
 {menu:drink}
 {mineral}
-{monster} {organ}{10%? gathered {:how}{10%?, {:how}}}
+{monster} {organ}{10% gathered {:how}{10%, {:how}}}
 {organic}
 {poison}
 {organ} from a {profession}
 {provisions}
-{wood} tree {bark|leaf|root|sap|seed}{10%? {:how}{10%?, {:how}}}
+{wood} tree {bark|leaf|root|sap|seed}{10% gathered {:how}{10%, {:how}}}
 {undead} {dust|essence}
-{{fauna}|{humanoid}|{monster}|{profession}} {blood|bone}{10%? gathered {:how}{10%?, {:how}}}
+{{fauna}|{humanoid}|{monster}|{profession}} {blood|bone}{10% gathered {:how}{10%, {:how}}}
 
 : How
 after a {disaster}

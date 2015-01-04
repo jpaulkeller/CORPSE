@@ -12,6 +12,7 @@ afraid
 aggressive
 agreeable
 alienated
+aloof
 amazed
 amused
 angry
@@ -32,6 +33,7 @@ confused
 cooperative
 courageous
 critical
+cynical
 depressed
 desperate
 determined
@@ -59,6 +61,7 @@ exuberant
 fearful
 fearless
 flirty
+formal
 frantic
 friendly
 frightened
@@ -80,6 +83,7 @@ hostile
 humiliated
 hurt
 ignored
+impassioned
 important
 inadequate
 indifferent
@@ -112,6 +116,7 @@ peaceful
 perplexed
 playful
 pleasant
+positive
 powerful
 powerless
 proud
@@ -132,7 +137,9 @@ sad
 sarcastic
 scared
 scornful
+secretive
 sensitive
+serious
 shocked
 silly
 skeptical
@@ -142,6 +149,7 @@ suspicious
 terrified
 thoughtful
 threatened
+upbeat
 victimized
 vivacious
 vulnerable

@@ -16,7 +16,7 @@
 
 <h2>Description</h2>
 <ul>
- <li>Form: {Powder|Liquid, {viscosity}{33%?, {liquid feature}}{20%?, with bits of {reagent} floating in it}}
+ <li>Form: {Powder|Liquid, {viscosity}{33%, {liquid feature}}{20%, with bits of {reagent} floating in it}}
  <li>Color: {color}
  <li>Smell: {smell}
  <li>Taste: {taste}

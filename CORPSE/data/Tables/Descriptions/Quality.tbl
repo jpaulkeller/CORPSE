@@ -18,3 +18,4 @@ magical +{5}
 
 : Quality {3d5-1}
 : Magic   {2d9-1}
+: Good    {d6+10}

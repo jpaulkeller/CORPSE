@@ -6,13 +6,14 @@
 / Fabulous Creatures and Other Magical Beings
 / The Mythical Creatures Bible and Wikipedia
 
-. Humanoid
-. Description
+. Humanoid, Description
 
 : Humanoid
 dwarf
 elf
 goblin
+gnoll
+gnome
 halfling
 hobgoblin
 kobold
@@ -21,23 +22,54 @@ lycanthrope
 orc
 
 : Uncommon
+aquatic elf
+brownie
+bugbear
+deep dwarf
+deep halfling
 demon
 devil
+drow
+drow elf
 dryad
+duergar dwarf
 ent
 fairy
+forest gnome
+gnoll
+goblin
+gray elf
+half-elf elf
+half-orc
+high elf
+hill dwarf
+hobgoblin
+human
+kobold
+lightfoot halfling
+lizardfolk
+locathah
 medusa
 merfolk
+mountain dwarf
 ogre
+ogrillion
+orc
+orog
 phraint
 pixie
+rock gnome
+svirfneblin gnome
+tallfellow halfling
+troglodyte
 troll
 vampire
 wight
+wild elf
+wood elf
 wraith
 yeti
 zombie
-{: humanoid}
 
 : Literary
 Eloi;  H. G. Wells The Time Machine

@@ -1,0 +1,60 @@
+: Preparation
+6 {:common}
+3 {:uncommon}
+1 {:rare}
+1 {:poor}
+
+: Common
+baked
+boiled
+grilled
+roasted
+seasoned 
+smoked
+stewed
+
+: Uncommon
+blackened
+braised
+breaded 
+broiled
+charbroiled 
+charred
+dried
+fried
+garlicky 
+glazed
+herb-encrusted 
+herbed
+marinated 
+pastry-wrapped 
+peppered
+salted
+sautéed
+seared
+simmered
+slow-roasted 
+spiced
+spicy 
+spit-roasted 
+steamed
+stir-fried
+tenderized 
+toasted 
+
+: Rare
+bacon-wrapped 
+battered
+caramelized
+deep-fried 
+pickled
+poached
+raw 
+
+: Poor
+{50%slightly }burnt 
+dried out 
+leftover
+overcooked 
+tepid 
+undercooked 

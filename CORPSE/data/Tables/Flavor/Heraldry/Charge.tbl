@@ -11,14 +11,12 @@ compass
 crescent
 cross
 crown
-{20%?closed }eye
-{flower}
-key
 hand
 horseshoe
+key
 man
-mountain
 moon
+mountain
 pawprint
 pentacle
 ram
@@ -28,12 +26,14 @@ skull
 star
 sun
 tower
-{wood} {leaf|tree}
 wheatsheaf
 woman
-{~{equipment}}
+{20%closed }eye
 {fauna}
 {flora}
+{flower}
 {musical instrument}
 {tiny item}
 {weapon}
+{wood} {leaf|tree}
+{~{equipment}}

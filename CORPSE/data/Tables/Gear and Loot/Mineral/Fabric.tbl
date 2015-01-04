@@ -1,20 +1,38 @@
 : Fabric
-brocade
+27 {:Common}
+9 {:Uncommon}
+3 {:Exotic}
+{:Magical}
+
+: Common
 burlap
-cashmere
 cotton
-hide ({common|exotic})
+hide
 homespun
 feathers
-fur ({fur and pelt.animal})
-gold cloth
+fur
 hemp
+hide
 jute
-leather ({common|exotic})
+leather
+wool
+
+: Uncommon
+brocade
+cashmere
+{fur and pelt:common.animal} fur
+gold cloth
+leather
 linen
 silk
 silver cloth
-wool
+
+: Exotic
+{avian} feathers
+{feathered monster} feathers
+{fur and pelt:exotic.animal} fur
+{furred monster} fur
+{fur and pelt:hide.animal} leather
 
 : Magical
 embersilk

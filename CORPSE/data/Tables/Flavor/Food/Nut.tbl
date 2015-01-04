@@ -1,0 +1,32 @@
+: Nut
+acorn
+almond
+beechnut
+brazil nut
+butternut
+cashew
+chestnut
+hazel nut
+hickory nut
+macadamia
+peanut
+pecan
+pine nut
+pistachio
+walnut
+
+: Nuts
+{75%{:style} }{{:nut}+}
+
+: Style
+blanched
+candied
+cinnamon
+dry-roasted
+fresh-roasted
+pan-roasted
+roasted
+salted
+smoked
+spicy
+toasted

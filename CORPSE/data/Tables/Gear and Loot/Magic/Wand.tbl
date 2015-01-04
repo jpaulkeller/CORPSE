@@ -1,3 +1,5 @@
+: Wand
+Wand of {:Power} ({#/{d6*10}} charges) - made of {:wood}, {:length} long
 
 : Material
 4 {metal}
@@ -21,8 +23,39 @@ tipped with
 twisted with
 wrought with
 
+: Power
+Acid Balls
+Acid Bolts
+Annihilation
+Clone Monster
+Cold Balls
+Confuse Monster
+Disarming
+Dragon's Breath
+Dragon's Flame
+Dragon's Frost
+Drain Life
+Fire Balls
+Fire Bolts
+Frost Bolts
+Haste Monster
+Heal Monster
+Light
+Lightning Balls
+Lightning Bolts
+Magic Missile
+Polymorph
+Scare Monster
+Sleep Monster
+Slow Monster
+Stinking Cloud
+Stone to Mud
+Teleport Other
+Trap/Door Destruction
+Wonder
+
 : Potter
-{:wood}, {:length}, with a {:core} core; (75%?{:adj} }{:flex}
+{:wood}, {:length}, with a {:core} core; {75%{:adj} }{:flex}
 
 : Wood
 acacia
@@ -65,7 +98,7 @@ willow
 yew
 
 : Length
-{90%?{={4,6}+8}:{6-17}}{20% and {{one|two|three}-quarter|one-half}} inches
+{90%?{{4,6}+8}:{6-17}}{20% and {{one|two|three}-quarter|one-half}} inches
 
 : Core
 dragon heart string
@@ -82,6 +115,7 @@ bendy
 hard
 rigid
 springy
+stiff
 supple
 swishy
 

@@ -1,0 +1,104 @@
+/ Strange creatures with special features.  These are typically unique creatures, created or transformed
+/ (intentionally or not) by some magic or sorcery.  They might be:
+/ - mutant creatures of unusual size, features, or abilities
+/ - chimeric hybrids (the result of breeding experiments or Frankensteinian amalgamation)
+/ - genetically engineered
+/ - alien from another world/plane/dimension
+/ - strange mutants
+/ - cyborgs augmented with mechanical or magical parts
+/ - clockwork automatrons or robotic constructs
+/ - magically animated golems or elementals
+
+: Monstrosity
+{:mutant}
+{:alien}
+{:hybrid}
+{:cyborg}
+{:construct}
+
+: Mutant
+{:size} {50%{color} }{fauna}
+{33%{:size} }{fauna} with {number:twotofive} heads
+{33%{:size} }{fauna} with {{:wings}|{d4x2} tentacles}|horns}
+
+: Alien
+tentacled alien {:origin}
+a {acid|air|earth|fire|shadow|water} elemental
+
+: Hybrid
+{33%{:size} }hybrid with a {fauna} head on a {fauna} body
+amalgamation with parts from a {fauna}, {fauna}{50%, and {fauna}}
+{33%{:size} }{celestial|demonic|divine|elemental} {fauna}
+
+: Cyborg
+a {:size} {fauna}, augmented with strange devices
+a {:size} {fauna}, armored with plates of {{metal:weapon}|{metal:special}}
+
+: Construct
+a {wooden|metal} construct
+a clockwork automatron
+a magically animated {made of:hard} simulacrum
+
+: Size
+tiny
+unusually large
+huge
+gigantic
+monstrous
+
+: Form
+ethereal
+invisible
+rotting
+skeletal
+spectral
+translucent
+
+: Hide
+covered in bony spikes
+covered in sharp {20%venomous }quills
+covered in thick, leathery hide
+covered in {blisters|lesions|open wounds}
+covered in {color} scales
+covered in {curly|long|lustrous|shaggy|} {color:dark} fur
+infested with parasites
+overgrown with symbiotic fungus
+protected by a thick {color} shell
+
+: Wings
+angelic wings
+bat-like wings
+bird-like wings
+demonic wings
+draconic wings
+implanted mechanical wings
+insectoid wings
+wings of {color:simple} fire
+
+: Special Other
+capable of communicating
+capable of reasoning
+highly {acidic|toxic} {blood|secretions}
+lycanthropic
+undead
+unusually {:attribute}
+vampiric
+well adapted to {terrain}
+
+: Attribute
+agile
+clever
+intelligent
+robust
+strong
+tough
+
+: Disposition
+cruel
+enraged
+ravenous
+
+: Origin
+from another planet
+from another dimension
+from {Plane}

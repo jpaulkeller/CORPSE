@@ -4,9 +4,9 @@
 The {{Fauna}+} of {Place Name}
 The {{Weapon{!OneWord}}+} of {Place Name}
 The {Color:Basic} {{Weapon{!OneWord}}+}
-The {:Group} of the {20%?{Gem}} {Weapon{!OneWord}}
-The {:Group} of the {20%?{{Gem|Metal:Special|Color:Basic|Adjective}}} {{Weapon{!OneWord}|Fauna|Tiny Item}}
-The {:Group} of the {Tiny Item{!OneWord}}{20%? and {Tiny Item{!OneWord}}}
+The {:Group} of the {20%{Gem}} {Weapon{!OneWord}}
+The {:Group} of the {20%{{Gem|Metal:Special|Color:Basic|Adjective}}} {{Weapon{!OneWord}|Fauna|Tiny Item}}
+The {:Group} of the {~{Tiny Item{!OneWord}}}{20% and {~{Tiny Item{!OneWord}}}}
 The {{Color:Basic|Gem}} {:Group}
 {Name}'s {{Creature{!SameFirstLetter}}+}
 {Name}'s {{Fauna{!MaybeSameFirstLetter}}+}
@@ -18,8 +18,8 @@ The {{Color:Basic|Gem}} {:Group}
 adventurers
 circle
 company
-convenant
 council
+covenant
 crusaders
 fellowship
 guild

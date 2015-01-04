@@ -1,15 +1,21 @@
+/ http://www.roleplayingtips.com/articles/150-benign-urban-encounters.html
+
 : City Encounter
 10 {:PASSERBY}
 
 : Passerby
-A {NPC} {50%?{dressed:wearing} }{:ACTIVITY}
-A {:group} {20%?{:wearing} }{80%?{:GROUP ACTIVITY}}
+A {NPC} {50%{dressed:wearing} }{:ACTIVITY}
+A {:group} {20%{:wearing} }{80%{:GROUP ACTIVITY}}
+A {:young} {:YOUNG ACTIVITY}
 
 : Group
-{small |large |}{:group name} of {75%?{15%?{degree:adjective} }{appearance} }{{:member}+}
+{small |large |}{:group name} of {75%{15%{degree:adjective} }{appearance} }{{:member}+}
+
+: Young
+{small |large |}group of {75%{appearance} }{children|kids|urchins|orphans}
 
 : Member
-5 {80%?people:children}
+5 people
 {~{hireling type}}
 {humanoid}
 {profession}
@@ -36,9 +42,9 @@ wearing {damaged|makeshift|polished} armor
 
 : Activity
 has a black eye and a split lip
-is arguing with a {NPC}
+is {arguing|quarreling|bickering|conversing|sparring} with a {NPC}
 is asking for directions
-is begging for money
+is begging for {alms|money|coins|food|drink}
 is being chased by a guard
 is being ignored by a nearby vendor
 is butchering a {fauna}
@@ -62,9 +68,68 @@ seems intent on starting a fight
 seems to know his way around
 swings languidly from a platform above the crowd
 was just tossed from a {shop|bar|inn}
+is drawing {a map|strange symbols|runes|a picture} with chalk on the road
+
+emptied a chamber pot {near|on} the PCs
+asks to join the party
+asks the PCs to watch {his|her| care for a minute
+is getting amorous with a {NPC}
+is looking for a pet {pet}
+recognizes one of the PCs
+is being held in a stock
+is being restrained and escorted by the city watch
+is {looking for|scolding} her child
+is chasing a {{NPC}|{pet}}
+is angry with a shopkeeper
+bumps into one of the PCs ({no|some}thing is missing)
+
+Wailing baby
+Cop/guard walking a beat
+Someone teleports away
+Street preacher accosts you
+Two religious processions meet head-on
+Street cleaner sweeps by
+Unconscious stranger on side of road
+Passing child drops pottery, cries
+Injured mounted scout charges through the street
+Noble is carried past in a sedan chair
+Two hooded people whisper on street
+Young consumer is watched closely
+Weapon sharpener approaches party
+Distracted senior totters straight for party
+Weary knight is mobbed by adoring children
+Emaciated children tug at party sleeves
+People cheer for the party
+A strong, young, healthy beggar asks for coin
+A politician on a box of soap during a speech makes eye contact with a PC
+A religious leader and his incense burning retinue cuts across the PCs' path
+A diseased old man resting in a chair asks for help standing up
+An elf walks by with living snakes wrapped around his shoulders
+A visitor stops to ask for directions to an interesting place
+A fish vendor bends over to vomit and people point and laugh
+A depressed bard asks sing-song, rhetorical questions of the PCs
+A known crime boss sits and reads while sweating shoe shine boy buffs and casts the PCs worried looks
+A woman with too much fashion going on breaks her shoe and stumbles into a PC
+A man gets down on one knee and proposes, drawing a crowd and knotting traffic
+A beggar with his hand down a drain hole brings up a ring and immediately asks the PCs to buy it
+A woman drops a basket of fruit--can the PCs dodge before squashing some?
+A crazy man points at PC's equipment and lists its magical properties--and he's right!
+A little boy confronts the PCs and shoots them with an imaginary crossbow
+A fishmonger dumps a cart of rotten fish for scavengers to clean up
+A young noble passes trailed by a pickpocket
+A messenger collides with the PCs and numerous papers start blowing around
+A chatty bard walks alongside the party
+A body of an evil wizard tied to a stake, body still smoking
+A person passed out from too much drink, looted, with writing on forehead
+
+: Young Activity
+are playing a game of {tag|hide-and-seek} 
+are {dancing|singing}
+pester the party
 
 : Group Activity
 are blocking the road
+are brawling
 are carrying a large {container}
 are celebrating {FESTIVAL}
 are chasing a {NPC}
@@ -79,3 +144,153 @@ are {playing music|performing acrobatics|dancing|singing|chanting} before a larg
 are {protesting|rioting}
 are trying to extinguish a burning {city site}
 are touring the city
+are being jeered at
+are parading in honor of a local hero 
+are arguing in an unknown language
+follow the PCs for several blocks
+
+===
+
+Religious pilgrims with vow of silence
+City watch follows you
+Private guards flank a door
+Political activists on parade beckon the PCs to join
+Three performers in masks surround the PCs and do a ring dance around them
+
+PCs pass an alleyway blocked by a new spider web
+A {pet} chasing a {pet} darts past
+{Scavenger birds|Birds of prey} circling overhead
+A huge flock of crows are roosting on every perch
+A shadow passes across the ground, without an obvious source
+A tall column of black smoke rises in distance
+Feeling of deja vu
+Insect {swarm|nest} on building
+{Noise} in the distance
+Graffiti on building
+Snake slithers away
+Rainbow in the distance
+Group of bats rise in the distance
+Overturned vegetable cart
+Sudden sun shower
+Wind kicks up
+A discarded, tattered cloak
+A rusty old weapon found in gutter
+Dark storm cloud approaches
+Large beetle buzzes around head
+Sandstorm
+Small dust whirlwind
+A dead ox causes a gridlock
+An overturned cart causes a gridlock
+A few sun bleached papers blow by
+Roof tile falls, barely missing party
+Smell of baking/cooking
+Stench of feces
+Ray of light seems to surround one person
+Unusually cool breeze
+Rats are following you
+You get a dull, throbbing headache
+Injured bird lies helpless
+Skunk smell
+Eerily quiet
+Stung by a bee
+Arid dust coats your mouth
+Very friendly cat
+Find a copper piece
+Allergic reaction to exotic spice/pollen
+Witness a minor crime
+Something scurries away (chipmunk)
+Witness a major crime
+Find a silver piece
+Dogs chasing each other run by
+Very active beehive nearby
+Howling gust of wind
+Approaching lightning storm
+Crow squawks repeatedly at approach
+Rubbery mass stuck to your boot (gum)
+Step in crap - dog, dire rat, etc.
+Someone stomps in nearby puddle--splash!
+Pair of small birds harass you
+Feral cat is trailing the party
+A case of mistaken identity
+Cloud shaped as holy symbol
+Shopping list for potions is found
+Old ring is sticking out of the dirt
+One person has an intense itch
+Hawk takes mole/mouse near party
+Find a gold piece
+Loose chickens peck at the street
+Raven lands in path, stares, leaves
+Singing floats out of nearby building
+Circus wagon trundles past, animal calls
+Large flock of birds flies acrobatics, then darts away
+Partial eclipse of the sun
+A cat is stuck in a tree and mewls at the PCs
+An escaped pet rodent rolling around the street in its ball bumps up against a PC's leg
+A paint can spills from above and splashes PCs
+A dangerous fish in a tank bumps loudly against the glass
+A bee stings a nearby child who blindly runs to a PC for soothing
+A small bird egg drops out of a nest from above and land intact nearby
+A sheet of music blows into a PC's face
+A garbage bin rattles; inside is a tied sack of kittens
+A dangerous-looking racoon has claimed an apple cart as his--merchant beseeches PCs
+Clothing tossed out a window during a lovers' spat lands on a PC
+A chess match
+
+===
+
+/ Originally published in Dungeon magazine #134; "50 Unexpected Events"
+/ http://random-generator.com/index.php?title=50_Unexpected_Events
+
+<sgdisplay iterations="10">[event]</sgdisplay>
+<sgtable>
+;event
+1,A nearby child begins screaming about monsters.
+1,A village idiot informs one PC that their hair is on fire. When his mistake is pointed out, he shouts that next time he won't bother telling them.
+1,A gypsy peg seller warns the PCs that they are cursed (unless they buy her pegs).
+1,A colorful parrot flies by, pursued by its owner's frantic family.
+1,An elderly lady gives one PC a blackberry pie, claiming that he looks "a bit thin."
+1,A town crier botches their speech.
+1,The church bells sound the hour, but the striker breaks halfway through.
+1,A wagon laden with fruit stops next to the PCs, the horse refusing to go a step further.
+1,Two men walk by, arguing about cabbages as they go.
+1,An old dwarf leans from a window above and abuses one PC about their dress.
+1,A man on fire rushes out of a smithy and leaps into the nearest duck pond.
+1,Clouds of dust billow from a nearby building and seven builders come out coughing.
+1,A dog begins barking furiously at one particular PC.
+1,An old woman rants about the "lack of discipline these days" and directs her ire at two of the PCs.
+1,Two lovers sing to each other, oblivious to everyone around them.
+1,A hot-chestnut seller yells "I've had enough of this dead-end job!" and walks off smiling. Later he is seen selling cloaks on a street corner.
+1,A turnip rolls past the PCs, hotly pursued by children.
+1,A chicken falls from an upstairs window and lands on one PC.
+1,A jester begins to cry as he is heckled by a group of nasty gnomes.
+1,A thatched roof on a house suddenly sags (the house is empty).
+1,A town guard asks one PC if he knows Dag Wibberley, the notorious ferret breeder, wanted for breeding ferrets without a license. As the guard leaves, he remarks on one PC's likeness to Dag, and warns him about illegal ferret breeding.
+1,A spade seller approaches the PCs with his wares.
+1,A halfling says that he is lost and looking for food, and would the kind heroes lend him some money?
+1,A quartet of clowns somersaults past.
+1,A cat is hit by a cart and walks away unscathed.
+1,A flock of sheep rush past. Two days later, a man asks the PCs if they've seen his sheep.
+1,A madman claims to be a shapechanged [Animal.fantasyCreature].
+1,A beautifully arranged shop window display of glasses collapses as one PC looks at it.
+1,Three slates fall off of a roof at the feet of a passing wizard, who winks at the PCs and calmly carries on.
+1,A cart laden with statues of [Creatures.Basic Fantastic] passes by.
+1,A man comments to one PC that he's seen a gliding moose-eagle, but not a flying one.
+1,A group of religious maniacs claims the world will end in ten minutes.
+1,Twenty guards stand around a broken heavy catapult, all blaming each other for dropping it first. Eventually a huge brawl takes place.
+1,Dwarves hold a belching contest outside a pie shop.
+1,A female gnome gives one PC a copper for some soup.
+1,A door on a shop falls into the street, exposing a naked dwarf.
+1,An enraged wife chases her husband with a kipper.
+1,The heroes are given a free bottle of Jolie's fruit wine (which is vile) as part of a promotion. Later on they find Jolie in the village stocks. 
+1,An elderly half-orc warns the PCs to "beware the highlands."
+1,A trio of old ladies remark on how handsome one PC is, and how he reminds them of a young [Formal Names.Start].
+1,A dashing bard gives flowers to one PC and then rushes off singing about spring.
+1,A huge crowd of children walks past dressed as scarecrows, singing songs about seeds and naughty birds. A disturbing number of starlings follow them down the street.
+1,A large group of well-dressed men walks past holding plans and talking about demolishing streets. They end up having a fight. 
+1,A woman dressed in a [Creatures.Animal] costume approaches the PCs, asking if they know the way to the village hall. If they don't, she begins crying hysterically.
+1,A woman calls after a PC by name, but it soon becomes apparent that she's in fact calling the name of her dog, who just happens to have the PC's name.
+1,A man falls off a ladder into a duck pond. As he falls, he screams "Not again!"
+1,A man works on a twenty-wheel wagon and shows it to unimpressed dwarven clients.
+1,A sudden gust of wind blows everyone's hats off. Two minutes later, the exact same thing happens again.
+1,The church strikes the hour, but doesn't stop and keeps chiming all day and half the night.
+1,Dogs howl as the PCs draw near, but mysteriously fall silent when they are approached.

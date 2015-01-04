@@ -19,8 +19,10 @@ ninety-nine
 {:twototen} hundred
 {:twototen} thousand
 
+: Nine {9}
 : Ten {10}
 : TwoToFive {2-5}
 : TwoToTen {2-10}
 : TwoToTwelve {2-12}
+: Many {6-14}
 : Plural {2-20}

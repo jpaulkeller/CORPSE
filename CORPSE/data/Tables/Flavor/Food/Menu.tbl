@@ -1,0 +1,195 @@
+/ inspired by http://donjon.bin.sh/fantasy/inn/
+/ http://random-generator.com/index.php?title=Barrens_Menu_Generator
+
+: Menu
+{:fare}; {container:drink} of {drink}
+
+/ TODO : Feast
+/ TODO : Noble
+/ TODO : Peasant
+/ TODO : Local/Regional Specialty
+
+: Fare
+casserole made of {{vegetable}+} and {{vegetable{!different}}+}
+{:dish}{75% and {{meat:fowl}|{meat}|{meat:game}|{seafood}|{vegetable}}} {pastry|pie}{50% served with {salad}}
+{:exotic} with {bread}
+{meat:game} stuffed with {:dish}{50% served with {{bread}|{salad}|{:side}}}
+{:main} seasoned with {spice}{25% and {spice}}
+{:main} served with {bread}
+{:main} served with {:pasta}
+{:main} served with {:side}
+{:main} served with {{vegetable}+}
+{:main} with {preparation} {fruit}
+{:main} with {salad}
+{:main} with {:sauce}
+{:soup} served with {{bread}|{salad}|{:side}}
+{vegetable} and {vegetable{!different}} kebabs
+
+: Main
+{preparation} {:dish}{50% and {{meat:fowl}|{meat}|{meat:game}|{seafood}|{vegetable}}}
+
+: Dish
+{meat:fowl}
+{meat:game}
+{meat}
+{seafood}
+{{vegetable}+}
+
+: Pasta
+couscous
+egg noodles
+wheat noodles
+angel hair noodles
+linguini noodles
+fettuccine noodles
+spaghetti noodles
+macaroni noodles
+bulghur wheat
+rigatoni noodles
+rice noodles
+tortellini noodles
+manicotti noodles
+
+: Sauce
+horseradish sauce
+stone-ground mustard sauce
+honeyed mustard sauce
+gravy
+marinara sauce
+hot pepper relish
+olive tapenade
+garlic sauce
+herb butter
+cream sauce
+cheese sauce
+
+: Eggs
+{fried|poached|scrambled|{hard|soft}-boiled|poached|spiced} {50%{meat:fowl} }eggs
+{50%{meat:fowl} }egg omelette
+
+: Soup
+{{meat:fowl}|{meat:game}|{seafood}|{vegetable:cookable}}{50% and {vegetable:cookable{!different}}} {porridge|soup|stew}
+
+: Side
+brown gravy{20% and mushrooms}
+rice
+{:cheese}
+{:eggs}
+{salad}
+{{vegetable}+}{33% and {{vegetable{!different}}+}}
+
+: Cheese
+{:cheese process} {5%goat }cheese
+
+: Cheese Process
+aged
+cave-aged
+creamy
+dry
+extra sharp
+farmstead-style
+fresh
+hard
+herb-encrusted
+mild
+pastry-encrusted
+peppercorn-encrusted
+sharp
+smoked
+soft
+{nut}-encrusted
+
+: Sweetener
+honey
+marzipan
+molasses
+beet sugar
+cane sugar
+maple syrup
+{fruit} syrup
+
+: Dessert
+baked apples fragrant with cinnamon
+bread pudding with {berry} sauce
+candied {{fruit}+}
+cheese and {{fruit}|{berry}} blintz
+honey rolls
+pastries
+sweetbread
+{25%{{fruit}|{berry}} }cake
+{25%{{fruit}|{berry}} }{custard|fritters|pudding|strudel}
+{berry} tarts
+{berry}{25% and {berry{!different}}} pie
+{fruit} cobbler
+{fruit} pie
+{spice} scones
+
+/ Unusual dishes
+
+: Exotic
+{preparation} {meat:fowl exotic}
+{preparation} {insect}
+{preparation} {meat:large animal exotic} {meat:large animal part}
+{preparation} {mammal} {organ}
+{preparation} {seafood:exotic}
+{preparation} {meat:small animal exotic}
+{color:simple} pudding
+
+===
+
+;ExtrasRoll
+[Extras]
+[Extras] and [Extras]
+[Extras], [Extras], and [Extras]
+[Extras], [Extras], [Extras], and [Extras]
+[Extras], [Extras], [Extras], [Extras], and [Extras]
+
+;Extras
+{:bread}
+{:cheese} 
+{:nut style} {{nut}+}
+[Desserts]
+[Salads]
+[Utility.Fruit]s
+dried [Utility.Fruit]s
+[Tapas]
+[Pickles]
+[Eggs]
+porridge
+
+;Pickles
+dill pickles
+pickled beets
+pickled cabbage
+pickled cauliflower
+pickled eggs
+pickled garlic
+pickled herring
+pickled melon rind
+pickled mushrooms
+pickled onions
+pickled parsnips
+pickled peppers
+pickled peppers
+pickled radishes
+pickled turnips
+salt-preserved lemons
+sweet pickles
+
+;Tapas
+Fried [Veggies] with roasted garlic-yogurt sauce
+Olive Oil marinated baby [Veggies] stuffed with [Nuts] and [Veggies]
+marinated roasted [Veggies] with [cheese]
+[Veggies]-cheese patties with caper-yogurt sauce
+roasted [Veggies] and olives with balsamic vinegar and olive oil
+fava beans with [Veggies]s, capers and lemon juice
+sauteed wild mushrooms with [Nuts] sauce & demi-glace
+cabbage paquetes stuffed with rice and [Veggies]
+[Veggies], [Utility.Fruit], and [Nuts] fritters with [Nuts] sauce
+fried light pastry with [cheese] and [Nuts]s
+roasted [Veggies] with [cheese] and [Nuts]s
+spicy sausage in a sauce of [Veggies], [Veggies], and [Veggies] sauce
+croquettes of [SaltwaterFish] with [VeggiesCookable] and [Veggies]
+steamed [FreshwaterFish] with a creamy lemon-garlic sauce
+thin-sliced cured {:dish} and [Veggies] with a [Veggies]-cream sauce
+[SaltwaterFish] ceviche in [Utility.Citrus] juice with [Veggies] and [Veggies]

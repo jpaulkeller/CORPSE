@@ -424,7 +424,6 @@ magician of {magic}:   {Title Guild}       magical
 magistrate                                 government                     a judge
 maidservant                                service         199/1-in-250   a female household servant
 mailer                                     craftsman                      enameller (not a maker of armor)
-malemaker                                  craftsman                      a maker of leather trunks
 mapmaker                                   craftsman                      also known as cartographer
 marbler                {Title Guild}       craftsman                      a cutter and carver of marble
 mariner                                    sailor
@@ -697,6 +696,7 @@ typefounder                                craftsman
 undertaker
 unguentary             {Title Guild}       merchant                       one who sells unguents
 upholder                                   craftsman                      an upholsterer
+urchin
 userer                                     service                        a moneylender
 vagabond                                   criminal
 vaginarius                                 craftsman                      scabbard-maker

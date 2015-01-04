@@ -20,7 +20,7 @@
 <h3>Description</h3> 
 <ul>
  <li>The inn is a {small|large|{single-|two-|three-}storey} {building material} building, 
-     with {building flavor}{20%? and {building flavor{!different}}}.
+     with {building flavor}{20% and {building flavor{!different}}}.
  <li>Accommodations consist of {quantity:some} {accommodations}. 
  <li>The inn is {locally |widely |well-}known for the {tavern flavor}.
 </ul>

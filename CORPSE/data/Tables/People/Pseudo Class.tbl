@@ -4,15 +4,18 @@ berserker
 bounty hunter
 burglar
 captain
+cavalier
 champion
 chevalier
 cleric
 construct
+dragoon
 fighter
 guardian
 healer
 hunter
 knight
+lancer
 lore master
 mercenary
 minstrel
@@ -27,6 +30,7 @@ warden
 warrior
 
 : Magical
+battlemage
 chronomancer
 conjurer
 druid

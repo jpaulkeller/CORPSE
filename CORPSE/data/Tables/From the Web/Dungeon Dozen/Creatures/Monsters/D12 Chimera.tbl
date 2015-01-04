@@ -1,7 +1,7 @@
 / http://roll1d12.blogspot.com/2012/10/instant-chimera.html
 
 : D12 Chimera
-Body: {: body}; Head: {: head}{25%? and {: head}{25%? and {: head}}}; Power: {: special power}.
+Body: {: body}; Head: {: head}{25% and {: head}{25% and {: head}}}; Power: {: special power}.
 
 : Body
 crocodile

@@ -108,7 +108,6 @@ public class Table extends ArrayList<String>
 
    public String resolve(final String entry, final String filter)
    {
-      System.out.println("Table.resolve(): " + entry); // TODO
       String resolved = entry;
 
       Matcher m = Constants.TOKEN.matcher(resolved);
@@ -118,7 +117,7 @@ public class Table extends ArrayList<String>
          while ((m = Constants.TOKEN.matcher(resolved)).find())
          {
             System.err.println(file + " unsupported token: " + m.group(0));
-            resolved = m.replaceFirst(TokenRenderer.INVALID_OPEN + m.group(1) + TokenRenderer.INVALID_CLOSE);
+            resolved = m.replaceFirst(Matcher.quoteReplacement(TokenRenderer.INVALID_OPEN + m.group(1) + TokenRenderer.INVALID_CLOSE));
          }
       }
 
@@ -376,7 +375,7 @@ public class Table extends ArrayList<String>
       {
          StringBuilder rowSubsets = new StringBuilder();
          for (Subset subset : subsets.values())
-            if (subset.includes(i, entry))
+            if (subset.includes(this, i, entry))
             {
                if (rowSubsets.length() > 0)
                   rowSubsets.append(", ");
@@ -484,6 +483,7 @@ public class Table extends ArrayList<String>
       test("Fauna", "included subsets");
       test("Mine", "weighted lines");
       test("Profession#.*craftsman.*#", "filter subsets");
+      test("METALLIC", "including a subset");
    
       // TODO: there must be a better way to pre-load the filtered table
       new Table("COLOR", "C.+");
@@ -494,6 +494,6 @@ public class Table extends ArrayList<String>
       test("SPELL#.*(WALK|FALL).*#", "filter with alteration");
       */
       
-      test("METALLIC", "including a subset");
+      test("Metal", "subsets");
    }
 }

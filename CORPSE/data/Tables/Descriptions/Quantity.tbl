@@ -1,14 +1,18 @@
 no
+{number:twotofive}
 a couple
 a few
 several
 a handful of
 a number of
 many
+{number:many}
+numerous
 lots of
 dozens of
+hundreds of
 countless
 
-: Few {6}
-: Some {2d4}
-: Many {2d4+2}
+: Few {7}
+: Some {2d5}
+: Many {2d5+4}

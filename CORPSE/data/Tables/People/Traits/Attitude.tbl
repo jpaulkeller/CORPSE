@@ -9,7 +9,7 @@
 / Reaction - different and specific types of reactions 
 
 : Attitude
-{degree} {trait}{25%? and {degree} {trait{!different}}}; {frequency} {disposition}{75%?; currently feeling {degree} {mood}{50%?; because of {:why}}{50%?; {:stability}}{25%?; {:effect}}}
+{degree} {trait}{25% and {degree} {trait{!different}}}; {frequency} {disposition}{75%; currently feeling {degree} {mood}{50%; because of {:why}}{50%; {:stability}}{25%; {:effect}}}
 
 : Why
 character's {appearance|behavior}

@@ -53,7 +53,7 @@ public final class Macros
             caseSample = lastResolved.lastElement();
          resolvedToken = matchCase(caseSample, resolvedToken);
 
-         if (!resolvedToken.contains("{")) // don't capture other tokens (e.g. variables)?
+         if (!resolvedToken.contains("{") && !resolvedToken.contains("!")) // don't capture other tokens or variables
             lastResolved.add(resolvedToken); // TODO: only capture user-specified ones?
 
          try
@@ -73,7 +73,7 @@ public final class Macros
          {
             System.out.println("Entry: " + entry);
             System.out.println("Groups: " + m.groupCount());
-            x.printStackTrace(System.err);
+            x.printStackTrace(System.out);
          }
       }
 
@@ -103,21 +103,33 @@ public final class Macros
 
    public static String resolveExpressions(final String token)
    {
-      String resolvedToken = resolveQuantity(token);
-      if (resolvedToken.equals(token))
-         resolvedToken = resolveAssignments(token);
-      if (resolvedToken.equals(token))
-         resolvedToken = resolveVariables(token);
-      if (resolvedToken.equals(token))
-         resolvedToken = resolvePlurals(token);
-      if (resolvedToken.equals(token))
-         resolvedToken = resolveFormatter(token);
-      if (resolvedToken.equals(token))
-         resolvedToken = resolveFilters(token);
-      if (resolvedToken.equals(token))
-         resolvedToken = resolveConditions(token);
-      if (resolvedToken.equals(token))
-         resolvedToken = resolveOneOfs(token);
+      String resolvedToken = token;
+      try
+      {
+         resolvedToken = resolveQuantity(token);
+         if (resolvedToken.equals(token))
+            resolvedToken = resolveAssignments(token);
+         
+         // not sure of the best order here, both can contain |
+         if (resolvedToken.equals(token))
+            resolvedToken = resolveOneOfs(token);
+         if (resolvedToken.equals(token))
+            resolvedToken = resolveVariables(token);
+         
+         if (resolvedToken.equals(token))
+            resolvedToken = resolvePlurals(token);
+         if (resolvedToken.equals(token))
+            resolvedToken = resolveFormatter(token);
+         if (resolvedToken.equals(token))
+            resolvedToken = resolveFilters(token);
+         if (resolvedToken.equals(token))
+            resolvedToken = resolveConditions(token);
+      }
+      catch (Exception x)
+      {
+         System.out.println(x);
+         System.out.println("  resolveExpressions: [" + token + "] = [" + resolvedToken + "]");
+      }
 
       if (DEBUG && !token.equals(resolvedToken))
          System.out.println("  resolveExpressions: [" + token + "] = [" + resolvedToken + "]");
@@ -137,7 +149,7 @@ public final class Macros
          else if (replacement != null) // found a matching variable
             resolvedToken = m.replaceFirst(Matcher.quoteReplacement(replacement));
          else
-            resolvedToken = m.replaceFirst("<" + m.group(1) + ">");
+            resolvedToken = m.replaceFirst("<" + Matcher.quoteReplacement(m.group(1)) + ">");
       }
 
       if (DEBUG && !token.equals(resolvedToken))
@@ -158,10 +170,10 @@ public final class Macros
          if (filterMatcher.find())
          {
             String replacement = filterMatcher.groupCount() > 0 ? filterMatcher.group(1) : filterMatcher.group();
-            resolvedToken = m.replaceFirst(replacement);
+            resolvedToken = m.replaceFirst(Matcher.quoteReplacement(replacement));
          }
          else
-            resolvedToken = m.replaceFirst(text);
+            resolvedToken = m.replaceFirst(Matcher.quoteReplacement(text));
       }
 
       if (DEBUG && !token.equals(resolvedToken))
@@ -219,7 +231,7 @@ public final class Macros
          String replacement = Constants.PLURALS.get(upper);
 
          if (replacement != null) // found the appropriate plural form
-            resolvedToken = m.replaceFirst(replacement);
+            resolvedToken = m.replaceFirst(Matcher.quoteReplacement(replacement));
          else if (upper.endsWith("S") || upper.endsWith("X") || upper.endsWith("SH") || upper.endsWith("CH"))
             resolvedToken = text + "es";
          else if (upper.endsWith("Y") && !upper.endsWith("EY"))
@@ -259,9 +271,9 @@ public final class Macros
          
          int roll = RandomEntry.get(100);
          boolean satisfied = roll <= percent;
-         resolved = m.replaceFirst(satisfied ? ifVal : elseVal);
+         resolved = m.replaceFirst(Matcher.quoteReplacement(satisfied ? ifVal : elseVal));
          if (DEBUG && !token.equals(resolved))
-            System.out.println("  resolvePercent: [" + token + "] = [" + resolved + "]");
+            System.out.println("  resolvePercentCond: [" + token + "] = [" + resolved + "]");
       }
       
       m = Constants.CONDITION.matcher(resolved);
@@ -283,9 +295,21 @@ public final class Macros
          else if (oper.equals("<"))
             satisfied = roll < target;
 
-         resolved = m.replaceFirst(satisfied ? ifVal : elseVal);
+         resolved = m.replaceFirst(Matcher.quoteReplacement(satisfied ? ifVal : elseVal));
          if (DEBUG && !token.equals(resolved))
             System.out.println("  resolveConditions: [" + token + "] = [" + resolved + "]");
+      }
+      
+      m = Constants.PERCENT_CHANCE.matcher(resolved);
+      if (m.matches())
+      {
+         int percent = Integer.parseInt(m.group(1));
+         String val = m.group(2);
+         int roll = RandomEntry.get(100);
+         boolean satisfied = roll <= percent;
+         resolved = m.replaceFirst(Matcher.quoteReplacement(satisfied ? val : ""));
+         if (DEBUG && !token.equals(resolved))
+            System.out.println("  resolvePercent: [" + token + "] = [" + resolved + "]");
       }
       
       return resolved;
@@ -304,7 +328,7 @@ public final class Macros
          // hack to allow alteration in regex filters ({Color#.*a|e.*#|Color#.*i|o.*#})
          Matcher fm = FILTER.matcher(resolved);
          while (fm.find())
-            resolved = fm.replaceAll("$1!!$2"); // replace "|" with "!!" 
+            resolved = fm.replaceAll("$1!!$2"); // replace "|" with "!!"
          
          m = Constants.ONE_OF.matcher(resolved);
          if (m.matches()) // make sure there's still alteration to split
@@ -316,7 +340,7 @@ public final class Macros
             else
                tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_2, Constants.ONE_OF_CHAR_2);
             int roll = RandomEntry.get(tokens.length);
-            resolved = m.replaceFirst(tokens[roll]);
+            resolved = m.replaceFirst(Matcher.quoteReplacement(tokens[roll]));
          }
          
          resolved = resolved.replace("!!", "|"); // restore any regex filter alteration
@@ -392,7 +416,6 @@ public final class Macros
       else if ((m = Constants.TABLE_XREF.matcher(resolved)).matches())
       {
          token = m.group(0);
-         
          xrefTbl = m.group(1);
          
          if (Constants.ALL_CHAR.equals(m.group(5))) // {Table!#Filter#}
@@ -422,7 +445,7 @@ public final class Macros
          if (xrefFil == null && filter != null)
             xrefFil = filter;
 
-         // System.out.println("Macros [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
+         System.out.println("Macros [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
 
          // avoid infinite loop references
          if (TOKEN_STACK.contains(token))
@@ -500,7 +523,7 @@ public final class Macros
             {
                Assignment a = entry.getValue();
                String value = m.groupCount() == 1 ? a.get(m.group(1)) : a.line;
-               resolvedToken = m.replaceFirst(value);
+               resolvedToken = m.replaceFirst(Matcher.quoteReplacement(value));
             }
          }
       }
@@ -532,10 +555,10 @@ public final class Macros
       {
          Matcher m;
          while ((m = TO_CAPITALIZE.matcher(caseMatched)).find())
-            caseMatched = m.replaceFirst(m.group(1).toUpperCase());
+            caseMatched = m.replaceFirst(Matcher.quoteReplacement(m.group(1).toUpperCase()));
          caseMatched = caseMatched.replace("'S", "'s"); // hack to fix possessive suffix
          while ((m = NO_CAP.matcher(caseMatched)).find())
-            caseMatched = m.replaceFirst(m.group(0).toLowerCase());
+            caseMatched = m.replaceFirst(Matcher.quoteReplacement(m.group(0).toLowerCase()));
          // don't cap some words
          /*
          for (String ignore : new String[] { "A", "An", "And", "At", "By", "For", "From", "In", "Of", "On", "Or", "The", "To", "With", "Without" })
@@ -595,11 +618,18 @@ public final class Macros
       Macros.resolve(null, "{H=Herb} Herb: {H.Herb} Cost: {H.Cost}", null); // assignment
       Macros.resolve(null, "{Profession:Criminal}", null); // filter subset
       
+      Macros.resolve(null, "{Herb{!OneWord}}", null);
+      Macros.resolve(null, "{Appearance} {Herb{!SameFirst}}", null);
+      Macros.resolve(null, "{Appearance} {Herb{!OneWithSame}}", null);
+      Macros.resolve(null, "{Appearance} {Herb{!MaybeSameFirst}}", null);
+      Macros.resolve(null, "{Appearance} {Herb{{!OneWithSame|!OneWord}}}", null);
+      
       System.out.println("Aa: " + Macros.matchCase("Aa", "cap each word's first letter in the phrase")); 
       System.out.println("AA: " + Macros.matchCase("AA", "Leave ALL words in the phrase alone"));
       System.out.println("aa: " + Macros.matchCase("aa", "Lower Case ALL words in the phrase"));
       */
       
-      Macros.resolve(null, "{Appearance} {Herb{!SameFirstLetter}}", null); // filter with column
+      // Macros.resolve(null, "{Appearance} {Humanoid{!OneMaybeSame}}", null);
+      Macros.resolve(null, "{Humanoid#T[A-Z]+$#}", null);
    }
 }

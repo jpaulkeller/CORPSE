@@ -1,0 +1,36 @@
+/ Mundane (but not normal) creatures
+
+: Beast
+a {75%{:size} }{75%{:adjective} } {fauna}
+
+: Encounter
+{:beast}
+{:group}
+
+: Group
+a pair of {75%{:size} }{50%{:adjective} }{{fauna}+}
+{number:twotofive} {75%{:size} }{50%{:adjective} }{{fauna}+}
+a flock of {75%{:size} }{50%{:adjective} }{{avian}+}
+a pack of {75%{:size} }{50%{:adjective} }{{fauna}+}
+a swarm of {75%{:size} }{50%{:adjective} }{{insect}+}
+
+: Size
+tiny
+unusually large
+giant
+huge 
+
+: Adjective
+angry
+dire
+diseased
+enraged
+man-eating
+mutant
+prehistoric
+rabid
+ravenous
+semi-ethereal
+skeletal
+spectral
+undead

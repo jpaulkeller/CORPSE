@@ -195,12 +195,12 @@ public final class Quantity
    private static final String OPERATOR = "([-+*x/^])";
    private static final String FLOAT = "(\\d+(?:[.]\\d+)?)";
    
-   static class Formula extends NumericAdapter // {=#+#}
+   static class Formula extends NumericAdapter // {#oper#}
    {
       
       public Formula()
       {
-         super("\\{=\\s*" + FLOAT + "\\s*" + OPERATOR + "\\s*" + FLOAT + "\\s*\\}");
+         super("\\{\\s*" + FLOAT + "\\s*" + OPERATOR + "\\s*" + FLOAT + "\\s*\\}");
       }
 
       @Override
@@ -585,13 +585,13 @@ public final class Quantity
       tokens.add("{%}"); // PERCENT
       tokens.add("{10-20}"); // RANGE
       
-      tokens.add("{=5+10}"); // FORMULA
-      tokens.add("{=10-3}"); // FORMULA
-      tokens.add("{=3*2}"); // FORMULA
-      tokens.add("{=3x2}"); // FORMULA
-      tokens.add("{=12/2}"); // FORMULA
-      tokens.add("{=5^2}"); // FORMULA (square)
-      tokens.add("{=100^0.5}"); // FORMULA (square root)
+      tokens.add("{5+10}"); // FORMULA
+      tokens.add("{10-3}"); // FORMULA
+      tokens.add("{3*2}"); // FORMULA
+      tokens.add("{3x2}"); // FORMULA
+      tokens.add("{12/2}"); // FORMULA
+      tokens.add("{5^2}"); // FORMULA (square)
+      tokens.add("{100^0.5}"); // FORMULA (square root)
 
       tokens.add("{3d6}"); // DICE
       tokens.add("{d12}"); // DICE

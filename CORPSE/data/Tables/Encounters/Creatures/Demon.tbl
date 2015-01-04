@@ -1,0 +1,243 @@
+/ http://random-generator.com/index.php?title=1E_DMG_Demon
+
+: Demon
+{:HEAD} {:FACE} {:BODY} {:SKIN} {50%{:WINGS OR TAIL} }{50%{:ODOR}}
+
+: head
+This demon has a {:head} head{75% with {:head adornment}}.
+
+: face 
+Its {:visage} face has {:eyes}, a {:nose} nose, {:ears}, and a {:mouth} mouth. 
+
+: body
+Attached to its {:torso} are {:arms} and {:legs} legs. 
+
+: head type
+bat-like
+bird-like
+crocodilian
+horse-like
+human-like
+monkey-like
+snake-like
+weasel-like
+
+: head adornment
+antlers
+crest
+{4} horns
+knobs
+ridges
+ruff
+spines
+
+: visage
+gibbering
+drooling
+glaring
+menacing
+rotting
+skeletal
+twitching
+wrinkled
+seamed
+
+: eyes
+one {:eye type} {:eye color} eye
+two {:eye type} {:eye color} eyes
+three {:eye type} {:eye color} eyes
+four {:eye type} {:eye color} eyes
+
+: eye type
+small, multifaceted
+small, slitted
+swivel-socketed
+stalked
+huge flat
+huge protruding
+sunken
+
+: eye color
+red
+black
+amber
+blue
+green
+metallic
+yellow
+white
+
+: nose
+flat misshapen
+huge bulbous
+snouted
+tiny
+trunk-like
+
+: ears
+dog-like ears
+elephant-like ears
+tiny humanlike ears
+huge humanlike ears
+trumpetlike
+no ears
+
+: mouth
+{tiny|huge|} {:mouth type}
+
+: mouth type
+fanged
+mandibled
+sucker-like
+small-toothed
+large-toothed
+tusked
+lipless
+toothless
+
+: torso
+{:build}{33%, {: back}} {:body type} torso
+
+: build
+fat
+long
+short
+thin
+
+: back
+blubbery
+broad
+hunched
+maned
+muscled
+narrow
+ridged
+rubbery
+spiked
+spined
+
+: body type
+ape-like
+bear-like
+bird-like
+humanoid
+pig-like
+rat-like
+ameboid
+bison-like
+cat-like
+crab-like
+horse-like
+insectoid
+serpentine
+reptilian
+spider-like
+
+: arms
+two {:arm type} ending in {:hands}
+four {:arm type} ending in {:hands}
+six {:arm type} ending in {:hands}
+
+: arm type
+furry arms
+feathered arms
+humanoid arms
+insectoid arms
+tentacles
+scaled arms
+
+: hands
+claws
+humanoid hands
+pincers
+talons
+tentacle-fingered
+webbed hands
+withered and bony hands
+large toothy suckers
+three-fingered hands
+
+: legs
+clawed
+hooved
+humanoid
+insectoid
+taloned
+webbed
+hairy
+scaled
+
+: skin
+Its whole body is covered with {:skin color} {:skin type}.
+Its {:skin color} {:skin type} drips with foul ichor.
+When light manages to touch its {:skin type}, it gives off a {:skin color} hue.
+Its {:skin type} has an unnatural {:skin color} tint to it.
+It has {:skin type} that is mostly {:skin color} but also {:skin color{!different}} in parts.
+
+: skin color
+blackish
+bluish
+brownish
+grayish
+greenish
+orangish
+pinkish
+purplish
+reddish
+tannish
+
+: skin type
+smooth skin
+fur
+bristled skin
+leathery skin
+leprous skin
+scaly skin
+slimy skin
+warty skin
+wrinkled skin
+
+: wings or tail
+It has {:wings} wings and a {:tail} tail.
+It has {:wings} wings.
+It has a {:tail} tail.
+
+: wings
+bat-like
+bird-like
+insect-like
+membranous
+fan-like
+vestigial
+ruined
+
+: tail
+barbed
+dog-like
+goat-like
+horse-like
+lion-like
+pig-like
+prehensile
+stingered
+
+: odor
+It is surrounded by a strong {:odor type} smell.
+The air around it is full of {:odor type} pungency and fear.
+A foul {:odor type} vapour emanates from it.
+The {:odor type} smell around it is overwhelming.
+The air is thick with its {:odor type} reek.
+It reeks of {:odor type} death.
+
+: odor type
+acidic
+bloody
+cloying
+fecal
+fishy
+gangrenous
+moldy
+putrid
+sulfurous
+sweaty
+urine

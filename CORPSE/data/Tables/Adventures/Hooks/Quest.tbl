@@ -1,7 +1,7 @@
 // inspired by http://donjon.bin.sh/fantasy/random/#quest
 
 : Quest
-{PROTAGANIST} seeks a party to {:TASK}.{33%?  But {plot twist}.}
+{PROTAGANIST} seeks a party to {:TASK}.{33%  But {plot twist}.}
 
 : Task
 capture {PROTAGANIST}
@@ -13,10 +13,10 @@ expose a {trait:bad} {PROTAGANIST}
 find a cure for {Disease}
 find {PROTAGANIST}
 prove themselves worthy by slaying {ANTAGONIST}
-{50%?find and }explore {Dungeon Name}
-{50%?find and }kill {PROTAGANIST}
-{50%?find and }recover {Special Item} from {75%?{ANTAGONIST}:{PLACE}}
-{50%?find and }rescue {PROTAGANIST} from {75%?{ANTAGONIST}:{PLACE}}
+{50%find and }explore {Dungeon Name}
+{50%find and }kill {PROTAGANIST}
+{50%find and }recover {Special Item} from {75%?{ANTAGONIST}:{PLACE}}
+{50%find and }rescue {PROTAGANIST} from {75%?{ANTAGONIST}:{PLACE}}
 
 ===
  

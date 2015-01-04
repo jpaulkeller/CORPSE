@@ -1,5 +1,5 @@
 : Dungeon Door
-8 {:type}; {:state}; made of {:material}{10%?; covered by {:covered by}}{10%?; {:special}} 
+8 {:type}; {:state}; made of {:material}{10%; covered by {:covered by}}{10%; {:special}} 
 1 doorway covered by hanging {leather|fur|cloth|strings of {beads|bells|{tiny item}}}
 1 doorway blocked by {:blocked by}
 
@@ -9,12 +9,12 @@
 1 sliding "pocket" door
 
 : State
-6 {10%?{stuck|spiked} }closed{10%?, {concealed|secret}}{50%?, {magically|mechanically} locked}
-3 closed{10%?, {concealed|secret}}{50%?, {magically|mechanically} locked}{20%?, trapped - {:trap}}
-1 {10%?{stuck|spiked} }open
+6 {10%{stuck|spiked} }closed{10%, {concealed|secret}}{50%, {magically|mechanically} locked}
+3 closed{10%, {concealed|secret}}{50%, {magically|mechanically} locked}{20%, trapped - {:trap}}
+1 {10%{stuck|spiked} }open
 
 : Material
-7 {10%?{reinforced|rotting|scorched} }{wood}
+7 {10%{reinforced|rotting|scorched} }{wood}
 2 {stone|granite|marble|obsidian|slate}
 1 {metal}
 

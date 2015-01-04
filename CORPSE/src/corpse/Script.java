@@ -164,13 +164,12 @@ public final class Script
          buf.append(include(m.group(1)));
       else if ((m = Constants.RANDOMIZE_LINE.matcher(resolved)).matches())
          randomize(m.group(1));
-      else if (!resolved.equals(""))
+      else if (!resolved.trim().isEmpty())
          buf.append(resolved + "\n");
    }
    
    public String resolve(final String entry)
    {
-      System.out.println("Script.resolve(): " + entry); // TODO
       String line = entry;
 
       Matcher m;
@@ -201,7 +200,7 @@ public final class Script
          if (resolvedToken.equals(token))
             line = m.replaceFirst("<$1>"); // avoid infinite loop
          else
-            line = m.replaceFirst(resolvedToken);
+            line = m.replaceFirst(Matcher.quoteReplacement(resolvedToken));
          // System.out.println("Line = " + line);
       }
 

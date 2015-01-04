@@ -1,7 +1,7 @@
 / The following tables gives adventure ideas which have a similar feel to Edgar Rice Burroughs' Barsoom series
 / source or inspiration: Savage Swords of Athanor
 
-Villain: {:Villain}{10%? and {:villain}}
+Villain: {:Villain}{10% and {:villain}}
 Scheme: {:scheme}
 Victim: {:victim}
 Ally: {:victim}

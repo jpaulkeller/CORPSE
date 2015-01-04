@@ -1,48 +1,55 @@
-Fascinated with the civilized world.
-Their tribe has been wiped out (optionally roll again: 1 by another tribe 2 by an evil shaman or wizard 3-4 by 'civilised' folk 5 by internal strife 6 by disease).
-Fleeing an unwanted arranged marriage.
-Chosen for human sacrifice.
-Rejected in love and set out to prove themselves.
-Rejected in love and set out to get themselves killed.
-Sentenced to death for a crime (optionally roll again: 1-3 innocent 4 guilty 5 guilty, but had a good reason 6 guilty, but manipulated or tricked into it by another).
-Exiled for a crime (optionally roll again: 1-3 innocent 4 guilty 5 guilty, but had a good reason 6 guilty, but manipulated or tricked into it by another).
-Escaping their low status in their tribe.
+: Motivation
 
-Too intelligent and inquisitive to be satisfied with the life of a peasant.
-Too free-spirited to be satisfied with the life of a peasant.
-Escaping an oppressive fuedal lord.
-Rejected in love and set out to prove themselves.
-Rejected in love and set out to get themselves killed.
-Sentenced to death for a crime (optionally roll again: 1-3 innocent 4 guilty 5 guilty, but had a good reason 6 guilty, but manipulated or tricked into it by another).
-Escaped convict (optionally roll again: 1-3 innocent 4 guilty 5 guilty, but had a good reason 6 guilty, but manipulated or tricked into it by another).
-Family were killed (optionally roll again: 1-2 starvation, 3-4 war, 5-6 disease).
-Became a refugee (optionally roll again: 1-2 starvation, 3-4 war, 5-6 disease).
-Deserted from the army.
-Took part in a failed rebellion.
-Escaping debt.
+a more favoured sibling is going to inherit the family wealth
+an older sibling is going to inherit the family wealth
+became a refugee due to {starvation|war|disease|{disaster}}
+chosen for human sacrifice
+committed a crime, and was let off on condition that they go into exile ({:guilt})
+deserted from the army
+escaped convict ({:guilt})
+escaping an oppressive feudal lord
+escaping debt
+escaping their low status in their tribe
+exiled for a crime ({:guilt})
+family were killed due to {starvation|war|disease|{disaster}}
+fascinated with the civilized world
+fleeing an unwanted arranged marriage
+fleeing an unwanted arranged marriage
+guilt about the source of the family's wealth ({slavery|crime|war|political objection to inequality of wealth|religious objection to luxury})
+rejected in love and set out to get themselves killed
+rejected in love and set out to prove themselves
+sentenced to death for a crime ({:guilt})
+the character has terrible but enticing dreams of sitting on the throne of a vast underworld kingdom
+the character is haunted by visions of a beautiful woman/handsome man living on an island at the center of a vast underground lake (it's {the character's true love|an incubus/succubus|a sorcerer/sorceress|someone who died centuries ago})
+the character is obsessed with an item which relates to their profession: a legendary sword for warriors, a great wizard's spellbook for wizards, a holy relic for priests, and so on
+the character is obsessed with proving the existence of a hollow world, with people living on the inside surface (if the characters are from the hollow world, then the character is obsessed with proving the existence of people on the outside surface)
+the character owes a large sum of money to someone so powerful that fleeing isn't an option (a {high-ranking criminal|powerful government})
+the character quests to retrieve the bones of their famous adventuring ancestor and re-inter them in the family tomb
+the character seeks one segment of a magic item they must obtain all the parts of the item to save their homeland from its foretold doom
+the character seeks vengeance against the troll king
+the character's ({evil twin|robot double|clone|homonculus}) has fled into the dungeon one or the other must die before both go mad
+the character's {:associate} has been trapped in amber and is on display in the trophy room of an evil wizard who lives in the dungeon
+the character's {:associate} is dying from a disease that can only be cured with the waters from a sacred subterranean spring
+the character's {:associate} is imprisoned ({:guilt})
+their family has lost their wealth, due to {another family member's|the adventurers'} actions
+their family has lost their wealth, due to being on the losing side of a {war|political struggle}
+their tribe has been wiped out by {another tribe|an evil {shaman|wizard}|'civilised' folk|internal strife|disease}
+too free-spirited to be satisfied with the life of a peasant
+too intelligent and inquisitive to be satisfied with the life of a peasant
+took part in a failed rebellion
+wanted for a crime ({:guilt})
 
-An older sibling is going to inherit the family wealth.
-A more favoured sibling is going to inherit the family wealth.
-Their family has lost their wealth, due to the adventurers' actions.
-Their family has lost their wealth, due to another family member's actions.
-Their family has lost their wealth, due to being on the losing side of a war.
-Their family has lost their wealth, due to being on the losing side of a political struggle.
-Guilt about the source of the family's wealth (optionally roll again: 1-2 slavery 3 crime 4 war 5 political objection to inequality of wealth 6 religious objection to luxury).
-Rejected in love and set out to prove themselves.
-Rejected in love and set out to get themselves killed.
-Wanted for a crime (optionally roll again: 1-3 innocent 4 guilty 5 guilty, but had a good reason 6 guilty, but manipulated or tricked into it by another).
-Committed a crime, and was let off on condition that they go into exile (optionally roll again: 1-3 innocent 4 guilty 5 guilty, but had a good reason 6 guilty, but manipulated or tricked into it by another).
-Fleeing an unwanted arranged marriage.
+: Guilt
+{innocent|framed|guilty|guilty, but had a good reason|guilty, but {manipulated|tricked} into it by another}
 
-The character is obsessed with proving the existence of a hollow world, with people living on the inside surface (if the characters are from the hollow world, then the character is obsessed with proving the existence of people on the outside surface).
-The character quests to retrieve the bones of their famous adventuring ancestor and re-inter them in the family tomb.
-The character has terrible but enticing dreams of sitting on the throne of a vast underworld kingdom.
-The character owes a large sum of money to someone so powerful that fleeing isn't an option (roll again: 1-3 a high-ranking criminal 4-6 a powerful government).
-The character seeks vengeance against the Troll King.
-The character's X is dying from a disease that can only be cured with the waters from a sacred subterranean spring.
-The character is haunted by visions of a beautiful woman/handsome man living on an island at the center of a vast underground lake (roll again: 1-3 it's the character's true love 4 it's an incubus/succubus 5 it's a sorcerer/sorceress 6 it's someone who died centuries ago.
-The character seeks one segment of a magic item. They must obtain all the parts of the item to save their homeland from its foretold doom.
-The character's (roll again: 1-3 evil twin 4 robot double 5 clone 6 homonculus) has fled into the dungeon. One or the other must die before both go mad.
-The character's X has been trapped in amber and is on display in the trophy room of an evil wizard who lives in the dungeon.
-The character's X is imprisoned (optionally roll again: 1-3 innocent 4 guilty 5 guilty, but had a good reason 6 guilty, but manipulated or tricked into it by another). A corrupt official will release them in exchange for a magic item in the dungeon.
-The character is obsessed with an item which relates to their profession: a legendary sword for warriors, a great wizard's spellbook for wizards, a holy relic for priests, and so on.
+: Associate
+boss
+family
+fiance
+friend
+hireling
+mistress
+spouse
+{brother|sister}
+{mother|father}
+{son|daughter}

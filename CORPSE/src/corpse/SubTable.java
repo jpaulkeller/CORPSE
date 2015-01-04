@@ -7,6 +7,7 @@ public final class SubTable extends Table
 {
    private static final long serialVersionUID = 1L;
 
+   private Table unfiltered;
    private Subset subset;
    private Column column;
    private int count;
@@ -49,9 +50,9 @@ public final class SubTable extends Table
 
    private void importTable(final String token, String xrefTbl, String xrefSub, String xrefCol, String xrefFil)
    {
-      // System.out.println("SubTable [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
+      System.out.println("SubTable [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
 
-      Table unfiltered = Table.getTable(xrefTbl);
+      unfiltered = Table.getTable(xrefTbl);
       tableName = token;
       file = new File(unfiltered.file.getAbsolutePath());
       if (xrefSub != null)
@@ -70,7 +71,7 @@ public final class SubTable extends Table
    public boolean add(final String line)
    {
       count++;
-      if (subset == null || subset.includes(count, line))
+      if (subset == null || subset.includes(unfiltered, count, line))
       {
          String entry = line;
          if (column != null)
@@ -103,18 +104,19 @@ public final class SubTable extends Table
    {
       CORPSE.init(true);
 
-      // test("{Profession.#G.*#}", "column and filter");
-      // test("{Color:Basic#C.*#}", "subset and filter");
-      // test("{Metallic}", "included file");
       // test("{Calendar:Astronomical}", "subset");
-      // test("{Gender}", "default column");
-      // test("{Gender!}", "full line (don't use default column)");
-      // test("{Quality}", "default subset");
-      // test("{Quality!}", "full line (don't use default subset)");
-      // test("{DiffTest#.+(?<!Common)#}", "negative look-ahead regex to prevent collision");
       // test("{Color#.*(ee|ro).*#}", "filter with alteration");
+      // test("{Color:Basic#C.*#}", "subset and filter");
+      // test("{DiffTest#.+(?<!Common)#}", "negative look-ahead regex to prevent collision");
+      // test("{Gender!}", "full line (don't use default column)");
+      // test("{Gender}", "default column");
+      // test("{Metallic}", "included file");
       // test("{Profession+#.*craftsman.*#}", "filter subsets");
-      test("{Profession:Criminal}", "subset filter");
+      // test("{Profession.#G.*#}", "column and filter");
       // test("{Profession.Job}", "composite column");
+      // test("{Profession:Criminal}", "subset filter");
+      // test("{Quality!}", "full line (don't use default subset)");
+      // test("{Quality}", "default subset");
+      test("{Metal:Common}", "subset filter");
    }
 }

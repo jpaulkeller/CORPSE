@@ -4,15 +4,24 @@
 The {Pseudo Class} {:Type}
 The {Evocative:Mean} {:Type}
 The {:Type} of{ the | }{Place Name}
-The {:Type} of {Name}{25%? the {Evocative:Adj}}
+The {:Type} of {Name}{25% the {Evocative:Adj}}
 The {:Type} of {Number:Plural} {{Weapon}+}
 The {:Type} of {Evocative:Mean} {Evocative:Evil}
 The {:Type} of {Evocative:Mean} {{Pseudo Class}+}
 
 : Type
+assault
+attack
 battle
 campaign
 conflict
 crusade
+defense
+destruction
+pillage
+razing
+resistance
+sacking
 siege
-war{20%?s}
+siege
+war{20%s}
