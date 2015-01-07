@@ -1,0 +1,69 @@
+/ http://random-generator.com/index.php?title=Bows
+
+: Bow Flavor
+A {:TYPE} bow made of {made of:bow}. {25%Condition: {condition} }{75%The grip is {:GRIP}. }{25%The bowstring is {:STRING}. }{50%Accompanying the bow is a {:ACCESSORY}.}
+
+: Type
+Elven 
+Elven double 
+Elven long
+Orcish great
+composite great
+composite long
+great
+hunting 
+long
+short
+{:SUBTYPE} short
+
+: Subtype
+composite
+Gnomish
+Dwarven
+Goblin
+
+: Grip
+unwrapped and rough, making the weapon impractical in combat
+unwrapped, but smooth and comfortable from regular use
+wrapped in {:color} {:fabric}
+wrapped in {color:drab} leather
+
+: Color
+{color:bright}
+{color:dark}
+{color:dark} and {color:bright}
+{color:dark} and {color:light}
+{color:drab}
+{color:drab} and {color:bright}
+{color:light}
+
+: String
+actually a fine chain made of {:Swords.Quality} {:Utility.MetalDecor}.
+actually a single wire made of {:Swords.Quality} {:Utility.MetalDecor}.
+made of {75%braided }{color:leather} {:leather}
+missing
+missing, save for a small piece tied at the topnotch.
+
+: Leather
+bat leather
+calfskin
+camel leather
+catgut
+deer leather
+horse hide
+leather
+pigskin
+sheepskin leather
+suede
+
+: Accessory
+quiver of leather with {fur and pelt.animal} fur trim. It contains {ammo flavor:arrow}
+quiver of leather. It contains {ammo flavor:arrow}
+quiver of {fur and pelt.animal} fur with leather trim. It contains {ammo flavor:arrow}
+two-fingered {10%left-handed }archer’s glove made of leather
+{:shield} archer’s shield made of {wood:weapon} painted {:color} with a staked bottom so it can stand upright in ground
+
+: Shield
+notch-topped
+slatted
+tall

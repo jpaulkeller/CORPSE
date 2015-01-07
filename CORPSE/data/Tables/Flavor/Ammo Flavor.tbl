@@ -1,14 +1,15 @@
 / http://random-generator.com/index.php?title=ammunitionthrown
 
-20 {:arrow}
-18 {:bolt}
-15 {:thrown}
+: Ammo Flavor
+{:arrow}
+{:bolt}
+{:thrown}
 
 : arrow
-1 {3d10} {:arrow type} with shafts of {wood} wood {:shaft color} and {:fletching}
+{3d10} {:arrow type} with shafts of {wood} wood {:shaft color} and {:fletching}
 
 : bolt
-1 {3d10} {:bolt type} with shafts of {wood} wood {:shaft color} and {:fletching}
+{3d10} {:bolt type} with shafts of {wood} wood {:shaft color} and {:fletching}
 
 : start no description
 100 {:arrow type}

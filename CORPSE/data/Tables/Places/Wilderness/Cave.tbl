@@ -1,0 +1,152 @@
+/ http://random-generator.com/index.php?title=Cave_generator
+/ http://goblinpunch.blogspot.ca
+/ http://lizardmandiaries.blogspot.com.au/2013/12/flatter-crikemass-and-his-oily-black.html
+
+: Name
+cave
+cavern
+hideout
+hole
+pit
+
+: Entrance
+broad, classic entrance, sunlight floods first cavern
+narrow crevice, no fatties allowed
+steep hole, tumbling or rock fall risk
+vertical hole/cliff down
+covered in ferns or other vegetation
+menacing insect or other pest nest/hive covering entrance
+entrance visible but mostly blocked by dirt or debris
+suspicious signs of habitation
+entrance {10}0' off the ground
+slippery with guano or other droppings
+mountain stream exits here, cavern system filled with streams and pools
+worked stone steps
+
+: General
+10 wet caverns, filled with lots of pools and dripping stalactites
+3 lava, very hot
+5 abundant vegetation, mostly ferns and fungi
+5 caverns walls and ceilings covered in {markings|symbols|drawing of {animals|a map}}
+5 {humanoid:subterranean} ruins
+5 seemingly abandoned animal habitation: nests, skins, fur, hair, eggs, holes, droppings, etc.
+5 seemingly abandoned humanoid habitations: beds, shelters, firepits, refuse, markings, furs, etc.
+7 veins of attractive-looking minerals
+8 local rock type
+8 smooth marble
+8 soft-looking rocks and boulders (probably granite)
+9 crystals protruding from walls
+9 root protruding through rock
+9 sandy and porous rock (probably limestone)
+
+: Tunnel
+no linking tunnel, caverns open directly onto one another
+steep ascent, {10}0' long; chance of stumbling and falling backwards
+steep descent, {10}0' long; chance of stumbling and falling forward
+vertical ascent (cliff), {10}0' high
+vertical drop (cliff), {10}0' deep
+flat, {5d20}' long
+smooth and tubular (formed by ancient {water|lava} flow)
+smooth and tubular (formed by cave worm)
+smooth, tubular, and slimy (formed by ooze)
+{smooth|rough} carved {flat passage|{ramp|stairs} {up|down}}
+
+: Tunnel Feature
+bats, insects, or others pests
+dry, dusty rock
+hard, jagged crystalline mineral formation (good for climbing, may cut ropes)
+moss and lichen indicate occasional flooding
+old used ropes or hanging vines/roots
+slippery and wet or otherwise moldy rock
+small (1 person abreast)
+stream/river
+tiny (humans must crawl)
+trap
+vegetation (mushrooms and ferns complicate climbing)
+{50%mostly }rough
+{50%mostly }smooth
+
+: Shape
+domed
+bowl-shaped
+roughly rectangular
+roughly spherical
+roughly square
+roughly triangular
+
+: Ceiling
+covered in {20%damp }stalactites
+covered in {fresh |old |dusty |}webs
+domed
+high
+low
+slopes from {10,30}' near the center side to {15,40}' on the perimeter
+slopes from {10,30}' on the perimeter to {15,40}' in the center 
+slopes from {10,30}' on the {north|south|east|west} side to {15,40}' on the opposite side
+slopes {20%steeply }down towards the {center|north|south|east|west}
+{15,40}' high
+
+: Light
+10 bright natural light
+20 dim natural light
+60 pitch black
+10 unnatural light
+
+: Size
+tiny ({6-15}' x {8-20}')
+small ({20-40}' x {30-50}')
+medium ({30-60}' x {40-70}')
+large ({30-80}' x {40-90}')
+huge ({100,150}' x {100,150}')
+
+: Exit
+{left|right|opposite} of the original entrance
+on the {highest|lowest} point of the ceiling
+
+: Feature = Feature Natural + Feature Artificial 
+
+: Feature Natural
+cavern cut in half by a deep crevice
+ceiling open to outside world
+damp
+filled with water
+honeycombed crystal with holes and drops (possibly deadly)
+large whirlpool
+overgrown vegetation
+smoke or gas
+{degree:adjective} {cold|hot|wet}
+{sparsely|mostly} covered with stalagmites
+humongous crystal
+{nest|lair|burrow}
+{10%luminescent} {fungus}
+
+: Feature Artificial
+altar
+gathering place
+graveyard or burial ground
+fortifications
+one side of the cavern dominated by huge artwork of {:SUBJECT}
+{ART:STATUE}
+unusually smooth walls, floors, and ceilings - the stone has been polished
+viewing platform of forest/mountain (if an ascended cavern) or lake (if descended)
+{covered in|littered with} {guano|refuse|bones}
+
+: Content = Content Misc + Content Living
+
+: Content Misc 
+lots of candles and assorted religious paraphernalia
+discarded {~{tiny item}}
+treasure
+{merchandise}
+
+: Content Living
+animals
+bandits, degenerates or mutants
+cultists, con artist or thief
+hidden treasure
+holy people, monk, nun, or priest
+hordes of vermin
+lunatic, hermit, or bard
+spelunkers, treasure hunters or other adventurers
+wandering monster
+{2d6} {{humanoid:subterranean}+} - {meditating|celebrating|studying|foraging|mining|digging|building}

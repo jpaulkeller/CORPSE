@@ -1,7 +1,7 @@
 / http://recedingrules.blogspot.com/2009/07/telecanters-dm-spurs-encounters.html
 
 : TC Abstract Encounter
-{:what} {:sense} {direction} {distance}
+{:what} {:sense} {direction} {proximity}
  
 : What 
 artifact

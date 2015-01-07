@@ -1,17 +1,26 @@
-/ for adjectives, use :Adj, :Nice or :Mean
-/ for nouns, use :Noun, :Good, :Neutral, :Evil, :Not Good, or :Not Evil
+\/ for adjectives
+: Adj = Nice + Neutral Adj + Mean
+: Not Nice = Mean + Neutral Adj
+: Not Mean = Nice + Neutral Adj
+
+/ for nouns
+: Noun = Good + Neutral Noun + Evil
+: Not Good = Evil + Neutral Noun
+: Not Evil = Good + Neutral Noun
 
 : Nice
 amazing
-ancient
+ascendant
 astonishing
 astounding
 awesome
+blossoming
 breathtaking
+brightest
 brilliant
+celestial
 dazzling
 divine
-elder
 exalted
 extraordinary
 fantastic
@@ -21,6 +30,7 @@ golden
 incredible
 inspirational
 magical
+magnificent
 magnificent
 majestic
 marvelous
@@ -34,7 +44,20 @@ resplendent
 scintillating
 spectacular
 splendid
+transcendent
+true
 wondrous
+
+: Neutral Adj
+ancient
+elder
+eternal
+final
+perpetual
+serene
+tranquil
+utter
+uttermost
 
 : Mean
 accursed
@@ -57,6 +80,7 @@ ebon
 eldritch
 eternal
 fabled
+fallen
 fiery
 forbidden
 forgotten
@@ -93,8 +117,6 @@ vanishing
 warped
 weird
 
-: Adj = Nice + Mean 
-
 : Good
 beauty
 birth
@@ -105,6 +127,7 @@ destiny
 growth
 harmony
 healing
+heart
 heaven
 hope
 joy
@@ -117,11 +140,12 @@ luck
 mercy
 peace
 prosperity
+radiance
 resurrection
 riches
 victory
 
-: Neutral
+: Neutral Noun
 augury
 binding
 civilization
@@ -171,6 +195,7 @@ oaths
 phantom
 pity
 portals
+prophecy
 refuge
 retreat
 retribution
@@ -245,9 +270,10 @@ blindness
 blood
 bondage
 bones
+broken promises
 calamity
-catastrophe
 cataclysm
+catastrophe
 chaos
 contagion
 curses
@@ -258,6 +284,7 @@ decay
 deceit
 defeat
 demons
+desolation
 despair
 destruction
 devastation
@@ -273,15 +300,19 @@ famine
 fatality
 fear
 fire
+forgotten dreams
 frost
 gloom
 greed
 hatred
 hells
 horrors
+hunger
 ichor
+insanity
 iron
 lies
+lost souls
 madness
 malice
 misery
@@ -323,6 +354,7 @@ the dweller{s|} in the {dark site}
 the gloom
 the inferno
 the lost
+the old ones
 the swarm
 the undead
 the undercity
@@ -339,7 +371,4 @@ tragedy
 treachery
 trickery
 trouble
-
-: Noun = Good + Neutral + Evil
-: Not Good = Evil + Neutral
-: Not Evil = Good + Neutral
+woe

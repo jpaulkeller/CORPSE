@@ -1,0 +1,929 @@
+/ http://random-generator.com/index.php?title=CC_Treasure
+
+;main
+1,[hiddenchance] [container] [hoardsize], worth [basevalue]% of normal 
+
+;basevalue
+1,1
+2,10
+5,25
+6,50
+10,75
+52,100
+10,150
+6,200
+5,300
+2,500
+1,1000
+
+;treasuretype
+1,[art]
+2,[jeweled]
+4,[goods]
+6,[coins]
+3,[furnishcloth]
+2,Gems
+1,a Magic Item
+
+;treasurenocoin
+1,[art]
+2,[jeweled]
+4,[goods]
+3,[furnishcloth]
+2,Gems
+1,a Magic item
+
+;container
+1,a Bag [trapchance] with
+1,a Sack [trapchance] with
+1,a Barrel [trapchance] with
+1,a Cask [trapchance] with
+1,a Coffer [trapchance] with
+1,a Kist [trapchance] with
+2,a Chest [chesttrapchance] with
+2,a Huge Chest [chesttrapchance] with
+2,a Trunk [trapchance] with
+2,an Urn [trapchance] with
+2,a Jar [trapchance] with
+2,tucked in a nich Niche [trapchance]
+2,
+
+;hiddenchance
+1,[hidden]
+19,
+
+;hidden
+2,concealed
+1,invisible
+1,in a secret space under
+1,in a secret compartment
+1,inside an ordinary item in plain view
+1,disguised as something else
+1,under a heap of trash or dung
+1,under a loose stone
+1,in a nearby secret room
+
+;trapchance
+1,[trap]
+19,
+
+;chesttrapchance
+5,[trap]
+15,
+
+;trap
+1,holds treasure protected by contact poison
+1,, protected by contact poison
+3,with a poisoned needle in the lock
+3,withs a poison needle in the handle
+2,with poisoned spring darts in the front
+2,with poisoned spring darts on the top
+2,with poisoned spring darts on the inside of the lid
+2,with poisoned spring darts inside at the bottom of the container
+1,with a blade that scythes on the top,
+1,The treasure is guarded by poisonous vermin (insects, reptiles)
+1,Poison gas is released
+1,A trap-door opens
+1,A stone block drops
+1,The treasure has a magical trap upon it
+
+;hoardsize
+1,[treasuretype]
+2,[unguarded]
+4,[small]
+6,[medium]
+3,[large]
+2,[huge]
+1,[massive]
+1,[gargantuan]
+
+;unguarded
+1,[treasuretype]
+1,[treasuretype], and [treasuretype]
+1,[treasuretype, [treasuretype], and [treasuretype]
+
+;small
+1,[treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+
+;medium
+1,[treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+
+;large
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+
+;huge
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+2,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+3,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+4,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+3,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+2,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+
+;massive
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+3,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+6,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+10,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+12,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+12,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+10,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+6,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+3,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+
+;gargantuan
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+1,[treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], [treasuretype], and [treasuretype]
+
+;art
+1,a [artsize] [artage] [artquality] [artstyle] [arttype] by the [artrenown] artist [Fantasy Names.mainNoLabel][artcondition]
+
+;artsize
+1,Tiny
+1,Very Small
+3,Small
+8,
+4,Large
+1,Very large
+1,Huge
+1,[artextralarge]
+
+;artextralarge
+14,Massive
+6,Gargantuan
+
+;artage
+1,Avant-garde
+1,Current
+1,Recent
+1,
+4,Modern
+1,Old
+1,Antique
+1,[artextraold]
+
+;artextraold
+14,Venerable
+5,Archaic
+1,[artsuperold]
+
+;artsuperold
+18,Antedivulian
+2,Primordial
+
+;artstyle
+1,abstract
+1,monster-themed
+1,human-interest
+2,natural-themed
+1,supernatural
+2,local interest
+2,historical
+5,religious
+2,noble-themed
+1,royal
+
+;arttype
+2,[papermedium] [papertechnique] on [papersubstrate]
+2,[fabricarts]
+2,[painting]
+2,[crafts]
+2,[carvingart]
+2,[ceramicart]
+2,[glassworkart]
+3,[stoneworkart]
+2,[metalworkart]
+1,Magical [arttype]
+
+;papermedium
+1,pastel
+1,chalk 
+1,oil-stick 
+1,charcoal
+1,conté
+1,ink
+
+;papertechnique
+3,calligraphy
+2,printing
+1,illustrating a manuscript
+1,illustrating a letter
+2,drawing of [Utility.Symbols]
+
+;papersubstrate
+3,paper
+2,canvas
+1,wood
+1,plaster
+1,[Utility.MetalDecor]
+3,vellum
+2,parchment
+
+;fabricarts
+1,Applique
+4,Beadwork
+1,Crochet
+1,Cross-stitch
+3,Dyed fabric
+2,Embroidery
+1,Felting
+1,Knitting
+1,Lace
+1,Macrame
+1,Nålebinding
+1,Needlework
+1,Patchwork
+1,Passementerie
+2,Quilt
+1,Rope
+1,Rugmaking
+1,Sewing
+4,Tapestry
+1,Printed textile
+5,Weaving
+
+
+;painting
+1,Oil painting
+1,Encaustic painting
+1,Fresco
+1,Gesso painting
+1,Glazed painting
+1,Gouache Painting
+1,Ink sketch
+1,Sumi painting
+1,Tempera painting
+1,Watercolour painting
+
+;crafts
+2,Bracelet
+1,Lace
+1,Origami
+1,Decorated egg
+1,Mosaic
+3,Doll
+3,beautifully bound [book]
+
+;carvingart
+5,Wood-carving
+1,scrimshaw
+1,bone-carving
+1,ivory-carving
+1,scale carving
+4,Stone-carving
+
+;ceramicart
+1,Figures
+1,Ceramic statue
+1,Tiles
+1,Tableware
+1,pottery
+
+;glassworkart
+1,glass beads
+1,glass decanter
+1,chandelier
+1,goblets
+1,crystal glasses
+1,glass pipe
+1,glass bowl
+1,stained-glass window
+1,glass flowers
+1,etched and engraved tiles
+
+;stoneworkart
+1,[stonematerial] statue
+1,[stonematerial] carvings
+1,engraving of [Utility.Symbols] in [stonematerial]
+1,lapidary carved in [stonematerial]
+1,Pietra dura
+1,[stonematerial] birdbath
+1,[stonematerial] fountain
+
+;stonematerial
+2,brick
+2,marble
+2,slate
+2,granite
+2,travertine
+2,limestone
+2,sandstone
+1,gems
+4,[Utility.StoneDecorative]
+
+;metalworkart
+1,[Utility.MetalDecor] sculpture
+1,[Utility.MetalDecor] furnishings
+1,[Utility.MetalDecor] miniatures
+1,[Utility.MetalDecor] tools
+1,[Utility.MetalDecor] tableware
+
+;artquality
+1,Awful
+1,Poor
+3,Below-average
+8,
+4,Above average
+1,Good
+1,Excellent
+1,[extraartquality]
+
+;extraartquality
+14,Brilliant
+6,Masterpiece
+
+;artrenown
+3,Unknown
+2,Obscure
+4,Locally known
+4,regionally known
+4,nationally known
+1,continentally known
+1,[artextrarenown]
+
+;artextrarenown
+16,world-renowned
+4,ubiquitous
+
+;artcondition
+1,, that has been badly damaged
+1,, that has been somewhat damaged
+3,, that looks worn
+8,
+4,, in good condition
+1,, in excellent condidition
+1,, in near perfect condition
+1,[artextracondition]
+
+;artextracondition
+14,, in perfect condition
+6,, flawless
+
+;jeweled
+1,a [Utility.MetalDecor] [jeweleditem]
+1,a Finely-made [jeweleditem]
+1,a Carved or beveled [jeweleditem]
+1,a [jeweleditem] inlaid with [Utility.Jewels]
+1,a polished [jeweleditem]
+
+;jeweleditem
+2,Anklet
+3,Armband
+2,Belt
+2,Small box
+5,Bracelet
+3,Brooch
+1,Buckle
+1,Chain
+1,Chalice
+1,Choker
+1,Clasp
+1,Collar
+1,Coffer
+1,Comb
+1,Coronet
+1,Crown
+1,Decanter
+1,Diadem
+3,Earring
+1,Fob
+2,Goblet
+3,Fillet Headband
+1,Idol
+2,Locket
+1,Medal
+1,Medallion
+3,Necklace
+1,Pendant
+1,Pin
+1,Orb
+4,Ring
+1,Scepter
+1,Seal
+1,Statuette
+1,Tiara
+2,Mask
+1,Nose ring
+2,Circlet
+2,Torc
+3,[utensils]
+1,Chatelaine
+1,Cuff link
+1,Lapel pin
+1,Grill
+1,Bangles
+1,Body piercing
+1,Prayer beads
+1,Puzzle
+1,Aiguillette
+1,Cock ring
+1,Pectoral
+1,Zierscheibe ornamental disc
+1,Icon
+1,Egg
+3,weapon
+4,Armour
+3,Tool
+6,[treasurenocoin]
+1,the container itself
+
+;utensils
+1,Adhesive
+1,Adze
+1,Ankus
+1,Anvil
+1,Auger
+1,Awl
+1,Ball
+1,Bangles
+1,Bell
+1,Bellows
+1,Block and tackle
+1,Bottle
+1,Bow drill
+1,Bowl
+1,Branding iron
+1,Brush
+1,Buckle
+1,Stopper
+1,Candelabra
+1,Candlestick
+1,Cards
+1,Carding comb
+1,Carpenter's square
+1,Cauldron
+1,Chisel
+1,Coffin
+1,Combs
+1,Corkscrew
+1,Crowbar
+1,Cup
+1,Dice
+1,Drill bits
+1,Drill
+1,Drinking jack
+1,Drinking horn
+1,Dolls
+1,Door handle
+1,Ewer
+1,Eye patch
+1,File
+1,Fingerpick
+1,Fish-hook
+1,Flagon
+1,Forge
+1,Fork
+1,Game pieces
+1,Grindstone
+1,Goblet
+1,Hammer
+1,Hilt
+1,Hoe
+1,Hollow Reed
+1,Kettle
+1,Key Ring
+1,Knives
+1,Ladle
+1,Loom
+1,Mallet
+1,Mantle
+1,Mask
+1,Mirror
+1,Mold
+1,Mortar & Pestle
+1,Monocle
+1,Mug
+1,Nails
+1,Paint
+1,Pan
+1,Peg-leg
+1,Pickaxe
+1,Pitcher
+1,Pitchfork
+1,Pen Case
+1,Planner
+1,Platter
+1,Pliers
+1,Plow
+1,Pot
+1,Potters Wheel
+1,Pouch
+1,Small box
+1,Pulley
+1,Rake
+1,Rope
+1,Salt cellar
+1,Saw
+1,Scissors
+1,Scepter
+1,Shepherd's Crook
+1,Sledge
+1,Spade
+1,Spit
+1,Spoon
+1,Stein
+1,Thimble
+1,Tile
+1,Tray
+1,Tongs
+1,Vestment
+1,Wedge
+1,Wheelbarrow
+1,Whetstone
+1,Shitewash
+1,Wire
+1,Whistle
+20,[utensils]s, and [utensils]
+
+;goods
+1,[lowvaluegoods]
+2,[highvaluegoods]
+
+;lowvaluegoods
+2,cotton
+3,wool
+3,flax
+2,[Utility.LeatherHide]
+8,[Utility.Fur] fur
+1,iron ingots
+1,copper ingots
+1,lead ingots
+1,tin ingots
+3,lumber
+3,Wine
+3,Ale
+3,Liquor
+12,Grain and foodstuffs
+3,[livestock]
+2,Sugar
+2,Spices
+2,Hemp
+2,Jute
+2,Herbs
+2,Salt
+1,Pipeweed
+3,Dressed stone
+4,[fabric] fabric
+6,[Utility.LeatherHide] leather goods
+2,Pewter [utensils]s
+2,Bronze [utensils]s
+2,Copperware [utensils]s
+2,Ceramic [utensils]s
+9,Wooden [utensils]s
+5,Steel bars
+
+;highvaluegoods
+6,Armour
+6,Weapons
+3,Tea
+1,Coffee
+4,Exotic Fruit
+3,Decorated leather
+4,Silk
+3,embroidered [fabric] fabric
+1,fine [fabric] fabric
+1,Gold bars
+2,Silver bars
+4,Ivory
+2,Medicine
+1,Narcotics
+6,Perfume
+2,[raremetal] ingots
+2,Rare lumber
+13,[religiousartifact]
+23,[book]
+2,Silver ingots
+2,Gold ingots
+1,Platinum ingots
+8,[labitems] for laboratory use
+2,Magical components
+
+;raremetal
+1,Mithral
+1,Adamantine
+3,Dwarf-iron
+3,Fine Steel
+2,Alchemical silver
+2,Orichalcum
+
+;religiousartifact
+2,an altar
+4,an altarcloth
+3,bells
+2,a brazier
+4,a candelabra
+4,candles
+3,candlestick holders
+1,a cassock
+2,a censer
+3,a chalice
+2,chimes
+1,a drum
+1,a font
+3,holy symbols
+1,holy relics
+2,an idol
+5,incense
+2,incense burners
+1,a kneeling bench
+2,a lamp
+1,a lectern
+1,a mosaic
+1,an offertory container
+1,a reliquary
+1,a screen
+1,a shrine
+1,snuffing bells
+1,a thurible
+1,a tripod
+2,vestments
+1,votive lights
+1,a whistle
+20,[religiousartifact], and [religiousartifact]
+
+;labitems
+1,adhesive
+1,an alembic
+1,an astrolabe
+1,a balance and weighs
+1,a beaker
+1,a bellows
+1,a bladders
+1,a bottle
+1,a bowl
+1,a boxe
+1,a brazier
+1,a cage
+1,a cauldron
+1,a candles
+1,a candlestick
+1,a carafe
+1,a chalk
+1,a crucible
+1,a cruet
+1,a crystal ball
+1,a decanter
+1,a desk
+1,a dish
+1,a flask
+1,a funnel
+1,a furnace
+1,a horn
+1,a hourglass
+1,ink
+1,an inkwell
+1,a jar
+1,a jug
+1,a kettle
+1,a ladle
+1,a lamp
+1,lenses
+1,maps
+1,a mortar and pestle
+1,a pan
+1,paper
+1,parchment
+1,papyrus
+1,a pentalce
+1,a pentagram
+1,a phial
+1,a pipette
+1,a pot
+1,a prism
+1,a quill
+1,a retort
+1,a stirring rod
+1,a scroll tube
+1,a sheet
+1,a skin
+1,a skull
+1,a spatula
+1,a measuring spoon
+1,an stand
+1,a stool
+1,a taxidermied [Animal.symbolicanimal]
+1,a tank
+1,a tongs
+1,a tripod
+1,a tube
+1,a tweezers
+1,vellum
+1,a vial
+1,a waterclock
+1,wax
+1,wires
+1,a workbench
+3,a potion
+3,poison
+2,alchemical ingredients
+20,[labitems], and [labitems]
+
+
+;fabric
+1,Barkcloth
+1,Broadcloth
+1,Burlap
+1,Calico
+1,Cambric
+1,Canvas
+1,Cheesecloth
+1,Chiffon
+1,Cloth of gold
+1,Crepe
+1,Denim
+1,Flannel
+1,Gauze
+1,Haircloth
+1,Herringbone
+1,Himroo
+1,Hodden
+1,Khaki
+1,Loncloth
+1,Moleskin
+1,Muslin
+1,Oilskin
+1,Ottoman
+1,Oxford
+1,Samite
+1,Sateen
+1,Satin
+1,Scarlet
+1,Seersucker
+1,Silk
+1,Tweed
+1,Twill
+1,Brocade
+1,Corduroy
+1,Plush
+1,Fleece
+1,Terrycloth
+1,Velvet
+1,Velveteen
+1,Wadmal
+1,Felt
+1,Cedar bark
+1,Velour
+1,Fishnet
+1,Lace
+1,Knitted wool
+
+
+;livestock
+3,Cattle
+1,Chicken
+2,Horses
+1,Mules
+1,[Animal.farmanimal]
+2,Slaves
+
+;coins
+2,copper pieces
+3,silver pieces
+2,electrum pieces
+3,gold pieces
+1,platinum pieces
+1,[coins] and [coins]
+
+;furnishcloth
+5,an ornate [furnishing]
+1,an inlaid [furnishing] with [Utility.MetalDecor]
+1,an inlaid [furnishing] with [Utility.Jewels]
+1,a carved [furnishing]
+1,a [furnishing] with fretwork]
+1,an upholstered [furnishing]
+3,a [clothing] of fine [fabric]
+3,a [clothing] of silk
+2,a [clothing] of [Utility.Fur] fur
+2,a [Utility.LeatherHide] leather [clothing]
+
+;furnishing
+1,Altar
+1,Armchair
+4,Armoire
+1,Arras
+3,Bed with fine [fabric] sheets
+1,Bed
+2,Bench
+3,Blanket
+2,Box
+2,Braizer
+1,Bucket
+1,Fubffet
+2,Bunks
+2,Cabinet
+2,Candelabrum
+3,Carpet
+1,Chandelier
+5,Chair
+2,Padded chair
+1,Armchair
+3,Chest of drawers
+3,Wardrobe
+1,Couch
+1,Cresset
+2,Cupboard
+2,Cushion
+1,Dais
+4,Desk
+1,Fountain
+1,Fresco
+2,Hamper
+3,Idol
+1,Loom
+4,Mat
+2,Mattress
+3,Pallet
+2,Pedestal
+3,Pillow
+2,Quilt
+4,Rug
+2,Screen
+2,Shelves
+1,Shrine
+1,Sofa
+3,Stool
+3,Table
+1,Throne
+1,Tub
+1,Wall basin
+1,Work bench
+
+;clothing
+1,Apron
+2,Belt
+1,Blouse
+1,Chemise
+2,Bodkin
+2,Boots
+1,Braies
+2,Buskins
+2,Cap
+2,Cape
+1,Caul
+1,Barbette & Fillet
+2,Cloak
+2,Coat
+2,Coif
+2,Doublet
+2,Dress
+1,Fez
+1,Frock
+1,Pinafore
+2,Garter
+2,Gauntlets
+2,Girdle
+2,Gloves
+2,Gorget
+2,Gown
+2,Hat
+2,Habit
+2,Hood
+2,Hose
+2,Jerkin
+1,Jupon
+2,Kerchief
+1,Kirtle
+2,Leggings
+2,Drawers
+2,Undershirt
+1,Mantle
+2,Pantaloons
+2,Petticoat
+1,Pouch
+1,Purse
+2,Robe
+2,Sandals
+2,Scarf
+2,Shawl
+2,Shift
+2,Slippers
+2,Smock
+2,Stockings
+2,Surcoat
+1,Toga
+2,Trousers
+3,Tunic
+2,Veil
+2,Vest
+1,Wallet
+1,Wrapper
+
+;book
+8,the book [Sstabhmontown library.main]
+3,Two books: [Sstabhmontown library.main], and [Sstabhmontown library.main]
+2,Three books: [Sstabhmontown library.main], [Sstabhmontown library.main], and [Sstabhmontown library.main]
+1,Four books: [Sstabhmontown library.main], [Sstabhmontown library.main], [Sstabhmontown library.main], and [Sstabhmontown library.main]

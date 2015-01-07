@@ -13,3 +13,283 @@ noble         moon          silver piece    s         10 cp         10
 duke          shield        electrum piece  e          5 sp         50 
 crown         star          gold piece      g         10 sp        100
 royal         dragon        platinum piece  p         10 gp       1000
+
+===
+
+/ http://random-generator.com/index.php?title=CoinsWithFlavor
+
+;main
+1,[Dice.1d20][Dice.1d20] [Shape]s of [Race] origin made of [Metal] [Design], worth about [Dice.1d20][Dice.1d20] [ValueMetal] pieces
+1,[Dice.1d20][Dice.1d20] [Type] [Shape]s of [Race] make forged of [Metal], worth about [Dice.1d20][Dice.1d20] [ValueMetal] pieces
+2,[Dice.1d20] [Type] [Shape]s of [Race] make cast in [Metal], worth about [Dice.1d20] [ValueMetal] pieces
+
+;Type
+10,plain
+7,counterfeit
+10,well-worn
+7,smooth
+5,hefty
+1,valuable
+5,illegible
+1,poorly-cast
+1,mis-cast
+2,double-headed
+3,highly tarnished
+3,bloodstained
+3,tarnished
+5,antique
+5,ornamental
+
+;Shape
+20,coin
+10,bar
+5,ingot
+1,ten-pound note
+1,unit award coin
+10,one-pound note
+5,five-pound note
+
+;Race
+1,arcane
+5,questionable
+5,Elvish
+5,ancient
+20,foreign
+15,Gnomish
+5,archaic
+5,Orcish
+5,Goblin
+10,Northland
+20,common
+20,Dwarven
+10,unknown
+5,Sylvan
+10,[GheronUtility.Cultures]
+
+;Metal
+10,[Utility.MetalPrecious]
+5,steel
+5,brass
+5,iron
+5,blackened iron
+5,cast-iron
+1,fine hardwood
+1,fine softwood
+1,polished stone
+2,carved jade
+5,[Utility.MetalExotic]
+5,[Utility.MetalWeapon]
+
+;Design
+10,engraved with strange symbols
+5,engraved with concentric circles
+3,carved with a twisting, vine-like pattern
+1,enlaid with a pattern of [Utility.MetalPrecious]
+1,enlaid with a pattern of [Utility.MetalExotic]
+5,engraved with an ancient proverb: [Inscriptions.Advice]
+10,stamped on the heads side with [Creature] shape and on the tails with the ancient proverb: [Inscriptions.Advice]
+1,stamped with a [Creature] shape
+1,minted with the image of a [Creature] on both sides
+1,engraved with a mighty [Creature] shape
+1,engraved with what seem to be burning runes
+20,engraved with the likeness of [Catholic Saint Names.main] on one side and the high court of [Fantasy Place Name.main] on the other 
+20,stamped on one side with the likeness of an ancient king and the high court of [Fantasy Town Names.main] on its inverse
+20,engraved on one side with the likeness of an ancient scholar and the grand library of [Fantasy Town Names.main] on its inverse
+20,engraved on one side with the likeness of an ancient hero and a scene depicting the battle of [Fantasy Town Names.main] on its inverse
+20,engraved on one side with the image of an ancient hero and, on it's inverse, a scene depicting the same hero battling the great, killer [Creature], for which that hero is famed for slaying
+20,engraved on one side with the image of an ancient hero and, on it's inverse, a scene depicting the same hero standing triumphantly over the great, killer [Creature], for which that hero is famed for slaying
+20,stamped with the likeness of the high court of [Fantasy Place Name.main]
+20,engraved with the likeness of the high court of [Fantasy Town Names.main]
+5,covered in a web-like pattern of lines
+10,minted with an image of the sun
+5,engraved with [SpiritForm.main]
+1,stamped with the name of the creature whose essence is in it: [Angels and demons.main]
+1,engraved with a hypnotic design
+
+;Creature
+1,Adder
+1,Angel
+1,Ant
+1,Ape
+1,Badger
+1,Barnacle
+1,Basilisk
+1,Bat
+1,Bear
+1,Beaver
+1,Bee
+1,Beetle
+1,Bird
+1,Boar
+1,Buck
+1,Bull
+1,Calf
+1,Camel
+1,Carp
+1,Cat
+1,Centaur
+1,Centipede
+1,Charger
+1,Chimera
+1,Cock
+1,Cockatrice
+1,Coney
+1,Cormorant
+1,Courser
+1,Cow
+1,Crab
+1,Crane
+1,Crayfish
+1,Crocodile
+1,Crow
+1,Cuckoo
+1,Cyclops
+1,Deer
+1,Destrier
+1,Doe
+1,Dog
+1,Dolphin
+1,Donkey
+1,Dove
+1,Dragon
+1,Drake
+1,Duck
+1,Dwarf
+1,Eagle
+1,Eel
+1,Elephant
+1,Elf
+1,Ewe
+1,Falcon
+1,Fawn
+1,Ferret
+1,Finch
+1,Fish
+1,Fitch
+1,Flounder
+1,Fly
+1,Fox
+1,Frog
+1,Gander
+1,Gargoyle
+1,Gnome
+1,Goat
+1,Goblin
+1,Golem
+1,Goose
+1,Goshawk
+1,Grasshopper
+1,Griffin
+1,Grouse
+1,Gull
+1,Halfling
+1,Hare
+1,Harpy
+1,Hart
+1,Hawk
+1,Hedgehog
+1,Hen
+1,Heron
+1,Herring
+1,Hind
+1,Hog
+1,Horse
+1,Hound
+1,Hydra
+1,Jabberwock
+1,Jay
+1,Juggernaut
+1,Lamb
+1,Lamprey
+1,Lark
+1,Leopard
+1,Lion
+1,Lizard
+1,Lobster
+1,Locust
+1,Manticore
+1,Mare
+1,Merlin
+1,Mermaid
+1,Minnow
+1,Mole
+1,Mouse
+1,Newt
+1,Nightingale
+1,nude woman
+1,Nymph
+1,Octopus
+1,Ogre
+1,Osprey
+1,Otter
+1,Owl
+1,Ox
+1,Oyster
+1,Panther
+1,Parrot
+1,Peacock
+1,Pegasus
+1,Pelican
+1,Pheasant
+1,Phoenix
+1,Pig
+1,Pigeon
+1,Pike
+1,Polecat
+1,Pony
+1,Porcupine
+1,Porpoise
+1,Pullet
+1,Rabbit
+1,Ram
+1,Ram
+1,Rat
+1,Raven
+1,Roebuck
+1,Rook
+1,Salmon
+1,Satyr
+1,Scorpion
+1,Seal
+1,Sea-Lion
+1,Serpent
+1,Shark
+1,Sheep
+1,Siren
+1,Snake
+1,Sow
+1,Spider
+1,Squid
+1,Squirrel
+1,Stag
+1,Stallion
+1,Starling
+1,Sturgeon
+1,Swallow
+1,Swan
+1,Swan
+1,Sylph
+1,Tiger
+1,Toad
+1,Tortoise
+1,Trout
+1,Tyger
+1,Unicorn
+1,Viper
+1,Vixen
+1,Vole
+1,Weasel
+1,Whale
+1,Wolf
+1,Woodpecker
+1,Wren
+1,Wyvern
+1,Yearling
+
+;ValueMetal
+20,copper
+15,silver
+10,gold
+5,electrum
+1,platinum
+1,palladium

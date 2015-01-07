@@ -1,0 +1,57 @@
+: Eyes
+{5%{:unusual} }{:color} eyes{1%; {:gaze}}
+
+: Unusual
+almond-shaped
+beady
+bloodshot
+blurry
+crossed
+drooping
+feral
+intense
+lazy
+misty
+narrow
+predatory
+slanted
+watery
+wide
+
+: Color
+{25%{pale|light|dark|deep|clear} }{:c}{5% with flecks of {{color:simple}|{metal:precious}}}
+
+: c
+amber
+blue
+blue-green
+blue-grey
+brown
+green
+grey
+hazel
+olive green
+{:special colors}
+
+: special colors
+heterochromatic {:c}/{:c}
+{color}
+{gem}
+{metal}
+
+: Gaze 
+that are strangely suggestive
+that blink rapidly
+which don't seem to focus on you
+which stare into the distance
+
+: Detail
+/ http://random-generator.com/index.php?title=Captain_of_the_city_watch
+/ before referencing this, be sure to set G -- {G:=gender}
+Despite {G.pronoun} frank manner, {G.pronoun} eyes are strangely suggestive, sometimes seemingly almost to wink at you or slurry into a leer that quickly disappears before you can pinpoint it.
+He blinks rapidly on occasion, as if different visions pass before {G.pronoun} face, images and illusions that {G.pronoun} seeks to banish before refocusing once more on you.
+{G.pronoun}  china blue eyes are startling, wide and clear, a clarion call of intelligence and frank appraisal.
+{G.pronoun}  eyes are narrow and speak perhaps of a heritage not wholly human, for {G.pronoun} irises are patterned strangely and {G.pronoun} pupils not perfectly circular. They seem to simmer beneath {G.pronoun} low brows, spiteful and bellicose.
+{G.pronoun}  eyes are pale and speak of finite abilities of comprehension, for their is in their stark stare the lack of depth one sees in the eyes of birds.
+Red rimmed and blurred, {G.pronoun} gaze speaks of either long nights spent working at a desk in the smoky light of torches or nights steeped in debauchery and wine, such that {G.pronoun} stamina is sapped and {G.pronoun} gaze rendered inert.
+Sharp and piercing, {G.pronoun} eyes are sunken into high cheekbones but yet retain their authority. 

@@ -8,6 +8,8 @@
 
 . Humanoid, Description
 
+: All = Humanoid + Uncommon + Literary + Celestial + Demons + Dragons + Elves + Fairies + Goblins + Mermaids + Nature Spirits + Other
+
 : Humanoid
 dwarf
 elf
@@ -70,6 +72,22 @@ wood elf
 wraith
 yeti
 zombie
+
+: Subterranean
+drow
+dwarf
+gnoll
+gnome
+goblin
+halfling
+hobgoblin
+hobgoblin
+human
+kobold
+kobold
+ogre
+troglodyte
+troll
 
 : Literary
 Eloi;  H. G. Wells The Time Machine

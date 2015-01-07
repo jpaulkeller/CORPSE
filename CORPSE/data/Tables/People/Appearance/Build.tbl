@@ -1,0 +1,46 @@
+: Build
+athletic
+big
+bony
+bulky
+fit
+heavy
+lanky
+large
+lean
+lithe
+muscular
+rotund
+skinny
+slender
+slight
+slim
+small
+thick
+thin
+wiry
+
+: Fat
+fat
+obese
+overweight
+
+: Male = Build + Male Only
+: Male Only
+barrel-chested
+womanish
+
+: Female = Build + Female Only
+: Female Only
+busty
+buxom
+catlike
+curvaceous
+curvy
+mannish
+petite
+shapely
+supple
+well-endowed
+willowy
+voluptuous

@@ -1,0 +1,264 @@
+/ http://random-generator.com/index.php?title=Blazon
+
+;main
+1,[maybeeffect][device][maybecolor] [blazon][maybeona]
+1,[maybeeffect][subject][maybeincolor][maybeona]
+1,[maybecolor][maybeeffect][subject][maybeona]
+2,[device][maybecolor] [blazon][maybeona]
+2,[maybeeffect][device][maybecolor] [blazon]
+8,[maybeeffect][subject][maybeona]
+8,[maybeeffect][subject][maybeincolor]
+8,[subject][maybeincolor][maybeona]
+8,[maybeeffect][subject][maybeona]
+8,[maybecolor][subject][maybeona]
+8,[maybecolor][maybeeffect][subject]
+8,[maybecolor][subject][maybeona]
+8,[maybecolor][maybeeffect][subject]
+
+
+;subject
+5,[blazon]
+4,[item]
+3,[device] [blazon]
+2,[device] [item]
+1,[subject] [subject]
+
+;item
+1,ring
+1,wand
+1,staff
+1,sword
+1,shield
+1,cloak
+1,idol
+4,[bottle]
+4,[Starting Equipment.anything]
+2,[Jewelry.Item]
+
+;device
+1,cryptic
+1,golden
+1,holy
+1,arcane
+1,unholy
+1,labyrinth
+1,[source]
+2,[Lowtech Civilizations.mixed]
+4,[Quick Zone Populations.power-animal]
+
+;blazon
+1,[source] curse
+1,sigil
+1,[source] seal
+1,scroll
+1,[source] runestone
+1,[source] script
+1,[source] warning
+1,handwritten note
+1,letter
+1,map
+
+;maybeona
+4,
+1,[ona]
+
+;ona
+3,[on]{{Article|[source] [item]}}[maybeincolor] [maybetext]
+2,[on]{{Article|[source]}} [device] [blazon][maybeincolor] [maybetext]
+1,[on][maybecolor][device] [blazon][maybeincolor] [maybetext]
+1,belonging to [Message.guy]
+
+;on
+5, on 
+2, hidden in 
+1, tied to 
+1, bound to 
+
+;maybetext
+1,
+1,"[words]"
+1,"[words]"[in common]
+2,,[reading]"[words]"
+1,,[reading]"[words]"[in common] 
+1,,[reading][in common]"[words]" 
+
+;in common
+5, in common 
+3, in [source] 
+1, in [dust] 
+
+;reading
+1, which reads, 
+1, someone has written 
+1, reading 
+
+;spellwords
+1,[words]
+1,{{UC:[spell]}}
+
+;words
+1,{{UC:[sphere]}}
+1,{{UC:[sphere]}}[punct]{{UC:[sphere]}}
+1,{{UC:[sphere]}}[punct]{{UC:[sphere]}}[punct]{{UC:[sphere]}}
+2,{{UC:[Indiana Jones Titles.subtitle]}}
+
+
+;sphere
+20,[Quick PC.sphere]
+1,mine
+1,ours
+1,eternity
+1,ascent
+1,descent
+1,reminder
+1,do not
+1,i can't
+5,[spell]
+
+;ucpunt
+8,{{UC:[punct]}}
+4,[punct]
+1,[ucpunt][ucpunt]
+
+;spell
+3,troubles with [spell]
+9,[oldschool spell]
+6,[literary spell]
+1,[rare spell]
+
+;oldschool spell
+6,[ADnD Spell Lists.LevelOne]
+5,[ADnD Spell Lists.LevelTwo]
+4,[ADnD Spell Lists.LevelThree]
+
+;literary spell
+3,[Vancian Spell Lists.LevelOne]
+2,[Vancian Spell Lists.LevelTwo]
+1,[Vancian Spell Lists.LevelThree]
+
+;rare spell
+6,[Rare Spells.LevelOne]
+5,[Rare Spells.LevelTwo]
+4,[Rare Spells.LevelThree]
+3,[Rare Spells.clericOne]
+2,[Rare Spells.clericTwo]
+1,[Rare Spells.clericThree]
+
+
+
+
+
+
+;punct
+4, 
+2,
+2,: 
+3,, 
+3,. 
+2,. .
+2,.. 
+2,... 
+1, - 
+2,||
+2,|
+3,? 
+3,!  
+1, through 
+1, without 
+1, for 
+1, is 
+1, the 
+1, not-
+1, not 
+1, be'
+1, be 
+1, a-
+1, is the 
+1, of the 
+1, [Quick Zone Populations.particle]
+4,[punct][punct][punct]
+
+;maybecolor
+1, [color] 
+4,
+
+;maybeincolor
+1, in [color] 
+4,
+
+;color
+1,[Color.main] and [Color.main]
+7,[Color.main]
+
+;maybeeffect
+1,[effect] 
+2,
+
+;effect
+1,dragon
+1,changing
+1,farseeing
+1,flaming
+1,cloaking
+1,summoning
+1,wicked
+10,spell
+1,
+
+;pack
+5,[bottle] with [item]
+4,[bottle] of [color] [dust] with [item]
+3,empty [bottle] with [item]
+5,[bottle]
+4,[bottle] of [color] [dust]
+3,empty [bottle]
+
+
+;dust
+1,sand
+1,dust
+1,liquid
+1,liquor
+1,root
+1,leaves
+1,earth
+1,slime
+1,gas
+1,ink
+1,oil
+1,chalk
+1,wax
+1,[source] [dust]
+1,[source] {{lc:[sphere]}}
+
+;bottle
+6,bottle
+5,bag
+4,pouch
+4,bundle
+4,pack
+4,sack
+4,satchel
+2,barrel
+1,ball
+1,horn
+1,box
+1.package
+
+
+;source
+1,ancient
+1,royal
+1,dwarven
+1,goblin
+1,elven
+1,orcish
+1,serpentine
+1,pagan
+1,primitive
+1,handmade
+1,ghostly
+1,deep-places 
+1,fey
+1,infernal
+8,{{lc:[words]}}

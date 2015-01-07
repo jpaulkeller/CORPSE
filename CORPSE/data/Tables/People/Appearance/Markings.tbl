@@ -1,0 +1,40 @@
+: Markings
+wearing {made of:precious} {jewelery} {with a single large {gem}|{art:decorated}}
+{25%{:colors} }tattoo{75% of a {charge}}{75% {:where}}
+{cheek|ear|eyebrow|lip|nose|tongue} pierced with a {{made of:precious}|{gem}} {stud|ring}
+{face|arms} decorated with {patterns|streaks|stripes|symbols|runes} of {color:simple} paint
+{small |large |}birthmark{75% {:where}}{10% shaped like a {{fauna}|{~{tiny item}}}}
+{small |large |}{5%gruesome }{:scar}{75% {:where}}
+{small |large |}{:injury}{75% {:where}}
+
+: Injury
+abrasion
+bandage
+bruise
+cut
+scrape
+
+: Scar
+burn scar
+incision scar
+puncture scar
+{25%jagged }slash scar
+stitches
+
+: Where
+on {G.pronoun} {body part}
+
+: Colors
+colorful
+faded
+fresh
+solid {:color}
+vibrant
+{50%mostly }{:color}{20% and {:color{!different}}
+
+: Color
+black
+blue
+green
+purple
+red

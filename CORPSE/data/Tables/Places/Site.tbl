@@ -1,10 +1,12 @@
 / Sources: D&D Rules Cylcopedia, page 271
 
 : Artificial
-barrows
+barrow{50%s}
 battlefield
+boundary stone
 bridge
 cache of supplies
+cairn
 campsite
 canal
 castle
@@ -13,17 +15,22 @@ cemetery
 channel
 city
 college
+copse with a few hammocks
+crossing
+crossroads
 dam
 ditch
 drainage tunnel
 dungeon
 ferry
 ford
-fort
 hamlet
+hunter's blind
+hunter's tree-stand
 irrigation ditch
 mass grave
 outpost
+paddock enclosed by brambles
 park
 pasture
 path
@@ -32,7 +39,7 @@ portal
 reservoir
 road
 shipwreck
-shrine ({Religion})
+small hill with hasty fortifications
 stone circle
 territory marker
 town
@@ -41,53 +48,84 @@ village
 waterway
 well
 wharf
+{:condition} shrine ({Religion})
+{:condition} {~{structure}}
 {mineral} quarry 
 {mine} mine 
-{structure}
-{structure} destroyed by {disaster}
 {wood:fruit} orchard 
-{abandoned|haunted|ruins of a|underground} {structure}
+{~{structure}}
+{~{structure}} ({:abandoned})
+{~{structure}} destroyed by {disaster}
 
 : Natural
+arch
+barrens
 beaver dam
+bend
+bluff
+bog
+butte
 canyon
+cave with soot marks on the ceiling
 cavern
 chasm
 cliff
-coast
+cliff{50%s}
 copse
 cove
-desert
+crag
+crest
+deadfall
+downs
+dry riverbed
 escarpment
-forest
+falls
+giant solitary {wood} tree
 glade
 gorge
+gorge
 grotto
-grove of {wood} 
+grove of {wood} trees 
 gully
+heights
+highland{50%s}
+hill
 hollow tree
 hot spring
 isle
-jungle
 lagoon
 lake
 landslide
 marsh
 meadow
 mire
+mound
+mountain
 mountain pass
 natural ford
 oasis
+pass
+peak
+perch
+pillar{50%s}
+pinnacle
 plateau
+point
 pool
+promontory
 promontory
 quicksand
 rapids
 ravine
 reef
+ridge
+rise
 river
+rock
+rock overhang
+spire
 spring
-swamp
+summit
 thicket
 valley
 vista
@@ -97,3 +135,31 @@ wellspring
 {fauna} tracks 
 {fauna} trail
 {fauna} {den|lair|nest} 
+
+: Condition
+abandoned
+collapsed
+decrepit
+demolished
+deserted
+desolate
+destroyed
+empty
+long-vacant
+overgrown
+partly burned
+ruined
+ruins of a
+storm-damaged
+vermin-infested
+well-maintained
+
+: Abandoned
+abandoned after a {disaster}
+believed to be haunted
+burned to the ground
+frequented by {criminals|lycanthropes|undead}
+hideout for brigands
+marked with warning signs
+only used seasonally
+roosting site for {stirges|{20%venomous }bats}

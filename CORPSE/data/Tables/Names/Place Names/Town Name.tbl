@@ -1,6 +1,6 @@
 : Town Name
-{20%{:Prefix} }{Generated Name}{25%{:suffix}}{20% {:Postfix}}
-{15%{:Prefix} }{Generated Name}{10%{:suffix}}{10% {:join} {50%?{:Postfix}:{Generated Name}}}
+{20%{:Prefix} }{Generated Name}{33%{:suffix}}{20% {:Postfix}}
+{15%{:Prefix} }{Generated Name}{20%{:suffix}}{10% {:join} {50%?{:Postfix}:{Generated Name}}}
 
 : Prefix
 east
@@ -48,6 +48,8 @@ worth
 abbey
 arbor
 beach
+bend
+bluff
 bridge
 castle
 corner
@@ -55,27 +57,35 @@ crossing
 dale
 downs
 edge
-field
+falls
 fen
 ferry
+field{50%s}
 ford
 fork
 glen
+gorge
 green
-heath
 hall
-hill
+heath
+heights
+highland{50%s}
+hill{50%s}
 hollow
 hunt
 manor
 mill
 moor
-park
+mound
 parish
+park
+pass
 point
 port
+ridge
 riding
+rise
 ward
 water
-wood
+wood{50%s}
 yard
