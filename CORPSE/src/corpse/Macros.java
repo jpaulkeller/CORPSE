@@ -518,13 +518,11 @@ public final class Macros
       if (m.find()) // store the assigned value
       {
          tableAssignments.put(m.group(1), new Assignment(m.group(2)));
-         System.out.println("Table Assignnment: " + m.group(1) + " = " + tableAssignments.get(m.group(1))); // TODO
          resolvedToken = m.replaceFirst("");
       }
       else if ((m = PRIMITIVE_ASSIGNMENT.matcher(resolvedToken)).find()) // store the assigned value
       {
          primitiveAssignments.put(m.group(1), m.group(2));
-         System.out.println("Primitive: " + m.group(1) + " = " + primitiveAssignments.get(m.group(1))); // TODO
          resolvedToken = m.replaceFirst("");
       }
       else // extract the desired value (or column) from the stored assignment

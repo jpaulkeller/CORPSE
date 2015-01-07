@@ -7,9 +7,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 import java.util.regex.Matcher;
@@ -37,7 +35,6 @@ public final class Script
 
    private String name;
    private File file;
-   private Map<String, String> variables = new HashMap<String, String>();
 
    public static void populate(final File dir)
    {
@@ -178,12 +175,6 @@ public final class Script
          String token = m.group();
          String resolvedToken = token;
          
-         /*
-         resolvedToken = resolveVariables(token);
-         if (resolvedToken.equals(token))
-            resolvedToken = resolveAssignments(token);
-         */
-
          if (resolvedToken.equals(token))
          {
             resolvedToken = resolveQueries(token);
@@ -201,34 +192,6 @@ public final class Script
       }
 
       return line;
-   }
-
-   private String resolveVariables(final String entry)
-   {
-      String resolvedEntry = entry;
-      for (String variable : variables.keySet())
-      {
-         String pattern = Pattern.quote("{" + variable + "}");
-         String value = Matcher.quoteReplacement(variables.get(variable));
-         resolvedEntry = resolvedEntry.replaceAll(pattern, value);
-      }
-      if (Macros.DEBUG && !entry.equals(resolvedEntry))
-         System.out.println("resolveVariables: [" + entry + "] = [" + resolvedEntry + "]");
-      return resolvedEntry;
-   }
-
-   private String resolveAssignments(final String entry)
-   {
-      String resolvedEntry = entry;
-      Matcher m;
-      while ((m = Constants.ASSIGNMENT.matcher(resolvedEntry)).find())
-      {
-         variables.put(m.group(1), m.group(2));
-         resolvedEntry = m.replaceFirst(Matcher.quoteReplacement(m.group(2)));
-      }
-      if (Macros.DEBUG && !entry.equals(resolvedEntry))
-         System.out.println("resolveAssignments: [" + entry + "] = [" + resolvedEntry + "]");
-      return resolvedEntry;
    }
 
    private static final String F = Constants.FILTER_CHAR; 
