@@ -1,0 +1,632 @@
+/ http://random-generator.com/index.php?title=Castle
+
+: Castle
+10 {:Tower}
+7 {:Keep}
+4 {:Small}
+2 {:Large}
+
+: Garrison
+The castle barracks are continuously garrisoned by {3d6}00 men of the {:FootUnit}, and in case of attack, they can expect support from the {:EliteUnit} within a day’s hard riding.
+The castle barracks are garrisoned by the {3d6}00-strong {:FootUnit} and an additional {2d4}00 men of the {:RangedUnit}.
+The castle barracks are garrisoned by the {3d6}00-strong {:FootUnit} and an additional {4d6}0 men of the {:RangedUnit}.
+The castle barracks are the proud home of all {3d6}00 men of the {:EliteUnit}.
+The castle barracks house {3d6}00 men from the {:FootUnit}, and can expect wartime support from the {:EliteUnit} from nearby {:Ruins}.
+The castle barracks house the {3d6}00-strong {:FootUnit}, and can be supported within a fortnight by {:FootUnit} of {:Ruins}.
+The castle is garrisoned by {4d4}00 men of the {:FootUnit}, supported by a {1d6}00-strong volunteer ranged auxiliary, the {:RangedUnit}.
+The castle is garrisoned by {4d4}00 men of the {:FootUnit}, supported by a {4d6}0-strong volunteer ranged auxiliary, the {:RangedUnit}.
+The walls are defended by the {3d6}00-strong {:RangedUnit}, who may expect ground support within a fortnight from the {:FootUnit}.
+
+: FootUnit
+{:Fantasy Military Unit.ArmyOrdinal} {:Fantasy Military Unit.LightHeavy} Militia
+{:Fantasy Military Unit.ArmyOrdinal} {:FootType}{:Fantasy Military Unit.ArmyGroup}
+
+: FootType
+10 Halberdier
+10 Tower Guard
+2 Pikemen
+3 Foot
+3 Ground
+3 {:Royal} Guard
+4 Siege Axe
+4 Spear
+5 Siege Defense
+5 Siege Warfare
+7 {:LightHeavy}
+8 Poleax
+9 Engineer
+Highland
+{:Royal} Defenders
+{:Royal} Footmen
+
+: Royal
+Emperor’s
+Free
+Immortal
+Imperial
+King’s
+Provincial
+Royal
+
+: RangedUnit
+{:Fantasy Military Unit.ArmyOrdinal} {:RangedType}{:Fantasy Military Unit.ArmyGroup}
+
+: RangedType
+2 Arbalest
+2 Arcanist’s
+2 Ballistae
+2 Bombardier
+2 Catapult
+2 Grenadier
+3 Axe Thrower
+3 Light Crossbow
+4 Heavy Crossbow
+5 Engineer
+6 Longbowmen
+6 {:LightHeavy} Ranged
+7 Scout
+7 {:Fantasy Military Unit.LightHeavy} Yeomanry
+8 Archers
+8 Bowmen
+8 Crossbowmen
+8 Yeomen
+Aeromancy
+Alchemy
+Artillery
+Battlemage
+Geomancy
+Hydromancy
+Illusion
+Mounted Archer
+Mounted Crossbow
+Pyromancy
+Sorcery
+Wizardry
+
+: EliteUnit
+{:Fantasy Military Unit.ArmyOrdinal} {:EliteType}{:Fantasy Military Unit.ArmyGroup}
+
+: EliteType
+10 {:Fantasy Military Unit.LightHeavy} Cavalry
+2 {:Fantasy Military Unit.LightHeavy} Dragoon
+10 {:Fantasy Military Unit.LightHeavy} Horsemen
+10 {:Fantasy Military Unit.LightHeavy} Mounted
+9 {:Fantasy Military Unit.LightHeavy} Horse
+9 {:Fantasy Military Unit.LightHeavy} {:Fantasy Military Unit.Steed}
+8 {:Fantasy Military Unit.LightHeavy} {:Utility.TerrainsCap} Warfare
+7 {:Fantasy Military Unit.LightHeavy} Arcane Warfare
+5 {:Fantasy Military Unit.LightHeavy} Infantry
+5 {:Fantasy Military Unit.LightHeavy} Hussars
+5 {:Fantasy Military Unit.LightHeavy} Lancers
+4 {:Fantasy Military Unit.LightHeavy} Highlander
+4 {:Fantasy Military Unit.LightHeavy} {:Utility.TerrainsCap} Assault
+2 {:Fantasy Military Unit.LightHeavy} Spellsword
+{:Fantasy Military Unit.LightHeavy} Assault
+{:Fantasy Military Unit.HumanUnusualSteed} Cavalry
+Aerial Cavalry
+
+: Adj
+5 a daunting
+5 a famed
+5 a legendary
+5 a mighty
+5 a once-important
+5 a once-mighty
+5 a strategically-placed
+5 a sturdy
+5 a venerable
+5 an imposing
+5 an old
+4 a strong
+4 an important
+3 a poorly-constructed
+3 a poorly-maintained
+3 a spooky
+3 an obsolete
+2 a well-constructed
+2 a well-maintained
+2 an ancient
+2 an archaic
+a disused
+a forgotten
+a long-abandoned
+a long-forgotten
+an abandoned
+an unmanned
+
+: TowerConstruction
+10 stone
+10 stonework
+7 wooden
+7 woodwork
+7 {:Utility.WoodsHard}
+7 {:Utility.WoodsRare}
+3 blackened iron
+3 blackened metal
+2 {:Utility.WoodsBow}
+2 polished skulls
+2 wrought iron
+2 {:Utility.StoneDecorative}
+2 {:Utility.WoodsSoft}
+burnished brass
+burnished steel
+burnished {:Utility.MetalSoft}
+charred bones
+charred skulls
+dragonscale
+polished ivory
+wyrmscale
+rusted iron
+rusted steel
+
+: Tower
+5 {:Adj} {:TowerConstruction} {:TowerType} standing {2d6}0′ tall, {:TowerLocation}. {:TowerSpecial}
+{:Adj} {:TowerConstruction} {:TowerType} standing {1d4}00′ tall, {:TowerLocation}. {:TowerSpecial}
+
+: TowerLocation
+at the end of an open steppe
+atop a key peak in the area
+atop a lonely butte
+atop a strategic ridge
+atop a wild crag
+high above a river vale
+high above a thickly-wooded valley
+high above an oft-contested plain
+overlooking {:Fantasy Landmarks.main}
+overlooking a historic battlefield
+overlooking a well-traveled trade route
+overlooking an ancient crossroads
+overlooking what were once contested territories
+
+: TowerType
+4 tower
+3 round tower
+3 square tower
+2 signal tower
+2 watchtower
+archer’s tower
+lookout tower
+scout tower
+{:Wizard} {:WizardTower}
+
+: Wizard
+arcane
+dark
+demon{50%'s}
+{50%?un}holy
+{pseudo class}'s
+
+: WizardTower
+minaret
+needle
+obelisk
+spike
+spire
+tower
+
+: TowerSpecial
+7 The tower is {:Supplies}.
+5 The tower has {:TowerSignal}.
+2 The tower is armed with an arcane {:ArcaneWeapon}, and could be a formidable weapon to one skilled in magics.
+Recent fighting has made the tower’s central stair slippery with blood and gore.
+The original tower, long burnt to the ground, was constructed by decree of {:Rank} {:MaleName} during the {:Conflict}.
+The tower {:Portal}.
+The tower {:ScryingStone}.
+The tower has numerous floors dotted with well-placed archer positions.
+The tower has oil cauldrons and baskets of metal balls to assist in its defense.
+The tower is crowned with a functional {:Catapult}.
+The tower is crowned with a long-broken {:Catapult}.
+The tower is partially burned from a failed assault.
+The tower’s design makes it nearly indefensible:  its fields of fire are too limited to prevent an assault.
+The winding central stair is missing many steps, making the trip to the high watch a treacherous affair.
+This tower served as a key early warning for {:Rank} {:MaleName}’s forces during the {:Conflict}.
+
+: ScryingStone
+5 is rumored to hold an ancient scrying stone
+3 has a strange, arcane scrying stone where a signal device would be
+contains the broken shards of an old scrying stone
+has an arcane basin that seems to have once held a magical scrying stone
+once was the home of a powerful magic scrying stone
+
+: Portal
+5 is rumored to house a magical portal to an impossibly far land
+3 has a strange, glowing portal crackling with arcane energy at its peak
+has a non-functioning rune circle that may once have opened a magical portal
+once housed an arcane portal to some far-away sister tower
+
+: ArcaneWeapon
+5 {:Elements.all} orb
+5 fire orb
+5 ice orb
+5 lightning orb
+hellfire orb
+holy fire orb
+
+: Conflict
+7 {:War} of the {:Inspiration}
+6 {:CreatureType} {:War}
+5 {:War} of the {:CreatureType}s
+4 {2d4}0-Years War
+3 Great {:CreatureType} {:War}
+2 Great Siege of ’{digit}{digit}
+{:War} of {:AbstractEvocative}
+
+: CreatureType
+{:creature}
+
+: War
+10 War
+7 Wars
+5 Battle
+5 Conflict
+3 Campaign
+3 Rebellion
+2 Incursion
+Attack
+Uprising
+
+: Supplies
+10 {:StockLevel}stocked with {:FoodStocks}
+5 still storing {:Weapons}
+stocked with tacks, harnesses, and the like:  to refit riders and couriers
+an old courier-station and still has a functional stable
+
+: StockLevel
+generously 
+scantily 
+still 
+well-
+
+
+: FoodStocks
+{:Foodstuffs.Meat} and {:Foodstuffs.Liquid}
+{:Foodstuffs.Chunks} and {:Foodstuffs.Bread}
+{:Foodstuffs.DryGood} and {:Foodstuffs.Liquid}
+{:Foodstuffs.DryGood}, {:Foodstuffs.SoftFood} and {:Foodstuffs.Liquid}
+{:Foodstuffs.Chunks}, {:Foodstuffs.SoftFood} and {:Foodstuffs.Liquid}
+
+: Weapons
+4 shields and {:HandWeapons}, enough for a small garrison
+3 bows and arrows, enough for a small contingent of archers
+crossbows and bolts, enough to defend against a short siege
+
+: HandWeapons
+3 bills
+2 halberds
+3 pikes
+2 pole-axes
+2 siege axes
+spears
+{:Swords.main}
+handaxes
+maces
+flails
+{:WeaponsOther.main}
+
+: TowerSignal
+3 an arcane {:Color.bright} signal fire actively burning
+a fresh pile of wood, doused in flammable liquid, recently prepared as a warning signal
+a large signal fire actively burning
+a large signal mirror on a turning base
+an old and rotting pile of wood, prepared as a warning signal during some long-ago conflict
+no way of signaling other towers. Some overambitious engineer placed it too far from friendly lines
+
+: Keep
+{:Adj} {:KeepType} standing {4d4}0′ tall. {:KeepDefense}. {:KeepSpecial}
+{:Adj} {:KeepType} standing {1d4}{1d8}0′ tall. {:KeepDefense}. {:KeepSpecial}
+
+: KeepType
+armory
+barracks
+hall
+hold
+keep
+manor
+outpost
+stronghold
+
+: KeepDefense
+A great river flanks two sides of the main structure, forcing attackers to fight uphill on a narrow stretch of open field
+A nearby {2d6}0′ {:TowerType} stands ready to provide overwatch, support, and early warning in times of conflict
+A string of {2d6} towers provide early warning to the main structure in times of conflict
+Crags and cliffs flank three sides of the keep, greatly limiting the options of a would-be siege force
+Its formidable defensive walls are 1{1d6}′ thick and {2d6}0′ high
+Its well-planned defenses include a thick wooden wall with {2d6} towers and a simple postern
+The central structure is protected by a rudimentary wall and an overgrown ditch that may have once been a moat
+The keep’s rear is set into a dramatic mountain face, providing the structure both rustic beauty and strong natural defense
+The main keep’s walls connect to {2d4} rounded bulwarks for defense
+The stronghold is flanked by two great bastions, and surrounded by a {2d4}0′ wall to stave off would-be attackers
+
+: KeepSpecial
+For better or worse, the keep’s location proved pivotal in the {:Conflict}.
+The current structure rests on the {:Ancient} ruins of {:Ruins}.
+The entire structure was rebuilt after being razed to ashes in the {:Conflict}.
+The fortification has been razed and rebuilt countless times by a dozen nations.
+The once-time garrison here, the {:Fantasy Military Unit.main}, was immortalized in song for their heroic defense throughout the years.
+The structure’s long and colorful history has been dotted with occasional warfare.
+The warm hearth of the main keep has been an attraction for weary travelers for ages.
+This hall once served as the command post of {:Rank} {:MaleName} during a lengthy crusade.
+This was historically a welcome stop for traveling merchants and common-folk on long pilgrimages.
+This was the location where {:Rank} {:MaleName} made his ill-fated last stand.
+To this day, the stronghold is the seat and court for the surrounding {:County}.
+When defended, the hold has never fallen to an attacking force, despite decades of full-scale war in the region.
+
+: County
+8 county
+8 lands
+7 countryside
+7 province
+6 villages
+5 earldom
+5 fiefdom
+4 barony
+4 settlements
+3 serfdom
+2 kingdom
+empire
+
+: Ancient
+ancient
+archaic
+forgotten
+legendary
+long-forgotten
+old
+what was once
+
+: Ruins
+10 {:Name}
+10 {:Fantasy Landmarks.inland}
+2 {:Fantasy Town Names.main}
+2 {:Fantasy Town Names.Englishy}
+
+: Small
+{:Adj} {:SmallType}
+{:Adj} {:SmallType}
+
+: SmallType
+3 motte-and-bailey castle with {:Palisade} {:PalisadeLocation}. {:Special}
+2 brick-built castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
+2 earthenwork castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
+2 fortress with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
+2 keep with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
+brick-built castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Traps} {:Special}
+castle with {:Palisade} {:PalisadeLocation}. {:Special}
+castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
+earthenwork castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Traps} {:Special}
+fortress with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Traps} {:Special}
+keep with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Traps} {:Special}
+motte-and-bailey castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Traps} {:Special}
+
+: Special
+5 {:KeepSpecial}
+{:Rank} {:MaleName} is buried in the {:Cemetery} here, making it a popular pilgrimage spot.
+Many different construction layers indicate that the castle has been destroyed and rebuilt many times.
+Much of the castle was charred and burned in a forgotten war, and its still-standing stonework lends an unsettling eeriness.
+The {:Church} here was where Saint {:MaleName} was originally anointed, making the entire site a hotly-contested holy ground.
+The castle is adjacent to numerous open fields and farmsteads, indicating its importance at the demarcation of some old serfdom.
+The castle was constructed as the key strategic defense for an ancient kingdom, and while it has changed many hands and seen many battles, its has stood ever since.
+The castle was made in times of peace, and boasts a great hall for entertainment and numerous houses for guest lords and ladies.
+This castle withstood enemy advances by the hundreds as the key defense in the {:Conflict}.
+
+: Cemetery
+3 abbey
+5 cemetery
+2 chapel
+churchyard
+graveyard
+priory
+
+: Church
+abbey
+chapel
+church
+priory
+sanctuary
+
+: CurtainWalls
+It has a crenellated stonework wall standing {2d4}0 feet high
+Its {2d6}0′ outer wall has been improved over the years with murder holes at the main and postern gates, and dozens of embrasures to give defenders a marked advantage
+Its external defenses include {2d4} {:TowerConstruction} watchposts, topped with archer’s platforms
+Its hastily-made defenses include a simple earthwork berm designed to slow attackers and impede siege engines
+Its outer defenses include a simple {1d4}0′ {:TowerConstruction} wall topped with a walkway
+Its well-planned defenses include a {2d4}0′ {:TowerConstruction} outer wall with {2d4} turrets
+
+: Palisade
+a {1d4}0′ {:pt}
+
+: pt
+4 wooden palisade
+4 stone wall
+3 bailey
+2 woodwork palisade
+2 stonework wall
+wrought-iron fence
+iron fence
+blackened iron fence
+
+: PalisadeLocation
+5 on all sides, with a small gate
+5 on all sides, with a large double-gate
+3 on all sides, with a small drawbridge over {:MoatType}
+3 to its front, tied into the surrounding cliffs and crags as a natural defense
+2 on three sides, with its back against a jagged cliffside
+2 on three sides, with its back to a fast-flowing river
+on three sides, with a steep dropoff on its fourth
+
+: MoatType
+a deep ditch-moat
+a shallow moat
+an incomplete moat
+what was once a moat
+
+: Large
+{:Adj} {:LargeType}. {:Defenses} {:Special}
+
+: LargeType
+castle
+chateau
+fortress
+great-keep
+imperial castle
+imperial palace
+palace
+royal castle
+royal palace
+
+: Defenses
+A recent victim of siege, smoldering hoardings still adorn the main gates and doors of the {1d4}{1d8}0′ main keep. {:OuterDefenses}
+The {1d4}00-foot-tall castle is well-prepared to withstand a siege, with machicolations and murderholes abounding. {:OuterDefenses}
+The castle has {2d4} great towers, each with a {:Catapult} in various stages of functionality. The walls are lined with oil cauldrons and crested with crenellations and merlons, making it quite advantageous to the ranged defender. {:OuterDefenses}
+The castle keep is defended by {2d4} round towers, each with a {:Catapult} in various stages of functionality. The walls are lined with oil cauldrons and crenellated points for archers and crossbowmen. {:OuterDefenses}
+The castle keep is flanked by {2d4} bulwarks topped with {:Catapult}s. The thick walls of the main structure connect {2d6} towers, set at regular intervals. {:OuterDefenses}
+The castle stands proudly and fearlessly, with 1{2d4}-foot-thick main walls, nearly {1d6}50 feet tall at its highest point. {:OuterDefenses}
+The castle’s {4d4}-foot-thick walls, standing {2d4}0 feet tall, indicate its occupiers regularly saw heavy warfare. While the mighty walls and high turrets of the castle are alone enough to stagger a siege, its greatest defensive feature is a great round bastion with a still-functional {:Catapult}. {:OuterDefenses}
+The castle’s impressive defenses support a large central{:KeepShape} keep standing {1d4}50′ high. {:OuterDefenses}
+
+: KeepShape
+10 cross-shaped
+10 round
+5 T-shaped
+5 L-shaped
+U-shaped
+
+: Catapult
+2 magical {:ArcaneWeapon}
+{~{Siege}}
+
+: OuterDefenses
+3 {:Moat} {:Traps}
+3 {:CurtainWalls}. {:Moat}
+2 {:CurtainWalls}. {:Moat} {:Traps}
+{:CurtainWalls}. {:Traps}
+{Number:TwoToFive} great ditches separated by walls on all sides of the castle alternately serve as rather pleasant courts during peacetime.
+Recent repairs to the outer walls are evident, with crude rock and mortar as a stopgap to fill in breached points.
+The open fields to the front of the keep is defended by {2d6} long walls set in a wide, zig-zag pattern.
+The outer defenses are placed in an odd, open horseshoe from the central keep:  perhaps the designer thought the steep incline of the open end would be enough to stanch an attack.
+The outer wall connects {2d4} turret towers to garrison archers and crossbowmen. {:Moat}. 
+The outer wall is 1{2d4}′ thick and {2d4}0′ high, and has a walkway for defenders and {2d4} postern gates. {:Moat}
+
+: Moat
+3 The outer wall has a defensive ditch with an arched bridge and flanking towers.
+2 The moat has a great drawbridge to the front, and a smaller fixed bridge with a portcullis towards allied lands, meant to allow reinforcements in wartime, riders from the elite guard, or, if necessary, a final retreat.
+2 The great, deep moat around the outer wall boasts a sturdy drawbridge wide enough for four riders in full war kit.
+2 The great gatehouse on the outer wall has a tall portcullis in both front and rear, with arrow slits and murderholes defending the sallyport.
+{Number:TwoToFive} great ditches separated by walls on all sides of the castle alternately serve as rather pleasant courts during peacetime.
+A great rotating bridge serves as the outer gate, with stationary double towers defending both ends.
+A moat of tar pitch stands ready to be lit ablaze, crippling any enemy charge.
+Engineers work feverishly to repair the gatehouse portcullis, which has been recently broken in the down position. The gate is the only way in and out of the castle.
+Instead of a true moat, there are a number of short defensive barricades set at close intervals with pitch-filled ditches to their front, some set ablaze and choking the air with black smoke.
+The castle is on its own small island in a wide lake:  leaving the attacker to either attempt a water landing, or brave the {2d6}00’ of well-defended stonework bridge to the great arched sallyport.
+The gatehouse is flanked by towers and has a still-functioning turning bridge.
+The great gatehouse portcullis is rusted shut in the down position, forcing visitors to use the postern gate.
+The main drawbridge is broken in the down position, forcing defenders to barricade the gate against attack.
+The main drawbridge is broken in the up position, forcing visitors to use the postern gate.
+The main gatehouse has been shattered by siege weaponry and replaced with a defensive platform set over a thick makeshift blockade of iron and stone.
+The main gatehouse portcullis is rusted shut in the up position, and the defenders have blockaded it and dispatched a large percent of their force along the high, crenellated gatehouse walls.
+The majority of the great keep is surrounded by a deep, clear lake, providing excellent natural defense and standoff.
+The moat’s gatehouse has a drawbridge to the front, and a heavy portcullis to seal off the inner courtyard in an emergency.
+The outer wall’s main gate is now only a makeshift barricade after long battering by siege weaponry, but the original towers flanking it still stand.
+There are two gatehouses straddling the ancient trade road. While open in times of peace, their mighty double-portcullis set can seal the castle during a siege.
+
+: Traps
+Ancient stone guardians stand silent along the main court path, but will spring to life against attackers.
+Ancient stone obelisks stand silent along the main court path, but under a skilled mage, they can blast attackers with arcane attacks of fire, lightning and ice.
+Magical traps of fire and ice in the open field can be triggered by wizards from afar.
+Permanent illusory walls provide an initial defense to this arcane place.
+Several large hollowed spike-pits lie along more obvious routes to the castle, to thin the ranks of a large assault force.
+Some of the key ditches are filled with an awful mixture of noxious poison and acid.
+Some parts of the thin outer walls will intentionally fall on a breaching force, burying them alive in tons of rock and rubble.
+The defenses are bolstered by a deadly arcane minefield.
+The defensive ditches have great hidden spikes and spearheads in the soft ground to make their passage less pleasant.
+The gates are crowned with spikes, preventing an easy breach.
+The moat is rumored to be populated by man-eating reptiles.
+The palisades are topped with spear outcroppings, preventing an easy breach.
+The walls are tipped with spikes, preventing an easy breach.
+
+: Name
+5 {:StartName} {:Structure}
+5 {:possessives} {site}
+3 The {:Structure} at {:Fantasy Town Names.main}
+3 The {:Structure} at {:Fantasy Town Names.Englishy}
+3 {:Poetic Destinations.main}
+{:Fantasy Town Names.main}
+{:Fantasy Town Names.Englishy}
+{:inspiration}
+
+: StartName
+10 {:inspiration}
+{:PersonName}’s
+{:Ranks and Titles.RankEnglishSpecial}
+{:color}
+
+: PersonName
+{:Rank} {:MaleName}
+
+: MaleName
+{:ScottishMale.main}
+{:SGNP celtic.male}
+{:Catholic Saint Names.main}
+{:DitV Male Name.FirstName}
+{:Catholic Saint Names.main} {:Fantasy Names.Surname}
+{:DitV Male Name.FirstName} {:Fantasy Names.Surname}
+
+: Rank
+4 {:Ranks and Titles.RankEnglishRoyaltyMale}
+2 {:Ranks and Titles.RankEnglishSpecialReligiousCatholicMale}
+2 {:Ranks and Titles.RankEnglishSpecialReligiousProtestantMale}
+Lord
+{:Ranks and Titles.RankForeign}
+{:Ranks and Titles.RankEnglishSpecialMale}
+Saint
+Sir
+
+: inspiration
+10 {:moreinspirations}
+2 {:Fantasy Military Unit.MascotModifier}
+2 {:Secret Society Title.Noun}
+2 {:Secret Society Title.OrgDescriptor}
+3 {:Fantasy Military Unit.MascotAnimal}
+3 {:Inscriptions.AbstractNounNegative}
+4 {:Inscriptions.DefiniteNoun}
+6 {:Fantasy Town Names.Englishy}
+{:Fantasy Town Names.Group1}{:Fantasy Town Names.Group2}
+{:Fantasy Town Names.Misc}{:Fantasy Town Names.Suffix}
+{:Fantasy Town Names.Misc}{:Fantasy Town Names.Suffix}{:Fantasy Town Names.Suffix}
+{:Inscriptions.AbstractNounPositive}
+{:Secret Society Title.Title}
+
+: abstractevocative
+5 {:Inscriptions.AbstractNounNegative}
+{Evocative:Noun}
+
+: possessives
+{:Fantasy Names.MaleFirstName}’s
+{:Fantasy Town Names.Jobs}’s
+2 {:Inn and Tavern Names.Person}’s
+{:moreposessors}’s
+
+: moreposessors
+{class}
+{humanoid}
+{profession}
+{pseudo class}
+{:creature}
+
+: moreinspirations
+2 {:creature}
+{:creature} {:bodypart}
+{color:simple}
+
+: creature
+{Mythical Creature}
+{Beast}
+{Fauna}
+{Monster}
+{Humanoid:All}
+{Undead}
+
+: bodypart
+5 Head
+2 Bones
+Skull

@@ -8,22 +8,27 @@ apiary
 aqueduct
 arena
 armory
+armory
 asylum
 auction block
 aviary
+bailey
 bakery
 bank
 banquet hall
 bar
 barn
 barracks
+bastion
 baths
+battlement
 beacon
 bell tower
 bestiary
 brewery
 bridge
 brothel
+bulwark
 cabin
 canal
 castle
@@ -34,21 +39,26 @@ cesspool
 chamber
 chapel
 charnel house
+chateau
 church ({religion})
+citadel
 city
 cloister ({religion})
 college ({domain})
 corral
-cottage
 court
+crannog
 crypt
 dairy
 dock
 door
 dungeon
+earthworks
 embassy
+encampment
 farm
 fort
+fortification
 fortress
 foundry
 fountain
@@ -56,6 +66,7 @@ gallery
 gallows
 garden (flower)
 garden ({herb})
+garrison
 gate
 general store
 granary
@@ -65,6 +76,8 @@ grove ({wood} trees)
 guardhouse
 guild ({profession})
 hall
+hobbit-hole
+hold
 home
 hospital
 house
@@ -76,9 +89,11 @@ keep
 kennel
 laboratory
 labyrinth
+lean-to
 library
 lighthouse
 magic shop
+manor
 mansion
 market
 masonry
@@ -88,6 +103,7 @@ mill
 mine ({mine})
 monastery ({religion})
 monument
+motte-and-bailey
 museum
 nunnery ({religion})
 observatory
@@ -102,8 +118,10 @@ pier
 pillar
 planetarium
 portal
+postern
 prison
 quarry ({mineral})
+ramparts
 refinery
 reservoir
 residence
@@ -127,6 +145,7 @@ statue
 stockade
 storehouse
 storm shelter
+stronghold
 swimming pool
 tannery
 tavern ({inn name})
@@ -137,9 +156,14 @@ theater
 tomb
 tower
 training center ({skill})
+tree-house
 turnpike
+wall
 watchtower
 water tower
+watermill
 well
+windmill
 winery
 zoo
+{25%stone }cottage

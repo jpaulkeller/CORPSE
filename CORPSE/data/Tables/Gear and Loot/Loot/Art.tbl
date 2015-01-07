@@ -32,6 +32,9 @@ tetrahedron
 {made of:hard} {bust|figurine|sculpture|statue}
 portrait
 
+: Statue
+{50%{small|large} }{made of:hard} {bust|figurine|sculpture|statue} of {:OF}
+
 : Of
 a {humanoid}
 a {fauna}

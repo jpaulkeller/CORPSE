@@ -1,0 +1,113 @@
+: Hair
+{95%?{:normal}:{:bald}}
+
+: Normal
+{33%{:length} }{33%{:style} }{:color} hair{15% {:extra color}}{10% ({:unusual})}
+
+: Bald
+bald
+shaved
+
+: Length
+cropped
+long
+short
+{shoulder|neck}-length
+
+: Style
+curly
+straight
+wavy
+
+: Color
+{25%{light|dark} }{:c}
+
+: c
+auburn
+black
+blond
+brown
+grey
+red
+{:special colors}
+
+: special colors
+desert sand
+dyed {{color:fancy}|{color:special}}
+platinum blond
+strawberry blonde
+white
+{color:brown}
+{metal}
+
+: extra color
+turning grey
+with frosted tips
+with {:c} highlights
+
+: Unusual
+adorned with tiny {metal:precious} bells
+afro
+asymmetric cut
+bob-cut
+bouffant
+bowl-cut
+beaded
+bun
+buzz-cut
+braided
+chignon
+comb-over
+corn rows
+crew cut
+crown braid
+decorated with ribbons
+dreadlocks
+feathered
+fishtail
+flattop
+french braid
+french twist
+high and tight
+in a pony-tail
+layered
+mohawk
+mop-top
+mullet
+oiled
+oily
+pageboy
+parted {on the {left|right}|in the center}
+pigtail{20%s}
+pixie cut
+pompadour
+ponyhawk
+quiff
+rattail
+razorcut
+ringlets
+shag
+spiked
+tapered
+tied with leather thongs
+tonsure
+unkempt
+untamed
+
+: Detail
+/ http://random-generator.com/index.php?title=Captain_of_the_city_watch
+/ before referencing this, be sure to set G -- {G:=gender}
+is matted mass of locks and knots, a wild revelry of umber waves that seem to defy {G.possessive} every attempt to tame it.
+is cut in a severe bowl, perfectly trimmed so that it but touches the upper rims of {G.possessive} ears and cuts a sharp line of black across {G.possessive} forehead, leaving the nape of {G.possessive} neck naked to the wind.
+is of the lightest flaxen hue and pulled back into a luxurious tail that hangs braided down between {G.possessive} shoulder blades, feathers and beads and lucky tokens woven into its mass.
+a riot of curls, iron in coloration like the blade of a serviceable weapon, a crown that {G.pronoun} is forced to wear despite {G.possessive} obvious attempts to shear it off.
+is cut in a soldier's style, clean and close to the scalp, so that the architecture of {G.possessive} skull is visible to all, its angles and prominences.
+is but an intimation, a few curls about {G.possessive} ears as the clouds might circle the base of a vertiginous mountain, {G.possessive} scalp a torrid mass of scars that interlace like mating slugs where the rest of {G.possessive} hair was seared away.
+heavily oiled and shaped, gleaming wetly and strangely static, not moving even with the sharpest of turns of {G.possessive} head.
+
+: Beard Detail
+His face is clean shaven, but recently so--the skin over his jowls and upper lip are more pallid than the rest of his skin, soft and almost cadaverous in texture.
+He sports the beginning of a beard, faint curls that climb across the length of his jawline and nestle on his upper lip, either the product of a week's growth or the frustrating results of months attempts to prove his manliness.
+He wears a sharp, thickly grown beard that might once have been a mighty growth--recently it was chopped just beneath the jawline, giving his face a severe and harsh frame.
+A long braid grows from his chin, thick as his wrist and reaching his sternum. Otherwise his facial hair is cropped close.
+A mass of thin braids descend from his cheeks, jowls and chin like a seething nest of snakes.

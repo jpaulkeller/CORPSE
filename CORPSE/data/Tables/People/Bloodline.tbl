@@ -1,0 +1,101 @@
+/ http://random-generator.com/index.php?title=BizarreBloodlines
+
+: Bloodline
+caliban - You were born under a witch's hex, or in the vicinity of dark magical rites being practiced. You are stunted, gnarled, bestial, or deformed in some way.
+changeling - You are not truly human at all; rather, the Fae stole a human baby from its crib, and left you in its place. Tell-tale signs of your inhuman lineage include your {:fae signs}.
+creation - You were not truly born at all; rather, you were created alchemically, or galvanically by a rogue experimenter. Your body might bear the marks of having been stitched together, or there might be inorganic material assimilated to your physiognomy.
+dhampir - One of your ancestors was a vampire. This taint manifests physically as {:dhampir signs}.
+hell-blooded - Included in your ancestry is a progenitor who fornicated with devils. This corruption manifests in {:hell signs}.
+moon-blooded - Though not a were-creature yourself, one of your progenitors bore the curse. Your bloodline manifests as animal-like features, and a predatory temper.
+nephilim - The celestial seed of a traitorous angel begot your bloodline. This taint makes you seem otherworldly, and has imbued you with a terrifying beauty.
+sea-blooded - Somewhere in your lineage lurks an ancestor who was a “deep one.” This taint manifests itself in a somewhat frog- or fish-like aspect to your appearance.
+
+: Caliban Features
+Born Under a Black Sign: Early exposure to witchery leaves a Caliban resistant to magic. They take 2 fewer points of damage when hit by offensive arcane powers, and add a +2 bonus to Save vs. Magic. On the downside, they have to Save vs. Magic against beneficial effects too.
+Horrific Visage: Due to their malformed countenances, Caliban have -2 to their Charisma.
+Broken-Bodied Brute: Though misshapen, Caliban tend to be as tough as iron. Caliban add +2 to their Constitution.
+Shambling Gate: Caliban have -1 Speed due to the tortured movements of their gnarled limbs. 
+
+: Fae Features
+Faerie Glamor: Once per day, Changelings can use a limited Disguise power to alter their own appearance. This functions like a “Charm Person” spell against everyone in the Changeling’s presence strictly for the purpose of disguising them for a number of Turns equal to their level.
+Frail and Fey: -1 Constitution.
+Mystified by Mortal Devices: Changelings always suffer a -2 to the Tinkering skill. Additionally, when the character fumbles a roll while using a man-made device of any kind, the device breaks.
+Unearthly: When the Changeling is created, randomly roll one 1st level spell. They can cast it a number of times per day equal to their Level.
+Don't Charm a Charmer: Sleep and Charm spells don’t work on Changelings.
+Weakness (Iron): Changelings take double damage from iron weapons, but can handle iron items normally. 
+
+: Creation Features
+Immunity: Created do not suffer from Poisons or Diseases, and do not take double damage from critical hits.
+Inhuman Stamina: Created start with an extra 1d6+1 Constitution.
+Less Than Human: Created heal at half the speed/rate that humans do, and get half the benefit from healing magic.
+Outsider: Painfully aware of their nature, Created are never fully able to integrate into society. They suffer -(1d6+1) to Charisma.
+Unfeeling Resilience: Created get a +1 bonus to Willpower checks, and +2 to resist all negative environmental effects.
+
+: Dhampir Features
+Children of the Night: Dhampir have night-vision, and (usually) retractable fangs that can deal 1d4 damage.
+Damned: Due to their vampiric lineage, Dhampir possess the Undead quality.    
+Negatives - they can be Turned or affected like any Undead creature, and they can’t benefit from healing magics.
+Positives - they cannot be Poisoned, cannot contract a Disease, and, for every 2 hit points worth of blood they drain from a human, they regain 1 of their own. When hurt, and in the presence of a bleeding human, they must make a Willpower check to avoid drinking from them.
+Hypnotic Gaze: Dhampir are supernatural beguilers. They can make a contested Charisma vs. Willpower check to create an effect like “Charm Person” for one command. Once they fail a check against an individual, they can't Charm them again.
+Self-Correcting Problem: Dhampir deal out double damage against Vampires.
+Weakness (Holy): Holy/Lawful weapons and damaging Miracle powers cause +2 damage to Dhampir.
+Weakness (Sunlight): Dhampir are at -1 to all actions in direct sunlight.
+
+: Hell Features
+Burn, Baby, Burn!:  -2 damage from, or +4 bonus to resist fire and heat.
+Infernal Will: +2 bonus to most Willpower checks, and +2 to all attempts (even magical ones) to Intimidate or cause Fear.  The opposite is true when dealing with Clergy or other True Believers.
+Silver-Tongued Devil: The natural cunning a Hell-Blooded gains from their demonic lineage allows them to “Charm Person” a number of times per day equal to their Level.
+Weakness (Holy): Hell-Blooded take double damage from holy weapons, and damaging Miracle powers. Additionally, they feel uncomfortable in sacred places. 
+
+: Moon Features
+Frenzy: Moon-Blooded fly into a bestial rage when attacked, or openly threatened/mocked. They can only restrain themselves from lashing out if they make a Willpower check at a +4 penalty. If the Moon-Blooded's bloodthirsty nature is known, they suffer -4 to Charisma. On the positive side, they’re at +1 to hit and +1 damage with their bare hands/feet/teeth during these episodes.
+Keen: Moon-Blooded have extraordinary senses of hearing, sight, or smell; they get a +1 to Tracking, or Searching.
+Low Light Vision: Moon-Blooded ignore penalties for Dim lighting (but not total darkness).
+Monstrous Fortitude: Moon-Blooded are difficult to wound; they have +1 Constitution.
+Red of Tooth and Claw: You have {:moon signs}.
+Weakness (Silver): Moon-Blooded take double damage from silver weapons. 
+
+: Nephilim Features
+Accursed: Since their angelic ancestor broke commandments by lying with a mortal, the Nephilim bear the ill-will of the divine. -2 penalty to save vs. any curse or cursed item.
+Angelic Benefactor: Nephilim are driven by their angelic blood to help others. Willpower check at +2 difficulty to avoid helping those in need.
+Lay on Hands: Calling upon their divine heritage, a Nephilim can heal themselves, or others. 1d6+(Level) hp, a number of times per day equal to their level.
+Terrifying Beauty: Their beatific and perfected form gives them +2 to Charisma. 
+
+: Sea Features
+Call of the Sea: A Sea-Blooded can never drown in water, and gains a d6 to their Speed while swimming.
+"The Look": All Sea-Blooded have something fish- or frog-like about their appearance. This unfortunate aspect of their bloodline gives them -2 to Charisma. Even when magically disguised, they suffer from this penalty. People can tell that there’s something "off" about you.
+Things Man Was Not Meant to Know: Distant and nightmarish beings communicate with the Sea-Blooded while they sleep. These dreams are dimly remembered, but still give Sea-Blooded a +1 to Arcana. Such uncanny knowledge comes with a price to one’s sanity, -1 Willpower. 
+
+: Fae Signs
+heterochromatic eyes
+oddly-colored eyes
+pointed ears
+slightly pointed canine teeth
+unnaturally-colored hair
+{:fae signs}, and {:fae signs{!different}}
+
+: Dhampir Signs
+2 an eerie aura of morbidity (-1 to positive social interactions, +1 to Intimidate or Frighten)
+2 an extreme pallor, and an eerie aura of morbidity (-1 to positive social interactions, +1 to Intimidate or Frighten)
+4 an extreme pallor
+fang-like teeth that can't be retracted (1d6 damage/blood-drain)
+having no reflection
+having no reflection, an extreme pallor, and an eerie aura of morbidity (-1 to positive social interactions, +1 to Intimidate or Frighten)
+
+: Moon Signs
+2 night-vision (but your eyes reflect any light in the area), and non-retractable fangs (1d6 damage)
+2 non-retractable fangs (1d6 damage), and claws 1d6+(STR bonus) damage
+3 a tough hide and tasteful fur (half damage from cold)
+3 night-vision (but your eyes reflect any light in the area)
+3 powerful legs (leap up to STR feet vertically, and STRx2 feet horizontally)
+4 claws 1d6+(STR bonus) damage
+4 non-retractable fangs (1d6 damage)
+non-retractable fangs (1d6 damage), claws 1d6+(STR bonus) damage, night-vision (but your eyes reflect any light in the area), powerful legs (leap up to STR feet vertically, and STRx2 feet horizontally), and a tough hide and tasteful fur (half damage from cold)
+
+: Hell Signs
+4 horns
+4 a forked tongue
+4 a third nipple
+4 cloven hooves
+4 a tail
+{:hell signs}, and {:hell signs{!different}}

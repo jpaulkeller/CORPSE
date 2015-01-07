@@ -27,7 +27,7 @@
 
 <li>Merchandise
   <ul>
-    <li>Goods: {M=merchandise}{M.type}  
+    <li>Goods: {M:=merchandise}{M.type}  
     <li>Specialty: {M.merchandise}  
     <li>On sale: {M.merchandise}  
     <li>Also Provides: {M.merchandise}  

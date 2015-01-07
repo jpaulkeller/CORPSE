@@ -1,2 +1,445 @@
 gown
 sash
+
+===
+
+/ http://random-generator.com/index.php?title=ClothingFemale
+
+{{purge}}
+
+==Individual Pieces==
+{{Cols|2|<ul><sgdisplay iterations="8">__NOTOC__<li>{{ucfirst:[main]}}.</sgdisplay></ul>}}
+
+==Full Outfits==
+{{Cols|2|<ul><sgdisplay iterations="8"><li>[Outfit].</sgdisplay></ul>}}
+
+<sgtable>
+
+;main
+1,[Masks]
+7,A [Uniform]
+35,[Clothing]
+
+;~
+1,made of
+1,of
+
+;~MCC
+1,[~] [Mat_Combo_Common]
+;~MCL
+1,[~] [Mat_Combo_Leather]
+;~MCF
+1,[~] [Mat_Combo_Fancy]
+;~MCCh
+1,[~] [Mat_Combo_CM]
+
+;Clothing
+4,A pair of women’s [Footwear]
+4,A woman’s [FullBody]
+4,A woman’s [Lower]
+4,A woman’s [UpperSinglePiece]
+2,A woman’s [Accessories]
+1,A woman’s [Hats]
+
+;Outfit
+20,She is wearing {{ia|[UpperOutfit]}}, {{ia|[Lower]}}, {{ia|[Legwear]}}, and [Footwear]
+7,She is wearing {{ia|[FullBody]}} and [Footwear]
+3,She is wearing {{ia|[Uniform]}}
+
+;Mat_Combo_Common
+20,[MaterialsCommon]
+10,[MaterialsCommon] and [MaterialsCommon]
+3,[Mat_Combo_Fancy]
+
+;Mat_Combo_Fancy
+21,[MaterialsFancy]
+10,[MaterialsFancy] and [MaterialsFancy]
+5,[MaterialsFancy] and [MaterialsCommon]
+
+;Mat_Combo_Leather
+4,[Utility.LeatherHide]
+2,[Utility.LeatherHide] and [Utility.LeatherHide]
+1,[Utility.LeatherHide] with [Utility.Fur] trim
+
+;Mat_Combo_CM
+4,[Mats_CM_Common]
+2,[Mats_CM_Common] and [MaterialsFancy]
+2,[Mats_CM_Common] and [Utility.LeatherHide]
+1,[Mats_CM_Common] and [MaterialsCommon]
+
+;UpperSinglePiece
+1,[UpperLayer1]
+1,[UpperLayer2]
+
+;UpperOutfit
+1,[UpperLayer1]
+1,[UpperLayer1] and a woman’s [UpperLayer2]
+
+;UpperLayer1
+20,corset [~MCCh]
+7,brassiere [~MCCh]
+30,[ShirtType] blouse [~MCF]
+25,[ShirtType] shirt [~MCC]
+15,[ShirtType] tunic [~MCC]
+20,[ShirtType] chemise [~MCC]
+6,[ShirtType] top [~MCC]
+2,[ShirtType] nightshirt [~MCF]
+7,camisole [~MCCh]
+5,bustier [~MCCh]
+5,halter top [~MCCh]
+5,strapless top [~MCCh]
+
+;UpperLayer2
+15,vest [~MCC]
+10,tabard [~MCC]
+8,mantle [~MCC]
+10,doublet [~MCC]
+10,jerkin [~MCL]
+5,overtunic [~MCC]
+10,coat [~MCC]
+5,opencoat [~MCL]
+10,jacket [~MCC]
+7,girdle [~MCF]
+30,bodice [~MCCh]
+
+;ShirtType
+5,[TopNeckline] [TopSleeves] [TopBack]
+1,[TankTopType]
+
+;TopNeckline
+5,high-necked
+5,v-necked
+5,low-cut
+3,square-necked
+3,v-necked (with lace-up)
+1,open-front
+2,collared
+1,lapelled
+1,turtlenecked
+1,off-the-shoulder
+1,revealing
+1,draped-neck
+2,drawstring-necked
+2,scoop-necked
+5,
+
+;TopSleeves
+10,sleeveless
+5,short-sleeved
+4,long-sleeved
+1,long-sleeved (with cuffs)
+4,half-sleeved
+5,“wizard”-sleeved
+4,“poofy”-sleeved
+
+;TopBack
+15,
+1,backless
+1,scoop-backed
+1,lace-up backed
+1,tie-back
+1,button-backed
+
+;TankTopType
+1,strapless
+1,spaghetti-strapped
+1,halter necked
+1,single-shoulder
+1,capelet-sleeved
+
+;Lower
+4,long [LowerSkirtType] skirt [~MCC]
+4,mid-calf length [LowerSkirtType] skirt [~MCC]
+4,knee-length [LowerSkirtType] skirt [~MCC]
+5,kilt [~] [Cloth_Color] and [Cloth_Color] plaid wool
+6,short [LowerSkirtType] skirt [~MCC]
+2,pair of breeches [~MCC]
+2,pair of pantaloons [~MCC]
+2,pair of culottes [~MCC]
+1,barbarian-style loincloth [~] [Utility.Fur] fur and [Utility.LeatherHide]
+2,mini [LowerSkirtType] skirt [~MCC]
+
+;LowerSkirtType
+1,bell-shaped
+1,frilly
+1,plain-front
+1,pleated
+1,slitted
+1,wrap-type
+
+;Legwear
+1,pair of [fl]
+
+;fl
+2,knee-high socks [mo] [cw]
+2,knee-high stockings [mo] silk
+2,thigh-high tights [mo] [cw]
+2,thigh-high stockings [mo] silk
+1,midcalf-high socks [mo] [cw]
+1,midcalf-high stockings [mo] silk
+1,full-length tights [mo] [cw]
+1,full-length stockings [mo] silk
+
+;cw
+1,cotton
+1,wool
+
+;mo
+1,[~] [LegWearColors]
+
+;FullBody
+10,[ShirtType] knee-length [LowerSkirtType] dress [~MCC]
+15,[ShirtType] short [LowerSkirtType] dress [~MCC]
+15,[ShirtType] mid-calf length [LowerSkirtType] dress [~MCC]
+25,[ShirtType] long [LowerSkirtType] dress [~MCC]
+5,[ShirtType] long hooped dress [~MCF]
+5,[ShirtType] formal dress [~MCF]
+3,chainmail bikini [~] [Utility.MetalDecor] rings with cups of [Utility.MetalDecor], lined with [Utility.LeatherHide] on the inside
+7,[ShirtType] [LowerSkirtType] gown [~MCF]
+3,toga [~MCC]
+10,robe [~MCC]
+10,hooded robe [~MCC]
+3,catsuit [~MCCh]
+
+;bhs
+1,The boots have [BootShape] and [BootsHeel] heels
+
+;Footwear
+5,open-toed sandals [~MCL]
+5,close-toed sandals [~MCL]
+5,gladiator sandals [~MCL]
+8,slippers [~MCF]
+15,low boots [~MCL]
+10,mid-calf boots [~MCL]. [bhs]
+15,knee-high boots [~MCL]. [bhs]
+10,thigh-high boots [~MCL]. [bhs]
+10,hip-high (wading) boots [~MCL]. [bhs]
+10,riding boots [~MCL]. The boots have [BootShape] and low heels with spurs [~] [Utility.MetalWeapon]
+1,jester shoes [~MCC]
+25,common shoes [~MCL]
+
+;BootsHeel
+5,flat
+7,low
+4,high
+1,stiletto
+1,platform
+3,low, hollow (smuggler’s)
+
+;BootShape
+8,pointed toes
+2,pointed toes capped with [Utility.MetalDecor]
+8,rounded toes
+2,squared toes
+1,“tabi” toes
+
+;Accessories
+10,belt [~MCL]
+10,cape [~MCC]
+10,pair of gloves [~MCF] with [Utility.Fur] trim
+7,baldric [~MCF]
+6,sash [~MCF]
+5,half-cape [~MCC]
+5,pair of long gloves [~MCF] with [Utility.Fur] trim
+4,gorget [~MCL]
+4,scarf [~] [Cloth_Color] wool
+4,spiked collar [~MCL] with [Utility.MetalArmor] spikes
+3,purse [~MCL]
+2,apron [~] [ServantApronMaterial]
+2,headband [~MCL]
+
+;AccessoriesChance
+4,
+2,She is also wearing [Accessories]
+1,She is also wearing [Accessories] and {{ia|[Accessories]}}
+2,She is also wearing [Accessories] and [Jewelry.main]
+1,She is also wearing {{ia|[Jewelry.JewelryMaterial]}} [Jewelry.Item] and [Jewelry.main]
+
+;HatChance
+60,
+20,On her head there is {{ia|[Hats]}}
+1,On her face there is [Masks]
+
+;Hats
+72,[fh] [~] [MaterialsHat]
+9,bonnet [~] [MaterialsHat] and [Cloth_Color] lace
+
+;fh
+8,open hood
+8,princess hat
+6,“tailed” hood
+6,bordered hood
+6,buttoned hood
+6,coif
+6,liripipe hat
+6,simple hood
+4,beret
+4,broad-brimmed hat
+3,cavalier’s hat
+3,straw hat
+3,wizard’s hat
+2,buccaneer’s hat
+1,jester’s hat
+
+;Masks
+1,a mask depicting {{ia|[MaskSubject]}} [~] [Utility.LeatherHide] and intended to cover the [MaskCoverage]
+1,a mask depicting {{ia|[MaskSubject]}} [~] [Utility.MetalArmor] and intended to cover the [MaskCoverage]
+
+;MaskSubject
+5,fool
+4,tribal face
+1,bear
+1,bull
+1,comedy face
+1,demon
+1,devil
+1,dragon
+1,eagle
+1,faerie
+1,ghost
+1,goat
+1,horse
+1,illithid
+1,leaf-man
+1,leopard
+1,lion
+1,lizardman
+1,moon
+1,satyr
+1,simple
+1,skull
+1,sun
+1,tiger
+1,tragedy face
+1,wolf
+
+;MaskCoverage
+2,full head
+8,upper face only
+8,full face
+1,left full face
+1,right full face
+
+;Uniform
+10,set of woman’s [Vestments]
+15,[ServantUniform]
+1,[MilitaryUniformGeneric] It is cut for a female soldier
+
+;Vestments
+1,[vlev] vestments of [GheronUtility.Deity] made with [MaterialsFancy] and [MaterialsFancy]
+
+;vlev
+20,low-level
+5,mid-level
+2,high-level
+1,ancient or unusual
+
+;uni
+1,uniform consisting of
+
+;ServantUniform
+1,[ServantType]’s [uni] {{ia|[FullBody]}}, [ServantUniformApron] and low boots [~] [Utility.LeatherHide]
+1,[ServantType]’s [uni] {{ia|[UpperOutfit]}}, a long skirt [~MCC], [ServantUniformApron] and low boots of [Utility.LeatherHide]. The boots have [BootShape] and [BootsHeel] heels
+
+;ServantUniformApron
+2,
+3,an apron [~] [ServantApronMaterial],
+3,a half-apron [~] [ServantApronMaterial],
+
+;ServantApronMaterial
+10,[Utility.LightColors] [Utility.ClothFancy]
+5,[Utility.LightColors] [Utility.Cloth]
+2,[Utility.LeatherHide]
+
+;ServantType
+4,female cook
+3,governess
+3,housekeeper
+3,maid
+2,laundress
+2,washerwoman
+1,chambermaid
+1,kitchenmaid
+1,ladies’ maid
+1,maidservant
+1,nursemaid
+1,parlour-maid
+1,scullery-maid
+
+;aaj
+1,and a jacket [~] [Cloth_Color] wool with [Color.metallic] embroidery and buttons of shiny [Utility.MetalDecor]
+
+;MilitaryUniformGeneric
+5,horseman’s dress [uni] [Utility.LeatherHide] riding boots, [Utility.LeatherHide] gauntlets, [Cloth_Color] wool breeches lined with [Utility.LeatherHide],[MilitaryAccessoriesChance] and a tailed jacket [~] [Cloth_Color] wool with [Color.metallic] braided epaulets and embroidery and buttons of shiny [Utility.MetalDecor]
+5,foot soldier’s dress [uni] [Utility.LeatherHide] boots, [Cloth_Color] canvas breeches lined with [MaterialsFancy],[MilitaryAccessoriesChance] [aaj]
+5,guard’s dress [uni] [Utility.LeatherHide] boots, [MaterialsCommon] breeches lined with [MaterialsFancy],[MilitaryAccessoriesChance] [aaj]
+5,pikeman’s dress [uni] [Utility.LeatherHide] boots, [MaterialsCommon] breeches lined with [MaterialsFancy],[MilitaryAccessoriesChance] [aaj]
+1,sapper’s [uni] [Utility.LeatherHide] boots, a thick [Utility.LeatherHide] apron, [MaterialsCommon] breeches lined with [MaterialsFancy], [aaj]
+
+;Cloth_Color
+4,[Color.dark]
+4,[Color.dull]
+3,[brightadj] [Color.bright]
+2,[Color.light]
+
+;brightadj
+3,
+1,bright
+1,brilliant
+1,intense
+1,vibrant
+1,vivid
+1,muted
+1,faded
+
+;MaterialsCommon
+16,[PatternsColors] [Utility.Cloth]
+1,[PatternsColors] [Utility.ClothFancy]
+1,[Utility.LeatherHide]
+
+;MaterialsFancy
+80,[PatternsColors] [Utility.ClothFancy]
+5,[PatternsColors] [Utility.ClothFancy] with [Utility.Fur] fur trim
+5,[PatternsColors] [Utility.Cloth]
+1,[PatternsColors] [Utility.Cloth] with [Utility.Fur] fur trim
+3,[Utility.LeatherHide]
+1,[Utility.LeatherHide] with [Utility.Fur] fur trim
+8,sheer [Cloth_Color] gauze
+8,[Cloth_Color] lace
+
+;Mats_CM_Common
+17,[MaterialsCommon]
+2,[MaterialsCommon] with [Utility.Fur] fur trim
+4,tight [MaterialsCommon]
+4,<b>tight [Utility.LeatherHide]</b>
+2,<b>tight [Utility.LeatherHide] with [Utility.Fur] fur trim</b>
+2,<b>tight [Utility.LeatherHide] with [Utility.MetalArmor] Studs</b>
+3,<b>[Utility.MetalDecor] chainmail over [MaterialsCommon]</b>
+
+;MaterialsHat
+3,[Cloth_Color] [Utility.Cloth]
+2,[Utility.LeatherHide]
+1,[Utility.Fur] fur
+1,[Cloth_Color] felt
+1,[Cloth_Color] [Utility.ClothFancy]
+
+;LegwearColors
+2,[PatternsColors]
+1,black
+1,gray
+1,white
+
+;PatternsColors
+85,[Cloth_Color]
+5,checkered [Cloth_Color] and [Cloth_Color]
+5,lozenged [Cloth_Color] and [Cloth_Color]
+5,[Cloth_Color] and [Cloth_Color] plaid
+5,[StripeType]striped [Cloth_Color] and [Cloth_Color]
+5,ornately embroidered [Cloth_Color]
+5,patchwork [Cloth_Color] and [Cloth_Color]
+2,[Cloth_Color] (with [Cloth_Color] polka-dots)
+
+;StripeType
+2,thin-
+5,
+2,wide-

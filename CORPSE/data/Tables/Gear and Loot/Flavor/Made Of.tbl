@@ -29,5 +29,21 @@ jasper
 turquoise
 shell
 
+: Bow
+ash
+bamboo
+black locust
+black walnut
+bone
+cedar
+hickory
+horn
+ipe
+juniper
+osage
+poplar
+red oak
+yew
+
 : Natural = Geology + Wood
 : Hard = Geology + Wood + ManMade

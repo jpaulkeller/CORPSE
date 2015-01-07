@@ -10,18 +10,50 @@ pristine
 
 : Condition {6, 9}
 
-: Clothing
+: Clothing = Clothing Poor + Clothing Normal + Clothing Nice
+
+: Clothing Normal
+almost new
+clean
+decent
 durable
-lined
-mildewed
+loose-fitting
 mended
-new
 patched
 reinforced
-rugged
+slightly worn
+
+: Clothing Poor
+bloodstained
+burnt
+dingy
+dirty
+discolored
+dusty
+faded
+filthy
+ill-fitting
+mildewed
+muddy
+ragged
+ripped
+ruined
 stained
-tailored
+sweat-stained
+tattered
 threadbare
 torn
+very old
+weathered
 worn
-{ill|loose|well}-fitting
+
+: Clothing Nice
+custom-fitted
+elegant
+expensive looking
+fancy
+lined
+perfectly fitted
+tailored
+uniquely excellent
+very well made

@@ -79,24 +79,34 @@ rice
 {{vegetable}+}{33% and {{vegetable{!different}}+}}
 
 : Cheese
-{:cheese process} {5%goat }cheese
+{:cheese adj} {5%goat }cheese
 
-: Cheese Process
+: Cheese Adj
 aged
 cave-aged
 creamy
 dry
 extra sharp
 farmstead-style
+exotic
 fresh
+grated
 hard
 herb-encrusted
 mild
 pastry-encrusted
 peppercorn-encrusted
+pungent
+roast
+salted
+seasoned
 sharp
+shredded
 smoked
 soft
+spicy
+yellow
+warm
 {nut}-encrusted
 
 : Sweetener

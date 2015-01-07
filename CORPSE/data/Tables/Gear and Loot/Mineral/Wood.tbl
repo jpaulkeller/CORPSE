@@ -16,6 +16,7 @@ basswood                      A light soft durable wood.
 beech               46        A large-sized tree that produces hard woods. The smooth bark of a beech tree was used for writing upon.
 birch                         A hard, smooth-grained wood whose bark strips off in layers. Birch wood is most valued in furniture construction.
 black ash
+black locust
 black walnut                  A large hardwood, whose wood is highly prized and used for furniture, gun-stocks and veneer.
 blackthorn
 bloodwood
@@ -40,7 +41,9 @@ hemlock
 hickory             52.4      A tough wood used for construction of houses, fences and the like.
 holly
 hornbeam
+ipe                           Brazilian walnut
 iron-wood
+juniper
 kingwood                      A Brazilian wood used much in cabinet work because of its streaks of violet tints.
 larch
 laurel
@@ -55,6 +58,7 @@ mistletoe
 mulberry            56
 oak                 45-55     The wood is hard, tough, relatively flexible, resistant to water and not too heavy. It bares weather changes far more than most other woods. It is valued in all manner of construction from flooring, furniture, millwork, cross ties, mine timbers, fenceposts, houses and ships. The bark is used in tannin.
 olive
+osage
 palm
 pine                26-43
 poplar              46        These trees are tall and fast growing with soft wood. A hybrid poplar tree which produces a superior type of timber.
@@ -86,3 +90,53 @@ lime                          A light soft durable wood.
 pear                41.4
 plum                49
 quince              44
+
+: Weapon
+alder
+ash
+aspen
+bamboo
+beech
+birch
+black ash
+black locust
+black walnut
+blackthorn
+bloodwood
+cedar
+ebony
+elder
+elm
+english oak
+fir
+hawthorn
+hazel
+hickory
+hornbeam
+iron-wood
+juniper
+lebethron
+live oak
+locust
+maple
+oak
+red oak
+redwood
+rosewood
+rowan
+royal oak
+teak
+walnut
+willow
+yew
+
+: Nut
+almond
+beech
+cashew
+chestnut
+hazel
+hickory
+oak
+pecan
+walnut

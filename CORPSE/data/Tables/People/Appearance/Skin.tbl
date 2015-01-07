@@ -1,0 +1,47 @@
+: Skin
+{:color}{5% and {:unusual}}
+
+: Unusual
+blemished
+freckled
+tanned
+leathery
+pallid
+rough
+scarred
+smooth
+soft
+sallow
+stretched
+sunburned
+tanned
+weatherbeaten
+weathered
+wrinkly
+youthful
+
+: Color
+dark
+fair
+light
+olive
+pale
+red-toned
+yellow-toned
+swarthy
+{20%{pale|light|dark|deep} }{:special colors}
+
+: special colors
+ashen
+bronze
+caramel
+coffee cream
+cream
+creamy
+creamy brown
+golden
+golden brown
+mahogany
+peachy
+{color}
+{metal}
