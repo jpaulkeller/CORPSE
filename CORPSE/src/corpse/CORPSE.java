@@ -33,6 +33,8 @@ import corpse.ui.TreePanel;
 /** CORPSE - Computer-Oriented Role-Playing System & Environment */
 
 // TODO high priority
+// internal-only subsets
+// script recursion for cave generation
 // add Categories for each table (like Wiki) and provide a way to view by category
 // text which can control where to include it (prepend, append, etc) - Dressed.tbl
 // consider {Table.1} to get the first field, separated by at least 2 spaces - Herb

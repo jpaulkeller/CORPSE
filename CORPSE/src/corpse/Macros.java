@@ -18,10 +18,13 @@ public final class Macros
    public static boolean DEBUG = false;
    private static boolean TEST = false;
 
-   private static final Stack<String> TOKEN_STACK = new Stack<String>();
+   private static final Stack<String> TOKEN_STACK = new Stack<>();
 
-   private static final Pattern ASSIGNMENT = Pattern.compile("\\{([A-Z]+)=([^}]+)\\}");
-   private static final Map<String, Assignment> assignments = new HashMap<String, Assignment>();
+   private static final String VAR = "([A-Z][A-Z0-9]*)";
+   private static final Pattern PRIMITIVE_ASSIGNMENT = Pattern.compile("\\{" + VAR + "=([^}]+)\\}");
+   private static final Pattern TABLE_ASSIGNMENT = Pattern.compile("\\{" + VAR + ":=([^}]+)\\}");
+   private static final Map<String, String> primitiveAssignments = new HashMap<>();
+   private static final Map<String, Assignment> tableAssignments = new HashMap<>();
             
    private static Vector<String> lastResolved = new Vector<String>(); // for back-references
 
@@ -32,7 +35,6 @@ public final class Macros
    public static String resolve(final String tableOrScriptName, final String entry, final String filter)
    {
       String resolvedEntry = entry;
-      // assignments.clear(); TODO
       lastResolved.clear();
 
       Matcher m;
@@ -445,7 +447,7 @@ public final class Macros
          if (xrefFil == null && filter != null)
             xrefFil = filter;
 
-         System.out.println("Macros [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
+         // System.out.println("Macros [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
 
          // avoid infinite loop references
          if (TOKEN_STACK.contains(token))
@@ -500,21 +502,34 @@ public final class Macros
       {
          return table.getColumnValue(line, columnName);
       }
+      
+      @Override
+      public String toString()
+      {
+         return table.getName() + "(" + line + ")";
+      }
    }
    
    private static String resolveAssignments(final String token)
    {
       String resolvedToken = token;
 
-      Matcher m = ASSIGNMENT.matcher(resolvedToken);
+      Matcher m = TABLE_ASSIGNMENT.matcher(resolvedToken);
       if (m.find()) // store the assigned value
       {
-         assignments.put(m.group(1), new Assignment(m.group(2)));
+         tableAssignments.put(m.group(1), new Assignment(m.group(2)));
+         System.out.println("Table Assignnment: " + m.group(1) + " = " + tableAssignments.get(m.group(1))); // TODO
+         resolvedToken = m.replaceFirst("");
+      }
+      else if ((m = PRIMITIVE_ASSIGNMENT.matcher(resolvedToken)).find()) // store the assigned value
+      {
+         primitiveAssignments.put(m.group(1), m.group(2));
+         System.out.println("Primitive: " + m.group(1) + " = " + primitiveAssignments.get(m.group(1))); // TODO
          resolvedToken = m.replaceFirst("");
       }
       else // extract the desired value (or column) from the stored assignment
       {
-         for (Entry<String, Assignment> entry : assignments.entrySet())
+         for (Entry<String, Assignment> entry : tableAssignments.entrySet())
          {
             String regex = "\\{" + Pattern.quote(entry.getKey()) + "(?:[.]" + Constants.COLUMN_NAME + ")?\\}";
             Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
@@ -525,6 +540,15 @@ public final class Macros
                String value = m.groupCount() == 1 ? a.get(m.group(1)) : a.line;
                resolvedToken = m.replaceFirst(Matcher.quoteReplacement(value));
             }
+         }
+         
+         for (Entry<String, String> entry : primitiveAssignments.entrySet())
+         {
+            String regex = "\\{" + Pattern.quote(entry.getKey()) + "\\}";
+            Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+            m = p.matcher(resolvedToken);
+            if (m.find())
+               resolvedToken = m.replaceFirst(Matcher.quoteReplacement(entry.getValue()));
          }
       }
       

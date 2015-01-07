@@ -176,13 +176,13 @@ public final class Script
       while ((m = Constants.TOKEN.matcher(line)).find()) // loop for multiple tokens
       {
          String token = m.group();
-         String resolvedToken;
+         String resolvedToken = token;
+         
+         /*
          resolvedToken = resolveVariables(token);
          if (resolvedToken.equals(token))
-         {
             resolvedToken = resolveAssignments(token);
-            // System.out.println("Script assignment Token: " + token + " R: " + resolvedToken);
-         }
+         */
 
          if (resolvedToken.equals(token))
          {
@@ -192,16 +192,12 @@ public final class Script
          }
 
          if (resolvedToken.equals(token))
-         {
             resolvedToken = Macros.resolve(getName(), token, null);
-            // System.out.println("Script macro Token: " + token + " R: " + resolvedToken);
-         }
 
          if (resolvedToken.equals(token))
             line = m.replaceFirst("<$1>"); // avoid infinite loop
          else
             line = m.replaceFirst(Matcher.quoteReplacement(resolvedToken));
-         // System.out.println("Line = " + line);
       }
 
       return line;
