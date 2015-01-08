@@ -24,20 +24,20 @@ mountain stream exits here, cavern system filled with streams and pools
 worked stone steps
 
 : General
-10 wet caverns, filled with lots of pools and dripping stalactites
-3 lava, very hot
-5 abundant vegetation, mostly ferns and fungi
-5 caverns walls and ceilings covered in {markings|symbols|drawing of {animals|a map}}
-5 {humanoid:subterranean} ruins
-5 seemingly abandoned animal habitation: nests, skins, fur, hair, eggs, holes, droppings, etc.
-5 seemingly abandoned humanoid habitations: beds, shelters, firepits, refuse, markings, furs, etc.
-7 veins of attractive-looking minerals
-8 local rock type
-8 smooth marble
-8 soft-looking rocks and boulders (probably granite)
-9 crystals protruding from walls
-9 root protruding through rock
-9 sandy and porous rock (probably limestone)
+10x wet caverns, filled with lots of pools and dripping stalactites
+3x lava, very hot
+5x abundant vegetation, mostly ferns and fungi
+5x caverns walls and ceilings covered in {markings|symbols|drawing of {animals|a map}}
+5x {humanoid:subterranean} ruins
+5x seemingly abandoned animal habitation: nests, skins, fur, hair, eggs, holes, droppings, etc.
+5x seemingly abandoned humanoid habitations: beds, shelters, firepits, refuse, markings, furs, etc.
+7x veins of attractive-looking minerals
+8x local rock type
+8x smooth marble
+8x soft-looking rocks and boulders (probably granite)
+9x crystals protruding from walls
+9x root protruding through rock
+9x sandy and porous rock (probably limestone)
 
 : Tunnel
 no linking tunnel, caverns open directly onto one another
@@ -87,10 +87,10 @@ slopes {20%steeply }down towards the {center|north|south|east|west}
 {15,40}' high
 
 : Light
-10 bright natural light
-20 dim natural light
-60 pitch black
-10 unnatural light
+1x bright natural light
+2x dim natural light
+6x pitch black
+1x unnatural light
 
 : Size
 tiny ({6-15}' x {8-20}')

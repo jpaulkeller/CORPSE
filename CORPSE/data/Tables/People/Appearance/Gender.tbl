@@ -1,4 +1,4 @@
 . Gender, Abbrev, Pronoun, Possessive, Child, Parent, Sibling
 
-1 female;f;she;her;daughter;mother;sister
-3 male;m;he;his;son;father;brother
+1x female;f;she;her;daughter;mother;sister
+3x male;m;he;his;son;father;brother

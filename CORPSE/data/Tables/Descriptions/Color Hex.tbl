@@ -1,0 +1,485 @@
+/ http://random-generator.com/index.php?title=Colors
+/ http://random-generator.com/index.php?title=Color_scheme
+
+/ sample: <div style="color:#{Color Hex:Hex}; background-color:#{Color Hex:Font}; padding:20px; margin:0; text-align:center;">{Color Hex:Name}</div>
+
+.Hex; Font; Name
+
+: Color Hex
+{: blue}
+{: brown}
+{: cyan}
+{: gray}
+{: green}
+{: orange}
+{: pink}
+{: red}
+{: violet}
+{: white}
+{: yellow}
+
+: blue
+5d8aa8; ffffff; Air Force blue
+007fff; ffffff; azure
+0000ff; ffffff; blue
+0000cd; ffffff; medium blue
+add8e6; 000000; light blue
+00008b; ffffff; dark blue
+333399; ffffff; pigment blue
+0070ff; ffffff; Brandeis blue
+99badd; ffffff; Carolina blue
+2a52be; ffffff; cerulean blue
+08457e; ffffff; dark cerulean
+0047ab; ffffff; cobalt blue
+9bddff; ffffff; columbia blue
+6495ed; ffffff; cornflower blue
+93ccea; 000000; light cornflower blue
+abcdef; 000000; pale cornflower blue
+1560bd; ffffff; denim
+1e90ff; ffffff; dodger blue
+00009c; ffffff; Duke blue
+1034a6; ffffff; Egyptian blue
+0892d0; ffffff; rich electric blue
+035096; ffffff; medium electric blue
+5218fa; ffffff; Han blue
+00416a; ffffff; indigo dye
+6600ff; ffffff; electric indigo
+002fa7; ffffff; International Klein Blue
+e6e6fa; 000000; lavender
+e6e6fa; 000000; lavender mist
+dcd0ff; 000000; light mauve
+6050dc; ffffff; Majorelle blue
+73c2fb; ffffff; Maya blue
+0054b4; ffffff; medium teal blue
+191970; ffffff; midnight blue
+003366; ffffff; dark midnight blue
+000080; ffffff; navy blue
+273be2; ffffff; palatinate blue
+ccccff; ffffff; periwinkle
+1c39bb; ffffff; Persian blue
+0067a5; ffffff; medium Persian blue
+003399; ffffff; dark powder blue
+003153; ffffff; Prussian blue
+002366; ffffff; royal blue
+4169e1; ffffff; royal blue
+082567; ffffff; sapphire
+87ceeb; ffffff; sky blue
+87cefa; 000000; light sky blue
+87ceeb; ffffff; steel blue
+120a8f; ffffff; ultramarine
+5b92e5; ffffff; United Nations blue
+0f4d92; ffffff; Yale blue
+
+: brown
+6d351a; ffffff; auburn
+a67b5b; ffffff; French beige
+3d2b1f; ffffff; bistre
+79443b; ffffff; bole
+964b00; ffffff; brown
+8a3324; ffffff; burnt umber
+734a12; ffffff; raw umber
+987654; 000000; pale brown
+654321; ffffff; dark brown
+800020; ffffff; burgundy
+9f1d35; ffffff; vivid burgundy
+7b3f00; ffffff; chocolate
+b87333; ffffff; copper
+da8a67; 000000; pale copper
+893f45; ffffff; cordovan
+8b0000; ffffff; dark red
+c19a6b; ffffff; fallow
+996515; ffffff; golden brown
+c3b091; ffffff; khaki
+bdb76b; ffffff; dark khaki
+534b4f; ffffff; liver
+c04000; ffffff; mahogany
+d16654; ffffff; medium mahogany
+dd6d5b; 000000; light mahogany
+9d3c27; ffffff; dark mahogany
+ffbea4; 000000; very light mahogany
+8f3926; ffffff; very dark mahogany
+800000; ffffff; maroon
+b03060; ffffff; rich maroon
+c32148; ffffff; bright maroon
+483c32; ffffff; dark taupe
+915f6d; ffffff; mauve taupe
+905d5d; ffffff; rose taupe
+bc987e; 000000; pale taupe
+967117; ffffff; sandy taupe
+cc7722; ffffff; ochre
+80461b; ffffff; russet
+b7410e; ffffff; rust
+321414; ffffff; seal brown
+704214; ffffff; sepia
+3c1414; ffffff; sienna
+e97451; ffffff; burnt sienna
+d2b48c; ffffff; tan
+cd5700; ffffff; tawny
+918151; ffffff; dark tan
+f5deb3; 000000; wheat
+ebc2af; 000000; zinnwaldite
+
+: cyan
+f0f8ff; 000000; Alice blue
+f0ffff; 000000; azure
+00ffff; 000000; aqua
+e0ffff; 000000; baby blue
+0095b6; ffffff; bondi blue
+007ba7; ffffff; cerulean
+00ffff; 000000; cyan
+00b7eb; ffffff; cyan
+008b8b; ffffff; dark cyan
+004b49; ffffff; deep jungle green
+7df9ff; 000000; electric blue
+536878; ffffff; dark electric blue
+20b2aa; 000000; light sea green
+96ded1; 000000; pale robin egg blue
+01796f; ffffff; pine green
+b0e0e6; 000000; powder blue
+00cccc; ffffff; robin egg blue
+007474; ffffff; skobeloff
+008080; ffffff; teal
+0abab5; ffffff; Tiffany blue
+40e0d0; ffffff; turquoise
+00ced1; ffffff; dark turquoise
+48d1cc; ffffff; medium turquoise
+afeeee; 000000; pale turquoise
+
+: gray
+000000; ffffff; black
+808080; ffffff; gray
+d3d3d3; 000000; light gray
+a9a9a9; ffffff; dark gray
+696969; ffffff; dim gray
+708090; ffffff; slate gray
+778899; 000000; light slate gray
+2f4f4f; ffffff; dark slate gray
+3b444b; ffffff; arsenic
+3d2b1f; ffffff; bistre
+36454f; ffffff; charcoal
+555555; ffffff; Davy's gray
+4d5d53; ffffff; feldgrau
+c4c3d0; ffffff; lavender gray
+534b4f; ffffff; liver
+40404f; ffffff; Payne's gray
+c0c0c0; ffffff; silver
+c9c0bb; 000000; pale silver
+708090; ffffff; slate gray
+2f4f4f; ffffff; dark slate gray
+674c47; ffffff; medium taupe
+483c32; ffffff; dark taupe
+50404d; ffffff; purple taupe
+8b8589; ffffff; taupe gray
+738678; ffffff; xanadu
+
+: green
+7fffd4; 000000; aquamarine
+66ddaa; ffffff; medium aquamarine
+4b5320; ffffff; army green
+7ba05b; ffffff; asparagus
+465945; ffffff; gray-asparagus
+66ff00; 000000; bright green
+004225; ffffff; British racing green
+78866b; ffffff; camouflage green
+ace1af; ffffff; celadon
+7fff00; 000000; chartreuse
+99ffcc; 000000; cosmic turquoise
+7cfc00; 000000; lawn green
+9acd32; ffffff; yellow-green
+adff2f; 000000; green-yellow
+50c878; ffffff; emerald
+4f7942; ffffff; fern green
+4d5d53; ffffff; feldgrau
+228b22; ffffff; forest green
+44944a; ffffff; harlequin
+355e3b; ffffff; hunter green
+138808; ffffff; India green
+009900; ffffff; Islamic green
+00a86b; ffffff; jade
+29ab87; ffffff; jungle green
+1c352d; ffffff; medium jungle green
+1a2421; ffffff; dark jungle green
+4cbb17; ffffff; kelly green
+bfff00; 000000; lime
+00ff00; 000000; lime
+32cd32; ffffff; lime green
+ccff00; 000000; electric lime
+21421e; ffffff; myrtle
+3b7e00; ffffff; napier green
+008000; ffffff; office green
+808000; ffffff; olive
+6b8e23; ffffff; olive drab
+00a693; ffffff; persian green
+00a550; ffffff; pigment green
+414833; ffffff; rifle green
+2e8b57; ffffff; sea green
+3cb371; ffffff; medium sea green
+009a63; ffffff; shamrock green
+00ff7f; 000000; spring green
+00fa9a; 000000; medium spring green
+177245; ffffff; dark spring green
+addfad; 000000; moss green
+98ff98; 000000; mint green
+aaf0d1; 000000; magic mint
+00cc99; ffffff; Caribbean green
+40826d; ffffff; viridian
+507d2a; ffffff; sap green
+a7fc00; 000000; spring bud
+bdda57; ffffff; June bud
+c9dc87; ffffff; medium spring bud
+ecebbd; 000000; pale spring bud
+d0f0c0; 000000; tea green
+00755e; ffffff; tropical rain forest
+40826d; ffffff; viridian
+
+: orange
+ffbf00; ffffff; amber
+ff7e00; ffffff; amber light
+ff7e00; ffffff; ECE amber
+fbceb1; 000000; apricot
+fdd5b1; 000000; Crayola apricot
+ed9121; ffffff; carrot orange
+cc5500; ffffff; burnt orange
+ef9b0f; ffffff; gamboge
+ff4f00; ffffff; international orange
+ff7f00; ffffff; orange
+ffa500; ffffff; orange
+ff8c00; ffffff; dark orange
+ff4500; ffffff; orange-red
+ffa000; ffffff; orange peel
+ffe5b4; 000000; peach
+ffefd5; 000000; papaya whip
+ffdab9; 000000; peach puff
+ffcba4; 000000; deep peach
+ffcc99; 000000; peach-orange
+ff9966; ffffff; pink-orange
+ff7518; ffffff; pumpkin
+ff6600; ffffff; safety orange
+fa8072; ffffff; salmon
+ff8c69; ffffff; medium salmon
+ffa07a; 000000; light salmon
+e9967a; ffffff; dark salmon
+ff91a4; ffffff; salmon pink
+f4a460; ffffff; sandy brown
+ff9999; 000000; light salmon pink
+f28500; ffffff; tangerine
+
+: pink
+f19cbb; ffffff; amaranth pink
+ddbec3; 000000; pale amaranth pink
+ed3cca; ffffff; amaranth magenta
+cd2682; ffffff; amaranth cerise
+e66771; 000000; light carmine pink
+ffa6c9; ffffff; carnation pink
+f6adc6; ffffff; nadeshiko pink
+de3163; ffffff; cerise
+da3287; ffffff; deep cerise
+ec3b83; ffffff; cerise pink
+f400a1; ffffff; Hollywood cerise
+f08080; 000000; light coral
+f88379; ffffff; coral pink
+ff00ff; ffffff; fuchsia
+ff77ff; ffffff; fuchsia pink
+f984ef; 000000; light fuchsia pink
+b55489; ffffff; fandango
+fff0f5; 000000; lavender blush
+d6cadd; ffffff; languid lavender
+c9a0dc; ffffff; wisteria
+fbaed2; ffffff; lavender pink
+ee82ee; ffffff; lavender magenta
+cc99cc; ffffff; plum
+df73ff; ffffff; heliotrope
+d19fe8; ffffff; bright ube
+bf94e4; ffffff; bright lavender
+b57edc; ffffff; floral lavender
+fba0e3; ffffff; lavender rose
+ff00ff; ffffff; fuchsia
+ca1f7b; ffffff; magenta dye
+ff0090; ffffff; process magenta
+ff00cc; ffffff; hot magenta
+997a8d; ffffff; Mountbatten pink
+ffc0cb; 000000; pink
+ffb6c1; 000000; light pink
+ff69b4; ffffff; hot pink
+ff1493; ffffff; deep pink
+f9ccca; 000000; pale pink
+f4c2c2; 000000; baby pink
+ffb7c5; 000000; cherry blossom pink
+ffa6c9; ffffff; carnation pink
+dea5a4; ffffff; pastel pink
+fb607f; ffffff; brink pink
+e75480; ffffff; dark pink
+ff007f; ffffff; bright pink
+fc0fc0; ffffff; shocking pink
+f77fbe; ffffff; Persian pink
+f8a1e6; ffffff; Japanese pink
+cc8899; ffffff; puce
+ff007f; ffffff; rose
+ffe4e1; 000000; misty rose
+f4c2c2; 000000; tea rose
+fbcce7; 000000; classic rose
+ff66cc; ffffff; rose pink
+f653a6; ffffff; brilliant rose
+f64a8a; ffffff; French rose
+fe28a2; ffffff; Persian rose
+b57281; ffffff; Turkish rose
+e30b5c; ffffff; razzmatazz
+ff33cc; ffffff; razzle dazzle rose
+d71868; ffffff; dogwood rose
+b3446c; ffffff; raspberry rose
+aa98a9; ffffff; rose quartz
+bc8f8f; ffffff; rosy brown
+c08081; ffffff; old rose
+b76e79; ffffff; rose gold
+996666; ffffff; copper rose
+ab4e52; ffffff; rose vale
+893f45; ffffff; cordovan
+905d5d; ffffff; rose taupe
+674846; ffffff; rose ebony
+ff91a4; ffffff; salmon pink
+ff9999; 000000; light salmon pink
+de6fa1; ffffff; Thulian pink
+e68fac; 000000; light Thulian pink
+ff6fff; ffffff; ultra pink
+
+: red
+e52b50; ffffff; amaranth
+ff355e; ffffff; radical red
+800020; ffffff; burgundy
+9f1d35; ffffff; vivid burgundy
+c41e3a; ffffff; cardinal
+960018; ffffff; carmine
+af4035; ffffff; medium carmine
+a9203e; ffffff; deep carmine
+d70040; ffffff; rich carmine
+ff0033; ffffff; carmine red
+eb4c42; ffffff; carmine pink
+ef3038; ffffff; deep carmine pink
+b31b1b; ffffff; carnelian
+cd5c5c; ffffff; chestnut
+b94e48; ffffff; deep chestnut
+986960; ffffff; dark chestnut
+ff7f50; ffffff; coral
+cd5b45; ffffff; dark coral
+ff4040; ffffff; coral red
+dc143c; ffffff; crimson
+e32636; ffffff; alizarin crimson
+e30b5c; ffffff; razzmatazz
+801818; ffffff; Falu red
+ce2029; ffffff; fire engine red
+800000; ffffff; maroon
+b03060; ffffff; rich maroon
+c32148; ffffff; bright maroon
+cc3333; ffffff; Persian red
+ec5800; ffffff; persimmon
+ff0000; ffffff; red
+8b0000; ffffff; dark red
+e32636; ffffff; rose madder
+65000b; ffffff; rosewood
+ff033e; ffffff; American rose
+480607; ffffff; Bulgarian rose
+e0115f; ffffff; ruby
+b7410e; ffffff; rust
+92000a; ffffff; sangria
+ff2400; ffffff; scarlet
+fd0e35; ffffff; torch red
+b22222; ffffff; fire brick
+560319; ffffff; dark scarlet
+cc4e3c; ffffff; terra cotta
+ff6347; ffffff; tomato
+c80815; ffffff; Venetian red
+e34234; ffffff; vermilion
+
+: violet
+ab274f; ffffff; amaranth purple
+9f2b68; ffffff; amaranth deep purple
+9966cc; ffffff; amethyst
+8a2be2; ffffff; blue-violet
+da3287; ffffff; deep cerise
+da1d81; ffffff; vivid cerise
+cd2682; ffffff; amaranth cerise
+614051; ffffff; eggplant
+c154c1; ffffff; deep fuchsia
+df73ff; ffffff; heliotrope
+4b0082; ffffff; indigo
+32127a; ffffff; Persian indigo
+a76bcf; ffffff; rich lavender
+796878; ffffff; old lavender
+8878c3; ffffff; ube
+663854; ffffff; halaya ube
+9370db; ffffff; medium purple
+9678b6; ffffff; purple mountain majesty
+c8a2c8; ffffff; lilac
+b784a7; ffffff; opera mauve
+915f6d; ffffff; mauve taupe
+da70d6; ffffff; orchid
+682860; ffffff; palatinate purple
+800080; ffffff; purple
+66023c; ffffff; Tyrian purple
+6b3fa0; ffffff; royal purple
+bf00ff; ffffff; electric purple
+a020f0; ffffff; purple
+9370db; ffffff; medium purple
+da70d6; ffffff; orchid
+df73ff; ffffff; heliotrope
+dd00ff; ffffff; psychedelic purple
+c54b8c; ffffff; mulberry
+78184a; ffffff; pansy purple
+5a004a; ffffff; Tokyo purple
+50404d; ffffff; purple taupe
+c71585; ffffff; red-violet
+bb3385; ffffff; medium red-violet
+db7093; 000000; pale red-violet
+a50b5e; ffffff; jazzberry jam
+d8bfd8; 000000; thistle
+ee82ee; ffffff; violet
+7f00ff; ffffff; violet
+ee82ee; ffffff; violet
+8b00ff; ffffff; electric violet
+9900ff; ffffff; vivid violet
+9400d3; ffffff; dark violet
+c71585; ffffff; medium violet-red
+c9a0dc; ffffff; wisteria
+
+: white
+f5f5dc; 000000; beige
+fff8e7; 000000; cosmic latte
+fffdd0; 000000; cream
+f0fff0; 000000; honeydew
+fffff0; 000000; ivory
+fffacd; 000000; lemon chiffon
+f8f4ff; 000000; magnolia
+f5fffa; 000000; mint cream
+ffdead; 000000; Navajo white
+fdf5e6; 000000; old lace
+fff5ee; 000000; seashell
+ffffff; 000000; white
+
+: yellow
+f0dc82; 000000; buff
+dfff00; 000000; chartreuse yellow
+fbec5d; 000000; corn
+c2b280; ffffff; ecru
+eedc82; 000000; flax
+ffd700; 000000; golden
+d4af37; ffffff; metallic gold
+c5b358; ffffff; Vegas gold
+cfb53b; ffffff; old gold
+e6be8a; 000000; pale gold
+fcc200; ffffff; golden poppy
+ffcc33; 000000; sunglow
+ffdf00; 000000; golden yellow
+daa520; ffffff; goldenrod
+b8860b; ffffff; dark goldenrod
+fde910; 000000; lemon
+f0e68c; 000000; light khaki
+ffdb58; 000000; mustard
+fadfad; 000000; peach-yellow
+d1e231; 000000; pear
+f4c430; ffffff; saffron
+ff9933; ffffff; deep saffron
+ffd800; 000000; school bus yellow
+ffba00; ffffff; selective yellow
+ffcc00; 000000; tangerine yellow
+ffff00; 000000; yellow
+ffef00; 000000; process yellow

@@ -1,0 +1,104 @@
+/ http://random-generator.com/index.php?title=Container_Trap
+
+: Container Trap
+guarded by contact poison causing {:poison effect} on the treasure
+guarded by contact poison causing {:poison effect} on the container
+guarded by a poison needle causing {:poison effect} on the lock
+guarded by a poison needle causing {:poison effect} in the handle
+guarded by poison spring darts that attack with a {:to hit} causing {:dart effect} in the front
+guarded by poison spring darts that attack with a {:to hit} causing {:dart effect} on top
+guarded by poison spring darts that attack with a {:to hit} causing {:dart effect} from the inside lid
+guarded by poison spring darts that attack with a {:to hit} causing {:dart effect} from the inside bottom
+guarded by blade scything across the top causing {:scythe damage}
+guarded by {:poisonous vermin}
+guarded by poison gas, causing {:poison gas effect}
+guarded by a trap door opening into {:trapdoor effect} if disturbed
+guarded by a stone block dropping causing death if a save vs. wands is failed
+guarded by {:spell effect}
+
+: dart effect
+1 damage and {:poison effect} from the poison
+1-3 damage and {:poison effect} from the poison
+1-4 damage and {:poison effect} from the poison
+
+: poison effect
+4d10 damage (save for half)
+6d10 damage (save for half)
+8d10 damage (save for half)
+death (save for life)
+death (save for 2d10 damage)
+
+: to hit
+ThAC0 of 18 (+2)
+ThAC0 of 16 (+4)
+ThAC0 of 14 (+6)
+ThAC0 of 12 (+8)
+ThAC0 of 10 (+10)
+ThAC0 of 8 (+12)
+
+: scythe damage
+1
+1-3
+1-4
+1-6
+1-8
+2-8
+1-10
+1-12
+2-12
+2-16
+3-18
+4-16
+3-24
+2-20
+
+: poisonous vermin
+acidic ants attack (Swarm, AC 6, HP 12, D 1-6 acid sting)
+bees attack (Swarm, AC 4, HP 6, D 1 + Poison (does 2-16 damage, save for half))
+poison beetles attack (Swarm, AC 5, HP 10, D 1-6 acid spray)
+wasps attack (Swarm, AC 4, HP 8, D 1-4 + Poison (does 3-24 damage, save for half))
+poison centipedes attack (Swarm, AC 8, HP 12, D 1 + Poison (Save vs. paralyzation or be paralyzed for 2-8 turns))
+scorpions attack (Swarm, AC 6, HP 21, D 1-4 + Poison (Save vs. poison or die))
+a deadly spider attacks (AC 4, HP 4, D Poison (Save vs. Poison or die))
+a deadly viper attacks (AC 4, HP 6, D 1-4 + Poison (Save vs. Poison or die))
+
+
+: poison gas effect
+save vs. poison or causes blindness in {:gas range} {:gas duration}
+save vs. poison or causes fear in {:gas range} {:gas duration}
+save vs. poison or causes sleep in {:gas range} {:gas duration}
+save vs. poison or causes weakness in {:gas range} {:gas duration}
+save vs. poison or causes nausea in {:gas range} {:gas duration}
+save vs. poison or causes death in {:gas range}
+
+: gas range
+a 5' radius
+a 10' radius
+a 20' radius
+a 30' radius
+
+: gas duration
+10x for 1-6 turns
+6x for 2-12 turns
+3x for 1-10 hours
+permanently
+
+: trapdoor effect
+a 10' pit
+a 20' pit
+the next dungeon level
+
+: spell effect
+Alarm (Immediately make 3 wandering monster checks)
+Blade Barrier (does 8-64 points of damage in s 20' cube)
+Death Symbol (Death if hit points are less than 80)
+Discord Symbol (Save or Attack friends for 2-8 rounds)
+Explosive Runes (does 6d4+6 points of damage to the reader, save for half)
+Fear Symbol (Save at -4 or be Feared)
+Fire Trap(Does 1-4+9 points of damage to all within 5', save for half)
+Glyph of Warding (save or blinds)
+Glyph of Warding (save or lose 1-4 levels)
+Glyph of Warding (save or take 20 points of damage)
+Hopelessness Symbol (save or feel hopeless for 3-12 turns; 25% chance to take no action)
+Sepia Snake Sigil
+Wyvern Watch

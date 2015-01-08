@@ -1,27 +1,27 @@
 : Dungeon Door
-8 {:type}; {:state}; made of {:material}{10%; covered by {:covered by}}{10%; {:special}} 
-1 doorway covered by hanging {leather|fur|cloth|strings of {beads|bells|{tiny item}}}
-1 doorway blocked by {:blocked by}
+8x {:type}; {:state}; made of {:material}{10%; covered by {:covered by}}{10%; {:special}} 
+1x doorway covered by hanging {leather|fur|cloth|strings of {beads|bells|{tiny item}}}
+1x doorway blocked by {:blocked by}
 
 : Type
-8 normal door
-1 portcullis
-1 sliding "pocket" door
+8x normal door
+1x portcullis
+1x sliding "pocket" door
 
 : State
-6 {10%{stuck|spiked} }closed{10%, {concealed|secret}}{50%, {magically|mechanically} locked}
-3 closed{10%, {concealed|secret}}{50%, {magically|mechanically} locked}{20%, trapped - {:trap}}
-1 {10%{stuck|spiked} }open
+6x {10%{stuck|spiked} }closed{10%, {concealed|secret}}{50%, {magically|mechanically} locked}
+3x closed{10%, {concealed|secret}}{50%, {magically|mechanically} locked}{20%, trapped - {:trap}}
+1x {10%{stuck|spiked} }open
 
 : Material
-7 {10%{reinforced|rotting|scorched} }{wood}
-2 {stone|granite|marble|obsidian|slate}
-1 {metal}
+7x {10%{reinforced|rotting|scorched} }{wood}
+2x {stone|granite|marble|obsidian|slate}
+1x {metal}
 
 : Covered By
 bone
 book covers
-leather
+leatherxs
 poisonous vines
 recycled shields
 {crustacean|tortoise} shell

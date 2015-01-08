@@ -1,4 +1,4 @@
-\/ for adjectives
+/ for adjectives
 : Adj = Nice + Neutral Adj + Mean
 : Not Nice = Mean + Neutral Adj
 : Not Mean = Nice + Neutral Adj
@@ -50,6 +50,7 @@ wondrous
 
 : Neutral Adj
 ancient
+delicate
 elder
 eternal
 final
@@ -60,6 +61,7 @@ utter
 uttermost
 
 : Mean
+abominable
 accursed
 ancient
 baneful
@@ -69,6 +71,8 @@ blasphemous
 bloodstained
 bloody
 chilling
+crawling
+cruel
 cursed
 dark
 deadly
@@ -84,9 +88,11 @@ fallen
 fiery
 forbidden
 forgotten
+foul
 frozen
 garish
 haunted
+heartless
 hidden
 immortal
 last
@@ -114,8 +120,10 @@ unspeakable
 unvanquishable
 unwholesome
 vanishing
+vile
 warped
 weird
+wicked
 
 : Good
 beauty
@@ -153,6 +161,7 @@ clouds
 command
 conjuration
 conquest
+crown
 demand
 desire
 diversion
@@ -186,11 +195,13 @@ insult
 iron
 kings
 legend
+life
 lightning
 magic
 meteors
 miracles
 mirage
+mirror
 oaths
 phantom
 pity
@@ -208,6 +219,7 @@ shield
 sigil
 silver
 sleep
+song
 storms
 suggestion
 summoning

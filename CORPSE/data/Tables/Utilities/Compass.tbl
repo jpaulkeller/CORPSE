@@ -1,0 +1,33 @@
+: 4
+north
+south
+east
+west
+
+: 8
+north
+northeast
+east
+southeast
+south
+southwest
+west
+northwest
+
+: 16
+north
+north by northeast
+northeast
+east by northeast
+east
+east by southeast
+southeast
+south by southeast
+south
+south by southwest
+southwest
+west by southwest
+west
+west by northwest
+northwest
+north by northwest

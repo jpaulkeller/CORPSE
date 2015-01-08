@@ -1,35 +1,40 @@
-assassin
+: Pseudo Class = Bard + Fighter + Mage + Priest + Ranger + Rogue + Sage + Misc
+
+: Bard
+balladeer
 bard
+chronicler
+jongleur
+minstrel
+musician
+poet
+raconteur
+rhapsodist
+story teller
+street singer
+troubadour
+trouveur
+
+: Fighter
 berserker
 bounty hunter
-burglar
 captain
 cavalier
 champion
 chevalier
-cleric
-construct
 dragoon
 fighter
 guardian
-healer
-hunter
 knight
 lancer
-lore master
 mercenary
-minstrel
-monk
 paladin
-priest
-prophet
-rogue
-shapeshifter
+soldier
 templar
 warden
 warrior
 
-: Magical
+: Mage
 battlemage
 chronomancer
 conjurer
@@ -39,15 +44,79 @@ enchantress
 geomancer
 illusionist
 mage
+magus
 necromancer
 neuromancer
 pyromancer
 rune carver
 rune keeper
 rune weaver
-sage
+shaman
 sorcerer
 spellcaster
 warlock
 witch
 wizard
+
+: Priest
+ascetic
+battle-priest
+clergyman
+cleric
+crusader
+cultist
+curate
+death-priest
+druid
+exorcist
+friar
+healer
+hermit
+holy man
+inquisitor
+itinerant priest
+monk
+nun
+necromancer
+paladin
+preacher
+priest
+priest-king
+shadow-priest
+
+: Ranger
+drifter
+explorer
+forester
+gypsy
+hunter
+lookout
+nomad
+rambler
+ranger
+rover
+scout
+sentinel
+wanderer
+watcher
+
+: Rogue
+assassin
+blackjack
+burglar
+raconteur
+rogue
+vagabond
+
+: Sage
+augur
+diviner
+lore master
+medium
+oracle
+prophet
+sage
+seer
+
+: Misc
+shapeshifter

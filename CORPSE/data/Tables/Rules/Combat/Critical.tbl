@@ -1,3 +1,16 @@
+/ http://random-generator.com/index.php?title=Critical_Hit
+
+/ In a d20 system, attacks are rolled on a 20-sided die, so rolling a 20 is considered a "critical success".
+/ In some games, instead of critical hits dealing more damage, they can instead do special effects. 
+
+: Critical
+general: {:general}
+bludgeoning: {:bludgeoning}
+slashing: {:slashing}
+piercing: {:piercing}
+magical: {:magical}
+
+: General
 Anything in the off-hand (shield, lamp etc) is dropped.
 Armour pierced: as well as normal damage, the target's armour is less effective. Roll again if the attacker's weapon is blunt (for example a club), or if the target has no armour or 'natural armour' (tough skin etc).
 As well as normal damage, the victim gains a permanent scar on his {face|arm|leg|chest|stomach|back|neck}.
@@ -15,3 +28,170 @@ Stunned: as well as normal damage, the target is unable to attack next turn, and
 The wound will be unusually difficult to clean and dress, and so more likely to become infected than other wounds. The target will be likely to get sick.
 Unconscious for {2d6} rounds of combat.
 Weapon is {shattered|dropped}. The target doesn't take any damage. Re-roll if the target is using 'natural weapons' such as claws, or no weapons.
+
+: bludgeoning
+weapon deals damage as a normal critical
+{:bludgeoning-special}
+
+: bludgeoning-special
+opponent's hand is {:bludgeoning-adj}; weapon does standard damage and opponent gains -1 to attack
+opponent has 1d4 fingers broken; weapon does standard damage and opponent's hand is now useless until healed (roll randomly to determine which hand. DC 10 plus damage dealt Fort save negates hand becoming useless)
+opponent's toe is {:bludgeoning-adj}; weapon does standard damage and opponent is reduced to one half movement speed until healed
+opponent's foot is {:bludgeoning-adj}; weapon does standard damage and opponent is reduced to one quarter movement speed until healed
+opponent's leg is {:bludgeoning-adj}; weapon does standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
+opponent's leg is {:bludgeoning-adj}; weapon does standard damage and opponent is reduced to one half movement speed until healed
+opponent's knee is {:bludgeoning-adj}; weapon does standard damage and opponent is reduced to one quarter movement speed until healed
+opponent's hip is {:bludgeoning-adj}; weapon deals 1d4 Dex damage instead of standard damage
+opponent's hip is {:bludgeoning-adj}; weapon deals standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
+opponent's knee is {:bludgeoning-adj}; weapon deals 1d4 Dex damage instead of standard damage
+opponent's knee is {:bludgeoning-adj}; weapon deals standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
+opponent's arm is {:bludgeoning-adj}; weapon deals standard damage and provides a free disarm attempt (as if attacker had Improved Disarm feat)
+opponent's arm is {:bludgeoning-adj}; weapon deals 1d4 Dex damage instead of standard damage
+opponent's shoulder is {:bludgeoning-adj}; weapon deals standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
+opponent's shoulder is {:bludgeoning-adj}; weapon deals standard damage and opponent gains -1 to attack
+opponent's shoulder is {:bludgeoning-adj}; weapon deals 1d4 Str damage instead of standard damage
+opponent's gut is {:bludgeoning-adj}; weapon deals standard damage, and opponent must make DC 10 plus damage dealt Fort save or fall prone
+opponent's gut is {:bludgeoning-adj}; weapon deals 1d4 Con damage instead of standard damage
+opponent's ribs are {:bludgeoning-adj}; weapon deals standard damage, and opponent is stunned for 1 round
+opponent's ribs are {:bludgeoning-adj}; weapon deals standard damage, and opponent gains -2 to attack
+opponent's head is {:bludgeoning-adj}; weapon deals standard damage and opponent is stunned for 1 round
+opponent's head is {:bludgeoning-adj}; weapon deals 1d4 Int damage instead of standard damage
+opponent's head is {:bludgeoning-adj}; weapon deals standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
+opponent's face is {:bludgeoning-adj}; weapon deals 1d6 Chr damage instead of standard damage. Opponent's bite attack is at -2 to hit
+opponent's face is {:bludgeoning-adj}; weapon deals standard damage, and opponent is blind for 1 round
+opponent's face is {:bludgeoning-adj}; weapon deals standard damage, and opponent is deafened in one ear until healed
+opponent's throat is {:bludgeoning-adj}; if opponent breathes, they choke and start to drown (make DC 10 Con check). Otherwise weapon deals double damage
+opponent's throat is {:bludgeoning-adj}; weapon deals standard damage, and opponent cannot speak until healed
+opponent's neck is {:bludgeoning-adj}; weapon deals standard damage, and opponent must make DC 10 plus damage dealt Fort save or be paralyzed for 2d4 rounds
+opponent's armor is {:bludgeoning-adj}; weapon deals standard damage to opponent, and 2d6 to opponent's armor (ignoring hardness)
+opponent's armor is {:bludgeoning-adj}; weapon deals standard damage to opponent, and opponent's armor check penalty is doubled, max Dex bonus halved until fixed (DC 15 craft)
+weapon deals standard damage and opponent is sickened for 1d6 rounds
+weapon deals double damage to opponent, and standard damage to one adjacent opponent
+weapon deals double damage and attacker gets a free attack at -5 against the opponent
+weapon deals double damage to opponent, and 2d6 nonlethal damage
+weapon deals no damage, but provides a free sunder attempt (as if attacker had Improved Sunder feat)
+
+: bludgeoning-adj
+crushed
+smashed
+pummeled
+pulverized
+bashed
+
+: slashing
+weapon deals damage as a normal critical
+{:slashing-special}
+
+: slashing-special
+opponent's hand is {:slashing-adj}; weapon does standard damage and opponent gains -1 to attack
+opponent's hand is {:slashing-adj}; weapon does standard damage and opponent's hand is useless until healed (roll randomly to determine which hand. DC 10 plus damage dealt Fort save negates hand becoming useless)
+opponent's hand is {:slashing-adj}; weapon deals no damage, and opponent looses 1d3 fingers, and 1 Str and 1 Con drain (Fort DC 15 negates drain)
+opponent's toe is {:slashing-adj}; weapon does standard damage and opponent's speed is halved until healed
+opponent's foot is {:slashing-adj}; weapon does standard damage and opponent's speed is quartered until healed
+opponent's leg is {:slashing-adj}; weapon does 1d6 Dex damage instead of normal damage
+opponent's leg is {:slashing-adj}; weapon does standard damage and opponent's speed is halved until healed
+opponent's knee is {:slashing-adj}; weapon does standard damage and opponent's speed is quartered until healed
+opponent's forearm is {:slashing-adj}; weapon does standard damage and provides a free disarm attempt (as if attacker had Improved Disarm feat)
+opponent's forearm is {:slashing-adj}; weapon does 1d6 Dex damage instead of normal damage
+opponent's shoulder is {:slashing-adj}; weapon does 1d4 Str damage instead of normal damage
+opponent's shoulder is {:slashing-adj}; weapon does 1d4 Dex damage instead of normal damage
+opponent's armor is {:slashing-adj}; weapon deals standard damage to opponent, and opponent's armor check penalty is doubled, Dex bonus halved until fixed (DC 15 Craft)
+opponent is hit with the flat of the blade; weapon does triple damage, but is all non-lethal
+weapon deals double damage to opponent, and standard damage to one adjacent opponent
+weapon deals double damage and attacker gets a free attack at -5 against the opponent
+weapon deals double damage to opponent, and 2d6 nonlethal damage
+weapon deals no damage, but provides a free sunder attempt (as if attacker had Improved Sunder feat)
+
+: slashing-adj
+slashed
+sliced
+cut
+lacerated
+gouged
+maimed
+rent
+
+: piercing
+weapon deals damage as a normal critical
+{:piercing-special}
+
+: piercing-special
+opponent's armor is {:piercing-adj}; weapon deals standard damage to opponent, and opponent's armor check penalty is doubled, Dex bonus halved until fixed (DC 15 Craft)
+opponent's forearm is {:piercing-adj}; weapon does standard damage and provides a free disarm attempt (as if attacker had Improved Disarm feat)
+opponent's forearm is {:piercing-adj}; weapon does 1d6 Dex damage instead of normal damage
+opponent's hand is {:piercing-adj}; weapon does standard damage and opponent gains -1 to attack
+opponent's hand is {:piercing-adj}; weapon does standard damage and opponent's hand is useless until healed (roll randomly to determine which hand. DC 10 plus damage dealt Fort save negates hand becoming useless)
+opponent's foot is {:piercing-adj}; weapon does standard damage and opponent's speed is quartered until healed
+opponent's leg is {:piercing-adj}; weapon does 1d6 Dex damage instead of normal damage
+opponent's leg is {:piercing-adj}; weapon does standard damage and opponent's speed is halved until healed
+opponent's neck is pierced; weapon deals standard damage and 1 Str and 1 Con drain (Fort DC 15 negates drain)
+opponent's neck is pierced; weapon deals standard damage and opponent cannot speak until healed
+opponent's shoulder is {:piercing-adj}; weapon does 1d4 Str damage instead of normal damage
+opponent's shoulder is {:piercing-adj}; weapon does 1d4 Dex damage instead of normal damage
+opponent's head is pierced; weapon deals 1d4 Int damage instead of standard damage
+opponent's head is pierced; weapon deals standard damage and opponent is stunned for 1 round
+opponent's head is pierced; weapon deals standard damage and opponent's perception rolls (Spot, Listen, Search) are at -5 until healed
+weapon deals double damage to opponent, and standard damage to one adjacent opponent
+weapon deals double damage and attacker gets a free attack at -5 against the opponent
+weapon deals double damage to opponent, and 2d6 nonlethal damage
+weapon deals standard damage to opponent and opponent is denied their Dexterity bonus to AC against this attacker (as if the attacker had successfully Feinted against this opponent) for one round
+
+: piercing-adj
+gored
+gouged
+penetrated
+perforated
+pierced
+punctured
+torn
+
+: magical
+spell deals damage as a normal critical
+{:magical-special}
+
+: magical-special
+spell has inadvertently created an linear {:magical-adj} rift, doing double damage to target and normal damage to one adjacent opponents
+spell has created an unexpected explosive {:magical-adj} shockwave, doing normal damage to target and all adjacent enemies
+spell has left latent {:magical-adj} residue; spell does standard damage and opponent gains -5 to SR for a number of rounds equal to the level of the spell cast (or this spell does double damage if opponent has no SR)
+spell has left latent {:magical-adj} residue; spell does standard damage and the next spell targeting this opponent gains +5 to bypass opponent's SR (or next spell automatically does double damage if opponent has no SR)
+spell has left latent {:magical-adj} residue; spell does standard damage and opponent glows (as if affected by faerie fire spell for 1d6 rounds)
+spell has left latent {:magical-adj} residue; spell does standard damage, and opponent is entangled (DC 20 Strength or Escape Artist check to be freed)
+spell causes {:magical-adj} blast; spell deals standard damage and opponent is stunned for a number of rounds equal to the level of the spell cast
+spell causes {:magical-adj} blast; spell deals standard damage and opponent is dazed for a number of rounds equal to the level of the spell cast
+spell causes {:magical-adj} blast; spell deals standard damage and opponent is fascinated for a number of rounds equal to the level of the spell cast
+spell causes {:magical-adj} blast; spell deals standard damage and opponent is paralyzed for 1 round
+spell causes {:magical-adj} blast; spell deals standard damage and opponent is paralyzed for a number of rounds equal to the level of the spell cast (Fort save DC 10 plus damage dealt to negate)
+spell causes {:magical-adj} blast; spell deals standard damage and opponent is confused for 1 round
+spell causes {:magical-adj} blast; spell deals standard damage and opponent is confused for a number of rounds equal to the level of the spell cast (Fort save DC 10 plus damage dealt to negate)
+spell causes {:magical-adj} blast; spell deals standard damage and bypasses all energy resistance of opponent (but not immunity; if opponent has no energy immunity, spell does double damage)
+spell causes {:magical-adj} blast; spell deals standard damage and opponent's blindsense, darkvision, and scent abilities are negated for 1 day
+spell causes {:magical-adj} rebound; spell deals normal damage, and caster retains the spell (as if using a Pearl of Power)
+spell causes {:magical-adj} sympathy; spell deals damage as if caster level were 2 higher (if spell damage is not modified by caster level, spell does an extra 1d6 damage)
+spell causes {:magical-adj} sympathy; spell deals standard damage, and takes less time to cast (spell casting time greater than one round takes half as long, full-round casting time becomes a standard action, a standard action becomes a swift action, a swift action becomes a free action)
+spell causes {:magical-adj} sympathy; spell deals standard damage, and opponent also is attacked by a magic missile (1d4+1 damage)
+spell causes {:magical-adj} sympathy; spell deals standard damage, and opponent is also targeted by a bane spell (DC 10 plus level of spell cast to negate)
+spell causes {:magical-adj} sympathy; spell deals standard damage, and opponent is also targeted by a doom spell (DC 10 plus level of spell cast to negate)
+spell causes {:magical-adj} sympathy; spell deals standard damage, and opponent's magical auras glow (as the spell detect magic on that opponent) for 3 rounds
+spell causes {:magical-adj} sympathy; spell deals standard damage, and caster intrinsically know if opponent is Evil (as the spell detect evil) for 3 rounds
+spell causes {:magical-adj} sympathy; spell deals standard damage, and caster intrinsically know if opponent is Good (as the spell detect good) for 3 rounds
+spell causes {:magical-adj} sympathy; spell deals standard damage, and caster intrinsically know if opponent is Chaotic (as the spell detect chaos) for 3 rounds
+spell causes {:magical-adj} sympathy; spell deals standard damage, and caster intrinsically know if opponent is Lawful (as the spell detect law) for 3 rounds
+spell causes {:magical-adj} sympathy; spell deals standard damage, and caster intrinsically know if opponent is Undead (as the spell detect undead) for 3 rounds
+the spell has opened a wild {:magical-adj} rift, and the spell does normal damage plus the same amount of {element} damage
+the spell has opened a wild {:magical-adj} rift, and the spell does double damage, all of it {element} damage
+spell causes {:magical-adj} rift; spell deals standard damage, and opponent is sent to a random plane (Will save DC 5 plus damage dealt to negate plane shift)
+
+: magical-adj
+alchemical
+alchemistic
+arcane
+esoteric
+magical
+magick
+mystic
+mystical
+occult
+otherworldly
+spellweave
+supernatural
+unnatural

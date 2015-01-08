@@ -1,9 +1,18 @@
-acting as a {profession} without a license
+: Crime
+{20%{attempted|conspiracy to commit} }{:act}
+
+: Act
+acting as a {profession} without {a license|guild membership}
 arson
-{assaulting|offending|killing} a {title}
+bigamy
+breaking and entering
+contributing to the delinquency of a minor
 counterfeiting currency
 destruction of property
 fencing (receiving stolen goods)
+illegal use of magic
+larceny
+malicious injury to property
 marauding
 murder
 oath-breaking
@@ -11,10 +20,25 @@ pick-pocketing
 pillaging
 plundering
 poaching
+possession of {smuggled}
+prostitution
+public drunkenness
 rape
+selling liquor without a licence
+shoplifting
 smuggling of {smuggled}
+soliciting
 tax evasion
 theft
 treason
+vagrancy
 vandalism
+violation of custom: {:custom}
 witchcraft
+wounding with intent to do grievous bodily harm
+{assaulting|offending|killing} a {title}
+{smuggled}-trading
+
+: Custom
+{custom:who} must {always|never} {custom:custom} {custom:whom} {custom:when} 
+{custom:who2} {custom:verb} {custom:type} {custom:where} {custom:when}

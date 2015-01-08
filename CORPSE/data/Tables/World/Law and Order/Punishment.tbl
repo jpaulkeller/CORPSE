@@ -7,7 +7,7 @@ a {size} fine
 expulsion for all orders and guilds
 flogging ({d10*5} lashes)
 hanging
-imprisonment for {2d10} {duration:weeks}s
+imprisonment for {2d10} {duration:weeks}s{25% with {light|hard} labor}
 indentured servitude {2d5} {duration:long}s
 keelhauling
 loss of {an eye|{2d3} teeth|2d2 fingers}

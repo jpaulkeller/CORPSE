@@ -25,6 +25,7 @@ public final class Constants
    static final String PLURAL_CHAR   = "+";
    static final String SUBSET_CHAR   = ":";
    static final String EOF           = "===";
+   static final String WEIGHT        = "x ";
 
    static final Pattern COMMENT_LINE = Pattern.compile("^[" + Pattern.quote(COMMENT_CHAR) + "]", Pattern.MULTILINE);
 

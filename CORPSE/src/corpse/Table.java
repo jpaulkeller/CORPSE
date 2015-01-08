@@ -320,8 +320,8 @@ public class Table extends ArrayList<String>
    {
       int from = num instanceof Quantity.Constant ? 1 : num.getMin();
       int to = num.getMax();
-      int brk = line.indexOf(' ');
-      String text = line.substring(brk + 1);
+      int brk = line.indexOf(Constants.WEIGHT);
+      String text = line.substring(brk + Constants.WEIGHT.length());
       // if (Macros.DEBUG) System.out.println("Include Weighted: " + text + " into " + tableName);
       for (int i = from; i <= to; i++)
          add(text);

@@ -7,6 +7,13 @@
 -->
 # {INN={Tavern Name?{Inn Name}}}
 
+
+<!--
+{C1:=color hex}
+{C2:=color hex}
+{C3:=color hex}
+-->
+
 <h1>Welcome to <i>The {INN}</i></h1>
 
 <h3>Location</h3>
@@ -23,6 +30,14 @@
      with {building flavor}{20% and {building flavor{!different}}}.
  <li>Accommodations consist of {quantity:some} {accommodations}. 
  <li>The inn is {locally |widely |well-}known for the {tavern flavor}.
+ <li>Color scheme:
+     <table cellpadding="3" cellspacing="3" style="border: 1px solid #000000;">
+     <tr>
+       <td align=center bgcolor="{C1.hex}" color="{C1.font}"> {C1.name} </td>
+       <td align=center bgcolor="{C2.hex}" color="{C2.font}"> {C2.name} </td>
+       <td align=center bgcolor="{C3.hex}" color="{C3.font}"> {C3.name} </td>
+     </tr>
+     </table>
 </ul>
 
 <h3>Staff</h3>

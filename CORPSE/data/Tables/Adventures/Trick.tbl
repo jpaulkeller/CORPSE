@@ -1,143 +1,143 @@
 / http://random-generator.com/index.php?title=Bag_of_Tricks
 
 : main
-20 {: walls} with {: subfeature} 
-4 {: walls} with {: subfeature}:  and with {: subfeature}
-0 Pile of {: piles} covering {: subfeature}
-0 Pile of {: piles} which, if {: 31action},{: consequences}
-2 Pile of {: piles} which, if {: 31action},{: consequences}:  and which, if {: 31action},{: consequences}
-20 Chasm with {: subfeature}
-4 Chasm with {: subfeature}:  and with {: subfeature}
-0 {: waterway} of {: liquid} which, if {: 22action},{: consequences}
-2 {: waterway} of {: liquid} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
-0 {: waterway} of {: liquid} with {: boat} which, if {: vehicleaction},{: consequences}
-2 {: waterway} of {: liquid} with {: boat} which, if {: vehicleaction},{: consequences}:  and which, if {: vehicleaction},{: consequences}
-0 {: waterway} with {: subfeature}
-2 {: waterway} with {: subfeature}:  and with {: subfeature}
-20 {: stone} with {: subfeature}
-4 {: stone} with {: subfeature}:  and with {: subfeature}
-0 {: dead} which, if {: 41action},{: consequences}
-2 {: dead} which, if {: 41action},{: consequences}:  and which, if {: 41action},{: consequences}
-0 {: dead} with {: subfeature}
-2 {: dead} with {: subfeature}:  and with {: subfeature}
-20 {: floor} with {: subfeature}
-4 {: floor} with {: subfeature}:  and with {: subfeature}
-0 {: source} of {: liquid} which, if {: 22action},{: consequences}
-2 {: source} of {: liquid} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
-0 {: source} with {: subfeature}
-2 {: source} with {: subfeature}:  and with {: subfeature}
-20 {: pit} with {: subfeature}
-4 {: pit} with {: subfeature}:  and with {: subfeature}
-0 {: still} of {: liquid} which, if {: 22action},{: consequences}
-2 {: still} of {: liquid} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
-0 {: still} with {: subfeature}
-2 {: still} of {: liquid} which, if {: 22action},{: consequences}:  and with {: subfeature}
-20 {: ledge} with {: subfeature}
-4 {: ledge} with {: subfeature}:  and with {: subfeature}
-0 {: plants} which, if {: 51action},{: consequences}
-2 {: plants} which, if {: 51action},{: consequences}:  and which, if {: 51action},{: consequences}
-0 {: plants} with {: subfeature}
-2 {: plants} with {: subfeature}:  and with {: subfeature}
-20 {: portal} with {: subfeature}
-4 {: portal} with {: subfeature}:  and with {: subfeature}
-20 {: column} with {: subfeature}
-4 {: column} with {: subfeature}:  and with {: subfeature}
-20 {: clothing} which, if {: 35action},{: consequences}
-4 {: clothing} which, if {: 35action},{: consequences}:  and which, if {: 35action},{: consequences}
-0 {: altar} with {: subfeature}
-2 {: altar} with {: subfeature}:  and with {: subfeature}
-0 {: altar} which, if {: altaraction},{: consequences}
-2 {: altar} which, if {: altaraction},{: consequences}:  and which, if {: altaraction},{: consequences}
-0 {: light} which, if {: lightaction},{: consequences}
-2 {: light} which, if {: lightaction},{: consequences}:  and which, if {: lightaction},{: consequences}
-0 {: light} illuminating {: subfeature}
-2 {: light} illuminating {: subfeature}:  and with {: subfeature}
-0 {: stores} {: storecontainer} which, if {: 23action},{: consequences}
-2 {: stores} {: storecontainer} which, if {: 23action},{: consequences}:  and which, if {: 23action},{: consequences}
-0 {: stores} {: storecontainer} with {: subfeature}
-2 {: stores} {: storecontainer} with {: subfeature}:  and with {: subfeature}
-20 {: descent} with {: subfeature}
-4 {: descent} with {: subfeature}:  and with {: subfeature}
-0 {: magic} which, if {: 65action},{: consequences}
-2 {: magic} which, if {: 65action},{: consequences}:  and which, if {: 65action},{: consequences}
-0 {: magic} with {: subfeature} 
-2 {: magic} with {: subfeature}:  and with {: subfeature}
-20 {: platform} with {: subfeature}
-4 {: platform} with {: subfeature}:  and with {: subfeature}
-20 {{ucfirst:{: food}}} which, if {: foodaction},{: consequences}
-4 {{ucfirst:{: food}}} which, if {: foodaction},{: consequences}:  and which, if {: foodaction},{: consequences}
-20 {{ucfirst:{: drink}}}, which, if {: 22action},{: consequences}
-4 {{ucfirst:{: drink}}} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
-0 {: fireplace} with fire which, if {: 42action},{: consequences}
-2 {: fireplace} with fire which, if {: 42action},{: consequences}:  and which if {: 42action},{: consequences}
-0 {: fireplace} with {: subfeature}
-2 {: fireplace} with {: subfeature}:  and with {: subfeature}
-0 {: furniture} with {: subfeature}
-2 {: furniture} with {: subfeature}:  and with {: subfeature}
-0 {: furniture} which, if {: 13action},{: consequences}
-2 {: furniture} which, if {: 13action},{: consequences}:  and which if {: 13action},{: consequences}
-0 {: furniture} which, if {: 45action},{: consequences}
-2 {: furniture} which, if {: 45action},{: consequences}:  and which if {: 45action},{: consequences}
-0 {: cage} which, if {: 33action},{: consequences}
-2 {: cage} which, if {: 33action},{: consequences}:  and which if {: 33action},{: consequences}
-0 {: cage} with {: subfeature}
-2 {: cage} with {: subfeature}:  and with {: subfeature}
-0 {: weaving} which, if {: 15action},{: consequences}
-2 {: weaving} which, if {: 15action},{: consequences}:  and which if {: 15action},{: consequences}
-0 {: weaving} with {: subfeature}
-2 {: weaving} with {: subfeature}:  and with {: subfeature}
-20 Statue with {: subfeature}
-4 Statue with {: subfeature}:  and with {: subfeature}
-0 {: written} which, if {: 44action},{: consequences}
-2 {: written} which, if {: 44action},{: consequences}:  and which if {: 44action},{: consequences}
-0 {: written} with {: subfeature}
-2 {: written} with {: subfeature}:  and with {: subfeature}
-20 {: decoration} with {: subfeature}
-4 {: decoration} with {: subfeature}:  and with {: subfeature}
-0 {: trophies} with {: subfeature}
-2 {: trophies} with {: subfeature}:  and with {: subfeature}
-0 {: trophies}, which if {: 55action},{: consequences}
-2 {: trophies} which, if {: 55action},{: consequences}:  and which if {: 55action},{: consequences}
-20 {: gallery} with {: subfeature}
-4 {: gallery} with {: subfeature}:  and with {: subfeature}
-0 Tomb with {: subfeature}
-2 Tomb with {: subfeature}:  and with {: subfeature}
-0 Tomb with {{lcfirst:{: dead}}}, which if {: 41action},{: consequences}
-2 Tomb with {{lcfirst:{: dead}}}, which if {: 41action},{: consequences}:  and which if {: 41action},{: consequences}
-0 {: picture} with {: subfeature}
-2 {: picture} with {: subfeature}:  and with {: subfeature}
-0 {: picture}, which if {: 53action},{: consequences}
-2 {: picture} which, if {: 53action},{: consequences}:  and which if {: 53action},{: consequences}
-0 {: music}, which if {: musicaction},{: consequences}
-2 {: music} which, if {: musicaction},{: consequences}:  and which if {: musicaction},{: consequences}
-0 {: music} with {: subfeature}
-2 {: music} with {: subfeature}:  and with {: subfeature}
-0 {: device} with {: subfeature}
-2 {: device} with {: subfeature}:  and with {: subfeature}
-0 {: device} which, if {: 66action},{: consequences}
-2 {: device} which, if {: 66action},{: consequences}:  and which, if {: 66action},{: consequences}
-0 {: vehicle} which, if {: vehicleaction},{: consequences}
-2 {: vehicle} which, if {: vehicleaction},{: consequences}:  and which, if {: vehicleaction},{: consequences}
-0 {: container} which, if {: 23action},{: consequences}
-2 {: device} which, if {: 23action},{: consequences}:  and which, if {: 23action},{: consequences}
-0 {: container} with {: subfeature}
-2 {: container} with {: subfeature}:  and with {: subfeature}
-0 Fancy {{lcfirst: {: furniture}}} with {: subfeature}
-2 Fancy {{lcfirst: {: furniture}}} with {: subfeature}:  and with {: subfeature}
-0 Fancy {{lcfirst: {: furniture}}} which, if {: 13action},{: consequences}
-2 Fancy {{lcfirst: {: furniture}}} which, if {: 13action},{: consequences}:  and which, if {: 13action},{: consequences}
-0 Fancy {{lcfirst: {: furniture}}},  which if {: 45action},{: consequences}
-0 {: workspace} with tools which, if {: 55action},{: consequences}
-2 {: workspace} with tools which, if {: 55action},{: consequences}:  and which, if {: 55action},{: consequences}
-0 {: workspace} with {: subfeature}
-2 {: workspace} with {: subfeature}:  and with {: subfeature}
-30 {: unique}
-20 {{ucfirst: {: subfeature}}}
+20x {: walls} with {: subfeature} 
+4x {: walls} with {: subfeature}:  and with {: subfeature}
+10x Pile of {: piles} covering {: subfeature}
+10x Pile of {: piles} which, if {: 31action},{: consequences}
+2x Pile of {: piles} which, if {: 31action},{: consequences}:  and which, if {: 31action},{: consequences}
+20x Chasm with {: subfeature}
+4x Chasm with {: subfeature}:  and with {: subfeature}
+10x {: waterway} of {: liquid} which, if {: 22action},{: consequences}
+2x {: waterway} of {: liquid} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
+10x {: waterway} of {: liquid} with {: boat} which, if {: vehicleaction},{: consequences}
+2x {: waterway} of {: liquid} with {: boat} which, if {: vehicleaction},{: consequences}:  and which, if {: vehicleaction},{: consequences}
+10x {: waterway} with {: subfeature}
+2x {: waterway} with {: subfeature}:  and with {: subfeature}
+20x {: stone} with {: subfeature}
+4x {: stone} with {: subfeature}:  and with {: subfeature}
+10x {: dead} which, if {: 41action},{: consequences}
+2x {: dead} which, if {: 41action},{: consequences}:  and which, if {: 41action},{: consequences}
+10x {: dead} with {: subfeature}
+2x {: dead} with {: subfeature}:  and with {: subfeature}
+20x {: floor} with {: subfeature}
+4x {: floor} with {: subfeature}:  and with {: subfeature}
+10x {: source} of {: liquid} which, if {: 22action},{: consequences}
+2x {: source} of {: liquid} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
+10x {: source} with {: subfeature}
+2x {: source} with {: subfeature}:  and with {: subfeature}
+20x {: pit} with {: subfeature}
+4x {: pit} with {: subfeature}:  and with {: subfeature}
+10x {: still} of {: liquid} which, if {: 22action},{: consequences}
+2x {: still} of {: liquid} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
+10x {: still} with {: subfeature}
+2x {: still} of {: liquid} which, if {: 22action},{: consequences}:  and with {: subfeature}
+20x {: ledge} with {: subfeature}
+4x {: ledge} with {: subfeature}:  and with {: subfeature}
+10x {: plants} which, if {: 51action},{: consequences}
+2x {: plants} which, if {: 51action},{: consequences}:  and which, if {: 51action},{: consequences}
+10x {: plants} with {: subfeature}
+2x {: plants} with {: subfeature}:  and with {: subfeature}
+20x {: portal} with {: subfeature}
+4x {: portal} with {: subfeature}:  and with {: subfeature}
+20x {: column} with {: subfeature}
+4x {: column} with {: subfeature}:  and with {: subfeature}
+20x {: clothing} which, if {: 35action},{: consequences}
+4x {: clothing} which, if {: 35action},{: consequences}:  and which, if {: 35action},{: consequences}
+10x {: altar} with {: subfeature}
+2x {: altar} with {: subfeature}:  and with {: subfeature}
+10x {: altar} which, if {: altaraction},{: consequences}
+2x {: altar} which, if {: altaraction},{: consequences}:  and which, if {: altaraction},{: consequences}
+10x {: light} which, if {: lightaction},{: consequences}
+2x {: light} which, if {: lightaction},{: consequences}:  and which, if {: lightaction},{: consequences}
+10x {: light} illuminating {: subfeature}
+2x {: light} illuminating {: subfeature}:  and with {: subfeature}
+10x {: stores} {: storecontainer} which, if {: 23action},{: consequences}
+2x {: stores} {: storecontainer} which, if {: 23action},{: consequences}:  and which, if {: 23action},{: consequences}
+10x {: stores} {: storecontainer} with {: subfeature}
+2x {: stores} {: storecontainer} with {: subfeature}:  and with {: subfeature}
+20x {: descent} with {: subfeature}
+4x {: descent} with {: subfeature}:  and with {: subfeature}
+10x {: magic} which, if {: 65action},{: consequences}
+2x {: magic} which, if {: 65action},{: consequences}:  and which, if {: 65action},{: consequences}
+10x {: magic} with {: subfeature} 
+2x {: magic} with {: subfeature}:  and with {: subfeature}
+20x {: platform} with {: subfeature}
+4x {: platform} with {: subfeature}:  and with {: subfeature}
+20x {{ucfirst:{: food}}} which, if {: foodaction},{: consequences}
+4x {{ucfirst:{: food}}} which, if {: foodaction},{: consequences}:  and which, if {: foodaction},{: consequences}
+20x {{ucfirst:{: drink}}}, which, if {: 22action},{: consequences}
+4x {{ucfirst:{: drink}}} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
+10x {: fireplace} with fire which, if {: 42action},{: consequences}
+2x {: fireplace} with fire which, if {: 42action},{: consequences}:  and which if {: 42action},{: consequences}
+10x {: fireplace} with {: subfeature}
+2x {: fireplace} with {: subfeature}:  and with {: subfeature}
+10x {: furniture} with {: subfeature}
+2x {: furniture} with {: subfeature}:  and with {: subfeature}
+10x {: furniture} which, if {: 13action},{: consequences}
+2x {: furniture} which, if {: 13action},{: consequences}:  and which if {: 13action},{: consequences}
+10x {: furniture} which, if {: 45action},{: consequences}
+2x {: furniture} which, if {: 45action},{: consequences}:  and which if {: 45action},{: consequences}
+10x {: cage} which, if {: 33action},{: consequences}
+2x {: cage} which, if {: 33action},{: consequences}:  and which if {: 33action},{: consequences}
+10x {: cage} with {: subfeature}
+2x {: cage} with {: subfeature}:  and with {: subfeature}
+10x {: weaving} which, if {: 15action},{: consequences}
+2x {: weaving} which, if {: 15action},{: consequences}:  and which if {: 15action},{: consequences}
+10x {: weaving} with {: subfeature}
+2x {: weaving} with {: subfeature}:  and with {: subfeature}
+20x Statue with {: subfeature}
+4x Statue with {: subfeature}:  and with {: subfeature}
+10x {: written} which, if {: 44action},{: consequences}
+2x {: written} which, if {: 44action},{: consequences}:  and which if {: 44action},{: consequences}
+10x {: written} with {: subfeature}
+2x {: written} with {: subfeature}:  and with {: subfeature}
+20x {: decoration} with {: subfeature}
+4x {: decoration} with {: subfeature}:  and with {: subfeature}
+10x {: trophies} with {: subfeature}
+2x {: trophies} with {: subfeature}:  and with {: subfeature}
+10x {: trophies}, which if {: 55action},{: consequences}
+2x {: trophies} which, if {: 55action},{: consequences}:  and which if {: 55action},{: consequences}
+20x {: gallery} with {: subfeature}
+4x {: gallery} with {: subfeature}:  and with {: subfeature}
+10x Tomb with {: subfeature}
+2x Tomb with {: subfeature}:  and with {: subfeature}
+10x Tomb with {{lcfirst:{: dead}}}, which if {: 41action},{: consequences}
+2x Tomb with {{lcfirst:{: dead}}}, which if {: 41action},{: consequences}:  and which if {: 41action},{: consequences}
+10x {: picture} with {: subfeature}
+2x {: picture} with {: subfeature}:  and with {: subfeature}
+10x {: picture}, which if {: 53action},{: consequences}
+2x {: picture} which, if {: 53action},{: consequences}:  and which if {: 53action},{: consequences}
+10x {: music}, which if {: musicaction},{: consequences}
+2x {: music} which, if {: musicaction},{: consequences}:  and which if {: musicaction},{: consequences}
+10x {: music} with {: subfeature}
+2x {: music} with {: subfeature}:  and with {: subfeature}
+10x {: device} with {: subfeature}
+2x {: device} with {: subfeature}:  and with {: subfeature}
+10x {: device} which, if {: 66action},{: consequences}
+2x {: device} which, if {: 66action},{: consequences}:  and which, if {: 66action},{: consequences}
+10x {: vehicle} which, if {: vehicleaction},{: consequences}
+2x {: vehicle} which, if {: vehicleaction},{: consequences}:  and which, if {: vehicleaction},{: consequences}
+10x {: container} which, if {: 23action},{: consequences}
+2x {: device} which, if {: 23action},{: consequences}:  and which, if {: 23action},{: consequences}
+10x {: container} with {: subfeature}
+2x {: container} with {: subfeature}:  and with {: subfeature}
+10x Fancy {{lcfirst: {: furniture}}} with {: subfeature}
+2x Fancy {{lcfirst: {: furniture}}} with {: subfeature}:  and with {: subfeature}
+10x Fancy {{lcfirst: {: furniture}}} which, if {: 13action},{: consequences}
+2x Fancy {{lcfirst: {: furniture}}} which, if {: 13action},{: consequences}:  and which, if {: 13action},{: consequences}
+10x Fancy {{lcfirst: {: furniture}}},  which if {: 45action},{: consequences}
+10x {: workspace} with tools which, if {: 55action},{: consequences}
+2x {: workspace} with tools which, if {: 55action},{: consequences}:  and which, if {: 55action},{: consequences}
+10x {: workspace} with {: subfeature}
+2x {: workspace} with {: subfeature}:  and with {: subfeature}
+30x {: unique}
+20x {{ucfirst: {: subfeature}}}
 
 : walls
-2 Stone wall
-2 Brick wall
-2 Wood wall
+2x Stone wall
+2x Brick wall
+2x Wood wall
 Glass wall
 Wall of ice
 Metal wall
@@ -151,7 +151,7 @@ dung
 powder
 
 : waterway
-2 Stream
+2x Stream
 Canal
 River
 Waterfall
@@ -159,26 +159,26 @@ Aqueduct
 Sewer 
 
 : liquid
-0 water
+10x water
 {: Substances.Liquid}
 blood
 salt water
 slime
 
 : stone
-2 Stalactites 
-2 Stalagmites
+2x Stalactites 
+2x Stalagmites
 Limestone encrustations
-2 Boulders
-2 Stone
+2x Boulders
+2x Stone
 Tunnels
 Lava
 
 : dead
-2 Bones
-2 Skeleton
-2 Corpse
-2 Skull
+2x Bones
+2x Skeleton
+2x Corpse
+2x Skull
 Severed head
 Body parts
 Hair
@@ -195,16 +195,16 @@ Wooden floor
 Mosaic floor
 
 : source
-2 Spring
-2 Fountain
+2x Spring
+2x Fountain
 Spout
 Geyser 
 Pipe 
 Leaking trickle
 
 : pit
-2 Pit
-2 Well
+2x Pit
+2x Well
 Shaft
 Chimney
 Ditch
@@ -247,14 +247,14 @@ fungi
 lichen
 
 : portal
-2 Wooden door
-2 Iron door
+2x Wooden door
+2x Iron door
 Stone door
 Bronze door
-2 Arch
-2 Iron bars blocking passage
-2 Portcullis
-2 Hatch
+2x Arch
+2x Iron bars blocking passage
+2x Portcullis
+2x Hatch
 
 : column
 Column
@@ -265,10 +265,10 @@ Row of pillars
 Monument
 
 : altar
-2 Altar
-2 Shrine
+2x Altar
+2x Shrine
 Reliquary
-2 Idol
+2x Idol
 Ikon
 Totem
 
@@ -283,7 +283,7 @@ Chandelier
 Candelabrum
 
 : descent
-2 Straight stair
+2x Straight stair
 Ramp 
 Spiral stair
 Ladder
@@ -318,8 +318,8 @@ stacked neatly
 piled loosely
 
 : written
-3 Book
-2 Scroll
+3x Book
+2x Scroll
 Paper
 Graffiti
 Inscription
@@ -328,10 +328,10 @@ Plaque
 Written talisman
 The Tarot card {: Tarot Card.drawMajor}
 : fireplace
-3 Fireplace
+3x Fireplace
 Oven
-2 Firepit
-2 Brazier
+2x Firepit
+2x Brazier
 Forge
 
 : furniture
@@ -343,27 +343,27 @@ Bedding
 Couch
 
 : cage
-2 Cage
-2 Prison cell
+2x Cage
+2x Prison cell
 Manacles
 Stocks
 
 : food
 block of {: Foodstuffs.DryGood}
-2 {: Foodstuffs.SoftFood}
-4 chunks of {: Foodstuffs.Chunks}
-4 {: Foodstuffs.Seasoning}
-3 {: Foodstuffs.Meals}
+2x {: Foodstuffs.SoftFood}
+4x chunks of {: Foodstuffs.Chunks}
+4x {: Foodstuffs.Seasoning}
+3x {: Foodstuffs.Meals}
 
 : drink
-4 {: Foodstuffs.LiquidContainer} of {: Foodstuffs.SlowLiquid}
-5 {: Foodstuffs.LiquidContainer} of {: Foodstuffs.Liquid}
+4x {: Foodstuffs.LiquidContainer} of {: Foodstuffs.SlowLiquid}
+5x {: Foodstuffs.LiquidContainer} of {: Foodstuffs.Liquid}
 
 : weaving
-2 Carpet
-2 Tapestry
-2 Curtain
-2 A piece of {: Substances.Textiles}
+2x Carpet
+2x Tapestry
+2x Curtain
+2x A piece of {: Substances.Textiles}
 Screen
 Net
 Blanket
@@ -386,12 +386,12 @@ Exotic apparel
 Collector’s items
 
 : gallery
-2 Gallery
-2 Balcony
+2x Gallery
+2x Balcony
 Catwalk
 
 : picture
-2 Painting
+2x Painting
 Bas-relief
 Drawing
 Engravings
@@ -403,7 +403,7 @@ Drum
 Musical horn
 Gong
 Flute
-3 {:stringed}
+3x {:stringed}
 Bagpipes
 Noisemaker
 Hurdy-gurdy
@@ -419,7 +419,7 @@ Balalaika
 
 : device
 Pendulum
-2 Clock
+2x Clock
 Elevator
 Automaton
 Loom
@@ -437,7 +437,7 @@ Wagon
 Wheelbarrow
 
 : container
-2 Chest
+2x Chest
 Trunk
 Basket
 Cabinet
@@ -457,55 +457,55 @@ Torture chamber
 Accounting workplace
 
 : weapon
-3 Sword
-3 Dagger
-3 Axe
-3 Shield
-2 Mace
+3x Sword
+3x Dagger
+3x Axe
+3x Shield
+2x Mace
 Morning star
-3 Spear
-2 Pole arm
-2 Warhammer
-2 Bow
+3x Spear
+2x Pole arm
+2x Warhammer
+2x Bow
 Arrows
 Arrow
-2 Crossbow
+2x Crossbow
 Club
 Whip
 Trident
 
 : boat
-2 raft
-2 rowboat
+2x raft
+2x rowboat
 barge
 gondola
 kayak
 canoe
 
 : clothing
-2 Robe
-2 Cloak
-2 Gown
+2x Robe
+2x Cloak
+2x Gown
 Belt
-2 Gloves
-2 Boots
+2x Gloves
+2x Boots
 Shoes
 Sandals
 Purse
 Tunic
 Shirt
-3 Hat
-3 {: armors}
+3x Hat
+3x {: armors}
 Uniform
 Vestment
 Scarf
 Collar
 
 : armors
-2 Chainmail
-2 Platemail
+2x Chainmail
+2x Platemail
 Breastplate
-2 Helmet
+2x Helmet
 Leather armor
 Reinforced leather armor
 Metal gauntlets
@@ -529,107 +529,107 @@ Glass eye which, if {: 64action},{: consequences}
 Grindstone which, if {: grindstoneaction},{: consequences}
 
 : subfeature
-0 bump which, if {: 11action},{: consequences}
-2 bump which, if {: 11action},{: consequences}:  and which if {: 11action},{: consequences}
-0 knob which, if {: 11action},{: consequences}
-2 knob which, if {: 11action},{: consequences}:  and which if {: 11action},{: consequences}
-20 hole, which if {: 12action},{: consequences}
-4 hole, which if {: 12action},{: consequences}:  and which if {: 12action},{: consequences}
-0 slab which if {: 13action},{: consequences}
-2 slab which if {: 13action},{: consequences}:  and which if {: 13action},{: consequences}
-0 surface, which if {: 13action},{: consequences}
-2 surface, which if {: 13action},{: consequences}:  and which if {: 13action},{: consequences}
-20 piece of wood, which if {: 14action},{: consequences}
-4 piece of wood, which if {: 14action},{: consequences}:  and which if {: 14action},{: consequences}
-5 {: Substances.Textiles} which, if {: 15action},{: consequences}
-3 {: Substances.Textiles} which, if {: 15action},{: consequences}:  and which, if {: 15action},{: consequences}
-5 {: Substances.Textiles} padding, which if {: 15action},{: consequences}
-0 brick which, if {: 16action},{: consequences}
-2 brick which, if {: 16action},{: consequences}:  and which, if {: 16action},{: consequences}
-0 block which, if {: 16action},{: consequences}
-2 block which, if {: 16action},{: consequences}:  and which, if {: 16action},{: consequences}
-0 crevice which, if {: 21action},{: consequences}
-2 crevice which, if {: 21action},{: consequences}:  and which, if {: 21action},{: consequences}
-0 slot which, if {: 21action},{: consequences}
-2 slot which, if {: 21action},{: consequences}:  and which, if {: 21action},{: consequences}
-20 {: liquid} which, if {: 22action},{: consequences}
-4 {: liquid} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
-20 {{lcfirst:{: container}}} which, if {: 23action},{: consequences}
-4 {{lcfirst:{: container}}} which, if {: 23action},{: consequences}:  and which, if {: 23action},{: consequences}
-0 tile which, if {: 24action},{: consequences}
-2 tile which, if {: 24action},{: consequences}:  and which, if {: 24action},{: consequences}
-0 flagstone which, if {: 24action},{: consequences}
-2 flagstone which, if {: 24action},{: consequences}:  and which, if {: 24action},{: consequences}
-0 ornament which, if {: 25action},{: consequences}
-2 ornament which, if {: 25action},{: consequences}:  and which, if {: 25action},{: consequences}
-0 {: regalia} which, if {: 25action},{: consequences}
-2 {: regalia} which, if {: 25action},{: consequences}:  and which, if {: 25action},{: consequences}
-5 handle which, if {: 26action},{: consequences}
-3 handle which, if {: 26action},{: consequences}:  and which, if {: 26action},{: consequences}
-5 metal ring which, if {: 26action},{: consequences}
+10x bump which, if {: 11action},{: consequences}
+2x bump which, if {: 11action},{: consequences}:  and which if {: 11action},{: consequences}
+10x knob which, if {: 11action},{: consequences}
+2x knob which, if {: 11action},{: consequences}:  and which if {: 11action},{: consequences}
+20x hole, which if {: 12action},{: consequences}
+4x hole, which if {: 12action},{: consequences}:  and which if {: 12action},{: consequences}
+10x slab which if {: 13action},{: consequences}
+2x slab which if {: 13action},{: consequences}:  and which if {: 13action},{: consequences}
+10x surface, which if {: 13action},{: consequences}
+2x surface, which if {: 13action},{: consequences}:  and which if {: 13action},{: consequences}
+20x piece of wood, which if {: 14action},{: consequences}
+4x piece of wood, which if {: 14action},{: consequences}:  and which if {: 14action},{: consequences}
+5x {: Substances.Textiles} which, if {: 15action},{: consequences}
+3x {: Substances.Textiles} which, if {: 15action},{: consequences}:  and which, if {: 15action},{: consequences}
+5x {: Substances.Textiles} padding, which if {: 15action},{: consequences}
+10x brick which, if {: 16action},{: consequences}
+2x brick which, if {: 16action},{: consequences}:  and which, if {: 16action},{: consequences}
+10x block which, if {: 16action},{: consequences}
+2x block which, if {: 16action},{: consequences}:  and which, if {: 16action},{: consequences}
+10x crevice which, if {: 21action},{: consequences}
+2x crevice which, if {: 21action},{: consequences}:  and which, if {: 21action},{: consequences}
+10x slot which, if {: 21action},{: consequences}
+2x slot which, if {: 21action},{: consequences}:  and which, if {: 21action},{: consequences}
+20x {: liquid} which, if {: 22action},{: consequences}
+4x {: liquid} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
+20x {{lcfirst:{: container}}} which, if {: 23action},{: consequences}
+4x {{lcfirst:{: container}}} which, if {: 23action},{: consequences}:  and which, if {: 23action},{: consequences}
+10x tile which, if {: 24action},{: consequences}
+2x tile which, if {: 24action},{: consequences}:  and which, if {: 24action},{: consequences}
+10x flagstone which, if {: 24action},{: consequences}
+2x flagstone which, if {: 24action},{: consequences}:  and which, if {: 24action},{: consequences}
+10x ornament which, if {: 25action},{: consequences}
+2x ornament which, if {: 25action},{: consequences}:  and which, if {: 25action},{: consequences}
+10x {: regalia} which, if {: 25action},{: consequences}
+2x {: regalia} which, if {: 25action},{: consequences}:  and which, if {: 25action},{: consequences}
+5x handle which, if {: 26action},{: consequences}
+3x handle which, if {: 26action},{: consequences}:  and which, if {: 26action},{: consequences}
+5x metal ring which, if {: 26action},{: consequences}
 metal ring which, if {: 26action},{: consequences}:  and which, if {: 26action},{: consequences}
-5 hook which, if {: 26action},{: consequences}
+5x hook which, if {: 26action},{: consequences}
 hook which, if {: 26action},{: consequences}:  and which, if {: 26action},{: consequences}
-0 dirt which, if {: 31action},{: consequences}
-0 dust which, if {: 31action},{: consequences}
-2 dirt which, if {: 31action},{: consequences}:  and which, if {: 31action},{: consequences}
-2 dust which, if {: 31action},{: consequences}:  and which, if {: 31action},{: consequences}
-0 rope, which if {: 32action},{: consequences}
-0 cord, which if {: 32action},{: consequences}
-2 rope which, if {: 32action},{: consequences}:  and which, if {: 32action},{: consequences}
-2 cord which, if {: 32action},{: consequences}:  and which, if {: 32action},{: consequences}
-20 grille which, if {: 33action},{: consequences}
-4 grille which, if {: 33action},{: consequences}:  and which, if {: 33action},{: consequences}
-0 wire, which if {: 34action},{: consequences}
-0 chain, which if {: 34action},{: consequences}
-2 chain which, if {: 34action},{: consequences}:  and which, if {: 34action},{: consequences}
-2 wire which, if {: 34action},{: consequences}:  and which, if {: 34action},{: consequences}
-0 mirror which, if {: 36action},{: consequences}
-0 glass which, if {: 36action},{: consequences}
-2 mirror which, if {: 36action},{: consequences}:  and which, if {: 34action},{: consequences}
-2 glass which, if {: 36action},{: consequences}:  and which, if {: 34action},{: consequences}
-0 corpse which, if {: 41action},{: consequences}
-2 corpse which, if {: 41action},{: consequences}:  and which, if {: 41action},{: consequences}
-0 bones which, if {: 41action},{: consequences}
-2 bones which, if {: 41action},{: consequences}:  and which, if {: 41action},{: consequences}
-20 flame which, if {: 42action},{: consequences}
-4 flame which, if {: 42action},{: consequences}:  and which, if {: 42action},{: consequences}
-20 protrusion which, if {: 43action},{: consequences}
-4 protrusion which, if {: 43action},{: consequences}:  and which, if {: 43action},{: consequences}
-20 writing which, if {: 44action},{: consequences}
-4 writing which, if {: 44action},{: consequences}:  and which, if {: 44action},{: consequences}
-20 seat, which, if {: 45action},{: consequences}
-4 seat which, if {: 45action},{: consequences}:  and which, if {: 45action},{: consequences}
-20 wheel which, if {: 46action},{: consequences}
-4 wheel which, if {: 46action},{: consequences}:  and which, if {: 46action},{: consequences}
-0 {: plantpart} which, if {: 51action},{: consequences}
-2 {: plantpart} which, if {: 51action},{: consequences}:  and which, if {: 51action},{: consequences}
-20 {: substance} which, if {: 52action},{: consequences}
-4 {: substance} which, if {: 52action},{: consequences}:  and which, if {: 52action},{: consequences}
-20 {{lcfirst:{: picture}}} which, if {: 53action},{: consequences}
-4 {{lcfirst:{: picture}}} which, if {: 53action},{: consequences}:  and which, if {: 53action},{: consequences}
-0 door which, if {: 54action}{: ,consequences}
-2 door which, if {: 54action},{: consequences}:  and which, if {: 54action},{: consequences}
-0 hatch which, if {: 54action},{: consequences}
-2 door which, if {: 54action},{: consequences}:  and which, if {: 54action},{: consequences}
-0 tools which, if {: 55action},{: consequences}
-2 tools which, if {: 55action},{: consequences}:  and which, if {: 55action},{: consequences}
-0 {{lcfirst:{: weapon}}} which, if {: 55action},{: consequences}
-2 {{lcfirst:{: weapon}}} which, if {: 55action},{: consequences}:  and which, if {: 55action},{: consequences}
-20 lever which, if {: 56action},{: consequences}
-4 lever which, if {: 56action},{: consequences}:  and which, if {: 56action},{: consequences}
-20 {: creature} which if {: 61action},{: consequences}
-4 {: creature} which, if {: 61action},{: consequences}:  and which, if {: 61action},{: consequences}
-20 {{lcfirst:{: decoration}}} which, if {: 62action},{: consequences}
-4 {{lcfirst:{: decoration}}} which, if {: 62action},{: consequences}:  and which, if {: 62action},{: consequences}
-20 statue, which if {: 63action},{: consequences}
-4 statue which, if {: 63action},{: consequences}:  and which, if {: 63action},{: consequences}
-20 face which, if {: 64action},{: consequences}
-4 face which, if {: 64action},{: consequences}:  and which, if {: 64action},{: consequences}
-20 magic effect which, if {: 65action},{: consequences}
-4 magic effect which, if {: 65action},{: consequences}:  and which, if {: 65action},{: consequences}
-20 mechanism which, if {: 66action},{: consequences}
-4 mechanism which, if {: 66action},{: consequences}:  and which, if {: 66action},{: consequences}
+10x dirt which, if {: 31action},{: consequences}
+10x dust which, if {: 31action},{: consequences}
+2x dirt which, if {: 31action},{: consequences}:  and which, if {: 31action},{: consequences}
+2x dust which, if {: 31action},{: consequences}:  and which, if {: 31action},{: consequences}
+10x rope, which if {: 32action},{: consequences}
+10x cord, which if {: 32action},{: consequences}
+2x rope which, if {: 32action},{: consequences}:  and which, if {: 32action},{: consequences}
+2x cord which, if {: 32action},{: consequences}:  and which, if {: 32action},{: consequences}
+20x grille which, if {: 33action},{: consequences}
+4x grille which, if {: 33action},{: consequences}:  and which, if {: 33action},{: consequences}
+10x wire, which if {: 34action},{: consequences}
+10x chain, which if {: 34action},{: consequences}
+2x chain which, if {: 34action},{: consequences}:  and which, if {: 34action},{: consequences}
+2x wire which, if {: 34action},{: consequences}:  and which, if {: 34action},{: consequences}
+10x mirror which, if {: 36action},{: consequences}
+10x glass which, if {: 36action},{: consequences}
+2x mirror which, if {: 36action},{: consequences}:  and which, if {: 34action},{: consequences}
+2x glass which, if {: 36action},{: consequences}:  and which, if {: 34action},{: consequences}
+10x corpse which, if {: 41action},{: consequences}
+2x corpse which, if {: 41action},{: consequences}:  and which, if {: 41action},{: consequences}
+10x bones which, if {: 41action},{: consequences}
+2x bones which, if {: 41action},{: consequences}:  and which, if {: 41action},{: consequences}
+20x flame which, if {: 42action},{: consequences}
+4x flame which, if {: 42action},{: consequences}:  and which, if {: 42action},{: consequences}
+20x protrusion which, if {: 43action},{: consequences}
+4x protrusion which, if {: 43action},{: consequences}:  and which, if {: 43action},{: consequences}
+20x writing which, if {: 44action},{: consequences}
+4x writing which, if {: 44action},{: consequences}:  and which, if {: 44action},{: consequences}
+20x seat, which, if {: 45action},{: consequences}
+4x seat which, if {: 45action},{: consequences}:  and which, if {: 45action},{: consequences}
+20x wheel which, if {: 46action},{: consequences}
+4x wheel which, if {: 46action},{: consequences}:  and which, if {: 46action},{: consequences}
+10x {: plantpart} which, if {: 51action},{: consequences}
+2x {: plantpart} which, if {: 51action},{: consequences}:  and which, if {: 51action},{: consequences}
+20x {: substance} which, if {: 52action},{: consequences}
+4x {: substance} which, if {: 52action},{: consequences}:  and which, if {: 52action},{: consequences}
+20x {{lcfirst:{: picture}}} which, if {: 53action},{: consequences}
+4x {{lcfirst:{: picture}}} which, if {: 53action},{: consequences}:  and which, if {: 53action},{: consequences}
+10x door which, if {: 54action}{: ,consequences}
+2x door which, if {: 54action},{: consequences}:  and which, if {: 54action},{: consequences}
+10x hatch which, if {: 54action},{: consequences}
+2x door which, if {: 54action},{: consequences}:  and which, if {: 54action},{: consequences}
+10x tools which, if {: 55action},{: consequences}
+2x tools which, if {: 55action},{: consequences}:  and which, if {: 55action},{: consequences}
+10x {{lcfirst:{: weapon}}} which, if {: 55action},{: consequences}
+2x {{lcfirst:{: weapon}}} which, if {: 55action},{: consequences}:  and which, if {: 55action},{: consequences}
+20x lever which, if {: 56action},{: consequences}
+4x lever which, if {: 56action},{: consequences}:  and which, if {: 56action},{: consequences}
+20x {: creature} which if {: 61action},{: consequences}
+4x {: creature} which, if {: 61action},{: consequences}:  and which, if {: 61action},{: consequences}
+20x {{lcfirst:{: decoration}}} which, if {: 62action},{: consequences}
+4x {{lcfirst:{: decoration}}} which, if {: 62action},{: consequences}:  and which, if {: 62action},{: consequences}
+20x statue, which if {: 63action},{: consequences}
+4x statue which, if {: 63action},{: consequences}:  and which, if {: 63action},{: consequences}
+20x face which, if {: 64action},{: consequences}
+4x face which, if {: 64action},{: consequences}:  and which, if {: 64action},{: consequences}
+20x magic effect which, if {: 65action},{: consequences}
+4x magic effect which, if {: 65action},{: consequences}:  and which, if {: 65action},{: consequences}
+20x mechanism which, if {: 66action},{: consequences}
+4x mechanism which, if {: 66action},{: consequences}:  and which, if {: 66action},{: consequences}
 
 : creature
 spirit
@@ -638,16 +638,16 @@ monster
 vermin
 
 : substance
-4 {: Substances.SoftSolid}
-4 chunks of {: Substances.Chunks}
-4 {: Substances.SlowLiquid}
-4 {: Substances.Powder}
-4 dirt
-4 dust
-2 cobwebs
+4x {: Substances.SoftSolid}
+4x chunks of {: Substances.Chunks}
+4x {: Substances.SlowLiquid}
+4x {: Substances.Powder}
+4x dirt
+4x dust
+2x cobwebs
 
 : regalia
-2 crown
+2x crown
 diadem
 mitre
 sceptre
@@ -712,7 +712,7 @@ filled
 {: anyaction}
 
 : 22action
-2 drunk
+2x drunk
 something is dipped in it
 a specific substance is mixed with it
 drained
@@ -785,10 +785,10 @@ pulled
 
 : 35action
 worn
-2 touched
-3 cut
-4 put on another object
-5 moved
+2x touched
+3x cut
+4x put on another object
+5x moved
 {: anyaction}
 
 : 36action
@@ -832,7 +832,7 @@ erased
 {: anyaction}
 
 : 45action
-3 sat on
+3x sat on
 broken
 opened
 turned
@@ -950,56 +950,56 @@ played to a particular pattern or tune
 broken
 
 : eggaction
-2 broken
-2 hatched
+2x broken
+2x hatched
 rubbed
 shaken
 {: anyaction}
 
 : foodaction
-3 eaten
-2 cut open
+3x eaten
+2x cut open
 burned
 {: anyaction}
 
 : toyaction
-2 played with
-2 spoken to
-2 cut open
+2x played with
+2x spoken to
+2x cut open
 destroyed
 a specific object (“key”) is inserted
 {: anyaction}
 
 : lightaction
-2 lit
-2 put out
-2 shone on a particular place
-2 gazed into
+2x lit
+2x put out
+2x shone on a particular place
+2x gazed into
 {: anyaction}
 
 : vehicleaction
-2 moved
-2 entered
-2 pushed
+2x moved
+2x entered
+2x pushed
 {: anyaction}
 
 : altaraction
-2 prayed at
-2 sacrificed to
-2 consecrated
-2 desecrated
+2x prayed at
+2x sacrificed to
+2x consecrated
+2x desecrated
 {: anyaction}
 
 : shellaction
-2 listened to
+2x listened to
 broken
-3 {: 21action}
+3x {: 21action}
 {: anyaction}
 
 : grindstoneaction
-3 {: 46action}
-3 anything is sharpened on it
-2 a specific thing is sharpened on it
+3x {: 46action}
+3x anything is sharpened on it
+2x a specific thing is sharpened on it
 {: anyaction}
 
 : anyaction 
@@ -1038,13 +1038,13 @@ spoken to
 
 : consequences
 causes instant death (save or die!)
-4 causes major unavoidable damage 
-2 delivers a poison
-6 causes major avoidable damage
-6 summons or releases a monster
-2 confines the victim
+4x causes major unavoidable damage 
+2x delivers a poison
+6x causes major avoidable damage
+6x summons or releases a monster
+2x confines the victim
 confines the whole party
-3 entraps the victim
+3x entraps the victim
 gives the victim a disease 
 gives the victim a permanent curse, -1d6 to ability
 gives the victim a permanent curse, -2 to hit and damage
@@ -1052,13 +1052,13 @@ gives the victim a permanent curse, attracts monsters at double the usual rate
 polymorphs the victim
 ''geases'' the victim
 gives the victim a permanent curse of losing items and treasure
-4 gives a cursed magic item
-2 curses one of the victim’s items
+4x gives a cursed magic item
+2x curses one of the victim’s items
 gives a false clue
 gives misleading oracular advice
-6 does minor unavoidable damage
-6 does minor avoidable damage 
-6 summons or releases a minor monster
+6x does minor unavoidable damage
+6x does minor avoidable damage 
+6x summons or releases a minor monster
 slows the victim temporarily
 puts the victim to sleep temporarily
 paralyzes the victim temporarily
@@ -1071,17 +1071,17 @@ causes paranoia
 causes rage
 causes a compulsion
 causes feeblemind
-6 closes a passage
+6x closes a passage
 releases a hostile creature in a different area of the adventure
 closes an access way in a different area of the adventure
 activates a trap in a different area of the adventure
 makes a different area of the adventure have a hazardous environment
 destroys a treasure in a different area of the adventure
-6 sounds an alarm
-8 reveals hidden {: subfeature}
-8 opens a passage
-2 opens a way up
-2 opens a way down
+6x sounds an alarm
+8x reveals hidden {: subfeature}
+8x opens a passage
+2x opens a way up
+2x opens a way down
 confines a hostile creature in a different area of the adventure
 opens an access way in a different area of the adventure
 deactivates a trap in a different area of the adventure
@@ -1094,46 +1094,46 @@ changes victim’s race
 changes victim’s class
 changes victim’s languages known
 switches two of victim’s ability scores at random
-9 has a chaotic effect, random every time (Roll d6, 1:{: consequencesnoregress}, 2:{: consequencesnoregress}, 3:{: consequencesnoregress}, 4:{: consequencesnoregress}, 5: {: consequencesnoregress}, 6:{: consequencesnoregress})
-2 opens a passage
-8 gives a minor treasure 
-6 provides a key object for a different area
-6 gives a clue to something in this area
-6 gives a clue to something in a different area
-3 summons or releases a benevolent being
-3 summons or releases a neutral being
-2 gives a temporary blessing to the beneficiary, +1 to hit, damage, save
-2 gives temporary protection from evil to the beneficiary
+9x has a chaotic effect, random every time (Roll d6, 1:{: consequencesnoregress}, 2:{: consequencesnoregress}, 3:{: consequencesnoregress}, 4:{: consequencesnoregress}, 5: {: consequencesnoregress}, 6:{: consequencesnoregress})
+2x opens a passage
+8x gives a minor treasure 
+6x provides a key object for a different area
+6x gives a clue to something in this area
+6x gives a clue to something in a different area
+3x summons or releases a benevolent being
+3x summons or releases a neutral being
+2x gives a temporary blessing to the beneficiary, +1 to hit, damage, save
+2x gives temporary protection from evil to the beneficiary
 gives a temporary blessing to the party, +1 to hit, damage, save
 gives temporary protection from evil to the party
-4 gives a major treasure
-3 gives a clue leading to a different adventure site (treasure map, etc.)
-3 gives oracular advice
-3 heals one person (one time only)
+4x gives a major treasure
+3x gives a clue leading to a different adventure site (treasure map, etc.)
+3x gives oracular advice
+3x heals one person (one time only)
 heals one person (once a day)
-2 heals the party (one time only)
+2x heals the party (one time only)
 resurrects a dead party member (one time only)
-2 gives experience points
-2 gives +1 hp permanently 
+2x gives experience points
+2x gives +1 hp permanently 
 gives +1 permanent ability bonus
 cures all diseases on the beneficiary
 removes a curse from the beneficiary
 gives a permanent “mutant” power benefit
 gives the beneficiary 2d6 temporary hit points
-4 gives a magic item
-2 enchants one of the beneficiary’s items
-9 {: consequencesnoregress} and {: consequencesnoregress}
+4x gives a magic item
+2x enchants one of the beneficiary’s items
+9x {: consequencesnoregress} and {: consequencesnoregress}
 
 
 : consequencesnoregress
 causes instant death (save or die!)
-4 causes major unavoidable damage 
-2 delivers a poison
-6 causes major avoidable damage
-6 summons or releases a monster
-2 confines the victim
+4x causes major unavoidable damage 
+2x delivers a poison
+6x causes major avoidable damage
+6x summons or releases a monster
+2x confines the victim
 confines the whole party
-3 entraps the victim 
+3x entraps the victim 
 gives the victim a permanent curse, -1d6 to ability
 gives the victim a permanent curse, -2 to hit and damage
 gives the victim a permanent curse, attracts monsters at double the usual rate
@@ -1141,13 +1141,13 @@ gives the victim a disease
 polymorphs the victim
 ''geases'' the victim
 gives the victim a permanent curse of losing items and treasure
-2 gives a cursed magic item
-2 curses one of the victim’s items
+2x gives a cursed magic item
+2x curses one of the victim’s items
 gives a false clue
 gives misleading oracular advice
-6 does minor unavoidable damage
-6 does minor avoidable damage 
-6 summons or releases a minor monster
+6x does minor unavoidable damage
+6x does minor avoidable damage 
+6x summons or releases a minor monster
 slows the victim temporarily
 puts the victim to sleep temporarily
 paralyzes the victim temporarily
@@ -1160,17 +1160,17 @@ causes paranoia
 causes rage
 causes a compulsion
 causes feeblemind
-6 closes a passage
+6x closes a passage
 releases a hostile creature in a different area of the adventure
 closes an access way in a different area of the adventure
 activates a trap in a different area of the adventure
 makes a different area of the adventure have a hazardous environment
 destroys a treasure in a different area of the adventure
-6 sounds an alarm
-8 reveals hidden {: subfeature}
-8 opens a passage
-2 opens a way up
-2 opens a way down
+6x sounds an alarm
+8x reveals hidden {: subfeature}
+8x opens a passage
+2x opens a way up
+2x opens a way down
 confines a hostile creature in a different area of the adventure
 opens an access way in a different area of the adventure
 deactivates a trap in a different area of the adventure
@@ -1183,28 +1183,28 @@ changes victim’s race
 changes victim’s class
 changes victim’s languages known
 switches two of victim’s ability scores at random
-8 gives a minor treasure 
-6 provides a key object for a different area
-6 gives a clue to something in this area
-6 gives a clue to something in a different area
-3 summons or releases a benevolent being
-3 summons or releases a neutral being
-2 gives a temporary blessing to the beneficiary, +1 to hit, damage, save
-2 gives temporary protection from evil to the beneficiary
+8x gives a minor treasure 
+6x provides a key object for a different area
+6x gives a clue to something in this area
+6x gives a clue to something in a different area
+3x summons or releases a benevolent being
+3x summons or releases a neutral being
+2x gives a temporary blessing to the beneficiary, +1 to hit, damage, save
+2x gives temporary protection from evil to the beneficiary
 gives a temporary blessing to the party, +1 to hit, damage, save
 gives temporary protection from evil to the party
-4 gives a major treasure
-3 gives a clue leading to a different adventure site (treasure map, etc.)
-3 gives oracular advice
-3 heals one person (one time only)
+4x gives a major treasure
+3x gives a clue leading to a different adventure site (treasure map, etc.)
+3x gives oracular advice
+3x heals one person (one time only)
 heals one person (once a day)
-2 heals the party (one time only)
+2x heals the party (one time only)
 resurrects a dead party member (one time only)
 cures all diseases on the beneficiary
 removes a curse from the beneficiary
-2 gives experience points
-2 gives +1 hp permanently 
+2x gives experience points
+2x gives +1 hp permanently 
 gives +1 permanent ability bonus
 gives a permanent “mutant” power benefit
-4 gives a magic item
-2 enchants one of the beneficiary’s items
+4x gives a magic item
+2x enchants one of the beneficiary’s items

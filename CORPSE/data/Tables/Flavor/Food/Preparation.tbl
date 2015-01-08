@@ -1,8 +1,8 @@
 : Preparation
-6 {:common}
-3 {:uncommon}
-1 {:rare}
-1 {:poor}
+6x {:common}
+3x {:uncommon}
+{:rare}
+{:poor}
 
 : Common
 baked

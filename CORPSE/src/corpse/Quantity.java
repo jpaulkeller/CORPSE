@@ -560,7 +560,7 @@ public final class Quantity
 
    public static Numeric startsWith(final String line)
    {
-      int brk = line.indexOf(' ');
+      int brk = line.indexOf(Constants.WEIGHT);
       if (brk > 0)
       {
          String token = line.substring(0, brk); // first word

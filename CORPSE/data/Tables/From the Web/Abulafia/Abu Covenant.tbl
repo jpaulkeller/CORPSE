@@ -1,0 +1,67 @@
+/ http://random-generator.com/index.php?title=Covenant
+
+: Abu Covenant
+{:TYPE} {:LOCATION} {:DEFENSE} {:SUPPLIES} {:RELATIONS} {:MISC}
+
+: Type
+This covenant is a {:season} covenant and is {:reputation}. 
+
+: Location 
+It is located {:site} and has {:buildings}.
+
+: Defense 
+The defenses are considered {:defenses}.
+
+: Supplies 
+This covenant is {:supplies}
+
+: Relations
+Some relations include {:relations} and the covenant has {:improvements} in case that relationship turns sour.
+
+: Misc
+The library is {:library}. 
+The covenant is also home to {:mystical attributes} which stay well defended.
+
+: season
+spring
+summer
+fall
+winter
+
+: site
+atop a cliff
+below a city
+inside a fairy forest
+
+: buildings
+a small number of good quality buildings in average repair
+
+: defenses
+light
+
+: supplies
+well supplied
+poorly supplied
+
+: reputation
+regarded positively
+has a poor reputation
+notorious
+of heroic reputation
+
+: relations
+a nearby lord, who considers the covenant friendly,
+a friar, who distrusts the covenant,
+a rival covenant,
+
+: improvements
+plenty of resources
+
+: library
+extensive
+spartan
+
+: mystical attributes
+a collection of magic items
+a pool of healing
+a talking raven
