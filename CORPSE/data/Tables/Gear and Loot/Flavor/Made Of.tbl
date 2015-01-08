@@ -1,18 +1,17 @@
-
 / Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
 /          Values from DRAGON Magazine #83, page 10.
 
 : Geology
-2 {Gem}
-4 {Metal}
-3 {Mineral}
-1 {Organic}
+2x {Gem}
+4x {Metal}
+3x {Mineral}
+1x {Organic}
 
 : Wood
-6 {Wood}
+6x {Wood}
 
 : ManMade
-5 {Man Made}
+5x {Man Made}
 
 : Fabric
 {Fabric}

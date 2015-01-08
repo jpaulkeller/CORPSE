@@ -1,10 +1,10 @@
 / http://random-generator.com/index.php?title=Castle
 
 : Castle
-10 {:Tower}
-7 {:Keep}
-4 {:Small}
-2 {:Large}
+10x {:Tower}
+7x {:Keep}
+4x {:Small}
+2x {:Large}
 
 : Garrison
 The castle barracks are continuously garrisoned by {3d6}00 men of the {:FootUnit}, and in case of attack, they can expect support from the {:EliteUnit} within a day’s hard riding.
@@ -22,19 +22,19 @@ The walls are defended by the {3d6}00-strong {:RangedUnit}, who may expect groun
 {:Fantasy Military Unit.ArmyOrdinal} {:FootType}{:Fantasy Military Unit.ArmyGroup}
 
 : FootType
-10 Halberdier
-10 Tower Guard
-2 Pikemen
-3 Foot
-3 Ground
-3 {:Royal} Guard
-4 Siege Axe
-4 Spear
-5 Siege Defense
-5 Siege Warfare
-7 {:LightHeavy}
-8 Poleax
-9 Engineer
+10x Halberdier
+10x Tower Guard
+2x Pikemen
+3x Foot
+3x Ground
+3x {:Royal} Guard
+4x Siege Axe
+4x Spear
+5x Siege Defense
+5x Siege Warfare
+7x {:LightHeavy}
+8x Poleax
+9x Engineer
 Highland
 {:Royal} Defenders
 {:Royal} Footmen
@@ -52,24 +52,24 @@ Royal
 {:Fantasy Military Unit.ArmyOrdinal} {:RangedType}{:Fantasy Military Unit.ArmyGroup}
 
 : RangedType
-2 Arbalest
-2 Arcanist’s
-2 Ballistae
-2 Bombardier
-2 Catapult
-2 Grenadier
-3 Axe Thrower
-3 Light Crossbow
-4 Heavy Crossbow
-5 Engineer
-6 Longbowmen
-6 {:LightHeavy} Ranged
-7 Scout
-7 {:Fantasy Military Unit.LightHeavy} Yeomanry
-8 Archers
-8 Bowmen
-8 Crossbowmen
-8 Yeomen
+2x Arbalest
+2x Arcanist’s
+2x Ballistae
+2x Bombardier
+2x Catapult
+2x Grenadier
+3x Axe Thrower
+3x Light Crossbow
+4x Heavy Crossbow
+5x Engineer
+6x Longbowmen
+6x {:LightHeavy} Ranged
+7x Scout
+7x {:Fantasy Military Unit.LightHeavy} Yeomanry
+8x Archers
+8x Bowmen
+8x Crossbowmen
+8x Yeomen
 Aeromancy
 Alchemy
 Artillery
@@ -87,46 +87,46 @@ Wizardry
 {:Fantasy Military Unit.ArmyOrdinal} {:EliteType}{:Fantasy Military Unit.ArmyGroup}
 
 : EliteType
-10 {:Fantasy Military Unit.LightHeavy} Cavalry
-2 {:Fantasy Military Unit.LightHeavy} Dragoon
-10 {:Fantasy Military Unit.LightHeavy} Horsemen
-10 {:Fantasy Military Unit.LightHeavy} Mounted
-9 {:Fantasy Military Unit.LightHeavy} Horse
-9 {:Fantasy Military Unit.LightHeavy} {:Fantasy Military Unit.Steed}
-8 {:Fantasy Military Unit.LightHeavy} {:Utility.TerrainsCap} Warfare
-7 {:Fantasy Military Unit.LightHeavy} Arcane Warfare
-5 {:Fantasy Military Unit.LightHeavy} Infantry
-5 {:Fantasy Military Unit.LightHeavy} Hussars
-5 {:Fantasy Military Unit.LightHeavy} Lancers
-4 {:Fantasy Military Unit.LightHeavy} Highlander
-4 {:Fantasy Military Unit.LightHeavy} {:Utility.TerrainsCap} Assault
-2 {:Fantasy Military Unit.LightHeavy} Spellsword
+10x {:Fantasy Military Unit.LightHeavy} Cavalry
+2x {:Fantasy Military Unit.LightHeavy} Dragoon
+10x {:Fantasy Military Unit.LightHeavy} Horsemen
+10x {:Fantasy Military Unit.LightHeavy} Mounted
+9x {:Fantasy Military Unit.LightHeavy} Horse
+9x {:Fantasy Military Unit.LightHeavy} {:Fantasy Military Unit.Steed}
+8x {:Fantasy Military Unit.LightHeavy} {:Utility.TerrainsCap} Warfare
+7x {:Fantasy Military Unit.LightHeavy} Arcane Warfare
+5x {:Fantasy Military Unit.LightHeavy} Infantry
+5x {:Fantasy Military Unit.LightHeavy} Hussars
+5x {:Fantasy Military Unit.LightHeavy} Lancers
+4x {:Fantasy Military Unit.LightHeavy} Highlander
+4x {:Fantasy Military Unit.LightHeavy} {:Utility.TerrainsCap} Assault
+2x {:Fantasy Military Unit.LightHeavy} Spellsword
 {:Fantasy Military Unit.LightHeavy} Assault
 {:Fantasy Military Unit.HumanUnusualSteed} Cavalry
 Aerial Cavalry
 
 : Adj
-5 a daunting
-5 a famed
-5 a legendary
-5 a mighty
-5 a once-important
-5 a once-mighty
-5 a strategically-placed
-5 a sturdy
-5 a venerable
-5 an imposing
-5 an old
-4 a strong
-4 an important
-3 a poorly-constructed
-3 a poorly-maintained
-3 a spooky
-3 an obsolete
-2 a well-constructed
-2 a well-maintained
-2 an ancient
-2 an archaic
+5x a daunting
+5x a famed
+5x a legendary
+5x a mighty
+5x a once-important
+5x a once-mighty
+5x a strategically-placed
+5x a sturdy
+5x a venerable
+5x an imposing
+5x an old
+4x a strong
+4x an important
+3x a poorly-constructed
+3x a poorly-maintained
+3x a spooky
+3x an obsolete
+2x a well-constructed
+2x a well-maintained
+2x an ancient
+2x an archaic
 a disused
 a forgotten
 a long-abandoned
@@ -135,19 +135,19 @@ an abandoned
 an unmanned
 
 : TowerConstruction
-10 stone
-10 stonework
-7 wooden
-7 woodwork
-7 {:Utility.WoodsHard}
-7 {:Utility.WoodsRare}
-3 blackened iron
-3 blackened metal
-2 {:Utility.WoodsBow}
-2 polished skulls
-2 wrought iron
-2 {:Utility.StoneDecorative}
-2 {:Utility.WoodsSoft}
+10x stone
+10x stonework
+7x wooden
+7x woodwork
+7x {:Utility.WoodsHard}
+7x {:Utility.WoodsRare}
+3x blackened iron
+3x blackened metal
+2x {:Utility.WoodsBow}
+2x polished skulls
+2x wrought iron
+2x {:Utility.StoneDecorative}
+2x {:Utility.WoodsSoft}
 burnished brass
 burnished steel
 burnished {:Utility.MetalSoft}
@@ -160,7 +160,7 @@ rusted iron
 rusted steel
 
 : Tower
-5 {:Adj} {:TowerConstruction} {:TowerType} standing {2d6}0′ tall, {:TowerLocation}. {:TowerSpecial}
+5x {:Adj} {:TowerConstruction} {:TowerType} standing {2d6}0′ tall, {:TowerLocation}. {:TowerSpecial}
 {:Adj} {:TowerConstruction} {:TowerType} standing {1d4}00′ tall, {:TowerLocation}. {:TowerSpecial}
 
 : TowerLocation
@@ -179,11 +179,11 @@ overlooking an ancient crossroads
 overlooking what were once contested territories
 
 : TowerType
-4 tower
-3 round tower
-3 square tower
-2 signal tower
-2 watchtower
+4x tower
+3x round tower
+3x square tower
+2x signal tower
+2x watchtower
 archer’s tower
 lookout tower
 scout tower
@@ -205,9 +205,9 @@ spire
 tower
 
 : TowerSpecial
-7 The tower is {:Supplies}.
-5 The tower has {:TowerSignal}.
-2 The tower is armed with an arcane {:ArcaneWeapon}, and could be a formidable weapon to one skilled in magics.
+7x The tower is {:Supplies}.
+5x The tower has {:TowerSignal}.
+2x The tower is armed with an arcane {:ArcaneWeapon}, and could be a formidable weapon to one skilled in magics.
 Recent fighting has made the tower’s central stair slippery with blood and gore.
 The original tower, long burnt to the ground, was constructed by decree of {:Rank} {:MaleName} during the {:Conflict}.
 The tower {:Portal}.
@@ -222,52 +222,52 @@ The winding central stair is missing many steps, making the trip to the high wat
 This tower served as a key early warning for {:Rank} {:MaleName}’s forces during the {:Conflict}.
 
 : ScryingStone
-5 is rumored to hold an ancient scrying stone
-3 has a strange, arcane scrying stone where a signal device would be
+5x is rumored to hold an ancient scrying stone
+3x has a strange, arcane scrying stone where a signal device would be
 contains the broken shards of an old scrying stone
 has an arcane basin that seems to have once held a magical scrying stone
 once was the home of a powerful magic scrying stone
 
 : Portal
-5 is rumored to house a magical portal to an impossibly far land
-3 has a strange, glowing portal crackling with arcane energy at its peak
+5x is rumored to house a magical portal to an impossibly far land
+3x has a strange, glowing portal crackling with arcane energy at its peak
 has a non-functioning rune circle that may once have opened a magical portal
 once housed an arcane portal to some far-away sister tower
 
 : ArcaneWeapon
-5 {:Elements.all} orb
-5 fire orb
-5 ice orb
-5 lightning orb
+5x {:Elements.all} orb
+5x fire orb
+5x ice orb
+5x lightning orb
 hellfire orb
 holy fire orb
 
 : Conflict
-7 {:War} of the {:Inspiration}
-6 {:CreatureType} {:War}
-5 {:War} of the {:CreatureType}s
-4 {2d4}0-Years War
-3 Great {:CreatureType} {:War}
-2 Great Siege of ’{digit}{digit}
+7x {:War} of the {:Inspiration}
+6x {:CreatureType} {:War}
+5x {:War} of the {:CreatureType}s
+4x {2d4}0-Years War
+3x Great {:CreatureType} {:War}
+2x Great Siege of ’{digit}{digit}
 {:War} of {:AbstractEvocative}
 
 : CreatureType
 {:creature}
 
 : War
-10 War
-7 Wars
-5 Battle
-5 Conflict
-3 Campaign
-3 Rebellion
-2 Incursion
+10x War
+7x Wars
+5x Battle
+5x Conflict
+3x Campaign
+3x Rebellion
+2x Incursion
 Attack
 Uprising
 
 : Supplies
-10 {:StockLevel}stocked with {:FoodStocks}
-5 still storing {:Weapons}
+10x {:StockLevel}stocked with {:FoodStocks}
+5x still storing {:Weapons}
 stocked with tacks, harnesses, and the like:  to refit riders and couriers
 an old courier-station and still has a functional stable
 
@@ -286,16 +286,16 @@ well-
 {:Foodstuffs.Chunks}, {:Foodstuffs.SoftFood} and {:Foodstuffs.Liquid}
 
 : Weapons
-4 shields and {:HandWeapons}, enough for a small garrison
-3 bows and arrows, enough for a small contingent of archers
+4x shields and {:HandWeapons}, enough for a small garrison
+3x bows and arrows, enough for a small contingent of archers
 crossbows and bolts, enough to defend against a short siege
 
 : HandWeapons
-3 bills
-2 halberds
-3 pikes
-2 pole-axes
-2 siege axes
+3x bills
+2x halberds
+3x pikes
+2x pole-axes
+2x siege axes
 spears
 {:Swords.main}
 handaxes
@@ -304,7 +304,7 @@ flails
 {:WeaponsOther.main}
 
 : TowerSignal
-3 an arcane {:Color.bright} signal fire actively burning
+3x an arcane {:Color.bright} signal fire actively burning
 a fresh pile of wood, doused in flammable liquid, recently prepared as a warning signal
 a large signal fire actively burning
 a large signal mirror on a turning base
@@ -352,17 +352,17 @@ To this day, the stronghold is the seat and court for the surrounding {:County}.
 When defended, the hold has never fallen to an attacking force, despite decades of full-scale war in the region.
 
 : County
-8 county
-8 lands
-7 countryside
-7 province
-6 villages
-5 earldom
-5 fiefdom
-4 barony
-4 settlements
-3 serfdom
-2 kingdom
+8x county
+8x lands
+7x countryside
+7x province
+6x villages
+5x earldom
+5x fiefdom
+4x barony
+4x settlements
+3x serfdom
+2x kingdom
 empire
 
 : Ancient
@@ -375,21 +375,21 @@ old
 what was once
 
 : Ruins
-10 {:Name}
-10 {:Fantasy Landmarks.inland}
-2 {:Fantasy Town Names.main}
-2 {:Fantasy Town Names.Englishy}
+10x {:Name}
+10x {:Fantasy Landmarks.inland}
+2x {:Fantasy Town Names.main}
+2x {:Fantasy Town Names.Englishy}
 
 : Small
 {:Adj} {:SmallType}
 {:Adj} {:SmallType}
 
 : SmallType
-3 motte-and-bailey castle with {:Palisade} {:PalisadeLocation}. {:Special}
-2 brick-built castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
-2 earthenwork castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
-2 fortress with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
-2 keep with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
+3x motte-and-bailey castle with {:Palisade} {:PalisadeLocation}. {:Special}
+2x brick-built castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
+2x earthenwork castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
+2x fortress with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
+2x keep with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
 brick-built castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Traps} {:Special}
 castle with {:Palisade} {:PalisadeLocation}. {:Special}
 castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Special}
@@ -399,7 +399,7 @@ keep with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Traps} {:Special}
 motte-and-bailey castle with {:Palisade} {:PalisadeLocation}. {:CurtainWalls}. {:Traps} {:Special}
 
 : Special
-5 {:KeepSpecial}
+5x {:KeepSpecial}
 {:Rank} {:MaleName} is buried in the {:Cemetery} here, making it a popular pilgrimage spot.
 Many different construction layers indicate that the castle has been destroyed and rebuilt many times.
 Much of the castle was charred and burned in a forgotten war, and its still-standing stonework lends an unsettling eeriness.
@@ -410,9 +410,9 @@ The castle was made in times of peace, and boasts a great hall for entertainment
 This castle withstood enemy advances by the hundreds as the key defense in the {:Conflict}.
 
 : Cemetery
-3 abbey
-5 cemetery
-2 chapel
+3x abbey
+5x cemetery
+2x chapel
 churchyard
 graveyard
 priory
@@ -436,22 +436,22 @@ Its well-planned defenses include a {2d4}0′ {:TowerConstruction} outer wall wi
 a {1d4}0′ {:pt}
 
 : pt
-4 wooden palisade
-4 stone wall
-3 bailey
-2 woodwork palisade
-2 stonework wall
+4x wooden palisade
+4x stone wall
+3x bailey
+2x woodwork palisade
+2x stonework wall
 wrought-iron fence
 iron fence
 blackened iron fence
 
 : PalisadeLocation
-5 on all sides, with a small gate
-5 on all sides, with a large double-gate
-3 on all sides, with a small drawbridge over {:MoatType}
-3 to its front, tied into the surrounding cliffs and crags as a natural defense
-2 on three sides, with its back against a jagged cliffside
-2 on three sides, with its back to a fast-flowing river
+5x on all sides, with a small gate
+5x on all sides, with a large double-gate
+3x on all sides, with a small drawbridge over {:MoatType}
+3x to its front, tied into the surrounding cliffs and crags as a natural defense
+2x on three sides, with its back against a jagged cliffside
+2x on three sides, with its back to a fast-flowing river
 on three sides, with a steep dropoff on its fourth
 
 : MoatType
@@ -485,20 +485,20 @@ The castle’s {4d4}-foot-thick walls, standing {2d4}0 feet tall, indicate its o
 The castle’s impressive defenses support a large central{:KeepShape} keep standing {1d4}50′ high. {:OuterDefenses}
 
 : KeepShape
-10 cross-shaped
-10 round
-5 T-shaped
-5 L-shaped
+10x cross-shaped
+10x round
+5x T-shaped
+5x L-shaped
 U-shaped
 
 : Catapult
-2 magical {:ArcaneWeapon}
+2x magical {:ArcaneWeapon}
 {~{Siege}}
 
 : OuterDefenses
-3 {:Moat} {:Traps}
-3 {:CurtainWalls}. {:Moat}
-2 {:CurtainWalls}. {:Moat} {:Traps}
+3x {:Moat} {:Traps}
+3x {:CurtainWalls}. {:Moat}
+2x {:CurtainWalls}. {:Moat} {:Traps}
 {:CurtainWalls}. {:Traps}
 {Number:TwoToFive} great ditches separated by walls on all sides of the castle alternately serve as rather pleasant courts during peacetime.
 Recent repairs to the outer walls are evident, with crude rock and mortar as a stopgap to fill in breached points.
@@ -508,10 +508,10 @@ The outer wall connects {2d4} turret towers to garrison archers and crossbowmen.
 The outer wall is 1{2d4}′ thick and {2d4}0′ high, and has a walkway for defenders and {2d4} postern gates. {:Moat}
 
 : Moat
-3 The outer wall has a defensive ditch with an arched bridge and flanking towers.
-2 The moat has a great drawbridge to the front, and a smaller fixed bridge with a portcullis towards allied lands, meant to allow reinforcements in wartime, riders from the elite guard, or, if necessary, a final retreat.
-2 The great, deep moat around the outer wall boasts a sturdy drawbridge wide enough for four riders in full war kit.
-2 The great gatehouse on the outer wall has a tall portcullis in both front and rear, with arrow slits and murderholes defending the sallyport.
+3x The outer wall has a defensive ditch with an arched bridge and flanking towers.
+2x The moat has a great drawbridge to the front, and a smaller fixed bridge with a portcullis towards allied lands, meant to allow reinforcements in wartime, riders from the elite guard, or, if necessary, a final retreat.
+2x The great, deep moat around the outer wall boasts a sturdy drawbridge wide enough for four riders in full war kit.
+2x The great gatehouse on the outer wall has a tall portcullis in both front and rear, with arrow slits and murderholes defending the sallyport.
 {Number:TwoToFive} great ditches separated by walls on all sides of the castle alternately serve as rather pleasant courts during peacetime.
 A great rotating bridge serves as the outer gate, with stationary double towers defending both ends.
 A moat of tar pitch stands ready to be lit ablaze, crippling any enemy charge.
@@ -545,17 +545,17 @@ The palisades are topped with spear outcroppings, preventing an easy breach.
 The walls are tipped with spikes, preventing an easy breach.
 
 : Name
-5 {:StartName} {:Structure}
-5 {:possessives} {site}
-3 The {:Structure} at {:Fantasy Town Names.main}
-3 The {:Structure} at {:Fantasy Town Names.Englishy}
-3 {:Poetic Destinations.main}
+5x {:StartName} {:Structure}
+5x {:possessives} {site}
+3x The {:Structure} at {:Fantasy Town Names.main}
+3x The {:Structure} at {:Fantasy Town Names.Englishy}
+3x {:Poetic Destinations.main}
 {:Fantasy Town Names.main}
 {:Fantasy Town Names.Englishy}
 {:inspiration}
 
 : StartName
-10 {:inspiration}
+10x {:inspiration}
 {:PersonName}’s
 {:Ranks and Titles.RankEnglishSpecial}
 {:color}
@@ -572,9 +572,9 @@ The walls are tipped with spikes, preventing an easy breach.
 {:DitV Male Name.FirstName} {:Fantasy Names.Surname}
 
 : Rank
-4 {:Ranks and Titles.RankEnglishRoyaltyMale}
-2 {:Ranks and Titles.RankEnglishSpecialReligiousCatholicMale}
-2 {:Ranks and Titles.RankEnglishSpecialReligiousProtestantMale}
+4x {:Ranks and Titles.RankEnglishRoyaltyMale}
+2x {:Ranks and Titles.RankEnglishSpecialReligiousCatholicMale}
+2x {:Ranks and Titles.RankEnglishSpecialReligiousProtestantMale}
 Lord
 {:Ranks and Titles.RankForeign}
 {:Ranks and Titles.RankEnglishSpecialMale}
@@ -582,14 +582,14 @@ Saint
 Sir
 
 : inspiration
-10 {:moreinspirations}
-2 {:Fantasy Military Unit.MascotModifier}
-2 {:Secret Society Title.Noun}
-2 {:Secret Society Title.OrgDescriptor}
-3 {:Fantasy Military Unit.MascotAnimal}
-3 {:Inscriptions.AbstractNounNegative}
-4 {:Inscriptions.DefiniteNoun}
-6 {:Fantasy Town Names.Englishy}
+10x {:moreinspirations}
+2x {:Fantasy Military Unit.MascotModifier}
+2x {:Secret Society Title.Noun}
+2x {:Secret Society Title.OrgDescriptor}
+3x {:Fantasy Military Unit.MascotAnimal}
+3x {:Inscriptions.AbstractNounNegative}
+4x {:Inscriptions.DefiniteNoun}
+6x {:Fantasy Town Names.Englishy}
 {:Fantasy Town Names.Group1}{:Fantasy Town Names.Group2}
 {:Fantasy Town Names.Misc}{:Fantasy Town Names.Suffix}
 {:Fantasy Town Names.Misc}{:Fantasy Town Names.Suffix}{:Fantasy Town Names.Suffix}
@@ -597,13 +597,13 @@ Sir
 {:Secret Society Title.Title}
 
 : abstractevocative
-5 {:Inscriptions.AbstractNounNegative}
+5x {:Inscriptions.AbstractNounNegative}
 {Evocative:Noun}
 
 : possessives
 {:Fantasy Names.MaleFirstName}’s
 {:Fantasy Town Names.Jobs}’s
-2 {:Inn and Tavern Names.Person}’s
+2x {:Inn and Tavern Names.Person}’s
 {:moreposessors}’s
 
 : moreposessors
@@ -614,7 +614,7 @@ Sir
 {:creature}
 
 : moreinspirations
-2 {:creature}
+2x {:creature}
 {:creature} {:bodypart}
 {color:simple}
 
@@ -627,6 +627,6 @@ Sir
 {Undead}
 
 : bodypart
-5 Head
-2 Bones
+5x Head
+2x Bones
 Skull

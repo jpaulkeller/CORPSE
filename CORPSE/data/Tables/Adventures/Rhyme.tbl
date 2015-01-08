@@ -1,0 +1,732 @@
+/ http://random-generator.com/index.php?title=Cryptic_rhyme
+
+Here is a cryptic rhyme to add color to a passage or inspiration to an adventure.  This still needs lots of work, including expanded rhyming schemes.
+
+For large text pieces, see [[100 Bookshelves]], [[Arcane Books]], [[FantasyBooks]], and [[Words of Wisdom]].
+
+===Your Riddles===
+<sgdisplay iterations="6">[main]</sgdisplay>
+
+<sgtable>
+;main
+1,[Scheme1][End]
+1,[Scheme2][End]
+1,[Scheme3][End]
+1,[Scheme4][End]
+
+;End
+1,
+1,!
+1,?
+
+;Scheme1
+1,[Rhyme1]... [Rhyme1]
+1,[Rhyme2]... [Rhyme2]
+1,[Rhyme3]... [Rhyme3]
+1,[Rhyme4]... [Rhyme4]
+1,[Rhyme5]... [Rhyme5]
+1,[Rhyme6]... [Rhyme6]
+1,[Rhyme7]... [Rhyme7]
+
+;Scheme2
+1,[Scheme2A]
+1,[Scheme2B]
+1,[Scheme2C]
+1,[Scheme2D]
+1,[Scheme2E]
+1,[Scheme2F]
+1,[Scheme2G]
+
+;Scheme2A
+1,[VerbA] [Rhyme1]... [VerbA] [Rhyme1]
+1,[VerbA] [Rhyme2]... [VerbA] [Rhyme2]
+1,[VerbA] [Rhyme3]... [VerbA] [Rhyme3]
+1,[VerbA] [Rhyme4]... [VerbA] [Rhyme4]
+1,[VerbA] [Rhyme5]... [VerbA] [Rhyme5]
+1,[VerbA] [Rhyme6]... [VerbA] [Rhyme6]
+1,[VerbA] [Rhyme7]... [VerbA] [Rhyme7]
+
+;Scheme2B
+1,[VerbB] [Rhyme1]... [VerbB] [Rhyme1]
+1,[VerbB] [Rhyme2]... [VerbB] [Rhyme2]
+1,[VerbB] [Rhyme3]... [VerbB] [Rhyme3]
+1,[VerbB] [Rhyme4]... [VerbB] [Rhyme4]
+1,[VerbB] [Rhyme5]... [VerbB] [Rhyme5]
+1,[VerbB] [Rhyme6]... [VerbB] [Rhyme6]
+1,[VerbB] [Rhyme7]... [VerbB] [Rhyme7]
+
+;Scheme2C
+1,[VerbC] [Rhyme1]... [VerbC] [Rhyme1]
+1,[VerbC] [Rhyme2]... [VerbC] [Rhyme2]
+1,[VerbC] [Rhyme3]... [VerbC] [Rhyme3]
+1,[VerbC] [Rhyme4]... [VerbC] [Rhyme4]
+1,[VerbC] [Rhyme5]... [VerbC] [Rhyme5]
+1,[VerbC] [Rhyme6]... [VerbC] [Rhyme6]
+1,[VerbC] [Rhyme7]... [VerbC] [Rhyme7]
+
+;Scheme2D
+1,[VerbD] [Rhyme1]... [VerbD] [Rhyme1]
+1,[VerbD] [Rhyme2]... [VerbD] [Rhyme2]
+1,[VerbD] [Rhyme3]... [VerbD] [Rhyme3]
+1,[VerbD] [Rhyme4]... [VerbD] [Rhyme4]
+1,[VerbD] [Rhyme5]... [VerbD] [Rhyme5]
+1,[VerbD] [Rhyme6]... [VerbD] [Rhyme6]
+1,[VerbD] [Rhyme7]... [VerbD] [Rhyme7]
+
+;Scheme2E
+1,[VerbE] [Rhyme1]... [VerbE] [Rhyme1]
+1,[VerbE] [Rhyme2]... [VerbE] [Rhyme2]
+1,[VerbE] [Rhyme3]... [VerbE] [Rhyme3]
+1,[VerbE] [Rhyme4]... [VerbE] [Rhyme4]
+1,[VerbE] [Rhyme5]... [VerbE] [Rhyme5]
+1,[VerbE] [Rhyme6]... [VerbE] [Rhyme6]
+1,[VerbE] [Rhyme7]... [VerbE] [Rhyme7]
+
+;Scheme2F
+1,[VerbF] [Rhyme1]... [VerbF] [Rhyme1]
+1,[VerbF] [Rhyme2]... [VerbF] [Rhyme2]
+1,[VerbF] [Rhyme3]... [VerbF] [Rhyme3]
+1,[VerbF] [Rhyme4]... [VerbF] [Rhyme4]
+1,[VerbF] [Rhyme5]... [VerbF] [Rhyme5]
+1,[VerbF] [Rhyme6]... [VerbF] [Rhyme6]
+1,[VerbF] [Rhyme7]... [VerbF] [Rhyme7]
+
+;Scheme2G
+1,[Verb] [Rhyme1]... [Verb] [Rhyme1]
+1,[Verb] [Rhyme2]... [Verb] [Rhyme2]
+1,[Verb] [Rhyme3]... [Verb] [Rhyme3]
+1,[Verb] [Rhyme4]... [Verb] [Rhyme4]
+1,[Verb] [Rhyme5]... [Verb] [Rhyme5]
+1,[Verb] [Rhyme6]... [Verb] [Rhyme6]
+1,[Verb] [Rhyme7]... [Verb] [Rhyme7]
+
+;Scheme3
+1,[Scheme3A]
+1,[Scheme3B]
+1,[Scheme3C]
+1,[Scheme3D]
+
+;Scheme3A
+1,[VerbA], [VerbA], [Rhyme1]... [VerbB], [VerbB], [Rhyme1]
+1,[VerbA], [VerbA], [Rhyme2]... [VerbB], [VerbB], [Rhyme2]
+1,[VerbA], [VerbA], [Rhyme3]... [VerbB], [VerbB], [Rhyme3]
+1,[VerbA], [VerbA], [Rhyme4]... [VerbB], [VerbB], [Rhyme4]
+1,[VerbA], [VerbA], [Rhyme5]... [VerbB], [VerbB], [Rhyme5]
+1,[VerbA], [VerbA], [Rhyme6]... [VerbB], [VerbB], [Rhyme6]
+1,[VerbA], [VerbA], [Rhyme7]... [VerbB], [VerbB], [Rhyme7]
+
+;Scheme3B
+1,[VerbC], [VerbC], [Rhyme1]... [VerbD], [VerbD], [Rhyme1]
+1,[VerbC], [VerbC], [Rhyme2]... [VerbD], [VerbD], [Rhyme2]
+1,[VerbC], [VerbC], [Rhyme3]... [VerbD], [VerbD], [Rhyme3]
+1,[VerbC], [VerbC], [Rhyme4]... [VerbD], [VerbD], [Rhyme4]
+1,[VerbC], [VerbC], [Rhyme5]... [VerbD], [VerbD], [Rhyme5]
+1,[VerbC], [VerbC], [Rhyme6]... [VerbD], [VerbD], [Rhyme6]
+1,[VerbC], [VerbC], [Rhyme7]... [VerbD], [VerbD], [Rhyme7]
+
+;Scheme3C
+1,[VerbE], [VerbE], [Rhyme1]... [VerbF], [VerbF], [Rhyme1]
+1,[VerbE], [VerbE], [Rhyme2]... [VerbF], [VerbF], [Rhyme2]
+1,[VerbE], [VerbE], [Rhyme3]... [VerbF], [VerbF], [Rhyme3]
+1,[VerbE], [VerbE], [Rhyme4]... [VerbF], [VerbF], [Rhyme4]
+1,[VerbE], [VerbE], [Rhyme5]... [VerbF], [VerbF], [Rhyme5]
+1,[VerbE], [VerbE], [Rhyme6]... [VerbF], [VerbF], [Rhyme6]
+1,[VerbE], [VerbE], [Rhyme7]... [VerbF], [VerbF], [Rhyme7]
+
+;Scheme3D
+1,[Verb], [Verb], [Rhyme1]... [Verb], [Verb], [Rhyme1]
+1,[Verb], [Verb], [Rhyme2]... [Verb], [Verb], [Rhyme2]
+1,[Verb], [Verb], [Rhyme3]... [Verb], [Verb], [Rhyme3]
+1,[Verb], [Verb], [Rhyme4]... [Verb], [Verb], [Rhyme4]
+1,[Verb], [Verb], [Rhyme5]... [Verb], [Verb], [Rhyme5]
+1,[Verb], [Verb], [Rhyme6]... [Verb], [Verb], [Rhyme6]
+1,[Verb], [Verb], [Rhyme7]... [Verb], [Verb], [Rhyme7]
+
+;Scheme4
+1,[Scheme4A]
+1,[Scheme4B]
+1,[Scheme4C]
+1,[Scheme4D]
+1,[Scheme4E]
+1,[Scheme4F]
+
+;Scheme4A
+1,[Rhyme1] [VerbA]... [Rhyme1] [VerbA]
+1,[Rhyme2] [VerbA]... [Rhyme2] [VerbA]
+1,[Rhyme3] [VerbA]... [Rhyme3] [VerbA]
+1,[Rhyme4] [VerbA]... [Rhyme4] [VerbA]
+1,[Rhyme5] [VerbA]... [Rhyme5] [VerbA]
+1,[Rhyme6] [VerbA]... [Rhyme6] [VerbA]
+1,[Rhyme7] [VerbA]... [Rhyme7] [VerbA]
+
+;Scheme4B
+1,[Rhyme1] [VerbB]... [Rhyme1] [VerbB]
+1,[Rhyme2] [VerbB]... [Rhyme2] [VerbB]
+1,[Rhyme3] [VerbB]... [Rhyme3] [VerbB]
+1,[Rhyme4] [VerbB]... [Rhyme4] [VerbB]
+1,[Rhyme5] [VerbB]... [Rhyme5] [VerbB]
+1,[Rhyme6] [VerbB]... [Rhyme6] [VerbB]
+1,[Rhyme7] [VerbB]... [Rhyme7] [VerbB]
+
+;Scheme4C
+1,[Rhyme1] [VerbC]... [Rhyme1] [VerbC]
+1,[Rhyme2] [VerbC]... [Rhyme2] [VerbC]
+1,[Rhyme3] [VerbC]... [Rhyme3] [VerbC]
+1,[Rhyme4] [VerbC]... [Rhyme4] [VerbC]
+1,[Rhyme5] [VerbC]... [Rhyme5] [VerbC]
+1,[Rhyme6] [VerbC]... [Rhyme6] [VerbC]
+1,[Rhyme7] [VerbC]... [Rhyme7] [VerbC]
+
+;Scheme4D
+1,[Rhyme1] [VerbD]... [Rhyme1] [VerbD]
+1,[Rhyme2] [VerbD]... [Rhyme2] [VerbD]
+1,[Rhyme3] [VerbD]... [Rhyme3] [VerbD]
+1,[Rhyme4] [VerbD]... [Rhyme4] [VerbD]
+1,[Rhyme5] [VerbD]... [Rhyme5] [VerbD]
+1,[Rhyme6] [VerbD]... [Rhyme6] [VerbD]
+1,[Rhyme7] [VerbD]... [Rhyme7] [VerbD]
+
+;Scheme4E
+1,[Rhyme1] [VerbE]... [Rhyme1] [VerbE]
+1,[Rhyme2] [VerbE]... [Rhyme2] [VerbE]
+1,[Rhyme3] [VerbE]... [Rhyme3] [VerbE]
+1,[Rhyme4] [VerbE]... [Rhyme4] [VerbE]
+1,[Rhyme5] [VerbE]... [Rhyme5] [VerbE]
+1,[Rhyme6] [VerbE]... [Rhyme6] [VerbE]
+1,[Rhyme7] [VerbE]... [Rhyme7] [VerbE]
+
+;Scheme4F
+1,[Rhyme1] [VerbF]... [Rhyme1] [VerbF]
+1,[Rhyme2] [VerbF]... [Rhyme2] [VerbF]
+1,[Rhyme3] [VerbF]... [Rhyme3] [VerbF]
+1,[Rhyme4] [VerbF]... [Rhyme4] [VerbF]
+1,[Rhyme5] [VerbF]... [Rhyme5] [VerbF]
+1,[Rhyme6] [VerbF]... [Rhyme6] [VerbF]
+1,[Rhyme7] [VerbF]... [Rhyme7] [VerbF]
+
+;Verb
+1,[VerbA]
+1,[VerbB]
+1,[VerbC]
+1,[VerbD]
+1,[VerbE]
+1,[VerbF]
+
+;VerbA
+1,burning
+1,churning
+1,earning
+1,learning
+1,turning
+1,yearning
+
+;VerbB
+1,creeping
+1,heaping
+1,keeping
+1,leaping
+1,peeping
+1,reaping
+1,seeping
+1,sleeping
+1,steeping
+1,weeping
+
+;VerbC
+1,buying
+1,crying
+1,dying
+1,flying
+1,frying
+1,lying
+1,prying
+1,sighing
+1,trying
+1,vying
+
+;VerbD
+1,baring
+1,bearing
+1,blaring
+1,daring
+1,flaring
+1,glaring
+1,paring
+1,snaring
+1,sparing
+1,staring
+1,swearing
+1,tearing
+1,wearing
+
+;VerbE
+1,chopping
+1,cropping
+1,dropping
+1,flopping
+1,hopping
+1,lopping
+1,popping
+1,stopping
+1,stopping
+1,swapping
+1,topping
+
+;VerbF
+1,blinking
+1,chinking
+1,clinking
+1,drinking
+1,linking
+1,shrinking
+1,sinking
+1,stinking
+1,thinking
+1,winking
+
+;Rhyme1
+1,[fire2syllable] fire
+1,[friar2syllable] friar
+1,[liar2syllable] liar
+1,[mire2syllable] mire
+1,[pyre2syllable] pyre
+1,[wire2syllable] wire
+1,[possessive1syllable] attire
+1,[possessive1syllable] desire
+
+;fire2syllable
+1,ancient
+1,arcane
+1,demon's
+1,Devil's
+1,dragon's
+1,dying
+1,Elder
+1,lake of
+1,lapping
+1,seas of
+1,skies of
+1,temple
+1,tongues of
+1,witch's
+
+;friar2syllable
+1,bawdy
+1,fallen
+1,holy
+1,long lost
+1,trav'ling
+1,wand'ring
+
+;liar2syllable
+1,famous
+1,fiendish
+1,honest
+1,silent
+1,wicked
+1,wretched
+
+;mire2syllable
+1,ancient
+1,bog and
+1,reek of
+1,sodden
+1,stuck in
+1,sunken
+1,trapped in
+1,walk on
+1,wretched
+
+;pyre2syllable
+1,ancient
+1,arcane
+1,burial
+1,demon's
+1,Devil's
+1,dragon's
+1,dying
+1,Elder
+1,long dead
+1,long lost
+1,Old God's
+1,standing
+1,temple
+1,witch's
+
+;wire2syllable
+1,barbs on
+1,grasping
+1,rusted
+1,rusting
+1,strangling
+1,tangling
+1,trip on
+
+;possessive1syllable
+1,her
+1,his
+1,its
+1,King's
+1,life's
+1,lord's
+1,my
+1,Queen's
+1,strong
+1,their
+1,your
+
+;Rhyme2
+1,[bone2syllable] bone
+1,[moan2syllable] [moan]
+1,[stone2syllable] stone
+1,[alone1syllable] alone
+1,[atone1syllable] atone
+1,[unknown1syllable] unknown
+
+;bone2syllable
+1,broken
+1,Dragon's
+1,gate of
+1,gates of
+1,gnaw on
+1,living
+1,shattered
+1,snapping
+1,wall of
+1,walls of
+
+;moan
+1,moan
+1,groan
+
+;moan2syllable
+1,ancient
+1,evil
+1,far-off
+1,nearby
+1,painful
+1,silent
+1,undead
+
+;stone2syllable
+1,earth and
+1,heart of
+1,hills of
+1,path of
+1,sand and
+1,temple
+1,windswept
+
+;alone1syllable
+1,all
+1,die
+1,held
+1,kept
+1,left
+1,ride
+1,sleep
+1,stand
+1,stay
+1,trapped
+1,walk
+
+;atone1syllable
+1,go
+1,must
+1,then
+1,you
+
+;unknown1syllable
+1,dark
+1,great
+1,hills
+1,lands
+1,pain
+1,plains
+1,things
+1,tongues
+1,vast
+
+;Rhyme3
+1,[isle2syllable] isle
+1,[phial2syllable] phial
+1,[smile2syllable] smile
+1,[trial2syllable] trial
+1,[vile2syllable] vile
+1,[awhile1syllable] awhile
+1,reconcile
+
+;isle2syllable
+1,deathly
+1,Devil's
+1,far-off
+1,hidden
+1,jagged
+1,long-lost
+1,misty
+1,shadowed
+1,shrouded
+
+;phial2syllable
+1,arcane
+1,burning
+1,crystal
+1,hidden
+1,magick
+1,shining
+1,twinkling
+
+;smile2syllable
+1,crooked
+1,evil
+1,handsome
+1,jester's
+1,knowing
+1,lovely
+1,see her
+1,see him
+1,see it
+1,toothy
+
+;trial2syllable
+1,fearsome
+1,fiery
+1,hellish
+1,holy
+1,lengthy
+1,painful
+1,trifold
+1,twofold
+
+;vile2syllable
+1,hands so
+1,something
+1,thoughts so
+
+;awhile1syllable
+1,held
+1,hold
+1,kept
+1,stay
+1,think
+1,wait
+
+;Rhyme4
+1,[brittle2syllable] brittle
+1,[fiddle2syllable] fiddle
+1,[griddle2syllable] griddle
+1,[middle2syllable] middle
+1,[riddle2syllable] riddle
+1,[whittle2syllable] whittle
+
+;brittle2syllable
+1,bones so
+1,cracked and
+1,feeling
+1,hard and
+1,old and
+
+;fiddle2syllable
+1,broken
+1,distant
+1,furious
+1,grating
+1,tuneless
+1,untuned
+1,well-tuned
+
+;griddle2syllable
+1,blackened
+1,cast-iron
+1,on the
+
+;middle2syllable
+1,at the
+1,in the
+
+;riddle2syllable
+1,answered
+1,arcane
+1,bygone
+1,cryptic
+1,long-lost
+1,maze or
+1,rhyme and
+1,secret
+1,twisted
+1,unknown
+1,winding
+
+;whittle2syllable
+1,bone to
+1,hone and
+1,wood to
+
+;Rhyme5
+1,[frown2syllable] brown
+1,[crown2syllable] crown
+1,[gown2syllable] down
+1,[frown2syllable] frown
+1,[gown2syllable] gown
+1,[crown2syllable] town
+
+;crown2syllable
+1,bloody
+1,gilded
+1,golden
+1,kingly
+1,lordly
+1,regal
+1,royal
+1,tarnished
+1,thorny
+
+;frown2syllable
+1,child's
+1,gruesome
+1,jaded
+1,mournful
+1,rueful
+1,wincing
+1,woeful
+
+;gown2syllable
+1,airy
+1,azure
+1,crimson
+1,em'rald
+1,gilded
+1,glitt'ring
+1,golden
+1,princess
+1,pure white
+1,queenly
+1,regal
+1,royal
+1,shining
+1,silver
+
+;town2syllable
+1,ancient
+1,fortress
+1,highland
+1,long-lost
+1,secret
+1,well-paved
+
+;Rhyme6
+1,[blast2syllable] blast
+1,[cast2syllable] cast
+1,[fast2syllable] fast
+1,[last2syllable] last
+1,[blast2syllable] mast
+1,[aghast1syllable] aghast
+
+;blast2syllable
+1,arcane
+1,deadly
+1,deathly
+1,fearsome
+1,fiery
+1,noxious
+1,windy
+
+;cast2syllable
+1,cannot
+1,lost spell
+1,lost spells
+1,new spell
+1,new spells
+1,old spell
+1,old spells
+1,spell to
+1,spells to
+
+;fast2syllable
+1,charging
+1,holding
+1,riding
+1,setting
+1,standing
+1,week-long
+1,month-long
+1,year-long
+
+;last2syllable
+1,cannot
+1,enter
+1,ever
+1,make it
+1,never
+1,not to
+1,will not
+
+;aghast1syllable
+1,all
+1,face
+1,now
+
+;Rhyme7
+1,[awoke1syllable] awoke
+1,[broke2syllable] broke
+1,[choke2syllable] choke
+1,[cloak2syllable] cloak
+1,[croak2syllable] croak
+1,[invoke1syllable] invoke
+1,[oak2syllable] oak
+1,[smoke2syllable] smoke
+1,[soak2syllable] soak
+
+;awoke1syllable
+1,he
+1,she
+1,it
+
+;broke2syllable
+1,curses
+1,gates now
+1,lockets
+
+;choke2syllable
+1,grasp and
+1,tears that
+
+;cloak2syllable
+1,gilded
+1,hidden
+1,shad'wy
+1,tattered
+
+;croak2syllable
+1,growl and
+1,muffled
+1,old toad's
+
+;invoke1syllable
+1,death
+1,life
+1,runes
+1,spells
+1,words
+
+;oak2syllable
+1,gnarled
+1,long-dead
+1,mighty
+1,shady
+1,standing
+
+;smoke2syllable
+1,distant
+1,fire and
+1,noxious
+1,rising
+1,steam and
+
+;soak2syllable
+1,blood will
+1,waters
+
+</sgtable>
+
+[[Category:Generator]]

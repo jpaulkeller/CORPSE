@@ -1,7 +1,7 @@
 / inspired by http://roll1d12.blogspot.com/2014/10/name-that-barbarian.html
 
 :Barbarian Name Fancy
-20 {:Name} {:TITLE}
+20x {:Name} {:TITLE}
 
 :Name
 {15%{Noise} }{Barbarian Name}{10% {Barbarian Name}}
@@ -10,7 +10,7 @@
 {20%, {{Pseudo Class|Title Bad}}} of the {Site Name:Dark}
 the {Evocative:Mean}
 {50% {Humanoid}-{bane|killer|eater|slayer|friend}}
-the {Organ} {Collector|Crusher|Eater}
+the {Organ} {Carver|Choker|Cleaver|Collector|Crusher|Eater}
 , {Title Bad} of the {Weapon{!OneWord}} God
 {Weapon{!OneWord}}{hand|fist|foot|tooth}
 of {Evocative:Not Good}

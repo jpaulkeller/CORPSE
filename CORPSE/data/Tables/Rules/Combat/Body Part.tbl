@@ -9,7 +9,6 @@ hindquarters
 neck
 throat
 {:head}
-{:internal}
 {left|right} ankle
 {left|right} arm
 {left|right} calf
@@ -46,3 +45,4 @@ lungs
 spine
 spleen
 tongue
+tooth

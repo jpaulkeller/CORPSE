@@ -33,6 +33,7 @@ import corpse.ui.TreePanel;
 /** CORPSE - Computer-Oriented Role-Playing System & Environment */
 
 // TODO high priority
+// capitalize based on assignment token (allow lower-case variables?)
 // internal-only subsets
 // script recursion for cave generation
 // add Categories for each table (like Wiki) and provide a way to view by category

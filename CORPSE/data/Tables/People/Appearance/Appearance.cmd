@@ -8,6 +8,7 @@
 
 <!--
 {G:=gender}
+{C:=color hex}
 -->
 
 <p><b>{N}</b>
@@ -24,6 +25,8 @@
 !loop {2d2-2}
   <li>Marking: {markings}
 !end
+  <li>Wearing: <font color="{C.font}" bgcolor="{C.hex}">{C.name}-colored</font> {75%{condition:clothing} }{~{clothing}}
+/ sample: 
 </ul>
 
 </body>

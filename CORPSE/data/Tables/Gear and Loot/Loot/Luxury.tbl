@@ -1,5 +1,5 @@
 : Luxury
-20 {:item}
+20x {:item}
 
 : Item
 fine wine ({d10}00 gp)

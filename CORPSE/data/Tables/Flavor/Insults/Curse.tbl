@@ -1,0 +1,183 @@
+/ http://random-generator.com/index.php?title=Curse
+
+: Curse
+{:Name}: {:EFFECT}
+
+: Name
+the {:adj} {:noun} of {{:who}+}
+the {:noun} of {{:who}+}
+{:adj} {:who}'s {:noun}
+{:adj} {:who}
+{:who}'s {:adj} {:noun}
+{:who}'s {:noun}
+
+: Adj
+{evocative:adj}
+{adjective}
+
+: noun
+beast
+brew
+dilemma
+effort
+end
+eye
+jinx
+joke
+judgement
+lament
+malady
+mark
+price
+promise
+sentence
+serum
+skull
+sorrow
+task
+test
+tool
+trial
+trouble
+weapon
+
+: Who
+{race}
+{class}
+{pseudo class}
+{profession}
+
+: Effect
+9x {:initial-effect}, and {:ongoing-effect}, this effect {:can} {:REMEDY}.
+12x {:initial-effect}, this effect {:can} {:REMEDY}.
+{:initial-effect}, and {:ongoing-effect}, and {:ongoing-effect}, this effect {:can} {:REMEDY}.
+{:initial-effect}, and {:ongoing-effect}, and {:positive-effect}, this effect {:can} {:REMEDY}.
+
+: initial-effect
+suffer {5,20} {:damage} and {:initial-effect-chaser}
+suffer {10,30} {:damage}{75% and {:initial-effect-chaser}}
+suffer {25,250} {:damage}{50% and {:initial-effect-chaser}}
+save or die{25% and {:initial-effect-chaser}}
+{:initial-effect-chaser}
+
+: initial-effect-chaser
+age {10,100} years
+alignment changes to {:alignment}
+become unable to cast any spells{80% {over|under} {2nd|3rd|4th} level}
+become {:status-effect}{50% for {duration}}
+lose {:a-level}
+take a -{6} penalty to all rolls {50% for {duration}}
+take a -{6} penalty to hit {50% for {duration}}
+your {attribute} is reduced to {5,8}{50% for {duration}}
+{:become-possessed-by} {:malevolent-spirit}
+{:insanity}
+
+: status-effect
+blinded
+paralyzed
+silenced
+slowed
+undead
+vulnerable {5,8} to {damage type}
+
+: become-possessed-by
+you are being pursued by
+become possessed by
+transform into
+you have to fight
+become an avatar for
+hallucinate
+
+: malevolent-spirit
+a malevolent spirit
+3x {:Quick Populations.anygroup}
+3x {:Quick Horrors.main}
+
+: ongoing-effect
+take {5,20} {:damage} every {:period}
+take {10,30} {:damage} every {:period}
+lose 1 point of {attribute} every {:period}
+take a penalty to all rolls (-{2}, cumulative every {:period})
+take a penalty to hit (-{2}, cumulative every {:period})
+lose {:a-level} every {:period}
+{:body horror}
+{:ongoing-age-effect}
+
+: body horror
+your {body part} turn to {made of}
+your {body part} becomes a {body part}
+
+: ongoing-age-effect
+age at an unnatural rate (one year every {:period})
+age at an unnatural rate ({number:twotofive} years every {:period})
+grow younger over time (lose one year every {:period})
+grow younger over time (lose {number:twotofive} years every {:period})
+
+: positive-effect
+gain 1 point of {attribute}
+gain {2,3} points of {attribute}
+gain resistance against {damage type}
+
+: a-level
+10x a level
+2x levels
+1d3 levels
+1d4 levels
+
+: insanity
+6x {:insanity-effect}
+{:insanity-effect}, and {:insanity-effect{!different}}
+{:insanity-effect}, {:insanity-effect{!different}}, and {:insanity-effect{!different}}
+
+: insanity-effect
+catatonia
+compulsion to wander
+compulsive vomiting
+drowsiness
+everything seems terrible
+highly suggestible
+inflated sense of own importance
+involuntary tics
+loss of appetite
+loss of memory
+nothing seems real
+nymphomania
+paranoia
+trance
+will pull out own hair
+withdrawal symptoms
+{P:=phobia} {P.phobia} ({P.description})
+
+: damage
+{33%{damage type} }damage
+
+: period
+{2d6} turns
+{2d6} minutes
+{6}0 minutes
+{2d6} hours
+5x 1 day
+{2-3} days
+
+: remedy
+2x {:REMEDY-ETC}, it {:can} {67%?be healed:get worse} {before|after} {:period}
+2x {:REMEDY-ETC}, if not healed within {5,8} days, die
+2x {:REMEDY-ETC}, if not healed within {:period}, {:initial-effect}
+5x {:REMEDY-ETC}
+{:REMEDY-ETC}, but when healed {:initial-effect}
+
+: remedy-etc
+4x be removed with a REMOVE CURSE spell
+4x be neutralized with a NEUTRALIZE POISON spell
+4x be cured with a CURE DISEASE spell
+be healed with a specific herb ({herb})
+be healed with a specific antidote ({antidote})
+be removed by the one who cast it
+be removed when the target learns an important lesson about TODO:Fantasy Pantheon.AbstractNegative
+be removed when the target learns an important lesson about TODO:Fantasy Pantheon.AbstractPositive
+
+: can
+can
+will
+can only
+has a {%}% chance to

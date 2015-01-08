@@ -2,10 +2,10 @@
 Wand of {:Power} ({#/{d6*10}} charges) - made of {:wood}, {:length} long
 
 : Material
-4 {metal}
-9 {wood}
-1 ivory
-1 bone
+4x {metal}
+9x {wood}
+1x ivory
+1x bone
 
 : Mix
 and

@@ -1,7 +1,7 @@
 / http://www.roleplayingtips.com/articles/150-benign-urban-encounters.html
 
 : City Encounter
-10 {:PASSERBY}
+10x {:PASSERBY}
 
 : Passerby
 A {NPC} {50%{dressed:wearing} }{:ACTIVITY}
@@ -15,7 +15,7 @@ A {:young} {:YOUNG ACTIVITY}
 {small |large |}group of {75%{appearance} }{children|kids|urchins|orphans}
 
 : Member
-5 people
+5x people
 {~{hireling type}}
 {humanoid}
 {profession}
@@ -135,6 +135,7 @@ are celebrating {FESTIVAL}
 are chasing a {NPC}
 are collecting {refuse|dead {pigeons|rats}|donations}
 are harassing a {NPC}
+are hunting for a criminal
 are marching in formation
 are recovering from a fight
 are sacrificing a {fauna}

@@ -22,6 +22,7 @@ puncture scar
 stitches
 
 : Where
+/ before referencing this, be sure to set G -- {G:=gender}
 on {G.pronoun} {body part}
 
 : Colors

@@ -1,199 +1,199 @@
 / http://random-generator.com/index.php?title=Castle_Inhabitants
 
-10 Small shell keep {:outbuildingcheck} {:inhabitants}
-15 Tower {:outbuildingcheck} {:inhabitants}
-10 Moathouse {:outbuildingcheck} {:inhabitants}
-10 Large shell keep {:outbuildingcheck} {:inhabitants}
-15 Small walled castle with keep {:inhabitants}
-8 Concentric castle {:inhabitants}
-7 Large walled castle with keep {:inhabitants}
-5 Enormous fortress complex {:inhabitants}
+10x Small shell keep {:outbuildingcheck} {:inhabitants}
+15x Tower {:outbuildingcheck} {:inhabitants}
+10x Moathouse {:outbuildingcheck} {:inhabitants}
+10x Large shell keep {:outbuildingcheck} {:inhabitants}
+15x Small walled castle with keep {:inhabitants}
+8x Concentric castle {:inhabitants}
+7x Large walled castle with keep {:inhabitants}
+5x Enormous fortress complex {:inhabitants}
 
 : outbuildingcheck
-3 with one large wooden outbuilding
-2 with a few wooden outbuildings
-1 with many wooden outbuildings
+3x with one large wooden outbuilding
+2x with a few wooden outbuildings
+1x with many wooden outbuildings
 
 : inhabitants
-2 {:ruincheck1} totally deserted {:dungeoncheck}
-1 {:ruincheck2} appears deserted but actually monster lair {:dungeoncheck}
-1 {:ruincheck3} inhabited by {:men}
-2 {:ruincheck4} inhabited by {:lord}
+2x {:ruincheck1} totally deserted {:dungeoncheck}
+1x {:ruincheck2} appears deserted but actually monster lair {:dungeoncheck}
+1x {:ruincheck3} inhabited by {:men}
+2x {:ruincheck4} inhabited by {:lord}
 
 : ruincheck1
-1 
-2 neglected but intact,
-4 slightly ruinous,
-8 ruined,
-4 totally ruined (a pile of rubble),
+1x 
+2x neglected but intact,
+4x slightly ruinous,
+8x ruined,
+4x totally ruined (a pile of rubble),
 
 : ruincheck2
-1 
-1 neglected but intact,
-1 slightly ruinous,
-1 ruined,
-1 totally ruined (a pile of rubble),
+1x 
+1x neglected but intact,
+1x slightly ruinous,
+1x ruined,
+1x totally ruined (a pile of rubble),
 
 : ruincheck3
-4 
-4 neglected but intact,
-2 slightly ruinous,
-1 ruined,
+4x 
+4x neglected but intact,
+2x slightly ruinous,
+1x ruined,
 
 : ruincheck4
-8 
-2 neglected but intact,
-1 slightly ruinous,
+8x 
+2x neglected but intact,
+1x slightly ruinous,
 
 : dungeoncheck
-4 
-2 with small dungeon below
-1 with extensive dungeon below
+4x 
+2x with small dungeon below
+1x with extensive dungeon below
 
 : men
-25 {50,150} bandits led by {:banditleader}
-60 {:brigands}
-10 {50,150} bandits led by berserk Fighter{:berserkerleader}
-3 {120,150} dervishes led by fanatical lawful Cleric10
+25x {50,150} bandits led by {:banditleader}
+60x {:brigands}
+10x {50,150} bandits led by berserk Fighter{:berserkerleader}
+3x {120,150} dervishes led by fanatical lawful Cleric10
 
 : banditleader
-4 Thief{:thieflevel}
-3 Fighter{3,8}
-2 Cleric{3,8}
-1 Magic-User{3,8}
+4x Thief{:thieflevel}
+3x Fighter{3,8}
+2x Cleric{3,8}
+1x Magic-User{3,8}
 
 : brigands
-32 50 brigands (25 l&sh,sbow,sw: 25 ch&sh,sw,horse) led by Fighter9, {:spellcasters} F5, F4, 2x F2
-32 60 brigands (30 l&sh,sbow,sw: 30 ch&sh,sw,horse) led by Fighter9, {:spellcasters} F5, F4, 3x F2
-16 70 brigands (35 l&sh,sbow,sw: 35 ch&sh,sw,horse) led by Fighter9, {:spellcasters} F5, F4, 3x F2
-16 80 brigands (40 l&sh,sbow,sw: 40 ch&sh,sw,horse) led by Fighter9, {:spellcasters} F5, 2x F4, 4x F2
-8 90 brigands (45 l&sh,sbow,sw: 45 ch&sh,sw,horse) led by Fighter9, {:spellcasters} F5, 2x F4, 4x F2
-8 100 brigands (50 l&sh,sbow,sw: 50 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 2x F5, 2x F4, 5x F2
-4 120 brigands (60 l&sh,sbow,sw: 60 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 2x F5, 3x F4, 6x F2
-4 150 brigands (75 l&sh,sbow,sw: 75 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 3x F5, 3x F4, 7x F2
-2 160 brigands (80 l&sh,sbow,sw: 80 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 3x F5, 4x F4, 8x F2
-2 200 brigands (100 l&sh,sbow,sw: 100 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 4x F5, 5x F4, 10x F2
-1 250 brigands (125 l&sh,sbow,sw: 125 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 5x F5, 6x F4, 12x F2
-1 300 brigands (150 l&sh,sbow,sw: 150 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 6x F5, 7x F4, 15x F2
+32x 50 brigands (25 l&sh,sbow,sw: 25 ch&sh,sw,horse) led by Fighter9, {:spellcasters} F5, F4, 2x F2
+32x 60 brigands (30 l&sh,sbow,sw: 30 ch&sh,sw,horse) led by Fighter9, {:spellcasters} F5, F4, 3x F2
+16x 70 brigands (35 l&sh,sbow,sw: 35 ch&sh,sw,horse) led by Fighter9, {:spellcasters} F5, F4, 3x F2
+16x 80 brigands (40 l&sh,sbow,sw: 40 ch&sh,sw,horse) led by Fighter9, {:spellcasters} F5, 2x F4, 4x F2
+8x 90 brigands (45 l&sh,sbow,sw: 45 ch&sh,sw,horse) led by Fighter9, {:spellcasters} F5, 2x F4, 4x F2
+8x 100 brigands (50 l&sh,sbow,sw: 50 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 2x F5, 2x F4, 5x F2
+4x 120 brigands (60 l&sh,sbow,sw: 60 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 2x F5, 3x F4, 6x F2
+4x 150 brigands (75 l&sh,sbow,sw: 75 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 3x F5, 3x F4, 7x F2
+2x 160 brigands (80 l&sh,sbow,sw: 80 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 3x F5, 4x F4, 8x F2
+2x 200 brigands (100 l&sh,sbow,sw: 100 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 4x F5, 5x F4, 10x F2
+1x 250 brigands (125 l&sh,sbow,sw: 125 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 5x F5, 6x F4, 12x F2
+1x 300 brigands (150 l&sh,sbow,sw: 150 ch&sh,sw,horse) led by Fighter9, {:spellcasters} 6x F5, 7x F4, 15x F2
 
 : spellcasters
-14 
-14 MU{:brigandMUlevel},
-6 C8,
-6 MU{:brigandMUlevel}, C8,
+14x 
+14x MU{:brigandMUlevel},
+6x C8,
+6x MU{:brigandMUlevel}, C8,
 
 : brigandMUlevel
-1 11
-2 10
-4 9
+1x 11
+2x 10
+4x 9
 
 : lord
-1 {:align} Lord (Fighter {:highlevelfighter}) {:fighterhenchmen} with {:Lordspecial}, {:meleetroops}, {:missiletroops}
-1 {:align} Superhero (Fighter 8) {:fighterhenchmen} with {:Superherospecial}, {:meleetroops}, {:missiletroops}
-1 {:align} Wizard (MU {:highlevelMU}) {:MUhenchmen} with {:Wizardspecial}, {:meleetroops}, {:missiletroops}
-1 {:align} Necromancer (MU 10) {:MUhenchmen} with {:Necromancerspecial}, {:meleetroops}, {:missiletroops}
-1 Patriarch (lawful Cleric {:highlevelcleric}) {:clerichenchmen} with {:Patriarchspecial}, {:meleetroops}, {:missiletroops}
-1 Evil High Priest  (chaotic Cleric {:highlevelcleric}) {:clerichenchmen} with {:EHPspecial}, {:meleetroops}, {:missiletroops}
+1x {:align} Lord (Fighter {:highlevelfighter}) {:fighterhenchmen} with {:Lordspecial}, {:meleetroops}, {:missiletroops}
+1x {:align} Superhero (Fighter 8) {:fighterhenchmen} with {:Superherospecial}, {:meleetroops}, {:missiletroops}
+1x {:align} Wizard (MU {:highlevelMU}) {:MUhenchmen} with {:Wizardspecial}, {:meleetroops}, {:missiletroops}
+1x {:align} Necromancer (MU 10) {:MUhenchmen} with {:Necromancerspecial}, {:meleetroops}, {:missiletroops}
+1x Patriarch (lawful Cleric {:highlevelcleric}) {:clerichenchmen} with {:Patriarchspecial}, {:meleetroops}, {:missiletroops}
+1x Evil High Priest  (chaotic Cleric {:highlevelcleric}) {:clerichenchmen} with {:EHPspecial}, {:meleetroops}, {:missiletroops}
 
 : align
-1 lawful
-2 chaotic
-3 neutral
+1x lawful
+2x chaotic
+3x neutral
 
 : EHPspecial
-1 {10} Trolls
-1 {6} Vampires
-1 {20} White Apes
-1 {10} Spectres
+1x {10} Trolls
+1x {6} Vampires
+1x {20} White Apes
+1x {10} Spectres
 
 : Patriarchspecial
-1 {20} Heroes (F4)
-1 {6} Superheroes (F8)
-1 {10} Treants
-1 {8} Heroes (F4) riding Hippogriffs
+1x {20} Heroes (F4)
+1x {6} Superheroes (F8)
+1x {10} Treants
+1x {8} Heroes (F4) riding Hippogriffs
 
 : Necromancerspecial
-1 {4} Chimeras
-1 {6} Manticores
-1 {12} Lycanthropes
-1 {12} Gargoyles
+1x {4} Chimeras
+1x {6} Manticores
+1x {12} Lycanthropes
+1x {12} Gargoyles
 
 : Lordspecial
-1 {8} Champions (F8)
-1 {6} Heroes (F4) on Griffons
-1 {10} Myrmidons (F6)
-1 {4} Giants
+1x {8} Champions (F8)
+1x {6} Heroes (F4) on Griffons
+1x {10} Myrmidons (F6)
+1x {4} Giants
 
 : Superherospecial
-1 {8} Myrmidons (F6) 
-1 {4} Heroes (F4) on Rocs
-1 {4} Ogres
-1 {10} Swashbucklers (F5)
+1x {8} Myrmidons (F6) 
+1x {4} Heroes (F4) on Rocs
+1x {4} Ogres
+1x {10} Swashbucklers (F5)
 
 : Wizardspecial
-1 {4} Dragons
-1 {4} Chimeras
-1 {4} Wyverns
-1 {4} Basilisks
+1x {4} Dragons
+1x {4} Chimeras
+1x {4} Wyverns
+1x {4} Basilisks
 
 : clerichenchmen
-6 
-1 with one assistant (C{5,7})
-1 with two assistants (C{5,7},{5,7})
-1 with three assistants (C{5,7},{5,7},{5,7})
-1 with four assistants (C{5,7},{5,7},{5,7},{5,7})
-1 with five assistants (C{5,7},{5,7},{5,7},{5,7},{5,7})
-1 with six assistants (C{5,7},{5,7},{5,7},{5,7},{5,7},{5,7})
+6x 
+1x with one assistant (C{5,7})
+1x with two assistants (C{5,7},{5,7})
+1x with three assistants (C{5,7},{5,7},{5,7})
+1x with four assistants (C{5,7},{5,7},{5,7},{5,7})
+1x with five assistants (C{5,7},{5,7},{5,7},{5,7},{5,7})
+1x with six assistants (C{5,7},{5,7},{5,7},{5,7},{5,7},{5,7})
 
 : fighterhenchmen
-6 
-6 with henchcleric (C{4,6})
-2 with henchmage (MU{6,8})
-2 with henchcleric (C{4,6}) and henchmage (MU{6,8})
+6x 
+6x with henchcleric (C{4,6})
+2x with henchmage (MU{6,8})
+2x with henchcleric (C{4,6}) and henchmage (MU{6,8})
 
 : MUhenchmen
-6 
-6 with apprentice (MU{5,7})
-2 with apprentice (MU{5,7}) and henchfighter (F{6,8}) 
-2 with henchfighter (F{6,8})
+6x 
+6x with apprentice (MU{5,7})
+2x with apprentice (MU{5,7}) and henchfighter (F{6,8}) 
+2x with henchfighter (F{6,8})
 
 : highlevelfighter
-1 14
-2 13
-4 12
-8 11
-16 10
-32 9
+1x 14
+2x 13
+4x 12
+8x 11
+16x 10
+32x 9
 
 : highlevelMU
-1 14
-2 13
-4 12
-8 11
+1x 14
+2x 13
+4x 12
+8x 11
 
 : highlevelcleric
-1 14
-2 13
-4 12
-8 11
-16 10
-32 9
-64 8
+1x 14
+2x 13
+4x 12
+8x 11
+16x 10
+32x 9
+64x 8
 
 : meleetroops
-1 {40,90} troops (chain, polearm)
-1 {40,90} troops (chain & shield, spear)
-1 {40,90} troops (chain & shield, sword)
-1 {40,90} cavalry (plate & shield, lance, sword, warhorse)
-4 {9-12} cavalry (splint & shield, lance, sword, mace, warhorse) led by {:officer}, {13-24} troops (scale & shield, spear, handaxe) led by {:officer}
+1x {40,90} troops (chain, polearm)
+1x {40,90} troops (chain & shield, spear)
+1x {40,90} troops (chain & shield, sword)
+1x {40,90} cavalry (plate & shield, lance, sword, warhorse)
+4x {9-12} cavalry (splint & shield, lance, sword, mace, warhorse) led by {:officer}, {13-24} troops (scale & shield, spear, handaxe) led by {:officer}
 
 : missiletroops
-1 {40,90} troops (leather, crossbow)
-1 {40,90} troops (leather, crossbow, shortsword)
-1 {40,90} troops (chain, crossbow, sword)
-1 {40,90} troops (chain, crossbow, handaxe)
-4 {9-16} mounted crossbowmen (studded leather, light crossbow, sword) led by {:officer}, {7-12} troops (scalemail, heavy crossbow, morningstar) led by {:officer}
+1x {40,90} troops (leather, crossbow)
+1x {40,90} troops (leather, crossbow, shortsword)
+1x {40,90} troops (chain, crossbow, sword)
+1x {40,90} troops (chain, crossbow, handaxe)
+4x {9-16} mounted crossbowmen (studded leather, light crossbow, sword) led by {:officer}, {7-12} troops (scalemail, heavy crossbow, morningstar) led by {:officer}
 
 : officer
-2 F3
-1 F4
+2x F3
+1x F4

@@ -1,0 +1,30 @@
+: Standard
+{two|three|four|five|six|seven|eight|nine|ten|jack|queen|king|ace} of {clubs|diamonds|hearts|spades}
+
+: Tarot
+56x {ace|two|three|four|five|six|seven|eight|nine|ten|page|knight|queen|king} of {swords|coins|wands|cups}
+22x {:major arcana}
+
+: Major Arcana
+the fool
+the magician
+the high priestess
+the empress
+the emperor
+the hierophant
+the lovers
+the chariot
+justice
+the hermit
+wheel of fortune
+strength
+the hanged man
+death
+temperance
+the devil
+the tower
+the star
+the moon
+the sun
+judgment
+the world

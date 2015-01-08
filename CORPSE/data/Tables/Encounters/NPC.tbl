@@ -5,11 +5,11 @@
 {15%{degree:adjective} }{appearance}{50%{, {15%{degree:adjective} }{feeling}| and {handicap}}}{20% {age}}
 
 : Who
-5 {man|woman|person}
-5 {profession}
-5 {race}
-5 {merchant|trader|vendor|peddler} of {{merchandise}+}
-3 {pseudo class}
+5x {man|woman|person}
+5x {profession}
+5x {race}
+5x {merchant|trader|vendor|peddler} of {{merchandise}+}
+3x {pseudo class}
 {boy|girl|child}
 {hireling type}
 {humanoid}

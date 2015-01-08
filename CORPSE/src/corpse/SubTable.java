@@ -50,7 +50,7 @@ public final class SubTable extends Table
 
    private void importTable(final String token, String xrefTbl, String xrefSub, String xrefCol, String xrefFil)
    {
-      System.out.println("SubTable [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
+      // System.out.println("SubTable [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
 
       unfiltered = Table.getTable(xrefTbl);
       tableName = token;

@@ -12,92 +12,92 @@
 {3d10} {:bolt type} with shafts of {wood} wood {:shaft color} and {:fletching}
 
 : start no description
-100 {:arrow type}
-90 {:bolt type}
-25 {:dart type}
-45 {:javelin type}
-2 boomerang
-5 {:bola type}
+100x {:arrow type}
+90x {:bolt type}
+25x {:dart type}
+45x {:javelin type}
+2x boomerang
+5x {:bola type}
 
 : thrown
-25 {:dart}
-45 {:javelin}
-2 boomerang made of {wood} wood
-2 {:bola}
-1 {:boomerang}
+25x {:dart}
+45x {:javelin}
+2x boomerang made of {wood} wood
+2x {:bola}
+1x {:boomerang}
 
 : arrow type
-20 arrows
-10 blunt arrows
-8 flight arrows
-6 signal arrows
-5 alchemist’s arrows (fire)
-5 alchemist’s arrows (holy water)
-5 alchemist’s arrows (thunderstone)
-1 angling arrows
-5 barbed arrows
-5 dragonsbreath arrows
-6 piercing arrows
-5 razor arrows
-5 shaef arrows
-5 seeker arrows
-5 serpentstongue arrows
-5 swiftwing arrows
+20x arrows
+10x blunt arrows
+8x flight arrows
+6x signal arrows
+5x alchemist’s arrows (fire)
+5x alchemist’s arrows (holy water)
+5x alchemist’s arrows (thunderstone)
+1x angling arrows
+5x barbed arrows
+5x dragonsbreath arrows
+6x piercing arrows
+5x razor arrows
+5x shaef arrows
+5x seeker arrows
+5x serpentstongue arrows
+5x swiftwing arrows
 
 : shaft color
-10 in its natural color
-12 painted {color:dark}
-4 painted {color:dull}
-4 painted {color:light}
-1 engraved with runes in {rune language}
-1 engraved with knotwork
+10x in its natural color
+12x painted {color:dark}
+4x painted {color:dull}
+4x painted {color:light}
+1x engraved with runes in {rune language}
+1x engraved with knotwork
 
 : fletching
-1 fletching of {:fletching color} feathers
-2 fletching of two {:fletching color} feathers and one {:fletching color{!different}} feather
+1x fletching of {:fletching color} feathers
+2x fletching of two {:fletching color} feathers and one {:fletching color{!different}} feather
 
 : fletching color
-2 {:color.dark}
-1 {:color.dull}
-1 {:color.light}
+2x {:color.dark}
+1x {:color.dull}
+1x {:color.light}
 
 : bolt type
-100 crossbow bolts
-10 hand crossbow bolts
-5 tumbling bolts
-5 great crossbow bolts
-3 ballista bolts
+100x crossbow bolts
+10x hand crossbow bolts
+5x tumbling bolts
+5x great crossbow bolts
+3x ballista bolts
 
 : dart
-1 {3d6} {:dart type} with {:fletching}
+1x {3d6} {:dart type} with {:fletching}
 
 : dart type
-20 thrown darts
-4 blowgun darts
-1 great blowgun darts
+20x thrown darts
+4x blowgun darts
+1x great blowgun darts
 
 : javelin
-3 {2d6} {:javelin type} made of {wood} wood with {:fletching}
-6 {2d6} {:javelin type} made of {wood} wood tipped with {metal:weapon}
-2 {2d6} {:javelin type} made of {wood} wood tipped with {metal:weapon} with {:fletching}
+3x {2d6} {:javelin type} made of {wood} wood with {:fletching}
+6x {2d6} {:javelin type} made of {wood} wood tipped with {metal:weapon}
+2x {2d6} {:javelin type} made of {wood} wood tipped with {metal:weapon} with {:fletching}
 
 : javelin type
-10 javelins
-2 harpoons
-1 spinning javelins
+10x javelins
+2x harpoons
+1x spinning javelins
 
 : bola
-4 three-ball bola
-2 two-ball bola
-1 barbed bola
+4x three-ball bola
+2x two-ball bola
+1x barbed bola
 
 : boomerang
 {hunting|war|ceremonial} boomerang made of {wood} with a {:boomerang edge} edge
 
 : boomerang edge
-5 blunt
-15 sharpened
-1 razor
-1 {metal:weapon}
-1 battered
-1 bloody
+5x blunt
+15x sharpened
+1x razor
+1x {metal:weapon}
+1x battered
+1x bloody
