@@ -1,0 +1,728 @@
+/ http://random-generator.com/index.php?title=DD_and_D
+
+;Style
+10,[StyleAdj] [StyleType]
+3,[StyleType] of the [StyleAdj]
+
+;StyleAdj
+1,Asp
+1,Bear
+1,Black Mamba
+1,Blind Monk
+1,Blind Bear
+1,Bulletproof Monk
+1,Celestial Dragon
+1,Celestial Monkey
+1,Celestial Ox
+1,Celestial Rabbit
+1,Celestial Tiger
+1,Celestial Turtle
+1,Cobra
+1,Crane
+1,Cunning Rat
+1,Dragon
+1,Drunken Monk
+1,Earth
+1,East Wind
+1,Fighting Rooster
+1,Flowing Water
+1,Fluid
+1,Golden
+1,Golden Dragon
+1,Golden Horse
+1,Golden Monk
+1,Golden Monkey
+1,Golden [Temple]
+1,Golden Tiger
+1,Green Dragon
+1,Green Frog
+1,Hard-Soft
+1,Heavy-Light
+1,Immortal Monk
+1,Immortal Secret
+1,Light-Heavy
+1,Liquid
+1,[Lost] Monk
+1,[Lost] [Scroll]
+1,[Lost] [Temple]
+1,Monkey
+1,North Wind
+1,Open
+1,Open Hand
+1,Open Palm
+1,Praying Mantis
+1,Quiet Rain
+1,Raging Bear
+1,Raging Bull
+1,Ramming Goat
+1,Ramming Ox
+1,Red Dragon
+1,Serpent
+1,Shadow
+1,Shaolin
+1,Shrouded
+1,Silent
+1,Silent Stone
+1,Silent Water
+1,Silent Wind
+1,Sleeping Dragon
+1,Sleeping Monk
+1,Soft-Hard
+1,South Wind
+1,Stone
+1,Storm
+1,Striking Asp
+1,Tiger
+1,Toad
+1,Tortoise
+1,Tranquil Stone
+1,Tranquil Water
+1,Turtle
+1,Typhoon
+1,Unseen
+1,Veiled
+1,Wandering Monk
+1,Water
+1,West Wind
+1,Whirlwind
+1,White Ape
+1,White Crane
+1,White Duck
+1,White Horse
+1,Wu Tang
+
+;Lost
+1,Forgotten
+1,Hidden
+1,Holy
+1,Lost
+1,Sealed
+
+;Scroll
+1,Book
+1,Scroll
+1,Tapestry
+1,Writings
+
+;StyleType
+8,Style
+7,Form
+6,Technique
+6,Way
+5,Mastery
+4,Kata
+3,Method
+2,Manner
+2,Pattern
+
+;Move
+10,[AttackAdjective] [Attack] (a strike)
+7,[DefenseAdjective] [Defense] (a defense)
+3,[KickAdjective] [Kick] (a kick)
+3,[FinishAdjective] [Finish] (a finish)
+1,[AttackAdjective] [MartialWeapon] [Attack] (a strike)
+1,[KickAdjective] [MartialWeapon] [Kick] (a kick)
+
+;FinishAdjective
+1,[Unstoppable] Bone-Breaking [Point]
+1,[Unstoppable] Bone-Crushing [Point]
+1,[Unstoppable] Bone-Shattering [Point]
+1,[Unstoppable] Heart-Stopping [Point]
+1,Bone-Breaking [Point]
+1,Bone-Crushing [Point]
+1,Heart-Stopping [Point]
+1,Deadly [Point]
+1,Explosive [Point]
+1,Lightning-Fast [Point]
+1,[Unstoppable] Blazing Fire
+1,[Unstoppable] Burning Fire
+1,[Unstoppable] Choking Death
+1,[Unstoppable] Crippling Death
+1,[Unstoppable] Crushing Death
+1,[Unstoppable] Crushing Spine
+1,[Unstoppable] Instant Death
+1,[Unstoppable] Instant Paralysis
+1,[Unstoppable] Paralyzing Death
+1,[Unstoppable] Spouting Blood
+1,[Unstoppable] Spraying Blood
+1,[Point] Bone-Breaking
+1,[Point] Bone-Crushing
+1,[Point] Bone-Ripping
+1,[Point] Bone-Shattering
+1,[Point] Breaking Spine
+1,[Point] Cracking Spine
+1,[Point] Crushing Spine
+1,[Point] Crippling Crush
+1,[Point] Exploding
+1,[Point] Exploding Heart
+1,[Point] Frozen Ice
+1,[Point] Instant Death
+1,[Point] Paralyzing Spine
+1,[Point] Spine-Breaking
+1,[Point] Spine-Crushing
+1,[Point] Spine-Ripping
+1,[Point] Spine-Shattering
+1,[Point] Spouting Blood
+1,[Point] Spraying Blood
+
+;Unstoppable
+1,Bare
+1,Defenseless
+1,Ferocious
+1,Furious
+1,Indefensible
+1,Invincible
+1,Lightning-Fast
+1,Merciless
+1,Naked
+1,Perfect
+1,Unblockable
+1,Unbreakable
+1,Uncontainable
+1,Unguarded
+1,Unobstructed
+1,Unpreventable
+1,Unquenchable
+1,Unrelenting
+1,Unstoppable
+
+;Point
+1,Double
+1,Triple
+1,One-Touch
+1,One-Hand
+1,Two-Hand
+1,Three-Hand
+1,Four-Hand
+1,Five-Hand
+1,Six-Hand
+1,Seven-Hand
+1,Eight-Hand
+1,Nine-Hand
+1,Ten-Hand
+1,Twelve-Hand
+1,Hundred-Hand
+1,Thousand-Hand
+1,One-Point
+1,Two-Point
+1,Three-Point
+1,Four-Point
+1,Five-Point
+1,Hundred-Point
+1,Thousand-Point
+
+;Finish
+1,Blow
+1,Butt
+1,Choke
+1,Fist
+1,Grip
+1,Hand
+1,High Kick
+1,Palm
+1,Punch
+1,Ram
+1,Roundhouse Kick
+1,Stomp
+1,Strike
+1,Throw
+
+;KickAdjective
+1,Climbing
+1,Crane
+1,Crippling
+1,Dagger
+1,Donkey
+1,Double
+1,Double Dragon
+1,Dragon
+1,Drunken Monkey
+1,Exploding
+1,Feather
+1,Fighting Rooster
+1,Fire
+1,Five-Tailed
+1,Flying
+1,Four-Tailed
+1,Frenzied
+1,Furious
+1,Ghost
+1,Golden Crane
+1,Golden Rooster
+1,Great Rooster
+1,Invisible
+1,Iron
+1,Kamikaze
+1,Knife-Edge
+1,Lightning
+1,Liquid
+1,Mirror
+1,Nine-Tailed
+1,Paralyzing
+1,Praying Mantis
+1,Raining
+1,Rooster
+1,Scorpion
+1,Seven-Tailed
+1,Shadow
+1,Shocking
+1,Silent
+1,Six-Tailed
+1,Spinning
+1,Steel
+1,Stunning
+1,Three-Tailed
+1,Thunder
+1,Thundering
+1,Typhoon
+1,Unseen
+1,Wandering
+1,Whirling
+1,Whirlwind
+1,White Crane
+1,Wild
+1,Wind
+1,Wing
+1,Wise Crane
+1,Wise Rooster
+
+;Kick
+10,Heel
+10,Kick
+7,High Kick
+7,Roundhouse Kick
+6,Headsmash
+5,High Knee
+5,Knee
+4,Talon
+3,Foot
+3,Feet
+3,Stomp
+
+;Master
+7,[Japanese names.Male] [SGNP japanese.SURNAMES] of the [DojoPlace]
+7,[SGNP japanese.MALE NAMES] [SGNP japanese.SURNAMES] of the [DojoPlace]
+7,[SGNP japanese.MALE NAMES] [SGNP japanese.SAMURAI-ERA NOBLE SURNAMES] of the [DojoPlace]
+7,[SGNP japanese.MALE NAMES] [SGNP japanese.SAMURAI-ERA BUSHI SURNAMES] of the [DojoPlace]
+7,[Japanese names.Male] [SGNP japanese.SURNAMES], [MartialHonorific]
+7,[SGNP japanese.MALE NAMES] [SGNP japanese.SURNAMES], [MartialHonorific]
+7,[SGNP japanese.MALE NAMES] [SGNP japanese.SAMURAI-ERA NOBLE SURNAMES], [MartialHonorific]
+7,[SGNP japanese.MALE NAMES] [SGNP japanese.SAMURAI-ERA BUSHI SURNAMES], [MartialHonorific]
+1,The Nameless Wanderer, [MartialHonorific]
+1,The Nameless Master, [MartialHonorific]
+1,Bruce Leroy, [MartialHonorific]
+
+;MasterAct
+1,His [Skill] with the [MartialWeapon] is known throughout the seven provinces.
+1,His [MartialWeapon] brought the entire [PlaceAdjective] guard to their end.
+1,His [MartialWeapon] brought the [ClanAdjective] Monks to their end.
+1,He single-handedly defeated the royal guard of the [PlaceAdjective] Palace.
+1,It was he who single-handedly defeated the monks of the [ClanAdjective].
+1,It was he who ordered the Massacre of the [ClanAdjective] Clan.
+1,He alone survived the [ClanAdjective] Temple Massacre.
+1,He is [Venerated] for his unspoken volumes of wisdom.
+1,He is [Venerated] for his unparalleled military strategy.
+1,He can be found at the nearby [PeacefulLocation], contemplating whatever it is that someone of his infinite powers would contemplate.
+1,He can be found at the nearby [PeacefulLocation], cultivating his chi from dawn until sunset.
+
+;Venerated
+1,renowned
+1,respected
+1,venerated
+
+;PeacefulLocation
+1,babbling brook
+1,grassy overlook
+1,mountain canyon
+1,mountain peak
+1,quiet caverns
+1,river valley
+1,shaded grove
+1,water falls
+
+;Skill
+1,expertise
+1,mastery
+1,might
+1,skill
+
+;MartialWeapon
+10,blade
+10,sword
+5,bo staff
+5,staff
+3,axe
+3,bare fist
+3,naginata
+3,spear
+2,bow
+2,samurai sword
+1,guan
+1,kama
+1,katana
+1,nunchuku
+1,sai
+
+;DojoPlace
+3,[PlaceAdjective] [Temple]
+3,[Temple] of the [PlaceAdjective]
+1,[ClanAdjective] Clan
+1,Clan of the [ClanAdjective]
+
+;Temple
+10,Monastary
+10,Pagoda
+10,Temple
+7,Palace
+5,Dojo
+5,Fortress
+
+;ClanAdjective
+1,Asp
+1,Black Lotus
+1,Black Palm
+1,Dragon
+1,East Wind
+1,Empty Fist
+1,Empty Palm
+1,Green Frog
+1,Kirin
+1,Monkey
+1,Naga
+1,North Wind
+1,Open Fist
+1,Open Palm
+1,Serpent
+1,Shaolin
+1,Snake
+1,South Wind
+1,Tiger
+1,Toad
+1,Turtle
+1,Wasp
+1,West Wind
+1,White Lotus
+1,White Palm
+1,Wind
+1,Wu Tang
+
+;PlaceAdjective
+10,[MonkType]
+1,Amber
+1,Bear
+1,Black Lotus
+1,Black Palm
+1,Black Serpent
+1,Brass Monkey
+1,Celestial
+1,Celestial Dragon
+1,Celestial Monkey
+1,Celestial Ox
+1,Celestial Rabbit
+1,Celestial Tiger
+1,Cherry Blossom
+1,Cloud
+1,Crescent Moon
+1,Cunning Rat
+1,Dancing Monkey
+1,Deadly Spider
+1,Eagle
+1,Eagle Nest
+1,Eternal
+1,Eternal Autumn
+1,Eternal Spring
+1,Eternal Summer
+1,Eternal Winter
+1,Full Moon
+1,Ghost
+1,Golden
+1,Golden Horse
+1,Golden Monkey
+1,Golden Rabbit
+1,Golden Rooster
+1,Great Dog
+1,Green
+1,Han
+1,Holy Pig
+1,Impenetrable
+1,Invincible
+1,Iron Leaf
+1,Iron Monkey
+1,Iron Rooster
+1,Ivory
+1,Jade
+1,Jasmine
+1,Jasmine Petal
+1,Juniper
+1,Kirin
+1,Lotus
+1,Lotus Blossom
+1,Lotus Petal
+1,Manchu
+1,Ming
+1,Moon
+1,Mountain
+1,Mountain Goat
+1,Obsidian
+1,Onyx
+1,Rain
+1,Rising Sun
+1,Rooster
+1,Rose
+1,Rose Petal
+1,Serpent
+1,Setting Sun
+1,Shaded Tree
+1,Shaolin
+1,Shining
+1,Silent Stone
+1,Silent Water
+1,Song
+1,Spider Silk
+1,Standing Stone
+1,Star
+1,Stone
+1,Sun
+1,Tortoise
+1,Tranquil
+1,Tranquil Water
+1,Turtle
+1,Stinging Wasp
+1,Water
+1,White Ghost
+1,White Horse
+1,White Palm
+1,White Lotus
+1,White Serpent
+1,White Tiger
+1,Wu Tang
+
+;MonkType
+1,[MonkAdj] Monk
+1,[ClanAdjective] Clan
+
+;MonkAdj
+1,Black
+1,Drunken
+1,Eternal
+1,Green
+1,Hidden
+1,Iron
+1,Ivory
+1,Red
+1,Secret
+1,Steel
+1,Stone
+1,Veiled
+1,Wandering
+1,White
+
+;MartialHonorific
+3,[MasterType] of the [AttackAdjective] [Attack]
+1,[MasterType] of the [DefenseAdjective] [Defense]
+1,[MasterType] of the [DojoPlace]
+
+;MasterType
+7,Head Monk
+7,Master
+5,High Priest
+4,Keeper
+3,Guardian
+1,Drunken Master
+1,Lama
+
+;AttackAdjective
+1,Axe
+1,Azure
+1,Bitter
+1,Black Mamba
+1,Blind
+1,Bull
+1,Demon
+1,Celestial
+1,Choking
+1,Climbing
+1,Cobra
+1,Crescent Moon
+1,Crippling
+1,Cunning
+1,Death
+1,Dragon
+1,Drunken
+1,Eagle
+1,Elephant
+1,Empty
+1,Exploding
+1,Exploding Heart
+1,Falling
+1,Feather
+1,Fire
+1,Five-Point
+1,Five-Point Palm Exploding Heart
+1,Floating
+1,Flying
+1,Four-Finger
+1,Four-Point
+1,Fox
+1,Furious Bear
+1,Furious Bull
+1,Furious Ox
+1,Fury
+1,Gliding
+1,Grasping
+1,Grinding
+1,Gripping
+1,Hidden
+1,Holy Tiger
+1,Hundred-Hand
+1,Immobilizing
+1,Invisible
+1,Iron
+1,Jade
+1,Kamikaze
+1,Kirin
+1,Lightning
+1,Masked
+1,Mirror
+1,Monkey
+1,Naga
+1,Needle
+1,Nine-Handed
+1,Nine-Point
+1,Obsidian
+1,Open
+1,One-Inch
+1,Onyx
+1,Ox
+1,Paralyzing
+1,Perfect
+1,Praying Mantis
+1,Raging
+1,Raging Bear
+1,Raging Bull
+1,Raging Ox
+1,Raining
+1,Scorpion
+1,Secret
+1,Serpent
+1,Shadow
+1,Shrouded
+1,Singing
+1,Six-Point
+1,Smoke
+1,Spider
+1,Spirit
+1,Steel
+1,Stinging
+1,Stone
+1,Strangling
+1,Striking
+1,Swift
+1,Ten-Hand
+1,Ten-Point
+1,Thousand-Hand
+1,Three Finger
+1,Thrusting
+1,Tiger
+1,Two-Palm
+1,Typhoon
+1,Unseen
+1,Veiled
+1,Wandering
+1,Whirling
+1,Whirlwind
+1,White
+1,Wild
+
+;Attack
+1,Assault
+1,Antlers
+1,Attack
+1,Beak
+1,Blade
+1,Blow
+1,Claw
+1,Charge
+1,Dagger
+1,Elbow
+1,Fang
+1,Fist
+1,Gouge
+1,Gore
+1,Grip
+1,Hand
+1,Horns
+1,Knife
+1,Palm
+1,Punch
+1,Rake
+1,Ram
+1,Shoulder
+1,Strike
+1,Sword
+1,Talon
+1,Throw
+1,Thrust
+1,Tooth
+1,Tusk
+
+;DefenseAdjective
+8,Invincible
+8,Iron
+7,Immobile
+7,Steel
+7,Stone
+6,Blind
+6,Hidden
+6,Impenetrable
+6,Shadow
+5,Ghost
+5,Granite
+5,Impervious
+5,Mountain
+5,Water
+4,Fluid
+4,Liquid
+4,Perfect
+4,Shrouded
+4,Spirit
+4,Standing
+4,Tortoise
+4,Turtle
+3,Empty
+3,Impassible
+3,Satin
+3,Secret
+3,Silk
+3,Veiled
+3,Celestial
+3,Masked
+3,Spinning
+3,Whirling
+2,Scarab
+2,Smoke
+2,Bulletproof
+2,Defiant
+2,Iron Fan
+2,Open
+
+;Defense
+10,Defense
+10,Fortress
+10,Guard
+10,Wall
+7,Block
+7,Skin
+5,Form
+5,Parry
+5,Walk
+4,Cloth
+4,Robe
+4,Tree
+3,Mask
+3,Scales
+3,Shield
+3,Style
+1,Chasm
+1,Cliff
+1,Valley

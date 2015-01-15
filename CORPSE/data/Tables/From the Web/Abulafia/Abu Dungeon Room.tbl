@@ -1,0 +1,2176 @@
+/ http://random-generator.com/index.php?title=Dungeon_Room
+
+1,'''[Type]'''<br/>[Dungeon Dressing.main]<br/>Exits (clockwise from [Compass direction.4]) '''First exit''': [Doors] '''Second exit''':[Doors] [Doorsmaybe] [Doorsmaybe] [Doorsmaybe]<br/><br/>'''Inside:'''  [Inside]  [Andobjectmaybe]<br/>----------------------------------------
+
+;Type
+1,Antechamber
+1,Amphitheater
+1,Audience Hall 
+1,Courtroom Great Hall Throne Room
+1,Aviary
+1,Bestiary
+1,Cage or Cell
+1,Kennel
+1,Oubliette
+1,Padded Room 
+1,Banquet hall
+1,Den
+1,Game Room
+1,Gallery
+1,Harem
+1,Maze
+1,Museum
+1,Music Room
+1,Pool
+1,Sauna
+1,Bathroom
+1,Bedroom
+1.Cistern Room
+1,Closet
+1,Dining Room
+1,Dressing Room
+1,Hall 
+1,Lair 
+1,Larder / Pantry 
+1,Lounge 
+1,Map Room
+1,Planning Room
+1,Reception Chamber
+1,Salon
+1,Servants Dorm
+1,Storage 
+1,Waiting Room
+1,Wardrobe
+1,Well Room
+1,Vault  
+1,Armory
+1,Barracks
+1,Guardroom
+1,Gymnasium
+1,Interrogation Room
+1,Mess Hall
+1,Training Room
+1,Crypt
+1,Animal Crypt
+1,Confessional
+1,Crematorium
+1,Embalming Chamber
+1,Meditation Chamber
+1,Monk Cell
+1,Mass Grave
+1,Robing Room
+1,Shrine
+1,Scriptorium
+1,Temple
+1,Tomb
+1,Vestiary
+1,Classroom
+1,Conjuring Room
+1,Divination Chamber
+1,Inscription Chamber
+1,Laboratory
+1,Library
+1,Morgue
+1,Observatory
+1,Study
+1,Solar
+1,Summoning Room
+1,Barn
+1,Kitchen
+1,Forge
+1,Meeting Chamber
+1,Mine
+1,Office
+1,Pool
+1,Stable
+1,Treasury
+1,Smokehouse
+1,Tannery
+1,Workshop
+1,Statue hall
+1,Torture Chamber
+1,Trophy Room
+1,Weird Alien Birthing Chamber
+1,Testing Room
+1,Granary
+
+;Andobjectmaybe
+10,
+5,'''and also: ''' [Fantasy Assignment.Object]
+
+;Complex
+1,eating
+1,killing
+1,negotiating with
+1,selling something to
+1,aiding
+1,chasing
+1,that is apparently terribly worried about
+1,hunting with the aid of
+1,travelling with
+1,that serves
+1,fighting
+
+;Inside
+20,'''A trap: ''' [Traps.main]
+5,'''A trap: '''[Traps.main] '''And: ''' [Weird Fantasy Monster.Main]
+5,'''A trap: '''[Traps.main] '''And: ''' [Weird Fantasy Monster.Main] (actually several)
+50,[Weird Fantasy Monster.Main]
+5,[Weird Fantasy Monster.Main] (actually several)
+5,[Weird Fantasy Monster.Main] [Complex] [Weird Fantasy Monster.Main]
+5,[Weird Fantasy Monster.Main] (actually several) [Complex] [Weird Fantasy Monster.Main]
+5,[Weird Fantasy Monster.Main] [Complex] [Weird Fantasy Monster.Main] (actually, several)
+5,[Weird Fantasy Monster.Main] (actually several) [Complex] [Weird Fantasy Monster.Main] (actually, several)
+
+;Doorsmaybe
+4,
+1,'''Next exit''': [Doors]
+
+;Doors
+1,Trapped, primitive/simple. Because intruders are looking for something in here and rigged it up because they don't want to be disturbed.
+1,Trapped, primitive/simple. Because the inhabitant culture is primitive/simple.
+1,Trapped, primitive/simple. Because the mechanism is old and no longer works as well as it used to.
+1,Trapped, primitive but magical. Because intruders who have a magic-user with them are in here and don't want to be disturbed.
+1,Trapped, primitive but magical. Because the inhabitant culture is primitive but has shamen/priests.
+1,Trapped, primitive but magical. Because it was designed to keep out vermin or children, not tough guys like the PCs.
+1,Trapped, sophisticated (mechanical). Because the architect culture was sophisticated and was protecting something of value.
+1,Trapped, sophisticated (mechanical). Because the architect culture was of a species that would not need to use the door the way a human would.
+1,Trapped, sophisticated (mechanical). Because the inhabitants hide something of value behind the door.
+1,Trapped, sophisticated and magical. Because the architect culture was protecting something of value.
+1,Trapped, sophisticated and magical. Because an inhabitant is a crazy wizard.
+1,Trapped, sophisticated and magical. Because the architecture is alive.
+1,Ordinary lock. Because the inhabitants didn't think anyone would ever come down here.
+1,Ordinary lock. Because the inhabitants are too primitive to do any better.
+1,Ordinary lock. Because, to the inhabitants, this is an ordinary place with nothing terribly valuable in it.
+1,Ordinary lock. Because the real heavy locks are later down the line.
+1,Locked, serious lock. Because the inhabitants are protecting something of value.
+1,Locked, serious lock. Because the inhabitants are xenophobes and this place is forbidden to outsiders
+1,Locked, serious lock. Because the inhabitants are sophisticated and this is just normal for them.
+1,Locked, serious lock. Because the inhabitant includes a wizard.
+1,Locked, serious lock. Because this room contains something of special value.
+1,Locked, magically. Because a recent emergency int he dungeon has caused an inhabitant to go around and magically lock as many doors as possible.
+1,Locked, puzzle lock. Because the architects designed this place only to admit certain types of individuals.
+1,Locked, puzzle lock. Because one inhabitant is crazy.
+1,Locked, puzzle lock. Because it wasn't designed as a puzzle lock but the original mechanism
+has sort of fallen apart over the years and now is tricky to deal with.
+1,False door. Because the architect(s) was(were) eccentric.
+1,False door. Because the inhabitants have some ritual reason for needing them
+1,False door. Because a spell was recently unleashed in the dungeon that multiplies the facades of things.
+1,Doorless archway. Because there used to be a door here but it rotted away.
+1,Doorless archway. Because this was a residence.
+1,Doorless archway. Because the inhabitants removed the door in order to make it into a residence.
+1,Doorless archway. Because this was designed as a temple.
+50,Doorless archway.
+1,Ornate but unprotected. Because this used to be a temple.
+1,Ornate but unprotected. Because this area is dangerous and has been abandoned by most of the inhabitants.
+1,Ordinary unlocked door. Because to the inhabitants, this is an ordinary place.
+1,Ordinary unlocked door. Because the lock has been broken by recent intruders.
+50,Ordinary unlocked door. Because inhabitants have abandoned this place.
+1,Ordinary unlocked door. Because the front entrance was someplace the PCs already somehow passed and nobody expected intruders to get this far.
+1,Secret door, mechanically hidden. Because the architects hid something of value here.
+1,Secret door, mechanically hidden. Because the inhabitants hid something of value here.
+1,Secret door, mechanically hidden. Because this room was a prison.
+1,Secret door, magically hidden. Because the architects were magical and hid something behind it.
+1,Secret door, magically hidden. Because the inhabitants hid something behind it.
+1,Secret door, magically hidden. Because an intruder has magical abilities and is behind it somewhere and does not want to be disturbed.
+1,Door concealed behind stuff. Because intruders are behind it and don't want to be disturbed/discovered.
+1,Door concealed behind stuff. Because inhabitants forgot about the room and have piled stuff up in this room in front of the door.
+1,Door concealed behind stuff. Because this room is semi-abandoned and full of crap.
+1,Accidentally/organically "trapped"--the architecture falls apart in a dangerous way when you attempt to open this door. Because it's old.
+1,Accidentally/organically "trapped"--the architecture falls apart in a dangerous way when you attempt to open this door. Because the inhabitants know never to use this door and so use it as a sort of intruder alarm.
+1,Accidentally/organically "trapped"--the architecture falls apart in a dangerous way when you attempt to open this door. Because recent fighting int he complex has fucked it up.
+1,Locked but key is in this room. Because the next room is a prison cell.
+1,Locked but key is in this room. Because an inhabitant dropped it.
+1,Locked but key is in this room. Because only an intruder would be dumb enough to enter the next room and it's a sort of trap.
+1,Door is alarmed or alerts nearby inhabitants/intruders. Because they are tough but not great at making locks and traps.
+1,Door is alarmed or alerts nearby inhabitants/intruders. Because it was hastily thrown together by intruders.
+1,Door is alarmed or alerts nearby inhabitants/intruders. Because intruders want to shadow the PCs and take their stuff.
+1,Door is alarmed or alerts nearby inhabitants/intruders. Because the inhabitants want intruder to come in for some reason,but also want to know when they're in here.
+1,Door has a broken trap. Because it's old.
+1,Door has a broken trap. Because it was poorly made by primitive inhabitants.
+1,Door has a broken trap. Because it was recently sprung by intruders.
+1,Door has a broken lock. Because the architects once kept something of value here but the inhabitants took it long ago.
+1,Door has a broken lock. Because intruders just picked it.
+1,Door has a broken lock. Because a beast just destroyed it.
+1,Door has a broken lock. Because the inhabitants are primitive and suck at making locks.
+
+---
+
+;main
+1,[PublicAssembly]
+1,[ContainmentAndImprisonment]
+1,[PleasureAndRelaxation]
+1,[GeneralFunction]
+1,[WarAndConflict]
+1,[DeitiesAndWorship]
+1,[LearningAndKnowledge]
+1,[SpecificUtility]
+
+;ContainmentAndImprisonment
+1,Aviary
+1,Bestiary
+4,Cage
+8,Cell
+1,Kennel
+4,Oubliette 
+1,Padded Room
+1,Pen
+4,Prison
+4,Stockade
+1,Zoo
+
+;PleasureAndRelaxation
+1,Arena
+2,Banquet
+1,Combat pit
+2,Den
+1,Game Room
+2,Gallery
+1,Harem
+1,Maze
+2,Museum
+1,Music Room
+1,Pool
+1,Sauna
+1,Seraglio
+1,Statuary
+1,Torture Chamber
+1,Trophy Room
+
+;GeneralFunction
+1,Bathroom
+1,Bedroom
+1,Cistern Room
+2,Closet
+1,Dining Room
+1,Dressing Room
+1,Foyer (Entry Room)
+4,Hall
+1,Lair
+1,Larder / Pantry
+1,Lounge
+1,Map Room
+1,Privy
+1,Planning Room
+1,Reception Chamber
+1,Salon
+1,Servants Dorm
+4,Storage
+1,Waiting Room
+1,Wardrobe
+1,Well Room
+4,Vault
+4,Vestibule
+
+;WarAndConflict
+1,Armory
+1,Arsenal
+1,Barracks
+1,Guardroom
+1,Gymnasium
+1,Interrogation Room
+1,Mess Hall
+1,Training Room
+
+
+
+;DeitiesAndWorship
+1,Chantry
+2,Chapel
+1,Crypt, Human
+1,Crypt, Animal
+1,Confessional
+1,Crematorium
+1,Embalming Chamber
+1,Meditation Chamber
+1,Monk Cell
+1,Mass Grave
+2,Robing Room
+2,Shrine
+1,Scriptorium
+2,Temple
+1,Tomb
+1,Vestiary
+
+;LearningAndKnowledge
+1,Classroom
+1,Conjuring Room
+1,Divination Chamber
+2,Inscription Chamber
+2,Laboratory
+8,Library
+2,Morgue 
+1,Observatory
+4,Study
+1,Solar
+1,Summoning Room
+
+
+;SpecificUtility
+1,Barn
+1,Kitchen
+8,Forge
+4,Meeting Chamber
+8,Mine
+8,Office
+1,Pool / Water Room
+1,Stable
+2,Treasury
+1,Garage
+1,Smokehouse
+1,Tannery
+4,Work Pit / Workshop
+
+;PublicAssembly
+1,Assemblage
+2,Antechamber
+1,Amphitheater
+1,Audience Hall
+1,Courtroom
+1,Great Hall
+1,Throne Room
+
+---
+
+;main
+10.8, <br><br> [Empty] 
+1.2, <br><br> [Empty] <br> Interesting because:<br>[InterestingEmpty] 
+2,  <br><br> [Monster] 
+3, <br><br> [Monster+Treasure]
+1, <br><br> [Special]
+.5, <br><br> [Trick]
+.5, <br><br> [Trap]
+1, <br><br> [Treasure]
+
+;Empty
+1, This is a room of Public Assembly. It is a(n)[PublicAssembly]
+1, This is a room of Containment or Imprisonment. It is a(n)[Containment]
+1, This is a room of Pleasure and Relaxation. It is a(n)[Relaxation]
+1, This is a room of General Function. It is a(n)[General]
+1, This is a room of War and Conflict. It is a(n)[WarRoom]
+1, This is a room of Deities and/or Worship. It is a(n)[Worship]
+1, This is a room of Learning and Knowledge. It is a(n)[Learning]
+1, This is a room of Specific Utility. It is a(n)[SpecificUtility]
+
+
+;PublicAssembly
+1, Assemblage. <br>It's a place where people gathered together, or may have once been the site of an assembly line. <br> It contains: <ul> <li>[Assemblage] <li> [Assemblage] </ul>
+1, Antechamber. <br> It's a waiting room or entrance for a more important room. <br> It contains: <ul><li>[Antechamber]<li>[Antechamber]</ul>
+1, Amphitheater. <br> It's filled with seats around a central open area which was used for some type of entertainment. The entertainment in question might have been combat. <br> It contains: <ul><li>[Amphitheater]<li>[Amphitheater]</ul>
+1, Audience Hall. <br>It was used for holding formal interviews or hearings.<br> It contains: <ul><li>[AudienceHall]<li>[AudienceHall]</ul>
+.5, Courtroom. <br>It's where sessions of legal proceedings occurred, and potentially dire pronouncements might have been made.<br> It contains: <ul><li>[Courtroom]<li>[Courtroom]</ul>
+1, Great Hall. <br>It's where dining and entertainment were once held.<br> It contains: <ul><li>[GreatHall]<li>[GreatHall]</ul>
+.5, Throne Room. <br>It was once a location of true power and authority here.<br> It contains: <ul><li>[ThroneRoom]<li>[ThroneRoom]</ul>
+
+1, Assemblage. <br>It's a place where people gathered together, or may have once been the site of an assembly line. <br> It contains: <ul> <li>[Assemblage] <li> [Assemblage]<li> [Assemblage]</ul>
+1, Antechamber. <br> It's a waiting room or entrance for a more important room. <br> It contains: <ul><li>[Antechamber]<li>[Antechamber]<li>[Antechamber]</ul>
+1, Amphitheater. <br> It's filled with seats around a central open area which was used for some type of entertainment. The entertainment in question might have been combat. <br> It contains: <ul><li>[Amphitheater]<li>[Amphitheater]<li>[Amphitheater]</ul>
+1, Audience Hall. <br>It was used for holding formal interviews or hearings.<br> It contains: <ul><li>[AudienceHall]<li>[AudienceHall]<li>[AudienceHall]</ul>
+.5, Courtroom. <br>It's where sessions of legal proceedings occurred, and potentially dire pronouncements might have been made.<br> It contains: <ul><li>[Courtroom]<li>[Courtroom]<li>[Courtroom]</ul>
+1, Great Hall. <br>It's where dining and entertainment were once held.<br> It contains: <ul><li>[GreatHall]<li>[GreatHall]<li>[GreatHall]</ul>
+.5, Throne Room. <br>It was once a location of true power and authority here.<br> It contains: <ul><li>[ThroneRoom]<li>[ThroneRoom]<li>[ThroneRoom]</ul>
+
+1, Assemblage. <br>It's a place where people gathered together, or may have once been the site of an assembly line. <br> It contains: <ul> <li>[Assemblage] <li> [Assemblage] <li> [Assemblage] <li> [Assemblage] </ul>
+1, Antechamber. <br> It's a waiting room or entrance for a more important room. <br> It contains: <ul><li>[Antechamber]<li>[Antechamber] <li>[Antechamber] <li>[Antechamber] </ul>
+1, Amphitheater. <br> It's filled with seats around a central open area which was used for some type of entertainment. The entertainment in question might have been combat. <br> It contains: <ul><li>[Amphitheater] <li>[Amphitheater] <li>[Amphitheater] <li>[Amphitheater]</ul>
+1, Audience Hall. <br>It was used for holding formal interviews or hearings.<br> It contains: <ul><li>[AudienceHall]<li>[AudienceHall] <li>[AudienceHall]  <li>[AudienceHall] </ul>
+.5, Courtroom. <br>It's where sessions of legal proceedings occurred, and potentially dire pronouncements might have been made.<br> It contains: <ul><li>[Courtroom]<li>[Courtroom] <li>[Courtroom] <li>[Courtroom] </ul>
+1, Great Hall. <br>It's where dining and entertainment were once held.<br> It contains: <ul><li>[GreatHall] <li>[GreatHall] <li>[GreatHall] <li>[GreatHall] </ul>
+.5, Throne Room. <br>It was once a location of true power and authority here.<br> It contains: <ul><li>[ThroneRoom]<li>[ThroneRoom] <li>[ThroneRoom] <li>[ThroneRoom] </ul>
+
+
+;Assemblage
+1, a podium
+1, a lectern
+1, a bench
+1, a carpet
+1, an empty desk
+1, a table
+1, a chair
+1, a tapestry
+1, a raised platform (dais)
+1, stadium seating
+1, a lamp
+
+;Antechamber
+1, an arch
+1, an empty basket
+1, an empty cabinet
+1, an empty chest
+1, empty pottery
+1, drapery
+1, a mirror
+1, a bench
+1, a chair
+1, a table
+1, a cushion
+1, an empty desk
+1, a room-divider screen
+1, empty shelves
+1, a quilt
+1, a small shrine to a deity
+1, empty lamps
+1, flowers
+1, an ashtray
+1, [Decoration]
+1, a fountain
+
+;Amphitheater
+1, an arch
+1, a flag
+1, drapery
+1, a bas relief
+.5, dirt
+.5, mud
+1, a domed ceiling
+1, a brazier (container for fire)
+1, coals
+1, a burnt-out torch
+1, scratches on the wall
+1, an earthy odor
+1, dried blood
+1, fingers
+1, toes
+1, a leg
+1, an arm
+1, curtains
+1, manacles
+1, chains
+1, a depression in the floor
+1, a tapestry
+1, [Trash]
+1, a fountain
+1, statues
+2, [Weapons]
+1, [Weapons] and [Weapons]
+
+;AudienceHall
+1, an arras (hanging tapestry...  good for hiding behind)
+1, a flag
+1, a useless map
+1, a bas relief
+1, a mural
+1, a bench
+1, a chair
+1, a podium
+1, a lamp
+1, candles
+1, books
+.2, statues
+
+;Courtroom
+3, a gavel
+2, a raised platform (dais)
+1, an arras (hanging tapestry...  good for hiding behind)
+1, a flag
+1, a map of the surrounding countryside (nothing that the players don't already know about)
+1, a bas relief
+1, a mural
+1, a painting
+1, a bench
+1, a chair
+1, a podium
+1, a lamp
+1, candles
+1, legal books
+1, parchment
+1, a quill
+1, manacles
+1, a slip of parchment with the word "Guilty" written on it
+1, statues
+
+
+;GreatHall
+1, an empty basket
+1, a chalice
+1, a goblet
+1, an empty jar
+1, an empty jug
+1, pans
+1, a coat of arms
+1, a flag
+1, a bench
+1, a chair
+1, a table
+1, a throne
+1, alcohol
+1, [Food]
+1, a brazier (container for fire)
+1, a chandelier
+1, an unused torch
+1, a burnt-out torch
+1, a smoky odor
+1, bones (from prior meals)
+1, dung
+1, vomit
+1, plants
+1, a balcony
+1, a tapestry
+1, [Trash]
+1, inexpensive silverware
+1, plates
+1, platters
+1, a tablecloth
+1, an apron
+1, statues
+1, [Weapons] displayed on the wall
+
+;ThroneRoom
+1, a pedestal
+1, a pillar
+1, a column
+1, a raised platform (dais)
+1, an empty basket
+1, a chalice
+1, a goblet
+1, a coat of arms
+1, a tapestry
+1, an arras (hanging tapestry...  good for hiding behind)
+1, a flag
+1, a bench
+1, chairs
+9, a throne
+1, alcohol
+1, cushions
+1, a brazier (container for fire)
+1, a chandelier
+1, a table
+1, [Food]
+1, torches
+1, plants
+1, a balcony
+1, a tablecloth
+1, plates
+1, a platter
+1, drapes
+1, statues
+1, [Weapons] displayed on the wall
+ 
+
+;Containment
+1, Aviary.<br>A place where birds are kept.<br>It contains: <ul> <li>[Aviary]   <li> [Aviary]  </ul>
+1, Bestiary.<br>A place where animals or other beasts are kept.<br>It contains: <ul> <li> [Bestiary]  <li> [Bestiary] </ul>
+1, Cage.<br> An enclosure formed of wires or bars for displaying birds, animals or ... other creatures.  <br>It contains: <ul> <li> [Cage]  <li>[Cage]  </ul>
+1, Cell.<br>  A cell can be any small room, but often refers to groupings of many small rooms. <br>It contains: <ul> <li> [Cell]  <li>[Cell]  </ul>
+1, Kennel.<br> A place for sheltering, breeding and training animals which are kept as pets.  <br>It contains: <ul> <li>[Kennel]   <li>[Kennel]  </ul>
+1, Oubliette.<br>A secret dungeon which only has an opening/trap-door located in the ceiling.<br>It contains: <ul> <li>[Oubliette]   <li>[Oubliette]  </ul>
+1, Padded room.<br>Exactly what it sounds like.<br>It contains: <ul> <li>[PaddedRoom]   <li>[PaddedRoom]  </ul>
+1, Pen.<br> A very small enclosure built for animals, or sometimes for the purpose of safekeeping something of worth.  <br>It contains: <ul> <li>[Pen]   <li>[Pen]  </ul>
+2, Prison.<br>Confines people awaiting trial or sentencing.  <br>It contains: <ul> <li>[Prison]   <li>[Prison]  </ul>
+1, Stockade.<br> A prison for military personnel.  <br>It contains: <ul> <li>[Stockade]   <li>[Stockade]   </ul>
+1, Zoo.<br> A park-like area where animals are kept in cages or other large enclosures.  <br>It contains: <ul> <li>[Zoo]   <li>[Zoo]   </ul>
+
+1, Aviary.<br>A place where birds are kept.<br>It contains: <ul> <li>[Aviary]   <li> [Aviary]  <li> [Aviary]</ul>
+1, Bestiary.<br>A place where animals or other beasts are kept.<br>It contains: <ul> <li> [Bestiary]  <li> [Bestiary] <li> [Bestiary] </ul>
+1, Cage.<br>An enclosure formed of wires or bars for displaying birds, animals or ... other creatures.  <br>It contains: <ul> <li> [Cage]  <li>[Cage]  <li>[Cage]  </ul>
+1, Cell.<br>A cell can be any small room, but often refers to groupings of many small rooms. <br>It contains: <ul> <li> [Cell]  <li>[Cell] <li>[Cell]  </ul>
+1, Kennel.<br>A place for sheltering, breeding and training animals which are kept as pets.<br>It contains: <ul> <li>[Kennel]   <li>[Kennel]  <li>[Kennel]  </ul>
+1, Padded room.<br>Exactly what it sounds like.<br>It contains: <ul> <li>[PaddedRoom]   <li>[PaddedRoom]   <li>[PaddedRoom]  </ul>
+1, Pen.<br>A very small enclosure built for animals, or sometimes for the purpose of safekeeping something of worth. <br>It contains: <ul> <li>[Pen]   <li>[Pen]  <li>[Pen]  </ul>
+2, Prison.<br> Confines people awaiting trial or sentencing.  <br>It contains: <ul> <li>[Prison]   <li>[Prison]  <li>[Prison]  </ul>
+1, Stockade.<br>A prison for military personnel.  <br>It contains: <ul> <li>[Stockade]   <li>[Stockade]  <li>[Stockade]  </ul>
+1, Zoo.<br>A park-like area where animals are kept in cages or other large enclosures.  <br>It contains: <ul> <li>[Zoo]   <li>[Zoo]  <li>[Zoo]  </ul>
+
+
+
+1, Aviary.<br>A place where birds are kept.<br>It contains: <ul> <li>[Aviary]   <li> [Aviary]  <li> [Aviary]  <li> [Aviary]</ul>
+1, Bestiary.<br>A place where animals or other beasts are kept.<br>It contains: <ul> <li> [Bestiary]  <li> [Bestiary] <li> [Bestiary] <li> [Bestiary] </ul>
+1, Cage.<br>An enclosure formed of wires or bars for displaying birds, animals or ... other creatures.  <br>It contains: <ul> <li> [Cage]  <li>[Cage]  <li>[Cage]  <li>[Cage]  </ul>
+1, Cell.<br>A cell can be any small room, but often refers to groupings of many small rooms. <br>It contains: <ul> <li> [Cell]  <li>[Cell] <li>[Cell]<li>[Cell]  </ul>
+1, Kennel.<br>A place for sheltering, breeding and training animals which are kept as pets.<br>It contains: <ul> <li>[Kennel]   <li>[Kennel]  <li>[Kennel]  <li>[Kennel]  </ul>
+1, Padded room.<br>Exactly what it sounds like.<br>It contains: <ul> <li>[PaddedRoom]   <li>[PaddedRoom]   <li>[PaddedRoom]  <li>[PaddedRoom]  </ul>
+1, Pen.<br>A very small enclosure built for animals, or sometimes for the purpose of safekeeping something of worth. <br>It contains: <ul> <li>[Pen]   <li>[Pen]  <li>[Pen]  <li>[Pen]  </ul>
+2, Prison.<br>Confines people awaiting trial or sentencing.  <br>It contains: <ul> <li>[Prison]   <li>[Prison]  <li>[Prison]   <li>[Prison]  </ul>
+1, Stockade.<br>A prison for military personnel.  <br>It contains: <ul> <li>[Stockade]   <li>[Stockade]  <li>[Stockade]  <li>[Stockade]  </ul>
+1, Zoo.<br>A park-like area where animals are kept in cages or other large enclosures.  <br>It contains: <ul> <li>[Zoo]   <li>[Zoo]  <li>[Zoo]  <li>[Zoo]  </ul>
+
+
+
+
+;Aviary
+4, A birdcage
+1, sand
+1, a birdbath
+1, a bag
+1, a barrel
+1, a bin
+1, a basin
+1, a bowl
+1, a chest
+1, an apron
+1,  gloves
+1, a domed ceiling
+1, a chair
+1, a cupboard
+1, a cabinet
+1, a floor mat
+1, a wall-mounted water basin
+1, a workbench
+1, grain
+1, candles
+1, a lamp
+1, acrid odors
+8, feathers
+4, birds
+1, a fountain
+
+
+;Bestiary
+4, animal cages
+3, a feeding trough
+1, butchered meat for the animals to eat
+1, a fish tank
+1, sand
+1, a birdbath
+1, bags
+1, barrels
+1, bins
+1, a wall-mounted water basin
+1, bowls
+1, a chest
+1, an apron
+1, gloves
+1, a smock
+1, a chair
+1, a cupboard
+1, a cabinet
+1, a floor mat
+1, a workbench
+1, grain
+1, candles
+1, a lamp
+1, acrid odors
+1, feathers
+1, [Animals]
+1, [Animals][Animals]
+1,  [Animals][Animals][Animals][Animals]
+1, shed fur
+1, a fountain
+
+
+
+;Cage
+1, a bench
+1, a privy
+1, a chamber pot
+1, straw
+1, a cot
+1, a stool
+1, a urine odor
+1, a stale odor
+1, blood
+1, a skeleton
+2, manacles
+1, wall cressets (a lamp wherein the wick burns in a cup or cavity, which can be of ceramic or stone)
+1, [Trash]
+1, a jug
+1, a plate
+1, a fork
+1, a spoon
+1, a metal file
+1, a barred window
+1, hooks
+1, dust
+1, a cold breeze
+1, dampness
+1, human waste
+1, scratches
+1, a dank odor
+
+
+
+;Cell
+2, a pallet
+2, [Bed]
+2, a desk
+2, a quill
+2, parchment
+2, scrolls
+2, books
+2, a bench
+2, a privy
+2, straw
+2, a cot
+2, a stool
+1, a chamber pot
+1, a skeleton
+1, manacles
+1, wall cressets (a lamp wherein the wick burns in a cup or cavity, which can be of ceramic or stone)
+1, [Trash]
+1, a jug
+1, a plate
+1, a fork
+1, a spoon
+1, a metal file
+1, a barred window
+1, a sink
+1, a kneeling bench
+1, a workbench
+
+
+;Kennel
+4, animal cages
+1, butchered meat for the animals to eat
+1, fish (for food)
+1, bags
+1,  barrels
+1, a water basin
+1, a bowl
+1, a chest
+1, an apron
+1, gloves
+1, a smock
+1, a fountain
+1, a chair
+1, a cupboard
+1, a cabinet
+1, a floor mat
+1, a wall basin
+1, a workbench
+1, grain
+1, candles
+1, a lamp
+1, acrid odors
+1, feathers
+3, shed fur
+2, a feeding trough
+4, [Animals]
+1, [Animals][Animals]
+1, [Animals][Animals][Animals]
+1, [Animals][Animals][Animals][Animals]
+
+
+;Oubliette
+1, dust
+1, a cold breeze
+1, dampness
+1, human waste
+1, scratches
+1, a dank odor
+1, blood
+1, a skeleton
+1, chains
+1, manacles
+1, hooks
+1, ropes
+1, a chamber pot
+1, a privy
+1, teeth
+1, stocks
+
+
+;PaddedRoom
+5, padding
+1, scratches
+1, blood
+1, human waste
+1, hair
+1, teeth
+1, a sweaty odor
+1, restraints
+
+
+;Pen
+1, mud
+1, dirt
+1, a trough
+1, [Animals]
+1, bowls for food and water
+1, fur
+1, scratches
+
+
+;Prison
+1, a pallet
+1, [Bed]
+1, a desk
+1, a quill
+1, parchment
+1, scrolls
+1, books
+1, a bench
+1, a privy
+1, a chamber pot
+1, straw
+1, a cot
+1, a stool
+1, human waste
+1, the stench of urine
+1, blood
+1, a skeleton
+1, manacles
+1, wall cressets (a lamp wherein the wick burns in a cup or cavity, which can be of ceramic or stone)
+1, [Trash]
+1, a jug
+1, a plate
+1, a fork
+1, a spoon
+1, a metal file
+1, a barred window
+1, a sink
+1, teeth
+1, a kneeling bench
+
+
+;Stockade
+1, a bench
+1, a privy
+1, a cot
+1, a stool
+1, a jug
+1, a plate
+1, a spoon
+1, a fork
+1, a canteen
+.1, a book of old military regulations
+1, a sink
+1, stocks
+
+
+;Zoo
+5, animal cages
+1,  a raised platform (dais)
+5, a sign that says [Animals]
+1, a walking path
+1, benches
+1, statues
+
+
+;Relaxation
+1, Arena.<br>A central stage or ring used for entertainment, often surrounded by seats.  <br> It contains:  <ul>  <li>[Arena]  <li>[Arena]   </ul>
+2, Banquet.<br>Designed to accommodate dining.  <br> It contains:   <ul>  <li>[Banquet]  <li>[Banquet]   </ul>
+1, Combat Pit.<br>A lowered area with a dirt or sand floor, where fighting takes place.  Animal and monster opponents are not uncommon.<br> It contains:   <ul>  <li>[CombatPit]  <li>[CombatPit]   </ul>
+2, Den.<br>A quiet space for conversation, reading and writing.  <br> It contains:     <ul>  <li>[Den]  <li>[Den]   </ul>
+1, Game Room.<br>A rec room for games of skill and chance.  <br> It contains:     <ul>  <li>[GameRoom]  <li>[GameRoom]   </ul>
+2, Gallery.<br>Dedicated to the display of art or statuary.  <br> It contains:     <ul>  <li>[Gallery]  <li>[Gallery]   </ul>
+1, Harem.<br>Living quarters reserved exclusively for women. Often wives or concubines.  <br> It contains:     <ul>  <li>[Harem]  <li>[Harem]   </ul>
+1, Maze.<br>Passageways designed to be confusing, disorienting and bewildering to those who travel through them.  <br> It contains:     <ul>  <li>[Maze]  <li>[Maze]   </ul>
+2, Museum.<br>Where objects of permanent value are kept and displayed.  <br> It contains:     <ul>  <li>[Museum]  <li>[Museum]   </ul>
+1, Music Room.<br>Often vaulted for better acoustics.  <br>  It contains:    <ul>  <li>[MusicRoom]  <li>[MusicRoom]   </ul>
+3, Water Room.<br>Used for the storage, use or enjoyment of water.  <br> It contains:     <ul>  <li>[WaterRoom]  <li>[WaterRoom]   </ul>
+1, Sauna.<br>A steam room.  <br> It contains:     <ul>  <li>[Sauna]  <li>[Sauna]   </ul>
+1, Seraglio.<br>A harem room with extremely restricted freedom for the women.  <br> It contains:     <ul>  <li>[Seraglio]  <li>[Seraglio]   </ul>
+1, Statuary.<br>A collection of statues.  <br> It contains:     <ul>  <li>[Statuary]  <li>[Statuary]   </ul>
+1, Torture Chamber.<br>Where information is forcibly extracted.  <br> It contains:     <ul>  <li>[TortureChamber]  <li>[TortureChamber]   </ul>
+1, Trophy Room.<br>A display of awards or other symbols of achievement.  <br> It contains:     <ul>  <li>[TrophyRoom]  <li>[TrophyRoom]   </ul>
+
+
+1, Arena.<br>A central stage or ring used for entertainment, often surrounded by seats.  <br> It contains:     <ul>  <li>[Arena]  <li>[Arena] <li>[Arena]     </ul>
+2, Banquet.<br>Designed to accommodate dining.  <br> It contains:   <ul>  <li>[Banquet]  <li>[Banquet]   <li>[Banquet]   </ul>
+1, Combat Pit.<br>A lowered area with a dirt or sand floor, where fighting takes place.  Animal and monster opponents are not uncommon.<br> It contains:   <ul>  <li>[CombatPit]  <li>[CombatPit]   <li>[CombatPit]   </ul>
+2, Den.<br>A quiet space for conversation, reading and writing.  <br> It contains:     <ul>  <li>[Den]  <li>[Den]   <li>[Den]   </ul>
+1, Game Room.<br>A rec room for games of skill and chance.  <br> It contains:     <ul>  <li>[GameRoom]  <li>[GameRoom]   <li>[GameRoom]   </ul>
+2, Gallery.<br>Dedicated to the display of art or statuary.  <br> It contains:     <ul>  <li>[Gallery]  <li>[Gallery]   <li>[Gallery]   </ul>
+1, Harem.<br>Living quarters reserved exclusively for women. Often wives or concubines.  <br> It contains:     <ul>  <li>[Harem]  <li>[Harem]  <li>[Harem]   </ul>
+1, Maze.<br>Passageways designed to be confusing, disorienting and bewildering to those who travel through them.  <br> It contains:     <ul>  <li>[Maze]  <li>[Maze]   <li>[Maze]   </ul>
+2, Museum.<br>Where objects of permanent value are kept and displayed.  <br> It contains:     <ul>  <li>[Museum]  <li>[Museum]   <li>[Museum]   </ul>
+1, Music Room.<br>Often vaulted for better acoustics.  <br> It contains:     <ul>  <li>[MusicRoom]  <li>[MusicRoom]   <li>[MusicRoom]   </ul>
+1, Water Room.<br>Used for the storage, use or enjoyment of water.  <br> It contains:     <ul>  <li>[WaterRoom]  <li>[WaterRoom]   <li>[WaterRoom]   </ul>
+1, Sauna.<br>A steam room.  <br> It contains:     <ul>  <li>[Sauna]  <li>[Sauna]   </ul>
+1, Seraglio.<br>A harem room with extremely restricted freedom for the women.  <br> It contains:     <ul>  <li>[Seraglio]  <li>[Seraglio]   <li>[Seraglio]   </ul>
+1, Statuary.<br>A collection of statues.  <br> It contains:     <ul>  <li>[Statuary]  <li>[Statuary]   <li>[Statuary]   </ul>
+1, Torture Chamber.<br>Where information is forcibly extracted.  <br> It contains:     <ul>  <li>[TortureChamber]  <li>[TortureChamber]   <li>[TortureChamber]   </ul>
+1, Trophy Room.<br>A display of awards or other symbols of achievement.  <br> It contains:     <ul>  <li>[TrophyRoom]  <li>[TrophyRoom] <li>[TrophyRoom]   </ul>
+
+
+1, Arena.<br>A central stage or ring used for entertainment, often surrounded by seats.  <br> It contains:     <ul>  <li>[Arena]  <li>[Arena] <li>[Arena]   <li>[Arena]     </ul>
+2, Banquet.<br>Designed to accommodate dining.  <br> It contains:   <ul>  <li>[Banquet]  <li>[Banquet]    <li>[Banquet]    <li>[Banquet]   </ul>
+1, Combat Pit.<br>A lowered area with a dirt or sand floor, where fighting takes place.  Animal and monster opponents are not uncommon.<br> It contains:   <ul>  <li>[CombatPit]  <li>[CombatPit] <li>[CombatPit]   <li>[CombatPit]     </ul>
+2, Den.<br>A quiet space for conversation, reading and writing.  <br> It contains:     <ul>  <li>[Den]  <li>[Den]  <li>[Den]   <li>[Den]    </ul>
+1, Game Room.<br>A rec room for games of skill and chance.  <br> It contains:     <ul>  <li>[GameRoom]  <li>[GameRoom]  <li>[GameRoom]   <li>[GameRoom]    </ul>
+2, Gallery.<br>Dedicated to the display of art or statuary.  <br> It contains:     <ul>  <li>[Gallery]  <li>[Gallery] <li>[Gallery]   <li>[Gallery]     </ul>
+1, Harem.<br>Living quarters reserved exclusively for women. Often wives or concubines.  <br> It contains:     <ul>  <li>[Harem]  <li>[Harem]   <li>[Harem]  <li>[Harem]  </ul>
+1, Maze.<br>Passageways designed to be confusing, disorienting and bewildering to those who travel through them.  <br>  It contains:    <ul>  <li>[Maze]  <li>[Maze] <li>[Maze]   <li>[Maze]     </ul>
+2, Museum.<br>Where objects of permanent value are kept and displayed.  <br> It contains:     <ul>  <li>[Museum]  <li>[Museum] <li>[Museum]   <li>[Museum]     </ul>
+1, Music Room.<br>Often vaulted for better acoustics.  <br> It contains:     <ul>  <li>[MusicRoom]  <li>[MusicRoom] <li>[MusicRoom]   <li>[MusicRoom]     </ul>
+1, Water Room.<br>Used for the storage, use or enjoyment of water.  <br> It contains:     <ul>  <li>[WaterRoom]  <li>[WaterRoom] <li>[WaterRoom]   <li>[WaterRoom]     </ul>
+1, Sauna.<br>A steam room.  <br> It contains:     <ul>  <li>[Sauna]  <li>[Sauna] <li>[Sauna]   <li>[Sauna]     </ul>
+1, Seraglio.<br>A harem room with extremely restricted freedom for the women.  <br> It contains:     <ul>  <li>[Seraglio]  <li>[Seraglio] <li>[Seraglio]   <li>[Seraglio]     </ul>
+1, Statuary.<br>A collection of statues.  <br> It contains:     <ul>  <li>[Statuary]  <li>[Statuary] <li>[Statuary]   <li>[Statuary]     </ul>
+1, Torture Chamber.<br>Where information is forcibly extracted.  <br> It contains:     <ul>  <li>[TortureChamber]  <li>[TortureChamber] <li>[TortureChamber]   <li>[TortureChamber]     </ul>
+1, Trophy Room.<br>A display of awards or other symbols of achievement.  <br> It contains:     <ul>  <li>[TrophyRoom]  <li>[TrophyRoom] <li>[TrophyRoom]   <li>[TrophyRoom]     </ul>
+
+;Arena
+1, an arch
+1, a coat of arms
+1, a flag
+1, a bas relief
+1, sand
+1, coals
+1, torches
+1, an earth odor
+1, blood
+1, a finger
+1, an arm
+1, a leg
+1, manacles
+1, chains
+1, a depression in the floor
+1, a balcony
+1, a tapestry
+1, a brazier (container for fire)
+1, a broken sword
+1, a shattered shield
+1, a snapped spear 
+1, broken sports equipment
+.2, abandoned puppets
+.2, a theatrical costume
+1, [Weapons]
+1, a clump of some animal's fur
+1, [Weapons] and [Weapons]
+
+
+
+;Banquet
+1, a chalice
+1, a goblet
+1, a vase
+1, flowers
+3, a table
+1, a bench
+1, chairs
+1, a tablecloth
+1, a fork
+1, a spoon
+1, a butter-knife
+1, platters
+1, plates
+1, china
+1, alcohol
+1, candles
+1, a chandelier
+1, torches
+1, a mug
+1, a pitcher
+1, a brazier (container for fire)
+
+;CombatPit
+1, sand
+1, coals
+1, torches
+1, an earth odor
+1, blood
+1, a finger
+1, an arm
+1, a leg
+1, manacles
+1, chains
+1, a depression in the floor
+1, a balcony
+1, a tapestry
+1, a brazier (container for fire)
+1, a broken sword
+1, a shattered shield
+1, a snapped spear 
+1, bones
+1, a corpse
+1, [Weapons]
+1, [Weapons] and [Weapons]
+
+
+
+
+;Den
+1, a basket
+1, a bin
+1, a box
+1, a cabinet
+1, a chest of drawers
+1, a foot locker
+1, a music box
+1, a tinder box
+1, a trunk
+1, a vase
+1, a cloak
+1, a cowl
+1, a coat
+1, boots
+1, a cap
+1, a coin-purse
+1, a scarf
+1, a mirror
+1, an armchair
+1, an armoire
+1, a blanket
+1, bookshelves
+1, a chair
+1, a coat-rack
+1, a couch
+1, a cushion
+1, a writing desk
+1, an end table
+1, a fireplace
+1, a rug
+1, a small shrine
+1, a small table
+1, a small bar (alcohol optional)
+1, coffee
+1, candles
+1, a lamp
+1, books
+1, an hourglass
+1, musical instruments
+1, plants
+1, tapestries
+1, a painting
+1, an ashtray
+1, playing cards
+1, a humidor
+1, a feather duster
+1, a fire poker
+1, a shovel
+1, a brush
+1, a broom
+1, a mug
+1, masks
+1, an empty weapons display case
+1, a statue
+1, a trophy
+1, dice
+1, a chess set
+1, a rocking chair
+1, [Decoration]
+
+;GameRoom
+1, small boxes
+1, a chess set
+2, chairs
+3, a table
+1, a trunk
+1, a mural
+1, a mosaic
+1, a bench
+1, bookshelves
+1, a cupboard
+1, candles
+1, a lamp
+1, a rug
+1, a ball
+1, beads
+1, wooden blocks
+1, chalk
+1 , a doll
+1, a dollhouse
+1, toy soldiers
+1, marbles
+1, a mask
+1, hand puppets
+1, a marionette
+1, a ribbon
+1, a trophy
+3, playing cards
+1, a rocking chair
+1, [Decoration]
+
+
+
+;Gallery
+1, frames
+1, curtains
+1, a raised platform (dais)
+1, a shadowbox
+1, a mosaic
+1, a mural
+1, a painting
+1, an idol
+1, candles
+1, a chandelier
+1, a lamp
+1, a pedestal
+1, a pillar
+1, a plant
+1, a balcony
+1, a catwalk
+1, a tapestry
+1, [Decoration]
+
+
+;Harem
+3 [Bed]
+1, a basket
+1, a cabinet
+1, a chalice
+1, a chest of drawers
+1, a closet
+1, a jewelry box
+1, a music box
+1, a vase
+1, a wineskin
+1, a blouse
+1, a corset
+1, a dress
+1, lingerie
+1, garters
+1, a gown
+1, a girdle
+1, a robe
+1, a scarf
+1, a shawl
+1, a pair of slippers
+1,  a toga
+1, a veil
+1, curtains
+1, drapes
+1, furs
+1, a fur rug
+1, a mosaic
+1, a painting
+1, an armchair
+1, a couch
+1, a loveseat
+1, an end table
+1, a pillow
+1, a mattress
+1, a quilt
+1, candles
+1, a chandelier
+1, lamps
+1, books
+1,a harp
+1, a lute
+1, a pedestal
+1, a plant
+1, a flower arrangement
+1, an alcove
+1, a tapestry
+1, a banner
+1, a rug
+2 a cushion
+1, costume jewelry
+1, a headdress
+1, a mask
+1, perfume
+1, a (tobacco) pipe
+1, a ribbon
+1, scissors
+1, yarn
+1, thread
+1, a scrap of cloth
+1, a thimble
+1, a sewing needle
+1, a pincushion
+1, knitting needles
+1, [Decoration]
+
+;Maze
+1, bones
+1, [Trash]
+1, scratches on the walls
+1, blood
+1, stale air
+1, teeth
+1, the stench of urine
+1, [Weapons]
+
+
+;Museum
+1, a coat of arms
+1, a statue
+1, a raised platform (dais)
+1, a mosaic
+1, a painting
+1, a mural
+1, a pedestal
+1, benches
+1, an idol
+1, lamps
+1, a column
+1, a tapestry
+3, an empty display pedestal
+1, a sign which reads "Do Not Touch"
+1, [Decoration]
+
+;MusicRoom
+1, a raised platform (dais)
+1, a podium
+3, a music stand
+2, chairs
+1, a bench
+1, pews
+1, stadium seating
+1, lamps
+1, torches
+1, a hat on the floor
+1, an alcove
+1, a balcony
+3, musical instruments
+1, [Decoration]
+
+
+;WaterRoom
+1, a swimming pool
+1, a fountain
+1, a small pond
+1, storage drums full of water
+1, a tile floor
+1, a stone floor
+1, a towel
+1, a whirlpool
+1, a hot spring
+1, steam
+1, a small koi pond
+1, a small stream
+1, a washcloth
+
+
+;Sauna
+1, rocks
+2, a bench
+1, a towel
+1, a brazier (container for fire)
+1, steam
+1, a washcloth
+1, the stench of sweat
+1, coals
+
+
+
+;Seraglio
+1, a padlock
+1, chains
+1, manacles
+1, rope
+3, [Bed] and [Bed]
+1, a basket
+1, a cabinet
+1, a chalice
+1, a chest of drawers
+1, a closet
+1, a jewelry box
+1, a music box
+1, a vase
+1, a wineskin
+1, an apron
+1, a blouse
+1, a corset
+1, a dress
+1, garters
+1, a girdle
+1, a gown
+1, lingerie
+1, a robe
+1, a scarf
+1, a shawl
+1, slippers
+1, a sheer shift
+1, a toga
+1, a veil
+1, curtains
+1, drapes
+1, a fur rug
+1, a mosaic
+1, a painting
+1, an armchair
+1, a couch
+1, an end table
+1, a pillow
+1, a mattress
+1, a quilt
+1, candles
+1, lamps
+1, a chandelier
+1, musical instruments
+1, a pedestal
+1, a plant
+1, a flower arrangement
+1, an alcove
+1, a tapestry
+1, a banner
+1, a rug
+1, a cushion
+1, dye
+1, costume jewelry
+1, a headdress
+1, a mask
+1, perfume
+1, body oil
+1, a (tobacco) pipe
+1, a length of ribbon
+1, scissors
+1, yarn
+1, a spool of thread
+1, a thimble
+1, a sewing needle
+1, a pincushion
+1, knitting needles 
+1, [Decoration]
+
+
+;Statuary
+4, statues
+1, a raised platform (dais)
+1, a pillar
+1, a column
+1, a pedestal
+1, a mosaic
+1, a bas relief
+1, torches
+1, a lamp
+1, [Decoration]
+
+
+
+;TortureChamber
+1, restraints
+1, manacles
+1, rope
+1, chains
+1, blood
+1, teeth
+1, bones
+1, a corpse
+1, a bucket
+1, a stool
+1, a broom
+1, torches
+1, coals
+1, a brazier (container for fire)
+1, scratches on the wall
+1, metal rings bolted into the wall
+1, hooks
+1, a worn-out whip
+1, a kneeling bench
+1, [Weapons]
+
+
+;TrophyRoom
+1, a raised platform (dais)
+1, a wooden trophy
+1, a bronze trophy
+1, a pedestal
+1, a glass display case
+1, a shelf
+1, a lamp
+1, a padlock
+2, a mounted [Animals]'s head
+1, a taxidermied [Animals]
+1, [Decoration]
+
+
+;General
+2, Bathroom. <br>Designed for bathing and/or eliminating waste.  <br>It contains: <ul>  <li>[Bathroom]  <li>[Bathroom]  </ul>
+2, Bedroom.<br>For rest and sleep.  <br>It contains: <ul>  <li>[Bedroom]  <li>[Bedroom]  </ul>
+1, Cistern Room.<br>For storing water, or other liquids; it might have access to an underground reservoir.  <br>It contains: <ul>  <li>[Cistern]  <li>[Cistern]  </ul>
+2, Closet.<br>For storing clothes, food or other goods.  <br>It contains: <ul>  <li>[Closet]  <li> [Closet] </ul>
+1, Dining Room.<br>Where formal meals are eaten.  <br>It contains: <ul> <li>[DiningRoom]  <li>[DiningRoom]  </ul>
+1, Dressing Room.<br> Often located near areas where a quick change of clothes is necessitated: courtrooms, theaters, sports arenas, etc.  <br>It contains: <ul>  <li>[DressingRoom]  <li>[DressingRoom]  </ul>
+1, Foyer. (Entry Room) <br>Serves as a gateway between the exterior and interior of a place.  <br>It contains: <ul>  <li>[Foyer]  <li>[Foyer]  </ul>
+1, Hall. <br>Could be a literal corridor. Could be a room dedicated to a specific purpose, like a "residence hall" or "hall of learning."  <br>It contains: <ul>  <li>[Hall]  <li>[Hall]  </ul>
+1, Lair. <br>The resting place of an animal, often concealed.  <br>It contains: <ul>  <li>[Lair]  <li>[Lair]  </ul>
+2, Pantry. <br>A larder; storage for large quantities of food.  <br>It contains: <ul>  <li>[Pantry]  <li>[Pantry]  </ul>
+1, Lounge. <br>A comfortable place to rest, read, smoke, etc.  <br>It contains: <ul>  <li>[Lounge]  <li>[Lounge]  </ul>
+1, Map Room.  <br>For the creation, display or storage of maps.  <br>It contains: <ul>  <li>[MapRoom]  <li>[MapRoom]  </ul>
+1, Privy.  <br>Strictly for the elimination of human waste, unlike bathrooms where bathing is also possible.  <br>It contains: <ul>  <li>[Privy]  <li> [Privy] </ul>
+1, Planning Room.  <br>Designed for creating/displaying/discussing drawings, sketches, schematics and other detailed plans of action.  <br>It contains: <ul>  <li>[PlanningRoom]  <li> [PlanningRoom] </ul>
+1, Reception Chamber. <br>To receive visitors for the purposes of official business.  <br>It contains: <ul>  <li>[ReceptionChamber]  <li> [ReceptionChamber] </ul>
+1, Salon. <br>A drawing room or reception area, frequently allowing for the casual display of artworks.  <br>It contains: <ul>  <li>[Salon]  <li> [Salon] </ul>
+4, Servants' Quarters. <br> Where the "help" lives. <br>It contains: <ul>  <li>[ServantsQuarters]  <li> [ServantsQuarters] <li> [ServantsQuarters] </ul>
+2, Storage.   <br>It contains: <ul>  <li>[Storage]  <li> [Storage] </ul>
+1, Waiting Room.  <br>It contains: <ul>  <li>[WaitingRoom]  <li> [WaitingRoom] </ul>
+1, Wardrobe. <br>  A room in which to store clothing or costumes.<br>It contains: <ul>  <li>[Wardrobe]  <li> [Wardrobe] </ul>
+3, Well Room. <br>  A room in which a natural spring or well is found.<br>It contains: <ul>  <li>[WellRoom]  <li> [WellRoom] </ul>
+1, Vault. <br>  This is a room which typically has a literally vaulted or arched ceiling. As a result of its stability, it is often used for the storage of valuable goods.<br>It contains: <ul>  <li>[Vault]  <li> [Vault] </ul>
+1, Vestibule. <br>  A chamber, hallway or passage which forms an approach, bridge or entrance to another section or interior space. <br>It contains: <ul>  <li>[Vestibule]  <li> [Vestibule] </ul>
+
+
+2, Bathroom. <br>Designed for bathing and/or eliminating waste.  <br>It contains: <ul>  <li>[Bathroom]  <li>[Bathroom]  <li>[Bathroom]  </ul>
+2, Bedroom.<br>For rest and sleep.  <br>It contains: <ul>  <li>[Bedroom]  <li>[Bedroom]  <li>[Bedroom]  </ul>
+1, Cistern Room.<br>For storing water, or other liquids; it might have access to an underground reservoir.  <br>It contains: <ul>  <li>[Cistern]  <li>[Cistern]  <li>[Cistern]  </ul>
+2, Closet.<br>For storing clothes, food or other goods.  <br>It contains: <ul>  <li>[Closet]  <li> [Closet]  <li> [Closet] </ul>
+1, Dining Room.<br>Where formal meals are eaten.  <br>It contains: <ul> <li>[DiningRoom]  <li>[DiningRoom]  <li>[DiningRoom]  </ul>
+1, Dressing Room.<br> Often located near areas where a quick change of clothes is necessitated: courtrooms, theaters, sports arenas, etc.  <br>It contains: <ul>  <li>[DressingRoom]  <li>[DressingRoom]  <li>[DressingRoom]  </ul>
+1, Foyer. (Entry Room) <br>Serves as a gateway between the exterior and interior of a place.  <br>It contains: <ul>  <li>[Foyer]  <li>[Foyer]  <li>[Foyer]  </ul>
+1, Hall. <br>Could be a literal corridor. Could be a room dedicated to a specific purpose, like a "residence hall" or "hall of learning."  <br>It contains: <ul>  <li>[Hall]  <li>[Hall]  <li>[Hall]  </ul>
+1, Lair. <br>The resting place of an animal, often concealed.  <br>It contains: <ul>  <li>[Lair]  <li>[Lair]  <li>[Lair]  </ul>
+2, Pantry. <br>A larder; storage for large quantities of food.  <br>It contains: <ul>  <li>[Pantry]  <li>[Pantry]   <li>[Pantry]  </ul>
+1, Lounge. <br>A comfortable place to rest, read, smoke, etc.  <br>It contains: <ul>  <li>[Lounge]  <li>[Lounge]  <li>[Lounge]  </ul>
+1, Map Room.  <br>For the creation, display or storage of maps.  <br>It contains: <ul>  <li>[MapRoom]  <li>[MapRoom]  <li>[MapRoom]  </ul>
+1, Privy.  <br>Strictly for the elimination of human waste, unlike bathrooms where bathing is also possible.  <br>It contains: <ul>  <li>[Privy]  <li> [Privy] <li> [Privy] </ul>
+1, Planning Room.  <br>Designed for creating/displaying/discussing drawings, sketches, schematics and other detailed plans of action.  <br>It contains: <ul>  <li>[PlanningRoom]  <li> [PlanningRoom] <li> [PlanningRoom] </ul>
+1, Reception Chamber. <br>To receive visitors for the purposes of official business.  <br>It contains: <ul>  <li>[ReceptionChamber]  <li> [ReceptionChamber] <li> [ReceptionChamber] </ul>
+1, Salon. <br>A drawing room or reception area, frequently allowing for the casual display of artworks.  <br>It contains: <ul>  <li>[Salon]  <li> [Salon] <li> [Salon] </ul>
+4, Servants' Quarters. <br> Where the "help" lives. <br>It contains: <ul>  <li>[ServantsQuarters]  <li> [ServantsQuarters] </ul>
+2, Storage.   <br>It contains: <ul>  <li>[Storage]  <li> [Storage] <li> [Storage] </ul>
+1, Waiting Room.  <br>It contains: <ul>  <li>[WaitingRoom]  <li> [WaitingRoom] <li> [WaitingRoom] </ul>
+1, Wardrobe. <br>  A room in which to store clothing or costumes.<br>It contains: <ul>  <li>[Wardrobe]  <li> [Wardrobe] <li> [Wardrobe] </ul>
+3, Well Room. <br>  A room in which a natural spring or well is found.<br>It contains: <ul>  <li>[WellRoom]  <li> [WellRoom] <li> [WellRoom] </ul>
+1, Vault. <br>  This is a room which typically has a literally vaulted or arched ceiling. As a result of its stability, it is often used for the storage of valuable goods.<br>It contains: <ul>  <li>[Vault]  <li> [Vault] <li> [Vault] </ul>
+1, Vestibule. <br>  A chamber, hallway or passage which forms an approach, bridge or entrance to another section or interior space. <br>It contains: <ul>  <li>[Vestibule]  <li> [Vestibule] <li> [Vestibule] </ul>
+
+2, Bathroom. <br>Designed for bathing and/or eliminating waste.  <br>It contains: <ul>  <li>[Bathroom]  <li>[Bathroom]  <li>[Bathroom]  <li>[Bathroom]  </ul>
+2, Bedroom.<br>For rest and sleep.  <br>It contains: <ul>  <li>[Bedroom]  <li>[Bedroom]  <li>[Bedroom]  <li>[Bedroom]  </ul>
+1, Cistern Room.<br>For storing water, or other liquids; it might have access to an underground reservoir.  <br>It contains: <ul>  <li>[Cistern]  <li>[Cistern]  <li>[Cistern]  <li>[Cistern]  </ul>
+2, Closet.<br>For storing clothes, food or other goods.  <br>It contains: <ul>  <li>[Closet]  <li> [Closet]  <li> [Closet] <li> [Closet] </ul>
+1, Dining Room.<br>Where formal meals are eaten.  <br>It contains: <ul> <li>[DiningRoom]  <li>[DiningRoom]  <li>[DiningRoom]  <li>[DiningRoom]  </ul>
+1, Dressing Room.<br> Often located near areas where a quick change of clothes is necessitated: courtrooms, theaters, sports arenas, etc.  <br>It contains: <ul>  <li>[DressingRoom]  <li>[DressingRoom]  <li>[DressingRoom]  <li>[DressingRoom]  </ul>
+1, Foyer. (Entry Room) <br>Serves as a gateway between the exterior and interior of a place.  <br>It contains: <ul>  <li>[Foyer]  <li>[Foyer]  <li>[Foyer]  <li>[Foyer]  </ul>
+1, Hall. <br>Could be a literal corridor. Could be a room dedicated to a specific purpose, like a "residence hall" or "hall of learning."  <br>It contains: <ul>  <li>[Hall]  <li>[Hall]  <li>[Hall]  <li>[Hall]  </ul>
+1, Lair. <br>The resting place of an animal, often concealed.  <br>It contains: <ul>  <li>[Lair]  <li>[Lair]  <li>[Lair]  <li>[Lair]  </ul>
+2, Pantry. <br>A larder; storage for large quantities of food.  <br>It contains: <ul>  <li>[Pantry]  <li>[Pantry]   <li>[Pantry]  <li>[Pantry]  </ul>
+1, Lounge. <br>A comfortable place to rest, read, smoke, etc.  <br>It contains: <ul>  <li>[Lounge]  <li>[Lounge]  <li>[Lounge]  <li>[Lounge]  </ul>
+1, Map Room.  <br>For the creation, display or storage of maps.  <br>It contains: <ul>  <li>[MapRoom]  <li>[MapRoom]  <li>[MapRoom]  <li>[MapRoom]  </ul>
+1, Privy.  <br>Strictly for the elimination of human waste, unlike bathrooms where bathing is also possible.  <br>It contains: <ul>  <li>[Privy]  <li> [Privy] <li> [Privy] <li> [Privy] </ul>
+1, Planning Room.  <br>Designed for creating/displaying/discussing drawings, sketches, schematics and other detailed plans of action.  <br>It contains: <ul>  <li>[PlanningRoom]  <li> [PlanningRoom] <li> [PlanningRoom] <li> [PlanningRoom] </ul>
+1, Reception Chamber. <br>To receive visitors for the purposes of official business.  <br>It contains: <ul>  <li>[ReceptionChamber]  <li> [ReceptionChamber] <li> [ReceptionChamber] <li> [ReceptionChamber] </ul>
+1, Salon. <br>A drawing room or reception area, frequently allowing for the casual display of artworks.  <br>It contains: <ul>  <li>[Salon]  <li> [Salon] <li> [Salon] <li> [Salon] </ul>
+4, Servants' Quarters. <br> Where the "help" lives. <br>It contains: <ul>  <li>[ServantsQuarters]  <li> [ServantsQuarters] <li> [ServantsQuarters] <li> [ServantsQuarters] </ul>
+2, Storage.   <br>It contains: <ul>  <li>[Storage]  <li> [Storage] <li> [Storage] <li> [Storage] </ul>
+1, Waiting Room.  <br>It contains: <ul>  <li>[WaitingRoom]  <li> [WaitingRoom] <li> [WaitingRoom] <li> [WaitingRoom] </ul>
+1, Wardrobe. <br>  A room in which to store clothing or costumes.<br>It contains: <ul>  <li>[Wardrobe]  <li> [Wardrobe] <li> [Wardrobe] <li> [Wardrobe] </ul>
+3, Well Room. <br>  A room in which a natural spring or well is found.<br>It contains: <ul>  <li>[WellRoom]  <li> [WellRoom] <li> [WellRoom] <li> [WellRoom] </ul>
+1, Vault. <br>  This is a room which typically has a literally vaulted or arched ceiling. As a result of its stability, it is often used for the storage of valuable goods.<br>It contains: <ul>  <li>[Vault]  <li> [Vault] <li> [Vault] <li> [Vault] </ul>
+1, Vestibule. <br>  A chamber, hallway or passage which forms an approach, bridge or entrance to another section or interior space. <br>It contains: <ul>  <li>[Vestibule]  <li> [Vestibule] <li> [Vestibule] <li> [Vestibule] </ul>
+
+
+;Bathroom
+4, a bathtub
+1, a toilet
+1, a wall basin
+1, a sponge
+1, paper
+1, leaves
+1, seashells
+1, perfume
+1, a washcloth
+1, a towel
+1, a musty smell
+1, mold
+1, a candle
+1, a bucket
+
+
+;Bedroom
+5, [Bed]
+1, an altar
+1, a basket
+1, a cabinet
+1, a chest of drawers
+1, a foot locker
+1, a hamper
+1, a box
+1, a vase
+1, an end table
+1, [clothing]
+1, a closet
+1, furs
+2, a blanket
+1, a comforter
+1, a quilt
+1, a tapestry
+1, a carpet
+1, a rug
+1, an armoire
+1, bookshelves
+2, a pillow
+1, a stool
+1, a lamp
+1, a candle
+1, an armchair
+1, a painting
+1, a pitcher
+1, a jewelry box
+1, a hairpin
+
+
+
+;Closet
+1, a bin
+1, a hamper
+1, a chest
+1, a chest of drawers
+1, hangers
+1, [clothing]
+1, tools
+.5, a block of cedar
+1, moths
+.01, [Weapons]
+
+
+
+;DiningRoom
+1, a chalice
+4, a table
+1, a goblet
+1, a cup
+1, a jar
+1, a jug
+1, pans
+3, chairs
+1, alcohol
+1, a lamp
+1, a chandelier
+1, candles
+1, a wine decanter
+1, [Food]
+
+;DressingRoom
+1, a stool
+1, [clothing]
+1, a desk
+1, a mirror
+1, a pin
+1, a clothespin
+1, a clothing rack
+1, a chest of drawers
+3, a closet
+1, a chair
+1, a lamp
+1, candles
+1, perfume
+1, oils
+1, make-up
+
+;Foyer
+1, a lace doily
+1, lace curtains
+1, an arch
+1, a basket
+1, a cabinet
+1, a chest
+1, pottery
+1, a shadow box
+1, a clock
+1, drapes
+1, a mirror
+1, a bench
+1, a chair
+1, a table
+1, a cushion
+1, a desk
+1, a room-divider screen
+1, shelves
+1 a quilt
+1, a shrine
+1, a lamp
+1, flowers
+1, an ashtray
+1, [Decoration]
+1, a rocking chair
+
+;Hall
+1, a clock
+1, a flag
+1, a map
+1, a bas relief
+1, a painting
+1, a mosaic
+1, benches
+1, a chair
+1, torches
+1, a breeze
+1, a chill
+1, banners
+1, a carpet
+1, a rug
+1, [Weapons] on the wall
+
+
+
+;Lair
+1, a nest
+1, dirt/mud
+1, waste
+1, scratches
+1, a stale odor
+1, the smell of urine
+1, plants
+1, fungus
+1, [trash]
+1, a stream
+.5, [Weapons]
+
+
+;Pantry
+1, [Food]
+1, a cupboard
+1, a closet
+
+;Lounge
+1, a basket
+1, a coat of arms
+1, drapes
+1, fur
+1,hides
+1, a fireplace
+1, a fresco
+1, a mosaic
+1, a painting
+1, [Food]
+1, waste
+1, torches
+1, lamps
+1, candles
+1, a brazier
+4, a couch
+2, an armchair
+1, a rocking chair
+
+;MapRoom
+1, a large table
+1, chairs
+1, a knife
+1, a quill
+1, an ink pot
+1, maps
+
+;Privy
+1, a toilet
+1, a sponge
+1, a corncob
+1, leaves
+1, seashells
+1, a questionable piece of cloth
+1, human waste on the floor
+
+;PlanningRoom
+1, a trunk
+1, a clock
+1, flags
+1, a map
+1, a dais
+1, chairs
+1, a table
+1, a sand pit
+1, torches
+1, lamps
+
+;ReceptionChamber
+1, an arch
+1, a basket
+1, a cabinet
+1, a chest
+1, pottery
+1, a shadow box
+1, a clock
+1, drapes
+1, a mirror
+1, a bench
+1, a chair
+1, a table
+1, a cushion
+1, a desk
+1, a room divider screen
+1, shelves
+1, a quilt
+1, a shrine
+1, lamps
+1, flowers
+1, an ashtray
+
+
+;Salon
+1, a coat of arms
+1, a dais
+1, a fresco
+1, a mosaic
+1, a painting
+1, benches
+1, an idol
+1, lamps
+1, a box
+1, a statue
+1, a pedestal
+1, a column
+1, a tapestry
+1, an arch
+1, a basket
+1, a cabinet
+1, a chest
+1, pottery
+1, a shadow box
+1, a clock
+1, drapes
+1, a mirror
+1, a bench
+1, a chair
+1, a table
+1, a cushion
+1, a desk
+1, a room-divider screen
+1, shelves
+1, a quilt
+1, a shrine
+1, lamps
+1, flowers
+1, an ashtray
+1, a rocking chair
+
+;ServantsQuarters
+4, [Bed]
+1, an altar
+1, a basket
+1, [clothing]
+1, a cabinet
+1, a chest of drawers
+1, a foot locker
+1, a hamper
+1, a box
+1, a vase
+1, a closet
+1, furs
+1, a blanket
+1, a comforter
+1, a quilt
+1, a tapestry
+1, a carpet
+1, a rug
+1, an armoire
+1, bookshelves
+1, an end table
+1, a pillow
+1, a stool
+1, a lamp
+1, a candle
+
+;Storage
+1, bookshelves
+1, shelves
+1, boxes
+1, cans
+1, jars
+1, a chest
+1, a trunk
+1, a chest of drawers
+1, a stool
+1, a candle
+1, a lamp
+1, a closet
+
+;Wardrobe
+1, a stool
+1, [clothing]
+1, a desk
+1, a wall mirror
+1, a hand mirror
+1, a pin
+1, a clothing rack
+1, a chest of drawers
+1, an armoire
+1, a chair
+1, a lamp
+1, candles
+1, perfume
+1, face moisturizer oil
+1, make-up
+
+;WellRoom
+5, a well
+1, a rope
+1, a crank
+1, a bucket
+1, a metal bar
+1, mud
+
+;Vault
+1, an arch
+1, shelves
+1, a lock
+1, a locked chest
+1, wooden ceiling beam supports
+1, brackets on either side of the entrance, and a wooden beam to lower on to them to reinforce the door
+1, an empty coinpurse
+
+;Vestibule
+1, a mantle
+1, a basket
+1, a cabinet
+1, a chest 
+1, pottery
+1, a shadow box
+1, drapes
+1, a wall mirror
+1, a bench
+1, a chair
+1, a table
+1, a cushion
+1, a desk
+1, a room-divider screen
+1, shelves
+1, a quilt
+1, a shrine
+1, lamps
+1, flowers
+1, an ashtray
+1, [Decoration]
+
+
+;WarRoom
+1, Armory <br> A place where weapons, war equipment and armor are stored and/or manufactured. <br> It contains: <ul> <li> [Armory] <li> [Armory] </ul>
+1, Arsenal <br> A place for storing a collection of weaponry. <br> It contains: <ul> <li> [Arsenal] <li> [Arsenal] </ul>
+1, Barracks <br> A place used to house personnel. <br> It contains: <ul> <li> [Barracks] <li> [Barracks] </ul>
+3, Guardroom <br> A room used by military personnel on duty, or where prisoners are watched over. <br> It contains: <ul> <li> [Guardroom] <li> [Guardroom] </ul>
+1, Gymnasium. <br> A place used for exercise, sports and/or physical education <br> It contains: <ul> <li> [Gymnasium] <li> [Gymnasium] </ul>
+1, Interrogation Room. <br> A room for questioning prisoners. May have a feature which allows for others to look inside without the prisoners being able to observe them. <br> It contains: <ul> <li> [Interrogation] <li> [Interrogation] </ul>
+1, Mess Hall. <br> A dining room where large groups eat with regular frequency. <br> It contains: <ul> <li> [Mess] <li> [Mess] </ul>
+1, Training Room. <br> Where training montages take place. Wax on, wax off. <br> It contains: <ul> <li> [Training] <li> [Training] </ul>
+
+1, Armory <br> A place where weapons, war equipment and armor are stored and/or manufactured. <br> It contains: <ul> <li> [Armory] <li> [Armory] <li> [Armory] </ul>
+1, Arsenal <br> A place for storing a collection of weaponry. <br> It contains: <ul> <li> [Arsenal] <li> [Arsenal] <li> [Arsenal] </ul>
+1, Barracks <br> A place used to house personnel. <br> It contains: <ul> <li> [Barracks] <li> [Barracks] <li> [Barracks] </ul>
+1, Guardroom <br> A room used by military personnel on duty, or where prisoners are watched over. <br> It contains: <ul> <li> [Guardroom] <li> [Guardroom] <li> [Guardroom] </ul>
+1, Gymnasium. <br> A place used for exercise, sports and/or physical education <br> It contains: <ul> <li> [Gymnasium] <li> [Gymnasium] <li> [Gymnasium] </ul>
+1, Interrogation Room. <br> A room for questioning prisoners. May have a feature which allows for others to look inside without the prisoners being able to observe them. <br> It contains: <ul> <li> [Interrogation] <li> [Interrogation] <li> [Interrogation] </ul>
+1, Mess Hall. <br> A dining room where large groups eat with regular frequency. <br> It contains: <ul> <li> [Mess] <li> [Mess] <li> [Mess] </ul>
+1, Training Room. <br> Where training montages take place. Wax on, wax off. <br> It contains: <ul> <li> [Training] <li> [Training] <li> [Training] </ul>
+
+1, Armory <br> A place where weapons, war equipment and armor are stored and/or manufactured. <br> It contains: <ul> <li> [Armory] <li> [Armory] <li> [Armory] <li> [Armory] </ul>
+1, Arsenal <br> A place for storing a collection of weaponry. <br> It contains: <ul> <li> [Arsenal] <li> [Arsenal] <li> [Arsenal] <li> [Arsenal] </ul>
+1, Barracks <br> A place used to house personnel. <br> It contains: <ul> <li> [Barracks] <li> [Barracks] <li> [Barracks] <li> [Barracks] </ul>
+1, Guardroom <br> A room used by military personnel on duty, or where prisoners are watched over. <br> It contains: <ul> <li> [Guardroom] <li> [Guardroom] <li> [Guardroom] <li> [Guardroom] </ul>
+1, Gymnasium. <br> A place used for exercise, sports and/or physical education <br> It contains: <ul> <li> [Gymnasium] <li> [Gymnasium] <li> [Gymnasium] <li> [Gymnasium] </ul>
+1, Interrogation Room. <br> A room for questioning prisoners. May have a feature which allows for others to look inside without the prisoners being able to observe them. <br> It contains: <ul> <li> [Interrogation] <li> [Interrogation] <li> [Interrogation] <li> [Interrogation] </ul>
+1, Mess Hall. <br> A dining room where large groups eat with regular frequency. <br> It contains: <ul> <li> [Mess] <li> [Mess] <li> [Mess] <li> [Mess] </ul>
+1, Training Room. <br> Where training montages take place. Wax on, wax off. <br> It contains: <ul> <li> [Training] <li> [Training] <li> [Training] <li> [Training] </ul>
+
+
+;Armory
+1, [Weapons]
+1, [Weapons] and [Weapons]
+1, [Weapons] and [Weapons] and [Weapons]
+1, [Armor]
+
+
+;Arsenal
+1, [Weapons]
+1, [Weapons] and [Weapons]
+1, [Weapons] and [Weapons] and [Weapons]
+
+
+;Barracks
+
+;Guardroom
+1, [Weapons]
+
+
+;Gymnasium
+
+;Interrogation
+
+;Mess
+
+;Training
+1, [Weapons]
+
+
+
+;Worship
+1, 
+1, 
+1, 
+1, 
+1, 
+1, 
+
+
+;Learning
+1, 
+1, 
+1, 
+1, 
+1, 
+1, 
+
+
+;SpecificUtility
+1, 
+1, 
+1, 
+1, 
+1, 
+1, 
+
+
+
+;InterestingEmpty
+
+
+;Trash
+
+;Things
+
+;Tools
+
+;Vehicle
+
+;Water
+
+;Air
+1, a light breeze
+1, a downdraft
+1, an updraft
+1, a foul wind
+1, a hot blast of air
+1, chemical vapors
+1, a disgusting stench
+1, fog
+1, a heat mirage
+1, wet dog smell
+
+
+;Container
+1, a backpack
+1, a bag
+1, a barrel
+1, a basket
+1, a bin
+1, a(n) [Containercondition] bottle
+1, a box
+1, a(n) [Containercondition] bucket
+1, a can
+1, a cannister
+1, a(n) [Containercondition] canteen
+1, a case
+1, a cashbox
+1, a(n) [Containercondition] casket
+1, a cauldron
+1, a chest
+1, a(n) [Containercondition] coffin
+1, a crate
+1, a(n) [Containercondition] flask
+1, a foot locker
+1, a gourd
+1, a hamper
+1, a hatbox
+1, a hope chest
+1, a jar
+1, a(n) [Containercondition] jewelry box
+1, a(n) [Containercondition] jug
+1, a(n) [Containercondition] music box
+1, a(n) [Containercondition] vial
+1, a(n) [Containercondition] pitcher
+1, a(n) [Containercondition] pot
+1, [Containercondition] pottery
+1, a(n) [Containercondition] pouch
+1, a(n) [Containercondition] puzzle box
+1, a(n) [Containercondition] sack
+1, a satchel
+1, a sea chest
+1, a strongbox
+1, a(n) [Containercondition]  spittoon
+1, a tinder box
+1, a trunk
+1, a tub
+1, a(n) [Containercondition] urn
+1, a vase
+1, a(n) wineskin
+
+;Containercondition
+1, empty
+1, full
+1, broken
+
+;Clothing
+1, a dress shirt
+1, a casual shirt
+1, dress pants
+1, casual pants
+1, a pretty dress
+1, an opulent gown
+1, a corset
+1, a pair of boots
+1, a pair of shoes
+1, a hat
+1, cufflinks
+1, a vest
+1, dress gloves
+1, stockings
+1, socks
+1, underpants
+1, a brassiere
+1, a necktie
+1, an apron
+1, a belt
+1, a cap
+1, a cape
+1, a cloak
+1, a coat
+1, a fez
+1, garters
+1, a girdle
+1, a kerchief
+1, leggings
+1, a pouch
+1, a coinpurse
+1, a robe
+1, sandals
+1, a scarf
+1, a shawl
+1, slippers
+1, a smock
+1, stockings
+1, a toga
+1, a veil
+1, a wallet
+
+
+;Decoration
+1, a coat of arms
+1, a bell
+1, a column
+1, curtains
+1, drapes
+1, a flag
+1, furs
+1, gilding
+1, an animal hide rug
+1, a wall inlay of [Inlay]
+1, a wall map
+1, a wall mirror
+1, molding
+1, a small niche in the wall
+1, wooden paneling
+1, peeling paint
+1, plaster on the walls
+1, wall sconces
+1, a decorative shield on the wall
+1, wall tile
+1, wallpaper
+1, whitewash 
+
+;Inlay
+1, ivory
+1, metal
+1, tile
+1, stone
+1, fine wood
+
+;Furnishings
+
+;Food
+1, a block of cheese
+1, a stale loaf of bread
+1, a nearly empty bottle of wine
+1, a tasty loaf of bread
+1, a sausage
+.2, a roast pig
+1, sandwich meats
+1, apples
+1, grapes
+1, pears
+1, carrots
+1, a tomato
+1, a worm-riddled apple
+1, an orange
+1, greens
+1, wild strawberries
+1, a cake
+1, a pie
+1, a muffin
+1, a biscuit
+1, a stale cake
+1, a sunken-in, rotting mess of a pie
+1, a biscuit that's as hard as a rock
+1, milk
+
+;Magic
+
+;Light
+
+;Markings
+
+;Machine
+
+;Musical
+
+;Odors
+
+;Organic
+
+;Plant
+
+;Restraints
+
+;Noises
+
+;Stairway
+
+;Structure
+
+;Weapons
+1, a  short sword  that [WeaponCondition]  
+1, a  broadsword  that [WeaponCondition]  
+1, a  spear that [WeaponCondition]  
+1, a quarterstaff that [WeaponCondition] 
+1, a knife that [WeaponCondition] 
+1, a battle-axe that [WeaponCondition] 
+1, a warhammer that [WeaponCondition] 
+1, a tonfa that [WeaponCondition] 
+1, a blackjack that [WeaponCondition] 
+1, a short bow that [WeaponCondition] 
+1, a hatchet that [WeaponCondition] 
+1, a whip that [WeaponCondition] 
+1, a javelin that [WeaponCondition] 
+1, a longbow that [WeaponCondition]
+1, a crossbow that [WeaponCondition]
+1, a cestus that [WeaponCondition]
+
+
+;WeaponCondition
+1, is broken
+1, is dented beyond repair
+1, is cracked
+1, is mouldering
+.2, crumbles into dust the instant that you touch it
+1, is riddled with wormholes
+.2, is actually just an illusion
+1, is half-eaten away by some sort of acid
+1, was badly burned/melted by an intense heat of some sort
+4, looks to be in decent condition
+1, is lightly damaged, but could be repaired with about one Turn's worth of effort
+.1 is a masterwork; truly one of the finest in this land!
+1, is pretty badly damaged, but there's a 50% chance that you could repair it to working condition if you spent two Turns working on it
+
+
+;Animals
+
+;Bed
+1, a feather bed
+1, a pair of bunk beds
+1, a canopied bed
+1, a curtained bed
+1, an opulent, king-sized bed, enclosed by thin, wooden walls
+1, a cot
+1, a mattress on the floor
+1, a water bed
+
+;Armor
+1, Light armor that [ArmorCondition]
+1, Medium armor that [ArmorCondition]
+1, Heavy armor that [ArmorCondition]
+.1, Diamond armor that [ArmorCondition]
+.1, Dragonscale armor that [ArmorCondition]
+.1, Demonic armor that [ArmorCondition]
+.1, Divine armor that [ArmorCondition]
+.1, Living armor that [ArmorCondition] and [Personality]
+.1, Possessed armor that [ArmorCondition] and [Personality]
+
+
+
+;ArmorCondition
+1, is broken
+1, is dented beyond repair
+1, is cracked
+1, is mouldering
+.2, crumbles into dust the instant that you touch it
+1, is riddled with wormholes
+.2, is actually just an illusion or after-image of the real thing
+1, is half-eaten away by some sort of acid
+1, was badly burned/melted by an intense heat of some sort
+4, looks to be in decent condition
+1, is lightly damaged, but could be repaired with about one Turn's worth of effort
+.1 is a masterwork; truly one of the finest in this land!
+1, is pretty badly damaged, but there's a 50% chance that you could repair it to working condition if you spent two Turns working on it
+
+;Personality
+1, is a complete and total dick
+1, is an evil monster who pretends to be a champion of good
+1, is genuinely helpful, but has a hard time shutting up
+1, is a champion of good, but resents its current situation
+1, is a completely chaotic mess who tries to destroy everything all the time
+1, is overprotective in an annoyingly fawning manner
+1, is a sycophantic yes-man who only wants to please you
+1, is an action junkie who wants to GoGoGO! all of the damn time
+1, has a bit of a split personality, with [TrueSelf/Facade.main]
+1, is overtly sexual, in a pretty charming, effective sort of way
+1, is overtly sexual, in a creepy, crude sort of way
+1, is obsessed with acquiring knowledge, and not particularly concerned with the needs of the flesh

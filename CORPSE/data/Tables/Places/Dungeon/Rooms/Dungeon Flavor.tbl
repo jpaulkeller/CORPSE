@@ -1,0 +1,134 @@
+: Dungeon Flavor
+{:AIR}
+{:SMELLS}
+{:DEBRIS}
+{:FLORA}
+
+: Air
+A slight but noticeable downdraft is detectable.
+A slight but noticeable updraft is detectable.
+A slightly damp breeze wafts through this area.
+A strong air current here comes and goes in gusts.
+A strong, constant air current causes a howling sound here.
+A very slight draft is here.
+Enough of an air current flows here that it could be considered slightly windy
+Fog clings to the ground here.
+The air hangs with smoke.
+The air here is still, but noticeably cold.
+The air here is warmer than in other nearby areas.
+The air here seems colder near your feet.
+The air is slightly foggy here.
+There is a noticeable downdraft from some kind of ventilation system.
+There is a noticeable updraft from some kind of ventilation system.
+
+: Smells
+8x {:SMELL START} {:smell end}.
+3x A pile of what can only be {:smelly pile} {:floor location} {:smells bad}.
+A murky pool {:floor location} seems to be the source of a foul {smell:synonym foul} {of|like} {smell:foul}
+A sharp metallic {smell:synonym} permeates the air, like {:metallic smell}.
+
+: smell start
+Although there is no obvious source,
+As you inhale here,
+Though hard to detect at first,
+When you sniff the air,
+
+: smell end
+the area smells of {smell:like}
+there is a {faint|distinct|lingering|pungent|strong}
+you {catch|detect|notice} a {:smell}
+
+: smell
+{smell:adj} {smell:synonym}
+{smell:synonym} {of|like} {smell:like}
+{smell:synonym pleasant} {of|like} {smell:pleasant}
+{smell:synonym foul} {of|like} {smell:foul}
+
+: smelly pile
+entrails and gore, {crawling with maggots|buzzing with flies}
+fish parts buzzing with flies
+manure
+rotting vegetation
+waste buzzing with flies
+
+: smells bad
+causes a strong odor here
+causes the room to reek
+fills the room with its stench
+overwhelms your sense of smell
+
+: metallic smell
+3x iron filings
+a blacksmith’s forge
+
+: debris
+5x The room is mostly bare, except for {:junk}.
+2x The room is entirely bare.
+The floor has muddy tracks all over it. There is {:junk}.
+The floor has some sand on it and {:junk}.
+The floor is a layer of dried, cracked mud, along with {:junk}.
+The floor is covered in small bits of rock and rubble, as well as {:junk}.
+The floor is littered with stones and large rubble, in addition to {:junk}.
+
+: junk
+5x {:crud}
+2x {:crud} and {:crud}
+{:crud}, {:crud} and {:crud}
+{debris:stuff}
+{debris:stuff} and {:crud}
+
+: crud
+5x {debris: anywhere crud} {:any surface}
+50x {debris: floor crud} {:floor location}
+{size} cracks {:crack location}
+{:damp spots}
+
+: floor location
+4x near the {compass:4} wall of the room
+4x near the {compass:corner} corner of the room
+near the center of the room
+
+: any surface
+4x on the ceiling near the {compass:4} side of the room
+4x on the {compass:4} wall
+4x on the floor near the {compass:4} side of the room
+near the center of the room on the floor
+near the center of the room on the ceiling
+in the ceiling corner of the {compass:4} wall
+in the corner of the floor and the {compass:4} wall
+
+: crack location
+in the ceiling near the {compass:4} side of the room
+in the {compass:4} wall
+on the floor near the {compass:4} side of the room
+
+: damp spots
+3x a {size} damp area {:any surface}
+a {size} puddle {:floor location} {:drip}{50% {:damp flora fauna}}
+a trickle of water from the {compass:8} wall onto the floor {:damp flora fauna}
+
+: drip
+where a drip from the ceiling has collected
+
+: damp flora fauna
+- apparently the home of a small family of frogs
+accompanied by a small {color:simple} and {color:simple{!different}} salamander
+with a largish bullfrog eyeing you warily
+with some blackish mold around the area
+with some slimy green algae present as well
+
+: flora
+30x Spots of {color} mold dot the room
+15x Splotches of {color} lichen dot the floor and walls
+10x {:mushrooms} grow in clumps {:floor location}
+10x A small patch of moss grows {:floor location}
+10x Slime molds seem to be growing {:floor location}
+5x Splotches of {color} lichen dot the floor and walls, but are concentrated {:any surface}
+A bit of ivy climbs the {compass:4} wall
+A few bits of grass and weeds poke through cracks {:floor location}
+A few vines climb the walls in the {compass:corner} corner
+
+: mushrooms
+A few large toadstools
+Some spindly thin mushrooms
+Tiny, squat mushrooms

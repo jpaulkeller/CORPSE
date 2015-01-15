@@ -1,26 +1,58 @@
 .Biome, Characteristics, Vegetation
 
-: Walter
-equatorial; always moist and lacking temperature seasonality; evergreen tropical rain forest
-tropical; summer rainy season and cooler dry season; seasonal forest, scrub, or savanna
-subtropical; highly seasonal, arid climate; desert vegetation with considerable exposed surface
-mediterranean; winter rainy season and summer drought; sclerophyllous (drought-adapted), frost-sensitive shrublands and woodlands
-warm temperate; occasional frost, often with summer rainfall maximum; temperate evergreen forest, somewhat frost-sensitive
-nemoral; moderate climate with winter freezing; frost-resistant, deciduous, temperate forest
-continental; arid, with warm or hot summers and cold winters; grasslands and temperate deserts
-boreal; cold temperate with cool summers and long winters; evergreen, frost-hardy, needle-leaved forest (taiga)
-polar; very short, cool summers and long, very cold winters; low, evergreen vegetation, without trees, growing over permanently frozen soils
+: Biome = Terrestrial + Aquatic
 
-coral reef
-estuary
-ocean
-ponds and lakes
-streams and rivers
-wetlands
+: Terrestrial
+alpine tundra
+arid desert
+boreal; cold temperate with cool summers and long winters; evergreen, frost-hardy, needle-leaved forest (taiga)
+continental; arid, with warm or hot summers and cold winters; grasslands and temperate deserts
+dry steppe
+equatorial; always moist and lacking temperature seasonality; evergreen tropical rain forest
+grass savanna
+ice sheet
+mediterranean; winter rainy season and summer drought; sclerophyllous (drought-adapted), frost-sensitive shrublands and woodlands
+monsoon forest
+nemoral; moderate climate with winter freezing; frost-resistant, deciduous, temperate forest
+polar desert
+polar; very short, cool summers and long, very cold winters; low, evergreen vegetation, without trees, growing over permanently frozen soils
+subtropical dry forest
+subtropical moist forest
+subtropical; highly seasonal, arid climate; desert vegetation with considerable exposed surface
+taiga
+temperate broadleaf forest
+tree savanna
+tropical rainforest
+tropical; summer rainy season and cooler dry season; seasonal forest, scrub, or savanna
+tundra
+warm temperate; occasional frost, often with summer rainfall maximum; temperate evergreen forest, somewhat frost-sensitive
+xeric shrubland
 {arctic |alpine |}tundra
 {coastal |cold |semiarid |}desert
 {savanna|prairie}
 {tropical |temperate |boreal |}forest
+
+: Aquatic
+benthic zone 
+cold seeps 
+continental shelf 
+coral reef 
+demersal zone
+estuary
+hydrothermal vents 
+intertidal zone
+kelp forest 
+littoral
+mangrove forest
+neritic zone 
+ocean
+pelagic zone 
+ponds and lakes
+riparian
+streams and rivers
+wetlands
+
+===
 
 : WWF
 Tropical and subtropical moist broadleaf forests (tropical and subtropical, humid)
@@ -38,23 +70,6 @@ Mediterranean forests, woodlands, and scrub or sclerophyll forests (temperate wa
 Deserts and xeric shrublands (temperate to tropical, arid)
 Mangrove (subtropical and tropical, salt water inundated)
 
-
-Mediterranean vegetation
-alpine tundra
-arid desert
-dry steppe
-grass savanna
-ice sheet and polar desert
-monsoon forest
-subtropical dry forest
-subtropical moist forest
-taiga
-temperate broadleaf forest
-tree savanna
-tropical rainforest
-tundra
-xeric shrubland
-
 Terrestrial biomes
   Polar/montane
     Tundra Taiga, Boreal forests Montane grasslands and shrublands
@@ -65,19 +80,4 @@ Terrestrial biomes
   Dry
     Mediterranean forests, woodlands, and scrub Deserts and xeric shrublands
   Wet
-    Flooded grasslands and savannas Riparian Wetland
-
-Aquatic biomes   
-  Pond 
-  Littoral
-  Intertidal zone
-  Mangrove forest
-  Kelp forest 
-  Coral reef 
-  Neritic zone 
-  Continental shelf 
-  Pelagic zone 
-  Benthic zone 
-  Hydrothermal vents 
-  Cold seeps 
-  Demersal zone
+    Flooded grasslands and savannas

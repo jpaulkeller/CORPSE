@@ -1,0 +1,44 @@
+/ http://random-generator.com/index.php?title=Arcane_Substance
+
+{herb}
+{monster} {organ}
+{reagent}
+{:adj} {~{:material}}
+{:material} of {evocative:noun}
+{:material} {:post}
+
+: Adj
+aethereal
+arcane
+astral
+celestial
+diabolic
+distilled
+eldritch
+elemental
+ethereal
+explosive
+faerie
+heavenly
+mephitic
+necrotic
+planar
+prismatic
+pure
+vital
+
+: Material
+acid
+crystals
+distillate
+essence
+ether
+nectar
+phlogiston
+quintessence
+unguent
+
+: Post
+arcana
+necrotica
+vitae

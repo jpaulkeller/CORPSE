@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -96,14 +97,23 @@ public final class Script
          FileInputStream fis = new FileInputStream(file);
          InputStreamReader isr = new InputStreamReader(fis);
          br = new BufferedReader(isr);
-
+         
          String line = null;
          while ((line = br.readLine()) != null && !line.startsWith(Constants.EOF))
          {
             if (nested && IGNORE_HTML.matcher(line).find())
                continue;
             if (line.startsWith(SCRIPT_COMMAND))
-               parseScriptCommand(br, resolve(line), buf);
+            {
+               String resolved = resolve(line);
+               Matcher m = LOOP_BEGIN.matcher(resolved);
+               if (m.matches())
+               {
+                  List<String> loop = loadLoop(br);
+                  for (int i = 0, count = Macros.resolveNumber(m.group(1)); i < count; i++)
+                     processLoop(loop, 0, buf);
+               }
+            }
             else
                processLine(line, buf);
          }
@@ -121,27 +131,51 @@ public final class Script
       return buf.toString();
    }
 
-   private void parseScriptCommand(final BufferedReader br, final String command, final StringBuilder buf)
-      throws IOException
+   private List<String> loadLoop(final BufferedReader br) throws IOException
    {
-      Matcher m = LOOP_BEGIN.matcher(command);
-      if (m.matches())
+      List<String> loop = new ArrayList<>();
+      
+      int depth = 1;
+      String line = null;
+      while ((line = br.readLine()) != null)
       {
-         String line;
-         int count = Macros.resolveNumber(m.group(1));
-         if (count > 0)
+         // if (nested && IGNORE_HTML.matcher(line).find()) continue; TODO
+         if (LOOP_BEGIN.matcher(line).find())
+            depth++; // start a nested loop
+         else if (LOOP_END.matcher(line).find() && (--depth == 0))
+            break; // end outer loop
+         loop.add(line);
+      }
+      
+      return loop;
+   }
+   
+   private void processLoop(final List<String> loop, final int start, final StringBuilder buf)
+   {
+      int fromIndex = start;
+      
+      Iterator<String> iter = loop.subList(start, loop.size()).iterator();
+      while (iter.hasNext())
+      {
+         String line = iter.next();
+         fromIndex++;
+         if (line.startsWith(SCRIPT_COMMAND))
          {
-            List<String> lines = new ArrayList<String>();
-            while ((line = br.readLine()) != null && !LOOP_END.matcher(line).find())
-               lines.add(line);
-            
-            for (int i = 0; i < count; i++)
-               for (String loopLine : lines)
-                  processLine(loopLine, buf);
+            String resolved = resolve(line);
+            Matcher m = LOOP_BEGIN.matcher(resolved);
+            if (m.matches())
+            {
+               for (int i = 0, count = Macros.resolveNumber(m.group(1)); i < count; i++)
+                  processLoop(loop, fromIndex, buf);
+               line = iter.next();
+               while (!LOOP_END.matcher(line).find() && iter.hasNext()) // skip the inner loop
+                  line = iter.next();
+            }
+            else if (LOOP_END.matcher(line).find())
+               return;
          }
          else
-            while ((line = br.readLine()) != null && !LOOP_END.matcher(line).find())
-               ; // skip to the end of the loop
+            processLine(line, buf);
       }
    }
    

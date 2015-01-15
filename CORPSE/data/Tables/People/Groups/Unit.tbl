@@ -1,0 +1,54 @@
+: Echelon
+An element
+A detachment
+A patrol
+A section
+A squad
+A team
+A troop
+A warband
+Assaulters
+Defenders
+
+: Number
+{75%{2-19}}{1st|2nd|3rd}
+{{11-13}|{19}{0|{4-9}}}th
+
+: Special Duty
+{10% covertly }{escorting|accompanied by} {:Special}
+
+: Special
+Abecedart
+Adventurer
+ambassador
+Artificer
+Artillerist
+Bannerman
+Captain
+Chronicler
+Craftsman
+Engineer
+Foreman
+Gatekeeper
+Graybeard
+High Captain
+Horncaller
+Khirurgeon
+Longbeard
+Mask bearer
+Master engraver
+Master of Arches
+Master of Doors
+Master of Forges
+Master of Secrets
+Noble axe bearer
+Quartermaster
+Rune caster
+Rune priest
+Runesmith
+Seneschal
+Trader
+Treasurer
+Tyro artificer
+Warden
+{Title Feudal:Noble}

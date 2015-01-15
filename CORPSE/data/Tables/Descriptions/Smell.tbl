@@ -1,9 +1,43 @@
+/ Examples: 
+/ {smell:adj} {smell:synonym}
+/ {smell:synonym} like {smell:like}
+/ {smell:synonym pleasant} like {smell:pleasant}
+/ {smell:synonym foul} like {smell:foul}
+
+: Smell
+odorless
+{smell:adj}
+like {smell:like}
+
+: Synonym
+{:synonym pleasant}
+{:synonym foul}
+emanation
+essence
+scent
+tang
+trace
+whiff
+
+: Synonym Pleasant
+aroma
+bouquet
+fragrance
+redolence
+
+: Synonym Foul
+odor
+reek
+smell
+stench
+stink
+
+: Adj
 acidic
 acrid
 alcoholic
 antiseptic
 aromatic
-ashes
 astringent
 balmy
 bitter
@@ -22,50 +56,82 @@ foul
 fragrant
 fresh
 gamy
-indescribable, but {pleasant|foul} smell
-like a mixture of {flora} and {fauna}
-like a {fauna}
-like a {flora}
-like damp earth
-like freshly-baked bread
-like manure
-like mould
-like rotting vegetation
-like the sea
-like urine
-like {aromatic}
-like {provisions}
-like {herb}
-like {reagent}
-like {spice}
+indescribable, but {pleasant|foul}
 medicinal
 mentholic
-mildewed
+metallic
+mildew
 moldy
+musky
 musty
-odorless
-perfumed
 pleasant
 pungent
 putrid
 rancid
-reek
 rich
 rotten
 salty
 savory
-scented
 sharp
 sickly
 smoky
 sour
 spicy
 spoiled
-stagnant
-stale
-stench
 stinky
-strong
 sweet
 tempting
 {taste}
+
+: Like
+a mixture of {flora} and {fauna}
+a {fauna}
+a {flora}
+alcohol
+animal musk
+ashes
+body odor
+chemicals
+damp earth
+ozone
+sawdust
+smoke
+the sea
+{aromatic}
+{herb}
+{provisions}
+{spice}
+{:pleasant}
+{:foul}
+
+: Pleasant
+cinnamon
+coffee
+flowers
+fresh air
+freshly baked bread
+freshly cut grass
+incense
+mint
+rain
+vanilla
+
+: Foul
+a slaughterhouse
+blood
+burned hair
+death
+manure
+mildew
+mold
+old fish
+rancid milk
+rotting {food|vegetation}
+sewer effluvia
+stagnant water
+stale sweat
+strong alcohol
+sulphur
+urine
+vinegar
+vomit

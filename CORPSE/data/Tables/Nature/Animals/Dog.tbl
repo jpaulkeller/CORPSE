@@ -1,0 +1,135 @@
+/ http://random-generator.com/index.php?title=Dog_Description
+
+10x {Dog Name}, a {:gender} {:breed}. {:PersonalitySentence}
+
+: Gender
+3x male
+2x neutered male
+3x female
+2x spayed female
+
+: Breed
+10x {:PureBreed}
+4x half {:PureBreed}, half {:PureBreed}
+3x of unknown heritage, some {:PureBreed} visible
+2x mutt with no ascertainable heritage visible
+
+: PureBreed
+7x Affenpinscher
+7x Airedale Terrier
+7x Akita
+7x Northlander Malamute
+7x Water Spaniel
+7x Helanosian Shepherd
+7x Basenji
+7x Basset Hound
+7x Bedlington Terrier
+7x Malinois
+7x Tervuren
+7x Bichon Frise
+7x Border Terrier
+7x Borzoi
+7x Briard
+7x BrusselsGriffon
+7x Cairn Terrier
+7x Canaan Dog
+7x Carolina Dog
+7x Corgi
+7x Cavalier Spaniel
+7x Chow Chow
+7x Dandied Dinmont
+7x Ibizan Hound
+10x Afghan
+15x Beagle
+15x Bloodhound
+15x Boxer
+15x Bull Terrier
+15x Bulldog
+15x Collie
+15x Dalmatian
+15x Deerhound
+15x Doberman
+15x Elkhound
+15x Foxhound
+15x Golden Retriever
+15x Great Dane
+15x Greyhound
+15x Husky
+10x Keeshond
+20x Labrador
+15x Mastiff
+10x Newfoundland
+10x Pointer
+10x Pomeranian
+10x Poodle
+10x Pug
+10x Red Setter
+15x Retriever
+15x Rottweiler
+15x Schnauzer
+15x Sheepdog
+15x German Shepherd
+15x St. Bernard
+15x Terrier
+10x Weimeraner
+15x Wolfhound
+5x Domesticated Fox
+5x Domesticated Wolf
+
+: PersonalitySentence
+10x 
+5x This dog's most notable personality trait is that it is {:Personality}.
+3x This dog has a {:Relationship} {:Object}.
+
+: Personality
+11x cowardly
+12x lazy
+7x greedy
+10x bad-tempered
+10x brave
+10x noble
+12x clever
+10x skittish
+10x alert
+8x cunning
+10x loyal
+10x stupid
+10x smart
+10x attentive
+10x affectionate
+10x protective
+10x mistrustful of strangers
+10x mistrustful of {:Object}
+10x prone to barking a lot
+10x fond of howling at the moon
+6x playful
+6x a biter
+6x hyperactive
+6x energetic
+6x fond of sneaking up on people and pouncing on them
+
+: Relationship
+10x special fondness for
+10x strong dislike of
+5x notable affinity for
+5x wariness around
+6x fear of
+3x noticeable affection for
+3x suspicion of
+
+: Object
+10x children
+10x old people
+10x short folk
+6x other dogs
+6x horses
+5x crowds
+4x people with beards
+4x bald people
+4x cats
+4x rodents
+3x cattle
+3x sheep
+3x goats
+2x birds
+3x snakes

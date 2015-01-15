@@ -1,18 +1,20 @@
-: 4
+: Cardinal
 north
 south
 east
 west
 
-: 8
-north
+: Corner
 northeast
-east
 southeast
-south
 southwest
-west
 northwest
+
+: 4 = Cardinal
+
+: 8
+{:cardinal}
+{:corner}
 
 : 16
 north

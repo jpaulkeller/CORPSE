@@ -5,10 +5,7 @@
 <html>
 <body>
 
-/ Generate a random name.
-/ Ask the user for a name, using the random one as a default.
-/ Assign the entered name to "NAME" for re-use later.
-/ Randomize using the name as the seed, for consistent results.
+/ Query for name (using random default); assign and randomize
 # {NAME={Name?{Name}'s {Cave:Name}}}
 
 <p><b>{NAME}</b>

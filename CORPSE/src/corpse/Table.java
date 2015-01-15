@@ -470,7 +470,6 @@ public class Table extends ArrayList<String>
    {
       CORPSE.init(true);
 
-      /*
       for (String name : new ArrayList<String>(Table.TABLES.keySet()))
       {
          Table table = Table.getTable(name);
@@ -478,12 +477,14 @@ public class Table extends ArrayList<String>
       }
       System.out.println();
 
+      /*
       test("Flora", "including a table with a default subset");
       test("Spell", "including a subset");
       test("Fauna", "included subsets");
       test("Mine", "weighted lines");
       test("Profession#.*craftsman.*#", "filter subsets");
       test("METALLIC", "including a subset");
+      test("Metal", "subsets");
    
       // TODO: there must be a better way to pre-load the filtered table
       new Table("COLOR", "C.+");
@@ -493,7 +494,5 @@ public class Table extends ArrayList<String>
       new Table("SPELL", ".*(WALK|FALL).*");
       test("SPELL#.*(WALK|FALL).*#", "filter with alteration");
       */
-      
-      test("Metal", "subsets");
    }
 }

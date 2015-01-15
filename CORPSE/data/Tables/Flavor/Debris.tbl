@@ -1,0 +1,145 @@
+/ 
+
+: Debris
+
+: stuff
+TODO http://random-generator.com/
+
+: anywhere crud
+4x a {size} slimy area
+4x mold
+cobwebs
+scratches and abrasions
+
+: floor crud
+2x a small pile of stones
+2x a {size} pile of rubble
+2x guano
+2x hair/fur bits
+2x pottery shards
+2x rags
+2x some rotting wood pieces
+3x dry leaves and twigs
+3x sticks
+3x the leftover ashes and charcoal of a cook fire
+3x {:bones}
+3x {:broken armor}
+4x {:broken weapon}
+5x smallish mushrooms
+6x {:broken gear}
+6x {condition:clothing poor} {clothing} {lies|is heaped|is discarded}
+a broken glass bottle
+a fine layer of ash covering everything
+a single broken arrow
+a wax blob (candle stub)
+a {size} puddle of dried blood
+food scraps
+glass shards and scorch marks (where a flask of oil was smashed and set aflame)
+leather boot
+scattered teeth/fangs
+some dung
+some wax drippings
+straw
+{2d6} broken arrows
+{70%{:coin damage} }{:coin}
+
+: bones
+10x the {:bone condition} bones of a {:bone animal}
+5x a gnawed and broken humanoid {:specific bone}
+5x an intact humanoid {:specific bone}
+3x a jumble of {size} bones
+a neat stack composed entirely of humanoid {:specific bone}s
+
+: bone condition
+disarrayed
+heavily gnawed
+mostly intact
+partially calcified
+
+: bone animal
+3x rat
+bat
+bird
+cat
+dog
+frog
+horse
+lizard
+snake
+unknown creature
+
+: specific bone
+3x femur
+3x skull
+2x jawbone
+2x rib
+2x vertebrae
+arm bone
+fibula
+finger bone
+pelvic girdle
+tibia
+
+: coin damage
+a bent
+a bite-marked
+a chunk of metal that may once have been a
+a defaced
+a dull but complete
+a partially melted and deformed
+half a
+
+: coin
+20x copper coin
+5x silver coin
+2x electrum coin
+2x gold coin
+platinum coin
+
+: broken weapon
+a bent and rusted iron bar
+a bent axe head
+a blunt javelin head
+a broken axe haft
+a broken bow
+a broken stone spearhead
+a chipped and rusty meat cleaver
+a cracked hammer head
+a dagger hilt
+a damaged {weapon}
+a pick handle
+a piece of broken pole or staff about {8} feet long
+a rusted, pitted knife
+a rusty meathook
+a shattered sword hilt with several shards
+a splintered club
+
+: broken armor
+a bent and useless greave
+a broken epaulet
+a damaged {armor}
+a dented and rusty breastplate
+a dented helmet
+a rusty gauntlet
+a slashed and rusted chain shirt
+
+: broken gear
+a {2d6}-foot length of rusty chain
+a bent and rusted spike
+a bent lock pick
+a broken shovel head
+a cracked flask
+a defaced and broken holy symbol
+a gnawed-through leather boot
+a moldy bedroll surrounded by several empty bottles
+a pile of rotten rope
+a ripped wineskin
+a rusted spike
+a rusty and bent crowbar
+a shattered lantern
+a torch stub
+a torn backpack
+a torn banner
+a torn sack’s remnants
+an abandoned {~{equipment}}
+

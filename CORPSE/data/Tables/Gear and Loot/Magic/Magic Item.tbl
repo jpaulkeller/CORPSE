@@ -1,0 +1,76 @@
+/ http://random-generator.com/index.php?title=DnD_Next_Magic_Item_Detail_Cruncher
+
+: Magic Item
+Creator: {:creator} Nature: {:nature}
+Creator: {:creator} Nature: {:nature} Property: {:property}
+Creator: {:creator} Nature: {:nature} Quirk: {:quirk}
+Creator: {:creator} Nature: {:nature} Property: {:property} Quirk: {:quirk}
+
+: Creator
+Abyssal (black metal or horn, or tanned demon hide; runes spell nonsense words; owner has unrememberable nightmares)
+3x Ancient human (meaning of any symbols forgotten; from a fallen kingdom or ancient figure of legend)
+Celestial (weighs half normal weight, inscribed with wings, suns, etc.)
+Draconic (made of shed dragon scales; incorporates parts of horde; grows warm w/in 100' of dragons)
+Drow (half normal weight; black; inscribed with spiders; may disintegrate from overexposure to sunlight)
+Dwarven (durable; dwarven runes; hard to damage)
+Elemental (air) (light; feels hollow but tough as usual; fabrics are wispy gauze and silk)
+Elemental (earth) (stone or studded with polished rock)
+Elemental (fire) (warm to touch; crafted from black iron; sigils of flames and leering efreets; red and orange)
+Elemental (water) (leather or cloth replaced with fish scales; metal replaced with seashells and worked coral)
+3x Elven (well preserved, light, flexible where necessary, leaf and vine motifs)
+Fiendish (metal - black iron with runes, warm to touch, fiendish faces; cloth - demon or devil hide)
+Giant (looks a little over-sized)
+Gnome (looks overly mundane)
+
+: Nature
+Arcane (mage's sigil; faint magical glow)
+Bane (made to kill a certain kind of enemy; they fear it)
+Storied (once wielded by great hero or villain)
+Ornament (used for special occasions; decorated with pretty shit)
+Prophecy (bearer of the item destined to play key role in future events)
+Religious Icon (devoted to particular god; followers seek it)
+Sinister (linked to a terrible deed; DC 15 to recall)
+Symbol of Power
+
+: Property
+19x {:properties}
+{:properties}; {:properties}
+
+: Properties
+Beacon (light - bright 10', low 20'; command word)
+Compass (points north with concentration)
+Conscientious (pangs of conscience for malevolent acts)
+Delver (know depth underground and direction of nearest staircase etc.)
+Gleaming (never gets dirty)
+Guardian (+2 initiative)
+Harmonious (attuned in 1/10 normal time)
+Hidden Message (visible at a certain time or under certain conditions)
+Illusion (alterable appearance in minor ways)
+Key
+Language (you can speak the creator's language or something)
+Sentinel (glows when creator's enemies are within 100')
+Song Craft (song reveals a secret)
+Strange Material
+Temperate (feels no effects of temps 0-120f)
+Unbreakable
+War Leader (voice carries up to 500')
+Waterborne (floats in water; advantage to swim)
+Wicked (encourages wickedness)
+
+: Quirk
+Blissful (creates optimism; butterflies and shit)
+2x Confident (bearer feels nigh invincible)
+Coveted (nearby intelligent creatures want it)
+Covetous (owner obsessed with material wealth)
+2x Frail (looks decrepit, slowly falling apart)
+2x Hungry (only works if a drop of fresh humanoid blood is applied in past day)
+Loud (makes loud noise when properties activate)
+Melancholy (makes you sad when confronted with overwhelming odds)
+Metamorphic (appearance changes constantly, slightly)
+Mistaken (bearer keeps being mistaken for someone else)
+Muttering (grumbles and mutters constantly)
+Painful (lingering aching; flashes of pain when activating a property)
+2x Possessive (demands attunement and nothing else may be attuned)
+Repellent (makes you feel gross and scared)
+Slippery (resists being picked up - opposed dex {:mod +0})
+Slothful (-2 initiative)

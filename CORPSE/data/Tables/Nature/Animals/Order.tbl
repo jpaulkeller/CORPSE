@@ -1,5 +1,6 @@
 .Order     Notes
 
+: Order
 avian      birds
 canine     dogs, foxes, wolves
 feline     cats, lions, tigers, etc.
@@ -11,3 +12,52 @@ reptilian  reptiles and amphibians
 rodentian  rats and other rodents
 ursine     bears
 fauna      all animals
+
+: Arcane
+abyssal
+acidic
+alchemical
+anarchic
+ancient
+animated
+aquatic
+arcane
+astral
+astrological
+astronomical
+auran
+axiomatic
+celestial
+chaotic
+chromatic
+chthonic
+clockwork
+demonic
+diabolic
+draconic
+eldritch
+electric
+elemental
+ethereal
+fiendish
+fiery
+fluid
+gaseous
+herbal
+hidden
+ignan
+invisible
+mineral
+mechanical
+necromanic
+organic
+planar
+pyroclastic
+quasi-elemental
+secret
+stygian
+telluric
+terran
+thermal
+umbral
+unseen

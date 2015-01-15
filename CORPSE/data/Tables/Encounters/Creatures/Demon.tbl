@@ -1,7 +1,7 @@
 / http://random-generator.com/index.php?title=1E_DMG_Demon
 
 : Demon
-{:HEAD} {:FACE} {:BODY} {:SKIN} {50%{:WINGS OR TAIL} }{50%{:ODOR}}
+{Demon Name}: {:HEAD} {:FACE} {:BODY} {:SKIN} {50%{:WINGS OR TAIL} }{50%{:ODOR}}
 
 : head
 This demon has a {:head} head{75% with {:head adornment}}.

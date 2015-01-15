@@ -1,0 +1,560 @@
+/ http://random-generator.com/index.php?title=Delver_Fate
+
+;they
+1,He
+1,She
+
+;main
+1,[disease]
+1,[exploration]
+1,[insane]
+1,[died] and was [fed to] [devoured]
+1,[killed]
+1,[survived]
+1,[trap]
+1,disappeared [disappeared]
+1,fell [fell]
+1,was [captured verb] [captured]
+
+;story
+1,[Fantasy Names.StartFemNoTitle] [phoa] [eptd]. [sources_say] she [main]
+1,[Fantasy Names.StartNoTitle] was {{ia|[Fantasy Profession.adventurers]}} who left [eptd]. Near the area called [Megadungeon Zone Names.main], he [main]
+1,[Fantasy Names.StartNoTitle] [phoa] [eptd]. [sources_say] he [main]
+1,[Fantasy Names.StartNoTitle] [phoa] [eptd]. Near the area called [Megadungeon Zone Names.main], he [main]
+
+;eptd
+1,[with] [who] the [Dungeon Area Name.main]
+
+;phoa
+1,was {{ia|[Fantasy Profession.commoner]}} who hired on as {{ia|[Hireling.hireling profession]}}
+
+;who
+1,{{ia|[expedition]}} into
+1,{{ia|[expedition]}} that [sought] to [goal]
+1,[crew] on their way to
+1,[crew] that were on their way to [goal]
+
+;with
+1,as part of
+1,attached to
+1,for
+1,on
+1,to join in
+1,with
+
+;expedition
+1,adventure
+1,delving trip
+1,excursion
+1,expedition
+1,journey
+1,mission
+1,quest
+1,trek
+
+;crew
+1,a band of adventurers
+1,a bunch of folks who had recently met while drinking at [Inn and Tavern Names.main]
+1,a few close childhood friends who dreamed of adventure
+1,a military expedition
+1,a mob of angry villagers
+1,a pack of so-called adventurers
+1,a ragtag bunch of misfits
+1,a young nobleman seeking glory and his hired retinue
+1,an inexperienced crew of delvers
+1,an uncouth bunch of murderhobos
+1,several other unfortunates who responded to a posting at [Inn and Tavern Names.main]
+
+;sought
+2,intended
+1,aimed
+1,aspired
+1,set out
+1,sought
+1,strove
+1,undertook
+
+;goal
+1,attempt to inhabit
+1,become the most powerful faction in
+1,clear and settle
+1,clear the [humanoids] out of
+1,deal with the plague of [humanoids] coming from
+1,delve the depths of
+1,determine the fate of a previous expedition to
+1,discover the secrets of
+1,explore
+1,exterminate everything in
+1,loot
+1,map and survey
+1,recover the treasures of
+1,search for a legendary source of magical power in
+1,vanquish the ancient evil in
+
+;sources_say
+1,After drinking a considerable amount of alcohol,
+1,After several days of wandering in the dark,
+1,After the rest of the party [died] in a variety of gruesome ways,
+1,Although the rest of the party [main],
+1,As everyone who knows the popular ballad can tell you,
+1,As it is recorded in the town archives,
+1,Before the first torch had even burnt out,
+1,Due to a poor understanding of the party’s map,
+1,In accordance with what the soothsayer had prophesied,
+1,In an attempt to demonstrate bravery in the face of danger,
+1,Local rumor has it that
+1,On the second delve,
+1,The legend is that
+1,Within minutes of entering the dungeon,
+
+;exploration
+1,discovered and named the section now called [Megadungeon Zone Names.main], where they [main]
+1,found a secret door into [Megadungeon Zone Names.main], but inside, [main]
+1,managed to successfully avoid the [humanoids] nearest the surface but then [main]
+1,survived on the brink of starvation by scavenging bits of carrion and fungus for about a week, then [main]
+1,wandered in the darkness for many hours, completely lost, then [main]
+1,was scrupulously taking measurements of each chamber, cavern, and passageway for later publication and sale, but then [main]
+
+;captured verb
+1,abducted
+1,captured
+1,caught
+1,enslaved
+1,ensorceled
+1,kidnapped
+1,nabbed
+1,snared
+1,stolen away
+1,taken captive
+1,taken prisoner
+1,trapped
+
+;captured
+1,by [humanoids] and [capturedeath]
+1,by [humanoids] and assimilated into their tribe as [tribalrole]
+1,by [humanoids] but managed to escape and rejoin the party, then [main]
+1,by [humanoids] but subsequently sold to [deep_nation] in exchange for [slaveprice], then [main]
+1,by [humanoids], only to be [eaten]
+1,by [humanoids], [marked], and [worked]
+1,by a raiding party of [deep_nation], [marked], and taken to the depths of the earth
+1,by the [Secret Society Name.main], [cultprisoner]
+1,by the cult of [Demon Name.Main], [cultprisoner]
+1,by the mad wizard [ArcaneBooks.ArcaneAuthor], who used them for bizarre experiments, eventually combining them successfully with [dungeonpredator]
+
+;humanoids
+1,bandits
+1,degenerates
+1,gnolls
+1,goblins
+1,hobgoblins
+1,kobolds
+1,orcs
+1,pirates
+1,raiders
+1,rat-men
+
+;eaten
+1,[tenderized] and [fed to] [devourers]
+
+;tenderized
+1,beaten in a sack
+1,chained to a monolith
+1,clubbed unconscious
+1,cooked into stew with some [humanoids] the tribe had recently [captured verb]
+1,drowned in excrement
+1,firmly tied to a post
+1,flayed and roasted alive
+1,ground into a pulp
+1,hacked to pieces
+1,staked down
+
+;fed to
+1,consumed by
+1,devoured by
+1,eaten by
+1,feasted on by
+1,fed to
+1,gorged on by
+1,served to
+1,torn apart by
+
+;devourers
+1,an important delegation of [deep_nation], thereby sealing an important trade deal
+1,Guprah the Terrible
+1,the dragon [Dragon names.main]
+1,the tribe’s [tribalrole]
+1,the tribe’s other slaves
+1,the tribe’s pet [tribalpets]
+1,the whole tribe
+1,the young of the tribe
+
+;tribalpets
+1,centipedes
+1,Eyeless Ones
+1,giant snakes
+1,giant spiders
+1,hyenas
+1,lizards
+1,Ones Who Writhe
+1,oozes
+1,rats
+1,wolves
+1,worgs
+
+;marked
+1,branded on the face with a hot iron
+1,had a hand lopped off
+1,had all their hair burnt off
+1,had an eye put out by a hot iron
+1,had their feet burned
+1,had their thumbs cut off
+1,had their tongue cut out
+1,tattooed on the face
+1,underwent ritual scarification of the face
+
+;worked
+1,assigned as personal slave to the tribe’s [tribalrole]
+1,employed as a cook
+1,employed as a litterbearer for the tribe’s enormous [tribalrole]
+1,employed as a pleasure slave for the tribe’s [tribalrole], possibly alive but forever scarred
+1,put to work as a forge slave, possibly toiling there still
+1,put to work as a mushroom farmer among the tribe’s refuse
+1,put to work as a tutor for the tribe’s young
+1,put to work caring for the tribe’s pet [tribalpets] and cleaning up after them
+1,put to work in the mines, possibly toiling there still
+1,worked to death in the mines
+
+;capturedeath
+1,forced to fight [humanoids] the tribe had previously [captured verb] for the tribe’s amusement [pit_result]
+1,killed as a rite of adulthood for a new warrior in the tribe
+1,slain as a sacrifice to the tribe’s dark gods
+1,slowly tortured to the immense amusement of the tribe, then [eaten]
+1,staked to a wall to moan for the tribe’s amusement until dead and left there as decoration
+1,used as bait to catch [dungeonpredator]
+1,used as training exercise for the tribe’s warriors
+
+;tribalrole
+1,best warrior
+1,chieftain
+1,drinker-of-filth
+1,healer
+1,jester
+1,king
+1,midwife/birthing aide
+1,shaman
+1,sin-eater
+1,sloucher
+1,smith
+1,untouchable
+1,water-finder
+
+;deep_nation
+1,beholders
+1,cloakers
+1,derro
+1,drow
+1,duergar
+1,grimlocks
+1,illithids
+1,kuo-toa
+1,neogi
+1,quaggoth
+
+;slaveprice
+1,a dead rat
+1,a desiccated finger
+1,a few bags of food
+1,a few bottles of liquor
+1,a few shiny trinkets
+1,a small pouch of silver
+1,a temporary peace
+
+;cultprisoner
+1,and brainwashed into the cult, forgetting their former life entirely
+1,and eventually rose to the rank of [Secret Society Title.main] within the cult
+1,and had their heart eaten as a special feast for [Secret Society Title.main]
+1,and slain on the altars of the cult in a dark rite
+1,and was horribly disfigured by the cult’s vile rituals before perishing for their enjoyment
+1,but finally escaped after killing [Secret Society Title.main] and masquerading in his robes
+1,but one of the cultists, [Secret Society Title.main] befriended them and together they [main]
+
+;trap
+1,drowned in a flooded room trap because they couldn’t solve the associated puzzle in time
+1,fell prey to a poisoned arrow trap
+1,got hopelessly lost in a maze of illusory walls until they [main]
+1,got hopelessly lost in a maze of illusory walls until they starved to death
+1,got impaled on spikes at the bottom of a pit
+1,got separated from the party, got a foot caught in a steel trap, and starved to death
+1,triggered a poison gas trap on a lock and died in convulsions
+1,triggered a poisoned needle trap on a chest lock and died instantly
+1,triggered an acid trap and died instantly of burns
+1,triggered an explosive trap and died instantly of burns
+1,triggered an explosive trap, being horribly burned before they [main]
+1,was crushed by a falling block trap
+1,was sprayed by an acid trap, being horrifically scarred before they [main]
+
+;fell
+2,into [pit] [pit_result]
+1,during a difficult ledge traversal while belayed to the rest of the party, dragging them all to their deaths in the chasm below
+1,from a rotted-through rope bridge into a chasm [pit_result]
+1,into a catatonic stupor and died of starvation
+1,into a gelatinous cube, successfully warning the rest of the party of its existence
+1,into a river and swept downstream [river]
+1,into a sewer [sewer]
+1,into a trance and walked right into [pit] [pit_result]
+1,off a ledge into darkness [pit_result]
+1,off a narrow stone bridge over a chasm [pit_result]
+1,while being lowered by a rope into [pit] to investigate it, [pit_result]
+
+;river
+1,and drowned
+1,and drowned, only to rise again as undead
+1,but eventually swept out of danger into a calm surface river
+1,only to be captured and enslaved by [subsea_nation]
+1,only to be washed up on a beach deep within the earth, then [main]
+
+;sewer
+1,[river]
+1,and contracted a bizarre disease, then [main]
+1,where it is assumed the [sewer monsters] finished them off
+
+;sewer monsters
+1,giant rats
+1,otyughs
+1,sewer crocodiles
+1,sewer zombies
+1,sewer-[humanoids]
+1,wererats
+
+;subsea_nation
+1,aboleths
+1,aquatic elves
+1,ixitxachitl
+1,kuo-toa
+1,sahuagin
+
+;pit
+1,a chasm
+1,a chute leading to a lower level
+1,a pit
+1,a sinkhole
+1,a well
+1,an abandoned mine shaft
+
+;pit_result
+1,but managed to survive (although separated from the main party), then [main]
+1,but managed to survive with only a broken [broken], then [main]
+1,perishing thereby
+
+;broken
+1,arm
+1,collarbone
+1,finger
+1,foot
+1,hand
+1,hip
+1,jawbone
+1,leg
+1,nose
+1,rib
+1,spirit
+
+;devoured
+1,[dungeonpredator]
+1,[humanoids]
+1,[tribalpets]
+
+;dungeonpredator
+1,a band of [undead]
+1,a choker
+1,a flock of stirges
+1,a grick
+1,a hook horror
+1,a lich
+1,a mummy
+1,a naga
+1,a rogue golem
+1,a troll
+1,a vampire
+1,a wyvern
+1,an owlbear
+1,an umber hulk
+1,the [Stolen Lands Treasure.Chromatic] Dragon [Dragon names.main]
+
+;undead
+1,[corpse_desc] [corpses]
+1,shambling mounds
+1,skeleton orcs
+1,skeletons
+1,zombie orcs
+1,zombies
+
+;corpse_desc
+1,[Champion of darkness.description]
+1,angry
+1,blasphemous
+1,corrupted
+1,desecrated
+1,hungry
+1,ravenous
+1,shambling
+1,surprisingly polite
+1,unburied
+1,unholy
+1,walking
+
+;corpses
+1,corpses
+1,dead
+
+;killed
+1,[died] by the rest of the party [why]
+1,[died] in [killglory] against [dungeonpredator]
+1,[died] in [killglory] against a band of [humanoids]
+1,was [special_death]
+1,delved deep before dying in combat against a band of [deep_nation]
+
+;died
+1,died
+1,perished
+1,succumbed
+1,was butchered
+1,was dispatched
+1,was killed
+1,was slain
+1,was slaughtered
+
+;killglory
+10,combat
+1,a desperate defense
+1,a pitched battle
+1,a reckless attack
+1,glorious combat
+1,praiseworthy combat
+1,songworthy battle
+1,vainglorious battle
+1,valorous combat
+
+;why
+1,as a sacrifice to dark gods
+1,as they had run out of food and they looked tastiest
+1,for continually endangering the party by carelessness
+1,for cowardice during battle
+1,for trying to steal an improper share of loot
+1,out of mercy, due to agonizing and horribly infected wounds
+1,while he was heeding nature’s call, because the party accidentally thought it was an enemy scout
+
+;special_death
+1,[petrified] by a basilisk’s gaze
+1,[petrified] by a medusa’s gaze
+1,[petrified] by the bite of a cockatrice
+1,bitten by a vampire, becoming one of its foul spawn
+1,lured to a yellow musk creeper, who turned it into a zombie
+
+;petrified
+1,petrified
+1,turned into a statue
+1,turned to stone
+
+;disappeared
+1,and left a brief note to the party, saying he had left his handkerchief at home and needed to go back
+1,from camp while the party slept, without a trace
+1,in a flash of light
+1,in a puff of smoke
+1,while bringing up the rear of the party
+1,while scouting ahead
+
+;insane
+1,was driven mad and died horrifically while trying to complete dark rituals to become a lich
+1,was driven mad by the darkness and committed suicide
+1,was driven mad, and slowly but surely completed the transition to become a powerful lich
+1,went insane and had to be killed by the party to stop the screaming
+1,went insane with fascination for [occult], and was slain by [lightforces]
+1,went insane, slowly dying from arcane corruption until he was transformed into a [GreaterEvil] servant
+1,went murderously insane and slew the whole party
+1,went slowly mad and ceased all communication, then [main]
+
+;GreaterEvil
+1,dark
+1,dragon’s
+1,lich’s
+1,mummy’s
+1,vampire’s
+
+;occult
+1,[ArcaneBooks.DivinationType]
+1,black magic
+1,dark magic
+1,necromancy
+1,occult magicks
+1,the black arts
+1,the dark arts
+
+;lightforces
+1,battlepriests
+1,druids
+1,forces of light
+1,his own party
+1,magehunters
+1,members of the Inquisition
+1,paladins
+1,the priesthood
+1,witch-hunters
+
+;disease
+0,“his”: 75% chance of male victim (otherwise, just amusing!)
+1,contracted a disease from [Necrotic Ailments.cause] that caused his [Necrotic Ailments.body part] to [Necrotic Ailments.effect] [result]
+
+;result
+1,and perished in horrific pain
+1,but eventually overcame the infection and then [main]
+
+;survived
+1,survived the delve and [good_end]
+1,survived the delve but [bad_end]
+
+;good_end
+1,became a great and respected general, and was knighted as a protector of the realm
+1,became a local [peacekeeper] and maintained peace until the day they died
+1,became an important part of the local gentry, and died peacefully at a ripe old age
+1,became filthy rich through the trade of rare and arcane treasures
+1,created a successful and respected guild to help train and equip other would-be adventurers
+1,escaped as a sole survivor of an ambush from [humanoids]
+1,faded away quietly and peacefully after a long and successful career as an adventurer
+1,retired as a secluded hermit with a rumored fortune in gold
+1,returned to their former home and occupation with little to show for their adventures
+1,returned to their former home with unheard-of treasures, raising the status of their relatives and heirs
+1,returned to their former home, gave away his weapons and armor, and never spoke a word of his adventures
+1,used their wealth and splendour to go travelling to far-off lands
+1,was celebrated as a hero throughout the land for the rest of his days
+1,was given the rank of [Secret Society Title.main] for their many valorous deeds
+
+;peacekeeper
+1,arbiter
+1,burgomeister
+1,commander
+1,deputy
+1,guard captain
+1,judge
+1,lord
+1,sheriff
+
+;bad_end
+1,[insane]
+1,accidentally destroyed their entire village while practicing devastatingly dangerous magic
+1,became the town crazy, muttering and cursing to any who approach too closely
+1,brought back a vile plague with them, to which they and most of the village succumbed horribly
+1,died destitute and alone in a gutter
+1,managed to return home, but died of an arcane and awful miasma
+1,managed to return home, but died of infection from his many battle wounds
+1,returned a homeless and forgotten hero, and died alone
+1,returned home, only to be slain in a drunken bar brawl a few days later
+1,returned home, only to be slowly possessed by his weapon’s dark personality
+1,returned home, only to be slowly subjugated to the dark will of his weapon
+1,slowly went insane from a curse on the ancient treasure they brought back
+1,their power and might drove them murderously insane, cutting a swath of destruction throughout the land until being killed by [lightforces]
+1,wandered the earth for the rest of their days as a lone and long-cursed traveller
+1,was a misunderstood and ostracized pariah, dying alone with their secrets and treasure
+1,was driven to drink to forget the horrors they had experienced
+1,went slowly insane and killed their family and themselves
+

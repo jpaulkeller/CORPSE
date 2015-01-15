@@ -1,13 +1,18 @@
-/ Sources: TSR DM's Guide 2nd edition, page 107
-/          GURPS Basic Set (3rd edition) page 60
+/ TSR DM's Guide 2nd edition, page 107
+/ GURPS Basic Set (3rd edition) page 60
+/ http://random-generator.com/index.php?title=ArcaneBooks
 
+: All = Domain + Arcane + Divination
+
+: Domain
 agriculture
 alchemy
+anatomy
 animal science
 anthropology
 architecture
 art
-arts & crafts
+arts and crafts
 astrology
 astronomy
 chemistry
@@ -24,7 +29,7 @@ cryptography
 demography
 divination
 ecology
-economics & trade
+economics and trade
 education
 engineering
 entomology
@@ -33,11 +38,11 @@ forensics
 genealogy
 genetics
 geography
-geology & mineralogy
+geology and mineralogy
 heraldry
 history
 languages
-legends & myths
+legends and myths
 law & customs
 linguistics
 literature
@@ -54,7 +59,7 @@ naval science
 numerology
 occultism
 oceanography
-philosophy & ethics
+philosophy and ethics
 physics
 physiology
 politics
@@ -66,3 +71,149 @@ sociology
 technology
 theology
 zoology
+
+: Arcane
+[utility.creaturetypes] crossbreeding
+[utility.creaturetypes] dissection
+[utility.creaturetypes] sentience
+abjuration
+alteration
+animation
+binding rituals
+chirurgery
+chronomancy
+communication with {order}
+conjuration
+construct creation
+demonology
+diabolism
+divination
+elementalism
+empathic
+enchantment
+environmental magic
+evocation
+fetish magic
+hypnotism
+illusion
+kinetic magic
+ley lines
+magical crossbreeding
+meta-magic
+necromancy
+numerology
+occultism
+planar travel
+rune magic
+sorcery
+spellcasting
+spellcraft
+spiritual magic
+summoning {order:arcane}
+thaumaturgy
+the orders of {order:arcane} beings
+theurgy
+transference
+witchcraft
+wizardry
+{order:arcane} energies
+{order:arcane} hierarchy
+{order:arcane} knowledge
+{order:arcane} mechanics
+{order:arcane} models
+{order:arcane} power
+{order:arcane} runes
+{order:arcane} structures
+{order:arcane} symbols
+
+: Divination
+aeromancy
+alectryomancy
+aleuromancy
+alomancy
+alphitomancy
+anemoscopy
+anthropomancy
+apantomancy
+arithmancy
+astragalomancy
+astrology
+astromancy
+augury
+austromancy
+axiomancy
+belomancy
+bibliomancy
+botanomancy
+capnomancy
+cartomancy
+catoptromancy
+causimomancy
+cephalomancy
+ceraunoscopy
+ceromancy
+chaomancy
+cheiromancy
+chirognomy
+cleromancy
+clidomancy
+cometomancy
+coscinomancy
+critomancy
+cromniomancy
+crystallomancy
+cyclomancy
+daphnomancy
+demonomancy
+divination
+dowsing
+empyromancy
+geloscopy
+geomancy
+graphology
+gyromancy
+hippomancy
+hydromancy
+icthyomancy
+lampadomancy
+lecanomancy
+libanomancy
+literomancy
+lithomancy
+metagnomy
+meteormancy
+metoposcopy
+moleosophy
+myomancy
+myrmomancy
+necromancy
+nephomancy
+numerology
+oculomancy
+oinomancy
+omphalomancy
+oneiromancy
+onomancy
+onychomancy
+ophiomancy
+ovomancy
+palmistry
+pegomancy
+phrenology
+phyllorhodomancy
+plastromancy
+pyromancy
+rhabdomancy
+rhapsodomancy
+scapulimancy
+scatomancy
+sciomancy
+sideromancy
+spodomancy
+stichomancy
+stolisomancy
+taromancy
+tasseography
+tephramancy
+tiromancy
+xylomancy
