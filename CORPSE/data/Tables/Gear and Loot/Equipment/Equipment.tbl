@@ -32,6 +32,7 @@ belt pouch, small            7s                      0.5
 belt, leather               10                       3
 bird cage                    2-5 gp   (5-10)         5
 blanket                      5-8 cp    3
+blanket, winter
 blanket (wool)              15                       5
 block & tackle               5g                      5
 boat, collapsible         5000                      60
@@ -160,6 +161,7 @@ lock, poor                  20 gp                     1
 lockpick                    20                        0.1
 lodestone
 loom
+journal (blank)
 magnifying glass           100 gp+                    0.5-2
 magnifying glass          1000                        0.1
 manacles & key               5 gp                     2-10
@@ -199,8 +201,8 @@ pen, fine, metal             1 sp                     0.5
 pen, fine, wooden            5 cp                     0.3
 pen, quill                   8 bp                     0.2
 perfume                     50          vial          0.1
-pick axe, mining             6 gp                     5
-pickaxe                    200                       20
+pick-axe, mining             6 gp                     5
+pick-axe                   200                       20
 pipe, copper
 pipe, smoking                1 cp+                    0.5
 pipeweed                     1 gp+      8 oz pouch    0.5
@@ -209,6 +211,7 @@ pliers                       1 gp  2.5
 poker, fireplace
 pole                         5          foot          1
 pole, 10'                    3 bp                    10
+pole, extensible
 pot, iron cooking            3 cp                     5
 pouch, belt, large           1 gp                     1
 pouch, belt, small           8 sp                     0.5
@@ -237,6 +240,7 @@ sack, large                  3 sp                     2
 sack, small                  0.5                      0.1
 sack, small                  8 bp                     0.5
 saddle & tack              200                       40
+satchel
 saw, one man                 2 gp                     3
 saw, two man                12 gp                    20
 scabbard, sword, 2-handed   4 gp                      2
@@ -261,6 +265,7 @@ signet ring or seal        50                         0.1
 silk                      200          1 sq yd        0.1
 silverware
 skin, water/wine           15 cp                      0.5
+sledge
 sleeping roll/bag          40                        15
 soap                        5          1 lb           1
 soap, 5 oz bar of           2 cp                      0.3
@@ -284,28 +289,23 @@ tongs
 toothpick                    1 cp       100           0.1
 toothpicks
 torch                       0.1                       1
-torch, normal               1 cp                      2.5   
 torch, small                3 bp                      1  
 towel                       0.5                       0.5
+twine
 utensiles
 vellum, 1 sheet             8 gp                      0.1
 vial, ceramic               1 gp                      2.5
 vial, crystal               3 gp                      3
 vial, metal                 5 gp                      4
 wallet                      1 gp                      0.5
-water clock              1000                       200
 water clock              1000 gp                    200
 wax, candle, lb             1 gp                      1
 wax, sealing, lb            2 gp                      1
-whetstone                   0.2                       1
+wedge
 whetstone                   1-9 cp                    0.5-2
 whistle                     1 gp                      0.5
-whistle                     3                         0.1
 wig                         2 gp                      0.5
-wineskin                    8                         1
 wineskin                    8 sp                      1
-winter blanket              5                         3
 winter blanket              5 sp                      3
-writing ink                80          vial           0.1
-writing ink, vial           8 gp                      0.1
+writing ink (vial)          8 gp                      0.1
 {musical instrument}      500                         2

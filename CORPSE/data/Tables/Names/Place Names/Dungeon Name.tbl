@@ -1,6 +1,70 @@
 // http://www.enworld.org/forum/showthread.php?274089-Random-dungeon-name-generator&s=aa9d4c48f4310cfc8afdb6eec41e1707#ixzz2why0O4dH
 
-{Evocative:Mean} {Dark Site} of {Evocative:Evil}
-{Evocative:Adj} {Dark Site} of {Evocative:Evil}
-{Evocative:Mean} {Site} of {Evocative:Evil}
-{Evocative:Mean} {Dark Site} of {Evocative:Noun}
+{Evocative Adj:Negative} {{Dark Site}|{:Type}} of {Evocative Noun:Negative}
+{Evocative Adj} {{Dark Site}|{:Type}} of {Evocative Noun:Negative}
+{Evocative Adj:Negative} {{Site}|{:Type}} of {Evocative Noun:Negative}
+{Evocative Adj:Negative} {{Dark Site}|{:Type}} of {Evocative Noun}
+{Demon Name}'s {{Dark Site}|{:Type}}
+{Evocative Adj:Not Positive} {{Site}|{:Type}} of {Demon Name}
+
+: Type
+aerie
+arch
+asylum
+aviary
+bridge
+burrow
+cage
+canyon
+catacomb
+caverns
+caves
+chambers
+chasm
+crossing
+crypt
+den
+diggings
+dungeon
+excavations
+fane
+fissure
+fragments
+gaping maw
+grave
+hall
+halls
+hive
+keep
+labyrinth
+lair
+maze
+mines
+necropolis
+nest
+passages
+pit
+prison
+quarries
+redoubt
+remnants
+rift
+roost
+ruins
+sanctuary
+sepulcher
+sewers
+shrine
+sinkhole
+stronghold
+temple
+tomb
+tunnel
+tunnels
+undercity
+undercroft
+vault
+vault
+viaduct
+warren
+waterways

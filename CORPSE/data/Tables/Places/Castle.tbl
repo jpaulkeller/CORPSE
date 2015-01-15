@@ -597,8 +597,8 @@ Sir
 {:Secret Society Title.Title}
 
 : abstractevocative
-5x {:Inscriptions.AbstractNounNegative}
-{Evocative:Noun}
+5x {:Evocative Noun:Negative}
+{Evocative Noun}
 
 : possessives
 {:Fantasy Names.MaleFirstName}’s

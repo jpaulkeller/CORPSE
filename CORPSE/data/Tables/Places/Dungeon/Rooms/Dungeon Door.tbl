@@ -10,7 +10,7 @@
 
 : State
 6x {10%{stuck|spiked} }closed{10%, {concealed|secret}}{50%, {magically|mechanically} locked}
-3x closed{10%, {concealed|secret}}{50%, {magically|mechanically} locked}{20%, trapped - {:trap}}
+3x closed{10%, {concealed|secret}}{50%, {magically|mechanically} locked}{20%, trapped ({:trap})}
 1x {10%{stuck|spiked} }open
 
 : Material
@@ -60,8 +60,10 @@ bas relief of demonic face (10% delivers magic mouth message)
 charred corpse in front of door
 comedic graffiti
 scratches on door
+grated window
 holy symbol on chain hangs from doorknob
 human-shaped outline charred onto door
+knocker
 magic circle inscribed on door
 message box hangs on door, contains {d4-1} messages
 obscene graffiti
@@ -72,4 +74,6 @@ smell of delicious cooking meat exudes from door
 smell of perfume lingers around door
 smell of rotting meat exudes from door
 warning sign on door
+warped and will not shut
 {liquid} seeping from under door
+{wider|taller|shorter|narrower} than normal

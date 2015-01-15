@@ -19,7 +19,7 @@
 {Fauna{!OneWord}}'s {Organ{!OneMaybeSame}} {80%{Inn Type}}
 {{Flora{!OneWord}}+} and {{Flora{!OneWord}}+} {80%{Inn Type}}
 {Inn Type} by the {Site}
-{Inn Type} of {Evocative:Noun}
+{Inn Type} of {Evocative Noun}
 {Metal:Common} {Creature{!OneMaybeSame}} {80%{Inn Type}}
 {Metal:Common} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
 {Metal:Common} {Tiny Item{!OneMaybeSame}} {80%{Inn Type}}
@@ -30,7 +30,7 @@
 {Noise{!OneWord}} {Musical Instrument{!OneMaybeSame}} {80%{Inn Type}}
 {Number:TwoToFive} {{Fauna{!OneMaybeSame}}+} {80%{Inn Type}}
 {Number:TwoToFive} {{Tiny Item{!OneMaybeSame}}+} {80%{Inn Type}}
-{Profession{!OneWord}}'s {Evocative:Noun{!OneWithSame}} {80%{Inn Type}}
+{Profession{!OneWord}}'s {Evocative Noun{!OneWithSame}} {80%{Inn Type}}
 {Texture{!OneWord}} {Site:Artificial{!OneMaybeSame}} {80%{Inn Type}}
 {Trait{!OneWord}} {Creature{!OneMaybeSame}} {80%{Inn Type}}
 {Trait{!OneWord}} {Fauna{!OneMaybeSame}} {80%{Inn Type}}

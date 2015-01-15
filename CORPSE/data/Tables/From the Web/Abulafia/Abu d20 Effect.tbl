@@ -1,0 +1,375 @@
+/ http://random-generator.com/index.php?title=D20_Random_Effects
+
+: Magical
+10x grants +{10} [d20Stat] for [duration] when activated
+10x grants +{10} [d20Skills] for [duration] when activated
+10x grants +{10} to [d20Saves] for [duration] when activated
+10x grants +{20} HP to the wielder
+10x grants [d20AC] to the wielder
+5x grants +{2d4} speed to the wielder
+grants +{2d8} speed to the wielder
+3x grants invisibility to the wielder
+grants invisibility to the wielder, cannot unwield without removing curse
+3x grants +{2d6} AC and +{2d6} damage against demons
+5x grants +{2d6} AC and +{2d6} damage against lycanthropes
+5x grants +{2d6} AC and +{2d6} damage against dragons
+5x grants +{2d6} AC and +{2d6} damage against the undead
+10x grants +{2d6} AC and +{2d6} damage against evil
+3x grants +{2d6} AC and +{2d6} damage against [Creature]
+5x vampiric, {4}{4}% of all damage inflicted goes to user
+3x vampiric, {8}{8}% of all damage inflicted goes to user
+highly vampiric, all damage inflicted goes to user
+5x grants faster healing, healing {4} HP every {2d4} rounds
+3x grants regeneration, healing {2d8} HP every {2d4} rounds
+grants regrowth, healing {4}{8} HP every {2d8} rounds
+5x heals the user for {4}{4}% max HP when activated
+3x heals the user for {8}{8}% max HP when activated
+2x makes the wielder ethereal
+makes the wielder ethereal, cannot unwield without removing curse
+allows user to understand [Utility.RuneLanguage]
+7x allows user to teleport {2d6} spaces when activated
+5x allows user to Recall/Portal when activated
+5x grants See Invisible
+grants See Invisible, cannot unwield without removing curse
+penalizes -{10} speed, cannot unwield without removing curse
+penalizes -{10} [d20Stat], cannot unwield without removing curse
+penalizes -{10} [d20Saves], cannot unwield without removing curse
+penalizes -{2d8} HP, cannot unwield without removing curse
+10x [Random Bonus or Penalty.bonuspenalty1to5]
+
+: Imbued
+Vorpal (+{2d8} Damage, {10}% chance to maim)
+3x arcane-imbued, does +{2d6} damage
+5x acid-etched, does +{2d6} damage plus {6} AC damage
+5x fire-imbued, does +{2d6} damage
+2x force-imbued, +{2d6}% critical hit chance
+2x force-imbued, +{4}{8}% crushing blow chance
+5x frost-imbued, does +{2d6} damage
+Hellfire-imbued, does +{8}{8} damage
+3x holy-imbued, does +{2d6} damage and double damage against undead and demons
+5x lightning-imbued, does +{2d6} damage
+5x venomous, does +{2d6} damage plus {2d4} damage per round
+virulent, does +{2d6} damage plus {6}{6} damage per round
+
+: Resists
+15x absorbs {6}{8} [Element] damage
+3x absorbs {6}{8} elemental damage
+2x provides [Element] immunity
+15x absorbs {4}{8}% of [Element] damage
+3x absorbs {4}{8}% of elemental damage
+15x increases resists against [Element] damage by +{2d6}
+3x increases elemental resists by +{2d6}
+2x increases all resists by +{8}
+2x gives wearer {6}% chance of "resisting" a death blow
+
+: Element
+chaos
+10x fire
+force
+10x frost
+holy
+10x lightning
+physical
+5x poison
+5x magic
+unholy
+
+: Creature
+serpentkind
+angels
+animals
+basilisks
+flying creatures
+insects
+centaurs
+lizards
+aquatic creatures
+drake-kind
+wyverns
+Dwarfkind
+Elfkind
+Gnomekind
+Goblinkind
+golems
+Halflings
+hydras
+Humans
+Humanoids
+manticores
+Merfolk
+nymphs
+Ogrekind
+Orckind
+magical creatures
+satyrs
+sirens
+skeletons
+sylphs
+Trollkind
+vampires
+werecreatures
+zombies
+
+: EgoItem
+This Ego Weapon's real name is [Name].  It is [Alignment] It has the following properties:  [main], [main], and [Imbued].
+This Ego Armor's real name is [Name].  It is [Alignment] It has the following properties:  [main], [main] and [Resists].
+
+: Name
+[Afghul Names.main]
+[Afrika Names.main]
+[Ahaggar Names.main]
+[Arabesque Names.main]
+[Catholic Saint Names.main]
+[Dragon names.main]
+
+: Alignment
+Evil.  Its quest long-fulfilled, it now serves you. 
+Good.  Its quest long-fulfilled, it now serves you.
+Neutral.  Its quest long-fulfilled, it now serves you.
+Evil, and has not completed its task.  It seeks to corrupt your soul to its will.
+Good, and has not completed its task.  It seeks to gain your aid in its cause.
+Neutral, and has not completed its task.  It seeks to finish its duty any way it can.
+Evil, and only offers its services in return for regular sacrifice.
+Good, and only offers its services to the pious and just.
+Neutral, and only offers its services to those it deems worthy of its power.
+Possessed by a destructive spirit that revels in chaos.
+Possessed by a sorrowful spirit.  It longs to be destroyed that its soul may be set free.
+Possessed by a spirit driven insane by ages of captivity.  Its mad ramblings are unnerving.
+Possessed by the soul of a great hero of old.  Its presence is an omen.
+Possessed by the soul of a forgotten evil.  If not destroyed, it will enslave its weilder and unleash terror upon the lands.
+the key to a long-forgotten quest.
+
+<strong>Duration:</strong><br/><sgdisplay iterations="3">[duration]</sgdisplay>
+
+<strong>Ability:</strong><br/><sgdisplay iterations="3">[d20Stat]</sgdisplay>
+
+<strong>Save:</strong><br/><sgdisplay iterations="3">[d20Saves]</sgdisplay>
+
+<strong>Hit Points (prerolled):</strong><br/><sgdisplay iterations="3">[d20HPRolledpm]</sgdisplay>
+
+<strong>Hit Points (unrolled):</strong><br/><sgdisplay iterations="3">[d20HPUnrolledpm]</sgdisplay>
+
+<strong>Armor Class Adjustment:</strong><br/><sgdisplay iterations="3">[d20AC]</sgdisplay>
+
+<strong>Skill Check:</strong><br/><sgdisplay iterations="3">[d20Skills]</sgdisplay>
+
+<strong>Sample Use:</strong><br/><sgdisplay iterations="1">…grants a [Random Bonus or Penalty.bonuspenalty1to5] to [abilities] for [duration]</sgdisplay>
+
+<strong>Sample Use:</strong><br/><sgdisplay iterations="1">…grants a [Random Bonus or Penalty.bonus] to [abilities], and a [Random Bonus or Penalty.penalty] to [abilities] for [duration]</sgdisplay>
+
+<strong>Sample Use:</strong><br/><sgdisplay iterations="1">…grants [d20HPUnrolledpm] and [Random Bonus or Penalty.bonuspenalty1to5] to [abilities] for [duration]</sgdisplay>
+
+: Abilities
+[d20Stat]
+[d20Saves]
+Armor Class
+[d20SkillChecks]
+
+: hit points
+[d20HPRolledpm]
+[d20HPRolledplus]
+[d20HPRolledminus]
+[d20HPUnrolledpm]
+[d20HPUnrolledplus]
+[d20HPUnrolledminus]
+
+: duration
+1 [time]
+1d2 [time]
+1d3 [time]
+1d4 [time]
+1d6 [time]
+1d8 [time]
+2d4 [time]
+1d10 [time]
+1d12 [time]
+2d6 [time]
+3d4 [time]
+3d6 [time]
+
+: duration definite
+1 [time]
+{2} [time]
+{3} [time]
+{4} [time]
+{6} [time]
+{8} [time]
+{10} [time]
+{12} [time]
+{2d6} [time]
+{3d6} [time]
+
+: time
+50x round(s)
+20x minute(s)
+10x hour(s)
+day(s)
+
+: d20 stat
+5x Strength
+5x Dexterity
+5x Constitution
+5x Intelligence
+5x Wisdom
+5x Charisma
+All Stats
+
+: d20 Saves
+5x Will/Magic Saves
+5x Fortitude Saves
+5x Reflex Saves
+All Saves
+
+: d20 HPRolledpm
+20x +{4} Hit Points
+20x -{4} Hit Points
+30x +{6} Hit Points
+30x -{6} Hit Points
+20x +{8} Hit Points
+20x -{8} Hit Points
+10x +{10} Hit Points
+10x -{10} Hit Points
+5x +{12} Hit Points
+5x -{12} Hit Points
++{20} Hit Points
+-{20} Hit Points
+2x +{2d6} Hit Points
+2x -{2d6} Hit Points
++{3d6} Hit Points
+-{3d6} Hit Points
+
+: d20HPRolledplus
+20x +{4} Hit Points
+30x +{6} Hit Points
+20x +{8} Hit Points
+10x +{10} Hit Points
+5x +{12} Hit Points
++{20} Hit Points
+2x +{2d6} Hit Points
++{3d6} Hit Points
+
+: d20HPRolledminus
+20x -{4} Hit Points
+30x -{6} Hit Points
+20x -{8} Hit Points
+10x -{10} Hit Points
+5x -{12} Hit Points
+-{20} Hit Points
+2x -{2d6} Hit Points
+-{3d6} Hit Points
+
+: d20HPUnrolledpm
+20x +1d4 Hit Points
+20x -1d4 Hit Points
+30x +1d6 Hit Points
+30x -1d6 Hit Points
+20x +1d8 Hit Points
+20x -1d8 Hit Points
+10x +1d10 Hit Points
+10x -1d10 Hit Points
+5x +1d12 Hit Points
+5x -1d12 Hit Points
++1d20 Hit Points
+-1d20 Hit Points
+2x +2d6 Hit Points
+2x -2d6 Hit Points
++3d6 Hit Points
+-3d6 Hit Points
+
+: d20HPUnrolledplus
+20x +1d4 Hit Points
+30x +1d6 Hit Points
+20x +1d8 Hit Points
+10x +1d10 Hit Points
+5x +1d12 Hit Points
++1d20 Hit Points
+2x +2d6 Hit Points
++3d6 Hit Points
+
+: d20HPUnrolledminus
+20x -1d4 Hit Points
+30x -1d6 Hit Points
+20x -1d8 Hit Points
+10x -1d10 Hit Points
+5x -1d12 Hit Points
+-1d20 Hit Points
+2x -2d6 Hit Points
+-3d6 Hit Points
+
+: d20AC
+[Random Bonus or Penalty.Bonus] to Armor Class
+[Random Bonus or Penalty.Penalty] to Armor Class
+
+: d20 Skills
+Appraise
+Balance
+Bluff
+Climb
+Concentration
+Craft
+Decipher Script
+Diplomacy
+Disable Device
+Disguise
+Escape Artist
+Forgery
+Gather Information
+Handle Animal
+Heal
+Hide
+Intimidate
+Jump
+Knowledge
+Listen
+Move Silently
+Open Lock
+Perform
+Profession
+Ride
+Search
+Sense Motive
+Sleight of Hand
+Spellcraft
+Spot
+Survival
+Swim
+Tumble
+Use Magic Device
+Use Rope
+
+: d20 Skill Checks
+Appraise skill checks
+Balance skill checks
+Bluff skill checks
+Climb skill checks
+Concentration skill checks
+Craft skill checks
+Decipher Script skill checks
+Diplomacy skill checks
+Disable Device skill checks
+Disguise skill checks
+Escape Artist skill checks
+Forgery skill checks
+Gather Information skill checks
+Handle Animal skill checks
+Heal skill checks
+Hide skill checks
+Intimidate skill checks
+Jump skill checks
+Knowledge skill checks
+Listen skill checks
+Move Silently skill checks
+Open Lock skill checks
+Perform skill checks
+Profession skill checks
+Ride skill checks
+Search skill checks
+Sense Motive skill checks
+Sleight of Hand skill checks
+Spellcraft skill checks
+Spot skill checks
+Survival skill checks
+Swim skill checks
+Tumble skill checks
+Use Magic Device skill checks
+Use Rope skill checks

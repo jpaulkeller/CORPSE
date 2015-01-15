@@ -1,131 +1,8 @@
-/ for adjectives
-: Adj = Nice + Neutral Adj + Mean
-: Not Nice = Mean + Neutral Adj
-: Not Mean = Nice + Neutral Adj
+: Evocative Noun = Positive + Neutral + Negative
+: Not Positive = Negative + Neutral
+: Not Negative = Positive + Neutral
 
-/ for nouns
-: Noun = Good + Neutral Noun + Evil
-: Not Good = Evil + Neutral Noun
-: Not Evil = Good + Neutral Noun
-
-: Nice
-amazing
-ascendant
-astonishing
-astounding
-awesome
-blossoming
-breathtaking
-brightest
-brilliant
-celestial
-dazzling
-divine
-exalted
-extraordinary
-fantastic
-glittering
-glorious
-golden
-incredible
-inspirational
-magical
-magnificent
-magnificent
-majestic
-marvelous
-merciful
-mysterious
-mystical
-outstanding
-ravishing
-remarkable
-resplendent
-scintillating
-spectacular
-splendid
-transcendent
-true
-wondrous
-
-: Neutral Adj
-ancient
-delicate
-elder
-eternal
-final
-perpetual
-serene
-tranquil
-utter
-uttermost
-
-: Mean
-abominable
-accursed
-ancient
-baneful
-batrachian
-black
-blasphemous
-bloodstained
-bloody
-chilling
-crawling
-cruel
-cursed
-dark
-deadly
-desecrated
-devouring
-diabolical
-dreadful
-ebon
-eldritch
-eternal
-fabled
-fallen
-fiery
-forbidden
-forgotten
-foul
-frozen
-garish
-haunted
-heartless
-hidden
-immortal
-last
-lonely
-lost
-malevolent
-misplaced
-mysterious
-nameless
-ophidian
-pagan
-perilous
-petrified
-primitive
-scarlet
-secret
-shrouded
-squamous
-strange
-tenebrous
-terrifying
-treacherous
-uncanny
-unspeakable
-unvanquishable
-unwholesome
-vanishing
-vile
-warped
-weird
-wicked
-
-: Good
+: Positive
 beauty
 birth
 blessings
@@ -153,7 +30,7 @@ resurrection
 riches
 victory
 
-: Neutral Noun
+: Neutral
 augury
 binding
 civilization
@@ -164,6 +41,7 @@ conquest
 crown
 demand
 desire
+diaspora
 diversion
 doors
 dragons
@@ -234,6 +112,7 @@ the gods
 the harvest
 the heavens
 the mist
+the nameless
 the pattern
 the scourge
 the sea
@@ -274,8 +153,9 @@ wrath
 youth
 {number:twototwelve}
 
-: Evil
+: Negative
 affliction
+anger
 anguish
 banishment
 blindness
@@ -288,6 +168,7 @@ cataclysm
 catastrophe
 chaos
 contagion
+conquest
 curses
 damnation
 darkness
@@ -295,7 +176,9 @@ death
 decay
 deceit
 defeat
+deformity
 demons
+desire
 desolation
 despair
 destruction
@@ -307,6 +190,7 @@ dissolution
 distress
 doom
 dread
+envy
 evil
 famine
 fatality
@@ -314,7 +198,9 @@ fear
 fire
 forgotten dreams
 frost
+fury
 gloom
+gluttony
 greed
 hatred
 hells
@@ -325,6 +211,7 @@ insanity
 iron
 lies
 lost souls
+lust
 madness
 malice
 misery
@@ -341,6 +228,7 @@ peril
 pestilence
 phantasms
 plague
+pride
 rage
 ruin
 scourge
@@ -351,6 +239,7 @@ sigils
 skulls
 slaughter
 slime
+sloth
 sorcery
 sorrow
 souls
@@ -383,4 +272,6 @@ tragedy
 treachery
 trickery
 trouble
+war
 woe
+wrath

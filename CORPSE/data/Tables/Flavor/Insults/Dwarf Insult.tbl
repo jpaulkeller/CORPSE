@@ -1,0 +1,92 @@
+/ http://random-generator.com/index.php?title=Dwarven_Insults
+
+: Dwarf Insult
+{75%{:insult1} }{75%{:insult2} }{:insult3}
+
+: Insult1
+babbling
+barbed
+beardless
+bulbous
+cantankerous
+craftless
+dainty
+dangling
+drooling
+friendless
+fungular
+gemless
+gibbering
+incompetent
+mouldy
+pompous
+reeking
+repugnant
+rickety
+slothful
+slow minded
+sorry
+tentacled
+unhoned
+unweened
+warty
+witless
+
+: Insult2
+anvil-dropping
+axe-breaking
+bunyon-brained
+cave-slinking
+chasm-hearted
+crystal-breaking
+donkey-eared
+elf-kissing
+fish-catching
+gnat-ridden
+hearth-hating
+lantern-lugging
+milk-drinking
+moss-bearded
+nib-chewing
+nose-picking
+pech-skulled
+porridge-faced
+rust-minded
+silver-witted
+slate-carving
+toe-biting
+toll-snatching
+tree-climbing
+willow-waisted
+
+: Insult3
+armpit
+breadcrumb
+carbuncle
+fuzzpot
+gargoyle
+gas spore
+gasbladder
+goblin{50%-spawn}
+gully dwarf
+horse spit
+kobold{50%-spawn}
+ledge lizard
+mole
+mushroom
+natterling
+orc-spawn
+osquip
+pebble
+pestle
+pixie
+rockrunt
+rust monster
+shard
+smudge-rubber
+snake's egg
+stalactite
+stalagmite
+stench kow
+thumb-basher
+tunnel worm

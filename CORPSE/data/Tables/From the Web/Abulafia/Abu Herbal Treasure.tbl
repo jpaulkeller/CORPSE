@@ -1,0 +1,35 @@
+10x {Herb}: {:VARIABLE} when [ingestion].{15%  {:ADDICTION}}
+10x {Herb}: {:DEFINITE} when [ingestion].{15%  {:ADDICTION}}
+
+: Variable
+1x grants a [Random Bonus or Penalty.bonuspenalty1to5] to [d20 Random Effects.abilities] for [d20 Random Effects.duration] 
+1x grants a [Random Bonus or Penalty.bonus] to [d20 Random Effects.abilities], and a [Random Bonus or Penalty.penalty] to [d20 Random Effects.abilities] for [d20 Random Effects.duration]
+1x grants [d20 Random Effects.d20HPUnrolledpm] and [Random Bonus or Penalty.bonuspenalty1to5] to [d20 Random Effects.abilities] for [d20 Random Effects.duration]
+
+: Definite
+1x grants a [Random Bonus or Penalty.bonuspenalty1to5] to [d20 Random Effects.abilities] for [d20 Random Effects.durationDefinite]
+1x grants a [Random Bonus or Penalty.bonus] to [d20 Random Effects.abilities], and a [Random Bonus or Penalty.penalty] to [d20 Random Effects.abilities] for [d20 Random Effects.durationDefinite]
+1x grants [d20 Random Effects.d20HPRolledpm] and [Random Bonus or Penalty.bonuspenalty1to5] to [d20 Random Effects.abilities] for [d20 Random Effects.durationDefinite]
+
+: Ingestion
+5x eaten
+4x ingested
+5x chewed
+5x rubbed on the skin
+3x placed under the tongue
+3x powdered and inhaled
+2x brewed into a tea and slowly sipped
+5x smoked
+5x placed in an open wound
+1x poured in ear or nose
+2x burned and the fumes inhaled
+2x chewed but never swallowed
+2x chewed into a wad and used as a poultice
+1x rubbed into the eyes
+1x mixed with oil and applied as a masque to the face
+1x used as a suppository
+
+: Addiction
+3x The herb is occasionally habit-forming when used in this way.
+2x The herb is mildly addictive when used in this way.
+1x The herb is strongly addictive when used in this way.

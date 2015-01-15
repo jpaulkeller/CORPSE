@@ -52,6 +52,7 @@ Full Table       [Quality!]                          {Quality!}                 
 Default Subset   [Quality]                           {Quality}                          equivalent to [Quality.Quality]
 Local Subset     [:Quantity.Resolved]                {:Quantity.Resolved}               local (to this file) subset with column
 Subset Filter    [Profession:Criminal]               {Profession:Criminal}              a subset which is defined as a regex filter
+Subset Number    [Compass:4]                         {Compass:4}                        a numeric name
 
 : Filter
 Filter           [Fauna#P.*#]                        {Fauna#P.*#}
@@ -64,7 +65,7 @@ Filter 50% Same  [Name] [Fauna[!MaybeSameFirst]]     {Name} {Fauna{!MaybeSameFir
 Collision        [DiffTest]/[DiffTest]               {DiffTest}/{DiffTest}              high risk of collision
 Different        [DiffTest]/[DiffTest[!Different]]   {DiffTest}/{DiffTest{!Different}}  prevent collision
 Filter Subset    [Herb#.*h.*#]                       {Herb#.*h.*#}                      any Herb that contains the letter "h"
-Filter Subset    [Menu:Game#.*t.*#]                  {Menu:Game#.*t.*#}                 any Menu:Game that contains the letter "t"
+Filter Subset    [Meat:Game#.*t.*#]                  {Meat:Game#.*t.*#}                 any Meat:Game that contains the letter "t"
 Filter Other     [Profession!#.*craftsman.*#]        {Profession!#.*craftsman.*#}       filter on a column other than the default
 
 : Formatted

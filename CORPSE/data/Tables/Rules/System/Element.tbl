@@ -1,5 +1,74 @@
+: Element
+4x {:basic}
+void
+
+: Basic
 air
 earth
 fire
 water
+
+: Para
+ice
+magma
+ooze
+smoke
+
+: Positive
+lightning
+mineral
+radiance
+steam
+
+: Negative
+ash
+dust
+salt
+vacuum
+
+: Quasi = Positive + Negative
+
+: Energy
+positive energy
+negative energy
+
+: China
+air
+fire
+metal
+water
+wood
+
+: D20
+acid
+cold
+electricity
+fire
+sonic
+
+: 4E
+acid
+cold
+fire
+force
+lightning
+necrotic
+psychic
+radiant
+thunder
+
+: Exotic
+nature
+aether
 void
+
+: Exotic Energy
+lightning
+lunar
+necrotic
+psychic
+radiant
+shadow
+solar
+stellar
+thunder

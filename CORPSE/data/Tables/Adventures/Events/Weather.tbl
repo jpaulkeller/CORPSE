@@ -1,3 +1,4 @@
+: Weather
 .Spring     Summer      Fall        Winter
 hot         heatwave    hot         sunny
 sunny       hot         sunny       bright
@@ -15,3 +16,71 @@ light rain  light rain  heavy rain  fog
 heavy rain  light rain  fog         sleet
 fog         heavy rain  fog         snow
 sleet       fog         sleet       snow
+
+/ http://random-generator.com/index.php?title=D20_Weather
+/ This weather generator follows the rules of the Dungeons and Dragons DMG guide for d20 roleplaying games.
+/ Includes a verbose method and a 'short' method, if you don't need extra description. 
+
+: Cold
+70x Normal: Cold temperatures, Calm winds.
+10x Abnormal: {:abnormal}
+10x Inclement (Snow)
+9x Snowstorm
+1x Blizzard
+
+: Cold Detailed
+70x Normal: Cold temperatures (Between 0° and 40° Fahrenheit during the day, 10 to 20 degrees colder at night.), Calm winds (Wind speeds are light (0 to 10 mph)).
+10x Abnormal: {:abnormal cold}
+10x Inclement (Snow): Snow reduces visibility ranges by half, resulting in a -4 penalty on Spot and Search checks. It has the same effect on flames, ranged weapon attacks, and Listen checks as severe wind. And it costs 2 squares of movement to enter a snow-covered square. A day of snowfall leaves 1d6 inches of snow on the ground.
+9x Snowstorm: The combined effects of precipitation (or dust) and wind that accompany all storms reduce visibility ranges by three quarters, imposing a -8 penalty on Spot, Search, and Listen checks. Storms make ranged weapon attacks impossible, except for those using siege weapons, which have a -4 penalty on attack rolls. They automatically extinguish candles, torches, and similar unprotected flames. They cause protected flames, such as those of lanterns, to dance wildly and have a 50% chance to extinguish these lights. In addition, snowstorms leave 1d6 inches of snow on the ground afterward.
+1x Blizzard: Very high winds and torrential precipitation reduce visibility to zero, making Spot, Search, and Listen checks and all ranged weapon attacks impossible. Unprotected flames are automatically extinguished, and protected flames have a 75% chance of being doused. Creatures caught in the area must make a DC 20 Fortitude save or face the effects based on the size of the creature.
+
+: abnormal
+3x Heat Wave (+10° F)
+7x Cold Snap (-10° F)
+
+: abnormal cold
+3x Heat Wave: Raises temperature by +10° F (Between 10° and 50° Fahrenheit during the day, 10 to 20 degrees colder at night.), Calm winds (Wind speeds are light (0 to 10 mph)).
+7x Cold Snap: Lowers temperature by -10° F (Between -10° and 30° Fahrenheit during the day, 10 to 20 degrees colder at night.), Calm winds (Wind speeds are light (0 to 10 mph)).
+
+: Temperate
+70x Normal: Normal for the season
+10x Abnormal: {:abnormal}
+10x Inclement: Precipitation (Normal for season). {:precipitation}
+9x Thunderstorm or Snowstorm
+1x {Windstorm|Blizzard|Hurricane|Tornado}
+
+: Temperate Detailed
+70x Normal: Normal for the season
+10x Abnormal: {:abnormal temperate}
+10x Inclement: Precepitation (Normal for season). {:precipitation detailed}
+9x Thunderstorm or Snowstorm: The combined effects of precipitation (or dust) and wind that accompany all storms reduce visibility ranges by three quarters, imposing a -8 penalty on Spot, Search, and Listen checks. Storms make ranged weapon attacks impossible, except for those using siege weapons, which have a -4 penalty on attack rolls. They automatically extinguish candles, torches, and similar unprotected flames. They cause protected flames, such as those of lanterns, to dance wildly and have a 50% chance to extinguish these lights. In addition to wind and precipitation (usually rain, but sometimes also hail), thunderstorms are accompanied by lightning that can pose a hazard to characters without proper shelter (especially those in metal armor). As a rule of thumb, assume one bolt per minute for a 1-hour period at the center of the storm. Each bolt causes electricity damage equal to 1d10 eight-sided dice. One in ten thunderstorms is accompanied by a tornado. In addition to the wind and precipitation common to other storms, snowstorms leave 1d6 inches of snow on the ground afterward.
+1x {Windstorm|Blizzard|Hurricane|Tornado}: Very high winds and torrential precipitation reduce visibility to zero, making Spot, Search, and Listen checks and all ranged weapon attacks impossible. Unprotected flames are automatically extinguished, and protected flames have a 75% chance of being doused. Creatures caught in the area must make a DC 20 Fortitude save or face the effects based on the size of the creature. While accompanied by little or no precipitation, windstorms can cause considerable damage simply through the force of their wind. The combination of high winds, heavy snow (typically 1d3 feet), and bitter cold make blizzards deadly for all who are unprepared for them. In addition to very high winds and heavy rain, hurricanes are accompanied by floods. Most adventuring activity is impossible under such conditions.
+
+: precipitation
+3x Fog
+6x Rain/Snow
+1x Sleet/Hail
+
+: precipitation detailed
+3x Fog: Whether in the form of a low-lying cloud or a mist rising from the ground, fog obscures all sight, including darkvision, beyond 5 feet. Creatures 5 feet away have concealment (attacks by or against them have a 20% miss chance).
+6x Rain/Snow: Rain reduces visibility ranges by half, resulting in a -4 penalty on Spot and Search checks. It has the same effect on flames, ranged weapon attacks, and Listen checks as severe wind (automatically extinguishes exposed flames, 50% chance of extinguishing protected flames. -4 penalty on ranged attack rolls). Falling snow has the same effects on visibility, ranged weapon attacks, and skill checks as rain, and it costs 2 squares of movement to enter a snow-covered square. A day of snowfall leaves 1d6 inches of snow on the ground.
+1x Sleet/Hail: Essentially frozen rain, sleet reduces visibility ranges by half, resulting in a -4 penalty on Spot and Search checks. It has the same effect on flames, ranged weapon attacks, and Listen checks as severe wind (except that its chance to extinguish protected flames is 75%). Once on the ground, it costs 2 squares of movement to enter a sleet-covered square. Hail does not reduce visibility, but the sound of falling hail makes Listen checks more difficult (-4 penalty). Sometimes (5% chance) hail can become large enough to deal 1 point of lethal damage (per storm) to anything in the open. Once on the ground, it costs 2 squares of movement to enter a hail-covered square.
+
+: abnormal temperate
+1x Heat Wave: Raises temperature by +10° F.
+1x Cold Snap: Lowers temperature by -10° F.
+
+: Desert
+70x Normal: Hot temperatures, Calm Winds
+10x Abnormal: Hot temperatures, Windy
+10x Inclement: Hot temperatures, Windy
+9x Duststorm:
+1x Dounpour:
+
+: Desert Detailed
+70x Normal: Hot temperatures (Between 85° and 110° Fahrenheit during the day, 10 to 20 degrees colder at night.), Calm Winds (Wind speeds are light (0 to 10 mph).)
+10x Abnormal: Hot temperatures (Between 85° and 110° Fahrenheit during the day, 10 to 20 degrees colder at night.), Windy (Wind speeds are moderate to strong (10 to 30 mph).)
+10x Inclement: Hot temperatures (Between 85° and 110° Fahrenheit during the day, 10 to 20 degrees colder at night.), Windy (Wind speeds are moderate to strong (10 to 30 mph).)
+9x Duststorm: The combined effects of precipitation (or dust) and wind that accompany all storms reduce visibility ranges by three quarters, imposing a -8 penalty on Spot, Search, and Listen checks. Storms make ranged weapon attacks impossible, except for those using siege weapons, which have a -4 penalty on attack rolls. They automatically extinguish candles, torches, and similar unprotected flames. They cause protected flames, such as those of lanterns, to dance wildly and have a 50% chance to extinguish these lights. See Table: Wind Effects for possible consequences to creatures caught outside without shelter during such a storm. These desert storms differ from other storms in that they have no precipitation. Instead, a duststorm blows fine grains of sand that obscure vision, smother unprotected flames, and can even choke protected flames (50% chance). Most duststorms are accompanied by severe winds and leave behind a deposit of 1d6 inches of sand. However, there is a 10% chance for a greater duststorm to be accompanied by windstorm-magnitude winds. These greater duststorms deal 1d3 points of nonlethal damage each round to anyone caught out in the open without shelter and also pose a choking hazard (see Drowning—except that a character with a scarf or similar protection across her mouth and nose does not begin to choke until after a number of rounds equal to 10 × her Constitution score). Greater duststorms leave 2d3-1 feet of fine sand in their wake.
+1x Dounpour: A downpour lasts for 2d4 hours, and reduces visibility ranges by half, resulting in a -4 penalty on Spot and Search checks. It has the same effect on flames, ranged weapon attacks, and Listen checks as severe wind. A downpour obscures all sight, including darkvision, beyond 5 feet. Creatures 5 feet away have concealment (attacks by or against them have a 20% miss chance).

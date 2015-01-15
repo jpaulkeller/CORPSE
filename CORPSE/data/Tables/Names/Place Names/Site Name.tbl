@@ -1,5 +1,6 @@
 : Site Name
-{:Adjective} {:Place}
+10x {:Adjective} {:Place}
+{Dwarf Site}
 
 :Dark
 {{Trait:Bad}|{Color:Black}} {Dark Site}

@@ -3,14 +3,14 @@
 {Name} the {Color}
 {Color} {Name}
 The {Color} {Disaster}
-The {Color} {Evocative:Noun}
+The {Color} {Evocative Noun}
 The {Color} {Profession}
 The {Color} {Weapon}
 The {Trait} {Disaster}
-The {Trait} {Evocative:Noun}
+The {Trait} {Evocative Noun}
 The {Trait} {Profession}
 The {Trait} {Weapon}
-{Disaster} of {Evocative:Noun}
-{Profession} of {Evocative:Noun}
-{Weapon} of {Evocative:Noun}
-{4|6|8|10|12|20}-sider of {Evocative:Noun}
+{Disaster} of {Evocative Noun}
+{Profession} of {Evocative Noun}
+{Weapon} of {Evocative Noun}
+{4|6|8|10|12|20}-sider of {Evocative Noun}

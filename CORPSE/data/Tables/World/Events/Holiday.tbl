@@ -1,6 +1,6 @@
 / inspired by http://chaoticshiny.com/holidaygen.php
 
-{Generated Name}, the {:Event} of {Evocative:Noun}, is a {50%{:mood} }{50%{:type} }holiday celebrated {:relative to} the {calendar}.  It lasts {one {duration:moderate}|{number:twototwelve} {duration:moderate}s}.  It {frequency:some} includes {50%{:scope} }{:act}. 
+{Generated Name}, the {:Event} of {Evocative Noun}, is a {50%{:mood} }{50%{:type} }holiday celebrated {:relative to} the {calendar}.  It lasts {one {duration:moderate}|{number:twototwelve} {duration:moderate}s}.  It {frequency:some} includes {50%{:scope} }{:act}. 
 
 : Event  
 anniversary
@@ -78,4 +78,4 @@ weddings
 {forming|breaking} of bonds
 {honoring|shunning} of {{hireling type|profession}}
 {loud|quiet} {chanting|music|singing}
-{{evocative:adj}|colorful} {costumes|decorations}
+{{evocative adj}|colorful} {costumes|decorations}

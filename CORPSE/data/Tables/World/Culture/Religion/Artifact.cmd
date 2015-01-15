@@ -1,6 +1,6 @@
 : Artifact
-{Evocative:Nice} {~{:Object}} of {Evocative:Good}
-{Evocative:Mean} {~{:Object}} of {Evocative:Evil}
+{Evocative Adj:Positive} {~{:Object}} of {Evocative Noun:Positive}
+{Evocative Adj:Negative} {~{:Object}} of {Evocative Noun:Negative}
 {Generated Name}'s {Metal:Enchantable} {~{:Object}}
 
 : Object

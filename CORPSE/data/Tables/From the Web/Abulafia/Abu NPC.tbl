@@ -1,0 +1,1000 @@
+This is an experiment to get a one-time, ideal fantasy character prestocked with equipment and general skill types.  The races and subclasses try to stay in line with RPG tradition to provide a quick dueling or high-level character.
+{{purge}}
+Here are your characters:
+
+'''Cleric Archetype''':
+<sgdisplay iterations="1">[Cleric]</sgdisplay>
+
+'''Fighter Archetype''':
+<sgdisplay iterations="1">[Fighter]</sgdisplay>
+
+'''Mage Archetype''':
+<sgdisplay iterations="1">[Mage]</sgdisplay>
+
+'''Rogue Archetype''':
+<sgdisplay iterations="1">[Rogue]</sgdisplay>
+
+
+<sgtable>
+;Main
+1,[Cleric]
+1,[Fighter]
+1,[Mage]
+1,[Rogue]
+
+;Cleric
+1,[ClericDwarf]
+1,[ClericHuman]
+
+;ClericDwarf
+5,[ClericTitle] [DwarfNameMale], a male [ClericClass]. He worships [DeityName].  He carries {{lcfirst:[ClericEquipment]}}  He specializes in [ClericSpecialty].
+1,[ClericTitle] [DwarfNameFemale], a female [ClericClass]. She worships [DeityName].  She carries {{lcfirst:[ClericEquipmentFemale]}}  She specializes in [ClericSpecialty].
+
+;DwarfNameMale
+1,[ScottishMale.main]
+1,[SGNP celtic.male]
+
+;DwarfNameFemale
+1,[ScottishFemale.main]
+1,[SGNP celtic.female]
+
+;ClericHuman
+1,[ClericTitle] [HumanNameMale], a male [ClericClass]. He worships [DeityName].  He carries {{lcfirst:[ClericEquipment]}}  He specializes in [ClericSpecialty].
+1,[ClericTitle] [HumanNameFemale], a female [ClericClass]. She worships [DeityName].  She carries {{lcfirst:[ClericEquipmentFemale]}}  She specializes in [ClericSpecialty].
+
+;ClericTitle
+1,[Carcosan Titles.main]
+1,[Ranks and Titles.RankEnglishSpecialReligious]
+
+;HumanNameMale
+1,[Catholic Saint Names.main] [Fantasy Names.Surname]
+1,[DitV Male Name.FirstName] [Fantasy Names.Surname]
+1,[ScottishMale.main]
+
+;HumanNameFemale
+1,[DitV Female Name.FirstName] [Fantasy Names.Surname]
+1,[ScottishFemale.main]
+
+;ClericClass
+1,cleric
+1,healer
+1,inquisitor
+1,priest
+
+;DeityName
+1,[Angel generator.main]
+1,[Angel generator.Name]
+1,[Dragon names.main]
+2,[List of gods.real]
+2,[List of gods.fictional]
+1,[Fantasy Pantheon.main]
+
+;ClericEquipment
+10,[Blunt]  He uses a [HeavyShield].  He wears [HeavyArmor]
+5,[TwoHandBlunt]  He wears [HeavyArmor]
+1,[TwoHandBlunt]  He wears [LightArmor]
+
+;ClericEquipmentFemale
+10,[Blunt]  She uses a [HeavyShield].  She wears [HeavyArmor]
+5,[TwoHandBlunt]  She wears [HeavyArmor]
+1,[TwoHandBlunt]  she wears [LightArmor]
+
+;Blunt
+1,a [WhipChain.main].
+1,a [Quality] [LightFlail] with a ball shaped like [HaftedWeapons.FlailHead]. The ball and chain are made of [Utility.MetalWeapon] and the haft is made of [Utility.WoodWeapon].
+1,a [Quality] [LightMace] with a head shaped like [HaftedWeapons.MaceHead]. The head is made of [Utility.MetalWeapon] and the haft is made of [Utility.WoodWeapon].
+1,a [Quality] [LightMace] with a head shaped like [HaftedWeapons.MaceHead]. The entire weapon is made of [Utility.MetalWeapon].
+1,a [Quality] [LightOtherType] with the metal portions made of [Utility.MetalWeapon] and the wooden portions made of [Utility.WoodWeapon].
+
+;Quality
+10,
+1,battle-worn
+1,bloodstained
+1,cold-forged
+1,custom-made
+1,finely crafted
+1,<b>Magical</b>
+1,<b>Holy</b>
+1,<b>Rare</b>
+1,masterfully tempered
+1,master-crafted
+1,well-used
+1,wicked-looking
+
+;LightFlail
+1,flail
+
+;LightMace
+10,light mace
+7,warmace
+7,morningstar
+
+;LightOtherType
+2,light hammer [HaftedWeapons.HammerShape]
+2,light pick [HaftedWeapons.PickShape]
+2,heavy pick [HaftedWeapons.PickShape]
+2,warhammer [HaftedWeapons.HammerShape]
+1,gnome hooked hammer
+
+;TwoHandBlunt
+1,a [Quality] [HeavyFlail] with a ball shaped like [HaftedWeapons.FlailHead]. The ball and chain are made of [Utility.MetalWeapon] and the haft is made of [Utility.WoodWeapon].
+1,a [Quality] [HeavyMace] with a head shaped like [HaftedWeapons.MaceHead]. The head is made of [Utility.MetalWeapon] and the haft is made of [Utility.WoodWeapon].
+1,a [Quality] [HeavyMace] with a head shaped like [HaftedWeapons.MaceHead]. The entire weapon is made of [Utility.MetalWeapon].
+1,a [Quality] [HeavyOtherType] with the metal portions made of [Utility.MetalWeapon] and the wooden portions made of [Utility.WoodWeapon].
+
+;HeavyFlail
+1,heavy flail
+1,dire flail
+
+;HeavyMace
+1,heavy mace
+1,double mace
+1,heavy aspergillum
+
+;HeavyOtherType
+1,double hammer [HaftedWeapons.HammerShape]
+1,dire pick [HaftedWeapons.PickShape]
+1,maul [HaftedWeapons.HammerShape]
+
+;HeavyShield
+1,dragon shield made of [Quality] [Utility.MetalArmor] and [Utility.Wood]
+1,tower shield made of [Quality] [Utility.MetalArmor] and [Utility.Wood]
+1,high tower shield made of [Quality] [Utility.MetalArmor] and [Utility.Wood]
+1,siege shield made of [Quality] [Utility.MetalArmor] and [Utility.Wood]
+1,cavalry shield made of [Quality] [Utility.MetalArmor] and [Utility.Wood]
+1,jousting shield made of [Quality] [Utility.MetalArmor] and [Utility.Wood]
+1,footman's shield made of [Quality] [Utility.MetalArmor] and [Utility.Wood]
+1,roundshield made of [Quality] [Utility.MetalArmor] and [Utility.Wood]
+1,heavy leather shield made of [Quality] [Utility.LeatherHide] stretched on [Utility.Wood]
+1,large leather shield made of [Quality] [Utility.LeatherHide] stretched on [Utility.Wood]
+
+;HeavyArmor
+1,[Armor.ArmorMediumDescription]
+1,[Armor.ArmorHeavyDescription]
+
+;LightArmor
+1,[Armor.ArmorLightDescription]
+1,[Armor.ArmorMediumDescription]
+
+;ClericSpecialty
+1,banishing demonic presences
+1,blessings and wards
+1,breaking even the most unholy of curses
+1,conducting holy consecrations
+1,divine healing
+1,exorcisms
+1,fighting evil
+1,healing the possessed
+1,healing the gravely wounded
+1,hunting all manner of unholy creatures
+1,hunting the practicioners of dark magick
+1,providing light where there is great darkness
+1,providing sage wisdom and holy guidance
+1,reviving the sick and wounded
+1,turning hordes of undead
+1,vanquishing dark cults and sects
+
+;Fighter
+1,[FighterBarbarian]
+1,[FighterDwarf]
+1,[FighterKnight]
+
+;FighterBarbarian
+10,[BarbarianNameMale], a barbarian.  He carries {{lcfirst:[BarbarianEquipment]}}.  He can [BarbarianMastery].
+1,[AmazonName], an amazon.  She carries {{lcfirst:[AmazonEquipment]}}.  She can [BarbarianMastery].
+
+;BarbarianNameMale
+1,[NorthlanderMale.main]
+1,[SGNP barbarians.Barbarianfirst] [SGNP barbarians.BarbarianSurname]
+1,[SGNP orcish.main]
+1,[SGNP assyrian.male]
+1,[Weapon Names.conanweapon]
+
+;AmazonName
+1,[NorthlanderFemale.main]
+1,[SGNP barbarians.EnchantressFirst] [SGNP barbarians.EnchantressSurname]
+1,[SGNP assyrian.female]
+1,[SGNP amazon.main]
+
+;BarbarianEquipment
+1,[Spear].  He has a [BarbarianShield].  He wears [BarbarianArmor].  He is a spear master
+1,[Polearm].  He wears [BarbarianArmor].  He is a polearm master
+1,[Sword].  He has a [BarbarianShield].  He wears [BarbarianArmor].  He is a swordmaster
+1,[TwoHandSword].  He wears [BarbarianArmor].  He is a swordmaster
+1,[Axe].  He has a [BarbarianShield].  He wears [BarbarianArmor].  He is an axe master
+1,[TwoHandAxe].  He wears [BarbarianArmor].  He is an axe master
+1,[Blunt].  He has a [BarbarianShield].  He wears [BarbarianArmor].  He is a master of blunt weapons
+1,[TwoHandBlunt].  He wears [BarbarianArmor].  He is a master of blunt weapons
+
+;Spear
+5,a [Quality] [SpearType] with a haft of [Utility.WoodWeapon] and a head made of [Utility.MetalWeapon].
+1,a [Quality] [Lances.LanceType] lance made of [Utility.WoodWeapon] and tipped with [Utility.MetalWeapon]. [Lances.LanceDecor]
+
+;SpearType
+1,javelin
+1,long spear
+1,phalanx spear
+1,short spear
+1,throwing spear
+
+;Polearm
+5,a [Quality] [HaftedWeapons.PolearmType] with a haft of [Utility.WoodWeapon] and a head made of [Utility.MetalWeapon].
+1,a [Quality] [Lances.LanceType] lance made of [Utility.WoodWeapon] and tipped with [Utility.MetalWeapon]. [Lances.LanceDecor]
+
+;Sword
+4,a [Quality] [HiltedSwordType] that has a blade of [Utility.MetalWeapon] with a hilt wrapped in [Swords.SwordHiltWrapping]. [Swords.DecorMetal]
+1,a [Quality] [BasketedSwordType] that has a blade of [Utility.MetalWeapon] with a basket made of fine [[Utility.MetalDecor]. [Swords.DecorMetal]
+
+;HiltedSwordType
+20,short sword
+30,longsword
+25,broad sword
+10,falchion
+4,khopesh
+2,sapara
+1,gnome swordcatcher
+1,diamond blade
+1,crystalline sword
+1,elven lightblade
+2,elven thinblade
+4,mercurial longsword
+4,broad-blade shortsword
+1,gyrspike
+1,lynxpaw
+12,scimitar
+3,gladius
+3,flamberge
+3,fullblade
+1,jovar
+1,straightblade
+2,fingerblade
+
+;BasketedSwordType
+30,rapier
+10,scimitar
+10,saber
+1,elven courtblade
+2,elven lightblade
+3,elven thinblade
+9,quickblade rapier
+5,cutlass
+
+;TwoHandSword
+1,A [Quality] [TwoHandedSwordType] that has a blade of [Utility.MetalWeapon] with a hilt wrapped in [Swords.SwordHiltWrapping]. [Swords.DecorMetal]
+
+;TwoHandedSwordType
+8,greatsword
+8,bastard sword
+5,longsword
+5,broad sword
+5,two-bladed sword
+2,butterfly sword
+4,khopesh
+2,sapara
+1,double scimitar
+8,scimitar
+2,flamberge
+3,fullblade
+2,mercurial greatsword
+4,great falchion
+2,great scimitar
+5,claymore
+
+;Axe
+1,a [Quality] [AxeType] with a haft of [Utility.WoodWeapon] and a head made of [Utility.MetalWeapon]. [AxeHeadSpike] [AxeHeadDepictionChance]
+1,a [Quality] [AxeType] composed completely of [Utility.MetalWeapon]. [AxeHeadSpike] [AxeHeadDepictionChance]
+
+;TwoHandAxe
+1,a [Quality] [TwoHandAxeType] with a haft of [Utility.WoodWeapon] and a head made of [Utility.MetalWeapon]. [HaftedWeapons.AxeHeadSpike] [HaftedWeapons.AxeHeadDepictionChance]
+1,a [Quality] [TwoHandAxeType] composed completely of [Utility.MetalWeapon]. [HaftedWeapons.AxeHeadSpike] [HaftedWeapons.AxeHeadDepictionChance]
+
+;AxeType
+1,throwing axe
+1,handaxe
+1,orc double axe
+1,ice axe 
+1,woodsman's axe
+1,riding axe
+1,war axe
+
+;TwoHandAxeType
+1,minotaur's axe
+1,sweet axe
+1,dwarven urgrosh
+1,dwarven war axe
+1,double axe
+1,greataxe
+1,battleaxe
+
+;BarbarianShield
+1,[HeavyShield]
+1,[LightShield]
+
+;LightShield
+2,wooden roundshield made of [Quality] [Utility.Wood]
+2,wooden buckler made of [Quality] [Utility.Wood]
+2,small wooden buckler made of [Quality] [Utility.Wood]
+2,small leather buckler made of [Quality] [Utility.LeatherHide] stretched on [Utility.Wood]
+2,small leather shield made of [Quality] [Utility.LeatherHide] stretched on [Utility.Wood]
+1,archer's leather shield made of [Quality] [Utility.LeatherHide] stretched on [Utility.Wood]
+1,archer's wooden shield made of [Quality] [Utility.Wood]
+1,spiked leather shield made of [Quality] [Utility.LeatherHide], [Utility.MetalArmor], and [Utility.Wood]
+
+;BarbarianArmor
+1,[BarbarianArmorType] with [BarbarianAccessories], and [BarbarianHelm].  He wears [Armor.MaleFootwear]
+
+;BarbarianArmorType
+1,a Darkleaf Breastplate 
+1,a suit of Leafweave armor 
+1,a suit of [Quality] Bark armor 
+1,a Bondleaf Wrap 
+1,a suit of [Quality] Bone armor 
+1,a suit of [Quality] Cord armor 
+1,a suit of [Quality] [Utility.LeatherHide] Leather Scale armor. [Armor.LeatherHideDecor]
+1,a breastplate of Moon-Ivy armor
+1,a suit of [Quality] Wicker armor 
+1,a suit of [Quality] Wooden armor 
+1,a suit of [Quality] Sharkskin armor 
+1,a suit of [Quality] Nightscale armor 
+1,a suit of [Quality] Spidersilk armor 
+1,a [Quality] feather cloak 
+1,a set of [Quality] silk swathes 
+1,[Utility.LeatherHide] Hide
+1,[Utility.MetalArmor] Scale Mail
+1,Serpentscale Mail 
+1,[Utility.MetalArmor] Chainmail
+1,breastplate made of [Utility.MetalArmor]
+1,Tumbler's Breastplate  made of [Utility.MetalArmor]
+1,Darkleaf Banded Mail
+1,[Quality] Brigandine armor
+1,[Quality] Lamellar armor
+1,[Quality] [Utility.MetalArmor] ring mail. [Armor.MetalLinkDecor]
+1,[Quality] shell armor
+1,[Quality] [Utility.Chitin] chitin armor
+1,[Utility.MetalArmor] Battle Plate
+1,[Utility.MetalArmor] Mountain Plate
+1,Stone Plate
+
+;BarbarianAccessories
+1,a spiked collar made of [Utility.LeatherHide] and [Metalflavor] [Utility.MetalArmor]
+1,a shoulder spike made of [Utility.LeatherHide] and [Metalflavor] [Utility.MetalArmor]
+1,a gorget made of [Utility.LeatherHide] and [Metalflavor] [Utility.MetalArmor]
+1,a mantle made of [ClothingFemale.MaterialCombosCommon]
+1,boiled leather leg bracers made of [Quality] [Utility.LeatherHide]
+1,scale mail leg bracers made of [Metalflavor] [Quality] [Utility.MetalArmor] and [Utility.LeatherHide]
+1,ring mail leggings made of [Metalflavor] [Quality] [Utility.MetalArmor]
+1,heavy plate mail leg bracers made of [Metalflavor] [Quality] [Utility.MetalArmor]
+1,a fur mantle made of [Animal.fantasyFurredAnimal]
+1,a [Animal.fantasyFurredAnimal] fur
+1,a belt made of [Utility.LeatherHide] with a [Utility.MetalArmor] buckle
+1,a pair of gloves made of [ClothingFemale.MaterialCombosLeather]
+1,a pair of gauntlets made of [ClothingFemale.MaterialCombosLeather]
+1,a pair of chain gauntlets made of [Utility.MetalArmor]
+1,a pair of heavy chain gauntlets made of [Utility.MetalArmor]
+1,a pair of plated gauntlets made of [Utility.MetalArmor]
+1,a pair of heavy plated gauntlets made of [Utility.MetalArmor]
+1,a sash made of [ClothingFemale.MaterialCombosFancy]
+1,a sporran made of [ClothingFemale.MaterialCombosLeather]
+1,a plaid of [ClothingFemale.MaterialCombosLeather] with a brooch of [Utility.MetalDecor]
+1,a bandoleer made of [ClothingFemale.MaterialCombosLeather]
+1,a kilt made of [ClothingFemale.ClothingColors] wool
+1,a cloak made of [ClothingFemale.MaterialsCommon]
+1,a belt made of [Utility.LeatherHide]
+1,an apron made of [Utility.LeatherHide]
+1,a heavy belt made of [Utility.LeatherHide]
+
+;BarbarianHelm
+1, on his head there is a [Armor.Helms]
+1, on his face there is [ClothingFemale.Masks]
+
+;AmazonEquipment
+2,a [Polearm] and wears [AmazonArmor].  She is a polearm master
+3,a [Spear] and a [BarbarianShield].  She wears [AmazonArmor].  She is a spear master
+1,a [Bows.BowType] made of [Utility.WoodBow] wood.  [BowDecor] [BowString] She also carries [Swords.DaggerStart].  She wears [AmazonArmor].  She is a master marksman
+
+;AmazonArmor
+1,[FemaleLightArmor]
+
+;BarbarianMastery
+1,call on ancestral spirits to aid in battle
+1,do great feats of physical strength
+1,dodge attacks, leap, and bound even in full armor
+1,encourage allies with war songs from forgotten times
+1,go into a berserker rage at will
+1,hunt and track enemies through any terrain
+1,make natural healing poultices and salves
+1,repair and improve weapons and equipment
+1,run for hours without tiring
+1,see the spirit world
+1,see those things which are not natural
+1,strike terror into the enemy with primal shouts
+1,survive harsh elements and extreme temperatures, even magical ones
+1,taunt and bewilder foes into making foolish mistakes
+1,use camouflage and surprise against foes
+1,utterly ignore pain in battle
+
+;FighterDwarf
+7,[FighterTitle] [DwarfNameMale], a male dwarf [FighterClass].  He carries [FighterEquipment].
+1,[FighterTitle] [DwarfNameFemale], a female dwarf [FighterClass].  She carries [FemaleFighterEquipment].
+
+;FighterTitle
+1,[Ranks and Titles.RankEnglishArmyOfficer]
+1,[Ranks and Titles.RankEnglishRoyaltyMale]
+
+;FighterClass
+1,cavalier
+1,deathknight
+1,executioner
+1,guard
+1,guard captain
+1,guardian
+1,knight
+1,paladin
+1,warrior
+1,mercenary
+1,soldier
+1,brawler
+
+;FighterEquipment
+1,[Spear] and [HeavyShield].  He wears [HeavyArmor]  He is an expert lancer
+1,[Polearm]  He wears [HeavyArmor]  He is a master pikeman
+1,[Sword] and [HeavyShield].  He wears [HeavyArmor]  He is a swordmaster
+1,[TwoHandSword]  He wears [HeavyArmor]  He is a swordmaster
+1,[Axe] and [HeavyShield].  He wears [HeavyArmor]  He is an axe master
+1,[TwoHandAxe]  He wears [HeavyArmor]  He is an axe master
+1,[Blunt] and [HeavyShield].  He wears [HeavyArmor]  He is a master of blunt weapons
+1,[TwoHandBlunt]  He wears [HeavyArmor]  He is a master of blunt weapons
+
+;FemaleFighterEquipment
+1,a [Spear] and [HeavyShield].  She wears [HeavyArmor]  She is an expert lancer
+1,a [Polearm]  She wears [HeavyArmor]  She is an expert with polearms
+1,a [Sword] and [HeavyShield].  She wears [HeavyArmor]  She is a swordmaster
+1,a [TwoHandSword]  She wears [HeavyArmor]  She is a swordmaster
+1,a [Axe] and [HeavyShield].  She wears [HeavyArmor]  She is an axe master
+1,a [TwoHandAxe]  She wears [HeavyArmor]  She is an axe master
+1,a [Blunt] and [HeavyShield].  She wears [HeavyArmor]  She is a master of blunt weapons
+1,a [TwoHandBlunt]  She wears [HeavyArmor]  She is a master of blunt weapons
+
+;FighterKnight
+7,[FighterTitle] [HumanNameMale], a male [FighterClass].  He carries [FighterEquipment].  He rides [KnightMount].
+1,[FighterTitle] [HumanNameFemale], a female shieldmaiden.  She carries [FemaleFighterEquipment].  She rides [KnightMount].
+
+;KnightMount
+10,[Horse Description.Name] [SteedArmor] [Horse Description.Breed] [Horse Description.Gender]
+1,[Horse Description.Name] [SteedArmor] [OtherMountType]
+
+;SteedArmor
+3,an armored
+5,a well-armored
+5,a heavily-armored
+1,a lightly-armored
+
+;OtherMountType
+5,bull
+1,giant ram
+5,elephant
+3,mammoth
+1,pegasus
+1,unicorn
+1,lion
+1,dire wolf
+1,great eagle
+1,saber-toothed tiger
+1,tiger
+1,panther
+1,griffon
+
+;Mage
+1,[MageConjurer]
+1,[MageDruid]
+1,[MageNecromancer]
+3,[MageWizard]
+
+;MageConjurer
+3,[MageNameMale] [RogueMageTitle], a male conjurer.  He carries {{lcfirst:[MageEquipment]}}.  He conjures [ConjureCreature]s to do his bidding.
+7,[MageNameFemale] [RogueMageTitle], a female conjurer.  She carries {{lcfirst:[FemaleMageEquipment]}}.  She conjures [ConjureCreature]s to do her bidding.
+
+;MageNameMale
+1,[Ahaggar Names.main]
+1,[Arabesque Names.main]
+1,[HalflingHippies.MaleSyllable1][HalflingHippies.MaleSyllable2][HalflingHippies.MaleSyllable3]]
+1,[Ancient Greek Male Names.main] [Fantasy Names.Surname]
+1,[Fantasy Names.MaleFirstName] [Fantasy Names.Surname]
+
+;MageNameFemale
+1,[Female American Names.main] [Fantasy Names.Surname]
+1,[Fantasy Names.FemaleFirstName] [Fantasy Names.Surname]
+1,[Ancient Greek Female Names.main] [Fantasy Names.Surname]
+1,[SGNP barbarians.EnchantressFirst] [SGNP barbarians.EnchantressSurname]
+
+;MageEquipment
+10,[MageStaff] He wears [MageClothes]
+3,[ShortStaff] He carries a [LightShield].  He wears [MageClothes]
+3,[Swords.DaggerStart] He carries a [LightShield].  He wears [MageClothes]
+
+;FemaleMageEquipment
+5,[MageStaff] She wears [FemaleMageClothes]
+3,[Swords.DaggerStart] She carries a [LightShield].  She wears [FemaleMageClothes]
+
+;MageStaff
+1,[Mage Staff.LongStaff]
+
+;ShortStaff
+1,[Mage Staff.ShortStaff]
+
+;MageClothes
+1,[MaleRobes]
+1,[MaleRobes] and [MageHats]
+
+;MaleRobes
+1,a hooded robe made of [ClothingFemale.Cloth_Color] [ClothingFemale.Mat_Combo_Fancy]
+1,a mage's robe made of [ClothingFemale.Cloth_Color] [ClothingFemale.Mat_Combo_Fancy]
+1,a sorcerer's robe made of [ClothingFemale.Cloth_Color] [ClothingFemale.Mat_Combo_Fancy]
+1,a wizard's robe made of [ClothingFemale.Cloth_Color] [ClothingFemale.Mat_Combo_Fancy]
+
+;MageHats
+1,a cloak made of [ClothingFemale.MaterialsHat]
+1,a broad-brimmed hat made of [ClothingFemale.MaterialsHat]
+1,a buttoned cloak made of [ClothingFemale.MaterialsHat]
+1,a bordered cloak made of [ClothingFemale.MaterialsHat]
+1,a simple cloak made of [ClothingFemale.MaterialsHat]
+1,a wizard's hat made of [ClothingFemale.MaterialsHat]
+1,a hood made of [ClothingFemale.MaterialsHat]
+
+;FemaleMageClothes
+1,a [FemaleRobes]
+1,a [FemaleRobes] and [MageHats]
+
+;FemaleRobes
+1,[ClothingFemale.ShirtType] knee-length [ClothingFemale.FemaleLowerSkirtType] dress made of [ClothingFemale.Mat_Combo_Fancy]
+1,[ClothingFemale.ShirtType] short [ClothingFemale.LowerSkirtType] dress made of [ClothingFemale.Mat_Combo_Fancy]
+1,[ClothingFemale.ShirtType] mid-calf length [ClothingFemale.LowerSkirtType] dress made of [ClothingFemale.Mat_Combo_Fancy]
+1,[ClothingFemale.FemaleShirtType] long [ClothingFemale.LowerSkirtType] dress made of [ClothingFemale.Mat_Combo_Fancy]
+1,[ClothingFemale.ShirtType] long hooped dress made of [ClothingFemale.Mat_Combo_Fancy]
+1,[ClothingFemale.ShirtType] formal dress made of [ClothingFemale.Mat_Combo_Fancy]
+1,robe made of [ClothingFemale.Mat_Combo_CM]
+1,hooded robe made of [ClothingFemale.Mat_Combo_CM]
+
+;ConjureCreature
+1,[CreatureNatural]
+3,[CreatureConstruct]
+
+;CreatureNatural
+1,[Animal.fantasyFeathered]
+1,[Animal.fantasyFurred]
+1,[Animal.fantasyHide]
+2,[Animal.fantasyHumanoid]
+3,[Animal.fantasyLand]
+2,[Animal.fantasyScaled]
+1,spirit [Animal.fantasyLand]
+
+;CreatureConstruct
+1,[GolemType] automaton
+1,[GolemType] golem
+1,[ElementType] elemental
+1,[ElementType] construct
+
+;GolemType
+1,ash
+1,blood
+1,bone
+1,bronze
+1,clay
+1,crystal
+1,earth
+1,fire
+1,flesh
+1,frost
+1,ice
+1,iron
+1,magma
+1,mithril
+1,rock
+1,stone
+
+;ElementType
+1,air
+1,ash
+1,earth
+1,ice
+1,fire
+1,flame
+1,frost
+1,magma
+1,smoke
+1,stone
+1,water
+
+;MageDruid
+3,[MageNameMale] [RogueMageTitle], a male druid. He worships the nature deity [DeityName].  He carries {{lcfirst:[DruidEquipment]}}.  He [DruidSpecialty].
+5,[MageNameFemale] [RogueMageTitle], a female druid. She worships the nature deity [DeityName].  She carries {{lcfirst:[DruidEquipment]}}.  She [DruidSpecialty].
+
+;DruidSpecialty
+1,is adept at calling warding spirits
+1,can depend on spirits to aid in battle
+1,can use the natural environment to great advantage
+1,can walk through the forests with ease
+1,can change into animal form in the guise of a [DruidFamiliar]
+1,can create powerful natural wards
+1,is a mighty storm keeper
+1,is a master of natural magicks
+1,is adept at natural healing techniques
+1,is allied with the creatures of the wood
+1,is skilled in all the ways of the forest
+1,can call upon powerful woodland creatures at will
+1,can ravage foes with the forces of nature
+1,readily commands tempests, winds, and storms
+1,has the ability to commune with nearby bodies of water
+
+;DruidFamiliar
+1,aardwolf
+1,bear
+1,cunning fox
+1,dire wolf
+1,eagle
+1,fox
+1,great bear
+1,great wolf
+1,hare
+1,hawk
+1,leopard
+1,mountain lion
+1,night-owl
+1,osprey
+1,rabbit
+1,raven
+1,thunderhawk
+1,tortoise
+1,wolf
+1,yeti
+
+;DruidEquipment
+1,[MageStaff] and wears [DruidClothes] and [ClothingMale.MaleFootwear]
+5,[Polearm] and wears [DruidClothes] and [ClothingMale.MaleFootwear]
+3,twin [DruidBatons] and wears [DruidClothes] and [ClothingMale.MaleFootwear]
+
+;DruidBatons
+1,[Quality] [Utility.WoodWeapon] fighting sticks
+1,[Quality] [Utility.WoodWeapon] short staves
+1,[Quality] [Utility.WoodWeapon] batons
+1,[Quality] [Utility.WoodWeapon] clubs
+1,[Quality] [Utility.WoodWeapon] knotted clubs
+1,[Quality] [Utility.WoodWeapon] fighting clubs
+1,[Quality] [Utility.WoodWeapon] rattan sticks
+
+;DruidClothes
+1,a <b>terry cloth one-piece</b> made of [Utility.DarkColors] terry cloth
+1,a robe made of [ClothingFemale.MaterialCombosCommon]
+1,a long tunic made of [ClothingFemale.MaterialCombosCommon]
+1,a hooded robe made of [ClothingFemale.MaterialCombosCommon]
+1,a toga made of [ClothingFemale.MaterialCombosCommon]
+
+;MageNecromancer
+1,[MageNameMale] [RogueMageTitle], a male necromancer. He worships the dark god [Demon generator.main].  He carries [NecromancerEquipment].  He delights in [NecroMagic].
+1,[MageNameMale] [RogueMageTitle], a male necromancer. He worships the dark god [List of gods.Gheron].  He carries [NecromancerEquipment].  He delights in [NecroMagic].
+1,[MageNameMale] [RogueMageTitle], a male necromancer. His powers of reanimation come through the worship of [List of gods.Egyptian].  He carries [NecromancerEquipment].  He delights in [NecroMagic].
+
+;NecromancerEquipment
+10,[MageStaff]  He wears a [NecroClothes]
+3,[Swords.DaggerStart]  He wears a [NecroClothes]
+
+;NecroClothes
+1,hooded robe made of [NecroColor] [Utility.ClothFancy]
+1,necromancer's robe made of [NecroColor] [Utility.ClothFancy]
+1,wizard's robe made of [NecroColor] [Utility.ClothFancy]
+1,skeletal body armor made of [CreatureNatural] bones
+1,skeletal body armor made of [Animal.fantasyHumanoid] bones
+1,hideous leather outfit made of [NecroColor] [Utility.LeatherHideSentient]
+
+;NecroColor
+1,bone-white
+1,black
+1,blood-stained
+1,blood-red
+1,crimson
+1,dark
+1,jet
+1,sickly green
+1,vile green
+
+;NecroMagic
+1,astrological studies
+1,binding weak spirits
+1,black magic
+1,blood rituals
+1,casting dark curses
+1,collecting unholy tomes and works
+1,corrupting the thoughts of others
+1,cursing his foes
+1,dark rituals
+1,death magic
+1,ebbing the very life from his enemies
+1,necromantic runes and wards
+1,opening arcane portals to unspeakable places
+1,poisons, poultices, and potions
+1,providing worthy sacrifices for his master
+1,raising the dead
+1,reanimating the deceased
+1,rituals by candlelight
+1,sacrificing enemies to please dark entities
+1,sapping the life from enemies
+1,scrying into the nether realms
+1,seducing enemies to become servitors of shadow
+1,seducing others with sensuous ritual
+1,shadow magicks
+1,spreading disease and decay
+1,subduing weak minds
+1,summoning demonic servants
+1,summoning other-worldly beings
+1,summoning the forces of darkness
+1,taboo rituals
+1,unholy binds and wards
+1,unspeakable acts of eldritch horror
+1,whittling foes away til they are empty shells
+1,witchcraft and alchemy
+1,withering nature and life
+
+;MageWizard
+1,[MageNameMale] [RogueMageTitle], a male [WizardClass].  He carries [MageEquipment].  He specializes in [MagicType].
+1,[MageNameFemale] [RogueMageTitle], a female [WizardClass].  She carries [FemaleMageEquipment].  She specializes in [MagicType].
+
+;WizardClass
+2,mage
+2,sorcerer
+2,wizard
+2,[ArcaneBooks.ArcaneProfession]
+
+;MagicType
+10,[ArcaneBooks.Discipline]
+7,elemental magic
+7,fire magic
+5,earth magic
+5,ice magic
+4,alchemy
+3,water magic
+3,wind magic
+2,mystical teleportation
+2,runespells
+1,thaumaturgy
+1,time manipulation
+1,transmutation magic
+
+;Rogue
+1,[RogueAssassin]
+1,[RogueScout]
+1,[RogueThief]
+1,[RogueBard]
+
+;RogueAssassin
+2,[RogueMaleName] [RogueMageTitle], a male [RogueRace] assassin.  He carries [AssassinEquipment].  He is a master at [RogueMastery].
+1,[RogueFemaleName] [RogueMageTitle], a female [RogueRace] assassin.  She carries [FemaleAssassinEquipment].  She is a master at [RogueMastery].
+
+;RogueMaleName
+1,[Male American Names.main] [Fantasy Names.Surname]
+1,[HalflingHippies.HalflingMale]
+1,[Fantasy Names.Surname]
+
+;RogueFemaleName
+1,[Female American Names.main] [Fantasy Names.Surname]
+1,[SGNP barbarians.EnchantressFirst] [SGNP barbarians.EnchantressSurname]
+1,[Female American Names.main] [HalflingHippies.Surnames]
+1,[HalflingHippies.HalflingFemale]
+
+;RogueMageTitle
+1,the [Carcosan Titles.main]
+1,the [Secret Society Title.TitleDescriptor]
+1,the [Secret Society Title.OrgDescriptor] [Secret Society Title.Title]
+1,the [Secret Society Title.TitleDescriptor] [Secret Society Title.Title]
+1,of [Secret Society Name.main]
+1,the [Ship Names.adj]
+
+;RogueRace
+5,dark elf
+3,elf
+5,half elf
+6,halfling
+1,high elf
+4,human
+3,night elf
+1,iksar
+1,kerran
+1,ratonga
+
+;RogueEquipment
+1,a [Bows.BowType] made of [Utility.WoodBow] wood.  [BowDecor] [BowString] He also carries [Swords.DaggerStart]  He wears [RogueClothes]
+1,a [Bows.BowType] made of [Utility.WoodBow] wood.  [BowDecor] [BowString] He also carries a [Bows.ArcherShieldType] archer's shield made of [Utility.WoodWeapon][ArcherShieldColor].  The shield has a staked bottom and can stand upright if set in soft ground.  He wears [RogueClothes]
+
+;FemaleRogueEquipment
+1,a [Bows.BowType] made of [Utility.WoodBow] wood.  [BowDecor] [BowString] She also carries [Swords.DaggerStart]  She wears [FemaleRogueClothes]
+1,a [Bows.BowType] made of [Utility.WoodBow] wood.  [BowDecor] [BowString] She also carries a [Bows.ArcherShieldType] archer's shield made of [Utility.WoodWeapon][ArcherShieldColor].  The shield has a staked bottom and can stand upright if set in soft ground.  She wears [FemaleRogueClothes]
+
+;RogueClothes
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Arrow].  [ClothingMale.MaleOutfit]
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Arrow].  He wears [LightArmor]
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Arrow].  [ClothingMale.UniformMale]
+
+;FemaleRogueClothes
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Arrow].  [ClothingFemale.FemaleOutfit]
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Arrow].  She wears [FemaleLightArmor]
+
+;FemaleLightArmor
+1,a [FemaleLightArmorTop] and a [FemaleLightArmorBottom] and [ClothingFemale.FemaleFootwear]
+1,a [FemaleLightArmorOutfit] and [ClothingFemale.FemaleFootwear]
+
+;FemaleLightArmorTop
+1,corset made of [ClothingFemale.MaterialCombosChainmailable]
+1,brassiere made of [ClothingFemale.MaterialCombosChainmailable]
+1,camisole made of [ClothingFemale.MaterialCombosChainmailable]
+1,bustier made of [ClothingFemale.MaterialCombosChainmailable]
+1,halter top made of [ClothingFemale.MaterialCombosChainmailable]
+1,strapless top made of [ClothingFemale.MaterialCombosChainmailable]
+1,jerkin made of [ClothingFemale.MaterialCombosLeather]
+1,opencoat made of [ClothingFemale.MaterialCombosLeather]
+1,bodice made of [ClothingFemale.MaterialCombosChainmailable]
+
+;FemaleLightArmorBottom
+1,loincloth made of [Utility.Fur] fur and [Utility.LeatherHide] with [ClothingFemale.FemaleLegwear]
+2,mini [ClothingFemale.FemaleLowerSkirtType] skirt made of [ClothingFemale.MaterialCombosLeather] with [ClothingFemale.FemaleLegwear]
+2,mini [ClothingFemale.FemaleLowerSkirtType] skirt made of [ClothingFemale.MaterialCombosChainmailable] with [ClothingFemale.FemaleLegwear]
+
+;FemaleLightArmorOutfit
+3,chainmail bikini made of [Utility.MetalDecor] rings with cups of [Utility.MetalDecor], lined with [Utility.LeatherHide] on the inside
+3,leather armor bikini made of [Utility.LeatherHide]
+3,catsuit made of [ClothingFemale.MaterialCombosChainmailable]
+3,catsuit made of [ClothingFemale.MaterialCombosLeather]
+
+;BowDecor
+10,The grip is wrapped in [Utility.LeatherHide].
+6,The grip is wrapped in[Bows.GripColor] [Utility.Cloth].
+2,The grip is unwrapped, but smooth and comfortable from regular use.
+1,The grip is wrapped in[Bows.GripColor] [Utility.ClothFancy].
+
+;BowString
+10,The bowstring is made of [Bows.StringLeather].
+3,The bowstring is actually a fine chain made of [Swords.Quality] [Utility.MetalDecor].
+1,The bowstring is actually a single wire made of [Swords.Quality] [Utility.MetalDecor].
+
+;AssassinEquipment
+3,a [Bows.BowType] made of [AssassinColor] [Utility.WoodBow] wood.  He also carries [Swords.DaggerStart]  He wears [AssassinClothes]
+1,a [XBows.XBowType] made of [AssassinColor] [Utility.WoodBow] wood.  He also carries [Swords.DaggerStart]  He wears [AssassinClothesXBow]
+
+;FemaleAssassinEquipment
+3,a [Bows.BowType] made of [AssassinColor] [Utility.WoodBow] wood.  She also carries [Swords.DaggerStart]  She wears [FemaleAssassinClothes]
+1,a [XBows.XBowType] made of [AssassinColor] [Utility.WoodBow] wood.  She also carries [Swords.DaggerStart]  She wears [FemaleAssassinClothesXBow]
+
+;AssassinClothes
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Arrow].  He wears [AssassinColor] [Armor.ArmorLight]
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Arrow].  He wears [AssassinColor] [Armor.ArmorMedium]
+
+;AssassinClothesXBow
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Bolt].  He wears [AssassinColor] [Armor.ArmorLight]
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Bolt].  He wears [AssassinColor] [Armor.ArmorMedium]
+
+;FemaleAssassinClothes
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Arrow].  She wears [AssassinColor] [Armor.ArmorLight]
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Arrow].  She wears [AssassinColor] [Armor.ArmorMedium]
+
+;FemaleAssassinClothesXBow
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Bolt].  She wears [AssassinColor] [Armor.ArmorLight]
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Bolt].  She wears [AssassinColor] [Armor.ArmorMedium]
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Bolt].  She wears a catsuit made of [AssassinColor] [ClothingFemale.MaterialsChainmailableCommon]
+1,a quiver of [Utility.LeatherHide] with [Utility.Fur] fur trim, containing [AmmunitionThrown.Bolt].  She wears a catsuit made of [AssassinColor] [Utility.LeatherHide]
+
+;AssassinColor
+1,black
+1,blue-black
+1,brown
+1,dark brown
+1,dark crimson
+1,dark gray
+1,dark green
+1,dark grey
+1,dark red
+1,dull black
+1,dull brown
+1,gray
+1,grey
+1,jet
+1,matte black
+1,olive drab
+1,spotted camouflaged
+1,striped camouflaged
+
+;RogueMastery
+1,acrobatics and feats of balance
+1,lockpicking and escaping
+1,moving unseen and surprising enemies
+1,preparing and using poisons
+1,setting elaborate traps
+1,vanishing from sight
+
+;RogueScout
+3,[RogueMaleName] [RogueMageTitle], a male [RogueRace] [ScoutType].  He carries [RogueEquipment]  He is a master at [RogueMastery].
+5,[RogueFemaleName] [RogueMageTitle], a female [RogueRace] [ScoutType].  She carries [FemaleRogueEquipment]  She is a master at [RogueMastery].
+
+;ScoutType
+1,archer
+1,forester
+1,hunter
+1,marksman
+1,ranger
+1,scout
+1,tracker
+1,woodsman
+
+;RogueThief
+3,[RogueMaleName] [RogueMageTitle], a male [RogueRace] [ThiefType].  He carries [RogueEquipment]  He is a master at [RogueMastery].
+1,[RogueFemaleName] [RogueMageTitle], a female [RogueRace] [ThiefType].  She carries [FemaleRogueEquipment]  She is a master at [RogueMastery].
+
+;ThiefType
+1,bandit
+1,brigand
+1,burglar
+1,cutthroat
+1,pickpocket
+1,pirate
+1,rogue
+1,thief
+
+;RogueBard
+3,[RogueMaleName] [RogueMageTitle], a male [RogueRace] [BardType].  He carries [BardEquipment]  He enjoys [BardMastery].
+1,[RogueFemaleName] [RogueMageTitle], a female [RogueRace] [BardType].  She carries [FemaleBardEquipment]  She enjoys [FemaleBardMastery].
+
+;BardType
+1,bard, who can [BardSpecialty].
+1,dirge, who can [DirgeSpecialty].
+1,minstrel, who can [BardSpecialty].
+
+;BardSpecialty
+1,bolster their allies with tales and songs of glory.
+1,heal with their miraculous voice.
+1,sooth and calm even the most savage of beasts.
+
+;DirgeSpecialty
+1,confuse their enemies with hypnotic music.
+1,curse their enemies with their arcane songs.
+1,drive fear into the hearts of their foes with their war hymns.
+
+;BardInstrument
+1,[Musical Instruments.main]
+
+;BardEquipment
+2,a [BardInstrument] He also carries [Swords.DaggerStart]  [BardClothes]
+2,a [BardInstrument] He also carries [Sword]  [BardClothes]
+1,a [BardInstrument] He also carries [Blunt]  [BardClothes]
+
+;FemaleBardEquipment
+2,a [BardInstrument] She also carries [Swords.DaggerStart]  [FemaleBardClothes]
+2,a [BardInstrument] She also carries [Sword]  [FemaleBardClothes]
+1,a [BardInstrument] She also carries [Blunt]  [BardClothes]
+
+;BardClothes
+1,[ClothingMale.MaleOutfit]
+1,He wears [ClothingMale.UniformMale]
+
+;FemaleBardClothes
+1,[ClothingFemale.FemaleOutfit]
+
+;BardMastery
+1,accompanying adventuring parties
+1,drinking, singing, and fighting, and maybe not in that order
+1,entertaining commoners and heads of state alike
+1,great acts of bravado
+1,heralding courtly figures
+1,singing for his supper
+1,tales of bawd, suspense, and intrigue
+1,ushering for attractive female guests
+
+;FemaleBardMastery
+1,accompanying adventuring parties
+1,drinking, singing, and fighting, and maybe not in that order
+1,entertaining commoners and heads of state alike
+1,great acts of bravado
+1,heralding courtly figures
+1,singing for her supper
+1,tales of romance, suspense, and intrigue
+1,ushering for attractive male guests
+
+</sgtable>
+
+[[Category:Character Concepts]] [[Category:Fantasy character]]

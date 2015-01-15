@@ -1,0 +1,138 @@
+/ http://random-generator.com/index.php?title=Dwarf_Unit
+
+: Dwarf Unit
+{:Unit Type}{10% {Unit:Special Duty}}
+
+: Unit Type
+{:Assault Unit}
+{:Engineer Unit}
+{:Mountain Unit}
+{:Range Unit}
+
+: Assault Unit
+{50%{Unit:Number} }{:Unit Name} {:Assault Name}, composed of {2d6} {:Assault} and {6} {:Assault}{25% and {3} {:Ranged}}
+
+: Engineer Unit
+{50%{Unit:Number} }{:Unit Name} {:Engineer Name}, composed of {2d4} {:Engineer} and {4} {:Ranged}
+
+: Mountain Unit
+{50%{Unit:Number} }{:Unit Name} {:Mountain Name}, composed of {2d6} {:Mountain} and {4} {:Ranged}{25% and {3} {:Engineer}}
+
+: Range Unit
+{50%{Unit:Number} }{:Unit Name} {:Range Name}, composed of {2d4} {:Ranged} and {4} {:Ranged}{25% and {3} {{:Assault}|{:Engineer}}}
+
+: Unit Name
+2x {Dwarf Name}'s
+3x {Dwarf Site}
+{Title Dwarf:Noble}'s Own
+
+: Assault Name
+axes
+hammers
+pikes
+vanguard
+volunteers
+
+: Range Name
+bombardiers
+crossbowmen
+grenadiers
+{80%{:scout} }scouts
+
+: Scout
+2x alpine 
+2x deep 
+3x prospector 
+expeditionary 
+forward 
+light
+
+: Mountain Name
+{:mountain} mountaineers
+carabiners
+
+: Mountain
+alpine 
+expeditionary 
+forward 
+light 
+
+: Engineer Name
+2x mining engineers
+3x battle engineers
+3x siege engineers
+alpine engineers
+
+: Axe
+3x deep 
+3x war 
+5x heavy 
+5x light 
+battle 
+broad 
+long 
+mountain 
+
+: Assault
+2x axe skirmishers
+2x heavy mace footmen
+2x light axemen
+3x axe footmen
+3x axe scouts
+3x hammer footmen
+3x pikemen
+battlepriests
+berserkers
+combat miners
+dwarven knights
+heavy pikemen
+heavy spearmen
+long pikemen
+runners
+spearmen
+thane guards
+urgoshers
+warpriests
+
+: Ranged
+2x axe throwers
+2x fusiliers
+2x light crossbowmen
+2x lockbowmen
+2x mortarmen
+2x shortbowmen
+3x arbalesters
+3x bombardiers
+3x crossbowmen
+3x grenadiers
+artillerymen
+cannoneers
+hammer throwers
+heavy crossbowmen
+heavy shortbowmen
+musketeers
+riflemen
+
+: Mountain
+2x alpine axemen
+2x alpine engineers
+2x alpine scouts
+2x mountaineers
+3x prospectors
+bridgers
+carabiners
+
+: Engineer
+2x siege engineers
+3x miners
+3x sappers
+artillerymen
+bridgers
+combat engineers
+engineers
+heavy siege engineers
+machinists
+stonecutters
+
+: Special Duty
+{10% covertly }{escorting|accompanied by} {Title Dwarf}

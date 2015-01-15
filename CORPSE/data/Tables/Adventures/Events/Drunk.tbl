@@ -1,21 +1,101 @@
 / Consequences of Drunkenness
 / source or inspiration: Chaotic Shiny's 'Tavern Tables'
- 
-The character gambles all the money they have with them.
-The character has no money, and can't remember where it went.
-The character only has half the money they should have, and can't remember where the rest went.
-The character wakes up naked.
-The character has lost an important item, even if they didn't take it out with them. It must be one that they could have gotten access to during the night. If there is no such item, roll again.
-The character has made an expensive and largely useless purchase.
-The character is wounded, having been in a fist-fight.
-The character has a new tattoo.
-The character has a new enemy.
-The character has let slip some information that they should have kept secret.
-The character wakes up in jail, having committed a minor offense.
-The character wakes up far from the town or city they were in. It must be a distance they could have travelled during the night, but remember that magic might allow travel over great distances.
-The character has joined a cult that is unlikely to let them leave easily.
-The character has joined an army (including possibly a rebel army).
-The character killed someone ({by accident|in self-defence|the character's fault).
-The character has gotten married.
-The character has arranged to fight a duel.
-The character has bought a 'magic' item ({fake|doesn't work properly|doesn't do what it's supposed to}).
+ / http://random-generator.com/index.php?title=Drinking_Binge
+
+: Drunk
+You go into the tavern intending to {:reason}. However, you {:overdo} and your overindulgence ends up costing you no less than {1d20x4+5} gold pieces. You wake up {:consequence}.
+
+: reason
+gather information from the locals
+await the arrival of a mysterious stranger
+celebrate the successful completion of an adventure
+commiserate following yet another failed adventure
+drink yourself into a blind stupor
+find accommodation for the night
+buy everyone a drink because you're just that kind of guy
+track down your mortal enemy
+drink to forget your last messy divorce
+break your vow of sobriety once and for all
+score
+watch the naughty ladies doing their jiggly dancing
+discover just how much alcohol is needed to cause irreparable damage to your liver
+hang around until someone takes pity on you and buys you a drink
+pick a fight with a complete stranger
+make use of the latrines
+1sample the finest wines the place has to offer
+take part in the monthly trivia quiz
+get completely off your face
+indulge in the weekly karaoke humiliation ritual
+
+: overdo
+are particularly thirsty
+arranged to fight a duel.
+become possessed by demons of debauchery
+bought a 'magic' item ({fake|doesn't work properly|doesn't do what it's supposed to})
+decide to out-drink the dwarf that's been propping up the bar for the past week
+end up in the company of some journalists
+gamble all your money you had with you
+get a bit carried away
+get completely wrecked
+go on the bender to end all benders
+go temporarily insane
+got married.
+have a few too many
+ignore the conventional wisdom about mixing one's drinks
+joined a cult that is unlikely to let them leave easily
+joined an army (including possibly a rebel army)
+killed someone ({by accident|in self-defence|the character's fault)
+let slip some information that you should have kept secret
+lose all sense of moderation
+lose an important item (even if you didn't have it with you)
+lose control
+lose count of how many drinks you intended to have
+lose fifteen drinking games in a row
+made an expensive and largely useless purchase
+overdo it slightly
+overestimate your capacity for alcohol
+resolve to buy everyone's drinks for the entire night
+run into a bunch of sailors
+take leave of your senses
+
+: consequence
+bound, gagged and in a leather corset
+far from the town or city they were in
+fully armed and in the middle of a room full of cowering hostages
+hanging from the weather vane at the top of a church tower
+in a 30-foot deep pit
+in a bathtub full of ice
+in a cesspit
+in a genital-piercing parlor
+in a heap of smoldering rubble
+in a jail cell awaiting trial
+in bed with a frightened pig
+in bed with the vicar
+in drag with a horny chimpanzee advancing on you
+in jail, having committed a minor offense
+in pieces
+in the middle of the sea, clinging to a dolphin
+in the middle of the wedding of an important dignitary, halfway through singing an obscene song
+inside a gelatinous cube
+inside a tiger
+locked away at the top of the tallest tower of the land
+lying face-down on a dung heap
+lying on your back on a stone altar
+naked
+on a big silver platter with an onion up your bum
+on a hospital bed with tubes sticking out of your nose 
+on the deck of a ship, three days out to sea
+soaked in flammable oil
+standing over the vicar's corpse with a pickaxe-handle in your hand
+stark naked and handcuffed to {name}
+stripped naked and shackled to a lamp-post
+stripped to the waist and covered with welts
+trapped in the form of a llama
+trapped inside a small crate
+up to your chin in hyena offal
+wearing nothing but a leather and rubber ball-gag with "property of {name}" tattooed on your hindquarters
+with a new enemy
+with a new tattoo of {art:subject}
+with no money, and can't remember where it went
+with only half the money they should have, and can't remember where the rest went.
+wounded, having been in a fist-fight
