@@ -2,29 +2,38 @@
 20x {:item}
 
 : Item
-fine wine ({d10}00 gp)
-perfume
-plain {metal:precious} {jewelery}
 {art}
+{made of:hard} {25%{:coating} }{:object}{25% {:decorated}}
+{:clothing}
+{:jewelery}
+{:misc}
+
+: Clothing
 {fabric} {20%{color:drab} }{male fine}{25% {:material}}
 {fabric} {50%{color:fancy} }{female fine}{25% {:material}}
-{made of:hard} {25%{:coating} }{:misc object}{25% {:decorated}}
+
+: Jewelery
+plain {metal:precious} {jewelery}
 {made of:precious} {jewelery}{25% {art:decorated}}
 {metal:precious} {jewelery} with a single large {gem}
 {metal:precious} {jewelery}{25% {art:decorated}}
+
+: Misc
+fine wine ({d10}00 gp)
+perfume
 {quality:good} {musical instrument}{25% {art:decorated}}
 
-: Misc Object
+: object
 chalice
 drinking horn
 goblet
 
-: Coating
+: coating
 enameled
 glazed
 polished
 
-: Material
+: material
 embroidered with {metal:precious} thread
 {lined|trimmed} with {fur and pelt.animal} fur
 {stitched|threaded} with {metal:precious} thread

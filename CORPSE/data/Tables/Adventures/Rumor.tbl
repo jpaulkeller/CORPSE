@@ -1,148 +1,229 @@
 / http://chaoticshiny.com/situationgen.php?amount=10
 / http://mojobob.com/roleplay/tables.html#sandboxrumours
+/ http://random-generator.com/index.php?title=Encounter-a-Day
 
 : Rumor
-A cart overturned near the {landmark}, releasing a small {monster}.
-A tribe of {humanoid}s inhabit the {Dungeon Name}.
-A {:adjective} {:who} {:relates to}.
-A {:adjective} {:who}{50%? is:and a {50%{:adjective}} {:who} are} {:goal}.
-A {profession:merchant} has {:loot} hidden in its {attic|cellar}.
-A {profession} has {:loot} hidden around his house.
-A {profession} knows a secret entrance into the {Dungeon Name}.
-Lots of {{gem}s|{metal:precious}} has been found in {Dungeon Name}.
-No one has ever come back alive from {Dungeon Name}.
-Strange {noise} has been heard {near the {site}|in the {city site}}.
-{:Loot} was said to have been lost in {Dungeon Name}.
-{Dungeon Name} has a magical {dungeon feature}.
-{Dungeon Name} was {made|build|constructed|delved} in the time before the {Cataclysm}.
+A band of adventures fled into a ruined fortress tower filled with treasure and monsters.
+A band of evil gnomlings lives in the forest.
+A band of mercenaries from the distant north, riding armoured bears and prone to wanton destruction, unless given a great treasure.
+A blackguard is organizing monsters in an area.
 A body has been pulled from the river, the name of an ancient and evil god carved into its forehead.
+A cart overturned near the {landmark}, releasing a small {monster}.
+A changeling finding out his true fey nature at puberty.
+A city living of art and wine, ruled by artists and vintners, with demagogues preaching about the power of the common folk.
+A city run by a trio of vampires, vying for total control of the city and other lands.
+A clutch of wyverns is preying upon sheep as well as shepherds.
 A covered wagon has overturned, spilling hundreds of foreign {currency.coin}s into the street.
+A culture of pyramid-builders who bury the dead with great treasures and carefully guard their graves.
+A cursed military fort that slowly makes the inhabitants insane.
+A druid needs help defending her grove against goblins.
+A dwarf, dead and with an expression of great terror, and a list of names he carried.
+A dying messenger, those chasing her, and a message of great importance.
 A famous foreign gladiator is appearing at the arena tonight.
-A {humanoid} has been seen flying around the {pseudo class:magical} tower using a pair of artificial wings.
+A fire elemental has escaped from a {pseudo class:magical} lab.
+A flight of small drakes, unparalleled in the accuracy of their flaming breath, loyal to anyone who feeds them.
+A gate to the Lower Planes threatens to bring more demons to the world.
+A giant {avian} has just carried off a baby from a balcony.
+A great dragon was slain, the witch queen banished, and the spirit of the ancient barbarian king destroyed by beings from another realm.
+A great treasure was discovered by the dwarves in the {region}.
+A group of dragons has banded together to increase their power.
+A guild of messengers dabbling in smuggling, protective of their monopoly.
+A halfling {pseudo class:magical} has discovered a new powerful school of magic.
+A hero exiled by her people, driven by the will to die on the peak of her lofty mountain home.
+A hole in reality, withering hope and self-esteem of those near it.
+A huge dire wolf, apparently immune to magic, is organizing the wolves in the wood.
+A huge {gem} supposedly lies within an ancient ruined monastery.
+A infestation of stirges drives yuan-ti closer to civilized lands.
+A killer is loose and stuffing bodies into chimneys.
+A large {site:artificial} to the east has been destroyed by unknown forces.
 A local lamplighter is the person to talk to if you want information on those who come out at night.
+A lonely mountain pass is guarded by a powerful sphinx denying all passage.
+A mad alchemist brewing potent substances in his lair, where a monster is about to break out of its cage.
+A mad {pseudo class:magical} has been found in the burned remains of her abode, her servants all killed by her hand.
+A magical accident has opened a gate that has loosed magic-eating monsters into the world.
+A man kills himself to frame another of murder.
+A map showing the location of an ancient magic forge is discovered.
+A marketplace that appears at night, disappears upon dawn, and where every purchase has an unusual price.
 A master thief has seen the face of the ruler of the city, and yet lived.
 A master thief will be executed by being hurled out of a catapult at noon tomorrow unless he can prove his innocence.
 A merchant has just been robbed of a massive gem by a trained {familiar}.
 A merchant is looking for bodyguards for a journey through a dangerous {terrain}.
+A mighty berserker too easily provoked, but with good intentions.
+A mighty pyramid tomb lies to the north, theft-proof, it still contains ancient treasures.
+A mirror that reveals the muses and talents of people, making them vulnerable.
+A monastery inhabited by monsters, claiming to have given up their bestial ways.
 A moneylender is looking for someone discreet, for a delicate job.
+A new brothel is opening in town, and they are seeking talent.
+A new inn is opening in town.
 A new playwright has set the stage on fire, literally.
 A new tax starts today on all magicians. Many are trying to get themselves re-classified as astrologers or fortune tellers.
+A noblewoman who buys the masterpieces of little-known artists, presenting them as her own and arranging the deaths of those whose work she claims.
 A number of half-fish, half-humans have been seen around the river bank at dusk.
+A palace of pure {metal:precious} is hidden in the {terrain}.
+A person of virtue and compassion destined to be the next grim reaper, unwilling to accept the role.
+A pirate captain whose reputation is due to masquerading as a woman, successfully.
 A pirate galley has sunk, blocking the harbour mouth.
+A plague brought by wererats threatens a community.
+A plague that keeps the diseased conscious but kills their bodies.
+A pot of gold stolen from a fey who seeks revenge.
+A powerful angel is hiding in the city performing good deeds unseen.
+A priest hiding from a dragon in the woods.
+A rare plant has suddenly boomed on a local farm.
+A recently recovered artifact causes arcane spellcaster powers to go awry.
+A room where everything turns invisible, including the treasure and guardian therein.
+A shape-changed {monster} is gathering mentally controlled servitors.
+A ship whose decks are littered with dead birds for no apparent reason.
 A spice-merchant is a collector of rare magical items.
+A strange {color} smoke billows out of a cave near a mysterious ruin.
+A thief who offers a job to any who corner her.
+A tower that grants great power to the one serving and living in it, but takes away all freedom.
+A tribe of {humanoid}s inhabit the {Dungeon Name}.
+A wounded beast in a trap, more formidable than it seems to be.
+A young elven rebel seeking to change the world, opposing the wise elders.
+A {:adjective} {:who} {:relates to}.
+A {:adjective} {:who}{50%? is:and a {50%{:adjective}} {:who} are} {:goal}.
+A {humanoid} has been seen flying around the {pseudo class:magical} tower using a pair of artificial wings.
+A {monster} is said to be the head of a merchant guild.
+A {profession:merchant} has {:loot} hidden in its {attic|cellar}.
+A {profession} has {:loot} hidden around his house.
+A {profession} knows a secret entrance into the {Dungeon Name}.
+A {pseudo class:magical} experiment has caused a disaster in a tower to the east.
 A {pseudo class:magical} has just turned the captain of the city guard into a {fauna}.
+A {pseudo class:magical} in a manse to the north of town is flaunting guild laws.
+A {pseudo class:magical} is buried in a trap-filled tomb with powerful magic items.
+A {pseudo class:magical} needs a particularly rare spell component found only in the {terrain}.
+A {pseudo class:magical}'s familiar has escaped and been said to have summoned a demon.
+All the dwarves in an underground city have disappeared.
 An aged, foreign sage is gathering mercenaries for a dangerous expedition into the desert.
+An alchemist has lost a shipment of supplies to hijackers. If she doesn't get them back, she faces bankruptcy.
+An ancient demonic evil has seized control of giants.
+An ancient evil cult banished long ago is said to be returning.
+An ancient metropolis, original inhabitants long gone, whose ageless guardians still enforce the draconian laws of their masters.
 An annoying beggar has just been turned into a {fauna}.
-A giant {avian} has just carried off a baby from a balcony.
-An evil {pseudo class:magical} is terrorizing a small town nominally ruled by the city.
+An arbiter of the dead and a murderer making an appeal for someone she killed.
+An army of statues in the {region} has begun to move.
+An eastern {pseudo class:magical} have discovered a new type of magic.
+An elite order of assassins, each member devoted to single mark, waiting for the sign to strike.
 An evil temple wants someone to retrieve an ancient scroll from the sewers.
+An evil {pseudo class:magical} is terrorizing a small town nominally ruled by the city.
+An expensive tavern where the rich patrons watch the poor, paid with food, fight and brawl.
+An innocent but monstrous witch and the merchants who want her property.
+An island at the center of the lake is actually the top of a strange, submerged fortress.
+An order of monks who believe the world to be controlled by a divine storyteller, trying to keep everything in control.
+An underwater city built to support land-dwellers, abandoned for unknown reason.
+An {profession} going into a hostile kingdom needs an escort.
+An {pseudo class:magical} is compelling others to steal for him.
+Artificers inspired by a mad god, building slaves to do its bidding.
+Barge pirates have made a deal with a covey of hags and exact a high toll to use the river.
+Breeder of monsters now dying and the creations escaped.
+Bugbears are demanding a toll on a well-traveled bridge.
+Chamber smells of ozone, for a reason, and is guarded by a golem.
+Chaos spirit who exchanges the valued possessions of people.
+Child of a noble following a great hero, now blamed for kidnapping the child.
+Clerics who have resurrected a long-dead hero discovered she's not what they thought.
+Colossal vermin are straying out of the desert to attack settlements.
+Cultists are kidnapping potential sacrifices.
+Cultists need to recover an artifact to summon a giant sleeping demon.
+Cute wild creature and the ferocious parents searching for it.
+Demons are possessing monsters and causing havoc.
+Demons have been taking the shape of men and hiding to escape hell.
+Desperate storycrafter seeking inspiration by hanging on the gallows, alive, for now.
+Donkey possessed by a demon, sometimes peaceful, sometimes succumbing to the evil within.
+Dragons can sense when their kin are harmed or killed.
 Drinking ten mugs of the house ale at a local pub gives you the strength of a giant.
+Dwarven immigrants are arriving in southern cities in droves.
+Every night the doors are barred and windows covered, for something goes bump in the night.
+Everyone who enters the {region} dies.
+Evil clerics gather in secret to summon a monstrous god to the world.
+Evil {antagonist:group} are constructing a fortress not far from the community.
+Eye Tyrants are arriving in huge numbers from the realms above.
+Fae with ivory masks, quick to take offense for the least significant transgression and terrible in their wrath.
+Fey who takes on the shape and memories of a target, feeding off despair and fear.
+Five men burying alive a young woman who remembers nothing.
+Former servant opposing a diabolical master, in spite of the odds.
+Friendly family offering shelter from the weather, ensorcelled to slay any visitors at night.
+Gargoyles are killing giant eagles in the mountains.
+Giant, berserk animals running free, their master in hiding.
+Gravediggers have discovered a huge, ghoul-filled catacomb under the cemetery.
+Grove of sentient trees, surrounded by their sapling and guardians.
+Host of angelic beings ruling over a city where all evil is punished, harshly.
+Infertile race that abducts females and raises them as their own, using males as slaves and brutes.
+Inn serving a foreign nation with trained prostitutes and ways to spy upon the most secret of meetings.
 Last night a mysterious {humanoid} bet their life and won 50,000 gold pieces.
+Local bandits have joined forces with a tribe of {{humanoid}+}.
+Lonely kobold threatened by a pack of wolves.
+Lots of {{gem}s|{metal:precious}} has been found in {Dungeon Name}.
+Man-eating {undead} prowl the swamp for food.
+Many of the old ruins in the {terrain} contain great and ancient treasure.
 Members of a new gang have blocked a street and demand a toll from all who pass.
+Mighty sorcerer disdaining the traditional tools of the trade, defeating every challenger with merely a look.
+Monstrous animals that clear the path for dawn, attacking anything that might compromise their task.
+Mountain guarded by an ancient dragon and the monastery on the top of the mountain.
+Mute, illiterate girl, far from home.
+Mysterious merchants sell faulty magic items in town and then attempt to slink away.
+Mysterious {noise} comes from a haunted wood at night.
+No one has ever come back alive from {Dungeon Name}.
+Noble, drugged but in expensive clothes, vengeful towards any witness.
+Number-obsessed cult, seeking to have everyone conform in face of their immutable reality.
+Obelisks stand in the mountains that hold the key to great power, but none who have sought these have returned.
+Ogre magi have torn up a village in a violent rage.
+People grow suspicious of half-orc merchants peddling gold dragon parts in the market.
+Petty thief running from authorities, unfortunately meeting old “friends”.
+Pregnant princess, soon in labour, hiding from her family.
+Primitive heathens are throwing parties in the woods.
 Prominent thieves are looking for someone without scruples, for a dangerous job.
+Regiment of forgotten soldiers from a war no longer waged, still guarding the passage as ordered, eager for news.
+Religion built around harmony, with a cult seeking destruction of that falls short of their standards.
+Ruby, the owner of which is cursed by terrible misfortune.
+Rumors of a {humanoid} civil war have been filtering into town.
+Secret society fighting against the end of the world as prophesied by a book that ever changes.
+Secret underground harem and two warriors, blades glistening, in there.
+Several daring thefts have been made upon towers in the city.
+Skeletons, flame-born, originally forge-workers, now with a spark of intelligence and ambition.
+Small hamlet, a tree with miraculous powers in the center, and a sword of great good and evil the tree has grown around.
 Someone is putting poison in the beer in both of two rival pubs.
+Something is preventing huge hordes of {{humanoid}+} from leaving the {region}.
+Strange {noise} has been heard {near the {site}|in the {city site}}.
+Talking {fauna} reside in the forest.
+Tavern-keeper whose brews are made of sentient creatures, responsible for the disappearance of some guests.
+Terrible beast bursting through city streets on a day of great celebration.
+The Mountain King is possessed by an evil force.
+The Witch Queen has been defeated by a band of adventurers.
+The Witch Queen was in contact with the Mountain King.
+The duke has been acting strangely.
+The gifts a necromancer gives to assassins, useful for getting rid of the bodies; where do they go?.
 The heads of the Assassin's Guild meet every week in the back room of a local inn.
 The house of an alchemist has just disappeared in a cloud of purple and green smoke.
 The landlord of a local inn is really a werewolf.
+The return of an ancient race that once ruled over those who are in power now.
+The river that flows through all the worlds and the souls of the dead it sweeps along.
 The ruler of the city has just left port in his galley, for some piracy.
-This morning a wine merchant found a strange potion in one of his shipments.
-Two dozen of the City Guard have been executed for holding on to tax money.
-A huge dire wolf, apparently immune to magic, is organizing the wolves in the wood.
-Evil {antagonist:group} are constructing a fortress not far from the community.
 The tomb of a powerful {pseudo class:magical}, filled with magic items, has sunk into the swamp.
-Mysterious {noise} comes from a haunted wood at night.
-Bugbears are demanding a toll on a well-traveled bridge.
-A blackguard is organizing monsters in an area.
-An {profession} going into a hostile kingdom needs an escort.
-A {pseudo class:magical} needs a particularly rare spell component found only in the {terrain}.
-Gravediggers have discovered a huge, ghoul-filled catacomb under the cemetery.
-Evil clerics gather in secret to summon a monstrous god to the world.
-A {pseudo class:magical} is buried in a trap-filled tomb with powerful magic items.
-{{Humanoid}+} riding dragon turtles sell their services as mercenaries to the highest bidder.
-Gargoyles are killing giant eagles in the mountains.
-A druid needs help defending her grove against goblins.
-All the dwarves in an underground city have disappeared.
-A fire elemental has escaped from a {pseudo class:magical} lab.
-{Undead} vex a large library, especially an old storeroom long left undisturbed.
-A shape-changed {monster} is gathering mentally controlled servitors.
-A lonely mountain pass is guarded by a powerful sphinx denying all passage.
-Thieves broke in to a wealthy merchants shop, but apparently didn't take anything.
-The town may be hiring mercenaries to augment the town guard.
-A new inn is opening in town.
-The duke has been acting strangely.
-A rare plant has suddenly boomed on a local farm.
-Various monsters have long preyed upon people from within the sewers of a major city.
-Local bandits have joined forces with a tribe of {{humanoid}+}.
-An island at the center of the lake is actually the top of a strange, submerged fortress.
-A infestation of stirges drives yuan-ti closer to civilized lands.
-People grow suspicious of half-orc merchants peddling gold dragon parts in the market.
-A strange {color} smoke billows out of a cave near a mysterious ruin.
-Mysterious merchants sell faulty magic items in town and then attempt to slink away.
-Cultists are kidnapping potential sacrifices.
-A huge {gem} supposedly lies within an ancient ruined monastery.
-Barge pirates have made a deal with a covey of hags and exact a high toll to use the river.
-Ogre magi have torn up a village in a violent rage.
-A map showing the location of an ancient magic forge is discovered.
-Two {humanoid} tribes wage a bloody war.
-A recently recovered artifact causes arcane spellcaster powers to go awry.
-An {pseudo class:magical} is compelling others to steal for him.
-A gate to the Lower Planes threatens to bring more demons to the world.
-A plague brought by wererats threatens a community.
-Clerics who have resurrected a long-dead hero discovered she's not what they thought.
-Colossal vermin are straying out of the desert to attack settlements.
 The tomb of an old {pseudo class:magical} has been discovered.
-A clutch of wyverns is preying upon sheep as well as shepherds.
-There is fierce fighting in the {region}.
-A band of adventures fled into a ruined fortress tower filled with treasure and monsters.
-An eastern {pseudo class:magical} have discovered a new type of magic.
-An army of statues in the {region} has begun to move.
-A mad {pseudo class:magical} has been found in the burned remains of her abode, her servants all killed by her hand.
-An alchemist has lost a shipment of supplies to hijackers. If she doesn't get them back, she faces bankruptcy.
-Cultists need to recover an artifact to summon a giant sleeping demon.
-A {pseudo class:magical} in a manse to the north of town is flaunting guild laws.
-Several daring thefts have been made upon towers in the city.
-A group of dragons has banded together to increase their power.
-Demons are possessing monsters and causing havoc.
-A killer is loose and stuffing bodies into chimneys.
-A large {site:artificial} to the east has been destroyed by unknown forces.
-Something is preventing huge hordes of {{humanoid}+} from leaving the {region}.
-A {pseudo class:magical}'s familiar has escaped and been said to have summoned a demon.
-Rumors of a {humanoid} civil war have been filtering into town.
-Undead {{fauna}+} have been attacking people in the {region}.
-{{Humanoid}+} have recently begun approaching human settlements with envoys seeking peace.
-A powerful angel is hiding in the city performing good deeds unseen.
-Demons have been taking the shape of men and hiding to escape hell.
-A new brothel is opening in town, and they are seeking talent.
-A halfling {pseudo class:magical} has discovered a new powerful school of magic.
-A {monster} is said to be the head of a merchant guild.
-{{Monster}+} have started appearing in the {terrain} to the north.
-The Witch Queen has been defeated by a band of adventurers.
-The Witch Queen was in contact with the Mountain King.
-Dwarven immigrants are arriving in southern cities in droves.
-Everyone who enters the {region} dies.
-A {pseudo class:magical} experiment has caused a disaster in a tower to the east.
-Talking {fauna} reside in the forest.
-There is a {pseudo class:magical} in the swamp to the south who brews potions of a legendary efficacy.
-Primitive heathens are throwing parties in the woods.
-A magical accident has opened a gate that has loosed magic-eating monsters into the world.
-An ancient evil cult banished long ago is said to be returning.
-A great treasure was discovered by the dwarves in the {region}.
-{Antagonist} is seeking to release a great evil.
-Man-eating {undead} prowl the swamp for food.
-Obelisks stand in the mountains that hold the key to great power, but none who have sought these have returned.
-A band of evil gnomlings lives in the forest.
-There is a wolf pack to the north, they are the pets of a mighty giant.
-An ancient demonic evil has seized control of giants.
-The Mountain King is possessed by an evil force.
-Eye Tyrants are arriving in huge numbers from the realms above.
-Dragons can sense when their kin are harmed or killed.
-When an Eye Tyrant is killed, a curse is bestowed that causes all other Eye Tyrants to seek the killers.
+The town may be hiring mercenaries to augment the town guard.
 There are many old ruins in the {terrain}. They are from a previous age.
-Many of the old ruins in the {terrain} contain great and ancient treasure.
-A palace of pure {metal:precious} is hidden in the {terrain}.
-A mighty pyramid tomb lies to the north, theft-proof, it still contains ancient treasures.
-A great dragon was slain, the witch queen banished, and the spirit of the ancient barbarian king destroyed by beings from another realm.
+There is a wolf pack to the north, they are the pets of a mighty giant.
+There is a {pseudo class:magical} in the swamp to the south who brews potions of a legendary efficacy.
+There is fierce fighting in the {region}.
+Thieves broke in to a wealthy merchants shop, but apparently didn't take anything.
+This morning a wine merchant found a strange potion in one of his shipments.
+Town known for its hunting dogs is approached by the lord of canines, displeased with the misplaced devotion of the townsfolk.
+Two dozen of the City Guard have been executed for holding on to tax money.
+Two tribes of fearsome barbarians locked in continuous fighting and the shamans who want to destroy the other side, permanently.
+Two {humanoid} tribes wage a bloody war.
+Undead {{fauna}+} have been attacking people in the {region}.
+Various monsters have long preyed upon people from within the sewers of a major city.
+When an Eye Tyrant is killed, a curse is bestowed that causes all other Eye Tyrants to seek the killers.
 When you die, you get turned into a dragon!
+Zombies pouring upon unsuspecting treasure-seekers, driving them towards a deadly pit.
+{:Loot} was said to have been lost in {Dungeon Name}.
+{Antagonist} is seeking to release a great evil.
+{Dungeon Name} has a magical {dungeon feature}.
+{Dungeon Name} was {made|build|constructed|delved} in the time before the {Cataclysm}.
+{Undead} vex a large library, especially an old storeroom long left undisturbed.
+{{Humanoid}+} have recently begun approaching human settlements with envoys seeking peace.
+{{Humanoid}+} riding dragon turtles sell their services as mercenaries to the highest bidder.
+{{Monster}+} have started appearing in the {terrain} to the north.
  
 : Adjective
 {adjective}
@@ -181,3 +262,6 @@ a {friendly|young|small} {monster}
 the {Artifact Name}
 the {relic}
 thousands of {metal:precious} pieces
+
+===
+

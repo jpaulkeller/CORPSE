@@ -23,7 +23,7 @@
 
 : Alien
 tentacled alien {:origin}
-a {acid|air|earth|fire|shadow|water} elemental
+{acid|air|earth|fire|shadow|water} elemental
 
 : Hybrid
 {33%{:size} }hybrid with a {fauna} head on a {fauna} body
@@ -31,13 +31,13 @@ amalgamation with parts from a {fauna}, {fauna}{50%, and {fauna}}
 {33%{:size} }{celestial|demonic|divine|elemental} {fauna}
 
 : Cyborg
-a {:size} {fauna}, augmented with strange devices
-a {:size} {fauna}, armored with plates of {{metal:weapon}|{metal:special}}
+{:size} {fauna}, augmented with strange devices
+{:size} {fauna}, armored with plates of {{metal:weapon}|{metal:special}}
 
 : Construct
-a {wooden|metal} construct
-a clockwork automatron
-a magically animated {made of:hard} simulacrum
+{wooden|metal} construct
+clockwork automatron
+magically animated {made of:hard} simulacrum
 
 : Size
 tiny

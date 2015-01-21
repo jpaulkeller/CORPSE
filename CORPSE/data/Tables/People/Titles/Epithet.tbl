@@ -1,0 +1,209 @@
+/ http://random-generator.com/index.php?title=Epithets
+
+: Epithets
+{:Barbarian}
+{:Mage}
+{:Priest}
+{:Rogue}
+{:Warrior}
+
+: Barbarian
+, {Title Bad} of the {Weapon{!OneWord}} God
+of {Evocative Noun:Not Positive}
+the {Evocative Adj:Negative}
+the {Organ} {Carver|Choker|Cleaver|Collector|Crusher|Eater}
+{20%, {{Pseudo Class|Title Bad}}} of the {Site Name:Dark}
+{50% {Humanoid}-{bane|butcher|killer|eater|slayer|friend}}
+{Weapon{!OneWord}}{hand|fist|foot|tooth}
+
+: Mage
+/ {: ArcaneBooks.ArcaneAuthor}
+The {:Adj} {:Mage Title}
+{:Mage Title} of {Evocative Noun}
+{:Mage Title} of {:Slain}
+{:Mage Title} of {:People}
+{:Mage Title} of {:Place}
+
+: Priest
+/ {: Secret Society Title.main}
+The {50%{:Adj} }{:Priest Title}{50% of {:Place}}
+{:Priest Title} of {:People}
+{:Priest Title} of {:Place}
+{:Priest Title} of {Divine Name}
+{:Priest Title} of {Evocative Noun}
+
+: Rogue
+{20%{:Adj} }{:Rogue Title} of {:Place}
+{20%{:Adj} }{:Rogue Title} of {:Slain}
+the {:Rogue Adj}, {:Rogue Title} of {:Rogue Concept}
+{:Rogue Title} of {:Adj Or Number} {:People}
+the {:Rogue Adj} {:Rogue Noun}
+
+: Warrior 
+{20%{:Adj} }{:Warrior Title} of {:Place}
+{20%{:Adj} }{:Warrior Title} of {:Slain}
+{20%{:Adj} }{:Warrior Title} of {Evocative Noun}
+
+: Mage Title
+{pseudo class:mage}
+{pseudo class:sage}
+
+: Priest Title
+hand
+heart
+saint
+{pseudo class:priest}
+{title religious}
+
+: Warrior Title
+butcher
+champion
+conqueror
+lord
+reaver
+slayer
+veteran
+warlord
+{pseudo class:fighter}
+
+: slain
+{10%{:adj or number} }{:victims}
+{:victim concept}
+{:people}
+
+: victims
+beasts
+brutes
+cannibal hordes
+chains
+cities
+dragons
+enemies
+giants
+gods
+horrors
+kings
+men
+mighty ones
+minstrels 
+nameless things
+seas
+villages
+walls
+
+: victim concept
+all that is vile
+hope
+justice
+peace
+the innocent
+the unjust
+the wretched
+tyranny
+
+: people
+fools
+gods
+kings
+magi
+men
+merchants
+monsters
+schemers
+the chaste
+the corrupt
+the mad
+the prideful
+usurpers
+
+: rogue title
+artist
+deceiver
+infiltrator
+prince{50%ess}
+shadow
+trickster
+{king|queen}
+{lord|lady|
+{master|mistress}
+{pseudo class:rogue}
+
+: rogue adj
+cunning
+foxy
+hidden
+impossible
+inexorable
+infamous
+invisible
+laughing
+silent
+unspoken
+
+: rogue noun
+artist
+blade
+cloak
+creeper
+crowbar
+genius
+glove
+knife
+shadow
+spy
+stiletto
+strangler
+watcher
+
+: rogue concept
+cages
+chance
+darkness
+deception
+dusk
+intrusion
+knives
+locked doors
+midnight
+misrule 
+mists
+moonlight
+opportunity
+shadows
+stealth
+the night
+thieves
+traps
+tricks
+whispers
+
+: Place
+/ {: Fantasy Landmarks.main}
+{landmark}
+/ {: Fantasy Town Names.main}
+{town name}
+
+: Adj Or Number
+{number:epithet}
+{: adj}
+
+: Adj
+bloody
+conniving
+deceptive
+enigmatic
+furious
+grandiose
+handsome
+inscrutable 
+merciful 
+monstrous
+pristine
+sanctimonious 
+treacherous
+troubled
+undying
+vast
+vengeful
+wrathful
+{evocative adj}    

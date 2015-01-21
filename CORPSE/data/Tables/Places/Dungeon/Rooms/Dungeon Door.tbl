@@ -1,3 +1,5 @@
+/ http://random-generator.com/index.php?title=Expanded_Dungeon_Doors
+
 : Dungeon Door
 8x {:type}; {:state}; made of {:material}{10%; covered by {:covered by}}{10%; {:special}} 
 1x doorway covered by hanging {leather|fur|cloth|strings of {beads|bells|{tiny item}}}
@@ -18,13 +20,24 @@
 2x {stone|granite|marble|obsidian|slate}
 1x {metal}
 
+/ arras
+/ jalousie
+/ lambrequin
+/ drape
+/ draw curtain
+/ pleated shade
+/ portiere
+/ purdah
+/ valence
+
 : Covered By
 bone
 book covers
-leatherxs
+dragon scales
+leather
 poisonous vines
 recycled shields
-{crustacean|tortoise} shell
+{crustacean|tortoise} shells
 {fur and pelt.animal} pelts
 {reptile} hide
 
@@ -59,11 +72,12 @@ arcane writing (read magic required to decipher)
 bas relief of demonic face (10% delivers magic mouth message)
 charred corpse in front of door
 comedic graffiti
+doorbell
 scratches on door
-grated window
+{glass|grated} window
 holy symbol on chain hangs from doorknob
 human-shaped outline charred onto door
-knocker
+{metal:precious} knocker
 magic circle inscribed on door
 message box hangs on door, contains {d4-1} messages
 obscene graffiti
@@ -77,3 +91,49 @@ warning sign on door
 warped and will not shut
 {liquid} seeping from under door
 {wider|taller|shorter|narrower} than normal
+
+slides {left|right|up|down} instead of opening normally.
+The door is hinged on top instead of opening normally.
+The door is locked with a locking bar (-3 to bashing it down).
+The door is covered in [metal] bands.
+The door has a deadbolt (-2 to lockpicking/bashing attempts)
+The door is covered in [wood] braces.
+The door is locked with a chain (-1 to bashing attempts)
+A sign hangs from the door. It says [Inscriptions.main].
+The door is warped and will not close.
+There are/is a [100 even less useful items.item] nailed to the door.
+10,The door has a [cover] cover.
+The door is an unusual size.
+The door is a strange shape.
+
+;condition
+unlocked and free
+locked with a [lockquality] lock
+unlocked and stuck
+stuck and locked with a [lockquality] lock
+
+;lockquality
+10,wretched (+6/+30%)
+20,poor (+3/+15%)
+60,fair
+40,average (-1/-5%)
+20,good (-2/-10%)
+10,excellent (-3/-15%)
+10,strong (-4/-20%)
+10,very strong (-5/-25%)
+5,fullproof (-6/-30%)
+5,superior (-8/-40%)
+3,masterful (-12/-60%)
+impossible (-16/-80%)
+
+;door
+2,simple (+1) [wood] door
+8,good [wood] door
+4,strong (-1) [wood] door
+4,[stone] (-2) door
+2,[metalkind]
+
+;metalkind
+solid [metal] (-4) door
+door that is a [metal] grate (-4)
+door made from [metal] bars (-4)

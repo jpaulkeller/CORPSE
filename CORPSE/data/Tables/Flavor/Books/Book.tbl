@@ -1,0 +1,407 @@
+/ http://donjon.bin.sh/fantasy/name/#setting
+/ http://random-generator.com/index.php?title=Dusty_Bookshelves
+/ http://random-generator.com/index.php?title=FantasyBooks
+/ http://www.mythosa.net/Utils.html
+
+: Book
+{ARCANE BOOK}
+{ARTS AND CRAFTS BOOK}
+{BIOGRAPHICAL BOOK}
+{COOK BOOK}
+{FAMOUS BOOK}
+{FICTION BOOK}
+{HISTORY BOOK}
+{HOW TO BOOK}
+{HUMOROUS BOOK}
+{MILITARY BOOK}
+{RELIGIOUS BOOK}
+{TRAVEL BOOK}
+{:MISC BOOK}
+
+: Type
+Book
+Codex
+Compendium
+Folio
+Ledger
+Lexicon
+Libram
+Grimoire
+Manuscript
+Portfolio
+Scroll
+Tome
+
+: Category
+Account
+Almanac
+Annal
+Anthology
+Atlas
+Basis
+Chronicle
+Complete Guide
+Concepts
+Dissertation
+Encyclopedia
+Ephemeris
+Epic
+Field Guild
+Guide
+Guidebook
+Foundations
+Handbook
+Investigations
+Journal
+Legend{50%s}
+Log
+Manual
+Memoir
+Models
+Opus
+Pictorial Guide
+Principles
+Research
+Saga
+Stud{y|ies}
+Works
+Techniques
+Textbook
+Theory
+Tract
+Treatise
+Writings
+{History Book:Category}
+
+: Short
+Articles
+Chants
+Commentary
+Confessions
+Correspondence
+Drawings
+Epistles
+Essays
+Experiments
+Fables
+Formulas
+Incantations
+Letters
+Limericks
+Manuscripts
+Maps
+Notes
+Parchments
+Plays
+Poems
+Prayers
+Prophecies
+Proverbs
+Quotes
+Recipes
+Research Notes
+Schematics
+Scrolls
+Secrets
+Sketches
+Songs
+Speeches
+Stories
+Tales
+Techniques
+Theories
+Treatises
+Verses
+Visions
+Warnings
+Wisdom
+Writings
+ 
+: Prefix
+Abridged
+Advanced
+Ancient
+Annotated
+Arcane
+Authoritative
+Basic
+Best-Loved
+Collated
+Collected
+Complete
+Comprehensive
+Concise
+Cryptic
+Detailed
+Esoteric
+Essential
+Exhaustive
+Favorite
+Gathered
+Hidden
+Historical
+Illustrated
+Little-Known
+Mystic
+Practical
+Redacted
+Revised
+Secret
+Selected
+Unabridged
+Unexplained
+Unholy
+Unified
+Universal
+Unknown
+
+: Intro
+A Child’s Guide to
+An Introduction to
+Getting Started with
+Guide to
+Inquiry into
+Learning About
+Recent Advances in
+Secrets of
+Solving Problems with
+
+: Suffix
+, Abridged
+, Advanced
+, Annotated
+, Brief
+, Complete
+, Illustrated
+, Redacted
+, Restricted
+, Revised
+, Summarized
+, Volume {Number}
+
+: Of
+on
+of
+for
+about
+concerning
+pertaining to
+
+: Quality
+ancient
+handwritten
+illuminated
+intricately bound
+large-print
+leather-bound
+locked
+miniature
+rare
+small
+
+: Adjective
+{Color:Simple}
+{Evocative Adj}
+{Number:Ordinal}
+
+: Subject
+Adventurers
+Ancient Empires
+Animal Life
+Artifacts and Relics
+Assassination
+Athletics
+Castles
+Cities
+Cults
+Culture
+Customs
+Daily Life
+Espionage
+Etiquette
+Fables
+Family Life
+Fashion
+Fauna
+Flora
+Folklore
+Furniture
+Ghost Stories
+Government
+Kings
+Knightly Orders
+Languages
+Law
+Legends
+Lost Treasures
+Manners
+Merchant Ships
+Mixed Drinks
+Monastic Orders
+Myths
+Nobility
+People
+Poisons
+Recipes
+Religions
+Riddles
+Secret Societies
+Sewing
+Stonework
+Storytelling
+Subcultures
+Superstitions
+Symbolism
+Systems of Trade
+Temples
+The {Cataclysm}
+Theatre
+Towns
+Trade
+Undead Lore
+Urban Planning
+Villages
+Weather
+Wilderness Lore
+{:Place}
+{Domain:All}
+{Evocative Noun}
+{Group Name}
+{Humanoid} {Castes|Clans|Customs|Tribes} of the {:Place}
+{Magic}
+{Merchandise}
+{Region}
+{{Fauna}+}
+{{Flora}+}
+{{Monster}+}
+{{Mythical Creature}+}
+
+: Place
+{Place Name} {Biome}
+{Place Name} {Terrain}
+{Region}
+/ {:Fantasy Town Names.main}
+/ {:Fantasy Landmarks.main}
+/ {:Fantasy Town Feature.main}
+/ {:Poetic Destinations.main}
+
+: General Book
+A {:Type} of {:Subject}
+A {:Prefix} {:Category} on the {33%{:Adjective} }{:Subject}{10% {:SUFFIX}}
+
+: Misc Book
+A Collector’s Guide to Dwarven Coins
+A Tale of Madness and Despair
+A {Field|Pictorial} Guide to the {{Fauna}|{Flora}|{Humanoid}} of the {:Place}{10% {:SUFFIX}}
+A {Race} in Shackles: Overcoming the Curse
+An Argument {for|against} {{Evocative Noun:Positive}|{Evocative Noun:Negative}}
+Anatomical Papers on Beasts of the Wilds
+Anatomy of the {Fauna}{10% {:SUFFIX}}
+Atlas of the {:Place}{10% {:SUFFIX}}
+Benign Uses of {Black|Blood|Dark|Demonic} Magic
+Casting Spells on a Budget
+Coins of the Realm
+Collecting Ancient Relics
+Conquering Lands Without an Army
+Daemonologie
+Dark Days
+Dead Men’s Words: A Necromancer’s Diary
+Deciphering the Language of {{Humanoid}+}
+Disciplining the Wayward {Child|Pet|{Hireling Type}}
+Diseases and their Cures
+Edible Plants for Emergencies
+Ensignia of the {Humanoid} {Castes|Clans|Tribes}
+Etiquette for Squires
+Fishing Lures for Every Season
+Foraging for Magic Items
+Forgotten Ages: The {Humanoid} Rebellion
+Golem Construction: A Simple Guide to Practical Homunculi Creation
+Great Inventions and How They Ruined the Economy
+Great Wizards and their Famous Spells
+Grim Tales for Children
+Half-Breeds and the Great Shunning
+Heraldric Devices from {Epoch}
+Keys, and How to Forge Them
+Know Your Poisons
+Letters to the Major: A Bordercaptain's Shame
+Lineage of the Noble Families of the {Number:Ordinal} Age
+Lost Tongues, Volume 3: Grim Dwarvish
+Magic for the Dim Witted
+Magic of the Old Gods
+Maps and Floorplans of the City of {Place Name}
+Mating Rituals of the Trolls
+Medicinal Plants: Cures and Poisons
+Mushroom Safety
+My {Number:TwoToFive} Humans: A {Humanoid:Uncommon}'s Tale
+Notes on Domesticating Dragons for Use as Beasts of Burden
+Old Gods
+On the Social Structure of Elven Communities
+On the Subject of Love in Orc Society
+One Bridge Too Many: Last Stand of the Excitran Cavalry
+Overcoming Your {Phobia}
+Poisons and their Antidotes
+Popular Dress and Hairstyles of the Second Age
+Prayers to Placate the God{50%dess} of {Religion}
+Predictions on the Future, from Ages Past
+Preventing and Curing {Disease}
+Robe-making for {{Pseudo Class:Fighter}+}
+Sewage and Irrigation of the Modern Jail
+Shields and Bucklers of the Late Devalian Renaissance
+Siege Engines: Construction and Use
+Small Wonder: Rise and Fall of the {Halfling|Gnome|Faery|Kobold|Goblin} {King|Queen}
+Survival Tips for {Monster} Hunters
+Tales from the {{Inn Name}|{:Place}}
+The Deeds of {Group Name}
+The Diary of a Lost Child in the Dwarven Mines
+The Enchiridion of Chaos
+The Encyclopedia {Name}: Volume {Number:Roman}
+The Flora and Fungi of the {Color:Drab} {Forest|Marsh|Swamp}
+The Iron Helmet
+The Lost Erotica of the {{Humanoid}+}
+The Lost Relics and their Supposed Locations
+The Lost Shrine of Amberdown: Found?
+The Rise and Fall of the {:Adjective} {:Subject}{10% {:SUFFIX}}
+The Tower in the East
+The Travels and Travails of {Name} and {Name}
+The Truth Behind the Legends
+The {:Subject} Handbook
+The {Adjective} {:Category{!SameFirst}} of {Name{!SameFirst}}
+The {Angelic|Demonic} Tablets of {Name}
+The {Evocative Adj} {:Category}{10% {:SUFFIX}}
+The {Fauna}-Gods of {Place Name}
+The {Humanoid}-{Humanoid{!Different}} Wars of 12{10-99}-13{10-99}
+The {Mount:Special} Riders’ Handbook
+The {Profession}'s Almanac{10% {:SUFFIX}}
+The {Twenty|Thirty}{50%-{Number:Nine}} Useful Parts of the {Monster}
+Weapons of Lore
+Why {{Humanoid}+} Cannot be Trusted to Sell {Merchandise} at a Fair Price
+{31-101} Uses for {Reagent}
+{:Intro} {Domain:All}
+{:Intro} {Domain:Arcane}
+{:Place} Survival, A Beginner's Guide
+{:Short} for a {Race:Common} {Event}
+{:Short} of the {Epoch}
+{:Short} of the {Profession} Guild
+{:Subject} for {{Humanoid}+}
+{:Subject}, a Practical Guide
+{:Type} of {Domain}{10% {:SUFFIX}}
+{BATTLE} and the Fall of {Place Name}
+{Color:Simple} and {Color:Simple{!Different}}
+{D12 USELESS WRITING}
+{Domain:All} for {Dummies|Goblins|Kobolds}
+{Domain} for Beginners
+{Domain} {:Short} of the {Group Name}
+{Domain}: The {Title Guild}'s Handbook
+{Dwarven|Elven|Orcish} Rituals Explained
+{Dwarven|Orcish} Rites of Passage
+{Evocative Adj:Negative} Happenings: A {:Category} {:of} the {Cataclysm} 
+{Fauna}: A {Chef|Hunter}'s Guide{10% {:SUFFIX}}
+{Monster}: Myth or Fact?
+{Name}'s {Adjective{!MaybeSameFirst}} {:Type{!MaybeSameFirst}} 
+{Name}'s {Dictionary|Encyclopedia}
+{Name}: The {:Adjective} {Comedies|Tragedies}
+{Number:TwoToTwelve} {:Short}{10% {:SUFFIX}}
+{Town Name}: Births, Marriages, and Deaths
+{{Monster}+} and their Nocturnal Activities
+{{Monster}+} of the {:Place}
+{{Site:Artificial}+}: Construction and Maintenance

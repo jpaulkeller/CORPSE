@@ -18,7 +18,7 @@ a thick green-white fungus has overgrown the {quantity:some} tomes here
 a thick steel panel and sturdy lock protect the tomes here
 a tome encased in a thick block of ice lies here
 a worn box of soil filled with thick yellow grass covers much of this shelf
-a “Dear John” letter, written in {:language}, lies here
+a “Dear John” letter, written in {Humanoid:Language}, lies here
 all the books on this shelf are fake, being nothing more than wooden carvings
 all the books on this shelf are upside down
 all the books on this shelf contain only pictures
@@ -38,7 +38,7 @@ glass tubes run between pieces of alchemical equipment on this and adjacent shel
 here librettos from {quantity:some} well-known dwarven operas collect dust
 maps of the local region line this shelf
 minuscule claw marks crisscross this shelf
-more than two dozen prayer books written in {:language} fill this shelf
+more than two dozen prayer books written in {Humanoid:Language} fill this shelf
 nearly two hundred thin, brightly colored folios line this shelf
 opening any book on this shelf targets the reader with a random 1st-level spell from the sorcerer/wizard spell list. The opened book crumbles to dust after the spell is cast
 piles of insect carapaces lie between the books on this shelf
@@ -93,24 +93,11 @@ vast portions of the history books here have been cut out
 {quantity:some} large clam shells, etched with the names of onlookers, are displayed here
 {quantity:some} massive history books fill this shelf, each almost a perfect 2-foot cube
 {quantity:some} pages of mathematical calculations are crammed tightly into this shelf
-{quantity:some} rolls of papyrus outline a particularly harsh code of laws in {:language}
+{quantity:some} rolls of papyrus outline a particularly harsh code of laws in {Humanoid:Language}
 {quantity:some} roots and budding leaves sprout from this shelf
 {quantity:some} rows of skulls, each from a different creature, rest here
 {quantity:some} rows of tightly rolled scrolls rest here
 {quantity:some} stacks of neatly folded shirts and pants lie here
 {quantity:some} tiny glass animals stand frozen in silence here
 {quantity:some} tomes of outrageous and wholly faulty arcane theories fill this shelf
-{quantity:some} travelogues, written in {:language}, sit neatly upon this shelf
-
-: Language
-Celestial
-Draconic
-Dwarvish
-Elvish
-Goblin
-Infernal
-Linear A
-old church Slavonic
-Phoenician
-Pictish
-runes
+{quantity:some} travelogues, written in {Humanoid:Language}, sit neatly upon this shelf

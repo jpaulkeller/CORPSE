@@ -1,12 +1,12 @@
 / inspired by http://roll1d12.blogspot.com/2014/10/name-that-barbarian.html
 
-:Barbarian Name Fancy
-20x {:Name} {:TITLE}
+: Barbarian Name Fancy
+20x {:Name} {:EPITHET}
 
-:Name
+: Name
 {15%{Noise} }{Barbarian Name}{10% {Barbarian Name}}
 
-:Title
+: Epithet
 {20%, {{Pseudo Class|Title Bad}}} of the {Site Name:Dark}
 the {Evocative Adj:Negative}
 {50% {Humanoid}-{bane|killer|eater|slayer|friend}}

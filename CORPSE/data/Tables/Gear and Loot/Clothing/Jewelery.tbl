@@ -1,10 +1,9 @@
+: Jewelery
+
 armband
 bracelet
 brooch
 charm
-circlet
-crown
-diadem
 earring
 figurine ({fauna})
 necklace
@@ -13,5 +12,19 @@ periapt
 pin
 ring
 talisman
-tiara
 trinket
+{:crown}
+
+: Crown
+aigrette
+bandeau
+circlet
+coronet
+crown
+diadem
+kokoshnik
+tiara
+
+: Sets
+demi-parure (2-3 pieces)
+parure (tiara, necklace, earrings, brooch, bracelet)

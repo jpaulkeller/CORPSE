@@ -19,3 +19,21 @@ magical +{5}
 : Quality {3d5-1}
 : Magic   {2d9-1}
 : Good    {d6+10}
+
+: Weapon
+battle-worn
+bloodstained
+blunted
+clean
+dull
+finely crafted
+holy
+magical
+master-crafted
+neglected
+normal
+razor-sharp
+rust-flecked
+rusted
+tarnished
+well-used

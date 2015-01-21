@@ -1,0 +1,16 @@
+: Monster Type
+construct
+demon
+dragon
+giant
+goblin
+elemental
+lycanthrope
+orc
+undead
+
+: Summon
+elemental
+demon
+spirit
+undead

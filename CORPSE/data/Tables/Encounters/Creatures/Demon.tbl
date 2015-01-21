@@ -12,7 +12,7 @@ Its {:visage} face has {:eyes}, a {:nose} nose, {:ears}, and a {:mouth} mouth.
 : body
 Attached to its {:torso} are {:arms} and {:legs} legs. 
 
-: head type
+: head
 bat-like
 bird-like
 crocodilian

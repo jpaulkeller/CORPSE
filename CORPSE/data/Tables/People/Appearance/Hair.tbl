@@ -1,6 +1,12 @@
 : Hair
 {95%?{:normal}:{:bald}}
 
+: Facial
+has a {25%{:beard adjective} }{:mustache} mustache
+has a {50%{:beard adjective} }{:beard}
+has {:stubble}
+is clean-shaven
+
 : Normal
 {33%{:length} }{33%{:style} }{:color} hair{15% {:extra color}}{10% ({:unusual})}
 
@@ -93,6 +99,88 @@ tied with leather thongs
 tonsure
 unkempt
 untamed
+
+: beard adjective
+bristly
+bushy
+cleanly-trimmed
+close-trimmed
+coarse
+curly
+distinguished
+drooping
+excellent
+fearsome
+flowing
+full
+glorious
+hairy
+impressive
+large
+long
+manly
+mature-looking
+modest
+neat
+neatly-sculpted
+neatly-trimmed
+passable
+regrettable
+ridiculous-looking
+scraggly
+scratchy-looking
+shaggy
+short
+soft
+stylish
+thick
+thin
+traditional
+unconventional
+unkempt
+untrimmed
+well-groomed
+well-styled
+wild
+
+: beard
+10x beard
+amish beard
+beard that grows high on his face like a mask
+braided beard
+chin puff
+chinstrap beard
+fully-grown beard
+goatee
+jawline beard
+long beard like an ancient king
+pair of mutton chops
+pointed beard
+rounded beard
+set of sideburns
+spade-shaped beard
+
+: mustache
+English
+Hungarian
+chevron
+handlebar
+horseshoe
+imperial
+natural
+pencil
+pyramid
+toothbrush
+
+: stubble
+a bit of stubble
+a few days of stubble on his face
+a week or two of whiskers grown in
+five o’clock shadow
+forgotten to shave this morning
+not gone for a shave in at least a week
+not shaved for quite a few days
+not shaved in a day or two
 
 : Detail
 / http://random-generator.com/index.php?title=Captain_of_the_city_watch

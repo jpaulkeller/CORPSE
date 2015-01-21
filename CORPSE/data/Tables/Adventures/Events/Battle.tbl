@@ -6,8 +6,8 @@ The {Evocative Adj:Negative} {:Type}
 The {:Type} of{ the | }{Place Name}
 The {:Type} of {Name}{25% the {Evocative Adj}}
 The {:Type} of {Number:Plural} {{Weapon}+}
-The {:Type} of {Evocative Adj Negative} {Evocative Noun:Negative}
-The {:Type} of {Evocative Adj Negative} {{Pseudo Class}+}
+The {:Type} of {Evocative Adj:Negative} {Evocative Noun:Negative}
+The {:Type} of {Evocative Adj:Negative} {{Pseudo Class}+}
 The {:Type} of {Generated Name}
 
 : Type

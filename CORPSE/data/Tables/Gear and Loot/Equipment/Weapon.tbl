@@ -2,6 +2,11 @@
 / http://www.legolas.org/items/arms.html
 / Player's Handbook, Sandstorm, Races of Eberron, Heroes of Battle
 
+: Edged = .*slashing.*
+: Blunt = .*bludgeoning.*
+: Sword = .*piercing or slashing.* 
+: Axe   = .*slashing.* 
+
 .Weapon                      Cost        Dmg (S)      Dmg (M)      Dmg (L)          Critical          Range Incr       Weight        Type                      Source
 
 : Unarmed
