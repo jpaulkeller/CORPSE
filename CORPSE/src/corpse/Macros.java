@@ -50,11 +50,6 @@ public final class Macros
          if (resolvedToken.equals(token)) // avoid infinite loop
             resolvedToken = TokenRenderer.INVALID_OPEN + m.group(1) + TokenRenderer.INVALID_CLOSE;
 
-         String caseSample = token;
-         if (caseSample.equals(Constants.LAST_RESOLVED_TOKEN) && !lastResolved.isEmpty())
-            caseSample = lastResolved.lastElement();
-         resolvedToken = matchCase(caseSample, resolvedToken);
-
          if (!resolvedToken.contains("{") && !resolvedToken.contains("!")) // don't capture other tokens or variables
             lastResolved.add(resolvedToken); // TODO: only capture user-specified ones?
 
@@ -413,7 +408,13 @@ public final class Macros
          xrefSub = m.group(1);
          xrefCol = m.group(2);
          xrefFil = m.group(3);
-         xrefTbl = matchCase(xrefSub + xrefCol, tableOrScriptName.toLowerCase()); // ignore table/script case
+         xrefTbl = tableOrScriptName.toLowerCase(); // ignore table/script case
+         
+         /*
+         String caseSample = (xrefSub != null ? xrefSub : "") + (xrefCol != null ? xrefCol : "");
+         if (!caseSample.isEmpty())
+            xrefTbl = matchCase(caseSample, xrefTbl);
+         */
       }
       else if ((m = Constants.TABLE_XREF.matcher(resolved)).matches())
       {
@@ -476,6 +477,11 @@ public final class Macros
             }
 
             resolved = m.replaceFirst(Matcher.quoteReplacement(xref));
+            
+            String caseSample = token;
+            if (caseSample.equals(Constants.LAST_RESOLVED_TOKEN) && !lastResolved.isEmpty())
+               caseSample = lastResolved.lastElement();
+            resolved = matchCase(caseSample, resolved);
 
             TOKEN_STACK.pop();
          }
@@ -559,8 +565,9 @@ public final class Macros
    // Make the case of the resolved token match the case of the token.
    
    private static final Pattern TO_CAPITALIZE = Pattern.compile("\\b([a-z])");
+   private static final Pattern CONTRACTIONS = Pattern.compile("'D|'Ll|'Nt|'Re|'S|'T|'Ve");
    private static final Pattern NO_CAP = 
-      Pattern.compile(" A | An | And | At | By | For | From | In | Of | On | Or | The | To | With ");
+            Pattern.compile(" A | An | And | At | By | For | From | In | Of | On | Or | The | To | With ");
 
    private static String matchCase(final String token, final String resolved)
    {
@@ -578,15 +585,14 @@ public final class Macros
          Matcher m;
          while ((m = TO_CAPITALIZE.matcher(caseMatched)).find())
             caseMatched = m.replaceFirst(Matcher.quoteReplacement(m.group(1).toUpperCase()));
-         caseMatched = caseMatched.replace("'S", "'s"); // hack to fix possessive suffix
-         while ((m = NO_CAP.matcher(caseMatched)).find())
+         // hacks to fix possessive suffix and contractions TODO not working
+         while ((m = CONTRACTIONS.matcher(caseMatched)).find())
             caseMatched = m.replaceFirst(Matcher.quoteReplacement(m.group(0).toLowerCase()));
          // don't cap some words
-         /*
-         for (String ignore : new String[] { "A", "An", "And", "At", "By", "For", "From", "In", "Of", "On", "Or", "The", "To", "With", "Without" })
-            caseMatched = caseMatched.replace(" " + ignore + " ", " " + ignore.toLowerCase() + " ");
-            */
+         while ((m = NO_CAP.matcher(caseMatched)).find())
+            caseMatched = m.replaceFirst(Matcher.quoteReplacement(m.group(0).toLowerCase()));
       }
+      // System.out.println("Macros.matchCase() TOKEN [" + token + "]  RESOLVED [" + resolved + "]  MATCHED: [" + caseMatched + "]");
       return caseMatched;
    }
 

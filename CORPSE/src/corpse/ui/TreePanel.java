@@ -102,17 +102,23 @@ public class TreePanel extends JSplitPane implements TabListener
 
    private void loadDirIntoTree(final DefaultMutableTreeNode branch, final File d)
    {
+      // process the folders first
       for (File f : d.listFiles(fileFilter))
       {
-         FileNode node = new FileNode(f);
-         branch.add(node);
          if (f.isDirectory())
          {
+            FileNode node = new FileNode(f);
+            branch.add(node);
             loadDirIntoTree(node, f);
             if (node.getChildCount() == 0)
                branch.remove(node); // prune empty directories
          }
       }
+      
+      // then add the files
+      for (File f : d.listFiles(fileFilter))
+         if (!f.isDirectory())
+            branch.add(new FileNode(f));
    }
 
    class FileNode extends InvisibleNode

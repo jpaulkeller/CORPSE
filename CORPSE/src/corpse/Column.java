@@ -310,8 +310,7 @@ public final class Column implements Comparable<Column>
       if (test != null)
       {
          Table table = Table.getTable(test); 
-         if (!table.getColumns().isEmpty()) 
-            System.out.println (table);
+         System.out.println (table);
       }
       else // test all
       {
