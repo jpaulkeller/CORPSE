@@ -1,0 +1,128 @@
+: Paper
+{10%{condition:paper} }{:DOCUMENT}
+
+: Document
+IOU from {Title} {Name}
+advertising circular for {service}
+ancient map of an uncertain land in a forgotten language
+astronomical chart
+battle plans
+blank parchment
+bookmark
+bounty note for {10}00 gold if {:BOUNTY} is {captured|slain}, and proof is brought to {:Law Authority} of {Town Name}
+cargo manifest for {Ship Name}
+claim note to a fine {mount} at {Name}'s Stables
+code key
+coded message
+commission
+coupon for {merchandise} shop
+diplomatic message
+directions to the {structure}
+doodle
+draft notice (signed by {Title Military} {Name})
+drawing of {{sigil}|{flag}}
+enlistment
+gibberish
+grant-of-arms
+horoscope
+insurance policy
+inventory
+invitation {to|from} {Title} {Name}
+last will and testament of {Title Feudal} {Name}
+legal document disputing the ownership of {Name}'s {site:artificial}
+letter of marque for {10}000 gold to {quest:task}
+letter {to|from} {Title} {Name}
+license to use {skill}
+license to {own|hunt|sell|trade|kill|protect} {fauna}
+love letter
+map too faded to be of use, with barely recognizable boundaries
+membership card, {profession}'s guild
+message to {Name}
+news-clipping about {disaster}
+note from {profession} to {profession}
+order for {provisions}
+page from {book}
+paper, {:seal}
+pass
+permit to {own|hunt|sell|trade|kill|protect} {fauna}
+playing card ({{number:twototen}|jack|queen|king|ace} of {spades|hearts|diamonds|clubs})
+plea for clemency
+poem about {evocative noun}
+proclamation from {Title Feudal} {Name}
+promissory note for {100-1000} {copper|silver|gold} if returned to {Name}
+ransom note
+receipt from {Inn Name}
+recipe for {{menu.fare}|{potion} potion}
+riddle
+rune
+scroll of {TSR scroll}
+sheet of music
+sketch of {site}
+symbol
+tarot card ({Tarot.Card})
+ticket to {performance}
+treaty
+writing in unknown language
+{25%{:map adj} }map of a {terrain}
+{25%{:map adj} }map of {region}
+{25%{:map adj} }map {of|to} {structure}
+{:grant} safe passage through the {region}
+{architect|engineer}’s drawing of a {structure}
+{d12 puzzling document}
+{deed|legal title} to {Name}'s {site:artificial}
+{illegible|hastily scribbled|encrypted|forged|printed|smudged|stained} note
+
+: seal
+sealed with {color:simple} wax
+
+: law authority
+the Captain of the Guard
+the Chief Rector
+the Governor
+the Head Abbott
+the Head Chancellor
+the High Council
+the Judge
+the Lord
+the Mayor
+the Protectorate
+the Sheriff
+the Steward
+the Watch Captain
+{Title Military} {Name}
+{Title Feudal:Noble} {Name}
+{Title Religious} {Name}
+
+: grant
+A courier’s pass granting
+A martial decree granting the bearer
+A royal decree granting the bearer
+An authoritative pass granting
+An herald’s letter granting
+
+: map adj
+ancient
+beautiful
+engineer’s
+expertly drafted
+hastily-drafted
+illuminated
+incomplete
+military
+outdated
+poor-quality
+recently drafted
+simplified
+strategic
+tactical
+taxation
+waterway
+
+: bounty
+a tribe of {humanoid}
+a {dragon} dragon
+a {monster}
+a {monstrosity}
+a {mythical creature}
+{Barbarian Name Fancy}
+{beast:encounter}

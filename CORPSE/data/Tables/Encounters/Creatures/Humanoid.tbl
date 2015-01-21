@@ -18,9 +18,8 @@ gnoll
 gnome
 halfling
 hobgoblin
+human
 kobold
-lizardfolk
-lycanthrope
 orc
 
 : Uncommon
@@ -32,31 +31,24 @@ deep halfling
 demon
 devil
 drow
-drow elf
 dryad
 duergar dwarf
 ent
 fairy
 forest gnome
-gnoll
-goblin
 gray elf
-half-elf elf
+half-elf
 half-orc
 high elf
 hill dwarf
-hobgoblin
-human
-kobold
 lightfoot halfling
 lizardfolk
-locathah
+lycanthrope
 medusa
 merfolk
 mountain dwarf
 ogre
 ogrillion
-orc
 orog
 phraint
 pixie
@@ -66,6 +58,7 @@ tallfellow halfling
 troglodyte
 troll
 vampire
+were-rat
 wight
 wild elf
 wood elf
@@ -81,13 +74,18 @@ gnome
 goblin
 halfling
 hobgoblin
-hobgoblin
 human
-kobold
 kobold
 ogre
 troglodyte
 troll
+
+: Language
+{10%ancient }dwarvish
+{10%ancient }elvish
+goblin
+gnomish
+orcish
 
 : Literary
 Eloi;  H. G. Wells The Time Machine

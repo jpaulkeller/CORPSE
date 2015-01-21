@@ -10,6 +10,57 @@ pristine
 
 : Condition {6, 9}
 
+: Paper
+crumpled
+faded
+folded
+moldy
+{half|part} of a
+ripped
+singed
+torn
+yellowing
+
+: Book
+bloodstained
+dusty
+moulding
+new
+old
+singed
+soot-covered
+stained
+torn
+water-damaged
+well-thumbed
+worm-holed
+worn
+
+: Cloth
+bloodstained
+dingy
+dirty
+discolored
+dusty
+faded
+filthy
+frayed
+mildewed
+moth-eaten
+muddy
+ragged
+ripped
+ruined
+scorched
+singed
+stained
+tattered
+threadbare
+torn
+very old
+weathered
+worn
+
 : Clothing = Clothing Poor + Clothing Normal + Clothing Nice
 
 : Clothing Normal
@@ -24,28 +75,9 @@ reinforced
 slightly worn
 
 : Clothing Poor
-bloodstained
-dingy
-dirty
-discolored
-dusty
-faded
-filthy
 ill-fitting
-mildewed
-muddy
-ragged
-ripped
-ruined
-singed
-stained
 sweat-stained
-tattered
-threadbare
-torn
-very old
-weathered
-worn
+{:cloth}
 
 : Clothing Nice
 custom-fitted

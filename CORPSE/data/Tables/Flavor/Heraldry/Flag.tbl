@@ -2,40 +2,35 @@
 / http://www.midcoast.com/~martucci/flags/designs/shapes.html
 
 : Flag
-The flag is {:shape} {33%?with {:foreground} on:with} {:background}{10%, {:extra}}{10%, {:condition}}.
+a {:shape} {:type} {33%?with {:foreground} on:with} {:background}{10%, {:extra}}{10%, {condition:cloth}}.
 
-: Background
+: type
+banner
+flag
+pennant
+
+: background
 a solid field of {color:common}
 a checkered field of {color:dark} and {color:light} 
 a tricolor background of {color:simple}, {color:simple{!different}}, and {color:simple{!different}} {horizontal|vertical} stripes
 {number:twototwelve} {color:dark} and {color:light} stripes
 
-: Foreground
+: foreground
 a {small |large | }{color} {charge}{20% in the {center|{top|bottom} {left|right}}}
 a {color:fancy} {charge}
 {number:twototwelve} {{charge}+}
 a {charge} and {charge{!different}}
 
-: Shape
-a rectangle (2:3)
-a square
-{a banner (3:2)|a pennant}
-a double-square (1:2)
-{a burgee|a triangle|a double triangle}
-{a swallowtail|a swallowtail with tongue}
+: shape
+double-square (1:2)
+oblong (3:2)
+rectanglar (2:3)
+square
+{burgee|triangle|double triangle}
 {pointed|shield-shaped|rounded}
+{swallowtail|swallowtail with tongue}
 
-: Extra
+: extra
 edged with flammules
 with a {color:common} border
 with a {color:common} bar across the {top|bottom|left|right} edge
-
-: Condition
-dripping with blood
-frayed at the edges
-moth-eaten
-scorched
-showing signs of age
-stained
-tattered
-torn asunder

@@ -1,41 +1,41 @@
 {Adjective{!OneWord}} {Fauna{{!OneWithSame}|{!OneWord}}} {80%{Inn Type}}
-{Adjective{!OneWord}} {Profession{!OneWithSame}} {80%{Inn Type}}
-{Adjective{!OneWord}} {Profession#{#{!}:.}[^-_ ]+#} {80%{Inn Type}}
 {Adjective{!OneWord}} {Inn Type}
+{Adjective{!OneWord}} {Profession#{#{!}:.}[^-_ ]+#} {80%{Inn Type}}
+{Adjective{!OneWord}} {Profession{!OneWithSame}} {80%{Inn Type}}
 {Charge{!OneWord}} and {Charge{!OneWord}}
 {Color:Basic{!OneWord}} and {Color:Basic{!OneMaybeSame}} {80%{Inn Type}}
 {Color:Basic{!OneWord}} {Charge{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Basic{!OneWord}} {Creature{!OneMaybeSame}} {80%{Inn Type}}
 {Color:Basic{!OneWord}} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
 {Color:Basic{!OneWord}} {Flora{!OneMaybeSame}} {80%{Inn Type}}
 {Color:Basic{!OneWord}} {Made Of{!OneMaybeSame}} {80%{Inn Type}}
+{Color:Basic{!OneWord}} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
 {Color:Basic{!OneWord}} {Transport{!OneWord}} {80%{Inn Type}}
 {Container{!OneWord}} of {Contents.Item{!OneWord}} {80%{Inn Type}}
-{Creature{!OneWord}}'s {Organ{!OneMaybeSame}} {80%{Inn Type}}
-{Disposition} {Profession{!OneMaybeSame}} {80%{Inn Type}}
 {Disposition} {Humanoid{!OneMaybeSame}} {80%{Inn Type}}
-{Fauna{!OneWord}} and {Creature{!OneMaybeSame}} {80%{Inn Type}}
+{Disposition} {Profession{!OneMaybeSame}} {80%{Inn Type}}
+{Famous Inn}
+{Fauna{!OneWord}} and {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
 {Fauna{!OneWord}}'s {Home}
 {Fauna{!OneWord}}'s {Organ{!OneMaybeSame}} {80%{Inn Type}}
-{{Flora{!OneWord}}+} and {{Flora{!OneWord}}+} {80%{Inn Type}}
 {Inn Type} by the {Site}
 {Inn Type} of {Evocative Noun}
-{Metal:Common} {Creature{!OneMaybeSame}} {80%{Inn Type}}
 {Metal:Common} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
+{Metal:Common} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
 {Metal:Common} {Tiny Item{!OneMaybeSame}} {80%{Inn Type}}
 {Mood} {Humanoid{!OneWithSame}} {80%{Inn Type}}
 {Mood} {Profession{!OneWithSame}} {80%{Inn Type}}
-{Noise{!OneWord}} {Creature{!OneMaybeSame}} {80%{Inn Type}}
+{Mythical Creature{!OneWord}}'s {Organ{!OneMaybeSame}} {80%{Inn Type}}
 {Noise{!OneWord}} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
 {Noise{!OneWord}} {Musical Instrument{!OneMaybeSame}} {80%{Inn Type}}
+{Noise{!OneWord}} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
 {Number:TwoToFive} {{Fauna{!OneMaybeSame}}+} {80%{Inn Type}}
 {Number:TwoToFive} {{Tiny Item{!OneMaybeSame}}+} {80%{Inn Type}}
 {Profession{!OneWord}}'s {Evocative Noun{!OneWithSame}} {80%{Inn Type}}
 {Texture{!OneWord}} {Site:Artificial{!OneMaybeSame}} {80%{Inn Type}}
-{Trait{!OneWord}} {Creature{!OneMaybeSame}} {80%{Inn Type}}
 {Trait{!OneWord}} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
+{Trait{!OneWord}} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
+{Trait{!OneWord}} {Title {Academic|Military|Religious|Feudal}}'s {80%{Inn Type}}
 {Trait{!OneWord}} {{Class.Class{!OneWithSame}|Class}}'s {80%{Inn Type}}
 {Trait{!OneWord}} {{Profession.Profession{!OneWithSame}|Profession}} {80%{Inn Type}}
 {Trait{!OneWord}} {{Race.Race{!OneWithSame}|Race}}'s {80%{Inn Type}}
-{Trait{!OneWord}} {Title {Academic|Military|Religious|Feudal}}'s {80%{Inn Type}}
-{Famous Inn}
+{{Flora{!OneWord}}+} and {{Flora{!OneWord}}+} {80%{Inn Type}}

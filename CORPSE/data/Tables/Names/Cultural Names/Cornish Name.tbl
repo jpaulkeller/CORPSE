@@ -11,16 +11,6 @@
 {:female first} {:surname}
 
 : male first
-Daveth
-Digory
-Gerens
-Jacca
-Jory
-Margh
-Myghal
-Perran
-Tristan
-Wella
 Alan
 Alun
 Arthur
@@ -53,8 +43,10 @@ Costentyn
 Costetyn
 Crantok
 Credan
+Daveth
 Davy
 Denzel
+Digory
 Docco
 Doniert
 Donyerth
@@ -64,6 +56,7 @@ Enoder
 Ervan
 Feoc
 Gawen
+Gerens
 Gerent
 Germoc
 Germoe
@@ -79,10 +72,11 @@ Herygh
 Hicca
 Howel
 Hydroc
-lahan
 Ives
+Jacca
 Jago
 Jamma
+Jory
 Jowan
 Kaveran
 Kenal
@@ -92,11 +86,13 @@ Kenwyn
 Keresyk
 Kevern
 Kitto
+Lahan
 Ludwan
 Maban
 Madern
 Malgen
 Manuel
+Margh
 Marrek
 Massen
 Mawgan
@@ -107,6 +103,7 @@ Melyn
 Meriasek
 Merryn
 Milyan
+Myghal
 Nadelek
 Nechtan
 Nerth
@@ -118,6 +115,7 @@ Pawly
 Peder
 Pencast
 Peran
+Perran
 Petroc
 Petrok
 Piran
@@ -136,6 +134,7 @@ Talan
 Talek
 Tomas
 Trevedic
+Tristan
 Trystan
 Udy
 Uther
@@ -143,6 +142,7 @@ Uthno
 Vark
 Vyvyan
 Welet
+Wella
 Weryn
 Wethinoc
 Withell
@@ -264,16 +264,6 @@ Zethar
 
 : surname
 {:patronymic}
-Berriman
-Care
-Curnow
-Noall
-Pearce
-Penrose
-Quick
-Rowe
-Trevorrow
-Vial
 Andrewartha
 Angrave
 Annear
@@ -284,6 +274,7 @@ Beckerleg
 Bedell
 Bennetto
 Bennetts
+Berriman
 Berryman
 Bescoby
 Bice
@@ -302,6 +293,7 @@ Briddon
 Bryant
 Carbines
 Cardell
+Care
 Carlyon
 Carnell
 Carveth
@@ -326,6 +318,7 @@ Crago
 Craze
 Crowle
 Cundy
+Curnow
 Daniel
 Deveril
 Dobell
@@ -404,6 +397,7 @@ Nankivel
 Newth
 Nicholls
 Ninnis
+Noall
 Noon
 Oates
 Odgers
@@ -415,6 +409,7 @@ Palk
 Pascoe
 Pawley
 Paynter
+Pearce
 Pellew
 Penberthy
 Pender
@@ -422,6 +417,7 @@ Pengelly
 Penhaligon
 Penhallow
 Penn
+Penrose
 Pentreath
 Penwarden
 Perkin
@@ -433,6 +429,7 @@ Poldark
 Polmear
 Praed
 Prowse
+Quick
 Quintrell
 Raddall
 Restorick
@@ -447,6 +444,7 @@ Rosewarne
 Roskelly
 Roskilly
 Rouncefield
+Rowe
 Rowse
 Rule
 Rundle
@@ -499,6 +497,7 @@ Trevelyan
 Treverton
 Trevethan
 Trevithick
+Trevorrow
 Trewarthen
 Treweeke
 Trewhella
@@ -514,6 +513,7 @@ Vear
 Vellenoweth
 Venton
 Verran
+Vial
 Vosper
 Voss
 Warne

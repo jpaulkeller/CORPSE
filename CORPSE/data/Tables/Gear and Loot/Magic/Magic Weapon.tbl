@@ -1,23 +1,683 @@
+/ http://random-generator.com/index.php?title=Enchanted_Sword
+
+{:HiltedIntro} {:HiltedSwordParts} {:MakerChance} {:EnchanterChance} {:HistoryChance}
+
+: HiltedIntro
+{Weapon Name}, a {50%{:legendary} }{:HiltedSwordType}
+{Weapon Name}, a {:HiltedSwordType} {:of legend}
+The {50%{:Legendary} }{:BasketedSwordType} {:Called} {Weapon Name}
+The  {:HiltedSwordType} {:of legend} {:Called} {Weapon Name}
+
+/ sinister
+/ wicked-looking
+/ spell-forged
+
+: SwordParts
+2x {:HiltedSwordParts}
+{:BasketedSwordParts}
+
+: HiltedSwordParts
+5x that has a blade of {:Utility.MetalWeapon}{:MetalHistoryChance}. {:CoreChance} Its hilt is wrapped in {:SwordHiltWrapping}. {:SwordBladeDecor} {:SwordBladeStyle} {:Pommel} {:Quillions} {:DecorMetal} {:Scabbard}
+that has a blade composed of {:Utility.MetalWeapon} {:combined} {:Utility.MetalDecor}{:MetalHistoryChance}. Its hilt is wrapped in {:SwordHiltWrapping}. {:SwordBladeDecor} {:SwordBladeStyle} {:Pommel} {:Quillions} {:DecorMetal} {:Scabbard}
+
+: BasketedSwordParts
+5x that has a blade of {:Utility.MetalWeapon} {:CoreChance}  with a hilt wrapped in {:SwordHiltWrapping}. {:SwordBladeDecor} {:SwordBladeStyle} {:Pommel} {:Basket} {:DecorMetal} {:Scabbard}
+that has a blade composed of {:Utility.MetalWeapon} {:combined} {:Utility.MetalDecor}, with a hilt wrapped in {:SwordHiltWrapping}. {:SwordBladeDecor} {:SwordBladeStyle} {:Pommel} {:Basket} {:DecorMetal} {:Scabbard}
+
+: HiltedSwordType
+40,short sword
+40,longsword
+10,falchion
+10,greatsword
+5,two-bladed sword
+2,butterfly sword
+4,khopesh
+2,sapara
+double scimitar
+4,broad-blade shortsword
+12,scimitar
+2,gladius
+2,flamberge
+3,fullblade
+4,great falchion
+2,great scimitar
+claymore
+
+: BasketedSwordType
+20,broadsword
+70,rapier
+20,scimitar
+60,saber
+5,courtblade
+5,lightblade
+5,thinblade
+10,quickblade
+50,cutlass
+
+: Legendary
+enchanted
+ensorcelled
+famous
+legendary
+long-forgotten
+magical
+mighty
+mythical
+powerful
+spellbound 
+
+: Of Legend
+of legend
+of legendary power
+of mighty power
+of magical power
+of mythical power
+
+: Called
+called
+named
+known as
+
+: MetalHistoryChance
+
+mined by {:Miner}
+{:StolenWord} by {:Hero} from {:Treasure}
+
+: StolenWord
+looted
+pilfered
+reclaimed
+recovered
+retrieved
+salvaged
+stolen
+
+: Miner
+{:Saint}
+dwarves of the {:Mountains}
+dark elves
+the orc-horde of {:Mountains}
+ancient heroes
+the slaves of {:Slaveholder}
+
+: Treasure
+the {:HoardWord} of the {:Dragon description.age} {:Stolen Lands Treasure.Chromatic} {:Dragon description.type} {:Dragon names.main}
+the {:HoardWord} of {:Crypt}
+the {:HoardWord} of {:Monster Lair}
+the {:HoardWord} of {:MonsterGroup}
+
+: HoardWord
+2,hoard
+2,treasure
+riches
+treasure trove
+cache
+treasury
+spoils
+
+: Crypt
+the {:TombWord} of {:Saint}
+the {:TombWord} of {:Ruler}
+the {:TombWord} of {:Hero}
+
+: TombWord
+2x crypt
+2x tomb
+barrow
+burial mound
+catacomb
+final resting place
+grave
+mausoleum
+sepulchre
+vault
+
+: Mountains
+the {:Secret Society Title.OrgDescriptor} Mountains
+the {:Fantasy Names.MaleFirstName} Mountains
+
+: Saint
+2,St. {:Catholic Saint Names.main}
+{:Fantasy Saint.main}
+
+: Ruler
+3,King {:Fantasy Names.MaleFirstName} {:RulerSuffix}
+Queen {:Fantasy Names.FemaleFirstName} {:RulerSuffix}
+Prince {:Fantasy Names.MaleFirstName} {:RulerSuffix}
+Princess {:Fantasy Names.FemaleFirstName} {:RulerSuffix}
+
+: RulerSuffix
+3,
+the I
+the II
+the III
+the IV
+the V
+the {:Secret Society Title.OrgDescriptor}
+
+: Hero
+the {:Herotype} {:Fantasy Names.MaleFirstName}
+{:Fantasy Names.MaleFirstName} (the famous {:Herotype})
+{:Fantasy Names.MaleFirstName} the {:Secret Society Title.OrgDescriptor}
+the {:Herotype} {:Fantasy Names.MaleFirstName} the {:Secret Society Title.OrgDescriptor}
+
+: Herotype
+4,warrior
+general
+3,hero
+legendary hero
+epic hero
+folk hero
+dragonslayer
+giant-killer
+conqueror
+barbarian
+wizard
+sorcerer
+adventurer
+paladin
+pirate
+corsair
+barbarian
+knight
+cavalier
+swordsman
+ranger
+cleric
+rogue
+bard
+explorer
+
+: Slaveholder
+{:Ruler}
+{:Monster}
+{:MonsterGroup}
+
+: Monster Lair
+the {:Lair} of {:Monster}
+
+: Lair
+lair
+nest
+caves
+dungeons
+
+: Monster
+a hydra
+a wyvern
+a behir
+the demon {:Demon Name.Main}
+a roc
+3x {:Delver Fate.humanoids}
+5x {:Delver Fate.dungeonpredator}
+
+: MonsterGroup
+{:Cult}
+
+: Cult
+the {:Secret Society Name.main}, a {:CultDescriptor} {:CultWord} {:CultDetails}
+{:CultDescriptor} {:CultWord} {:CultDetails} {:Called} the {:Secret Society Name.main}
+{:CultDescriptor} {:CultWord} {:CultDetails} {:Forgotten}
+
+: CultDescriptor
+a
+a shadowy
+a forbidden
+an ancient
+a fanatical
+a zealous
+a foul
+a repulsive
+a loathsome
+an eldritch
+a cruel
+a vicious
+an evil
+a vile
+a sinful
+a depraved
+a malicious
+a sinister
+a monstrous
+
+: CultWord
+3,cult
+secret society
+religious movement
+sect
+faction
+monastic order
+
+: CultDetails
+3,who {:Worship} {:Fantasy Pantheon.fulldescription},
+2,who {:Worship} the demon {:Demon Name.Main}
+who {:Worship} {:Fantasy Pantheon.Domains}
+who {:Worship} {:OtherCultGod}
+who {:CultGoal}
+
+
+: Worship
+were devoted to
+worshipped
+venerated
+exalted
+committed horrible acts in devotion to
+sacrificed {:SacrificialVictims} to
+used the sword in foul ceremonies devoted to
+used the sword to sacrifice {:SacrificialVictims} to
+
+: OtherCultGod
+unspeakable horrors
+Elder Gods
+unknown evils
+
+: CultGoal
+sought to bring about the return of {:Fantasy Pantheon.fulldescription}
+prophecied the return of {:Fantasy Pantheon.fulldescription}
+sought to bring about the return of the demon {:Demon Name.Main}
+prayed for the coming of the demon {:Demon Name.Main}
+
+: SacrificialVictims
+virgins
+children
+rivals
+enemies
+slaves
+kidnapped victims
+prisoners
+captives
+their loved ones
+2,themselves
+
+: Forgotten
+lost to history
+long forgotten
+that none remember now
+lost to the sands of time
+now forgotten by all but a few
+overlooked by history
+the knowledge of which is now lost
+of which it is forbidden to speak
+
+: MakerChance
+10,
+It was forged by {:Hero}.
+It was forged by {:Hero} and quenched in the blood of {:Monster}.
+It was forged by {:Hero}, who quenched it in {:MonsterParts.Liquids}.
+It was crafted by the legendary smith {:Fantasy Names.MaleFirstName} during the Age of Heroes.
+It was crafted by a now-forgotten master smith in antiquity.
+It was forged for the coronation day of {:Ruler} by the master smith {:Fantasy Names.MaleFirstName}.
+It was made for {:Hero} by the master smith {:Fantasy Names.MaleFirstName}.
+It was made for {:Hero} by the master smith {:Fantasy Names.MaleFirstName}, who quenched it in {:MonsterParts.Liquids}.
+It was crafted by a now-forgotten master smith of a fallen empire.
+
+: EnchanterChance
+
+2,It was {:Enchanted}.
+
+: Enchanted
+{:Blessed} by {:Saint} in the temple of the deity of {:Fantasy Pantheon.Domains}
+{:Blessed} by {:Clerics} of the deity of {:Fantasy Pantheon.Domains} and sacred to that religionâ€™s followers
+3,enchanted {:EnchantmentPlace} by {:Mage} {:EnchantmentDetails}
+
+: Blessed
+3,blessed
+consecrated
+sanctified
+dedicated
+hallowed
+
+: Clerics
+clerics
+priests
+priestesses
+monks
+holy brethren
+holy sisters
+
+: Mage
+the {:ArcaneBooks.ArcaneProfession} {:ArcaneBooks.ArcaneAuthor}
+{:ArcaneBooks.ArcaneAuthor}
+
+: EnchantmentPlace
+
+in a stone circle
+deep beneath the earth
+on the top of a mountain
+in a ritual circle containing the demon {:Demon Name.Main}
+in a pool of {:MonsterParts.Liquids}
+
+: EnchantmentDetails
+
+during a full moon
+on a moonless night
+during a solar eclipse
+on the longest day of the year
+during the appearance of a comet
+in a ceremony lasting a year and a day
+during the vernal equinox
+during the autumnal equinox
+during the summer solstice
+during the midwinter solstice
+
+: MadeFor
+
+: HistoryChance
+3,
+{:History}
+
+: History
+The blade bears a small inscription stating that it was made for {:Fantasy Male Military Hero.main}
+The weapon matches the description of a weapon that once belonged to {:Fantasy Male Military Hero.main}
+The weapon was once owned by {:Fantasy Male Military Hero.main}
+A careful examination reveals the initials of {:Fantasy Male Military Hero.main} This weapon may once have been his.
+This blade was passed from father to son until it was given to {:Fantasy Male Military Hero.main} The whereabouts of this weapon had been unknown since his death.
+Several reproductions have been made in imitation of this blade, because it was made famous by {:Fantasy Male Military Hero.main}
+This may well have been the legendary blade of {:Fantasy Male Military Hero.main}
+Something is known about the career of this blade's former owner - {:Delver Fate.story}
+A scrap of parchment tells the story of the original owner: "{:Delver Fate.story}"
+Although how it came to be here is unclear, this blade has a history of adventuring. {:Delver Fate.story} In all likelihood, this was the weapon associated with that incident.
+3,This is the blade with which {:Hero} slew {:Slain}.
+
+: CoreChance
+12,
+At the core of the blade is {:Core}.
+The blade was forged around {:Core}.
+Inside a cavity of the blade is {:Core}.
+
+: Core
+{:AngelPart} of the angel {:Angel generator.main}
+{:DemonPart} of the demon {:Demon Name.Main}{:SlainByChance}
+{:DragonPart} of the {:Stolen Lands Treasure.Chromatic} {:Dragon description.type} {:Dragon names.main}{:SlainByChance}
+a piece of {:MonsterParts.DryGoods}{:SlainByChance}
+{:Relic}
+
+: AngelPart
+3,a feather
+a hair
+a lock of hair
+a wingbone
+a finger
+
+: DemonPart
+a wing bone
+an arm bone
+a leg bone
+the spine
+a horn
+a finger
+the tail
+a claw
+a fang
+
+: DragonPart
+a fang
+a wing bone
+a bone
+a claw
+a horn
+the spine
+
+: SlainByChance
+5,
+ that was slain by {:Hero}
+
+: Slain
+{:Monster}
+{:Hero}
+the demon {:Demon Name.Main}
+the {:Stolen Lands Treasure.Chromatic} {:Dragon description.type} {:Dragon names.main}
+the tyrant {:Ruler}
+
+: Relic
+{:minorrelic} of {:Saint}
+{:moderaterelic}  of {:Saint}
+
+: minorrelic
+a knucklebone
+a toe
+a tooth
+a small blessed statue
+a lock of hair
+the ring
+a scrap of the raiment
+
+: moderaterelic
+the {:Utility.LeftRight} hand 
+the {:Utility.LeftRight} foot
+a thighbone
+an epistle written by the Sacred Hand
+
+: combined
+forged together with
+combined with
+intermingled with
+mixed with
+layered with
+with a core of
+with a core of {:Core} encased by
+with a coating of
+alloyed with
+blended with
+fused with
+melded with
+
+: SwordHiltWrapping
+30,{:Utility.LeatherHide}
+10,{:Utility.MetalDecor} wire
+5,{:Utility.WoodWeapon} with {:Utility.MetalDecor} rivets
+5,{:Utility.LeatherHide} with {:Utility.MetalDecor} wire
+2,{:Utility.LeatherHide} with {:Utility.MetalDecor} studs
+2,{:Utility.HornIvory} with {:Utility.MetalDecor} rivets
+{:Utility.LeatherHide} <b>embedded with numerous small {:Utility.GemType}s</b>
+
+: Scabbard
+5,There is no scabbard present.
+2,There is a scabbard of {:Utility.LeatherHide} with {:Utility.MetalDecor} accents.
+There is a scabbard of {:Utility.LeatherHide} with {:Utility.Fur} fur trim.
+2,There is a scabbard of {:Utility.MetalDecor} with {:Dice.1d12} {:Utility.RelativeSize} {:Utility.GemQuality} {:Utility.GemType} stones embedded in it.
+2,There is a simple scabbard of {:Utility.MetalHard}.
+2,There is a scabbard of {:Utility.Fur} fur with {:Utility.LeatherHide} accents and {:Utility.MetalDecor} trim.
+There is a scabbard of {:Utility.MetalHard}, painted with shiny {:Color.dark} enamel.
+2,There is a scabbard of {:Utility.WoodWeapon} wood inlaid with {:Utility.HornIvory}.
+There is a scabbard of <b>{:Utility.Chitin} chitin</b> with {:Utility.LeatherHide} accents and {:Utility.MetalDecor} trim.
+There is a scabbard of beaten {:Utility.MetalSoft}.
+There is an ornate scabbard of {:Utility.MetalDecor} inlaid with {:Utility.Ornamental Stones}.
+
+: SwordBladeDecor
+5,The blade is decorated with a {:Motif} motif.
+2,Serpentine runes run up and down the blade.
+4,The blade is decorated with runes in {:Utility.RuneLanguage} that convey the meaning <b>"{:Inscriptions.main}"</b>. <b>{:RuneGlowChance}</b>
+2,The blade is decorated with knotwork.
+2,The blade is decorated with an etched depiction of {:Artwork.Depiction}.
+2,The blade is decorated with an engraved depiction of {:Artwork.Depiction}.
+2,The blade is decorated with an embossed depiction of {:Artwork.Depiction} with detailwork in {:Utility.MetalDecor}.
+2,The blade is painted with shiny {:Color.dark} enamel.
+The blade has been carbonized with a flat {:Color.dark} paint to keep it from reflecting light except along the edges.
+10,The blade is inscribed with the word(s) <b>"{:Inscriptions.main}"</b> in {:Inscriptions.Language}. <b>{:RuneGlowChance}</b>
+2,The blade is dull and was probably intended only for display.
+2,The entire blade is marked with symbols associated with {:Secret Society Name.main} and was probably intended for ceremonial use by that {:CultWord}.
+20,
+2,{:SwordBladeDecor} {:SwordBladeDecor}
+3, an ornately decorated {:Symbol} is carved above the hilt
+
+: Motif
+flame
+lightning
+runic
+thorn
+vine
+serpentine
+draconic
+demonic
+angelic
+religious
+knotwork
+maritime
+
+: Symbol
+pentacle
+triangle
+star
+cloverleaf
+teardrop
+circle
+crescent
+eye
+fist
+
+: SwordBladeStyle
+30,
+The blade is of Kris style (wavy and serpentine).
+The blade is serrated, giving it a wicked appearance.
+A blood groove runs the length of the blade on each side.
+2,The blade tapers, widens, and retapers in a "leaf" shape.
+
+: Pommel
+10,A small rounded pommel provides balance.
+5,A brass cap with 6 evenly spaced studs serves as the pommel.
+2,The pommel is of "skullcrusher" shape, allowing its use as a bludgeoning weapon.
+4,The large, round pommel is stamped with {:Utility.Symbols}.
+5,The pommel is in the shape of {:PommelShapes}.
+2,The pommel contains a {:Utility.RelativeSize} {:Utility.GemQuality} {:Utility.GemType}.
+3,The pommel consists only of a lanyard ring.
+The pommel is in the shape of {:PommelShapes} and screws off to reveal a hollow hilt.
+The hilt ends in a sharp blade where a pommel would normally be.
+
+: Quillions
+There are straight {:QuillionShape} quillions at the crossbar with a large ring protruding from one of the blade sides.
+There are arched quillions protruding toward the blade end.
+There are straight, unremarkable {:QuillionShape} quillions at the crossbar.
+2,The {:QuillionShape} quillions and center of the crossbar on each side contain matching {:Utility.RelativeSize} {:Utility.GemQuality} {:Utility.GemType} stones.
+3,The {:QuillionShape} quillions are unremarkable, but the crossbar is stamped with {:Utility.Symbols}.
+This sword has no quillions; the blade widens towards the base, then tapers as it passes straight into the hilt wrapping.
+The quillions and crossbar are engraved in a leaf motif.
+The {:QuillionShape} quillions end in large circles, which match the crossbar circle. All are stamped with {:Utility.Symbols}.
+The quillions are shaped like eagle talons, each clutching a sphere.
+One quillion arches upward, the other downward, forming an S shape.
+The quillions are in the shape of serpent necks and heads.
+The quillions are shaped like dragon wings, and the blade emerges from a stylized dragon head.
+Four quillions shaped like talons surround the blade.
+The quillions are unremarkable, but the crossbar is shaped like a scalloped seashell.
+The quillions and crossbar form a five-pointed star pointing down toward the hilt.
+The quillions and crossbar form a five-pointed star pointing towards the blade.
+The quillions are larger than normal and each precisely matches the main hilt and pommel.
+The {:QuillionShape} quillions protrude about two inches on either side, then turn sharply downward for about 5 inches.
+4,The simple {:QuillionShape} quillions each end in {:PommelShapes}, and the crossbar has an engraving of the same in a circle.
+2,The simple {:QuillionShape} quillions each end in {:PommelShapes}, and the crossbar is stamped with {:Utility.Symbols}.
+2,The simple {:QuillionShape} quillions each end in {:PommelShapes}, and the crossbar contains a {:Utility.RelativeSize} {:Utility.GemQuality} {:Utility.GemType}.
+
+: QuillionShape
+6,round
+3,square
+3,triangular
+hexagonal
+pentagonal
+octagonal
+tapered flat
+sharpened
+
+: Basket
+The basket has a leaf motif.
+The basket is a fine mesh.
+The basket is solid.
+The basket is solid with engravings on it.
+The basket is composed of thick wires stretching from the crossbar to the pommel.
+The basket is composed of several interweaving thick wires.
+The basket is fancy, being composed of numerous twisting wires that interweave and extend into the area of the blade.
+The basket is a short dome coming down over the grip, and does not connect to the pommel.
+The basket has the appearance of spiderwebs.
+The basket has a scalloped, clamshell appearance.
+
+: DecorMetal
+5,
+3,The decorative elements of the sword are composed of {:Utility.MetalDecor} {:MetalHistoryChance}.
+
+: PommelShapes
+the head of an Illithid, it's tentacles wrapping around the hilt{:PommelEyes}
+2,the head of a Human male, its visage frozen in horror{:PommelEyes}
+2,the head of a helmeted man with a determined expression{:PommelEyes}
+2,the head of a wily-looking Elf{:PommelEyes}
+2,the head of a gruff-looking Dwarf{:PommelEyes}
+a Beholder head{:PommelEyes}
+2,a Dragon head with its mouth agape{:PommelEyes}
+3,the head of an armored knight in a crusader-style helmet (no face visible)
+2,an eyeball
+3,a hand clutching a sphere
+3,talons clutching a sphere
+3,a simple cone
+3,a smooth cylinder
+4,a horse's head{:PommelEyes}
+2,an eagle's head{:PommelEyes}
+2,a lion's head{:PommelEyes}
+3,a cat's head{:PommelEyes}
+4,a serpent's head{:PommelEyes}
+an icosahedron (d20)
+a dodecahedron (d12)
+a crystal prism
+3,a mermaid, her tail wrapping around the hilt{:PommelEyes}
+2,a nude female figurehead from the torso up{:PommelEyes}
+2,a nude female figurehead from the waist down{:PommelEyes}
+2,a wizard with a beard and pointy hat{:PommelEyes}
+2,a ram's head{:PommelEyes}
+2,a head with a strange-looking mask{:PommelEyes}
+3,a dog's head{:PommelEyes}
+2,a spider astride an orb
+a small crouching dragon{:PommelEyes}
+4,a clenched fist
+3,a chess piece
+3,a perched falcon{:PommelEyes}
+the head of a snarling orc{:PommelEyes}
+4,a skull{:PommelEyes}
+2,a monkey head{:PommelEyes}
+a squatting toad{:PommelEyes}
+4,a wide scalloped seashell
+2,a scorpion's stinger
+4,a stylized sun
+4,a crescent moon
+2,a five-pointed star
+a pineapple
+2,a bull's head
+a fish head
+2,a serpent's head
+3,a spike
+
+: PommelEyes
+5,
+, with eyes made out of small {:Utility.GemType}s
+
+: RuneGlowChance
+8,
+The inscription glows faintly with a {:Color.hues} light.
+The inscription glows brightly with a {:Color.hues} light.
+The inscription glows faintly with a {:Color.hues} light when {:Utility.CreatureTypes}s are nearby.
+The inscription glows brightly with a {:Color.hues} light when {:Utility.CreatureTypes}s are nearby.
+The inscription glows faintly with a {:Color.hues} light if monsters are nearby.
+The inscription glows brightly with a {:Color.hues} light if evil is nearby.
+
+===
+
 / http://eberronunlimited.wikidot.com/magic-weapon-special-abilities
 
-Magic Weapon Special Abilities
-As magic items go, magic weapons are a staple of all campaigns.
-Magic weapons have enhancement bonuses ranging from +1 to +5. They apply these bonuses to both attack and damage rolls when used in combat. All magic weapons are also masterwork weapons, but their masterwork bonus on attack rolls does not stack with their enhancement bonus on attack rolls.
-Weapons come in two basic categories: melee and ranged. Some of the weapons listed as melee weapons (for example, daggers) can also be used as ranged weapons. In this case, their enhancement bonus applies to either type of attack. In addition to an enhancement bonus, weapons may have special abilities, such as the ability to flame or the ability to attack on their own. Special abilities count as additional bonuses for determining the market value of the item, but do not modify attack or damage bonuses (except where specifically noted). A single weapon cannot have a modified bonus (enhancement bonus plus special ability bonus equivalents) higher than +10. A weapon with a special ability must have at least a +1 enhancement bonus.
-A weapon or a kind of ammunition may be made of an unusual material. Roll d%: 01–95 indicates that the item is of a standard sort, and 96–100 indicates that it is made of a special substance such as alchemical silver or cold iron (see Special Materials, page 283).
-Caster Level for Weapons: The caster level of a weapon with a special ability is given in the item description. For an item with only an enhancement bonus and no other abilities, the caster level is three times the enhancement bonus. If an item has both an enhancement bonus and a special ability, the higher of the two caster level requirements must be met.
-Additional Damage Dice: Some magic weapons deal additional dice of damage. Unlike other modifiers to damage, additional dice of damage are not multiplied when the attacker scores a critical hit.
-Ranged Weapons and Ammunition: The enhancement bonus from a ranged weapon does not stack with the enhancement bonus from ammunition. Only the higher of the two enhancement bonuses applies.
-Ammunition fired from a projectile weapon with an enhancement bonus of +1 or higher is treated as a magic weapon for the purpose of overcoming damage reduction. For example, a sling stone hurled from a +1 sling is treated as a magic weapon. Similarly, ammunition fired from a projectile weapon with an alignment (such as a +1 holy longbow or a masterwork crossbow under the effect of the align weapon spell) gains the alignment of that projectile weapon (in addition to any alignment it may already have). For example, a +1 unholy arrow fired from a +2 anarchic shortbow would be both evil-aligned and chaos-aligned (the former from its own unholy special ability, the latter from the shortbow).
-Magic Ammunition and Breakage: When a magic arrow, crossbow bolt, or sling bullet misses its target, there is a 50% chance it breaks or otherwise is rendered useless. A magic arrow, bolt, or bullet that hits is destroyed.
-Light Generation: Fully 30% of magic weapons shed light equivalent to a light spell (bright light in a 20-foot radius, shadowy light in a 40-foot radius). These glowing weapons are quite obviously magical. Such a weapon can’t be concealed when drawn, nor can its light be shut off. Some of the specific weapons detailed below always or never glow, as defined in their descriptions.
-Hardness and Hit Points: An attacker cannot damage a magic weapon that has an enhancement bonus unless his own weapon has at least as high an enhancement bonus as the weapon or shield struck. Each +1 of enhancement bonus also adds 1 to the weapon’s or shield’s hardness and hit points. (See Table 8–8, page 158 of the Player’s Handbook, for common weapon hardnesses and hit points.)
-Activation: Usually a character benefits from a magic weapon in the same way a character benefits from a mundane weapon—by attacking with it. If a weapon has a special ability that the user needs to activate (such as the sunlight power of a sun blade), then the user usually needs to utter a command word (a standard action).
-Magic Weapons and Critical Hits: Some weapon qualities and some specific weapons have an extra effect on a critical hit. A flaming burst weapon, for example, does extra fire damage on a critical hit. This special effect functions against creatures not subject to critical hits, such as undead, elementals, and constructs. When fighting against such creatures, roll for critical hits as you would against humanoids or any other creature subject to critical hits. On a successful critical roll, apply the special effect, but do not multiply the weapon’s regular damage. For example, if Jozan rolls a natural 20 on his attack roll against an iron golem when using a mace of smiting, he rolls again. If he rolls high enough to hit the iron golem’s AC, then he does not apply double damage. Instead, he destroys the construct outright.
-Weapons for Unusually Sized Creatures: The cost of weapons for creatures who are neither Small nor Medium varies from the values given on Tables 7–11, 7–12, and 7–13, as described under Weapon Qualities on page 114 of the Player’s Handbook. The cost of the masterwork quality and any magical enhancement remains the same.
+/ Magic Weapon Special Abilities
+/ As magic items go, magic weapons are a staple of all campaigns.
+/ Magic weapons have enhancement bonuses ranging from +1 to +5. They apply these bonuses to both attack and damage rolls when used in combat. All magic weapons are also masterwork weapons, but their masterwork bonus on attack rolls does not stack with their enhancement bonus on attack rolls.
+/ Weapons come in two basic categories: melee and ranged. Some of the weapons listed as melee weapons (for example, daggers) can also be used as ranged weapons. In this case, their enhancement bonus applies to either type of attack. In addition to an enhancement bonus, weapons may have special abilities, such as the ability to flame or the ability to attack on their own. Special abilities count as additional bonuses for determining the market value of the item, but do not modify attack or damage bonuses (except where specifically noted). A single weapon cannot have a modified bonus (enhancement bonus plus special ability bonus equivalents) higher than +10. A weapon with a special ability must have at least a +1 enhancement bonus.
+/ A weapon or a kind of ammunition may be made of an unusual material. Roll d%: 01ï¿½95 indicates that the item is of a standard sort, and 96ï¿½100 indicates that it is made of a special substance such as alchemical silver or cold iron (see Special Materials, page 283).
+/ Caster Level for Weapons: The caster level of a weapon with a special ability is given in the item description. For an item with only an enhancement bonus and no other abilities, the caster level is three times the enhancement bonus. If an item has both an enhancement bonus and a special ability, the higher of the two caster level requirements must be met.
+/ Additional Damage Dice: Some magic weapons deal additional dice of damage. Unlike other modifiers to damage, additional dice of damage are not multiplied when the attacker scores a critical hit.
+/ Ranged Weapons and Ammunition: The enhancement bonus from a ranged weapon does not stack with the enhancement bonus from ammunition. Only the higher of the two enhancement bonuses applies.
+/ Ammunition fired from a projectile weapon with an enhancement bonus of +1 or higher is treated as a magic weapon for the purpose of overcoming damage reduction. For example, a sling stone hurled from a +1 sling is treated as a magic weapon. Similarly, ammunition fired from a projectile weapon with an alignment (such as a +1 holy longbow or a masterwork crossbow under the effect of the align weapon spell) gains the alignment of that projectile weapon (in addition to any alignment it may already have). For example, a +1 unholy arrow fired from a +2 anarchic shortbow would be both evil-aligned and chaos-aligned (the former from its own unholy special ability, the latter from the shortbow).
+/ Magic Ammunition and Breakage: When a magic arrow, crossbow bolt, or sling bullet misses its target, there is a 50% chance it breaks or otherwise is rendered useless. A magic arrow, bolt, or bullet that hits is destroyed.
+/ Light Generation: Fully 30% of magic weapons shed light equivalent to a light spell (bright light in a 20-foot radius, shadowy light in a 40-foot radius). These glowing weapons are quite obviously magical. Such a weapon canï¿½t be concealed when drawn, nor can its light be shut off. Some of the specific weapons detailed below always or never glow, as defined in their descriptions.
+/ Hardness and Hit Points: An attacker cannot damage a magic weapon that has an enhancement bonus unless his own weapon has at least as high an enhancement bonus as the weapon or shield struck. Each +1 of enhancement bonus also adds 1 to the weaponï¿½s or shieldï¿½s hardness and hit points. (See Table 8ï¿½8, page 158 of the Playerï¿½s Handbook, for common weapon hardnesses and hit points.)
+/ Activation: Usually a character benefits from a magic weapon in the same way a character benefits from a mundane weaponï¿½by attacking with it. If a weapon has a special ability that the user needs to activate (such as the sunlight power of a sun blade), then the user usually needs to utter a command word (a standard action).
+/ Magic Weapons and Critical Hits: Some weapon qualities and some specific weapons have an extra effect on a critical hit. A flaming burst weapon, for example, does extra fire damage on a critical hit. This special effect functions against creatures not subject to critical hits, such as undead, elementals, and constructs. When fighting against such creatures, roll for critical hits as you would against humanoids or any other creature subject to critical hits. On a successful critical roll, apply the special effect, but do not multiply the weaponï¿½s regular damage. For example, if Jozan rolls a natural 20 on his attack roll against an iron golem when using a mace of smiting, he rolls again. If he rolls high enough to hit the iron golemï¿½s AC, then he does not apply double damage. Instead, he destroys the construct outright.
+/ Weapons for Unusually Sized Creatures: The cost of weapons for creatures who are neither Small nor Medium varies from the values given on Tables 7ï¿½11, 7ï¿½12, and 7ï¿½13, as described under Weapon Qualities on page 114 of the Playerï¿½s Handbook. The cost of the masterwork quality and any magical enhancement remains the same.
 
 Weapon Special Ability Cost
 
+: Bonus
 Weapon Bonus   Base Price
 +1 2,000gp
 +2 8,000gp
@@ -29,9 +689,9 @@ Weapon Bonus   Base Price
 +8 128,000gp
 +9 162,000gp
 +10   200,000gp
-Note: If ammunition is enchanted, price is for 50 of arrows, bolts or bullets. I.e. 10x +1 Arrows would cost about 400gp.
+Note: If ammunition is enchanted, price is per 50 arrows, bolts or bullets (e.g. 10x +1 Arrows would cost about 400gp).
 
-Melee Weapon Special Abilities
+: Melee Special Ability
 
 Name  Base Price Modifier  Source
 Illuminating   +500gp   MIC
@@ -63,7 +723,8 @@ Speed +3 Bonus DMG
 Brilliant Energy  +4 Bonus DMG
 Dancing  +4 Bonus DMG
 Vorpal   +5 Bonus DMG
-Ranged Weapon Special Abilities
+
+: Ranged Special Ability
 
 Name  Base Price Modifier  Source
 Bane  +1 Bonus DMG
@@ -84,7 +745,3 @@ Shocking Burst +2 Bonus DMG
 Unholy   +2 Bonus DMG
 Speed +3 Bonus DMG
 Brilliant Energy  +4 Bonus DMG
-
-
-Name  Effect   Cost  Source
-Bracers of Wind   Bonus to ranged, penalty to enemy ranged  10,000gp Magic of Eberron

@@ -16,11 +16,11 @@
 
 !loop {2d4}
   <ul>
-    <li>Title: <b><i>{Book}</i></b>
-    {50%<li>Author: {book:author}} 
-    {50%<li>Condition: {condition}}
+    <li>Title: <b><i>{BOOK}</i></b>
+    {75%<li>Author: {AUTHOR}}{10% {AUTHOR:EDITS}} 
     {50%<li>Quality: {book:quality}}
-    {50%<li>Extra: {book:extra}}
+    {33%<li>Condition: {condition:book}}
+    {10%<li>Extra: {found in book}}
   </ul>
 !end
 </ul>

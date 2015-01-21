@@ -8,8 +8,6 @@ aboleth
 aboleth mage
 achaierai
 acid cloud
-adult arrowhawk
-adult tojanida
 aerial servant
 air elemental
 air mephit
@@ -23,6 +21,7 @@ annis hag
 aranea
 arcanadaemon
 archelon ischyras
+arrowhawk
 ascomoid
 asiatic elephant
 asmodeus
@@ -57,7 +56,6 @@ behir
 beholder
 belial
 belker
-black pudding
 blink dog
 bloodthorn
 boalisk
@@ -132,10 +130,6 @@ ear seekers
 earth elemental
 earth mephit
 efreeti
-elder arrowhawk
-elder black pudding
-elder tojanida
-elder xorn
 elephant
 elfin cat
 erinyes devil
@@ -223,8 +217,6 @@ imp devil
 invisible stalker
 iron golem
 janni
-juvenile arrowhawk
-juvenile tojanida
 kapoacinth gargoyle
 kelubar
 kentrosaurus
@@ -237,8 +229,8 @@ krenshar
 lacedon ghoul
 lamia
 lammasu
-landshark
 land lamprey
+landshark
 lantern archon
 large {fauna}
 larva
@@ -270,7 +262,6 @@ mimic
 mind flayer
 miner
 minimal
-minor xorn
 minotaur
 mohrg
 moloch
@@ -379,6 +370,7 @@ thought eater
 tiefling
 titan
 titivilus
+tojanida
 treant
 tribesman
 triton

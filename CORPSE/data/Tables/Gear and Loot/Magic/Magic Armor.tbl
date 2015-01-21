@@ -3,14 +3,14 @@
 Armor Properties
 Magic armor is a common but vital item. In general, it protects the wearer to a greater extent than nonmagical armor. Magic armor bonuses are enhancement bonuses, never rise above +5, and stack with regular armor bonuses (and with shield and magic shield enhancement bonuses). All magic armor is also masterwork armor, reducing armor check penalties by 1.
 In addition to an enhancement bonus, armor may have special abilities, such as the ability to resist critical hits or to help the wearer hide. Special abilities count as additional bonuses for determining the market value of an item, but do not improve AC. A suit of armor cannot have an effective bonus (enhancement plus special ability bonus equivalents) higher than +10. A suit of armor with a special ability must have at least a +1 enhancement bonus.
-A suit of armor or a shield may be made of an unusual material. Roll d%: 01–95 indicates that the item is of a standard sort, and 96–100 indicates that it is made of a special substance such as adamantine or mithral (see Special Materials).
+A suit of armor or a shield may be made of an unusual material. Roll d%: 01ï¿½95 indicates that the item is of a standard sort, and 96ï¿½100 indicates that it is made of a special substance such as adamantine or mithral (see Special Materials).
 Armor is always created so that even if the type of armor comes with boots or gauntlets, these pieces can be switched for other magic boots or gauntlets.
 Caster Level for Armor and Shields: The caster level of a magic shield or magic armor with a special ability is given in the item description. For an item with only an enhancement bonus, the caster level is three times the enhancement bonus. If an item has both an enhancement bonus and a special ability, the higher of the two caster level requirements must be met.
 Shields: Shield enhancement bonuses stack with armor enhancement bonuses, so that a +1 heavy steel shield and +1 chainmail grant a total bonus of +9 to AC. Shield enhancement bonuses do not act as attack or damage bonuses when the shield is used in a bash. The bashing special ability, however, does grant a +1 bonus on attack and damage rolls (see the special ability description). You could, in fact, build a shield that also acted as a magic weapon, but the cost of the enhancement bonus on attack rolls would need to be added into the cost of the shield and its enhancement bonus to AC. For example, a +1 buckler with +1 shield spikes would cost 3,475 gp (15 gp for the basic buckler, 150 to make it masterwork, 1,000 for the +1 bonus to AC, 10 gp for the spikes, 300 to make them masterwork, and 2,000 to make the spikes a +1 weapon).
 As with armor, special abilities built into the shield add to the market value in the form of additions to the bonus of the shield, although they do not improve AC. A shield cannot have an effective bonus (enhancement plus special ability bonus equivalents) higher than +10. A shield with a special ability must have at least a +1 enhancement bonus.
-Shield Hardness and Hit Points: Each +1 of enhancement bonus adds 2 to a shield’s hardness and +10 to its hit points. For example, a +3 heavy steel shield has hardness 16 and 50 hp. (See Table 8–8, page 158 of the Player’s Handbook, for common shield hardness and hit points.)
-Activation: Usually a character benefits from magic armor and shields in exactly the way a character benefits from nonmagical armor and shields—by wearing them. If armor or a shield has a special ability that the user needs to activate (such as with an animated shield), then the user usually needs to utter the command word (a standard action).
-Armor for Unusual Creatures: The cost of armor for nonhumanoid creatures, as well as for creatures who are neither Small nor Medium, varies from the values given on Tables 7–3 and 7–4, as described in the Armor for Unusual Creatures sidebar on page 123 of the Player’s Handbook. The cost of the masterwork quality and any magical enhancement remains the same.
+Shield Hardness and Hit Points: Each +1 of enhancement bonus adds 2 to a shieldï¿½s hardness and +10 to its hit points. For example, a +3 heavy steel shield has hardness 16 and 50 hp. (See Table 8ï¿½8, page 158 of the Playerï¿½s Handbook, for common shield hardness and hit points.)
+Activation: Usually a character benefits from magic armor and shields in exactly the way a character benefits from nonmagical armor and shieldsï¿½by wearing them. If armor or a shield has a special ability that the user needs to activate (such as with an animated shield), then the user usually needs to utter the command word (a standard action).
+Armor for Unusual Creatures: The cost of armor for nonhumanoid creatures, as well as for creatures who are neither Small nor Medium, varies from the values given on Tables 7ï¿½3 and 7ï¿½4, as described in the Armor for Unusual Creatures sidebar on page 123 of the Playerï¿½s Handbook. The cost of the masterwork quality and any magical enhancement remains the same.
 
 Armor and Shields Cost
 
@@ -28,8 +28,8 @@ Enhancement Base Price
 Magic Armor and Shield Special Ability Descriptions
 Most magic armor and shields only have enhancement bonuses. Such items can also have one or more of the special abilities detailed below. Armor or a shield with a special ability must have at least a +1 enhancement bonus.
 
-Hardness and Hit Points: Each +1 of enhancement bonus adds 2 to the hardness of a suit of armor or shield, and 10 to its hit points. Only the armor or shield’s actual enhancement bonus to Armor Class applies; special properties with an enhancement bonus equivalent for the purpose of determining market price don’t increase the hardness or hit points of armor or a shield.
-Armor Subtypes: Some armor or shield entries have a subtype, either “synergy” or “relic,” in brackets following the entry’s name. A synergy item has a prerequisite, typically an existing special property already imbued into the armor to be enhanced. A relic item has special effectiveness for a character devoted to a particular deity.
+Hardness and Hit Points: Each +1 of enhancement bonus adds 2 to the hardness of a suit of armor or shield, and 10 to its hit points. Only the armor or shieldï¿½s actual enhancement bonus to Armor Class applies; special properties with an enhancement bonus equivalent for the purpose of determining market price donï¿½t increase the hardness or hit points of armor or a shield.
+Armor Subtypes: Some armor or shield entries have a subtype, either ï¿½synergyï¿½ or ï¿½relic,ï¿½ in brackets following the entryï¿½s name. A synergy item has a prerequisite, typically an existing special property already imbued into the armor to be enhanced. A relic item has special effectiveness for a character devoted to a particular deity.
 Additional rules for creating and using these items appear in Chapter 6.
 
 Magic Armor Special Abilities
@@ -40,7 +40,7 @@ Stamina  +1 on Fortitude saves   +500 gp  MIC
 Blueshine   Immune to acid damage and rust, +2 on Hide, metal armor only   +1,500 gp   MIC
 Easy travel Carry medium load as light load, walk 10 hours a day with no Con check  +1,500 gp   MIC
 Called   Call armor to you on command  +2,000 gp   MIC
-Commander   +2 on Diplomacy, allies within 30 ft. gain +1 on Will saves and –5 on Hide +2,000 gp   MIC
+Commander   +2 on Diplomacy, allies within 30 ft. gain +1 on Will saves and ï¿½5 on Hide +2,000 gp   MIC
 Glamered Can change to look like normal clothing, on command   +2,700 gp   DMG
 Daylight Daylight for 30 minutes/day   +3,000 gp   MIC
 Mindarmor   3/day gain +5 on Will saves against mind-affecting spells and abilities +3,000 gp   MIC
@@ -54,7 +54,7 @@ Dragondodger   Evasion ability against breath weapons, light armor only +1 bonus
 Ectoplasmic feedback 1d6 damage to incorporeal creatures +1 bonus MIC
 Energy defenseS   3/day 1d6+10 energy damage to attacker +1 bonus MIC
 Fortification, light 25% chance to negate criticals, sneak attacks   +1 bonus DMG
-Ghost ward  Armor’s enhancement bonus applies against touch attacks  +1 bonus MIC
+Ghost ward  Armorï¿½s enhancement bonus applies against touch attacks  +1 bonus MIC
 Mobility Gain benefit of Mobility feat, light armor only +1 bonus MIC
 Nimbleness  Maximum Dex bonus 1 higher, armor check penalty 2 less   +1 bonus MIC
 Soulbound   Stores up to 2 points of essentia for enhancement bonuses   +1 bonus MIC
@@ -130,3 +130,8 @@ Cold resistance, greater   Absorbs 30 points of cold damage per attack  +66,000 
 Electricity resistance, greater  Absorbs 30 points of electricity damage per attack +66,000 gp  DMG
 Fire resistance, greater   Absorbs 30 points of fire damage per attack  +66,000 gp  DMG
 Sonic resistance, greater  Absorbs 30 points of sonic damage per attack +66,000 gp  DMG
+
+
+
+Name  Effect   Cost  Source
+Bracers of Wind   Bonus to ranged, penalty to enemy ranged  10,000gp Magic of Eberron
