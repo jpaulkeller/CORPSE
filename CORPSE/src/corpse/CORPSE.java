@@ -33,6 +33,7 @@ import corpse.ui.TreePanel;
 /** CORPSE - Computer-Oriented Role-Playing System & Environment */
 
 // TODO high priority
+// lower-case subsets are internal
 // capitalize based on assignment token (allow lower-case variables?)
 // internal-only subsets
 // script recursion for cave generation
@@ -41,6 +42,7 @@ import corpse.ui.TreePanel;
 // consider {Table.1} to get the first field, separated by at least 2 spaces - Herb
 // or some way to specify a regex, and extract the group -- e.g. Table.([^ ]+)
 // fix capitalization for scripts (Library.cmd - Extra)
+// within a line, automatically apply !Different
 
 // TODO data changes
 // convert scripts to HTML (Tavern.cmd)

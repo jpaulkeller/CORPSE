@@ -210,6 +210,16 @@ public final class Subset
    {
       CORPSE.init(true);
 
+      String test = "Compass";
+      Table table = Table.getTable(test); 
+      System.out.println (table);
+      for (Subset subset : table.getSubsets().values())
+      {
+         String token = "{" + table.getName().toLowerCase() + Constants.SUBSET_CHAR + subset.getName() + "}";
+         System.out.println("  > " + token + " = " + Macros.resolve(table.getName(), token, null));
+      }
+
+      /*
       for (Table table : Table.getTables())
       {
          table.importTable();
@@ -223,5 +233,6 @@ public final class Subset
             }
          }
       }
+      */
    }
 }

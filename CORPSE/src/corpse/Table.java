@@ -470,6 +470,10 @@ public class Table extends ArrayList<String>
    {
       CORPSE.init(true);
 
+      Table table = Table.getTable("Compass");
+      System.out.println(table);
+      
+      /*
       for (String name : new ArrayList<String>(Table.TABLES.keySet()))
       {
          Table table = Table.getTable(name);
@@ -477,7 +481,6 @@ public class Table extends ArrayList<String>
       }
       System.out.println();
 
-      /*
       test("Flora", "including a table with a default subset");
       test("Spell", "including a subset");
       test("Fauna", "included subsets");
