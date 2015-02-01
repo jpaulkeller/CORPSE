@@ -1,0 +1,26 @@
+: Region
+archipelagos
+central region
+far {compass:4}
+known world
+undersea world
+underworld
+{compass:8}{50%ern region}
+{Plane} plane
+
+: Jurisdiction
+barony
+county
+earldom
+empire
+fiefdom
+kingdom
+province
+serfdom
+{:surrounding}
+
+: Surrounding
+countryside
+lands
+settlements
+villages

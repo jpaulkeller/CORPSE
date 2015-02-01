@@ -1,0 +1,431 @@
+/ http://random-generator.com/index.php?title=Armor
+
+: main
+6x {: Armorsuit}
+6x {: MaleClothing}
+/ 2x {: OSR Armor.main}
+
+: of
+{50%made }of
+
+: MaleOutfit
+He is wearing {: mo}
+
+: mo
+10x {: MaleUpperOutfit}, {: MaleLower}, and {: MaleFootwear}.{75% {: MaleAccessoriesChance}.}{75% {: MaleHat}.}
+3x {: MaleFullBody} and {: MaleFootwear}{: MaleAccessoriesChance}{: MaleHat}
+{: UniformMale}
+
+: ml
+{:of} {fur and pelt:hide} hide
+
+: mm
+/ {:of} {: metal flavor} {: Utility.MetalArmor}
+{:of} {: metal flavor} {Armor}
+
+: MaleAccessoriesChance
+4x He is carrying {: Shields}{: ShieldAdorn}
+He is also wearing {: MaleAccessories}
+He is also wearing {: MaleAccessories}, and carrying {: Shields}{: ShieldAdorn}
+
+: MaleHat
+10x On his head is {: Helms}
+/ On his face is {: ClothingFemale.Masks}
+
+: Cultures
+TODO CULTURE
+
+: MaleClothing
+{: Cultures} {: MaleUpperSinglePiece}
+{: Cultures} {: MaleLower}
+{: Cultures} {: MaleFullBody}
+pair of {: Cultures} {: MaleFootwear}
+{: Cultures} {: MaleAccessories}
+
+: MaleUpperSinglePiece
+{: MaleUpperLayer1}
+{: MaleUpperLayer2}
+
+: MaleUpperOutfit
+{: MaleUpperLayer1}
+{: MaleUpperLayer1} and a {: MaleUpperLayer2}
+
+: MaleUpperLayer1
+{: mul1} {: mm}
+5x {: mul1a} {: ml}
+5x {: mul1b} {: mm} and {fur and pelt:hide} hide
+
+: mul1
+10x ring mail shirt
+10x plate mail breastplate
+10x heavy plate mail breastplate
+10x chain mail shirt
+5x scout’s ring mail shirt
+5x lancer’s breastplate
+5x cavalier’s breastplate
+2x Underworld-forged chain mail shirt
+2x Dwarf-forged chain mail shirt
+2x Dark-forged chain mail shirt
+
+: mul1a
+10x boiled leather jerkin
+10x archer’s leather shirt
+5x Ranger’s fitted leather shirt
+
+: mul1b
+10x scale mail breastpiece
+10x brigandine shirt
+5x scout’s brigandine shirt
+
+: MaleUpperLayer2
+/ 10x {: mul2} {:of} {: ClothingFemale.Mat_Combo_Common}
+/ 3x {: mul2a} {:of} {: ClothingFemale.Mat_Combo_Fancy}
+jerkin of {fur and pelt:hide} hide
+
+: mul2
+2x doublet
+2x heavy shirt
+2x riding shirt
+jacket
+overcoat
+tabard
+tunic
+
+: mul2a
+5x full-length robe
+2x coat
+half-length robe
+
+: MaleFullBody
+/ 30x robe {:of} {: ClothingFemale.Mat_Combo_Common}
+/ 30x long tunic {:of} {: ClothingFemale.Mat_Combo_Common}
+/ 25x hooded robe {:of} {: ClothingFemale.Mat_Combo_Common}
+/ 3x toga {:of} {: ClothingFemale.Mat_Combo_Common}
+one-piece {:of} {color:light} terry cloth
+
+: MaleFootwear
+10x war boots {: mm} and {fur and pelt:hide} hide
+10x war boots {: mm}
+10x plated boots {: mm}
+10x heavy plated boots {: mm}
+10x heavy leather boots {: ml}
+/ 8x common shoes {:of} {: ClothingFemale.Mat_Combo_Leather}
+/ 5x riding boots {:of} {: ClothingFemale.Mat_Combo_Leather}
+5x Ranger’s quiet leather boots {: ml}
+/ 5x mid-calf boots {:of} {: ClothingFemale.Mat_Combo_Leather}
+5x lancer’s boots {: mm}
+5x knight’s boots {: mm}
+/ 4x low boots {:of} {: ClothingFemale.Mat_Combo_Leather}
+/ 4x knee-high boots {:of} {: ClothingFemale.Mat_Combo_Leather}
+/ 2x thigh-high boots {:of} {: ClothingFemale.Mat_Combo_Leather}
+
+: Colors
+{color:dark}
+{color:drab}
+{color:light}
+white
+
+: MaleAccessories
+10x pair of riding gloves {:of} {: ClothingFemale.Mat_Combo_Leather}
+10x pair of gloves {:of} {: ClothingFemale.Mat_Combo_Leather}
+10x cape {:of} {: ClothingFemale.Mat_Combo_Common} and {: ClothingFemale.MaterialsFancy}
+10x belt {: ml} with {: Utility.MetalArmor} buckle
+7x codpiece {: ml} and {: Utility.MetalArmor}
+7x baldric {:of} {: ClothingFemale.Mat_Combo_Common}
+6x sash {:of} {: ClothingFemale.Mat_Combo_Fancy}
+5x traveller’s cloak {:of} {: ClothingFemale.Mat_Combo_Common}
+5x riding mantle {:of} {: ClothingFemale.Mat_Combo_Common} and {: ClothingFemale.MaterialsFancy}
+5x riding cloak {:of} {: ClothingFemale.Mat_Combo_Common} and {: ClothingFemale.MaterialsFancy}
+5x riding cape {:of} {: ClothingFemale.Mat_Combo_Common} and {: ClothingFemale.MaterialsFancy}
+5x pair of plated gauntlets {:of} {: Utility.MetalArmor}
+5x pair of heavy plated gauntlets {:of} {: Utility.MetalArmor}
+5x pair of heavy chain gauntlets {:of} {: Utility.MetalArmor}
+5x pair of gauntlets {:of} {: ClothingFemale.Mat_Combo_Leather}
+5x pair of chain gauntlets {:of} {: Utility.MetalArmor}
+5x mantle {:of} {: ClothingFemale.Mat_Combo_Common}
+5x cloak {:of} {: ClothingFemale.Mat_Combo_Common}
+5x bandoleer {:of} {: ClothingFemale.Mat_Combo_Leather}
+4x spiked collar {: ml} and {: metal flavor} {: Utility.MetalArmor}
+4x scarf {:of} {: ClothingFemale.Cloth_Color} wool
+4x plaid of {: ClothingFemale.Mat_Combo_Leather} with a brooch of {: Utility.MetalDecor}
+4x gorget {: ml} and {: metal flavor} {: Utility.MetalArmor}
+3x sporran {:of} {: ClothingFemale.Mat_Combo_Leather}
+
+
+: metal flavor
+ancient
+antiquated
+antique
+arcane
+archaic
+battered
+battle-worn
+beaten
+bloodstained
+bright
+brightly shining
+broken
+burnt
+charred
+cold-forged
+costly
+dark
+extravagant
+faintly glowing
+fine
+gleaming
+glistening
+highly polished
+kingly
+long-disused
+loose-fitting
+magnificent
+old
+ornate
+polished
+poorly-crafted
+princely
+rune-wrought
+runic
+rusted
+rusty
+shining
+splendid
+stained
+stained
+strong
+sturdy-looking
+tarnished
+tight-fitting
+torn
+used
+well-crafted
+well-oiled
+well-used
+worn
+
+: MilitaryAccessories
+5x a cloak {:of} {: ClothingFemale.MaterialsCommon}
+3x a baldric {:of} {: ClothingFemale.MaterialsCommon}
+5x a tabard {:of} {: ClothingFemale.MaterialsCommon} and bearing the unit’s coat of arms
+3x a belt {: ml}
+2x an apron {: ml}
+2x a sword belt {: ml}
+2x {: MilitaryAccessories}, {: MilitaryAccessories}
+
+: HelmetSentence
+3x 
+2x . The armor is accompanied by {: Helms}
+
+: Armorsuit
+6x {: ArmorLightDescription}
+5x {: ArmorMediumDescription}{: ArmorAddons}{: HelmetSentence}
+5x {: ArmorHeavyDescription}{: HelmetSentence}
+
+: ArmorLight
+3x {: ArmorLightChainShirt}
+3x {: ArmorLightLeather}
+2x {: ArmorLightStuddedLeather}
+{: ArmorLightPadded}
+{: ArmorLightUnusual}
+
+: ArmorLightDescription
+3x  {: ArmorLightChainShirt}{: MetalLinkDecor}{: MetalColor}
+3x suit of {: ArmorLightLeather} armor{: LeatherHideDecor}
+3x suit of {: ArmorLightStuddedLeather} armor{: LeatherHideDecor}{: ArmorAddons}
+{: ArmorLightUnusual}
+suit of {: ArmorLightPadded} armor stuffed with {: Padding}
+
+: Padding
+2x wool
+2x cotton
+straw
+leaves
+horsehair
+feathers
+
+: ArmorMedium
+15x {: ArmorMediumHide}
+20x {: ArmorMediumScaleMail}
+20x {: ArmorMediumChainmail}
+10x {: ArmorMediumBreastplate}
+{: ArmorMediumUnusual}
+
+: ArmorMediumDescription
+15x suit of {: ArmorMediumHide} armor{: LeatherHideDecor}
+20x suit of {: ArmorMediumScaleMail} armor{: MetalPlateDecor}{: MetalColor}
+20x suit of {: ArmorMediumChainmail} armor{: MetalLinkDecor}{: MetalColor}
+10x  {: ArmorMediumBreastplate}{: MetalPlateDecor}{: MetalColor}
+suit of {: ArmorMediumUnusual}
+
+: ArmorHeavyDescription
+suit of {: ArmorHeavy} armor{: MetalPlateDecor}{: MetalColor}{: ArmorAddons}
+
+: ArmorHeavy
+3x {: ArmorHeavySplintMail}
+4x {: ArmorHeavyBandedMail}
+7x {: ArmorHeavyHalfPlate}
+{: ArmorHeavyFullPlate}
+{: ArmorHeavyUnusual}
+
+: ArmorLightPadded
+30x Padded
+Thistledown Padded
+
+: ArmorLightLeather
+{: allr} Leather
+
+: allr
+30x {fur and pelt:hide} hide
+5x {: Color}
+Chameleon
+Mammoth
+
+: ArmorLightStuddedLeather
+4x Studded Leather ({fur and pelt:hide} hide leather with {: Utility.MetalArmor} studs)
+Spiked Leather ({fur and pelt:hide} hide leather with {: Utility.MetalArmor} spikes)
+
+: ArmorLightChainShirt
+{: Utility.MetalArmor} Chain Shirt
+
+: ArmorLightUnusual
+22x suit of {: alu-wk} armor
+20x suit of {fur and pelt:hide} hide Leather Scale armor{: LeatherHideDecor}
+2x suit of Leafweave armor
+2x Darkleaf Breastplate
+set of silk swathes
+Bondleaf Wrap
+ feather cloak
+Moon-Ivy armor
+
+: alu-wk
+10x Bone
+5x Bark
+2x Cord
+Wooden
+Wicker
+Spidersilk
+Sharkskin
+Nightscale
+
+: ArmorMediumHide
+{fur and pelt:hide} hide Hide
+
+: ArmorMediumScaleMail
+25x {: Utility.MetalArmor} Scale Mail
+{: Utility.MetalArmor} Interlocking Scale Mail
+Serpentscale Mail
+
+: ArmorMediumChainmail
+{: Utility.MetalArmor} Chainmail
+
+: ArmorMediumBreastplate
+15x breastplate {:of} {: Utility.MetalArmor}
+bronze breastplate
+Tumbler’s Breastplate {:of} {: Utility.MetalArmor}
+
+: ArmorMediumUnusual
+30x  {: Utility.MetalArmor} ring mail{: MetalLinkDecor}
+20x  Lamellar armor
+20x  Brigandine armor
+Darkleaf Banded Mail
+ shell armor
+ {: Utility.Chitin} chitin armor
+
+: ArmorHeavySplintMail
+{: Utility.MetalArmor} Splint Mail
+
+: ArmorHeavyBandedMail
+{: Utility.MetalArmor} Banded Mail
+
+: ArmorHeavyHalfPlate
+{: Utility.MetalArmor} Half Plate
+
+: ArmorHeavyFullPlate
+10x {: Utility.MetalArmor} Full Plate
+{: Utility.MetalArmor} Battle Plate
+{: Utility.MetalArmor} Heavy Plate
+{: Utility.MetalArmor} Interlocking Plate
+{: Utility.MetalArmor} Mountain Plate
+Stone Plate
+
+: ArmorHeavyUnusual
+3x Coral
+3x Dendritic
+7x Feeler Plate
+
+: ArmorAddons
+50x 
+35x . {: aas}
+
+: aas
+5x Armor Spikes adorn the armor
+5x Fast-Donning Straps have been incorporated into the armor
+5x Riding Straps have been incorporated into the armor
+5x The armor has been modified to allow for quicker escape from it
+4x {: aas} and {: aas}
+3x Armor razors adorn the armor
+2x A forest-warden shroud covers the armor
+2x The armor has been modified to make it more buoyant
+2x The armor has been modified to muffle sound
+Stability weights have been added to the armor
+Fins have been added to the armor to allow it to respirate better in hot environs
+
+: LeatherHideDecor
+20x 
+20x . The leather is {: lhdr}
+
+: lhdr
+6x painted with {: Utility.Symbols} in the middle of the breastplate
+5x intricately tooled with spirals and other interweaving shapes
+5x stamped with a large circle containing {: Utility.Symbols}
+2x cut and stamped to resemble leaves
+stamped and cut to resemble spiderwebs
+stamped and cut to resemble plate armor
+
+: MetalPlateDecor
+10x 
+6x . {: mpdr}
+
+: mpdr
+2x The breastplate is emblazoned with {: Utility.Symbols}
+2x The {: ArmorLocationsPlated} is/are decorated with {: Utility.Symbols}
+There are {: AdditionalDecor} on the {: ArmorLocationsPlated}
+{: mpdr} and {: mpdr}
+
+: MetalLinkDecor
+20x 
+6x . The links {: mldr}
+
+: mldr
+have been poorly maintained and clank and rub loudly against each other
+were loosely and hastily wrought together
+seem to eerily shimmer and shift of their own accord
+are so minute as to appear like waves of metal
+are so minute as to appear like uniform grains of sand
+are of varying darkness, creating a strangely textured pattern
+
+: MetalColor
+100
+20x . The metal is {: metal flavor}
+9x . The metal has been {: mcr}
+
+: mcr
+4x finely polished and is very shiny
+3x enameled with a deep {color:dark} enamel
+1x painted a dull {color:drab}
+1x enameled with shiny, bright {color:light} enamel
+
+: ArmorLocationsPlated
+breastplate
+epaulets
+gauntlets
+helmet
+leg greaves
+
+: AdditionalDecor
+etched runes
+feathers
+filigree designs
+gemstones
+strips of leather fringe

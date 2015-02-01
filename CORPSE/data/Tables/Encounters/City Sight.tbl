@@ -7,16 +7,16 @@
 / http://chaoticshiny.com/crowdgen.php
 
 : Unusual
-A {:group} are harvesting {thumbs|fingers|hands|tongues|hair}
+A {city encounter:group} are harvesting {thumbs|fingers|hands|tongues|hair}
 A merchant selling {spell component}
-A huge {:group name} of beggars is rioting. The city guards will turn up in {{6}x5} minutes
+A huge {city encounter:group name} of beggars is rioting. The city guards will turn up in {{6}x5} minutes
 A {fauna} has escaped from the {city zoo|gardens of an eccentric noble}.
 An orchard of potted {fruit} trees.
 Beggars ({2d6-1}){10% prepared to steal from those who refuse to give}.
 City Guards ({2d6}): They will often confront any suspicious characters. Whether the player characters count as 'suspicious' will depend on the area. {15%They conscript the heroes, and anyone else around, to help fight a fire.}
 
 : Weird
-A {:group name} of gray, old folk whose exhaled breath is smoke.
+A {city encounter:group name} of gray, old folk whose exhaled breath is smoke.
 A {fauna} paces loose.
 A pig squeals out hymns.
 A wondrous steam engine explodes killing crowded spectators.
@@ -96,14 +96,14 @@ Ostler fusses with five black war camels.
 Parrot negotiates embargo with a Nuncio.
 Pregnant woman performs acrobatics.
 Press Gang ({2d6}): A group of kidnappers, working for the local government, who conscript their victims into the army or navy.  They will usually not attack a larger group unless it's obviously drunk, weakened etc. They will often fight with their bare hands, or blunt weapons like clubs, but at least some are likely to carry daggers or swords in case they misjudge their victims and end up in a serious battle.
-{Title Religious} accompanied by {d6-1} devout (but not ordained) companions.
+{Title Religious} accompanied by {{6}-1} devout (but not ordained) companions.
 Priests time rituals to the transformations of a man in a bamboo cage to hippo and back.
 Priests: A belligerent priest, with 2 dice worth of devout, but not priestly followers, seeks 'donations' from passers-by.
 Priests: A huge funeral procession. {33%They're angry and looking for a fight.}
 Priests: A ragged prophet seeks to incite a crowd to riot.
-Priests: A respectable priest seeks the help of someone like the heroes. They are accompanied by {d6-1} devout, but not ordained, followers.
+Priests: A respectable priest seeks the help of someone like the heroes. They are accompanied by {{6}-1} devout, but not ordained, followers.
 Priests: A riotous religious festival, with drunkenness and thievery abounding.
-Priests: An execution: 50% chance of being legal. The condemned is {completely innocent|mostly innocent|guilty|guilty, but had a good reason|guilty, but {manipulated|tricked}|blackmailed} into it by another}.
+Priests: An execution: 50% chance of being legal. The condemned is {completely innocent|mostly innocent|guilty|guilty, but had a good reason|guilty, but {manipulated|tricked|blackmailed} into it by another}.
 Procession honors conjoined orangutans.
 Procession of blind guides one after another after another.
 Respectable gentleman with five porters bearing his beard.

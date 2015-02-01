@@ -1,12 +1,60 @@
+: Drink
+{:regular}
+{:alcoholic}
+
+: Regular
+coffee
+milk
+{20%{:tea} }tea
+{20%{:water} }water
+{25%{:cider} }cider
+{birch|ginger|root} beer
+{fruit} juice
+
+: Alcoholic
 ale
+beer
 bitter
 brandy
-cider
 grog
+hard cider
 mead
-milk
 perry
+sake
 stout
-{fruit} juice
 {hot|mulled} wine{25% spiced with {spice}}
-{red|white} wine
+{:liquor}
+{20%{dry|sweet|sparkling|spiced} }{red|white|port} wine
+
+: Liquor
+gin
+rum
+vodka
+whiskey
+
+: Water
+lemon 
+mineral 
+minty 
+rain 
+spring 
+well
+
+: Tea
+black
+green
+hot
+herbal
+iced
+red
+sweet
+white
+yellow
+
+: Cider
+chilled
+hard
+honeyed
+sparkling
+spiced{50% hot}
+{50%hot }mulled

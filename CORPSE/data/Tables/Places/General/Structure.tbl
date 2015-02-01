@@ -1,5 +1,6 @@
  Sources: a little from TSR DM's Guide, page 220
 
+: Structure
 abbey ({religion})
 academy
 amphitheater
@@ -119,6 +120,7 @@ pillar
 planetarium
 portal
 postern
+priory
 prison
 quarry ({mineral})
 ramparts
@@ -127,6 +129,7 @@ reservoir
 residence
 restaurant
 ruin ({structure})
+sanctuary
 school
 sculpture
 sewer
@@ -167,3 +170,24 @@ windmill
 winery
 zoo
 {25%stone }cottage
+
+: Cemetery
+abbey
+cemetery
+chapel
+churchyard
+graveyard
+priory
+
+: Religious
+abbey
+cathedral
+chapel
+church
+cloister
+monastery
+nunnery
+priory
+sanctuary
+shrine
+temple

@@ -1,0 +1,52 @@
+// inspired by http://donjon.bin.sh/fantasy/name/#setting
+
+: Battle
+{20%{:Adj} }{:Type} of{ the | }{Place Name}
+{20%{:Adj} }{Pseudo Class} {:Type}
+{2d4}0-Year War
+{50%{:Adj} }{:Type} of ’{{10}-1}{{10}-1}
+{:Creature} {:Type}
+{:Type} of {50%{:Adj} }{Noise}
+{:Type} of {:Inspiration}
+{:Type} of {{:Creature}+}
+{:Type} of {50%{Evocative Adj:Negative} }{Evocative Noun:Negative}
+{:Type} of {50%{Evocative Adj:Negative} }{{Pseudo Class}+}
+{:Type} of {50%{Evocative Adj:Positive} }{Evocative Noun:Positive}
+{:Type} of {50%{Evocative Adj} }{Evocative Noun}
+{:Type} of {Generated Name}
+{:Type} of {Name}{25% {Evocative Adj}}
+{:Type} of {Number:Plural} {{Weapon}+}
+{Adjective} {:Type}
+{Evocative Adj:Negative} {:Type}
+
+: Adj
+endless
+great
+horrible
+
+: Type
+assault
+attack
+battle
+campaign
+conflict
+crusade
+defense
+destruction
+incursion
+pillage
+razing
+rebellion
+resistance
+sacking
+siege
+uprising
+war{20%s}
+
+: creature
+{mythical creature}
+{beast}
+{fauna}
+{monster}
+{humanoid:all}
+{undead}

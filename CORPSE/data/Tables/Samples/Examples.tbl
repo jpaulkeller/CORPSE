@@ -31,6 +31,7 @@ Percent Check    [50%?Heads:Tails]                   {50%?Heads:Tails}          
 Percent Check    [75%Yes]                            {75%Yes}                           percent with all-or-nothing format
 Percent Check    [75%?Yes]                           {75%?Yes}                          percent with all-or-nothing format
 Bell Curve       [[3d6]<13?Normal:Good]              {{3d6}<13?Normal:Good}             embedded roll, using operator 
+Text Comparison  [[Gender]=male?he:she]              {{gender}=male?he:she}             ignores case
 
 / Table look-ups:
 : Column

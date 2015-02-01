@@ -32,26 +32,28 @@ stout
 tall
 trim 
 
-: Simile Small
+: Relative Tiny
 pea
 acorn
+
+: Relative Small
 coin
 walnut
 apple
 sparrow
 
-: Simile Medium
+: Relative Medium
 brick
 plate
 pitcher
 bucket
 
-: Simile Large
+: Relative Large
 dog
 barrel
 donkey
 horse
 ox
 
-: Simile = Simile Small + Simile Medium + Simile Large
+: Relative = Relative Tiny + Relative Small + Relative Medium + Relative Large
  

@@ -31,6 +31,8 @@ trebuchet                   500 gp                   8
 / Size L Max of 6 hits
 / Size H+ Max of 12 hits
 
+===
+
 .Siege Engine                Cost                DMG                      Crit         Range Increment  Minimum Range     Max Range        Crew          Hardness                  HP
 ballista, heavy              1,000 gp            ?                        ?            120 ft.          ?                 1,200 ft.        4             5                         675
 ballista, light              500 gp              ?                        ?            100 ft.          ?                 1,000 ft.        2             5                         25

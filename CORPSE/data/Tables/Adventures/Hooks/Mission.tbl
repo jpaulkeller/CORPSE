@@ -7,12 +7,12 @@ Although they have been allies to us in the past, it appears that {:Complicated}
 An important member of {:Enemies} recently showed up at {:Locations} and wants to defect to {:Organizations} if they can be protected. {:Agents} will be questioning them for intelligence, but we will be sending you to establish whether any of it can be trusted. It's entirely possible that it's a setup, a trap, or a wild goose chase masterminded by {:Enemies}.
 Armed agents of {:Enemies} have {:Agents} surrounded in a safehouse near {:Waterdeep Locations.Ward Locations} in Waterdeep and its up to you to rescue them. Allegedly {:Allies} are sending forces there so hopefully that will distract the assailants but you may be entirely on your own.
 Go undercover as members of {:Complicated} to find out if they are somehow working with {:Enemies} as we suspect. Nobody but {:Agents} will know you're really working for us, so even if you get into a scrape with {:Allies} you're on your own.
-Help our erstwhile allies {:Complicated} establish a new footing in Waterdeep - you can use that old safehouse of {:Organizations} near {:Waterdeep Locations.Ward Locations} as a starting point - you know the one?. It will forge a stronger tie with them, and hopefully we can use them against {:Enemies} in the near future, plus supposedly they know something about {:MacGuffin} in or near {:Delve} (see what you can find out). Meet their agent at {:Waterdeep Locations.Taverns} to discuss the details, but be careful - that area is frequented by members of {:Allies} who might not approve of what you're doing. Kill or otherwise discourage anyone from {:Enemies} that gets in your way.
+Help our erstwhile allies {:Complicated} establish a new footing in Waterdeep - you can use that old safehouse of {:Organizations} near {:Waterdeep Locations.Ward Locations} as a starting point - you know the one?. It will forge a stronger tie with them, and hopefully we can use them against {:Enemies} in the near future, plus supposedly they know something about {:MacGuffin} in or near {:Delve} (see what you can find out). Meet their agent at the {Inn Name} to discuss the details, but be careful - that area is frequented by members of {:Allies} who might not approve of what you're doing. Kill or otherwise discourage anyone from {:Enemies} that gets in your way.
 If {:Enemies} have really infiltrated {:Delve} as has been reported, they must be rooted out and stopped. Assemble a team including a small detachment of {:Organizations} and get down there before more damage is done.
-It has reached our ears that {:Forgotten Realms Icons.MacGuffin} may be hidden in or near {:Delve}. {:Agents} will be organizing an attempt to retrieve it, hopefully before {:Enemies} or {:Complicated} hear anything about it. You will be part of this expedition. If all else fails, call on {:Allies} for aid.
+It has reached our ears that {:MacGuffin} may be hidden in or near {:Delve}. {:Agents} will be organizing an attempt to retrieve it, hopefully before {:Enemies} or {:Complicated} hear anything about it. You will be part of this expedition. If all else fails, call on {:Allies} for aid.
 Members of {:Enemies} have been seen near {:Locations}. Work with {:Allies} to find out who they are, what they're up to, and whether {:Enemies} or {:Complicated} are somehow involved. 
 Ok, remember when we heard {:Allies} managed to steal {:MacGuffin} from {:Enemies}? Well it turns out it was really stolen by {:Complicated} and so now you and a small team of {:Organizations} need to find it, acquire it for us, and bring it to {:Agents} at {:Locations}.
-Organize a raid on {:Delve}! Take a couple fighters from {:Organizations} and maybe a spellcaster from {:Organizations}. This will be a joint operation with {:Allies} so there will be a few of them along as well - meet at {:Waterdeep Locations.Taverns} to get started. Be warned that {:Enemies} have some kind of operation in the area of the delve as well, so you will want to be prepared to deal with them.
+Organize a raid on {:Delve}! Take a couple fighters from {:Organizations} and maybe a spellcaster from {:Organizations}. This will be a joint operation with {:Allies} so there will be a few of them along as well - meet at the {Inn Name} to get started. Be warned that {:Enemies} have some kind of operation in the area of the delve as well, so you will want to be prepared to deal with them.
 Our allies {:Allies} have gotten into a pitched battle with {:Enemies} in or near {:Delve}. We're sending you and a small contingent of {:Organizations} to help our allies, vanquish our enemies, and hopefully steal {:MacGuffin} from them.
 Our safehouse near {:Waterdeep Locations.Ward Locations} in Waterdeep has reported increased activity by {:Complicated}, who are asking a lot of questions about {:MacGuffin}. As you know, its already in our possession - {:Organizations} found it a month ago and we have it at {:Locations}, but if they don't know that, its your job to throw them off the course and make them think that {:Enemies} have it instead.
 Our spellcasters in {:Organizations} need some very rare spell components, and you're in charge of procuring them. Supposedly {:Complicated} know how to get them - there's some kind of source in or near {:Delve} that they're familiar with. But of course, that will mean going up against {:Enemies}, so be careful. Maybe you should pose as members of {:Complicated} just in case.
@@ -38,7 +38,7 @@ We've heard that {:Enemies} are planning some kind of big attack on {:Organizati
 {:Agents} has disappeared during a mission against {:Enemies}. Work with {:Allies} and, if necessary, {:Complicated} to find and recover them. 
 {:Agents} has old enemies among {:Enemies} and {:Enemies}. Now they've disappeared, and the trail has gone cold. Maybe {:Complicated} know something about it? The last place they were seen was at {:Waterdeep Locations.party} at {:Waterdeep Locations.Party Locations}. 
 {:Agents} has received troubling reports of increased attacks on our interests by {:Enemies}, who appear to be cooperating with {:Enemies}. They have also been targeting {:Complicated} so there is the possibility of an alliance against these common enemies. 
-{:Agents} heard from one of our spies in {:Complicated} that {:Forgotten Realms Icons.MacGuffin} is hidden in or near {:Delve}. Take a few members of {:Allies} with you to recover it, but do not attract the attention of {:Enemies}. Bring it to {:Agents} at {:Locations} as soon as possible. 
+{:Agents} heard from one of our spies in {:Complicated} that {:MacGuffin} is hidden in or near {:Delve}. Take a few members of {:Allies} with you to recover it, but do not attract the attention of {:Enemies}. Bring it to {:Agents} at {:Locations} as soon as possible. 
 {:Agents} wants you to assist {:Allies} in a mission to disrupt the local agents of {:Enemies}, disguised as members of {:Complicated}.
 {:Agents} wants you to recover {:MacGuffin} from {:Delve} before {:Complicated} or worse, {:Enemies}, get it. Bring it to {:Locations} and beware of interference from {:Enemies}.
 {:Agents} wants you to recover {:MacGuffin} from {:Enemies} before {:Complicated} get it. Bring it to {:Locations} and beware of interference from {:Enemies}.
@@ -83,24 +83,24 @@ the Tower of Twilight in Neverwinter
 the Tower of the Order in Waterdeep
 
 : Allies
-{:Open Lord.Organizations}
-{:Lady of the North.Organizations}
-{:Moon Priestess.Organizations}
+/ {:Open Lord.Organizations}
+/ {:Lady of the North.Organizations}
+/ {:Moon Priestess.Organizations}
 the vampire Artor Morlin and his servitors
 
 : Complicated
-{:Harpers.Organizations}
-{:Black Network.Organizations}
-{:Shadow Prince.Organizations}
-{:Dwarf King.Organizations}
-{:Paladins Brotherhood.Organizations}
+/ {:Harpers.Organizations}
+/ {:Black Network.Organizations}
+/ {:Shadow Prince.Organizations}
+/ {:Dwarf King.Organizations}
+/ {:Paladins Brotherhood.Organizations}
 the Dragon Mage Maaril of Waterdeep and his minions
 
 : Enemies
-{:Lich Zulkir.Organizations}
-{:Orc Warlord.Organizations}
-{:Daemonfey.Organizations}
-{:Dragon Triumvirate.Organizations}
+/ {:Lich Zulkir.Organizations}
+/ {:Orc Warlord.Organizations}
+/ {:Daemonfey.Organizations}
+/ {:Dragon Triumvirate.Organizations}
 Halaster's Heirs in Undermountain
 Trobriand and his constructs
 the doppelgangers of the Unseen
@@ -117,26 +117,31 @@ who reports to
 who takes orders directly from
 
 : Enemy Agents
-{:Lich Zulkir.Agents}, {:an agent of} the Lich Zulkir
-{:Orc Warlord.Agents}, {:an agent of} the Orc Warlord
-{:Daemonfey.Agents}, {:an agent of} the Daemonfey
-{:Dragon Triumvirate.Agents}, {:an agent of} the Dragon Triumvirate
+/ {:Lich Zulkir.Agents}, {:an agent of} the Lich Zulkir
+/ {:Orc Warlord.Agents}, {:an agent of} the Orc Warlord
+/ {:Daemonfey.Agents}, {:an agent of} the Daemonfey
+/ {:Dragon Triumvirate.Agents}, {:an agent of} the Dragon Triumvirate
+TODO
 
 : Complicated Agents
-{:Harpers.Agents}, {:an agent of} the Harpers
-{:Black Network.Agents}, {:an agent of} the Black Network
-{:Shadow Prince.Agents}, {:an agent of} the Shadow Prince
-{:Dwarf King.Agents}, {:an agent of} the Dwarf King
-{:Paladins Brotherhood.Agents}, {:an agent of} the Paladins Brotherhood
+/ {:Harpers.Agents}, {:an agent of} the Harpers
+/ {:Black Network.Agents}, {:an agent of} the Black Network
+/ {:Shadow Prince.Agents}, {:an agent of} the Shadow Prince
+/ {:Dwarf King.Agents}, {:an agent of} the Dwarf King
+/ {:Paladins Brotherhood.Agents}, {:an agent of} the Paladins Brotherhood
+TODO
 
 : Ally Agents
-{:Open Lord.Organizations}, {:an agent of} the Open Lord
-{:Lady of the North.Organizations}, {:an agent of} the Lady of the North
-{:Moon Priestess.Organizations}, {:an agent of} the Moon Priestess
+/ {:Open Lord.Organizations}, {:an agent of} the Open Lord
+/ {:Lady of the North.Organizations}, {:an agent of} the Lady of the North
+/ {:Moon Priestess.Organizations}, {:an agent of} the Moon Priestess
+TODO
 
 : MacGuffin
-{:Forgotten Realms Icons.MacGuffin}
+/ {:Forgotten Realms Icons.MacGuffin}
+TODO
 
 : Delve
-{:Waterdeep Locations.Dungeon Locations}
-{:Forgotten Realms Icons.Ancient Ruins}
+/ {:Waterdeep Locations.Dungeon Locations}
+/ {:Forgotten Realms Icons.Ancient Ruins}
+TODO

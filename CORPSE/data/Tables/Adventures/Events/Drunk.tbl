@@ -1,9 +1,9 @@
 / Consequences of Drunkenness
 / source or inspiration: Chaotic Shiny's 'Tavern Tables'
- / http://random-generator.com/index.php?title=Drinking_Binge
+/ http://random-generator.com/index.php?title=Drinking_Binge
 
-: Drunk
-You go into the tavern intending to {:reason}. However, you {:overdo} and your overindulgence ends up costing you no less than {1d20x4+5} gold pieces. You wake up {:consequence}.
+: DRUNK
+You go into the tavern intending to {:reason}. However, you {:overdo} and your overindulgence ends up costing you no less than {{{20}x4}+5} gold pieces. You wake up {:consequence}.
 
 : reason
 gather information from the locals
@@ -44,7 +44,7 @@ have a few too many
 ignore the conventional wisdom about mixing one's drinks
 joined a cult that is unlikely to let them leave easily
 joined an army (including possibly a rebel army)
-killed someone ({by accident|in self-defence|the character's fault)
+killed someone ({by accident|in self-defence|the character's fault})
 let slip some information that you should have kept secret
 lose all sense of moderation
 lose an important item (even if you didn't have it with you)

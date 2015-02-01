@@ -2,7 +2,7 @@
 {75%{:description} }{:who}
 
 : Description
-{15%{degree:adjective} }{appearance}{50%{, {15%{degree:adjective} }{feeling}| and {handicap}}}{20% {age}}
+{15%{degree} }{appearance}{50%{, {15%{degree} }{feeling}| and {handicap}}}{20% {age}}
 
 : Who
 5x {man|woman|person}

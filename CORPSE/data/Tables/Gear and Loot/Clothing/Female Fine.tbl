@@ -377,10 +377,10 @@ sash
 1,sapper’s [uni] [Utility.LeatherHide] boots, a thick [Utility.LeatherHide] apron, [MaterialsCommon] breeches lined with [MaterialsFancy], [aaj]
 
 ;Cloth_Color
-4,[Color.dark]
-4,[Color.dull]
-3,[brightadj] [Color.bright]
-2,[Color.light]
+4,[Color:dark]
+4,[Color:dull]
+3,[brightadj] [Color:bright]
+2,[Color:light]
 
 ;brightadj
 3,

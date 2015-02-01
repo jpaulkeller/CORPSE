@@ -11,7 +11,7 @@ powdered {metal}
 {fungus}{20% {spores|extract}}{10% gathered {:how}{10%, {:how}}}
 {herb} {leaf|root|seed|sprig}{10% gathered {:how}{10%, {:how}}}
 {20%{concentrated|distilled} }{liquid}
-{menu:drink}
+{drink}
 {mineral}
 {monster} {organ}{10% gathered {:how}{10%, {:how}}}
 {organic}

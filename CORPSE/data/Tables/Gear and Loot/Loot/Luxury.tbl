@@ -3,7 +3,7 @@
 
 : Item
 {art}
-{made of:hard} {25%{:coating} }{:object}{25% {:decorated}}
+{made of:hard} {25%{:coating} }{:object}{25% {art:decorated}}
 {:clothing}
 {:jewelery}
 {:misc}
@@ -19,7 +19,7 @@ plain {metal:precious} {jewelery}
 {metal:precious} {jewelery}{25% {art:decorated}}
 
 : Misc
-fine wine ({d10}00 gp)
+fine wine ({10}00 gp)
 perfume
 {quality:good} {musical instrument}{25% {art:decorated}}
 

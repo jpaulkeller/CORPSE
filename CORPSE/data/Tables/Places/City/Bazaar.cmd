@@ -8,7 +8,7 @@
 <h2>{MARKET}</h2>
 
 <br>Location: {direction} the {city site}
-<br>Traffic: {degree:adjective} {sparse|heavy}
+<br>Traffic: {degree} {sparse|heavy}
 <br>{Quantity} guards; {quantity:few} pick-pockets; {quantity} beggars 
 
 <hr>

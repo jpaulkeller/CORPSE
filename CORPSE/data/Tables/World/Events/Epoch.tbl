@@ -1,4 +1,4 @@
-the {Ordinal} Age
+the {Number:Ordinal} Age
 the {Metal} Age
 the Age of the {{Monster}+}
 {before|during} the {Cataclysm}

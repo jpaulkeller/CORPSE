@@ -3,7 +3,7 @@
 {:noble}
 
 : Noble
-(50%{:locale} }{:title}
+{50%{:locale} }{:title}
 
 : Locale
 high

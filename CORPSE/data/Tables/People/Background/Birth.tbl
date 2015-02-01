@@ -1,0 +1,71 @@
+/ http://random-generator.com/index.php?title=Fantasy_Birth
+
+: Birth
+Location: {:Place}{20% Unusual occurrence: {:Occurrence}}
+
+: Place
+6x {:common}
+3x {:uncommon}
+{:rare}
+
+: Common
+the family home
+a hospital/healer's hall
+
+: Uncommon
+a barn
+a carriage or wagon
+a cave
+a foreign land
+a forest
+a friend's home
+a voyaging ship
+the middle of a field
+
+: Rare
+alley
+bar or tavern
+battlefield
+brothel
+local palace
+monster's lair
+prison cell
+sewer
+ship at sea
+temple of {Divine Name}
+thieves' den
+wizard's lab
+
+: Occurrence
+/ had psychic powers: {: Fantasy Curses and Blessings.PSYCHIC_POWERS}
+/ had {: Fantasy Curses and Blessings.UNUSUAL_PHYSICAL_TRAITS}
+/ had {: Fantasy Traits.BIRTHMARKS} on {: Fantasy Traits.BODY_LOCATIONS}
+/ mother died. {: Fantasy Legacies.DEATH_OF_A_LOVED_ONE}
+/ there was a momentous event: {: Fantasy Traits.GOOD_BAD_EVENT}
+/ was blessed ({: Fantasy Curses and Blessings.BLESSINGS})
+/ was cursed ({: Fantasy Curses and Blessings.CURSES})
+/ was visited with the family curse ({: Fantasy Curses and Blessings.CURSES})
+/ was given {: Fantasy Gifts.GIFTS_AND_LEGACIES} by a mysterious stranger
+a goose laid a golden egg
+a person of note died
+death was prophesied
+father believed was not his child
+glassware shattered
+gold in house turned to lead
+had a fraternal twin
+had an identical twin
+it was exactly midnight
+it was exactly noon
+metal in house became precious
+milk soured
+there was an eclipse
+there was poisonous snake infestation
+there was unseasonal weather
+there were unusually potent storms
+was left to die
+was lost or abandoned
+was one of identical triplets
+was the offspring of demon
+was the offspring of god
+water froze/boiled
+wolves and dogs howled

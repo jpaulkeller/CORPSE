@@ -2,7 +2,7 @@
 
 A battle between a giant squid an a sperm whale seen in the distance
 A black cloud roughly the size of your boat is fixed above you, emptying sheets of rain in a permanent squall
-A {barrel|box|chest|crate|trunk} floats past. If investigated, it is found to contain {75%?{contents:item}:nothing}
+A {barrel|box|chest|crate|trunk} floats past. If investigated, it is found to contain {75%?{contents.item}:nothing}
 A female crewmember finds she is pregnant
 A fishing net catches something valuable ({luxury})
 A flag pole protrudes from the water ahead of the ship - the top mast of another ship, submerged but upright, having achieved neutral buoyancy at this unlikely depth

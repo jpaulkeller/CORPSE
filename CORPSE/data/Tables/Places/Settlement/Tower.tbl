@@ -1,0 +1,108 @@
+/ http://random-generator.com/index.php?title=Castle
+
+: Structure
+{building material:tower} {:type} standing {1d4}00' tall, {:location}. {:special}
+{building material:tower} {:type} standing {2d6}0' tall, {:location}. {:special}
+
+: Location
+at the end of an open steppe
+atop a key peak in the area
+atop a lonely butte
+atop a strategic ridge
+atop a wild crag
+high above a river vale
+high above a thickly-wooded valley
+high above an oft-contested plain
+overlooking a {landmark}
+overlooking a historic battlefield
+overlooking a well-traveled trade route
+overlooking an ancient crossroads
+overlooking what were once contested territories
+
+: Type
+archer’s tower
+lookout tower
+round tower
+scout tower
+signal tower
+square tower
+tower
+watchtower
+{:wizard} {:wizard tower}
+
+: Wizard
+arcane
+dark
+{50%?un}holy
+{pseudo class:mage}'s
+{pseudo class:sage}'s
+
+: Wizard Tower
+minaret
+needle
+obelisk
+spike
+spire
+tower
+
+: Special
+Recent fighting has made the tower’s central stair slippery with blood and gore.
+The original tower, long burnt to the ground, was constructed by decree of {Soldier Name} during the {Battle Name}.
+The tower has numerous floors dotted with well-placed archer positions.
+The tower has oil cauldrons and baskets of metal balls to assist in its defense.
+The tower has {:signal}.
+The tower is armed with an arcane {castle:arcane weapon}, and could be a formidable weapon to one skilled in magic.
+The tower is crowned with a functional {castle:catapult}.
+The tower is crowned with a long-broken {castle:catapult}.
+The tower is partially burned from a failed assault.
+The tower is {:supplies}.
+The tower {:portal}.
+The tower {:scrying stone}.
+The tower’s design makes it nearly indefensible: its fields of fire are too limited to prevent an assault.
+The winding central stair is missing many steps, making the trip to the high watch a treacherous affair.
+This tower served as a key early warning for {Soldier Name}’s forces during the the {Battle Name}.
+
+: Scrying Stone
+contains the broken shards of an old scrying stone
+has a strange, arcane scrying stone where a signal device would be
+has an arcane basin that seems to have once held a magical scrying stone
+is rumored to hold an ancient scrying stone
+once was the home of a powerful magic scrying stone
+
+: Portal
+has a non-functioning rune circle that may once have opened a magical portal
+has a strange, glowing portal crackling with arcane energy at its peak
+is rumored to house a magical portal to a distant land
+once housed an arcane portal to some far-away sister tower
+
+: Supplies
+{75%{:stock level} }stocked with {:food stocks}
+still storing {:weapons}
+stocked with tacks, harnesses, and the like, to refit riders and couriers
+an old courier-station and still has a functional stable
+
+: Stock Level
+generously 
+scantily
+still
+well
+
+: Food Stocks
+{meat} and {drink}
+/ {:Foodstuffs.Chunks} and {:Foodstuffs.Bread}
+/ {:Foodstuffs.DryGood} and {drink}
+/ {:Foodstuffs.DryGood}, {:Foodstuffs.SoftFood} and {drink}
+/ {:Foodstuffs.Chunks}, {:Foodstuffs.SoftFood} and {drink}
+
+: Weapons
+shields and {{weapon:melee}+}, enough for a small garrison
+bows and arrows, enough for a small contingent of archers
+crossbows and bolts, enough to defend against a short siege
+
+: Signal
+an arcane {color:light} signal fire actively burning
+a fresh pile of wood, doused in flammable liquid, recently prepared as a warning signal
+a large signal fire actively burning
+a large signal mirror on a turning base
+an old and rotting pile of wood, prepared as a warning signal during some long-ago conflict
+no way of signaling other towers

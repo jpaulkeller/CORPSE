@@ -117,7 +117,7 @@ service              transportation
 service              {hireling type}
 service              {profession}
 service              {room and board}
-service              {~{services}}
+service              {~{service}}
 
 : Transportation
 equipment            {~{transport}}

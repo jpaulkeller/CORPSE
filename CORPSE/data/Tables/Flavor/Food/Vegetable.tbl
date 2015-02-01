@@ -1,3 +1,6 @@
+: Vegetable
+6x {:cookable}
+{:raw}
 
 : Cookable
 acorn squash
@@ -40,10 +43,10 @@ plantain
 potato
 pumpkin
 radish
-red onions
+red onion
 red pepper
-scallions
-shallots
+scallion
+shallot
 spaghetti squash
 spinach
 squash

@@ -2,6 +2,8 @@
 / Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
 /          Values from DRAGON Magazine #83, page 10.
 
+: Semi-precious = .*semi-precious.* 
+
 .Gem             Lbs/CFt  Notes                      Value
 
 agate              160    semi-precious stone

@@ -1,54 +1,153 @@
-: Echelon
-An element
-A detachment
-A patrol
-A section
-A squad
-A team
-A troop
-A warband
-Assaulters
-Defenders
+: Unit
+{:Arcane}
+{:Elite}
+{:Foot}
+{:Mercenary}
+{:Ranged}
+
+: Arcane
+{:Number} {10%{:Special} }{:Arcane Type} {:Echelon}
+
+: Elite
+{:Number} {10%{:Special} }{:Elite Type} {:Echelon}
+
+: Foot
+{:Number} {10%{:Special} }{:Foot Type} {:Echelon}
+
+: Ranged
+{:Number} {10%{:Special} }{:Ranged Type} {:Echelon}
+
+: Mercenary
+{Group Name} mercenaries
 
 : Number
 {75%{2-19}}{1st|2nd|3rd}
 {{11-13}|{19}{0|{4-9}}}th
 
-: Special Duty
-{10% covertly }{escorting|accompanied by} {:Special}
-
 : Special
-Abecedart
-Adventurer
+emperor’s
+free
+immortal
+imperial
+king’s
+provincial
+royal
+
+: Echelon
+assaulters
+defenders
+detachment
+element
+militia
+patrol
+section
+squad
+team
+troop
+warband
+
+: Foot Type
+defenders
+engineer
+foot
+footmen
+ground
+guard
+halberdier
+highland
+pikemen
+poleax
+siege axe
+siege defense
+siege warfare
+spear
+tower guard
+
+: Ranged Type
+arbalest
+archers
+artillery
+axe thrower
+ballistae
+bombardier
+bowmen
+catapult
+crossbowmen
+engineer
+grenadier
+heavy crossbow
+light crossbow
+longbowmen
+mounted archer
+mounted crossbow
+scout
+yeomen
+
+: Arcane Type
+aeromancy
+alchemy
+arcanist’s
+battlemage
+geomancy
+hydromancy
+illusion
+pyromancy
+sorcery
+wizardry
+
+: Elite Type
+aerial cavalry
+arcane warfare
+assault
+cavalry
+dragoon
+highlander
+horse
+horsemen
+hussars
+infantry
+lancers
+mounted
+spellsword
+{mount:special}-mounted cavalry
+{terrain} assault
+{terrain} warfare
+
+: Special Duty
+{10% covertly }{escorting|accompanied by} {:Escort}
+
+: Escort
+abecedart
+adventurer
 ambassador
-Artificer
-Artillerist
-Bannerman
-Captain
-Chronicler
-Craftsman
-Engineer
-Foreman
-Gatekeeper
-Graybeard
-High Captain
-Horncaller
-Khirurgeon
-Longbeard
-Mask bearer
-Master engraver
-Master of Arches
-Master of Doors
-Master of Forges
-Master of Secrets
-Noble axe bearer
-Quartermaster
-Rune caster
-Rune priest
-Runesmith
-Seneschal
-Trader
-Treasurer
-Tyro artificer
-Warden
+artificer
+artillerist
+bannerman
+captain
+chronicler
+craftsman
+engineer
+foreman
+gatekeeper
+graybeard
+high captain
+horncaller
+khirurgeon
+longbeard
+mask bearer
+master engraver
+master of arches
+master of doors
+master of forges
+master of secrets
+noble axe bearer
+quartermaster
+rune caster
+rune priest
+runesmith
+seneschal
+trader
+treasurer
+tyro artificer
+warden
 {Title Feudal:Noble}

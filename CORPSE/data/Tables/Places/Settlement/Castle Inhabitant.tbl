@@ -57,7 +57,7 @@
 3x {120,150} dervishes led by fanatical lawful Cleric10
 
 : banditleader
-4x Thief{:thieflevel}
+4x Thief{3,8}
 3x Fighter{3,8}
 2x Cleric{3,8}
 1x Magic-User{3,8}
