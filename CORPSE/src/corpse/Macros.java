@@ -233,6 +233,8 @@ public final class Macros
             resolvedToken = text + "es";
          else if (upper.endsWith("Y") && !upper.endsWith("EY"))
             resolvedToken = text.substring(0, text.length() - 1) + "ies"; // strip Y, add IES
+         else if (upper.endsWith("MAN"))
+            resolvedToken = text.substring(0, text.length() - 3) + "men"; // strip MAN, add MEN
          else
             resolvedToken = text + "s";
       }
@@ -273,7 +275,7 @@ public final class Macros
             System.out.println("  resolvePercentCond: [" + token + "] = [" + resolved + "]");
       }
       
-      m = Constants.CONDITION.matcher(resolved);
+      m = Constants.NUMERIC_CONDITION.matcher(resolved);
       if (m.matches())
       {
          int roll = Integer.parseInt(m.group(1));
@@ -294,7 +296,7 @@ public final class Macros
 
          resolved = m.replaceFirst(Matcher.quoteReplacement(satisfied ? ifVal : elseVal));
          if (DEBUG && !token.equals(resolved))
-            System.out.println("  resolveConditions: [" + token + "] = [" + resolved + "]");
+            System.out.println("  resolveNumericCondition: [" + token + "] = [" + resolved + "]");
       }
       
       m = Constants.PERCENT_CHANCE.matcher(resolved);
@@ -307,6 +309,22 @@ public final class Macros
          resolved = m.replaceFirst(Matcher.quoteReplacement(satisfied ? val : ""));
          if (DEBUG && !token.equals(resolved))
             System.out.println("  resolvePercent: [" + token + "] = [" + resolved + "]");
+      }
+      
+      m = Constants.CONDITION.matcher(resolved);
+      if (m.matches())
+      {
+         String left = m.group(1);
+         String right = m.group(2);
+         String ifVal = m.group(3);
+         String elseVal = m.group(4);
+         if (elseVal == null)
+            elseVal = "";
+
+         boolean satisfied = left.equalsIgnoreCase(right);
+         resolved = m.replaceFirst(Matcher.quoteReplacement(satisfied ? ifVal : elseVal));
+         if (DEBUG && !token.equals(resolved))
+            System.out.println("  resolveCondition: [" + token + "] = [" + resolved + "]");
       }
       
       return resolved;

@@ -33,7 +33,7 @@ public final class Constants
 
    static final String NAME = "([A-Z0-9](?: ?[-_A-Z0-9]+){0,10})"; // use {0,10} to avoid infinite loop
    static final String COLUMN_NAME = "([-_A-Z0-9](?: ?[-_A-Z0-9/()]+){0,10})";
-   private static final String TABLE_NAME = NAME;
+   private static final String TABLE_NAME = "([A-Z](?: ?[-_A-Z0-9]+){0,10})"; // use {0,10} to avoid infinite loop
 
    static final Pattern NAME_PATTERN = Pattern.compile(NAME, Pattern.CASE_INSENSITIVE);
    static final Pattern SIMPLE_TABLE = Pattern.compile(TABLE_NAME, Pattern.CASE_INSENSITIVE);
@@ -54,7 +54,8 @@ public final class Constants
    // the outer expression, and so the first group of the pattern includes just the number. The first element
    // may be any numeric expression supported by Quantity.java.
    // BELL-CURVE CONDITION (embedded roll) : {{3d6}<13?Normal:Good}
-   static final Pattern CONDITION = Pattern.compile("\\{(\\d+)([=<>])(\\d+)[?]([^:]+)(?::([^:{}]+))?\\}");
+   static final Pattern NUMERIC_CONDITION = Pattern.compile("\\{(\\d+)([=<>])(\\d+)[?]([^:]+)(?::([^:{}]+))?\\}");
+   static final Pattern CONDITION = Pattern.compile("\\{([^=]+)=([^?]+)[?]([^:]+)(?::([^:{}]+))?\\}");
 
    // {one|two|three|four} -- chooses one option, with equal chance for each (options may be empty)
    private static final String ONE_OF_CHAR = "[" + ONE_OF_CHAR_1 + ONE_OF_CHAR_2 + "]"; 
@@ -62,9 +63,10 @@ public final class Constants
    // TODO: weighted options: {#:opt1|#:opt2|...}
    // TODO: {common>uncommon>scarce>rare} weighted 4/3/2/1?
 
-   // {prompt?default} where the default value is optional, and the prompt must
-   // start with a non-numeric (to avoid confusion with the CONDITIONAL token).
-   static final Pattern QUERY = Pattern.compile("\\{([^{}?0-9][^{}?]+?)[?]([^{}]+)?\\}");
+   // {prompt?default} where the default value is optional, and the prompt must not
+   // contain an operator (to avoid confusion with the CONDITIONAL token).
+   // static final Pattern QUERY = Pattern.compile("\\{([^{}?0-9][^{}?]+?)[?]([^{}]+)?\\}");
+   static final Pattern QUERY = Pattern.compile("\\{([^=<>%?]+)[?]([^{}]+)?\\}");
 
    // {Table:Subset.Column#Filter#} 
    // {Table+#Filter#} means don't use the default subset or column; return the entire line 

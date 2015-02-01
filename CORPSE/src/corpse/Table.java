@@ -145,8 +145,7 @@ public class Table extends ArrayList<String>
       Subset subset = null;
       if (subsetName != null)
       {
-         String key = subsetName.toUpperCase();
-         subset = subsets.get(key);
+         subset = subsets.get(subsetName.toUpperCase());
          if (subset == null && !subsetName.equalsIgnoreCase(tableName))
             System.err.println("Missing " + file + " subset: [" + subsetName + "]");
       }
@@ -163,13 +162,15 @@ public class Table extends ArrayList<String>
       Column column = null;
       if (columnName != null)
       {
-         String key = columnName.toUpperCase();
-         column = columns.get(key);
+         column = columns.get(columnName.toUpperCase());
          if (column == null && !columnName.equalsIgnoreCase("ALL") && 
              !columnName.equalsIgnoreCase(tableName) && 
              !columnName.equals("_")) // hack for composite columns 
             // && !Column.isComposite(this, columnName)) // TODO infinite loop
-            System.err.println("Missing " + file + " column: [" + key + "]\n" + Utils.getStack("^corpse[.].*"));
+         {
+            System.err.println("Missing " + file + " column: [" + columnName + "]");
+            // System.err.println(Utils.getStack("^corpse[.].*"));
+         }
       }
       return column;
    }

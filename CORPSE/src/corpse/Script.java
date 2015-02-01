@@ -185,10 +185,12 @@ public final class Script
          return;
       if (Constants.COMMENT_LINE.matcher(line).find())
          return;
+      System.out.println("Line: " + line); //TODO
 
       String resolved = resolve(line);
       if (resolved == null) // user cancelled
          return;
+      System.out.println("R: " + resolved); //TODO
 
       Matcher m;
       if ((m = Constants.INCLUDE_LINE.matcher(resolved)).matches())
