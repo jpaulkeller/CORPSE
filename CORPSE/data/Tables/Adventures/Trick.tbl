@@ -64,10 +64,10 @@
 2x {: magic} with {: subfeature}:  and with {: subfeature}
 20x {: platform} with {: subfeature}
 4x {: platform} with {: subfeature}:  and with {: subfeature}
-20x {{ucfirst:{: food}}} which, if {: foodaction},{: consequences}
-4x {{ucfirst:{: food}}} which, if {: foodaction},{: consequences}:  and which, if {: foodaction},{: consequences}
-20x {{ucfirst:{: drink}}}, which, if {: 22action},{: consequences}
-4x {{ucfirst:{: drink}}} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
+20x {:food} which, if {: foodaction},{: consequences}
+4x {:food} which, if {: foodaction},{: consequences}:  and which, if {: foodaction},{: consequences}
+20x {:drink}, which, if {: 22action},{: consequences}
+4x {:drink} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
 10x {: fireplace} with fire which, if {: 42action},{: consequences}
 2x {: fireplace} with fire which, if {: 42action},{: consequences}:  and which if {: 42action},{: consequences}
 10x {: fireplace} with {: subfeature}
@@ -132,7 +132,7 @@
 10x {: workspace} with {: subfeature}
 2x {: workspace} with {: subfeature}:  and with {: subfeature}
 30x {: unique}
-20x {{ucfirst: {: subfeature}}}
+20x {: subfeature}
 
 : walls
 2x Stone wall
@@ -160,7 +160,7 @@ Sewer
 
 : liquid
 10x water
-{: Substances.Liquid}
+{liquid}
 blood
 salt water
 slime
@@ -276,8 +276,8 @@ Totem
 Torches
 Lantern
 Candles
-{: Color.brightCap} magical light
-{: Color.brightCap} glowing fungi
+{Color:light} magical light
+{Color:light} glowing fungi
 Sunlight
 Chandelier
 Candelabrum
@@ -303,8 +303,8 @@ Platform
 Dais
 
 : stores
-{{ucfirst:{: food}}}
-{{ucfirst:drink}}
+{:food}
+{:drink}
 Equipment
 Raw materials
 
@@ -326,7 +326,7 @@ Inscription
 Tablet
 Plaque
 Written talisman
-The Tarot card {: Tarot Card.drawMajor}
+The Tarot card {Tarot}
 : fireplace
 3x Fireplace
 Oven
@@ -349,21 +349,23 @@ Manacles
 Stocks
 
 : food
-block of {: Foodstuffs.DryGood}
-2x {: Foodstuffs.SoftFood}
-4x chunks of {: Foodstuffs.Chunks}
-4x {: Foodstuffs.Seasoning}
-3x {: Foodstuffs.Meals}
+{provisions}
+/ block of {: Foodstuffs.DryGood}
+/ 2x {: Foodstuffs.SoftFood}
+/ 4x chunks of {: Foodstuffs.Chunks}
+/ 4x {: Foodstuffs.Seasoning}
+/ 3x {: Foodstuffs.Meals}
 
 : drink
-4x {: Foodstuffs.LiquidContainer} of {: Foodstuffs.SlowLiquid}
-5x {: Foodstuffs.LiquidContainer} of {: Foodstuffs.Liquid}
+{drink}
+/ 4x {: Foodstuffs.LiquidContainer} of {: Foodstuffs.SlowLiquid}
+/ 5x {: Foodstuffs.LiquidContainer} of {: Foodstuffs.Liquid}
 
 : weaving
 2x Carpet
 2x Tapestry
 2x Curtain
-2x A piece of {: Substances.Textiles}
+2x A piece of {fabric}
 Screen
 Net
 Blanket
@@ -520,7 +522,7 @@ Toy, which if {: toyaction},{: consequences}
 Doll, which if {: toyaction},{: consequences}
 Puppet, which if {: toyaction},{: consequences}
 Carousel, which if {: 46action},{: consequences}
-Pair of six-sided dice on which, if {: Dice.2d6} is rolled, {: consequences} and, if {: Dice.2d6} is rolled, {: consequences}.
+Pair of six-sided dice on which, if {2d6} is rolled, {: consequences} and, if {2d6} is rolled, {: consequences}.
 Mask, which if {: 35action},{: consequences}
 Mask, which if {: 64action},{: consequences}
 Saddle which, if {: 45action},{: consequences}
@@ -541,9 +543,9 @@ Grindstone which, if {: grindstoneaction},{: consequences}
 2x surface, which if {: 13action},{: consequences}:  and which if {: 13action},{: consequences}
 20x piece of wood, which if {: 14action},{: consequences}
 4x piece of wood, which if {: 14action},{: consequences}:  and which if {: 14action},{: consequences}
-5x {: Substances.Textiles} which, if {: 15action},{: consequences}
-3x {: Substances.Textiles} which, if {: 15action},{: consequences}:  and which, if {: 15action},{: consequences}
-5x {: Substances.Textiles} padding, which if {: 15action},{: consequences}
+5x {fabric} which, if {: 15action},{: consequences}
+3x {fabric} which, if {: 15action},{: consequences}:  and which, if {: 15action},{: consequences}
+5x {fabric} padding, which if {: 15action},{: consequences}
 10x brick which, if {: 16action},{: consequences}
 2x brick which, if {: 16action},{: consequences}:  and which, if {: 16action},{: consequences}
 10x block which, if {: 16action},{: consequences}
@@ -638,10 +640,10 @@ monster
 vermin
 
 : substance
-4x {: Substances.SoftSolid}
-4x chunks of {: Substances.Chunks}
-4x {: Substances.SlowLiquid}
-4x {: Substances.Powder}
+/ 4x {: Substances.SoftSolid}
+4x chunks of {made of:hard}
+/ 4x {: Substances.SlowLiquid}
+/ 4x {: Substances.Powder}
 4x dirt
 4x dust
 2x cobwebs

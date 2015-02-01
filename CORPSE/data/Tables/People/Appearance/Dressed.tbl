@@ -13,4 +13,4 @@ well-dressed
 wearing a {color:basic} {~{clothing}}
 wearing a {odd|military|religious} symbol
 wearing a {color:dark} cloak with a {color:light} {charge}
-disguised as a {appearance} {npc}
+disguised as a {appearance} {race} {profession}

@@ -5,6 +5,7 @@
 / NPC.Cmd: creates a minimally fleshed-out non-player character,
 /          based on the generated or DM-entered name.
 
+/ No longer true:
 / This file is designed to be used when multiple NPCs are generated.
 / It provides only the most basic of information.
 / For more detailed NPCs, use the NPC_Full (or NPC_Flex) scripts.
@@ -17,29 +18,88 @@
 # {NPC={NPC Name?{Name}}}
 <!--
 {W={10}} / wealth
+{G:=Gender}
+{C:=color hex}
 -->
 
 <!-- Show the name, generate and show a race and previous profession. -->
-<p><b>{NPC}</b>, {race} {profession}
+<p><b>{NPC}</b>
 
 <ul>
-  <li>{Gender.Pronoun} is {degree} {trait} and {frequency} {disposition}.
-  <li>Currently feeling {degree} {mood}.
-  <li>Appearance: {Appearance}
-  {50%<li>Handicap: {handicap}}
-  {50%<li>Quirk: {quirk}}
-  {50%<li>Motivation: {motivation}}
-  {50%<li>Phobia: {phobia!}}
+  <li>Stats:
+  <ul>
+    <li>Gender: {G.gender}
+    <li>Race: {race}
+    <li>Age: {age}
+    <li>Str: {3d6} Dex: {3d6} Agi: {3d6} Con: {3d6} Int: {3d6} Wis: {3d6} Dis: {3d6} Cha: {3d6}
+  </ul>
  
-  <!-- Generate and show some pocket stuff (with 2% chance of gem) -->
-  <li>Currency: {{5*{W}}%?{10} gp; }{20*{W}} sp; {50} cp{{W}%?; {gem}}
-  <li>Wearing: {clothing}{{{W}*8}%?; {jewelery}}
-  <li>Carrying: {~{tiny item}}; {~{tiny item{!different}}}; {~{tiny item{!different}}}
+  <li>Appearance:
+  <ul>
+    <li>Overall Impression: {appearance}
+    <li>Height: {short|average|tall}
+    <li>Build: {build}
+    <li>Hair: {hair}{{G.gender}=male?{50%He {hair:facial}}}
+    <li>Complexion: {skin} 
+    <li>Eyes: {eyes}
+!loop {2d2-2}
+    <li>Marking: {markings}
+!end
+  </ul>
  
-  <!-- Generate and show some equipment. -->
-  <li>Equipped with: {~{equipment}}; {~{equipment}}; {~{equipment}}
+  <li>Dress:
+  <ul>
+    <li>Dressed: {dressed}
+    <li>Wearing: {dressed:wearing}
+    <li>Wearing: <font color="{C.font}" bgcolor="{C.hex}">{C.name}-colored</font> {75%{condition:clothing} }{~{clothing}}
+    <li>Accessories: {{{W}*8}%{jewelery}}
+  </ul>
  
-  <li>Str: {3d6} Dex: {3d6} Agi: {3d6} Con: {3d6} Int: {3d6} Wis: {3d6} Dis: {3d6} Cha: {3d6}
+  <li>Background:
+  <ul>
+    <li>Profession: {Profession}
+    <li>Family -- Father: {Profession}  Mother: {Profession}
+    {25%<li>Birth: {birth}}
+    {10%<li>Bloodline: {bloodline}}
+    {25%<li>Legacy: {legacy}}
+    {50%<li>Motivation: {motivation}}
+    {50%<li>Wealth: {wealth}}
+  </ul>
+ 
+  <li>Quirks:
+  <ul>
+    {50%<li>Mannerism: {mannerism}}
+    {50%<li>Handicap: {handicap}}
+    {50%<li>Habit: {habit}}
+    {50%<li>Quirk: {quirk}}
+    {50%<li>Belief: {belief}}
+    {50%<li>Dark Secret: {dark secret}}
+    {50%<li>Advantage: {advantage}}
+    {50%<li>Disadvantage: {disadvantage}}
+    {50%<li>Injury: {injury}}
+    {50%<li>Neurosis: {neurosis}}
+    {20%<li>Phobia: {phobia!}}
+  </ul>
+ 
+  <li>Personality:
+  <ul>
+    <li>Personality: {personality}
+    <li>Trait: {50%{degree} }{trait}
+    <li>Disposition: {50%{frequency} }{disposition}
+    <li>Feeling (generally): {50%{degree} }{feeling}
+    <li>Emotion: {50%{degree} }{emotion}
+    <li>Mood (currently feeling): {50%{degree} }{mood}
+    <li>Attitude (inclination): {50%{degree} }{attitude}
+    <li>Reaction (to PCs): {50%{degree} }{reaction}
+    {50%<li>Vice: {vice}}
+  </ul>
+ 
+  <li>Equipment and Possessions:
+  <ul>
+    <li>Currency: {{5*{W}}%?{10} gp; }{20*{W}} sp; {50} cp{{W}%?; {gem}}
+    <li>Carrying: {~{tiny item}}; {~{tiny item{!different}}}; {~{tiny item{!different}}}
+    <li>Equipped with: {~{equipment}}; {~{equipment}}; {~{equipment}}
+  </ul>
 </ul>
 
 </body>

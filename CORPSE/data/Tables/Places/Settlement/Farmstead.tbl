@@ -1,0 +1,163 @@
+/ http://random-generator.com/index.php?title=FantasyFarmstead
+
+: Farmstead
+A {:type} where they {:product}. {:PLUS} there is {:some outbuildings}.
+
+: Plus
+Besides a {:farmhouse type},
+In addition to a {:farmhouse type},
+It consists of a {:farmhouse type}, and
+Near a {:farmhouse type}
+
+: Some Outbuildings
+{:outbuildings}
+{:outbuildings} and {:other buildings}
+{:outbuildings} and {:outbuildings}
+{:outbuildings}, {:outbuildings} and {:other buildings}
+{:outbuildings}, {:outbuildings}, and {:outbuildings}
+{:outbuildings}, {:outbuildings}, {:outbuildings} and {:other buildings}
+
+: Type
+2x farm
+2x farmstead
+2x hamlet
+2x plantation
+borough
+family farm
+farm house
+homestead
+large estate
+manor house
+orchard
+ranch
+village
+vineyard
+
+: Product
+grow {:agriculture product}
+grow {:agriculture product} and {:agriculture product}
+grow {:agriculture product} and raise {:animal product}
+raise {:animal product}
+raise {:animal product} and {:animal product}
+
+: Agriculture Product
+23x {:grain}
+2x cotton
+2x squash
+3x assorted vegetables
+3x potatoes
+3x tobacco
+3x {:herbs}
+6x {vegetable}
+7x {:fruits}
+grapes
+hemp
+hops
+
+: Fruits
+2x several varieties of fruit, especially {{fruit}+} and {{fruit{!different}}+}
+{{fruit}+}
+
+: Herbs
+several types of herbs such as {:herb} and {:herb}
+{:herb}
+
+: Herb
+{herb}
+{spice}
+
+: grain
+3x rye
+3x winter wheat
+6x barley
+6x oats
+6x several varieties of wheat
+amaranth
+buckwheat
+long grain rice
+millet
+quinoa
+several types of rice
+short grain rice
+sorghum
+spelt wheat
+triticale
+wild rice
+
+: animal product
+2x ducks
+2x honeybees
+2x pigs
+2x turkeys
+4x beef cows
+4x chickens
+4x dairy cows
+4x geese
+4x goats
+4x sheep
+hogs
+horses
+swine
+{:unusual animal product}
+{domesticated animal}
+{fur and pelt:common.animal} for fur
+
+: Unusual Animal Product
+birds as tall as a man
+giant bees for honey
+minks and ermines for fur
+purebred dogs
+rothe in caves
+salmon in ponds
+songbirds
+trout in ponds
+{fur and pelt:exotic.animal} for fur
+
+: Farmhouse Type
+collection of peasant houses
+large manor house surrounded by a moat
+longhouse that houses several families
+small stone farmhouse
+two-story manor house
+wattle-and-daub farmhouse with thatched roof
+
+: Outbuildings
+3x kitchen
+3x outhouse
+3x {:other buildings}
+barn
+cheesemaking cottage
+curing shed
+granary
+gristmill
+livestock enclosure
+mill
+potter’s kiln
+root cellar
+servant’s house
+small chicken coop
+small kennel
+smokehouse
+stable
+storage shed
+tool shed
+weaver’s loom
+woodshed
+
+: Other Buildings
+2x chapel for worshipping mainly {Divine Name}
+2x guesthouse
+2x smithy
+ancestral burial mound
+animal fighting pit
+cemetery
+druidic stone circle
+extensive vegetable garden
+fishing pond
+large refuse pile
+large rune-carved menhir
+shrine to {Divine Name}
+statue of {33%{Title} }{Name}{40% the {Evocative Title}}
+tinker’s cottage
+well-manicured ornamental garden
+well-stocked herb garden

@@ -62,7 +62,7 @@ save or die{25% and {:initial-effect-chaser}}
 
 : initial-effect-chaser
 age {10,100} years
-alignment changes to {:alignment}
+alignment changes to {alignment}
 become unable to cast any spells{80% {over|under} {2nd|3rd|4th} level}
 become {:status-effect}{50% for {duration}}
 lose {:a-level}
@@ -90,8 +90,8 @@ hallucinate
 
 : malevolent-spirit
 a malevolent spirit
-3x {:Quick Populations.anygroup}
-3x {:Quick Horrors.main}
+/ 3x {:Quick Populations.anygroup}
+/ 3x {:Quick Horrors.main}
 
 : ongoing-effect
 take {5,20} {:damage} every {:period}
@@ -105,7 +105,7 @@ lose {:a-level} every {:period}
 
 : body horror
 your {body part} turn to {made of}
-your {body part} becomes a {body part}
+your {body part} becomes a {body part{!different}}
 
 : ongoing-age-effect
 age at an unnatural rate (one year every {:period})

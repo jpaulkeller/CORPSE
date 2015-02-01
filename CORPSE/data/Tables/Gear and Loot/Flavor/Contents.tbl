@@ -13,8 +13,8 @@ Equipment: {~{equipment}}
 Equipment: {~{thief gear}}
 Fabric: {~{fabric}}
 Food: {crop}
-Food: {nuts}
-Food: {salad ingredient}
+Food: {{nut}+}
+Food: {salad:ingredient}
 Food: {{berry}+}
 Food: {{fruit}+}
 Food: {{vegetable}+}

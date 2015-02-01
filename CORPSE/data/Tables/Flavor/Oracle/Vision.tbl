@@ -161,7 +161,7 @@ A roofed bridge on a wide river, with a toll-collector
 A fishing village with an inn of good quality
 A slow-moving caravan, with many wagons and travelers
 A set of steps in the side of a hill, leading down into a damp underground icehouse
-{: FantasyFarmstead.main}
+{farmstead}
 
 : Magical Locations
 The secluded home of an exiled court-wizard
@@ -323,15 +323,15 @@ A flock of hunterbirds, sharpbeaked, clever, and dreadful
 A devil of the lower air, malicious and full of pranks
 A vast, relentless army of ants, devouring everything in its path
 
-: Items Lcase
-{: City Items Lcase}
-{: Countryside Items Lcase}
-{: Magical Items Lcase}
-{: Military Items Lcase}
-{: Ruins Items Lcase}
-{: Wilderness Items Lcase}
+: Items
+{: City Items}
+{: Countryside Items}
+{: Magical Items}
+{: Military Items}
+{: Ruins Items}
+{: Wilderness Items}
 
-: City Items Lcase
+: City Items
 a key on a broken chain, lost by the roadside
 the written deed to a certain house, affirmed and sealed
 a note written in an elegant hand, sweetly perfumed
@@ -340,7 +340,7 @@ a purse of coins, cursed by its stabbed and dying owner
 the fine silk wardrobe of one dead of some plague
 an inflammatory political leaflet, death to those found with it
 
-: Countryside Items Lcase
+: Countryside Items
 an altar overflowing with flowers and bowls of honey
 a local warlord’s ancestral sword, much honored
 a chest containing the tax monies of a rural province
@@ -349,7 +349,7 @@ a cask of honey wine, tribute to a fierce bandit-queen
 a farmer’s good-luck piece, the author of his prosperity
 a painted ward made of bone and feathers, left on a fencepost to guard a field
 
-: Magical Items Lcase
+: Magical Items
 silk slippers which make their wearer invisible
 a copper basin, to which are enslaved spirits of the air
 bracelets which grant their wearer improbable strength
@@ -358,7 +358,7 @@ a staff of white-wood, summoner of lightnings
 a silk robe through which no weapon may pass
 a small iron key which can open any lock
 
-: Military Items Lcase
+: Military Items
 a great army’s marching orders, passwords, and signals
 a token indicating that its bearer speaks for the high general
 a sword consecrated to a fearsome demon of war
@@ -367,7 +367,7 @@ a great warship, set with trebuchet and mangonel
 the head of a high war-captain, in a carved wooden cask
 the husk of a mighty siege engine, destroyed by fire and left on the field
 
-: Ruins Items Lcase
+: Ruins Items
 a helm in antique style, sound despite its tarnish
 instruments of torture, haunted by their long-dead victims
 a book of engraved bronze, partly obscured by wear
@@ -376,7 +376,7 @@ the guardian of a tomb, a statue cast in silver with ruby eyes
 a golden armlet, still on the skeletal arm of its owner
 the rotted remains of a funeral feast
 
-: Wilderness Items Lcase
+: Wilderness Items
 a woman’s long blood-red hair, incorporated into a bird’s nest
 the corpse of a lord’s hunting hound, caught in a rose-briar
 a bandit’s treasure-trove, exposed by erosive rain
@@ -386,15 +386,15 @@ the remnants of a woodcutter’s camp, abandoned in haste
 the fallen corpse of a messenger pigeon, and the message it bore
 a cursed dagger which must be doused in blood
 
-: Characters Lcase
-{: City Characters Lcase}
-{: Countryside Characters Lcase}
-{: Magical Characters Lcase}
-{: Military Characters Lcase}
-{: Ruins Characters Lcase}
-{: Wilderness Characters Lcase}
+: Characters
+{: City Characters}
+{: Countryside Characters}
+{: Magical Characters}
+{: Military Characters}
+{: Ruins Characters}
+{: Wilderness Characters}
 
-: City Characters Lcase
+: City Characters
 a wealthy merchant’s son, refined and crafty
 the proprietress of a wantonhouse, with her manservant
 an underclerk of the temple of some lesser cult
@@ -403,7 +403,7 @@ a gentlewoman-burglar, stylish and daring
 a practitioner of law, with her several secretaries
 a corrupt guard, turning a blind eye to the illegal businesses that have paid him off
 
-: Countryside Characters Lcase
+: Countryside Characters
 an ambitious farmer, hungry for gossip or silver
 the unscrupulous landlady of a roadside wayhouse
 a village executioner, practicing his trade on a caught burglar
@@ -412,7 +412,7 @@ the local lord’s young daughter, tramping after strawberries
 the captain of a foreign troop, sent to collect taxes
 a saucy milkmaid with a gleam in her eye
 
-: Magical Characters Lcase
+: Magical Characters
 some great wizard’s magical messenger, brass-skinned
 a necromancer who steals the knowledge of the dying
 the human servant of a mighty and unspeakable demiurge
@@ -421,7 +421,7 @@ a reader of omens and caster of auguries, with grim news
 a placid mystic, preaching calm and demonstrating miracles
 a curious occult experimenter, dabbling in forces he does not understand
 
-: Military Characters Lcase
+: Military Characters
 the captain of a shattered company, himself injured
 a camp-wanton, pretty and pliant, prone to drink
 a camp physician, her pockets full of salves and drugs
@@ -431,7 +431,7 @@ the self-important master of strategy to a great general
 the lowly cabin boy of a mighty warship
 an old war hero, called out of retirement
 
-: Ruins Characters Lcase
+: Ruins Characters
 an unsavory treasure-seeker, with an honest map
 the warden ghost of the place, generous to the good-willed
 a ghoulish eater of dead flesh, driven by unusual lusts
@@ -440,7 +440,7 @@ a knowledge-mad sorceress, delving into ancient secrets
 one mistakenly condemned, fled into hiding
 a madman hiding in the ruins of his former home, who remembers only snatches of his past
 
-: Wilderness Characters Lcase
+: Wilderness Characters
 a hermit priestess, practicing obscure deprivations
 a rough wolf-hunter, surly, filthy and crude
 a noble landholder, touring, with court and attendants
@@ -449,15 +449,15 @@ a fur-trapper, simple but goodnatured, and his daughter
 a bandit captain, in hiding, with her trusted bodyguard
 a tough but patient wilderness guide leading a troupe of naive city folk
 
-: Locations Lcase
-{: City Locations Lcase}
-{: Countryside Locations Lcase}
-{: Magical Locations Lcase}
-{: Military Locations Lcase}
-{: Ruins Locations Lcase}
-{: Wilderness Locations Lcase}
+: Locations
+{: City Locations}
+{: Countryside Locations}
+{: Magical Locations}
+{: Military Locations}
+{: Ruins Locations}
+{: Wilderness Locations}
 
-: City Locations Lcase
+: City Locations
 a rich and mighty temple, full of silver and fine goods
 a poor home shared by many families of beggars
 a warehouse on the docks, full of Elven silk
@@ -466,7 +466,7 @@ the private garden of a noble house
 a market on the crossroads, full of sound and color
 a dark alley behind a respected establishment, leading into a warren of twisting streets and dark corners
 
-: Countryside Locations Lcase
+: Countryside Locations
 a farm manor, peaceful and prosperous
 a monastery and its associated shrines, each to its own god
 a waystation on a broad road, with a campsite and shrine
@@ -474,9 +474,9 @@ a roofed bridge on a wide river, with a toll-collector
 a fishing village with an inn of good quality
 a slow-moving caravan, with many wagons and travelers
 a set of steps in the side of a hill, leading down into a damp underground icehouse
-{: FantasyFarmsteadmain}
+{farmstead}
 
-: Magical Locations Lcase
+: Magical Locations
 the secluded home of an exiled court-wizard
 a standing stone, obscurely carved, crackling with force
 a pool of mirror-still green water
@@ -485,7 +485,7 @@ the secret central shrine of a temple to forgotten gods
 an underground chamber, eerie with blue-green lights
 a desert wasteland that was once a verdant jungle, now haunted by the ghosts of trees and butterflies
 
-: Military Locations Lcase
+: Military Locations
 an old, proud fortress on an important mountain pass
 the site of a pitched battle, ground churned and stinking
 an outlying watchtower on a wooded hill
@@ -494,7 +494,7 @@ the country fort, mostly wood, of a local war-lord
 the campsite of a traveling army, not long deserted
 a country manor requisitioned by an invading army and turned into a makeshift hospital
 
-: Ruins Locations Lcase
+: Ruins Locations
 a fallen temple, overgrown with moss and ivies
 an old raised road, cracked and crumbling
 a gutted tower, home to many birds
@@ -503,7 +503,7 @@ an ancient monument, eroded and overgrown but standing
 a new village, built on the ruins of a forgotten people
 an ancient crumbling sewage system, snaking forgotten beneath a recently built city
 
-: Wilderness Locations Lcase
+: Wilderness Locations
 a high, wind-scoured crag, strewn with rubble
 a clearing of mossy boulders by a forest brook
 a boggy field, buzzing with stinging insects
@@ -512,15 +512,15 @@ a vast oak tree in a fallow field
 a high waterfall, riddled behind with caves
 a vast precipice plunging steeply into the valley below
 
-: Events Lcase
-{: City Events Lcase}
-{: Countryside Events Lcase}
-{: Magical Events Lcase}
-{: Military Events Lcase}
-{: Ruins Events Lcase}
-{: Wilderness Events Lcase}
+: Events
+{: City Events}
+{: Countryside Events}
+{: Magical Events}
+{: Military Events}
+{: Ruins Events}
+{: Wilderness Events}
 
-: City Events Lcase
+: City Events
 the celebration of a day sacred to the city’s chief cult
 the murder by strangling of an officer of the city watch
 the burglary of the storehouse of a powerful robber-merchant
@@ -529,7 +529,7 @@ the rehearsal of the funeral of the city’s aged and beloved mayor
 the arrival of honored emissaries from a wealthy, exotic land
 the discovery of the corpse of an innkeeper’s daughter, dead of a virulent and incurable plague
 
-: Countryside Events Lcase
+: Countryside Events
 the green star looking down on you inimically
 the much-contested wedding of the province’s great beauty
 an unseasonal and destructive flood
@@ -539,7 +539,7 @@ the capture by soldiers of a popular gentleman-bandit
 the arrival at a way-house of four unusual travelers
 the mysterious and grisly butchering of a sheep owner’s entire herd
 
-: Magical Events Lcase
+: Magical Events
 a conjunction of uncanny magical forces
 a great convocation of mages, with many orders attending
 the awakening of 3 powerful and malignant genii
@@ -548,7 +548,7 @@ the burglary of a magical order’s innermost library
 the seizure of arcane powers by an arrogant and brutal wizard
 the return of a young village lad who disappeared decades ago, released at last from a long night of revelry in the court of the fey
 
-: Military Events Lcase
+: Military Events
 the capture and interrogation of a cunning spy
 the arrival of unexpected and improbable allies
 the mutiny and revolt of a prestigious cavalry company
@@ -557,7 +557,7 @@ the accidental death of a highly regarded war-captain
 a hard-won victory, with many dead on both sides
 the surrender of a great general after an overwhelming defeat
 
-: Ruins Events Lcase
+: Ruins Events
 the exposure by erosion of a long-buried door
 the night each year that a certain ghost is allowed her freedom
 the anniversary of the fall of a mighty tower
@@ -566,7 +566,7 @@ the discovery of an ancient tomb, full of occult treasures
 the passage of a ghostly army, dragging their slain and injured
 the capture of a bandit carrying ancient treasures looted from a previously unknown tomb
 
-: Wilderness Events Lcase
+: Wilderness Events
 a fearsome storm, with thunder and driving winds
 a bitter and unseasonable cold, caused by warring elementals
 the flight of a prince and his forbidden lover into hiding
@@ -575,15 +575,15 @@ a mysterious star-lit revel on a high bare hilltop
 the return of a reclusive enchantress to her home
 a flash flood sweeping through a refugee’s campsite
 
-: Threats Lcase
-{: City Threats Lcase}
-{: Countryside Threats Lcase}
-{: Magical Threats Lcase}
-{: Military Threats Lcase}
-{: Ruins Threats Lcase}
-{: Wilderness Threats Lcase}
+: Threats
+{: City Threats}
+{: Countryside Threats}
+{: Magical Threats}
+{: Military Threats}
+{: Ruins Threats}
+{: Wilderness Threats}
 
-: City Threats Lcase
+: City Threats
 a vicious gang of cut-throats and alley-thieves
 a cruel and powerful young lordling
 a civic-minded merchant with influence in the watch
@@ -592,7 +592,7 @@ a wealthy merchant-priest with much political clout
 a jealous and vengeful rival, who is an infamous dueler
 a scheming courtier who will do anything for power and influence
 
-: Countryside Threats Lcase
+: Countryside Threats
 a band of slavers both bold and incorrigible
 an innkeeper who murders and robs his wealthy guests
 a brutish and tyrannical war-lord and his uncouth thugs
@@ -601,7 +601,7 @@ an angry mob of peasants with makeshift weapons
 a wayhouse in which plague victims have recently stayed
 the leader of a religious cult, hunting for a sacrifice
 
-: Magical Threats Lcase
+: Magical Threats
 a conjurer who needs blood to entice his uncouth spirits
 a night-wisp, who devours its victims’ magical potency
 a wandering intelligence, intent on driving mortals mad
@@ -610,7 +610,7 @@ an order of magician-monks who punish blasphemers
 an ambitious petty-wizard, quick to take offense
 a terrifying demon, escaped from the mage who summoned it
 
-: Military Threats Lcase
+: Military Threats
 an enemy champion, fearless and bellowing
 six enemy scouts, with spyglasses and longbows
 ferocious war-hounds, driven wild with blood and confusion
@@ -619,7 +619,7 @@ an enemy scryer who commands six sharp-fanged nightgaunts
 a much-decorated company of the enemy’s light cavalry
 a near-invisible figure skulking through enemy lines, planning to poison the water
 
-: Ruins Threats Lcase
+: Ruins Threats
 the bloodthirsty ghosts of those drowned in an accursed water
 a genius of flame, imprisoned within a brass mirror
 a long-dead queen, still trying to defend her realm
@@ -628,7 +628,7 @@ a secret order of warrior-mystics, defending their relics
 the cunning and deadly traps of the ancient architects
 the poisoned air of a long-sealed tomb
 
-: Wilderness Threats Lcase
+: Wilderness Threats
 a wicked mountain-drake, cunning and greedy
 a pack of winter-starved and desperate wolves
 a siren-ghoul, who entices the amorous into deadly peril

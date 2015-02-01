@@ -1,5 +1,6 @@
 / http://random-generator.com/index.php?title=Brewnames
- 
+
+ : Drink Name
 {{Color}|{Taste}|{Smell:Adj{!OneWord}}|{Appearance}|{Liquid Feature}} {Liquid} of {Adjective} {{Misc Creature Ability}|{Special Movement}|{Special Defense}|{Special Offense}}
 {Name}'s {:Adjectives} {:Starters} {:Finishers}
 {:Starters} {:Finishers}
@@ -7,75 +8,97 @@
 The {:Adjectives} {:Starters}
 
 : Adjectives
+Abbey
 Ailment-Curing
 Batch-Brewed
 Best-Ever
 Better
+Bitter
 Blinding
 Blisterin' Hot
 Boot-Blastin'
-Bottom-Fermented
 Bottle-Fermented
+Bottom-Fermented
 Brimming
 Brown
-Bubbly
 Bubblin'
+Bubbly
 Cask-Brewed
 Cold-Brewed
 Dastardly Draught of
 Dead-Raising
 Domineering
+Dwarvish
+Exceptional
+Exceptional Elixir of
 Exquisite
+Extra-Special
 Extra-Spicy
 Famous
 Fiery
 Fine
 Fizzy
+Flaming
 Foaming
 Foamy
 Fomenting
-Flaming
+Frothy
 Frozen
 Grand Old
 Green
 Hard-Hittin'
 Hard-Kickin'
-Hearty
 Heart-Stopping
+Hearty
+Heather
 Heavy
 Heavy-Hittin'
+Highland
+Hobgoblin
 Honey Brown
-Ice-Brewed
+Honeyed
 Ice Cold
+Ice-Brewed
 Illustrious
-Mysterious
-Exceptional
-{:Liquids} of
-Mysterious Elixir of
-Exceptional Elixir of
-Secret Elixir of
-Extra-Special
-Slow-Brewed
+Lager
+Light
 Magical
+Malt
 Mouth-Burning
+Mysterious
+Mysterious Elixir of
 Mystical
 Mystical Elixir of
+Orcish
+Pale
+Pilsner
+Porter
+Pumpkin
 Red
 Red-Hot
+Rye
 Scorchin' Hot
 Secret
-Steaming
+Secret Elixir of
+Slow-Brewed
 Smokin' Hot
+Steaming
+Stout
 Thick and Creamy
 Thick and Hearty
 Thick and Rich
 Thoroughly Stirred
 Tongue-{:Tongue Finisher}
+Trappist
 Trusty Ol'
 Ugly
 Unbeatable
-World-Famous
+Watered-down
+Wood-aged
 World's Finest
+World-Famous
+{:Liquids} of
+
 
 : Tongue Finisher
 Bashing
@@ -110,7 +133,7 @@ Fire
 Flame
 Gut
 {Organ}
-{Creature}
+{Mythical Creature}
 {Humanoid}
 {Humanoid:uncommon}
 {Fauna}

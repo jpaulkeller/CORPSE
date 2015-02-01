@@ -1,0 +1,27 @@
+: Palisade
+a {4}0' {:type}{75% {:location}}
+
+: Type
+bailey
+blackened iron fence
+iron fence
+stone wall
+stonework wall
+wooden palisade
+woodwork palisade
+wrought-iron fence
+
+: Location
+on all sides, with a large double-gate
+on all sides, with a small drawbridge over {:Moat}
+on all sides, with a small gate
+on three sides, with a steep drop-off on its fourth
+on three sides, with its back against a jagged cliffside
+on three sides, with its back to a fast-flowing river
+to its front, tied into the surrounding cliffs and crags as a natural defense
+
+: Moat
+a deep ditch moat
+a shallow moat
+an unfinished moat
+what once was a moat

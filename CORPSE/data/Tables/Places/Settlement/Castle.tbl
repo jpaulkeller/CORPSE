@@ -1,0 +1,161 @@
+/ http://random-generator.com/index.php?title=Castle
+
+: Castle
+{brick-built |earthenwork |}{:small}{75% with {palisade}}
+{50%{building material:tower} }{:large}{50% standing {4d4}0' tall}
+
+: Garrison
+The castle barracks are continuously garrisoned by {3d6}00 men of the {Unit:Foot}, and in case of attack, they can expect support from the {Unit:Elite} within a day’s hard riding.
+The castle barracks are garrisoned by the {3d6}00-strong {Unit:Foot} and an additional {2d4}00 men of the {Unit:Ranged}.
+The castle barracks are garrisoned by the {3d6}00-strong {Unit:Foot} and an additional {4d6}0 men of the {Unit:Ranged}.
+The castle barracks are the proud home of all {3d6}00 men of the {Unit:Elite}.
+The castle barracks house {3d6}00 men from the {Unit:Foot}, and can expect wartime support from the {Unit:Elite} from nearby {Place Name}.
+The castle barracks house the {3d6}00-strong {Unit:Foot}, and can be supported within a fortnight by {Unit:Foot} of {Place Name}.
+The castle is garrisoned by {4d4}00 men of the {Unit:Foot}, supported by a {1d6}00-strong volunteer ranged auxiliary, the {Unit:Ranged}.
+The castle is garrisoned by {4d4}00 men of the {Unit:Foot}, supported by a {4d6}0-strong volunteer ranged auxiliary, the {Unit:Ranged}.
+The walls are defended by the {3d6}00-strong {Unit:Ranged}, who may expect ground support within a fortnight from the {Unit:Foot}.
+
+: Arcane Weapon
+fire orb
+ice orb
+lightning orb
+hellfire orb
+holy fire orb
+{element} orb
+
+: Small
+armory
+barracks
+chateau
+fort
+hall
+hold
+keep
+manor
+motte-and-bailey
+outpost
+
+: Large
+castle
+fortress
+great-keep
+palace
+stronghold
+
+: Shape
+cross-shaped
+round
+L-shaped
+T-shaped
+U-shaped
+
+: Special
+For better or worse, the keep’s location proved pivotal in the {Battle Name}.
+Many different construction layers indicate that the castle has been destroyed and rebuilt many times.
+Much of the castle was charred and burned in a forgotten war, and its still-standing stonework lends an unsettling eeriness.
+The castle is adjacent to numerous open fields and farmsteads, indicating its importance at the demarcation of some old serfdom.
+The castle was constructed as the key strategic defense for an ancient kingdom, and while it has changed many hands and seen many battles, its has stood ever since.
+The castle was made in times of peace, and boasts a great hall for entertainment and numerous houses for guest lords and ladies.
+The current structure rests on the ruins of {Place Name}.
+The entire structure was rebuilt after being razed to ashes in the {Battle Name}.
+The fortification has been razed and rebuilt countless times by a dozen nations.
+The structure’s long and colorful history has been dotted with occasional warfare.
+The warm hearth of the main keep has been an attraction for weary travelers for ages.
+The {Unit} (once garrisoned here), was immortalized in song for their heroic defense throughout the years.
+The {structure:religious} here was where Saint {:MaleName} was originally anointed, making the entire site a hotly-contested holy ground.
+This castle withstood enemy advances by the hundreds as the key defense in the {Battle Name}.
+This hall once served as the command post of {Soldier Name} during a lengthy crusade.
+This was historically a welcome stop for traveling merchants and common-folk on long pilgrimages.
+This was the location where {Soldier Name} made his ill-fated last stand.
+To this day, the stronghold is the seat and court for the surrounding {region:jurisdiction}.
+When defended, the hold has never fallen to an attacking force, despite decades of full-scale war in the region.
+{Soldier Name} is buried in the {structure:cemetery} here, making it a popular pilgrimage spot.
+
+: Defense
+A great river flanks two sides of the main structure, forcing attackers to fight uphill on a narrow stretch of open field.
+A nearby {2d6}0' {tower:type} stands ready to provide overwatch, support, and early warning in times of conflict.
+A recent victim of siege, smoldering hoardings still adorn the main gates and doors of the {1d4}{1d8}0' main keep.
+A string of {2d6} towers provide early warning to the main structure in times of conflict.
+Crags and cliffs flank three sides of the keep, greatly limiting the options of a would-be siege force.
+Its formidable defensive walls are {4d4}' thick and {2d6}0' high.
+Its well-planned defenses include a thick wooden wall with {2d6} towers and a simple postern.
+The castle has {2d4} great towers, each with a {:Catapult} in various stages of functionality. The walls are lined with oil cauldrons and crested with crenellations and merlons, making it quite advantageous to the ranged defender.
+The castle keep is defended by {2d4} round towers, each with a {:Catapult} in various stages of functionality. The walls are lined with oil cauldrons and crenellated points for archers and crossbowmen.
+The castle keep is flanked by {2d4} bulwarks topped with {:Catapult}s. The thick walls of the main structure connect {2d6} towers, set at regular intervals.
+The castle stands proudly and fearlessly, with 1{2d4}-foot-thick main walls, nearly {1d6}50 feet tall at its highest point.
+The castle’s impressive defenses support a large central {:shape} keep standing {1d4}50' high.
+The castle’s {4d4}-foot-thick walls, standing {2d4}0 feet tall, indicate its occupiers regularly saw heavy warfare. While the mighty walls and high turrets of the castle are alone enough to stagger a siege, its greatest defensive feature is a great round bastion with a still-functional {:Catapult}.
+The central structure is protected by a rudimentary wall and an overgrown ditch that may have once been a moat.
+The keep’s rear is set into a dramatic mountain face, providing the structure both rustic beauty and strong natural defense.
+The main keep’s walls connect to {2d4} rounded bulwarks for defense.
+The stronghold is flanked by two great bastions, and surrounded by a {2d4}0' wall to stave off would-be attackers.
+The {1d4}00-foot-tall castle is well-prepared to withstand a siege, with machicolations and murderholes abounding.
+
+: Curtain Walls
+It has a crenellated stonework wall standing {2d4}0 feet high
+Its {2d6}0' outer wall has been improved over the years with murder holes at the main and postern gates, and dozens of embrasures to give defenders a marked advantage.
+Its external defenses include {2d4} {building material:tower} watchposts, topped with archer’s platforms.
+Its hastily-made defenses include a simple earthwork berm designed to slow attackers and impede siege engines.
+Its outer defenses include a simple {1d4}0' {building material:tower} wall topped with a walkway.
+Its well-planned defenses include a {2d4}0' {building material:tower} outer wall with {2d4} turrets.
+
+: Catapult
+magical {:arcane weapon}
+{~{siege}}
+
+: Arcane Weapon
+fire orb
+ice orb
+lightning orb
+hellfire orb
+holy fire orb
+{element} orb
+
+: Outer Defense
+{Number:TwoToFive} great ditches separated by walls on all sides of the castle alternately serve as rather pleasant courts during peacetime.
+Recent repairs to the outer walls are evident, with crude rock and mortar as a stopgap to fill in breached points.
+The open fields to the front of the keep is defended by {2d6} long walls set in a wide, zig-zag pattern.
+The outer defenses are placed in an odd, open horseshoe from the central keep: perhaps the designer thought the steep incline of the open end would be enough to stanch an attack.
+The outer wall connects {2d4} turret towers to garrison archers and crossbowmen.
+The outer wall is 1{2d4}' thick and {2d4}0' high, and has a walkway for defenders and {2d4} postern gates.
+
+: Moat
+A deep ditch protects the central area. 
+A great rotating bridge serves as the outer gate, with stationary double towers defending both ends.
+A moat of tar pitch stands ready to be lit ablaze, crippling any enemy charge.
+A muddy and overgrown ditch is all that is left of the moat.
+A shallow moat surrounds the central area. 
+Engineers work feverishly to repair the gatehouse portcullis, which has been recently broken in the down position. The gate is the only way in and out of the castle.
+Instead of a true moat, there are a number of short defensive barricades set at close intervals with pitch-filled ditches to their front, some set ablaze and choking the air with black smoke.
+The castle is on its own small island in a wide lake:  leaving the attacker to either attempt a water landing, or brave the {2d6}00’ of well-defended stonework bridge to the great arched sallyport.
+The gatehouse is flanked by towers and has a still-functioning turning bridge.
+The great gatehouse on the outer wall has a tall portcullis in both front and rear, with arrow slits and murderholes defending the sallyport.
+The great gatehouse portcullis is rusted shut in the down position, forcing visitors to use the postern gate.
+The great, deep moat around the outer wall boasts a sturdy drawbridge wide enough for four riders in full war kit.
+The main drawbridge is broken in the down position, forcing defenders to barricade the gate against attack.
+The main drawbridge is broken in the up position, forcing visitors to use the postern gate.
+The main gatehouse has been shattered by siege weaponry and replaced with a defensive platform set over a thick makeshift blockade of iron and stone.
+The main gatehouse portcullis is rusted shut in the up position, and the defenders have blockaded it and dispatched a large percent of their force along the high, crenellated gatehouse walls.
+The majority of the great keep is surrounded by a deep, clear lake, providing excellent natural defense and standoff.
+The moat has a great drawbridge to the front, and a smaller fixed bridge with a portcullis towards allied lands, meant to allow reinforcements in wartime, riders from the elite guard, or, if necessary, a final retreat.
+The moat is varies from 4 to 10 feet deep, and is incomplete.
+The moat’s gatehouse has a drawbridge to the front, and a heavy portcullis to seal off the inner courtyard in an emergency.
+The outer wall has a defensive ditch with an arched bridge and flanking towers.
+The outer wall’s main gate is now only a makeshift barricade after long battering by siege weaponry, but the original towers flanking it still stand.
+There are two gatehouses straddling the ancient trade road. While open in times of peace, their mighty double-portcullis set can seal the castle during a siege.
+{Number:TwoToFive} great ditches separated by walls on all sides of the castle alternately serve as rather pleasant courts during peacetime.
+
+: Traps
+Ancient stone guardians stand silent along the main court path, but will spring to life against attackers.
+Ancient stone obelisks stand silent along the main court path, but under a skilled mage, they can blast attackers with arcane attacks of fire, lightning and ice.
+Magical traps of fire and ice in the open field can be triggered by wizards from afar.
+Permanent illusory walls provide an initial defense to this arcane place.
+Several large hollowed spike-pits lie along more obvious routes to the castle, to thin the ranks of a large assault force.
+Some of the key ditches are filled with an awful mixture of noxious poison and acid.
+Some parts of the thin outer walls will intentionally fall on a breaching force, burying them alive in tons of rock and rubble.
+The defenses are bolstered by a deadly arcane minefield.
+The defensive ditches have great hidden spikes and spearheads in the soft ground to make their passage less pleasant.
+The gates are crowned with spikes, preventing an easy breach.
+The moat is rumored to be populated by man-eating reptiles.
+The palisades are topped with spear outcroppings, preventing an easy breach.
+The walls are tipped with spikes, preventing an easy breach.

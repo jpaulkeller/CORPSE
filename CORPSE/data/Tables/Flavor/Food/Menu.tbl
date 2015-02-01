@@ -14,7 +14,7 @@ casserole made of {{vegetable}+} and {{vegetable{!different}}+}
 {:dish}{75% and {{meat:fowl}|{meat}|{meat:game}|{seafood}|{vegetable}}} {pastry|pie}{50% served with {salad}}
 {:exotic} with {bread}
 {meat:game} stuffed with {:dish}{50% served with {{bread}|{salad}|{:side}}}
-{:main} seasoned with {spice}{25% and {spice}}
+{:main} seasoned with {spice}{25% and {spice{!different}}}
 {:main} served with {bread}
 {:main} served with {:pasta}
 {:main} served with {:side}

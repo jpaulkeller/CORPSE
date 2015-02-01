@@ -114,7 +114,7 @@ honeycombed crystal with holes and drops (possibly deadly)
 large whirlpool
 overgrown vegetation
 smoke or gas
-{degree:adjective} {cold|hot|wet}
+{degree} {cold|hot|wet}
 {sparsely|mostly} covered with stalagmites
 humongous crystal
 {nest|lair|burrow}
@@ -125,7 +125,7 @@ altar
 gathering place
 graveyard or burial ground
 fortifications
-one side of the cavern dominated by huge artwork of {:SUBJECT}
+one side of the cavern dominated by huge artwork of {ART:SUBJECT}
 {ART:STATUE}
 unusually smooth walls, floors, and ceilings - the stone has been polished
 viewing platform of forest/mountain (if an ascended cavern) or lake (if descended)

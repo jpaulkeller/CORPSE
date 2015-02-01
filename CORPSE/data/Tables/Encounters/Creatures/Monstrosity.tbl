@@ -1,12 +1,12 @@
 / Strange creatures with special features.  These are typically unique creatures, created or transformed
 / (intentionally or not) by some magic or sorcery.  They might be:
-/ - mutant creatures of unusual size, features, or abilities
-/ - chimeric hybrids (the result of breeding experiments or Frankensteinian amalgamation)
+/ - mutant/prehistoric creatures of unusual size, features, or abilities
+/ - chimeric hybrids (the result of breeding experiments or amalgamation)
 / - genetically engineered
 / - alien from another world/plane/dimension
 / - strange mutants
 / - cyborgs augmented with mechanical or magical parts
-/ - clockwork automatrons or robotic constructs
+/ - clockwork automatons or robotic constructs
 / - magically animated golems or elementals
 
 : Monstrosity
@@ -19,14 +19,16 @@
 : Mutant
 {:size} {50%{color} }{fauna}
 {33%{:size} }{fauna} with {number:twotofive} heads
-{33%{:size} }{fauna} with {{:wings}|{d4x2} tentacles}|horns}
+{33%{:size} }{fauna} with {{:wings}|{{4}x2} tentacles|horns}
+{dinosaur}
+{fauna}-like {behemoth|leviathan|titan}
 
 : Alien
 tentacled alien {:origin}
 {acid|air|earth|fire|shadow|water} elemental
 
 : Hybrid
-{33%{:size} }hybrid with a {fauna} head on a {fauna} body
+{33%{:size} }hybrid with a {fauna} head on a {fauna{!different}} body
 amalgamation with parts from a {fauna}, {fauna}{50%, and {fauna}}
 {33%{:size} }{celestial|demonic|divine|elemental} {fauna}
 
@@ -36,15 +38,12 @@ amalgamation with parts from a {fauna}, {fauna}{50%, and {fauna}}
 
 : Construct
 {wooden|metal} construct
-clockwork automatron
+clockwork automaton
 magically animated {made of:hard} simulacrum
 
 : Size
 tiny
-unusually large
-huge
-gigantic
-monstrous
+9x {beast:size}
 
 : Form
 ethereal

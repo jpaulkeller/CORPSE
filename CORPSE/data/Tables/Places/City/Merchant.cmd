@@ -33,8 +33,8 @@
     <li>Also Provides: {M.merchandise}  
     <li>Quality: {quality}; Condition: {condition}
     <li>Source: {imported|home-made|local artisan|guild|stolen|unknown}
-    <li>Variety/Selection: {{degree:adjective} poor|average|{degree:adjective} good}
-    <li>Price: {{degree:adjective} low|moderate|{degree:adjective} high}; haggling {haggling}
+    <li>Variety/Selection: {{degree} poor|average|{degree} good}
+    <li>Price: {{degree} low|moderate|{degree} high}; haggling {haggling}
   </ul>
 </ul>
 

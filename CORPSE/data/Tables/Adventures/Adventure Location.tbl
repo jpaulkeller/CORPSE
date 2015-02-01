@@ -1,0 +1,497 @@
+/ http://random-generator.com/index.php?title=Fantasy_Adventure_Locations
+
+;Places
+20x a cosmopolitan city, known for its [Citythingy] as well as its [cityadj] buildings
+15x a [cityadj] temple of [Religion] based on the worship of [Worship]
+10x [Pulp Fantasy Nation.Main]--a strange and distant place
+10x a classic dungeon featuring: [obstacle] and containing:<br/>These traps: [Traps.main], [Traps.main], [Traps.main]<br/>These creatures: [Weird Fantasy Monster.main], [Weird Fantasy Monster.main], [Weird Fantasy Monster.main]
+10x an inn<br/>[Inn and Tavern Names.main], famous for its [FantasyMenu.Descriptor][FantasyMenu.MainMeals]
+10x an island
+10x an obscure part of the sea where our heroes find [Seathings]
+9x the docks where all life is [cityadj]
+9x the mansion of a powerful NPC Contains:<br/>[Fantasy Mansion Domestic Security Measures.main][Fantasy Mansion Domestic Security Measures.main]
+8x an underground complex containing <br/>These traps: [Traps.main], [Traps.main], [Traps.main]<br/>These creatures: [Weird Fantasy Monster.main], [Weird Fantasy Monster.main], [Weird Fantasy Monster.main]
+5x a cave complex
+5x a legendary forest home to the [Simplecolor] [Animal.Weirdsymbol]
+5x a lost city
+5x a lunatic's fortress<br/>[Random Fortress.main]
+5x a river
+5x the [cityadj] cathedral of [Religion] based on the worship of [Worship]
+4x a fortress:<br/>[Random Fortress.main]
+4x a military encampment
+4x ancient ruins containing:<br/>These traps:[Traps.main], [Traps.main], [Traps.main]<br/>These creatures: [Weird Fantasy Monster.main], [Weird Fantasy Monster.main], [Weird Fantasy Monster.main]
+3x a desert where death comes in the form of [Worshipped] and [Worshipped], full of [simplecolor] scorpions and [simplecolor] lizards
+3x a forest, [Forestfork]
+3x a hill-strewn area
+3x a jungle overrun with [Animal.Weirdsymbol]s
+3x a mountain fortress<br/>[Random Fortress.main]
+3x a mountainous area
+3x a plain where [Tribals]
+3x a slum where all life is [cityadj]
+3x a swamp
+3x a wasteland where death comes in the form of [Worshipped] and [Worshipped]
+3x a wizard's tower
+3x the palace of the ruler or local lord<br/>[Random Fortress.main]<br/>Also:[Fantasy Mansion Domestic Security Measures.main]
+3x the steppe
+2x a laboratory
+2x a magical lake [Freshwaterproperties]
+2x a strange city known for its [Citythingy] as well as its [cityadj] buildings
+a [cityadj] monastery of [Religion] based on the worship of [Worship]
+a freakish structure resembling no human architecture
+a giant's home
+a mist-bound valley where the secrets of [Worshipped] are hidden
+a necropolis
+a prison where everything is [cityadj] and the cells are [cityadj]
+a site of an ancient battle
+a stepwell
+a strange village where the people are [cityadj]<br/>[Fantasy Town (Simpler).main]
+a town<br/>[Fantasy Town (Simpler).main]
+an alternate plane where everything is [Planeadjective]
+an enemy encampment
+the corpse of a colossal creature
+the lair of a horde of evil humanoids<br/>[Random Humanoid Horde.main]
+the tundra
+
+;Forestfork
+home to the [Simplecolor] [Animal.Weirdsymbol]
+overrun with [Animal.Weirdsymbol]s
+where [Tribals]
+
+;Tribals
+4x the grass is [simplecolor] and the women are [cityadj]
+[Animal.Weirdsymbol] centaurs roam
+[Random Humanoid Horde.Race] ride [Exoticmounts]
+a horde of gibbering loons pursued by [Exoticmounts]
+amazons ride [Exoticmounts]
+armored knights do battle
+barbarians ride [Exoticmounts]
+highland warriors ride [Exoticmounts]
+hunters tracking [Animal.Weirdsymbol]
+hunters tracking [Exoticmounts]
+roving armies ride [Exoticmounts]
+shamans initiating children in the ways of [Worshipped]
+shamans summons [simplecolor] [Animal.Weirdsymbol] as familiars and pets
+strangely-armored knights ride [Exoticmounts]
+
+;Exoticmounts
+10x enormous hyenas
+10x leopards
+10x panthers
+10x rhinoceroses
+10x tigers
+5x axebeaks
+5x blood sucking old women
+5x elephants
+5x featherless great geese
+5x hasted lobsters
+5x horses stitched together in centipede form
+5x lobotomized brutes
+5x mastodons
+5x sabre-toothed tigers
+5x skinless gorillas
+5x terrible black orbs
+5x warwolves
+4x albino scorpions with [ColorAdj] [colors] eyes
+3x giant crabs
+2x burning-eyed ponies
+2x donkeys
+2x floating discs
+2x floating elephant skulls
+2x huge lizards
+2x spiders with human hands and faces that sing mournfully
+2x storm clouds
+2x strange horses
+centipedes
+dinosaurs
+giant eyeless sloths with runes burned into their pelts
+giant snakes
+huge ants
+steam-powered horses
+
+;Religion
+5x a long-dead faith
+2x an unyielding creed
+a banned faith
+a faith about which nothing is known
+a faith created anew everyday
+a powerful faith
+a primordial faith
+a seemingly-harmless faith
+an evil faith
+an obscure faith
+
+;Worship
+[Worshipped]
+a god associated with [Worshipped]
+a god devoted to opposing principles
+a god devoted to devouring [Worshipped]
+a god with power over [Worshipped] and [Worshipped]
+
+;Worshipped
+10x [Animal.Weirdsymbol]s
+10x [Weird Fantasy Monster.main]
+10x a(n) [Animal.Weirdsymbol] 
+3x [Found in a crate.main]
+2x noise
+a [Fantasy NPC (Basic).main]
+a mountain
+a pair of sacred twins
+abstractions and enigmas
+amputees
+ancient kings
+ancient queens
+animals
+armors
+bandages stained with omens
+bats
+buildings
+burn victims
+cannibalism
+chaos and change
+clouds
+coprolites
+corpse of gods
+daggers
+darkness
+death
+depravity
+despair
+disease
+earthquakes
+extremely attractive women
+farmed ghosts
+fire
+fire and strife
+floods
+great bowls of water, with ink floating on the surface  
+hairless cats
+ice
+innocence and childishness
+insects
+knives
+knowledge
+law and learning
+leopards
+liars
+light
+lightning
+maggots
+man-headed hogs
+melee weapons
+metal objects
+mold
+monkeys
+morningstars
+mountains
+murderous accidents
+music
+oracles
+order
+osmium
+ossified seahorse
+prophecy
+radiation
+ranged weapons
+rust
+sacred beggars
+shields
+silence
+snow
+stars
+stupidity
+swords
+tattooed and flayed skins
+the moon
+the night
+the North Wind
+the PCs
+the rain
+the sea
+the sun
+the undead
+the underworld
+thieves
+thunder
+tigers
+trees
+violence
+war
+winter
+
+;Seathings
+2 Warships fighting
+3-8 adventurers not unlike yourselves
+a "zooship" delivering exotic beasts
+a bloated floating whale carcass. Naked men and woman with stitched mouths stand atop it holding curving staves shaped from rune-carved bone.
+a boat full of lackluster pirates
+a boat full of terrifying pirates
+a cargo vessel with passengers: mostly idiotic minstrels who insist on being called "bards" and that their music has magical powers
+a clever general and his men, returning from a great war after much tribulation
+a Cthulhian seatemple
+a dead vessel where the crew's bodies are sodden with sentient algae.
+a drifting ironclad, which is nearly all one giant cannon shaped like great dragon mawed tuba. It is unmanned and its engines cold, with gun unloaded and no indication of what fuel or ammunition it used. 
+a fishing boat
+a fishing boat wrestling with fearsome sea beast
+a fishing boat, where the captain has valuable information
+a fishwife sailing the seas, seeking a husband
+a floating library
+a floating pleasure palace of exotic monarch--also in the flotilla: a slave-galley, a haremship and/or templeship and d4 warships
+a ghost ship--manned by skeletal pirates like in the DMG
+a goblin grubship. Stuffed to the gills with baby grub carrion crawlers--which they cultivate and worship
+a government-in-exile of nation in the throes of revolution
+a great big clipper ship going from this land into that. Crew is all nodding on black lotus powder
+a gunpowder-filled merchant-ship
+a learned zoological scholar, his hold bulging with taxidermized specimens, eager to hire adventurers to collect specimens of rare sea creatures
+a lizardman opera ship--sea turtle integrated
+a lizardman plesiosaur-drawn sea chariot
+a lone eccentric out for a quiet sail
+a lone maiden at sea with several swine. Secretly, she is a witch and has transformed all of the crew, her harpy allies are currently off seeking land but will return soon
+a mariel-boatlift-esque asylum ship. No navigational equipment, rudders, wheel, or sails. Full of lunatics
+a merchant ship mostly filled with alchemical ingredients. Could be useful for making potions
+a merchant ship. Roll d20 and look at the number you just rolled. That's how many 1000's of GP are on board, it is also how many GP worth of other goods is on board, however it's also the level of the fighting men protecting it. There are 15 of them.
+a mixed cargo/passenger ship--the passengers are a troupe of Somberists--anti-clowns who perform depressing dramas on street corners to inspire religious fervor and contemplation
+a mixed group of passengers and merchant cargo
+a monarch in disguise, with retinue in disguise as merchants, searching all the world for a queen
+a Nephilidian Spidership--the amphibious vampires of Nephilidia cannot sail but protect their watery frontiers via spiderships--hollowed-out enemy vessels that are packed stem-to-stern with small, venomous, carnivorous seaspiders. They are manned by spider-stuffed manikins imitating real sailors and fly false flags
+a once -merchant freighter overtaken by a a gang of pirates but they all died. It is now inhabited entirely by their pet macaws and monkeys, who subsist on the foodstuffs in the hold
+a passenger ship--most of the travelers are horribly diseased
+a raft, completely empty except for the burned body of a [Animal.Weirdsymbol] with a sacrificial dagger stuck in it.
+a raft, completely empty except for the corpse of a [Fantasy NPC (Basic).main] and its belongings
+a raft, completely empty except for the remains of a [Weird Fantasy Monster.main]
+a raided, empty ship. May be more seaworthy than PC's ship, though.
+a red eyed sea wizard. Quite mad
+a rich merchant ship. 20,000 gp on board, 10,000 worth of goods, 5 10th level fighters and 10 6th level fighters guarding it
+a rotting hulk full of sluts
+a sailing ship, which on closer inspection is a termite nest, constructed as a sailing ship
+a scientific mission of oceanographers, biologists, etc.
+a seatemple of a demon
+a seatemple of a foreign god
+a sentient rabbit, sentient but narcoleptic dormouse, a maker of hats and an insane princess drinking tea on a boat
+a ship crewed by ships vermin, their minds switched with that of the original sailors, who now scuttled below deck, and are dangerous the new bodied crew. The sailor-minded vermin are accepting of their lot. Or insane.
+a ship full of creepy sea-going clerics excommunicated by their church and doing weird religious research who haven't touched land in years
+a ship of evasive weirdoes. Keep the PCs guessing until you can think of something.
+a ship of political refugees
+a ship of refugees from some disaster
+a ship of slaves who've successfully escaped and taken over a slave ship
+a ship that seems like an ordinary merchant ship with a few passengers but, during the day, the windows show night and vice versa. The ship is cursed
+a slaveship
+a strange seabeast
+a tomb ship. This is how an ancient culture buries its dead. The inhabitants are not undead. Unless, of course...
+a warship delivering urgent diplomatic dispatch to foreign government
+a warship of some foreign power.
+a warship of some local power
+a wrecked ship
+an adventurer seeking the metallic hide of mythical beast
+an Ahab-esque sea-monster seeker.
+an alleged merchant ship which is actually cover for an assassin on assignment sent to kill an eminent member of a foreign power
+an entirely peculiar vessel. Inside it looks like a cross between a model railroad and Schwitters' Merzbau. It's actually a floating city of tiny people, with tiny horses and elephants.
+an exiled prince--alone
+changeling pirates
+dwarven sea raiders with stubwolves in spiked collars
+explorers from the Exotic East. Possessed of magnificent maps of lands not known
+goblin raiders employing toothed, gas spore-like floating bombs
+merchants unknowingly transporting a naga, succubus, demon, etc.
+passengers heading away from PCs native land. One is a PCs mother. What the hell?
+pilgrims heading to pilgrimage site
+pirates in the act of piracy (roll again for victim ship)
+pirates. Captain of the pirates is a former ally of a PC. Will be nice to the PCs as soon as s/he realizes it but his/her pirate crew is secretly scheming mutiny.
+prisoners being transferred by sea
+rum merchants, victims of recent storm, in need of aid
+some eerily low storm clouds
+spice merchants--not a lot of money but lots of spices
+the remnants of battle between ships, the ships now fused together, like half melted wax, some joined by long thin strands.
+the sea-borne wedding flotilla of Bluebeard and Snow White, with their corona of 7 floating frigates, each manned by a piratical dwarf renowned for a specific trait
+Vast icebergs of blood
+vikings. d20 d8 level berserkers/barbarians.
+weird pirates of d6+2 level) but accompanied by exotic nonhumans or wizards
+weird pirates of level 1-4) but accompanied by exotic nonhumans or wizards
+white elves sailing far out to sea for a royal funeral. The monarch is slain and his most beautiful slaves are thrown--live and with limbs bound--into the sea
+young royal bastards, ages 4-13, marooned sea with so that they'll be unable to claim the throne
+
+;obstacle
+a bottomless pit
+a boulder smashed through a doorway, blocking it
+a forest of trees, immolated in frozen fire 
+a former passage now bricked-up
+a giant board game, with construct pieces
+a grossly enlarged human corpse, packed tightly in the passage
+a long corridor devoid of air and sound
+a magical wall of force
+a river of lava
+a wall of ice
+a waterslide
+an underground river
+ancient machinery and grinding gears
+Burning clocks
+carnivorous books
+crossroads from which characters leave to random direction
+doors stuck due to moisture
+floors of fleshing eating bugs
+frictionless floors
+gently drifting glass blades
+horrible glue
+locked doors enforced by metal
+Ominous spiders that watch
+partially flooded passages
+pools of magma
+pools of ooze
+pools of tar and congealing blood
+rusty portcullis, very difficult to lift
+screaming winds
+self-resetting traps
+skilled illusion duplicating another area
+Slow flowing rivers entirely composed of rusting blades 
+strobing lights
+thick choking dust
+vast underground chasm with a collapsed bridge
+walls that have mocking words appearing on them, changing when ever looked away from. Equal parts useful secrets and damning personal knowledge
+webs of unusual strength and thinness,  and thus capable of dicing the unwary
+
+;Planeadjective
+[color]
+a distorted version of our world
+a endless madness built house
+a giant web
+a submarine realm, of airy breathable water, confused gravity and vast fish tyrants
+an ocean filled with great bronze coffins
+Boschian
+dark and teeming
+disgusting and bloated
+ever-changing
+frozen in time
+gambling
+giant
+hateful and burning
+headless cat ruled
+immobile
+incredibly decadent
+insane
+Lewis Carroll-esque
+like this world, but eternally just emptied of all life
+made of glass, jewels or crystal
+modified in some steampunkish way
+oddly friendly
+tiny
+
+;color
+aeneous
+azure
+black
+blue
+chartreuse 
+crimson
+green
+grey
+griseous 
+heliotrope
+orange
+pink
+purple
+red
+rust streaked
+white
+yellow
+
+;ColorAdj
+5x beautiful
+brilliant
+dull
+glossy
+mottled
+nauseating
+pale
+scintillating
+shiny
+soothing
+unremarkable
+unsettling
+unwholesome
+
+;Citythingy
+[cityadj] art and culture
+[cityadj] code of laws
+[cityadj] cuisine
+[cityadj] public games
+[cityadj] ruling caste
+[cityadj] sorcerer's guild
+[cityadj] statues
+[cityadj] thieves' guild
+[citydaj] alley ways
+[citydaj] canals
+[citydaj] casino
+[citydaj] fest-hall/brothels 
+[citydaj] fountains, [Freshwaterproperties]
+[citydaj] gladiator arena
+[citydaj] markets
+[citydaj] necropolis
+[citydaj] religion
+[citydaj] sacred tome
+[citydaj] sewer
+history of [cityadj] violence
+
+;cityadj
+10x ancient
+10x boisterous
+10x brooding and malign
+10x brutal
+10x cyclopedian 
+10x down trodden
+10x extremely simple and straightforward
+10x grotesque
+10x massive
+10x mild and unimpressive
+10x monstrous
+10x scarred and huddled 
+10x seething
+10x somewhat inhuman-looking
+10x strictly regulated
+10x weird and subtle
+5x bioengineered
+5x ghostly
+5x horribly-mutated
+5x singing
+5x snake infested
+5x staving
+very funny
+
+;simplecolor
+black
+blue
+green
+grey
+orange
+red
+translucent
+violet
+white
+yellow
+
+;EmotionalAdj
+agonizing
+deadly
+enigmatic
+euphoric
+joyous
+pleasurable
+prophetic
+
+;Freshwaterproperties
+an enormous creature hides beneath the surface
+full of drowned books
+in which a great beauty was drowned
+in which bejeweled skulls can be seen leering from the bottom
+in which your reflection appears 10 years younger in the day, and 20 years older at night
+it contains rare valuable fish
+it contains singing frogs. Murderous singing frogs.
+on which float blood sucking lily pads
+the waters turning to blood at the new moon
+which burns the flesh of ghosts
+which causes strange effects in any who bathe in its [simplecolor] water
+which causes strange effects in any who drink its [simplecolor] water
+which contains jellyfish whose agonizing stings cause prophetic insights
+which contains malevolent amphibious creatures
+which contains water sprites or fairies
+which has unusually strong surface tension
+which is much colder than its surroundings would suggest
+which is much hotter than its surroundings would suggest
+which soothe painful memories, when eyes are anointed with the water 

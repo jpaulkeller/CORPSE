@@ -1,7 +1,8 @@
 / Sources: D&D Rules Cyclopedia, page 142
+/ http://strolen.com/viewing/3827
+/ http://www.roleplayingtips.com/readissue.php?number=464#tips
 
 : Natural
-
 avalanche
 blizzard
 cave-in
@@ -34,7 +35,6 @@ waterspout
 whirlpool
 
 : Unnatural
-
 assassination ({local|regional|factional|national} {official|ruler|high priest|hero})
 assault
 bandits
@@ -60,205 +60,206 @@ trade route {gain|loss}
 traitor
 wandering monsters
 
+: Supernatural
+teleportation mishap
+
+: Detailed
+Blue Crush - The water seems to recede, as if something was drawing it away from the shore. A few turns later, a wall of water 12 feet high rolls over the beach causing a great deal of damage, washing anything not bolted down away and toppling any structure made of anything weaker than stone. PCs are jostled, take minor to moderate damage and can lose items in the surge of water.
+Calamari - While on an ocean crossing or other suitable deep water crossing, the PCs ship is attacked by a large kraken. Crewmen perish, the ship is damaged, but the monste is driven away after valiant combat and calamari is on the menu in the galley.
+Close Encounters of the Planar Kind - A large object appears in the sky, moves in a strange fashion and vanishes after abducting a lone PC. The PC is later returned unharmed, but has several traits changed on his character sheet, no memory of the event and continually has strange dreams about goblins in space wearing lab coats and holding glowing wands.
+Dead in the Pasture - The PC’s mounts perish during the night for no apparent reason. The next village has been hit with the same affliction some days before and there is not a horse, ox, cow, or any toher critter over 1000 pounds in wieght to be found for miles. After a week or so, the effect ends and animals can enter the area again and not perish.
+Deep Impact - With a screaming roar, a giant ball of flame roars overhead to smash into the ground about a mile from the PCs. They are soon showered with debris, sand, shattered wood and the like. There is a minor chance of being injured, easily negated by taking shelter. A meteorite has fallen and blasted a 100 foot wide hole in the earth. There is nothing magical about the impact or event.
+Earthquake! - The ground heaves and shudders, startling animals, waking sleepers, sending birds screaming from the trees. Devastation is more visible in town as the local tower has fallen, several homes and destroyed and there is a chance of a fire, almost 100% if the quake hits in the evening time when everyone has their lanterns and candles lit. No noxious vapors steam out of the earth, no demons emerge, no strange magic effects start happening.
+Fly Hollow - Traveling, the PCs find the ruins of a town, complete with macabre skeletons and dried out corpses. A steady drone fills the air and the sky is darkened by the wings of millions of black biting flies. This town has been forever cursed.
+Footloose - The master Golemist in town has gone off the deep end and is now certifiably insane. This insanity has trickled down into his creations, but thankfully he suffers from a peaceful dementia and now instead of rampaging and killing, his golemic creations wander about looking for dance partners. No music and a 1200 pound dance partner made of glass make for an interesting match…and flattened feet. Defying the golems makes them sullen and weepy.
+France! To Arms! - A night by the river turns strange as the ground is quickly covered by a thick carpet of frogs and toads of all different sizes. Anything edible the amphibians eat, including each other, travel is done on a slick of frog blood and gore, and the smell after a few hours is quickly nauseating.
+Ground Zero - As the PCs approach a major city, the city is destroyed by a massive explosion that knocks the PCs off of their feet. A cloud of smoke and fire rises into the air to blow away normal clouds. Rain falls black as pitch and strange mutations occur in surviving people and animals. Those mages and their experiments…
+Hang Ten! - It starts as a rumble, then a deafening roar as the entire side of a mountain falls in a deadly shower of boulders and clouds of debris. Thankfully the PCs are not caught in the fall, but it just happens that the mountain pass is possibly closed…forever. For more adventure, the path beneath the PCs feet collapses, and they are left to ride what debris they can find on a break-neck race to the bottom.
+I Hate Monkeys! - Hoots and hollers fill the forest air around the PCs and a band of large primates charge out of the foliage armed with branches, boat paddles, and even a real weapon or two. After battling the berzerker gorillas (should be a good challenge) the PCs discover the corpse of a druid, the monkey’s master. The cause of death is accidental, the man choked on a piece of food and then his monkeys were left to fend for themselves and protect his body.
+I, Golem - The youngest member of the PC party gains a new henchman, a 12 foot golem made of granite, carved to look like a monsterous and formidable man of war. The golem, now masterless heard of a prophecy about a young hero and by its limited logic, said PC is the hero and the golem must protect him. Rather than becoming a deadly and brutal engine of war, the PC gains a two ton nanny with all the grace and composure of a 4000 pound slab of stone. Certainly handy when the orcs show up looking for blood, but a real pain with said PC decides to go about on private matters.
+Neptune’s Revenge - As the PCs are walking/riding along side the river, they notice it is rising visibly. A combination of massive rainfall upstream and a dam rupture will fill the river’s floodplain with water 15 feet deep in a matter of a few minutes. While it wouldn’t be the wall of water from a tsunami, once the water arrives, it will be many hours if not days or weeks before it subsides.
+Giant Spiders! - A wizard’s giant growth potion has been lost, it was spilled by the drunken mage one night. A sack of spider eggs absorbed the potion and as the spiders hatched they grew to frighteningly large size. Currently the size of a large housecat or dog, each generation will increase in size until the arachnids overrun the area and eat all of the humans. Time to get to squishing some bugs, though in the PCs favor, the spiders are not dangerously poisonous.
+Operation Black - While strolling through the market of a major city, the PCs are knocked off of their feet and caught in a stampede of panicked people. A group of local radicals have set off an explosive weapon (keg of gunpowder, a vial of dragon’s bile, jar of demonic-nether-gas) in protest of the current ruling power. Guards take anyone not local into custody, there is looting and violence aplenty. The point of contention between the parties should in no real way involve the PCs, something like the cost of grain for millers outside the city, hunting rights of the commoners, or something equally inane and bizarre.
+Out of the Storm - A bolt of lighting falls during a heavy downpour, flash-roasting one of the PC’s mounts, fusing it’s metal barding together and instantly killing the poor creature.
+Red Skies - The PC on night watch notices a red glow, and in a matter of minutes, the PCs are being threatened by a raging wildfire. Trees explode into flame, the heat sucks breathable air away and water quickly evaporates in the inferno. You wake up, the forest is on fire.
+Snakes on a Frigate - Whilst traveling on a long voyage, the PCs discover that a large number of (insert dangerous animal) have been released on the ship for the purpose of killing a certain passenger despite being protected by soldiers and mercenaries.
+Svengali - The PCs encounter a village where there are no women, only men and boys working in the fields, they take no notice of the fact that there are no women. The women of the village no reside in the grand palatial estate of the Hypnotist, though none of the locals know him as anything other than the Good Father at the church. The Hypnotist (stroke oiled mustache) will try to enthrall the PCs to become his hounds of war and fight his un-enchanted foes hidding in the Wherever Hills.
+The Body Filchers - The PCs discover a village where all of the locals act very strange, almost wooden in their movements. A quick round of ‘sleuthing’ and they can discover that a potent spirit of the local forest has been abducting the locals and growing plant replicas of them to protect the forest and eliminate the danger of humans. The filched bleed amber treesap and are terrified of fire, axes, and leaf eating insects.
+The Tower Inferno - Gala and fetes are things of courtly grace and splendor, events of decorum and etiquette. The stately tedium is interrupted by a fire spreading quickly through the palace, and the PCs are involved to help put out the flames and rescue important or self-important people from the blazing wreckage.
+The Zombie Strain - A necromancer made a big big big mistake, creating a highly contagious version of the animate dead spell. Rather than creating a self replenishing army of dead under his control, the zombies spread their affliction to the living by fluid exchange. While not majorly dangerous themselves, the PCs will be infected and only have a few days at the most before succumbing to the infection and becoming a zombie themselves…unless there is a cure!
+Three Hour Tour - The PCs, whilst traveling a short distance by ship, wreck and are marooned on a deserted island. Rather than being in the middle of the ocean, they are about 5 or 6 miles from the coast and in a few days or weeks they will be rescued if they haven’t found a way to get off of the island themselves.
+Time Runs Out - In the distance, a mountain bulges and explodes in silent fury, creating a pillar of fire and ash that blots out the sun. A moment later, the pressure wave arrives, shaking trees and making ears pop. The volcano, long thought dead, has blown itself apart, creating a cloud of superheated ash, glass and poisonous vapors, rivers of water ash slurry called lahars, and ashfall measured in feet. In a few years, local plant harvests will be double the yield, but until rain comes, it is a no-man’s land of fluffy ash and death.
+Twister - The bad storm takes a really bad twist, winds kick up to incredible speed, ripping thatch houses apart and flining debris around pell-mell. Then, the rain, hail, wind and lightning all stop. A muted roar announces the presence of the tornado as it marches relentlessly across the earth for a few miles of sheer destruction. Well mage…can you counterspell that thing?
+Village of the Werewolves- The PCs are besieged by wolves under the light of the full moon, the next village they come too some days later is wary of the PCs and seems to know them despite it being their first trip to said village. The entire village is afflicted with lycanthropy and several villagers were slain by the PCs or severly injured by them. Attempts to ‘cure’ them will be met with derision and potential violence.
+What’s that Smell - more fun with fire, instead of a forest or palace, the city itself has been caught up in a firestorm. Leaping from roof to roof, the flames will devour half of the city by morning, if only the PCs can make it to the river before the heat and smoke overcome them.
+Who turned off the lights? - One morning the sun doesn't rise. No reason is to be given, other than a faint smile or a fiendish chuckle.
+Wyrmfang Spill - A wagon ahead of the PCs has an accident (breaks a wheel, horses spook, orcs attack and kill the driver) and it’s contents are spilled. a strange green cloud spills from the damaged wagon, plants quickly wither and die and animals in the area of the cloud sicken and also die in a few agonizing minutes.
+
 ===
 
-/ http://strolen.com/viewing/3827
-
-1. Deep Impact
-With a screaming roar, a giant ball of flame roars overhead to smash into the ground about a mile from the PCs. They are soon showered with debris, sand, shattered wood and the like. There is a minor chance of being injured, easily negated by taking shelter. A meteorite has fallen and blasted a 100 foot wide hole in the earth. There is nothing magical about the impact or event.
-
-2. Blue Crush
-The water seems to recede, as if something was drawing it away from the shore. A few turns later, a wall of water 12 feet high rolls over the beach causing a great deal of damage, washing anything not bolted down away and toppling any structure made of anything weaker than stone. PCs are jostled, take minor to moderate damage and can lose items in the surge of water.
-
-3. Close Encounters of the Planar Kind
-A large object appears in the sky, moves in a strange fashion and vanishes after abducting a lone PC. The PC is later returned unharmed, but has several traits changed on his character sheet, no memory of the event and continually has strange dreams about goblins in space wearing lab coats and holding glowing wands.
-
-4. Ground Zero
-As the PCs approach a major city, the city is destroyed by a massive explosion that knocks the PCs off of their feet. A cloud of smoke and fire rises into the air to blow away normal clouds. Rain falls black as pitch and strange mutations occur in surviving people and animals. Those mages and their experiments…
-
-5. Wyrmfang Spill
-A wagon ahead of the PCs has an accident (breaks a wheel, horses spook, orcs attack and kill the driver) and it’s contents are spilled. a strange green cloud spills from the damaged wagon, plants quickly wither and die and animals in the area of the cloud sicken and also die in a few agonizing minutes.
-
-6. Footloose
-The master Golemist in town has gone off the deep end and is now certifiably insane. This insanity has trickled down into his creations, but thankfully he suffers from a peaceful dementia and now instead of rampaging and killing, his golemic creations wander about looking for dance partners. No music and a 1200 pound dance partner made of glass make for an interesting match…and flattened feet. Defying the golems makes them sullen and weepy.
-
-7. I, Golem
-The youngest member of the PC party gains a new henchman, a 12 foot golem made of granite, carved to look like a monsterous and formidable man of war. The golem, now masterless heard of a prophecy about a young hero and by its limited logic, said PC is the hero and the golem must protect him. Rather than becoming a deadly and brutal engine of war, the PC gains a two ton nanny with all the grace and composure of a 4000 pound slab of stone. Certainly handy when the orcs show up looking for blood, but a real pain with said PC decides to go about on private matters.
-
-8. Hang Ten!
-It starts as a rumble, then a deafening roar as the entire side of a mountain falls in a deadly shower of boulders and clouds of debris. Thankfully the PCs are not caught in the fall, but it just happens that the mountain pass is possibly closed…forever. For more adventure, the path beneath the PCs feet collapses, and they are left to ride what debris they can find on a break-neck race to the bottom.
-
-9. Earthquake!
-The ground heaves and shudders, startling animals, waking sleepers, sending birds screaming from the trees. Devastation is more visible in town as the local tower has fallen, several homes and destroyed and there is a chance of a fire, almost 100% if the quake hits in the evening time when everyone has their lanterns and candles lit. No noxious vapors steam out of the earth, no demons emerge, no strange magic effects start happening.
-
-10. Red Skies
-The PC on night watch notices a red glow, and in a matter of minutes, the PCs are being threatened by a raging wildfire. Trees explode into flame, the heat sucks breathable air away and water quickly evaporates in the inferno. You wake up, the forest is on fire.
-
-11. Neptune’s Revenge
-As the PCs are walking/riding along side the river, they notice it is rising visibly. A combination of massive rainfall upstream and a dam rupture will fill the river’s floodplain with water 15 feet deep in a matter of a few minutes. While it wouldn’t be the wall of water from a tsunami, once the water arrives, it will be many hours if not days or weeks before it subsides.
-
-12. Twister
-The bad storm takes a really bad twist, winds kick up to incredible speed, ripping thatch houses apart and flining debris around pell-mell. Then, the rain, hail, wind and lightning all stop. A muted roar announces the presence of the tornado as it marches relentlessly across the earth for a few miles of sheer destruction. Well mage…can you counterspell that thing?
-
-13. Time Runs Out
-In the distance, a mountain bulges and explodes in silent fury, creating a pillar of fire and ash that blots out the sun. A moment later, the pressure wave arrives, shaking trees and making ears pop. The volcano, long thought dead, has blown itself apart, creating a cloud of superheated ash, glass and poisonous vapors, rivers of water ash slurry called lahars, and ashfall measured in feet. In a few years, local plant harvests will be double the yield, but until rain comes, it is a no-man’s land of fluffy ash and death.
-
-14. Operation Black
-While strolling through the market of a major city, the PCs are knocked off of their feet and caught in a stampede of panicked people. A group of local radicals have set off an explosive weapon (keg of gunpowder, a vial of dragon’s bile, jar of demonic-nether-gas) in protest of the current ruling power. Guards take anyone not local into custody, there is looting and violence aplenty. The point of contention between the parties should in no real way involve the PCs, something like the cost of grain for millers outside the city, hunting rights of the commoners, or something equally inane and bizarre.
-
-15. Three Hour Tour
-The PCs, whilst traveling a short distance by ship, wreck and are marooned on a deserted island. Rather than being in the middle of the ocean, they are about 5 or 6 miles from the coast and in a few days or weeks they will be rescued if they haven’t found a way to get off of the island themselves.
-
-16. Snakes on a Frigate
-Whilst traveling on a long voyage, the PCs discover that a large number of (insert dangerous animal) have been released on the ship for the purpose of killing a certain passenger despite being protected by soldiers and mercenaries.
-
-17. I Hate Monkeys!
-Hoots and hollers fill the forest air around the PCs and a band of large primates charge out of the foliage armed with branches, boat paddles, and even a real weapon or two. After battling the berzerker gorillas (should be a good challenge) the PCs discover the corpse of a druid, the monkey’s master. The cause of death is accidental, the man choked on a piece of food and then his monkeys were left to fend for themselves and protect his body.
-
-18. Calamari
-While on an ocean crossing or other suitable deep water crossing, the PCs ship is attacked by a large kraken. Crewmen perish, the ship is damaged, but the monste is driven away after valiant combat and calamari is on the menu in the galley.
-
-19. OMFG GIANT SPIDERS!
-A wizard’s giant growth potion has been lost, it was spilled by the drunken mage one night. A sack of spider eggs absorbed the potion and as the spiders hatched they grew to frighteningly large size. Currently the size of a large housecat or dog, each generation will increase in size until the arachnids overrun the area and eat all of the humans. Time to get to squishing some bugs, though in the PCs favor, the spiders are not dangerously poisonous.
-
-20. The Zombie Strain
-A necromancer made a big big big mistake, creating a highly contagious version of the animate dead spell. Rather than creating a self replenishing army of dead under his control, the zombies spread their affliction to the living by fluid exchange. While not majorly dangerous themselves, the PCs will be infected and only have a few days at the most before succumbing to the infection and becoming a zombie themselves…unless there is a cure!
-
-21. The Body Filchers
-The PCs discover a village where all of the locals act very strange, almost wooden in their movements. A quick round of ‘sleuthing’ and they can discover that a potent spirit of the local forest has been abducting the locals and growing plant replicas of them to protect the forest and eliminate the danger of humans. The filched bleed amber treesap and are terrified of fire, axes, and leaf eating insects.
-
-22. The Tower Inferno
-Gala and fetes are things of courtly grace and splendor, events of decorum and etiquette. The stately tedium is interrupted by a fire spreading quickly through the palace, and the PCs are involved to help put out the flames and rescue important or self-important people from the blazing wreckage.
-
-23. Svengali
-The PCs encounter a village where there are no women, only men and boys working in the fields, they take no notice of the fact that there are no women. The women of the village no reside in the grand palatial estate of the Hypnotist, though none of the locals know him as anything other than the Good Father at the church. The Hypnotist (stroke oiled mustache) will try to enthrall the PCs to become his hounds of war and fight his un-enchanted foes hidding in the Wherever Hills.
-
-24. Village of the Werewolves
-The PCs are besieged by wolves under the light of the full moon, the next village they come too some days later is wary of the PCs and seems to know them despite it being their first trip to said village. The entire village is afflicted with lycanthropy and several villagers were slain by the PCs or severly injured by them. Attempts to ‘cure’ them will be met with derision and potential violence.
-
-25. Out of the Storm
-A bolt of lighting falls during a heavy downpour, flashroasting one of the PC’s mounts, fusing it’s metal barding together and instantly killing the poor creature.
-
-26. France! To Arms!
-A night by the river turns strange as the ground is quickly covered by a thick carpet of frogs and toads of all different sizes. Anything edible the amphibians eat, including each other, travel is done on a slick of frog blood and gore, and the smell after a few hours is quickly nauseating.
-
-27. Who turned off the lights?
-One morning the sun doesnt rise. No reason is to be given, other than a faint smile or a fiendish chuckle.
-
-28. Dead in the Pasture
-The PC’s mounts perish during the night for no apparent reason. The next village has been hit with the same affliction some days before and there is not a horse, ox, cow, or any toher critter over 1000 pounds in wieght to be found for miles. After a week or so, the effect ends and animals can enter the area again and not perish.
-
-29. Fly Hollow
-Traveling, the PCs find the ruins of a town, complete with macabre skeletons and dried out corpses. A steady drone fills the air and the sky is darkened by the wings of millions of black biting flies. This town has been forever cursed.
-
-30. What’s that Smell
-more fun with fire, instead of a forest or palace, the city itself has been caught up in a firestorm. Leaping from roof to roof, the flames will devour half of the city by morning, if only the PCs can make it to the river before the heat and smoke overcome them.
-
-/ http://www.roleplayingtips.com/readissue.php?number=464#tips
-
 1. Plagues
-With the wide range of methods disease can use to ravage creatures and people, plagues can take many forms: fast- moving viruses, flesh-eating bacteria, slow-developing strains that focus on the young or only men or only one race.
+With the wide range of methods disease can use to ravage creatures and people, plagues can take many forms: 
+fast- moving viruses, flesh-eating bacteria, slow-developing strains that focus on the young or only men or 
+only one race.
 
-The effects of the disease can be loaded with symbolic meaning, branding the sick physically, robbing them of the ability to create children, or deranging them mentally.
+The effects of the disease can be loaded with symbolic meaning, branding the sick physically, robbing them 
+of the ability to create children, or deranging them mentally.
 
 Wide-spread death would bring economic ruin, refugees, and other lamentations.
 
-Since the concept of viruses and bacteria don't fit your typical fantasy realm, all manner of scapegoats would be found: bad sacrifices, bad behaviors, evil people, or unclean races.
+Since the concept of viruses and bacteria don't fit your typical fantasy realm, all manner of scapegoats 
+would be found: bad sacrifices, bad behaviors, evil people, or unclean races.
 
 The disease could become an epidemic or even a pandemic.
 
 2. Global Warming or Cooling
-It might occur over generations. "The bards tell of times when rain will fall like soft feathers and lie on the ground like a cool blanket"
+It might occur over generations. "The bards tell of times when rain will fall like soft feathers and lie 
+on the ground like a cool blanket"
 
-alternatively, it could be magically fast. "The sun has not been seen for a year and the sea slips away from us. We have wronged the gods!"
+Alternatively, it could be magically fast. "The sun has not been seen for a year and the sea slips away 
+from us. We have wronged the gods!"
 
-Global warming can have wide-reaching effects such as drought, flooding, species migration or extinction, and conversion of arable land to dust.
+Global warming can have wide-reaching effects such as drought, flooding, species migration or extinction, 
+and conversion of arable land to dust.
 
-Cooling would draw the seas into ice and other opposites of warming. Weeks-long blizzards could freeze people and livestock, strand travelers, or shut down vital routes of trade for months at a time.
+Cooling would draw the seas into ice and other opposites of warming. Weeks-long blizzards could freeze 
+people and livestock, strand travelers, or shut down vital routes of trade for months at a time.
 
-If caused by the gods or evil magic, the effects might only apply to one people or one region, perhaps that of a hated rival. The effect might be considered a weapon in war with a broader reach and effect than any of its individual symptoms.
+If caused by the gods or evil magic, the effects might only apply to one people or one region, perhaps 
+that of a hated rival. The effect might be considered a weapon in war with a broader reach and effect 
+than any of its individual symptoms.
 
 3. Drought
-Water is life. When the rain does not fall and the heat remains unabated, crops will fail, the livestock will waste and die, and famine will raise its claw over the hand, striking at the pained bellies of the children and the weak.
+Water is life. When the rain does not fall and the heat remains unabated, crops will fail, the livestock 
+will waste and die, and famine will raise its claw over the hand, striking at the pained bellies of the 
+children and the weak.
 
-Plants will suffer and wither, leaving dry, cracked earth. Without divine or arcane relief, drought can slowly kill off a region of the world.
+Plants will suffer and wither, leaving dry, cracked earth. Without divine or arcane relief, drought can
+slowly kill off a region of the world.
 
-Perhaps the plane of fire is breaking down the barrier to the mortal realm? A bleeding sun or the eruption of volcanoes might accentuate the effect.
+Perhaps the plane of fire is breaking down the barrier to the mortal realm? A bleeding sun or the eruption
+of volcanoes might accentuate the effect.
 
 4. Flooding
-Too much water is not much better than too little. As the rains continue to fall and the rivers swell, riverside communities will be abandoned, crops ruined under the flood waters, valuables might be washed away or buried under new fields of mud and silt.
+Too much water is not much better than too little. As the rains continue to fall and the rivers swell, 
+riverside communities will be abandoned, crops ruined under the flood waters, valuables might be washed
+away or buried under new fields of mud and silt.
 
-Villages might be swept away with no evidence left after the floodwaters recede. The floods also bring disease for livestock and people. Refugees will take the illness with them as they pull up their roots and try to migrate elsewhere.
+Villages might be swept away with no evidence left after the floodwaters recede. The floods also bring
+disease for livestock and people. Refugees will take the illness with them as they pull up their roots
+and try to migrate elsewhere.
 
-The water will be poor to drink after the rains end. Noted figures might have been swept away and thought drowned. Perhaps the floods occurred upland, swelling up behind a natural barrier, only to break through and deluge a major city or an army in the field at the crucial moment in a war.
+The water will be poor to drink after the rains end. Noted figures might have been swept away and thought
+drowned. Perhaps the floods occurred upland, swelling up behind a natural barrier, only to break through
+and deluge a major city or an army in the field at the crucial moment in a war.
 
 5. Tornadoes
-More of a surgical strike in the world of disasters, tornadoes can rip narrow paths across miles of land. Clusters might destroy a small town, but don't last in a city.
+More of a surgical strike in the world of disasters, tornadoes can rip narrow paths across miles of land.
+Clusters might destroy a small town, but don't last in a city.
 
-The effect would work best at a personal level; the complete destruction of a single homestead while the nearest neighbor is left untouched is bound to bring suspicion.
+The effect would work best at a personal level; the complete destruction of a single homestead while the
+nearest neighbor is left untouched is bound to bring suspicion.
 
 Perhaps you can take a cue from the Wizard of Oz and have tornadoes be violent portals to other places.
 
 6. Hurricanes, Cyclones and Typhoons
-These are storms at sea that strike the coastline, bringing with them a storm surge of water and massive flooding.
+These are storms at sea that strike the coastline, bringing with them a storm surge of water and massive
+flooding.
 
-High winds could tear things apart or throw people around. Torrential rains could cause flash flooding, trapping or drowning individuals or small groups.
+High winds could tear things apart or throw people around. Torrential rains could cause flash flooding,
+trapping or drowning individuals or small groups.
 
-Their effects can last many hours, making them a perfect setting for that adventure you wanted to run with some extra challenge to it. A race around a city becomes much more interesting fighting hurricane force winds and flooding.
+Their effects can last many hours, making them a perfect setting for that adventure you wanted to run
+with some extra challenge to it. A race around a city becomes much more interesting fighting hurricane
+force winds and flooding.
 
-Naturally, surviving such storms while at sea can be a tremendous challenge, sinking whole war fleets or opening a portal to an undersea kingdom.
+Naturally, surviving such storms while at sea can be a tremendous challenge, sinking whole war fleets or
+opening a portal to an undersea kingdom.
 
 7. Earthquakes
-By definition, these can shake up an adventure or campaign. If the heroes are in a dungeon, the shape of the dungeon could change radically, becoming unstable and making them race to get out alive.
+By definition, these can shake up an adventure or campaign. If the heroes are in a dungeon, the shape of
+the dungeon could change radically, becoming unstable and making them race to get out alive.
 
-Prominent buildings or even Wonders of the World might collapse due to the quake. Is it a god stomping upon the face of the earth? Is it the anger of the spirits inside the deep underground?
+Prominent buildings or even Wonders of the World might collapse due to the quake. Is it a god stomping upon
+the face of the earth? Is it the anger of the spirits inside the deep underground?
 
-An earthquake at sea can cause a tsunami, a towering wave of water that smashes into the coast, destroying everything up to a mile from the shore.
+An earthquake at sea can cause a tsunami, a towering wave of water that smashes into the coast, destroying
+everything up to a mile from the shore.
 
-Uncontrolled flames could erupt into fires in cities or forests. An earthquake might even unleash a volcano from the depths.
+Uncontrolled flames could erupt into fires in cities or forests. An earthquake might even unleash a volcano
+from the depths.
 
 8. Volcanoes
-These monsters have many ways of hurting you: the initial blast of the eruption with fires searing ash and rock out over a large area, the flow of lava - either crumbly, gluey, or super hot and fast like a pyroclastic flow - down from the mouth, and clouds of ash for days afterward choking people and animals, piling up and abrading surfaces.
+These monsters have many ways of hurting you: the initial blast of the eruption with fires searing ash and
+rock out over a large area, the flow of lava - either crumbly, gluey, or super hot and fast like a
+pyroclastic flow - down from the mouth, and clouds of ash for days afterward choking people and animals,
+piling up and abrading surfaces.
 
-All sorts of fire-related causes could be at play: the birth of a nest of red dragons, salamanders invading from the plane of fire, the heart of deep earth unleashed by unwise or careless mages, or dwarves delving too deep.
+All sorts of fire-related causes could be at play: the birth of a nest of red dragons, salamanders invading
+from the plane of fire, the heart of deep earth unleashed by unwise or careless mages, or dwarves delving
+too deep.
 
 9. Forest Fires
-The same sources of volcanic wrath can be blamed for forest fires. In addition, the lightning strike of storm giants or breath of dragons might light the blaze.
+The same sources of volcanic wrath can be blamed for forest fires. In addition, the lightning strike of 
+storm giants or breath of dragons might light the blaze.
 
-The fire destroys great swaths of forest endangering or destroying forest-based civilizations such as elves. Homes, villages, crops, trapped people and livestock can all be burnt to ash.
+The fire destroys great swaths of forest endangering or destroying forest-based civilizations such as elves.
+Homes, villages, crops, trapped people and livestock can all be burnt to ash.
 
-Complain to a druid and they might explain it is all part of the natural cycle, allowing the forest to renew itself.
+Complain to a druid and they might explain it is all part of the natural cycle, allowing the forest to renew
+itself.
 
 10. Landslide, Mudslides and Avalanches
-Up on the slopes, the vertical movement of land and snow can change the face of everything, swallowing up people, things, and places in a few moments. But it can also reveal entrances to long-lost tombs high on the mountain side.
+Up on the slopes, the vertical movement of land and snow can change the face of everything, swallowing up
+people, things, and places in a few moments. But it can also reveal entrances to long-lost tombs high on
+the mountain side.
 
-Lower down, slides tend to be of dirt, either dry or water- logged, which can have similar terrain-shaping effects. If earth elementals are involved, the slide could actually be the beginning of a war.
+Lower down, slides tend to be of dirt, either dry or water- logged, which can have similar terrain-shaping
+effects. If earth elementals are involved, the slide could actually be the beginning of a war.
 
 11. Thunderstorms and Hail Storms
-At the right time, even thunderstorms can feel like a natural disaster. Imagine scaling that mountain face to the remote cave in high winds and lightning, footing made treacherous by horizontal rain.
+At the right time, even thunderstorms can feel like a natural disaster. Imagine scaling that mountain face
+to the remote cave in high winds and lightning, footing made treacherous by horizontal rain.
 
 Heavy storms can create mudslides or may be accompanied by hail or other bizarre atmospheric effects.
 
-And nothing says mood like a thunderstorm, gently herding our protagonists to the house on the hill as the only shelter from the violent storm.
+And nothing says mood like a thunderstorm, gently herding our protagonists to the house on the hill as the
+only shelter from the violent storm.
 
 12. Impact Events
-This happens when something falls from the sky - hard. An impact could knock down millions of trees, create earthquakes and tsunamis, or even touch off a firestorm if it explodes just above the ground.
+This happens when something falls from the sky - hard. An impact could knock down millions of trees, create
+earthquakes and tsunamis, or even touch off a firestorm if it explodes just above the ground.
 
 Some explode in the atmosphere with a huge fireball. Surely this is a message from the gods!
 
 13. Consequences of Disaster
-Even if there aren't malevolent forces at work, a disaster can still carry a story purpose. Heroes can emerge in times of calamity; empires can be weakened as the rules get changed overnight.
+Even if there aren't malevolent forces at work, a disaster can still carry a story purpose. Heroes can
+emerge in times of calamity; empires can be weakened as the rules get changed overnight.
 
-If used carefully, a big disaster could help you do a reboot on your campaign world. In mine, a massive earthquake caused an ancient lost city to rise again. Naturally, it was the PCs who triggered the earthquake.
+If used carefully, a big disaster could help you do a reboot on your campaign world. In mine, a massive
+earthquake caused an ancient lost city to rise again. Naturally, it was the PCs who triggered the earthquake.
 
-Disasters have many consequences. People will come to different conclusions about the cause of the disaster. This is why a disaster might cause the resurrection of a death cult at the same time the traditional good religion has resurgence.
+Disasters have many consequences. People will come to different conclusions about the cause of the disaster.
+This is why a disaster might cause the resurrection of a death cult at the same time the traditional good
+religion has resurgence.
 
-In some places, a minority might be made scapegoats and persecuted. Multitudes of refugees could be sent into dangerous lands or overrun nearby cities. Starvation and disease might become rampant, taxing the abilities of clerics to respond.
+In some places, a minority might be made scapegoats and persecuted. Multitudes of refugees could be sent
+into dangerous lands or overrun nearby cities. Starvation and disease might become rampant, taxing the
+abilities of clerics to respond.
 
-The shape of the world might be changed not just physically but also politically. Economic fortunes can be made or lost because of a disaster: a merchant fleet lost at sea, new veins of gold exposed, spiking prices for basic goods now in short supply.
+The shape of the world might be changed not just physically but also politically. Economic fortunes can be
+made or lost because of a disaster: a merchant fleet lost at sea, new veins of gold exposed, spiking prices
+for basic goods now in short supply.
 
-Nations, merchant houses, and powerful families could be raised or put down in the aftermath. Populated areas might be stripped of their people, empty lands might suddenly be filled by refugees or opportunists. Ancient and long lost places, artifacts, and ruins might be unearthed through the power of disaster. New monsters might be unleashed.
+Nations, merchant houses, and powerful families could be raised or put down in the aftermath. Populated areas
+might be stripped of their people, empty lands might suddenly be filled by refugees or opportunists. Ancient
+and long lost places, artifacts, and ruins might be unearthed through the power of disaster. New monsters
+might be unleashed.
 
-As terrible as they are in our world, disasters might be even worse in a fantasy realm - the Rule of Biblical Proportions. You don't just have flooding along the main river system; you flood the world for 40 days. Diseases could spread across many species, people, and plants.
+As terrible as they are in our world, disasters might be even worse in a fantasy realm - the Rule of Biblical
+Proportions. You don't just have flooding along the main river system; you flood the world for 40 days.
+Diseases could spread across many species, people, and plants.
 
-If people are prepared for the event it might not result in a disaster. An area prone to earthquakes might have magical preventions or ways to keep people and buildings safe, minimizing the effect of the natural hazard on the people.
+If people are prepared for the event it might not result in a disaster. An area prone to earthquakes might
+have magical preventions or ways to keep people and buildings safe, minimizing the effect of the natural
+hazard on the people.

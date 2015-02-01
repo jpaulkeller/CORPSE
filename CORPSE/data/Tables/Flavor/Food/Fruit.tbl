@@ -1,15 +1,39 @@
-apple
-banana
-cherry
+: Fruit
+2x apricot
+2x papaya
+2x quince
+2x starfruit
+3x mango
+3x plum
+4x banana
+4x kiwifruit
+4x peach
+4x {:melon}
+5x black cherry
+5x pear
+5x pumpkin
+5x sour cherry
+6x {:citrus}
+7x apple
+8x red grape
+8x white grape
+cactus fruit
+coconut
+crabapple
 date
 fig
-grape
-kiwi
-mango
-melon
 nectarine
-orange
-peach
-pear
-plum
+persimmon
 pomegranate
+tamarind
+
+: Citrus
+grapefruit
+lemon
+lime
+orange
+
+: Melon
+10x watermelon
+8x cantaloupe
+6x honeydew melon

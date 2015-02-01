@@ -1,0 +1,76 @@
+: Helm
+86x {: mq6} {: mm}
+6x captain’s visor {: mm} with a plume of {: ClothingFemale.Cloth_Color}
+5x plumed helm {: mm} with {: ClothingFemale.Cloth_Color} feathers
+3x {: mqu3} helmet {: mm} with horns of {: Utility.HornIvory}
+3x {: mqu4} helmet {: mm} with a plume of {: ClothingFemale.Cloth_Color}
+5x skullcap {:of} {: metal flavor} {fur and pelt:hide} hide
+2x bandit’s wrap {: ml}
+2x buccaneer’s hat {: ml} with a band of {: ClothingFemale.Cloth_Color} cloth
+2x ranger’s cap {: ml} with {2d4} {: ClothingFemale.Cloth_Color} feathers in the brow
+crusader greathelm {: mm} with horns of {: Utility.HornIvory}
+jousting helmet {: mm} with plumes of {: ClothingFemale.Cloth_Color} and {: ClothingFemale.Cloth_Color}
+lion helmet {:of} {: metal flavor} {fur and pelt:hide} hide
+troubador’s helm {:of} {: metal flavor} {fur and pelt:hide} hide with {2d4} {: ClothingFemale.Cloth_Color} feathers in the brow
+winged northman’s helmet {: mm} with wings of {: metal flavor} {: Utility.MetalArmor}
+
+: mqu
+5x full-faced
+5x open
+5x visored
+“pigface”
+armet
+barbute
+bascinet
+battle
+burgonet
+cabasset
+chainmail siege
+clamshell closed
+common kettle
+dwarvish light
+eastern spangenhelm
+elven barbute
+elvish feathered
+executioner’s
+full-plate siege
+knight’s
+maximillian
+morion
+open elven
+open-faced
+pembridge
+salade
+sallet
+sentinel
+skull-faced
+sugarloaf
+trooper
+
+: mq2
+5x full-faced
+5x open
+5x visored
+3x cavalier’s
+
+: mq3
+horned
+norman
+northlander’s
+
+: mq4
+corinthian
+gladiator’s
+plumed closed
+
+: mq5
+cap
+capette
+coif
+skullcap
+
+: mq6
+43x {: mqu} helmet
+24x {: mq5}
+18x {: mq2} helm
+spangenhelm

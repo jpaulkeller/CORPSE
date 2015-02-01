@@ -48,12 +48,11 @@ village
 waterway
 well
 wharf
+{50%{:adj} }{50%{:condition} }{~{structure}}
 {:condition} shrine ({Religion})
-{:condition} {~{structure}}
 {mineral} quarry 
 {mine} mine 
 {wood:fruit} orchard 
-{~{structure}}
 {~{structure}} ({:abandoned})
 {~{structure}} destroyed by {disaster}
 
@@ -136,8 +135,27 @@ wellspring
 {fauna} trail
 {fauna} {den|lair|nest} 
 
+: Adj
+ancient
+archaic
+daunting
+famous
+forgotten
+important
+imposing
+legendary
+mighty
+obsolete
+old
+once important
+once mighty
+spooky
+strategically placed
+strong
+sturdy
+venerable
+
 : Condition
-abandoned
 collapsed
 decrepit
 demolished
@@ -152,7 +170,8 @@ ruined
 ruins of a
 storm-damaged
 vermin-infested
-well-maintained
+{poorly|well}-constructed
+{poorly|well}-maintained
 
 : Abandoned
 abandoned after a {disaster}
@@ -160,6 +179,8 @@ believed to be haunted
 burned to the ground
 frequented by {criminals|lycanthropes|undead}
 hideout for brigands
+long-forgotten
 marked with warning signs
 only used seasonally
 roosting site for {stirges|{20%venomous }bats}
+{33%long-}abandoned

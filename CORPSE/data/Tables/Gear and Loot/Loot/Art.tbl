@@ -13,7 +13,7 @@
 {50%{small|large} }{75%{made of:fabric} }{:weaving} depicting {:SUBJECT}
 {50%{small|large} }{:drawing} depicting {:SUBJECT}
 {50%{small|large} }{:medium} of {:OF}
-{75%{size:simile medium}-sized }{:abstract} made of {made of:hard}{50% {:decorated}}
+{75%{size:relative medium}-sized }{:abstract} made of {made of:hard}{50% {:decorated}}
 
 : Abstract
 cube
@@ -52,6 +52,7 @@ etching
 mosaic
 mural
 sketch
+triptych
 {oil|wall|watercolor} painting
 
 : Weaving
@@ -148,7 +149,7 @@ unknown mountains
 weapons
 {: water} water
 {:OF}
-{BATTLE}
+{BATTLE NAME}
 {:BOATS}
 {Group Name}
 {minstrels|musicians|performers} in the court of {Noble Name}

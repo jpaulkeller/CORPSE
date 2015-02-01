@@ -15,10 +15,12 @@ a pack of {75%{:size} }{50%{:adjective} }{{fauna}+}
 a swarm of {75%{:size} }{50%{:adjective} }{{insect}+}
 
 : Size
-tiny
 unusually large
 giant
-huge 
+huge
+tremendous
+gigantic
+monstrous 
 
 : Adjective
 angry

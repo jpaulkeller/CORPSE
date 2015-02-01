@@ -7,6 +7,59 @@
 : Sword = .*piercing or slashing.* 
 : Axe   = .*slashing.* 
 
+: Weapon
+{:melee}
+{:ranged}
+
+: Melee
+{:simple light}
+{:simple one-handed melee}
+{:simple two-handed melee}
+{:martial light}
+{:martial one-handed melee}
+{:martial two-handed melee}
+{:exotic light}
+{:exotic one-handed melee}
+{:exotic two-handed melee}
+
+: Ranged
+{:simple ranged}
+{:martial ranged}
+{:exotic ranged}
+
+: Light
+{:simple light}
+{:martial light}
+{:exotic light}
+
+: One-handed
+{:simple one-handed melee}
+{:martial one-handed melee}
+{:exotic one-handed melee}
+
+: Two-handed
+{:simple two-handed melee}
+{:martial two-handed melee}
+{:exotic two-handed melee}
+
+: Simple
+{:simple light}
+{:simple one-handed melee}
+{:simple two-handed melee}
+{:simple ranged}
+
+: Martial
+{:martial light}
+{:martial one-handed melee}
+{:martial two-handed melee}
+{:martial ranged}
+
+: Exotic
+{:exotic light}
+{:exotic one-handed melee}
+{:exotic two-handed melee}
+{:exotic ranged}
+
 .Weapon                      Cost        Dmg (S)      Dmg (M)      Dmg (L)          Critical          Range Incr       Weight        Type                      Source
 
 : Unarmed

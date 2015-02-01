@@ -17,7 +17,7 @@ They will attack or harass anyone who enters their territory.
 They will allow travellers to pass through their territory by a particular route, but attack them if they leave the route. They may also attack travellers who stop for too long.
 They may hide from travellers, or attack them, depending on how strong the travellers seem.
 They will hide from travellers. If cornered they will fight or give in, depending on how strong the travellers seem. If the travellers take any of their goods they may pursue them.
-They will be friendly to strangers, but won't give any help unless it's paid for (payment isn't necessarily in the form of currency). If the travellers are obviously close to death they will help, but expect payment afterwards. If the travellers take something without paying there is likely to be violence - either immediately if they're powerful enough, or as soon as they can call the sheriff / get a mob together.
+They will be friendly to strangers, but won't give any help unless paid for (payment isn't necessarily in the form of currency). If the travellers are obviously close to death they will help, but expect payment afterwards. If the travellers take something without paying there is likely to be violence - either immediately if they're powerful enough, or as soon as they can call the sheriff / get a mob together.
 As above, but if the travellers are close to death they will help without expecting payment.
 As above, As above, but if the travellers are close to death they will help without expecting payment, and they will give information for free, only expecting payment for more substantial forms of help.
 They will give food, water and shelter to any travellers without expecting payment, but out of duty rather than inclination. They won't offer any help unless asked, or unless the travellers are obviously in a bad way, and will grudgingly give the minimum their code allows.
@@ -34,23 +34,23 @@ Their reaction may be any that appear on this table, depending on a complicated 
 / For creatures that live in groups, 'half its strength' means 'at least half the creatures in the group who are able to fight are alive and unwounded'
  
 Will fight to the death. Will pursue anyone who attempts to retreat.
-Will fight to the death. Will pursue anyone who tries to retreat unless it's down to a quarter of its strength or less.
+Will fight to the death. Will pursue anyone who tries to retreat unless down to a quarter strength or less.
 Will fight to the death, but will not pursue enemies.
-Will fight until it's down to half strength or less, and will then try to run away. If there's no escape, will surrender. Will pursue enemies if it has at least half its strength.
-Will fight until it's down to half strength or less, and will then try to run away. If there's no escape, will surrender. Will not pursue enemies.
-Will fight until it's down to half strength or less, and will then try to run away. If there's no escape, will fight to the death. Will pursue enemies if it has at least half its strength.
-Will fight until it's down to half strength or less, and will then try to run away. If there's no escape, will fight to the death. Will not pursue enemies.
-Will fight until it's down to half strength or less, then will surrender. Will pursue enemies if it has at least three-quarters of its strength.
-Will fight until it's down to half strength or less, then will surrender. Will not pursue enemies.
-Will only fight until it's wounded, and will then try to run away. If there's no escape, will fight to the death. Will not pursue enemies.
-Will only fight until it's wounded, and will then try to run away. If there's no escape, will fight to the death. Will only pursue enemies if unwounded.
+Will fight until down to half strength or less, and will then try to run away. If there's no escape, will surrender. Will pursue enemies if it has at least half its strength.
+Will fight until down to half strength or less, and will then try to run away. If there's no escape, will surrender. Will not pursue enemies.
+Will fight until down to half strength or less, and will then try to run away. If there's no escape, will fight to the death. Will pursue enemies if it has at least half its strength.
+Will fight until down to half strength or less, and will then try to run away. If there's no escape, will fight to the death. Will not pursue enemies.
+Will fight until down to half strength or less, then will surrender. Will pursue enemies if it has at least three-quarters of its strength.
+Will fight until down to half strength or less, then will surrender. Will not pursue enemies.
+Will only fight until wounded, and will then try to run away. If there's no escape, will fight to the death. Will not pursue enemies.
+Will only fight until wounded, and will then try to run away. If there's no escape, will fight to the death. Will only pursue enemies if unwounded.
 as above.
-Will only fight until it's wounded, and will then try to run away. If there's no escape, will fight until it's down to half strength or less, and will then surrender. Will not pursue enemies.
-Will only fight until it's wounded, and will then try to run away. If there's no escape, will fight until it's down to half strength or less, and will then surrender. Will only pursue enemies if unwounded.
+Will only fight until wounded, and will then try to run away. If there's no escape, will fight until down to half strength or less, and will then surrender. Will not pursue enemies.
+Will only fight until wounded, and will then try to run away. If there's no escape, will fight until down to half strength or less, and will then surrender. Will only pursue enemies if unwounded.
 Will always attempt to run away. If there's no escape, will surrender. Will not pursue enemies.
 Will always attempt to run away. If there's no escape, will fight to the death. Will not pursue enemies.
-Will always attempt to run away. If there's no escape, will fight until it's wounded, and will then surrender. Will not pursue enemies.
-Will always attempt to run away. If there's no escape, will fight until it's down to half strength or less, and will then surrender. Will not pursue enemies.
+Will always attempt to run away. If there's no escape, will fight until wounded, and will then surrender. Will not pursue enemies.
+Will always attempt to run away. If there's no escape, will fight until down to half strength or less, and will then surrender. Will not pursue enemies.
  
 / Attitudes to Strangers
 / This table is useful to decide how a group, whether human or not, will react to strangers (most obviously the player characters)
@@ -59,7 +59,7 @@ They will attack or harass anyone who enters their territory.
 They will allow travellers to pass through their territory by a particular route, but attack them if they leave the route. They may also attack travellers who stop for too long.
 They may hide from travellers, or attack them, depending on how strong the travellers seem.
 They will hide from travellers. If cornered they will fight or give in, depending on how strong the travellers seem. If the travellers take any of their goods they may pursue them.
-They will be friendly to strangers, but won't give any help unless it's paid for (payment isn't necessarily in the form of currency). If the travellers are obviously close to death they will help, but expect payment afterwards. If the travellers take something without paying there is likely to be violence - either immediately if they're powerful enough, or as soon as they can call the sheriff / get a mob together.
+They will be friendly to strangers, but won't give any help unless paid for (payment isn't necessarily in the form of currency). If the travellers are obviously close to death they will help, but expect payment afterwards. If the travellers take something without paying there is likely to be violence - either immediately if they're powerful enough, or as soon as they can call the sheriff / get a mob together.
 As above, but if the travellers are close to death they will help without expecting payment.
 As above, As above, but if the travellers are close to death they will help without expecting payment, and they will give information for free, only expecting payment for more substantial forms of help.
 They will give food, water and shelter to any travellers without expecting payment, but out of duty rather than inclination. They won't offer any help unless asked, or unless the travellers are obviously in a bad way, and will grudgingly give the minimum their code allows.

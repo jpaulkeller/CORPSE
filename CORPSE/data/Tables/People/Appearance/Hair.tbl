@@ -12,13 +12,18 @@ is clean-shaven
 
 : Bald
 bald
+balding
 shaved
 
 : Length
 cropped
-long
-short
-{shoulder|neck}-length
+medium length
+neck length
+relatively short
+shoulder length
+waist length
+{50%{degree} }long
+{50%{degree} }short
 
 : Style
 curly

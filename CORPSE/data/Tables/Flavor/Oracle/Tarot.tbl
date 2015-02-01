@@ -1,6 +1,36 @@
 // http://www.tarot-cards-meanings-guide.com/list-of-tarot-card-meanings.html
 
 .Card, Primary, Secondary
+
+: Tarot
+52x {:minor}
+22x {:major}
+
+: Minor
+{:number} of {:suit}
+
+: Suit
+coins
+cups
+swords
+wands
+
+: Number
+Ace
+Two
+Three
+Four
+Five
+Six
+Seven
+Eight
+Nine
+Ten
+Knight
+Queen
+King
+
+: Major
 The Chariot;Triumph and success. Self-confidence and will-power;Hard work, success comes with time
 The Death;Transformation. New cycle. Blessing in disguise;Stagnation, refusal to accept changes
 The Devil;Bondage, slavery. Desire for material things and hording;Chains of oppression might break. Freedom to choose

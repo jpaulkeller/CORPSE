@@ -17,7 +17,7 @@
 25x {:dart type}
 45x {:javelin type}
 2x boomerang
-5x {:bola type}
+5x {:bola}
 
 : thrown
 25x {:dart}
@@ -47,9 +47,9 @@
 : shaft color
 10x in its natural color
 12x painted {color:dark}
-4x painted {color:dull}
+4x painted {color:drab}
 4x painted {color:light}
-1x engraved with runes in {rune language}
+1x engraved with runes in {humanoid:language}
 1x engraved with knotwork
 
 : fletching
@@ -57,9 +57,9 @@
 2x fletching of two {:fletching color} feathers and one {:fletching color{!different}} feather
 
 : fletching color
-2x {:color.dark}
-1x {:color.dull}
-1x {:color.light}
+2x {color:dark}
+1x {color:dull}
+1x {color:light}
 
 : bolt type
 100x crossbow bolts

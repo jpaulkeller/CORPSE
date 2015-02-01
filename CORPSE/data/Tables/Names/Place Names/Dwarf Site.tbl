@@ -1,7 +1,7 @@
 : Dwarf Site
 4x {:Place Prefix}{:place suffix}
 3x {Dwarf Name:Male First}'s {:Place Site}
-3x {Dwarf Name.Male Surname}'s {:Place Site}
+3x {Dwarf Name:Male Surname}'s {:Place Site}
 {:Place Adj} {:Place Site}
 
 : Place Prefix

@@ -9,7 +9,7 @@ A {:group} {20%{:wearing} }{80%{:GROUP ACTIVITY}}
 A {:young} {:YOUNG ACTIVITY}
 
 : Group
-{small |large |}{:group name} of {75%{15%{degree:adjective} }{appearance} }{{:member}+}
+{small |large |}{:group name} of {75%{15%{degree} }{appearance} }{{:member}+}
 
 : Young
 {small |large |}group of {75%{appearance} }{children|kids|urchins|orphans}
@@ -72,7 +72,7 @@ is drawing {a map|strange symbols|runes|a picture} with chalk on the road
 
 emptied a chamber pot {near|on} the PCs
 asks to join the party
-asks the PCs to watch {his|her| care for a minute
+asks the PCs to watch {his|her} {cart|child|pet} for a minute
 is getting amorous with a {NPC}
 is looking for a pet {pet}
 recognizes one of the PCs

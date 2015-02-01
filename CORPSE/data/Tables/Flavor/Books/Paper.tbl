@@ -52,7 +52,7 @@ proclamation from {Title Feudal} {Name}
 promissory note for {100-1000} {copper|silver|gold} if returned to {Name}
 ransom note
 receipt from {Inn Name}
-recipe for {{menu.fare}|{potion} potion}
+recipe for {{menu:fare}|{potion} potion}
 riddle
 rune
 scroll of {TSR scroll}
