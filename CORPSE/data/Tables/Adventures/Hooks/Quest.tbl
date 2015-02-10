@@ -1,34 +1,34 @@
 // inspired by http://donjon.bin.sh/fantasy/random/#quest
 
 : Quest
-{PROTAGANIST} seeks a party to {:TASK}{25% {:without}}{25% {:before}}{25%, {:or}}.{33%  But {plot twist}.}
+{PROTAGONIST} seeks a party to {:TASK}{25% {:without}}{25% {:before}}{25%, {:or}}.{33%  But {plot twist}.}
 
 : Task
 activate the {Special Item}
-capture {PROTAGANIST}
-defend the {PROTAGANIST}
+capture {PROTAGONIST}
+defend the {PROTAGONIST}
 defend the {Place} from {ANTAGONIST} 
 destroy the {ANTAGONIST}
 destroy the {Special Item}
 discover the fate of {Group Name} lost in {Dungeon Name}
 escort {a caravan|an old man|a group of pilgrims|the {Special Item}} safely to {PLACE}
-expose a {trait:bad} {PROTAGANIST}
+expose a {trait:bad} {PROTAGONIST}
 find a cure for {Disease}
-find {PROTAGANIST}
+find {PROTAGONIST}
 gain control of {{Special Item}|{PLACE}}
 guard {{Special Item}|{PLACE}}
-help the {PROTAGANIST}
+help the {PROTAGONIST}
 journey to {PLACE}
 learn the schemes of the {ANTAGONIST}
 meet at the {site}
 prove themselves worthy by slaying {ANTAGONIST}
 retrieve {Special Item}
 search {PLACE} for signs of {ANTAGONIST}
-win the friendship of the {{PROTAGANIST}|{ANTAGONIST}}
+win the friendship of the {{PROTAGONIST}|{ANTAGONIST}}
 {50%find and }explore {Dungeon Name}
-{50%find and }kill {PROTAGANIST}
+{50%find and }kill {PROTAGONIST}
 {50%find and }recover {Special Item} from {75%?{ANTAGONIST}:{PLACE}}
-{50%find and }rescue {PROTAGANIST} from {75%?{ANTAGONIST}:{PLACE}}
+{50%find and }rescue {PROTAGONIST} from {75%?{ANTAGONIST}:{PLACE}}
 
 : Before
 before the {event}

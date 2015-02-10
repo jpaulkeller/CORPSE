@@ -22,9 +22,9 @@
     {33%<li>Condition: {condition:book}}
     {10%<li>Extra: {found in book}}
   </ul>
-!end
+!loop end
 </ul>
-!end
+!loop end
 
 </body>
 </html>

@@ -34,7 +34,7 @@ volcanic eruption
 waterspout
 whirlpool
 
-: Unnatural
+: Man-made
 assassination ({local|regional|factional|national} {official|ruler|high priest|hero})
 assault
 bandits
@@ -42,6 +42,7 @@ birth
 blast
 border skirmish
 cultural discovery
+epidemic ({disease})
 fanatic cult
 important visitor ({regional|factional|national} {official|ruler|high priest|hero})
 insurrection
@@ -50,8 +51,8 @@ magical happening
 market {glut|shortage}
 migration
 onslaught
-pandemic
-plague
+pandemic ({disease})
+plague ({disease})
 pretender/usurper
 raiders
 rebellion

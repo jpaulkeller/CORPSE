@@ -2,8 +2,9 @@
 
 / Use {~{accessory}} to format the name.
 
-.Accessory            Cost      Weight
+: Accessory
 
+.Accessory            Cost      Weight
 apron
 felt cap 
 hanger, balderic      4 gp     1
@@ -19,3 +20,37 @@ scissors              5 cp     1
 spool of thread       5-10 bp  0.5
 sword scabbard      
 woven straw hat 
+
+: Male
+baldric {:of} {: ClothingFemale.Mat_Combo_Common}
+bandoleer {:of} {: ClothingFemale.Mat_Combo_Leather}
+belt {: ml} with {: Utility.MetalArmor} buckle
+cape {:of} {: ClothingFemale.Mat_Combo_Common} and {: ClothingFemale.MaterialsFancy}
+cloak {:of} {: ClothingFemale.Mat_Combo_Common}
+codpiece {: ml} and {: Utility.MetalArmor}
+gorget {: ml} and {: metal flavor} {: Utility.MetalArmor}
+mantle {:of} {: ClothingFemale.Mat_Combo_Common}
+pair of chain gauntlets {:of} {: Utility.MetalArmor}
+pair of gauntlets {:of} {: ClothingFemale.Mat_Combo_Leather}
+pair of gloves {:of} {: ClothingFemale.Mat_Combo_Leather}
+pair of heavy chain gauntlets {:of} {: Utility.MetalArmor}
+pair of heavy plated gauntlets {:of} {: Utility.MetalArmor}
+pair of plated gauntlets {:of} {: Utility.MetalArmor}
+pair of riding gloves {:of} {: ClothingFemale.Mat_Combo_Leather}
+plaid of {: ClothingFemale.Mat_Combo_Leather} with a brooch of {: Utility.MetalDecor}
+riding cape {:of} {: ClothingFemale.Mat_Combo_Common} and {: ClothingFemale.MaterialsFancy}
+riding cloak {:of} {: ClothingFemale.Mat_Combo_Common} and {: ClothingFemale.MaterialsFancy}
+riding mantle {:of} {: ClothingFemale.Mat_Combo_Common} and {: ClothingFemale.MaterialsFancy}
+sash {:of} {: ClothingFemale.Mat_Combo_Fancy}
+scarf {:of} {: ClothingFemale.Cloth_Color} wool
+spiked collar {: ml} and {: metal flavor} {: Utility.MetalArmor}
+sporran {:of} {: ClothingFemale.Mat_Combo_Leather}
+traveller’s cloak {:of} {: ClothingFemale.Mat_Combo_Common}
+
+: Military
+apron {: ml}
+baldric {:of} {: ClothingFemale.MaterialsCommon}
+belt {: ml}
+cloak {:of} {: ClothingFemale.MaterialsCommon}
+sword belt {: ml}
+tabard {:of} {: ClothingFemale.MaterialsCommon} and bearing the unit’s coat of arms

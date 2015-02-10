@@ -50,7 +50,7 @@ jewelery             {jewelery}
 footware             {~{shoe}}
 
 : Consumable
-drink                {menu:drink}
+drink                {drink}
 food                 {berry}
 food                 {salad:ingredient}
 food                 {{fruit}+}

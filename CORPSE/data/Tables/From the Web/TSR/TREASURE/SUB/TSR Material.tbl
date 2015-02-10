@@ -2,12 +2,11 @@
 / For use with Rods, etc.
 / The weights were set by JPK
 
+: TSR Material
 4x {metal}
+11x {:wand}
 
 : wand
 9x {wood}
-1x ivory
-1x bone
-
-===
-test this
+ivory
+bone

@@ -52,7 +52,7 @@
 <ul>  
 !loop {2d3}
   <li>{menu}
-!end
+!loop end
 </ul>  
 
 <!-- Re-randomize (not based on INN name) -->
@@ -62,7 +62,7 @@
 <ul>  
 !loop {2d3}
  <li>{RUMOR}
-!end
+!loop end
 </ul>  
 
 <h3>Patrons</h3>
@@ -70,11 +70,11 @@
 The following people are currently in the common room:
 !loop {0-4}
 + NPC
-!end
+!loop end
 
 !loop {Roll for more NPCs?{0 - 4}}
 + NPC
-!end
+!loop end
 </blockquote>
 
 <h3>Chests contain:</h3>

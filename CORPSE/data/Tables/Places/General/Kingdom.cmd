@@ -29,7 +29,7 @@
 !loop 4
 <!-- {P={{P}*0.{2d4}}} next largest city is 20-80% of the previous one -->
 <p>Next City: {P}
-!end
+!loop end
 
 </body>
 </html>

@@ -1,0 +1,26 @@
+/ http://random-generator.com/index.php?title=Armor
+ 
+: Male Outfit
+10x He is wearing {: male upper outfit}, {: male lower}, and {: male footwear}.{75%  {: male accessories chance}.}{75%  {: male hat}.}
+3x He is wearing {: male full body} and {: male footwear}{: male accessories chance}{: male hat}
+He is wearing {: uniform male}
+
+: ml
+{:of} {fur and pelt:hide} hide
+
+: mm
+/ {:of} {: metal flavor} {: Utility.MetalArmor}
+{:of} {: metal flavor} {Armor}
+
+: mul2a
+5x full-length robe
+2x coat
+half-length robe
+
+: Male Full Body
+/ 30x robe {:of} {: ClothingFemale.Mat_Combo_Common}
+/ 30x long tunic {:of} {: ClothingFemale.Mat_Combo_Common}
+/ 25x hooded robe {:of} {: ClothingFemale.Mat_Combo_Common}
+/ 3x toga {:of} {: ClothingFemale.Mat_Combo_Common}
+one-piece {:of} {color:light} terry cloth
+

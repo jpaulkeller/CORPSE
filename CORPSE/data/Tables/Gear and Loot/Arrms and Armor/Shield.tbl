@@ -1,40 +1,32 @@
-: Shields
-20x wooden roundshield {:of} {wood:weapon}
-20x wooden buckler {:of} {wood:weapon}
-20x small wooden buckler {:of} {wood:weapon}
-20x small leather shield {: ml} stretched on {wood:weapon}
-20x small leather buckler {: ml} stretched on {wood:weapon}
-20x roundshield {: mm} and {wood:weapon}
-20x large leather shield {: ml} stretched on {wood:weapon}
-20x heavy leather shield {: ml} stretched on {wood:weapon}
-20x footman’s shield {: mm} and {wood:weapon}
-10x tower shield {: mm} and {wood:weapon}
-/ 10x spiked leather shield {: ml}  {: metal flavor} {: Utility.MetalArmor}, and {wood:weapon}
-10x siege shield {: mm} and {wood:weapon}
-10x knight’s shield {: mm} and {wood:weapon}
-10x high tower shield {: mm} and {wood:weapon}
-10x dragon shield {: mm} and {wood:weapon}
-10x cavalry shield {: mm} and {wood:weapon}
-10x archer’s wooden shield {:of} {wood:weapon}
-10x archer’s leather shield {: ml} stretched on {wood:weapon}
+: Shield
+archer’s leather shield {:leather} stretched on {wood:weapon}
+archer’s wooden shield {:of} {wood:weapon}
+cavalry shield {:metal} and {wood:weapon}
+dragon shield {:metal} and {wood:weapon}
+footman’s shield {:metal} and {wood:weapon}
+heavy leather shield {:leather} stretched on {wood:weapon}
+high tower shield {:metal} and {wood:weapon}
+knight’s shield {:metal} and {wood:weapon}
+large leather shield {:leather} stretched on {wood:weapon}
+round shield {:metal} and {wood:weapon}
+siege shield {:metal} and {wood:weapon}
+small leather buckler {:leather} stretched on {wood:weapon}
+small leather shield {:leather} stretched on {wood:weapon}
+small wooden buckler {:of} {wood:weapon}
+spiked leather shield {:leather}  {metal:flavor} {metal:weapon}, and {wood:weapon}
+tower shield {:metal} and {wood:weapon}
+wooden buckler {50%made }of {wood:weapon}
+wooden round shield {50%made }of {wood:weapon}
 
-: ShieldAdorn
-76x  with {: sar} on {: Colors} field
-10x  with a simple quartered pattern of {: Colors} and {: Colors}
-3x  painted solid {: Colors}
-/ 3x  emblazoned with arcane {: Colors} runes in {: Utility.RuneLanguage} saying “{: Magic Incantation.main}”
-encrusted with {2d6} {size:relative tiny} {quality} {{gem}+}
+: Leather
+{50%made }of {fur and pelt:hide} hide
 
-: sar
-{33%?with {flag:foreground} on:with} {flag:background}{10%, {flag:extra}}{10%, {condition:cloth}}.
-/ 10x {2d4} diagonal {: Colors} stripes
-/ 10x {: Utility.Symbols}
-/ 10x {: Colors} banner reading “{: Inscriptions.Advice}”
-/ 10x {: GheronUtility.DeitySymbol} in {: Colors}
-/ 10x {: GheronUtility.OrganizationSymbol} in {: Colors}
-/ 10x a single diagonal {: Colors} stripe
-/ 5x {: Utility.Symbols} in {: Colors}
-/ 5x a symbol like {: Spiritform.main} in {: Colors}
-/ 3x a long-faded {: Colors} emblem
-/ 3x an illegible {: Colors} banner
+: Metal
+{50%made }of {metal:flavor} {metal:weapon}
 
+: Emblem
+{flag:emblem}
+
+: Extra
+studded with {3d6} {quality} {{gem}+}
+emblazoned with arcane {color:metallic} runes{20% which read "{Motto:Military}"}

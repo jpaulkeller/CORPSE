@@ -1,4 +1,3 @@
-
 / Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
 /          Values from DRAGON Magazine #83, page 10.
 
@@ -57,7 +56,7 @@ iron
 steel
 silver
 titanium
-222226{:special}
+{:special}
 
 : Ore
 azurite
@@ -70,3 +69,54 @@ galena             465    ore containing lead & coal
 hematite           315    ore containing iron
 magnetite          310    ore containing iron
 malachite          240    ore containing copper
+
+: Flavor
+ancient
+antiquated
+antique
+arcane
+archaic
+battered
+battle-worn
+beaten
+bloodstained
+bright
+brightly shining
+broken
+burnt
+charred
+cold-forged
+costly
+dark
+extravagant
+faintly glowing
+fine
+gleaming
+glistening
+highly polished
+kingly
+long-disused
+loose-fitting
+magnificent
+old
+ornate
+polished
+poorly-crafted
+princely
+rune-wrought
+runic
+rusted
+rusty
+shining
+splendid
+stained
+strong
+sturdy-looking
+tarnished
+tight-fitting
+torn
+used
+well-crafted
+well-oiled
+well-used
+worn

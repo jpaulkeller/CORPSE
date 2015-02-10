@@ -10,12 +10,13 @@
 <br>Location: {direction} the {city site}
 <br>Traffic: {degree} {sparse|heavy}
 <br>{Quantity} guards; {quantity:few} pick-pockets; {quantity} beggars 
+<br/>
 
 <hr>
 
 !loop {2d4}
-+ shop
-!end
++ merchant
+!loop end
 
 </body>
 </html>
