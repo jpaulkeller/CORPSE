@@ -1,76 +1,74 @@
 : Helm
-86x {: mq6} {: mm}
-6x captain’s visor {: mm} with a plume of {: ClothingFemale.Cloth_Color}
-5x plumed helm {: mm} with {: ClothingFemale.Cloth_Color} feathers
-3x {: mqu3} helmet {: mm} with horns of {: Utility.HornIvory}
-3x {: mqu4} helmet {: mm} with a plume of {: ClothingFemale.Cloth_Color}
-5x skullcap {:of} {: metal flavor} {fur and pelt:hide} hide
-2x bandit’s wrap {: ml}
-2x buccaneer’s hat {: ml} with a band of {: ClothingFemale.Cloth_Color} cloth
-2x ranger’s cap {: ml} with {2d4} {: ClothingFemale.Cloth_Color} feathers in the brow
-crusader greathelm {: mm} with horns of {: Utility.HornIvory}
-jousting helmet {: mm} with plumes of {: ClothingFemale.Cloth_Color} and {: ClothingFemale.Cloth_Color}
-lion helmet {:of} {: metal flavor} {fur and pelt:hide} hide
-troubador’s helm {:of} {: metal flavor} {fur and pelt:hide} hide with {2d4} {: ClothingFemale.Cloth_Color} feathers in the brow
-winged northman’s helmet {: mm} with wings of {: metal flavor} {: Utility.MetalArmor}
+{25%{condition:cloth} }{:cloth} made of {fur and pelt:leather}{25% {:extra}}
+{10%{metal:flavor} }{:composite} made of {metal:weapon.metal} and {fur and pelt:hide} hide{25% {:extra}}
+{25%{metal:flavor} }{:metal} {helm|helmet} made of {metal:weapon.metal}{25% {:extra}}
 
-: mqu
-5x full-faced
-5x open
-5x visored
-“pigface”
+: cloth
+bandit’s wrap
+buccaneer’s hat
+ranger’s cap
+
+: composite
+greathelm
+helm
+helmet
+skullcap
+
+: metal
 armet
 barbute
 bascinet
 battle
 burgonet
 cabasset
+cap
+capette
+captain’s visor
+cavalier’s
 chainmail siege
 clamshell closed
+coif
 common kettle
+corinthian
+crusader's
 dwarvish light
 eastern spangenhelm
 elven barbute
 elvish feathered
 executioner’s
+full-faced
 full-plate siege
+gladiator’s
+jousting
 knight’s
 maximillian
 morion
+norman
+northlander’s
+open
 open elven
 open-faced
 pembridge
+pigface
 salade
 sallet
 sentinel
 skull-faced
+skullcap
+spangenhelm
 sugarloaf
 trooper
+troubador’s
+visored
+{fauna}-faced
+{mythical creature}-faced
 
-: mq2
-5x full-faced
-5x open
-5x visored
-3x cavalier’s
-
-: mq3
-horned
-norman
-northlander’s
-
-: mq4
-corinthian
-gladiator’s
-plumed closed
-
-: mq5
-cap
-capette
-coif
-skullcap
-
-: mq6
-43x {: mqu} helmet
-24x {: mq5}
-18x {: mq2} helm
-spangenhelm
+: extra
+trimmed with {fur and pelt.animal} fur
+with a band of {color:simple} cloth
+with a {color:simple} plume
+with plumes of {color:simple} and {color:simple{!different}}
+with wings of {metal:weapon}
+with {2d4} {color:simple} feathers in the brow
+with {color:simple} feathers
+with {horned animal} horns

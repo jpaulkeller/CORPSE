@@ -4,10 +4,9 @@ import java.awt.Component;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -27,15 +26,28 @@ public final class Script
    private final static Pattern IGNORE_HTML = Pattern.compile("html>|body>", Pattern.CASE_INSENSITIVE);
    
    private static final String SCRIPT_COMMAND = "!";
-   private static final Pattern LOOP_BEGIN =
-      Pattern.compile("^" + SCRIPT_COMMAND + "\\s*loop\\s*(.+)", Pattern.CASE_INSENSITIVE);
-   private static final Pattern LOOP_END = 
-      Pattern.compile("^" + SCRIPT_COMMAND + "\\s*end", Pattern.CASE_INSENSITIVE);
+
+   // simple repeat: !5x ...
+   private static final Pattern REPEAT = 
+      Pattern.compile("^" + SCRIPT_COMMAND + "([0-9]+)x +(.+)$", Pattern.CASE_INSENSITIVE);
+   
+   // !loop #, !loop end
+   private static final Pattern LOOP =
+      Pattern.compile("^" + SCRIPT_COMMAND + "\\s*loop\\s*(.+)$", Pattern.CASE_INSENSITIVE);
+   
+   // !switch VALUE, !switch CASE, !switch end
+   private static final Pattern SWITCH = 
+      Pattern.compile("^" + SCRIPT_COMMAND + "\\s*switch\\s+(.+)$", Pattern.CASE_INSENSITIVE);
          
    private static boolean promptsEnabled = true; // must match Menus value
 
    private String name;
    private File file;
+   private List<String> lines = new ArrayList<>();
+   private int loopDepth;
+   private boolean inSwitch, inSwitchCase = false;
+   private String switchValue;
+   private StringBuilder buf = new StringBuilder();
 
    public static void populate(final File dir)
    {
@@ -82,120 +94,143 @@ public final class Script
       promptsEnabled = !promptsEnabled;
    }
    
-   public String resolve()
+   public String resolve() // TODO: thread
    {
-      return resolve(false);
+      buf.setLength(0);
+      lines = loadScript(false);
+      for (int i = 0, count = lines.size(); i < count; i++)
+         i = processLine(i);
+      return buf.toString();
    }
    
-   public String resolve(final boolean nested) // TODO: thread
+   private List<String> loadScript(final boolean nested)
    {
-      StringBuilder buf = new StringBuilder();
-
-      BufferedReader br = null;
+      List<String> lines = new ArrayList<String>();
+      
+      InputStream is = null;
       try
       {
-         FileInputStream fis = new FileInputStream(file);
-         InputStreamReader isr = new InputStreamReader(fis);
-         br = new BufferedReader(isr);
+         is = new FileInputStream (file.getPath());
          
+         InputStreamReader isr = new InputStreamReader (is, "UTF8");
+         BufferedReader br = new BufferedReader (isr);
+         Matcher m;
          String line = null;
-         while ((line = br.readLine()) != null && !line.startsWith(Constants.EOF))
+         while ((line = br.readLine()) != null)
          {
             if (nested && IGNORE_HTML.matcher(line).find())
-               continue;
-            if (line.startsWith(SCRIPT_COMMAND))
+               ; // ignore
+            else if ((m = Constants.INCLUDE_LINE.matcher(line)).matches())
             {
-               String resolved = resolve(line);
-               Matcher m = LOOP_BEGIN.matcher(resolved);
-               if (m.matches())
-               {
-                  List<String> loop = loadLoop(br);
-                  for (int i = 0, count = Macros.resolveNumber(m.group(1)); i < count; i++)
-                     processLoop(loop, 0, buf);
-               }
+               Script nestedScript = Script.getScript(m.group(1));
+               if (nestedScript != null)
+                  lines.addAll(nestedScript.loadScript(true));
             }
             else
-               processLine(line, buf);
+               lines.add (line);
          }
       }
-      catch (IOException x)
+      catch (Exception x)
       {
-         buf.append(x.getMessage());
-         x.printStackTrace(System.err);
+         x.printStackTrace (System.err);
       }
       finally
       {
-         FileUtils.close(br);
+         FileUtils.close (is);
       }
-
-      return buf.toString();
+      
+      return lines;
    }
 
-   private List<String> loadLoop(final BufferedReader br) throws IOException
+   private int processLine(final int index)
    {
-      List<String> loop = new ArrayList<>();
+      String line = lines.get(index);
+      Matcher m;
       
-      int depth = 1;
-      String line = null;
-      while ((line = br.readLine()) != null)
+      if ((m = SWITCH.matcher(line)).matches())
+         processSwitch(m.group(1));
+      else if (inSwitch && !inSwitchCase)
+         ; // ignore other switch cases
+      else if (line.startsWith(SCRIPT_COMMAND))
+         return processScriptCommand(index);
+      else
+         resolveLine(line, buf);
+      return index;
+   }
+
+   private int processScriptCommand(final int index)
+   {
+      String line = lines.get(index);
+      Matcher m = REPEAT.matcher(line);
+      if (m.matches())
+         processRepeat(Macros.resolveNumber(resolve(m.group(1))), m.group(2));
+      else if ((m = LOOP.matcher(line)).matches())
+         return processLoop(index, m.group(1));
+      else
+         System.err.println("Unrecognized script command: " + line);
+      return index;
+   }
+
+   private void processSwitch(final String token)
+   {
+      if (!inSwitch)
       {
-         // if (nested && IGNORE_HTML.matcher(line).find()) continue; TODO
-         if (LOOP_BEGIN.matcher(line).find())
-            depth++; // start a nested loop
-         else if (LOOP_END.matcher(line).find() && (--depth == 0))
-            break; // end outer loop
-         loop.add(line);
+         inSwitch = true;
+         switchValue = resolve(token);
       }
-      
-      return loop;
+      else if (token.equalsIgnoreCase("end"))
+      {
+         inSwitch = false;
+         inSwitchCase = false;
+      }
+      else if (token.equalsIgnoreCase(switchValue))
+         inSwitchCase = true;
+      else
+         inSwitchCase = false;
+   }
+
+   private void processRepeat(final int count, final String line)
+   {
+      for (int i = 0; i < count; i++)
+         buf.append(resolve(line));
    }
    
-   private void processLoop(final List<String> loop, final int start, final StringBuilder buf)
+   private int processLoop(final int loopLine, final String token)
    {
-      int fromIndex = start;
-      
-      Iterator<String> iter = loop.subList(start, loop.size()).iterator();
-      while (iter.hasNext())
+      if (token.equalsIgnoreCase("end"))
       {
-         String line = iter.next();
-         fromIndex++;
-         if (line.startsWith(SCRIPT_COMMAND))
-         {
-            String resolved = resolve(line);
-            Matcher m = LOOP_BEGIN.matcher(resolved);
-            if (m.matches())
-            {
-               for (int i = 0, count = Macros.resolveNumber(m.group(1)); i < count; i++)
-                  processLoop(loop, fromIndex, buf);
-               line = iter.next();
-               while (!LOOP_END.matcher(line).find() && iter.hasNext()) // skip the inner loop
-                  line = iter.next();
-            }
-            else if (LOOP_END.matcher(line).find())
-               return;
-         }
-         else
-            processLine(line, buf);
+         loopDepth--;
+         return loopLine;
       }
+
+      int loopCount = Macros.resolveNumber(token);
+      int startingDepth = loopDepth;
+      int index = loopLine + 1;
+      for (int loop = 0; loop < loopCount; loop++)
+      {
+         loopDepth++;
+         index = loopLine + 1;
+         while (loopDepth > startingDepth)
+            index = processLine(index) + 1;
+      }
+
+      return index - 1;
    }
-   
-   private void processLine(final String line, final StringBuilder buf)
+
+   private void resolveLine(final String line, final StringBuilder buf)
    {
       if (line.equals("")) // ignore blank lines
          return;
       if (Constants.COMMENT_LINE.matcher(line).find())
          return;
-      System.out.println("Line: " + line); //TODO
 
       String resolved = resolve(line);
       if (resolved == null) // user cancelled
          return;
-      System.out.println("R: " + resolved); //TODO
+      // System.out.println("R: " + resolved);
 
       Matcher m;
-      if ((m = Constants.INCLUDE_LINE.matcher(resolved)).matches())
-         buf.append(include(m.group(1)));
-      else if ((m = Constants.RANDOMIZE_LINE.matcher(resolved)).matches())
+      if ((m = Constants.RANDOMIZE_LINE.matcher(resolved)).matches())
          randomize(m.group(1));
       else if (!resolved.trim().isEmpty())
          buf.append(resolved + "\n");
@@ -238,7 +273,7 @@ public final class Script
    {
       String resolved = entry;
 
-      Component owner = null; // TODO
+      Component owner = null;
       Icon icon = null;
       int type = JOptionPane.QUESTION_MESSAGE;
       Object[] options = null;
@@ -283,13 +318,6 @@ public final class Script
       if (Macros.DEBUG && !entry.equals(resolved))
          System.out.println("resolveQueries: [" + entry + "] = [" + resolved + "]");
       return resolved;
-   }
-
-   private String include(final String scriptName)
-   {
-      // Script script = new Script(Constants.DATA_PATH + File.separator + scriptName); // TODO
-      Script script = Script.getScript(scriptName); // TODO
-      return script.resolve(true);
    }
 
    private void randomize(final String seed)

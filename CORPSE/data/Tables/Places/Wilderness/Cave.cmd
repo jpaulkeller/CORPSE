@@ -8,7 +8,7 @@
 / Query for name (using random default); assign and randomize
 # {NAME={Name?{Name}'s {Cave:Name}}}
 
-<p><b>{NAME}</b>
+<h1>{NAME}</h1>
 
 <ul>
   <li>General Description: {cave:general}
@@ -25,7 +25,7 @@
   <li>Exit(s): {cave:exit}{25%; {cave:exit}}{25%; {cave:exit}}
 </ul>
 <ul>
-!end
+!loop end
 </ul>
 
 </body>

@@ -24,7 +24,7 @@
   <li>Hair: {hair}
 !loop {2d2-2}
   <li>Marking: {markings}
-!end
+!loop end
   <li>Wearing: <font color="{C.font}" bgcolor="{C.hex}">{C.name}-colored</font> {75%{condition:clothing} }{~{clothing}}
 / sample: 
 </ul>

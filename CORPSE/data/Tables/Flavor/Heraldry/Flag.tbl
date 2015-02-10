@@ -2,24 +2,17 @@
 / http://www.midcoast.com/~martucci/flags/designs/shapes.html
 
 : Flag
-a {:shape} {:type} {33%?with {:foreground} on:with} {:background}{10%, {:extra}}{10%, {condition:cloth}}.
+a {:shape} {:type} {:emblem}{10%, {:extra}}{10%, {condition:cloth}}.
 
-: type
-banner
-flag
-pennant
-
-: background
-a solid field of {color:common}
-a checkered field of {color:dark} and {color:light} 
-a tricolor background of {color:simple}, {color:simple{!different}}, and {color:simple{!different}} {horizontal|vertical} stripes
-{number:twototwelve} {color:dark} and {color:light} stripes
-
-: foreground
-a {small |large | }{color} {charge}{20% in the {center|{top|bottom} {left|right}}}
-a {color:fancy} {charge}
-{number:twototwelve} {{charge}+}
-a {charge} and {charge{!different}}
+: Emblem
+a simple quartered pattern of {color:light} and {color:dark}
+a single {diagonal|horizontal|vertical} {color:light} stripe on a {color:dark} field 
+a {:background}
+with {33%{:foreground} on} {:background}
+/ a symbol like {: spiritform.main} in {: colors}
+/ banner reading "{: inscriptions.advice}}
+/ {: gheronutility.deitysymbol}
+/ {: gheronutility.organizationsymbol}
 
 : shape
 double-square (1:2)
@@ -29,6 +22,23 @@ square
 {burgee|triangle|double triangle}
 {pointed|shield-shaped|rounded}
 {swallowtail|swallowtail with tongue}
+
+: type
+banner
+flag
+pennant
+
+: foreground
+a {charge} and {charge{!different}}
+a {color:fancy} {charge}
+a {small |large |}{color} {charge}{20% in the {center|{top|bottom} {left|right}}}
+{number:twototwelve} {{charge}+}
+
+: background
+a solid field of {color:common}
+a checkered field of {color:dark} and {color:light} 
+a tricolor background of {color:simple}, {color:simple{!different}}, and {color:simple{!different}} {diagonal|horizontal|vertical} stripes
+{number:twototwelve} {diagonal|horizontal|vertical} {color:dark} and {color:light} stripes
 
 : extra
 edged with flammules

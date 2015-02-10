@@ -87,12 +87,12 @@ A {monster} is said to be the head of a merchant guild.
 A {profession:merchant} has {:loot} hidden in its {attic|cellar}.
 A {profession} has {:loot} hidden around his house.
 A {profession} knows a secret entrance into the {Dungeon Name}.
-A {pseudo class:magical} experiment has caused a disaster in a tower to the east.
-A {pseudo class:magical} has just turned the captain of the city guard into a {fauna}.
-A {pseudo class:magical} in a manse to the north of town is flaunting guild laws.
-A {pseudo class:magical} is buried in a trap-filled tomb with powerful magic items.
-A {pseudo class:magical} needs a particularly rare spell component found only in the {terrain}.
-A {pseudo class:magical}'s familiar has escaped and been said to have summoned a demon.
+A {pseudo class:mage} experiment has caused a disaster in a tower to the east.
+A {pseudo class:mage} has just turned the captain of the city guard into a {fauna}.
+A {pseudo class:mage} in a manse to the north of town is flaunting guild laws.
+A {pseudo class:mage} is buried in a trap-filled tomb with powerful magic items.
+A {pseudo class:mage} needs a particularly rare spell component found only in the {terrain}.
+A {pseudo class:mage}'s familiar has escaped and been said to have summoned a demon.
 All the dwarves in an underground city have disappeared.
 An aged, foreign sage is gathering mercenaries for a dangerous expedition into the desert.
 An alchemist has lost a shipment of supplies to hijackers. If she doesn't get them back, she faces bankruptcy.
@@ -270,23 +270,23 @@ thousands of {metal:precious} pieces
 1,[Intro]<br/>
 
 ;Intro
-3,A [Fantasy NPC (Basic).main] seeks adventurers to [Verbreflexive] This will require traveling to [Fantasy Adventure Locations.main]
-1,The PCs have heard that if they [Verb] they will become rich. This will require traveling to [Fantasy Adventure Locations.main]
-1,It seems [Object] will grant great power to any who possess it. This will require exploring [Fantasy Adventure Locations.main]
-1,''They say..''[Fantasy Adventure Locations.main]<br/>''...contains [Object] of great value.''
-1,Rumors suggest clever and ambitious souls will find great riches if they investigate [Fantasy Adventure Locations.main]
+A {PROTAGONIST} seeks adventurers to [Verbreflexive].  This will require traveling to the {region}.
+The PCs have heard that if they [Verb] they will become rich. This will require traveling to the {region}.
+It seems a {:object} will grant great power to any who possess it. This will require exploring the {region}.
+They say [Fantasy Adventure Locations.main] contains a {:object} of great value.''
+Rumors suggest clever and ambitious souls will find great riches if they investigate the {region}.
 
 ;Verbreflexive
-15,free: [People]
-15,assassinate: [People]
-15,capture [Capturablereflexive]
-15,safely transport [Transportablereflexive] of special importance
-15,locate [Transportablereflexive] of special importance
-15,acquire [Object] of special importance
-15,destroy [Object] of special importance
-15,slay [Weird Fantasy Monster.main]
-1,seduce [People]
-1,frame [People] for a crime
+free: [People]
+assassinate: [People]
+capture [Capturablereflexive]
+safely transport [Transportablereflexive] of special importance
+locate [Transportablereflexive] of special importance
+acquire [Object] of special importance
+destroy [Object] of special importance
+slay [Weird Fantasy Monster.main]
+seduce [People]
+frame [People] for a crime
 
 ;Verb
 15,free: [Fantasy Person Of Interest.Main]
@@ -325,43 +325,8 @@ thousands of {metal:precious} pieces
 1,[Weird Fantasy Monster.main]
 1,[Object]
 
-;Object
-5,[Found in a crate.main]
-1,a weasel
-1,an idol
-1,a disc
-1,a book
-1,a skull
-1,a crown
-1,a tiara
-1,a mask
-1,a teacup
-1,a pair of gloves
-1,a cloak
-1,a hat
-1,an emerald
-1,a pearl
-1,a diamond
-1,a sapphire
-1,a jade
-1,a shield
-1,a sword
-1,a staff
-1,a mace
-1,a morningstar
-1,a scythe
-1,a warhammer
-1,a war axe
-1,a dagger
-1,a ring
-1,an egg
-1,a torch
-1,a bracelet
-1,a grape
-1,a jewel
-1,a lamp
-1,a ruby
-1,a child
-1,a pet
-1,a dog
-1,a virgin
+: Object
+{jewelery}
+{merchandise}
+{pet}
+{tiny item}

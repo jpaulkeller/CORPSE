@@ -44,7 +44,7 @@
     <li>Eyes: {eyes}
 !loop {2d2-2}
     <li>Marking: {markings}
-!end
+!loop end
   </ul>
  
   <li>Dress:

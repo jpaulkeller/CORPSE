@@ -21,10 +21,10 @@
   {33%<li>Hide: {monstrosity:hide}}
 !loop {2d2-2}
   <li>Special Offense: {special offense}
-!end
+!loop end
 !loop {2d2-2}
   <li>Special Defense: {special defense}
-!end
+!loop end
   <li>Special Movement: {special movement}
   {25%<li>Other: {monstrosity:special other}}
   <li>Disposition: {monstrosity:disposition}

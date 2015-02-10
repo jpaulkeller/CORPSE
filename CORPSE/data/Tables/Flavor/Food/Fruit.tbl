@@ -1,3 +1,6 @@
+: Dish
+bowl of {{:fruit}+}{20% and {{:fruit}+}}{10% with chocolate sauce}
+
 : Fruit
 2x apricot
 2x papaya

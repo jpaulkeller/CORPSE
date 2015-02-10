@@ -33,7 +33,7 @@
 <ul>
 !loop {3,7}
  <li>{reagent}
-!end
+!loop end
 </ul>
 
 </body>

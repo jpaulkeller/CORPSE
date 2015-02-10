@@ -76,3 +76,12 @@ sheep
 snake
 water buffalo
 zebu
+
+: Leather
+25x {:hide} hide
+alligator skin
+crocodile skin
+eelskin
+ostrich skin
+sharkskin
+snakeskin

@@ -4,7 +4,9 @@
 <html>
 <body>
 
-<h3>{Merchant}</h3>
+{M:=merchandise}
+<h2>{M.Type} Shop</h2>
+
 <ul>
 <li>Merchant
   <ul>
@@ -27,7 +29,7 @@
 
 <li>Merchandise
   <ul>
-    <li>Goods: {M:=merchandise}{M.type}  
+    <li>Goods: {M.type}  
     <li>Specialty: {M.merchandise}  
     <li>On sale: {M.merchandise}  
     <li>Also Provides: {M.merchandise}  

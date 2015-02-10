@@ -1,6 +1,7 @@
 : Basic = Black + Blue + Brown + Green + Red + Violet + White + Yellow
 : Simple = Common + Basic
-: Color = Common + Basic + Light + Dark + Fancy + Metallic + Special + Example
+: Standard = Common + Basic + Light + Dark + Fancy + Metallic
+: Color = Standard + Special + Example
 
 : Common
 black
@@ -195,7 +196,7 @@ mauve
 pink
 
 : Metallic
-+ {metal}-colored
+{metal}-colored
 brassy
 coppery
 golden
