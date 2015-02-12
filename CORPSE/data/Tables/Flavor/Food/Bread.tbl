@@ -35,7 +35,7 @@ unleavened bread
 {50%{{fruit}|{nut}|{fruit} and {nut}} }muffins
 {50%{{fruit}|{nut}|{fruit} and {nut}} }pancakes
 {75%{nut} }scones
-{menu:sweetener} bread
+{menu:sweet} bread
 {{fruit} |{nut} |{meat} |}biscuits
 
 : Spread
@@ -44,7 +44,7 @@ fresh-churned butter
 fresh-ground {nut} butter
 herb butter
 melted cheese
-{menu:sweetener} butter
+{menu:sweet} butter
 {spice} butter
 {{fruit}|{berry}} butter
 {{fruit}|{berry}} jam

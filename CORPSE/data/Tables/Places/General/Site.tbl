@@ -68,7 +68,6 @@ canyon
 cave with soot marks on the ceiling
 cavern
 chasm
-cliff
 cliff{50%s}
 copse
 cove
@@ -164,11 +163,14 @@ desolate
 destroyed
 empty
 long-vacant
+neglected but intact
 overgrown
 partly burned
 ruined
 ruins of a
+slightly ruinous
 storm-damaged
+sunken
 vermin-infested
 {poorly|well}-constructed
 {poorly|well}-maintained

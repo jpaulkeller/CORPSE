@@ -12,29 +12,28 @@ electrical bolt        {4}d{2|3}, {4}0' range
 electrical touch       {4}d{2|3}
 energy drain
 entangling web                                        The creature spins webs which are likely to restrict the movement of victims.
+enveloped by corrosive cloud
 fear
 fire breath
 flame spray            {6}d{2|3} damage, {4}0' range
+flaming bile
 frost breath
 hypnotic gaze                                         {beguile|charm|confuse} victim
 lightning breath            
-spells                                                The creature has the ability to case spells.
 paralysis                                             A particular kind of poison: rather than continue to do damage, the creature's attack may cause paralysis, until the poison is removed or a natural or magical antidote can be applied.
 parasitic infestation                                 The creature lays its eggs in other species. Animates and Spirits may not have this ability.
 petrify gaze
 psionic attack
+ray of withering
 rust                                                  The creature's touch corrodes metal. This may effect armour, weapons, Animates etc. If the creature also has Crush or Swallow Whole, successfully doing so will corrode metal very quickly.
+searing eye-beams
+spells                                                The creature has the ability to case spells.
 spread disease                                        The creature's touch can cause disease.
 steal life                                            If The creature successfully causes damage, it heals as well.
 swallow                                               This works in a similar way to Crush (above). However the creature can only swallow beings which are half its size or smaller. The victim can't attempt to break free - they can only be saved if the creature dies. The creature will dissolve armour first, and only then start to damage the character. Creatures smaller than twice the size of a human ('Large' on Creatures table 1) roll again: they still have this ability, but it's unlikely to effect most player-characters. Only Monsters and Folk can have this ability.
 toxic cloud
-venemous bite          level {10}
-venemous spit          level {8}, {4}0' range
-venemous spore         level {4}, 8' range
-venemous spray         level {8}, 6' range
-venemous sting         level {10}, {3}/day
-
-ray of withering
-flaming bile
-searing eyebeams
-enveloped by corrosive cloud
+venomous bite          level {10}
+venomous spit          level {8}, {4}0' range
+venomous spore         level {4}, 8' range
+venomous spray         level {8}, 6' range
+venomous sting         level {10}, {3}/day

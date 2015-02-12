@@ -2,7 +2,7 @@
 / http://random-generator.com/index.php?title=Barrens_Menu_Generator
 
 : Menu
-{:fare}; {container:drink} of {drink}{20%; {dessert}}
+{:fare}; {container:drink} of {drink}{20%; {:dessert}}
 
 / TODO : Feast
 / TODO : Noble
@@ -157,15 +157,15 @@ maple syrup
 : Extra
 dried {{fruit}+}
 porridge
-{:bread}
+{bread}
 {:cheese} 
 {:dessert}
 {:eggs}
-{:nut style} {{nut}+}
+{nut:style} {{nut}+}
 {:pickles}
 {:tapas}
 {fruit:dish}
-{salads}
+{salad}
 
 : Pickles
 dill pickles

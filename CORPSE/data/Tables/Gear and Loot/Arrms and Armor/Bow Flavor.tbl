@@ -25,21 +25,18 @@ Goblin
 : Grip
 unwrapped and rough, making the weapon impractical in combat
 unwrapped, but smooth and comfortable from regular use
-wrapped in {:color} {:fabric}
+wrapped in {:color} {fabric}
 wrapped in {color:drab} leather
 
 : Color
-{color:bright}
 {color:dark}
-{color:dark} and {color:bright}
 {color:dark} and {color:light}
 {color:drab}
-{color:drab} and {color:bright}
 {color:light}
 
 : String
-actually a fine chain made of {:Swords.Quality} {:Utility.MetalDecor}.
-actually a single wire made of {:Swords.Quality} {:Utility.MetalDecor}.
+actually a fine chain made of {metal:flavor} {metal:enchantable}
+actually a single wire made of {metal:flavor} {metal:enchantable}
 made of {75%braided }{color:leather} {:leather}
 missing
 missing, save for a small piece tied at the topnotch.

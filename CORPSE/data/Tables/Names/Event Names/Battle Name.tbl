@@ -7,7 +7,6 @@
 {50%{:Adj} }{:Type} of ’{{10}-1}{{10}-1}
 {:Creature} {:Type}
 {:Type} of {50%{:Adj} }{Noise}
-{:Type} of {:Inspiration}
 {:Type} of {{:Creature}+}
 {:Type} of {50%{Evocative Adj:Negative} }{Evocative Noun:Negative}
 {:Type} of {50%{Evocative Adj:Negative} }{{Pseudo Class}+}

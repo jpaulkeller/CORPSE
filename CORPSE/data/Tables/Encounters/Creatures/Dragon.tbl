@@ -1,140 +1,303 @@
-: Dragon
-
-cloud
-evil
-good
-mist
-{color}
-{metal}
-
-====
 / http://random-generator.com/index.php?title=Dragon_description
 
-{:Dragon names.main} the {:age} {:type} has {:Color.all} {:scales}, {:head}, {:legnumber} legs, {:wings} wings and {:tailtype} tail. It has {:eyes}. {:breathchance} {:special}
+: Dragon
+{:species} {:breed}
 
-: age
+: Details
+5x {Dragon Name} is a {:age} {:dragon} who has {color} {:hide}, {75%{:head}, }{20%{:legs}, }{:wings} and a {:tail}. {G:=Gender}{G.Pronoun} has {:eyes}.{75%  {:breath}}{25% {:special ability}}{10% {:special cosmetic}}
+{Dragon Name} is a {:age} {:tsr} dragon who has {75%{:head}, }{:wings} and a {:tail}. {G:=Gender}{G.Pronoun} has {:eyes}
+
+: Influence
+Earthsea
+Elder Scrolls
+Middle-earth
+Pern
+
+: Species
+{color:common}
+{gem}
+{metal}
+{:other type}
+{:tsr}
+
+: Pern
+blue
+bronze
+brown
+gold
+green
+
+: TSR
+amethyst
+black
+blue
+brass
+bronze
+brown
+copper
+emerald
+gold
+green
+red
+sapphire
+silver
+white
+{:tsr abstract}
+
+: TSR Abstract
+deep
+fae{50%rie}
+fang
+mist
+shadow
+smoke
+song
+
+: Other Type
+celestial
+cloud
+forest
+void
+water
+
+: age {4,10}
 hatchling
-2x young
-3x adult
-2x old
+very young
+young
+juvenile
+adult
+mature adult
+old
+very old
+elder
 ancient
 
-: type
-4x dragon
-drake
-lindworm
-lindwyrm
+: breed
+10x dragon
+5x drake
+dragonnet
 serpent
 wyrm
 wyvern
-linnorm
-dragonnet
+
+: size
+{size:large}
+the size of a {size:relative huge}
+
+: body
+broad
+muscular and elongated
+serpentine
+short and stocky
+thick, elongated body with a very long neck 
+ 
+: hide
+10x scales{10% {:scales}}
+3x leathery skin{10%, scarred from many battles}
+{:hide rare}
+
+: hide rare
+blistered and warty, like a diseased toad
+bony plates
+chitinous plates
+crab-like carapace
+dense, protective fur
+feathers
+hairy, mammoth-like fur
+quills like a monstrous porcupine
+slimy, eel-like skin
+
+: hide color
+{color}
+{color:fancy}
+{color:special}
 
 : scales
-16x scales
-fur
-2x leathery skin
-3x bony plates
-feathers
+are highly reflective
+are keeled like a snake
+are of varying darkness, creating a strangely textured pattern
+are overlapping plates, like an armadillo
+are scarred from many encounters
+are so fine as to appear like waves of metal
+are so minute as to appear like uniform grains of sand
+are supple and {fish|shark}-like
+as hard as {metal:weapon}
+seem delicate and powdery, like a butterfly
+that seem to eerily shimmer and shift of their own accord
+that shift from translucent to opaque
 
 : head
-10x {:headfeature}
-{:manyheads} with {:headfeature}
+5x {:head like}{20% with {:head feature}}
+5x {20%{:head like} with }{:head feature}
+{:head feature}{10% and {:head feature{!different}}}
+two-headed: one {:head like} and the other {:head like}
+{d5+1} heads{20% each with {:head feature}}
 
-: headfeature
-{:headfeature} and {:headfeature}
+: head like
+ant-like; with crushing mandibles
+barracuda-like; long and slender with fierce, serrated teeth
+crocodile-like; with powerful jaws of flesh-rending teeth
+horrible and fang-filled, like a fish from the ocean’s sunless depths
+lion-like; with deadly scimitar teeth
+lizard-like; with flat but sharp-edged teeth
+raptor-like; with a cruel, curved beak
+serpent-like; with curved, needle-sharp fangs
+shark-like; with a massive mouth filled with rows of razor-sharp teeth 
+snake-like; with a jaw that unhinges to swallow enormous prey
+spider-like; with enormous fangs
+turtle-like; with a long neck and a large, crushing beak
+tyrannosaur-like; all mouth and teeth
+wolf-like; with powerful, prominent fags
+worm-like; with tiny eyes and a gaping, toothless maw
+
+: head feature
+a barbed tongue
+a bony crest
+a cluster of secondary eyes, like a spider’s
+a crocodile-like skull
+a forked tongue
+a frill of wicked poisonous spines, barbed and quivering
+a glowing lure hangs above {G.possessive} face
+a gore-stained horn jutting out from {G.possessive} forehead
+a great crown of horns
+a long, rasping tongue
+a long, extrudable, sticky, frog-like tongue
+a pair of horns, like long lances
+a sharp, hollow tongue, through which {G.pronoun} feeds
+a spiked frill
 a unicorn's horn
-2x horns like those of a bull
-large sacks of venom just under the lower jaw
-10x a spiked frill
-10x a bony crest
-5x a crocodile-like skull
+a wedge-shaped head 
+a {unruly|shaggy|beautiful} mane of {color} hair
 antlers
+curled, ram-like horns
+horns like those of a bull
+large sacks of venom just under the lower jaw
+venomous bile drooling from {G.possessive} mouth
 
-: manyheads
-5x two heads
-5x three heads
-5x five heads
-5x seven heads
-5x nine heads
-3x ten heads
-2x many heads
-2x multiple heads
-2x at least dozen heads
-countless heads
+: legs
+no legs
+four {:leg type} legs{25% with {:claws}}
+{two|six|eight} {:leg type} legs
+countless legs, like an immense centipede
 
-: legnumber
-4x four {:legtype}
-2x two {:legtype}
-2x no
-six {:legtype}
-eight {:legtype}
-
-: legtype
+: leg type
 10x reptilian
-insectile
-arachnid
-short and nearly useless
 short but powerful
 long and strong
+{:leg type rare}
+
+: leg type rare
+arachnid
+insectile
+short and nearly useless
+vestigial
+
+: claws
+long, sharp {claws|talons}
+razor-sharp {claws|talons}
+retractable claws
+short, hard claws - adapted for rock climbing
+webbed feet, adapted for life in a swamp 
 
 : wings
-no
-leathery
-huge
-vestigial
-strong
-4x bat-like
-feathered
-insectile
+bat-like wings
+elegant, wide-set wings
+enormous wings
+huge wings
+leathery wings
+no wings
+strong wings
+{:wings rare}
 
-: tailtype
-10x long and sinous
-2x snake-headed
-4x venomous stinger at the end of its
-no
-10x a powerful
-2x blade-like tip at the end of its
-3x spiked
+: wings rare
+feathered wings
+membranous wings
+moth-like wings
+strange, fan-like wings
+transparent wasp-like wings
+vestigial wings
+
+: tail
+long and sinuous tail
+powerful tail
+very long, thick tail 
+{:tail rare}
+
+: tail rare
+barbed tail
+blade-like tip at the end of {G.possessive} tail
+broad, flat tail that seems suited for swimming
+missing tail; which hinders movement somewhat
+naked, rat-like tail
+no tail
+snake-like tail, capable of holding and constricting {G.possessive} victim
+spiked tail
+venomous stinger at the end of {G.possessive} tail
+{number:twotofive} leathery, whip-like tails
 
 : eyes
+feline eyes
+hooded eyes
+hypnotic eyes
+lidless eyes
+raptor eyes
 reptilian eyes
-snake-like eyes
-eyes like swirling {:Color.metallic} pools
+slitted eyes
+three eyes
+wide eyes
 
-: breathchance
-3x It can exhale a {:breathtype} of {:breath}.
-2x It can exhale a {:breathtype} of {:breath} and {:breath}.
+:eye color
+like swirling {color:metallic} pools
+{color}
+{color:fancy}
+{color:special}
+one is {color} and one is {color}
 
+: breath
+{G.Pronoun} can exhale a {:breath area} of {:breath type}{10% and {:breath type}}
 
-: breathtype
-cloud
-bolt
+: breath area
 blast
+bolt
+cloud
 cone
 mist
 spray
 
-: breath
-3x noxious fumes
-4x fire
-2x lightning
-3x acid
-water
-3x {:poison} poison
-3x wind
-3x ice
-2x despair
-2x darkness
-madness
-brilliant light
-prismatic energy
-webbing
-dust
-bone
+: breath type
+5x fire
+lightning
+acid
+ice
+noxious fumes
+{:poison} poison
+{: breath type rare}
+
+: breath type rare
 ashes
+balls of {color:simple} fire
+bone
+brilliant, searing light
+caustic, boiling blood
+darkness
 death
 decay
+despair
+desiccation
+disintegration
+dust
+hallucinogenic
+highly flammable, sticky gel
+madness
+petrification
+plasma
+prismatic energy
+scalding steam
+sleep
+sticky, burning tar
+sonic
+water
+webbing
 
 : poison
 blinding
@@ -142,1062 +305,91 @@ paralyzing
 sickening
 deadly
 
-: special
-5x 
-4x {:special} {:special}
-It can possess a human with a mere glance.
-It understands every language ever spoken or written.
-It has scales as hard as {:Utility.MetalArmor}.
-It can take the shape of men and beasts alike.
-It can hear thoughts.
-It can smell secrets and deception.
-Everyone looking at it shall rightly adore it as a god.
-It can breath water as easily as air.
-It never truly sleeps.
-People under its shadow become raving madmen.
-Storms comes wherever it passes.
-Its whispers can change the hearts of people.
-The mere presence of it turns people into scaled monsters, bit by bit.
-It has arcane power that mirrors that of the most powerful mages.
-It can see omens and speak prophecy.
-
----
-
-;main
-1,Bestial and savage, [environment]. [appetite]. [traits]
-1,Old, scarred, and horrible, [traits]. [environment]. [appetite]
-1,This one is not yet in its prime, but still is to be feared - [traits]. [environment]. [appetite]
-1,Vastly old but has grown only stronger through its strife, [traits]. [environment]. [appetite]
-1,Warped and possessing of witchery, [traits]. [environment]. [appetite]
-1,Young and hungry, [traits]. [environment]. [appetite]
-
-;basics
-1,[head]. [body]. [armour]. [tail]. [size]. [breathe]
-
-;traits
-1,[basics]
-1,[basics]. [obsession]
-1,[basics]. [specialatt]. [obsession]
-1,[basics]. [specialatt]. [specialdef]
-1,[basics]. [specialatt]. [specialdef]. [weakness]
-1,[basics]. [specialatt]. [specialtal]. [obsession]
-1,[basics]. [specialatt]. [weakness]
-1,[basics]. [specialdef]. [specialtal]
-1,[basics]. [specialdef]. [specialtal]. [specialatt]. [obsession]
-2,[basics]. [specialdef]
-2,[basics]. [specialtal]
-1,[many] heads, but moving in perfect sync, the heads are alike in that [head]. [body]. [tail]. [size]. [breathe]. [obsession]
-1,of 2 heads, cooperative to a degree, one of [head], and the other [head]. [body]. [tail]. [size]. [breathe]. [obsession]
-
-;size
-1,It is the size [what]
-
-;what
-1,of a bear
-1,of a horse
-1,of a house
-1,of an elephant
-1,to devour elephants
-
-;head
-5,it has a long slender jaw, with fierce curved teeth, akin to a pike or gar
-5,its head is a blunt triangular thing, its sneering mouth seemingly an afterthought
-5,its head is a frilled thing, a mixture of reptilian savageness and the vanity of fishes
-5,its head is blind worm-things, a looming maw is all that is seen
-5,its head is less of a head, and more a cage of long teeth, like some freak fish from the ocean’s sunless depths
-5,its head is split vertically by its jaw, bookended by its piggish eyes
-5,its head is that of a haughty raptor, with a cruel scythe of a beak
-5,its head is that of the maligned slothful crocodile
-5,possessing of a head in the classic lizard style
-5,the head has the poisonous beauty of a great snake’s
-0,
-1,it has a long slender jaw, with fierce curved teeth, akin to a pike or gar and [headspec]
-1,its head is a blunt triangular thing, its sneering mouth seemingly an afterthought, as well as [headspec]
-1,its head is a frilled thing, a mixture of reptilian savageness and the vanity of fishes and [headspec]
-1,its head is blind worm-things, a looming maw and [headspec] is all that is seen
-1,its head is less of a head, and more a cage of long teeth, like some freak fish from the ocean’s sunless depths and [headspec]
-1,its head is split vertically by its jaw, bookended by its piggish eyes and also [headspec]
-1,its head is that of a haughty raptor, with a cruel scythe of a beak as well as [headspec]
-1,its head is that of the maligned slothful crocodile, and [headspec]
-1,possessing of a head in the classic lizard style but furthermore [headspec]
-1, the head has the poisonous beauty of a great snake’s with [headspec]
-
-;headspec
-1,a cluster of secondary eyes, like a spider’s
-1,a frill of wicked poisonous spines, barbed and quivering
-1,a glowing lure hangs above its face
-1,a great crown of horns
-1,a horn judders out from its face, gore stained
-1,a mane of fiery hue
-1,a mouth in a mouth in a mouth, like stacked Russian dolls
-1,a pair of horns, like long lances, to gut the heavens
-1,a ring of other mouths ring its face, softly singing worship
-1,a tight curl of goatish horns
-1,behind its teeth, are yet more teeth, and more beyond that
-1,despite this, it is somehow eerily human and familiar
-1,great blazing orbs of eyes, pulling at the unwary like moths unto a candle flame
-1,its eyes being terrifying black pools, like the night sky, when all the stars have died
-1,its eyes cry blood
-1,its face is carved with shifting rune scars
-1,venomous bile drooling from its fangs
-
-;body
-1,It possesses a crocodilian body, but with the horse’s muscular grace
-1,Its body is a stilt-legged thing, like a quadrupedal marsh bird
-1,Its body is a vile tarry eel
-1,Its body is corpulent, and it sits on its haunches with its tiny forearms wringing together
-1,Its body is long, legless and elegant, rippling in space
-1,Its body is short and powerfully built, like a pit fighting tiger
-1,Its body is a pallid thing, better hid in caves,  strutting on fins, crude mockeries of legs
-1,Its body possesses powerfully bat-like wings and a snake’s body
-1,The body is overshadowed by its great fanned wings
-1,The body is like the common imagined wyrm, but with three pairs of eagle’s wings
-1,The body of it is a snake’s body, but akin to a centipede, with human arms writhing furiously as legs
-
-;armour
-1,A coating like liquid glass surrounds, but cold, and unbreaking
-1,Fine, delicate, iridescent scales are its skin, like opals and beetles
-1,Great scales adorn is hide, that would shatter any blade raised against it
-1,It has a carapace, black and shiny, like an abominable crab or beetle
-1,It has a thick protective fur, of [colour]
-1,Its hide appears raw and half-flayed, oozing blood, that suddenly clots hard against weapons
-1,Its hide is thick, fat and leathery, to put even the elephant to shame
-1,Its skin is seemingly metal, with crude painful-looking joins at the joints allowing stiff movement
-1,Light itself seems loath to settle upon its form, making it hidden in shifting murk
-1,Numerous coins and jewels have stuck fast to it, and now turn aside many a blade
-1,Rolls and rolls of fat to foil the weapons of all
-1,Scavenged rusting metal, forming embedded scabs in its flesh, provide it with great protection
-1,Shimmering fish skin it possesses to its gain
-1,Thick bony plates protect it, with bone studs arrayed regularly between them
-
-;specialtal
-1,After eating the heart of a child, given freely by the parent, it can cure any wound or sickness on another being
-1,Despite its size, it can fold itself away, hiding in places seemingly much too small for it
-1,Graveyard dirt heals its wounds
-1,Gravity has little command of it
-1,It can smell thought
-1,It eats poison and voids forth sweet waters
-1,It is said to live backwards, its past a mystery to it, while its future is stark and clear
-1,It speak with another’s tongue if it eats their teeth
-1,Its claws are long, insinuations of glass, that suck a man’s blood dry in moments
-1,Its movement is jerky and unreal like a puppet, or someone moving under flickering light
-1,Its presence is foretold by heavy red rains
-1,Its smell turns domesticated animals feral, cats tripping owners down stairs, cows chewing flesh from faces, and horses charging off cliffs
-1,Vermin bring it gifts and secrets
-
-;breathe
-1,From deep within its gullet, it belches forth a great deadly cloud of flame
-1,From its lungs comes a grey cloud that petrifies what it touches, but only partially, leaving its victims a fleshy core in a stoney crust
-1,From its mouth comes a black light, and all it touches is now gone
-1,If eyes flash, and the air hums, you know it is about to spit up a great stroke of lightning
-1,If so desiring it can spray a fine mist of horrible flesh searing acid droplets
-1,It can cough up black, burning tar, caustic and searing
-1,It can let out a deep low undulation which moments later makes all struck by it violently hemorrhage
-1,It can spew forth a viscous sticky gel, which ignites with contact with air, trapping as it burns
-1,It can spit balls of fire, lightning fast, of strange hue, and foe chasing
-1,It can spit forth a gout of boiling blood
-1,It can usher forth a great killing horde of half real shadowy bugs
-1,It may breathe forth a blazing cone of black, light inverting, fire, that freezes instead of burning
-1,It may breathe forth a blazing cone of fire
-1,It will vomit up glass blades that shatter upon impact, sending shards everywhere
-1,Its very breath is death on the air, wilting plant life and filling lungs with vile fluid
-1,The breath of it is a shimmering wave in space, and then all is melting and desiccation
-
-;specialdef
-1,Beware, for it can turn invisible, but its shadow remains, betraying its presence
-1,Neither fire nor wood may harm it
-1,It can blink in and out of space
-1,It has not organs or  vitals, only pestilence. A piercing attack will do little to it
-1,It is also rumored that the dragon’s limbs can survive if severed from it, and will grow anew. Although these limb-born dragons cannot stand each other and will relentlessly hunt each other down until one remains again
-1,It need not breathe, and can survive frozen or entombed
-1,Its mottled hide shifts and bewitches with unnatural colours and glimmers. Nausea and insanity await those who stare too long
-1,Magic is warped around it
-1,No dog will track it
-1,Take note that, despite its size, it is terrifyingly nimble, capable of great pounces and evades
-1,This dragon’s skin is covered in fine black spines, hard to see, and agonizing if they pierce flesh
-1,You must inflict your wounds quickly upon it, for it heals frighteningly fast. If you can fight it in running water however, its blood is washed away, and so it cannot heal
-
-;specialatt
-1,Beware its ambushes
-1,Do not make eye contact for to long, or it will know the faces of all you love
-1,Each day it learns and forgets one spell
-1,Hearing its laugh, causes bewitchment and delusion
-1,If it licks you, your wounds do not heal until the next new moon
-1,It is also said it has great fondness for catching and flinging, with great force, its enemy into one another
-1,Its blood causes vipers to sprout from the ground
-1,Its tongue lashes out, and flays, with its tiny burrowing barbs
-1,Take heed for it can shoot forth a cloud of spines
-1,The dragons claws can cleave stone like butter
-1,The lungs it possesses are so mighty, it can inhale the air from your lungs at 20 paces
-1,The teeth of it are brittle, and remain, wriggling, in the bite
-1,The voice of it sickens and weakens
-
-;environment
-1,Deep underground, pray you don’t meet it there
-1,Ever roaming the land, when the moon is dark
-1,It is found in the ruins of people
-1,It is found on lonely wind-swept sea cliffs
-1,Perching amongst the teeth of the world, this is where it is home
-1,The brutal desert is where it hunts
-1,The depths of lakes, in the silt, is where it slumbers
-1,The most gnarled and light-hating forests is where it is found
-1,The muck of swamps is its kingdom
-1,The teeming jungle, is where it is king
-1,You can hear it calling on the loneliest of moors
-
-;obsession
-1,The dragon is above all else know for its [theme]
-
-;theme
-1,Cunning
-1,Destruction
-1,Domination
-1,Exile
-1,Exploration
-1,Glory
-1,Greed
-1,Grotesqueness
-1,Guardianship
-1,Insanity
-1,Malice
-1,Mentorship
-1,Nihilism
-1,Otherness
-1,Psychopathy
-1,Savage Nature
-1,Sorrow
-1,Thirst for Power
-1,Thrill-seeking
-1,Traps
-1,Uncontrolled Power
-1,Vengeance
-1,Vestige of Humanity
-1,Wisdom
-1,Youthful Exuberance
-
-;appetite
-1,It prefers to feast upon [food]
-
-;food
-1,[ValueMetal]
-1,blood
-1,brains
-1,children
-1,farm animals
-1,filth
-1,flayed skin
-1,innocents
-1,porcelain
-1,precious stones
-1,rare books
-1,rotting flesh
-1,soil from battle fields
-1,the substances of  [creature]
-
-;weakness
-1,Bright light will easily blind it
-1,Coins thrown in front of it, causes it to stop and count them
-1,Dog flesh is poison to it
-1,It does however possesses an alarming stupid streak
-1,It gluttony knows no limit, and if a great enough meal could be made, it would eat until it died
-1,It will strike at minstrels above all other targets
-1,Its pride means it can be provoked into a blind rage
-1,Its underbelly is soft and unprotected
-1,Know this, silver burns its flesh
-1,The are secret words, that if learned, will give you command of it
-
-;Creature
-1,Adder
-1,Angel
-1,Ant
-1,Ape
-1,Badger
-1,Barnacle
-1,Basilisk
-1,Bat
-1,Bear
-1,Beaver
-1,Bee
-1,Beetle
-1,Bird
-1,Boar
-1,Buck
-1,Bull
-1,Calf
-1,Camel
-1,Carp
-1,Cat
-1,Centaur
-1,Centipede
-1,Charger
-1,Chimera
-1,Clam
-1,Cock
-1,Cockatrice
-1,Coney
-1,Cormorant
-1,Cow
-1,Crab
-1,Crane
-1,Crayfish
-1,Crocodile
-1,Crow
-1,Cuckoo
-1,Cyclops
-1,Deer
-1,Doe
-1,Dog
-1,Dolphin
-1,Dolphin
-1,Donkey
-1,Dove
-1,Dragon
-1,Drake
-1,Duck
-1,Dwarf
-1,Eagle
-1,Eel
-1,Elephant
-1,Elf
-1,Ewe
-1,Falcon
-1,Fawn
-1,Ferret
-1,Finch
-1,Fish
-1,Fitch
-1,Flounder
-1,Fly
-1,Fox
-1,Frog
-1,Gander
-1,Gargoyle
-1,Gnome
-1,Goat
-1,Goblin
-1,Golem
-1,Goose
-1,Goshawk
-1,Grasshopper
-1,Griffin
-1,Grouse
-1,Gull
-1,Halfling
-1,Hare
-1,Harpy
-1,Hart
-1,Hawk
-1,Hedgehog
-1,Hen
-1,Heron
-1,Herring
-1,Hind
-1,Hog
-1,Horse
-1,Hound
-1,Hydra
-1,Jabberwock
-1,Jay
-1,Juggernaut
-1,Killer Whale
-1,Lamb
-1,Lamprey
-1,Lark
-1,Leopard
-1,Lion
-1,Lizard
-1,Lobster
-1,Lobster
-1,Locust
-1,Manta ray
-1,Manticore
-1,Mare
-1,Merlin
-1,Mermaid
-1,Minnow
-1,Mole
-1,Mouse
-1,Nautilus
-1,Newt
-1,Nightingale
-1,Nymph
-1,octopus
-1,Octopus
-1,Ogre
-1,Osprey
-1,Otter
-1,Ox
-1,Oyster
-1,Panther
-1,Pegasus
-1,Pelican
-1,Pheasant
-1,Phoenix
-1,Pigeon
-1,Pigeon
-1,Pike
-1,Polecat
-1,Pony
-1,Porcupine
-1,Porpoise
-1,Pullet
-1,Rabbit
-1,Ram
-1,Rat
-1,Raven
-1,Roebuck
-1,Rook
-1,Sailor
-1,Salmon
-1,Satyr
-1,Scorpion
-1,Sea anemone
-1,Sea snake
-1,Sea-Lion
-1,seahorse
-1,Seal
-1,Serpent
-1,Shark
-1,Shark
-1,Sheep
-1,Siren
-1,Snake
-1,Sow
-1,Spider
-1,Squid
-1,Squirrel
-1,Stag
-1,Stallion
-1,Starling
-1,Stingray
-1,Sturgeon
-1,Swallow
-1,Swan
-1,Swan
-1,Sylph
-1,Tiger
-1,Toad
-1,Tortoise
-1,Trout
-1,Tyger
-1,Unicorn
-1,Viper
-1,Vixen
-1,Vole
-1,Weasel
-1,Whale
-1,Wolf
-1,Woodpecker
-1,Wren
-1,Wyvern
-
-;ValueMetal
-1,copper
-1,electrum
-1,gold
-1,palladium
-1,platinum
-1,silver
-
-;tail
-1,A hateful naked thing, like that of a rat, is its tail
-1,Held aloof, its tail is delicately scaled with poisonous frills
-1,Its tail is a stumpy, malign thing
-1,Its tail is barbed like a scorpion
-1,Its tail lashes back and forth like an angry cat
-1,Long and snakelike, its tail is especially noteworthy for the ever-burning flame at its tip
-1,The tail is both python-like in appearance and crushing grip
-1,The tail is broad and flat, capable of powerful swimming strokes
-1,The tail is typical, being no different from that of an alligator
-1,The tail of it is very much a whip
-1,With a blade-like bone spur, its tail is to be watched for
-
-;many
-1,3
-1,4
-1,5
-1,6
-1,7
-
----
-
-;main
-1, <b>Name:</b>[dname]<p> <b>Age:</b> [dage]</p> <b>Species:</b> [type] <p> <b>Personality:</b> [personality][personality][personality][personality] </p> <p> <b>Description:</b> </p> <p> This Dragon has [Color.all] [scales], [head], a [dbody][legnumber] legs, [wings] wings and [tailtype] tail. It has [eyes].</p><p> [special]</p> <p> <b>Powers:</b> [powers][powers][powers][powers] </p>
-
-;age
-1,hatchling
-2,young
-3,adult
-2,old
-1,ancient
-
-;dage
-1, [1][0][0][0]
-1, [1][1][0][0]
-1, [1][2][0][0]
-1, [1][3][0][0]
-1, [1][4][0][0]
-1, [1][5][0][0]
-1, [1][6][0][0]
-1, [1][7][0][0]
-1, [1][8][0][0]
-1, [1][9][0][0]
-1, [2][0][0][0]
-1, [2][1][0][0]
-1, [2][2][0][0]
-1, [2][3][0][0]
-1, [2][4][0][0]
-1, [2][5][0][0]
-1, [2][6][0][0]
-1, [2][7][0][0]
-1, [2][8][0][0]
-1, [2][9][0][0]
-1, [3][0][0][0]
-1, [3][1][0][0]
-1, [3][2][0][0]
-1, [3][3][0][0]
-1, [3][4][0][0]
-1, [3][5][0][0]
-1, [3][6][0][0]
-1, [3][7][0][0]
-1, [3][8][0][0]
-1, [3][9][0][0]
-1, [4][0][0][0]
-1, [4][1][0][0]
-1, [4][2][0][0]
-1, [4][3][0][0]
-1, [4][4][0][0]
-1, [4][5][0][0]
-1, [4][6][0][0]
-1, [4][7][0][0]
-1, [4][8][0][0]
-1, [4][9][0][0]
-1, [5][0][0][0]
-1, [5][1][0][0]
-1, [5][2][0][0]
-1, [5][3][0][0]
-1, [5][4][0][0]
-1, [5][5][0][0]
-1, [5][6][0][0]
-1, [5][7][0][0]
-1, [5][8][0][0]
-1, [5][9][0][0]
-1, [6][0][0][0]
-1, [6][1][0][0]
-1, [6][2][0][0]
-1, [6][3][0][0]
-1, [6][4][0][0]
-1, [6][5][0][0]
-1, [6][6][0][0]
-1, [6][7][0][0]
-1, [6][8][0][0]
-1, [6][9][0][0]
-1, [7][0][0][0]
-1, [7][1][0][0]
-1, [7][2][0][0]
-1, [7][3][0][0]
-1, [7][4][0][0]
-1, [7][5][0][0]
-1, [7][6][0][0]
-1, [7][7][0][0]
-1, [7][8][0][0]
-1, [7][9][0][0]
-1, [8][0][0][0]
-1, [8][1][0][0]
-1, [8][2][0][0]
-1, [8][3][0][0]
-1, [8][4][0][0]
-1, [8][5][0][0]
-1, [8][6][0][0]
-1, [8][7][0][0]
-1, [8][8][0][0]
-1, [8][9][0][0]
-1, [9][0][0][0]
-1, [9][1][0][0]
-1, [9][2][0][0]
-1, [9][3][0][0]
-1, [9][4][0][0]
-1, [9][5][0][0]
-1, [9][6][0][0]
-1, [9][7][0][0]
-1, [9][8][0][0]
-1, [9][9][0][0]
-
-;0
-1,0
-;1
-1,1
-;2
-1,2
-;3
-1,3
-;4
-1,4
-;5
-1,5
-;6
-1,6
-;7
-1,7
-;8
-1,8
-;9
-1,9
-
-;type
-1,Gold Dragon
-1,Red Dragon
-1,Celestial Dragon
-1,Forest Dragon
-1,Void Dragon
-1,Water Dragon
-1,Fae Dragon
-1,Black Dragon
-1,Silver Dragon
-1,Platinum Dragon
-1,Brass Dragon
-1,Bronze Dragon
-
-;personality
-1,Rational,
-1,Principled, 
-1,Purposeful, 
-1,Self-Controlled,
-1,Perfectionist,
-1,Caring, 
-1,Demonstrative, 
-1,Generous, 
-1,People-Pleasing,
-1,Possessive,
-1,Success-Oriented,
-1,Adaptive, 
-1,Excelling, 
-1,Driven, 
-1,Image-Conscious,
-1,Sensitive, 
-1,Expressive, 
-1,Dramatic, 
-1,Self-Absorbed, 
-1,Temper-mental,
-1,Intense, 
-1,Perceptive, 
-1,Innovative, 
-1,Secretive, 
-1,Isolated
-1,Committed, 
-1,Security-Oriented,
-1,Engaging, 
-1,Responsible, 
-1,Anxious,
-1,Suspicious
-1,Fun-Loving
-1,Spontaneous, 
-1,Versatile, 
-1,Distracted, 
-1,Scattered,
-1,Dominating, 
-1,Self-Confident, 
-1,Decisive, 
-1,Willful, 
-1,Confrontational,
-1,Easygoing, 
-1,Receptive, 
-1,Reassuring, 
-1,Agreeable, 
-1,Complacent,
-
-;scales
-16, Shiny scales
-1,Dull scales
-2,leathery skin
-3,bone plated
-1,Bark-like skin
-
-;head
-10,[headfeature]
-
-
-;headfeature
-1,[headfeature] and [headfeature]
-1,a unicorn's horn
-2,horns like those of a bull
-1,large sacks of venom just under the lower jaw
-10,a spiked frill
-10,a bony crest
-5,a crocodile-like skull
-1,antlers
-
-;dbody
-1, Stocky and short body,
-1, Thin and Wiry body,
-1, long and Slender body,
-1, Broad and Muscled body,
-1, Plump body,
-
-;legnumber
-4,four [legtype]
-2,two [legtype]
-2,no
-
-
-;legtype
-10,reptilian
-1,thick
-1,thin
-1,short and near useless
-1,short but powerful
-1,long and strong
-
-;wings
-1,no
-1,leathery
-1,huge
-1,vestigial
-1,strong
-4,bat-like
-
-
-;tailtype
-10,long and sinous
-2,snake-headed
-4,venomous stinger in the end of its
-1,no
-10,a powerful
-2,blade-like tip at the end of its
-3,spiked
-
-;eyes
-1,[Color.all] reptilian eyes
-1,[Color.all] snake-like eyes
-1,eyes like swirling [Color.metallic] pools
-
-;breathchance
-3,It can exhale a [breathtype] of [breath].
-2,It can exhale a [breathtype] of [breath] and [breath]
-1,
-
-
-;special
-5,
-4,[special] [special]
-1,It can possess a human with a mere glance.
-1,It understands every language ever spoken or written.
-1,It has scales as hard as [Utility.MetalArmor].
-1,It can take the shape of men and beasts alike.
-1,It can hear thoughts.
-1,It can smell secrets and deception.
-1,Everyone looking at it shall rightly adore it as a god.
-1,It can breath water as easily as air.
-1,It never truly sleeps.
-1,People under its shadow become raving madmen.
-1,Storms comes wherever it passes.
-1,Its whispers can change the heart of people.
-1,The mere presence of it turns people into scaled monsters, a bit by bit.
-1,It has arcane power that mirrors that equals the most powerful mages.
-
-;powers
-1, Clairvoyancy,
-1, Telepathy,
-1, Healing,
-1, Magick Teaching,
-1, Third-eye Enhancment,
-1, Astral Protection,
-1, Wisdom,
-1, Protection,
-1, Wealth Magnet,
-1, Wish Granting,
-1, Fertility Boosting,
-1, Positivity Granting,
-1, Enhances Latent Abilities,
-1, Knowledge of Herbs,
-1, Knowledge of Ancient Magick,
-1, Knowledge of Other Realms,
-1, Can open portals to other realms,
-1, Detection of Deception,
-1, Divination boosting,
-1, Divination teaching,
-1, Energy Manipulation,
-1, Assists in Weightloss,
-1, Helps Heal a Broken Heart,
-1, Soul Mate Finder,
-1, Love Finder,
-1, Cleanses Your Aura,
-1, Aligns Your Chakra,
-1, Brings Out The Courage in You,
-1, Increases your Vitality,
-1, Alerts Your of Danger,
-1, Psychic Enhancer,
-1, Confidence Booster,
-
-;dname
-1,[ConsCap][Vowel][Cons][Vowel][Cons][More]
-1,[VowelCap][Cons][Vowel][Cons][More]
-4,[MalePrefix][Vowel][Suffix][MaleTitle]
-4,[MalePrefix][Vowel][Cons][Vowel][Suffix]
-1,[ConsCap][Vowel][Cons][Vowel][Cons][More]
-1,[VowelCap][Cons][Vowel][Cons][More]
-4,[FemalePrefix][Vowel][Suffix][FemaleTitle]
-4,[FemalePrefix][Vowel][Cons][Vowel][Suffix]
-
-;More
-1,[Vowel][Suffix]
-3,[Vowel][Cons]
-3,
-
-;MalePrefix
-1,Bril
-1,Ae
-2,Neh
-1,Thin
-1,Thehl
-1,Sk
-1,Krig
-1,Fharl
-1,Fan
-1,Olih
-
-;FemalePrefix
-1,Ehl
-1,Nah
-2,Neh
-1,Lin
-1,Lhin
-1,Linh
-1,Fehl
-1,Oehl
-
-;Cons
-1,ch
-1,g
-1,r
-1,gh
-1,n
-1,gn
-1,th
-1,tr
-1,sh
-1,d
-1,b
-1,f
-
-;Vowel
-2,a
-1,ae
-1,u
-1,e
-1,o
-2,i
-
-;ConsCap
-1,Ch
-1,G
-1,R
-1,Gh
-1,H
-1,Gn
-1,Th
-1,Tr
-1,Sh
-1,D
-1,B
-1,F
-
-;VowelCap
-2,A
-1,Ae
-1,U
-1,E
-1,O
-2,I
-
-;Suffix
-1,ros
-2,rit
-1,ala
-2,ghn
-1,mara
-1,nna
-1,rra
-1,roth
-
-----
-
-;main
-90,[proper]
-1,An illusion of [proper].
-1,The mouldering corpse of once infamous [proper].
-
-;proper
-10,[fullname], a two-headed [dragon] with heads that breathe [breath] and [breath][special].
-50,[fullname], a [dragon] that breathes [breath][special].
-1,[fullname], a ten-headed [dragon] with heads that all breathe [breath][special].
-1,[fullname] and [fullname], a pair of identical dragons. Each is a [dragon] that breathes [breath][special].
-
-;fullname
-3,[name] the [awful]
-1,[name]
-
-;name
-50,[name1][name2][name3]
-10,[name1][name2][name3] [name1][name2][name3]
-3,[name1][name2][name3][name2][name3]
-
-;name1
-1,Anc
-1,Bar
-1,Bomb
-1,Cam
-1,Dur
-1,Ert
-1,Flash
-1,Flar
-1,Gral
-1,Hagr
-1,Ish
-1,Jab
-1,Krall
-1,Liz
-1,Mad
-1,Nak
-1,Od
-1,Prak
-1,Quex
-1,Rat
-1,Salm
-1,Sm
-1,Tur
-1,Un
-1,Ver
-1,Worm
-1,Xyg
-1,Yzz
-1,Zy
-
-;name2
-12,
-1,ala
-1,ali
-1,ama
-1,ane
-1,au
-1,ei
-1,eli
-1,io
-1,isu
-1,oo
-1,ura
-
-;name3
-1,brash
-1,cur
-1,dur
-1,gar
-1,gor
-1,head
-1,kron
-1,lammer
-1,lash
-1,mite
-1,rack
-1,tesh
-1,trash
-1,yask
-
-;awful
-1,astonishing
-1,awful
-1,bringer of death
-1,conqueror
-1,cunning
-1,dread
-1,feared
-1,fearsome
-1,fierce
-1,gigantic
-1,herald of doom
-1,immense
-1,indestructible
-1,inescapable
-1,infamous
-1,infinite
-1,irredeemable
-1,life taker
-1,mad
-1,mighty
-1,ruin maker
-1,serpent
-1,shameful
-1,shunned
-1,slimy
-1,stinker
-1,swift
-1,terrible
-1,treacherous
-1,undoubted
-1,undoubted
-1,unforgetable
-1,unforgiving
-1,winged terror
-1,worm
-
-;breath
-1,fire
-1,cold
-1,acid
-1,boiling water
-1,poison gas
-1,poison spray
-1,lightning
-
-;dragon
-8,[horned] [colour] [sex] dragon
-1,striped [horned] [colour] and [colour] [sex] dragon
-1,[horned] [colour] [sex] dragon with [colour] spots
-1,[horned] [colour] [sex] dragon with a [colour] head
-1,[horned] [colour] [sex] dragon with a [colour] tail
-
-;sex
-9,
-1,female
-
-;sex2
-9,man
-1,woman
-
-;colour
-50,red
-30,green
-30,blue
-20,white
-20,black
-10,grey
-10,gold
-10,silver
-10,copper
-5,orange
-5,purple
-1,invisible
-
-;horned
-5,
-1,horned
-1,spiny
-1,underwater
-
-;special
-1,
-1,, who [specialList]
-1,, who [specialList] and [specialList]
-
-;specialList
-1,has the power of speech
-1,has a spiked tail
-1,has spikes along its back
-1,is covered in slime
-1,has a mighty tail whose strike causes earthquakes
-1,can appear in the guise of a [sex2]
-1,is a mighty sorceror
-1,been alive since the dawn of time
-1,has escaped from the depths of the earth
-1,is ravenously hungry
-1,is cunning beyond measure
+: special cosmetic
+a bony ridge separates {g.possessive} nostrils
+a hornlike projection juts straight out between {g.possessive} nostrils
+a membranous frill runs down {g.possessive} back
+a series of tentacle-like tendrils sprouts from {g.possessive} chin
+a single horn projects from the base of {g.possessive} chin
+one misshapen horn extends backwards from {g.possessive} forehead
+two {short |long |curved|}horns extend {back|for|out}ward from {g.possessive} forehead
+{g.pronoun} has strange membranes that function as ears
+{g.pronoun} has tiny oval nostrils located on either side of {g.possessive} snout
+
+: special quality
+blindsight: can ascertain creatures by non-visual means (mostly hearing and scent, but also by noticing vibrations and other environmental clues); this dragon's range is 240 feet
+can alter {g.possessive} size (from one-tenth to thrice normal dimensions)
+can breath water as easily as air
+can hear thoughts
+can polymorph into the shape of men and beasts alike
+can possess a human with a mere glance
+can see omens and speak prophecy
+can smell secrets and deception
+despite {g.possessive} size, {g.pronoun} is terrifyingly nimble; capable of great pounces and evades
+detect gems: 3/day, the dragon can use this ability. similar to detect magic, this spell finds only gems. studying for one round reveals presence or absence of gems, 2 rounds reveals exact number of gems, and 3 rounds reveals exact location, type, and value
+feeds on light
+fire subtype: fire immunity, double damage from cold except on a successful save
+frightful presence: can unsettle foes with their mere presence. this ability takes effect automatically (radius 240 ft) whenever the dragon attacks, charges, or flies overhead. a potentially affected creature (one with less than 29 hd) that succeeds at a will save (dc 31) remains immune to that dragon's frightful presence for one day. on a failure, creatures with 4 or fewer hd become panicked for 4d6 rounds and those with more than 5 hd become shaken for 4d6 rounds (ignore the frightful presence of other dragons)
+has a strong affinity with {order} creatures
+has arcane power that matching that of the most powerful mages
+heals frighteningly fast
+hide changes color, perhaps indicating emotions
+is always surrounded by swarms of stinging flies
+keen senses: can see four times as well as humans in low-light conditions and twice as well in normal light. they also have darkvision (120 feet)
+luck bonus: once per day the dragon can touch one gem (usually embedded in the dragon's hide) and enchant it to bring good luck. as long as the dragon carries the gem, it and every good creature in a 80 foot radius receives a +1 luck bonus as per stone of good luck. if the dragon gives the gem to another creature, only the bearer gets the bonus. the enchantment lasts 1d3+24 hours but ends if the gem is destroyed
+magic is warped around {g.object} ({+|-}{6} levels)
+need not eat, drink, or even breathe, and can survive frozen or entombed
+never truly sleeps
+no dog will track {g.object}
+presence is foretold by heavy {color:simple}-tinted rain and strong winds
+smell turns domesticated animals feral
+spell-like abilities: 3/day - polymorph self and bless; 1/day - geas/quest
+spells known (cast 6/8/8/8/7/5; as a level 11 sorcerer): 0–detect magic, resistance, detect poison, read magic, dancing lights, ghost sound, mage hand, open/close, mending; 1–endure elements, mage armor, divine favor, cure light wounds, shield; 2–bull's strength, cat's grace, blur, endurance, fog cloud; 3–haste, dispel magic, protection from elements, slow; 4–spell immunity, dimension door, improved invisibility; 5–cloudkill, righteous might
+understands every language ever spoken or written
+water breathing: this dragon can breathe underwater indefinitely and can freely use its breath weapons, spells, and other abilities while submerged
+whispers can change the hearts of people
+
+: special aura
+everyone looking at {g.object} shall rightly adore {g.object} as a god
+people under {g.possessive} shadow become raving madmen
+storms come wherever {g.pronoun} passes
+the mere presence of {g.object} turns people into scaled monsters, bit by bit
+
+: weakness
+acute hearing causes {g.object} to despise most noises; {g.pronoun} will almost always attack bards before all others
+bright light will easily blind {G.object}
+coins thrown in front of {G.object}, causes {G.object} to stop and count them
+heavy sleeper after a large meal
+highly allergic to {reagent}
+running water negates some of {g.possessive} magical abilities
+the are secret words, that if learned, will give you command of {G.object}
+will protect {g.possessive} eggs above all else
+{G.possessive} pride means {G.pronoun} can be provoked into a blind rage
+{fauna} flesh is poisonous to {G.object}
+{metal:precious} burns {G.possessive} flesh
+
+: favorite food
+blood
+brains
+children
+farm animals
+rotting flesh
+virgins
+{fauna}
+{girls|boys}
+{{humanoid}+}
+
+: lair
+a cave{50%rn}
+a ruined city in the {~{terrain}}
+a sheltered canyon
+a {25%{site:adj} }{site:condition} {site:artificial}
+a {active|dormant} volcano
+an abandoned underground city
+an exotic jungle
+an icy cavern in a frozen wasteland
+deep underground
+lonely wind-swept sea cliffs
+the ruins of a {site:condition} city{25% abandoned after a {disaster}}
+the tunnels of an abandoned {dwarven|goblin|gnome} outpost
+{G.pronoun} has no lair, but is always roaming

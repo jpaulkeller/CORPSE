@@ -45,4 +45,4 @@ red oak
 yew
 
 : Natural = Geology + Wood
-: Hard = Geology + Wood + ManMade
+: Hard = Geology + Wood + Man Made

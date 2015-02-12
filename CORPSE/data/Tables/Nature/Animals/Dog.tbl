@@ -1,6 +1,6 @@
 / http://random-generator.com/index.php?title=Dog_Description
 
-10x {Dog Name}, a {:gender} {:breed}. {:PersonalitySentence}
+10x {Pet Name:Dog}, a {:gender} {:breed}. {:PersonalitySentence}
 
 : Gender
 3x male
