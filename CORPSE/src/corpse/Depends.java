@@ -141,7 +141,8 @@ public final class Depends
          String tbl = m.group(1).toUpperCase();
          if (!MISSING_TABLES.contains(tbl) && !Table.TABLES.containsKey(tbl))
          {
-            System.err.println("    Missing table: " + tbl);
+            if (tbl.length() > 1) // ignore 1-character names (which are probably variables) 
+               System.err.println("    Missing table: " + tbl);
             MISSING_TABLES.add(tbl);
          }
          else if (!MISSING_TABLES.contains(tbl))
@@ -179,6 +180,8 @@ public final class Depends
       if (token.toLowerCase().startsWith("{degree"))
          return true;
       if (token.toLowerCase().startsWith("{duration"))
+         return true;
+      if (token.length() <= 3) // ignore 1-character names (which are probably variables) 
          return true;
       if (DEREF.matcher(token).matches()) // ignore assignment references
          return true;
