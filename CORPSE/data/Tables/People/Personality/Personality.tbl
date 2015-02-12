@@ -1,21 +1,6 @@
 / http://en.wikipedia.org/wiki/Enneagram_of_Personality
 / http://random-generator.com/index.php?title=Fae_NPC_Personality
 
-. Number 1
-. Role 14
-. Description 80
-
-1 reformer       rational, idealistic type: principled, purposeful, self-controlled, and perfectionistic
-2 helper         caring, interpersonal type: demonstrative, generous, people-pleasing, and possessive
-3 achiever       success-oriented, pragmatic type: adaptive, excelling, driven, and image-conscious
-4 individualist  sensitive, withdrawn type: expressive, dramatic, self-absorbed, and temperamental
-5 investigator   intense, cerebral type: perceptive, innovative, secretive, and isolated
-6 loyalist       committed, security-oriented type: engaging, responsible, anxious, and suspicious
-7 enthusiast     busy, fun-loving type: spontaneous, versatile, distractible, and scattered
-8 challenger     powerful, dominating type: self-confident, decisive, willful, and confrontational
-9 peacemaker     easygoing, self-effacing type: receptive, reassuring, agreeable, and complacent
-
-
 Analyst: Anything can be explained rationally, and you will explain it. You are happiest when your rational/scientific method helps to solve a major problem. 
 Autistic: You live inside your shell. Revealing the 'real' you could be the worst thing that could ever happen. You are happiest when you manage to keep someone entirely out.
 Autocratic: You must be in control of all situations at all times. You are happiest when you maintain control during a situation and succeed.
@@ -78,3 +63,19 @@ True Believer: Whatever you do, it is in the service of the Divine Being which y
 Visionary: You have the drive and imagination to keep aiming for the sky and beyond. You are happiest when you convince others to believe in your dreams, and follow your vision.
 Waif: Whether you are or not, you have the appearance of being innocent and weak, and you haven't quite learned to act on your own without relying on others' pity. You are happiest when you accomplish something important without anyone's help.
 Wanderer: Settling down is just not your thing. You're running away from something, and the road is your home. You are happiest when you complete your purpose in one place, and move on, leaving no loose ends or attachments behind.
+
+===
+
+. Number 1
+. Role 14
+. Description 80
+
+1 reformer       rational, idealistic type: principled, purposeful, self-controlled, and perfectionist
+2 helper         caring, interpersonal type: demonstrative, generous, people-pleasing, and possessive
+3 achiever       success-oriented, pragmatic type: adaptive, excelling, driven, and image-conscious
+4 individualist  sensitive, withdrawn type: expressive, dramatic, self-absorbed, and temperamental
+5 investigator   intense, cerebral type: perceptive, innovative, secretive, and isolated
+6 loyalist       committed, security-oriented type: engaging, responsible, anxious, and suspicious
+7 enthusiast     busy, fun-loving type: spontaneous, versatile, easily distracted, and scattered
+8 challenger     powerful, dominating type: self-confident, decisive, willful, and confrontational
+9 peacemaker     easygoing, self-effacing type: receptive, reassuring, agreeable, and complacent

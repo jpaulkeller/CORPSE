@@ -20,7 +20,7 @@ A druid needs help defending her grove against goblins.
 A dwarf, dead and with an expression of great terror, and a list of names he carried.
 A dying messenger, those chasing her, and a message of great importance.
 A famous foreign gladiator is appearing at the arena tonight.
-A fire elemental has escaped from a {pseudo class:magical} lab.
+A fire elemental has escaped from a {pseudo class:mage} lab.
 A flight of small drakes, unparalleled in the accuracy of their flaming breath, loyal to anyone who feeds them.
 A gate to the Lower Planes threatens to bring more demons to the world.
 A giant {avian} has just carried off a baby from a balcony.
@@ -28,7 +28,7 @@ A great dragon was slain, the witch queen banished, and the spirit of the ancien
 A great treasure was discovered by the dwarves in the {region}.
 A group of dragons has banded together to increase their power.
 A guild of messengers dabbling in smuggling, protective of their monopoly.
-A halfling {pseudo class:magical} has discovered a new powerful school of magic.
+A halfling {pseudo class:mage} has discovered a new powerful school of magic.
 A hero exiled by her people, driven by the will to die on the peak of her lofty mountain home.
 A hole in reality, withering hope and self-esteem of those near it.
 A huge dire wolf, apparently immune to magic, is organizing the wolves in the wood.
@@ -39,7 +39,7 @@ A large {site:artificial} to the east has been destroyed by unknown forces.
 A local lamplighter is the person to talk to if you want information on those who come out at night.
 A lonely mountain pass is guarded by a powerful sphinx denying all passage.
 A mad alchemist brewing potent substances in his lair, where a monster is about to break out of its cage.
-A mad {pseudo class:magical} has been found in the burned remains of her abode, her servants all killed by her hand.
+A mad {pseudo class:mage} has been found in the burned remains of her abode, her servants all killed by her hand.
 A magical accident has opened a gate that has loosed magic-eating monsters into the world.
 A man kills himself to frame another of murder.
 A map showing the location of an ancient magic forge is discovered.
@@ -82,7 +82,7 @@ A wounded beast in a trap, more formidable than it seems to be.
 A young elven rebel seeking to change the world, opposing the wise elders.
 A {:adjective} {:who} {:relates to}.
 A {:adjective} {:who}{50%? is:and a {50%{:adjective}} {:who} are} {:goal}.
-A {humanoid} has been seen flying around the {pseudo class:magical} tower using a pair of artificial wings.
+A {humanoid} has been seen flying around the {pseudo class:mage} tower using a pair of artificial wings.
 A {monster} is said to be the head of a merchant guild.
 A {profession:merchant} has {:loot} hidden in its {attic|cellar}.
 A {profession} has {:loot} hidden around his house.
@@ -102,17 +102,17 @@ An ancient metropolis, original inhabitants long gone, whose ageless guardians s
 An annoying beggar has just been turned into a {fauna}.
 An arbiter of the dead and a murderer making an appeal for someone she killed.
 An army of statues in the {region} has begun to move.
-An eastern {pseudo class:magical} have discovered a new type of magic.
+An eastern {pseudo class:mage} have discovered a new type of magic.
 An elite order of assassins, each member devoted to single mark, waiting for the sign to strike.
 An evil temple wants someone to retrieve an ancient scroll from the sewers.
-An evil {pseudo class:magical} is terrorizing a small town nominally ruled by the city.
+An evil {pseudo class:mage} is terrorizing a small town nominally ruled by the city.
 An expensive tavern where the rich patrons watch the poor, paid with food, fight and brawl.
 An innocent but monstrous witch and the merchants who want her property.
 An island at the center of the lake is actually the top of a strange, submerged fortress.
 An order of monks who believe the world to be controlled by a divine storyteller, trying to keep everything in control.
 An underwater city built to support land-dwellers, abandoned for unknown reason.
 An {profession} going into a hostile kingdom needs an escort.
-An {pseudo class:magical} is compelling others to steal for him.
+An {pseudo class:mage} is compelling others to steal for him.
 Artificers inspired by a mad god, building slaves to do its bidding.
 Barge pirates have made a deal with a covey of hags and exact a high toll to use the river.
 Breeder of monsters now dying and the creations escaped.
@@ -198,12 +198,12 @@ The landlord of a local inn is really a werewolf.
 The return of an ancient race that once ruled over those who are in power now.
 The river that flows through all the worlds and the souls of the dead it sweeps along.
 The ruler of the city has just left port in his galley, for some piracy.
-The tomb of a powerful {pseudo class:magical}, filled with magic items, has sunk into the swamp.
-The tomb of an old {pseudo class:magical} has been discovered.
+The tomb of a powerful {pseudo class:mage}, filled with magic items, has sunk into the swamp.
+The tomb of an old {pseudo class:mage} has been discovered.
 The town may be hiring mercenaries to augment the town guard.
 There are many old ruins in the {terrain}. They are from a previous age.
 There is a wolf pack to the north, they are the pets of a mighty giant.
-There is a {pseudo class:magical} in the swamp to the south who brews potions of a legendary efficacy.
+There is a {pseudo class:mage} in the swamp to the south who brews potions of a legendary efficacy.
 There is fierce fighting in the {region}.
 Thieves broke in to a wealthy merchants shop, but apparently didn't take anything.
 This morning a wine merchant found a strange potion in one of his shipments.

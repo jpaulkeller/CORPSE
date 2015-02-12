@@ -1,30 +1,19 @@
-/ There are several similar/related tables to determine a person's feelings and reaction:
-/ Disposition - a person's inherent qualities of mind and character; how that person feels in general
-/ Feeling - a person's emotional state; how that person usually feels
-/ Emotion - nouns corresponding to feelings
-/ Mood - a person's current mood - how that person is feeling right now (more ephemeral than the Feeling table)
-/ Attitude - how a person is inclined to react to a situation (and why, and can it be changed)
-/ Reaction - different and specific types of reactions 
-
-At war If the two groups come into contact, they'll fight each other or run. If the player characters are perceived as being allied with one group by the other, they'll have a severe penalty on any attempts to make friends. If the delvers present evidence that they've attacked one of the groups to the other, they'll have a bonus on such attempts.
-Hostile If the two groups come into contact, they'll often end up fighting each other. They certainly won't allow the other group to pass through their territory. If the delvers are perceived as being allied with one group by the other, they'll have a penalty on any attempts to make friends. This penalty will be less than if the groups were at war. If the player characters are being persecuted by one group, the other will usually shelter them, if only out of spite.
-Allied The two groups are quite friendly. They'll at least listen to the other group's opinion and discuss with them if possible, when deciding what to do with the player characters. If the player characters are perceived as being hostile to one group, they'll have a severe penalty on any attempt to make friends with the other.
-Strongly Allied The two groups will regard an attack on the other as an attack on them. They'll usually respect the decision of the other group in regard to how to treat the player characters.
-Wary The two groups would like to destroy each other, but fear the results of open conflict. If the delvers are perceived as being allied with one groups by the other, they'll have a penalty on any attempt to make friends. This penalty will be about the same as if the groups were hostile. The two groups are likely to help the player characters with any plan which will weaken the other group, but only if they can do so in a way that allows them to deny involvement.
-No Contact The two groups have no resource that they both want, and no way to beneficially work together. They're thus neither allied nor opposed. Re-roll this result if you want every group to be involved in a conflict.
+At war - If the two groups come into contact, they'll fight each other or run. If the player characters are perceived as being allied with one group by the other, they'll have a severe penalty on any attempts to make friends. If the delvers present evidence that they've attacked one of the groups to the other, they'll have a bonus on such attempts.
+Hostile - If the two groups come into contact, they'll often end up fighting each other. They certainly won't allow the other group to pass through their territory. If the delvers are perceived as being allied with one group by the other, they'll have a penalty on any attempts to make friends. This penalty will be less than if the groups were at war. If the player characters are being persecuted by one group, the other will usually shelter them, if only out of spite.
+Allied - The two groups are quite friendly. They'll at least listen to the other group's opinion and discuss with them if possible, when deciding what to do with the player characters. If the player characters are perceived as being hostile to one group, they'll have a severe penalty on any attempt to make friends with the other.
+Strongly Allied - The two groups will regard an attack on the other as an attack on them. They'll usually respect the decision of the other group in regard to how to treat the player characters.
+Wary - The two groups would like to destroy each other, but fear the results of open conflict. If the delvers are perceived as being allied with one groups by the other, they'll have a penalty on any attempt to make friends. This penalty will be about the same as if the groups were hostile. The two groups are likely to help the player characters with any plan which will weaken the other group, but only if they can do so in a way that allows them to deny involvement.
+No Contact - The two groups have no resource that they both want, and no way to beneficially work together. They're thus neither allied nor opposed. Re-roll this result if you want every group to be involved in a conflict.
 
 They will attack or harass anyone who enters their territory.
 They will allow travellers to pass through their territory by a particular route, but attack them if they leave the route. They may also attack travellers who stop for too long.
 They may hide from travellers, or attack them, depending on how strong the travellers seem.
 They will hide from travellers. If cornered they will fight or give in, depending on how strong the travellers seem. If the travellers take any of their goods they may pursue them.
-They will be friendly to strangers, but won't give any help unless paid for (payment isn't necessarily in the form of currency). If the travellers are obviously close to death they will help, but expect payment afterwards. If the travellers take something without paying there is likely to be violence - either immediately if they're powerful enough, or as soon as they can call the sheriff / get a mob together.
-As above, but if the travellers are close to death they will help without expecting payment.
-As above, As above, but if the travellers are close to death they will help without expecting payment, and they will give information for free, only expecting payment for more substantial forms of help.
+They will be friendly to strangers, but won't give any help unless paid for (payment isn't necessarily in the form of currency).  If the travellers are obviously close to death they will help{, but expect payment afterwards| without expecting payment{50% (and they will give information for free)}}.
 They will give food, water and shelter to any travellers without expecting payment, but out of duty rather than inclination. They won't offer any help unless asked, or unless the travellers are obviously in a bad way, and will grudgingly give the minimum their code allows.
 They will willingly give food, water and shelter and offer any information they can, without expecting payment.
 As above, but if able they will willingly give other help, for example offering fresh horses or volunteering to guide the strangers.
-Roll twice more, ignoring this result or the one below. The better result applies to their own kin, the worse result to anyone else. 'Kin' may mean members of their own species, or a sub-group of that species, or a group defined in another way such as followers of a particular religion.
-Their reaction may be any that appear on this table, depending on a complicated system of omens, their mood at the time, or other factors: roll for each individual group of travellers, or even each individual traveller. There should be no rhyme or reason to their actions - they may attack a large well-armed group but hide from an individual, then give their best horses to speed the journey of the next person who passes through.
+Their reaction depends on a complicated system of omens, their mood at the time, or other factors: roll for each individual group of travellers, or even each individual traveller. There should be no rhyme or reason to their actions - they may attack a large well-armed group but hide from an individual, then give their best horses to speed the journey of the next person who passes through.
 
 / Combat Behaviour
 / source or inspiration: James Hutchings
@@ -44,7 +33,6 @@ Will fight until down to half strength or less, then will surrender. Will pursue
 Will fight until down to half strength or less, then will surrender. Will not pursue enemies.
 Will only fight until wounded, and will then try to run away. If there's no escape, will fight to the death. Will not pursue enemies.
 Will only fight until wounded, and will then try to run away. If there's no escape, will fight to the death. Will only pursue enemies if unwounded.
-as above.
 Will only fight until wounded, and will then try to run away. If there's no escape, will fight until down to half strength or less, and will then surrender. Will not pursue enemies.
 Will only fight until wounded, and will then try to run away. If there's no escape, will fight until down to half strength or less, and will then surrender. Will only pursue enemies if unwounded.
 Will always attempt to run away. If there's no escape, will surrender. Will not pursue enemies.
@@ -61,7 +49,7 @@ They may hide from travellers, or attack them, depending on how strong the trave
 They will hide from travellers. If cornered they will fight or give in, depending on how strong the travellers seem. If the travellers take any of their goods they may pursue them.
 They will be friendly to strangers, but won't give any help unless paid for (payment isn't necessarily in the form of currency). If the travellers are obviously close to death they will help, but expect payment afterwards. If the travellers take something without paying there is likely to be violence - either immediately if they're powerful enough, or as soon as they can call the sheriff / get a mob together.
 As above, but if the travellers are close to death they will help without expecting payment.
-As above, As above, but if the travellers are close to death they will help without expecting payment, and they will give information for free, only expecting payment for more substantial forms of help.
+As above, but if the travellers are close to death they will help without expecting payment, and they will give information for free, only expecting payment for more substantial forms of help.
 They will give food, water and shelter to any travellers without expecting payment, but out of duty rather than inclination. They won't offer any help unless asked, or unless the travellers are obviously in a bad way, and will grudgingly give the minimum their code allows.
 They will willingly give food, water and shelter and offer any information they can, without expecting payment.
 As above, but if able they will willingly give other help, for example offering fresh horses or volunteering to guide the strangers.

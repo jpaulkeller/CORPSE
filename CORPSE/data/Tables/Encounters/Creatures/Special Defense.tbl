@@ -2,7 +2,9 @@
 
 : Natural
 alert; surprised only 1 in 6
-camouflage; skin that changes colors to match the environment
+camouflage; coloration that matches their typical environment
+chameleon; skin that can change color gradually to blend in with the terrain
+chromatophores; skin that can change color almost instantly (like an octopus) to perfectly match the surroundings
 corrosive skin (1d4)
 natural armour; The creature's hide is so tough that it's treated as armour. This doesn't stop the creature having actual armour as well, if appropriate.
 stealthy; The creature is especially good at moving silently and staying hidden.
@@ -19,6 +21,7 @@ mimicry; The creature can temporarily gain the abilities of any creature near to
 suppress magic; Being near to the creature makes it very difficult to use magic. This doesn't have any permanent effect on characters' magical abilities. Spirits who are immune to non-magical harm can't have this ability.
 able to fade from sight at will
 aura of {:aura}, {2d10} feet 
+{poisonous|acidic} blood
 
 : Aura
 blistering heat

@@ -1,5 +1,4 @@
 : Reagent
-
 powdered {metal}
 {:misc}
 {berry}{20% juice}{10% gathered {:how}{10%, {:how}}}

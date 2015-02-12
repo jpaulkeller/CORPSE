@@ -46,10 +46,11 @@
 // 7
 {:Consonant}{:vowel}{:consonant}{:dipthong}{:ending}
 
-// 8
+// 7+
 {:Consonant}{:vowel}{:consonant}{:digraph}{:vowel}{:ending}
 {:Consonant}{:vowel}{:ending}{:consonant}{:vowel}{:ending}
 {:Consonant}{:vowel}{:ending}{:consonant}{:vowel}{:repeat}
+{:Digraph}{{:vowel}|{:dipthong}}{{:consonant}|{:repeat}}{:vowel}{50%{l|r|n}}{:ending}
 
 // hyphenated
 {:Consonant}{:vowel}{:consonant}-{:consonant}{:vowel}{:consonant}

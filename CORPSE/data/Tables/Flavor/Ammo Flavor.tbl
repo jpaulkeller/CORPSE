@@ -58,7 +58,7 @@
 
 : fletching color
 2x {color:dark}
-1x {color:dull}
+1x {color:drab}
 1x {color:light}
 
 : bolt type

@@ -18,7 +18,7 @@
 {:martial light}
 {:martial one-handed melee}
 {:martial two-handed melee}
-{:exotic light}
+{:exotic light melee}
 {:exotic one-handed melee}
 {:exotic two-handed melee}
 
@@ -30,7 +30,7 @@
 : Light
 {:simple light}
 {:martial light}
-{:exotic light}
+{:exotic light melee}
 
 : One-handed
 {:simple one-handed melee}
@@ -55,7 +55,7 @@
 {:martial ranged}
 
 : Exotic
-{:exotic light}
+{:exotic light melee}
 {:exotic one-handed melee}
 {:exotic two-handed melee}
 {:exotic ranged}

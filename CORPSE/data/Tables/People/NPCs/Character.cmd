@@ -87,7 +87,7 @@
     <li>Trait: {50%{degree} }{trait}
     <li>Disposition: {50%{frequency} }{disposition}
     <li>Feeling (generally): {50%{degree} }{feeling}
-    <li>Emotion: {50%{degree} }{emotion}
+    <li>Emotion: {emotion}
     <li>Mood (currently feeling): {50%{degree} }{mood}
     <li>Attitude (inclination): {50%{degree} }{attitude}
     <li>Reaction (to PCs): {50%{degree} }{reaction}
