@@ -1,40 +1,76 @@
+: Dungeon Feature
+alchemy laboratory
 arch
+balcony
 barracks
 baths
 catacombs
+catwalk
 cave
 cavern
 chamber
 chasm
 church
-cistern
+cooking area
 crypt
+dais
 door
-fountain
 gallery
 garden
 garrison
 gate
+grindstone
 grotto
 hall
 harem
 lagoon
-lake
+ledge 
+library
 lounge
 mausoleum
 maze
 mines
+mining area
 mural
 museum
 pit
-pool
+platform
 prison
 redoubt
 shrine
+smithy
 stair
 statue
 temple
 tomb
+torture chamber
 vault
 wall
 well
+{:water source}
+{:waterway}
+
+: Water Source
+basin
+cauldron
+cistern
+fountain
+geyser
+huge barrel
+lake
+leaking trickle
+pipe 
+pool
+puddle
+reservoir
+spout
+spring
+tank
+
+: Waterway
+aqueduct
+canal
+river
+sewer 
+stream
+waterfall

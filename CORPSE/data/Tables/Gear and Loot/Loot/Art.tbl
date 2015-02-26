@@ -7,8 +7,8 @@
 . Value {value}
 
 : ART
-{25%{:coating} }ceremonial {weapon}
-{25%{small|large} }{25%{:coating} }{metal:precious} {device}{25% {:decorated}}
+{25%{luxury:coating} }ceremonial {weapon}
+{25%{small|large} }{25%{luxury:coating} }{metal:precious} {device}{25% {:decorated}}
 {50%decorative }{:coat of arms}: {:blazon}
 {50%{small|large} }{75%{made of:fabric} }{:weaving} depicting {:SUBJECT}
 {50%{small|large} }{:drawing} depicting {:SUBJECT}

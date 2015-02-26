@@ -3,6 +3,7 @@
 {:SMELLS}
 {:DEBRIS}
 {:FLORA}
+{:MISC}
 
 : Air
 A slight but noticeable downdraft is detectable.
@@ -62,24 +63,17 @@ overwhelms your sense of smell
 a blacksmith’s forge
 
 : debris
-5x The room is mostly bare, except for {:junk}.
+5x The room is mostly bare, except for {:crud}.
 2x The room is entirely bare.
-The floor has muddy tracks all over it. There is {:junk}.
-The floor has some sand on it and {:junk}.
-The floor is a layer of dried, cracked mud, along with {:junk}.
-The floor is covered in small bits of rock and rubble, as well as {:junk}.
-The floor is littered with stones and large rubble, in addition to {:junk}.
-
-: junk
-5x {:crud}
-2x {:crud} and {:crud}
-{:crud}, {:crud} and {:crud}
-{debris:stuff}
-{debris:stuff} and {:crud}
+The floor has muddy tracks all over it. There is {:crud}.
+The floor has some sand on it and {:crud}.
+The floor is a layer of dried, cracked mud, along with {:crud}.
+The floor is covered in small bits of rock and rubble, as well as {:crud}.
+The floor is littered with stones and large rubble, in addition to {:crud}.
 
 : crud
-5x {debris: anywhere crud} {:any surface}
-50x {debris: floor crud} {:floor location}
+5x {debris:anywhere} {:any surface}
+50x {debris:floor} {:floor location}
 {size} cracks {:crack location}
 {:damp spots}
 
@@ -132,3 +126,82 @@ A few vines climb the walls in the {compass:corner} corner
 A few large toadstools
 Some spindly thin mushrooms
 Tiny, squat mushrooms
+
+: misc
+{:clue}
+{:corpse}
+{:fog}
+{:noise}
+
+: clue
+/ http://roll1d12.blogspot.com/2012/02/puzzling-evidence-in-corridor.html
+a half-melted sword
+a huge earthenware dish half filled with dirty water
+a still-smoldering torch 
+abandoned nests of dungeon swallow colony
+an unidentifiable green stain on the floor, smells a bit
+claw-rent and useless steel chest plate
+clean bones of small animals arranged into incomprehensible patterns on floor
+heaps of recently deceased rats: not a mark on them
+large "x" carved in wall
+loose flagstones in floor leading nowhere
+shallow hole in wall with debris and broken pick lying nearby
+very large fragments of purple eggshell
+
+: corpse
+/ http://roll1d12.blogspot.com/2011/12/dungeon-corpses.html
+area filled with reeking/disintegrating horror of ichor and tentacles
+beheaded dragon (loot free)
+dead thief collapsed half-way through a secret door
+eleven dead man-apes covered with sucker marks
+five bandits and their leader fallen upon own swords
+human-type creature blasted to tiny bits
+spear-impaled berserker with sword thrust through face of adjacent berserker
+the head of a hill giant with a message in his teeth
+three dessicated husks of the dwarfish persuasion
+three ornately armored warriors crushed almost flat
+two green halfling bodies still clutching their throats
+wizard with smoking neck-stump
+
+: fog
+/ http://roll1d12.blogspot.com/2013/02/weird-dungeon-fog.html
+black fog: a roving patch of total darkness (as spell, but can be dispersed by wind/other disturbances) 
+depilatory fog: released by a deranged sorcerer for an unknown purpose, roams corridors searching for the hirsute 
+fog bank of the impromptu dance: compels those within to gyrate rhythmically for {6} minutes, if engaged in combat: dance fight!
+fog bank that is actually a swarm of microscopic winged crustaceans, able to strip corpses in seconds
+fog of amnesia: renders those within its influence utterly clueless until they escape, wizards lose random spells 
+fog of Eros: arouses otherwise latent passions, especially efficacious on the most repressed personalities
+fog of sticky accretion: lengthy exposure reveals adhesive build up on surfaces, swords stick in their scabbards, the friendly shoulder-pat becomes a drawn out affair 
+hot volcanic fog: looks normal, burns like hell
+hygroscopic fog: sucks the moisture from living beings for dessication damage, lethal to slug-men
+luxuriant vapors of cleanliness: often located in basins, tubs and sealed chambers, soothes, calms and renders impeccably spic and span
+swirling banks of obfuscation: arcane fog generally invoked to add another layer of security to hidden treasures and secrets, also employed to further conceal pits and other deathtraps
+vernal mist of enlightenment: dungeon secrets enter the brains of those exposed via osmosis
+
+: noise
+/ http://roll1d12.blogspot.com/2011/12/dungeon-audio.html
+/ http://roll1d12.blogspot.com/2012/04/results-of-successfully-listening-at.html
+a chitinous skittering
+a series of staccato reports
+a thunderous collapse
+all you hear is the blood pounding in your ears and you wonder if this dungeon is giving you a heart attack
+ambient grinding of tectonic plates
+barely audible voice whispers "come in"
+chirping of birds, rustling of dry leaves
+colossal footfalls draw inexorably nearer
+distant crowd roars in approbation
+echo of the party's most recent conversation
+echoing voice screams out praise to unknown gods
+gentle patter like soft rain
+gnawing, crunching sounds from within the door itself
+human-like choir of the highest order 
+implausibly slow and deep drawing of breath, followed by equally outsize exhalation
+noises from entirely different but nearby room vibrating through dungeon walls
+pathetic puppy-like whimper (mating call of the tomb worm)
+peal of a distant church bell
+ringing of sword against sword in a pitched melee
+sort of think you heard something, but probably not
+sound of your mother's increasingly hysterical voice calling your name
+the distinctively insane piping of the cube jelly
+the sound of heavy rain and thunder
+unseen orchestra

@@ -264,19 +264,16 @@ the {relic}
 thousands of {metal:precious} pieces
 
 ===
-
 / http://random-generator.com/index.php?title=Fantasy_Assignment
 
-1,[Intro]<br/>
-
 ;Intro
-A {PROTAGONIST} seeks adventurers to [Verbreflexive].  This will require traveling to the {region}.
-The PCs have heard that if they [Verb] they will become rich. This will require traveling to the {region}.
+A {PROTAGONIST} seeks adventurers to {:task}.  This will require traveling to the {region}.
+The PCs have heard that if they {:task} they will become rich. This will require traveling to the {region}.
 It seems a {:object} will grant great power to any who possess it. This will require exploring the {region}.
-They say [Fantasy Adventure Locations.main] contains a {:object} of great value.''
-Rumors suggest clever and ambitious souls will find great riches if they investigate the {region}.
+They say [Fantasy Adventure Locations.main] contains a {:object} of great value.
+Clever and ambitious souls will find great riches if they investigate the {region}.
 
-;Verbreflexive
+: Task
 free: [People]
 assassinate: [People]
 capture [Capturablereflexive]
@@ -287,18 +284,6 @@ destroy [Object] of special importance
 slay [Weird Fantasy Monster.main]
 seduce [People]
 frame [People] for a crime
-
-;Verb
-15,free: [Fantasy Person Of Interest.Main]
-15,assassinate: [Fantasy Person Of Interest.Main]
-15,capture [Capturable]
-15,safely transport [Transportable] of special importance
-15,locate [Transportable] of special importance
-15,acquire [Object] of special importance
-15,destroy [Object] of special importance
-15,slay [Weird Fantasy Monster.main]
-1,seduce [Fantasy Person Of Interest.Main]
-1,frame [Fantasy Person Of Interest.Main] for a crime
 
 ;People
 15,[Fantasy Person Of Interest.Main]

@@ -1,0 +1,59 @@
+/ http://random-generator.com/index.php?title=Fantasy_Criminal_History
+
+: Criminal History
+5x The {:crime} {:reason}. During the deed {:outcome}.
+The piracy was {:reason}. During the deed {:piracy outcome}.
+The player was framed for {crime}, and is now wanted.
+
+: Crime
+9x {:crime} was
+{crime} and {crime{!different}} were
+
+: Reason
+committed because of a desire to defy authority
+committed because of a desire to live the high-life
+committed because of a desire to punish someone for perceived misdeeds
+committed because of a desire to wield power
+committed because of a pathological urge
+committed because of peer pressure
+committed to fund a rebellion
+committed to pay debts
+done for thrill-seeking
+forced by blackmail (a threat to loved ones)
+sanctioned by the guild
+
+: Outcome
+a crime-lord becomes character's patron
+the character acquired proficiency as a thief
+the character automatically was suspected of crime because of appearance/background
+the character became an informant
+the character became {leader of a gang|bandit chief|pirate captain}
+the character was branded
+the character developed extensive underworld contacts
+the character discovered a popular local official was actually a crime boss
+the character escaped, and an innocent person was convicted instead
+the character improved thieving skills
+the character joined a gang
+the character learned secret passages in local noble's dwelling
+the character learned sewers and hidden passageways of home-town
+the character participated in a large theft, but compatriots vanished with the loot
+the character stole an accursed {artifact}. The curse is {curse}.
+the character stole a valuable item and hid it
+the character was blamed for a gang-boss being accidentally slain
+the character was imprisoned for a few {duration:weeks}
+the character was punished by {punishment}
+the character was seriously wounded in a fight ({injury})
+the character went straight, but is remembered by underworld
+
+: Piracy Outcome
+the character became a pirate officer and learned the locations of many rival pirates fortresses
+the character became quite skilled with ropes and knots
+the character became wealthy after a successful raid gave a large treasure
+the character became widely travelled and fluent in {d6+1} languages
+the character discovered a mysterious temple on deserted island. Fell victim to a curse ({curse}).
+the character escaped, but all the other pirates are captured
+the character learned how to {sail|navigate}
+the character learned the location of buried treasure
+the character learned use of cutlass
+the character was elected captain after the crew mutinied
+the character was mistreated by the {trait:bad} pirate captain

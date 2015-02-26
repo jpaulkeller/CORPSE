@@ -1,0 +1,118 @@
+/ http://eberronunlimited.wikidot.com/traps
+/ http://chaoticshiny.com/trapgen.php
+/ http://www.dandwiki.com/wiki/SRD:Traps
+
+: Trap
+{T={:type}}{T}: Triggered by {:trigger}, {:{T} RESULT}.  Special: {:special}.
+
+: Name
+{Name}'s {Slow|Instant} Death
+
+: Type
+alarm
+ambush
+blade
+curse
+electrical
+gas
+magic
+pit
+projectile
+rock fall
+spikes
+spray
+
+: Trigger
+breaking a trip wire
+closing a door
+flipping a lever
+interacting with an item
+killing a creature
+making noise
+moving an item
+opening a door
+saying a certain word or phrase
+stepping on a pressure plate
+unlocking a door or chest
+
+: alarm result
+an alarm attracts nearby hostile creatures
+an alarm sounds, and a net drops trapping anyone who fails to get out of the way
+
+: ambush result
+a door slides open, revealing a hidden alcove which contains an unliving guardian
+releases a {beast} 
+releases a {monstrosity}
+releases a {monster}
+releases a {undead}
+
+: blade result
+scythe pendulum
+spinning blades
+
+: curse result
+cursed: {curse}
+
+: electrical result
+the surface becomes electrified 
+
+: gas result
+a cloud of gas is released. {:GAS EFFECT}
+
+: magic result
+an anti-magic field may cause magic items to temporarily or permanently lose their properties
+casts {spell}
+causes Confusion
+causes Feeblemind
+causes a geas-like compulsion
+causes {P:=phobia}{P.phobia} ({P.description}) for {2d6} {{duration:moderate}+}
+fireball from the ceiling 
+paralyzes the victim for {2d6} {{duration:short}+}
+polymorphs the victim
+puts the victim to sleep for {2d6} {{duration:moderate}+}
+reduces victim’s size for {3d10} {{duration:short}+}
+shock wave 
+spell distortion field: {range|duration|area of effect} is {increased|decreased}
+summons {demon}
+the area becomes friged; walls and floor are coated in ice
+transference distortion field ({+|-} {6} levels)
+victims are teleported
+
+: pit result
+{pit trap}
+
+: projectile result
+{33%poisoned }{arrows|daggers|spears|darts|bolts} are shot from a hidden mechanism in the {ceiling|wall}
+a hidden turret pops up, and sprays {33%poisoned }darts 
+
+: rock fall result
+rocks fall {ahead of|behind} the party (it will take {2d4} hours for 1 person to clear)
+
+: spikes result
+{75%{condition:wood weapon} }{20%poisoned }wooden stakes erupt from the {wall|floor|ceiling}
+{75%{condition:metal weapon} }{10%poisoned }{20%barbed }iron spikes erupt from the {wall|floor|ceiling}
+
+: spray result
+liquid with a {smell:synonym foul} like {smell:foul} sprays from the {wall|ceiling}; torches are extinguished; nearby creatures are attracted 
+acid sprays from the {wall|ceiling}
+the room begins to flood with {freezing |scalding | }water
+{2d3} jets of flames shoot from the {wall|ceiling}
+
+: special
+damage inflicted by the trap cannot be healed with magic
+delayed (the effect happens{2d4} {duration:brief}s later)
+effect centered on random target, not necessarily trigger
+effects are invisible to those not affected
+everything associated with the trap vanishes once the damage is complete
+more than one character must trigger the trap for it to take effect
+remains of some sort nearby give a warning as to the trap's effects
+symbols/runes nearby in another language explain the trap to those who can read it
+trap effects will continue until somehow disabled
+triggering of trap accompanied by flashy pyrotechnics
+
+blinds the victim for {2d6} {{duration:short}+}
+deafens the victim for {2d6} {{duration:short}+}
+poisons the victim ({symptom} which lasts for {10} {duration:moderate}s)
+slows the victim for {2d6} {{duration:moderate}+}
+strikes the victim mute for {2d6} {{duration:short}+}
+ 

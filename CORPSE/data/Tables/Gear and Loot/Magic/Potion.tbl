@@ -6,7 +6,6 @@
 {:POTION} ({2d4} doses in a {2d3-1}-{volume:portable} {container:potions})
 
 : Potion
-
 Elixir of Health
 Elixir of Madness ({neurosis})
 Elixir of youth

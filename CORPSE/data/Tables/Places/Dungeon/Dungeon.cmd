@@ -1,30 +1,52 @@
+<html>
+<body>
 
-// Ask for the inn name (with a suitable default), and randomize based on that
-// name so that the following data (until the next #) is consistent.
+/ Query for name (using random default); assign and randomize
 # {DUNGEON={Dungeon Name?*}}
 
-Dungeon: {DUNGEON}
-------------------------------------------------
-.
-Flavor:
-------------------------------------------------
-Rumor: {Dungeon Flavor:Rumor}
-Overlord: {Dungeon Flavor:Overlord}
-Entrance: {Dungeon Flavor:Entrance}
-.
-Level 1
-{Dungeon Encounter:Level1}
-{Dungeon Item:Level1}
-{Dungeon Ambience:Sound}
-.
-Rooms:
-------------------------------------------------
-Floor: {Dungeon Room:Floor}
-Ceiling: {Dungeon Room:Ceiling}
-Door: {Dungeon Room:Unusual Door}
-Empty: {Dungeon Room:Empty}
-Larder: {Dungeon Room:Larder}
-Torture Chamber: {Dungeon Room:Torture Chamber}
+<h1>{DUNGEON}</h1>
+
+<ul>
+  <li><b>Flavor</b>
+  <ul>
+    <li>Rumor: {Dungeon Rumor}
+    <li>Overlord: {Dungeon Flavor:Overlord}
+    <li>Entrance: {Dungeon Flavor:Entrance}
+  </ul>
+  
+  <li><b>Level 1</b>
+  <ul>
+    <li>Ambiance: {Dungeon Ambience:Sound}
+    <li>Encounter: {Dungeon Encounter:Level1}
+    <li>Item: {Dungeon Item:Level1}
+    <li>Floor: {Dungeon Room:Floor}
+    <li>Ceiling: {Dungeon Room:Ceiling}
+    <li>Door: {Dungeon Room:Unusual Door}
+    <li>Empty: {Dungeon Room:Empty}
+    <li>Larder: {Dungeon Room:Larder}
+    <li>Torture Chamber: {Dungeon Room:Torture Chamber}
+  </ul>
+
+!loop {2}
+<ul>
+  <li>Linking Tunnel: {cave:tunnel}
+  {50%<li>Tunnel Feature: {cave:tunnel feature}}
+  <li>Shape: {cave:shape}
+  <li>Size: {cave:size}
+  <li>Light Source: {cave:light}
+  {25%<li>Ceiling: {cave:ceiling}}
+  {25%<li>Feature: {cave:feature}}
+  {25%<li>Content: {cave:content}}
+  <li>Exit(s): {cave:exit}{25%; {cave:exit}}{25%; {cave:exit}}
+</ul>
+!loop end
+
+</ul>
+
+</body>
+</html>
+
+
 .
 Level 2
 {Dungeon Encounter:Level2}

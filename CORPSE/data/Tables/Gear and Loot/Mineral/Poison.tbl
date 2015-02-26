@@ -1,6 +1,6 @@
-
 / http://eberronunlimited.wikidot.com/poisons
 / Complete Adventurer - page 98
+/ http://www.dandwiki.com/wiki/SRD:Traps
 
 / Craft (Poison-making): The fine art of refining raw materials into effective poisons requires both patience 
 / and care (not to mention discretion, in areas where poisons are outlawed). Making poisons with the Craft 
@@ -34,7 +34,6 @@ dark reaver powder               25         300 gp      ingested    18        2d
 deathblade                       25       1,800 gp      injury      20        1d6 con          2d6 con                DMG
 dragon bile                      30       1,500 gp      contact     26        3d6 str          0                      DMG
 drow poison                      15          75 gp      injury      13        unconscious      unconscious 2d4 hr     DMG
-giant wasp venom                 20         210 gp      injury      14        1d6 dex          1d6 dex                DMG
 greenblood oil                   15         100 gp      injury      13        1 con            1d2 con                DMG
 hemlock
 id moss                          15         125 gp      ingested    14        1d4 int          2d6 int                DMG
@@ -44,18 +43,19 @@ malyss root paste                20         500 gp      contact     16        1 
 nitharit                         20         650 gp      contact     13        0                3d6 con                DMG
 oil of taggit                    15          90 gp      ingested    15        0                unconscious            DMG
 phosphorous
-purple worm venom                20         700 gp      injury      25        1d6 str          2d6 str                DMG
 sassone leaf residue             20         300 gp      contact     16        2d12 hp          1d6 con                DMG
 shadow essence                   20         250 gp      injury      17        1 str*           2d6 str                DMG
-small centipede venom            15          90 gp      injury      10        1d2 dex          1d2 dex                DMG
 striped toadstool                15         180 gp      ingested    11        1 wis            2d6 wis + 1d4 int      DMG
 strychnine
 sumac
 terinav root                     25         750 gp      contact     16        1d6 dex          2d6 dex                DMG
 ungol dust                       20       1,000 gp      inhaled     15        1 cha            1d6 cha, +1 cha[1]     DMG
 venom, black adder               15         120 gp      injury      12        1d6 con          1d6 con                DMG
+venom, giant wasp                20         210 gp      injury      14        1d6 dex          1d6 dex                DMG
+venom, purple worm               20         700 gp      injury      25        1d6 str          2d6 str                DMG
 venom, scorpion                  20         200 gp      injury      14        1d4 con          1d4 con                DMG
+venom, small centipede           15          90 gp      injury      10        1d2 dex          1d2 dex                DMG
 venom, spider                    15         150 gp      injury      12        1d4 str          1d4 str                DMG
-wyvern venom                     25       3,000 gp      injury      17        2d6 con          2d6 con                DMG
+venom, wyvern                    25       3,000 gp      injury      17        2d6 con          2d6 con                DMG
 
 / [1] Ability drain, not ability damage

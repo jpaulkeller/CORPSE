@@ -1,0 +1,58 @@
+: Gas Effect
+10x The gas is {:color} and {:odor}.  {:EFFECT}  It will dissipate in {2d6x10} minutes.
+The gas is a {:special}.
+
+: color
+barely visible
+flickering
+invisible
+invisible in dim light
+misty
+smoke-like
+visible only as a slight distortion
+{color}
+
+: odor
+odorless
+has a barely detectable scent
+has a {smell:adj} {smell:synonym}
+has a {smell:synonym} like {smell:like}
+has a {smell:synonym pleasant} like {smell:pleasant}
+has a {smell:synonym foul} like {smell:foul}
+
+: effect
+If {inhaled|contacted}, it causes -{2d4} {attribute} {:duration}.  {:SAVE}
+If {inhaled|contacted}, it causes blindness {:duration}.  {:SAVE}
+If {inhaled|contacted}, it causes disease ({disease}) {:disease duration}.  {:SAVE}
+If {inhaled|contacted}, it causes dizziness {:duration}.  {:SAVE}
+If {inhaled|contacted}, it causes nausea {:duration}.  {:SAVE}
+If {inhaled|contacted}, it causes petrification {:duration}.  {:SAVE}
+If {inhaled|contacted}, it causes sleep {:duration}.  {:SAVE}
+If {inhaled|contacted}, it poisons (causing {mild/partial |severe |}{symptom}).  {:SAVE}
+It has no effect, but attracts monsters, and will permeate clothing for {2d10} {{duration:short}+}. 
+It has no obvious effect.
+It obscures vision (including infravision).
+
+: special
+{d12 dungeon fog}
+
+: duration
+for {d4x5} {{duration:brief}+}
+for {d410} {{duration:brief}+}
+for {2d6} {{duration:short}+}
+for {2d10} {{duration:short}+}
+for {2d4} {{duration:moderate}+}
+for {2d8} {{duration:moderate}+}
+for {2d4} {{duration:weeks}+}
+permanently
+
+: disease duration
+for {2d6x10} {{duration:moderate}+}
+for {2d10} {{duration:weeks}+}
+until cured
+
+: save
+Saving will prevent all effects.
+Saving will reduce the duration by half.
+Saving will reduce the effects by half.
+Saving will reduce the effects and duration by half.

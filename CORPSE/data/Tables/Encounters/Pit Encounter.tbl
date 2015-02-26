@@ -1,0 +1,68 @@
+: Pit Encounter
+5x {:mundane}
+{:giant}
+{:insect}
+{:ooze}
+{:flora}
+{:undead}
+{:special}
+
+: mundane
+beetle
+centipedes
+rats
+snakes
+spiders
+
+: giant
+bombardier beetle
+gem scarab
+giant beetle
+giant snake
+harpoon spider
+hoard scarab
+heart burst spider
+rhinoceros beetle
+siege beetle
+trapdoor spider
+weaver spider
+
+: flora
+assassin vine
+vile fungus
+
+: ooze / oozes, molds, slimes, puddings, jellies, and morphs
+black pudding
+blood slime
+brown mold
+dragon vomit slime
+gas spore
+gelatinous cube
+gray ooze
+green slime
+mimic
+ochre jelly
+russet mold
+stun jelly
+trapper
+yellow mold
+yellow pool
+{color} ooze
+
+: undead
+drowned
+ghast
+ghost
+ghoul
+graveborn
+mohrg
+shadow
+skeleton
+spectre
+wight
+wraith
+zombie
+
+: special
+rust monster
+

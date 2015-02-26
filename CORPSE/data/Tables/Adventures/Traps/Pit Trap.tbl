@@ -1,0 +1,35 @@
+: Pit Trap
+The pit is {:size}.  It is covered by {:mechanism}.  {:CONTENTS}
+
+: size
+rectangular ({3d4}' x {3d4}'), {{d4+1}x5}' deep
+roughly square ({3d4}'), {{d4+1}x5}' deep
+circular ({3d4}' diameter), {{d4+1}x5}' deep
+ 
+: mechanism
+a flat stone, balanced so that it tilts and dumps victims, before resetting
+clay tiles which break under sufficient weight
+hinged wooden panels which open under sufficient weight, and automatically re-close
+
+: contents
+The pit appears to be empty, other than {debris:floor}.
+The pit contains a {:creature}.
+The pit contains {:spikes}.
+The pit contains {:liquid}.
+{:RARE}
+
+: creature
+{pit encounter}
+
+: spikes
+{75%{condition:wood weapon} }{10%poisoned }wooden stakes
+{75%{condition:metal weapon} }{10%poisoned }{25%barbed }iron spikes
+
+: liquid
+{freezing |scalding | }water ({8}' deep)
+acid ({8}' deep)
+slime ({8}' deep)
+
+: rare
+At the bottom you find {D12 PIT SEARCH}
+The pool at the bottom is a {D12 DUNGEON POOL}

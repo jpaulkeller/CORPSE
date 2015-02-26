@@ -1,1212 +1,528 @@
 / http://random-generator.com/index.php?title=Bag_of_Tricks
 
-: main
-20x {: walls} with {: subfeature} 
-4x {: walls} with {: subfeature}:  and with {: subfeature}
-10x Pile of {: piles} covering {: subfeature}
-10x Pile of {: piles} which, if {: 31action},{: consequences}
-2x Pile of {: piles} which, if {: 31action},{: consequences}:  and which, if {: 31action},{: consequences}
-20x Chasm with {: subfeature}
-4x Chasm with {: subfeature}:  and with {: subfeature}
-10x {: waterway} of {: liquid} which, if {: 22action},{: consequences}
-2x {: waterway} of {: liquid} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
-10x {: waterway} of {: liquid} with {: boat} which, if {: vehicleaction},{: consequences}
-2x {: waterway} of {: liquid} with {: boat} which, if {: vehicleaction},{: consequences}:  and which, if {: vehicleaction},{: consequences}
-10x {: waterway} with {: subfeature}
-2x {: waterway} with {: subfeature}:  and with {: subfeature}
-20x {: stone} with {: subfeature}
-4x {: stone} with {: subfeature}:  and with {: subfeature}
-10x {: dead} which, if {: 41action},{: consequences}
-2x {: dead} which, if {: 41action},{: consequences}:  and which, if {: 41action},{: consequences}
-10x {: dead} with {: subfeature}
-2x {: dead} with {: subfeature}:  and with {: subfeature}
-20x {: floor} with {: subfeature}
-4x {: floor} with {: subfeature}:  and with {: subfeature}
-10x {: source} of {: liquid} which, if {: 22action},{: consequences}
-2x {: source} of {: liquid} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
-10x {: source} with {: subfeature}
-2x {: source} with {: subfeature}:  and with {: subfeature}
-20x {: pit} with {: subfeature}
-4x {: pit} with {: subfeature}:  and with {: subfeature}
-10x {: still} of {: liquid} which, if {: 22action},{: consequences}
-2x {: still} of {: liquid} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
-10x {: still} with {: subfeature}
-2x {: still} of {: liquid} which, if {: 22action},{: consequences}:  and with {: subfeature}
-20x {: ledge} with {: subfeature}
-4x {: ledge} with {: subfeature}:  and with {: subfeature}
-10x {: plants} which, if {: 51action},{: consequences}
-2x {: plants} which, if {: 51action},{: consequences}:  and which, if {: 51action},{: consequences}
-10x {: plants} with {: subfeature}
-2x {: plants} with {: subfeature}:  and with {: subfeature}
-20x {: portal} with {: subfeature}
-4x {: portal} with {: subfeature}:  and with {: subfeature}
-20x {: column} with {: subfeature}
-4x {: column} with {: subfeature}:  and with {: subfeature}
-20x {: clothing} which, if {: 35action},{: consequences}
-4x {: clothing} which, if {: 35action},{: consequences}:  and which, if {: 35action},{: consequences}
-10x {: altar} with {: subfeature}
-2x {: altar} with {: subfeature}:  and with {: subfeature}
-10x {: altar} which, if {: altaraction},{: consequences}
-2x {: altar} which, if {: altaraction},{: consequences}:  and which, if {: altaraction},{: consequences}
-10x {: light} which, if {: lightaction},{: consequences}
-2x {: light} which, if {: lightaction},{: consequences}:  and which, if {: lightaction},{: consequences}
-10x {: light} illuminating {: subfeature}
-2x {: light} illuminating {: subfeature}:  and with {: subfeature}
-10x {: stores} {: storecontainer} which, if {: 23action},{: consequences}
-2x {: stores} {: storecontainer} which, if {: 23action},{: consequences}:  and which, if {: 23action},{: consequences}
-10x {: stores} {: storecontainer} with {: subfeature}
-2x {: stores} {: storecontainer} with {: subfeature}:  and with {: subfeature}
-20x {: descent} with {: subfeature}
-4x {: descent} with {: subfeature}:  and with {: subfeature}
-10x {: magic} which, if {: 65action},{: consequences}
-2x {: magic} which, if {: 65action},{: consequences}:  and which, if {: 65action},{: consequences}
-10x {: magic} with {: subfeature} 
-2x {: magic} with {: subfeature}:  and with {: subfeature}
-20x {: platform} with {: subfeature}
-4x {: platform} with {: subfeature}:  and with {: subfeature}
-20x {:food} which, if {: foodaction},{: consequences}
-4x {:food} which, if {: foodaction},{: consequences}:  and which, if {: foodaction},{: consequences}
-20x {:drink}, which, if {: 22action},{: consequences}
-4x {:drink} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
-10x {: fireplace} with fire which, if {: 42action},{: consequences}
-2x {: fireplace} with fire which, if {: 42action},{: consequences}:  and which if {: 42action},{: consequences}
-10x {: fireplace} with {: subfeature}
-2x {: fireplace} with {: subfeature}:  and with {: subfeature}
-10x {: furniture} with {: subfeature}
-2x {: furniture} with {: subfeature}:  and with {: subfeature}
-10x {: furniture} which, if {: 13action},{: consequences}
-2x {: furniture} which, if {: 13action},{: consequences}:  and which if {: 13action},{: consequences}
-10x {: furniture} which, if {: 45action},{: consequences}
-2x {: furniture} which, if {: 45action},{: consequences}:  and which if {: 45action},{: consequences}
-10x {: cage} which, if {: 33action},{: consequences}
-2x {: cage} which, if {: 33action},{: consequences}:  and which if {: 33action},{: consequences}
-10x {: cage} with {: subfeature}
-2x {: cage} with {: subfeature}:  and with {: subfeature}
-10x {: weaving} which, if {: 15action},{: consequences}
-2x {: weaving} which, if {: 15action},{: consequences}:  and which if {: 15action},{: consequences}
-10x {: weaving} with {: subfeature}
-2x {: weaving} with {: subfeature}:  and with {: subfeature}
-20x Statue with {: subfeature}
-4x Statue with {: subfeature}:  and with {: subfeature}
-10x {: written} which, if {: 44action},{: consequences}
-2x {: written} which, if {: 44action},{: consequences}:  and which if {: 44action},{: consequences}
-10x {: written} with {: subfeature}
-2x {: written} with {: subfeature}:  and with {: subfeature}
-20x {: decoration} with {: subfeature}
-4x {: decoration} with {: subfeature}:  and with {: subfeature}
-10x {: trophies} with {: subfeature}
-2x {: trophies} with {: subfeature}:  and with {: subfeature}
-10x {: trophies}, which if {: 55action},{: consequences}
-2x {: trophies} which, if {: 55action},{: consequences}:  and which if {: 55action},{: consequences}
-20x {: gallery} with {: subfeature}
-4x {: gallery} with {: subfeature}:  and with {: subfeature}
-10x Tomb with {: subfeature}
-2x Tomb with {: subfeature}:  and with {: subfeature}
-10x Tomb with {{lcfirst:{: dead}}}, which if {: 41action},{: consequences}
-2x Tomb with {{lcfirst:{: dead}}}, which if {: 41action},{: consequences}:  and which if {: 41action},{: consequences}
-10x {: picture} with {: subfeature}
-2x {: picture} with {: subfeature}:  and with {: subfeature}
-10x {: picture}, which if {: 53action},{: consequences}
-2x {: picture} which, if {: 53action},{: consequences}:  and which if {: 53action},{: consequences}
-10x {: music}, which if {: musicaction},{: consequences}
-2x {: music} which, if {: musicaction},{: consequences}:  and which if {: musicaction},{: consequences}
-10x {: music} with {: subfeature}
-2x {: music} with {: subfeature}:  and with {: subfeature}
-10x {: device} with {: subfeature}
-2x {: device} with {: subfeature}:  and with {: subfeature}
-10x {: device} which, if {: 66action},{: consequences}
-2x {: device} which, if {: 66action},{: consequences}:  and which, if {: 66action},{: consequences}
-10x {: vehicle} which, if {: vehicleaction},{: consequences}
-2x {: vehicle} which, if {: vehicleaction},{: consequences}:  and which, if {: vehicleaction},{: consequences}
-10x {: container} which, if {: 23action},{: consequences}
-2x {: device} which, if {: 23action},{: consequences}:  and which, if {: 23action},{: consequences}
-10x {: container} with {: subfeature}
-2x {: container} with {: subfeature}:  and with {: subfeature}
-10x Fancy {{lcfirst: {: furniture}}} with {: subfeature}
-2x Fancy {{lcfirst: {: furniture}}} with {: subfeature}:  and with {: subfeature}
-10x Fancy {{lcfirst: {: furniture}}} which, if {: 13action},{: consequences}
-2x Fancy {{lcfirst: {: furniture}}} which, if {: 13action},{: consequences}:  and which, if {: 13action},{: consequences}
-10x Fancy {{lcfirst: {: furniture}}},  which if {: 45action},{: consequences}
-10x {: workspace} with tools which, if {: 55action},{: consequences}
-2x {: workspace} with tools which, if {: 55action},{: consequences}:  and which, if {: 55action},{: consequences}
-10x {: workspace} with {: subfeature}
-2x {: workspace} with {: subfeature}:  and with {: subfeature}
-30x {: unique}
-20x {: subfeature}
+: Trick
+{:{:movable object}} which if moved, {consequence:revelation}
+{O={:object}}{:{O}} which if {:{O} action}, {consequence:in dungeon}
 
-: walls
-2x Stone wall
-2x Brick wall
-2x Wood wall
-Glass wall
-Wall of ice
-Metal wall
+: Movable Object
+anthropomorphic
+art
+cloth
+container
+debris
+device
+fire
+floor piece
+furnishing
+natural
+religious
+transport
+trophy
+water source
 
-: piles
-refuse
-rubble
-earth
-coins
-dung
-powder
+: Object
+cage
+clothing
+column
+cord
+creature
+descent
+drink
+food
+hole
+instrument
+light
+magic
+mechanism
+opening large
+ornament
+plant
+portal
+slot
+waterway
+writing
+{:movable object}
 
-: waterway
-2x Stream
-Canal
-River
-Waterfall
-Aqueduct
-Sewer 
+: anthropomorphic
+bust
+figurine
+portrait
+sculpture
+statue
 
-: liquid
-10x water
-{liquid}
-blood
-salt water
-slime
+: anthropomorphic action
+blinded
+shown itself in a mirror is
+spoken to
+{:art action}
 
-: stone
-2x Stalactites 
-2x Stalagmites
-Limestone encrustations
-2x Boulders
-2x Stone
-Tunnels
-Lava
+: art
+carved decorations
+ceramic tiles
+etched decorations
+hanging ornaments
+molded decorations
+painted designs
+{art}
 
-: dead
-2x Bones
-2x Skeleton
-2x Corpse
-2x Skull
-Severed head
-Body parts
-Hair
-Skin
-Fur
-Teeth
-
-: floor
-Flagstones
-Solid stone floor
-Earthen floor
-Tiled floor
-Wooden floor 
-Mosaic floor
-
-: source
-2x Spring
-2x Fountain
-Spout
-Geyser 
-Pipe 
-Leaking trickle
-
-: pit
-2x Pit
-2x Well
-Shaft
-Chimney
-Ditch
-Open grave
-
-: still
-Pool
-Basin
-Puddle
-Lake
-Reservoir
-Water tank
-Cauldron
-
-: ledge
-Ledge 
-Niches
-Shelves
-Dais
-Balcony
-
-: plants
-Fungus
-Vines
-Lichen
-Flowers
-Shrub
-Tree
-Herbs
-Moss 
-
-: plantpart
-vines
-leaves
-fruit
-moss
-algae
-flowers
-fungi
-lichen
-
-: portal
-2x Wooden door
-2x Iron door
-Stone door
-Bronze door
-2x Arch
-2x Iron bars blocking passage
-2x Portcullis
-2x Hatch
-
-: column
-Column
-Pillar
-Obelisk
-Row of columns
-Row of pillars
-Monument
-
-: altar
-2x Altar
-2x Shrine
-Reliquary
-2x Idol
-Ikon
-Totem
-
-: light
-Torches
-Lantern
-Candles
-{Color:light} magical light
-{Color:light} glowing fungi
-Sunlight
-Chandelier
-Candelabrum
-
-: descent
-2x Straight stair
-Ramp 
-Spiral stair
-Ladder
-Chute 
-
-: magic
-Illusion
-Magic lab
-Magical circle
-Wild magic phenomenon
-Enchantment
-Enchanted {: main}
-Magical glyphs
-
-: platform
-Platform
-Dais
-
-: stores
-{:food}
-{:drink}
-Equipment
-Raw materials
-
-: storecontainer
-in barrels
-in crates
-in sacks
-on shelves
-in baskets
-stacked neatly
-piled loosely
-
-: written
-3x Book
-2x Scroll
-Paper
-Graffiti
-Inscription
-Tablet
-Plaque
-Written talisman
-The Tarot card {Tarot}
-: fireplace
-3x Fireplace
-Oven
-2x Firepit
-2x Brazier
-Forge
-
-: furniture
-Table
-Chair
-Throne
-Benches
-Bedding
-Couch
+: art action
+{:object action}
 
 : cage
-2x Cage
-2x Prison cell
-Manacles
-Stocks
+cage
+manacles
+prison cell
+stocks
 
-: food
-{provisions}
-/ block of {: Foodstuffs.DryGood}
-/ 2x {: Foodstuffs.SoftFood}
-/ 4x chunks of {: Foodstuffs.Chunks}
-/ 4x {: Foodstuffs.Seasoning}
-/ 3x {: Foodstuffs.Meals}
+: cage action
+opened
+pried open
+unlocked
+you're locked in
+{:object action}
+
+: cloth
+a piece of {fabric}
+blanket
+carpet
+curtain
+net
+rug
+screen
+tapestry
+{:surface large action}
+
+: cloth action
+folded
+{:object action}
+
+: clothing
+{clothing}
+
+: clothing action
+{:cloth action}
+{:wearable action}
+
+: column
+column
+monument
+obelisk
+pillar
+row of columns
+row of pillars
+
+: column action
+{:object action}
+
+: container
+{container}
+{container:furnishing}
+
+: container action
+closed
+emptied
+filled
+opened
+{:hole action}
+{:object small action}
+
+: cord
+chain
+cord
+leather strap
+rope
+string
+thread
+wire
+
+: cord action
+held taught for {4} {{duration:brief}+}
+loosened
+pulled
+severed
+tied to something
+{:object small action}
+
+: creature
+{beast} 
+{demon}
+{fauna} 
+{monster}
+{monstrosity}
+{mythical creature} 
+{undead}
+
+: creature action
+fed
+healed
+killed
+{:anthropomorphic action}
+
+: debris
+{debris:floor}
+
+: debris action
+cleaned
+scattered
+{:object small action}
+{:surface large action}
+
+: descent
+chute
+cliff with {a rope|carved handholds} 
+ladder
+ramp 
+spiral stair
+straight stair
+
+: descent action
+ascended
+descended
+traversed
+
+: device
+{device}
+
+: device action
+oiled
+operated correctly
+{:object small action}
 
 : drink
 {drink}
-/ 4x {: Foodstuffs.LiquidContainer} of {: Foodstuffs.SlowLiquid}
-/ 5x {: Foodstuffs.LiquidContainer} of {: Foodstuffs.Liquid}
 
-: weaving
-2x Carpet
-2x Tapestry
-2x Curtain
-2x A piece of {fabric}
-Screen
-Net
-Blanket
+: drink action
+{:liquid action}
+{:object small action}
 
-: decoration
-Carved decorations
-Molded decorations
-Hanging ornaments
-Painted designs
-Ceramic tiles
-Etched decorations
+: fire
+brazier
+candle
+candelabra
+firepit
+fireplace
+forge
+oil lantern
+oven
+torch
+wood stove
 
-: trophies
-Stuffed animal trophies
-Animal hide trophies
-Animal horns and bones as trophies
-{: armors} as a trophy
-{: weapon} as a trophy
-Exotic apparel
-Collector’s items
+: fire action
+any {~{tiny item}} is burned in it
+a specific {~{tiny item}} is burned in it
+extinguished
+lit{20% for {2d5} {{duration:brief}+}}
+{:animate action}
 
-: gallery
-2x Gallery
-2x Balcony
-Catwalk
+: floor piece
+brick
+cobblestone
+flagstone
+tile
 
-: picture
-2x Painting
-Bas-relief
-Drawing
-Engravings
+: floor piece action
+pried open
+stepped on
+{:object small action}
+{:surface action}
 
-: music
-Organ
-Bell
-Drum
-Musical horn
-Gong
-Flute
-3x {:stringed}
-Bagpipes
-Noisemaker
-Hurdy-gurdy
+: food
+{{herb}+}
+{meat}
+{provisions}
 
-: Stringed
-Lute
-Dulcimer
-Fiddle
-Guitar
-Banjo
-Zither
-Balalaika
+: food action
+completely consumed
+burned
+cut open
+eaten
+tasted
+{:object small action}
 
-: device
-Pendulum
-2x Clock
-Elevator
-Automaton
-Loom
-Mill
-Killing machine
-Manufactury device
-Orrery
-War machine
-Absurd contraption
+: furnishing
+{furnishing}
 
-: vehicle
-Cart
-Chariot
-Wagon
-Wheelbarrow
+: furnishing action
+{:object large action}
+{:surface large action}
 
-: container
-2x Chest
-Trunk
-Basket
-Cabinet
-Bookcase
-Wardrobe
-Desk
-Display case
-Large jar
-: workspace
-Cooking area
-Mining area
-Alchemy workshop
-Metal smithy
-Research lab
-Embalming lab
-Torture chamber
-Accounting workplace
+: hole
+depression
+hole
+opening
 
-: weapon
-3x Sword
-3x Dagger
-3x Axe
-3x Shield
-2x Mace
-Morning star
-3x Spear
-2x Pole arm
-2x Warhammer
-2x Bow
-Arrows
-Arrow
-2x Crossbow
-Club
-Whip
-Trident
+: hole action
+any {~{tiny item}} is inserted
+a specific object (such as a key) is inserted
+any living object is inserted
+any object is inserted
+filled
+
+: instrument
+{musical instrument}
+
+: instrument action
+played
+played with a particular sequence of notes
+{:object small action}
+
+: light
+candelabra
+candles
+chandelier
+lantern
+sunlight
+torches
+glowing {color:light} fungi
+magical {color:light} light
+
+: light action
+lit
+extinguished
+shone/reflected onto a particular place/object
+{:animate action}
+
+: magic
+enchantment
+illusion
+magical circle
+magical glyphs
+magical rune
+pentagram
+
+: magic action
+dispelled
+{:animate action}
+
+: mechanism
+bump
+handle
+hook
+knob
+large {metal} ring
+protrusion
+wheel
+{:cord}
+
+: mechanism action
+activated
+pulled
+pushed
+turned
+{:object small action}
+
+: natural
+large rock
+stalactite 
+stalagmite
+rubble
+
+: natural action
+moved
+{:object action}
+
+: opening large
+chimney
+ditch
+open grave
+pit
+shaft
+well
+
+: opening large action
+entered
+illuminated
+
+: ornament
+crozier
+mitre
+necklace
+orb
+ornament
+sceptre
+{jewelery:crown}
+
+: ornament action
+{:component action}
+{:object small action}
+{:wearable action}
+
+: plant
+{flora}
+
+: plant action
+burned
+consumed
+cut
+watered
+{:object action}
+
+: portal
+archway
+doorway
+hatch
+iron bars blocking passage
+portcullis
+wooden door
+{dungeon door}
+
+: portal action
+traversed
+
+: religious
+altar
+idol
+reliquary
+sarcophagus
+shrine
+totem
+tomb with {debris:remains}
+{made of:hard} coffin
+
+: religious action
+consecrated
+desecrated
+prayed at
+sacrificed to
+{:furnishing action}
+{:surface action}
+
+: slot
+crack
+crevice
+gap
+slot
+
+: slot action
+pried open
+{:hole action}
+
+: transport
+{transport}
+{dungeon feature:waterway}{10% of {liquid}} with a {:boat}
 
 : boat
-2x raft
-2x rowboat
 barge
+canoe
 gondola
 kayak
-canoe
+raft
+rowboat
 
-: clothing
-2x Robe
-2x Cloak
-2x Gown
-Belt
-2x Gloves
-2x Boots
-Shoes
-Sandals
-Purse
-Tunic
-Shirt
-3x Hat
-3x {: armors}
-Uniform
-Vestment
-Scarf
-Collar
-
-: armors
-2x Chainmail
-2x Platemail
-Breastplate
-2x Helmet
-Leather armor
-Reinforced leather armor
-Metal gauntlets
-
-: unique
-Egg, which if {: eggaction},{: consequences}
-Giant hand, which if {: 61action},{: consequences}
-Maelstrom, which if {: 12action},{: consequences}
-Feathers, which if {: 35action},{: consequences}
-Telescope, which if {: 36action},{: consequences}
-Toy, which if {: toyaction},{: consequences}
-Doll, which if {: toyaction},{: consequences}
-Puppet, which if {: toyaction},{: consequences}
-Carousel, which if {: 46action},{: consequences}
-Pair of six-sided dice on which, if {2d6} is rolled, {: consequences} and, if {2d6} is rolled, {: consequences}.
-Mask, which if {: 35action},{: consequences}
-Mask, which if {: 64action},{: consequences}
-Saddle which, if {: 45action},{: consequences}
-Seashell which, if {: shellaction},{: consequences}
-Glass eye which, if {: 64action},{: consequences}
-Grindstone which, if {: grindstoneaction},{: consequences}
-
-: subfeature
-10x bump which, if {: 11action},{: consequences}
-2x bump which, if {: 11action},{: consequences}:  and which if {: 11action},{: consequences}
-10x knob which, if {: 11action},{: consequences}
-2x knob which, if {: 11action},{: consequences}:  and which if {: 11action},{: consequences}
-20x hole, which if {: 12action},{: consequences}
-4x hole, which if {: 12action},{: consequences}:  and which if {: 12action},{: consequences}
-10x slab which if {: 13action},{: consequences}
-2x slab which if {: 13action},{: consequences}:  and which if {: 13action},{: consequences}
-10x surface, which if {: 13action},{: consequences}
-2x surface, which if {: 13action},{: consequences}:  and which if {: 13action},{: consequences}
-20x piece of wood, which if {: 14action},{: consequences}
-4x piece of wood, which if {: 14action},{: consequences}:  and which if {: 14action},{: consequences}
-5x {fabric} which, if {: 15action},{: consequences}
-3x {fabric} which, if {: 15action},{: consequences}:  and which, if {: 15action},{: consequences}
-5x {fabric} padding, which if {: 15action},{: consequences}
-10x brick which, if {: 16action},{: consequences}
-2x brick which, if {: 16action},{: consequences}:  and which, if {: 16action},{: consequences}
-10x block which, if {: 16action},{: consequences}
-2x block which, if {: 16action},{: consequences}:  and which, if {: 16action},{: consequences}
-10x crevice which, if {: 21action},{: consequences}
-2x crevice which, if {: 21action},{: consequences}:  and which, if {: 21action},{: consequences}
-10x slot which, if {: 21action},{: consequences}
-2x slot which, if {: 21action},{: consequences}:  and which, if {: 21action},{: consequences}
-20x {: liquid} which, if {: 22action},{: consequences}
-4x {: liquid} which, if {: 22action},{: consequences}:  and which, if {: 22action},{: consequences}
-20x {{lcfirst:{: container}}} which, if {: 23action},{: consequences}
-4x {{lcfirst:{: container}}} which, if {: 23action},{: consequences}:  and which, if {: 23action},{: consequences}
-10x tile which, if {: 24action},{: consequences}
-2x tile which, if {: 24action},{: consequences}:  and which, if {: 24action},{: consequences}
-10x flagstone which, if {: 24action},{: consequences}
-2x flagstone which, if {: 24action},{: consequences}:  and which, if {: 24action},{: consequences}
-10x ornament which, if {: 25action},{: consequences}
-2x ornament which, if {: 25action},{: consequences}:  and which, if {: 25action},{: consequences}
-10x {: regalia} which, if {: 25action},{: consequences}
-2x {: regalia} which, if {: 25action},{: consequences}:  and which, if {: 25action},{: consequences}
-5x handle which, if {: 26action},{: consequences}
-3x handle which, if {: 26action},{: consequences}:  and which, if {: 26action},{: consequences}
-5x metal ring which, if {: 26action},{: consequences}
-metal ring which, if {: 26action},{: consequences}:  and which, if {: 26action},{: consequences}
-5x hook which, if {: 26action},{: consequences}
-hook which, if {: 26action},{: consequences}:  and which, if {: 26action},{: consequences}
-10x dirt which, if {: 31action},{: consequences}
-10x dust which, if {: 31action},{: consequences}
-2x dirt which, if {: 31action},{: consequences}:  and which, if {: 31action},{: consequences}
-2x dust which, if {: 31action},{: consequences}:  and which, if {: 31action},{: consequences}
-10x rope, which if {: 32action},{: consequences}
-10x cord, which if {: 32action},{: consequences}
-2x rope which, if {: 32action},{: consequences}:  and which, if {: 32action},{: consequences}
-2x cord which, if {: 32action},{: consequences}:  and which, if {: 32action},{: consequences}
-20x grille which, if {: 33action},{: consequences}
-4x grille which, if {: 33action},{: consequences}:  and which, if {: 33action},{: consequences}
-10x wire, which if {: 34action},{: consequences}
-10x chain, which if {: 34action},{: consequences}
-2x chain which, if {: 34action},{: consequences}:  and which, if {: 34action},{: consequences}
-2x wire which, if {: 34action},{: consequences}:  and which, if {: 34action},{: consequences}
-10x mirror which, if {: 36action},{: consequences}
-10x glass which, if {: 36action},{: consequences}
-2x mirror which, if {: 36action},{: consequences}:  and which, if {: 34action},{: consequences}
-2x glass which, if {: 36action},{: consequences}:  and which, if {: 34action},{: consequences}
-10x corpse which, if {: 41action},{: consequences}
-2x corpse which, if {: 41action},{: consequences}:  and which, if {: 41action},{: consequences}
-10x bones which, if {: 41action},{: consequences}
-2x bones which, if {: 41action},{: consequences}:  and which, if {: 41action},{: consequences}
-20x flame which, if {: 42action},{: consequences}
-4x flame which, if {: 42action},{: consequences}:  and which, if {: 42action},{: consequences}
-20x protrusion which, if {: 43action},{: consequences}
-4x protrusion which, if {: 43action},{: consequences}:  and which, if {: 43action},{: consequences}
-20x writing which, if {: 44action},{: consequences}
-4x writing which, if {: 44action},{: consequences}:  and which, if {: 44action},{: consequences}
-20x seat, which, if {: 45action},{: consequences}
-4x seat which, if {: 45action},{: consequences}:  and which, if {: 45action},{: consequences}
-20x wheel which, if {: 46action},{: consequences}
-4x wheel which, if {: 46action},{: consequences}:  and which, if {: 46action},{: consequences}
-10x {: plantpart} which, if {: 51action},{: consequences}
-2x {: plantpart} which, if {: 51action},{: consequences}:  and which, if {: 51action},{: consequences}
-20x {: substance} which, if {: 52action},{: consequences}
-4x {: substance} which, if {: 52action},{: consequences}:  and which, if {: 52action},{: consequences}
-20x {{lcfirst:{: picture}}} which, if {: 53action},{: consequences}
-4x {{lcfirst:{: picture}}} which, if {: 53action},{: consequences}:  and which, if {: 53action},{: consequences}
-10x door which, if {: 54action}{: ,consequences}
-2x door which, if {: 54action},{: consequences}:  and which, if {: 54action},{: consequences}
-10x hatch which, if {: 54action},{: consequences}
-2x door which, if {: 54action},{: consequences}:  and which, if {: 54action},{: consequences}
-10x tools which, if {: 55action},{: consequences}
-2x tools which, if {: 55action},{: consequences}:  and which, if {: 55action},{: consequences}
-10x {{lcfirst:{: weapon}}} which, if {: 55action},{: consequences}
-2x {{lcfirst:{: weapon}}} which, if {: 55action},{: consequences}:  and which, if {: 55action},{: consequences}
-20x lever which, if {: 56action},{: consequences}
-4x lever which, if {: 56action},{: consequences}:  and which, if {: 56action},{: consequences}
-20x {: creature} which if {: 61action},{: consequences}
-4x {: creature} which, if {: 61action},{: consequences}:  and which, if {: 61action},{: consequences}
-20x {{lcfirst:{: decoration}}} which, if {: 62action},{: consequences}
-4x {{lcfirst:{: decoration}}} which, if {: 62action},{: consequences}:  and which, if {: 62action},{: consequences}
-20x statue, which if {: 63action},{: consequences}
-4x statue which, if {: 63action},{: consequences}:  and which, if {: 63action},{: consequences}
-20x face which, if {: 64action},{: consequences}
-4x face which, if {: 64action},{: consequences}:  and which, if {: 64action},{: consequences}
-20x magic effect which, if {: 65action},{: consequences}
-4x magic effect which, if {: 65action},{: consequences}:  and which, if {: 65action},{: consequences}
-20x mechanism which, if {: 66action},{: consequences}
-4x mechanism which, if {: 66action},{: consequences}:  and which, if {: 66action},{: consequences}
-
-: creature
-spirit
-animal
-monster
-vermin
-
-: substance
-/ 4x {: Substances.SoftSolid}
-4x chunks of {made of:hard}
-/ 4x {: Substances.SlowLiquid}
-/ 4x {: Substances.Powder}
-4x dirt
-4x dust
-2x cobwebs
-
-: regalia
-2x crown
-diadem
-mitre
-sceptre
-orb
-necklace
-crozier
-
-: 11action
-touched
+: transport action
+entered
+moved to a particular location
 pushed
-rubbed
-hit
-pulled
-{: anyaction}
+{:object large action}
+{:surface large action}
 
-: 12action
-any object is inserted
-touched
-a specific kind of object is inserted
-a specific object (“key”) is inserted
-filled
-{: anyaction}
+: trophy
+animal hide
+animal horns
+collector’s items
+exotic apparel
+ornamental {armor}
+ornamental {weapon}
+taxidermy (mounted {fauna})
 
-: 13action
-lain upon
-jumped upon
-pushed
-a specific kind of object is placed on it
-a specific object (“key”) is placed upon it
-{: anyaction}
+: trophy action
+{:object small action}
 
-: 14action 
-jumped upon
-pushed
-pulled
-broken
-assembled
-{: anyaction}
+: water source
+{dungeon feature:water source}{10% of {liquid}}
 
-: 15action
-wrapped
-moved
-cut
-touched
-worn
-{: anyaction}
+: water source action
+{:liquid action}
 
-: 16action
-pried open
-pushed
-touched
-slid
-assembled
-{: anyaction}
+: waterway
+{dungeon feature:waterway}{10% of {liquid}}
 
-: 21action
-a specific kind of object is inserted
-pried open
-any object is inserted
-a specific object (“key”) is inserted
-filled
-{: anyaction}
+: waterway action
+completely submerged in
+{:liquid action}
 
-: 22action
-2x drunk
-something is dipped in it
-a specific substance is mixed with it
-drained
-gazed at
-{: anyaction}
+: writing
+book
+graffiti
+inscription
+paper
+plaque
+scroll
+tablet
+the tarot card {tarot}
+written talisman
 
-: 23action
-closed
-opened
-pushed
-a specific object (“key”) is inserted
-filled
-{: anyaction}
-
-: 24action
-broken
-pushed
-slid
-touched
-pried open
-{: anyaction}
-
-: 25action
-moved
-worn
-put in its right place
-broken
-turned
-{: anyaction}
-
-: 26action
-turned
-pulled
-slid
-broken
-pushed
-{: anyaction}
-
-: 31action
-cleaned
-sifted
-scattered
-dug in
-mixed with another substance
-{: anyaction}
-
-: 32action
-tied to something
-touched
-cut
-pulled
-loosened
-{: anyaction}
-
-: 33action
-a specific object (“key”) is inserted
-pried open
-broken
-pulled
-any object is inserted
-{: anyaction}
-
-: 34action
-loosened
-touched
-swung
-tied to something
-pulled
-{: anyaction}
-
-: 35action
-worn
-2x touched
-3x cut
-4x put on another object
-5x moved
-{: anyaction}
-
-: 36action
-gazed into
-touched
-broken
-pushed
-pried open
-{: anyaction}
-
-: 41action
-buried
-broken
-moved
-opened
-assembled
-{: anyaction}
-
-: 42action
-a specific object is burned in it
-a specific kind of object is burned in it
-touched
-gazed into
-doused
-{: anyaction}
-
-: 43action
-slid
-pushed
-turned
-broken
-pulled
-{: anyaction}
-
-: 44action
+: writing action
 completed
+deciphered
+erased
+obscured
 read
-spoken to
-deciphered
-erased
-{: anyaction}
+traced
+sung
+{:object action}
 
-: 45action
-3x sat on
-broken
-opened
-turned
-slid
-{: anyaction}
+/ general actions, shared by different object types:
 
-: 46action
-pulled
-pushed
-turned to the left
-turned to the right
-broken
-{: anyaction}
-
-: 51action
-watered
-gazed at
-pulled
-burned
-cut
-{: anyaction}
-
-: 52action
-tasted
-touched
-burned
-cleaned
-mixed
-{: anyaction}
-
-: 53action
-erased
-touched
-deciphered
-cut or broken
-gazed at
-{: anyaction}
-
-: 54action
-knocked on
-pushed
-opened
-pulled
-broken
-{: anyaction}
-
-: 55action
-put in place
-moved
-broken
-used
-pulled
-{: anyaction}
-
-: 56action
-jammed
-pulled
-pushed
-turned
-broken
-{: anyaction}
-
-: 61action
-fed
-touched
-moved
-fought
-spoken to
-{: anyaction}
-
-: 62action
-pushed
-touched
-slid
-turned
-pried open
-{: anyaction}
-
-: 63action
-its parts are assembled
-touched
-slid
-turned
-spoken to
-{: anyaction}
-
-: 64action
-spoken to
-gazed at
-pushed
-any object is inserted
-a specific object (“key”) is inserted
-{: anyaction}
-
-: 65action
-any spell is cast on it
-a specific spell is cast on it
-touched
-spoken to
-a specific object (“key”) is touched to it
-gazed at
-{: anyaction}
-
-: 66action
-oiled
-any object is inserted
-pulled
-broken
-assembled
-{: anyaction}
-
-: musicaction
-sounded
-played to a particular pattern or tune
-broken
-
-: eggaction
-2x broken
-2x hatched
-rubbed
-shaken
-{: anyaction}
-
-: foodaction
-3x eaten
-2x cut open
-burned
-{: anyaction}
-
-: toyaction
-2x played with
-2x spoken to
-2x cut open
-destroyed
-a specific object (“key”) is inserted
-{: anyaction}
-
-: lightaction
-2x lit
-2x put out
-2x shone on a particular place
-2x gazed into
-{: anyaction}
-
-: vehicleaction
-2x moved
-2x entered
-2x pushed
-{: anyaction}
-
-: altaraction
-2x prayed at
-2x sacrificed to
-2x consecrated
-2x desecrated
-{: anyaction}
-
-: shellaction
-2x listened to
-broken
-3x {: 21action}
-{: anyaction}
-
-: grindstoneaction
-3x {: 46action}
-3x anything is sharpened on it
-2x a specific thing is sharpened on it
-{: anyaction}
-
-: anyaction 
-touched
-any object is inserted
-lain upon
-jumped upon
-wrapped
-pried
-a specific kind of object is inserted
-drunk from
-closed
-broken
-moved
-turned
-cleaned
-a specific object (“key”) is inserted
-loosened
-worn
-gazed at
-buried
-a specific kind of object is burned on it
-slid
-completed
-sat on
-pulled
+: action
 sprinkled with liquid
-tasted
-knocked on
-put in place
-fed
-pushed
 a specific spell is cast on it
 any spell is cast on it
-spoken to
 
-: consequences
-causes instant death (save or die!)
-4x causes major unavoidable damage 
-2x delivers a poison
-6x causes major avoidable damage
-6x summons or releases a monster
-2x confines the victim
-confines the whole party
-3x entraps the victim
-gives the victim a disease 
-gives the victim a permanent curse, -1d6 to ability
-gives the victim a permanent curse, -2 to hit and damage
-gives the victim a permanent curse, attracts monsters at double the usual rate
-polymorphs the victim
-''geases'' the victim
-gives the victim a permanent curse of losing items and treasure
-4x gives a cursed magic item
-2x curses one of the victim’s items
-gives a false clue
-gives misleading oracular advice
-6x does minor unavoidable damage
-6x does minor avoidable damage 
-6x summons or releases a minor monster
-slows the victim temporarily
-puts the victim to sleep temporarily
-paralyzes the victim temporarily
-blinds the victim temporarily
-deafens the victim temporarily
-strikes the victim mute temporarily 
-causes confusion
-causes insanity 
-causes paranoia
-causes rage
-causes a compulsion
-causes feeblemind
-6x closes a passage
-releases a hostile creature in a different area of the adventure
-closes an access way in a different area of the adventure
-activates a trap in a different area of the adventure
-makes a different area of the adventure have a hazardous environment
-destroys a treasure in a different area of the adventure
-6x sounds an alarm
-8x reveals hidden {: subfeature}
-8x opens a passage
-2x opens a way up
-2x opens a way down
-confines a hostile creature in a different area of the adventure
-opens an access way in a different area of the adventure
-deactivates a trap in a different area of the adventure
-neutralizes a hostile environment in a different area of the adventure
-reveals a treasure in a different area of the adventure
-reveals a clue in a different area of the adventure
-enlarges victim’s size
-reduces victim’s size
-changes victim’s race
-changes victim’s class
-changes victim’s languages known
-switches two of victim’s ability scores at random
-9x has a chaotic effect, random every time (Roll d6, 1:{: consequencesnoregress}, 2:{: consequencesnoregress}, 3:{: consequencesnoregress}, 4:{: consequencesnoregress}, 5: {: consequencesnoregress}, 6:{: consequencesnoregress})
-2x opens a passage
-8x gives a minor treasure 
-6x provides a key object for a different area
-6x gives a clue to something in this area
-6x gives a clue to something in a different area
-3x summons or releases a benevolent being
-3x summons or releases a neutral being
-2x gives a temporary blessing to the beneficiary, +1 to hit, damage, save
-2x gives temporary protection from evil to the beneficiary
-gives a temporary blessing to the party, +1 to hit, damage, save
-gives temporary protection from evil to the party
-4x gives a major treasure
-3x gives a clue leading to a different adventure site (treasure map, etc.)
-3x gives oracular advice
-3x heals one person (one time only)
-heals one person (once a day)
-2x heals the party (one time only)
-resurrects a dead party member (one time only)
-2x gives experience points
-2x gives +1 hp permanently 
-gives +1 permanent ability bonus
-cures all diseases on the beneficiary
-removes a curse from the beneficiary
-gives a permanent “mutant” power benefit
-gives the beneficiary 2d6 temporary hit points
-4x gives a magic item
-2x enchants one of the beneficiary’s items
-9x {: consequencesnoregress} and {: consequencesnoregress}
+: animate action
+gazed at
+{:action}
 
+: component action
+restored to its proper position
+{:action}
 
-: consequencesnoregress
-causes instant death (save or die!)
-4x causes major unavoidable damage 
-2x delivers a poison
-6x causes major avoidable damage
-6x summons or releases a monster
-2x confines the victim
-confines the whole party
-3x entraps the victim 
-gives the victim a permanent curse, -1d6 to ability
-gives the victim a permanent curse, -2 to hit and damage
-gives the victim a permanent curse, attracts monsters at double the usual rate
-gives the victim a disease
-polymorphs the victim
-''geases'' the victim
-gives the victim a permanent curse of losing items and treasure
-2x gives a cursed magic item
-2x curses one of the victim’s items
-gives a false clue
-gives misleading oracular advice
-6x does minor unavoidable damage
-6x does minor avoidable damage 
-6x summons or releases a minor monster
-slows the victim temporarily
-puts the victim to sleep temporarily
-paralyzes the victim temporarily
-blinds the victim temporarily
-deafens the victim temporarily
-strikes the victim mute temporarily 
-causes confusion
-causes insanity 
-causes paranoia
-causes rage
-causes a compulsion
-causes feeblemind
-6x closes a passage
-releases a hostile creature in a different area of the adventure
-closes an access way in a different area of the adventure
-activates a trap in a different area of the adventure
-makes a different area of the adventure have a hazardous environment
-destroys a treasure in a different area of the adventure
-6x sounds an alarm
-8x reveals hidden {: subfeature}
-8x opens a passage
-2x opens a way up
-2x opens a way down
-confines a hostile creature in a different area of the adventure
-opens an access way in a different area of the adventure
-deactivates a trap in a different area of the adventure
-neutralizes a hostile environment in a different area of the adventure
-reveals a treasure in a different area of the adventure
-reveals a clue in a different area of the adventure
-enlarges victim’s size
-reduces victim’s size
-changes victim’s race
-changes victim’s class
-changes victim’s languages known
-switches two of victim’s ability scores at random
-8x gives a minor treasure 
-6x provides a key object for a different area
-6x gives a clue to something in this area
-6x gives a clue to something in a different area
-3x summons or releases a benevolent being
-3x summons or releases a neutral being
-2x gives a temporary blessing to the beneficiary, +1 to hit, damage, save
-2x gives temporary protection from evil to the beneficiary
-gives a temporary blessing to the party, +1 to hit, damage, save
-gives temporary protection from evil to the party
-4x gives a major treasure
-3x gives a clue leading to a different adventure site (treasure map, etc.)
-3x gives oracular advice
-3x heals one person (one time only)
-heals one person (once a day)
-2x heals the party (one time only)
-resurrects a dead party member (one time only)
-cures all diseases on the beneficiary
-removes a curse from the beneficiary
-2x gives experience points
-2x gives +1 hp permanently 
-gives +1 permanent ability bonus
-gives a permanent “mutant” power benefit
-4x gives a magic item
-2x enchants one of the beneficiary’s items
+: liquid action
+boiled
+chilled
+drained
+drunk
+frozen
+heated
+some {liquid} is poured into it
+{reagent} is dipped in it
+{:animate action}
+
+: object action
+disturbed
+exposed to fire
+exposed to water
+knocked on
+rubbed
+touched
+touched with living tissue
+touched with {metal:enchantable}
+{:action}
+
+: object small action
+buried
+cleaned
+moved
+submerged in water
+rotated
+turned clockwise
+turned counter-clockwise
+{:object action}
+
+: object large action
+{:object action}
+
+: surface action
+any {~{tiny item}} is placed on it
+a specific object (such as a key) is placed upon it
+{:action}
+
+: surface large action
+jumped upon
+lain upon
+{:object large action}
+{:surface action}
+
+: wearable action
+worn
+{:action}

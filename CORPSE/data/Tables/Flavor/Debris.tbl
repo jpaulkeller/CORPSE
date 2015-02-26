@@ -1,17 +1,14 @@
-/ 
-
 : Debris
+{:anywhere}
+{:floor}
 
-: stuff
-TODO http://random-generator.com/
-
-: anywhere crud
+: anywhere
 4x a {size} slimy area
 4x mold
 cobwebs
 scratches and abrasions
 
-: floor crud
+: floor
 2x a small pile of stones
 2x a {size} pile of rubble
 2x guano
@@ -40,8 +37,27 @@ scattered teeth/fangs
 some dung
 some wax drippings
 straw
+{:remains}
 {2d6} broken arrows
 {70%{:coin damage} }{:coin}
+
+: remains
+body parts
+corpse of a {fauna}
+egg shells
+feathers
+fur
+hair
+hide
+offal
+nesting materials
+severed head
+shed skin
+skeleton
+skull
+teeth
+tracks
+{:bones}
 
 : bones
 10x the {:bone condition} bones of a {:bone animal}
@@ -90,11 +106,8 @@ a partially melted and deformed
 half a
 
 : coin
-20x copper coin
-5x silver coin
-2x electrum coin
-2x gold coin
-platinum coin
+{currency:coin}
+{coin}
 
 : broken weapon
 a bent and rusted iron bar
@@ -142,3 +155,10 @@ a torn backpack
 a torn banner
 a torn sack’s remnants
 an abandoned {~{equipment}}
+
+: storage
+in {{container}+}
+in holes and crevices
+on shelves
+piled loosely
+stacked neatly

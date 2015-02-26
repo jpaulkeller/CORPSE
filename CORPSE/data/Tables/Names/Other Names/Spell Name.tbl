@@ -1,0 +1,34 @@
+: Spell Name
+{:Gerund} {:Noun}
+{:Adj} {:Noun}
+
+: Gerund
+{Verb:Attack}
+{Noise}
+
+: Adj
+{Adjective}
+{Evocative Adj}
+{Humanoid}'s
+
+: Noun
+{:Concept}
+{Element:Any}
+{Evocative Noun{!OneWord}}
+{Weapon}
+
+: Concept
+Abjuration
+Alteration
+Animation
+Assimilation
+Circle
+Conjuration
+Divination
+Enchantment
+Evocation
+Illusion
+Regeneration
+Restoration
+Shackle
+Shield

@@ -1,0 +1,264 @@
+/ http://www.dandwiki.com/wiki/SRD:Traps
+/ http://community.wizards.com/forum/whats-dm-do/threads/1071681
+/ http://www.dungeonmastering.com/campaigns-adventures/clever-dd-traps
+
+: Custom Trap = Level 1 + Level 2 + Level 3 + Level 4 + Level 5 + Level 6 + Level 7 + Level 8 + Level 9 + Level 10
+
+.Name; Level; Type; Trigger; Reset; Bypass; Effects (Avoid/Save); Search; Disable; Cost; Note
+
+: Level 1
+Basic Arrow Trap; CR 1; mechanical; proximity trigger; manual reset; ; Atk +10 ranged (1d6/×3, arrow); Search DC 20; Disable Device DC 20; 2,000 gp
+Camouflaged Pit Trap; CR 1; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 10' deep (1d6, fall); Search DC 24; Disable Device DC 20; 1,800 gp
+Deeper Pit Trap; CR 1; mechanical; location trigger; manual reset; hidden switch bypass (Search DC 25); DC 15 Reflex Save avoids, 20' deep (2d6, fall), multiple targets (first target in each of two adjacent 5' squares); Search DC 20; Disable Device DC 23; 1,300 gp
+Fusillade of Darts; CR 1; mechanical; location trigger; manual reset; ; Atk +10 ranged (1d4+1, dart), multiple targets (fires 1d4 darts at each target in two adjacent 5' squares); Search DC 14; Disable Device DC 20; 500 gp
+Poison Dart Trap; CR 1; mechanical; location trigger; manual reset; ; Atk +8 ranged (1d4 plus poison, dart), poison (bloodroot, DC 12 Fortitude save resists, 0/1d4 Con plus 1d3 Wis); Search DC 20; Disable Device DC 18; 700 gp
+Poison Needle Trap; CR 1; mechanical; touch trigger; manual reset; ; Atk +8 ranged (1 plus greenblood oil poison); Search DC 22; Disable Device DC 20; 1,300 gp
+Portcullis Trap; CR 1; mechanical; location trigger; manual reset; ; Atk +10 melee (3d6); Search DC 20; Disable Device DC 20; 1,400 gp; Note: Damage applies only to those underneath the portcullis. Portcullis blocks passageway
+Razor-Wire across Hallway; CR 1; mechanical; location trigger; no reset; ; Atk +10 melee (2d6, wire), multiple targets (first target in each of two adjacent 5' squares); Search DC 22; Disable Device DC 15; 400 gp
+Rolling Rock Trap; CR 1; mechanical; location trigger; manual reset; ; Atk +10 melee (2d6, rock); Search DC 20; Disable Device DC 22; 1,400 gp
+Scything Blade Trap; CR 1; mechanical; location trigger; automatic reset; ; Atk +8 melee (1d8/×3); Search DC 21; Disable Device DC 20; 1,700 gp
+Spear Trap; CR 1; mechanical; location trigger; manual reset; ; Atk +12 ranged (1d8/×3, spear); Search DC 20; Disable Device DC 20; 1,200 gp; Note: 200' max range, target determined randomly from those in its path
+Swinging Block Trap; CR 1; mechanical; touch trigger; manual reset; ; Atk +5 melee (4d6, stone block); Search DC 20; Disable Device DC 20; 500 gp
+Wall Blade Trap; CR 1; mechanical; touch trigger; automatic reset; hidden switch bypass (Search DC 25); Atk +10 melee (2d4/×4, scythe); Search DC 22; Disable Device DC 22; 2,500 gp
+
+: Level 2
+Box of Brown Mold; CR 2; mechanical; touch trigger (opening the box); automatic reset; ; 5' cold aura (3d6, cold nonlethal); Search DC 22; Disable Device DC 16; 3,000 gp
+Bricks from Ceiling; CR 2; mechanical; touch trigger; repair reset; ; Atk +12 melee (2d6, bricks), multiple targets (all targets in two adjacent 5' squares); Search DC 20; Disable Device DC 20; 2,400 gp
+Burning Hands Trap; CR 2; magic device; proximity trigger (alarm); automatic reset; ; spell effect (burning hands, 1st-level wizard, 1d4 fire, DC 11 Reflex Save half damage); Search DC 26; Disable Device DC 26; 500 gp, 40 xp
+Camouflaged Pit Trap; CR 2; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 20' deep (2d6, fall), multiple targets (first target in each of two adjacent 5' squares); Search DC 24; Disable Device DC 19; 3,400 gp
+Inflict Light Wounds Trap; CR 2; magic device; touch trigger; automatic reset; ; spell effect (inflict light wounds, 1st-level cleric, 1d8+1, DC 11 Will save half damage); Search DC 26; Disable Device DC 26; 500 gp, 40 xp
+Javelin Trap; CR 2; mechanical; location trigger; manual reset; ; Atk +16 ranged (1d6+4, javelin); Search DC 20; Disable Device DC 18; 4,800 gp
+Large Net Trap; CR 2; mechanical; location trigger; manual reset; ; Atk +5 melee (see note); Search DC 20; Disable Device DC 25; 3,000 gp; Note: Characters in 10' square are grappled by net (Str 18) if they fail a DC 14 Reflex Save; 
+Pit Trap; CR 2; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 40' deep (4d6, fall); Search DC 20; Disable Device DC 20; 2,000 gp
+Poison Needle Trap; CR 2; mechanical; touch trigger; repair reset; lock bypass (Open Lock DC 30); Atk +17 melee (1 plus poison, needle), poison (blue whinnis, DC 14 Fortitude save resists (poison only), 1 Con/unconsciousness); Search DC 22; Disable Device DC 17; 4,720 gp
+Spiked Pit Trap; CR 2; mechanical; location trigger; automatic reset; ; DC 20 Reflex Save avoids, 20' deep (2d6, fall), multiple targets (first target in each of two adjacent 5' squares), pit spikes (Atk +10 melee, 1d4 spikes per target for 1d4+2 each); Search DC 18; Disable Device DC 15; 1,600 gp
+Tripping Chain; CR 2; mechanical; location trigger; automatic reset; ; multiple traps (tripping and melee attack), Atk +15 melee touch (trip), Atk +15 melee (2d4+2, spiked chain); Search DC 15; Disable Device DC 18; 3,800 gp; Note: This trap is really one CR 1 trap that trips and a second CR 1 trap that attacks with a spiked chain. If the tripping attack succeeds, a +4 bonus applies to the spiked chain attack because the opponent is prone.
+Well-Camouflaged Pit Trap; CR 2; mechanical; location trigger; repair reset; ; DC 20 Reflex Save avoids, 10' deep (1d6, fall); Search DC 27; Disable Device DC 20; 4,400 gp
+
+: Level 3
+Burning Hands Trap; CR 3; magic device; proximity trigger (alarm); automatic reset; ; spell effect (burning hands, 5th-level wizard, 5d4 fire, DC 11 Reflex Save half damage); Search DC 26; Disable Device DC 26; 2,500 gp, 200 xp
+Camouflaged Pit Trap; CR 3; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 30' deep (3d6, fall), multiple targets (first target in each of two adjacent squares); Search DC 24; Disable Device DC 18; 4,800 gp
+Ceiling Pendulum; CR 3; mechanical; timed trigger; automatic reset; ; Atk +15 melee (1d12+8/×3, greataxe); Search DC 15; Disable Device DC 27; 14,100 gp
+Fire Trap; CR 3; spell; spell trigger; no reset; ; spell effect (fire trap, 3rd-level druid, 1d4+3 fire, DC 13 Reflex Save half damage); Search DC 27; Disable Device DC 27; 85 gp to hire NPC spellcaster.
+Extended Bane Trap; CR 3; magic device; proximity trigger (detect good); automatic reset; ; spell effect (extended bane, 3rd-level cleric, DC 13 Will save negates); Search DC 27; Disable Device DC 27; 3,500 gp, 280 xp
+Ghoul Touch Trap; CR 3; magic device; touch trigger; automatic reset; ; spell effect (ghoul touch, 3rd-level wizard, DC 13 Fortitude save negates); Search DC 27; Disable Device DC 27; 3,000 gp, 240 xp
+Hail of Needles; CR 3; mechanical; location trigger; manual reset; ; Atk +20 ranged (2d4); Search DC 22; Disable Device DC 22; 5,400 gp
+Acid Arrow Trap; CR 3; magic device; proximity trigger (alarm); automatic reset; ; Atk +2 ranged touch, spell effect (acid arrow, 3rd-level wizard, 2d4 acid/round for 2 rounds); Search DC 27; Disable Device DC 27; 3,000 gp, 240 xp
+Pit Trap; CR 3; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 60' deep (6d6, fall); Search DC 20; Disable Device DC 20; 3,000 gp
+Poisoned Arrow Trap; CR 3; mechanical; touch trigger; manual reset; lock bypass (Open Lock DC 30); Atk +12 ranged (1d8 plus poison, arrow), poison (Large monstrous scorpion venom, DC 14 Fortitude save resists, 1d4 Con/1d4 Con); Search DC 19; Disable Device DC 15; 2,900 gp
+Spiked Pit Trap; CR 3; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 20' deep (2d6, fall), multiple targets (first target in each of two adjacent 5' squares), pit spikes (Atk +10 melee, 1d4 spikes per target for 1d4+2 each); Search DC 21; Disable Device DC 20; 3,600 gp
+Stone Blocks from Ceiling; CR 3; mechanical; location trigger; repair reset; ; Atk +10 melee (4d6, stone blocks); Search DC 25; Disable Device DC 20; 5,400 gp
+
+: Level 4
+Bestow Curse Trap; CR 4; magic device; touch trigger (detect chaos); automatic reset; ; spell effect (bestow curse, 5th-level cleric, DC 14 Will save negates); Search DC 28; Disable Device DC 28; 8,000 gp, 640 xp
+Camouflaged Pit Trap; CR 4; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 40' deep (4d6, fall), multiple targets (first target in each of two adjacent 5' squares); Search DC 25; Disable Device DC 17; 6,800 gp
+Collapsing Column; CR 4; mechanical; touch trigger (attached); no reset; ; Atk +15 melee (6d6, stone blocks); Search DC 20; Disable Device DC 24; 8,800 gp
+Glyph of Warding (Blast); CR 4; spell; spell trigger; no reset; ; spell effect (glyph of warding [blast], 5th-level cleric, 2d8 acid, DC 14 Reflex Save half damage), multiple targets (all targets within 5'); Search DC 28; Disable Device DC 28; 350 gp to hire NPC spellcaster.
+Lightning Bolt Trap; CR 4; magic device; proximity trigger (alarm); automatic reset; ; spell effect (lightning bolt, 5th-level wizard, 5d6 electricity, DC 14 Reflex Save half damage); Search DC 28; Disable Device DC 28; 7,500 gp, 600 xp
+Pit Trap; CR 4; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 80' deep (8d6, fall); Search DC 20; Disable Device DC 20; 4,000 gp
+Poisoned Dart Trap; CR 4; mechanical; location trigger; manual reset; ; Atk +15 ranged (1d4+4 plus poison, dart), multiple targets (1 dart per target in a 10'-by-10' area), poison (Small monstrous centipede poison, DC 10 Fortitude save resists, 1d2 Dex/1d2 Dex); Search DC 21; Disable Device DC 22; 12,090 gp
+Sepia Snake Sigil Trap; CR 4; spell; spell trigger; no reset; ; spell effect (sepia snake sigil, 5th-level wizard, DC 14 Reflex Save negates); Search DC 28; Disable Device DC 28; 650 gp to hire NPC spellcaster.
+Spiked Pit Trap; CR 4; mechanical; location trigger; automatic reset; ; DC 20 Reflex Save avoids, 60' deep (6d6, fall), pit spikes (Atk +10 melee, 1d4 spikes per target for 1d4+5 each); Search DC 20; Disable Device DC 20; 4,000 gp
+Wall Scythe Trap; CR 4; mechanical; location trigger; automatic reset; ; Atk +20 melee (2d4+8/×4, scythe); Search DC 21; Disable Device DC 18; 17,200 gp
+Water-Filled Room Trap; CR 4; mechanical; location trigger; automatic reset; ; multiple targets (all targets in a 10'-by-10' room), never miss, onset delay (5 rounds), liquid; Search DC 17; Disable Device DC 23; 11,200 gp
+Wide-Mouth Spiked Pit Trap; CR 4; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 20' deep (2d6, fall), multiple targets (first target in each of two adjacent 5' squares), pit spikes (Atk +10 melee, 1d4 spikes per target for 1d4+2 each); Search DC 18; Disable Device DC 25; 7,200 gp
+
+: Level 5
+Camouflaged Pit Trap; CR 5; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 50' deep (5d6, fall), multiple targets (first target in each of two adjacent 5' squares); Search DC 25; Disable Device DC 17; 8,500 gp
+Doorknob Smeared with Contact Poison; CR 5; mechanical; touch trigger (attached); manual reset; ; poison (nitharit, DC 13 Fortitude save resists, 0/3d6 Con); Search DC 25; Disable Device DC 19; 9,650 gp
+Falling Block Trap; CR 5; mechanical; location trigger; manual reset; ; Atk +15 melee (6d6), multiple targets (can strike all characters in two adjacent specified squares); Search DC 20; Disable Device DC 25; 15,000 gp
+Fire Trap; CR 5; spell; spell trigger; no reset; ; spell effect (fire trap, 7th-level wizard, 1d4+7 fire, DC 16 Reflex Save half damage); Search DC 29; Disable Device DC 29; 305 gp to hire NPC spellcaster.
+Fireball Trap; CR 5; magic device; touch trigger; automatic reset; ; spell effect (fireball, 8th-level wizard, 8d6 fire, DC 14 Reflex Save half damage); Search DC 28; Disable Device DC 28; 12,000 gp, 960 xp
+Flooding Room Trap; CR 5; mechanical; proximity trigger; automatic reset; ; no attack roll necessary (see note below); Search DC 20; Disable Device DC 25; 17,500 gp; Note: Room floods in 4 rounds
+Fusillade of Darts; CR 5; mechanical; location trigger; manual reset; ; Atk +18 ranged (1d4+1, dart), multiple targets (1d8 darts per target in a 10'-by-10' area); Search DC 19; Disable Device DC 25; 18,000 gp
+Moving Executioner Statue; CR 5; mechanical; location trigger; automatic reset; hidden switch bypass (Search DC 25); Atk +16 melee (1d12+8/×3, greataxe), multiple targets (both arms attack); Search DC 25; Disable Device DC 18; 22,500 gp
+Phantasmal Killer Trap; CR 5; magic device; proximity trigger (alarm covering the entire room); automatic reset; ; spell effect (phantasmal killer, 7th-level wizard, DC 16 Will save for disbelief and DC 16 Fortitude save for partial effect); Search DC 29; Disable Device DC 29; 14,000 gp, 1,120 xp
+Pit Trap; CR 5; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 100' deep (10d6, fall); Search DC 20; Disable Device DC 20; 5,000 gp
+Poison Wall Spikes; CR 5; mechanical; location trigger; manual reset; ; Atk +16 melee (1d8+4 plus poison, spike), multiple targets (closest target in each of two adjacent 5' squares), poison (Medium monstrous spider venom, DC 12 Fortitude save resists, 1d4 Str/1d4 Str); Search DC 17; Disable Device DC 21; 12,650 gp
+Spiked Pit Trap; CR 5; mechanical; location trigger; manual reset; ; DC 25 Reflex Save avoids, 40' deep (4d6, fall), multiple targets (first target in each of two adjacent 5' squares), pit spikes (Atk +10 melee, 1d4 spikes per target for 1d4+4 each); Search DC 21; Disable Device DC 20; 13,500 gp
+Spiked Pit Trap (80' deep); CR 5; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 80' deep (8d6, fall), pit spikes (Atk +10 melee, 1d4 spikes for 1d4+5 each); Search DC 20; Disable Device DC 20; 5,000 gp
+Ungol Dust Vapor Trap; CR 5; mechanical; location trigger; manual reset; ; gas, multiple targets (all targets in a 10'-by-10' room), never miss, onset delay (2 rounds), poison (ungol dust, DC 15 Fortitude save resists, 1 Cha/1d6 Cha plus 1 Cha drain); Search DC 20; Disable Device DC 16; 9,000 gp
+
+: Level 6
+Built-to-Collapse Wall; CR 6; mechanical; proximity trigger; no reset; ; Atk +20 melee (8d6, stone blocks), multiple targets (all targets in a 10'-by-10' area); Search DC 14; Disable Device DC 16; 15,000 gp
+Compacting Room; CR 6; mechanical; timed trigger; automatic reset; hidden switch bypass (Search DC 25); walls move together (12d6, crush), multiple targets (all targets in a 10'-by- 10' room), never miss, onset delay (4 rounds); Search DC 20; Disable Device DC 22; 25,200 gp
+Flame Strike Trap; CR 6; magic device; proximity trigger (detect magic); automatic reset; ; spell effect (flame strike, 9th-level cleric, 9d6 fire, DC 17 Reflex Save half damage); Search DC 30; Disable Device DC 30; 22,750 gp, 1,820 xp
+Fusillade of Spears; CR 6; mechanical; proximity trigger; repair reset; ; Atk +21 ranged (1d8, spear), multiple targets (1d6 spears per target in a 10'-by-10' area); Search DC 26; Disable Device DC 20; 31,200 gp
+Glyph of Warding (Blast); CR 6; spell; spell trigger; no reset; ; spell effect (glyph of warding [blast], 16th-level cleric, 8d8 sonic, DC 14 Reflex Save half damage), multiple targets (all targets within 5'); Search DC 28; Disable Device DC 28; 680 gp to hire NPC spellcaster.
+Lightning Bolt Trap; CR 6; magic device; proximity trigger (alarm); automatic reset; ; spell effect (lightning bolt, 10th-level wizard, 10d6 electricity, DC 14 Reflex Save half damage); Search DC 28; Disable Device DC 28; 15,000 gp, 1,200 xp
+Spiked Blocks from Ceiling; CR 6; mechanical; location trigger; repair reset; ; Atk +20 melee (6d6, spikes), multiple targets (all targets in a 10'-by-10' area); Search DC 24; Disable Device DC 20; 21,600 gp
+Spiked Pit Trap (100' deep); CR 6; mechanical; location trigger; manual reset; ; DC 20 Reflex Save avoids, 100' deep (10d6, fall), pit spikes (Atk +10 melee, 1d4 spikes per target for 1d4+5 each); Search DC 20; Disable Device DC 20; 6,000 gp
+Whirling Poison Blades; CR 6; mechanical; timed trigger; automatic reset; hidden lock bypass (Search DC 25, Open Lock DC 30); Atk +10 melee (1d4+4/19–20 plus poison, dagger), poison (purple worm poison, DC 24 Fortitude save resists, 1d6 Str/2d6 Str), multiple targets (one target in each of three preselected 5' squares); Search DC 20; Disable Device DC 20; 30,200 gp
+Wide-Mouth Pit Trap; CR 6; mechanical; location trigger; manual reset; ; DC 25 Reflex Save avoids, 40' deep (4d6, fall), multiple targets (all targets within a 10'-by-10' area); Search DC 26; Disable Device DC 25; 28,200 gp
+Wyvern Arrow Trap; CR 6; mechanical; proximity trigger; manual reset; ; Atk +14 ranged (1d8 plus poison, arrow), poison (wyvern poison, DC 17 Fortitude save resists, 2d6 Con/2d6 Con); Search DC 20; Disable Device DC 16; 17,400 gp
+
+: Level 7
+Acid Fog Trap; CR 7; magic device; proximity trigger (alarm); automatic reset; ; spell effect (acid fog, 11th-level wizard, 2d6/round acid for 11 rounds); Search DC 31; Disable Device DC 31; 33,000 gp, 2,640 xp
+Blade Barrier Trap; CR 7; magic device; proximity trigger (alarm); automatic reset; ; spell effect (blade barrier, 11th-level cleric, 11d6 slashing, DC 19 Reflex Save half damage); Search DC 31; Disable Device DC 31; 33,000 gp, 2,640 xp
+Burnt Othur Vapor Trap; CR 7; mechanical; location trigger; repair reset; ; gas, multiple targets (all targets in a 10'-by-10' room), never miss, onset delay (3 rounds), poison (burnt othur fumes, DC 18 Fortitude save resists, 1 Con drain/3d6 Con); Search DC 21; Disable Device DC 21; 17,500 gp
+Chain Lightning Trap; CR 7; magic device; proximity trigger (alarm); automatic reset; ; spell effect (chain lightning, 11th-level wizard, 11d6 electricity to target nearest center of trigger area plus 5d6 electricity to each of up to eleven secondary targets, DC 19 Reflex Save half damage); Search DC 31; Disable Device DC 31; 33,000 gp, 2,640 xp
+Black Tentacles Trap; CR 7; magic device; proximity trigger (alarm); no reset; ; spell effect (black tentacles, 7th-level wizard, 1d4+7 tentacles, Atk +7 melee [1d6+4, tentacle]), multiple targets (up to six tentacles per target in each of two adjacent 5' squares); Search DC 29; Disable Device DC 29; 1,400 gp, 112 xp
+Fusillade of Greenblood Oil Darts; CR 7; mechanical; location trigger; manual reset; ; Atk +18 ranged (1d4+1 plus poison, dart), poison (greenblood oil, DC 13 Fortitude save resists, 1 Con/ 1d2 Con), multiple targets (1d8 darts per target in a 10'-by-10' area); Search DC 25; Disable Device DC 25; 33,000 gp
+Lock Covered in Dragon Bile; CR 7; mechanical; touch trigger (attached); no reset; ; poison (dragon bile, DC 26 Fortitude save resists, 3d6 Str/0); Search DC 27; Disable Device DC 16; 11,300 gp
+Summon Monster VI Trap; CR 7; magic device; proximity trigger (alarm); no reset; ; spell effect (summon monster VI, 11th-level wizard); Search DC 31; Disable Device DC 31; 3,300 gp, 264 xp
+Water-Filled Room; CR 7; mechanical; location trigger; manual reset; ; multiple targets (all targets in a 10'-by-10' room), never miss, onset delay (3 rounds), water; Search DC 20; Disable Device DC 25; 21,000 gp
+Well-Camouflaged Pit Trap; CR 7; mechanical; location trigger; repair reset; ; DC 25 Reflex Save avoids, 70' deep (7d6, fall), multiple targets (first target in each of two adjacent 5' squares); Search DC 27; Disable Device DC 18; 24,500 gp
+
+: Level 8
+Deathblade Wall Scythe; CR 8; mechanical; touch trigger; manual reset; ; Atk +16 melee (2d4+8 plus poison, scythe), poison (deathblade, DC 20 Fortitude save resists, 1d6 Con/2d6 Con); Search DC 24; Disable Device DC 19; 31,400 gp
+Destruction Trap; CR 8; magic device; touch trigger (alarm); automatic reset; ; spell effect (destruction, 13th-level cleric, DC 20 Fortitude save for 10d6 damage); Search DC 32; Disable Device DC 32; 45,500 gp, 3,640 xp
+Earthquake Trap; CR 8; magic device; proximity trigger (alarm); automatic reset; ; spell effect (earthquake, 13th-level cleric, 65' radius, DC 15 or 20 Reflex Save, depending on terrain); Search DC 32; Disable Device DC 32; 45,500 gp, 3,640 xp
+Insanity Mist Vapor Trap; CR 8; mechanical; location trigger; repair reset; ; gas, never miss, onset delay (1 round), poison (insanity mist, DC 15 Fortitude save resists, 1d4 Wis/2d6 Wis), multiple targets (all targets in a 10'-by-10' room); Search DC 25; Disable Device DC 20; 23,900 gp
+Acid Arrow Trap; CR 8; magic device; visual trigger (true seeing); automatic reset; ; multiple traps (two simultaneous acid arrow traps), Atk +9 ranged touch and +9 ranged touch, spell effect (acid arrow, 18th-level wizard, 2d4 acid damage for 7 rounds); Search DC 27; Disable Device DC 27; 83,500 gp, 4,680 xp; Note: This trap is really two CR 6 acid arrow traps that fire simultaneously, using the same trigger and reset.
+Power Word Stun Trap; CR 8; magic device; touch trigger; no reset; ; spell effect (power word stun, 13th-level wizard); Search DC 32; Disable Device DC 32; 4,550 gp, 364 xp
+Prismatic Spray Trap; CR 8; magic device; proximity trigger (alarm); automatic reset; ; spell effect (prismatic spray, 13th-level wizard, DC 20 Reflex, Fortitude, or Will save]], depending on effect); Search DC 32; Disable Device DC 32; 45,500 gp, 3,640 xp
+Reverse Gravity Trap; CR 8; magic device; proximity trigger (alarm, 10' area); automatic reset; ; spell effect (reverse gravity, 13th-level wizard, 6d6 fall [upon hitting the ceiling of the 60'- high room], then 6d6 fall [upon falling 60' to the floor when the spell ends], DC 20 Reflex Save avoids damage); Search DC 32; Disable Device DC 32; 45,500 gp, 3,640 xp
+Well-Camouflaged Pit Trap; CR 8; mechanical; location trigger; repair reset; ; DC 20 Reflex Save avoids, 100' deep (10d6, fall); Search DC 27; Disable Device DC 18; 16,000 gp
+Word of Chaos Trap; CR 8; magic device; proximity trigger (detect law); automatic reset; ; spell effect (word of chaos, 13th-level cleric); Search DC 32; Disable Device DC 32; 46,000 gp, 3,680 xp
+
+: Level 9
+Drawer Handle Smeared with Contact Poison; CR 9; mechanical; touch trigger (attached); manual reset; ; poison (black lotus extract, DC 20 Fortitude save resists, 3d6 Con/3d6 Con); Search DC 18; Disable Device DC 26; 21,600 gp
+Dropping Ceiling; CR 9; mechanical; location trigger; repair reset; ; ceiling moves down (12d6, crush), multiple targets (all targets in a 10'-by-10' room), never miss, onset delay (1 round); Search DC 20; Disable Device DC 16; 12,600 gp
+Incendiary Cloud Trap; CR 9; magic device; proximity trigger (alarm); automatic reset; ; spell effect (incendiary cloud, 15th-level wizard, 4d6/round for 15 rounds, DC 22 Reflex Save half damage); Search DC 33; Disable Device DC 33; 60,000 gp, 4,800 xp
+Wide-Mouth Pit Trap; CR 9; mechanical; location trigger; manual reset; ; DC 25 Reflex Save avoids, 100' deep (10d6, fall), multiple targets (all targets within a 10'-by-10' area); Search DC 25; Disable Device DC 25; 40,500 gp
+Wide-Mouth Spiked Pit with Poisoned Spikes; CR 9; mechanical; location trigger; manual reset; hidden lock bypass (Search DC 25, Open Lock DC 30); DC 20 Reflex Save avoids, 70' deep (7d6, fall), multiple targets (all targets within a 10'-by-10' area), pit spikes (Atk +10 melee, 1d4 spikes per target for 1d4+5 plus poison each), poison (giant wasp poison, DC 14 Fortitude save resists, 1d6 Dex/1d6 Dex); Search DC 20; Disable Device DC 20; 11,910 gp
+
+: Level 10
+Crushing Room; CR 10; mechanical; location trigger; automatic reset; ; walls move together (16d6, crush), multiple targets (all targets in a 10'-by-10' room), never miss, onset delay (2 rounds); Search DC 22; Disable Device DC 20; 29,000 gp
+Crushing Wall Trap; CR 10; mechanical; location trigger; automatic reset; ; no attack roll required (18d6, crush); Search DC 20; Disable Device DC 25; 25,000 gp
+Energy Drain Trap; CR 10; magic device; visual trigger (true seeing); automatic reset; ; Atk +8 ranged touch, spell effect (energy drain, 17th-level wizard, 2d4 negative levels for 24 hours, DC 23 Fortitude save negates); Search DC 34; Disable Device DC 34; 124,000 gp, 7,920 xp
+Forcecage and Summon Monster VII trap; CR 10; magic device; proximity trigger (alarm); automatic reset; ; multiple traps (one forcecage trap and one summon monster VII trap that summons a hamatula), spell effect (forcecage, 13th-level wizard), spell effect (summon monster VII, 13th-level wizard, hamatula); Search DC 32; Disable Device DC 32; 241,000 gp, 7,280 xp; Note: This trap is really one CR 8 trap that creates a forcecage and a second CR 8 trap that summons a hamatula in the same area. If both succeed, the hamatula appears inside the forcecage. These effects are independent of each other.
+Poisoned Spiked Pit Trap; CR 10; mechanical; location trigger; manual reset; hidden lock bypass (Search DC 25, Open Lock DC 30); DC 20 Reflex Save avoids, 50' deep (5d6, fall), multiple targets (first target in each of two adjacent 5' squares), pit spikes (Atk +10 melee, 1d4 spikes per target for 1d4+5 plus poison each), poison (purple worm poison, DC 24 Fortitude save resists, 1d6 Str/2d6 Str); Search DC 16; Disable Device DC 25; 19,700 gp
+Wail of the Banshee Trap; CR 10; magic device; proximity trigger (alarm); automatic reset; ; spell effect (wail of the banshee, 17th-level wizard, DC 23 Fortitude save negates), multiple targets (up to 17 creatures); Search DC 34; Disable Device DC 34; 76,500 gp, 6,120 xp
+
+===
+
+teleport; The PCs hear growling in the next room (magical effect). Through the door is a long, darkened (but not completely dark) hallway that the PCs are unable to see the other side of. Eventually the PCs find that the hallway just goes on and on and on and on and on...  This trap is actually a teleportation trap. When the PCs get so far down a long hall, let's say 2/3 of the way through, they are teleported back to about the 1/3 mark of the hall. This is a good way to kill time to wear out buff spells that the PCs will have cast before entering the hall and wasted.  If the PCs see that they are looping back with Search checks or by having one person scout ahead and come up from behind his allies, then the PCs can avoid the teleportation effect by making an Escape Artist check (aided by Balance if they have 5+ ranks) to slide against the wall around the teleport field (it is 3 feet away from both walls).
+pit, pit has two flaps over it first one has its pivot at the near end and is 10 feet long . Second flap has its pivot half way along its length and is also 10 feet long . A spring loaded prop supports the first flap ( by flap i mean a foot or two thick section ) and does not collapse until 200 lbs is at the far end of it - usually this is the fighter - it then swings down and thanks to a lip at the bottom edge the other flap now swings downwards as well . The theif , who is usually very light goes across and pronounces that all is well so then the rest of the party follows . When the big heavy fighter in all his heavy armour crosses he sets off the trap , which would be a reflex save - not exactly a fighters forte - and drops into the very deep pit . Other PC's after hearing from the rogue that all is clear would probably be close behind . Anyone trying to jump backwards has a long way to go , anyone trying to jump forward has a 5 foot wall in front of them now . For a really nasty touch make the force of the PC's hitting the pit floor the driver for some gears to close the flaps
+illusion; a set of pillars is over a 250 foot hole in the ground. with spikes at the bottom. comved in knock out poisen. and ebola... well not really... but they're really dangerous spikes...  The pillars are 1 foot apart. and you enter a room with the tops of the pillars showing. when you jump on the first pillar it's all good. second pillar is an illusion. making you fall rite through it. so is the 4th, and 7th pillar.
+pit; The PCs have to choose from (# of PCs +1) ropes to swing across a pit. All of the ropes appear sturdy, but only one will not break when somebody swings on it.  Or more ropes are sturdy, but they ring bells to alert monsters in the room whose door is across the pit.
+conveyer belt
+
+1: You’re pulling my chain...
+
+The PC’s get to the end of a hall, and come upon a chain dangling from a hole in the ceiling and a smooth stone slab door. Written on the door is the message “A test of Strength Lies Beyond”. If your PC’s are smart, they will make it so their heavy hitters and fighters will be the first in the room for what lies ahead. The chain obviously opens the door, simply pulling down on it with a Strength Check of about 12 will open the door quite easily. Whoever grasps the chain will feel as though the metal links are wet.
+When the chain is yoinked, the door is raised and the fighters rush in, ready for battle, but find a nearly empty room. The room is 100' long, and about 50' wide, and completely dark. There is a small step down through the threshold, leaving everyone standing in shin deep water. About thirty feet away, hanging from the ceiling, about five feet above the water, are two, fat, parallel metal bars, arcs of lightning bounce back and forth between them. 
+The PC’s will now hear a sickening, wooden crack. That was the ancient block and tackle system that allowed for such an easy Strength Check to lift a heavy stone door and two metal electrodes bursting into hundreds of pieces. The Strength Check to keep the door open and the electrodes in the air is now about 20 or higher. It should be noted that it is at about this point the PC holding the chain realizes his hands have been Sovereign Glued to the chain, and he cant let go. There are a few busted pillar pieces laying around inside the room the others could try to seek refuge on, but they would only allow one person to stay on. They could try to push these under the electrodes to keep them from breeching the water, but they weight about a ton a piece.
+Another PC may go back through the door and help the other keep the chain pulled so that the electrodes and the door don’t plunge, but they too, will become glued to the chain.
+If all else fails, and the PC holding the chain cannot keep the chain pulled down, all in the room are now trapped and will be electrocuted for 5d6 damage (or more >D) for every round the electrodes are in the water.
+The trick is that at the end of the room sits a small table, and on it sits a tube of Universal Solvent with enough for one application. If the person can make it back to the door in time, they can fix the PC right up, unless of course, there are now two holding on to it.
+Rather than just being a jerk, it might be a good idea to put a vast treasure in the room, give the PC’s reason to continue risking the chance of going back inside time after time.
+If another PC is glues to the chain, it might be an entire side quest in itself to find a way to get him unstuck.
+
+
+
+2: Run for Your Life...
+
+The PC’s appear to step through a door in the middle of a very long hallway. There is a door to the left and a wall with spikes at the other end. If they venture out, they will note that the floor appears to made out of rubber. When the last person steps out onto the hallway, the party hears a low rumble then a whining noise. The floor suddenly begins to move towards the spiked wall. The PC's are basically on a large treadmill that begins pulling them
+
+>------------------------|--|---------------------|----| 200' long   
+>------------------------------------------------------| Door 
+>-------------------------------------------------|----| 10' wide
+
+towards danger. If thePC’s make a run for itthey will have to makea Balance check of 15 to ensure they stay on , their feet while running on the conveyer belt. If they fail, they fall and zoom towards the spiked wall at about 50 feet a round and must make a Balance check of 15 just to stand back up. They should also realize that though they maybe able to move at 4x their regular speed, they only move a few feet every round. The last ten feet of the hall towards the left is stone, and the PC’s must make a Jump check of 14 to make it onto the stone floor. Once there, there is a switch in the wall. If the players assume it is a stop switch, they are wrong.
+Throwing the switch merely reverses the direction of the treadmill. If any are unfortunate enough to hit the spikes, they take 3d8 piercing damage, an evilly aligned DM might make them diseased or poisoned. They will remain on the spike and take an additional 1d8 damage every round until someone throws the switch. When that occurs, the PC’s remaining must make a Balance check of 30 or fall to the ground as they are suddenly pitched forward, and eventually shot off the treadmill. The conveyer will not actually stop until everyone is off. PC’s on the treadmill being hurled into the PC’s on the stone floor near the door will end up doing lots of bludgeoning damage to each other and probably break through the door too. An evil aligned DM might put a long, steep staircase on the other side of the door, or a room full of Orcs or Bugbears in the middle of evening chow.
+
+
+
+3. Chimney Sweep...
+
+The players come to a room with what looks like a chimney, which is in fact a tunnel leading up. It is about a 200 foot climb, but the chimney is studded with smooth stones for many foot and hand holds. The tunnel is narrow, so the players will have to go one at a time up the chimney. About halfway up, there is a trigger stone. Whoever trips the stone will afterwards be awarded a Concentration check of 20 to remember what the stone felt like. Rough, and sharp.
+The trigger stone releases a spiked weight that is in place at the very top of the chimney, and causes it to fall at an alarming speed. Faster than the PC’s can climb down, and they will probably find that just letting go and falling is the fastest way down. If the players make a successful jump check, the first ten feet of the fall go by with no damage, otherwise, every other ten feet they fall is 1d6 worth of gravity damage. If they are hit by the weight, they take 4d8 piercing damage, and another 1d8 bludgeoning from the weight itself, not to mention they weight will knock them free from the tunnel, and they take whatever falling damage is left. If there are multiple people in the tunnel, it is likely that one falling will cause a chain reaction to cause a massive pile up at the bottom of the chimney.
+The weight will stop with a jerk about 10 feet from the bottom of the tunnel, and then slowly crank back up to its usual position as the trap resets itself. Every player has about a 50% chance of triggering the trap, but if the person who tripped it can remember what the trigger stone felt like, and divulges this info to the rest of the party, that percentage drops to about 5%.
+Even if the PC’s think they can scramble up the tunnel while the trap is resetting itself are sorely mistaken, for if the trigger is tripped, no matter where the weight is, it will fall, and then start back up.
+
+
+4. People in glass houses...
+
+The Adventurers enter a round room about 35 feet or so in diameter. The room is filled with sand and there is nothing too special about it, except that the door leading out of the room is heavy steel with a wickedly tough lock that looks as though it needs a key. The ceiling, about 40 feet above, appears to be made of glass, and sitting on this glass sits a vast quantity of gold, or platinum, depending on how good a mood you’re in. Any yahoo will figure out the easiest way to get the cash down is to throw something at it like a rock or a boot. Even a bolt from a crossbow will shatter the glass. All must make a reflex save of 12 to negate falling glass damage. Once that’s done, it’s like Cinco de Mayo when the pinata’s meet its fate.
+However...
+The glass separated the room from about another five feet of altitude. Contained in the portion above the glass was a poisonous gas that begins to seep down to the players in about 1d2 rounds. Hopefully someone’s been working on the door, because the look is going to take about a DC of 45 or 50 to open, or about five rounds of continuous 20 to 25's to open the sucker. The poison takes a Fort save of 18 every round to keep from taking 1d10 Wis and/or Int damage. The door you came through can let you out, but the gas will keep coming out until you’re outside. The only way to separate yourself from it is to get the hell through the sealing steel door. If your players lose this and all pass out, maybe you should have them all wake up a few days later in nothing but their skives. Maybe that will teach them to secure a way out before attempting a get-rich-quick scheme in the room. If you’re nice, maybe you can put the key to the door in with the gold or platinum that has fallen. Search check of 16 or so. Remember, if you’re taking 1d10 Wis and Int damage every round, it might start getting harder and harder to find that key.
+
+5. Into the Meat Grinder
+
+This is more of a trap to freak your PC’s out. Somewhere deep in a sadistic bastard’s dungeon, 
+make it so that the only way to continue is through a long, sharp angled chute. The room it sits in is about twenty by twenty, and the lip of the chute sticks about three or feet up into the air in the center of the room, surrounded by sand bags.
+After two people have gone down, take that NPC that no one likes or you’ve been meaning to kill off and have him go next. The room the PC’s end up looks like the room they jumped down the chute in, the only difference is the chute is sticking out of a wall and not the floor. When the NPC hops down the others in the room hear a loud “ERRRRUM” and the NPC lands in the exit room in two halves length-wise. The PC’s will now freak out. The trick is that every third person that goes down causes a buzz saw to pop up in the middle of the slide about halfway down the chute. If the PC’s are smart, they will use the bags of sand to set the trigger off once they time it right.
+
+6. He...could...go...all...the...’SPLAT’
+
+
+This is more of a comical trap than anything that will cause damage. In a relatively short, narrow hallway, the floor is suddenly split by a five foot wide, ten foot across, and five foot deep pit. No problem. The first person who jumps across should have detected magic. About halfway across is an invisible wall. When the PC takes that running jump, he’ll hit that thing like a fly hitting a windshield, and then slowly slide down. The trick is to just climb down into the pit, walk under the wall, and climb up the other side. Hitting the wall with that running jump might cause 2d6 or so damage, but make it subdual, I mean, what are you, a jerk  . O-o
+
+7. Shredded PC
+
+This is a good sadistic trap to put in a fighting arena. The room should be relatively large, and have lots of levels for fighting, with lots of cauldrons of burning tar for light, and other stuff. Put some heavy hitting enemies in the room, like some ogres or trolls. Ever some-odd feet, there is a five by five foot shaft. Falling in, or getting knocked into, rather, is a new level of pain all together. After good forty foot drop, the tunnel takes a 45 degree slope, and has protrusions in the surface much like a cheese grater. After so many feet of this (5d6 or 5d8 worth of damage) the player takes another vertical spill and lands in a forty by forty by five foot deep vat of salt water. This should probably just deal subdual damage, but it is very sadistic non the less. The only way he’s getting out is climb back out the way he went.
+
+Trap Idea: Teleporting Door
+Location: Door/Walls
+Trigger Type: Magical
+Trigger: Closing the Door
+Effect Type: Magical
+Effect: This door has been enchanted so that whenever it is closed, it teleports to a different location within the dungeon, leaving behind a solid wall. The door may be set to teleport randomly, or follow a preset sequence through the dungeon. Whatever wall the teleporting door travels to will become a normal closed doorway, but will have reset upon arrival, ready to be sprung once again. Any marks or damage to the door will remain on the door when it is teleported, allowing canny PCs to keep track of the door.
+Detect magic on the door will reveal transmutation (teleportation) magic of moderate power. If the door follows a preset sequence through the dungeon, the affected walls will also reveal faint transmutation (teleportation) magic while the door is not present.
+The trap can be thwarted by simply preventing the door from closing or destroying the door itself. Of course, if the door is required to enter specific areas of the dungeon, either bonus areas or as part of a puzzle, alternative methods will need to be found to access these areas. Of course, there may be more than one teleporting door in the dungeon.
+
+Trap Name: Teleportation Maze
+Level: 3
+Role: Obstacle
+Type: Trap
+XP: 150
+Quick Description: Invisible glyphs on the floor teleport others to other glyphs in the encounter’s area.
+Full Description: Six glyphs (each of them numbered one through six) are each places invisibly in a square throughout the encounter area. When a target enters one of the glyphed square, it teleports to another randomly determined glyph.
+Perceptions DC: The glyph is invisible and cannot be seen by the naked eye.
+Additional Skills: Arcana
+Additional Skills DC: 20
+Additional Skills Success: The character notices the magical glyph
+Trigger: A character enters into a glyphed space.
+Action Type: Teleportation
+Attack Type: Immediate Interrupt
+Target: Creature in glyphed space
+Effect: The target teleports to a randomly determined glyph by rolling 1d6. Roll again if you roll the glyphed square the target entered.
+Countermeasures: A character who makes a successful Athletics check (DC 6 or DC 11 without a running start) can jump over the glyphed square.
+An adjacent character can disable the glyph with a DC 25 Thievery or Arcana check.
+
+Trap Name: Grease slide
+Level: 1
+Role: Obstacle/harmless
+Type: Trap
+XP: 100
+Quick Description:
+A harmless trap that disposes the target player, using a rope grease and a mechanical hidden ramp.
+Full Description:
+A simple trap that trips the player sending them sliding down a grease covered ramp that opens up in front of them and out a window into the waters of the nearby swamp. The ramp is build into the ground and only opens when the wire is tripped.
+Perceptions DC: 15
+Reflex save : 20
+Trigger: walk across wire
+Countermeasures:
+Disable the trap or step over the wire.
+
+Trap Idea: Deadly Corridor (naff name I know, I coudldn’t think of anything better).
+Setting: an entire corridor of any length. It should be straight, with one door at each end (false/locked doors could provide extra fun).
+Trigger: once the PCs enter the corridor, both doors lock tight.
+Effect: once the trap triggers, a pit in the centre of the corridor opens, filled with spikes/crushers/man-eating pudding, etc. The floor starts to move, conveyor-belt style, towards the centre from both sides. There is no part of the corridor, apart from the pit itself, which is not moving.
+The floor first moves at a swift walking pace. However, on the ceiling directly above the pit are three levers–two of them make the floor speed up, while the other (stuck/partly broken) slows it down. Pulling a lever multiple times compounds the effect, so you can pull the slow lever enough times to stop the floor.
+Prevention: the whole thing is mechanised, so there is no chance of magical detection. However, an observant player may notice before the door is shut that the floor is not entirely solid (either plates or a flexible mesh to allow for rotation), and a very good trap-finder could see the locking mechanism in the door.
+
+Trap Idea: Tipping Floor
+Level 10 Lurker – XP 500
+The party walks into a room with the other doorway on the opposite side and treasure in nooks on the walls to the left and right. What the players don’t know is that the floor is one big plate that hinges on the center walkway (from one door to the other), so that if anyone takes a step to either side, the floor will tip and they will fall into the pit below filled with whatever the DM chooses (spikes, Chulls, more dungeon, etc.).
+Perception
+DC 15: Notice the scrapes in the floor toward the sides of the room
+DC 25: Notice that the floor does not quite reach all the way to the wall on either side
+Insight
+DC 10: That treasure looks too easy to get to. There’s something fishy here
+Dungeoneering
+DC 15: The floor is not as thick as it appears; there is an empty space just below the room, but not everywhere
+DC 25: The masonry on the floor is fake. Well, it’s real stone, but it’s too thin, probably a facade over whatever the real floor is.
+Trigger: When there is a 50 lb. or greater difference in weight between one side and the other (discounting the 5 foot wide walkway in the center)
+Attack: standard•Area of effect + 10 vs. Reflex
+Hit: All creatures in the room fall. Creatures on the walkway or on the side with less weight may make an Acrobatics check (DC 25) to scramble into either doorway or an Athletics check (DC20) to grab hold of and hang onto the edge of the floor. Creatures on the heavy side do not have the opportunity to make these checks.
+Miss: The creature has evaded the trap, finding its way to one of the entrances to the room quick enough not to fall
+Countermeasure: Avoiding the treasure entirely, evenly distributing the weight by having similarly heavy party members on each side of the room, or preventing the floor from tipping (something large enough to go from floor to ceiling, immovable rods, etc.)
+
+
