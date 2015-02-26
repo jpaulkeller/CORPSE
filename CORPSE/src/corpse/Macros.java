@@ -114,7 +114,7 @@ public final class Macros
             resolvedToken = resolveVariables(token);
          
          if (resolvedToken.equals(token))
-            resolvedToken = resolvePlurals(token);
+            resolvedToken = resolveExtensions(token);
          if (resolvedToken.equals(token))
             resolvedToken = resolveFormatter(token);
          if (resolvedToken.equals(token))
@@ -216,31 +216,73 @@ public final class Macros
       return resolvedToken;
    }
 
-   private static String resolvePlurals(final String token)
+   private static String resolveExtensions(final String token)
    {
       String resolvedToken = token;
 
-      Matcher m = Constants.PLURAL_TOKEN.matcher(resolvedToken);
+      Matcher m = Constants.EXTEND_TOKEN.matcher(resolvedToken);
       if (m.matches())
       {
-         String text = m.group(1);
-         String upper = text.toUpperCase();
-         String replacement = Constants.PLURALS.get(upper);
-
-         if (replacement != null) // found the appropriate plural form
-            resolvedToken = m.replaceFirst(Matcher.quoteReplacement(replacement));
-         else if (upper.endsWith("S") || upper.endsWith("X") || upper.endsWith("SH") || upper.endsWith("CH"))
-            resolvedToken = text + "es";
-         else if (upper.endsWith("Y") && !upper.endsWith("EY"))
-            resolvedToken = text.substring(0, text.length() - 1) + "ies"; // strip Y, add IES
-         else if (upper.endsWith("MAN"))
-            resolvedToken = text.substring(0, text.length() - 3) + "men"; // strip MAN, add MEN
-         else
-            resolvedToken = text + "s";
+         String extension = m.group(2);
+         if (extension == null || extension.equals("s"))
+            resolvedToken = convertToPlural(m);
+         else if (extension.equals("er"))
+            resolvedToken = convertToActor(m);
+         else if (extension.equals("ing"))
+            resolvedToken = convertToGerund(m);
       }
 
       if (DEBUG && !token.equals(resolvedToken))
-         System.out.println("  resolvePlurals: [" + token + "] = [" + resolvedToken + "]");
+         System.out.println("  resolveExtensions: [" + token + "] = [" + resolvedToken + "]");
+      return resolvedToken;
+   }
+
+   private static String convertToPlural(final Matcher m)
+   {
+      String resolvedToken;
+      String text = m.group(1);
+      String upper = text.toUpperCase();
+      String replacement = Constants.PLURALS.get(upper);
+
+      if (replacement != null) // found the appropriate plural form
+         resolvedToken = m.replaceFirst(Matcher.quoteReplacement(replacement));
+      else if (upper.endsWith("S") || upper.endsWith("X") || upper.endsWith("Z") || upper.endsWith("SH") || upper.endsWith("CH"))
+         resolvedToken = text + "es";
+      else if (upper.endsWith("Y") && !upper.matches(".+[AEO]Y"))
+         resolvedToken = text.substring(0, text.length() - 1) + "ies"; // strip Y, add IES
+      else if (upper.endsWith("MAN"))
+         resolvedToken = text.substring(0, text.length() - 3) + "men"; // strip MAN, add MEN
+      else
+         resolvedToken = text + "s";
+      
+      return resolvedToken;
+   }
+
+   private static String convertToActor(final Matcher m)
+   {
+      String resolvedToken;
+      String text = m.group(1);
+      String upper = text.toUpperCase();
+
+      if (upper.endsWith("E"))
+         resolvedToken = text + "r";
+      else
+         resolvedToken = text + "er";
+      
+      return resolvedToken;
+   }
+
+   private static String convertToGerund(final Matcher m)
+   {
+      String resolvedToken;
+      String text = m.group(1);
+      String upper = text.toUpperCase();
+
+      if (upper.endsWith("E"))
+         resolvedToken = text.substring(0, text.length() - 1) + "ing"; // strip E, add ING
+      else
+         resolvedToken = text + "ing";
+      
       return resolvedToken;
    }
 
@@ -428,11 +470,8 @@ public final class Macros
          xrefFil = m.group(3);
          xrefTbl = tableOrScriptName.toLowerCase(); // ignore table/script case
          
-         /*
-         String caseSample = (xrefSub != null ? xrefSub : "") + (xrefCol != null ? xrefCol : "");
-         if (!caseSample.isEmpty())
-            xrefTbl = matchCase(caseSample, xrefTbl);
-         */
+         if (xrefCol == null) // support default columns
+            xrefCol = xrefTbl;
       }
       else if ((m = Constants.TABLE_XREF.matcher(resolved)).matches())
       {
@@ -466,7 +505,7 @@ public final class Macros
          if (xrefFil == null && filter != null)
             xrefFil = filter;
 
-         // System.out.println("Macros [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
+         System.out.println("Macros [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
 
          // avoid infinite loop references
          if (TOKEN_STACK.contains(token))
@@ -669,13 +708,16 @@ public final class Macros
       Macros.resolve(null, "{Appearance} {Herb{!OneWithSame}}", null);
       Macros.resolve(null, "{Appearance} {Herb{!MaybeSameFirst}}", null);
       Macros.resolve(null, "{Appearance} {Herb{{!OneWithSame|!OneWord}}}", null);
+      Macros.resolve(null, "{Appearance} {Humanoid{!OneMaybeSame}}", null);
+      Macros.resolve(null, "{Humanoid#T[A-Z]+$#}", null);
+      Macros.resolve(null, "{Weapon}", null);
+      Macros.resolve("Meat", "{Meat:Game#.*t.*#}", null);
       
       System.out.println("Aa: " + Macros.matchCase("Aa", "cap each word's first letter in the phrase")); 
       System.out.println("AA: " + Macros.matchCase("AA", "Leave ALL words in the phrase alone"));
       System.out.println("aa: " + Macros.matchCase("aa", "Lower Case ALL words in the phrase"));
       */
       
-      // Macros.resolve(null, "{Appearance} {Humanoid{!OneMaybeSame}}", null);
-      Macros.resolve(null, "{Humanoid#T[A-Z]+$#}", null);
+      Macros.resolve(null, "{Name}", null);
    }
 }

@@ -286,7 +286,7 @@ public final class Script
       Matcher m;
       while ((m = Constants.QUERY.matcher(resolved)).find())
       {
-         String title = m.group(1);
+         String title = "Script: " + getName();
          Object message = m.group(1);
          String defaultValue = m.group(2);
          

@@ -18,11 +18,11 @@ public final class Constants
    static final String ALL_CHAR      = "!"; // use the full row or table
    static final String COLUMN_CHAR   = ".";
    static final String COMMENT_CHAR  = "/";
+   static final String EXTEND_CHAR   = "+";
    static final String FILTER_CHAR   = "#";
    static final String INCLUDE_CHAR  = "+";
    static final String ONE_OF_CHAR_1 = "|";
    static final String ONE_OF_CHAR_2 = "/";
-   static final String PLURAL_CHAR   = "+";
    static final String SUBSET_CHAR   = ":";
    static final String EOF           = "===";
    static final String WEIGHT        = "x ";
@@ -115,13 +115,14 @@ public final class Constants
    }
 
    private static final Pattern PROPERTY = Pattern.compile("([^=]+)=(.+)"); // noun=nouns
-   static final Pattern PLURAL_TOKEN = 
-      Pattern.compile("\\{(.+)" + Pattern.quote(Constants.PLURAL_CHAR) + "\\}"); // {thing+} => things
    static final SortedMap<String, String> PLURALS = new TreeMap<String, String>();
    static
    {
       loadPlurals();
    }
+   
+   static final Pattern EXTEND_TOKEN = // {thing+} => things; {verb+er}, {verb+ing}
+      Pattern.compile("\\{(.+)" + Pattern.quote(Constants.EXTEND_CHAR) + "(.+)?\\}");
    
    private Constants()
    {
