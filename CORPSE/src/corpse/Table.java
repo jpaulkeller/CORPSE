@@ -34,6 +34,7 @@ public class Table extends ArrayList<String>
    protected static final SortedMap<String, Table> TABLES = new TreeMap<String, Table>();
 
    protected String tableName;
+   protected String tableKey; // a unique key that includes the table name and filter (if any)
    protected File file;
    protected Pattern filter;
 
@@ -77,10 +78,11 @@ public class Table extends ArrayList<String>
    private Table(final String path)
    {
       file = new File(path);
-      tableName = FileUtils.getNameWithoutSuffix(file).toUpperCase();
-      Table table = TABLES.get(tableName);
+      tableKey = FileUtils.getNameWithoutSuffix(file).toUpperCase();
+      tableName = tableKey;
+      Table table = TABLES.get(tableKey);
       if (table == null)
-         TABLES.put(tableName, this);
+         TABLES.put(tableKey, this);
       else
          System.err.println("Ignoring duplicate table name: " + path + " (already loaded: " + table.getFile() + ")");
    }
@@ -90,15 +92,16 @@ public class Table extends ArrayList<String>
    {
       Table unfiltered = Table.getTable(name);
       file = new File(unfiltered.file.getAbsolutePath());
-      tableName = name + Constants.FILTER_CHAR + filterRegex + Constants.FILTER_CHAR;
+      tableName = name;
+      tableKey = name + Constants.FILTER_CHAR + filterRegex + Constants.FILTER_CHAR;
       filter = CORPSE.safeCompile("Invalid subset filter", filterRegex);
       importTable();
-      TABLES.put(tableName, this);
+      TABLES.put(tableKey, this);
    }
 
    public String getName()
    {
-      return tableName;
+      return tableKey;
    }
 
    public File getFile()
@@ -113,7 +116,7 @@ public class Table extends ArrayList<String>
       Matcher m = Constants.TOKEN.matcher(resolved);
       if (m.find())
       {
-         resolved = Macros.resolve(getName(), entry, filter); // recurse to support embedded tokens
+         resolved = Macros.resolve(tableName, entry, filter); // recurse to support embedded tokens
          while ((m = Constants.TOKEN.matcher(resolved)).find())
          {
             System.err.println(file + " unsupported token: " + m.group(0));
@@ -146,7 +149,7 @@ public class Table extends ArrayList<String>
       if (subsetName != null)
       {
          subset = subsets.get(subsetName.toUpperCase());
-         if (subset == null && !subsetName.equalsIgnoreCase(tableName))
+         if (subset == null && !subsetName.equalsIgnoreCase(tableKey))
             System.err.println("Missing " + file + " subset: [" + subsetName + "]");
       }
       return subset;
@@ -164,7 +167,7 @@ public class Table extends ArrayList<String>
       {
          column = columns.get(columnName.toUpperCase());
          if (column == null && !columnName.equalsIgnoreCase("ALL") && 
-             !columnName.equalsIgnoreCase(tableName) && 
+             !columnName.equalsIgnoreCase(tableKey) && 
              !columnName.equals("_")) // hack for composite columns 
             // && !Column.isComposite(this, columnName)) // TODO infinite loop
          {
@@ -295,7 +298,7 @@ public class Table extends ArrayList<String>
          String suffix = m.group(m.groupCount());
 
          if (Macros.DEBUG) 
-            System.out.println("INCLUDED: " + tableRef + " into " + tableName);
+            System.out.println("INCLUDED: " + tableRef + " into " + tableKey);
 
          addSubset(Subset.parseIncludedTableAsSubset(this, tableRef));
          
@@ -349,7 +352,7 @@ public class Table extends ArrayList<String>
          model.addColumn("Subset");
 
       if (columns.isEmpty()) // just one column; each line is the value
-         model.addColumn(tableName);
+         model.addColumn(tableKey);
       else
       {
          sorted.addAll(columns.values());
@@ -433,7 +436,7 @@ public class Table extends ArrayList<String>
    public String toString()
    {
       StringBuilder sb = new StringBuilder();
-      sb.append(tableName);
+      sb.append(tableKey);
       sb.append(" (" + file + ")");
       if (!columns.isEmpty())
          sb.append("\n  Columns: " + columns);

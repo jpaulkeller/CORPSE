@@ -53,7 +53,8 @@ public final class SubTable extends Table
       // System.out.println("SubTable [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
 
       unfiltered = Table.getTable(xrefTbl);
-      tableName = token;
+      tableKey = token;
+      tableName = xrefTbl;
       file = new File(unfiltered.file.getAbsolutePath());
       if (xrefSub != null)
          subset = unfiltered.getSubset(xrefSub);
@@ -64,7 +65,7 @@ public final class SubTable extends Table
 
       count = 0;
       importTable();
-      TABLES.put(tableName, this);
+      TABLES.put(tableKey, this);
    }
 
    @Override
