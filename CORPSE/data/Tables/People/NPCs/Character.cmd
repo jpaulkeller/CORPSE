@@ -79,6 +79,7 @@
     {50%<li>Injury: {injury}}
     {50%<li>Neurosis: {neurosis}}
     {20%<li>Phobia: {phobia!}}
+    {20%<li>Philia: {philia!}}
   </ul>
  
   <li>Personality:

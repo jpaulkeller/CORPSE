@@ -1,3 +1,6 @@
+: Quasi = Positive + Negative
+: Any = Basic + Para + Quasi + D20 + 4E
+
 : Element
 4x {:basic}
 void
@@ -25,8 +28,6 @@ ash
 dust
 salt
 vacuum
-
-: Quasi = Positive + Negative
 
 : Energy
 positive energy

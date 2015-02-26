@@ -4,8 +4,8 @@
 
 : Edged = .*slashing.*
 : Blunt = .*bludgeoning.*
-: Sword = .*piercing or slashing.* 
-: Axe   = .*slashing.* 
+: Sword = .*piercing or slashing.*
+: Axe   = .*slashing.*
 
 : Weapon
 {:melee}
@@ -85,7 +85,7 @@ quarterstaff [5]             -           1d4/1d4      1d6/1d6      1d8/1d8      
 spear                        2gp         1d6          1d8          2d6              x3                20ft             6lb           piercing                  player's handbook
 
 : Simple Ranged
-heavy crossbow               50gp        1d8          1d10         2d8              19-20/x2          120ft            8lb           piercing                  player's handbook
+hunting bow                  20gp        1d5          1d6          1d10                               80 ft.           3lb.          piercing                  
 light crossbow               35gp        1d6          1d8          2d6              19-20/x2          80ft             4lb           piercing                  player's handbook
 dart                         5sp         1d3          1d4          1d6              x2                20ft             1/2lb         piercing                  player's handbook
 javelin                      1gp         1d4          1d6          1d8              x2                30ft             2lb           piercing                  player's handbook
@@ -129,6 +129,7 @@ ranseur [4]                  10 gp       1d6          2d4          2d6          
 scythe                       18 gp       1d6          2d4          2d6              ?4                ?                10lb.         piercing or slashing      player's handbook
 
 : Martial Ranged
+heavy crossbow               50gp        1d8          1d10         2d8              19-20/x2          120ft            8lb           piercing                  player's handbook
 longbow                      75 gp       1d6          1d8          2d6              ?3                100 ft.          3lb.          piercing                  player's handbook
 longbow, composite           100 gp      1d6          1d8          2d6              ?3                110 ft.          3lb.          piercing                  player's handbook
 shortbow                     30 gp       1d4          1d6          1d8              ?3                60 ft.           2lb.          piercing                  player's handbook

@@ -16,11 +16,23 @@ quiver
 retort
 sack
 skeel
+trunk
 tube
 urn
 {fabric} bag
 {fabric} pack
 {fabric} pouch
+{:liquid}
+
+: furnishing
+armoire
+bookcase
+cabinet
+chest of drawers
+desk
+display case
+hamper
+wardrobe
 
 : Liquid
 amphora
@@ -46,6 +58,8 @@ pot
 puncheon
 skeel
 tankard
+tub
+urn
 {70%?glass:{70%?{metal}:ceramic}} vase
 {made of:hard} bowl
 {made of:hard} bucket

@@ -1,0 +1,143 @@
+: Consequence
+{:very bad}
+3x {:bad}
+5x {:neutral}
+3x {:good}
+{:very good}
+has a random effect each time (1:{:very bad}; 2:{:bad}; 3:{:neutral}; 4:no effect; 5: {:good}; 6:{:very good})
+
+: In Dungeon
+4x {:consequence}
+{:dungeon}
+{:revelation}
+
+: revelation
+reveals a drawing{75% {:drawing}}
+reveals an inscription{75% {:inscription}}
+reveals a hidden compartment{75% {:contents}}
+
+: drawing
+that appears to be a meaningless doodle 
+that appears to be a map of the vicinity
+that shows the location of nearby caches
+that shows the location of nearby hidden passages
+that shows the location of nearby traps
+ 
+: inscription
+that appears to be gibberish
+that is a command which activates an item in the dungeon
+that is a list of "call and response" passwords
+that is a password in {humanoid:language}
+which seems to be a formula for making a {potion} potion
+which seems to be a recipe for making a antidote to {poison}
+
+: contents
+containing a pouch of {{coin}+}{50% and {{coin}+}{50% and {{coin}+}}}
+containing a pouch of {{gem}+}{50% and {{gem}+}{50% and {{gem}+}}}
+containing a relic: the {relic}
+containing a scroll
+containing a {book}
+containing a {luxury:jewelery}
+containing a {magic item}
+containing a {metal:precious} key
+containing a {potion:loot}
+containing a {treasure}
+that appears to be empty
+
+: very bad
+causes insanity 
+causes instant death
+causes major damage (save at -{10})
+changes victim’s class
+changes victim’s languages known
+changes victim’s race
+gives the victim a permanent curse of losing items and treasure
+gives the victim a permanent curse, -1d6 to ability
+gives the victim a permanent curse, -2 to hit and damage
+gives the victim a permanent curse, attracts monsters at double the usual rate
+polymorphs the victim
+summons or releases a {beast} 
+summons or releases a {monstrosity}
+summons or releases {demon}
+
+: bad
+blinds the victim for {2d6} {{duration:short}+}
+causes a geas-like compulsion
+causes minor damage (save at -{5})
+causes Confusion
+causes Feeblemind
+causes {P:=phobia}{P.phobia} ({P.description}) for {2d6} {{duration:moderate}+}
+confines the victim
+confines the whole party
+curses one of the victim’s items
+deafens the victim for {2d6} {{duration:short}+}
+gives a cursed magic item
+gives a false clue
+gives misleading oracular advice
+gives the victim a disease ({disease}) 
+paralyzes the victim for {2d6} {{duration:short}+}
+poisons the victim ({symptom} which lasts for {10} {duration:moderate}s)
+puts the victim to sleep for {2d6} {{duration:moderate}+}
+slows the victim for {2d6} {{duration:moderate}+}
+strikes the victim mute for {2d6} {{duration:short}+}
+summons or releases a {monster}
+summons or releases a {mythical creature} 
+summons or releases a {undead}
+switches two of victim’s ability scores ({attribute} and {attribute{!different}})
+
+: neutral
+activates a trap in a different area
+casts {spell}
+causes the character to feel {degree} {mood} for {2d6} {{duration:short}+}
+enlarges victim’s size for {3d10} {{duration:short}+}
+reduces victim’s size for {3d10} {{duration:short}+}
+summons or releases a {fauna} 
+
+: good
+cures all diseases on the beneficiary
+gives a minor treasure 
+gives a temporary blessing to the beneficiary, +1 to hit, damage, save
+gives a temporary blessing to the party, +1 to hit, damage, save
+gives experience points
+gives oracular advice
+gives temporary protection from evil to the beneficiary
+gives temporary protection from evil to the party
+gives the beneficiary 2d6 temporary hit points
+heals one person (once a day)
+heals one person (one time only)
+heals the party (one time only)
+removes a curse from the beneficiary
+
+: very good
+enchants one of the beneficiary’s items
+gives +1 hp permanently 
+gives +1 permanent ability bonus
+gives a magic item
+gives a major treasure
+gives a permanent “mutant” power benefit
+resurrects a dead party member (one time only)
+
+: dungeon
+closes a passage {:where}
+closes an access way {:where}
+confines a hostile creature {:where}
+creates a hazardous environment in a different area
+deactivates a trap {:where}
+destroys a treasure {:where}
+gives a clue leading to a different adventure site (treasure map, etc)
+gives a clue to something {:where}
+neutralizes a hazardous environment in a different area
+opens a passage {:where}
+opens a way down {:where}
+opens a way up {:where}
+opens an portal {:where}
+provides a key object for use {:where}
+releases a hostile creature {:where}
+reveals a clue {:where}
+reveals a treasure {:where}
+sounds an alarm
+
+: where
+in this area
+nearby
+in a different area

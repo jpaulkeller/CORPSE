@@ -66,11 +66,3 @@ rusted {iron|steel}
 wrought iron
 wyrmscale
 {20%{charred|polished} }bone
-
-===
-
-{:Utility.WoodsHard}
-{:Utility.WoodsRare}
-{:Utility.StoneDecorative}
-{:Utility.WoodsSoft}
-burnished {:Utility.MetalSoft}

@@ -57,10 +57,10 @@ acidic ants attack (Swarm, AC 6, HP 12, D 1-6 acid sting)
 bees attack (Swarm, AC 4, HP 6, D 1 + Poison (does 2-16 damage, save for half))
 poison beetles attack (Swarm, AC 5, HP 10, D 1-6 acid spray)
 wasps attack (Swarm, AC 4, HP 8, D 1-4 + Poison (does 3-24 damage, save for half))
-poison centipedes attack (Swarm, AC 8, HP 12, D 1 + Poison (Save vs. paralyzation or be paralyzed for 2-8 turns))
-scorpions attack (Swarm, AC 6, HP 21, D 1-4 + Poison (Save vs. poison or die))
-a deadly spider attacks (AC 4, HP 4, D Poison (Save vs. Poison or die))
-a deadly viper attacks (AC 4, HP 6, D 1-4 + Poison (Save vs. Poison or die))
+poison centipedes attack (Swarm, AC 8, HP 12, D 1 + Poison (save vs. paralyzation or be paralyzed for 2-8 turns))
+scorpions attack (Swarm, AC 6, HP 21, D 1-4 + Poison (save vs. poison or die))
+a deadly spider attacks (AC 4, HP 4, D Poison (save vs. poison or die))
+a deadly viper attacks (AC 4, HP 6, D 1-4 + Poison (save vs. poison or die))
 
 
 : poison gas effect

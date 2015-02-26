@@ -1,0 +1,60 @@
+: Coin
+{75%{:origin} }coin made of {:material}, worth about {2d10}sp; the face {:design}, the obverse {:design}{10%; {:special}}
+
+: Origin
+ancient
+dwarven
+elvish
+foreign
+gnomish
+goblin
+orcish
+probably a {humanoid:uncommon}
+
+: Material
+17x {metal:precious}
+2x{:material uncommon}
+{:material rare}
+
+: Material Uncommon
+brass
+bronze
+ceramic
+iron
+ivory
+
+: Material Rare
+jade
+polished stone
+tin
+tortoise shell
+
+: Design
+has a proverb: {MOTTO}
+has strange symbols
+has {a rune|runes}
+is completely blank
+shows a {charge}
+shows a {fauna}
+shows a {monster}
+shows a {mythical creature}
+shows a {weapon}
+
+: Special
+a hole has been drilled through the center of the coin
+it appears to be ornamental
+it appears to counterfeit
+it has an outer ring made of {metal:precious}
+it might be more valuable to a collector
+it's an unusual shape ({square|rectangle|oval|hexagonal|octagonal})
+it's crudely made
+it's damaged
+it's dark with dried blood
+it's heavily scratched
+it's inlaid with {metal:precious}
+it's mostly illegible
+it's not a coin really, but a small ingot
+it's quite tarnished
+it's worn nearly smooth
+the edges is notched {number:plural} times
+the lip is grooved like a poker chip

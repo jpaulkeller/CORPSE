@@ -2,22 +2,22 @@
 /          Values from DRAGON Magazine #83, page 10.
 
 : Geology
-2x {Gem}
-4x {Metal}
-3x {Mineral}
-1x {Organic}
+2x {gem}
+4x {metal}
+3x {mineral}
+1x {organic}
 
 : Wood
-6x {Wood}
+6x {wood}
 
 : Man Made
-5x {Man Made}
+5x {man made}
 
 : Fabric
-{Fabric}
+{fabric}
 
 : Precious
-{Metal:Precious}
+{metal:precious}
 amber
 bone
 coral

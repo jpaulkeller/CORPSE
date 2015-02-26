@@ -2,8 +2,8 @@ acorn
 animal (small)
 arrowhead
 awl
-bandages
-beads
+bandage
+bead
 bell
 belt buckle
 book (small)
@@ -12,7 +12,7 @@ box (small {made of})
 brush
 buckle
 button
-caltrops
+caltrop
 candle
 chain
 chalk (powder)
@@ -26,12 +26,12 @@ coin pouch
 collar (animal)
 comb
 compass
-crampons
-darts
+crampon
+dart
 deck of cards
 dice
 doll
-drawing tools
+drawing tool
 earring
 egg
 feather
@@ -44,9 +44,9 @@ flint and steel
 food
 fork
 fossil
-fragment of a {equipment}
-gloves
-handkerchief (made of:fabric)
+fragment of a {equipment{!oneword}}
+glove
+handkerchief ({made of:fabric})
 hawk-lure
 holy symbol
 hoof pick
@@ -61,7 +61,7 @@ knife
 knitting needles
 knotted string
 leash
-lockpicks
+lockpick
 lodestone
 lute string
 magnifying glass
@@ -70,15 +70,15 @@ marble
 measuring cord
 mirror, small metal
 musical pipes
-nails
+nail
 needle
 perfume
-pins
+pin
 pipe
 piton
 pouch of {herb}
 quill
-rags
+rag
 ring
 scissors
 sealing wax
@@ -92,7 +92,7 @@ spike
 spoon
 stone
 string
-tacks
+tack
 talisman
 teabag
 thimble
@@ -100,10 +100,10 @@ thread
 tobacco pouch
 tongs
 tooth
-toothpicks
+toothpick
 toy
 twine
-utensils
+utensil
 vial of {liquid}
 vial of {spice}
 whetstone
@@ -113,7 +113,7 @@ writing ink
 yarn
 {metal:precious} {coin|coins}
 {currency}
-{flora} seeds
+{flora} seed
 {gem}
 {organic}
 {paper}

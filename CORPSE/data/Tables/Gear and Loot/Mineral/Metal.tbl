@@ -53,6 +53,7 @@ valerian steel
 
 : Weapon
 bronze
+cold iron
 iron
 steel
 silver
@@ -77,15 +78,8 @@ antiquated
 antique
 arcane
 archaic
-battered
-battle-worn
-beaten
-bloodstained
 bright
-brightly shining
-broken
-burnt
-charred
+burnished
 cold-forged
 costly
 dark
@@ -94,6 +88,7 @@ faintly glowing
 fine
 gleaming
 glistening
+glittering
 highly polished
 kingly
 long-disused
@@ -106,18 +101,10 @@ poorly-crafted
 princely
 rune-wrought
 runic
-rusted
-rusty
 shining
+silvered
 splendid
-stained
 strong
 sturdy-looking
-tarnished
-tight-fitting
-torn
-used
 well-crafted
 well-oiled
-well-used
-worn

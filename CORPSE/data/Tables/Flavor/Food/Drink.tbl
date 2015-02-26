@@ -25,12 +25,27 @@ stout
 {hot|mulled} wine{25% spiced with {spice}}
 {:liquor}
 {20%{dry|sweet|sparkling|spiced} }{red|white|port} wine
+{:rare alcohol}
 
 : Liquor
 gin
 rum
 vodka
 whiskey
+
+: Rare Alcohol
+absinth
+akavit
+applejack
+arak
+baiju
+basi
+kefir
+ouzo
+sake
+soju
+tequila
+toddy
 
 : Water
 lemon 

@@ -46,6 +46,7 @@ Composite Column [Profession.Job]                    {Profession.Job}           
 Capture/Extract  [H:=Herb] [H.Herb] [H.Cost]         {H:=Herb}{H.Herb} {H.Cost}         capture and extract fields
 Capture/Extract  [G:=Gender] [G.pronoun]             {G:=Gender}{G.pronoun}             capture and extract fields
 Assignment       [C=[color:red]] [C] [C]             {C={color:red}} {C} {C}            capture and reuse
+Nested:          [[trick:object]]                    {trick:{trick:object}}             multiple evaluation (only within a file)
 
 : Subset
 Subset           [Quality:Magic]                     {Quality:Magic}
@@ -78,7 +79,11 @@ All Lower        [elf name]                          {elf name}
 Unchanged        [ELF NAME]                          {ELF NAME}
 Cap Init         [Color]                             {Color}
 Regex            [#[Plot Twist]:.....]               {#{Plot Twist}:.....}              replaced with the first text matching the given regex
-Plural           [[tiny item]+]                      {{tiny item}+}                     override as needed in Plurals.txt
+Extend:Plural    [[berry]+s]                         {{berry}+s}                        override as needed in Plurals.txt
+Extend:Plural    [[tiny item]+]                      {{tiny item}+}                     the "s" is optional
+Extend:Actor     [[verb]+er]                         {{verb}+er}                        
+Extend:Gerund    [[verb]+ing]                        {{verb}+ing}                        
+
 Article          a [apple|orange]                    a {apple|orange}                   automatic a/an conversion
 
 === everything after this will be ignored (except for searches)

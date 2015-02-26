@@ -91,3 +91,24 @@ perfectly fitted
 tailored
 uniquely excellent
 very well made
+
+: Weapon
+battered
+battle-worn
+beaten
+bloodstained
+broken
+stained
+well-used
+worn
+
+: Metal Weapon
+rusted
+rusty
+tarnished
+{:Weapon}
+
+: Wood Weapon
+burnt
+charred
+{:Weapon}

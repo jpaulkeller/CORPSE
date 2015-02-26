@@ -1,11 +1,29 @@
+: Verb = Offense + Damage + Defense + Interact with Object + Interact with Person + Misc
+
 : Offense
+attack
+capture
 charge
 cut off
 destroy
+surround
 
 : Defense
 defend
 rally
+
+: Damage
+bludgeon
+burn
+cripple
+crush
+cleave
+eviscerate
+lacerate
+pierce
+puncture
+sear
+slash
 
 : Interact with Object
 acquire

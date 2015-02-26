@@ -1,18 +1,20 @@
-/ some inspired by http://www.seventhsanctum.com/generate.php?Genname=pirateshipnamer
+/ http://www.seventhsanctum.com/generate.php?Genname=pirateshipnamer
+/ http://random-generator.com/index.php?title=Ship_Names
 
 : Ship Name
-{Adjective} {Fauna}
+{Adjective} {Aquatic}
+{Nautical Adj} {Fauna}
 {Adjective} {Title Feudal:Noble}
 {Appearance} {Fauna{!MaybeSameFirstLetter}}
 {Appearance} {Title Feudal:Noble}
 {Color:Basic} {Fauna{!MaybeSameFirstLetter}}
 {Color:Basic} {Title Feudal:Noble}
 {Evocative Adj} {Title Religious}
+{Noise} {:Nautical Noun}
 {Trait} {Evocative Noun{!MaybeSameFirstLetter}}
 {Trait} {Fauna{!MaybeSameFirstLetter}}
 {Trait:Good} {Title Feudal:Noble}
 {:Pirate}
-{:Pregen}
 
 : Pirate
 {25%The }{Evocative Adj:Negative} {Evocative Noun:Not Positive{!OneWord}}
@@ -47,54 +49,32 @@ Skull
 
 : Nautical Adj
 Briny
+Flying
 Golden
+Lucky
+Proud
+Salty
 Soggy
+Swift
 
 : Nautical Noun
+Albatross
 Barnacle
 Corsair
+Dancer
+Dolphin
 Eel
+Gull
+Horizon
 Kraken
 Manta
+Maiden
+Mermaid
 Moray
 Serpent
 Shark
+Siren
 Squid
-Stingray
+Voyager
 Whale
-
-: Pregen
-The Blade of Mebrook
-The Emerald Blade
-The Empress of Alasband
-The Empress' Bounty
-The Golden Hammer
-The Gunslinger of Ulfljodbyr
-The Hammer of Baragzar
-The Hammerhead
-The Hydra
-The Jane
-The Jewel of Nirvana
-The Kite
-The Lady of Artharthveit
-The Lady of Cacot
-The Lamprey
-The Lance of Stygia
-The Mermaid
-The Monarch of Gionegriand
-The Monarch's Folly
-The Narvi
-The Nautilus
-The Nereid
-The Porpoise
-The Princess' Gem
-The Queen's Fortune
-The Sceptre of Avernus
-The Seawolf
-The Sovereign's Bounty
-The Star of Gunarukth
-The Steel Hammer
-The Stingray
-The Waveblade
-The White Star
-The Fencer of Allsteikfell
+Zephyr

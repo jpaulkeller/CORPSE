@@ -1,0 +1,109 @@
+/ https://drive.google.com/file/d/0BxulGJ7l2TURZVpVdTNyTDQwS1k/view
+
+: Piercing
+a {:adj pierce}{20% {:adj pierce{!different}}} {weapon:sword}{75% with a {:sword part}}{75%, {:FINAL SWORD}}
+
+: Slashing
+a {:adj edged}{20% {:adj edged{!different}}} {weapon:edged}{75% with a {:part general}}{75%, {:FINAL GENERAL}}
+
+: Bludgeoning
+a {:adj blunt}{20% {:adj blunt{!different}}} {weapon:blunt}{75% with a {{:head}|{:shaft}}}{75%, {:FINAL GENERAL}}
+
+: adj pierce
+assassin’s
+basket-hilted
+elegant
+slender elven-crafted
+wickedly sharp
+{:adj general}
+
+: adj edged
+double-edged
+serrated
+slender elven-crafted
+sturdy dwarven-crafted
+wickedly sharp
+{:adj general}
+
+: adj blunt
+massive
+sturdy dwarven-crafted
+{:adj general}
+
+: adj general
+battle-seasoned
+berserker’s
+brutishly orc-crafted
+demonic looking
+gladiator’s
+gold-embossed
+notched
+small halfling-made
+well-balanced
+{metal:weapon}
+{metal:flavor}
+{condition:weapon}
+
+: sword part
+double length hilt
+dragon-shaped crossguard
+fluted {metal:weapon} pommel
+gilded cup guard
+golden hilt shaped into the form of a drake's claw
+hand-guard shaped like a cobra's hood, with emerald eyes
+pommel that conceals a small knife
+pommel that ends in a blade
+pommel shaped like a gold lion
+scabrous goblin hide wound about its hilt
+spherical {gem} set upon the hilt
+spiked iron knuckleguard 
+wolf-head pommel
+{:part general}
+
+: head
+fist shaped head
+massive head
+ogre skull-capped head
+steel-studded head
+head that is studded with shards of glass
+viciously-spiked head
+
+: shaft
+shaft of Druidic oak
+shaft of {wood:weapon}
+shaft is scored with lines for each of its many victims
+shaft of carved-bone
+leather-wrapped shaft
+{:part general}
+
+: part general
+braided sinew-bound grip
+cross-wrapped grip
+intricately scroll-worked handle
+worn and battered grip
+
+: final sword 
+in a sheath trimmed with {metal:precious}
+{:final general}
+
+: final general
+capped with a {gem}
+carved with the faces of screaming men 
+covered with watery runes that crawl slowly as you watch  
+crusted with dried blood 
+etched with ancient runes 
+hot-forged and quenched in the blessed river of {Place Mame}
+hot-forged and quenched in the blood of {{protagonist}|{antagonist}}
+hot-forged and quenched in the holy font of {Divine Name}
+hot-forged and quenched in the lake sacred to {Divine Name}
+once carried by {Soldier Name}
+that looks like it has been broken and reforged many times   
+weirdly transparent with fires seen in its depths  
+which hums faintly, at the lower edge of your hearing range  
+with a {furred monster} fur tassel bound to it
+with a {feathered monster} feather dangling from it 
+with an ethereal glow 
+with glowing runes running up and down its length 
+worn from heavy use 
+you can hear whispers as you wield it 
+you think you can hear the faint sounds of the damned when you wield it 
