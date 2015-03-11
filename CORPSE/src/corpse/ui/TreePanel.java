@@ -264,10 +264,13 @@ public class TreePanel extends JSplitPane implements TabListener
    {
       DefaultTableModel model = table.getModel();
       
-      JXTable view = new TableView(model, name, new TokenRenderer()).getView();
-      view.setEditable(true);
+      TokenRenderer renderer = new TokenRenderer();
+      JXTable view = new TableView(model, name, renderer).getView();
+      view.setEditable(false);
       view.getTableHeader().setReorderingAllowed(false);
       view.packAll();
+      view.addMouseListener(renderer);
+      view.addMouseMotionListener(renderer);
       return view;
    }
 
