@@ -5,18 +5,18 @@
 {art}
 {made of:hard} {25%{:coating} }{:object}{25% {art:decorated}}
 {:clothing}
-{:jewelery}
+{:jewelry}
 {:misc}
 
 : Clothing
 {fabric} {20%{color:drab} }{male fine}{25% {:material}}
 {fabric} {50%{color:fancy} }{female fine}{25% {:material}}
 
-: Jewelery
-plain {metal:precious} {jewelery}
-{made of:precious} {jewelery}{25% {art:decorated}}
-{metal:precious} {jewelery} with a single large {gem}
-{metal:precious} {jewelery}{25% {art:decorated}}
+: Jewelry
+plain {metal:precious} {jewelry}
+{made of:precious} {jewelry}{25% {art:decorated}}
+{metal:precious} {jewelry} with a single large {gem}
+{metal:precious} {jewelry}{25% {art:decorated}}
 
 : Misc
 fine wine ({10}00 gp)

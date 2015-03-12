@@ -19,7 +19,7 @@
  <li>Color: {color}
  <li>Viscosity: {viscosity}{33%, {liquid feature}}{20%, {liquid feature:extra}}
  <li>Smell: {smell}
- <li>Taste: {taste}
+ <li>Taste: {taste:description}
  <li>Temperature: {20%?{temperature}:ambient}
 </ul>
  

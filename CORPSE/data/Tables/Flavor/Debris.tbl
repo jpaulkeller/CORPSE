@@ -3,45 +3,59 @@
 {:floor}
 
 : anywhere
-4x a {size} slimy area
-4x mold
+a {size} slimy area
+claw marks
 cobwebs
+mold
 scratches and abrasions
+{:markings} mostly obscured by {mud|cobwebs|fungus|claw marks}
+{:markings}{20% drawn in {:ink}}
 
 : floor
-2x a small pile of stones
-2x a {size} pile of rubble
-2x guano
-2x hair/fur bits
-2x pottery shards
-2x rags
-2x some rotting wood pieces
-3x dry leaves and twigs
-3x sticks
-3x the leftover ashes and charcoal of a cook fire
-3x {:bones}
-3x {:broken armor}
-4x {:broken weapon}
-5x smallish mushrooms
-6x {:broken gear}
-6x {condition:clothing poor} {clothing} {lies|is heaped|is discarded}
 a broken glass bottle
 a fine layer of ash covering everything
 a single broken arrow
+a small pile of stones
+a broken slab of {mineral}
+some crushed fragments of {mineral}
 a wax blob (candle stub)
-a {size} puddle of dried blood
-food scraps
+a {paper:fragment}
+a {size} pile of rubble
+a {50%{size} }{50%{drying|dried} }{splash|puddle} of blood
+dry leaves and twigs
+filings perhaps of {metal:weapon}
+{:food}
 glass shards and scorch marks (where a flask of oil was smashed and set aflame)
+guano
+hair/fur bits
 leather boot
+pottery shards
+rags
 scattered teeth/fangs
+smallish mushrooms
 some dung
+some rotting {splinters|slivers|pieces|logs|branches} of wood
 some wax drippings
+sticks
 straw
-{:remains}
+the leftover ashes and charcoal of a cook fire
 {2d6} broken arrows
 {70%{:coin damage} }{:coin}
+{:bones}
+{:broken armor}
+{:broken gear}
+{:broken weapon}
+{:remains}
+{condition:clothing poor} {clothing} {lies|is heaped|is discarded}
+{condition:cloth} {:fabric bit} of {fabric}
+{condition:cloth} {:part of clothing} made of {fabric}
 
 : remains
+a bit of hair from a {furred monster}
+a broken {horned animal} horn/antler
+a gnawed upon {organ}
+a hoof-print from a {hooved animal}
+a single scale from a {scaled monster}
 body parts
 corpse of a {fauna}
 egg shells
@@ -49,12 +63,14 @@ feathers
 fur
 hair
 hide
-offal
 nesting materials
+offal
+remnants of some unidentifiable creature
 severed head
 shed skin
 skeleton
 skull
+spoor
 teeth
 tracks
 {:bones}
@@ -162,3 +178,42 @@ in holes and crevices
 on shelves
 piled loosely
 stacked neatly
+
+: markings
+a drawing
+glyphs
+marks
+runes
+strange symbols
+
+: ink
+mud
+ash
+clay
+a {color:dark} paint
+a rust-colored substance that could have been blood
+
+: fabric bit
+bit
+patch
+remnant
+thread
+
+: part of clothing
+collar
+cuff
+pant leg
+sleeve
+waistband
+
+: food
+{:food remains} meat
+
+: food remains
+almost petrified bit of
+barely identifiable
+half-eaten
+moldy
+rotted
+rotting
+scraps of

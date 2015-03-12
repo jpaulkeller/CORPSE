@@ -1,41 +1,186 @@
+: Taste
+tasteless
+{taste:adj}
+like {taste:like all}
+
+: Description
+tasteless
+{33%{:texture} and }{taste:adj} {:synonym}
+{:synonym} {:like} {20%{:texture} }{taste:like all}
+{taste:adj good} {:synonym} {:like} {10%{:texture} }{taste:pleasant}
+{taste:adj bad} {:synonym} {:like} {40%{:texture} }{taste:foul}
+
+: Synonym
+flavor
+taste
+
+: Adj Good
+appealing
+appetizing
+delectable
+delicious
+delightful
+enjoyable
+enticing
+excellent
+exquisite
+flavorful
+fresh 
+heavenly
+luscious
+marvelous
+mouthwatering
+pleasant
+pleasing
+satisfying
+scrumptious
+tantalizing
+wonderful
+
+: Adj Bad
+disgusting
+foul
+gross
+putrid
+rancid
+rank
+repulsive 
+revolting 
+rotten 
+spoiled
+stale
+sulfurous
+terrible
+ 
+: Adj
+acidic
+acrid
+biting
 bitter
+bittersweet
 bland
+brackish
+briny
 burnt
 buttery
 chalky
-delicious
-different 
 earthy
+fiery
 fishy
-fresh 
+flat
+fresh
 fruity
-greasy 
-gritty
-hot
-juicy
-like {herb}
+gamy
+harsh
+hearty
+heavy
+herbal
+light
+malty
+meaty
+mellow
 metallic
+mild
 minty
 nutty
-oily
-putrid
-repulsive 
-revolting 
+overripe
+peppery
+plain
+refreshing
 rich
-ripe 
-rotten 
+ripe
+robust
 salty
 savory
+sharp
+smoky
+smooth
 sour
 spicy
-spoiled
 stale
 strong
-sulfurous
+succulent
+sugary
 sweet
+syrupy
 tangy
-tasteless 
-tasty 
-terrible
-wonderful
+tart
+unflavored
+unseasoned
 woody
+yeasty
+zesty
+zingy
+
+: Like
+a little like
+like
+not unlike
+that reminds you of
+
+: Like All
+a mixture of {spice} and {spice{!different}}
+alcohol
+bacon
+citrus
+coffee
+garlic
+ginger
+lemon
+mint
+pickles
+vinegar
+{herb}
+{{nut}+}
+{provisions}
+{spice}
+{:pleasant}
+{:foul}
+
+: Pleasant
+chocolate
+vanilla
+{fruit}
+
+: Foul
+ashes
+bile
+blood
+dirt
+dust
+excrement
+mucus
+rotten egg
+soap
+urine
+
+: Texture
+chalky
+chewy
+creamy
+crispy
+crumbly
+crunchy
+crusty
+doughy
+dry
+flaky
+gelatinous
+gooey
+grainy
+greasy
+gritty
+juicy
+mealy
+moist
+mushy
+oily
+pasty
+powdery
+rubbery
+runny
+slimy
+soggy
+spongy
+sticky
+stringy

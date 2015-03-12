@@ -1,0 +1,138 @@
+/ http://random-generator.com/index.php?title=Fantasy_Character_History
+
+: Number of Siblings
+7x no
+5x {3}
+3x {d3+1}
+2x {d4+2}
+2x {2d4}
+{6} illegitimate
+
+;BACKGROUND
+14,degenerate
+4,primitive
+15,regressed
+30,nomadic
+13,barbaric
+10,developing
+5,dynamic
+8,stagnant
+decadent
+
+: Social Level
+slave
+2x prisoner
+7x destitute
+20x poor
+50x comfortable
+10x well-to-do
+5x wealthy
+2x very wealthy
+2x noble
+royal
+
+;LEGITIMACY 5% illegitimate
+
+;FAMILY_HEAD
+11x both parents
+a [fantasy character history.other_relation]
+a [fantasy character history.other_relation]
+an aunt/uncle
+an older sibling
+grandparents
+guardian: [fantasy character history.guardians]
+nobody; had to fend for self
+nobody; was placed in an orphanage
+one parent
+
+;GUARDIANS
+5,[Fantasy Character History.OTHER_RELATION]
+2,Placed in an orphanage
+[Fantasy Traits.OTHER_PEOPLE]
+[Fantasy Life Events.NON-HUMANS]
+adopted
+[Fantasy Curses and Blessings.MONSTERS]
+Priests/nuns. [Fantasy_Casting_Utilities.RELIGIOUS_EXPERIENCES_REROLL_1D3]
+fended for self
+Beggars/thieves--social class drops to destitute
+Criminal--[Fantasy Criminal History.CRIMES];[Fantasy Criminal History.UNDERWORLD_EVENTS]
+Passed from relative to relative
+[Fantasy Occupations.ADVENTURER]
+mysteriously disappeared and reappeared 10 years older, but can't remember what happened
+Beasts
+[Fantasy Character History.GUARDIANS]; [Fantasy Character History.GUARDIANS]
+
+;OTHER_RELATION
+2,distant relative
+2,first cousin
+3,ancestor ([dice.1d3+1] times removed)
+4,second cousin
+great aunt/uncle
+great grandparent
+mysterious relative
+sibling
+
+;RELATIVES
+10,aunt or uncle
+10,first cousin
+10,spouse
+15,parent
+15,sibling
+3,distant relative
+3,great grandparent
+4,great aunt or uncle
+6,child
+8,2nd cousin (parent's 1st cousin)
+8,grandparent
+8,nephew or niece
+
+: Question
+How did you once share a private meal with the King?
+How did you save your bitter enemy's life?
+How was your family saved from financial ruin?
+Nobody believes your first memory is real.  What is it?
+Was your family's house really haunted?
+What almost killed you when you were nine?
+What contest did you win?
+What did you draw up from the well on Delver's Hill that day?
+What did you find in the forest that day?
+What did you inherit from your great-grandmother?
+What did your grandfather confide to you about the war?
+What fearsome monster did you kill when you were just a child?
+What happened to you when the boat capsized?
+What happened to your best friend?
+What huge exception did you make to your personal alignment or ethics?
+What is your big brother famous for?
+What nasty rumor about your family have you never been able to live down?
+What nobleman's command did you disobey?
+What profession did you almost take up?
+What really happened that day between you and the guardsman?
+What ruined your reputation in your hometown?
+What terrible accident were you involved in?
+What terrifying scene have you never been able to forget?
+What was stolen from you?
+What's carefully hidden at the bottom of your pack?
+Where did you end up the day you got badly lost?
+Where did you get that sword?
+Which of your possessions has a very distant origin?  How did you get it?
+Who followed you from home?
+Who is your mother in hiding from?
+Who's your uncle, and why do you never talk about him?
+Whose offer did you spurn?
+Why aren't you married?
+Why did the baron summon you to his keep?
+Why did the hooded stranger ask for you last year?
+Why did you bury your father *there*, of all places?
+Why did you have to kill the family pet?
+Why did you kill the duke's nephew?
+Why did your family hurriedly abandon its home?
+Why did your sister leave home alone?
+Why didn't you go with when your family moved?
+Why do travelers look forward to visiting your hometown?
+Why do you always keep your left hand covered?
+Why was your family so disturbed at your birth?
+Why were you found dazed and bleeding under the woodpile?
+You threw an entire purse of coins into the river.  Why?
+You were just a child - how did you survive the bandit attack?
+You've never forgotten the vivid dream you had during that fever.  What was it?
+Your teenage crush was... not like the usual.  How so?

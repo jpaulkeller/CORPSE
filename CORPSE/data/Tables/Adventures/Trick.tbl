@@ -340,7 +340,7 @@ necklace
 orb
 ornament
 sceptre
-{jewelery:crown}
+{jewelry:crown}
 
 : ornament action
 {:component action}

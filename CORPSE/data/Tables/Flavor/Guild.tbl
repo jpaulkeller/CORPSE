@@ -1,0 +1,91 @@
+: Guild = general + arcanist + artist + entertainer + craftsman + criminal + merchant + scholar + service
+
+: General
+arcanist
+artist
+entertainer
+craftsman
+criminal
+merchant
+scholar
+service
+
+: arcane
+mage
+enchanter
+seer
+
+: artist
+actor
+artist
+dancer
+minstrel
+musician
+performer
+sculptor
+
+: craftsman
+architect
+armorer
+baker
+blacksmith
+bladesmith
+boatwright
+book-binder
+bowyer
+brewer
+brick-maker
+carpenter
+cartwright
+chandler
+clothier
+cobbler
+cooper
+coppersmith
+dyer
+fletcher
+gemcutter
+glassblower
+glazier
+goldsmith
+jeweler
+locksmith
+mason
+miner
+potter
+shipwright
+silversmith
+tailor
+vintner
+weaponsmith
+weaver
+wood-worker
+ 
+: criminal
+assassin
+smuggler
+thief
+
+: farmer 
+beekeeper
+animal trainer
+falconer
+herbalist
+
+: merchant
+merchant
+trader
+
+: scholar
+alchemist
+apothecary
+cartographer
+physician
+
+: service
+banker
+barrister
+calligrapher
+chef
+healer
+scribe

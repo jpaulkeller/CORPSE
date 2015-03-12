@@ -1,0 +1,156 @@
+/ https://drive.google.com/open?id=0BwfHnwy_OBJqYjRxWDFCbzhTLW8&authuser=0
+
+: Hobby
+academics: {:academics}
+arts and crafts: {:arts and crafts}
+avocation: {profession}
+avocation: {pseudo class}
+athletics: {:sport}
+collecting: {75%{:collections adjective} }{:collections}
+criminal: {:criminal}
+outdoor pursuits: {:outdoor pursuits}
+performance: {:performance}
+politics: {:politics}
+religion: {:religion}
+social club: {:clubs}
+
+: academics
+alchemy
+arcane magic
+art history
+cartography and geography
+divination and oracular practices
+history
+linguistics
+literature and folklore
+mathematics and astronomy
+mechanics and constructs
+philosophy
+travel writer
+{domain}
+
+: arts and crafts
+bonsai
+brewing
+carpentry
+cooking
+embroidery
+gardening
+haberdashery
+knitting
+millinery
+painting
+sculpture
+stonemasonry
+winemaking
+woodcarving
+{chariot|wagon} customization
+{profession:craftsman}
+
+: collections adjective
+contemporary
+erotic
+foreign
+holy
+monstrous and demi-human
+primitive / ancient
+
+: collections
+artwork
+body parts and monster parts
+books, engravings, scrolls, and literature
+clothing, masks, and costume
+coins and currency
+jewelry and ornamentation
+memorabilia and historical artifacts
+permanent illusions
+pottery and basketry
+religious relics and symbols
+songs, myths, and stories
+statuary and sculpture
+
+: clubs
+charitable service organization
+collecting club ({75%{:collections adjective} }{:collections}}
+farmers cooperative
+fraternal order
+gambling club ({cards|dice|sports})
+gentleman’s club
+guild ({guild}) 
+merchant guild ({guild:merchant})
+secret society
+service guild ({guild:service})
+tavern-based social club
+
+: criminal
+assassins guild
+banditry
+beggars guild
+drugs and illicit substances
+extortion & blackmail
+prostitution ring
+slaving ring
+smuggling ring ({smuggled})
+street con
+thieves guild
+thug gang / protection racket
+tomb-robbing
+{crime}
+{profession:criminal}
+
+: outdoor pursuits
+animal husbandry and breeding
+beekeeping
+boating
+competitive vegetable growing
+falconry
+fishing
+hunting (large game)
+hunting (monster)
+hunting (small game)
+monster domestication
+mountaineering
+trapping
+
+: performance
+acrobatics troupe
+carnival
+circus
+community theatre
+competitive eating
+dancing troupe
+exhibition pugilism
+interpretive dance
+jester / jongleur / comedy troupe
+martial arts
+musical troupe
+puppetry
+singing troupe
+
+: political causes
+anti-adventurer
+anti-criminal
+democratic movement
+expansionist
+isolationist / non-interventionist
+monster protection / rights
+protection of nature
+protection of the nobility
+racial/species separation
+racial/species unity
+revolutionary / anarchist
+rights of the underprivileged
+
+: religion
+church choir
+cult
+cult of personality
+cult of the {50%un}dead
+evangelism for a mainstream sect
+monastic order
+monstrous worship cult
+ultraconservative version of mainstream sect
+utopian movement
+{75%lay }clergy of a mainstream sect
+{demonic|diabolic|evil| cult
+{gnostic|heretical} sect

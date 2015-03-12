@@ -1,0 +1,515 @@
+/ Santicore 2015 (People)
+/ https://drive.google.com/open?id=0BwfHnwy_OBJqSVhqZ3A2NlNOYzg&authuser=0
+
+: Name
+{:First} {:Last Prefix}{:last suffix}
+
+: First
+Abgad
+Ahq
+Almond
+Aziri
+Badsey
+Barker
+Billobi
+Bog
+Cag
+Coo
+Cut
+Dodger
+Dong
+Drutt
+Edma
+Estra
+Eugen
+Exo
+Farthington
+Father
+Fhf
+Forlorn
+Garga
+Gloth
+Gy
+Hasten
+Hog
+Hoop
+Idle
+Ihmren
+Iinez
+Iridia
+Jahaja
+Jarmin
+Jil
+Jug
+Kar
+Kendrick
+Koki
+Kovet
+Lady
+Laza
+Lump
+Ly
+Maggot
+Mama
+Mildew
+Muck
+Nadia
+Nell
+Nour
+Nydd
+Ondo
+Ort
+Oze
+Pebble
+Pix
+Poppy
+Poriya
+Qala
+Qit
+Qoo
+Quinton
+Razi
+Roulia
+Ruf
+Rust
+Scar
+Shahab
+Sir
+Sofi
+Tab
+Tally
+Tamaran
+Turtle
+Ubo
+Uff
+Uhnfeyn
+Uma
+Vala
+Valdibart
+Vex
+Viz
+Wafa
+Wenn
+Wheeler
+Winthrop
+Xinjiang
+Xipe
+Xosa
+Xö
+Yamanqa
+Yari
+Ymn
+York
+Zan
+Zopp
+Älskade
+Ålrick
+Öl Toot hum
+
+: Last Prefix
+Ale
+Ash
+At
+Baby
+Badger
+Beetle
+Bone
+Booth
+Broth
+Bumble
+Cod
+Cold
+Copper
+Dirt
+Fart
+Fear
+Ferry
+Fiddle
+Filth
+Fish
+Fishwife
+Foot
+Free
+Fungi
+Gar
+Gel
+Gib
+Gob
+Grey
+Hem
+Herring
+Hill
+Inn
+Iron
+Kill
+Knife
+Knob
+Little
+Lock
+Log
+Lung
+Marrow
+Maul
+Minx
+Mold
+Moth
+Mould
+Much
+Nail
+Neck
+Nine
+No
+Nose
+Oath
+Old
+Owl
+Palm
+Piss
+Pocket
+Poor
+Prat
+Ripe
+Rosy
+Rot
+Rough
+Rum
+Salt
+Sand
+Sea
+Seep
+Shrub
+Sick
+Skar
+Small
+Sore
+Sow
+Star
+Stock
+Street
+Sty
+Sweat
+Tall
+Teeth
+Thrum
+Tick
+Toe
+Tot
+Troll
+Twine
+Twixt
+Under
+Wall
+Warring
+Waste
+Wee
+Wet
+Wight
+Wither
+Wood
+Zest
+
+: Last Suffix
+and mud
+arch
+bald
+barrow
+bell
+belly
+bend
+bleed
+blood
+brat
+brick
+brim
+bringer
+bub
+bug
+burier
+caller
+cellar
+collector
+cot
+craft
+croft
+daughter
+drought
+dweller
+ears
+eye
+farer
+fey
+field
+fig
+fin
+flesh
+flinger
+fob
+fry
+fumbler
+grace
+hater
+haw
+head
+heart
+heel
+herder
+hole
+hoof
+house
+ish
+less
+letter
+loose
+lord
+love
+mangler
+master
+mine
+mole
+moor
+mower
+noon
+odor
+ore
+peeler
+picker
+pie
+pin
+pine
+pipe
+pore
+pot
+pound
+pugh
+pus
+rib
+ridge
+rood
+rot
+rug
+ruse
+scull
+scythe
+skin
+son
+sour
+stead
+stone
+sung
+taster
+thrasher
+toil
+tosser
+trawler
+tripler
+well
+whisperer
+widgeon
+wing
+wit
+wound
+
+: Business
+{profession}
+{profession:criminal}
+Alchemist; can break down smaller things into salts and strange components
+Astronomer; just made contact with a distant star through quartz crystals
+Back-of-the-hand reader; can see person's complete history
+Beggar; claims s/he recognizes the party; looks a bit too clean
+Beggar; will work for food (unreliable)
+Boatsman; looking for a crew to sail to a newly discovered continent
+Boatsman; looking to replace his former crew that...uhm...isn't...eh..."here" anymore
+Bodyguard for ... (roll up another person)
+Bounty hunter; looking for ... (roll another)
+Broke merchant just closing up his shop
+Butcher of few words; nobody seems to know what happened to the last one
+Chased by ... (roll another one), claims s/he stole his/her hat
+Claims to be able to train anything into a war animal; sells small dogs
+Claims to have been married to a bear once; lots of scar tissue; wears eye-patch; yells
+Crawls on a all four, searching for that "special" coin
+Crazy; acts like a stray dog; good at finding people
+Cursed; appears as flat painting in our world
+Debt collector; currently looking for ... (roll three more people); will pay for aid
+Doomsayer (can't shut up)
+Drawing symbols on the ground (manic)
+Dust collector; tries to invent a new type of golem
+Eats onions; talks about the old days and the old bazaar
+Escaped prisoner; circle tattoo on neck s/he tries to conceal
+Ex-assassin; toes are actually concealed daggers that come off
+Exotic fruit merchant
+Face painter; 1 in 12 chance paint will protect as a helmet for the rest of the day
+Failed wizard selling mischievous spells (Legtripping, Hairdoundoer, Dog breath, etc.)
+Farmer, selling crops; avoids eye contact
+Fence (high-risk stuff); 1 in 12 are magical; 1 in 6 are cursed
+Fence (low-risk stuff); 1 in 4 are broken
+Fletcher; arrows are bent and looks more like twigs, but works anyway
+Fletcher; living arrows
+Forges crude weapons from scraps (bones, hide, broken pots)
+Gravedigger, emaciated; looking for a new shovel
+Has miniature golems (clay) for sale
+Hatter; everything's made of food
+Hireling; looking for work; chewing a bone
+Hitman; offers people to hit him/her for money;
+Hungover poet at it again; arms tattooed with poetry
+Jester in exile; melancholic; torn clothes
+Just a nobody.
+Just another nobody that happens to look like your mirror image
+Known drunk, ignored by most
+Loafer; can whistle the spell Strong Whistling
+Local guard (corrupt), works in pairs (roll up another person)
+Looking for ... (roll up another person)
+Looking for a blood magician named ... (roll up another one)
+Looking for a translator; has cryptic, unreadable note found in a pot
+Looking for trouble (already got a black eye)
+Lost, naked, speaks gibberish
+Member of Priesthood of Animals; chants by imitating animals
+Merchant of extremely tiny weapons (finger sized)
+Merchant of ridiculously large weapons
+Mimer (unappreciated); specializes in "death-faces"
+Monster hunter looking for ingredients for his/her next trap
+Musician; plays an instrument that seems to be almost playing itself
+Palm reader (quack)
+Part of a travelling theater group (roll three more people)
+Petty thief; can squeeze body into tight spaces; almost gelatinous
+Pickpocketing (bad at it)
+Pickpocketing (good at it)
+Pipe smoker; secretly smokes hair from other people to reveal their secrets (1 in 20 are true)
+Pirate captain; rest of crew are hiding in the underground bazaar
+Poet; shouting his/her newest piece "WHY I LOATHE ..." (roll another person)
+Portrait artist; after completing the painting, will tear it apart and shout "RUBBISH!"
+Potter (not a very good one). 1 in 20 pot contains a strange note from ... (roll another)
+Prizefighter; last match was against ... (roll another)
+Recruiter for Cult of the Free Flesh; looking for volunteers to sacrifice themselves
+Scryer; sells glimpses of peoples homes (1 in 12 are real)
+Scryer; sells glimpses of peoples secrets (1 in 12 are true)
+Sell trinkets made of fish bones/scales
+Selling home-made maps to a newly discovered continent
+Sells blessings; writes them up on the spot (two-liners that rhymes; 1 in 20 works)
+Sells chickens large enough to ride on
+Sells clay pots that explodes on command; no eyebrows
+Sells expensive pictorial carpets; 1 in 12 is an actual dungeon map
+Sells hallucinogenic mushrooms (1 in 30 are potent and will materialize the visions)
+Sells intelligent crows as companions (1 in 6 isn't intelligent; 1 in 4 isn't loyal)
+Sells leashes; once bought, they tether to an invisible animal
+Sells love potions (1 in 6 are magically, but actual emotion is random)
+Sells meat of unknown origin; 1 in 6 contains beneficial parasites
+Sells mules; looks like one, smells like one, talks like one
+Sells outlawed wine (or so s/he says)
+Sells painted pot shards as relics
+Sells puff pastry that looks like snails, worms, maggots, etc.; filled
+Sells umbrellas made of animal skin (some works as shields)
+Sells used capes; 1 in 12 smells of garlic
+Shadow catcher; grinds them to dust; powder can be used for reanimations
+Shifts in and out of this plane at random; will pay greatly to have it stop
+Sings for money (knows one song)
+Skinner; specializes in pallas's cats
+Snake charmer; plays a flute; has several bite marks in his/her face
+Specializes in spices, lacks eyebrows
+Street food; dogs, cats
+Street food; everything from the sea
+Street food; large beetles that must be eaten alive
+The Herald of Unwanted Things; clothes made of trash (quite mad)
+Thimblerigger
+Tosses cabbages from a rooftop, shouting "INFIDELS!"
+Town crier; mostly made-up news
+Trying to buy meat but cannot speak the language
+Used to work as a food taster for a far away queen
+User of flying ointment; cats follow him/her at a distant
+Ventriloquist; uses it to trick people into believing they are haunted
+Washes hair in mud; says s/he's worth it
+Wears Boots of the Toddler; makes you walk like a drunk
+Werehuman; turns into a different type of person at full moon
+Will do anything for cinnamon
+Writer; selling his/her latest book "The Bazaar Below Us; A Child's Tale"
+
+: Secret
+A horn is growing from the top of his/her head (hidden under a leather cap)
+Actually a forgotten minor deity (forgot it him/herself)
+Actually two people, one standing on the other
+Ages ten times faster than a normal human
+All items owned/sold are cursed; something about his/her hands
+Avatar of an avatar of an avatar of an extremely local deity (as in this street)
+Back is covered in eyes; all but one focuses on the same thing
+Bases all decisions on a roll of a die
+Been tracking the party for days
+Body smell is slightly toxic
+Bored noble, playing "common"
+Both hands turn into solid iron when angry; almost drowned once
+Both will perish if eye contact is made with ... (roll another one)
+Breed imps at home in his/her cellar
+Can command small amounts of gravel for a short period of time
+Can stretch arms up to three meters
+Can turn small amounts of sand into glass at will, but will lose life doing so
+Can't lie (under a spell)
+Can't tell the truth (under a spell)
+Carries a big animal cage, says s/he lost "them"
+Clothes are a parasite
+Collector of shrunken human heads, still kept alive through magic
+Consumes food by absorbing its energy; two antennas folded into his/her ears
+Coughs copper coins
+Cries blood, bleeds water; half-aquanoid
+Dies every full moon; reincarnated at the next
+Disguised troll from the underground bazaar; a comb keeps the illusion intact
+Drips poison in food around the market
+Eyes and ears are detachable; used to work as a spy
+Footman of the rebellion. Waiting for a signal from ... (roll another)
+Forced to lure away children to a troll bridge just outside of town
+Former head of the local thieves guild; wanted by most; planning to leave town
+Gets town gossip from gargoyles
+Gills; need to find water to breathe in every ten minutes
+Half-tree, half-human. Hunted. Keeps to him/herself
+Has a cast iron foot (cursed by a witch ten years ago)
+Has a demon maggot infestation bubbling in his/her stomach
+Has a hidden collection of ceramic cats at home; their waving paws dictates his/her life
+Has a mechanical heart
+Has a small vial of liquid annihilation; saving it for the revolution
+Has a treasure map tattooed on his/her body
+Has already stolen something minor from the party
+Has an unhealthy affection for cats
+Has richness at the underground bazaar but forgot the way
+Has the Devil's Dagger stuck in his/her chest; if removed, will summon 27 devils
+Has the reanimated body of ... (roll another one) in his/her cellar
+Heartbroken; planning the great revenge that will "show them all"
+His/her shadow is actually another living entity
+His/her teeth are living beings; last of their kind
+Just robbed a friend of the party
+Keeps a log book at home with details about every person s/he's ever met
+King/queen on the run from tireless assassins
+Knows the way to the hidden bazaar underground
+Last guardian of tiny, tiny forest world; keeps it in his/her hat
+Left eyeball isn't his/hers; belongs to a witch that spies on the town
+Levitates 1 cm above ground at all times; will die if feet touches
+Mind and body are separated each midnight for two hours as distinct entities
+Mind reader; mute
+No teeth
+Paints charms all around town; may attract pixies
+Pigs recognizes him/her as their true savior
+Possessed by a demon; original soul lost
+Produces threads of silk from his/her own body; 1 in 6 risk turns into a cocoon instead
+Roll four more people; these five can mend into a giant once/day; this person is the only one who knows it
+Ruler of his/her own plane, that's completely empty; small trinket around neck is the key
+Runs one of the many local gangs together with ... (roll up 3 more people)
+Runs the "Small Monster Zoo" at the hidden bazaar underground
+Self-fulfilling vampire hunter; needs no real proof of person actually being a vampire
+Shaman from a tiny, tiny forest world; grew out of his/her world; searching for it
+Shrinks to pixie size during night time
+Smuggles strange things from the underground bazaar to the surface
+Sound of voice is delayed due to excessive time travelling
+Spoils food just by touching it
+Stalks ... (roll up another person)
+Steals memories
+Stolen identity
+Teleports five feet in random direction every time s/he farts
+The head is the only solid form on this body; rest is gas (hidden under clothes)
+Traps people in a small handheld mirror during the full moon
+Trying to find ... (roll another), a demon s/he summoned up and released
+Turns into an indestructible statue when threatened
+Undead without knowing it
+Wakes up every day with one prepared spell, but have no idea what it will do
+Wanted for murder
+Wears a porcelain mask
+Will start stalking party if approached
+Working in collusion with another merchant; steals goods to sell
+Working with the law enforcers
+Works together with ...; leads people away into alleys and mugs them
+Worshipper of Asudem, a cult that tries to turn statues into people
