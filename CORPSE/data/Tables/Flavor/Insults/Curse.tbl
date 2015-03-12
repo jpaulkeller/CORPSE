@@ -1,4 +1,6 @@
 / http://random-generator.com/index.php?title=Curse
+/ http://random-generator.com/index.php?title=Fantasy_Curses_and_Blessings
+/ http://www.creightonbroadhurst.com/campaign-consequences-20-minor-curses
 
 : Curse
 {:Name}: {:EFFECT}
@@ -94,12 +96,32 @@ a malevolent spirit
 / 3x {:Quick Horrors.main}
 
 : ongoing-effect
-take {5,20} {:damage} every {:period}
-take {10,30} {:damage} every {:period}
+a terrible red rash that covers part of his face and forehead (skin is flaky and it itches terribly; -2 penalty to all Bluff and Diplomacy checks)
+always hungry (over the next month, he gains {d4x10} lbs)
+become convinced a nameless, powerful foe is hunting him. He begins to take more and more outlandish precautions in regard to his safety—particularly at night.
+become easily distracted (-2 penalty on all Perception checks, and must make a DC10 Will save at the start of each combat or suffer a -2 penalty to his initiative roll) 
+body odor (no matter how often or how frequently he washes, as soon as he exerts himself the smell returns. Creatures with scent can sense him at twice the normal range)
+develop a delicate stomach and suffers from terrible indigestion (can only eat bland foods and suffers a -2 penalty to saving throws made to resist the effects of ingested poisons)
+develop an irrational fear of spiders or some other small, harmless insect. Whenever confronted by normal-sized versions of the creatures he is shaken. Encountering a monstrous or obviously dangerous specimen renders him frightened.
+develop an unhealthy fixation to a minor item possessed by one of his friends (do everything he can to possess the item short of murder)
+emit a strange odor, which animals find off-putting (suffer a -2 penalty to all Ride and Handle Animal checks)
+great trouble sleeping (every morning, the character must make a DC 10 Fortitude check or be fatigued for the following day)
+hair begins to fall out in clumps (-2 penalty to all Bluff and Diplomacy checks)
+hair begins to prematurely grey, making him seem older than he would otherwise appear
+hearing is impaired by a low roaring or ringing sound that only he can hear (suffers a -5 penalty on all hearing-based Perception checks)
+immune system becomes weakened (-5 penalty on all Fortitude saving throws made to resist the effects of disease)
+leg muscles are constantly cramping which causes near constant pain (reduce movement rate by 5 ft)
 lose 1 point of {attribute} every {:period}
+lose all interest in sex
+lose {:a-level} every {:period}
+never hungry (over the next month he loses {d4x10} lbs)
+see indistinct moving shadows from the corners of his eyes (-2 penalty to sight-based Perception checks)
+sprout hair all over his body
+suffer from an itchy rash which inflicts a -2 penalty to Stealth and Acrobatics checks made to balance
 take a penalty to all rolls (-{2}, cumulative every {:period})
 take a penalty to hit (-{2}, cumulative every {:period})
-lose {:a-level} every {:period}
+take {10,30} {:damage} every {:period}
+take {5,20} {:damage} every {:period}
 {:body horror}
 {:ongoing-age-effect}
 
@@ -181,3 +203,246 @@ can
 will
 can only
 has a {%}% chance to
+
+===
+
+;CURSES
+take on darkside personality traits: 
+character will be responsible for death of a lover
+unlucky
+becomes tongue-tied w/members of the opposite sex
+becomes lycanthrope
+[.BODY_LOCATIONS] is scaly and monstrous
+[Fantasy Curses and Blessings.UNUSUAL_PHYSICAL_TRAITS]
+recurring nightmares
+causes unluck in friends
+attacked by fits of madness--[Fantasy Traits.MENTAL_AFFLICTIONS]
+subject to fits of berserker rage
+condemned to a nomadic life
+haunted and attacked by ghost or evil spirit
+always blamed for any evil acts or crimes in the vicinity
+
+
+;UNUSUAL_PHYSICAL_TRAITS
+glowing eyes
+an extra eye in middle of forehead
+albino skin
+a body covered in fur
+webbed fingers and toes
+bird or bat wings
+one hand which was a scaly claw
+skin turns {color}
+hair turns {color}
+fangs
+
+
+;PET_DEATH
+4,accidental
+2,caused by [Fantasy Traits.OTHER_PEOPLE]
+
+
+;POSSESSION_VANISHES
+3,it was lost
+2,it was stolen
+it was stolen and a fake left in its place
+
+
+;SOMETHING_WONDERFUL
+wild animals invade camp, but character finds he/she has animal friendship
+get out of jail free
+2,if has lover/spouse, they have healthy child
+when repairing family home discovers a magical [Fantasy Gifts.GIFTS_AND_LEGACIES]
+acquires a [Fantasy Pets.UNUSUAL_PETS]
+adopted by a wealthy family (if orphan true adoption,otherwise treated like one of the family)
+village/town destroyed but little loss of life, afterward area becomes more prosperous
+4,saves a life, person was [Fantasy Character History.SOCIAL_LEVEL]
+despotic ruler outlaws parents, but ruler overthrown and parents elevated in rank
+slavery outlawed, all slaves freed
+receives serious injury ([Fantasy Tragedies.SERIOUS_WOUNDS]), but sorcerer crafts magical prosthesis
+2,becomes reknowned for his occupation
+2,disease almost kills character, but becomes miraculously immune
+2,blessed ([Fantasy Curses and Blessings.BLESSINGS])
+lasting peace, if character was military, discharged with honors
+gains loyal friend: [Fantasy Life Events.COMPANIONS]
+family home declared national treasure
+2,named sole heir to small fortune of distant relative
+2,forced into unwanted marriage, but comes to love spouse
+2,shift in economy increases wealth of the wealthy
+2,new market for chief source of character's/families' income
+ruler of land elevates character's parent or character (if first born)
+
+
+;HORROR
+a place frightens the character, [Fantasy Curses and Blessings.FRIGHTFUL_PLACE], [Fantasy Curses and Blessings.FRIGHTFUL_THING]
+for several months, people mysteriously disappear. character knew some of them: [Fantasy_Casting_Utilities.OTHER_PEOPLE_REROLL_1D3]   
+suspect and evil spirit has possessed [Fantasy Curses and Blessings.POSSESSED_THING]
+serial killer/mutilator attacks [Dice.1D20], character knew latest victim,[Fantasy Traits.OTHER_PEOPLE]
+mysterious [Fantasy Gifts.GIFTS_AND_LEGACIES], that seems evil but keeps turning up
+participates in a hunt of a [Fantasy Curses and Blessings.MONSTERS] that plagued the area
+senses ghost
+believes creature lurks in [Fantasy Curses and Blessings.LURKING_PLACES]
+discovers neighbor's dark secret, [Fantasy Curses and Blessings.DARK_SECRET], and neighbor flees.
+experiences repeated ghostly apparitions of [Fantasy Curses and Blessings.APPARITIONS]
+acquires diary of madman but becomes fascinated with madman's obsession
+2,horrific events ended by heroic intervention of [Fantasy Traits.OTHER_PEOPLE]
+discovers [.RELATIVES]'s dark secret, and neighbor flees.
+cursed ([Fantasy Curses and Blessings.CURSES])
+finds old book: [Fantasy Curses and Blessings.OLD_BOOK]
+weird change ([Fantasy Curses and Blessings.WEIRD_CHANGE]) to people close to character ([Fantasy Curses and Blessings.FAMILY_INVOLVED])
+depraved cult performs sacrifices nearby and character witnesses it; [Fantasy Curses and Blessings.WITNESS_CULT]
+2,[Fantasy_Casting_Utilities.HORROR_REROLL_3]
+
+
+;WITNESS_CULT
+cultists knew character was there
+close friend is a cultist
+noble or prominent community member is a cultist
+parents or guardians are cultists
+cultists were performing a ritual that would have tremendous evil consequences
+[Fantasy_Casting_Utilities.WITNESS_CULT_REROLL_2]
+
+
+;FAMILY_INVOLVED
+4,no family
+2,[Dice.1D4] family
+
+
+;WEIRD_CHANGE
+being replaced by undead
+being possessed by evil spirits
+being replaced by shape-changers
+actually monsters in human guise
+
+
+;OLD_BOOK
+gain exotic feature:   [Fantasy Curses and Blessings.UNUSUAL_PHYSICAL_TRAITS]
+gain unusual personality trait ([Fantasy Traits.EXOTIC_PERSONALITY_TRAITS])
+gain both an unusual physical trait ([Fantasy Curses and Blessings.UNUSUAL_PHYSICAL_TRAITS]) and an exotic personality trait ([Fantasy Traits.EXOTIC_PERSONALITY_TRAITS]).
+
+
+;APPARITIONS
+assassinated noble
+horse-drawn carriage
+beautiful woman
+pet
+drowned person
+black cat
+handsome man
+warrior\s
+mounted man
+child
+monster ([Fantasy Curses and Blessings.MONSTERS])
+executed person
+severed body part ([.BODY_LOCATIONS])
+shapeless form
+ship
+skull
+doppleganger
+loved one
+someone else ([Fantasy Traits.OTHER_PEOPLE])
+wolf
+
+
+;FRIGHTFUL_PLACE
+basement/cellar
+attic
+empty house
+old barn
+empty building
+vacant lot
+locked room
+dark wood
+city or castle ruins
+cave
+
+
+;FRIGHTFUL_THING
+a shape on the wall
+nauseating odor
+mysterious voices
+temperature drops
+something horrible: [Fantasy Curses and Blessings.MONSTERS]
+moving lights
+water boils without heat
+oppresive evil sensation
+animals afraid
+[Fantasy_Casting_Utilities.FRIGHTFUL_THING_REROLL_2]
+
+
+;POSSESSED_THING
+pet
+weapon
+armor
+house
+horse
+shield
+statue
+child's toy
+coin
+gem
+
+
+;LURKING_PLACES
+under bed
+in closet
+in attic
+in the woods
+in the water
+in neighbor's house
+
+
+;DARK_SECRET
+was necromancer
+was monster: [Fantasy Curses and Blessings.MONSTERS]
+was cannibal
+collected frightening artifacts
+worked black magic
+was serial killer
+experimented with gates to other dimensions
+was evil magic user
+was world-class villain: [Fantasy Villains.VILLAINS]
+was enchanting character's friends and relatives
+
+
+;PSYCHIC_POWERS
+spell-like power
+psychometry
+clairvoyance (random)
+clairvoyance (controlled)
+astral projection
+healing
+hypnosis
+persuasion
+telekinesis
+suspended animation
+teleportation
+mind block
+2,esp
+telepathy
+mind blast
+body control
+mind control
+2,[Fantasy_Casting_Utilities.PSYCHIC_POWERS_REROLL_1D3+1]
+
+
+;MONSTERS
+evil humanoids
+icky blobs
+dragons
+heraldic beasts (e.g. griffon, unicorn)
+undead
+half-beast (e.g. minotaur)
+lycanthropes
+giants
+demons or devils
+giant animals or birds
+sea monsters
+fairies
+reptilian or batrachyian humanoids
+elementals
+horrors from beyond
+evil demi-human races
+terrible plants (carnivorous, poisonous, etc.)
+golems
+a horde of small beasts
+monster is disguised as human

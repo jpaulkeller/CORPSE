@@ -1,4 +1,5 @@
 / http://www.apolitical.info/webgame/tables.php?mode=1&backto=
+/ http://random-generator.com/index.php?title=Fantasy_Curses_and_Blessings
 
 Ability to control a particular species of animal or monster.
 Ability to control plants.
@@ -34,3 +35,35 @@ Increased ability to sense lies.
 Ability to move silently.
 Ability to see in darkness.
 Mysterious Knowledge: Once per day, the bearer of this item may ask the GM one question. The question must be able to be answered with a 'yes' or a 'no'. The player can use 'out of character knowledge' in framing the question.
+
+===
+
+;BLESSINGS
+lightside personality traits: 
+beautiful/handsome
+love affairs never end with death of a lover
+never fumbles
+rapport with opposite sex
+detects lycanthropy
+[.BODY_LOCATIONS] is beautiful
+can only join good cults/religions
+gains unique talent: [Fantasy Curses and Blessings.UNIQUE_TALENTS]
+naturally talented: [Fantasy Curses and Blessings.NATURAL_TALENTS]
+brings luck to others
+psychic ability: [Fantasy Curses and Blessings.PSYCHIC_POWERS]
+partially immune to attacks by evil creatures
+lucky
+immune to disease
+magical resistance
+increased presence v. undead
+for each blessing has curse; [Fantasy_Casting_Utilities.BLESSINGS_REROLL_1]
+fast learner
+[Fantasy_Casting_Utilities.BLESSINGS_REROLL_1D3]
+
+;NATURAL_TALENTS
+a weapon
+singing
+artistic ability
+money management
+magic use
+mechanical ability

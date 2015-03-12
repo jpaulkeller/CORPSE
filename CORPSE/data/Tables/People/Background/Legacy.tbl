@@ -1,1 +1,90 @@
-todo
+/ http://random-generator.com/index.php?title=Fantasy_Legacies
+
+;INHERITANCE
+3,receives [Dice.1D10] * starting money
+1,estate is liquidated for debts, [Fantasy Legacies.DEBTS]
+1,nothing.  Last will condemns character's lifestyle
+1,receives a map, key, and strange gift;[Fantasy Gifts.GIFTS_AND_LEGACIES]
+1,heir to the estate
+1,-- conditional (heir to the estate must [Fantasy Legacies.ESTATE_CONDITIONS]).
+
+
+;DEATH_OF_A_LOVED_ONE
+1,Inherited [Fantasy Legacies.INHERITANCE]; [.OTHER_DEATH EVENTS]
+
+
+;OTHER_DEATH_EVENTS
+1,nothing unusual
+3,[Fantasy_Casting_Utilities.OTHER_DEATH_EVENTS_REROLL_2]
+1,papers found reveal a secret:  [Fantasy Legacies.SECRET_OF_THE_PAPERS]
+1,grave is empty:  [Fantasy Legacies.GRAVE_EMPTY]
+1,surviving spouse remarries in 1-4 years
+1,surviving spouse remarries immediately
+1,close friend confides that he believes loved one was murdered
+1,surviving spouse blames character for death:  [Fantasy Legacies.DEATH_SITUATIONS]
+1,when tries to collect inheritance, already taken by relative:[Fantasy Character History.OTHER_RELATION]
+1,loved one's ghost appears to character and demands injustice be righted
+1,journal reveals hints of treasure
+1,mysterious stranger offers to buy effects for much more than they could be worth
+1,spell book found
+1,charismatic but evil stranger claims the estate
+1,siblings fight over inheritance
+1,loved one was declared dead, but may be merely missing
+1,loved one was simulacrum; real one is missing
+1,loved one has become undead
+
+
+;GRAVE_EMPTY
+1,nothing further
+1,horrible things happen [Fantasy_Casting_Utilities.HORROR_REROLL_1D3]
+
+
+;DEBTS
+5,no remaining debt
+1,owes [Dice.1D100] * starting money
+
+
+;ESTATE_CONDITIONS
+1,marry andamp; produce and heir
+1,change lifestyle
+1,perform task or quest
+1,champion the poor/weak/downtrodden
+1,perform act of revenge
+1,make amends for some real or perceived wrong
+
+
+;SECRET_OF_THE_PAPERS
+1,loved one was secretly an exiled noble
+1,loved one was a powerful wizard
+1,loved one was bastard of former ruler
+1,loved one was a monster who could assume human form: [Fantasy Curses and Blessings.MONSTERS]
+
+
+;DEATH_SITUATIONS
+1,accident
+1,premeditated, violent murder
+1,killed in a fit of blind passion
+1,assassination
+1,died in duel
+1,poisoned (perhaps accidentally)
+1,killed during commission of a crime[Fantasy Criminal History.CRIMES]
+1,killed in self-defense
+1,driven to suicide
+1,driven insance, then died
+1,dies of starvation
+1,sacrificed his life[Fantasy Legacies.SACRIFICE_LIFE]
+1,died in prison
+1,tortured to death
+1,sold into slavery, then died
+1,died of disease
+1,friends of victim seek killer [Fantasy Rivals.RIVALS]
+1,victim's spirit haunts person responsible
+1,person responsible is hated; [Fantasy_Casting_Utilities.DEATH_SITUATIONS_REROLL_1]
+1,curses person responsible--([Fantasy Curses and Blessings.CURSES]) then [Fantasy Legacies.DEATH_SITUATIONS].
+
+
+;SACRIFICE_LIFE
+3,to save character
+2,to save relative
+1,to save [Fantasy Traits.OTHER_PEOPLE]
+

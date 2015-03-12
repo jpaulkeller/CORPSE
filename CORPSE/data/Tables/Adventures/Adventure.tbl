@@ -1,4 +1,5 @@
 / http://donjon.bin.sh/fantasy/adventure/
+/ http://www.dndadventure.com/html/articles/art_adventure_idea_generator.html
 
 : Adventure
 {:WHAT}  {:WHY}  {:WHERE}  {:WHO}  {:HOW}
@@ -10,10 +11,10 @@ A {:Theme} tale where the party attempts to {:goal}.  The basic plot is {:plot},
 They are drawn in because of {:hook}.
 
 : Where 
-It mostly takes place {:general setting}, with key events also at {:specific setting} and {:specific setting}.
+It mostly takes place {:venue}, with key events also at {:specific setting} and {:specific setting}.
 
 : Who
-Aided by {:allies neutral} but opposed by the {:MASTER VILLAIN} and his minions, the {:minor villain} and the {:minor villain}.
+Aided by {:allies} but opposed by the {:ANTAGONIST} and his minions, the {:minor villain} and the {:minor villain}.
 
 : How
 Along the way, they will have to fight a {:monster encounter}, deal with a {:character encounter}, and maybe even avoid getting caught in a {:trap}.
@@ -21,21 +22,34 @@ Along the way, they will have to fight a {:monster encounter}, deal with a {:cha
 : Theme
 action/adventure
 comedy
+destruction
+escort
 espionage
 horror
+investigation
 mystery
+redemption/reclamation/healing
+rescue
 revenge
 romance
+{help|hinder} a prophecy
 
 : Goal
 clear their name
+destroy a threat
 encounter an old villain
 escape
 explore a new area
+gain information
 gain money
 gain power
+gain reputation
+generic treasure
 prevent a war
+protect an ally
 protect endangered NPCs
+recover {Artifact Name}
+recover {Relic}
 rescue NPCs
 retrieve an item
 settle a debt
@@ -44,7 +58,7 @@ thwart a monstrous plan
 win a war
 
 : Hook
-a Hero offended
+a PC offended
 a case of mistaken identity
 a dying delivery
 a mysterious woman
@@ -55,16 +69,20 @@ grim necessity
 legend and rumour
 someone pressing the PC’s buttons
 
-: General Setting
+: Venue
+behind enemy lines
 in a cosmopolitan city
-in a hero’s home town
+in a PC’s home town
 in an exotic distant land
+in hostile territory
+in the wilderness
 in torturous terrain
 on an alternate Plane
 on the road
 on the sea
 under the sea
 underground
+{direction} a {site}
 
 : Specific Setting
 / {: Poetic Destinations.main}
@@ -77,15 +95,19 @@ a magical lake
 a military encampment
 a tavern or inn
 a temple or church
+a {50%{site:adj} }{50%{site:condition} }{~{structure}}
+a {~{structure}} ({site:abandoned})
+a {~{structure}} destroyed by {disaster}
 ancient ruins
 catacombs
 caves of magical folk
+in {Dungeon Name}
 the docks
 the mansion of a powerful NPC
 the palace of the ruler or local lord
 the slums
 
-: Allies Neutral
+: Allies
 absent-minded expert
 arrogant snob
 childhood friend with a dark secret
@@ -103,7 +125,7 @@ talkative barkeep
 tragic fellow hero
 villain ally
 
-: Master Villain
+: Antagonist
 advance agent
 agent provocateur
 avenger
@@ -117,6 +139,8 @@ ravager
 sufferer
 zealot
 {ANTAGONIST}
+{50%un}intelligent {group|individual}
+{humanoid}{50% organization}
 
 : Minor Villain
 / {: Secret Society Title.SecretSocietyName}
@@ -242,18 +266,21 @@ pride
 secret embarrassment
 
 : Complication
+NPC turns traitor
+ally (on par with party)
+ally (to be protected)
+curse
+extreme environment
 heroes must work with villain
 mission is a ruse
-NPC turns traitor
+return of old enemy
+rivals toward same goal
+unexpected mastermind/informant
 villain accompanies party
 villain related to hero
 wanted by the law
 
 ===
-
-Theme Horror
-This type of adventure is designed to scare both the characters and the players. Just having a monster attack
-is not enough for a horror theme; the monster must first frighten the characters.
 
 Goal  Gain Power
 The heroes are on this adventure to gain personal or political power for themselves. They may be looking for
@@ -390,3 +417,10 @@ Sorcerer powerful in the arcane arts, hating the people who burned what was righ
 Atop a mountain strangely shaped are the winds and the clouds incarnate.
 Disguised residence of shadow elves, watchful of intruders.
 Fierce denizens of the southern desert following their visions of fiery god.
+
+// PAX East 2015
+The PCs are asked to investigate a crypt and recover a relic from it. When they arrive, the crypt is locked/bound by magic and someone else is already trying to break in.
+The PCs hear about a town that has had a sudden rush of prosperity under the leadership of a fast-talking man with a powerful gold sceptre. Ever since the townsfolk constructed that strange new statue in the centre of town, they’ve forgotten all about their troubles and woes.
+A mysterious silver object fell from the sky and smashed into a nearby hillside, deep in the territory of a tribe whose diplomatic tact is one of violence rather than peace. Sneaking into their territory to investigate the fallen star won’t be easy.
+During his interrogation, an arrested man has let slip that he was planning on going to a warehouse at the docks that night to purchase a dragon egg from a mysterious seller. The city watch who arrested the man ask the PCs to take his place and purchase the egg to get it off the streets. Additionally, they ask the team to plant a tracking device on the seller of the egg so they can follow him or her back to their base and see what other kinds of contraband they have.
+The PCs offer to help a gnome who owes a lot of money to a violent cartel. They offer to go deep into a nearby forest to recover a rare type of spider silk which will fetch a good price and help the gnome recover her good standing.

@@ -1,6 +1,7 @@
 / http://nowherecollectivenet/2011/09/19/best-random-tables-for-gaming/
 / http://oldguardgamingaccoutrementsblogspotcom/2009/03/100-item-list-of-random-objects-forhtml
 / http://beyondtheblackgateblogspotcom/2011/01/magic-items-for-1st-level-charactershtml
+/ http://random-generator.com/index.php?title=Fantasy_Gifts
 
 / 100 item list of random objects for first level PCs.
 / A while ago, Jeff Rients of Jeff's gameblog was talking about one of the games he ran at a local game store,
@@ -41,6 +42,7 @@ a hand axe and belt sheath
 a hand saw
 a healing ointment of your mothers, heals 2hp per use ({2d3} doses)
 a heavy wool blanket
+a helmet
 a hide of fine leather
 a high quality sharpening stone
 a hoe
@@ -48,9 +50,12 @@ a holy symbol
 a hooded cloak with a dozen inside pockets
 a huntsman's horn
 a jug of pickled eggs
+a key (to unknown lock)
 a large bar of hard soap
 a large copper pot
 a large loaf of tasty bread
+a locked book (no key)
+a locked trunk (no key)
 a long stem pipe and bag of pipe weed
 a map of the kingdom
 a mason's hammer
@@ -69,10 +74,12 @@ a sack of dry beans
 a sack of nuts
 a scroll of sheet music
 a scroll tube containing the deed to an old {site:artificial}
+a sealed bottle
 a set of four chisels
 a set of four horse shoes
 a set of halfling-made gardening tools: trowl, fork, rake, seed hole spike
 a sewing kit
+a shield
 a shortbow and quiver of {3d5} arrows
 a six inch crystal lens
 a small bag of salt, and one of pepper
@@ -83,8 +90,10 @@ a small soapstone carving of a boar
 a small sundial on a necklace
 a snake
 a sock full of sling stones
+a staff
 a stone fire pot
 a straw broom
+a tapestry
 a tattered kilt
 a tiny jar of glitternight dust (a narcotic)
 a tortoise shell hair comb
@@ -93,10 +102,14 @@ a troll hand mounted on a three foot rod it will grasp objects on command
 a very nice squash
 a wax paper packet of {color:simple} dye powder
 a {cat|dog} that followed you into the village
+a {clothing}
 a {metal:precious} signet ring, origin unknown
+a {mount}
+a {musical instrument}
 a {musical instrument}
 a {tiny item} made of {metal:precious}
 an adventurous pixie has decided to become your henchman
+an anachronistic device
 an excellent shepherd's pie
 an extra pair of boots
 an ink pot, quills, and sheaf of paper
@@ -107,9 +120,14 @@ grandfather's {quality} broadsword; an unknown script runs along the inner side 
 ten sticks of chalk
 the flu
 two men-at-arms sworn to six months service armed with chainmail, shield, and spear
+unusual pet--[Fantasy Pets.UNUSUAL_PETS]
+young ward--[Fantasy Life Events.COMPANIONS]
 {10}0 feet of rope
 {4}0 feet of steel wire on a spindle
 {Name}'s guide to mustaches and beards
+{charm}
 {condition} {quality} {equipment}
+{jewelry}
 {made of:hard} dice
+{ornate|ceremonial|{condition:weapon}} {weapon}
 {paper}

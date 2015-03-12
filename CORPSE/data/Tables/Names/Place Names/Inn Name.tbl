@@ -1,3 +1,7 @@
+: Inn Name
+<Tavern={:NAME}>
+
+: names
 {Adjective{!OneWord}} {Fauna{{!OneWithSame}|{!OneWord}}} {80%{Inn Type}}
 {Adjective{!OneWord}} {Inn Type}
 {Adjective{!OneWord}} {Profession#{#{!}:.}[^-_ ]+#} {80%{Inn Type}}

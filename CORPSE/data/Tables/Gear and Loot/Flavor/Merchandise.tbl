@@ -14,7 +14,7 @@ general             fur and pelts
 general             furnishings
 general             materials
 general             gems
-general             jewelery
+general             jewelry
 general             live animals
 general             musical instruments
 general             precious metals
@@ -46,7 +46,7 @@ musical instrument  {musical instrument}
 : Clothing
 accessory            {~{accessory}}
 clothing             {~{clothing}}
-jewelery             {jewelery}
+jewelry              {jewelry}
 footware             {~{shoe}}
 
 : Consumable

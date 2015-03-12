@@ -21,7 +21,7 @@ Food: {{vegetable}+}
 Food: {~{provisions}}
 Footware: {~{shoe}}
 Gem: {gem}
-Jewelery: {jewelery}
+Jewelry: {jewelry}
 Liquid: {liquid}
 Luxury: {luxury}
 Material: {~{made of}}
