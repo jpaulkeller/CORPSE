@@ -6,6 +6,7 @@ import gui.comp.ProgressBar;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -98,7 +99,7 @@ public final class CORPSE
    private JPanel mainPanel;
    private TabPane tabs;
    private TreePanel tables;
-   private TreePanel scripts;
+   private ScriptPanel scripts;
    private ProgressBar progress;
    private JTextField quickSlot;
    private JButton entryButton;
@@ -188,6 +189,28 @@ public final class CORPSE
       // must be done after the GUI is visible
       tables.setDividerLocation(0.25);
       scripts.setDividerLocation(0.25);
+   }
+
+   public void openScript(final String name, final String firstResponse)
+   {
+      Script script = Script.getScript(name);
+      if (script != null)
+      {
+         File file = script.getFile();
+         if (file != null)
+         {
+            int index = tabs.indexOfTab("Scripts");
+            if (index >= 0)
+               tabs.setSelectedIndex(index);
+            script.setFirstResponse(firstResponse);
+            scripts.showResolved(name);
+         }
+      }
+      else
+      {
+         Toolkit.getDefaultToolkit().beep();
+         setText("Missing script: " + name);
+      }
    }
 
    // when the user pressed "ENTER", this fill generate a random entry

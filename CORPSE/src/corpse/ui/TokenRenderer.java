@@ -18,6 +18,8 @@ import javax.swing.JTable;
 
 import org.jdesktop.swingx.JXTable;
 
+import corpse.CORPSE;
+
 /** This will highlight unresolved tokens. */
 
 public class TokenRenderer extends ColoredTableRenderer implements MouseListener, MouseMotionListener
@@ -32,10 +34,17 @@ public class TokenRenderer extends ColoredTableRenderer implements MouseListener
       Pattern.quote(INVALID_OPEN) + "([^!]+)" + Pattern.quote(INVALID_CLOSE);
    private static final Pattern ERROR = Pattern.compile(ERROR_REGEX);
 
-   private static final Pattern LINK = Pattern.compile("(.*)<(.+)>(.*)");
+   private static final Pattern LINK = Pattern.compile("(.*)<(.+)=(.+)>(.*)");
 
+   private CORPSE app;
    private int mouseRow, mouseCol;
    private String link;
+   private String firstResponse;
+   
+   public TokenRenderer (final CORPSE app) 
+   {
+      this.app = app;
+   }
 
    @Override
    public Component getTableCellRendererComponent(final JTable table, final Object value, 
@@ -51,17 +60,21 @@ public class TokenRenderer extends ColoredTableRenderer implements MouseListener
          String linkColor = isSelected ? "yellow" : "blue";
          String html;
          
+         firstResponse = m.group(3); // the text to be displayed to the user
+
          if (mouseRow == row && mouseCol == viewColumn)
          {
-            link = m.group(2);
-            html = "<font color=\"" + linkColor + "\"><u>" + link + "</u></font>";
+            link = m.group(2); // the script name
+            html = "<font color=\"" + linkColor + "\"><u>" + firstResponse + "</u></font>";
          }
          else
          {
             link = null;
-            html = "<font color=\"" + linkColor + "\">" + m.group(2) + "</font>";
+            html = "<font color=\"" + linkColor + "\">" + firstResponse + "</font>";
          }
-         label.setText("<html>" + m.group(1) + html + m.group(3) + "</html>");
+         
+         html = "<html>" + m.group(1) + html + m.group(4) + "</html>";
+         label.setText(html);
       }
 
       if (ERROR.matcher(value.toString()).find())
@@ -74,7 +87,7 @@ public class TokenRenderer extends ColoredTableRenderer implements MouseListener
    public void mouseClicked(MouseEvent e)
    {
       if (link != null)
-         System.out.println("TokenRenderer.mouseClicked(): " + link); // TODO
+         app.openScript(link, firstResponse);
    }
 
    @Override
