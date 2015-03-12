@@ -44,6 +44,7 @@ public final class Script
    private String name;
    private File file;
    private List<String> lines = new ArrayList<>();
+   private String firstResponse;
    private int loopDepth;
    private boolean inSwitch, inSwitchCase = false;
    private String switchValue;
@@ -92,6 +93,11 @@ public final class Script
    public static void togglePrompts()
    {
       promptsEnabled = !promptsEnabled;
+   }
+
+   public void setFirstResponse(final String firstResponse)
+   {
+      this.firstResponse = firstResponse;
    }
    
    public String resolve() // TODO: thread
@@ -235,7 +241,7 @@ public final class Script
       else if (!resolved.trim().isEmpty())
          buf.append(resolved + "\n");
    }
-   
+  
    public String resolve(final String entry)
    {
       String line = entry;
@@ -288,7 +294,12 @@ public final class Script
       {
          String title = "Script: " + getName();
          Object message = m.group(1);
-         String defaultValue = m.group(2);
+         
+         String defaultValue = firstResponse;
+         if (defaultValue == null)
+            defaultValue = m.group(2);
+         else
+            firstResponse = null; // only use it once
          
          // quick-query syntax: Token?? => Token?{Token}
          if (defaultValue != null && defaultValue.equals("?"))
@@ -364,8 +375,9 @@ public final class Script
 
       // Script script = Script.getScript ("Treasure");
       // Script script = Script.getScript ("NPC");
-      Script script = Script.getScript("Potion");
-      String resolved = script.resolve();
+      // Script script = Script.getScript("Potion");
+      Script script = Script.getScript("Monstrosity");
+      String resolved = script.resolve("Malevolent");
       System.out.println("-------------------------------------------------------------");
       if (resolved != null)
          System.out.println(resolved);

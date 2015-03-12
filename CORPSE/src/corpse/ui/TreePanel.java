@@ -168,12 +168,17 @@ public class TreePanel extends JSplitPane implements TabListener
       if (file != null)
       {
          String name = FileUtils.getNameWithoutSuffix(file);
-         int index = tabs.indexOfTab(name);
-         if (index >= 0)
-            tabs.setSelectedIndex(index);
-         else
-            loadRaw(name, 0);
+         openTab(name);
       }
+   }
+
+   public void openTab(final String name)
+   {
+      int index = tabs.indexOfTab(name);
+      if (index >= 0)
+         tabs.setSelectedIndex(index);
+      else
+         loadRaw(name, 0);
    }
 
    private void loadRaw(final String name, final int caret)
@@ -264,7 +269,7 @@ public class TreePanel extends JSplitPane implements TabListener
    {
       DefaultTableModel model = table.getModel();
       
-      TokenRenderer renderer = new TokenRenderer();
+      TokenRenderer renderer = new TokenRenderer(app);
       JXTable view = new TableView(model, name, renderer).getView();
       view.setEditable(false);
       view.getTableHeader().setReorderingAllowed(false);
@@ -406,6 +411,31 @@ public class TreePanel extends JSplitPane implements TabListener
       }
    }
 
+   public void toggleTab(final String name)
+   {
+      JPanel cards = cardsByName.get(name);
+      if (cards != null)
+      {
+         if (cards.getComponentCount() == 1)
+            loadResolved(name, 0);
+         CardLayout layout = (CardLayout) cards.getLayout();
+         layout.next(cards);
+      }
+   }
+   
+   public void showResolved(final String name)
+   {
+      openTab(name);
+      JPanel cards = cardsByName.get(name);
+      if (cards != null)
+      {
+         if (cards.getComponentCount() == 1)
+            loadResolved(name, 0);
+         CardLayout layout = (CardLayout) cards.getLayout();
+         layout.last(cards);
+      }
+   }
+   
    // implement TabListener
    @Override
    public void tabClosed(final String label)
@@ -484,16 +514,7 @@ public class TreePanel extends JSplitPane implements TabListener
       public void mouseClicked(final MouseEvent e)
       {
          if (e.getClickCount() > 1) // support double-click selection
-         {
-            CardLayout layout = (CardLayout) cards.getLayout();
-            if (cards.getComponentCount() == 1)
-            {
-               JLabel label = (JLabel) e.getSource();
-               String name = label.getText();
-               loadResolved(name, 0);
-            }
-            layout.next(cards);
-         }
+            toggleTab(((JLabel) e.getSource()).getText());
       }
    }
 }
