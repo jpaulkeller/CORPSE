@@ -13,6 +13,7 @@ public final class Quantity
    {
       String getRegex();
       Matcher getMatcher();
+      String getToken();
       void setToken(final String token);
       int get();
       int getMin();
@@ -22,6 +23,7 @@ public final class Quantity
 
    abstract static class NumericAdapter implements Numeric
    {
+      private String token;
       private String regex;
       private Pattern pattern;
       private Matcher matcher;
@@ -41,7 +43,14 @@ public final class Quantity
       @Override
       public void setToken(final String token)
       {
+         this.token = token;
          this.matcher = pattern.matcher(token);
+      }
+      
+      @Override
+      public String getToken()
+      {
+         return this.token;
       }
 
       @Override
@@ -574,6 +583,19 @@ public final class Quantity
       return null;
    }
 
+   @Override
+   public String toString()
+   {
+      String type = numeric.getClass().getName().substring("corpse.Quantity$".length());
+      
+      int total = 0;
+      for (int i = 0; i < 1000; i++)
+         total += get();
+      int average = Math.round(total / 1000f);
+      
+      return numeric.getToken() + " " + type + " (avg = " + average + ", max = " + getMax() + ")";
+   }
+
    public static void main(final String[] args)
    {
       List<String> tokens = new ArrayList<String>();
@@ -606,17 +628,7 @@ public final class Quantity
       {
          Quantity qty = Quantity.getQuantity(token);
          if (qty != null)
-         {
-            String type = qty.numeric.getClass().getName().substring("corpse.Quantity$".length());
-            
-            int total = 0;
-            for (int i = 0; i < 1000; i++)
-               total += qty.get();
-            int average = Math.round(total / 1000f);
-               
-            System.out.println(token + " " + type + " = " + qty.resolve() + 
-                               " (avg = " + average + ", max = " + qty.getMax() + ")");
-         }
+            System.out.println(qty);
          else
             System.out.println("Invalid: " + token);
       }

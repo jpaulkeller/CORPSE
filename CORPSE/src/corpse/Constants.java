@@ -23,6 +23,7 @@ public final class Constants
    static final String INCLUDE_CHAR  = "+";
    static final String ONE_OF_CHAR_1 = "|";
    static final String ONE_OF_CHAR_2 = "/";
+   static final String ROLL_CHAR     = "@";
    static final String SUBSET_CHAR   = ":";
    static final String EOF           = "===";
    static final String WEIGHT        = "x ";
@@ -34,7 +35,7 @@ public final class Constants
    static final String NAME = "([A-Z0-9](?: ?[-_A-Z0-9]+){0,10})"; // use {0,10} to avoid infinite loop
    static final String COLUMN_NAME = "([-_A-Z0-9](?: ?[-_A-Z0-9/()]+){0,10})";
    private static final String TABLE_NAME = "([A-Z](?: ?[-_A-Z0-9]+){0,10})"; // use {0,10} to avoid infinite loop
-
+   
    static final Pattern NAME_PATTERN = Pattern.compile(NAME, Pattern.CASE_INSENSITIVE);
    static final Pattern SIMPLE_TABLE = Pattern.compile(TABLE_NAME, Pattern.CASE_INSENSITIVE);
    static final Pattern TOKEN = Pattern.compile("\\{([^{}]+)\\}");
@@ -69,7 +70,7 @@ public final class Constants
    static final Pattern QUERY = Pattern.compile("\\{([^=<>%?]+)[?]([^{}]+)?\\}");
 
    // {Table:Subset.Column#Filter#} 
-   // {Table+#Filter#} means don't use the default subset or column; return the entire line 
+   // {Table!#Filter#} means don't use the default subset or column; return the entire line 
    private static final String SUBSET = "(?:\\" + SUBSET_CHAR + "\\s*" + NAME + "?)?";
    private static final String COLUMN = "(?:\\" + COLUMN_CHAR + COLUMN_NAME + "?)?";
    private static final String FILTER = "(?:\\" + FILTER_CHAR + "([^}]+)" + FILTER_CHAR + ")?";
