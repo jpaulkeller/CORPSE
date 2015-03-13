@@ -40,6 +40,7 @@ public class Table extends ArrayList<String>
 
    private SortedMap<String, Column> columns = new TreeMap<String, Column>();
    private SortedMap<String, Subset> subsets = new TreeMap<String, Subset>();
+   private SortedMap<String, Roll> rolls = new TreeMap<String, Roll>();
    private List<String> imported = new ArrayList<String>();
 
    public static void populate(final File dir)
@@ -199,6 +200,11 @@ public class Table extends ArrayList<String>
       }
       return unresolved;
    }
+   
+   public SortedMap<String, Roll> getRolls()
+   {
+      return rolls;
+   }
 
    public List<String> search(final String pattern)
    {
@@ -270,6 +276,8 @@ public class Table extends ArrayList<String>
             Column.parse(this, line);
          else if (line.startsWith(Constants.SUBSET_CHAR))
             Subset.parse(this, line);
+         else if (line.startsWith(Constants.ROLL_CHAR))
+            Roll.parse(this, line);
          else if (line.startsWith(Constants.COMMENT_CHAR))
             ; // do nothing
          else if (line.trim().length() == 0)
@@ -339,6 +347,11 @@ public class Table extends ArrayList<String>
    void addSubset(final Subset subset)
    {
       subsets.put(subset.getName().toUpperCase(), subset);
+   }
+
+   void addRoll(final Roll roll)
+   {
+      rolls.put(roll.getName().toUpperCase(), roll);
    }
 
    public DefaultTableModel getModel()
@@ -442,6 +455,8 @@ public class Table extends ArrayList<String>
          sb.append("\n  Columns: " + columns);
       if (!subsets.isEmpty())
          sb.append("\n  Subsets: " + subsets);
+      if (!rolls.isEmpty())
+         sb.append("\n  Rolls: " + rolls);
       
       if (!imported.isEmpty())
       {
