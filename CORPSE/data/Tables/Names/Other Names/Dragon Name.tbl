@@ -8,8 +8,8 @@
 : Title
 the {Color:Common}
 the {Color:Metallic}
-the {Bringer|Source} of {Evocative Noun:Negative}
-the {Corrupter|Destroyer} of {Evocative Noun:Positive}
+the {Bringer|Source} of {Evocative Concept:Negative}
+the {Corrupter|Destroyer} of {Evocative Concept:Positive}
 the {Evocative Adj:Not Positive}
 
 : Fictional

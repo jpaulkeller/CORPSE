@@ -1,0 +1,180 @@
+/ http://random-generator.com/index.php?title=Fantasy_Life_Events
+
+: Adult
+had a race specific event.
+had a religious experience.<br/>[Fantasy Religious History.RELIGIOUS_EXPERIENCES]
+was falsely accused of {crime}
+[Fantasy Traits.GOOD_BAD_EVENT]
+joined the military. [Fantasy Military Service.MILITARY_EVENTS]
+had a romance; [Fantasy Romantic History.AH_LOVE]
+{:bad}
+{:good}
+{:exotic}
+acquired a hobby ({hobby})
+became famous for the following event: {:adult}
+became involved in crime. [Fantasy Criminal History.UNDERWORLD_EVENTS]
+became proficient with an unusual weapon
+developed an exotic personality trait ([Fantasy Traits.EXOTIC_PERSONALITY_TRAITS])
+developed expensive tastes
+had an "Androcles and the lion" experience
+had wanderlust and decided to travel
+helped an unusual person, who promised to remember the kindness
+inherited {legacy}
+learned {skill}
+learned {profession}
+learned to use a weapon
+learns a new trade
+participated in a rebellion against local authority
+saved someone's life: {:companion}
+served a patron, who was {:serving}
+
+: Youth
+[Fantasy Life Events.EXOTIC_EVENTS]
+[Fantasy Curses and Blessings.SOMETHING_WONDERFUL]
+{:bad}
+{:good}
+{:exotic}
+{:family upheaval}
+{tragedy}
+family {:family attitudes}
+found a discarded {legacy}
+friend involved in illegal activities: [Fantasy Criminal History.UNDERWORLD_EVENTS]
+gained a friend from among [Fantasy Traits.OTHER_PEOPLE]
+had a race-specific event occur
+had religious experience: [Fantasy Religious History.RELIGIOUS_EXPERIENCES]
+learned {skill}
+learned {profession}
+learned head of household's occupation.
+ran away, and {:runaway}
+riots and unrest were caused by scarcity due to war.
+served a patron, who is {:serving}
+
+: Bad
+acquired a rival: [Fantasy Rivals.RIVALS]
+tragedy occurred: {tragedy}
+was cursed ({curse})
+was molested by [Fantasy Traits.OTHER_PEOPLE]
+
+: Good
+[Fantasy Curses and Blessings.SOMETHING_WONDERFUL]
+acquired a companion: {:companion}
+inherited a large sum of money
+was blessed ({blessing})
+
+: companion
+Companion is a {:companion who}. Companion is a {:companion what}.  Companion joins because {:companion why}.
+
+: companion who
+adventurer: ([Fantasy Occupations.ADVENTURER])
+childhood friend
+family member
+former enemy or rival: ([Fantasy Rivals.RIVALS])
+kid
+{humanoid}
+{humanoid:uncommon}
+sibling
+special
+stranger ([Fantasy Traits.OTHER_PEOPLE])
+talking inanimate object
+
+: companion why
+the companion feels need to protect the character
+the companion hero-worships the character
+the companion originally intended to steal from character
+the companion shared trouble with
+the companion has a mutual enemy ({ANTAGONIST})
+the companion's life was saved by character
+the companion's parents were companions in an adventure
+the companion had a special reason
+the companion had mysterious compulsion to seek out
+the companion is seeking a similar goal
+
+: companion what
+loyal friend
+bumbling buddy
+grim ally
+gung-ho hero
+groaning griper
+good ole boy
+incurable romantic
+
+: Rival Villain
+[Fantasy Rivals.RIVALS]
+[Fantasy Villains.VILLAINS]
+
+: family upheaval
+change cultural level to [Fantasy Character History.BACKGROUND]
+change social level to [Fantasy Character History.SOCIAL_LEVEL]
+changes locale
+head of household changes occupations
+parents split up
+
+: exotic
+a "Moses" event
+a "prisoner of Zenda" event
+a "puss'n'boots" event: {pet:uncommon}
+abducted by "aliens", returns {d10+10} years older without aging mentally
+became acquainted with a PC or notable NPC
+befriended an extremely wealthy person
+befriended an intelligent monster ({monster}).
+deity asked the character to become its agent ({Divine Name})
+discovered the ability to use magical spell as innate talent
+followers of alien god located the character by means of omens
+found cache of treasure in dangerous abandoned area, which raised social status one level
+plagued by detailed dreams, and acquires {4} free skills from dream life
+receive a mysterious object from a dying stranger
+spectacularly complicated coincidence
+stumbled into a magical portal and is transported to current location, far from home
+survived encounter with deadly monster ({monster})
+touched by something magical, which left a lasting impression
+was accompanied by apparently friendly ghost
+was cursed with lycanthropy
+was killed, but resurrected & semi-possessed
+
+: Serving
+a {patron}. Patron's scope is {:patron scope}. {:patron event}
+
+: patron scope
+international
+local
+national
+provincial
+regional
+territorial
+
+: patron event
+character leaves patron's employ after {6} years, with money based on service
+patron appoints the character to run a business ({profession}).
+patron decides character is an enemy and drives character away. patron's agents watch character
+patron dies/is disbanded under suspicious circumstances
+patron introduces character to several very influential people
+patron is outlawed, character is watched by secret police
+patron is ruthless, orders character to commit crimes ({crime}) to further his goals
+patron teaches character an occupation ({profession}).
+patron trains the character for military duty: [Fantasy Military Service.BRANCH_OF_SERVICE] 
+patron's rival threatens character's life ({RIVAL})
+provides formal education
+trains the character in sword
+travelled widely for patron, sees the world
+{:patron love}
+
+: patron love
+falls in love with patron; [Fantasy Romantic History.AH_LOVE]
+falls in love with ward of the patron; [Fantasy Romantic History.AH_LOVE]
+
+: family attitudes
+did not approve of friends
+didn't love
+encouraged interests
+had great plans for child
+loved
+was cold/distant to
+
+: runaway
+fell in with criminals. [Fantasy Criminal History.UNDERWORLD_EVENTS]
+joined the circus
+lived with another race
+never returns home
+returned after {2d4} {duration:long}s
+travelled to a distant land
+wandered the land, improved survival skill (choice)

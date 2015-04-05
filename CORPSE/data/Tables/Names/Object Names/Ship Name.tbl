@@ -4,20 +4,20 @@
 : Ship Name
 {Adjective} {Aquatic}
 {Nautical Adj} {Fauna}
-{Adjective} {Title Feudal:Noble}
-{Appearance} {Fauna{!MaybeSameFirstLetter}}
-{Appearance} {Title Feudal:Noble}
-{Color:Basic} {Fauna{!MaybeSameFirstLetter}}
-{Color:Basic} {Title Feudal:Noble}
-{Evocative Adj} {Title Religious}
+{Adjective} {Feudal:Noble Rank}
+{Appearance} {Fauna{!MaybeSameFirst}}
+{Appearance} {Feudal:Noble Rank}
+{Color:Basic} {Fauna{!MaybeSameFirst}}
+{Color:Basic} {Feudal:Noble Rank}
+{Evocative Adj} {Religious Rank}
 {Noise} {:Nautical Noun}
-{Trait} {Evocative Noun{!MaybeSameFirstLetter}}
-{Trait} {Fauna{!MaybeSameFirstLetter}}
-{Trait:Good} {Title Feudal:Noble}
+{Trait} {Evocative Concept{!MaybeSameFirst}}
+{Trait} {Fauna{!MaybeSameFirst}}
+{Trait:Good} {Feudal:Noble Rank}
 {:Pirate}
 
 : Pirate
-{25%The }{Evocative Adj:Negative} {Evocative Noun:Not Positive{!OneWord}}
+{25%The }{Evocative Adj:Negative} {Evocative Concept:Not Positive{!OneWord}}
 {25%The }{:Subject}'s {:Object}
 {10%The }{:Object} of the {:Subject}
 {25%The }{Noise} {Profession:Criminal}
@@ -31,7 +31,7 @@ Night
 Ocean
 Pirate
 Strumpet
-{Evocative Noun}
+{Evocative Concept}
 {Generated Name}
 
 : Object

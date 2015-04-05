@@ -265,6 +265,7 @@ Weather
 Wilderness Lore
 {:Place}
 {Domain:All}
+{Evocative Concept}
 {Evocative Noun}
 {Group Name}
 {Humanoid} {Castes|Clans|Customs|Tribes} of the {:Place}
@@ -391,7 +392,7 @@ Why {{Humanoid}+} Cannot be Trusted to Sell {Merchandise} at a Fair Price
 {Domain:All} for {Dummies|Goblins|Kobolds}
 {Domain} for Beginners
 {Domain} {:Short} of the {Group Name}
-{Domain}: The {Title Guild}'s Handbook
+{Domain}: The {Guild Rank}'s Handbook
 {Dwarven|Elven|Orcish} Rituals Explained
 {Dwarven|Orcish} Rites of Passage
 {Evocative Adj:Negative} Happenings: A {:Category} {:of} the {Cataclysm} 

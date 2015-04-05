@@ -1,6 +1,10 @@
 / Sources: TSR DM's Guide 2nd edition, page 114
 / vs disposition / attitude / mood / reaction?
 
+: Trait = Good + Neutral + Bad
+: Not Good = Bad + Neutral
+: Not Bad = Good + Neutral
+
 : Good
 able
 admirable
@@ -21,6 +25,7 @@ careful
 charitable
 charming
 cheerful
+chivalrous
 clean
 clever
 compassionate
@@ -31,7 +36,10 @@ courageous
 cultured
 daring
 dashing
+dedicated
 dependable
+devoted
+devout
 dignified
 diligent
 diplomatic
@@ -49,6 +57,7 @@ fearless
 fit
 forgiving
 friendly
+gallant
 generous
 gifted
 giving
@@ -62,6 +71,7 @@ happy
 hard working
 hardy
 helpful
+heroic
 holy
 honest
 honorable
@@ -69,6 +79,7 @@ humble
 imaginative
 innocent
 intellectual
+just
 keen
 kind
 kind-hearted
@@ -95,7 +106,6 @@ patient
 peaceful
 peacemaker
 perceptive
-perseverant
 pious
 pleasant
 polished
@@ -108,6 +118,7 @@ renowned
 resolute
 respectful
 reverent
+righteous
 romantic
 royal
 self-confident
@@ -132,6 +143,7 @@ trusting
 trustworthy
 truthful
 valiant
+valorous
 vigorous
 virtuous
 well-mannered
@@ -183,9 +195,6 @@ deceitful
 delirious
 depraved
 depressing
-despot
-destroyer
-devastator
 dishonest
 dishonorable
 disloyal
@@ -201,6 +210,7 @@ excruciating
 fat
 fawning
 fearsome
+feral
 fickle
 filthy
 fishy
@@ -316,6 +326,7 @@ aloof
 ambitious
 amoral
 arcane
+ardent
 atheistic
 audacious
 augmentative
@@ -361,6 +372,7 @@ fanatical
 fatalistic
 fearless
 fearsome
+fierce
 fiery
 flamboyant
 foolhardy
@@ -481,6 +493,3 @@ unhappy
 unstoppable
 vengeful
 wrathful
-
-: Not Good = Bad + Neutral
-: Not Bad = Good + Neutral

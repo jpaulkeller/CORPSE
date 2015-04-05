@@ -1,6 +1,6 @@
 : Artifact
-{Evocative Adj:Positive} {~{:Object}} of {Evocative Noun:Positive}
-{Evocative Adj:Negative} {~{:Object}} of {Evocative Noun:Negative}
+{Evocative Adj:Positive} {~{:Object}} of {Evocative Concept:Positive}
+{Evocative Adj:Negative} {~{:Object}} of {Evocative Concept:Negative}
 {Generated Name}'s {Metal:Enchantable} {~{:Object}}
 {Evocative Adj} {~{Organ}} of {Generated Name}
 

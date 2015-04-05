@@ -25,9 +25,9 @@
 
   <li><b>Life Path</b>
   <ul>
-    <li>===Childhood Events===[Fantasy Life Events.EVENTS_OF_YOUTH]<br/>
-    <li>===Adolescent Events===[Fantasy Life Events.EVENTS_OF_YOUTH]<br/>
-    <li>===Adult Events===[Fantasy Life Events.EVENTS_OF_ADULTHOOD]<br/>
+    <li>Childhood Events: {life events:youth}
+    <li>Adolescent Events: {life events:youth}
+    <li>Adult Events: {life events:adult}
   </ul>
 </ul>
 

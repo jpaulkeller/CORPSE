@@ -18,6 +18,21 @@ admiral
 field marshal
 supreme commander
 
-: Title Military {4, 19}
+: Military Rank {4, 19}
 
 / Source: http://en.wikipedia.org/wiki/Category:Military_ranks
+
+: Position 
+aide-de-camp
+brigadier
+centurion
+lance corporal
+marshal
+provost marshal
+seargent-major
+specialist
+spy
+spymaster
+standard-bearer
+tactician
+{:military rank}

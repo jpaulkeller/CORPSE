@@ -2,6 +2,6 @@ A {50%{mood}} {Humanoid} named {Name}
 A {50%{mood}} {profession} named {Name}
 A {50%{mood}} {pseudo class} named {Name}
 The {#{Profession!#.*craftsman.*#}:^(.+?)  } Guild
-The {20%{adjective}} {title}
-{Title Feudal:Noble} {Name}
-{Title Religious} {Name}
+The {20%{adjective}} {rank}
+{Feudal Rank:Noble} {Name}
+{Religious Rank} {Name}

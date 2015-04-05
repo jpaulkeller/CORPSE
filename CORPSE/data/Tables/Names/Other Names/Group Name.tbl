@@ -8,23 +8,87 @@ The {:Group} of the {20%{Gem}} {Weapon{!OneWord}}
 The {:Group} of the {20%{{Gem|Metal:Special|Color:Basic|Adjective}}} {{Weapon{!OneWord}|Fauna|Tiny Item}}
 The {:Group} of the {~{Tiny Item{!OneWord}}}{20% and {~{Tiny Item{!OneWord}}}}
 The {{Color:Basic|Gem}} {:Group}
-{Name}'s {{Creature{!SameFirstLetter}}+}
-{Name}'s {{Fauna{!MaybeSameFirstLetter}}+}
-{Name}'s {{~{Tiny Item{!MaybeSameFirstLetter}}}+}
-{Name}'s {{Weapon{!MaybeSameFirstLetter}}+}
-{Name}'s {:Group{!MaybeSameFirstLetter}}
+{Name}'s {{Mythical Creature{!SameFirst}}+}
+{Name}'s {{Fauna{!MaybeSameFirst}}+}
+{Name}'s {{~{Tiny Item{!MaybeSameFirst}}}+}
+{Name}'s {{Weapon{!MaybeSameFirst}}+}
+{Name}'s {:Group{!MaybeSameFirst}}
 
 : Group
+adherents
 adventurers
+affiliation
+affinity
+alliance
+army
+assemblage
+association
+band
+brigade
+brotherhood
+brothers
+builders
 circle
+clan
+coalition
+collective
+college
+column
+community
 company
+comrades
+confederacy
+congress
+consortium
+corps
+coterie
 council
+court
+coven
 covenant
 crusaders
+daughters
+devotees
+disciples
+family
+fathers
 fellowship
+folk
+followers
+fraternity
+guardians
 guild
 heroes
+high council
+horde
+house
+keepers
+kinfolk
+kinship
+knights
+league
 legion
-saviors
+men
+militia
+ministry
 order
+parliament
+patrons
+phalanx
+preservers
+quorum
+regiment
+saviors
+school
+seekers
+servants
+sisterhood
+sisters
+society
+students
+supporters
+swarm
+syndicate
+templars
+union
 wayfarers

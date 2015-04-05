@@ -1,0 +1,277 @@
+: Evocative Concept = Positive + Neutral + Negative
+: Not Positive = Negative + Neutral
+: Not Negative = Positive + Neutral
+
+: Positive
+beauty
+birth
+blessings
+compassion
+creation
+destiny
+growth
+harmony
+healing
+heart
+heaven
+hope
+joy
+justice
+laughter
+life
+light
+love
+luck
+mercy
+peace
+prosperity
+radiance
+resurrection
+riches
+victory
+
+: Neutral
+augury
+binding
+civilization
+clouds
+command
+conjuration
+conquest
+crown
+demand
+desire
+diaspora
+diversion
+doors
+dragons
+dreams
+dust
+dweomer
+dynasty
+echoes
+enchantment
+evocation
+eyes
+fate
+fever
+fire
+flame
+flesh
+fog
+forgiveness
+fright
+frost
+fury
+gates
+ghosts
+gold
+grace
+ice
+idols
+insult
+iron
+kings
+legend
+life
+lightning
+magic
+meteors
+miracles
+mirage
+mirror
+oaths
+phantom
+pity
+portals
+prophecy
+refuge
+retreat
+retribution
+revenge
+roar
+runes
+scales
+servant
+shield
+sigil
+silver
+sleep
+song
+storms
+suggestion
+summoning
+swords
+the anchor
+the dance
+the dawn
+the earth
+the globe
+the goddess
+the gods
+the harvest
+the heavens
+the mist
+the nameless
+the pattern
+the scourge
+the sea
+the sky
+the soul
+the sphere
+the stars
+the stone
+the sun
+the talisman
+the void
+the world's edge
+thunder
+tide
+tower
+travel
+truth
+vault
+veil
+vengeance
+vigour
+visage
+vision
+vista
+wall
+war
+ward
+wealth
+web
+weird
+whimsy
+whisper
+wind
+wisdom
+witchcraft
+word
+wrath
+youth
+{number:twototwelve}
+
+: Negative
+affliction
+anger
+anguish
+banishment
+blindness
+blood
+bondage
+bones
+broken promises
+calamity
+cataclysm
+catastrophe
+chaos
+contagion
+conquest
+curses
+damnation
+darkness
+death
+decay
+deceit
+defeat
+deformity
+demons
+desire
+desolation
+despair
+destruction
+devastation
+deviltry
+disasters
+disgrace
+dissolution
+distress
+doom
+dread
+envy
+evil
+famine
+fatality
+fear
+fire
+forgotten dreams
+frost
+fury
+gloom
+gluttony
+greed
+hatred
+hells
+horrors
+hunger
+ichor
+insanity
+iron
+lies
+lost souls
+lust
+madness
+malice
+misery
+misfortune
+mists
+monsters
+mystery
+necromancy
+night
+no return
+oblivion
+pain
+peril
+pestilence
+phantasms
+plague
+pride
+rage
+ruin
+scourge
+secrets
+shadow
+shadows
+sigils
+skulls
+slaughter
+slime
+sloth
+sorcery
+sorrow
+souls
+starvation
+strife
+suffering
+terror
+the abyss
+the ancients
+the curse
+the dead
+the dweller{s|} in the {dark site}
+the gloom
+the inferno
+the lost
+the old ones
+the swarm
+the undead
+the undercity
+the underworld
+the unholy
+the unknown
+the {3-13} geases
+the {evocative adj} cult
+the {evocative adj} idol
+the {evocative adj} one{s|}
+the {monster}{s|}
+torment
+tragedy
+treachery
+trickery
+trouble
+war
+woe
+wrath

@@ -1,4 +1,3 @@
-: Age {4, 7}
 very young
 young
 adolescent
@@ -6,6 +5,8 @@ mature
 middle-aged
 old
 ancient
+
+: Age {4, 7}
 
 : Detail
 / http://random-generator.com/index.php?title=Captain_of_the_city_watch

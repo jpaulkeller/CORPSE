@@ -4,269 +4,272 @@
 10x {:Female}
 
 : Male
-2x {:Firsting} {:Last}
-2x {:Firsts}-{:Like}-{:Last}
-1x He-Who-{:FirstsVerb}
+2x {:Adj} {:Last}
+2x {:First}-{:Like}-{:Last}
+He-Who-{:Verb}
 
 : Female
-2x {:Firsting} {:FemaleLast}
-2x {:Firsts}-{:Like}-{:Last}
-1x She-Who-{:FirstsVerb}
+2x {:Adj} {:Female Last}
+2x {:First}-{:Like}-{:Last}
+She-Who-{:Verb}
 
 : Like
 3x As
 3x Like
 3x With
-1x About
-1x Above
-1x After
-1x Before
-1x Behind
-1x Below
-1x By
-1x For
-1x Near
-1x Of
-1x On
-1x Under
-1x Within
+About
+Above
+After
+Before
+Behind
+Below
+By
+For
+Near
+Of
+On
+Under
+Within
 
-: Firsts
-1x Bends
-1x Big
-1x Bites
-1x Black
-1x Blue
-1x Brown
-1x Cool
-1x Cold
-1x Crazy
-1x Cunning
-1x Dances
-1x Dark
-1x Dreams
-1x Eyes
-1x Falls
-1x Fierce
-1x Fights
-1x Glides
-1x Green
-1x Hides
-1x Light
-1x Little
-1x Mauls
-1x Mighty
-1x Pounces
-1x Red
-1x Runs
-1x Screams
-1x Shouts
-1x Sings
-1x Soars
-1x Stalks
-1x Stands
-1x Steps
-1x Strikes
-1x Strong
-1x Sturdy
-1x Talks
-1x Swims
-1x Walks
-1x Warm
-1x Whispers
-1x White
-1x Wild
-1x Wise
-1x Yellow
+: First
+Bends
+Big
+Bites
+Black
+Blue
+Brown
+Cool
+Cold
+Crazy
+Cunning
+Dances
+Dark
+Dreams
+Eyes
+Falls
+Fierce
+Fights
+Glides
+Green
+Hides
+Hunts
+Light
+Little
+Mauls
+Mighty
+Pounces
+Red
+Runs
+Screams
+Shouts
+Sings
+Soars
+Stalks
+Stands
+Steps
+Strikes
+Strong
+Sturdy
+Talks
+Swims
+Walks
+Warm
+Whispers
+White
+Wild
+Wise
+Yellow
+{Number:Ten}
 
-: FirstsVerb
-1x Bends
-1x Bites
-1x Calls
-1x Dances
-1x Dreams
-1x Falls
-1x Fights
-1x Follows
-1x Gathers
-1x Glides
-1x Hides
-1x Hunts
-1x Leads
-1x Mauls
-1x Pounces
-1x Runs
-1x Screams
-1x Shouts
-1x Sings
-1x Soars
-1x Stalks
-1x Stands
-1x Steps
-1x Strikes
-1x Talks
-1x Tracks
-1x Swims
-1x Walks
-1x Whispers
+: Verb
+Bends
+Bites
+Calls
+Dances
+Dreams
+Falls
+Fights
+Follows
+Gathers
+Glides
+Hides
+Hunts
+Leads
+Mauls
+Pounces
+Runs
+Screams
+Shouts
+Sings
+Soars
+Stalks
+Stands
+Steps
+Strikes
+Talks
+Tracks
+Swims
+Walks
+Whispers
 
-: Firsting
-1x Big
-1x Black
-1x Bloody
-1x Blue
-1x Brown
-1x Burning
-1x Cool
-1x Cold
-1x Cowardly
-1x Crazy
-1x Cunning
-1x Dancing
-1x Dark
-1x Elder
-1x Falling
-1x Fierce
-1x Fighting
-1x Flying
-1x Gliding
-1x Great
-1x Green
-1x Hidden
-1x Light
-1x Little
-1x Long
-1x Mighty
-1x Mountain
-1x Quiet
-1x Red
-1x Running
-1x Screaming
-1x Shouting
-1x Silent
-1x Singing
-1x Sitting
-1x Soaring
-1x Squatting
-1x Standing
-1x Strong
-1x Swimming
-1x Talking
-1x Walking
-1x Whispering
-1x White
-1x Wild
-1x Wise
-1x Yellow
+: Adj
+Big
+Black
+Bloody
+Blue
+Brown
+Burning
+Cool
+Cold
+Cowardly
+Crazy
+Cunning
+Dancing
+Dark
+Elder
+Falling
+Fierce
+Fighting
+Flying
+Gliding
+Great
+Green
+Hidden
+Light
+Little
+Long
+Mighty
+Mountain
+Quiet
+Red
+Running
+Screaming
+Shouting
+Silent
+Singing
+Sitting
+Soaring
+Squatting
+Standing
+Strong
+Swimming
+Talking
+Walking
+Whispering
+White
+Wild
+Wise
+Yellow
 
-: FemaleLast
-1x Badger
-1x Beaver
-1x Bird
-1x Branch
-1x Brook
-1x Cat
-1x Cougar
-1x Coyote
-1x Deer
-1x Dream
-1x Duck
-1x Feather
-1x Fox
-1x Ghost
-1x Grass
-1x Hill
-1x Jade
-1x Lynx
-1x Mare
-1x Moon
-1x Panther
-1x Princess
-1x Rabbit
-1x Rain
-1x Raven
-1x River
-1x Snow
-1x Spirit
-1x Squaw
-1x Star
-1x Stream
-1x Sun
-1x Tree
-1x Water
-1x Wind
+: Female Last
+Badger
+Beaver
+Bird
+Branch
+Brook
+Cat
+Cougar
+Coyote
+Deer
+Dream
+Duck
+Feather
+Fox
+Ghost
+Grass
+Hill
+Jade
+Lynx
+Mare
+Moon
+Panther
+Princess
+Rabbit
+Rain
+Raven
+River
+Snow
+Spirit
+Squaw
+Star
+Stream
+Sun
+Tree
+Water
+Wind
 
 : Last
-1x Arrow
-1x Ash
-1x Axe
-1x Badger
-1x Bear
-1x Beaver
-1x Bird
-1x Bow
-1x Branch
-1x Brave
-1x Brook
-1x Buffalo
-1x Bull
-1x Claw
-1x Coal
-1x Cougar
-1x Coyote
-1x Crow
-1x Deer
-1x Dog
-1x Dream
-1x Duck
-1x Eagle
-1x Feather
-1x Fire
-1x Fish
-1x Flint
-1x Foot
-1x Fox
-1x Ghost
-1x Goose
-1x Grass
-1x Hatchet
-1x Hawk
-1x Healer
-1x Hill
-1x Horse
-1x Jade
-1x Knife
-1x Lizard
-1x Lynx
-1x Moon
-1x Mountain
-1x Oak
-1x Onyx
-1x Otter
-1x Ox
-1x Panther
-1x Paw
-1x Pine
-1x Prairie
-1x Rabbit
-1x Rain
-1x Raven
-1x River
-1x Rock
-1x Salmon
-1x Snake
-1x Snow
-1x Spear
-1x Spirit
-1x Squirrel
-1x Stone
-1x Stream
-1x Sun
-1x Tree
-1x Trout
-1x Turtle
-1x Warrior
-1x Water
-1x Wind
-1x Wolf
-1x Wolverine
+Arrow
+Ash
+Axe
+Badger
+Bear
+Beaver
+Bird
+Bow
+Branch
+Brave
+Brook
+Buffalo
+Bull
+Claw
+Coal
+Cougar
+Coyote
+Crow
+Deer
+Dog
+Dream
+Duck
+Eagle
+Feather
+Fire
+Fish
+Flint
+Foot
+Fox
+Ghost
+Goose
+Grass
+Hatchet
+Hawk
+Healer
+Hill
+Horse
+Jade
+Knife
+Lizard
+Lynx
+Moon
+Mountain
+Oak
+Onyx
+Otter
+Ox
+Panther
+Paw
+Pine
+Prairie
+Rabbit
+Rain
+Raven
+River
+Rock
+Salmon
+Shadow
+Snake
+Snow
+Spear
+Spirit
+Squirrel
+Stone
+Stream
+Sun
+Tree
+Trout
+Turtle
+Warrior
+Water
+Wind
+Wolf
+Wolverine

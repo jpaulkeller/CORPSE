@@ -170,6 +170,8 @@ windmill
 winery
 zoo
 {25%stone }cottage
+{:cemetery}
+{:religious}
 
 : Cemetery
 abbey

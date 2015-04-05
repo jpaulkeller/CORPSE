@@ -19,9 +19,9 @@ emperor;empress
 
 . Male
 . Female
-. Title Feudal = Male
+. Feudal Rank = Male
 
 : Noble {7-18}
-: Title Feudal {4,18}
+: Feudal Rank {4,18}
 
 / http://en.wikipedia.org/wiki/Category:Noble_titles

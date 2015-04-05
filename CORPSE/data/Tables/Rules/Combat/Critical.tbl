@@ -10,7 +10,7 @@ slashing: {:slashing}
 piercing: {:piercing}
 magical: {:magical}
 
-: General
+: general
 Anything in the off-hand (shield, lamp etc) is dropped.
 Armour pierced: as well as normal damage, the target's armour is less effective. Roll again if the attacker's weapon is blunt (for example a club), or if the target has no armour or 'natural armour' (tough skin etc).
 As well as normal damage, the victim gains a permanent scar on his {face|arm|leg|chest|stomach|back|neck}.
@@ -34,42 +34,42 @@ weapon deals damage as a normal critical
 {:bludgeoning-special}
 
 : bludgeoning-special
-opponent's hand is {:bludgeoning-adj}; weapon does standard damage and opponent gains -1 to attack
 opponent has 1d4 fingers broken; weapon does standard damage and opponent's hand is now useless until healed (roll randomly to determine which hand. DC 10 plus damage dealt Fort save negates hand becoming useless)
-opponent's toe is {:bludgeoning-adj}; weapon does standard damage and opponent is reduced to one half movement speed until healed
+opponent's arm is {:bludgeoning-adj}; weapon deals 1d4 Dex damage instead of standard damage
+opponent's arm is {:bludgeoning-adj}; weapon deals standard damage and provides a free disarm attempt (as if attacker had Improved Disarm feat)
+opponent's armor is {:bludgeoning-adj}; weapon deals standard damage to opponent, and 2d6 to opponent's armor (ignoring hardness)
+opponent's armor is {:bludgeoning-adj}; weapon deals standard damage to opponent, and opponent's armor check penalty is doubled, max Dex bonus halved until fixed (DC 15 craft)
+opponent's face is {:bludgeoning-adj}; weapon deals 1d6 Chr damage instead of standard damage. Opponent's bite attack is at -2 to hit
+opponent's face is {:bludgeoning-adj}; weapon deals standard damage, and opponent is blind for 1 round
+opponent's face is {:bludgeoning-adj}; weapon deals standard damage, and opponent is deafened in one ear until healed
 opponent's foot is {:bludgeoning-adj}; weapon does standard damage and opponent is reduced to one quarter movement speed until healed
-opponent's leg is {:bludgeoning-adj}; weapon does standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
-opponent's leg is {:bludgeoning-adj}; weapon does standard damage and opponent is reduced to one half movement speed until healed
-opponent's knee is {:bludgeoning-adj}; weapon does standard damage and opponent is reduced to one quarter movement speed until healed
+opponent's gut is {:bludgeoning-adj}; weapon deals 1d4 Con damage instead of standard damage
+opponent's gut is {:bludgeoning-adj}; weapon deals standard damage, and opponent must make DC 10 plus damage dealt Fort save or fall prone
+opponent's hand is {:bludgeoning-adj}; weapon does standard damage and opponent gains -1 to attack
+opponent's head is {:bludgeoning-adj}; weapon deals 1d4 Int damage instead of standard damage
+opponent's head is {:bludgeoning-adj}; weapon deals standard damage and opponent is stunned for 1 round
+opponent's head is {:bludgeoning-adj}; weapon deals standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
 opponent's hip is {:bludgeoning-adj}; weapon deals 1d4 Dex damage instead of standard damage
 opponent's hip is {:bludgeoning-adj}; weapon deals standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
 opponent's knee is {:bludgeoning-adj}; weapon deals 1d4 Dex damage instead of standard damage
 opponent's knee is {:bludgeoning-adj}; weapon deals standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
-opponent's arm is {:bludgeoning-adj}; weapon deals standard damage and provides a free disarm attempt (as if attacker had Improved Disarm feat)
-opponent's arm is {:bludgeoning-adj}; weapon deals 1d4 Dex damage instead of standard damage
-opponent's shoulder is {:bludgeoning-adj}; weapon deals standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
-opponent's shoulder is {:bludgeoning-adj}; weapon deals standard damage and opponent gains -1 to attack
-opponent's shoulder is {:bludgeoning-adj}; weapon deals 1d4 Str damage instead of standard damage
-opponent's gut is {:bludgeoning-adj}; weapon deals standard damage, and opponent must make DC 10 plus damage dealt Fort save or fall prone
-opponent's gut is {:bludgeoning-adj}; weapon deals 1d4 Con damage instead of standard damage
-opponent's ribs are {:bludgeoning-adj}; weapon deals standard damage, and opponent is stunned for 1 round
+opponent's knee is {:bludgeoning-adj}; weapon does standard damage and opponent is reduced to one quarter movement speed until healed
+opponent's leg is {:bludgeoning-adj}; weapon does standard damage and opponent is reduced to one half movement speed until healed
+opponent's leg is {:bludgeoning-adj}; weapon does standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
+opponent's neck is {:bludgeoning-adj}; weapon deals standard damage, and opponent must make DC 10 plus damage dealt Fort save or be paralyzed for 2d4 rounds
 opponent's ribs are {:bludgeoning-adj}; weapon deals standard damage, and opponent gains -2 to attack
-opponent's head is {:bludgeoning-adj}; weapon deals standard damage and opponent is stunned for 1 round
-opponent's head is {:bludgeoning-adj}; weapon deals 1d4 Int damage instead of standard damage
-opponent's head is {:bludgeoning-adj}; weapon deals standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
-opponent's face is {:bludgeoning-adj}; weapon deals 1d6 Chr damage instead of standard damage. Opponent's bite attack is at -2 to hit
-opponent's face is {:bludgeoning-adj}; weapon deals standard damage, and opponent is blind for 1 round
-opponent's face is {:bludgeoning-adj}; weapon deals standard damage, and opponent is deafened in one ear until healed
+opponent's ribs are {:bludgeoning-adj}; weapon deals standard damage, and opponent is stunned for 1 round
+opponent's shoulder is {:bludgeoning-adj}; weapon deals 1d4 Str damage instead of standard damage
+opponent's shoulder is {:bludgeoning-adj}; weapon deals standard damage and opponent gains -1 to attack
+opponent's shoulder is {:bludgeoning-adj}; weapon deals standard damage and provides a free trip attempt (as if attacker had Improved Trip feat)
 opponent's throat is {:bludgeoning-adj}; if opponent breathes, they choke and start to drown (make DC 10 Con check). Otherwise weapon deals double damage
 opponent's throat is {:bludgeoning-adj}; weapon deals standard damage, and opponent cannot speak until healed
-opponent's neck is {:bludgeoning-adj}; weapon deals standard damage, and opponent must make DC 10 plus damage dealt Fort save or be paralyzed for 2d4 rounds
-opponent's armor is {:bludgeoning-adj}; weapon deals standard damage to opponent, and 2d6 to opponent's armor (ignoring hardness)
-opponent's armor is {:bludgeoning-adj}; weapon deals standard damage to opponent, and opponent's armor check penalty is doubled, max Dex bonus halved until fixed (DC 15 craft)
-weapon deals standard damage and opponent is sickened for 1d6 rounds
-weapon deals double damage to opponent, and standard damage to one adjacent opponent
+opponent's toe is {:bludgeoning-adj}; weapon does standard damage and opponent is reduced to one half movement speed until healed
 weapon deals double damage and attacker gets a free attack at -5 against the opponent
 weapon deals double damage to opponent, and 2d6 nonlethal damage
+weapon deals double damage to opponent, and standard damage to one adjacent opponent
 weapon deals no damage, but provides a free sunder attempt (as if attacker had Improved Sunder feat)
+weapon deals standard damage and opponent is sickened for 1d6 rounds
 
 : bludgeoning-adj
 crushed
@@ -80,7 +80,7 @@ bashed
 
 : slashing
 weapon deals damage as a normal critical
-{:slashing-special}
+{:slashing-special}{10%; target bleeds for {6} rounds}
 
 : slashing-special
 opponent's hand is {:slashing-adj}; weapon does standard damage and opponent gains -1 to attack
@@ -180,6 +180,7 @@ spell causes {:magical-adj} sympathy; spell deals standard damage, and caster in
 the spell has opened a wild {:magical-adj} rift, and the spell does normal damage plus the same amount of {element} damage
 the spell has opened a wild {:magical-adj} rift, and the spell does double damage, all of it {element} damage
 spell causes {:magical-adj} rift; spell deals standard damage, and opponent is sent to a random plane (Will save DC 5 plus damage dealt to negate plane shift)
+spell causes double damage, and target glows like Faerie Fire for {2d4} rounds
 
 : magical-adj
 alchemical
@@ -195,3 +196,39 @@ otherworldly
 spellweave
 supernatural
 unnatural
+
+: Failure
+general: {:general fail}
+melee: {:melee fail}
+ranged: {:ranged fail}
+magical: {:magical fail}
+
+: general fail
+fatigued
+sickened for {4} rounds
+you may only take 1 action next round
+unable to use the same attack for 1 round
+{:general}
+
+: melee fail
+provoke an attack of opportunity from all adjacent opponents
+your weapon flies {2d6} yards to the {compass}
+{:general fail}
+
+: ranged fail
+{:general fail}
+
+: magical fail
+caster takes 1 point of bleed
+caster takes {2d6} fire damage
+save vs Fortitude or stunned for 1 round
+spawn {d4+2} mirror images of your target
+spell opens a rift and summons a {monster}
+spell range reduced to zero
+target gains DR 5/- for {4} rounds
+target gains spell resistance equal to 11 + caster level for {6} rounds
+{3} active spell effects are removed from the caster
+{:general fail}
+{curse:effect}
+{phobia} for {6} rounds
+{scroll mishap}

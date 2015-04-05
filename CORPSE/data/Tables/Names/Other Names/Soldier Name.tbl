@@ -1,5 +1,5 @@
 : Soldier Name
-{Title Military} {Name}
+{Military Rank} {Name}
 
 ===
 
@@ -24,9 +24,9 @@
 : MaleName
 {:ScottishMale.main}
 {:SGNP celtic.male}
-{:Catholic Saint Names.main}
+{Saint Name}
 {:DitV Male Name.FirstName}
-{:Catholic Saint Names.main} {:Fantasy Names.Surname}
+{Saint Name} {:Fantasy Names.Surname}
 {:DitV Male Name.FirstName} {:Fantasy Names.Surname}
 
 : Rank

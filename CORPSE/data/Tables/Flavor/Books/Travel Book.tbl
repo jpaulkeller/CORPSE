@@ -1,5 +1,5 @@
 : Travel Book
-The {:Subject} of {20%{Title} }{Name}{20% the {Evocative Title}}
+The {:Subject} of {20%{Rank} }{Name}{20% the {Evocative Title}}
 {:Gerund} {around|to|through} the {Region}
 
 : Subject

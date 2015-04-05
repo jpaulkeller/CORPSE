@@ -1,0 +1,48 @@
+acolyte
+brother
+friar
+prelate
+vicar
+prior
+deacon
+abbot
+priest
+bishop
+missionary
+apostle
+high priest
+archbishop
+cardinal
+pope
+
+: Religious Rank {5, 16}
+
+/ Source: http://en.wikipedia.org/wiki/Category:Religious_leaders
+
+: Position
+accensor
+adherent
+alderman
+almoner
+anchorite
+attendant
+brother
+caliph{50%ate}
+cantor
+catechist
+celebrant
+chaplain
+confirmand
+consecrator
+curate
+follower
+hierophant
+initiate
+inquisitor
+missionary
+monk
+novice
+postulant
+{cult title}
+{profession:religious}
+{:religious rank}

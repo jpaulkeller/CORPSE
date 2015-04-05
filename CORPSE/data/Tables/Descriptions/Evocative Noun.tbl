@@ -1,277 +1,226 @@
-: Evocative Noun = Positive + Neutral + Negative
-: Not Positive = Negative + Neutral
-: Not Negative = Positive + Neutral
-
-: Positive
-beauty
+academy
+aeons
+air
+altar
+answer{50%s}
+ark
+army
+artifact
+art{50%s}
+aurora
+awareness
+balance
+band
+banner
+bear{50%s}
+beast
 birth
-blessings
-compassion
-creation
+blade{50%s}
+bloodline
+book
+cauldron
+ceremonies
+chalice
+children
+choice
+chrysanthemum
+cloud{50%s}
+college
+comet{50%s}
+command
+company
+complex
+consciousness
+country
+court
+craft{50%s}
+cross
+crown
+cup
+dance{50%s}
+dawn
+deeds
+deep
+degree
+depth{50%s}
+desert{50%s}
+desire{50%s}
 destiny
-growth
-harmony
-healing
-heart
-heaven
-hope
-joy
-justice
-laughter
+directive
+dominion
+dragon
+dream{50%s}
+dungeon
+eagle{50%s}
+earth
+element{50%s}
+elite
+empire
+enigma
+eternities
+ether
+evening
+fire
+fist
+forest{50%s}
+form
+fortress
+fraternity
+game
+garter
+gate{50%s}
+gentlemen
+glory
+goblet
+god{50%s}
+hand
+harvest
+haven
+heaven{50%s}
+heir{50%s}
+helm{50%s}
+history
+honour
+immortal{50%s}
+intrigue
+jungle
+key{50%s}
+king
+kingdom{50%s}
+knowledge
+labyrinth
+law
+legend{50%s}
+leviathan
 life
 light
 love
-luck
-mercy
-peace
-prosperity
-radiance
-resurrection
-riches
-victory
-
-: Neutral
-augury
-binding
-civilization
-clouds
-command
-conjuration
-conquest
-crown
-demand
-desire
-diaspora
-diversion
-doors
-dragons
-dreams
-dust
-dweomer
-dynasty
-echoes
-enchantment
-evocation
-eyes
-fate
-fever
-fire
-flame
-flesh
-fog
-forgiveness
-fright
-frost
-fury
-gates
-ghosts
-gold
-grace
-ice
-idols
-insult
-iron
-kings
-legend
-life
-lightning
+lute
+maelstrom
 magic
-meteors
-miracles
+mantis
+master{50%s}
+meditation
+men
+mercy
+might
+mind
 mirage
-mirror
-oaths
-phantom
-pity
-portals
-prophecy
-refuge
-retreat
-retribution
-revenge
-roar
-runes
-scales
-servant
-shield
-sigil
-silver
-sleep
-song
-storms
-suggestion
-summoning
-swords
-the anchor
-the dance
-the dawn
-the earth
-the globe
-the goddess
-the gods
-the harvest
-the heavens
-the mist
-the nameless
-the pattern
-the scourge
-the sea
-the sky
-the soul
-the sphere
-the stars
-the stone
-the sun
-the talisman
-the void
-the world's edge
-thunder
-tide
-tower
-travel
-truth
-vault
-veil
-vengeance
-vigour
-visage
-vision
-vista
-wall
-war
-ward
-wealth
-web
-weird
-whimsy
-whisper
-wind
-wisdom
-witchcraft
-word
-wrath
-youth
-{number:twototwelve}
-
-: Negative
-affliction
-anger
-anguish
-banishment
-blindness
-blood
-bondage
-bones
-broken promises
-calamity
-cataclysm
-catastrophe
-chaos
-contagion
-conquest
-curses
-damnation
-darkness
-death
-decay
-deceit
-defeat
-deformity
-demons
-desire
-desolation
-despair
-destruction
-devastation
-deviltry
-disasters
-disgrace
-dissolution
-distress
-doom
-dread
-envy
-evil
-famine
-fatality
-fear
-fire
-forgotten dreams
-frost
-fury
-gloom
-gluttony
-greed
-hatred
-hells
-horrors
-hunger
-ichor
-insanity
-iron
-lies
-lost souls
-lust
-madness
-malice
-misery
-misfortune
-mists
-monsters
-mystery
-necromancy
+missives
+mist{50%s}
+moon
+morning
+mysteries
+name
+nation
 night
-no return
-oblivion
-pain
-peril
+nobility
+note
+ocean{50%s}
+opposition
+oracle
+orb
+order
+pantheon
+passages
+path{50%s}
+people
 pestilence
-phantasms
-plague
-pride
-rage
-ruin
-scourge
-secrets
-shadow
-shadows
-sigils
-skulls
-slaughter
-slime
-sloth
-sorcery
-sorrow
-souls
-starvation
-strife
-suffering
-terror
-the abyss
-the ancients
-the curse
-the dead
-the dweller{s|} in the {dark site}
-the gloom
-the inferno
-the lost
-the old ones
-the swarm
-the undead
-the undercity
-the underworld
-the unholy
-the unknown
-the {3-13} geases
-the {evocative adj} cult
-the {evocative adj} idol
-the {evocative adj} one{s|}
-the {monster}{s|}
-torment
-tragedy
-treachery
-trickery
-trouble
-war
-woe
-wrath
+plain{50%s}
+planispheres
+portal
+power{50%s}
+prophecies
+prophet{50%s}
+province
+pyramid
+queen
+race
+raven
+realm
+redemption
+relic{50%s}
+revelations
+ring{50%s}
+rite{50%s}
+ritual{50%s}
+road
+rod
+rose
+rune{50%s}
+salvation
+sand
+sceptre
+science{50%s}
+scroll
+sea{50%s}
+secret{50%s}
+serpent{50%s}
+shadow{50%s}
+shield
+shore{50%s}
+sigil{50%s}
+skies
+skull
+snows
+society
+solace
+song
+sphere{50%s}
+spirit{50%s}
+staff
+stance
+star{50%s}
+stillness
+stone{50%s}
+storm{50%s}
+story
+sun
+sunrise
+sunset
+swamp{50%s}
+symbol{50%s}
+tattoo{50%s}
+teaching{50%s}
+tempest
+temple{50%s}
+terror{50%s}
+testament
+throne{50%s}
+tide{50%s}
+tomb{50%s}
+tome{50%s}
+treasure{50%s}
+tree{50%s}
+turmoil
+understanding
+vale
+vessel
+victory
+vision{50%s}
+void
+vortex
+wand
+war{50%s}
+waste{50%s}
+water{50%s}
+way
+will
+wind
+wings
+wisdom
+work
+world{50%s}
+{calendar:season}
+{charge}
+{compass:4}
+{group name:group}
+{mammal}
+{musical instrument}
+{mythical creature}
+{organ}
+{reptile}
+{site name}
+{structure}
+{~{weapon}}
+/ {Animal.WeirdSymbol}

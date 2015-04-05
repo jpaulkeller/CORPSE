@@ -1,0 +1,269 @@
+/ http://random-generator.com/index.php?title=Fantasy_Male_Military_Hero
+
+: Hero
+{:Name}, a {:PROFESSION}.  {:SENTENCE}
+
+: Name
+{Name} of {Place Name}
+{Name} the {:Honorific}
+
+: Honorific
+{Evocative Adj:Positive}
+{Evocative Concept:Positive}
+{Epithet:Warrior}
+/ 50,[Secret Society Title.TitleDescriptor]
+
+: Profession
+{pseudo class:fighter} in the {UNIT}
+{pseudo class:mage} in the {UNIT}
+{pseudo class:ranger} in the {UNIT}
+{military:position rank} in the {UNIT}
+
+: Sentence
+{:DISTINGUISHED} he {75%{adverb} }{:fought} a {:group} of {50%{evocative adj:negative} }{{humanoid:uncommon}+} {:reason}.
+{:DISTINGUISHED} he {75%{adverb} }{:fought} {:INDIVIDUAL ENEMY} {:reason}.
+
+: Distinguished
+A statue erected in his hometown commemorates the occasion when 
+Although stranded behind enemy lines, 
+Among his many exploits, perhaps the most famous was when
+Among the tales told of him, the most famous was when
+Bards still sing of when
+Children all know the tale of the time
+Everyone knows the story of when
+He became a household name for a time because of the {:written remembrance} written about the time
+He became a legend when
+He became a local hero when
+He became mayor of his hometown after
+He commanded a crack squad of soldiers when
+He commissioned {:written remembrance} written about the time
+He commissioned a {:art remembrance} about the time
+He distinguished himself when
+He enjoyed popularity at court after
+He gave the credit to the men he commanded when
+He is best-known for the occasion on which
+He is considered a local legend for the time
+He is depicted in a {:art remembrance} about the time
+He is famous for the occasion on which
+He is mainly known through the {:written remembrance} about the incident when
+He is remembered for the incident when
+He is sung about in bards' tales for the time
+He is well remembered by his hometown for the time
+He personally wrote a {:written remembrance} about the time
+He received a field commission after
+He regained his family's lost honor after
+He rose to fame after
+He saved his town when
+He secured his place in history when
+He was celebrated  in a {:written remembrance} written about the time
+He was commemorated in {:written remembrance} about the time
+He was knighted after
+He was posthumously honored for the time
+It is said that
+Many slightly different tales tell of the occasion when
+Tacticians most admire him because 
+There are those who claim that
+Though seriously wounded,
+
+: Group
+band
+brigade
+chosen champion
+clan
+company
+coven
+cult
+family
+horde
+marauding party
+mounted company
+patrol
+platoon
+raiding party
+regiment
+secret cell
+squad
+trained elite troop
+tribe
+war encampment
+war party
+whole army
+
+: Written Remembrance
+ballad
+bard's tale
+book
+drinking song
+limerick
+long-form epic poem
+novella
+poem
+poignant opera
+propaganda leaflet
+song
+story
+three-volume novel
+
+: Art Remembrance
+{80%{:Art Adj} }{:Artwork}
+
+: Art Adj
+famous
+finely crafted
+memorable
+well-known
+
+: Artwork
+illuminated book
+mosaic
+mural
+painting
+permanent illusion
+sculpture
+statue
+tapestry
+
+: Individual Enemy
+{Orc Name}, leader of the {50%{evocative adj:negative} }[Orc Tribe Name] {humanoid:tribal} tribe
+{military:position rank} {Name}, who led the {50%{evocative adj:negative} }{UNIT},
+the {:Arcane Enemy} {Author}
+/ {Name}, the [Secret Society Title.main]
+
+: Arcane Enemy
+{evocative adj:negative} {pseudo class:mage}
+
+: Reason
+a feat for which he gave complete credit to his fellow soldiers
+and is still admired by many for his {:Admirable Quality}
+and is still considered unmatched for his {:Admirable Quality}
+and was distinctive for his pet {pet:uncommon}, which accompanied him into combat
+and was distinctive for the unique {~{weapon}} that he used
+and was easily recognizable because he rode a {mount:special} into combat
+and was known for his skill with the {~{weapon}}
+and was known for his {:Admirable Quality}
+and was said to possess a magical {~{weapon}}
+and was the envy of many in his day for his {:Admirable Quality}
+and was well liked by the soldiers he served with
+because he was inspired by the legends of antiquity
+but tragically died of his wounds a few days later
+despite orders from his commander to hold back
+for many years until he was killed in battle
+for many years until the war was finished
+in a feat of self-sacrifice that is sung about to this day
+in order to revel in the joy of battle
+in the hopes that he could inspire others to do the same
+proving his skill with the {~{weapon}} to be the stuff of legend
+to avenge his fallen friends
+to avenge the death of his lover at their hands
+to avenge the pillaging of his {:place}
+to bring glory and prestige to his {:place}
+to defend his {:place} against their aggression
+to defend his {:place} against their incursions
+to defend his {:place} against their ravages
+to erase the dishonour of his {:place}
+to fulfill his lover's wishes
+to honor the gods and his ancestors
+to protect his {:place} against their invasions
+to seek revenge for the death of his children at their hands
+to shield his {:place} from their constant raids
+to stem the tide of their onslaught
+until he had to retreat in order to save his men from certain death at their hands
+until he was killed when his {:place} fell
+until his death in battle
+until his troops scattered and fled, leaving him alone to die at the hands of his enemies
+until the remaining enemies scattered and fled
+until the remaining enemies surrendered to him
+until their agents had him assassinated
+until they captured and enslaved him
+until they captured him in battle and executed him
+who invaded his {:place}
+who terrorized his {:place}
+
+: Place
+city
+country
+farm
+hamlet
+home
+homeland
+island
+lord's castle
+{place}
+{site:artificial}
+
+: Admirable Quality
+ability to lead men into battle
+ability to predict the enemy's movements
+adaptability
+amazing speed
+calmness under pressure
+clever use of spies and deception
+enviable moustache
+full and manly beard
+honourable treatment of enemy prisoners
+keen eye and quick {~{weapon}}
+mastery of military strategy
+mastery of tactics
+mastery of weapons
+monstrous strength
+piercing eyes
+reputation among women
+resourcefulness
+rigid personal discipline
+shrewdness and cunning
+single-mindedness
+skill at outmaneuvering the enemy
+unassailable integrity 
+uncompromising character
+
+: Fought
+ambushed
+annihilated
+assailed
+assassinated the leaders of
+assaulted
+attacked
+battled
+captured a bridge from
+captured a leader of
+captured an important {site:artificial} from
+clashed with
+conducted raids against
+cut off supplies from
+decimated
+defended against
+destroyed
+engaged in battle with
+eradicated
+fought
+fought against
+guarded against
+harassed
+hunted down
+hunted down and killed
+hunted down and killed the leaders of
+inspired his warriors to fight against
+invaded the lairs of
+laid a successful ambush for
+laid siege against
+laid waste to
+led a charge against
+led forays deep into the territory of
+massacred
+outmaneuvered
+overcame
+overran
+protected against
+protected his lord's standard from
+provided key intelligence against
+raided the camps of
+rescued prisoners from
+resisted
+scouted against
+shielded his army from
+slaughtered
+spied on
+stole supplies from
+struggled against
+took on
+waged war on

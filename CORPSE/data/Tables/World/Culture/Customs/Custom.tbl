@@ -1,4 +1,8 @@
-: Who {1-7}
+: Custom
+{Custom:who} must {always|never} {custom:custom} {custom:whom} {custom:when}. 
+{Custom:who2} {custom:verb} {custom:type} {custom:where} {custom:when}.
+
+: Who
 All the people
 The old ones
 Men
@@ -7,7 +11,7 @@ The {best warriors|warriors}
 The {priests|priestesses|mages|healers}
 The rulers
 
-: Custom {8-19} 
+: Custom
 act as if they hate
 act as if they love
 avoid
@@ -21,7 +25,7 @@ sacrifice
 serve
 worship
  
-: Whom {20-31} 
+: Whom
 children
 insects
 plants
@@ -35,20 +39,21 @@ those younger than themselves
 trees
 {livestock}
 
-: Who2 {32-38} 
-{custom:who}
-slaves
-criminals
+: Who2
 children
-foreigners
 corpses
+criminals
+foreigners
+prisoners
+slaves
+{custom:who}
 {livestock}
 
-: Verb {39-40}
+: Verb
 live in a
 are kept in a
 
-: Type {41-50}
+: Type
 cramped
 floating
 hidden
@@ -60,7 +65,7 @@ spherical
 underground
 wooden
  
-: Where {51-58}
+: Where
 cage
 caravan
 cave
@@ -70,7 +75,7 @@ temple
 tower
 {structure}
 
-: When {59-62}
+: When
 at night
 during the day
 in the {summer|fall|winter|spring}
