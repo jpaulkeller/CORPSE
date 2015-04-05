@@ -20,7 +20,7 @@
     <li>Influence: {dragon:Influence}
     <li>Species: {dragon:tsr} dragon
     <li>Gender: {G.gender}
-    <li>Age: {dragon:age}
+    <li>Age: {dragon age}
     <li>Eyes: {dragon:eyes}{20% that are {dragon:eye color}}
    </ul>
     
@@ -31,7 +31,7 @@
     <li>Species: {dragon:species} dragon
     <li>Type: {dragon:breed}
     <li>Gender: {G.gender}
-    <li>Age: {dragon:age}
+    <li>Age: {dragon age}
     <li>Alignment: {frequency:some} {alignment}
    </ul>
     

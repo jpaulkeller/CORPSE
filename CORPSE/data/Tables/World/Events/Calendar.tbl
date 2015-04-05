@@ -1,4 +1,3 @@
-
 : Astronomical
 {vernal|autumnal} equinox
 {winter|summer} solstice
@@ -13,3 +12,9 @@ first thunderstorm
 blossoming
 harvest
 planting
+
+: Season
+autumn
+spring
+summer
+winter

@@ -25,11 +25,11 @@ A {:young} {:YOUNG ACTIVITY}
 {profession}
 {pseudo class}
 {race}
-{title academic}
-{title feudal}
-{title guild}
-{title military}
-{title religious}
+{academic rank}
+{feudal rank}
+{guild rank}
+{military rank}
+{religious rank}
 
 : Group Name
 band
@@ -415,7 +415,7 @@ A town crier botches their speech.
 A town guard asks one PC if he knows {Name}, the notorious ferret breeder, wanted for breeding ferrets without a license. As the guard leaves, he remarks on one PC's likeness to the culprit, and warns him about illegal ferret breeding.
 A trained wyvern mount has escaped its owner and discovered city dwellers are easy pickins.  The owner wants the party’s help in capturing the wyvern without killing it and without scaring it off into the wilderness never to be seen again.
 A trio of nuns plays jump-rope. A PC gets a glance under one’s habit and spots a pair of hairy half-orc legs.
-A trio of old ladies remark on how handsome one PC is, and how he reminds them of a young {Title Feudal:Noble} {Name}.
+A trio of old ladies remark on how handsome one PC is, and how he reminds them of a young {Feudal Rank:Noble} {Name}.
 A troupe of actors and artisans has come to town and crossed your path. They ask you to join them in a bit of an impromptu show for the locals. Have the PCs perform skill checks to earn an extra bit of coin.
 A troupe of well-armed adventurers pass by chatting about returning to the secret location for the rest of the treasure tomorrow.
 A troupe puts on a play that romanticizes a normally dangerous monster. Teens are going missing after each show. What is really going on?

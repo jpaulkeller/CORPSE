@@ -16,4 +16,9 @@ master
 dean
 don
 
-: Title Academic {6, 17}
+: Academic Rank {6, 17}
+
+: Position
+provost
+pupil
+{:academic rank}

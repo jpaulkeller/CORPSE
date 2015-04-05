@@ -53,6 +53,7 @@ orog
 phraint
 pixie
 rock gnome
+sahaugin
 svirfneblin gnome
 tallfellow halfling
 troglodyte
@@ -79,6 +80,19 @@ kobold
 ogre
 troglodyte
 troll
+
+: Tribal
+dwarf
+gnoll
+goblin
+kobold
+orc
+hobgoblin
+ogre
+sahaugin
+troglodyte
+troll
+were-rat
 
 : Language
 {10%ancient }dwarvish

@@ -14,8 +14,8 @@
 {hireling type}
 {humanoid}
 {smuggler of|guard searching for} {~{smuggled}}
-{title academic}
-{title feudal}
-{title guild}
-{title military}
-{title religious}
+{academic rank}
+{feudal rank}
+{guild rank}
+{military rank}
+{religious rank}

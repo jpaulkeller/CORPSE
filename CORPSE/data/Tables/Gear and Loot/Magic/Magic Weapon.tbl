@@ -137,7 +137,7 @@ the {:Secret Society Title.OrgDescriptor} Mountains
 the {:Fantasy Names.MaleFirstName} Mountains
 
 : Saint
-2,St. {:Catholic Saint Names.main}
+2,St. {Saint Name}
 {:Fantasy Saint.main}
 
 : Ruler

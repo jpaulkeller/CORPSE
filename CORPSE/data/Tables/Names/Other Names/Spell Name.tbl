@@ -14,7 +14,7 @@
 : Noun
 {:Concept}
 {Element:Any}
-{Evocative Noun{!OneWord}}
+{Evocative Concept{!OneWord}}
 {Weapon}
 
 : Concept

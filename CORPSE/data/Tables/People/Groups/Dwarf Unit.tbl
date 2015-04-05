@@ -24,7 +24,7 @@
 : Unit Name
 2x {Dwarf Name}'s
 3x {Dwarf Site}
-{Title Dwarf:Noble}'s Own
+{Dwarf Title:Noble}'s Own
 
 : Assault Name
 axes
@@ -135,4 +135,4 @@ machinists
 stonecutters
 
 : Special Duty
-{10% covertly }{escorting|accompanied by} {Title Dwarf}
+{10% covertly }{escorting|accompanied by} {Dwarf Title}

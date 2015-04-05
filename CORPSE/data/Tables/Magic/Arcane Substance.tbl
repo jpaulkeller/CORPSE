@@ -4,7 +4,7 @@
 {monster} {organ}
 {reagent}
 {:adj} {~{:material}}
-{:material} of {evocative noun}
+{:material} of {evocative concept}
 {:material} {:post}
 
 : Adj

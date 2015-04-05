@@ -8,18 +8,18 @@
 {:Warrior}
 
 : Barbarian
-, {Title Bad} of the {Weapon{!OneWord}} God
-of {Evocative Noun:Not Positive}
+, {Title:Bad} of the {Weapon{!OneWord}} God
+of {Evocative Concept:Not Positive}
 the {Evocative Adj:Negative}
 the {Organ} {Carver|Choker|Cleaver|Collector|Crusher|Eater}
-{20%, {{Pseudo Class|Title Bad}}} of the {Site Name:Dark}
+{20%, {{Pseudo Class|Title:Bad}}} of the {Site Name:Dark}
 {50% {Humanoid}-{bane|butcher|killer|eater|slayer|friend}}
 {Weapon{!OneWord}}{hand|fist|foot|tooth}
 
 : Mage
 / {: ArcaneBooks.ArcaneAuthor}
 The {:Adj} {:Mage Title}
-{:Mage Title} of {Evocative Noun}
+{:Mage Title} of {Evocative Concept}
 {:Mage Title} of {:Slain}
 {:Mage Title} of {:People}
 {:Mage Title} of {:Place}
@@ -30,7 +30,7 @@ The {50%{:Adj} }{:Priest Title}{50% of {:Place}}
 {:Priest Title} of {:People}
 {:Priest Title} of {:Place}
 {:Priest Title} of {Divine Name}
-{:Priest Title} of {Evocative Noun}
+{:Priest Title} of {Evocative Concept}
 
 : Rogue
 {20%{:Adj} }{:Rogue Title} of {:Place}
@@ -42,7 +42,7 @@ the {:Rogue Adj} {:Rogue Noun}
 : Warrior 
 {20%{:Adj} }{:Warrior Title} of {:Place}
 {20%{:Adj} }{:Warrior Title} of {:Slain}
-{20%{:Adj} }{:Warrior Title} of {Evocative Noun}
+{20%{:Adj} }{:Warrior Title} of {Evocative Concept}
 
 : Mage Title
 {pseudo class:mage}
@@ -53,7 +53,7 @@ hand
 heart
 saint
 {pseudo class:priest}
-{title religious}
+{religious rank}
 
 : Warrior Title
 butcher

@@ -22,7 +22,7 @@
 {Fauna{!OneWord}}'s {Home}
 {Fauna{!OneWord}}'s {Organ{!OneMaybeSame}} {80%{Inn Type}}
 {Inn Type} by the {Site}
-{Inn Type} of {Evocative Noun}
+{Inn Type} of {Evocative Concept}
 {Metal:Common} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
 {Metal:Common} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
 {Metal:Common} {Tiny Item{!OneMaybeSame}} {80%{Inn Type}}
@@ -34,11 +34,11 @@
 {Noise{!OneWord}} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
 {Number:TwoToFive} {{Fauna{!OneMaybeSame}}+} {80%{Inn Type}}
 {Number:TwoToFive} {{Tiny Item{!OneMaybeSame}}+} {80%{Inn Type}}
-{Profession{!OneWord}}'s {Evocative Noun{!OneWithSame}} {80%{Inn Type}}
+{Profession{!OneWord}}'s {Evocative Concept{!OneWithSame}} {80%{Inn Type}}
 {Texture{!OneWord}} {Site:Artificial{!OneMaybeSame}} {80%{Inn Type}}
 {Trait{!OneWord}} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
 {Trait{!OneWord}} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
-{Trait{!OneWord}} {Title {Academic|Military|Religious|Feudal}}'s {80%{Inn Type}}
+{Trait{!OneWord}} {{Academic|Military|Religious|Feudal} Rank}'s {80%{Inn Type}}
 {Trait{!OneWord}} {{Class.Class{!OneWithSame}|Class}}'s {80%{Inn Type}}
 {Trait{!OneWord}} {{Profession.Profession{!OneWithSame}|Profession}} {80%{Inn Type}}
 {Trait{!OneWord}} {{Race.Race{!OneWithSame}|Race}}'s {80%{Inn Type}}

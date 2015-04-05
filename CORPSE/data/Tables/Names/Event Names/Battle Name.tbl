@@ -8,10 +8,10 @@
 {:Creature} {:Type}
 {:Type} of {50%{:Adj} }{Noise}
 {:Type} of {{:Creature}+}
-{:Type} of {50%{Evocative Adj:Negative} }{Evocative Noun:Negative}
+{:Type} of {50%{Evocative Adj:Negative} }{Evocative Concept:Negative}
 {:Type} of {50%{Evocative Adj:Negative} }{{Pseudo Class}+}
-{:Type} of {50%{Evocative Adj:Positive} }{Evocative Noun:Positive}
-{:Type} of {50%{Evocative Adj} }{Evocative Noun}
+{:Type} of {50%{Evocative Adj:Positive} }{Evocative Concept:Positive}
+{:Type} of {50%{Evocative Adj} }{Evocative Concept}
 {:Type} of {Generated Name}
 {:Type} of {Name}{25% {Evocative Adj}}
 {:Type} of {Number:Plural} {{Weapon}+}

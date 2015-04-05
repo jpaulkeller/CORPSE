@@ -1,0 +1,52 @@
+/ Oceans & Lakes Random Encounter Generator 
+
+/ The tables above were created and written by Murray C from http://theaussiegm.tumblr.com, all 
+/ rights go to Dungeons & Dragons and Wizards of The Coast. If you have any suggestions, feedback or 
+/ ideas about this R.E.G. or future works, feel free to contact me on Tumblr or twitter @ThatMurrayC.
+
+/ This table can be rolled on every 4 hours (in-game time) or once at the beginning of a journey. 
+/ Begin by rolling on Weather table (optional) followed by the Event table
+
+: Weather:2d4
+2 Rain and cold temperatures.
+3 Cloudy skies and a slight cool breeze.
+4-6 Clear skies and comfortable temperatures.
+7 Clear skies and warm temperatures.
+8 Blistering sun and hot temperatures. 
+
+: Event:2d6
+1 A swarm of fish (quippers) swim alongside the boat (these act as regular fish, able to be caught/eaten, which will heal 1d4+1 HP)
+2-3 You encounter a small boats with {d4+1} {:humanoid} aboard {:humanoid activity}
+4 1d10+5 hawks flying overhead the boat flying in headed {compass}
+5-7 You sail the waters without being disturbed
+8 Merfolk {:creature activity} where you are
+9 You encounter a Giant Octopus {:creature activity}
+10 You encounter an orca, rising up from the waters for a breath
+11 You notice something man-made in the waters below: {:special}
+12 A Water Elemental feels threatened by your presence; it will attack until you leave the area.
+
+: Humanoid
+2x humans
+kuo-toa
+bullywugs
+elves
+dwarves
+
+: Humanoid Activity
+2x fishing
+mapping the waters
+out sailing
+pirating (trying to loot gold, jewels and things of value)
+looking for treasure
+
+: Creature Activity
+swim past
+approach curiously 
+hunting
+
+: Special d6
+{4} sunken huts
+garbage (bricks, timbers, smashed pots, etc.)
+2x {small|medium} ship
+a small underwater dungeon (2-3 rooms)
+treasure chest (contain {d10x10} gp)

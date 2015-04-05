@@ -7,10 +7,11 @@
 {15%{Noise} }{Barbarian Name}{10% {Barbarian Name}}
 
 : Epithet
-{20%, {{Pseudo Class|Title Bad}}} of the {Site Name:Dark}
+{20%, {{Pseudo Class|Title:Bad}}} of the {Site Name:Dark}
 the {Evocative Adj:Negative}
 {50% {Humanoid}-{bane|killer|eater|slayer|friend}}
 the {Organ} {Carver|Choker|Cleaver|Collector|Crusher|Eater}
-, {Title Bad} of the {Weapon{!OneWord}} God
+, {Title:Bad} of the {Weapon{!OneWord}} God
 {Weapon{!OneWord}}{hand|fist|foot|tooth}
-of {Evocative Noun:Not Positive}
+of {Evocative Concept:Not Positive}
+{Epithet:Barbarian}

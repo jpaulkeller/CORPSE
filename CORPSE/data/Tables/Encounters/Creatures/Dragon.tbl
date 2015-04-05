@@ -4,6 +4,7 @@
 {:species} {:breed}
 
 : Details
+{Dragon Name} is a {:age}
 5x {Dragon Name} is a {:age} {:dragon} who has {color} {:hide}, {75%{:head}, }{20%{:legs}, }{:wings} and a {:tail}. {G:=Gender}{G.Pronoun} has {:eyes}.{75%  {:breath}}{25% {:special ability}}{10% {:special cosmetic}}
 {Dragon Name} is a {:age} {:tsr} dragon who has {75%{:head}, }{:wings} and a {:tail}. {G:=Gender}{G.Pronoun} has {:eyes}
 
@@ -59,18 +60,6 @@ cloud
 forest
 void
 water
-
-: age {4,10}
-hatchling
-very young
-young
-juvenile
-adult
-mature adult
-old
-very old
-elder
-ancient
 
 : breed
 10x dragon

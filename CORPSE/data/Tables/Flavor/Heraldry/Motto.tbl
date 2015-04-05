@@ -2,10 +2,10 @@
 / http://en.wikipedia.org/wiki/List_of_mottos
 
 : Slogan
-By {Evocative Noun:Positive} and {Evocative Noun:Positive{!Different}}
-{Always|Ever} {Evocative Noun:Positive}
-{Evocative Noun:Positive}
-{Evocative Noun:Positive}, {Evocative Noun:Positive{!Different}}, {Evocative Noun:Positive{!Different}}
+By {Evocative Concept:Positive} and {Evocative Concept:Positive{!Different}}
+{Always|Ever} {Evocative Concept:Positive}
+{Evocative Concept:Positive}
+{Evocative Concept:Positive}, {Evocative Concept:Positive{!Different}}, {Evocative Concept:Positive{!Different}}
 
 : Fictional = Westeros
 

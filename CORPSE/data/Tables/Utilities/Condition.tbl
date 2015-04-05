@@ -8,7 +8,7 @@ good
 excellent
 pristine
 
-: Condition {6, 9}
+: Condition {6,9}
 
 : Paper
 crumpled
@@ -98,6 +98,8 @@ battle-worn
 beaten
 bloodstained
 broken
+clean
+neglected
 stained
 well-used
 worn
@@ -106,9 +108,16 @@ worn
 rusted
 rusty
 tarnished
-{:Weapon}
+{:weapon}
+
+: Edged Weapon
+blunted
+dull
+notched
+razor-sharp
+{:metal weapon}
 
 : Wood Weapon
 burnt
 charred
-{:Weapon}
+{:weapon}

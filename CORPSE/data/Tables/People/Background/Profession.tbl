@@ -38,104 +38,104 @@
 .Profession            Rank                Category    Per City           Description
 .Job = Rank + _ + Profession
 
-abbess                 {title religious}   religious                      superior of a convent
-abbot                  {title religious}   religious                      superior of a monastery
-acater                 {title guild}       merchant                       a provisioner
+abbess                 {religious rank}    religious                      superior of a convent
+abbot                  {religious rank}    religious                      superior of a monastery
+acater                 {guild rank}        merchant                       a provisioner
 accoucheur                                 service                        midwife
 accountant                                 service                        financial bookkeeping
 accoutrement maker                         craftsman                      makes military accessories
 ackerman                                   farmer                         an oxherder
 acrobat                                    entertainer
-actor                  {title guild}       entertainer
+actor                  {guild rank}        entertainer
 actuary                                    service                        financial bookkeeping
 administrator                              government
 advisor                                    government
 alabasterer                                craftsman                      worker in alabaster
-alchemist              {title guild}       scholar                        a medieval chemist (good with potions, poisons, +2 healing)
+alchemist              {guild rank}        scholar                        a medieval chemist (good with potions, poisons, +2 healing)
 acolyte                                    religious
 alderman                                   government                     a town or city official
-alewife                {title guild}       merchant                       a female alehouse keeper
-almoner                {title religious}   religious                      a distributer of money and food to the poor
-ambassador             {title guild}       government                     to the {race}s
+alewife                {guild rank}        merchant                       a female alehouse keeper
+almoner                {religious rank}    religious                      a distributer of money and food to the poor
+ambassador             {guild rank}        government                     to the {race}s
 animal trader                              merchant
-animal trainer         {title guild}       farmer                         especially {crop}
-apothecary             {title guild}       merchant                       a preparer and merchant for drugs and medicines; current: {flora}; {flora{!different}} 
+animal trainer         {guild rank}        farmer                         especially {crop}
+apothecary             {guild rank}        merchant                       a preparer and merchant for drugs and medicines; current: {flora}; {flora{!different}} 
 arbalestier                                military                       one who fires an arbalest (a type of metal crossbow)
-archbishop             {title religious}   religious
+archbishop             {religious rank}    religious
 archer                                     military                       one who shoots arrows
-architect              {title guild}       craftsman                      a designer of buildings and other constructions
+architect              {guild rank}        craftsman                      a designer of buildings and other constructions
 arkwright                                  craftsman                      a maker of "arks" -- wooden chests or coffers
-armorer                {title guild}       craftsman                      specialty is {armor}
-arrowsmith             {title guild}       craftsman                      a maker of arrowheads
-artisan                {title guild}       craftsman
-artist                 {title guild}       artist
-assassin               {title guild}       criminal                       level {10}
-astrologer             {title guild}       scholar                        +1 on divination spells
-astronomer             {title guild}       scholar
+armorer                {guild rank}        craftsman                      specialty is {armor}
+arrowsmith             {guild rank}        craftsman                      a maker of arrowheads
+artisan                {guild rank}        craftsman
+artist                 {guild rank}        artist
+assassin               {guild rank}        criminal                       level {10}
+astrologer             {guild rank}        scholar                        +1 on divination spells
+astronomer             {guild rank}        scholar
 athlete                level {10}          entertainer
 attendant                                  service            
 augurer                                    magical
 bagger                                     service            
 bailiff                                    government                     manager of craftsmen and servants; arrests; executes
-baker                  {title guild}       craftsman       62             one who makes bread and other baked goods
+baker                  {guild rank}        craftsman       62             one who makes bread and other baked goods
 bandit                 level {10}          criminal       
-banker                 {title guild}       service
+banker                 {guild rank}        service
 barbarian                                  itinerant
-barber                 {title guild}       service        151             one who cuts hair, also performed surgery and pulled teeth
-bard                   {title guild}       entertainer                    a minstrel (especially {musical instrument})
+barber                 {guild rank}        service        151             one who cuts hair, also performed surgery and pulled teeth
+bard                   {guild rank}        entertainer                    a minstrel (especially {musical instrument})
 bargeman                                   sailor
 barkeep                                    service
 barkeeper                                  service
 barker                                     service                        one who advertises at the entrance to a show
-barrister              {title guild}       service                        solicitor or lawyer
-barterer               {title guild}       merchant                       specializing in {equipment}
+barrister              {guild rank}        service                        solicitor or lawyer
+barterer               {guild rank}        merchant                       specializing in {equipment}
 basinbeater                                craftsman                      a maker of metal basins
-basketmaker            {title guild}       craftsman          
+basketmaker            {guild rank}        craftsman          
 bath attendent                             service            
 bath-owner                                 service         26             owner of a bath
 bathers                                                    1900
-beadle                 {title religious}   religious                      church official -- ushers preserves order at sermons
+beadle                 {religious rank}    religious                      church official -- ushers preserves order at sermons
 bear-ward                                  artist                         the owner of a performing bear
 bearleader                                 scholar                        a travelling tutor; related to the figurative use of the word bear to describe a boor
-beekeeper              {title guild}       farmer                         also known as apiarist
-beer seller            {title guild}       merchant        1-in-1400
+beekeeper              {guild rank}        farmer                         also known as apiarist
+beer seller            {guild rank}        merchant        1-in-1400
 beerbrewer                                 craftsman          
 beggar                                                                    +1 on disguise
-beguine                {title religious}   religious                      member of certain lay sisterhoods
-bellfounder            {title guild}       craftsman                      a caster of large "civic" bells             
+beguine                {religious rank}    religious                      member of certain lay sisterhoods
+bellfounder            {guild rank}        craftsman                      a caster of large "civic" bells             
 bellmaker                                  craftsman                      a maker of small bells (e.g. for sleighs or clothing)
 belter                                     craftsman                      maker of belts
 besom maker                                craftsman                      one who makes brooms
 billier                                    craftsman                      axe-maker
 bird trader                                merchant
-bishop                 {title religious}   religious
-black marketeer        {title guild}       criminal
-blacksmith             {title guild}       craftsman       34/1-in-1500   one who works with iron to form metal implements: esp farm tools
-bladesmith             {title guild}       craftsman                      a smith who specializes in sword blades
+bishop                 {religious rank}    religious
+black marketeer        {guild rank}        criminal
+blacksmith             {guild rank}        craftsman       34/1-in-1500   one who works with iron to form metal implements: esp farm tools
+bladesmith             {guild rank}        craftsman                      a smith who specializes in sword blades
 bleacher                                   craftsman       23/1-in-2100
 blockcutter                                craftsman                      for block printing
 bloomer                level {10}          craftsman                      a iron-smelting forge worker
 boat-builder                               craftsman
 boatman                                    sailor
-boatwright             {title guild}       craftsman
+boatwright             {guild rank}        craftsman
 bodger                                     craftsman                      itinerant wood turners
-body artist            {title guild}       artist
+body artist            {guild rank}        artist
 bodyservant                                service            
 bonecarver                                 craftsman          
-book-binder            {title guild}       craftsman       1-in-3000             
+book-binder            {guild rank}        craftsman       1-in-3000             
 book-printer                               craftsman          
 book-seller                                merchant        1-in-6300
 boothaler                                  criminal                       marauder, plunderer
-boothman               {title guild}       merchant                       one who sells grains
-botanist               {title academic}    scholar                        +2 heal, poison; ({flora})
+boothman               {guild rank}        merchant                       one who sells grains
+botanist               {academic rank}     scholar                        +2 heal, poison; ({flora})
 bottelier                                  craftsman                      maker of leather bottles
 bounty hunter          level {10}          military                       {weapon}, {armor}
 bowman                                     military
-bowyer                 {title guild}       craftsman                      maker of bows
-brazier                {title guild}       craftsman                      a brass smith (sometimes traveling)
-breeder                {title guild}       farmer                         especially {fauna}
-brewer                 {title guild}       craftsman                      
-brick-maker            {title guild}       craftsman                      brick baker (not a mason)
+bowyer                 {guild rank}        craftsman                      maker of bows
+brazier                {guild rank}        craftsman                      a brass smith (sometimes traveling)
+breeder                {guild rank}        farmer                         especially {fauna}
+brewer                 {guild rank}        craftsman                      
+brick-maker            {guild rank}        craftsman                      brick baker (not a mason)
 bricklayer                                 craftsman          
 brigand                level {10}          criminal
 broderer                                   craftsman                      embroiderer
@@ -146,134 +146,137 @@ buckle maker                               craftsman       36/1-in-1400
 buffoon                                    entertainer                    publicly amusing person
 builder                                    craftsman          
 burglar                                    criminal                       
-butcher                {title guild}       merchant        1-in-1200
+butcher                {guild rank}        merchant        1-in-1200
 butler                                     service                        one in charge of the buttery (where alcohol was kept)
 buttonmaker                                craftsman          
 cabinetmaker                               craftsman          
-calligrapher           {title guild}       scholar
+calligrapher           {guild rank}        scholar
 camp follower                              military                       people following an army, making money off of the soldiers
 campaner                                   craftsman                      maker of large bells (church-bells, for example)
 canaller                                   sailor                         canal boat worker
 candle-maker                               craftsman
 cannoneer                                  military
-canon                  {title religious}   religious                      a prebend attached to a cathedral
-cantor                 {title religious}   religious                      a choir leader in churches, hymn/prayer-leader
+canon                  {religious rank}    religious                      a prebend attached to a cathedral
+cantor                 {religious rank}    religious                      a choir leader in churches, hymn/prayer-leader
 canvasser                                  craftsman                      canvas-maker
 carder                                     craftsman                      one who cards wool (combs out wool in preparation for spinning it)
-cardinal               {title religious}   religious
+cardinal               {religious rank}    religious
 cardmaker                                  craftsman          
 caretaker                                  service
 carman                                     service                        one who drives a vehicle for transporting goods
-carpenter              {title guild}       craftsman       95/1-in-550    one who constructs things from wood
+carpenter              {guild rank}        craftsman       95/1-in-550    one who constructs things from wood
 carpet-maker                               craftsman
 cart-maker                                 craftsman
 carter                                     service                        one who drives carts
 cartier                                    service            
-cartographer           {title guild}       scholar                        map-maker, especially {terrain} and {region}
-cartwright             {title guild}       craftsman          
+cartographer           {guild rank}        scholar                        map-maker, especially {terrain} and {region}
+cartwright             {guild rank}        craftsman          
 carver                                     service                        the servant who cut the meat
-castellan              {title military}    militar                        {weapon}, {armor}
+castellan              {military rank}     militar                        {weapon}, {armor}
 catchpole                                  government                     one who finds and brings in debtors
 ceiler                                     service                        one who installs ceilings
 cellarer                                   service                        one in charge of the wine cellar
 chainmaker                                 craftsman          
-chamberlain                                service                        a private attendant who waits on his lord in his bedchamber; overseer of the domain of a {title feudal}
-chancellor                                 government                     secretary of {title feudal:noble} {name}
-chandler               {title guild}       craftsman        71/1-in-700   one who makes candles, also grocer (often associated with ships)
+chamberlain                                service                        a private attendant who waits on his lord in his bedchamber; overseer of the domain of a {feudal rank} 
+chancellor                                 government                     secretary of {Feudal Rank:Noble} {Name}
+chandler               {guild rank}        craftsman        71/1-in-700   one who makes candles, also grocer (often associated with ships)
 changer ({order})      level {10}
-chantry priest         {title religious}   religious                      a priest employed to say prayers for the dead; often taught on the side (thus so-called chantry schools)
-chaplain               {title religious}   religious
-chapman                {title guild}       merchant                       travelling merchant
+chantry priest         {religious rank}    religious                      a priest employed to say prayers for the dead; often taught on the side (thus so-called chantry schools)
+chaplain               {religious rank}    religious
+chapman                {guild rank}        merchant                       travelling merchant
 charcoal-burner                            craftsman          
 cheese-maker                               craftsman          
-chef                   {title guild}       service
+chef                   {guild rank}        service
 chicken butcher                            craftsman        51/1-in-1000  butcher of chickens
 chimney sweep                              service                        one who cleans chimneys and smokestacks
 chirurgeon                                 service                        surgeon
 churl                  level {10}          farmer                         a farmer, usually of some wealth
-clerk                  {title religious}   religious                      a priest  of {religion}; {weapon}
+circus performer                           entertainer
+clerk                  {religious rank}    religious                      a priest  of {religion}; {weapon}
 clock-maker                                craftsman          
-clothier               {title guild}       craftsman          
+clothier               {guild rank}        craftsman          
 clouter                                    service                        one who fixes things, a tinkerer
 clown                                      entertainer
-cobbler                {title guild}       craftsman                      shoe maker
-coiner                 {title guild}       craftsman                      a maker of coins             
+cobbler                {guild rank}        craftsman                      shoe maker
+coiner                 {guild rank}        craftsman                      a maker of coins             
 collector                                                                 of {equipment}
-collier                {title guild}       merchant                       one who makes or sells charcoal/coal; (a charcoal burner - for smelting)
-colporteur             {title guild}       merchant                       seller of religious books
+collier                {guild rank}        merchant                       one who makes or sells charcoal/coal; (a charcoal burner - for smelting)
+colporteur             {guild rank}        merchant                       seller of religious books
 comb-maker                                 craftsman          
 compasssmith                               craftsman          
 confectioner                               craftsman          
 conjurer                                   magical
 constable                                  government                     commander/warden of the town/castle guard
 cook                                       service                        
-cooper                 {title guild}       craftsman        70/1-in-700   one who makes and repairs barrels and tubs
-coppersmith            {title guild}       craftsman                      a worker in copper and brass (or redsmith)
+cooper                 {guild rank}        craftsman        70/1-in-700   one who makes and repairs barrels and tubs
+coppersmith            {guild rank}        craftsman                      a worker in copper and brass (or redsmith)
 copyist                                    service          24/1-in-2000  one who copies books and documents
 cordwainer                                 craftsman                      worker in fine leather
 corsetier                                  craftsman                      maker of corsets and other undergarments
-costermonger           {title guild}       merchant                       fruit seller
+costermonger           {guild rank}        merchant                       fruit seller
 councilor                                  government                     a city official or advisor of the court
+courier                                    service
 court official                             government
 courtier                                   government
 cowherd                                    service                        one who looks after a herd of cows
 crier                                      service
 crofter                                    farmer                         tenant of a small piece of land
 crossbowman                                military
-curate                 {title religious}   religious                      priest in charge of a church
+curate                 {religious rank}    religious                      priest in charge of a church
 currier                                    craftsman                      one who cures leather
-cutler                 {title guild}       craftsman       22/1-in-2300   one who makes/repairs knives/cutlery
+cutler                 {guild rank}        craftsman       22/1-in-2300   one who makes/repairs knives/cutlery
 dairymaid                                  service            
-dancer                 {title guild}       entertainer
+dancer                 {guild rank}        entertainer
 dapifer                                    service                        a servant who brings the meat to the table
 dean                                       scholar
 delver                                     craftsman                      ditch-digger
 dentist                                    service            
 diamantaire                                craftsman                      diamond-cutter
-diplomat               {title guild}       government                     a person who negotiates with foreign nations; an ambassador to a {title feudal}
+diplomat               {guild rank}        government                     a person who negotiates with foreign nations; an ambassador to a {feudal rank} 
 disher                                     craftsman                      a potter who makes dishes
 ditcher                                    service                        one who digs ditches
 diver                                      criminal                       a pickpocket
 diver                                      service                        one who dives for a living
-diviner                {title guild}       magical                        +1 on divination spells
+diviner                {guild rank}        magical                        +1 on divination spells
 dock worker                                sailor
 doctor                                     service         1-in-1700      academically trained
 doctor                                     service         29/1-in-350     
 dog trainer                                service            
-dragoman               {title guild}       service                        especially {terrain}; knows {race}
-draper                 {title guild}       merchant                       a cloth merchant             
+dragoman               {guild rank}        service                        especially {terrain}; knows {race}
+draper                 {guild rank}        merchant                       a cloth merchant             
 drayman                                    service                        cart driver
 dried meat seller                          merchant
-driver                 {title guild}       service                        especially {mount}
-drover                 {title guild}       service                        especially {mount}, one who drives sheep or cattle to market
-druid                  {title religious}   magical                        {weapon}
+driver                 {guild rank}        service                        especially {mount}
+drover                 {guild rank}        service                        especially {mount}, one who drives sheep or cattle to market
+druid                  {religious rank}    magical                        {weapon}
 drummer                                    military
 drunk                                      criminal
 drycooper                                  craftsman          
 drywaller                                  craftsman          
 dueler                 level {10}          military                       {weapon}, {armor}
 dung carter                                service            
-dyer                   {title guild}       craftsman                      one who dyes cloth
-eggler                 {title guild}       merchant                       an egg-merchant
+dyer                   {guild rank}        craftsman                      one who dyes cloth
+eggler                 {guild rank}        merchant                       an egg-merchant
 elementalist                               magical
-emblazoner             {title guild}       artist
-embroiderer            {title guild}       craftsman                      one who decorates fabric with stitched designs
+emblazoner             {guild rank}        artist
+embroiderer            {guild rank}        craftsman                      one who decorates fabric with stitched designs
 emissary                                   government
 emperor                                    government                     the ruler of an empire
-enameler               {title guild}       craftsman                      a jeweler specializing in enamel work
+enameler               {guild rank}        craftsman                      a jeweler specializing in enamel work
 enchanter                                  magical
-engineer               {title guild}       military
+engineer               {guild rank}        military
 engraver                                   craftsman                      for printing, not to decorate items
-engraver               {title guild}       craftsman                      a jeweler specializing in engraving
+engraver               {guild rank}        craftsman                      a jeweler specializing in engraving
+envoy                                      government
 exchequer                                  government                     the man responsible for the king's revenue
-executioner            {title military}    service            
+executioner            {military rank}     service            
 fabric shearer                             craftsman                      trims the nap and makes pleats for customers
-falconer               {title guild}       farmer                         breeds, trains, hunts with falcons
+falconer               {guild rank}        farmer                         breeds, trains, hunts with falcons
 famulus                                    service                        a servant or attendant, especially of a scholar or magician
 farmer                                     farmer                         especially {flora}
 farmer                                     farmer                         especially {fruit}
 farmer                                     farmer                         especially {livestock}
-farrier                {title guild}       craftsman                      maker of tack/horeshoes
+farrier                {guild rank}        craftsman                      maker of tack/horeshoes
 feltmaker                                  craftsman          
 fence                                      criminal                       one who trades in stolen goods
 ferryman                                   sailor
@@ -282,101 +285,106 @@ fewtrer                                    craftsman                      felt-m
 fiddler                                    artist
 fighter                level {10}          military                       {weapon}, {armor}
 fisherman                                  farmer
-fishmonger             {title guild}       merchant        1-in-1200
-fletcher               {title guild}       craftsman                      maker of arrows
-florist                {title guild}       merchant                       especially {flower}
+fishmonger             {guild rank}        merchant        1-in-1200
+fletcher               {guild rank}        craftsman                      maker of arrows
+florist                {guild rank}        merchant                       especially {flower}
 food-seller                                merchant
 fool                                       artist
 footpad                                    criminal                       one who robs pedestrians
-forester               {title guild}       farmer                         game warden or forest ranger (especially {wood} and {wood{!different}})
-fortune teller         {title guild}       service                        +1 on divination spells
+foreman                                    craftsman
+forester               {guild rank}        farmer                         game warden or forest ranger (especially {wood} and {wood{!different}})
+fortune teller         {guild rank}        service                        +1 on divination spells
 foundryman
 fowler                                     farmer                         one who hunts for wildfowl
 franklin                                   farmer                         a freeholder
 freighter                                  service                        a hauler of goods
 fresco painter                             artist
-friar                  {title religious}   religious                      a wandering monk
-fruit-seller           {title guild}       merchant                       a seller of fresh fruit
-fueller                {title guild}       merchant                       one who sells charcoal, wood, or other fuels
-fuller                 {title guild}       craftsman                      cloth worker who shrinks/beats/presses cloth/felt
+friar                  {religious rank}    religious                      a wandering monk
+fruit-seller           {guild rank}        merchant                       a seller of fresh fruit
+fueller                {guild rank}        merchant                       one who sells charcoal, wood, or other fuels
+fuller                 {guild rank}        craftsman                      cloth worker who shrinks/beats/presses cloth/felt
 furniture maker                            craftsman          
 furrier                                    craftsman       214/1-in-250   one who makes/repairs goods made of furs (especially {fur and pelt})
 gambler                                    criminal
 gamekeeper                                 farmer
-gardener                                   farmer                         especially {flora}      
+gardener                                   farmer                         especially {flora}
+gatekeeper                                 government      
 geiger                                     artist                         a player of bowed/stringed instruments
-gemcutter              {title guild}       craftsman                      a jeweler specializing in gemstones             
-geologist              {title guild}       scholar                        especially {made of:geology}
-gilder                 {title guild}       craftsman                      one who gilds (applies gold/silver leaf to something)
+gemcutter              {guild rank}        craftsman                      a jeweler specializing in gemstones             
+geologist              {guild rank}        scholar                        especially {made of:geology}
+gilder                 {guild rank}        craftsman                      one who gilds (applies gold/silver leaf to something)
 girdler                                    craftsman                      leather worker who made girdles and belts, chiefly for the army
 gladiator              level {10}          military                       {weapon} and {armor}
-glass seller           {title guild}       merchant
-glassblower            {title guild}       craftsman                      a maker of glass objects
+glass seller           {guild rank}        merchant
+glassblower            {guild rank}        craftsman                      a maker of glass objects
 glasspainter                               artist
-glazier                {title guild}       craftsman                      maker of stained glass; one who cuts/sets glass
-glover                 {title guild}       craftsman        21/1-in-2400  a glovemaker
+glazier                {guild rank}        craftsman                      maker of stained glass; one who cuts/sets glass
+glover                 {guild rank}        craftsman        21/1-in-2400  a glovemaker
 goatherd                                   farmer                         one who looks after a herd of goats
 goldbeater                                 craftsman                      one who makes gold foil
-goldsmith              {title guild}       craftsman                      a worker in precious metals
+goldsmith              {guild rank}        craftsman                      a worker in precious metals
+governor                                   government
+gourmet chef           {guild rank}        service
 gravedigger                                service          
-greengrocer            {title guild}       merchant                       seller of vegetables and fruits
+greengrocer            {guild rank}        merchant                       seller of vegetables and fruits
 grinder                                    craftsman                      blade sharpener
-grocer                 {title guild}       merchant                       wholesaler of everyday items
+grocer                 {guild rank}        merchant                       wholesaler of everyday items
 groom                                      service                        one who takes care of horses (especially {mount})
-guard                  {title military}    military                       {weapon} and {armor}
-guardsman              {title military}    military                       {weapon} and {armor}
-guide                  {title guild}       service                        especially {terrain} in {region}
+guard                  {military rank}     military                       {weapon} and {armor}
+guardsman              {military rank}     military                       {weapon} and {armor}
+guide                  {guild rank}        service                        especially {terrain} in {region}
 guru                                       religious
 gypsy                                                                     
-haberdasher            {title guild}       merchant                       a merchant of clothing, thread, needles, etc
+haberdasher            {guild rank}        merchant                       a merchant of clothing, thread, needles, etc
 hacker                                     craftsman                      hoe-maker
 halberdier                                 military
 harlot                                     service             
 harness maker                              craftsman        24/1-in-2000
 harper                                     artist
-hatter                 {title guild}       craftsman        54/1-in-950   one who makes and repairs hats
+hatter                 {guild rank}        craftsman        54/1-in-950   one who makes and repairs hats
 hawker                                     farmer                         breeds, trains, hunts with hawks
-hay merchant           {title guild}       merchant         1-in-2300
+hay merchant           {guild rank}        merchant         1-in-2300
 hayward                                    farmer                         a tender of hedges
 hayward                                    government                     an officer in charge of fences and hedges
-healer                 {title guild}       service                        
+healer                 {guild rank}        service                        
 hegumen                                    religious
-herald                 {title guild}       government                     an expert in the field of heraldry and maker of proclamations 
-herb-seller            {title guild}       merchant         
-herbalist              {title guild}       farmer                         especially {herb} and {herb{!different}}
+herald                 {guild rank}        government                     an expert in the field of heraldry and maker of proclamations 
+herb-seller            {guild rank}        merchant         
+herbalist              {guild rank}        farmer                         especially {herb} and {herb{!different}}
 hermit                                                                    
-hetheleder             {title guild}       farmer/merchant                one who sells heather as fuel
-hewer                  {title guild}       service                        especially {mineral}; digger
-historian              {title academic}    scholar
+hetheleder             {guild rank}        farmer/merchant                one who sells heather as fuel
+hewer                  {guild rank}        service                        especially {mineral}; digger
+historian              {academic rank}     scholar
 hobbler                                    sailor                         boat-tower on a river or canal
-horner                 {title guild}       craftsman                      craftsman who works in horn (spoons, combs, musical instruments)
+horner                 {guild rank}        craftsman                      craftsman who works in horn (spoons, combs, musical instruments)
 horse trader                               merchant
 horse trainer                              farmer
 horse-leech                                service                        veterinarian, farrier
-hosier                 {title guild}       craftsman                      a maker of hose and garters
-hosteler               {title guild}       merchant                       an innkeeper
+hosier                 {guild rank}        craftsman                      a maker of hose and garters
+hosteler               {guild rank}        merchant                       an innkeeper
 housewife
 hunter                                     farmer                         especially {fauna}
 huntsman                                   farmer
 hurdle maker                               service                        maker of 'wattle fences' for sheep
-husbandman             {title guild}       farmer                         especially {fauna}
-hypnotist              {title guild}       entertainer
+husbandman             {guild rank}        farmer                         especially {fauna}
+hypnotist              {guild rank}        entertainer
 illuminator                                artist           1-in-3900
 illusionist                                entertainer
-ink-maker              {title guild}       craftsman
-innkeeper              {title guild}       merchant         1-in-2000
+ink-maker              {guild rank}        craftsman
+innkeeper              {guild rank}        merchant         1-in-2000
 instructor                                 service                        especially {skill}
-instrument maker       {title guild}       craftsman                      especially {musical instrument}
-interpreter            {title guild}       service                        +2 on languages, +5 {race}
+instrument maker       {guild rank}        craftsman                      especially {musical instrument}
+interpreter            {guild rank}        service                        +2 on languages, +5 {race}
 interrogator                               military
-ironmonger             {title guild}       merchant                       one who sells things made of iron
+inventor                                   scholar
+ironmonger             {guild rank}        merchant                       one who sells things made of iron
 ivory-carver                               craftsman                      
 jailer                                     government                     
-jester                 {title guild}       entertainer
-jeweler                {title guild}       craftsman        131/1-in-400  maker of jewelry (especially {gem})
-joiner                 {title guild}       craftsman                      skilled carpenter; cabinet or furniture maker
+jester                 {guild rank}        entertainer
+jeweler                {guild rank}        craftsman        131/1-in-400  maker of jewelry (especially {gem})
+joiner                 {guild rank}        craftsman                      skilled carpenter; cabinet or furniture maker
 judge                                      government                     a man who is responsible for deciding questions brought to court
-juggler                {title guild}       entertainer
+juggler                {guild rank}        entertainer
 knacker                                    craftsman                      harness-maker
 knocker                                    service                        knocks on doors/windows to wake residents
 knapper                                    craftsman                      a worker in flint
@@ -390,46 +398,46 @@ lampwright                                 craftsman                      maker 
 lancier                                    craftsman                      a maker of lances
 landlord
 lantern-maker                              craftsman          
-lapidary               {title guild}       craftsman                      worker with precious stones
+lapidary               {guild rank}        craftsman                      worker with precious stones
 latoner                                    craftsman                      worker in brass and latten (a brass-like alloy)
 laundress                                  service            43          also known as lavendar
 lawyer                                     service                        a master of the law
 leadsmith                                  craftsman          
-leather craftsman      {title guild}       craftsman          
-leather-worker         {title guild}       craftsman          
+leather craftsman      {guild rank}        craftsman          
+leather-worker         {guild rank}        craftsman          
 leech                  level {10}          service
 lensgrinder                                craftsman          
-librarian              {title academic}    scholar
+librarian              {academic rank}     scholar
 lighterman                                 sailor                         one who ferries goods from ship to shore on a small boat
 limeburner             level {10}          craftsman                      a maker of lime for mortar
 limner                                     artist                         someone who illuminates manuscripts
 linen-armorer                              craftsman                      one who makes cloth armor
-linen-draper           {title guild}       merchant                       one who deals in linens, calicos, etc
+linen-draper           {guild rank}        merchant                       one who deals in linens, calicos, etc
 linener                                    craftsman                      a shirt maker
 linenspinner                               craftsman          
 liner                                      government                     one who traces property boundaries
-linguist               {title guild}       scholar                        especially {race}
+linguist               {guild rank}        scholar                        especially {race}
 link boy                                   service                        carries a torch/lantern to guide people through the night
-linker                 {title guild}       
-liveryman              {title guild}       
-locksmith              {title guild}       craftsman        27/1-in-1900  one who makes/repairs locks and keys
+linker                 {guild rank}        
+liveryman              {guild rank}        
+locksmith              {guild rank}        craftsman        27/1-in-1900  one who makes/repairs locks and keys
 lorimer                                    craftsman                      maker of horse gear
 lumberjack                                 farmer
 lutemaker                                  craftsman          
 lutenist                                   entertainer                    a lute player
 luthier                                    craftsman                      a maker of stringed instruments (lutes, guitars, etc)
-mage                   {title guild}       magical
-magician of {magic}:   {title guild}       magical
+mage                   {guild rank}        magical
+magician of {magic}:   {guild rank}        magical
 magistrate                                 government                     a judge
 maidservant                                service         199/1-in-250   a female household servant
 mailer                                     craftsman                      enameller (not a maker of armor)
 mapmaker                                   craftsman                      also known as cartographer
-marbler                {title guild}       craftsman                      a cutter and carver of marble
+marbler                {guild rank}        craftsman                      a cutter and carver of marble
 mariner                                    sailor
 marler                                     farmer                         one who digs 'marl', a type of soil used as fertilizer
 marleywoman                                craftsman                      a maker of marli, a type of fabric (gauze used for embroidery)
 marshal                                    farmer                         a horse tender
-mason                  {title guild}       craftsman       104/1-in-500   a worker who builds with bricks/stones
+mason                  {guild rank}        craftsman       104/1-in-500   a worker who builds with bricks/stones
 masseur                                    service
 master builder                             craftsman                      chief architect
 master of hounds                           farmer
@@ -438,58 +446,58 @@ mathematician                              scholar
 matriarch                                  religious
 meat butcher                               craftsman        42            butcher of all sorts of meats, esp beef
 mechanic                                   service
-mercenary              {title military}    military                       {weapon} and {armor}
-mercer                 {title guild}       merchant         1-in-700      a dealer in expensive clothing (silk, etc)
-merchant               {title guild}       merchant                       specializing in {equipment}
+mercenary              {military rank}     military                       {weapon} and {armor}
+mercer                 {guild rank}        merchant         1-in-700      a dealer in expensive clothing (silk, etc)
+merchant               {guild rank}        merchant                       specializing in {equipment}
 messenger                                  service
-metal craftsman        {title guild}       craftsman
-metropolitan           {title religious}   religious                      a bishop in charge of other bishops; an archbishop
+metal craftsman        {guild rank}        craftsman
+metropolitan           {religious rank}    religious                      a bishop in charge of other bishops; an archbishop
 midwife                                    service
-milkmaid               {title guild}       merchant                       a female servant who milks cows
-miller                 {title guild}       craftsman/service              one who operates a grain {water|wind}-mill
+milkmaid               {guild rank}        merchant                       a female servant who milks cows
+miller                 {guild rank}        craftsman/service              one who operates a grain {water|wind}-mill
 milliner                                   craftsman                      maker of womens' hats and clothing
-miner                  {title guild}       craftsman                      especially {mine}
+miner                  {guild rank}        craftsman                      especially {mine}
 miniaturist                                artist                         painter of miniatures (small paintings usually found on icons or in books)
-minstrel               {title guild}       entertainer                    usually {musical instrument}
-minter                 {title guild}       craftsman                      a maker of coins             
+minstrel               {guild rank}        entertainer                    usually {musical instrument}
+minter                 {guild rank}        craftsman                      a maker of coins             
 mirrorer                                   craftsman                      one who makes mirrors?
 molecatcher                                farmer
 money-lender                               service
-monk                   {title religious}   religious                       of {religion}; {weapon}
+monk                   {religious rank}    religious                       of {religion}; {weapon}
 mosaic layer                               craftsman/artist
 mummer                                     entertainer                    actor
-musician               {title guild}       artist/entertainer             especially {musical instrument}
-nail-maker             {title guild}       craftsman          
-nailsmith              {title guild}       craftsman                      a smith specializing in nails
+musician               {guild rank}        artist/entertainer             especially {musical instrument}
+nail-maker             {guild rank}        craftsman          
+nailsmith              {guild rank}        craftsman                      a smith specializing in nails
 nakerer                                    entertainer                    a player of the naker a small kettle drum
 napier                                     service                        the person who manages royal linens
 naturalist                                 scholar                        especially {{flora|fauna}}
-navigator              {title guild}       sailor                         especially {terrain} in {region}
+navigator              {guild rank}        sailor                         especially {terrain} in {region}
 nedeller                                   craftsman                      maker of needles
-net-maker              {title guild}       craftsman          
-nobleman               {title feudal}      government                     someone with royal blood
-nun                    {title religious}   religious
+net-maker              {guild rank}        craftsman          
+nobleman               {feudal rank}       government                     someone with royal blood
+nun                    {religious rank}    religious
 nurse                                      service            
-oculist                {title guild}       
-oil merchant           {title guild}       merchant
+oculist                {guild rank}        
+oil merchant           {guild rank}        merchant
 oil-maker                                  craftsman          
-old-clothes dealer     {title guild}       merchant            1-in-400
-oracle                 {title guild}       religious                      +1 on divination spells
+old-clothes dealer     {guild rank}        merchant            1-in-400
+oracle                 {guild rank}        religious                      +1 on divination spells
 organist                                   entertainer
-ostiary                {title religious}   religious                      a church's doorkeeper
+ostiary                {religious rank}    religious                      a church's doorkeeper
 ostler                                     farmer                         cares for horses
 outfitter                                  merchant
 outlaw                                     criminal                       a man wanted by the law for {crime}
-oynter                 {title guild}       merchant                       an oil-merchant
+oynter                 {guild rank}        merchant                       an oil-merchant
 oysterer                                   farmer/sailor                  one who harvests oysters
 painter                                    artist              1-in-1500           
 paladin of {religion}                      religious/military             {weapon}, {armor}
 panter                                     service                        keeper of the pantry
-paper-maker            {title guild}       craftsman          
-parchment-maker        {title guild}       craftsman
+paper-maker            {guild rank}        craftsman          
+parchment-maker        {guild rank}        craftsman
 parchmenter                                craftsman                      a parchment-maker
-pardoner               {title religious}   religious                      seller of indulgences
-parish priest          {title religious}   religious
+pardoner               {religious rank}    religious                      seller of indulgences
+parish priest          {religious rank}    religious
 parker                                     farmer                         caretaker of a park
 pasteler                                   craftsman       106/1-in-500   baker specializing in pastries
 pattenmaker                                craftsman          
@@ -497,54 +505,54 @@ pavior                                     service                        one wh
 pavyler                                    service                        put up pavilions/tents
 pearl-diver                                farmer/sailor
 peasant                                    
-peddler                {title guild}       merchant
+peddler                {guild rank}        merchant
 perfumer                                   crafstman
 perukier                                   craftsman                      a wig-maker
-pewterer               {title guild}       craftsman                      a smith specializing in pewter
+pewterer               {guild rank}        craftsman                      a smith specializing in pewter
 philosopher                                scholar
-physician              {title guild}       scholar          
+physician              {guild rank}        scholar          
 pickpocket                                 criminal                       one who picks pockets
-pie seller             {title guild}       merchant
+pie seller             {guild rank}        merchant
 pikeman                                    military
 pilgrim                                    religious                      {religion}
 pilot                                      sailor
 pinmaker                                   craftsman          
 pioneer                                    military                       an early term for military engineer
 piper                                      artist
-plasterer              {title guild}       craftsman         1-in-1400    a specialist in plastering
+plasterer              {guild rank}        craftsman         1-in-1400    a specialist in plastering
 plattner                                   craftsman                      beat out sheets of metal
 player                                     entertainer
 playwright                                 artist
 ploughman                                  farmer                         a worker of the field
 plumber                                    craftsman                      worker in lead
-plumer                 {title guild}       merchant                       a dealer in feathers
+plumer                 {guild rank}        merchant                       a dealer in feathers
 poacher                                    criminal                       one who illegally kills animals, usually on somebody else's land
 poet                                       artist
 pointer                                    craftsman                      lace-maker
 pole-turner                                craftsman                      maker of polearms (spears, pikes, halberds, etc)
-politician             {title guild}       government
+politician             {guild rank}        government
 porter                                     service           42           one who carries burdens
 pot mender                                 craftsman          
 potboy                                     service                        cleans out chamber pots
-potter                 {title guild}       craftsman          
-poulter                {title guild}       merchant/farmer                seller of poultry
+potter                 {guild rank}        craftsman          
+poulter                {guild rank}        merchant/farmer                seller of poultry
 prestidigitator                            magical
-priest                 {title religious}   religious                      temple of {religion}
-primate                {title religious}   religious                      head of the church in a country or region
+priest                 {religious rank}    religious                      temple of {religion}
+primate                {religious rank}    religious                      head of the church in a country or region
 printer                                    craftsman          
 prisoner                                   criminal                                   
 privycleaner                               service            
 proctor                                    service                        a legal agent or representative
 professor                                  scholar
-prophet                {title guild}       religious
-prospector             {title guild}       farmer                         especially {mine}
+prophet                {guild rank}        religious
+prospector             {guild rank}        farmer                         especially {mine}
 prostitute                                 service
 purse maker                                craftsman        45/1-in-1100
 purser                                     craftsman                      a purse-maker
 pursuivant                                 government                     officer of arms, ranks below herald, similar duties
-purveyor                                   military                       army supplier for a {title feudal}
-quarrier               {title guild}       craftsman/farmer               one who digs and cuts stone
-quarryman              {title guild}       craftsman/farmer               one who digs and cuts stone
+purveyor                                   military                       army supplier for a {feudal rank} 
+quarrier               {guild rank}        craftsman/farmer               one who digs and cuts stone
+quarryman              {guild rank}        craftsman/farmer               one who digs and cuts stone
 quartermaster                              service            
 quilter                                    craftsman                      a quilt-maker
 ragpicker                                  service                        sorts through leftover rags, find re-usable ones
@@ -560,14 +568,14 @@ riveter                                    service                        one wh
 rogue                                      criminal
 roofer                                     craftsman         28/1800      one who makes and repairs roofs
 ropemaker                                  craftsman         26/1900
-roper                  {title guild}       craftsman
+roper                  {guild rank}        craftsman
 ruffian                                    criminal                       {weapon} and {armor}
 rugmaker                                   craftsman         24/2000
 rumor-monger                               service
-rune-weaver            {title guild}       magical                        enchants cloth items
-sacristan              {title religious}   religious                      a person in charge of the relics and religious items of a church
-saddler                {title guild}       craftsman         51/1000      maker of saddles and tack
-sage                   {title academic}    scholar                        domain: {domain}
+rune-weaver            {guild rank}        magical                        enchants cloth items
+sacristan              {religious rank}    religious                      a person in charge of the relics and religious items of a church
+saddler                {guild rank}        craftsman         51/1000      maker of saddles and tack
+sage                   {academic rank}     scholar                        domain: {domain}
 sailmaker                                  craftsman          
 sailor                                     sailor
 saltboiler                                 craftsman                      makes salt by boiling water
@@ -576,13 +584,13 @@ samurai                                    military                       {weapo
 sapper                                     military                       specialist in field fortifications
 sawyer                                     craftsman                      saws timbers to boards
 scabbard-maker                             craftsman         58/850
-scholar                {title academic}    scholar                        domain: {domain}
+scholar                {academic rank}     scholar                        domain: {domain}
 scout                                      military                       especially {terrain} in {region}
-scribe                 {title guild}       service
+scribe                 {guild rank}        service
 scrivener                                  scholar                        scribe
 scrounger                                  itinerant
 scullion                                   service                        the bottom-rung servant in a household
-sculptor               {title guild}       artist            1-in-2000
+sculptor               {guild rank}        artist            1-in-2000
 scythesmith                                craftsman          
 sea captain                                sailor
 seamstress                                 craftsman          
@@ -591,21 +599,21 @@ seneschal                                  service                        senior
 sergeant                                   military
 sergeant-at-arms                           military
 servant                                    service                               
-sexton                 {title religious}   religious                      minor church officer; rings bells, digs graves
+sexton                 {religious rank}    religious                      minor church officer; rings bells, digs graves
 shaman                                     magical                        shaman of {magic}
 sharpener                                  service
-sheather               {title guild}       craftsman                      a maker of scabbards and knife sheaths
+sheather               {guild rank}        craftsman                      a maker of scabbards and knife sheaths
 sheepshearer                               farmer
 shepherd                                   farmer                         one who looks after a herd of sheep
-sheriff                                    government                     local representative for a {title feudal}
+sheriff                                    government                     local representative for a {feudal rank} 
 shingler                                   craftsman                      wooden roof tiler
 ship's captain                             sailor
-ship-builder           {title guild}       craftsman/sailor                               
+ship-builder           {guild rank}        craftsman/sailor                               
 ship-handler                               sailor                         ship provisioner
 shipwright                                 craftsman                      a ship builder
 shoemaker                                  craftsman         366/150      one who makes and repairs shoes
-shrimper               {title guild}       farmer                         one who catches shrimp
-siege engineer         {title military}    military                       {weapon}, {armor}
+shrimper               {guild rank}        farmer                         one who catches shrimp
+siege engineer         {military rank}     military                       {weapon}, {armor}
 siever                                     craftsman                      a maker of sieves (a picture)
 silk trader                                merchant
 silk-carder                                craftsman                      various individuals making silk articles
@@ -614,45 +622,46 @@ silk-dyer                                  craftsman                      variou
 silk-maker                                 craftsman                      various individuals making silk articles
 silk-mercer                                craftsman                      various individuals making silk articles
 silk-snatcher                              criminal                       one who steals bonnets
-silversmith            {title guild}       craftsman          
+silversmith            {guild rank}        craftsman          
 singer                                     artist
-skinner                {title guild}       merchant                       a dealer in furs and skins
+skinner                {guild rank}        merchant                       a dealer in furs and skins
 slave                                                                     
 smelter                                    craftsman                      refines raw ore into pure metals
-smith                  {title guild}       craftsman                      blacksmith
+smith                  {guild rank}        craftsman                      blacksmith
 smuggler                                   criminal                       especially {smuggled}
 soap-maker                                 craftsman
-soldier                {title military}    military                       {weapon}, {armor}
+soldier                {military rank}     military                       {weapon}, {armor}
 solicitor                                  service                        lawyer
-soothsayer             {title guild}       magical                        +1 on divination spells       
+soothsayer             {guild rank}        magical                        +1 on divination spells       
 sorcerer                                   magical
 spearman                                   military
 sperviter                                  service                        a keeper of sparrow-hawks
-spice merchant         {title guild}       merchant               1400
-spice-trader           {title guild}       merchant                       grocer or dealer in spices
+spice merchant         {guild rank}        merchant               1400
+spice-trader           {guild rank}        merchant                       grocer or dealer in spices
 spinster
 spooner                                    craftsman                      a spoon-maker
 spurrer                                    craftsman                      maker of spurs
 spy                                        military
-stableman              {title guild}       farmer/service                 especially {mount}
+squire                                     service
+stableman              {guild rank}        farmer/service                 especially {mount}
 stainer                                    service                        one who stains wood
-stationer              {title guild}       merchant                       seller of books, etc; also, a copyist
-steward                {title guild}       service            
+stationer              {guild rank}        merchant                       seller of books, etc; also, a copyist
+steward                {guild rank}        service            
 stewsman                                   criminal                       a brothel keeper
 stillroom maid                             service            
-stone-carver           {title guild}       craftsman          
+stone-carver           {guild rank}        craftsman          
 stonecutter                                craftsman          
 stonemason                                 craftsman          
 storekeep                                  merchant
-strategist             {title military}    military    
+strategist             {military rank}     military    
 summoner                                   government                     officer of the court who serves subpoenas (see also religious version)
-summoner               {title religious}   religious                      officer who brings people to episcopal courts (see also government version)
+summoner               {religious rank}    religious                      officer who brings people to episcopal courts (see also government version)
 surgeon                                    service            
-surveyor               {title guild}       government/service             especially {terrain} in {region}
+surveyor               {guild rank}        government/service             especially {terrain} in {region}
 swineherd                                  farmer                         one who looks after a herd of swine (sometimes pigherd)
 swordsmith                                 craftsman          
-tactician              {title military}    military
-tailor                 {title guild}       craftsman           197/250    one who makes and repairs clothing
+tactician              {military rank}     military
+tailor                 {guild rank}        craftsman           197/250    one who makes and repairs clothing
 tallowchandler                             craftsman          
 tanner                                     craftsman           24/2000    preparer of leather
 tapestry-maker                             craftsman                      tapicer             
@@ -660,10 +669,10 @@ tapster                                    service                        one wh
 tasseler                                   craftsman                      one who makes tassels
 taster                                     service                        one who tastes food for a noble (in case of poison)
 tattooist                                  artist
-taverner               {title guild}       merchant            400        innkeeper
+taverner               {guild rank}        merchant            400        innkeeper
 tax collector                              government                     officer of the court who serves subpoenas (see also religious version)
 taxidermist                                craftsman/artist
-teacher                {title academic}    service/scholar                domain: {domain}
+teacher                {academic rank}     service/scholar                domain: {domain}
 teamster                                   service                        one who drives a team of oxen or horses (especially {mount} teams)
 tenter                                                                    an unskilled workman's assistant 
 terrazo grinder
@@ -681,8 +690,8 @@ tillerman                                  farmer
 tinker                                     craftsman                      a travelling smith who repairs items
 tinsmith                                   craftsman          
 tracker                                                                   
-trader                 {title guild}       merchant                       specializing in {equipment}
-translator             {title guild}       service/scholar                +2 on languages, +5 {race}
+trader                 {guild rank}        merchant                       specializing in {equipment}
+translator             {guild rank}        service/scholar                +2 on languages, +5 {race}
 trapper                                    farmer                         especially {fauna}
 treen-maker                                craftsman                      one who makes various small wood items
 trencherman                                service                        carver, trench-digger
@@ -693,57 +702,57 @@ turner                                     craftsman                      lathe 
 tutor                                      scholar
 typefounder                                craftsman          
 undertaker
-unguentary             {title guild}       merchant                       one who sells unguents
+unguentary             {guild rank}        merchant                       one who sells unguents
 upholder                                   craftsman                      an upholsterer
 urchin
 userer                                     service                        a moneylender
 vagabond                                   criminal
 vaginarius                                 craftsman                      scabbard-maker
-veterinarian           {title guild}       service                        especially {fauna}
-vintner                {title guild}       craftsman                      a winemaker
-waferer                {title guild}       merchant                       confectioner (a dealer in 'wafers', a kind of cake)
+veterinarian           {guild rank}        service                        especially {fauna}
+vintner                {guild rank}        craftsman                      a winemaker
+waferer                {guild rank}        merchant                       confectioner (a dealer in 'wafers', a kind of cake)
 wagoner                                    service                        wagon or cart driver
 waiter                                     service                               
 waller                                     service                        one who builds walls
-warden                                     government/military            a regional guardian for a {title feudal}
+warden                                     government/military            a regional guardian for a {feudal rank} 
 warlock                                    magical
-watchman               {title military}    government                     {weapon}, {armor}
+watchman               {military rank}     government                     {weapon}, {armor}
 water carrier                              service           58/850     
-water-seller           {title guild}       merchant
+water-seller           {guild rank}        merchant
 waterman                                   sailor                         riverboat sailor
 wattler                                    service                        makes 'wattle fences' for sheep
 waxchandler                                craftsman          
-weapon-trainer         {title guild}       military                       especially {weapon}
-weapons master         {title guild}       military                       specialty is {weapon}
-weaponsmith            {title guild}       craftsman                      especially {weapon}
-weaver                 {title guild}       craftsman          86/600      weaver of cloth
+weapon-trainer         {guild rank}        military                       especially {weapon}
+weapons master         {guild rank}        military                       specialty is {weapon}
+weaponsmith            {guild rank}        craftsman                      especially {weapon}
+weaver                 {guild rank}        craftsman          86/600      weaver of cloth
 webber                                     craftsman                      weaver
 weeper                                     service            
-weirkeeper             {title guild}       farmer                         a keeper of fish traps
+weirkeeper             {guild rank}        farmer                         a keeper of fish traps
 wetnurse                                   service            
 wheeler                                    craftsman                      maker of spinning wheels
 wheelwright                                craftsman                      a maker of wheels
-wine seller            {title guild}       merchant            900
-wire-worker            {title guild}       craftsman                      a smith specializing in chain mail
+wine seller            {guild rank}        merchant            900
+wire-worker            {guild rank}        craftsman                      a smith specializing in chain mail
 wiredrawer                                 craftsman                      maker of gold and silver wire
-wireworker             {title guild}       craftsman                      a smith specializing in chain mail
+wireworker             {guild rank}        craftsman                      a smith specializing in chain mail
 wise-woman                                 magical
 witch                                      magical
 wizard                                     magical
-wood seller            {title guild}       merchant
+wood seller            {guild rank}        merchant
 wood-carver                                craftsman          2400             
-wood-worker            {title guild}       craftsman
+wood-worker            {guild rank}        craftsman
 woodcutter                                 craftsman          
-woodmonger             {title guild}       merchant                       a seller of fuel wood
+woodmonger             {guild rank}        merchant                       a seller of fuel wood
 woodturner                                 craftsman          
 woodward                                   government                     the keeper of a forest 
-wool stapler           {title guild}       merchant                       one who buys and sells wool wholesale 
+wool stapler           {guild rank}        merchant                       one who buys and sells wool wholesale 
 woolcomber                                 farmer
 woolman                                    farmer                         sorts wool into differing grades
 writer                                     artist
 {class}
-{title feudal}                             government
-{title religious}                          religious
+{feudal rank}                              government
+{religious rank}                           religious
 {transport}-maker                          craftsman
 
 ===

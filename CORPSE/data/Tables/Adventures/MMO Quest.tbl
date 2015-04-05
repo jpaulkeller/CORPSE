@@ -5,7 +5,7 @@ Gather {{4}x5} {{~{spell component}}+}
 Get {reagent}
 {Capture/Kill} beast: {beast:encounter}
 {Capture/Kill} demon: {Demon Name}
-{Capture/Kill} dragon: {Dragon Name}
+{Capture/Kill} dragon: <Dragon={Dragon Name}>
 {Capture/Kill} monstrosity: <Monstrosity={Monster Name}>
 {Capture/Kill} {d4x5} {{fauna}+}
 {Capture/Kill} {d2x5} {{monster}+}
