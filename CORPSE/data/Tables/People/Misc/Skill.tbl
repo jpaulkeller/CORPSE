@@ -1,25 +1,25 @@
-/ Sources: DRAGON Magazine, #148, page 22
-/          DRAGON Magazine, #156, page 37
-/          DRAGON Magazine, #164, page 28
-/          AD&D Dungeoneer's Survival Guide, page 26
-/          AD&D Oriental Adventures, page 21, 53
-/          Boy Scouts Merit Badges
-/          Fantasy Hero, page 16
-/          D&D Rules Cyclopedia, page 82
-/          GURPS (and RPG-Asst)
-/          http://dndtools.eu/skills/
+/ AD&D Dungeoneer's Survival Guide, page 26
+/ AD&D Oriental Adventures, page 21, 53
+/ Boy Scouts Merit Badges
+/ D&D Rules Cyclopedia, page 82
+/ DRAGON Magazine, #148, page 22
+/ DRAGON Magazine, #156, page 37
+/ DRAGON Magazine, #164, page 28
+/ Fantasy Hero, page 16
+/ GURPS (and RPG-Asst)
+/ http://dndtools.eu/skills/
 
-.Skill                          Cost
-.skill; attribute; trained only; armor check penalty
-absolute direction              5 pts
-absolute timing                 5 pts
+.Skill, Description
+/ .skill; attribute; trained only; armor check penalty
+absolute direction;; 5 pts
+absolute timing;; 5 pts
 accounting
 acrobatics
 acting
 acupuncture
-acute hearing                   2 pts/level
-acute taste and smell           2 pts/level
-acute vision                    2 pts/level
+acute hearing;; 2 pts/level
+acute taste and smell;; 2 pts/level
+acute vision;; 2 pts/level
 adapt; ability to fit in to social organizations and situations
 administration
 advertising
@@ -28,9 +28,9 @@ aerodynamics
 agriculture
 agronomy
 alchemy; int; yes; no; 
-alertness                       5 pts/level; the ability to stay alert without sleep
+alertness; 5 pts/level; the ability to stay alert without sleep
 alternate magics
-ambidexterity                   10 pts
+ambidexterity; 10 pts
 analysis; the ability to figure out components, processes, or structure
 anatomy
 ancient history
@@ -38,7 +38,7 @@ animal anatomy
 animal behavior
 animal disease
 animal driving
-animal empathy                  5 pts; cha; yes; no; 
+animal empathy; 5 pts; cha; yes; no; 
 animal evaluation
 animal genetics
 animal handling
@@ -77,11 +77,11 @@ auto mechanic
 autohypnosis; wis; yes; no; 
 autopsy
 avoidance
-axe throwing    (pe)
-axe/mace        (pa)
+axe throwing
+axe/mace
 backpacking
 backstab
-balance (& rope-walking); dex; no; yes; 
+balance (and rope-walking); dex; no; yes; 
 banking
 bard
 bargain
@@ -90,8 +90,8 @@ barter
 base defense
 basketry
 battle-ready
-battlesuit      (ma)
-beam weapons    (pe)
+battlesuit; (ma)
+beam weapons; (pe)
 bicycling
 biochemistry
 bioengineering
@@ -103,16 +103,16 @@ biophysics
 biopsy
 bioscience
 biotechnology
-black powder weapon        (pe)
-blackjack       (pe)
+black powder weapon; (pe)
+blackjack; (pe)
 blacksmith
 blade; the ability to effectively use cutting weapons in combat
 blind-fighting
 blind-shooting
-blowpipe        (ph)
+blowpipe; (ph)
 bluff; cha; no; no; 
 boating
-bolas           (pa)
+bolas; (pa)
 boozing
 botany
 bow; the ability to effectively use bow weapons in combat
@@ -125,8 +125,8 @@ breakfall
 breath control
 brewing; the ability to make beer and wines
 bribery
-broadsword      (pa)
-buckler         (pe)
+broadsword; (pa)
+buckler; (pe)
 business; the ability to bargain, buy, sell, inventory, bribe
 calligraphy
 camouflage
@@ -141,7 +141,7 @@ ceremony
 chanting
 chariot (drive)
 charioteering
-charisma                        5 pts/level
+charisma; 5 pts/level
 charm
 cheating
 chemical hydrology
@@ -149,7 +149,7 @@ chemistry; the study of how molecules combine
 chiropractic
 chromatography
 chronography
-clerical investment;            5 or more pts, gm's discretion
+clerical investment;; 5 or more pts, gm's discretion
 climatology
 climbing; str; no; yes; the ability to climb walls, cliffs, and trees
 climbing, rocks
@@ -160,10 +160,10 @@ coach (drive)
 coach (sports)
 cobbler 
 coding
-combat reflexes                 15 pts
+combat reflexes; 15 pts
 command
 commodities
-common sense                    10 pts
+common sense; 10 pts
 communication systems technology
 comparative religion
 computer operation
@@ -196,8 +196,8 @@ craft+
 craft/create
 craft; int; no; no; 
 credit rating
-criminology     (ma)
-crossbow        (pe)
+criminology; (ma)
+crossbow; (pe)
 cryptography
 cryptography the ability to encrypt and decrypt data
 cryptozoology
@@ -207,59 +207,59 @@ customs inspection
 cybernetics
 cytology
 damage control
-dancing         (pa)
-danger sense                    15 pts
+dancing; (pa)
+danger sense; 15 pts
 dash the ability to perform marvellous feats of physical prowess.
 deception
 decipher script; int; yes; no; 
 deduction
 demolition
 demolition
-demolition      (ma)
+demolition; (ma)
 demolition the ability to effectively set and use explosives
 dendrochronology
 dentistry 
 dermatology
 detect deception
-detect lies     (mh)
+detect lies; (mh)
 detect lies (psych)
 devices do what one wants them to do, within the limits of the device
-diagnosis       (mh)
+diagnosis; (mh)
 diagnosis the ability to identify an injury or disease before attempting a cure
 dietician
-diplomacy       (mh); cha; no; no; 
+diplomacy; (mh); cha; no; no; 
 disable device; int; yes; no; 
 disguise (ma); cha; no; no; the ability to change the outward appearance of some person or thing 
 diving
 dodge
 dodging
-double-jointed                  5 pts
+double-jointed; 5 pts
 drawing (drafting)
 drawing (sketching)
 dressage
 drinking the ability to consume large quantities of alcohol
 drive (automobiles, motorcycles, heavy equipment, military vehicles)
-driving         (pa)
+driving; (pa)
 driving the ability to direct the movement of a craft or vehicle
 drug the ability to use and make drugs to cause and cure injury or sensory abnormalities
 drugs
 dry cleaning
-ecology         (ma)
-economics       (mh)
+ecology; (ma)
+economics; (mh)
 education
-eidetic memory                  30/60 pts
+eidetic memory; 30/60 pts
 electronic countermeasures
-electronics     (mh)
-electronics operation     (ma)
+electronics; (mh)
+electronics operation; (ma)
 electronics technology
 electronics the ability to work with electronic or electrical equipment
 embryology
-empathy                         15 pts
+empathy; 15 pts
 endear the ability to make yourself liked and wanted
 endocrinology
 endurance
 energy systems
-engineer        (mh)
+engineer; (mh)
 engineering
 engineering, aerospace
 engineering, automotive
@@ -276,7 +276,7 @@ entomology
 environmental geology
 epidemiology
 equestrian
-escape          (ph)
+escape; (ph)
 escape artist; dex; no; yes; 
 espionage
 ethnology
@@ -289,40 +289,40 @@ evasion
 explosives
 extreme sports
 falconry
-falconry        (ma) 
+falconry; (ma) 
 falling safely
 familiarity (subject)
 farming
-fast-draw       (pe)
-fast-talk       (ma)
-fencing         (pa)
+fast-draw; (pe)
+fast-talk; (ma)
+fencing; (pa)
 filching
 filmmaking
 fine arts
 fire building
 firearms; the ability to effectively aim direct -fire missile weapons
 firebuilding
-first aid       (me)
-fishing         (me)
+first aid; (me)
+fishing; (me)
 fitness
-flail           (ph)
+flail; (ph)
 fletcher
 flower arranging
 fluid mechanics
 focus the ability to concentrate on one thing despite distractions. grants a +1
 food tasting
 foraging
-force shield    (pe)
-force sword     (pa)
-forensics       (mh)
+force shield; (pe)
+force sword; (pa)
+forensics; (mh)
 forestry
 forgery (mh); int; no; no; the ability to convincingly write documents which appear to be genuine,
 forward observer
-free fall       (pa)
+free fall; (pa)
 freefall
 fungus identification
 gadgetry
-gambling        (ma)
+gambling; (ma)
 game-playing
 gaming (type)
 gardening
@@ -333,24 +333,24 @@ general earth-space science
 general physical science
 general practice/family medicine
 genetic engineering (cloning)
-genetics        (mvh)
+genetics; (mvh)
 geochemistry
 geochronology
 geography
-geology         (mh)
+geology; (mh)
 geomorphology
 geophysics
 geriatrics
-gesture         (me)
+gesture; (me)
 glassblower
 goad the ability to force another into action by insults. the course of the
 golf course management
 gourmet
 graphology/forgery
 ground fighting
-gunner          (pa)
+gunner; (pa)
 gunnery the ability to effectively use cannon and other large guns
-guns            (pe)
+guns; (pe)
 gunsmith
 gymnastics
 gymnastics the ability to make leaps, somersaults and other such moves
@@ -364,16 +364,16 @@ healing
 health sciences
 heavy weapons
 hematology
-heraldry        (ma)
+heraldry; (ma)
 herbalism; the ability to use plants as medicines and poisons
 herding
 herpetology
 hide; dex; no; yes; 
 hiding
-high pain threshold             10 pts
+high pain threshold; 10 pts
 hiking
 history (mh); knowledge of past events
-holdout         (ma)
+holdout; (ma)
 hologram
 homeopathy
 horsemanship, combat
@@ -382,12 +382,12 @@ husbandry the ability to care for plants and animals
 hydrology
 hydroponics
 hygiene
-hypnotism       (mh)
+hypnotism; (mh)
 iaijutsu; cha; no; no; weapon-drawing 
 ichthyology
 identify
 illustrator
-immunity to disease             10 pts
+immunity to disease; 10 pts
 immunology
 impersonation
 improvisation
@@ -395,26 +395,26 @@ industrial trade
 innuendo; wis; yes; no; 
 instruct the ability to teach others effectively
 instruction
-intelligence analysis      (mh)
+intelligence analysis; (mh)
 internet
-interrogation   (ma)
+interrogation; (ma)
 intimidation; cha; no; no; the ability to bluff and deceive others as to one's true strength 
 intuit direction; wis; yes; no; 
-intuition                       15 pts
+intuition; 15 pts
 investigation
 jack of all trades
-jeweler         (mh)
+jeweler; (mh)
 journalism
 jousting
-judo            (ph)
+judo; (ph)
 juggling*
 juggling/sideshow
 jump; str; no; yes; 
-jumping         (pe)
-karate          (ph)
+jumping; (pe)
+karate; (ph)
 kayaking
-knife           (pe)
-knife throwing  (pe)
+knife; (pe)
+knife throwing; (pe)
 knowledge (arcana); int; yes; no; 
 knowledge (architecture and engineering); int; yes; no; 
 knowledge (barbarian lore); int; yes; no; 
@@ -437,43 +437,43 @@ knowledge (weaponry); int; no; no;
 knowledge ({domain})
 knowledge; int; yes; no; 
 labor
-lance           (pa)
+lance; (pa)
 landscaping
 language ({race})
-language talent                 2 pts/level
+language talent; 2 pts/level
 laser technology
-lasso (riata)   (pa)
+lasso (riata); (pa)
 laundry
-law             (mh)
+law; (mh)
 law and justice
 law the ability to use, circumvent, and deal with law, and project an entire system from a few examples
 leadership (ma); the ability to take command of others, to have others do what you want
 lethal strike
-leatherworking  (me)
-legal enforcement powers        5, 10 or 15 pts
+leatherworking; (me)
+legal enforcement powers; 5, 10 or 15 pts
 legends/lore
 liason
 library science
 library use
-lightning calculator            5 pts
+lightning calculator; 5 pts
 linguistics (mvh); the ability to speak & comprehend languages from basic principles
 link the ability to establish a magical channel or connection between two
-lip reading     (ma)
+lip reading; (ma)
 listen; wis; no; no; 
 listening
-literacy                        0 or 10 pts
-literature      (mh)
+literacy; 0 or 10 pts
+literature; (mh)
 lockpicking (ma); the ability to open locked doors using simple metal tools
 locksmith
 long-distance signalling
-longevity                       40 pts
+longevity; 40 pts
 lucid dreaming; wis; yes; no; 
-luck                            15 or 30 pts
+luck; 15 or 30 pts
 lying
 machinist
 macrobiology
-magic resistance                2 pts/level
-magical aptitude (magery)       15 points for first level 10 points/level 
+magic resistance; 2 pts/level
+magical aptitude (magery); 15 points for first level 10 points/level 
 magical engineering
 mammology
 manual labor
@@ -485,7 +485,7 @@ martial arts; weaponless combat system
 martial lore; int; yes; no; 
 masonry
 massage
-mathematical ability            10 pts
+mathematical ability; 10 pts
 mathematics (mh); the ability to manipulate numbers including but not limited to operations, formulae, and calculus
 mechanic (ma); the ability to work with machines and other mechanical devices
 medical
@@ -493,14 +493,14 @@ medicine
 meditation the ability to keep the mind clear and the body relaxed in difficult circumstances by using special breathing and posture exercises.
 melee the ability to efficiently use bashing weapons in combat
 melee weapon
-merchant        (ma)
-metallurgy      (mh)
+merchant; (ma)
+metallurgy; (mh)
 metaphysics
-meteorology     (ma)
+meteorology; (ma)
 microbilogy
 mid-wife
 military operations
-military rank                   5 pts/level of rank
+military rank; 5 pts/level of rank
 military science
 military strategy
 military tactics
@@ -512,33 +512,33 @@ modeling
 molecular biology
 money effectively
 motivation
-motorcycle      (pe)
+motorcycle; (pe)
 mountaineering
 move silently; dex; no; yes; 
 muscle
 music ({musical instrument})
 music appreciation
 music the ability to express oneself in sound
-musical ability                 1 pt/level
-musical instrument    (mh)
+musical ability; 1 pt/level
+musical instrument; (mh)
 mysticism
 natural history
-naturalist      (mh)
+naturalist; (mh)
 nature lore
-navigation      (mh)
+navigation; (mh)
 negotiate the ability to sway another to your point of view
 negotiation
 nephrology
-net             (ph)
+net; (ph)
 neuro-physiology
 neurology
-night vision                    10 pts
+night vision; 10 pts
 nuclear physics (mvh)
 observation
 observe the ability to watch people, data, and objects and notice small discrepancies
 obstetrics/gynecology
 occult lore
-occultism       (ma)
+occultism; (ma)
 oceanography
 oncology
 open lock; dex; yes; no; 
@@ -555,14 +555,14 @@ orthodontics
 orthopedics
 osteopathy
 overdo the ability to go past your normal limits
-packing         (mh) 
+packing; (mh) 
 painting; the ability to express oneself in pictures
 paleaentology
 paleoclimatology
 palynlogy
 pantomime
 parachute
-parachuting     (pe)
+parachuting; (pe)
 paramedic
 paramedical
 parapsychology
@@ -575,38 +575,38 @@ pedology
 people places or things
 perception
 perform; cha; no; no; 
-performance     (ma)
-peripheral vision               15 pts
+performance; (ma)
+peripheral vision; 15 pts
 persuasion
 petrology
 pharmacy
 philosophy
-photography     (ma)
+photography; (ma)
 physical education
 physical science, general
-physician       (mh)
+physician; (mh)
 physics (mh); the study of the fundamental rules governing the universe
-physiology      (mvh)
+physiology; (mvh)
 pick-pocketing (ph); dex; yes; yes; 
 pilot (pa) aircraft/boats; the ability to fly airplanes and other flying craft
 plant lore
 playing ({musical instrument})
 plumbing
 podiatry
-poetry          (ma)
-poisons         (mh)
-polearm         (pa)
+poetry; (ma)
+poisons; (mh)
+polearm; (pa)
 police procedure
-politics        (ma)
-pottery         (ma)
-powerboat       (pa)
+politics; (ma)
+pottery; (ma)
+powerboat; (pa)
 practical jokes
 prestidigitation
 proctology
 profession; wis; yes; no; 
 professional ({profession})
 propaganda
-prospecting     (ma)
+prospecting; (ma)
 prosthetics
 protozoology
 psicraft; int; yes; no; 
@@ -621,7 +621,7 @@ radio
 radiology
 random theories
 range management
-rapid healing                   5 pts
+rapid healing; 5 pts
 react the ability to avoid a bad situation using physical reflexes
 read lips; int; yes; no; 
 read/write
@@ -629,7 +629,7 @@ reading
 recreational activities
 religion
 repair the ability to fix broken or damaged objects and devices
-reputation                      variable
+reputation; variable
 research (ma); the ability to find out known information on a given subject
 rheumatology
 riding (pa) (animals); dex; no; no; the ability to ride an animal or open seated vehicle in complex maneuvers
@@ -637,21 +637,21 @@ riding, basic ({mount})
 riding, combat ({mount})
 robotics
 rope use
-running         (ph)
+running; (ph)
 SCUBA (ma)
 sabotage
 safecracking
 sailing
-savoir-faire    (me)
+savoir-faire; (me)
 scaling (team climbing)
 scholastics
 science+
-scrounging      (me)
+scrounging; (me)
 scry; int; yes; no; 
-sculpting       (pa)
+sculpting; (pa)
 sculpture the ability to express oneself with 3 dimensional objects
 seafaring
-seamanship      (me)
+seamanship; (me)
 search; int; no; no; 
 security systems/procedures
 sedimentology
@@ -661,22 +661,22 @@ sell the ability to convince others that they want what you have
 semaphore
 sense motive; wis; no; no; 
 sewing
-sex appeal      (ma)
-shadowing       (ma)
-shield          (pe)
-shipbuilding    (mh)
+sex appeal; (ma)
+shadowing; (ma)
+shield; (pe)
+shipbuilding; (mh)
 shiphandling
-shortsword      (pa)
-sign language   (ma)
+shortsword; (pa)
+sign language; (ma)
 signaling+
-singing         (pe)
+singing; (pe)
 skate (board, inline, ice)
 ski (water, snow)
-skiing          (ph)
+skiing; (ph)
 skin-diving
 sled
 sleight of hand (ph); dex; yes; yes; the ability to use sleight-of-hand tricks
-sling           (ph)
+sling; (ph)
 slow respiration
 small equipment systems 
 smuggling
@@ -691,34 +691,34 @@ sound analysis
 spacecraft operation
 spacecraft technology
 speak language; none; yes; no; 
-spear           (pa)
-spear throwing  (pe)
-speed-load      (pe)
+spear; (pa)
+spear throwing; (pe)
+speed-load; (pe)
 spellcraft; int; yes; no; 
 spelunking
-sports          (pa)
+sports; (pa)
 spot hidden
 spot; wis; no; no; 
 spurious logic/babble
-staff           (ph)
+staff; (ph)
 stalking
 stand-up comedy
 stash the ability to hide things in nooks and crannies or in plain sight
 statistics
-status                          variable
-stealth         (pa)
+status; variable
+stealth; (pa)
 stealth (hiding in shadows)
 stealth (silent movement)
 stealth (traceless movement)
 steward
 stormchasing
 storytelling
-strategy        (mh)
+strategy; (mh)
 strategy the ability to dispose of large forces and plan long range
 street-wisdom
-streetwise      (ma)
+streetwise; (ma)
 streetwise the ability to find connections, rumors, and general urban survival
-strong will                     4 pts/level
+strong will; 4 pts/level
 supernumerate
 surf (wave, wind)
 surgery (mvh); the ability to cure wounds and other medical problems by operating
@@ -726,15 +726,15 @@ surgery: general, specific - brain, neuro, cardiac, micro, cosmetic, procto, gyn
 surveillance
 surveillance technology
 surveying
-survival        (ma)
+survival; (ma)
 survival the ability to live off the land
 survival, {region}
 survival, {terrain}
 survival; wis; no; no; 
 swim; str; no; yes; 
-swimming        (pe)
+swimming; (pe)
 swimming the ability to swim
-tactics         (mh)
+tactics; (mh)
 tactics the ability to use personnel on hand to best effect
 tanning (furrier)
 taste the ability to discern quality in an object
@@ -742,28 +742,28 @@ taxidermy
 taxonomy
 taylor/seamstress
 teaching
-teaching        (ma)
+teaching; (ma)
 team driving
-teamster        (ma)
+teamster; (ma)
 tectonics
-telegraphy      (me)
+telegraphy; (me)
 telekinesis
 television, production
 television, repair
 teratology
 them to do by making them want to do it for you
-theology        (mh)
+theology; (mh)
 thermodynamics
 throw
-throwing        (ph)
-thrown weapon   (pe)
+throwing; (ph)
+thrown weapon; (pe)
 tightrope walking
 to tn of the next skill roll per success
 topography
 torture
-toughness                       10/25 pts
+toughness; 10/25 pts
 toxicology
-tracking        (ma)
+tracking; (ma)
 tracking the ability to follow a creature or object by noticing signs of its passage
 trade, industrial
 trading
@@ -771,7 +771,7 @@ training the ability to train animals to do tricks
 trap (dis)arming
 trapcraft
 trapping (snare-crafting)
-traps           (ma)
+traps; (ma)
 traps, animal
 traps, combat
 treatment the ability to cure diseases and wounds without surgery
@@ -779,29 +779,29 @@ trivia
 truespeak; int; yes; no; 
 tumble; dex; yes; yes; 
 tumbling
-two-handed axe/mace      (pa)
-two-handed sword         (pa)
+two-handed axe/mace; (pa)
+two-handed sword; (pa)
 ufology
 unarmed weaponless combat system taught by the military.
 undersea combat
-underwater demolition    (ma)
-unusual background              10 or more pts
+underwater demolition; (ma)
+unusual background; 10 or more pts
 urban legends
 urology
 use magic device; cha; yes; no; 
 use psionic device; cha; yes; no; 
 use rope; dex; no; no; 
-vacc suit       (ma)
+vacc suit; (ma)
 vaulting (with or without pole)
-ventriloquism   (mh)
-veterinary      (mh)
+ventriloquism; (mh)
+veterinary; (mh)
 video equipment
 vocational ({profession})
-voice                           10 pts
+voice; 10 pts
 voice mimicry
 vulcanology
 water skills
-wealth                          variable
+wealth; variable
 weapon lore
 weapon mastery
 weaponsmith
@@ -809,13 +809,13 @@ weather forecasting
 weather the ability to predict weather patterns
 weaving
 wheelwright
-whip            (pa)
+whip; (pa)
 whitewater rafting
 wilderness lore; wis; no; no; 
 wildlife
-woodworking     (pa)
+woodworking; (pa)
 wrestling
-writing         (ma)
+writing; (ma)
 writing the ability to express oneself using the written word
 writing, creative
 writing, professional

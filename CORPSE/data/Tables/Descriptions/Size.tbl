@@ -13,6 +13,8 @@ enormous
 : Size {2d6-1}
 : Small {4}
 : Large {d6+5}
+: Flat {11}
+: Any = Flat + Other + Relative
 
 : Other
 long

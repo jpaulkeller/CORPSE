@@ -1,0 +1,103 @@
+: Orc Tribe Name
+{80%{:Adj} }{:Noun}
+
+: adj
+bent
+bloody
+broken
+cracked
+crooked
+dead
+defiled
+dire
+dirty
+dripping
+festering
+fetid
+fierce
+filthy
+flaming
+foul
+hairy
+hated
+jagged
+lumbering
+mean
+muddy
+nasty
+noisy
+oozing
+repulsive
+rotten
+rotting
+ruined
+rusty
+savage
+stinking
+ugly
+vile
+{color:dark}
+
+: noun
+{:animal}
+{:body part}{75%-{barbarian name:eater}s}
+{:other}
+{:place}
+{barbarian name:eater}
+{weapon{!oneword}}
+
+: Other
+bastards
+carnage
+dark
+death
+iron
+plague
+rune
+shadow
+slaughter
+steel
+
+: Body Part
+claw
+fang
+filth
+gore
+horn
+maw
+pox
+scab
+snout
+talon
+tusk
+wart
+10x {body part:crude}
+
+: place
+canyon
+cave
+desert
+earth
+hill
+lake
+marsh
+moon
+rock
+ruins
+stone
+
+: Animal
+bat
+bear
+boar
+bull
+dragon
+drake
+jackal
+lion
+rat
+serpent
+snake
+tiger
+toad
+wolf

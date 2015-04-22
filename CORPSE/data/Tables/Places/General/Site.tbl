@@ -17,6 +17,8 @@ channel
 city
 college
 copse with a few hammocks
+crannog
+croft
 crossing
 crossroads
 dam
@@ -47,6 +49,7 @@ territory marker
 thorp
 town
 trail
+trench
 village
 waterway
 well
@@ -62,37 +65,57 @@ wharf
 : Natural
 arch
 barrens
+bay
+bayou
+beach
 beaver dam
 bend
 bluff
 bog
 butte
 canyon
+cape
+cascades
 cave with soot marks on the ceiling
 cavern
+cay
+channel
 chasm
 cliff{50%s}
+coast
 copse
 cove
 crag
+crater
+creek
 crest
+dale
 deadfall
+delta
 downs
 dry riverbed
+dunes
 escarpment
 falls
+fen
+firth
+fjord
 giant solitary {wood} tree
 glade
 gorge
-gorge
 grotto
 grove of {wood} trees 
+gulch
+gulf
 gully
+heath
 heights
 highland{50%s}
 hill
 hollow tree
 hot spring
+inlet
+island
 isle
 lagoon
 lake
@@ -103,10 +126,13 @@ mire
 mound
 mountain
 mountain pass
+narrows
 natural ford
+neck
 oasis
 pass
 peak
+peninsula
 perch
 pillar{50%s}
 pinnacle
@@ -115,19 +141,31 @@ point
 pool
 promontory
 promontory
+quay
 quicksand
 rapids
 ravine
 reef
 ridge
+rift
 rise
 river
 rock
 rock overhang
+shallows
+shoal
+shore
+sinkhole
+sound
 spire
 spring
+steppe
+strait
+strand
 summit
+swamp
 thicket
+vale
 valley
 vista
 volcano

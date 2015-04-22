@@ -1,195 +1,317 @@
- Sources: a little from TSR DM's Guide, page 220
+/ Sources: a little from TSR DM's Guide, page 220
 
 : Structure
-abbey ({religion})
+{:Academic}
+{:Coastal}
+{:Cemetery}
+{:Defensive}
+{:Entertainment}
+{:Garden}
+{:Government}
+{:Infrastructure}
+{:Landmark}
+{:Merchant}
+{:Military Building}
+{:Production}
+{:Religious} ({Religion})
+{:Residence}
+{:Service}
+{:Social}
+{:Temporary}
+
+: Building = Academic + Entertainment + Government + Military Building + Religious + Service
+: Military = Military Building + Defensive
+
+: Academic
 academy
-amphitheater
-anchorage
-apiary
-aqueduct
-arena
-armory
-armory
-asylum
-auction block
-aviary
-bailey
-bakery
-bank
-banquet hall
-bar
-barn
-barracks
-bastion
-baths
-battlement
-beacon
-bell tower
-bestiary
-brewery
-bridge
-brothel
-bulwark
-cabin
-canal
-castle
-catacombs
-cathedral ({religion})
-cemetery
-cesspool
-chamber
-chapel
-charnel house
-chateau
-church ({religion})
-citadel
-city
-cloister ({religion})
+alchemist lab
 college ({domain})
-corral
-court
-crannog
-crypt
-dairy
-dock
-door
-dungeon
-earthworks
-embassy
-encampment
-farm
-fort
-fortification
-fortress
-foundry
-fountain
-gallery
-gallows
-garden (flower)
-garden ({herb})
-garrison
-gate
-general store
-granary
-graveyard
-greenhouse
-grove ({wood} trees)
-guardhouse
-guild ({profession})
-hall
-hobbit-hole
-hold
-home
-hospital
-house
-hovel
-hut
-inn ({inn name})
-jail/prison
-keep
-kennel
 laboratory
-labyrinth
-lean-to
 library
-lighthouse
-magic shop
-manor
-mansion
-market
-masonry
-maze
-messenger station
-mill
-mine ({mine})
-monastery ({religion})
-monument
-motte-and-bailey
 museum
-nunnery ({religion})
 observatory
-orchard ({wood:fruit} trees)
-orphanage
-outfitters
-park
-pavilion
-pawn shop
-pet store
-pier
-pillar
 planetarium
-portal
-postern
-priory
-prison
-quarry ({mineral})
-ramparts
-refinery
-reservoir
-residence
-restaurant
-ruin ({structure})
-sanctuary
 school
-sculpture
-sewer
-shack
-shop, general
-shop, {equipment}
-shrine ({religion})
-signal tower
-silo
-smithy
-spire
-stables
-stadium
-stairs
-statue
-stockade
-storehouse
-storm shelter
-stronghold
-swimming pool
-tannery
-tavern ({inn name})
-temple ({religion})
-tent
-tent city
-theater
-tomb
-tower
 training center ({skill})
-tree-house
-turnpike
-wall
-watchtower
-water tower
-watermill
-well
-windmill
-winery
-zoo
-{25%stone }cottage
-{:cemetery}
-{:religious}
+
+: Coastal
+anchorage
+boat builder's
+crane
+docks
+harbor
+marina
+pier
+quay
+weir
+wharf
 
 : Cemetery
-abbey
+boneyard
+catacombs
 cemetery
-chapel
+charnel house
 churchyard
+crypt
+graves
 graveyard
-priory
+mausoleum
+mortuary
+necropolis
+ossuary
+sepulcher
+tombs
+vault
+
+: Defensive
+bailey
+barbican
+bastion
+battlement
+beacon
+bridge
+bulwark
+drawbridge
+earthworks
+encampment
+fence
+fortification
+gate
+moat
+motte
+motte-and-bailey
+palisade
+postern
+ramparts
+signal tower
+stockade
+wall
+
+: Entertainment
+amphitheater
+arena
+athletic field
+bar
+brothel
+coliseum
+gallery
+pavilion
+pub
+stadium
+stage
+studio
+theater
+zoo
+
+: Garden
+arboretum
+garden (flower)
+garden (herb)
+greenhouse
+grove ({wood} trees)
+hedge maze
+orchard ({wood:fruit} trees)
+park
+pond
+
+: Government
+asylum
+bank
+courthouse
+dungeon
+embassy
+gallows
+gaol
+jail
+orphanage
+palace
+prison
+station
+storm shelter
+turnpike
+
+: Infrastructure
+anchorage
+aqueduct
+auction block
+bridge
+canal
+cesspool
+cistern
+dam
+dock
+footbridge
+lighthouse
+messenger station
+pier
+portal
+reservoir
+sewer
+stairs
+tower
+well
+
+: Landmark
+fountain
+monument
+obelisk
+pillar
+sculpture
+spire
+statue
+{landmark}
+
+: Merchant
+bakery
+bazaar
+book shop
+butcher's
+caravansary
+cartographer's
+cartwright
+chandler
+cheese shop
+cobbler
+confectionery
+fabric store
+fishmonger
+fletcher
+florist
+general store
+glass shop
+goldsmith
+grocery
+hat shop
+ironmonger
+jeweler
+luthier
+magic shop
+market
+marketplace
+music shop
+outfitters
+pastry shop
+pawn shop
+pet store
+provisioner
+shoe store
+silversmith
+toy shop
+{equipment} shop
+{merchandise} shop
+{profession:merchant} shop
+{tiny item} shop
+
+: Military Building
+archery range
+armory
+barracks
+bell tower
+castle
+citadel
+fort
+fortress
+garrison
+gatehouse
+guardhouse
+hold
+keep
+outpost
+post
+stronghold
+tower
+watchtower
+
+: Production
+apiary
+aviary
+barn
+bestiary
+brewery
+corral
+dairy
+forge
+foundry
+granary
+mill
+mine ({mine})
+quarry ({mineral})
+smithy
+refinery
+silo
+stockyard
+storehouse
+tannery
+watermill
+windmill
+winery
+{profession:craftsman}'s
 
 : Religious
 abbey
+altar
+apse
+basilica
+belfry
 cathedral
+chancel
+chantry
 chapel
 church
 cloister
+convent
+deanery
+font
+friary
+manse
 monastery
 nunnery
+parish
 priory
+rectory
 sanctuary
+sanctum
 shrine
+tabernacle
 temple
+vicarage
+
+: Residence
+cabin
+chateau
+guildhouse ({guild})
+hobbit-hole
+home
+house
+farmhouse
+manor
+mansion
+residence
+tree-house
+{25%stone }cottage
+
+: Service
+apothecary
+barber shop
+bathhouse
+hospital
+kennel
+inn ({Inn Name})
+mews
+restaurant
+stables
+tavern ({Inn Name})
+tinkerers
+{profession:service}'s
+
+: Social
+banquet hall
+guildhall ({guild})
+swimming pool
+
+: Temporary
+hovel
+hut
+shack
+lean-to
+tent

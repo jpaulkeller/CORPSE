@@ -73,6 +73,7 @@ assassin               {guild rank}        criminal                       level 
 astrologer             {guild rank}        scholar                        +1 on divination spells
 astronomer             {guild rank}        scholar
 athlete                level {10}          entertainer
+atilliator
 attendant                                  service            
 augurer                                    magical
 bagger                                     service            
@@ -85,7 +86,6 @@ barber                 {guild rank}        service        151             one wh
 bard                   {guild rank}        entertainer                    a minstrel (especially {musical instrument})
 bargeman                                   sailor
 barkeep                                    service
-barkeeper                                  service
 barker                                     service                        one who advertises at the entrance to a show
 barrister              {guild rank}        service                        solicitor or lawyer
 barterer               {guild rank}        merchant                       specializing in {equipment}
@@ -127,6 +127,7 @@ book-printer                               craftsman
 book-seller                                merchant        1-in-6300
 boothaler                                  criminal                       marauder, plunderer
 boothman               {guild rank}        merchant                       one who sells grains
+bosun
 botanist               {academic rank}     scholar                        +2 heal, poison; ({flora})
 bottelier                                  craftsman                      maker of leather bottles
 bounty hunter          level {10}          military                       {weapon}, {armor}
@@ -159,6 +160,7 @@ cannoneer                                  military
 canon                  {religious rank}    religious                      a prebend attached to a cathedral
 cantor                 {religious rank}    religious                      a choir leader in churches, hymn/prayer-leader
 canvasser                                  craftsman                      canvas-maker
+caravan master                             merchant
 carder                                     craftsman                      one who cards wool (combs out wool in preparation for spinning it)
 cardinal               {religious rank}    religious
 cardmaker                                  craftsman          
@@ -214,6 +216,7 @@ copyist                                    service          24/1-in-2000  one wh
 cordwainer                                 craftsman                      worker in fine leather
 corsetier                                  craftsman                      maker of corsets and other undergarments
 costermonger           {guild rank}        merchant                       fruit seller
+costumer
 councilor                                  government                     a city official or advisor of the court
 courier                                    service
 court official                             government
@@ -490,6 +493,7 @@ outfitter                                  merchant
 outlaw                                     criminal                       a man wanted by the law for {crime}
 oynter                 {guild rank}        merchant                       an oil-merchant
 oysterer                                   farmer/sailor                  one who harvests oysters
+page
 painter                                    artist              1-in-1500           
 paladin of {religion}                      religious/military             {weapon}, {armor}
 panter                                     service                        keeper of the pantry
@@ -593,7 +597,8 @@ scullion                                   service                        the bo
 sculptor               {guild rank}        artist            1-in-2000
 scythesmith                                craftsman          
 sea captain                                sailor
-seamstress                                 craftsman          
+seamstress                                 craftsman
+secret police                              government          
 seer                                       magical
 seneschal                                  service                        senior steward
 sergeant                                   military

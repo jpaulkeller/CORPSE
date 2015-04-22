@@ -1,0 +1,38 @@
+: Humanoid Encounter
+{2d{6}} {human|{humanoid{10%:uncommon}}} {{:occupation}+}{10%, with a leader}
+
+: occupation
+adventurer
+bandit
+beggar
+bounty hunter
+brigand
+celebrant
+craftsmen
+cultist
+degenerate
+escaped criminal
+farmer
+fishermen
+gatherer
+gypsy
+hunter
+marauder
+merchant
+mercenary
+peasant
+performer
+pilgrim
+pillager
+pirate
+prisoner
+scavenger
+scout
+shepherd
+slaver
+soldier
+traveler
+treasure hunter
+vandal
+zealot
+{herd animal} driver

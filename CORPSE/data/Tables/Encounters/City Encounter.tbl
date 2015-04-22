@@ -30,6 +30,11 @@ A {:young} {:YOUNG ACTIVITY}
 {guild rank}
 {military rank}
 {religious rank}
+{:other}
+
+: Other
+dissident
+protester
 
 : Group Name
 band
@@ -79,7 +84,7 @@ is {arguing|quarreling|bickering|conversing|sparring} with a {NPC}
 is {looking for|scolding} her child
 just dropped a bunch of {{tiny item}+}
 just tossed a coin to a beggar
-just {ducked into|emerged from} an {alley|{city site}}
+just {ducked into|emerged from} an {alley|{city feature:site}}
 recognizes one of the PCs
 seems intent on starting a fight 
 seems to know his way around
@@ -107,7 +112,7 @@ are slowing walking single-file
 are smoking a communal hookah
 are {playing music|performing acrobatics|dancing|singing|chanting} before a large crowd
 are {protesting|rioting}
-are trying to extinguish a burning {city site}
+are trying to extinguish a burning {city feature:site}
 are touring the city
 are being jeered at
 are parading in honor of a local hero 

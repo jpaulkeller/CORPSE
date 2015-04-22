@@ -1,0 +1,40 @@
+/ http://theaussiegm.tumblr.com
+
+: Camp Encounter
+5x nothing happens
+a {:wanderer} visits the camp and {:motive}
+a strange {noise} noise is heard {direction}
+you here the sounds of wolves or wild dogs howling
+{4} animals approach the camp ({{fauna}+} {:activity})
+{humanoid encounter} {:activity}
+{:environment}
+
+: Activity
+curiously checking out the camp
+exploring the area
+hiding from something
+hunting
+looking for food
+seeking shelter
+wandering around
+
+: Environment
+a chilling wind gushes by
+a single trees leaves rustle
+you hear the sound of rocks falling
+you here thunder rolling in the distance
+you see a lightning strike off in the distance
+you witness a shooting star
+
+: Wanderer
+{pseudo class}
+{profession}
+{undead}
+
+: Motive
+has information relevant to what players are doing
+informs the players of a threat in the area
+informs the players of an interesting location not far away
+tells the players his/her story
+tries to {rob|kill} the players
+will ask a favor of the players

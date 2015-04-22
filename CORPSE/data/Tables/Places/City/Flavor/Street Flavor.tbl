@@ -1,4 +1,26 @@
 filled with the scent of burning wood
-strewn with the rubble and debris of a collapsed building
+full of beggars and thieves
+infested by packs of wild dogs, and worse
 lined with street vendors hawking maps and scrolls
 strangely empty and silent
+strewn with the rubble and debris of a collapsed building
+the right place to go if you’re looking for a {profession}
+where men of rank or privilege who require discretion look for ladies of the night
+where most of the {{profession:craftsman}+} work
+where most of the {{profession:merchant}+} have their shops
+where the {{profession:entertainer}+} gather to perform and panhandle
+
+===
+controlled by {:Gang Names}, {:Gang Description}
+
+: Artist = .*artist.* 
+: Criminal = .*criminal.* 
+: Farmer = .*farmer.* 
+: Government = .*government.* 
+: Itinerant = .*itinerant.* 
+: Magical = .*magical.* 
+: Military = .*military.* 
+: Religious = .*religious.* 
+: Sailor = .*sailor.* 
+: Scholar = .*scholar.* 
+: Service = .*service.* 

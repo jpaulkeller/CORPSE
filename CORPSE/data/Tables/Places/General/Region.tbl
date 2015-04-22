@@ -1,26 +1,58 @@
 : Region
 archipelagos
 central region
+deep forest
+dense jungle
+desert wasteland
 far {compass:4}
+frozen north
+grassy plain
+great river
+high mountains
 known world
+lush river valley
+murky swampland
+remote rainforest
+tropical paradise
 undersea world
 underworld
+volcanic area
+{:uncommon}
 {compass:8}{50%ern region}
+{realm}
+
+: uncommon
+deep in the ocean
+drifting through the clouds
+floating over the seas
+gigantic tree
+suspended over a mighty gorge
+vast underground cavern
 {Plane} plane
 
-: Jurisdiction
-barony
-county
-earldom
-empire
-fiefdom
-kingdom
-province
-serfdom
-{:surrounding}
-
-: Surrounding
-countryside
-lands
-settlements
-villages
+: Fame
+a great hero came from this land
+a great hero performed mighty deeds in this land
+a miracle happened here, and many devout people visit on pilgrimage
+a terrible battle happened here
+a well-known craftsman practices here
+a well-known holy person lives here
+an infamous villain lives here
+it is a place of spectacular natural beauty
+it is a place of uncanny magical occurrences
+it is very ancient, and has many ruins from a lost civilization
+its impregnable defences
+of a giant statue whose form dominates the landscape
+of a large festival that happens here every year
+of its amazing hanging gardens
+of its beautiful temple
+of its exceptional hunting grounds
+of the cloth that is woven here
+of the crops that are grown here
+of the exceptional horses that are bred here
+of the gems that are mined here
+of the horrible monsters that inhabit the countryside
+of the metals that are mined here
+of the vile disease that all if its inhabitants suffer from
+the citizens {farmstead:product}
+{Secret Society Name} are based here

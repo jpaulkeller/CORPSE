@@ -1,0 +1,70 @@
+/ http://random-generator.com/index.php?title=Fantasy_Town_Feature
+/ http://random-generator.com/index.php?title=Fantasy_Town_Feature_Description
+
+: Site
+{street}
+{structure}
+{:open area}
+{:religious}
+{:water}
+{landmark}
+
+: City Feature
+5x {STREET} {STREET FLAVOR}
+5x {STRUCTURE} {CITY FLAVOR:BUILDING}
+{:open area} {CITY FLAVOR:OPEN AREA}
+{:RELIGIOUS} {CITY FLAVOR:RELIGIOUS}
+{:section} {CITY FLAVOR:SECTION}
+{structure:coastal} {CITY FLAVOR:SHIPPING}
+{:water} {CITY FLAVOR:WATER}
+{landmark} {CITY FLAVOR:LANDMARK}
+{structure:cemetery} {CITY FLAVOR:CEMETERY}
+{structure:defensive} {CITY FLAVOR:DEFENSES}
+
+: open area
+agora
+commons
+field
+forum
+garden
+green
+park
+piazza
+plaza
+square
+terrace
+yard
+
+: religious
+{{Saint Name|Divine Name}}'s {structure:religious}
+{structure:religious} of {{Saint Name|Divine Name}}
+{Town Name} {structure:religious}
+
+: section
+bailiwick
+district
+dominion
+enclave
+heights
+parish
+precinct
+province
+quarter
+row
+town
+ward
+warren
+
+: water
+aqueduct
+bridge
+canal
+cistern
+footbridge
+pond
+pool
+reservoir
+shore
+span
+weir
+well

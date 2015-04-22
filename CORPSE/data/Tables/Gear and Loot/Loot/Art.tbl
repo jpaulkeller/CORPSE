@@ -35,6 +35,10 @@ portrait
 : Statue
 {50%{small|large} }{made of:hard} {bust|figurine|sculpture|statue} of {:OF}
 
+: Monument
+{size:large} {made of:hard} {sculpture|statue} of {:OF}
+{size:large} monument to {Divine Name}
+
 : Of
 a {humanoid}
 a {fauna}
@@ -42,6 +46,7 @@ a {monster}
 a {profession}
 a {pseudo class}
 {Divine Name}
+{Hero:Name}
 
 : Drawing
 carving
@@ -101,13 +106,16 @@ ancient
 archaic
 baroque
 distinctive
+elegant
 exotic
+gaudy
 impressionistic
 ornate
 peculiar
 popular
 rare
 realistic
+simple
 unusual
 
 : Subject

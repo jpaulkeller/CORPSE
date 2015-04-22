@@ -1,3 +1,55 @@
+/ inspired by http://roll1d12.blogspot.com/2014/10/name-that-barbarian.html
+
+: Fancy
+{:Full} {:EPITHET}
+
+: Full
+{15%{Noise} }{:Barbarian Name}{10% {:Barbarian Name}}
+
+: Epithet
+{20%, {{Pseudo Class|Title:Bad}}} of the {Site Name:Dark}
+the {Evocative Adj:Negative}
+{50% {Humanoid}-{bane|killer|eater|slayer|friend}}
+the {Organ} {:Eater}
+, {Title:Bad} of the {Weapon{!OneWord}} God
+{Weapon{!OneWord}}{hand|fist|foot|tooth}
+of {Evocative Concept:Not Positive}
+{Epithet:Barbarian}
+
+: eater 
+biter
+breaker
+butcher
+carver
+choker
+chopper
+cleaver
+collector
+crusher
+defiler
+devourer
+eater
+flayer
+gnawer
+impaler
+jabber
+killer
+melter
+muncher
+picker
+puncher
+ripper
+scratcher
+slasher
+slayer
+slicer
+smasher
+spitter
+stabber
+stealer
+thrasher
+
+: Barbarian Name
 Abban
 Adalbert
 Adalbjorg

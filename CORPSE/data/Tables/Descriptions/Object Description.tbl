@@ -1,0 +1,32 @@
+: Object Description
+10x {80%{:cnd}, }{60%{:qua}, }{40%{:sty}, }{50%{:siz}, }{25%{:shp}, }{50%{:clr}, }{20%{:txt}, }{10%{:INSC}, }{:val}
+
+: cnd
+condition: {condition:any}
+
+: qua
+quality: {quality:any}
+
+: sty
+style: {art:style}
+
+: siz
+size: {size:any}
+
+: shp
+shape: {shape}
+
+: clr
+color: {color}
+
+: txt
+texture: {texture}
+
+: val
+value: {value}
+
+: insc
+inscribed: {Name}
+inscribed: {Motto:Fictional}
+inscribed: {Motto:Real}
+inscribed: {MOTTO:SLOGAN}

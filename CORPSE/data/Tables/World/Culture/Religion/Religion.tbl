@@ -47,3 +47,63 @@ women
 {evocative concept}
 {wine|beer}
 {{profession}+}
+
+===
+/ http://random-generator.com/index.php?title=Fantasy_Religious_History
+
+;RELIGIOUS_EXPERIENCES
+1,Encountered religion because of [Fantasy Religious History.BEGIN_RELIGIOUS]<br/>[Fantasy_Casting_Utilities.RELIGIOUS_EVENTS_REROLL_1D3]
+
+
+;BEGIN_RELIGIOUS
+1,persecution by believers.
+1,being evangelised.
+1,curiousity.
+1,inner need.
+1,hearing voices.
+1,parent's religion.
+1,friend's religion.
+1,seeking refuge in temple.
+1,chance encounter with follower.
+1,being healed by clergy.
+
+
+;RELIGIOUS_EVENTS
+1,claims divine inspiration, creates religion.<br/>[Fantasy Life Events.DEITIES]
+1,made a pilgrimage to important but distant shrine.
+1,had a vision of the god's primary enemy.
+1,had a vision of the god sending him on a sacred mission.
+5,joined the god's religion.[.JOIN_RELIGION.]
+1,believesself to be a reincarnated hero/villain of the religion.
+1,others believe character to be a reincarnated hero/villain of the religion.
+1,followers accused of crime against the god--is excommunicated.
+1,made prophetic statements (possibly quite unpopular).
+1,joined holy war.[Fantasy Military Service.MILITARY_EVENTS]
+1,inadvertently desecrated shrine. [Fantasy Religious History.DESECRATION]
+1,uncovered activities of evil cult: [Fantasy Religious History.UNCOVER_CULT]
+1,persecuted by enemies of the religion.
+1,learned appropriate skill from the clergy.
+1,studied to become clergy for [Dice.1D4] years.
+1,read a forbidden book in the temple; has hidden knowledge.
+
+
+;UNCOVER_CULT
+1,Cult seeks to recruit character.
+1,Cult seeks to kill character.
+2,Cult's local branch destroyed, character becomes a hero.
+1,Cult's local branch destroyed, other cultists now hunt character.
+1,Others shun character, possibly out of fear of the cult.
+
+
+;DESECRATION
+2,Persecuted by followers.
+1,Reparations sought by followers.
+1,Shunned by followers.
+1,Shunned by most religions.
+1,Hunted by religious assassins.
+
+
+;JOIN_RELIGION
+4,is merely a temple-goer.
+5,is a devoted follower of faith.
+1,is a fervent believer seeks to spread the faith.

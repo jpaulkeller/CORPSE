@@ -39,6 +39,8 @@ nose
 {left|right} temple
 
 : Internal
+bone
+brain
 guts
 heart
 lungs
@@ -46,3 +48,28 @@ spine
 spleen
 tongue
 tooth
+
+: Crude
+arm
+cheek
+corpse
+crotch
+eye
+face
+finger
+fist
+flesh
+foot
+hand
+heart
+jaw
+knee
+nose
+skin
+skull
+spine
+throat
+tongue
+tooth
+{:internal}
+{:organ}
