@@ -7,7 +7,7 @@
 
 <h2>{MARKET}</h2>
 
-<br>Location: {direction} the {city site}
+<br>Location: {direction} the {city feature:site}
 <br>Traffic: {degree} {sparse|heavy}
 <br>{Quantity} guards; {quantity:few} pick-pockets; {quantity} beggars 
 <br/>

@@ -1,0 +1,42 @@
+: Realm
+alliance
+ascendancy
+commonwealth
+country
+colony
+domain
+empire
+farmland
+federation
+metropolis
+realm
+territory
+{:jurisdiction}
+
+: Jurisdiction
+barony
+caliphate
+city-state
+county
+earldom
+emirate
+empire
+fiefdom
+khanate
+kingdom
+nation
+principality
+protectorate
+province
+serfdom
+sheikdom
+sovereignty
+sultanate
+viceroyalty
+{:surrounding}
+
+: Surrounding
+countryside
+lands
+settlements
+villages

@@ -1,3 +1,4 @@
+: fame
 a curse
 a divine blessing
 a great work of art
@@ -16,3 +17,88 @@ plagued by monsters
 plagued by the flaws of its own inhabitants
 regular athletic games
 the site of a famous battle
+
+: general
+has the best views in town
+is contested territory between {GANG:NAME} and {GANG:NAME}.
+is near {Inn Name}, known for its {tavern flavor}
+is notorious as a place where lovers go for discreet affairs
+is the best place to watch the sunset in summer
+is the place where gangs of youths gather to taunt each other or show off their bravery
+
+: building
+has been long abandoned, and is said to be haunted
+is a popular meeting place for the young, stylish, and wealthy
+is being rebuilt after a devastating fire
+is now home only to rats and squatters
+{:GENERAL}
+
+: cemetery
+contains a mass grave for victims of the great fire of {9}{9}{9}
+is famous for containing the remains of {Saint Name}
+is haunted by the restless dead - even the brave do not venture there after dark
+is where only the wealthiest people can afford to bury their dead
+is where those who cannot afford a proper burial are interred
+{:GENERAL}
+
+: defenses
+has a gate that is barred and locked from dawn until dusk
+has the smallest gateway into the city, barely large enough for a horse and rider
+is perhaps the most heavily guarded part of the town’s defenses
+is rumored to have a smugglers tunnel nearby that the City Watch has yet to find
+is where the severed heads of notorious criminals are put on spikes for display
+{:GENERAL}
+
+: landmark 
+{:GENERAL}
+
+: open area
+is a common dueling ground for the minor nobility
+is a popular picnic-ground
+is dominated by {Art:Monument}
+is primarily a military drill and parade ground
+is {STREET FLAVOR}
+{:GENERAL}
+
+: religious
+is a place where only the rich are welcome to worship
+is a popular site for marriages and betrothals
+is where a vision of {Saint Name} sometimes appears to the devout
+is where criminals seeking sanctuary sometimes find it
+is where foundlings are left to be cared for by the church
+is where the fighting monks train publicly and recruit
+{:GENERAL}
+{:BUILDING}
+
+: section
+is being rebuilt after a devastating fire
+is the habitation of the rich and well-bred
+is where most of the foreigners live in town
+is {STREET FLAVOR}
+{:GENERAL}
+{:known} a confusing mess of streets that only the locals can navigate without getting lost
+{:known} scholarly monasteries
+{:known} {clean|dirty} streets
+{:known} {cramped row houses|elegant mansions}
+{:known} {narrow streets|spacious avenues|shadowed alleys}
+{:known} {noisy|quiet} inns
+{:known} {{profession}+}, {{profession{!different}}+}, and {{profession{!different}}+}
+
+: known
+is dominated by
+is famous for
+is full of
+is known for
+
+: shipping
+is near the rowdy bars that only sailors frequent
+is where naval ships lie at anchor
+is where pirates are hanged as a warning to their brethren
+{:GENERAL}
+{:WATER}
+
+: water
+is a popular fishing spot
+is the right place to dump a body if you don't want it to be found
+is where families go to feed the ducks and swans
+{:GENERAL}

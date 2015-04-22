@@ -1,14 +1,17 @@
 cursed -{5}
-broken
 crude
 inferior
 shoddy
+slipshod
 poor
+mediocre
+questionable
 adequate
 average
 fair
 good
 very good
+superior
 excellent
 superb
 exceptional
@@ -16,9 +19,11 @@ extraordinary
 enchanted
 magical +{5}
 
-: Quality {3d5-1}
-: Magic   {2d9-1}
-: Good    {d6+10}
+: Quality {3d6}
+: Magic   {3d7-1}
+: Good    {d10+8}
+: Flat    {20}
+: Any = Flat + Weapon
 
 : Weapon
 finely crafted

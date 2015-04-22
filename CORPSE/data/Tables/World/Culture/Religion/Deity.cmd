@@ -11,7 +11,7 @@
 <ul>
   <li><b>Flavor</b>
   <ul>
-    <li>Portfolio – What dominion does the deity hold sway over?
+    <li>Dominion – What does the deity hold sway over?
     <li>Myth - What is the most well known myth associated with the god?
     <li>Manifestation - How do the god's worshippers depict the deity?
     <li>Rituals - What ceremonies and offerings does the god expect?

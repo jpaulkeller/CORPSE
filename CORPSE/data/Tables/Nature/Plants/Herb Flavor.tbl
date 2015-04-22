@@ -1,0 +1,64 @@
+: Herb Flavor
+10x {:adj} {:noun}
+
+: adj
+{color{!oneword}}
+{evocative adj}
+{liquid feature} 
+{name}'s
+{profession}'s
+{pseudo class}'s
+{shape}
+{terrain{!oneword}}
+{texture{!oneword}}
+{viscosity}
+{:misc adj}
+
+: misc adj
+burnt
+charred
+glowing
+singed
+stink
+
+: noun
+{charge{!oneword}}
+{organ}
+{weapon{!oneword}} -- not working!
+{:item}
+{:misc noun}
+{:plant}
+
+: plant
+blossom
+fern
+ivy
+lotus
+moss
+reed
+vine
+weed
+
+: item
+arrow
+bell
+brush
+button
+candle
+feather
+glove
+hood
+horn
+jewel
+key
+needle
+shield
+teeth
+
+: misc noun
+coral
+crown
+eyes
+fire
+flame
+fingers

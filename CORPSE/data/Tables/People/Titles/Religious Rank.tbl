@@ -25,24 +25,42 @@ adherent
 alderman
 almoner
 anchorite
+archivist
+archon
 attendant
 brother
 caliph{50%ate}
+canon
 cantor
 catechist
 celebrant
+chanter
 chaplain
+cleric
 confirmand
 consecrator
 curate
+exorcist
+grave digger
 follower
 hierophant
+holy man
 initiate
 inquisitor
+knight protector
+mendicant
 missionary
 monk
 novice
 postulant
+prophet
+shaman
+supplicant
+templar
+theologian
+vicar
+zealot
 {cult title}
 {profession:religious}
+{pseudo class:priest}
 {:religious rank}

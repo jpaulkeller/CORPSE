@@ -3,34 +3,33 @@ clear
 coastal area
 cropland
 desert
-dry lake/river
+dry {lake|river}
 dunes
 estuary
 farmland
 field
-forest (dense)
-forest (light)
+forest{33% ({light|dense})}
 grassland
-hills, gentle
-hills, rugged
+hills{33% ({gentle|rugged})}
 inhabited area
 island
 jungle
 lake
+marsh
 mesa
 moors
 mountain
 ocean
 pasture
 plains
-polar/arctic
+{polar|arctic}
 rain forest
 rangeland
 reef
 river
 settlements
 subterranean area
-swamp/marsh
+swamp
 taiga
 tundra
 wetlands

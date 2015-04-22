@@ -18,6 +18,7 @@ alether             10gp/100gp     combat skills            sp/su             te
 alkanet             2gp/2gp        antidote                 su                te                ru
 all-heal            2gp/10gp       healing                  au                te                fo
 aloe                5cp/5cp        healing, burns           au/wi             te                gr
+amaranth
 amrans              50gp/50gp      healing                  sp                te                ri/ru
 angelica            5sp/1gp        coughing                 su                te                mo
 anise               1gp/1gp        cures hiccups            su                te                ru
@@ -46,6 +47,7 @@ belramba            60gp/180gp     nerve damage             su                te
 bilberry            500gp/3000gp   infravision              sp                te                fo
 birthnot            2cp/2cp        contraceptive            al                te                hi
 bishop's weed       4gp/10gp       plague                   su                te                ru
+bistort
 bittermourn         1000gp and up  longevity                wi                po                all
 blackberry          1gp/1gp        bleeding                 sp                te                ru
 blackroot           4gp/4gp        healing                  su                te                all
@@ -69,13 +71,14 @@ colewort            6sp/6sp        sobriety                 sp/su             te
 coltsfoot           2gp/4gp        anti-infection           sp/su             te                mo
 comfrey             4gp/10gp       fractures                sp                te                ru
 cow parsnip         3gp/10gp       madness                  al                te                fo
-cow-wheat           2gp/3gp        intoxication             su                te                gr
+cow wheat           2gp/3gp        intoxication             su                te                gr
 culkas              35gp/35gp      sunburn                  al                tr                de
 dagmather           6gp/28gp       tissue damage            su                te                gr
 dainaberry          2gp/8gp        induces sleep            au                te                ri
+damiana
 darnell             3gp/7gp        dims sight               au                te                fo
 darsurion           3sp/3sp        healing                  wi                cd                mo
-deadly-nightshade   4gp/8gp        sleep                    su                te                fo
+deadly nightshade   4gp/8gp        sleep                    su                te                fo
 degiik              100gp/100gp    maintains life           su                tr                co
 delrean             3sp/3sp        repels insects           wi                te                fo
 dittany             1gp/5gp        anti-infection           su/au             te                ri
@@ -88,7 +91,7 @@ ebur                22gp/22gp      healing                  sp                te
 edram               30gp/30gp      fractures                wi                cd                ri
 eldaas              2gp/4gp        nausea                   sp/su             te                co
 elecampane          1sp/1sp        induces vomiting         wi/sp             te                ru
-elvish  galingale   1gp/2gp        raise bloodflow          sp/su             po                fo
+elvish galingale    1gp/2gp        raise bloodflow          sp/su             po                fo
 entriste            25gp/25gp      antidote                 su                st                de
 falsifal            3gp/3gp        burns, blood loss        sp                te                sw
 febfendu            90gp/900gp     deafness                 wi                cd                ri/co
@@ -98,12 +101,14 @@ fetherfew           2gp/4gp        vertigo                  su                te
 fire-flower         1000-1000000gp healing                  su                st/tr             mo
 floure-de-luce      3gp/10gp       bruises                  al                te                gr
 footleaf            10sp/10sp      protects feet            sp/su/au          te                ru
+frankincense
 fumitore            3gp/6gp        hair prevention          sp/su             cd/te             co
 gallowbrush         10gp/50gp      induces sleep            wi                te                ru
 garden flax         3gp/6gp        pain removal             sp/su             te                fo
 garlic, bud         5cp                                            
 gariig              55gp/70gp      healing                  su                tr                de
 gefnul              200gp/500gp    healing                  su                po                vo
+ginger
 goat's rue          6gp/15gp       antidote                 su                te                fo
 golden crown        1gp/2gp        bleeding                 sp                st                ru
 golden lungwort     1gp/2gp        heals ears               su                te/st             fo
@@ -113,10 +118,12 @@ hare's ears         2gp/5gp        skin disease             su                te
 harfy               150gp/150gp    bleeding                 su                te                gr
 hart's tongue       2gp/2gp        lowers libido            al                te                fo
 hawkweed            4gp/6gp        improves eyesight        al                te                fo
+hawthorn
 healwell            1sp/1sp        healing                  su                te                all
 henbane             1gp/3gp        antidote                 su/au             te                ru
 horehound           1gp/5gp        antidote                 su                te                co
 horseweed           7gp/7gp        strengthen horse         sp/su/au          te                gr
+hyssop
 ironhard            15gp/15gp      hardens skin             su/au             te                hi
 jaffray             10gp/15gp      antidote                 su                tr                de
 jinab               5gp/7gp        keeps awake              al                st                ru
@@ -148,6 +155,7 @@ mirenna             10gp/10gp      healing                  wi                cd
 mountain garlick    8gp/9gp        repels spirits?          al                te/cd             mo
 mountain setwall    1gp/3gp        hair growth              al                te                mo
 mugwort             2gp/4gp        prevents collapse        su                te                ru
+myrrh
 napweed             1gp/1gp        poison protection        sp                te                ru
 navew               4gp/12gp       antidote                 wi                st/tr             ri
 nightcall           50gp/50gp      enhances senses          su                tr                de
@@ -202,6 +210,7 @@ thurl               1sp/2sp        healing                  au                te
 thyme               2gp/5gp        antiseptic               sp                te/cd             ru
 ur                  3gp/3gp        food substitute          wi                te                gr
 valerian            1gp/2gp        eases fits               sp                te                gr
+vervain
 vinuk               8sp/8sp        awaken                   su                te                gr
 white bryony        1gp/2gp        pneumonia                au                te                fo
 whitecandle         5gp/5gp        pain relief              au                te/st             fo

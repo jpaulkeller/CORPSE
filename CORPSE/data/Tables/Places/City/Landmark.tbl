@@ -1,16 +1,34 @@
 aqueduct
+arch
 bridge
+columns
+fountain
+gallows
+guillotine
+monolith
+monument
 mural
+obelisk
 old {wood} tree
-sculpture
+pillars
+pillory
+point
+post
 sewer grate
+spike
+spire
+statue
 stele
-statue of {{Divine Name}|{Feudal:Noble Rank} {Name}|{Military Rank} {Name}}
+steps
+stocks
+tower
+tunnel
 windmill
 {25%ruins of an old }{monolith|monument|tower}
-{cathedral|temple|shrine} of {Divine Name}
+{art:monument}
+{city feature:site}
 {fauna} fountain
-{city site}
+{structure:religious} of {Divine Name}
 {{north|south|east|west}|{{pseudo class}|{profession}}'s} gate
 
 ===
@@ -263,10 +281,6 @@ Sound
 Strait[plural]
 Strand
 Trench
-
-;plural
-
-s
 
 ;inspiration
 [Fantasy Town Names.Misc][Fantasy Town Names.Suffix][Fantasy Town Names.Suffix]

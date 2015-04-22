@@ -3,12 +3,18 @@ damaged
 repaired
 heavily worn
 {degree} used
+dilapidated
+shabby
 average
+decent
 good
 excellent
 pristine
 
-: Condition {6,9}
+: Condition {8,12}
+: Flat {12}
+
+: Any = Flat + Paper + Book + Cloth + Clothing + Metal Weapon + Edged Weapon + Wood Weapon
 
 : Paper
 crumpled
@@ -97,6 +103,7 @@ battered
 battle-worn
 beaten
 bloodstained
+bloody
 broken
 clean
 neglected
@@ -105,6 +112,7 @@ well-used
 worn
 
 : Metal Weapon
+bent
 rusted
 rusty
 tarnished
@@ -120,4 +128,5 @@ razor-sharp
 : Wood Weapon
 burnt
 charred
+cracked
 {:weapon}

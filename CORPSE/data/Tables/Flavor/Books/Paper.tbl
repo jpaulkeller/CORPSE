@@ -9,7 +9,7 @@ astronomical chart
 battle plans
 blank
 bookmark
-bounty note for {10}00 gold if {:BOUNTY} is {captured|slain}, and proof is brought to {:Law Authority} of {Town Name}
+bounty note for {10}00 gold if {:BOUNTY} is {captured|slain}, and proof is brought to {:LAW AUTHORITY} of {Town Name}
 cargo manifest for {Ship Name}
 claim note to a fine {mount} at {Name}'s Stables
 code key
@@ -65,13 +65,14 @@ tarot card ({Tarot.Card})
 ticket to {performance}
 treaty
 writing in unknown language
+{:writ}
 {25%{:map adj} }map of a {terrain}
 {25%{:map adj} }map of {region}
 {25%{:map adj} }map {of|to} {structure}
 {:grant} safe passage through the {region}
 {architect|engineer}’s drawing of a {structure}
 {d12 puzzling document}
-{deed|legal title} to {Name}'s {site:artificial}
+{deed|legal title|grant} to {Name}'s {site:artificial}
 {illegible|hastily scribbled|encrypted|forged|printed|smudged|stained} note
 
 : material
@@ -82,11 +83,19 @@ sheepskin
 thin leather
 vellum
 
+: Writ
+{10%royal }writ of passage{50% {in{25% and around}|on the roads near} {Place Name}}{25% {:issued}}
+{10%royal }writ of appointment as {:LAW AUTHORITY} of {Town Name}
+
+: issued
+issued by {:LAW AUTHORITY} of {Town Name}
+
 : seal
 sealed with {color:simple} wax
 
 : law authority
 the Captain of the Guard
+the Chancellor
 the Chief Rector
 the Governor
 the Head Abbott
@@ -134,7 +143,7 @@ a {dragon} dragon
 a {monster}
 a {monstrosity}
 a {mythical creature}
-{Barbarian Name Fancy}
+{Barbarian Name:Fancy}
 {beast:encounter}
 
 : Fragment

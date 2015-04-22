@@ -1,27 +1,32 @@
 : Reagent
 powdered {metal}
-{:misc}
-{berry}{20% juice}{10% gathered {:how}{10%, {:how}}}
-{crushed|ground} {gem}
-{crushed|live} {insect}{10% gathered {:how}{10%, {:how}}}
-{fauna} {organ}{10% gathered {:how}{10%, {:how}}}
-{flower} {leaf|nectar|petal|pollen|root|stalk|thorn}{10% gathered {:how}{10%, {:how}}}
-{fruit}{20% seed}{10% gathered {:how}{10%, {:how}}}
-{fungus}{20% {spores|extract}}{10% gathered {:how}{10%, {:how}}}
-{herb} {leaf|root|seed|sprig}{10% gathered {:how}{10%, {:how}}}
 {20%{concentrated|distilled} }{liquid}
+{:misc}
+{berry}{20% juice}{10% {:gathered}}
+{crushed|ground} {gem}
+{25%live }{insect}{10% {:gathered}}
 {drink}
+{fauna} {organ}{10% {:gathered}}{10% {:prepared}}
+{flower} {blossom|leaf|nectar|petal|pollen|root|stalk|thorn}{10% {:gathered}}{10% {:prepared}}
+{fruit}{20% seed}{10% {:gathered}}{10% {:prepared}}
+{fungus}{20% {spores|extract}}{10% {:gathered}}{10% {:prepared}}
+{herb flavort}{25% {plant part}}{10% {:gathered}}{10% {:prepared}}
+{herb}{25% {plant part}}{10% {:gathered}}{10% {:prepared}}
 {mineral}
-{monster} {organ}{10% gathered {:how}{10%, {:how}}}
+{monster} {organ}{10% {:gathered}}
 {organic}
-{poison}
 {organ} from a {profession}
+{plant}{10% {:gathered}}{10% {:prepared}}
+{poison}
 {provisions}
-{wood} tree {bark|leaf|root|sap|seed}{10% gathered {:how}{10%, {:how}}}
 {undead} {dust|essence}
-{{fauna}|{humanoid}|{monster}|{profession}} {blood|bone}{10% gathered {:how}{10%, {:how}}}
+{wood} tree {bark|leaf|root|sap|seed}{10% {:gathered}}
+{{fauna}|{humanoid}|{monster}|{profession}} {blood|bone}{10% {:gathered}}
 
-: How
+: gathered
+gathered {10%, {:how}}
+
+: how
 after a {disaster}
 at {night|midnight|noon|dawn|dusk}
 during the {calendar}
@@ -29,6 +34,14 @@ in the shadow of a {site:artificial}
 with a {metal:enchantable} blade
 near a {site}
 under a {new|full} moon
+
+: prepared
+burnt
+crushed
+dried
+ground
+smoked
+steeped in boiling {water|wine|milk}
 
 : Misc
 alum

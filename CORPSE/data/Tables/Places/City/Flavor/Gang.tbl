@@ -1,0 +1,38 @@
+: Gang
+10x {:Name}, {:description}
+
+: Name
+the {Orc Tribe Name} {:Group}
+the {:Adj} {Street:General} {:Group}
+
+: adj
+{adjective}
+{evocative adj}
+
+: group
+boys
+blades
+bruisers
+brutes
+chasers
+crew
+gang
+goons
+group
+pack
+runners
+{{fauna}+}
+
+: description
+a {trait:not good} gang of {:type} 
+a gang specializing in {crime:act}{20% {crime:act{!different}}}
+a guild-run gang of petty thieves
+a loose-knit gang known mainly for engaging in {crime:act}
+to which the bigger gangs outsource {crime:act}
+
+: type
+bastards
+orphans 
+scoundrels
+ne’er-do-wells
+{{profession:criminal}+}

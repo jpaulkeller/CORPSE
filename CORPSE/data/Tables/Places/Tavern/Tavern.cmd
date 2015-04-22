@@ -20,7 +20,7 @@
 <ul>
  <li>on {Street}
  <li>in {neighborhood}, near the {LANDMARK}
- <li>{direction} the {city site}
+ <li>{direction} the {city feature:site}
  <li>The street outside is {street flavor}.
 </ul>
 

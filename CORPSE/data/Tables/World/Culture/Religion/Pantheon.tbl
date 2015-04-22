@@ -1,0 +1,35 @@
+/ http://random-generator.com/index.php?title=Fantasy_Pantheon
+
+[Fantasy Names.MaleFirstName], [DeityMale]
+[DeityRoleMale] [DeityMale]
+[Fantasy Names.FemFirstName], [DeityFemale]
+[DeityRoleFemale], [DeityFemale]
+
+;fulldescription
+5,[Fantasy Names.FemFirstName], [DeityFemale], {:appearance} [FemaleForm]
+5,[Fantasy Names.MaleFirstName], [DeityMale], {:appearance} [MaleForm]
+The [Secret Society Title.NounDescriptor] God, {:appearance} [MaleForm]
+The [Secret Society Title.NounDescriptor] Goddess, {:appearance} [FemaleForm]
+
+the {divine name:role} of {Divine Name:Domain}
+the {divine name:role} of {Divine Name:Domain} and {Divine Name:Domain}
+the {divine name:role} of {Divine Name:Domain} and [DeityRoleMale]
+the {Secret Society Name:NDN} {divine name:role}
+2,[Secret Society Title.main]
+
+: Appearance
+having the form of
+most often depicted as
+seen in dreams as
+visible to mortals only as
+who appears as
+who takes the form of
+who visits in visions as
+
+;MaleForm
+3,[SpiritForm.HumanFormMainMale]
+[SpiritForm.AnimalFormMain]
+
+;FemaleForm
+3,[SpiritForm.HumanFormMainFemale]
+[SpiritForm.AnimalFormMain]

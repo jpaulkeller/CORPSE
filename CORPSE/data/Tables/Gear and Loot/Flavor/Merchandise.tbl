@@ -107,7 +107,7 @@ pet                  {pet}
 
 : Property
 property             {site:artificial}
-property             {city site}
+property             {city feature:site}
 property             {mine}
 
 : Services
@@ -122,6 +122,6 @@ service              {~{service}}
 : Transportation
 equipment            {~{transport}}
 
-: Miscellaneous
+: Curious
 equipment            {device}
 miscellaneous        {~{tiny item}}

@@ -1,5 +1,27 @@
 / http://random-generator.com/index.php?title=Catholic_Saint_Names
+/ http://random-generator.com/index.php?title=Fantasy_Saint
 
+: Title
+St. {:Saint Name}, {:HISTORY}
+St. {:Saint Name} the {Secret Society Name:Title Descriptor}, {:HISTORY}
+
+: History
+a noted worshiper of {DIVINE NAME}
+the patron saint of {profession}s{33% and {profession{!different}}s}
+who performed many miracles throughout his life
+who was known as the {:Role} of {DIVINE NAME}
+
+: Role
+Axe
+Beloved
+Guardian
+Hammer
+Lamb
+Protector
+Vessel
+{Secret Society Name:TDT}
+
+: Saint Name
 Aaron
 Abban
 Abbo
