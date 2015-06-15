@@ -3,33 +3,60 @@
 {:alcoholic}
 
 : Regular
-coffee
-milk
+{10%goat's }milk
+{20%fresh }{80%{fruit} }juice
 {20%{:tea} }tea
 {20%{:water} }water
 {25%{:cider} }cider
+{25%{strong|weak|dark} }coffee
 {birch|ginger|root} beer
-{fruit} juice
 
 : Alcoholic
-ale
 beer
 bitter
 brandy
+brandywine
 grog
 hard cider
-mead
+{25%{sweet|thick} }mead
 perry
-sake
-stout
+porter
+{:ale}
+{:stout}
+{25%{light|summer|winter} }lager
 {hot|mulled} wine{25% spiced with {spice}}
 {:liquor}
-{20%{dry|sweet|sparkling|spiced} }{red|white|port} wine
+{20%{dry|sweet|sparkling|spiced} }{75%{red|white|rose|port|ice} }wine
 {:rare alcohol}
+
+: ale
+ale
+autumn ale
+brown ale
+heather ale
+honey ale
+honey-brown ale
+pale ale
+red ale
+spring ale
+summer ale
+winter ale
+
+: stout
+autumn stout
+black stout
+coffee stout
+dark stout
+fine stout
+oat stout
+stout
+summer stout
+thick stout
 
 : Liquor
 gin
-rum
+{20%{light|dark|cane} }rum
+sherry
 vodka
 whiskey
 
@@ -57,12 +84,15 @@ well
 
 : Tea
 black
+dark
 green
-hot
 herbal
+hot
 iced
 red
+strong
 sweet
+weak
 white
 yellow
 

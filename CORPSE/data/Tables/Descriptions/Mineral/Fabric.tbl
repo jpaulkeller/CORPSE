@@ -1,0 +1,47 @@
+: Fabric
+27x {:Common}
+9x {:Uncommon}
+3x {:Exotic}
+{:Magical}
+
+: Common
+burlap
+canvas
+cotton
+hide
+homespun
+feathers
+fur
+hemp
+hide
+jute
+leather
+wool
+
+: Uncommon
+brocade
+cashmere
+{fur and pelt:common.animal} fur
+gold cloth
+leather
+linen
+silk
+silver cloth
+
+: Exotic
+spidersilk
+{avian} feathers
+{feathered monster} feathers
+{fur and pelt:exotic.animal} fur
+{furred monster} fur
+{fur and pelt:hide.animal} leather
+
+: Magical
+embersilk
+felcloth
+frostweave
+mageweave
+netherweave
+runecloth
+spellspun
+soulbind

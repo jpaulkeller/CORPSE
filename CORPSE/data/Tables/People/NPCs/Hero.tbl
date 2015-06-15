@@ -17,7 +17,7 @@
 {pseudo class:fighter} in the {UNIT}
 {pseudo class:mage} in the {UNIT}
 {pseudo class:ranger} in the {UNIT}
-{military:position rank} in the {UNIT}
+{military rank:position} in the {UNIT}
 
 : Sentence
 {:DISTINGUISHED} he {75%{adverb} }{:fought} a {:group} of {50%{evocative adj:negative} }{{humanoid:uncommon}+} {:reason}.

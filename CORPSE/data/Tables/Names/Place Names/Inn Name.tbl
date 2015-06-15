@@ -14,6 +14,7 @@
 {Color:Basic{!OneWord}} {Made Of{!OneMaybeSame}} {80%{Inn Type}}
 {Color:Basic{!OneWord}} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
 {Color:Basic{!OneWord}} {Transport{!OneWord}} {80%{Inn Type}}
+{Condition:Wood Weapon} {Flotsam:Simple{!OneMaybeSame}} {80%{Inn Type}}
 {Container{!OneWord}} of {Contents.Item{!OneWord}} {80%{Inn Type}}
 {Disposition} {Humanoid{!OneMaybeSame}} {80%{Inn Type}}
 {Disposition} {Profession{!OneMaybeSame}} {80%{Inn Type}}

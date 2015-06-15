@@ -1,3 +1,9 @@
+: Elf Name
+{Sindarin Name}
+{:Prefix}{:suffix}
+{:Standard}
+
+: Standard
 Aegnor
 Amarie
 Amdir
@@ -90,3 +96,50 @@ Tinuviel
 Tuor
 Turgon
 Voronwe
+
+: prefix
+Adan
+Aeg
+Am
+Aran
+Bara
+Beleg
+Celeb
+Curu
+Dag
+El
+Fela
+Fin
+Gal
+Gil
+Hal
+Ing
+Lin
+Mal
+Pen
+Tar
+Thurin
+Ul
+
+: suffix
+aran
+bor
+born
+dir
+dor
+had
+ion
+las
+moth
+or
+phant
+phor
+randir
+ras
+rod
+rond
+ros
+thalion
+thir
+uil
+we

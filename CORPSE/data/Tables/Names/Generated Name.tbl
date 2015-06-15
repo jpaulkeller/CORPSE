@@ -1,7 +1,7 @@
 : Generated Name
 // 3
 {:Consonant}{:vowel}{:consonant}
-{:Digraph}{:vowel}
+{:Beginning}{:vowel}
 {:Vowel}{:consonant}{:vowel}
 {:Vowel}{:ending}
 
@@ -9,8 +9,8 @@
 {:Consonant}{:dipthong}{:consonant}
 {:Consonant}{:vowel}{:consonant}{:vowel}
 {:Consonant}{:vowel}{:ending}
-{:Digraph}{:dipthong}
-{:Digraph}{:vowel}{:consonant}
+{:Beginning}{:dipthong}
+{:Beginning}{:vowel}{:ending}
 {:Dipthong}{:consonant}{:vowel}
 {:Dipthong}{:ending}
 {:Vowel}{:repeat}{:vowel}
@@ -24,9 +24,9 @@
 {:Consonant}{:vowel}{:digraph}{:vowel}
 {:Consonant}{:vowel}{:ending}{:vowel}
 {:Consonant}{:vowel}{:repeat}{:vowel}
-{:Digraph}{:dipthong}{:consonant}
-{:Digraph}{:vowel}{:consonant}{:vowel}
-{:Digraph}{:vowel}{:ending}
+{:Beginning}{:dipthong}{:consonant}
+{:Beginning}{:vowel}{:consonant}{:vowel}
+{:Beginning}{:vowel}{:ending}
 {:Dipthong}{:consonant}{:dipthong}
 {:Dipthong}{:repeat}{:vowel}
 {:Vowel}{:consonant}{:vowel}{:ending}
@@ -34,10 +34,10 @@
 // 6
 {:Consonant}{:vowel}{:consonant}{:vowel}{:consonant}{:vowel}
 {:Consonant}{:vowel}{:consonant}{:vowel}{:ending}
-{:Digraph}{:dipthong}{:ending}
-{:Digraph}{:vowel}{:digraph}{:vowel}
-{:Digraph}{:vowel}{:ending}{:vowel}
-{:Digraph}{:vowel}{:consonant}{:vowel}{:consonant}
+{:Beginning}{:dipthong}{:ending}
+{:Beginning}{:vowel}{:digraph}{:vowel}
+{:Beginning}{:vowel}{:ending}{:vowel}
+{:Beginning}{:vowel}{:consonant}{:vowel}{:consonant}
 {:Dipthong}{:repeat}{:dipthong}
 {:Vowel}{:consonant}{:vowel}{:consonant}{:digraph}
 {:Vowel}{:digraph}{:vowel}{:consonant}
@@ -81,15 +81,38 @@ x
 y
 z
 
+: beginning
+{:consonant}
+{:digraph}
+{:vowel}l
+{:vowel}h
+{:vowel}r
+
 : digraph
- ch
- gh
- ph
- sc
- sh
- th
- wh
- wr
+bl
+br
+ch
+cl
+cr
+dr
+fl
+fr
+gh
+gl
+gr
+kl
+kr
+ph
+pl
+pr
+sc
+sh
+sk
+sl
+th
+tr
+wh
+wr
 
 : dipthong
 ai
@@ -103,28 +126,51 @@ oo
 ou
 
 : ending
+b
 ch
 ck
+d
 ey
+f
+ff
+g
+h
+l
 ld
 lf
 lk
 lm
 lt
+k
+l
+m
+n
 nd
 ng
 nk
 nt
+p
+r
 rd
 rg
 rk
 rm
 rn
 rt
+s
 sh
 sk
+ss
 st
+t
+tt
 th
+v
+w
+x
+y
+z
+{:consonant}{:vowel}
 
 : repeat
 dd

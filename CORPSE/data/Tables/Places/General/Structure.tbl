@@ -13,7 +13,7 @@
 {:Merchant}
 {:Military Building}
 {:Production}
-{:Religious} ({Religion})
+{:Religious}{50% of {{Religion|Divine Name}}}
 {:Residence}
 {:Service}
 {:Social}
@@ -47,12 +47,14 @@ weir
 wharf
 
 : Cemetery
+barrow
 boneyard
 catacombs
 cemetery
 charnel house
 churchyard
 crypt
+dolmen
 graves
 graveyard
 mausoleum
@@ -69,6 +71,8 @@ barbican
 bastion
 battlement
 beacon
+berm
+blockade
 bridge
 bulwark
 drawbridge
@@ -85,6 +89,7 @@ postern
 ramparts
 signal tower
 stockade
+trench
 wall
 
 : Entertainment
@@ -117,18 +122,23 @@ pond
 : Government
 asylum
 bank
-courthouse
-dungeon
 embassy
-gallows
-gaol
-jail
 orphanage
 palace
 prison
 station
 storm shelter
 turnpike
+{:justice}
+
+: Justice
+courthouse
+dungeon
+gallows
+guillotine
+jail
+pillory
+stocks
 
 : Infrastructure
 anchorage
@@ -146,19 +156,25 @@ messenger station
 pier
 portal
 reservoir
-sewer
+sewer grate
 stairs
 tower
+tunnel
 well
 
 : Landmark
-fountain
+cairn
+monolith
 monument
+menhir
+milestone
 obelisk
 pillar
 sculpture
 spire
 statue
+stele
+{25%{fauna} }fountain
 {landmark}
 
 : Merchant
@@ -217,7 +233,6 @@ guardhouse
 hold
 keep
 outpost
-post
 stronghold
 tower
 watchtower

@@ -4,14 +4,24 @@
 10x {:Female}
 
 : Male
-2x {:Adj} {:Last}
-2x {:First}-{:Like}-{:Last}
 He-Who-{:Verb}
+{:Adj} {:Last}
+{:First}-{:Like}-{:Last}
+{:Verb}-{:With}-{{:Last}+}
+{Number:TwoToTwelve}-{{:Last}+}
 
 : Female
-2x {:Adj} {:Female Last}
-2x {:First}-{:Like}-{:Last}
 She-Who-{:Verb}
+{:Adj} {:Female Last}
+{:First}-{:Like}-{:Female Last}
+{:Verb}-{:With}-{{:Female Last}+}
+{Number:TwoToFive}-{{:Female Last}+}
+
+: With
+For
+Like
+The
+With
 
 : Like
 3x As
@@ -28,38 +38,50 @@ For
 Near
 Of
 On
-The
 Under
 Within
 
 : First
-Bends
+Angry
 Big
-Bites
-Black
-Blue
-Brown
-Cool
 Cold
 Crazy
 Cunning
-Dances
 Dark
-Dreams
-Eyes
-Falls
 Fierce
-Fights
-Glides
-Green
-Hides
-Hunts
 Light
 Little
-Mauls
+Happy
 Mighty
+Quiet
+Silent
+Smiling
+Strong
+Sturdy
+Warm
+Wild
+Wise
+{Color:Simple}
+{Number:Ten}
+
+: Verb
+Bends
+Bites
+Calls
+Dances
+Doubts
+Dreams
+Falls
+Fights
+Follows
+Gathers
+Glides
+Hides
+Hunts
+Leads
+Listens
+Mauls
 Pounces
-Red
 Runs
 Screams
 Seeks
@@ -70,47 +92,9 @@ Stalks
 Stands
 Steps
 Strikes
-Strong
-Sturdy
-Talks
 Swims
-Walks
-Warm
-Whispers
-White
-Wild
-Wise
-Yellow
-{Number:Ten}
-
-: Verb
-Bends
-Bites
-Calls
-Dances
-Dreams
-Falls
-Fights
-Follows
-Gathers
-Glides
-Hides
-Hunts
-Leads
-Mauls
-Pounces
-Runs
-Screams
-Shouts
-Sings
-Soars
-Stalks
-Stands
-Steps
-Strikes
 Talks
 Tracks
-Swims
 Walks
 Whispers
 
@@ -175,6 +159,7 @@ Coyote
 Deer
 Dream
 Duck
+Eyes
 Feather
 Fox
 Ghost

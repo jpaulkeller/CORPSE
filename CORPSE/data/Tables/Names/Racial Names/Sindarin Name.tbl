@@ -1,0 +1,3 @@
+.Sindarin Name, Meaning
+{S:=Sindarin Dictionary}{S.Sindarin}; {s.definition}
+{S1:=Sindarin Dictionary}{S2:=Sindarin Dictionary}{S1.Sindarin}{s2.sindarin}; {s1.definition} + {s2.definition}

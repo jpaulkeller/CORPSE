@@ -1,5 +1,6 @@
 / inspired by http://donjon.bin.sh/fantasy/inn/
 / http://random-generator.com/index.php?title=Barrens_Menu_Generator
+/ http://random-generator.com/index.php?title=Foodstuffs
 
 : Menu
 {:fare}; {container:drink} of {drink}{20%; {:dessert}}
@@ -87,7 +88,7 @@ thin-sliced cured {:dish} and {{vegetable}+} with a {vegetable}-cream sauce
 {{vegetable}+}-cheese patties with caper-yogurt sauce
 
 : Soup
-{{meat:fowl}|{meat:game}|{seafood}|{vegetable:cookable}}{50% and {vegetable:cookable{!different}}} {porridge|soup|stew}
+{{meat:fowl}|{meat:game}|{seafood}|{vegetable:cookable}|{:seeds}}{50% and {vegetable:cookable{!different}}} {chowder|porridge|soup|stew}
 
 : Side
 brown gravy{20% and mushrooms}
@@ -96,6 +97,14 @@ rice
 {:eggs}
 {salad}
 {{vegetable}+}{33% and {{vegetable{!different}}+}}
+
+: Seeds
+barley
+flaxseed
+lentil
+mustard seed
+sunflower seed
+wheat
 
 : Cheese
 assorted cheeses
@@ -194,3 +203,32 @@ sweet pickles
 {preparation} {seafood:exotic}
 {preparation} {meat:small animal exotic}
 {color:simple} pudding
+
+===
+
+a barely edible meal of rancid meat and molded [AllTheCheeses.main] cheese
+a commoner’s meal of [Meat], [Bread], and some vegetables
+a delightful dessert of sweetbread, berries, dates and chopped nuts
+a few crumbled rolls and some unidentifiable paste
+a filling meal of [Bread], [Meat], and fresh greens
+a fine meal of [Meat], [Bread], and good [AllTheCheeses.main] cheese
+a hearty meal of various meats with [Bread] and fresh vegetables
+a kingly meal of [Meat], [Cheese], [Bread] and fresh berries
+a light snack of fresh berries, nuts, and slightly stale bread
+a light, tasty meal of fresh fruits and [Meat]
+a meal of exotic meats, fruits, and desserts, fit for a king
+a quality meal of [Bread], [Meat], and garden greens
+a quick snack of [Meat] wrapped in [Bread]
+a short meal of [Meat] and [Bread]
+a simple but honest meal of shredded pork, [Bread], and [Cheese]
+a snack of fresh fruit and salted seeds
+a sparse meal of [Meat] and [Bread]
+a standard field ration of [Meat], [Bread] and an apple
+a standard field ration of soup bullion, [Bread], celery and an onion
+a wayfarer’s meal of [Meat], [Bread], and fresh garden vegetables
+an odd combination of [Meat] and sweets
+commoner’s fare of [Meat] and [Bread]
+inedible food, left to rot and decay for far too long
+light fare comprised of a small brick of [Cheese], a [Bread], and an apple
+lordly cuisine of mouthwatering [Meat], [Bread], and seasoned [Cheese]
+traveller’s fare comprised of [Meat], some [Bread], and garden vegetables

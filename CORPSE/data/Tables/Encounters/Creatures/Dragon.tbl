@@ -5,7 +5,7 @@
 
 : Details
 {Dragon Name} is a {dragon age}
-5x {Dragon Name} is a {dragon age} {:dragon} who has {color} {:hide}, {75%{:head}, }{20%{:legs}, }{:wings} and a {:tail}. {G:=Gender}{G.Pronoun} has {:eyes}.{75%  {:breath}}{25% {:special ability}}{10% {:special cosmetic}}
+5x {Dragon Name} is a {dragon age} {:dragon} who has {color} {:hide}, {75%{:head}, }{20%{:legs}, }{:wings} and a {:tail}. {G:=Gender}{G.Pronoun} has {:eyes}.{75%  {:breath}}{25% {:special quality}}{10% {:special cosmetic}}
 {Dragon Name} is a {dragon age} {:tsr} dragon who has {75%{:head}, }{:wings} and a {:tail}. {G:=Gender}{G.Pronoun} has {:eyes}
 
 : Influence
@@ -246,12 +246,19 @@ one is {color} and one is {color}
 {G.Pronoun} can exhale a {:breath area} of {:breath type}{10% and {:breath type}}
 
 : breath area
+balls of
+beam
 blast
 bolt
 cloud
 cone
+miasma
 mist
+pulses
+ray
+spatter
 spray
+waves
 
 : breath type
 5x fire
@@ -264,29 +271,40 @@ noxious fumes
 
 : breath type rare
 ashes
-balls of {color:simple} fire
 bone
 brilliant, searing light
 caustic, boiling blood
 darkness
 death
 decay
-despair
 desiccation
+despair
+digestive enzymes
 disintegration
 dust
 hallucinogenic
 highly flammable, sticky gel
+hypnosis
+illusion (phantasmal nightmare visions, save for mere bewilderment)
+luck (positive or negative at will)
 madness
+misery (uncontrollable emotional meltdown, save for melancholia)
+pathogens (1d6 random diseases attack simultaneously)
 petrification
 plasma
 prismatic energy
+resentment (dragon’s assailants turn against one another)
+revulsion ( subject unable to remain in the same physical space as dragon)
 scalding steam
+serenity (save or achieve involuntary enlightenment)
 sleep
-sticky, burning tar
 sonic
+sticky, burning tar
+storm (lightning, deafening peals, damaging winds, massive hailstones)
 water
 webbing
+withering (massively accelerated aging)
+{color:simple} fire
 
 : poison
 blinding

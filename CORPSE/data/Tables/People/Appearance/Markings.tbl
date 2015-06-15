@@ -3,7 +3,7 @@ wearing {made of:precious} {jewelry} {with a single large {gem}|{art:decorated}}
 {25%{:colors} }tattoo{75% of a {charge}}{75% {:where}}
 {cheek|ear|eyebrow|lip|nose|tongue} pierced with a {{made of:precious}|{gem}} {stud|ring}
 {face|arms} decorated with {patterns|streaks|stripes|symbols|runes} of {color:simple} paint
-{small |large |}birthmark{75% {:where}}{10% shaped like a {{fauna}|{~{tiny item}}}}
+{small |large |}birthmark{75% {:where}}{10% shaped like a {~{charge}}}
 {small |large |}{5%gruesome }{:scar}{75% {:where}}
 {small |large |}{:injury}{75% {:where}}
 
@@ -22,7 +22,7 @@ puncture scar
 stitches
 
 : Where
-/ before referencing this, be sure to set G -- {G:=gender}
+/ before referencing this, be sure to set {G:=gender}
 on {G.pronoun} {body part}
 
 : Colors

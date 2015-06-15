@@ -128,13 +128,14 @@ writes amateur poetry
 believes in mythical creatures
 can't remember names
 can't stand rodents
-dislikes wizards
+dislikes {pseudo class}
 distracted by women
 donates to charity
 follows religious tenants
 forgets important dates
 has a crush on someone
-has a difficult time trusting demi-humans
+has a difficult time trusting {{humanoid}+}
+has a {high|low} pain threshold
 has lousy spelling
 hates insects
 helps stray animals
@@ -194,10 +195,10 @@ has one of the less common eye colors
 has smelly boots
 is a loud, talkative drunk
 is a sleepy drunk
-is mildly allergic to cats
+is {degree} allergic to {dust|fur|insect stings|mold|pollen|magic}
+is {degree} allergic to certain kinds of {{provisions{!oneword}}|medicine|potions}
 is more hairy than average
 is prematurely bald
-is somewhat allergic to cheese
 is tone deaf
 often drums his fingers
 plays with a lock of hair

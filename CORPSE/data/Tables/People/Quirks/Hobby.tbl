@@ -5,12 +5,12 @@ academics: {:academics}
 arts and crafts: {:arts and crafts}
 avocation: {profession}
 avocation: {pseudo class}
-athletics: {:sport}
+athletics: {sport}
 collecting: {75%{:collections adjective} }{:collections}
 criminal: {:criminal}
 outdoor pursuits: {:outdoor pursuits}
 performance: {:performance}
-politics: {:politics}
+politics: {:political causes}
 religion: {:religion}
 social club: {:clubs}
 
@@ -71,7 +71,7 @@ statuary and sculpture
 
 : clubs
 charitable service organization
-collecting club ({75%{:collections adjective} }{:collections}}
+collecting club ({75%{:collections adjective} }{:collections})
 farmers cooperative
 fraternal order
 gambling club ({cards|dice|sports})
@@ -152,5 +152,5 @@ monstrous worship cult
 ultraconservative version of mainstream sect
 utopian movement
 {75%lay }clergy of a mainstream sect
-{demonic|diabolic|evil| cult
+{demonic|diabolic|evil} cult
 {gnostic|heretical} sect

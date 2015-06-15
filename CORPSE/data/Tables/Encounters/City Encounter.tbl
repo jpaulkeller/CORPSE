@@ -25,16 +25,20 @@ A {:young} {:YOUNG ACTIVITY}
 {profession}
 {pseudo class}
 {race}
-{academic rank}
+{academic rank:position}
 {feudal rank}
 {guild rank}
-{military rank}
-{religious rank}
+{military rank:position}
+{religious rank:position}
 {:other}
 
 : Other
 dissident
+migrant worker
+pilgrim
 protester
+refugee
+tourist
 
 : Group Name
 band

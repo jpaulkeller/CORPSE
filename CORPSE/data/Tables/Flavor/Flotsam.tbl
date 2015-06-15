@@ -1,0 +1,90 @@
+: Flotsam
+10x {O={:OBJECT}}{:adj {o}} {:{O}}
+
+: Simple
+{:{:OBJECT}}
+
+: object
+bottle
+BOOK
+clothing
+container
+furniture
+misc
+weapon
+
+: book
+copy of {BOOK}
+
+: adj book
+mostly ruined, {condition:paper}
+
+: bottle
+amphora of {liquid}
+barrel of {liquid}
+bottle of {liquid}
+cask of {liquid}
+flask of {liquid}
+jug of {liquid}
+puncheon of {liquid}
+{potion:loot}
+
+: adj bottle
+mostly empty
+half full
+mostly full
+
+: clothing
+{~{clothing}}
+
+: adj clothing
+{condition:clothing}
+
+: container
+barrel
+basket
+box
+cask
+chest
+coffer
+crate
+
+: adj container
+empty
+leaking
+lidless
+{condition:wet}
+
+: furniture
+bookcase
+chair
+stool
+table
+
+:adj furniture
+broken
+fragment of a
+remnant of a
+{condition:wet}
+
+: misc
+body
+catapult
+driftwood
+ship's ballista
+trebuchet
+
+: adj misc
+{condition:wet}
+
+: weapon
+arrow
+axe handle
+bolt
+bow
+broom
+club
+spear shaft
+
+:adj weapon
+{condition:wood weapon}

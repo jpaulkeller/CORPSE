@@ -1,6 +1,7 @@
 / Sources: GURPS Basic Set (3rd edition), supplement
 / http://eberronunlimited.wikidot.com/diseases
 / see also {D12 Underworld Affliction}
+/ see also Disease Name.tbl and Disease.cmd
 
 / When a character is injured by a contaminated attack (such as a mummy�s slam attack, which can transmit mummy rot), touches an item smeared with diseased matter, or consumes disease- tainted food or drink, he must make an immediate Fortitude saving throw. If he succeeds, the disease has no effect�his immune system fought off the infection. If he fails, he takes damage after an incubation period. Once per day afterward, he must make a successful Fortitude saving throw to avoid repeated damage. Two successful saving throws in a row indicate that he has fought off the disease and recovers, taking no more damage.
 / You can roll these Fortitude saving throws for the player so that he doesn�t know whether the disease has taken hold.

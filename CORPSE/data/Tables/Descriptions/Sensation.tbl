@@ -1,0 +1,157 @@
+/ http://random-generator.com/index.php?title=Feelings
+
+: Sensation
+{:pre} {:wind feeling} {:suffix}
+{:wind feeling} {:suffix}
+{:body feeling}
+not a hair stirs on your body
+{:relative singular}
+
+: pre
+gentle
+light
+stiff
+swift
+
+: wind feeling
+blast of heat
+breath of air
+brisk wind
+cool breeze
+crisp air
+damp chill
+dry heat
+fresh air
+icy blast
+stirring of wind
+warm vapors
+warm wind
+
+: wind
+blast
+breath
+breeze
+wind
+
+: suffix
+from the {compass:8}
+in your hair
+on your face
+that tingles your skin
+
+: body feeling
+chill
+dampness
+dizziness
+exhaustion
+fatigue
+fever
+frostbite
+headache
+heaviness
+itchiness
+mugginess
+nausea
+numbness
+parching dryness
+soreness
+stiffness
+trickle of sweat
+vertigo
+warmth
+wet spray
+
+: gerund
+{:gerund verb} {:pre adverb} of {{ia|{:wind}}}
+{:gerund verb} of {{ia|{:wind}}}
+{:gerund verb} {:feel adverb}
+{:gerund verb} {:pre adverb} {:feel}
+
+: gerund verb
+feeling
+touching
+
+: pre adverb
+gently
+lightly
+sharply
+slightly
+stiffly
+subtlety
+
+: feel adjective
+cold
+cool
+hot
+rough
+smooth
+warm
+
+: feel adverb
+coldly {:cold}
+cooly {:cool}
+damply {:damp}
+hotly {:hot}
+roughly {:rough}
+smoothly {:smooth}
+warmly {:warm}
+
+: feel
+{:body feel}
+damp {:damp}
+cold {:cold}
+hot {:hot}
+warm {:warm}
+cool {:cool}
+smooth {:smooth}
+rough {:rough}
+
+: smooth
+like 
+like silk
+
+: rough
+of sand
+of grit
+
+: damp
+of fog
+of mist
+
+: cold
+of ice
+of damp
+of {:wind}
+
+: cool
+of damp
+of {:wind}
+
+: hot
+of the sun
+of {:wind}
+
+: warm
+of the sun
+of {:wind}
+
+: adjective
+{:pre adverb} {:feel adjective}
+{:feel adjective}
+
+: relative plural
+{:relative verb plural} {:pre adverb} of {:feel}
+{:relative verb plural} {:pre adverb} {:feel adjective}
+{:relative verb plural} of {:feel}
+
+: relative singular
+{:relative verb singular} {:pre adverb} of {:feel}
+{:relative verb singular} {:pre adverb} {:feel adjective}
+{:relative verb singular} of {:feel}
+
+: relative verb singular
+{:relative verb plural}s
+
+: relative verb plural
+feel
+touch
