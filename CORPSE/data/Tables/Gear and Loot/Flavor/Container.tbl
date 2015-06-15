@@ -1,13 +1,19 @@
 : Container
+backpack
 bag
 barrel
 basket
+belt pouch
 box
+bundle
 cask
 cauldron
 chest
 coffer
 crate
+duffel
+haversack
+knapsack
 pan
 phylactary
 puncheon
@@ -15,30 +21,43 @@ pyx
 quiver
 retort
 sack
+saddlebag
+satchel
 skeel
 trunk
 tube
 urn
+{:cloth}
+{:liquid}
+
+: Cloth
+bolt
+bundle
+patch
+satchel
+sheepskin
+skien
 {fabric} bag
 {fabric} pack
 {fabric} pouch
-{:liquid}
 
-: furnishing
-armoire
-bookcase
-cabinet
-chest of drawers
-desk
-display case
-hamper
-wardrobe
+: Drygoods
+bag
+barrel
+box
+bundle
+cask
+chest
+coffer
+crate
+sack
+trunk
 
 : Liquid
 amphora
 barrel
 bottle
-bundle
+canteen
 carafe
 cask
 cauldron
@@ -48,11 +67,15 @@ decanter
 flagon
 flask
 goblet
+hogshead
+jar
 jorum
 jug
+keg
 kettle
 pail
 pan
+phial
 pitcher
 pot
 puncheon
@@ -60,6 +83,8 @@ skeel
 tankard
 tub
 urn
+vial
+wineskin
 {70%?glass:{70%?{metal}:ceramic}} vase
 {made of:hard} bowl
 {made of:hard} bucket
@@ -71,9 +96,32 @@ urn
 cup
 flagon
 goblet
+hogshead
 horn
 mug
 tankard
+
+: Powder
+bottle
+box
+can
+canister
+coffer
+grinder
+jar
+peppermill
+shaker
+tin
+
+: Furnishing
+armoire
+bookcase
+cabinet
+chest of drawers
+desk
+display case
+hamper
+wardrobe
 
 : Potions
 {33%{:description} }{:potion container}{33% {:decoration}}

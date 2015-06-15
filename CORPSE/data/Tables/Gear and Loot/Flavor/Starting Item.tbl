@@ -129,5 +129,6 @@ young ward--[Fantasy Life Events.COMPANIONS]
 {condition} {quality} {equipment}
 {jewelry}
 {made of:hard} dice
+{mundane}
 {ornate|ceremonial|{condition:weapon}} {weapon}
 {paper}

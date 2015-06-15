@@ -37,7 +37,7 @@ wrapped in {color:drab} leather
 : String
 actually a fine chain made of {metal:flavor} {metal:enchantable}
 actually a single wire made of {metal:flavor} {metal:enchantable}
-made of {75%braided }{color:leather} {:leather}
+made of {75%braided }{color:drab} {:leather}
 missing
 missing, save for a small piece tied at the topnotch.
 
