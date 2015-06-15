@@ -10,7 +10,7 @@ powdered {metal}
 {flower} {blossom|leaf|nectar|petal|pollen|root|stalk|thorn}{10% {:gathered}}{10% {:prepared}}
 {fruit}{20% seed}{10% {:gathered}}{10% {:prepared}}
 {fungus}{20% {spores|extract}}{10% {:gathered}}{10% {:prepared}}
-{herb flavort}{25% {plant part}}{10% {:gathered}}{10% {:prepared}}
+{herb flavor}{25% {plant part}}{10% {:gathered}}{10% {:prepared}}
 {herb}{25% {plant part}}{10% {:gathered}}{10% {:prepared}}
 {mineral}
 {monster} {organ}{10% {:gathered}}

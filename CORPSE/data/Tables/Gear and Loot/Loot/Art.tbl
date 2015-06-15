@@ -37,6 +37,7 @@ portrait
 
 : Monument
 {size:large} {made of:hard} {sculpture|statue} of {:OF}
+{size:large} {diorama|mosaic|mural} of {:OF}
 {size:large} monument to {Divine Name}
 
 : Of

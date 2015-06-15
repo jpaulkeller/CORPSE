@@ -6,10 +6,12 @@
 
 acorns
 ale                          1-3 cp/pt  
+apple butter
 apples
 apricots
 artichokes
 asparagus
+balsamic vinegar
 beans
 beaver tails                50
 beef steak                 100
@@ -21,10 +23,10 @@ blueberries
 brandy                       5 sp+/pt    
 bread                        7 bp/loaf      2.5
 broth
-butter
 butter                       2 sp/lb        1
 cabbage
 cakes
+cane syrup
 carrot                       1 sp/oz
 castor beans
 caviar
@@ -33,19 +35,21 @@ cheese
 cider                        8 cp/pt  
 cookies
 corn
+corn oil
 crab
 cucumbers
 custard
+dried {fruit}
 dry rations                 10/week    
 duck egg
 dumpling
 eel steak
-eggs
-eggs (100)                   8 sp  
-eggs (24)                    2 sp  
-figs (lb)                    3 sp           1
+eggs                         2 sp/24  
+eggs                         8 sp/100  
+figs                         3 sp/lb        1
 firewood (day)               1 cp  
 fish
+fish oil
 fish, herring, salted (100)  1  
 fish, pickled, barrel        3  
 flour,10 lb bag of           6 sp          10
@@ -57,17 +61,21 @@ fritter
 frog legs                   50
 fruit
 garlic
+gelatin
 ginseng
 grain, horse meal, 1 day     1 cp           5
 grapes
+grapeseed oil
 greens
-grog, pint of                3 cp  
 grog                        40
+grog, pint of                3 cp  
 gruel
 haggis                      50
 ham                        250
+hard biscuits
+hardtack
 herbs
-herbs (common, lb)           5 cp           1
+herbs (common)               5 cp/lb        1
 honey
 jam
 jelly
@@ -75,23 +83,28 @@ juice, apple, pint of        8 bp
 juice, grape, pint of        8 bp  
 juice, orange, pint of       9 bp  
 juice, tomato, pint of       7 bp  
+lard
 leeks
 lentils
 lizard steak               200
 lobster                     20
-mead, pint of                5 cp  
+maple syrup
 mead                       100
+mead, pint of                5 cp  
 meal (grain)
 meat
 milk
 milk, cow, pint of           2 cp  
 milk, goat, pint of          1 cp  
+molasses
 muffins
 mushrooms
 mustard
 mutton                      40
 nuts
 nuts (lb)                    1              1
+oil and vinegar
+olive oil
 onions
 pastries
 peaches
@@ -106,21 +119,21 @@ porridge
 prunes
 pudding
 pumpkin
-rabbit stew                 30
 radishes
 raisins (lb)                 2 sp           1
 raspberries
+rations                     20
 rations, iron, 1 week        5 gp           7.5
 rations, standard, 1 week    3 gp          20
-rations                     20
+red wine vinegar
 rhubarb
 rice (lb)                    2 sp           1
 roast chicken               50
 roast duck                  80
 roast pheasant             250
 roast turkey               150
-rum, pint of                 5 cp+    
 rum                         80
+rum, pint of                 5 cp+    
 salad                        4
 salmon                      60
 salt
@@ -129,12 +142,10 @@ scone
 shark                      150
 shellfish
 snake egg                  250
-snake stew                  50
-soup
+sorghum
 spice exotic/saffron/clove  15 gp           1
 spice rare/pepper/ginger     2 gp           1
 spice uncommon/cinnamon      1 gp           1
-stew
 strawberries
 sugar, coarse (lb)            1             1
 sweetmeats
@@ -143,13 +154,48 @@ tea                          7 bp/pt
 tubers/roots
 turnips
 turnover
+vegetable oil
 vegetables                    3
 venison                     300
 vinegar
 water
 water, spring, pint of        5 bp  
+white wine vinegar
+wine                        125
 wine, good, pint of           1 sp+    
 wine, good, tun (250 gal)    20 gp    2050
 wine, watered, pint of        6 cp  
-wine                        125
-wolf stew                    30
+{:meat prep} {meat}
+{dried|salted|smoked} {seafood}
+{nut:nuts}
+{roasted|salted} {menu:seeds}
+
+: meat prep
+jerk
+cured
+dried
+salted
+smoked
+
+===
+
+{container:liquid} of {:liquid}
+{container:drygoods} of {:softfood}
+{container:drygoods} containing chunks of {:chunks}
+{container:cloth} of {:meals}
+{container:powder} of {:seasoning}
+
+block of [DryGood] [BlockContainer]
+
+;BlockContainer
+[BlockWrapping] and contained in a [DryGoodsContainer]
+[BlockWrapping]
+in a [DryGoodsContainer]
+
+;BlockWrapping
+wrapped in canvas
+wrapped in leather
+wrapped in an old cloth
+in a chest of [Utility.Wood] wood
+wrapped in burlap
+
