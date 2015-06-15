@@ -2,19 +2,209 @@
 / http://random-generator.com/index.php?title=Ship_Names
 
 : Ship Name
+{:Nautical Adj} {Fauna}
+{:Other}
+{:Pirate}
 {Adjective} {Aquatic}
-{Nautical Adj} {Fauna}
-{Adjective} {Feudal:Noble Rank}
+{Adjective} {Feudal Rank:Noble}
 {Appearance} {Fauna{!MaybeSameFirst}}
-{Appearance} {Feudal:Noble Rank}
+{Appearance} {Feudal Rank:Noble}
 {Color:Basic} {Fauna{!MaybeSameFirst}}
-{Color:Basic} {Feudal:Noble Rank}
+{Color:Basic} {Weapon{!OneWord}}
 {Evocative Adj} {Religious Rank}
 {Noise} {:Nautical Noun}
+{Trait:Good} {Feudal Rank:Noble}
 {Trait} {Evocative Concept{!MaybeSameFirst}}
 {Trait} {Fauna{!MaybeSameFirst}}
-{Trait:Good} {Feudal:Noble Rank}
-{:Pirate}
+
+: Other
+Advantage
+Arrowhead
+Aurora
+Autumn Song
+Axe of Thard
+Bane’s Breath
+Beholder
+Bharzim’s Victory
+Blackhelm’s Legacy
+Blademark
+Bloodmonger
+Breyten’s Thrill
+Broken Keel
+Calomaar’s Edge
+Chethel’s Ghost
+Color Spray
+Coral Rose
+Crescent Moon
+Crystal Tear
+Curse of Thuban
+Dark Queen’s Voice
+Deep Heathen
+Demonrudder
+Demonskull
+Desperate Sorceress
+Devil’s Fork
+Devious
+Dire Gar
+Djinni’s Wish
+Dominant
+Dragonhawk
+Dragonroar
+Dragon’s Crown
+Dragon’s Glory
+Dream of Melora
+Dryad’s Fury
+Ebon Moon
+Emerald Eye
+Evader
+Expeditious
+Falling Star
+Fang of Tezmyr
+Fate’s Blessing
+Fearsome
+Feral Knave
+Fireball
+Floating Cask
+Frastain’s Bottle
+Frostwind
+Gem of Malfier
+Ghorok’s Grail
+Ghorzaar’s Bane
+Golden Coin
+Golden Libram
+Goldraker
+Good Fortune
+Graethan
+Greedy Drake
+Griffonwing
+Grim Gale
+Grimbol’s Cutlass
+Hammer of Kavath
+Hammergust
+Hareth’s Barrel
+Harpy’s Lure
+Heart of Avandra
+Heartless
+Hellstrike
+Iron Maiden
+Iron Trumpet
+Jarak’s Grasp
+Javelin
+Jewel of Irthos
+Kara-Vaji
+Karthang’s Plunder
+Kasha’s Wake
+Kaveth’s Whisper
+Kegstaff
+Kerle’s Drum
+Krimilvin’s Charm
+Lady Rose
+Lantheon
+Leering Skull
+Light of Pelor
+Listless
+Lonely Witch
+Lucky Scrag
+Mad Hag
+Maelstrom
+Melora’s Favor
+Menacer
+Mistreaver
+Moonriser
+Moonshadow
+Moonwatcher
+Nightmare
+Oaken Ranger
+Poison Orchid
+Pearl of Fire
+Phantom Shark
+Piranha
+Prallmar’s Shadow
+Prince of Lies
+Prosperous
+Quickstrike
+Rangoth
+Rat’s Nest
+Ravager
+Raven’s Gamble
+Reckoner
+Redemption
+Redfeather
+Remorseless
+Retribution
+Risen Ghost
+Riventide
+Roc’s Talon
+Rotten Apple
+Rune of Halendros
+Rusted Cutlass
+Sahandrian’s Quarrel
+Satyr
+Savage Swan
+Scarlet Dagger
+Scepter Queen
+Scimitar
+Scorpion
+Screaming Gull
+Sea Bear
+Sea Haunt
+Sea Howler
+Sea Skulk
+Second Chance
+Sehanine’s Fool
+Shadow Mask
+Shard of Night
+Shevaya’s Honor
+Shield of Khahar
+Shining Flute
+Shoal Courser
+Shrike
+Silver Chalice
+Silverfin
+Siren’s Kiss
+Skiprock
+Skulldark’s Ire
+Slippery Trickster
+Soaring Manta
+Song of Elyndri
+Starchaser
+Stardancer
+Stingray
+Storm Maven
+Stormcrow
+Storm’s Eye
+Summer Rain
+Sundowner
+Tamarion’s Grudge
+Tanishar’s Fate
+Thunderchaser
+Timber Serpent
+Triton
+Trystan’s Delight
+Tuersyl’s Fist
+Turathi Flame
+Vaazrus
+Varalan’s Dweomer
+Vendetta
+Vicious
+Vortex
+Vostarika
+Waterblade
+Wavecarver
+Wavecrusher
+Werewolf
+Whirling Glyph
+White Feather
+White Hart
+Wildwyrm
+Will-o’-wisp
+Windstriker
+Wolfshark
+Wooden Stake
+Wraithwind
+Wyvern’s Sting
+Yisek’s Ride
+Zaetchan’s Privilege
 
 : Pirate
 {25%The }{Evocative Adj:Negative} {Evocative Concept:Not Positive{!OneWord}}
@@ -36,19 +226,27 @@ Strumpet
 
 : Object
 Anger
+Avarice
+Bluff
+Bounty
 Disgrace
 Doom
 Executioner
 Fall
+Hammer
 Hate
+Haul
 Howl
 Lie
+Revenge
 Scream
+Secret
 Skull
 {North|South|East|West}
 
 : Nautical Adj
 Briny
+Dancing
 Flying
 Golden
 Lucky
@@ -60,6 +258,7 @@ Swift
 : Nautical Noun
 Albatross
 Barnacle
+Barracuda
 Corsair
 Dancer
 Dolphin
@@ -75,6 +274,7 @@ Serpent
 Shark
 Siren
 Squid
+Trident
 Voyager
 Whale
 Zephyr

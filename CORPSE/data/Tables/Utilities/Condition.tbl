@@ -129,4 +129,22 @@ razor-sharp
 burnt
 charred
 cracked
+splintered
 {:weapon}
+{:wet}
+
+: Wet
+mildewed
+soaked
+soggy
+waterlogged
+
+: Food
+bland
+foul-smelling
+fresh
+moldy
+putrid
+rancid
+spoiled
+stale

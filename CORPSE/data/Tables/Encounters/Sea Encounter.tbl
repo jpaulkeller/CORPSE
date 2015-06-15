@@ -121,21 +121,26 @@ Gnomes testing submarine
 Storm giant demanding toll/tribute
 Merfolk hunters
 Lost foreign ship
-Combat: {d4+1} plesiosarus
-Combat: water elemental 
-Combat: {10} seaweed elementals (vine blights)
-Combat: {6} cockatrices
-Combat: {12} bullywugs 
+Combat: 1d6+2 Quippers
+Combat: 2 Giant Sea Horses
+Combat: Constrictor Snake
+Combat: Giant Octopus
+Combat: Reef Shark
 Combat: drowned spectre (ghost)
-Combat: {8} goblins and {2} goblin bosses
-Combat: {6} harpies
-Combat: {8} kuo-toa and {4} kuo-toa whips 
-Combat: {10} mephits
-Combat: {4} merrow
-Combat: {6} sea ogres
-Combat: {8} sahuagin 
 Combat: ghost ship ({10} skeletons and {10} zombies)
+Combat: pirates ({10} thugs and {10} bandits)
+Combat: water elemental 
+Combat: {10} mephits
+Combat: {10} seaweed elementals (vine blights)
+Combat: {12} bullywugs 
+Combat: {3} Merfolk
+Combat: {4} merrow
+Combat: {6} cockatrices
 Combat: {6} giant frogs
 Combat: {6} giant octopuses 
-Combat: pirates ({10} thugs and {10} bandits)
-
+Combat: {6} harpies
+Combat: {6} sea ogres
+Combat: {8} goblins and {2} goblin bosses
+Combat: {8} kuo-toa and {4} kuo-toa whips 
+Combat: {8} sahuagin 
+Combat: {d4+1} plesiosarus

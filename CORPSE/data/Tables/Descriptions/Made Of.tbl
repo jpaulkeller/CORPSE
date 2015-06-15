@@ -1,0 +1,59 @@
+/ Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
+/          Values from DRAGON Magazine #83, page 10.
+
+: Made Of
+{man made}
+{wood} wood
+
+: Natural = Geology + Wood
+
+: Hard
+{gem}
+{man made}
+{metal}
+{mineral}
+{organic:construction}
+{wood} wood
+
+: Geology
+{gem}
+{metal}
+{mineral}
+{organic}
+
+: Wood
+{wood} wood
+
+: Man Made
+{man made}
+
+: Fabric
+{fabric}
+
+: Precious
+{metal:precious}
+amber
+bone
+coral
+crystal
+ivory
+jade
+jasper
+turquoise
+shell
+
+: Bow
+ash
+bamboo
+black locust
+black walnut
+bone
+cedar
+hickory
+horn
+ipe
+juniper
+osage
+poplar
+red oak
+yew

@@ -1,0 +1,142 @@
+/ Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
+/          Values from DRAGON Magazine #83, page 10.
+
+.Wood              Lbs/CFt    Notes
+
+: Wood
+acacia
+alder               50        A tree which grows in moist land whose bark is used in dyeing and tanning. The wood is used for bridges and piles because it is resistant to underwater rot.
+ash                 45-48     Tough elastic wood with a straight, close grain.
+aspen
+aster
+balsa                8        A very light, strong wood, used for raft construction.
+bamboo              22
+banyan
+basswood                      A light soft durable wood.
+beech               46        A large-sized tree that produces hard woods. The smooth bark of a beech tree was used for writing upon.
+birch                         A hard, smooth-grained wood whose bark strips off in layers. Birch wood is most valued in furniture construction.
+black ash
+black locust
+black walnut                  A large hardwood, whose wood is highly prized and used for furniture, gun-stocks and veneer.
+blackthorn
+bloodwood
+brazilwood                    A reddish wood that is capable of yielding a red dye.
+camphor             62        volatile, pungent
+cedar               34        Used for the durability of the wood. Associated with a fragrant building material as well.
+cherry
+chestnut
+cocobolo                      A hardwood tree that is used in cabinet work and tool making.
+cork                15
+cottonwood        
+cypress
+dogwood
+ebony               75-83     
+elder
+elm                 44        Tall, hardy shade trees whose wood makes a hard, heavy wood. The wood is fine-grained and valuable for its resistance to splitting.
+english oak
+fir
+hawthorn
+hazel
+hemlock
+hickory             52.4      A tough wood used for construction of houses, fences and the like.
+holly
+hornbeam
+ipe                           Brazilian walnut
+iron-wood
+juniper
+kingwood                      A Brazilian wood used much in cabinet work because of its streaks of violet tints.
+larch
+laurel
+lebethron
+lignum vitae        76
+live oak            70
+locust
+logwood             57.4
+mahogany            41-57     A hardwood that is commonly used in furniture, it varies in color from reddish-brown to yellow.
+maple                         A hard, close-grained wood used for furniture making and flooring. Colors range from reddish to yellow.
+mistletoe
+mulberry            56
+oak                 45-55     The wood is hard, tough, relatively flexible, resistant to water and not too heavy. It bares weather changes far more than most other woods. It is valued in all manner of construction from flooring, furniture, millwork, cross ties, mine timbers, fenceposts, houses and ships. The bark is used in tannin.
+olive
+osage
+palm
+pine                26-43
+poplar              46        These trees are tall and fast growing with soft wood. A hybrid poplar tree which produces a superior type of timber.
+red oak
+redwood
+rosewood                      A hard, reddish-black streaked wood with a rose-like odor. Used for making furniture.
+rowan
+royal oak
+sassafras           30.1
+silver lime
+spruce
+sweetgum
+sycamore            28        A tree common in the middle east, growing large and to a great height. It is used in almost all facets of building construction.
+teak                55        A large tree with a yellowish-brown wood highly prized in ship building.
+vine
+walnut
+willow              30
+yellow boxwood                A yellowish, fine, close-grained wood used in engraving, instrument making and in fine woodwork.
+yew                 49.8
+{:fruit} wood
+
+: Fruit
+apple               48
+cherry              45        A hard, durable wood that is most commonly used in the construction of furniture, handles, toys, etc.
+citrus     
+coconut     
+date     
+lime                          A light soft durable wood.
+pear                41.4
+plum                49
+quince              44
+
+: Weapon
+alder
+ash
+aspen
+bamboo
+beech
+birch
+black ash
+black locust
+black walnut
+blackthorn
+bloodwood
+cedar
+ebony
+elder
+elm
+english oak
+fir
+hawthorn
+hazel
+hickory
+hornbeam
+iron-wood
+juniper
+lebethron
+live oak
+locust
+maple
+oak
+red oak
+redwood
+rosewood
+rowan
+royal oak
+teak
+walnut
+willow
+yew
+
+: Nut
+almond
+beech
+cashew
+chestnut
+hazel
+hickory
+oak
+pecan
+walnut

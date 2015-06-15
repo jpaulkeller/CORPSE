@@ -1,15 +1,14 @@
 Calming - the character is resistant to fear for that {2d6} hours.
 Deadens pain - the character is resistant to pain for {2d6} hours.
 Gives a strange clarity for {6} hours. The character will be less intelligent in general; but, strangely, will be more likely to notice when others are lying or concealing their true emotions.
-Highly poisonous - may kill someone who eats them, or make them sick ({symptom})
+{degree:severity}ly toxic - ({symptom})
 Improves natural healing. For the next two days the character will tend to get over illness and wounds more quickly.
 Improves perception of magical effects. The character is resistant to magical illusions for {2d6} hours.
 Improves sight and hearing (or at least the ability to focus on them). As such they are less likely to wander into ambush, be unaware of someone sneaking up on them etc.
 Increases vigour - the character is slightly stronger, more agile, can run faster and longer and so on for {6} hours. However they are likely to be sluggish and lethargic until they next sleep.
 Lowers blood flow - the character needs less food and water, and poison will have a lesser effect, for {2d6} hours. The character will however be sluggish and lethargic during that time.
 Lowers fatigue. The character can stay awake for up to 24 hours from when they last woke without suffering any ill effects. However after 18 hours they will have trouble concentrating, and after the 24 hours are up they are likely to fall asleep for 12 hours.
-Mildly poisonous - likely to make the person who eats them sick ({symptom})
-Mildly poisonous if not cooked. If cooked, it is nutritious - but if left too long, it will be {of no nutritional value|mildly poisonous|mildly or highly poisonous, depending on how long}
+{degree:severity}ly toxic if not cooked. If cooked, it is nutritious - but if left too long, it will be {of no nutritional value|mildly poisonous|mildly or highly poisonous, depending on how long}
 Neither nutritious nor poisonous
 Nutritious - and will keep its value for a long time after being picked
 Nutritious - may be eaten immediately, but if eaten too long after it's picked it will be {of no nutritional value|mildly poisonous|mildly or highly poisonous, depending on how long}

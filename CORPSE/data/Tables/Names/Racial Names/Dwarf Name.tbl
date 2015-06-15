@@ -24,12 +24,73 @@
 {Dutch Name:Male First}
 {Turkish Name:Male First}
 {Welsh Name: Male First}
+{:Other Male First}
+
+: Other Male First
+Agaro
+Arnan
+Auxlan
+Avamir
+Baelnar
+Balfam
+Bariken
+Borkûl
+Darkûl
+Dolmen
+Dyrnar
+Erag
+Ezegan
+Ferrek
+Garmûl
+Glint
+Ghorvas
+Grimmalk
+Haeltar
+Halagmar
+Halzar
+Hlant
+Korlag
+Krag
+Krim
+Kurman
+Lurtrum
+Malagar
+Mardam
+Maulnar
+Melgar
+Morak
+Orobok
+Rogath
+Roken
+Rozag
+Sabakzar
+Sharak
+Smethykk
+Swargar
+Thorbalt
+Thorin
+Tredigar
+Vabûl
+Vistrum
+Wolvar
 
 : Syllabic Name Male
 {:Prefix Male}{:suffix male}{20%{:suffix male}}
 
 : Prefix Male
 {Anglo-Saxon Name:Male}
+D{20%{r|w}}
+F{20%{l|r}}
+G{20%{l|r|w}}
+H{20%r}
+K{20%{l|r|w}}
+L
+M{20%r}
+N{20%r}
+R
+T{40%h}{20%r}
+W{20%r}
+{A|E|O|I|U}{l|r}
 / {:Arabesque Name.Pre}
 / {:Fantasy Name.Root I}
 / {:Fantasy Name.MalePrefix}
@@ -37,6 +98,14 @@
 
 : Suffix Male
 {Anglo-Saxon Name:Male}
+a{l|r}in
+i{l|r}i
+im
+im{l|r}i
+oin
+o{l|r|s}i
+o{l|r}in
+o{l|r}mur
 / {:Arabesque Name.Suf}
 / {:Fantasy Name.Root II}
 / {:Fantasy Name.Root III}
@@ -61,6 +130,25 @@
 / {:NorthlanderMale.NorthlanderMaleSurname}
 / {:ScottishMale.ScottishClan}
 {Welsh Name:Surname}
+{:Other Surname}
+
+: Other Surname
+Ambershard
+Barrelhelm
+Copperhearth
+Deepmiddens
+Drakantal
+Evermead
+Garkalan
+Grimtor
+Hackshield
+Irongull
+Markolak
+Ramcrown
+Rockharvest
+Silvertarn
+Skandalor
+Zarkanan
 
 : Paternal Surname
 / {:NorthlanderMale.NorthlanderMaleSurname}
@@ -92,6 +180,24 @@ Son of {:Male First}{10% Son of {:Male First}}
 {Dutch Name:Female First}
 {Turkish Name:Female First}
 {Welsh Name:Female First}
+{:Other Female First}
+
+: Other Female First
+Beyla
+Fenryl
+Grenenzel
+Krystolari
+Lokara
+Lurka
+Marnia
+Praxana
+Rokel
+Roksana
+Thurlfara
+Vauldra
+Veklani
+Vronwe
+Zebel
 
 : Syllabic Name Female
 {:First Syllable Female}{:Last Syllable Female}{20%{:Last Syllable Female}}

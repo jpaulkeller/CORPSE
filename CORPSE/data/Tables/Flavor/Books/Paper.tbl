@@ -109,7 +109,7 @@ the Sheriff
 the Steward
 the Watch Captain
 {Military Rank} {Name}
-{Feudal:Noble Rank} {Name}
+{Feudal Rank:Noble} {Name}
 {Religious Rank} {Name}
 
 : grant

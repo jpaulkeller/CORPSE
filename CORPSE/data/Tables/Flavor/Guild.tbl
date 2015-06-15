@@ -1,4 +1,4 @@
-: Guild = general + arcanist + artist + entertainer + craftsman + criminal + merchant + scholar + service
+: Guild = general + arcane + artist + craftsman + criminal + merchant + scholar + service
 
 : General
 arcanist

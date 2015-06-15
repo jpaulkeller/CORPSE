@@ -1,5 +1,7 @@
 / Sources: D&D Rules Cylcopedia, page 271
 
+: Site = Artificial + Natural
+
 : Artificial
 barrow{50%s}
 battlefield
@@ -27,6 +29,7 @@ drainage tunnel
 dungeon
 ferry
 ford
+fork
 hamlet
 hunter's blind
 hunter's tree-stand
@@ -73,6 +76,7 @@ bend
 bluff
 bog
 butte
+brook
 canyon
 cape
 cascades
@@ -100,8 +104,10 @@ falls
 fen
 firth
 fjord
-giant solitary {wood} tree
+ford
+gap
 glade
+glen
 gorge
 grotto
 grove of {wood} trees 
@@ -112,6 +118,7 @@ heath
 heights
 highland{50%s}
 hill
+hollow
 hollow tree
 hot spring
 inlet
@@ -122,6 +129,7 @@ lake
 landslide
 marsh
 meadow
+mere
 mire
 mound
 mountain
@@ -134,12 +142,11 @@ pass
 peak
 peninsula
 perch
-pillar{50%s}
 pinnacle
 plateau
 point
+pond
 pool
-promontory
 promontory
 quay
 quicksand
@@ -156,12 +163,14 @@ shallows
 shoal
 shore
 sinkhole
+solitary {wood} tree
 sound
 spire
 spring
 steppe
 strait
 strand
+stream
 summit
 swamp
 thicket
@@ -173,9 +182,9 @@ waterfall
 wellspring
 {fauna} tracks 
 {fauna} trail
-{fauna} {den|lair|nest} 
+{fauna} {home} 
 
-: Adj
+: adj
 ancient
 archaic
 daunting
@@ -195,7 +204,7 @@ strong
 sturdy
 venerable
 
-: Condition
+: condition
 collapsed
 decrepit
 demolished
@@ -216,7 +225,7 @@ vermin-infested
 {poorly|well}-constructed
 {poorly|well}-maintained
 
-: Abandoned
+: abandoned
 abandoned after a {disaster}
 believed to be haunted
 burned to the ground

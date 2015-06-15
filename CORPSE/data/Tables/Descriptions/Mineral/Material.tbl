@@ -1,0 +1,130 @@
+/ http://eberronunlimited.wikidot.com/mundane-materials
+
+/ Lbs/CFt - Weight in pounds per cubic foot (unless otherwise noted, such as for ingots)
+
+/ Tensile Strength (per square inch).  The number of pounds of pressure required to break metal.
+
+/ Melting Point (temperature in degrees Fahrenheit)
+/ Note: The heat of a common fire is 790 degrees F. 
+/ The heat of an alcohol fire is 1700 degrees F. 
+/ The heat of a coal gas fire augmented by a blowpipe is 2200 degrees F. 
+/ The heat of an oxygen-hydrogen gas fire augmented by a blowpipe is 2400 degrees F.
+
+/ Resistance to Crushing - material is crushed by the number of tons indicated.
+
+/ Ingot - Weight in pounds for 6x3x2 ingot       
+
+.Material              Lbs/CFt      Tensile Strength    Melting Point   Tons to Crush    Ingot   Notes
+
+alabaster               170
+aluminum                161                                   1220f                              A silvery metal, remarkable for its light weight and malleability and resistance to oxidation. it is found abundantly in clay.
+amber                    67
+antimony                414                                   1166f                              A silvery white brittle metal used in alloys with other metals to harden them and increase their resistance to chemical action.
+ash wood                                                                     4.3
+beech wood, seasoned                                                         9.5
+beeswax                  60
+birch wood, seasoned                                                         5.8
+bismuth                 613                                    176f                              A greyish-white, red tinted, brittle metal that is often found in a crystalized state in other metals, particularly cobalt. chiefly used in making alloys of low melting points.
+bone                    115
+borax                   107
+brass                   520-525         42,000                1900f          5.1                 A yellowish metal that is an alloy of copper and zinc. known for its hardness and durability.
+brick                   120-125                                              0.4
+brick, fire                                                                  0.9
+brickwork                                                                    0.3
+bronze                  520-545                               1922f                              A moderately hard metal because of the combined metals used. an alloy of 50% copper and 50% tin for increased hardness. tarnishing is common, with verdigris apparent when oxidation of the metal occurs. value c. 70% pure copper when used in equal proportions. bronze had a copper-brown, or sometimes golden-brown hue when more copper is used (c.60%).
+butter                   53
+cedar wood                                                                   2.9
+chalk                   174
+charcoal                 35
+charcoal, wood           18
+chromium                406
+clay                    135-160
+coal, hard (anthracite)  54
+coal, soft (bituminous)  50
+copper wire             555            61,200                 2160f             
+copper, cast            555            19,000                 2160f                       11.56   
+copper, wrought         555            34,000                 2160f                              A moderately soft metal that is the least valuable of the group. it is worth around 9% to 12% its weight in silver. copper tarnishes (corrodes) when exposed to air, but polishing restores its shine.
+coral                   169
+cork                     15
+diamond                 220
+elder wood                                                                   4.9
+electrum                                                                                         A fairly hard alloy when compared to gold. an alloy of 24 carat gold and .999 fine silver, usually in equal proportions. it has a value of about 55% pure gold when alloyed in equal proportions. it tarnishes somewhat because of the silver content of the alloy. electrum looks much like pale white gold.
+elm wood, seasoned                                                           5.1
+emery                   250
+fir wood, spruce                                                             3.4
+flint                   162
+glass                   180
+gold                   1203            20,000                 1983f                       24.37  The softest of precious metals. it does not tarnish. usually in an alloy with other metals to increase its hardness. there are three general sorts of gold used in jewelry:
+granite                                                                      5.5
+gum arabic               85
+hematite                316
+iron                                                                                             A white metal that is malleable and ductile. it is the most common and useful of all the metals.
+iron wire                             103,000                 2795f             
+iron, bar                              72,000                 2795f             
+iron, cast              454            27,000                 2795f         49.0                 A hard, rigid and strong, non-malleable iron/carbon alloy made by casting.
+iron, magnetic (lodestone)                                                                       A strong magnetic variety of the mineral magnetite.
+iron, meteoric                                                                                   Iron usually alloyed with nickel and cobalt; found in meteorites.
+iron, plate                                                   2795f         16.0
+iron, rolled            487
+iron, wrought           485                                                                      Iron, wrought: a soft, ductile, malleable iron containing some slag and some carbon. it cannot be tempered or easily fused.
+ivory                   115
+jadeite                 209
+jet                      84
+lapis lazuli            169
+latten                                                                                           Brass or a brass-like alloy hammered into thin sheets.
+lead                    709               880                  594f                              A heavy, soft malleable bluish-gray metal used in piping an in numerous alloys.
+leather                  54
+lime, quick              50
+magnesium               109                                   1202f                              A light silver white metal, that is malleable and ductile used in making several alloys.
+mahogany wood                                                                4.0
+malachite               241
+mercury                 848                                    -38f                              A heavy silver, white metal liquid at ordinary temperatures, quick silver.
+nephrite                188
+nickel                  556                                   2647f                              A moderately hard metal that is the next to the least valuable of the pure ores of the group. it is worth around 20% its weight in .999 fine silver. nickel tarnishes only slowly and to little extent, and polishing restores its shine. it has a soft silver-gray luster.
+nickel silver                                                                                    A nickel and copper allow; moderately hard metal because of the combined metals used. an alloy of 50% copper and 50% nickel for increased hardness and little tarnishing. value ~17% fine silver.
+nickel steel                                                                                     A steel alloy made harder than ordinary steel by adding small amounts of nickel.
+oak wood                                                                     2.9
+oak wood, seasoned                                                           3.7
+obsidian                156
+olive oil                59
+onyx marble             169
+paper                    50
+paraffin                 55
+pewter                                                                                            A alloy of tin with lead, brass or copper that takes on a grayish luster when polished.
+phosphorus              128
+pine wood, pitch                                                             3.3
+pine wood, yellow                                                            2.7
+pitch                    67
+platinum wire          1213            53,000                 3221f                       25.37   The hardest of precious metals. it is worth c. 125% to 250% its weight in gold, even more if the smelting process employed in the fantasy milieu demands magical heat. it does not tarnish. it is a silvery metal with a soft and lustrous sheen. platinum is very seldom alloyed with other metals.
+porcelain
+quartz                  166
+red gold                                                                                          (18 carat) 75% gold, 20% copper, 5% silver; value ~76% pure gold.
+rubber                   70
+sand, dry                95
+silver                  654            40,000                 1763f                       13.62   A moderately soft metal worth about 1/60 to 1/100th its weight in gold. silver tarnishes from exposure to air and other substances.
+soil, common            124
+steel                   490           120,000                 2800f                               A hard metal composed of iron alloy with carbon added. steel made be alloyed with other metals to make specific properties such as resistance to rust.
+stone, ashlar block                                                          5.3
+stone, granite          165
+stone, limestone        165
+stone, marble           171
+stone, paving           150
+stone, sandstone        130
+stone, slate            167
+sugar                    99
+sulfur                  129
+sycamore wood, seasoned                                                      6.0
+tallow                   59
+tin                     456             5,000                  421f                               A soft silver white metallic element, malleable at room temperatures. capable of a high polish and used as an alloy.
+tin-bismuth alloy                                              283f              
+titanium                                                      3020f                               A dark gray lustrous metal found in rutile and other minerals, used as cleaning agent in molten steel.
+tungsten               1194
+turquoise               169
+walnut wood                                                                  3.6
+water, fresh             62.5
+water, salt              64.3
+wax                     112
+white gold                                                                                        (18 carat): 75% gold, 25% silver. value c. 78% pure gold.
+white lead              198
+yellow gold                                                                                       (18 carat): 75% gold, 15% silver, 10% copper. value c. 77% pure gold.
+zinc                    439             3,500                  787f                               Bluish white in color it is used as a protective coating for iron and as a constituent for various alloys.

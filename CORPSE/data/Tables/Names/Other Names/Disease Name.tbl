@@ -1,0 +1,54 @@
+: Disease Name
+10x {:PREFIX} {:suffix}
+{DISEASE}
+
+: prefix
+shadow
+{color:simple}
+{evocative adj:negative}
+{fauna{!oneword}}
+{flora{!oneword}}
+{fungus}
+{fungus:pattern}
+{fungus:pre}
+{liquid feature}
+{monster{!oneword}}
+{mythical creature}
+{noise}
+{organ}
+{NAME}'s
+{shape}
+{taste:adj bad}
+{temperature}
+{texture}
+{undead}
+{viscosity}
+
+: suffix
+ache
+chills
+death
+eyes
+fever
+fire
+flu
+flux
+ooze
+parasite
+plague
+pox
+rot
+rust
+scale
+shakes
+sickness
+strain
+suffering
+weakening
+{smell:synonym foul}
+
+: Infection
+contact
+ingested
+inhaled
+injury

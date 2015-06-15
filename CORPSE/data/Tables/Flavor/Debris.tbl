@@ -122,7 +122,7 @@ a partially melted and deformed
 half a
 
 : coin
-{currency:coin}
+{currency.coin}
 {coin}
 
 : broken weapon

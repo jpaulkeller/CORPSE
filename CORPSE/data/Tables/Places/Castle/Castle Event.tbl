@@ -1,0 +1,33 @@
+/ http://savevsdragon.blogspot.ca/2015/05/d30-feature-of-week-d30-castle.html
+
+.Castle Event            Aware %
+attack, dragon                 3
+attack, humanoid tribe        15
+attack, monster                3
+attack, rival                 67
+bandit raid                    6
+battle, kingdom-wide         100
+birth, animal                100
+birth, family                100
+birth, staff                 100
+birthday                     100
+death, family                 33
+death, staff                  33
+extraplanar event              0
+funeral                      100
+geological event               0
+holy day                     100
+proclamation, higher title    33
+proclamation, loss of title  100 
+return of deserter            10
+return of hero                67
+secret ceremony              100
+serf uprising                 60
+tournament                   100
+traveling merchant            20
+visit, adventurers             6
+visit, dignitary(s)           50
+visit, relative(s)            50
+visit, religious figure(s)    50
+weather event                  6
+wedding                      100

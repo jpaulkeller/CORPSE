@@ -281,9 +281,7 @@ Wilderness Lore
 {Place Name} {Biome}
 {Place Name} {Terrain}
 {Region}
-/ {:Fantasy Town Names.main}
-/ {:Fantasy Landmarks.main}
-/ {:Fantasy Town Feature.main}
+{Town Name}
 / {:Poetic Destinations.main}
 
 : General Book
@@ -295,7 +293,7 @@ A Collector’s Guide to Dwarven Coins
 A Tale of Madness and Despair
 A {Field|Pictorial} Guide to the {{Fauna}|{Flora}|{Humanoid}} of the {:Place}{10% {:SUFFIX}}
 A {Race} in Shackles: Overcoming the Curse
-An Argument {for|against} {{Evocative Noun:Positive}|{Evocative Noun:Negative}}
+An Argument {for|against} {{Evocative Noun|Evocative Concept:Positive|Evocative Concept:Negative}}
 Anatomical Papers on Beasts of the Wilds
 Anatomy of the {Fauna}{10% {:SUFFIX}}
 Atlas of the {:Place}{10% {:SUFFIX}}
