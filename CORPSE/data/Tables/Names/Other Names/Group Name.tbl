@@ -3,11 +3,11 @@
 : Group Name
 The {{Fauna}+} of {Place Name}
 The {{Weapon{!OneWord}}+} of {Place Name}
-The {Color:Basic} {{Weapon{!OneWord}}+}
+The {Color:Common} {{Weapon{!OneWord}}+}
 The {:Group} of the {20%{Gem}} {Weapon{!OneWord}}
-The {:Group} of the {20%{{Gem|Metal:Special|Color:Basic|Adjective}}} {{Weapon{!OneWord}|Fauna|Tiny Item}}
+The {:Group} of the {20%{{Gem|Metal:Special|Color:Common|Adjective}}} {{Weapon{!OneWord}|Fauna|Tiny Item}}
 The {:Group} of the {~{Tiny Item{!OneWord}}}{20% and {~{Tiny Item{!OneWord}}}}
-The {{Color:Basic|Gem}} {:Group}
+The {{Color:Simple|Gem}} {:Group}
 {Name}'s {{Mythical Creature{!SameFirst}}+}
 {Name}'s {{Fauna{!MaybeSameFirst}}+}
 {Name}'s {{~{Tiny Item{!MaybeSameFirst}}}+}

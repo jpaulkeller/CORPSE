@@ -7,13 +7,13 @@
 {Adjective{!OneWord}} {Profession#{#{!}:.}[^-_ ]+#} {80%{Inn Type}}
 {Adjective{!OneWord}} {Profession{!OneWithSame}} {80%{Inn Type}}
 {Charge{!OneWord}} and {Charge{!OneWord}}
-{Color:Basic{!OneWord}} and {Color:Basic{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Basic{!OneWord}} {Charge{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Basic{!OneWord}} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Basic{!OneWord}} {Flora{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Basic{!OneWord}} {Made Of{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Basic{!OneWord}} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Basic{!OneWord}} {Transport{!OneWord}} {80%{Inn Type}}
+{Color:Common{!OneWord}} and {Color:Common{!OneMaybeSame}} {80%{Inn Type}}
+{Color:Common{!OneWord}} {Charge{!OneMaybeSame}} {80%{Inn Type}}
+{Color:Common{!OneWord}} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
+{Color:Common{!OneWord}} {Flora{!OneMaybeSame}} {80%{Inn Type}}
+{Color:Common{!OneWord}} {Made Of{!OneMaybeSame}} {80%{Inn Type}}
+{Color:Common{!OneWord}} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
+{Color:Common{!OneWord}} {Transport{!OneWord}} {80%{Inn Type}}
 {Condition:Wood Weapon} {Flotsam:Simple{!OneMaybeSame}} {80%{Inn Type}}
 {Container{!OneWord}} of {Contents.Item{!OneWord}} {80%{Inn Type}}
 {Disposition} {Humanoid{!OneMaybeSame}} {80%{Inn Type}}

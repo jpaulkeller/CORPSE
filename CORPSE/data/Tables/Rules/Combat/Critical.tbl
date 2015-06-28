@@ -1,7 +1,9 @@
 / http://random-generator.com/index.php?title=Critical_Hit
+/ http://www.rpgalchemy.com/hard-moves-gm-intrusions-1/
 
 / In a d20 system, attacks are rolled on a 20-sided die, so rolling a 20 is considered a "critical success".
-/ In some games, instead of critical hits dealing more damage, they can instead do special effects. 
+/ In some games, instead of critical hits dealing more damage, they can instead do special effects.
+/ Also includes are critical failures, or "fumbles" (see also Hard Moves, DM Intrusions).
 
 : Critical
 general: {:general}
@@ -213,9 +215,71 @@ unable to use the same attack for 1 round
 : melee fail
 provoke an attack of opportunity from all adjacent opponents
 your weapon flies {2d6} yards to the {compass}
+{:melee strong opponent}
+{:melee agile opponent}
+{:melee agile beast}
+{:melee unarmed}
 {:general fail}
 
+: melee strong opponent
+Your attack is deflected with so much force that you lose your grip and your weapon flies across the room.
+Your shield is grabbed and wrenched out of your hands. Your opponent smashes your head with it!
+Your opponent slams you sending you flying off your feet and smashing into an ally.
+Your opponent picks you up and throws you into a nearby hazard.
+Your weapon gets caught in your opponent’s armor and is torn from your grasp.
+Your opponent grabs a nearby piece of furniture and throws it at you.
+A massive blow hits your shield so hard that your forearm bone breaks rendering the arm useless.
+You’re hit with enough force to leave you dazed and disoriented for a few moments.
+A huge object is toppled over pinning you beneath it.
+Your kicked so hard in the chest that the wind is knocked out of your lungs.
+
+: melee agile opponent
+Your opponent easily sidesteps your attack sending you stumbling to the ground.
+A few quick slashes cuts the straps of your pack spilling your equipment out onto the floor.
+Your opponent deflects an attack from one of your allies hitting you instead.
+Your opponent dodges your attack and maneuvers behind you grabbing your cloak and wrapping it around your head.
+Your opponent’s agile maneuvers leaves you in a precarious location.
+A quick succession of strikes, dodges, and parries results in your weapon being in your opponent’s hands.
+Your belt is cut sending your trousers to the floor.
+Your opponent’s footwork causes you to stumble into a nearby hazard.
+Your momentum is used against you, you overextend and strike one of your allies.
+During the fight your opponent manages to remove an important item from you.
+
+: melee beast
+The beast grabs you in its jaws, shakes you and flings you aside like a rag doll.
+You’re trampled to the ground and pinned by one of the beast’s giant feet.
+The beast slams you with its head sending you into one of your allies.
+The beast flips you into the air with its head landing you atop its back.
+A powerful sweep of the beast’s tail knocks you from your feet sending you to the ground.
+The beast rips your shield from your arm and destroys it with its powerful jaws.
+Your weapon gets lodged in the beast’s hide and is torn from your grasp.
+The beast grabs you in its jaws and charges off with you.
+Your ally’s ranged attack ricochets off its hide striking you.
+The beast is slain but its massive corpse topples onto you pinning you to the ground.
+
+: unarmed
+Your punch strikes the enemy in a heavily armored area breaking your knuckles.
+Your opponent grabs your ankle when you kick and holds on tight.
+Your opponent deftly slips out of your hold and puts you in a headlock.
+You underestimate your opponent’s agility and are tripped and rendered prone.
+Your strike is true but you injure yourself in the attack.
+Your maneuver throws both you and your opponent off-balance.
+Your grappled opponent manages to bite one of your fingers off.
+Your opponent’s head-butt attack shatters your nose and stuns you for a moment.
+You fail to time your flying kick correctly and end up leaping into a nearby hazard.
+You crush your opponent’s nose but the spray of blood blinds you for a moment.
+
 : ranged fail
+Your shot misses its target and strikes something valuable and breakable.
+You misstep and stumble spilling all of your ammo onto the ground.
+A stealthy enemy sneaks up on you while focused on aiming at your target.
+Using your weapon aggravates a previous injury doing additional damage.
+Your maneuvering to get a good shot puts you in a very precarious position.
+Your volley of shots draws the attention of enemy marksmen.
+Your attention on your target allows an enemy marksman to attack you.
+Your shot knocks over a lamp or lantern and sets a fire near you enemies.
+Your weapon malfunctions in some way forcing you to take a few moments to repair it.
+Your shot is deflected and strikes one of your allies.
 {:general fail}
 
 : magical fail

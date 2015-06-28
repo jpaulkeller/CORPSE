@@ -9,8 +9,8 @@
 {Adjective} {Feudal Rank:Noble}
 {Appearance} {Fauna{!MaybeSameFirst}}
 {Appearance} {Feudal Rank:Noble}
-{Color:Basic} {Fauna{!MaybeSameFirst}}
-{Color:Basic} {Weapon{!OneWord}}
+{Color:Common} {Fauna{!MaybeSameFirst}}
+{Color:Common} {Weapon{!OneWord}}
 {Evocative Adj} {Religious Rank}
 {Noise} {:Nautical Noun}
 {Trait:Good} {Feudal Rank:Noble}

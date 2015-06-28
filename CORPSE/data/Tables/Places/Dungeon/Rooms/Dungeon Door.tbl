@@ -2,13 +2,15 @@
 
 : Dungeon Door
 8x {:type}; {:state}; made of {:material}{10%; covered by {:covered by}}{10%; {:special}} 
-1x doorway covered by hanging {leather|fur|cloth|strings of {beads|bells|{tiny item}}}
+1x doorway covered by hanging {:covered by}
 1x doorway blocked by {:blocked by}
+1x false door
 
 : Type
 8x normal door
 1x portcullis
 1x sliding "pocket" door
+1x doorway
 
 : Material
 7x {10%{reinforced|rotting|scorched} }{wood}
@@ -17,21 +19,38 @@
 
 : State
 6x {10%{stuck|spiked} }closed{10%, {concealed|secret}}{50%, {:locked}}
-3x closed{10%, {concealed|secret}}{50%, {:locked}}{20%, trapped ({:trap})}
+3x closed{10%, {concealed|secret}}{50%, {:locked}}{20%, trapped ({:trap type})}
 1x {10%{stuck|spiked} }open
 
 : Locked
 magically locked
 mechanically locked{50% (with a {:lock quality} lock)}
+protected with an ordinary lock (the inhabitants didn't think anyone would ever come down here)
+protected with an ordinary lock (the inhabitants are too primitive to do any better)
+protected with an ordinary lock (to the inhabitants, this is an ordinary place with nothing terribly valuable in it)
+protected with an ordinary lock (the real heavy locks are later down the line)
+protected with a serious lock (the inhabitants are protecting something of value)
+protected with a serious lock (the inhabitants are xenophobes and this place is forbidden to outsiders)
+protected with a serious lock (the inhabitants are sophisticated and this is just normal for them)
+protected with a serious lock (the inhabitant includes a wizard)
+protected with a serious lock (this room contains something of special value)
+protected with a magical lock (because a recent emergency in the dungeon has caused an inhabitant to go around and magically lock as many doors as possible)
+protected with a puzzle lock (the architects designed this place only to admit certain types of individuals)
+protected with a puzzle lock (one inhabitant is crazy)
+protected with a puzzle lock (it wasn't designed as a puzzle lock but the original mechanism has sort of fallen apart over the years and now is tricky to deal with)
 
 : Covered By
-bone
+bones
 book covers
+cloth
 dragon scales
+fur
 leather
 poisonous vines
 recycled shields
+strings of {beads|bells|{tiny item}}
 {crustacean|tortoise} shells
+{fabric}
 {fur and pelt.animal} pelts
 {reptile} hide
 
@@ -56,7 +75,21 @@ portiere
 purdah
 valence
 
-: Trap
+: Trap Purpose
+primitive/simple (intruders are looking for something in here and rigged it up because they don't want to be disturbed)
+primitive/simple (the inhabitant culture is primitive/simple)
+primitive/simple (the mechanism is old and no longer works as well as it used to)
+primitive but magical (intruders who have a magic-user with them are in here and don't want to be disturbed)
+primitive but magical (the inhabitant culture is primitive but has shaman/priests)
+primitive but magical (it was designed to keep out vermin or children, not tough guys like the PCs)
+sophisticated (mechanical) (the architect culture was sophisticated and was protecting something of value)
+sophisticated (mechanical) (the architect culture was of a species that would not need to use the door the way a human would)
+sophisticated (mechanical) (the inhabitants hide something of value behind the door)
+sophisticated and magical (the architect culture was protecting something of value)
+sophisticated and magical (an inhabitant is a crazy wizard)
+sophisticated and magical (the architecture is alive)
+
+: Trap Type
 / damage typically 1d6 per level of dungeon
 acid shower-head above
 flame shoots up from holes in front
@@ -70,6 +103,12 @@ spear trap
 crossbow trap
 bell rings, roll for wandering monster
 teleporter
+
+: Trap State
+{condition}
+in disrepair (20% chance of working)
+poorly made (33% chance of working)
+disabled (recently sprung)
 
 : Special
 a sign hangs from the door. it says [inscriptions.main]
@@ -112,6 +151,7 @@ warped and will not shut
 {wider|taller|shorter|narrower} than normal
 
 : lock quality
+broken
 wretched (+6/+30%)
 poor (+3/+15%)
 fair

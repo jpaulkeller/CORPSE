@@ -1,53 +1,139 @@
+/ http://random-generator.com/index.php?title=Generic_Dungeon_Key
+
 : Dungeon Feature
 alchemy laboratory
+amphitheater
+animal crypt
+antechamber
 arch
+armory
+audience hall 
+aviary
 balcony
+banquet hall
+barn
 barracks
+bathroom
 baths
+bedroom
+bestiary
+cage
 catacombs
 catwalk
 cave
 cavern
+cell
 chamber
 chasm
 church
+cistern room
+classroom
+closet
+confessional
+conjuring room
 cooking area
+courtroom
+crematorium
 crypt
 dais
+den
+dining room
+divination chamber
 door
+dressing room
+embalming chamber
+forge
 gallery
+game room
 garden
 garrison
 gate
+granary
+great hall
 grindstone
 grotto
+guardroom
+gymnasium
 hall
+hall 
 harem
+inscription chamber
+interrogation room
+kennel
+kitchen
+laboratory
 lagoon
+lair 
+larder
 ledge 
 library
 lounge
+lounge 
+map room
+mass grave
 mausoleum
 maze
+meditation chamber
+meeting chamber
+mess hall
+mine
 mines
 mining area
+monk cell
+morgue
 mural
 museum
+music room
+observatory
+office
+oubliette
+padded room 
+pantry 
 pit
+planning room
 platform
+pool
 prison
+reception chamber
 redoubt
+robing room
+salon
+sauna
+scriptorium
+servants dorm
 shrine
 sluice gate
 smithy
+smokehouse
+solar
+stable
 stair
+stairway
+stairwell
 statue
+statue hall
+storage 
+study
+summoning room
+tannery
 temple
+testing room
+throne room
 tomb
 torture chamber
+training room
+treasury
+trophy room
 vault
+vault  
+vestiary
+waiting room
 wall
+wardrobe
+weird alien birthing chamber
 well
+well room
+workshop
 {:water source}
 {:waterway}
 
