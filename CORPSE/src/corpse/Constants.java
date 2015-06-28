@@ -23,7 +23,6 @@ public final class Constants
    static final String INCLUDE_CHAR  = "+";
    static final String ONE_OF_CHAR_1 = "|";
    static final String ONE_OF_CHAR_2 = "/";
-   static final String ROLL_CHAR     = "@";
    static final String SUBSET_CHAR   = ":";
    static final String EOF           = "===";
    static final String WEIGHT        = "x ";

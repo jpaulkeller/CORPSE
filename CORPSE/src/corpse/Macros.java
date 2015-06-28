@@ -90,12 +90,12 @@ public final class Macros
 
    public static int getMin(final String token)
    {
-      return new Quantity(token).getMin();
+      return Quantity.getQuantity(token).getMin();
    }
 
    public static int getMax(final String token)
    {
-      return new Quantity(token).getMax();
+      return Quantity.getQuantity(token).getMax();
    }
 
    public static String resolveExpressions(final String token)
@@ -505,7 +505,8 @@ public final class Macros
          if (xrefFil == null && filter != null)
             xrefFil = filter;
 
-         System.out.println("Macros [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
+         if (DEBUG || TEST)
+            System.out.println("Macros [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
 
          // avoid infinite loop references
          if (TOKEN_STACK.contains(token))
@@ -681,8 +682,8 @@ public final class Macros
       Macros.resolve(null, "{Metal" + Constants.SUBSET_CHAR + "}", null);
       Macros.resolve(null, "Description: {Color}{20%?, with bits of {Reagent} floating in it}", null);
       Macros.resolve(null, "Filter: {Noise#S.+#}", null);
-      Macros.resolve(null, "Filter Variable: {Color:Basic{!OneWord}}", null);
-      Macros.resolve(null, "Filter: {Color:Basic#S.+#}", null);
+      Macros.resolve(null, "Filter Variable: {Color:Simple{!OneWord}}", null);
+      Macros.resolve(null, "Filter: {Color:Simple#S.+#}", null);
       Macros.resolve(null, "{Color} " + Constants.LAST_RESOLVED_TOKEN, null);
       Macros.resolve(null, "{#text:.}", null); // filtered token
       Macros.resolve(null, "{Color} {Fauna#{#{!}:.}.*#}", null); // back-reference with a filter
@@ -710,6 +711,7 @@ public final class Macros
       Macros.resolve(null, "{Appearance} {Herb{{!OneWithSame|!OneWord}}}", null);
       Macros.resolve(null, "{Appearance} {Humanoid{!OneMaybeSame}}", null);
       Macros.resolve(null, "{Humanoid#T[A-Z]+$#}", null);
+      Macros.resolve(null, "{Name}", null);
       Macros.resolve(null, "{Weapon}", null);
       Macros.resolve("Meat", "{Meat:Game#.*t.*#}", null);
       
@@ -718,6 +720,6 @@ public final class Macros
       System.out.println("aa: " + Macros.matchCase("aa", "Lower Case ALL words in the phrase"));
       */
       
-      Macros.resolve(null, "{Name}", null);
+      Macros.resolve(null, "{Weapon{!OneWord}}", null);
    }
 }

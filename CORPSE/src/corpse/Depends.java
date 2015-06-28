@@ -136,7 +136,7 @@ public final class Depends
    private static void checkToken(final String token)
    {
       Matcher m = Constants.TABLE_XREF.matcher(token);
-      if (m.matches()) // {Table:Subset.Column#Filter#}
+      if (m.matches()) // {Table:Subset.Column#Filter#} // TODO: ignore {D10}
       {
          String tbl = m.group(1).toUpperCase();
          if (!MISSING_TABLES.contains(tbl) && !Table.TABLES.containsKey(tbl))

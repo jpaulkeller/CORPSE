@@ -21,7 +21,7 @@ public final class Quantity
       String resolve();
    }
 
-   abstract static class NumericAdapter implements Numeric
+   static abstract class NumericAdapter implements Numeric
    {
       private String token;
       private String regex;
@@ -30,8 +30,8 @@ public final class Quantity
 
       public NumericAdapter(final String regex)
       {
-         this.regex = "^" + regex + "$";
-         this.pattern = CORPSE.safeCompile("Invalid numeric pattern", this.regex);
+         this.regex = regex;
+         this.pattern = CORPSE.safeCompile("Invalid numeric pattern", "^" + regex + "$");
       }
 
       @Override
@@ -261,21 +261,7 @@ public final class Quantity
          int sides = Integer.parseInt(m.group(2));
          for (int i = 0; i < count; i++)
             roll += RandomEntry.get(sides) + 1;
-
-         String operator = m.group(3);
-         if (operator != null)
-         {
-            int bonus = Integer.parseInt(m.group(4));
-            if (operator.equals("+"))
-               roll += bonus;
-            else if (operator.equals("-"))
-               roll -= bonus;
-            else if (operator.equals("*") || operator.equals("x"))
-               roll *= bonus;
-            else if (operator.equals("/"))
-               roll /= bonus;
-         }
-         return roll;
+         return calc(roll, m);
       }
 
       @Override
@@ -284,15 +270,7 @@ public final class Quantity
          Matcher m = getMatcher();
          int count = m.group(1) == null ? 1 : Integer.parseInt(m.group(1));
          int min = count;
-
-         String operator = m.group(3);
-         if (operator != null)
-         {
-            int bonus = Integer.parseInt(m.group(4));
-            min += operator.equals("+") ? bonus : -bonus;
-         }
-
-         return min;
+         return calc(min, m);
       }
 
       @Override
@@ -302,15 +280,25 @@ public final class Quantity
          int count = m.group(1) == null ? 1 : Integer.parseInt(m.group(1));
          int sides = Integer.parseInt(m.group(2));
          int max = count * sides;
-
-         String operator = m.group(3);
-         if (operator != null)
+         return calc(max, m); 
+      }
+      
+      private int calc(final int roll, final Matcher m)
+      {
+         final String operator= m.group(3);         
+         if (operator != null && m.groupCount() == 4)
          {
             int bonus = Integer.parseInt(m.group(4));
-            max += operator.equals("+") ? bonus : -bonus;
+            if (operator.equals("+"))
+               return roll + bonus;
+            else if (operator.equals("-"))
+               return roll - bonus;
+            else if (operator.equals("*") || operator.equals("x"))
+               return roll * bonus;
+            else if (operator.equals("/"))
+               return roll / bonus;
          }
-
-         return max;
+         return roll;
       }
    }
 
@@ -522,25 +510,26 @@ public final class Quantity
       {
          n.setToken(token);
          if (n.getMatcher().matches())
-            return new Quantity(token);
+            return new Quantity(n);
       }
       return null;
    }
 
    private Numeric numeric;
 
-   public Quantity(final String token)
+   private Quantity(final Numeric n)
    {
-      for (Numeric n : numerics)
+      try
       {
-         n.setToken(token);
-         if (n.getMatcher().matches())
-         {
-            numeric = n; // found a match
-            return;
-         }
+         numeric = n.getClass().newInstance();
+         numeric.setToken(n.getToken());
+         numeric.getMatcher().matches();
       }
-      throw new IllegalArgumentException("Invalid QUANTITY token: " + token);
+      catch (InstantiationException | IllegalAccessException x)
+      {
+         throw new IllegalArgumentException("Invalid QUANTITY token: " + n.getToken());
+      }
+      return;
    }
 
    /** Resolve the expression, and return it as an int. */
@@ -593,7 +582,7 @@ public final class Quantity
          total += get();
       int average = Math.round(total / 1000f);
       
-      return numeric.getToken() + " " + type + " (avg = " + average + ", max = " + getMax() + ")";
+      return numeric.getToken() + " " + type + " (min=" + getMin() + " avg=" + average + ", max=" + getMax() + ")";
    }
 
    public static void main(final String[] args)
@@ -617,11 +606,12 @@ public final class Quantity
 
       tokens.add("{3d6}"); // DICE
       tokens.add("{d12}"); // DICE
+      tokens.add("{d4x5}"); // DICE
       tokens.add("{2d4+3}"); // DICE
-
       tokens.add("{3t6}"); // OPEN
       tokens.add("{3/4d6}"); // BEST
       tokens.add("{5,10}"); // NORM
+      tokens.add("{5,10+10}"); // NORM OFFSET
       tokens.add("{#/100}"); // CHARGES
 
       for (String token : tokens)
