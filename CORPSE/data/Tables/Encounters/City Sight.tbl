@@ -5,6 +5,7 @@
 / source or inspiration: James Hutchings
 / source or inspiration: The Hobgoblin's Tavern
 / http://chaoticshiny.com/crowdgen.php
+/ http://random-generator.com/index.php?title=George_RR_Martinism
 
 : Unusual
 A {city encounter:group} are harvesting {thumbs|fingers|hands|tongues|hair}
@@ -16,135 +17,231 @@ Beggars ({2d6-1}){10% prepared to steal from those who refuse to give}.
 City Guards ({2d6}): They will often confront any suspicious characters. Whether the player characters count as 'suspicious' will depend on the area. {15%They conscript the heroes, and anyone else around, to help fight a fire.}
 
 : Weird
-A {city encounter:group name} of gray, old folk whose exhaled breath is smoke.
-A {fauna} paces loose.
-A pig squeals out hymns.
-A wondrous steam engine explodes killing crowded spectators.
-A yeti impaled howls pitifully.
-An alabaster bull on crystal wheels with a voice screaming from inside.
-An alchemist creates a greasy, pulsating lump in a beaker before succumbing to foul fumes.
-An adolescent girl sits cross-legged on a cauldron of {liquid} while eating a {fruit}.
-A {fauna} has escaped from the laboratory of a wizard, and is ({the strange result of an experiment|a minor demon|a creature from another dimension}).
-An antlered horse.
-Bald woman carves a delicate city from cart-sized molar.
-Beautiful nudes covered in calligraphy.
-Black giant distracted by the clapping of 30 concubines he carries on his back.
-Blind woman weaves strips of fallen battle banners into sails.
-Bloated, grey creature chained with flowers to a cedar sled pulled by children.
-Blood merchant with cart full of sloshing barrels.
-{Color:Basic}-skinned {men|women} wearing turbans and reeking of {aromatic} given wide berth by crowd.
-Burly man surrounded by wicker-armored guards bears eight lead bells.
-Circle of worshipers kneel before whirling blades.
-Copper coins, everywhere, ankle-deep.
-Cross-eyed counterfeiter mints coins, medals, and pilgrim's tokens.
-Cultists shave all comers for free, carefully hide the clippings in filthy sacks.
-Dancing great ape with the head of a goat.
-Doppelganger: An inhuman creature who can take on the form of any person they've met.
-Dung beetles roll confectionery balls in an ebony tray.
-Dwarf whittles gold leaf from an abandoned palanquin.
-Ex-pirates pay passersby to defecate around a giant egg, keeping it warm.
-Exquisitely-winged hermaphrodite hovers ominously.
-Fat men fornicating with straw manikins.
-Fish-maiden performs a sash dance while weeping pearls.
-Five maidens tattoo scriptures on an albino elephant.
-Five wolfskin-clad berserkers force everyone entering a plaza to wear a veil.
-Flowing fountain wheeled by on brass casters.
-Four cheetahs awkwardly walking upright.
-Four warriors face the four cardinal directions, chains grown into their backs connect them.
-Fourteen crucified monkeys.
-Giant Rats ({3d6} in lair): The bite of a giant rat can cause disease as well as wound.
-Giant candles slowly burn revealing morsels at the proper time for emaciated priests to eat.
-Giant drum falls down stairs deafening everyone near.
-Giant glass sphere rolls slowly by, half-filled with wine and a tiger.
-Giant sifts saffron over the crowd, while tumblers whirl and cut purses.
-Giraffe giving birth.
-Glassblower struggles desperately to shape life-sized animals.
-Haruspex performs extispicy on whale entrails.
-Huge bronze pot that passersby vomit into.
-Hundreds of gongs rung as the crowd pushes between them.
-Hyena chained to a badger fight viciously.
-Infant Infanta in feather crown and petal robe being given a tour of the sights.
-Innkeep sings out delicacies for sale, basso profondo.
-Intricate tessellations chalked on the ground, people nervously avoid.
-Jaundiced, crawling with flies, butcher cuts any meat for hire.
-Man with a third eye painstakingly studies patterns in the wares of a carpet weaver.
-Man with {~{weapon}} runs amok through the crowd.
-Mercenaries ({2d6}): One of them recognises {50%(mistakenly) }one of the player characters as {a friend|an enemy|a rival|the person they're on a mission to capture}.
-Mercenaries ({2d6}): They're drunk and looking for a fight.
-Mercenaries ({2d6}): They're looking for work. If the player characters are obviously adventurers, the mercenaries will ask them if they're hiring or know of any work.
-Mercenaries ({2d6}): They're recruiting. They might accept the player characters, or even actively seek them out.
-Mercenaries ({2d6}): They're solemnly mourning dead companions{67% (they're drunk)}.
-Mercenaries ({2d6}): Two groups of mercenaries ({3d4} vs. {2d6}) start fighting in the street ({the two groups fought on opposite sides in a recent war|they've fallen out over money|they've simply gotten into a drunken fight}).
-Merchant sells ambergris Buddhas.
-Merchant sells armor of bronzed seashells.
-Merchant sells baskets, all full of random odds and ends.
-Merchant sells fairies riding seahorses, dried, on sticks.
-Merchant sells ogre-skin rugs, heads intact.
-Merchant sells porcelain phials of tears.
-Merchant sells the pickled tongues of {fauna}
-Merchant sells tiny, beeswax spheres filled with {liquid}.
-Merchants (50%?1:{6}{50% accompanied by {75%{2d4} hired} warriors}): A merchant recognises {50%(mistakenly) }one of the player characters as {a friend|an ex-employee|an enemy|the ex-employee of an enemy|a rival|the ex-employee of a rival}.
-Merchants (50%?1:{6}{50% accompanied by {75%{2d4} hired} warriors}): The merchant/s are arguing with a group of city guards. The merchant/s are accusing the city guard.
-Merchants (50%?1:{6}{50% accompanied by {75%{2d4} hired} warriors}): The merchant/s need more guards. They might accept the player characters, or even actively seek them out. {50%If they already have guards, the existing guards will resent the newcomers.}
-Merchants (50%?1:{6}{50% accompanied by {75%{2d4} hired} warriors}): The player characters witness a merchant bribing a city guard.
-Merchants (50%?1:{6}{50% accompanied by {75%{2d4} hired} warriors}): The player characters witness a thief stealing from a merchant.
-Mice in vestments perform rites in bread dioramas.
-Moaning beggar covered in mold like black feathers.
-Noble: accompanied by at least 1 adult servant. Nobles may offer jobs to the heroes, or on the contrary if the characters have a bad reputation they may be ordered to leave town or even arrested. Nobles will be much more likely to ride than other characters.
-Orchestra of instruments made from the bones of those killed by whales.
-Ostler fusses with five black war camels.
-Parrot negotiates embargo with a Nuncio.
-Pregnant woman performs acrobatics.
-Press Gang ({2d6}): A group of kidnappers, working for the local government, who conscript their victims into the army or navy.  They will usually not attack a larger group unless it's obviously drunk, weakened etc. They will often fight with their bare hands, or blunt weapons like clubs, but at least some are likely to carry daggers or swords in case they misjudge their victims and end up in a serious battle.
-{Religious Rank} accompanied by {{6}-1} devout (but not ordained) companions.
-Priests time rituals to the transformations of a man in a bamboo cage to hippo and back.
-Priests: A belligerent priest, with 2 dice worth of devout, but not priestly followers, seeks 'donations' from passers-by.
-Priests: A huge funeral procession. {33%They're angry and looking for a fight.}
-Priests: A ragged prophet seeks to incite a crowd to riot.
-Priests: A respectable priest seeks the help of someone like the heroes. They are accompanied by {{6}-1} devout, but not ordained, followers.
-Priests: A riotous religious festival, with drunkenness and thievery abounding.
-Priests: An execution: 50% chance of being legal. The condemned is {completely innocent|mostly innocent|guilty|guilty, but had a good reason|guilty, but {manipulated|tricked|blackmailed} into it by another}.
-Procession honors conjoined orangutans.
-Procession of blind guides one after another after another.
-Respectable gentleman with five porters bearing his beard.
-Roaches scurry across colorful threads strung above the heads of the crowd.
-Roadside Gambling Game. Open to all. {50%Hosts are cheating.}
-Scabrous octopus performs religious pantomime, silver bells on every tentacle.
-Senile king with a mother of pearl saddle ridden by a bored phlebotomist.
-Shadows ({d6+2}): a living creature that appears to be made of shadow (but is solid and three-dimensional, although weightless).  Shadows generally lie in wait in dark places, waiting for prey to happen by. Their touch is intensely cold. Anyone killed by a shadow is likely to rise from the dead as a shadow themselves.
-Sloths on silk pillows play cymbals.
-Small Iron box emits hoarse chanting.
-Stuttering man feeds a small snake to a larger snake to an even larger snake ... for hours.
-Swordsmith demonstrates wares on slaves.
-Tall couple with hair braided together smash ancient clay tablets.
-Taxidermist for hire, clutching his cat-monkey-fish creation.
-Teeming wave of pink, hairless, eyeless mice.
-Telecanter.
-The bloated corpse of an elephant.
-The crowd moves through and idles in a landscape hillocks and pathways of rice.
-Thieves ({6}): They will, obviously, attempt to appear to be something other than thieves: usually ordinary townsfolk, or sometimes beggars.
-Thieves' Market. All sorts of goods are available at about 30% cheaper than their normal price. However if the players stay: {suspected of being an informant or undercover guardsman|other customers attempt to steal from the heroes|the city guards raid the place and attempt to arrest everyone|||}.
-Three bearded women wield luminescent lizards tied to the tips of their staves.
-Three eunuchs nod knowingly and tally passersby.
-Three fat women fight with obsidian fans.
-Thugs ({2d6-1}): Thugs will usually be armed, but will tend to conceal their weapons.
-Tin peacocks clatter about, fanning their bland tails.
-Tiny man in an ivory cage, on the end of a pole, swung over the crowd, screaming in terror.
-Toothless friar sells expired indulgences.
-Tree formed from broken lances, hung with the hands of the vanquished.
-Two Rhinos reluctantly bear a library of scrolls.
-Two albino alligators shamble along, firework bombards firing from their backs.
-Vast vat of live eels bursts.
-Walrus with scrimshawed tusks is bathed in iced perfume by princesses.
-Wardogs for sale, cropped ears, cropped tails, branded for each battle fought.
-Warrior stalks past in a featureless golden mask.
-Wedding procession of seven sets of twins sisters and brothers.
-Were-rats ({5} wandering; {2d6+2} in lair): Can appear in human form, or the form of a giant rat. Depending on your game world, they may have been born human and been cursed by the bite of another were-rat, or they may be an actual species. Similarly, they may have the power to change their form at will, or it may be involuntary - for example, linked to phases of the moon. In human form they may appear 'rat-like', with darting eyes, a tendency to twitch their noses when under stress, and in the case of males a tendency towards long, thin mustaches. They may live in human- or rat-like conditions. Were-rats will generally not attack a group which is larger than them. 
-Wheezing frost lizard sheds plate-sized, ivory scales.
-White flakes drift from the sky, edible, but ephemeral.
-White sparrows alight on the heads of the crowd as far as you can see.
-Wicker cage holds cannibal children baring filed teeth.
-Wizard accompanied by {2-4} apprentices.
-Wizard sneezing incessantly.
-Young men line up for tar and suicidal flame.
-Young woman passes clad in cuir bouilli made from the faces of ... demons?
+700′ structure made of ice, its head buried in clouds
+a bald spymaster with a fear of chaos and a vendetta
+a bastard in a harbor strewn with wreckage
+a blonde prophet who suffers seizures
+a cake frosted in a pale and inauspicious green
+a camp full of drunken soldiers
+a cart laden with supplies, bound for a feast, accosted by a merciless killer
+a castle immune to magic
+a castle with a secret entrance, known only to a steward
+a city full of men with dyed, forked beards
+a city that provides a refuge for escaped slaves
+a city where a bloodthirsty tribe are forbidden to shed blood
+a civil ceremony used as a trap
+a cleric with a permanent neutralize poison cast on her tongue
+a colonnaded balcony overlooking both a great hall and a spreading blue sea
+a compass rose whose spiked teeth spin
+a crippled and fugitive heir
+a dark-eyed lenscrafter
+a deformed mercenary on a black horse, eating apples
+a demon-haunted city destroyed by a mysterious doom
+a fortress that is a statue
+a generation of northern men, all raised beneath the same roof, all with identical facial hair
+a gift of both a bride and her weight in silver
+a god sends an utterly convincing supernatural event
+a great ditch which can be flooded during sieges
+a great round window with a star in bar tracery
+a hall with a hole in the middle
+a jealous and moustached lunatic
+a learned man tending to a gruesome stump
+a letter to a mother, or a letter to a spy-handler disguised as one
+a lone wight, portended by a plague of shrieking birds
+a lord who fears an endless night
+a maimed swordsman, held for ransom
+a name that is the default name for illegitimate children
+a noble raiding party – of no more than 20
+a pair of teasing girls in the house of a sadist
+a pig squeals out hymns.
+a plaza reserved for punishment
+a prisoner reading a genealogical history
+a rolling green moor by a fork in a calm red river
+a row of spurned daughters, their heads downcast
+a royal bastard, skilled in cunnilingus
+a season that lasts 100 years
+a song sung about a cruel father
+a spell powered by the blood leeches suck
+a steel artifact with a lying legend attached.
+a stone windmill, much discussed
+a straw effigy used for target practice
+a throne room filled with columns and flames
+a vicious eagle
+a wall rumored to have been built by giants
+a walled city, threatened by an army of eunuchs
+a war map with chunky and symbolic wooden pieces
+a woman beloved by young monsters
+a woman in a dress fighting a creature in a pit with a wooden sword
+a wondrous steam engine explodes killing crowded spectators.
+a yeti impaled howls pitifully.
+a ziggurat city, crowned by a dominating and heraldic statue
+a {city encounter:group name} of gray, old folk whose exhaled breath is smoke.
+a {fauna} has escaped from the laboratory of a wizard, and is ({the strange result of an experiment|a minor demon|a creature from another dimension}).
+a {fauna} paces loose.
+ambitious priestess of the flame goddess
+an adolescent girl sits cross-legged on a cauldron of {liquid} while eating a {fruit}.
+an alabaster bull on crystal wheels with a voice screaming from inside.
+an alchemist creates a greasy, pulsating lump in a beaker before succumbing to foul fumes.
+an antlered horse.
+an awkward wedding feast made yet more awkward by an angry dad
+an efficient and heartless mercenary who dispenses sound advice
+an obscene old man in fingerless gloves
+an outlaw with a flaming sword
+arrowhead of black glass (of disruption)
+bald woman carves a delicate city from cart-sized molar.
+beautiful nudes covered in calligraphy.
+black giant distracted by the clapping of 30 concubines he carries on his back.
+blind woman weaves strips of fallen battle banners into sails.
+bloated, grey creature chained with flowers to a cedar sled pulled by children.
+blood merchant with cart full of sloshing barrels.
+blue-lipped warlocks
+burly man surrounded by wicker-armored guards bears eight lead bells.
+circle of worshipers kneel before whirling blades.
+copper coins, everywhere, ankle-deep.
+coward and inbred woman sitting by a fire
+cross-eyed counterfeiter mints coins, medals, and pilgrim's tokens.
+cultists shave all comers for free, carefully hide the clippings in filthy sacks.
+dancing great ape with the head of a goat.
+doppelganger: an inhuman creature who can take on the form of any person they've met.
+drunk halfling vomiting
+dung beetles roll confectionery balls in an ebony tray.
+dwarf whittles gold leaf from an abandoned palanquin.
+ex-pirates pay passersby to defecate around a giant egg, keeping it warm.
+exquisitely-winged hermaphrodite hovers ominously.
+faithless moron, scion of a sailing house, being tortured
+fat men fornicating with straw manikins.
+fish-maiden performs a sash dance while weeping pearls.
+five maidens tattoo scriptures on an albino elephant.
+five wolfskin-clad berserkers force everyone entering a plaza to wear a veil.
+flowing fountain wheeled by on brass casters.
+four cheetahs awkwardly walking upright.
+four warriors face the four cardinal directions, chains grown into their backs connect them.
+fourteen crucified monkeys.
+fur-clad barbarians assaying an icy peak
+giant candles slowly burn revealing morsels at the proper time for emaciated priests to eat.
+giant drum falls down stairs deafening everyone near.
+giant glass sphere rolls slowly by, half-filled with wine and a tiger.
+giant rats ({3d6} in lair): the bite of a giant rat can cause disease as well as wound.
+giant sifts saffron over the crowd, while tumblers whirl and cut purses.
+giraffe giving birth.
+glassblower struggles desperately to shape life-sized animals.
+guardsmen who marry their axes
+halfling scheming with his sister
+haruspex performs extispicy on whale entrails.
+horsemen escorting a prisoner down a slope
+huge bronze pot that passersby vomit into.
+hundreds of gongs rung as the crowd pushes between them.
+hyena chained to a badger fight viciously.
+infant infanta in feather crown and petal robe being given a tour of the sights.
+innkeep sings out delicacies for sale, basso profondo.
+intricate tessellations chalked on the ground, people nervously avoid.
+jaundiced, crawling with flies, butcher cuts any meat for hire.
+lord arranging for a vassal to marry blindly
+lovers boring everyone
+man with a third eye painstakingly studies patterns in the wares of a carpet weaver.
+man with {~{weapon}} runs amok through the crowd.
+mercenaries ({2d6}): one of them recognises {50%(mistakenly) }one of the player characters as {a friend|an enemy|a rival|the person they're on a mission to capture}.
+mercenaries ({2d6}): they're drunk and looking for a fight.
+mercenaries ({2d6}): they're looking for work. if the player characters are obviously adventurers, the mercenaries will ask them if they're hiring or know of any work.
+mercenaries ({2d6}): they're recruiting. they might accept the player characters, or even actively seek them out.
+mercenaries ({2d6}): they're solemnly mourning dead companions{67% (they're drunk)}.
+mercenaries ({2d6}): two groups of mercenaries ({3d4} vs. {2d6}) start fighting in the street ({the two groups fought on opposite sides in a recent war|they've fallen out over money|they've simply gotten into a drunken fight}).
+merchant sells ambergris buddhas.
+merchant sells armor of bronzed seashells.
+merchant sells baskets, all full of random odds and ends.
+merchant sells fairies riding seahorses, dried, on sticks.
+merchant sells ogre-skin rugs, heads intact.
+merchant sells porcelain phials of tears.
+merchant sells the pickled tongues of {fauna}
+merchant sells tiny, beeswax spheres filled with {liquid}.
+merchants (50%?1:{6}{50% accompanied by {75%{2d4} hired} warriors}): a merchant recognises {50%(mistakenly) }one of the player characters as {a friend|an ex-employee|an enemy|the ex-employee of an enemy|a rival|the ex-employee of a rival}.
+merchants (50%?1:{6}{50% accompanied by {75%{2d4} hired} warriors}): the merchant/s are arguing with a group of city guards. the merchant/s are accusing the city guard.
+merchants (50%?1:{6}{50% accompanied by {75%{2d4} hired} warriors}): the merchant/s need more guards. they might accept the player characters, or even actively seek them out. {50%if they already have guards, the existing guards will resent the newcomers.}
+merchants (50%?1:{6}{50% accompanied by {75%{2d4} hired} warriors}): the player characters witness a merchant bribing a city guard.
+merchants (50%?1:{6}{50% accompanied by {75%{2d4} hired} warriors}): the player characters witness a thief stealing from a merchant.
+mice in vestments perform rites in bread dioramas.
+minstrel assassins
+moaning beggar covered in mold like black feathers.
+noble: accompanied by at least 1 adult servant. nobles may offer jobs to the heroes, or on the contrary if the characters have a bad reputation they may be ordered to leave town or even arrested. nobles will be much more likely to ride than other characters.
+non-lovers about to be wed, discussing their wedding by a pre-raphaelite pond
+one old man with 8 good horses, protected by rangers
+orchestra of instruments made from the bones of those killed by whales.
+ostler fusses with five black war camels.
+parrot negotiates embargo with a nuncio.
+pregnant woman performs acrobatics.
+press gang ({2d6}): a group of kidnappers, working for the local government, who conscript their victims into the army or navy.  they will usually not attack a larger group unless it's obviously drunk, weakened etc. they will often fight with their bare hands, or blunt weapons like clubs, but at least some are likely to carry daggers or swords in case they misjudge their victims and end up in a serious battle.
+priests time rituals to the transformations of a man in a bamboo cage to hippo and back.
+priests: a belligerent priest, with 2 dice worth of devout, but not priestly followers, seeks 'donations' from passers-by.
+priests: a huge funeral procession. {33%they're angry and looking for a fight.}
+priests: a ragged prophet seeks to incite a crowd to riot.
+priests: a respectable priest seeks the help of someone like the heroes. they are accompanied by {{6}-1} devout, but not ordained, followers.
+priests: a riotous religious festival, with drunkenness and thievery abounding.
+priests: an execution: 50% chance of being legal. the condemned is {completely innocent|mostly innocent|guilty|guilty, but had a good reason|guilty, but {manipulated|tricked|blackmailed} into it by another}.
+procession honors conjoined orangutans.
+procession of blind guides one after another after another.
+ranger/barbarian, female, level 7, red-haired, jealous
+respectable gentleman with five porters bearing his beard.
+rivals join in civil war against a mad king
+roaches scurry across colorful threads strung above the heads of the crowd.
+roadside gambling game. open to all. {50%hosts are cheating.}
+robin hood rip-offs served by a drunken monotheist
+scabrous octopus performs religious pantomime, silver bells on every tentacle.
+scarred and one-eyed warrior, unable to die
+scheming bastard daughters
+senile king with a mother of pearl saddle ridden by a bored phlebotomist.
+shadows ({d6+2}): a living creature that appears to be made of shadow (but is solid and three-dimensional, although weightless).  shadows generally lie in wait in dark places, waiting for prey to happen by. their touch is intensely cold. anyone killed by a shadow is likely to rise from the dead as a shadow themselves.
+six young travelers trapped in a tower with a giant and a level 1 wizard
+sloths on silk pillows play cymbals.
+small iron box emits hoarse chanting.
+snow that falls in reverse
+solid gold chains given as a gift to a scorned woman
+steel climbing claws
+stuttering man feeds a small snake to a larger snake to an even larger snake ... for hours.
+swordsmith demonstrates wares on slaves.
+sword’s hilt emblazoned with a rampant stag
+tall couple with hair braided together smash ancient clay tablets.
+taxidermist for hire, clutching his cat-monkey-fish creation.
+teeming wave of pink, hairless, eyeless mice.
+telecanter.
+the bloated corpse of an elephant.
+the crowd moves through and idles in a landscape hillocks and pathways of rice.
+the greatest whistler in the land
+the least pleasant man you’ve ever met, and boss of a bridge
+thieves ({6}): they will, obviously, attempt to appear to be something other than thieves: usually ordinary townsfolk, or sometimes beggars.
+thieves' market. all sorts of goods are available at about 30% cheaper than their normal price. however if the players stay: {suspected of being an informant or undercover guardsman|other customers attempt to steal from the heroes|the city guards raid the place and attempt to arrest everyone|||}.
+three 12th-level fighters set upon by 20 first-level ones
+three bearded women wield luminescent lizards tied to the tips of their staves.
+three eunuchs nod knowingly and tally passersby.
+three fat women fight with obsidian fans.
+thugs ({2d6-1}): thugs will usually be armed, but will tend to conceal their weapons.
+tin peacocks clatter about, fanning their bland tails.
+tiny man in an ivory cage, on the end of a pole, swung over the crowd, screaming in terror.
+toothless friar sells expired indulgences.
+towers linked by arches and rope bridges
+tree formed from broken lances, hung with the hands of the vanquished.
+two albino alligators shamble along, firework bombards firing from their backs.
+two rhinos reluctantly bear a library of scrolls.
+two servants who distrust a third
+two wolves: one white, one black
+two women arguing about how to skin a rabbit
+unattractive women, eager to undress
+vast vat of live eels bursts.
+venison stew with onions
+vermeer-ish light falling on a blue-scarfed matron
+walrus with scrimshawed tusks is bathed in iced perfume by princesses.
+wardogs for sale, cropped ears, cropped tails, branded for each battle fought.
+warrior stalks past in a featureless golden mask.
+wedding procession of seven sets of twins sisters and brothers.
+were-rats ({5} wandering; {2d6+2} in lair): can appear in human form, or the form of a giant rat. depending on your game world, they may have been born human and been cursed by the bite of another were-rat, or they may be an actual species. similarly, they may have the power to change their form at will, or it may be involuntary - for example, linked to phases of the moon. in human form they may appear 'rat-like', with darting eyes, a tendency to twitch their noses when under stress, and in the case of males a tendency towards long, thin mustaches. they may live in human- or rat-like conditions. were-rats will generally not attack a group which is larger than them. 
+wheezing frost lizard sheds plate-sized, ivory scales.
+white flakes drift from the sky, edible, but ephemeral.
+white sparrows alight on the heads of the crowd as far as you can see.
+wicker cage holds cannibal children baring filed teeth.
+wizard accompanied by {2-4} apprentices.
+wizard sneezing incessantly.
+young men line up for tar and suicidal flame.
+young woman passes clad in cuir bouilli made from the faces of ... demons?
+you’re never safe in a room with that many candles
+{color:common}-skinned {men|women} wearing turbans and reeking of {aromatic} given wide berth by crowd.
+{d2+2} swaggering mercenary lords
+{religious rank} accompanied by {{6}-1} devout (but not ordained) companions.

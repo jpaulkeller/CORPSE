@@ -17,6 +17,126 @@ alive and intelligent.
 
 =========
 
+/ Artifact generator for World of Dungeons was created by Mike Riverso
+/ http://www.story-games.com/forums/discussion/16688/world-of-dungeons-anyone-playing/p6
+
+1,Origin [Origin]<br />Power [Power]
+
+;Origin
+1,(Holy): [Holy]
+1,(Magic): [Magic]
+1,(Masterwork): [Masterwork]
+1,(Natural): [Natural]
+1,(Otherworldly): [Otherworldly]
+1,(Technological): [Technological]
+
+;Holy
+1,It's been '''lost''' for centuries.
+1,It once belonged to a '''dark god'''.
+1,It was made for a holy '''quest'''.
+1,It's '''faithful''' to you and your cause.
+1,You must '''prove yourself''' to it.
+1,They '''want it back'''.
+
+;Magic
+1,It's covered in mysterious '''runes'''.
+1,It's powered by a '''trapped soul'''.
+1,You must speak the proper '''words'''.
+1,It's '''charges''' are running low.
+1,It's a '''piece of something''' bigger.
+1,The focus '''crystal''' needs replacing.
+
+;Masterwork
+1,It was forged by '''dwarven blacksmiths'''.
+1,'''Elven''' weavers put years into its making.
+1,No '''demon''' lord fights without one.
+1,It's infused with a drop of '''dragon''' blood.
+1,It's in '''mint condition'''.
+1,It's the best a '''human''' could do.
+
+;Natural
+1,It '''breathes''' and '''pulses''' in your hand.
+1,It requires '''sustenance'''.
+1,It '''bonds''' to your flesh.
+1,It's starting its '''metamorphosis'''.
+1,It '''glows''' in the dark.
+1,It '''followed''' you home.
+
+;Otherworldly
+1,It's decidedly '''non-euclidean'''.
+1,It's '''silicon-based''' life.
+1,It '''hurts to look''' at it.
+1,It's '''goopy'''.
+1,It's '''bigger on the inside'''.
+1,It's made from '''meteoric''' iron.
+
+;Technological
+1,Its '''gears''' click and whiz.
+1,It '''jams''' at the worst times.
+1,'''Sparks''' fly in all directions.
+1,It’s a one-of-a-kind '''prototype'''.
+1,It leaks '''acid''' all over you.
+1,It needs '''reloading''' after every use.
+
+;Power
+1,(Blessing): [Blessing]
+1,(Curse): [Curse]
+1,(Enhancement): [Enhancement]
+1,(Force): [Force]
+1,(Protection): [Protection]
+1,(Utility): [Utility]
+
+;Blessing
+1,You see visions of the '''future'''.
+1,You move '''unseen'''.
+1,You’ve had fantastic '''luck''' lately.
+1,You '''sense''' lies and deception.
+1,'''Disease''' cannot touch you.
+1,Dark entities '''fear''' you.
+
+;Curse
+1,You’re plagued by terrible '''nightmares'''.
+1,You’ve been '''polymorphed'''.
+1,Your '''thoughts''' are not your own.
+1,You’ve lost your '''voice'''.
+1,You’re '''aging''' rapidly.
+1,The '''stink''' just won’t wash off.
+
+;Enhancement
+1,You have the '''might''' of the giants.
+1,You’re as '''agile''' as the wind.
+1,You feel '''healthier''' than ever.
+1,Your mind is filled with '''knowledge'''.
+1,Your '''senses''' are heightened.
+1,Your '''charm''' is irresistible.
+
+;Force
+1,It shoots gouts of '''flame'''.
+1,You shock your foes with '''lightning'''.
+1,The '''wind''' obeys your call.
+1,'''Thunderous''' sound blasts your enemies.
+1,You control '''illusory''' phantasms.
+1,You '''freeze''' your target in place.
+
+;Protection
+1,You are immune to the '''elements'''.
+1,Your skin is as hard as '''stone'''.
+1,It cloaks you in '''shadow'''.
+1,It fights '''at your side'''.
+1,You’re as '''steady''' as a mountain.
+1,It '''heals''' your wounds.
+
+;Utility
+1,It provides a brilliant '''light'''.
+1,You can '''command''' simple beasts.
+1,You '''breathe''' water as if it were air.
+1,You can '''teleport''' short distances.
+1,You '''understand''' foreign languages.
+1,You '''see and hear''' over vast distances.
+</sgtable>
+
+[[Category:Fantasy item]] [[Category:Fourth Page]] [[Category:Treasure]]
+
 / http://rpg.divnull.com/wiki/index.php/Exalted_Artifacts
 
    Rating   Owner Summary

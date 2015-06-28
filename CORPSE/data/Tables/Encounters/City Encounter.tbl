@@ -48,7 +48,7 @@ group
 mob
 
 : Wearing
-wearing {color:basic} {cloaks|tabards|uniforms}
+wearing {color:simple} {cloaks|tabards|uniforms}
 wearing heavy packs
 wearing {damaged|makeshift|polished} armor
 , naked but for {brass torcs|body paint|tattoos|hats}

@@ -7,58 +7,21 @@
 : Sword = .*piercing or slashing.*
 : Axe   = .*slashing.*
 
-: Weapon
-{:melee}
-{:ranged}
+: Weapon = Melee + Ranged
+: Melee = simple melee + martial melee + exotic melee
+: Ranged = simple ranged + martial ranged + exotic ranged
 
-: Melee
-{:simple light}
-{:simple one-handed melee}
-{:simple two-handed melee}
-{:martial light}
-{:martial one-handed melee}
-{:martial two-handed melee}
-{:exotic light melee}
-{:exotic one-handed melee}
-{:exotic two-handed melee}
+: Simple Melee = simple light + simple one-handed melee + simple two-handed melee 
+: Martial Melee = martial light + martial one-handed melee + martial two-handed melee
+: Exotic Melee = exotic light melee + exotic one-handed melee + exotic two-handed melee
 
-: Ranged
-{:simple ranged}
-{:martial ranged}
-{:exotic ranged}
+: Light = simple light + martial light + exotic light melee
+: One-handed = simple one-handed melee + martial one-handed melee + exotic one-handed melee
+: Two-handed = simple two-handed melee + martial two-handed melee + exotic two-handed melee
 
-: Light
-{:simple light}
-{:martial light}
-{:exotic light melee}
-
-: One-handed
-{:simple one-handed melee}
-{:martial one-handed melee}
-{:exotic one-handed melee}
-
-: Two-handed
-{:simple two-handed melee}
-{:martial two-handed melee}
-{:exotic two-handed melee}
-
-: Simple
-{:simple light}
-{:simple one-handed melee}
-{:simple two-handed melee}
-{:simple ranged}
-
-: Martial
-{:martial light}
-{:martial one-handed melee}
-{:martial two-handed melee}
-{:martial ranged}
-
-: Exotic
-{:exotic light melee}
-{:exotic one-handed melee}
-{:exotic two-handed melee}
-{:exotic ranged}
+: Simple = simple light + simple one-handed melee + simple two-handed melee + simple ranged
+: Martial = martial light + martial one-handed melee + martial two-handed melee + martial ranged
+: Exotic = exotic light melee + exotic one-handed melee + exotic two-handed melee + exotic ranged
 
 .Weapon                      Cost        Dmg (S)      Dmg (M)      Dmg (L)          Critical          Range Incr       Weight        Type                      Source
 

@@ -13,7 +13,6 @@ brush
 buckle
 button
 caltrop
-candle
 chain
 chalk (powder)
 chalk (stick)
@@ -110,16 +109,21 @@ whistle
 wire
 writing ink
 yarn
-{metal:precious} {coin|coins}
+{coin}
+{color:common} candle
 {currency}
+{d12 evil priest carrying}
+{d12 thief carrying}
+{d12 warrior carrying}
 {flora} seed
+{fruit}
+{fungus}
 {gem}
 {jewelry}
+{kp pocket item}
+{metal:precious} {coin|coins}
 {organic}
 {paper}
 {potion}
 {reagent}
-{kp pocket item}
-{d12 thief carrying}
-{d12 evil priest carrying}
-{d12 warrior carrying}
+{{berry}+}

@@ -1,6 +1,5 @@
-: Basic = Black + Blue + Brown + Green + Red + Violet + White + Yellow
-: Simple = Common + Basic
-: Standard = Common + Basic + Light + Dark + Fancy + Metallic
+: Simple = Common + Black + Blue + Brown + Green + Red + Violet + White + Yellow
+: Standard = Common + Simple + Light + Dark + Fancy + Metallic
 : Color = Standard + Special + Example
 
 : Common

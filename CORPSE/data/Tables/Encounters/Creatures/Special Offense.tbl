@@ -2,10 +2,14 @@
 
 acid breath
 acid spit              level {8}, {4}0' range
+area of effect attack
+berserk
 breath weapon                                         The creature breathes fire or gas, like a dragon.
 corrosive slime trail  1d6
 corrosive spray        {4}d{2|3}, {10}' range
 crush                                                 If the creature manages to get hold of an enemy which is roughly its size or smaller, it will eventually crush it to death. This means that the victim will take damage automatically, and can't attack, until and unless they manage to break free. Creatures smaller than Medium roll again: they still have this ability, but it's unlikely to effect most player-characters.
+daze
+disarms
 drain magic                                           The creature's touch drains magical ability.
 drains blood
 electrical bolt        {4}d{2|3}, {4}0' range
@@ -19,21 +23,29 @@ flame spray            {6}d{2|3} damage, {4}0' range
 flaming bile
 frost breath
 hypnotic gaze                                         {beguile|charm|confuse} victim
+knockback
+knockdown
 lightning breath            
 paralysis                                             A particular kind of poison: rather than continue to do damage, the creature's attack may cause paralysis, until the poison is removed or a natural or magical antidote can be applied.
 parasitic infestation                                 The creature lays its eggs in other species. Animates and Spirits may not have this ability.
 petrify gaze
 psionic attack
+ranged attack
 ray of withering
 rust                                                  The creature's touch corrodes metal. This may effect armour, weapons, Animates etc. If the creature also has Crush or Swallow Whole, successfully doing so will corrode metal very quickly.
 searing eye-beams
+silences
 spells                                                The creature has the ability to case spells.
 spread disease                                        The creature's touch can cause disease.
 steal life                                            If The creature successfully causes damage, it heals as well.
+stealth attack
+stun
 swallow                                               This works in a similar way to Crush (above). However the creature can only swallow beings which are half its size or smaller. The victim can't attempt to break free - they can only be saved if the creature dies. The creature will dissolve armour first, and only then start to damage the character. Creatures smaller than twice the size of a human ('Large' on Creatures table 1) roll again: they still have this ability, but it's unlikely to effect most player-characters. Only Monsters and Folk can have this ability.
+trample
 toxic cloud
 venomous bite          level {10}
 venomous spit          level {8}, {4}0' range
 venomous spore         level {4}, 8' range
 venomous spray         level {8}, 6' range
 venomous sting         level {10}, {3}/day
+{dragon:breath}

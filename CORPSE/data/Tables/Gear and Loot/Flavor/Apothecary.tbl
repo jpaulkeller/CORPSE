@@ -1,0 +1,74 @@
+/ http://random-generator.com/index.php?title=HerbalProducts
+
+: Apothecary
+{:herb} {:post}
+{:mix} of {:herb}{10%, {:herb{!different}}} and {:herb{!different}}
+{:pre} {:herb}
+
+: pre
+balm of
+boiled
+clarified
+concentrate of
+concoction of
+cream of
+crushed
+diffusion of
+distilled
+essence of
+essential oil of
+extract of
+ground
+infusion of
+oil infused with
+oil of
+ointment of
+powdered
+pressings of
+tincture of
+vapors of
+
+: post
+admixture
+balm
+bark
+berries
+bitters
+concentrate
+cream
+decoction
+dust
+extract
+flower
+gel
+infusion
+juice
+leaf
+nectar
+oil
+ointment
+paste
+perfume
+pollen
+powder
+root
+salve
+spirits
+stem juice
+tea
+unguent
+vinegar
+
+: mix
+admixture
+blend
+compress
+concoction
+cream
+distillation
+infusion
+mixture
+ointment
+paste
+poultice
+unguent
