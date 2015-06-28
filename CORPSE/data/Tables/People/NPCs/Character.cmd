@@ -1,3 +1,5 @@
+/ http://random-generator.com/index.php?title=Griffin_Mountain_Personality_Generator
+
 <html>
 <body>
 
@@ -70,6 +72,11 @@
   <ul>
     <li>Personality: {personality}
     <li>Trait: {50%{degree} }{trait}
+    <li>Trait Spectrum:
+      <ul>
++ Traits
+      </ul>
+    </li>
     <li>Disposition: {50%{frequency} }{disposition}
     <li>Feeling (generally): {50%{degree} }{feeling}
     <li>Emotion: {emotion}
@@ -78,7 +85,7 @@
     <li>Reaction (to PCs): {50%{degree} }{reaction}
     {50%<li>Vice: {vice}}
   </ul>
- 
+  
   <li>Quirks:
   <ul>
     {50%<li>Advantage: {advantage}}

@@ -26,8 +26,10 @@ magical +{5}
 : Any = Flat + Weapon
 
 : Weapon
+ceremonial
 finely crafted
 holy
 magical
 master-crafted
 normal
+ornate

@@ -21,7 +21,7 @@ garbed
 
 : Wearing 
 wearing a uniform
-wearing a {color:basic} {~{clothing}}
+wearing a {color:simple} {~{clothing}}
 wearing a {odd|military|religious} symbol
 wearing a {color:dark} cloak with a {color:light} {charge}
 wearing out-of-style clothing

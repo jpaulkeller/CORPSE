@@ -1,5 +1,9 @@
+/ http://random-generator.com/index.php?title=Herb_Names
+/ The original version of this table was created by Bruce Gulke for use with his Mythosa Tablesmith] software
+
 : Herb Flavor
 10x {:adj} {:noun}
+5x {:prefix}{:suffix}{10%{:suffix}} {:noun}
 
 : adj
 {color{!oneword}}
@@ -15,29 +19,54 @@
 {:misc adj}
 
 : misc adj
+bitter
 burnt
 charred
+climbing
+creeping
 glowing
 singed
+stinging
 stink
+sweet
+thorny
+weeping
+wild
 
 : noun
 {charge{!oneword}}
 {organ}
-{weapon{!oneword}} -- not working!
+{weapon{!oneword}}
+{:anthropomorphic}
 {:item}
 {:misc noun}
 {:plant}
 
 : plant
+bark
+berry
 blossom
+briar
+bulb
+cap
+creeper
 fern
+flower
+grass
+herb
 ivy
+leaf
 lotus
 moss
+nettle
 reed
+root
+rose
+thistle
+thorn
 vine
 weed
+wort
 
 : item
 arrow
@@ -55,10 +84,198 @@ needle
 shield
 teeth
 
+: anthropomorphic
+eyes
+fingers
+angel
+bishop
+demon
+devil
+duke
+dwarf
+elf
+faerie
+goblin
+hangman
+healer
+king
+knight
+minstrel
+monk
+orc
+peasant
+pilgrim
+queen
+tongue
+troll
+witch
+
 : misc noun
+balm
+bane
 coral
 crown
-eyes
+cup
+dragon
+drake
+ear
+feather
 fire
 flame
-fingers
+foil
+moon
+mountain
+spike
+spring
+star
+sun
+tail
+tea
+
+: prefix
+ad
+ado
+agri
+al
+aleth
+alka
+amb
+ani
+ans
+ar
+asara
+ath
+ati
+bar
+bas
+bel
+bil
+bor
+bur
+caf
+caff
+cal
+cal
+cala
+cel
+chamo
+cher
+col
+com
+dit
+ed
+el
+eld
+els
+fen
+fetha
+fumi
+gar
+jan
+jin
+jinn
+jun
+kal
+kel
+kla
+lar
+lor
+lung
+man
+mari
+marjer
+mug
+mull
+nap
+night
+pe
+peri
+sad
+saff
+san
+sera
+sor
+stra
+tama
+tamar
+teph
+thu
+val
+valer
+ver
+wan
+win
+yar
+zal
+zawa
+zul
+
+: suffix
+aas
+aca
+acca
+ach
+age
+ali
+ana
+any
+bate
+bena
+berry
+cana
+cena
+dock
+drake
+el
+ell
+few
+frey
+gal
+gana
+gul
+ian
+iar
+ica
+icle
+il
+ilia
+in
+ind
+indes
+iper
+lic
+mile
+mony
+mus
+nel
+net
+niru
+nis
+oe
+ome
+ony
+osa
+osia
+per
+pias
+ram
+rans
+ray
+rel
+rome
+ron
+rosia
+row
+sali
+se
+shade
+tany
+thal
+ther
+thin
+url
+us
+usar
+vil
+vir
+wort

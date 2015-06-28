@@ -24,14 +24,7 @@
 </ul>
 
 <ul>
-  <li>Treachery/Honor: {3d6}  
-  <li>Pride/Humility: {3d6}  
-  <li>Cruelty/Kindness: {3d6}  
-  <li>Gluttony/Temperance: {3d6}  
-  <li>Lust/Chastity: {3d6}  
-  <li>Wrath/Patience: {3d6}  
-  <li>Avarice/Generosity: {3d6}  
-  <li>Sloth/Fortitude: {3d6}  
++ Traits
 </ul>
   
 </body>

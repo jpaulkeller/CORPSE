@@ -14,6 +14,34 @@
     <li>Entrance: {Dungeon Flavor:Entrance}
   </ul>
   
+  <li><b>History</b>
+  <ul>
+    <li>Builder: {dungeon flavor:buildier}
+    <li>Downfall: {dungeon flavor:downfall}
+    <li>Purpose: {dungeon flavor:purpose}
+  </ul>
+  
+  <li><b>Denizen</b>
+  <ul>
+    <li>Community: {dungeon flavor:community}
+    <li>Creature: {dungeon flavor:creature}
+    <li>Hermit: {dungeon flavor:hermit}
+  </ul>
+
+  <li><b>Trial</b>
+  <ul>
+    <li>Dilemma: {dungeon flavor:dilemma}
+    <li>Hazard: {dungeon flavor:hazard}
+    <li>Trap: {dungeon flavor:trap}
+  </ul>
+  
+  <li><b>Secret</b>
+  <ul>
+    <li>Cache: {dungeon flavor:cache}
+    <li>Lore: {dungeon flavor:lore}
+    <li>Revelation: {dungeon flavor:revelation}
+  </ul>
+
   <li><b>Level 1</b>
   <ul>
     <li>Ambiance: {Dungeon Ambience:Sound}
@@ -41,11 +69,22 @@
 </ul>
 !loop end
 
+  <li><b>Door</b>
+  <ul>
+    <li>Type: {dungeon door:type}
+    <li>State: {10%{stuck|spiked} }{90%closed:open}{10%, {concealed|secret}} 
+    {75%<li>Locked: {dungeon door:locked}}
+    {50%<li>Made of: {dungeon door:material}}
+    {10%<li>Covered by: {dungeon door:covered by}}
+    {10%<li>Special: {dungeon door:special}}
+    {10%<li>Blocked by: {dungeon door:blocked by}}
+    {10%<li>Trapped: {dungeon door:trap purpose}, {dungeon door:trap type}, {dungeon door:trap state}}
+  </ul>
+
 </ul>
 
 </body>
 </html>
-
 
 .
 Level 2
