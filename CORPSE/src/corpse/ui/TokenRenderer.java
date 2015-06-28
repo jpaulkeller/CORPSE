@@ -26,12 +26,12 @@ public class TokenRenderer extends ColoredTableRenderer implements MouseListener
 {
    private static final long serialVersionUID = 1;
 
-   public static final String INVALID_OPEN = "|";
-   public static final String INVALID_CLOSE = "|";
+   public static final String INVALID_OPEN = "<<";
+   public static final String INVALID_CLOSE = ">>";
 
    // match unresolved tokens (but ignore the <!> last-match pattern)
    private static final String ERROR_REGEX = 
-      Pattern.quote(INVALID_OPEN) + "([^!]+)" + Pattern.quote(INVALID_CLOSE);
+      Pattern.quote(INVALID_OPEN) + "(.+)" + Pattern.quote(INVALID_CLOSE);
    private static final Pattern ERROR = Pattern.compile(ERROR_REGEX);
 
    private static final Pattern LINK = Pattern.compile("(.*)<(.+)=(.+)>(.*)");

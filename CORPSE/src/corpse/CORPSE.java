@@ -33,10 +33,17 @@ import corpse.ui.TreePanel;
 
 /** CORPSE - Computer-Oriented Role-Playing System & Environment */
 
+// TODO - chance-to
+// for each skill check
+// ask for character - default below
+// ask for race/class/attr - default below
+// ask for skill (lockpick, etc)
+// ask for roll - default? or if not provided
+// show table with result (possibly random lookup into Skill Fumble table?
+
 // TODO high priority
 // lower-case subsets are internal
 // capitalize based on assignment token (allow lower-case variables?)
-// internal-only subsets
 // script recursion for cave generation
 // add Categories for each table (like Wiki) and provide a way to view by category
 // text which can control where to include it (prepend, append, etc) - Dressed.tbl
@@ -44,6 +51,11 @@ import corpse.ui.TreePanel;
 // or some way to specify a regex, and extract the group -- e.g. Table.([^ ]+)
 // fix capitalization for scripts (Library.cmd - Extra)
 // within a line, automatically apply !Different
+// ad hoc subsets, like Condition@1-8
+// subsets of subsets (Dragon:Age)
+// multi-line text fields - master/detail?
+// resolved variables like !OneWord shouldn't affect auto-casing
+// variables like {VAR=...} should affect auto-casing
 
 // TODO data changes
 // convert scripts to HTML (Tavern.cmd)

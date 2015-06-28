@@ -29,11 +29,10 @@ public final class Subset
    private static final String SC = Constants.SUBSET_CHAR;
    private static final String SN = Constants.NAME;
 
-   private static final String RANGE_TOKEN = "(\\{[^}]+\\})"; // should be a valid roll
-
    // : Name
    // : Name {1-10}
-   private static final String SUBSET_REGEX = "^\\" + SC + " *" + SN + "(?: +" + RANGE_TOKEN + ")?" + Constants.COMMENT;
+   private static final String QTY_TKN = "(" + Quantity.REGEX + ")";
+   private static final String SUBSET_REGEX = "^\\" + SC + " *" + SN + "(?: +" + QTY_TKN + ")?" + Constants.COMMENT;
    private static final Pattern SUBSET = Pattern.compile(SUBSET_REGEX, Pattern.CASE_INSENSITIVE);
 
    // : Name = name + name + name (up to 20)
@@ -45,7 +44,7 @@ public final class Subset
    private static final Pattern FILTER_SUBSET = Pattern.compile(FILTER_REGEX, Pattern.CASE_INSENSITIVE);
 
    private String name;
-   private String roll;
+   private Quantity roll;
    private int min, max;
    private Pattern pattern;
 
@@ -111,11 +110,11 @@ public final class Subset
       return subset;
    }
    
-   void setRoll(final String roll)
+   void setRoll(final String rollToken)
    {
-      this.roll = roll;
-      min = Macros.getMin(roll);
-      max = Macros.getMax(roll);
+      this.roll = Quantity.getQuantity(rollToken);
+      min = roll.getMin();
+      max = roll.getMax();
    }
 
    static void finish(final Table table)
@@ -125,16 +124,13 @@ public final class Subset
       for (Subset s : table.getSubsets().values())
          if (!s.composites.isEmpty())
          {
-            s.min = 1;
-            s.max = 0;
             for (String composite : s.composites)
             {
                Subset child = table.getSubset(composite);
                if (child != null)
                {
-                  // s.min = Math.min(s.min, child.min);
-                  // s.max = Math.max(s.max, child.max);
-                  s.max += child.max - child.min + 1; 
+                  s.min = Math.min(s.min, child.min);
+                  s.max = Math.max(s.max, child.max);
                }
             }
             s.setRoll("{" + s.min + "-" + s.max + "}");
@@ -164,9 +160,11 @@ public final class Subset
          {
             Subset subset = table.getSubset(subsetName);
             if (subset != null && subset.includes(table, row, line))
-               return true;
+            {
+               include = true;
+               break;
+            }
          }
-         return false;
       }
       else
          include = (row >= min && row <= max);
@@ -175,7 +173,7 @@ public final class Subset
 
    public int random()
    {
-      return Macros.resolveNumber(roll);
+      return roll.get();
    }
 
    public int getMin()
@@ -208,9 +206,16 @@ public final class Subset
 
    public static void main(final String[] args)
    {
-      CORPSE.init(true);
+      CORPSE.init(false);
 
-      String test = "Compass";
+      // String test = "Test";
+      // String test = "Compass";
+      // String test = "Size";
+      // String test = "Condition";
+      // String test = "Duration";
+      // String test = "Number";
+      String test = "Dragon";
+      
       Table table = Table.getTable(test); 
       System.out.println (table);
       for (Subset subset : table.getSubsets().values())

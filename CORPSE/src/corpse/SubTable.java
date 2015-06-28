@@ -50,7 +50,7 @@ public final class SubTable extends Table
 
    private void importTable(final String token, String xrefTbl, String xrefSub, String xrefCol, String xrefFil)
    {
-      // System.out.println("SubTable [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
+      // System.out.println("SubTable.importTable [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
 
       unfiltered = Table.getTable(xrefTbl);
       tableKey = token;
@@ -107,7 +107,7 @@ public final class SubTable extends Table
 
       // test("{Calendar:Astronomical}", "subset");
       // test("{Color#.*(ee|ro).*#}", "filter with alteration");
-      // test("{Color:Basic#C.*#}", "subset and filter");
+      // test("{Color:Simple#C.*#}", "subset and filter");
       // test("{DiffTest#.+(?<!Common)#}", "negative look-ahead regex to prevent collision");
       // test("{Gender!}", "full line (don't use default column)");
       // test("{Gender}", "default column");
@@ -118,6 +118,7 @@ public final class SubTable extends Table
       // test("{Profession:Criminal}", "subset filter");
       // test("{Quality!}", "full line (don't use default subset)");
       // test("{Quality}", "default subset");
-      test("{Metal:Common}", "subset filter");
+      // test("{Metal:Common}", "subset filter");
+      test("{Weapon#[A-Z]+#}", "regex filter");
    }
 }
