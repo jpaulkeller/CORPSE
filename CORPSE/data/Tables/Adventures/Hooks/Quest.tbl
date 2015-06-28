@@ -4,36 +4,34 @@
 {PROTAGONIST} seeks a party to {:TASK}{25% {:without}}{25% {:before}}{25%, {:or}}.{33%  But {plot twist}.}
 
 : Task
-activate the {Special Item}
-capture {PROTAGONIST}
-defend the {PROTAGONIST}
 defend the {Place} from {ANTAGONIST} 
-destroy the {ANTAGONIST}
-destroy the {Special Item}
 discover the fate of {Group Name} lost in {Dungeon Name}
 escort {a caravan|an old man|a group of pilgrims|the {Special Item}} safely to {PLACE}
 expose a {trait:bad} {PROTAGONIST}
 find a cure for {Disease}
-find {PROTAGONIST}
 gain control of {{Special Item}|{PLACE}}
 guard {{Special Item}|{PLACE}}
-help the {PROTAGONIST}
+infiltrate {ANTAGONIST}'s stronghold
 journey to {PLACE}
-learn the schemes of the {ANTAGONIST}
 meet at the {site}
 prove themselves worthy by slaying {ANTAGONIST}
-retrieve {Special Item}
 search {PLACE} for signs of {ANTAGONIST}
-win the friendship of the {{PROTAGONIST}|{ANTAGONIST}}
+stop the {Event}
+survive {ANTAGONIST}'s assault
+win the friendship of {{PROTAGONIST}|{ANTAGONIST}}
 {50%find and }explore {Dungeon Name}
 {50%find and }kill {PROTAGONIST}
 {50%find and }recover {Special Item} from {75%?{ANTAGONIST}:{PLACE}}
 {50%find and }rescue {PROTAGONIST} from {75%?{ANTAGONIST}:{PLACE}}
+{activate|acquire|retrieve|protect|destroy|steal|hide} the {Special Item}
+{capture|destroy|distract|investigate|trap|trick|force the surrender of|escape from} {ANTAGONIST}
+{defend|find|help} {PROTAGONIST}
+{establish a truce|start a war} between {PROTAGONIST} and {ANTAGONIST}
 
 : Before
 before the {event}
 before the ghost has secured the support of the king
-before the pyromancer has turned all their allies against them 
+before {ANTAGONIST} has turned all their allies against them 
 before the regiment breaks camp
 before the watchman can complete the ritual
 

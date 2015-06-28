@@ -6,25 +6,28 @@ annulet
 bend
 chain
 chalice
+cloud
 comet
 compass
 crescent
 cross
 crown
 geometric pattern
-hand
+{10%skeletal }hand
 heart
 horseshoe
 fist
 key
 man
-moon
+mask
+{20%{quarter|crescent|half|waxing|waning|full} }moon
 mountain
 pawprint
 pentacle
 ram
 rose
 rune
+scroll
 set of scales
 skull
 spider web

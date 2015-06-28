@@ -58,6 +58,7 @@ food                 {{nut}+}
 food                 {{vegetable}+}
 food                 {~{provisions}}
 meal                 {menu}
+medicine             {apothecary}
 spice                {spice}
 
 : Furnishings

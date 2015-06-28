@@ -33,6 +33,7 @@ Material: {~{organic}}
 Material: {~{wood}}
 Meat: {~{livestock}}
 Miscellaneous: {~{tiny item}}
+Miscellaneous: {{utensil}+}
 Musical Instrument: {musical instrument}
 Plant: {flora}
 Poison: {poison}
