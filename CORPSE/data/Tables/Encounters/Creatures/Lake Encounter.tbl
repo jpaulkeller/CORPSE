@@ -17,7 +17,7 @@
 : Event:2d6
 1 A swarm of fish (quippers) swim alongside the boat (these act as regular fish, able to be caught/eaten, which will heal 1d4+1 HP)
 2-3 You encounter a small boats with {d4+1} {:humanoid} aboard {:humanoid activity}
-4 1d10+5 hawks flying overhead the boat flying in headed {compass}
+4 {d10+5} hawks flying overhead the boat flying in headed {compass}
 5-7 You sail the waters without being disturbed
 8 Merfolk {:creature activity} where you are
 9 You encounter a Giant Octopus {:creature activity}
@@ -44,9 +44,9 @@ swim past
 approach curiously 
 hunting
 
-: Special d6
+: Special
 {4} sunken huts
 garbage (bricks, timbers, smashed pots, etc.)
 2x {small|medium} ship
 a small underwater dungeon (2-3 rooms)
-treasure chest (contain {d10x10} gp)
+treasure chest (contains {d10x10} gp)

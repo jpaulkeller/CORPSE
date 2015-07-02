@@ -7,15 +7,15 @@ poor
 mediocre
 questionable
 adequate
-average
+{average|unremarkable}
 fair
+fine
 good
 very good
-superior
-excellent
-superb
-exceptional
-extraordinary
+noteworthy
+{masterful|superior}
+{excellent|superb}
+{exceptional|extraordinary|exquisite}
 enchanted
 magical +{5}
 
@@ -33,3 +33,9 @@ magical
 master-crafted
 normal
 ornate
+
+: Craftsmanship
+crudely constructed
+poorly made
+well made
+{exquisitely|masterfully|superbly} crafted

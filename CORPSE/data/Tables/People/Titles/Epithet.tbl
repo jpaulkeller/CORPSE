@@ -2,23 +2,30 @@
 
 : Epithets
 {:Barbarian}
+{:General}
 {:Mage}
 {:Priest}
 {:Rogue}
 {:Warrior}
+
+: General
+the Elder
+the Younger
+the {Trait}
 
 : Barbarian
 , {Title:Bad} of the {Weapon{!OneWord}} God
 of {Evocative Concept:Not Positive}
 the {Evocative Adj:Negative}
 the {Organ} {Carver|Choker|Cleaver|Collector|Crusher|Eater}
+the {Trait:Bad}
 {20%, {{Pseudo Class|Title:Bad}}} of the {Site Name:Dark}
 {50% {Humanoid}-{bane|butcher|killer|eater|slayer|friend}}
 {Weapon{!OneWord}}{hand|fist|foot|tooth}
 
 : Mage
 / {: ArcaneBooks.ArcaneAuthor}
-The {:Adj} {:Mage Title}
+the {:Adj} {:Mage Title}
 {:Mage Title} of {Evocative Concept}
 {:Mage Title} of {:Slain}
 {:Mage Title} of {:People}
@@ -26,13 +33,15 @@ The {:Adj} {:Mage Title}
 
 : Priest
 / {: Secret Society Title.main}
-The {50%{:Adj} }{:Priest Title}{50% of {:Place}}
+the {Trait:Good}
+the {50%{:Adj} }{:Priest Title}{50% of {:Place}}
 {:Priest Title} of {:People}
 {:Priest Title} of {:Place}
 {:Priest Title} of {Divine Name}
 {:Priest Title} of {Evocative Concept}
 
 : Rogue
+the {Trait:Neutral}
 {20%{:Adj} }{:Rogue Title} of {:Place}
 {20%{:Adj} }{:Rogue Title} of {:Slain}
 the {:Rogue Adj}, {:Rogue Title} of {:Rogue Concept}

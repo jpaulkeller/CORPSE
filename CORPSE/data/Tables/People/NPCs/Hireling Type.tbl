@@ -50,9 +50,11 @@ mercenary              4 sp        fights from horseback - a 1st cavalry level w
 mercenary              6 sp        fights for pay and leads others - 2nd-level warrior
 oarsmen               12 cp
 pack handler           2 cp
+porter
 sage                   2 gp+       provides information and research services
 sailors                5 cp
 sapper/miner           1 sp
+scout
 scribe                 4 sp
 ship master           15 gp+
 slinger                8 cp
@@ -61,6 +63,7 @@ spy                   special
 steward/castellan     30 gp+
 tailor                 2 cp
 teamster               4 cp        drives a wagon or cart
+torchbearer
 valet/lackey           3 cp        performs various specialized and personal duties
 weapon maker           5 gp
 weaver                 2 cp

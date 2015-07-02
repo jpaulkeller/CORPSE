@@ -4,6 +4,7 @@
 : Town Name
 10x {20%{:First} }{:Primary}{30% {:Feature}}
 10x {15%{:First} }{:Primary}{15% {:join} {:Feature}}
+5x {10%{:First} }{:Possessive} {:Feature}
 
 : first
 auld
@@ -25,9 +26,11 @@ upper
 : primary
 {generated name}{25%{:suffix}{10%{:suffix}}}
 {:misc}{25%{:suffix}{10%{:suffix}}}
+{:prefix}{:suffix}
+
+: possessive
 {name{!oneword}}'s
 {:job}'s
-{:prefix}{:suffix}
 
 : prefix
 {:mineral}

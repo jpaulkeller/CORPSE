@@ -1,8 +1,14 @@
 : Relic
-{:body part} of {Religious Rank} {Name} 
-shard of the {weapon} of {Feudal Rank:Noble} {Name} 
+{:body part} of {:NAME}
+shard of the {weapon} of {:NAME} 
 {organ} of a {evocative adj:positive} {{monster}|{fauna}}
-{tiny item} that was {blessed by|a gift from} {Divine Name}
+{tiny item} that was {blessed by|a gift from} {:NAME} 
+
+: Name
+{Divine Name}
+{Feudal Rank:Noble} {Name}
+{Religious Rank} {Name}
+{Saint Name}
 
 : Body Part
 body
@@ -19,4 +25,3 @@ skin
 skull
 teeth
 tooth
-  

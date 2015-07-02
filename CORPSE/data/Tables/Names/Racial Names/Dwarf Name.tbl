@@ -19,7 +19,7 @@
 {:Female First}
 {:Syllabic Name Male}
 {Anglo-Saxon Name:Male}
-{Arthurian Name:Male First}
+{Arthurian Name:Male}
 {Cornish Name:Male First}
 {Dutch Name:Male First}
 {Turkish Name:Male First}
@@ -175,7 +175,7 @@ Son of {:Male First}{10% Son of {:Male First}}
 / {Scottish Name.FemaleFirst}
 {:Syllabic Name Female}
 {Anglo-Saxon Name:Female}
-{Arthurian Name:Female First}
+{Arthurian Name:Female}
 {Cornish Name:Female First}
 {Dutch Name:Female First}
 {Turkish Name:Female First}

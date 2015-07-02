@@ -83,16 +83,18 @@ troll
 
 : Tribal
 dwarf
+ettin
 gnoll
 goblin
-kobold
-orc
 hobgoblin
-ogre
+kobold
 sahaugin
 troglodyte
 troll
 were-rat
+{20%half-}giant
+{20%half-}ogre
+{20%half-}orc
 
 : Language
 {10%ancient }dwarvish

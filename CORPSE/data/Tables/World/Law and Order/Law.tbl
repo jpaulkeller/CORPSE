@@ -1,5 +1,6 @@
 / inspired by http://chaoticshiny.com/lawgen.php
 
+: Law
 The penalty for {75%{:intent} }{25%{:degree} }{crime} is {punishment}. 
 
 : intent
@@ -13,3 +14,22 @@ willful
 petty
 moderate
 severe
+
+: Authority
+the Captain of the Guard
+the Chancellor
+the Chief Rector
+the Governor
+the Head Abbott
+the Head Chancellor
+the High Council
+the Judge
+the Lord
+the Mayor
+the Protectorate
+the Sheriff
+the Steward
+the Watch Captain
+{Military Rank} {Name}
+{Feudal Rank:Noble} {Name}
+{Religious Rank} {Name}

@@ -1,15 +1,15 @@
 : Male
-common shoes {:of} {: clothingfemale.mat_combo_leather}
+common shoes made of {made of:leather}
 heavy leather boots {: ml}
 heavy plated boots {: mm}
-knee-high boots {:of} {: clothingfemale.mat_combo_leather}
+knee-high boots made of {made of:leather}
 knight’s boots {: mm}
 lancer’s boots {: mm}
-low boots {:of} {: clothingfemale.mat_combo_leather}
-mid-calf boots {:of} {: clothingfemale.mat_combo_leather}
+low boots made of {made of:leather}
+mid-calf boots made of {made of:leather}
 plated boots {: mm}
 ranger’s quiet leather boots {: ml}
-riding boots {:of} {: clothingfemale.mat_combo_leather}
-thigh-high boots {:of} {: clothingfemale.mat_combo_leather}
+riding boots made of {made of:leather}
+thigh-high boots made of {made of:leather}
 war boots {: mm}
-war boots {: mm} and {fur and pelt:hide} hide
+war boots {: mm} and {made of:leather}

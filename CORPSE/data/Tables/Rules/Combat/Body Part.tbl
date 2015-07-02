@@ -29,6 +29,7 @@ throat
 
 : Head
 face
+forehead
 head
 jaw
 mouth
@@ -37,6 +38,7 @@ nose
 {left|right} ear
 {left|right} eye
 {left|right} temple
+{upper|lower} lip
 
 : Internal
 bone

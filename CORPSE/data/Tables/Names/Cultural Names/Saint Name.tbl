@@ -4,6 +4,7 @@
 : Title
 St. {:Saint Name}, {:HISTORY}
 St. {:Saint Name} the {Secret Society Name:Title Descriptor}, {:HISTORY}
+St. {:Saint Name} {Epithet:Priest}
 
 : History
 a noted worshiper of {DIVINE NAME}

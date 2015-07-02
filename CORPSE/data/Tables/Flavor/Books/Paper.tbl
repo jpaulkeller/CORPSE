@@ -9,7 +9,7 @@ astronomical chart
 battle plans
 blank
 bookmark
-bounty note for {10}00 gold if {:BOUNTY} is {captured|slain}, and proof is brought to {:LAW AUTHORITY} of {Town Name}
+bounty note for {10}00 gold if {:BOUNTY} is {captured|slain}, and proof is brought to {LAW:AUTHORITY} of {Town Name}
 cargo manifest for {Ship Name}
 claim note to a fine {mount} at {Name}'s Stables
 code key
@@ -85,32 +85,13 @@ vellum
 
 : Writ
 {10%royal }writ of passage{50% {in{25% and around}|on the roads near} {Place Name}}{25% {:issued}}
-{10%royal }writ of appointment as {:LAW AUTHORITY} of {Town Name}
+{10%royal }writ of appointment as {LAW:AUTHORITY} of {Town Name}
 
 : issued
-issued by {:LAW AUTHORITY} of {Town Name}
+issued by {LAW:AUTHORITY} of {Town Name}
 
 : seal
 sealed with {color:simple} wax
-
-: law authority
-the Captain of the Guard
-the Chancellor
-the Chief Rector
-the Governor
-the Head Abbott
-the Head Chancellor
-the High Council
-the Judge
-the Lord
-the Mayor
-the Protectorate
-the Sheriff
-the Steward
-the Watch Captain
-{Military Rank} {Name}
-{Feudal Rank:Noble} {Name}
-{Religious Rank} {Name}
 
 : grant
 A courier’s pass granting

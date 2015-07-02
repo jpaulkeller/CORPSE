@@ -3,14 +3,16 @@ athletic
 big
 bony
 bulky
+burly
 fit
+gaunt
+healthy
 heavy
 lanky
 large
 lean
 lithe
 muscular
-rotund
 skinny
 slender
 slight
@@ -18,12 +20,18 @@ slim
 small
 thick
 thin
+well-proportioned
 wiry
 
 : Fat
+chubby
 fat
 obese
 overweight
+plump
+portly
+rotund
+stout
 
 : Male = Build + Male Only
 : Male Only
