@@ -35,7 +35,7 @@ penalizes -{10} speed, cannot unwield without removing curse
 penalizes -{10} {:D20 Stat}, cannot unwield without removing curse
 penalizes -{10} {:d20 Saves}, cannot unwield without removing curse
 penalizes -{2d8} HP, cannot unwield without removing curse
-10x {:Random Bonus or Penalty.bonuspenalty1to5}
+10x {+|-}{5}
 
 : Imbued
 Vorpal (+{2d8} Damage, {10}% chance to maim)
@@ -111,16 +111,8 @@ werecreatures
 zombies
 
 : EgoItem
-This Ego Weapon's real name is {:Name}.  It is {:Alignment} It has the following properties:  {:main}, {:main}, and {:Imbued}.
-This Ego Armor's real name is {:Name}.  It is {:Alignment} It has the following properties:  {:main}, {:main} and {:Resists}.
-
-: Name
-{:Afghul Names.main}
-{:Afrika Names.main}
-{:Ahaggar Names.main}
-{:Arabesque Names.main}
-{Saint Name}
-{:Dragon names.main}
+This Ego Weapon's real name is {Weapon Name}.  It is {:Alignment} It has the following properties:  {:main}, {:main}, and {:Imbued}.
+This Ego Armor's real name is {Name}.  It is {:Alignment} It has the following properties:  {:main}, {:main} and {:Resists}.
 
 : Alignment
 Evil.  Its quest long-fulfilled, it now serves you. 
@@ -138,26 +130,6 @@ Possessed by a spirit driven insane by ages of captivity.  Its mad ramblings are
 Possessed by the soul of a great hero of old.  Its presence is an omen.
 Possessed by the soul of a forgotten evil.  If not destroyed, it will enslave its weilder and unleash terror upon the lands.
 the key to a long-forgotten quest.
-
-<strong>Duration:</strong><br/><sgdisplay iterations="3">{:duration}</sgdisplay>
-
-<strong>Ability:</strong><br/><sgdisplay iterations="3">{:D20 Stat}</sgdisplay>
-
-<strong>Save:</strong><br/><sgdisplay iterations="3">{:d20 Saves}</sgdisplay>
-
-<strong>Hit Points (prerolled):</strong><br/><sgdisplay iterations="3">{:d20 HPRolledpm}</sgdisplay>
-
-<strong>Hit Points (unrolled):</strong><br/><sgdisplay iterations="3">{:d20 HPUnrolledpm}</sgdisplay>
-
-<strong>Armor Class Adjustment:</strong><br/><sgdisplay iterations="3">{:d20 AC}</sgdisplay>
-
-<strong>Skill Check:</strong><br/><sgdisplay iterations="3">{:d20 Skills}</sgdisplay>
-
-<strong>Sample Use:</strong><br/><sgdisplay iterations="1">…grants a {:Random Bonus or Penalty.bonuspenalty1to5} to {:abilities} for {:duration}</sgdisplay>
-
-<strong>Sample Use:</strong><br/><sgdisplay iterations="1">…grants a {:Random Bonus or Penalty.bonus} to {:abilities}, and a {:Random Bonus or Penalty.penalty} to {:abilities} for {:duration}</sgdisplay>
-
-<strong>Sample Use:</strong><br/><sgdisplay iterations="1">…grants {:d20 HPUnrolledpm} and {:Random Bonus or Penalty.bonuspenalty1to5} to {:abilities} for {:duration}</sgdisplay>
 
 : Abilities
 {:D20 Stat}
@@ -262,79 +234,4 @@ All Saves
 -3d6 Hit Points
 
 : d20 AC
-{:Random Bonus or Penalty.Bonus} to Armor Class
-{:Random Bonus or Penalty.Penalty} to Armor Class
-
-: d20 Skills
-Appraise
-Balance
-Bluff
-Climb
-Concentration
-Craft
-Decipher Script
-Diplomacy
-Disable Device
-Disguise
-Escape Artist
-Forgery
-Gather Information
-Handle Animal
-Heal
-Hide
-Intimidate
-Jump
-Knowledge
-Listen
-Move Silently
-Open Lock
-Perform
-Profession
-Ride
-Search
-Sense Motive
-Sleight of Hand
-Spellcraft
-Spot
-Survival
-Swim
-Tumble
-Use Magic Device
-Use Rope
-
-: d20 Skill Checks
-Appraise skill checks
-Balance skill checks
-Bluff skill checks
-Climb skill checks
-Concentration skill checks
-Craft skill checks
-Decipher Script skill checks
-Diplomacy skill checks
-Disable Device skill checks
-Disguise skill checks
-Escape Artist skill checks
-Forgery skill checks
-Gather Information skill checks
-Handle Animal skill checks
-Heal skill checks
-Hide skill checks
-Intimidate skill checks
-Jump skill checks
-Knowledge skill checks
-Listen skill checks
-Move Silently skill checks
-Open Lock skill checks
-Perform skill checks
-Profession skill checks
-Ride skill checks
-Search skill checks
-Sense Motive skill checks
-Sleight of Hand skill checks
-Spellcraft skill checks
-Spot skill checks
-Survival skill checks
-Swim skill checks
-Tumble skill checks
-Use Magic Device skill checks
-Use Rope skill checks
+{+|-}{5} to Armor Class

@@ -1,7 +1,7 @@
-Collect {{4}x5} {{organ}+}
+Collect {d4x5} {{organ}+}
 Deliver a package to the {profession}
 Free a {NPC} from a band of {{humanoid}+}
-Gather {{4}x5} {{~{spell component}}+}
+Gather {d4x5} {{~{spell component}}+}
 Get {reagent}
 {Capture/Kill} beast: {beast:encounter}
 {Capture/Kill} demon: {Demon Name}

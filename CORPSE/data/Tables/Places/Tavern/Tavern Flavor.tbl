@@ -1,3 +1,7 @@
+/ http://random-generator.com/index.php?title=Hubris_Tavern
+/ http://wrathofzombie.wordpress.com/2013/12/07/hubris-die-drop-generator-for-taverns-and-inns/
+
+: Tavern Flavor
 abundance of {{profession}+} usually in the common room
 always {80%?clean:filthy} rooms and beds
 amazing selection of wines
@@ -26,3 +30,180 @@ where you can find the best {menu:main} you’ll ever have
 {quiet|romantic} atmosphere
 {rowdy|religious|shady} patrons
 {well-informed|attentive} staff
+
+===
+
+<b>Lighting (d3):</b> The tavern is [light]<br>
+<b>Number of Customers (d4):</b> [customers]<br>
+<b>Games/Music (d6):</b> [gamusic]<br>
+<b>Bartender (d7):</b> The barkeep is [batt] the bar<br>
+<b>Interesting Features (d8):</b> [uneeq]<br>
+<b>Interesting Patron (d10):</b> [oneguy]<br>
+<b>Jobs (d10%):</b> [onejob]<br>
+<b>Random and Strange Food (d12):</b> [rasf]<br>
+<b>Another Interesting Feature (d14):</b> [explore]<br>
+<b>Side Business (d16):</b> [sdeb]<br>
+<b>Random Event (d20):</b> [infe]<br>
+<b>Second Job (d24):</b> [twojob]<br>
+<b>Specialty Drink (d30):</b> [tbsd]<br>
+
+;tavern
+The [nme1] [nme2] is a [light]
+The bar [spicy] and [customers] are all [trv] [gamusic].
+[uneeq]
+The barkeep is [batt] the bar.
+>The bartender will offer them a [rasf] or their specialty drink, [tbsd].
+>At the edge of the bar is [oneguy].
+As the players explore, [explore].
+Several of the patrons are mumbling about [onejob].
+As the characters are enjoying the evening, [infe]!
+The characters with any knowledge of the underground may have heard rumors that this place [sdeb].
+[twojob]
+
+: Lighting
+well-lit tavern with large wooden wagon-wheel chandeliers covered in candles
+warmly glowing tavern with oil-soaked torches lining the walls and pillars of the main floor
+dimly-lit tavern with sparsely placed candles casting flickering shadows across tables and walls
+
+;trv
+engrossed in
+enraptured in
+captivated by
+fascinated by
+enthralled by
+deeply engaged with
+
+;gamusic
+a pickled rat brain eating contest
+a lone minstrel singing his heart out
+an intense card game between two players
+a bloody game of Brain maggot fighting
+a band of bards performing a rousing ballad
+
+;uneeq
+Hanging from a central pillar in the room is a prize trophy moose head, which looks and sounds to be singing quietly to itself
+Along the far wall is a rickety self-playing piano that starts playing a tune known to one of the characters
+In the middle of the bar is a narrow, deep pit that other patrons occasionlly throw food and pour drink down
+Penned into one corner of the main hall is a fighting pit constructed for pitting zombies against one another
+Along one portion of the floor is a cavity in the paneling and in the middle of it a hot spring of crimson water bubbles
+The center of the room is dominted by a long feast table loaded with rotten and spoiled food
+On one wall rests a large and exquisite portrait of the bar. The artistry of the painting moves, and those who stop to examine it see that it shows things 5 seconds into the future
+Behind the bar are three large torches with eerie blue fire that are humming a sleepy lullaby
+
+;batt
+well-mannered and well-dressed, and greets the characters as they walk up to
+bald, angry and surly, he mutters a curse to no one in particular as the group approaches
+obese with acne and red hair, he belches loudly then laughs just before the characters walk up to
+thin, extremely tall, and nervous, he darts sideways glances as the party nears 
+missing one eye and all teeth, he smiles broadly at the characters as they move toward
+extremely old and quite mad, he cackles maniacally to himself, hopping and capering up and down the 
+young and naïve, he stands with a meek posture behind
+
+;oneguy
+a horrific looking leper singing songs of love and loss; his amazing voice fills the room
+a decorated war hero, still wearing their frayed and worn uniform with medals pinned to the lapel
+an exiled prince, mindlessly twirling a gold coin on the bar and ignoring his drink
+an exiled princess, sullenly clutching her drink and staring off into space
+a soldier, dressed in plain clothes and hiding out; they deserted from the army
+a man seeking refuge from being hunted. Who is he running from? And why?
+a grizzled monster hunter. His face is scarred and he is dressed in furs and reptilian skins
+a grizzled monster hunter. Her face is scarred and she is wearing leathers and lizard skins
+this mime. He imitates a member of the party perfectly, and very annoyingly. Also, he can’t die
+a woman dressed in the garments of a high priestess of Yelsa
+the spirit of an old patron
+a famous and pretty bard
+
+;explore
+the floor is rubbery and bouncy
+the tables are warm to the touch and heat up food and drinks
+the beds are hammocks and made of weaved giant back hair
+there is an exquisite painting showing horrific scenes of torture
+the bar is built from the ivory tusks of wooly mammoths
+that all the drinking glasses are made of crystal from Wrath, the Crystalline Forest and shock the drinkers
+the fireplace is shaped like a screaming mouth
+a hive of angry bees that fly and swarm around the rum stinging the least intoxicated patrons
+the animated corpses of bears and lions dance obscenely in iron cages
+the tables are sculptures of humans on all fours with soppy expressions
+that steam issues up from holes in the ground creating a relaxing sauna
+the bar is built on stilts over a disgusting smelling stream
+that most of the illumination in the bar is from large glow worms that move around the building
+the bar rotates like a carousel
+
+;onejob
+harvesting the dreams of sleeping patrons
+a farm nearby that hasn’t been heard from in awhile
+how the barmaid fainted and is having violent night terrors
+a beast that is stalking those who venture into the woods
+a wandering giant fire worm
+a strange creature playing a flute that wandered off with all the children
+the strange sounds that have been coming from the nearby field at night, several herd animals have gone missing or found mutilated
+how the mists whisper secrets at midnight if you venture into them alone and naked
+a woman who committed suicide after she was spurned by her lover
+a Goldielocks-type story but about players and drinking
+
+;sdeb
+is a slaver's den and slave auctions operate regularly out of the back
+has a schedule of gladiatorial games
+acts as a safe house for a spy network
+is the base of operations for a loan shark
+has a scam fortune teller
+sells black market drugs
+also contains an apothecary
+also operates as a Whorehouse
+brokers in information
+is a front for an assassins' guild
+runs a racket of kidnapping and ransoming children
+is a front for a church of the Heathen Below
+also sells forbidden objects
+is run by a junk collector
+is owned by a collector of rare books and manuscripts
+is also an establishment for breeding insects
+
+;twojob
+The head of the tavern is currently working against the local thane has raised taxes to the breaking point and has imprisoned any who has spoken out against him. They are eagerly seeking help from anyone willing to give it
+A dilapidated keep has appeared mysteriously out of an ominous fog
+The children of the nearby village have all been turned to stone
+The town wizard went into the forest two days ago, and the sky has been blood red ever since he left
+The dead have risen up from the grave and are slowly wandering towards the inn
+A rich noble who desires help transporting several valuable pieces of art
+A local man has somehow gained control over all the women in the village and now the men in town seek help
+The entire town has taken sick and are in desperate need of a rare herb that only grows on the bluffs
+Worms the size of a dog have burrowed through the ground destroying nearly all the crops
+The town’s famous pit fighter was found murdered in his cabin.  The town needs someone to take his place <i>and</i> to find his murderer
+A demon manifests in the center of the inn and threatens to kill all if he isn’t given 3 virgins and a golden apple by the time the sun sets again
+Everyone who drank a health tonic sold by traveling elixir salesman have turned into donkeys
+Several of the children in town have been replaced by fae
+A drake that bleeds smoke has been terrorizing the town
+Two nights ago the moon turned pale blue for only a minute, but all those who were asleep at the time have remained in their slumber
+Several bodies have been found in alleys, mutilated and their organs ripped out
+Several prominent members of the local thieves guild have been arrested.  They need to be sprung before they hang
+A demon has ripped out the Nardknock the Wizard’s eyes.  He wants someone to help him retrieve them
+Sinkholes keep appearing around town, several people have disappeared down them and have not returned
+A marauding force of goblins led by a bugbear are causing havoc on the trails just outside of town
+A lonely hag seeks 15 souls of the guilty to make her young and beautiful again.
+A band of Eisenbar paladins approach the inn and demand that the unworthy and unclean present themselves for purification
+A lone avarian seeks to enter the treasure room of the local magistrate
+A green flash of light around the town has caused all to become extremely apathetic and complacent.  Many have even stopped eating and are just lying around doing nothing
+
+;infe
+a woman in the bar begins to tremble and convulse.  Suddenly she begins to puke up pea-green soup and speaks of nasty fortunes that will befall one of the characters
+they realize it's the summer Solstice!  Time for the blood letting in hope of safety
+they realize it's Oktoberfest
+someone bursts in with the news that all of the food at a nearby feast was poisoned, several people are dead and the perpetrator is unknown
+they discover the inn has Death Beds! The Beds that eat people
+the singer suddenly loses her voice.  Then dies
+they overhear somebody mention that a baby was left on the tavern's door step
+through the windows they see druids gathering around the inn.  Why?
+a woman comes in covered in scratches and scared.  She says the forest attacked her
+they hear a carnival nearby
+a noble doesn't recognize them as citizens, and demands tribute
+the King or a high noble rides by the tavern, causing a ruckus
+a thick fog appears and enshrouds the taverns. It will last outside for days, and when it finally lifts a graveyard will surround the inn
+a young prince gets in a fight and wets his pants, then accuses the party of trickery
+the cook is serving meat pies that are really made of people
+a man is burned at a stake while the villagers roast marshmallows
+a fight between two people breaks out, the match is to the death
+they hear of a were-creature hunting those foolish enough to stray into the woods
+an ancient hero, long dead, stumbles into the tavern alive.  He doesn’t know where he is or how he got here
+an ancient hero, long dead, stumbles into the tavern alive.  She doesn’t know where she is or how she got here
+one of their family member arrives at inn, they are in way over their head in trouble

@@ -2,10 +2,16 @@
 / http://random-generator.com/index.php?title=German_Male
 
 : German Name
-{:Male} {:Surname}
-{:Female} {:Surname}
+{:Male}
+{:Female}
+
+: Male
+{:Male First} {:Surname}
 
 : Female
+{:Female First} {:Surname}
+
+: Female First
 Adalgisa
 Adalia
 Adelina
@@ -96,7 +102,7 @@ Zelda
 Zelinda
 Zelma
 
-: Male
+: Male First
 Adalgiso
 Adelbert
 Adelfried

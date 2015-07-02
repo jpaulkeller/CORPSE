@@ -1,14 +1,14 @@
 / http://random-generator.com/index.php?title=Cornish_Names
 
 : Cornish Name
-{:male}
-{:female}
+{:Male}
+{:Female}
 
 : Male
-{:male first} {:surname}
+{:Male first} {:Surname}
 
 : Female
-{:female first} {:surname}
+{:Female first} {:Surname}
 
 : male first
 Alan

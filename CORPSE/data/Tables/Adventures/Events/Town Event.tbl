@@ -1,0 +1,100 @@
+/ http://random-generator.com/index.php?title=Fantasy_Town_Event
+
+: Town Event
+{:GUILD}
+{:PEOPLE}
+{:CRIMINAL}
+{:SOCIAL}
+
+: People
+{Name}{20%, {:position},} {:personal}
+{Soldier Name} of the {Unit}
+{Noble Name}
+{Saint Name}
+
+: Position
+a low-level aristocrat
+a magistrate
+a retired adventurer
+a {Feudal Rank:Noble.Female}
+a {famous|prominent|renowned} {profession}
+the guild master of the {Guild} guild
+the heir to a great fortune
+the son of a rich merchant house
+
+: Guild
+A new tax has been enacted that threatens to drive the {Guild} guild into the poorhouse.
+A prominent member of the {Guild} guild {:personal}.
+Apprentices from the {Guild} guild got into a fight with apprentices from the {Guild{!Different}} guild near {City Feature}
+Local law enforcement is investigating allegations of corruption at the {Guild} guild.
+Several high ranking members of the {Guild} guild have spoken publicly about starting their own guild.
+Several low-level members of the {Guild} guild have been found dead under mysterious circumstances.
+Someone has broken into the guildhouse of the {Guild} guild and made off with the treasury.
+The {Guild} guild are throwing a gala to celebrate 100 years since its founding.
+The {Guild} guild has commissioned the building of a new guildhouse.
+The {Guild} guild has decided to disband.
+The {Guild} guild has jailed one of its officers for alleged embezzlement.
+The {Guild} guild has just been founded.
+The {Guild} guild has revoked membership from {Name} for violations of guild rules.
+The {Guild} guild has taken out a large loan from the {Guild{!Different}} guild for unknown reasons.
+The {Guild} guild is allegedly all out of money and heavily in debt.
+The {Guild} guild is attempting to force the {Guild{!Different}} guild out of town.
+The {Guild} guild may merge with the {Guild{!Different}} guild.
+The guildhouse of the {Guild} guild has been burned in a fire.
+The leader of the {Guild} guild {:personal}.
+There has been a sharp rise in business for the {Guild} guild.
+There is a growing trade dispute between the {Guild} guild and the {Guild{!Different}} guild.
+There is a recruiting drive by the {Guild} guild.
+There is intense competition between journeymen at the {Guild} guild to see who will be named the next Master.
+
+: Personal
+has been imprisoned on charges of {crime}
+has decided to leave town forever
+has died of natural causes with no apparent heir
+has died under mysterious circumstances
+has disappeared without a trace
+is to be married to {Name}
+was brutally murdered
+was elected to the city council
+was publicly accused of {crime}
+
+: Criminal
+There has been a rash of {crime} in the {city feature}. {:CRIME RESULT}
+{Inn Name} was raided and its owner arrested on charges of running an illegal smuggling ring
+A {profession| was found to have stolen a beautiful {Color:light} amulet from {:PEOPLE}. The amulet was returned to her and the perpetrator is in the stocks
+A {profession}’s son was found with his tongue cut out, floating face-down at the {city feature:water}
+A band of gypsies has set up camp on the {city feature:open area}
+A cache of forged coins was recently discovered near the {city feature}
+A city watchman was stabbed in the back near the {city feature} but is expected to recover from his wounds
+A crew of con-men has been duping merchants’ wives in the {city feature:site}
+A fire was recently started near {city feature} that is believed to have been arson
+A smuggler’s tunnel was recently found that circumvented the {structure:defensive}
+An auction of smuggled goods that the constabulary have recently seized will be held at {Inn Name}
+An unidentified body was recently found on {street}, believed to have been killed in a botched robbery attempt. {:CRIME RESULT}
+Authorities have imposed a curfew in the {city feature} until further notice
+Pirates have stolen {Ship Name}, a ship that had been anchored at the {city feature} docks
+Recently, {Gang} has declared war on {Gang{!Different}}
+Ruffians and pickpockets have increased activity near the {city feature}. {:CRIME RESULT}
+Several recently buried bodies have been desecrated by grave robbers at the {city feature:religious}
+The coach of {:PEOPLE} was waylaid by highwaymen on {Street}. {:CRIME RESULT}
+The daughter of {:PEOPLE} has been kidnapped and is being held for ransom
+There have been a series of escalating incidents between rival gangs from the {city feature} and the {city feature{!different}}
+There is to be a public execution of an infamous {profession} who killed his wife
+Unlicensed prostitutes were recently arrested at {Inn Name}
+
+: Crime Result
+{Gang} are believed to be responsible. A reward has been posted for information leading to arrests
+A curfew has been announced for the area until further notice
+The city watch have advised that they are concentrating on other areas and will be unable to provide relief immediately
+The city watch have announced they intend to increase patrols in the area
+Visitors are advised to visit the area with caution
+The punishment has been changed to {punishment}
+
+: Social
+{Name:Male} will be marrying {Name:Female} at {city feature:religious}
+Services will be held for the late {Name}, {:PEOPLE}, at {city feature:religious}
+The {Festival} commences this week
+The {structure} will be boarded up due to unexplained supernatural occurrences
+The Author of "{Book}" will be signing copies and leading a discussion at the {city feature:open area}
+The cornerstone will be laid tomorrow for the {structure}
+There will be a ceremony at {city feature:open area} marking the dedication of a new {art:monument} commemorating {Soldier Name}

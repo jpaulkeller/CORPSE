@@ -1,21 +1,28 @@
 : Unit
-{:Arcane}
-{:Elite}
 {:Foot}
 {:Mercenary}
 {:Ranged}
-
-: Arcane
-{:Number} {10%{:Special} }{:Arcane Type} {:Echelon}
-
-: Elite
-{:Number} {10%{:Special} }{:Elite Type} {:Echelon}
+{:Uncommon}
 
 : Foot
-{:Number} {10%{:Special} }{:Foot Type} {:Echelon}
+{:Number} {10%{:Special} }{Mercenary:Foot} {:Echelon}
 
 : Ranged
-{:Number} {10%{:Special} }{:Ranged Type} {:Echelon}
+{:Number} {10%{:Special} }{Mercenary:Ranged} {:Echelon}
+
+: Uncommon = Arcane + Elite + Mounted + Special
+
+: Arcane
+{:Number} {10%{:Special} }{Mercenary:Arcane} {:Echelon}
+
+: Elite
+{:Number} {10%{:Special} }{Mercenary:Elite} {:Echelon}
+
+: Mounted
+{:Number} {10%{:Special} }{Mercenary:Mounted} {:Echelon}
+
+: Special
+{:Number} {10%{:Special} }{Mercenary:Special} {:Echelon}
 
 : Mercenary
 {Group Name} mercenaries
@@ -46,78 +53,10 @@ team
 troop
 warband
 
-: Foot Type
-defenders
-engineer
-foot
-footmen
-ground
-guard
-halberdier
-highland
-pikemen
-poleax
-siege axe
-siege defense
-siege warfare
-spear
-tower guard
-
-: Ranged Type
-arbalest
-archers
-artillery
-axe thrower
-ballistae
-bombardier
-bowmen
-catapult
-crossbowmen
-engineer
-grenadier
-heavy crossbow
-light crossbow
-longbowmen
-mounted archer
-mounted crossbow
-scout
-yeomen
-
-: Arcane Type
-aeromancy
-alchemy
-arcanist’s
-battlemage
-geomancy
-hydromancy
-illusion
-pyromancy
-sorcery
-wizardry
-
-: Elite Type
-aerial cavalry
-arcane warfare
-assault
-cavalry
-dragoon
-highlander
-horse
-horsemen
-hussars
-infantry
-lancers
-mounted
-spellsword
-{mount:special}-mounted cavalry
-{terrain} assault
-{terrain} warfare
-
 : Special Duty
 {10% covertly }{escorting|accompanied by} {:Escort}
 
 : Escort
-abecedart
 adventurer
 ambassador
 artificer
@@ -150,4 +89,4 @@ trader
 treasurer
 tyro artificer
 warden
-{Feudal:Noble Rank}
+{Feudal Rank:Noble}

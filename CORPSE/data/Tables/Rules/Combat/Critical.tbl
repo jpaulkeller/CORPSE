@@ -217,8 +217,8 @@ provoke an attack of opportunity from all adjacent opponents
 your weapon flies {2d6} yards to the {compass}
 {:melee strong opponent}
 {:melee agile opponent}
-{:melee agile beast}
-{:melee unarmed}
+{:melee beast}
+{:unarmed}
 {:general fail}
 
 : melee strong opponent
@@ -295,4 +295,4 @@ target gains spell resistance equal to 11 + caster level for {6} rounds
 {:general fail}
 {curse:effect}
 {phobia} for {6} rounds
-{scroll mishap}
+{magic mishap}

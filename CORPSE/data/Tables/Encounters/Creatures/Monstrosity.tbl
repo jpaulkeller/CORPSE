@@ -29,7 +29,7 @@ tentacled alien {:origin}
 
 : Hybrid
 {33%{:size} }hybrid with a {fauna} head on a {fauna{!different}} body
-amalgamation with parts from a {fauna}, {fauna}{50%, and {fauna}}
+amalgamation with parts from a {fauna}, {fauna{!different}}{50%, and {fauna{!different}}}
 {33%{:size} }{celestial|demonic|divine|elemental} {fauna}
 
 : Cyborg

@@ -92,6 +92,7 @@ ringed
 studded
 
 : Etched
+carved
 decorated
 emblazoned
 engraved
@@ -152,7 +153,7 @@ long-forgotten religious icons
 lovers
 soldiers at an unknown battle
 the {:Castle} of {Noble Name}
-the {Act} of {Feudal:Noble Rank}
+the {Act} of {Feudal Rank:Noble}
 trees
 unknown mountains
 weapons

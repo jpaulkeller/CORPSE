@@ -125,7 +125,7 @@ tapestry
 
 : Individual Enemy
 {Orc Name}, leader of the {50%{evocative adj:negative} }[Orc Tribe Name] {humanoid:tribal} tribe
-{military:position rank} {Name}, who led the {50%{evocative adj:negative} }{UNIT},
+{military rank:position} {Name}, who led the {50%{evocative adj:negative} }{UNIT},
 the {:Arcane Enemy} {Author}
 / {Name}, the [Secret Society Title.main]
 

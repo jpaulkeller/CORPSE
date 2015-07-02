@@ -1,0 +1,81 @@
+: Mercenary
+{:Arcane}
+{:Elite}
+{33%{light|medium|heavy} }{:Foot}
+{33%{light|medium|heavy} }{:Mounted}
+{:Ranged}
+{:Special}
+
+: Foot
+defenders
+engineer
+foot
+footmen
+ground
+guard
+halberdier
+highland
+infantry
+pikemen
+poleaxe
+siege axe
+siege defense
+siege warfare
+spear
+
+: Ranged
+arbalest
+archers
+artillery
+axe thrower
+ballistae
+bombardier
+bowmen
+catapult
+crossbowmen
+grenadier
+heavy crossbow
+light crossbow
+longbowmen
+mounted archer
+mounted crossbow
+scout
+yeomen
+
+: Arcane
+aeromancy
+alchemy
+arcanist’s
+battlemage
+geomancy
+hydromancy
+illusion
+pyromancy
+sorcery
+wizardry
+
+: Mounted
+harriers
+horsemen
+lancers
+mounted archers
+
+: Special
+engineer
+miners
+sappers
+tower guard
+
+: Elite
+aerial cavalry
+arcane warfare
+assault
+cavalry
+dragoon
+highlander
+hussars
+lancers
+spellsword
+{mount:special}-mounted cavalry
+{terrain} assault
+{terrain} warfare

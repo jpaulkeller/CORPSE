@@ -1,0 +1,129 @@
+/ Inspired by an article in by http://www.roleplayingtips.com/readissue.php?number=241 Roleplaying Tips Weekly by Garry & Susan Stahl
+
+{Horse Name}, a {:breed} {:sex}. This horse is a {:age}, of {:base color} coloring{50% {:marking}}. {25%{:FLAWS} }This horse is{33%{:personality}, } {:speed} and {:intelligence}.
+
+: Age
+weanling
+yearling ({3} years old)
+young adult ({4-8} years old)
+mature adult ({9-15} years old)
+aged adult ({d8+8} years old)
+
+: Sex
+gelding
+mare
+stallion
+
+: Base Color
+{:color mods bay}
+{:color mods black}
+{:color mods chestnut}
+
+: Color Mods Bay
+10x bay (brown body, black points)
+1x {:modified bay} {:patterned}   
+5x {:patterned} bay
+6x {:modified bay}
+
+: Modified Bay
+bay roan (brown head, black points, body appears dark beige with a purple cast)
+buckskin (yellow-tan body, black points)
+grey bay (born bay, gradually turning grey)
+yellow dun (similar color to buckskin, but with a black stripe running along the spine and stripes horizontally on the upper legs)
+
+: Color Mods Black
+10x black
+1x {:modified black} {:patterned} 
+3x {:patterned} black
+6x {:modified black}
+
+: Modified Black
+blue roan (black head and points, body may appear dark or bluish gray. this color will not get lighter with age.)
+brown
+grey (born black, gradually turning grey)
+grulla (slate gray body, black points. this color only looks gray. it will not get lighter with age.)
+
+: Color Mods Chestnut
+1x {:modified chestnut} {:patterned} 
+2x {:patterned} chestnut (red body, mane and tail may be either red or blond)
+3x {:modified chestnut}
+5x chestnut (red body, mane and tail may be either red or blond)
+
+: Modified Chestnut
+grey (born chestnut, gradually turning grey)
+palomino (gold body, white mane and tail) 
+red dun (pale red body, dark red points, dark red stripes as with the yellow dun)
+red roan (red head and points, body will appear dark pink)
+
+: Patterned
+1x {:appaloosa}
+3x {:pinto}
+
+: Pinto
+19x pinto
+1x solid white
+
+: Appaloosa
+1x solid colored with mottled skin and striped hooves.
+3x appaloosa (spotted)
+
+: Breed
+2x heavy warhorse (courser)
+2x mule
+2x riding horse (palfrey)
+3x light warhorse (destrier)
+4x pony
+8x pack horse
+2x quarterhorse
+
+: Marking
+marked with a white blaze extending the width of its nose
+marked with a white star on its face
+marked with a white “snip” on its nose
+marked with white stockings {:leg markings}
+with white markings on its hips (“blanket”)
+with white “socks” {:leg markings}
+{:marking} and {:marking{!different}}
+
+: Flaws
+The horse has a slight limp it its {left|right} {front|rear} leg.
+The horse has a tattoo or brand of its last owner on its {left|right} hindquarter.
+The horse has a tendency towards sickliness.
+The horse has some missing or bad teeth in its mouth.
+The horse is missing its {left|right} eye.
+{:FLAWS} {:FLAWS}
+
+: Leg Markings
+5x on all four legs
+on its hind legs only
+on its front legs only
+only on its {front|rear} {left|right} leg.
+
+: Personality
+a biter
+alert
+bad-tempered
+brave
+clever
+cowardly
+cunning
+greedy
+noble
+skittish
+stubborn
+
+: Speed
+ploddingly slow (-10 base speed)
+2x slower than average (-5 base speed)
+10x average speed
+2x a little faster than average (+2 base speed)
+2x noticeably faster than average (+5 base speed)
+very fast for a horse (+10 base speed)
+among the very fastest horses (+15 base speed)
+
+: Intelligence
+is best described as “slow-witted” (-1 INT)
+10x average intelligence for a horse
+2x is more intelligent than average (+1 INT)
+is much more intelligent than average (+2 INT)
+is smarter than some people (+3 INT)

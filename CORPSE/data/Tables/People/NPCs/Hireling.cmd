@@ -10,7 +10,7 @@
 <ul>
   <li>Hireling Type: {hireling type}
   <li>Skill: {skill}
-  <li>From: 
+  <li>From: {Place Name} 
   <li>Gender: {gender}
   <li>Age: {age}
   <li>Description: {appearance}
@@ -21,11 +21,12 @@
   <li>Disposition: {disposition}
   <li>Feeling: {feeling}
   <li>Mood: {mood}
+  <li>Motivation: {excitement|gold|fame|searching for {friend|relative|spouse}}
+  <li>Starting Gear: 
+  <ul>
++ Traits
+  </ul>
 </ul>
 
-<ul>
-+ Traits
-</ul>
-  
 </body>
 </html>

@@ -90,12 +90,14 @@ a {flora}
 alcohol
 animal musk
 ashes
+blood
 body odor
 chemicals
 damp earth
 ozone
 sawdust
 smoke
+sweat
 the sea
 {aromatic}
 {herb}
@@ -103,6 +105,20 @@ the sea
 {spice}
 {:pleasant}
 {:foul}
+
+: Cooking
+bread
+cinnamon
+citrus
+curry
+exotic spices
+garlic
+roast meat
+vanilla
+wood smoke
+{herb}
+{provisions}
+{spice}
 
 : Pleasant
 cinnamon

@@ -1,5 +1,8 @@
-: Hair
-{95%?{:normal}:{:bald}}
+: Male
+{95%?{33%{:length male} }{33%{:type} }{:color} hair{15% {:extra color}}{10% ({:unusual male style})}:{:bald}}
+
+: Female
+{33%{:length female} }{33%{:type} }{:color} hair{15% {:extra color}}{10% ({:unusual female style})}
 
 : Facial
 has a {25%{:beard adjective} }{:mustache} mustache
@@ -7,46 +10,56 @@ has a {50%{:beard adjective} }{:beard}
 has {:stubble}
 is clean-shaven
 
-: Normal
-{33%{:length} }{33%{:style} }{:color} hair{15% {:extra color}}{10% ({:unusual})}
-
 : Bald
 bald
 balding
+receding
 shaved
+thinning
 
-: Length
-cropped
-medium length
+: Length Male
+2x medium length
+3x {50%{degree} }short
+3x cropped
 neck length
-relatively short
 shoulder length
-waist length
 {50%{degree} }long
+
+: Length Female
+2x medium length
+2x waist length
+2x {50%{degree} }long
+3x neck length
+3x shoulder length
+chin length
+cropped
+pixie-cut
 {50%{degree} }short
 
-: Style
+: Type
 curly
 straight
 wavy
+{frizzy|unkempt|untamed|windswept}
 
 : Color
-{25%{light|dark} }{:c}
-
-: c
 auburn
 black
-blond
-brown
+{25%{light|dark} }blonde
+{25%{light|dark} }brown
 grey
 red
 {:special colors}
 
 : special colors
+cinnamon
 desert sand
 dyed {{color:fancy}|{color:special}}
-platinum blond
+fiery red
+golden blonde
+platinum blonde
 strawberry blonde
+tawny blonde
 white
 {color:brown}
 {metal}
@@ -54,32 +67,45 @@ white
 : extra color
 turning grey
 with frosted tips
-with {:c} highlights
+with {:color} highlights
 
-: Unusual
+: Unusual Female Style = Unusual Female + Unusual Either 
+: Unusual Male Style = Unusual Male + Unusual Either 
+
+: Unusual Female
+bouffant
+bun
+decorated with ribbons
+dreadlocks
+french braid
+french twist
+held back by a tortoiseshell comb
+parted in the middle
+pigtail{20%s}
+pulled behind a headband
+two long braids
+
+: Unusual Male
+buzz-cut
+comb-over
+crew cut
+flattop
+high and tight
+
+: Unusual Either
 adorned with tiny {metal:precious} bells
 afro
 asymmetric cut
-bob-cut
-bouffant
-bowl-cut
 beaded
-bun
-buzz-cut
+bob-cut
+bowl-cut
 braided
 chignon
-comb-over
 corn rows
-crew cut
 crown braid
-decorated with ribbons
 dreadlocks
 feathered
 fishtail
-flattop
-french braid
-french twist
-high and tight
 in a pony-tail
 layered
 mohawk
@@ -89,7 +115,6 @@ oiled
 oily
 pageboy
 parted {on the {left|right}|in the center}
-pigtail{20%s}
 pixie cut
 pompadour
 ponyhawk
@@ -102,8 +127,7 @@ spiked
 tapered
 tied with leather thongs
 tonsure
-unkempt
-untamed
+topknot
 
 : beard adjective
 bristly
@@ -119,6 +143,7 @@ fearsome
 flowing
 full
 glorious
+grizzled
 hairy
 impressive
 large
@@ -130,7 +155,7 @@ neat
 neatly-sculpted
 neatly-trimmed
 passable
-regrettable
+patchy
 ridiculous-looking
 scraggly
 scratchy-looking
@@ -150,7 +175,7 @@ wild
 
 : beard
 10x beard
-amish beard
+Amish beard
 beard that grows high on his face like a mask
 braided beard
 chin puff
@@ -159,10 +184,12 @@ fully-grown beard
 goatee
 jawline beard
 long beard like an ancient king
-pair of mutton chops
+long sideburns
+mutton chop sideburns
 pointed beard
 rounded beard
 set of sideburns
+soul patch
 spade-shaped beard
 
 : mustache

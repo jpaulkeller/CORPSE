@@ -1,3 +1,4 @@
+: Name
 {Algonquin Name}
 {American Indian Name}
 {American Name}
@@ -27,3 +28,37 @@
 {Sindarin Name}
 {Turkish Name}
 {Welsh Name}
+
+: Male
+{Algonquin Name:Male}
+{American Indian Name:Male}
+{Anglo-Saxon Name:Male}
+{Arthurian Name:Male}
+{Aztec Name:Male}
+{Cornish Name:Male}
+{Dutch Name:Male}
+{Dwarf Name:Male}
+{German Name:Male}
+{Hobbit Name:Male}
+{Incan Name:Male}
+{Innuit Name:Male}
+{Turkish Name:Male}
+{Welsh Name:Male}
+
+: Female
+{Algonquin Name:Female}
+{American Indian Name:Female}
+{American Name:Female}
+{Anglo-Saxon Name:Female}
+{Arthurian Name:Female}
+{Aztec Name:Female}
+{Botanical Name:Female}
+{Cornish Name:Female}
+{Dutch Name:Female}
+{Dwarf Name:Female}
+{German Name:Female}
+{Hobbit Name:Female}
+{Incan Name:Female}
+{Innuit Name:Female}
+{Turkish Name:Female}
+{Welsh Name:Female}

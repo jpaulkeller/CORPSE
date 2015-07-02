@@ -228,7 +228,7 @@ vibrant
 : Fancy
 {:metallic}
 {gem{!oneword}}-colored
-{:sheen} {:basic}
+{:sheen} {:simple}
 
 : Special
 rainbow-hued

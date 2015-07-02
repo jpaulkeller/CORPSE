@@ -1,16 +1,20 @@
+/ http://random-generator.com/index.php?title=Household_Treasures
+
 : Luxury
 20x {:item}
 
 : Item
-{art}
-{made of:hard} {25%{:coating} }{:object}{25% {art:decorated}}
+a copy of {BOOK}
+{ART}
+{20%{quality:craftsmanship} }{made of:hard} {25%{:coating} }{:object}{25% {art:decorated}}
+{20%{quality:craftsmanship} }{metal:flavor} {metal:precious}{10% and {made of:precious}} {:metal item}
+{20%{condition:cloth} }{33%{quality:craftsmanship} }{fabric} {:textile}{20% {:fabric predicate}}
 {:clothing}
 {:jewelry}
 {:misc}
 
 : Clothing
-{fabric} {20%{color:drab} }{male fine}{25% {:material}}
-{fabric} {50%{color:fancy} }{female fine}{25% {:material}}
+{25%{condition:clothing} }{50%{color:{drab|fancy}} }{{male|female} fine} made of {fabric}{25% {:material}}
 
 : Jewelry
 plain {metal:precious} {jewelry}
@@ -21,12 +25,8 @@ plain {metal:precious} {jewelry}
 : Misc
 fine wine ({10}00 gp)
 perfume
-{quality:good} {musical instrument}{25% {art:decorated}}
-
-: object
-chalice
-drinking horn
-goblet
+{quality:craftsmanship} {musical instrument}{25% {art:decorated}}
+{device}
 
 : coating
 enameled
@@ -37,3 +37,100 @@ polished
 embroidered with {metal:precious} thread
 {lined|trimmed} with {fur and pelt.animal} fur
 {stitched|threaded} with {metal:precious} thread
+
+: object
+ashtray
+basin
+bottle stopper
+bowl
+box
+candelabra
+chalice
+chandelier
+chest
+crystal ball stand
+cup
+decanter
+drinking horn
+ewer
+flagon
+game set
+goblet
+inkpot
+jewelry box
+ladle
+lamp
+mug
+music box
+pair of book bindings
+paperweight
+pen and quill set
+plate
+platter
+punchbowl
+puzzle box
+salt shaker
+shotglass
+stein
+sundial
+tankard
+vase
+vial with stopper
+wineglass
+
+: metal item
+animal cage
+bird cage
+brazier
+candle snuffer
+candlestick
+cauldron
+censer
+corkscrew
+door knocker
+door latch
+fork
+gong and mallet
+hand bell
+incense burner
+kettle
+large cauldron
+letter opener
+lock and key
+mousetrap
+pepper grinder
+pitcher
+pot
+samovar
+set of cookware
+set of decanter and glasses
+set of eating utensils
+stylus
+tea or coffee set
+torch sconce
+tray
+urn
+
+: textile
+bed linens
+blanket
+carpet
+curtain
+napkins
+pillow
+quilt
+tablecloth
+tapestry
+towel
+
+: fabric predicate
+embroidered with {symbols|runes|patterns}
+with a saying ("{motto}") sewn on it
+{art:adorned} with {art:adornment}
+
+: Value
+Much of the piece's value comes from the fact that it is obviously quite old.
+Much of the piece's value comes from the rarity of the style it is done in.
+Much of the piece's value is due to the fame of the crafter, {Name}.
+Much of its value stems from the fact that it was famously owned by {Noble Name}.
+The piece is valuable because it was involved in the {Battle Name}.

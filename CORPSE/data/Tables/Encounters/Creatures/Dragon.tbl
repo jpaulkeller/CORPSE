@@ -240,7 +240,7 @@ like swirling {color:metallic} pools
 {color}
 {color:fancy}
 {color:special}
-one is {color} and one is {color}
+one is {color} and one is {color{!different}}
 
 : breath
 {G.Pronoun} can exhale a {:breath area} of {:breath type}{10% and {:breath type}}

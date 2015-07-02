@@ -57,7 +57,7 @@ cursed: {curse}
 the surface becomes electrified 
 
 : gas result
-a cloud of gas is released. {:GAS EFFECT}
+a cloud of gas is released. {GAS EFFECT}
 
 : magic result
 an anti-magic field may cause magic items to temporarily or permanently lose their properties

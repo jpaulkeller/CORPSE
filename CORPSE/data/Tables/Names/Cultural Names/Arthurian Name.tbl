@@ -1,8 +1,8 @@
 : Arthurian Name
-{:Male First}
-{:Female First}
+{:Male}
+{:Female}
 
-: Male First
+: Male
 Aberthol
 Accalon
 Addolgar
@@ -83,7 +83,7 @@ Trahern
 Twrgadarn
 Wynn
 
-: Female First
+: Female
 Adara
 Adyna
 Aelwyd
