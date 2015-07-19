@@ -3,6 +3,7 @@ package utils;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.util.regex.Pattern;
 
 import javax.swing.BorderFactory;
 import javax.swing.border.Border;
@@ -73,6 +74,42 @@ public final class Utils
          sb.append (x + "\n");
       for (StackTraceElement line : x.getStackTrace())
          sb.append (line + "\n");
+      return sb.toString();
+   }
+   
+   /**
+    * Gets a one-line representation of the call-stack.
+    *
+    * @return a one-line representation of the call-stack
+    */
+   public static String getStack(final String regex)
+   {
+      return getStack(Thread.currentThread().getStackTrace(), regex);
+   }
+ 
+   /**
+    * Gets a one-line representation of the given call-stack.
+    *
+    * @param stack the call stack (e.g., exception.getStackTrace)
+    * @param classNameFilter an optional class name filter
+    * @return a one-line representation of the call-stack
+    */
+   public static String getStack(final StackTraceElement[] stack, final String regex)
+   {
+      StringBuilder sb = new StringBuilder();
+      
+      for (int i = stack.length - 1; i >= 0; i--)
+      {
+         String className = stack[i].getClassName();
+         if ((regex == null || Pattern.matches(regex, className)) && !"getStack".equals(stack[i].getMethodName())) // ignore this method
+         {
+            if (sb.length() > 0)
+               sb.append(", ");
+            className = stack[i].getClassName();
+            sb.append(className + "." + stack[i].getMethodName() + ":" + stack[i].getLineNumber());
+         }
+      }
+      
       return sb.toString();
    }
 }

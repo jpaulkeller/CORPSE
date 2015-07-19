@@ -106,8 +106,11 @@ public final class Gradient
             colors100[index++] = temp[i];
       }
 
-      for (int i = 0; i < numSteps; i++)
-         gradient[i] = colors100[Math.min (99, i * 100 / (numSteps - 1))];
+      if (numSteps == 1)
+         gradient[0] = colors100[0];
+      else
+         for (int i = 0; i < numSteps; i++)
+            gradient[i] = colors100[Math.min (99, i * 100 / (numSteps - 1))];
 
       return gradient;
    }

@@ -35,6 +35,7 @@ import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableModel;
 
 import model.table.TableToExcel;
+import model.table.TableToFixed;
 import model.table.TableToHTML;
 
 import org.jdesktop.swingx.JXTable;
@@ -54,8 +55,7 @@ public class TableView
    private TableCellRenderer renderer;
    private List<JButton> buttons = new ArrayList<JButton>();
    
-   public TableView (final TableModel model, final String name,
-                     final TableCellRenderer renderer)
+   public TableView (final TableModel model, final String name, final TableCellRenderer renderer)
    {
       setName (name);
       setModel (model);
@@ -79,14 +79,14 @@ public class TableView
          setName (model.getName());
    }
    
-   public void setName (final String name)
-   {
-      this.name = name;
-   }
-   
    public String getName()
    {
       return name;
+   }
+   
+   public void setName (final String name)
+   {
+      this.name = name;
    }
    
    public TableModel getModel()
@@ -101,6 +101,11 @@ public class TableView
          model.addTableModelListener (new ModelListener());
       if (view != null)
          view.setModel (model);
+   }
+   
+   public TableCellRenderer getRenderer()
+   {
+      return renderer;
    }
    
    public void setRenderer (final TableCellRenderer renderer)
@@ -118,11 +123,6 @@ public class TableView
       }
    }
 
-   public TableCellRenderer getRenderer()
-   {
-      return renderer;
-   }
-   
    public void setFormat (final int modelCol, final Format format)
    {
       if (renderer instanceof ColoredTableRenderer)
@@ -219,6 +219,7 @@ public class TableView
          TitledBorder border = new TitledBorder (name)
          {
             private Insets customInsets = new Insets (15, 5, 5, 5);
+            
             @Override
             public Insets getBorderInsets (final Component c)
             {
@@ -236,16 +237,18 @@ public class TableView
    {
       ActionListener listener = new ButtonListener (view, name);
       
-      boolean hasData = model != null && model.getRowCount() > 0;
+      // boolean hasData = model != null && model.getRowCount() > 0; // TODO
+      boolean hasData = true;
       buttons.add (ComponentTools.makeButton
-                   ("HTML", "icons/20/documents/SaveAsHTML.gif", hasData, listener,
-                    "Export to HTML"));
+                   ("HTML", "icons/20/documents/SaveAsHTML.gif", hasData, listener, "Export to HTML"));
       buttons.add (ComponentTools.makeButton
-                   ("Excel", "icons/20/documents/SaveAsEXCEL.gif", hasData, listener,
-                    "Export to Excel"));
+                   ("Excel", "icons/20/documents/SaveAsEXCEL.gif", hasData, listener, "Export to Excel"));
       buttons.add (ComponentTools.makeButton
-                   ("Print", "icons/20/objects/Printer.gif", hasData, listener,
-                    "Print this table"));
+                   ("Fixed Width", "icons/20/documents/Document.gif", hasData, listener,  "Export to Fixed Width"));
+      buttons.add (ComponentTools.makeButton
+                   ("CSV", "icons/20/documents/DocumentList.gif", hasData, listener, "Export to Comma-Separated Values"));
+      buttons.add (ComponentTools.makeButton
+                   ("Print", "icons/20/objects/Printer.gif", hasData, listener, "Print this table"));
       return buttons;
    }
    
@@ -331,6 +334,30 @@ public class TableView
          TableToHTML.export (view, fc.getSelectedFile());
    }
       
+   public static void exportToFixed (final JTable view, final String name)
+   {
+      String user = System.getProperty ("user.name");
+      String outName = "C:/Documents and Settings/" + user + "/Desktop/" + name + ".tbl";
+      FileChooser fc = new FileChooser ("Select File", ".");
+      fc.setRegexFilter (".+[.]tbl", "Fixed Width files");
+      fc.setSelectedFile (new File (outName));
+
+      if (fc.showOpenDialog (view) == JFileChooser.APPROVE_OPTION)
+         TableToFixed.export (view, fc.getSelectedFile());
+   }
+      
+   public static void exportToCSV (final JTable view, final String name)
+   {
+      String user = System.getProperty ("user.name");
+      String outName = "C:/Documents and Settings/" + user + "/Desktop/" + name + ".csv";
+      FileChooser fc = new FileChooser ("Select File", ".");
+      fc.setRegexFilter (".+[.]csv", "CSV files");
+      fc.setSelectedFile (new File (outName));
+
+      if (fc.showOpenDialog (view) == JFileChooser.APPROVE_OPTION)
+         TableToHTML.export (view, fc.getSelectedFile());
+   }
+      
    static class HeaderRenderer extends DefaultTableCellRenderer
    {
       private static final long serialVersionUID = 1L;
@@ -369,6 +396,10 @@ public class TableView
             TableView.exportToExcel (view, name);
          else if (cmd.equals ("HTML"))
             TableView.exportToHTML (view, name);
+         else if (cmd.equals ("Fixed Width"))
+            TableView.exportToFixed (view, name);
+         else if (cmd.equals ("CSV"))
+            TableView.exportToCSV (view, name);
          else if (cmd.equals ("Print"))
             TableView.print (view);
       }
