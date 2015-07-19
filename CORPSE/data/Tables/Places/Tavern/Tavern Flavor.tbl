@@ -1,5 +1,6 @@
 / http://random-generator.com/index.php?title=Hubris_Tavern
 / http://wrathofzombie.wordpress.com/2013/12/07/hubris-die-drop-generator-for-taverns-and-inns/
+/ http://random-generator.com/index.php?title=Inn_Patrons
 
 : Tavern Flavor
 abundance of {{profession}+} usually in the common room
@@ -30,6 +31,53 @@ where you can find the best {menu:main} you’ll ever have
 {quiet|romantic} atmosphere
 {rowdy|religious|shady} patrons
 {well-informed|attentive} staff
+
+: Patron
+a {50%{appearance} }{:who}{50%{:solo activity}
+a {50%{appearance} }{:who} and a {50%{appearance} }{:who}{50%{:group activity}
+a {couple|pair of|few|group of} {{:who}+}{50%{:group activity}
+
+: Who
+{humanoid}
+{profession}
+{pseudo class}
+{race}
+ 
+: Solo Activity
+begging
+cleaning nails
+comforting a small child
+drawing a map into the table
+looking for company
+nodding off  
+nursing an ale
+ogling the bar maid
+ordering food
+sharpening a blade
+shivering from the cold
+sipping wine
+staring into the fire
+waiting for someone
+writing a letter
+{:activity}
+
+: Group Activity
+arguing
+being obnoxious
+bickering
+shouting
+snickering
+staring at each other
+whispering
+{:activity}
+
+: Activity
+drinking
+eating
+playing cards
+praying
+studying
+talking to the inn keeper
 
 ===
 

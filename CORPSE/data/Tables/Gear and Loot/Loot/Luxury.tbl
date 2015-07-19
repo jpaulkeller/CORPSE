@@ -6,7 +6,7 @@
 : Item
 a copy of {BOOK}
 {ART}
-{20%{quality:craftsmanship} }{made of:hard} {25%{:coating} }{:object}{25% {art:decorated}}
+{20%{quality:craftsmanship} }{25%{:coating} }{made of:hard} {:object}{25% {art:decorated}}
 {20%{quality:craftsmanship} }{metal:flavor} {metal:precious}{10% and {made of:precious}} {:metal item}
 {20%{condition:cloth} }{33%{quality:craftsmanship} }{fabric} {:textile}{20% {:fabric predicate}}
 {:clothing}
@@ -14,7 +14,7 @@ a copy of {BOOK}
 {:misc}
 
 : Clothing
-{25%{condition:clothing} }{50%{color:{drab|fancy}} }{{male|female} fine} made of {fabric}{25% {:material}}
+{25%{condition:clothing} }{50%{color:{drab|fancy}} }{clothing} made of {fabric}{25% {:material}}
 
 : Jewelry
 plain {metal:precious} {jewelry}
@@ -23,10 +23,11 @@ plain {metal:precious} {jewelry}
 {metal:precious} {jewelry}{25% {art:decorated}}
 
 : Misc
-fine wine ({10}00 gp)
-perfume
-{quality:craftsmanship} {musical instrument}{25% {art:decorated}}
+bolt of {fabric:fancy}
 {device}
+{fine|rare|expensive|exotic} {incense|oils|perfumes|wines|spices}
+{fur and pelt:fur}
+{quality:craftsmanship} {musical instrument}{25% {art:decorated}}
 
 : coating
 enameled
@@ -35,7 +36,7 @@ polished
 
 : material
 embroidered with {metal:precious} thread
-{lined|trimmed} with {fur and pelt.animal} fur
+{lined|trimmed} with {fur and pelt:fur}
 {stitched|threaded} with {metal:precious} thread
 
 : object

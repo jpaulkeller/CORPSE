@@ -1,6 +1,6 @@
 / http://random-generator.com/index.php?title=Epithets
 
-: Epithets
+: Epithet
 {:Barbarian}
 {:General}
 {:Mage}
@@ -9,9 +9,21 @@
 {:Warrior}
 
 : General
-the Elder
-the Younger
+the {Adjective}
+the {Bald|Hairy}
+the {Build}
+the {Color:Common}
+the {Elder|Younger}
+the {Feeling}
+the {Mood}
+the {Noise}
+the {Old|Young}
+the {Profession}
+the {Size:Person}
+the {Superlative}
 the {Trait}
+{Color:Common}-{cloak|house|moon|shield|sky}
+{from|of} the {Terrain}
 
 : Barbarian
 , {Title:Bad} of the {Weapon{!OneWord}} God
@@ -65,12 +77,23 @@ saint
 {religious rank}
 
 : Warrior Title
+archon
+avenger
+brawler
 butcher
 champion
 conqueror
+crusher
+foe
+harrier
+juggernaut
 lord
+raider
+ravager
+reaper
 reaver
 slayer
+stalker
 veteran
 warlord
 {pseudo class:fighter}
@@ -188,7 +211,7 @@ whispers
 
 : Place
 / {: Fantasy Landmarks.main}
-{landmark}
+{landmark:generic}
 / {: Fantasy Town Names.main}
 {town name}
 

@@ -1,7 +1,7 @@
 / inspired by http://chaoticshiny.com/charmgen.php
 
 : Charm
-{:material} {:piece} with {:decoration}{50% on the front and {:decoration} on the back}; {:power}
+{:material} {:piece} with {:decoration}{50% on the front and {:decoration} on the back}; {:POWER}
 
 : Piece
 bracelet

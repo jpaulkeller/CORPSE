@@ -1,0 +1,250 @@
+/ http://random-generator.com/index.php?title=Inscriptions
+
+/ [Secret Society Title.TitleDescriptor] {:Definite Noun}
+/ [Secret Society Title.TitleDescriptor] {Evocative Noun}
+{:Advice}
+{:Definite Noun}
+{:Definite Noun} of {Evocative Noun}
+{:Definite Noun}{:SUFFIX NEGATIVE}
+{Epithet}
+{Evocative Concept:Negative}
+{Evocative Concept:Positive}
+{Evocative Noun} of {:Creatures}
+{Evocative Noun}’s {Evocative Noun}
+{Evocative Concept:Negative}{:SUFFIX NEGATIVE}
+{Evocative Concept:Negative}{:SUFFIX POSITIVE}
+{Evocative Concept:Positive}{:SUFFIX NEGATIVE}
+{Evocative Concept:Positive}{:SUFFIX POSITIVE}
+{Evocative Noun}
+{Rank} of {:Definite Noun}s
+{Rank} of {Evocative Noun}
+
+: Creatures
+the {:Definite Noun}
+Ten {:Definite Noun}s
+a Hundred {:Definite Noun}s
+a Thousand {{:Definite Noun}+}
+
+: Definite Noun
+{charge}
+{epithet:warrior title}
+{fauna}
+{humanoid{!oneword}}
+{mythical creature}
+{pseudo class}
+{rank}
+{undead:common}
+{weapon{!oneword}}
+
+: Suffix Positive
+-Bringer
+-Dancer
+-Maker
+-Singer
+-Spreader
+-Forger
+ Speaker
+’s Avenger
+’s Essence
+’s Herald
+’s Servant
+’s Spirit
+’s Voice
+
+: Suffix Negative
+-Destroyer
+-Hunter
+-Killer
+-Ravager
+-Slayer
+-Stalker
+ Blight
+ Breaker
+ Cleaver
+ Crusher
+ Master
+ Piercer
+ Reaper
+ Reaver
+ Slayer
+ Stealer
+ Taker
+ Ward
+’s Curse
+’s Dark Curse
+’s Eternal Curse
+’s Eternal Wrath
+’s Harbinger
+’s Revenge
+’s Vengeance
+’s Wrath
+
+: Advice
+{Evocative Noun} Is the {:RELATIONSHIP} {Evocative Noun}
+{Evocative Noun} Comes From {Evocative Noun}, Not From {Evocative Noun}
+{Evocative Noun} Is Worth More Than {Evocative Noun}
+{Evocative Concept:Positive} Comes to He Who Has the {Evocative Concept:Positive} of the {Evocative Adj:Neutral} {:Definite Noun}
+{:Guard} Against the {Evocative Adj:Negative} {:Definite Noun}
+{:Guard} Ye Well This {Evocative Adj:Neutral} {Evocative Concept:Positive}
+{:Only} {Evocative Noun} {:Verb Important}
+{:Only} the {Evocative Adj:Positive} {:Verb Effect}
+{:Trust} the {Evocative Adj:Neutral} {:Definite Noun} for {Evocative Concept:Positive}
+{:Verb2A} {:Verb2B} the {Evocative Noun}, Lest It {:Effect}
+Beware the {Evocative Adj:Negative} {:Definite Noun}
+He Who {:Verb3} {Evocative Noun} Also {:Verb3} {Evocative Noun}
+He Who {:Verb3} {Evocative Noun} Is as {Evocative Adj:Positive} as the {:Definite Noun}
+{Evocative Concept:Negative} Only Begets {Evocative Concept:Negative}
+{Evocative Concept:Positive} Precedes {Evocative Concept:Positive}
+{Evocative Concept:Positive} Will Overcome {Evocative Concept:Negative}
+Only Through {Evocative Concept:Positive} Can {Evocative Concept:Positive} Be Achieved
+the {:Essence} {Evocative Noun} Is {Evocative Noun}
+Those Who Seek {Evocative Concept:Positive} Are Doomed to {Evocative Concept:Negative}
+{:Trust} the {Evocative Adj:Neutral} {:Definite Noun} and {Evocative Concept:Positive} Shall Be Yours
+When Faced With {Evocative Concept:Negative} or {Evocative Concept:Negative}, Choose {Evocative Concept:Positive}
+Who Can Have {Evocative Concept:Positive} When Confronted With {Evocative Concept:Negative}?
+Without {Evocative Concept:Positive} There Can Be No {Evocative Concept:Positive}
+{Evocative Concept:Negative} Can Never Break My {Evocative Concept:Positive}
+the {Epoch:Age} of {Evocative Noun} Is {:Time}
+{:Trust} the {Evocative Noun} of the {Evocative Adj:Neutral} {:Definite Noun} and {Evocative Concept:Positive} Shall Be Yours
+{Evocative Concept:Positive} Can Only Be Gained by {Evocative Noun}
+{:Desire} {Humanoid} {Blood|Souls}!
+
+: Relationship
+Child of
+Companion of
+Daughter of
+Embodiment of
+Father of
+Harbinger of
+Herald of
+Master of
+Mother of
+Noblest Reason for
+Price of
+Purest Form of
+Reward of
+Root of all
+Slave of
+Son of
+True Source of
+Wages of
+
+: Verb3
+Attains
+Becomes one with
+Comprehends
+Conquers
+Controls
+Emulates
+Fights against
+Learns
+Masters
+Resists
+Seeks after
+Understands
+
+: Verb2A
+Aspire to
+Attempt to
+Endeavor to
+It is time to
+Learn to
+Look to
+Seek to
+Strive to
+Try to
+You must
+
+: Verb2B
+Attain
+Bridle
+Command
+Comprehend
+Constrain
+Control
+Dominate
+Expand
+Give in to
+Govern
+Master
+Restrain
+Surrender to
+Tame
+Unleash
+Yield to
+
+: Verb Important
+Can Save You
+Can Stop Me Now
+Is Important
+Matters
+
+: Verb Effect
+Can Withstand My {Evocative Noun}
+Endure
+Shall Live
+Shall Prosper
+Survive
+Will Inherit the Earth
+
+: Effect
+Become your Master
+Become your downfall
+Find you unprepared
+Lead to {Evocative Concept:Negative}
+Rule over you
+Take from you that which you hold most dear
+
+: Desire
+Bathe me in
+Forged in
+I Covet
+I Desire
+I Long for
+I Need
+I Thirst for
+I Want
+Quench me in
+Thirsty for
+
+: Guard
+Defend
+Guard
+Protect
+Safeguard
+Shield
+Ward
+
+: Trust
+Believe in
+Confide in
+Depend on
+Lean towards
+Look to
+Rely upon
+Trust in
+
+: Time
+approaching
+beginning
+dawning
+ended
+near
+nigh
+over
+past
+rising
+starting
+upon us
+
+: Essence
+Basis of
+Essence of
+Key to
+Secret to
+Soul of
+Source of
+
+: Only
+Only
+Nothing but

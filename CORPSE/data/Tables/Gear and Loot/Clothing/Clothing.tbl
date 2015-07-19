@@ -1,11 +1,11 @@
 / http://www.legolas.org/items/clothing.html
-
+/ zTx TREASURE software
 / Use {~{clothing}} to format the name.
 
 .Clothing           Cost      Weight
-      
 apron                 1 cp     1
 belt                  3 sp     0.3
+blouse
 boots, high, hard     2 gp     7
 boots, high, soft     1 gp     5
 boots, low, hard      1 gp     5
@@ -13,6 +13,7 @@ boots, low, soft      8 sp     3
 boots, riding         3 gp     6
 breeches              2 gp     1
 brooch, plain        10 gp     0.2
+buckle
 cap                   1 sp     1
 cape, cloth           3 cp     1
 cape, fur           100 gp+    2
@@ -26,8 +27,14 @@ cloth, satin          4 gp/sy  1/sy
 cloth, silk          10 gp/sy  0.5/sy
 cloth, velvet         4 gp/sy  1/sy
 cloth, wool           8 bp/sy  2/sy
+coat
+corset
+cowl
+crinoline
+doublet
 dress                 9 cp+    4
 eyepatch
+frock
 fur trimming         10 gp+   
 girdle, broad         3 gp     1
 girdle, normal        2 gp     0.5
@@ -37,30 +44,49 @@ gown, common         12 sp     2
 hat, cloth           10 cp     1
 hat, fur             40 gp+    1
 hat, straw            7 bp     0.5
+hood
 hose/leggings         2 gp     0.5
 jacket, silk         80 gp     1
 jerkin                1 gp     7.5
+kilt
 knife sheath          3 cp     0.5
 loincloth             1 cp     0.5
+mantle
 mask
 mittens               3 sp     0.5
+muffettee
+neckband
 pantaloons
-robe, poor            6 cp     5
+periwig
+pinafore
+purse
+ribbon
+ring
 robe, common          9 sp     5
 robe, embroidered    20 gp     5
-scarf
+robe, poor            6 cp     5
 sandals               5 cp     1
+sash
 sash                  1 gp     0.5
+scarab
+scarf
 shawl
 shirt/blouse          4 cp+    1
 shoes                 1 gp     1
+shroud
 skirt
+skull-cap
 slippers
+smock
+stockings
 surcoat               6 sp     1
 tabard                6 sp     1
 toga, coarse          8 cp     1
 trouser/skirt         3 cp+    1
 tunic                 8 sp     1
+turban
+veil
 vest, cloth           1 gp     1
 vest, fur           100 gp+    1.5
 vestments
+wimple

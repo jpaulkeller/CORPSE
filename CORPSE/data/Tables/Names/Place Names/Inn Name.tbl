@@ -1,46 +1,104 @@
 : Inn Name
 <Tavern={:NAME}>
 
-: name
-{Adjective{!OneWord}} {Fauna{{!OneWithSame}|{!OneWord}}} {80%{Inn Type}}
-{Adjective{!OneWord}} {Inn Type}
-{Adjective{!OneWord}} {Profession#{#{!}:.}[^-_ ]+#} {80%{Inn Type}}
-{Adjective{!OneWord}} {Profession{!OneWithSame}} {80%{Inn Type}}
+: Name
+{25%{Trait{!OneWord}} }{:Who}'s {:Type}
+{:Creature} and {:Creature{!MaybeSameFirst}} {80%{:Type}}
+{:Creature}'s {Home}
+{:Creature}'s {Organ{!OneMaybeSame}} {80%{:Type}}
+{:Creature}'s {Organ{!OneMaybeSame}} {80%{:Type}}
+{:Type} by the {Site}
+{:Type} of {Evocative Concept}
+{:Who}'s {Evocative Concept{!OneWithSame}} {80%{:Type}}
+{Adjective{!OneWord}} {:Creature{!MaybeSameFirst}} {80%{:Type}}
+{Adjective{!OneWord}} {:Type}
+{Adjective{!OneWord}} {:Who} {80%{:Type}}
 {Charge{!OneWord}} and {Charge{!OneWord}}
-{Color:Common{!OneWord}} and {Color:Common{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Common{!OneWord}} {Charge{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Common{!OneWord}} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Common{!OneWord}} {Flora{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Common{!OneWord}} {Made Of{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Common{!OneWord}} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
-{Color:Common{!OneWord}} {Transport{!OneWord}} {80%{Inn Type}}
-{Condition:Wood Weapon} {Flotsam:Simple{!OneMaybeSame}} {80%{Inn Type}}
-{Container{!OneWord}} of {Contents.Item{!OneWord}} {80%{Inn Type}}
-{Disposition} {Humanoid{!OneMaybeSame}} {80%{Inn Type}}
-{Disposition} {Profession{!OneMaybeSame}} {80%{Inn Type}}
+{Color:Common{!OneWord}} and {Color:Common{!OneMaybeSame}} {80%{:Type}}
+{Color:Common{!OneWord}} {:What{!MaybeSameFirst}} {80%{:Type}}
+{Condition:Wood Weapon} {Flotsam:Simple{!OneMaybeSame}} {80%{:Type}}
+{Container{!OneWord}} of {Contents.Item{!OneWord}} {80%{:Type}}
+{Disposition} {:Who{!MaybeSameFirst}} {80%{:Type}}
 {Famous Inn}
-{Fauna{!OneWord}} and {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
-{Fauna{!OneWord}}'s {Home}
-{Fauna{!OneWord}}'s {Organ{!OneMaybeSame}} {80%{Inn Type}}
-{Inn Type} by the {Site}
-{Inn Type} of {Evocative Concept}
-{Metal:Common} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
-{Metal:Common} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
-{Metal:Common} {Tiny Item{!OneMaybeSame}} {80%{Inn Type}}
-{Mood} {Humanoid{!OneWithSame}} {80%{Inn Type}}
-{Mood} {Profession{!OneWithSame}} {80%{Inn Type}}
-{Mythical Creature{!OneWord}}'s {Organ{!OneMaybeSame}} {80%{Inn Type}}
-{Noise{!OneWord}} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
-{Noise{!OneWord}} {Musical Instrument{!OneMaybeSame}} {80%{Inn Type}}
-{Noise{!OneWord}} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
-{Number:TwoToFive} {{Fauna{!OneMaybeSame}}+} {80%{Inn Type}}
-{Number:TwoToFive} {{Tiny Item{!OneMaybeSame}}+} {80%{Inn Type}}
-{Profession{!OneWord}}'s {Evocative Concept{!OneWithSame}} {80%{Inn Type}}
-{Texture{!OneWord}} {Site:Artificial{!OneMaybeSame}} {80%{Inn Type}}
-{Trait{!OneWord}} {Fauna{!OneMaybeSame}} {80%{Inn Type}}
-{Trait{!OneWord}} {Mythical Creature{!OneMaybeSame}} {80%{Inn Type}}
-{Trait{!OneWord}} {{Academic|Military|Religious|Feudal} Rank}'s {80%{Inn Type}}
-{Trait{!OneWord}} {{Class.Class{!OneWithSame}|Class}}'s {80%{Inn Type}}
-{Trait{!OneWord}} {{Profession.Profession{!OneWithSame}|Profession}} {80%{Inn Type}}
-{Trait{!OneWord}} {{Race.Race{!OneWithSame}|Race}}'s {80%{Inn Type}}
-{{Flora{!OneWord}}+} and {{Flora{!OneWord}}+} {80%{Inn Type}}
+{Metal:Common} {:Creature{!MaybeSameFirst}} {80%{:Type}}
+{Metal:Common} {Tiny Item{!OneMaybeSame}} {80%{:Type}}
+{Mood} {:Who{!MaybeSameFirst}} {80%{:Type}}
+{Name}'s {:Type}
+{Noise{!OneWord}} {:Who{!MaybeSameFirst}} {80%{:Type}}
+{Noise{!OneWord}} {Musical Instrument{!OneMaybeSame}} {80%{:Type}}
+{Number:TwoToFive} {{:What{!MaybeSameFirst}}+} {80%{:Type}}
+{Texture{!OneWord}} {Site:Artificial{!OneMaybeSame}} {80%{:Type}}
+{Trait{!OneWord}} {:Who{!MaybeSameFirst}} {80%{:Type}}
+{{Flora{!OneWord}}+} and {{Flora{!OneWord}}+} {80%{:Type}}
+
+: Who
+{:creature}
+{class{!oneword}}
+{humanoid{!oneword}}
+{profession{!oneword}}
+{pseudo class{!oneword}}
+{race{!oneword}}
+{{academic|military|religious|feudal} rank}
+
+: Creature
+{fauna{!oneword}}
+{mythical creature{!oneword}}
+
+: What
+{charge{!oneword}}
+{fauna{!oneword}}
+{flora{!oneword}}
+{made of{!oneword}}
+{musical instrument{!oneword}}
+{mythical creature{!oneword}}
+{tiny item{!oneword}}
+{transport{!oneword}}
+{weapon{!oneword}}
+
+: Type
+inn
+tavern
+{:food} and {:drink}
+{:lodging}{33% and {:{food|drink}}}
+{:type uncommon}
+
+: Lodging
+guest house
+hostel
+inn
+lodging
+
+: Food
+cafe
+dining room
+eatery
+festhall
+grill
+restaurant
+tavern
+
+: Drink
+alehouse
+bar
+brewpub
+distillery
+meadhouse
+pub
+saloon
+still
+
+: Type Uncommon
+bed and breakfast
+cellar
+club
+commons
+cottage
+den
+guild
+hall
+haven
+hospice
+house
+meeting hall
+oasis
+retreat

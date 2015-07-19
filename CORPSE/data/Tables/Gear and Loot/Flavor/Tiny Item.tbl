@@ -111,7 +111,7 @@ writing ink
 yarn
 {coin}
 {color:common} candle
-{currency}
+{currency.coin}
 {d12 evil priest carrying}
 {d12 thief carrying}
 {d12 warrior carrying}

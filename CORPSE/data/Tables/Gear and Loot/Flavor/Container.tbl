@@ -30,6 +30,16 @@ urn
 {:cloth}
 {:liquid}
 
+: Furnishing
+armoire
+bookcase
+cabinet
+chest of drawers
+desk
+display case
+hamper
+wardrobe
+
 : Cloth
 bolt
 bundle
@@ -40,6 +50,38 @@ skien
 {fabric} bag
 {fabric} pack
 {fabric} pouch
+
+: Small Loot
+belt pouch
+haversack
+{fabric} pouch
+small {fabric} bag
+small box
+{:medium loot}
+{:container}
+
+: Medium Loot
+backpack
+bag
+basket
+box
+bundle
+duffel
+knapsack
+pouch
+{fabric} sack
+satchel
+small chest
+urn
+{:large loot}
+
+: Large Loot
+barrel
+cask
+chest
+coffer
+crate
+trunk
 
 : Drygoods
 bag
@@ -112,16 +154,6 @@ jar
 peppermill
 shaker
 tin
-
-: Furnishing
-armoire
-bookcase
-cabinet
-chest of drawers
-desk
-display case
-hamper
-wardrobe
 
 : Potions
 {33%{:description} }{:potion container}{33% {:decoration}}

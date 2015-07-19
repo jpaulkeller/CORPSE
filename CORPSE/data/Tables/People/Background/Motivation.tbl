@@ -1,4 +1,5 @@
 / http://random-generator.com/index.php?title=Experimental_Fantasy_PC
+/ http://random-generator.com/index.php?title=Conundrum
 
 : Motivation
 a more favoured sibling is going to inherit the family wealth
@@ -6,6 +7,7 @@ an older sibling is going to inherit the family wealth
 became a refugee due to {starvation|war|disease|{disaster}}
 chosen for human sacrifice
 committed a crime, and was let off on condition that they go into exile ({:guilt})
+curiosity: has the curiosity gotten someone deep into trouble, or is satisfying their curiosity the reason for their eliciting aid from the protagonists?
 deserted from the army
 escaped convict ({:guilt})
 escaping an oppressive feudal lord
@@ -14,10 +16,17 @@ escaping their low status in their tribe
 exiled for a crime ({:guilt})
 family were killed due to {starvation|war|disease|{disaster}}
 fascinated with the civilized world
+fear: the last resort of a desperate man, or is it the sort of misplaced fear that leads to prejudice and persecution?
 fleeing an unwanted arranged marriage
+grief: the situation has come about because someone is grief stricken at a loss: maybe it’s a recent death of a loved one, or maybe it’s the loss of a memento or reputation.
 guilt about the source of the family's wealth ({slavery|crime|war|political objection to inequality of wealth|religious objection to luxury})
+jealousy: someone is envious of something that someone else has.  a rival for the affections of a beloved?  a longing for a vast fortune?  a coveting of oxen?
+justice: either rightly or wrongly, someone believes that what they are doing is right, at least morally if not necessarily legally.  alternatively, someone could be adhering too rigidly to the letter of the law, rather than the spirit.
+nature: this is just the way the world is, either the flora and fauna, or human nature.  maybe someone is preparing for the end of their own natural lifespan, or just following their base instincts.
+pride: someone just can’t admit they are wrong; a noble refuses to let the people see him lose face; an investigator too fixated on his own self-worth to accept help from the protagonists.
 rejected in love and set out to get themselves killed
 rejected in love and set out to prove themselves
+revenge: is the revenge for an actual slight done to them, or merely a perceived one?
 sentenced to death for a crime ({:guilt})
 the character has terrible but enticing dreams of sitting on the throne of a vast underworld {realm}
 the character is haunted by visions of a beautiful woman/handsome man living on an island at the center of a vast underground lake (it's {the character's true love|an incubus/succubus|a sorcerer/sorceress|someone who died centuries ago})
@@ -31,8 +40,8 @@ the character's ({evil twin|robot double|clone|homonculus}) has fled into the du
 the character's {:associate} has been trapped in amber and is on display in the trophy room of an evil wizard who lives in the dungeon
 the character's {:associate} is dying from a disease that can only be cured with the waters from a sacred subterranean spring
 the character's {:associate} is imprisoned ({:guilt})
-their family has lost their wealth, due to {another family member's|the adventurers'} actions
 their family has lost their wealth, due to being on the losing side of a {war|political struggle}
+their family has lost their wealth, due to {another family member's|the adventurers'} actions
 their tribe has been wiped out by {another tribe|an evil {shaman|wizard}|'civilised' folk|internal strife|disease}
 too free-spirited to be satisfied with the life of a peasant
 too intelligent and inquisitive to be satisfied with the life of a peasant
@@ -53,8 +62,6 @@ spouse
 {brother|sister}
 {mother|father}
 {son|daughter}
-
-/ http://random-generator.com/index.php?title=Conundrum
 
 : Good
 act honorably

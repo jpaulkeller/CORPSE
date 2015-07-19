@@ -1,5 +1,5 @@
 .Level  Spell                         Type           Element      Source     Class
-/Environmental  = Spell
+.Environmental = Spell
   
  3      call lightning                env            fire         tsrph2     drui
  4      control temperature           env                         tsrph2     drui

@@ -1,0 +1,28 @@
+: Protagonist
+<Deity={Divine Name}>
+A {50%{mood}} {Humanoid} named {Name}
+A {50%{mood}} {profession} named {Name}
+A {50%{mood}} {pseudo class} named {Name}
+The {#{Profession!#.*craftsman.*#}:^(.+?)  } Guild
+The {20%{adjective}} {rank}
+a corrupt {pseudo class:priest}
+a famous bard
+a foreign diplomat
+a powerful {pseudo class:fighter}
+a prophet
+a {trait:good} {pseudo class}
+the {:group} of {Place Name}
+the {{Guild}+} Guild
+the {{Humanoid}+} of {Place Name}
+{ANTAGONIST}
+{Epithet:Mage}
+{Epithet:Priest}
+{Epithet:Warrior}
+{Law:Authority}
+{Name} the {Evocative Adj:Positive}
+{Noble Name}
+{Religious Rank} {Name}
+
+: Group
+guards
+pilgrims

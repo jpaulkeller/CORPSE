@@ -77,6 +77,11 @@ snake
 water buffalo
 zebu
 
+: Fur
+7x {:common.animal} fur
+2x {:exotic.animal} fur
+{furred monster} fur
+
 : Leather
 25x {:hide} hide
 alligator skin

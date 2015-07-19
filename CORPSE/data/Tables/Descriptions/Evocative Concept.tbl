@@ -3,32 +3,103 @@
 : Not Negative = Positive + Neutral
 
 : Positive
+balance
+battle
 beauty
 birth
 blessings
+bravery
+brilliance
+clarity
 compassion
+control
+courage
 creation
+cunning
+dawn
 destiny
+determination
+dignity
+dream
+endurance
+eternity
+faith
+fate
+fire
+focus
+fortune
+glory
+grace
 growth
 harmony
 healing
+health
 heart
 heaven
+heritage
+honor
 hope
+independence
+invulnerability
 joy
+judgment
 justice
+knowledge
+labor
 laughter
+law
+leadership
+legend
 life
 light
+lightning
 love
+loyalty
 luck
+magic
 mercy
+might
+order
+patience
 peace
+pleasure
+power
+prestige
 prosperity
+protection
+prowess
+purpose
 radiance
+reason
+redemption
+resistance
+respect
 resurrection
 riches
+sacrifice
+salvation
+soul
+spirit
+splendor
+steadfastness
+stealth
+storm
+strength
+success
+survival
+thunder
+treasure
+truth
+unity
+valor
 victory
+vigor
+virtue
+vision
+wealth
+willpower
+wind
+wisdom
 
 : Neutral
 augury
@@ -155,20 +226,25 @@ youth
 
 : Negative
 affliction
+agony
 anger
 anguish
+annihilation
+avarice
 banishment
 blindness
 blood
+bloodshed
 bondage
 bones
 broken promises
 calamity
+carnage
 cataclysm
 catastrophe
 chaos
-contagion
 conquest
+contagion
 curses
 damnation
 darkness
@@ -184,8 +260,11 @@ despair
 destruction
 devastation
 deviltry
+disaster
 disasters
+discord
 disgrace
+dishonor
 dissolution
 distress
 doom
@@ -218,6 +297,7 @@ misery
 misfortune
 mists
 monsters
+murder
 mystery
 necromancy
 night
@@ -230,12 +310,14 @@ phantasms
 plague
 pride
 rage
+revenge
 ruin
 scourge
 secrets
 shadow
 shadows
 sigils
+sin
 skulls
 slaughter
 slime
@@ -246,6 +328,7 @@ souls
 starvation
 strife
 suffering
+temptation
 terror
 the abyss
 the ancients
@@ -267,11 +350,15 @@ the {evocative adj} cult
 the {evocative adj} idol
 the {evocative adj} one{s|}
 the {monster}{s|}
+thunder
 torment
+torture
 tragedy
 treachery
 trickery
 trouble
+vengeance
 war
+winter
 woe
 wrath

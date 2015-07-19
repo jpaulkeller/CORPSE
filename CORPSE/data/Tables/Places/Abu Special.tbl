@@ -1,0 +1,268 @@
+/ http://random-generator.com/index.php?title=Hundred Special Spaces
+
+: Mountain
+50x {:minerals}
+20x {:cave}
+5x {:cave} inhabited by {:mountain creatures}s
+20x a breeding site for {:mountain creatures}s
+10x {:mountain geology}
+2x {:special}
+
+: Minerals
+10x pentlandite deposit
+12x bauxite deposit
+12x chalcopyrite deposit
+15x coal deposit
+1x platinum group ore deposit
+20x hematite deposit
+2x gemstone-quality deposit of a rare mineral
+2x gold deposit
+3x vein of adamantine spar
+4x silver deposit
+7x gemstone-quality deposit of a common mineral
+8x cinnabar deposit
+8x pitchblende deposit
+8x wolfram deposit
+
+: Cave
+50x a small, single-room cave
+75x a collection of small, single-room caves
+25x a short cave tunnel exiting on the opposite side of a large pluton
+30x a lava tunnel travelling some hundred meters
+15x a sinkhole with a small rubble-filled pond 
+8x a small limestone cave with a dark tunnel leading to a series of connected rooms
+4x a sinkhole into which a river empties, forming a deep lake.
+4x a sinkhole into which a river pours, continuing underground.
+3x a series of caves including a large room
+2x a dry sinkhole with tunnels leading off into the depths of the earth
+2x a labyrinthine cave network with {:Dice.1d6} other exits
+2x a set of many small, independent limestone cave networks each containing a handful of rooms.
+1x an unassuming cave entrance attached to a massive underground network.  There are no other natural exits
+1x a cave network leading to a massive underground cavern.
+1x lava tunnels attached to deeper caves lead to a cavern over bubbling magma.
+2x a massive cave network attached to an underground river leading to a similar network elsewhere
+3x a cave network including both flooded and air-filled caves below the local water table. 
+2x a single room cavern carved by some burrowing animal.
+1x a cave network tunneled by massive subterranean eels.  The eels are bloodthirsty and malevolent, but not sentient.
+1x a tunnel system left over from some previous civilization.
+5x a series of {:Dice.1d6} connected cavern chambers.
+
+: Mountain Geology
+75x {:cave}
+75x {:minerals}
+10x volcanic caldera
+20x hot springs
+15x mud baths
+15x large waterfall backed by a sheer cliff
+30x large waterfall with {:cave} behind it.
+40x local peak
+
+: Random Rocks
+andesite
+basalt
+granite
+limestone
+shale
+
+: Sentient Race 
+4x earth elementals
+3x dwarves
+4x recent emigrants
+6x descendants of emigrants from the far past
+4x people of the same species but a different subspecies
+1x radically alien sentient race
+5x rock spirits
+5x humanoid {:mountain creatures}-people
+4x wind spirits
+
+: Mountain Magic
+earth
+fire
+stone
+metal
+air
+sky
+
+: Special
+3x a dragon's lair
+5x a roc's nest
+2x cliff of refined metal (such as would be produced by smelting or otherwise processing several {:minerals}s and alloying them with iron  by magic if need be)
+2x entrance to a cave network spanning the entire continent
+3x entrance to a cave network allowing passage via river under a major mountain range  via a tunnel through the root of the mountain.
+1x entrance to a cave network allowing passage by foot under the ocean to another continent.
+4x {20}000 ft drop off
+2x a rival civilization of {:sentient race}
+1x a rival civilization of {:sentient race} inhabiting {:cave}
+1x a breeding site for cave {:mountain creatures}
+1x zone of increased {:mountain magic} magic
+
+: Jungle
+20x a breeding site for {:animal adjective} {:jungle creatures}s
+15x a breeding site for {:animal adjective} {:animal adjective} {:jungle creatures}s
+3x a breeding site for {:animal adjective} {:animal adjective} {:animal adjective} {:jungle creatures}s
+22x a major population center of {:plant adjective} {:jungle flora}
+17x a major population center of {:plant adjective} {:plant adjective} {:jungle flora}
+5x a major population center of {:plant adjective} {:animal adjective} {:jungle flora}
+1x a major population center of {:plant adjective} {:plant adjective} {:plant adjective} {:jungle flora}
+20x {:jungle geology}
+4x {:cave}
+2x {:jungle special}
+3x {:jungle race}
+
+: Animal Adjective
+aquatic
+arboreal
+carnivorous
+dire
+eusocial
+giant
+herbivorous
+highly territorial
+howling
+large-mouthed
+long-lived
+metamorphic
+poisonous
+pygmy
+rainbow-colored
+semi-aquatic
+short-lived
+territorial
+trap-building
+unusually agile
+unusually stealthy
+unusually strong
+venomous
+vicious
+
+: Plant Adjective
+ancient
+carnivorous
+edible
+extremely poisonous
+giant
+man-eating
+poisonous
+psychotropic
+rapidly growing
+thorny
+unusually resilient
+venomous
+{jungle encounter}-symbiotic
+
+: Jungle Flora
+bushes
+ground cover
+herbaceous plant
+moss
+mushrooms
+tree fungi
+trees
+underbrush
+vines
+
+: Jungle Race
+a rival civilization of a radically alien sentient race
+a rival civilization of decedents of emigrants from the far past
+a rival civilization of dryads
+a rival civilization of elves
+a rival civilization of humanoid {jungle encounter}-people
+a rival civilization of lizardmen
+a rival civilization of people of the same species but a different subspecies
+a rival civilization of recent emigrants
+a rival civilization of sentient {jungle encounter}
+a rival civilization of sentient {jungle flora}
+a rival civilization of vaguely humanoid {jungle flora}-people
+
+: Jungle Magic
+blood
+death
+earth
+life
+nature
+plant
+spirit
+water
+
+: Jungle Geology
+a large {:minerals}
+a massive waterfall with only a small sheltered area behind it
+a massive waterfall with {:cave} behind it
+geyser
+igneous batholith
+large lake
+large {random rocks} boulders
+particularly intense rapids
+quicksand
+section of swamp
+{:cave}
+{:cave} filled with {:plant adjective} cave {:jungle flora}
+{:minerals}
+
+: Jungle Special
+a breeding site for {:animal adjective}x  {:animal adjective}, {:animal adjective}, {:animal adjective} {:jungle creatures}s
+a massive waterfall with {:cave} behind it, inhabited by {:animal adjective} cave {:jungle creatures}, {:animal adjective} cave {:jungle creatures}, {:plant adjective} cave {:jungle flora}, and {:plant adjective} cave {:jungle flora}
+invisible {:jungle creatures}s
+magic {:jungle flora}
+manticore
+overgrown ruins of a previous civilization
+overgrown ruins of a previous civilization inhabited by {:jungle race}.
+telepathic {:jungle race}
+zone of increased {:jungle magic} magic 
+{:animal adjective} manticore
+{:animal adjective} {:animal adjective} {:jungle race}
+{:cave} inhabited by {:jungle race}
+{:cave} inhabited by {:jungle race} and filled with {:plant adjective} cave {:jungle flora}
+{:cave} overgrown with {:plant adjective} {:jungle flora} and {:plant adjective} {:jungle flora}x  inhabited by {:animal adjective} {:animal adjective} {:jungle creatures}
+{:jungle race} skilled in {:jungle magic} magic
+
+: Plains
+60x a breeding site for {:plains creatures}
+30x {:plains geology}
+10x a breeding site for {:plains adjective} {:plains creatures}
+5x a grove of small trees
+2x {:plains special}
+
+: Plains Adjective
+1x giant
+3x unusually fast
+2x silent
+2x unusually gregarious
+1x unusually stealthy
+3x wide ranging
+
+: Plains Geology
+7x a region of particularly high winds
+2x a glacial erratic
+3x a small lake
+1x a large lake connected to a major river
+1x a major river
+1x a large glacial erratic
+1x the weathered  time-worn remnant of a particularly erosion resistant mountain  now a small hill
+1x serpentine soil
+3x a region of extremely high winds
+
+: Plains Race
+2x a rival civilization of sentient {:plains creatures}
+3x a rival civilization of recent emigrants
+10x a rival civilization of decedents of emigrants from the far past
+1x a rival civilization of people of the same species but a different subspecies
+1x a rival civilization of humanoid {:plains creatures}-people
+4x a rival civilization of river sprites
+8x a rival civilization of tiny mischievous elves
+1x a foraging party of wind spirits associated with a rival civilization dwelling in a solitary mountain {:Dice.3d6} turns distant
+2x a rival civilization of wind spirits
+8x a rival civilization of tiny burrowing gnomes
+
+: Plains Special
+a border to a large region of unusually tall grass  {:dice.2d6} feet on average
+a permanent windstorm with a consistent direction.  the winds vary from {:dice.1d6}0 km/h to {:dice.1d6+6}0 km/h
+a region of increased sky magic
+a region of increased wind magic
+area remains warm at night and generally has calm  low speed winds
+glacial erratic with a usable {:minerals}
+large hill
+magic {:plains creatures}
+nothing but grass and sky for {:dice.1d6} turns
+{:plains adjective}{:plains adjective}{:plains creatures}
+{:plains race}

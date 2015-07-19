@@ -1,21 +1,21 @@
 
 / Sources: TSR DM's Guide 2nd Edition, page 135, table 88
 
-01-20  Potion: {TSR Potion} (in {3}-{Volume:Portable} {Container:Liquid})
-21-35  Scroll: {TSR Scroll}
-36-40  Ring of {TSR Ring}
-41-41  {30-42}" {TSR Material} Rod of {TSR Rod} ({#/{41-50}} charges)
-42-42  {5-6}' {Wood} Staff {TSR Staff} ({#/{20-25}} charges)
-43-45  {TSR Material:Wand} {wand:mix} {made of} Wand of {TSR Wand} ({#/{81-100}} charges) {1%Trapped!}
-46-46  {TSR Tome}
-47-48  {TSR Amulet}
-49-50  {TSR Cloak}
-51-52  {TSR Glove}
-53-53  {TSR Helm}
-54-55  {TSR Bottle}
-56-56  {TSR Dust}
-57-57  {TSR Tool}
-58-58  {TSR Music}
-59-60  {TSR Weird}
-61-75  Armor: {TSR Armor}
-76-100 Weapon: {TSR Weapon}
+20x Potion: {TSR Potion} (in {3}-{Volume:Portable} {Container:Liquid})
+15x Scroll: {TSR Scroll}
+5x  Ring of {TSR Ring}
+    {30-42}" {TSR Material} Rod of {TSR Rod} ({#/{41-50}} charges)
+    {5-6}' {Wood} Staff {TSR Staff} ({#/{20-25}} charges)
+3x  {TSR Material:Wand} {wand:mix} {made of} Wand of {TSR Wand} ({#/{81-100}} charges) {1%Trapped!}
+    {TSR Tome}
+2x  {TSR Amulet}
+2x  {TSR Cloak}
+2x  {TSR Glove}
+    {TSR Helm}
+2x  {TSR Bottle}
+    {TSR Dust}
+    {TSR Tool}
+    {TSR Music}
+2x  {TSR Weird}
+15x Armor: {TSR Armor}
+25x Weapon: {TSR Weapon}

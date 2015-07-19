@@ -4,6 +4,7 @@
 / - chimeric hybrids (the result of breeding experiments or amalgamation)
 / - genetically engineered
 / - alien from another world/plane/dimension
+/ - outsider (demon/devil)
 / - strange mutants
 / - cyborgs augmented with mechanical or magical parts
 / - clockwork automatons or robotic constructs
@@ -26,6 +27,7 @@
 : Alien
 tentacled alien {:origin}
 {acid|air|earth|fire|shadow|water} elemental
+{demon}
 
 : Hybrid
 {33%{:size} }hybrid with a {fauna} head on a {fauna{!different}} body

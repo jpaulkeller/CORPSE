@@ -66,6 +66,7 @@ wharf
 {~{structure}} destroyed by {disaster}
 
 : Natural
+aerie
 arch
 barrens
 bay
@@ -80,8 +81,8 @@ brook
 canyon
 cape
 cascades
-cave with soot marks on the ceiling
-cavern
+cave{50%s}
+cavern{50%s}
 cay
 channel
 chasm

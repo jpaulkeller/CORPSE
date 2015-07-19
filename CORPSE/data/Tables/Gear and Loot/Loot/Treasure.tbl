@@ -1,0 +1,51 @@
+/ Sources: TSR DM's Guide 2nd Edition, page 135, table 88
+/ http://random-generator.com/index.php?title=Interesting_Treasure_Hoard_Generator
+
+/ Note: Ingots are 1 pound each, bars are 25 pounds each.
+/ sealed by [treasure container.bagseal]
+/ [Treasure Container.concealment]
+
+: Level 1
+{container:small loot} holding {2d250} {currency:medium.coin}s
+{condition:cloth} {container:cloth} holding {debris:floor}
+{~{equipment}}
+{:misc}
+
+: Level 2
+{container:small loot} holding {2d100} {currency:medium.coin}s
+{container:small loot} holding mixed coins ({3d20} cp, {3d10} sp)
+{50%{condition:weapon} }{~{weapon}}
+{LUXURY:ITEM} (worth {2d25}0 sp)
+{luxury:jewelry} (worth {2d25}0 sp)
+{:misc}
+
+: Level 3
+{container:small loot} holding mixed coins ({5d20} cp, {5d10} sp, {50} gp)
+{container:small loot} holding {2d250} {currency:high.coin}s
+{~{armor}}
+{LUXURY:ITEM} (worth {2d25}0 ep)
+{luxury:jewelry} (worth {2d25}0 ep)
+{:misc}
+ 
+: Level 4
+{container:small loot} holding {2d100} {currency:high.coin}s
+{container:small loot} holding {2d8} {{gem}+}{50% and {2d8} {{gem}+}}
+{LUXURY:ITEM} (worth {2d25}0 gp)
+{luxury:jewelry} (worth {2d25}0 gp)
+{:misc}
+{cs treasure trove}
+{ENCHANTED ITEM}
+ 
+: Level 5
+{2d6} {metal} {ingots|bars}
+{container:small loot} holding {2d8} {{gem}+}{50% and {2d8} {{gem}+}}
+{LUXURY:ITEM} (worth {2d25}0 pp)
+{luxury:jewelry} (worth {2d25}0 pp)
+{:misc}
+{ENCHANTED ITEM}
+<Artifact={ARTIFACT NAME}>
+{RELIC}
+
+: Misc
+{metal:precious} key
+{container:small loot} holding {2d20} {coin:coins}

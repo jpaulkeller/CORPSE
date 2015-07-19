@@ -96,7 +96,9 @@ paladin
 preacher
 priest
 priest-king
+seeker
 shadow-priest
+{:sage}
 
 : Ranger
 archer

@@ -1,9 +1,22 @@
+: Undead = Common + Rare
+
+: Common
+ghost
+phantom
+shadow
+skeleton
+spectre
+vampire
+wight
+wraith
+zombie
+
+: Rare
 aswang
 banshee
 draugr
 fext
 ghast
-ghost
 ghoul
 headhunter
 jiangshi
@@ -13,14 +26,6 @@ mohrg
 mummy
 myling
 nightshade
-phantom
 preta
 revenant
-shadow
-skeleton
-spectre
-vampire
-wight
 wrackspawn
-wraith
-zombie

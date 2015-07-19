@@ -1,62 +1,70 @@
 : Generated Name
 // 3
-{:Consonant}{:vowel}{:consonant}
-{:Beginning}{:vowel}
-{:Vowel}{:consonant}{:vowel}
-{:Vowel}{:ending}
+{:Consonant}{:vl}{:consonant}
+{:Beginning}{:vl}
+{:V}{:consonant}{:vl}
+{:V}{:ending}
 
 // 4
 {:Consonant}{:dipthong}{:consonant}
-{:Consonant}{:vowel}{:consonant}{:vowel}
-{:Consonant}{:vowel}{:ending}
+{:Consonant}{:vl}{:consonant}{:vl}
+{:Consonant}{:vl}{:ending}
 {:Beginning}{:dipthong}
-{:Beginning}{:vowel}{:ending}
-{:Dipthong}{:consonant}{:vowel}
+{:Beginning}{:vl}{:ending}
+{:Dipthong}{:consonant}{:vl}
 {:Dipthong}{:ending}
-{:Vowel}{:repeat}{:vowel}
-{:Vowel}{:consonant}{:dipthong}
-{:Vowel}{:consonant}{:vowel}{:consonant}
-{:Vowel}{:repeat}{:dipthong}
+{:V}{:repeat}{:vl}
+{:V}{:consonant}{:dipthong}
+{:V}{:consonant}{:vl}{:consonant}
+{:V}{:repeat}{:dipthong}
 
 // 5
 {:Consonant}{:dipthong}{:ending}
-{:Consonant}{:vowel}{:consonant}{:vowel}{:consonant}
-{:Consonant}{:vowel}{:digraph}{:vowel}
-{:Consonant}{:vowel}{:ending}{:vowel}
-{:Consonant}{:vowel}{:repeat}{:vowel}
+{:Consonant}{:vl}{:consonant}{:vl}{:consonant}
+{:Consonant}{:vl}{:digraph}{:vl}
+{:Consonant}{:vl}{:ending}{:vl}
+{:Consonant}{:vl}{:repeat}{:vl}
 {:Beginning}{:dipthong}{:consonant}
-{:Beginning}{:vowel}{:consonant}{:vowel}
-{:Beginning}{:vowel}{:ending}
+{:Beginning}{:vl}{:consonant}{:vl}
+{:Beginning}{:vl}{:ending}
 {:Dipthong}{:consonant}{:dipthong}
-{:Dipthong}{:repeat}{:vowel}
-{:Vowel}{:consonant}{:vowel}{:ending}
+{:Dipthong}{:repeat}{:vl}
+{:V}{:consonant}{:vl}{:ending}
 
 // 6
-{:Consonant}{:vowel}{:consonant}{:vowel}{:consonant}{:vowel}
-{:Consonant}{:vowel}{:consonant}{:vowel}{:ending}
+{:Consonant}{:vl}{:consonant}{:vl}{:consonant}{:vl}
+{:Consonant}{:vl}{:consonant}{:vl}{:ending}
 {:Beginning}{:dipthong}{:ending}
-{:Beginning}{:vowel}{:digraph}{:vowel}
-{:Beginning}{:vowel}{:ending}{:vowel}
-{:Beginning}{:vowel}{:consonant}{:vowel}{:consonant}
+{:Beginning}{:vl}{:digraph}{:vl}
+{:Beginning}{:vl}{:ending}{:vl}
+{:Beginning}{:vl}{:consonant}{:vl}{:consonant}
 {:Dipthong}{:repeat}{:dipthong}
-{:Vowel}{:consonant}{:vowel}{:consonant}{:digraph}
-{:Vowel}{:digraph}{:vowel}{:consonant}
-{:Vowel}{:digraph}{:vowel}{:ending}
+{:V}{:consonant}{:vl}{:consonant}{:digraph}
+{:V}{:digraph}{:vl}{:consonant}
+{:V}{:digraph}{:vl}{:ending}
 
 // 7
-{:Consonant}{:vowel}{:consonant}{:dipthong}{:ending}
+{:Consonant}{:vl}{:consonant}{:dipthong}{:ending}
 
 // 7+
-{:Consonant}{:vowel}{:consonant}{:digraph}{:vowel}{:ending}
-{:Consonant}{:vowel}{:ending}{:consonant}{:vowel}{:ending}
-{:Consonant}{:vowel}{:ending}{:consonant}{:vowel}{:repeat}
-{:Digraph}{{:vowel}|{:dipthong}}{{:consonant}|{:repeat}}{:vowel}{50%{l|r|n}}{:ending}
+{:Consonant}{:vl}{:consonant}{:digraph}{:vl}{:ending}
+{:Consonant}{:vl}{:ending}{:consonant}{:vl}{:ending}
+{:Consonant}{:vl}{:ending}{:consonant}{:vl}{:repeat}
+{:Digraph}{{:vl}|{:dipthong}}{{:consonant}|{:repeat}}{:vl}{50%{l|r|n}}{:ending}
 
 // hyphenated
-{:Consonant}{:vowel}{:consonant}-{:consonant}{:vowel}{:consonant}
-{:Consonant}{:vowel}{:consonant}-{:vowel}{:consonant}{:vowel}
-{:Vowel}{:consonant}{:vowel}-{:vowel}{:consonant}{:vowel}
-{:Vowel}{:consonant}{:vowel}-{:consonant}{:vowel}{:consonant}
+{:Consonant}{:vl}{:consonant}-{:consonant}{:vl}{:consonant}
+{:Consonant}{:vl}{:consonant}-{:vl}{:consonant}{:vl}
+{:V}{:consonant}{:vl}-{:vl}{:consonant}{:vl}
+{:V}{:consonant}{:vl}-{:consonant}{:vl}{:consonant}
+
+: V
+9x {:Vowel}
+{:Vowel Unicode Upper}
+
+: vl
+9x {:vowel}
+{:vowel unicode lower}
 
 : consonant
 b
@@ -80,6 +88,8 @@ w
 x
 y
 z
+ç
+ñ
 
 : beginning
 {:consonant}
@@ -170,7 +180,7 @@ w
 x
 y
 z
-{:consonant}{:vowel}
+{:consonant}{:vl}
 
 : repeat
 dd
@@ -191,3 +201,59 @@ i
 o
 u
 y
+
+: Vowel Unicode Upper
+À
+Á
+Â
+Ã
+Ä
+Å
+Æ
+È
+É
+Ê
+Ë
+Ì
+Í
+Î
+Ï
+Ò
+Ó
+Ô
+Õ
+Ö
+Ù
+Ú
+Û
+Ü
+Ý
+
+: vowel unicode lower
+à
+á
+â
+ã
+ä
+å
+æ
+è
+é
+ê
+ë
+ì
+í
+î
+ï
+ð
+ò
+ó
+ô
+õ
+ö
+ø
+ù
+ú
+û
+ü
+ý

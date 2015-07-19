@@ -5,7 +5,7 @@
 / Ask for the inn name (with a suitable default), and randomize based on that
 / name so that the following data (until the next #) is consistent.
 -->
-# {INN={Tavern Name?{Inn Name}}}
+# {INN={Tavern Name?{Inn Name:Name}}}
 
 
 <!--
@@ -71,6 +71,9 @@
 The following people are currently in the common room:
 !loop {0-4}
 + NPC
+!loop end
+!loop {0-4}
+{tavern flavor:patron}
 !loop end
 
 !loop {Roll for more NPCs?{0 - 4}}
