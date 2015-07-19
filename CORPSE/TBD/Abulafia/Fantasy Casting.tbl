@@ -1,0 +1,328 @@
+Helper generator for [[Fantasy Character History]]
+
+<sgdisplay iterations="1">Events:<br/>[MILEVENT_REROLL_1D3]<br/></sgdisplay>
+
+<sgtable>
+;APPEARANCE_REROLL_1D2+1
+1,[Fantasy Traits.APPEARANCE]<br/>[Fantasy Traits.APPEARANCE]
+1,[Fantasy Traits.APPEARANCE]<br/>[Fantasy Traits.APPEARANCE]<br/>[Fantasy Traits.APPEARANCE]
+
+;BATTLE_EVENTS_REROLL_1D3+1
+1,[Fantasy Military Service.BATTLE_EVENTS]<br/>[Fantasy Military Service.BATTLE_EVENTS]
+1,[Fantasy Military Service.BATTLE_EVENTS]<br/>[Fantasy Military Service.BATTLE_EVENTS]<br/>[Fantasy Military Service.BATTLE_EVENTS]
+1,[Fantasy Military Service.BATTLE_EVENTS]<br/>[Fantasy Military Service.BATTLE_EVENTS]<br/>[Fantasy Military Service.BATTLE_EVENTS]<br/>[Fantasy Military Service.BATTLE_EVENTS]
+
+;BATTLE_EVENTS_REROLL_1
+1,[Fantasy Military Service.BATTLE_EVENTS]
+
+;BEHAVIORS_REROLL_1D3+1
+1,[Fantasy Traits.BEHAVIORS]<br/>[Fantasy Traits.BEHAVIORS]
+1,[Fantasy Traits.BEHAVIORS]<br/>[Fantasy Traits.BEHAVIORS]<br/>[Fantasy Traits.BEHAVIORS]
+1,[Fantasy Traits.BEHAVIORS]<br/>[Fantasy Traits.BEHAVIORS]<br/>[Fantasy Traits.BEHAVIORS]<br/>[Fantasy Traits.BEHAVIORS]
+
+;BELOVED_REROLL_2
+1,[Fantasy Romantic History.BELOVED]
+1,[Fantasy Romantic History.BELOVED]<br/>[Fantasy Romantic History.BELOVED]
+
+;BIRTH_OCCURENCE_REROLL_2
+1,[Fantasy Birth.BIRTH_OCCURENCE]
+1,[Fantasy Birth.BIRTH_OCCURENCE]<br/>[Fantasy Birth.BIRTH_OCCURENCE]
+
+;BIRTHMARKS_REROLL_1
+1,[Fantasy Traits.BIRTHMARKS]
+
+;BLESSINGS_REROLL_1
+1,[Fantasy Curses and Blessings.BLESSINGS]
+
+;BLESSINGS_REROLL_1D3
+1,[Fantasy Curses and Blessings.BLESSINGS]
+1,[Fantasy Curses and Blessings.BLESSINGS]<br/>[Fantasy Curses and Blessings.BLESSINGS]
+1,[Fantasy Curses and Blessings.BLESSINGS]<br/>[Fantasy Curses and Blessings.BLESSINGS]<br/>[Fantasy Curses and Blessings.BLESSINGS]
+
+;BRANCH_OF_SERVICE_REROLL_1
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]
+
+;COLORS_REROLL_1
+1,[Fantasy Traits.COLORS]
+
+;CURSES_REROLL_1D3
+1,[Fantasy Curses and Blessings.CURSES]
+1,[Fantasy Curses and Blessings.CURSES]<br/>[Fantasy Curses and Blessings.CURSES]
+1,[Fantasy Curses and Blessings.CURSES]<br/>[Fantasy Curses and Blessings.CURSES]<br/>[Fantasy Curses and Blessings.CURSES]
+
+;DARKSIDE_REROLL_2
+1,[Fantasy Curses and Blessings.DARKSIDE]
+1,[Fantasy Curses and Blessings.DARKSIDE]<br/>[Fantasy Curses and Blessings.DARKSIDE]
+
+;DEATH_SITUATIONS_REROLL_1
+1,[Fantasy Legacies.DEATH_SITUATIONS]
+
+;DEITIES_REROLL_1
+1,[Fantasy Life Events.DEITIES]
+
+;EVENTS_OF_ADULTHOOD_REROLL_1D3
+1,[Fantasy Life Events.EVENTS_OF_ADULTHOOD]
+1,[Fantasy Life Events.EVENTS_OF_ADULTHOOD]<br/>[Fantasy Life Events.EVENTS_OF_ADULTHOOD]
+1,[Fantasy Life Events.EVENTS_OF_ADULTHOOD]<br/>[Fantasy Life Events.EVENTS_OF_ADULTHOOD]<br/>[Fantasy Life Events.EVENTS_OF_ADULTHOOD]
+
+;EVENTS_OF_ADULTHOOD_REROLL_2
+1,[Fantasy Life Events.EVENTS_OF_ADULTHOOD]
+1,[Fantasy Life Events.EVENTS_OF_ADULTHOOD]<br/>[Fantasy Life Events.EVENTS_OF_ADULTHOOD]
+
+;EVENTS_OF_YOUTH_REROLL_1
+1,[Fantasy Life Events.EVENTS_OF_YOUTH]
+
+;EVENTS_OF_YOUTH_REROLL_1D3
+1,[Fantasy Life Events.EVENTS_OF_YOUTH]
+1,[Fantasy Life Events.EVENTS_OF_YOUTH]<br/>[Fantasy Life Events.EVENTS_OF_YOUTH]
+1,[Fantasy Life Events.EVENTS_OF_YOUTH]<br/>[Fantasy Life Events.EVENTS_OF_YOUTH]<br/>[Fantasy Life Events.EVENTS_OF_YOUTH]
+
+;EXOTIC_BIRTH_LOCATION_REROLL_2
+1,[Fantasy Birth.EXOTIC_BIRTH_LOCATION]
+1,[Fantasy Birth.EXOTIC_BIRTH_LOCATION]<br/>[Fantasy Birth.EXOTIC_BIRTH_LOCATION]
+
+;EXOTIC_PERSONALITY_TRAITS_REROLL_1D3+1
+1,[Fantasy Traits.EXOTIC_PERSONALITY_TRAITS]<br/>[Fantasy Traits.EXOTIC_PERSONALITY_TRAITS]
+1,[Fantasy Traits.EXOTIC_PERSONALITY_TRAITS]<br/>[Fantasy Traits.EXOTIC_PERSONALITY_TRAITS]<br/>[Fantasy Traits.EXOTIC_PERSONALITY_TRAITS]
+1,[Fantasy Traits.EXOTIC_PERSONALITY_TRAITS]<br/>[Fantasy Traits.EXOTIC_PERSONALITY_TRAITS]<br/>[Fantasy Traits.EXOTIC_PERSONALITY_TRAITS]<br/>[Fantasy Traits.EXOTIC_PERSONALITY_TRAITS]
+
+;FAMILY_DISAPPROVAL_REROLL_2
+1,[Fantasy Romantic History.FAMILY_DISAPPROVAL]
+1,[Fantasy Romantic History.FAMILY_DISAPPROVAL]<br/>[Fantasy Romantic History.FAMILY_DISAPPROVAL]
+
+;FAMILY_UPHEAVAL_REROLL_2
+1,[Fantasy Life Events.FAMILY_UPHEAVAL]
+1,[Fantasy Life Events.FAMILY_UPHEAVAL]<br/>[Fantasy Life Events.FAMILY_UPHEAVAL]
+
+;FRIGHTFUL_THING_REROLL_2
+1,[Fantasy Curses and Blessings.FRIGHTFUL_THING]
+1,[Fantasy Curses and Blessings.FRIGHTFUL_THING]<br/>[Fantasy Curses and Blessings.FRIGHTFUL_THING]
+
+;GIFT_CLOTHING_REROLL_1D4
+1,[Fantasy Gifts.GIFT_CLOTHING]
+1,[Fantasy Gifts.GIFT_CLOTHING]<br/>[Fantasy Gifts.GIFT_CLOTHING]
+1,[Fantasy Gifts.GIFT_CLOTHING]<br/>[Fantasy Gifts.GIFT_CLOTHING]<br/>[Fantasy Gifts.GIFT_CLOTHING]
+1,[Fantasy Gifts.GIFT_CLOTHING]<br/>[Fantasy Gifts.GIFT_CLOTHING]<br/>[Fantasy Gifts.GIFT_CLOTHING]<br/>[Fantasy Gifts.GIFT_CLOTHING]
+
+;GIFT_JEWELRY_REROLL_1
+1,[Fantasy Gifts.GIFT_JEWELRY]
+
+;GIFT_PAPERS_REROLL_1D3
+1,[Fantasy Gifts.GIFT_PAPERS]
+1,[Fantasy Gifts.GIFT_PAPERS]<br/>[Fantasy Gifts.GIFT_PAPERS]
+1,[Fantasy Gifts.GIFT_PAPERS]<br/>[Fantasy Gifts.GIFT_PAPERS]<br/>[Fantasy Gifts.GIFT_PAPERS]
+
+;GIFT_PROPERTY_REROLL_1
+1,[Fantasy Gifts.GIFT_PROPERTY]
+
+;GIFTS_AND_LEGACIES_REROLL_1
+1,[Fantasy Gifts.GIFTS_AND_LEGACIES]
+
+;HEAD_INJURY_REROLL_1D3+1
+1,[Fantasy Traits.HEAD_INJURY]<br/>[Fantasy Traits.HEAD_INJURY]
+1,[Fantasy Traits.HEAD_INJURY]<br/>[Fantasy Traits.HEAD_INJURY]<br/>[Fantasy Traits.HEAD_INJURY]
+1,[Fantasy Traits.HEAD_INJURY]<br/>[Fantasy Traits.HEAD_INJURY]<br/>[Fantasy Traits.HEAD_INJURY]<br/>[Fantasy Traits.HEAD_INJURY]
+
+;HORROR_REROLL_3
+1,[Fantasy Curses and Blessings.HORROR]
+1,[Fantasy Curses and Blessings.HORROR]<br/>[Fantasy Curses and Blessings.HORROR]
+1,[Fantasy Curses and Blessings.HORROR]<br/>[Fantasy Curses and Blessings.HORROR]<br/>[Fantasy Curses and Blessings.HORROR]
+
+;LIGHTSIDE_REROLL_2
+1,[Fantasy Curses and Blessings.LIGHTSIDE]
+1,[Fantasy Curses and Blessings.LIGHTSIDE]<br/>[Fantasy Curses and Blessings.LIGHTSIDE]
+
+;MENTAL_AFFLICTIONS_REROLL_1D3+1
+1,[Fantasy Traits.MENTAL_AFFLICTIONS]<br/>[Fantasy Traits.MENTAL_AFFLICTIONS]
+1,[Fantasy Traits.MENTAL_AFFLICTIONS]<br/>[Fantasy Traits.MENTAL_AFFLICTIONS]<br/>[Fantasy Traits.MENTAL_AFFLICTIONS]
+1,[Fantasy Traits.MENTAL_AFFLICTIONS]<br/>[Fantasy Traits.MENTAL_AFFLICTIONS]<br/>[Fantasy Traits.MENTAL_AFFLICTIONS]<br/>[Fantasy Traits.MENTAL_AFFLICTIONS]
+
+;MILEVENT_REROLL_1D8
+1,[Fantasy Military Service.MILEVENT]
+1,[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]
+1,[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]
+1,[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]
+1,[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]
+1,[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]
+1,[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]
+1,[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]
+
+;NAVY_SKILLS_REROLL_1
+1,[Fantasy Military Service.NAVY_SKILLS]
+
+;NEUTRAL_REROLL_2
+1,[Fantasy Curses and Blessings.NEUTRAL]
+1,[Fantasy Curses and Blessings.NEUTRAL]<br/>[Fantasy Curses and Blessings.NEUTRAL]
+
+;OTHER_DEATH_EVENTS_REROLL_2
+1,[Fantasy Legacies.OTHER_DEATH_EVENTS]
+1,[Fantasy Legacies.OTHER_DEATH_EVENTS]<br/>[Fantasy Legacies.OTHER_DEATH_EVENTS]
+
+;OTHER_GROUPS_REROLL_2
+1,[Fantasy Traits.OTHER_GROUPS]
+1,[Fantasy Traits.OTHER_GROUPS]<br/>[Fantasy Traits.OTHER_GROUPS]
+
+;OTHER_PEOPLE_REROLL_1D3+1
+1,[Fantasy Traits.OTHER_PEOPLE]<br/>[Fantasy Traits.OTHER_PEOPLE]
+1,[Fantasy Traits.OTHER_PEOPLE]<br/>[Fantasy Traits.OTHER_PEOPLE]<br/>[Fantasy Traits.OTHER_PEOPLE]
+1,[Fantasy Traits.OTHER_PEOPLE]<br/>[Fantasy Traits.OTHER_PEOPLE]<br/>[Fantasy Traits.OTHER_PEOPLE]<br/>[Fantasy Traits.OTHER_PEOPLE]
+
+;PET_ABILITIES_REROLL_2
+1,[Fantasy Pets.PET_ABILITIES]
+1,[Fantasy Pets.PET_ABILITIES]<br/>[Fantasy Pets.PET_ABILITIES]
+
+;PHOBIAS_REROLL_1D3+1
+1,[Fantasy Traits.PHOBIAS]<br/>[Fantasy Traits.PHOBIAS]
+1,[Fantasy Traits.PHOBIAS]<br/>[Fantasy Traits.PHOBIAS]<br/>[Fantasy Traits.PHOBIAS]
+1,[Fantasy Traits.PHOBIAS]<br/>[Fantasy Traits.PHOBIAS]<br/>[Fantasy Traits.PHOBIAS]<br/>[Fantasy Traits.PHOBIAS]
+
+;PSYCHIC_POWERS_REROLL_1D3+1
+1,[Fantasy Curses and Blessings.PSYCHIC_POWERS]<br/>[Fantasy Curses and Blessings.PSYCHIC_POWERS]
+1,[Fantasy Curses and Blessings.PSYCHIC_POWERS]<br/>[Fantasy Curses and Blessings.PSYCHIC_POWERS]<br/>[Fantasy Curses and Blessings.PSYCHIC_POWERS]
+1,[Fantasy Curses and Blessings.PSYCHIC_POWERS]<br/>[Fantasy Curses and Blessings.PSYCHIC_POWERS]<br/>[Fantasy Curses and Blessings.PSYCHIC_POWERS]<br/>[Fantasy Curses and Blessings.PSYCHIC_POWERS]
+
+;REASON_FOR_CRIME_REROLL_2
+1,[Fantasy Criminal History.REASON_FOR_CRIME]
+1,[Fantasy Criminal History.REASON_FOR_CRIME]<br/>[Fantasy Criminal History.REASON_FOR_CRIME]
+
+;RUNAWAY_REROLL_1D3
+1,[Fantasy Life Events.RUNAWAY]
+1,[Fantasy Life Events.RUNAWAY]<br/>[Fantasy Life Events.RUNAWAY]
+1,[Fantasy Life Events.RUNAWAY]<br/>[Fantasy Life Events.RUNAWAY]<br/>[Fantasy Life Events.RUNAWAY]
+
+;SERIOUS_WOUNDS_REROLL_1
+1,[Fantasy Tragedies.SERIOUS_WOUNDS]
+
+;SERIOUS_WOUNDS_REROLL_1D2+1
+1,[Fantasy Tragedies.SERIOUS_WOUNDS]<br/>[Fantasy Tragedies.SERIOUS_WOUNDS]
+1,[Fantasy Tragedies.SERIOUS_WOUNDS]<br/>[Fantasy Tragedies.SERIOUS_WOUNDS]<br/>[Fantasy Tragedies.SERIOUS_WOUNDS]
+
+;TRAGEDIES_REROLL_1
+1,[Fantasy Tragedies.TRAGEDIES]
+
+;TRAGEDIES_REROLL_2
+1,[Fantasy Tragedies.TRAGEDIES]
+1,[Fantasy Tragedies.TRAGEDIES]<br/>[Fantasy Tragedies.TRAGEDIES]
+
+;UNUSUAL_PHYSICAL_TRAITS_REROLL_1D2+1
+1,[Fantasy Curses and Blessings.UNUSUAL_PHYSICAL_TRAITS]<br/>[Fantasy Curses and Blessings.UNUSUAL_PHYSICAL_TRAITS]
+1,[Fantasy Curses and Blessings.UNUSUAL_PHYSICAL_TRAITS]<br/>[Fantasy Curses and Blessings.UNUSUAL_PHYSICAL_TRAITS]<br/>[Fantasy Curses and Blessings.UNUSUAL_PHYSICAL_TRAITS]
+
+;UNUSUAL_SKILLS_REROLL_2D3
+1,[Fantasy Life Events.UNUSUAL_SKILLS]
+1,[Fantasy Life Events.UNUSUAL_SKILLS]<br/>[Fantasy Life Events.UNUSUAL_SKILLS]
+1,[Fantasy Life Events.UNUSUAL_SKILLS]<br/>[Fantasy Life Events.UNUSUAL_SKILLS]<br/>[Fantasy Life Events.UNUSUAL_SKILLS]
+
+;UNUSUAL_SKILLS_REROLL_1
+1,[Fantasy Life Events.UNUSUAL_SKILLS]
+
+;VILLAIN_ALIGNMENT_REROLL_2
+1,[Fantasy Villains.VILLAIN_ALIGNMENT]
+1,[Fantasy Villains.VILLAIN_ALIGNMENT]<br/>[Fantasy Villains.VILLAIN_ALIGNMENT]
+
+;VILLAIN_GOAL_REROLL_2
+1,[Fantasy Villains.VILLAIN_GOAL]
+1,[Fantasy Villains.VILLAIN_GOAL]<br/>[Fantasy Villains.VILLAIN_GOAL]
+
+;WITNESS_CULT_REROLL_2
+1,[Fantasy Curses and Blessings.WITNESS_CULT]
+1,[Fantasy Curses and Blessings.WITNESS_CULT]<br/>[Fantasy Curses and Blessings.WITNESS_CULT]      
+
+;APPEARANCE_REROLL_1D3
+1,[Fantasy Traits.ITEMS_OF_NOTE]
+1,[Fantasy Traits.ITEMS_OF_NOTE]<br/>[Fantasy Traits.ITEMS_OF_NOTE]
+1,[Fantasy Traits.ITEMS_OF_NOTE]<br/>[Fantasy Traits.ITEMS_OF_NOTE]<br/>[Fantasy Traits.ITEMS_OF_NOTE]      
+
+;COMBAT_REROLL_1D4+1
+1,[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]
+1,[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]
+1,[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]
+1,[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]<br/>[Fantasy Military Service.MILEVENT]    
+
+;COMBAT_SKILLS_REROLL_1D3
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]      
+
+;COMBAT_SKILLS_REROLL_1D4
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]     
+
+;COMBAT_SKILLS_REROLL_1D3+1
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]     
+
+;FORESTRY_SKILLS_REROLL_2
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]    
+
+;HORROR_REROLL_1D3
+1,[Fantasy Legacies.GRAVE_EMPTY]
+1,[Fantasy Legacies.GRAVE_EMPTY]<br/>[Fantasy Legacies.GRAVE_EMPTY]
+1,[Fantasy Legacies.GRAVE_EMPTY]<br/>[Fantasy Legacies.GRAVE_EMPTY]<br/>[Fantasy Legacies.GRAVE_EMPTY]      
+
+;HORSE_SKILLS_REROLL_1D2
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]    
+
+;HORSE_SKILLS_REROLL_1D4
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]     
+
+;HORSE_SKILLS_REROLL_1D3+1
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]     
+
+;MILEVENT_REROLL_1D3
+1,[Fantasy Military Service.MILITARY_EVENTS]
+1,[Fantasy Military Service.MILITARY_EVENTS]<br/>[Fantasy Military Service.MILITARY_EVENTS]
+1,[Fantasy Military Service.MILITARY_EVENTS]<br/>[Fantasy Military Service.MILITARY_EVENTS]<br/>[Fantasy Military Service.MILITARY_EVENTS]      
+
+;NAVAL_SKILLS_REROLL_1D4
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]
+1,[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]<br/>[Fantasy Military Service.BRANCH_OF_SERVICE]     
+
+;OTHER_PEOPLE_REROLL_1D3
+1,[Fantasy Curses and Blessings.HORROR]
+1,[Fantasy Curses and Blessings.HORROR]<br/>[Fantasy Curses and Blessings.HORROR]
+1,[Fantasy Curses and Blessings.HORROR]<br/>[Fantasy Curses and Blessings.HORROR]<br/>[Fantasy Curses and Blessings.HORROR]      
+
+;PIRACY_EVENTS_REROLL_1D3
+1,[Fantasy Criminal History.TYPE_OF_CRIME]
+1,[Fantasy Criminal History.TYPE_OF_CRIME]<br/>[Fantasy Criminal History.TYPE_OF_CRIME]
+1,[Fantasy Criminal History.TYPE_OF_CRIME]<br/>[Fantasy Criminal History.TYPE_OF_CRIME]<br/>[Fantasy Criminal History.TYPE_OF_CRIME]      
+
+;RELIGIOUS_EVENTS_REROLL_1D3
+1,[Fantasy Religious History.RELIGIOUS_EXPERIENCES]
+1,[Fantasy Religious History.RELIGIOUS_EXPERIENCES]<br/>[Fantasy Religious History.RELIGIOUS_EXPERIENCES]
+1,[Fantasy Religious History.RELIGIOUS_EXPERIENCES]<br/>[Fantasy Religious History.RELIGIOUS_EXPERIENCES]<br/>[Fantasy Religious History.RELIGIOUS_EXPERIENCES]      
+
+;RELIGIOUS_EXPERIENCES_REROLL_1D3
+1,[Fantasy Character History.GUARDIANS]
+1,[Fantasy Character History.GUARDIANS]<br/>[Fantasy Character History.GUARDIANS]
+1,[Fantasy Character History.GUARDIANS]<br/>[Fantasy Character History.GUARDIANS]<br/>[Fantasy Character History.GUARDIANS]      
+
+;ROMANTIC_EVENTS_REROLL_1D3
+1,[Fantasy Romantic History.AH_LOVE]
+1,[Fantasy Romantic History.AH_LOVE]<br/>[Fantasy Romantic History.AH_LOVE]
+1,[Fantasy Romantic History.AH_LOVE]<br/>[Fantasy Romantic History.AH_LOVE]<br/>[Fantasy Romantic History.AH_LOVE]      
+
+;TRAGEDIES_REROLL_1D3
+1,[Fantasy Tragedies.WAR_RAVAGES]
+1,[Fantasy Tragedies.WAR_RAVAGES]<br/>[Fantasy Tragedies.WAR_RAVAGES]
+1,[Fantasy Tragedies.WAR_RAVAGES]<br/>[Fantasy Tragedies.WAR_RAVAGES]<br/>[Fantasy Tragedies.WAR_RAVAGES]      
+
+;UNUSUAL_BIRTH_REROLL_1D4
+1,[Fantasy Traits.ITEMS_OF_NOTE]
+1,[Fantasy Traits.ITEMS_OF_NOTE]<br/>[Fantasy Traits.ITEMS_OF_NOTE]
+1,[Fantasy Traits.ITEMS_OF_NOTE]<br/>[Fantasy Traits.ITEMS_OF_NOTE]<br/>[Fantasy Traits.ITEMS_OF_NOTE]
+1,[Fantasy Traits.ITEMS_OF_NOTE]<br/>[Fantasy Traits.ITEMS_OF_NOTE]<br/>[Fantasy Traits.ITEMS_OF_NOTE]<br/>[Fantasy Traits.ITEMS_OF_NOTE]
+</sgtable>

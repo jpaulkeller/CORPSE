@@ -1,0 +1,203 @@
+   GURPS
+Arms  Type  Amount   Reach    Min ST
+
+Bladed Weapons
+dagger or dirk    imp   thr   c  -
+dagger, bone   imp   thr-1    c  -
+dagger, parrying  imp   thr-1    c  -
+dagger, stone  imp   thr-2    c  -
+knife    cut/imp  sw-2/thr-1  c  -
+knife, bone    cut/imp  sw-2/thr-2  c  -
+knife, stone   cut/imp  sw-2/thr-2  c  -
+main-gauche    imp   thr-2    c  -
+stiletto    imp   thr-2    c  -
+sword, bastard    cut/cr   sw+1/thr+1  1, 2 / 2    11
+two handed    cut/cr   sw+2/thr+2  1, 2 / 2    10
+sword, broad   cut/cr   sw+1/thr+1  1  10
+sword, claymore   cut/cr   sw+3/thr+2  1, 2 / 2    12
+sword, cutlass    cut/cr   sw/thr+1    1  8
+sword, drusus  cut/cr   sw+1/thr+1  1  9
+sword, falchion   cut/cr   sw+1/thr+1  1  9
+sword, katana  cut/cr   sw+3/thr+2  1  10
+sword, kopesh  cut/cr   sw+1/thr    1  10
+sword, long    cut/cr   sw+1/thr+1  1  8
+sword, rapier  imp   thr+1    1, 2  -
+sword, saber   cut/imp  sw/thr+1    1  7
+sword, scimitar   cut/imp  sw+1/thr+1  1  9
+sword, short   cut/imp  sw/thr   1  7
+sword, 2-handed   cut/cr   sw+3/thr+2  1, 2 / 2    12
+sword, wakizashi  imp/cr   sw/thr+1    1  6
+sword, wooden, boku-toh    cr    sw-1  1  -
+
+Hafted Weapons
+axe, battle, 2-handed   cut   sw+3  1, 2  13
+axe, battle    cut   sw+2  1  12
+axe, hand   cut   sw    1  7
+club  cr    sw+1  1  10
+flail, footman's  cr    sw+4  1, 2  13
+flail, horseman's    cr    sw+3  1, 2  12
+hammer, maul   cr    sw+4  1, 2  14
+hammer, war    imp   sw+3  1, 2  13
+mace, footman's   cr    sw+3  1  12
+mace, horseman's  cr    sw+2  1  11
+morning star   cr    sw+3  1  12
+pick, military, footman's  imp   sw+1  1  11
+pick, military, horseman's    imp   sw    1  12
+sickle   cut/imp  sw    1  8
+
+Misc Weapons
+atlatl   special  special  special  -
+blackjack   cr    thr   c  7
+belaying pin   imp   thr-1    c  -
+caltrop  imp   1d-1  special  -
+cestus   cr    sw-1  c  8
+chain    cr    sw    1  7
+fang  imp   thr-2    c  -
+gaff/hook, attached  cr/imp   thr-1    1  -
+gaff/hook, held   cr/imp   thr-2    c  -
+garrot   special  special  c  8
+jo stick    cr    sw-1  1  7
+lasso    special  special  -  -
+net   special  -  st + skill/5   -
+nunchaku    cr    sw    c  7
+sai   imp   thr-2    c  7
+sap   cr    thr   c  7
+scourge  cr    sw-2  1-4   9
+spiked buckler    imp   thr-1    c  -
+three-piece rod   cr    sw    c  -
+whip,metal  cr    sw-1  1-5   11
+whip,rawhide   cr    sw-2  1-7   10
+
+Missle Weapons
+arquebus    cr    3d    75/300   12
+axe, throwing  cut   sw+2  st/stx1.5   11
+bolas    special  thr-1    -/stx3   -
+blowgun  special  -  -/stx4   -
+blunderbus  cr    5d    15/100   13
+bow, composite, long    imp   thr+3    stx20/stx25    10
+bow, composite, short   imp   thr+1    stx10/stx20    6
+bow, daiku  imp   thr+2    stx15/stx20    11
+bow, long   imp   thr+2    stx15/stx20    11
+bow, short  imp   thr   stx10/stx15    7
+crossbow, hand    imp   thr+1    stx10/stx15    6
+crossbow, heavy   imp   thr+5    stx25/stx30    7
+crossbow, light   imp   thr+3    stx15/stx20    7
+crossbow, light, repeating 10 bolts    imp   thr+2    stx10/stx15    7
+crossbow, medium  imp   thr+4    stx20/stx25    7
+dart,throwing  imp   thr-1    -/st  -
+harpoon  imp   thr+1    stx1.5/stx2.5  7
+javelin  imp   thr+1    stx1.5/stx2.5  7
+javelin, stone    imp   thr   stx1.5/stx2.5  7
+musket   cr    4d    100/600  12
+shuriken,spike,large    imp   sw+1  st/stx1.5   -
+shuriken,spike,small    imp   sw    st/stx1.5   -
+shuriken,star,large  imp   sw+1  st/stx1.5   -
+shuriken,star,small  imp   sw    st/stx1.5   -
+sling    cr    sw    stx6/stx10  -
+staff sling    cr    sw+1  stx10/stx15    -
+wheellock pistol  cd    1d+1  75/400   10
+
+Pole Weapons
+bo stick    cr    sw-1  1  -
+lance, heavy   imp   thr+4    4  12
+lance, jousting   imp   thr   4  12
+lance, light   imp   thr+2    4  12
+lance, medium  imp   thr+3    4  12
+mancatcher  -  -  2  9
+polearm, awl pike    imp   thr+2    2 - 4    11
+polearm, bardiche    cut   sw+3  1-3   13
+polearm, bec de corbin  imp/cr   thr+2/sw+2  1, 2 / 2    11
+polearm, bill-guisarme  cut/imp  sw+3/thr+2  2, 3 / 1-3  13
+polearm, fauchard    cut/imp  sw+3/thr+2  2, 3 / 1-3  13
+polearm, fauchard-fork  cut/imp  sw+3/thr+3  2, 3 / 1-3  13
+polearm, glaive   cut/imp  sw+3/thr+2  2, 3 / 1-3  11
+polearm, glaive-guisarme   cut/imp  sw+3/thr+3  2, 3 / 1-3  11
+polearm, guisarme    cut   sw+3  2, 3  11
+polearm, guisarme-voulge   cut/imp  sw+3/thr+2  2, 3 / 1-3  11
+polearm, halberd  c/imp/imp   s+5/s+4/t+3    2,3/2,3/1-3    13
+polearm, hook fauchard  cut/imp  sw+2/thr+1  2, 3 / 1-3  11
+polearm, lucern hammer  cut/cr   thr+2/sw+3  1, 2 / 2, 3    11
+polearm, military fork  imp   thr+3    1-3   11
+polearm, naginata    imp   thr+3    1-3   12
+polearm, partisan    imp   thr+2    1-3   11
+polearm, ranseur  imp   thr+3    1-3   12
+polearm, spetum   imp   thr+3    1-3   12
+polearm, tetsubo  imp   thr+2    1-3   11
+polearm, voulge   cut or cr   sw+4  2, 3  12
+quarterstaff   cr/cr    sw+2/thr+1  1, 2 / 2    9
+spear    imp   thr+2    1  9
+two handed    imp   thr+3    1, 2  9
+spear, long    imp   thr+3    1  10
+two handed    imp   thr+4    1-3   10
+spear, stone   imp   thr+1    1  9
+two handed    imp   thr+2    1, 2  9
+trident  imp   thr+2    1  9
+two handed    imp   thr+3    1-2   9
+
+Pole Weapons
+bo stick    cr    sw-1  1  -
+lance, heavy @    imp   thr+4    4  12
+lance, jousting @    imp   thr   4  12
+lance, light @    imp   thr+2    4  12
+lance, medium @   imp   thr+3    4  12
+mancatcher  -  -  2  9
+polearm, awl pike #  imp   thr+2    2 - 4    11
+polearm, bardiche    cut   sw+3  1-3   13
+polearm, bec de corbin  imp/cr   thr+2/sw+2  1, 2 / 2    11
+polearm, bill-guisarme  cut/imp  sw+3/thr+2  2, 3 / 1-3  13
+polearm, fauchard    cut/imp  sw+3/thr+2  2, 3 / 1-3  13
+polearm, fauchard-fork  cut/imp  sw+3/thr+3  2, 3 / 1-3  13
+polearm, glaive *    cut/imp  sw+3/thr+2  2, 3 / 1-3  11
+polearm, glaive-guisarme *    cut/imp  sw+3/thr+3  2, 3 / 1-3  11
+polearm, guisarme    cut   sw+3  2, 3  11
+polearm, guisarme-voulge   cut/imp  sw+3/thr+2  2, 3 / 1-3  11
+polearm, halberd  c/imp/imp   s+5/s+4/t+3    2,3/2,3/1-3    13
+polearm, hook fauchard  cut/imp  sw+2/thr+1  2, 3 / 1-3  11
+polearm, lucern hammer #   cut/cr   thr+2/sw+3  1, 2 / 2, 3    11
+polearm, military fork *   imp   thr+3    1-3   11
+polearm, naginata #  imp   thr+3    1-3   12
+polearm, partisan #  imp   thr+2    1-3   11
+polearm, ranseur #   imp   thr+3    1-3   12
+polearm, spetum #    imp   thr+3    1-3   12
+polearm, tetsubo  imp   thr+2    1-3   11
+polearm, voulge #    cut or cr   sw+4  2, 3  12
+quarterstaff   cr/cr    sw+2/thr+1  1, 2 / 2    9
+spear    imp   thr+2    1  9
+two handed #  imp   thr+3    1, 2  9
+spear, long    imp   thr+3    1  10
+two handed #  imp   thr+4    1-3   10
+spear, stone   imp   thr+1    1  9
+two handed    imp   thr+2    1, 2  9
+trident  imp   thr+2    1  9
+two handed    imp   thr+3    1-2   9
+
+
+   GURPS Missle Weapons Table
+weapon   ss    acc   rof   shots    rcl   tl
+arquebus    16    3  1/30  1  -3    4
+axe, throwing  10    2  -  -  -  -
+bolas    12    0  -  -  -  -
+blowgun  10    1  -  -  -  -
+blunderbus  14    3  1/15  1  -4    5
+bow, composite, long    14    3  -  -  -  -
+bow, composite, short   11    2  -  -  -  -
+bow, daiku  15    3  -  -  -  -
+bow, long   15    3  -  -  -  -
+bow, short  12    1  -  -  -  -
+crossbow, hand    12    4  -  -  -  -
+crossbow, heavy   12    4  -  -  -  -
+crossbow, light   12    4  -  -  -  -
+crossbow, light, repeating 10 bolts    12    4  -  -  -  -
+crossbow, medium  12    4  -  -  -  -
+dart,throwing  11    1  -  -  -  -
+harpoon  10    3  -  -  -  -
+javelin  10    3  -  -  -  -
+javelin, stone    10    3  -  -  -  -
+musket   18    2  1/60  1  -3    4
+shuriken,spike,large    10    1  -  -  -  -
+shuriken,spike,small    10    1  -  -  -  -
+shuriken,star,large  10    1  -  -  -  -
+shuriken,star,small  10    1  -  -  -  -
+sling    12    0  -  -  -  -
+staff sling    14    1  -  -  -  -
+wheellock pistol  13    1  1/60  1  -1    4

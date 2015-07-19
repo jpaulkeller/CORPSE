@@ -11,6 +11,8 @@
      If the targeted undead are currently under the control/dominion
      of another creature, then that control must be broken or the
      Situational Difficulty is doubled.
+     
+  NOTE: On doubles, roll again and merge both results.  Treat 00 as lowest/crit; 99 as highest/fumble.
 
   -----------     ------------------------------------------------------
    ROLL (d%)                             EFFECTS

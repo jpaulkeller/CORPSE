@@ -1,0 +1,136 @@
+   Ars Magica
+Arms  Speed    AtkB  WpnDam   ParB  Str   Load  Space
+
+Bladed Weapons
+dagger or dirk    +1    +4    +2    +1    n  0  0
+dagger, bone   +1    +3    +1    +1    n  0  0
+dagger, parrying  +1    +3    +1    +2    n  0  0
+dagger, stone  +1    +3    +1    +1    n  0  0
+knife    +1    +3    +1    +1    n  0  0
+knife, bone    +1    +2    +1    +1    n  0  0
+knife, stone   +1    +2    +1    +1    n  0  0
+main-gauche    +1    +3    +1    +2    n  0  0
+stiletto    +1    +3    +1    +1    n  0  0
+sword, bastard    +4    +3    +8    +3    +2    0.5   2
+2-handed    +4    +3    +10   +4    0  0.5   2
+sword, broad   +3    +4    +6    +3    0  0.5   1
+sword, claymore   +5    +3    +11   +5    +1    1  3
+sword, cutlass    +3    +3    +4    +3    +1    1  0
+sword, drusus  +2    +4    +5    +2    +2    1  0
+sword, falchion   +1    +3    +5    +2    +2    1  0
+sword, katana  +3    +4    +9    +4    +1    1.5   1
+two handed    +4    +4    +11   +3    0  1.5   1
+sword, kopesh  +1    +2    +5    +2    +2    1  0
+sword, long    +3    +3    +7    +3    +1    1  1
+sword, rapier  +3    +4    +4    +6    -1    0.5   0
+sword, saber   +2    +3    +4    +3    0  0.5   0
+sword, scimitar   +2    +3    +6    +2    +1    1  0
+sword, short   +2    +4    +4    +2    -2    0.5   0
+sword, 2-handed   +5    +3    +11   +5    +1    1  3
+sword, wakizashi  +3    +4    +5    +3    +1    0.5   0
+sword, wooden, boku-toh    +2    +3    +1    +2    0  0.5   0
+
+Hafted Weapons
+axe, battle, 2-handed   +5    +3    +14   +3    +2    2  3
+axe, battle    +4    +2    +12   +2    0  1  2
+axe, hand   +2    +2    +7    +1    0  0.5   1
+club  +2    +3    +2    +1    -2    0  2
+flail, footman's  +4    +3    +10   +2    0  0  2
+flail, horseman's    +3    +3    +8    +2    0  0  2
+hammer, maul   +3    +3    +10   +2    +1    0  3
+hammer, war    +3    +3    +8    +1    0  0  2
+mace,footman's    +2    +3    +7    +2    0  0  2
+mace,horseman's   +2    +3    +5    +1    0  0  2
+morning star   +3    +3    +8    +1    0  0  3
+pick, military, footman's  +2    +3    +7    +2    0  0  2
+pick, military, horseman's    +2    +3    +5    +1    0  0  2
+sickle   +2    +3    +4    +1    0  0  2
+
+Misc Weapons
+atlatl   -  -  -  -  -  0  1
+blackjack   +1    +1    +1    +1    0  0  0
+belaying pin   +1    +1    +1    +1    n  0  0
+bolas    +2    +1    +1    +1    0  0  0
+caltrop  +1    -  +1    -  -  0  0
+cestus   +1    +1    +1    +1    0  0  1
+chain    +2    +3    +2    +1    0  0  1
+fang  +1    +3    +1    +1    0  0  1
+gaff/hook, attached  +1    +1    +1    +1    n  0  1
+gaff/hook, held   +1    +1    +1    +1    n  0  1
+garrot   +1    +3    +4    +1    0  0  1
+jo stick    +2    +1    +2    +4    0  0  2
+lasso    +1    +2    -  +1    0  0  2
+net   +1    +2    -  +1    0  0  2
+nunchaku    +2    +1    +2    +1    0  0  1
+sai   +1    +1    +1    +1    n  0  0
+sap   +2    +2    +1    +1    0  0  0
+scourge  +2    +1    +2    +1    0  0  0
+spiked buckler    +1    +2    +1    +1    n  0  0
+three-piece rod   +1    +2    +1    +1    0  0  1
+whip,metal  +2    +3    +3    +1    0  0  1
+whip,rawhide   +2    +3    +3    +1    0  0  1
+
+Missle Weapons
+arquebus    -20   +1    +15   -  0  1.5   300
+axe, throwing  -4    -2    +6    -  -1    .05   20
+blowgun  -4    -2    +0    -  -1    .05   60
+blunderbus  -23   +1    +19   -  0  1.5   325
+bow, composite, long    +4    +1    +9    -  -1    0.5   225
+bow, composite, short   +2    0  +6    -  0  0  120
+bow, daiku  +6    0  +14   -  +2    0.5   250
+bow, long   +6    0  +14   -  +2    0.5   250
+bow, short  +3    0  +8    -  0  0  120
+crossbow, hand    -3    +1    +7    -  0  0  150
+crossbow, heavy   -23   +1    +19   -  0  1.5   400
+crossbow, light   -8    +1    +10   -  0  0.5   200
+crossbow, light, repeating 10 bolts    -7    +1    +8    -  0  1  180
+crossbow, medium  -15   +1    +15   -  -3    1  300
+dart,throwing  -2    -1    +0    -  n  0  20
+harpoon  -5    -1    +5    -  -2    0  25
+javelin  -5    -1    +5    -  -2    0  30
+javelin, stone    -5    -1    +4    -  -2    0  30
+musket   -20   +1    +12   -  0  1.5   300
+shuriken,spike,large    -2    -1    +1    -  n  0  20
+shuriken,spike,small    -2    -1    +0    -  n  0  20
+shuriken,star,large  -2    -1    +1    -  n  0  20
+shuriken,star,small  -2    -1    +0    -  n  0  20
+sling    +2    0  +4    -  n  0  100
+staff sling    +2    0  +5    -  n  0  150
+wheellock pistol  -18   +1    +8    -  0  1.5   150
+
+Pole Weapons
+bo stick
+lance, heavy   +7    +2    +10   +1    0  2  1
+lance, jousting   +7    +2    +2    +1    0  2  1
+lance, light   +7    +2    +6    +1    0  1  1
+lance, medium  +7    +2    +8    +1    0  1  1
+mancatcher  +5    +2    -  +2    +1    1  2
+polearm, awl pike    +7    +1    +10   +2    +1    1.5   4
+polearm, bardiche    +5    +2    +14   +3    +1    2  4
+polearm, bec de corbin  +6    +1    +13   +2    +1    2  4
+polearm, bill-guisarme  +5    +1    +12   +3    +1    2  4
+polearm, fauchard    +5    +1    +12   +2    +1    2  4
+polearm, fauchard-fork  +5    +1    +12   +3    +1    2  4
+polearm, glaive   +5    +2    +13   +2    +1    2  4
+polearm, glaive-guisarme   +5    +1    +13   +3    +1    2  4
+polearm, guisarme    +5    +2    +12   +2    +1    2  4
+polearm, guisarme-voulge   +5    +1    +12   +3    +1    2  4
+polearm, halberd  +5    +1    +15   +3    +1    2  4
+polearm, hook fauchard  +5    +1    +12   +2    +1    2  4
+polearm, lucern hammer  +6    +2    +13   +3    +1    2  4
+polearm, military fork  +5    +2    +11   +2    +1    2  4
+polearm, naginata    +5    +1    +12   +2    +1    2  4
+polearm, partisan    +5    +1    +10   +3    +1    2  4
+polearm, ranseur  +5    +1    +11   +2    +1    2  4
+polearm, spetum   +5    +1    +12   +2    +1    2  4
+polearm, tetsubo  +5    +1    +11   +2    +1    2  4
+polearm, voulge   +5    +1    +13   +3    +1    2  4
+quarterstaff   +5    +2    +4    +6    -2    0  1
+spear    +5    +2    +3    +1    -1    0  1
+two handed    +6    +3    +5    +2    n  0  1
+spear, long    +7    +1    +5    +2    0  0.5   1
+two handed    +8    +2    +6    +3    -2    0.5   1
+spear, stone   +5    +1    +2    +1    -1    0  1
+two handed    +6    +2    +4    +2    n  0  1
+trident  +5    +1    +3    +2    -1    0.5   1
+two handed    +6    +2    +5    +3    n  0.5   1

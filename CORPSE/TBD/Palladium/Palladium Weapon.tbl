@@ -1,0 +1,146 @@
+   Palladium
+Arms  Dex   Parry    Attack Types   Dur   Throw    Damage   Hand
+
+Bladed Weapons
+dagger or dirk    0  1  thrust   80    1  1  1
+dagger, bone   0  1  thrust   40    1  1  1
+dagger, parrying  0  2  thrust   80    1  1  1
+dagger, stone  0  1  thrust   40    1  1  1
+knife    0  1  thrust   70    1  1  1
+knife, bone    0  1  thrust   35    1  1  1
+knife, stone   0  1  thrust   35    1  1  1
+main-gauche **    1  2  thrust   90    2  1  1
+stiletto    0  1  thrust   90    1  1  1
+sword, bastard    1  3  chop/thrust    95    3  3  2
+sword, broad   1  3  chop/thrust    95    3  3  1
+sword, claymore   1  3  chop/thrust    95    3  4  2
+sword, cutlass    1  2  cut/thrust  95    3  2  1
+sword, drusus  1  2  cut/thrust  95    3  2  1
+sword, falchion   1  3  chop/thrust    90    2  3  1
+sword, katana  1  3  cut/thrust  95    2  3  1
+sword, kopesh  1  2  chop  85    3  2  1
+sword, long    0  3  chop/thrust    95    2  3  1
+sword, rapier  1  2  thrust   90    2  2  1
+sword, saber   0  3  cut/thrust  95    3  3  1
+sword, scimitar   1  3  cut   90    3  3  1
+sword, short   0  2  thrust   90    2  2  1
+sword, 2-handed   2  3  chop/thrust    95    3  4  2
+sword, wakizashi  0  2  cut/thrust  90    2  2  1
+sword, wooden, boku-toh    0  2  thrust   75    1  1  1
+
+Hafted Weapons
+axe, battle, 2-handed   1  2  chop  80    3  4  1
+axe, battle    1  2  chop  80    2  3  1
+axe, hand   0  2  chop  80    1  2  1
+club  0  2  impact   70    2  2  1
+flail, footman's  1  2  impact   80    3  3  1
+flail, horseman's    1  2  impact   80    3  3  1
+hammer, maul   3  2  impact   75    2  3  2
+hammer, war    1  2  impact   80    2  3  1
+mace, footman's   0  2  impact   85    2  3  1
+mace, horseman's  0  2  impact   85    2  3  1
+morning star   1  2  impact   85    3  3  1
+pick, military, footman's  2  2  chop  80    3  2  2
+pick, military, horseman's    2  2  chop  75    2  3  2
+sickle   0  2  chop  70    1  2  1
+
+Misc Weapons
+aklys    0  1  impact   70    1  1  1
+atlatl   0  1  special  60    4  -  -
+blackjack   0  1  impact   70    1  1  1
+belaying pin   0  1  thrust   55    1  1  1
+bolas    3  1  impact   60    1  1  1
+caltrop  0  0  special  35    0  2  0
+cestus   0  0  impact   80    -  1  1
+chain    1  1  impact   75    2  2  1
+fang  0  1  thrust   50    1  1  1
+gaff/hook, attached  1  1  chop  55    0  2  2
+gaff/hook, held   1  1  chop  55    1  2  1
+garrot   0  1  special  45    0  3  1
+jo stick    1  2  impact   60    2  2  2
+lasso    2  2  special  70    2  0  2
+net   2  2  special  70    2  0  2
+ninja-to & scabbard  0  3  cut/thrust  90    2  3  1
+nunchaku    1  2  impact   75    3  2  2
+sai   0  3  thrust   90    2  2  1
+sap   0  1  impact   70    1  1  1
+scourge  0  1  impact   65    4  1(2)  1
+spiked buckler    1  3  thrust   85    0  2  1
+three-piece rod   1  2  impact   75    3  2  2
+whip,metal  2  2  cut/impact  75    4  2  2
+whip,rawhide   2  2  cut/impact  75    4  2  2
+
+Pole Weapons
+bo stick                   1  2  impact   75    1  2  2
+lance, heavy               2  3  thrust   80    1  4  1
+lance, jousting            1  3  thrust   70    1  1  1
+lance, light               2  3  thrust   70    1  2  1
+lance, medium              2  3  thrust   75    1  3  1
+mancatcher                 1  2  thrust   80    2  2  2
+polearm, awl pike          1  2  thrust   80    1  3  2
+polearm, bardiche          2  3  chop/thrust    85    1  3  2
+polearm, bec de corbin     0  2  impact/chop    85    2  2  2
+polearm, bill-guisarme     1  2  chop/thrust    85    2  3  2
+polearm, fauchard          1  3  chop/thrust    80    2  3  2
+polearm, fauchard-fork     1  3  chop/thrust    80    2  3  2
+polearm, glaive            1  3  chop/thrust    85    2  3  2
+polearm, glaive-guisarme   1  3  chop/thrust    85    2  3  2
+polearm, guisarme          1  3  chop/thrust    80    3  3  2
+polearm, guisarme-voulge   1  3  chop/thrust    80    3  3  2
+polearm, halberd           1  3  chop/thrust    85    3  4  2
+polearm, hook fauchard     1  3  chop/thrust    80    2  3  2
+polearm, lucern hammer     1  3  chop/thrust    85    3  3  2
+polearm, military fork     1  3  thrust   80    2  3  2
+polearm, naginata          1  2  cut/thrust  85    2  3  2
+polearm, partisan          1  2  thrust   85    2  2  2
+polearm, ranseur           1  3  thrust   85    2  3  2
+polearm, spetum            1  3  thrust   80    2  3  2
+polearm, tetsubo           2  2  impact   85    2  3  2
+polearm, voulge            1  3  chop/thrust    80    2  4  2
+quarterstaff               0  2  impact   80    2  2  2
+spear                      0  2  thrust   85    1  2  2
+spear, long                0  2  thrust   85    1  3  2
+spear, stone               0  2  thrust   85    1  2  2
+trident                    1  2  thrust   80    1  3  2
+
+
+   Palladium - Missle Weapons
+Missle Weapons    Type  Effective   Max   Shots/Min   Damage
+arquebus
+axe, throwing
+blowgun
+blunderbus
+bow, composite, long
+bow, composite, short
+bow, daiku
+bow, long
+bow, short
+crossbow, hand    w  30m   170m  3  1
+crossbow, heavy   s  60m   330m  1  4
+crossbow, light   w  40m   225m  2  1
+crossbow, light, repeating 10 bolts    w  60m   170m  12    1
+crossbow, medium  b  45m   275m  2  2-'3
+dart,throwing
+harpoon
+javelin
+javelin, stone
+musket
+shuriken,spike,large
+shuriken,spike,small
+shuriken,star,large
+shuriken,star,small
+sling
+staff sling
+wheellock pistol
+
+
+   Palladium - Weapon Damages
+Bonus type  0  1  2  3  4  5
+Damage for Swords and Knives  1D4   1D6   1D8+2    2D6   3D6   -
+Damage for Hafted Weapons  1D4   1D6   1D8   2D6   3D6   -
+Damage for Spears and Polearms   1D6   1D8   2D6   3D6   4D6   -
+Damage for Bows and Crossbows    1D6   2D6   2D8   3D6   3D6   4D6
+Dexterity   +2 Init/+1 Strike    +2 Init  +1 Init  No Bonus    No Bonus    No Bonus
+Parry    -1 Parry    No Bonus    +1 Parry    +2 Parry    +3 Parry    No Bonus
+Throw    No Bonus    +2 Strike   +1 Strike   No Bonus    No Bonus    No Bonus
+
