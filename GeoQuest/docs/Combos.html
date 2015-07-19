@@ -20,7 +20,7 @@ em.tbd       { font-style: normal; background-color: pink }
   <dt><b><em class=combo>Bird&nbsp;Watcher</em>:</b>
       <em class=equipment>Binoculars</em> + 
       <em class=equipment>Field&nbsp;Guide</em></dt>
-  <dd>Whenever another player rolls a <em class=find>FIND</em>, you get +2 on your next roll.</dd>
+  <dd>Whenever another player rolls a <em class=find>FIND</em>, you get +1 on your next roll.</dd>
   <dt><b><em class=combo>Canyon&nbsp;Cacher</em>:</b>
       <em class=equipment>External&nbsp;Antenna</em> + 
       <em class=equipment>Rope</em></dt>
@@ -31,12 +31,12 @@ em.tbd       { font-style: normal; background-color: pink }
   <dd>Double any bonus that applies to your rolls.</dd>
   <dt><b><em class=combo>Eagle&nbsp;Scout</em>:</b>
       <em class=equipment>Pocket&nbsp;Knife</em> + 
-      <em class=equipment>Whistle</em></dt>
+      <em class=equipment>Survival&nbsp;Strap</em></dt>
   <dd>When an event would affect you, you may discard any Equipment card to ignore it.</dd>
   <dt><b><em class=combo>Engineer</em>:</b>
       <em class=equipment>Cell&nbsp;Phone</em> + 
       <em class=equipment>Laptop</em></dt>
-  <dd>If you roll a <em class=dnf>DNF</em>, you may ignore it, and add 1 to your roll.</dd>
+  <dd>If you roll a <em class=dnf>DNF</em>, you may ignore it, and add 2 to your roll.</dd>
   <dt><b><em class=combo>Environmentalist</em>:</b>
       <em class=equipment>CITO&nbsp;Bag</em> + 
       <em class=equipment>Waders</em></dt>
@@ -44,11 +44,11 @@ em.tbd       { font-style: normal; background-color: pink }
   <dt><b><em class=combo>Event&nbsp;Coordinator</em>:</b>
       <em class=equipment>Hat</em> + 
       <em class=equipment>Hiking&nbsp;Staff</em></dt>
-  <dd>You may decide the location for any <em class=event>Meet&nbsp;and&nbsp;Greet</em>; if you do, you must attend.  Once per game, you may skip your turn to host a <em class=event>Meet&nbsp;and&nbsp;Greet</em>.</dd>
+  <dd>If you roll doubles, you may skip your turn (don't draw an Event card) to host a <em class=event>Meet&nbsp;and&nbsp;Greet</em>.  You must attend the event.  Roll the dice to determine how many points you earn.</dd>
   <dt><b><em class=combo>Hitchhiker</em>:</b>
       <em class=equipment>Belt&nbsp;Pack</em> + 
       <em class=equipment>PDA</em></dt>
-  <dd>Whenever you roll <em class=roll>4+2</em>, you may jump to any tile occupied by another player as your move.</dd>
+  <dd>Whenever you roll <em class=roll>4+2</em>, you may jump to any tile as your move.</dd>
   <dt><b><em class=combo>Insulation</em>:</b>
       <em class=equipment>Coat</em> + 
       <em class=equipment>Gloves</em></dt>
@@ -57,6 +57,10 @@ em.tbd       { font-style: normal; background-color: pink }
       <em class=equipment>Lucky&nbsp;Charm</em> + 
       <em class=equipment>Mirror</em></dt>
   <dd>Whenever someone tries to play an Event card on you, you both roll the dice.  If you roll higher, the event does not affect you (it is discarded).</dd>
+  <dt><b><em class=combo>Life&nbsp;Guard</em>:</b>
+      <em class=equipment>Bandana</em> + 
+      <em class=equipment>Whistle</em></dt>
+  <dd>If a player next to a stream or lake rolls a <em class=roll>1</em> on either die, you may immediately jump to their location.</dd>
   <dt><b><em class=combo>MacGyver</em>:</b>
       <em class=equipment>Duct&nbsp;Tape</em> + 
       <em class=equipment>Utility&nbsp;Tool</em></dt>
@@ -64,7 +68,7 @@ em.tbd       { font-style: normal; background-color: pink }
   <dt><b><em class=combo>Marsh&nbsp;Madness</em>:</b>
       <em class=equipment>Gaiters</em> + 
       <em class=equipment>Insect&nbsp;Repellent</em></dt>
-  <dd>You get +2 for all rolls on Swamp terrain.</dd>
+  <dd>You get +2 for all rolls on Swamp terrain, and all rolls to cross streams.</dd>
   <dt><b><em class=combo>Naturalist</em>:</b>
       <em class=equipment>Swag&nbsp;Bag</em> + 
       <em class=equipment>Walking&nbsp;Stick</em></dt>
@@ -75,12 +79,12 @@ em.tbd       { font-style: normal; background-color: pink }
   <dd>If you roll 1 or less, you may take an extra turn.  (This is not limited to once per turn.)</dd>
   <dt><b><em class=combo>Paramedic</em>:</b>
       <em class=equipment>First-aid&nbsp;Kit</em> + 
-      <em class=equipment>Survival&nbsp;Strap</em></dt>
-  <dd>All injury Event cards (drawn or in a player's hand) are discarded, and you gain 4 points for each one.</dd>
+      <em class=equipment>Repair&nbsp;Kit</em></dt>
+  <dd>All injury Event cards (drawn, in play, or in a player's hand) are discarded, and you gain 4 points for each one.</dd>
   <dt><b><em class=combo>Photographer</em>:</b>
       <em class=equipment>Camera</em> + 
       <em class=equipment>Safari&nbsp;Vest</em></dt>
-  <dd>You get 2 points if you end your move on the same tile as another player.  (You may only get points once per player.)</dd>
+  <dd>You get 2 points if you end your turn on a <em class=tile>Scenic View</em> or on the same tile as another player.  (You may only get points once per <em class=tile>View</em> or player.)</dd>
   <dt><b><em class=combo>Road&nbsp;Warrior</em>:</b>
       <em class=equipment>Hydration&nbsp;Pack</em> + 
       <em class=equipment>Mountain&nbsp;Bike</em></dt>
@@ -88,7 +92,7 @@ em.tbd       { font-style: normal; background-color: pink }
   <dt><b><em class=combo>Search&nbsp;and&nbsp;Rescue</em>:</b>
       <em class=equipment>FRS&nbsp;Radio</em> + 
       <em class=equipment>Yellow&nbsp;Jeep</em></dt>
-  <dd>Whenever anyone rolls <em class=roll>1+1</em>, you may jump immediately to the roller's location.</dd>
+  <dd>Whenever anyone rolls <em class=roll>1</em> or less, you may immediately jump to the roller's location.</dd>
   <dt><b><em class=combo>Through&nbsp;Hiker</em>:</b>
       <em class=equipment>Backpack</em> + 
       <em class=equipment>Hiking&nbsp;Boots</em></dt>
@@ -96,7 +100,7 @@ em.tbd       { font-style: normal; background-color: pink }
   <dt><b><em class=combo>Tracker</em>:</b>
       <em class=equipment>Ol'&nbsp;Blue</em> + 
       <em class=equipment>Map</em></dt>
-  <dd>If a player in your quadrant rolls <em class=dnf>DNF</em>, you may immediately jump to their location.</dd>
+  <dd>If a player in your quadrant rolls <em class=find>FIND</em> or <em class=dnf>DNF</em>, you may immediately jump to their location.</dd>
   <dt><b><em class=combo>Trail&nbsp;Mix</em>:</b>
       <em class=equipment>Gorp</em> + 
       <em class=equipment>Trail&nbsp;Guide</em></dt>
@@ -104,7 +108,7 @@ em.tbd       { font-style: normal; background-color: pink }
   <dt><b><em class=combo>Veteran</em>:</b>
       <em class=equipment>Water&nbsp;Bottle</em> + 
       <em class=equipment>Long&nbsp;Pants</em></dt>
-  <dd>If you roll a <em class=dnf>DNF</em> and/or <em class=find>FIND</em> while moving, you may re-roll both dice.</dd>
+  <dd>If you roll a <em class=find>FIND</em> or <em class=dnf>DNF</em> while moving, you may re-roll that die.</dd>
   <dt><b><em class=combo>Weatherman</em>:</b>
       <em class=equipment>Emergency&nbsp;Radio</em> + 
       <em class=equipment>Waterproof&nbsp;Jacket</em></dt>
