@@ -42,6 +42,7 @@ import corpse.ui.TreePanel;
 // show table with result (possibly random lookup into Skill Fumble table?
 
 // TODO high priority
+// dX+dY
 // lower-case subsets are internal
 // capitalize based on assignment token (allow lower-case variables?)
 // script recursion for cave generation

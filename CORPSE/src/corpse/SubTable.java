@@ -82,7 +82,10 @@ public final class SubTable extends Table
          
          Matcher m = filter.matcher(entry); 
          if (m.matches())
+         {
+            // System.out.println("SubTable.add: " + entry + " (" + filter + ")");
             return m.groupCount() > 0 ? super.add(m.group(1)) : super.add(entry);
+         }
       }
       return false;
    }
@@ -119,6 +122,7 @@ public final class SubTable extends Table
       // test("{Quality!}", "full line (don't use default subset)");
       // test("{Quality}", "default subset");
       // test("{Metal:Common}", "subset filter");
-      test("{Weapon#[A-Z]+#}", "regex filter");
+      // test("{Weapon#[A-Z]+#}", "regex filter");
+      test("{Spell#.*(?:walk|fall).*#}", "regex filter");
    }
 }
