@@ -4,11 +4,13 @@ import java.io.PrintStream;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Data structure for storing raster (2D matrix) data. The value of
- * each cell in the matrix can by any object if type T. */
+ * each cell in the matrix can by any object of type T. */
 
 public class ObjectMatrix<T>
 {
@@ -16,17 +18,22 @@ public class ObjectMatrix<T>
    private int cols;
    private Object[][] data;
 
+   public ObjectMatrix()
+   {
+      // caller should call setData
+   }
+   
    public ObjectMatrix (final int rows, final int cols)
    {
-      this.rows = rows;
-      this.cols = cols;
+      setRowCount(rows);
+      setColumnCount(cols);
       this.data = new Object[rows][cols];
    }
 
    public ObjectMatrix (final int rows, final int cols, final T[] data)
    {
-      this.rows = rows;
-      this.cols = cols;
+      setRowCount(rows);
+      setColumnCount(cols);
       setData (data);
    }
 
@@ -44,6 +51,16 @@ public class ObjectMatrix<T>
          Arrays.fill (data[row], value);
    }
 
+   public void setRowCount(final int rows)
+   {
+      this.rows = rows;
+   }
+   
+   public void setColumnCount(final int cols)
+   {
+      this.cols = cols;
+   }
+   
    public int getRowCount()
    {
       return rows;
@@ -83,6 +100,35 @@ public class ObjectMatrix<T>
             setValue (row, col, objects[i++]);
    }
 
+   /** Resizes the matrix, copying as many values as possible. */
+   
+   public void resize (final int rows, final int cols)
+   {
+      int maxRow = Math.min(this.rows, rows);
+      int maxCol = Math.min(this.cols, cols);
+      Object[][] newData = new Object[rows][cols];
+
+      // copy as much data as we can
+      for (int row = 0; row < maxRow; row++)
+         for (int col = 0; col < maxCol; col++)
+            newData[row][col] = getValue(row, col);
+
+      this.rows = rows;
+      this.cols = cols;
+      this.data = newData;
+   }
+
+   /** Get the set of objects in the matrix. */
+   
+   public Set<T> getObjects()
+   {
+      Set<T> objects = new HashSet<T>();
+      for (int row = 0; row < rows; row++)
+         for (int col = 0; col < cols; col++)
+            objects.add(getValue(row, col));
+      return objects;
+   }
+   
    /**
     * Uses simple run-length encoding to compress the data.  Returns the data
     * as a List of MatrixPair objects.  Each pair consists of a quantity and
@@ -118,9 +164,7 @@ public class ObjectMatrix<T>
       return compressed;
    }
    
-   /**
-    * Uncompressed the given 1D (compressed) data to populate the 2D
-    * array. */
+   /** Uncompressed the given 1D (compressed) data to populate the 2D array. */
 
    public void setDataCompressed (final List<MatrixPair<T>> objects)
    {
@@ -138,9 +182,7 @@ public class ObjectMatrix<T>
       }
    }
 
-   /**
-    * Displays the matrix to stdout by invoking the given (optional)
-    * null-argument method on each object. */
+   /** Displays the matrix to stdout by invoking the given (optional) null-argument method on each object. */
 
    public void show (final PrintStream out, final String methodName)
    {
@@ -215,6 +257,10 @@ public class ObjectMatrix<T>
       matrix = new ObjectMatrix<String> (rows, cols);
       matrix.setDataCompressed (data);
       matrix.show (System.out, null);
-      System.out.println();
+
+      System.out.print ("getObjects:");
+      for (String obj : matrix.getObjects())
+         System.out.print(" " + obj);
+      System.out.println("\n");
    }
 }

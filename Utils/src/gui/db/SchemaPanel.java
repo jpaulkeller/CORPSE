@@ -1,49 +1,16 @@
 package gui.db;
 
-import gui.wizard.Wizard;
-
-import java.lang.reflect.Method;
-
-public class SchemaPanel
-{
-   // private Wizard wiz;
-   // private Object callback;
-   // private Method onNextMethod;
-   
-   public SchemaPanel (final Wizard wiz, 
-                       final Object callback,
-                       final Method onNextMethod)
-   {
-      // this.wiz = wiz;
-      // this.callback = callback;
-      // this.onNextMethod = onNextMethod;
-   }
-}
-
-/*
 import gui.wizard.WizardPanel;
 
 import java.awt.BorderLayout;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Observable;
 import java.util.Observer;
-import java.util.Map.Entry;
 
 import javax.mail.Message;
-import javax.swing.JOptionPane;
-import javax.swing.JTable;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 
 import db.SQL;
-import db.SQLU;
 
 public class SchemaPanel extends WizardPanel implements Observer
 {

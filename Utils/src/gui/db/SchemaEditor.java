@@ -1,10 +1,5 @@
 package gui.db;
 
-public class SchemaEditor
-{
-}
-
-/*
 import gui.ComponentTools;
 import gui.form.ComboBoxItem;
 import gui.form.TextItem;
@@ -367,4 +362,3 @@ public class SchemaEditor implements ObservableDelegator, ValueChangeListener
       ComponentTools.open (se.getPanel(), SchemaEditor.class.getName());
    }
 }
-*/

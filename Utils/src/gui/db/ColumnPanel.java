@@ -1,8 +1,5 @@
 package gui.db;
 
-public class ColumnPanel { }
-
-/*
 import gui.wizard.WizardPanel;
 
 import java.awt.BorderLayout;
@@ -12,9 +9,9 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Observable;
 import java.util.Observer;
-import java.util.Map.Entry;
 
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
@@ -165,4 +162,3 @@ public class ColumnPanel extends WizardPanel implements Observer
       }
    }
 }
-*/

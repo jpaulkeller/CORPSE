@@ -17,8 +17,8 @@ public class FormattedDataImporter
    private TextPanel textPanel;         // raw text data
    private LinePanel linePanel;         // split into lines
    private FieldPanel delimPanel;       // split into fields
-   // private SchemaPanel schemaPanel;     // new table schema
-   // private ColumnPanel ccPanel;         // supports mapping columns
+   private SchemaPanel schemaPanel;     // new table schema
+   private ColumnPanel ccPanel;         // supports mapping columns
 
    public FormattedDataImporter (final Component owner)
    {

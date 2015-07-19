@@ -258,7 +258,7 @@ public final class MapUtils
          for (String key : keys)
          {
             Object val = map.get (key);
-            if (val instanceof String)
+            if (val instanceof String || val == null)
                out.println ("   " + key + " = " + val);
             else
                out.println ("   " + key + " = " + val +

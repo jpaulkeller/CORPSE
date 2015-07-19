@@ -126,9 +126,9 @@ public class ColoredTableRenderer extends DefaultTableCellRenderer
          label.setText (format.format (value));
       else if (value instanceof Number)
       {
-         if (((Number) value).doubleValue() == 0)
+         /* if (((Number) value).doubleValue() == 0)
             label.setText ("");
-         else if (format != null)
+         else */ if (format != null)
             label.setText (format.format (((Number) value).doubleValue()));
          else
             label.setText (value.toString());
