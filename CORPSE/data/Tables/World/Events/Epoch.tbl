@@ -1,7 +1,17 @@
-the {Number:Ordinal} Age
-the {Metal} Age
-the Age of the {{Monster}+}
+: Epoch
+the {Number:Ordinal} {:Age}
+the {Metal} {:Age}
+the {:Age} of the {{Monster}+}
 {before|during} the {Cataclysm}
-the Dark Ages
+the Dark {:Age}
 the Renaissance
-the Age of Exploration
+the {:Age} of Exploration
+
+: Age
+age
+dawn
+day
+epoch
+era
+rise
+time

@@ -3,17 +3,24 @@
 
 .Nickname     Face         Obverse       Coin            Abbrev    Exchange      CP       Notes
 
+: Bits
 bit                                      ceramic bit     b                        0.1
-                                         tin piece       t          1 bit         0.1
-              hammer       anvil         iron piece      i          2 bits        0.2
+                                         tin piece       t          2 bit         0.2
+              hammer       anvil         iron piece      i          3 bits        0.3
 
-: Currency              
+: Coins
 half          feather                    bronze piece    z          5 bits        0.5
 pence         wheel                      copper piece    c         10 bits        1
 noble         moon                       silver piece    s         10 cp         10
 duke          shield       sword         electrum piece  e          5 sp         50 
 crown         star                       gold piece      g         10 sp        100       annulus
 royal         dragon                     platinum piece  p         10 gp       1000
+
+: Currency {5, 9}
+: Common {2d3}
+: Low {2d3-1}
+: Medium {2d3+1}
+: High {3d2+3}
 
 / http://tao-of-dnd.wikispaces.com/Coin
 / backpack - 3,700 coins
