@@ -81,7 +81,7 @@ public class Event implements Card, Comparable<Event>
       }
    }
 
-   private void appendIgnore ()
+   private void appendIgnore()
    {
       if (!equipment.isEmpty())
       {
@@ -226,6 +226,7 @@ public class Event implements Card, Comparable<Event>
       add ("Sneaky Search", Type.Discard, -1, "Keep this card.  When you find a cache, you may discard it.  Other cachers on that tile do not get credit for the find.", null);
       add ("Soggy Log", Type.Std, -1, "Skip a turn after finding your next cache (does not apply to multi-cache stages).", null, "Waterproof Jacket");
       add ("Solar Flares", Type.Now, 0, "No one is able to get a good signal; -2 on all Search rolls this round.", null, "External Antenna");
+      add ("Souvenir Day", Type.Std, 0, "Anyone finding a cache this round gains 1 extra point.", null);
       add ("Spider Webs", Type.Std, 0, "-1 to your roll.", null, "Walking Stick");
       add ("Steep Slope", Type.Std, 0, "If moving, end your turn.  If searching, -1 to your roll.", null, "Hiking Staff", "Rope");
       add ("Stick Race", Type.Std, 1, "Jump your token to the nearest bridge, and end your turn.", "Pooh Sticks");
@@ -247,7 +248,7 @@ public class Event implements Card, Comparable<Event>
 
       // TODO: new cards, not yet printed
       add ("Angry Bees", Type.Std, 0, "You accidentally disturb a hive of bees; end your turn. The player on your right moves your token 2 tiles in any direction.", "Killer Bees", "Bandana");
-      add ("Heavy Rain", Type.Now, 0, "Streams cost 4 movement points to cross (for the next 2 rounds).", null);
+      add ("Heavy Rain", Type.Now, 0, "Streams cost 4 movement points to cross (for the next 3 rounds).", null);
       add ("Twist and Shout", Type.Now, 0, "All event cards (in play or held) are moved to the next player (clockwise).", null);
       add ("Perfect Pair", Type.Std, 0, "You may discard one Equipment card to select any other one from the deck.", null);
       add ("Campsite Confusion", Type.Now, 0, "All players give one Equipment card to the player on their left.", null);

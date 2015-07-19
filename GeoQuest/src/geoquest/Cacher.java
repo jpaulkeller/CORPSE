@@ -94,17 +94,17 @@ public class Cacher implements Card, Comparable<Cacher>
       add ("Scout Scotty", "Swag Bag", "During his turn, Scotty may discard any Equipment cards to gain 1 point each.");
       add ("Tireless Ted", "Trail Guide", "Ted may treat any <i>end your turn</i> effect as -2 instead.");
       add ("Unique Ursula", "Utility Tool", "Whenever Ursula rolls a <em class=roll>1</em> on either die, she gets +1 on her roll.");
+      // TODO
       add ("Volunteer Veda", "CITO Bag", "Veda gains 1 extra point for all Event cards that award her points. She must attend all Meet and Greet events.");
       add ("Wandering Warren", "Waders", "Warren finds his own path.  He doesn't get the +1 path bonus, but if he rolls a <em class=find>FIND</em> while moving, he may take an extra turn.");
       // TODO: change Scenic View to Point of Interest?
-      add ("Xander the Explorer", "External Antenna", "Xander gets 2 points for every <em class=tile>Scenic View</em> he visits.  He must end his turn on that tile, and he can only visit each once.");
-      add ("Yuppie Yuri", "Yellow Jeep", "When Yuri finds a cache, he may pay 2 points to keep both Equipment cards.");
+      add ("Xander the Explorer", "External Antenna", "Xander gets 2 points for every <em class=tile>Scenic View</em> he visits (once per).  He must end his turn on that tile.");
+      add ("Yuppie Yuri", "Yellow Jeep", "When Yuri finds a cache, he may keep both Equipment cards by disarding one of his current Equipment cards.");
       // TODO
       add ("Zealous Zach", "1 (random) Equipment Card", "Zach gets +1 on all Move rolls, as long as he has at least 2 empty Equipment slots.");
    }
 
-   private static void add  (final String cardName, final String equip, 
-                             final String cardText)
+   private static void add  (final String cardName, final String equip, final String cardText)
    {
       Cacher cacher = new Cacher (cardName, equip, cardText);
       CACHERS.put (cacher.getName(), cacher);
@@ -215,10 +215,8 @@ public class Cacher implements Card, Comparable<Cacher>
       for (Cacher cacher : CACHERS.values())
       {
          Equipment eq = Equipment.EQUIPMENT.get (cacher.equipment);
-         if (eq == null && !cacher.equipment.equals ("") && 
-             !cacher.equipment.contains ("(random)"))
-            System.err.println ("Invalid equipment for " + cacher.getName() +
-                                ": " + cacher.equipment);
+         if (eq == null && !cacher.equipment.equals ("") && !cacher.equipment.contains ("(random)"))
+            System.err.println ("Invalid equipment for " + cacher.getName() + ": " + cacher.equipment);
       }
       System.out.println();      
       System.out.flush();

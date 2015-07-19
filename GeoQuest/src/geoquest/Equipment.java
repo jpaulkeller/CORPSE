@@ -18,8 +18,7 @@ public class Equipment implements Card, Comparable<Equipment>
    // private boolean usedByCacher; // true if used by Cache Character
    private boolean usedByEvent; // true if used by Event
 
-   public Equipment (final String name, final String text, 
-                     final String imageName, final String combo)
+   public Equipment (final String name, final String text, final String imageName, final String combo)
    {
       this.name = name.replaceAll (" ", "&nbsp;");
       this.text = text.length() > 0 ? text : CardUtils.BLANK;
@@ -134,8 +133,7 @@ public class Equipment implements Card, Comparable<Equipment>
       */
    }
    
-   private static void add (final String cardName, final String cardText,
-                            final String image, final String combo)
+   private static void add (final String cardName, final String cardText, final String image, final String combo)
    {
       Equipment equip = new Equipment (cardName, cardText, image, combo);
       EQUIPMENT.put (equip.getName(), equip); 
