@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<project name="Resources" basedir=".">
+  
+  <target name="Icon Jar">
+    <delete file="jars/icons.jar" />
+    <jar destfile="jars/icons.jar">
+      <fileset dir=".">
+         <include name="icons/16/documents/Folder.gif" />
+         <include name="icons/16/documents/Page Edit.gif" />
+         <include name="icons/16/gui/BoxX.gif" />
+         <include name="icons/16/symbols/Delete.png" />
+         <include name="icons/20/**/*.gif" />
+      </fileset>
+    </jar>
+  </target>
+	
+</project>
