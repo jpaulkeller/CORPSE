@@ -677,49 +677,50 @@ public final class Macros
       RandomEntry.randomize();
 
       /*
-      Macros.resolve(null, "{50%?Yes:No}", null);
-      Macros.resolve(null, "{Island Event}", null);
-      Macros.resolve(null, "{Metal" + Constants.SUBSET_CHAR + "}", null);
-      Macros.resolve(null, "Description: {Color}{20%?, with bits of {Reagent} floating in it}", null);
-      Macros.resolve(null, "Filter: {Noise#S.+#}", null);
-      Macros.resolve(null, "Filter Variable: {Color:Simple{!OneWord}}", null);
-      Macros.resolve(null, "Filter: {Color:Simple#S.+#}", null);
-      Macros.resolve(null, "{Color} " + Constants.LAST_RESOLVED_TOKEN, null);
-      Macros.resolve(null, "{#text:.}", null); // filtered token
-      Macros.resolve(null, "{Color} {Fauna#{#{!}:.}.*#}", null); // back-reference with a filter
-      Macros.resolve(null, "{~last, first} / {~chain, gold, fine} / {~boat (large)}", null); // formatter
       Macros.resolve("Barsoom Plot", "{:Villain}", null); // subset short-cut
-      Macros.resolve(null, "{equipment+}", null); // full line
-      Macros.resolve(null, "{equipment}", null); // default column
       Macros.resolve(null, "2 * 5 = {=2*5}", null);
       Macros.resolve(null, "Alteration = {Alteration}", null);
+      Macros.resolve(null, "Description: {Color}{20%?, with bits of {Reagent} floating in it}", null);
       Macros.resolve(null, "Filter Alteration = {Spell#.*(walk|fall).*#}", null);
       Macros.resolve(null, "Filter and One-Of Alteration = {{Color#.*a|e.*#}|{Color#.*i|o.*#}}", null);
+      Macros.resolve(null, "Filter Variable: {Color:Simple{!OneWord}}", null);
+      Macros.resolve(null, "Filter: {Color:Simple#S.+#}", null);
       Macros.resolve(null, "Filter: {Name#S.+#}", null);
-      Macros.resolve(null, "{Profession:Craftsman}", null); // filter subset
-      Macros.resolve(null, "{Profession.all#^([^ ]+) .*craftsman.*#}", null); // filter vs all with group
+      Macros.resolve(null, "Filter: {Noise#S.+#}", null);
+      Macros.resolve(null, "{#text:.}", null); // filtered token
       Macros.resolve(null, "{#{Profession+#.*craftsman.*#}:^(.*?)  }", null); // filter vs all with group
-      Macros.resolve(null, "{thing+} {moss+} {fly+} {mouse+} {fox+}", null); // test plurals
-      Macros.resolve(null, "{Profession.Job}", null); // composite column
+      Macros.resolve(null, "{50%?Yes:No}", null);
+      Macros.resolve(null, "{Color} " + Constants.LAST_RESOLVED_TOKEN, null);
+      Macros.resolve(null, "{Color} {Fauna#{#{!}:.}.*#}", null); // back-reference with a filter
+      Macros.resolve(null, "{equipment+}", null); // full line
+      Macros.resolve(null, "{equipment}", null); // default column
       Macros.resolve(null, "{H=Herb} Herb: {H.Herb} Cost: {H.Cost}", null); // assignment
+      Macros.resolve(null, "{Island Event}", null);
+      Macros.resolve(null, "{Metal" + Constants.SUBSET_CHAR + "}", null);
+      Macros.resolve(null, "{Profession.all#^([^ ]+) .*craftsman.*#}", null); // filter vs all with group
+      Macros.resolve(null, "{Profession.Job}", null); // composite column
+      Macros.resolve(null, "{Profession:Craftsman}", null); // filter subset
       Macros.resolve(null, "{Profession:Criminal}", null); // filter subset
+      Macros.resolve(null, "{thing+} {moss+} {fly+} {mouse+} {fox+}", null); // test plurals
+      Macros.resolve(null, "{~last, first} / {~chain, gold, fine} / {~boat (large)}", null); // formatter
       
-      Macros.resolve(null, "{Herb{!OneWord}}", null);
-      Macros.resolve(null, "{Appearance} {Herb{!SameFirst}}", null);
-      Macros.resolve(null, "{Appearance} {Herb{!OneWithSame}}", null);
+      Macros.resolve("Meat", "{Meat:Game#.*r.*#}", null);
       Macros.resolve(null, "{Appearance} {Herb{!MaybeSameFirst}}", null);
+      Macros.resolve(null, "{Appearance} {Herb{!OneWithSame}}", null);
+      Macros.resolve(null, "{Appearance} {Herb{!SameFirst}}", null);
       Macros.resolve(null, "{Appearance} {Herb{{!OneWithSame|!OneWord}}}", null);
       Macros.resolve(null, "{Appearance} {Humanoid{!OneMaybeSame}}", null);
+      Macros.resolve(null, "{Herb{!OneWord}}", null);
       Macros.resolve(null, "{Humanoid#T[A-Z]+$#}", null);
       Macros.resolve(null, "{Name}", null);
+      Macros.resolve(null, "{Weapon{!OneWord}}", null);
       Macros.resolve(null, "{Weapon}", null);
-      Macros.resolve("Meat", "{Meat:Game#.*t.*#}", null);
       
       System.out.println("Aa: " + Macros.matchCase("Aa", "cap each word's first letter in the phrase")); 
       System.out.println("AA: " + Macros.matchCase("AA", "Leave ALL words in the phrase alone"));
       System.out.println("aa: " + Macros.matchCase("aa", "Lower Case ALL words in the phrase"));
       */
       
-      Macros.resolve(null, "{Weapon{!OneWord}}", null);
+      Macros.resolve(null, "{Spell#.*(walk|fall).*#}", null);
    }
 }
