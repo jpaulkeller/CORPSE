@@ -45,6 +45,7 @@ accoucheur                                 service                        midwif
 accountant                                 service                        financial bookkeeping
 accoutrement maker                         craftsman                      makes military accessories
 ackerman                                   farmer                         an oxherder
+acolyte                                    religious
 acrobat                                    entertainer
 actor                  {guild rank}        entertainer
 actuary                                    service                        financial bookkeeping
@@ -52,7 +53,6 @@ administrator                              government
 advisor                                    government
 alabasterer                                craftsman                      worker in alabaster
 alchemist              {guild rank}        scholar                        a medieval chemist (good with potions, poisons, +2 healing)
-acolyte                                    religious
 alderman                                   government                     a town or city official
 alewife                {guild rank}        merchant                       a female alehouse keeper
 almoner                {religious rank}    religious                      a distributer of money and food to the poor
@@ -199,6 +199,7 @@ clock-maker                                craftsman
 clothier               {guild rank}        craftsman          
 clouter                                    service                        one who fixes things, a tinkerer
 clown                                      entertainer
+coachman                                   service
 cobbler                {guild rank}        craftsman                      shoe maker
 coiner                 {guild rank}        craftsman                      a maker of coins             
 collector                                                                 of {equipment}
@@ -245,6 +246,7 @@ dock worker                                sailor
 doctor                                     service         1-in-1700      academically trained
 doctor                                     service         29/1-in-350     
 dog trainer                                service            
+dogsbody                                   service
 dragoman               {guild rank}        service                        especially {terrain}; knows {race}
 draper                 {guild rank}        merchant                       a cloth merchant             
 drayman                                    service                        cart driver
@@ -293,6 +295,7 @@ fletcher               {guild rank}        craftsman                      maker 
 florist                {guild rank}        merchant                       especially {flower}
 food-seller                                merchant
 fool                                       artist
+footman                                    service
 footpad                                    criminal                       one who robs pedestrians
 foreman                                    craftsman
 forester               {guild rank}        farmer                         game warden or forest ranger (especially {wood} and {wood{!different}})
@@ -326,8 +329,8 @@ glover                 {guild rank}        craftsman        21/1-in-2400  a glov
 goatherd                                   farmer                         one who looks after a herd of goats
 goldbeater                                 craftsman                      one who makes gold foil
 goldsmith              {guild rank}        craftsman                      a worker in precious metals
-governor                                   government
 gourmet chef           {guild rank}        service
+governor                                   government
 gravedigger                                service          
 greengrocer            {guild rank}        merchant                       seller of vegetables and fruits
 grinder                                    craftsman                      blade sharpener
@@ -389,14 +392,15 @@ joiner                 {guild rank}        craftsman                      skille
 judge                                      government                     a man who is responsible for deciding questions brought to court
 juggler                {guild rank}        entertainer
 knacker                                    craftsman                      harness-maker
-knocker                                    service                        knocks on doors/windows to wake residents
 knapper                                    craftsman                      a worker in flint
 knife-grinder                              service                        a sharpener of blades
 knifeman                                   military                       a soldier trained to disembowel horses
 knifesmith                                 craftsman          
 knight                                     government
+knocker                                    service                        knocks on doors/windows to wake residents
 laborer                                    service
 lacemaker                                  craftsman          
+lamplighter                                service
 lampwright                                 craftsman                      maker of lamps and lanterns
 lancier                                    craftsman                      a maker of lances
 landlord
@@ -434,6 +438,8 @@ magician of {magic}:   {guild rank}        magical
 magistrate                                 government                     a judge
 maidservant                                service         199/1-in-250   a female household servant
 mailer                                     craftsman                      enameller (not a maker of armor)
+majordomo                                  service
+manservant                                 service
 mapmaker                                   craftsman                      also known as cartographer
 marbler                {guild rank}        craftsman                      a cutter and carver of marble
 mariner                                    sailor
@@ -706,6 +712,7 @@ tumbler                                    entertainer
 turner                                     craftsman                      lathe worker (makes turned wooden objects, like chair legs)
 tutor                                      scholar
 typefounder                                craftsman          
+underbutler                                service
 undertaker
 unguentary             {guild rank}        merchant                       one who sells unguents
 upholder                                   craftsman                      an upholsterer
@@ -713,6 +720,7 @@ urchin
 userer                                     service                        a moneylender
 vagabond                                   criminal
 vaginarius                                 craftsman                      scabbard-maker
+valet
 veterinarian           {guild rank}        service                        especially {fauna}
 vintner                {guild rank}        craftsman                      a winemaker
 waferer                {guild rank}        merchant                       confectioner (a dealer in 'wafers', a kind of cake)

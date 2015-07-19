@@ -1,6 +1,9 @@
 : Coin
 {75%{:origin} }coin made of {:material}, worth about {2d10}sp; the face {:design}, the obverse {:design}{10%; {:special}}
 
+: Coins
+{75%{:origin} }coins made of {:material}, worth about {2d10}sp each; the face {:design}, the obverse {:design}
+
 : Origin
 ancient
 dwarven
@@ -13,7 +16,7 @@ probably a {humanoid:uncommon}
 
 : Material
 17x {metal:precious}
-2x{:material uncommon}
+2x {:material uncommon}
 {:material rare}
 
 : Material Uncommon

@@ -5,6 +5,12 @@
 10x {20%{:First} }{:Primary}{30% {:Feature}}
 10x {15%{:First} }{:Primary}{15% {:join} {:Feature}}
 5x {10%{:First} }{:Possessive} {:Feature}
+{:Cultural}
+
+: Cultural
+{Algonquin Name:Town}
+{Incan Name:Town}
+{Innuit Name:Town}
 
 : first
 auld

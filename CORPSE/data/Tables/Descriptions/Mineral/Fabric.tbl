@@ -1,8 +1,13 @@
 : Fabric
-27x {:Common}
-9x {:Uncommon}
-3x {:Exotic}
-{:Magical}
+27x {:common}
+9x {:uncommon}
+3x {:exotic}
+{:magical}
+
+: Fancy
+5x {:uncommon}
+3x {:exotic}
+{:magical}
 
 : Common
 burlap
@@ -47,3 +52,28 @@ netherweave
 runecloth
 spellspun
 soulbind
+
+: Combo
+{:fabric}
+{:fabric} and {:fabric{!different}}
+
+: Combo Fancy
+{:common} and {:fancy}
+{:fancy} and {:fancy}
+
+: Combo Leather
+{:fabric} and {fur and pelt:leather}
+{fur and pelt:leather} and {fur and pelt:leather}
+
+: Flavor
+colourful
+embroidered
+gauzy
+gilt-edged
+hand-woven
+jewelled
+padded
+sparkling
+tapestried
+tasselled
+{luxury:material}

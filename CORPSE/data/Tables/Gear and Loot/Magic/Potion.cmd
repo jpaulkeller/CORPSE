@@ -5,14 +5,16 @@
 
 / Generate a random potion.
 / Ask the user for a potion, using the random one as a default.
-/ Assign the entered potion to "PotionName" for re-use later.
+/ Assign the entered potion to "POT" for re-use later.
 
-<h1>POTION: {PotionName={Potion Type?{Potion}}}</h1>
+{POT={Potion Type?{Potion:Type}}}
+
+<h1>POTION: {POT}</h1>
 <hr>
 <p>Container: {container:potions}, holding {2d4} doses
  
 / Randomize using the potion as the seed, for consistent results for color, smell, etc:
-# {PotionName}
+# {POT}
 
 <h2>Description</h2>
 <ul>

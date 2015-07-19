@@ -1,0 +1,35 @@
+: Antagonist
+<Deity={Divine Name}>
+<Monstrosity={Monster Name}>
+a corrupt {pseudo class:priest}
+a pack of {trait:bad} {{{fauna}|{monster}}+}
+a powerful {pseudo class:fighter}
+a vampire
+a {trait:bad} {monster}
+a {trait:bad} {pseudo class}
+an insane {pseudo class:mage}
+the criminal {Name} who is wanted for {crime}
+the {:group} of {Place Name}
+the {humanoid} {king|warlord}
+the {{Guild}+} Guild
+the {{Humanoid}+} of {Place Name}
+{Epithet:Barbarian}
+{Epithet:Rogue}
+{Epithet:Warrior}
+{Law:Authority}
+{Name} the {Evocative Adj:Negative}
+{Noble Name}
+{PROTAGONIST}
+
+: Group
+bandits
+barbarians
+brigands
+cultists
+escaped prisoners
+former slaves
+mercenaries
+pirates
+rebels
+thieves
+undead

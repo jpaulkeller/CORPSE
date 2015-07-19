@@ -1,3 +1,5 @@
+/ The One Ring Roleplaying Guide (page 65)
+
 : Hobbit Name
 {:Male}
 {:Female}
@@ -7,18 +9,22 @@
 {:Prefix}{:suffix} {:Surname}
 
 : Female
-{:Female First} {:Surname}
+{:Female First} 
 
 : Male First
 Adalgrim
 Adelard
 Andwise
 Arthan
+Balbo
 Bandobras
+Berilac
+Bilbo
 Bingo
 Blanco
 Bodo
 Bowman
+Bucca
 Bungo
 Carl
 Carvin
@@ -27,6 +33,7 @@ Cotman
 Cottar
 Cullen
 Dinodas
+Dinonas
 Doderic
 Dodinas
 Drogo
@@ -48,6 +55,7 @@ Folco
 Fortinbras
 Fosco
 Fredegar
+Frodo
 Gedi
 Gerontius
 Gorbadoc
@@ -62,6 +70,9 @@ Harding
 Hending
 Heron
 Hildibrand
+Hildifons
+Hildigard
+Hildigrim
 Hildilfons
 Hob
 Hobson
@@ -71,6 +82,7 @@ Hugo
 Ilberic
 Isembard
 Isembold
+Isemgrim
 Isengar
 Isengrim
 Isumbras
@@ -83,10 +95,12 @@ Leskyn
 Longo
 Lotho
 Madoc
+Marcho
 Marmadas
 Marmadoc
 Marroc
 Melilot
+Meriadoc
 Merimac
 Merimas
 Milo
@@ -95,6 +109,7 @@ Moro
 Mosco
 Mungo
 Neff
+Nob
 Odo
 Odovacar
 Olo
@@ -102,6 +117,7 @@ Orgulas
 Orne
 Otho
 Paladin
+Peregrin
 Pimpernel
 Polo
 Ponto
@@ -117,6 +133,8 @@ Rowan
 Rudigar
 Rufus
 Sadoc
+Samwise
+Sancho
 Saradas
 Saradoc
 Seredic
@@ -141,9 +159,12 @@ Adamanta
 Amaranth
 Angelica
 Asphodel
+Belba
 Bell
 Belladonna
 Berylla
+Blossom
+Blush
 Bucca
 Caliope
 Camellia
@@ -173,6 +194,7 @@ Lobelia
 Malva
 Marigold
 May
+Melilot
 Menegilda
 Mentha
 Mimosa
@@ -182,6 +204,8 @@ Pansy
 Pearl
 Peony
 Pervinca
+Petal
+Pimpernel
 Piper
 Poppy
 Primrose
@@ -196,6 +220,7 @@ Rowan
 Ruby
 Sabretha
 Salvia
+Tanta
 Teg
 Tilly
 Toira
@@ -204,76 +229,6 @@ Vil
 Vzani
 Zanthe
 Ziza
-
-: Surname
-Angler
-Banks
-Battlestone
-Blackwater
-Boffin
-Bolger
-Bracegirdle
-Brockhouse
-Brown
-Brownlock
-Buckland
-Bunce
-Burrows
-Bywater
-Chubb
-Clayhanger
-Cotton
-Daggersharp
-Deepstrider
-Delving
-Diggle
-Fairbairn
-Fallowhide
-Farthing
-Farthingstone
-Gammidge
-Gamwich
-Gardner
-Goldworthy
-Goodbody
-Goodchild
-Goodenough
-Goold
-Greenfields
-Greenhand
-Greenholm
-Grubb
-Hardbottle
-Hayward
-Hollowpot
-Hornblower
-Lightfoot
-Longbottom
-Longholes
-Maggot
-Mugwort
-Noakes
-Oldbuck
-Oldforest
-Proudfoot
-Puddle
-Raftmite
-Roper
-Rumble
-Sackville
-Sandheaver
-Silverfin
-Skiprock
-Smallburrow
-Stoor
-Tanglestrand
-Tricker
-Tunnelly
-Twofoot
-Underhill
-Whitfoot
-Willowrush
-Yellowcrane
 
 : prefix
 Adel
@@ -343,3 +298,109 @@ ric
 roc
 son
 wise
+
+: Surname
+{:Surname Standard}
+{:Surname Prefix}{:surname suffix}
+
+: Surname Standard
+Angler
+Baggins
+Banks
+Battlestone
+Boffin
+Bolger
+Bracegirdle
+Brandybuck
+Brockhouse
+Buckland
+Bunce
+Burrows
+Bywater
+Chubb
+Clayhanger
+Cotton
+Daggersharp
+Delving
+Diggle
+Fairbairn
+Fallowhide
+Farthing
+Farthingstone
+Gamgee
+Gammidge
+Gamwich
+Gardner
+Goldworthy
+Goodbody
+Goodchild
+Goodenough
+Goold
+Grubb
+Hardbottle
+Hayward
+Headstrong
+Hollowpot
+Hornblower
+Lightfoot
+Longbottom
+Longholes
+Maggot
+Mugwort
+Noakes
+Oldbuck
+Oldforest
+Proudfoot
+Puddifoot
+Puddle
+Raftmite
+Roper
+Rumble
+Sandheaver
+Sandyman
+Skiprock
+Smallburrow
+Stoor
+Tanglestrand
+Took
+Tricker
+Tunnelly
+Twofoot
+Underhill
+{Color:Brown{!OneWord}}
+{Deep|Far|Long}strider
+
+: Surname Prefix
+Brown
+Buck
+Copper
+Deep
+Fair
+Far
+Mud
+Sack
+Sand
+Whit
+Willow
+{Color:Simple}
+{Compass:4}
+
+: Surname Suffix
+bank
+crane
+feet
+fields
+foot
+hand
+hill
+hole
+holm
+land
+lock
+ridge
+rush
+stone
+strand
+took
+ville
+water

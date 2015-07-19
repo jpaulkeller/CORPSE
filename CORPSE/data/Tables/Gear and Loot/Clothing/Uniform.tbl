@@ -1,50 +1,30 @@
-: uni
-uniform consisting of
+: Uniform
+a {:servant uniform}
+a {:military uniform generic}
+the {:military uniform specific}
 
-: UniformMale
-5x a {: ServantUniformMale}
-5x a {: MilitaryUniformGeneric}
-4x the {: MilitaryUniformSpecific}
+: servant uniform
+{profession:service}’s livery uniform consisting of {fabric:exotic} stockings, fine {color:simple} wool breeches, and an embroidered jacket of {fabric:exotic} with shiny {metal:common} buttons and embroidery.
+{profession:service}’s uniform consisting of knee-high {fur and pelt:leather} boots, a {:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
+{profession:service}’s uniform consisting of knee-high {fur and pelt:leather} boots, a {:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
 
-: ServantUniformMale
-2x {: ServantType}’s {: uni} knee-high {fur and pelt:hide} hide boots, a {: MaleLower}, and an embroidered doublet of {: ClothingFemale.MaterialsFancy} and {: ClothingFemale.MaterialsFancy} with shiny {: Utility.MetalDecor} buttons
-{: ServantType}’s livery {: uni} {: ClothingFemale.MaterialsFancy} stockings, fine {: ClothingFemale.Cloth_Color} wool breeches, and an embroidered jacket of {: ClothingFemale.MaterialsFancy} with shiny {: Utility.MetalDecor} buttons and embroidery
+: military uniform generic
+foot soldier’s dress uniform consisting of {fur and pelt:leather} boots, {color:simple} canvas breeches lined with {fabric:exotic},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
+guard’s dress uniform consisting of {fur and pelt:leather} boots, {fabric:common} breeches lined with {fabric:exotic},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
+horseman’s dress uniform consisting of {fur and pelt:leather} riding boots, {fur and pelt:leather} gauntlets, {color:simple} wool breeches lined with {fur and pelt:leather},{20% {:military accessories}} and a tailed jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
+pikeman’s dress uniform consisting of {fur and pelt:leather} boots, {fabric:common} breeches lined with {fabric:exotic},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
+sapper’s uniform consisting of {fur and pelt:leather} boots, a thick {fur and pelt:leather} apron, {fabric:common} breeches lined with {fabric:exotic}, and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
+military dress uniform consisting of {fur and pelt:leather} boots, {fur and pelt:leather} gauntlets, a {:lower} and lined with {fabric},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}. an embroidered shoulder patch carries the symbol of rank.
 
-: ServantType
-4x butler
-4x chauffeur
-4x footman
-4x valet
-3x doorman
-3x servant
-3x steward
-2x chamberlain
-2x gardener
-2x manservant
-2x stable-boy
-chef
-clerk
-coachman
-dogsbody
-gatekeeper
-groom
-lamplighter
-majordomo
-underbutler
+: military uniform specific
+dress uniform of a {military rank} in the {unit} consisting of {fur and pelt:leather} boots, {fur and pelt:leather} gauntlets, a {:lower} and lined with {fabric},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}; an embroidered shoulder patch carries the symbol of rank.
 
-: eab
-embroidery and buttons of shiny {: Utility.MetalDecor}. Insignia denote the rank of {: Fantasy Military Unit.MilitaryRank}
-
-: MilitaryUniformGeneric
-5x horseman’s dress {: uni} {fur and pelt:hide} hide riding boots, {fur and pelt:hide} hide gauntlets, {: ClothingFemale.Cloth_Color} wool breeches lined with {fur and pelt:hide} hide,{50%{:MilitaryAccessories}} and a tailed jacket {:of} {: ClothingFemale.Cloth_Color} wool with {: Color.metallic} braided epaulets and {: eab}
-5x foot soldier’s dress {: uni} {fur and pelt:hide} hide boots, {: ClothingFemale.Cloth_Color} canvas breeches lined with {: ClothingFemale.MaterialsFancy},{50%{:MilitaryAccessories}} and a jacket {:of} {: ClothingFemale.Cloth_Color} wool with {: Color.metallic} {: eab}
-5x guard’s dress {: uni} {fur and pelt:hide} hide boots, {: ClothingFemale.MaterialsCommon} breeches lined with {: ClothingFemale.MaterialsFancy},{50%{:MilitaryAccessories}} and a jacket {:of} {: ClothingFemale.Cloth_Color} wool with {: Color.metallic} {: eab}
-5x pikeman’s dress {: uni} {fur and pelt:hide} hide boots, {: ClothingFemale.MaterialsCommon} breeches lined with {: ClothingFemale.MaterialsFancy},{50%{:MilitaryAccessories}} and a jacket {:of} {: ClothingFemale.Cloth_Color} wool with {: Color.metallic} {: eab}
-sapper’s {: uni} {fur and pelt:hide} hide boots, a thick {fur and pelt:hide} hide apron, {: ClothingFemale.MaterialsCommon} breeches lined with {: ClothingFemale.MaterialsFancy}, and a jacket {:of} {: ClothingFemale.Cloth_Color} wool with {: Color.metallic} {: eab}
-
-: MilitaryUniformSpecific
-dress uniform of a {: Fantasy Military Unit.MilitaryRank} in the {: Fantasy Military Unit.main}. It consists of {fur and pelt:hide} hide boots, {fur and pelt:hide} hide gauntlets, a {: MaleLower} and lined with {: ClothingFemale.MaterialsHat},{50%{:MilitaryAccessories}} and a jacket {:of} {: ClothingFemale.Cloth_Color} wool with {: Color.metallic} braided epaulets and embroidery and buttons of shiny {: Utility.MetalDecor}. An embroidered shoulderpatch carries the symbol of {: Fantasy Military Unit.MilitaryRank}
-
-: MilitaryUniformNoDesignation
-a military dress {: uni} {fur and pelt:hide} hide boots, {fur and pelt:hide} hide gauntlets, a {: MaleLower} and lined with {: ClothingFemale.MaterialsHat},{50%{:MilitaryAccessories}} and a jacket {:of} {: ClothingFemale.Cloth_Color} wool with {: Color.metallic} braided epaulets and embroidery and buttons of shiny {: Utility.MetalDecor}. An embroidered shoulderpatch carries the symbol of {: Fantasy Military Unit.MilitaryRank}
-
+: military accessories
+a baldric of {fabric:common}
+a belt of {fur and pelt:leather}
+a cloak of {fabric:common}{10%, dagged}{10% with {tassels|cords}}
+a harness of {fur and pelt:leather}
+a sword belt of {fur and pelt:leather}
+a tabard of of {fabric:common} and bearing the unit’s coat of arms
+an apron of {fur and pelt:leather}
+{:military accessories} {:military accessories{!different}}

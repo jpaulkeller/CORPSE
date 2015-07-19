@@ -1,26 +1,125 @@
+/ DRAGON Magazine Vol X No 8, Jan 86, page 30
 / http://random-generator.com/index.php?title=Armor
+/ http://random-generator.com/index.php?title=Clothing
  
-: Male Outfit
-10x He is wearing {: male upper outfit}, {: male lower}, and {: male footwear}.{75%  {: male accessories chance}.}{75%  {: male hat}.}
-3x He is wearing {: male full body} and {: male footwear}{: male accessories chance}{: male hat}
-He is wearing {: uniform male}
+: Outfit
+10x he is wearing a {:upper outfit}, a {:lower}, and {footwear}{33%, {:accessories}}{33%, {:hat}}
+1x he is wearing {uniform}
+3x he is wearing a {:full body} and {footwear}{33%, {:accessories}}{33%, {:hat}}
 
-: ml
-{:of} {fur and pelt:hide} hide
+: Clothing
+a man’s {:accessories}
+a man’s {:accessories}
+a man’s {:full body}
+a man’s {:full body}
+a man’s {:lower}
+a man’s {:lower}
+a man’s {:upper single}
+a man’s {:upper single}
+a pair of men’s {footwear}
+a pair of men’s {footwear}
 
-: mm
-/ {:of} {: metal flavor} {: Utility.MetalArmor}
-{:of} {: metal flavor} {Armor}
+: upper single
+{:upper inner}
+{:upper outer}
 
-: mul2a
-5x full-length robe
-2x coat
-half-length robe
+: upper outfit
+{:upper inner}
+{:upper inner} and a {:upper outer}
 
-: Male Full Body
-/ 30x robe {:of} {: ClothingFemale.Mat_Combo_Common}
-/ 30x long tunic {:of} {: ClothingFemale.Mat_Combo_Common}
-/ 25x hooded robe {:of} {: ClothingFemale.Mat_Combo_Common}
-/ 3x toga {:of} {: ClothingFemale.Mat_Combo_Common}
-one-piece {:of} {color:light} terry cloth
+: upper inner
+bell-sleeved shirt
+long-sleeved jupon
+nightshirt of {fabric:combo}
+shirt of {fabric:combo}
+sleeveless shirt of {fabric:combo}
+tunic of {fabric:combo}
 
+: upper outer
+coat of {fabric:combo}
+cotehardie of {fabric:combo}
+doublet of {fabric:combo}
+houppelarde (surcoat with belled sleeves)
+jacket of {fabric:combo}
+jerkin of {fabric:combo}
+overtunic of {fabric:combo}
+smoking jacket of {fabric:combo fancy}
+surcoat of {fabric:combo}
+tabard of {fabric:combo}
+tabard of {fabric:combo}
+vest of {fabric:combo fancy}
+waistcoat of {fabric:combo fancy}
+
+: lower
+barbarian loincloth of {fur and pelt:fur} fur
+kilt of {color:simple} and {color:simple} wool
+pair of {10%cross-gartered }breeches of {fabric:combo}
+pair of jodhpurs of {fabric:combo}
+pair of lederhosen of {fur and pelt:leather}
+pair of pantaloons of {fabric:combo}
+pair of pants of {fabric:combo}
+pair of stockings
+pair of tights
+
+: full body
+10x hooded robe of {fabric:combo}
+10x long tunic of {fabric:combo}
+5x robe of {fabric:combo}
+gown of {fabric:combo}
+terry cloth one-piece of {color:light} terry cloth (cotton)
+toga of {fabric:combo}
+
+: accessories
+he is also wearing a {:accessories}{15%{ and a {:accessories{!different}}}}.
+
+: accessories
+apron of {fur and pelt:leather}
+baldric of {fabric:combo}
+bandoleer of {fabric:combo leather}
+belt of {fur and pelt:leather}{10% studded with {{gem}+}{50% with a {20%{metal:flavor} }{metal:armor} buckle}
+cape of {fabric:combo} and {fabric:exotic}
+codpiece of {fur and pelt:leather} and {20%{metal:flavor} }{metal:armor}
+gorget of {fur and pelt:leather} and {20%{metal:flavor} }{metal:armor}
+half-cape of {fabric:combo} and {fabric:exotic}
+harness of {fur and pelt:leather}
+pair of gauntlets of {fabric:combo leather}
+pair of gloves of {fabric:combo leather}
+plaid of {fabric:combo leather} with a brooch of {metal:common}
+ruff of starched muslin
+sash of {fabric:combo fancy}
+scarf of {color:simple} wool
+spiked collar of {fur and pelt:leather} and {20%{metal:flavor} }{metal:armor}
+sporran of {fabric:combo leather}
+
+: hat
+admiral’s hat of {fabric}
+beefeater hat of {fabric}
+beret of {fabric}
+bordered hood of {fabric}
+broad-brimmed hat of {fabric}
+buccaneer’s hat of {fabric}
+buttoned hood of {fabric}
+cap of {fabric}
+cavalier’s hat of {fabric}
+chaperon (hood with neck wrap) of {fabric}
+chef’s hat of {fabric}
+coif of {fabric}
+desertfolk fez of {fabric}
+figalian hat of {fabric}
+fisherman’s cap of {fabric}
+jester’s hat of {fabric}
+pilgrim’s hat of {fabric}
+roundlet hat of {fabric}
+simple hood of {fabric}
+skullcap of  of {fabric}
+straw hat
+top hat of {fabric}
+tricorn hat of {fabric}
+wizard’s hat of {fabric}
+“capello” hat of {fabric}
+“capitanesca” hat of {fabric}
+“gaucho” hat of {fabric}
+“hussar” hat of {fabric}
+“sack” hat of {fabric}
+“tailed” hood of {fabric}
+“torredor” hat of {fabric}

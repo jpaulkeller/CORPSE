@@ -1,11 +1,13 @@
-/ Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
-/          Values from DRAGON Magazine #83, page 10.
+/ Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
+/ Values from DRAGON Magazine #83, page 10.
+/ https://www.kickstarter.com/projects/754081504/wyrmwood-magnetic-dice-tower-system
 
 .Wood              Lbs/CFt    Notes
 
 : Wood
 acacia
 alder               50        A tree which grows in moist land whose bark is used in dyeing and tanning. The wood is used for bridges and piles because it is resistant to underwater rot.
+aromatic cedar
 ash                 45-48     Tough elastic wood with a straight, close grain.
 aspen
 aster
@@ -16,12 +18,21 @@ basswood                      A light soft durable wood.
 beech               46        A large-sized tree that produces hard woods. The smooth bark of a beech tree was used for writing upon.
 birch                         A hard, smooth-grained wood whose bark strips off in layers. Birch wood is most valued in furniture construction.
 black ash
+black limba
 black locust
+black palm
+black poisonwood
 black walnut                  A large hardwood, whose wood is highly prized and used for furniture, gun-stocks and veneer.
 blackthorn
+blackwood
 bloodwood
+blue mahoe
+bocote
 brazilwood                    A reddish wood that is capable of yielding a red dye.
+brown oak
+bubinga
 camphor             62        volatile, pungent
+canarywood
 cedar               34        Used for the durability of the wood. Associated with a fragrant building material as well.
 cherry
 chestnut
@@ -30,11 +41,13 @@ cork                15
 cottonwood        
 cypress
 dogwood
+douglas fir
 ebony               75-83     
 elder
 elm                 44        Tall, hardy shade trees whose wood makes a hard, heavy wood. The wood is fine-grained and valuable for its resistance to splitting.
 english oak
 fir
+flame box elder
 hawthorn
 hazel
 hemlock
@@ -44,7 +57,11 @@ hornbeam
 ipe                           Brazilian walnut
 iron-wood
 juniper
+katalox
 kingwood                      A Brazilian wood used much in cabinet work because of its streaks of violet tints.
+kauri
+kingwood
+lacewood
 larch
 laurel
 lebethron
@@ -54,30 +71,46 @@ locust
 logwood             57.4
 mahogany            41-57     A hardwood that is commonly used in furniture, it varies in color from reddish-brown to yellow.
 maple                         A hard, close-grained wood used for furniture making and flooring. Colors range from reddish to yellow.
+marblewood
 mistletoe
 mulberry            56
 oak                 45-55     The wood is hard, tough, relatively flexible, resistant to water and not too heavy. It bares weather changes far more than most other woods. It is valued in all manner of construction from flooring, furniture, millwork, cross ties, mine timbers, fenceposts, houses and ships. The bark is used in tannin.
-olive
+olivewood
 osage
+padauk
 palm
 pine                26-43
+pink ivory
 poplar              46        These trees are tall and fast growing with soft wood. A hybrid poplar tree which produces a superior type of timber.
+purpleheart
 red oak
+redheart
 redwood
 rosewood                      A hard, reddish-black streaked wood with a rose-like odor. Used for making furniture.
 rowan
 royal oak
 sassafras           30.1
 silver lime
+spalted tamarind
 spruce
 sweetgum
+snakewood
 sycamore            28        A tree common in the middle east, growing large and to a great height. It is used in almost all facets of building construction.
 teak                55        A large tree with a yellowish-brown wood highly prized in ship building.
+tiger maple
+tulipwood
 vine
 walnut
+wenge
+white ash
+white pine
 willow              30
+wych elm burl
+yellowheart
 yellow boxwood                A yellowish, fine, close-grained wood used in engraving, instrument making and in fine woodwork.
 yew                 49.8
+zebrawood
+ziricote
 {:fruit} wood
 
 : Fruit

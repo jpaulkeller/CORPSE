@@ -1,4 +1,5 @@
 / http://random-generator.com/index.php?title=Dwarf_Names
+/ The One Ring Roleplaying Guide (page 51)
 
 : Dwarf Name
 {:Male}
@@ -28,51 +29,103 @@
 
 : Other Male First
 Agaro
+Ai
+Anar
 Arnan
 Auxlan
 Avamir
 Baelnar
 Balfam
+Balin
 Bariken
+Beli
+Bifur
+Bláin
+Bofur
+Bombur
+Borin
 Borkûl
+Bruni
+Burin
 Darkûl
 Dolmen
+Dori
+Durin
+Dwalin
 Dyrnar
+Dáin
 Erag
 Ezegan
+Farin
 Ferrek
+Flói
+Frerin
+Frár
+Frór
+Fundin
+Fíli
 Garmûl
-Glint
 Ghorvas
+Gimli
+Ginar
+Glint
+Glóin
 Grimmalk
+Gróin
+Grór
 Haeltar
 Halagmar
 Halzar
+Hanar
+Hepti
 Hlant
+Iari
 Korlag
 Krag
 Krim
 Kurman
+Kíli
 Lurtrum
+Lófar
+Lóni
 Malagar
 Mardam
 Maulnar
 Melgar
 Morak
+Narvi
+Niping
+Nori
+Náin
+Náli
+Nár
+Nói
+Núr
+Nýrád
 Orobok
+Póri
+Regin
 Rogath
 Roken
 Rozag
 Sabakzar
 Sharak
 Smethykk
+Svior
 Swargar
 Thorbalt
 Thorin
+Thráin
+Thrór
 Tredigar
 Vabûl
+Veig
+Vidar
 Vistrum
 Wolvar
+Óin
+Ónar
+Óri
 
 : Syllabic Name Male
 {:Prefix Male}{:suffix male}{20%{:suffix male}}
@@ -184,12 +237,16 @@ Son of {:Male First}{10% Son of {:Male First}}
 
 : Other Female First
 Beyla
+Dís
 Fenryl
 Grenenzel
+Hón
 Krystolari
+Kóna
 Lokara
 Lurka
 Marnia
+Már
 Praxana
 Rokel
 Roksana

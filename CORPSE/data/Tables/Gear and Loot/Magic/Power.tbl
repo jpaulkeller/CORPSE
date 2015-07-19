@@ -1,237 +1,56 @@
-/ http://random-generator.com/index.php?title=Angband
+/ http://random-generator.com/index.php?title=Into_the_Odd_Arcana
 
-: Amulet
-Adornment
-Charisma
-Devotion
-ESP
-Inertia
-Infravision
-Regeneration
-Resist Acid
-Resist Lightning
-Resistance
-Searching
-Slow Digestion
-Sustenance
-Teleportation
-Trickery
-Weaponmastery
-Wisdom
-the Magi
-
-: Mushroom
-Clear Mind
-Debility
-Emergency
-Fast Recovery
-Purging
-Second Sight
-Sprinting
-Stoneskin
-Terror
-Turbulence
-Vigor
-
-: Potion
-Augmentation
-Berserk Strength
-Blindness
-Boldness
-Brawn
-Charisma
-Confusion
-Constitution
-Contemplation
-Cure Critical Wounds
-Cure Light Wounds
-Cure Serious Wounds
-Dexterity
-Dragon Breath
-Enlightenment
-Enlightenment
-Experience
-Healing
-Healing
-Heroism
-Infravision
-Intellect
-Intelligence
-Life
-Lose Memories
-Neutralize Poison
-Nimbleness
-Poison
-Resist Cold
-Resist Heat
-Resist Poison
-Restore Life Levels
-Restore Mana
-Salt Water
-Sleep
-Slime Mold Juice
-Slowness
-Speed
-Strength
-Toughness
-True Seeing
-Wisdom
-
-: Ring
-Acid Balls
-Acid Bolts
-Cold Balls
-Curing
-Detection
-Disarming
-Door/Stair Location
-Drain Life
-Fire Balls
-Fire Bolts
-Frost Bolts
-Healing
-Identify
-Illumination
-Light
-Lightning Balls
-Lightning Bolts
-Magic Mapping
-Polymorph
-Probing
-Recall
-Restoration
-Sleep Monster
-Slow Monster
-Speed
-Teleport Other
-Trap Location
-Treasure Location
-
-: Rod
-Acid Balls
-Acid Bolts
-Cold Balls
-Curing
-Detection
-Disarming
-Door/Stair Location
-Drain Life
-Fire Balls
-Fire Bolts
-Frost Bolts
-Healing
-Identify
-Illumination
-Light
-Lightning Balls
-Lightning Bolts
-Magic Mapping
-Polymorph
-Probing
-Recall
-Restoration
-Sleep Monster
-Slow Monster
-Speed
-Teleport Other
-Trap Location
-Treasure Location
-
-: Scroll
-Acquirement
-Aggravate Monster
-Banishment
-Blessing
-Curse Armour
-Curse Weapon
-Darkness
-Deep Descent
-Destruction
-Detect Invisible
-Dispel Undead
-Door/Stair Location
-Enchant Armour
-Enchant Weapon
-Enchant Weapon To-Dam
-Enchant Weapon To-Hit
-Holy Chant
-Holy Prayer
-Identify
-Light
-Magic Mapping
-Mass Banishment
-Monster Confusion
-Phase Door
-Protection from Evil
-Recharging
-Remove Curse
-Restore Item
-Rune of Protection
-Satisfy Hunger
-Summon Monster
-Summon Undead
-Teleport Level
-Teleportation
-Trap Creation
-Trap Detection
-Trap/Door Destruction
-Treasure Detection
-Word of Recall
-
-: Staff
-Banishment
-Confuse Monsters
-Cure Light Wounds
-Curing
-Darkness
-Destruction
-Detect Evil
-Detect Invisible
-Dispel Evil
-Earthquakes
-Haste Monsters
-Healing
-Holiness
-Identify
-Light
-Mapping
-Power
-Remove Curse
-Sleep Monsters
-Slow Monsters
-Speed
-Starlight
-Summoning
-Teleportation
-the Magi
-
-: Wand
-Acid Balls
-Acid Bolts
-Annihilation
-Clone Monster
-Cold Balls
-Confuse Monster
-Disarming
-Dragon's Breath
-Dragon's Flame
-Dragon's Frost
-Drain Life
-Fire Balls
-Fire Bolts
-Frost Bolts
-Haste Monster
-Heal Monster
-Light
-Lightning Balls
-Lightning Bolts
-Magic Missile
-Polymorph
-Scare Monster
-Sleep Monster
-Slow Monster
-Stinking Cloud
-Stone to Mud
-Teleport Other
-Trap/Door Destruction
-Wonder
+A creature you specify begins dancing a jig uncontrollably unless it passes a WIL save.  The creature can make a WIL save to break free each turn.
+A creature you specify catches fire if it tells a lie, taking d6 Damage.  The effect lasts 1 hour or until the power is next used.
+A door you touch redirects to lead to a different door nearby.  The effect remains until the power's next use.
+A ghastly siren noise causes d6 Damage to everything in a 30ft radius, except you. It is sure to attract attention.
+A piece of text you indicate becomes scrambled gibberish until you decide to return it to normal.
+A plant you touch can speak, until the power is next used.  Flowers are gossipy, trees are wise.
+A putrid stench constantly surrounds you: creatures within 15ft vomit copiously unless they make a STR save.
+A random object is automatically created every hour, whether you want it or not.  Roll 1d8: (1) Cowbell.  Will probably make a racket when it appears.  (2) d6 tissue-paper flowers.  (3) A human skull.  (4) A steel can full of ball-bearings.  (5) A 10ft piece of string.  (6) A small pot of {color} paint.  (7) A flask of blood.  (8) A delicious fruit pie.
+A target creature experiences reverse gravity, until the power is next used.
+A target creature's body becomes strongly magnetic, until the power is next used.
+A violent gust of wind knocks over a target you specify, unless it passes a DEX save to keep its balance.
+A {color} aura surrounds an object you specify.  The object becomes irresistible to all who see it unless they pass a WIL save; those affected strive anxiously to reach the object with every means at their disposal.  The effect ends when the object is touched.
+A {color} beam afflicts a target creature with violent explosive vomiting and diarrhoea.  A STR save resists the beam, and the victim can make STR saves on subsequent turns to break the effect.
+An aura of temporal distortion allows you to take a double turn at the cost of losing 1 WIL each time.
+An iron or steel item can be levitated and manipulated remotely by you.  The item remains under your control until you next use this power.
+An object touched by you causes anyone who subsequently touches it to fall asleep unless they pass a WIL save.
+Any book you touch comes to life.  Animated books can fly by flapping their pages.  They are all quite rebellious towards you and deliberately try to annoy you.  Each has STR 5, DEX 10, WIS 13, 1 HP, and attacks for d4 Damage.
+If you touch a creature with your eyes closed, you can thereafter see through its eyes.  The effect ends if you open your eyes again.  Your other senses continue working normally.
+Iron objects within 5ft of you rust at an extremely rapid pace.
+Objects you touch become {color}. This effect lasts until another item is touched.
+Objects you touch turn to {made of:hard}. This effect lasts until another item is touched.
+You are permanently floating 5ft off the ground.  You must push off something in order to move.
+You become invisible as long as you are standing in a shadow.
+You can animate a weapon: it attacks a creature indicated by you by itself until the power is next used.  You have no control over the weapon once a target is chosen.
+You can become a {made of:hard} statue until you decide to change back.  You have Armour 3, are completely immobile, and can hear but not see.
+You can breathe underwater indefinitely.  This power doesn't protect items from water damage.
+You can cast an indigo ray at a creature, causing its STR/WIL scores to switch.  A DEX save dodges the ray.
+You can change a 10ft area from rock to sand, or vice-versa.  Lasts until the power is next used.
+You can charge yourself with electricity, dealing d10 Damage to the next person who touches you.
+You can claim that recent events were in fact a prescient vision.  Rewind time to when you entered the current room and proceed, with the warnings from your vision.  You can only use this power once per room.
+You can convert metal into a random type of fungal matter.  Roll 1d8: (1) Burns warmly like firewood, long-lasting greenish flame.  (2) Nutritious and tasty!  Makes a good meal all by itself.  (3) When touched, phosphoresces brightly for a few minutes.  (4) Explodes into a 10ft butt of spores when struck hard (lose d6 DEX).  (5) If disturbed, collapses into 10ft puddle of slime (DEX save or fall over).  (6) Mushroom cap fires off like a rocket (d12 Damage) when lit.  (7) Vile medicinal taste, cures d6 STR loss.  (8) Far out!  Everything looks so cosmic now. (lasts d6 hours)
+You can create a 10ft section of crystal wall.  Up to 4 sections can exist at a time: the oldest one will vanish when another is created.
+You can create a 20ft area of {color} mist that panics anyone caught in it unless they pass a WIL save.
+You can create a 5ft-wide pillar of ice, up to 50ft tall.  It lasts until the power is next used.
+You can create a boulder nearby, which lasts until the power's next use.  The boulder causes d12 damage if dropped on someone's head.
+You can create a small {color} butt just above head level.  Each butt created acts randomly on your turn.  Roll a d8: (1) Dissipate  (2) Drift in a random direction  (3) Drift over a nearby creature  (4) Start raining  (5) Start snowing  (6) Start hailing, causing d4 Damage  (7) Stop precipitation  (8) Start thundering: the next time anyone is underneath, they take d8 Damage and thundering ends.
+You can eat stone (excreting sand), but can no longer eat normal food. Some types of stone are stodgy, (un)healthy, sweet, savoury, etc.
+You can enchant an empty book with a touch.  Anything written in such a book appears in every other.
+You can grab a fistful of sand and make it become a dagger.  Daggers created this way revert to sand if they are ever more than 20ft from you.
+You can jump 10ft in the air, without a running start.
+You can project {color} lightning bolts, dealing d8 Damage that ignores metal Armours.
+You can reflect rays/beams back upon themselves by passing a WIL save.
+You can see inside sealed containers (chests, barrels, etc) with X-ray vision.
+You can spontaneously create d6 flesh-eating maggots, which attack the nearest living creature.  Each has STR 1, DEX 10, WIS 1, 1HP, and attacks for 1 Damage.
+You can store or retrieve a single item in your own shadow.
+You can touch an apple to make it become golden and shiny; when eaten, the apple heals 1 STR loss.  The apple lasts until consumed or until the power is next used.
+You can turn a gold object into straw with a touch.  The transformation lasts until the power is next used, or until you decide to release it.
+You can turn into a spider until you decide to change back.  You have STR 5 and DEX 14, but keep the same WIL.  Your bite deals 1 Damage, and on Critical Damage your poison drains d6 DEX.
+You can walk on water as long as you keep your balance.  If rushed or threatened, you must make a DEX save or else fall in.
+You cannot make any sound, even on purpose.
+You choose a time limit, and then immediately turn into mist for exactly that long.  You have no senses and are unaware of the passage of time while in mist form.
+You have turned into living ice.  You have Armour 1, and deal d6 Damage while unarmed.  Fire attacks on you are enhanced, cold attacks are impaired.
+You randomly teleport by 10ft every time you take Damage.
+{d6} icicles launch in random directions from you, each dealing d6 Damage.

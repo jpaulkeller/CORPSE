@@ -2,6 +2,7 @@
 / http://random-generator.com/index.php?title=Dusty_Bookshelves
 / http://random-generator.com/index.php?title=FantasyBooks
 / http://www.mythosa.net/Utils.html
+/ http://random-generator.com/index.php?title=Indiana_Jones_Titles
 
 : Book
 {ARCANE BOOK}
@@ -62,6 +63,7 @@ Opus
 Pictorial Guide
 Principles
 Research
+Revelation
 Saga
 Stud{y|ies}
 Works
@@ -271,7 +273,9 @@ Wilderness Lore
 {Humanoid} {Castes|Clans|Customs|Tribes} of the {:Place}
 {Magic}
 {Merchandise}
+{Pseudo Class}
 {Region}
+{Structure}
 {{Fauna}+}
 {{Flora}+}
 {{Monster}+}

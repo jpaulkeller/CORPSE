@@ -1,12 +1,13 @@
 / http://random-generator.com/index.php?title=Enchanted_Sword
 
+: Magic Weapon
 {:HiltedIntro} {:HiltedSwordParts} {:MakerChance} {:EnchanterChance} {:HistoryChance}
 
 : HiltedIntro
 {Weapon Name}, a {50%{:legendary} }{:HiltedSwordType}
 {Weapon Name}, a {:HiltedSwordType} {:of legend}
 The {50%{:Legendary} }{:BasketedSwordType} {:Called} {Weapon Name}
-The  {:HiltedSwordType} {:of legend} {:Called} {Weapon Name}
+The {:HiltedSwordType} {:of legend} {:Called} {Weapon Name}
 
 / sinister
 / wicked-looking

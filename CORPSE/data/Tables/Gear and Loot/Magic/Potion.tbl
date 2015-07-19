@@ -2,10 +2,13 @@
 / Oils are applied topically
 / Tinctures are organic extractions
 
-: Loot
-{:POTION} ({2d4} doses in a {2d3-1}-{volume:portable} {container:potions})
-
 : Potion
+<Potion={:Type}>
+
+: Loot
+{:POTION TYPE} ({2d4} doses in a {2d3-1}-{volume:portable} {container:potions})
+
+: Type
 Elixir of Health
 Elixir of Madness ({neurosis})
 Elixir of youth
@@ -30,7 +33,7 @@ Potion of Animal Control ({Order})
 Potion of Clairaudience
 Potion of Clairvoyance
 Potion of Climbing
-Potion of Delusion ({potion})
+Potion of Delusion ({:TYPE})
 Potion of Diminution
 Potion of ESP
 Potion of Extra Healing
@@ -59,6 +62,7 @@ Potion of Water Breathing
 Potion of Alteration: {Alteration}
 Potion of Divination: {Divination}
 Potion of Empathy: {Empathic}
+Potion of {Enchanted Item:Potion}
 Potion of {Humanoid} control (TSR: {TSR humanoid})
 Potion of {Hypnotic}
 Potion of {Necromantic}

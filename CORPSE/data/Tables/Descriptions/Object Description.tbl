@@ -26,7 +26,11 @@ texture: {texture}
 value: {value}
 
 : insc
-inscribed: {Name}
-inscribed: {Motto:Fictional}
-inscribed: {Motto:Real}
-inscribed: {MOTTO:SLOGAN}
+inscribed: {INSCRIPTION}
+inscribed: {LATIN PHRASE.LATIN}
+inscribed: {NAME}
+inscribed: {MOTTO:FICTIONAL}
+inscribed: {MOTTO:REAL}
+inscribed: {MOTTO}
+inscribed: {QUOTE}
+inscribed: {RHYME}

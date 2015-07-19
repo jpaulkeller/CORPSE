@@ -1,6 +1,6 @@
 : Jewelry
-
 armband
+armlet
 bracelet
 brooch
 charm
@@ -13,6 +13,7 @@ pin
 ring
 talisman
 trinket
+wristlet
 {:crown}
 
 : Crown

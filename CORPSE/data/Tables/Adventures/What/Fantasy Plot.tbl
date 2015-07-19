@@ -8,42 +8,8 @@ The oracle predicted that {:bad outcome}. Now it is coming true and only {:myste
 If you fight through {:group} to {:goal}, {:powerful figure} has a reward for you.
  
 : Powerful Figure
-a barbarian druid
-a child king
-a demon
-a Dwarven runemaster
-a famous bard
-a fire mage
-a foreign diplomat
-a hag
-a holy healer
-a lich
-a lightning lord
-a long dead hero
-a mummified king
-a paladin
-a prince
-a princess
-a prophet
-a reader of the dead
-a rogue-wizard from the sea
-a telepath
-a vampire
-a wizard
-an angel
-an Elven sage
-an inquisitor
-an ogre warlord
-one of the characters� feudal lord
-one of the characters� former master
-the dean of the wizard academy
-the goblin king
-the head archivist
-the last of an ancient dynasty
-the prince of thieves
-the River Walker
-the royal executioner
-the sheriff 
+{antagonist}
+{protagonist}
  
 : Group
 a pack of wolves
