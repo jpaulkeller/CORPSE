@@ -107,7 +107,7 @@ public class Combo implements Card, Comparable<Combo>
            "If you roll 1 or less, ",
            "you may take an extra turn.  (This is not limited to once per turn.)");
       add ("Paramedic", "First-aid Kit", "Repair Kit", 
-           "", "All injury Event cards (drawn or in a player's hand) are discarded, and you gain 4 points for each one.");
+           "", "All injury Event cards (drawn, in play, or in a player's hand) are discarded, and you gain 4 points for each one.");
       add ("Photographer", "Camera", "Safari Vest", 
            "", "You get 2 points if you end your turn on a <em class=tile>Scenic View</em> or on the same tile as another player.  (You may only get points once per <em class=tile>View</em> or player.)");
       add ("Road Warrior", "Hydration Pack", "Mountain Bike", 

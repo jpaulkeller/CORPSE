@@ -117,9 +117,7 @@ public final class CardUtils
       System.out.println();
    }
 
-   private static void checkCard (final Pattern pattern,
-                                  final String textToCheck,
-                                  final String source)
+   private static void checkCard (final Pattern pattern, final String textToCheck, final String source)
    {
       if (textToCheck != null)
       {
@@ -129,8 +127,7 @@ public final class CardUtils
             String type = m.group (1);
             String cardName = m.group (2).replaceAll ("\n", " ").trim();
             String status = findCard (cardName, type);
-            REFERENCES.add (status + type + " [" + cardName + "]" +
-                            " referenced by " + source);
+            REFERENCES.add (status + type + " [" + cardName + "]" + " referenced by " + source);
          }
       }
    }
@@ -185,9 +182,7 @@ public final class CardUtils
       System.out.println();
    }
 
-   private static void checkCard (final String cardName,
-                                  final String cardType,
-                                  final String textToCheck)
+   private static void checkCard (final String cardName, final String cardType, final String textToCheck)
    {
       String regex = cardName.replace (" ", "\\s");
       // regex = Pattern.quote (regex);
