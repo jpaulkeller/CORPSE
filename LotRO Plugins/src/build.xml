@@ -7,10 +7,12 @@
    <target name="VirtueView" description="Install the VirtueView plugin into LOTRO">
      <delete dir="${dir}/VirtueView" />
      <mkdir dir="${dir}/VirtueView" />
-     <copy file="VirtueView/VirtueView.plugin" todir="${dir}" overwrite="true"/>
+      <copy file="VirtueView/VirtueView.plugin" todir="${dir}" overwrite="true"/>
+      <copy file="VirtueView/VirtueView.plugincompendium" todir="${dir}" overwrite="true"/>
      <copy todir="${dir}/VirtueView" overwrite="true">
        <fileset dir="./VirtueView">
          <exclude name="**/*.plugin" />
+         <exclude name="**/*.plugincompendium" />
        </fileset>
      </copy>
    </target>
