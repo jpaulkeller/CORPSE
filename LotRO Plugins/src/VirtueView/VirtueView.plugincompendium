@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>720</Id>
+  <Name>VirtueView</Name>
+  <Version>1.6.1</Version>
+  <Author>Mosby</Author>
+  <InfoUrl>http://www.lotrointerface.com/downloads/info720</InfoUrl>
+  <DownloadUrl>http://www.lotrointerface.com/downloads/download720</DownloadUrl>
+  <Descriptors>
+    <descriptor>Palantiri\VirtueView.plugin</descriptor>
+  </Descriptors>
+  <Dependencies>
+    <dependency>0</dependency>
+  </Dependencies>
+</PluginConfig>
