@@ -1,0 +1,5 @@
+{zone="Eriador",region="Bree-land",deed="Barrow-spirits (Adv)",type="Slay",reward="+1",level=50,v="Mrcy",virtue="Mercy"}, -- ?
+{zone="Eriador",region="Enedwaith",deed="Slayer of the Dead (Adv)",type="Slay",reward="+1",level=65,v="Patn",virtue="Patience"}, -- ?
+{zone="Eriador",region="Eregion",deed="Mercenaries of the White-hand (Adv)",type="Slay",reward="+1",level=48,v="Dtrm",virtue="Determination"}, -- ?
+{zone="Eriador",region="Lone-lands",deed="Gaunt-Man Slayer (Adv)",type="Slay",reward="+1",level=19,v="Mrcy",virtue="Mercy"}, -- ?
+{zone="Rhovanion",region="Moria Lower Deeps",deed="Glow-worm Slayer (Adv)",type="Slay",reward="+1",level=50,v="Wsdm",virtue="Wisdom"}, -- ?

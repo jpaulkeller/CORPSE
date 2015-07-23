@@ -14,6 +14,10 @@ import "Palantiri.VirtueView.UI.TextBox"
 -- API docs: http://www.lotrointerface.com/wiki
 -- Turbine.Shell.WriteLine("debug");
 
+-- To upload: 
+-- http://www.lotrointerface.com/downloads/upload-update.php?
+-- http://www.lotrointerface.com/downloads/editfile.php?id=720
+
 -- TODO
 -- background image for main panel
 -- icon
@@ -29,7 +33,7 @@ function GUI:Constructor()
 	self:LoadSettings();
 
 	-- set window properties
-	local w = 900;
+	local w = 1000;
 	local h = 500;
 	self:SetText("Virtue Deeds");
 	self:SetSize(w, h);
@@ -96,17 +100,19 @@ function GUI:Constructor()
 	
 	self.regionCombo = Palantiri.VirtueView.UI.ComboBox();
 	self.regionCombo:SetParent(self);
-	width = 270;
+	width = 370;
 	self.regionCombo:SetSize(width, 20);
 	self.regionCombo:SetPosition(x, y);
 	x = x + width + 5;
 	
-    -- add the elements to a set, and sort them
-    local set = {}
+  -- add the elements to a set, and sort them
+  local set = {}
 	for _, rec in ipairs(virtueTable) do set[rec.region] = true; end
 	regions = {}
 	for pair in pairs (set) do table.insert(regions, pair); end
-	table.sort(regions);
+  table.insert(regions, 1, "Mines of Moria");
+  table.insert(regions, 1, "Shadows of Angmar");
+  table.sort(regions);
 	table.insert(regions, 1, "Any");
 	
 	for i, region in ipairs(regions) do
@@ -138,8 +144,8 @@ function GUI:Constructor()
 	self.typeCombo:SetPosition(x, y);
 	x = x + width + 5;
 	
-    -- add the elements to a set, and sort them
-    local set = {}
+  -- add the elements to a set, and sort them
+  local set = {}
 	for _, rec in ipairs(virtueTable) do set[rec.type] = true; end
 	types = {}
 	for pair in pairs (set) do table.insert(types, pair); end
@@ -157,7 +163,7 @@ function GUI:Constructor()
        self:LoadMatchingDeeds();
 	end
 
-    -- Max Level
+  -- Max Level
     	
 	self.maxLevelLbl = Palantiri.VirtueView.UI.Label();
 	self.maxLevelLbl:SetParent(self);
@@ -191,8 +197,8 @@ function GUI:Constructor()
 	self.virtueList:SetSize(virtWidth, h - y - 20);
 	self.virtueList:SetPosition(margin, y);
 
-    -- add the elements to a set, and sort them
-    local set = {}
+  -- add the elements to a set, and sort them
+  local set = {}
 	for _, rec in ipairs(virtueTable) do set[rec.virtue] = true; end
 	local virtues = {}
 	for pair in pairs (set) do table.insert(virtues, pair); end
@@ -202,16 +208,16 @@ function GUI:Constructor()
         self:AddItem(self.virtueList, virtue);
 	end
 	
-    for _, virtue in pairs(self.settings.selectedVirtues) do
-       self.virtueList:FindItemByLabel(virtue):Toggle();
-    end
+  for _, virtue in pairs(self.settings.selectedVirtues) do
+     self.virtueList:FindItemByLabel(virtue):Toggle();
+  end
     
 	self.deedList = Palantiri.VirtueView.UI.ListBox();
 	self.deedList:SetParent(self);
 	self.deedList:SetSize(w - virtWidth - 35, h - y - 20);
 	self.deedList:SetPosition(virtWidth + 15, y);
 	
-    self:LoadMatchingDeeds();
+  self:LoadMatchingDeeds();
     
 	self.virtueList.SelectionChanged = function(sender, args)
        self:SaveSettings();
@@ -261,7 +267,7 @@ function GUI:InZone(rec, zone)
 end
 
 function GUI:InRegion(rec, region)
-   return (region == "Any") or (region == rec.region);
+   return (region == "Any") or (rec.region:startsWith(region));
 end
 
 function GUI:OfType(rec, type)
@@ -298,10 +304,17 @@ function GUI:AddDeed(rec, includeZone, includeRegion, includeType)
    if (includeType) then
       type = " (" .. rec.type .. ") ";
    end
+   
+   local plus = "";
+   if (rec.reward ~= "+1") then
+     plus = rec.reward;
+   end
       
    local reward = "";
    if (self:ElementCount(self.settings.selectedVirtues) > 1) then
-      reward = " (" .. rec.reward .. " " .. rec.virtue .. ")";
+      reward = " (" .. plus .. rec.virtue .. ")";
+   else
+      reward = " (" .. plus .. ")";
    end
 
    local level = " - Level ";
@@ -370,7 +383,7 @@ function GUI:LoadSettings()
    end
     
    if (not self.settings.maxLevel) then
-      self.settings.maxLevel = 99;
+      self.settings.maxLevel = 100;
    end
 	
 	self.loading = false;
@@ -389,3 +402,8 @@ function GUI:SaveSettings()
 	
 	Turbine.PluginData.Save(Turbine.DataScope.Character, "PalantiriVirtueViewSettings", self.settings);
 end
+
+startsWith = function(self, piece)
+  return string.sub(self, 1, string.len(piece)) == piece
+end
+rawset(_G.string, "startsWith", startsWith)

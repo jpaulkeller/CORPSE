@@ -58,7 +58,7 @@ function command:Execute(cmd, args)
 end
 
 function command:GetHelp()
-   Turbine.Shell.WriteLine("<rgb=#00FFFF>VirtueView (version " .. Plugins.VirtueView:GetVersion() .. ")</rgb> by Mosby of Landroval");
+   Turbine.Shell.WriteLine("<rgb=#00FFFF>VirtueView (version " .. Plugins.VirtueView:GetVersion() .. ")</rgb> by Mosby of Landroval - Gondor deeds added by Amygdalus of Laurelin");
    Turbine.Shell.WriteLine("Usage: /vv [show|hide|toggle]");
 end
 
