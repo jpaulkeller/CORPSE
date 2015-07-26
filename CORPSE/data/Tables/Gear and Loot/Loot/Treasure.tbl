@@ -29,7 +29,7 @@
  
 : Level 4
 {container:small loot} holding {2d100} {currency:high.coin}s
-{container:small loot} holding {2d8} {{gem}+}{50% and {2d8} {{gem}+}}
+{container:small loot} holding {2d8} {{gem}+}{50% and {2d8} {{gem{!different}}+}}
 {LUXURY:ITEM} (worth {2d25}0 gp)
 {luxury:jewelry} (worth {2d25}0 gp)
 {:misc}
@@ -38,7 +38,7 @@
  
 : Level 5
 {2d6} {metal} {ingots|bars}
-{container:small loot} holding {2d8} {{gem}+}{50% and {2d8} {{gem}+}}
+{container:small loot} holding {2d8} {{gem}+}{50% and {2d8} {{gem{!different}}+}}
 {LUXURY:ITEM} (worth {2d25}0 pp)
 {luxury:jewelry} (worth {2d25}0 pp)
 {:misc}

@@ -19,7 +19,7 @@ Food: {{berry}+}
 Food: {{fruit}+}
 Food: {{vegetable}+}
 Food: {~{provisions}}
-Footware: {~{shoe}}
+Footwear: {~{footwear}}
 Gem: {gem}
 Jewelry: {jewelry}
 Liquid: {liquid}

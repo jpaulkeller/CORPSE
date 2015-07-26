@@ -21,7 +21,7 @@ diplomatic message
 directions to the {structure}
 doodle
 draft notice (signed by {Military Rank} {Name})
-drawing of {{sigil}|{flag}}
+drawing of {{sigil|flag}}
 enlistment
 gibberish
 grant-of-arms
@@ -40,7 +40,7 @@ map too faded to be of use, with barely recognizable boundaries
 membership card, {profession}'s guild
 message to {Name}
 news-clipping about {disaster}
-note from {profession} to {profession}
+note from a {profession} to a {profession{!different}}
 order for {provisions}
 page from {book}
 paper, {:seal}

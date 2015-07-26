@@ -36,7 +36,7 @@ amalgamation with parts from a {fauna}, {fauna{!different}}{50%, and {fauna{!dif
 
 : Cyborg
 {:size} {fauna}, augmented with strange devices
-{:size} {fauna}, armored with plates of {{metal:weapon}|{metal:special}}
+{:size} {fauna}, armored with plates of {{metal:weapon|metal:special}}
 
 : Construct
 {wooden|metal} construct

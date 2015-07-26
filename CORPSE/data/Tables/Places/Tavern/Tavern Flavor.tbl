@@ -33,9 +33,9 @@ where you can find the best {menu:main} you’ll ever have
 {well-informed|attentive} staff
 
 : Patron
-a {50%{appearance} }{:who}{50%{:solo activity}
-a {50%{appearance} }{:who} and a {50%{appearance} }{:who}{50%{:group activity}
-a {couple|pair of|few|group of} {{:who}+}{50%{:group activity}
+a {50%{appearance} }{:who}{50%{:solo activity}}
+a {50%{appearance} }{:who} and a {50%{appearance{!different}} }{:who}{50%{:group activity}}
+a {couple|pair of|few|group of} {{:who}+}{50%{:group activity}}
 
 : Who
 {humanoid}

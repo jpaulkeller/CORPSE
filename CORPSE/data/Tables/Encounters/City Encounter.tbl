@@ -69,7 +69,7 @@ is being restrained and escorted by the city watch
 is butchering a {fauna}
 is carrying a heavy {container}
 is carrying a {musical instrument}
-is chasing a {{NPC}|{pet}}
+is chasing a {{NPC|pet}}
 is chasing after a {familiar}
 is conducting a tour
 is drawing {a map|strange symbols|runes|a picture} with chalk on the road
@@ -465,7 +465,7 @@ A young noble passes trailed by a pickpocket
 A young princess and magical sword are missing - the King’s own sorcerer flew away on a flying carpet with them. The sorcerer will try to get his youth back by sacrificing the girl to a huge snake while she tries to protect herself with the magical sword.
 A young woman approaches the PCs, insisting one of the party is her husband who went missing two years ago. Other townsfolk seem to agree, despite the PC not knowing her.
 A young woman is in the middle of the walkway on her hands and knees. She seems to be desperately searching for something. There is a pair of glasses at the party’s feet.
-A {pet} chasing a {pet} darts past
+A {pet} chasing a {pet{!different}} darts past
 Actions of the PCs mark them as being on the side of one family in a long-term feud. One or both of the families takes interest in the party as a result.
 After a day of shopping prior to leaving on a big adventure, one of the PCs returns with a child. The trouble is, they are being chased by a flying gargoyle.
 After a long journey or adventure, the PCs return to a favorite inn or tavern. One PC is approached by an attractive person and several children who have a striking resemblance, claiming to be the PC’s abandoned family. The family seems to know every intimate detail about the PC.

@@ -13,7 +13,7 @@
 {:Merchant}
 {:Military Building}
 {:Production}
-{:Religious}{50% of {{Religion|Divine Name}}}
+{:Religious}{50% of {{Religion:Domain|Divine Name}}}
 {:Residence}
 {:Service}
 {:Social}

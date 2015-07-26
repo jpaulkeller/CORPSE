@@ -10,7 +10,7 @@
 {Evocative Concept:Negative}
 {Evocative Concept:Positive}
 {Evocative Noun} of {:Creatures}
-{Evocative Noun}’s {Evocative Noun}
+{Evocative Noun}'s {Evocative Noun{!different}}
 {Evocative Concept:Negative}{:SUFFIX NEGATIVE}
 {Evocative Concept:Negative}{:SUFFIX POSITIVE}
 {Evocative Concept:Positive}{:SUFFIX NEGATIVE}
@@ -80,34 +80,34 @@ a Thousand {{:Definite Noun}+}
 ’s Wrath
 
 : Advice
-{Evocative Noun} Is the {:RELATIONSHIP} {Evocative Noun}
-{Evocative Noun} Comes From {Evocative Noun}, Not From {Evocative Noun}
-{Evocative Noun} Is Worth More Than {Evocative Noun}
-{Evocative Concept:Positive} Comes to He Who Has the {Evocative Concept:Positive} of the {Evocative Adj:Neutral} {:Definite Noun}
+Beware the {Evocative Adj:Negative} {:Definite Noun}
+He Who {:Verb3} {Evocative Noun} Also {:Verb3{!different}} {Evocative Noun{!different}}
+He Who {:Verb3} {Evocative Noun} Is as {Evocative Adj:Positive} as the {:Definite Noun}
+Only Through {Evocative Concept:Positive} Can {Evocative Concept:Positive{!different}} Be Achieved
+The {:Essence} {Evocative Noun} Is {Evocative Noun{!different}}
+Those Who Seek {Evocative Concept:Positive} Are Doomed to {Evocative Concept:Negative}
+When Faced With {Evocative Concept:Negative} or {Evocative Concept:Negative{!different}}, Choose {Evocative Concept:Positive}
+Who Can Have {Evocative Concept:Positive} When Confronted With {Evocative Concept:Negative}?
+Without {Evocative Concept:Positive} There Can Be No {Evocative Concept:Positive{!different}}
+the {Epoch:Age} of {Evocative Noun} Is {:Time}
+{:Desire} {Humanoid} {Blood|Souls}!
 {:Guard} Against the {Evocative Adj:Negative} {:Definite Noun}
 {:Guard} Ye Well This {Evocative Adj:Neutral} {Evocative Concept:Positive}
-{:Only} {Evocative Noun} {:Verb Important}
 {:Only} the {Evocative Adj:Positive} {:Verb Effect}
-{:Trust} the {Evocative Adj:Neutral} {:Definite Noun} for {Evocative Concept:Positive}
-{:Verb2A} {:Verb2B} the {Evocative Noun}, Lest It {:Effect}
-Beware the {Evocative Adj:Negative} {:Definite Noun}
-He Who {:Verb3} {Evocative Noun} Also {:Verb3} {Evocative Noun}
-He Who {:Verb3} {Evocative Noun} Is as {Evocative Adj:Positive} as the {:Definite Noun}
-{Evocative Concept:Negative} Only Begets {Evocative Concept:Negative}
-{Evocative Concept:Positive} Precedes {Evocative Concept:Positive}
-{Evocative Concept:Positive} Will Overcome {Evocative Concept:Negative}
-Only Through {Evocative Concept:Positive} Can {Evocative Concept:Positive} Be Achieved
-the {:Essence} {Evocative Noun} Is {Evocative Noun}
-Those Who Seek {Evocative Concept:Positive} Are Doomed to {Evocative Concept:Negative}
+{:Only} {Evocative Noun} {:Verb Important}
 {:Trust} the {Evocative Adj:Neutral} {:Definite Noun} and {Evocative Concept:Positive} Shall Be Yours
-When Faced With {Evocative Concept:Negative} or {Evocative Concept:Negative}, Choose {Evocative Concept:Positive}
-Who Can Have {Evocative Concept:Positive} When Confronted With {Evocative Concept:Negative}?
-Without {Evocative Concept:Positive} There Can Be No {Evocative Concept:Positive}
-{Evocative Concept:Negative} Can Never Break My {Evocative Concept:Positive}
-the {Epoch:Age} of {Evocative Noun} Is {:Time}
+{:Trust} the {Evocative Adj:Neutral} {:Definite Noun} for {Evocative Concept:Positive}
 {:Trust} the {Evocative Noun} of the {Evocative Adj:Neutral} {:Definite Noun} and {Evocative Concept:Positive} Shall Be Yours
+{:Verb2A} {:Verb2B} the {Evocative Noun}, Lest It {:Effect}
+{Evocative Concept:Negative} Can Never Break My {Evocative Concept:Positive}
+{Evocative Concept:Negative} Only Begets {Evocative Concept:Negative{!different}}
 {Evocative Concept:Positive} Can Only Be Gained by {Evocative Noun}
-{:Desire} {Humanoid} {Blood|Souls}!
+{Evocative Concept:Positive} Comes to He Who Has the {Evocative Concept:Positive{!different}} of the {Evocative Adj:Neutral} {:Definite Noun}
+{Evocative Concept:Positive} Precedes {Evocative Concept:Positive{!different}}
+{Evocative Concept:Positive} Will Overcome {Evocative Concept:Negative}
+{Evocative Noun} Comes From {Evocative Noun{!different}}, Not From {Evocative Noun{!different}}
+{Evocative Noun} Is Worth More Than {Evocative Noun{!different}}
+{Evocative Noun} Is the {:RELATIONSHIP} {Evocative Noun{!different}}
 
 : Relationship
 Child of

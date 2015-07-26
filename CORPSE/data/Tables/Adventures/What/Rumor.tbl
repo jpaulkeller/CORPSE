@@ -1,6 +1,8 @@
 / http://chaoticshiny.com/situationgen.php?amount=10
 / http://mojobob.com/roleplay/tables.html#sandboxrumours
 / http://random-generator.com/index.php?title=Encounter-a-Day
+/ http://creaturespotlight.blogspot.ca/2015/03/20-random-rumors.html?utm_content=buffer2fcf1&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+/ http://random-generator.com/index.php?title=Fantasy_Assignment
 
 : Rumor
 A band of adventures fled into a ruined fortress tower filled with treasure and monsters.
@@ -117,7 +119,7 @@ Artificers inspired by a mad god, building slaves to do its bidding.
 Barge pirates have made a deal with a covey of hags and exact a high toll to use the river.
 Breeder of monsters now dying and the creations escaped.
 Bugbears are demanding a toll on a well-traveled bridge.
-Chamber smells of ozone, for a reason, and is guarded by a golem.
+Chamber smells of ozone, for a reason, and is guarded by a {golem} golem.
 Chaos spirit who exchanges the valued possessions of people.
 Child of a noble following a great hero, now blamed for kidnapping the child.
 Clerics who have resurrected a long-dead hero discovered she's not what they thought.
@@ -128,25 +130,33 @@ Cute wild creature and the ferocious parents searching for it.
 Demons are possessing monsters and causing havoc.
 Demons have been taking the shape of men and hiding to escape hell.
 Desperate storycrafter seeking inspiration by hanging on the gallows, alive, for now.
+Don't drink the Red Ale from the Cornish Hen Tavern. Old lady Miller drank so much one night she turned into a weasel. Yes, a weasel. No I'm not drunk man I'm telling ya the truth.
+Don't give that damn half-orc {Orc Name} any money. All he does is smoke it away. Says he needs the money for some exotic pipe weed. Problem is once he smokes it he runs around town naked. Not a pretty sight my friend.
 Donkey possessed by a demon, sometimes peaceful, sometimes succumbing to the evil within.
 Dragons can sense when their kin are harmed or killed.
 Drinking ten mugs of the house ale at a local pub gives you the strength of a giant.
 Dwarven immigrants are arriving in southern cities in droves.
+{Hobbit Name} the halfling is looking for investments. Yeah he needs a 1,000gp to fund his expedition. Says he's hunting Dragons. Last time someone funded his expedition they lost all their money.
 Every night the doors are barred and windows covered, for something goes bump in the night.
 Everyone who enters the {region} dies.
 Evil clerics gather in secret to summon a monstrous god to the world.
 Evil {antagonist:group} are constructing a fortress not far from the community.
+Exactly at Midnight every dog in town begins to howl. This horrible cacophony rattles my nerves. I always wonder why it happens every night at the same time.
 Eye Tyrants are arriving in huge numbers from the realms above.
 Fae with ivory masks, quick to take offense for the least significant transgression and terrible in their wrath.
+{Religious Rank:Position} {Saint Name} is a strange guy. He collects holy symbols. Also every year he switches his allegiances to a new god. Charlatan I tell you.
 Fey who takes on the shape and memories of a target, feeding off despair and fear.
 Five men burying alive a young woman who remembers nothing.
 Former servant opposing a diabolical master, in spite of the odds.
 Friendly family offering shelter from the weather, ensorcelled to slay any visitors at night.
 Gargoyles are killing giant eagles in the mountains.
 Giant, berserk animals running free, their master in hiding.
+Graffiti everywhere. The last few weeks someone been painting a goat skull on houses throughout town. We've been trying to remove the paint but it simply won't wash off.
 Gravediggers have discovered a huge, ghoul-filled catacomb under the cemetery.
 Grove of sentient trees, surrounded by their sapling and guardians.
+Hey you know the town was built over a cemetery. Yeah they removed the tombstones and started building right upon graves. Very strange indeed.
 Host of angelic beings ruling over a city where all evil is punished, harshly.
+I heard about a group young girls knocking on people doors. They sing a nursery rhyme to anyone who opens up. Strange thing is these girl don't even live in the town.
 Infertile race that abducts females and raises them as their own, using males as slaves and brutes.
 Inn serving a foreign nation with trained prostitutes and ways to spy upon the most secret of meetings.
 Last night a mysterious {humanoid} bet their life and won 50,000 gold pieces.
@@ -157,6 +167,7 @@ Man-eating {undead} prowl the swamp for food.
 Many of the old ruins in the {terrain} contain great and ancient treasure.
 Members of a new gang have blocked a street and demand a toll from all who pass.
 Mighty sorcerer disdaining the traditional tools of the trade, defeating every challenger with merely a look.
+Mo got hit by lightning last year. Tragic indeed. Now he slurs his speech and speaks in third person. He claims that he is Mo the Lighting God. His mom says all he needs is to get hit by lightning again to reverse his condition.
 Monstrous animals that clear the path for dawn, attacking anything that might compromise their task.
 Mountain guarded by an ancient dragon and the monastery on the top of the mountain.
 Mute, illiterate girl, far from home.
@@ -167,6 +178,7 @@ Noble, drugged but in expensive clothes, vengeful towards any witness.
 Number-obsessed cult, seeking to have everyone conform in face of their immutable reality.
 Obelisks stand in the mountains that hold the key to great power, but none who have sought these have returned.
 Ogre magi have torn up a village in a violent rage.
+One of those holy warriors has been seen drowning his sorrows at the local pub. Someone said he was some Paladin type fellow. Piss off his God. Now he just drinks away his time.
 People grow suspicious of half-orc merchants peddling gold dragon parts in the market.
 Petty thief running from authorities, unfortunately meeting old “friends”.
 Pregnant princess, soon in labour, hiding from her family.
@@ -174,6 +186,7 @@ Primitive heathens are throwing parties in the woods.
 Prominent thieves are looking for someone without scruples, for a dangerous job.
 Regiment of forgotten soldiers from a war no longer waged, still guarding the passage as ordered, eager for news.
 Religion built around harmony, with a cult seeking destruction of that falls short of their standards.
+Remember that statue you passed when you came into town. The one with those gemstone eyes. Well I hear they record your movement. The Mayor who is held up in his manor uses them to spy on the folks round here.
 Ruby, the owner of which is cursed by terrible misfortune.
 Rumors of a {humanoid} civil war have been filtering into town.
 Secret society fighting against the end of the world as prophesied by a book that ever changes.
@@ -183,8 +196,10 @@ Skeletons, flame-born, originally forge-workers, now with a spark of intelligenc
 Small hamlet, a tree with miraculous powers in the center, and a sword of great good and evil the tree has grown around.
 Someone is putting poison in the beer in both of two rival pubs.
 Something is preventing huge hordes of {{humanoid}+} from leaving the {region}.
+Stay off the road north at night. They say a man without head rides a horse up and down the road. They say he is looking for the right head to replace his own. Keep your head man and stay off the road!
 Strange {noise} has been heard near the {{site|city feature:site}}.
 Talking {fauna} reside in the forest.
+Tally May house is north of the town. Yeah she's collect cats. Lots of cats. The place smells like urine and half the cats are dead. Someone once told me that those dead cats can move.
 Tavern-keeper whose brews are made of sentient creatures, responsible for the disappearance of some guests.
 Terrible beast bursting through city streets on a day of great celebration.
 The Mountain King is possessed by an evil force.
@@ -201,11 +216,13 @@ The ruler of the city has just left port in his galley, for some piracy.
 The tomb of a powerful {pseudo class:mage}, filled with magic items, has sunk into the swamp.
 The tomb of an old {pseudo class:mage} has been discovered.
 The town may be hiring mercenaries to augment the town guard.
+There an abandoned mine south of here. Rumor has it the miners hit a passage that they shouldn't of have. They never returned. My good friend told me they stumbled upon a Goblin City.
 There are many old ruins in the {terrain}. They are from a previous age.
 There is a wolf pack to the north, they are the pets of a mighty giant.
 There is a {pseudo class:mage} in the swamp to the south who brews potions of a legendary efficacy.
 There is fierce fighting in the {region}.
 Thieves broke in to a wealthy merchants shop, but apparently didn't take anything.
+This little fat fella came into town two days ago. Hit up the General Store and bought up all the rations. Says he needs the food just in case some bad stuff goes down. I don't know seems a bit suspicious I say.
 This morning a wine merchant found a strange potion in one of his shipments.
 Town known for its hunting dogs is approached by the lord of canines, displeased with the misplaced devotion of the townsfolk.
 Two dozen of the City Guard have been executed for holding on to tax money.
@@ -213,13 +230,20 @@ Two tribes of fearsome barbarians locked in continuous fighting and the shamans 
 Two {humanoid} tribes wage a bloody war.
 Undead {{fauna}+} have been attacking people in the {region}.
 Various monsters have long preyed upon people from within the sewers of a major city.
+We are waiting on a supply caravan to hit town. Problem is it was suppose to be here last week. Wonder what the delay is.
+We don't bury our dead. No we burn'em and keep them in urns. They say if your body is not burned within a days time it rises. Yep, some zombie type thing. So just in case any of you die make sure you got a source of fire handy.
 When an Eye Tyrant is killed, a curse is bestowed that causes all other Eye Tyrants to seek the killers.
 When you die, you get turned into a dragon!
+You heard about our well. Yeah it's been dry for years now. We lost a bunch of kids a few years back. Someone said a tentacle reach out and drag them to their death. Ever since no one goes by that damn well.
+You know about {Name} the Bard? Yeah someone told me he died two years ago in a freak accident. Then out of nowhere he strolled into town a few days back. He looks good for a dead guy.
+You know what's strange? Not a single women has given birth in five years. Must be something in the water.
 Zombies pouring upon unsuspecting treasure-seekers, driving them towards a deadly pit.
 {:Loot} was said to have been lost in {Dungeon Name}.
 {Antagonist} is seeking to release a great evil.
 {Dungeon Name} has a magical {dungeon feature}.
 {Dungeon Name} was {made|build|constructed|delved} in the time before the {Cataclysm}.
+{Dungeon Name} is the last resting place of {Special Item}.
+{Quest}
 {Undead} vex a large library, especially an old storeroom long left undisturbed.
 {{Humanoid}+} have recently begun approaching human settlements with envoys seeking peace.
 {{Humanoid}+} riding dragon turtles sell their services as mercenaries to the highest bidder.
@@ -238,7 +262,7 @@ Zombies pouring upon unsuspecting treasure-seekers, driving them towards a deadl
 {profession}
 {pseudo class}
 {rank}
-{{monster}|{undead}}
+{{monster|undead}}
 intelligent {fauna}
 
 : Relates To
@@ -262,80 +286,3 @@ a {friendly|young|small} {monster}
 the {Artifact Name}
 the {relic}
 thousands of {metal:precious} pieces
-
-===
-/ http://random-generator.com/index.php?title=Fantasy_Assignment
-
-;Intro
-A {PROTAGONIST} seeks adventurers to {:task}.  This will require traveling to the {region}.
-The PCs have heard that if they {:task} they will become rich. This will require traveling to the {region}.
-It seems a {:object} will grant great power to any who possess it. This will require exploring the {region}.
-They say [Fantasy Adventure Locations.main] contains a {:object} of great value.
-Clever and ambitious souls will find great riches if they investigate the {region}.
-
-: Task
-free: [People]
-assassinate: [People]
-capture [Capturablereflexive]
-safely transport [Transportablereflexive] of special importance
-locate [Transportablereflexive] of special importance
-acquire [Object] of special importance
-destroy [Object] of special importance
-slay [Weird Fantasy Monster.main]
-seduce [People]
-frame [People] for a crime
-
-;People
-15,[Fantasy Person Of Interest.Main]
-1,his/her sibling, [Fantasy NPC (Basic).main]
-1,his/her spouse, [Fantasy NPC (Basic).main]
-1,his/her mortal enemy, [Fantasy NPC (Basic).main]
-1,his/her child, [Fantasy NPC (Basic).main]
-
-;Capturable
-1,: [Fantasy Person Of Interest.Main]
-1,[Weird Fantasy Monster.main]
-
-;Capturablereflexive
-1,: [People]
-1,[Weird Fantasy Monster.main]
-
-;Transportable
-1,: [Fantasy Person Of Interest.Main]
-1,[Weird Fantasy Monster.main]
-1,[Object]
-
-;Transportablereflexive
-1,: [People]
-1,[Weird Fantasy Monster.main]
-1,[Object]
-
-: Object
-{jewelry}
-{merchandise}
-{pet}
-{tiny item}
-
-===
-/ http://creaturespotlight.blogspot.ca/2015/03/20-random-rumors.html?utm_content=buffer2fcf1&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
-
-One of those holy warriors has been seen drowning his sorrows at the local pub. Someone said he was some Paladin type fellow. Piss off his God. Now he just drinks away his time.
-Don't drink the Red Ale from the Cornish Hen Tavern. Old lady Miller drank so much one night she turned into a weasel. Yes, a weasel. No I'm not drunk man I'm telling ya the truth.
-This little fat fella came into town two days ago. Hit up the General Store and bought up all the rations. Says he needs the food just in case some bad stuff goes down. I don't know seems a bit suspicious I say.
-Hey you know the town was built over a cemetery. Yeah they removed the tombstones and started building right upon graves. Very strange indeed.
-We don't bury our dead. No we burn'em and keep them in urns. They say if your body is not burned within a days time it rises. Yep, some zombie type thing. So just in case any of you die make sure you got a source of fire handy.
-You heard about our well. Yeah it's been dry for years now. We lost a bunch of kids a few years back. Someone said a tentacle reach out and drag them to their death. Ever since no one goes by that damn well.
-Don't give that damn half-orc Urgron any money. All he does is smoke it away. Says he needs the money for some exotic pipe weed. Problem is once he smokes it he runs around town naked. Not a pretty sight my friend.
-Stay off the road north at night. They say a man without head rides a horse up and down the road. They say he is looking for the right head to replace his own. Keep your head man and stay off the road!
-I heard about a group young girls knocking on people doors. They sing a nursery rhyme to anyone who opens up. Strange thing is these girl don't even live in the town.
-Edgrin the halfling is looking for investments. Yeah he needs a 1,000gp to fund his expedition. Says he's hunting Dragons. Last time someone funded his expedition they lost all their money.
-Tally May house is north of the town. Yeah she's collect cats. Lots of cats. The place smells like urine and half the cats are dead. Someone once told me that those dead cats can move.
-Mo got hit by lightning last year. Tragic indeed. Now he slurs his speech and speaks in third person. He claims that he is Mo the Lighting God. His mom says all he needs is to get hit by lightning again to reverse his condition.
-Remember that statue you passed when you came into town. The one with those gemstone eyes. Well I hear they record your movement. The Mayor who is held up in his manor uses them to spy on the folks round here.
-You know what's strange? Not a single women has given birth in five years. Must be something in the water.
-Graffiti everywhere. The last few weeks someone been painting a goat skull on houses throughout town. We've been trying to remove the paint but it simply won't wash off.
-There an abandoned mine south of here. Rumor has it the miners hit a passage that they shouldn't of have. They never returned. My good friend told me they stumbled upon a Goblin City.
-We are waiting on a supply caravan to hit town. Problem is it was suppose to be here last week. Wonder what the delay is.
-Father Zabrin is a strange guy. He collects holy symbols. Also every year he switches his allegiances to a new god. Charlatan I tell you.
-You know about Mallak the Bard? Yeah someone told me he died two years ago in a freak accident. Then out of nowhere he strolled into town a few days back. He looks good for a dead guy.
-Exactly at Midnight every dog in town begins to howl. This horrible cacophony rattles my nerves. I always wonder why it happens every night at the same time.

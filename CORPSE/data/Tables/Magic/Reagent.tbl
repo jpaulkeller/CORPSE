@@ -22,7 +22,7 @@ powdered {metal}
 {provisions}
 {undead} {dust|essence}
 {wood} tree {bark|leaf|root|sap|seed}{10% {:gathered}}
-{{fauna}|{humanoid}|{monster}|{profession}} {blood|bone}{10% {:gathered}}
+{{fauna|humanoid|monster|profession}} {blood|bone}{10% {:gathered}}
 
 : gathered
 gathered {10%, {:how}}

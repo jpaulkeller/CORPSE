@@ -71,20 +71,20 @@ cheese sauce
 
 : Tapas
 cabbage paquetes stuffed with rice and {{vegetable}+}
-croquettes of {seafood:exotic} with {{vegetable:cookable}+} and {{vegetable}+}
+croquettes of {seafood:exotic} with {{vegetable:cookable}+} and {{vegetable{!different}}+}
 fava beans with {{vegetable}+}, capers and lemon juice
 fried light pastry with {:cheese} and {{nut}+}
 fried {{vegetable:cookable}+} with roasted garlic-yogurt sauce
 marinated roasted {{vegetable}+} with {:cheese}
-olive oil marinated {{vegetable}+} stuffed with {{nut}+} and {{vegetable}+}
+olive oil marinated {{vegetable}+} stuffed with {{nut}+} and {{vegetable{!different}}+}
 roasted {{vegetable:cookable}+} and olives with balsamic vinegar and olive oil
 roasted {{vegetable:cookable}+} with {:cheese} and {{nut}+}
 sauteed wild mushrooms with {{nut}+} sauce & demi-glace
-spicy sausage in a sauce of {{vegetable}+}, {{vegetable}+}, and {{vegetable}+}
+spicy sausage in a sauce of {{vegetable}+}, {{vegetable{!different}}+}, and {{vegetable{!different}}+}
 steamed {seafood} with a creamy lemon-garlic sauce
-thin-sliced cured {:dish} and {{vegetable}+} with a {vegetable}-cream sauce
-{seafood:exotic} ceviche in {fruit:citrus} juice with {{vegetable}+} and {{vegetable}+}
-{{vegetable}+}, {{fruit}+}, and {{nut}+} fritters with {{nut}+} sauce
+thin-sliced cured {:dish} and {{vegetable}+} with a {vegetable{!different}}-cream sauce
+{seafood:exotic} ceviche in {fruit:citrus} juice with {{vegetable}+} and {{vegetable{!different}}+}
+{{vegetable}+}, {{fruit}+}, and {{nut}+} fritters with {{nut{!different}}+} sauce
 {{vegetable}+}-cheese patties with caper-yogurt sauce
 
 : Soup

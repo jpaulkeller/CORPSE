@@ -47,7 +47,7 @@ musical instrument  {musical instrument}
 accessory            {~{accessory}}
 clothing             {~{clothing}}
 jewelry              {jewelry}
-footware             {~{shoe}}
+footwear             {~{footwear}}
 
 : Consumable
 drink                {drink}
@@ -70,21 +70,21 @@ equipment            {~{equipment}}
 tack                 {~{tack}}
 
 : Illicit
-poison               {poison}
 contraband           {smuggled}
 equipment            {~{thief gear}}
+poison               {poison}
 
 : Magic
 alchemy              {~{alchemy.item}}
-robe (magical)       {MAGIC ROBE.NAME}
-tool (magical)       {magic tool}
+charm                {charm}
+component            {spell component}
+familiar             {familiar}
+gear (magical)       {enchanted item}
 potion               {potion}
 reagent              {reagent}
-component            {spell component}
-wand                 {wand}
-charm                {charm}
-familiar             {familiar}
+robe (magical)       {MAGIC ROBE.NAME}
 treasure             {treasure}
+wand                 {wand}
 
 : Materials
 fabric               {~{fabric}}

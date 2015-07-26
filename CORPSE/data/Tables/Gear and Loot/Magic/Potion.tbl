@@ -6,7 +6,7 @@
 <Potion={:Type}>
 
 : Loot
-{:POTION TYPE} ({2d4} doses in a {2d3-1}-{volume:portable} {container:potions})
+{:TYPE} ({2d4} doses in a {2d3-1}-{volume:portable} {container:potions})
 
 : Type
 Elixir of Health

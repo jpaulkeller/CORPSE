@@ -2,7 +2,7 @@
 {:Fictional}
 {Demon Name}{20% {:TITLE}}
 {Generated Name}{33% {:TITLE}}
-{Generated Name:Digraph}{{generated name:vowel}|{generated name:dipthong}}{{generated name:consonant}|{generated name:repeat}}{generated name:vowel}{50%{l|r|n}}{generated name:ending}{20% {:TITLE}}
+{Generated Name:Digraph}{{generated name:vowel|generated name:dipthong}}{{generated name:consonant|generated name:repeat}}{generated name:vowel}{50%{l|r|n}}{generated name:ending}{20% {:TITLE}}
 {Generated Name:Vowel}{generated name:ending} {Generated Name:Vowel}{l|m|n|r}{generated name:consonant}{generated name:vowel}{generated name:ending} {10% {:TITLE}}
 
 : Title

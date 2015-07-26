@@ -4,6 +4,9 @@
 : Coins
 {75%{:origin} }coins made of {:material}, worth about {2d10}sp each; the face {:design}, the obverse {:design}
 
+: Simple
+{:material} {:origin} coin
+
 : Origin
 ancient
 dwarven

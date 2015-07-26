@@ -1,7 +1,7 @@
 : Relic
 {:body part} of {:NAME}
 shard of the {weapon} of {:NAME} 
-{organ} of a {evocative adj:positive} {{monster}|{fauna}}
+{organ} of a {evocative adj:positive} {{monster|fauna}}
 {tiny item} that was {blessed by|a gift from} {:NAME} 
 
 : Name

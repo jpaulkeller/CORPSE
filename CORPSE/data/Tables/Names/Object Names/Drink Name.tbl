@@ -1,7 +1,7 @@
 / http://random-generator.com/index.php?title=Brewnames
 
  : Drink Name
-{{Color}|{Taste}|{Smell:Adj{!OneWord}}|{Appearance}|{Liquid Feature}} {Liquid} of {Adjective} {{Misc Creature Ability}|{Special Movement}|{Special Defense}|{Special Offense}}
+{{Color|Taste|Smell:Adj{!OneWord}|Appearance|Liquid Feature}} {Liquid} of {Adjective} {{Misc Creature Ability|Special Movement|Special Defense|Special Offense}}
 {Name}'s {:Adjectives} {:Starters} {:Finishers}
 {:Starters} {:Finishers}
 {:Starters}'s {:Liquids}

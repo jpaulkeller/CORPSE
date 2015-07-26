@@ -47,7 +47,7 @@ herb butter
 melted cheese
 {menu:sweet} butter
 {spice} butter
-{{fruit}|{berry}} butter
-{{fruit}|{berry}} jam
-{{fruit}|{berry}} jelly
-{{fruit}|{berry}} marmalade
+{{fruit|berry}} butter
+{{fruit|berry}} jam
+{{fruit|berry}} jelly
+{{fruit|berry}} marmalade

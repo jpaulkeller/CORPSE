@@ -54,7 +54,7 @@ red
 : special colors
 cinnamon
 desert sand
-dyed {{color:fancy}|{color:special}}
+dyed {{color:fancy|color:special}}
 fiery red
 golden blonde
 platinum blonde

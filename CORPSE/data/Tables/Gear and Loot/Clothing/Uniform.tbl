@@ -4,9 +4,9 @@ a {:military uniform generic}
 the {:military uniform specific}
 
 : servant uniform
-{profession:service}’s livery uniform consisting of {fabric:exotic} stockings, fine {color:simple} wool breeches, and an embroidered jacket of {fabric:exotic} with shiny {metal:common} buttons and embroidery.
-{profession:service}’s uniform consisting of knee-high {fur and pelt:leather} boots, a {:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
-{profession:service}’s uniform consisting of knee-high {fur and pelt:leather} boots, a {:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
+{profession:service}'s livery uniform consisting of {fabric:exotic} stockings, fine {color:simple} wool breeches, and an embroidered jacket of {fabric:exotic} with shiny {metal:common} buttons and embroidery.
+{profession:service}'s uniform consisting of knee-high {fur and pelt:leather} boots, a {:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
+{profession:service}'s uniform consisting of knee-high {fur and pelt:leather} boots, a {:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
 
 : military uniform generic
 foot soldier’s dress uniform consisting of {fur and pelt:leather} boots, {color:simple} canvas breeches lined with {fabric:exotic},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
@@ -14,10 +14,10 @@ guard’s dress uniform consisting of {fur and pelt:leather} boots, {fabric:comm
 horseman’s dress uniform consisting of {fur and pelt:leather} riding boots, {fur and pelt:leather} gauntlets, {color:simple} wool breeches lined with {fur and pelt:leather},{20% {:military accessories}} and a tailed jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
 pikeman’s dress uniform consisting of {fur and pelt:leather} boots, {fabric:common} breeches lined with {fabric:exotic},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
 sapper’s uniform consisting of {fur and pelt:leather} boots, a thick {fur and pelt:leather} apron, {fabric:common} breeches lined with {fabric:exotic}, and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
-military dress uniform consisting of {fur and pelt:leather} boots, {fur and pelt:leather} gauntlets, a {:lower} and lined with {fabric},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}. an embroidered shoulder patch carries the symbol of rank.
+military dress uniform consisting of {fur and pelt:leather} boots, {fur and pelt:leather} gauntlets, a {outfit:lower} and lined with {fabric},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}. an embroidered shoulder patch carries the symbol of rank.
 
 : military uniform specific
-dress uniform of a {military rank} in the {unit} consisting of {fur and pelt:leather} boots, {fur and pelt:leather} gauntlets, a {:lower} and lined with {fabric},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}; an embroidered shoulder patch carries the symbol of rank.
+dress uniform of a {military rank} in the {unit} consisting of {fur and pelt:leather} boots, {fur and pelt:leather} gauntlets, a {outfit:lower} and lined with {fabric},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}; an embroidered shoulder patch carries the symbol of rank.
 
 : military accessories
 a baldric of {fabric:common}

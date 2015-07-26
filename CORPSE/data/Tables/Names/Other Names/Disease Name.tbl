@@ -1,6 +1,5 @@
 : Disease Name
 10x {:PREFIX} {:suffix}
-{DISEASE}
 
 : prefix
 shadow
@@ -23,11 +22,17 @@ shadow
 {texture}
 {undead}
 {viscosity}
+{:effect}
+
+: effect
+blinding
+deafening
 
 : suffix
 ache
 chills
 death
+doom
 eyes
 fever
 fire
@@ -46,9 +51,3 @@ strain
 suffering
 weakening
 {smell:synonym foul}
-
-: Infection
-contact
-ingested
-inhaled
-injury

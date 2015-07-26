@@ -9,6 +9,7 @@ year
 : Brief {1-2}
 : Short {2-3}
 : Moderate {3-4}
+: Broad {3-6}
 : Weeks {4-6}
 : Long {4-7}
 : Random {1-5}
