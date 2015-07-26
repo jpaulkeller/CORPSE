@@ -1,9 +1,9 @@
 / http://random-generator.com/index.php?title=HerbalProducts
 
 : Apothecary
-{:herb} {:post}
-{:mix} of {:herb}{10%, {:herb{!different}}} and {:herb{!different}}
-{:pre} {:herb}
+{herb} {:post}
+{:mix} of {herb}{10%, {herb{!different}}} and {herb{!different}}
+{:pre} {herb}
 
 : pre
 balm of

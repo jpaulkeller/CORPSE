@@ -5,12 +5,12 @@ Secrets of the Master {{Profession:Craftsman}+}
 {Number:Plural} {Examples|Illustrations} of {:OBJECT}
 
 : Subject
-The {10%{:Adj} }{{:Arts}|{:Crafts}} of the {BOOK:PLACE}
-{80%{:Adj} }{{:Arts}|{:Crafts}}
+The {10%{:Adj} }{{:Arts|:Crafts}} of the {BOOK:PLACE}
+{80%{:Adj} }{{:Arts|:Crafts}}
 
 : Object
-the {10%{:Adj} }{{:Arts}|{:Crafts}} of the {BOOK:PLACE}
-{80%{:Adj} }{{:Arts}|{:Crafts}}
+the {10%{:Adj} }{{:Arts|:Crafts}} of the {BOOK:PLACE}
+{80%{:Adj} }{{:Arts|:Crafts}}
 
 : Adj
 Ancient

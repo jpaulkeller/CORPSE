@@ -3,30 +3,36 @@
 : Quest
 {PROTAGONIST} seeks a party to {:TASK}{25% {:without}}{25% {:before}}{25%, {:or}}.{33%  But {plot twist}.}
 
+: Rumor
+{PROTAGONIST} seeks a party to {:TASK}.
+
 : Task
 defend the {Place} from {ANTAGONIST} 
 discover the fate of {Group Name} lost in {Dungeon Name}
 escort {a caravan|an old man|a group of pilgrims|the {Special Item}} safely to {PLACE}
 expose a {trait:bad} {PROTAGONIST}
 find a cure for {Disease}
-gain control of {{Special Item}|{PLACE}}
-guard {{Special Item}|{PLACE}}
+frame {ANTAGONIST} for {crime}
+gain control of {{Special Item|PLACE}}
+guard {{Special Item|PLACE}}
 infiltrate {ANTAGONIST}'s stronghold
 journey to {PLACE}
 meet at the {site}
 prove themselves worthy by slaying {ANTAGONIST}
 search {PLACE} for signs of {ANTAGONIST}
+smuggle {smuggled} to {PLACE}
 stop the {Event}
 survive {ANTAGONIST}'s assault
-win the friendship of {{PROTAGONIST}|{ANTAGONIST}}
+win the friendship of {{PROTAGONIST|ANTAGONIST}}
 {50%find and }explore {Dungeon Name}
-{50%find and }kill {PROTAGONIST}
+{50%find and }{kill|assassinate|execute} {{PROTAGONIST|ANTAGONIST}}
 {50%find and }recover {Special Item} from {75%?{ANTAGONIST}:{PLACE}}
-{50%find and }rescue {PROTAGONIST} from {75%?{ANTAGONIST}:{PLACE}}
-{activate|acquire|retrieve|protect|destroy|steal|hide} the {Special Item}
+{50%find and }{free|rescue} {PROTAGONIST} from {75%?{ANTAGONIST}:{PLACE}}
+{find|activate|acquire|retrieve|protect|destroy|steal|hide|transport} the {Special Item}
 {capture|destroy|distract|investigate|trap|trick|force the surrender of|escape from} {ANTAGONIST}
 {defend|find|help} {PROTAGONIST}
 {establish a truce|start a war} between {PROTAGONIST} and {ANTAGONIST}
+{mmo quest}
 
 : Before
 before the {event}

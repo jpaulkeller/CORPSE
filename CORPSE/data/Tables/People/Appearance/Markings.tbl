@@ -1,7 +1,7 @@
 : Markings
 wearing {made of:precious} {jewelry} {with a single large {gem}|{art:decorated}}
 {25%{:colors} }tattoo{75% of a {charge}}{75% {:where}}
-{cheek|ear|eyebrow|lip|nose|tongue} pierced with a {{made of:precious}|{gem}} {stud|ring}
+{cheek|ear|eyebrow|lip|nose|tongue} pierced with a {{made of:precious|gem}} {stud|ring}
 {face|arms} decorated with {patterns|streaks|stripes|symbols|runes} of {color:simple} paint
 {small |noticeable |large |}birthmark{75% {:where}}{10% shaped like a {~{charge}}}
 {small |noticeable |large |}{5%{:scar adj} }{:scar}{75% {:where}}

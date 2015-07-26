@@ -7,7 +7,7 @@ avalanche
 blizzard
 cave-in
 comet
-death ({local|regional|factional|national} {official|ruler|high priest|hero})
+death ({local|regional|factional|national} {:vip})
 drought
 earthquake
 eclipse
@@ -35,24 +35,22 @@ waterspout
 whirlpool
 
 : Man-made
-assassination ({local|regional|factional|national} {official|ruler|high priest|hero})
+assassination ({local|regional|factional|national} {:vip})
 assault
 bandits
 birth
 blast
 border skirmish
 cultural discovery
-epidemic ({disease})
+{plague|epidemic|pandemic} ({Disease})
 fanatic cult
-important visitor ({regional|factional|national} {official|ruler|high priest|hero})
+important visitor ({regional|factional|national} {:vip})
 insurrection
 lycanthropy
 magical happening
 market {glut|shortage}
 migration
 onslaught
-pandemic ({disease})
-plague ({disease})
 pretender/usurper
 raiders
 rebellion
@@ -63,6 +61,14 @@ wandering monsters
 
 : Supernatural
 teleportation mishap
+
+: VIP
+hero
+high priest
+official
+ruler
+{guild} guild master
+{rank}
 
 : Detailed
 Blue Crush - The water seems to recede, as if something was drawing it away from the shore. A few turns later, a wall of water 12 feet high rolls over the beach causing a great deal of damage, washing anything not bolted down away and toppling any structure made of anything weaker than stone. PCs are jostled, take minor to moderate damage and can lose items in the surge of water.
@@ -96,26 +102,11 @@ What’s that Smell - more fun with fire, instead of a forest or palace, the cit
 Who turned off the lights? - One morning the sun doesn't rise. No reason is to be given, other than a faint smile or a fiendish chuckle.
 Wyrmfang Spill - A wagon ahead of the PCs has an accident (breaks a wheel, horses spook, orcs attack and kill the driver) and it’s contents are spilled. a strange green cloud spills from the damaged wagon, plants quickly wither and die and animals in the area of the cloud sicken and also die in a few agonizing minutes.
 
+
 ===
 
-1. Plagues
-With the wide range of methods disease can use to ravage creatures and people, plagues can take many forms: 
-fast- moving viruses, flesh-eating bacteria, slow-developing strains that focus on the young or only men or 
-only one race.
-
-The effects of the disease can be loaded with symbolic meaning, branding the sick physically, robbing them 
-of the ability to create children, or deranging them mentally.
-
-Wide-spread death would bring economic ruin, refugees, and other lamentations.
-
-Since the concept of viruses and bacteria don't fit your typical fantasy realm, all manner of scapegoats 
-would be found: bad sacrifices, bad behaviors, evil people, or unclean races.
-
-The disease could become an epidemic or even a pandemic.
-
-2. Global Warming or Cooling
-It might occur over generations. "The bards tell of times when rain will fall like soft feathers and lie 
-on the ground like a cool blanket"
+Global Warming or Cooling - It might occur over generations. "The bards tell of times when rain will fall like soft feathers and lie 
+on the ground like a cool blanket".
 
 Alternatively, it could be magically fast. "The sun has not been seen for a year and the sea slips away 
 from us. We have wronged the gods!"

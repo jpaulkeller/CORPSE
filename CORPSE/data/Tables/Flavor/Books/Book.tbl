@@ -295,7 +295,7 @@ A {:Prefix} {:Category} on the {33%{:Adjective} }{:Subject}{10% {:SUFFIX}}
 : Misc Book
 A Collector’s Guide to Dwarven Coins
 A Tale of Madness and Despair
-A {Field|Pictorial} Guide to the {{Fauna}|{Flora}|{Humanoid}} of the {:Place}{10% {:SUFFIX}}
+A {Field|Pictorial} Guide to the {{Fauna|Flora|Humanoid}} of the {:Place}{10% {:SUFFIX}}
 A {Race} in Shackles: Overcoming the Curse
 An Argument {for|against} {{Evocative Noun|Evocative Concept:Positive|Evocative Concept:Negative}}
 Anatomical Papers on Beasts of the Wilds
@@ -353,7 +353,7 @@ Shields and Bucklers of the Late Devalian Renaissance
 Siege Engines: Construction and Use
 Small Wonder: Rise and Fall of the {Halfling|Gnome|Faery|Kobold|Goblin} {King|Queen}
 Survival Tips for {Monster} Hunters
-Tales from the {{Inn Name}|{:Place}}
+Tales from the {{Inn Name|:Place}}
 The Deeds of {Group Name}
 The Diary of a Lost Child in the Dwarven Mines
 The Enchiridion of Chaos

@@ -22,7 +22,7 @@ watery
 wide
 
 : Color
-{25%{pale|light|dark|deep|clear} }{:c}{5% with flecks of {{color:simple}|{metal:precious}}}
+{25%{pale|light|dark|deep|clear} }{:c}{5% with flecks of {{color:simple|metal:precious}}}
 
 : c
 amber

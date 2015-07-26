@@ -2,7 +2,7 @@
 <Deity={Divine Name}>
 <Monstrosity={Monster Name}>
 a corrupt {pseudo class:priest}
-a pack of {trait:bad} {{{fauna}|{monster}}+}
+a pack of {trait:bad} {{{fauna|monster}}+}
 a powerful {pseudo class:fighter}
 a vampire
 a {trait:bad} {monster}

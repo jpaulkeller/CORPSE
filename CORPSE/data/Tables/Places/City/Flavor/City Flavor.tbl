@@ -1,8 +1,28 @@
+/ This "Fourth Page" city generator for World of Dungeons was created by Mike Riverso.
+/ http://www.story-games.com/forums/discussion/16688/world-of-dungeons-anyone-playing/p6
+
+: City Flavor
+{:attitude}
+{:caste}
+{:district}
+{:faith}
+{:guild}
+{:race}
+{:resource}
+{:ruler}
+{:rumour}
+{:terrain}
+{:threat}
+{:unrest}
+{city feature}
+
 : fame
 a curse
 a divine blessing
 a great work of art
+a guild of {pseudo class}
 a haunted place
+a history of violence
 a prophecy of doom
 a prophecy of greatness
 a renowned artisan
@@ -11,12 +31,25 @@ a widely-loved local dish
 a wise philosopher
 an oracle
 an unliving guardian
+its ancient code of laws
+its art and culture
+its brothels 
+its casino
+its fine cuisine
+its gladiator arena
+its great fest-hall
+its markets of exotic goods
+its necropolis
+its numerous statues
+its public games
+its ruling caste
 long-past, and possibly legendary days of glory
 plagued by bandits
 plagued by monsters
 plagued by the flaws of its own inhabitants
 regular athletic games
 the site of a famous battle
+{street}
 
 : general
 has the best views in town
@@ -98,13 +131,28 @@ is where pirates are hanged as a warning to their brethren
 {:WATER}
 
 : water
+burns the flesh of ghosts
+causes strange effects in any who bathe in its {color:common} water
+causes strange effects in any who drink its {color:common} water
+contains floating, blood sucking lily pads
+contains jellyfish whose agonizing stings cause prophetic insights
+contains malevolent amphibious creatures
+contains rare valuable fish
+contains singing frogs. murderous singing frogs.
+contains water sprites or fairies
+has unusually strong surface tension
+has waters that turn to blood at the new moon
+hides an enormous creature hides beneath the surface
 is a popular fishing spot
+is full of drowned books
+is much {colder|hotter} than its surroundings would suggest
 is the right place to dump a body if you don't want it to be found
+is where a great beauty was drowned
+is where bejeweled skulls can be seen leering from the bottom
 is where families go to feed the ducks and swans
+is where your reflection appears 10 years younger in the day, and 20 years older at night
+soothes painful memories, when eyes are anointed with the water 
 {:GENERAL}
-
-/ This "Fourth Page" city generator for World of Dungeons was created by Mike Riverso.
-/ http://www.story-games.com/forums/discussion/16688/world-of-dungeons-anyone-playing/p6
 
 : District
 The garrison is a well-oiled machine.
@@ -201,3 +249,25 @@ The famine has hit some harder than others.
 The balance of power has shifted.
 They're preparing to go to war.
 Racial tensions are running high.
+
+: Adjective
+ancient
+bioengineered
+boisterous
+brooding and malign
+brutal
+cyclopedian 
+down trodden
+extremely simple and straightforward
+ghostly
+grotesque
+horribly-mutated
+massive
+mild and unimpressive
+monstrous
+scarred and huddled 
+somewhat inhuman-looking
+starving
+strictly regulated
+weird and subtle
+{snake|rat|vermin|flea} infested

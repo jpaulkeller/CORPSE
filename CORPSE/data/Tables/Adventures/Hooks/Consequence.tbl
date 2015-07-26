@@ -33,8 +33,8 @@ which seems to be a formula for making a {potion} potion
 which seems to be a recipe for making a antidote to {poison}
 
 : contents
-containing a pouch of coins: {coin}{50% and {coin}{50% and {coin}}}
-containing a pouch of {{gem}+}{50% and {{gem}+}{50% and {{gem}+}}}
+containing a pouch of coins: {coin:simple}{50% and {coin:simple{!different}}{50% and {coin:simple{!different}}}}
+containing a pouch of {{gem}+}{50% and {{gem{!different}}+}{50% and {{gem{!different}}+}}}
 containing a relic: the {relic}
 containing a scroll
 containing a {book}

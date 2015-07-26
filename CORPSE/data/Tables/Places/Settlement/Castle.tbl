@@ -10,7 +10,7 @@ The castle barracks are garrisoned by the {3d6}00-strong {Unit:Foot} and an addi
 The castle barracks are garrisoned by the {3d6}00-strong {Unit:Foot} and an additional {4d6}0 men of the {Unit:Ranged}.
 The castle barracks are the proud home of all {3d6}00 men of the {Unit:Elite}.
 The castle barracks house {3d6}00 men from the {Unit:Foot}, and can expect wartime support from the {Unit:Elite} from nearby {Place Name}.
-The castle barracks house the {3d6}00-strong {Unit:Foot}, and can be supported within a fortnight by {Unit:Foot} of {Place Name}.
+The castle barracks house the {3d6}00-strong {Unit:Foot}, and can be supported within a fortnight by {Unit:Foot{!different}} of {Place Name}.
 The castle is garrisoned by {4d4}00 men of the {Unit:Foot}, supported by a {1d6}00-strong volunteer ranged auxiliary, the {Unit:Ranged}.
 The castle is garrisoned by {4d4}00 men of the {Unit:Foot}, supported by a {4d6}0-strong volunteer ranged auxiliary, the {Unit:Ranged}.
 The walls are defended by the {3d6}00-strong {Unit:Ranged}, who may expect ground support within a fortnight from the {Unit:Foot}.

@@ -18,6 +18,7 @@ undersea world
 underworld
 volcanic area
 {:uncommon}
+{biome:terrestrial}
 {compass:8}{50%ern region}
 {realm}
 
@@ -28,7 +29,8 @@ floating over the seas
 gigantic tree
 suspended over a mighty gorge
 vast underground cavern
-{Plane} plane
+{biome:aquatic}
+{plane} plane
 
 : Fame
 a great hero came from this land

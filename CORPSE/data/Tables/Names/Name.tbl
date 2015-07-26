@@ -11,9 +11,7 @@
 {Congo Name}
 {Cornish Name}
 {Dutch Name}
-{Dwarf Name}
 {Egyptian Name}
-{Elf Name}
 {Frontier Name}
 {Generated Name}
 {German Name}
@@ -21,11 +19,12 @@
 {Hobbit Name}
 {Incan Name}
 {Innuit Name}
+{Middle-earth Name}
 {Noble Name}
 {Pirate Name}
-{Orc Name}
+{Old English Name}
 {Saint Name}
-{Sindarin Name}
+{Tiefling Name}
 {Turkish Name}
 {Welsh Name}
 
@@ -35,6 +34,8 @@
 {Anglo-Saxon Name:Male}
 {Arthurian Name:Male}
 {Aztec Name:Male}
+{Barding Name:Male}
+{Beorning Name:Male}
 {Cornish Name:Male}
 {Dutch Name:Male}
 {Dwarf Name:Male}
@@ -42,6 +43,9 @@
 {Hobbit Name:Male}
 {Incan Name:Male}
 {Innuit Name:Male}
+{Middle-earth Name:Male}
+{Old English Name:Male}
+{Tiefling Name:Male}
 {Turkish Name:Male}
 {Welsh Name:Male}
 
@@ -52,6 +56,8 @@
 {Anglo-Saxon Name:Female}
 {Arthurian Name:Female}
 {Aztec Name:Female}
+{Barding Name:Female}
+{Beorning Name:Female}
 {Botanical Name:Female}
 {Cornish Name:Female}
 {Dutch Name:Female}
@@ -60,5 +66,8 @@
 {Hobbit Name:Female}
 {Incan Name:Female}
 {Innuit Name:Female}
+{Middle-earth Name:Female}
+{Old English Name:Female}
+{Tiefling Name:Female}
 {Turkish Name:Female}
 {Welsh Name:Female}

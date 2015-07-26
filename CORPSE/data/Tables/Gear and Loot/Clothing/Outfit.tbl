@@ -52,7 +52,7 @@ waistcoat of {fabric:combo fancy}
 
 : lower
 barbarian loincloth of {fur and pelt:fur} fur
-kilt of {color:simple} and {color:simple} wool
+kilt of {color:simple} and {color:simple{!different}} wool
 pair of {10%cross-gartered }breeches of {fabric:combo}
 pair of jodhpurs of {fabric:combo}
 pair of lederhosen of {fur and pelt:leather}
@@ -76,20 +76,23 @@ he is also wearing a {:accessories}{15%{ and a {:accessories{!different}}}}.
 apron of {fur and pelt:leather}
 baldric of {fabric:combo}
 bandoleer of {fabric:combo leather}
-belt of {fur and pelt:leather}{10% studded with {{gem}+}{50% with a {20%{metal:flavor} }{metal:armor} buckle}
+belt of {fur and pelt:leather}{10% studded with {{gem}+}}{50% with a {20%{metal:flavor} }{metal:armor} buckle}
 cape of {fabric:combo} and {fabric:exotic}
 codpiece of {fur and pelt:leather} and {20%{metal:flavor} }{metal:armor}
 gorget of {fur and pelt:leather} and {20%{metal:flavor} }{metal:armor}
 half-cape of {fabric:combo} and {fabric:exotic}
 harness of {fur and pelt:leather}
 pair of gauntlets of {fabric:combo leather}
-pair of gloves of {fabric:combo leather}
+pair of {20%riding }gloves of {fabric:combo leather}
 plaid of {fabric:combo leather} with a brooch of {metal:common}
 ruff of starched muslin
 sash of {fabric:combo fancy}
 scarf of {color:simple} wool
 spiked collar of {fur and pelt:leather} and {20%{metal:flavor} }{metal:armor}
 sporran of {fabric:combo leather}
+sword belt {fur and pelt:leather}
+{20%riding |traveller’s }cloak of {fabric:combo}
+{20%riding }mantle of {fabric:combo}
 
 : hat
 admiral’s hat of {fabric}
@@ -107,15 +110,16 @@ coif of {fabric}
 desertfolk fez of {fabric}
 figalian hat of {fabric}
 fisherman’s cap of {fabric}
+headscarf
 jester’s hat of {fabric}
 pilgrim’s hat of {fabric}
 roundlet hat of {fabric}
 simple hood of {fabric}
 skullcap of  of {fabric}
-straw hat
 top hat of {fabric}
 tricorn hat of {fabric}
 wizard’s hat of {fabric}
+woven straw hat
 “capello” hat of {fabric}
 “capitanesca” hat of {fabric}
 “gaucho” hat of {fabric}

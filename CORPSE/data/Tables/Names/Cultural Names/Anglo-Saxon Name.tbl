@@ -3,6 +3,8 @@
 : Anglo-Saxon Name
 {:Male}
 {:Female}
+{Anglo-Saxon Dictionary:Anglo-Saxon.Word}
+{Anglo-Saxon Dictionary:Old Norse.Word}
 
 : Male
 5x {:Male Prefix}{:male suffix}

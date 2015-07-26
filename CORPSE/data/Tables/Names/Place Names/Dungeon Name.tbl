@@ -1,11 +1,11 @@
 // http://www.enworld.org/forum/showthread.php?274089-Random-dungeon-name-generator&s=aa9d4c48f4310cfc8afdb6eec41e1707#ixzz2why0O4dH
 
-{Evocative Adj:Negative} {{Dark Site}|{:Type}} of {Evocative Concept:Negative}
-{Evocative Adj} {{Dark Site}|{:Type}} of {Evocative Concept:Negative}
-{Evocative Adj:Negative} {{Site}|{:Type}} of {Evocative Concept:Negative}
-{Evocative Adj:Negative} {{Dark Site}|{:Type}} of {Evocative Concept}
-{Demon Name}'s {{Dark Site}|{:Type}}
-{Evocative Adj:Not Positive} {{Site}|{:Type}} of {Demon Name}
+{Evocative Adj:Negative} {{Dark Site|:Type}} of {Evocative Concept:Negative}
+{Evocative Adj} {{Dark Site|:Type}} of {Evocative Concept:Negative}
+{Evocative Adj:Negative} {{Site|:Type}} of {Evocative Concept:Negative}
+{Evocative Adj:Negative} {{Dark Site|:Type}} of {Evocative Concept}
+{Demon Name}'s {{Dark Site|:Type}}
+{Evocative Adj:Not Positive} {{Site|:Type}} of {Demon Name}
 
 : Type
 aerie

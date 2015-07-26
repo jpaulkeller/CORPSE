@@ -5,6 +5,9 @@
 : Trap
 {T={:type}}{T}: Triggered by {:trigger}, {:{T} RESULT}.  Special: {:special}.
 
+: Simple
+a {:type} trap
+
 : Name
 {Name}'s {Slow|Instant} Death
 

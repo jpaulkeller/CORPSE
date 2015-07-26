@@ -1,4 +1,6 @@
+: MMO Quest
 Collect {d4x5} {{organ}+}
+Craft {d4x5} {{:mundane object}+}
 Deliver a package to the {profession}
 Free a {NPC} from a band of {{humanoid}+}
 Gather {d4x5} {{~{spell component}}+}
@@ -9,3 +11,8 @@ Get {reagent}
 {Capture/Kill} monstrosity: <Monstrosity={Monster Name}>
 {Capture/Kill} {d4x5} {{fauna}+}
 {Capture/Kill} {d2x5} {{monster}+}
+
+: Mundane Object
+{jewelry}
+{merchandise}
+{tiny item}

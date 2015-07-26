@@ -1,12 +1,13 @@
 / http://city-of-brass.org/SaymptomsAndSideEffects.pdf
 / http://chaoticshiny.com/poisongen.php
+/ http://chaoticshiny.com/diseasegen.php
 
 .Symptom
 .Effects
 
 arousal;-2 to save versus charm, roll save or will approach romantic targets
 ashen skin
-auditory hallucinations 
+auditory hallucinations
 black spots
 blackened flesh
 bleeding from orifices
@@ -14,26 +15,27 @@ bleeding;scent roll 2x for wandering monsters
 blindness
 bloating
 blood in urine
+blurred vision
 blurred vision;-2 to hit, no missiles/spells
 boils/buboes visible;-{6} to charisma depending on context
 chest pains
-collapse 
+collapse
 coma;unconscious for {6} weeks
 confusion;uncertain of time/location, in combat -1 to hit, roll randomly for targets
 constipation
 convulsions
 coughing;-{6} to charisma depending on context, roll 2x for wandering monsters
 deafness
-deep coma 
+deep coma
 delusions
 depression
 diarrhea;scent, roll 2x for wandering monsters
-difficulty breathing 
+difficulty breathing
 difficulty concentrating
 difficulty swallowing
 dilated pupils;-2 to hit & no missiles/spells in normal daylight
 diminished senses
-disorientation 
+disorientation
 dizziness;-2 to hit, no missiles/spells
 drowsiness;unable to surprise or stay awake for watch, 50% chance of spell miscast
 dry mouth
@@ -48,8 +50,8 @@ hallucinations;-{6} to char if seen, no move silently or hide, 50% chance of spe
 headache;no spell casting possible
 hyperactivity
 impaired cognitive abilities
-impaired decision-making 
-increased vulnerability to disease 
+impaired decision-making
+increased vulnerability to disease
 insanity
 insomnia
 irritability
@@ -59,35 +61,38 @@ joint aches;-1 to hit, movement slowed to half
 loss of coordination
 loss of feeling in {{right|left} {hand|foot}|both {hands|feet}}
 memory loss
-moderate pain 
+moderate pain
 moodiness
 muscle spasms
 muscle weakness
+nausea
 nausea;vomit on any odd # roll, then roll 2x for wandering monsters
 numbness in extremities
-oozing sores 
-painful sores 
+oozing sores
+painful sores
 palsy;-{6} to char depending on context, -1 to hit, no missiles/spells
 panic attacks
-paralysis 
+paralysis
+paranoia
 paranoia;save or consider anyone a potential threat
 partial blindness
-partial paralysis 
+partial paralysis
 pustules;-{6} to charisma depending on context
 rash;-{6} to charisma depending on context
 rashes
 red spots
+seizures
 seizures;-{6} to char if seen, occur on specific # roll, unable to act for {6} rounds
 sensory loss;{33% hearing}{33% sight} {33% touch} {33% taste} {33% smell} for {2d6}{duration:short}
 shortness of breath
 skin sores
-slowed reaction times 
-slurred speech 
+slowed reaction times
+slurred speech
 sneezing
 sore throat
 stiffness in joints
 stomach ache;bad sleep at night, no natural hp recovery, 50% chance of spell miscast
-strokes 
+strokes
 stuffy nose
 swelling
 swollen glands
@@ -99,7 +104,7 @@ tinnitus;no listen at doors, no move silently, 50% chance of spell miscast
 unconsciousness;unconscious for {6} hours
 uncontrollable bleeding
 unpleasant smell
-violent mood swings 
+violent mood swings
 vomiting
 weakness;-2 to damage, no open doors or bend bars, encumbrance halved
 {color:common} skin color;-{6} to charisma depending on context

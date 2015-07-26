@@ -50,7 +50,7 @@
 {:Consonant}{:vl}{:consonant}{:digraph}{:vl}{:ending}
 {:Consonant}{:vl}{:ending}{:consonant}{:vl}{:ending}
 {:Consonant}{:vl}{:ending}{:consonant}{:vl}{:repeat}
-{:Digraph}{{:vl}|{:dipthong}}{{:consonant}|{:repeat}}{:vl}{50%{l|r|n}}{:ending}
+{:Digraph}{{:vl|:dipthong}}{{:consonant|:repeat}}{:vl}{50%{l|r|n}}{:ending}
 
 // hyphenated
 {:Consonant}{:vl}{:consonant}-{:consonant}{:vl}{:consonant}

@@ -9,7 +9,7 @@
 {:Prefix}{:suffix} {:Surname}
 
 : Female
-{:Female First} 
+{:Female First} {:Surname}
 
 : Male First
 Adalgrim
@@ -229,6 +229,7 @@ Vil
 Vzani
 Zanthe
 Ziza
+{Botanical Name}
 
 : prefix
 Adel

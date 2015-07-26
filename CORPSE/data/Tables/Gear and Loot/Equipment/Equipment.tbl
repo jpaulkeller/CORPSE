@@ -178,7 +178,7 @@ mirror, small, metal         2 gp                     0.1
 mirror, small, silver       20 gp                     2
 nails
 nails, iron                  1 sp        100          1
-needle
+needle, sewing               1 sp                     0.1
 oar                          5 sp                     5
 oil, Greek fire             10 gp       flask         2
 oil, Greek fire            100          flask         2
@@ -253,7 +253,7 @@ scabbard, sword, ninja-to   1 gp+                     0.5
 scabbard, sword, rapier     2 gp                      1
 scabbard, sword, scimitar   2 gp                      1
 scabbard, sword, short      1 gp                      0.5
-scissors
+scissors                    5 cp                      1
 sealing wax (per lb)        1 gp                      1
 sealing/candle wax         10          1 lb           1
 sewing needle               5                         -

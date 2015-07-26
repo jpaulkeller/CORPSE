@@ -19,7 +19,7 @@
 {50%{Unit:Number} }{:Unit Name} {:Mountain Name}, composed of {2d6} {:Mountain} and {4} {:Ranged}{25% and {3} {:Engineer}}
 
 : Range Unit
-{50%{Unit:Number} }{:Unit Name} {:Range Name}, composed of {2d4} {:Ranged} and {4} {:Ranged}{25% and {3} {{:Assault}|{:Engineer}}}
+{50%{Unit:Number} }{:Unit Name} {:Range Name}, composed of {2d4} {:Ranged} and {4} {:Ranged}{25% and {3} {{:Assault|:Engineer}}}
 
 : Unit Name
 2x {Dwarf Name}'s

@@ -1,59 +1,204 @@
 / Religious Affiliation
 / See also: Divine Name
 
+: Generic
+a banned faith
+a faith about which nothing is known
+a long-dead faith
+a powerful faith
+an obscure faith
+{religion:domain}
+a {god|goddess} associated with {:domain}
+a {god|goddess} devoted to devouring {:domain}
+a {god|goddess} with power over {:domain}
+
+: Domain
+{:Domain Natural}{5% and {:Domain Natural}}
+{:Domain Negative}{5% and {:Domain Negative}}
+{:Domain Neutral}{5% and {:Domain Neutral}}
+{:Domain Positive}{5% and {:Domain Positive}}
+{Evocative Concept}{5% and {Evocative Concept{!Different}}}
+{{Profession}+}{5% and {Profession{!Different}}}
+
+: Domain Positive
 agriculture
-art
-blacksmiths
-blacksmiths and magic
-dancing and athletics
-death
-disasters
-embalming and tombs
+athletics
+beauty
+commerce
+community
+craftwork
+creation
+creativity
+duty
+embalming
+exploration
+fate
 fertility
-floods
-food
+freedom
+good fortune
+grace
+healing
 hunting
-hunting and the wilderness
-judgement
-love and beauty
-love and sex
+innocence
+invention
+joy
+justice
+knowledge
+learning
+light
+love
+loyalty
+luck
 magic
-magic and evil
-magic and healing
 marriage
-marriage, love and beauty
-men
 music
-rivers
-seas and rivers
-sex
+perseverance
+prosperity
+protection
+renewal
+royalty
+sensuality
+song and dance
+strength
+the arts
 the forge
+the harvest
 the hearth
 the home
-the moon
-the sea
-the seas
-the sun
-thieves
-thunder
-trickster
-war
-wealth and poverty
-wealth and prosperity
-winter
+the hunt
+travel
+truth
+victory
+wealth
+wine
 wisdom
+{evocative concept:positive}
+
+: Domain Negative
+accidents
+agony
+battle
+betrayal
+cannibalism
+chaos
+cruelty
+darkness
+death
+deception
+depravity
+despair
+destruction
+disasters
+disease
+earthquakes
+fear
+fire
+floods
+hatred
+hedonism
+intrigue
+liars
+lies
+loss
+lost trails
+mischief
+misfortune
+murder
+pestilence
+poverty
+revenge
+secrets
+shadows
+spiders
+strife
+suffering
+the dead
+the deep places
+the undead
+the underworld
+thieves
+tombs
+torment
+trickery
+tyranny
+violence
+war
+{evocative concept:negative}
+
+: Domain Neutral
+abstractions
+change
+chaos
+dancing
+enigmas
+ice
+judgement
+law
+magic
+men
+noise
+order
+prophecy
+silence
+tricks
+weapons
 women
 {element}
 {evocative concept}
 {wine|beer}
-{{profession}+}
+{evocative concept:neutral}
+{evocative noun}
+
+: Domain Natural
+animals
+beasts
+clouds
+earthquakes
+fire
+horses
+insects
+lakes and rivers
+lightning
+metal
+mold
+rust
+snow
+stars
+storms
+the cold
+the dawn
+the day
+the deep
+the earth
+the floods
+the moon
+the night
+the rain
+the rains
+the sea
+the seas
+the sky
+the stars
+the sun
+the wilderness
+the wind
+the winds
+thunder
+trees
+volcanoes
+{calendar:season}
+{element}
+{evocative noun}
+{{fauna}+}
+{{landmark:generic}+}
+{{mythical creature}+}
+{{terrain}+}
 
 ===
 / http://random-generator.com/index.php?title=Fantasy_Religious_History
 
 ;RELIGIOUS_EXPERIENCES
 1,Encountered religion because of [Fantasy Religious History.BEGIN_RELIGIOUS]<br/>[Fantasy_Casting_Utilities.RELIGIOUS_EVENTS_REROLL_1D3]
-
 
 ;BEGIN_RELIGIOUS
 1,persecution by believers.
@@ -66,7 +211,6 @@ women
 1,seeking refuge in temple.
 1,chance encounter with follower.
 1,being healed by clergy.
-
 
 ;RELIGIOUS_EVENTS
 1,claims divine inspiration, creates religion.<br/>[Fantasy Life Events.DEITIES]
@@ -86,7 +230,6 @@ women
 1,studied to become clergy for [Dice.1D4] years.
 1,read a forbidden book in the temple; has hidden knowledge.
 
-
 ;UNCOVER_CULT
 1,Cult seeks to recruit character.
 1,Cult seeks to kill character.
@@ -94,14 +237,12 @@ women
 1,Cult's local branch destroyed, other cultists now hunt character.
 1,Others shun character, possibly out of fear of the cult.
 
-
 ;DESECRATION
 2,Persecuted by followers.
 1,Reparations sought by followers.
 1,Shunned by followers.
 1,Shunned by most religions.
 1,Hunted by religious assassins.
-
 
 ;JOIN_RELIGION
 4,is merely a temple-goer.
