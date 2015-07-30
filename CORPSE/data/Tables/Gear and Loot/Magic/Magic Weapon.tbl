@@ -82,7 +82,7 @@ known as
 : MetalHistoryChance
 
 mined by {:Miner}
-{:StolenWord} by {:Hero} from {:Treasure}
+{:StolenWord} by {Hero Name} from {:Treasure}
 
 : StolenWord
 looted
@@ -102,35 +102,35 @@ ancient heroes
 the slaves of {:Slaveholder}
 
 : Treasure
-the {:HoardWord} of the {:Dragon description.age} {:Stolen Lands Treasure.Chromatic} {:Dragon description.type} {:Dragon names.main}
-the {:HoardWord} of {:Crypt}
-the {:HoardWord} of {:Monster Lair}
-the {:HoardWord} of {:MonsterGroup}
+the {:hoard} of the {:Dragon description.age} {:Stolen Lands Treasure.Chromatic} {:Dragon description.type} {:Dragon names.main}
+the {:hoard} of {:Crypt}
+the {:hoard} of {:Monster Lair}
+the {:hoard} of {:MonsterGroup}
 
-: HoardWord
-2,hoard
-2,treasure
-riches
-treasure trove
+: Hoard
 cache
-treasury
+hoard
+riches
 spoils
+treasure
+treasure trove
+treasury
 
 : Crypt
-the {:TombWord} of {:Saint}
-the {:TombWord} of {:Ruler}
-the {:TombWord} of {:Hero}
+the {:tomb} of {:Saint}
+the {:tomb} of {:Ruler}
+the {:tomb} of {Hero Name}
 
-: TombWord
-2x crypt
-2x tomb
+: Tomb
 barrow
 burial mound
 catacomb
+crypt
 final resting place
 grave
 mausoleum
 sepulchre
+tomb
 vault
 
 : Mountains
@@ -138,59 +138,11 @@ the {:Secret Society Title.OrgDescriptor} Mountains
 the {:Fantasy Names.MaleFirstName} Mountains
 
 : Saint
-2,St. {Saint Name}
+St. {Saint Name}
 {:Fantasy Saint.main}
 
-: Ruler
-3,King {:Fantasy Names.MaleFirstName} {:RulerSuffix}
-Queen {:Fantasy Names.FemaleFirstName} {:RulerSuffix}
-Prince {:Fantasy Names.MaleFirstName} {:RulerSuffix}
-Princess {:Fantasy Names.FemaleFirstName} {:RulerSuffix}
-
-: RulerSuffix
-3,
-the I
-the II
-the III
-the IV
-the V
-the {:Secret Society Title.OrgDescriptor}
-
-: Hero
-the {:Herotype} {:Fantasy Names.MaleFirstName}
-{:Fantasy Names.MaleFirstName} (the famous {:Herotype})
-{:Fantasy Names.MaleFirstName} the {:Secret Society Title.OrgDescriptor}
-the {:Herotype} {:Fantasy Names.MaleFirstName} the {:Secret Society Title.OrgDescriptor}
-
-: Herotype
-4,warrior
-general
-3,hero
-legendary hero
-epic hero
-folk hero
-dragonslayer
-giant-killer
-conqueror
-barbarian
-wizard
-sorcerer
-adventurer
-paladin
-pirate
-corsair
-barbarian
-knight
-cavalier
-swordsman
-ranger
-cleric
-rogue
-bard
-explorer
-
 : Slaveholder
-{:Ruler}
+{NOBLE NAME}
 {:Monster}
 {:MonsterGroup}
 
@@ -302,14 +254,14 @@ of which it is forbidden to speak
 
 : MakerChance
 10,
-It was forged by {:Hero}.
-It was forged by {:Hero} and quenched in the blood of {:Monster}.
-It was forged by {:Hero}, who quenched it in {:MonsterParts.Liquids}.
+It was forged by {Hero Name}.
+It was forged by {Hero Name} and quenched in the blood of {:Monster}.
+It was forged by {Hero Name}, who quenched it in {:MonsterParts.Liquids}.
 It was crafted by the legendary smith {:Fantasy Names.MaleFirstName} during the Age of Heroes.
 It was crafted by a now-forgotten master smith in antiquity.
-It was forged for the coronation day of {:Ruler} by the master smith {:Fantasy Names.MaleFirstName}.
-It was made for {:Hero} by the master smith {:Fantasy Names.MaleFirstName}.
-It was made for {:Hero} by the master smith {:Fantasy Names.MaleFirstName}, who quenched it in {:MonsterParts.Liquids}.
+It was forged for the coronation day of {NOBLE NAME} by the master smith {:Fantasy Names.MaleFirstName}.
+It was made for {Hero Name} by the master smith {:Fantasy Names.MaleFirstName}.
+It was made for {Hero Name} by the master smith {:Fantasy Names.MaleFirstName}, who quenched it in {:MonsterParts.Liquids}.
 It was crafted by a now-forgotten master smith of a fallen empire.
 
 : EnchanterChance
@@ -378,7 +330,7 @@ This may well have been the legendary blade of {:Fantasy Male Military Hero.main
 Something is known about the career of this blade's former owner - {:Delver Fate.story}
 A scrap of parchment tells the story of the original owner: "{:Delver Fate.story}"
 Although how it came to be here is unclear, this blade has a history of adventuring. {:Delver Fate.story} In all likelihood, this was the weapon associated with that incident.
-3,This is the blade with which {:Hero} slew {:Slain}.
+3,This is the blade with which {Hero Name} slew {:Slain}.
 
 : CoreChance
 12,
@@ -421,14 +373,14 @@ the spine
 
 : SlainByChance
 5,
- that was slain by {:Hero}
+ that was slain by {Hero Name}
 
 : Slain
 {:Monster}
-{:Hero}
+{Hero Name}
 the demon {:Demon Name.Main}
 the {:Stolen Lands Treasure.Chromatic} {:Dragon description.type} {:Dragon names.main}
-the tyrant {:Ruler}
+the tyrant {NOBLE NAME}
 
 : Relic
 {:minorrelic} of {:Saint}

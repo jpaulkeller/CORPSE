@@ -207,31 +207,30 @@ sweet pickles
 {preparation} {meat:small animal exotic}
 {color:simple} pudding
 
-===
-
-a barely edible meal of rancid meat and molded [AllTheCheeses.main] cheese
-a commoner’s meal of [Meat], [Bread], and some vegetables
+: Meal
+a barely edible meal of rancid meat and molded cheese
+a commoner’s meal of {meat}, {bread}, and some vegetables
 a delightful dessert of sweetbread, berries, dates and chopped nuts
 a few crumbled rolls and some unidentifiable paste
-a filling meal of [Bread], [Meat], and fresh greens
-a fine meal of [Meat], [Bread], and good [AllTheCheeses.main] cheese
-a hearty meal of various meats with [Bread] and fresh vegetables
-a kingly meal of [Meat], [Cheese], [Bread] and fresh berries
+a filling meal of {bread}, {meat}, and fresh greens
+a fine meal of {meat}, {bread}, and good {:cheese}
+a hearty meal of various meats with {bread} and fresh vegetables
+a kingly meal of {meat}, {:cheese}, {bread} and fresh berries
 a light snack of fresh berries, nuts, and slightly stale bread
-a light, tasty meal of fresh fruits and [Meat]
+a light, tasty meal of fresh fruits and {meat}
 a meal of exotic meats, fruits, and desserts, fit for a king
-a quality meal of [Bread], [Meat], and garden greens
-a quick snack of [Meat] wrapped in [Bread]
-a short meal of [Meat] and [Bread]
-a simple but honest meal of shredded pork, [Bread], and [Cheese]
+a quality meal of {bread}, {meat}, and garden greens
+a quick snack of {meat} wrapped in {bread}
+a short meal of {meat} and {bread}
+a simple but honest meal of shredded pork, {bread}, and {:cheese}
 a snack of fresh fruit and salted seeds
-a sparse meal of [Meat] and [Bread]
-a standard field ration of [Meat], [Bread] and an apple
-a standard field ration of soup bullion, [Bread], celery and an onion
-a wayfarer’s meal of [Meat], [Bread], and fresh garden vegetables
-an odd combination of [Meat] and sweets
-commoner’s fare of [Meat] and [Bread]
+a sparse meal of {meat} and {bread}
+a standard field ration of soup bullion, {bread}, celery and an onion
+a standard field ration of {meat}, {bread} and an apple
+a wayfarer’s meal of {meat}, {bread}, and fresh garden vegetables
+an odd combination of {meat} and sweets
+commoner’s fare of {meat} and {bread}
 inedible food, left to rot and decay for far too long
-light fare comprised of a small brick of [Cheese], a [Bread], and an apple
-lordly cuisine of mouthwatering [Meat], [Bread], and seasoned [Cheese]
-traveller’s fare comprised of [Meat], some [Bread], and garden vegetables
+light fare comprised of a small brick of {:cheese}, a {bread}, and an apple
+lordly cuisine of mouthwatering {meat}, {bread}, and seasoned {:cheese}
+traveller’s fare comprised of {meat}, some {bread}, and garden vegetables

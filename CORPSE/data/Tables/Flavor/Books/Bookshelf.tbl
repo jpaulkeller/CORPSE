@@ -88,7 +88,7 @@ vast portions of the history books here have been cut out
 {quantity:some} dozen volumes of excessively sentimental poetry fill this shelf
 {quantity:some} framed anatomical sketches line this shelf
 {quantity:some} handwritten plays fill a number of quartos upon this shelf
-{quantity:some} hat boxes sit here, each containing a mummified kobold head
+{quantity:some} hat boxes sit here, each containing a mummified {humanoid:uncommon} head
 {quantity:some} holy writings line this shelf, each defaced with childish and offensive charcoal drawings
 {quantity:some} large clam shells, etched with the names of onlookers, are displayed here
 {quantity:some} massive history books fill this shelf, each almost a perfect 2-foot cube
@@ -105,10 +105,37 @@ vast portions of the history books here have been cut out
 ===
 / http://www.koboldpress.com/k/front-page19142.php#.VQm4O9VVhBc
 
-You discover a simple bookshelf made from wood leaning against a wall. The bookshelf is five feet square and consists of four shelves. The shelves are crammed full of various books; the spines of the books seem in good shape. From a distance, you can see the wood has been stained with a thick crimson-colored oil. A small glowing stone set into the top suggests an enchantment of some sort.
+You discover a simple bookshelf made from wood leaning against a wall.
+The bookshelf is five feet square and consists of four shelves.
+The shelves are crammed full of various books; the spines of the books seem in good shape.
+From a distance, you can see the wood has been stained with a thick crimson-colored oil.
+A small glowing stone set into the top suggests an enchantment of some sort.
+
 Read the following once they begin to inspect it more closely:
-Taking a closer look, you discover the spines of the books are in perfect condition. Their topics, written in the common tongue, range from recipe collections to carpentry manuals. The titles of several large volumes suggest a detailed history of a kingdom unfamiliar to you. There appears to be a book for every interest. The stone is a small white moonstone that casts pale light in a 10-ft. sphere around the shelf. A steel ring is affixed to one side of the unit; a frayed bit of rope hangs from the ring, suggesting the bookshelf was pulled to its current location.
-The bookshelf once belonged to renowned explorer and enchanter, Jems Galloway. How it came to be sitting in the dungeon is a mystery. In addition to the glowing stone with a permanent but weak light spell cast upon it (10-ft. radius), the bookshelf is enchanted in the following three ways:
-Its books do not age. They are in precisely the same condition as the day they were placed there. The magic does not work on any object except books, scrolls, maps, or other written type material. It has no effect on living beings and will not prevent food from spoiling. Identifying this enchantment is an easy Int/Lore-based skill check.
-The books cannot be removed from the shelves without the would-be reader performing the correct gesticulations within a foot of the shelf. New books can likewise not be placed on the shelf without performing the gesticulations. Identifying this enchantment is a moderately difficult Int/Lore-based skill check. Discovering the proper gesticulation requires an easy Dex-based skill check and a difficult Int/Lore-based skill check. It is acceptable for one party member to make the Dex check while another makes the Int check.
-If pulled by the steel ring, the bookshelf hovers 1 foot off the ground and weighs nearly nothing. If anything is placed on the shelf while it is hovering, it will settle back on the ground. It is possible to lift and carry the shelf, but in this case the hovering magic does not aid the would-be movers.
+Taking a closer look, you discover the spines of the books are in perfect condition.
+Their topics, written in the common tongue, range from recipe collections to carpentry manuals.
+The titles of several large volumes suggest a detailed history of a kingdom unfamiliar to you.
+There appears to be a book for every interest.
+The stone is a small white moonstone that casts pale light in a 10-ft. sphere around the shelf.
+A steel ring is affixed to one side of the unit; a frayed bit of rope hangs from the ring, 
+suggesting the bookshelf was pulled to its current location.
+The bookshelf once belonged to renowned explorer and enchanter, Jems Galloway.
+How it came to be sitting in the dungeon is a mystery. 
+
+In addition to the glowing stone with a permanent but weak light spell cast upon it (10-ft. radius),
+the bookshelf is enchanted in the following three ways:
+
+Its books do not age. They are in precisely the same condition as the day they were placed there.
+The magic does not work on any object except books, scrolls, maps, or other written type material.
+It has no effect on living beings and will not prevent food from spoiling.
+Identifying this enchantment is an easy Int/Lore-based skill check.
+
+The books cannot be removed from the shelves without the would-be reader performing the correct
+gesticulations within a foot of the shelf. New books can likewise not be placed on the shelf without
+performing the gesticulations. Identifying this enchantment is a moderately difficult Int/Lore-based
+skill check. Discovering the proper gesticulation requires an easy Dex-based skill check and a difficult
+Int/Lore-based skill check. It is acceptable for one party member to make the Dex check while another makes the Int check.
+
+If pulled by the steel ring, the bookshelf hovers 1 foot off the ground and weighs nearly nothing.
+If anything is placed on the shelf while it is hovering, it will settle back on the ground. 
+It is possible to lift and carry the shelf, but in this case the hovering magic does not aid the would-be movers.
