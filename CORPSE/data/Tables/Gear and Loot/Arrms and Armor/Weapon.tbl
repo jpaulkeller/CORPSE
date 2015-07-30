@@ -33,6 +33,7 @@ unarmed strike                           1d2 [3]      1d3 [3]      1d4 [3]      
 spiked gauntlet              5gp         1d3          1d4          1d6              x2                -                1lb           piercing                  player's handbook
 light mace                   5gp         1d4          1d6          1d8              x2                -                4lb           bludgeoning               player's handbook
 dagger                       2gp         1d3          1d4          1d6              19-20/x2          10ft             1lb           piercing or slashing      player's handbook
+dirk                         2gp         1d3          1d4          1d6              19-20/x2          10ft             1lb           piercing or slashing      
 punching dagger              2gp         1d3          1d4          1d6              x3                -                1lb           piercing                  player's handbook
 sickle                       6gp         1d4          1d6          1d8              x2                -                2lb           slashing                  player's handbook
 
@@ -190,148 +191,47 @@ kylie                        15 gp       1d4          1d6          1d8          
 /                 Atck  Base   Min  Min   Weight   Use  Type  Range  Cost
 / Weapon Name     Time  Dmg    Dex  Str   (Oz.)               Len"   (sp)
 / -----------     ----  ----   ---  ---   ------   ---  ----  ------ ----
-
-.Weapon           Time  Dmg    Dex   Str  Weight   Use  Type  Range  Cost
-
-unarmed            0      2      5-    5      0     b     u      0       0
-dagger             1      3      6     6     20    p,s   h/m  6-20      20
- knife             1      2      6     6     15    p,s   h/m     6      10
- long knife        1      3      6     6     25    p,s    h     15      30
- dirk              1      3      6     6     20    p,s   h/m    12      20
-rapier             1      3     10     7            p     h     36
  epee              1      3     10     7            p     h      ?
- foil              1      3     10     7            p     h
 sabre              2      4      8     8            s     h     36
- scimitar          2      4      8     8            s     h     36
- cutlass           3      4      8     8            s     h      m
-sword              3      5      8     9    150    p,s    h      m     250
- short sword       2      4      8     8     50    p,s    h     24     100
- long sword        3      5      8    10           p,s    h     45     300
+  cutlass           3      4      8     8            s     h      m
  katana            3      6     10+    8           p,s    h      m     500
  broad sword       4      6      8+   10           psc    h     42     300
  estoc             3      5      8+    9           p,s    h      m     350
- falchion          4      6      8+   10           psc    h      m     400
- bastard sword     4      6      8+   10           psc    h     54     325
- 2-hnd sword       5      7      8*   12    225    psc    h     72     500
-sickle             2      3      7     7     50    s,c    h     25      10
-scythe             4      5      7     7           s,c    p
-mace               2      4      7     9    100     b     h     22      50
- maul              2      4      7     9            b     h     18
- club              2      3      7     8     50     b     h      m     <10
- 2-handed mace     4      6      7*   10    150     b     h     30      80
- 2-hnd flail       5      6      8*   10    240     b     h     40     150
- flail             4      5      9     9     80     b     h      m      80
- morning star      4      6     10+    9            b     h     48
- war hammer        5      7      7+   10     90     b     h     40      30
  mattock
-war pick           6      7      8*   10    100    b,p    h     36      80
-1-handed pick      4      4      9     9     65    b,p    h      m      70
-axe                4      6      8+    8    100     c     h     36      35
  hatchet           3      3      7     6     32     c    h/m    16      15
- hand axe          3      5      8     7     85     c    h/m    20      20
- battle axe        5      7      8*    9    120     c     h     48      50
-
-staff              2      3      8*    7            b    h/p     l      10
- quarter staff     2      3      8*    7     65     b    h/p     84     10
- war staff         2      4      8*    8           b,p   h/p     l      10
-trident            4      5      7     8     80     p    h/p     60    150
-spear              5      6      7     8     75     p    h/p     l      10
- short spear       4      5      7+    7            p    h/m     72
- long spear        6      6      7*    9            p     p     144
- lance             6      9      8    11    225     p     p     144    150
-
-pole arms          6      6      7*   10    225     *     p      90    100
-
-bow                1      -      9*    8     40     -     l     18     500
- composite bow     1      1      9*    9     45     -     l     20    1000
- short bow         1      -      9*    7     25     -     l     15     300
- long bow          2      1      9*    9     50     -     l   22=240+y/72"   750
- cross bow         2      -      7*    7    150     -     l     20     400
- heavy cross bow   3      -      7*    9    224     -     l   24=475y  500
- light cross bow   1      -      8*    7    112     -     l     18     350
- hand cross bow    1      -      9     5     48     -     l      6    3000
-dart               1      1      8     4      4     p     m      4       5
+ dart               1      1      8     4      4     p     m      4       5
 blow gun/pipe      1      -      ?     -     16     -     l     84"     50
-shuriken           2      3                         p     m      2       5
-throwing axe       4      4      8     7     75     c     m      3      10
-javelin            4      4      7     7     40     p     m      6      50
 harpoon            5      6      7     9    100     p     m      3     200
-sling              2      -      9-    5      1     -     l      -       1
 staff sling        4      -      9-    6     30     -     l    x.5       2
 
 
-Bladed Weapons
-dagger or dirk             2 gp  1  1-4/1-3  s  p  2  2/1   1/2/3
-dagger, bone               1 sp  1  1-2/1-2  s  p  2  2/1   1/2/3
-dagger, parrying           5 gp  1  1-3/1-3  s  p  2  2/1   .5/1/2
-dagger, stone              2 sp  1  1-3/1-2  s  p  2  2/1   1/2/3
-knife                      5 sp  0.5   1-3/1-2  s  p/s   2  2/1   1/2/3
-knife, bone                3 cp  0.5   1-2/1-2  s  p/s   2  2/1   1/2/3
-knife, stone               5 cp  0.5   1-2/1-2  s  p/s   2  2/1   1/2/3
 main-gauche **             3 gp  2  1-4/1-3  s  p/s   2
 stiletto                   5 sp  0.5   1-3/1-2  s  p  2  2/1   1/2/3
-sword, bastard            25 gp    10    1-8/1-12    m  s  6
-2-handed                  25 gp    10    2-8/2-16    m  s  8
-sword, broad              10 gp    8.5   2-8/2-7  m  s  5
 sword, claymore           25 gp    10    1-10/3-18   l  s  10
-sword, cutlass            12 gp    4  1-6/1-8  m  s  3
 sword, drusus             50 gp    3  2-7/2-9  m  s  3
-sword, falchion           17 gp    8  2-7/2-8  m  s  5
-sword, katana            100 gp   6  1-10/1-12   m  s/p   4
-two handed                 100 gp   6  2-12/2-12   m  s/p   4
 sword, kopesh             10 gp    7  2-8/1-6  m  s  9
-sword, long               15 gp    4  1-8/1-12    m  s  5
-sword, rapier             15 gp    3.5   2-7/2-9  m  p  4
-sword, saber              17 gp    5  2-7/2-9  m  s  4
-sword, scimitar           15 gp    4  1-8/1-8  m  s  5
-sword, short              10 gp    3  1-6/1-8  s  p  3
-sword, 2-handed           50 gp    15    1-10/3-18   l  s  10
 sword, wakizashi          50 gp    3  1-8/1-8  m  s/p   3
-sword, wooden, boku-toh    1 gp  3  1-4/1-2  -  -  -
 
-Hafted Weapons
-axe, battle, 2-handed     15 gp    17    1-10/1-12   l  s  12
-axe, battle                5 gp  7  1-8/1-8  m  s  7
-axe, hand                  1 gp  5  1-6/1-4  m  s  4  1
-club                       -  3  1-6/1-3  m  b  4  1  1/2/3
 flail, footman's          15 gp    15    2-7/2-8  m  b  7
 flail, horseman's          8 gp  5  2-5/2-5  m  b  6
-hammer, maul               5 gp  10    1-6/1-8  m  b  9
-hammer, war                2 gp  5  2-5/1-4  m  b  4  1  1/2/3
 mace, footman's            8 gp  10    2-7/1-6  m  b  7
 mace, horseman's           5 gp  6  1-6/1-4  m  b  6
-morning star              10 gp    12    2-8/2-7  m  p/b   7
-pick, military, footman's  8 gp  6  2-7/2-8  m  p  7
-pick, military, horseman's 7 gp  4  2-5/1-4  m  p  6
-sickle                     6 sp  3  1-6/1-4  s  s  4
 
-Misc Weapons
 aklys                      2 gp  3.5   1-6/1-3  -  -  -
 atlatl   1 gp  1  -  -  -  -
 blackjack   2 sp  5  1-4/1-2  -  -  -
 belaying pin   2 cp  2  1-3/1-3  s  b  4
-bolas    5 sp  2  1-3/1-2  m  b  8  1  3/6/9
 caltrop  2 sp  0.4   1-1/1-2  s  p  -
 caviler  450 gp   11    1-8/1-8  m  p  12    1/4   4/8/14
 cestus   1 gp  2  1-4/1-3  s  s  2
-chain    5 sp  3  2-5/1-4  l  b  5  *  .5/1/2
-fang  1 gp  3  1-6/1-4  -  -  -
-gaff/hook, attached  2 gp  2  1-4/1-3  s  p  2
-gaff/hook, held   5 cp  2  1-4/1-3  s  p  2
 garrot   1 sp  0.1   1-4/1-6  s  -  3
-jo stick    1 gp  4  1-6/1-4  l  p  4
 lasso    5 cp  2  -  l  -  10    *  1/2/3
 net   5 gp  10    -  m  -  10    *  1/2/3
-ninja-to & scabbard  5 gp  5.5   1-8/1-6  -  -  -
 nunchaku    1 gp  3  1-6/1-6  m  b  3
 sai   8 sp  2  1-4/1-2  -  -  -
 sap   1 gp  1  1-2/1-2  s  b  2
 scourge  1 gp  2  1-4/1-2  s  -  5
 spiked buckler    10 gp    3.5   1-4/1-3  -  -  -
-three-piece rod   2 gp  5  1-6/1-4  -  -  -
-tui-fa   5 gp  1.5   1-6/1-4  -  -  -
-whip,metal  8 gp  7.5   2-5/1-4  m  -  8
-whip,rawhide   1 gp  2  1-2/1-2  m  -  8
 
 Missle Weapons
 arquebus    500 gp   10    1-10/1-10   m  p  15    1/3   5/15/21
@@ -367,12 +267,6 @@ sling    5 cp  0.1   -  s  -  6  -  -
 staff sling    2 sp  2  -  m  -  11    2/1   -/3-6/9
 starwheel pistol  1000 gp  5  1-4/1-4  s  p  10    1/3   3/6/9
 
-Pole Weapons
-bo stick    2 cp  4  1-3/1-3  l  b  4
-lance, heavy @    15 gp    15    3-9/3-18    l  p  8
-lance, jousting @    20 gp    20    0-2/0-1  l  p  6
-lance, light @    6 gp  5  1-6/1-8  l  p  10
-lance, medium @   10 gp    10    2-7/2-12    l  p  7
 mancatcher  30 gp    8  1-2/1-2  l  -  7
 polearm, awl pike #  3 gp  8  1-6/1-12    l  p  13
 polearm, bardiche    7 gp  12    2-8/3-12    l  s  9
@@ -394,15 +288,6 @@ polearm, ranseur #   6 gp  7  2-8/2-8  l  p  8
 polearm, spetum #    5 gp  7  2-7/2-12    l  p  8
 polearm, tetsubo  2 gp  7  1-8/1-8  l  p  8
 polearm, voulge #    5 gp  12.5  2-8/2-8  l  s  10
-quarterstaff   1 bp  4  1-6/1-6  l  b  4
-spear    8 sp  5  1-6/1-8  m  p  6  1  1/2/3
-two handed #  8 sp  5  2-9/2-12    m  p  6  1  1/2/3
-spear, long    5 gp  8  1-8/2-9  l  p  8
-two handed #  5 gp  8  2-12/3-18   l  p  8
-spear, stone   8 cp  5  1-4/1-6  m  p  6  1  1/2/3
-two handed    8 cp  5  1-6/2-8  m  p  6  1  1/2/3
-trident  15 gp    5  2-7/3-12    l  p  7  1  0/1/2
-two handed    15 gp    5  2-9/3-12    l  p  7  1  0/1/2
 
 / * This Weapon inflicts Double Damage against charging creatures of L or greater
 / ** This Weapon can dismount a rider on a successful hit
@@ -423,7 +308,11 @@ Ad = Additional = If this number is rolled for damage, score this much damage an
 
 / PRIMITIVE WEAPONS
 
-/ Many so-called exotic weapons are weapons more common to primitive cultures, such as Stone Age humans. To reflect that fact, the DM could allow primitive cultures (or even some of the more savage races, such as lizardfolk) to treat blowguns as simple weapons and any or all the following exotic weapons as martial weapons: bolas, barbed bolas, boomerang, greater blowgun, and net. As a tradeoff, you could rule that such races treat bows and crossbows (of all sorts) as exotic weapons. If you want to play such a character, work out a fair balance with your DM.
+/ Many so-called exotic weapons are weapons more common to primitive cultures, such as Stone Age humans. To reflect that fact,
+/ the DM could allow primitive cultures (or even some of the more savage races, such as lizardfolk) to treat blowguns as simple 
+/ weapons and any or all the following exotic weapons as martial weapons: bolas, barbed bolas, boomerang, greater blowgun, and net.
+/ As a tradeoff, you could rule that such races treat bows and crossbows (of all sorts) as exotic weapons. If you want to play such
+/ a character, work out a fair balance with your DM.
 
 / IMPROVISED WEAPONS
 

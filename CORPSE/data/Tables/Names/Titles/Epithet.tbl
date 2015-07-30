@@ -64,6 +64,7 @@ the {:Rogue Adj} {:Rogue Noun}
 {20%{:Adj} }{:Warrior Title} of {:Place}
 {20%{:Adj} }{:Warrior Title} of {:Slain}
 {20%{:Adj} }{:Warrior Title} of {Evocative Concept}
+{monster type}-slayer
 
 : Mage Title
 {pseudo class:mage}

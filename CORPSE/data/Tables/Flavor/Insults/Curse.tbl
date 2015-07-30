@@ -96,32 +96,8 @@ a malevolent spirit
 / 3x {:Quick Horrors.main}
 
 : ongoing-effect
-a terrible red rash that covers part of his face and forehead (skin is flaky and it itches terribly; -2 penalty to all Bluff and Diplomacy checks)
-always hungry (over the next month, he gains {d4x10} lbs)
-become convinced a nameless, powerful foe is hunting him. He begins to take more and more outlandish precautions in regard to his safety—particularly at night.
-become easily distracted (-2 penalty on all Perception checks, and must make a DC10 Will save at the start of each combat or suffer a -2 penalty to his initiative roll) 
-body odor (no matter how often or how frequently he washes, as soon as he exerts himself the smell returns. Creatures with scent can sense him at twice the normal range)
-develop a delicate stomach and suffers from terrible indigestion (can only eat bland foods and suffers a -2 penalty to saving throws made to resist the effects of ingested poisons)
-develop an irrational fear of spiders or some other small, harmless insect. Whenever confronted by normal-sized versions of the creatures he is shaken. Encountering a monstrous or obviously dangerous specimen renders him frightened.
-develop an unhealthy fixation to a minor item possessed by one of his friends (do everything he can to possess the item short of murder)
-emit a strange odor, which animals find off-putting (suffer a -2 penalty to all Ride and Handle Animal checks)
-great trouble sleeping (every morning, the character must make a DC 10 Fortitude check or be fatigued for the following day)
-hair begins to fall out in clumps (-2 penalty to all Bluff and Diplomacy checks)
-hair begins to prematurely grey, making him seem older than he would otherwise appear
-hearing is impaired by a low roaring or ringing sound that only he can hear (suffers a -5 penalty on all hearing-based Perception checks)
-immune system becomes weakened (-5 penalty on all Fortitude saving throws made to resist the effects of disease)
-leg muscles are constantly cramping which causes near constant pain (reduce movement rate by 5 ft)
-lose 1 point of {attribute} every {:period}
-lose all interest in sex
-lose {:a-level} every {:period}
-never hungry (over the next month he loses {d4x10} lbs)
-see indistinct moving shadows from the corners of his eyes (-2 penalty to sight-based Perception checks)
-sprout hair all over his body
-suffer from an itchy rash which inflicts a -2 penalty to Stealth and Acrobatics checks made to balance
-take a penalty to all rolls (-{2}, cumulative every {:period})
-take a penalty to hit (-{2}, cumulative every {:period})
-take {10,30} {:damage} every {:period}
-take {5,20} {:damage} every {:period}
+{symptom}
+{disease}
 {:body horror}
 {:ongoing-age-effect}
 
@@ -130,10 +106,8 @@ your {body part} turn to {made of}
 your {body part} becomes a {body part{!different}}
 
 : ongoing-age-effect
-age at an unnatural rate (one year every {:period})
-age at an unnatural rate ({number:twotofive} years every {:period})
-grow younger over time (lose one year every {:period})
-grow younger over time (lose {number:twotofive} years every {:period})
+age at an unnatural rate ({one year|{number:twotofive} years} every {:period})
+grow younger over time (lose {one year|{number:twotofive} years} every {:period})
 
 : positive-effect
 gain 1 point of {attribute}

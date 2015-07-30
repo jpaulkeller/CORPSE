@@ -5,59 +5,74 @@
 .Symptom
 .Effects
 
-arousal;-2 to save versus charm, roll save or will approach romantic targets
+a terrible {color:common} rash covers {20-80}% of his face; skin is flaky and it itches terribly; -2 penalty to all Bluff and Diplomacy checks
+always hungry; over the next month, gain {d4x10} lbs
+arousal; -2 to save versus charm, roll save or will approach romantic targets
 ashen skin
 auditory hallucinations
+become easily distracted; -2 penalty on all Perception checks, and must make a DC10 Will save at the start of each combat or suffer a -2 penalty to his initiative roll 
 black spots
 blackened flesh
 bleeding from orifices
-bleeding;scent roll 2x for wandering monsters
+bleeding; scent roll 2x for wandering monsters
 blindness
 bloating
 blood in urine
 blurred vision
-blurred vision;-2 to hit, no missiles/spells
-boils/buboes visible;-{6} to charisma depending on context
+blurred vision; -2 to hit, no missiles/spells
+body odor; no matter how often or how frequently he washes, as soon as he exerts himself the smell returns. Creatures with scent can sense him at twice the normal range
+boils/buboes visible; -{6} to charisma depending on context
 chest pains
 collapse
-coma;unconscious for {6} weeks
-confusion;uncertain of time/location, in combat -1 to hit, roll randomly for targets
+coma; unconscious for {6} weeks
+confusion; uncertain of time/location, in combat -1 to hit, roll randomly for targets
 constipation
 convulsions
-coughing;-{6} to charisma depending on context, roll 2x for wandering monsters
+coughing; -{6} to charisma depending on context, roll 2x for wandering monsters
 deafness
 deep coma
 delusions
 depression
-diarrhea;scent, roll 2x for wandering monsters
+develop a delicate stomach and suffers from terrible indigestion; can only eat bland foods and suffers a -2 penalty to saving throws made to resist the effects of ingested poisons
+develop an irrational fear of spiders or some other small, harmless insect; whenever confronted by normal-sized versions of the creatures he is shaken. Encountering a monstrous or obviously dangerous specimen renders him frightened.
+develop an unhealthy fixation to a minor item possessed by one of his friends; do everything he can to possess the item short of murder
+diarrhea; scent, roll 2x for wandering monsters
 difficulty breathing
 difficulty concentrating
 difficulty swallowing
-dilated pupils;-2 to hit & no missiles/spells in normal daylight
+dilated pupils; -2 to hit & no missiles/spells in normal daylight
 diminished senses
 disorientation
-dizziness;-2 to hit, no missiles/spells
-drowsiness;unable to surprise or stay awake for watch, 50% chance of spell miscast
+dizziness; -2 to hit, no missiles/spells
+drowsiness; unable to surprise or stay awake for watch, 50% chance of spell miscast
 dry mouth
+emit a strange odor, which animals find off-putting; suffer a -2 penalty to all Ride and Handle Animal checks
 eye irritation
 fatigue
 fear ({phobia}); save or flee potential threats, -2 to hit if forced into combat
-fever/chills;bad sleep at night, no natural hp recovery, 50% chance of spell miscast
+fever/chills; bad sleep at night, no natural hp recovery, 50% chance of spell miscast
 fragile bones
 gastric distress
-hair loss;-{6} to charisma depending on context
-hallucinations;-{6} to char if seen, no move silently or hide, 50% chance of spell miscast
-headache;no spell casting possible
+great trouble sleeping; every morning, the character must make a DC 10 Fortitude check or be fatigued for the following day
+hair begins to fall out in clumps; -2 penalty to all Bluff and Diplomacy checks
+hair begins to prematurely grey, making him seem older than he would otherwise appear
+hair loss; -{6} to charisma depending on context
+hallucinations; -{6} to char if seen, no move silently or hide, 50% chance of spell miscast
+headache; no spell casting possible
+hearing is impaired by a low roaring or ringing sound that only he can hear; suffers a -5 penalty on all hearing-based Perception checks
+hemorrhage; take {10,30} {:damage} every {:period}
 hyperactivity
+immune system becomes weakened; -5 penalty on all Fortitude saving throws made to resist the effects of disease
 impaired cognitive abilities
 impaired decision-making
 increased vulnerability to disease
 insanity
 insomnia
 irritability
-itchiness;-{6} to char if seen, no move silently or hide, 50% chance of spell miscast
+itchiness; -{6} to char if seen, no move silently or hide, 50% chance of spell miscast
 itching rashes
-joint aches;-1 to hit, movement slowed to half
+joint aches; -1 to hit, movement slowed to half
+leg muscles are constantly cramping which causes near constant pain; reduce movement rate by 5 ft
 loss of coordination
 loss of feeling in {{right|left} {hand|foot}|both {hands|feet}}
 memory loss
@@ -66,45 +81,57 @@ moodiness
 muscle spasms
 muscle weakness
 nausea
-nausea;vomit on any odd # roll, then roll 2x for wandering monsters
+nausea; vomit on any odd # roll, then roll 2x for wandering monsters
+never hungry; over the next month he loses {d4x10} lbs
 numbness in extremities
 oozing sores
 painful sores
-palsy;-{6} to char depending on context, -1 to hit, no missiles/spells
+palsy; -{6} to char depending on context, -1 to hit, no missiles/spells
 panic attacks
 paralysis
 paranoia
-paranoia;save or consider anyone a potential threat
+paranoia; become convinced a nameless, powerful foe is hunting him. He begins to take more and more outlandish precautions in regard to his safety—particularly at night.
+paranoia; save or consider anyone a potential threat
 partial blindness
 partial paralysis
-pustules;-{6} to charisma depending on context
-rash;-{6} to charisma depending on context
+pustules; -{6} to charisma depending on context
+rash; -{6} to charisma depending on context
 rashes
 red spots
+see indistinct moving shadows from the corners of his eyes; -2 penalty to sight-based Perception checks
 seizures
-seizures;-{6} to char if seen, occur on specific # roll, unable to act for {6} rounds
-sensory loss;{33% hearing}{33% sight} {33% touch} {33% taste} {33% smell} for {2d6}{duration:short}
+seizures; -{6} to char if seen, occur on specific # roll, unable to act for {6} rounds
+sensory loss; {33% hearing}{33% sight} {33% touch} {33% taste} {33% smell} for {2d6}{duration:short}
 shortness of breath
 skin sores
 slowed reaction times
 slurred speech
 sneezing
 sore throat
+sprout hair all over his body
 stiffness in joints
-stomach ache;bad sleep at night, no natural hp recovery, 50% chance of spell miscast
+stomach ache; bad sleep at night, no natural hp recovery, 50% chance of spell miscast
 strokes
 stuffy nose
+suffer from an itchy rash; -2 penalty to Stealth and Acrobatics checks made to balance
 swelling
 swollen glands
 swollen joints
 swollen throat
-tenderness;take +1 to damage from any blow, movement slowed to half
+tenderness; take +1 to damage from any blow, movement slowed to half
 thick mucus
-tinnitus;no listen at doors, no move silently, 50% chance of spell miscast
-unconsciousness;unconscious for {6} hours
+tinnitus; no listen at doors, no move silently, 50% chance of spell miscast
+unconsciousness; unconscious for {6} hours
 uncontrollable bleeding
 unpleasant smell
 violent mood swings
 vomiting
-weakness;-2 to damage, no open doors or bend bars, encumbrance halved
-{color:common} skin color;-{6} to charisma depending on context
+wasting sickness; lose 1 point of {attribute} every {:period}
+weakness; -2 to damage, no open doors or bend bars, encumbrance halved
+{color:common} skin color; -{6} to charisma depending on context
+
+===
+lose {:a-level} every {:period}
+take a penalty to all rolls (-{2}, cumulative every {:period})
+take a penalty to hit (-{2}, cumulative every {:period})
+take {5,20} {:damage} every {:period}
