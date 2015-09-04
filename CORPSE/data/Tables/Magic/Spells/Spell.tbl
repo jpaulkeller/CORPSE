@@ -1,4 +1,3 @@
-
 / Sources: TSRPH2 = Player's Handbook 2nd Edition
 /          CORPSE = Computer Oriented Role Playing System and Environment
 /          Dgn:V1 = Best of DRAGON, Volume I   page 52
@@ -22,6 +21,28 @@
 /          DEAT = Death Master         META = Metallist
 /          DRUI = Druid                SEER = Seer
 /          HEAL = Healer               WITC = Witch
+
+: Level 0 = .*0 .* 
+: Level 1 = .*1 .* 
+: Level 2 = .*2 .* 
+: Level 3 = .*3 .* 
+: Level 4 = .*4 .* 
+: Level 5 = .*5 .* 
+: Level 6 = .*6 .* 
+: Level 7 = .*7 .* 
+: Level 8 = .*8 .* 
+: Level 9 = .*8 .*
+: Cantrip = Level 0
+
+: Alchemist = .*Alch.* 
+: Cleric = .*cler.* 
+: Necromancer = .*deat.* 
+: Druid = .*drui.* 
+: Healer = .*heal.* 
+: Illusionist = .*Illu.* 
+: Metallist = .*Meta.* 
+: Seer = .*seer.* 
+: Witch = .*witc.* 
 
 .Level  Spell                         Type           Element      Source     Class
   

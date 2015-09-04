@@ -41,15 +41,17 @@ alchemist
 arcanist
 artificer
 battlemage
+caster
 chronomancer
+coercer
 conjurer
+deathmage
 demon-summoner
 druid
 effigy master
 enchanter
 enchantress
 evoker
-geomancer
 hexologist
 illusionist
 invoker
@@ -58,10 +60,10 @@ magician
 magus
 necromancer
 neuromancer
-pyromancer
-rune carver
-rune keeper
-rune weaver
+rune-carver
+rune-caster
+rune-keeper
+rune-weaver
 shaman
 sorcerer
 spell crafter
@@ -70,6 +72,14 @@ transmuter
 warlock
 witch
 wizard
+{:elementalist}
+
+: Elementalist
+aeromancer
+elementalist
+geomancer
+pyromancer
+hydromancer
 
 : Priest
 ascetic
@@ -89,6 +99,7 @@ hierophant
 holy man
 inquisitor
 itinerant priest
+mender
 monk
 nun
 necromancer

@@ -1,9 +1,15 @@
 freezing
+icy
 cold
+chilly
 cool
 ambient
+tepid
+lukewarm
 warm
 hot
+smoldering
+simmering
 boiling
 
-: Temperature {2d4-1}
+: Temperature {2d7-1}

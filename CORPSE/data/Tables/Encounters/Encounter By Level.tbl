@@ -1,0 +1,244 @@
+/ http://www.random-generator.com/index.php?title=Level_1_Monster
+
+: 1 = .* 1 .*
+: 2 = .* 2 .*
+: 3 = .* 3 .*
+: 4 = .* 4 .*
+: 5 = .* 5 .*
+: 6 = .* 6 .*
+
+: On Level 1
+9x {:1.Encounter}
+2x {:2.Encounter}
+{:3.Encounter}
+
+: On Level 2
+3x {:1.Encounter}
+6x {:2.Encounter}
+2x {:3.Encounter}
+{:4.Encounter}
+
+: On Level 3
+{:1.Encounter}
+2x {:2.Encounter}
+6x {:3.Encounter}
+2x {:4.Encounter}
+{:5.Encounter}
+
+: On Level 4
+{:2.Encounter}
+2x {:3.Encounter}
+6x {:4.Encounter}
+2x {:5.Encounter}
+{:6.Encounter}
+
+: On Level 5
+{:3.Encounter}
+2x {:4.Encounter}
+6x {:5.Encounter}
+3x {:6.Encounter}
+
+: On Level 6
+{:4.Encounter}
+2x {:5.Encounter}
+9x {:6.Encounter}
+
+.Encounter                     Lvl    Source
+Adamarach                       1     Hamsterish Horde
+Lesser Shadow                   1     Tome of Horrors   
+Living Statue, Silver           1     Creature Catalog
+{10} Stirge                     1     ACKS Monsters   
+{12} Air Jelly                  1     Hamsterish Horde         
+{12} Amber Jelly                1     Hamsterish Horde         
+{2d10} Dust Fundamental         1     Creature Catalog         
+{2d10} Earth Fundamental        1     Creature Catalog      
+{2d10} Heqren                   1     Hamsterish Horde   
+{2d10} Ooze Fundamental         1     Creature Catalog            
+{2d10} Quil                     1     Monsters of Aihrde
+{2d10} Smoke Fundamental        1     Creature Catalog
+{2d4} Cave Locust               1     Deadly Distractions   
+{2d4} Centipede, Giant          1     ACKS Monsters   
+{2d4} Goblin                    1     ACKS Monsters   
+{2d4} Mushroom-man              1     Monstrosities   
+{2d4} Orc                       1     ACKS Monsters   
+{2d4} Rat-ghoul                 1     Monstrosities   
+{2d6} Aothsil                   1     Monsters of Aihrde
+{2d6} Blue Blob                 1     Deadly Distractions   
+{2d6} Feral Undead Cat          1     Monstrosities   
+{2d6} Giant fleas               1     Tome of Horrors   
+{2d6} Spine Rat                 1     Monstrosities   
+{3d4} Skeleton                  1     ACKS Monsters   
+{3d6} Fire Jelly                1     Hamsterish Horde         
+{3d6} Rat, Giant                1     ACKS Monsters   
+{3} Golden Jelly                1     Hamsterish Horde         
+{4} Glass golem                 1     Deadly Distractions   
+{5d4} Qu fiend                  1     Monsters of Aihrde
+{6} Brass Dragonfly             1     Hamsterish Horde      
+{8} Amnug                       1     Monsters of Aihrde
+{8} Beetle, Fire                1     ACKS Monsters   
+{8} Ferret, Giant               1     ACKS Monsters   
+{8} Khetirr                     1     Hamsterish Horde         
+{8} Mooncoil                    1     Hamsterish Horde         
+Amaimon Devil                   2     Tome of Horrors   
+Bronze Cobra                    2     Monstrosities   
+Killer Book                     2     Hamsterish Horde
+Magen, Hypnos                   2     Creature Catalog
+{10} Bat, Giant                 2     ACKS Monsters   
+{2d10} Verdant Jelly            2     Hamsterish Horde
+{2d4} Nightmist                 2     Hamsterish Horde
+{2d4} Zombie                    2     ACKS Monsters
+{2d6} Bone needle               2     Tome of Horrors
+{2d6} Briarbones                2     Hamsterish Horde
+{2d6} Red Worm                  2     Creature Catalog
+{2} Brass Jackal                2     Hamsterish Horde
+{3d6} Giant leech               2     Monstrosities
+{3} Hypnale Drake               2     Hamsterish Horde
+{3} Living Statue, Marble       2     Hamsterish Horde
+{4} Darkmantle                  2     Monstrosities
+{4} Giant Hunting Spider        2     Creature Catalog
+{4} Greenfang (3hd)             2     Hamsterish Horde
+{4} Origami Warrior             2     Monstrosities
+{4} Scrap Golem                 2     Varlets and Vermin
+{6d4} Myrcuri                   2     Hamsterish Horde
+{6} Alraune                     2     Hamsterish Hoard
+{6} Ghoul                       2     ACKS Monsters
+{6} Skitterdark demon           2     Tome of Horrors
+{6} Water Jelly                 2     Hamsterish Horde
+{8} Fly, Giant Carnivorous      2     ACKS Monsters
+{8} Javelin snake               2     Tome of Horrors
+{8} Snake, Pit Viper            2     ACKS Monsters
+{8} Spiderweed                  2     Tome of Horrors
+{8} Troglodyte                  2     ACKS Monsters   
+{d8+1} Leaping maw              2     Monstrosities
+Ash Mephit                      3     Monstrous Compendium
+Dust Mephit                     3     Monstrous Compendium
+Lesser Haunt                    3     Creature Catalog
+Living Statue, Jade             3     Creature Catalog
+Ooze Mephit                     3     Monstrous Compendium
+Pocket Dragon                   3     Creature Catalog
+Smoke Mephit                    3     Monstrous Compendium
+Smoke dragon                    3     Tome of Horrors      
+{10} Ibar                       3     Monsters of Aihrde
+{10} Volt                       3     Tome of Horrors   
+{12} Lesser Chimera             3     Monsters of Aihrde
+{20} Gorbel                     3     Monstrous Compendium
+{2d4} Abyssal Larva             3     Tome of Horrors      
+{2d4} Death Dog                 3     Tome of Horrors         
+{2d6} Magen, Demos              3     Creature Catalog
+{2} Heartbriar                  3     Hamsterish Horde            
+{3} Aranea                      3     Creature Catalog
+{3} Carcass Scavenger           3     ACKS Monsters         
+{3} Lizard, Draco               3     ACKS Monsters
+{3} Pearl ooze                  3     Hamsterish Horde                   
+{4d10} Giant Earwig (male)      3     Monsters of Myth
+{4} Caldron Magen               3     Creature Catalog
+{6} Ash Crawler                 3     Creature Catalog
+{6} Gargoyle                    3     ACKS Monsters   
+{6} Ogre                        3     ACKS Monsters   
+{6} Retch Hound                 3     Tome of Horrors      
+{6} Scorpion, Giant             3     ACKS Monsters
+{6} Walking Slime               3     Monstrosities      
+{6} Whip jelly                  3     Tome of Horrors      
+{6} Wight                       3     ACKS Monsters   
+{8} Dretch demon                3     Monstrosities      
+{d4+1} Exploding Bones          3     Monstrosities   
+Acid Quasi-elemental (4hd)      4     Tome of Horrors
+Black Dragon (5hd)              4     ACKS Monsters
+Ghoul wolf(2d4)	                4     Tome of Horrors
+Giant Earwig ({8}f) ({4d8}m)    4     Monsters of Myth
+Obsidian Quasi-elemental (4hd)  4     Tome of Horrors
+Stone Guardian Golem	        4     Tome of Horrors
+{1} Emberwings                  4     Hamsterish Horde
+{1} Gelatinous Cube             4     ACKS Monsters
+{1} Living Blood                4     Hamsterish Horde
+{1} Living Statue, Brass        4     Hamsterish Horde
+{1} Living Statue, Cinnabar     4     Hamsterish Horde
+{1} Necrophidius                4     Tome of Horrors
+{1} Vermith                     4     Monsters of Myth	
+{2d6} Hook Horror               4     Creature Catalog				
+{2d6} Ulyuleng                  4     Monsters of Myth
+{3} Brown Mold                  4     Monstrosities
+{3} Magen, Galvan               4     Creature Catalog
+{3} Medusa                      4     ACKS Monsters
+{4} Cockatrice                  4     ACKS Monsters
+{4} Cunalrur                    4     Monsters of Aihrde
+{4} Flame Spider                4     Hamsterish Horde
+{4} Phase Tiger                 4     ACKS Monsters
+{4} Rhagodessa, Giant           4     ACKS Monsters
+{4} Shadow Vetch                4     Monsters of Myth
+{4} Wraith                      4     ACKS Monsters
+{6} Agarat                      4     Creature Catalog
+{6} Giant Saw-toothed Beetle    4     Tome of Horrors
+{6} Grick                       4     Monstrosities
+{6} Hell hound                  4     ACKS Monsters
+{6} Minotaur                    4     ACKS Monsters
+{8} Air Gust                    4     Tome of Horrors
+{d6+4} Lemure demon             4     Monstrosities
+Assassin Vine                   5     Monstrosities
+Brassbound                      5     Hamsterish Horde
+Funghemoth                      5     Monsters of Myth
+Hypnosnake                      5     Creature Catalog
+Living Statue, Black Iron       5     Hamsterish Horde
+Mercury Ooze                    5     Tome of Horrors
+Ooze Demon                      5     Tome of Horrors
+Otyugh                          5     ACKS Monsters
+Pyrolisk                        5     Tome of Horrors
+Quasit demon                    5     Monstrosities
+Slime Worm                      5     Creature Catalog
+Sorceror Ox (& {6} Minotaurs)   5     Tome of Horrors
+Spider collective               5     Tome of Horrors
+Wax Golem                       5     Monstrosities
+{2d4} Hell Hound, Greater       5     ACKS Monsters
+{2} Boalisk                     5     Tome of Horrors
+{2} Elemental (8hd)             5     ACKS Monsters
+{2} Wyvern                      5     ACKS Monsters
+{3} Caecilian                   5     ACKS Monsters
+{3} Death Tapioca               5     Hamsterish Horde
+{3} Lindworm                    5     Hamsterish Horde
+{4} Alistrath                   5     Hamsterish Horde
+{4} Bone Dragon                 5     Hamsterish Horde
+{4} Hook Hulker                 5     Creature Catalog
+{4} Lesser Phantom              5     Creature Catalog
+{4} Lithonnite                  5     Monsters of Myth
+{4} Spectre                     5     Monstrosities
+{6} Ankheg                      5     ACKS Monsters
+{6} Basilisk                    5     ACKS Monsters
+{6} Four-Armed Gargoyle         5     Tome of Horrors
+{6} Spider Troll                5     Monsters of Myth
+{d4+1} Salamander, Flame        5     ACKS Monsters
+Black Dragon                    6     ACKS Monsters
+Blue Dragon                     6     ACKS Monsters
+Bone Mound                      6     Monstrosities
+Bulette                         6     ACKS Monsters
+Chimera                         6     ACKS Monsters 
+Copper golem                    6     Monsters of Aihrde
+Demon boar                      6     ACKS Monsters
+Dusanu (2d2)                    6     Creature Catalog
+Giant amoeba                    6     Creature Catalog
+Gorgon                          6     ACKS Monsters
+Greater basilisk                6     Tome of Horrors
+Hydra (12 headed)               6     ACKS Monsters
+Lamia                           6     ACKS Monsters
+Linnorm                         6     Monstrosities
+Purple worm                     6     ACKS Monsters
+Red Dragon                      6     ACKS Monsters
+Remorhaz                        6     ACKS Monsters
+Shambling mound                 6     Monstrosities
+Skittering maw                  6     ACKS Monsters
+Stegocentipede                  6     Tome of Horrors
+Tendriculos                     6     Monstrosities
+Vampire                         6     ACKS Monsters
+{2} Clay golem                  6     Monstrosities
+{2} Fyrsnaca                    6     Creature Catalog
+{3} Hezrou demon                6     Monstrosities
+{3} Khavorr demon               6     Monstrosities
+{4} Aru Demon                   6     Monsters of Aihrde
+{4} Death Demon                 6     Creature Catalog
+{4} Dire Wolfwere               6     Tome of Horrors
+{4} Dungeon dragon              6     Tome of Horrors
+{4} Ember dragon                6     Hamsterish Horde
+{4} Shade dragon                6     Hamsterish Horde
+{4} Ulthal demon                6     Monsters of Aihrde
+{6} Glabrezu demon              6     Monstrosities
+{8} Charon Fiend                6     Monsters of Aihrde
+{Element} Elemental (12hd)      6     ACKS Monsters

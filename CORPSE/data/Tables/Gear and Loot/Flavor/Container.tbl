@@ -156,14 +156,16 @@ shaker
 tin
 
 : Potions
-{33%{:description} }{:potion container}{33% {:decoration}}
+{33%{:description} }{:potion}{33% {:decoration}}
 
-: Potion Container
+: Potion
 alembic
 beaker
 bottle
+carafe
 decanter
 jug
+phial
 retort
 urn
 vessel
@@ -191,3 +193,13 @@ painted {color:simple}
 protected with {metal:precious} wire
 sealed with wax
 wrapped in {fabric}
+
+: Packed In
+ashes
+crushed shells
+pine needles
+sand
+sawdust
+straw
+wool
+wood shavings

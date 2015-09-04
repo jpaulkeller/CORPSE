@@ -22,18 +22,24 @@ hemp
 hide
 jute
 leather
+sackcloth
 wool
 
 : Uncommon
 brocade
 cashmere
-{fur and pelt:common.animal} fur
+fine wool
 gold cloth
 lace
 leather
 linen
+samite
+satin
 silk
 silver cloth
+tweed
+velvet
+{fur and pelt:common.animal} fur
 
 : Exotic
 spidersilk

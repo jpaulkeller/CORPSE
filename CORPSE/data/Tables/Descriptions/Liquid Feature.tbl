@@ -1,11 +1,14 @@
-:Liquid Feature
+/ see also: Viscosity
 
+: Liquid Feature
+boiling
 bubbling
+carbonated
 chalky
-chunky
+churning
 cloudy
-congealed
 coruscating
+effervescent
 fiery
 fizzing
 flaky
@@ -15,27 +18,52 @@ frothing
 glittering
 glowing
 gritty
+incandescent
 iridescent
 layered
 luminescent
-lumpy
+muddy
 murky
 phosphorescent
-oily
+opalescent
 opaque
 pulsating
 sedimented
 shimmering
 simmering
 smoking
+soupy
 sparking
 sparkling
 steaming
+sticky
 swirling
 translucent
 
 : Extra
+with a small {tiny item} floating in it
+with crystalline accretions sticking to the container
+with tiny, unidentifiable organisms swimming in it
+with unidentifiable bits of meat, gore and viscera floating in it
+with what looks like tiny {{insect}+} {swimming|crawling} in it
+with whole preserved {worm|spider|scorpion|{organ}} floating in it
 with {bits|lumps|pieces|flakes} of {reagent} floating in it
 with {color:fancy} {accretions|residue|streaks} on the {surface|sides|bottom}
-with what looks like tiny {{insect}+} {swimming|crawling} in it
-with a small {tiny item} floating in it
+
+: Property
+addictive
+alcoholic
+evaporates quickly
+explosive
+flammable
+glows in the dark
+glows with an eerie [color.all] illumination
+has a strong, foul aftertaste
+when exposed to air, it congeals in {2d4} minutes
+when exposed to air, it emits thick {color} smoke 
+when exposed to air, it pops, sparks and smokes
+when exposed to air, it releases thick, greasy {color:dark} smoke
+when exposed to air, it releases thin {color} mist
+when the container is opened for the first time, it emits a long, piercing shriek
+when the container is opened for the first time, it releases a puff of {color:dark} vapor
+when the container is opened for the first time, you hear the sound of {noise}

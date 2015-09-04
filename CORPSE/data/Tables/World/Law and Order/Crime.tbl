@@ -1,9 +1,40 @@
-: Crime
-{20%{attempted|conspiracy to commit} }{:act}
+/ http://slacknhash.net/random_law_generator.php
 
-unseemly and lewd behaviour
+: Crime
+9x {20%{attempted|conspiracy to commit} }{:act}
+{:arbitrary}
+
+: New Crime
+{:act}
+{:arbitrary}
+
+: Arbitrary
+{:normally legal act} {{:when|:where|:how}}
+{:minor act} {{:when|:where|:how}}
+
+: Edict
+{:LAW} {:CONSEQUENCES} This edict is effective immediately, by order of {LAW:AUTHORITY}.
+Take heed, parishioners! {Law:Authority} wishes it be known that {:LAW}. {:CONSEQUENCES}
+Be it known that {LAW:AUTHORITY} has hereby decreed that the practice of {:new crime} is {:rule}. {:CONSEQUENCES}
+
+: Law
+All citizens are advised that {:new crime} is now {:rule}.
+Regulation {9999}: {:new crime} is {:rule}.
+NOTICE: {:new crime} has been declared {:rule}.
+
+: Consequences
+Failure to obey shall be punished by {punishment:light}.
+Transgression of this most sacred and godly rule is punishable by {punishment:fatal}.  
+Penalty for non-compliance: {punishment:severe} (subject to royal discretion).
+Adhere clearly to these words on pain of {punishment:moderate}. 
+
+: Rule
+forbidden
+illegal
+sacrilegious
+
 : Act
-acting as a {profession} without {a license|guild membership}
+act as a {profession} without {a license|guild membership}
 adultery
 apostasy
 armed robbery
@@ -14,6 +45,7 @@ blackmailing
 breaking and entering
 bribery
 burglary
+cannibalism
 coin clipping
 confidence scheme
 conspiracy to overthrow the government
@@ -24,6 +56,7 @@ debt
 delving into dark magic
 destruction of property
 disturbing the peace
+embezzlement
 espionage
 extortion
 failing to pay taxes
@@ -45,6 +78,7 @@ murder
 oath-breaking
 offending influential person
 organized crime
+perjury
 petty theft
 pick-pocketing
 pillaging
@@ -52,7 +86,6 @@ piracy
 plundering
 poaching
 poisoning
-possession of {smuggled}
 prostitution
 public drunkenness
 racketeering
@@ -60,7 +93,7 @@ rape
 running a criminal enterprise
 running an illegal gambling establishment
 running an illegal prostitution ring
-selling liquor without a licence
+sabotage
 shoplifting
 slave dealing
 smuggling of {smuggled}
@@ -70,14 +103,68 @@ theft
 thuggery
 treason
 trespassing
+unseemly and lewd behaviour
 vagrancy
 vandalism
-violation of custom: {:custom}
+violation of custom: {custom}
 witchcraft
 wounding with intent to do grievous bodily harm
+{:use} liquor without a licence
+{:use} {smuggled}
 {assaulting|offending|killing} a {rank}
 {smuggled}-trading
 
-: Custom
-{custom:who} must {always|never} {custom:custom} {custom:whom} {custom:when} 
-{custom:who2} {custom:verb} {custom:type} {custom:where} {custom:when}
+: Normally Legal Act
+bare-knuckle boxing
+clearing the throat
+dancing
+eating
+eating with the left hand
+leaving a campsite unattended
+loitering
+owning a {pet}
+playing a {musical instrument}
+public protest
+street theater
+wearing a beard
+wearing a hat
+wearing {color}
+whistling
+{breeding|feeding|training|eating|{:use}} {{livestock|fauna}}
+{:use} blades longer than three inches
+{:use} intoxicants
+{:use} political pamphlets
+{:use} {{tiny item}+}
+
+: Use 
+selling
+possessing
+transporting
+
+: Minor Act
+bathing in the public fountain
+impersonating a {profession}
+impersonating {LAW:AUTHORITY}
+fixing sporting events
+littering
+public urination
+singing anti-royalist songs
+spitting
+traffic violations
+uttering profanities 
+{:use} pornographic material
+
+: When
+on a {Monday|Tuesday|Wednesday|Thursday|Friday|Saturday}
+on a holiday
+during {spring|summer|autumn|winter} 
+
+: Where
+in a {structure}
+{direction} consecrated ground
+{direction} the {city feature:site}
+{indoors|outdoors}
+
+: How
+in a provocative manner
+without a {license|permit}

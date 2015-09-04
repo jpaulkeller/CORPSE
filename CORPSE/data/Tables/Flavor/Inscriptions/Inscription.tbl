@@ -1,5 +1,17 @@
 / http://random-generator.com/index.php?title=Inscriptions
 
+: Inscription
+{LATIN PHRASE.LATIN}
+{MOTTO:FICTIONAL}
+{MOTTO:REAL}
+{MOTTO}
+{NAME}
+{QUOTE}
+{RHYME}
+{Symbol:Simple}
+
+===
+
 / [Secret Society Title.TitleDescriptor] {:Definite Noun}
 / [Secret Society Title.TitleDescriptor] {Evocative Noun}
 {:Advice}

@@ -4,12 +4,13 @@
 {25%{metal:flavor} }{:metal} {helm|helmet} made of {metal:weapon.metal}{25% {:extra}}
 
 : cloth
+arming cap
 bandit’s wrap
 buccaneer’s hat
 ranger’s cap
 
 : composite
-greathelm
+great helm
 helm
 helmet
 skullcap
@@ -17,7 +18,7 @@ skullcap
 : metal
 armet
 barbute
-bascinet
+basinet
 battle
 burgonet
 cabasset
@@ -25,7 +26,7 @@ cap
 capette
 captain’s visor
 cavalier’s
-chainmail siege
+chainmail
 clamshell closed
 coif
 common kettle
@@ -40,6 +41,7 @@ full-faced
 full-plate siege
 gladiator’s
 jousting
+kettle
 knight’s
 maximillian
 morion

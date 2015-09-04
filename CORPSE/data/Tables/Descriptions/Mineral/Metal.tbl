@@ -30,26 +30,70 @@ vanadium
 zinc               445
 
 : Precious
+brass
+bronze
 copper             560
 gold              1205
 electrum
 palladium
+pewter
 platinum          1340
 silver             650
 
 : Special
+abyssal bloodiron
 adamantine         400    bypasses most hardness and DR
+adamantium
+arandur
+astral driftmetal
+aurorum
 azurium            150    organic metal
+blood iron
+blue ice
 celebsul           100    ethereal "spirit silver"
 cold iron                 effective against fey
+darksteel
+dlarun
+entropium
+fever iron
+feysteel
+frystalline
 galvorn                   meteoric metal
+glassteel
+heartwire
+hizagkuur
 impervium          500
 ithildin           150    enchanted mithril
+living metal
 meteoric iron
 mithril            200    elvish silver
 obdurite
 orichalcum         800    atlantean metal
+pandemonic silver
+red iron
+thinaun
+truesteel
+urdrukar
 valerian steel
+wraithstone
+
+: Soft
+bronze
+copper
+electrum
+gold
+lead
+pewter
+platinum
+silver
+tin
+
+: Hard
+brass
+high-carbon steel
+iron
+steel
+titanium
 
 : Armor
 bronze
@@ -63,6 +107,13 @@ steel
 silver
 titanium
 {:special}
+
+: Modern
+high carbon steel
+low carbon steel
+stainless steel
+titanium
+tungsten alloy tool steel
 
 : Ore
 azurite

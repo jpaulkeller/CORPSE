@@ -308,23 +308,50 @@ Ad = Additional = If this number is rolled for damage, score this much damage an
 
 / PRIMITIVE WEAPONS
 
-/ Many so-called exotic weapons are weapons more common to primitive cultures, such as Stone Age humans. To reflect that fact,
-/ the DM could allow primitive cultures (or even some of the more savage races, such as lizardfolk) to treat blowguns as simple 
-/ weapons and any or all the following exotic weapons as martial weapons: bolas, barbed bolas, boomerang, greater blowgun, and net.
-/ As a tradeoff, you could rule that such races treat bows and crossbows (of all sorts) as exotic weapons. If you want to play such
+/ Many so-called exotic weapons are weapons more common to primitive cultures, such as Stone Age humans. 
+/ To reflect that fact, the DM could allow primitive cultures (or even some of the more savage races, 
+/ such as lizardfolk) to treat blowguns as simple weapons and any or all the following exotic weapons as
+/ martial weapons: bolas, barbed bolas, boomerang, greater blowgun, and net.  As a tradeoff, you could 
+/ rule that such races treat bows and crossbows (of all sorts) as exotic weapons. If you want to play such
 / a character, work out a fair balance with your DM.
 
 / IMPROVISED WEAPONS
 
-/ As detailed in the Player�s Handbook, objects not crafted to be used as weapons may nonetheless find use in combat. This is most true in the stereotypical tavern brawl, but any time a character can�t or doesn�t want to use a weapon, he needs to know how effective the closest object is in a fight.
-/ Any creature using an improvised weapon�from a broken bottle to a barstool�in a fi ght is considered to be nonproficient with it and thus takes a �4 penalty on attack rolls made with it. An improvised weapon scores a threat (a possible critical hit) on a natural roll of 20 and deals double damage on a critical hit. An improvised thrown weapon has a range increment of 10 feet.
-/ What about fighting with ladders, wagon wheels, or coils of rope? In the hands of a determined (or desperate) individual, these oddly shaped objects offer a wide variety of options in combat. Of course, you must still deal with the �4 penalty on attack rolls made with such a weapon, but sometimes you have to make use of what�s available!
-/ Bull Rush: If you perform a bull rush while carrying a big, sturdy object (such as a bench or table), you add a +2 bonus on your Strength check to push back the defender.
-/ Defense: Objects with lots of surface area (such as tables) grant you a +2 shield bonus to Armor Class (or a +4 shield bonus to AC if you use the total defense action), but require two hands to use.
-/ Disarm: Any object with a lot of protrusions (such as a chair or a broken wagon wheel) or that can easily ensnare objects (such as a cloak or a ladder) grants the wielder a +2 bonus on opposed attack rolls made to disarm an enemy (including the roll to avoid being disarmed if such an attempt fails).
-/ Entangle: Any sheetlike flexible object (such as a carpet or tapestry) can entangle an opponent with a successful ranged touch attack. An entangled creature takes a �2 penalty on attack rolls and a �4 penalty to Dexterity, can move at only half speed, cannot run or charge, and may have difficulty casting spells (see the Concentration skill description). Escaping from such an object requires a standard action and a DC 10 Escape Artist check. These objects are treated as two-handed weapons.
-/ Reach: Long objects (such as ladders) have reach, allowing a Small or Medium character to strike at opponents up to 10 feet away (but not at adjacent foes). These objects are treated as two-handed weapons.
-/ Trip: An object with protrustions at the end (such as a hat rack or a barstool) or that can wrap around a leg (such as a chain) can be used to make trip attempts. If you are tripped during your own trip attempt, you can drop the improvised weapon to avoid being tripped.
+/ As detailed in the Player's Handbook, objects not crafted to be used as weapons may nonetheless find use
+/ in combat. This is most true in the stereotypical tavern brawl, but any time a character can't or doesn't
+/ want to use a weapon, he needs to know how effective the closest object is in a fight.
+/ Any creature using an improvised weapon'from a broken bottle to a barstool'in a fight is considered to be 
+/ non-proficient with it and thus takes a '4 penalty on attack rolls made with it. An improvised weapon scores
+/ a threat (a possible critical hit) on a natural roll of 20 and deals double damage on a critical hit. 
+/ An improvised thrown weapon has a range increment of 10 feet.
+
+/ What about fighting with ladders, wagon wheels, or coils of rope? In the hands of a determined (or desperate)
+/ individual, these oddly shaped objects offer a wide variety of options in combat. Of course, you must still 
+/ deal with the '4 penalty on attack rolls made with such a weapon, but sometimes you have to make use of what's
+/ available!
+
+/ Bull Rush: If you perform a bull rush while carrying a big, sturdy object (such as a bench or table), you add a
+/ +2 bonus on your Strength check to push back the defender.
+
+/ Defense: Objects with lots of surface area (such as tables) grant you a +2 shield bonus to Armor Class (or a +4
+/ shield bonus to AC if you use the total defense action), but require two hands to use.
+
+/ Disarm: Any object with a lot of protrusions (such as a chair or a broken wagon wheel) or that can easily 
+/ ensnare objects (such as a cloak or a ladder) grants the wielder a +2 bonus on opposed attack rolls made 
+/ to disarm an enemy (including the roll to avoid being disarmed if such an attempt fails).
+
+/ Entangle: Any sheetlike flexible object (such as a carpet or tapestry) can entangle an opponent with a successful
+/ ranged touch attack. An entangled creature takes a '2 penalty on attack rolls and a '4 penalty to Dexterity, can 
+/ move at only half speed, cannot run or charge, and may have difficulty casting spells (see the Concentration skill
+/ description). Escaping from such an object requires a standard action and a DC 10 Escape Artist check. These 
+/ objects are treated as two-handed weapons.
+
+/ Reach: Long objects (such as ladders) have reach, allowing a Small or Medium character to strike at opponents up
+/ to 10 feet away (but not at adjacent foes). These objects are treated as two-handed weapons.
+
+/ Trip: An object with protrusions at the end (such as a hat rack or a barstool) or that can wrap around a leg (such
+/ as a chain) can be used to make trip attempts. If you are tripped during your own trip attempt, you can drop the 
+/ improvised weapon to avoid being tripped.
 
 / Improvised Weapon Damage
 
@@ -345,5 +372,5 @@ less than 2lb[2]   1d3                 Mug, Torch
 101lb. - 200lb.    4d6                 Cart
 201lb. - 400lb.    5d6                 Wagon
 
-/ [1] A sharp object deals damage as an object of twice it's weight. So a broken bottle (1lb.), deals 1d4 points of damage, not 1d3. Conversely, a soft or malleable object, such as a melon, deals damage as an object of half its weight, and the damage is non-lethal.
-/ [2] If an item has no weight worth noting, it doesn't any damage when used as a weapon.
+/ [1] A sharp object deals damage as an object of twice its weight. So a broken bottle (1lb.), deals 1d4 points of damage, not 1d3. Conversely, a soft or malleable object, such as a melon, deals damage as an object of half its weight, and the damage is non-lethal.
+/ [2] If an item has no weight worth noting, it doesn't deal any damage when used as a weapon.

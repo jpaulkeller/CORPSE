@@ -1,0 +1,124 @@
+: Brand Detail
+{:Symbol} {20%{80%hot-iron:freeze} brand }{:position}
+
+: Brand
+Double {:Symbol}{10% {combined|connected|stacked}}
+{50%{Double|Half} }{:shape}
+{:Symbol} {:Symbol}{35% {combined|connected|stacked}}
+{:Symbol} {dash|slash} {:Symbol}
+
+: Symbol
+{:character}
+{:shape}
+
+: Character
+10x {25%{:modifier} }{number:digit}
+26x {25%{:modifier} }{letter}
+{25%{:modifier} }{:special}
+
+: Special
+cent
+check
+dollar
+percent
+pi
+
+: Shape
+acorn
+anvil
+apple
+arrow
+arrowhead
+axe
+bar
+bell
+bench
+bone
+box
+buckle
+cactus
+cane
+chain
+chair
+circle
+cloud
+cross
+crutch
+diamond
+egg
+eye
+fish
+flower
+ghost
+gravestone
+hanger
+hat
+heart
+horseshoe
+house
+ladder
+lightning
+key
+keyhole
+kite
+moon
+mountain
+pear
+pigpen
+pitchfork
+rafter
+rail
+ribbon
+river
+scissors
+shield
+shovel
+slope
+spade
+spool
+spur
+square
+star
+sun
+sword
+teepee
+tree
+triangle
+turtle
+wrench
+
+: Modifier
+broken
+circle
+crazy
+dragged
+flying
+hanging
+horned
+lazy
+over
+reverse
+rocking
+running
+spear
+swinging
+tilting
+toppling
+tumbling
+under
+walking
+wavy
+winged
+
+: Position
+earmark ({left|right})
+on the {left|right} flank
+on the {left|right} hip
+on the {left|right} jaw
+on the {left|right} loin
+on the {left|right} neck
+on the {left|right} nose
+on the {left|right} rib
+on the {left|right} shoulder
+on the {left|right} side
+on the {left|right} thigh

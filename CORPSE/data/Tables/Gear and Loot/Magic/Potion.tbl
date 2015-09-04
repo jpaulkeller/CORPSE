@@ -46,6 +46,7 @@ Potion of Healing
 Potion of Heroism
 Potion of Invisibility
 Potion of Invulnerability
+Potion of Jumping
 Potion of Levitation
 Potion of Longevity
 Potion of Plant Control
@@ -62,10 +63,15 @@ Potion of Water Breathing
 Potion of Alteration: {Alteration}
 Potion of Divination: {Divination}
 Potion of Empathy: {Empathic}
+Potion of {Abjuration}
+Potion of {Divination}
+Potion of {Empathic}
 Potion of {Enchanted Item:Potion}
 Potion of {Humanoid} control (TSR: {TSR humanoid})
 Potion of {Hypnotic}
 Potion of {Necromantic}
+Potion of {Spiritual}
+Potion of {Transference}
 Potion of {TSR Dragon} Dragon Control
 Potion of {TSR Giant} Giant Control
 Potion of {TSR Giant} Giant Strength

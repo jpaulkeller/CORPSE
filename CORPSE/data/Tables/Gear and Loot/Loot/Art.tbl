@@ -98,6 +98,7 @@ emblazoned
 engraved
 etched
 inscribed
+painted
 
 : Adornment 
 {metal:precious}
@@ -107,17 +108,23 @@ inscribed
 ancient
 archaic
 baroque
+crude
+detailed
 distinctive
 elegant
 exotic
+extraplanar
 gaudy
 impressionistic
+intricate
 ornate
 peculiar
 popular
 rare
 realistic
 simple
+simple but elegant
+strangely organic
 unusual
 
 : Subject

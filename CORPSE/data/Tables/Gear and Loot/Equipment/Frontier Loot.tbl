@@ -1,0 +1,302 @@
+/ http://www.random-generator.com/index.php?title=Old_West_Objects
+
+: Frontier Loot
+{:FIREARM}
+{:HAND WEAPON}
+{:TOOL}
+{:FURNISHING}
+
+: Firearm
+{:tool flavor} Colt
+{:tool flavor} Colt .44 1860 Army revolver
+{:tool flavor} Colt .44 Dragoon revolver
+{:tool flavor} Colt .44 Second Model Dragoon revolver
+{:tool flavor} Colt .44 Third Model Dragoon revolver
+{:tool flavor} Colt .38 Lightning revolver
+{:tool flavor} Colt .45 Model "P" 1873 Single-Action Army revolver
+{:tool flavor} Colt .45 Model "P" 1876 Single-Action Army revolver
+{:tool flavor} Colt .36 1861 Navy revolver
+{:tool flavor} Colt .22LR New Frontier revolver
+{:tool flavor} Colt .44 New Frontier revolver
+{:tool flavor} Colt .36 1859 Patterson cap-and-ball revolver
+{:tool flavor} Colt .45 Peacemaker revolver
+{:tool flavor} Colt 32/20 Single-Action Army 7.5" revolver
+{:tool flavor} Colt .357 Single-Action Army 7 1/2" revolver
+{:tool flavor} Colt .357 Single-Action Army 4 3/4" revolver
+{:tool flavor} Colt .357 Single-Action Army 5 1/2" revolver
+{:tool flavor} Colt .38 P1679 Single-Action Army revolver
+{:tool flavor} Colt .38 P1679 Single-Action Army revolver
+{:tool flavor} Colt .45 Single-Action Army revolver
+{:tool flavor} Colt .44 Walker revolver
+{:tool flavor} Colt Lightning pump-action rifle
+{:tool flavor} Colt Patterson revolving rifle
+{:tool flavor} Enfield 
+{:tool flavor} Enfield Pattern 1853
+{:tool flavor} Enfield 1860 Musketoon rifle
+{:tool flavor} Enfield Three-Band Percussion rifle
+{:tool flavor} Henry
+{:tool flavor} Henry .44 lever-action repeating rifle
+{:tool flavor} Ithaca
+{:tool flavor} Ithaca 1890 12-gauge slapfire shotgun
+{:tool flavor} Ithaca 1890 20-gauge slapfire shotgun
+{:tool flavor} jury-rigged 12-gauge shotgun
+{:tool flavor} jury-rigged rifle
+{:tool flavor} Kentucky flintlock
+{:tool flavor} LeMat
+{:tool flavor} LeMat .40 Confederate over-under revolver
+{:tool flavor} LeMat .42 Confederate over-under revolver
+{:tool flavor} Marlin
+{:tool flavor} Marlin .44-40 lever-action rifle
+{:tool flavor} Remington
+{:tool flavor} Remington .45 1874 Army revolver
+{:tool flavor} Remington Derringer over-under pistol
+{:tool flavor} Remington Rolling-Block 1873 Creedmore sharpshooter rifle
+{:tool flavor} Remington Rolling-Block No. 1 rifle
+{:tool flavor} Remington Rolling-Block No. 1 1/2 rifle
+{:tool flavor} Remington Rolling-Block No. 2 rifle
+{:tool flavor} Remington Rolling-Block No. 3 rifle
+{:tool flavor} Remington Rolling-Block No. 5 rifle
+{:tool flavor} Remington 4-gauge shotgun
+{:tool flavor} Remington 8-gauge shotgun
+{:tool flavor} Remington 10-gauge shotgun
+{:tool flavor} Remington double-barrel 10-gauge shotgun
+{:tool flavor} Remington double-barrel 12-gauge shotgun
+{:tool flavor} Savage Arms
+{:tool flavor} Savage Arms .300 Model 99 lever-action rifle
+{:tool flavor} Savage Arms .303 Model 99 lever-action rifle
+{:tool flavor} Sharps
+{:tool flavor} Sharps pepperbox pistol
+{:tool flavor} Sharps .45-70 Borchart rifle
+{:tool flavor} Sharps 1874 rifle
+{:tool flavor} Sharps repeater rifle
+{:tool flavor} Smith & Wesson 
+{:tool flavor} Smith & Wesson .44 Russian revolver
+{:tool flavor} Smith & Wesson .45 Schofield revolver
+{:tool flavor} Spencer
+{:tool flavor} Spencer .56-50 repeating carbine
+{:tool flavor} Springfield
+{:tool flavor} Springfield 1842 smoothbore
+{:tool flavor} Springfield 1861 Civil War rifle
+{:tool flavor} Springfield .45 1873 rifle
+{:tool flavor} Springfield .45 1873 carbine
+{:tool flavor} Springfield .45-70 trapdoor rifle
+{:tool flavor} Springfield musket
+{:tool flavor} Stevens
+{:tool flavor} Stevens .25 Model 44 target rifle
+{:tool flavor} Stevens .25 Model 44 1/2 target rifle 
+{:tool flavor} Tarpley
+{:tool flavor} Tarpley carbine
+{:tool flavor} Winchester
+{:tool flavor} Winchester .44-40 1866 "Yellow Boy" lever-action rifle
+{:tool flavor} Winchester .44-40 1873 lever-action rifle
+{:tool flavor} Winchester .45-70 1886 lever-action rifle
+{:tool flavor} Winchester 1892 lever-action rifle
+{:tool flavor} Winchester 94 rifle
+{:tool flavor} Winchester 1897 pump-action shotgun
+{:tool flavor} Zouave
+{:tool flavor} Zouave 1863 rifle
+
+: Hand Weapon
+a Ketchum grenade
+a set of flint arrowheads
+{:furnishing flavor} native bow
+{:furnishing flavor} native club
+{:tool flavor} Arkansas toothpick
+{:tool flavor} Barlow folder
+{:tool flavor} Bowie knife
+{:tool flavor} bayonet
+{:tool flavor} boning knife
+{:tool flavor} cavalry saber
+{:tool flavor} double-bit axe
+{:tool flavor} granddad folder
+{:tool flavor} hand axe
+{:tool flavor} hatchet
+{:tool flavor} hunting knife
+{:tool flavor} kaiser blade
+{:tool flavor} knife
+{:tool flavor} maul
+{:tool flavor} pitchfork
+{:tool flavor} railroad spike
+{:tool flavor} single-bit axe
+{:tool flavor} skinning knife
+{:tool flavor} slingblade
+{:tool flavor} spear
+{:tool flavor} thresher
+{:tool flavor} tomahawk
+
+: Tool
+{:furnishing flavor} bellows
+{:tool flavor} adze
+{:tool flavor} anvil
+{:tool flavor} awl
+{:tool flavor} barbwire
+{:tool flavor} bending jig
+{:tool flavor} bit
+{:tool flavor} bridle
+{:tool flavor} bucket
+{:tool flavor} chisel
+{:tool flavor} clinch cutter
+{:tool flavor} copper nails
+{:tool flavor} crosscut saw
+{:tool flavor} double jack
+{:tool flavor} driving hammer
+{:tool flavor} farrier nipper
+{:tool flavor} farrier's pick
+{:tool flavor} finishing nails
+{:tool flavor} fuller
+{:tool flavor} gold pan
+{:tool flavor} half-penny nails
+{:tool flavor} hammer
+{:tool flavor} harrow
+{:tool flavor} hoe
+{:tool flavor} hoof nipper
+{:tool flavor} hoof pick
+{:tool flavor} hoof trimmer
+{:tool flavor} horseshoe
+{:tool flavor} horseshoe nails
+{:tool flavor} jaw clincher
+{:tool flavor} kaiser blade
+{:tool flavor} mining pick
+{:tool flavor} nails
+{:tool flavor} penny nails
+{:tool flavor} pitchfork
+{:tool flavor} plow
+{:tool flavor} pritchel
+{:tool flavor} prospector's pick
+{:tool flavor} punch
+{:tool flavor} railroad spike
+{:tool flavor} railroad tie
+{:tool flavor} rake
+{:tool flavor} rasp
+{:tool flavor} rasp handle
+{:tool flavor} ripsaw
+{:tool flavor} rivet set
+{:tool flavor} rivets
+{:tool flavor} rounding hammer
+{:tool flavor} saw
+{:tool flavor} scroll iron
+{:tool flavor} set of tongs
+{:tool flavor} shovel
+{:tool flavor} single jack
+{:tool flavor} sledge hammer
+{:tool flavor} slingblade
+{:tool flavor} sluice box
+{:tool flavor} smithy hammer
+{:tool flavor} sod cutter
+{:tool flavor} spade
+{:tool flavor} square horseshoe nails
+{:tool flavor} swage
+{:tool flavor} thresher
+{:tool flavor} trowel
+{:tool flavor} wire pliers
+{:tool flavor} wood chisel
+
+: Tool Flavor
+a brand-new 
+a broken 
+a custom 
+a custom-engraved 
+a new 
+a rusty 
+a scratched 
+a used 
+a well-oiled 
+a well-used 
+a {condition:weapon}
+an engraved 
+an oiled 
+an old 
+parts of a 
+pieces of a
+
+: Furnishing
+a {leather:texture} leather bandoleer
+a {leather:texture} leather cartridge belt
+a {leather:texture} leather pistol holster
+a {leather:texture} leather rifle scabbard
+a {leather:texture} rawhide stropping strap
+a bar of shaving soap
+a bolt of {color:standard} {fabric:uncommon}
+a brick of lye soap
+a pack of cigars
+a pack of lucifers
+a pack of matches
+a sack of coal
+a sack of flour
+a satchel of dynamite
+a tin of mustache wax
+a tin of saddle soap
+a tin of shoe polish
+a tobacco pouch
+a {fabric:common} bag
+a {fabric:common} sack
+an empty cartridge box
+an old, well-read Bible
+saber scabbard, reinforced with {copper|silver|gold|gilded}
+{:furnishing flavor} billiard cue
+{:furnishing flavor} book
+{:furnishing flavor} boot brush
+{:furnishing flavor} canteen
+{:furnishing flavor} chamberpot
+{:furnishing flavor} deck of cards
+{:furnishing flavor} feed bag
+{:furnishing flavor} harness
+{:furnishing flavor} lariat
+{:furnishing flavor} lasso
+{:furnishing flavor} log book
+{:furnishing flavor} meerschaum tobacco pipe
+{:furnishing flavor} monocle
+{:furnishing flavor} oater
+{:furnishing flavor} packsaddle
+{:furnishing flavor} pair of boots
+{:furnishing flavor} pair of riding boots
+{:furnishing flavor} pair of spectacles
+{:furnishing flavor} rawhide
+{:furnishing flavor} riding bandanna
+{:furnishing flavor} riding glove
+{:furnishing flavor} saddle
+{:furnishing flavor} saddle blanket
+{:furnishing flavor} saddle brush
+{:furnishing flavor} saddlebag
+{:furnishing flavor} set of billiard balls
+{:furnishing flavor} set of bones
+{:furnishing flavor} set of dice
+{:furnishing flavor} set of poker chips
+{:furnishing flavor} shaving brush
+{:furnishing flavor} shotglass
+{:furnishing flavor} tack and harness
+{:furnishing flavor} tack and saddle
+{:furnishing flavor} teapot
+{:furnishing flavor} toothpick
+{:furnishing flavor} water bag
+{:furnishing flavor} wire glove
+{:furnishing flavor} {wood:weapon} peace pipe
+{:furnishing flavor} {wood:weapon} tobacco pipe
+{:tool flavor} jaw harp
+{:tool flavor} juice harp
+{:tool flavor} mouth harp
+{:tool flavor} razor
+{:tool flavor} set of spurs
+{:tool flavor} skillet
+{:tool flavor} spitoon
+{:weathering} {metal:soft} harmonica
+{:weathering} {metal:soft} pipe tamper
+{:weathering} {metal:soft} shaving bowl
+{:weathering} {metal:soft} snuff tin
+{silver|gold|gilded} pocket watch
+{silver|pewter|gold|gilded} watch fob
+
+: Furnishing Flavor
+a dusty 
+a {condition}
+an old 
+
+: Weathering
+a
+a beaten
+a monogrammed
+a polished
+a scratched
+a shiny
+a tarnished
+an old

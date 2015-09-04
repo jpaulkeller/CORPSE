@@ -1,7 +1,9 @@
+/ see also: Merchandise.tbl
+
 .Type [([^:]+?): (?:.+)]
 .Item [(?:[^:]+?): (.+)]
 
-Accessory: {~{accessory}}
+Accessory: {~{outfit:accessories}}
 Ammo: {~{ammo}}
 Armor: {~{armor}}
 Art: {~{art}}

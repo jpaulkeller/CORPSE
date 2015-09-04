@@ -1,23 +1,25 @@
 / Sources: TSR DMG2, page 135, table 90
+/ Sources: TSR DMG2, page 145
 
 : Storing 27 1 // used for Rings of Spell Storing
 
-6x 1 {TSR Scroll Type} Spell ({4})
-4x 1 {TSR Scroll Type} Spell ({6})
-2x 1 {TSR Scroll Type} Spell ({2-9}/{2-7})
-2x 2 {TSR Scroll Type} Spells ({4} {4})
-2x 2 {TSR Scroll Type} Spells ({2-9}/{2-7} {2-9}/{2-7})
-2x 3 {TSR Scroll Type} Spells ({4} {4} {4})
-2x 3 {TSR Scroll Type} Spells ({2-9}/{2-7} {2-9}/{2-7} {2-9}/{2-7})
-2x 4 {TSR Scroll Type} Spells ({6} {6} {6} {6})
-2x 4 {TSR Scroll Type} Spells ({8}/{6} {8}/{6} {8}/{6} {8}/{6})
-2x 5 {TSR Scroll Type} Spells ({6} {6} {6} {6} {6})
-2x 5 {TSR Scroll Type} Spells ({8}/{6} {8}/{6} {8}/{6} {8}/{6} {8}/{6}) 
-2x 6 {TSR Scroll Type} Spells ({6} {6} {6} {6} {6} {6})
-2x 6 {TSR Scroll Type} Spells ({3-8}/{3-6} {3-8}/{3-6} {3-8}/{3-6} {3-8}/{3-6} {3-8}/{3-6} {3-8}/{3-6})
-2x 7 {TSR Scroll Type} Spells ({8}/{6} {8}/{6} {8}/{6} {8}/{6} {8}/{6} {8}/{6} {8}/{6})
-2x 7 {TSR Scroll Type} Spells ({2-9}/{2-7} {2-9}/{2-7} {2-9}/{2-7} {2-9}/{2-7} {2-9}/{2-7} {2-9}/{2-7} {2-9}/{2-7})
-2x 7 {TSR Scroll Type} Spells ({4-9}/{4-7} {4-9}/{4-7} {4-9}/{4-7} {4-9}/{4-7} {4-9}/{4-7} {4-9}/{4-7} {4-9}/{4-7})
+: TSR Scroll
+6x 1 {:Type} Spell ({4})
+4x 1 {:Type} Spell ({6})
+2x 1 {:Type} Spell ({2-9}/{2-7})
+2x 2 {:Type} Spells ({4} {4})
+2x 2 {:Type} Spells ({2-9}/{2-7} {2-9}/{2-7})
+2x 3 {:Type} Spells ({4} {4} {4})
+2x 3 {:Type} Spells ({2-9}/{2-7} {2-9}/{2-7} {2-9}/{2-7})
+2x 4 {:Type} Spells ({6} {6} {6} {6})
+2x 4 {:Type} Spells ({8}/{6} {8}/{6} {8}/{6} {8}/{6})
+2x 5 {:Type} Spells ({6} {6} {6} {6} {6})
+2x 5 {:Type} Spells ({8}/{6} {8}/{6} {8}/{6} {8}/{6} {8}/{6}) 
+2x 6 {:Type} Spells ({6} {6} {6} {6} {6} {6})
+2x 6 {:Type} Spells ({3-8}/{3-6} {3-8}/{3-6} {3-8}/{3-6} {3-8}/{3-6} {3-8}/{3-6} {3-8}/{3-6})
+2x 7 {:Type} Spells ({8}/{6} {8}/{6} {8}/{6} {8}/{6} {8}/{6} {8}/{6} {8}/{6})
+2x 7 {:Type} Spells ({2-9}/{2-7} {2-9}/{2-7} {2-9}/{2-7} {2-9}/{2-7} {2-9}/{2-7} {2-9}/{2-7} {2-9}/{2-7})
+2x 7 {:Type} Spells ({4-9}/{4-7} {4-9}/{4-7} {4-9}/{4-7} {4-9}/{4-7} {4-9}/{4-7} {4-9}/{4-7} {4-9}/{4-7})
 2x DM's Choice
   Map
   Protection-Acid
@@ -37,3 +39,7 @@
   Protection-Water
   Cursed
   DM's Choice
+
+: Type
+7x wizard
+3x priest

@@ -1,53 +1,20 @@
 : Soldier Name
 {Military Rank} {Name}
+{Feudal Rank} {Name}
 
 ===
 
-{:Rank} {Name}
-
-: Name
-5x {:StartName} {:Structure}
-5x {:possessives} {site}
-3x The {:Structure} at {:Fantasy Town Names.main}
-3x The {:Structure} at {:Fantasy Town Names.Englishy}
-3x {:Poetic Destinations.main}
-{:Fantasy Town Names.main}
-{:Fantasy Town Names.Englishy}
-{:inspiration}
-
-: StartName
-10x {:inspiration}
-{:Soldier}’s
-{:Ranks and Titles.RankEnglishSpecial}
-{:color}
-
-: MaleName
-{:ScottishMale.main}
-{:SGNP celtic.male}
-{Saint Name}
-{:DitV Male Name.FirstName}
-{Saint Name} {:Fantasy Names.Surname}
-{:DitV Male Name.FirstName} {:Fantasy Names.Surname}
-
-: Rank
-4x {:Ranks and Titles.RankEnglishRoyaltyMale}
-2x {:Ranks and Titles.RankEnglishSpecialReligiousCatholicMale}
-2x {:Ranks and Titles.RankEnglishSpecialReligiousProtestantMale}
-Lord
-{:Ranks and Titles.RankForeign}
-{:Ranks and Titles.RankEnglishSpecialMale}
-Saint
-Sir
-
 : inspiration
-10x {:moreinspirations}
-2x {:Fantasy Military Unit.MascotModifier}
-2x {:Secret Society Title.Noun}
-2x {:Secret Society Title.OrgDescriptor}
-3x {:Fantasy Military Unit.MascotAnimal}
-3x {:Inscriptions.AbstractNounNegative}
-4x {:Inscriptions.DefiniteNoun}
-6x {:Fantasy Town Names.Englishy}
+{mythical creature}
+{mythical creature} {body part:crude}
+{color:simple}
+{:Fantasy Military Unit.MascotModifier}
+{:Secret Society Title.Noun}
+{:Secret Society Title.OrgDescriptor}
+{:Fantasy Military Unit.MascotAnimal}
+{:Inscriptions.AbstractNounNegative}
+{:Inscriptions.DefiniteNoun}
+{:Fantasy Town Names.Englishy}
 {:Fantasy Town Names.Group1}{:Fantasy Town Names.Group2}
 {:Fantasy Town Names.Misc}{:Fantasy Town Names.Suffix}
 {:Fantasy Town Names.Misc}{:Fantasy Town Names.Suffix}{:Fantasy Town Names.Suffix}
@@ -57,22 +24,9 @@ Sir
 : possessives
 {:Fantasy Names.MaleFirstName}’s
 {:Fantasy Town Names.Jobs}’s
-2x {:Inn and Tavern Names.Person}’s
-{:moreposessors}’s
-
-: moreposessors
-{class}
-{humanoid}
-{profession}
-{pseudo class}
-{:creature}
-
-: moreinspirations
-2x {:creature}
-{:creature} {:bodypart}
-{color:simple}
-
-: bodypart
-5x Head
-2x Bones
-Skull
+{:Inn and Tavern Names.Person}’s
+{class}’s
+{humanoid}’s
+{profession}’s
+{pseudo class}’s
+{mythical creature}’s

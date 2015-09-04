@@ -1,0 +1,30 @@
+/ http://www.theunlikelycompany.com/rlphay/dnd/files/combat_fumble_chart.htm
+
+.Result, Effect
+
+6x Slippage; You are caught standing on a slippery surface.  Reflex save at DC (15) ~ failure results in a –2 penalty on the next attack roll.
+6x Clumsy; You have an awkward twist in your primary wrist.  Fortitude save at DC (15) ~ failure results in dropped item. Item scatters in a random direction D4 x 5 feet.  If no item in hand and attacking with natural weapons, –2 penalty on the next attack roll.
+6x Distracted; Your attention is unfocused by a glint of light, a sudden sound, or a random thought.  Will save at DC (15) ~ failure results in a –2 penalty on the next attack roll.
+6x Sweaty Palms; Fatigue, sweat, and blood cause you’re held items to slip.  Fortitude save at DC (15) (for each held item) ~ failure results in the item(s) being dropped and scattered. The scatter is in a random direction D4 x 5 feet away from character.  If no items are in hand or using ranged or natural weapon, –2 penalty on the next attack roll.
+6x Very Clumsy; You stagger over your own legs but clumsily catch yourself before falling.  Reflex save at DC (15) ~ failure results falling prone and roll will save.  Will save at DC (15) (for each held item) ~ failure results in the item(s) being dropped and scattered. The scatter is in a random direction D6 x 5 feet away from character.
+6x Battle Daze; The sound and exhilaration of battle comes to a euphoric crescendo and your mind is caught up in the chaotic bliss.  Will save at DC (15) ~ failure results in a –2 penalty on the next attack roll.
+6x Inept; A wrong move by you and a lucky one by your opponent leave you open to being disarmed easily.  Reflex save at DC (15) ~ failure results in automatic disarming on primary weapon.  Weapon scatters in a random direction D4 x 5 feet.  If not in hand-to-hand, nothing happens.
+5x Very Inept; A wrong step on your part leaves you face to face with your opponent’s weapon.  Reflex save at DC (15) ~ failure results in an immediate Attack of Opportunity from opponent with a +2 bonus to attack and target loses any Dexterity bonus to AC.  If not in hand-to-hand, nothing happens
+5x Dazed and Clumsy; Your ankle gives out on you as you take a step back to refocus, causing you to fall.  Fall prone (on back).  Reflex save at DC (20) ~ failure results in hitting head on floor and being stunned for D4 rounds.  Will save at DC (20) (for each held item) ~ failure results in the item(s) being dropped and scattered.  The scatter is in a random direction D6 x 5 feet away from character.
+5x Face First; You slip and fall forward, hitting your face on the ground.  D3 damage.  Fortitude save at DC (20) ~ failure results in being knocked unconscious for D4 rounds.
+5x Ankle Twist; You turn suddenly, twisting your ankle.  1/2 movement for D4+1 rounds.
+5x Dislocation; A forceful pop in your shoulder is heard as your arm goes limp.  Primary arm incapacitated for D4+6 rounds.  Fortitude save at DC (20) ~ failure results in the item being held by that arm to be dropped and scattered.  The scatter is in a random direction D3 x 5 feet away from character.
+5x Knee Pop; Your knee hyper-extends awkwardly with a loud pop.  1/4 movement for D4+6 rounds.
+4x Poor Judgement; You make a fatal error in your attack that leaves yourself wide open to your opponent.  Opponent receives an immediate Attack of Opportunity against the attacker at a +4 bonus; the target gets no Dexterity bonus to AC.  Opponent receives a +4 bonus on their next attack roll.
+4x Wrong Strap; In an embarrassing move you cut loose part of your armor.  –4 penalty to AC until armor is fixed (3 full rounds to fix).  If no armor is worn then ignore result.
+4x Irritating; Dirt and blood blinds one eye.  –2 penalty to all actions (full round of cleaning to remove).
+4x Very Irritating; Dirt and blood blinds both eyes.  –4 penalty to all actions (full round of cleaning to remove).
+4x Staggering in Pain; Your opponent parries your awkward attack that causes you to hit yourself hard in the groin.  1/2 movement and a –4 penalty to all actions for D6+4 rounds.
+Fool; You hit yourself for half damage.  Roll damage and half the result.
+Moron; You hit yourself for half damage and leave yourself open to attack.  Roll damage and half the result.  Opponent gets an immediate Attack of Opportunity and target loses any Dexterity bonus to AC.  Fortitude save at DC (20) ~ failure results in being stunned for D4 rounds.
+Useless Fool; You hit yourself for full damage.  Roll full damage.
+Useless Moron; You hit yourself for full damage and leave yourself open to attack.  Roll full damage.  Opponent gets an immediate Attack of Opportunity with a +2 bonus and target loses any Dexterity bonus to AC.  Fortitude save at DC (20) ~ failure results in being stunned for D6 rounds.
+Unaware; You hit an adjacent companion for half damage.  Determine randomly a companion within the threat zone who is to be hit.  Roll damage and half the result.  -4 penalty on next initiative roll.  If no one is adjacent, ignore result.
+Liability; You hit an adjacent companion for half damage and leave yourself open to attack.  Determine randomly a companion within the threat zone who is to be hit.  Roll damage and half the result.  Opponent gets an immediate Attack of Opportunity on the attacker and the target loses any Dexterity bonus to AC.  -4 penalty on next attack roll.  If no one is adjacent, ignore result.
+Very Unaware; You hit an adjacent companion for full damage.  Determine randomly a companion within the threat zone who is to be hit.  Roll full damage.  -4 penalty on next attack roll.  If no one is adjacent, ignore result.
+Big Liability; You hit an adjacent companion for full damage and leave yourself open to attack.  Determine randomly a companion within the threat zone who is to be hit.  Roll full damage.  Opponent gets an immediate Attack of Opportunity on the attacker with a +2 bonus and target loses any Dexterity bonus to AC.  -4 penalty on next initiative roll.

@@ -1,0 +1,37 @@
+: Fish Type
+10x {:Adj} {:Prefix{!MaybeSameFirst}}{:suffix}
+{:Adj} {:Species}
+
+: Adj
+{Color{!OneWord}} 
+{Build}
+{Pattern}
+
+: Prefix
+cat
+dog
+frog
+reed
+sand
+silt
+snake
+surf
+wave
+{made of:precious}
+
+: Suffix
+dancer
+fin
+fish
+skimmer
+
+: Species
+bass
+carp
+herring
+mackerel
+perch
+salmon
+sturgeon
+trout
+tuna

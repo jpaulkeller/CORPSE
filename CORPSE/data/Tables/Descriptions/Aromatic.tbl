@@ -17,7 +17,7 @@ almond
 amber
 ambergris
 ambrette
-ammoniacal
+ammonia
 angelica
 animal
 anise
@@ -45,11 +45,14 @@ beeswax
 bell pepper
 bergamot
 berry
+bile
+birch
 bitter
 bitter almond
 blackberry
 bloody
 blueberry
+boiled cabbage
 bois de rose
 boronia
 bouillon
@@ -58,12 +61,17 @@ brandy
 bread baked
 bread crust
 bready
+brimstone
+brine
 broccoli
 brothy
 brown
 bubble gum
 buchu
+burning wood
 burnt
+burnt hair
+burnt metal
 butter
 buttermilk
 butterscotch
@@ -97,6 +105,7 @@ chemical
 cherry
 chicken
 chive
+chlorine
 chocolate
 chrysanthemum
 cinnamon
@@ -116,6 +125,7 @@ cognac
 cologne
 cooked
 cooked apple
+cooking meat
 cooling
 copaiba
 coriander
@@ -136,6 +146,9 @@ cypress
 dairy
 date
 davana
+dead and rotting fish
+death and decay
+decaying meat
 deertongue
 dewy
 dill
@@ -146,6 +159,7 @@ dry
 durian
 dusty
 earthy
+effluent
 egg nog
 egg yolk
 eggy
@@ -166,13 +180,17 @@ fir needle
 fishy
 fleshy
 floral
+flowers
 foliage
 forest
+formaldehyde
 frankincense
 freesia
 fresh
+fresh cut grass
 fresh outdoors
 fried
+fruit
 fruity
 fudge
 fungal
@@ -190,6 +208,7 @@ gooseberry
 gourmand
 graham cracker
 grain
+grain alcohol
 grape
 grapefruit
 grassy
@@ -211,6 +230,7 @@ hay
 hazelnut
 heliotrope
 herbal
+hickory
 honey
 honeydew
 honeysuckle
@@ -220,13 +240,15 @@ huckleberry
 humus
 hyacinth
 hyss
+hyssop
 immortelle
 incense
 jammy
-jasmin
+jasmine
 jonquil
 juicy
 juniper
+kerosene
 ketonic
 kiwi
 labdanum
@@ -248,6 +270,7 @@ lime
 logenberry
 lovage
 lychee
+lye
 macadamia
 mace
 magnolia
@@ -255,6 +278,7 @@ mahogany
 malty
 mandarin
 mango
+manure
 maple
 marigold
 marine
@@ -267,6 +291,7 @@ medicinal
 melon
 mentholic
 metallic
+mildew
 milky
 mimosa
 minty
@@ -274,6 +299,7 @@ molasses
 moldy
 mossy
 muguet
+mugwort
 mulberry
 mushroom
 musk
@@ -297,13 +323,15 @@ opoponax
 orange
 orangeflower
 orchid
+oregano
 origanum
 orris
 osmanthus
+overly strong perfume
 overripe fruit
 ozone
 painty
-palmarosa
+palma rosa
 papaya
 paper
 parsley
@@ -354,6 +382,7 @@ resinous
 rhubarb
 ripe
 ripe banana
+road tar
 roasted
 roasted almond
 roasted barley
@@ -361,7 +390,11 @@ root beer
 rooty
 rose
 rosemary
+rosewood
+rotten meat
+rotten vegetation
 rubbery
+rue
 rummy
 rye bread
 saffron
@@ -372,7 +405,7 @@ sandalwood
 sandy
 sappy
 sarsaparilla
-sassafrass
+sassafras
 sausage 
 savory
 sawdust
@@ -381,6 +414,7 @@ seashore
 seaweed
 seedy
 sesame
+sewage
 sharp
 shellfish
 shrimp
@@ -392,15 +426,20 @@ soft
 solvent
 soup
 sour
+sour dill pickles
+sour milk
 spearmint
 spicy
 spruce
+stagnant water
 storax
 strawberry
 stringent
 styrene
 sugar
+sulfur
 sulfurous
+sweat
 sweaty
 sweet
 sweet pea
@@ -412,6 +451,7 @@ tangerine
 tarragon
 tart
 tea
+teen spirit
 tequila
 terpenic
 thujonic
@@ -434,6 +474,7 @@ vanilla
 vegetable
 verbena
 vetiver
+vinegar
 violet
 violet leaf
 walnut
@@ -443,9 +484,11 @@ watermelon
 watery
 waxy
 weedy
+wet animal fur
 whiskey
 winey
 wintergreen
 woody
 wormwood
+yarrow
 yeasty

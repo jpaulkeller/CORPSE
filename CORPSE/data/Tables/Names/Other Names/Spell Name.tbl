@@ -1,34 +1,65 @@
 : Spell Name
-{:Gerund} {:Noun}
-{:Adj} {:Noun}
+The {:Adj} {:Noun} {:Spell}
+The {:Gerund} {:Noun} {:Spell}
+The {:Spell} of the {50%{Evocative Adj} }{:Who}
+The {:Who}'s {50%{Evocative Adj} }{:Spell}
 
 : Gerund
-{Verb:Offense}
 {Noise}
+{Participle}
 
 : Adj
 {Adjective}
 {Evocative Adj}
 {Humanoid}'s
+{:Common Adj}
+
+: Common Adj
+Ancient
+Ascetic
+Forbidden
+Greater
+Lesser
+Sacred
+Secret
+Sublime
 
 : Noun
-{:Concept}
 {Element:Any}
 {Evocative Concept{!OneWord}}
 {Weapon}
 
-: Concept
+: Who
+{Pseudo Class:Mage}
+{Pseudo Class:Priest}
+{Pseudo Class:Sage}
+
+: Spell
 Abjuration
 Alteration
 Animation
 Assimilation
+Binding
+Blessing
+Call
+Ceremony
 Circle
 Conjuration
+Curse
 Divination
 Enchantment
 Evocation
+Exorcism
+Formulation
+Hex
 Illusion
+Incantation
+Invocation
+Jinx
+Prophecy
 Regeneration
 Restoration
+Rite
+Ritual
 Shackle
 Shield

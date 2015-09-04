@@ -7,8 +7,8 @@
 
 : Fungus
 {33%{:pre} }{color:standard} {:shape}
-{33%{:pre} }{color:standard}{33% {:pattern}} {:type}
-{:pattern} {color:common} {:type}
+{33%{:pre} }{color:standard}{33% {pattern}} {:type}
+{pattern} {color:common} {:type}
 {color:standard} {wood} {:type}
 {fauna}'s {:shape}
 {:real}
@@ -25,12 +25,6 @@ glowing
 hairy
 slimy
 wrinkled
-
-: pattern
-collared
-ringed
-spotted
-striped
 
 : shape
 ball

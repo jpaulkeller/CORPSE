@@ -3,38 +3,41 @@ powdered {metal}
 {20%{concentrated|distilled} }{liquid}
 {:misc}
 {arcane substance}
-{berry}{20% juice}{10% {:gathered}}
-{crushed|ground} {gem}
-{25%live }{insect}{10% {:gathered}}
+{berry}{20% juice}{10% {:acquired}}
+{25%live }{insect}{10% {:acquired}}
 {drink}
-{fauna} {organ}{10% {:gathered}}{10% {:prepared}}
-{flower} {blossom|leaf|nectar|petal|pollen|root|stalk|thorn}{10% {:gathered}}{10% {:prepared}}
-{fruit}{20% seed}{10% {:gathered}}{10% {:prepared}}
-{fungus}{20% {spores|extract}}{10% {:gathered}}{10% {:prepared}}
-{herb flavor}{25% {plant part}}{10% {:gathered}}{10% {:prepared}}
-{herb}{25% {plant part}}{10% {:gathered}}{10% {:prepared}}
+{flower} {blossom|leaf|nectar|petal|pollen|root|stalk|thorn}{10% {:acquired}}{10% {:prepared}}
+{fruit}{20% seed}{10% {:acquired}}{10% {:prepared}}
+{fungus}{20% {spores|extract}}{10% {:acquired}}{10% {:prepared}}
+{gem} the size of a {size:relative:tiny}, {crushed|ground} 
+{herb flavor}{25% {plant part}}{10% {:acquired}}{10% {:prepared}}
+{herb}{25% {plant part}}{10% {:acquired}}{10% {:prepared}}
 {mineral}
-{monster} {organ}{10% {:gathered}}
+{monster} {organ}{10% {:acquired}}
 {organic}
 {organ} from a {profession}
-{plant}{10% {:gathered}}{10% {:prepared}}
+{organ} from a {1%white }{fauna} {10% {:acquired}}{10% {:prepared}}
+{plant}{10% {:acquired}}{10% {:prepared}}
 {poison}
 {provisions}
 {undead} {dust|essence}
-{wood} tree {bark|leaf|root|sap|seed}{10% {:gathered}}
-{{fauna|humanoid|monster|profession}} {blood|bone}{10% {:gathered}}
+{wood} tree {bark|leaf|root|sap|seed}{10% {:acquired}}
+{{fauna|humanoid|monster|profession}} {blood|bone}{10% {:acquired}}
 
-: gathered
-gathered {10%, {:how}}
+: acquired
+gathered after a {disaster}
+gathered at {night|midnight|noon|dawn|dusk}
+gathered during the {calendar}
+gathered in the shadow of a {site:artificial}
+gathered near a {site}
+gathered under a {new|full} moon
+gathered with a {metal:enchantable} blade
+{gathered by|given by|taken from} {:who}
 
-: how
-after a {disaster}
-at {night|midnight|noon|dawn|dusk}
-during the {calendar}
-in the shadow of a {site:artificial}
-with a {metal:enchantable} blade
-near a {site}
-under a {new|full} moon
+: who
+a {nine-fingered|one-eyed|blind|deaf|dead} {man|woman|child|virgin|{race}}
+a {widow|widower}
+{a {number:ordinal}|an only} {son|daughter|child}
 
 : prepared
 burnt

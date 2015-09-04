@@ -1,3 +1,5 @@
+/ see also: Contents.tbl
+
 .Type               Merchandise
 
 : General
@@ -44,7 +46,7 @@ luxury              {luxury}
 musical instrument  {musical instrument}
 
 : Clothing
-accessory            {~{accessory}}
+accessory            {~{outfit:accessories}}
 clothing             {~{clothing}}
 jewelry              {jewelry}
 footwear             {~{footwear}}
@@ -57,9 +59,13 @@ food                 {{fruit}+}
 food                 {{nut}+}
 food                 {{vegetable}+}
 food                 {~{provisions}}
+grain                {bread:grain}
+herb                 {herb}
 meal                 {menu}
 medicine             {apothecary}
+oil                  {oil}
 spice                {spice}
+sweetener            {menu:sweet}
 
 : Furnishings
 furnishing           {~{furnishing}}

@@ -11,9 +11,13 @@ lord;lady
 viscount;viscountess
 count;countess
 earl;countess
+margrave
 marquis;marquess
-prince;princess
 duke;duchess
+prince;princess
+heir apparent
+grand duke;grand duchess
+archduke;archduchess
 king;queen
 emperor;empress
 
@@ -21,7 +25,7 @@ emperor;empress
 . Female
 . Feudal Rank = Male
 
-: Noble {7-18}
-: Feudal Rank {4,18}
+: Noble {7-22}
+: Feudal Rank {4,22}
 
 / http://en.wikipedia.org/wiki/Category:Noble_titles

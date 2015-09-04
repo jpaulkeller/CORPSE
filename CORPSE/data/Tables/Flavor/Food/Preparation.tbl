@@ -9,7 +9,7 @@ baked
 boiled
 grilled
 roasted
-seasoned 
+seasoned
 smoked
 stewed
 
@@ -22,7 +22,7 @@ charbroiled
 charred
 cured
 dried
-fried
+fried{10% in {oil} oil}
 garlicky 
 glazed
 herb-encrusted 
@@ -32,7 +32,7 @@ pastry-wrapped
 peppered
 pulled
 salted
-sautéed
+sautéed{10% in {oil} oil}
 seared
 shredded
 simmered
@@ -41,7 +41,7 @@ spiced
 spicy 
 spit-roasted 
 steamed
-stir-fried
+stir-fried{10% in {oil} oil}
 tenderized 
 toasted 
 

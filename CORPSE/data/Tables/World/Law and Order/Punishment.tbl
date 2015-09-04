@@ -1,19 +1,65 @@
-banishment from the {village|city|region|country|realm}
-blinding {one eye|all eyes}
-branding
+/ http://slacknhash.net/random_law_generator.php
+
+: Punishment
+{:light}
+{:moderate}
+{:severe}
+{:fatal} 
+
+: Light
+a {size:small} fine
 confiscation of property
-{finger|thumb|hand|foot|tongue|testicles or breasts|arm|leg|head} cut off
-a {size} fine
+public service for {2d6} {duration:weeks}s
+
+: Moderate
+a {size:large} fine
+banishment from the {village|city|region|country|realm}
+branding
 expulsion for all orders and guilds
-flogging ({d10*5} lashes)
-hanging
 imprisonment for {2d10} {duration:weeks}s{25% with {light|hard} labor}
 indentured servitude {2d5} {duration:long}s
 keelhauling
-loss of {an eye|{2d3} teeth|2d2 fingers}
 locked in stocks for {2d10} {duration:moderate}s
-public service for {2d6} {duration:weeks}s
 marooning on a desolate island
 revocation of titles
 shunning
+tar and feathering
+{50%public }flogging ({d10*5} lashes)
+{body part} tattooed with marks of shame
+{finger|thumb|hand|foot|tongue|testicles or breasts|arm|leg|head} cut off
+
+: Severe
+being cursed with {CURSE}
+being flogged and salted
+being used for target practice by the city guards
+blinding {one eye|all eyes}
+castration
+loss of {an eye|{2d3} teeth|2d2 fingers}
+polymorphed into a {fauna}
 torture ({torture}) for {2d5} {duration:moderate}s
+{duration:moderate}s in the royal torture chamber
+{duration:moderate}s indentured servitude as {:job}
+
+: Fatal 
+death by beheading
+death by being boiled in oil
+death by being catapulted
+death by being drawn and quartered
+death by being locked in a cage with a dozen ravenous {fauna}
+death by being pierced by a dozen poisoned spears
+death by being sent to the butchers and turned into sausages
+death by being sent to the knackers and boiled into glue
+death by being sent to the tanners and turned to leather
+death by being skinned alive
+death by crucifixion
+death by defenestration
+death by disemboweling
+death by dismemberment
+death by hanging
+death by impaling
+execution
+
+: Job 
+arena gladiator
+spending three months in the city cesspit
+mucking out the city stables

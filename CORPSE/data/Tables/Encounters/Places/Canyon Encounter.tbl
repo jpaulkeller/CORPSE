@@ -3,8 +3,8 @@
 
 : Canyon Encounter
 2 elk
-a notable landmark (roll on table 5)
-a ruin (roll on table 4)
+a notable landmark (:landmark)
+a ruin (:ruin)
 bobcat (panther)
 swarm of ravens
 {6} wolves

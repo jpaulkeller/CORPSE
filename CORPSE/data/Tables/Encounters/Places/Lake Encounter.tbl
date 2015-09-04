@@ -7,23 +7,16 @@
 / This table can be rolled on every 4 hours (in-game time) or once at the beginning of a journey. 
 / Begin by rolling on Weather table (optional) followed by the Event table
 
-: Weather:2d4
-2 Rain and cold temperatures.
-3 Cloudy skies and a slight cool breeze.
-4-6 Clear skies and comfortable temperatures.
-7 Clear skies and warm temperatures.
-8 Blistering sun and hot temperatures. 
-
-: Event:2d6
-1 A swarm of fish (quippers) swim alongside the boat (these act as regular fish, able to be caught/eaten, which will heal 1d4+1 HP)
-2-3 You encounter a small boats with {d4+1} {:humanoid} aboard {:humanoid activity}
-4 {d10+5} hawks flying overhead the boat flying in headed {compass}
-5-7 You sail the waters without being disturbed
-8 Merfolk {:creature activity} where you are
-9 You encounter a Giant Octopus {:creature activity}
-10 You encounter an orca, rising up from the waters for a breath
-11 You notice something man-made in the waters below: {:special}
-12 A Water Elemental feels threatened by your presence; it will attack until you leave the area.
+: Lake Encounter
+2x You encounter small boats with {d4+1} {:humanoid} aboard {:humanoid activity}
+3x You sail the waters without being disturbed
+A Water Elemental feels threatened by your presence; it will attack until you leave the area.
+A swarm of fish (quippers) swim alongside the boat (these act as regular fish, able to be caught/eaten, which will heal 1d4+1 HP)
+Merfolk {:creature activity} where you are
+You encounter a Giant Octopus {:creature activity}
+You encounter an orca, rising up from the waters for a breath
+You notice something man-made in the waters below: {:special}
+{d10+5} hawks flying overhead the boat flying in headed {compass}
 
 : Humanoid
 2x humans

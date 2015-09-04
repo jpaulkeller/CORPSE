@@ -1,11 +1,19 @@
 : Artifact Name
-{Evocative Adj:Positive} {~{:Object}} of {Evocative Concept:Positive}
+{:Name}'s {:Object}
 {Evocative Adj:Negative} {~{:Object}} of {Evocative Concept:Negative}
-{Generated Name}'s {Metal:Enchantable} {~{:Object}}
+{Evocative Adj:Positive} {~{:Object}} of {Evocative Concept:Positive}
 {Evocative Adj} {~{Organ}} of {Generated Name}
+{Generated Name}'s {Metal:Enchantable} {~{:Object}}
+{~{:Object}} of the {Evocative Adj} {Evocative Noun}
+
+: Name
+{Demon Name}
+{Dragon Name}
+{Saint Name}
 
 : Object
-{armor}
+{armor{!oneword}}
+{equipment{!oneword}}
+{organ}
+{tiny item{!oneword}}
 {weapon}
-{tiny item}
-{equipment}

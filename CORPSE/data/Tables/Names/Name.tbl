@@ -19,9 +19,12 @@
 {Hobbit Name}
 {Incan Name}
 {Innuit Name}
+{Israeli Name}
+{Italian Name}
+{Japanese Name}
 {Middle-earth Name}
-{Names}
 {Noble Name}
+{Norse Name}
 {Pirate Name}
 {Old English Name}
 {Saint Name}
@@ -35,8 +38,6 @@
 {Anglo-Saxon Name:Male}
 {Arthurian Name:Male}
 {Aztec Name:Male}
-{Barding Name:Male}
-{Beorning Name:Male}
 {Cornish Name:Male}
 {Dutch Name:Male}
 {Dwarf Name:Male}
@@ -44,8 +45,11 @@
 {Hobbit Name:Male}
 {Incan Name:Male}
 {Innuit Name:Male}
+{Israeli Name:Male}
+{Italian Name:Male}
+{Japanese Name:Male}
 {Middle-earth Name:Male}
-{Names:Male}
+{Norse Name:Male}
 {Old English Name:Male}
 {Tiefling Name:Male}
 {Turkish Name:Male}
@@ -58,8 +62,6 @@
 {Anglo-Saxon Name:Female}
 {Arthurian Name:Female}
 {Aztec Name:Female}
-{Barding Name:Female}
-{Beorning Name:Female}
 {Botanical Name:Female}
 {Cornish Name:Female}
 {Dutch Name:Female}
@@ -68,8 +70,11 @@
 {Hobbit Name:Female}
 {Incan Name:Female}
 {Innuit Name:Female}
+{Israeli Name:Female}
+{Italian Name:Female}
+{Japanese Name:Female}
 {Middle-earth Name:Female}
-{Names:Female}
+{Norse Name:Female}
 {Old English Name:Female}
 {Tiefling Name:Female}
 {Turkish Name:Female}

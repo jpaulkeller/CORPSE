@@ -7,20 +7,55 @@
 {Elf Name}
 {Hobbit Name}
 {Sindarin Name}
-{:Middle-earth Human}
+{:Human}
 
-: Middle-earth Human
-{:Beorning Name}
-{:Bree Name}
-{:Dale Name}
-{:Dunlending Name}
-{:Easterling Name}
-{:Gondor Name}
-{:Haradrim Name}
-{:Rohan Name}
-{:Woodmen Name}
+: Male
+{Dwarf Name:Male}
+{Elf Name}
+{Hobbit Name:Male}
+{Sindarin Name}
+{:Human Male}
 
-: Beorning Name
+: Female
+{Dwarf Name:Female}
+{Hobbit Name:Female}
+{Sindarin Name}
+{:Human Female}
+
+: Human
+{:Beorning}
+{:Bree}
+{:Dale}
+{:Dunlending}
+{:Easterling}
+{:Gondor}
+{:Haradrim}
+{:Rohan}
+{:Woodmen}
+
+: Human Male
+{:Beorning Male}
+{:Bree Male}
+{:Dale Male}
+{:Dunlending Male}
+{:Easterling Male}
+{:Gondor Male}
+{:Haradrim Male}
+{:Rohan Male}
+{:Woodmen Male}
+
+: Human Female
+{:Beorning Female}
+{:Bree Female}
+{:Dale Female}
+{:Dunlending Female}
+{:Easterling Female}
+{:Gondor Female}
+{:Haradrim Female}
+{:Rohan Female}
+{:Woodmen Female}
+
+: Beorning
 {:Beorning Female} {:Beorning Epithet}
 {:Beorning Male} {:Beorning Epithet}
 
@@ -140,7 +175,7 @@ Radegund
 {Epithet:General}
 {Epithet:Warrior}
 
-: Bree Name
+: Bree
 {:Bree Male}
 {:Bree Female}
 
@@ -394,7 +429,7 @@ Whitebeam
 Whortleberry
 
 
-: Dale Name
+: Dale
 {:Dale Male}
 {:Dale Female}
 
@@ -624,7 +659,7 @@ Valdis
 Vigdis
 Walda
 
-: Dunlending Name
+: Dunlending
 {:Dunlending Male}
 {:Dunlending Female}
 
@@ -654,7 +689,7 @@ Modron
 Sarf
 Sath
 
-: Easterling Name
+: Easterling
 {:Easterling Male}
 {:Easterling Female}
 
@@ -695,7 +730,7 @@ Tîgkiz
 Yileke
 Yilkiz
 
-: Gondor Name
+: Gondor
 {:Gondor Male}
 {:Gondor Female}
 
@@ -776,7 +811,7 @@ Ivorwen
 Lothíriel
 Morwen
 
-: Haradrim Name
+: Haradrim
 {:Haradrim Male}
 {:Haradrim Female}
 
@@ -841,19 +876,19 @@ Tamadhur
 Usaymah 
 Yusraa
 
-: Rohan Name
+: Rohan
 {Rohan Dictionary}{rohan dictionary{!different}}
 
 : Rohan Name and Meaning
 {P:=Rohan Dictionary}{S:=Rohan Dictionary}{P.Rohan}{s.rohan} ({p.definition}-{s.definition})
 
 : Rohan Male
-{:Rohan Name}{33% son of {:Rohan Name{!MaybeSameFirst}}}
+{:Rohan}{33% son of {:Rohan{!MaybeSameFirst}}}
 
 : Rohan Female
-{:Rohan Name}{33% daughter of {:Rohan Name{!MaybeSameFirst}}}
+{:Rohan}{33% daughter of {:Rohan{!MaybeSameFirst}}}
 
-: Woodmen Name
+: Woodmen
 {:Woodmen Male}
 {:Woodmen Female}
 
