@@ -205,3 +205,70 @@ Zagrat
 Zagthak
 Zaguf
 Zagug 
+
+===
+
+<!-- -----------------------
+Name:	Orc Names
+Date:	2008-01-28
+By:	Dave Younce
+----------------------- -->
+
+{{purge}}
+
+{{Cols|4|<ul><sgdisplay iterations="16"><li>[main]</sgdisplay></ul>}}
+
+<sgtable>
+;main
+15,[CapCons][Vowel][Cons][Vowel][Cons][More][Title]
+15,[CapVowel][Cons][Vowel][Cons][More][Title]
+1,[SGNP orcish.main][Title]
+
+;More
+2,[Vowel][Cons]
+3,
+
+;Cons
+1,ch
+2,g
+3,k
+4,r
+5,gr
+6,gh
+7,n
+8,gn
+
+;CapCons
+1,Ch
+1,G
+1,Gh
+1,Gn
+1,Gr
+1,K
+1,Kr
+1,N
+1,Rr
+1,W
+
+;Vowel
+1,a
+2,aa
+1,o
+5,u
+
+;CapVowel
+1,A
+2,Aa
+1,O
+5,U
+
+;Title
+3,
+1, the [Orc Tribe Name.Adj]
+</sgtable>
+
+==Similar generators==
+*[[Orc Tribe Name]]
+*[[SGNP orcish]]
+
+[[Category:Fantasy]][[Category:Names for People]]

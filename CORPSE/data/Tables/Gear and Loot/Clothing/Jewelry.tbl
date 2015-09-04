@@ -1,20 +1,49 @@
 : Jewelry
+20x {:wearable}
+figurine ({fauna})
+{:crown}
+
+: Wearable
+amulet
+ankle chain
+anklet
+arm spiral
 armband
 armlet
+badge
+bangle
 bracelet
 brooch
 charm
+choker
+clasp
+cloak pin
+double ring
 earring
-figurine ({fauna})
+hair ornament
+hair pin
+hat pin
+kilt pin
+locket
+medal
+medallion
+navel piercer
+neck ring
 necklace
+necklace chain
+nose ring
 pendant
 periapt
 pin
 ring
+set of earrings
+signet ring
 talisman
+toe ring
+torc
 trinket
+waist chain
 wristlet
-{:crown}
 
 : Crown
 aigrette

@@ -1,0 +1,39 @@
+: Rod
+Rod of {{Conjuration|MetaMagic|:POWER}} ({#/{41-50}} charges), {30-42}" long, made of {:material} 
+
+: Material
+9x {metal:enchantable}
+2x {metal}
+2x {wood}
+1x ivory
+1x bone
+
+: Power
+Acid Balls
+Acid Bolts
+Cold Balls
+Curing
+Detection
+Disarming
+Door/Stair Location
+Drain Life
+Fire Balls
+Fire Bolts
+Frost Bolts
+Healing
+Identify
+Illumination
+Light
+Lightning Balls
+Lightning Bolts
+Magic Mapping
+Polymorph
+Probing
+Recall
+Restoration
+Sleep Monster
+Slow Monster
+Speed
+Teleport Other
+Trap Location
+Treasure Location

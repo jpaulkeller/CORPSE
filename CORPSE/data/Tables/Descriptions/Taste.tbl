@@ -123,14 +123,22 @@ that reminds you of
 a mixture of {spice} and {spice{!different}}
 alcohol
 bacon
+beer
 citrus
 coffee
 garlic
 ginger
+grapefruit
+green tea
 lemon
+licorice
+marshmallow
+metal
 mint
 pickles
+soap
 vinegar
+wine
 {herb}
 {{nut}+}
 {provisions}
@@ -139,7 +147,11 @@ vinegar
 {:foul}
 
 : Pleasant
+apple
 chocolate
+cinnamon
+honey
+mint
 vanilla
 {fruit}
 
@@ -185,3 +197,4 @@ soggy
 spongy
 sticky
 stringy
+{viscosity}

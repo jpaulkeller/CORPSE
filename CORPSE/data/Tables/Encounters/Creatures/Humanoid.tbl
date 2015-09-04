@@ -97,12 +97,17 @@ were-rat
 {20%half-}orc
 
 : Language
-{10%ancient }dwarvish
-{10%ancient }elvish
-goblin
+abyssal
+celestial
+draconic
+giantish
 gnomish
+goblin
+infernal
 orcish
 unknown/exotic
+{10%ancient }dwarvish
+{10%ancient }elvish
 
 : Literary
 Eloi;  H. G. Wells The Time Machine

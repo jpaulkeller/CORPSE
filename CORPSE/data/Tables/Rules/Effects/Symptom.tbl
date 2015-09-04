@@ -48,6 +48,7 @@ drowsiness; unable to surprise or stay awake for watch, 50% chance of spell misc
 dry mouth
 emit a strange odor, which animals find off-putting; suffer a -2 penalty to all Ride and Handle Animal checks
 eye irritation
+eyes {:glow verb}s{75% {:glow adv}}{75% with a {color} light }for {2d4} {duration:moderate}s
 fatigue
 fear ({phobia}); save or flee potential threats, -2 to hit if forced into combat
 fever/chills; bad sleep at night, no natural hp recovery, 50% chance of spell miscast
@@ -60,7 +61,7 @@ hair loss; -{6} to charisma depending on context
 hallucinations; -{6} to char if seen, no move silently or hide, 50% chance of spell miscast
 headache; no spell casting possible
 hearing is impaired by a low roaring or ringing sound that only he can hear; suffers a -5 penalty on all hearing-based Perception checks
-hemorrhage; take {10,30} {:damage} every {:period}
+hemorrhage; take d20 damage every minute
 hyperactivity
 immune system becomes weakened; -5 penalty on all Fortitude saving throws made to resist the effects of disease
 impaired cognitive abilities
@@ -104,6 +105,8 @@ seizures; -{6} to char if seen, occur on specific # roll, unable to act for {6} 
 sensory loss; {33% hearing}{33% sight} {33% touch} {33% taste} {33% smell} for {2d6}{duration:short}
 shortness of breath
 skin sores
+skin turns translucent for a {2d4} {duration:moderate}s
+skin turns {color.light} for {2d4} {duration:moderate}s
 slowed reaction times
 slurred speech
 sneezing
@@ -126,12 +129,28 @@ uncontrollable bleeding
 unpleasant smell
 violent mood swings
 vomiting
-wasting sickness; lose 1 point of {attribute} every {:period}
+wasting sickness; lose 1 point of {attribute} every {duration:weeks}
 weakness; -2 to damage, no open doors or bend bars, encumbrance halved
+{color.light} fur grows on your {body part}
 {color:common} skin color; -{6} to charisma depending on context
+
+: glow verb
+blaze
+glimmer
+glint
+glow
+pulsate
+shine
+sparkle
+
+: glow adv
+brightly
+faintly
+intermittently
+steadily
 
 ===
 lose {:a-level} every {:period}
 take a penalty to all rolls (-{2}, cumulative every {:period})
 take a penalty to hit (-{2}, cumulative every {:period})
-take {5,20} {:damage} every {:period}
+take {5,20} damage every {:period}

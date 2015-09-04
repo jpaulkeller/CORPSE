@@ -2,7 +2,78 @@
 6x {:cookable}
 {:raw}
 
-: Cookable
+: Raw
+arugula
+mustard greens
+raddiccio
+lettuce
+spring greens
+sprouts
+chard
+cucumber
+dandelion greens
+endives
+
+: Cookable = Legume + Flour Bean + Other
+
+: Legume
+asparagus pea
+field pea
+green bean
+snow pea
+southern pea
+sugar snap pea
+{:flour bean}
+
+: Flour Bean
+asparagus bean
+baby lima bean
+black bean
+black turtle bean
+black-eyed pea
+boston bean
+boston navy bean
+broad bean
+cannellini bean
+chickpea
+chili bean
+cranberry bean
+dwarf bean
+egyptian bean
+egyptian white broad bean
+english bean
+fava bean
+fava coceira
+frijol bola roja
+frijole negro
+great northern bean
+green and yellow peas
+kidney bean
+lentils
+lima bean
+madagascar bean
+mexican black bean
+mexican red bean
+molasses face bean
+mung bean
+mung pea
+navy bean
+pea bean
+peruvian bean
+pinto bean
+red bean
+red eye bean
+red kidney bean
+rice bean
+runner bean
+scarlet runner bean
+small red bean
+soybean
+wax bean
+white kidney bean
+white pea bean
+
+: Other
 acorn squash
 artichoke
 artichoke heart
@@ -22,15 +93,12 @@ collard green
 corn
 crookneck squash
 eggplant
-fava bean
 fennel bulb
 garlic
-green beans
 green pepper
 hot pepper
 jalapeno
 kale
-kidney bean
 leek
 mushroom
 okra
@@ -57,20 +125,7 @@ tomato
 turnip
 water chestnut
 watercress
-wax bean
 wild mushroom
 yam
 yellow pepper
 zucchini
-
-: Raw
-arugula
-mustard greens
-raddiccio
-lettuce
-spring greens
-sprouts
-chard
-cucumber
-dandelion greens
-endives

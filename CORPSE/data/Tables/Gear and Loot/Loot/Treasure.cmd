@@ -30,7 +30,7 @@
 
 {treasure}{5% (the {inscription|design|decoration} provides a clue to its use)}
 
-===
+====
 {Unguarded 1}{50%, {Unguarded 1}{10%, {Unguarded 1}{5%, {Unguarded 1}{1%, {Unguarded 1}}}}}
  
 == 1st Dungeon Level ==

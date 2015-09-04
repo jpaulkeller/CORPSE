@@ -1,0 +1,197 @@
+/ http://www.random-generator.com/index.php?title=Old_West_Clothes
+
+: Western Outfit
+{:male}
+{:female} 
+
+: Male
+{:top male}, {:bottom}{75%, {:apparel male}}{75%, {:hat male}}{75%, {:footwear}}
+
+: Female
+{:top female}, {:bottom}{75%, {:apparel female}}{50%, {:hat female}}{75%, {:footwear}}
+
+: Apparel Male
+{:Accessories Male}
+{:Belts}
+{:Chaps}
+{:Gloves}
+
+: Apparel Female
+{:Accessories Female}
+{:Gloves}
+
+: Accessories Male
+canvas suspenders
+cowboy tie
+harness leather braces
+leather braces
+long string tie
+pantaloons
+silk puff tie
+string tie
+suspenders
+{color:light} suspenders
+{white|black} tie
+
+: Accessories Female
+arm garter
+bloomers
+knickers
+silk corset
+{color:light} camisole
+{color:light} corset
+{white|black} camisole
+{white|black} corset
+{white|black} petticoat
+
+: Belts
+bandoleer
+gun belt
+gun sling
+leather belt
+rawhide belt
+sling
+{black|brown} leather belt
+{condition:clothing} bandoleer
+{condition:clothing} gun belt
+{condition:clothing} gun sling
+{condition:clothing} leather belt
+{condition:clothing} rawhide belt
+{condition:clothing} sling
+
+: Chaps
+fish slicker
+leather chaps
+pommel slicker
+riding chaps
+smithy's apron
+{condition:clothing} chaps
+
+: Gloves
+kid gloves
+lady's gloves
+leather gloves
+riding gloves
+white gloves
+
+: Bottom
+breeches
+canvas frontier pants
+canvas pants
+canvas trousers
+frontier pants
+pants
+saddle-seat pants
+trousers
+wool pants
+wool trousers
+{condition:clothing} trousers
+{condition:clothing} wool pants
+{condition:clothing} wool trousers
+
+: FootWear
+{:Boots}
+{:Shoes}
+
+: Boots
+fishing waders
+high boots
+leather boots
+low boots
+preacher-style boots
+riding boots
+soldier's boots
+suede boots
+
+: Shoes
+leather shoes
+suede shoes
+wooden shoes
+{condition:clothing} shoes
+
+: Hat Male
+10-gallon hat
+felt hat
+leather hat
+leather stetson
+rawhide hat
+riding hat
+sombrero
+stetson
+straw hat
+suede hat
+{black|brown} leather hat
+{condition:clothing} 10-gallon hat
+{condition:clothing} leather hat
+{condition:clothing} rawhide hat
+{condition:clothing} riding hat
+{condition:clothing} sombrero
+{condition:clothing} Stetson
+
+: Hat Female
+bonnet
+scarf
+
+: Top Male
+bib shirt
+button-down shirt
+canvas range jacket
+canvas vest
+cattleman shirt
+church suit
+frock coat
+frontier vest
+homespun shirt
+horse shirt
+jacquard vest
+leather duster
+leather riding jacket
+long leather jacket
+paisley vest
+pullover shirt
+range jacket
+riding vest
+shirt
+suit
+vest
+wool frontier vest
+wool shirt
+wool vest
+{condition:clothing} frontier vest
+{condition:clothing} range jacket
+{white|black} church suit
+{white|black} suit
+
+: Top Female
+church dress
+floral dress
+floral skirt
+riding skirt
+silk blouse
+suede vest
+tapestry skirt
+tea dress
+{:fancy} blouse
+{:fancy} church dress
+{:fancy} dress
+{:fancy} floral dress
+{:fancy} floral skirt
+{:fancy} riding skirt
+{:fancy} silk blouse
+{:fancy} {color:light} dress
+{:fancy} {color:light} sun dress
+{:fancy} {color:light} tea dress
+{color:light} and {color:light{!different}} sun dress
+{color:light} blouse
+{color:light} dress
+{color:light} floral dress
+{color:light} floral skirt
+{color:light} tapestry skirt
+{color:light} tea dress
+
+: Fancy
+classy
+elegant
+fancy
+high-class
+high-falutin'

@@ -1,4 +1,28 @@
+/ http://www.random-generator.com/index.php?title=Mining_Vein
+
+: Mine
+10x coal
+7x {metal:mine}
 3x {gem}
-5x {metal:mine}
 2x {metal:precious}
 1x {mineral}
+
+: Vein
+{soft |hard |}stone surrounds the vein of {:mine} {75%that runs {compass:10} for {:distance}{75% until {:event}}}.
+
+: event
+a gas pocket is found which is {:distance} long x {:distance} wide x {:distance} tall
+a lair incursion
+a magma flow moving {compass:10}
+a new vein of {:vein}
+a patch of unstable rock causes delays 
+a river is found
+a seam of average {soft |hard |}stone for {:distance}
+a water pocket {:distance} long x {:distance} wide x {:distance} deep
+it turns {d18*5} degrees {upward|downward|left|right}
+small stream is found
+subterranean sea is found
+the vein splits {compass:10} and {compass:10{!different}}
+
+: distance
+{2d500}'

@@ -1,0 +1,210 @@
+/ http://www.random-generator.com/index.php?title=Mage_Staff
+
+: Staff
+A Staff of {{Conjuration|Invocation|:POWER}} ({#/{20-25}} charges), made of {:material}{:length}.{:HEAD}{10% {:DESCRIPTION}}
+A {20%{:quality} }{:Type} made of {:material}{:length}.{:HEAD}{10% {:DESCRIPTION}}
+
+: Power
+Banishment
+Confuse Monsters
+Cure Light Wounds
+Curing
+Darkness
+Destruction
+Detect Evil
+Detect Invisible
+Dispel Evil
+Earthquakes
+Haste Monsters
+Healing
+Holiness
+Identify
+Light
+Mapping
+Power
+Remove Curse
+Sleep Monsters
+Slow Monsters
+Speed
+Starlight
+Summoning
+Teleportation
+the Magi
+
+: material
+90x {33%{:wood adj} }{wood}{25% and shod with {metal:weapon}}{25% {wand:mix} {made of:hard}}
+8x {metal}
+1x ivory
+1x bone
+
+: length
+{50%, {90%?{48-72}} inches long}
+
+: quality
+fabled
+legendary
+magical
+rare
+
+: type
+{pseudo class:mage}'s staff
+{pseudo class:sage}'s staff
+{pseudo class:priest}'s staff
+{:mundane}
+
+: mundane
+bo staff
+hiking stick
+quarterstaff
+traveller's staff
+walking stick
+warden's staff
+
+: wood adj
+bent 
+charred
+coarse-grain 
+crooked 
+faded 
+fine-grain 
+fragrant 
+gnarled 
+gnarly 
+kinked 
+knotted 
+knotty 
+knurled 
+lathed 
+oiled 
+polished 
+rugged 
+seasoned 
+smooth 
+strong
+thick
+thin 
+twisted 
+twisting 
+warped 
+worn 
+
+: head
+{50% The head is {:TOP}.}
+
+: top
+a face with {:eyes}
+a {10%floating }{25%{{gem|made of:precious}} }{:shape}{25% wrapped by {claws|talons|ivy}}{75% {:glows}}
+a {25%grinning }skull with {:eyes}
+a {fauna}'s head with {:eyes}
+a {insect} with {:eyes}
+a {monster}'s head with {:eyes}
+a {mythical creature}'s head with {:eyes}
+the symbol of {DIVINE NAME}{75% {:glows}}
+
+: eyes
+{gem} eyes{75% {:glow}}
+
+: shape
+cube
+cylinder
+dodecahedron
+eye
+fist
+hand
+icosahedron
+octahedron
+polyhedron
+prism
+pyramid
+sphere
+star
+
+: glow
+that {:glow verb}{75% {:glow adv}}{50% with a {color} light{33% {:glow when}}}
+
+: glows
+that {:glow verb}s{75% {:glow adv}}{50% with a {color} light{33% {:glow when}}}
+
+: glow verb
+blaze
+burn
+glimmer
+glint
+glow
+pulsate
+shimmer
+shine
+sparkle
+
+: glow adv
+brightly
+faintly
+intermittently
+steadily
+
+: glow when
+at {dawn|dusk|night}
+in dark places
+in moonlight
+in starlight
+when facing {compass:4}
+when held
+when rubbed
+when the moon is {full|new}
+when {gold|magic|evil|a trap|an undead} is nearby
+when {{fauna}+} are nearby
+when {{monster}+} are nearby
+while casting
+while underground
+
+: Description
+The staff is {art:decorated}.
+The staff is inscribed: {INSCRIPTION}
+The staff has an inscription declaring its original owner was {Name}.
+The staff {:glow verb}s{75% {:glow adv} }{50% with a {color} light{10% {:glow when}}}
+The staff is ringed with {metal:weapon} bands.
+The staff is wrapped {tightly with|with tattered} {fur and pelt:leather}.
+The staff features a carving of {ART:SUBJECT}.
+The staff is carved and stained to look like rising flames.
+The staff is carved and stained to look like breaking waves.
+The staff is in a spiraling serpent shape.
+The staff is decorated with engravings of leaves and vines.
+The staff is decorated with spiraling engravings.
+The staff is decorated with intricate knot-work along its entire length.
+The staff is simple and unadorned.
+The staff is shellacked {color:dark}.
+The staff is stained {color:dark}.
+The staff is stained {color:drab}.
+The head is bloodstained from regular use in battle.
+The weapon is stained an ominous {dark crimson|blue-black}.
+The staff is strong and well-balanced.
+The staff has a long crack running down one side from disuse.
+The staff is smooth and well-weathered from use.
+The head is slippery with fresh gore.
+The staff has a brief engraving in the runes of a long-lost language.
+The staff is decorated with runes that convey the meaning "{INSCRIPTION}".
+The staff is engraved with a cryptic inscription{:glows}.
+The staff is engraved with illegible runes.
+The staff has an {abstract|illegible} engraving{:glows}.
+
+===
+
+: Name
+{Evocative Adj:Not Negative} {Evocative Concept:Positive}
+{Evocative Adj:Not Negative} {Evocative Noun}
+{Evocative Adj:Not Positive} {Evocative Concept:Negative}
+{Evocative Adj:Not Positive} {Evocative Noun}
+{Evocative Concept:Negative}[Inscriptions.SuffixNegative], 
+{Evocative Concept:Positive}[Inscriptions.SuffixPositive], 
+{Evocative Concept}'s {Evocative Concept}
+{Evocative Noun} of {{Mythical Creature}+}
+{Evocative Noun}'s {Evocative Noun}
+{Evocative Noun}[Inscriptions.SuffixNegative], 
+{Evocative Noun}[Inscriptions.SuffixPositive], 
+[Weapon Names.tolkienweapon], 
+
+;MageName
+[Ahaggar Names.main]
+[Arabesque Names.main]
+[HalflingHippies.MaleSyllable1][HalflingHippies.MaleSyllable2][HalflingHippies.MaleSyllable3]]
+[Fantasy Names.MaleFirstName] [Fantasy Names.Surname]

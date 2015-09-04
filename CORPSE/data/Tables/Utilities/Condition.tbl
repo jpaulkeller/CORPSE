@@ -17,15 +17,26 @@ pristine
 : Any = Flat + Paper + Book + Cloth + Clothing + Metal Weapon + Edged Weapon + Wood Weapon
 
 : Paper
+barely-legible
+beautifully-written
+bloodstained
+burnt
 crumpled
+dark
 faded
 folded
 moldy
-{half|part|fragment} of a
 ripped
 singed
+smudged
+stained
+tattered
 torn
+torn
+well-written
+worn
 yellowing
+{most|half|part|fragment} of a
 
 : Book
 bloodstained
@@ -54,7 +65,9 @@ frayed
 mildewed
 moth-eaten
 muddy
+old
 ragged
+ratty
 ripped
 ruined
 scorched
@@ -76,14 +89,15 @@ decent
 durable
 loose-fitting
 mended
-patched
 reinforced
 slightly worn
 
 : Clothing Poor
+heavily-worn
 ill-fitting
+patched
 sweat-stained
-{:cloth}
+10x {:cloth}
 
 : Clothing Nice
 custom-fitted
@@ -131,6 +145,7 @@ razor-sharp
 burnt
 charred
 cracked
+polished
 splintered
 {:weapon}
 {:wet}

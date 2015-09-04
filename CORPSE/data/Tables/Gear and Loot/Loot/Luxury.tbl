@@ -1,4 +1,5 @@
 / http://random-generator.com/index.php?title=Household_Treasures
+/ http://www.random-generator.com/index.php?title=Jewelry
 
 : Luxury
 20x {:item}
@@ -135,3 +136,342 @@ Much of the piece's value comes from the rarity of the style it is done in.
 Much of the piece's value is due to the fame of the crafter, {Name}.
 Much of its value stems from the fact that it was famously owned by {Noble Name}.
 The piece is valuable because it was involved in the {Battle Name}.
+
+===
+
+The Jewelry generator creates random valuable items that may be worn or carried on a person.
+Items are typically, though not exclusively, made of metal, and include ([Wearable], [Wearable]),
+trinkets ([Trinkets], [Trinkets]), tools and weapons ([ToolsAndWeapons], [ToolsAndWeapons]),
+and simple armor ([ArmorPieces], [ArmorPieces]).
+
+;main
+[JewelryMaterialClause] [Item] [Predicate]
+matching pair of [JewelryMaterialClause] [Item]s, each [Predicate]
+
+;StartItemOnly
+[JewelryMaterialClause] [Item]
+
+;Predicate
+[foo][Craftsmanship].
+
+;foo
+[Design]
+set with {{ia|[Utility.GemType]}}
+with [Utility.Symbols]
+set with {{plural|[Dice.2d6] [Utility.GemType]}}
+[Design] and set with {{ia|[Utility.GemType]}}
+[Design] and set with {{plural|[Dice.2d6] [Utility.GemType]}}
+with [Utility.Symbols] and set with {{ia|[Utility.GemType]}}
+with [Utility.Symbols] and set with {{plural|[Dice.1d12] [Utility.GemType]}}
+with the inscription “{INSCRIPTION}” written in [Inscriptions.Language] and set with {{plural|[Dice.2d6] [Utility.GemType]}}
+with the inscription “{INSCRIPTION}” written in [Inscriptions.Language]
+
+;StartWearableOnly
+[JewelryMaterialClause] [Wearable], [Predicate]
+matching pair of [JewelryMaterialClause] [Wearable]s, each [Predicate]
+
+;StartNonwearableOnly
+[JewelryMaterialClause] [Nonwearable], [Predicate]
+matching pair of [JewelryMaterialClause] [Nonwearable]s, each [Predicate]
+
+;StartArmorPiecesOnly
+[JewelryMaterialClause] [ArmorPieces], [Predicate]
+
+;JewelryMaterialClause
+[JewelryMaterial]
+[MaterialAdj] [JewelryMaterial]
+
+;MaterialAdj
+baroque
+beautiful
+fearsome-looking
+gaudy
+giant-sized
+magnificent
+most unusual
+probably ornamental
+quite elaborate
+simple but elegant
+small
+twisted
+well-used
+
+;Item
+[Wearable]
+[Trinkets]
+[ToolsandWeapons]
+[ArmorPieces]
+
+;ArmorPieces
+“chainmail bikini” top
+breastplate
+chainmail
+codpiece
+cuirass
+great helm
+helmet
+pair of gauntlets
+pair of greaves
+set of bracers
+shoulder clasp
+
+;Nonwearable
+[Trinkets]
+[ToolsAndWeapons]
+[Kitchenware]
+
+;Kitchenware
+hip flask
+bottle
+bottle stopper
+bowl
+candle snuffer
+carafe
+cauldron
+chalice
+charger
+cheese knife
+corkscrew
+cup
+decanter
+dish
+drinking horn
+drinking vessel
+flagon
+fork
+goblet
+kettle
+mug
+pepper grinder
+pitcher
+plate
+platter
+salt cellar
+salt shaker
+serving fork
+serving spoon
+set of [Dice.2d4] nested bowls
+spoon
+stein
+tankard
+tray
+urn
+vase
+
+;Trinkets
+dice cup
+rod
+scepter
+scroll tube
+wand
+smoking pipe
+comb
+dice
+hand bell
+scarab
+ashtray
+ball
+band
+basin
+bird cage
+brazier
+button
+candelabra
+candlestick
+cane head
+casket
+censer
+chamber pot
+chandelier
+chess set
+chest
+cigarillo case
+coffer
+crystal ball stand
+cube
+cup
+dice set
+disc
+doll
+door knocker
+door latch
+egg
+fan
+gambling chip
+gong
+hookah (water pipe)
+hourglass
+incense burner
+inkpot
+jewelry box
+lamp
+leash
+letter opener
+lock and key
+mousetrap
+music box
+orb
+paperweight
+pen/quill set
+puzzle box
+pyramid
+screen
+seal
+set of [Dice.2d4] buttons
+skull
+small animal cage
+small box
+snuff box
+sphere
+stick
+stylus
+sundial
+tooth
+torch sconce
+vial with stopper
+wreath
+
+;ToolsAndWeapons
+eating knife
+hammer
+knife
+staff head
+thimble
+tinderbox and fire starter
+[Dice.1d10] foot chain with [Dice.1d4] inch links
+key
+sword
+axe head
+boot knife
+dagger
+hand mirror
+scissors
+sword hilt
+throwing dagger
+whistle
+[Dice.1d4] sewing needle(s)
+[Dice.2d6] arrowheads
+abacus
+arrowhead
+astrolabe
+back scratcher
+barbed spearhead
+bit and bridle
+blade
+cane
+dagger sheath
+fishhook
+fishing rod
+grappling hook
+knife handle
+lantern
+magnifying glass
+manacles
+miner’s pick
+punching dagger
+razor
+scabbard
+set of caltrops
+set of scales
+set of thieves’ picks
+sextant
+sickle
+small hourglass
+spearhead
+spyglass
+stiletto
+tweezers
+umbrella
+walking stick
+
+;Design
+{art:etched} with folk symbols said to [FolkSymbolEffects]
+inlaid with a pattern of [Utility.MetalPrecious]
+{art:etched} with [SpiritForm.main]
+{art:etched} with a curious map
+{art:etched} with a dragon-like shape
+{art:etched} with a genealogical record of the maker’s family
+{art:etched} with a twisting, vine-like pattern
+{art:etched} with an ancient proverb: “{QUOTE}”
+{art:etched} with an image of the sun
+{art:etched} with concentric circles
+{art:etched} with strange symbols
+{art:etched} with the figure of naked woman
+{art:etched} with the figures of the old gods
+{art:etched} with the likeness of an ancient king
+{art:etched} with the name of the creature whose essence is in it: [Angels and demons.main]
+covered in a web-like pattern of {art:etched} lines
+inlaid with [Utility.Chitin] chitin
+inlaid with [Utility.HornIvory]
+inlaid with [Utility.StoneDecorative]
+inlaid with a pattern of [Utility.MetalExotic]
+with [Utility.MetalPrecious] accents
+with [Utility.MetalPrecious] filigree
+with [Utility.MetalPrecious] inlay
+with [Utility.MetalPrecious] mounting in the shape of [SpiritForm.main]
+
+;FolkSymbolEffects
+bring the owner financial success
+increase the owner’s attractiveness
+ward off evil
+bring the owner good luck
+protect against diseases
+protect against lycanthropes
+protect against the undead
+ward off chaos
+allow the owner to discern the truth
+attract the owner’s true love
+bring the owner true love
+help the owner affect animals
+help the owner learn and study
+help the owner notice things no one else would
+help the owner sing well
+increase the ‘life force’ of the owner
+increase the owner’s fertility
+increase the owner’s virility
+make the owner taller over time
+protect against aberrations
+protect against fey influence
+protect against fiends and their minions
+protect against the evil eye
+protect against tricksters
+protect the owner against [Utility.CreatureTypes]s
+protect the owner from drowning
+protect the owner from lightning
+ward against evil spirits
+
+;JewelryMaterial
+[Utility.Chitin] chitin
+[Utility.MetalPrecious]
+[Utility.MetalExotic]
+[Utility.StoneDecorative]
+[Utility.HornIvory]
+[Utility.MetalPrecious] and [JewelryMaterial]
+
+;Craftsmanship
+
+. It is of {quality} workmanship
+. It is of {art:style} workmanship
+. [ValueDerivation]
+. It appears to have been made by [craftculture]
+. It seems to be a relatively recent replica of an older style made famous by [craftculture]
+. Its design is reminiscent of other, similar pieces known to have been made by [craftculture]
+
+;craftculture
+a long-vanished race of desert folk
+an ancient race of craftsmen known only by their artifacts
+an underground race of men
+demons
+dwarves
+dwellers under the waves
+elves
+sophisticated but savage humanoid tribes
+the same culture that produced the ruins scattered throughout the area
+
+;ValueDerivation
+Much of its value stems from the fact that it was famously owned by [Fantasy Names.main]
+Much of the piece’s value comes from the fact that it is obviously quite old
+Much of the piece’s value comes from the rarity of the style it is done in
+Much of the piece’s value is due to the fame of the crafter, [Fantasy Names.main]
+The piece is valuable because it was involved in [Art, Grace, and Guts Oracle.Events Lcase]
+The piece would be worth much less had it not been used to deter [Art, Grace, and Guts Oracle.Threats Lcase]

@@ -1,6 +1,26 @@
-{Trait} {Name} {Name}
-{Color}
-{Appearance}
-{Adjective}
+: Pirate Name
+{:Adj} {American Name:First} {American Name:Surname}
+{American Name:First} "{:Nickname}" {American Name:Surname}
+{:Rank} {Name} the {:Adj}
 
-===
+: Adj
+{Adjective}
+{Appearance}
+{Build}
+{Color{!OneWord}}
+{Metal:Precious}
+{Noise}
+{Ship Name:Nautical Adj}
+{Trait}
+
+: Nickname
+Gold Tooth
+Shark Bait
+Deck Licker
+{Color:Simple} Anchor
+{Color:Simple} Beard
+
+: Rank
+Boatswain
+Captain
+First Mate

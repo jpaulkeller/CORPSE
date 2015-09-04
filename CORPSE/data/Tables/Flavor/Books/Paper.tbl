@@ -31,7 +31,7 @@ inventory
 invitation {to|from} {Rank} {Name}
 last will and testament of {Feudal Rank} {Name}
 legal document disputing the ownership of {Name}'s {site:artificial}
-{75%undelivered }letter of marque for {10}000 gold to {quest:task}
+{75%undelivered }letter of marque for {10}000 gold to {QUEST:TASK}
 {75%undelivered }letter {to|from} {Rank} {Name}
 license to use {skill}
 license to {own|hunt|sell|trade|kill|protect} {fauna}
@@ -49,16 +49,14 @@ pass
 permit to {own|hunt|sell|trade|kill|protect} {fauna}
 playing card ({{number:twototen}|jack|queen|king|ace} of {spades|hearts|diamonds|clubs})
 plea for clemency
-poem about {evocative concept}
 proclamation from {Feudal Rank} {Name}
 promissory note for {100-1000} {copper|silver|gold} if returned to {Name}
 ransom note
 receipt from {Inn Name}
-recipe for {{menu:fare}|{potion} potion}
+recipe for {{menu:fare|POTION}}
 riddle
 rune
-scroll of {TSR scroll}
-sheet of music
+scroll of {Spell}
 sketch of {site}
 symbol
 tarot card ({Tarot.Card})
@@ -73,7 +71,9 @@ writing in unknown language
 {architect|engineer}’s drawing of a {structure}
 {d12 puzzling document}
 {deed|legal title|grant} to {Name}'s {site:artificial}
-{illegible|hastily scribbled|encrypted|forged|printed|smudged|stained} note
+{:note adj} note
+{:note adj} poem about {evocative concept}
+{sheet music}
 
 : material
 paper
@@ -117,6 +117,25 @@ strategic
 tactical
 taxation
 waterway
+
+: note adj
+baudy
+childish
+cleverly-written
+encrypted
+forged
+hastily scribbled
+hilarious
+illegible
+long-lost
+moving
+poignant
+poorly-written
+powerful
+printed
+risqué
+sharp and witty
+sophisticated
 
 : bounty
 a tribe of {humanoid}

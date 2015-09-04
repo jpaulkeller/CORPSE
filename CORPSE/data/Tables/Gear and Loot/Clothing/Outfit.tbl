@@ -4,8 +4,9 @@
  
 : Outfit
 10x he is wearing a {:upper outfit}, a {:lower}, and {footwear}{33%, {:accessories}}{33%, {:hat}}
-1x he is wearing {uniform}
 3x he is wearing a {:full body} and {footwear}{33%, {:accessories}}{33%, {:hat}}
+he is wearing {uniform}
+he is wearing a {western outfit:male}
 
 : Clothing
 a man’s {:accessories}

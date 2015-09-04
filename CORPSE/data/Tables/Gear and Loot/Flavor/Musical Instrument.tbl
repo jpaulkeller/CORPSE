@@ -1,83 +1,150 @@
 / http://www.legolas.org/items/music.html
 
-.Musical Instrument  Cost    Weight
+.Musical Instrument, Cost, Weight
 
-Aeolian harp
+: Musical Instrument
+{:brass}
+{:percussion} 
+{:string} 
+{:woodwind} 
+{:other}
+
+: Detailed
+3x {quality} {:brass} made of {metal}
+2x {quality} {:drum} made of {fur and pelt:leather} stretched over {wood}, with {metal} ribbing
+{quality} {:small drum} made of {fur and pelt:leather} stretched over {wood}
+{quality} {:cymbals} made of {metal}
+5x {quality} {:string} made of {wood}{20% with {made of:precious} inlay}, with tuning keys of {organic:construction}
+4x {quality} {:woodwind} made of {wood}{10%, with a missing reed}, and with keys of {organic:construction}
+
+: Brass
 alphorn
-archlute
-bagpipes
-bandore               15gp     10
-banjo
-banjolele
-basson
-bell
-bombardon
-bones
-bongo drums
-calliope
-cello
-chime                  2gp+   (1-20)
-cither
-clarinet
 clarion
-clavichord
-cornopean
 crumhorn
-cymbal
-drum                   4gp     20
-dulcimer
+curved horn
 euphonium
-fiddle
-fife                   5gp     10
-flageolet
-flute                  16gp     5
-gong                    5gp   (.5-10)
-guitar
-hammer dulcimer
+fife; 5gp; 10
+flute; 16gp; 5
+harmonica
+herald's trumpet
+horn
+hornpipe
+hunting horn
+pipe
+pipette
+recorder-flute
+saxophone
+siren
+tuba
+trombone
+trumpet
+water-pipe
+whistle-pipe
+
+: Percussion
+{:drum}
+{:small drum}
+{:cymbals}
+ 
+: Drum
+bass drum
+bodhrán
+drum; 4gp; 20
+kettle drum
+snare drum
+tam
+tom-tom
+tympani
+war drum
+
+: Small Drum
+congas
+bongos
+
+: Cymbals
+bell
+cymbals
+chimes
+gong
 handbell
 hanging bell
+tabor
+
+: String
+aeolian harp
+archlute
+banjo
+banjolele
+bass
+dulcimer
+cello
+clavichord
+fiddle
+guitar
+gourd
+hammer dulcimer
+harp; 50gp+; 25
+harpsichord
+jute
+lap harp
+lap zither
+lap dulcimer
+lur
+lute; 25gp; 15
+lyre; 27gp; 10
+mandolin; 28gp; 15
+psaltery
+sitar
+slide dulcimer
+viola
+violin
+zither
+
+: Woodwind
+clarinet
+bassoon
+oboe
+contrabass
+contrabassoon
+charmer's flute
+pipe
+fife
+flute
+piccolo
+serpent
+panpipe
+ocarina
+
+: Other
+bagpipes
+bandore; 15gp; 10
+bombardon
+bones
+calliope
+cither
+cornopean
+flageolet
 harmonica
 harmonicon
-harp                   50gp+   25
-harpsichord
 hautbois
-herald’s trumpet
-horn                    6gp     7.5
 humming top
-kettle drums
-lap harp
-lur
-lute                   25gp    15
-lyre                   27gp    10
-mandolin               28gp    15
 melodeon
 natural shell
-oboe
-ocarina
 ophicleide
 pianola
 pipe organ
-pipes                   2gp     5
+pipes; 2gp; 5
 plectrum
-psaltery
 rattle
-rebec                  30gp    15
-recorder-flute
-saxophone
+rebec; 30gp; 15
 seraphina
 shawm
 shell horn
 spinet
-tabor
 tamborine
 theorbo
-trumpet
 tymbal
-violin
 virginals
-water-pipe
 whistle
-whistle-pipe
 wind chimes
 wind stones
-zither

@@ -7,10 +7,7 @@ Belt of {~{Abjuration}}
 Boots of {Spell#.*(?:walk|fall).*#}
 Bracers of {Abjuration}
 Ring of {{Animation|Enchantment|:Ring}}
-Rod of {{Conjuration|MetaMagic|:Rod}} ({#/{41-50}} charges), {30-42}" {metal:enchantable}
 Scroll of {{Spell|:Scroll}}
-Staff of {{Conjuration|Invocation|:Staff}} ({#/{20-25}} charges), {5-6}' {wood}
-Wand of {{Alteration|Conjuration|:Wand}} ({#/{81-100}} charges), {wand:material} {wand:mix} {made of:hard} 
 {ARCANE BOOK}
 {Amulet|Necklace|Pendant} of {{Evocation|Hypnotic|Necromantic}}
 {Book:Type} of {Spiritual}
@@ -28,8 +25,11 @@ Wand of {{Alteration|Conjuration|:Wand}} ({#/{81-100}} charges), {wand:material}
 {Musical Instrument} of {{Conjuration|Evocation|Illusion}}
 {POTION:LOOT}
 {POTION}
+{ROD}
+{STAFF}
 {TSR TREASURE}
 {UNIQUE MAGIC}
+{WAND}
 
 : Amulet
 Adornment
@@ -138,36 +138,6 @@ Teleport Other
 Trap Location
 Treasure Location
 
-: Rod
-Acid Balls
-Acid Bolts
-Cold Balls
-Curing
-Detection
-Disarming
-Door/Stair Location
-Drain Life
-Fire Balls
-Fire Bolts
-Frost Bolts
-Healing
-Identify
-Illumination
-Light
-Lightning Balls
-Lightning Bolts
-Magic Mapping
-Polymorph
-Probing
-Recall
-Restoration
-Sleep Monster
-Slow Monster
-Speed
-Teleport Other
-Trap Location
-Treasure Location
-
 : Scroll
 Acquirement
 Aggravate Monster
@@ -208,61 +178,3 @@ Trap Detection
 Trap/Door Destruction
 Treasure Detection
 Word of Recall
-
-: Staff
-Banishment
-Confuse Monsters
-Cure Light Wounds
-Curing
-Darkness
-Destruction
-Detect Evil
-Detect Invisible
-Dispel Evil
-Earthquakes
-Haste Monsters
-Healing
-Holiness
-Identify
-Light
-Mapping
-Power
-Remove Curse
-Sleep Monsters
-Slow Monsters
-Speed
-Starlight
-Summoning
-Teleportation
-the Magi
-
-: Wand
-Acid Balls
-Acid Bolts
-Annihilation
-Clone Monster
-Cold Balls
-Confuse Monster
-Disarming
-Dragon's Breath
-Dragon's Flame
-Dragon's Frost
-Drain Life
-Fire Balls
-Fire Bolts
-Frost Bolts
-Haste Monster
-Heal Monster
-Light
-Lightning Balls
-Lightning Bolts
-Magic Missile
-Polymorph
-Scare Monster
-Sleep Monster
-Slow Monster
-Stinking Cloud
-Stone to Mud
-Teleport Other
-Trap/Door Destruction
-Wonder

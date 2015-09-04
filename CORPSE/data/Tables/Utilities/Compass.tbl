@@ -12,11 +12,15 @@ southeast
 southwest
 northwest
 
+: UpDown
+up
+down
+
 : 4 = Cardinal
 
-: 8
-{:cardinal}
-{:corner}
+: 8 = Cardinal + Corner
+
+: 10 = Cardinal + Corner + UpDown
 
 : 16
 north

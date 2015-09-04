@@ -1,3 +1,5 @@
+/ http://www.random-generator.com/index.php?title=Military_Uniform
+
 : Uniform
 a {:servant uniform}
 a {:military uniform generic}
@@ -27,4 +29,4 @@ a harness of {fur and pelt:leather}
 a sword belt of {fur and pelt:leather}
 a tabard of of {fabric:common} and bearing the unit’s coat of arms
 an apron of {fur and pelt:leather}
-{:military accessories} {:military accessories{!different}}
+{:military accessories} and {:military accessories{!different}}

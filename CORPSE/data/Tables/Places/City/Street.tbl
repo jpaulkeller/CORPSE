@@ -1,8 +1,24 @@
 : Street
-Cathedral {:General}
-{Name} {:General}
-{Profession}'s {:General}
-{Pseudo Class} {:General}
+{Name} {5%{:Middle} }{:General}
+{Profession}'s {5%{:Middle} }{:General}
+{Pseudo Class} {5%{:Middle} }{:General}
+{:Less Common}
+
+: Less Common
+{A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z} {:General}
+{Adjective} {5%{:Middle} }{:General}
+{Noise} {:General}
+{Number:Ordinal} {:General}
+{Race{!OneWord}} {5%{:Middle} }{:General}
+{Structure} {5%{:Middle} }{:General}
+{Fauna{!OneWord}} {5%{:Middle} }{:General}
+{Flora{!OneWord}} {5%{:Middle} }{:General}
+
+: Middle
+hill
+hole
+mount
+{City Feature:Open Area}
 
 : General
 alley
@@ -13,10 +29,9 @@ corner
 crescent
 crossing
 crossroads
-hill
 junction
 lane
-mount
+overlook
 parade
 path
 place
@@ -27,5 +42,6 @@ stand
 street
 terrace
 trail
+view
 walk
 way

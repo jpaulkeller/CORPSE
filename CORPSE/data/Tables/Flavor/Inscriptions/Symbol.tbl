@@ -1,0 +1,39 @@
+/ http://www.random-generator.com/index.php?title=Mysterious_Symbols
+
+: Symbol
+5x a {10%{size} }{art:style} {:type} of a {color:standard} {charge} with {:extra} {:position}
+
+: Simple
+a {10%{size} } {:type} of a {color:standard} {charge}
+
+: type
+carving
+drawing
+engraving
+etching
+painting
+sketch
+
+: extra
+a {20%{art:style} }{charge}
+a {50%{humanoid} }{:text} {engraved|inscribed|painted|scratched|written}
+"{Inscription}"
+
+: text
+battle-cry
+curse
+motto
+name
+phrase
+poem
+riddle
+saying
+slogan
+word
+
+: position
+on the {left|right} side of it
+{across|on top of} it
+{above|over} it
+{below|beneath} it
+{inside|within} it

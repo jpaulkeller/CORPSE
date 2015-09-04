@@ -1,0 +1,15 @@
+: Leather
+{fur and pelt:leather}
+
+: Color
+black
+{50%{light|dark} }brown
+{color:dark}
+{color:drab}
+{color:light}
+
+: Texture
+dull 
+oiled 
+pebbled
+shiny 

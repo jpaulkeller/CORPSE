@@ -23,7 +23,13 @@ magical +{5}
 : Magic   {3d7-1}
 : Good    {d10+8}
 : Flat    {20}
-: Any = Flat + Weapon
+: Any = Flat + Weapon + Craftsmanship
+
+: Craftsmanship
+crudely constructed
+poorly made
+well made
+{exquisitely|masterfully|superbly} crafted
 
 : Weapon
 ceremonial
@@ -33,9 +39,3 @@ magical
 master-crafted
 normal
 ornate
-
-: Craftsmanship
-crudely constructed
-poorly made
-well made
-{exquisitely|masterfully|superbly} crafted

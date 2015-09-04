@@ -1,0 +1,366 @@
+: Encounter By Location
+10x {L:=Encounter Location}{L}: {{L} ENCOUNTER}
+
+===
+
+/ http://www.random-generator.com/index.php?title=ODnD_Wilderness_Encounter_Cruncher
+
+/ This generator rolls random wilderness encounters according to OD&D V3: The Underworld & Wilderness Adventures.
+/ It checks for encounters and getting lost by terrain, rolls encounter type (and whether the creature is in its lair,
+/ if that information is readily available), surprise for both sides and encounter distance accordingly, as well as 
+/ the encountered creature's reaction.
+
+<br>
+
+<sgdisplay iterations="1">'''Clear:''' [clear]</sgdisplay>
+<sgdisplay iterations="1">'''Woods:''' [woods]</sgdisplay>
+<sgdisplay iterations="1">'''River:''' [river]</sgdisplay>
+<sgdisplay iterations="1">'''Swamp:''' [swamp]</sgdisplay>
+<sgdisplay iterations="1">'''Mountains:''' [mountain]</sgdisplay>
+<sgdisplay iterations="1">'''Desert:''' [desert]</sgdisplay>
+
+: Reaction
+attacking
+3x hostile
+5x neutral
+3x friendly
+helpful
+
+: Enemy Surprise
+2x unsurprised
+surprised
+
+;clear
+5,No encounter. [clrLost]
+1,Encounter: [EnemySurprise] [clrEnc]. [clrPartySurprise] Reaction: [reaction]. [clrLost]
+
+;clrEnc
+1,[Flyer]
+1,[Giant]
+1,[Lycs]
+2,[basicAnimals]
+2,[typicalMen] [lair15]
+1,[Dragon]
+
+;clrPartySurprise
+4,Party not surprised, encounter at [Dice.4d6]0 yards.
+2,Surprised, encounter at [Dice.1d3]0 yards.
+
+;clrLost
+5,Not lost.
+1,Lost.
+
+;woods
+4,No encounter. [wdsLost]
+2,Encounter: [EnemySurprise] [wdsEnc]. [wdsPartySurprise] Reaction: [reaction]. [wdsLost]
+
+;wdsEnc
+1,[Flyer]
+1,[Giant]
+2,[Lycs]
+1,[wdsAnimals]
+2,[typicalMen] [lair15]
+1,[Dragon]
+
+;wdsPartySurprise
+4,Party not surprised, encounter at [Dice.2d6]0 yards.
+2,Surprised, encounter at [Dice.1d3]0 yards.
+
+;wdsLost
+4,Not lost.
+2,Lost.
+
+;river
+4,No encounter. [rvrLost]
+2,Encounter: [EnemySurprise] [rvrEnc]. [rvrPartySurprise] Reaction: [reaction]. [rvrLost]
+
+;rvrEnc
+1,[Flyer]
+1,[Giant]
+1,[Lycs]
+1,See "Animals" below
+1,[waterMen] [lair15]
+1,[Dragon]
+2,[Swimmer]
+
+;rvrPartySurprise
+4,Party not surprised, encounter at [Dice.4d6]0 yards.
+2,Surprised, encounter at [Dice.1d3]0 yards.
+
+;rvrLost
+5,Not lost.
+1,Lost.
+
+;swamp
+1,No encounter. [swpLost]
+1,Encounter: [EnemySurprise] [swpEnc]. [swpPartySurprise] Reaction: [reaction]. [swpLost]
+
+;swpEnc
+1,[Flyer]
+1,[Giant]
+1,[Lycs]
+1,[swpAnimals] or, if there is a river in this hex, [Swimmer]
+1,[typicalMen] [lair15]
+1,[Dragon]
+3,[Undead]
+
+;swpPartySurprise
+2,Party not surprised, encounter at [Dice.4d6]0 yards.
+1,Party is surprised, encounter at [Dice.1d3]0 yards.
+
+;swpLost
+1,Not lost.
+1,Lost.
+
+;mountain
+2,No encounter. [mtnLost]
+1,Encounter: [EnemySurprise] [mtnEnc]. [mtnPartySurprise] Reaction: [reaction]. [mtnLost]
+
+;mtnEnc
+1,[Flyer]
+1,[Giant]
+1,[Lycs]
+1,[mtnAnimals]
+1,[mtnMen] [lair15]
+2,[Dragon]
+
+;mtnPartySurprise
+2,Party not surprised, encounter at [Dice.4d6]0 yards.
+1,Party is surprised, encounter at [Dice.1d3]0 yards.
+
+;mtnLost
+2,Not lost.
+1,Lost.
+
+;desert
+1,No encounter. [dstLost]
+1,Encounter: [EnemySurprise] [dstEnc]. [dstPartySurprise] Reaction: [reaction]. [dstLost]
+
+;dstEnc
+2,[dstMen] [lair15]
+1,[Flyer]
+1,[Giant]
+1,[dstAnimals]
+1,[Dragon]
+
+;dstPartySurprise
+2,Party not surprised, encounter at [Dice.4d6]0 yards.
+1,Party is surprised, encounter at [Dice.1d3]0 yards.
+
+;dstLost
+1,Not lost.
+1,Lost.
+
+;dstAnimals
+1,Apts
+2,Banths
+2,Thoats
+1,Calots
+1,White Apes
+1,Orluks
+1,Sith
+2,Tharks
+1,Darseen
+
+;dstMen
+3,Nomads
+1,Dervishes
+1,Lord
+1,Wizard
+1,Red Martians
+2,Tharks
+1,Black Martians
+1,Yellow Martians
+1,White Martians
+
+;Dragon
+1,Black Dragons [lair60]
+1,White Dragons [lair60]
+1,Green Dragons [lair60]
+1,Blue Dragons [lair60]
+1,Red Dragons [lair60]
+1,Gold Dragons [lair60]
+1,Cockatrices [lair35]
+1,Basilisks [lair40]
+1,Wyverns [lair60]
+1,Balrogs
+1,Chimerae [lair50]
+1;Hydra ([heads] heads) [lair25]
+
+;Flyer
+2,Pegasi
+2,Rocs [lair20]
+1,Chimarae [lair50]
+2,Hippogrifs
+1,Griffons [lair10]
+1,Manticores [lair25]
+1,Wyverns [lair60]
+1,[Dragon]
+1,Balrogs
+
+;Giant
+1,Kobolds [lair50]
+1,Goblins [lair50]
+1,Orcs [lair50]
+1,Hobgoblins [lair50]
+1,Gnolls [lair50]
+1,Ogres [lair30]
+1,Trolls [lair50]
+1,Giants [lair30]
+1,Gnomes [lair60]
+1,Dwarves [lair50]
+1,Elves [lair25]
+1,Treants
+
+;Lycs
+1,Werewolves
+1,Wereboars
+1,Weretigers
+1,Werebears
+
+;basicAnimals
+1,Spiders
+1,Centipedes
+1,Lizards
+1,Toads
+1,Ants
+1,Weasels
+1,Apes
+1,Beetles
+1,Scorpions
+1,Lions
+1,Boars
+1,Snakes
+
+;wdsAnimals
+1,Centaurs [lair05]
+1,Unicorns
+1,Minotaurs [lair10]
+1,Gorgons [lair50]
+1,Pixies [lair25]
+1,Manticores [lair25]
+1,Medusae [lair75]
+
+;swpAnimals
+2,T-rexes
+2,Pteradactyles
+2,Triceratops
+1,Brontosauruses
+1,Stegosauruses
+
+;mtnAnimals
+2,Cave Bears
+2,Dire Wolves
+2,Sabretooth Tigers
+1,Mastodons
+2,Spotted Lions
+1,Wooly Rhinos
+1,Titanotheres
+1,Mammoths
+
+;typicalMen
+3,Bandits
+2,Brigands
+1,Necromancer
+1,Wizard
+1,Berserkers
+1,Lord
+1,Superhero
+1,Evil High Priest
+1,Patriarch
+
+;mtnMen
+1,Bandits
+2,Berserkers
+1,Brigands
+1,Lord
+1,Wizard
+1,Superhero
+2,Cavemen
+1,Necromancer
+1.Evil High Priest
+1,Patriarch
+
+;waterMen
+3,Buccaneers
+2,Pirates
+1,Mermen
+
+;Swimmer
+1,Giant Crabs
+2,Nixies (in lair)
+1,Giant Octopi
+1,Giant Squid
+1,Sea Monster [lair10]
+1,Giant Snakes
+1,Crocodiles
+1,Giant Leeches
+1,Mermen
+1,Giant Fish
+1,Dragon Turtle
+
+;Undead
+1,Skeletons
+1,Zombies
+1,Ghouls [lair20]
+1,Wights [lair60]
+1,Wraiths [lair20]
+1,Mummies [lair30]
+1,Spectres [lair25]
+1,Vampires [lair20]
+
+;lair05
+1,(in lair)
+19,(not in lair)
+
+;lair10
+1,(in lair)
+9,(not in lair)
+
+;lair15
+3,(in lair)
+17,(not in lair)
+
+;lair20
+1,(in lair)
+4,(not in lair)
+
+;lair25
+1,(in lair)
+3,(not in lair)
+
+;lair30
+3,(in lair)
+7,(not in lair)
+
+;lair35
+7;(in lair)
+13;(not in lair)
+
+;lair40
+2,(in lair)
+3,(not in lair)
+
+;lair50
+1,(in lair)
+1,(not in lair)
+
+;lair60
+3,(in lair)
+2,(not in lair)
+
+;lair75
+3,(in lair)
+1,(not in lair)
+
+;heads
+1,7
+1,8
+1,9
+1,10
+1,11
+1,12
+
+</sgtable>
+
+[[Category:Encounters]] [[Category:Fantasy]] [[Category:ODnD]]

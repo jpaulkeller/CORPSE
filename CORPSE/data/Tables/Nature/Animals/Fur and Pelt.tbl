@@ -11,7 +11,9 @@ black bear
 bobcat       2 gp  1
 brown bear
 ermine
+ferret
 fox
+marten
 mink         3 gp  0.5
 muskrat      4 gp  0.5
 otter        2 gp  0.5
@@ -85,8 +87,11 @@ zebu
 : Leather
 25x {:hide} hide
 alligator skin
+calfskin
 crocodile skin
 eelskin
 ostrich skin
 sharkskin
 snakeskin
+suede
+

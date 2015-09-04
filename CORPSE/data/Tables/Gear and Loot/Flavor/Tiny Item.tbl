@@ -2,8 +2,8 @@ acorn
 animal (small)
 arrowhead
 awl
-bandage
-bead
+bandage{50%s}
+bead{50%s}
 bell
 belt buckle
 book (small)
@@ -30,6 +30,7 @@ dart
 deck of cards
 dice
 doll
+domino
 drawing tool
 earring
 egg
@@ -51,6 +52,7 @@ holy symbol
 hoof pick
 hourglass
 incense
+ink bottle
 jesses
 jewel
 key
@@ -108,7 +110,6 @@ vial of {spice}
 whetstone
 whistle
 wire
-writing ink
 yarn
 {coin}
 {color:common} candle

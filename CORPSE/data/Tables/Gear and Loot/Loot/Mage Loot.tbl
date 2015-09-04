@@ -1,4 +1,89 @@
+/ http://www.random-generator.com/index.php?title=Items_Dug_Up_From_The_Sorcerers%27_Middens
+
 {arcane substance}
 {reagent}
 {spell component}
 {~{alchemy.item}}
+
+===
+{adj} {item}
+
+automaton
+bathtub
+bonesaw
+book
+candlestick
+censer
+chamber pot
+eyeglasses
+false teeth
+fossils
+fountain
+girdle
+jarred specimen
+lantern
+mask
+mushroom
+narcotic
+peppermill
+prayer beads
+puppet
+rattle
+safe
+sarcophogus
+skull
+syringe
+taxidermy
+teapot
+{container:potions}
+{container}
+{equipment}
+{furnishing}
+{jewelery}
+{luxury}
+{musical instrument}
+{tiny item}
+
+;adjective
+{arcane substance:adj}
+adamantine
+ancient
+animated
+astral
+bejewelled
+bone
+bountiful
+broken
+charming
+clockwork
+cursed
+demon
+diamond
+divine
+eldritch
+enlarging
+exalted
+exotic
+famous
+flattering
+futuristic
+glass
+golden
+iron
+ivory
+leviathan
+meteoric
+miniature
+mutating
+obsidian
+ordinary
+pestilent
+profane
+royal
+scrying
+star-forged
+taunting
+titan
+toothy
+venomous
+wise

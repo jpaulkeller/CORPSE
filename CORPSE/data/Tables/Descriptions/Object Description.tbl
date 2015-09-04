@@ -27,10 +27,3 @@ value: {value}
 
 : insc
 inscribed: {INSCRIPTION}
-inscribed: {LATIN PHRASE.LATIN}
-inscribed: {NAME}
-inscribed: {MOTTO:FICTIONAL}
-inscribed: {MOTTO:REAL}
-inscribed: {MOTTO}
-inscribed: {QUOTE}
-inscribed: {RHYME}

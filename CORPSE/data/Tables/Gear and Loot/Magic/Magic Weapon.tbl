@@ -440,14 +440,14 @@ There is an ornate scabbard of {:Utility.MetalDecor} inlaid with {:Utility.Ornam
 : SwordBladeDecor
 5,The blade is decorated with a {:Motif} motif.
 2,Serpentine runes run up and down the blade.
-4,The blade is decorated with runes in {:Utility.RuneLanguage} that convey the meaning <b>"{:Inscriptions.main}"</b>. <b>{:RuneGlowChance}</b>
+4,The blade is decorated with runes in {:Utility.RuneLanguage} that convey the meaning <b>"{INSCRIPTION}"</b>. <b>{:RuneGlowChance}</b>
 2,The blade is decorated with knotwork.
 2,The blade is decorated with an etched depiction of {:Artwork.Depiction}.
 2,The blade is decorated with an engraved depiction of {:Artwork.Depiction}.
 2,The blade is decorated with an embossed depiction of {:Artwork.Depiction} with detailwork in {:Utility.MetalDecor}.
 2,The blade is painted with shiny {:Color.dark} enamel.
 The blade has been carbonized with a flat {:Color.dark} paint to keep it from reflecting light except along the edges.
-10,The blade is inscribed with the word(s) <b>"{:Inscriptions.main}"</b> in {:Inscriptions.Language}. <b>{:RuneGlowChance}</b>
+10,The blade is inscribed with the word(s) <b>"{INSCRIPTION}"</b> in {:Inscriptions.Language}. <b>{:RuneGlowChance}</b>
 2,The blade is dull and was probably intended only for display.
 2,The entire blade is marked with symbols associated with {:Secret Society Name.main} and was probably intended for ceremonial use by that {:CultWord}.
 20,
@@ -547,7 +547,7 @@ The basket has a scalloped, clamshell appearance.
 3,The decorative elements of the sword are composed of {:Utility.MetalDecor} {:MetalHistoryChance}.
 
 : PommelShapes
-the head of an Illithid, it's tentacles wrapping around the hilt{:PommelEyes}
+the head of an Illithid, its tentacles wrapping around the hilt{:PommelEyes}
 2,the head of a Human male, its visage frozen in horror{:PommelEyes}
 2,the head of a helmeted man with a determined expression{:PommelEyes}
 2,the head of a wily-looking Elf{:PommelEyes}
@@ -601,12 +601,10 @@ a fish head
 
 : RuneGlowChance
 8,
-The inscription glows faintly with a {:Color.hues} light.
-The inscription glows brightly with a {:Color.hues} light.
-The inscription glows faintly with a {:Color.hues} light when {:Utility.CreatureTypes}s are nearby.
-The inscription glows brightly with a {:Color.hues} light when {:Utility.CreatureTypes}s are nearby.
-The inscription glows faintly with a {:Color.hues} light if monsters are nearby.
-The inscription glows brightly with a {:Color.hues} light if evil is nearby.
+The inscription glows {faintly|brightly} with a {:Color.hues} light.
+The inscription glows {faintly|brightly} with a {:Color.hues} light when {:Utility.CreatureTypes}s are nearby.
+The inscription glows {faintly|brightly} with a {:Color.hues} light if monsters are nearby.
+The inscription glows {faintly|brightly} with a {:Color.hues} light if evil is nearby.
 
 ===
 
@@ -745,11 +743,11 @@ Brilliant Energy  +4 Bonus DMG
 1,The axe head is decorated with a serpent motif.
 1,The axe head is decorated with engravings of leaves and vines.
 1,The axe head is decorated with spiraling engravings.
-1,The axe head is decorated with runes in [Utility.RuneLanguage] that convey the meaning <b>“[Inscriptions.main]”</b>.
+1,The axe head is decorated with runes in [Utility.RuneLanguage] that convey the meaning <b>“{INSCRIPTION}”</b>.
 1,The axe head is decorated with knotwork.
 1,The axe head is painted with shiny [Color.dark] enamel.
 1,The axe head has been carbonized with a flat black paint to keep it from reflecting light except along the edges.
-3,The axe head is inscribed with the word(s) <b>“[Inscriptions.main]”</b> in [Inscriptions.Language].
+3,The axe head is inscribed with the word(s) <b>“{INSCRIPTION}”</b> in [Inscriptions.Language].
 1,[AxeHeadDepictionChance] [AxeHeadDepictionChance]
 
 ;AxeHeadDepiction
