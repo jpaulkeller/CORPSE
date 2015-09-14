@@ -1,0 +1,332 @@
+/ http://random-generator.com/index.php?title=American_Indian_Names
+/ http://www.random-generator.com/index.php?title=SGNP_cheyenne
+
+10x {:Male}
+10x {:Female}
+
+: Male
+He-Who-{:Verb}
+{:Adj} {:Last}
+{:First}-{:Like}-{:Last}
+{:Verb}-{:With}-{{:Last}+}
+{Number:TwoToTwelve}-{{:Last}+}
+
+: Female
+She-Who-{:Verb}
+{:Adj} {:Female Last}
+{:First}-{:Like}-{:Female Last}
+{:Verb}-{:With}-{{:Female Last}+}
+{Number:TwoToFive}-{{:Female Last}+}
+
+: With
+For
+Like
+The
+With
+
+: Like
+3x As
+3x Like
+3x With
+About
+Above
+After
+Before
+Behind
+Below
+By
+For
+Near
+Of
+On
+Under
+Within
+
+: First
+Angry
+Big
+Cold
+Crazy
+Crooked
+Cunning
+Dark
+Fierce
+Light
+Little
+Happy
+Howling
+Left Hand
+Looking
+Mighty
+One-Eyed
+Prairie
+Quiet
+Rising
+Spotted
+Silent
+Smiling
+Squinting
+Standing
+Strong
+Sturdy
+Warm
+Wild
+Wise
+{Color:Simple}
+{Number:Ten}
+
+: Verb
+Bends
+Bites
+Calls
+Dances
+Doubts
+Dreams
+Falls
+Fights
+Follows
+Gathers
+Glides
+Hides
+Hunts
+Leads
+Listens
+Mauls
+Pounces
+Runs
+Screams
+Seeks
+Shouts
+Sings
+Soars
+Stalks
+Stands
+Steps
+Strikes
+Swims
+Talks
+Tracks
+Walks
+Whispers
+
+: Adj
+Big
+Black
+Bloody
+Blue
+Brown
+Burning
+Cool
+Cold
+Cowardly
+Crazy
+Cunning
+Dancing
+Dark
+Elder
+Falling
+Fierce
+Fighting
+Flying
+Gliding
+Great
+Green
+Hidden
+Light
+Little
+Long
+Mighty
+Mountain
+Quiet
+Red
+Running
+Screaming
+Shouting
+Silent
+Singing
+Sitting
+Soaring
+Squatting
+Standing
+Strong
+Swimming
+Talking
+Walking
+Whispering
+White
+Wild
+Wise
+Yellow
+
+: Female Last
+Blossom
+Flower
+Mare
+Princess
+Seed
+Squaw
+{:Last}
+
+: Last = Animal + Nature + Spiritual
+
+: Animal
+Badger
+Bear
+Beaver
+Bird
+Brave
+Buffalo
+Bull
+Cat
+Chief
+Claw
+Claws
+Cougar
+Coyote
+Crow
+Deer
+Dog
+Duck
+Eagle
+Elk
+Eyes
+Feather
+Ferret
+Fish
+Foot
+Fox
+Goose
+Hawk
+Horse
+Lizard
+Lynx
+Otter
+Owl
+Ox
+Panther
+Paw
+Plume
+Porcupine
+Ptarmigan
+Rabbit
+Raven
+Salmon
+Snake
+Squirrel
+Trout
+Turtle
+Warrior
+Wolf
+Wolverine
+
+: Nature
+Ash
+Branch
+Brook
+Cloud
+Fire
+Flint
+Grass
+Hill
+Jade
+Leaf
+Lightning
+Oak
+Onyx
+Pine
+Prairie
+Rain
+River
+Rock
+Moon
+Mountain
+Snow
+Star
+Stone
+Stream
+Sun
+Thunder
+Tree
+Water
+Wind
+
+: Weapon
+Arrow
+Axe
+Bow
+Hatchet
+Knife
+Spear
+
+: Spiritual
+Dream
+Ghost
+Healer
+Heart
+Spirit
+Shadow
+
+===
+
+
+
+;female
+Crooked Woman / WAH-KE-HI
+Dove / MIS-SO-IH
+Standing Woman / LA-CAT-ME-AH
+Shave-Head / AH-NOSTS-SE-E
+Talking Woman / AH-MA-HI
+Woman-On-The-Hill / MAH-A-YAW5. Good Woman / WA-SHA
+Turtle / MA-IN-NO
+Soaring Woman / MOTS-SE-A
+Weed Woman / NE-E-NOW-E-SAH
+Squirrel Woman / HO-MA-ERA
+White-Buffalo-Woman /WO-IS-TAH
+Virgin Woman / HE-ZOOA-KI-SA
+Black-Foot / STEW-IS-TAN-NA
+Walking Woman / UM-MA-HA
+Gray-Headed / WAPINTA-TAN-WIC
+Lead Woman / HO-HI-E
+Antelope Woman / SUE-I-HE-WUC
+Bear Woman / NAK-KUH
+Down Woman / TA-NO-SU
+Elk Woman / MO-A-HA-AH
+Red-Painting / MI-TO-MO-NI
+Feather Woman / WAH-TAH-NA
+Sand Girl / NAH-BA-IS-SA
+Wild-Cat-Woman / MUS-KO-VA
+Woman Standing / AH-CHIS-TAH
+Foreign Woman/ O-NE-HATCH
+Black Woman / MO-HE-ETS-IM
+Owl Woman / MIS-TO-UN-STA
+Shell Woman / AH-KA-WAH-NA
+Pipe Woman / NO-I
+Red-Belly Woman / MA-A-CIH
+China Woman / MA-NI-AH
+Mouse Road / OH-CHA-IN
+Old Woman / KAH-IS
+Cougar Woman / NA-KU
+Little Woman / MO-CHA-A
+Medicine Woman / O-WE-HI
+Sage Woman / ONE-HI-YOU
+Woman Afraid / DA-KA-MA-EE
+Bad Teeth / O-CON-NE-NIC
+Spotted Bird / VA-GIS-A-WAH-US
+Squint Eye  / NO-WA-HY
+Howling Water / PA-WA-NIS-TA
+Big Owl / MIS-TI-MI-AH
+Howling In Cloud / WAH-AH-NIS-TO
+Black Hair / MO-KI-TO-SE-A
+Little Traveler / HO-O-MO-SE
+Low Standing / WHA-HA-NISH
+Make-Out-A-Road / HO-AS-TO-NA
+Ptarmigan / HA-AS-TUM
+Red Claws / MOW-MIP-PA
+Red Plume / MU-CHA-NA
+Mourning Howler / MU-IN-MIS-TA
+Outsider / O-HO-MA
+Cut Arm / A-NA-HI-WA
+Red Leaf / MI-VA-PA-TAP
+Walking Behind / TACK-SA
+High-Beak Bird / NO-KE-HE-USE
+Stone Road / HE-HO-NI-MAH

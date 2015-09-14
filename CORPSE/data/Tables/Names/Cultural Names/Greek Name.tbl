@@ -1,204 +1,18 @@
-Agape
-Agathangelos
-Agathe
-Agathon
-Aglaia
-Aisopos
-Akakios
-Alexandra
-Alexandros
-Alexios
-Alkaios
-Ambrosia
-Ambrosios
-Anakletos
-Anaxagoras
-Andronikos
-Antipater
-Apollinaris
-Apollodoros
-Apollonios
-Appolonia
-Archelaos
-Archippos
-Argyros
-Ariana
-Aristarchus
-Aristokles
-Aristomache
-Ariston
-Arkadios
-Arsenios
-Artemidoros
-Artemisia
-Artemisios
-Aspasia
-Atalanta
-Athanasia
-Athanasios
-Athene
-Bion
-Briesis
-Charis
-Chariton
-Chrysanthos
-Cybela
-Demetria
-Demosthenes
-Demostrate
-Diodotos
-Dionysia
-Dodekatheon
-Doto
-Eirenaios
-Eirene
-Eleutherios
-Elpis
-Epaphroditos
-Epicaste
-Epiktetos
-Epiros
-Eriboea
-Euaristos
-Eudokia
-Eudoxia
-Eumelia
-Eunike
-Euphemia
-Euphranor
-Eurynome
-Eusathios
-Eusebios
-Euthalia
-Eutropia
-Eutropios
-Eutychios
-Evadne
-Gaiane
-Galatea
-Gennadios
-Hekabe
-Helladios
-Herakleides
-Herakleitos
-Hermogenes
-Hermokrates
-Hermolaos
-Heron
-Hippolytos
-Hypatia
-Hyrmina
-Iaera
-Iomene
-Iphis
-Kallias
-Kallisto
-Kallistrate
-Karpos
-Koritto
-Kyra
-Kyriakos
-Kyros
-Lais
-Laodameia
-Lempetie
-Ligeia
-Lykourgos
-Lysandra
-Lysimachos
-Malaga
-Medesicaste
-Melaina
-Methodios
-Metrophanes
-Mila
-Miltiades
-Mnason
-Myrinne
-Mysia
-Nikandros
-Nikephoros
-Nikias
-Nikodemos
-Niobe
-Olympia
-Olympias
-Olympiodoros
-Olympos
-Onesimos
-Otonia
-Paeonia
-Pamphilos
-Pankratios
-Panope
-Pantaleon
-Panther
-Pantheras
-Paramonos
-Pelagia
-Pelagios
-Pellene
-Phaidros
-Phile
-Philon
-Philotheos
-Phoedocia
-Phokas
-Photine
-Polycarpos
-Praxiteles
-Prochoros
-Ptolemaios
-Ptolemais
-Pyros
-Rebia
-Rhea
-Rhodope
-Scipia
-Scylla
-Seleukos
-Selline
-Simonides
-Sophronia
-Sophronios
-Sosigenes
-Sostrate
-Sotera
-Spartanica
-Straton
-Syntyche
-Telephasse
-Thais
-Themis
-Themistokles
-Theodora
-Theodoros
-Theodosia
-Theodotos
-Theophania
-Theophila
-Theophylaktos
-Therapon
-Theron
-Thessala
-Thisbe
-Thoukydides
-Timo
-Tryphon
-Tryphosa
-Urania
-Xanthe
-Xanthippe
-Xene
-Xenokrates
-Zenobia
-Zoe
-Zopyros
-Zosime
-Zosimos
-Zotikos
+/ http://www.random-generator.com/index.php?title=SGNP_byzantine_greek
+
+: Greek Name
+{:Male}
+{:Female}
+
+: Male
+{:Male First} {:Male Surname} {20%{:Male Surname} }{20%{:By Name}}
 
 : Female
+5x {:Female First} {:Male Surname} {:Female Surname}
+2x {:Female First} {:Female First} {:Female Surname}
+{:Female First} {:Female Surname}
+
+: Female First
 Achaia
 Achradina
 Actaëe
@@ -215,8 +29,8 @@ Aganippe
 Agape
 Agapia
 Agarista
-Agathé
 Agathonice
+Agathé
 Agave
 Aglaia
 Aglaurus
@@ -240,9 +54,10 @@ Amphithoe
 Amphitrite
 Ampinomene
 Amplias
-Anaïs
 Anastasia
+Anaïs
 Andromeda
+Anna
 Antehe
 Anteia
 Antheia
@@ -270,8 +85,8 @@ Astera
 Astyoche
 Astyocheia
 Atalanta
-Atë
 Athis
+Atë
 Auge
 Augo
 Autonoe
@@ -294,8 +109,9 @@ Castianiera
 Charis
 Chione
 Chiore
-Chloë
 Chloris
+Chloë
+Christina
 Chryse
 Chryseis
 Chrysothemis
@@ -336,12 +152,15 @@ Dirce
 Doris
 Dorothea
 Doto
+Dragna
 Drosis
 Dynamene
 Egeria
 Egina
 Eidothee
 Eileithyia
+Eirene
+Elaiodora
 Elcmene
 Electra
 Elpir
@@ -356,6 +175,7 @@ Eriphyle
 Eris
 Eucarpia
 Eudokia
+Eugenia
 Eunice
 Euodias
 Euphro
@@ -378,6 +198,7 @@ Hecuba
 Hekabe
 Hekaline
 Hekate
+Helene
 Helice
 Helike
 Heliodora
@@ -399,6 +220,7 @@ Ianeira
 Ianessa
 Ianthe
 Ino
+Ioanna
 Iola
 Iolanthe
 Iole
@@ -422,14 +244,14 @@ Katana
 Katina
 Kephissa
 Kharmion
-Khlöe
 Khloris
+Khlöe
 Kleio
 Kleopatra
 Klymene
 Klytemnestra
-Koré
 Koritto
+Koré
 Kydilla
 Kynna
 Kynthia
@@ -449,6 +271,7 @@ Lasthena
 Latona
 Leda
 Lede
+Leonta
 Leto
 Leucothea
 Leucothoë
@@ -459,6 +282,7 @@ Maeonia
 Maera
 Maia
 Maiandria
+Maria
 Marpessa
 Medea
 Medesicaste
@@ -565,9 +389,11 @@ Sappho
 Scylla
 Sebasteia
 Semele
+Simonis
 Sophia
 Sotera
 Speio
+Stania
 Stheneboea
 Stratonice
 Tecmessa
@@ -579,7 +405,10 @@ Theano
 Thebe
 Thelma
 Themis
+Theodora
+Theodosia
 Theodotis
+Theofana
 Theophane
 Theophania
 Theophano
@@ -588,6 +417,7 @@ Thessala
 Thessalonike
 Thetis
 Thisbe
+Thomais
 Thoë
 Thoösa
 Thyia
@@ -605,7 +435,7 @@ Zenobia
 Zita
 Zoe
 
-: Male
+: Male First
 Abantes
 Abas
 Abascantus
@@ -686,6 +516,7 @@ Aleuas
 Alexandros
 Alexarchos
 Alexias
+Alexios
 Alexis
 Alexon
 Alkamenos
@@ -745,6 +576,7 @@ Androbulos
 Androcles
 Androdamos
 Androgeus
+Andronikos
 Aneristos
 Aniketos
 Anisodoros
@@ -938,6 +770,7 @@ Choeros
 Chremes
 Chremon
 Chremonides
+Christophoros
 Chromis
 Chromius
 Chrysaor
@@ -1243,6 +1076,7 @@ Gorgias
 Gorgion
 Gorgos
 Gorgythion
+Gregoras
 Gregorius
 Gryllus
 Gurgos
@@ -1328,6 +1162,7 @@ Hyrcanus
 Hyrtacus
 Hyrtius
 Iakchos
+Iakobos
 Ialmenes
 Iambulus
 Iamus
@@ -1352,6 +1187,7 @@ Imbrus
 Inachos
 Inachus
 Inaros
+Ioannes
 Iobates
 Iolaos
 Iollas
@@ -1423,6 +1259,7 @@ Kleomenes
 Koines
 Koinos
 Konon
+Konstantinos
 Koragos
 Korax
 Kosmas
@@ -1474,6 +1311,7 @@ Leon
 Leonidas
 Leonnatos
 Leontiades
+Leontios
 Leontis
 Leoprepes
 Leotychides
@@ -1636,9 +1474,12 @@ Nikanor
 Nikasios
 Nikeratos
 Nikias
+Nikodemos
+Nikolaos
 Nikomachos
 Nikomedes
 Nilus
+Niphon
 Nireus
 Nisos
 Noemon
@@ -1760,6 +1601,7 @@ Periscus
 Peritas
 Periumus
 Peteos
+Petros
 Peukestes
 Phaedo
 Phaenippos
@@ -2062,6 +1904,7 @@ Theocydes
 Theodekles
 Theodoros
 Theodotus
+Theodoulos
 Theognis
 Theomestor
 Theomestros
@@ -2163,3 +2006,108 @@ Zethus
 Zeuxidamos
 Zeuxis
 Zosimus
+
+: Female Surname
+Adriane
+Agallina
+Angelina
+Aprene
+Argyros
+Asanina
+Balsamina
+Boumbalina
+Choumne
+Chrysaphina
+Chrysolorina
+Dalassene
+Doukina
+Eirenikina
+Gabrina
+Glabina
+Kalamane
+Kaloethina
+Komnene
+Kontostephane
+Koressina
+Laskarina
+Limpidarina
+Manouelitessa
+Melachrine
+Mouzalina
+Palaiologina
+Paraspondylina
+Philanthropene
+Pleustina
+Rossatina
+Sebastopoulina
+Sgourina
+Sklerina
+Tagarina
+Trichina
+Tsaphina
+Tzamplakina
+Zaridina
+
+: Male Surname
+Adrianos
+Agallon
+Angelos
+Aprenos
+Argyros
+Asanes
+Balsamon
+Boumbalis
+Choumnos
+Chrysaphes
+Chrysoloras
+Dalassenos
+Doukas
+Doukas
+Eirenikos
+Gabras
+Glabas
+Kalamanos
+Kaloethes
+Komnenos
+Kontostephanos
+Koresses
+Laskaris
+Limpidares
+Manouelites
+Melachrinos
+Mouzalon
+Palaiologos
+Paraspondylos
+Philanthropenos
+Pleustes
+Rossatas
+Sebastopoulos
+Sgouros
+Skleros
+Tagaris
+Trichas
+Tsaphas
+Tzamplakon
+Zarides
+
+: By Name
+Alieus (fisherman)
+Chalkeus (smith)
+Diakonos (deacon)
+Flevotomos (doctor)
+Gounaras (furrier)
+Iereus (priest)
+Kalligas (shoe-maker)
+Kepouros (gardener)
+Krasopolia (wineseller)
+Ktistes (mason)
+Makellares (butcher)
+Mylonas (miller)
+Neropoles (water-seller)
+Pelekanos (carpenter) 
+Raptes (tailor)
+Skiadas (hat-maker)
+Trykalas (potter)
+Tzangares (shoemaker)
+Vagenas (barrel-maker)
+Yfantes (weaver)

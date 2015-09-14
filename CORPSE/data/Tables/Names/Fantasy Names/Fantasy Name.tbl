@@ -1,0 +1,32 @@
+: Fantasy Name
+{Aquatic Name}
+{Barbarian Name:Full}
+{Botanical Name}
+{Druid Name}
+{Frontier Name}
+{Generated Name}
+{Hobbit Name}
+{Middle-earth Name}
+{Native American Name}
+{Noble Name}
+{Pirate Name}
+{Ranger Name}
+{Saint Name}
+{Tiefling Name}
+
+: Male
+{Dwarf Name:Male}
+{Frontier Name:Male}
+{Hobbit Name:Male}
+{Middle-earth Name:Male}
+{Native American Name:Male}
+{Tiefling Name:Male}
+
+: Female
+{Botanical Name:Female}
+{Dwarf Name:Female}
+{Frontier Name:Female}
+{Hobbit Name:Female}
+{Middle-earth Name:Female}
+{Native American Name:Female}
+{Tiefling Name:Female}

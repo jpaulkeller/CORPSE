@@ -3,22 +3,22 @@
 : Enchanted Item
 / {MAGIC ARMOR}
 / {MAGIC WEAPON}
-Belt of {~{Abjuration}}
+Belt of {~{Spell:Abjuration}}
 Boots of {Spell#.*(?:walk|fall).*#}
-Bracers of {Abjuration}
+Bracers of {Spell:Abjuration}
 Ring of {{Animation|Enchantment|:Ring}}
 Scroll of {{Spell|:Scroll}}
 {ARCANE BOOK}
 {Amulet|Necklace|Pendant} of {{Evocation|Hypnotic|Necromantic}}
-{Book:Type} of {Spiritual}
+{Book:Type} of {Spell:Spiritual}
 {CHARM}
 {Cloak|Robe} of {{Illusion|Transference}}
 {Clothing} of {SPELL}
 {Equipment} of {SPELL}
 {Gem} of {SPELL}
 {Gloves|Gauntlets} of {{Environmental|Kinetic|:Amulet}}
-{Goggles|Mask} of {Divination}
-{Helm|Hood|Hat} of {Empathic}
+{Goggles|Mask} of {Spell:Divination}
+{Helm|Hood|Hat} of {Spell:Empathic}
 {Jewelry} of {SPELL}
 {Magic Robe.Name}
 {Mushroom|Potion} of {{:Mushroom|:Potion}}

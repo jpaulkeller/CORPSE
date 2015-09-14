@@ -2,31 +2,75 @@
 
 : Aztec Name
 {:Prefix}{:Suffix}
-{:Male}
-{:Female}
-{:Town}
+{:Male.Name}
+{:Female.Name}
+
+.Name, Meaning
 
 : Male
+Acamapichtli; handful of reeds
+Achcauhtli; leader
 Aheletl
 Ahuetzatl
+Ahuiliztli; joy
 Amatzin
-Atzin
+Amoxtli; book
+Atl; water
 Atzin
 Catlaca
 Catlohtzin
+Centehua; only one
+Chicahua; strong
+Chimalpopoca; smoking shield
+Chipahua; clean
+Cipactli; alligator
+Citlalli; star
+Citlalmina; arrow stars, meteorites
+Coatl; snake
 Colmima
+Cozcaquauhtli; vulture
+Cualli; good
+Cuetzpalli; lizard
 Cuhzina
+Cuixtli; kite
 Cumima
+Ehecatl; wind
 Emipatl
+Etalpalli; wing
+Eztli; blood
+Ichtaca; secret
+Icnoyotl; friendship
+Ilhuitl; day
+Itotia; dance
+Itz; obsidian
+Itzcoatl; obsidian snake
 Itzin
 Itzixcatl
+Iuitl; feather
+Ixtli; face
+Izel; unique
+Mahuizoh; glorious person
+Manauia; defend
+Matlalihuitl; purple feather
 Matzina
 Maxtlapot
+Mecatl; glorious lineage
 Metexca
+Meztli; moon
+Miquiztli; death
 Miztlilxi
 Mocatzin
+Momoztli; altar
+Moyolehuani; enamored one
+Nahuatl; four waters
+Nelli; truth
+Nochehuatl; consistent
+Nochtli; prickly pear fruit
+Ohtli; road
 Otoc
+Patli; medicine
 Pocatli
+Quauhtli; eagle
 Quentzina
 Quetzina
 Quetzquiha
@@ -36,59 +80,131 @@ Tahima
 Tangaxi
 Tazina
 Tecama
-Tecama
 Temayeuatzin
+Tenoch; stone pillar
 Thlalchotli
+Tlachinolli; fire
 Tlahuaqui
 Tlalpana
 Tlelohue
 Tlotzina
+Toltecatl; artist
 Toqualpan
 Toquihue
 Tzinali
+Xihuitl; comet
+Xipil; noble of the fire
+Xiuhcoatl; fire serpent
+Xiuhtonal; precious light
+Xochipepe; flower-gatherer
 Xochuatzin
+Yaotl; warrior
+Yayauhqui; black smoking mirror
+Yolotli; heart
+Yoltzin; small heart
+Yolyamanitzin; considerate person
+Zolin; quail
 
 : Female
+Acatl; reed
 Atlantin
 Atzalxochin
 Atzizquimal
+Azcalxochitzin; ant flower
 Cacahitli
 Cahitlaxoch
 Capalxoche
 Cauaxochitli
+Chalchiuitl; emerald
 Chitlacalxoch
 Chuatlinchitli
 Cihitlina
+Cihuaton; little woman
+Citlalmina; female hero
+Coaxoch; serpent flower
+Coszcatl; jewel
+Cozamalotl; rainbow
 Cuetlocapo
+Cuicatl; song
+Eleuia; wish
+Eloxochitl; magnolia
 Halchitlaco
 Illochitl
+Itzcuintli; dog
+Ixcatzin; like cotton
 Izihualman
 Malacuichpo
 Malancapo
+Malinalli; grass
+Malinalxochitl; grass flower
 Malmanetzin
 Malocihe
 Manena
 Manopantzin
+Matlal; dark green
 Matlocoxoch
 Matzinopo
+Mazatl; deer
 Miahitlaxoch
 Mixochitli
 Miyahitlaco
 Miyahitlanco
+Miyaoaxochitl; maize tassel
+Mizquixaual; mesquite face paint
+Moquihuix; drunkard
+Necahual; survivor, left-behind
+Nenetl; doll
+Nezahual; hungry
+Nezahualcoyotl; hungry coyote
+Nochtli; prickly pear cactus
+Noxochicoztli; necklace of flowers
+Ocelotl; ocelot
 Ochixochitl
 Ochizizquin
+Ozomatli; monkey
+Papan; flag
+Pochteca
+Quetzalxochitl; precious flower
+Quiauhxochitl; rain flower
+Tecpatl; flint knife
+Teicuih; younger sister
+Teoxihuitl; precious and divine
+Tepetl; mountain
+Tepin; little one
+Teyacapan; first born
 Tiacahimiah
 Tiacamali
 Tiacapantoztl
 Tinalanco
 Tinopana
 Tlacauaxoche
+Tlaco; middle-born
+Tlacoehua; middle one
+Tlacotl; twig
+Tlalli; earth
+Tlanextli; radiance and majesty
+Tlantli; teeth
 Tlaxiuhtzina
 Tlaxochitli
+Tlazohtzin; one who is loved
+Tlexictli; fire navel
 Tlinenetzin
+Tochtli; rabbit
+Tonalnan; mother of light
 Totloxoche
+Tziquetzalpoztectzin; broken plume
+Xiloxoch; calliandra flower
+Xochicotzin; little necklace
+Xochiquetzal; most beautiful flower
+Xochitl; flower
 Xochitlaco
 Xochitloco
+Xochiyotl; heart of a gentle flower
+Xoco; youngest sister
+Xocoyotl; youngest child
+Yolihuani; source of life
+Yoloxochitl; flower of the heart
+Zeltzin; delicate
 
 : Town
 Acahuan
@@ -119,7 +235,6 @@ Teotepal
 Teotepec
 Tepanang
 Tepeca
-Tepeco
 Tepeco
 Tezila
 Titla

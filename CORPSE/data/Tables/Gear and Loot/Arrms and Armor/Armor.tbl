@@ -17,7 +17,6 @@
 
 .Armor           Defense    Agi               Cost     Wt    AC  DP     S     P     B
 
-
 Armor Padding                                   3 gp    5     9    3     0    -1    -1
 Augmented Mail                                175 gp   44     4   28    +2    +1    -2
 Banded Mail                                   200 gp   35     4   30    +2     0    +1
@@ -94,6 +93,8 @@ Studded Leather      3      -3                                6
 /                                                                       
 / [2]  Note that Natural Armor does not affect the creature's agility. 
 /      It is possible to combine Natural Armor with another armor.     
+
+===
 
 Armor                     PD  DR
       

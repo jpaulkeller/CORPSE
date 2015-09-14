@@ -16,8 +16,8 @@
 : Male
 {10%{Letter}. }{:Male First} {:Surname}{15%, {:SUFFIX}}
 {:Cowboy}
-{:Male First} {25%{Letter}. }{:Surname}{15%, {:SUFFIX}}
 {:Male First} {20%{:Male First} }{:Surname}{15%, {:SUFFIX}}
+{:Male First} {25%{Letter}. }{:Surname}{15%, {:SUFFIX}}
 {Letter}. {Letter}. {:Surname}{10%, {:SUFFIX}}
 
 : Female
@@ -166,6 +166,7 @@ Sioux
 IV
 
 : Female First
+
 Abbie
 Abby
 Abigail
@@ -183,6 +184,7 @@ Alabama
 Alberta
 Alice
 Alicia
+Allison
 Alma
 Althea
 Amanda
@@ -434,8 +436,10 @@ Irma
 Isabel
 Isabella
 Isabelle
+Jamie
 Jane
 Janet
+Janice
 Janie
 Jean
 Jeanette
@@ -451,6 +455,7 @@ Jesse
 Jessica
 Jessie
 Jewel
+Jill
 Jimmie
 Jo
 Joan
@@ -473,7 +478,9 @@ Juliet
 June
 Justine
 Karen
+Kat
 Kate
+Katey
 Katharine
 Katherine
 Kathleen
@@ -481,6 +488,7 @@ Kathryn
 Katie
 Katy
 Kay
+Kelly
 Kitty
 Lana
 Laura
@@ -572,6 +580,7 @@ Matilda
 Mattie
 Maud
 Maude
+Maureen
 Maxine
 Melanie
 Melinda
@@ -675,6 +684,7 @@ Selena
 Selina
 Selma
 Serena
+Shelley
 Shirley
 Sidney
 Sigrid
@@ -683,6 +693,7 @@ Sofia
 Sophia
 Sophie
 Stella
+Sue
 Susan
 Susanna
 Susannah
@@ -724,6 +735,32 @@ Zadie
 Zelma
 
 : Male First
+Al
+Abe
+Bill
+Bob
+Buck
+Chuck
+Dan
+Doug
+Frank
+Gene
+Gus
+Hank
+Jake
+Jeb
+Jed
+Jim
+Kit
+Mike
+Ross
+Roy
+Sam
+Tom
+Travis
+Will
+Zack
+Zeke
 Aaron
 Abel
 Abraham
@@ -1598,7 +1635,6 @@ Zebulon
 Zeke
 
 : Surname
-Aaron
 Abbott
 Abby
 Abercrombie
@@ -1680,6 +1716,7 @@ Ballard
 Banks
 Banning
 Bannister
+Banton
 Barber
 Barclay
 Barker
@@ -2133,6 +2170,7 @@ Cyrus
 Dahl
 Dailey
 Dale
+Dallas
 Dalton
 Daly
 Damon
@@ -2724,6 +2762,7 @@ Hightower
 Hildebrand
 Hildreth
 Hilgert
+Hill
 Hilliard
 Hillis
 Hinds
@@ -2990,6 +3029,7 @@ Lambrecht
 Lanahan
 Lancaster
 Landon
+Lane
 Lang
 Lange
 Langford
@@ -3002,6 +3042,7 @@ Lantz
 Lapham
 Larimer
 Larkin
+Larrabee
 Larson
 Larue
 Laskowski
@@ -3171,6 +3212,7 @@ McAlpine
 McAndrew
 McArthur
 McAuley
+McBain
 McBride
 McCabe
 McCafferty
@@ -3781,7 +3823,6 @@ Roddy
 Roderick
 Rodgers
 Rodriguez
-Rodriguez
 Rogers
 Rohr
 Roland
@@ -4079,6 +4120,7 @@ Thomas
 Thomlinson
 Thompkins
 Thompson
+Thomson
 Thorndike
 Thornton
 Thorpe
@@ -4229,7 +4271,6 @@ Welsh
 Wentworth
 Werner
 West
-West
 Westbrook
 Westcott
 Westerfield
@@ -4287,6 +4328,7 @@ Willsey
 Wilmot
 Wilsey
 Wilson
+WilsonAaron
 Winch
 Winchell
 Winchester

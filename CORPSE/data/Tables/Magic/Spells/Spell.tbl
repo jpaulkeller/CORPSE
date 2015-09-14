@@ -1,65 +1,1229 @@
-/ Sources: TSRPH2 = Player's Handbook 2nd Edition
+/ Sources: TSRPH2  = Player's Handbook 2nd Edition
 /          CORPSE = Computer Oriented Role Playing System and Environment
-/          Dgn:V1 = Best of DRAGON, Volume I   page 52
-/          Dgn:V2 = Best of DRAGON, Volume II  page 12
-/          Dgn:V3 = Best of DRAGON, Volume III page 59, 77
-/          Dgn:V4 = Best of DRAGON, Volume IV  page  8
-/          Dgn148 = DRAGON Magazine, # 148, page 36
+/          Dgn:V1  = Best of DRAGON,Volume I   page 52
+/          Dgn:V2  = Best of DRAGON,Volume II  page 12
+/          Dgn:V3  = Best of DRAGON,Volume III page 59,77
+/          Dgn:V4  = Best of DRAGON,Volume IV  page  8
+/          Dgn148  = DRAGON Magazine,# 148,page 36
+/ http://community.wizards.com/comment/51250466#comment-51250466
 
-/ Types:   ABJ = Abjuration                HYP = Hypnotic
-/          ALT = Alteration                ILL = Illusion
-/          ANI = Animation (Alt/Enc)       INV = Invocation
-/          CON = Conjuration               KIN = Kinetic (Inv)
-/          DIV = Divination                MET = MetaMagic
-/          EMP = Empathic                  NEC = Necromantic
-/          ENC = Enchantment               SPI = Spiritual
-/          ENV = Environmental (Alt&Evo)   TRA = Transference (Alt&Inv)
-/          EVO = Evocation
-
-/ Classes: ALCH = Alchemist            ILLU = Illusionist
-/          CLER = Cleric               MAGE = Mage
-/          DEAT = Death Master         META = Metallist
-/          DRUI = Druid                SEER = Seer
-/          HEAL = Healer               WITC = Witch
-
-: Level 0 = .*0 .* 
-: Level 1 = .*1 .* 
-: Level 2 = .*2 .* 
-: Level 3 = .*3 .* 
-: Level 4 = .*4 .* 
-: Level 5 = .*5 .* 
-: Level 6 = .*6 .* 
-: Level 7 = .*7 .* 
-: Level 8 = .*8 .* 
-: Level 9 = .*8 .*
+/ Level
+: Level 0 = ^ *0 .* 
+: Level 1 = ^ *1 .* 
+: Level 2 = ^ *2 .* 
+: Level 3 = ^ *3 .* 
+: Level 4 = ^ *4 .* 
+: Level 5 = ^ *5 .* 
+: Level 6 = ^ *6 .* 
+: Level 7 = ^ *7 .* 
+: Level 8 = ^ *8 .* 
+: Level 9 = ^ *9 .*
 : Cantrip = Level 0
 
-: Alchemist = .*Alch.* 
-: Cleric = .*cler.* 
-: Necromancer = .*deat.* 
-: Druid = .*drui.* 
-: Healer = .*heal.* 
-: Illusionist = .*Illu.* 
-: Metallist = .*Meta.* 
-: Seer = .*seer.* 
-: Witch = .*witc.* 
+/ Type
+: Abjuration    = ^.{36,47}abju.*
+: Allomantic    = ^.{36,47}allo.*
+: Alteration    = ^.{36,47}altr.*
+: Animation     = ^.{36,47}anim.*
+: Conjuration   = ^.{36,47}conj.*
+: Divination    = ^.{36,47}divi.*
+: Empathic      = ^.{36,47}empa.*
+: Enchantment   = ^.{36,47}ench.*
+: Environmental = ^.{36,47}envi.*
+: Evocation     = ^.{36,47}evoc.*
+: Hypnotic      = ^.{36,47}hypn.*
+: Illusion      = ^.{36,47}illu.*
+: Invocation    = ^.{36,47}invo.*
+: Kinetic       = ^.{36,47}kine.*
+: Metamagic     = ^.{36,47}meta.*
+: Necromantic   = ^.{36,47}necr.*
+: Spiritual     = ^.{36,47}spir.*
+: Transmutation = ^.{36,47}xmut.*
+: Transference  = ^.{36,47}xfer.*
+/ Animation altr/ench
+/ Environmental altr+evoc
+/ Transference altr+invo       
+ 
+/ Components
+: Concentration = ^.{49,57}c.*
+: Expensive     = ^.{49,57}x.*
+: Material      = ^.{49,57}m.*
+: Ritual        = ^.{49,57}r.*
+: Somatic       = ^.{49,57}s.*
+: Verbal        = ^.{49,57}v.*
 
-.Level  Spell                         Type           Element      Source     Class
-  
-+ {Abjuration!}
-+ {Alteration!}
-+ {Animation!}
-+ {Conjuration!}
-+ {Divination!}
-+ {Empathic!}
-+ {Enchantment!}
-+ {Environmental!}
-+ {Evocation!}
-+ {Hypnotic!}
-+ {Illusion!}
-+ {Kinetic!}
-+ {MetaMagic!}
-+ {Necromantic!}
-+ {Spiritual!}
-+ {Transference!}
-+ {UNTYPED!}
+/ Class
+: Alchemist   = ^.{59,79}al.* 
+: Bard        = ^.{59,79}bd.* 
+: Cleric      = ^.{59,79}cl.* 
+: Druid       = ^.{59,79}dr.* 
+: Healer      = ^.{59,79}he.* 
+: Illusionist = ^.{59,79}il.*
+: Mage        = ^.{59,79}mg.*
+: Metallist   = ^.{59,79}mt.*
+: Necromancer = ^.{59,79}nc.* 
+: Paladin     = ^.{59,79}pa.*
+: Ranger      = ^.{59,79}rg.*
+: Seer        = ^.{59,79}se.* 
+: Sorcerer    = ^.{59,79}sr.* 
+: Warlock     = ^.{59,79}wk.* 
+: Witch       = ^.{59,79}wt.* 
+: Wizard      = ^.{59,79}wz.* 
+
+/ Element/School
+: Air       = ^.{84,94}ai.* 
+: Death     = ^.{84,94}de.*
+: Earth     = ^.{84,94}ea.* 
+: Energy    = ^.{84,94}en.* 
+: Fire      = ^.{84,94}fi.* 
+: Life      = ^.{84,94}li.* 
+: Void      = ^.{84,94}vo.* 
+: Water     = ^.{84,94}wa.* 
+ 
+
+.Spell                          Lvl  Type        Comp       Class                   Element      Source
+
+abjure                           4   abju                   cl                                   tsrph2     
+accelerated metabolism           6   altr                   mg                      life         dgn148     
+acid splash                      0   conj        v,s        sr,wz       
+advanced illusion                5   illu                   il                                   tsrph2     
+aerial servant                   6   evoc                   cl                      air          tsrph2     
+affect normal fires              1   altr                   mg                      fire         tsrph2     
+aging                            6   necr+altr              wt                      life         dgn:v1     
+aid                              2   abju        v,s,m      cl,pa       
+aid                              2   necr                   cl                      life         tsrph2     
+air walk                         5   altr                   cl                      air          tsrph2     
+airy water                       5                          mg                      ai/wa        tsrph2     
+alarm                            1   abju        v,s,m,r    rn,wz       
+alarm                            1   divi                   mg                                   tsrph2     
+alter                            1   altr                   mt                                   corpse     
+alter reality                    7   altr+illu              il                                   tsrph2     
+alter self                       2   altr                   mg                                   tsrph2     
+alter self                       2   xmut        v,s,c      sr,wz       
+animal friendship                1   ench        v,s,m      bd,dr,rn       
+animal friendship                1   hypn/empa              dr                      life         tsrph2     
+animal growth                    5   altr                   dr                      life         tsrph2     
+animal growth                    5   altr                   mg                      life         tsrph2     
+animal messenger                 2   ench        v,s,m,r    bd,dr,rn       
+animal shapes                    8   xmut        v,s,c      dr       
+animal summoning i               4   evoc                   dr                      life         tsrph2     
+animal summoning ii              5   evoc                   dr                      life         tsrph2     
+animal summoning iii             6   evoc                   dr                      life         tsrph2     
+animate dead                     3   necr                   cl                      death        tsrph2     
+animate dead                     3   necr        v,s,m      cl,wz       
+animate dead                     5   anim                   mg                      death        tsrph2     
+animate object                   6   ench                   cl                                   tsrph2     
+animate objects                  5   xmut        v,s,c      bd,sr,wz       
+animate rock                     7   anim                   dr                      earth        tsrph2     
+animate skeletons                1   necr+anim              nc                      death        dgn:v4     
+animate zombies                  1   necr+anim              nc                      death        dgn:v4     
+anti-animal shell                6   abju                   dr                      life         tsrph2     
+anti-magic shell                 6   abju/meta              mg                      energy       tsrph2     
+anti-plant shell                 5   abju                   dr                      earth        tsrph2     
+antilife shell                   5   abju        v,s,c      dr       
+antimagic field                  8   abju        v,s,m,c    cl,wz       
+antipathy/sympathy               8                          mg                                   tsrph2     
+antipathy/sympathy               8   ench        v,s,m      dr,wz       
+arcane eye                       4   divi        v,s,m,c    wz       
+arcane gate                      6   conj        v,s,c      sr,wk,wz       
+arcane lock                      2   abju        v,s,m,x    wz       
+armor of agathys                 1   abju        v,s,m      wk       
+arms of hadar                    1   conj        v,s        wk       
+arnvid's unseen limb             4   conj+altr              mg                                   dgn148     
+astral projection                9   necr        v,s,m,x    cl,wk,wz       
+astral spell                     7   xfer                   cl                      void         tsrph2     
+astral spell                     7   xfer                   il                      void         tsrph2     
+astral spell                     9   xfer                   mg                      void         tsrph2     
+atonement                        5   spir                   cl                                   tsrph2     
+attract ghoul                    2   evoc                   nc                      death        dgn:v4     
+attraction                       3   altr                   mt                                   corpse     
+audible glamer                   1   illu                   il                                   tsrph2     
+audible glamer                   2   illu                   mg                                   tsrph2     
+augury                           1   divi                   se                                   corpse     
+augury                           2   divi                   cl                                   tsrph2     
+augury                           2   divi        v,s,m,r,x  cl       
+aura of life                     4   abju        v,c        pa       
+aura of purity                   4   abju        v,c        pa       
+aura of vitality                 3   evoc        v,c        pa       
+avoidance                        5                          mg                                   tsrph2     
+awaken                           4   necr                   he                                   dgn:v2     
+awaken                           5   xmut        v,s,m,x    bd,dr       
+awl                              2   conj                   mt                                   corpse     
+bane                             1   ench        v,s,m,c    bd,cl       
+banish                                                      wt                                   dgn:v1     
+banishing smite                  5   abju        v,c        pa       
+banishment                       4   abju        v,s,m,c    cl,pa,sr,wk,wz       
+banishment                       7                          mg                                   tsrph2     
+barkskin                         2   altr                   dr                                   tsrph2     
+barkskin                         2   xmut        v,s,m,c    dr,rn       
+beacon of hope                   3   abju        v,s,c      cl       
+beast sense                      2   divi        s,c,r      dr,rn       
+bee                              0   evoc                   mg                      life         dgn:v3     
+bestow curse                     3   necr        v,s,c      bd,cl,wz       
+bigby's clenched fist            8                          mg                                   tsrph2     
+bigby's crushing hand            9                          mg                                   tsrph2     
+bigby's forceful hand            6                          mg                                   tsrph2     
+bigby's grasping hand            7                          mg                                   tsrph2     
+bigby's hand                     5   evoc        v,s,m,c    wz       
+bigby's interposing hand         5                          mg                                   tsrph2     
+bind                             2   ench                   mg                                   tsrph2     
+binding                          8                          mg                                   tsrph2     
+blade barrier                    5   conj+ench              mt                                   corpse     
+blade barrier                    6   conj+ench              cl                                   tsrph2     
+blade barrier                    6   evoc        v,s,c      cl       
+blade ward                       0   abju        v,s        bd,sr,wk,wz       
+bless                            1   ench        v,s,m,c    cl,pa       
+bless                            1   spir                   cl                                   tsrph2     
+blight                           4   necr        v,s        dr,sr,wk,wz       
+blinding smite                   3   evoc        v,c        pa       
+blindness                        2   hypn                   il                                   tsrph2     
+blindness/deafness               2   necr        v          bd,cl,sr,wz       
+blink                            3   xfer                   mg                                   tsrph2     
+blink                            3   xmut        v,s        sr,wz       
+bluelight                        0   altr                   mg                                   dgn:v3     
+blur                             2   illu                   il                                   tsrph2     
+blur                             2   illu        v,c        sr,wz       
+bolt                             3   conj+invo              mt                                   corpse     
+branding smite                   2   evoc        v,c        pa       
+bridge                           5   altr+conj              mt                                   corpse     
+bug                              0   evoc                   mg                      life         dgn:v3     
+burning hands                    1   evoc        v,s        sr,wz       
+cable                            2   conj                   mt                                   corpse     
+cacodemon                        7                          mg                                   tsrph2     
+call lightning                   3   conj        v,s,c      dr,sr       
+call lightning                   3   envi                   dr                      fire         tsrph2     
+call woodland beings             4   evoc                   dr                      life         tsrph2     
+calling of the cards             1   divi                   se                                   corpse     
+calm                                                        wt                                   dgn:v1     
+calm emotions                    2   ench        v,s,c      bd,cl       
+cancel                           5   ench                   mt                                   corpse     
+cantrip                          1   altr/invo              mg                                   tsrph2     
+ceremony                         1   spir                   cl                                   dgn:v4     
+chain                            4   conj+ench              mt                                   corpse     
+chain lightning                  6                          mg                                   tsrph2     
+chain lightning                  6   evoc        v,s,m      wz       
+change                           0   altr                   mg                                   dgn:v3     
+change self                      1   illu                   il                                   tsrph2     
+changestaff                      7                          pr                                   tsrph2     
+chant                            2   spir                   cl                                   tsrph2     
+chaos                            5   hypn                   il                                   tsrph2     
+chariot of sustarre              7                          dr                                   tsrph2     
+charm monster                    4   hypn                   mg                      life         tsrph2     
+charm person                     1   ench        v,s        bd,dr,sr,wk,wz       
+charm person                     1   hypn                   mg                      life         tsrph2     
+charm person or mammal           2   hypn                   dr                      life         tsrph2     
+charm plants                     7   hypn                   mg                      earth        tsrph2     
+charm undead                     4   hypn                   nc                      death        dgn:v4     
+chill touch                      0   necr        v,s        sr,wk,wz       
+chromatic orb                    1   evoc        v,s,m,x    sr,wz       
+circle of blindness                                         wt                                   dgn:v1     
+circle of death                  6   necr        v,s,m,x    sr,wk,wz       
+circle of power                  5   abju        v,c        pa       
+clairaudience                    1   divi                   se                                   corpse     
+clairaudience                    3   divi                   mg                                   tsrph2     
+clairvoyance                     2   divi                   se                                   corpse     
+clairvoyance                     3   divi                   mg                                   tsrph2     
+clairvoyance                     3   divi        v,s,m,c,x  bd,cl,sr,wz       
+clean                            0   altr                   mg                                   dgn:v3     
+cloak of bravery                 4                          cl                                   tsrph2     
+clone                            8                          mg                                   tsrph2     
+clone                            8   necr        v,s,m,x    wz       
+cloud                            1   altr                   mt                      air          corpse     
+cloud of daggers                 2   conj        v,s,m,c    bd,sr,wk,wz
+cloudkill                        5                          mg                      air          tsrph2     
+cloudkill                        8   conj        v,s,c      sr,wz       
+color                            0   altr                   mg                                   dgn:v3     
+color spray                      1   hypn+illu              il                                   tsrph2     
+color spray                      1   illu        v,s,m      sr,wz       
+color spray                      1   illu+hypn              il                                   tsrph2     
+colored lights                   0   illu                   il                                   dgn:v3     
+combine                          1   spir                   cl                                   dgn:v4     
+comfort                                                     wt                                   dgn:v1     
+command                          1   ench        v          cl,pa       
+command                          1   hypn                   cl                                   tsrph2     
+commune                          4   divi+spir              se                                   corpse     
+commune                          5   divi        v,s,m,r    cl       
+commune                          5   empo+spir              cl                                   tsrph2     
+commune with nature              5   divi        v,s,r      dr,rn       
+commune with nature              5   empa                   dr                      earth        tsrph2     
+communicate                      5   divi+empa              cl                                   dgn:v4     
+compass                          1   divi                   mt                                   corpse     
+compelled duel                   1   ench        v,c        pa       
+comprehend languages             1   divi        v,s,m,r    bd,sr,wk,wz       
+comprehend languages             1   empa                   mg                                   tsrph2     
+compulsion                       4   ench        v,s,c      bd       
+cone of cold                     5                          mg                                   tsrph2     
+cone of cold                     5   evoc        v,s,m      sr,wz       
+confusion                        4   ench        v,s,m,c    bd,dr,sr,wz       
+confusion                        4   hypn                   il                                   tsrph2     
+confusion                        4   hypn                   mg                                   tsrph2     
+confusion                        7   hypn                   dr                                   tsrph2     
+conjure animals                  3   conj        v,s,c      dr,rn       
+conjure animals                  6   evoc                   cl                      life         tsrph2     
+conjure animals                  6   evoc                   il                      life         tsrph2     
+conjure barrage                  3   conj        v,s,m      rn       
+conjure celestial                7   conj        v,s,c      cl       
+conjure earth elemental          7   evoc                   dr                      earth        tsrph2     
+conjure elemental                5   conj        v,s,m,c    dr,wz       
+conjure elemental                5   evoc                   mg                                   tsrph2     
+conjure fey                      6   conj        v,s,c      dr,wk       
+conjure fire elemental           6   evoc                   dr                      fire         tsrph2     
+conjure minor elementals         4   conj        v,s,c      dr,wz       
+conjure volley                   5   conj        v,s,m      rn       
+conjure woodland beings          4   conj        v,s,m,c    dr,rn       
+contact other plane              4   empa                   se                                   corpse     
+contact other plane              5   divi        v,r        wk,wz       
+contact other plane              5   empa                   mg                                   tsrph2     
+contagion                        4                          mg                                   tsrph2     
+contagion                        5   necr        v,s        cl,dr       
+contingency                      6                          mg                                   tsrph2     
+contingency                      6   evoc        v,s,m,x    wz       
+continual darkness               3   illu                   il                      void         tsrph2     
+continual flame                  2   evoc        v,s,m,x    cl,wz       
+continual light                  2   altr                   mg                                   tsrph2     
+continual light                  3   altr                   cl                                   tsrph2     
+continual light                  3   altr                   il                                   tsrph2     
+control temperature              4   envi                   dr                                   tsrph2     
+control undead                                              wt                      death        dgn:v1     
+control water                    4   xmut        v,s,m,c    cl,dr,wz       
+control weather                  6   envi                   mg                      ai/wa        tsrph2     
+control weather                  7   altr                   cl                      ai/wa        tsrph2     
+control weather                  7   envi                   dr                      ai/wa        tsrph2     
+control weather                  8   xmut        v,s,m,c    cl,dr,wz       
+control winds                    5   envi                   dr                      air          tsrph2     
+copper chalice                   3   conj+ench              mt                                   corpse     
+cordon of arrows                 2   xmut        v,s,m      rn       
+cough                            0   necr                   mg                                   dgn:v3     
+counterspell                     3   abju        s          sr,wk,wz       
+creak                            0   illu                   mg                                   dgn:v3     
+create food and water            3   conj                   cl                                   tsrph2     
+create food and water            3   conj        v,s        cl,pa       
+create or destroy water          1   xmut        v,s,m      cl,dr       
+create undead                    6   necr        v,s,m,x    cl,wk,wz       
+create water                     1   altr/conj              cl                      water        tsrph2     
+create water                     2   altr/conj              dr                      water        tsrph2     
+creation                         5   illu        v,s,m      sr,wz       
+creeping doom                    7   evoc                   dr                                   tsrph2     
+crown of madness                 2   ench        v,s,c      bd,sr,wk,wz       
+crusader's mantle                3   evoc        v,c        pa       
+crystalbrittle                   9                          mg                                   tsrph2     
+cure blindness                   3   necr                   cl                                   tsrph2     
+cure critical wounds             5   necr                   cl                                   tsrph2     
+cure critical wounds             6   necr                   dr                                   tsrph2     
+cure deafness                    7   necr                   he                                   dgn:v2     
+cure disease                     3   necr                   cl                                   tsrph2     
+cure disease                     3   necr                   dr                                   tsrph2     
+cure insanity                    5   necr                   he                                   dgn:v2     
+cure light wounds                1   necr                   cl                                   tsrph2     
+cure light wounds                2   necr                   dr                                   tsrph2     
+cure paralysis                   5   necr                   he                                   dgn:v2     
+cure serious wounds              4   necr                   cl                                   tsrph2     
+cure serious wounds              4   necr                   dr                                   tsrph2     
+cure wounds                      1   evoc        v,s        bd,cl,dr,pa,rn       
+curse                                                       wt                                   dgn:v1     
+curtain wall                                                wt                                   dgn:v1     
+dampen                           0   conj                   mg                                   dgn:v3     
+dancing blade                    3   ench                   mt                                   corpse     
+dancing lights                   0   evoc        v,s,m,c    bd,sr,wz       
+dancing lights                   1   illu                   il                                   tsrph2     
+dancing lights                   1   illu                   mg                                   tsrph2     
+darkness                         1   illu                   il                      void         tsrph2     
+darkness                         2   altr                   mt                      void         corpse     
+darkness                         2   evoc        v,m,c      sr,wk,wz       
+darkness (15)                    2   altr                   mg                      void         tsrph2     
+darkvision                       2   xmut        v,s,m      dr,rn,sr,wz       
+dart                             1   conj+invo              mt                                   corpse     
+daylight                         3   evoc        v,s        cl,dr,pa,rn,sr       
+deafness                         2   hypn                   il                                   tsrph2     
+death armor                      2                          nc                                   dgn:v4     
+death fog                        6                                                               tsrph2     
+death prayer                     2   necr+spir              cl                                   dgn:v4     
+death release                    5   meta                   mt                      death        corpse     
+death spell                      6   necr                   mg                                   tsrph2     
+death ward                       4   abju        v,s        cl,pa       
+death wire                       5   conj+ench              mt                                   corpse     
+deeppockets                      2   ench+altr              mg                      void         tsrph2     
+delayed blast fireball           7   evoc        v,s,m,c    sr,wz       
+delude                           3                                                               tsrph2     
+demand                           8                          mg                                   tsrph2     
+demi-shadow magic                6   altr+illu              il                                   tsrph2     
+demi-shadow monsters             5   altr+illu              il                                   tsrph2     
+demiplane                        8   conj        s          wk,wz       
+destination                      4   divi                   se                                   corpse     
+destructive wave                 5   evoc        v          pa       
+detect charm                     2   divi                   cl                                   tsrph2     
+detect construction              1   divi                   mt                                   corpse     
+detect curse                     3   divi                   cl                                   dgn:v4     
+detect disease                   1   divi+necr              he                                   dgn:v2     
+detect evil                      1   divi+spir              cl                                   tsrph2     
+detect evil                      2   divi                   mg                                   tsrph2     
+detect evil and good             1   divi        v,s        cl,pa       
+detect illusion                  1   divi                   il                                   tsrph2     
+detect invisibility              1   divi                   il                                   tsrph2     
+detect invisibility              2   divi                   mg                                   tsrph2     
+detect lie                       4   divi/empa              cl                                   tsrph2     
+detect life                      2   divi+necr              cl                      life         dgn:v4     
+detect magic                     1   divi                   cl                                   tsrph2     
+detect magic                     1   divi                   dr                                   tsrph2     
+detect magic                     1   divi                   mg                                   tsrph2     
+detect magic                     1   divi                   mt                                   corpse     
+detect magic                     1   divi        v,s,c,r    bd,cl,dr,pa,rn,sr,wz       
+detect magic                     2   divi                   il                                   tsrph2     
+detect metal                     1   divi                   mt                                   corpse     
+detect phase                     1   divi                   he                      void         dgn:v2     
+detect poison                    1   divi                   he                                   dgn:v2     
+detect poison and disease        1   divi        v,s,m,c,r  cl,dr,pa,rn       
+detect scrying                   4   divi                   mg                                   tsrph2     
+detect snares and pits           1   divi                   dr                                   tsrph2     
+detect thoughts                  2   divi        v,s,m,c    bd,sr,wz       
+detect undead                    1   divi                                           death        tsrph2     
+detection                        1   divi                   se                                   corpse     
+dig                              3   altr                   mt                      earth        corpse     
+dig                              4   altr                   mg                      earth        tsrph2     
+dim                              0   illu                   il                                   dgn:v3     
+dimension door                   4   altr?                  mg                                   tsrph2     
+dimension door                   4   conj        v          bd,sr,wk,wz       
+diminish                                                    wt                                   dgn:v1     
+dirty                            0   conj                   mg                                   dgn:v3     
+disguise self                    1   illu        v,s        bd,sr,wz       
+disintegrate                     6   conj                   mg                                   tsrph2     
+disintegrate                     6   xmut        v,s,m      sr,wz       
+dismiss undead                   3   abju                   cl                      death        dgn:v4     
+dismissal                        5                          mg                                   tsrph2     
+dispel evil                      5   evoc+spir              cl                                   tsrph2     
+dispel evil and good             5   abju        v,s,m      cl,pa       
+dispel exhaustion                4   hypn                   il                                   tsrph2     
+dispel illusion                  3   illu                   il                                   tsrph2     
+dispel magic                     3   abju        v,s        bd,cl,dr,pa,sr,wk,wz       
+dispel magic                     3   meta                   cl                                   tsrph2     
+dispel magic                     3   meta                   mg                                   tsrph2     
+dispel magic                     4   meta                   dr                                   tsrph2     
+dispell enchantment              2   ench                   mt                                   corpse     
+dispell magic                    3   meta                   mt                                   corpse     
+dissipation                          altr/meta              wt                                   dgn:v1     
+dissonant whispers               1   ench        v          bd       
+distance distortion              5   illu                   mg                                   tsrph2     
+distract                         0   hypn                   mg                                   dgn:v3     
+divination                       2   divi                   se                                   corpse     
+divination                       4   divi                   cl                                   tsrph2     
+divination                       4   divi        v,s,m,r,x  cl       
+divine favor                     1   evoc        v,s,c      pa       
+divine word                      7   evoc        v          cl       
+dominate beast                   4   ench        v,s,c      dr,sr       
+dominate monster                 8   ench        v,s,c      bd,sr,wk,wz       
+dominate person                  5   ench        v,s,c      bd,sr,wz       
+domination                       5                                                               tsrph2     
+drawmij's instant summons        6   conj        v,s,m,r,x  wz       
+drawmij's instant summons        7                          mg                                   tsrph2     
+dream                            5                                                               tsrph2     
+dream                            5   illu        v,s,m      bd,wk,wz       
+druidcraft                       0   xmut        v,s        dr       
+dry                              0   altr                   mg                      water        dgn:v3     
+duo-dimension                    7   xfer                   mg                                   tsrph2     
+dust devil                       2   evoc                   pr?                                  tsrph2     
+dust/dusty                       0   altr                   mg                      earth        dgn:v3     
+earthquake                       7   altr                   cl                      earth        tsrph2     
+earthquake                       8   evoc        v,s,m,c    cl,dr,sr       
+eldritch blast                   0   evoc        v,s        wk       
+elemental weapon                 3   xmut        v,s,c      pa       
+emotion                          4   empa+hypn              il                                   tsrph2     
+empath                           4   empa+altr              mg                                   dgn148     
+empathy                          1   empa                   se                                   corpse     
+enchant an item                  6   ench                   mg                                   tsrph2     
+enchant arms and armor           2   ench                   mt                                   corpse     
+enchant metal                    1   ench                   mt                                   corpse     
+enchanted door                   4   ench                   mg                                   tsrph2     
+enchanted weapon                 4   ench                   mg                                   tsrph2     
+enchantment                          ench                   wt                                   dgn:v1     
+endure                           4   meta                   mt                                   corpse     
+endure cold                      1   necr                   cl                                   tsrph2     
+endure heat                      1   necr                   cl                                   tsrph2     
+energy                           4                          he                                   dgn:v2     
+energy drain                     9                          mg                                   tsrph2     
+enervation                       4                          mg                                   tsrph2     
+enhance ability                  2   xmut        v,s,m,c    bd,cl,dr,sr       
+enlarge                          1   altr                   mg                                   tsrph2     
+enlarge                          2   altr                   mt                                   corpse     
+enlarge/reduce                   2   xmut        v,s,m,c    sr,wz       
+ensnarement                      6                          mg                                   tsrph2     
+ensnaring strike                 1   conj        v,c        rn       
+entangle                         1   anim                   dr                                   tsrph2     
+entangle                         1   conj        v,s,c      dr       
+enthrall                         2   ench        v,s        bd,wk       
+enthrall                         3   hypn                   cl                                   dgn:v4     
+erase                            1   altr                   mg                                   tsrph2     
+esp                              2   empa                   mg                                   tsrph2     
+esp                              2   empa                   se                                   corpse     
+ethereal armor                   5   altr+ench              mt                      void         corpse     
+etherealness                     7   xmut        v,s        bd,cl,sr,wk,wz       
+evard's black tentacles          4                          mg                                   tsrph2     
+evard's black tentacles          4   conj        v,s,m,c    wz       
+exaction                         7                          cl                                   tsrph2     
+exchange                         8   empa+altr              mg                                   dgn148     
+exorcise                         4   spir                   cl                                   tsrph2     
+expeditious retreat              1   xmut        v,s,c      sr,wk,wz       
+extension 1                      4   meta                   mg                                   tsrph2     
+extension 2                      5   meta                   mg                                   tsrph2     
+extension 3                      6   meta                   mg                                   tsrph2     
+exterminate                      0                          mg                                   dgn:v3     
+eye of death                     4   altr+ench              mt                                   corpse     
+eyebite                          6                                                               tsrph2     
+eyebite                          6   necr        v,s,c      bd,sr,wk,wz       
+fabricate                        4   xmut        v,s        wz       
+fabricate                        5   conj                   mg                                   tsrph2     
+faerie fire                      1   altr                   dr                                   tsrph2     
+faerie fire                      1   evoc        v,c        bd,dr       
+false life                       1   necr        v,s,m      sr,wz       
+false vision                     5                          mg                                   tsrph2     
+fear                             3   hypn                   il                                   tsrph2     
+fear                             3   illu        v,s,m,c    bd,sr,wk,wz       
+fear                             4   hypn                   mg                                   tsrph2     
+feather fall                     1   altr                   mg                      air          tsrph2     
+feather fall                     1   xmut        v,m        bd,sr,wz       
+feeblemind                       5                          mg                                   tsrph2     
+feeblemind                       6   hypn                   dr                                   tsrph2     
+feeblemind                       8   ench        v,s,m      bd,dr,wk,wz       
+feign death                      2   necr                   dr                                   tsrph2     
+feign death                      3   necr                   cl                                   tsrph2     
+feign death                      3   necr                   mg                                   tsrph2     
+feign death                      3   necr        v,s,m,r    bd,cl,dr,wz       
+find familiar                    1   conj        v,s,m,r,x  wz       
+find familiar                    1   divi+evoc              mg                                   tsrph2     
+find plants                      4   divi                   al                      earth        dgn:v3     
+find steed                       2   conj        v,s        pa       
+find the path                    6   divi                   cl                                   tsrph2     
+find the path                    6   divi        v,s,m,c,x  bd,cl,dr       
+find traps                       2   divi                   cl                                   tsrph2     
+find traps                       2   divi        v,s        cl,dr,rn       
+finger of death                  7   necr                   dr                                   tsrph2     
+finger of death                  7   necr        v,s        sr,wk,wz       
+fire bolt                        0   evoc        v,s        sr,wz       
+fire box                                                    wt                      fire         dgn:v1     
+fire charm                       4   hypn+invo              mg                      fire         tsrph2     
+fire seeds                       6                          dr                      fire         tsrph2     
+fire shield                      4                          mg                      fire         tsrph2     
+fire shield                      4   evoc        v,s,m      wz       
+fire storm                       7   evoc        v,s        cl,dr,sr       
+fire trap                        2   altr+invo              dr                      fire         tsrph2     
+fire trap                        4                          mg                      fire         tsrph2     
+fireball                         3   evoc        v,s,m      sr,wz       
+fireblade                        1   ench                   mt                      fire         corpse     
+firefinger                       0   altr                   mg                      fire         dgn:v3     
+flame arrow                      3                          mg                      fire         tsrph2     
+flame blade                      2   evoc        v,s,m,c    dr       
+flame strike                     5   evoc        v,s,m      cl       
+flame walk                       3                          cl                      fire         tsrph2     
+flaming sphere                   2   conj        v,s,m,c    dr,wz       
+flaming sphere                   2   invo+conj              mg                      fire         tsrph2     
+flavor                           0   ench                   mg                                   dgn:v3     
+flesh to iron                    5   altr                   mt                                   corpse     
+flesh to stone                   6   xmut        v,s,m,c    wk,wz       
+flute                            4   conj+ench              mt                                   corpse     
+fly                              3   altr+kine              mg                      air          tsrph2     
+fly                              3   xmut        v,s,m,c    sr,wk,wz       
+fog cloud                        1   conj        v,s,c      dr,rn,sr,wz       
+fog cloud                        2   altr                   il                      air          tsrph2     
+fools' gold                      2   altr/illu              mg                                   tsrph2     
+footfall                         0   illu                   mg                                   dgn:v3     
+forbiddance                      6   abju                   cl                                   tsrph2     
+forbiddance                      6   abju        v,s,m,r,x  cl       
+forcecage                        7                          mg                                   tsrph2     
+forcecage                        7   evoc        v,s,m,x    bd,wk,wz       
+forcing of the cards             2   kine                   se                                   corpse     
+foresight                        4   divi                   se                                   corpse     
+foresight                        9   divi                   mg                                   tsrph2     
+foresight                        9   divi        v,s,m      bd,dr,wk,wz       
+forget                           2   hypn                   mg                                   tsrph2     
+form mercury                     1   altr                   mt                      earth        corpse     
+form metal                       3   altr                   mt                      earth        corpse     
+free action                      4                          cl                                   tsrph2     
+freedom of movement              4   abju        v,s,m      bd,cl,dr,rn       
+freeze/heat metal                3   altr                   al                      earth        dgn:v3     
+freshen/curdle/wilt              0   altr                   mg                                   dgn:v3     
+friends                          0   ench        s,m,c      bd,sr,wk,wz       
+friends                          1   hypn                   mg                                   tsrph2     
+fumble                           4                          mg                                   tsrph2     
+gaseous form                     3   xmut        v,s,m,c    sr,wk,wz       
+gate                             7   evoc+altr              cl                      void         tsrph2     
+gate                             9   conj        v,s,m,c,x  cl,sr,wz       
+gate                             9   xfer                   mg                      void         tsrph2     
+gather/spill                     0   kine                   mg                                   dgn:v3     
+gaze reflection                  1   illu                   il                                   tsrph2     
+geas                             5   ench        v          bd,cl,dr,pa,wz       
+geas                             6   hypn                   mg                                   tsrph2     
+gentle repose                    2   necr        v,s,m,r    cl,wz       
+ghast production                 3   necr+anim              nc                                   dgn:v4     
+ghost production                 5   necr+anim              nc                                   dgn:v4     
+giant insect                     4                          dr                                   tsrph2     
+giant insect                     4   xmut        v,s,c      dr       
+giggle                           0   necr                   mg                                   dgn:v3     
+glasse                          6                          mg                                   tsrph2     
+glassteel                        8                          mg                                   tsrph2     
+glibness                         8   xmut        v          bd,wk       
+glitterdust                      2   conj                   mg                                   tsrph2     
+globe of invulnerability         6                          mg                                   tsrph2     
+globe of invulnerability         6   abju        v,s,m,c    sr,wz       
+glyph of warding                 3   abju        v,s,m,x    bd,cl,wz       
+glyph of warding                 3   abju+invo              cl                                   tsrph2     
+gnats                            0   evoc                   mg                                   dgn:v3     
+golden gauntlet                  5   conj+ench              mt                                   corpse     
+goodberry                        1   xmut        v,s,m      dr,rn       
+goodberry                        2   ench                   cl                      earth        tsrph2     
+grasping vine                    4   conj        v,s,c      dr,rn       
+grease                           1   conj                   mg                                   tsrph2     
+grease                           1   conj        v,s,m      wz       
+greater invisibility             4   illu        v,s,c      bd,sr,wz       
+greater restoration              5   abju        v,s,m,x    bd,cl,dr       
+groan                            0   illu                   mg                                   dgn:v3     
+guardian of faith                4   conj        v          cl       
+guards and wards                 6                          mg                                   tsrph2     
+guards and wards                 6   abju        v,s,m,x    bd,wz       
+guidance                         0   divi        v,s,c      cl,dr       
+guide                            4   ench                   mt                                   corpse     
+guiding bolt                     1   evoc        v,s        cl       
+gust of wind                     2   evoc        v,s,m,c    dr,sr,wz       
+gust of wind                     3   envi                   mg                      air          tsrph2     
+hail of thorns                   1   conj        v          rn       
+hairy                            0   altr                   mg                                   dgn:v3     
+hallow                           2   evoc        v,s,m,x    cl       
+hallucinatory forest             4   illu                   dr                                   tsrph2     
+hallucinatory terrain            3   illu                   il                                   tsrph2     
+hallucinatory terrain            4   illu                   mg                                   tsrph2     
+hallucinatory terrain            4   illu        v,s,m      bd,dr,wk,wz       
+hand fire                        1   altr                   cl                      fire         dgn:v4     
+harm                             6   necr        v,s        cl       
+haste                            3   altr/necr              mg                                   tsrph2     
+haste                            3   xmut        v,s,m,c    sr,wz       
+haze                             0   illu                   il                                   dgn:v3     
+heal                             6   evoc        v,s        cl,dr       
+heal/harm                        6   necr                   cl                                   tsrph2     
+healing word                     1   evoc        v          bd,cl,dr       
+heat metal                       2   altr                   dr                      earth        tsrph2     
+heat metal                       2   altr                   mt                      earth        corpse     
+heat metal                       2   xmut        v,s,m,c    bd,dr       
+hellish rebuke                   1   evoc        v,s        wk       
+heroes' feast                    6                          cl                                   tsrph2     
+heroes' feast                    6   conj        v,s,m,x    cl,dr       
+heroism                          1   ench        v,s,c      bd,pa       
+hex                              1   ench        v,s,m,c    wk       
+hide                             0   illu                   mg                                   dgn:v3     
+hindsight                        3   divi                   se                                   corpse     
+hold animal                      3   hypn                   dr                                   tsrph2     
+hold creatures                   3   hypn                   mt                                   corpse     
+hold monster                     5   ench        v,s,m,c    bd,sr,wk,wz       
+hold monster                     5   hypn                   mg                                   tsrph2     
+hold person                      2   ench        v,s,m,c    bd,cl,dr,sr,wk,wz       
+hold person                      2   hypn                   cl                                   tsrph2     
+hold person                      3   hypn                   mg                                   tsrph2     
+hold plant                       4   hypn                   dr                      earth        tsrph2     
+hold portal                      1   altr                   mg                                   tsrph2     
+hold undead                      5   hypn+necr              nc                                   dgn:v4     
+holy (unholy) word               7   invo+spir              cl                                   tsrph2     
+holy aura                        8   abju        v,s,m,c,x  cl       
+holy symbol                      2   spir                   cl                                   dgn:v4     
+horn                             3   conj+ench              mt                                   corpse     
+hunger of hadar                  3   conj        v,s,m,c    wk       
+hunter's mark                    1   divi        v,c        rn       
+hypnotic pattern                 2   hypn+illu              il                                   tsrph2     
+hypnotic pattern                 3   illu        s,m,c      bd,sr,wk,wz       
+hypnotism                        1   hypn                   il                                   tsrph2     
+ice storm                        4   envi                   mg                      water        tsrph2     
+ice storm                        4   evoc        v,s,m      dr,sr,wz       
+identification                   1   divi                   se                                   corpse     
+identify                         1   divi                   mg                                   tsrph2     
+identify                         1   divi        v,s,m,r,x  bd,wz       
+identify                         2   divi                   mt                                   corpse     
+identify minerals                1   divi                   al                                   dgn:v3     
+identify plants                  2   divi                   al                      earth        dgn:v3     
+identify poison                  3   divi                   al                                   dgn:v3     
+identify potion                  2   divi                   al                                   dgn:v3     
+illusionary script               3   hypn                   il                                   tsrph2     
+illusionary wall                 4                          mg                                   tsrph2     
+illusory script                  1   illu        s,m,r,x    bd,wk,wz       
+imbue with spell ability         4                          cl                                   tsrph2     
+imprisonment                     9                          mg                                   tsrph2     
+imprisonment                     9   abju        v,s,m,x    wk,wz       
+improved invisibility            4   illu                   il                                   tsrph2     
+improved phantasmal force        2   illu                   il                                   tsrph2     
+incendiary cloud                 8                          mg                      ai/fi        tsrph2     
+incendiary cloud                 8   conj        v,s,c      sr,wz       
+inflict wounds                   1   necr        v,s        cl       
+infravision                      3   altr                   mg                                   tsrph2     
+insect plague                    5   conj        v,s,m,c    cl,dr,sr       
+insect plague                    5   evoc                   cl                      life         tsrph2     
+intensify                                                   wt                                   dgn:v1     
+invisibility                     2   altr                   mg                                   tsrph2     
+invisibility                     2   illu                   il                                   tsrph2     
+invisibility                     2   illu        v,s,m,c    bd,sr,wk,wz       
+invisibility                     3   hypn                   il                                   tsrph2     
+invisibility                     3   illu                   mg                                   tsrph2     
+invisibility to animals          1   altr                   dr                      life         tsrph2     
+invisibility to undead           1   altr/abju              cl                      death        tsrph2     
+invisibility, 10' radius         3                          mg                                   tsrph2     
+invisible stalker                6   evoc                   mg                                   tsrph2     
+iron flesh                       2   altr                   mt                                   corpse     
+iron hand                        2   altr                   mt                                   corpse     
+irritation                       2   altr                   mg                                   tsrph2     
+item                             3                          mg                                   tsrph2     
+jump                             1   altr                   mg                                   tsrph2     
+jump                             1   xmut        v,s,m      dr,rn,sr,wz       
+key                              2   conj+divi              mt                                   corpse     
+knock                            2   kine                   mg                                   tsrph2     
+knock                            2   xmut        v          bd,sr,wz       
+know                             2   divi                   se                                   corpse     
+know alignment                   2   divi                   cle/mg                               tsrph2     
+lead line                        1   conj                   mt                                   corpse     
+legend lore                      4   divi                   se                                   corpse     
+legend lore                      5   divi        v,s,m,x    bd,cl,wz       
+legend lore                      6   divi                   mg                                   tsrph2     
+leomund's lamentable bel         5                          mg                                   tsrph2     
+leomund's secret chest           4   conj        v,s,m,x    wz       
+leomund's secret chest           5                          mg                                   tsrph2     
+leomund's secure shelter         4                          mg                                   tsrph2     
+leomund's tiny hut               3                          mg                                   tsrph2     
+leomund's tiny hut               3   evoc        v,s,m,r    bd,wz       
+leomund's trap                   2   ench                   mg                                   tsrph2     
+lesser restoration               2   abju        v,s        bd,cl,dr,pa,rn       
+levitate                         2   kine                   mg                                   tsrph2     
+levitate                         2   xmut        v,s,m,c    sr,wz       
+lichdom                          6   necr                   nc                                   dgn:v4     
+life force transfer              4   empa+altr              mg                                   dgn148     
+light                            0   evoc        v,m        bd,cl,sr,wz       
+light                            1   altr                   il                                   tsrph2     
+light                            1   altr                   mg                                   tsrph2     
+light                            1   altr/evoc              cl                                   tsrph2     
+lightning arrow                  3   xmut        v,s,c      rn       
+lightning bolt                   3   evoc        v,s,m      sr,wz       
+limited wish                     7   altr                   mg                                   tsrph2     
+liveoak                          6                          dr                                   tsrph2     
+locate                           2   divi                   se                                   corpse     
+locate animals                   1   divi                   dr                                   tsrph2     
+locate animals or plants         2   divi        v,s,m,r    bd,dr,rn       
+locate creature                  4   divi        v,s,m,c    bd,cl,dr,pa,rn,wz       
+locate object                    2   divi                   mg                                   tsrph2     
+locate object                    2   divi        v,s,m,c    bd,cl,dr,pa,rn,wz       
+locate object                    3   divi                   cl                                   tsrph2     
+locate plants                    2   divi                   dr                      earth        tsrph2     
+lock                             1   altr                   mt                                   corpse     
+longevity                        5   necr                   he                                   dgn:v2     
+longstrider                      1   xmut        v,s,m      bd,dr,rn,wz       
+lower water                      4   altr                   cl                      water        tsrph2     
+lower water                      6   altr                   mg                      water        tsrph2     
+mage armor                       1   abju        v,s,m      sr,wz       
+mage hand                        0   conj        v,s        bd,sr,wk,wz       
+magic circle                     3   abju        v,s,m,x    cl,pa,wk,wz       
+magic font                       5                          cl                                   tsrph2     
+magic jar                        5                          mg                                   tsrph2     
+magic jar                        6   necr        v,s,m,x    wz       
+magic mirror                     4                          mg                                   tsrph2     
+magic missile                    1   evoc        v,s        sr,wz       
+magic mouth                      2   ench                   mag/il                               tsrph2     
+magic mouth                      2   illu        v,s,m,x    bd,wz       
+magic weapon                     2   xmut        v,s,c      pa,wz       
+magical stone                    1   ench                   cl                                   tsrph2     
+magical vestment                 1   ench                   cl                                   dgn:v4     
+major creation                   5   conj                   il                                   tsrph2     
+major image                      3   illu        v,s,m,c    bd,sr,wk,wz       
+make metal                       2   conj                   mt                      earth        corpse     
+map                              3   divi                   se                                   corpse     
+mark                             1   conj                   mt                                   corpse     
+mask                             0   illu                   il                                   dgn:v3     
+mass charm                       8   hypn                   mg                                   tsrph2     
+mass cure wounds                 5   conj        v,s        bd,cl,dr       
+mass heal                        9   conj        v,s        cl       
+mass healing word                3   evoc        v          cl       
+mass invisibilty                 7   illu                   mg                                   tsrph2     
+mass suggestion                  6   ench        v,m        bd,sr,wk,wz       
+mass suggestion                  6   hypn                   il                                   tsrph2     
+massmorph                        4                          mg                                   tsrph2     
+massmorph                        4   illu                   il                                   tsrph2     
+maze                             5   conj+xfer              il                                   tsrph2     
+maze                             8                          mg                                   tsrph2     
+maze                             8   conj        v,s,c      wz       
+meld into stone                  3                          cl                                   tsrph2     
+meld into stone                  3   xmut        v,s,r      cl,dr       
+melf's acid arrow                2   conj                   mg                                   tsrph2     
+melf's acid arrow                2   evoc        v,s,m      wz       
+melf's minute meteors            3                          mg                                   tsrph2     
+melt                             4   altr                   mt                                   corpse     
+mending                          0   xmut        v,s,m      bd,cl,dr,sr,wz       
+mending                          1   altr                   al                                   dgn:v3     
+message                          0   xmut        v,s,m      bd,sr,wz       
+message                          1   altr                   mg                                   tsrph2     
+messenger                        2   evoc                   cl                                   tsrph2     
+metal to mercury                 5   altr                   mt                      earth        corpse     
+metal turn                       3   altr                   mt                      earth        corpse     
+meteor swarm                     9   evoc        v,s        sr,wz       
+mind blank                       8   abju        v,s        bd,wz       
+mind blank                       8   hypn                   mg                                   tsrph2     
+mind search                      3   empa                   se                                   corpse     
+minor creation                   4   conj                   il                                   tsrph2     
+minor globe of invuln            4                          mg                                   tsrph2     
+minor illusion                   0   illu        s,m        bd,sr,wk,wz       
+mirage                           0   illu                   il                                   dgn:v3     
+mirage arcana                    6                          mg                                   tsrph2     
+mirage arcane                    7   illu        v,s        bd,dr,wz       
+mirror image                     2   illu                   il                                   tsrph2     
+mirror image                     2   illu                   mg                                   tsrph2     
+mirror image                     2   illu        v,s        sr,wk,wz       
+misdirection                     2   divi+meta              il                                   tsrph2     
+mislead                          5   illu        s,c        bd,wz       
+mislead                          6                          mg                                   tsrph2     
+misty step                       2   conj        v          sr,wk,wz       
+moan                             0   illu                   mg                                   dgn:v3     
+modify memory                    5   ench        v,s,c      bd,wz       
+molten blast                     4   conj+invo              mt                      ea/fi        corpse     
+monitor                          3   divi                   se                                   corpse     
+monster summoning i              3   evoc                   mg                                   tsrph2     
+monster summoning ii             4   evoc                   mg                                   tsrph2     
+monster summoning iii            5   evoc                   mg                                   tsrph2     
+monster summoning iv             6   evoc                   mg                                   tsrph2     
+monster summoning v              7   evoc                   mg                                   tsrph2     
+monster summoning vi             8   evoc                   mg                                   tsrph2     
+monster summoning vii            9   evoc                   mg                                   tsrph2     
+moonbeam                         2   evoc        v,s,m,c    dr       
+moonbeam                         5                          cl                                   tsrph2     
+mordenkainen's disjunct          9                          mg                                   tsrph2     
+mordenkainen's faithful hound    4   conj        v,s,m      wz       
+mordenkainen's hound             5                          mg                                   tsrph2     
+mordenkainen's mansion           7                          mg                                   tsrph2     
+mordenkainen's mansion           7   conj        v,s,m,x    bd,wz       
+mordenkainen's private sanctum   4   abju        v,s,m      bd,wz       
+mordenkainen's sword             7                          mg                                   tsrph2     
+mordenkainen's sword             7   evoc        v,s,m,c,x  wz       
+mount                            1   evoc                   mg                                   tsrph2     
+mouse                            0   evoc                   mg                                   dgn:v3     
+move earth                       6                          mg                      earth        tsrph2     
+move earth                       6   xmut        v,s,m,c    dr,sr,wz       
+mummy production                 4   necr+anim              nc                                   dgn:v4     
+mute                             0   altr                   mg                                   dgn:v3     
+needle                           1   conj                   mt                                   corpse     
+negative plane projection        3                          cl                                   tsrph2     
+net                              3   conj+ench              mt                                   corpse     
+neutralize gas                   7                          he                                   dgn:v2     
+neutralize poison                2   necr                   he                                   dgn:v2     
+neutralize poison                3   necr                   dr                                   tsrph2     
+neutralize poison                4   necr                   cl                                   tsrph2     
+nod                              0   necr                   mg                                   dgn:v3     
+noise                            0   illu                   il                                   dgn:v3     
+non-detection                    3   abju                   il                                   tsrph2     
+nondetection                     3   abju        v,s,m,x    bd,rn,wz       
+nystul's magic aura              2   illu        v,s,m      wz       
+nystul's magical aura            1   ench                   mg                                   tsrph2     
+obscurement                      2   envi                   dr                                   tsrph2     
+origin                           2   divi                   se                                   corpse     
+otilike's freezing sphere        6   evoc        v,s,m      wz       
+otiluke's freezing sphere        6                          mg                                   tsrph2     
+otiluke's resilient sphere       4                          mg                                   tsrph2     
+otiluke's resilient sphere       4   evoc        v,s,m,c    wz       
+otiluke's telekinetic sph        8                          mg                                   tsrph2     
+otto's irresistible dance        6   ench        v,c        bd,wz       
+otto's irresistible dance        8   hypn                   mg                                   tsrph2     
+palm                             0   illu                   mg                                   dgn:v3     
+paralyzation                     3   hypn                   il                                   tsrph2     
+paralyze                         4   altr                   mt                                   corpse     
+paralyzing pit                                              wt                                   dgn:v1     
+part water                       6   altr                   cl                      water        tsrph2     
+part water                       6   altr                   mg                      water        tsrph2     
+pass plant                       5   xfer                   dr                      earth        tsrph2     
+pass wall                        5   altr                   mt                                   corpse     
+pass without trace               1   altr                   dr                                   tsrph2     
+pass without trace               2   abju        v,s,m,c    dr,rn       
+passwall                         5   altr                   mg                                   tsrph2     
+passwall                         5   xmut        v,s,m      wz       
+pause                            3   meta                   mt                                   corpse     
+permanency                       8   meta                   mg                                   tsrph2     
+permanent illusion               6   illu                   il                                   tsrph2     
+phantasmal force                 1   illu                   il?                                  tsrph2     
+phantasmal force                 2   illu        v,s,m,c    bd,sr,wz       
+phantasmal force                 3   illu                   mg                                   tsrph2     
+phantasmal killer                4   hypn                   il                                   tsrph2     
+phantasmal killer                4   illu        v,s,c      wz       
+phantom steed                    3                          mg                                   tsrph2     
+phantom steed                    3   illu        v,s,r      wz       
+phase door                       7                          mg                                   tsrph2     
+phase metal                      4   altr                   mt                      ea/vo        corpse     
+pit                                  altr                   wt                                   dgn:v1     
+planar ally                      6   conj        v,s        cl       
+planar binding                   5   abju        v,s,m,x    bd,cl,dr,wz       
+plane shift                      5   xfer                   cl                                   tsrph2     
+plane shift                      7   conj        v,s,m,x    cl,dr,sr,wk,wz       
+plant death                      1   altr                   nc                      earth        dgn:v4     
+plant door                       4   xfer                   dr                      earth        tsrph2     
+plant growth                     3   altr                   dr                      earth        tsrph2     
+plant growth                     3   xmut        v,s        bd,dr,rn       
+plant growth                     4   altr                   mg                      earth        tsrph2     
+poison spray                     0   conj        v,s        dr,sr,wk,wz       
+poison touch                                                wt                                   dgn:v1     
+polish                           0   altr                   mg                                   dgn:v3     
+polymorph                        4   xmut        v,s,m,c    bd,dr,sr,wz       
+polymorph any object             8   altr                   mg                                   tsrph2     
+polymorph other                  4   altr                   mg                                   tsrph2     
+polymorph self                   4   altr                   mg                                   tsrph2     
+power word heal                  9   evoc        v,s        bd       
+power word kill                  9   ench        v          bd,sr,wk,wz       
+power word stun                  8   ench        v          bd,sr,wk,wz       
+power word, blind                8   necr                   mg                                   tsrph2     
+power word, kill                 9   necr                   mg                                   tsrph2     
+power word, stun                 7   hypn                   mg                                   tsrph2     
+prayer                           3   spir                   cl                                   tsrph2     
+prayer of healing                2   evoc        v          cl       
+precognition                     3   divi                   se                                   corpse     
+predict weather                  1   envi/divi              dr                                   tsrph2     
+prediction                       3   divi                   se                                   corpse     
+premonition                      2   divi                   se                                   corpse     
+preparation                      4   divi                   se                                   corpse     
+prescience                       1   divi                   se                                   corpse     
+present                          0   kine                   mg                                   dgn:v3     
+preserve                         2   ench                   al                                   dgn:v3     
+prestidigitation                 0   xmut        v,s        bd,sr,wk,wz       
+prismatic sphere                 9                          mg                                   tsrph2     
+prismatic spray                  7   altr                   il                                   tsrph2     
+prismatic spray                  7   evoc        v,s        sr,wz       
+prismatic wall                   7   altr                   il                                   tsrph2     
+prismatic wall                   9   abju        v,s        wz       
+produce flame                    0   conj        v,s        dr       
+programmed illusion              6   illu                   il                                   tsrph2     
+programmed illusion              6   illu        v,s,m,x    bd,wz       
+project image                    6   illu                   mg                                   tsrph2     
+project image                    7   illu        v,s,m,c,x  bd,wz       
+projected image                  5   altr+illu              il                                   tsrph2     
+prophecy                         4   divi                   se                                   corpse     
+protect enchantment              2   ench                   mt                                   corpse     
+protection from cantrips         2   abju                   mg                                   tsrph2     
+protection from energy           3   abju        v,s,c      cl,dr,rn,sr,wz       
+protection from evil             1   abju+spir              cl/mg                                tsrph2     
+protection from evil             3   abju+spir              mg                                   tsrph2     
+protection from evil             4   abju+spir              cl                                   tsrph2     
+protection from evil (10)        3   abju+spir              mg                                   tsrph2     
+protection from evil (10)        4   abju+spir              cl                                   tsrph2     
+protection from evil and good    1   abju        v,s,m,c    cl,pa,wk,wz       
+protection from fire             3   abju                   dr                      fire         tsrph2     
+protection from lightning        4   abju                   dr                      fire         tsrph2     
+protection from missiles         3   abju                   mg                                   tsrph2     
+protection from missiles         4   abju                   mt                                   corpse     
+protection from poison           2   abju        v,s        cl,dr,pa,rn       
+protection from weaponry         5   abju                   mt                                   corpse     
+proximity sense                  1   divi                   se                                   corpse     
+purify food and drink            1   altr                   cl                                   tsrph2     
+purify food and drink            1   xmut        v,s,r      cl,dr,pa       
+purify water                     1   altr                   dr                      water        tsrph2     
+purify water                     1   altr                   mt                      water        corpse     
+quake                                                       wt                      earth        dgn:v1     
+quench fire                      3   altr                   mt                      fire         corpse     
+quest                            5   hypn                   cl                                   tsrph2     
+rainbow                          0   illu                   il                                   dgn:v3     
+rainbow pattern                  4                          mg                                   tsrph2     
+raise dead                       5   necr                   cl                                   tsrph2     
+raise dead                       5   necr        v,s,m,x    bd,cl,pa       
+rary's mnemonic enhancer         4   hypn                   mg                                   tsrph2     
+rary's telepathic bond           5   divi        v,s,m,r    wz       
+rattle                           0   illu                   mg                                   dgn:v3     
+ray of enfeeblement              2   hypn                   mg                                   tsrph2     
+ray of enfeeblement              2   necr        v,s,c      wk,wz       
+ray of frost                     0   evoc        v,s        sr,wz       
+ray of paralysis                 3   invo+hypn              nc                                   dgn:v4     
+ray of sickness                  1   necr        v,s        sr,wz       
+read magic                       1   divi                   mg                                   tsrph2     
+reflect                          3   meta                   mt                                   corpse     
+reflecting pool                  4                          cl                                   tsrph2     
+reflections                                                 wt                                   dgn:v1     
+regenerate                       7   necr                   cl                                   tsrph2     
+regenerate                       7   xmut        v,s,m      bd,cl,dr       
+reincarnate                      5   xmut        v,s,m,x    dr       
+reincarnate                      7   necr                   dr                                   tsrph2     
+reincarnation                    6   necr                   mg                                   tsrph2     
+reinforce                        3   altr                   mt                                   corpse     
+rejuvenation                         necr                   wt                                   dgn:v1     
+release                          2   meta                   mt                                   corpse     
+remember                         1   hypn                   se                                   corpse     
+remove charm                     4   hypn                   cl                                     
+remove curse                     3   abju        v,s        cl,pa,wk,wz       
+remove curse                     3   spir                   cl                                   tsrph2     
+remove curse                     4   spir                   mg                                   tsrph2     
+remove fear                      1   hypn                   cl                                   tsrph2     
+remove paralysis                 3                          cl                                   tsrph2     
+renew                            1   meta                   mt                                   corpse     
+repeat                           1   meta                   mt                                   corpse     
+repel insects                    4   evoc                   dr                                   tsrph2     
+repulsion                        6   kine                   mg                                   tsrph2     
+resist cold                      1   necr                   cl                                   tsrph2     
+resist fire                      2   necr                   cl                      fire         tsrph2     
+resistance                       0   abju        v,s,m,c    cl,dr       
+restoration                      7   necr                   cl                                   tsrph2     
+resurrection                     7   necr                   cl                                   tsrph2     
+resurrection                     7   necr        v,s,m,x    bd,cl       
+return                           3   ench                   mt                                   corpse     
+revealation                      2   divi                   se                                   corpse     
+reverse gravity                  7   kine                   mg                                   tsrph2     
+reverse gravity                  7   xmut        v,s,m,c    dr,sr,wz       
+revivify                         3   conj        v,s,m,x    cl,pa       
+rope trick                       2   ench                   mg                                   tsrph2     
+rope trick                       2   xmut        v,s,m      wz       
+rope trick                       3   ench                   il                                   tsrph2     
+sacred flame                     0   evoc        v,s        cl       
+saltr                            0   conj                   mg                                   dgn:v3     
+sanctuary                        1   abju                   cl                                   tsrph2     
+sanctuary                        1   abju        v,s,m      cl       
+scare                            2   hypn                   mg                                   tsrph2     
+scorching ray                    2   evoc        v,s        sr,wz       
+scratch                          0   necr                   mg                                   dgn:v3     
+screen                           1   abju                   mt                                   corpse     
+screen                           8                          mg                                   tsrph2     
+scribe                           1   hypn                   cl                                   dgn:v4     
+scroll                           4   hypn                   cl                                   dgn:v4     
+scrying                          5   divi        v,s,m,c,x  bd,cl,dr,wk,wz       
+searing smite                    1   evoc        v,c        pa       
+secret page                      3                          mg                                   tsrph2     
+see invisibility                 2   divi        v,s,m      bd,sr,wz       
+seek                                 divi                   wt                                   dgn:v1     
+seeming                          5                          mg                                   tsrph2     
+seeming                          5   illu        v,s        bd,sr,wz       
+sending                          3   evoc        v,s,m      bd,cl,wz       
+sending                          5                          mg                                   tsrph2     
+sepia snake sigil                3                          mg                                   tsrph2     
+sequester                        7                          mg                                   tsrph2     
+sequester                        7   xmut        v,s,m,x    wz       
+serten's spell immunity          8   meta/abju              mg                                   tsrph2     
+shades                           6   altr+illu              il                                   tsrph2     
+shadow                           2   altr+ench              mt                                   corpse     
+shadow door                      5   hypn+illu              il                                   tsrph2     
+shadow magic                     5   altr+illu              il                                   tsrph2     
+shadow monsters                  4   altr+illu              il                                   tsrph2     
+shadow summoning                 4   evoc+hypn              nc                                   dgn:v4     
+shadow walk                      7                          mg                                   tsrph2     
+shape change                     9   altr                   mg                                   tsrph2     
+shapechange                      9   xmut        v,s,m,c,x  dr,wz       
+sharpen                          2   altr                   mt                                   corpse     
+shatter                          2   altr                   mg                                   tsrph2     
+shatter                          2   evoc        v,s,m      bd,sr,wk,wz       
+shield                           1   abju        v,s        sr,wz       
+shield                           1   conj                   mt                                   corpse     
+shield of faith                  1   abju        v,s,m,c    cl,pa       
+shillelagh                       0   xmut        v,s,m      dr       
+shillelagh                       1   ench                   dr                                   tsrph2     
+shine/tarnish                    0   altr                   mg                                   dgn:v3     
+shocking grasp                   0   evoc        v,s        sr,wz       
+shocking grasp                   1   altr                   mt                                   corpse     
+shout                            4                          mg                                   tsrph2     
+shower of sparks                 3   conj+invo              mt                      ea/fi        corpse     
+shuriken                         2   conj+invo              mt                                   corpse     
+silence                          2   illu        v,s,c,r    bd,cl,rn       
+silence (15)                     2   altr                   cl                                   tsrph2     
+silent image                     1   illu        v,s,m,c    bd,sr,wz       
+silver circle                    4   conj+ench              mt                                   corpse     
+silver screen                    4   conj                   mt                                   corpse     
+silver shield                    4   conj+ench              mt                                   corpse     
+silver shower                    4   conj+ench              mt                                   corpse     
+silver steed                     4   conj+ench              mt                                   corpse     
+simulacrum                       7                          mg                                   tsrph2     
+simulacrum                       7   illu        v,s,m,x    wz       
+sink                             8                          mg                                   tsrph2     
+size control                     5   altr+necr              he                                   dgn:v2     
+sleep                            1   ench        v,s,m      bd,sr,wz       
+sleep                            1   hypn                   mg                                   tsrph2     
+sleet storm                      3   conj        v,s,m,c    dr,sr,wz       
+slow                             3   altr                   mt                                   corpse     
+slow                             3   hypn/necr              mg                                   tsrph2     
+slow                             3   xmut        v,s,m,c    sr,wz       
+slow poison                      2   necr                   cl                                   tsrph2     
+smokepuff                        0   conj                   mg                                   dgn:v3     
+snake charm                      2   hypn                   cl                                   tsrph2     
+snare                            3   anim                   dr                                   tsrph2     
+solid fog                        4                          il                                   tsrph2     
+solidify                                                    wt                                   dgn:v1     
+spare the dying                  0   necr        v,s        cl       
+sparks                           2   conj+invo              mt                      ea/fi        corpse     
+speak with animals               1   divi        v,s,r      bd,dr,rn       
+speak with animals               1   empa                   dr                                   tsrph2     
+speak with animals               1   empa                   se                                   corpse     
+speak with animals               2   empa                   cl                                   tsrph2     
+speak with dead                  3   empa+necr              cl                                   tsrph2     
+speak with dead                  3   necr        v,s,m      bd,cl       
+speak with elements              3   empa                   se                                   corpse     
+speak with monsters              6   empa                   cl                                   tsrph2     
+speak with plants                2   empa                   se                      earth        corpse     
+speak with plants                3   xmut        v,s        bd,dr,rn       
+speak with plants                4   empa                   cl                      earth        tsrph2     
+speak with plants                4   empa                   dr                      earth        tsrph2     
+speak with the dead              2   empa                   se                                   corpse     
+spectral force                   3   illu                   il                                   tsrph2     
+spectral hand                    2   meta+illu              il                                   tsrph2     
+spell hold                       3   meta                   mt                                   corpse     
+spell immunity                   4                          cl                                   tsrph2     
+spell lock                       2   meta                   mt                                   corpse     
+spell store                      4   meta                   mt                                   corpse     
+spell turning                    7                          mg                                   tsrph2     
+spice                            0   conj                   mg                                   dgn:v3     
+spider                           0   evoc                   mg                                   dgn:v3     
+spider climb                     1   altr                   mg                                   tsrph2     
+spider climb                     2   xmut        v,s,m,c    sr,wk,wz       
+spike growth                     2   xmut        v,s,m,c    dr,rn       
+spike growth                     3                          cl                                   tsrph2     
+spike stones                     5                          cl                                   tsrph2     
+spirit guardians                 3   conj        v,s,m,c    cl       
+spiritual weapon                 2   evoc        v,s        cl       
+spiritwrack                      6                          mg                                   tsrph2     
+splinter                         1   divi                   se                                   corpse     
+spook                            1   hypn                   mg                                   tsrph2     
+sprout                           0   altr                   mg                                   dgn:v3     
+staggering smite                 4   evoc        v,c        pa       
+starshine                        3                          cl                                   tsrph2     
+statue                           7                          mg                                   tsrph2     
+sterilize                        7                          he                                   dgn:v2     
+sticks to snakes                 4   altr                   cl                                   tsrph2     
+sticks to snakes                 5   anim                   dr                                   tsrph2     
+stinking cloud                   2   conj                   mg                      air          tsrph2     
+stinking cloud                   3   conj        v,s,m,c    bd,sr,wz       
+stitch/ravel                     0   altr                   mg                                   dgn:v3     
+stone shape                      3   altr                   dr                      earth        tsrph2     
+stone shape                      4   xmut        v,s,m      cl,dr,wz       
+stone shape                      5   altr                   mg                      earth        tsrph2     
+stone tell                       6   empa                   cl                      earth        tsrph2     
+stone to flesh                   6   altr                   mg                                   tsrph2     
+stoneskin                        4                          mg                                   tsrph2     
+stoneskin                        4   abju        v,s,m,c,x  dr,rn,sr,wz       
+storm of vengeance               9   conj        v,s,c      dr       
+strength                         2   altr                   mg                                   tsrph2     
+succor                           9                          mg                                   tsrph2     
+suggestion                       2   ench        v,m,c      bd,sr,wk,wz       
+suggestion                       3   hypn                   il                                   tsrph2     
+suggestion                       3   hypn                   mg                                   tsrph2     
+summon earth elemental           5   evoc                   mt                      earth        corpse     
+summon elemental                                            wt                                   dgn:v1     
+summon insects                   3   evoc                   dr                      life         tsrph2     
+summon shadow                    5   evoc                   il                      death        tsrph2     
+summon swarm                     2   evoc                   mg                      life         tsrph2     
+sunbeam                          6   evoc        v,s,m,c    dr,sr,wz       
+sunburst                         8   evoc        v,s,m      dr,sr,wz       
+sunray                           7                          cl                                   tsrph2     
+sweeten/sour                     0   conj                   mg                                   dgn:v3     
+swift quiver                     5   xmut        v,s,m,c    rn       
+symbol                           7   abju        v,s,m,x    bd,cl,wz       
+symbol                           7   altr+hypn              cl                                   tsrph2     
+symbol                           8                          mg                                   tsrph2     
+tap                              0   illu                   mg                                   dgn:v3     
+tasha's hideous laughter         1   ench        v,s,m,c    bd,wz       
+tasha's laughter                 2   empa+hypn              mg                                   tsrph2     
+taunt                            1   empa                   mg                                   tsrph2     
+telekinesis                      5   kine                   mg                                   tsrph2     
+telekinesis                      5   kine                   mt                                   corpse     
+telekinesis                      5   xmut        v,s,c      sr,wz       
+telepathy                        8   evoc        v,s,m      wz       
+teleport                         5   xfer                   mg                                   tsrph2     
+teleport                         7   conj        v          bd,sr,wz       
+teleport without error           7   xfer                   mg                                   tsrph2     
+teleportation circle             5   conj        v,m,x      bd,sr,wz       
+temporal stasis                  9   altr                   mg                                   tsrph2     
+tenser's floating disk           1   conj        v,s,m,r    wz       
+tenser's transformation          6                          mg                                   tsrph2     
+thaumaturgy                      0   xmut        v          cl       
+third eye                        3   divi                   se                                   corpse     
+thorn whip                       0   xmut        v,s,m      dr       
+thump                            0   illu                   mg                                   dgn:v3     
+thunderous smite                 1   evoc        v,c        pa       
+thunderwave                      1   evoc        v,s        bd,dr,sr,wz       
+tie/knot/tangle/untie            0   altr                   mg                                   dgn:v3     
+time stop                        9   altr                   mg                                   tsrph2     
+time stop                        9   xmut        v          sr,wz       
+tongues                          1   empa                   se                                   corpse     
+tongues                          3   divi        v,m        bd,cl,sr,wk,wz       
+tongues                          3   empa                   mg                                   tsrph2     
+tongues                          4   empa                   cl                                   tsrph2     
+total recall                     2   hypn                   se                                   corpse     
+track                            1   divi                   se                                   corpse     
+trance                           2   hypn                   mt                                   corpse     
+transfer                         4   meta                   mt                                   corpse     
+translate                        2   empa                   cl                                   dgn:v4     
+transmute                        4   altr                   mt                                   corpse     
+transmute metal to wood          7   altr                   dr                      earth        tsrph2     
+transmute rock to mud            5   altr                   dr                      earth        tsrph2     
+transmute rock to mud            5   altr                   mg                      earth        tsrph2     
+transmute rock to ore            5   altr                   al                      earth        dgn:v3     
+transmute water to dust          6   altr                   mg/cl                   ea/wa        tsrph2     
+transport via plants             6   conj        v,s        dr       
+transport via plants             6   xfer                   dr                      earth        tsrph2     
+trap the soul                    8                          mg                                   tsrph2     
+tree                             3                          dr                                   tsrph2     
+tree stride                      5   conj        v,s,c      dr,rn       
+trip                             2   anim                   dr                                   tsrph2     
+true polymorph                   9   xmut        v,s,m,c    bd,wk,wz       
+true resurrection                9   necr        v,s,m,x    cl,dr       
+true seeing                      5   divi                   cl                                   tsrph2     
+true seeing                      6   divi                   mg                                   tsrph2     
+true seeing                      6   divi        v,s,m,x    bd,cl,sr,wk,wz       
+true sight                       4   divi                   se                                   corpse     
+true sight                       6   divi                   il                                   tsrph2     
+true strike                      0   divi        s,c        bd,sr,wk,wz       
+tsunami                          8   conj        v,s,c      dr       
+turn golems                      5   abju                   mt                                   corpse     
+turn lycantropes                 4   abju                   mt                                   corpse     
+turn wood                        6   abju                   dr                      earth        tsrph2     
+twitch                           0   necr                   mg                                   dgn:v3     
+two-d'lusion                     0   illu                   il                                   dgn:v3     
+undead production                6   necr+anim              nc                                   dgn:v4     
+unseen servant                   1   conj        v,s,m,r    bd,wk,wz       
+vacancy                          4                          mg                                   tsrph2     
+vampire dagger                   6   ench+empa              mg                                   dgn148     
+vampire/spectre prod             6   necr+anim              nc                                   dgn:v4     
+vampiric touch                   3                          mg                                   tsrph2     
+vampiric touch                   3   necr        v,s,c      wk,wz       
+vanish                           7                          mg                                   tsrph2     
+vaporize                                                    wt                      air          dgn:v1     
+veil                             6   hypn+illu              il                                   tsrph2     
+ventriloquism                    2   illu                   il                                   tsrph2     
+vicious mockery                  0   ench        v          bd       
+vision                           7   spir                   il                                   tsrph2     
+volcanic circle                                             wt                                   dgn:v1     
+vorpal blade                     4   ench                   mt                                   corpse     
+wall of fire                     4   evoc        v,s,m,c    dr,sr,wz       
+wall of fog                      1   altr                   il                      ai/wa        tsrph2     
+wall of force                    5   evoc        v,s,m,c    wz       
+wall of force                    5   kine                   mg                                   tsrph2     
+wall of ice                      4   conj                   mg                                   tsrph2     
+wall of ice                      6   evoc        v,s,m,c    wz       
+wall of iron                     5   conj                   mg                      earth        tsrph2     
+wall of stone                    5   conj                   mg                      earth        tsrph2     
+wall of stone                    5   evoc        v,s,m,c    dr,sr,wz       
+wall of thorns                   6   altr                   dr                      earth        tsrph2     
+wall of thorns                   6   conj        v,s,m,c    dr       
+ward, major                      5   invo+abju              cl                                   dgn:v4     
+ward, minor                      4   invo+abju              cl                                   dgn:v4     
+warding bond                     2   abju        v,s,m,x    cl       
+warp wood                        2   altr                   dr                      earth        tsrph2     
+water breathing                  3   altr/necr              dr                      water        tsrph2     
+water breathing                  3   altr/necr              mg                      water        tsrph2     
+water breathing                  3   xmut        v,s,m,r    dr,rn,sr,wz       
+water walk                       3                          cl                      water        tsrph2     
+water walk                       3   xmut        v,s,m,r    cl,dr,rn,sr       
+weather summoning                6   envi                   dr                                   tsrph2     
+web                              2   conj                   mg                                   tsrph2     
+web                              2   conj        v,s,m,c    sr,wz       
+weight alteration                    altr                   wt                                   dgn:v1     
+weird                            9                          mg                                   tsrph2     
+weird                            9   illu        v,s,c      wz       
+whispering wind                  2   altr                   mg                                   tsrph2     
+whistle                          0   illu                   mg                                   dgn:v3     
+wight production                 4   necr+anim              nc                                   dgn:v4     
+wind walk                        6   xmut        v,s,m      dr       
+wind walk                        7   altr+xfer              cl                      air          tsrph2     
+wind wall                        3                          mg                                   tsrph2     
+wind wall                        3   evoc        v,s,m,c    dr,rn       
+wink (blink)                     0   necr                   mg                                   dgn:v3     
+wish                             9   altr                   mg                                   tsrph2     
+wish                             9   conj        v          sr,wz       
+witch bolt                       1   evoc        v,s,m,c    sr,wk,wz       
+withdraw                         2   necr                   cl                                   tsrph2     
+wither                                                      wt                                   dgn:v1     
+wizard eye                       4                          mg                                   tsrph2     
+wizard glue                      1                          al                                   dgn:v3     
+wizard lock                      2   altr                   mg                                   tsrph2     
+wizard mark                      1   altr                   mg                                   tsrph2     
+word of recall                   6   conj        v          cl       
+word of recall                   6   xfer                   cl                                   tsrph2     
+wraith production                4   necr+anim              nc                                   dgn:v4     
+wraithform                       3                          mg                                   tsrph2     
+wrap                             0   altr                   mg                                   dgn:v3     
+wrathful smite                   1   evoc        v,c        pa       
+wyvern watch                     2   abju                   cl                                   tsrph2     
+zone of truth                    2   ench        v,s        bd,cl,pa       

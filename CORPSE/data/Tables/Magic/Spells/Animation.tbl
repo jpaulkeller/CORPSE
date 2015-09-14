@@ -1,9 +1,0 @@
-.Level  Spell                         Type           Element      Source     Class
-.Animation = Spell
-  
- 5      animate dead                  ani            death        tsrph2     mage
- 7      animate rock                  ani            earth        tsrph2     drui
- 1      entangle                      ani                         tsrph2     drui
- 3      snare                         ani                         tsrph2     drui
- 5      sticks to snakes              ani                         tsrph2     drui
- 2      trip                          ani                         tsrph2     drui

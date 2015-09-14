@@ -1,7 +1,37 @@
+/ http://www.random-generator.com/index.php?title=Pirate_Names
+
 : Pirate Name
-{:Adj} {American Name:First} {American Name:Surname}
-{American Name:First} "{:Nickname}" {American Name:Surname}
-{:Rank} {Name} the {:Adj}
+{50%{:Rank} }{75%{:Male First} }{33%"{:Nickname}" }{:Surname}{33% {:Epithet}}{25% of the {Ship Name}}
+{:Adj} {:Male First}{75% {:Surname}}
+{:Nickname} {:Male First}
+{:Rank} {Name}{75% the {:Adj}}
+
+: Male First
+{American Name:Male First}
+{Portuguese Name:Male}
+
+: Surname
+/ {Scottish Name:Surname} [ScottishMale.ScottishClan]
+{American Name:Surname}
+{German Name:Surname}
+{Italian Name:Surname}
+{Portuguese Name:Surname}
+{:Classic Surname}
+
+: Classic Surname
+Albert
+Alberts
+Black
+Blood
+Hook
+Jones
+Mc{:Male First}
+Morgan
+Nemo
+Peters
+Roberts
+Ryan
+Sparrow
 
 : Adj
 {Adjective}
@@ -13,14 +43,184 @@
 {Ship Name:Nautical Adj}
 {Trait}
 
-: Nickname
-Gold Tooth
-Shark Bait
-Deck Licker
-{Color:Simple} Anchor
-{Color:Simple} Beard
-
 : Rank
-Boatswain
-Captain
-First Mate
+admiral
+boatswain
+captain
+cap’n
+commodore
+deckhand
+duke
+ensign
+first mate
+fleet admiral
+lieutenant
+longshoreman
+marquis
+midshipman
+navigator
+quartermaster
+second mate
+ship's cook
+shipmate
+sir
+skipper
+swabby
+the dread captain
+the dread pirate
+the good captain
+third mate
+
+: Nickname
+bandanna
+barnacle
+bawdy
+beady-eyed
+bilge {:creature}
+blind
+bootstrap
+broadsides
+cannonball
+cantankerous
+deck licker
+driftwood
+fire-breathin’
+hard tack
+hawkeye
+hook hand
+hurricane
+keel-haulin’
+lighthouse
+lightning
+lusty
+moldy
+mutinous
+muttonchops
+old
+one-eyed
+patches
+pegleg
+rag tag
+ragged
+reef runnin'
+rudderless
+rum runnin’
+rusty
+savvy
+scrimshaw
+scurvy
+sharkbait
+short fuse
+snake-eyes
+stormy
+thunderin’
+thunderous
+two-timin’
+whalebone
+windlass
+{color:simple} anchor
+{color:simple}beard
+{metal:simple}shanks
+{metal:simple}tooth
+
+: Epithet
+the black
+the cannoneer
+the cantankerous
+the dangerous
+the drunk
+the drunkard
+the fearsome
+the furious
+the gov’ner
+the greedy
+the grog guzzler
+the gruesome
+the leprous
+the mad
+the navigator
+the perilous
+the plank poker
+the plank pusher
+the privateer
+the rat
+the red
+the rum runner
+the rusty {:weapon}
+the salty
+the salty dog
+the scalliwag
+the scurvy
+the sea {:creature}
+the shark
+the storm chaser
+the swabby
+the wharf rat
+the {:scourge} of the {:seas}
+the {color:common} parrot
+
+: Scourge
+bane
+curse
+plague
+scourge
+scurge
+terror
+
+: Seas
+deep
+gold coast
+high seas
+ivory coast
+lost isles
+open sea
+sargasso sea
+sea
+seven seas
+
+: Creature
+devil
+dog
+dragon
+monkey
+mouse
+rat
+serpent
+snake
+wolf
+
+: Weapon
+cutlass
+dagger
+dirk
+knife
+needle
+rapier
+saber
+sword
+trident
+
+===
+
+[FemalePirateName]
+[MalePirateFirstName] “[PirateFlairFirstName]” [MalePirateLastName]
+[MalePirateFirstName] [PirateFlairEnder]
+[PirateFlairFirstName] [MalePirateFirstName]
+[PirateRank] [MalePirateFirstName] “[PirateFlairFirstName]” [MalePirateLastName] [PirateFlairEnder]
+[PirateRank] [MalePirateFirstName]
+[PirateRank] [MalePirateLastName] of [Ship Names.main]
+Long [MalePirateFirstName] [Metal]
+
+;FemalePirateName
+[PirateFlairFirstName] [FemalePirateFirstName]
+[PirateRank] [FemalePirateFirstName] of [Ship Names.main]
+[FemalePirateFirstName] [PirateFlairEnder]
+
+;FemalePirateFirstName
+[American Census Names.female]
+[ScottishFemale.main]
+[ScottishFemale.ScottishFemaleFirstName]
+[Italian Names.FemaleFirst]
+[German Female.germanfemale]
+[Portuguese Names.portuguesefemale]
+Kitty

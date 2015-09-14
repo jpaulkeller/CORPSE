@@ -1,6 +1,8 @@
 : Custom
 {Custom:who} must {always|never} {custom:custom} {custom:whom} {custom:when}. 
 {Custom:who2} {custom:verb} {custom:type} {custom:where} {custom:when}.
+On the {Holiday}, everyone celebrates by {:holiday}.
+For funerals, they {:funeral}. 
 
 : Who
 All the people
@@ -80,3 +82,77 @@ at night
 during the day
 in the {summer|fall|winter|spring}
 during holidays
+
+: Holiday
+affirmations of {hope|faith}
+carrying sacred {weapon}s around the city
+carrying statues around the city
+contests of {archery|combat|dueling|{menu:dish} eating|falconry|hunting|fishing|sports}
+decorating statues
+drinking pearls dissolved in {oil:vinegar}
+drunk, naked caroling
+eating a traditional meal of {menu:fare}
+eating {color} food
+embarking on a pilgrimage to {landmark:specific}
+emptying the barrel of sacred fish into the lake of {evocative concept}
+exchanging presents
+fasting and quiet contemplation
+freeing that year’s best-behaved slave
+hanging {tiny item}s from trees
+marriage proposals
+nudity
+oath-taking
+partying
+partying anywhere except your own dwelling (all are open)
+planting trees
+praying
+racing in chariots pulled by {domesticated animal}s
+sacrificing three {domesticated animal}
+sailing thousands of burning candles down the river, illuminating the night
+smoking a sacred herb
+sowing organs
+story-telling
+swapping spouses
+telling tales around a bonfire
+the {making|destruction|exchange|giving|hiding|seeking} of {{{tiny item|reagent}}+}
+vows of {chastity|celibacy|faithfulness|poverty|silence}
+wearing {color} garments
+weddings
+{acts|expressions} of {charity|joy|sorrow|forgiveness|regret|vengeance}
+{body part} painting
+{capturing|breeding|eating|hunting|release|sacrifice|trapping} of {{fauna}+}
+{consumption|harvesting|planting} of {flora} 
+{drinking|feasting}
+{execution|freeing} of {slaves|prisoners}
+{forming|breaking} of bonds
+{honoring|shunning} of {{hireling type|profession}}
+{loud|quiet} {chanting|music|singing}
+{{evocative adj}|colorful} {costumes|decorations}
+demigod look-a-like contest
+kite-flying festival
+
+: Funeral
+a great feast is held in honor of every animal killed (much of the celebration consists of attempting to persuade the spirit of the animal that it died accidentally and was not murdered)
+bodies are put on display in elaborate sepulchers made from crystal, silver and marble
+coins are placed under the eyelids of the dead to pay the Conveyor
+it is considered an act of piety to mummify a cat
+rich men without any name to protect them are thrown into a furnace that heats the temple
+the blood of executed criminals is used to treat epilepsy
+the bodies of elders are tied to horses, which are then driven into the sea
+the bodies of sacred bulls are buried so their horns protrude from the ground
+the bones of the dead are ground up and baked into bread, which the living consume in accordance with the scripture
+the brains of the dead are stored in opaque “dream” jars
+the corpse of a father is embalmed, stuffed with fragrant herbs, and kept in the home to maintain its seat at the table. The corpse is served, bathed, and shares a bed with the mother of his children, for whom it is forbidden to remarry
+the dead are left on a high plateau to be devoured by carrion birds
+the dead are placed on trial, their corpse set before their fellows, who condemn the faults and mistakes of the deceased
+the dead are preserved by means of drugs, spices and linen bandages
+the dead are said to live again for one hour every year
+the dying are left out on the great ice-fields to freeze, in the hopes that future generations may find a cure for death
+the dying are lit on fire, serving as human torches to illuminate cruel parties
+the elderly, upon reaching their 300th year, voluntarily begin an exclusive diet of honey. When death comes, they are laid to rest in a stone coffin filled with honey and stored alongside the others of their generation to be consumed by their descendants in a hundred years, as they themselves consumed their mellified ancestors
+the king, upon death, is laid on a pyre in the great arena, his prized hunting falcon chained to his wrist, his people in solemn mourning. As the king burns, the falcon beats its wings at the length of the chain, trying to escape the heat and smoke
+the people, effectively immortal, are arbitrarily assigned a number between 1 and 1,000 at birth. When that age is reached, the person is euthanized in a religious ceremony necessary to control the population
+the skin of the deceased is used to bind large books, which are lovingly cared for in a community library
+the spirits of the dead live in stone houses and must be fed or they will starve, cursing their neglectful family
+the teeth of the dead are extracted and used as artificial teeth by the living
+wax masks are made of the dead and worn by professional actors at the funeral, who imitate the dead’s mannerisms and speech. Every family has a cupboard which contains the masks of their loved ones throughout history, along with instructions to future actors, and large funerals employ many actors who bring the dead back to life in this manner

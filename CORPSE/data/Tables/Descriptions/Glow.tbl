@@ -1,0 +1,37 @@
+: glow
+{glow:verb}{75% {glow:adv}}{75% with a {color:standard} light}
+
+: glows
+{glow:verb}s{75% {glow:adv}}{75% with a {color:standard} light}
+
+: verb
+blaze
+burn
+glimmer
+glint
+glow
+pulsate
+shimmer
+shine
+sparkle
+
+: adv
+brightly
+faintly
+intermittently
+steadily
+
+: when
+at {dawn|dusk|night}
+in dark places
+in moonlight
+in starlight
+when facing {compass:4}
+when held
+when rubbed
+when the moon is {full|new}
+when {gold|magic|evil|a trap|an undead} is nearby
+when {{fauna}+} are nearby
+when {{monster}+} are nearby
+while casting
+while underground

@@ -2,9 +2,37 @@
 
 : Symbol
 5x a {10%{size} }{art:style} {:type} of a {color:standard} {charge} with {:extra} {:position}
+a {33%{size} }{:icon}
 
 : Simple
 a {10%{size} } {:type} of a {color:standard} {charge}
+a {33%{size} }{:icon}
+
+: Icon
+adornment
+brand
+design
+device
+emblem
+glyph
+figure
+hieroglyph
+ideograph
+image
+impression
+imprint
+mark
+pattern
+pictograph
+rune
+seal
+sigil
+signet
+stamp
+symbol
+token
+watermark
+wax seal
 
 : type
 carving
@@ -12,11 +40,12 @@ drawing
 engraving
 etching
 painting
+printing
 sketch
 
 : extra
 a {20%{art:style} }{charge}
-a {50%{humanoid} }{:text} {engraved|inscribed|painted|scratched|written}
+a {50%{humanoid} }{:text} {engraved|inscribed|painted|printed|scratched|written}
 "{Inscription}"
 
 : text

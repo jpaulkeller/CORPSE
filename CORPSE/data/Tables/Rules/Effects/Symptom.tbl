@@ -106,7 +106,7 @@ sensory loss; {33% hearing}{33% sight} {33% touch} {33% taste} {33% smell} for {
 shortness of breath
 skin sores
 skin turns translucent for a {2d4} {duration:moderate}s
-skin turns {color.light} for {2d4} {duration:moderate}s
+skin turns {color:light} for {2d4} {duration:moderate}s
 slowed reaction times
 slurred speech
 sneezing
@@ -131,7 +131,7 @@ violent mood swings
 vomiting
 wasting sickness; lose 1 point of {attribute} every {duration:weeks}
 weakness; -2 to damage, no open doors or bend bars, encumbrance halved
-{color.light} fur grows on your {body part}
+{color:light} fur grows on your {body part}
 {color:common} skin color; -{6} to charisma depending on context
 
 : glow verb

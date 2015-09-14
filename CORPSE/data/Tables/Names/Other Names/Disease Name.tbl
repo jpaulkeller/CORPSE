@@ -8,13 +8,13 @@ shadow
 {fauna{!oneword}}
 {flora{!oneword}}
 {fungus}
-{fungus:pattern}
 {fungus:pre}
 {liquid feature}
 {monster{!oneword}}
 {mythical creature}
 {noise}
 {organ}
+{pattern}
 {NAME}'s
 {shape}
 {taste:adj bad}

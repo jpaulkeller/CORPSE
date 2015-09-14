@@ -1,7 +1,67 @@
+/ http://www.random-generator.com/index.php?title=Orc_Names
+
+: Orc Name
+5x {:Generated}{33% the {Orc Tribe Name:Adj}}
+{:Specified}{33% the {Orc Tribe Name:Adj}}
+
+: Generated
+{:Con}{:v}{:con}{50%{:v}{:con}{10%{:v}{:con}}}
+{:Vowel}{:con}{75%{:v}{:con}{20%{:v}{:con}}}
+
+: Con
+ch
+g
+gh
+gn
+gr
+k
+kr
+l
+m
+n
+r
+sh
+w
+
+: Vowel
+A
+Au
+O
+U
+{:V unicode}
+
+: V unicode
+Ä
+Ó
+Ô
+Ö
+Ú
+Û
+Ü
+
+: v
+á
+â
+ä
+ó
+ô
+ö
+ú
+û
+ü
+
+: Specified
+Azbag
 Azog
+Bagza
 Balcmeg
+Barnakh
+Bogbar
 Bolg
+Bulfimbok
 Búrz
+Fufi
+Gabzom
 Gazbag
 Gazbug
 Gazduf
@@ -23,7 +83,10 @@ Gazuf
 Gazug
 Gazûl
 Ghash
+Glor
+Golagash
 Golfimbul
+Golgrek
 Gorbag
 Gorbug
 Gorduf
@@ -32,6 +95,7 @@ Gorgash
 Gorgaz
 Gorgol
 Gorhúr
+Gorku
 Gorlúk
 Gorlûn
 Gornag
@@ -39,8 +103,18 @@ Gorshag
 Gorthak
 Gorzag
 Gorûl
+Gozreh
+Gozulug
+Granasho
 Grishnakh
 Grishnákh
+Herzog
+Hufduf
+Khanrab
+Khubrash
+Kobmifuz
+Krglgk
+Kulrash
 Lagbug
 Lagduf
 Lagdush
@@ -51,6 +125,7 @@ Lagrad
 Lagrat
 Lagthak
 Laguf
+Lobuglem
 Lug
 Lugbag
 Lugduf
@@ -61,6 +136,7 @@ Luglúk
 Luglûn
 Lugnag
 Lugthak
+Luguzog
 Lugzag
 Lugûl
 Lûnbag
@@ -96,6 +172,9 @@ Maulúk
 Maunag
 Mauthak
 Mauzag
+Melgash
+Melgubol
+Mozbak
 Muzbag
 Muzbug
 Muzduf
@@ -131,6 +210,7 @@ Nagzag
 Nûzu
 Orcobal
 Othrod
+Rabgob
 Radbag
 Radbug
 Radgash
@@ -144,9 +224,14 @@ Radrat
 Radthak
 Radug
 Radzag
+Rolg
+Roshanakh
+Ruhu
+Shagalo
 Shagbug
 Shagduf
 Shagdush
+Shaggash
 Shaglur
 Shaglúk
 Shagrad
@@ -155,7 +240,11 @@ Shagthak
 Shaguf
 Shagug
 Shagûl
+Sharbukh
+Sharluk
+Shoglom
 Snaga
+Targl
 Ufgaz
 Uflug
 Uflúk
@@ -175,6 +264,8 @@ Ugrad
 Ugrat
 Ugthak
 Ugzag
+Uhur
+Ukrog
 Yagaz
 Yagbug
 Yagduf
@@ -205,70 +296,3 @@ Zagrat
 Zagthak
 Zaguf
 Zagug 
-
-===
-
-<!-- -----------------------
-Name:	Orc Names
-Date:	2008-01-28
-By:	Dave Younce
------------------------ -->
-
-{{purge}}
-
-{{Cols|4|<ul><sgdisplay iterations="16"><li>[main]</sgdisplay></ul>}}
-
-<sgtable>
-;main
-15,[CapCons][Vowel][Cons][Vowel][Cons][More][Title]
-15,[CapVowel][Cons][Vowel][Cons][More][Title]
-1,[SGNP orcish.main][Title]
-
-;More
-2,[Vowel][Cons]
-3,
-
-;Cons
-1,ch
-2,g
-3,k
-4,r
-5,gr
-6,gh
-7,n
-8,gn
-
-;CapCons
-1,Ch
-1,G
-1,Gh
-1,Gn
-1,Gr
-1,K
-1,Kr
-1,N
-1,Rr
-1,W
-
-;Vowel
-1,a
-2,aa
-1,o
-5,u
-
-;CapVowel
-1,A
-2,Aa
-1,O
-5,U
-
-;Title
-3,
-1, the [Orc Tribe Name.Adj]
-</sgtable>
-
-==Similar generators==
-*[[Orc Tribe Name]]
-*[[SGNP orcish]]
-
-[[Category:Fantasy]][[Category:Names for People]]

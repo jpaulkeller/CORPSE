@@ -1,5 +1,29 @@
 : Title = Good + Bad
 
+: Position
++ {academic rank:position}
++ {cult title}
++ {feudal rank:position}
++ {guild rank}
++ {military rank:position}
++ {profession:government}
++ {pseudo class}
++ {religious rank:position}
+
+: Type
+administrative
+ceremonial
+executive
+judicial
+legislative
+
+: Source
+appointed
+elected
+hereditary
+identified
+purchased
+
 : Good
 admirable
 amazing
@@ -126,7 +150,6 @@ knave
 loathsome
 madman
 malevolent
-master
 monstrous
 murderer
 nasty

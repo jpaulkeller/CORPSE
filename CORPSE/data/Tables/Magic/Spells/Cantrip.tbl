@@ -1,6 +1,8 @@
 / http://random-generator.com/index.php?title=Cantrip
 
-Light a small candle close to the caster.
+.Level  Spell                         Type     Comp     Element      Source     Class              Description
+.Evocation = Spell
+
 Extinguish a small burning candle close to the caster.
 Butter toast (both butter and toast should be close to caster).
 Blast a handful of confetti out of {left|right} hand.

@@ -64,7 +64,6 @@ fencing (receiving stolen goods)
 fraud
 harboring criminals
 heresy
-horse theft
 illegal trafficking of {smuggled}
 illegal use of magic
 kidnapping
@@ -112,6 +111,7 @@ wounding with intent to do grievous bodily harm
 {:use} liquor without a licence
 {:use} {smuggled}
 {assaulting|offending|killing} a {rank}
+{domesticated animal} theft
 {smuggled}-trading
 
 : Normally Legal Act
@@ -168,3 +168,34 @@ in a {structure}
 : How
 in a provocative manner
 without a {license|permit}
+
+: Criminal
+arsonist
+cheat
+con-artist
+counterfeiter
+deserter
+drunk
+false counselor
+false prophet
+food hoarder
+grave robber
+heretic
+idolater
+kidnapper
+liar
+murderer
+mutineer
+poacher
+prostitute
+seditionist
+slanderer
+swindler
+tomb raider
+traitor
+undocumented foreigner
+unlicensed {profession}
+usurer
+vandal
+{domesticated animal} thief
+{smuggled} smuggler

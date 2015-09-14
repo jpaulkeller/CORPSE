@@ -1,9 +1,22 @@
 / inspired by http://chaoticshiny.com/holidaygen.php
 
-{Generated Name}, the {:Event} of {Evocative Concept}, is a {50%{:mood} }{50%{:type} }holiday celebrated {:relative to} the {calendar}.  It lasts {one {duration:moderate}|{number:twototwelve} {duration:moderate}s}.  It {frequency:some} includes {50%{:scope} }{:act}. 
+: Holiday
+The {:Event} of {:Noun}
+{Evocative Adj} {Evocative Noun} {:Event} 
+{Generated Name}, the {:Event} of {:Noun}
+
+: Holiday Description
+{:HOLIDAY}, is a {50%{:mood} }{50%{:type} }holiday celebrated {:relative to} the {calendar}.  It lasts {one {duration:moderate}|{number:twototwelve} {duration:moderate}s}.  It {frequency:some} includes {50%{:scope} }{custom:holiday}.
+
+: Noun
+the {Evocative Adj} {Tiny Item:{!OneWord}}
+the {Evocative Noun} 
+{Calendar}
+{Evocative Concept}
 
 : Event  
 anniversary
+blessing
 carnival
 celebration
 {ceremony}
@@ -12,10 +25,12 @@ commencement
 day
 eve
 faire
+feast
 festival
 honoring
 observance
 parade
+purification
 recognition
 remembrance
 ritual
@@ -40,6 +55,7 @@ aristocratic
 cultural
 dangerous
 historic
+lavish
 mysterious
 peasant
 religious
@@ -57,25 +73,3 @@ public
 private
 ceremonial
 symbolic
-
-: Act
-affirmations of {hope|faith}
-contests of {archery|combat|dueling|eating|falconry|sports}
-marriage proposals
-nudity
-oath-taking
-partying
-praying
-story-telling
-the {making|destruction|exchange|giving|hiding|seeking} of {{{tiny item|reagent}}+}
-vows of {chastity|celibacy|faithfulness|poverty|silence}
-weddings
-{acts|expressions} of {charity|joy|sorrow|forgiveness|regret|vengeance}
-{capturing|breeding|eating|hunting|release|sacrifice|trapping} of {{fauna}+}
-{consumption|harvesting|planting} of {flora} 
-{drinking|feasting}
-{execution|freeing} of {slaves|prisoners}
-{forming|breaking} of bonds
-{honoring|shunning} of {{hireling type|profession}}
-{loud|quiet} {chanting|music|singing}
-{{evocative adj}|colorful} {costumes|decorations}

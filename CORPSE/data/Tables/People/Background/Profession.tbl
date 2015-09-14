@@ -52,6 +52,7 @@ actor                  {guild rank}                entertainer
 actuary                                            service                        financial bookkeeping
 administrator                                      government
 advisor                                   upper    government
+agent                                              government
 alabasterer                                        craftsman                      worker in alabaster
 alchemist              {guild rank}       upper    scholar                        a medieval chemist (good with potions, poisons, +2 healing)
 alderman                                           government                     a town or city official
@@ -180,6 +181,7 @@ carver                                             service                      
 castellan              {military rank}             militar                        {weapon}, {armor}
 catchpole                                          government                     one who finds and brings in debtors
 ceiler                                             service                        one who installs ceilings
+celebrity                                 upper    entertainer
 cellarer                                           service                        one in charge of the wine cellar
 chainmaker                                         craftsman          
 chamberlain                               upper    service                        a private attendant who waits on his lord in his bedchamber; overseer of the domain of a {feudal rank} 
@@ -205,14 +207,16 @@ clown                                              entertainer
 coachman                                           service
 cobbler                {guild rank}                craftsman                      shoe maker
 coiner                 {guild rank}                craftsman                      a maker of coins             
-collector                                                                         of {equipment}
+collector                                 upper                                   of {equipment}
 collier                {guild rank}                merchant                       one who makes or sells charcoal/coal; (a charcoal burner - for smelting)
 colporteur             {guild rank}                merchant                       seller of religious books
 comb-maker                                         craftsman          
 compasssmith                                       craftsman          
 confectioner                              middle   craftsman          
 conjurer                                           magical
+consigliere                                        service;criminal
 constable                                 upper    government                     commander/warden of the town/castle guard
+consul                                             government
 cook                                               service                        
 cooper                 {guild rank}                craftsman        70/1-in-700   one who makes and repairs barrels and tubs
 coppersmith            {guild rank}       middle   craftsman                      a worker in copper and brass (or redsmith)
@@ -223,7 +227,7 @@ costermonger           {guild rank}                merchant                     
 costumer                                  upper
 cottar                                    lower    service                        old/infirm, menial tasks
 councilor                                 upper    government                     a city official or advisor of the court
-courier                                   lower    service
+courier                                   lower    service;government
 court artist                              middle   entertainer
 court chef                                middle   service
 court jester                              middle   entertainer
@@ -284,7 +288,7 @@ engraver               {guild rank}                craftsman                    
 envoy                                              government
 ewerer                                    lower    service                        bring/heat water for a noble
 exchequer                                          government                     the man responsible for the king's revenue
-executioner            {military rank}             service            
+executioner            {military rank}             government
 fabric shearer                                     craftsman                      trims the nap and makes pleats for customers
 falconer               {guild rank}       middle   farmer                         breeds, trains, hunts with falcons
 famulus                                            service                        a servant or attendant, especially of a scholar or magician
@@ -398,6 +402,7 @@ interpreter            {guild rank}                service                      
 interrogator                                       military
 inventor                                           scholar
 ironmonger             {guild rank}                merchant                       one who sells things made of iron
+itinerant                                 lower    itinerant    
 ivory-carver                                       craftsman                      
 jack of all trades
 jailer                                             government                     
@@ -449,7 +454,7 @@ lutemaker                                          craftsman
 lutenist                                           entertainer                    a lute player
 luthier                                            craftsman                      a maker of stringed instruments (lutes, guitars, etc)
 mage                   {guild rank}                magical
-magician of {magic}:   {guild rank}                magical
+magician of {magic}    {guild rank}                magical
 magistrate                                         government                     a judge
 maidservant                                        service         199/1-in-250   a female household servant
 mailer                                             craftsman                      enameller (not a maker of armor)
@@ -486,7 +491,7 @@ minstrel               {guild rank}       middle   entertainer                  
 minter                 {guild rank}                craftsman                      a maker of coins             
 mirrorer                                           craftsman                      one who makes mirrors?
 molecatcher                               lower    farmer
-money-lender                                       service
+money-lender                              upper    service
 monk                   {religious rank}   lower    religious                       of {religion}; {weapon}
 mosaic layer                                       craftsman/artist
 mummer                                             entertainer                    actor
@@ -579,7 +584,7 @@ pursuivant                                         government                   
 purveyor                                           military                       army supplier for a {feudal rank} 
 quarrier               {guild rank}                craftsman/farmer               one who digs and cuts stone
 quarryman              {guild rank}                craftsman/farmer               one who digs and cuts stone
-quartermaster                             middle   service            
+quartermaster                             middle   government/military
 quilter                                            craftsman                      a quilt-maker
 ragpicker                                          service                        sorts through leftover rags, find re-usable ones
 raker                                              service                        street sanitation worker

@@ -24,20 +24,27 @@ cavalier
 centurion
 champion
 chevalier
+commander
+conqueror
+defender
 dragoon
 fighter
 guardian
 knight
 lancer
+legionnaire
 mercenary
 paladin
+sentinel
 soldier
 templar
 warden
+warlord
 warrior
 
 : Mage
 alchemist
+allomancer
 arcanist
 artificer
 battlemage
@@ -56,14 +63,12 @@ hexologist
 illusionist
 invoker
 mage
+magi
 magician
 magus
 necromancer
 neuromancer
-rune-carver
-rune-caster
-rune-keeper
-rune-weaver
+rune-{carver|caster|keeper|master|weaver}
 shaman
 sorcerer
 spell crafter
@@ -141,11 +146,12 @@ vagabond
 : Sage
 augur
 diviner
-lore master
+lore-{keeper|master}
 medium
 oracle
 prophet
 sage
+savant
 seer
 
 : Misc

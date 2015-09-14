@@ -1,23 +1,40 @@
 / inspired by http://roll1d12.blogspot.com/2014/10/name-that-barbarian.html
 
 : Fancy
-{:Full} {:EPITHET}
+{15%{Noise} }{:Full} {EPITHET}
 
 : Full
-{15%{Noise} }{:Barbarian Name}{10% {:Barbarian Name}}
+{:Barbarian Name}{10% {:Barbarian Name}}
 
 : Epithet
-{20%, {{Pseudo Class|Title:Bad}}} of the {Site Name:Dark}
-the {Evocative Adj:Negative}
-{50% {Humanoid}-{bane|killer|eater|slayer|friend}}
-the {Organ} {:Eater}
 , {Title:Bad} of the {Weapon{!OneWord}} God
-{Weapon{!OneWord}}{hand|fist|foot|tooth}
+, {{Pseudo Class|Title:Bad}} of the {Site Name:Dark}
 of {Evocative Concept:Not Positive}
-{Epithet:Barbarian}
+the {Evocative Adj:Negative}
+the {Trait:Bad}
+{50%the }{:Prefix}-{:suffix}
+{Weapon{!OneWord}}{claw|hand|fist|foot|tooth}
 
-: eater 
+: Prefix
+{Organ}
+{Humanoid}
+{Pseudo Class}
+{:Beast}
+
+: Beast
+Beast
+Dragon
+Fear
+Hawk
+Lion
+Panther
+Serpent
+Wolf
+
+: suffix
+bane
 biter
+blaster
 breaker
 butcher
 carver
@@ -30,6 +47,7 @@ defiler
 devourer
 eater
 flayer
+flinger
 gnawer
 impaler
 jabber
@@ -38,8 +56,10 @@ melter
 muncher
 picker
 puncher
+reaper
 ripper
 scratcher
+skin
 slasher
 slayer
 slicer
@@ -100,6 +120,7 @@ Cormac
 Cyneburga
 Cynefrid
 Dai
+Darkthag
 Deedra
 Delyth
 Diarf
@@ -121,8 +142,10 @@ Eunan
 Evgren
 Eydis
 Eysteinn
+Fagtarr
 Fenit
 Fergal
+Fertag
 Fidelma
 Finn
 Fionnait
@@ -132,9 +155,11 @@ Freygerd
 Frideswide
 Geirmund
 Gethin
+Gordar
 Goronwy
 Grania
 Grian
+Grimdar
 Grimhildr
 Groat
 Gruffydd
@@ -171,12 +196,15 @@ Kadlin
 Keeva
 Khoog
 Kjallak
+Korgoth
+Krongak
 Lassar
 Leiknir
 Leofric
 Leofwine
 Liffey
 Llewellyn
+Lordwig
 Lowri
 Luitgard
 Maeve
@@ -203,6 +231,10 @@ Neirin
 Nemon
 Niamh
 Nidbiorg
+Norgek
+Northstarr
+Nurbdar
+Nyragg
 Ogn
 Olwen
 Onund
@@ -216,8 +248,11 @@ Ragnvald
 Rannveig
 Rathnat
 Rhian
+Rigdek
+Rogdek
 Ronan
 Rosheen
+Sagdar
 Scoth
 Serc
 Seren
@@ -230,16 +265,19 @@ Sive
 Skallagrim
 Slaney
 Snorri
+Stabdar
 Stigandr
 Tancred
 Teafa
 Tegwen
 Theodric
 Thidrandi
+Thingfar
 Thorbjorn
 Thordis
 Thorfridr
 Thorir
+Thygar
 Tonna
 Tressa
 Tuamnait
@@ -253,7 +291,9 @@ Valgerd
 Veleif
 Vigdis
 Waltheof
+Warmar
 Wine
 Wybert
 Yowk
 Yrsa
+Ziglar

@@ -101,6 +101,7 @@
     {20%<li>Philia: {philia!}}
     {20%<li>Phobia: {phobia!}}
     {50%<li>Quirk: {quirk}}
+    {33%<li>Flaw: {character flaw!}}
   </ul>
  
   <li>Equipment and Possessions:

@@ -1,12 +1,12 @@
 / http://random-generator.com/index.php?title=Epithets
 
-: Epithet
-{:Barbarian}
-{:General}
-{:Mage}
-{:Priest}
-{:Rogue}
-{:Warrior}
+: EPITHET
+{:BARBARIAN}
+{:GENERAL}
+{:MAGE}
+{:PRIEST}
+{:ROGUE}
+{:WARRIOR}
 
 : General
 the {Adjective}
@@ -26,14 +26,7 @@ the {Trait}
 {from|of} the {Terrain}
 
 : Barbarian
-, {Title:Bad} of the {Weapon{!OneWord}} God
-of {Evocative Concept:Not Positive}
-the {Evocative Adj:Negative}
-the {Organ} {Carver|Choker|Cleaver|Collector|Crusher|Eater}
-the {Trait:Bad}
-{20%, {{Pseudo Class|Title:Bad}}} of the {Site Name:Dark}
-{50% {Humanoid}-{bane|butcher|killer|eater|slayer|friend}}
-{Weapon{!OneWord}}{hand|fist|foot|tooth}
+{BARBARIAN NAME:EPITHET}
 
 : Mage
 / {: ArcaneBooks.ArcaneAuthor}
