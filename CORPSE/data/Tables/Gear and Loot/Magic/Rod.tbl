@@ -1,39 +1,66 @@
 : Rod
-Rod of {{Conjuration|MetaMagic|:POWER}} ({#/{41-50}} charges), {30-42}" long, made of {:material} 
+Rod of {{Spell:Conjuration|Spell:MetaMagic|:Power}} ({#/{41-50}} charges), {30-42}" long, made of {:material} 
 
 : Material
 9x {metal:enchantable}
 2x {metal}
 2x {wood}
-1x ivory
 1x bone
+1x horn
+1x ivory
 
 : Power
-Acid Balls
-Acid Bolts
-Cold Balls
-Curing
-Detection
-Disarming
-Door/Stair Location
-Drain Life
-Fire Balls
-Fire Bolts
-Frost Bolts
-Healing
-Identify
-Illumination
-Light
-Lightning Balls
-Lightning Bolts
-Magic Mapping
-Polymorph
-Probing
-Recall
-Restoration
-Sleep Monster
-Slow Monster
-Speed
-Teleport Other
-Trap Location
-Treasure Location
+acid ball
+acid bolt
+beast calming
+charming
+cold ball
+confusion
+curing
+detection
+digging
+disarming
+disintegration
+door/stair location
+drain life
+draining
+dust
+fire bolt
+fireball
+flames
+flaming arrows
+force bolt
+frost
+frost bolt
+haste other
+heal other
+healing
+hostility
+ice bolt
+identify
+illumination
+invisibility
+life draining
+light
+lightning
+lightning ball
+lightning bolt
+magic mapping
+magic missile
+paralysis
+pesticide
+poison
+poison cloud
+polymorph other
+probing
+recall
+restoration
+sleep monster
+slow monster
+slowing
+smoke
+speed
+teleport other
+teleportation
+trap location
+treasure location

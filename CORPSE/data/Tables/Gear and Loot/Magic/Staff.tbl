@@ -1,7 +1,7 @@
 / http://www.random-generator.com/index.php?title=Mage_Staff
 
 : Staff
-A Staff of {{Conjuration|Invocation|:POWER}} ({#/{20-25}} charges), made of {:material}{:length}.{:HEAD}{10% {:DESCRIPTION}}
+A Staff of {{Spell:Conjuration|Spell:Invocation|:POWER}} ({#/{20-25}} charges), made of {:material}{:length}.{:HEAD}{10% {:DESCRIPTION}}
 A {20%{:quality} }{:Type} made of {:material}{:length}.{:HEAD}{10% {:DESCRIPTION}}
 
 : Power
@@ -120,48 +120,16 @@ sphere
 star
 
 : glow
-that {:glow verb}{75% {:glow adv}}{50% with a {color} light{33% {:glow when}}}
+that {glow:verb}{75% {glow:adv}}{50% with a {color} light{33% {glow:when}}}
 
 : glows
-that {:glow verb}s{75% {:glow adv}}{50% with a {color} light{33% {:glow when}}}
-
-: glow verb
-blaze
-burn
-glimmer
-glint
-glow
-pulsate
-shimmer
-shine
-sparkle
-
-: glow adv
-brightly
-faintly
-intermittently
-steadily
-
-: glow when
-at {dawn|dusk|night}
-in dark places
-in moonlight
-in starlight
-when facing {compass:4}
-when held
-when rubbed
-when the moon is {full|new}
-when {gold|magic|evil|a trap|an undead} is nearby
-when {{fauna}+} are nearby
-when {{monster}+} are nearby
-while casting
-while underground
+that {glow:verb}s{75% {glow:adv}}{50% with a {color} light{33% {glow:when}}}
 
 : Description
 The staff is {art:decorated}.
 The staff is inscribed: {INSCRIPTION}
 The staff has an inscription declaring its original owner was {Name}.
-The staff {:glow verb}s{75% {:glow adv} }{50% with a {color} light{10% {:glow when}}}
+The staff {glow:verb}s{75% {glow:adv} }{50% with a {color} light{10% {glow:when}}}
 The staff is ringed with {metal:weapon} bands.
 The staff is wrapped {tightly with|with tattered} {fur and pelt:leather}.
 The staff features a carving of {ART:SUBJECT}.

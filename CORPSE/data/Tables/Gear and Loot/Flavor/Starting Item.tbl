@@ -136,3 +136,233 @@ young ward--[Fantasy Life Events.COMPANIONS]
 {pet}
 {thief gear}
 {tiny item}
+
+===
+
+;simple-gear
+[clothes]<br />[armor]<br />[meleeweapon]<br />[rangedweapon]
+
+;normal-gear
+[clothes]<br />[maybearmor]<br />[maybemeleeweapon]<br />[mayberangedweapon]<br />[maybe-junk1]<br />[maybe-junk2]<br />[maybequirk]
+
+;adventurer-gear
+[clothes]<br />[maybearmor]<br />[maybemeleeweapon]<br />[mayberangedweapon]<br />[rations]<br />[maybe-junk1]<br />[maybe-junk2]<br />[maybequirk]<br />[blank]<br />[light]<br />[rope]<br />[wealth]
+
+;hireling-gear
+[armor]<br />[maybemeleeweapon]<br />[mayberangedweapon]<br />[rations]<br />[maybe-junk1]<br />[maybe-junk2]<br />[maybequirk]<br />[blank]<br />[light]<br />[rope]<br />[wealth]
+
+
+;anything
+[clothes]
+[armor]
+[meleeweapon]
+[rangedweapon]
+[junk1]
+[junk2]
+[quirk]
+[light]
+[rope]
+[wealth]
+[Blazon.main]
+[Blazon.pack] [with] [anything]
+[Message.main]
+
+;with
+with 
+containing
+stored within which is
+which has 
+which keeps
+storing
+has
+
+;any-common
+[any-basic]
+[any-junk]
+
+;any-basic
+[clothes]
+[armor]
+[meleeweapon]
+[rangedweapon]
+
+;anyweapon
+[meleeweapon]
+[rangedweapon]
+
+
+;any-junk
+[junk1]
+[junk2]
+[quirk]
+[rope]
+[wealth]
+[Blazon.main]
+
+;clothes
+[clothes1][clothes2]
+
+;clothes1
+
+[cloak], 
+[cap], 
+[cloak], [cap], 
+
+;clothes2
+[top], [pant]
+[robe]
+
+;cloth
+[Utility.Cloth]
+[Utility.FancyCloth]
+
+;describecloth
+
+[cloth] 
+[Quick Zone Populations.zaksjob] 
+[cloth] [Quick Zone Populations.zaksjob] 
+
+;cloak
+[describecloth]cloak
+[describecloth]jacket
+[describecloth]coat
+
+;cap
+[describecloth]cap
+[describecloth]hood
+[describecloth]mask
+[describecloth]headband
+
+;top
+[describecloth]jerkin
+[describecloth]tunic
+[describecloth]vest
+[describecloth]shirt
+
+;pant
+[describecloth]trousers
+[describecloth]breeches
+
+;robe
+[describecloth]robe
+[describecloth]dress
+[describecloth]clothes
+[describecloth]gown
+
+;clothorfur
+[describecloth]
+{leather}
+
+;maybearmor
+no armor[maybeshield]
+[armor]
+
+their [family]'s 
+trusty 
+sturdy 
+wicked 
+spiked 
+hooked 
+
+;rations
+[rationtype][Village.food] rations for [number] days
+
+;rationtype
+
+greasy 
+salted 
+bland 
+sweetened 
+sour 
+peppered 
+vile 
+
+;wealth
+[coins][maybeheirloom]
+
+;coins
+no money
+[digit] coins
+[digit][digit] coins
+[digit][digit][digit] coins
+
+
+;maybeheirloom
+
+[family]'s [metal-precious] watch
+[family]'s [metal-precious] brooch
+[family]'s [metal-precious] locket
+[metal-precious] tooth
+
+;family
+brother
+sister
+father
+mother
+grandfather
+grandmother
+uncle
+aunt
+
+;maybelight
+
+[light]
+
+;light
+[number] torches, with flint and tinder
+lantern, with flint and tinder, [number] pints of lamp oil
+flint and tinder
+bottled witch-light
+
+;mayberope
+
+[rope]
+
+;rope
+hemp rope (50 feet)
+hemp rope (80 feet)
+silk rope (50 feet)
+
+;maybe-junk1
+
+[junk1]
+[family]'s [junk1]
+
+;maybe-junk2
+
+[junk2]
+
+;junk1
+cook pot
+holy symbol
+grappling hook
+spyglass
+ring
+journal
+crowbar
+fishing net
+set of scales
+pipe, pouch of pipeweed
+severed head
+bloody heart
+
+;junk2
+[Quick Zone Populations.domestic-animal] friend
+10 foot pole
+[wineskin]
+writing-book, ink, pens
+hammock
+[Quick Zone Populations.zaksjob] disguise
+book: {{uc:[FantasyBooks.main]}}
+{{Article|[Ostler.general-mount-quirk]}}
+
+
+;wineskin
+aleskin ([full])
+wineskin ([full])
+waterskin ([full])
+
+;full
+full
+half-empty
+empty

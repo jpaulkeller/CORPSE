@@ -1,77 +1,78 @@
 / Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
 /          Values from DRAGON Magazine #83, page 10.
 
-: Fancy = ".*fancy.* 
-: Ornamental = ".*ornamental.* 
+: Fancy = ".*fancy.*
+: Ornamental = ".*ornamental.*
 : Precious = .*[^-]precious.*
 : Semi-precious = .*semi-precious.*
 
 : Gem
-.Gem             Lbs/CFt  Notes                      Color             Value
+.Gem             Lbs/CFt  Color             Value    Notes
 
 agate              160    semi-precious
-alexandrite               fancy                      bright green       100gp
-amber               67    fancy                      clear golden       100gp
-amethyst                  fancy                      purple             100gp
-aquamarine                fancy/precious             blue-green         500gp
-azurite                   ornamental                                     10gp
-banded agate       160    ornamental; layered quartz                     10gp
+alexandrite               bright green       100gp   fancy
+amber               67    clear golden       100gp   fancy
+amethyst                  purple             100gp   fancy
+aquamarine                blue-green         500gp   fancy/precious
+azurite                                       10gp   ornamental
+banded agate       160                        10gp   ornamental; layered quartz
 beryl              168    semi-precious gem
-black diamond                                        clear grey
-black opal                gem                        dark, near opaque  100pp
-black pearl               precious; rare             black              500gp
-black sapphire            jewel                      blue-black         500pp 
-bloodstone                semi-precious              green/red           50gp
-blue quartz               ornamental crystalline     blue                10gp
-cairngorm                 smoky quartz               clear grey          50gp
-carnelian                 semi-precious              yellow-red          50gp
-chalcedony                semi-precious ornamental   clear blue          50gp
-chrysoberyl               fancy crystalline          green               50gp
-chrysoprase               semi-precious              green               50gp
-citrine                   semi-precious              yellow              50gp
-clear quartz              ornamental crystalline     clear               10gp
-coral                     fancy                                         100gp
-crystal                   
-diamond            200    jewel; hardest             clear              500pp
-dragon stone              
-emerald                                              bright green       100pp
-eye agate                 ornamental                                     10gp
-fire agate                ornamental                                     10gp
-fire opal                                            orange-red         100pp
-frost agate               ornamental                                     10gp
-garnet             230    precious                   red                100gp
-golden sapphire           oriental topaz             golden             100pp
-green sapphire            oriental emerald           green              500pp
+black diamond             clear grey
+black opal                dark, near opaque  100pp   gem
+black pearl               black              500gp   precious; rare
+black sapphire            blue-black         500pp   jewel
+bloodstone                green/red           50gp   semi-precious
+blue quartz               blue                10gp   ornamental crystalline
+cairngorm                 clear grey          50gp   smoky quartz
+carnelian                 yellow-red          50gp   semi-precious, creativity, confidence, vitality, motivation
+chalcedony                clear blue          50gp   semi-precious ornamental
+chrysoberyl               green               50gp   fancy crystalline
+chrysoprase               green               50gp   semi-precious
+citrine                   yellow              50gp   semi-precious
+clear quartz              clear               10gp   ornamental crystalline
+coral                                        100gp   fancy
+crystal
+diamond            200    clear              500pp   jewel; hardest
+dragon stone
+emerald                   bright green       100pp
+eye agate                                     10gp   ornamental
+fire agate                                    10gp   ornamental
+fire opal                 orange-red         100pp
+frost agate                                   10gp   ornamental
+garnet             230    red                100gp   precious, energy, health, passion
+golden sapphire           golden             100pp   oriental topaz
+green sapphire            green              500pp   oriental emerald
 heliotrope                bloodstone
-hematite                  ornamental                 silver
+hematite                  silver                     ornamental
 hyacinth                  jacinth
-jacinth                   crystalline                orange-red         500pp
-jade                      fancy                      green              100gp
-jasper                    semi-precious                                  50gp
-jet                       fancy; flammable           black              100gp
-lapis lazuli              ornamental; semi-precious  opaque blue         10gp
-malachite          240    semi-precious; ornamental  green               10gp
-moonstone                 semi-precious              white               50gp
-moss agate                ornamental;                clear green         10gp
-obsidian                  ornamental; volcanic glass black               10gp
-onyx                      semi-precious              black/white         50gp 
-opal               137    semi-precious                                 100pp
-pearl                     fancy                      lustrous white     100gp
-peridot                   precious                   green              500gp
-rhodochrosite             ornamental                 pink-red            10gp
-rose quartz               ornamental crystalline     rose                10gp
-ruby                      jewel                      clear red          500pp
-sapphire                                             clear blue         100pp
-sardonyx                  semi-precious              opaque              50gp
-smoky quartz              ornamental crystalline     clear grey          10gp
-spinel                    precious                   green/blue         250gp
-star ruby                                            100pp
-star sapphire                                        blue               100pp
-tiger eye                 ornamental                 golden              10gp
-topaz              220    precious                                      500gp
-tourmaline                fancy                                         100gp
-turquoise                 ornamental                 turquoise           10gp
-zircon                    semi-precious                                  50gp
+jacinth                   orange-red         500pp   crystalline
+jade                      green              100gp   fancy
+jasper                                        50gp   semi-precious, stability, healing, tranquility
+jet                       black              100gp   fancy; flammable
+lapis lazuli              opaque blue         10gp   ornamental; semi-precious
+malachite          240    green               10gp   semi-precious; ornamental
+moonstone                 white               50gp   semi-precious
+moss agate                clear green         10gp   ornamental;
+obsidian                  black               10gp   ornamental; volcanic glass
+onyx                      black/white         50gp    semi-precious
+opal               137                       100pp   semi-precious
+pearl                     lustrous white     100gp   fancy
+peridot                   green              500gp   precious
+rhodochrosite             pink-red            10gp   ornamental, love, power, joy
+rhodonite                 pink/black          10gp   ornamental, hidden talents, love, power, generosity
+rose quartz               rose                10gp   ornamental crystalline, love, beauty, happiness, peace
+ruby                      clear red          500pp   jewel
+sapphire                  clear blue         100pp
+sardonyx                  opaque              50gp   semi-precious
+smoky quartz              clear grey          10gp   ornamental crystalline
+spinel                    green/blue         250gp   precious
+star ruby                                    100pp
+star sapphire             blue               100pp
+tiger eye                 golden              10gp   ornamental
+topaz              220                       500gp   precious
+tourmaline                                   100gp   fancy
+turquoise                 turquoise           10gp   ornamental
+zircon                                        50gp   semi-precious
 
 : Quality
 uncut

@@ -1,0 +1,148 @@
+/ Catalonia, a territory of Spain falling between Valencia to the South, Aragon to the West, France
+/ to the North and the Mediterranean to the East, developed as a culture during the rule of the
+/ Counts of Barcelona in the 9th Century, and leaving the French kingdom in the 13th. It was a
+/ thriving area of the Mediterranean with its own distinctive flavour.
+
+/ Catalan is a language with much common to both French and Spanish, and sounds a little like a
+/ less lyrical Italian. Like French, J and G are both soft, and C can be also; however, the words do
+/ not end silently and the emphasis / pacing of the words is similar to Spanish.
+
+/ Modern Catalan employs the combination of paternal and maternal names (in that order) seen
+/ also in Spanish, separated by a y. However, it may be that this practise was imported from
+/ Spanish tradition and law as I have not found any medieval names that follow this pattern. 
+
+: Catalan Name
+{:Male}
+{:Female}
+
+: Male
+{:Male First} {:Surname}
+
+: Female
+{:Female First} {:Surname}
+
+: Male First
+Alfons
+Andreu
+Arnau
+Bartomeu
+Benet
+Berenguer
+Bernat
+Bertran
+Bonadona
+Calvet
+Carles
+Celdoni
+Dalmu
+Dolcet
+Ferrer
+Francesc
+Gaspar
+Gil
+Gilabert
+Guillem
+Hug
+Jacme
+Jaume
+Joan
+Llorenç
+Martí
+Mateu
+Miquel
+Miró
+Narcís
+Nicolau
+Olivar
+Pere
+Pere
+Perpinyà
+Ponç
+Ricart
+Seguinus
+Vicens
+Vidal
+
+: Female First
+Aldinícia
+Anglesa
+Bartomeua
+Beatriu
+Brígida
+Caterina
+Elionor
+Elisabet
+Eufràsia
+Eulàlia
+Francina
+Geralla
+Jaumeta
+Joana
+Margarida
+Maria
+Miquela
+Samuela
+Segimona
+Tecla
+
+: Surname
+Amalric
+Amat
+Barberà
+Baró
+Berenguer
+Bofill
+Bosens
+Canyelles
+Carbó
+Colom
+Coqui
+Dardarich
+Domènec
+Domènech
+Ermengol
+Esteve
+Fisnerola
+Foget
+Fontanills
+Gilabert
+Gorgoll
+Goscemps
+Guifre
+Guiscart
+Lió
+Llorens
+Mas
+Mateu
+Moreu
+Muntargull
+Nabet
+Obradors
+Paguer
+Paguer
+Palau
+Pariquet
+Parés
+Prat
+Puig
+Queralt
+Reguera
+Roca
+Roca 
+Rofreo
+Rossolló
+Sala
+Salamó
+Sumar
+Torens
+Torner
+Vilagrassa
+d'Eures
+de Cubells
+de Giró
+de Montrodon
+de Muntanyola
+de Rodes
+de Sargantans
+de Villagut
+de la Sclusa

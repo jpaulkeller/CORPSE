@@ -82,6 +82,12 @@ parchment
 sheepskin
 thin leather
 vellum
+{:material uncommon}
+
+: material uncommon
+leaf
+{fabric}
+{leather}
 
 : Writ
 {10%royal }writ of passage{50% {in{25% and around}|on the roads near} {Place Name}}{25% {:issued}}

@@ -1,81 +1,11 @@
 : Name
-{Algonquin Name}
-{American Indian Name}
-{American Name}
-{Anglo-Saxon Name}
-{Aquatic Name}
-{Arthurian Name}
-{Aztec Name}
-{Barbarian Name}
-{Botanical Name}
-{Congo Name}
-{Cornish Name}
-{Dutch Name}
-{Egyptian Name}
-{Frontier Name}
-{Generated Name}
-{German Name}
-{Greek Name}
-{Hobbit Name}
-{Incan Name}
-{Innuit Name}
-{Israeli Name}
-{Italian Name}
-{Japanese Name}
-{Middle-earth Name}
-{Noble Name}
-{Norse Name}
-{Pirate Name}
-{Old English Name}
-{Saint Name}
-{Tiefling Name}
-{Turkish Name}
-{Welsh Name}
+{Cultural Name}
+{Fantasy Name}
 
 : Male
-{Algonquin Name:Male}
-{American Indian Name:Male}
-{Anglo-Saxon Name:Male}
-{Arthurian Name:Male}
-{Aztec Name:Male}
-{Cornish Name:Male}
-{Dutch Name:Male}
-{Dwarf Name:Male}
-{German Name:Male}
-{Hobbit Name:Male}
-{Incan Name:Male}
-{Innuit Name:Male}
-{Israeli Name:Male}
-{Italian Name:Male}
-{Japanese Name:Male}
-{Middle-earth Name:Male}
-{Norse Name:Male}
-{Old English Name:Male}
-{Tiefling Name:Male}
-{Turkish Name:Male}
-{Welsh Name:Male}
+{Cultural Name:Male}
+{Fantasy Name:Male}
 
 : Female
-{Algonquin Name:Female}
-{American Indian Name:Female}
-{American Name:Female}
-{Anglo-Saxon Name:Female}
-{Arthurian Name:Female}
-{Aztec Name:Female}
-{Botanical Name:Female}
-{Cornish Name:Female}
-{Dutch Name:Female}
-{Dwarf Name:Female}
-{German Name:Female}
-{Hobbit Name:Female}
-{Incan Name:Female}
-{Innuit Name:Female}
-{Israeli Name:Female}
-{Italian Name:Female}
-{Japanese Name:Female}
-{Middle-earth Name:Female}
-{Norse Name:Female}
-{Old English Name:Female}
-{Tiefling Name:Female}
-{Turkish Name:Female}
-{Welsh Name:Female}
+{Cultural Name:Female}
+{Fantasy Name:Female}

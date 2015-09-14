@@ -2,7 +2,7 @@
 
 : Liquid Feature
 boiling
-bubbling
+bubbling{20% {:adv}}
 carbonated
 chalky
 churning
@@ -10,13 +10,13 @@ cloudy
 coruscating
 effervescent
 fiery
-fizzing
+fizzing{20% {:adv}}
 flaky
 fluorescent
-foaming
-frothing
-glittering
-glowing
+foaming{20% {:adv}}
+frothing{20% {:adv}}
+glittering{20% {:adv}}
+glowing{20% {:adv}}
 gritty
 incandescent
 iridescent
@@ -29,25 +29,34 @@ opalescent
 opaque
 pulsating
 sedimented
-shimmering
+shimmering{20% {:adv}}
 simmering
-smoking
+smoking{20% {:adv}}
 soupy
-sparking
-sparkling
-steaming
+sparking{20% {:adv}}
+sparkling{20% {:adv}}
+steaming{20% {:adv}}
 sticky
 swirling
 translucent
 
+: Adv
+constantly
+slightly
+sporadically
+intensely
+intermittently
+
 : Extra
 with a small {tiny item} floating in it
 with crystalline accretions sticking to the container
+with metallic swirls and
 with tiny, unidentifiable organisms swimming in it
 with unidentifiable bits of meat, gore and viscera floating in it
+with varicolored layers
 with what looks like tiny {{insect}+} {swimming|crawling} in it
 with whole preserved {worm|spider|scorpion|{organ}} floating in it
-with {bits|lumps|pieces|flakes} of {reagent} floating in it
+with {bits|globules|lumps|pieces|flakes} of {reagent} floating in it
 with {color:fancy} {accretions|residue|streaks} on the {surface|sides|bottom}
 
 : Property
@@ -57,7 +66,7 @@ evaporates quickly
 explosive
 flammable
 glows in the dark
-glows with an eerie [color.all] illumination
+glows with an eerie {color:simple} illumination
 has a strong, foul aftertaste
 when exposed to air, it congeals in {2d4} minutes
 when exposed to air, it emits thick {color} smoke 

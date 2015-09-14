@@ -20,12 +20,65 @@ supreme commander
 
 : Military Rank {4, 19}
 
+: Army Enlisted
+private
+{5%brevet }private first class
+{5%brevet }grenadier
+{5%brevet }lance corporal
+{5%brevet }corporal
+{5%brevet }sergeant
+{5%brevet }staff sergeant
+{5%brevet }sergeant first class
+{5%brevet }section sergeant
+{5%brevet }drum sergeant
+{5%brevet }master sergeant
+{5%brevet }chief master sergeant
+{5%brevet }first sergeant
+{5%brevet }sergeant major
+{5%brevet }warrant officer
+
+: Army Officer
+cadet
+lieutenant
+{5%brevet }captain
+{5%brevet }major
+{5%brevet }drum major
+{5%brevet }lieutenant colonel
+{5%brevet }colonel
+{5%brevet }brigadier general
+{5%brevet }major general
+{5%brevet }lieutenant general
+{5%brevet }general
+{5%brevet }field general
+{5%brevet }field marshal
+supreme commander
+
+: Navy Enlisted
+Seaman
+Seaman First Class
+Leading Rate
+Petty Officer Second Class
+Petty Officer First Class
+Warrant Officer
+
+: Navy Officer
+Midshipman
+Ensign
+Lieutenant
+Lieutenant Commander
+Commander
+Commodore
+Captain
+Admiral
+Fleet Admiral
+
 / Source: http://en.wikipedia.org/wiki/Category:Military_ranks
 
 : Position 
 aide-de-camp
 brigadier
 centurion
+enlistee
 lance corporal
 marshal
 provost marshal
@@ -35,4 +88,8 @@ spy
 spymaster
 standard-bearer
 tactician
-{:military rank}
+trainee
+{:army enlisted}
+{:army officer}
+{:navy enlisted}
+{:navy officer}

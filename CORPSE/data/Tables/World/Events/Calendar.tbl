@@ -1,7 +1,9 @@
+: Calendar = Astronomical + Weather + Agricultural + Seasonal
+
 : Astronomical
 {vernal|autumnal} equinox
 {winter|summer} solstice
-{first|last} {new|full} moon of {spring|summer|autumn|winter}
+{first|last} {new|full} moon of {:Season}
 {solar|lunar} eclipse
 
 : Weather
@@ -12,6 +14,11 @@ first thunderstorm
 blossoming
 harvest
 planting
+
+: Seasonal
+beginning of Spring
+end of Winter
+midsummer
 
 : Season
 autumn

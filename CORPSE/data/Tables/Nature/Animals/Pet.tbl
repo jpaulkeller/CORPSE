@@ -1,3 +1,7 @@
+: Pet
+9x {:common}
+{:uncommon}
+
 : Common
 bird
 cat

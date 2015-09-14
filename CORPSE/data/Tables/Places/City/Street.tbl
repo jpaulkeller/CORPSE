@@ -5,7 +5,7 @@
 {:Less Common}
 
 : Less Common
-{A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z} {:General}
+{Letter} {:General}
 {Adjective} {5%{:Middle} }{:General}
 {Noise} {:General}
 {Number:Ordinal} {:General}
@@ -21,27 +21,45 @@ mount
 {City Feature:Open Area}
 
 : General
+3x {:common}
+{:uncommon}
+
+: Common
 alley
 avenue
+lane
+street
+way
+
+: Uncommon
+bend
 chase
 circle
 corner
+court
 crescent
 crossing
 crossroads
+fork
+hollow
 junction
-lane
+landing
 overlook
 parade
+parkway
+pass
 path
 place
+point
+plaza
 road
 row
+run
 side
+square
 stand
-street
 terrace
+trace
 trail
 view
 walk
-way

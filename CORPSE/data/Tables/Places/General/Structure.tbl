@@ -160,6 +160,7 @@ sewer grate
 stairs
 tower
 tunnel
+warehouse
 well
 
 : Landmark
@@ -198,6 +199,7 @@ glass shop
 goldsmith
 grocery
 hat shop
+icehouse
 ironmonger
 jeweler
 luthier
@@ -292,6 +294,7 @@ temple
 vicarage
 
 : Residence
+boardinghouse
 cabin
 chateau
 guildhouse ({guild})

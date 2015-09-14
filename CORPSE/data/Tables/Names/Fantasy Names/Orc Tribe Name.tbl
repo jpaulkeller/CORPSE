@@ -1,5 +1,6 @@
 : Orc Tribe Name
 {80%{:Adj} }{:Noun}
+{:Body Part} {Barbarian Name:Suffix}
 
 : adj
 bent
@@ -40,10 +41,10 @@ vile
 
 : noun
 {:animal}
-{:body part}{75%-{barbarian name:eater}s}
+{:body part}{75%-{barbarian name:suffix}s}
 {:other}
 {:place}
-{barbarian name:eater}
+{barbarian name:suffix}
 {weapon{!oneword}}
 
 : Other
@@ -59,16 +60,22 @@ slaughter
 steel
 
 : Body Part
+bone
 claw
+corpse
+eye
 fang
 filth
+flesh
 gore
 horn
+jaw
 maw
 pox
 scab
 snout
 talon
+tongue
 tusk
 wart
 10x {body part:crude}

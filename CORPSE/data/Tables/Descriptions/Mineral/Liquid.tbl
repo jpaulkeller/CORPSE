@@ -1,3 +1,4 @@
+: Liquid
 acid
 alcohol
 ale
@@ -35,6 +36,7 @@ holy water
 honey
 ichor
 infusion
+ink
 jelly
 juice
 kerosene
@@ -69,6 +71,7 @@ slime
 slush
 soggy ashes
 solution
+soot ink
 soup
 spirit
 substance
@@ -80,8 +83,37 @@ tonic
 tree sap
 unction
 unguent
-vinegar
+walnut ink
 water
 wet fibers
 wine
+{:chemical}
+{:resin}
 {drink}
+{oil:vinegar} vinegar
+{oil} oil
+
+: Resin
+acacia gum
+bdellium
+cypress resin
+frankincense
+mastic resin
+myrrh
+sandarac resin
+shellac
+
+: Chemical
+ammonia
+antimony solution
+aqua fortis (nitric acid)
+aqua regia (nitric/hydrochloric acid mixture)
+brine
+distilled alcohol
+ether
+hydrochloric acid
+lye solution
+oak tannins
+quicksilver
+turpentine
+vitriol (sulfuric acid)

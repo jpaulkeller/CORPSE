@@ -1,144 +1,152 @@
+/ The names are all taken from middle Welsh. Ap- is the prefix used to denote son of, as in Baden ap Wynn 
+/ Compiled by Jason Morningstar
+
 : Arthurian Name
-{:Male}
-{:Female}
+{:Male.Name}
+{:Female.Name}
+
+.Name, Meaning
 
 : Male
-Aberthol
-Accalon
-Addolgar
-Adwr
-Alwyn
-Amerawdwr
-Anfri
-Angor
-Anwell
-Arddur
-Ardwyad
-Arvel
-Avagdu
-Baden
-Bleiddian
-Bradwr
-Bran
-Cadfan
-Cadoc
-Cadwallen
-Caerwyn
-Calder
-Caradoc
-Collen
-Conwy
-Corryn
-Dafydd
-Deverell
-Drystan
-Edmyg
-Einion
-Eoin
-Fyrsil
-Gerwin
-Gethin
-Glyn
-Gorsedd
-Gower
-Gruffen
-Gwalchmei
-Gwallter
-Gwern
-Gwyn
-Hafgan
-Heddwyn
-Howell
-Huw
-Hywel
-Idris
-Ieuan
-Llwyd
-Llyr
-Llywelyn
-Lug
-Madog
-Maelgwn
-March
-Meurig
-Mordwywr
-Morthwyl
-Nona
-Olwydd
-Padrig
-Pawl
-Pedr
-Pellyn
-Pennar
-Peredur
-Prydwen
-Rhain
-Rhobert
-Sayer
-Selwyn
-Taff
-Tarrant
-Teryrnon
-Trahern
-Twrgadarn
-Wynn
+Aberthol; sacrifice
+Accalon; champion
+Addolgar; devout
+Adwr; coward
+Alwyn; friend of all
+Amerawdwr; emperor
+Anfri; disgrace
+Angor; anchor
+Anwell; beloved
+Arddur; bear
+Ardwyad; protector
+Arian; silver
+Arvel; wept over
+Avagdu; utter darkness
+Baden; brother
+Bleiddian; wolf-raider
+Bradwr; traitor
+Bran; raven
+Cadfan; battle summit
+Cadoc; eager for war
+Cadwallen; battle dissolver
+Caerwyn; shining fort
+Calder; rushing brook
+Caradoc; beloved
+Collen; hazel tree
+Conwy; hound of the plain
+Corryn; spider
+Dafydd; dearly beloved
+Deverell; from the riverbank
+Drystan; full of sorrow
+Edmyg; honor
+Einion; anvil
+Emlyn; waterfall
+Eoin; young warrior
+Fyrsil; bears the staff
+Gerwin; fair love
+Gethin; dark
+Glyn; valley-dweller
+Gorsedd; from the mound
+Gower; pure
+Gruffen; fierce lord
+Gwalchmei; hawk of May
+Gwallter; strong fighter
+Gwern; old
+Gwyn; white and shining
+Hafgan; summer song
+Heddwyn; shining peace
+Howell; alert one
+Huw; intelligent
+Hywel; eminent
+Idris; eager lord
+Ieuan; God is gracious
+Llwyd; grey
+Llyr; of the sea
+Llywelyn; leader
+Lug; bringer of light
+Madog; fortunate
+Maelgwn; prince of the hounds
+March; horse
+Meurig; dark skinned
+Mordwywr; sailor
+Morthwyl; hammer
+Nona; saintly
+Olwydd; tracker
+Padrig; noble
+Pawl; little
+Pedr; rock
+Pellyn; lake\'s headland
+Pennar; high hill
+Peredur; hard spear
+Prydwen; handsome
+Rhain; spear
+Rhobert; brilliant
+Sayer; carpenter
+Selwyn; holy love
+Taff; beloved
+Tarrant; thunder
+Teryrnon; divine prince
+Trahern; strong as iron
+Twrgadarn; tower of strength
+Wynn; fair one
 
 : Female
-Adara
-Adyna
-Aelwyd
-Angharad
-Annwyl
-Arglwyddes
-Arthes
-Banon
-Bethan
-Blodwen
-Braith
-Branwen
-Cadwyn
-Caethes
-Cath
-Ceridwen
-Cerwen
-Creirwy
-Cymreiges
-Dee
-Delyth
-Dera
-Derwen
-Efa
-Eheubryd
-Eirianwen
-Enid
-Ffraid
-Glenys
-Goleuddydd
-Gorawen
-Gwenhwyfar
-Gwladys
-Hafgan
-Heledd
-Hellawes
-Heuldys
-Iola
-Lysano
-Mab
-Maelona
-Mair
-Meira
-Myfanwy
-Nesta
-Neued
-Owena
-Penarddun
-Rhan
-Rhiannon
-Rhonwen
-Rowena
-Saeth
-Sioned
-Tegwen
-Vala
-Vanora
-Ysbail
+Adain; winged
+Adara; bird-catcher
+Adyna; wretched
+Aelwyd; from the hearth
+Angharad; greatly loved one
+Annwyl; beloved
+Arglwyddes; lady
+Arthes; she-bear
+Banon; queen
+Bethan; consecrated to God
+Blodwen; flower
+Braith; freckled
+Branwen; white bosomed
+Cadwyn; bright chain
+Caethes; slave
+Cath; cat
+Ceridwen; holy song
+Cerwen; black-haired
+Creirwy; beautiful maid
+Cymreiges; woman of the land
+Dee; sorrow
+Delyth; pretty
+Dera; wild spirit
+Derwen; oak tree
+Efa; life
+Eheubryd; daughter of greatness
+Eirianwen; splendid
+Enid; soulful
+Ffraid; saintly
+Glenys; riverbank
+Goleuddydd; bright day
+Gorawen; joy
+Gwenhwyfar; holy light
+Gwladys; sovereign
+Hafgan; summer song
+Heledd; goodness
+Hellawes; enchantress
+Heuldys; sun rising on a hill
+Iola; worth
+Lysanor; maiden
+Mab; baby
+Maelona; divine princess
+Mair; bitter
+Meira; sea-bright
+Myfanwy; rare
+Nesta; troublesome beauty
+Neued; maiden
+Owena; born to nobility
+Penarddun; obedient
+Rhan; fate
+Rhiannon; divine queen
+Rhonwen; bright spear
+Rowena; white-haired
+Saeth; arrow
+Sioned; simple
+Tegwen; radiant beauty
+Vala; chosen
+Vanora; white wave
+Ysbail; consecrated to God

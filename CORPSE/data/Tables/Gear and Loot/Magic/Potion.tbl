@@ -1,3 +1,5 @@
+/ http://www.random-generator.com/index.php?title=Potion
+/ Based on ChaoticShiny and SeventhSanctum's Potion generators.
 / Potions/Philters/Elixirs are consumed to activate
 / Oils are applied topically
 / Tinctures are organic extractions
@@ -20,38 +22,98 @@ Oil of Fumbling
 Oil of Impact
 Oil of Slipperiness
 Oil of Timelessness
-Oil of Enchantment: {enchantment}
-Oil of Evocation: {evocation}
-Oil of Illusion: {illusion}
+Oil of Enchantment: {Spell:enchantment}
+Oil of Evocation: {Spell:evocation}
+Oil of Illusion: {Spell:illusion}
 Oil of Defense: {special defense}
 Philter of Glibness
 Philter of Love
 Philter of Persuasiveness
 Philter of Stammering and Stuttering
 Poison ({poison})
+Potion of Aid
+Potion of Alteration: {Spell:Alteration}
 Potion of Animal Control ({Order})
+Potion of Barkskin
+Potion of Bear's Endurance
+Potion of Blur
+Potion of Bull's Strength
+Potion of Cat's Grace
 Potion of Clairaudience
 Potion of Clairvoyance
 Potion of Climbing
+Potion of Cure Light Wounds
+Potion of Cure Moderate Wounds
+Potion of Cure Serious Wounds
+Potion of Darkvision
+Potion of Delay Poison
 Potion of Delusion ({:TYPE})
 Potion of Diminution
+Potion of Displacement
+Potion of Divination: {Spell:Divination}
 Potion of ESP
+Potion of Eagle's Splendor
+Potion of Empathy: {Spell:Empathic}
+Potion of Endure Elements
+Potion of Enlarge Person
 Potion of Extra Healing
 Potion of Fire Breath
 Potion of Fire Resistance
+Potion of Fly
 Potion of Flying
+Potion of Fox's Cunning
 Potion of Gaseous Form
+Potion of Good Hope
+Potion of Greater Magic Fang 
 Potion of Growth
+Potion of Haste
 Potion of Healing
 Potion of Heroism
+Potion of Hide from Animals
+Potion of Hide from Undead
 Potion of Invisibility
 Potion of Invulnerability
+Potion of Jump
 Potion of Jumping
+Potion of Lesser Restoration 
+Potion of Levitate
 Potion of Levitation
 Potion of Longevity
+Potion of Mage Armor
+Potion of Magic Circle against Chaos
+Potion of Magic Circle against Evil
+Potion of Magic Circle against Good
+Potion of Magic Circle against Law
+Potion of Magic Fang
+Potion of Misdirection
+Potion of Neutralize Poison
+Potion of Nondetection
+Potion of Owl's Wisdom
 Potion of Plant Control
 Potion of Polymorph Self
+Potion of Protection from Arrows
+Potion of Protection from Chaos
+Potion of Protection from Energy (acid)
+Potion of Protection from Energy (cold)
+Potion of Protection from Energy (electricity)
+Potion of Protection from Energy (fire)
+Potion of Protection from Energy (sonic)
+Potion of Protection from Evil
+Potion of Protection from Good
+Potion of Protection from Law
+Potion of Rage
 Potion of Rainbow Hues
+Potion of Reduce Person
+Potion of Remove Blindness/Deafness
+Potion of Remove Curse
+Potion of Remove Disease
+Potion of Remove Fear
+Potion of Remove Paralysis
+Potion of Resist Energy (acid)
+Potion of Resist Energy (cold)
+Potion of Resist Energy (electricity) 
+Potion of Resist Energy (fire)
+Potion of Resist Energy (sonic)
 Potion of Speed
 Potion of Super-heroism
 Potion of Sweet Water
@@ -60,19 +122,16 @@ Potion of Undead Control ({Undead})
 Potion of Ventriloquism
 Potion of Vitality
 Potion of Water Breathing
-Potion of Alteration: {Alteration}
-Potion of Divination: {Divination}
-Potion of Empathy: {Empathic}
-Potion of {Abjuration}
-Potion of {Divination}
-Potion of {Empathic}
+Potion of {Spell:Abjuration}
+Potion of {Spell:Divination}
+Potion of {Spell:Empathic}
 Potion of {Enchanted Item:Potion}
-Potion of {Humanoid} control (TSR: {TSR humanoid})
-Potion of {Hypnotic}
-Potion of {Necromantic}
-Potion of {Spiritual}
-Potion of {Transference}
+Potion of {Humanoid} control
+Potion of {Spell:Hypnotic}
+Potion of {Spell:Necromantic}
+Potion of {Spell:Spiritual}
 Potion of {TSR Dragon} Dragon Control
 Potion of {TSR Giant} Giant Control
 Potion of {TSR Giant} Giant Strength
+Potion of {Spell:Transference}
 {d12 potion}

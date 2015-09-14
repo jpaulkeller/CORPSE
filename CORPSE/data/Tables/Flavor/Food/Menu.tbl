@@ -77,7 +77,7 @@ fried light pastry with {:cheese} and {{nut}+}
 fried {{vegetable:cookable}+} with roasted garlic-yogurt sauce
 marinated roasted {{vegetable}+} with {:cheese}
 olive oil marinated {{vegetable}+} stuffed with {{nut}+} and {{vegetable{!different}}+}
-roasted {{vegetable:cookable}+} and olives with balsamic vinegar and olive oil
+roasted {{vegetable:cookable}+} and olives with {oil:vinegar} vinegar and {oil} oil
 roasted {{vegetable:cookable}+} with {:cheese} and {{nut}+}
 sauteed wild mushrooms with {{nut}+} sauce & demi-glace
 spicy sausage in a sauce of {{vegetable}+}, {{vegetable{!different}}+}, and {{vegetable{!different}}+}
@@ -335,7 +335,7 @@ Spit-roasted stork, with the head cooked separately, served to the most honored 
 Squirrel and onion soup served in large mugs, with cheese curds and rye bread on the side
 Stew of skinned bats and black morel mushrooms, served over toasted bread
 Strips of fried small game meat and mashed turnips, all covered in gravy
-Thick slices of giant beans, roasted and served with vinegar and salt
+Thick slices of giant beans, roasted and served with {oil:vinegar} vinegar and salt
 Thick squirrel meat and cabbage stew, covered with melted cheese and breadcrumbs
 Thin, dried fish served with green beans and spiced apple cider
 Venison custard with peas and beans

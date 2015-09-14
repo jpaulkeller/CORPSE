@@ -1,0 +1,59 @@
+/ http://www.random-generator.com/index.php?title=Scroll
+
+: Scroll
+5x Scroll of {Spell}
+
+: Description
+5x Scroll of {Spell}{75%; on {33%{condition:paper} }{paper:material}}{33%, {:wrapping}}{33%; {:writing}}{20%; {:obverse}}{20%; {:secured}}{25%; {:contained}}
+
+: Wrapping
+{attached to|strung between} {two|twin|a pair of} {75%{:spool} }{dowel|rod|roller|spool}s
+simply rolled
+wrapped around a {50%single }{75%{:spool} }{dowel|rod|roller|spool}
+
+: Spool
+5x {wood}
+bone
+horn
+ivory
+thin
+thick
+{condition:wood weapon}
+{metal:enchantable}
+
+: Secured
+secured with a {50%broken }seal{75% of {color:simple} wax}
+secured with a simple {color:simple} silk ribbon
+secured with twine
+
+: Writing
+the writing is in a {75%{flowing|cramped|densely packed|spidery} }{20%{cuneiform|runic|pictographic} }{calligraphy|style|script}{20% in {color:dark} ink}
+
+: Obverse
+the obverse is blank
+the obverse shows {:extra}
+the spell is continued on the obverse side
+
+: Extra
+a {sketch|picture|painting} of {ART:SUBJECT}
+an arcane diagram
+an inscription: {INSCRIPTION}
+mechanical drawings and schematics
+mystical symbols
+numerous images of {mythical creature}s
+patterns painted in {color} and {color{!different}} ink
+some kind of map
+strange diagrams of inhuman anatomy
+writing in an unknown language
+
+: Contained
+has been preserved in a {:case}
+is contained in a {:case}
+is kept from the elements in a {:case}
+resides within a {:case}
+
+: Case
+case made of {made of:hard}{75% {container:decoration}}
+simple {wood} box
+{metal:precious} and {metal:precious{!different}} case
+{metal:precious} case{75% {container:decoration}}

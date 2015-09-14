@@ -12,4 +12,11 @@
 : Specific
 {ART:MONUMENT}
 {Inn Name}
+{Pseudo Class:Bard}'s {Structure:Entertainment}
+{Pseudo Class:Fighter}'s {Structure:Defensive}
+{Pseudo Class:Mage}'s {Structure:Academic}
+{Pseudo Class:Priest}'s {Structure:Religious}
+{Pseudo Class:Ranger}'s {Structure:Landmark}
+{Pseudo Class:Rogue:Justice}'s {Structure:}
+{Pseudo Class:Sage}'s {Structure:Garden}
 {{Compass:4|Pseudo Class|Profession}}'s Gate

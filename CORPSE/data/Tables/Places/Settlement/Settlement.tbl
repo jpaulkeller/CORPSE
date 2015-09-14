@@ -1,0 +1,83 @@
+/ http://www.random-generator.com/index.php?title=Settlements
+
+/ Your adventurers come across signs of human habitation. What do they find when they follow the trail?
+
+: Settlement
+{:type} {:environment}
+
+: Type
+8x {:tiny adj} {:tiny}
+4x {:small adj} {:small}
+2x {:adjective} {:medium}
+{:adjective} {:large}
+
+: Environment
+in the countryside
+in the desert
+in the hills
+in the mountains
+in the woodlands
+on the riverside
+on the seaside
+
+: Tiny
+3x farmstead
+4x homestead
+bazaar
+convent
+garrison
+guard station
+hermitage
+market
+sanctuary
+trade station
+watchtower
+
+: Small
+2,hamlet
+3,crossroads
+3,village
+abbey
+cloister
+colony
+friary
+manor
+plantation
+priory
+settlement
+small fort
+trade outpost
+tribal camp
+villa
+
+: Medium
+2x town
+2x township
+burg
+commune
+keep
+stronghold
+trade town
+
+: Large
+3x city
+castle
+citadel
+monastery
+
+: Tiny Adj
+dilapidated
+nearly-empty
+
+: Small Adj
+bandit-infested
+rugged
+starving
+{:adjective}
+
+: Adjective
+peaceful
+prosperous
+run-down
+thriving
+well-fortified

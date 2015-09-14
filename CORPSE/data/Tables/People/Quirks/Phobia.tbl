@@ -2,6 +2,10 @@
 
 .Phobia             Description
 
+armaphobia          fear of {armor}
+sapiphobia          fear of {humanoid}
+allophobia          fear of {metal:enchantable}
+audaphobia          fear of {noise}
 ablutophobia        fear of washing or bathing
 acarophobia         fear of skin infestation by mites and ticks
 acerophobia         fear of sourness

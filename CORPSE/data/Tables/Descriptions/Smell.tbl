@@ -1,13 +1,13 @@
-/ Examples: 
-/ {smell:adj} {smell:synonym}
-/ {smell:synonym} like {smell:like}
-/ {smell:synonym pleasant} like {smell:pleasant}
-/ {smell:synonym foul} like {smell:foul}
-
 : Smell
 odorless
 {smell:adj}
 like {smell:like}
+
+: Type
+{smell:adj} {smell:synonym}
+{smell:synonym} like {smell:like}
+{smell:synonym pleasant} like {smell:pleasant}
+{smell:synonym foul} like {smell:foul}
 
 : Synonym
 {:synonym pleasant}
@@ -105,6 +105,7 @@ the sea
 {spice}
 {:pleasant}
 {:foul}
+/ [Wampus Country Potions.taste]
 
 : Cooking
 bread
