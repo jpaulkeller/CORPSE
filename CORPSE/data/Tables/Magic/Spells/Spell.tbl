@@ -28,6 +28,7 @@
 : Conjuration   = ^.{36,47}conj.*
 : Divination    = ^.{36,47}divi.*
 : Empathic      = ^.{36,47}empa.*
+: Elemental     = ^.{84,94}[^ ].*
 : Enchantment   = ^.{36,47}ench.*
 : Environmental = ^.{36,47}envi.*
 : Evocation     = ^.{36,47}evoc.*
@@ -71,7 +72,7 @@
 : Wizard      = ^.{59,79}wz.* 
 
 / Element/School
-: Air       = ^.{84,94}ai.* 
+: Air       = ^.{84,94}ai.*
 : Death     = ^.{84,94}de.*
 : Earth     = ^.{84,94}ea.* 
 : Energy    = ^.{84,94}en.* 
@@ -79,7 +80,6 @@
 : Life      = ^.{84,94}li.* 
 : Void      = ^.{84,94}vo.* 
 : Water     = ^.{84,94}wa.* 
- 
 
 .Spell                          Lvl  Type        Comp       Class                   Element      Source
 

@@ -83,15 +83,3 @@ zebu
 7x {:common.animal} fur
 2x {:exotic.animal} fur
 {furred monster} fur
-
-: Leather
-25x {:hide} hide
-alligator skin
-calfskin
-crocodile skin
-eelskin
-ostrich skin
-sharkskin
-snakeskin
-suede
-

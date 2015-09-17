@@ -141,11 +141,7 @@ razor-sharp
 {:metal weapon}
 
 : Wood Weapon
-burnt
-charred
-cracked
-polished
-splintered
+{wood:flavor}
 {:weapon}
 {:wet}
 

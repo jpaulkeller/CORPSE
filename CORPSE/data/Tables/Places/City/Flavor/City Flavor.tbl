@@ -111,10 +111,10 @@ is {STREET FLAVOR}
 {:GENERAL}
 {:known} a confusing mess of streets that only the locals can navigate without getting lost
 {:known} scholarly monasteries
-{:known} {clean|dirty} streets
+{:known} {:adjective} streets
 {:known} {cramped row houses|elegant mansions}
 {:known} {narrow streets|spacious avenues|shadowed alleys}
-{:known} {noisy|quiet} inns
+{:known} {:adjective} inns
 {:known} {{profession}+}, {{profession{!different}}+}, and {{profession{!different}}+}
 
 : known
@@ -256,18 +256,36 @@ bioengineered
 boisterous
 brooding and malign
 brutal
+busy
+crowded
 cyclopedian 
+dingy
+dirty
 down trodden
+dusty
+empty
 extremely simple and straightforward
 ghostly
+grand
+great
 grotesque
 horribly-mutated
+large
 massive
 mild and unimpressive
 monstrous
+noisy
+old
+overcrowded
+popular
+quaint
+quiet
 scarred and huddled 
+small
+smokey
 somewhat inhuman-looking
 starving
 strictly regulated
+tiny
 weird and subtle
 {snake|rat|vermin|flea} infested

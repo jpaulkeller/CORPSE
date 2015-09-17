@@ -192,6 +192,11 @@ sand
 tan
 taupe
 
+: Neutral
+{:black}
+{:brown}
+{:white}
+
 : Pastel
 light blue
 light green
@@ -211,17 +216,17 @@ steely
 : Sheen
 antique
 bright
-dark
 deep
 dull
+faded
 glistening
 glittering
 glossy
 glowing
 iridescent
-light
 lustrous
 mottled
+muted
 polished
 scintillating
 shimmering

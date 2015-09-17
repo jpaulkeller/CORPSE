@@ -6,23 +6,23 @@
 Belt of {~{Spell:Abjuration}}
 Boots of {Spell#.*(?:walk|fall).*#}
 Bracers of {Spell:Abjuration}
-Ring of {{Animation|Enchantment|:Ring}}
+Ring of {{Spell:Animation|Spell:Enchantment|:Ring}}
 Scroll of {{Spell|:Scroll}}
 {ARCANE BOOK}
-{Amulet|Necklace|Pendant} of {{Evocation|Hypnotic|Necromantic}}
+{Amulet|Necklace|Pendant} of {{Spell:Evocation|Spell:Hypnotic|Spell:Necromantic}}
 {Book:Type} of {Spell:Spiritual}
 {CHARM}
-{Cloak|Robe} of {{Illusion|Transference}}
-{Clothing} of {SPELL}
-{Equipment} of {SPELL}
-{Gem} of {SPELL}
-{Gloves|Gauntlets} of {{Environmental|Kinetic|:Amulet}}
+{Cloak|Robe} of {{Spell:Illusion|Spell:Transference}}
+{Clothing} of {Spell}
+{Equipment} of {Spell}
+{Gem} of {Spell}
+{Gloves|Gauntlets} of {{Spell:Environmental|Spell:Kinetic|:Amulet}}
 {Goggles|Mask} of {Spell:Divination}
 {Helm|Hood|Hat} of {Spell:Empathic}
-{Jewelry} of {SPELL}
+{Jewelry} of {Spell}
 {Magic Robe.Name}
 {Mushroom|Potion} of {{:Mushroom|:Potion}}
-{Musical Instrument} of {{Conjuration|Evocation|Illusion}}
+{Musical Instrument} of {{Spell:Conjuration|Spell:Evocation|Spell:Illusion}}
 {POTION:LOOT}
 {POTION}
 {ROD}

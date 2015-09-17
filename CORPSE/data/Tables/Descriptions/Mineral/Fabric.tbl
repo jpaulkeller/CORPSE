@@ -64,8 +64,8 @@ soulbind
 {:fancy} and {:fancy}
 
 : Combo Leather
-{:fabric} and {fur and pelt:leather}
-{fur and pelt:leather} and {fur and pelt:leather{!different}}
+{:fabric} and {leather}
+{leather} and {leather{!different}}
 
 : Flavor
 colourful

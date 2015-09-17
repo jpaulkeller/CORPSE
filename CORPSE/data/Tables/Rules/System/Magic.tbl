@@ -1,10 +1,15 @@
+/ these values should match subsets of the Spell table
+
+: Magic = Type + Element + Class
+
+: Type
 abjuration
 alteration
 animation
 conjuration
 divination
 empathic
-elemental: {element}
+elemental
 enchantment
 evocation
 hypnotic
@@ -16,3 +21,31 @@ natural
 necromantic
 spiritual
 transference
+
+: Element
+air
+death
+earth
+energy
+fire
+life
+void
+water
+
+: Class
+alchemist
+bard
+cleric
+druid
+healer
+illusionist
+mage
+metallist
+necromancer
+paladin
+ranger
+seer
+sorcerer
+warlock
+witch
+wizard

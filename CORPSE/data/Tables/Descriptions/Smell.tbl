@@ -1,10 +1,10 @@
 : Smell
 odorless
-{smell:adj}
+{20%{:degree} }{smell:adj}
 like {smell:like}
 
 : Type
-{smell:adj} {smell:synonym}
+{20%{:degree} }{smell:adj} {smell:synonym}
 {smell:synonym} like {smell:like}
 {smell:synonym pleasant} like {smell:pleasant}
 {smell:synonym foul} like {smell:foul}
@@ -31,6 +31,29 @@ reek
 smell
 stench
 stink
+
+: Adverb
+lightly
+mildly
+mustily
+overwhelmingly
+pungently
+sharply
+slightly
+strongly
+subtly
+
+: Degree
+light
+lingering
+mild
+musty
+overwhelming
+pungent
+sharp
+slight
+strong
+subtle
 
 : Adj
 acidic
@@ -84,6 +107,7 @@ tempting
 {taste}
 
 : Like
+a campfire
 a mixture of {flora} and {fauna}
 a {fauna}
 a {flora}
@@ -91,14 +115,19 @@ alcohol
 animal musk
 ashes
 blood
-body odor
+burning wood
 chemicals
 damp earth
+damp vegetation
+lye
+old campfire
 ozone
 sawdust
 smoke
 sweat
 the sea
+wet earth
+wood
 {aromatic}
 {herb}
 {provisions}
@@ -109,6 +138,7 @@ the sea
 
 : Cooking
 bread
+cheese
 cinnamon
 citrus
 curry
@@ -116,6 +146,7 @@ exotic spices
 garlic
 roast meat
 vanilla
+wine
 wood smoke
 {herb}
 {provisions}
@@ -135,20 +166,29 @@ vanilla
 
 : Foul
 a slaughterhouse
+animal spoor
+bile
 blood
-burned hair
+brimstone
+burnt hair
+charred flesh
 death
+decay
 manure
 mildew
 mold
+moldering corpses
 old fish
 rancid milk
 rotting {food|vegetation}
 sewer effluvia
+sour milk
 stagnant water
+stale beer
 stale sweat
 strong alcohol
 sulphur
+sweat
 urine
 vinegar
 vomit
