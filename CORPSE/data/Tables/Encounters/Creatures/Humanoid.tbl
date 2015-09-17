@@ -98,6 +98,8 @@ were-rat
 
 : Language
 abyssal
+an exotic language
+an unknown language
 celestial
 draconic
 giantish
@@ -105,7 +107,7 @@ gnomish
 goblin
 infernal
 orcish
-unknown/exotic
+the common tongue
 {10%ancient }dwarvish
 {10%ancient }elvish
 

@@ -210,11 +210,11 @@ parts of a
 pieces of a
 
 : Furnishing
-a {leather:texture} leather bandoleer
-a {leather:texture} leather cartridge belt
-a {leather:texture} leather pistol holster
-a {leather:texture} leather rifle scabbard
-a {leather:texture} rawhide stropping strap
+a {leather:flavor} leather bandoleer
+a {leather:flavor} leather cartridge belt
+a {leather:flavor} leather pistol holster
+a {leather:flavor} leather rifle scabbard
+a {leather:flavor} rawhide stropping strap
 a bar of shaving soap
 a bolt of {color:standard} {fabric:uncommon}
 a brick of lye soap

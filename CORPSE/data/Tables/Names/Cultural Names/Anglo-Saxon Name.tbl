@@ -7,7 +7,7 @@
 {Anglo-Saxon Dictionary:Old Norse.Word}
 
 : Male
-5x {:Male Prefix}{:male suffix}
+{:Male Prefix}{:male suffix}
 {:Male Prefix}{20%{:male diminutive}}
 {:Neutral}
 
@@ -113,26 +113,26 @@ Wuffa
 Yffi
 
 : female prefix
-5x Aelf
-5x Aethel
-5x Beald
-5x Beorht
-5x Cwen
-5x Deor
-5x Ead
-5x Eald
-5x God
-5x Gunn
-5x Hild
-5x Leof
-5x Mild
-5x Os
-5x Sae
-5x Sige
-5x Thur
-5x Wig
-5x Wine
-5x Wulf
+Aelf
+Aethel
+Beald
+Beorht
+Cwen
+Deor
+Ead
+Eald
+God
+Gunn
+Hild
+Leof
+Mild
+Os
+Sae
+Sige
+Thur
+Wig
+Wine
+Wulf
 Ac
 Aelf
 Aenes
@@ -270,26 +270,26 @@ Wulf
 Wusc
 
 : female suffix
-5x beald
-5x beorht
-5x burg
-5x flaed
-5x frith
-5x gifu
-5x gyth
-5x here
-5x hild
-5x leofu
-5x maer
-5x or
-5x raed
-5x ric
-5x sige
-5x thryth
-5x warn
-5x weald
-5x wig
-5x wulf
+beald
+beorht
+burg
+flaed
+frith
+gifu
+gyth
+here
+hild
+leofu
+maer
+or
+raed
+ric
+sige
+thryth
+warn
+weald
+wig
+wulf
 aeldra
 aesc
 arm
@@ -378,26 +378,26 @@ wyn
 wythe
 
 : male prefix
-5x Aelf
-5x Aethel
-5x Beald
-5x Beorht
-5x Cuth
-5x Cyne
-5x Deor
-5x Ead
-5x Eald
-5x Gar
-5x God
-5x Here
-5x Leof
-5x Os
-5x Sae
-5x Sige
-5x Thur
-5x Wig
-5x Wine
-5x Wulf
+Aelf
+Aethel
+Beald
+Beorht
+Cuth
+Cyne
+Deor
+Ead
+Eald
+Gar
+God
+Here
+Leof
+Os
+Sae
+Sige
+Thur
+Wig
+Wine
+Wulf
 Ac
 Aelf
 Aeries
@@ -531,30 +531,12 @@ Wulf
 Wusc
 
 : male suffix
-5x beald
-5x beorht
-5x frith
-5x gar
-5x geat
-5x hard
-5x heard
-5x here
-5x maer
-5x mund
-5x noth
-5x raed
-5x ric
-5x sige
-5x stan
-5x weald
-5x weard
-5x wig
-5x wine
-5x wulf
 aeldra
 aesc
 arm
 beald
+beald
+beorht
 beorht
 beorn
 bert
@@ -569,9 +551,12 @@ ecg
 eofer
 frea
 frith
+frith
 fugol
 gar
+gar
 gard
+geat
 geat
 gild
 glaed
@@ -581,9 +566,12 @@ grim
 gyr
 haele
 hard
+hard
 heah
 heard
+heard
 helm
+here
 here
 hun
 in
@@ -593,22 +581,29 @@ leod
 leof
 mael
 maer
+maer
 maht
 mann
 mon
 mund
+mund
+noth
 noth
 nyd
 raed
+raed
 rand
+ric
 ric
 rim
 run
 sele
 sig
 sige
+sige
 snel
 son
+stan
 stan
 sterre
 strang
@@ -622,14 +617,19 @@ wald
 walh
 walt
 weald
+weald
+weard
 weard
 weorth
 wict
 wig
+wig
 wil
+wine
 wine
 wini
 wise
 wold
+wulf
 wulf
 wyn

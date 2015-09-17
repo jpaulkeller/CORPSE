@@ -1,5 +1,32 @@
 : Leather
-{fur and pelt:leather}
+10x {:common}
+5x {:uncommon}
+3x {:exotic}
+{:mythical}
+
+: common
+calfskin
+leather
+suede
+
+: uncommon
+alligator hide
+crocodile hide
+ostrich hide
+sharkskin
+{fur and pelt::hide} hide
+
+: exotic
+elephant hide
+eelskin
+snakeskin
+
+: mythical
+basilisk hide
+hydra skin
+naga hide
+wyvern skin
+{dragon:species} dragon hide
 
 : Color
 black
@@ -8,8 +35,34 @@ black
 {color:drab}
 {color:light}
 
-: Texture
+: Flavor
+bloodstained
+cracked
+dingy
+dirty
+discolored
 dull 
+dusty
+faded
+filthy
+frayed
+mildewed
+muddy
 oiled 
+old
 pebbled
+polished
+reinforced
+ruined
+scorched
 shiny 
+singed
+stained
+stiff boiled
+tanned
+tattered
+tooled
+undecorated
+very old
+weathered
+worn

@@ -1,5 +1,6 @@
 / Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
 /          Values from DRAGON Magazine #83, page 10.
+/ http://www.random-generator.com/index.php?title=SimpleGem
 
 : Fancy = ".*fancy.*
 : Ornamental = ".*ornamental.*
@@ -9,41 +10,137 @@
 : Gem
 .Gem             Lbs/CFt  Color             Value    Notes
 
+abalone shell
+actinolite
+adamite
+agate
 agate              160    semi-precious
+agatized coral
+ajoite
+albite
+alexandrite
 alexandrite               bright green       100gp   fancy
+amazonite
+amber
 amber               67    clear golden       100gp   fancy
+amber calcite
+amblygonite
+amethyst
 amethyst                  purple             100gp   fancy
+amethyst cacoxenite
+ametrine
+ammonite
+amphibole phantom quartz
+analcime
+andalusite
+angelite
+anglesite
+antigorite
+apache tears
+apophyllite
+aquamarine
 aquamarine                blue-green         500gp   fancy/precious
+aragonite
+astrophyllite
+aventurine
+axinite
+azurite
 azurite                                       10gp   ornamental
+azurite-galena
+banded agate
 banded agate       160                        10gp   ornamental; layered quartz
+banded amethyst
+barite
+bastnaesite
 beryl              168    semi-precious gem
+bismuth
+bixbyite
+black agate
 black diamond             clear grey
 black opal                dark, near opaque  100pp   gem
 black pearl               black              500gp   precious; rare
 black sapphire            blue-black         500pp   jewel
+bloodstone
 bloodstone                green/red           50gp   semi-precious
+blue apatite
+blue aventurine
+blue calcite
+blue chalcedony
+blue fluorite
+blue lace agate
 blue quartz               blue                10gp   ornamental crystalline
+botswana agate
+bowenite
+brazilianite
+bronzite
+brookite
+brown aventurine
+brown calcite
+buddstone
+bustamite
+cacoxenite
 cairngorm                 clear grey          50gp   smoky quartz
+calcite
+carnelian
 carnelian                 yellow-red          50gp   semi-precious, creativity, confidence, vitality, motivation
+cassiterite
+cavansite
+celestite
+chalcedony
 chalcedony                clear blue          50gp   semi-precious ornamental
+chalcopyrite
+charoite
+chevron amethyst
+chiastolite
+chrysoberyl
 chrysoberyl               green               50gp   fancy crystalline
+chrysocolla
+chrysoprase
 chrysoprase               green               50gp   semi-precious
+cinnabar
+citrine
 citrine                   yellow              50gp   semi-precious
 clear quartz              clear               10gp   ornamental crystalline
+cleavelandite
+clinozoisite
+copal
+coral
 coral                                        100gp   fancy
+covellite
+creedite
 crystal
+cuprite
+cymophane (cat's eye)
+danburite
 diamond            200    clear              500pp   jewel; hardest
+dioptase
 dragon stone
+dumortierite
+emerald
 emerald                   bright green       100pp
+epidote
+eudialyte
 eye agate                                     10gp   ornamental
+fancy agate
+feldspar
+fire agate
 fire agate                                    10gp   ornamental
 fire opal                 orange-red         100pp
+fluorite
 frost agate                                   10gp   ornamental
 garnet             230    red                100gp   precious, energy, health, passion
+gold apatite
 golden sapphire           golden             100pp   oriental topaz
+green diopside
+green apophyllite
+green aventurine
+green calcite
+green chlorite
+green fluorite
 green sapphire            green              500pp   oriental emerald
 heliotrope                bloodstone
 hematite                  silver                     ornamental
+horn coral
 hyacinth                  jacinth
 jacinth                   orange-red         500pp   crystalline
 jade                      green              100gp   fancy
@@ -53,11 +150,18 @@ lapis lazuli              opaque blue         10gp   ornamental; semi-precious
 malachite          240    green               10gp   semi-precious; ornamental
 moonstone                 white               50gp   semi-precious
 moss agate                clear green         10gp   ornamental;
+neon apatite
 obsidian                  black               10gp   ornamental; volcanic glass
 onyx                      black/white         50gp    semi-precious
 opal               137                       100pp   semi-precious
+optical calcite
+orange aventurine
+orange calcite
 pearl                     lustrous white     100gp   fancy
 peridot                   green              500gp   precious
+pink calcite
+pink aventurine
+red aventurine
 rhodochrosite             pink-red            10gp   ornamental, love, power, joy
 rhodonite                 pink/black          10gp   ornamental, hidden talents, love, power, generosity
 rose quartz               rose                10gp   ornamental crystalline, love, beauty, happiness, peace
@@ -66,12 +170,21 @@ sapphire                  clear blue         100pp
 sardonyx                  opaque              50gp   semi-precious
 smoky quartz              clear grey          10gp   ornamental crystalline
 spinel                    green/blue         250gp   precious
+spotted agate
 star ruby                                    100pp
 star sapphire             blue               100pp
+thunder bay amethyst
 tiger eye                 golden              10gp   ornamental
 topaz              220                       500gp   precious
 tourmaline                                   100gp   fancy
+tree agate
 turquoise                 turquoise           10gp   ornamental
+vera cruz amethyst
+white agate
+white aventurine
+yellow aventurine
+yellow calcite
+yellow optical calcite
 zircon                                        50gp   semi-precious
 
 : Quality
@@ -84,6 +197,94 @@ well cut
 very well cut
 near flawless
 flawless
+
+: Cut
+antwerp rose cut
+asscher cut
+ball cut
+banquette cut
+barion cut
+brilliant cut
+briolette cut
+celtic cross cut
+cushion cut
+double dutch rose cut
+double rose cut
+drop cut
+emerald cut
+flanders cut
+half moons cut
+heart brilliant cut
+heart shaped cut
+jubilee cut
+kite shapes cut
+marquise cut
+olive cut
+oval cut
+princess cut
+radiant cut
+shield cut
+step cut
+step cut bullets cut
+step cut straight baguettes cut
+step cut trapezoids cut
+straight baguettes cut
+tapered baguettes cut
+tapered banquette cut
+tapered bullets cut
+tear drop cut
+triangle cut
+trilliant cut
+tumbled
+whirl cut
+{20%{:cabochon type} }{:cabochon}
+{:other cut}
+
+: Cabochon
+antique cabochon cut
+barrel cabochon cut
+cushion cabochon cut
+diamond cabochon cut
+heart cabochon cut
+marquise cabochon cut
+octagon cabochon cut
+oval cabochon cut
+pear cabochon cut
+round cabochon cut
+
+: Cabochon Type
+buff top double bevel
+buff top single bevel
+flat top double bevel
+flat top single bevel
+
+: Other Cut
+12-point merkaba-octahedron star cut
+14-point merkaba-octahedron star cut
+20-point merkaba - icosahedron star cut
+angel carved
+cameo carved
+cube cut
+dodecahedron cut
+double terminated point cut
+egg cut
+icosahedron cut
+merkaba cut
+obelisk cut
+octahedron cut
+pentagon star cut
+point cut
+pyramid cut
+rod cut
+shiva lingam cut
+skull carved
+sphere cut
+Star of David cut
+tetrahedron cut
+tower cut
+vogel cut
+wand cut
+{fauna} carved
 
 ===
 
