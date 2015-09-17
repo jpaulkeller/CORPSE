@@ -1,0 +1,32 @@
+<html>
+<body>
+
+/ Query for name (using random default); assign and randomize
+# {BK={Spellbook?{Name}'s {Book:Spellbook}}}
+
+<h1>{BK}</h1>
+
+<ul>
+  <li>Format: {book flavor:format}
+  <li>Cover: {book flavor:cover}
+  <li>Condition: {condition:book}
+  {75%<li>Pages: {book flavor:page count}{50%, made of {paper:material}}}
+  {50%<li>Binding: {book flavor:binding}}
+  {75%<li>Size: {5d4} inches tall and {5d3} inches wide}
+  {25%<li>Hardware: {book flavor:hardware}}
+  {25%<li>Special: {book flavor:special}}
+  {25%<li>Found in the book: {found in book}}
+  {90%<li>Protection: {book flavor:protection}}
+  {50%<li>Trap: {book flavor:trap}}
+  <p>
+/ duplicate spells will be different versions (components, range, area of effect, etc) 
+  <li>Spells {M:=magic}(<b>{M}</b>)
+  <ul>
+!loop {2d10}
+    <li>{Spell:{M}}
+!loop end
+  </ul>
+</ul>
+
+</body>
+</html>

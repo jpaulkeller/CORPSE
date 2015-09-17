@@ -88,7 +88,7 @@ thin-sliced cured {:dish} and {{vegetable}+} with a {vegetable{!different}}-crea
 {{vegetable}+}-cheese patties with caper-yogurt sauce
 
 : Soup
-{{meat:fowl}|{meat:game}|{seafood}|{vegetable:cookable}|{:seeds}}{50% and {vegetable:cookable{!different}}} {chowder|porridge|soup|stew}
+{{meat:fowl|meat:game|seafood|vegetable:cookable|:seeds}}{50% and {vegetable:cookable{!different}}} {chowder|porridge|soup|stew}
 
 : Side
 brown gravy{20% and mushrooms}

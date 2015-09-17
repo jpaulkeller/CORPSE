@@ -1,0 +1,70 @@
+: Arts and Crafts Book
+A {15%{BOOK:PREFIX} }{:CATEGORY} {:OBJECT}{10%{BOOK:SUFFIX}}
+Secrets of the Master {{Profession:Craftsman}+}
+{:SUBJECT}
+{Number:Plural} {Examples|Illustrations} of {:OBJECT}
+
+: Subject
+The {10%{:Adj} }{{:Arts|:Crafts}} of the {BOOK:PLACE}
+{80%{:Adj} }{{:Arts|:Crafts}}
+
+: Object
+the {10%{:Adj} }{{:Arts|:Crafts}} of the {BOOK:PLACE}
+{80%{:Adj} }{{:Arts|:Crafts}}
+
+: Adj
+Ancient
+Secret 
+{Compass:4}ern
+
+: Category
+Dissertation on
+Encyclopedia of
+Getting Started with
+Guide to
+Handbook on
+Introduction to
+Learning about
+Manual on
+Pictorial Guide to
+Techniques of
+The Power of
+
+: Arts
+Art
+Calligraphy
+Dancing
+Heraldry
+Music
+Painting
+Plays
+Sculpture
+Theater
+{:Song}
+
+: Song
+Dirge
+Lament
+Lyrics
+Song
+{20%Erotic }{Poems|Poetry}
+
+: Crafts
+Armor
+Armorsmithing
+Basketry
+Basketweaving
+Blacksmithing
+Bowmaking
+Brewing
+Cooking
+Crafts
+Leatherworking
+Musical Instruments
+Poisonmaking
+Pottery
+Weaponry
+Weaponsmithing
+Weaving
+Winemaking
+Woodworking

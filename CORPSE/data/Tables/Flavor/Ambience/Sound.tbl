@@ -1,0 +1,228 @@
+/ http://www.random-generator.com/index.php?title=Sounds
+
+/ So, what exactly ''is'' going on outside your cell at the 14th-century asylum, dungeon, or hospital?
+/ see also: Noise.tbl
+
+: Sound
+3x {33%{:volume} }{:noise}{50% {:source}}
+no sound reaches your ears
+
+: Volume
+audible
+barely audible
+echoing
+faint
+hollow
+loud
+muffled
+muted
+piercing
+quiet
+resounding
+reverberating
+shrill
+
+: noise
+boom{50% of {an explosion|something large hitting the ground hard|thunder}}
+bubbling
+chopping
+clang{50% of {:clangs}}
+clash{50% of {:clashes}}
+crackle of a burning fire
+crack{50% of {a whip|stone splitting}}
+crash
+creak{50% of {a door|of footsteps{on the floor|on a stair}}}
+crunch{50% of {:crunches}}
+dragging
+grinding
+grunt{50% {:shouts}}
+mechanical {:mechanical}
+metallic tinkling
+scraping{50%{50% of metal }along {the ground|a wall|the ceiling|the floor}}
+scratching{50% {:scratching}}
+sharpening of blades
+shout{50% {:shouts}}
+shriek
+slamming{50% {:slams}}
+snort
+sweeping
+tearing
+thud
+voices{50% {:shouts}}
+wind
+{:animal}
+{:cries}
+{:footsteps}
+{:ghostly}
+{:laughing}
+{:magical}
+{:music}
+{:screams}
+{:war}
+{:whispers}
+{barking|grunting|shouting} of commands{50% in {humanoid:language}}
+{noise}
+
+: magical
+chant
+chanting
+holy chanting
+holy incantation
+holy mantra
+incantation
+magical incantation
+magical recitation
+unholy chanting
+unholy incantation
+unholy mantra
+
+: ghostly
+groan
+moan
+wail
+
+: cries
+cry
+crying
+sobbing
+
+: footsteps
+boots
+footsteps
+
+: animal
+chirping of {:chirps}
+flapping of wings
+hooves
+
+: war
+bagpipes
+clarions
+drums
+horns
+hunting horns
+trumpets
+war drums
+war horns
+
+: music
+cathedral music
+chamber music
+discordant chamber music
+discordant fiddling
+discordant music
+discordant organ music
+fiddling
+humming
+lute tuning
+music
+music box playing
+orchestral music
+organ music
+piping
+singing
+whistling
+{musical instrument} playing
+
+: chirps
+birds
+crickets
+frogs
+insects
+
+: mechanical
+drumming
+grinding
+humming
+pinging
+pounding
+rotating
+scraping
+thumping
+whirring
+
+: whispers
+whispered conversation
+nervous whispers
+repetitious whispers
+several whispers
+strange whispers
+unintelligible whispers
+whispered prayers
+whispering
+whispering in {humanoid:language}
+whispers
+whispers in {humanoid:language}
+
+: laughing
+child’s laughter
+giggling
+insane laughter
+laughter
+mad laughter
+nervous laughter
+raving laughter
+woman’s laugh
+
+: screams
+mad scream
+scream
+scream of rage
+screams
+screams for help in {humanoid:language}
+screams of agony
+screams of pain
+screams of torment
+
+: scratching
+at a door
+from behind a wall
+of fingernails on stone
+of fingernails on wood
+
+: slams
+of a door
+of a heavy book
+of a heavy door
+
+: shouts
+in an indistinct voice
+in {humanoid:language}
+of gibberish
+
+: clangs
+a bell
+a dropped mug
+fighting
+heavy chains
+heavy irons
+metal on metal
+
+: crunches
+broken glass
+gravel
+dry leaves
+
+: clashes
+dishes
+swords
+weapons
+
+: source
+echoes from all around
+frighteningly close by
+from above
+from ahead
+from behind
+from below
+from just outside the {door|window}
+from nearby
+from right above you
+from right behind you
+from right beside you
+from the ceiling
+from the {Compass:8}
+from under the floor
+in the distance
+nearby
+through the wall

@@ -1,0 +1,77 @@
+/ http://www.random-generator.com/index.php?title=Spellbook_Appearance
+
+: Format
+10x traditionally bound
+folio of loose pages
+orihon (accordion fold)
+pecha (looseleaf with guard boards)
+
+: Cover
+5x {50%{thin|thick} }{50%{leather:flavor} }{25%{undyed|{leather:color}} }{leather}
+3x {50%{thin|thick} }{50%{wood:flavor} }planks of {wood}{25%, {art:decorated}}
+2x {50%{thin|thick} }{50%{metal:flavor} }plates of {made of:hard}{25%, {art:decorated}}
+{50%{thin|thick} }{50%{condition:book} }{panels|sheets} of {made of:hard}{25%, {art:decorated}}
+missing
+
+: page count
+a few pages
+dozens of pages
+scores of pages
+hundreds of pages
+{2d100} pages
+
+: binding
+a sewn binding that uses {:thread}
+rings made of {metal}
+
+: thread
+fine silk cord
+sinew
+thin leather thongs
+waxed linen thread
+
+: Hardware
+no decorative elements
+a {metal} hasp
+{25%{:detail} }{metal} straps
+{25%{:detail} }corner guards made of {metal}
+
+: detail
+fancy
+jeweled
+ornate
+plain
+
+: special
+a jeweled cover plaque
+a leather wrap
+a silk ribbon page marker
+a slipcase
+gilded page edges
+illuminated pages
+random notes in the margins
+
+: protection
+5x magically locked; {:to open}
+3x mechanically locked
+none
+
+: to open
+can only be opened by a {{50%{blind|deaf} }{humanoid}|{undead}}
+can only be opened by playing a {50%complex }sequence of musical notes
+can only be opened by putting a drop of {liquid} in the "keyhole"
+can only be opened if the lock has been {heated|chilled}
+can only be opened using a {50%complex }sequence of strokes and pressure points
+can only be opened when illuminated by {moon|torch|magical|{color}} light
+can only be opened with a command word: {Generated Name}
+can only be opened {under water|underground}
+
+: trap
+the book {10%and the person who opened it }bursts into flame
+the book {10%and the person who opened it }disintegrates
+the book {10%and the person who opened it }melts
+the book {50%and the person who opened it }teleports away
+the ink vanishes
+each rune animates, and moves to a different location - the result is totally garbled
+the opener is cursed: {curse}
+the opener is blinded
