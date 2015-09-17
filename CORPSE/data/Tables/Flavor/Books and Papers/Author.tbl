@@ -1,0 +1,51 @@
+: Author
+{Name} the {Pseudo Class:Mage}
+{Name} the {:Honorific}
+{Name}, {Pseudo Class:Mage} {:Arcane Rank}
+{Name}, the {Adjective} {Pseudo Class:Sage}
+/ {Name}, {:Secret Society Title.main}
+/ {Name}, the {:Secret Society Title.TitleDescriptor} {Pseudo Class:Mage}
+
+: Edits
+annotated by {:Author}
+compiled by {:Author}
+edited by {:Author}
+illustrated by {:Author}
+originally written by {:Author}
+selected by {:Author}
+translated from the {Humanoid:Language} by {:Author}
+translation by {:Author}
+updated by {:Author}
+with {:inclusions} by {:Author}
+
+: inclusions
+additional commentary
+afterword
+annotations
+cartography
+charts
+corrections
+diagrams
+figures
+foreword
+illustrations
+introduction
+notes
+preface
+{:inclusions} and {:inclusions{!different}}
+
+: Honorific
+Black
+Dark
+Forbidden
+Great
+Grey
+Magnificent
+Powerful
+Red
+White
+/ 10,{:Secret Society Title.TitleDescriptor}
+
+: Arcane Rank
+of the {Number:Ordinal} Circle
+/ of the {:Secret Society Title.NounDescriptor} {:Secret Society Title.Noun}
