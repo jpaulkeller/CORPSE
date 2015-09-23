@@ -58,8 +58,9 @@ public final class Constants
    static final Pattern CONDITION = Pattern.compile("\\{([^=]+)=([^?]+)[?]([^:]+)(?::([^:{}]+))?\\}");
 
    // {one|two|three|four} -- chooses one option, with equal chance for each (options may be empty)
-   private static final String ONE_OF_CHAR = "[" + ONE_OF_CHAR_1 + ONE_OF_CHAR_2 + "]"; 
-   static final Pattern ONE_OF = Pattern.compile("\\{([^|/{]+(" + ONE_OF_CHAR + "[^|{]*)+)\\}");
+   static final String ONE_OF_CHAR = "[" + ONE_OF_CHAR_1 + ONE_OF_CHAR_2 + "]"; 
+   static final String NOT_ONE_OF = "[^" + ONE_OF_CHAR_1 + ONE_OF_CHAR_2 + "{]"; 
+   static final Pattern ONE_OF = Pattern.compile("\\{(" + NOT_ONE_OF + "+(" + ONE_OF_CHAR + NOT_ONE_OF + "*)+)\\}");
    // TODO: weighted options: {#:opt1|#:opt2|...}
    // TODO: {common>uncommon>scarce>rare} weighted 4/3/2/1?
 
