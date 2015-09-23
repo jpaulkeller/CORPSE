@@ -33,6 +33,7 @@
     <li>Gender: {G.gender}
     <li>Age: {dragon age}
     <li>Alignment: {frequency:some} {alignment}
+    {50%<li>Known for: {dragon:trait}}
    </ul>
     
   <li><b>Appearance</b>

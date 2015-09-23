@@ -12,7 +12,7 @@
 of {Evocative Concept:Not Positive}
 the {Evocative Adj:Negative}
 the {Trait:Bad}
-{50%the }{:Prefix}-{:suffix}
+{50%the }{:Prefix}-{epithet:warrior suffix}
 {Weapon{!OneWord}}{claw|hand|fist|foot|tooth}
 
 : Prefix
@@ -30,44 +30,6 @@ Lion
 Panther
 Serpent
 Wolf
-
-: suffix
-bane
-biter
-blaster
-breaker
-butcher
-carver
-choker
-chopper
-cleaver
-collector
-crusher
-defiler
-devourer
-eater
-flayer
-flinger
-gnawer
-impaler
-jabber
-killer
-melter
-muncher
-picker
-puncher
-reaper
-ripper
-scratcher
-skin
-slasher
-slayer
-slicer
-smasher
-spitter
-stabber
-stealer
-thrasher
 
 : Barbarian Name
 Abban

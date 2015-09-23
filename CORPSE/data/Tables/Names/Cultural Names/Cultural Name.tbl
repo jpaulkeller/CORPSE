@@ -31,6 +31,7 @@
 
 : Male
 {Algonquin Name:Male}
+{American Name:Male}
 {Anglo-Saxon Name:Male}
 {Arthurian Name:Male.Name}
 {Assyrian Name:Male}
@@ -85,3 +86,20 @@
 {Turkish Name:Female}
 {Welsh Name:Female}
 {Victorian Name:Female}
+
+: Surname
+{American Name:Surname}
+{Catalan Name:Surname}
+{Cornish Name:Surname}
+{Danish Name:Surname}
+{Dutch Name:Surname}
+{German Name:Surname}
+{Israeli Name:Surname}
+{Italian Name:Surname}
+{Japanese Name:Surname}
+{Old English Name:Surname}
+{Portuguese Name:Surname}
+{Scottish Name:Surname}
+{Spanish Name:Surname}
+{Turkish Name:Surname}
+{Victorian Name:Surname}

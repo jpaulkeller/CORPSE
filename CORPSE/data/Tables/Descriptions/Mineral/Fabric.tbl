@@ -24,17 +24,46 @@ wool
 
 : Uncommon
 brocade
+calico
+cambric
 cashmere
+cheesecloth
+chiffon
+corduroy
+crape
+denim
 fine wool
+fishnet
+flannel
+fleece
+gauze
 gold cloth
+herringbone
+himroo
+hodden
+khaki
 lace
 linen
+longcloth
+moleskin
+muslin
+oilskin
+ottoman
+oxford
+plush
 samite
+sateen
 satin
+scarlet
 silk
 silver cloth
+terrycloth
 tweed
+twill
+velour
 velvet
+velveteen
+wadmal
 {fur and pelt:common.animal} fur
 
 : Exotic
@@ -43,7 +72,7 @@ spidersilk
 {feathered monster} feathers
 {fur and pelt:exotic.animal} fur
 {furred monster} fur
-{fur and pelt:hide.animal} leather
+{leather}
 
 : Magical
 embersilk

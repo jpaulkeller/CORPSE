@@ -11,8 +11,8 @@
 
 : Detailed
 3x {quality} {:brass} made of {metal}
-2x {quality} {:drum} made of {fur and pelt:leather} stretched over {wood}, with {metal} ribbing
-{quality} {:small drum} made of {fur and pelt:leather} stretched over {wood}
+2x {quality} {:drum} made of {leather} stretched over {wood}, with {metal} ribbing
+{quality} {:small drum} made of {leather} stretched over {wood}
 {quality} {:cymbals} made of {metal}
 5x {quality} {:string} made of {wood}{20% with {made of:precious} inlay}, with tuning keys of {organic:construction}
 4x {quality} {:woodwind} made of {wood}{10%, with a missing reed}, and with keys of {organic:construction}

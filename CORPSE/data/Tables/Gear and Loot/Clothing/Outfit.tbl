@@ -56,7 +56,7 @@ barbarian loincloth of {fur and pelt:fur} fur
 kilt of {color:simple} and {color:simple{!different}} wool
 pair of {10%cross-gartered }breeches of {fabric:combo}
 pair of jodhpurs of {fabric:combo}
-pair of lederhosen of {fur and pelt:leather}
+pair of lederhosen of {leather}
 pair of pantaloons of {fabric:combo}
 pair of pants of {fabric:combo}
 pair of stockings
@@ -74,24 +74,24 @@ toga of {fabric:combo}
 he is also wearing a {:accessories}{15%{ and a {:accessories{!different}}}}.
 
 : accessories
-apron of {fur and pelt:leather}
+apron of {leather}
 baldric of {fabric:combo}
 bandoleer of {fabric:combo leather}
-belt of {fur and pelt:leather}{10% studded with {{gem}+}}{50% with a {20%{metal:flavor} }{metal:armor} buckle}
+belt of {leather}{10% studded with {{gem}+}}{50% with a {20%{metal:flavor} }{metal:armor} buckle}
 cape of {fabric:combo} and {fabric:exotic}
-codpiece of {fur and pelt:leather} and {20%{metal:flavor} }{metal:armor}
-gorget of {fur and pelt:leather} and {20%{metal:flavor} }{metal:armor}
+codpiece of {leather} and {20%{metal:flavor} }{metal:armor}
+gorget of {leather} and {20%{metal:flavor} }{metal:armor}
 half-cape of {fabric:combo} and {fabric:exotic}
-harness of {fur and pelt:leather}
+harness of {leather}
 pair of gauntlets of {fabric:combo leather}
 pair of {20%riding }gloves of {fabric:combo leather}
 plaid of {fabric:combo leather} with a brooch of {metal:common}
 ruff of starched muslin
 sash of {fabric:combo fancy}
 scarf of {color:simple} wool
-spiked collar of {fur and pelt:leather} and {20%{metal:flavor} }{metal:armor}
+spiked collar of {leather} and {20%{metal:flavor} }{metal:armor}
 sporran of {fabric:combo leather}
-sword belt {fur and pelt:leather}
+sword belt {leather}
 {20%riding |traveller’s }cloak of {fabric:combo}
 {20%riding }mantle of {fabric:combo}
 

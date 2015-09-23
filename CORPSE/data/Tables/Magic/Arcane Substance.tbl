@@ -1,5 +1,7 @@
 / http://random-generator.com/index.php?title=Arcane_Substance
 
+: Arcane Substance
+essence of {element:any}
 {herb}
 {monster} {organ}
 {reagent}
@@ -8,11 +10,16 @@
 {:material} {:post}
 
 : Adj
+acidic
 aethereal
+angelic
 arcane
 astral
 celestial
+chromatic
+demonic
 diabolic
+dire
 distilled
 eldritch
 elemental
@@ -21,10 +28,13 @@ explosive
 faerie
 heavenly
 mephitic
+mystic
+mystical
 necrotic
 planar
 prismatic
 pure
+umbral
 vital
 
 : Material
@@ -37,6 +47,8 @@ nectar
 phlogiston
 quintessence
 unguent
+{element:any}
+{golem}
 
 : Post
 arcana

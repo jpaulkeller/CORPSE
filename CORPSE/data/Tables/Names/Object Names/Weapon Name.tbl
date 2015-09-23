@@ -1,45 +1,237 @@
 / http://donjon.bin.sh/fantasy/name/#setting
+/ http://www.random-generator.com/index.php?title=Weapon_Names
 
-accursed wrath
-astral cruelty
-astral storm
-black wrath
-bone-crusher
-celestial champion
-celestial nemesis
-chaosslayer
-chaoswrack
-damned vindicator
-drakeslicer
-elysian avenger
-elysian tempest
-elysian vengeance
-empyrean fury
-empyrean triumph
-eternal glory
-fiendruin
-flamecrusher
-foescourge
-foethorn
-frostbiter
-frostbreaker
-ghoulbane
-goblinspear
-heartscourge
-heavenly wrath
-knee-breaker
-lawbane
-luminous devastator
-nightcutter
-profane vengeance
-skull-crusher
-skullbreaker
-skullscourge
-spiritaxe
-stoneclaw
-stonehammer
-stonehammer
-sublime nemesis
-wavegrinder
-wicked devastator
-windcrusher
+: Weapon Name
+5x {:Conan}
+{:Sindarin}
+
+: Conan
+{:Noun}{epithet:warrior suffix}
+{:Quarry}{:bane}
+{:Quarry}{epithet:warrior suffix}
+{Body Part:Crude}{epithet:warrior suffix}
+
+: Noun
+anger
+arm
+armour
+avenger
+blade
+claw
+curse
+dream
+fang
+fire
+fury
+gate
+hand
+hate
+iron
+life
+resolve
+shield
+sin
+son
+spirit
+steel
+sting
+sword
+tooth
+voice
+wall
+weapon
+will
+wrath
+{evocative concept}
+{evocative noun}
+
+: Quarry
+army
+blood
+corpse
+death
+demon
+devil
+dragon
+dwarf
+elf
+flame
+ghost
+goblin
+gold
+horde
+king
+kingdom
+knight
+life
+lightning
+lizard
+man
+night
+orc
+prince
+queen
+shadow
+silver
+sky
+storm
+thane
+thunder
+troll
+trophy
+war
+wind
+wraith
+
+: Bane
+bane
+catcher
+chaser
+curse
+fire
+hawk
+horn
+hunter
+keeper
+stalker
+terror
+
+: Sindarin
+{:Sindarin {Adj|Verb}} + {:Sindarin Noun}
+
+: Sindarin Adj
+aer (holy)
+asgar (violent, rushing, impetuous)
+balch (cruel)
+bara (fiery, eager)
+born (hot, red)
+bragol (sudden)
+braig (wild, fierce)
+brand (lofty, noble, fine, high)
+brassen (white-hot)
+breig (wild, fierce)
+calen (green)
+cand (bold)
+caran (red)
+celeb (silver)
+celeg (swift, agile, hasty)
+côl (gold)
+dûr (dark, sombre)
+elu (pale blue)
+faen (radiant, white)
+foen (radiant, white)
+gael (pale, glimmering)
+maeg (sharp, piercing, penetrating)
+mith (pale grey)
+mithren (grey)
+mithril (true-silver)
+naru (red)
+nind (slender)
+ogol (wicked, evil)
+ruin (fiery red)
+sirith (flowing)
+thind (grey, pale)
+thinn (grey, pale)
+tínen (silent)
+tîn (silent, quiet)
+um (bad, evil)
+
+: Sindarin Verb
+critha (to reap)
+dringa (to beat)
+dringo (to beat)
+eitha (to stab)
+nag (to bite)
+narcha (to rend)
+síla (to shine white)
+
+: Sindarin Noun
+acharn (vengeance)
+achas (dread, fear)
+aeg (point)
+agar (blood) 
+aglar (glory, brilliance, splendour)
+aith (spearpoint)
+alagos (storm of wind)
+amarth (fate, doom)
+amlug (dragon)
+anc (jaw, row of teeth)
+angren (of iron)
+ann (long)
+ant (gift)
+ara (high, noble, royal)
+ast (dust)
+bann (duress, prison, custody, safe-keeping)
+carach (jaw, row of teeth)
+caraes (jagged hedge of spikes) 
+carag (spike, tooth of rock)
+carch (tooth, fang)
+cerch (sickle)
+cirth (runes)
+criss (cleft, cut, slash)
+crist (cleaver, sword)
+dae (shadow)
+daen (corpse)
+dagnir (slayer, bane)
+dagor (battle)
+dam (hammer)
+daug (orc warrior)
+deleb (horrible, abominable, loathsome)
+dond (fist, hand)
+dram (heavy stroke, a blow)
+dramb (heavy stroke, a blow)
+drambor (clenched fist)
+dramm (heavy stroke, a blow)
+draug (wolf)
+dring (hammer) 
+dôl (head, hill, mountain)
+ech (spine)
+ecthel (point of spear)
+egnas (sharp point, peak)
+egthel (point of spear)
+ereg (holly-tree, thorn)
+fael (gleaming brilliance) 
+faron (hunter) 
+gae (dread)
+gamp (hook, claw, crook)
+garaf (wolf)
+gildin (silver spark)
+glaw (radiance)
+glîn (gleam, glint)
+gost (dread)
+gurth (death)
+guruth (death)
+gwaedh (bond, troth, compact, oath)
+gwest (oath)
+gûd (foe)
+gûr (death)
+haru (wound)
+helch (bitter cold)
+heleg (ice)
+hûn (heart)
+iaeth (neck)
+iâr (blood)
+lang (cutlass, sword)
+lhang (cutlass, sword)
+magl (sword)
+magol (sword)
+malt (gold)
+megil (sword)
+ment (point)
+naeg (pain)
+nagol (tooth)
+nass (point)
+nasta (thrust)
+naur (flame, fire)
+orch (goblin, orc)
+rest (cut)
+rhest (cut)
+sîdh (peace)
+thela (point of spear)
+till (horn, point)
+torog (troll)
+tûr (mastery, victory)
+ungol (spider)
+urug (orc, shadow)
+yrch (orcs)
+êg (thorn)

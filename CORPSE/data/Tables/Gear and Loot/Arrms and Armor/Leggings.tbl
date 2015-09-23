@@ -1,7 +1,7 @@
 : MaleLower
 {: mlo} {: mm}
 5x {: mlo1} leather leg bracers {: ml}
-5x {: mlo2} {: mm} and {fur and pelt:hide} hide
+5x {: mlo2} {: mm} and {leather}
 
 : mlo
 10x set of heavy plate-mail leg bracers

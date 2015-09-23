@@ -7,6 +7,15 @@
 /          Dgn148  = DRAGON Magazine,# 148,page 36
 / http://community.wizards.com/comment/51250466#comment-51250466
 
+/ Abjuration: This school is focused on protective spells, as well as spells which cancel or interfere with other spells, magical effects or supernatural abilities, such as Break Enchantment, Dimensional Anchor, Dispel Magic or Remove Curse. Wizards who specialize in this school are known as Abjurers.
+/ Alteration: Spells in this school alter the properties of their targets. Examples include Bull's Strength, Fabricate, Polymorph, Plant Growth, Move Earth, and Water Breathing. In 3rd edition, many non-mind-affecting spells from 2nd edition's Enchantment/Charm school were moved to the Transmutation school. Wizards who specialize in this school are known as Transmuters.
+/ Conjuration: This school, known as Conjuration in 3rd and 3.5 editions and Conjuration/Summoning in earlier editions, is focused on instantaneous transportation, conjuring manifestations of creatures, energy or objects, and object creation. In 3rd and 3.5 editions, healing spells are also part of the conjuration school, however of the three core arcane classes, these spells are generally restricted to bards. In 3rd and 3.5 editions, Conjuration is divided into five subschools: calling (spells which physically transport extraplanar creatures to the caster, as well as granting them the ability to return to where they were called from), creation, healing, summoning (teleporting objects to the caster's location and/or causing creatures to physically manifest at the caster's location), and teleportation (instantly transporting creatures and/or objects). Wizards who specialize in this school are known as Conjurers.
+/ Divination: This school is focused on acquiring information. In 2nd edition, Divination was divided into two schools: Lesser Divination (all Divination spells up to 4th level) and Greater Divination (all Divination spells of 5th level or higher) in order to prevent specialist wizards from losing access to certain utility spells such as Detect Magic, Identify and Read Magic, serving a similar purpose to 3rd edition's Universal Magic. In 3rd and 3.5 editions, Divination has one subschool: scrying, whose spells create invisible magical sensors which provide the caster with information; these sensors can be detected and dispelled. Wizards who specialize in this school are known as Diviners.
+/ Enchantment: This school, known as Enchantment/Charm prior to 3rd edition and Enchantment in 3rd and 3.5 editions, changed dramatically in 3rd edition, when all non-mind-affecting spells were removed from the school and many were moved to Transmutation. In 3rd and 3.5 editions, all Enchantment spells are mind-affecting and Enchantment is divided into two subschools: compulsion and charm. Charm spells, such as Charm Person or Symbol of Persuasion, affect the targets' attitudes, usually making them act more favorably toward the caster. Compulsion spells such as Confusion, Dominate Monster, Feeblemind, Sleep, Suggestion or Zone of Truth, can force the targets' to act in a certain way or avoid certain actions, affect the targets' emotions or affect the targets' minds in other ways. The Compulsion subschool also includes buffs, such as Aid and Heroism. Wizards who specialize in this school are known as Enchanters.
+/ Evocation: This school is called Invocation/Evocation prior to 3rd edition, and Evocation in 3rd and 3.5 editions. In 3rd and 3.5 editions, Evocation is focused on damaging energy-based spells such as Fireball, Lightning Bolt, and Cone of Cold. It also includes conjurations of magical energy, such as Wall of Force, Darkness, Light, Leomund's Tiny Hut, and the Bigby's Hand spells. Wizards who specialize in this school are known as Evokers.
+/ Illusion: This school is known as Illusion/Phantasm prior to 3rd edition and Illusion in 3rd and 3.5 editions. In 3rd and 3.5 editions, it is divided into five subschools: figment, glamer, pattern, phantasm, and shadow. Figment spells create artificial sensations with no physical substance. Glamer spells alter the target's sensory properties, and can cause invisibility. Pattern spells create insubstantial images which affect the minds of the viewers, and can inflict harm. Phantasm spells create hallucinations which can be harmful. Shadow spells use magical shadows to create things with physical substance. Wizards who specialize in this school are known as Illusionists.
+/ Necromancy: Necromancy spells involve death, undeath, and the manipulation of life energy. Prior to 3rd edition, healing spells are in the Necromancy school, however these spells are generally restricted to clerics and/or druids. Necromancy can usually be divided into three or four categories: spells that help or create the Undead, like Animate Dead; spells that hurt the Undead, like Disrupt Undead; spells that hurt other people, like Enervation or Vampiric Touch; and spells that manipulate life in order to heal, such as Regenerate or Cure Serious Wounds, which were shifted to the Conjuration school in 3rd edition. Wizards who specialize in this school are known as Necromancers.
+
 / Level
 : Level 0 = ^ *0 .* 
 : Level 1 = ^ *1 .* 
@@ -1227,3 +1236,1703 @@ wrap                             0   altr                   mg                  
 wrathful smite                   1   evoc        v,c        pa       
 wyvern watch                     2   abju                   cl                                   tsrph2     
 zone of truth                    2   ench        v,s        bd,cl,pa       
+
+===
+
+
+<sgtable>
+;OffensiveOne
+1,Burning Hands
+1,Charm Person
+1,Enlarge
+1,Friends
+1,Light
+1,Magic Missile
+1,Push
+1,Shocking Grasp
+1,Sleep
+1,(player's choice)
+
+;DefensiveOne
+1,Affect Normal Fires
+1,Dancing Lights
+1,Feather Fall
+1,Hold Portal
+1,Jump
+1,Protection From Evil
+1,Shield
+1,Spider Climb
+1,Ventriloquism
+1,(player's choice)
+
+;MiscellaneousOne
+1,Comprehend Languages
+1,Detect Magic
+1,Erase
+1,Find Familiar
+1,Identify
+1,Mending
+1,Message
+1,Unseen Servant
+1,Write
+1,(player's choice)
+
+;LevelOne
+1,Affect Normal Fires
+1,Burning Hands
+1,Charm Person
+1,Comprehend Languages
+1,Dancing Lights
+1,Detect Magic
+1,Enlarge
+1,Erase
+1,Feather Fall
+1,Find Familiar
+1,Friends
+1,Hold Portal
+1,Identify
+1,Jump
+1,Light
+1,Magic Missile
+1,Mending
+1,Message
+1,Nystul's Magic Aura
+1,Protection From Evil
+1,Push
+1,Read Magic
+1,Shield
+1,Shocking Grasp
+1,Sleep
+1,Spider Climb
+1,Tenser's Floating Disc
+1,Unseen Servant
+1,Ventriloquism
+1,Write
+
+;LevelTwo
+1,Audible Glamer
+1,Continual Light
+1,Darkness 15' Radius
+1,Detect Evil
+1,Detect Invisibility
+1,ESP
+1,Fool's Gold
+1,Forget
+1,Invisibility
+1,Knock
+1,Leomund's Trap
+1,Levitate
+1,Locate Object
+1,Magic Mouth
+1,Mirror Image
+1,Pyrotechnics
+1,Ray of Enfeeblement
+1,Rope Trick
+1,Scare
+1,Shatter
+1,Stinking Cloud
+1,Strength
+1,Web
+1,Wizard Lock
+
+;LevelThree
+1,Blink
+1,Clairaudience
+1,Clairvoyance
+1,Dispell Magic
+1,Explosive Runes
+1,Feign Death
+1,Fireball
+1,Flame Arrow
+1,Fly
+1,Gust of Wind
+1,Haste
+1,Hold Person
+1,Infravision
+1,Invisibility 10' Radius
+1,Leomund's Tiny Huit
+1,Lightning Bolt
+1,Monster Summoning I
+1,Phantasmal Force
+1,Protection From Evil 10' Radius
+1,Slow
+1,Suggestion
+1,Tongues
+1,Water Breathing
+
+;LevelFour
+1,Charm Monster
+1,Confusion
+1,Dig
+1,Dimension Door
+1,Enchanted Weapon
+1,Extension I
+1,Fear
+1,Fire Charm
+1,Fire Shield
+1,Fire Trap
+1,Fumble
+1,Hallucinatory Terrain
+1,Ice Storm
+1,Massmorph
+1,Minor Globe of Invulnerability
+1,Monster Summoning II
+1,Plant Growth
+1,Polymorph Other
+1,Polymorph Self
+1,Rary's Mnemonic Enhancer
+1,Remove Curse
+1,Wall of Fire
+1,Wall of Ice
+1,Wizard Eye
+
+;LevelFive
+1,Airy Water
+1,Animal Growth
+1,Animate Dead
+1,Bigby's Interposing Hand
+1,Cloudkill
+1,Conjure Elemental
+1,Cone of Cold
+1,Contact Other Plane
+1,Distance Distortion
+1,Extension II
+1,Feeblemind
+1,Hold Monster
+1,Leomund's Secret Chest
+1,Magic Jar
+1,Monster Summoning III
+1,Mordenkainen's Faithful Hound
+1,Passwall
+1,Stone Shape
+1,Telekinesis
+1,Teleport
+1,Transmute Rock to Mud
+1,Wall of Force
+1,Wall of Iron
+1,Wall of Stone
+
+;LevelSix
+1,Anti-Magic Shell
+1,Bigby's Forceful Hand
+1,Control Weather
+1,Death Spell
+1,Disintegrate
+1,Enchant An Item
+1,Extension III
+1,Geas
+1,Glassee
+1,Globe of Invulnerability
+1,Guards And Wards
+1,Invisible Stalker
+1,Legend Lore
+1,Lower Water
+1,Monster Summoning IV
+1,Move Earth
+1,Otiluke's Freezing Sphere
+1,Part Water
+1,Project Image
+1,Reincarnation
+1,Repulsion
+1,Spiritwrack
+1,Stone To Flesh
+1,Tenser's Transformation
+
+;LevelSeven
+1,Bigby's Grasping Hand
+1,Cacodemon
+1,Charm Plants
+1,Delayed Blast Fireball
+1,Drawmij's Instant Summons
+1,Duo-Dimension
+1,Limited Wish
+1,Mass Invisibility
+1,Monster Summoning V
+1,Mordenkainen's Sword
+1,Phase Door
+1,Power Word, Stun
+1,Reverse Gravity
+1,Simulacrum
+1,Statue
+1,Vanish
+
+;LevelEight
+1,Antipathy/Sympathy
+1,Bigby's Clenched Fist
+1,Clone
+1,Glassteel
+1,Incendiary Cloud
+1,Mass Charm
+1,Maze
+1,Mind Blank
+1,Monster Summoning VI
+1,Otto's Irresistible Dance
+1,Permanency
+1,Polymorph Any Object
+1,Power Word, Blind
+1,Serten's Spell Immunity
+1,Symbol
+1,Trap The Soul
+
+;LevelNine
+1,Astral Spell
+1,Bigby's Crushing Hand
+1,Gate
+1,Imprisonment
+1,Meteor Swarm
+1,Monster Summoning VII
+1,Power Word, Kill
+1,Prismatic Sphere
+1,Shape Change
+1,Temporal Stasis
+1,Time Stop
+1,Wish
+
+;OffensiveOne
+1,The Charm of Appersonation 
+1,Evard's Frictionless Field 
+1,The Hypnotic Charm 
+1,The Importunate Insult 
+1,The Kaleidoscopic Spray 
+1,Kazimir's Resplendent Couture 
+1,Laeral's Baleful Aura 
+1,The Metamorphoun of Fire 
+1,Sirrian's Aggrandisement 
+1,The Spell of Exquisite Repose 
+
+
+;DefensiveOne
+1,The Apotropaic Circle 
+1,The Audible Glamer 
+1,The Effervescent Lights of Kwalish 
+1,The Expeditious Retreat 
+1,The Heavenly Screen 
+1,The Howling Rune 
+1,The Imperturbable Quiescent Sphere 
+1,Isain's Fortuitous Interruption 
+1,The Lesser Sign of Sealing 
+1,Otto's Arachnid Grip 
+
+
+;MiscellaneousOne
+1,The Abstention of the Written Path 
+1,The Call to the Familiar Spirit 
+1,The Call to the Unseen Servant 
+1,The Discerner of Enchantments 
+1,The Indelible Emblem 
+1,Melf's Impermeable Membrane 
+1,Nahal's Reckless Dweomer 
+1,Phandaal's Polyglottal Lobe 
+1,The Spell of Pragmatic Amalgamation 
+1,Tenser's Floating Disc 
+
+
+;LevelOne
+1,The Charm of Appersonation 
+1,Evard's Frictionless Field 
+1,The Hypnotic Charm 
+1,The Importunate Insult 
+1,The Kaleidoscopic Spray 
+1,Kazimir's Resplendent Couture 
+1,Laeral's Baleful Aura 
+1,The Metamorphoun of Fire 
+1,Sirrian's Aggrandisement 
+1,The Spell of Exquisite Repose 
+1,The Apotropaic Circle 
+1,The Audible Glamer 
+1,The Effervescent Lights of Kwalish 
+1,The Expeditious Retreat 
+1,The Heavenly Screen 
+1,The Howling Rune 
+1,The Imperturbable Quiescent Sphere 
+1,Isain's Fortuitous Interruption 
+1,The Lesser Sign of Sealing 
+1,Otto's Arachnid Grip 
+1,The Abstention of the Written Path 
+1,The Call to the Familiar Spirit 
+1,The Call to the Unseen Servant 
+1,The Discerner of Enchantments 
+1,The Indelible Emblem 
+1,Melf's Impermeable Membrane 
+1,Nahal's Reckless Dweomer 
+1,Phandaal's Polyglottal Lobe 
+1,The Spell of Pragmatic Amalgamation 
+1,Tenser's Floating Disc 
+
+
+;LevelTwo
+1,Arbane's Fulgent Coruscations 
+1,The Call to the Fetid Cloud 
+1,The Cure for Honesty 
+1,The Hands of Cold Certainty 
+1,Hornung's Deleterious Deflector 
+1,The Impudent Might of Ilskar the Bold 
+1,The Invigorator of Blades 
+1,Krest's Cerebral Consonance 
+1,Leomund's Escalatory Escape 
+1,Lugwiler's Dismal Itch 
+1,Lustoff's Vicarious Head 
+1,The Manifold Effigies of Being 
+1,The Marvellous Magic Mouth 
+1,Mazirian's Marasmic Malady 
+1,The Pattern of the Immanent Sublime 
+1,Phandaal's Mantle of Stealth 
+1,The Prosaic Preservation of Pandelume 
+1,Quaal's Near-Alchemical Transformance 
+1,The Ruby Ray of Reversal 
+1,The Spell of Barring and Broaching 
+1,The Spell of Phantasmal Forces 
+1,The Spell of the Imponderous Bounty 
+1,The Spur to the Libidinous Earth 
+1,Tasha's Uncontrollable Hideous Laughter 
+1,The Tone of Resonant Discord 
+1,The Torment of Tantalus 
+1,Turjan's Translocation 
+1,The Unfettered Eye 
+1,The Veil of the Cimmerian Shade 
+1,The Web of Wondrous Entrapment
+
+
+;LevelThree
+1,Arbane's Precipitous Deluge 
+1,The Charm of Dire Sanguinity 
+1,The Charm of the Inveigling Tongue 
+1,Chun's Halo of the Unsleeping Eyes 
+1,Felojun's Repudiation of Arrows 
+1,The Fury of the Captive Wind 
+1,The Globe of Distant Discernmen 
+1,The Indefatigable Breath 
+1,The Instant Galvanic Thrust 
+1,The Interminable Interim 
+1,The Invocation of the Open Sky 
+1,Kuroth's Empathic Rapport 
+1,Leomund's Expansible Egg 
+1,Leuk-O's Vile Menagerie 
+1,The Liberation of Warp 
+1,Lorloveim's Creeping Shadow 
+1,Melf's Maladweomer 
+1,Mentzer's Relative Time Dilation 
+1,Mzhentul's Remarkable Polar Pull 
+1,Nchaser's Spectral Steed 
+1,Nolzur's Metabolic Suspension 
+1,Nulathoe's Accoustic Enhancement 
+1,Phandaal's Vitriolic Critique 
+1,Rary's Erratic Displacement 
+1,The Seventh Set's Web of Hiding 
+1,The Snapping Teeth of Yecind 
+1,The Solvent of Horrid Corrosion 
+1,The Spell of the Abysmal Flame 
+1,The Spell of the Slow Hour 
+1,Xult's Peregrination of Probability 
+
+
+;LevelFour
+1,Alamer's Cloak of the Consuming Chill 
+1,Arnd's Dimension Door 
+1,The Charm of the Inverted Pervulsion 
+1,The Efficacious Portal Ward 
+1,The Engendering Weave 
+1,Evard's Black Tentacles 
+1,Felojun's Incendiary Rune 
+1,Flamsterd's Curtain of the Violet Conflagration 
+1,The Gestation of the Ignoble Servitor 
+1,Gilgad's Hallucinatory Locale 
+1,Hlal's Umbral Monstrosity 
+1,The Illusion of Vile Arthropods 
+1,The Impermanence of Being 
+1,Johydee's Gentle Admonishment 
+1,Leomund's Lamentable Belabourment 
+1,Lhegrand's Silvery Skin 
+1,The Minor Globe of Invulnerability 
+1,Narissa's Blind Excess 
+1,The Onslaught of Dread Equines 
+1,Otiluke's Resilient Sphere 
+1,Quaal's Flawless Duplicity 
+1,Rary's Mnemonic Enhancer 
+1,The Seal Upon the Powers 
+1,The Spell of Expansive Excavation 
+1,The Spell of Mercurial Anatomy 
+1,The Spell of the Peremptory Polymorph 
+1,The Spell of Wyrd 
+1,The Summons to the Inclement Clime 
+1,Tasha's Morbid Jest 
+1,Tulrun's Filamentary Extension 
+
+
+;LevelFive
+1,Alphon's Anguish of the North Wind 
+1,Archveult's Crude Fabrication 
+1,The Augur of the Inscrutable Spheres 
+1,The Blade of Inexorable Disjection 
+1,Caligarde's Penetrating Vision 
+1,The Charm of Untiring Nourishment 
+1,Clambard's Remote Acquisition 
+1,The Conjure of the Elemental Id 
+1,The Dweomer of Ignominious Dismissal 
+1,The Elocation of Ka 
+1,The Extirpation of the Ruinous Cloud 
+1,Firdaan's Impenetrable Last Stand 
+1,The Hebetation of the Intellect 
+1,The Imperfect Invitation 
+1,Johydee's Indisputable Fantasy 
+1,Leomund's Dramatic Chest 
+1,Mentor's Perfect Inertia 
+1,The Oblong Barrier 
+1,Pandelume's Paroxysm of Pain 
+1,The Pattern of the Proscriptive Watchdog 
+1,Phandaal's Semblance of Psyche 
+1,The Reign of Long Nerves 
+1,The Satire of Life Renewed 
+1,The Seven Hundred and Seventy Steps of Slumber 
+1,The Shroud of Agonizing Immolation 
+1,Skye's Spell to Sidestep the Real 
+1,The Spell of Celeritous Relocalisation 
+1,Tenser's Destructive Resonance 
+1,Tzunk's Distance Distortion 
+1,Yon's Obliging Parapet 
+
+
+;LevelSix
+1,The Agency of Far Despatch 
+1,Ao's Enervating Opalescent Eyes 
+1,The Avulsion of the Spirit-Soul 
+1,The Binding of True Names 
+1,The Call to the Assiduous Pursuer 
+1,The Call to Inflexible Salvation 
+1,The Contingency of the Foreknown 
+1,Daern's Total Repulse 
+1,The Excellent Prismatic Spray 
+1,Hornung's Indiscriminate Expulsion 
+1,The Infallible Retrotropic Field 
+1,Khelpen's Permutation of Gravity 
+1,The Labyrinth of Elongated Shadows 
+1,The Omnipotent Sphere 
+1,Otiluke's Freezing Orb 
+1,Otto's Irresistable Dance 
+1,The Scrutiny of the Omniscient Eye 
+1,The Sequester to the Ethereal Coil 
+1,Serten's Immaculate Simulacrum 
+1,The Seven Symbols of Solomon 
+1,Sirrian's Spell Engine 
+1,The Speculum of Retribution 
+1,The Spell of Elegant Dissolution 
+1,The Spell of Forlorn Encystment 
+1,The Spell of Geas 
+1,The Spell of Temporal Disjunction 
+1,The Spell of the Stone that Weeps in Silence 
+1,Tenser's Transformation of the Heroic and Grotesque 
+1,The Tower of Indomitable Intellect 
+1,The Wrack of the Recalcitrant Spirit 
+
+
+;LevelOne
+1,Bookspeak
+1,Charm Person
+1,Comprehend Languages
+1,Detect Magic
+1,Enlarge
+1,Faerie Fire
+1,Feather Fall
+1,Floating Disc
+1,Hold Portal
+1,Identify
+1,Light
+1,Magic Aura
+1,Magic Missile
+1,Mending
+1,Message
+1,Shield
+1,Sleep
+1,Spider Climb
+1,Summon
+1,Unseen Servant
+
+;LevelTwo
+1,Audible Glamour
+1,Change Self
+1,Detect Invisible
+1,ESP
+1,Force of Forbidment
+1,Forget
+1,Invisibility
+1,Knock
+1,Levitate
+1,Light, Continual
+1,Locate Object
+1,Magic Mouth
+1,Mirror Image
+1,Phantasmal Force
+1,Ray of Enfeeblement
+1,Speak with Animals
+1,Stinking Cloud
+1,Wall of Fog
+1,Web
+1,Wizard Lock
+
+;LevelThree
+1,Army of One
+1,Clairvoyance
+1,Detect Illusion
+1,Dispel Magic
+1,Explosive Runes
+1,False Alignment
+1,Fly
+1,Gaseous Form
+1,Gust of Wind
+1,Haste
+1,Hold Person
+1,Howl of the Moon
+1,Invisibility 10' Radius
+1,Phantasmal Psychedelia
+1,Protection from Normal Missiles
+1,Secret Page
+1,Speak with Dead
+1,Strange Waters II
+1,Suggestion
+1,Water Breathing
+
+;LevelFour
+1,Charm Monster
+1,Confusion
+1,Creation, Minor
+1,Dig
+1,Dimension Door
+1,Extension
+1,Globe of Invulnerability, Minor
+1,Hallucinatory Terrain
+1,Invisibility, Improved
+1,Mnemonic Enhancer
+1,Plant Growth
+1,Polymorph Others
+1,Polymorph Self
+1,Protection from Normal Weapons
+1,Seven Gates
+1,Shadow Monsters
+1,Speak with Plants
+1,Wall of Fire
+1,Wall of Ice
+1,Wizard Eye
+
+;LevelFive
+1,Airy Water
+1,Animate Dead
+1,Chaos
+1,Cloudkill
+1,Contact Outer Sphere
+1,Creation, Major
+1,Faithful Hound
+1,Feeblemind
+1,Hold Monster
+1,Interposing Hand
+1,Magic Jar
+1,Passwall
+1,Secret Chest
+1,Stone Shape
+1,Telekinesis
+1,Teleport
+1,Transmute Rock to Mud
+1,Wall of Force
+1,Wall of Iron
+1,Wall of Stone
+
+;LevelSix
+1,Animate Dead Monsters
+1,Barrier
+1,Contingency
+1,Death Spell
+1,Disintegrate
+1,Geas
+1,Glass Eye
+1,Globe of Invulnerability, Major
+1,Legend Lore
+1,Lucubration
+1,Mind Switch
+1,Move Earth
+1,Phantasmal Supergoria
+1,Projected Image
+1,Shades
+1,Speak with Monsters
+1,Stone to Flesh
+1,Suggestion, Mass
+1,Veil
+1,Weird Vortex
+
+;LevelSeven
+1.Animated Artwork
+1,Bestow Spell Ability
+1,Duo-Dimension
+1,Grasping Hand
+1,Instant Summons
+1,Invisibility, Mass
+1,Magic Sword
+1,Phase Door
+1,Power Word Stun
+1,Prismatic Sphere
+1,Prismatic Spray
+1,Prismatic Wall
+1,Remote Surveillance
+1,Reverse Gravity
+1,Simulacrum
+1,Spell Turning
+1,Statue
+1,Vanish
+1,Vision
+1,Witchlamp Aura
+
+;LevelEight
+1,Antipathy/Sympathy
+1,Charm Person, Mass
+1,Clone
+1,Demand
+1,Maze
+1,Mind Blank
+1,Permanency
+1,Polymorph Any Object
+1,Symbol
+1,Trap the Soul
+
+;LevelNine
+1,Imprisonment
+1,Lost Dweomer
+1,Power Word Kill
+1,Shape Change
+1,Temporal Stasis
+1,Time Stop
+
+
+;LevelOne
+1,{{link|[rd]product/116452/Better-Than-Any-Man|A Spell to Grant One’s Heart’s Desire}}
+1,{{link|[av]2012/03/31/new-spell-alter-written-language/|Alter Written Language}}
+1,{{link|[hw]a/2014/03/spell-animate-necrotic-tissue.html|Animate Necrotic Tissue}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Anonymity}}
+1,{{link|[av]2011/12/24/new-spell-armor-shock/|Armor Shock}}
+1,{{link|[hh]2010/06/book-of-light.html|Arms of the Brute}}
+1,{{link|[ci]om/2010/12/spells-of-thread-and-rope.html|Attach Rope}}
+1,{{link|http://dungeonofsigns.blogspot.com/2012/08/an-hms-appollyon-spell-auric-devourer.html|Auric Devourerer}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Baculus of the Balatron}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Be Impressive}}
+1,{{link|[hh]2009/03/spells-book-of-black-rose.html|Black Rose Talon}}
+1,{{link|[hh]2010/06/book-of-light.html|Blastsphere}}
+1,{{link|[fm]2014/03/speleo-spells.html|Blood into Rope}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Brain Dump}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Calceiform Calodaemon}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Calpperdudgeon’s Chalcentery}}
+1,{{link|[hh]2009/01/first-level-spells-sigil-carbuncle.html|Carbuncle}}
+1,{{link|[hw]a/2011/12/spell-charnel-breath.html|Charnel Breath}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Cheddar Chamfrain}}
+1,{{link|[hh]2009/03/three-first-level-spells-cloak-of.html|Cloak of Silver}}
+1,{{link|[ci]om/2011/01/spells-of-thread-rope-part-3.html|Command Rope}}
+1,{{link|[hh]2009/09/spellbooks-of-nathan-serpentarius-least.html|Concordance of Heaven}}
+1,{{link|[ci]om/2010/12/more-spells-of-thread-rope.html|Conjur Rope}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Create stuff that seems to be food, but isn’t}}
+1,{{link|[hw]a/2014/04/spell-crow-claws.html|Crow-Claws}}
+1,{{link|[fm]2014/03/speleo-spells.html|Cryobrite Bridge}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Cryptic Text}}
+1,{{link|[wc]2012/12/grimoire-of-grinch.html|Cuddly as a Cactus}}
+1,{{link|[hw]a/2013/11/ten-wicked-little-things-plus-dalrins.html|Dalrin’s Lesser Call}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|De-age}}
+1,{{link|[hh]2009/03/spells-book-of-black-rose.html|Dead Rose Heart}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Deflect Damage}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Detect Machine}}
+1,{{link|[hh]2008/12/first-level-spells-firedge-icedge.html|Detect Magic Potential}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Detect Undead}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Detect Weapons}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Devastating Dendrite}}
+1,{{link|[hw]a/2011/08/dimfire-level-1-duration-12-turns-range.html|Dimfire}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Drain Battery}}
+1,{{link|[av]2011/09/03/new-spell-drawing-flies/|Drawing Flies}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Enhance Sensation}}
+1,{{link|[hw]a/2011/09/envenomate-level-1-duration-6-turns.html|Envenomate}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Euonymic Epincion}}
+1,{{link|[av]2012/09/21/new-spell-expedited-notation/|Expedited Notation}}
+1,{{link|[av]2011/06/30/new-spell-face-of-stone/|Face of Stone}}
+1,{{link|http://jrients.blogspot.ca/2011/03/new-spells-for-your-considerationconste.html|Face of Terror}}
+1,{{link|[hh]2009/09/spellbooks-of-nathan-serpentarius-least.html|Falling Star Ghost}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Fancify Rat}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Feat of Strength}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Feta Fabulist}}
+1,{{link|[av]2011/08/12/new-spell-finding-the-dreamers/|Finding the Dreamers}}
+1,{{link|[hh]2008/12/first-level-spells-firedge-icedge.html|Firedge / Icedge}}
+1,{{link|[hh]2009/03/three-first-level-spells-cloak-of.html|Flame’s Bounty}}
+1,{{link|[hh]2009/01/three-first-level-spells-vine-truth.html|Flash}}
+1,{{link|[hh]2009/10/two-spells-of-scribing.html|Fleeting Glyphs}}
+1,{{link|[av]2011/07/12/new-spell-fog-dogs/|Fog Dogs}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Fugacious Fromage}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Gambrinous Gliriform}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Generation Gap}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Glass Eye}}
+1,{{link|[av]2011/08/27/new-spell-glassy-stare/|Glassy Stare}}
+1,{{link|[hw]a/2011/09/gloomlight-level-1-duration-1d6-turns.html|Gloomlight}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Glossal Girandoleeng}}
+1,{{link|[av]2009/06/11/swords-wizardry-new-spell-gobsmacked/|Gobsmacked}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Hamirostrate Hoxter}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Hariform Habilments}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Havarti Hendecagon}}
+1,{{link|[fm]2014/03/speleo-spells.html|Heat Ghost}}
+1,{{link|[hh]2010/06/book-of-light.html|Hoarfrost}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Homing Beacon}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Ignipotent Icker}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Ignite}}
+1,{{link|[av]2011/12/13/new-spell-image-burn/|Image Burn}}
+1,{{link|[hw]a/2011/12/spell-internalize-shadow.html|Internalize Shadow}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Journey to the Past}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Jowter’s Joola}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Jumentous Jabot}}
+1,{{link|[rb]wb-new-spells#toc0|Kharoe­lyn’s Aphro­disi­ac Au­ra or the Love Rit­u­al}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Kirkbuzzer’s Keedug}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Kolbrandt’s Keen Edge}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Lampyridine Limburger}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Laniary Lambrequin}}
+1,{{link|[av]2011/06/29/new-spell-leaving-a-reminder/|Leaving a Reminder}}
+1,{{link|[fm]2014/03/speleo-spells.html|Lens Weapon}}
+1,{{link|[av]2011/09/08/new-spell-less-chancy-games/|Less Chancy Games}}
+1,{{link|[hw]a/2014/03/spell-lesser-receptivity.html|Lesser Receptivity}}
+1,{{link|[fm]2014/03/speleo-spells.html|Levitating Brain}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Lighten Load}}
+1,{{link|[hw]a/2011/09/listen-to-walls-level-1-duration-1d6.html|Listen to the Walls}}
+1,{{link|[av]2011/08/24/new-spell-locate-habitation/|Locate Habitation}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Malacial Malefaction}}
+1,{{link|[rb]wb-new-spells#toc0|Maldoor’s Expedient Extinguisher}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Marionette }}
+1,{{link|[fm]2014/03/speleo-spells.html|Matchstick Men}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Melt}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Memories of the Ancient Astronauts}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Merklin’s Side-Slip}}
+1,{{link|[hh]2009/01/three-first-level-spells-vine-truth.html|Messenger}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Mighty Blow}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Mighty Throw}}
+1,{{link|[av]2012/02/04/new-spell-mislabel/|Mislabel}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Muenster Meuse}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Muroid Maceration}}
+1,{{link|[hh]2010/09/spells-for-lonely-letters.html|Netherbarb}}
+1,{{link|[av]2011/09/11/new-spell-nivis-whimsical-cart/|Nivi’s Whimsical Cart}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Obumbrate Ossifrage}}
+1,{{link|[hw]a/2011/08/oneiric-bubble-level-1-duration-turns.html|Oneiric Bubble}}
+1,{{link|[av]2013/02/24/new-spell-organized-and-in-order/|Organized and In Order}}
+1,{{link|[hh]2009/09/spellbooks-of-nathan-serpentarius-least.html|Pale Astral Barbs}}
+1,{{link|[hw]a/2011/09/pensive-contemplation-level-1-duration.html|Pensive Contemplation}}
+1,{{link|http://lunchingonlamias.blogspot.ca/2011/02/new-spell-perform-function.html|Perform Function}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Plastination}}
+1,{{link|[fm]2014/03/speleo-spells.html|Pocket ropes}}
+1,{{link|[rb]wb-new-spells#toc0|Pugnacious Pugilist}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Quatch Quagga}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Ramiferous Rapparee}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Rat Race}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Read Brains}}
+1,{{link|[ci]om/2010/12/more-spells-of-thread-rope.html|Rope Walk}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Rugosity}}
+1,{{link|http://carterscartopia.blogspot.ca/2009/11/four-horrid-spells.html|Scumbrella}}
+1,{{link|[hh]2010/03/book-of-white-cat.html|Senseglyph}}
+1,{{link|[fm]2014/03/speleo-spells.html|Servant Skull}}
+1,{{link|[hh]2010/06/book-of-light.html|Shining Bolt}}
+1,{{link|[hh]2010/06/book-of-light.html|Shroud of the Blaze}}
+1,{{link|[hw]a/2013/11/spell-design-challenge.html|Sidgwick’s Scabrous Servitor}}
+1,{{link|[hh]2009/01/first-level-spells-sigil-carbuncle.html|Sigil}}
+1,{{link|[fm]2014/03/speleo-spells.html|Silent Speech}}
+1,{{link|[hh]2010/06/book-of-light.html|Silver Sickles}}
+1,{{link|[ci]om/2010/12/spells-of-thread-and-rope.html|Skein}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Spasm of Horror}}
+1,{{link|http://planetalgol.blogspot.ca/2011/01/grammaree-jewel-throne-preview.html|Speak with Cats}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Speak with Insects}}
+1,{{link|[hw]a/2011/08/splinter-arrow-level-1-duration-1-turn.html|Splinter Arrow}}
+1,{{link|[hw]a/2013/11/spell-design-challenge.html|Squiggling Suppurating Sores of Salamak}}
+1,{{link|[fm]2014/03/speleo-spells.html|Stone Steps}}
+1,{{link|[ci]om/2011/01/spells-of-thread-rope-part-3.html|Strengthen Rope}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Stretch}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Subtle Deception}}
+1,{{link|http://grognardia.blogspot.ca/2010/11/grognards-grimoire-summon-protector.html|Summon Protector}}
+1,{{link|http://lunchingonlamias.blogspot.ca/2011/02/new-spell-sussuration.html|Sussuration}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Swim}}
+1,{{link|[av]2012/09/07/new-spell-tapstone-trap/|Tapstone Trap}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Tesselate}}
+1,{{link|[hh]2009/04/bladespells.html|The Argent Thorn}}
+1,{{link|[hh]2009/04/bladespells.html|The Drop of Light}}
+1,{{link|[hh]2010/03/book-of-white-cat.html|The Fire Rose}}
+1,{{link|[hh]2010/06/pair-of-spells.html|The Peacock Robe}}
+1,{{link|[hw]a/2011/08/thought-wall-level-1-duration-2-turns.html|Thought Wall}}
+1,{{link|[av]2012/02/20/new-spell-three-step-trap/|Three Step Trap}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Thresh}}
+1,{{link|[rb]wb-new-spells#toc0|Tobia’s Simian Valet}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Trail of Crumbs}}
+1,{{link|[av]2012/01/26/new-spell-trail-of-light/|Trail of Light}}
+1,{{link|[av]2011/11/18/new-spell-trip/|Trip}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Ubara’s Scalding Palm}}
+1,{{link|[av]2011/08/09/new-spell-unnerving-stare/|Unnerving Stare}}
+1,{{link|[hh]2010/03/book-of-white-cat.html|Veil of Mist}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Velocious Vespertine Vellitation}}
+1,{{link|[hh]2009/01/three-first-level-spells-vine-truth.html|Vine Truth}}
+1,{{link|[hw]a/2012/01/spell-voorish-sign.html|Voorish Sign}}
+1,{{link|[fm]2014/03/speleo-spells.html|Wait}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Whisper Throne}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Whisternefet Warison}}
+1,{{link|[hh]2009/03/three-first-level-spells-cloak-of.html|Winter Petal Wind}}
+1,{{link|[hh]2010/03/book-of-white-cat.html|Winter’s Talons}}
+1,{{link|[av]2011/07/11/new-spell-wisdom-of-the-folk/|Wisdom of the Folk}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Wuntee Witzchoura}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Xenarthral Xenium}}
+1,{{link|[hw]a/2013/11/spell-design-challenge.html|Xongir’s Fingerling}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Xyresic Xylem}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Yawning Yuad}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Yestreen Ydromancy}}
+1,{{link|[rb]wb-new-spells#toc0|Zolobachai’s Im­per­ti­nent In­vi­ta­tion}}
+1,{{link|[rb]forum/t-216786/the-grimoire-of-zolobachai-of-the-nine-visions#post-691798|Zolobachai’s Im­prac­ti­cal Yam}}
+1,{{link|[rb]forum/t-216786/the-grimoire-of-zolobachai-of-the-nine-visions#post-691810|Zolobachai’s Ir­re­press­ible Turpi­tude}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Zymurgic Zebrine}}
+
+
+;LevelTwo
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Alistair’s Affixation}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Alligator Army}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Ambeer Accipter}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Animate Hands}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Annoyance}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Anthropophagy}}
+1,{{link|[hw]a/2013/10/secret-spells-of-wizard-frog.html|Arcande Adumbration}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Armor-flow}}
+1,{{link|[av]2012/08/26/new-spell-astral-tether/|Astral Tether}}
+1,{{link|[hw]a/2011/08/auric-sheath-level-2-duration-12-turns.html|Auric Sheath}}
+1,{{link|[hw]a/2014/03/spell-babbletize.html|Babbletize}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Barding}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Better Mousetrap}}
+1,{{link|[hw]a/2014/04/spell-black-snag.html|Black Snag}}
+1,{{link|[hh]2009/09/spellbooks-of-nathan-serpentarius-least.html|Blade of the Stars}}
+1,{{link|[hh]2009/03/two-second-level-spells-bleeding-edge.html|Bleeding Edge}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Bolt of the Vacuum}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Book Brace}}
+1,{{link|[av]2011/06/23/new-spell-borrow-from-plane/|Borrow from Plane}}
+1,{{link|[av]2011/10/26/new-spell-bottle-of-spirits/|Bottle of Spirits}}
+1,{{link|[wc]2012/12/grimoire-of-grinch.html|Brain full of Spiders}}
+1,{{link|[hh]2010/06/pair-of-spells.html|Bright Ember Bindings}}
+1,{{link|[fm]2014/03/speleo-spells.html|Calcite Gap}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Call of the Mutant}}
+1,{{link|[av]2011/07/14/new-spell-call-to-allies/|Call to Allies}}
+1,{{link|[av]2012/07/31/new-spell-calling-the-truce/|Calling the Truce}}
+1,{{link|[wc]2012/12/grimoire-of-grinch.html|Charming as an Eel}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Chill of the Outer Void}}
+1,{{link|[av]2011/08/26/new-spell-coloring-curtain-of-vazba/|Colouring Curtain of Vazba}}
+1,{{link|[hw]a/2011/08/spells-contraventory-injuction.html|Contraventory Injunction}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Corpse Fire}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Create Water}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Dancing Sword}}
+1,{{link|[av]2011/06/28/new-spell-darkfire/|Darkfire}}
+1,{{link|[av]2012/04/24/new-spell-delectable-sphere/|Delectable Sphere}}
+1,{{link|http://dungeonofsigns.blogspot.ca/2012/10/hms-apollyon-grimore-hammer-of-damned.html|Deluge of Light}}
+1,{{link|[av]2012/01/17/new-spell-detect-origin/|Detect Origin}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Diligum’s Declinative Disinterestation}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Doctor Basilton’s Horrific Visions}}
+1,{{link|[hw]a/2014/03/spell-dorinds-demulcent-yellow-hand.html|Dorin’ds Demulcent Yellow Hand}}
+1,{{link|[hw]a/2011/09/draw-cut-level-2-duration-4-turns-range.html|Draw Cut}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Dream Trade}}
+1,{{link|[hw]a/2014/03/spell-egregious-effusion.html|Egregious Effusion}}
+1,{{link|[av]2012/01/30/new-spell-elasticity-of-self/|Elasticity of Self}}
+1,{{link|[av]2011/09/07/new-spell-elemental-bindery/|Elemental Bindery}}
+1,{{link|[hw]a/2011/09/elliptical-confoundity-level-2-duration.html|Elliptical Confoundity}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Emasculating Evocation}}
+1,{{link|[hw]a/2011/09/enfold-object-level-2-duration-special.html|Enfold Object}}
+1,{{link|[av]2011/12/14/new-spell-enrage/|Enrage}}
+1,{{link|[av]2011/12/25/new-spell-enshrouding-cloud/|Enshrouding Cloud}}
+1,{{link|[rb]wb-new-spells#toc1|Excruciating Cauterization}}
+1,{{link|[ta]2012/04/ezras-enchanted-evening.html|Ezra’s Enchanted Evening}}
+1,{{link|[av]2012/01/19/new-spell-false-speech/|False Speech}}
+1,{{link|[av]2011/08/18/new-spell-fascination/|Fascination}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Feather Hoof}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Feather Saddle}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Fell Eyes}}
+1,{{link|[av]2012/04/26/new-spell-fey-sight/|Fey Sight}}
+1,{{link|http://dungeonofsigns.blogspot.ca/2012/09/hms-apollyon-grimore.html|Field of Claws}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Fiery Orb}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Fimicoloud Famulus}}
+1,{{link|[av]2011/08/20/new-spell-find-mentor/|Find Mentor}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Fire Blanket}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Fire Jump}}
+1,{{link|[hw]a/2013/12/saiitii-manifestations-in-wermspittle.html|Fist of Shadows}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Flaming Hand}}
+1,{{link|[hw]a/2011/12/spell-forestall-collapse.html|Forestall Collapse}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Fungal Armor}}
+1,{{link|[hw]a/2013/12/saiitii-manifestations-in-wermspittle.html|Fungal Growth}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Furacious Falcate}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Gallop}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Goodly Goings}}
+1,{{link|[av]2013/01/01/new-spell-gossip-stopper/|Gossip Stopper}}
+1,{{link|[ci]om/2010/12/spells-of-thread-and-rope.html|Grapple}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Haloid Havildar}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Hanging Fire}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Hapless Fool}}
+1,{{link|[hw]a/2014/03/spell-hold-shadow.html|Hold Shadow}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Infect}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Jacinth Janiceps}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Jade Claws}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Jade Rod}}
+1,{{link|[hh]2010/09/spells-for-lonely-letters.html|Judgement}}
+1,{{link|[hw]a/2011/08/kazwens-reflections-level-2-duration.html|Kazwen’s Reflections}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Kedogonous Katabasis}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Keenness of Sight}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|King Kava’s Killer Kazoo}}
+1,{{link|[wc]2012/12/grimoire-of-grinch.html|King of Sinful Sots}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Landlouper’s Levigation}}
+1,{{link|[av]2014/01/09/new-spell-letterscatter/|Letterscatter}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Life Blossom}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Link Sigil}}
+1,{{link|[hw]a/2014/03/spell-literary-incandescence.html|Literary Incandescence}}
+1,{{link|[hh]2009/04/magic-item-denshas-talon-ring.html|Maahes’ Claw}}
+1,{{link|[rb]wb-new-spells#toc1|Maldoor’s Sundering of Deathly Obligation}}
+1,{{link|[hw]a/2011/08/spell-malign-thought-emanations.html|Malign Thought Emanations}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Melding}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Merklin’s Traveling Limbo Show}}
+1,{{link|http://www.enworld.org/forum/showthread.php?5652/page17&p=866432#post866432|Mostin’s Arhythmic Apoplexy}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Mozzarella Maniple}}
+1,{{link|[av]2009/10/06/new-spell-mutinous-limb/|Mutinous Limb}}
+1,{{link|[av]2011/09/20/new-spell-name-your-enemy/|Name Your Enemy}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Nepheliginous Narghile}}
+1,{{link|[rb]wb-new-spells#toc1|Nystul’s Blazing Beam}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Oil King}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Onymous Ocypodian}}
+1,{{link|[hw]a/2012/02/spell-opening-way.html|Opening the Way}}
+1,{{link|[wc]2012/07/this-earth-this-excavator.html|Ore Dowsing}}
+1,{{link|[av]2012/02/18/new-spell-out-go-the-lights/|Out go the Lights}}
+1,{{link|[hh]2010/03/book-of-white-cat.html|Pale Winds Gifting}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Peterson’s Piranha Jaws}}
+1,{{link|[av]2012/06/27/new-spell-priorities-askew/|Priorities Askew}}
+1,{{link|[av]2012/11/24/new-spell-provoker/|Provoker}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Quickening}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Quinn’s Bookbinding}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Rattus Rafale}}
+1,{{link|[hw]a/2011/09/reaffirm-fixed-laws-level-2-duration.html|Reaffirm Fixed Laws}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Red Ren’s Rowdy Rickshaw}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Reinforce}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Renidify Rampasture}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Riven Stare}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Scholar’s Restoration}}
+1,{{link|[hh]2009/04/second-level-spell-searing-argent-frost.html|Searing Argent Frost}}
+1,{{link|[av]2012/01/11/new-spell-seeing-through-it-all/|Seeing Through it All}}
+1,{{link|[av]2011/09/22/new-spell-seeing-through-your-eyes/|Seeing Through Your Eyes}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Selfish Light}}
+1,{{link|[hw]a/2011/12/spell-shadow-theft.html|Shadow Theft}}
+1,{{link|[hw]a/2011/09/sheeted-form-level-2-duration-1d8-turns.html|Sheeted Form}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Silver Touch}}
+1,{{link|http://dungeonofsigns.blogspot.ca/2012/09/hms-apollyon-grimore.html|Skeletal Coryphees}}
+1,{{link|[av]2014/01/07/new-spell-snapping-maw/|Snapping Maw}}
+1,{{link|[ta]2011/02/snowdens-icy-sphere-of-frozen-death.html|Snowden’s Icy Sphere of Frozen Death}}
+1,{{link|[hh]2009/10/two-spells-of-scribing.html|Soulbrand}}
+1,{{link|[ci]om/2010/12/spells-of-thread-and-rope.html|Spider Skein}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Spore Blast}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Squamosity}}
+1,{{link|http://carterscartopia.blogspot.ca/2009/11/four-horrid-spells.html|Stickyfoot}}
+1,{{link|[hh]2010/03/book-of-white-cat.html|Storm of Doves}}
+1,{{link|[rb]wb-new-spells#toc1|Strangulations}}
+1,{{link|[av]2009/06/29/new-spell-summon-peasant/|Summon Peasant}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Tangled Tongue}}
+1,{{link|[rb]wb-new-spells#toc1|Tarnu’s Collaring Coiffure}}
+1,{{link|[hh]2009/03/two-second-level-spells-bleeding-edge.html|Tears of Crimson}}
+1,{{link|[hh]2010/09/spells-for-lonely-letters.html|Ten Thousand Masks}}
+1,{{link|[wc]2012/12/grimoire-of-grinch.html|Termites in Your Smile}}
+1,{{link|http://rolesrules.blogspot.ca/2012/10/the-appeal-to-seven-worthy-elders_11.html|The appeal to Seven Worthy Elders}}
+1,{{link|[av]2013/03/26/new-spell-the-light-which-only-i-can-see/|The Light Which Only I Can See}}
+1,{{link|[hh]2009/04/bladespells.html|The Phoenix Tail}}
+1,{{link|[wc]2012/07/this-earth-this-excavator.html|This Ain’t Gold}}
+1,{{link|[hh]2009/03/spells-book-of-black-rose.html|Thorned Retribution}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Timmynoggy Toggy}}
+1,{{link|[rb]forum/t-356178/grey-company-spellbook-on-lulu|Tinaharn’s Blind Spot}}
+1,{{link|[av]2011/09/23/new-spell-tornado-of-coins/|Tornado of Coins}}
+1,{{link|[av]2012/06/25/new-spell-trading-places/|Trading Places}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Tranquil Soldier}}
+1,{{link|[hw]a/2014/04/spell-transfer-vitality.html|Transfer Vitality}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Tropophilous Triphibian}}
+1,{{link|[av]2013/01/09/new-spell-under-six-feet/|Under Six Feet}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Undigenous Utlesse}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Unhinged Mind}}
+1,{{link|[av]2013/02/20/new-spell-unshine/|Unshine}}
+1,{{link|[fm]2014/03/speleo-spells.html|Unsuspectable Servant}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Urticaceous Unguiculation}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Usquebaugh Ukase}}
+1,{{link|[hh]2009/09/spellbooks-of-nathan-serpentarius-least.html|Vox Astra}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Wall of Silence}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Wanigan Whiskers}}
+1,{{link|http://dungeonofsigns.blogspot.ca/2012/09/hms-apollyon-grimore.html|Ward of Undeath}}
+1,{{link|[av]2011/06/21/new-spell-weaponshield/|Weaponshield}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Weather Cloak}}
+1,{{link|[ci]om/2010/12/more-spells-of-thread-rope.html|Web Walk}}
+1,{{link|[ta]2011/03/wheatons-vicious-cockpunch-of-furious.html|Wheaton’s Vicious Cockpunch of Furious Anger}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Whispered Answer}}
+1,{{link|[av]2012/01/15/new-spell-why-do-they-run/|Why do they run?}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Wild Empathy}}
+1,{{link|[hh]2009/06/genrehs-text.html|Will of the Scarlet Moon}}
+1,{{link|[hh]2010/09/spells-for-lonely-letters.html|Xenourge}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Xoloitzcuintli’s Xenolure}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Yellow Yare Yataghan}}
+1,{{link|[hw]a/2011/09/zaftigery-level-2-duration-permanent.html|Zaftigery}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Zealous Zigzagging}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Zibelline Zoolith}}
+1,{{link|[rb]forum/t-216786/the-grimoire-of-zolobachai-of-the-nine-visions#post-949133|Zolobachai’s In­con­se­quen­tial Sen­tinel}}
+1,{{link|[rb]forum/t-216786/the-grimoire-of-zolobachai-of-the-nine-visions|Zolobachai’s Lin­gual Blood}}
+1,{{link|[rb]forum/t-216786/the-grimoire-of-zolobachai-of-the-nine-visions#post-707714|Zolobachai’s Om­nipo­tent Laxative}}
+1,{{link|[hh]2010/09/spells-for-lonely-letters.html|Zone of Docility}}
+
+
+;LevelThree
+1,{{link|[hw]a/2012/01/spell-aethyric-agitation.html|Aethyric Agitation}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Angstromy}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Animate Familiar}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Animate Machinery}}
+1,{{link|[hw]a/2014/03/spell-animate-unliving-servitor.html|Animate Unliving Servitor}}
+1,{{link|[av]2011/07/30/new-spell-arcane-attractor/|Arcane Attractor}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Archer’s Wind}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Arrow-Trap}}
+1,{{link|[av]2012/02/10/new-spell-away-from-the-crowd/|Away from the Crowd}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Azetbur’s Absolutely Useful Stasis}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Barker’s Sensory Overload}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Bedlam Baize}}
+1,{{link|[hw]a/2011/12/spell-black-touch.html|Black Touch}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Bombastic Buboes}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Boom}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Brainfire}}
+1,{{link|http://jrients.blogspot.ca/2011/03/new-spells-for-your-considerationconste.html|Brood of Sin}}
+1,{{link|[av]2012/10/25/new-spell-burden-curse/|Burden Curse}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Burning Words}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Cat Nap}}
+1,{{link|[wc]2012/07/this-earth-this-excavator.html|Cave In}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Chain Lighting}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Chaos Inspiration}}
+1,{{link|[av]2012/10/29/new-spell-cipher-sight/|Cipher Sight}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Cloud Magnet}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Coagulation}}
+1,{{link|[av]2011/06/22/new-spell-conjure-herald/|Conjure Herald}}
+1,{{link|[av]2012/08/20/new-spell-conjuring-of-imps/|Conjuring of Imps}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Control Fungi}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Control Robot}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Coruscatory Conduit}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Cranial Detonation}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Crawling Coach}}
+1,{{link|[hw]a/2014/03/spell-curdle-blood.html|Curdle Blood}}
+1,{{link|[av]2011/10/30/new-spell-curse-of-the-adversary/|Curse of the Adversary}}
+1,{{link|[av]2012/05/06/new-spell-curse-of-the-sharp-tongue/|Curse of the Sharp Tongue}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Daedalian Deoppilation}}
+1,{{link|[av]2011/06/15/new-spell-dance-of-the-macabre/|Dance of the Macabre}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Dancing Flame}}
+1,{{link|http://planetalgol.blogspot.ca/2011/06/spell-dead-men-tell-no-tales.html|Dead Men Tell No Tales}}
+1,{{link|[rb]wb-new-spells#toc2|Deadly Magma Beams}}
+1,{{link|http://jrients.blogspot.ca/2008/10/three-spells.html|Descendinator of Zdaun the Mighty}}
+1,{{link|[hw]a/2011/12/spell-dirt-to-meat.html|Dirt to Meat}}
+1,{{link|[hw]a/2012/02/spell-dissolve-internal.html|Dissolve}}
+1,{{link|[av]2011/12/23/new-spell-dream-recall/|Dream Recall}}
+1,{{link|[fm]2014/03/speleo-spells.html|Dream Venom}}
+1,{{link|[hw]a/2011/09/duplicate-weapon-level-3-duration-8.html|Duplicate Weapon}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Durasken’s Ephemeral Bubble}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Energetic Bleed}}
+1,{{link|[ta]2014/03/new-spell-ennui.html|Ennui}}
+1,{{link|[av]2012/12/28/new-spell-ephemeral-conveyance/|Ephemeral Conveyance}}
+1,{{link|[av]2011/11/06/new-spell-feralality/|Feralality}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Fire Bottle}}
+1,{{link|[hh]2009/09/spellbooks-of-nathan-serpentarius-least.html|Fires from Heaven}}
+1,{{link|[av]2012/07/19/new-spell-fish-out-of-water/|Fish Out of Water}}
+1,{{link|[av]2011/08/03/new-spell-flavor-of-the-weak/|Flavour of the Weak}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Fulgerous Flames of Fallajorre}}
+1,{{link|[wc]2012/12/grimoire-of-grinch.html|Garlic in your Soul}}
+1,{{link|[hh]2010/09/spells-for-lonely-letters.html|Gate of the Moon}}
+1,{{link|[av]2012/02/11/new-spell-giants-footprint/|Giant’s Footprint}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Globe of Silence}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Glutinous Globs}}
+1,{{link|[rb]wb-new-spells#toc2|Golden Revelation}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Gore Feat}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Greater Gallop}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Green Light}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Gruesomry}}
+1,{{link|[av]2011/10/01/new-spell-hands-of-death/|Hands of Death}}
+1,{{link|[wc]2012/07/this-earth-this-excavator.html|Handy Lil’ Fellers}}
+1,{{link|[av]2011/12/26/new-spell-harassing-challenge/|Harassing Challenge}}
+1,{{link|[wc]2012/12/grimoire-of-grinch.html|Heart’s an Empty Hole}}
+1,{{link|http://rolesrules.blogspot.ca/2012/10/hesters-exacting-accountancy.html|Hester’s Exacting Accountancy}}
+1,{{link|[fm]2014/03/speleo-spells.html|Hollow Head}}
+1,{{link|[ta]2014/02/fairy-tale-spell-names-i-know-what-i.html|I Know What I Have Learned}}
+1,{{link|[hw]a/2014/03/spell-idravons-fumigatory-vengance.html|Idravon’s Fumigatory Vengance}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Immeable Impasto}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Implant}}
+1,{{link|[av]2011/10/19/new-spell-in-your-veins/|In Your Veins}}
+1,{{link|http://jovialpriest.blogspot.ca/2011/06/cursed-scrolls-retrospective-and-more.html|Inscribe Curse}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Insidious Vigilance}}
+1,{{link|[hw]a/2011/08/interrogate-bones-level-3-duration-6.html|Interrogate the Bones}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Intone}}
+1,{{link|[rb]wb-new-spells#toc2|Invisible Stalker (lesser)}}
+1,{{link|[hh]2009/03/spells-book-of-black-rose.html|Iron Briar Embrace}}
+1,{{link|[fm]2014/03/speleo-spells.html|Iron Eye}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Jade Mask}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Lab Rats}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Laughing Gnome}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Leaf Dance}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Lithophagous Lorgnette}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Macabre Mackinaw}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Mage Blade}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Magic Missile Barrage}}
+1,{{link|[rb]wb-new-spells#toc2|Maldoor’s Ritual of Rejuvination}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Massive Step}}
+1,{{link|http://dungeonofsigns.blogspot.ca/2013/03/magic-items-recovered-form-haldicar.html|Miasma of Decay}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Microski’s Micro-Missiles}}
+1,{{link|[av]2012/03/20/new-spell-mindflood/|Mindflood}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Minimifidian Martext}}
+1,{{link|[av]2012/02/19/new-spell-minion-meld/|Minion Meld}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Mistcloak}}
+1,{{link|[av]2012/01/13/new-spell-mixed-parts/|Mixed Parts}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Molt}}
+1,{{link|[fm]2014/03/speleo-spells.html|Monkey Guts}}
+1,{{link|http://www.enworld.org/forum/showthread.php?5652/page17&p=866432#post866432|Mostin’s Aura of Inscrutability}}
+1,{{link|http://rolesrules.blogspot.ca/2012/10/folio-spells-multifarious-mandaglore.html|Multifarious Mandaglore}}
+1,{{link|[av]2012/12/02/new-spell-multitudinous-light/|Multitudinous Light}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Nelipot Napification}}
+1,{{link|[av]2013/10/01/new-spell-night-of-creeping-coins/|Night of Creeping Coins}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|No Signal}}
+1,{{link|[av]2011/09/19/new-spell-noks-silent-shadowy-thieves/|Nok’s Silent Shadowy Thieves}}
+1,{{link|[rb]wb-new-spells#toc2|Nystul’s Crystal Dirk}}
+1,{{link|http://secretsoftheshadowend.blogspot.ca/2014/03/spells-dream-sight-oath-and-omen.html|Oath}}
+1,{{link|[rb]wb-new-spells#toc2|Omar’s Mistake}}
+1,{{link|http://dndwithpornstars.blogspot.ca/2012/06/one-thousand-hogs-etc.html|One Thousand Hogs}}
+1,{{link|[av]2012/01/08/new-spell-one-thousand-wrong-faces/|One Thousand Wrong Faces}}
+1,{{link|[fm]2014/03/speleo-spells.html|Optic Beast}}
+1,{{link|[av]2011/12/16/new-spell-pack-mentality/|Pack Mentality}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Parvipotent Pallimation}}
+1,{{link|[av]2011/08/11/new-spell-peering-through-the-portrait/|Peering Through the Portrait}}
+1,{{link|[rd]product/116452/Better-Than-Any-Man|Perfect Dark Vision}}
+1,{{link|[fm]2014/03/speleo-spells.html|Piercer Cloak}}
+1,{{link|[av]2013/05/01/new-spell-promise-of-the-witch/|Promise of the Witch}}
+1,{{link|[hw]a/2011/08/protection-from-aethyrial-intrusion.html|Protection for Aethyrial Intrusion}}
+1,{{link|[av]2012/01/04/new-spell-pursuing-sounds/|Pursuing Sounds}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Quadrival Quirt}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Reflecting Punishment}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Reinforce Magic}}
+1,{{link|[ci]om/2011/01/spells-of-thread-rope-part-3.html|Relentless Binding}}
+1,{{link|[hw]a/2012/02/spell-removal.html|Removal}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Sagittal Saltation}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Saponaceous Solivigance}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Saw Bones}}
+1,{{link|[hh]2009/06/genrehs-text.html|Scarlet Moon’s Fury}}
+1,{{link|[av]2013/03/02/new-spell-scattered-order/|Scattered Order}}
+1,{{link|[av]2013/02/06/new-spell-see-concealed/|See Concealed}}
+1,{{link|[av]2012/03/18/new-spell-see-through-you/|See Through You}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Sensory Scramble}}
+1,{{link|[hw]a/2011/08/serious-portentiousness-level-3.html|Serious Portentiousness}}
+1,{{link|[hh]2011/03/unrelated-twins-spells.html|Shining Tear in Time}}
+1,{{link|http://lunchingonlamias.blogspot.ca/2011/01/new-spell-silver-negation.html|Silver Negation}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Simioid Sciamachy}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Skin of Steel}}
+1,{{link|[hh]2011/03/unrelated-twins-spells.html|Snapping Clockwork Teeth}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Snowfall}}
+1,{{link|[av]2011/12/27/new-spell-magical-songs-song-of-good-fortune/|Song of Good Fortune}}
+1,{{link|[av]2013/09/07/new-spell-spellcaller/|Spellcaller}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Spine Sword}}
+1,{{link|[av]2011/07/25/new-spell-sticking-together/|Sticking Together}}
+1,{{link|[av]2011/11/14/new-spell-suddenly-musical/|Suddenly Musical}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Summon Ancient Dead Astronauts}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Summon Space Phantom}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Talionic Telestich}}
+1,{{link|[hw]a/2011/12/spell-tap-ley-line.html|Tap Ley-Line}}
+1,{{link|[rb]wb-new-spells#toc2|The 1,000 Witcheries of Spectre Slaying}}
+1,{{link|http://planetalgol.blogspot.ca/2011/02/jewel-throne-update-black-lasher.html|The Black Lasher}}
+1,{{link|[av]2011/12/06/new-spell-curse-of-bloat/|The Curse of Bloat}}
+1,{{link|[av]2012/11/30/new-spell-curse-fresh-blood/|The Curse of Fresh Blood}}
+1,{{link|[av]2011/11/24/new-spell-curse-of-one-sound/|The Curse of One Sound}}
+1,{{link|[av]2012/12/06/new-spell-curse-of-opposite-environments/|The Curse of Opposite Environments}}
+1,{{link|[av]2013/07/07/new-spell-curse-hated-and-hunted/|The Curse of the Hated and Hunted}}
+1,{{link|[ta]2010/04/fairy-tale-spell-names-3-prince-of.html|The Prince of Leaves}}
+1,{{link|[rb]wb-new-spells#toc2|Tobias’s 10,000 Coin Porter of Extreme Usefulness}}
+1,{{link|[rb]wb-new-spells#toc2|Tonal Attack}}
+1,{{link|[hh]2009/09/spellbooks-of-nathan-serpentarius-least.html|Touch of the Heavens}}
+1,{{link|[av]2013/03/24/new-spell-transmutable-weapon/|Transmutable Weapon}}
+1,{{link|http://carterscartopia.blogspot.ca/2009/11/four-horrid-spells.html|Troglodyte Stench Burst}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Tsunara’s Nightmare Weave}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Tsunara’s Sadistic Bolt}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Twilight}}
+1,{{link|[hw]a/2011/12/spell-umbral-maiming.html|Umbral Maiming}}
+1,{{link|[hw]a/2014/04/spell-unnatural-acromegally.html|Unnatural Acromegally}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Vacuum}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Vauntie Viaticum}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Vespian’s Vexed Vehemence}}
+1,{{link|[ta]2012/04/violences-violet-veil.html|Violence’s Violet Veil}}
+1,{{link|http://dungeonofsigns.blogspot.ca/2012/10/hms-apollyon-grimore-hammer-of-damned.html|Wall of Light}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Waste Away the Years}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Water Spray}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|White Noise}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Wind Armor}}
+1,{{link|[av]2011/09/21/new-spell-woodrot/|Woodrot}}
+1,{{link|[rb]wb-new-spells#toc2|Word of IOUN}}
+1,{{link|[av]2013/09/15/new-spell-words-on-the-wind/|Words on the Wind}}
+1,{{link|[hw]a/2011/08/wrathful-facade-level-3-duration-2.html|Wrathful Facade}}
+1,{{link|[rb]forum/t-216786/the-grimoire-of-zolobachai-of-the-nine-visions#post-701658|Zolobachai’s Im­proved Co­ex­ten­sive Neck}}
+1,{{link|http://dungeonofsigns.blogspot.ca/2013/03/magic-items-recovered-form-haldicar.html|Zombie Ritual}}
+1,{{link|[hw]a/2011/09/zymurgic-disgestion-level-3-duration.html|Zymurgic Disgestion}}
+
+
+;LevelFour
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Abstersive Abliguration}}
+1,{{link|[av]2011/07/29/new-spell-alter-allegiance/|Alter Allegiance}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Alter Signal}}
+1,{{link|[hw]a/2011/09/appreciation-of-true-weirdness-level-4.html|Appriciation of True Weirdness}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Bastion’s Barb-Wire Blast}}
+1,{{link|[hw]a/2011/08/bloody-bones-level-4-duration-permanent.html|Bloody Bones}}
+1,{{link|[ci]om/2011/01/spells-of-thread-rope-part-3.html|Bond Bane}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Book Ward}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Brazen Mien}}
+1,{{link|[av]2011/07/26/new-spell-burstwall/|Burstwall}}
+1,{{link|[av]2012/01/25/new-spell-cadaver-travel/|Cadaver Travel}}
+1,{{link|http://carterscartopia.blogspot.ca/2009/11/four-horrid-spells.html|Cannibal Curse}}
+1,{{link|[hw]a/2011/09/cerebral-conception-level-4-duration.html|Cerebral Conception}}
+1,{{link|[av]2011/06/27/new-spell-child-of-long-forgotten-gods/|Child of Long Forgotten Gods}}
+1,{{link|[hw]a/2011/08/clanking-chains-level-4-duration-12.html|Clanking Chains}}
+1,{{link|[av]2012/06/05/new-spell-cloud-of-hornets/|Cloud of Hornets}}
+1,{{link|[ci]om/2010/12/more-spells-of-thread-rope.html|Conducting Skein}}
+1,{{link|[av]2012/01/16/new-spell-creeping-shadow-web/|Creeping Shadow Web}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Crushing Coils}}
+1,{{link|[av]2011/10/12/new-spell-curse-of-manes/|Curse of Manes}}
+1,{{link|[wc]2012/01/snollygoster-squeezins.html|Curse of the Thrice-damned Eyes}}
+1,{{link|[av]2012/12/30/new-spell-dangerous-intellect/|Dangerous Intellect}}
+1,{{link|[hw]a/2014/04/spell-dark-immersion.html|Dark Immersion}}
+1,{{link|[av]2013/11/18/new-spell-deadlike/|Deadlike}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Destroy Fungi}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Destroy Robot}}
+1,{{link|[av]2012/12/22/new-spell-disclosure-of-wealth/|Disclosure of Wealth}}
+1,{{link|[hw]a/2011/09/dispel-ectoplasm-level-4-duration-1.html|Dispel Ectoplasm}}
+1,{{link|[wc]2012/12/grimoire-of-grinch.html|Drive a Crooked Hoss}}
+1,{{link|[hw]a/2011/08/ectoplasmic-wall-level-4-duration-12.html|Ectoplasmic Wall}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Edelarri’s Egg}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Eerie Fog}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Egregious Wounding}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Eight-Spoked Spheres of Doom}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Ell’s Bitter Law}}
+1,{{link|[av]2013/02/08/new-spell-embottlement/|Embottlement}}
+1,{{link|[hw]a/2011/08/evocation-of-unknown-forces-level-4.html|Evocation of Unknown Forces}}
+1,{{link|[av]2012/11/28/new-spell-extra-limbs/|Extra Limbs}}
+1,{{link|[av]2011/07/13/new-spell-eye-of-the-storm/|Eye of the Storm}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Facinorous Faldstool}}
+1,{{link|[av]2012/04/14/new-spell-sporecery-floating-mushroom-caps/|Floating Mushroom Caps}}
+1,{{link|[fm]2014/03/speleo-spells.html|Ghoul Pipes}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Gil’Gaith’s Invulnerability}}
+1,{{link|[hw]a/2014/03/spell-graft-flesh.html|Graft Flesh}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Grey Globe}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Halo}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Hybridification}}
+1,{{link|[av]2011/08/04/new-spell-i-ooze/|I, Ooze}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Instantaneous Hyperspace Jump}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Invisible Bolt}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Invulnerable Illusion}}
+1,{{link|[av]2013/02/22/new-spell-last-stand/|Last Stand}}
+1,{{link|[hw]a/2014/03/spell-chartreuse-chasm.html|Lesser Chartreuse Chasm}}
+1,{{link|[rb]wb-new-spells#toc3|Magic Mirror}}
+1,{{link|[av]2011/10/31/new-spell-masks-of-the-soul/|Masks of the Soul}}
+1,{{link|http://planetalgol.blogspot.ca/2011/01/grammaree-jewel-throne-preview.html|Mass of Serpents}}
+1,{{link|http://www.enworld.org/forum/showthread.php?5652/page17&p=866432#post866432|Mostin’s Interminable Sermon}}
+1,{{link|http://www.enworld.org/forum/showthread.php?5652/page17&p=866432#post866432|Mostin’s Torque Tendril}}
+1,{{link|[av]2012/12/24/new-spell-moving-mists/|Moving Mists}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Narivus’ Murk-see}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Obscure Onomatopaeic Outbursts}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Ostentia’s Ninth Vault}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Pecuniarize}}
+1,{{link|[av]2011/10/17/new-spell-phantasmagoria-of-hopnir/|Phantasmagoria of Hopnir}}
+1,{{link|http://planetalgol.blogspot.ca/2011/01/grammaree-jewel-throne-preview.html|Psychic Reaping}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Pulicose Pyx}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Quarry}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Rat Bastard}}
+1,{{link|[hw]a/2011/09/safeguard-against-outermost-forces.html|Safeguard Against Outermost Forces}}
+1,{{link|[rb]forum/t-356178/grey-company-spellbook-on-lulu|Santander’s Wasp Spell}}
+1,{{link|[hw]a/2011/09/secret-murder-level-4-duration-1d8.html|Secret Murder}}
+1,{{link|[rb]forum/t-356178/grey-company-spellbook-on-lulu|Seven Gates}}
+1,{{link|[fm]2014/03/speleo-spells.html|Skellygrab}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Space/Time Rip}}
+1,{{link|[fm]2014/03/speleo-spells.html|Speak With Air}}
+1,{{link|[av]2011/10/14/new-spell-spectre-curse/|Spectre Curse}}
+1,{{link|[ta]2012/09/stage-escape-wizard-spell.html|Stage Escape}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Summon Lesser Krell Thought Monster}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Summon Mugwump}}
+1,{{link|http://dungeonofsigns.blogspot.ca/2012/10/hms-apollyon-grimore-hammer-of-damned.html|Summon Radiant Defenders}}
+1,{{link|[av]2013/10/02/new-spell-that-eerie-glow/|That Eerie Glow}}
+1,{{link|http://rolesrules.blogspot.ca/2012/10/folio-spells-caryatid-cordon-of-cerysse.html|The Caryatid Cordon of Cerysse}}
+1,{{link|[av]2011/10/15/new-spell-the-devil-that-knows-you/|The Devil that Knows You}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Transfer Brain}}
+1,{{link|[hw]a/2011/09/triple-shadow-level-4-duration-1d12.html|Triple Shadow}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Tsunara’s Ebon Flame}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Tsunara’s Infectious Silencer}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Undeniable Revolt}}
+1,{{link|[hw]a/2011/09/vistas-of-unplumbed-space-level-4.html|Vistas of Unplumbed Space}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Water Jet}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Wind Gusts}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Winged Hooves}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Wondrous Wassailing}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Yarrel’s Ward}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|You Dirty Rat}}
+1,{{link|http://jrients.blogspot.ca/2008/10/three-spells.html|Yupp’s Incantation of Insubstantial Elevation}}
+1,{{link|[rb]forum/t-216786/the-grimoire-of-zolobachai-of-the-nine-visions|Zolobachai’s In­ven­tive Hus­bandry}}
+
+
+;LevelFive
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Altered States}}
+1,{{link|[hw]a/2011/08/assault-of-chaos-level-5-duration-1.html|Assault of Chaos}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Autoparthenogenesis}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Basalt Barrier}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Biting Mount}}
+1,{{link|[hw]a/2011/08/breathless-and-unexplainable-dread.html|Breathless and Unexplainable Dread}}
+1,{{link|[ci]a/2011/04/to-z-chalice-of-asmodeus.html|Chalice of Asmodeus}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Corpse Explosion}}
+1,{{link|[hw]a/2011/09/daemonical-cyst-level-5-duration-1d8.html|Daemonical Cyst}}
+1,{{link|[hw]a/2011/09/descent-unto-hollow-world-level-5.html|Descent Unto the Hollo World}}
+1,{{link|[fm]2014/03/speleo-spells.html|Dribbleganger}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Ebeneous Edentate}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Ebythan’s Fiery Entourage}}
+1,{{link|[av]2013/02/26/new-spell-falling-apart/|Falling Apart}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Frost Storm}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|General Chang’s Clinging Cloak of Cloying Dark-}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Gut Worm}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Insidious Inflation}}
+1,{{link|[av]2012/01/03/new-spell-invoking-the-spirit-of-the-mountains/|Invoking the Spirit of the Mountains}}
+1,{{link|[av]2012/08/04/new-spell-magebreak/|Magebreak}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Malicon’s Waning Touch}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Misshapen Moth}}
+1,{{link|[hw]a/2012/01/spell-molten-iron-mass.html|Molten Iron Mass}}
+1,{{link|[rb]wb-new-spells#toc4|Most Horrible Absorption}}
+1,{{link|http://www.enworld.org/forum/showthread.php?5652/page17&p=866432#post866432|Mostin’s Metempsychotic Reversal}}
+1,{{link|http://www.enworld.org/forum/showthread.php?5652/page17&p=866432#post866432|Mostin’s Paroxysm of Fire}}
+1,{{link|[hw]a/2014/04/spell-muddle-path.html|Muddle Path}}
+1,{{link|[wc]2014/01/book-of-black-rat-spells-about-rats-and.html|Nemoral Nezumi}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Parasitizory Embrace}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Pernicious Pooka Petition}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Pre-emptive Strike}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Pretervolve}}
+1,{{link|http://planetalgol.blogspot.ca/2011/01/grammaree-jewel-throne-preview.html|Raise Drowned Vessel}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Repair Machine}}
+1,{{link|[av]2011/09/09/new-spell-reverse-curse/|Reverse Curse}}
+1,{{link|[ci]om/2011/01/spells-of-thread-rope-part-3.html|Rope Ward}}
+1,{{link|[av]2011/11/01/new-spell-sleeping-village/|Sleeping Village}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Slow Ship}}
+1,{{link|[hw]a/2013/11/spell-sottarixs-six-clouds.html|Sottarix’s Six Clouds}}
+1,{{link|[fm]2014/03/speleo-spells.html|Spelogrowth}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Stone Vigour}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Sub-Atomic Re-Embroidery}}
+1,{{link|[av]2012/07/29/new-spell-summon-astral-pest/|Summon Astral Pest}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Summon Beast of the Fire Maidens From Outer Space}}
+1,{{link|[fm]2014/03/speleo-spells.html|Terror Tubes}}
+1,{{link|http://planetalgol.blogspot.ca/2011/01/grammaree-jewel-throne-preview.html|The Eyes of Far Death}}
+1,{{link|[hw]a/2012/01/spell-uchronic-displacement.html|Uchronic Displacement}}
+1,{{link|[av]2011/08/19/new-spell-unknown-destination/|Unknown Destination}}
+1,{{link|http://gorgonmilk.blogspot.ca/2013/08/new-spell-bestow-mnemonic-contents.html|Urdustin’s Mnemonic Exchange}}
+1,{{link|[fm]2014/03/speleo-spells.html|Vampire counsel}}
+1,{{link|[hw]a/2012/02/spell-verminomorphosis.html|Verminomorphosis}}
+1,{{link|http://carterscartopia.blogspot.ca/2009/11/four-horrid-spells.html|Vomitus Deluge}}
+1,{{link|[av]2012/09/05/new-spell-want-of-secret-things/|Want of Secret Things}}
+1,{{link|[fm]2014/03/speleo-spells.html|Waterfall Caul}}
+1,{{link|http://jrients.blogspot.ca/2008/10/three-spells.html|Xitegressa’s Prudent Withdrawal}}
+1,{{link|[hw]a/2011/08/zone-of-normality-level-5-duration-12.html|Zone of Normality}}
+
+
+;LevelSix
+1,{{link|[dd]2011/09/autumn-grimoire.html|Abnormal Seal}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Abyssal Weapon}}
+1,{{link|[ci]a/2011/04/to-z-alabaster-homonculus.html|Alabaster Homonculus}}
+1,{{link|[ci]om/2011/01/spells-of-thread-rope-part-3.html|Ascend}}
+1,{{link|[hw]a/2013/10/secret-spells-of-wizard-frog.html|Bawd-Breath of Tsthathogguri-Malamala}}
+1,{{link|[hw]a/2011/09/become-subject-level-6-duration-1d4.html|Become Subject}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Black Aperture of Doom}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Black Horizon}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Catabolic Exgestion}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Catch Globe}}
+1,{{link|[hw]a/2011/09/crystallize-skull-level-6-duration-1d8.html|Crystallize Skull}}
+1,{{link|[av]2012/03/29/new-spell-elevate-rabble/|Elevate Rabble}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Flame Law}}
+1,{{link|[ta]2012/04/galvonis-glazing.html|Galvoni’s Glazing}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Gelatinous Transformation}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Gil’Gaith’s Greater Invulnerability}}
+1,{{link|[hw]a/2014/03/spell-chartreuse-chasm.html|Greater Chartreuse Chasm}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Greater Ice Storm}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Magic Feast}}
+1,{{link|[ta]2012/04/mental-manor.html|Mental Manor}}
+1,{{link|http://www.enworld.org/forum/showthread.php?5652/page17&p=866432#post866432|Mostin’s Id Eruption}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Niptopsical Nychthemeron}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Omnimosis}}
+1,{{link|[hw]a/2011/05/aggregate-appearance-is-of-dignity-and.html|Processions of The Damned}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Quantum Quagmire}}
+1,{{link|[av]2012/01/02/new-spell-relentless-charge/|Relentless Charge}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Rotational Acceleration}}
+1,{{link|[av]2011/10/27/new-spell-shroud-of-shadows/|Shroud of Shadows}}
+1,{{link|[hw]a/2014/04/spell-strange-big-stone.html|Strange Big Stone}}
+1,{{link|[fm]2014/03/speleo-spells.html|Summon Mirth Elemental}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Summon Supplicants of the Event Horizon Con- figuration}}
+1,{{link|[hw]om/2013/04/spell-summon-weird-machine.html|Summon Weird Machine}}
+1,{{link|[av]2011/10/20/new-spell-summoning-of-seducers/|Summoning of Seducers}}
+1,{{link|[hw]a/2011/08/terrible-conception-level-6-duration.html|Terrible Conception}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Thousandth Tongue}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Transvective Dismemberment}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Tsunara’s Dark Apathy}}
+1,{{link|[hw]a/2011/09/unfix-boundaries-level-6-duration.html|Unfix Boundaries}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Uttermost Ruin}}
+1,{{link|[av]2011/09/04/new-spell-wall-of-regression/|Wall of Regression}}
+1,{{link|[av]2011/10/16/new-spell-zombification/|Zombification}}
+
+
+;LevelSeven
+1,{{link|[dd]2011/09/autumn-grimoire.html|Cheating Crown}}
+1,{{link|[ci]om/2010/12/more-spells-of-thread-rope.html|Conducting Web}}
+1,{{link|[fm]2014/03/speleo-spells.html|Cone of Mould}}
+1,{{link|[wc]2012/04/arcane-abecediary-preview-edition.html|Decorticating Defilade}}
+1,{{link|[ci]a/2011/04/to-z-dreadcube.html|Dreadcube}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Egg of Life}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Faithlessness}}
+1,{{link|[hw]a/2014/04/spell-heart-clutch.html|Heart Clutch}}
+1,{{link|[ta]2012/04/istas-illumination.html|Ista’s Illumination}}
+1,{{link|[hw]a/2011/08/malign-and-particular-suspension-of.html|Malign and Particular Suspension of Natural Law}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Prismatic Blade}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Quadrangle}}
+1,{{link|[ci]om/2011/01/spells-of-thread-rope-part-3.html|Rope Like Steel}}
+1,{{link|[rb]wb-new-spells#toc6|Salamander}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Sinful Blessing}}
+
+;LevelEight
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Bypass Barrier}}
+1,{{link|http://dndwithpornstars.blogspot.ca/2012/06/one-thousand-hogs-etc.html|Inverted Hour}}
+1,{{link|[rb]forum/t-356178/grey-company-spellbook-on-lulu|Lunar Attraction}}
+1,{{link|http://www.enworld.org/forum/showthread.php?5652/page17&p=866432#post866432|Mostin’s Metagnostic Inquiry}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|No Way}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Seeing Legion}}
+1,{{link|[ci]om/2011/01/spells-of-thread-rope-part-3.html|Sever}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Stolen Years}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Tsurana’s Rival Strength}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Xenogamy}}
+
+
+;LevelNine
+1,{{link|[ci]a/2011/04/to-z-brimstone-monolith.html|Brimstone Monolith}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|C’Theran’s Rampaging Star}}
+1,{{link|[ci]a/2010/12/elementalist-spells-1.html|Demand}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Jade Dragon}}
+1,{{link|http://www.enworld.org/forum/showthread.php?5652/page17&p=866432#post866432|Mostin’s Invulnerability to Perception}}
+1,{{link|[ci]a/2010/12/elementalist-spells-1.html|Pact of Brass}}
+1,{{link|[av]2012/02/26/new-spell-summon-dragon/|Summon Dragon}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Supreme Dismissal}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Three-Fold Haste}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Upper Hand}}
+1,{{link|[ci]om/2010/12/more-spells-of-thread-rope.html|Web of Arachne}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Woon’s Void Devourer}}
+1,{{link|[ci]a/2011/04/arcane-alphabet.html|Zoetrope}}
+
+
+;clericOne
+1,{{link|[av]2012/09/27/new-spell-by-nest-and-hive/|By Nest and Hive}}
+1,{{link|[wc]2013/12/ancient-yuletide-carols.html|Children, Go Where I send Thee or Scattering the Beardless}}
+1,{{link|[av]2012/09/11/new-spell-deified-cloak/|Deified Cloak}}
+1,{{link|http://www.infinitedragons.com/cleric-spells-for-a-dying-earth/|Elshazzar’s Obliterative Visage}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Eyes of the Unclaimed}}
+1,{{link|[av]2011/12/05/new-spell-flurry-of-leaves/|Flurry of Leaves}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Fungal Armor}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Gibber-Jabber}}
+1,{{link|[av]2012/01/18/new-spell-godspeak/|Godspeak}}
+1,{{link|[av]2011/08/16/new-spell-harvesting-the-land/|Harvesting the Land}}
+1,{{link|[av]2011/12/09/new-spell-imitate-animal/|Imitate Animal}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Implant}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Infect}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Insidious Vigilance}}
+1,{{link|[av]2012/11/04/new-spell-keeping-an-eye-on-you/|Keeping an Eye on You}}
+1,{{link|[av]2011/11/23/new-spell-leaf-message/|Leaf Message}}
+1,{{link|[hh]2009/06/genrehs-text.html|Reading Life’s Threads}}
+1,{{link|[av]2012/02/29/new-spell-awaken-from-slumber/|Recall from Slumber}}
+1,{{link|[av]2012/04/30/new-spell-secrets-of-the-earth/|Secrets of the Earth}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Spasm of Horror}}
+1,{{link|http://www.infinitedragons.com/cleric-spells-for-a-dying-earth/|The Adjuration of the Murderous Queen of Heaven}}
+1,{{link|http://www.infinitedragons.com/cleric-spells-for-a-dying-earth/|The Birthword of the Loyal Servitor}}
+1,{{link|http://www.infinitedragons.com/cleric-spells-for-a-dying-earth/|The Cross of the Forgotten Savior}}
+1,{{link|http://www.infinitedragons.com/cleric-spells-for-a-dying-earth/|The Mantra of Marvelous Fecundity}}
+1,{{link|http://www.infinitedragons.com/cleric-spells-for-a-dying-earth/|The Paean to Earth’s Lost Moon}}
+1,{{link|http://www.infinitedragons.com/cleric-spells-for-a-dying-earth/|The Prayer to the Bloodied Heart}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Thresh}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Tranquil Soldier}}
+1,{{link|[hh]2010/09/spells-for-lonely-letters.html|Unblinking Eyes of the Lynx}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Wakefulness}}
+1,{{link|[wc]2013/12/ancient-yuletide-carols.html|What Child is This? Most Infallible Determination of Paternity}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Wild Empathy}}
+1,{{link|[hh]2010/09/spells-for-lonely-letters.html|Yesterday’s Grace}}
+1,{{link|http://www.infinitedragons.com/cleric-spells-for-a-dying-earth/|Zanathiel’s Blessed Wineskin}}
+1,{{link|[rb]forum/t-216786/the-grimoire-of-zolobachai-of-the-nine-visions#post-691810|Zolobachai’s Irrepressible Turpitude}}
+
+
+;clericTwo
+1,{{link|[wc]2013/12/ancient-yuletide-carols.html|Angels We Have Heard on High or Listen to the Heavens}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Anthropophagy}}
+1,{{link|[av]2012/02/09/new-spell-astral-woodpecker/|Astral Woodpecker}}
+1,{{link|[av]2012/12/08/new-spell-awake-and-alert/|Awake and Alert}}
+1,{{link|[av]2012/09/25/new-spell-betrayers-blood/|Betrayer’s Blood}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Blasphemous Rumors}}
+1,{{link|[av]2012/11/02/new-spell-blessing-of-aid/|Blessing of Aid}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Brainfire}}
+1,{{link|[av]2011/11/20/new-spell-bring-back-the-lost/|Bring Back the Lost}}
+1,{{link|[av]2012/01/31/new-spell-burning-inside/|Burning Inside}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Call of the Mutant}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Cancer of the Soul}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Commune With AI}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Corpse Fire}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Distractive Dispersal}}
+1,{{link|[av]2012/02/16/new-spell-divine-illumination/|Divine Illumination}}
+1,{{link|[wc]2013/12/ancient-yuletide-carols.html|Do You Hear What I Hear? or Sharing the Ears}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Dream Trade}}
+1,{{link|[av]2012/11/26/new-spell-elemental-bug/|Elemental Bug}}
+1,{{link|[av]2013/01/29/new-spell-encrypt-script/|Encrypt Script}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Fatten The Calf}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Fearsome Fecundity}}
+1,{{link|[av]2012/06/01/new-spell-find-sneak/|Find Sneak}}
+1,{{link|[av]2011/07/01/new-spell-frail-before-the-elements/|Frail Before the Elements}}
+1,{{link|[av]2013/01/31/new-spell-godprint/|Godprint}}
+1,{{link|[av]2011/11/09/new-spell-hedge-of-protection/|Hedge of Protection}}
+1,{{link|[av]2013/02/02/new-spell-hounded-by-sound/|Hounded by Sound}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Insanity of Gizz}}
+1,{{link|[av]2012/12/04/new-spell-least-animal-servant/|Least Animal Servant}}
+1,{{link|[hh]2009/06/genrehs-text.html|Lifeseed}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Locate The Horror}}
+1,{{link|[av]2013/03/22/new-spell-magnified-pain/|Magnified Pain}}
+1,{{link|[av]2013/02/10/new-spell-mark-of-the-clover/|Mark of the Clover}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Mighty Blow}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Molt}}
+1,{{link|[av]2013/09/09/new-spell-multi-animalization/|Multi-animalization}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Pecuniarize}}
+1,{{link|[hh]2010/09/spells-for-lonely-letters.html|Quelling Touch}}
+1,{{link|[av]2011/08/06/new-spell-radiate-alignment/|Radiate Alignment}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Reflecting Punishment}}
+1,{{link|[av]2012/08/24/new-spell-resist-rest/|Resist Rest}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Ripen The Tissue}}
+1,{{link|[wc]2013/12/ancient-yuletide-carols.html|Rudolph the Red-Nosed Reindeer or Shaming of the Deviant}}
+1,{{link|[av]2011/12/04/new-spell-sheltering-forest/|Sheltering Forest}}
+1,{{link|[wc]2013/12/ancient-yuletide-carols.html|Silver Bells or Alarum of the Skinchanger}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Slow Disease}}
+1,{{link|[av]2011/10/29/new-spell-song-of-wolves/|Song of Wolves}}
+1,{{link|[av]2014/01/03/new-spell-stone-eye/|Stone Eye}}
+1,{{link|[av]2012/09/09/new-spell-taking-the-hit-for-you/|Taking the Hit for You}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Tenebrous Tentacle of the Outermost Darkness}}
+1,{{link|[ta]2010/04/fairy-tale-spell-names-2.html|The Storm Shakes the Shield}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Unhinged Mind}}
+1,{{link|[av]2009/05/31/swords-wizardry-new-spell-vexation-of-food-and-drink/|Vexation of Food and Drink}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Weather Cloak}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Whispered Answer}}
+
+
+;clericThree
+1,{{link|[hw]h/2013/10/1970-and-counting.html|(A) Momentary Lapse of Reason}}
+1,{{link|[av]2012/02/10/new-spell-away-from-the-crowd/|Away from the Crowd}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Black Vistas Beyond Life}}
+1,{{link|[av]2011/07/22/new-spell-blood-of-crows/|Blood of Crows}}
+1,{{link|[av]2012/01/12/new-spell-boneless-creeping/|Boneless Creeping}}
+1,{{link|[av]2012/10/25/new-spell-burden-curse/|Burden Curse}}
+1,{{link|[av]2011/08/15/new-spell-calling-the-hero/|Calling the Hero}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Carry Illness}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Chill of the Outer Void}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Coruscatory Conduit}}
+1,{{link|[av]2011/10/30/new-spell-curse-of-the-adversary/|Curse of the Adversary}}
+1,{{link|[av]2012/08/16/new-spell-curse-of-three-giants/|Curse of Three Giants}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Degeneration}}
+1,{{link|http://secretsoftheshadowend.blogspot.ca/2014/03/spells-dream-sight-oath-and-omen.html|Dream Sight}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Elemental Mouth}}
+1,{{link|[ta]2014/03/new-spell-ennui.html|Ennui}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Externalization}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Extract Brain}}
+1,{{link|[av]2012/11/06/new-spell-exultation-of-aggression/|Exultation of Aggression}}
+1,{{link|[av]2011/11/11/new-spell-hunters-oath/|Hunter’s Oath}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Instill Ennui}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Know The Flesh}}
+1,{{link|[av]2012/08/22/new-spell-mishatched-egg/|Mishatched Egg}}
+1,{{link|http://dndwithpornstars.blogspot.ca/2012/06/one-thousand-hogs-etc.html|Mockery of Faith}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Moment’s Rest}}
+1,{{link|[av]2012/12/02/new-spell-multitudinous-light/|Multitudinous Light}}
+1,{{link|http://secretsoftheshadowend.blogspot.ca/2014/03/spells-dream-sight-oath-and-omen.html|Oath}}
+1,{{link|http://secretsoftheshadowend.blogspot.ca/2014/03/spells-dream-sight-oath-and-omen.html|Omen}}
+1,{{link|[av]2012/05/10/new-spell-one-step-beyond/|One Step Beyond}}
+1,{{link|[av]2013/05/01/new-spell-promise-of-the-witch/|Promise of the Witch}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Quiet Dead}}
+1,{{link|[av]2011/11/22/new-spell-relimb/|Relimb}}
+1,{{link|[av]2012/06/09/new-spell-rolling-rocks/|Rolling Rocks}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Searing Aspect}}
+1,{{link|[av]2011/08/05/new-spell-signature-of-my-god/|Signature of the God}}
+1,{{link|[av]2013/09/05/new-spell-stonebite/|Stonebite}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Summon Lesser Krell Thought Monster}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Take Me to the Other Side of Terror}}
+1,{{link|[av]2014/01/01/new-spell-temple-leap/|Temple Leap}}
+1,{{link|http://​towerofthearchmage.​blogspot.​com/​2010/​04/​fairy-tale-spell-names.​html|The Bright Sun Brings It to Light}}
+1,{{link|[rb]forum/t-216786/the-grimoire-of-zolobachai-of-the-nine-visions#post-691797|The Call to Inflexible Salvation}}
+1,{{link|[av]2011/12/06/new-spell-curse-of-bloat/|The Curse of Bloat}}
+1,{{link|[av]2012/11/30/new-spell-curse-fresh-blood/|The Curse of Fresh Blood}}
+1,{{link|[av]2011/11/24/new-spell-curse-of-one-sound/|The Curse of One Sound}}
+1,{{link|[av]2012/12/06/new-spell-curse-of-opposite-environments/|The Curse of Opposite Environments}}
+1,{{link|[av]2013/07/07/new-spell-curse-hated-and-hunted/|The Curse of the Hated and Hunted}}
+1,{{link|[ta]2010/04/fairy-tale-spell-names-3-prince-of.html|The Prince of Leaves}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Thunder Hooves}}
+1,{{link|[av]2011/07/28/new-spell-tied-to-the-grave/|Tied to the Grave}}
+1,{{link|[av]2011/09/27/new-spell-touch-of-winter/|Touch of Winter}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Unlucky 13th Space Curse}}
+1,{{link|[av]2012/02/01/new-spell-face-of-my-god/|Visage of my God}}
+1,{{link|[av]2011/09/24/new-spell-what-the-dead-dont-see/|What the Dead Don’t See}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Word of the Law}}
+1,{{link|[hw]a/2011/08/wrathful-facade-level-3-duration-2.html|Wrathful Facade}}
+1,{{link|[ta]2012/04/zareba-ring-of-thorns.html|Zareba}}
+1,{{link|[rb]forum/t-216786/the-grimoire-of-zolobachai-of-the-nine-visions#post-691797|Zolobachai’s Inventive Husbandry}}
+
+
+;clericFour
+1,{{link|[av]2011/06/16/new-magic-spell-armor-falls-like-leaves/|Armor Falls like Leaves}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Azetbur’s Absolutely Useful Stasis}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Bar Entry}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Barker’s Sensory Overload}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Bloody Rip}}
+1,{{link|[av]2012/02/13/new-spell-ceaseless-tracking/|Ceaseless Tracking}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Chaos Inspiration}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Cloak of Light}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Coagulation}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Corporeality}}
+1,{{link|[av]2013/11/18/new-spell-deadlike/|Deadlike}}
+1,{{link|[av]2013/09/11/new-spell-domain-of-my-deity/|Domain of my deity}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Effluvium of K’Thun}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Ego-Print}}
+1,{{link|[av]2013/02/28/new-spell-fiery-righteousness/|Fiery Righteousness}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Foe Hammer}}
+1,{{link|[av]2012/07/17/new-spell-gates-that-take/|Gates that Take}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|General Chang’s Clinging Cloak of Cloying Darkness}}
+1,{{link|http://secretsoftheshadowend.blogspot.ca/search/label/spells|Heroism}}
+1,{{link|http://jovialpriest.blogspot.ca/2011/06/cursed-scrolls-retrospective-and-more.html|Inscribe Curse}}
+1,{{link|[av]2011/09/12/new-spell-long-course-curse/|Long Course Curse}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Parasitizory Embrace}}
+1,{{link|[av]2012/01/14/new-spell-reveal-profession/|Reveal Profession}}
+1,{{link|[av]2011/09/09/new-spell-reverse-curse/|Reverse Curse}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Shunnification}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Squamosity}}
+1,{{link|[av]2012/01/07/new-spell-stone-of-giants/|Stone of Giants}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Stone Vigour}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Summon Beast of the Fire Maidens From Outer Space}}
+1,{{link|[av]2011/12/22/new-spell-windride/|Windride}}
+
+
+;clericFive
+1,{{link|[av]2013/01/11/new-spell-beasts-amok/|Beasts Amok}}
+1,{{link|[av]2011/07/10/new-spell-body-of-water/|Body of Water}}
+1,{{link|[av]2012/02/25/new-spell-call-me-to-you/|Call me to you}}
+1,{{link|[av]2012/03/29/new-spell-elevate-rabble/|Elevate Rabble}}
+1,{{link|[av]2012/02/07/new-spell-global-location/|Global Location}}
+1,{{link|[av]2012/02/21/new-spell-greenblood/|Greenblood}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Heavenly Kiss}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Pretervolve}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Righteous Rage}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Sinful Blessing}}
+1,{{link|[av]2011/09/18/new-spell-smoky-steel/|Smoky Steel}}
+1,{{link|[av]2012/02/14/new-spell-steed-of-the-storm/|Steed of the Storm}}
+1,{{link|[av]2012/06/23/new-spell-weaponturner/|Weaponturner}}
+
+
+;clericSix
+1,{{link|[dd]2011/09/autumn-grimoire.html|Azure Purity}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Brain Death}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Brilliant Wall}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Corpse Explosion}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Existential Excision}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Flame Law}}
+1,{{link|[av]2012/10/13/new-spell-gargantuanize/|Gargantuanize}}
+1,{{link|[av]2011/11/19/new-spell-gift-of-flight/|Gift of Flight}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Hope}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Servant of Forever After}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Soul Armour}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Summon Meta-Krell Thought Monster}}
+1,{{link|[hw]h/2013/10/1970-and-counting.html|Transvective Dismemberment}}
+
+
+;clericSeven
+1,{{link|[av]2011/12/07/new-spell-call-to-the-gods/|Call to the Gods}}
+1,{{link|[wm]2014/01/supplement-a-book-of-miscellaneous-spells/|Divinity Vessel}}
+1,{{link|[dd]2011/09/autumn-grimoire.html|Frost Storm}}
+1,{{link|[av]2011/08/25/new-spell-reign-of-the-second-sun/|Reign of the Second Sun}}
+1,{{link|[av]2013/02/04/new-spell-revivify-from-unlife/|Revivify from Unlife}}

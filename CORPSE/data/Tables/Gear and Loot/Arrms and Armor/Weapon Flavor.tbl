@@ -107,3 +107,55 @@ with glowing runes running up and down its length
 worn from heavy use 
 you can hear whispers as you wield it 
 you think you can hear the faint sounds of the damned when you wield it 
+
+===
+/ http://www.random-generator.com/index.php?title=Weapon
+
+50,[Swords.main]
+50,[HaftedWeapons.main]
+10,[Bows.main]
+7,[XBows.main]
+5,[Lances.main] 
+25,[StaffClub.main]
+5,[WeaponsOther.main]
+5,[WhipChain.main]
+8,[AmmunitionThrown.main]
+
+;NoDescription
+50,[Swords.StartNoDescription]
+50,[HaftedWeapons.StartNoDescription]
+10,[Bows.BowType]
+7,[XBows.XBowType]
+5,[Lances.StartNoDescription]
+25,[StaffClub.NoDescription]
+5,[WeaponsOther.NoDescription]
+5,[WhipChain.NoDescription]
+10,[AmmunitionThrown.StartNoDescription]
+
+;MilitaryIssueChance
+20,
+3, This type of weapon was [Occasion].
+
+;Occasion
+3,commonly issued to [Recipient]
+3,specially crafted for [Recipient][Reason]
+3,presented to [Recipient][Reason]
+2,reserved for use only by [Recipient]
+
+;Reason
+6, to reward valorous action
+4,
+4, to honor [ys] years of service in the unit
+
+;ys
+1,5
+1,10
+1,15
+1,20
+
+;Recipient
+10,members of the [Fantasy Military Unit.main]
+7,[Fantasy Military Unit.MilitaryRank]s of the [Fantasy Military Unit.main]
+
+;Quality
+1,[Swords.Quality]
