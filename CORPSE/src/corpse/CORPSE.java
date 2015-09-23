@@ -42,7 +42,9 @@ import corpse.ui.TreePanel;
 // show table with result (possibly random lookup into Skill Fumble table?
 
 // TODO high priority
-// dX+dY
+// only set the variable if it's not already set (Markings -- G)
+// consider variable for synonyms {~word}
+// 10x option for quick lists
 // lower-case subsets are internal
 // capitalize based on assignment token (allow lower-case variables?)
 // script recursion for cave generation

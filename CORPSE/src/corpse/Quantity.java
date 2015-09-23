@@ -475,7 +475,7 @@ public final class Quantity
    private static final Numeric NORM = new Norm();
    private static final Numeric CHARGES = new Charges();
 
-   private static List<Numeric> numerics = new ArrayList<Numeric>();
+   private static List<Numeric> numerics = new ArrayList<>();
    static
    {
       numerics.add(CONSTANT);
@@ -556,6 +556,17 @@ public final class Quantity
       return numeric.getMax();
    }
 
+   public static boolean isNumeric(final String token)
+   {
+      for (Numeric n : numerics)
+      {
+         n.setToken(token);
+         if (n.getMatcher().matches())
+            return true;
+      }
+      return false;
+   }
+
    public static Numeric startsWith(final String line)
    {
       int brk = line.indexOf(Constants.WEIGHT);
@@ -587,7 +598,7 @@ public final class Quantity
 
    public static void main(final String[] args)
    {
-      List<String> tokens = new ArrayList<String>();
+      List<String> tokens = new ArrayList<>();
       tokens.add("invalid");
       tokens.add("5"); // CONSTANT (not a token)
       tokens.add("6-10"); // CONSTANT range (not a token)

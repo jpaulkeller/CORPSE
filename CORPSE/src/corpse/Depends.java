@@ -16,12 +16,15 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import file.FileUtils;
+import str.Token;
 
 public final class Depends
 {
-   private static final Pattern COLLISION = // multiple references to the same table 
-      Pattern.compile("(" + Constants.TABLE_XREF + ").+\\1", Pattern.CASE_INSENSITIVE);
-         
+	private static final Pattern COLLISION = // multiple references to the same table 
+	   Pattern.compile("(" + Constants.TABLE_XREF + ").+\\1", Pattern.CASE_INSENSITIVE);
+	private static final Pattern TOKEN_ALTERATION = // {{token}|{token}|...}
+	   Pattern.compile("(\\{" + Constants.TABLE_XREF + "(?:[|]" + Constants.TABLE_XREF + ")+\\})");
+   
    private static final Map<String, String> TOKENS = new TreeMap<>(); // token to file
    private static final Set<String> MISSING_TABLES = new HashSet<>();
    private static final Set<String> MISSING_SUBSETS = new HashSet<>();
@@ -51,6 +54,7 @@ public final class Depends
          {
             String suffix = FileUtils.getSuffix(f);
             if (suffix != null && suffix.toLowerCase().equals("tbl"))
+               // if (f.getName().toUpperCase().contains("ROD"))
                extractVariables(f);
             // TODO: support .cmd files
          }
@@ -76,7 +80,7 @@ public final class Depends
       try
       {
          FileInputStream fis = new FileInputStream(file);
-         InputStreamReader isr = new InputStreamReader(fis);
+         InputStreamReader isr = new InputStreamReader(fis, FileUtils.UTF8);
          br = new BufferedReader(isr);
          int lineNum = 0; 
 
@@ -97,7 +101,11 @@ public final class Depends
                   if (token.startsWith("{" + Constants.SUBSET_CHAR) || token.startsWith("{" + Constants.COLUMN_CHAR))
                      token = "{" + FileUtils.getNameWithoutSuffix(file) + token.substring(1); // resolve local refs
                   if (!TOKENS.containsKey(token))
-                     checkToken(token);
+                  {
+                     int open = line.indexOf("{{");
+                     int close = line.indexOf("}}");
+                     checkToken(token, open >= 0 && close > open);
+                  }
                   TOKENS.put(token, file.toString());
                }
                System.err.flush();
@@ -114,9 +122,17 @@ public final class Depends
             
             // check for possible collision
             Matcher m = COLLISION.matcher(line);
-            if (m.find() && !ignoreCollision(file, m.group(1)))
+            if (m.find() && !ignoreCollision(file, line, m.group(1)))
             {
-               System.err.println("Warning - possible collision on " + lineNum + ": " + line);
+               System.err.println("Warning - possible collision with " + m.group(1) + " on " + lineNum + ": " + line);
+               System.err.flush();
+            }
+            
+            // check for inefficient token alteration
+            m = TOKEN_ALTERATION.matcher(line);
+            if (m.find())
+            {
+               System.err.println("Warning - possible inefficient token alteration on " + lineNum + ": " + line);
                System.err.flush();
             }
          }
@@ -133,7 +149,7 @@ public final class Depends
       }
    }
    
-   private static void checkToken(final String token)
+   private static void checkToken(final String token, final boolean maybeNestedTables)
    {
       Matcher m = Constants.TABLE_XREF.matcher(token);
       if (m.matches()) // {Table:Subset.Column#Filter#} // TODO: ignore {D10}
@@ -141,7 +157,7 @@ public final class Depends
          String tbl = m.group(1).toUpperCase();
          if (!MISSING_TABLES.contains(tbl) && !Table.TABLES.containsKey(tbl))
          {
-            if (tbl.length() > 1) // ignore 1-character names (which are probably variables) 
+            if (tbl.length() > 3 && !Quantity.isNumeric("{" + tbl + "}")) // ignore short names (probably variables), and roll tokens 
                System.err.println("    Missing table: " + tbl);
             MISSING_TABLES.add(tbl);
          }
@@ -157,6 +173,16 @@ public final class Depends
                MISSING_COLUMNS.add(tbl + ":" + col);
          }
       }
+      else if (maybeNestedTables && (m = Constants.ONE_OF.matcher(token)).matches())
+      {
+         String[] tokens;
+         if (m.group(1).contains(Constants.ONE_OF_CHAR_1))
+            tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_1, Constants.ONE_OF_CHAR_1);
+         else
+            tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_2, Constants.ONE_OF_CHAR_2);
+         for (String tkn : tokens)
+            checkToken("{" + tkn + "}", false);
+      }
    }
 
    private static int countIn(final String text, final String s)
@@ -170,8 +196,11 @@ public final class Depends
    
    private static final Pattern DEREF = 
       Pattern.compile("\\{[A-Z]+[.]" + Constants.COLUMN_NAME + "\\}", Pattern.CASE_INSENSITIVE);
+   private static final String NOT_ONE_OF = "[^" + Constants.ONE_OF_CHAR_1 + Constants.ONE_OF_CHAR_2 + "]"; 
+   private static final Pattern ALTERATION = 
+      Pattern.compile("\\{" + NOT_ONE_OF + "+(?:" + Constants.ONE_OF_CHAR + NOT_ONE_OF + "+)+\\}");
    
-   private static boolean ignoreCollision(final File file, final String token)
+   private static boolean ignoreCollision(final File file, final String line, final String token)
    {
       if (file.getName().equals("Generated Name.tbl"))
          return true;
@@ -181,10 +210,16 @@ public final class Depends
          return true;
       if (token.toLowerCase().startsWith("{duration"))
          return true;
-      if (token.length() <= 3) // ignore 1-character names (which are probably variables) 
+      if (token.length() <= 5) // {12} ignore short names (which are probably variables) 
+         return true;
+      if (Quantity.isNumeric("{" + token + "}")) // ignore roll tokens 
          return true;
       if (DEREF.matcher(token).matches()) // ignore assignment references
          return true;
+      Matcher m = ALTERATION.matcher(line);
+      if (m.find()) // ignore collisions in alteration tokens {{table} 1|{table} 2}
+         return true;
+
       return false;
    }
    
