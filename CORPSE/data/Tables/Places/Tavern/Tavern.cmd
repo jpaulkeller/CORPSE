@@ -30,6 +30,7 @@
      with {building flavor}{20% and {building flavor{!different}}}.
  <li>Accommodations consist of {quantity:some} {accommodations}. 
  <li>The inn is {locally |widely |well-}known for the {tavern flavor}.
+ {50%<li>Other services include {tavern flavor:services}}
  {25%<li>There is a {smell:synonym pleasant} of {smell:cooking}} 
  <li>Color scheme:
      <table cellpadding="3" cellspacing="3" style="border: 1px solid #000000;">

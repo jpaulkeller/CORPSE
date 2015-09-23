@@ -1,8 +1,16 @@
 / http://www.legolas.org/items/thief.html
+/ http://aeonsnaugauries.blogspot.com/2014/01/50-thieves-tools.html
 
-.Thief Gear                     Cost      Lbs    Legality
+/ Legalility: l = legal, s = shady, i = illegal
+
+: Legal   = .{49}(l|[^ ]+l).*
+: Shady   = .{49}(s|[^ ]+s).*
+: Illegal = .{49}(i|[^ ]+i).*
+
+.Thief Gear                     Cost      Lbs    Legality  Description
          
-acid, metal-eating, 1 vial **    50 gp     0.2   l
+acid, metal-eating, 1 vial       50 gp     0.2   l         rare
+angler’s wire                                    l         thin but firm wire that may be used to fish for keys and small objects on the other side of an opening
 aniseed, vial                     2 sp           l
 arm sling                         2 cp           l
 armor, silenced                 750 gp+   50     s
@@ -11,60 +19,97 @@ arrow, minor grapple              6 gp     0.6   l/s
 arrow, stone biter                1 gp           l
 arrow, stone biter, adamantite    7 gp           l
 arrow, wood biter                 8 sp           l
+awl pick                                         i         a lock pick designed to defeat a lock by breaking internal workings
 blinding powder                   var            l/s/i
 boots, blade                     15 gp     3     i
 boots, footpad's                  8 gp     3     i
 boots, hollow                    15 gp     3     i
 bow, folding                     45 gp     2     l/s
 caltrops (10)                     3 gp     1     l/s
-cards, marked, deck **            5 gp     0.2   i
-catstink, (vial) **              40 gp           s/i
+cards, marked, deck               5 gp     0.2   i         rare
+cat-stink, (vial)                40 gp           s/i       rare
+cat’s harness                                    s/i       an elaborate leather harness with fittings and hooks to attach tools and lines to improve “second story” work
 charcoal, bundle                  2 cp           l
-chisels, lock, set of 3           2 gp     1     l
+chisel                            1 gp     1     l         for more serious splitting of boards and other elements when making noise doesn’t matter
+claw                                             l         used to withdraw heavy nails, break screws, and separate hardware from mounting
+climber’s claws                                  s         hand-sized rake-like claws to aid climbing
+collapsible pole                                 l         a multi segment pole that allows one to have a 10’ pole on hand without having to carry such a large ungainly thing all the time
 crowbar                           6 sp     4     l
 dagger, climbing                  5 gp     1     l
 darksuit                         30 gp     5     s
 dice, biased, bone (box of 4)     5 gp           i
 dice, biased, ivory (box of 4)   20 gp           i
 dog pepper, packet                1 sp           l/s
+ear horn                                         l         simple cone for amplifying noise on other side of a barrier
+eyed piton                                       l         a spike with an eye hook to fasten ropes to aid climbing
+eyed-jimmy                                       s         serves as a weak claw but the eye allows one to turn bolts
+files                                            l         used to trim bits of wood and metal; can quietly widen holes and cut-away bars
+finger pick                                      i         a tiny pick worn on a fingertip to allow picking of very sensitive locks without risk of dropping a pick
+foot hook                                        l         similar to hanging hook, but with a stirrup or bar meant to aid climbing
 funnel, small                     3 cp     0.1   l
 glass cutter, handled           120 gp     1     l/i
-gloves, clawed **                20 gp     1     i
-grappling iron                    3 gp     2     l
-grease
-hacksaw                           3 gp     1     l
+gloves, clawed                   20 gp     1     i         rare
+grappling hook                    3 gp     2     l         a hook used to secure a rope, often tossed 
+grease                                           l
+hacksaw                           3 gp     1     l         a small saw able to cut through all but the strongest metals given the time
 hacksaw blade                     6 sp           l
-housebreaker's harness **        25 gp     2     i
-keymaking set                    60 gp     6     i
-knife, death **                  12 gp     1     s/i
+hammer                                           l         used for bashing, driving spikes, and making use of other tools like chisels and wedges
+hand drill                                       l         a small hand drill for a multitude of larcenous hole making
+hanging hook                                     l         a small hook meant to be looped on top of a wall or in a window to improve purchase or attach a line for accomplices to climb or safely lower stolen goods 
+hole saw                                         s         a fancy handsaw similar to a hand drill with a saw bit for opening a hole in wood
+hook knife                                       s         a small knife with a hook to improve the chances of lifting a latch on a window or door
+housebreaker's harness           25 gp     2     i         rare
+jimmy                                            l         used for prying between boards, doors and shutters
+jimmy-pick                                       l         a jimmy with a pick head for excavations
+key-making set                   60 gp     6     i
+knife, death                     12 gp     1     s/i       rare
 lamp, hand (w/ silvered mirror)  10 gp     1     l/s
 lamp, hand warming                2 sp     0.3   l
 leather straps (pair)             3 sp     1     l
+lifting rod                                      s         a short rod (typically wood) for probing and lifting latches
 limewood strips (10)              3 cp           l
 listening cone (brass)            2 gp     0.3   l
+little alderman                                  s         a small wedge of strong metal used to pop open hinges and doors
+magnetic filings                                 s         can be spread on an area to detect magnetic metals, aid in locating a trap or concealed mechanism
+magnifying lens                                  l         for peaking into small hard to see spots (such as a key hole)
 marbles, bag (30)                 2 cp           l
+metal acid                                       s         a small flask of acid that will eat away nails, screws, and hinges, maybe eat away an entire lock
 metal file                        5 sp     0.2   l
+metalpick                                        s         a firm metal prod used to force lock mechanisms
 mini blade                        5 cp           l
-oil
+nippers                                          s         thing long pliers that may be fit through a keyhole to turn or fetch a key left in the other side of a lock
+oil                                              l         a small can or flask of oil meant to lubricate lock and hinges to ease motion and reduce noise
+overshoes                                        s/i       slip-over boots or shows to move more quietly
 overshoes, clawed                15 gp     1     i
+padded mallet                                    s         a hammer softened with wood leather and maybe cloth padding to reduce noise made when driving spikes or using a chisel
+pin lamp                                         s/i       a very small candle lamp that only emits a pin point of light meant to illuminate a very small working area
+pliers                                           l         plain old pliers with multiple uses for working nuts and screws
+powder                                           l         to absorb moisture and improve friction when needed
+punch                                            l         for knocking holes in thin wood
 ring, pin, iron                   2 gp           s/i
 ring, pin, silver                10 gp           s/i
 ring, razor, iron                 2 gp           s/i
 ring, razor, silver              10 gp           s/i
-scabbard, false **               12 gp    (1-2)  l/s
+rope ladder                                      l/s       a double rope with foot rests between
+saw knife                                        l/s       a small knife-sized easy to carry serrated blade; can saw through catches, wooden bars, and bolts given enough time
+scabbard, false                  12 gp    (1-2)  l/s       rare
+screwdriver                                      l         for turning screws when so needed. come in multiple sizes
+screwjack                                        s/i       a sturdy jack for pushing bars apart or popping a door/shutter from a frame
 sharkskin                        12gp/sf   1/sf  l/s
 sheath, wrist                     3 sp           s
 shoes, water, pair                5 gp     1     s/i
-skeleton key                     var.            i
+skeleton key                     var.            i         a generic key that has a fair chance of opening a lock with the same number of wards
 spikes, climbing, iron (10)       5 sp     4     l
-sword stick **                   25 gp     4     l/s
-theives picks                    30 gp     1     i
-wax (block)                       3 cp           l
-weaponblack (vial)                2 gp     0.2   s
-wire cutters                      1 gp     0.2   l/s
+squinting-jimmy                                  s         a jimmy with a tapering eye that eases the turning of bolts
+stick mirror                                     s         a tiny mirror on a collapsible metal rod useful for looking through holes and around corners
+stirrup piton                                    s         a spike with bar or more elaborate stirrup to aid climbing
+stirruped rope                                   l         a rope with “stirrups”, rest,rings, or hand-holds built in
+strapping                                        l         strong leather strapping to improve tension, tie off tools  when dangling on a wall, or aid in a slow climb (less likely to fall when tied to something)
+sword stick                      25 gp     4     l/s       rare
+tension bar                                      s         hold picks in place and provide tension as a lock is turned
+thief's picks                    30 gp     1     i
+wax (block)                       3 cp           l         for making a quick imprint of a key or seal
+weapon-black (vial)               2 gp     0.2   s         cut down on the gleam of blades and other metal to reduce the odds of a reflection at a bad time (eases hiding)
+wire cutters                      1 gp     0.2   l/s       a plier-like tool able to quickly cut a wire
+wire pick                                        s         a strong length of wire meant to aid as a lock-pick or to lift a lath through a door-crack
 woodland suit                    35 gp     5     l/s
-
-/ l = legal
-/ s = shady
-/ i = illegal
-/ ** indicates hard to find item

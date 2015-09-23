@@ -1,3 +1,5 @@
+/ duplicate spells will be different versions (components, range, area of effect, etc) 
+
 <html>
 <body>
 
@@ -18,12 +20,20 @@
   {25%<li>Found in the book: {found in book}}
   {90%<li>Protection: {book flavor:protection}}
   {50%<li>Trap: {book flavor:trap}}
+  
   <p>
-/ duplicate spells will be different versions (components, range, area of effect, etc) 
-  <li>Spells {M:=magic}(<b>{M}</b>)
+  <li>Standard Spells {SC:=Spell Category}(<b>{SC}</b>)
   <ul>
 !loop {2d10}
-    <li>{Spell:{M}}
+    <li>{Spell:{SC}}
+!loop end
+  </ul>
+  
+  <p>
+  <li>Unique Spells
+  <ul>
+!loop {d6-1}
+    <li>{Spell Name}
 !loop end
   </ul>
 </ul>

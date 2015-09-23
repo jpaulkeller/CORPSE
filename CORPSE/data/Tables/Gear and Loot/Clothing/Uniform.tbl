@@ -7,26 +7,26 @@ the {:military uniform specific}
 
 : servant uniform
 {profession:service}'s livery uniform consisting of {fabric:exotic} stockings, fine {color:simple} wool breeches, and an embroidered jacket of {fabric:exotic} with shiny {metal:common} buttons and embroidery.
-{profession:service}'s uniform consisting of knee-high {fur and pelt:leather} boots, a {:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
-{profession:service}'s uniform consisting of knee-high {fur and pelt:leather} boots, a {:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
+{profession:service}'s uniform consisting of knee-high {leather} boots, a {:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
+{profession:service}'s uniform consisting of knee-high {leather} boots, a {:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
 
 : military uniform generic
-foot soldier’s dress uniform consisting of {fur and pelt:leather} boots, {color:simple} canvas breeches lined with {fabric:exotic},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
-guard’s dress uniform consisting of {fur and pelt:leather} boots, {fabric:common} breeches lined with {fabric:exotic},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
-horseman’s dress uniform consisting of {fur and pelt:leather} riding boots, {fur and pelt:leather} gauntlets, {color:simple} wool breeches lined with {fur and pelt:leather},{20% {:military accessories}} and a tailed jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
-pikeman’s dress uniform consisting of {fur and pelt:leather} boots, {fabric:common} breeches lined with {fabric:exotic},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
-sapper’s uniform consisting of {fur and pelt:leather} boots, a thick {fur and pelt:leather} apron, {fabric:common} breeches lined with {fabric:exotic}, and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
-military dress uniform consisting of {fur and pelt:leather} boots, {fur and pelt:leather} gauntlets, a {outfit:lower} and lined with {fabric},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}. an embroidered shoulder patch carries the symbol of rank.
+foot soldier’s dress uniform consisting of {leather} boots, {color:simple} canvas breeches lined with {fabric:exotic},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
+guard’s dress uniform consisting of {leather} boots, {fabric:common} breeches lined with {fabric:exotic},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
+horseman’s dress uniform consisting of {leather} riding boots, {leather} gauntlets, {color:simple} wool breeches lined with {leather},{20% {:military accessories}} and a tailed jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
+pikeman’s dress uniform consisting of {leather} boots, {fabric:common} breeches lined with {fabric:exotic},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
+sapper’s uniform consisting of {leather} boots, a thick {leather} apron, {fabric:common} breeches lined with {fabric:exotic}, and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.
+military dress uniform consisting of {leather} boots, {leather} gauntlets, a {outfit:lower} and lined with {fabric},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}. an embroidered shoulder patch carries the symbol of rank.
 
 : military uniform specific
-dress uniform of a {military rank} in the {unit} consisting of {fur and pelt:leather} boots, {fur and pelt:leather} gauntlets, a {outfit:lower} and lined with {fabric},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}; an embroidered shoulder patch carries the symbol of rank.
+dress uniform of a {military rank} in the {unit} consisting of {leather} boots, {leather} gauntlets, a {outfit:lower} and lined with {fabric},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} braided epaulets and embroidery and buttons of shiny {metal:common}; an embroidered shoulder patch carries the symbol of rank.
 
 : military accessories
 a baldric of {fabric:common}
-a belt of {fur and pelt:leather}
+a belt of {leather}
 a cloak of {fabric:common}{10%, dagged}{10% with {tassels|cords}}
-a harness of {fur and pelt:leather}
-a sword belt of {fur and pelt:leather}
+a harness of {leather}
+a sword belt of {leather}
 a tabard of of {fabric:common} and bearing the unit’s coat of arms
-an apron of {fur and pelt:leather}
+an apron of {leather}
 {:military accessories} and {:military accessories{!different}}

@@ -55,7 +55,12 @@ tooth
 
 : Crude
 arm
+armour
+back
+body
+bone
 cheek
+chest
 corpse
 crotch
 eye
@@ -64,14 +69,24 @@ finger
 fist
 flesh
 foot
+gut
 hand
+head
 heart
 jaw
 knee
+leg
+limb
+neck
 nose
+rib
+shin
 skin
 skull
+soul
 spine
+spirit
+thigh
 throat
 tongue
 tooth

@@ -1,6 +1,6 @@
 : Orc Tribe Name
 {80%{:Adj} }{:Noun}
-{:Body Part} {Barbarian Name:Suffix}
+{:Body Part} {Epithet:Warrior Suffix}
 
 : adj
 bent
@@ -41,10 +41,10 @@ vile
 
 : noun
 {:animal}
-{:body part}{75%-{barbarian name:suffix}s}
+{:body part}{75%-{epithet:warrior suffix}s}
 {:other}
 {:place}
-{barbarian name:suffix}
+{epithet:warrior suffix}
 {weapon{!oneword}}
 
 : Other

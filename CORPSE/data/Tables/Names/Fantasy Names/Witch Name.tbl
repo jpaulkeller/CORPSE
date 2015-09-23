@@ -1,0 +1,108 @@
+/ http://www.random-generator.com/index.php?title=Witch
+/ http://elfmaidsandoctopi.blogspot.com/2014/01/d100-witches.html
+
+: Witch Name = White + Grey + Black
+
+: White
+{:Prefix Good} {:Name}
+{Evocative Adj:Positive} {:Name}
+{Trait:Not Bad} {:Name}
+
+: Grey
+{:Prefix Neutral} {:Name}
+{Evocative Adj:Neutral} {:Name}
+{Trait:Neutral} {:Name}
+
+: Black
+{:Prefix Bad} {:Name}
+{Evocative Adj:Negative} {:Name}
+{Trait:Not Good} {:Name}
+
+: Prefix Good
+auntie
+green
+wise
+{:prefix neutral}
+
+: Prefix Bad
+awful
+black
+bloody
+cursed
+dread
+forbidden
+foul
+haunted
+nightmare
+reeking
+smelly
+stinky
+wicked
+{color:dark}
+{:prefix neutral}
+
+: Prefix Neutral
+banished
+bent
+big
+blue
+burning
+cackling
+caste-out
+charming
+crafty
+crazy
+crooked
+cunning
+grim
+grinning
+hollow
+hunched
+iron
+little
+mad
+magic
+moody
+mother
+milk-eye
+old
+one-eyed
+red
+saggy
+scary
+screaming
+shadowed
+sharp
+silver
+sister
+toothless
+touched
+ugly
+wizened
+widow
+{color:drab}
+
+: Name
+{American Name:Female First}
+{Frontier Name:Female First}
+{German Name:Female First}
+{Hobbit Name:Female First}
+{Old English Name:Female First}
+{Victorian Name:Female First}
+{:Hag}
+
+: Hag
+bane
+bitch
+claw
+cousin
+crone
+granny
+hag
+harlot
+maid
+nanny
+nettle
+thistle
+thorn
+woman

@@ -14,7 +14,7 @@ alligator hide
 crocodile hide
 ostrich hide
 sharkskin
-{fur and pelt::hide} hide
+{fur and pelt:hide} hide
 
 : exotic
 elephant hide

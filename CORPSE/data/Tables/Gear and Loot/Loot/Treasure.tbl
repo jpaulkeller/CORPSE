@@ -5,6 +5,18 @@
 / sealed by [treasure container.bagseal]
 / [Treasure Container.concealment]
 
+: Hidden
+disguised to appear as something else
+hidden behind a loose stone in the wall
+hidden by an illusion
+hidden by invisibility
+hidden in a secret room nearby
+hidden in a secret space in the container
+hidden in a secret space under container
+hidden in an ordinary item in plain view
+hidden under a heap of trash/dung
+hidden under a loose stone in the floor
+
 : Level 1
 {container:small loot} holding {2d250} {currency:medium.coin}s
 {condition:cloth} {container:cloth} holding {debris:floor}

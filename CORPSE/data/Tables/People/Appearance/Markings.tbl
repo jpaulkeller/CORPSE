@@ -1,6 +1,6 @@
 : Markings
 wearing {made of:precious} {jewelry} {with a single large {gem}|{art:decorated}}
-{25%{:colors} }tattoo{75% of a {charge}}{75% {:where}}
+{25%{:colors} }tattoo{75% of {:tattoo}}{75% {:where}}
 {cheek|ear|eyebrow|lip|nose|tongue} pierced with a {{made of:precious|gem}} {stud|ring}
 {face|arms} decorated with {patterns|streaks|stripes|symbols|runes} of {color:simple} paint
 {small |noticeable |large |}birthmark{75% {:where}}{10% shaped like a {~{charge}}}
@@ -31,7 +31,7 @@ stitches
 
 : Where
 / before referencing this, be sure to set {G:=gender}
-on {G.pronoun} {body part}
+{G:=gender}on {G.possessive} {body part}
 
 : Colors
 colorful
@@ -47,3 +47,11 @@ blue
 green
 purple
 red
+
+: Tattoo
+a family crest
+a rune
+a {charge}
+the insignia of the {Unit}
+the symbol of {Divine Name}
+the symbol of {Group Name}

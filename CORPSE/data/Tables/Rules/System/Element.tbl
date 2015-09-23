@@ -1,3 +1,5 @@
+/ see also: Spell Name.tbl
+
 : Quasi = Positive + Negative
 : Any = Basic + Para + Quasi + D20 + 4E
 
@@ -12,9 +14,12 @@ fire
 water
 
 : Para
+flame
+frost
 ice
 magma
 ooze
+rock
 smoke
 stone
 wind

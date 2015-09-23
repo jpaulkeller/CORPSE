@@ -3,6 +3,9 @@ The {:Adj} {:Noun} {:Spell}
 The {:Gerund} {:Noun} {:Spell}
 The {:Spell} of the {50%{Evocative Adj} }{:Who}
 The {:Who}'s {50%{Evocative Adj} }{:Spell}
+{:Prefix} {:{Spell Category} Suffix}
+{SC:=Spell Category}{:{SC} Prefix} {:{SC} Suffix}
+{:{Spell Category} Prefix} {:Spell}
 
 : Gerund
 {Noise}
@@ -10,56 +13,741 @@ The {:Who}'s {50%{Evocative Adj} }{:Spell}
 
 : Adj
 {Adjective}
+{Arcane Substance:Adj}
 {Evocative Adj}
 {Humanoid}'s
 {:Common Adj}
 
 : Common Adj
-Ancient
-Ascetic
-Forbidden
-Greater
-Lesser
-Sacred
-Secret
-Sublime
+ancient
+ascetic
+forbidden
+greater
+lesser
+sacred
+secret
+sublime
 
 : Noun
-{Element:Any}
-{Evocative Concept{!OneWord}}
-{Weapon}
+{element:any}
+{evocative concept{!oneword}}
+{weapon{!oneword}}
 
 : Who
-{Pseudo Class:Mage}
-{Pseudo Class:Priest}
-{Pseudo Class:Sage}
+{pseudo class:mage}
+{pseudo class:priest}
+{pseudo class:sage}
+
+: Prefix
+abyssal
+ancient
+angelic
+arcane
+astral
+binding
+brilliant
+charming
+cryptic
+dark
+dazzling
+divine
+earth-bound
+earthen
+evil 
+explosive
+fearful
+final
+focused 
+forgotten
+foul
+gentle
+glittering
+good
+healing
+heavenly
+helpful
+holy
+icy
+invisible
+light
+mass
+mystical
+nega
+noxious
+penultimate
+perfect
+phantasmal
+poisonous
+prismatic
+profane
+psychic
+psychokinetic
+radiant
+regal
+revealing
+sonic
+spectral
+sylvan
+tainted
+thunderous
+ultimate
+uncanny
+unearthly
+unholy
+unseen
+unspeakably foul
+unstable
+unstoppable
+whispering
+wizard
+{arcane substance:adj}
+{color}
 
 : Spell
-Abjuration
-Alteration
-Animation
-Assimilation
-Binding
-Blessing
-Call
-Ceremony
-Circle
-Conjuration
-Curse
-Divination
-Enchantment
-Evocation
-Exorcism
-Formulation
-Hex
-Illusion
-Incantation
-Invocation
-Jinx
-Prophecy
-Regeneration
-Restoration
-Rite
-Ritual
-Shackle
-Shield
+abjuration
+alteration
+animation
+anthem
+aria
+armor
+arrow
+assault
+assimilation
+ball
+barrier
+bastion
+beam
+binding
+blade
+blast
+blessing
+bolt
+burst
+call
+ceremony
+chain
+chains
+circle
+cloud
+conjuration
+cross
+crown
+curse
+curtain
+cyclone
+dart
+divination
+door
+enchantment
+evocation
+exorcism
+explosion
+eye
+falcon
+fist
+flare
+fog
+form
+formulation
+fumes
+gauntlet
+gaze
+golem
+grasp
+hammer
+hand
+hex
+horror
+hound
+illusion
+imbuement
+incantation
+intonation
+invocation
+jinx
+judgment
+lunge
+missile
+mist
+nexus
+pact
+portal
+prophecy
+ray
+regeneration
+restoration
+rite
+ritual
+rod
+scream
+serpent
+servant
+shackle
+shadow
+shards
+shield
+shout
+sigil
+sign
+signet
+slash
+song
+spear
+sphere
+spin
+spray
+staff
+stanza
+summoning
+sword
+symbol
+thrust
+tornado
+touch
+veil
+vestment
+volley
+wall
+wave
+well
+whip
+word
+{element:any}
+{golem}
+{weapon{!oneword}}
+
+/ type
+
+: abjuration prefix
+{:prefix}
+
+: abjuration suffix
+abjuration
+abolishment
+aegis
+armor
+asylum
+barrier
+bastion
+bulwark
+circle
+cloak
+curtain
+defense
+protection
+shelter
+shield
+sigil
+tower
+wall
+ward
+{:spell}
+
+: alteration prefix
+{:prefix}
+
+: alteration suffix
+alteration
+growth
+{:spell}
+
+: animation prefix
+animator's
+{:prefix}
+
+: animation suffix
+animation
+{:spell}
+
+: conjuration prefix
+conjuror's
+{:prefix}
+
+: conjuration suffix
+conjuration
+{:evocation suffix}
+{:spell}
+
+: divination prefix
+{pseudo class:sage}'s
+{:prefix}
+
+: divination suffix
+divination
+prophecy
+{:spell}
+
+: empathic prefix
+{:prefix}
+
+: empathic suffix
+{:spell}
+
+: elemental prefix
+{:air prefix}
+{:earth prefix}
+{:fire prefix}
+{:water prefix}
+{:prefix}
+
+: elemental suffix
+{:air suffix}
+{:earth suffix}
+{:fire suffix}
+{:water suffix}
+{:spell}
+
+: enchantment prefix
+enchanter's
+{:prefix}
+
+: enchantment suffix
+enchantment
+imbuement
+{:spell}
+
+: evocation prefix
+{:prefix}
+
+: evocation suffix
+advocate
+assassin
+assistant
+avenger
+beast
+binding
+call
+construct
+creation
+creature
+defender
+escort
+evocation
+familiar
+form
+golem
+guardian
+knight
+protector
+servant
+steed
+summoning
+{:spell}
+
+: hypnotic prefix
+{:prefix}
+
+: hypnotic suffix
+{:spell}
+
+: illusion prefix
+illusionist's
+mesmer's
+{:prefix}
+
+: illusion suffix
+addlement
+allure
+bafflement
+beguilement
+cacophony
+captivation
+charm
+cloud
+confusion
+deception
+delight
+din
+distortion
+distraction
+fog
+guile
+haze
+hypnosis
+illusion
+mirage
+obfuscation
+pacifier
+pattern
+perplexity
+phantasm
+possession
+riddle
+shade
+song
+spell
+vision
+{:spell}
+
+: invocation prefix
+invoker's
+{:prefix}
+
+: invocation suffix
+invocation
+{:spell}
+
+: kinetic prefix
+{:prefix}
+
+: kinetic suffix
+{:spell}
+
+: metamagic prefix
+{:prefix}
+
+: metamagic suffix
+{:spell}
+
+: natural prefix
+{:prefix}
+
+: natural suffix
+{:spell}
+
+: necromantic prefix
+necromancer's
+{:prefix}
+
+: necromantic suffix
+{:spell}
+
+: spiritual prefix
+{:prefix}
+
+: spiritual suffix
+{:spell}
+
+: transference prefix
+{:prefix}
+
+: transference suffix
+blink
+bridge
+conduit
+door
+egress
+entrance
+gate
+gateway
+journey
+opening
+passage
+path
+portal
+travel
+walk
+way
+{:spell}
+
+/ element
+
+: air prefix
+aeromancer's
+airbender's
+dragon's
+eagle's
+hawk's
+owl's
+raven's
+roc's
+sylph's
+{:prefix}
+
+: air suffix
+bluster
+breath
+breeze
+cloud
+cyclone
+feather
+flight
+fumes
+gale
+gust
+hail
+mist
+storm
+tempest
+thunder
+tornado
+twister
+vapor
+whip
+whirlwind
+wind
+wing
+{:spell}
+
+: death prefix
+choking
+necromancer's
+tainted
+waning
+warlock's
+winter
+witch's
+{evocative adj:negative}
+{:prefix}
+
+: death suffix
+{curse:noun}
+{evocative concept:negative}
+{:spell}
+
+: earth prefix
+deep
+earth
+geomancer's
+magma
+rock
+stone
+{metal}
+{mineral}
+{:prefix}
+
+: earth suffix
+avalanche
+barrage
+bash
+blow
+bombardment
+meteor
+crush
+fist
+form
+hammer
+maul
+might
+punch
+shield
+shower
+skin
+smash
+strike
+stun
+volcano
+{:spell}
+
+: energy prefix
+electric
+lightning
+shocking
+{:prefix}
+
+: energy suffix
+beam
+bolt
+{:spell}
+
+: fire prefix
+blazing
+burning
+efreet's
+flamecaster's
+flaming
+phoenix's
+pyromancer's
+salamander's
+searing
+smoking
+solar
+{:prefix}
+
+: fire suffix
+ash
+blaze
+blaze
+char
+cinders
+coal
+combustion
+conflagration
+devourer
+embers
+eruption
+fire
+flame
+flare
+frenzy
+furor
+fury
+glow
+hearth
+immolation
+inferno
+light
+magma
+pyre
+rage
+raze
+spark
+tongue
+{:spell}
+
+: life prefix
+{:prefix}
+
+: life suffix
+{:spell}
+
+: void prefix
+{:prefix}
+
+: void suffix
+{:spell}
+
+: water prefix
+algid
+aquatic
+arctic
+deep
+freezing
+hydromancer's
+neptune's
+{:prefix}
+
+: water suffix
+anchor
+blizzard
+chill
+frost
+hurricane
+mist
+monsoon
+shards
+squall
+storm
+tempest
+wave
+{:spell}
+
+/ class
+
+: alchemist prefix
+alchemist's
+{:prefix}
+
+: alchemist suffix
+{:spell}
+
+: bard prefix
+{pseudo class:bard}'s
+{:prefix}
+
+: bard suffix
+{:spell}
+
+: cleric prefix
+divine
+exorcism
+heavenly
+holy
+{evocative adj:positive}
+{pseudo class:priest}'s
+{:prefix}
+
+: cleric suffix
+blessing
+canticle
+chant
+consecration
+convocation
+mending
+resurrection
+retribution
+salvation
+sanctification
+sanctum
+vestment
+{evocative concept:positive}
+{:spell}
+
+: druid prefix
+druid's
+{:prefix}
+
+: druid suffix
+{:spell}
+
+: healer prefix
+healer's
+{:prefix}
+
+: healer suffix
+{:spell}
+
+: illusionist prefix
+{:illusion prefix}
+{:prefix}
+
+: illusionist suffix
+{:illusion suffix}
+{:spell}
+
+: mage prefix
+{:prefix}
+
+: mage suffix
+{:spell}
+
+: metallist prefix
+{:prefix}
+
+: metallist suffix
+{:spell}
+
+: necromancer prefix
+{:necromantic prefix}
+{:prefix}
+
+: necromancer suffix
+{:necromantic suffix}
+{:spell}
+
+: paladin prefix
+{:prefix}
+
+: paladin suffix
+{:spell}
+
+: ranger prefix
+{:prefix}
+
+: ranger suffix
+{:spell}
+
+: seer prefix
+{pseudo class:sage}'s
+{:prefix}
+
+: seer suffix
+{:spell}
+
+: sorcerer prefix
+sorcerer's
+{:prefix}
+
+: sorcerer suffix
+{:spell}
+
+: warlock prefix
+warlock's
+{:prefix}
+
+: warlock suffix
+{:spell}
+
+: witch prefix
+witch's
+{:prefix}
+
+: witch suffix
+{:spell}
+
+: wizard prefix
+wizard's
+{:prefix}
+
+: wizard suffix
+{:spell}

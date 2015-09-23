@@ -11,6 +11,10 @@
 : Female
 {:Female First} {:Female Surname}
 
+: Surname
+{:Male Surname}
+{:Female Surname}
+
 : Male First
 / {:German Male.germanmale}
 / {:Irish Celtic Name.irishmale}

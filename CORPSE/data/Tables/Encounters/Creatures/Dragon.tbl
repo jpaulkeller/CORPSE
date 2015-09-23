@@ -127,10 +127,14 @@ ant-like; with crushing mandibles
 barracuda-like; long and slender with fierce, serrated teeth
 crocodile-like; with powerful jaws of flesh-rending teeth
 horrible and fang-filled, like a fish from the ocean’s sunless depths
+horrific; with long sharp teeth, like some strange fish from the ocean’s sunless depths
 lion-like; with deadly scimitar teeth
 lizard-like; with flat but sharp-edged teeth
+owlish; with great orb-like eyes
 raptor-like; with a cruel, curved beak
+reptilian; with a frilled mantle
 serpent-like; with curved, needle-sharp fangs
+skull-like; with dark empty sockets where its eyes should be
 shark-like; with a massive mouth filled with rows of razor-sharp teeth 
 snake-like; with a jaw that unhinges to swallow enormous prey
 spider-like; with enormous fangs
@@ -138,6 +142,7 @@ turtle-like; with a long neck and a large, crushing beak
 tyrannosaur-like; all mouth and teeth
 wolf-like; with powerful, prominent fags
 worm-like; with tiny eyes and a gaping, toothless maw
+worm-like; without eyes; its gaping mouth fringed with wiggling tentacles  
 
 : head feature
 a barbed tongue
@@ -146,13 +151,13 @@ a cluster of secondary eyes, like a spider’s
 a crocodile-like skull
 a forked tongue
 a frill of wicked poisonous spines, barbed and quivering
-a glowing lure hangs above {G.possessive} face
-a gore-stained horn jutting out from {G.possessive} forehead
+a glowing lure hangs above its face
+a gore-stained horn jutting out from its forehead
 a great crown of horns
 a long, rasping tongue
 a long, extrudable, sticky, frog-like tongue
 a pair of horns, like long lances
-a sharp, hollow tongue, through which {G.pronoun} feeds
+a sharp, hollow tongue, through which its feeds
 a spiked frill
 a unicorn's horn
 a wedge-shaped head 
@@ -161,7 +166,7 @@ antlers
 curled, ram-like horns
 horns like those of a bull
 large sacks of venom just under the lower jaw
-venomous bile drooling from {G.possessive} mouth
+venomous bile drooling from its {mouth|fangs}
 
 : legs
 no legs
@@ -374,6 +379,21 @@ will protect {g.possessive} eggs above all else
 {G.possessive} pride means {G.pronoun} can be provoked into a blind rage
 {fauna} flesh is poisonous to {G.object}
 {metal:precious} burns {G.possessive} flesh
+
+: trait
+cunning
+destruction
+domination
+explorations
+greed
+insanity
+malice
+minions
+savage nature
+thirst for power
+uncontrolled power
+vengefulness
+wisdom
 
 : favorite food
 blood

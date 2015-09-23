@@ -4,10 +4,13 @@
 {:Female}
 
 : Male
-{:Male First} Mac{:Clan}
+{:Male First} {:Surname} 
 
 : Female
-{:Female First} Mac{:Clan}
+{:Female First} {:Surname} 
+
+: Surname
+M{50%a}c{:Clan}
 
 : Clan
 Alister

@@ -4,13 +4,14 @@
 <html>
 <body>
 
-{M:=merchandise}
-<h2>{M.Type} Shop</h2>
+{SHP={Shop?{Shop Name:Goods}}}
+
+<h2>{SHP}</h2>
 
 <ul>
 <li>Merchant
   <ul>
-    <li>Proprietor: {Name}; {gender} {race} 
+    <li>Proprietor(s): {gender} {race}
     <li>Affiliation: {none|guild|religious}
     <li>Disposition: {degree} {trait} and {frequency} {disposition}
     <li>Feeling: generally {feeling}, currently {degree} {mood}
@@ -23,16 +24,17 @@
 <li>Shop
   <ul>
     <li>Stall Type: {market stall} 
-    <li>Customers: {NPC}{50%, {NPC}}{50%, {NPC}}{50%, {NPC}}
+!loop {d6-1}
+    <li>Customer: {NPC}
+!loop end
     <li>Security: {none|nothing obvious}
   </ul>
 
 <li>Merchandise
   <ul>
-    <li>Goods: {M.type}  
-    <li>Specialty: {M.merchandise}  
-    <li>On sale: {M.merchandise}  
-    <li>Also Provides: {M.merchandise}  
+    <li>Goods: {M.type}
+    <li>Specialty: {M.merchandise}
+    <li>On sale: {M.specific}
     <li>Quality: {quality}; Condition: {condition}
     <li>Source: {imported|home-made|local artisan|guild|stolen|unknown}
     <li>Variety/Selection: {{degree} poor|average|{degree} good}

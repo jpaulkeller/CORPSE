@@ -1,134 +1,170 @@
 / see also: Contents.tbl
 
-.Type               Merchandise
+.Type                Merchandise                 Specific
 
 : General
-general             accessories
-general             ammunition
-general             arms
-general             armor
-general             art
-general             books
-general             clothing
-general             equipment
-general             food
-general             fur and pelts
-general             furnishings
-general             materials
-general             gems
-general             jewelry
-general             live animals
-general             musical instruments
-general             precious metals
-general             pottery
-general             produce
-general             property
-general             provisions
-general             reagents
-general             services
-general             shoes
-general             spell components
-general             spices
-general             transportation
-general             wine
+general              accessories
+general              ammunition                  {{~{ammo}}+}
+general              arms                        {{~{weapon}}+}
+general              armor                       {{~{armor}}+}
+general              artworks                    {art}
+general              books                       {book}
+general              clothing                    {outfit}
+general              food                        {{:food}+}                        
+general              fur and pelts               {fur and pelt.animal}
+general              furnishings                 {furnishing}
+general              materials                   {material}
+general              gems                        {gem}
+general              jewelry                     {jewelry}
+general              live animals                {fauna}
+general              musical instruments         {musical instrument}
+general              outfitters                  {~{equipment}}
+general              precious metals             {metal:precious}
+general              pottery                      
+general              produce                     
+general              property                     
+general              provisions                   
+general              reagents                    {reagent}
+general              services                    
+general              shoes                       {footwear}
+general              spell components            {spell component}
+general              spices                      {spice}
+general              transportation              
+general              wine                        
 
 : Arms
-ammo                {~{ammo}}
-armor               {~{armor}}
-siege weapon        {~{siege}}
-weapon              {~{weapon}}
+ammunition           {{~{ammo}}+}                {{~{ammo}}+}
+armor                {{~{armor}}+}               {{~{armor}}+}
+siege weaponry       {{~{siege}}+}               {{~{siege}}+}
+weaponry             {{~{weapon}}+}              {{~{weapon}}+}
 
 : Art
-art                 {art}
-book                {BOOK}
-gemstones           {gem}
-luxury              {luxury}
-musical instrument  {musical instrument}
+art                  {{art:type}+}               {art}
+books                {{book:type}+}              {book}
+gemstones            {{gem}+}                    {{gem}+}
+luxuries             luxuries                    {luxury}
+musical instruments  {{musical instrument}+}     {{musical instrument}+}
 
 : Clothing
-accessory            {~{outfit:accessories}}
-clothing             {~{clothing}}
-jewelry              {jewelry}
-footwear             {~{footwear}}
+accessories          outfits                     {outfit}
+clothing             clothing                    {clothing}                    
+jewelry              {{jewelry}+}                {{jewelry}+}
+footwear             {~{footwear}}               {~{footwear}}
 
 : Consumable
-drink                {drink}
-food                 {berry}
-food                 {salad:ingredient}
-food                 {{fruit}+}
-food                 {{nut}+}
-food                 {{vegetable}+}
-food                 {~{provisions}}
-grain                {bread:grain}
-herb                 {herb}
-meal                 {menu}
-medicine             {apothecary}
-oil                  {oil}
-spice                {spice}
-sweetener            {menu:sweet}
+drinks               {{drink}+}                  {{drink}+}
+food                 {{:food}+}                  {{:food}+}
+grains               {{bread:grain}+}            {{bread:grain}+}
+herbs                {{herb}+}                   {{herb}+}
+meals                meals                       {menu}
+medicine             {{apothecary:type}+}        {apothecary}
+oils                 oils                        {oil}
+spices               spices                      {spice}
+sweeteners           sweeteners                  {menu:sweet}
+
+: food
+{berry}
+{bread}
+{salad:ingredient}
+{fruit}
+{meat}
+{nut}
+{vegetable}
+{~{provisions}}
+
+: Crafted
+alchemy supplies     alchemy supplies            {alchemy.item}
+containers           {{~{container}}+}           {{~{container}}+}
+equipment            {{device}+}                 {{device}+}
+equipment            {{~{equipment}}+}           {{~{equipment}}+}
+equipment            {{~{thief gear}}+}          {{~{thief gear}}+}
+fabrics              {~{fabric}}                 {~{fabric}}
+furnishings          {{~{furnishing}}+}          {{~{furnishing}}+}
+general              accessories
+general              ammunition                  {{~{ammo}}+}
+general              armor                       {{~{armor}}+}
+general              arms                        {{~{weapon}}+}
+general              books                       {book}
+general              clothing                    {outfit}
+general              footwear                    {footwear}
+general              furnishings                 {furnishing}
+general              jewelry                     {jewelry}
+general              musical instruments         {musical instrument}
+general              outfitters                  {~{equipment}}
+general              pottery
+magical gear         magical gear                {Enchanted Item}
+materials            {~{man made}}               {~{man made}}
+miscellaneous        {{~{tiny item}}+}           {{~{tiny item}}+}
+poisons              poisons                     {poison}
+potions              potions                     {Potion}
+tack                 {{~{tack}}+}                {{~{tack}}+}
+wands and staves     {wands|rods|staves}         {{Wand|Rod|Staff}}
 
 : Furnishings
-furnishing           {~{furnishing}}
+furnishings          {{~{furnishing}}+}          {{~{furnishing}}+}
 
 : Gear
-container            {~{container}}
-equipment            {~{equipment}}
-tack                 {~{tack}}
+containers           {{~{container}}+}           {{~{container}}+}
+equipment            {{~{equipment}}+}           {{~{equipment}}+}
+tack                 {{~{tack}}+}                {{~{tack}}+}
 
 : Illicit
-contraband           {smuggled}
-equipment            {~{thief gear}}
-poison               {poison}
+contraband           {smuggled}                  {smuggled}
+equipment            {{~{thief gear}}+}          {{~{thief gear}}+}
+poisons              poisons                     {poison}
 
 : Magic
-alchemy              {~{alchemy.item}}
-charm                {charm}
-component            {spell component}
-familiar             {familiar}
-gear (magical)       {enchanted item}
-potion               {potion}
-reagent              {reagent}
-robe (magical)       {MAGIC ROBE.NAME}
-treasure             {treasure}
-wand                 {wand}
+alchemy supplies     alchemy supplies            {alchemy.item}
+charms               charms                      {Charm}
+components           spell components            {spell component}
+familiars            {{familiar}+}               {{familiar}+}
+magical gear         magical gear                {Enchanted Item}
+magical robes        magical robes               {Magic Robe}
+potions              potions                     {Potion}
+reagents             reagents                    {reagent}
+treasures            treasures                   {treasure}
+wands and staves     {wands|rods|staves}         {{Wand|Rod|Staff}}
 
 : Materials
-fabric               {~{fabric}}
-fur                  {fur and pelt} fur
-material             {~{made of}}
-material             {~{man made}}
-material             {~{material}}
-material             {~{metal}}
-material             {~{mineral}}
-material             {~{organic}}
-material             {~{wood}}
-precious metals      {~{metal:precious}}
+fabrics              {{~{fabric}}+}              {{~{fabric}}+}
+furs                 hides, furs and pelts       {fur and pelt:fur}
+materials            {{:material}+}              {{:material}+}
+precious metals      {~{metal:precious}}         {~{metal:precious}}
+
+: material
+{~{made of}}
+{~{man made}}               
+{~{material}}
+{metal}
+{mineral}
+{organic}
+{wood}
 
 : Plants and Animals
-food                 {crop}
-animal               {~{fauna}}
-plant                {flora}
-livestock            {~{livestock}}
-mount                {mount}
-pet                  {pet}
+food                 {crop}                      {crop}
+animals              {{~{fauna}}+}               {{~{fauna}}+}
+plants               {flora}                     {flora}
+livestock            {{~{livestock}}+}           {{~{livestock}}+}
+mounts               {{mount}+}                  {{mount}+}
+pets                 {{pet}+}                    {{pet}+}
 
 : Property
-property             {site:artificial}
-property             {city feature:site}
-property             {mine}
+property             sites                       {{site:artificial}+}
+property             buildings                   {{city feature:site}+}
+property             mines                       {mine} mines
 
 : Services
-service              currency exchange
-service              information
-service              transportation
-service              {hireling type}
-service              {profession}
-service              {room and board}
-service              {~{service}}
+services             currency exchange
+services             information
+services             transportation              {{~{transport}}+}
+services             {hireling type}             {hireling type}
+services             {profession:service}        {profession:service}
+services             {room and board}            {room and board}
+services             {~{service}}                {~{service}}
 
 : Transportation
-equipment            {~{transport}}
+equipment            {{~{transport}}+}           {{~{transport}}+}
 
 : Curious
-equipment            {device}
-miscellaneous        {~{tiny item}}
+equipment            {{device}+}                 {{device}+}
+miscellaneous gear   {{~{tiny item}}+}           {{~{tiny item}}+}

@@ -9,6 +9,21 @@
 (Alien): {:ALIEN}
 (Technological): {:TECHNOLOGICAL}
 
+:General
+It is clearly from antiquity.
+It was made by a master of the craft.
+It was made by a strange culture.
+It was owned by a famous hero once.
+It was owned by a royal family once.
+It was owned by a wealthy merchant once.
+It was owned by an infamous villain once.
+It was politically important.
+It was recovered from a famous battle.
+It was recovered from a famous disaster.
+It was stolen from a famous hoard.
+It was thought lost for centuries.
+It was used to murder someone famous.
+
 : Holy
 It's been lost for centuries.
 It once belonged to a dark god.
@@ -16,14 +31,21 @@ It was made for a holy quest.
 It's faithful to you and your cause.
 You must prove yourself to it.
 They want it back.
+It's an important ceremonial item.
+It's an important religious item.
+It was made by a {pseudo class:priest}.
+It was used by a {famous|renowned} {Saint Name}.
+{:General}
 
 : Magic
+It was made by a {50%in}famous {pseudo class:mage}.
 It's covered in mysterious runes.
 It's powered by a trapped soul.
 You must speak the proper words.
 It's charges are running low.
 It's a piece of something bigger.
 The focus crystal needs replacing.
+{:General}
 
 : Masterwork
 It was forged by dwarven blacksmiths.
@@ -32,6 +54,7 @@ No demon lord fights without one.
 It's infused with a drop of dragon blood.
 It's in mint condition.
 It's the best a human could do.
+{:General}
 
 : Natural
 It breathes and pulses in your hand.
@@ -48,6 +71,7 @@ It hurts to look at it.
 It's goopy.
 It's bigger on the inside.
 It's made from meteoric iron.
+{:General}
 
 : Technological
 Its gears click and whiz.
@@ -56,22 +80,41 @@ Sparks fly in all directions.
 It’s a one-of-a-kind prototype.
 It leaks acid all over you.
 It needs reloading after every use.
+{:General}
 
 : Power
-(Blessing): {:BLESSING}
 (Curse): {:CURSE}
 (Enhancement): {:ENHANCEMENT}
 (Force): {:FORCE}
 (Protection): {:PROTECTION}
 (Utility): {:UTILITY}
+It {grants|bestows upon you|gives you the ability to|allows you to} {:blessing}.
+It {can|will} {:inherent}.
+{Power}
+
+: Inherent
+hold more than it should be able to
+glow when danger approaches
+grant a wish
+grant luck
+heal the owner
+produce an endless resource
+protect against poison
+protect you against being charmed
+reflect dark magics
 
 : Blessing
-You see visions of the future.
-You move unseen.
-You’ve had fantastic luck lately.
-You sense lies and deception.
-Disease cannot touch you.
-Dark entities fear you.
+become invisible
+fly
+move unseen
+read someone's thoughts
+see distant places
+see visions of the future
+sense lies and deception
+soothe beasts
+take on the appearance of someone else
+the {blessing}
+turn the undead
 
 : Curse
 You’re plagued by terrible nightmares.
@@ -80,38 +123,43 @@ Your thoughts are not your own.
 You’ve lost your voice.
 You’re aging rapidly.
 The stink just won’t wash off.
+{Curse}
 
 : Enhancement
-You have the might of the giants.
-You’re as agile as the wind.
 You feel healthier than ever.
+You have the might of the giants.
+Your charm is irresistible.
 Your mind is filled with knowledge.
 Your senses are heightened.
-Your charm is irresistible.
+You’re as agile as the wind.
+You’ve had fantastic luck lately.
 
 : Force
 It shoots gouts of flame.
-You shock your foes with lightning.
 The wind obeys your call.
 Thunderous sound blasts your enemies.
 You control illusory phantasms.
 You freeze your target in place.
+You shock your foes with lightning.
 
 : Protection
-You are immune to the elements.
-Your skin is as hard as stone.
+Disease cannot touch you.
 It cloaks you in shadow.
 It fights at your side.
-You’re as steady as a mountain.
 It heals your wounds.
+You are immune to the elements.
+Your skin is as hard as stone.
+You’re as steady as a mountain.
 
 : Utility
 It provides a brilliant light.
-You can command simple beasts.
 You breathe water as if it were air.
+You can command simple beasts.
 You can teleport short distances.
-You understand foreign languages.
 You see and hear over vast distances.
+You understand foreign languages.
+
+===
 
 / http://rpg.divnull.com/wiki/index.php/Exalted_Artifacts
 

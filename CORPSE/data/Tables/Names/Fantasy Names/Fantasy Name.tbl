@@ -13,6 +13,7 @@
 {Ranger Name}
 {Saint Name}
 {Tiefling Name}
+{Witch Name}
 
 : Male
 {Dwarf Name:Male}
@@ -30,3 +31,12 @@
 {Middle-earth Name:Female}
 {Native American Name:Female}
 {Tiefling Name:Female}
+{Witch Name}
+
+: Surname
+{Dwarf Name:Surname}
+{Frontier Name:Surname}
+{Hobbit Name:Surname}
+{Middle-earth Name:Bree Surname}
+{Pirate Name:Surname}
+{Tiefling Name:Surname}

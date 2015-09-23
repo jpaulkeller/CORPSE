@@ -19,7 +19,7 @@ wooden buckler {50%made }of {wood:weapon}
 wooden round shield {50%made }of {wood:weapon}
 
 : Leather
-{50%made }of {fur and pelt:hide} hide
+{50%made }of {leather}
 
 : Metal
 {50%made }of {metal:flavor} {metal:weapon}

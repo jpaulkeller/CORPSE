@@ -18,7 +18,7 @@ a matched suit of {:random armor}
 {:special armor}
 
 : leather armor
-{25%{fur and pelt:hide} hide }{25%{:type leather} }{:leather}{10% lined with {:padding}}
+{25%{leather}}{25%{:type leather} }{:leather}{10% lined with {:padding}}
 
 : heavy armor
 {25%{metal:flavor} }{25%{metal:weapon} }{25%{:type metal} }{:metal}{25% padded with {:padding}}

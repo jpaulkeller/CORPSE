@@ -1,0 +1,158 @@
+: Shop Name
+3x {:Goods}
+{:Service}
+
+: Goods
+{:Proprietor Plural}, {:Creator Name Plural}
+{:Proprietor Plural}, {:Supplier Name Plural}
+{:Proprietor}'s, {:Creator Name}
+{:Proprietor}'s, {:Supplier Name}
+
+: Service
+{:Proprietor Plural}, {:Service Name Plural}
+{:Proprietor}, {:Service Name}
+
+: Proprietor
+{Name}
+
+: Proprietor Plural
+{Name:Surname} and {Name:Surname}
+{Name:Surname} {Brothers|Sisters}
+{Name:Surname} and {Sons|Daughters}
+{Name:Surname} Family
+
+: Creator Name
+{:Creator Prefix} {:Adj} {M:=Merchandise:Crafted}{M.Merchandise}
+{Profession:Craftsman}
+ 
+: Creator Name Plural
+{:Creator Prefix Plural} {:Adj} {M:=Merchandise:Crafted}{M.Merchandise}
+{{Profession:Craftsman}+}
+ 
+: creator prefix
+Artisan of
+Craftsman of
+Creator of
+Fabricator of
+Maker of
+Master of
+Specialist in
+
+: creator prefix plural
+Artisans of
+Craftsmen of
+Creators of
+Fabricators of
+Makers of
+Masters of
+Specialists in
+
+: Supplier Name 
+{:Supplier Prefix} {:Adj} {M:=Merchandise}{M.Merchandise}
+{Profession:Merchant}
+
+: Supplier Name Plural 
+{:Supplier Prefix Plural} {:Adj} {M:=Merchandise}{M.Merchandise}
+{{Profession:Merchant}+}
+
+: supplier prefix
+3x {:supplier} of
+{:source}
+
+: supplier prefix plural
+3x {:supplier}s of
+{:source}
+
+: supplier
+Broker
+Collector
+Consigner
+Curator
+Distributor
+Maker
+Merchant
+Peddler
+Provider
+Purveyor
+Seller
+Trader
+Wholesaler
+
+: source
+a Boutique of
+a Market of
+a Shop of
+an Emporium of
+the Destination for 
+the Only Place for
+the World's Premier Supplier of
+your Local Source for
+
+: Service Name
+{:Service Prefix} {Domain}
+{:Service Prefix} {Merchandise:Services}
+{Profession:Service}
+
+: Service Name Plural
+{:Service Prefix Plural} {Domain}
+{:Service Prefix Plural} {Merchandise:Services}
+{{Profession:Service}+}
+
+: service prefix
+Master of
+Practitioner of
+Specialist in
+Specializing in
+
+: service prefix plural
+Masters of
+Practitioners of
+Specialists in
+Specializing in
+
+: Adj
+Artisanal
+Archival
+Alternative
+Ancient
+Antique
+Anachronistic
+Creative
+Curated
+Childrens'
+Classical
+Delightful
+Domestic
+Extraordinary
+Fanciful
+Foreign
+Fine
+Guild Certified
+Hand-Made
+Handcrafted
+Handpicked 
+High-Quality
+Heirloom
+Interesting
+Imitation
+Incredible
+Local
+Locally-Sourced
+Mens'
+Natural
+Native
+Organic
+Original
+Precious
+Rare
+Restored
+Specialty
+Secret
+Secondhand
+Traditional
+True
+Unique
+Unaltered
+Vintage
+Wondrous
+Womens'

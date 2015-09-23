@@ -6,7 +6,7 @@
 
 / Note: Costs can vary as much as -50% to +100% based on quality, condition, supply and demand.
 
-.Equipment                 Cost    Unit/Size     Weight(lbs)
+.Equipment                Cost     Unit/Size     Weight(lbs)
 .Quality {quality}
 .Condition {condition}
 
@@ -222,10 +222,10 @@ purse                        1 cp                     0.2
 quern
 quilt                        2 sp                    10
 quiver                       8                        1
-quiver (holds 12 arrows)     8 cp                     3
-quiver (holds 20 arrows)    12 cp                     4
-quiver (holds 20 bolts)      1 sp                     3.5
-quiver (holds 20 bolts)      2 sp                     6
+quiver (12-arrow)            8 cp                     3
+quiver (20-arrow)           12 cp                     4
+quiver (20-bolt)             1 sp                     3.5
+quiver (20-bolt)             2 sp                     6
 razor                        1 gp                     0.5
 reed, hollow                 1                        0.1
 robe or cloak               75                        5

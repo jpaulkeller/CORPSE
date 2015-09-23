@@ -3,7 +3,7 @@
 / http://www.dandwiki.com/wiki/SRD:Traps
 
 : Trap
-{T={:type}}{T}: Triggered by {:trigger}, {:{T} RESULT}.  Special: {:special}.
+{T={:type}}{T}: Triggered by {:trigger}, {:{T} RESULT}.  {10%Also: {T2={:type}}{T2}: {:{T2} RESULT}.  }Special: {:special}.
 
 : Simple
 a {:type} trap
@@ -15,27 +15,33 @@ a {:type} trap
 alarm
 ambush
 blade
+cc
 curse
 electrical
-gas
 magic
 pit
 projectile
 rock fall
 spikes
 spray
+vent
 
 : Trigger
-breaking a trip wire
 closing a door
 flipping a lever
+heat-activated
+hitting a trip wire
 interacting with an item
 killing a creature
-making noise
+light-activated
+magical sensor (detects {alignment|gender|race|magic})
+magnetic
 moving an item
-opening a door
+opening a {door|container}
+pressure-activated
 saying a certain word or phrase
-stepping on a pressure plate
+sound-activated
+timer-activated
 unlocking a door or chest
 
 : alarm result
@@ -51,7 +57,18 @@ releases a {undead}
 
 : blade result
 scythe pendulum
+spear thrust
 spinning blades
+
+: cc result
+ball bearings
+bear traps
+cage
+caltrops
+darkness
+greasy oil
+giant spider
+slope or slide
 
 : curse result
 cursed: {curse}
@@ -59,14 +76,10 @@ cursed: {curse}
 : electrical result
 the surface becomes electrified 
 
-: gas result
-a cloud of gas is released. {GAS EFFECT}
-
 : magic result
 an anti-magic field may cause magic items to temporarily or permanently lose their properties
-casts {spell}
-causes Confusion
-causes Feeblemind
+casts {:Spell}
+casts {Spell}
 causes a geas-like compulsion
 causes {P:=phobia}{P.phobia} ({P.description}) for {2d6} {{duration:moderate}+}
 fireball from the ceiling 
@@ -77,15 +90,41 @@ reduces victim’s size for {3d10} {{duration:short}+}
 shock wave 
 spell distortion field: {range|duration|area of effect} is {increased|decreased}
 summons {demon}
-the area becomes friged; walls and floor are coated in ice
+the area becomes frigid; walls and floor are coated in ice
 transference distortion field ({+|-} {6} levels)
 victims are teleported
+
+: Spell
+Acid Arrow
+Alarm
+Blade Barrier
+Burning Hands
+Cause Disease
+Chain Lightning
+Cone of Cold
+Confusion
+Curse
+Feeblemind
+Fireball
+Flame Strike
+Inflict Wounds
+Lightning Bolt
+Magic Missile
+Phantasmal Killer
+Power Word Kill
+Prismatic Spray
+Silence
+Sleep
+Stinking Cloud
+Summon Monster
+Wall of Fire
+Web
 
 : pit result
 {pit trap}
 
 : projectile result
-{33%poisoned }{arrows|daggers|spears|darts|bolts} are shot from a hidden mechanism in the {ceiling|wall}
+{33%poisoned }{arrows|daggers|spears|darts|bolts|stones} are shot from a hidden mechanism in the {ceiling|wall}
 a hidden turret pops up, and sprays {33%poisoned }darts 
 
 : rock fall result
@@ -100,6 +139,18 @@ liquid with a {smell:synonym foul} like {smell:foul} sprays from the {wall|ceili
 acid sprays from the {wall|ceiling}
 the room begins to flood with {freezing |scalding | }water
 {2d3} jets of flames shoot from the {wall|ceiling}
+
+: vent result
+Dust of Sneezing and Choking is released
+a Stinking Cloud fills the chamber
+a blast of flames burns anyone in the area
+a blast of steam scalds anyone in the area
+a cloud of Mummy Dust fills the area
+a cloud of gas is released: {GAS EFFECT}
+fine sand is released, slowly filling the chamber
+flaming oil is sprayed across the area
+noxious smoke is released
+streams of {acid|slime} are sprayed on anyone in the area
 
 : special
 damage inflicted by the trap cannot be healed with magic

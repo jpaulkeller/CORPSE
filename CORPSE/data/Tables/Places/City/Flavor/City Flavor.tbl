@@ -52,9 +52,22 @@ the site of a famous battle
 {street}
 
 : general
+has a harvest-able forest is located nearby
+has a {mine} mine is located nearby
+has easy access to a freshwater {spring|stream}
+has good fishing in the nearby waters
+has good hunting in the nearby forests
+has pretty countryside nearby
+has rich farmland surrounds the area
 has the best views in town
-is contested territory between {GANG:NAME} and {GANG:NAME}.
-is near {Inn Name}, known for its {tavern flavor}
+is a border site to a neighboring kingdom/province
+is a prime harbor location on a river/coast
+is an initial immigration point for colonists
+is centrally located between two other towns
+is centrally located in the area
+is contested territory between {gang:name} and {gang:name}.
+is easy to defend due to the geography
+is near {inn name}, known for its {tavern flavor}
 is notorious as a place where lovers go for discreet affairs
 is the best place to watch the sunset in summer
 is the place where gangs of youths gather to taunt each other or show off their bravery

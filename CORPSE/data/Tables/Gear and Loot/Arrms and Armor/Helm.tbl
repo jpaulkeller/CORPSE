@@ -1,6 +1,6 @@
 : Helm
-{25%{condition:cloth} }{:cloth} made of {fur and pelt:leather}{25% {:extra}}
-{10%{metal:flavor} }{:composite} made of {metal:weapon.metal} and {fur and pelt:hide} hide{25% {:extra}}
+{25%{condition:cloth} }{:cloth} made of {leather}{25% {:extra}}
+{10%{metal:flavor} }{:composite} made of {metal:weapon.metal} and {leather}{25% {:extra}}
 {25%{metal:flavor} }{:metal} {helm|helmet} made of {metal:weapon.metal}{25% {:extra}}
 
 : cloth

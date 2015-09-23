@@ -6,69 +6,59 @@
 {:pre} {herb}
 
 : pre
-balm of
+10x {:type} of
 boiled
 clarified
-concentrate of
-concoction of
-cream of
 crushed
-diffusion of
 distilled
 essence of
 essential oil of
-extract of
 ground
-infusion of
 oil infused with
-oil of
-ointment of
 powdered
-pressings of
-tincture of
-vapors of
 
 : post
-admixture
-balm
+10x {:type}
 bark
 berries
 bitters
+cream
+flower
+leaf
+pollen
+root
+tea
+vinegar
+
+: type
+balm
+compress
 concentrate
 cream
-decoction
+diffusion
+distillation
 dust
 extract
-flower
 gel
 infusion
 juice
-leaf
 nectar
 oil
 ointment
 paste
 perfume
-pollen
 powder
-root
+poultice
+pressings
 salve
 spirits
-stem juice
-tea
+tincture
 unguent
-vinegar
+vapors
+{:mix}
 
 : mix
 admixture
 blend
-compress
 concoction
-cream
-distillation
-infusion
 mixture
-ointment
-paste
-poultice
-unguent

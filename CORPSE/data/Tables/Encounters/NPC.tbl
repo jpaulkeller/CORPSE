@@ -8,7 +8,7 @@
 5x {man|woman|person}
 5x {profession}
 5x {race}
-5x {merchant|trader|vendor|peddler} of {{merchandise}+}
+5x {merchant|trader|vendor|peddler} of {merchandise}
 3x {pseudo class}
 {boy|girl|child}
 {hireling type}

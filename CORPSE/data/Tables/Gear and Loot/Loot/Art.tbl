@@ -36,7 +36,7 @@ portrait
 {50%{small|large} }{made of:hard} {bust|figurine|sculpture|statue} of {:OF}
 
 : Monument
-{size:large} {made of:hard} {sculpture|statue} of {:OF}
+{size:large} {made of:hard} {bust|sculpture|statue} of {:OF}
 {size:large} {diorama|mosaic|mural} of {:OF}
 {size:large} monument to {Divine Name}
 
@@ -48,6 +48,17 @@ a {profession}
 a {pseudo class}
 {Divine Name}
 {Hero:Name}
+
+: Type = Idol + Drawing + Weaving + Coat of Arms
+
+: Idol
+bust 
+diorama
+mosaic
+monument
+mural 
+sculpture
+statue
 
 : Drawing
 carving
@@ -120,8 +131,10 @@ intricate
 ornate
 peculiar
 popular
+quaint
 rare
 realistic
+rustic
 simple
 simple but elegant
 strangely organic

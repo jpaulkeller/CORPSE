@@ -31,9 +31,9 @@
 {fabric}
 
 : Leather
-{fur and pelt:hide.animal} leather
-/ {fur and pelt:exotic.animal} fur
-/ {furred monster} fur
+{leather}
+{fur and pelt:exotic.animal} fur
+{furred monster} fur
 
 : Precious
 {metal:precious}
