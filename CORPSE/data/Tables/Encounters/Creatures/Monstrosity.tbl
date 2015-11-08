@@ -1,6 +1,6 @@
 / Strange creatures with special features.  These are typically unique creatures, created or transformed
 / (intentionally or not) by some magic or sorcery.  They might be:
-/ - mutant/prehistoric creatures of unusual size, features, or abilities
+/ - mutant/aberration/prehistoric creatures of unusual size, features, or abilities
 / - chimeric hybrids (the result of breeding experiments or amalgamation)
 / - genetically engineered
 / - alien from another world/plane/dimension
@@ -11,6 +11,7 @@
 / - magically animated golems or elementals
 
 : Monstrosity
+{:beast}
 {:mutant}
 {:alien}
 {:hybrid}
@@ -26,12 +27,12 @@
 
 : Alien
 tentacled alien {:origin}
-{acid|air|earth|fire|shadow|water} elemental
+{elemental} elemental
 {demon}
 
 : Hybrid
-{33%{:size} }hybrid with a {fauna} head on a {fauna{!different}} body
 amalgamation with parts from a {fauna}, {fauna{!different}}{50%, and {fauna{!different}}}
+{33%{:size} }hybrid with a {fauna} head on a {fauna{!different}} body
 {33%{:size} }{celestial|demonic|divine|elemental} {fauna}
 
 : Cyborg

@@ -1,6 +1,7 @@
 / Sources: Lbs/Cubic Ft from Best of DRAGON, Vol I, p 20. and Page's pages
 /          Values from DRAGON Magazine #83, page 10.
 / http://www.random-generator.com/index.php?title=SimpleGem
+/ https://41.media.tumblr.com/576db70fe91688de6810de1319f5127e/tumblr_nswdt0kg161ucmmnlo1_1280.jpg
 
 : Fancy = ".*fancy.*
 : Ornamental = ".*ornamental.*
@@ -17,6 +18,7 @@ agate              160    semi-precious
 agatized coral
 ajoite
 albite
+alestone                                             semi-precious
 alexandrite               bright green       100gp   fancy
 amazonite
 amber               67    clear golden       100gp   fancy
@@ -29,7 +31,9 @@ ammonite
 amphibole phantom quartz
 analcime
 andalusite
+andar                                                semi-precious
 angelite
+angel’s skin                                         fancy
 anglesite
 antigorite
 apache tears
@@ -38,6 +42,7 @@ aquamarine                blue-green         500gp   fancy/precious
 aragonite
 astrophyllite
 aventurine
+aventurine                                           semi-precious
 axinite
 azurite                                       10gp   ornamental
 azurite-galena
@@ -50,6 +55,7 @@ bismuth
 bixbyite
 black agate
 black diamond             clear grey
+black mica                                           ornamental
 black opal                dark, near opaque  100pp   gem
 black pearl               black              500gp   precious; rare
 black sapphire            blue-black         500pp   jewel
@@ -61,8 +67,11 @@ blue chalcedony
 blue fluorite
 blue lace agate
 blue quartz               blue                10gp   ornamental crystalline
+bluestone                                            ornamental
+boakhar                                              semi-precious
 botswana agate
 bowenite
+brandeen                                             fancy
 brazilianite
 bronzite
 brookite
@@ -73,6 +82,7 @@ bustamite
 cacoxenite
 cairngorm                 clear grey          50gp   smoky quartz
 calcite
+calcite                                              ornamental
 carnelian                 yellow-red          50gp   semi-precious, creativity, confidence, vitality, motivation
 cassiterite
 cavansite
@@ -89,6 +99,7 @@ cinnabar
 citrine                   yellow              50gp   semi-precious
 clear quartz              clear               10gp   ornamental crystalline
 cleavelandite
+clelophane                                           semi-precious
 clinozoisite
 copal
 coral                                        100gp   fancy
@@ -98,77 +109,124 @@ crystal
 cuprite
 cymophane (cat's eye)
 danburite
+datchas                                              semi-precious
 diamond            200    clear              500pp   jewel; hardest
 dioptase
+dioptase                                             semi-precious
 dragon stone
 dumortierite
 emerald                   bright green       100pp
 epidote
+euclase                                              precious
 eudialyte
 eye agate                                     10gp   ornamental
 fancy agate
 feldspar
+feldspar                                             ornamental
 fire agate                                    10gp   ornamental
 fire opal                 orange-red         100pp
+flamedance                                           precious
 fluorite
+fool’s gold                                          semi-precious
 frost agate                                   10gp   ornamental
+fugilite                                             precious
 garnet             230    red                100gp   precious, energy, health, passion
 gold apatite
 golden sapphire           golden             100pp   oriental topaz
-green diopside
 green apophyllite
 green aventurine
 green calcite
 green chlorite
+green diopside
 green fluorite
 green sapphire            green              500pp   oriental emerald
+hambergyle                                           semi-precious
 heliotrope                bloodstone
 hematite                  silver                     ornamental
 horn coral
+horn coral                                           precious
 hyacinth                  jacinth
+hydrophane                                           semi-precious
+hypersthene                                          semi-precious
+iol                                                  semi-precious
+irtios                                               semi-precious
 jacinth                   orange-red         500pp   crystalline
 jade                      green              100gp   fancy
+jargoon                                              fancy
 jasper                                        50gp   semi-precious, stability, healing, tranquility
 jet                       black              100gp   fancy; flammable
+karavin’s crystal                                    fancy
+kornerupine                                          fancy
 lapis lazuli              opaque blue         10gp   ornamental; semi-precious
+lynx eye                                             ornamental
+lyriyl                                               semi-precious
 malachite          240    green               10gp   semi-precious; ornamental
+malacon                                              semi-precious
+mellochrysos                                         semi-precious
 moonstone                 white               50gp   semi-precious
 moss agate                clear green         10gp   ornamental;
+muras’s tears                                        fancy
+mykaro                                               semi-precious
+mynteer                                              semi-precious
 neon apatite
 obsidian                  black               10gp   ornamental; volcanic glass
-onyx                      black/white         50gp    semi-precious
+octel                                                fancy
+onyx                      black/white         50gp  2 semi-precious
 opal               137                       100pp   semi-precious
 optical calcite
 orange aventurine
 orange calcite
+orbaline                                             precious
+orprase                                              semi-precious
 pearl                     lustrous white     100gp   fancy
 peridot                   green              500gp   precious
-pink calcite
+phenalope                                            semi-precious
 pink aventurine
+pink calcite
+pyrite                                               ornamental
+rainbow obsidian                                     semi-precious
+raindrop                                             precious
 red aventurine
 rhodochrosite             pink-red            10gp   ornamental, love, power, joy
 rhodonite                 pink/black          10gp   ornamental, hidden talents, love, power, generosity
+rock crystal                                         semi-precious
 rose quartz               rose                10gp   ornamental crystalline, love, beauty, happiness, peace
 ruby                      clear red          500pp   jewel
+samarskite                                           semi-precious
 sapphire                  clear blue         100pp
 sardonyx                  opaque              50gp   semi-precious
+scapra                                               fancy
+serpentine                                           semi-precious
+shandon                                              fancy
+skydrop                                              semi-precious
 smoky quartz              clear grey          10gp   ornamental crystalline
+sphene                                               precious
 spinel                    green/blue         250gp   precious
 spotted agate
+star diopside                                        fancy
 star ruby                                    100pp
 star sapphire             blue               100pp
+sunstone                                             ornamental
+tabasheer                                            semi-precious
+tchazar                                              semi-precious
 thunder bay amethyst
 tiger eye                 golden              10gp   ornamental
 topaz              220                       500gp   precious
 tourmaline                                   100gp   fancy
 tree agate
+tremair                                              fancy
 turquoise                 turquoise           10gp   ornamental
+ulvaen                                               fancy
 vera cruz amethyst
+waterstar                                            fancy
 white agate
 white aventurine
+white mica                                           ornamental
+witherite                                            semi-precious
 yellow aventurine
 yellow calcite
 yellow optical calcite
+ziose                                                fancy
 zircon                                        50gp   semi-precious
 
 : Quality
@@ -269,70 +327,3 @@ tower cut
 vogel cut
 wand cut
 {fauna} carved
-
-===
-
-- ornamental
-Bluestone
-Feldspar
-Calcite
-Black Mica
-Lynx Eye
-White Mica
-Sunstone
-Pyrite
-
-;SemiPrecious Stones
-Alestone
-Andar
-Aventurine
-Boakhar
-Clelophane
-Datchas
-Dioptase
-Fool’s Gold
-Hambergyle
-Hydrophane
-Hypersthene
-Iol
-Irtios
-Lyriyl
-Malacon
-Mellochrysos
-Mykaro
-Mynteer
-Orprase
-Phenalope
-Rainbow Obsidian
-Rock Crystal
-Samarskite
-Serpentine
-Skydrop
-Tabasheer
-Tchazar
-Witherite
-
-;Fancy Stones
-Angel’s Skin
-Brandeen
-Jargoon
-Kornerupine
-Muras’s Tears
-Octel
-Scapra
-Shandon
-Karavin’s Crystal
-Star Diopside
-Tremair
-Ulvaen
-Waterstar
-Ziose
-
-;Precious Stones
-Euclase
-Flamedance
-Horn Coral
-Orbaline
-Raindrop
-Fugilite
-Sphene

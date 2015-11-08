@@ -1,66 +1,81 @@
 / http://www.apolitical.info/webgame/tables.php
 
-ape
-baboon
+: Familiar = Common + Uncommon + Rare + Aquatic
+
+: Common
 badger
 bat
-bear
-boar
-camel
 cat
-cheetah
-coyote
-crocodile
 crow
-dingo
 dog
-donkey
-eagle
-echidna
-elephant
 ferret
 fox
 frog
-giant crocodile
-giant octopus
-giant squid
 hare
 hawk
+otter
+owl
+rabbit
+rat
+raven
+snake
+toad
+
+: Uncommon
+armadillo
+boar
+coyote
+dingo
+eagle
 horse
 hyena
 imp
+lizard
+mink
+mouse
+porcupine
+raccoon
+seagull
+skunk
+weasel
+wolf
+wolverine
+wombat
+
+: Rare
+ape
+baboon
+bear
+camel
+cheetah
+donkey
+echidna
+elephant
+hummingbird
 jackal
 kookaburra
 leopard
 lion
-lizard
-manta ray
-mink
 monitor lizard
 monkey
-mouse
 mule
-octopus
-otter
-owl
-platypus
+pelican
 polar bear
 pony
 puma
-rabbit
-rat
-raven
 rhinoceros
 scarab
 scorpion
-shark
-snake
-squid
 tiger
-toad
 war pony
-weasel
+
+: Aquatic
+crocodile
+giant crocodile
+giant octopus
+giant squid
+manta ray
+octopus
+shark
+squid
 whale
-wolf
-wolverine
-wombat

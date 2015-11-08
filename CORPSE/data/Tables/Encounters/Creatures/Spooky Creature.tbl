@@ -1,0 +1,39 @@
+/ http://adungeonaday.tumblr.com/post/131094054152/spooky-creature-generator
+
+: Spooky Creature
+{:texture} {:animal} {:style}
+
+: Texture
+albino
+ancient
+burned
+dire
+immortal
+mutant
+poxed
+skeletal
+undead
+
+: Animal
+boar
+crow
+fish
+fox
+hare
+hound
+mushroom
+snake
+sparrow
+spider
+
+: Style
+beasts
+children
+creatures
+demons
+ghosts
+golems
+men
+soldiers
+witches
+women

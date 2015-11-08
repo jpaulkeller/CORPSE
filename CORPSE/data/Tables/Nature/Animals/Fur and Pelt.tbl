@@ -1,5 +1,10 @@
 / http://www.legolas.org/items/fur.html 
 
+: Fur and Pelt
+7x {:common.animal} fur
+2x {:exotic.animal} fur
+{furred monster} fur
+
 .Animal      Cost  Weight
 
 : Common
@@ -78,8 +83,3 @@ sheep
 snake
 water buffalo
 zebu
-
-: Fur
-7x {:common.animal} fur
-2x {:exotic.animal} fur
-{furred monster} fur

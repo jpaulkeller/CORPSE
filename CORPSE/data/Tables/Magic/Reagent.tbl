@@ -25,14 +25,19 @@ powdered {metal}
 {{fauna|humanoid|monster|profession}} {blood|bone}{10% {:acquired}}
 
 : acquired
-gathered after a {disaster}
-gathered at {night|midnight|noon|dawn|dusk}
-gathered during the {calendar}
-gathered in the shadow of a {site:artificial}
-gathered near a {site}
-gathered under a {new|full} moon
+8x gathered {:how} 
 gathered with a {metal:enchantable} blade
 {gathered by|given by|taken from} {:who}
+
+: how
+at {night|midnight|noon|dawn|dusk}
+during a {lunar|solar} eclipse
+during the appearance of a comet
+during the {calendar}
+in the shadow of a {site:artificial}
+near a {site}
+under a {new|full} moon
+{during|just after} a {disaster}
 
 : who
 a {nine-fingered|one-eyed|blind|deaf|dead} {man|woman|child|virgin|{race}}

@@ -1,458 +1,28 @@
 / http://random-generator.com/index.php?title=Enchanted_Sword
 
 : Magic Weapon
-{:HiltedIntro} {:HiltedSwordParts} {:MakerChance} {:EnchanterChance} {:HistoryChance}
+{:Hilted Intro} {:Hilted Sword Parts} {50%{:MAKER} }{50%{:ENCHANTER} }{50%{:HISTORY} }
 
-: HiltedIntro
-{Weapon Name}, a {50%{:legendary} }{:HiltedSwordType}
-{Weapon Name}, a {:HiltedSwordType} {:of legend}
-The {50%{:Legendary} }{:BasketedSwordType} {:Called} {Weapon Name}
-The {:HiltedSwordType} {:of legend} {:Called} {Weapon Name}
+: Hilted Intro
+{Weapon Name}, a {50%{:legendary} }{weapon:hilted}
+{Weapon Name}, a {weapon:hilted} {:of legend}
+The {50%{:legendary} }{weapon:basketed} {:called} {Weapon Name}
+The {weapon:hilted} {:of legend} {:called} {Weapon Name}
 
 / sinister
 / wicked-looking
 / spell-forged
 
-: SwordParts
-2x {:HiltedSwordParts}
-{:BasketedSwordParts}
+: Sword Parts
+2x {:Hilted Sword Parts}
+{:Basketed Sword Parts}
 
-: HiltedSwordParts
-5x that has a blade of {:Utility.MetalWeapon}{:MetalHistoryChance}. {:CoreChance} Its hilt is wrapped in {:SwordHiltWrapping}. {:SwordBladeDecor} {:SwordBladeStyle} {:Pommel} {:Quillions} {:DecorMetal} {:Scabbard}
-that has a blade composed of {:Utility.MetalWeapon} {:combined} {:Utility.MetalDecor}{:MetalHistoryChance}. Its hilt is wrapped in {:SwordHiltWrapping}. {:SwordBladeDecor} {:SwordBladeStyle} {:Pommel} {:Quillions} {:DecorMetal} {:Scabbard}
+: Hilted Sword Parts
+5x that has a blade of {metal:weapon}{50% {:METAL HISTORY}}. {50%{:CORE} }Its hilt is wrapped in {:Sword Hilt Wrapping}. {:SWORD BLADE DECOR} {:Sword Blade Style} {:Pommel} {:Quillions} {:Decor Metal} {:Scabbard}
+that has a blade composed of {metal:weapon} {:combined} {metal:enchantable}{50% {:METAL HISTORY}}. Its hilt is wrapped in {:Sword Hilt Wrapping}. {:SWORD BLADE DECOR} {:Sword Blade Style} {:Pommel} {:Quillions} {:Decor Metal} {:Scabbard}
 
-: BasketedSwordParts
-5x that has a blade of {:Utility.MetalWeapon} {:CoreChance}  with a hilt wrapped in {:SwordHiltWrapping}. {:SwordBladeDecor} {:SwordBladeStyle} {:Pommel} {:Basket} {:DecorMetal} {:Scabbard}
-that has a blade composed of {:Utility.MetalWeapon} {:combined} {:Utility.MetalDecor}, with a hilt wrapped in {:SwordHiltWrapping}. {:SwordBladeDecor} {:SwordBladeStyle} {:Pommel} {:Basket} {:DecorMetal} {:Scabbard}
-
-: HiltedSwordType
-40,short sword
-40,longsword
-10,falchion
-10,greatsword
-5,two-bladed sword
-2,butterfly sword
-4,khopesh
-2,sapara
-double scimitar
-4,broad-blade shortsword
-12,scimitar
-2,gladius
-2,flamberge
-3,fullblade
-4,great falchion
-2,great scimitar
-claymore
-
-: BasketedSwordType
-20,broadsword
-70,rapier
-20,scimitar
-60,saber
-5,courtblade
-5,lightblade
-5,thinblade
-10,quickblade
-50,cutlass
-
-: Legendary
-enchanted
-ensorcelled
-famous
-legendary
-long-forgotten
-magical
-mighty
-mythical
-powerful
-spellbound 
-
-: Of Legend
-of legend
-of legendary power
-of mighty power
-of magical power
-of mythical power
-
-: Called
-called
-named
-known as
-
-: MetalHistoryChance
-
-mined by {:Miner}
-{:StolenWord} by {Hero Name} from {:Treasure}
-
-: StolenWord
-looted
-pilfered
-reclaimed
-recovered
-retrieved
-salvaged
-stolen
-
-: Miner
-{:Saint}
-dwarves of the {:Mountains}
-dark elves
-the orc-horde of {:Mountains}
-ancient heroes
-the slaves of {:Slaveholder}
-
-: Treasure
-the {:hoard} of the {:Dragon description.age} {:Stolen Lands Treasure.Chromatic} {:Dragon description.type} {:Dragon names.main}
-the {:hoard} of {:Crypt}
-the {:hoard} of {:Monster Lair}
-the {:hoard} of {:MonsterGroup}
-
-: Hoard
-cache
-hoard
-riches
-spoils
-treasure
-treasure trove
-treasury
-
-: Crypt
-the {:tomb} of {:Saint}
-the {:tomb} of {:Ruler}
-the {:tomb} of {Hero Name}
-
-: Tomb
-barrow
-burial mound
-catacomb
-crypt
-final resting place
-grave
-mausoleum
-sepulchre
-tomb
-vault
-
-: Mountains
-the {:Secret Society Title.OrgDescriptor} Mountains
-the {:Fantasy Names.MaleFirstName} Mountains
-
-: Saint
-St. {Saint Name}
-{:Fantasy Saint.main}
-
-: Slaveholder
-{NOBLE NAME}
-{:Monster}
-{:MonsterGroup}
-
-: Monster Lair
-the {:Lair} of {:Monster}
-
-: Lair
-lair
-nest
-caves
-dungeons
-
-: Monster
-a hydra
-a wyvern
-a behir
-the demon {:Demon Name.Main}
-a roc
-3x {:Delver Fate.humanoids}
-5x {:Delver Fate.dungeonpredator}
-
-: MonsterGroup
-{:Cult}
-
-: Cult
-the {:Secret Society Name.main}, a {:CultDescriptor} {:CultWord} {:CultDetails}
-{:CultDescriptor} {:CultWord} {:CultDetails} {:Called} the {:Secret Society Name.main}
-{:CultDescriptor} {:CultWord} {:CultDetails} {:Forgotten}
-
-: CultDescriptor
-a
-a shadowy
-a forbidden
-an ancient
-a fanatical
-a zealous
-a foul
-a repulsive
-a loathsome
-an eldritch
-a cruel
-a vicious
-an evil
-a vile
-a sinful
-a depraved
-a malicious
-a sinister
-a monstrous
-
-: CultWord
-3,cult
-secret society
-religious movement
-sect
-faction
-monastic order
-
-: CultDetails
-3,who {:Worship} {:Fantasy Pantheon.fulldescription},
-2,who {:Worship} the demon {:Demon Name.Main}
-who {:Worship} {:Fantasy Pantheon.Domains}
-who {:Worship} {:OtherCultGod}
-who {:CultGoal}
-
-
-: Worship
-were devoted to
-worshipped
-venerated
-exalted
-committed horrible acts in devotion to
-sacrificed {:SacrificialVictims} to
-used the sword in foul ceremonies devoted to
-used the sword to sacrifice {:SacrificialVictims} to
-
-: OtherCultGod
-unspeakable horrors
-Elder Gods
-unknown evils
-
-: CultGoal
-sought to bring about the return of {:Fantasy Pantheon.fulldescription}
-prophecied the return of {:Fantasy Pantheon.fulldescription}
-sought to bring about the return of the demon {:Demon Name.Main}
-prayed for the coming of the demon {:Demon Name.Main}
-
-: SacrificialVictims
-virgins
-children
-rivals
-enemies
-slaves
-kidnapped victims
-prisoners
-captives
-their loved ones
-2,themselves
-
-: Forgotten
-lost to history
-long forgotten
-that none remember now
-lost to the sands of time
-now forgotten by all but a few
-overlooked by history
-the knowledge of which is now lost
-of which it is forbidden to speak
-
-: MakerChance
-10,
-It was forged by {Hero Name}.
-It was forged by {Hero Name} and quenched in the blood of {:Monster}.
-It was forged by {Hero Name}, who quenched it in {:MonsterParts.Liquids}.
-It was crafted by the legendary smith {:Fantasy Names.MaleFirstName} during the Age of Heroes.
-It was crafted by a now-forgotten master smith in antiquity.
-It was forged for the coronation day of {NOBLE NAME} by the master smith {:Fantasy Names.MaleFirstName}.
-It was made for {Hero Name} by the master smith {:Fantasy Names.MaleFirstName}.
-It was made for {Hero Name} by the master smith {:Fantasy Names.MaleFirstName}, who quenched it in {:MonsterParts.Liquids}.
-It was crafted by a now-forgotten master smith of a fallen empire.
-
-: EnchanterChance
-
-2,It was {:Enchanted}.
-
-: Enchanted
-{:Blessed} by {:Saint} in the temple of the deity of {:Fantasy Pantheon.Domains}
-{:Blessed} by {:Clerics} of the deity of {:Fantasy Pantheon.Domains} and sacred to that religion’s followers
-3,enchanted {:EnchantmentPlace} by {:Mage} {:EnchantmentDetails}
-
-: Blessed
-3,blessed
-consecrated
-sanctified
-dedicated
-hallowed
-
-: Clerics
-clerics
-priests
-priestesses
-monks
-holy brethren
-holy sisters
-
-: Mage
-the {:ArcaneBooks.ArcaneProfession} {:ArcaneBooks.ArcaneAuthor}
-{:ArcaneBooks.ArcaneAuthor}
-
-: EnchantmentPlace
-
-in a stone circle
-deep beneath the earth
-on the top of a mountain
-in a ritual circle containing the demon {:Demon Name.Main}
-in a pool of {:MonsterParts.Liquids}
-
-: EnchantmentDetails
-
-during a full moon
-on a moonless night
-during a solar eclipse
-on the longest day of the year
-during the appearance of a comet
-in a ceremony lasting a year and a day
-during the vernal equinox
-during the autumnal equinox
-during the summer solstice
-during the midwinter solstice
-
-: MadeFor
-
-: HistoryChance
-3,
-{:History}
-
-: History
-The blade bears a small inscription stating that it was made for {:Fantasy Male Military Hero.main}
-The weapon matches the description of a weapon that once belonged to {:Fantasy Male Military Hero.main}
-The weapon was once owned by {:Fantasy Male Military Hero.main}
-A careful examination reveals the initials of {:Fantasy Male Military Hero.main} This weapon may once have been his.
-This blade was passed from father to son until it was given to {:Fantasy Male Military Hero.main} The whereabouts of this weapon had been unknown since his death.
-Several reproductions have been made in imitation of this blade, because it was made famous by {:Fantasy Male Military Hero.main}
-This may well have been the legendary blade of {:Fantasy Male Military Hero.main}
-Something is known about the career of this blade's former owner - {:Delver Fate.story}
-A scrap of parchment tells the story of the original owner: "{:Delver Fate.story}"
-Although how it came to be here is unclear, this blade has a history of adventuring. {:Delver Fate.story} In all likelihood, this was the weapon associated with that incident.
-3,This is the blade with which {Hero Name} slew {:Slain}.
-
-: CoreChance
-12,
-At the core of the blade is {:Core}.
-The blade was forged around {:Core}.
-Inside a cavity of the blade is {:Core}.
-
-: Core
-{:AngelPart} of the angel {:Angel generator.main}
-{:DemonPart} of the demon {:Demon Name.Main}{:SlainByChance}
-{:DragonPart} of the {:Stolen Lands Treasure.Chromatic} {:Dragon description.type} {:Dragon names.main}{:SlainByChance}
-a piece of {:MonsterParts.DryGoods}{:SlainByChance}
-{:Relic}
-
-: AngelPart
-3,a feather
-a hair
-a lock of hair
-a wingbone
-a finger
-
-: DemonPart
-a wing bone
-an arm bone
-a leg bone
-the spine
-a horn
-a finger
-the tail
-a claw
-a fang
-
-: DragonPart
-a fang
-a wing bone
-a bone
-a claw
-a horn
-the spine
-
-: SlainByChance
-5,
- that was slain by {Hero Name}
-
-: Slain
-{:Monster}
-{Hero Name}
-the demon {:Demon Name.Main}
-the {:Stolen Lands Treasure.Chromatic} {:Dragon description.type} {:Dragon names.main}
-the tyrant {NOBLE NAME}
-
-: Relic
-{:minorrelic} of {:Saint}
-{:moderaterelic}  of {:Saint}
-
-: minorrelic
-a knucklebone
-a toe
-a tooth
-a small blessed statue
-a lock of hair
-the ring
-a scrap of the raiment
-
-: moderaterelic
-the {:Utility.LeftRight} hand 
-the {:Utility.LeftRight} foot
-a thighbone
-an epistle written by the Sacred Hand
-
-: combined
-forged together with
-combined with
-intermingled with
-mixed with
-layered with
-with a core of
-with a core of {:Core} encased by
-with a coating of
-alloyed with
-blended with
-fused with
-melded with
-
-: SwordHiltWrapping
-30,{:Utility.LeatherHide}
-10,{:Utility.MetalDecor} wire
-5,{:Utility.WoodWeapon} with {:Utility.MetalDecor} rivets
-5,{:Utility.LeatherHide} with {:Utility.MetalDecor} wire
-2,{:Utility.LeatherHide} with {:Utility.MetalDecor} studs
-2,{:Utility.HornIvory} with {:Utility.MetalDecor} rivets
-{:Utility.LeatherHide} <b>embedded with numerous small {:Utility.GemType}s</b>
-
-: Scabbard
-5,There is no scabbard present.
-2,There is a scabbard of {:Utility.LeatherHide} with {:Utility.MetalDecor} accents.
-There is a scabbard of {:Utility.LeatherHide} with {:Utility.Fur} fur trim.
-2,There is a scabbard of {:Utility.MetalDecor} with {:Dice.1d12} {:Utility.RelativeSize} {:Utility.GemQuality} {:Utility.GemType} stones embedded in it.
-2,There is a simple scabbard of {:Utility.MetalHard}.
-2,There is a scabbard of {:Utility.Fur} fur with {:Utility.LeatherHide} accents and {:Utility.MetalDecor} trim.
-There is a scabbard of {:Utility.MetalHard}, painted with shiny {:Color.dark} enamel.
-2,There is a scabbard of {:Utility.WoodWeapon} wood inlaid with {:Utility.HornIvory}.
-There is a scabbard of <b>{:Utility.Chitin} chitin</b> with {:Utility.LeatherHide} accents and {:Utility.MetalDecor} trim.
-There is a scabbard of beaten {:Utility.MetalSoft}.
-There is an ornate scabbard of {:Utility.MetalDecor} inlaid with {:Utility.Ornamental Stones}.
-
-: SwordBladeDecor
-5,The blade is decorated with a {:Motif} motif.
-2,Serpentine runes run up and down the blade.
-4,The blade is decorated with runes in {:Utility.RuneLanguage} that convey the meaning <b>"{INSCRIPTION}"</b>. <b>{:RuneGlowChance}</b>
-2,The blade is decorated with knotwork.
-2,The blade is decorated with an etched depiction of {:Artwork.Depiction}.
-2,The blade is decorated with an engraved depiction of {:Artwork.Depiction}.
-2,The blade is decorated with an embossed depiction of {:Artwork.Depiction} with detailwork in {:Utility.MetalDecor}.
-2,The blade is painted with shiny {:Color.dark} enamel.
-The blade has been carbonized with a flat {:Color.dark} paint to keep it from reflecting light except along the edges.
-10,The blade is inscribed with the word(s) <b>"{INSCRIPTION}"</b> in {:Inscriptions.Language}. <b>{:RuneGlowChance}</b>
-2,The blade is dull and was probably intended only for display.
-2,The entire blade is marked with symbols associated with {:Secret Society Name.main} and was probably intended for ceremonial use by that {:CultWord}.
-20,
-2,{:SwordBladeDecor} {:SwordBladeDecor}
-3, an ornately decorated {:Symbol} is carved above the hilt
+: Basketed Sword Parts
+5x that has a blade of {metal:weapon} {50%{:CORE} }with a hilt wrapped in {:sword hilt wrapping}. {:SWORD BLADE DECOR} {:Sword Blade Style} {:Pommel} {:Basket} {:Decor Metal} {:Scabbard}
 
 : Motif
 flame
@@ -468,44 +38,33 @@ religious
 knotwork
 maritime
 
-: Symbol
-pentacle
-triangle
-star
-cloverleaf
-teardrop
-circle
-crescent
-eye
-fist
-
-: SwordBladeStyle
-30,
+: Sword Blade Style
+.
 The blade is of Kris style (wavy and serpentine).
 The blade is serrated, giving it a wicked appearance.
 A blood groove runs the length of the blade on each side.
-2,The blade tapers, widens, and retapers in a "leaf" shape.
+The blade tapers, widens, and retapers in a "leaf" shape.
 
 : Pommel
-10,A small rounded pommel provides balance.
-5,A brass cap with 6 evenly spaced studs serves as the pommel.
-2,The pommel is of "skullcrusher" shape, allowing its use as a bludgeoning weapon.
-4,The large, round pommel is stamped with {:Utility.Symbols}.
-5,The pommel is in the shape of {:PommelShapes}.
-2,The pommel contains a {:Utility.RelativeSize} {:Utility.GemQuality} {:Utility.GemType}.
-3,The pommel consists only of a lanyard ring.
-The pommel is in the shape of {:PommelShapes} and screws off to reveal a hollow hilt.
-The hilt ends in a sharp blade where a pommel would normally be.
+A small rounded pommel provides balance.
+A brass cap with 6 evenly spaced studs serves as the pommel.
+The pommel is of "skullcrusher" shape, allowing its use as a bludgeoning weapon.
+The large, round pommel is {art:decorated}.
+The pommel is in the shape of {:pommel shapes}.
+The pommel contains a {gem:quality} {gem}.
+The pommel consists only of a lanyard ring.
+The pommel is in the shape of {:pommel shapes} and screws off to reveal a hollow hilt.
+The hilt ends in a sharp spike where a pommel would normally be.
 
 : Quillions
-There are straight {:QuillionShape} quillions at the crossbar with a large ring protruding from one of the blade sides.
+There are straight {:quillion shape} quillions at the crossbar with a large ring protruding from one of the blade sides.
 There are arched quillions protruding toward the blade end.
-There are straight, unremarkable {:QuillionShape} quillions at the crossbar.
-2,The {:QuillionShape} quillions and center of the crossbar on each side contain matching {:Utility.RelativeSize} {:Utility.GemQuality} {:Utility.GemType} stones.
-3,The {:QuillionShape} quillions are unremarkable, but the crossbar is stamped with {:Utility.Symbols}.
+There are straight, unremarkable {:quillion shape} quillions at the crossbar.
+The {:quillion shape} quillions and center of the crossbar on each side contain matching {gem:quality} {gem} stones.
+The {:quillion shape} quillions are unremarkable, but the crossbar is {art:decorated}.
 This sword has no quillions; the blade widens towards the base, then tapers as it passes straight into the hilt wrapping.
 The quillions and crossbar are engraved in a leaf motif.
-The {:QuillionShape} quillions end in large circles, which match the crossbar circle. All are stamped with {:Utility.Symbols}.
+The {:quillion shape} quillions end in large circles, which match the crossbar circle. All are {art:decorated}.
 The quillions are shaped like eagle talons, each clutching a sphere.
 One quillion arches upward, the other downward, forming an S shape.
 The quillions are in the shape of serpent necks and heads.
@@ -515,15 +74,15 @@ The quillions are unremarkable, but the crossbar is shaped like a scalloped seas
 The quillions and crossbar form a five-pointed star pointing down toward the hilt.
 The quillions and crossbar form a five-pointed star pointing towards the blade.
 The quillions are larger than normal and each precisely matches the main hilt and pommel.
-The {:QuillionShape} quillions protrude about two inches on either side, then turn sharply downward for about 5 inches.
-4,The simple {:QuillionShape} quillions each end in {:PommelShapes}, and the crossbar has an engraving of the same in a circle.
-2,The simple {:QuillionShape} quillions each end in {:PommelShapes}, and the crossbar is stamped with {:Utility.Symbols}.
-2,The simple {:QuillionShape} quillions each end in {:PommelShapes}, and the crossbar contains a {:Utility.RelativeSize} {:Utility.GemQuality} {:Utility.GemType}.
+The {:quillion shape} quillions protrude about two inches on either side, then turn sharply downward for about 5 inches.
+The simple {:quillion shape} quillions each end in {:pommel shapes}, and the crossbar has an engraving of the same in a circle.
+The simple {:quillion shape} quillions each end in {:pommel shapes}, and the crossbar is {art:decorated}.
+The simple {:quillion shape} quillions each end in {:pommel shapes}, and the crossbar contains a {gem:quality} {gem}.
 
-: QuillionShape
-6,round
-3,square
-3,triangular
+: quillion shape
+round
+square
+triangular
 hexagonal
 pentagonal
 octagonal
@@ -542,69 +101,61 @@ The basket is a short dome coming down over the grip, and does not connect to th
 The basket has the appearance of spiderwebs.
 The basket has a scalloped, clamshell appearance.
 
-: DecorMetal
-5,
-3,The decorative elements of the sword are composed of {:Utility.MetalDecor} {:MetalHistoryChance}.
+: Decor Metal
+.
+The decorative elements of the sword are composed of {metal:enchantable} {:MetalHistoryChance}.
 
-: PommelShapes
-the head of an Illithid, its tentacles wrapping around the hilt{:PommelEyes}
-2,the head of a Human male, its visage frozen in horror{:PommelEyes}
-2,the head of a helmeted man with a determined expression{:PommelEyes}
-2,the head of a wily-looking Elf{:PommelEyes}
-2,the head of a gruff-looking Dwarf{:PommelEyes}
-a Beholder head{:PommelEyes}
-2,a Dragon head with its mouth agape{:PommelEyes}
-3,the head of an armored knight in a crusader-style helmet (no face visible)
-2,an eyeball
-3,a hand clutching a sphere
-3,talons clutching a sphere
-3,a simple cone
-3,a smooth cylinder
-4,a horse's head{:PommelEyes}
-2,an eagle's head{:PommelEyes}
-2,a lion's head{:PommelEyes}
-3,a cat's head{:PommelEyes}
-4,a serpent's head{:PommelEyes}
-an icosahedron (d20)
-a dodecahedron (d12)
+: Pommel Shapes
+a beholder head{50%, {:pommel eyes}}
+a dragon head with its mouth agape{50%, {:pommel eyes}}
+a bull's head
+a cat's head{50%, {:pommel eyes}}
+a chess piece
+a clenched fist
+a crescent moon
 a crystal prism
-3,a mermaid, her tail wrapping around the hilt{:PommelEyes}
-2,a nude female figurehead from the torso up{:PommelEyes}
-2,a nude female figurehead from the waist down{:PommelEyes}
-2,a wizard with a beard and pointy hat{:PommelEyes}
-2,a ram's head{:PommelEyes}
-2,a head with a strange-looking mask{:PommelEyes}
-3,a dog's head{:PommelEyes}
-2,a spider astride an orb
-a small crouching dragon{:PommelEyes}
-4,a clenched fist
-3,a chess piece
-3,a perched falcon{:PommelEyes}
-the head of a snarling orc{:PommelEyes}
-4,a skull{:PommelEyes}
-2,a monkey head{:PommelEyes}
-a squatting toad{:PommelEyes}
-4,a wide scalloped seashell
-2,a scorpion's stinger
-4,a stylized sun
-4,a crescent moon
-2,a five-pointed star
-a pineapple
-2,a bull's head
+a dodecahedron (d12)
+a dog's head{50%, {:pommel eyes}}
 a fish head
-2,a serpent's head
-3,a spike
+a five-pointed star
+a hand clutching a sphere
+a head with a strange-looking mask{50%, {:pommel eyes}}
+a horse's head{50%, {:pommel eyes}}
+a lion's head{50%, {:pommel eyes}}
+a mermaid, her tail wrapping around the hilt{50%, {:pommel eyes}}
+a monkey head{50%, {:pommel eyes}}
+a nude female figurehead from the torso up{50%, {:pommel eyes}}
+a nude female figurehead from the waist down{50%, {:pommel eyes}}
+a perched falcon{50%, {:pommel eyes}}
+a pineapple
+a ram's head{50%, {:pommel eyes}}
+a scorpion's stinger
+a serpent's head
+a serpent's head{50%, {:pommel eyes}}
+a simple cone
+a skull{50%, {:pommel eyes}}
+a small crouching dragon{50%, {:pommel eyes}}
+a smooth cylinder
+a spider astride an orb
+a spike
+a squatting toad{50%, {:pommel eyes}}
+a stylized sun
+a wide scalloped seashell
+a wizard with a beard and pointy hat{50%, {:pommel eyes}}
+an eagle's head{50%, {:pommel eyes}}
+an eyeball
+an icosahedron (d20)
+talons clutching a sphere
+the head of a Human male, its visage frozen in horror{50%, {:pommel eyes}}
+the head of a gruff-looking Dwarf{50%, {:pommel eyes}}
+the head of a helmeted man with a determined expression{50%, {:pommel eyes}}
+the head of a snarling orc{50%, {:pommel eyes}}
+the head of a wily-looking Elf{50%, {:pommel eyes}}
+the head of an illithid, its tentacles wrapping around the hilt{50%, {:pommel eyes}}
+the head of an armored knight in a crusader-style helmet (no face visible)
 
-: PommelEyes
-5,
-, with eyes made out of small {:Utility.GemType}s
-
-: RuneGlowChance
-8,
-The inscription glows {faintly|brightly} with a {:Color.hues} light.
-The inscription glows {faintly|brightly} with a {:Color.hues} light when {:Utility.CreatureTypes}s are nearby.
-The inscription glows {faintly|brightly} with a {:Color.hues} light if monsters are nearby.
-The inscription glows {faintly|brightly} with a {:Color.hues} light if evil is nearby.
+: pommel eyes
+, with eyes made out of small {gem}s
 
 ===
 
@@ -700,253 +251,295 @@ Brilliant Energy  +4 Bonus DMG
 ===
 / http://random-generator.com/index.php?title=HaftedWeapons
 
-{{purge}}
-{{Cols|2|<ul><sgdisplay iterations="10"><li>[main]<br/></sgdisplay></ul>}}
-
-<sgtable>
-;main
-1,[AxeStart] [HaftDecor] [Weapon.MilitaryIssueChance]
-1,[PolearmStart] [HaftDecor] [Weapon.MilitaryIssueChance]
-1,[MaceFlailStart] [HaftDecor] [Weapon.MilitaryIssueChance]
-1,[OtherHaftedStart] [HaftDecor] [Weapon.MilitaryIssueChance]
+[AxeStart] [HaftDecor] [Weapon.MilitaryIssueChance]
+[PolearmStart] [HaftDecor] [Weapon.MilitaryIssueChance]
+[MaceFlailStart] [HaftDecor] [Weapon.MilitaryIssueChance]
+[OtherHaftedStart] [HaftDecor] [Weapon.MilitaryIssueChance]
 
 ;StartNoDescription
-1,[AxeType]
-1,[PolearmType]
-1,[MaceType]
-1,[FlailType]
-1,[OtherHaftedType]
+[AxeType]
+[PolearmType]
+[MaceType]
+[FlailType]
+[OtherHaftedType]
 
 ;AxeStart
-1,[Quality] [AxeType] with a haft of [Utility.WoodWeapon] and a head made of [Utility.MetalWeapon]. [AxeHeadSpike] [AxeHeadDepictionChance]
-1,[Quality] [AxeType] composed completely of [Utility.MetalWeapon]. [AxeHeadSpike] [AxeHeadDepictionChance]
+[Quality] [AxeType] with a haft of [Utility.WoodWeapon] and a head made of [Utility.MetalWeapon]. [AxeHeadSpike] [AxeHeadDepictionChance]
+[Quality] [AxeType] composed completely of [Utility.MetalWeapon]. [AxeHeadSpike] [AxeHeadDepictionChance]
 
 ;AxeType
-10,throwing axe
-30,battleaxe
-10,greataxe
-116,handaxe
-5,orc double axe
-4,dwarven urgrosh
-8,dwarven waraxe
-3,ice axe 
-5,woodsman’s axe
-1,minotaur’s axe
-12,sweet axe
+throwing axe
+battleaxe
+greataxe
+handaxe
+orc double axe
+dwarven urgrosh
+dwarven waraxe
+ice axe 
+woodsman’s axe
+minotaur’s axe
+sweet axe
 
 ;AxeHeadDepictionChance
-4,
-3,The axe head features an etched depiction of [AxeHeadDepiction].
-1,The axe head has [Dice.1d8] [Utility.RelativeSize] [Utility.GemQuality] [Utility.GemType] stones inset in it.
-1,The axe has an inscription on the head declaring it was made for [NorthlanderMale.main].
-1,The axe head is decorated with a flame motif.
-1,The axe head is decorated with a serpent motif.
-1,The axe head is decorated with engravings of leaves and vines.
-1,The axe head is decorated with spiraling engravings.
-1,The axe head is decorated with runes in [Utility.RuneLanguage] that convey the meaning <b>“{INSCRIPTION}”</b>.
-1,The axe head is decorated with knotwork.
-1,The axe head is painted with shiny [Color.dark] enamel.
-1,The axe head has been carbonized with a flat black paint to keep it from reflecting light except along the edges.
-3,The axe head is inscribed with the word(s) <b>“{INSCRIPTION}”</b> in [Inscriptions.Language].
-1,[AxeHeadDepictionChance] [AxeHeadDepictionChance]
+
+The axe head features an etched depiction of [AxeHeadDepiction].
+The axe head has [Dice.1d8] [Utility.RelativeSize] [Utility.GemQuality] [Utility.GemType] stones inset in it.
+The axe has an inscription on the head declaring it was made for [NorthlanderMale.main].
+The axe head is decorated with a flame motif.
+The axe head is decorated with a serpent motif.
+The axe head is decorated with engravings of leaves and vines.
+The axe head is decorated with spiraling engravings.
+The axe head is decorated with runes in [Utility.RuneLanguage] that convey the meaning “{INSCRIPTION}”.
+The axe head is decorated with knotwork.
+The axe head is painted with shiny {color:dark} enamel.
+The axe head has been carbonized with a flat black paint to keep it from reflecting light except along the edges.
+The axe head is inscribed with the word(s) “{INSCRIPTION}” in [Inscriptions.Language].
+[AxeHeadDepictionChance] [AxeHeadDepictionChance]
 
 ;AxeHeadDepiction
-1,a berserker face in profile with its tongue out
-1,a charging ram’s head
-1,a bearded dwarf in profile
-1,a charging bull
-1,a fire-breathing dragon
-2,[Utility.Symbols]
-1,an illithid with writhing tentacles
-1,a nature motif (ivy, leaves, etc)
-1,elaborate knotwork
+a berserker face in profile with its tongue out
+a charging ram’s head
+a bearded dwarf in profile
+a charging bull
+a fire-breathing dragon
+{art:decorated}
+an illithid with writhing tentacles
+a nature motif (ivy, leaves, etc)
+elaborate knotwork
 
 ;AxeHeadSpike
-1,The axe haft is not capped, but is even with the top of the axe head.
-1,The axe haft is capped with a sharpened spike.
-1,The axe haft is capped with [Swords.PommelShapes].
+The axe haft is not capped, but is even with the top of the axe head.
+The axe haft is capped with a sharpened spike.
+The axe haft is capped with [Swords.PommelShapes].
 
 ;PolearmStart
-1,[Quality] [PolearmType] with a haft of [Utility.WoodWeapon] and a head made of [Utility.MetalWeapon].
+[Quality] [PolearmType] with a haft of [Utility.WoodWeapon] and a head made of [Utility.MetalWeapon].
 
 ;PolearmType
-1,glaive
-1,guisarme
-1,halberd
-1,longspear
-1,ranseur
-1,spear
-1,shortspear
-1,trident
-1,greatspear
-1,heavy poleaxe
-1,mancatcher
-1,lucerne hammer
-1,harpoon
-1,scythe
-5,[PolearmObscure]
+glaive
+guisarme
+halberd
+longspear
+ranseur
+spear
+shortspear
+trident
+greatspear
+heavy poleaxe
+mancatcher
+lucerne hammer
+harpoon
+scythe
+[PolearmObscure]
 
 ;PolearmObscure
-1,jedberg axe
-1,lochaber axe
-1,bardiche
-1,bec de corbin
-1,billhook
-1,bill guisarme
-1,fauchard
-1,fauchard fork
-1,fauchard guisarme
-1,military fork
-1,glaive-fork
-1,glaive-guisarme
-1,guisarme-fork
-1,hook-fauchard
-1,partizan
-1,spear-guisarme
-1,spetum
-1,spontoon
-1,voulge
-1,voulge-fork
-1,voulge-guisarme
-1,dwarven double spear
-1,dwarven warpike
-1,crescent scythe
+jedberg axe
+lochaber axe
+bardiche
+bec de corbin
+billhook
+bill guisarme
+fauchard
+fauchard fork
+fauchard guisarme
+military fork
+glaive-fork
+glaive-guisarme
+guisarme-fork
+hook-fauchard
+partizan
+spear-guisarme
+spetum
+spontoon
+voulge
+voulge-fork
+voulge-guisarme
+dwarven double spear
+dwarven warpike
+crescent scythe
 
 ;MaceFlailStart
-1,[MaceFlailType] 
+[MaceFlailType] 
 
 ;MaceFlailType
-1,[Quality] [FlailType] with a ball shaped like [FlailHead]. The ball and chain are made of [Utility.MetalWeapon] and the haft is made of [Utility.WoodWeapon].
-1,[Quality] [MaceType] with a head shaped like [MaceHead]. The head is made of [Utility.MetalWeapon] and the haft is made of [Utility.WoodWeapon].
-1,[Quality] [MaceType] with a head shaped like [MaceHead]. The entire weapon is made of [Utility.MetalWeapon].
-1,[Quality] [OtherMaceFlailType] with the metal portions made of [Utility.MetalWeapon] and the wooden portions made of [Utility.WoodWeapon].
+[Quality] [FlailType] with a ball shaped like [FlailHead]. The ball and chain are made of [Utility.MetalWeapon] and the haft is made of [Utility.WoodWeapon].
+[Quality] [MaceType] with a head shaped like [MaceHead]. The head is made of [Utility.MetalWeapon] and the haft is made of [Utility.WoodWeapon].
+[Quality] [MaceType] with a head shaped like [MaceHead]. The entire weapon is made of [Utility.MetalWeapon].
+[Quality] [OtherMaceFlailType] with the metal portions made of [Utility.MetalWeapon] and the wooden portions made of [Utility.WoodWeapon].
 
 ;FlailType
-1,flail
-1,heavy flail
-1,dire flail
+flail
+heavy flail
+dire flail
 
 ;MaceType
-10,light mace
-10,heavy mace
-7,warmace
-7,morningstar
-1,double mace
+light mace
+heavy mace
+warmace
+morningstar
+double mace
 ;OtherMaceFlailType
-1,heavy aspergillum
-1,nunchaku
+heavy aspergillum
+nunchaku
 
 ;MaceHead
-1,a simple sphere
-1,a spiked sphere
-1,a fist
-1,a skull
-1,a horned demon head
-1,a face
-1,a cylinder
-1,a spiked cylinder
-1,intersecting sharpened plates (classic mace design)
-1,a beholder
-1,a minotaur head
-1,a ram’s head
-1,a dragon’s head
-1,a ball of antlers
-1,a design based on the symbol of [GheronUtility.DietySymbol]
-1,a design based on the symbol of [GheronUtility.OrganizationSymbol]
+a simple sphere
+a spiked sphere
+a fist
+a skull
+a horned demon head
+a face
+a cylinder
+a spiked cylinder
+intersecting sharpened plates (classic mace design)
+a beholder
+a minotaur head
+a ram’s head
+a dragon’s head
+a ball of antlers
+a design based on the symbol of [GheronUtility.DietySymbol]
+a design based on the symbol of [GheronUtility.OrganizationSymbol]
 
 
 ;FlailHead
-1,a simple sphere
-1,a spiked sphere
-1,a clenched fist
-1,a skull
-1,a horned demon head
-1,a face
-1,a cylinder
-1,a spiked cylinder
-1,a ball of antlers
-1,a beholder
-1,a ram’s head
-1,a design based on the symbol of [GheronUtility.DietySymbol]
-1,a design based on the symbol of [GheronUtility.OrganizationSymbol]
+a simple sphere
+a spiked sphere
+a clenched fist
+a skull
+a horned demon head
+a face
+a cylinder
+a spiked cylinder
+a ball of antlers
+a beholder
+a ram’s head
+a design based on the symbol of [GheronUtility.DietySymbol]
+a design based on the symbol of [GheronUtility.OrganizationSymbol]
 
 ;OtherHaftedStart
-1,[Quality] [OtherHaftedType] with a haft of [Utility.WoodWeapon] and a head made of [Utility.MetalWeapon].
+[Quality] [OtherHaftedType] with a haft of [Utility.WoodWeapon] and a head made of [Utility.MetalWeapon].
 
 ;OtherHaftedType
-1,light hammer [HammerShape]
-1,kama
-1,light pick[PickShape]
-1,heavy pick[PickShape]
-1,scythe
-1,sickle
-1,warhammer [HammerShape]
-1,double hammer [HammerShape]
-1,dire pick [PickShape]
-1,heavy sickle 
-1,gnome hooked hammer
-1,maul [HammerShape]
+light hammer [HammerShape]
+kama
+light pick[PickShape]
+heavy pick[PickShape]
+scythe
+sickle
+warhammer [HammerShape]
+double hammer [HammerShape]
+dire pick [PickShape]
+heavy sickle 
+gnome hooked hammer
+maul [HammerShape]
 
 ;HammerShape
-1,(fist-shaped heads)
-1,(ram-shaped heads)
-1,(rounded heads)
-1,(square heads)
-1,(spherical heads)
-1,(one rounded head, the other cone-shaped)
+(fist-shaped heads)
+(ram-shaped heads)
+(rounded heads)
+(square heads)
+(spherical heads)
+(one rounded head, the other cone-shaped)
 
 ;PickShape
-1,
-1, (squid-shaped head with elongated tentacles coming to a point)
-1, (illithid-shaped head with elongated tentacles coming to a point)
-1, (crow-shaped head with elongated beak)
-1, (head shaped like a snake head with long forked tongue coming to a point)
-1, (spiraling square coming to a point)
-1, (spiraling circle, like a drill bit)
+
+(squid-shaped head with elongated tentacles coming to a point)
+(illithid-shaped head with elongated tentacles coming to a point)
+(crow-shaped head with elongated beak)
+(head shaped like a snake head with long forked tongue coming to a point)
+(spiraling square coming to a point)
+(spiraling circle, like a drill bit)
 
 
 ;HaftDecor
-1,
-1,The haft is simple and unadorned.
-3,The haft is stained [Color.dark].
-3,The haft is stained [Color.dull].
-2,The haft is painted [Color.dark].
-2,The haft is painted [Color.dull].
-2,The haft is painted [Color.bright].
-1,The haft is engraved with cryptic runes in [Utility.RuneLanguage] that glow faintly with a [Color.hues] light when [Utility.CreatureTypes]s are nearby.
-1,The haft is engraved with cryptic runes in [Utility.RuneLanguage] that glow brightly with a [Utility.LightColors] light when [Utility.CreatureTypes]s are nearby.
-1,The haft is engraved with illegible runes.
-1,The haft has a brief engraving in the runes of a long-lost language.
-1,The haft seems to give off a faint light.
-2,The haft is inlaid with [Dice.2d4] [Utility.StoneDecorative]s.
-2,The haft is partially inlaid with [Utility.MetalPrecious].
-1,The haft is beautifully inlaid in [Utility.MetalExotic].
-1,The haft is decorated with [Utility.HornIvory] inlay.
-4,Knotwork is engraved into the haft.
-4,The head and haft are bloodstained from regular use in battle.
-2,The weapon is stained an ominous dark crimson.
-2,The haft has a raised ornate latticework pattern made of [Utility.WoodWeapon].
-2,The haft has a raised simple latticework pattern made of unknown wood.
-2,The haft is strong and well-balanced.
-1,The haft is well-oiled and highly polished.
-1,The haft has a long crack running down one side from disuse.
-3,The haft is smooth and well-weathered from use.
-2,The head and upper haft are dark and slippery from fresh grime and gore.
-1,The haft does not appear to be original, as it does not quite fit the head.
-1,The haft seems much more worn than the head; it was most likely reforged.
-1,The haft does not appear to be original, as it is much newer than the head.
-5,The haft is notched with [Dice.2d8] tally marks.
-3,The end of the haft is decorated with [Dice.2d6] [FletchingColor] feathers.
-4,The haft is ringed with [Utility.MetalWeapon] bands.
-6,The grip section of the haft is wrapped tightly with [Utility.LeatherHide].
-5,The grip section of the haft is wrapped with tattered [Utility.LeatherHide].
-4,The grip section of the haft is wrapped in battle-worn [Utility.LeatherHide].
 
-;FletchingColor
-2,[Color.dark]
-1,[Color.dull]
-1,[Color.bright]
+The haft is simple and unadorned.
+The haft is stained {color:{dark|drab}}.
+The haft is painted {color:{dark|drab|light}}.
+The haft is engraved with cryptic runes in [Utility.RuneLanguage] that {glow}.
+The haft is engraved with illegible runes.
+The haft has a brief engraving in the runes of a long-lost language.
+The haft seems to give off a faint light.
+The haft is inlaid with [Dice.2d4] [Utility.StoneDecorative]s.
+The haft is partially inlaid with [Utility.MetalPrecious].
+The haft is beautifully inlaid in [Utility.MetalExotic].
+The haft is decorated with [Utility.HornIvory] inlay.
+Knotwork is engraved into the haft.
+The head and haft are bloodstained from regular use in battle.
+The weapon is stained an ominous dark crimson.
+The haft has a raised ornate latticework pattern made of [Utility.WoodWeapon].
+The haft has a raised simple latticework pattern made of unknown wood.
+The haft is strong and well-balanced.
+The haft is well-oiled and highly polished.
+The haft has a long crack running down one side from disuse.
+The haft is smooth and well-weathered from use.
+The head and upper haft are dark and slippery from fresh grime and gore.
+The haft does not appear to be original, as it does not quite fit the head.
+The haft seems much more worn than the head; it was most likely reforged.
+The haft does not appear to be original, as it is much newer than the head.
+The haft is notched with [Dice.2d8] tally marks.
+The end of the haft is decorated with [Dice.2d6] {color:standard} feathers.
+The haft is ringed with [Utility.MetalWeapon] bands.
+The grip section of the haft is wrapped tightly with [Utility.LeatherHide].
+The grip section of the haft is wrapped with tattered [Utility.LeatherHide].
+The grip section of the haft is wrapped in battle-worn [Utility.LeatherHide].
 
-;Quality
-1,{{ucfirst:a}} 
-1,{{ucfirst:a}} [Swords.Quality]
+: Quality
+{quality}
+{quality:weapon}
+
+: Glows
+{glow:glows{33% {glow:when}}}
+
+: Property
+/ roll 3 times
+/ roll twice
+causes those nearby to feel {emotion}
+drinks in blood
+drips {:drips}{33% {glow:when}}
+emanates {:emanates}{33% {glow:when}}
+exudes a {smell:like}{33% {glow:when}}
+flutters in the breeze like a silk ribbon
+has runes appear{33% {glow:when}}
+is always bloody
+is invisible{33% {glow:when}}
+is like a liquid conforming to a solid shape
+is made of scales that pulse open{33% {glow:when}}
+is translucent
+is weightless
+leaves {color} tracers when swung
+never tarnishes
+sprouts spikes{33% {glow:when}}
+vibrates{33% {glow:when}}
+whispers secrets{33% {glow:when}}
+{:fx} when it strikes
+{noise} when it strikes
+
+: drips
+acid
+blood
+fire
+ichor
+oil
+poison
+sap
+tears
+water
+wax
+
+: emanates
+flames
+leaves
+motes
+glowing runes
+smoke
+steam
+wind
+
+: fx
+ice crystals
+electricity
+flames
+flashes of {color} light
+snow flakes
+sparks

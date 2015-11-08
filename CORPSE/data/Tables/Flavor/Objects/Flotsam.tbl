@@ -12,6 +12,21 @@ container
 furniture
 misc
 weapon
+{:misc}
+
+: misc
+a battered chest with a lock no one can figure out
+a crate of stone phalluses
+a golden six-gun with five bullets
+a great-anchor made from a strange green metal
+a huge book, the size of a barn door
+a huge cylinder carved with intricate designs
+a large pearl, the size of a {size:relative medium}
+a large seahorse wearing a saddle
+a massive tooth, taller than a troll
+a vast tangled silver thread
+an enormous dead crab
+an enormous jellyfish corpse
 
 : book
 copy of {BOOK}
@@ -88,3 +103,17 @@ spear shaft
 
 :adj weapon
 {condition:wood weapon}
+
+===
+
+
+;shipwreck
+ship named [Ship Names.main] that carried the second prince and his bride and was lost
+ship that sails under the waves, crewed by a fearless captain and her dozen [husband_adj] husbands
+ship that sank carrying [Utility.TradeGoods], among other goods,
+ship that set sail from [harbors] with a full crew; a lone survivor, sea-mad, muttering about [seaterror], was later found
+ship that was blown off course, now crewed by the Father of Fish and his children
+ship that was lost carrying a mated pair of mimic birds descended from the mimic bird who heard the Prophet’s voice and passed the sound down through generations of other birds
+ship that was part of the treasure fleet of [who_is_buried] which delivered precious gifts to foreign dignitaries which sank
+
+

@@ -1,13 +1,33 @@
 / http://theaussiegm.tumblr.com
+/ http://adungeonaday.tumblr.com/post/129790776427/campfire-events
 
 : Camp Encounter
-5x nothing happens
-a {:wanderer} visits the camp and {:motive}
+a bard shares your campfire but is hung-over and declines any invitation to perform
+a bear emerges from the woods, but wanders off after sniffing the air
+a coyote sporting a bandana around its neck stands at the edge of the firelight, and will gladly accept scraps
+a delirious orc stumbles into camp and asks for food
+a fat toad hops through the campsite
+a few wasps venture out of a nearby nest to sting the trespassers
+a healthy but filthy mare in shredded barding comes to stand near the horses
+a pair of dwarves in muddy cloaks walk past laughing
+a small herd of elk graze at the edge of the clearing
+a spectral form appears in the flames
 a strange {noise} noise is heard {direction}
+a wild boar attacks
+a {:wanderer} visits the camp and {:motive}
+cougar yowling can be heard nearby, but no cat materializes
+five mounted soldiers stop and ask if anyone else has passed by recently
+huge bats chase the bugs attracted to the light of the fire
+music plays from somewhere in the dark
+the campfire will not stay lit, despite the wood being dry. additionally, everyone feels very sleepy
+the fallen log serving as a chair turns out to be full if centipedes
+the sky is clear but no stars are out
+the wind picks up and some thunder and lightning threatens, but no rain materializes
+two elves stop by the campfire to warn of a bear in the area
 you here the sounds of wolves or wild dogs howling
 {4} animals approach the camp ({{fauna}+} {:activity})
-{humanoid encounter} {:activity}
 {:environment}
+{humanoid encounter} {:activity}
 
 : Activity
 curiously checking out the camp

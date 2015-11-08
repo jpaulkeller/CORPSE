@@ -1,0 +1,208 @@
+/ http://www.random-generator.com/index.php?title=Wizard_Tower
+
+/ [name], who is primarily concerned with [Theme].
+/ [Foreboding Aspect]. 
+/ Generally constructed in [Aesthetic] style, the tower contains the following levels: [All Levels]
+/ Protected by [Protection] and to a lesser extent [Protection]
+/ Also, Don't touch that because [Don't Touch]!
+/ Oh no, you knocked that one thing over and [You Knocked That Over And]
+/ At least one room is/has [Odd Room Features]
+/ Abortive Experiment: [Abortive Experiments]
+/ In the Dustbin: [Dustbin]
+
+: Wizard Tower
+The {:Adj} {:Location} of the {Pseudo Class:Mage} {Wizard Name}
+
+: Adj
+black
+cyclopean
+dreaded
+enshrouded
+fell
+looming
+magnificent
+oracular
+panoptic
+secluded
+sorcerous
+white
+
+: Location
+bastion
+citadel
+fastness
+fortress
+hall
+laboratory
+manse
+sanctuary
+spire
+steeple
+stronghold
+tower
+
+: Theme
+Necromancy
+Seances
+Things Man Was Not Meant to Know
+Demonic pacts
+Apotheosis
+Mutational magic
+Biological experimentation
+Orgone magic
+Black masses
+Golem construction
+Planar travel
+Raising an army
+
+: Foreboding Aspect 
+The main entrance is shaped like a demon's maw
+The area leading up to the tower is a perpetually skeletal forest
+The area near the entrance is a forest of corpses impaled on wooden stakes
+A storm continually rages over the tower
+The area around the tower is subject to Fortean weather phenomena
+The area around the tower is subject to spectral howling at all hours
+Horrific illusions near the entrance
+Skeletons wander the area near the tower
+The bodies of former interlopers hang from the trees
+The area around the tower smells of the abattoir 
+
+: Aesthetic
+ascetic and monkish
+baroque
+cluttered and disorganized
+cthulhoid, tentacular
+gaudy; nouveau riche 
+minimalist, everything-in-its-place
+neo-classical
+neo-gothic
+overly refined 
+rustic and charming
+
+: Levels
+Two Levels: the wizards private chambers and the library
+Three Levels: the wizards private chambers, the library, and {:Level}
+Four Levels: the wizards private chambers, the library,  {:Level}, and {:Level}
+Five Levels: the wizards private chambers, the library,  {:Level}, {:Level}, and {:Level}
+
+: Level
+alchemical laboratory (alembics, retorts, strange and rare ingredients in vials and jars)
+apprentice's chambers (minor books of the occult, minor magical baubles)
+cages and holding pens (humans, animals, wooden or metal cages, whips, locks)
+concubine's chambers (pillows, chained men/women/both, willing slave, succubi)
+enchanted portrait galleries (talking portraits, portraits the step from their frames)
+extra-dimensional rooms (dimensional doors, portals, gifts from otherworldly beings)
+harem chambers (pleasure consorts, spearwives, orgiastic cult)
+henchmen's quarters (rough quarters, some gold and silver, weapons, dice and cards)
+igor's chambers (manacles, rough clothes, foulness)
+musical room (self-playing instruments, enchanted musicians)
+mutational experiment laboratory (vivsection equipment, animals in cages)
+necromantic laboratory (bones, flesh, stitchery, dreadful tomes)
+observatory (telescope, astrological charts, hymns to those beyond the stars)
+operating theaters (operating tables, scalpels and saws, blood stains)
+ritual chambers (incense, braziers, permanent summoning circle)
+scrying chambers (mirror pools, crystal balls, tarot cards, books on divination, entrails)
+torture chambers (the rack, thumbscrews, the iron maiden, whips, manacles)
+treasure vault (gold, silver, art works, precious gems)
+trophy room (stolen goods, broken wands from wizardly duels, treasure on display)
+wunderkammer (medical oddities, natural history specimens)
+ 
+: Protection
+charmed beasts (mostly {monster})
+traps (typical: {trap})
+created monsters (mostly {:created monsters}) 
+enslaved humanoids (mostly {{humanoid}+})
+hauntings
+illusions (mostly {:illusions})
+necromantic servants (mostly {undead})
+riddles delivered by {:riddle sources}
+summoned demons (mostly: {:summoned demons})
+
+: illusions
+illusory images
+illusory images that cause terror 
+illusory images with phantom sounds
+illusory walls
+phantom sounds 
+
+: summoned demons 
+brute force and battle
+demonic possession
+magical hindrance 
+seduction and misdirection 
+
+: hired mercenaries
+bandits
+berserkers
+fallen knights
+sellswords
+
+: riddle sources
+Magic Mouth spells
+fey creatures
+sphinxes
+talking oil paintings
+
+: created monsters
+caryatid column
+clockwork creature
+gargoyles
+golem
+homunculus
+living statue
+
+: Don't Touch
+It's a disguised ooze
+It's a mimic
+It's an illusion 
+It's cursed
+It's going to explode
+It's poisoned
+
+: You Knocked That Over And
+now a secret door has opened
+now it's eating through the floor
+now it's smoking
+now the tower seems to be falling apart around us
+now we hear strange chanting and ululations
+now we seem to be somewhere else
+
+: odd room features
+choked with furniture
+everything is one color
+everything is striped
+naked portrait of the wizard
+unusually high ceiling
+wall covered in runes
+
+: abortive experiments
+gollum-shaped golem
+half-ettercap, half-drider (spidermen)
+half-owl, half-boar (owlboar)
+hybrid blink dog/hellhound
+hybrid medusa/gorgon
+hybrid {monster}/{monster{!different}}
+hybrid {fauna}/{fauna{!different}}
+shadow shedu
+
+: dustbin
+a broken skull
+a small casket
+a snake made of human teeth
+bent forks
+catgut
+drained wine bottles
+empty bottles of perfume
+empty hourglass
+gelatinous flesh
+infernal dictionary
+insect husks
+misplaced keys on keyring
+multicolored prisms
+old love letters
+pile of cinders
+pipe cleaners
+rusty razor blades
+shattered globe
+soap cask
+unhatched, monstrous eggs

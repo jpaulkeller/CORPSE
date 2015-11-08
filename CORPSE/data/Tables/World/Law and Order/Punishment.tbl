@@ -9,6 +9,10 @@
 : Light
 a {size:small} fine
 confiscation of property
+must issue public apology
+must squire for the local lord
+public humiliation
+public slapping
 public service for {2d6} {duration:weeks}s
 
 : Moderate
@@ -24,23 +28,33 @@ marooning on a desolate island
 revocation of titles
 shunning
 tar and feathering
+tied to a tree in the forest for {2d4} {duration:moderate}
 {50%public }flogging ({d10*5} lashes)
 {body part} tattooed with marks of shame
 {finger|thumb|hand|foot|tongue|testicles or breasts|arm|leg|head} cut off
 
 : Severe
+being bled by river leeches
 being cursed with {CURSE}
+being exiled from the {realm}
 being flogged and salted
+being locked in the {Dungeon Name}
+being lowered naked into the spider pit for {2d4} {duration:moderate}
+being trampled by pigs
 being used for target practice by the city guards
+buried alive for {2d4} {duration:moderate}
 blinding {one eye|all eyes}
 castration
 loss of {an eye|{2d3} teeth|2d2 fingers}
+sterilization
 polymorphed into a {fauna}
 torture ({torture}) for {2d5} {duration:moderate}s
 {duration:moderate}s in the royal torture chamber
 {duration:moderate}s indentured servitude as {:job}
 
 : Fatal 
+being suffocated by beetles
+being thrown from the high tower
 death by beheading
 death by being boiled in oil
 death by being catapulted
@@ -57,6 +71,7 @@ death by disemboweling
 death by dismemberment
 death by hanging
 death by impaling
+death by starvation
 execution
 
 : Job 

@@ -13,18 +13,16 @@ scratches and abrasions
 
 : floor
 a broken glass bottle
+a broken slab of {mineral}
 a fine layer of ash covering everything
 a single broken arrow
 a small pile of stones
-a broken slab of {mineral}
-some crushed fragments of {mineral}
 a wax blob (candle stub)
+a {50%{size} }{50%{drying|dried} }{splash|puddle} of blood
 a {paper:fragment}
 a {size} pile of rubble
-a {50%{size} }{50%{drying|dried} }{splash|puddle} of blood
 dry leaves and twigs
 filings perhaps of {metal:weapon}
-{:food}
 glass shards and scorch marks (where a flask of oil was smashed and set aflame)
 guano
 hair/fur bits
@@ -33,6 +31,7 @@ pottery shards
 rags
 scattered teeth/fangs
 smallish mushrooms
+some crushed fragments of {mineral}
 some dung
 some rotting {splinters|slivers|pieces|logs|branches} of wood
 some wax drippings
@@ -45,6 +44,7 @@ the leftover ashes and charcoal of a cook fire
 {:broken armor}
 {:broken gear}
 {:broken weapon}
+{:food}
 {:remains}
 {condition:clothing poor} {clothing} {lies|is heaped|is discarded}
 {condition:cloth} {:fabric bit} of {fabric}

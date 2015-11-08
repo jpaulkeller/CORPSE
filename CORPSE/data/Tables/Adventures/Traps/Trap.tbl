@@ -9,7 +9,8 @@
 a {:type} trap
 
 : Name
-{Name}'s {Slow|Instant} Death
+{Name}'s {Slow|Instant|Painful|Permanent} Death
+{Name}'s {Evocative Adj:Negative} {Evocative Concept:Negative}
 
 : Type
 alarm
@@ -78,6 +79,7 @@ the surface becomes electrified
 
 : magic result
 an anti-magic field may cause magic items to temporarily or permanently lose their properties
+an illusory flaming bolder crashes towards the victims, forcing them into an adjacent pit
 casts {:Spell}
 casts {Spell}
 causes a geas-like compulsion
@@ -89,7 +91,9 @@ puts the victim to sleep for {2d6} {{duration:moderate}+}
 reduces victim’s size for {3d10} {{duration:short}+}
 shock wave 
 spell distortion field: {range|duration|area of effect} is {increased|decreased}
+summons {beast}
 summons {demon}
+summons {monster}
 the area becomes frigid; walls and floor are coated in ice
 transference distortion field ({+|-} {6} levels)
 victims are teleported
@@ -110,6 +114,7 @@ Flame Strike
 Inflict Wounds
 Lightning Bolt
 Magic Missile
+Petrification
 Phantasmal Killer
 Power Word Kill
 Prismatic Spray
@@ -124,11 +129,13 @@ Web
 {pit trap}
 
 : projectile result
-{33%poisoned }{arrows|daggers|spears|darts|bolts|stones} are shot from a hidden mechanism in the {ceiling|wall}
-a hidden turret pops up, and sprays {33%poisoned }darts 
+{33%poisoned }{arrows|daggers|spears|darts|bolts|needles} are shot from a hidden mechanism in the {ceiling|wall}
+a hidden turret pops up, and sprays {33%poisoned }{darts|needles}
 
 : rock fall result
 rocks fall {ahead of|behind} the party (it will take {2d4} hours for 1 person to clear)
+rocks fall on the party (3d6 damage)
+spikes protrude from the ceiling, which descends slowly
 
 : spikes result
 {75%{condition:wood weapon} }{20%poisoned }wooden stakes erupt from the {wall|floor|ceiling}

@@ -1,6 +1,11 @@
 : Arcane Book
-{:Experiments} the {:Alchemy Noun} of {:Abstract Substance}
-{:Experiments} with {:Subject}
+A Remedy for the {Curse:Name}
+Detailed Instructions for the Creation of a {{Potion|{Wand|Rod|Staff}:Name}}
+Maintenance Manual for the {Letter}-{9}{9}{9}{25%{Letter}}
+The Secrets of {Dungeon Name}
+Words of Power: Activation Codes
+{:EXPERIMENTS} the {:Alchemy Noun} of {:Abstract Substance}
+{:EXPERIMENTS} {:Subject}
 {:Gerund} the {:Alchemy Noun} of {:Abstract Substance}
 {Spell Category} Spells
 {{Pseudo Class:Mage}+} and {{Pseudo Class:Sage}+}
@@ -15,9 +20,9 @@ Magic
 Runes
 Sorcery
 Wizardry
-{Magic}
 {Domain:Arcane}
 {Domain:Divination}
+{Spell Category}
 
 : Gerund
 Analyzing
@@ -42,7 +47,7 @@ Experiments with
 Research on
 Analysis of
 Uses for
-Magnifying {Magic} Spells with
+Magnifying {Spell Category} Spells with
 A Theory on
 Rethinking the {:Alchemy Noun} of
 
@@ -63,4 +68,4 @@ Uses
 : Abstract Substance
 the Element of {Element}
 {Arcane Substance}
-{Magic} Magic
+{Spell Category} Magic

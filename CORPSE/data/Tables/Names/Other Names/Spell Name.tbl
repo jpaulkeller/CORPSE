@@ -541,48 +541,60 @@ bolt
 {:spell}
 
 : fire prefix
+blasting
 blazing
 burning
+bursting
 efreet's
+engulfing
+explosive
+fiery
 flamecaster's
 flaming
 phoenix's
 pyromancer's
 salamander's
+scorching
 searing
 smoking
 solar
+surging
 {:prefix}
 
 : fire suffix
 ash
+axe
+blast
 blaze
-blaze
+bolt{50%s}
 char
 cinders
 coal
 combustion
 conflagration
 devourer
-embers
-eruption
-fire
-flame
-flare
+ember{50%s}
+eruption{50%s}
+fire{50%s}
+flame{50%s}
+flare{50%s}
 frenzy
 furor
 fury
 glow
 hearth
 immolation
-inferno
-light
+inferno{50%s}
+lava
+light{50%s}
 magma
 pyre
 rage
 raze
-spark
+spark{50%s}
+spear{50%s}
 tongue
+torch
 {:spell}
 
 : life prefix
