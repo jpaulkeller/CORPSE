@@ -1,8 +1,11 @@
 / http://www.random-generator.com/index.php?title=Mage_Staff
 
 : Staff
-A Staff of {{Spell:Conjuration|Spell:Invocation|:POWER}} ({#/{20-25}} charges), made of {:material}{:length}.{:HEAD}{10% {:DESCRIPTION}}
+A {:NAME} ({#/{20-25}} charges), made of {:material}{:length}.{:HEAD}{10% {:DESCRIPTION}}
 A {20%{:quality} }{:Type} made of {:material}{:length}.{:HEAD}{10% {:DESCRIPTION}}
+
+: Name
+Staff of {{Spell:Conjuration|Spell:Invocation|:POWER}}
 
 : Power
 Banishment

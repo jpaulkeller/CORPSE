@@ -1,6 +1,18 @@
 / duplicate spells will be different versions (components, range, area of effect, etc) 
 
 <html>
+
+<head>
+<style>
+body {
+    color: white;
+    background-image:  url(https://41.media.tumblr.com/4d00e9e292e761b296d77b05fd4b8369/tumblr_nvmbgxj8tg1t5z3yho1_1280.jpg);
+    background-size:   contain;
+    background-repeat: no-repeat;
+}
+</style>
+</head>
+
 <body>
 
 / Query for name (using random default); assign and randomize

@@ -1,5 +1,8 @@
 : Rod
-Rod of {{Spell:Conjuration|Spell:MetaMagic|:Power}} ({#/{41-50}} charges), {30-42}" long, made of {:material} 
+{:NAME} ({#/{41-50}} charges), {30-42}" long, made of {:material}
+
+: Name
+Rod of {{Spell:Conjuration|Spell:MetaMagic|:Power}}
 
 : Material
 9x {metal:enchantable}

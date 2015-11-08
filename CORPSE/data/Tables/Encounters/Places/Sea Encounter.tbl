@@ -1,8 +1,8 @@
 / http://random-generator.com/index.php?title=Benign_Waterborne_Encounter
 / http://random-generator.com/index.php?title=Fantasy_Adventure_Locations
+/ http://adungeonaday.tumblr.com/post/129921739637/seafaring-encounters
 
 2 warships fighting
-3-8 adventurers not unlike yourselves
 a "zooship" delivering exotic beasts
 a battle between a giant squid an a sperm whale seen in the distance
 a black cloud roughly the size of your boat is fixed above you, emptying sheets of rain in a permanent squall
@@ -11,6 +11,7 @@ a boat full of lackluster pirates
 a boat full of terrifying pirates
 a cargo vessel with passengers: mostly idiotic minstrels who insist on being called "bards" and that their music has magical powers
 a clever general and his men, returning from a great war after much tribulation
+a crewman kills an albatross, cursing the ship
 a cthulhian sea temple
 a dead vessel where the crew's bodies are sodden with sentient algae
 a drifting ironclad, which is nearly all one giant cannon shaped like great dragon mawed tuba. it is unmanned and its engines cold, with gun unloaded and no indication of what fuel or ammunition it used. 
@@ -25,13 +26,16 @@ a floating library
 a floating piece of wood carrying the sign of [secret society title.secretsocietyname]
 a floating pleasure palace of exotic monarch--also in the flotilla: a slave-galley, a harem-ship and/or temple-ship and d4 warships
 a floating, watertight chest knocks up alongside - it might contain a relic, [arcanebooks.main], [jewelry.startitemonly], [found in a crate.main], or junk
+a flock of big blue waterfowl circle the vessel (a few perch in the rigging)
 a foundering, plundered ship
+a freak wave has heeled the ship over, narrowly avoiding capsizing but shifting the ballast/cargo so that you now have a permanent list to {port|starboard}. Navigation and maneuverability are badly compromised
 a ghost ship--manned by skeletal pirates like in the dmg
 a goblin grubship. stuffed to the gills with baby grub carrion crawlers--which they cultivate and worship
 a government-in-exile of nation in the throes of revolution
 a great big clipper ship going from this land into that. crew is all nodding on black lotus powder
 a gunpowder-filled merchant-ship
 a gust of wind brings vomit back over the rail to hit someone
+a huge serpent is basking at the water’s surface. it flees from any confrontation
 a learned zoological scholar, his hold bulging with mounted specimens, eager to hire adventurers to collect specimens of rare sea creatures
 a lizardman opera ship--sea turtle integrated
 a lizardman plesiosaur-drawn sea chariot
@@ -58,8 +62,11 @@ a rich merchant ship. 20,000 gp on board, 10,000 worth of goods, 5 10th level fi
 a rogue wave crashes upon deck
 a rogue wave travels under the ship, lifting then dropping it
 a rotting hulk full of sluts
+a rowboat is visible bobbing in the waves (it contains a selection of fiction books, cured meats and dried fruit, and a pouch of tobacco)
 a sailing ship, which on closer inspection is a termite nest, constructed as a sailing ship
 a sailor who "plays a bit of {musical instrument} challenges a pc bard to contest
+a sailor, bewildered and struggling, drops a tool from the rigging, a random person on deck takes 1d8 damage
+a school of dolphins play in the water off the starboard
 a scientific mission of oceanographers, biologists, etc
 a sea temple of a demon
 a sea temple of a foreign god
@@ -77,13 +84,17 @@ a slave-ship
 a strange island that disappears as you approach
 a strange sea beast
 a tomb ship. this is how an ancient culture buries its dead. the inhabitants are not undead. unless, of course..
+a vessel is scuttled on a shoal. there is no visible movement aboard
+a vessel is seen on the horizon, but it is moving fast and away
 a warship delivering urgent diplomatic dispatch to foreign government
 a warship of some foreign power
 a warship of some local power
 a wrecked ship
 a {barrel|box|chest|crate|trunk} floats past. if investigated, it is found to contain {75%?{contents.item}:nothing}
+a {small|medium|large} {ship type} is sighted
 albatross sighting
 alone on high seas, you are overtaken by another vessel under full sail but with no one on deck
+amid the ship's tossing and confusion on deck, someone slips over the rails. Man overboard!
 an adventurer seeking the metallic hide of mythical beast
 an ahab-esque sea-monster seeker
 an alleged merchant ship which is actually cover for an assassin on assignment sent to kill an eminent member of a foreign power
@@ -97,6 +108,7 @@ approaching low bank of fog is actually a swarm of insects
 approaching port, no ship responds to your hails, and doors and windows are hung with black cloth; a single solid yellow flag flies from the end of the pier
 as a tentacle wraps itself up the side of the ship, though not over the railing, the ship lists until the suckered arm detaches
 aurora borealis in the night
+bad weather
 beautiful coral reefs
 bioluminescent algae float in the water, giving off faint light and revealing dark shapes
 bird circles ship overhead and follows
@@ -105,6 +117,7 @@ bird lands on ship carrying an unknown plant
 boat swept into a localized current flowing contrary to intended direction
 buoy marking a sunken crab trap or shallow ground
 captain develops dementia
+carelessness has caused someone to get tangled in the riggings. The person must make an appropriate saving throw every round while caught or die; any round they succeed they can try to make a dex save on 2d12 to escape. Otherwise someone can cut them down, with a -1/-5% on future sailing rolls until repaired. If the person dies while stuck, all NPC crew will be at -1 for morale-type rolls for the remainder of the voyage
 cargo is discovered to be different, but of equal value
 changeling pirates
 clouds appear that are unmistakable representations of crew members, then fade
@@ -135,6 +148,7 @@ combat: {8} sahuagin
 combat: {d4+1} plesiosarus
 crew experiences communicable diseases picked up at port
 crew experiences scurvy
+dead calm sea
 debris crashes against ship
 decayed body floats by
 derelict ship with no crew aboard
@@ -144,11 +158,14 @@ dragon catching fish
 dull grey waters become strangely crystal clear as the sun zeniths
 dwarven sea raiders with stubwolves in spiked collars
 eclipse of the sun or moon
+encounter: {:creature}
 erupting undersea volcano
 explorers from the exotic east. possessed of magnificent maps of lands not known
 fallen tree along the shore - branches a haven for birds and fish
+fire in the galley! Someone neglected their duties and left hot coals in the stone stove. During the storm they fell out and started a fire in the bow. The party has to declare their actions in 1d8 simple sentences, otherwise: 1 - the fire damages the foremast, if another storm occurs, the mast will break  2 - the fire spreads to the cannon deck, chance of explosion  - the fire damages the outer hull and the ship starts taking water 4 - the fire burns through the planks of the galley floor, damages the stem and cut water. The ship starts taking water and can only travel at 50% of it's speed
 fisher man seen fishing with dynamite (or fireballs)
 fishing lure dredged up
+flotsam: {flotsam}
 flying fish
 food supplies are destroyed by vermin
 freak storm
@@ -156,6 +173,7 @@ globes of light move beneath the surface of the water
 gnomes testing submarine
 goblin raiders employing toothed, gas spore-like floating bombs
 gull droppings bombard one person over the course of several days
+hole in the hull, must throw some cargo overboard to lift it above the waterline and sail light until it's repaired
 iceberg in the distance
 large bird nest spotted in tree along shore
 large school of fish at the surface of water cross ship's path
@@ -165,10 +183,12 @@ lost foreign ship
 merchants unknowingly transporting a naga, succubus, demon, etc
 merfolk hunters
 mermaid
+minor sail torn due to high wind or sudden beam swing--replace it or make future checks at -2/-10%
 naval patrol
 navigation charts/equipment are lost causing the crew to navigate by more primitive methods
 nets or fishing lines are pulled by something massive, dragging ship along
 one of the sails tears loudly
+one of the sails was left hoisted too long in the storm. That mast has now snapped, and the ship suffers a 1/3rd reduction in speed. Maybe you can jury-rig a fix, in which case only 1/4 reduction. Or a 1/2 reduction if you do poorly enough
 other stuck ships are visible, some with rotting sails
 passengers heading away from pcs native land. one is a pcs mother. what the hell?
 pilgrims heading to pilgrimage site
@@ -199,22 +219,31 @@ smell of flowers comes on the wind and lingers
 smoke in the distance
 snow or a freezing rain storm causes slippery decks
 some eerily low storm clouds
+some miscellaneous marine leviathan has crashed into the hull in its sleep, damaging planks all along one side before plunging down into the depths. The ship is leaking badly, gaining on the pumps by {2d6} inches per hour, and will eventually founder unless something is done.
 someone drops and chases something valuable that slides across deck
 someone gets seasick
 someone is stealing rations from the ship's supplies
 someone plays a prank
 something absurdly large is discovered in the hold; nobody realized they were transporting it (large mammal, ancient statue, fountain)
 something big and heavy falls and rolls across a deck
+something caught in the rudder--someone needs to climb down there and get it
 spice merchants--not a lot of money but lots of spices
 storm giant demanding toll/tribute
 stranded castaway
+stray wave has smacked you sidewise and flung a volley of stinging jellyfish onto the deck, roll dex or reflex save for everybody up there to avoid having a random body part swollen beyond usefulness for d4 days
 surface of the water is covered with an oily, coloured film
 the classic "message in the bottle" arrives
 the navigator muses about two new stars that move each night
 the remnants of battle between ships, the ships now fused together, like half melted wax, some joined by long thin strands
 the sea-borne wedding flotilla of bluebeard and snow white, with their corona of 7 floating frigates, each manned by a piratical dwarf renowned for a specific trait
+the ship collides with a rocky outcrop just below the surface. The damage is not severe, but until the damage is repaired, at least one person must be on pump duty at all times, or the ship will take on too much water
+the water is dense with fist-sized jellyfish
+the water is foaming with bubbles
+the wind dies off completely
 there is a stowaway that nobody knows about
 tide of coloured seaweed/kelp
+two sirens are beating the tar out of each other on a nearby shoal
+two water currents meet here, resulting in grid-like waves
 unchecked forest fires burn along the shoreline
 uninhabited island
 vast icebergs of blood
@@ -225,42 +254,23 @@ wave grounds ship
 weird pirates of d6+2 level) but accompanied by exotic non-humans or wizards
 weird pirates of level 1-4) but accompanied by exotic non-humans or wizards
 whale sighting
+whales breach about a kilometer away
 whirlpool
 whirlpool grabs ship, spins it, then ceases
 white elves sailing far out to sea for a royal funeral. the monarch is slain and his most beautiful slaves are thrown--live and with limbs bound--into the sea
 whole crew falls asleep
 wind picks up
 wreckage spotted
+you are so busy mismanaging the ship that you fail to notice the large iceberg (or reef, depending on climate) you're about to run into. Ship takes 1d8 in hull damage per 10,000 gp weight of cargo (or equivalent for whatever system), half if a saving throw to pilot the ship again is successful  
+you hit a whale carcass or something--the ship trails blood and there will be a corona of sharks surrounding the boat for the next 3 days
+you left topsails deployed on mainmast/foremast and/or mizzenmast. Wind has now snapped the masts, leaving the sails, booms and top parts of the mast tangled in the ratlines and rigging. 60 man-hours (in good conditions) to carefully clean-up the mess, 6 if you don't mind the details/consequences (like cutting everything and shoving it into the sea). If a storm is still raging around you, double this. Navigation, propulsion, and even crossing the main decks become much more hazardous with swaying netting and giant-sized clubs swinging about in the wind
+you tell someone to do the exact opposite of what you wanted them to do, and as a result the next time you have a die roll for hull damage, losses, distance blown off course, etc, instead of rolling you simply take the worst possible result
+you took a large wave broadside instead of sailing into it. 1d6 crew are washed or thrown overboard, including anyone in the crow's nest. Hurry if you want to save them - they can't swim well
+you vigorously steer the ship this way and that to maintain control... a bit too vigorously. The pilot wheel breaks, ship can adjust speed but not heading until repaired  
+you've collided with the temple of some aquatic (and now religiously offended) species
 young royal bastards, ages 4-13, marooned sea with so that they'll be unable to claim the throne
 your hair stands up as the rigging coruscates with electric blue light while balls of lightning move overhead
-{flotsam}
-
-===
-
-;Randomevent
-bad weather
-A {small|medium|large} {ship type} is sighted
-dead calm sea
-Something caught in the rudder--someone needs to climb down there and get it
-You hit a whale carcass or something--the ship trails blood and there will be a corona of sharks surrounding the boat for the next 3 days
-Minor sail torn due to high wind or sudden beam swing--replace it or make future checks at -2/-10%
-Stray wave has smacked you sidewise and flung a volley of stinging jellyfish onto the deck, roll dex or reflex save for everybody up there to avoid having a random body part swollen beyond usefulness for d4 days
-A freak wave has heeled the ship over, narrowly avoiding capsizing but shifting the ballast/cargo so that you now have a permanent list to {port|starboard}. Navigation and maneuverability are badly compromised
-Some miscellaneous marine leviathan has crashed into the hull in its sleep, damaging planks all along one side before plunging down into the depths. The ship is leaking badly, gaining on the pumps by {2d6} inches per hour, and will eventually founder unless something is done.
-A crewman kills an albatross, cursing the ship.
-The ship collides with a rocky outcrop just below the surface. The damage is not severe, but until the damage is repaired, at least one person must be on pump duty at all times, or the ship will take on too much water
-You've collided with the temple of some aquatic (and now religiously offended) species
-Hole in the hull, must throw some cargo overboard to lift it above the waterline and sail light until it's repaired
-A sailor, bewildered and struggling, drops a tool from the rigging, a random person on deck takes 1d8 damage
-Fire in the galley! Someone neglected their duties and left hot coals in the stone stove. During the storm they fell out and started a fire in the bow. The party has to declare their actions in 1d8 simple sentences, otherwise: 1 - the fire damages the foremast, if another storm occurs, the mast will break  2 - the fire spreads to the cannon deck, chance of explosion  - the fire damages the outer hull and the ship starts taking water 4 - the fire burns through the planks of the galley floor, damages the stem and cut water. The ship starts taking water and can only travel at 50% of it's speed
-One of the sails was left hoisted too long in the storm. That mast has now snapped, and the ship suffers a 1/3rd reduction in speed. Maybe you can jury-rig a fix, in which case only 1/4 reduction. Or a 1/2 reduction if you do poorly enough
-You took a large wave broadside instead of sailing into it. 1d6 crew are washed or thrown overboard, including anyone in the crow's nest. Hurry if you want to save them - they can't swim well
-You left topsails deployed on mainmast/foremast and/or mizzenmast. Wind has now snapped the masts, leaving the sails, booms and top parts of the mast tangled in the ratlines and rigging. 60 man-hours (in good conditions) to carefully clean-up the mess, 6 if you don't mind the details/consequences (like cutting everything and shoving it into the sea). If a storm is still raging around you, double this. Navigation, propulsion, and even crossing the main decks become much more hazardous with swaying netting and giant-sized clubs swinging about in the wind
-You are so busy mismanaging the ship that you fail to notice the large iceberg (or reef, depending on climate) you're about to run into. Ship takes 1d8 in hull damage per 10,000 gp weight of cargo (or equivalent for whatever system), half if a saving throw to pilot the ship again is successful  
-You vigorously steer the ship this way and that to maintain control... a bit too vigorously. The pilot wheel breaks, ship can adjust speed but not heading until repaired  
-Amid the ship's tossing and confusion on deck, someone slips over the rails. Man overboard!
-You tell someone to do the exact opposite of what you wanted them to do, and as a result the next time you have a die roll for hull damage, losses, distance blown off course, etc, instead of rolling you simply take the worst possible result
-Carelessness has caused someone to get tangled in the riggings. The person must make an appropriate saving throw every round while caught or die; any round they succeed they can try to make a dex save on 2d12 to escape. Otherwise someone can cut them down, with a -1/-5% on future sailing rolls until repaired. If the person dies while stuck, all NPC crew will be at -1 for morale-type rolls for the remainder of the voyage
+{d6+2} adventurers not unlike yourselves
 
 : creature
 aquatic elf

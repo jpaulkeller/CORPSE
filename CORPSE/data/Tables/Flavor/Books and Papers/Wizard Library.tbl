@@ -1,0 +1,46 @@
+/ http://www.random-generator.com/index.php?title=Wizard_Library_Study_Results
+
+: Wizard Library
+10x Arcane Book: {ARCANE BOOK}
+Artifact Location: {:ARTIFACT} 
+Book: a {50%{book:quality} }{50%{condition:book} } copy of: {BOOK}
+Curse: {CURSE}
+Dungeon Entrance: {:dungeon entrance} {Dungeon Name}
+Dungeon Secret: {:dungeon secret} {Dungeon Name}
+Paper: {paper}
+Prophecy: {prophecy}
+Riddle or Puzzle
+
+: dungeon secret
+A detailed map of 
+A list of secret doors and rooms in 
+A magical map of
+An adventurer's logbook about
+Construction plans and notes about
+Details on the inhabitants of
+Notes about the traps in
+Sub-levels of 
+
+: Artifact
+{ARTIFACT NAME} - {:located in} {25%{Dungeon Room Name}, inside }{Dungeon Name}
+
+: located in
+It is believed to be somewhere in the
+It was last seen in the
+Several texts seem to indicate that it might be found in the
+Although never directly stated, {:book descriptor} {book:type} hints that it might now be somewhere in the
+
+: book descriptor
+a carefully hidden
+a crumbling
+a forbidden
+a magical
+a musty
+an ancient
+an enciphered
+
+: Dungeon Entrance
+A portal to the
+A secret entrance into the
+A smashed floor tile opens a shaft into the
+The properly tipped book slides the bookcase to reveal an entrance to the

@@ -1,6 +1,7 @@
 / http://random-generator.com/index.php?title=Hubris_Tavern
 / http://wrathofzombie.wordpress.com/2013/12/07/hubris-die-drop-generator-for-taverns-and-inns/
 / http://random-generator.com/index.php?title=Inn_Patrons
+/ http://adungeonaday.tumblr.com/post/129716187752/tavern-ambiance
 
 : Tavern Flavor
 abundance of {{profession}+} usually in the common room
@@ -31,6 +32,28 @@ where you can find the best {menu:main} you’ll ever have
 {quiet|romantic} atmosphere
 {rowdy|religious|shady} patrons
 {well-informed|attentive} staff
+
+: Ambiance
+A body is laid out on a table and everyone is drunk, singing, laughing, and crying.
+A small fire crackles in the hearth, but the chimney is clearly clogged, because the smoke has filled the room.
+A warm glow emanates from the hearth.
+All the furniture is cushy and inviting.
+Everything in sight is moldy, tarnished, broken, or some combination of the three.
+Everything is lively and cheerful, but you get the feeling you should keep an eye on your coinpurse and your back in a corner.
+Gentle music fills the space.
+It’s bitterly cold, though the patrons seem not to notice or care.
+Merry laughter and upbeat conversation fills the room.
+Only a few guttering candles keep the darkness at bay.
+Silver candle brackets dot the walls, their charges flickering merrily.
+The bar is clearly divided into two groups, and each is muttering and grumbling while eyeing the other side.
+The interior of the building exudes warmth and comfort.
+The place feels friendly, but is filthy.
+The place is dark and empty. One group at the back are having a hushed conversation.
+The place is spotless and completely empty.
+The scent of burned bread permeates the place.
+The scent of fresh bread and cinnamon wafts about on the air.
+The whole place feels vaguely threatening.
+Unsettlingly normal.
 
 : Patron
 a {50%{appearance} }{:who}{50%{:solo activity}}
@@ -219,7 +242,18 @@ smugglers
 stolen goods storage
 thugs for hire
 
-===
+: Music
+/ http://adungeonaday.tumblr.com/post/126436627507/whos-playing-tonight
+all enthusiasm, no skill
+classical, highly structured
+drinking songs
+experimental and jazzy
+fast and upbeat
+quavering and eerie
+rhythmic and primal
+sea shanty
+slow and hypnotic
+sorrowful
 
 ===
 

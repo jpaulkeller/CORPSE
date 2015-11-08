@@ -1,5 +1,8 @@
 : Wand
-Wand of {{Spell:Alteration|Spell:Conjuration|:POWER}} ({#/{d6*10}} charges) - made of {:material}, {:length} long
+{:NAME} ({#/{d6*10}} charges) - made of {:material}, {:length} long
+
+: Name
+Wand of {{Spell:Alteration|Spell:Conjuration|:POWER}}
 
 : Potter
 {:wood}, {:length}, with a {:core} core; {75%{:adj} }{:flex}

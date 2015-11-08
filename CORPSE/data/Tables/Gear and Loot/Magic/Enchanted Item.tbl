@@ -6,10 +6,7 @@
 Belt of {~{Spell:Abjuration}}
 Boots of {Spell#.*(?:walk|fall).*#}
 Bracers of {Spell:Abjuration}
-Ring of {{Spell:Animation|Spell:Enchantment|:Ring}}
-Scroll of {{Spell|:Scroll}}
 {ARCANE BOOK}
-{Amulet|Necklace|Pendant} of {{Spell:Evocation|Spell:Hypnotic|Spell:Necromantic}}
 {Book:Type} of {Spell:Spiritual}
 {CHARM}
 {Cloak|Robe} of {{Spell:Illusion|Spell:Transference}}
@@ -21,67 +18,40 @@ Scroll of {{Spell|:Scroll}}
 {Helm|Hood|Hat} of {Spell:Empathic}
 {Jewelry} of {Spell}
 {Magic Robe.Name}
-{Mushroom|Potion} of {{:Mushroom|:Potion}}
+{Mushroom} of {:Mushroom}
 {Musical Instrument} of {{Spell:Conjuration|Spell:Evocation|Spell:Illusion}}
 {POTION:LOOT}
 {POTION}
+{RING}
 {ROD}
+{SCROLL:DESCRIPTION}
 {STAFF}
 {TSR TREASURE}
 {UNIQUE MAGIC}
 {WAND}
 
-: Amulet
-Adornment
-Charisma
-Devotion
-ESP
-Inertia
-Infravision
-Regeneration
-Resist Acid
-Resist Lightning
-Resistance
-Searching
-Slow Digestion
-Sustenance
-Teleportation
-Trickery
-Weaponmastery
-Wisdom
-the Magi
-
 : Mushroom
-Clear Mind
-Debility
-Emergency
-Fast Recovery
-Purging
-Second Sight
-Sprinting
-Stoneskin
-Terror
-Turbulence
-Vigor
-
-: Potion
 Augmentation
 Berserk Strength
 Blindness
 Boldness
 Brawn
 Charisma
+Clear Mind
 Confusion
 Constitution
 Contemplation
 Cure Critical Wounds
 Cure Light Wounds
 Cure Serious Wounds
+Debility
 Dexterity
 Dragon Breath
+Emergency
 Enlightenment
 Enlightenment
 Experience
+Fast Recovery
 Healing
 Healing
 Heroism
@@ -93,88 +63,24 @@ Lose Memories
 Neutralize Poison
 Nimbleness
 Poison
+Purging
 Resist Cold
 Resist Heat
 Resist Poison
 Restore Life Levels
 Restore Mana
 Salt Water
+Second Sight
 Sleep
 Slime Mold Juice
 Slowness
 Speed
+Sprinting
+Stoneskin
 Strength
+Terror
 Toughness
 True Seeing
+Turbulence
+Vigor
 Wisdom
-
-: Ring
-Acid Balls
-Acid Bolts
-Cold Balls
-Curing
-Detection
-Disarming
-Door/Stair Location
-Drain Life
-Fire Balls
-Fire Bolts
-Frost Bolts
-Healing
-Identify
-Illumination
-Light
-Lightning Balls
-Lightning Bolts
-Magic Mapping
-Polymorph
-Probing
-Recall
-Restoration
-Sleep Monster
-Slow Monster
-Speed
-Teleport Other
-Trap Location
-Treasure Location
-
-: Scroll
-Acquirement
-Aggravate Monster
-Banishment
-Blessing
-Curse Armour
-Curse Weapon
-Darkness
-Deep Descent
-Destruction
-Detect Invisible
-Dispel Undead
-Door/Stair Location
-Enchant Armour
-Enchant Weapon
-Enchant Weapon To-Dam
-Enchant Weapon To-Hit
-Holy Chant
-Holy Prayer
-Identify
-Light
-Magic Mapping
-Mass Banishment
-Monster Confusion
-Phase Door
-Protection from Evil
-Recharging
-Remove Curse
-Restore Item
-Rune of Protection
-Satisfy Hunger
-Summon Monster
-Summon Undead
-Teleport Level
-Teleportation
-Trap Creation
-Trap Detection
-Trap/Door Destruction
-Treasure Detection
-Word of Recall

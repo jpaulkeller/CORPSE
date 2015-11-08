@@ -1,0 +1,57 @@
+: Ring
+{:NAME} - {:description}
+
+: Name
+Ring of {{TSR Ring|Spell:Animation|Spell:Enchantment|Spell|:POWER}}
+
+: Description
+plain {:material}
+{:material} with a {gem}
+{:material} with {number:twotofive} {{gem}+}
+{:material} {art:decorated}
+
+: Material
+9x {metal:enchantable}
+{made of:precious}
+
+: Power
+Accuracy
+Acid Balls
+Acid Bolts
+Cold Balls
+Curing
+Detection
+Disarming
+Door/Stair Location
+Drain Life
+Feather Falling
+Fire Balls
+Fire Bolts
+Free Action
+Frost Bolts
+Healing
+Identify
+Illumination
+Light
+Lightning Balls
+Lightning Bolts
+Magic Mapping
+Polymorph
+Probing
+Protection
+Recall
+Resist Poison
+Resist {Element:Any}
+Restoration
+Searching
+See Invisible
+Sleep Monster
+Slow Digestion
+Slow Monster
+Speed
+Speed
+Teleport Other
+Trap Location
+Treasure Location
+the {Fauna}
+{Attribute}

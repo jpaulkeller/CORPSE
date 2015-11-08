@@ -263,7 +263,7 @@ pulses
 ray
 spatter
 spray
-waves
+{50%cascading }waves
 
 : breath type
 5x fire
@@ -299,13 +299,14 @@ petrification
 plasma
 prismatic energy
 resentment (dragon’s assailants turn against one another)
-revulsion ( subject unable to remain in the same physical space as dragon)
+revulsion (subject unable to remain in the same physical space as dragon)
 scalding steam
 serenity (save or achieve involuntary enlightenment)
 sleep
 sonic
 sticky, burning tar
 storm (lightning, deafening peals, damaging winds, massive hailstones)
+time (massively accelerated aging)
 water
 webbing
 withering (massively accelerated aging)

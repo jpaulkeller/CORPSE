@@ -4,15 +4,18 @@
 {:material} {:piece} with {:decoration}{50% on the front and {:decoration} on the back}; {:POWER}
 
 : Piece
+amulet
 bracelet
 charm
 earring
 necklace
+pendant
 ring
 
 : Material
 {bone|claw|shell|talon}
 {gem}
+{made of:precious}
 {metal:enchantable}
 {wood}
 
@@ -34,3 +37,4 @@ interlocking shapes
 
 : Power
 cast {Spell} once per day
+power: {{Spell:Evocation|Spell:Hypnotic|Spell:Necromantic}}

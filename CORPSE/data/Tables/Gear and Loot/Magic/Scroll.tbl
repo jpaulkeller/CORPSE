@@ -1,10 +1,10 @@
 / http://www.random-generator.com/index.php?title=Scroll
 
 : Scroll
-5x Scroll of {Spell}
+5x Scroll of {{Spell|:Power}}
 
 : Description
-5x Scroll of {Spell}{75%; on {33%{condition:paper} }{paper:material}}{33%, {:wrapping}}{33%; {:writing}}{20%; {:obverse}}{20%; {:secured}}{25%; {:contained}}
+5x Scroll of {{Spell|:Power}}{75%; on {33%{condition:paper} }{paper:material}}{33%, {:wrapping}}{33%; {:writing}}{20%; {:obverse}}{20%; {:secured}}{25%; {:contained}}
 
 : Wrapping
 {attached to|strung between} {two|twin|a pair of} {75%{:spool} }{dowel|rod|roller|spool}s
@@ -57,3 +57,44 @@ case made of {made of:hard}{75% {container:decoration}}
 simple {wood} box
 {metal:precious} and {metal:precious{!different}} case
 {metal:precious} case{75% {container:decoration}}
+
+: Power
+Acquirement
+Aggravate Monster
+Banishment
+Blessing
+Curse Armour
+Curse Weapon
+Darkness
+Deep Descent
+Destruction
+Detect Invisible
+Dispel Undead
+Door/Stair Location
+Enchant Armour
+Enchant Weapon
+Enchant Weapon To-Dam
+Enchant Weapon To-Hit
+Holy Chant
+Holy Prayer
+Identify
+Light
+Magic Mapping
+Mass Banishment
+Monster Confusion
+Phase Door
+Protection from Evil
+Recharging
+Remove Curse
+Restore Item
+Rune of Protection
+Satisfy Hunger
+Summon Monster
+Summon Undead
+Teleport Level
+Teleportation
+Trap Creation
+Trap Detection
+Trap/Door Destruction
+Treasure Detection
+Word of Recall

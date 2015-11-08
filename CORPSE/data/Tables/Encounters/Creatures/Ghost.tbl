@@ -1,0 +1,77 @@
+/ Phil Nicholls - http://talesofagm.com/
+
+/ The first step to creating a ghost story is to consider how the ghost manifests.
+/ The default form is that the ghost appears as it did when alive. 
+/ This base appearance is then altered, or replaced, by the result generated on the Appearance Table.
+
+: Appearance
+
+3d6	Appearance
+3	Within a television set
+4	Disembodied head
+5	A pair of glowing eyes
+6	Ball of ectoplasm
+7	Reflection in a mirror
+8	Exactly as if alive
+9	Covered in blood
+10	Translucent figure
+11	Long stringy hair covering the face
+12	Rotting corpse
+13	Wide-eyed child
+14	Idealised/angelic form
+15	Animated shadow
+16	Column of light
+17	Inside a computer
+18	Mass of living insects
+
+/ This is how the ghost interacts with people. During the course of a haunting investigation, the PCs might
+/ discover other ways to communicate with the ghost. However, roll on this table to determine the primary 
+/ method the ghost uses to achieve its goals. The initial stories about the ghost will feature the action 
+/ rolled on this table.
+
+: Actions
+
+3	Temporary possession
+4	Short-term hallucinations
+5	Text-messages from the other side
+6	Insect infestation
+7	Control technology
+8	Powerful nightmares
+9	Screaming
+10	Change in temperature
+11	Whispering
+12	Childish pranks
+13	Possess a house
+14	Messages written in blood
+15	Malfunctioning technology
+16	Minor telekinesis
+17	Induce insanity
+18	Direct physical attack
+
+/ To elevate a ghost story above a simple monster hunt, you need to give the ghost a motivation.
+/ This provides opportunities for investigation, roleplaying, and problem solving.
+/ The genre broadly divides ghost stories into two types: unfulfilled needs and pure destruction.
+/ The former style allows for more interaction with the ghost, and a greater investigation plot. 
+/ In contrast, destruction ghosts demand more combat and produce a simpler story at the table.
+/ Choose what version best suits your group. However, even the destructive ghost ought to have a
+/ reason for its behaviour.
+
+: Desires
+
+3d6	Desires
+3	Re-enact its own suffering
+4	Healing, either physical or emotional
+5	Revenge for its own death
+6	Needs the last rites
+7	Complete one last task
+8	Deliver a final message
+9	Protect a beloved individual
+10	Mortal remains buried
+11	Correct a past misdeed
+12	Companionship
+13	Justice, for itself or a loved one
+14	Correct distribution of its last will and testament
+15	Loved one needs to let the ghost die
+16	Repay a kindness
+17	Anarchy and destruction
+18	Fresh blood to ease the pain

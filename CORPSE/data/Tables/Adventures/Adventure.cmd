@@ -1,5 +1,6 @@
 / http://random-generator.com/index.php?title=Fantasy_Adventure_Generator
 / http://random-generator.com/index.php?title=Fantasy_Situation_Generator 
+/ http://donjon.bin.sh/fantasy/adventure/
 
 <html>
 <body>
@@ -12,10 +13,10 @@
 <ul>
   <li><b>What:</b> 
       <ul>
-        <li>theme: A {adventure:theme} tale
-        <li>goal: The party attempts to {adventure:goal}
-        <li>plot: The basic plot is {adventure:plot}
-        <li>climax: {adventure:climax}
+        <li>Theme: A {adventure:theme} tale
+        <li>Goal: The party attempts to {adventure:goal}
+        <li>Plot: The basic plot is {adventure:plot}
+        <li>Climax: {adventure:climax}
         <li>Situation: [problem]
         <li>[whatelse]
         <li>Theme: {adventure:theme}

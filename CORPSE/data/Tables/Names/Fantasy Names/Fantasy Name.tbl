@@ -14,6 +14,7 @@
 {Saint Name}
 {Tiefling Name}
 {Witch Name}
+{Wizard Name}
 
 : Male
 {Dwarf Name:Male}
@@ -22,6 +23,7 @@
 {Middle-earth Name:Male}
 {Native American Name:Male}
 {Tiefling Name:Male}
+{Wizard Name:Male}
 
 : Female
 {Botanical Name:Female}
@@ -32,6 +34,7 @@
 {Native American Name:Female}
 {Tiefling Name:Female}
 {Witch Name}
+{Wizard Name:Female}
 
 : Surname
 {Dwarf Name:Surname}

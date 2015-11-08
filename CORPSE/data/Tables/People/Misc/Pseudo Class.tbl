@@ -88,32 +88,33 @@ hydromancer
 
 : Priest
 ascetic
-battle-priest
+battle-priest{50%ess}
 clergyman
 cleric
 crusader
 cultist
 curate
-death-priest
+death-priest{50%ess}
 druid
 exorcist
 friar
 healer
 hermit
 hierophant
+high priest{50%ess}
 holy man
 inquisitor
-itinerant priest
+itinerant priest{50%ess}
 mender
 monk
 nun
 necromancer
 paladin
 preacher
-priest
+priest{50%ess}
 priest-king
 seeker
-shadow-priest
+shadow-priest{50%ess}
 {:sage}
 
 : Ranger
