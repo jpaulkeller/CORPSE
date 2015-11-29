@@ -168,7 +168,7 @@ public class Event implements Card, Comparable<Event>
       add ("Bear Encounter", Type.Std, 0, "End your turn. The player on your right moves your token 1 tile in any direction.", null,  "Ol' Blue", "Whistle");
       add ("Blisters", Type.Std, 0, "You may move at most 2 tiles (per turn) until you skip a turn.", null, "Hiking Boots", "First-aid Kit");
       add ("Bomb Squad", Type.Std, 0, "Remove the cache closest to your token from the board.  Ignore caches with player tokens in the same tile.", null);
-      add ("Bragging Rights", Type.Std, 0, "Gain 1 point for every FTF coin you have.  Lose 2 points if you have none." , null);
+      add ("Bragging Rights", Type.Std, 0, "Gain 1 point for every FTF coin you have.  Lose 2 points if you have none, unless" , null, "Geocoin");
       add ("Bug Hog", Type.Std, 0, "Lose 1 point for each Travel Bug you have.", null, "Swag Bag");
       add ("Bug Swap", Type.Std, 0, "Trade travel bugs with any other player.  You both gain 1 point.  If you have none, you may draw one first.", null);
       add ("Broken Wrist", Type.Std, 0, " Jump your token to the Hospital.  End your turn, and skip your next turn.  Lose 4 points if you play this card on another player.", null, "[First-aid Kit]");
@@ -179,7 +179,7 @@ public class Event implements Card, Comparable<Event>
       add ("Careless Cacher", Type.Std, -2, "You failed to properly re-hide the last cache you found.  All Search rolls for it get +1 (until it's found).", null, "Mirror");
       add ("Caught in the Rain", Type.Std, 0, "Discard any one piece of equipment.", null, "Waterproof Jacket", "Emergency Radio");
       add ("Creek Crossing", Type.Std, 0, "Oops! You slip crossing a small creek. End your turn.", null, "Walking Stick", "Hiking Staff");
-      add ("Dead Batteries", Type.Std, 0, "End your turn.  You may discard any Equipment card instead.", "Batteries", "Safari Vest");
+      add ("Dead Batteries", Type.Std, 0, "End your turn.  You may discard any Equipment card instead.", "Batteries", "Extra Batteries");
       add ("Dollar Store", Type.Std, 0, "If you're within 3 tiles of an Urban tile, end your turn.", null, "Swag Bag");
       add ("Drought", Type.Now, 0, "Streams only cost 1 movement point to cross (for the next 2 rounds).", null);
       add ("Early Frost", Type.Std, 0, "End your turn.", null, "Coat", "Gloves");
@@ -205,13 +205,13 @@ public class Event implements Card, Comparable<Event>
       add ("Lost and Found", Type.Std, 2, "Draw 1 Equipment card and give it to any other player.", null);
       add ("May I Borrow That?", Type.Std, -1, "Take any Equipment card from any player that has more points than you.", "Borrow");
       add ("Meet and Greet", Type.Now, 0, "Roll a random location.  Any player may jump to that tile.  All players who do receive 2 points.  Shuffle this card back into the deck.", "Event Cache");
-      add ("Meet the Muggles", Type.Std, 2, "You stop to explain geocaching.  End your turn unless", null, "CITO Bag", "Geocoin");
+      add ("Meet the Muggles", Type.Std, 2, "You stop to explain geocaching.  End your turn unless", null, "CITO Bag", "Safari Vest");
       add ("Missed Anniversary", Type.Std, -1, "Skip your next turn.  Discard any Equipment card.", null);
       add ("Mosquitoes", Type.Std, 0, "-1 to your roll; -2 if you are in a Forest tile; end your turn if you are in a Swamp tile.", null, "Insect Repellent");
       add ("Mud Slide", Type.Std, 0, "End your turn.  Discard one of your Equipment cards unless", null, "Survival Strap");
       add ("Muggled!", Type.Std, 0, "The nearest level 1 or 2 Traditional cache has been emptied.  Remove any Travel Bugs it has.  It may still be found, but finders don't get to draw Equipment cards.", null);
       add ("Night Caching", Type.Std, 0, "All players not on an Urban tile skip their next turn.", null, "Flashlight", "Head Lamp");
-      add ("Out of Ink", Type.Std, 0, "End your turn while you try to improvise something to write with.", null, "Backpack", "Pocket Knife");
+      add ("Out of Ink", Type.Std, 0, "End your turn while you try to improvise something to write with.", null, "Letterbox Stamp", "Pocket Knife");
       add ("Park Closed", Type.Std, 0, "End your turn.  Does not affect <em class=cacher>Ranger&nbsp;Rachel</em>.", null);
       add ("Parking Ticket", Type.Std, -1, "Discard an Equipment card.", null, "Lucky Charm");
       add ("Pawn Shop", Type.Std, 0, "Draw five Equipment cards.  You may trade any of your Equipment cards for any of those five.", null);
@@ -231,7 +231,8 @@ public class Event implements Card, Comparable<Event>
       add ("Steep Slope", Type.Std, 0, "If moving, end your turn.  If searching, -1 to your roll.", null, "Hiking Staff", "Rope");
       add ("Stick Race", Type.Std, 1, "Jump your token to the nearest bridge, and end your turn.", "Pooh Sticks");
       add ("Stop For Directions", Type.Std, 0, "End your turn, but get +3 to your next Move roll.", null, "Cell Phone", "Map");
-      add ("Suspicious Activity", Type.Std, 0, "End your turn.  Roll the dice: if you roll a <em class=dnf>DNF</em>, jump to the Police tile.", "Police", "CITO Bag");
+      add ("Suspicious Activity", Type.Std, 0, "End your turn.  Roll the dice: if you roll a <em class=dnf>DNF</em>, jump to the Police tile.", "Police", "Backpack", "CITO Bag");
+      add ("TFTC", Type.Std, 0, "You may move an additional 2 tiles this turn.  Lose 1 point unless", null, "Letterbox Stamp");
       add ("Thorns", Type.Std, 0, "-2 to your roll.", null, "Gloves", "Long Pants");
       add ("Ticks", Type.Std, 0, "Skip your next turn (you may finish this turn normally).", null, "Gaiters", "Insect Repellent", "Long Pants");
       add ("Trade Up", Type.Std, 2, "You helped restock an empty cache.  Discard an Equipment card unless", null, "Swag Bag");

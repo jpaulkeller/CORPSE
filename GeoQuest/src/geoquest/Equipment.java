@@ -115,6 +115,8 @@ public class Equipment implements Card, Comparable<Equipment>
       add ("Yellow Jeep", "+1 on Move rolls on Urban and Clear tiles.", null, "Search and Rescue");
 
       // TODO new to print
+      add ("Letterbox Stamp", "+1 point whenever you find a level 3 cache.", null, "Ever Ready");
+      add ("Extra Batteries", "You may reroll if both dice are 0", "Batteries", "Ever Ready");
       add ("Survival Strap", "You may reroll if both dice are 1.", null, "Eagle Scout");
       add ("Pocket Knife", "+1 on Search rolls for any level 5 cache.", null, "Eagle Scout");
       add ("Whistle", "Good for clearing the pool, too.", null, "Life Guard");
@@ -127,8 +129,7 @@ public class Equipment implements Card, Comparable<Equipment>
       add ("Compass", "Can prevent the effects of getting lost", null, "");
       add ("Emergency Blanket", "Discard to ignore any weather-related effect.", null, "Just In Case");
       add ("Metal Detector", "Provides a 50/50 chance to prevent effects that would cause you to lose an Equipment card.", null, "");
-      add ("Rechargable Batteries", "", null, "Ever-Ready");
-      add ("Sunscreen", "Protects against some sun-related effects", null, "");
+            add ("Sunscreen", "Protects against some sun-related effects", null, "");
       add ("Umbrella", "Protects against some rain-related effects.", null, "");
       */
    }
