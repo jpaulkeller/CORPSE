@@ -77,14 +77,17 @@ public class Combo implements Card, Comparable<Combo>
             "When an event would affect you, ",
             "you may discard any Equipment card to ignore it.");
       add ("Engineer", "Cell Phone", "Laptop", 
-           "If you roll a <em class=dnf>DNF</em>, ",
-           "you may ignore it, and add 2 to your roll.");
+               "If you roll a <em class=dnf>DNF</em>, ",
+               "you may ignore it, and add 2 to your roll.");
       add ("Environmentalist", "CITO Bag", "Waders", 
            "If an Event card awards you points, ",
            "you get double those points instead.");
       add ("Event Coordinator", "Hat", "Hiking Staff", 
            "If you roll doubles, ", 
            "you may skip your turn (don't draw an Event card) to host a <em class=event>Meet&nbsp;and&nbsp;Greet</em>.  You must attend the event.  Roll the dice to determine how many points you earn.");
+      add ("Ever Ready", "Extra Batteries", "Letterbox Stamp", 
+           "TODO",
+           "");
       add ("Hitchhiker", "Belt Pack", "PDA", 
            "Whenever you roll <em class=roll>4+2</em>, ",
            "you may jump to any tile as your move.");
