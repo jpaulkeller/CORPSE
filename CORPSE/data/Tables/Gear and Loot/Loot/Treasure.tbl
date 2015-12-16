@@ -14,13 +14,14 @@ hidden in a secret room nearby
 hidden in a secret space in the container
 hidden in a secret space under container
 hidden in an ordinary item in plain view
-hidden under a heap of trash/dung
+hidden under {debris:floor}
 hidden under a loose stone in the floor
 
 : Level 1
 {container:small loot} holding {2d250} {currency:medium.coin}s
 {condition:cloth} {container:cloth} holding {debris:floor}
 {~{equipment}}
+{container:small loot} holding {2d10} {coin:coins}
 {:misc}
 
 : Level 2
@@ -29,6 +30,7 @@ hidden under a loose stone in the floor
 {50%{condition:weapon} }{~{weapon}}
 {LUXURY:ITEM} (worth {2d25}0 sp)
 {luxury:jewelry} (worth {2d25}0 sp)
+{container:small loot} holding {2d20} {coin:coins}
 {:misc}
 
 : Level 3
@@ -37,6 +39,7 @@ hidden under a loose stone in the floor
 {~{armor}}
 {LUXURY:ITEM} (worth {2d25}0 ep)
 {luxury:jewelry} (worth {2d25}0 ep)
+{container:small loot} holding {3d20} {coin:coins}
 {:misc}
  
 : Level 4
@@ -45,7 +48,7 @@ hidden under a loose stone in the floor
 {LUXURY:ITEM} (worth {2d25}0 gp)
 {luxury:jewelry} (worth {2d25}0 gp)
 {:misc}
-{cs treasure trove}
+{container:small loot} holding {4d20} {coin:coins}
 {ENCHANTED ITEM}
  
 : Level 5
@@ -53,6 +56,7 @@ hidden under a loose stone in the floor
 {container:small loot} holding {2d8} {{gem}+}{50% and {2d8} {{gem{!different}}+}}
 {LUXURY:ITEM} (worth {2d25}0 pp)
 {luxury:jewelry} (worth {2d25}0 pp)
+{container:small loot} holding {5d20} {coin:coins}
 {:misc}
 {ENCHANTED ITEM}
 <Artifact={ARTIFACT NAME}>
@@ -60,4 +64,4 @@ hidden under a loose stone in the floor
 
 : Misc
 {metal:precious} key
-{container:small loot} holding {2d20} {coin:coins}
+{cs treasure trove}

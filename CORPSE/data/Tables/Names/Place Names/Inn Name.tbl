@@ -1,11 +1,13 @@
 : Inn Name
 <Tavern={:NAME}>
 
+: Port
+<Tavern={:PORT NAME}>
+
 : Name
 {25%{Trait{!OneWord}} }{:Who}'s {:Type}
 {:Creature} and {:Creature{!MaybeSameFirst}} {80%{:Type}}
 {:Creature}'s {Home}
-{:Creature}'s {Organ{!OneMaybeSame}} {80%{:Type}}
 {:Creature}'s {Organ{!OneMaybeSame}} {80%{:Type}}
 {:Type} by the {Site}
 {:Type} of {Evocative Concept}
@@ -30,6 +32,25 @@
 {Texture{!OneWord}} {Site:Artificial{!OneMaybeSame}} {80%{:Type}}
 {Trait{!OneWord}} {:Who{!MaybeSameFirst}} {80%{:Type}}
 {{Flora{!OneWord}}+} and {{Flora{!OneWord}}+} {80%{:Type}}
+
+: Port Name
+{Aquatic} and {Aquatic{!MaybeSameFirst}} {80%{:Type}}
+{Aquatic}'s {Home}
+{Aquatic}'s {Organ{!OneMaybeSame}} {80%{:Type}}
+{:Type} by the {Structure:Coastal}
+{Profession:Sailor{!OneWord}}'s {Evocative Concept{!OneWithSame}} {80%{:Type}}
+{Ship Name:Nautical Adj{!OneWord}} {Aquatic{!MaybeSameFirst}} {80%{:Type}}
+{Ship Name:Nautical Adj{!OneWord}} {Profession:Sailor{!OneWord}} {80%{:Type}}
+{Ship Name:Nautical Noun{!OneWord}} and {Ship Name:Nautical Noun{!OneWord}}
+{Condition:Wood Weapon} {Flotsam:Simple{!OneMaybeSame}} {80%{:Type}}
+{Container{!OneWord}} of {Contents.Item{!OneWord}} {80%{:Type}}
+{Disposition} {Profession:Sailor{!OneWord}{!MaybeSameFirst}} {80%{:Type}}
+{Metal:Common} {Aquatic{!MaybeSameFirst}} {80%{:Type}}
+{Mood} {Profession:Sailor{!OneWord}{!MaybeSameFirst}} {80%{:Type}}
+{Pirate Name}'s {:Type}
+{Noise{!OneWord}} {Profession:Sailor{!OneWord}{!MaybeSameFirst}} {80%{:Type}}
+{Noise{!OneWord}} {Musical Instrument{!OneMaybeSame}} {80%{:Type}}
+{Trait{!OneWord}} {Profession:Sailor{!OneWord}{!MaybeSameFirst}} {80%{:Type}}
 
 : Who
 {:creature}

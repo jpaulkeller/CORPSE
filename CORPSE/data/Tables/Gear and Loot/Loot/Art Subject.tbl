@@ -1,0 +1,72 @@
+: Art Subject
+a dance
+a forest scene
+a forgotten battle
+a hunt
+a pastoral scene
+a peaceful glade
+a peaceful glen
+a peaceful nature scene
+a sports event
+a wooded fen
+a wooded glade
+a wooded glen
+a wooded place
+a {beast:encounter}
+a {event}
+a {fauna}
+a {flora}
+a {landmark}
+a {monstrosity}
+a {musical instrument}
+a {site}
+a {~{furnishing}}
+an unknown cityscape
+children
+flowers
+hideous monsters
+horse riders
+long-forgotten gods
+long-forgotten religious icons
+lovers
+soldiers at an unknown battle
+the {:Castle} of {Noble Name}
+the {Act} of {Feudal Rank:Noble}
+trees
+unknown mountains
+weapons
+{: water} water
+{:OF}
+{BATTLE NAME}
+{:BOATS}
+{Group Name}
+{minstrels|musicians|performers} in the court of {Noble Name}
+
+: Castle
+bastion
+castle
+gates
+keep
+tower
+
+: Boats
+{Noble Name}’s fleet
+a fleet
+a merchant fleet
+an armada
+boats
+merchant ships
+ships
+the armada
+the royal armada
+the royal fleet
+the treasure fleet
+warships
+
+: Water
+calm
+clear
+dark
+murky
+tranquil
+turbulent

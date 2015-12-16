@@ -1,14 +1,18 @@
 : Ring
-{:NAME} - {:description}
+{:NAME} - {:description} 
+
+: Mundane
+ring; {:description}
 
 : Name
 Ring of {{TSR Ring|Spell:Animation|Spell:Enchantment|Spell|:POWER}}
 
 : Description
 plain {:material}
-{:material} with a {gem}
-{:material} with {number:twotofive} {{gem}+}
+{:material} with a {33%{gem:cut} }{gem}
+{:material} {art:adorned} with {gem}
 {:material} {art:decorated}
+{:material} {fauna} with {gem} eyes
 
 : Material
 9x {metal:enchantable}

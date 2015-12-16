@@ -12,21 +12,6 @@ container
 furniture
 misc
 weapon
-{:misc}
-
-: misc
-a battered chest with a lock no one can figure out
-a crate of stone phalluses
-a golden six-gun with five bullets
-a great-anchor made from a strange green metal
-a huge book, the size of a barn door
-a huge cylinder carved with intricate designs
-a large pearl, the size of a {size:relative medium}
-a large seahorse wearing a saddle
-a massive tooth, taller than a troll
-a vast tangled silver thread
-an enormous dead crab
-an enormous jellyfish corpse
 
 : book
 copy of {BOOK}
@@ -106,6 +91,18 @@ spear shaft
 
 ===
 
+a battered chest with a lock no one can figure out
+a crate of stone carvings
+a golden six-gun with five bullets
+a great-anchor made from a strange green metal
+a huge book, the size of a barn door
+a huge cylinder carved with intricate designs
+a large pearl, the size of a {size:relative medium}
+a large seahorse wearing a saddle
+a massive tooth, taller than a troll
+a vast tangled silver thread
+an enormous dead crab
+an enormous jellyfish corpse
 
 ;shipwreck
 ship named [Ship Names.main] that carried the second prince and his bride and was lost

@@ -10,6 +10,7 @@
 {:magical}
 
 : Common
+broadcloth
 burlap
 canvas
 cotton
@@ -23,12 +24,14 @@ sackcloth
 wool
 
 : Uncommon
+barkcloth
 brocade
 calico
 cambric
 cashmere
 cheesecloth
 chiffon
+cloth-of-gold
 corduroy
 crape
 denim
@@ -37,7 +40,6 @@ fishnet
 flannel
 fleece
 gauze
-gold cloth
 herringbone
 himroo
 hodden

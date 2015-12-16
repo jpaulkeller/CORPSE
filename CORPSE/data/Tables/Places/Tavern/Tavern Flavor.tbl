@@ -3,6 +3,23 @@
 / http://random-generator.com/index.php?title=Inn_Patrons
 / http://adungeonaday.tumblr.com/post/129716187752/tavern-ambiance
 
+: Layout
+C-shaped
+H-shaped
+I-shaped
+L-shaped
+T-shaped
+V-shaped
+O-shaped (with a central open courtyard)
+
+: Location
+at a crossroads
+at the corner of {Street} and {Street{!different}}
+in {Town Name}
+near {CITY FEATURE:SITE}
+near {Landmark}
+{on|just off of} {Street}
+
 : Tavern Flavor
 abundance of {{profession}+} usually in the common room
 always {80%?clean:filthy} rooms and beds
@@ -58,7 +75,7 @@ Unsettlingly normal.
 : Patron
 a {50%{appearance} }{:who}{50%{:solo activity}}
 a {50%{appearance} }{:who} and a {50%{appearance{!different}} }{:who}{50%{:group activity}}
-a {couple|pair of|few|group of} {{:who}+}{50%{:group activity}}
+a {couple|pair of|few|group of} {{:who}+}{50% {:group activity}}
 {:activity}
 
 : Activity
@@ -227,6 +244,15 @@ laundry
 tack and saddle care
 weapon sharpening
 {:illegal services}
+{:npc services}
+{service}
+
+: NPC Services
+a barbarian who offers: {service:barbarian}
+a cleric who offers: {service:cleric}
+a ranger who offers: {service:ranger}
+a rogue who offers: {service:rogue}
+a wizard who offers: {service:wizard}
 
 : Illegal Services
 assassins for hire

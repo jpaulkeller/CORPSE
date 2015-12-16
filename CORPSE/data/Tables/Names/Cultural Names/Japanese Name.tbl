@@ -3,12 +3,16 @@
 : Japanese Name
 {:Male}
 {:Female}
+{:Generated}
 
 : Male
 {:Surname} {:Male First}
 
 : Female
 {:Surname} {:Female First}
+
+: Generated
+{:Syllable}{:syllable}{60%{:syllable}}{40%{:syllable}}{30%{:syllable}}
 
 : Surname
 Abe
@@ -2530,3 +2534,31 @@ Yusuke
 Yutaka 
 Zenko 
 Zeshin
+
+: Syllable
+ari
+chi
+do
+fu
+ji
+ka
+ke
+ki
+ku
+lu
+me
+mei
+mi
+mo
+na
+no
+ri
+rin
+ru
+shi
+ta
+te
+to
+zi
+zu
+zus

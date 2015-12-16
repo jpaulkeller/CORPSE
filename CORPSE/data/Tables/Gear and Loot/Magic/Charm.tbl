@@ -1,16 +1,25 @@
 / inspired by http://chaoticshiny.com/charmgen.php
 
 : Charm
-{:material} {:piece} with {:decoration}{50% on the front and {:decoration} on the back}; {:POWER}
+{:mundane}; {:POWER}
+
+: Mundane
+{:material} {:piece} with {:decoration}{50% on the front and {:decoration} on the back}
 
 : Piece
 amulet
 bracelet
+brooch
 charm
+cloak pin
 earring
+fob
+locket
+medallion
 necklace
 pendant
-ring
+talisman
+trinket
 
 : Material
 {bone|claw|shell|talon}
@@ -21,7 +30,7 @@ ring
 
 : Decoration
 a {charge}
-a {fauna}
+a {fauna}{33% with {gem} eyes}
 a {sigil}
 a {tiny item}
 a {~{weapon}}
@@ -38,3 +47,26 @@ interlocking shapes
 : Power
 cast {Spell} once per day
 power: {{Spell:Evocation|Spell:Hypnotic|Spell:Necromantic}}
+{:superstition}
+
+: Superstition
+bring financial success
+bring good luck
+bring true love
+discern the truth
+improve {skill}
+increase fertility
+increase height over time
+make the wearer more {trait:good}
+notice things no one else would
+prevent getting lost
+protect against disease
+protect against evil
+protect against poison
+protect against the evil eye
+protect against {special offense}
+protect against {{monster type}+}
+protect against {{monster}+}
+protect from drowning
+protect from lightning
+understand {domain}
