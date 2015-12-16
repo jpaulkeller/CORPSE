@@ -2,6 +2,7 @@
 /          Values from DRAGON Magazine #83, page 10.
 / http://www.random-generator.com/index.php?title=SimpleGem
 / https://41.media.tumblr.com/576db70fe91688de6810de1319f5127e/tumblr_nswdt0kg161ucmmnlo1_1280.jpg
+/ http://crgurps.comuv.com/content/gemstone-generator
 
 : Fancy = ".*fancy.*
 : Ornamental = ".*ornamental.*
@@ -143,7 +144,6 @@ green sapphire            green              500pp   oriental emerald
 hambergyle                                           semi-precious
 heliotrope                bloodstone
 hematite                  silver                     ornamental
-horn coral
 horn coral                                           precious
 hyacinth                  jacinth
 hydrophane                                           semi-precious
@@ -303,7 +303,7 @@ flat top single bevel
 : Other Cut
 12-point merkaba-octahedron star cut
 14-point merkaba-octahedron star cut
-20-point merkaba - icosahedron star cut
+20-point merkaba-icosahedron star cut
 angel carved
 cameo carved
 cube cut

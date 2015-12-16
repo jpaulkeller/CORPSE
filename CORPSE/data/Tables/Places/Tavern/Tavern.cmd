@@ -18,19 +18,24 @@
 
 <h3>Location</h3>
 <ul>
- <li>on {Street}
+ <li>{TAVERN FLAVOR:LOCATION}
  <li>in {neighborhood}, near the {LANDMARK}
  <li>{direction} the {city feature:site}
- <li>The street outside is {street flavor}.
+ <li>the street outside is {street flavor}
 </ul>
 
 <h3>Description</h3> 
 <ul>
- <li>The inn is a {small|large|{single-|two-|three-}storey} {building material} building, 
+ <li>The inn is a {small|large|{single-|two-|three-}storey}, {TAVERN FLAVOR:LAYOUT} {building material} building, 
      with {building flavor}{20% and {building flavor{!different}}}.
  <li>Accommodations consist of {quantity:some} {accommodations}. 
  <li>The inn is {locally |widely |well-}known for the {tavern flavor}.
- {50%<li>Other services include {tavern flavor:services}}
+ <li>Other services include:
+     <ul>
+        {50%<li>{tavern flavor:services}}
+        {50%<li>{tavern flavor:services}}
+        {50%<li>{tavern flavor:services}}
+     </ul>
  {25%<li>There is a {smell:synonym pleasant} of {smell:cooking}} 
  <li>Color scheme:
      <table cellpadding="3" cellspacing="3" style="border: 1px solid #000000;">

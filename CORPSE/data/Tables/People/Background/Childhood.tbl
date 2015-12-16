@@ -1,0 +1,570 @@
+/ Copyright © 2012-2013 Flatland Games, icons by Lorc under CC-BY
+
+. Note
+. Attributes
+
+: Parents
+You are an orphan. Things were hard for you.; +2 Wis, +2 Con, +1 Int
+Your father was an outcast, rightfully or not. +2 Int, +1 Wis, +1 Con, Skill: Survival
+Your parents were fishermen and you grew up by the river. +2 Dex, +1 Str, +1 Wis, Skill: Fishing
+Your family worked a small farm outside the village. +2 Con, +1 Wis, +1 Cha, Skill: Farming
+Your father was the local smith and taught you both hammer and bellows. +2 Str, +1 Dex, +1 Cha, Skill: Smithing
+You led the sheep out onto the mountain like your father before you. +2 Con, +1 Dex, +1 Wis, +1 Str
+Your parents ran the local inn. You grew up meeting many travellers and hearing their tales. +2 Cha, +1 Int, +1 Dex, +1 Wis
+You worked the loom, cutting and twisting as the Fates. +2 Dex, +1 Int, +1 Cha, Skill: Weaving
+Your father or mother kept the old stories. Your head is filled with them. +2 Int, +1 Cha, +1 Wis, Skill: Folklore
+Your father was a watchman, stern but fair with child and stranger alike. +2 Str, +1 Cha, +1 Con, Skill: Athletics
+You went on journeys into the woods to gather herbs and berries. +2 Wis, +1 Con, +1 Dex, Skill: Herbalism
+Your father was a local merchant. You learned to name your price and charm your customers. +2 Cha, +1 Int, +1 Dex, Skill: Haggling
+
+: Child
+Children often fight, but you never lost. +2 Str, +1 Wis
+There wasn’t a game you couldn’t win. +2 Dex, +1 Int
+You were the toughest kid around. +2 Con, +1 Cha
+No secret escaped you. +2 Int, +1 Dex
+Your empathy made you a sought after confidant. +2 Wis, +1 Con
+You never met someone who didn’t like you. +2 Cha, +1 Str
+You solved everyone else’s problems, and never mentioned your own. +1 Str, +1 Con, +1 Cha
+Everyone has something to teach, and you learned a little from them all. +1 Dex, +1 Int, +1 Wis
+
+The old witch in the village took a liking to you when you were still young, and you now keep her animals for her. While
+what you do may seem inconsequential, the witch seems to consider you to be vitally important, and favors you above all
+others. You dream of a more exciting life.
+You have a knack with animals. Your Constitution and Wisdom begin at 10, and all of your other ability scores begin at 8.
+
+What was your childhood like?
+Laboring with the blacksmith took your mind off your troubles. +2 Str, +1 Cha
+The fishermen took a liking to you and you swapped stories with them. +2 Dex, +1 Wis.
+You went camping with the hunters. +2 Con, +1 Int
+The village elders taught you the ancient game of chess. +2 Int, +1 Dex
+You are about to marry into the Miller’s family. +2 Wis, +1 Str
+You broke someone’s heart, or maybe they broke yours. +2 Cha, +1 Con
+The old widow needed help around the house. +1 Str, +1 Int, +1 Cha
+The grizzled mercenary who settled in town taught you a thing or two. +1 Dex, +1 Con, +1 Wis
+
+---
+
+=== Assistant Beast Keeper
+
+You took on the strangest job in the kingdom. You become a level 1 Rogue-Mage. You gain the class abilities Fortune’s
+Favor, Highly Skilled, Sense Magic, and Spellcasting, the skill Animal Ken, and the cantrip Beast Ken. The tables below
+will give you all your bonus skills from your class abilities. What have you learned?
+1d6 The witch seems to enjoy making you do your least favorite chore. What is it? Gain
+Mucking out the stables. +3 Str, Skill: Animal Lore
+Gathering dead wood to keep her cauldron bubbling. +3 Con, Skill: Survival
+Cleaning and sorting the herbs. +3 Int, Skill: Herbalism
+Assisting her when she sees the sick. +3 Wis, Skill: Healing
+Feeding all the animals (and there are so, so many of them). +3 Wis, Skill: Animal Lore
+Preparing the meals. +3 Dex, Skill: Cooking
+
+1d6 Despite your lack of natural talent, you learned a bit of magic. What did you learn? Gain
+How to make things go easier for yourself and others. +2 Wis, Skill: Athletics, Cantrip: Blessing
+How to trick the other youths when you were feeling mischievous. +2 Int, Skill: Stealth, Cantrip: Conjure Sound
+How to tend the garden in even the worst of times. +2 Wis, Skill: Herbalism, Cantrip: Druid’s Touch
+How to see that which you probably should not. +2 Int, Skill: Forbidden Knowledge, Cantrip: Second Sight
+How to light your way, even without a torch. +2 Int, Skill: Survival, Cantrip: Mage Light
+How to put the evil eye on those who displeased you. +2 Wis, Skill: Socialize, Cantrip: Hexing
+
+1d6 One day, while wandering the woods with a friend, you saw something very
+strange. The player to your right was there when it happened. Gain
+1 You saw your true love with another. You confronted the cheating pair. The friend to your
+right consoled you after the encounter, and gains +1 Cha.
++2 Cha,
+Skill: Intimidation
+2 A horned rider galloped through the trees on a dark errand. You hid in fear. The friend to your
+right was just as scared as you, and gains +1 Dex.
++2 Dex,
+Skill: Stealth
+3
+The march of a faerie lord and his court. It was the most beautiful thing you have ever seen,
+and you still hear their song. The friend to your right was there with you and wept at the
+sight, and gains +1 Cha.
++2 Cha,
+Skill: Singing
+4
+The meeting of a sinister cult from another village. One of the men grabbed you, but you managed
+to escape. The friend to your right struck the man from behind and you knocked him
+unconscious, and gains +1 Str.
++2 Str,
+Skill: Athletics
+5
+The miller having a clandestine meeting with a strange thief. You followed the thief and saw
+him lift a merchant’s purse. The friend to your right sneaked through the village with you
+after the thief, and gains +1 Dex.
++2 Dex,
+Skill: Pickpocketing
+6
+A knight on a quest. He broke bread with you and told you of faraway places. The friend to
+your right shared some of their own stories when you were too embarrassed to do so, and
+gains +1 Cha.
++2 Cha,
+Skill: Folklore
+1d6 One of the witch’s beasts is now your constant companion (note: this counts as an
+Ally). Which strange animal is your new best friend? Gain
+1 An inquisitive raven. +2 Int,
+an inquisitive raven
+2 A small mouse who always finds a bit of food. +2 Dex,
+a small mouse
+3 A silvery stag. +2 Str,
+a silver stag
+4 A very loud owl who always knows the way. +2 Wis,
+a very loud owl
+5 A talking pig. +2 Cha,
+a talking pig
+6 A mother bear who visits daily. +2 Con,
+a mother bear
+
+=== Devout Acolyte
+
+You felt the gods’ power and it changed your life. You become a level 1 Mage. You gain the class abilities Sense Magic
+and Spell Casting, the skill Religious Lore, and the cantrip Blessing. The tables below will tell you your other spells.
+What else happened to you as you began your life of service?
+1d6 When you came of age, you began to hear the gods. What first caused them to
+speak to you? Gain
+1 You found an abandoned sanctuary deep in the woods, guided by the hand of one of the gods.
+Within, you found an ancient record of the old gods.
++2 Int, +1 Dex,
+Skill: Ancient History
+2 Some disastrous event befell the village, and the gods showed you how to aid your people when
+they needed you most.
++2 Str, +1 Cha,
+Skill: Socialize
+3 When a mysterious disease struck down many in the village, a god came to you in a dream and
+showed you how to heal the sick.
++2 Con, +1 Int,
+Skill: Healing
+4 A band of templars came from the south and demanded succor from the villagers. Filled with
+the spirit of the old gods, you sat with them all night, debating religion and converting several.
++2 Cha, +1 Str,
+Skill: Religious Lore
+5 The miller’s daughter was badly injured in an accident. Heeding the voice of a god, you tended
+her back to health when all others thought it a lost cause.
++2 Wis, +1 Con,
+Skill: Healing
+6 One of the gods spoke to you and told you that the old witch held great knowledge of the ancient
+ways, and so you spent time learning from her.
++2 Dex, +1 Wis,
+Skill: Herbalism
+1d6 What is the gods’ task for you? Gain
+1 To cleanse the lands of the forces of darkness. You are blessed with the following magics:
+the spell Banish Undead, the ritual Circle of Protection, and the cantrip Second Sight.
++2 Int
+spells to left
+2 To aid the sick and wounded. You are blessed with the following magics:
+the spell Healing Touch, the ritual Goodberry, and the cantrip Mage Light.
++2 Wis
+spells to left
+3 To wander the old paths, protecting nature. You are blessed with the following magics:
+the spell Pass without Trace, the ritual Staff of Might, and the cantrip Druid’s Touch.
++2 Wis
+spells to left
+4 To be a leader of men. You are blessed with the following magics:
+the spell Word of Courage, the ritual Wizard’s Mark, and the cantrip Hexing.
++2 Cha
+spells to left
+5 To walk with the beasts and to learn from them. You are blessed with the following magics:
+the spell Healing Touch, the ritual Bind Familiar, and the cantrip Beast Ken.
++2 Wis
+spells to left
+6 To travel the lands, doing the gods’ work. You are blessed with the following magics:
+the spell Obscurement, the ritual Mage Armor, and the cantrip Hexing.
++2 Int
+spells to left
+
+1d6 When you were most in need, the gods aided you. When were you most
+desperate? The player to your right was there with you. Gain
+1
+When one of the other children was bullying those smaller and weaker than himself, you
+commanded him to stop and the gods gave power to your voice. The friend to your right
+helped you protect the other children, and gains +1 Wis.
++2 Wis
+Spell: Commanding Word
+2 You were beset by brigands, but the gods made a great light and they ran from your presence.
+The friend to your right protected you while you called upon your gods, and gains +1 Cha.
++2 Cha
+Spell: Flash of Brilliance
+3
+You wandered, unwittingly, into an ancient burial mound. As the ancient kings began to rise,
+you asked the gods for help, and crept past them unnoticed. The friend to your right helped
+you find your way out, and gains +1 Dex.
++2 Dex
+Spell: Evade the Dead
+4
+A drunkard from another village was harassing your people at last autumn’s festival. You made
+him tremble at the gods’ power. The friend to your right stood with you when you confronted
+the troublemaker, and gains +1 Cha.
++2 Cha
+Spell: Petrifying Gaze
+5
+A thing from beyond the veil was drawn by the old gods’ power and tried to slay you at night,
+but the gods protected you. The friend to your right burst into your home with light and fellowship,
+finally banishing the shadow, and gains +1 Con.
++2 Con
+Spell: Mystical Shield
+6
+A strange, small man with knotted skin was attacking those who came near the old mine. You
+confronted the creature, holding it at bay while your friend struck it with iron and sent it running.
+The friend to your right drove off the creature, and gains +1 Int.
++2 Int,
+Spell: Mystical Shield
+1d6 Which of the old gods is particularly fond of you? Gain
+1 A god of secrets, inspiration, and hidden things. +2 Int,
+a heavy cloak
+2 A god of new beginnings, fire, and cleansing. +2 Con, holy incense,
+a bronze brazier
+3 A goddess of healing, suffering, and light. +2 Wis,
+healing herbs
+4 A goddess of order, war, and conquest. +2 Cha,
+a broad-bladed sword
+5 A goddess of oaths, pride, and the hearth. +2 Str,
+a silver spoon
+6 A god of agriculture, death, and the underworld. +2 Int,
+a pouch of iron coins
+
+=== FAE Foundling
+
+As you grew up you learned more of your faerie heritage. You become a level 1 Warrior-Mage. You gain the class abilities
+Knacks, Sense Magic, and Spellcasting, and the skill Faerie Lore. The tables below will give you your spells and further
+define your class abilities. What have you learned?
+1d6 What marks you as a child of the fae? Gain
+1 Strangely shaped or colored ears. +3 Wis,
+Skill: Alertness
+2 Eyes of an unusual color and intensity. +3 Cha,
+Skill: Forbidden Secrets
+3 A wicked strength in your gnarled hands. +3 Str,
+Skill: Intimidation
+4 Your tall frame and ethereal presence. +3 Dex,
+Skill: Command
+5 You had a wizened and clever look, even as a babe. +3 Int,
+Skill: Ancient History
+6 A wild way about your every move. +3 Con,
+Skill: Survival
+1d6 What sort of fae magic do you wield? Gain
+1 The woods cover your tracks in honor of your ancestors. +2 Wis,
+Spell: Pass without Trace
+2 You befuddle mortals with glamour and beauty. +2 Dex,
+Spell: Greater Illusion
+3 Your lineage is one of darkness and the fae realms beneath the earth. +2 Int,
+Spell: Conjure Darkness
+4 Mortals tremble before the light of your presence. +2 Cha,
+Spell: Terrifying Presence
+5 Like the household faeries of village legend, you can make whole that which was broken. +2 Dex,
+Spell: Tinker’s Gift
+6 The unseen is clear before your eyes. +2 Wis,
+Spell: Sense Nature
+
+1d6 As you came of age, your faerie heritage created an unexpected problem for you.
+What was it? The player to your right was there when it happened. Gain
+1
+While wandering in the woods near the village, a trickster faerie took a liking to you and decided
+to follow you everywhere you went. The friend to your right helped you trick the mischievous
+sprite into leaving you be, and gains +1 Cha.
++2 Cha, Knack: Resilience,
+Spell: False Friend
+2 A traveler from the south took you for a desperate soul under the sway of a demon and attempted
+an exorcism. The friend to your right helped you escape, and gains +1 Dex.
++2 Dex, Knack: Defensive
+Fighter, Spell: Veil of Sleep
+3 The Erl King himself held court in a hidden grove and sent an emissary to invite you. The
+friend to your right came to learn of the fae, and gains +1 Int.
++2 Int, Knack: Fleet,
+Spell: Commanding Word
+4 A fair but wicked knight rode into the village from the forest and challenged you to a duel. The
+friend to your right acted as your faithful second, and gains +1 Str.
++2 Str, Knack: Great
+Strike, Spell: True Strike
+5
+The sluagh fl ew into the village from the west and you protected your friends and loved ones
+from their attack. The friend to your right stood beside you against their onslaught, and
+gains +1 Con.
++2 Con, Knack: Resilience,
+Spell: Mystical Shield
+6
+When a babe went missing last winter, suspicious villagers whispered that you had taken it to
+your faerie family. The friend to your right reminded everyone that you had always been fair
+and kind, and gains +1 Wis.
++2 Wis, Knack: Fleet,
+Spell: Inspiration
+1d6 When your foster parents found you, what token was left in your swaddling
+clothes? Gain
+1 A fi nely engraved silver leaf. +2 Wis,
+a symbol of the wilds
+2 A frightening fi gure made of twigs and human hair. +2 Int,
+a cursed doll
+3 The skin of a winter wolf. +2 Str,
+a heavy fur
+4 A beautifully carved goblet of ivory. +2 Dex,
+a faerie chalice
+5 Three golden hairs. +2 Cha,
+a most precious gift
+6 A stone rose. +2 Con,
+a stone carving
+
+=== Heir to a Legend
+
+You came of age and began to seek your own legend. You become a level 1 Warrior-Rogue. You gain the class abilities
+Weapon Specialization and Fortune’s Favor, and the skill Storytelling. The tables below will further define your class
+abilities. What have you learned?
+1d6 What stories did you father tell of his past? Gain
+1 He was a mighty knight who rode with a deposed king. +3 Cha,
+Skill: Etiquette
+2 He stopped a mighty necromancer from summoning an army of the dead which would have
+destroyed the land.
++3 Con,
+Skill: Forbidden Secrets
+3 He slew a great wyrm who made its home in a volcano to the south. +3 Str,
+Skill: Survival
+4 When a northern king united the barbarian tribes, your father led a coalition of villages from
+another land against him.
++3 Cha,
+Skill: Command
+5 He traveled to faerie and returned after defeating and evading all the perils of that strange
+land.
++3 Dex,
+Skill: Stealth
+6 He sailed to far away lands and plundered the tombs of kings so old they are now dust. +3 Dex,
+Skill: Trapping
+1d6 How did your father teach you to fight? Gain
+1 He made you balance on fallen trees and parry his blows.
+Your Weapon Specialization class ability is with the Longsword.
++2 Dex,
+specialization to left
+2 The two of you would spar long into the night.
+Your Weapon Specialization class ability is with the Longsword.
++2 Con,
+specialization to left
+3 He thought it more worthwhile for you to learn to attack the enemy unawares.
+Your Weapon Specialization class ability is with the Short Sword.
++2 Dex,
+specialization to left
+4 You learned early on that a single, powerful strike was the best way to end a fight.
+Your Weapon Specialization class ability is with the Great Sword.
++2 Str,
+specialization to left
+5 He taught you close-quarter fighting, as a true soldier.
+Your Weapon Specialization class ability is with the Short Sword.
++2 Str,
+specialization to left
+6 You practiced the old ways of war, wherein single heroes battle for glory and honor.
+Your Weapon Specialization class ability is with the Great Sword.
++2 Con,
+specialization to left
+
+1d6 Something fi nally pushed you to go make a name for yourself. What was it? The
+player to your right was there when it happened. Gain
+1 The loudmouths at the inn fi nally got to you with their insults and you decided to prove your
+family name. The friend to your right stood up to them with you, and gains +1 Con. +2 Con
+2 A mysterious fi gure from your father’s past came to town one night. The friend to your right
+also met the stranger, and gains +1 Wis. +2 Wis
+3
+A skilled fi ghter from another village came to town and challenged your father to a duel; you
+stood in his place and won! The friend to your right protected you from the bully’s friends,
+and gains +1 Str.
++2 Str
+4
+You proved your prowess in the games at the festival last spring using some tricks that your
+father taught you. The friend to your right sat in on your father’s lessons and learned a lot
+too, and gains +1 Dex.
++2 Dex
+5 Someone or something connected to your father’s adventures came seeking revenge, and you
+had to fi ght it off . The friend to your right helped you in the battle, and gains +1 Str. +2 Str
+6
+When a traveling minstrel visited at the inn one night, you listened to his stories long into the
+night; you swear he mentioned your father! The friend to your right heard it too, and gains
++1 Int.
++2 Int
+1d6 Last autumn you visited the market at a nearby village and found an item that
+reminded you of your father’s stories. What was it? Gain
+1 A broken blade engraved with your father’s name. +2 Str,
+that which will be reforged
+2 A map of the lands your father once explored. +2 Wis,
+a questionable map
+3 The diary of one of your father’s former companions. +2 Int,
+a small book
+4 A fragment of tapestry depicting your father’s deeds. +2 Cha,
+a frayed bit of cloth
+5 The shield of one of your father’s former enemies. +2 Con,
+an ensorcelled shield
+6 The key to a secret horde. +2 Dex,
+a brass key
+
+=== Local Performer
+
+You mastered your art. You become a level 1 Rogue. You gain the class abilities Fortune’s Favor and Highly Skilled, and
+a performance skill of your choice (such as singing, storytelling, or playing an instrument). The tables below will give you
+all your bonus skills from your class abilities. What happened as you started your career?
+1d6 Whose stories held your attention the most? Gain
+1 Grandmother Weaver’s tales of faeries, knights, and maidens filled your head with tales of
+adventure.
++2 Cha, +1 Int,
+Skill: Folklore
+2 Your favorite nights were spent swapping tall-tales at the inn. +2 Cha, +1 Con,
+Skill: Deceit
+3 The village witch let you tag along often on her treks into the woods while you listened to her
+prattle about this and that.
++2 Wis, +1 Dex,
+Skill: Herbalism
+4 The eldest sat with you outside of his house and told you the true tales. +2 Int, +1 Cha,
+Skill: Ancient History
+5 A charming man claiming to be from the great cities to the south stayed for a time in the
+village, teaching you all manner of things.
++2 Dex, +1 Wis,
+Skill: Pickpocketing
+6 One of the old fishermen often took you on his trips and told you of the secrets the wilds hold. +2 Con, +1 Str,
+Skill: Survival
+1d6 What gets the best applause from your audience? Gain
+1 A plaintive and spellbinding song about lost innocence. +2 Wis,
+a performance skill
+2 Tricks and distractions. +2 Dex,
+Skill: Sleight-of-Hand
+3 A startling performance about a great hero of old. +2 Str,
+Skill: Intimidation
+4 Your stories of the history of your lands. +2 Int,
+Skill: Ancient History
+5 Telling your neighbors and travellers from nearby villagers about their own ancestry. +2 Int,
+Skill: Folklore
+6 A famous and well-loved tale of romance. +2 Cha,
+Skill: Seduction
+
+1d6 What happened to you that one night in the inn? The player to your right was
+there when it happened. Gain
+1
+A drunk mercenary from the south was troubling the locals. You gave him a bit of your tongue
+and then threw him from the inn to the praise of your fellows. The friend to your right struck
+him a blow, and gains +1 Str.
++2 Str,
+Skill: Athletics
+2
+One of the hunters came with a strange and hideous beast from the woods, half dead and
+curled upon itself. Despite its state, it attacked the innkeep, but you interposed yourself and
+saved him. The friend to your right drove it into the dark, and gains +1 Con.
++2 Con,
+Skill: Athletics
+3
+Two spies from northern conquerors paid for room and board. You were able to overhear their
+plans and alert your neighbors. The friend to your right ran from house to house to spread the
+word, and gains +1 Dex.
++2 Dex,
+Skill: Stealth
+4
+A faerie prince (or so he said, to the mockery of most) stabled his horses and you spent the
+evening in a riddle contest. The friend to your right secretly passed on a hint to you, and
+gains +1 Int.
++2 Int,
+Skill: Folklore
+5
+The local lord came to stay amongst his people for an evening and they called on you in a panic.
+You were able to gain the lord’s attention and make him think more favorably of the village.
+The friend to your right spoke on the village’s behalf as well, and gains +1 Wis.
++2 Wis,
+Skill: Boasting
+6
+A famous minstrel from the south sat all night at the hearth and taught you and your friend
+many songs and tales. The friend to your right learned a thing or two as well, and gains
++1 Cha.
++2 Cha,
+a performance skill
+1d6 What was the best tip you ever got? Gain
+1 A beautiful musical instrument of strange make. +2 Dex,
+an unusual instrumet
+2 The eternal affection of the innkeep. +2 Wis,
+free room and board
+3 A book of tales from faraway places. +2 Int,
+a heavy tome
+4 The love of a faerie noble. +2 Con,
+the true name of a faerie
+5 The purse of a rich man. +2 Dex,
+6d6 silvers
+6 A sword of black steel crafted by alien hands. +2 Str,
+a frightening blade
+
+=== Reformed Bully
+
+You terrorized the other children in the village. You become a level 1 Warrior. You gain the class abilities Weapon Specialization
+and Knacks, and the skill Intimidation. The tables below will further define your class abilities.
+You became angry and strong.
+1d6 How did you become a bully? Gain
+1 The apple does not fall far from the tree. +2 Con, +1 Wis,
+Skill: Stealth
+2 It’s easier to frighten others than convince them that you are right. +2 Wis, +1 Cha,
+Skill: Intimidation
+3 When you were small, something terribly embarrassing happened in front of the other
+children.
++2 Con, +1 Int,
+Skill: Deceit
+4 You were the ugliest, but you were also the biggest. +2 Str, +1 Con,
+Skill: Intimidation
+5 When the other children were having romantic trysts, all you had was your revenge. +2 Str, +1 Dex,
+Skill: Command
+6 You went from prey to hunter at a young age when the other kids mocked you first. +2 Dex, +1 Str,
+Skill: Athletics
+1d6 What kind of bully were you? Gain
+1 You teased them mercilessly. +2 Cha,
+Knack: Resilience
+2 Your fists were the only thing you needed. +2 Str,
+Knack: Great Strike
+3 You plotted constantly at night. +2 Int,
+Knack: Defensive Fighter
+4 You set everyone else up to fail. +2 Wis,
+Knack: Fleet
+5 You would lie in hiding, tirelessly waiting for an ambush. +2 Con,
+Knack: Defensive Fighter
+6 When the other kids thought they were safe, you were always behind them with a whack
+and a laugh.
++2 Dex,
+Knack: Fleet
+
+1d6 When you grew up, how did you reform your rotten ways?
+The player to your right helped you change. Gain
+1
+When you were practicing for the shield wall, you really hurt one of the other trainees. The
+friend to your right also trained with you, and pointed out the error of your ways, and gains
++1 Str. Your Weapon Specialization class ability is with the Spear.
++2 Str,
+specialization to left
+2
+When you were injured deep in the woods, the others your age saved you despite how terrible
+you had been to them. The friend to your right was the fi rst to your side, and gains +1 Cha.
+Your Weapon Specialization class ability is with the Battle Axe.
++2 Cha,
+specialization to left
+3
+When the fair came to town, you were mocked mercilessly by the strongman; you didn’t like
+how that felt. The friend to your right calmed you down and offered you forgiveness, and
+gains +1 Con. Your Weapon Specialization class ability is with the Club.
++2 Con,
+specialization to left
+4
+You fi nally found love at the spring festival after the archery contest. The friend to your right
+lost the competition to you and then introduced you to your love, and gains +1 Dex. Your
+Weapon Specialization class ability is with the Bow.
++2 Dex,
+specialization to left
+5
+When you lost your family and were all alone, everyone else rallied around you and helped out.
+The friend to your right became your foster sibling, and gains +1 Wis. Your Weapon Specialization
+class ability is with the Staff.
++2 Wis,
+specialization to left
+6
+A disembodied spirit gave you a pummeling one day and explained to you the error of your
+ways. The friend to your right witnissed this and is the only one who believes you, and gains
++1 Int. You have no Weapon Specialization, but instead may cast the Second Sight cantrip.
++2 Int,
+special
+1d6 Who in the village forgave you fi rst? Gain
+1 The old witch. You bonded with her by listening to her stories and asking the right questions. +2 Int,
+a healing potion
+2 The pretty lass whose hair you always pulled. You saved her marriage and redeemed yourself. +2 Cha,
+a lock of her hair
+3 The blacksmith. You worked for him for a whole season to make up for your past shenanigans. +2 Str,
+a fi ne weapon
+4 The innkeep. You became his favorite patron when you drove off a group of violent travellers
+from the north.
++2 Con,
+free room and board
+5 The village guard. You sit the watch with him once a week. +2 Con,
+a horn
+6 Grandmother Weaver. You saved her grandson from a raging boar. +2 Wis,
+very tough clothes (+2 AC)
+

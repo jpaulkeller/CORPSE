@@ -10,9 +10,12 @@
 .Quality {quality}
 .Condition {condition}
 
+adze
 air bladder                 15g                      2
+ankus
 anvil                                              125
 arrowhead
+auger
 awl
 backpack                     2g                      3
 backpack, leather            2g                      2
@@ -26,15 +29,17 @@ basket, large                3s                      1
 basket, small                1s                      0.1
 bedroll                     10s                      8
 bell                         1-4g                    1-10
+bellows
 bellows, small
 belt pouch, large            1g                      1
 belt pouch, small            7s                      0.5
 belt, leather               10                       3
 bird cage                    2-5 gp   (5-10)         5
 blanket                      5-8 cp    3
-blanket, winter
 blanket (wool)              15                       5
+blanket, winter
 block & tackle               5g                      5
+block and tackle
 boat, collapsible         5000                      60
 bolt case                    1g                      1
 book (parchment)           220g                     20
@@ -45,6 +50,7 @@ boots, hard                100                       5
 boots, soft                 60                       3
 bottle                       3s                      2
 bottle, ceramic              3         quart         1
+bow drill
 box, iron, large            15 gp                   75
 box, iron, small             8 gp                   35
 box, small gold           1000                       2
@@ -66,6 +72,8 @@ cane, walking                2-5 gp                  6
 canoe, large              3000                     160
 canoe, small              1000                      80
 canvas                       4          sq yd        1
+carding comb
+carpenter’s square
 case, bone, map/scroll       5 gp                    5
 case, leather, map/scroll   15 sp                    2.5
 cask                         5 cp                   10
@@ -95,14 +103,17 @@ cologne/perfume              1 gp+      1 oz          1
 comb                         1 sp                     0.5
 cord                         1 sp      10 ft          0.2
 cord (100 lb)                1         10 yds         0.5
+corkscrew
 crampons                     4 gp                     3
 crampons                   400                        2
 crowbar                      6 sp                     6
 crowbar                     30
 dice                         2 sp                     0.5
 dice (loaded)                2-8 gp                   0.5
+drill
 drill, iron                  5 g                      5
 file
+fingerpick
 fire-starting bow            8 sp                     0.5
 first aid kit               30                        2
 fishhook                     1 cp
@@ -120,6 +131,7 @@ gloves
 glue, 2 oz pot of            5 cp                     1
 grapnel                      7 gp                     7.5
 grappling hook               8 sp                     4
+grindstone
 grindstone                   5 cp
 hacksaw                      2 gp                     2
 hairbrush                    7 cp                     0.5
@@ -136,13 +148,16 @@ hourglass                   25 gp+                    0.5-3
 hourglass                  250                        1
 incense                     50                        0.1
 ink                          1 gp    2 oz pot         1
+iron
 iron pot                     5 sp                     2
 jar, glass                   5 gp                     4
+journal (blank)
 jug, clay                   15 bp                     5
 kayak                     2500                       50
 keg, wooden 5 gal           15 cp                    15 lb
 ladder, 10 ft                0.5                     20
 ladder, 12'                  5 cp                    20
+ladle
 lamp, oil                    2 gp    8 hours          1
 lantern, beacon            150 gp    2 hours
 lantern, beacon           1000                        5
@@ -161,9 +176,9 @@ lock, poor                  20 gp                     1
 lockpick                    20                        0.1
 lodestone
 loom
-journal (blank)
 magnifying glass           100 gp+                    0.5-2
 magnifying glass          1000                        0.1
+mallet
 manacles & key               5 gp                     2-10
 map of the known world       1 gp+                    1
 map or scroll case           8 sp                     0.5
@@ -176,6 +191,8 @@ mirror, large, metal        10 gp                    10
 mirror, small metal        100                        0.1
 mirror, small, metal         2 gp                     0.1
 mirror, small, silver       20 gp                     2
+mortar and pestle
+mousetrap
 nails
 nails, iron                  1 sp        100          1
 needle, sewing               1 sp                     0.1
@@ -201,18 +218,22 @@ pen, fine, metal             1 sp                     0.5
 pen, fine, wooden            5 cp                     0.3
 pen, quill                   8 bp                     0.2
 perfume                     50          vial          0.1
-pick-axe, mining             6 gp                     5
 pick-axe                   200                       20
+pick-axe, mining             6 gp                     5
 pipe, copper
 pipe, smoking                1 cp+                    0.5
 pipeweed                     1 gp+      8 oz pouch    0.5
 piton                        3 cp                     0.5
+pitchfork
+pliers
 pliers                       1 gp  2.5
+plow
 poker, fireplace
 pole                         5          foot          1
 pole, 10'                    3 bp                    10
 pole, extensible
 pot, iron cooking            3 cp                     5
+potters wheel
 pouch, belt, large           1 gp                     1
 pouch, belt, small           8 sp                     0.5
 pouch, leather
@@ -226,8 +247,10 @@ quiver (12-arrow)            8 cp                     3
 quiver (20-arrow)           12 cp                     4
 quiver (20-bolt)             1 sp                     3.5
 quiver (20-bolt)             2 sp                     6
+rake
 razor                        1 gp                     0.5
 reed, hollow                 1                        0.1
+roasting spit
 robe or cloak               75                        5
 rocket, signal              25 gp                     3
 rope, 50' hemp               5 sp                     7.5
@@ -244,69 +267,73 @@ saddle & tack              200                       40
 satchel
 saw, one man                 2 gp                     3
 saw, two man                12 gp                    20
-scabbard, sword, 2-handed   4 gp                      2
-scabbard, sword, bastard    3 gp                      1.5
-scabbard, sword, broad      2 gp                      1
-scabbard, sword, katana     3 gp                      1.5
-scabbard, sword, long       2 gp                      1
-scabbard, sword, ninja-to   1 gp+                     0.5
-scabbard, sword, rapier     2 gp                      1
-scabbard, sword, scimitar   2 gp                      1
-scabbard, sword, short      1 gp                      0.5
-scissors                    5 cp                      1
-sealing wax (per lb)        1 gp                      1
-sealing/candle wax         10          1 lb           1
-sewing needle               5                         -
-sextant, brass           1500                         3
-sheath, dagger              6 sp                      0.5
-shovel                    100                        18
-signal whistle              8 sp                      0.1
-signet ring or seal         5 gp                      0.1
-signet ring or seal        50                         0.1
-silk                      200          1 sq yd        0.1
+scabbard, sword, 2-handed    4 gp                     2
+scabbard, sword, bastard     3 gp                     1.5
+scabbard, sword, broad       2 gp                     1
+scabbard, sword, katana      3 gp                     1.5
+scabbard, sword, long        2 gp                     1
+scabbard, sword, ninja-to    1 gp+                    0.5
+scabbard, sword, rapier      2 gp                     1
+scabbard, sword, scimitar    2 gp                     1
+scabbard, sword, short       1 gp                     0.5
+scissors                     5 cp                     1
+sealing wax (per lb)         1 gp                     1
+sealing/candle wax          10          1 lb          1
+sewing needle                5                        -
+sextant, brass            1500                        3
+sheath, dagger               6 sp                     0.5
+shepherd’s crook
+shovel                     100                       18
+signal whistle               8 sp                     0.1
+signet ring or seal          5 gp                     0.1
+signet ring or seal         50                        0.1
+silk                       200          1 sq yd       0.1
 silverware
-skin, water/wine           15 cp                      0.5
+skin, water/wine            15 cp                     0.5
 sledge
-sleeping roll/bag          40                        15
-soap                        5          1 lb           1
-soap, 5 oz bar of           2 cp                      0.3
-spade/shovel                4 gp                      6
-spice                       1          dose           -
-spike, iron                 1                         1
-spike, iron, large          1 bp                      1
+sleeping roll/bag           40                       15
+soap                         5          1 lb          1
+soap, 5 oz bar of            2 cp                     0.3
+spade/shovel                 4 gp                     6
+spice                        1          dose          -
+spike, iron                  1                        1
+spike, iron, large           1 bp                     1
 spinning wheel
-spyglass                 1000 gp                      2
-staff                       5                        10
-string, 50'                 1 cp                      1
-sundial                     8 gp                     50
-tent, large               250 gp     4-person        20
-tent, pavillion          1000       20-person        50
-tent, small                50        2-person        10
-thief's kit               300                         1
-thieves' picks & tools     30 gp                      1
-tinder box w/flint & steel  2 gp                      1.5
-tinderbox                  10                         2
+spyglass                  1000 gp                     2
+staff                        5                       10
+string, 50'                  1 cp                     1
+sundial                      8 gp                    50
+tent, large                250 gp     4-person       20
+tent, pavillion           1000       20-person       50
+tent, small                 50        2-person       10
+thief's kit                300                        1
+thieves' picks & tools      30 gp                     1
+tinder box w/flint & steel   2 gp                     1.5
+tinderbox                   10                        2
 tongs
 toothpick                    1 cp       100           0.1
-toothpicks
-torch                       0.1                       1
-torch, small                3 bp                      1  
-towel                       0.5                       0.5
+torch                        0.1                      1
+torch, small                 3 bp                     1  
+towel                        0.5                      0.5
 twine
-utensiles
-vellum, 1 sheet             8 gp                      0.1
-vial, ceramic               1 gp                      2.5
-vial, crystal               3 gp                      3
-vial, metal                 5 gp                      4
-wallet                      1 gp                      0.5
-water clock              1000 gp                    200
-wax, candle, lb             1 gp                      1
-wax, sealing, lb            2 gp                      1
+utensils
+vellum, 1 sheet              8 gp                     0.1
+vial, ceramic                1 gp                     2.5
+vial, crystal                3 gp                     3
+vial, metal                  5 gp                     4
+wallet                       1 gp                     0.5
+walking stick
+water clock               1000 gp                   200
+wax, candle, lb              1 gp                     1
+wax, sealing, lb             2 gp                     1
 wedge
-whetstone                   1-9 cp                    0.5-2
-whistle                     1 gp                      0.5
-wig                         2 gp                      0.5
-wineskin                    8 sp                      1
-winter blanket              5 sp                      3
-writing ink (vial)          8 gp                      0.1
-{musical instrument}      500                         2
+wheelbarrow
+whetstone
+whetstone                    1-9 cp                   0.5-2
+whistle                      1 gp                     0.5
+wig                          2 gp                     0.5
+wineskin                     8 sp                     1
+winter blanket               5 sp                     3
+wire
+writing ink (vial)           8 gp                     0.1
+{musical instrument}       500                        2

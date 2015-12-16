@@ -1,0 +1,37 @@
+/ http://angband.oook.cz/steamband/Treasure.pdf
+
+.Container                Pounds  Max
+Backpack                     40
+Belt Pouch                   10
+Box (per cubic foot)         20
+Cart (small)                400
+Cart (large)                600
+Chariot (small)             400
+Chariot (large)             550
+Chests (per cubic foot)     650
+Large Belt Pouch             20
+Sack, Small                  10
+Sack, Large                  40
+Saddlebag, Small             25
+Saddlebag, Large            100
+Ship (per ton)              100
+Wagon, Small                850
+Wagon, Large               1200
+Wagon, Large (2-4 horses)  1500
+
+Brown Bear                  300    600
+Camel                       400    600
+Dog Sled                    300    600
+Donkey                      150    250
+Elephant                    500   1000
+Horse, draft                400    800
+Horse, heavy war            500    50
+Horse, light war            300    500
+Horse, medium war           400    650
+Horse, wild                 300    600
+Mule                        500    750
+Pack Ape                    200    400
+Pony                        200    300
+Ram, Giant                  250    400
+Sheep                        25     50
+Yak                         225    350

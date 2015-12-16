@@ -52,7 +52,7 @@ vest of {fabric:combo fancy}
 waistcoat of {fabric:combo fancy}
 
 : lower
-barbarian loincloth of {fur and pelt:fur} fur
+barbarian loincloth of {fur and pelt} fur
 kilt of {color:simple} and {color:simple{!different}} wool
 pair of {10%cross-gartered }breeches of {fabric:combo}
 pair of jodhpurs of {fabric:combo}

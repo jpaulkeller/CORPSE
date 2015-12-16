@@ -1,3 +1,4 @@
+abacus
 absurd contraption
 armillery sphere
 astrolabe
@@ -7,15 +8,17 @@ clock
 compass
 elevator
 grindstone
+hand mill
 hourglass
-killing machine
 loom
-mill
 mirror
 orrery
 pendulum
+scales
 sextant
 telescope
 thermometer
 war machine
 water-clock
+{tool}
+{utensil}

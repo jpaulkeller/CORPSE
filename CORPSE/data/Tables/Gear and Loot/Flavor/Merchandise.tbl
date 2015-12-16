@@ -30,7 +30,7 @@ general              shoes                       {footwear}
 general              spell components            {spell component}
 general              spices                      {spice}
 general              transportation              
-general              wine                        
+general              wine
 
 : Arms
 ammunition           {{~{ammo}}+}                {{~{ammo}}+}
@@ -127,7 +127,7 @@ wands and staves     {wands|rods|staves}         {{Wand|Rod|Staff}}
 
 : Materials
 fabrics              {{~{fabric}}+}              {{~{fabric}}+}
-furs                 hides, furs and pelts       {fur and pelt:fur}
+furs                 hides, furs and pelts       {fur and pelt}
 materials            {{:material}+}              {{:material}+}
 precious metals      {~{metal:precious}}         {~{metal:precious}}
 

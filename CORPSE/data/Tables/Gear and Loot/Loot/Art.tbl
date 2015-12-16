@@ -1,17 +1,20 @@
-/ inspired by http://chaoticshiny.com/artgen.php
+/ http://chaoticshiny.com/artgen.php
 / http://random-generator.com/index.php?title=Artwork
+/ http://praecantator.com/gaming/HM/art/
 
 . Art
 . Style {:style}
 . Condition {condition}
-. Value {value}
+. Value {value}{10%; {replica|forgery|stolen}}
+. Artist {:ARTIST}
+. Age {:age}
 
 : ART
 {25%{luxury:coating} }ceremonial {weapon}
 {25%{small|large} }{25%{luxury:coating} }{metal:precious} {device}{25% {:decorated}}
 {50%decorative }{:coat of arms}: {:blazon}
-{50%{small|large} }{75%{made of:fabric} }{:weaving} depicting {:SUBJECT}
-{50%{small|large} }{:drawing} depicting {:SUBJECT}
+{50%{small|large} }{75%{made of:fabric} }{:weaving} depicting {ART SUBJECT}
+{50%{small|large} }{:drawing} depicting {ART SUBJECT}
 {50%{small|large} }{:medium} of {:OF}
 {75%{size:relative medium}-sized }{:abstract} made of {made of:hard}{50% {:decorated}}
 
@@ -29,11 +32,11 @@ pyramid
 tetrahedron
 
 : Medium
-{made of:hard} {bust|figurine|sculpture|statue}
+{made of:hard} {:idol}
 portrait
 
 : Statue
-{50%{small|large} }{made of:hard} {bust|figurine|sculpture|statue} of {:OF}
+{50%{small|large} }{made of:hard} {bust|figurine|idol|sculpture|statue} of {:OF}
 
 : Monument
 {size:large} {made of:hard} {bust|sculpture|statue} of {:OF}
@@ -52,15 +55,21 @@ a {pseudo class}
 : Type = Idol + Drawing + Weaving + Coat of Arms
 
 : Idol
-bust 
+bust
+cenotaph 
 diorama
+idol
+mask
+model
 mosaic
 monument
 mural 
 sculpture
 statue
+statuette
 
 : Drawing
+calligraphy
 carving
 diorama
 drawing
@@ -78,6 +87,7 @@ carpet
 pennant
 tapestry
 wall-hanging
+weaving
 
 : Coat of Arms
 banner 
@@ -97,6 +107,7 @@ shield
 accented
 adorned
 decorated
+enameled
 inlaid
 ornamented
 ringed
@@ -122,10 +133,12 @@ baroque
 crude
 detailed
 distinctive
+elaborate
 elegant
 exotic
 extraplanar
 gaudy
+glazed
 impressionistic
 intricate
 ornate
@@ -140,75 +153,39 @@ simple but elegant
 strangely organic
 unusual
 
-: Subject
-a dance
-a forest scene
-a forgotten battle
-a hunt
-a pastoral scene
-a peaceful glade
-a peaceful glen
-a peaceful nature scene
-a sports event
-a wooded fen
-a wooded glade
-a wooded glen
-a wooded place
-a {beast:encounter}
-a {event}
-a {fauna}
-a {flora}
-a {landmark}
-a {monstrosity}
-a {musical instrument}
-a {site}
-a {~{furnishing}}
-an unknown cityscape
-children
-flowers
-hideous monsters
-horse riders
-long-forgotten gods
-long-forgotten religious icons
-lovers
-soldiers at an unknown battle
-the {:Castle} of {Noble Name}
-the {Act} of {Feudal Rank:Noble}
-trees
-unknown mountains
-weapons
-{: water} water
-{:OF}
-{BATTLE NAME}
-{:BOATS}
-{Group Name}
-{minstrels|musicians|performers} in the court of {Noble Name}
+: Artist
+{a {:fame} {:creator}|{FANTASY NAME}}
 
-: Castle
-bastion
-castle
-gates
-keep
-tower
+: Fame
+obscure
+{:famous}
+locally {:famous}
+regionally {:famous}
+world-{:famous}
+unknown
+discredited
 
-: Boats
-{Noble Name}’s fleet
-a fleet
-a merchant fleet
-an armada
-boats
-merchant ships
-ships
-the armada
-the royal armada
-the royal fleet
-the treasure fleet
-warships
+: Famous
+famous
+infamous
+renowned
 
-: Water
-calm
-clear
-dark
-murky
-tranquil
-turbulent
+: Creator
+artist
+craftsman
+sculptor
+{pseudo class}
+
+: Age
+avant-garde
+current
+recent
+contemporary
+modern
+old
+antique
+venerable
+ancient
+archaic
+prehistoric
+primoridial

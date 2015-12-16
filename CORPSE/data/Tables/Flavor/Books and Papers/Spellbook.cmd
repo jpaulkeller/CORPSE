@@ -1,4 +1,6 @@
 / duplicate spells will be different versions (components, range, area of effect, etc) 
+/ https://40.media.tumblr.com/d999c7cc17e68e02923eb7f78a7dcffe/tumblr_nybl5iKQ9E1t5z3yho1_1280.jpg
+/ https://41.media.tumblr.com/3f8697ca8caea76917383cabd2c59cc4/tumblr_nybl4jdiwu1t5z3yho1_500.jpg
 
 <html>
 
