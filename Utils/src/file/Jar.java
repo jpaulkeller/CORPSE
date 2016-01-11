@@ -151,7 +151,7 @@ public final class Jar
       regexItem = new TextItem("Search Pattern (regex)", 50, ClipboardHelper.pasteString());
      
       dirItem1 = new FileItem("Root Directory Containing Libraries", null, 50, true);
-      dirItem1.setInitialValue(new File("C:/pkgs/workspace/PPB/MDM"));
+      dirItem1.setInitialValue(new File("C:/pkgs/workspace/PPB/Applications/MDMApplication"));
       dirItem1.setMode(JFileChooser.DIRECTORIES_ONLY);
       dirItem2 = new FileItem("Root Directory Containing Libraries (optional)", null, 50, true);
       dirItem2.setInitialValue(new File("C:/Oracle/Middleware"));
