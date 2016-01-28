@@ -304,12 +304,12 @@ get out of jail free
 when repairing family home discovers a magical [Fantasy Gifts.GIFTS_AND_LEGACIES]
 acquires a [Fantasy Pets.UNUSUAL_PETS]
 adopted by a wealthy family (if orphan true adoption,otherwise treated like one of the family)
-village/town destroyed but little loss of life, afterward area becomes more prosperous
+{settlement:common} destroyed but little loss of life, afterward area becomes more prosperous
 4,saves a life, person was [Fantasy Character History.SOCIAL_LEVEL]
 despotic ruler outlaws parents, but ruler overthrown and parents elevated in rank
 slavery outlawed, all slaves freed
 receives serious injury ([Fantasy Tragedies.SERIOUS_WOUNDS]), but sorcerer crafts magical prosthesis
-2,becomes reknowned for his occupation
+2,becomes renowned for his occupation
 2,disease almost kills character, but becomes miraculously immune
 2,blessed ([Fantasy Curses and Blessings.BLESSINGS])
 lasting peace, if character was military, discharged with honors

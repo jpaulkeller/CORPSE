@@ -6,9 +6,10 @@ the hamlet
 the house
 the keep
 the mansion
+the steading
 the temple
 the town of {Town Name}
-the village
+the {settlement:common}
 the {Dungeon Name}
 the {Dungeon Room Name}
 the {Inn Name}

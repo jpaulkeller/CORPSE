@@ -7,7 +7,7 @@
 You are an orphan. Things were hard for you.; +2 Wis, +2 Con, +1 Int
 Your father was an outcast, rightfully or not. +2 Int, +1 Wis, +1 Con, Skill: Survival
 Your parents were fishermen and you grew up by the river. +2 Dex, +1 Str, +1 Wis, Skill: Fishing
-Your family worked a small farm outside the village. +2 Con, +1 Wis, +1 Cha, Skill: Farming
+Your family worked a small farm outside the {settlement:common}. +2 Con, +1 Wis, +1 Cha, Skill: Farming
 Your father was the local smith and taught you both hammer and bellows. +2 Str, +1 Dex, +1 Cha, Skill: Smithing
 You led the sheep out onto the mountain like your father before you. +2 Con, +1 Dex, +1 Wis, +1 Str
 Your parents ran the local inn. You grew up meeting many travellers and hearing their tales. +2 Cha, +1 Int, +1 Dex, +1 Wis
@@ -27,7 +27,7 @@ You never met someone who didn’t like you. +2 Cha, +1 Str
 You solved everyone else’s problems, and never mentioned your own. +1 Str, +1 Con, +1 Cha
 Everyone has something to teach, and you learned a little from them all. +1 Dex, +1 Int, +1 Wis
 
-The old witch in the village took a liking to you when you were still young, and you now keep her animals for her. While
+The old witch in the {settlement:common} took a liking to you when you were still young, and you now keep her animals for her. While
 what you do may seem inconsequential, the witch seems to consider you to be vitally important, and favors you above all
 others. You dream of a more exciting life.
 You have a knack with animals. Your Constitution and Wisdom begin at 10, and all of your other ability scores begin at 8.
@@ -36,7 +36,7 @@ What was your childhood like?
 Laboring with the blacksmith took your mind off your troubles. +2 Str, +1 Cha
 The fishermen took a liking to you and you swapped stories with them. +2 Dex, +1 Wis.
 You went camping with the hunters. +2 Con, +1 Int
-The village elders taught you the ancient game of chess. +2 Int, +1 Dex
+The {settlement:common} elders taught you the ancient game of chess. +2 Int, +1 Dex
 You are about to marry into the Miller’s family. +2 Wis, +1 Str
 You broke someone’s heart, or maybe they broke yours. +2 Cha, +1 Con
 The old widow needed help around the house. +1 Str, +1 Int, +1 Cha
@@ -82,14 +82,14 @@ sight, and gains +1 Cha.
 +2 Cha,
 Skill: Singing
 4
-The meeting of a sinister cult from another village. One of the men grabbed you, but you managed
+The meeting of a sinister cult from another {settlement:common}. One of the men grabbed you, but you managed
 to escape. The friend to your right struck the man from behind and you knocked him
 unconscious, and gains +1 Str.
 +2 Str,
 Skill: Athletics
 5
 The miller having a clandestine meeting with a strange thief. You followed the thief and saw
-him lift a merchant’s purse. The friend to your right sneaked through the village with you
+him lift a merchant’s purse. The friend to your right sneaked through the {settlement:common} with you
 after the thief, and gains +1 Dex.
 +2 Dex,
 Skill: Pickpocketing
@@ -125,11 +125,11 @@ speak to you? Gain
 Within, you found an ancient record of the old gods.
 +2 Int, +1 Dex,
 Skill: Ancient History
-2 Some disastrous event befell the village, and the gods showed you how to aid your people when
+2 Some disastrous event befell the {settlement:common}, and the gods showed you how to aid your people when
 they needed you most.
 +2 Str, +1 Cha,
 Skill: Socialize
-3 When a mysterious disease struck down many in the village, a god came to you in a dream and
+3 When a mysterious disease struck down many in the {settlement:common}, a god came to you in a dream and
 showed you how to heal the sick.
 +2 Con, +1 Int,
 Skill: Healing
@@ -190,7 +190,7 @@ you find your way out, and gains +1 Dex.
 +2 Dex
 Spell: Evade the Dead
 4
-A drunkard from another village was harassing your people at last autumn’s festival. You made
+A drunkard from another {settlement:common} was harassing your people at last autumn’s festival. You made
 him tremble at the gods’ power. The friend to your right stood with you when you confronted
 the troublemaker, and gains +1 Cha.
 +2 Cha
@@ -248,7 +248,7 @@ Spell: Greater Illusion
 Spell: Conjure Darkness
 4 Mortals tremble before the light of your presence. +2 Cha,
 Spell: Terrifying Presence
-5 Like the household faeries of village legend, you can make whole that which was broken. +2 Dex,
+5 Like the household faeries of {settlement:common} legend, you can make whole that which was broken. +2 Dex,
 Spell: Tinker’s Gift
 6 The unseen is clear before your eyes. +2 Wis,
 Spell: Sense Nature
@@ -256,7 +256,7 @@ Spell: Sense Nature
 1d6 As you came of age, your faerie heritage created an unexpected problem for you.
 What was it? The player to your right was there when it happened. Gain
 1
-While wandering in the woods near the village, a trickster faerie took a liking to you and decided
+While wandering in the woods near the {settlement:common}, a trickster faerie took a liking to you and decided
 to follow you everywhere you went. The friend to your right helped you trick the mischievous
 sprite into leaving you be, and gains +1 Cha.
 +2 Cha, Knack: Resilience,
@@ -269,12 +269,12 @@ Fighter, Spell: Veil of Sleep
 friend to your right came to learn of the fae, and gains +1 Int.
 +2 Int, Knack: Fleet,
 Spell: Commanding Word
-4 A fair but wicked knight rode into the village from the forest and challenged you to a duel. The
+4 A fair but wicked knight rode into the {settlement:common} from the forest and challenged you to a duel. The
 friend to your right acted as your faithful second, and gains +1 Str.
 +2 Str, Knack: Great
 Strike, Spell: True Strike
 5
-The sluagh fl ew into the village from the west and you protected your friends and loved ones
+The sluagh fl ew into the {settlement:common} from the west and you protected your friends and loved ones
 from their attack. The friend to your right stood beside you against their onslaught, and
 gains +1 Con.
 +2 Con, Knack: Resilience,
@@ -357,7 +357,7 @@ family name. The friend to your right stood up to them with you, and gains +1 Co
 2 A mysterious fi gure from your father’s past came to town one night. The friend to your right
 also met the stranger, and gains +1 Wis. +2 Wis
 3
-A skilled fi ghter from another village came to town and challenged your father to a duel; you
+A skilled fi ghter from another {settlement:common} came to town and challenged your father to a duel; you
 stood in his place and won! The friend to your right protected you from the bully’s friends,
 and gains +1 Str.
 +2 Str
@@ -373,7 +373,7 @@ When a traveling minstrel visited at the inn one night, you listened to his stor
 night; you swear he mentioned your father! The friend to your right heard it too, and gains
 +1 Int.
 +2 Int
-1d6 Last autumn you visited the market at a nearby village and found an item that
+1d6 Last autumn you visited the market at a nearby {settlement:common} and found an item that
 reminded you of your father’s stories. What was it? Gain
 1 A broken blade engraved with your father’s name. +2 Str,
 that which will be reforged
@@ -400,14 +400,14 @@ adventure.
 Skill: Folklore
 2 Your favorite nights were spent swapping tall-tales at the inn. +2 Cha, +1 Con,
 Skill: Deceit
-3 The village witch let you tag along often on her treks into the woods while you listened to her
+3 The {settlement:common} witch let you tag along often on her treks into the woods while you listened to her
 prattle about this and that.
 +2 Wis, +1 Dex,
 Skill: Herbalism
 4 The eldest sat with you outside of his house and told you the true tales. +2 Int, +1 Cha,
 Skill: Ancient History
 5 A charming man claiming to be from the great cities to the south stayed for a time in the
-village, teaching you all manner of things.
+{settlement:common}, teaching you all manner of things.
 +2 Dex, +1 Wis,
 Skill: Pickpocketing
 6 One of the old fishermen often took you on his trips and told you of the secrets the wilds hold. +2 Con, +1 Str,
@@ -454,8 +454,8 @@ gains +1 Int.
 Skill: Folklore
 5
 The local lord came to stay amongst his people for an evening and they called on you in a panic.
-You were able to gain the lord’s attention and make him think more favorably of the village.
-The friend to your right spoke on the village’s behalf as well, and gains +1 Wis.
+You were able to gain the lord’s attention and make him think more favorably of the {settlement:common}.
+The friend to your right spoke on the {settlement:common}’s behalf as well, and gains +1 Wis.
 +2 Wis,
 Skill: Boasting
 6
@@ -480,7 +480,7 @@ a frightening blade
 
 === Reformed Bully
 
-You terrorized the other children in the village. You become a level 1 Warrior. You gain the class abilities Weapon Specialization
+You terrorized the other children in the {settlement:common}. You become a level 1 Warrior. You gain the class abilities Weapon Specialization
 and Knacks, and the skill Intimidation. The tables below will further define your class abilities.
 You became angry and strong.
 1d6 How did you become a bully? Gain
@@ -548,11 +548,11 @@ class ability is with the Staff.
 specialization to left
 6
 A disembodied spirit gave you a pummeling one day and explained to you the error of your
-ways. The friend to your right witnissed this and is the only one who believes you, and gains
+ways. The friend to your right witnessed this and is the only one who believes you, and gains
 +1 Int. You have no Weapon Specialization, but instead may cast the Second Sight cantrip.
 +2 Int,
 special
-1d6 Who in the village forgave you fi rst? Gain
+1d6 Who in the {settlement:common} forgave you first? Gain
 1 The old witch. You bonded with her by listening to her stories and asking the right questions. +2 Int,
 a healing potion
 2 The pretty lass whose hair you always pulled. You saved her marriage and redeemed yourself. +2 Cha,
@@ -563,7 +563,7 @@ a fi ne weapon
 from the north.
 +2 Con,
 free room and board
-5 The village guard. You sit the watch with him once a week. +2 Con,
+5 The {settlement:common} guard. You sit the watch with him once a week. +2 Con,
 a horn
 6 Grandmother Weaver. You saved her grandson from a raging boar. +2 Wis,
 very tough clothes (+2 AC)

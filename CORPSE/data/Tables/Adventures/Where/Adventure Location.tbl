@@ -11,7 +11,7 @@ at {Site Name}
 in a {structure}
 in the {Dungeon Name}
 in the {Dungeon Room Name}
-in the {village|hamlet|town|city} of {Town Name}
+in the {settlement:common} of {Town Name}
 in {Place Name}--a strange and distant place
 in {terrain} in the {compass:8} 
 onboard the {Ship Name}

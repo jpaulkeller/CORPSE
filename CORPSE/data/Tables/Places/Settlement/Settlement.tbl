@@ -5,6 +5,8 @@
 : Settlement
 {:type} {:environment}
 
+: Simple = Common + Tiny + Small + Medium + Large
+
 : Type
 8x {:tiny adj} {:tiny}
 4x {:small adj} {:small}
@@ -20,35 +22,47 @@ in the woodlands
 on the riverside
 on the seaside
 
+: Common
+encampment
+fort
+hamlet
+outpost
+settlement
+steading
+town
+village
+
 : Tiny
 3x farmstead
 4x homestead
 bazaar
+campsite
 convent
 garrison
 guard station
 hermitage
+manor
 market
 sanctuary
 trade station
+villa
 watchtower
 
 : Small
-2,hamlet
-3,crossroads
-3,village
 abbey
 cloister
 colony
+crossroads
 friary
-manor
+hamlet
 plantation
 priory
 settlement
 small fort
+steading
 trade outpost
 tribal camp
-villa
+village
 
 : Medium
 2x town

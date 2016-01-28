@@ -7,7 +7,7 @@ Crusade;A new religion gains many converts, causing conflicts with established r
 Death;An important person dies {of old age|of illness|by accident|under mysterious circumstances}.  {15%There is no clear successor and a power struggle ensues for {6} months.  {15%It leads to civil war.}}
 Diaspora 
 Divine revelation; Signs of the gods are seen. A god is said to have appeared somewhere in the country. The chance of this being true depends on the role of the gods in the game world. The site of its appearance will become a focus for worship. This may mean that a temple is built there, that pilgrims come, and so on. It might also mean that followers of other gods leave, or are driven away (depending on the nature of the god).
-Earthquake;An earthquake strikes {a remote outpost|a nearby village|an important temple|a major city|the entire land}. For each inhabited structure, there is a 50% chance of a major fire and 20% of a a plague.
+Earthquake;An earthquake strikes {a remote outpost|a nearby {settlement:common}|an important temple|a major city|the entire land}. For each inhabited structure, there is a 50% chance of a major fire and 20% of a a plague.
 Eclipse;
 Explorers return with news of a new {50%(inhabited) }land.
 Famine;Famine strikes the land for {6} months.  The cost of food increases up to 100 times its normal price. Normally law-abiding folk will turn to crime in desperation. Farms will produce no income for a year, and only one quarter of their income for the next year. The population will reduce by 5% each month. There is a 15% chance of a plague. There is a 25% chance of a civil war, unless the government acts effectively to relive the suffering.

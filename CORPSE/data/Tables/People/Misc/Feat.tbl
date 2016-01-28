@@ -3345,3 +3345,35 @@ Yondalla's Sense; You display a shrewd perception of danger. Other halflings say
 Zen Archery; Your intuition guides your hand when you use a ranged weapon.
 Zone of Animation; You can channel negative energy to animate undead.
 {Fauna} Trainer; You are skilled at training a particular type of creature.
+
+===
+/ http://www.candlekeep.com/library/articles/goblins.htm
+
+Alertness	+2 Listen, +2 Spot.  (default Feat for goblins in the Monster Manual)	PHB
+Arachnid Rider	Trained in the art of using spiders as mounts.  +2 Handle Animal and +2 Ride for huge spiders.	Races of Faerûn
+Batrider	Skilled in the art of flying dire bats.  +2 Handle Animal and +2 Ride for dire bats.	Races of Faerûn
+Blooded	Skilled in fighting for your life.  +2 Initiative and +2 Spot.	FRCS
+Caver	Knowledgeable in the ways of underground survival.  +2 Survival and +2 Heal in the Underdark.	Underdark
+Close-Quarter Fighting	Skilled at resisting grapple attacks.  Gain attack of oppurtunity against creature with improved grab ability.	Races of Faerûn
+Dirty Fighting	+1d4 damage when making full melee attack.	Sword and Fist
+Dodge	+1 AC vs one opponent.  (stay alive!)	PHB
+Drow Eyes	Improved darkvision to 120ft.  (possible for goblins of the Underdark - should be called 'Dark Acclimated')	Races of Faerûn
+Improved Low Blow	Low Blow feat does not provoke attack of opportunity.	Races of Faerûn
+Jungle Stamina	Acclimated to disease-ridden jungles (for Batiri).  +2 Survival and +2 Fortitude save vs. disease	Races of Faerûn
+Knifefighter	Expert at using weapons in a grapple.  Can use a light weapon in a grapple with no attack penalty. (can only be taken at 1st level)	Players Guide to Faerûn
+Low Blow	Skilled at getting underfoot and attacking larger foes.  Prerequisites:  Dodge, Mobility, +4 attack bonus.  Larger opponent is considered flat-footed.  Provokes attack of opportunity.	Races of Faerûn
+Mobility	+4 dodge bonus to AC vs attacks of opportunity.	PHB
+Mounted Archery	Half penalty for firing from the saddle.	PHB
+Mounted Combat	Ride check negates attack to mount.	PHB
+Point Blank Shot	+1 to hit and damage on ranges under 30 feet.	PHB
+Primitive Caster	Use screeches, wild movements, and extra components to improve power of spells.  Each extra component adds +1 to level of spell.	Races of Faerûn
+Resist Poison	Higher immunity to poisons.  +4 Fortitude save vs. poison. (can only be taken at 1st level)	Players Guide to Faerûn
+Spirited Charge	Double damage on charge while mounted.  (worgs…)	PHB
+Staggering Strike	Skilled at making cruel and demoralizing sneak attacks.  Prerequisites:  +6 attack bonus, sneak attack.  Stagger opponent for one round per die of sneak attack damage reduced.	Races of Faerûn
+Stealthy	Skilled at stealth.  +2 Hide and +2 Move Silently.	FRCS
+Swarmfighting	Can coordinate with allies against opponent (this is a natural for goblins!)  Prerequisites:  Dex 13, +1 attack bonus.  +1 morale bonus for each ally with Swarmfighting threatening a single opponent.	Races of Faerûn
+Swift and Silent	Skilled at stealth.  Move normal speed while using Hide or Move Silently with no penalty. (can only be taken at 1st level)	Players Guide to Faerûn
+Tunnel Riding	Adept at maneuring mounts through tight spaces.  Prerequisites:  Mounted Combat (or Arachnid Rider or Batrider), Tunnelfighter.  Mount and rider take no penalties when moving through tight spaces.	Races of Stone
+Tunnelfighter	Can fight more naturally in close quarters.  Prerequisites:  Dex 13 or Tunnelrunner.  Ignore penalty for fighting in a narrow space.	Underdark
+Tunnelrunner	Can move more naturally in close quarters.  Ignore speed reduction for moving in narrow space.	Underdark
+Weapon Finesse	Use Dex bonus instead of Str for light weapons. (a must for goblin combat types)	PHB

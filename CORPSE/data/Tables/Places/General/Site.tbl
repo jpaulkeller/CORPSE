@@ -48,6 +48,7 @@ road
 shipwreck
 sluice gate
 small hill with hasty fortifications
+steading
 stone circle
 territory marker
 thorp
@@ -62,6 +63,7 @@ wharf
 {:condition} shrine ({Religion})
 {mineral} quarry 
 {mine} mine 
+{settlement:simple}
 {wood:fruit} orchard 
 {~{structure}} ({:abandoned})
 {~{structure}} destroyed by {disaster}

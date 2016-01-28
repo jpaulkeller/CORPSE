@@ -1,0 +1,1422 @@
+/ http://www.drivethrurpg.com/product/155298&affiliate_rem=203141&src=RitePubbanner
+/ http://www.drivethrurpg.com/product/171756&affiliate_rem=203141&src=RitePubbanner
+
+Clear Conscience
+Spell Lists
+1st-Level Bard Spells Alter Liquid: Transmute 1 pint/spell level of liquid.
+Animated Tattoo: Creates a moving image on a
+subject’s body that can attack.
+Borrow Skill: Become proficient in target creature’s
+skill (bonus action).
+Clarity of Thought: Grants advantage on
+Concentration checks (reaction).
+Clear Conscience: Caster loses all memory of events
+just prior to casting the spell.
+Cock’s Crow: Creatures immediately awaken
+(reaction).
+Color: Changes the color of a creature or object.
+Contrariness: Target must lie and be generally
+disagreeable and difficult.
+Curse of Ineptitude: Target experiences clumsiness
+and bad luck.
+Deep Shadows: Enhances shadows so they grant minor
+concealment bonus.
+Discerning Eye: Determines the exact monetary value
+of a single item.
+Dispel Magic, Lesser: As dispel magic except to a
+maximum spell level of 1.
+Distract: Subject loses all actions for a round.
+Escape Grapple: Gain advantage on checks to grapple
+and escape grabs (bonus action).
+Flashy Defenses: Chaos defends you against random
+types of attacks.
+Glamour: Caster becomes physically attractive.
+Guilt: One evil target is denied an action.
+Heat Lightning: Vertical strokes of lightning deal 1d6
+electric damage, plus stuns and sets creatures on fire.
+Malicious Intent: Subjects take –1 or one subject takes
+–d4 on saves.
+Minor Lasting Image: Creates permanent, tiny,
+immobile image.
+Missteps: Subject’s speed and disadvantage on
+Dexterity saving throws.
+Peephole: Creates a small opening through a wooden,
+plaster, or stone wall.
+Pins and Needles: Victim suffers a –1 circumstance
+penalty on all attack rolls and skill checks, and requires a
+Constitution saving throw to cast spells.
+Skill Lore: Target gains advantage on one skill check.
+Songstrike: Cone of sonic energy inflicts 1d4 thunder
+damage (bonus action).
+Sonic Dart: Ranged spell attack inflicts 1d6 points of
+thunder damage (bonus action).
+Stunning Note: Target stunned for 1 round.
+Sample file
+2
+Unspoken Tongue: Target cannot speak intelligibly.
+White Noise: Creates a white light and loud sound
+causing disadvantage to Wisdom(perception) checks.
+1st-Level Cleric Spells Alter Liquid: Transmute 1 pint/spell level of liquid.
+Animate Skeleton: Animate and control one skeletal
+servant.
+Astute Fighting. Recipient gains an extra melee attack
+as a bonus action.
+Avert Attack: Grants advantage on a saving throw or
+disadvantage on an attack directed at up to three targets
+(reaction or bonus action).
+Briefly Visible: Invisible creatures or objects within 10
+feet become visible to caster for one round.
+Clarity of the Faith: Gives the target advantage to
+Intelligence(religion) checks regarding your faith.
+Contingent Minor Healing: Target that takes 4 or
+more damage instantly cures 1d4 hit points.
+Contrariness: Target must lie and be generally
+disagreeable and difficult.
+Curse of Ineptitude: Target experiences clumsiness
+and bad luck.
+Dispel Magic, Lesser: As dispel magic except to a
+maximum spell level of 1.
+Draw on Faith: Gain a +1 bonus on one save, check, or
+attack roll.
+Gloomlight: Grant creatures with darkvision the ability
+to perceive color in the area.
+Guilt: One evil target is denied an action.
+Hex of the Bull's-eye target suffers disadvantage.
+Hex Weapon: curse a single weapons so it cannot be
+wielded or it attacks wielder.
+Inflict Pain: Spell melee attack deals 2d6+modifier
+necrotic damage and penalties to rolls.
+Inspired Initiative: Subjects gains advantage on their
+next initiative check.
+Harden Increases object’s hitpoints by 50%.
+Hesitation: Target creature reduces initiative count by
+5 (bonus action).
+Mistsight: you can see through mist, fog, and rain.
+Poison Weapon: As magic weapon, but weapon
+becomes coated with poison.
+Potent Weapon: Weapon gains bonuses against a
+specific foe.
+Precipitate: Driving rain, sleet, or snow blocks sight
+and grants concealment, plus quenches fires, impedes
+movement.
+Second Chance: Grants subject a second chance at a
+saving throw (reaction).
+Sacred Watch: Watches over the target, giving
+immediate knowledge when he or she is in danger.
+Supernatural Ward: Subject gains advantage on
+saving throws (reaction).
+Valiant Resolve: Negate the first 5 damage from non
+magic sources each attack.
+Ward, Lesser: Inscription harms those who pass it.
+1st-Level Druid Spells Alter Liquid: Transmute 1 pint/spell level of liquid.
+Animate Element: Turn small quantity of an element
+into Small elemental.
+Animate Wood: Animate small wooden item.
+Bee Sting: One foe is stung for minor damage and
+poison condition.
+Blossoming Footsteps: Causes plants to grow where
+the druid walks.
+Briefly Visible: Any invisible creatures or objects
+within 10 feet become visible for one round.
+Borrow Skill: Use another creature’s skill (bonus
+action).
+Contingent Minor Healing: Target that takes 4 or
+more damage instantly cures 1d4 hit points.
+Clarity of the Faith: Gives the target advantage to
+Intelligence(religion) checks regarding your faith.
+Clarity of Thought: Grants advantage on
+Concentration checks (reaction).
+Crop Circle: Hacks all grasses and underbrush to the
+ground, leaving nothing but an empty circle.
+Dispel Magic, Lesser: As dispel magic except to a
+maximum spell level of 1.
+Energy Weapon: one weapon deals an additional 1d6
+damage of the chosen energy type (bonus action).
+Glamour: Caster becomes physically attractive.
+Harden Increases object’s hitpoints by 50%.
+Heat Lightning: Vertical strokes of lightning deal 1d6
+electric damage, plus stuns and sets creatures on fire.
+Hex of the Bull's-eye target suffers disadvantage.
+Hex Weapon: curse a single weapons so it cannot be
+wielded or it attacks wielder.
+Ignore: Distracted creature suffers disadvantage on
+Wisdom(perception) and Intelligence(investigation)
+checks.
+Keen Senses: Gain enhanced vision and advantage on
+perception checks.
+Mistsight: you can see through mist, fog, and rain.
+Precipitate: Driving rain, sleet, or snow blocks sight
+and grants concealment, plus quenches fires, impedes
+movement.
+Pressure Spray: Deals 3d6 bludgeoning damage and
+may knock down targets.
+Quill Skin: Coat your body with sharp quills to damage
+creatures constricting or swallowing you (reaction).
+Scentless: Negates scent ability.
+Sample file
+3
+Spikes of the Locust Tree: Improves grapple and
+Escape Artist checks with a bonus to unarmed damage
+(bonus action).
+Tunnel: You gain a burrow speed through dirt.
+Valiant Resolve: Negate the first 5 damage from non
+magic sources each attack.
+Ward, Lesser: Inscription harms those who pass it.
+Wind Churn: Fliers spend next action staying in the air,
+taking damage, and takes a penalty to all actions, checks,
+and saves.
+1st-Level Paladin Spells Divine Beacon: The caster knows the direction and range
+of an individual or group and their condition (reaction).
+Draw on Faith: Gain a +1 bonus on one save, check, or
+attack roll.
+Clarity of the Faith: Gives the target advantage to
+Intelligence(religion) checks regarding your faith.
+Earth Charger: Mount gains a bonus to str and a new
+attack when in contact with ground (bonus action).
+Illuminated Weapon: Imposes a –1d4 penalty to
+attacks, saves, and checks to undead struck.
+Potent Weapon: Weapon gains bonuses against a
+specific foe.
+Righteous Strike: you bypass evil creature’s damage
+reduction on a single strike (bonus action).
+Share Sacrifice: you heal half a creature’s hit points
+and take half of that amount as damage.
+Soul Beacon: Amplify your soul to gain combat benefits
+but become extremely visible to undead.
+Summon Weapon: melee or ranged weapon of your
+choice (bonus action).
+1st-Level Ranger Spells Borrow Skill: Become proficient in target creature’s
+skill (bonus action).
+Deep Shadows: Enhances shadows so they grant minor
+concealment bonus.
+Potent Weapon: Weapon gains bonuses against a
+specific foe.
+Hidden Shelter: Creates a camouflaged shelter from
+the surrounding materials.
+Ignore: Distracted creature suffers disadvantage on
+Wisdom(perception) and Intelligence(investigation)
+checks.
+Keen Senses: Gain enhanced vision and advantage on
+perception checks.
+Mistsight: you can see through mist, fog, and rain.
+Poison Weapon: As magic weapon, but weapon
+becomes coated with poison.
+Self-Loading Bolts: Target bolts automatically load.
+Spikes of the Locust Tree: Improves grapple and
+Escape Artist checks with a bonus to unarmed damage
+(bonus action).
+Tunnel: You gain a burrow speed through dirt.
+Summon Weapon: melee or ranged weapon of your
+choice (bonus action).
+1st-Level Sorcerer/Wizard
+Spells
+Abjuration
+Avert Attack: Grants advantage on a saving throw or
+disadvantage on an attack directed at up to three targets
+(reaction or bonus action).
+Dispel Magic, Lesser: As dispel magic except to a
+maximum spell level of 1.
+Flank Shield: subject is protected from other creatures
+gaining advantage on attacks against the target.
+Flashy Defenses: Chaos defends you against random
+types of attacks.
+Foul Flesh: Caster’s foul taste dissuades living creatures
+from biting him.
+Harden Increases object’s hit points by 50%.
+Reactive Armor: Summon a suit of armor that the
+caster is proficient in (reaction).
+Supernatural Ward: Subject gains advantage on
+saving throws (reaction).
+True Shield: caster gains a +10 bonus to AC against the
+next attack.
+Valiant Resolve: Negate the first 5 damage from non
+magic sources each attack.
+Ward, Lesser: Inscription harms those who pass it.
+Conjuration
+Brimstone: Fiery stone deals 1d6 fire damage plus
+poisons targets, as melee touch attack or splash weapon.
+Pearl of Brilliance: Silvery sphere deals radiant
+damage plus blinds targets (undead take more damage
+and are blinded), as melee touch attack or splash weapon.
+Poison Weapon: As magic weapon, but weapon
+becomes coated with poison.
+Precipitate: Driving rain, sleet, or snow blocks sight
+and grants concealment, plus quenches fires, impedes
+movement.
+Summon Weapon: melee or ranged weapon of your
+choice (bonus action).
+Torchbearer: You conjure a creature that carries a
+torch, sunrod, lantern or daylight spell.
+Sample file
+4
+Divination
+Briefly Visible: Invisible creatures or objects within 10
+feet become visible to caster for one round.
+Discerning Eye: Determines the exact monetary value
+of a single item.
+Down and Out: Provides advantage on trip and disarm
+attempts (bonus action).
+Foes’ Measure: learn the class and level or creature
+type and hit dice of all creatures in a 30’ radius.
+Inspired Initiative: Subjects gains advantage on their
+next initiative check.
+Mental Sentinel: Gain a bonus to Wisdom( perception)
+and Intelligence(investigation) checks or expend the spell
+for bonus to initiative
+Skill Lore: Target gains advantage on one skill check.
+Enchantment
+Clarity of Thought: Grants advantage on
+Concentration checks (reaction).
+Clear Conscience: Caster loses all memory of events
+just prior to casting the spell.
+Cock’s Crow: creatures immediately awaken (reaction).
+Contrariness: Target must lie and be generally
+disagreeable and difficult.
+Distract: Subject loses all actions for a round.
+Guilt: One evil target is denied an action.
+Hex of the Bull's-eye target suffers disadvantage.
+Hex Weapon: curse a single weapons so it cannot be
+wielded or it attacks wielder.
+Id Seizure: Disorienting thoughts limit actions in target
+creature.
+Ignore: Distracted creature suffers disadvantage on
+Wisdom(perception) and Intelligence(investigation)
+checks.
+Malicious Intent: Subjects take –1 or one subject takes
+–d4 on saves.
+Unspoken Tongue: Target cannot speak intelligibly.
+Evocation
+Brilliant Arc: arcing ray of electricity that hits multiple
+targets.
+Cutting Flame: Creates a flame capable of cutting
+through steel.
+Energy Missile: ranged touch attack deals
+2d6+spellcasting modifier damage of the chosen energy
+type.
+Self-Loading Bolts: Target bolts automatically load.
+Heat Lightning: Vertical strokes of lightning deal
+electric damage, plus stuns and sets creatures on fire.
+Push: Pushes one creature or object.
+Pressure Spray: Deals 3d6 bludgeoning damage and
+may knock down targets.
+Sword Shock: Deals 3d4 electric damage, and target
+may drop object held.
+White Noise: Creates a loud sound and white light
+causing a –20 penalty to Perception checks.
+Illusion
+Animated Tattoo: Creates a moving image on a
+subject’s body that can attack.
+Deep Shadows: Enhances shadows so they grant minor
+concealment bonus.
+Glamour: Caster becomes physically attractive.
+Invisible Familiar: Familiar becomes invisible.
+Minor Lasting Image: Creates permanent, tiny,
+immobile image.
+Pins and Needles: Victim suffers a –1 circumstance
+penalty on all attack rolls and skill checks, and requires a
+Constitution saving throw to cast spells.
+Shadow Hands: Causes 3d6 cold damage.
+Shadow Weapon: Create a quasi-real melee weapon
+(bonus action).
+Necromancy
+Animate Skeleton: Animate and control one skeletal
+servant.
+Bleeding Wounds: Attack on target deals +2d6
+damage (bonus action).
+Control Undead: gain control of an undead creature.
+Curse of Ineptitude: Target experiences clumsiness
+and bad luck.
+Inflict Pain: Spell melee attack deals 2d6+modifier
+necrotic damage and penalties to rolls.
+Lash Fey: cloud of cold iron filings and negative energy
+deals 3d10 necrotic damage to fey.
+Missteps: Subject’s speed and disadvantage on
+Dexterity saving throws.
+Transmuation
+Adjust: Armor, shield, weapon, jewelry, or clothing
+resizes to fit caster.
+Alter Liquid: Transmute 1 pint/spell level of liquid.
+Alter Poison Damage: Changes a poison’s damage
+type.
+Awesome Strike: Melee attack knocks back foe (bonus
+action).
+Borrow Skill: Become proficient in target creature’s
+skill (bonus action).
+Breathtwist: You change the nature of your energy
+breath weapon so that it deals a different type of energy.
+Color: Changes the color of a creature or object.
+Energy Weapon: one weapon deals an additional 1d6
+damage of the chosen energy type (bonus action).
+Escape Grapple: Gain advantage on checks to grapple
+and escape grabs (bonus action).
+Sample file
+5
+Gloomlight: Grant creatures with darkvision the ability
+to perceive color in the area.
+Hesitation: Target creature reduces initiative count by
+5 (bonus action).
+Ice Arm: touch attack deals 1d8 cold damage and
+protects against fire.
+Overcompensation: Weapon increases size and
+damage.
+Peephole: Creates a small opening through wood,
+plaster, or stone wall.
+Spikes of the Locust Tree: Improves grapple and
+Escape Artist checks with a bonus to unarmed damage
+(bonus action).
+1st-Level Warlock Spells Bleeding Wounds: Attack on target deals +2d6
+damage (bonus action).
+Briefly Visible: Invisible creatures or objects within 10
+feet become visible to caster for one round.
+Brilliant Arc: arcing ray of electricity that hits multiple
+targets.
+Brimstone: Fiery stone deals 1d6 fire damage plus
+poisons targets, as melee touch attack or splash weapon.
+Clear Conscience: Caster loses all memory of events
+just prior to casting the spell.
+Contrariness: Target must lie and be generally
+disagreeable and difficult.
+Cutting Flame: Creates a flame capable of cutting
+through steel.
+Curse of Ineptitude: Target experiences clumsiness
+and bad luck.
+Deep Shadows: Enhances shadows so they grant minor
+concealment bonus.
+Distract: Subject loses all actions for a round.
+Flashy Defenses: Chaos defends you against random
+types of attacks.
+Foul Flesh: Caster’s foul taste dissuades living creatures
+from biting him.
+Glamour: Caster becomes physically attractive.
+Gloomlight: Grant creatures with darkvision the ability
+to perceive color in the area.
+Hesitation: Target creature reduces initiative count by
+5 (bonus action).
+Hex of the Bull's-eye target suffers disadvantage.
+Hex Weapon: curse a single weapons so it cannot be
+wielded or it attacks wielder.
+Ice Arm: touch attack deals 1d8 cold damage and
+protects against fire.
+Id Seizure: Disorienting thoughts limit actions in target
+creature.
+Invisible Familiar: Familiar becomes invisible.
+Malicious Intent: Subjects take –1 or one subject takes
+–d4 on saves.
+Missteps: Subject’s speed and disadvantage on
+Dexterity saving throws.
+Pins and Needles: Victim suffers a –1 circumstance
+penalty on all attack rolls and skill checks, and requires a
+Constitution saving throw to cast spells.
+Poison Weapon: As magic weapon, but weapon
+becomes coated with poison.
+Reactive Armor: Summon a suit of armor that the
+caster is proficient in (reaction).
+Shadow Weapon: Create a quasi-real melee weapon
+(bonus action).
+Supernatural Ward: Subject gains advantage on
+saving throws (reaction).
+True Shield: Caster gains a +10 bonus to AC against the
+next attack.
+Torchbearer: You conjure a creature that carries a
+torch, sunrod, lantern or daylight spell.
+Unspoken Tongue: Target cannot speak intelligibly.
+Torchbearer
+Sample file
+6
+Spell Descriptions
+Adjust
+1st-level Transmutation
+Casting Time: 1 action
+Range: Touch
+Components: V, S
+Duration: Instantaneous
+Adjust instantaneously resizes an unattended piece of
+clothing or jewelry, a suit of armor, a shield or a weapon
+to fit you perfectly. This spell affects both magical and
+mundane equipment. Intelligent objects are allowed a
+Charisma saving throw and on a save the spell fizzles with
+no effect.
+Alter Liquid
+1st-level transmutation
+Casting Time: 1 action
+Range: 30 feet
+Components: V, S, M (a bit of sponge)
+Duration: Instantaneous
+This spell transmutes 1 pint of a nonmagical liquid into
+another. The liquid you affect must normally be liquid at
+about room temperature (65° F), you must have line of
+effect to it, and you can alter liquids in open containers,
+but not in sealed containers. The spell can transmute any
+type of mundane liquid (including fresh or saltwater,
+wine, vinegar, alcohol, or lamp oil) but cannot affect or
+create acid, mercury, or any type of venom, alchemical
+solution, potion, or poison.
+Transmuted liquids created by the spell have typical
+characteristics such as color, taste, smell, and potency.
+For example, if you turn water to ale, you get typical ale
+rather than any extra-strong or distinctive variety.
+ At Higher Levels. When you cast this spell using a
+spell slot of 2nd level or higher, you can affect an
+additional 1 pint of liquid. These pints of liquid need not
+be together and can be in different containers.
+Alter Poison Damage
+1st-level transmutation
+Casting Time: 1 action
+Range: 30 feet
+Components: V, S
+Duration: Instantaneous
+This changes the save type of one poison and the
+associated damage type. The damage type can be
+changed to fire, cold, electric, psychic, or poison damage.
+Any additional effects last as long as normal and the save
+DC does not change, but extra saves to remove a
+condition are now changed to the new save type. As an
+example, a poison that requires a Constitution saving
+throw that does poison damage can be changed to a
+Charisma saving throw that does psychic damage. This
+effect lasts for one day after which the poison reverts to
+normal.
+ At Higher Levels. When you cast this spell using a
+spell slot of 2nd level or higher, the poison is changed for
+one additional day.
+Animate Element
+1st-level conjuration
+Casting Time: 1 round
+Range: 30 feet
+Components: V, S, M (a bit of the element to summon)
+Duration: Concentration, up to 1 hour
+You summon one elemental of challenge rating ¼ or
+lower that appears in an unoccupied space that you can
+see within range.
+ The elemental disappears when it is reduced to 0 hp or
+when the spell ends. The elemental is friendly toward you
+and any allies. The elemental obeys all verbal commands
+you give it. It will not act if not ordered too, but will
+defend itself is attacked. You direct the elemental on your
+turn without having to spend any actions.
+ At Higher Levels. When you cast this spell using a
+spell slot of 2nd level or higher, you can summon one
+additional elemental per spell level above 1st.
+Animate Skeleton
+1st-level necromancy
+As animate undead, except you may only animate one
+creature, cannot control multiple creatures, you must
+remain within 30 feet of the skeleton or it becomes a wild
+skeleton and attacks you and your allies, and you must
+your action to dictate the creature’s action and your move
+to cause the creature to move.
+Animated Tattoo
+1st-level illusion
+Casting Time: 1 hour
+Range: Self
+Components: V, S, M (expensive inks, 10gp)
+Duration: 1 day
+You create a magic tattoo on your body that has the ability
+to attack. It attacks using your proficiency bonus and
+your spellcasting modifier dealing 1d6 + your spellcasting
+modifier bludgeoning, piercing, or slashing damage
+Sample file
+7
+(choosen at the time of the tattoos creation). The tattoo
+freely moves around your body can be hidden beneath
+clothing as you wish, with no action needed. You must
+use an action to attack with the tattoo, but the tattoo can
+be used to make opportunity attacks as a reaction. The
+tattoo looks like whatever you wish and the nature of its
+attack is determined at the tattoo’s creation.
+ At Higher Levels. When you cast this spell using a
+spell slot of 2nd level or higher, you can extend the
+tattoo’s duration by 1 day and increase the damage dealt
+by the tattoo by 1d6 per one spell level above 1st.
+Animate Wood
+1st-level transmutation
+Casting Time: 1 action
+Range: 30 feet
+Components: V, S, M (piece of unworked oak)
+Duration: Concentration, up to one minute
+You animate a small wooden object. This creatures uses
+the same statistics as a small animated object and will
+immediately attack whomever or whatever you initially
+designate as a target. If you target a held or attended
+object, the person holding or attending the object makes
+a Charisma saving throw to negate the spell.
+Astute Fighting
+1st-level transmutation
+Casting Time: 1 action
+Range: Touch
+Components: V, S
+Duration: Concentration, up to one minute
+You imbue a target with the ability to make an additional
+attack each round as a bonus action. This will not grant
+the target additional bonus actions.
+ Awesome Strike
+1st-level transmutation
+Casting Time: 1 bonus action
+Range: Self
+Components: V
+Duration: 1 round
+Any melee strikes you make during the spell’s duration
+now cause any creature hit to have to make a Dexterity
+saving throw. On a failure, the creature is thrown 10 feet
+in a direction of your choosing. This movement provokes
+opportunity attacks, and the creature must be moved
+away from you in a straight line. The target will fall prone
+at the end this movement. If the target can’t move the full
+10 feet, for each five feet it can’t move, the target and
+whatever it hits takes 1d6 bludgeoning damage.
+ Animate Skeleton
+Avert attack
+1st-level abjuration
+Casting Time: 1 bonus action or reaction
+Range: 60 feet
+Components: V
+Duration: 1 round
+You’re quick spells keep your friends save. Choose up to
+three targets in range. The next attack against these
+targets suffers disadvantage or the next save made by the
+target has advantage. When the disadvantage or
+advantage is used, the effect ends on that one target.
+ At Higher Levels. When you cast this spell using a
+spell slot of 2nd level or higher, choose one additional
+target for each slot level above 1st.
+Bee Sting
+1st-level conjuration
+Casting Time: 1 action
+Range: 30 feet
+Components: V, S, M (a bumblebee’s stinger)
+Duration: Instantaneous
+This spell strikes the target with a nasty sting, as if from
+a very large bee. Make a ranged spell attack. On a hit the
+target is dealt 1 piercing damage. If this damage is not
+negated, the target gains the poisoned condition, and can
+attempt a Constitution saving throw at the end of each of
+its rounds to remove this condition.
+Sample file
+
+
+Beguile: Target has disadvantage on saves against
+enchantment and illusion spells and
+Wisdom(perception) checks. (bonus action)
+Break Object: Inflicts damage on a single object or
+damages a construct creature.
+Brightmatter: Sticky phosphorescent mass sheds light
+where it's attached.
+Contingent Light Healing: Target that takes 4 or
+more damage instantly heals 1d8 hit points.
+Curse of Prevarication: Subject cannot tell the truth.
+Damage Loins: Target takes 3d6 bludgeoning damage
+and becomes incapacitated.
+Deathchant: Chanting saps the life from living
+creatures.
+Delude Divination: Divination attempts against target
+may fail and produce random results.
+Dimension Hop: You, touched objects, and your
+familiar or companion teleport to any spot within 50 feet.
+Disguise Wounds: You cause the subject to appear
+resilient to various forms of damage.
+Distortion Field: Grants total concealment against
+blindsight.
+Euphoria: Gain advantage against a target for social
+rolls and target suffers a -2 penalty on saves against your
+enchantment spells. (bonus action)
+Exhaustion: Target gains levels of exhaustion.
+Expeditious Charge: You temporarily are faster and
+more agile. (bonus action or reaction)
+Fit of Pique: Force target to attack its ally.
+Flexarmor: You increase the dexterity bonus to armor
+class, remove any penalties to stealth, and gain
+proficiency with the armor for a short time.
+Frigid Slowness: Causes 5d4 cold damage and
+prevents the target from taking all its actions.
+Hesitate: Several subjects go last in the initiative order
+and do not take their first attacks of opportunity each
+round.
+Insomnia: Subject is unable to sleep, suffers from
+fatigue and is unable to heal naturally.
+Lifechant: Your chanting renews living creatures in an
+area.
+Memory Crystal: Permanently store a memory in a
+crystal or gem.
+Mute: Subject cannot produce sounds from its mouth.
+Nightsnare: You cause a very deep, very short sleep to
+fall upon a target.
+Sample file
+2
+Oathbind: Willing participants immediately gain
+awareness that another party has violated the terms of a
+written contract.
+Obscure Text: Magical or mundane writing appears
+illegible.
+Scout's Hike: Target receives +1 to Dex attacks,
+advantage on Dex skills, and doubles its base land speed.
+Shadow Sentry: A shadowy warrior guards, patrols or
+attacks on your command.
+Silent Ray: You emit a beam of supersonic vibrations
+causing 3d8 thunder damage to one target. (bonus
+action)
+Torn Muscle: One living creature has disadvantage on
+attacks, skills and ability checks and all attacks against
+the creature have advantage until it is healed.
+Vertigo: You cause creatures to become dizzy to the
+point of being sickened and perhaps fall prone.
+2nd-Level Cleric Spells
+Angry Wound: Touch deals 2d8 necrotic and 1d8
+necrotic damage each round after. (bonus action)
+Augment Poison: Changes a poison's DC, makes the
+subject save with disadvantage, and adds to damage.
+Bear's Curse: Subject suffers a -4 or -2 circumstance
+penalty to Constitution saves and checks and a loss of
+maximum hit points.
+Break Object: Inflicts damage on a single object or
+damages a construct creature.
+Brightmatter: Sticky phosphorescent mass sheds light
+where it's attached.
+Bull's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Strength checks and saves and disadvantage on
+Strength attacks.
+Cat's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Dexterity checks and saves and disadvantage
+on Dexterity attacks.
+Code Skill: Gives a construct proficiency in a single skill.
+Contingent Light Healing: Target that takes 4 or
+more damage instantly heals 1d8 hit points.
+Curse of Prevarication: Subject cannot tell the truth.
+Damage Loins: Target takes 3d6 bludgeoning damages
+and becomes incapacitated.
+Destabilize Magic: All saves in an area are made with
+disadvantage.
+Eagle's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Charisma checks and saves and disadvantage
+on Charisma-based spell attacks.
+Envenomed Skin: The caster's skin becomes mottled
+with poison-filled pustules that can burst in a 5 foot
+radius.
+Flexarmor: You increase the dexterity bonus to armor
+class, remove the any penalties to stealth, and gain
+proficiency with the armor for a short time.
+Fool's Luck: Touched creature is briefly luckier against
+traps, hazards, and poisons.
+Fox's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Intelligence checks and saves and
+disadvantage on Intelligence-based spell attacks.
+Future’s Boon: Touched creature’s luck increases
+against one roll of its choice.
+Hex of Chaos: Target suffers a random curse every
+round.
+Nightsnare: You cause a very deep, very short sleep to
+fall upon a target.
+Oathbind: Willing participants immediately gain
+awareness that another party has violated the terms of a
+written contract.
+Owl's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Wisdom checks and saves and disadvantage on
+Wisdom-based spell attacks.
+Program Feat: Gives one construct the benefits of a
+single feat.
+Shooting Star: You cause a fiery stone to fall from the
+sky doing 3d6 bludgeoning and 3d6 fire damage to a
+single target.
+Shunt: Place target into the Ethereal Plane for 1 round.
+Thief Ward: Dexterity(sleight of hand) and
+Dexterity(stealth) checks are made at disadvantage.
+Web Shelter: You create a small but relatively secure
+shelter out of sticky webs.
+Weltering Wave: You cause chaotic energies to shake
+and disorient targets.
+2nd-Level Druid Spells
+Arboreal Archer: You grant intelligence to a plant,
+enabling it to hurl missiles at a designated target.
+Augment Poison: Changes a poison's DC, makes the
+subject save with disadvantage, and adds to damage.
+Break Object: Inflicts damage on a single object or
+damages a construct creature.
+Brightmatter: Sticky phosphorescent mass sheds light
+where it's attached.
+Chilling Mist: Icy vapor grants concealment and deals
+1d6 cold damage per round.
+Contingent Light Healing: Target that takes 4 or
+more damage instantly heals 1d8 hit points.
+Dire Form: Animals or magical beasts become feral and
+more powerful.
+Dust Wall: Curtain of airborne dust grants half cover,
+blinds living creatures.
+Earthmaw: Gaping maw in the ground bites to grapple
+and swallow any creature in its space.
+Earthskin: Gain damage resistance against magic
+weapons until discharged.
+Envenomed Skin: The caster's skin becomes mottled
+with poison-filled pustules that can burst in a 5 foot
+radius.
+Flexarmor: You increase the dexterity bonus to armor
+class, remove the any penalties to stealth, and gain
+proficiency with the armor for a short time.
+Fool's Luck: Touched creature is briefly luckier against
+traps, hazards, and poisons.
+Luckwing: Summons a 1 foot long butterfly; caster can
+see, hear, and feel everything the butterfly does.
+Mire of Stone and Earth: Earth entangle foes.
+Nauseating Pollen: You conjure a cloud of pollen that
+inflicts the poisoned condition and prevents actions.
+Sample file
+3
+Ride Winds: Fall safely, levitate, or fly by floating on the
+air.
+Rolling Boulder: Boulder moves through battlefield
+knocking creatures prone, dealing 3d6 bludgeoning
+damage.
+Scout's Hike: Target receives +1 to Dex attacks,
+advantage on dex skills, and doubles its base land speed.
+Shooting Star: You cause a fiery stone to fall from the
+sky doing 3d6 bludgeoning and 3d6 fire damage to a
+single target.
+Slime Harden: You cause the outer surface of an ooze
+to harden, negating its special abilities. (bonus action)
+Stoneburst: Thrown object explodes for 5d4 fire
+damage. (bonus action)
+Stonefist: Stony shell encases your hand, grants
+bonuses on unarmed strikes. (bonus action)
+Storm Cellar: You create an extradimensional space in
+the ground.
+Water Jet: High-pressure water extinguishes fires,
+deals 3d6 bludgeoning damage, can knock creatures
+back.
+Web Shelter: You create a small but relatively secure
+shelter out of sticky webs.
+Wildheart: Target gains physical ability and speed
+bonuses.
+2nd-Level Paladin Spells
+Confront Outsider: You reveal the presence of an
+outsider and possibly learn its name.
+Contingent Light Healing: Target that takes 4 or
+more damage instantly heals 1d8 hit points.
+Coward's Bane: You gain a bonus to attack and damage
+against dishonorable foes.
+Flexarmor: You increase the dexterity bonus to armor
+class, remove any penalties to stealth, and gain
+proficiency with the armor for a short time.
+Fool's Luck: Touched creature is briefly luckier against
+traps, hazards, poisons.
+Intercept Attack: You suffer all damage meant for an
+adjacent ally. (no action)
+Peace Bonding: Creatures within an area must
+sheathe, and may not unsheathe, their weapons.
+Righteous Armor: You store in or summon your armor
+from an extradimensional space. (bonus action or
+reaction)
+Stand Your Ground: You gain advantage to avoid
+being being grappled, escape a grapple, be moved,
+charmed, frightened, restrained, or be knocked prone
+until you move. (bonus action)
+Take My Hand: You prevent an adjacent ally from
+falling. (reaction)
+Thief Ward: Dexterity(sleight of hand) and
+Dexterity(stealth) checks are made at disadvantage.
+To The Rescue: You and your mount exchange places
+with a helpless creature. (reaction)
+Unseen Guardian: Creates magical sensor that alerts
+you to danger.
+Utter Determination: For 5 rounds you ignore the
+dead, dying, exhaustion, and/or
+unconscious conditions.
+2nd-Level Ranger Spells
+Arboreal Archer: You grant intelligence to a plant,
+enabling it to hurl missiles at a designated target.
+Augment Poison: Changes a poison's DC, makes the
+subject save with disadvantage, and adds to damage.
+Contingent Light Healing: Target that takes 4 or
+more damage instantly heals 1d8 hit points.
+Dire Form: Animals or magical beasts become feral and
+more powerful.
+Dust Wall: Curtain of airborne dust grants half cover,
+blinds living creatures.
+Envenomed Skin: The caster's skin becomes mottled
+with poison-filled pustules that can burst in a 5 foot
+radius.
+Flexarmor: You increase the dexterity bonus to armor
+class, remove any penalties to stealth, and gain
+proficiency with the armor for a short time.
+Fool's Luck: Touched creature is briefly luckier against
+traps, hazards, poisons.
+Luckwing: Summons a 1 foot long butterfly; caster can
+see, hear, and feel everything the butterfly does.
+Mire of Stone and Earth: Earth entangles foes.
+Nauseating Pollen: You conjure a cloud of pollen that
+inflicts the poisoned condition and prevents actions.
+Scout's Hike: Target receives +1 to Dex attacks,
+advantage on dex skills, and doubles its base land speed.
+Unseen Guardian: Creates magical sensor that alerts
+you to danger.
+Web Shelter: You create a small but relatively secure
+shelter out of sticky webs.
+Wildheart: Target gains physical ability and speed
+bonuses.
+2nd-Level Warlock Spells
+Angry Wound: Touch deals 2d8 necrotic and 1d8
+necrotic damage each round after. (bonus action)
+Bear's Curse: Subject suffers a -4 or -2 circumstance
+penalty to Constitution saves and checks and a loss of
+maximum hit points.
+Bull's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Strength checks and saves and disadvantage on
+Strength attacks.
+Cat's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Dexterity checks and saves and disadvantage
+on Dexterity attacks.
+Curse of Prevarication: Subject cannot tell the truth.
+Damage Loins: Target takes 3d6 bludgeoning damages
+and becomes incapacitated.
+Distortion Field: Grants total concealment against
+blindsight.
+Eagle's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Charisma checks and saves and disadvantage
+on Charisma-based spell attacks.
+Envenomed Skin: The caster's skin becomes mottled
+with poison-filled pustules that can burst in a 5 foot
+radius.
+Exhaustion: Target becomes exhausted.
+Fit of Pique: Force target to attack its ally.
+Sample file
+4
+Fox's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Intelligence checks and saves and
+disadvantage on Intelligence-based spell attacks.
+Hex of Chaos: Target suffers a random curse every
+round.
+Insomnia: Subject is unable to sleep, suffers from
+fatigue and is unable to heal naturally.
+Languor: Melee spell attack reduces the maximum hit
+points, spells, and attack proficiency for one hour on one
+target.
+Mute: Subject cannot produce sounds from its mouth.
+Oathbind: Willing participants immediately gain
+awareness that another party has violated the terms of a
+written contract.
+Owl's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Wisdom checks and saves and disadvantage on
+Wisdom-based spell attacks.
+Phantasmal Foe: Fearsome illusion inflicts frightened
+or disadvantage on subject.
+Phantom Familiar: You alter the appearance of your
+familiar.
+Shadow Ribbons: You fire three rays as ranged spell
+attack that inflict the grappled condition.
+Shooting Star: You cause a fiery stone to fall from the
+sky, doing 3d6 bludgeoning and 3d6 fire damage to a
+single target.
+Thief Ward: Dexterity(sleight of hand) and
+Dexterity(stealth) checks are made at disadvantage.
+Torn Muscle: One living creature has disadvantage on
+attacks, skills and ability checks and all attacks against
+the creature have advantage until it is healed.
+True Casting: The save DC of your spells improves
+consecutively until your target fails a save. (bonus action)
+Utter Failure: Target takes -10 on next attack roll,
+automatically misses covered or concealed targets.
+2nd-Level Sorcerer/Wizard Spells
+Abjuration
+Arcane Seal, Lesser: Magic seal protects door or other
+closure, can deal energy damage if broken.
+Earthskin: Gain damage resistance against magic
+weapons until discharged.
+Ice Aegis: Gain deflection bonus and fire immunity.
+Shift Aim: Target becomes difficult to successfully
+target with ranged attacks and spell attacks cast at range.
+Thief Ward: Dexterity(sleight of hand) and
+Dexterity(stealth) checks are made at disadvantage.
+Conjuration
+Amber Globes: Up to three globes of energy deal 1d6
+lightning damage each as ranged and area weapon, or
+can be detonated remotely.
+Brightmatter: Sticky phosphorescent mass sheds light
+where it's attached.
+Chaotic Bolt: One energy bolt causes 5d4 damage of
+random energy type; the spell continues over several
+rounds.
+Chilling Mist: Icy vapor grants concealment and deals
+1d6 cold damage per round.
+Dimension Hop: You, touched objects, and your
+familiar or companion teleport to any spot within 50 feet.
+Guardian Beast: Absorbs 6d6 damage from one attack.
+Shooting Star: You cause a fiery stone to fall from the
+sky, doing 3d6 bludgeoning and 3d6 fire damage to a
+single target.
+Shunt: Place target into the Ethereal Plane for 1 round.
+Support Beam: You instantly conjure a cluster of
+pillars that temporarily supports a collapsing ceiling.
+(reaction)
+Divination
+Examine Coffin: Allows the caster to probe the
+contents of a sealed coffin.
+Memory Crystal: Permanently store a memory in a
+crystal or gem.
+Oathbind: Willing participants immediately gain
+awareness that another party has violated the terms of a
+written contract.
+Speak with Objects: You communicate telepathically
+with manufactured objects.
+True Casting: The save DC of your spells improves
+consecutively until your target fails a save. (bonus action)
+Enchantment
+Curse of Prevarication: Subject cannot tell the truth.
+Fit of Pique: Force target to attack its ally.
+Hesitate: Several subjects go last in the initiative order
+and do not take their first attacks of opportunity each
+round.
+Insomnia: Subject is unable to sleep, suffers from
+fatigue and is unable to heal naturally.
+Utter Failure: Target takes -10 on next attack roll,
+automatically misses covered or concealed targets.
+
+Evocation
+Distortion Field: Grants total concealment against
+blindsight.
+Dust Wall: Curtain of airborne dust grants half cover,
+blinds living creatures.
+Force Club: You create a club made of force energy.
+Reciprocity: You significantly damage another, but
+take half of that damage yourself.
+Rolling Boulder: Boulder moves through battlefield
+knocking creatures prone, dealing 3d6 bludgeoning
+damage.
+Staffstrike, Lesser: Shockwaves from your staff deal
+bludgeoning and thunder damage and deafen creatures
+when you slam your staff.
+Stonefist: Stony shell encases your hand, grants
+bonuses on unarmed strikes. (bonus action)
+Subduing Ray: You shoot up to 2 rays of nonlethal force
+causing 2d6 force damage each.
+Water Jet: High-pressure water extinguishes fires,
+deals 3d6 bludgeoning damage, can knock creatures
+back.
+Sample file
+5
+Illusion
+Delude Divination: Divination attempts against target
+may fail and produce random results.
+Disguise Wounds: You cause the subject to appear
+resilient to various forms of damage.
+Obscure Text: Magical or mundane writing appears
+illegible.
+Phantasmal Foe: Fearsome illusion inflicts frightened
+or disadvantage on subject.
+Phantasmal Pit: Fearsome illusion inflicts prone
+and/or stunned condition on subject.
+Phantasmal Swarm: Fearsome illusion causes the
+subject to lose its ability to perform reactions and only
+may only move on its turn.
+Phantom Familiar: You alter the appearance of your
+familiar.
+Shadow Ribbons: You fire three rays as ranged spell
+attack that inflict the grappled condition.
+Shadow Sentry: A shadowy warrior guards, patrols or
+attacks on your command.
+Vertigo: You cause creatures to become dizzy to the
+point of being sickened and perhaps fall prone.
+Wall of Shadow: Wall blocks line of sight and is
+considered opaque; passing through the wall grapples the
+subjects.
+Necromancy
+Angry Wound: Touch deals 2d8 necrotic and 1d8
+necrotic damage each round after. (bonus action)
+Bear's Curse: Subject suffers a -4 or -2 circumstance
+penalty to Constitution saves and checks and a loss of
+maximum hit points.
+Bull's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Strength checks and saves and disadvantage on
+Strength attacks.
+Cat's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Dexterity checks and saves and disadvantage
+on Dexterity attacks.
+Damage Loins: Target takes 3d6 bludgeoning damages
+and becomes incapacitated.
+Eagle's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Charisma checks and saves and disadvantage
+on Charisma-based spell attacks.
+Exhaustion: Target becomes exhausted.
+Fox's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Intelligence checks and saves and
+disadvantage on Intelligence-based spell attacks.
+Frigid Slowness: Causes 5d4 cold damage and
+prevents the target from taking all its actions.
+Hex of Chaos: Target suffers a random curse every
+round.
+Languor: Melee spell attack reduces the maximum hit
+points, spells, and attack proficiency for one hour on one
+target.
+Mute: Subject cannot produce sounds from its mouth.
+Dire Form
+Necrophage: Pale yellow slime devours the flesh of a
+corpse or undead target.
+Owl's Curse: Subject suffers a -4 or-2 circumstance
+penalty to Wisdom checks and saves and disadvantage on
+Wisdom-based spell attacks.
+Torn Muscle: One living creature has disadvantage on
+attacks, skills and ability checks and all attacks against
+the creature have advantage until it is healed.
+Transmutation
+Augment Poison: Changes a poison's DC, makes the
+subject save with disadvantage, and adds to damage.
+Break Object: Inflicts damage on a single object or
+damages a construct creature.
+Code Skill: Gives a construct proficiency in a single skill.
+Dire Form: Animals or magical beasts become feral and
+more powerful.
+Earthmaw: Gaping maw in the ground bites to grapple
+and swallow any creature in its space.
+Envenomed Skin: The caster's skin becomes mottled
+with poison-filled pustules that can burst in a 5 foot
+radius.
+Expeditious Charge: You temporarily are faster and
+more agile.
+Exploding Critical: A weapon's critical hits deal
+additional force damage.
+Fall Up: You reverse gravity for yourself.
+Flexarmor: You increase the dexterity bonus to armor
+class, remove any penalties to stealth, and gain
+proficiency with the armor for a short time.
+Fool's Luck: Touched creature is briefly luckier against
+traps, hazards, and poisons.
+Giant Boulder: Magical stones are hurled and strike
+targets as boulders.
+Program Feat: Gives one construct the benefits of a
+single feat.
+Ride Winds: Fall safely, levitate, or fly by floating on the
+air.
+Scout's Hike: Target receives +1 to Dex attacks,
+advantage on Dex skills, and doubles its base land speed.
+Sample file
+6
+Spell Descriptions
+Amber Globes
+2nd-level conjuration
+Casting Time: 1 action
+Range: Touch
+Components: V, S,M (one amber bead per globe)
+Duration: instantaneous
+You create up to three globes of electricity energy about
+the size of acorns, which can be hurled at targets by you
+or another creature, or can be detonated on command.
+Each globe is a ranged weapon with a range increment of
+30/60 feet, and requires a ranged spell attack to hit. Each
+globe is capable of dealing 2d4 lightning damage to the
+primary target. Each globe also hits adjacent engaged
+creatures for 1d6 lightning damage. You can hurl globes
+singly or as multiple attacks. Throwing any number of
+globes is an attack action that can be made as part of
+casting the spell. Globes not thrown during the round in
+which you cast the spell can be held for throwing in a
+subsequent round, or can be handed to other characters
+as an action. Each globe explodes upon striking any hard
+surface, and in addition to dealing its regular lightning
+damage to the target, deals 1d6 lightning damage per
+globe to all adjacent, engaged creatures. Creatures within
+this splash area that make a successful Dexterity saving
+throw take only half this damage, but creatures struck
+directly are not allowed a saving throw against the globe's
+primary damage.
+Alternatively, you can gently toss or place a globe within
+5 feet of you so that it does not explode on contact. Once
+in place, you can cause one or more globes to detonate by
+speaking a command word as an action if you are within
+200 feet. When it detonates, the globe deals 2d4 lightning
+damage to all targets within a 5-foot radius. Creatures in
+the area
+that make a successful Dexterity saving throw take only
+half damage.
+ At Higher Levels. When cast at a spell slot of 3rd
+level or higher, you are able to conjure another globe for
+each spell slot above 2nd.
+Angry Wounds
+2nd-level necromancy
+Casting Time: 1 bonus action
+Range: Touch
+Components: V, S, M (a piece of broken glass)
+Duration: Concentration, up to 10 rounds
+Upon concluding the dreadful incantation, you become
+fueled with awful power; your touch causes flesh to burst
+and weep freely. With a melee spell attack, you open an
+ugly wound on a living creature, dealing 2d8 necrotic
+damage. Each round thereafter, the target must succeed
+on a Constitution saving throw or take an additional 1d8
+necrotic damage as its flesh bursts and suppurates. If the
+target succeeds on two consecutive saves, the effect ends.
+Arboreal Archer
+2nd-level transmutation
+Casting Time: 1 action
+Range: 10 feet
+Components: V, S
+Duration: Concentration, up to 10 minutes
+You imbue limited intelligence to one non-sentient tree
+or shrub no less than 20 feet tall, allowing you to
+telepathically communicate simple instructions to the
+tree. On your command, the tree pulls back its branches
+and fires a volley of acorns, branches, or other debris at
+any target that you designate. The tree receives one
+ranged attack per round and uses your spellcasting attack
+bonus for its attack roll. Its attack deals 1d8 + your
+spellcasting ability modifier piercing and bludgeoning
+damage and has a range increment of 30/60 feet. The tree
+is immobile, has an AC of 16, and 30 hit points. The tree
+is incapable of defending itself; it only attacks when
+directed as a bonus action on each of your turns.
+Arcane Seal, Lesser
+2nd-level abjuration
+Casting Time: 1 minute
+Range: touch
+Components: V, S, M (sealing wax, gem dust worth
+25gp)
+Duration:Permanent until discharged
+You create a magic seal that bears your visible arcane
+mark (and though you do not have to cast arcane mark
+to cast lesser arcane seal, it must be a spell you know).
+The seal you create resembles the wax seal one sees on
+letters and documents, and can measure from 1 to 6
+inches across.
+A lesser arcane seal is exceedingly tough, having a AC of
+20 and 60 hit points. When placed on a door or other
+closure (a chest, window, and so forth), the lesser arcane
+seal grants the portal a +5 bonus to AC. The seal is
+unaffected by knock spells unless the caster makes a DC
+15 spellcasting + proficiency check. Any character can
+break the seal with a DC 20 Dexterity check. At your
+option, you can also imbue
+Sample file
+7
+Augment Poison
+the seal with magical energy so that any creature breaking
+it takes 1d8 acid, cold, lightning, fire, or thunder damage.
+Each kind of damaging seal also has a particular effect:
+• Acid: A lesser acid seal leaves a patch of acid on the
+victim if it fails a Dexterity saving throw, dealing 1
+point of continuing acid damage each round for 1d4
+rounds. The affected creature can make another
+Dexterity save as a full-round action to neutralize the
+acid (assuming no other means to do so is available).
+• Cold: A lesser cold seal slows the victim (as the spell)
+for 1d4 rounds on a failed Constitution saving throw.
+• Electricity: A lesser electricity seal leaves the victim
+stunned for 1 round on a failed Constitution saving
+throw.
+• Fire: A lesser fire seal causes the victim to have
+disadvantage on attacks, checks, and saving throws
+for 1d4 rounds on a failed Dexterity saving throw.
+• Sonic: A lesser sonic seal produces an audible wail
+for 1 round when broken, audible to anyone within
+60 feet. Reduce the distance by 10 feet for each
+interposing closed door and by 20 feet for each
+substantial interposing wall, then triple the result for
+quiet conditions (to a maximum of 180 feet).
+When you add a damaging effect to the seal, you must add
+additional runes to the seal. Anyone can read these runes
+and discover the seal's effect with a DC 12
+Intelligence(arcana) check.
+You can disable a lesser arcane seal simply by touching it
+and using a standard action to dismiss the spell. At the
+time you create the seal, you can specify a password or
+phrase that allows other creatures to break the seal with
+no difficulty, and without triggering any damaging
+effects.
+Augment Poison
+2nd-level transmutation
+Casting Time: 1 action
+Range: Touch
+Components: V, S
+Duration: 60 minutes
+This spell makes poison more potent and toxic. Any dose
+of poison affected by the spell has its Constitution saving
+throw changed to the spell caster’s spell save DC and
+imposes disadvantage on any saving throw to avoid or
+end the poison's effects. Furthermore, any damage
+caused by the poison does extra damage equal to the spell
+caster’s spell casting ability modifier and its duration is
+increased by 1 round.
+If the duration of the spell expires, the augmented effect
+ends immediately.
+This spell only affects discrete doses of poison, though
+they may already be placed on a weapon, trap, or other
+item. Thus, if the spell were cast on a 10-gallon vat of
+wyvern poison, it would have no effect.
+A dose of poison under the effect of this spell is
+considered a magically modified poison and does radiate
+magic.
+Sample file
+8
+Bear’s Curse
+2nd-level necromancy
+Casting Time: 1 action
+Range: Touch
+Components: V, S, M(bear hair)
+Duration: 1 hour, removed, or save
+You place a curse on the subject, and the target must
+make a Constitution saving throw. On a success, the spell
+fails. However, if the target fails the Constitution saving
+throw, you impose a -4 penalty to Constitution saves and
+checks and the target loses 2 hit points per hit die from
+their maximum hit points. At the end of the target’s turn,
+the target may make a Constitution saving throw. Upon
+a successful save, this penalty is reduced to -2 and the
+target now only loses 1 hit point per hit die from their
+maximum. After a third successful Constitution save, the
+penalty is eliminated, and the target regain their normal
+hit point maximum.
+The curse bestowed by this spell cannot be dispelled, but
+it can be removed with an enhance ability(bear's
+endurance), greater restoration, limited wish, miracle,
+remove curse, or wish spell.
+ At Higher Levels. When cast at a spell slot of 3rd
+level or higher, you may target one additional target for
+each spell slot above 2nd.
+Beguile
+2nd-level enchantment
+Casting Time: 1 bonus action
+Range: 50 feet
+Components: V
+Duration: Concentration, up to 1 minute
+Choose a target in range. That target makes a Wisdom
+Saving throw. On a failure, you cloud the mind of the
+target creature, making it more susceptible to charms and
+illusions. The subject has disadvantage on all saving
+throws against enchantment and illusion spells and
+Wisdom(perception) checks.
+Break Object
+2nd-level transmutation
+Casting Time: 1 action
+Range: 10 feet
+Components: V, S
+Duration: Instantaneous
+This spell damages objects, reducing the object's hit point
+total to one hit point below half its maximum hit point
+total (the object cannot be repaired or gain hit points
+using this spell). Magic items can be
+Brightmatter
+targeted by this spell. If the object is held or magical, the
+wielder or object itself must make a Charisma saving
+throw. If the object is not attained, then the damage
+happens instantaneously.
+This spell also deals 6d6 bludgeoning damage when cast
+on a construct creature, but the spell cannot reduce the
+construct's total hit point total to one hit point below half
+its maximum hit point total. Any construct creature
+targeted by this spell may attempt a Constitution saving
+throw to negate the damage. When break object is used
+on a construct creature, the spell bypasses any immunity
+or resistance to magic or bludgeoning damage.
+Brightmatter
+2nd-level conjuration
+Casting Time: 1 action
+Range: 50 feet
+Components: V, S
+Duration: 8 hours
+You create a luminous mass of ectoplasm that generates
+bright light in a 20-foot radius and Dim light in a 40-foot
+radius. The mass is sticky and pliable, and can adhere to
+inanimate objects, walls, ceilings, floors, and so on. You
+can divide the brightmatter into smaller separate pieces,
+but doing so reduces the amount of light that each piece
+sheds.
+Sample file
+9
+Pieces Bright Dim
+1 piece 20 ft. 40 ft.
+2 pieces 15 ft. 30 ft.
+3 pieces 10 ft. 20 ft.
+4 pieces 5 ft. 10 ft.
+5 pieces 5 ft.
+
+
+Brightmatter does not generate heat.
+Bull’s Curse
+2nd-level necromancy
+Casting Time: 1 action
+Range: Touch
+Components: V,S, M(bull hair)
+Duration: 1 hour, removed, or save
+You place a curse on the subject, and the target must
+make a Strength saving throw. On a success, the spell
+fails. However, if the target fails the Strength saving
+throw, you impose a -4 penalty to Strength saves and
+checks and the target has disadvantage on all Strengthbased
+attacks. At the end of the target’s turn, the target
+may make a Strength saving throw. Upon a successful
+save, this penalty to saves and checks is reduced to -2 and
+the target now only has -2 to Strength-based attacks.
+After a third successful Strength save, all penalties are
+eliminated.
+The curse bestowed by this spell cannot be dispelled, but
+it can be removed with a enhance ability(bull’s strength),
+greater restoration, limited wish, miracle, remove
+curse, or wish spell.
+ At Higher Levels. When cast at a spell slot of 3rd
+level or higher, you may target one additional target for
+each spell slot above 2nd.
+Cat’s Curse
+2nd-level necromancy
+Casting Time: 1 action
+Range: touch
+Components: V,S, M(cat fur)
+Duration: 1 hour, removed, or save
+You place a curse on the subject, and the target must
+make a Dexterity saving throw. On a success, the spell
+fails. However, if the target fails the Dexterity saving
+throw, you impose a -4 penalty to Dexterity saves and
+checks and the target has disadvantage on all Dexteritybased
+attacks. At the end of the target’s turn, the target
+may make a Dexterity saving throw. Upon a successful
+save, this penalty to saves and checks is reduced to -2 and
+the target now only has -2 to Dexterity-based attacks.
+After a third successful Dexterity save, all penalties are
+eliminated.
+The curse bestowed by this spell cannot be dispelled, but
+it can be removed with a enhance ability(cat’s grace),
+greater restoration, limited wish, miracle, remove
+curse, or wish spell.
+ At Higher Levels. When cast at a spell slot of 3rd
+level or higher, you may target one additional target for
+each spell slot above 2nd.
+Chaotic Bolt
+2nd-level conjuration
+Casting Time: 1 action
+Range: 100 feet
+Components: V, S, M(A crossbow bolt)
+Duration: Concentration, up to 10 rounds
+A bolt of the chaotic energies of creation springs from
+your hand and speeds to its target. You must succeed on
+a ranged spell attack to hit your target. The bolt deals 5d4
+points of damage of a random type. Unless neutralized,
+the energy lasts for another round (to a maximum of 10
+additional rounds), creating another bolt that deals
+another 5d4 points of damage in each round. You must
+concentrate on the spell, but do not have to make a new
+attack roll after the first attack as the damage is
+automatic. Each round, roll on the chart to determine the
+damage type.
+
+d10 Energy Type
+1-2 Acid
+3-4 Cold
+5-6 Lightning
+7-8 Fire
+9-10 Thunder
+Chilling Mist
+2nd-level conjuration
+Casting Time: 1 action
+Range: 50 feet
+Components: V, S
+Duration: 1 minute
+You cause a stationary cloud of icy vapor to rise in a 20-
+foot radius from a point in range. The vapor partially
+obscures sight, including darkvision, beyond 5 feet,
+making the area heavily obscured. In addition, all
+creatures take 1d6 cold damage each round they remain
+in the mist. Creatures are entitled to a Constitution saving
+throw each round to halve the damage.
+A moderate wind (11+ mph), such as from a gust of wind
+spell, disperses the mist in 1 round. A fireball, flame
+strike, or similar spell burns away the fog in the explosive
+or fiery spell's area. A wall of fire burns away the fog in
+the area into which it deals damage. This spell does not
+function underwater.
+Code Skill
+2nd-level transmutation
+Casting Time: 1 action
+Range: touch

@@ -7,16 +7,19 @@
 {:Prefix Good} {:Name}
 {Evocative Adj:Positive} {:Name}
 {Trait:Not Bad} {:Name}
+{:Prefix Good}-{:noun}
 
 : Grey
 {:Prefix Neutral} {:Name}
 {Evocative Adj:Neutral} {:Name}
 {Trait:Neutral} {:Name}
+{:Prefix Neutral}-{:noun}
 
 : Black
 {:Prefix Bad} {:Name}
 {Evocative Adj:Negative} {:Name}
 {Trait:Not Good} {:Name}
+{:Prefix Bad}-{:noun}
 
 : Prefix Good
 auntie
@@ -42,6 +45,7 @@ wicked
 {:prefix neutral}
 
 : Prefix Neutral
+babbling
 banished
 bent
 big
@@ -54,6 +58,7 @@ crafty
 crazy
 crooked
 cunning
+gibbering
 grim
 grinning
 hollow
@@ -62,11 +67,14 @@ iron
 little
 mad
 magic
+moaning
 moody
+moping
 mother
 milk-eye
 old
 one-eyed
+prattling
 red
 saggy
 scary
@@ -90,10 +98,10 @@ widow
 {Old English Name:Female First}
 {Victorian Name:Female First}
 {:Hag}
+{Pseudo Class:Sage}
 
 : Hag
 bane
-bitch
 claw
 cousin
 crone
@@ -106,3 +114,40 @@ nettle
 thistle
 thorn
 woman
+
+: Prefix Good
+Fairy
+Green
+Pixie
+White
+
+: Prefix Neutral
+Blue
+Broom
+Cackle
+Candle
+Gibber
+Grey
+Prattle
+
+: Prefix Bad
+Black
+Devil
+Goblin
+Red
+Spider
+
+: Noun
+Elf
+Fae
+Flame
+Haunt
+Jaw
+Shade
+Silk
+Smoke
+Snort
+Spit
+Spook
+Thorn
+Wart

@@ -2,11 +2,11 @@
 
 : Relic
 shard of the {weapon} of {:NAME} 
-{50%{:preserved} }{:organ} of {:NAME}
-{:bone} of {:NAME}{33% {art:decorated}}
-{:liquid} of {:NAME}{50% kept in a {container:potions}}
-{:other} of {:NAME}{33% kept in a {:container}}
-{organ} of a {evocative adj:positive} {{monster|fauna}}
+{50%{:Preserved} }{:Organ} of {:NAME}
+{:Bone} of {:NAME}{33% {art:decorated}}
+{:Liquid} of {:NAME}{50% kept in a {container:potions}}
+{:Other} of {:NAME}{33% kept in a {:container}}
+{Organ} of a {evocative adj:positive} {{monster|fauna}}
 {tiny item} that was {blessed by|a gift from} {:NAME} 
 
 : Name
