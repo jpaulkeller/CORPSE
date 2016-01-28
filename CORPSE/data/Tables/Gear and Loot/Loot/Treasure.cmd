@@ -15,23 +15,22 @@
 {S={Size (1-5)?{5}}}
 {L={Level (1-9)?{9}}}
 {R={2*{{S}*{L}}}}
-{Q={L*4}}
 
 <h1>Treasure #{T} (size: {S}, level: {L}, rank: {R}) </h1>
 
 <ul>
 !loop {S}
-   <li>{container:small loot} holding {N={{S}d20}}{C:=currency} {N} {C.nickname}s ({C.coin}s, worth about {{N}*{C.cp}} cp)
+   <li>{container:small loot} holding {N={{S}d20}}{C:=currency}{N} {C.nickname}s ({C.coin}s, worth about {{N}*{C.cp}} cp)
    {{R}% <li>{container:small loot} holding {{S}d20} coins: {coin}}
    {{R}% <li>{container:small loot} holding {{S}d{L}} {{~{gem cost.gem}}+}{50% and {{S}d{L}} {{~{gem cost.gem{!different}}}+}}}
    {{R}% <li>{container:medium loot} holding {{S}d4} {metal} {ingots|bars}}
-   {{R}% <li>Luxury: {LUXURY:ITEM} (worth {{L}d25}0 gp)}
-   {{R}% <li>Art: {ART}{50% (by {ART:ARTIST})}}
-   {{R}% <li>Jewelry: {luxury:jewelry} (worth {{L}d25}0 gp)}
-   {{R}% <li>Magic Item: {ENCHANTED ITEM}}
+   {{R}% <li><font color=green>Luxury: {LUXURY:ITEM} (worth {{L}d25}0 gp)</font>}
+   {{R}% <li><font color=brown>Art: {ART}{50% (by {ART:ARTIST})}</font>}
+   {{R}% <li><font color=gold>Jewelry: {luxury:jewelry} (worth {{L}d25}0 gp)</font>}
+   {{R}% <li><font color=blue>Magic Item: {ENCHANTED ITEM}</font>}
 !loop end
-   {Q}% <li>Artifact: {ARTIFACT NAME}}
-   {Q}% <li>Relic: {RELIC}}
+   {{{L}*3}% <li><font color=purple>Artifact: {ARTIFACT NAME}</font>}
+   {{{L}*3}% <li><font color=red>Relic: {RELIC}</font>}
 </ul>
 
 /   <li>Hidden: {treasure:hidden}

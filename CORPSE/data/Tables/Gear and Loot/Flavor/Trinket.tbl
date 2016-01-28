@@ -1,35 +1,38 @@
-/ http://www.koboldpress.com/k/front-page19123.php#.VQmx6NVVhBc
-/ http://www.koboldpress.com/k/front-page19267.php#.VQm3L9VVhBc
+/ https://www.patreon.com/posts/3928856?utm_content=bufferb384d&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+/ One-use (or very limited) magic items
 
-A bell crafted from translucent silver material rests within the box. If rung, the sound issues forth and then vanishes. A few seconds later, you hear, as if from very far away, a resounding crack followed by a deep bass echo that shakes the very ground you stand upon.
-A brilliantly colored bright silk tapestry animated to depict a quiet wooded hill overlooking a pond. It is incredibly relaxing.
-A carved wooden mask depicting a snarling animal face with sharpened teeth and painted in brilliant yellows and reds to resemble flame.
-A collection of buttons with bits of thread still attached fills the box.
-A collection of mismatched ear dangles fills the box.
-A crystal sphere that releases a rainbow into the room when touched.
-A finely sculpted marble bust of a middle-aged, balding bureaucrat. The moment that you make eye contact with the statue, it acknowledges your presence with a wink.
-A folding leather wallet filled with strangely colored bits of paper. Tucked within, you also find a small pewter badge showing the symbol of a great wyrm atop a castle wall, with the intials ‘GG’ on its reverse.
-A hollow minotaur horn with a blowpiece attached to the edge. Runes shimmer on the horn. (If blown, a ghostly minotaur shows up and seems peeved.)
-A huge bolt of brilliant purple fabric, in excellent condition despite its obvious age. The fabric seems impossibly thin and weightless to the touch, suggesting that there must be thousands of yards of it.
-A large, fat gray rodent with bright eyes, enormous ears, a lustrous coat, and a brush-like tail gazes out at you from the confines of tidy, square black cage.
-A masterfully executed painting depicting the aftermath of a horrific battle; pain and fear radiates from every living face. In the lower left corner is a familiar signature.
-A padded metal case filled with a hundred tiny figurines depicting warriors of various races, all obviously hand assembled and painted with great care. A half-painted kobold figure on top is especially well-sculpted.
-A pane of amethyst quartz has a gold symbol representing chaos in the middle of it.
-A petite golden music box that presents a small clockwork scene of an elaborate wedding ceremony when opened.
-A shoulder-height rough cut blue crystal spire surrounded by a handful of gently orbiting uncut crystal fragments. The floating fragments resist movement as though tethered to the spire by steel cord.
-A single leaf from a tree is within this box. It flares and crackles as if made of flame. How it does not burn the box is a mystery.
-A slim metal case containing a handful of beautiful, pearl-handled darts with sharpened emerald tips wrapped in a soft cloth.
-A slim, blown-glass bottle filled with a shimmering golden liquid. The bottle is sealed with a cork and wax, and the label is hand-written in a language you do not recognize. The fraction 1/500 is neatly penned in the bottom right corner.
-A small beige oilcloth sack embroidered neatly with the word ‘CHEESE.’ You can smell it from halfway across the room.
-A small velvet coin purse, which when opened releases a single beautiful butterfly but is otherwise empty. The butterfly flutters gently just above your reach.
-An elegant, polished driftwood sculpture depicting a griffon and small dragon mid-combat. The intricate detail and delicate features demonstrate a mastery of the craft, even to a layperson.
-An embroidered silk purse with polished silver clasps and beaded with precious stones.
-Half a dozen egg-sized polished stones in various natural hues, resting in a pile. Every sound echoes quietly from them.
-Seeds from a variety of plants. One is within a glass vial that says, “Do not expose to air.”
-Six polyhedrals with four sides. They change color, and each one has a different holy symbol on each side.
-Some sickeningly cute porcelain cat figurines with giant eyes, posed in various cat-like activities, such as playing with a ball of yarn or hiding inside a boot.
-Some small, bejeweled gauntlets, suitable less for protection and more for display or ceremony.
-The box, when opened, suddenly becomes twenty closed ones. Each one has a piece of parchment with a single word on it. These words might form a sentence.
-These words are within the box, “By opening this box, you have agreed to fulfill the next request made to you.” Only the person opening the box can see these words — the parchment is blank to all other gazers.
-Tiny little humanoid skulls are hopping around the inside of the box. The thick velvet lining the box had muted their antics.
-What you can only assume is meant to be an enormous glass depiction of a crab.
+.Name
+.Description
+
+A Stitch in Time; This simple thread, if sewn into a garment you are wearing, will grant you a +1 bonus on your next 9 saving throws.
+Aiming Arrow; This special arrow comes with a blunt tip. On impact the tip activates and melts into the target (d6 fire damage) and now attracts other arrows. The change to hit the same target is increased by +2 whereas the change of hitting something else is now reduced by -2. This effect last for 2d6 rounds.
+Badge of Life; this is a  badge shaped like a simple ankh. When it is affixed to the wearer's clothing, it provides a valuable benefit. The first wound that would take the character below 0 HP (or whatever is the lowest value at which the character is still alive) instead takes the character to exactly 0 HP (or, again, whatever happens to be the lowest non-fatal value), and then the badge disintegrates. If there are Save vs Death type effects in play (rather than HP damage), this same item would also force one successful save before disintegrating instead.
+Cat gut strings; A set of strings for an instrument that grants a bonus to Perform checks.  Alternately can call 1 normal housecat to snuggle with.  Strings break after use.
+Cucumber Sandwich of Etiquette; The person eating the sandwich gains a boost to their diplomacy (or similar) skill.
+Cymbal Monkey; Small toy monkey. Push the button and it grows to a full-sized chimp that clashes its cymbals, deafening those around it.
+Distant Mirror; “Objects in the mirror may be closer than they appear”.  A small glass mirror that creates the illusion that the person is farther away than they actually are.  Mirror cracks each time it is used till it finally breaks.
+Dust of the Fire God; A small pouch of charcoal when poured onto a small fire the first sword poked into the fire will catch on fire becoming a flaming Sword doing fire damage for the next 10 rounds.
+Ewer of out pouring gold; A shiny ebony Ewer (jug) with golden tracing all over it Very distinctive and fine artwork worth a lot for its looks. When in need to buy a item tip it up and the correct amount of gold will pour out. One use only as the gold fades and it becomes a dirty brown cheap pottery.
+Eye in a Jar; Some creature's eye in brine. Take it out and lick it. For the next hour the taster can see through the eye at any range.
+Gravity Cube; A small grey cube, one side marked with an orb. Roll the cube and whichever side has the orb in the direction of gravity for one round.
+Helping Hands; A set of five fired clay hands that are carried or worn by user.  In times of trouble wearer the person could ‘use a hand’ due to a failed roll, one of the hands breaks and grants a +2 bonus on whatever activity they undertaking.  Does not work for combat.
+Jade Scarab of Life; This brooch resembles a 2cm (1 inch) long jade scarab. It is very detailed and a bit bulky. It comes without a chain or necklace. If you press the scarab to a chest it will awake to life and burrow itself into the chest of its bearer. After the wound is healed the presence of scarab can be felt by touch. If the wearer ever suffers a deadly wound the scarab absorbs part up that blow up to a value of a cure light wounds spell and withers to dust.
+Mop Bucket of Fortitude; After one use of this item, the wearer is immune to nausea and disorientation for the next encounter.
+Oilstone of the Master Fighter; This grindstone is always of an oily appearance. If used on a non-magical slashing or percing weapon the grindstone sharpens the edge to increase its critical hit range by 1. This effect last until the end of the next combat. Unfortunately the sharp edge is fragile and the weapon is worn by combat. The weapon will get the broken condition after the combat. The grindstone can be used three times before it is used up.
+Pair of Sneakers; These shoes wear as normal footwear, but if you tear off the tongues of the shoes, they become shoes of stealth for the next 10 rounds granting advantage, or +5 on all stealth checks during that time.
+Pocket Bag; This is a Temporary Bag of Holding. It can hold up to 250 pounds and acts as a Type 1 Bag of Holding in all other respects. It will, however, revert to a normal sack in 24 hours.
+Pocket Book; This pocket turns into a random book.
+Pocket Knife; A small utility knife, at least for the next hour. 
+Pocket Plane; This pocket enlarges to about the size of two surfboards and becomes rigid and capable of holding 1000 pounds for 15 rounds.  Toss your party on board and glide down a small cliff, or coast across a ravine. Rain won't hurt it, but don't try to use it as a boat - it will become waterlogged in 1 round and have the rigidity and buoyancy of a wet rag. 
+Pocket Rock; When this pocket is removed from the best it becomes a rock. A handy surprise weapon, or last chance sling ammo, or even a distraction device... Anything a rock is useful for.
+Pocket Vest; This vest is an assortment of one shot trinkets in the form of six pockets. The pockets can be used as normal for anything a pocket can be used for, but in a pinch,rip a pocket off the best and it becomes a trinket:
+Pocket Watch; Tear this off when the whole party is bushed and sleep securely knowing the Pocket Watch will set of an alarm any time anyone not within 50 yards of the pocket when activated, enters the same radius. Lasts for 10 hours. 
+Prayer Strip; It comes in the form of a strip of clear white paper or linen, usually 30-60cm (1 to 2 feet) long and about 5cm (2 inch) wide. A priest (or perhaps druid) can use it to write prayers on it and then attach it with a wax seal to the armor of a fighter so that it is visible in combat. Depending on the prayer it will give the wearer a bonus to the ability mentioned in the prayer. 
+Sand of Vision; This gray sand comes in a violet pouch. Take a handful of the sand and throw it against a wall, door or onto a chest or floor. The sand will allow you to view through the object and see what is behind or in it. The view is one way. The sand is consumed in the process. The pouch contains d4+1 uses.
+Scale armor; A series of scales from a dragon that are attached to a piece of clothing.  When one of the scales is used it creates a set of scale mail armor on the wearer.                                                               
+Small statues of Reunification; A couple of small {made of:hard} figures -- one representing a man and the other one his spouse. If the two small figures are separated, whomever wields one and spells the activation word, is teleported where the latter is
+Surefire twig; this one-use, tiny piece of enchanted wood can start a fire in almost any condition, unless it's completely submerged.
+The Barrel Roll; This bread roll comes in the shape of a tiny barrel. When dipped in ANY liquid and then dashed to the ground, a small cask will appear with enough food to feed a party of four one meal. The food is always fresh and wholesome but will always have an aftertaste of the liquid used.
+Tied In Knots; A piece of string. Cut a 5' length and drop it to the ground. It will snake to the nearest opponent and grapple him. DC 15 to escape.
+Trapped Fireball; This glass orb of 6 inches (15cm) diameter contains whirls of fire and smoke. Breaking the glass releases the fireball. It can be thrown, rolled, be part of a trap or just carried in a backpack.
+Whiskey Tongue; Share the whole bottle of this whiskey with a friend and then neither of you can tell a lie until you sleep it off. Thing is, the friend won't realize what he's said until waking up.

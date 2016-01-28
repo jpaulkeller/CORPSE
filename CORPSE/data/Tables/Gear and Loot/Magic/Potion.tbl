@@ -93,11 +93,7 @@ Potion of Plant Control
 Potion of Polymorph Self
 Potion of Protection from Arrows
 Potion of Protection from Chaos
-Potion of Protection from Energy (acid)
-Potion of Protection from Energy (cold)
-Potion of Protection from Energy (electricity)
-Potion of Protection from Energy (fire)
-Potion of Protection from Energy (sonic)
+Potion of Protection from Energy: {Element:4E}
 Potion of Protection from Evil
 Potion of Protection from Good
 Potion of Protection from Law
@@ -109,11 +105,7 @@ Potion of Remove Curse
 Potion of Remove Disease
 Potion of Remove Fear
 Potion of Remove Paralysis
-Potion of Resist Energy (acid)
-Potion of Resist Energy (cold)
-Potion of Resist Energy (electricity) 
-Potion of Resist Energy (fire)
-Potion of Resist Energy (sonic)
+Potion of Resist Energy: {Element:4E}
 Potion of Speed
 Potion of Super-heroism
 Potion of Sweet Water
@@ -122,6 +114,7 @@ Potion of Undead Control ({Undead})
 Potion of Ventriloquism
 Potion of Vitality
 Potion of Water Breathing
+Potion of {Eating Fungi:Mushroom}
 Potion of {Spell:Abjuration}
 Potion of {Spell:Divination}
 Potion of {Spell:Empathic}
