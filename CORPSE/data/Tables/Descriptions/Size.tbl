@@ -39,36 +39,41 @@ tall
 trim 
 
 : Relative Tiny
-pea
 acorn
+pea
 robin's egg
 
 : Relative Small
-coin
-walnut
-chicken's egg
 apple
+chicken's egg
+coin
 sparrow
+walnut
 
-: Relative Medium
+: Relative Fist 
 brick
-plate
-pitcher
+fist
+leaf
+potato
+
+: Relative Plate
 bucket
+pitcher
+plate
 
 : Relative Large
-dog
 barrel
+dog
 donkey
 horse
 ox
 
 : Relative Huge
 bear
-ox
-horse
 elephant
+horse
 house
+ox
 
+: Relative Medium = Relative Fist + Relative Plate
 : Relative = Relative Tiny + Relative Small + Relative Medium + Relative Large + Relative Huge
- 

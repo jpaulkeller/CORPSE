@@ -21,7 +21,7 @@
  <li>{TAVERN FLAVOR:LOCATION}
  <li>in {neighborhood}, near the {LANDMARK}
  <li>{direction} the {city feature:site}
- <li>the street outside is {street flavor}
+ <li>the street outside is {STREET FLAVOR}
 </ul>
 
 <h3>Description</h3> 

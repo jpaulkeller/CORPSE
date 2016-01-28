@@ -360,7 +360,7 @@ A murder of crows rises from the surrounding trees. You also hear shrubs shuffli
 A naked minstrel asks for a lift to the nearest Inn where he left his clothes and money to pay for your troubles. 
 A nearby summoning ritual has gone awry and a demon rampages across the road. 
 A nearby swamp floods onto the road. 
-A necromancer uses his talents to animate animal and human corpses and forces them to perform in a roadside circus. The creepy part is townsfolk from a nearby village seem to enjoy the show a bit too much. 
+A necromancer uses his talents to animate animal and human corpses and forces them to perform in a roadside circus. The creepy part is townsfolk from a nearby {settlement:common} seem to enjoy the show a bit too much. 
 A nervous horse is tied to a branch alongside the road. 
 A nesting magpie swoops the party. 
 A new sign pointing down a narrow path off the road saying, "Fresh Berries - Pick Your Own." 
@@ -607,8 +607,8 @@ A Tyrannosaurus rex chases down a triceratops.
 A unit of archers are out practicing their shots on the King's Highway. Beware stray arrows. 
 A vagabond, smelling strongly of alcohol, claims to be a god and demands the PCs worship him. 
 A vampire hunter seeks to temporarily join the team, warning of the dangers of his prey. Is the hunter actually the vampire? 
-A village can be seen to the west. It isn't on the PCs' maps. 
-A village guard patrolling the road asks for the PCs' license to bear weapons. 
+A {settlement:common} can be seen to the west. It isn't on the PCs' maps. 
+A {settlement:common} guard patrolling the road asks for the PCs' license to bear weapons. 
 A violent earthquake creates a deep rift across the road. 
 A visitor stops to ask for directions to an interesting place. 
 A voice from the bushes by the road shouts, "We have you surrounded, Torvik! Your villainy ends here!" But who's Torvik? 
@@ -635,7 +635,7 @@ A well-spoken bugbear wearing fine studded leather armour is trapped under a fal
 A wheel breaks or comes off your wagon. 
 A white stag steps onto the road ahead, looks directly at each party member, then bounds off. 
 A white stone road cuts neatly through a festering swamp. The stones are carved with protective sigils and regular dire warnings not to leave the path. Then in the middle of the swamp the road ends, the stones shattered and blackened. 
-A whole tribe of 80 goblins marches toward a village. 
+A whole tribe of 80 goblins marches toward a {settlement:common}. 
 A widow/widower and children planting a tree/flowers for their loved one, who died on the road. 
 A will-o-wisp floats eerily across the center of the road. 
 A wind elemental likes to cause havoc along this road. Several travelers have warned you and authorities of the threat, yet the officials only answer with, "Whatever blows your skirt up." 
@@ -661,7 +661,7 @@ A wounded dragon lies across the road.
 A wounded hitchhiker comes into view. 
 A young couple feverishly digs alongside the road, bickering all the while. It seems they're after something valuable buried by the road. 
 A young dog or other creature decides to playfully follow the party. 
-A young man and woman riding a horse bareback, ill-equipped for travel, make to pass by you in haste. If questioned, they tell you they are lovers, fleeing a feud between their families who live in the village ahead of you. 
+A young man and woman riding a horse bareback, ill-equipped for travel, make to pass by you in haste. If questioned, they tell you they are lovers, fleeing a feud between their families who live in the {settlement:common} ahead of you. 
 A young runner, a messenger bag slapping against his back, sprints past the party. 
 A young woman in simple clothes cries beside the road. She will explain she is a deer magically transformed into a girl by a cruel wizard who caught her stealing from his garden. 
 A young woman stands on the bridge, crying about something that fell in the water. 
@@ -733,7 +733,7 @@ An executioner and victim walk towards the block. Guards and clergy watch with g
 An exotic, almost alien weapon or tool lies on the side of the road. 
 An explosion just ahead rocks the party. 
 An illegal logging or mining operates nearby. 
-An immense dire wolf blocks the party's passage. Your hired guide raises a quavering finger and points, uttering the local legend's name: "Frostbite!" He then turns on his heel and runs back towards the village where you hired him. 
+An immense dire wolf blocks the party's passage. Your hired guide raises a quavering finger and points, uttering the local legend's name: "Frostbite!" He then turns on his heel and runs back towards the {settlement:common} where you hired him. 
 An impossibly tall ladder rests against the branch of a tree, its top vanishing into the low clouds. 
 An injured old man lies on the path, but his wounds aren't as bad as they seem. 
 An injured wild dog howls on the side of the road. 
@@ -894,7 +894,7 @@ It appears travellers here have two choices. The high road (plagued by giants) o
 It becomes intensely silent. The effect ends abruptly if one steps beyond a certain area. 
 It begins raining cats and dogs. Literally. 
 It is dark and a commoner stands next to a wagon with a torch, yelling a woman's name and begging her to come back. After a fight over something stupid, like when to camp for the night, she stomped off into the dark woods. The twist: his wife is a visibly obvious monster (like a giantess or centaur). 
-It is known this road leads straight to the next village with no side paths. Nevertheless, the road forks. A well-dressed attendant offers his counsel on which path to take. 
+It is known this road leads straight to the next {settlement:common} with no side paths. Nevertheless, the road forks. A well-dressed attendant offers his counsel on which path to take. 
 It is said many gods walk the land as mortals. Could the beautiful being bathing in the stream be one? 
 It started as a milk run, but the young noble you are charged with escorting has developed a bladder infection, and now the need for rest stops has become ridiculously frequent. 
 It's early dawn. Out of a thick fog a tall figure emerges. 
@@ -928,7 +928,7 @@ Near the road a nest of massive red eggs rests snugly under a large bush.
 Near the road is a mound the size of a grave, obviously of recent excavation, marked at its head by an upright stake. 
 Noble Robin Hood-type outlaws request the party's aid in recovering one of their own captured by an evil overlord. 
 None may pass. A knight bearing a foreign banner stands before the bridge. He makes it clear you will not cross unchallenged. 
-Not long after leaving a village suffering from drought, the party happens upon a blazing forest fire. 
+Not long after leaving a {settlement:common} suffering from drought, the party happens upon a blazing forest fire. 
 Now you see what has the vultures circling: a large animal carcass ripped to shreds and strewn about the road. 
 Noxious gas rises from a bog ahead, swallowing up the road. 
 Noxious, bilious green gas covers the road ahead. 
@@ -1000,7 +1000,7 @@ Small wain, with a farmer and a donkey with dislocated knee.
 Smoke rises in the distance. It might be a raid, slash and burn agriculturists, a forest fire or an army encampment. 
 Smoke starts billowing up from just over the next hill. 
 Snowfall during the night covered the road and the landmarks. More snow is coming still. Not only is advancing difficult, but where is the road? 
-So treacherous is the road, one of your mounts has thrown a shoe that cannot be found. There was no smith in the village you left behind. 
+So treacherous is the road, one of your mounts has thrown a shoe that cannot be found. There was no smith in the {settlement:common} you left behind. 
 Some sort of carnival blocks the road. The carnival seems festive, but the details are all wrong. As the party draws near, a threatening demon manifests before them and politely suggests a substantial detour as the demon ritual simply cannot be disturbed. 
 Someone does not want guests. Three skulls impaled upon sticks block a side trail that branches off the road. 
 Someone has scattered caltrops across the road. 
@@ -1017,7 +1017,7 @@ Strange tracks lead off the road.
 Stray dogs attack a sheep. 
 Substantial drag marks on the road lead into the nearby verdant foliage. 
 Swinging from tree to tree, a mischievous band of monkeys besieges the party and try to seize a number of shiny objects. 
-Tearful villagers plead with travellers to save their village from a ravaging beast. 
+Tearful villagers plead with travellers to save their {settlement:common} from a ravaging beast. 
 The air suddenly becomes cold or hot. 
 The angry, maniacal giant appears to love fire - and hate horses. 
 The blizzard blinds the party and covers the road sign that marks the correct direction. 
@@ -1052,7 +1052,7 @@ The garrison of a toll bridge has been slaughtered and replaced by bandits or mo
 The garrison of a toll bridge has been slaughtered and the PCs are accused of doing it. 
 The ground grows hot and foul steam rises from new-formed cracks in the roadway. 
 The ground rumbles as the PCs move through a mountain pass. It's an earthquake! The characters can escape with minor injuries from bouncing rocks, but just around the bend, a massive sinkhole has swallowed the entire path. 
-The group arrives late at night at a tiny village straddling the road. They secure accommodation and food from the friendly locals and fall asleep. In the morning the village is empty and ruined, as if abandoned years ago. 
+The group arrives late at night at a tiny {settlement:common} straddling the road. They secure accommodation and food from the friendly locals and fall asleep. In the morning the {settlement:common} is empty and ruined, as if abandoned years ago. 
 The group comes across a three-way traffic jam at a fork in the road, and three arguing wagon masters refusing to give way. 
 The group comes to a wilderness trading post on the trail. The cantankerous oldtimer who runs it offers a bounty for scalps. 
 The group comes upon the scene of a recent grisly carriage accident, or witnesses it ahead of them on the road. 
@@ -1062,7 +1062,7 @@ The group meet an uncannily similar party of adventurers going the opposite way.
 The group passes an old farmer and his nag heading toward the same town the PCs are heading toward. He gives them a wave and a gap-toothed smile. A little while later they pass him again. And then again.... 
 The group sees one group routing another leaving dying and dead behind. 
 The inn the PCs were travelling to has been completely destroyed. 
-The innkeeper from a day's journey back was insistent this road only led to the next village. Where then might this unmentioned fork lead? More importantly, which is the way to the next village? 
+The innkeeper from a day's journey back was insistent this road only led to the next {settlement:common}. Where then might this unmentioned fork lead? More importantly, which is the way to the next {settlement:common}? 
 The King has enacted a toll bridge. Several peasants were unaware, and cannot afford the toll. They accost the PCs demanding then begging for change. 
 The King's men are repairing the road for the next 5 miles. 
 The King's messenger needs a fresh horse. 
@@ -1166,7 +1166,7 @@ The road goes through a canyon bog filled with toxic, flammable gas.
 The road has been destroyed by war. 
 The road has potholes in it, wreaking havoc on steed and pack animal legs and wagon wheels. 
 The road is blocked by a large but makeshift fortification, manned by a band of kobolds, goblins or ratmen. 
-The road is blocked by a village with plague markers outside it. 
+The road is blocked by a {settlement:common} with plague markers outside it. 
 The road is blocked by guards searching for violent criminals. Do the PCs look like the escaped convicts? 
 The road is closed for construction. 
 The road is crossed by many animal tracks, as if a herd of beasts all crossed at the same time. 
@@ -1187,7 +1187,7 @@ The road narrows to a small, rickety bridge.
 The road narrows to one lane and an ox-pulled wagon is moving slowly ahead. 
 The road passes through a blasted heath. 
 The road passes through a ruined, burned-out town that seems abandoned. 
-The road passes through an abandoned village. 
+The road passes through an abandoned {settlement:common}. 
 The road quickly becomes narrow and overgrown with thorny plants that are poisonous. 
 The road reaches a river. The ferry is on the far side, but no one is around. 
 The road runs between two poppy fields. They are blooming, releasing clouds of pollen into the air. 
@@ -1302,7 +1302,7 @@ What's that? A pale and dead body bobs up and down in the nearby river. Perhaps 
 When at the bottom of a steep sloping road, there is a rumble and a large boulder comes rushing toward the PCs. When the rock finally stops, the group spots old bloodstains and a kill-score carved into the side. 
 When the ancient hermit hunkered down by the roadside sees the party, he jumps up and yells, "The prophecy, the prophecy, it is fulfilled!" He then runs into the corn field behind him. 
 Where the road goes down and then up, marsh lands have taken the road over. What remains is the road is soft and sticky, with disease a risk too. 
-While on the road the PCs come across a traveling merchant going the same way. The merchant asks if he can travel with them to at least the next village. During the night the merchant will attempt to steal from each PC. In the morning, if no one notices the theft, he will attempt to leave. 
+While on the road the PCs come across a traveling merchant going the same way. The merchant asks if he can travel with them to at least the next {settlement:common}. During the night the merchant will attempt to steal from each PC. In the morning, if no one notices the theft, he will attempt to leave. 
 While on the road the PCs come across a traveling merchant. The merchant offers a free sample of his tincture, which he claims does everything from curing warts to making you stronger and smarter. 
 While resting at a small pond off the road, a flock of white geese land in the water. Soon afterward a lone goose lands nearby. This goose is a golden brown color and its feathers appear to shine in the sunlight. 
 While the PCs encamp, a huge swath of ants approaches and begins to take the PCs' provisions. 
@@ -1314,7 +1314,7 @@ Wind knocks a beehive out of an overhanging tree.
 With a rumble, a rockfall hurtles tons of tumbling stone towards those on the roadway. 
 Workers block the road demanding an increase in wages. 
 Workers construct a wall and gate across the road. The party is strongly encouraged by several guard members to pitch in and help. 
-Workers from a nearby village doing major work on the road now lie dead and the job is half finished. 
+Workers from a nearby {settlement:common} doing major work on the road now lie dead and the job is half finished. 
 Workmen replace a wooden bridge with a stone one. The detour is a day or more out of the way. The workers have finished a narrow path of stone, and might be convinced or bribed to allow you to balance your way across the precarious ledge. Watch your step. 
 Wow, what did that? An enormous pile of steaming fresh feces lies right in the middle of the road. It's a really big pile. 
 You approach a caravan of camels. It travels in same direction and the leader invites you to escort him as security. 
@@ -1322,7 +1322,7 @@ You approach a rickety, swaying bridge.
 You approach a washed out bridge on a dry river bed. 
 You approach gypsy wagons in a circle. At first you hear people talking and children playing. The closer you get, you start to hear whispers. When very close, you are greeted with complete silence and you see no one around. 
 You are crossing a bridge when, suddenly, from behind one of the bridge's pillars, a man steps out and demands you pay a toll to cross. You ask by what authority  does he collect the toll and the man produces a dubious looking bit of vellum with what appears to be the King's seal stamped upon it. 
-You are moving along a road through heavy forest. The road ahead is blocked by a mass of trees and debris after a tornado tore through the area. A small village is known to be near. 
+You are moving along a road through heavy forest. The road ahead is blocked by a mass of trees and debris after a tornado tore through the area. A small {settlement:common} is known to be near. 
 You awake to find everything you own has been removed during the night. Fearing theft, a quick search reveals twelve sets dwarven tracks, one set of unidentified human tracks and, lying in the middle of your campsite, a smoldering pouch of herbs that, when you sniff them, make you feel slightly drowsy. 
 You awaken from camp surrounded by a parliament of owls. Nature is judging you. 
 You become aware a bandit demanding a toll is actually alone and has set up a crossbow to fire when he triggers a badly hidden tripwire. He flees with your money, triggering another crossbow trap behind him. 
@@ -1362,7 +1362,7 @@ You see children playing on the road. When approached, they look startled and ru
 You see the remains of a trade cart. Closer inspection reveals corpses several feet away from the road, half buried, dragged there by the raiders. 
 You spy a chicken on one side of the road, looking diffidently at the other side. 
 You stumble upon a small shrine dedicated to a deity of travelers. In the middle of the shrine you see a statuette with cupped hands, on which you can drop a coin for good fortune. 
-You stumble upon an old scroll case wedged between a tangle of tree branches. Inside is a village's charter of rights and freedoms. 
+You stumble upon an old scroll case wedged between a tangle of tree branches. Inside is a {settlement:common}'s charter of rights and freedoms. 
 You suddenly realize these horses hate fire. 
 You travel at night under a new moon. Your party's scout points up at the sky, where traditionally stationary constellations swirl about as if stirred by a cosmic spoon. 
 You traverse a darkened path through light woods, a glowing chariot appears above the trees to one side. 

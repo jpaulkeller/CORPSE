@@ -273,7 +273,6 @@ Towns
 Trade
 Undead Lore
 Urban Planning
-Villages
 Weather
 Wilderness Lore
 {:Place}
@@ -286,6 +285,7 @@ Wilderness Lore
 {Merchandise}
 {Pseudo Class}
 {Region}
+{Settlement:Simple}
 {Structure}
 {{Fauna}+}
 {{Flora}+}

@@ -46,10 +46,15 @@ Sparrow
 : Rank
 admiral
 boatswain
+bosun
 captain
 cap’n
 commodore
+coxswain
 deckhand
+drydock
+dunnage
+dunsel
 duke
 ensign
 first mate
@@ -72,23 +77,45 @@ the good captain
 third mate
 
 : Nickname
+ballast
 bandanna
 barnacle
+barrel
 bawdy
 beady-eyed
+beakhead
 bilge {:creature}
+bimini
+binnacle
+bitter end
 blind
+boathook
+bollard
+bonnet
 bootstrap
+bottomry
+boxing
+breakwater
 broadsides
+bulkhead
+buoy
 cannonball
 cantankerous
+capsize
+cringle
+crooked keel
 deck licker
+doldrum
 driftwood
 fire-breathin’
+flotsam
+hammock
 hard tack
 hawkeye
 hook hand
 hurricane
+jetsam
+jonah
 keel-haulin’
 lighthouse
 lightning
@@ -106,8 +133,10 @@ reef runnin'
 rudderless
 rum runnin’
 rusty
+salty
 savvy
 scrimshaw
+scuttlebutt
 scurvy
 sharkbait
 short fuse
