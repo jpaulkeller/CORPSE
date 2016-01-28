@@ -30,7 +30,7 @@ public class TokenRenderer extends ColoredTableRenderer implements MouseListener
    public static final String INVALID_CLOSE = ">>";
 
    // match unresolved tokens (but ignore the <!> last-match pattern)
-   private static final String ERROR_REGEX = 
+   public static final String ERROR_REGEX = 
       Pattern.quote(INVALID_OPEN) + "(.+)" + Pattern.quote(INVALID_CLOSE);
    private static final Pattern ERROR = Pattern.compile(ERROR_REGEX);
 

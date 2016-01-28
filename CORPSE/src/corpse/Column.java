@@ -154,22 +154,25 @@ public final class Column implements Comparable<Column>
 
    private static void parseColumnHeader(final Table table, final String header)
    {
-      Matcher m = CN_PATTERN.matcher(header);
-      while (m.find())
+      if (table.getColumns().isEmpty())
       {
-         Column column = new Column(table);
-         column.name = m.group(1);
-         column.index = table.getColumns().size();
-         column.start = (m.start() == 0 ? 0 : m.start() + Constants.COLUMN_CHAR.length()) + 1;
-         table.addColumn(column);
-
-         if (column.index > 0)
+         Matcher m = CN_PATTERN.matcher(header);
+         while (m.find())
          {
-            Column prev = Column.getColumn(table, column.index - 1);
-            prev.width = column.start - prev.start; // determine the width of the previous column
+            Column column = new Column(table);
+            column.name = m.group(1);
+            column.index = table.getColumns().size();
+            column.start = (m.start() == 0 ? 0 : m.start() + Constants.COLUMN_CHAR.length()) + 1;
+            table.addColumn(column);
+            
+            if (column.index > 0)
+            {
+               Column prev = Column.getColumn(table, column.index - 1);
+               prev.width = column.start - prev.start; // determine the width of the previous column
+            }
          }
+         // note the final column won't have a width, so we'll just go to the end-of-line when we extract it
       }
-      // note the final column won't have a width, so we'll just go to the end-of-line when we extract it
    }
 
    private Column(final Table table)

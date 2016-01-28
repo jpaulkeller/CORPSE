@@ -60,8 +60,12 @@ public class Table extends ArrayList<String>
          table.importTable();
       else
       {
-         System.err.println("Table not yet loaded: " + name);
-         System.err.println(Utils.getStack(null));
+         String stack = Utils.getStack(null);
+         if (!stack.contains("EventDispatchThread"))
+         {
+            System.err.println("Table not yet loaded: " + name);
+            System.err.println(stack);
+         }
       }
       return table;
    }
@@ -474,7 +478,7 @@ public class Table extends ArrayList<String>
    {
       CORPSE.init(true);
 
-      Table table = Table.getTable("Compass");
+      Table table = Table.getTable("Inn Name");
       System.out.println(table);
       
       /*
@@ -484,23 +488,25 @@ public class Table extends ArrayList<String>
          System.out.println(table);
       }
       System.out.println();
+      */
 
-      test("Flora", "including a table with a default subset");
-      test("Spell", "including a subset");
-      test("Fauna", "included subsets");
-      test("Mine", "weighted lines");
-      test("Profession#.*craftsman.*#", "filter subsets");
-      test("METALLIC", "including a subset");
-      test("Metal", "subsets");
+      // test("Flora", "including a table with a default subset");
+      // test("Spell", "including a subset");
+      // test("Fauna", "included subsets");
+      // test("Mine", "weighted lines");
+      // test("Profession#.*craftsman.*#", "filter subsets");
+      // test("Metal", "subsets");
    
       // TODO: there must be a better way to pre-load the filtered table
-      new Table("COLOR", "C.+");
-      test("COLOR#C.+#", "filter");
-      new Table("COLOR", ".*(EE|RO).*");
-      test("COLOR#.*(EE|RO).*#", "filter with alteration");
-      new Table("SPELL", ".*(WALK|FALL).*");
-      test("SPELL#.*(WALK|FALL).*#", "filter with alteration");
-      */
-      test("Weapon#[A-Z]+#", "regex filter");
+      // new Table("COLOR", "C.+");
+      // test("COLOR#C.+#", "filter");
+      // new Table("COLOR", ".*(EE|RO).*");
+      // test("COLOR#.*(EE|RO).*#", "filter with alteration");
+      
+      // new Table("SPELL", ".*(WALK|FALL).*");
+      // test("SPELL#.*(WALK|FALL).*#", "filter with alteration");
+      
+      // new Table("WEAPON", "[A-Z]+");
+      // test("Weapon#[A-Z]+#", "regex filter");
    }
 }

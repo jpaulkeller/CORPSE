@@ -9,6 +9,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import str.Token;
+import utils.Utils;
 import corpse.ui.TokenRenderer;
 
 public final class Macros
@@ -82,7 +83,9 @@ public final class Macros
    public static int resolveNumber(final String entry)
    {
       int resolved = 0;
-      Quantity qty = Quantity.getQuantity(entry);
+      
+      String resolvedEntry = resolveAssignments(entry);
+      Quantity qty = Quantity.getQuantity(resolvedEntry);
       if (qty != null)
          resolved = qty.get();
       return resolved;
@@ -530,7 +533,8 @@ public final class Macros
             String xref = RandomEntry.get(xrefTbl, xrefSub, xrefCol, xrefFil);
             if (xref == null)
             {
-               System.err.println("Invalid reference: " + entry);
+               if (!Utils.getStack(null).contains("EventDispatchThread"))
+                  System.err.println("Invalid reference: " + entry);
                xref = getInvalidTableToken(xrefTbl, xrefSub, xrefCol, xrefFil);
             }
 
