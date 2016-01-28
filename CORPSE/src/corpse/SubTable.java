@@ -114,7 +114,6 @@ public final class SubTable extends Table
       // test("{DiffTest#.+(?<!Common)#}", "negative look-ahead regex to prevent collision");
       // test("{Gender!}", "full line (don't use default column)");
       // test("{Gender}", "default column");
-      // test("{Metallic}", "included file");
       // test("{Profession+#.*craftsman.*#}", "filter subsets");
       // test("{Profession.#G.*#}", "column and filter");
       // test("{Profession.Job}", "composite column");

@@ -29,9 +29,13 @@ import utils.ImageTools;
 import corpse.ui.Menus;
 import corpse.ui.ScriptPanel;
 import corpse.ui.TabPane;
+import corpse.ui.TokenRenderer;
 import corpse.ui.TreePanel;
 
 /** CORPSE - Computer-Oriented Role-Playing System & Environment */
+
+// TODO - main UI
+// DDL for Table / Subset / Column / xQty / regex?
 
 // TODO - chance-to
 // for each skill check
@@ -331,7 +335,7 @@ public final class CORPSE
          String resolve = null;
          if (!quickSlot.getText().isEmpty())
             resolve = Macros.resolve(null, "{" + quickSlot.getText() + "}", null); // TODO currently selected?
-         entryButton.setEnabled(resolve != null && !resolve.matches("<.+>"));
+         entryButton.setEnabled(resolve != null && !resolve.matches(TokenRenderer.ERROR_REGEX));
       }
    }
 

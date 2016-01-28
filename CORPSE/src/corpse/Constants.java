@@ -33,7 +33,7 @@ public final class Constants
 
    static final String NAME = "([A-Z0-9](?: ?[-_A-Z0-9]+){0,10})"; // use {0,10} to avoid infinite loop
    static final String COLUMN_NAME = "([-_A-Z0-9](?: ?[-_A-Z0-9/()]+){0,10})";
-   private static final String TABLE_NAME = "([A-Z](?: ?[-_A-Z0-9]+){0,10})"; // use {0,10} to avoid infinite loop
+   private static final String TABLE_NAME = "([A-Z](?: ?[-_A-Z0-9]+){0,10})";
    
    static final Pattern NAME_PATTERN = Pattern.compile(NAME, Pattern.CASE_INSENSITIVE);
    static final Pattern SIMPLE_TABLE = Pattern.compile(TABLE_NAME, Pattern.CASE_INSENSITIVE);
@@ -109,14 +109,14 @@ public final class Constants
    private static final String VARIABLE_REGEX = "\\{(![^}]*)\\}";
    static final Pattern VARIABLE_TOKEN = Pattern.compile(VARIABLE_REGEX);
    private static final Pattern VARIABLE = Pattern.compile(VARIABLE_REGEX + "=(.+) //.*"); // {!OneWord}=#[^-_]+# // one word
-   static final Map<String, String> VARIABLES = new HashMap<String, String>();
+   static final Map<String, String> VARIABLES = new HashMap<>();
    static
    {
       loadVariables();
    }
 
    private static final Pattern PROPERTY = Pattern.compile("([^=]+)=(.+)"); // noun=nouns
-   static final SortedMap<String, String> PLURALS = new TreeMap<String, String>();
+   static final SortedMap<String, String> PLURALS = new TreeMap<>();
    static
    {
       loadPlurals();

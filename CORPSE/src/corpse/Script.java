@@ -114,15 +114,16 @@ public final class Script
       List<String> lines = new ArrayList<String>();
       
       InputStream is = null;
+      BufferedReader br = null;
       try
       {
          is = new FileInputStream (file.getPath());
          
          InputStreamReader isr = new InputStreamReader (is, "UTF8");
-         BufferedReader br = new BufferedReader (isr);
+         br = new BufferedReader (isr);
          Matcher m;
          String line = null;
-         while ((line = br.readLine()) != null)
+         while ((line = br.readLine()) != null && !line.startsWith(Constants.EOF))
          {
             if (nested && IGNORE_HTML.matcher(line).find())
                ; // ignore
@@ -142,6 +143,7 @@ public final class Script
       }
       finally
       {
+         FileUtils.close (br);
          FileUtils.close (is);
       }
       
@@ -151,6 +153,7 @@ public final class Script
    private int processLine(final int index)
    {
       String line = lines.get(index);
+      System.out.println("+ " + line); // TODO
       Matcher m;
       
       if ((m = SWITCH.matcher(line)).matches())
