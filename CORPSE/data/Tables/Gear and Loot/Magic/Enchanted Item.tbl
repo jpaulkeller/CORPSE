@@ -13,12 +13,13 @@ Bracers of {Spell:Abjuration}
 {Clothing} of {Spell}
 {Equipment} of {Spell}
 {Gem} of {Spell}
-{Gloves|Gauntlets} of {{Spell:Environmental|Spell:Kinetic|:Amulet}}
+{Gloves|Gauntlets} of {{Spell:Environmental|Spell:Kinetic}}
 {Goggles|Mask} of {Spell:Divination}
 {Helm|Hood|Hat} of {Spell:Empathic}
 {Jewelry} of {Spell}
 {Magic Robe.Name}
-{Mushroom} of {:Mushroom}
+{MAGIC ITEM}
+{Mushroom} of {Eating Fungi:Mushroom}
 {Musical Instrument} of {{Spell:Conjuration|Spell:Evocation|Spell:Illusion}}
 {POTION:LOOT}
 {POTION}
@@ -26,61 +27,7 @@ Bracers of {Spell:Abjuration}
 {ROD}
 {SCROLL:DESCRIPTION}
 {STAFF}
+{TRINKET}
 {TSR TREASURE}
 {UNIQUE MAGIC}
 {WAND}
-
-: Mushroom
-Augmentation
-Berserk Strength
-Blindness
-Boldness
-Brawn
-Charisma
-Clear Mind
-Confusion
-Constitution
-Contemplation
-Cure Critical Wounds
-Cure Light Wounds
-Cure Serious Wounds
-Debility
-Dexterity
-Dragon Breath
-Emergency
-Enlightenment
-Enlightenment
-Experience
-Fast Recovery
-Healing
-Healing
-Heroism
-Infravision
-Intellect
-Intelligence
-Life
-Lose Memories
-Neutralize Poison
-Nimbleness
-Poison
-Purging
-Resist Cold
-Resist Heat
-Resist Poison
-Restore Life Levels
-Restore Mana
-Salt Water
-Second Sight
-Sleep
-Slime Mold Juice
-Slowness
-Speed
-Sprinting
-Stoneskin
-Strength
-Terror
-Toughness
-True Seeing
-Turbulence
-Vigor
-Wisdom

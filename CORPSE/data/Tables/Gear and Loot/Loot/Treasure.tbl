@@ -5,6 +5,8 @@
 / sealed by [treasure container.bagseal]
 / [Treasure Container.concealment]
 
+: Treasure = Level 1 + Level 2 + Level 3 + Level 4 + Level 5
+
 : Hidden
 disguised to appear as something else
 hidden behind a loose stone in the wall
