@@ -6,6 +6,7 @@ The {:Who}'s {50%{Evocative Adj} }{:Spell}
 {:Prefix} {:{Spell Category} Suffix}
 {SC:=Spell Category}{:{SC} Prefix} {:{SC} Suffix}
 {:{Spell Category} Prefix} {:Spell}
+{:{Spell Category} Suffix} of {:{Spell Category} Prefix} {Evocative Noun}
 
 : Gerund
 {Noise}

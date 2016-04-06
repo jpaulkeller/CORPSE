@@ -16,12 +16,14 @@ band
 banner
 bear{50%s}
 beast
+betrayal
 birth
 blade
 blade{50%s}
 blood
 bloodline
 book
+castle
 cauldron
 ceremonies
 chalice
@@ -48,6 +50,7 @@ crystal
 cup
 curse
 dance{50%s}
+dark
 darkness
 dawn
 death
@@ -130,6 +133,7 @@ legion
 leviathan
 life
 light
+lord
 love
 luck
 lute
@@ -155,6 +159,7 @@ mysteries
 name
 nation
 night
+noble
 nobility
 note
 oath
@@ -167,14 +172,16 @@ order
 pantheon
 passages
 path{50%s}
+peace
 people
 pestilence
 plain{50%s}
-planispheres
 portal
 power{50%s}
+prince
 prophecies
 prophet{50%s}
+protection
 province
 purge
 pyramid
@@ -248,8 +255,10 @@ tomb{50%s}
 tome{50%s}
 treasure{50%s}
 tree{50%s}
+trust
 truth
 turmoil
+undead
 understanding
 vale
 vessel
@@ -264,6 +273,7 @@ war{50%s}
 waste{50%s}
 water{50%s}
 way
+wealth
 will
 wind
 wings

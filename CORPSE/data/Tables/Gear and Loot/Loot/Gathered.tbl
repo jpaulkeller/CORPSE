@@ -1,0 +1,41 @@
+You find a {50%{:descriptive} }{:NOUN}. {75%{:ACTION} to produce {:WHAT}. }{:EFFECT}
+
+: Descriptive
+{color:simple}
+{shape}
+{size}
+{texture}
+
+: Noun
+{50%{plant part} from a }{~{Botanical}}
+{50%{plant part} from a }{~{Plant}}
+{50%{plant part} from a }{~{Flora}}
+
+: Action
+It can be {reagent:prepared}{50% by {:who}}
+{:WHO} can {potion recipe:action liquid} it
+{:WHO} can {potion recipe:action solid} it
+{:WHO} can {potion recipe:mix} it
+
+: Who
+A botanist
+A ranger
+A woodsman
+A {pseudo class:mage}
+An alchemist
+An apothecary
+An herbalist
+Anyone
+
+: What
+a {apothecary:type}{33% which smells {smell}}
+
+: Effect
+Can be used as a{ | weak | strong }potion of {Potion:Effect}.
+If applied: {apothecary:topical}.
+If ingested: {apothecary:ingested}.
+If ingested: {EATING FUNGI}.
+If inhaled: {apothecary:inhaled}.
+Produces a gas. {GAS EFFECT}.
+{Sometimes used|Required} as a {component|reagent} for {Spell} spells.
+{Sometimes used|Required} as an ingredient for a {Potion:Name}.
