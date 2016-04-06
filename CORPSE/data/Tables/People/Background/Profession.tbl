@@ -122,6 +122,7 @@ boat-builder                                       craftsman
 boatman                                            sailor
 boatwright             {guild rank}                craftsman
 bodger                                             itinerant                      wood turners
+bodyguard                                          military
 body artist            {guild rank}                artist
 bodyservant                                        service            
 bonecarver                                         craftsman          
@@ -753,6 +754,7 @@ waiter                                             service
 waller                                             service                        one who builds walls
 warden                                             government/military            a regional guardian for a {feudal rank} 
 warlock                                            magical
+warrener                                           farmer                         rabbit catcher
 watchman               {military rank}             government                     {weapon}, {armor}
 water carrier                                      service           58/850     
 water-seller           {guild rank}                merchant

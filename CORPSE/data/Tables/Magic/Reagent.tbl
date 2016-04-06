@@ -12,6 +12,7 @@ powdered {metal}
 {gem} the size of a {size:relative:tiny}, {crushed|ground} 
 {herb flavor}{25% {plant part}}{10% {:acquired}}{10% {:prepared}}
 {herb}{25% {plant part}}{10% {:acquired}}{10% {:prepared}}
+{liquid}
 {mineral}
 {monster} {organ}{10% {:acquired}}
 {organic}
@@ -19,6 +20,7 @@ powdered {metal}
 {organ} from a {1%white }{fauna} {10% {:acquired}}{10% {:prepared}}
 {plant}{10% {:acquired}}{10% {:prepared}}
 {poison}
+{powder}
 {provisions}
 {undead} {dust|essence}
 {wood} tree {bark|leaf|root|sap|seed}{10% {:acquired}}
@@ -45,12 +47,21 @@ a {widow|widower}
 {a {number:ordinal}|an only} {son|daughter|child}
 
 : prepared
+boiled
+brewed
 burnt
+charred
+chilled
+crumbled
 crushed
+dissolved
 dried
+grated
 ground
+heated
+pulverized
 smoked
-steeped in boiling {water|wine|milk}
+steeped in boiling {water|wine|milk|vinegar}
 
 : Misc
 alum

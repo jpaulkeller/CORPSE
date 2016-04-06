@@ -30,35 +30,73 @@ root
 tea
 vinegar
 
-: type
-balm
-compress
-concentrate
-cream
-diffusion
-distillation
-dust
-extract
-gel
-infusion
-juice
-nectar
-oil
-ointment
-paste
-perfume
-powder
-poultice
-pressings
-salve
-spirits
-tincture
-unguent
-vapors
-{:mix}
+: type = liquid + cream + vapor + application
 
 : mix
 admixture
 blend
 concoction
 mixture
+
+: liquid
+concentrate
+diffusion
+distillation
+elixir
+infusion
+juice
+nectar
+philter
+potion
+serum
+tincture
+{:mix}
+
+: cream
+ashes
+balm
+cream
+extract
+gel
+lotion
+oil
+paste
+unguent
+{:application}
+
+: vapor
+dust
+fumes
+incense
+perfume
+powder
+smoke
+spirits
+vapor
+
+: application
+cerate
+compress
+ointment
+poultice
+salve
+
+: topical
+cure paralysis
+heal small wounds
+prevent frostbite
+soothe burns
+{:effect}
+
+: inhaled
+cure paralysis
+induce sleep
+{:effect}
+
+: ingested
+boost {strength|dexterity|constitution}
+{:effect}
+
+: effect
+allow breathing underwater
+increase resistance to {damage type} damage
