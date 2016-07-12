@@ -21,8 +21,7 @@ public final class Constants
    static final String EXTEND_CHAR   = "+";
    static final String FILTER_CHAR   = "#";
    static final String INCLUDE_CHAR  = "+";
-   static final String ONE_OF_CHAR_1 = "|";
-   static final String ONE_OF_CHAR_2 = "/";
+   static final String ONE_OF_CHAR   = "|";
    static final String SUBSET_CHAR   = ":";
    static final String EOF           = "===";
    static final String WEIGHT        = "x ";
@@ -58,9 +57,9 @@ public final class Constants
    static final Pattern CONDITION = Pattern.compile("\\{([^=]+)=([^?]+)[?]([^:]+)(?::([^:{}]+))?\\}");
 
    // {one|two|three|four} -- chooses one option, with equal chance for each (options may be empty)
-   static final String ONE_OF_CHAR = "[" + ONE_OF_CHAR_1 + ONE_OF_CHAR_2 + "]"; 
-   static final String NOT_ONE_OF = "[^" + ONE_OF_CHAR_1 + ONE_OF_CHAR_2 + "{]"; 
-   static final Pattern ONE_OF = Pattern.compile("\\{(" + NOT_ONE_OF + "+(" + ONE_OF_CHAR + NOT_ONE_OF + "*)+)\\}");
+   static final String ONE_OF = "[" + ONE_OF_CHAR + "]"; 
+   static final String NOT_ONE_OF = "[^" + ONE_OF_CHAR + "{]"; 
+   static final Pattern ONE_OF_PATTERN = Pattern.compile("\\{(" + NOT_ONE_OF + "+(" + ONE_OF + NOT_ONE_OF + "*)+)\\}");
    // TODO: weighted options: {#:opt1|#:opt2|...}
    // TODO: {common>uncommon>scarce>rare} weighted 4/3/2/1?
 
@@ -137,7 +136,10 @@ public final class Constants
       {
          Matcher m = VARIABLE.matcher(line);
          if (m.matches())
+         {
             VARIABLES.put(m.group(1).toUpperCase(), m.group(2));
+            System.out.println(m.group(1).toUpperCase() + " = " + m.group(2)); // TODO
+         }
       }
       System.out.println(VARIABLES.size() + " variables loaded.");
    }

@@ -11,10 +11,11 @@ public final class Quantity
 {
    interface Numeric
    {
-      String getRegex();
-      Matcher getMatcher();
       String getToken();
       void setToken(final String token);
+      boolean matches();
+      String getRegex();
+      Matcher getMatcher();
       int get();
       int getMin();
       int getMax();
@@ -35,12 +36,6 @@ public final class Quantity
       }
 
       @Override
-      public String getRegex()
-      {
-         return regex;
-      }
-
-      @Override
       public void setToken(final String token)
       {
          this.token = token;
@@ -51,6 +46,18 @@ public final class Quantity
       public String getToken()
       {
          return this.token;
+      }
+
+      @Override
+      public boolean matches()
+      {
+         return getMatcher().matches();
+      }
+
+      @Override
+      public String getRegex()
+      {
+         return regex;
       }
 
       @Override
@@ -201,7 +208,7 @@ public final class Quantity
       }
    }
 
-   private static final String OPERATOR = "([-+*x/^])";
+   private static final String OPERATOR = "([-+*/^])";
    private static final String FLOAT = "(\\d+(?:[.]\\d+)?)";
    
    static class Formula extends NumericAdapter // {#oper#}
@@ -302,16 +309,21 @@ public final class Quantity
       }
    }
 
-   // Many games use the concept of an open roll. This is a roll that has no upper limit.
+   // Many games use the concept of an exploding or open roll. This is a roll that has no upper limit.
    // They work by rolling a die, and if the maximum value for the die comes up, you add
    // that value to another roll of the same die. If the second roll comes up at the maximum,
    // you add and roll again, and so on.
 
-   static class Open extends NumericAdapter // {#t#}
+   static class Exploding extends NumericAdapter // {#x#}
    {
-      public Open()
+      public Exploding()
       {
-         super("\\{(\\d+)? *[tT] *(\\d+)}");
+         this("\\{(\\d+)? *[xX] *(\\d+)}");
+      }
+
+      public Exploding(final String regex)
+      {
+         super(regex);
       }
 
       @Override
@@ -325,7 +337,7 @@ public final class Quantity
          {
             int die = RandomEntry.get(sides) + 1;
             roll += die;
-            if (die != sides)
+            if (die != sides) // if not max, decrement roll count, else "explode" (roll again)
                count--;
          }
          return roll;
@@ -344,20 +356,67 @@ public final class Quantity
       {
          Matcher m = getMatcher();
          System.err.println("Warning: there is no maximum for open rolls like: " + m.group());
-
          int count = m.group(1) == null ? 1 : Integer.parseInt(m.group(1));
          int sides = Integer.parseInt(m.group(2));
          return count * sides; // return the max if this was a normal (not open) roll
       }
    }
 
-   // "Best of" rolls. For example, 3/4d6 would roll 4 dice, and total the best 3 rolls.
+   // Hackmaster uses "penetrating" dice.  Just like exploding dice, but the extra dice get -1.
 
-   static class Best extends NumericAdapter // {#/#d#}
+   static class Penetrating extends Exploding // {#p#}
    {
-      public Best()
+      public Penetrating()
+      {
+         super("\\{(\\d+)? *[pP] *(\\d+)}");
+      }
+
+      @Override
+      public int get()
+      {
+         Matcher m = getMatcher();
+         int roll = 0;
+         int count = m.group(1) == null ? 1 : Integer.parseInt(m.group(1));
+         int sides = Integer.parseInt(m.group(2));
+         int extra = 0;
+         for (int i = 0; i < count; i++)
+         {
+            int die = RandomEntry.get(sides) + 1;
+            roll += die;
+            if (die == sides) // penetrate (increment extra to roll again)
+               extra++;
+         }
+         while (extra > 0)
+         {
+            int die = RandomEntry.get(sides) + 1;
+            roll += die - 1;
+            if (die != sides)
+               extra--;
+         }
+         return roll;
+      }
+   }
+
+   // Keep "best of" rolls. For example, 3/4d6 would roll 4 dice, and total the best 3 rolls.
+
+   static class Keep extends NumericAdapter // {#/#d#}
+   {
+      public Keep()
       {
          super("\\{(\\d+)/(\\d+) *[dD] *(\\d+)}");
+      }
+
+      @Override // to differentiate with Drop
+      public boolean matches()
+      {
+         Matcher m = getMatcher();
+         if (m.matches())
+         {
+            int keep = Integer.parseInt(m.group(1));
+            int roll = Integer.parseInt(m.group(2));
+            return keep <= roll;
+         }
+         return false;
       }
 
       @Override
@@ -393,6 +452,67 @@ public final class Quantity
          int count = Integer.parseInt(m.group(1));
          int sides = Integer.parseInt(m.group(3));
          return count * sides;
+      }
+   }
+
+   // Drop worst rolls. For example, 4/1d6 would roll 4 dice, drop the worst one, and total the best 3 rolls.
+
+   static class Drop extends NumericAdapter // {#/#d#}
+   {
+      public Drop()
+      {
+         super("\\{(\\d+)/(\\d+) *[dD] *(\\d+)}");
+      }
+
+      @Override // to differentiate with Keep
+      public boolean matches()
+      {
+         Matcher m = getMatcher();
+         if (m.matches())
+         {
+            int roll = Integer.parseInt(m.group(1));
+            int drop = Integer.parseInt(m.group(2));
+            return roll > drop;
+         }
+         return false;
+      }
+
+      @Override
+      public int get()
+      {
+         Matcher m = getMatcher();
+         int roll = Integer.parseInt(m.group(1));
+         int drop = Integer.parseInt(m.group(2));
+         int sides = Integer.parseInt(m.group(3));
+
+         List<Integer> sorted = new ArrayList<Integer>();
+         for (int i = 0; i < roll; i++)
+            sorted.add(RandomEntry.get(sides) + 1);
+         Collections.sort(sorted);
+
+         int total = 0;
+         for (int i = drop; i < roll; i++)
+            total += sorted.get(i);
+         return total;
+      }
+
+      @Override
+      public int getMin()
+      {
+         Matcher m = getMatcher();
+         int roll = Integer.parseInt(m.group(1));
+         int drop = Integer.parseInt(m.group(2));
+         return roll - drop;// keep
+      }
+
+      @Override
+      public int getMax()
+      {
+         Matcher m = getMatcher();
+         int roll = Integer.parseInt(m.group(1));
+         int drop = Integer.parseInt(m.group(2));
+         int sides = Integer.parseInt(m.group(3));
+         return (roll - drop) * sides;
       }
    }
 
@@ -470,8 +590,10 @@ public final class Quantity
    private static final Numeric RANGE = new Range();
    private static final Numeric FORMULA = new Formula();
    private static final Numeric DICE = new Dice();
-   private static final Numeric OPEN = new Open();
-   private static final Numeric BEST = new Best();
+   private static final Numeric EXPLODING = new Exploding();
+   private static final Numeric PENETRATING = new Penetrating();
+   private static final Numeric KEEP = new Keep();
+   private static final Numeric DROP = new Drop();
    private static final Numeric NORM = new Norm();
    private static final Numeric CHARGES = new Charges();
 
@@ -485,8 +607,10 @@ public final class Quantity
       numerics.add(RANGE);
       numerics.add(FORMULA);
       numerics.add(DICE);
-      numerics.add(OPEN);
-      numerics.add(BEST);
+      numerics.add(EXPLODING);
+      numerics.add(PENETRATING);
+      numerics.add(KEEP);
+      numerics.add(DROP);
       numerics.add(NORM);
       numerics.add(CHARGES);
    }
@@ -509,7 +633,7 @@ public final class Quantity
       for (Numeric n : numerics)
       {
          n.setToken(token);
-         if (n.getMatcher().matches())
+         if (n.matches())
             return new Quantity(n);
       }
       return null;
@@ -523,7 +647,7 @@ public final class Quantity
       {
          numeric = n.getClass().newInstance();
          numeric.setToken(n.getToken());
-         numeric.getMatcher().matches();
+         numeric.matches();
       }
       catch (InstantiationException | IllegalAccessException x)
       {
@@ -610,17 +734,18 @@ public final class Quantity
       tokens.add("{5+10}"); // FORMULA
       tokens.add("{10-3}"); // FORMULA
       tokens.add("{3*2}"); // FORMULA
-      tokens.add("{3x2}"); // FORMULA
       tokens.add("{12/2}"); // FORMULA
       tokens.add("{5^2}"); // FORMULA (square)
       tokens.add("{100^0.5}"); // FORMULA (square root)
 
       tokens.add("{3d6}"); // DICE
       tokens.add("{d12}"); // DICE
-      tokens.add("{d4x5}"); // DICE
+      tokens.add("{d4*5}"); // DICE
       tokens.add("{2d4+3}"); // DICE
-      tokens.add("{3t6}"); // OPEN
-      tokens.add("{3/4d6}"); // BEST
+      tokens.add("{3x6}"); // EXPLODING/OPEN
+      tokens.add("{3p6}"); // PENTRATING
+      tokens.add("{3/4d6}"); // KEEP BEST
+      tokens.add("{4/2d6}"); // DROP WORST
       tokens.add("{5,10}"); // NORM
       tokens.add("{5,10+10}"); // NORM OFFSET
       tokens.add("{#/100}"); // CHARGES

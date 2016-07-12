@@ -21,7 +21,7 @@ public final class Macros
 
    private static final Stack<String> TOKEN_STACK = new Stack<>();
 
-   private static final String VAR = "([A-Z][A-Z0-9]*)";
+   private static final String VAR = "([A-Za-z][A-Za-z0-9]*)";
    private static final Pattern PRIMITIVE_ASSIGNMENT = Pattern.compile("\\{" + VAR + "=([^}]+)\\}");
    private static final Pattern TABLE_ASSIGNMENT = Pattern.compile("\\{" + VAR + ":=([^}]+)\\}");
    private static final Map<String, String> primitiveAssignments = new HashMap<>();
@@ -165,12 +165,14 @@ public final class Macros
       if (m.matches())
       {
          String text = m.group(1);
+         // System.out.println("RT: " + resolvedToken + "; TX: " + text); // TODO
          Pattern p = CORPSE.safeCompile("Invalid filter pattern in " + token, m.group(2));
          Matcher filterMatcher = p.matcher(text);
          if (filterMatcher.find())
          {
             String replacement = filterMatcher.groupCount() > 0 ? filterMatcher.group(1) : filterMatcher.group();
             resolvedToken = m.replaceFirst(Matcher.quoteReplacement(replacement));
+            // System.out.println(">>>> Replacement: " + replacement + "; RT: " + resolvedToken); // TODO
          }
          else
             resolvedToken = m.replaceFirst(Matcher.quoteReplacement(text));
@@ -382,7 +384,7 @@ public final class Macros
    private static String resolveOneOfs(final String token)
    {
       String resolved = token;
-      Matcher m = Constants.ONE_OF.matcher(resolved);
+      Matcher m = Constants.ONE_OF_PATTERN.matcher(resolved);
       if (m.matches())
       {
          // hack to allow alteration in regex filters ({Color#.*a|e.*#|Color#.*i|o.*#})
@@ -390,15 +392,11 @@ public final class Macros
          while (fm.find())
             resolved = fm.replaceAll("$1!!$2"); // replace "|" with "!!"
          
-         m = Constants.ONE_OF.matcher(resolved);
+         m = Constants.ONE_OF_PATTERN.matcher(resolved);
          if (m.matches()) // make sure there's still alteration to split
          {
             // add a terminator, in case the last token is empty
-            String[] tokens;
-            if (m.group(1).contains(Constants.ONE_OF_CHAR_1))
-               tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_1, Constants.ONE_OF_CHAR_1);
-            else
-               tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_2, Constants.ONE_OF_CHAR_2);
+            String[] tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR, Constants.ONE_OF_CHAR);
             int roll = RandomEntry.get(tokens.length);
             resolved = m.replaceFirst(Matcher.quoteReplacement(tokens[roll]));
          }
@@ -520,7 +518,12 @@ public final class Macros
                   depth++;
             if (depth > 1) // allow limited recursion (e.g., for Potion of Delusion)
             {
+               System.out.flush();
                System.err.println("Recursive token error: " + token);
+               System.err.println("Macros [" + token + "] T[" + xrefTbl + "] S[" + xrefSub + "] C[" + xrefCol + "] F[" + xrefFil + "]");
+               for (String s : TOKEN_STACK)
+                  System.err.println(" > " + s);
+               System.err.flush();
                String loop = getInvalidTableToken(xrefTbl, xrefSub, xrefCol, xrefFil);
                resolved = m.replaceFirst(Matcher.quoteReplacement(loop));
             }
@@ -530,6 +533,7 @@ public final class Macros
          {
             TOKEN_STACK.push(token);
 
+            for (String t : TOKEN_STACK) System.out.print(t + "> "); // TODO
             String xref = RandomEntry.get(xrefTbl, xrefSub, xrefCol, xrefFil);
             if (xref == null)
             {
@@ -587,11 +591,15 @@ public final class Macros
       {
          tableAssignments.put(m.group(1), new Assignment(m.group(2)));
          resolvedToken = m.replaceFirst("");
+         if (DEBUG)
+            System.out.println("  assignment: " + m.group(1) + " := [" + m.group(2) + "]");
       }
       else if ((m = PRIMITIVE_ASSIGNMENT.matcher(resolvedToken)).find()) // store the assigned value
       {
-         primitiveAssignments.put(m.group(1), m.group(2));
+         primitiveAssignments.put(m.group(1).toUpperCase(), m.group(2));
          resolvedToken = m.replaceFirst("");
+         if (DEBUG)
+            System.out.println("  assignment: " + m.group(1) + " = [" + m.group(2) + "]");
       }
       else // extract the desired value (or column) from the stored assignment
       {
@@ -605,6 +613,7 @@ public final class Macros
                Assignment a = entry.getValue();
                String value = m.groupCount() == 1 ? a.get(m.group(1)) : a.line;
                resolvedToken = m.replaceFirst(Matcher.quoteReplacement(value));
+               resolvedToken = matchCase(token, resolvedToken);
             }
          }
          
@@ -614,7 +623,10 @@ public final class Macros
             Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
             m = p.matcher(resolvedToken);
             if (m.find())
+            {
                resolvedToken = m.replaceFirst(Matcher.quoteReplacement(entry.getValue()));
+               resolvedToken = matchCase(token, resolvedToken);
+            }
          }
       }
       
@@ -629,14 +641,14 @@ public final class Macros
    private static final Pattern TO_CAPITALIZE = Pattern.compile("\\b([a-z])");
    private static final Pattern CONTRACTIONS = Pattern.compile("'D|'Ll|'Nt|'Re|'S|'T|'Ve");
    private static final Pattern NO_CAP = 
-            Pattern.compile(" A | An | And | At | By | For | From | In | Of | On | Or | The | To | With ");
+      Pattern.compile(" A | An | And | At | By | For | From | In | Of | On | Or | The | To | With ");
 
    private static String matchCase(final String token, final String resolved)
    {
       String caseMatched = resolved;
       if (resolved.isEmpty())
          ; // nothing to do
-      else if (resolved.toUpperCase().equals(resolved))
+      else if (resolved.length() > 1 && resolved.toUpperCase().equals(resolved))
          ; // do nothing; leave the value all uppercase (for acronyms)
       else if (token.toLowerCase().equals(token)) // all lower
          caseMatched = resolved.toLowerCase();
@@ -685,7 +697,8 @@ public final class Macros
       Macros.resolve(null, "2 * 5 = {=2*5}", null);
       Macros.resolve(null, "Alteration = {Alteration}", null);
       Macros.resolve(null, "Description: {Color}{20%?, with bits of {Reagent} floating in it}", null);
-      Macros.resolve(null, "Filter Alteration = {Spell#.*(walk|fall).*#}", null);
+      Macros.resolve(null, "Simple Alteration: {one|two}", null);
+      Macros.resolve(null, "Filter Alteration = {Spell#.*(?:walk|fall).*#}", null);
       Macros.resolve(null, "Filter and One-Of Alteration = {{Color#.*a|e.*#}|{Color#.*i|o.*#}}", null);
       Macros.resolve(null, "Filter Variable: {Color:Simple{!OneWord}}", null);
       Macros.resolve(null, "Filter: {Color:Simple#S.+#}", null);
@@ -717,14 +730,23 @@ public final class Macros
       Macros.resolve(null, "{Herb{!OneWord}}", null);
       Macros.resolve(null, "{Humanoid#T[A-Z]+$#}", null);
       Macros.resolve(null, "{Name}", null);
+      Macros.resolve(null, "{Spell#.*(?:walk|fall).*#}", null);
       Macros.resolve(null, "{Weapon{!OneWord}}", null);
       Macros.resolve(null, "{Weapon}", null);
+      Macros.resolve(null, "{contents}", null);
       
-      System.out.println("Aa: " + Macros.matchCase("Aa", "cap each word's first letter in the phrase")); 
+      System.out.println("Aa: " + Macros.matchCase("Aa", "cap each word's first letter in the phrase"));
       System.out.println("AA: " + Macros.matchCase("AA", "Leave ALL words in the phrase alone"));
       System.out.println("aa: " + Macros.matchCase("aa", "Lower Case ALL words in the phrase"));
       */
       
-      Macros.resolve(null, "{Spell#.*(walk|fall).*#}", null);
+      // Macros.resolve(null, "{one|two}", null);
+      // Macros.resolve(null, "{Spell#.*walk.*#}", null);
+      // Macros.resolve(null, "{Spell#.*(?:walk|fall).*#}", null);
+      // Macros.resolve(null, "{C={Generated Name:Consonant}}{v={generated name:vl}}{C}{v}", null);
+      
+      // Macros.resolve(null, "{VAR={Inn Name}}VAR = {VAR}; Var = {Var}; var = {var}", null);
+      // Macros.resolve(null, "{VAR:=Herb}VAR = {VAR.HERB}; Var = {Var.Herb}; var = {var.herb}", null);
+      Macros.resolve(null, "{DiffTest}/{DiffTest}/{DiffTest{!Different}}", null);
    }
 }
