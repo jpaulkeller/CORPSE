@@ -503,8 +503,8 @@ public class Table extends ArrayList<String>
       // new Table("COLOR", ".*(EE|RO).*");
       // test("COLOR#.*(EE|RO).*#", "filter with alteration");
       
-      // new Table("SPELL", ".*(WALK|FALL).*");
-      // test("SPELL#.*(WALK|FALL).*#", "filter with alteration");
+      // new Table("SPELL", ".*(?:WALK|FALL).*");
+      // test("SPELL#.*(?:WALK|FALL).*#", "filter with alteration");
       
       // new Table("WEAPON", "[A-Z]+");
       // test("Weapon#[A-Z]+#", "regex filter");

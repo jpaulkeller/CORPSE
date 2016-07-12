@@ -50,7 +50,6 @@ import corpse.ui.TreePanel;
 // consider variable for synonyms {~word}
 // 10x option for quick lists
 // lower-case subsets are internal
-// capitalize based on assignment token (allow lower-case variables?)
 // script recursion for cave generation
 // add Categories for each table (like Wiki) and provide a way to view by category
 // text which can control where to include it (prepend, append, etc) - Dressed.tbl
@@ -62,7 +61,6 @@ import corpse.ui.TreePanel;
 // subsets of subsets (Dragon:Age)
 // multi-line text fields - master/detail?
 // resolved variables like !OneWord shouldn't affect auto-casing
-// variables like {VAR=...} should affect auto-casing
 
 // TODO data changes
 // convert scripts to HTML (Tavern.cmd)

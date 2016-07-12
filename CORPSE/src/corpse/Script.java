@@ -106,6 +106,9 @@ public final class Script
       lines = loadScript(false);
       for (int i = 0, count = lines.size(); i < count; i++)
          i = processLine(i);
+      
+      System.out.println("\n" + buf + "\n"); // TODO
+      
       return buf.toString();
    }
    
@@ -163,7 +166,7 @@ public final class Script
       else if (line.startsWith(SCRIPT_COMMAND))
          return processScriptCommand(index);
       else
-         resolveLine(line, buf);
+         resolveLine(line);
       return index;
    }
 
@@ -226,7 +229,7 @@ public final class Script
       return index - 1;
    }
 
-   private void resolveLine(final String line, final StringBuilder buf)
+   private void resolveLine(final String line)
    {
       if (line.equals("")) // ignore blank lines
          return;

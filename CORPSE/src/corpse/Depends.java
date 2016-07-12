@@ -46,15 +46,14 @@ public final class Depends
 
       for (File f : dir.listFiles())
       {
-         if (f.getPath().toUpperCase().contains("SAMPLES"))
-            continue;
-         else if (f.isDirectory() && !f.getName().startsWith("."))
+         if (f.getPath().toUpperCase().contains("SAMPLES")) continue;
+         if (f.isDirectory() && !f.getName().startsWith("."))
             processDir(f);
          else if (f.isFile())
          {
             String suffix = FileUtils.getSuffix(f);
             if (suffix != null && suffix.toLowerCase().equals("tbl"))
-               // if (f.getName().toUpperCase().contains("ROD"))
+               // if (f.getName().toUpperCase().contains("QUEST")) // TODO
                extractVariables(f);
             // TODO: support .cmd files
          }
@@ -157,7 +156,8 @@ public final class Depends
          String tbl = m.group(1).toUpperCase();
          if (!MISSING_TABLES.contains(tbl) && !Table.TABLES.containsKey(tbl))
          {
-            if (tbl.length() > 3 && !Quantity.isNumeric("{" + tbl + "}")) // ignore short names (probably variables), and roll tokens 
+            if (tbl.length() > 3 && // ignore short names (probably variables)
+               !Quantity.isNumeric("{" + tbl + "}")) // ignore and roll tokens
                System.err.println("    Missing table: " + tbl);
             MISSING_TABLES.add(tbl);
          }
@@ -173,13 +173,9 @@ public final class Depends
                MISSING_COLUMNS.add(tbl + ":" + col);
          }
       }
-      else if (maybeNestedTables && (m = Constants.ONE_OF.matcher(token)).matches())
+      else if (maybeNestedTables && (m = Constants.ONE_OF_PATTERN.matcher(token)).matches())
       {
-         String[] tokens;
-         if (m.group(1).contains(Constants.ONE_OF_CHAR_1))
-            tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_1, Constants.ONE_OF_CHAR_1);
-         else
-            tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR_2, Constants.ONE_OF_CHAR_2);
+         String[] tokens = Token.tokenizeAllowEmpty(m.group(1) + Constants.ONE_OF_CHAR, Constants.ONE_OF_CHAR);
          for (String tkn : tokens)
             checkToken("{" + tkn + "}", false);
       }
@@ -196,7 +192,7 @@ public final class Depends
    
    private static final Pattern DEREF = 
       Pattern.compile("\\{[A-Z]+[.]" + Constants.COLUMN_NAME + "\\}", Pattern.CASE_INSENSITIVE);
-   private static final String NOT_ONE_OF = "[^" + Constants.ONE_OF_CHAR_1 + Constants.ONE_OF_CHAR_2 + "]"; 
+   private static final String NOT_ONE_OF = "[^" + Constants.ONE_OF_CHAR + "]"; 
    private static final Pattern ALTERATION = 
       Pattern.compile("\\{" + NOT_ONE_OF + "+(?:" + Constants.ONE_OF_CHAR + NOT_ONE_OF + "+)+\\}");
    
