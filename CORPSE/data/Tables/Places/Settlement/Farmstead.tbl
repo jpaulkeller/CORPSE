@@ -1,7 +1,7 @@
 / http://random-generator.com/index.php?title=FantasyFarmstead
 
 : Farmstead
-A {:type} where they {:product}. {:PLUS} there is {:some outbuildings}.
+A {:type} where they {:product}.{75% {:PLUS} there is {:some outbuildings}.}{33$  {Miscellaneous} can be seen nearby.}
 
 : Plus
 Besides a {:farmhouse type},
@@ -11,24 +11,24 @@ Near a {:farmhouse type}
 
 : Some Outbuildings
 {:outbuildings}
-{:outbuildings} and {:other buildings}
+{:outbuildings} and {:uncommon buildings}
 {:outbuildings} and {:outbuildings}
-{:outbuildings}, {:outbuildings} and {:other buildings}
+{:outbuildings}, {:outbuildings}, and {:uncommon buildings}
 {:outbuildings}, {:outbuildings}, and {:outbuildings}
-{:outbuildings}, {:outbuildings}, {:outbuildings} and {:other buildings}
+{:outbuildings}, {:outbuildings}, {:outbuildings} and {:uncommon buildings}
 
 : Type
-2x farm
-2x farmstead
-2x hamlet
-2x plantation
 borough
 family farm
+farm
 farm house
+farmstead
+hamlet
 homestead
 large estate
 manor house
 orchard
+plantation
 ranch
 steading
 village
@@ -90,7 +90,7 @@ wild rice
 2x honeybees
 2x pigs
 2x turkeys
-4x beef cows
+2x beef cows
 4x chickens
 4x dairy cows
 4x geese
@@ -112,7 +112,7 @@ rothe in caves
 salmon in ponds
 songbirds
 trout in ponds
-{fur and pelt:exotic.animal} for fur
+{fur and pelt:exotic.animal} for fur/leather
 
 : Farmhouse Type
 collection of peasant houses
@@ -122,18 +122,27 @@ small stone farmhouse
 two-story manor house
 wattle-and-daub farmhouse with thatched roof
 
+: Miscellaneous
+a paddocks
+a potter’s kiln
+a weaver’s loom
+a well
+barrels
+some cages
+some food troughs
+some pens
+some water troughs
+
 : Outbuildings
-3x kitchen
-3x outhouse
-3x {:other buildings}
 barn
 cheese-making cottage
 curing shed
 granary
 gristmill
+kitchen
 livestock enclosure
 mill
-potter’s kiln
+outhouse
 root cellar
 servant’s house
 small chicken coop
@@ -142,23 +151,41 @@ smokehouse
 stable
 storage shed
 tool shed
-weaver’s loom
 woodshed
 
-: Other Buildings
-2x chapel for worshipping mainly {Divine Name}
-2x guesthouse
-2x smithy
+: Uncommon Buildings
 ancestral burial mound
 animal fighting pit
 cemetery
+chapel for worshipping{50% {Divine Name}}
 druidic stone circle
 extensive vegetable garden
 fishing pond
+guesthouse
 large refuse pile
 large rune-carved menhir
 shrine to {Divine Name}
+smithy
 statue of {33%{Rank} }{Name}{40% the {Evocative Title}}
 tinker’s cottage
 well-manicured ornamental garden
 well-stocked herb garden
+
+: Flavor
+A few stray {dogs|cats} can be found wandering around.
+Signs of rats can be seen.
+There are {quantity:some} saddles, bridles, and other tack hanging nearby. 
+
+===
+
+Defenses - walls / wooden fences / palisades (think thats right word). spiked poles in ditches. Town on hilltop for defence. Sleepy guard possibly with dog.
+Punishment : stocks, pit in ground, hanging cage (for town drunks / criminals / bandits etc).
+Buildings : tavern / inn, homes, sheds, barns, blacksmith, small temple or shrine, stables, animal paddocks / pens, well ?, jail.
+a baker, a nearby mill, maybe a butcher/fishmonger, depending on location.
+~15 homes spread around a crossroads or small river crossing.
+Tavern/Inn, blacksmith, small general store
+possibly a small market once a week or month.
+Mill powered by the river? If there's a mill, then maybe grain storage and baker.
+Forester/gamekeeper hut, charcoal burner hut.
+Tanner, chandler, communal building for events and activities such as threshing, quilting, dancing
+Cooperage

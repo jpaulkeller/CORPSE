@@ -1,106 +1,156 @@
 / http://random-generator.com/index.php?title=Alchemical_Recipes
 
-: Potion Recipe
+: Liquid
+{liquid}
 
-: Step
-dissolve {reagent} in water 
-boil the solution
-add {liquid}
-add a solution of {:powder} and {liquid}
-wash this precipitate thoroughly with an {:acid} solution, and dry in a warm place
-dissolve in a small quantity of hot {liquid}, {8} parts of {:ingredients}
-boil {10} parts of {:ingredients} with {10} parts of {:ingredients}
-mix by degrees this hot solution with the first
-agitating continually
-form a precipitate of a dirty {color}
-add to it about {6} parts of {:acid}
-dissolve the {:powder}, cold, in {:acid}
-produce a precipitation of it by means of {:powder}
-wash the precipitate and spread it out on a piece of linen cloth to drain
-If a portion of this precipitate, which is {color}, be placed on a grinding-stone
-and if a little {:powder} be added
-Mix {6} parts of {:acid} and 1 part of {:ingredients}
+: Solid
+{fauna} {organ}
+{herb}
+{organic}
+{powder}
+{spice}
+
+: Ingredient
+{:liquid}
+{:solid}
+{reagent}
+{spell component}
+
+: Amount Liquid
+1/{2-4} {container:liquid} of {:liquid}
+a little {:liquid}
+{:liquid}
+{:qty} drops of {:liquid}
+{:qty} fingers of {:liquid}
+{:qty} parts of {:liquid}
+{:qty} spoons of {:liquid}
+{:qty} {container:liquid}s of {:liquid}
+{:qty} {ounces|pints|quarts} of {:liquid}
+{:qty} {{generated name}+} of {:liquid}
+
+: Amount Solid
+a little {:solid}
+a pinch of {:solid}
+enough {:solid} to saturate
+{:solid}
+{:qty} handfuls of {:solid}
+{:qty} parts of {:solid}
+{:qty} scoops of {:solid}
+{:qty} {{generated name}+} of {:solid}
+
+: Amount Any
+a little {:ingredient}
+{:ingredient}
+{:qty} parts of {:ingredient}
+{:qty} scoops of {:ingredient}
+{:qty} {{generated name}+} of {:ingredient}
+
+: Qty
+{10%{at {least|most}|no {less|more} than|precisely|approximately} }{2d{10}}
+
+: Part Liquid
+condensation
+liquid
+mixture
+smoke
+solution
+{apothecary:liquid}
+{apothecary:mix}
+
+: Part Solid
+calcination
+distillate
+precipitate
+residue
+{apothecary:cream}
+
+: Action Liquid
+boil
+brew
+chill
+churn
+decant
 heat
-The precipitate is collected and washed
-It must be cured by leaving it in sunlight
-Put into a crucible surrounded by burning coals
-cover it closely
-leave the crucible over the fire
-Separate the {color} parts of {:powder}
-reduce them, on a piece of porphyry, to an impalpable powder
-besprinkle with {liquid}
-make a paste with equal parts of {:ingredients}, {:ingredients}, and {:ingredients}
-add to this paste 1/2 oz. of {liquid}
-take {10} parts of this mixture and {4} of [HardIngredients]
-ground with oil on a piece of porphyry
-knead the mixture thoroughly in warm {liquid}
-decant the liquor
-Pulverize these ingredients
-mixed them thoroughly
-put them into a capsule or crucible of earth
-place over it a covering of the same substance
-Expose it at first to a gentle heat, which must be gradually increased
-The result of this calcination is then ground in {liquid} on a porphyry slab with an ivory spatula ( as iron alters the material)
-The paste is then dried and preserved for use
-decant the liquid
+stir
+shake
+simmer
 
-The resulting salt when thrown into {liquid} is decomposed.
-This is a remarkably fine color of {color}, solid and brilliant even by artificial light.
-when pounded and ground on porphyry with {liquid}, is washed on a filter with warm {liquid} and then dried.
-Before it is used it must be dissolved again into {liquid}.
-, mix the whole warm, and suffer it to digest at the end of which , .
-. The oxidation arising from this process requires, at least, {2d6} {duration:short}s’ exposure to heat before it is completed. 
+: Action Solid
+burn
+char
+crumble
+crush
+dissolve
+grate
+grind
+heat
+knead
+melt
+mill
+pulverize
+wash
+
+: Mix
+combine
+blend
+layer
+merge
+mix
+steep
+
+: Step First
+create a solution of {:solid} and {20%{chilled|heated} }{:liquid}
+{:action liquid} {:amount liquid}
+{:mix} {:amount solid} in {:amount liquid}
+
+: Step Add
+add {:amount any}{50% {:duration}}
+{50%{:how} }{:action liquid} the {:part liquid}{20% {:how phrase}}{50% {:duration}}
+{50%{:how} }{:action solid} the {:part solid}{20% {:how phrase}}{50% {:duration}}
+
+: Step Cook
+cover tightly{75% {:duration}}
+leave the crucible over the fire{50% {:duration}}
+put into a crucible surrounded by burning coals{50% {:duration}}
+stir with a {bone|ivory|{wood} wood|{metal}} spatula{20% {:how phrase}}{50% {:duration}}
+
+: Step Last
+bottle the {:part liquid}
+collect and wash the {:part solid}
+spread on {fabric} until dry
+store
+
+: How
+carefully
+cautiously
+gently
+gradually
+quickly
+slowly
+thoroughly
+
+: How Phrase
+agitating continually
+avoiding contact with {eyes|fabric|skin}
+without exposing to an open flame
+without jostling
+{:how} increasing the temperature
+{50%without }exposing to sunlight
 
 : Duration
+as long as any {:part solid} is produced
 for {25%{at least|no longer than} }{d4*5} {duration:broad}s
 for {25%{precisely|approximately} }{2d6} {duration:short}s
+for {2d6} {duration:short}s
+until no more smoke is seen to pass through the joining of the cover
+until the {:part solid} crystallizes
 until the {:part} is {80%{partly|mostly|completely|no longer} }{color}
 until the {:part} {glow:glows}
 until the {bubbling|steaming|smoking|effervescence} has entirely ceased
+until the {color} part separates from it
 until the {noise} diminishes
 until you detect a {smell:type}
+until {color} fumes cease to come off
 until {cool|warm|too {hot|cold} to touch}
 until {liquid feature}
 until {viscosity}
-
-till the {color} part separates from it
-until {color} fumes cease to come off
-as long as any precipitate is produced
-enough {liquid} to render the solution clear
-until it throws out no more {:acid}
-{2d6} {duration:short}s
-When no more smoke is seen to pass through the joining of the cover
-
-: When
-immediately
-quickly
-slowly
-
-: Part
-condensation
-distillate
-liquid
-mixture
-precipitate
-residue
-smoke
-solution
-
-: Effect
-desiccation will take place in about {2d6} {duration:short}s
-There will then be found in it a hard carbonaceous matter
-
-in a few hours there deposes spontaneously at the bottom of the liquor entirely discolored,
-a powder of a contexture slightly crystalline, and of a very beautiful {color}
-afterwards the floating liquor is separated.
-Gas and water are given off
-
-: What
-fragments of {:ingredients}
-with an equal amount of [MonsterParts.DryGoods]
-{12} oz. of {:ingredients}
-
-: Ingredients
-{liquid}
-{reagent}
-{spell component}

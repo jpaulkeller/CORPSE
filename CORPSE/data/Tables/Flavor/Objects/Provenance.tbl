@@ -13,15 +13,15 @@ unknown
 used in a crime
 
 : History
-A careful examination reveals the initials of {:Fantasy Male Military Hero.main} This weapon may once have been his.
-A scrap of parchment tells the story of the original owner: "{:Delver Fate.story}"
-Although how it came to be here is unclear, this weapon has a history of adventuring. {:Delver Fate.story} In all likelihood, this was the weapon associated with that incident.
-Several reproductions have been made in imitation of this weapon, because it was made famous by {:Fantasy Male Military Hero.main}
-Something is known about the career of this weapon's former owner - {:Delver Fate.story}
-The weapon bears a small inscription stating that it was made for {:Fantasy Male Military Hero.main}
-The weapon matches the description of a weapon that once belonged to {:Fantasy Male Military Hero.main}
-The weapon was once owned by {:Fantasy Male Military Hero.main}
-This is the weapon with which {Hero Name} slew {:Slain}.
-This may well have been the legendary weapon of {:Fantasy Male Military Hero.main}
-This weapon was passed from father to son until it was given to {:Fantasy Male Military Hero.main} The whereabouts of this weapon had been unknown since his death.
+A careful examination reveals the initials of {Hero:Name}; this weapon may once have been his.
+A scrap of parchment tells the story of the original owner: "{CRIMINAL HISTORY}"
+Although how it came to be here is unclear, this weapon has a history of adventuring. {RUMOR} In all likelihood, this was the weapon associated with that incident.
+Several reproductions have been made in imitation of this weapon, because it was made famous by {Hero:Name}.
+Something is known about the career of this weapon's former owner: {CRIMINAL HISTORY}
+The weapon bears a small inscription stating that it was made for {Hero:Name}.
+The weapon matches the description of a weapon that once belonged to {Hero:Name}.
+The weapon was once owned by {Hero:Name}.
+This is the weapon with which {Hero:Name} slew {ANTAGONIST}.
+This may well have been the legendary weapon of {Hero:Name}.
+This weapon was passed from father to son until it was given to {Hero:Name}. The whereabouts of this weapon had been unknown since his death.
 

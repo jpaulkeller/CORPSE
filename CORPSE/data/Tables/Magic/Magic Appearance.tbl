@@ -1,0 +1,35 @@
+: magic appearance
+{:what} {glow:when}
+
+: weapon
+{:what} {:when weapon}
+
+: what
+drips {:drips}
+emits {:emission}
+{glow:glows}
+
+: emission
+a sound like {33%{sound:volume} }{sound:noise}
+a {smell:type}
+{:visual}
+
+: visual
+{50%{color:standard} }flames
+{50%{color:standard} }lightning
+{50%{color:standard} }smoke
+{50%{color:standard} }sparks
+
+: drips
+blood
+salt water
+{liquid}
+
+: when weapon
+when activated
+when held
+when it draws blood
+when {50%un}sheathed
+when waved
+when wielded
+{glow:when}

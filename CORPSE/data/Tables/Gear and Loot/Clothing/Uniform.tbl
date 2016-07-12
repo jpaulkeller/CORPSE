@@ -7,8 +7,8 @@ the {:military uniform specific}
 
 : servant uniform
 {profession:service}'s livery uniform consisting of {fabric:exotic} stockings, fine {color:simple} wool breeches, and an embroidered jacket of {fabric:exotic} with shiny {metal:common} buttons and embroidery.
-{profession:service}'s uniform consisting of knee-high {leather} boots, a {:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
-{profession:service}'s uniform consisting of knee-high {leather} boots, a {:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
+{profession:service}'s uniform consisting of knee-high {leather} boots, a {outfit:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
+{profession:service}'s uniform consisting of knee-high {leather} boots, a {outfit:lower}, and an embroidered doublet of {fabric:exotic} and {fabric:exotic} with shiny {metal:common} buttons.
 
 : military uniform generic
 foot soldier’s dress uniform consisting of {leather} boots, {color:simple} canvas breeches lined with {fabric:exotic},{20% {:military accessories}} and a jacket of {color:simple} wool with {color:metallic} embroidery and buttons of shiny {metal:common}. insignia denote the rank of {military rank}.

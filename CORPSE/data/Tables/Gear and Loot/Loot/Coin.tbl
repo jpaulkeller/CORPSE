@@ -1,21 +1,28 @@
 : Coin
-{75%{:origin} }coin made of {:material}, worth about {2d10}sp; the face {:design}, the obverse {:design}{10%; {:special}}
+{25%{:age} }{75%{:origin} }coin made of {:material}, worth about {2d10}sp; the face {:design}, the obverse {:design}{10%; {:special}}
 
 : Coins
-{75%{:origin} }coins made of {:material}, worth about {2d10}sp each; the face {:design}, the obverse {:design}
+{25%{:age} }{75%{:origin} }coins made of {:material}, worth about {2d10}sp each; the face {:design}, the obverse {:design}
 
 : Simple
-{:material} {:origin} coin
+{25%{:condition} }{25%{:age} }{:material} {50%{:origin} }coin
+
+: Age
+ancient
+antiquated
+freshly-minted
+modern
+old
+outdated
 
 : Origin
-ancient
 dwarven
 elvish
 foreign
 gnomish
 goblin
 orcish
-probably a {humanoid:uncommon}
+{humanoid:uncommon}
 
 : Material
 17x {metal:precious}
@@ -64,3 +71,16 @@ it's quite tarnished
 it's worn nearly smooth
 the edges is notched {number:plural} times
 the lip is grooved like a poker chip
+
+: Storage 
+in a heap
+in a {container:medium loot}
+in neat stacks
+in piles
+scattered about
+
+: Condition
+5x {condition}
+uncirculated
+mint
+proof

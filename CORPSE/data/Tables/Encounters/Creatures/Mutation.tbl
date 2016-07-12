@@ -1,23 +1,136 @@
 / http://www.random-generator.com/index.php?title=Mutation
+/ http://www.bogleech.com/mutants.html
 
-: Mutation
-{:other}
-{:physical}
+: Mutation = Eyes + Mouth + Head + Body + Skin + Limbs + Extremities + Oddities
 
-: Physical
-1-10 extra eyes 
-1-20 tentacles
+: Mutant
+{:mutation}{50%; {:mutation}{50%; {:mutation}{50%; {:mutation}}}}
+
+: Eyes
+all eyes grouped into same socket, other socket(s) empty or absent 
+beady and ratlike 
+big, globular, shiny black or very dark eyes 
+completely empty sockets 
+each eye a large raspberry-like clump of smaller eyeballs 
+eyes are anywhere but on head 
+fishlike saucer-eyes, lidless 
+fleshy lumps, or eyeballs covered over in skin 
+gigantic, bulging veined eyeballs 
+large humanlike eyes open and close vertically 
+long, prehensile, snail-like stalks 
+no pupils or corneas 
+no trace of eyes or even sockets 
+protruding or dangling slightly on their nerve cords 
+protrusive lightbulb-shaped eyeballs 
+transparent goggle-like bubbles over eyes
+two to three normal eyeballs crammed into each socket
+{12} eyes
+{color:special}
+
+: Mouth 
+circular ring of teeth or lamprey-like sucker 
+humongous {over|under}bite 
+lipless, exposed teeth and gums 
+long, thin, jutting teeth like an anglerfish 
+lower jaw splits into two separate mandibles 
+mouth is anywhere but on head
+on the end of a fleshy trunk or proboscis 
+vertically aligned lips and teeth 
+very wide toothy maw opening ear to ear 
+wide, toothless frog-like mouth 
+
+: Head 
+absent or featureless, facial features may be anywhere else 
+back of cranium elongated, swept back like an “alien” 
+bony, ridged or plated forehead 
+giant, external brain
+globular, lumpy asymmetrical shape 
+head switched with an arm or leg (may have to “crab walk”) 
+huge, bulbous cranium or protruding brow 
+long, stretched face or flattened discoid head 
+neckless, toad-like 
+upside-down, sideways or on backwards 
+
+: Body 
+asymmetrical, globular and lumpy 
+cape or robe-like secondary outgrowth of extra skin 
+completely boneless (including limbs), like an octopus 
+crablike or turtle-like carapace of external bone 
+elongated, bony torso 
+hunchback
+sluglike or wormlike flexible trunk, optionally legless and/or armless 
+unusual size; muscular hulk, bloated fatso, little tiny body, etc
+
+: Skin
+bulging, colorful, throbbing veins 
+course, sparse insect-like bristles, may be pencil-thick 
+dripping mucus over whole body or oozing from large pores 
+extra, external bones, face may even be skull-like 
+extremely taught against skeleton and/or organs 
+finely wrinkled, like a naked mole rat 
+finger-like or pointed spike-like warts 
+gnarled and knotted like an old tree 
+internal anatomy visible through transparent flesh
+irregularly lumpy 
+loose, drooping folds like one of those weirdo baggy dogs 
+mushy, meaty and ragged 
+octopus-like suckers or short tubes growing from skin
+scabrous and scarred
+thick, ape-like hair over most of body or large patches 
+thick, hard and cracked, like a crocodile
+toad-like warts, great in number 
+transparent boils or blisters 
+twitching worm-like or root-like warts 
+“melted” appearance with dangling “drips” of skin 
+
+: Limbs 
+abnormally thick and huge, whether muscular or very, very fat 
+absent, or “trapped” under skin 
+boneless, kind of tentacle-like 
+branch-like, ending in many hands/feet or twiggy tendrils 
+floppy, flipper-like 
+joined in a membranous webbing, like a flying squirrel 
+knobbly, many-jointed 
+thin and spindly, may be highly elongated 
+tiny and vestigial, like an infant limb or creepy naked chicken wing 
+{12} limbs
+
+: Extremities 
+boneless tendril-like digits
+digits fused into mitten-like “lobster claws” 
+excessive number of digits 
+large, blunt mole-like claws 
+large, gnarled, generally misshapen 
+located somewhere other than end of limb 
+long, thin digits like spider legs 
+single large bony claw, spike or hook instead of hand 
+thin and knobbly like bird talons 
+webbed, froglike or fused into one suction pad 
+
+: Oddities 
 acid excretion
 acidic drool
-additional eye
-all teeth are fangs
-
-: Other
 aflame
-agility
+all teeth are fangs
 always levitates
-albino
-alcoholism
+beachball-sized monstrous eyeball anywhere on head or body 
+entire form a large, amorphous blob of meat and scattered human features 
+entire form is a small, pulpy red teratoma 
+entire form just a hand, must feed intravenously 
+entire right or left side appears like normal, perfect human, straight down middle 
+extra internal organs harmlessly dangling outside body 
+extremely long, dangling tongue(s), doesn’t fit back in mouth 
+fetus-like parasite twin, may have own personality or be mutant’s true self 
+fleshy “hose” or hoses extend from one part of body to another 
+functional tentacle of extra flesh 
+giant head and nothing else 
+immobile fetal form with ossified stony flesh 
+immobile mummy-like body in a fleshy cocoon
+large holes in body, or whole chunks of form appear missing/caved in 
+nothing but a large eyeball with a few tendrils of flesh 
+resembles a fleshy, walking “tree” of humanoid features 
+spine extends into long tail, with or without flesh 
+squirming, gelatinous embryonic form
 
 ===
 

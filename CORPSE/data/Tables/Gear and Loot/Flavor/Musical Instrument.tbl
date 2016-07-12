@@ -2,12 +2,7 @@
 
 .Musical Instrument, Cost, Weight
 
-: Musical Instrument
-{:brass}
-{:percussion} 
-{:string} 
-{:woodwind} 
-{:other}
+: Musical Instrument = Brass + Percussion + String + Woodwind + Other
 
 : Detailed
 3x {quality} {:brass} made of {metal}
@@ -41,10 +36,7 @@ trumpet
 water-pipe
 whistle-pipe
 
-: Percussion
-{:drum}
-{:small drum}
-{:cymbals}
+: Percussion = Drum + Small Drum + Cymbals
  
 : Drum
 bass drum

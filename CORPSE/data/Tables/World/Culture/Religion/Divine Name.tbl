@@ -2,15 +2,16 @@
 {Name}, {:Role} of {Religion:Domain}
 
 : Role
-{god|goddess}
+guardian
+herald
+judge
+messenger
+patron
+patron saint
+protector
 {father|mother}
+{god|goddess}
 {king|queen}
 {lord|lady}
 {master|mistress}
 {prince|princess}
-patron
-patron saint
-protector
-judge
-herald
-messenger

@@ -1,4 +1,4 @@
-{33%{Feudal Rank:Noble} }{Name} the {50%{{Trait|Evocative Adj}} }{Pseudo Class}
-{75%{Feudal Rank:Noble} }{Name} the {Title:{80%?Good:Bad}}
-{75%{Feudal Rank:Noble} }{Name} the {Trait:{80%?Good:Bad}}
-{Feudal Rank:Noble} {Name}{25% {NUMBER:ROMAN}} 
+{33%{Feudal Rank:Noble} }{Generated Name} the {50%{{Trait|Evocative Adj}} }{Pseudo Class}
+{75%{Feudal Rank:Noble} }{Generated Name} the {Title:{80%?Good:Bad}}
+{75%{Feudal Rank:Noble} }{Generated Name} the {Trait:{80%?Good:Bad}}
+{Feudal Rank:Noble} {Generated Name}{25% {NUMBER:ROMAN}} 

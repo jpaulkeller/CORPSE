@@ -11,7 +11,7 @@
 / - magically animated golems or elementals
 
 : Monstrosity
-{:beast}
+{beast}
 {:mutant}
 {:alien}
 {:hybrid}
@@ -27,7 +27,7 @@
 
 : Alien
 tentacled alien {:origin}
-{elemental} elemental
+{element} elemental
 {demon}
 
 : Hybrid

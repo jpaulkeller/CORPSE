@@ -51,6 +51,24 @@ recruit
 rescue
 trick
 
+: Person Action
+bleeding
+bowing
+climbing
+dancing
+falling
+fighting
+hiding
+hunting
+running
+singing
+sleeping
+staggering
+swimming
+walking
+watching
+waving
+
 : Misc
 build
 coordinate

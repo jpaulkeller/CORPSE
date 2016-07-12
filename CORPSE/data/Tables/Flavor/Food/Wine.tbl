@@ -1,0 +1,143 @@
+: Wine
+{:color} wine
+{:type}
+{:complex}
+
+: Color
+red
+white
+
+: Type
+cabernet sauvignon
+chardonnay
+malbec
+merlot
+meritage
+petit sirah
+pinot gris
+pinot noir
+riesling
+sangiovese
+sauvignon blanc
+semillon
+syrah
+tempranillo
+viognier
+zinfandel
+
+: Complex
+{75%{:adjective} }{{:color} wine|{:type}}{75% with {:amount} of {25%{:adjective} }{:flavor}} 
+
+: Amount
+a trace
+an aroma
+notes
+hints
+
+: Adjective
+austere
+bitter
+buttery
+clean
+complex
+creamy
+crisp
+delicate
+dense
+dry
+earthy
+elegant
+firm
+flamboyant
+flat
+fresh
+grassy
+harsh
+hollow
+jammy
+juicy
+lean
+mellow
+musky
+nutty
+oily
+opulent
+polished
+sharp
+refined
+rich
+ripe
+round
+smoky
+silky
+soft
+sour
+steely
+structured
+supple
+sweet
+tart
+thin
+tight
+toasty
+unctuous
+velvety
+voluptuous
+zesty
+
+: Flavor
+apple
+asparagus
+banana
+beet
+black cherry
+black currant
+black pepper
+blackberry
+blueberry
+boysenberry
+butterscotch
+caramel
+cedar
+cherry
+chocolate
+cinnamon
+clove
+coconut
+cranberry
+dill
+ginger
+grapefruit
+grass
+green pepper
+kiwi
+leather
+lemon
+lime
+meat
+melon
+mint
+mushroom
+nectarine
+oak
+orange
+passion fruit
+peach
+pear
+pepper
+pineapple
+plum
+raspberry
+rhubarb
+rose
+saffron
+sage
+sour cherry
+spices
+tobacco
+tropical fruit
+vanilla
+violet
+{fruit}
+{herb}
+{spice}

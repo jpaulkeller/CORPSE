@@ -1,0 +1,44 @@
+: Wose Name
+{P={:Part}}{P}-{:center}-{{P|:Part}}
+{:COMMON}
+
+: Common
+{C={:Common Part}}{C}-{:common center}-{{C|:Common Part}}
+
+: Part
+{generated name:vowel}{generated name:ending}
+{generated name:beginning}{generated name:vl}
+{generated name:beginning}{generated name:vl}{generated name:simple consonant}
+{generated name:beginning}{generated name:dipthong}
+
+: Center
+{generated name:simple consonant}{generated name:vl}{generated name:simple consonant}{generated name:vl}
+
+: Common Part
+Bhai
+Bham
+Bhuta
+Dhu
+Dhun
+Dhur
+Ekh
+Ghan
+Ghar
+Ghob
+Ghur
+Gno
+Khur
+Krug
+Lhos
+Maka
+Mhen
+Ok
+Skal
+Sol
+Weg
+Wot
+
+: Common Center
+buri
+pulo
+weni

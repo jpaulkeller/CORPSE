@@ -23,6 +23,7 @@ population gain/loss
 resource gain/loss
 sandstorm
 sinkhole
+stampede
 storm
 thunderstorm
 tidal wave
@@ -33,6 +34,7 @@ typhoon
 volcanic eruption
 waterspout
 whirlpool
+{cataclysm}
 
 : Man-made
 assassination ({local|regional|factional|national} {:vip})
@@ -42,7 +44,6 @@ birth
 blast
 border skirmish
 cultural discovery
-{plague|epidemic|pandemic} ({Disease})
 fanatic cult
 important visitor ({regional|factional|national} {:vip})
 insurrection
@@ -58,8 +59,14 @@ spy ring
 trade route {gain|loss}
 traitor
 wandering monsters
+{plague|epidemic|pandemic} ({Disease})
 
 : Supernatural
+geothermal eruptions
+insect plague
+mana storm
+rending
+rift
 teleportation mishap
 
 : VIP
@@ -97,7 +104,7 @@ The Zombie Strain - A necromancer made a big big big mistake, creating a highly 
 Three Hour Tour - The PCs, whilst traveling a short distance by ship, wreck and are marooned on a deserted island. Rather than being in the middle of the ocean, they are about 5 or 6 miles from the coast and in a few days or weeks they will be rescued if they haven’t found a way to get off of the island themselves.
 Time Runs Out - In the distance, a mountain bulges and explodes in silent fury, creating a pillar of fire and ash that blots out the sun. A moment later, the pressure wave arrives, shaking trees and making ears pop. The volcano, long thought dead, has blown itself apart, creating a cloud of superheated ash, glass and poisonous vapors, rivers of water ash slurry called lahars, and ashfall measured in feet. In a few years, local plant harvests will be double the yield, but until rain comes, it is a no-man’s land of fluffy ash and death.
 Twister - The bad storm takes a really bad twist, winds kick up to incredible speed, ripping thatch houses apart and flining debris around pell-mell. Then, the rain, hail, wind and lightning all stop. A muted roar announces the presence of the tornado as it marches relentlessly across the earth for a few miles of sheer destruction. Well mage…can you counterspell that thing?
-Village of the Werewolves- The PCs are besieged by wolves under the light of the full moon, the next {settlement:common} they come too some days later is wary of the PCs and seems to know them despite it being their first trip to said {settlement:common}. The entire area is afflicted with lycanthropy and several villagers were slain by the PCs or severly injured by them. Attempts to ‘cure’ them will be met with derision and potential violence.
+Village of the Werewolves- The PCs are besieged by wolves under the light of the full moon, the next {settlement:common} they come to some days later is wary of the PCs and seems to know them despite it being their first trip to that {!}. The entire area is afflicted with lycanthropy and several villagers were slain by the PCs or severly injured by them. Attempts to ‘cure’ them will be met with derision and potential violence.
 What’s that Smell - more fun with fire, instead of a forest or palace, the city itself has been caught up in a firestorm. Leaping from roof to roof, the flames will devour half of the city by morning, if only the PCs can make it to the river before the heat and smoke overcome them.
 Who turned off the lights? - One morning the sun doesn't rise. No reason is to be given, other than a faint smile or a fiendish chuckle.
 Wyrmfang Spill - A wagon ahead of the PCs has an accident (breaks a wheel, horses spook, orcs attack and kill the driver) and it’s contents are spilled. a strange green cloud spills from the damaged wagon, plants quickly wither and die and animals in the area of the cloud sicken and also die in a few agonizing minutes.

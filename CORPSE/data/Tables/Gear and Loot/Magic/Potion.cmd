@@ -7,11 +7,14 @@
 / Ask the user for a potion, using the random one as a default.
 / Assign the entered potion to "POT" for re-use later.
 
-{POT={Potion Type?{Potion:Type}}}
+{POT={Potion Type?{Potion:Name}}}
 
-<h1>POTION: {POT}</h1>
+<h1>{POT}</h1>
 <hr>
-<p>Container: {container:potions}, holding {2d4} doses
+<h2>Container</h2>
+<ul>
+  <li>{container:potions}, holding {2d4} doses
+</ul>
  
 / Randomize using the potion as the seed, for consistent results for color, smell, etc:
 # {POT}
@@ -32,11 +35,17 @@
  <li>Side Effects: {33%?{mild|severe} {symptom} which lasts for {2d3} {duration:moderate}s:none}
 </ul>
 
-<h2>Ingredients</h2>
+<h2>Recipe</h2>
 <ul>
-!loop {3,7}
- <li>{reagent}
+ <li>{potion recipe:step first}
+!loop {2}
+ <li>{potion recipe:step add}
 !loop end
+ <li>{potion recipe:step cook}
+!loop {2}
+ <li>{potion recipe:step add}
+!loop end
+ <li>{potion recipe:step last}
 </ul>
 
 </body>

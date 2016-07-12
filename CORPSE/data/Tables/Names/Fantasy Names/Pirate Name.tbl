@@ -138,6 +138,7 @@ savvy
 scrimshaw
 scuttlebutt
 scurvy
+seaweed
 sharkbait
 short fuse
 snake-eyes
@@ -149,8 +150,7 @@ whalebone
 windlass
 {color:simple} anchor
 {color:simple}beard
-{metal:simple}shanks
-{metal:simple}tooth
+{metal:simple}{eye|finger|shanks|tooth}
 
 : Epithet
 the black

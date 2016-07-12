@@ -1044,7 +1044,7 @@ The ferry boat on the far side of the river appears untended. On this side, the 
 The ferry for the river crossing ahead is missing and there are signs of a struggle on the bank. 
 The ferry needed to cross the river is available, but the ferryman is hopelessly drunk. 
 The ferry needed to cross the river is damaged, and the ferryman needs help and materials to repair it. 
-The field is filled with enormous and mishappen plants that smell faintly of rotting flesh. 
+The field is filled with enormous and misshapen plants that smell faintly of rotting flesh. 
 The flowers in the field ahead grow in rings of colors. 
 The forest ahead sways as if caught in a violent windstorm, but the party feels no wind. 
 The gale is of such strength that going against it is difficult, and the flying road dust gets everywhere. Steeds abhor it as it gets in the eyes. Visibility is low and ranged combat upwind near-impossible. 
@@ -1052,9 +1052,9 @@ The garrison of a toll bridge has been slaughtered and replaced by bandits or mo
 The garrison of a toll bridge has been slaughtered and the PCs are accused of doing it. 
 The ground grows hot and foul steam rises from new-formed cracks in the roadway. 
 The ground rumbles as the PCs move through a mountain pass. It's an earthquake! The characters can escape with minor injuries from bouncing rocks, but just around the bend, a massive sinkhole has swallowed the entire path. 
-The group arrives late at night at a tiny {settlement:common} straddling the road. They secure accommodation and food from the friendly locals and fall asleep. In the morning the {settlement:common} is empty and ruined, as if abandoned years ago. 
+The group arrives late at night at a tiny {settlement:common} straddling the road. They secure accommodation and food from the friendly locals and fall asleep. In the morning the {!} is empty and ruined, as if abandoned years ago. 
 The group comes across a three-way traffic jam at a fork in the road, and three arguing wagon masters refusing to give way. 
-The group comes to a wilderness trading post on the trail. The cantankerous oldtimer who runs it offers a bounty for scalps. 
+The group comes to a wilderness trading post on the trail. The cantankerous old-timer who runs it offers a bounty for scalps. 
 The group comes upon the scene of a recent grisly carriage accident, or witnesses it ahead of them on the road. 
 The group is followed from the last town by a band of children who want to go on adventures with them. 
 The group leaves a town they've helped/saved/rescued and head off down the road. Just out of town the grateful locals jump out and surprise them with an unexpected picnic celebration. 
@@ -1062,7 +1062,7 @@ The group meet an uncannily similar party of adventurers going the opposite way.
 The group passes an old farmer and his nag heading toward the same town the PCs are heading toward. He gives them a wave and a gap-toothed smile. A little while later they pass him again. And then again.... 
 The group sees one group routing another leaving dying and dead behind. 
 The inn the PCs were travelling to has been completely destroyed. 
-The innkeeper from a day's journey back was insistent this road only led to the next {settlement:common}. Where then might this unmentioned fork lead? More importantly, which is the way to the next {settlement:common}? 
+The innkeeper from a day's journey back was insistent this road only led to the next {settlement:common}. Where then might this unmentioned fork lead? More importantly, which is the way to the next {!}? 
 The King has enacted a toll bridge. Several peasants were unaware, and cannot afford the toll. They accost the PCs demanding then begging for change. 
 The King's men are repairing the road for the next 5 miles. 
 The King's messenger needs a fresh horse. 
@@ -1218,7 +1218,7 @@ The staff of the tavern where the PCs plan to spend the night have been replaced
 The steeple of a church blocks the road. 
 The street is strangely deserted. Not a soul walks the pavements and litter swirls in the breeze. An unmanned cart with squeaky wheels rolls onto the street. 
 The strong eastern wind shifts to the west, carrying with it a thick smoke that blows around you. 
-The sun sets in a purple sky, and a passing traveler says it is an omen of _____. 
+The sun sets in a purple sky, and a passing traveler says it is an omen of {omen.description}. 
 The sunken road is flooded out with blood. 
 The sunlight at dusk or dawn is delicious and warm, though experienced warriors know it also reduces visibility towards the sun to nil. 
 The sweltering heat upon this lightly forested road has slowed your progress down to a crawl. A cool breeze from an adjacent wood draws your puzzled gaze to the snow-covered trees and ground therein. 

@@ -296,3 +296,60 @@ target gains spell resistance equal to 11 + caster level for {6} rounds
 {curse:effect}
 {phobia} for {6} rounds
 {magic mishap}
+
+===
+5,A pPalpable Hit. You get max damage to your hit, but no doubling this time around. Sorry.
+40,Critical Hit! Double Damage!
+10,Nasty Slice! Roll Double Damage, but reroll all 1s and 2s.
+8,Dextrous Move! Free trip attempt (as a bonus action) or Double Damage - your choice.
+10,Amazing Hit! You get your max damage from your first damage die, then roll your damage die again. Add your bonuses to this total.
+8,Excellent Hit! Max Double Damage possible! All adjacent Opponents gain an Opportunity Attack on the creature you struck.  
+8,Excellent Hit! Max Double Damage possible, and you gain advantage on the same creature next round. 
+10,You have out-manoeuvred your opponent. You gain advantage on your next attack against him. Also apply your double damage now, as normal.
+8,Incredible Hit! Roll your damage dice, add all of your bonuses first, THEN Double it!!
+8,Stunning hit! Apply double damage as normal, then gain an additional attack as a bonus as a reaction, if you have not used your reaction this round.
+8,Intuitive hit! You have advantage on both of your Double Damage dice.
+8,Distracting Injury! Roll Double Damage as normal. Your opponent now has Disadvantage due to distraction on all rolls for {Dice~1d6} rounds.
+4,Amazing Hit! Triple Damage!!! (If you already get Triple Damage, then you get Quadruple Damage instead)
+5,Inspiring Stroke! All allies within {Dice~1d3}0 feet gain 1d6 Inspiration. Also, Double Damage.
+10,This happens to opponent - [5e SAWD.Start] Use Double Damage instead of this result, if not applicable or if you prefer.
+10,This happens to opponent - [5e SAWD.Start] All adjacent Opponents gain an Opportunity Attack on the creature struck. Or you can choose Double Damage instead, if not applicable or if you prefer. All adjacent opponents still gain Opportunity Attacks.
+10,Double damage, plus the creature attacked is forced back and Stumbles (perhaps falling); it must make a DEX check vs. DC{Dice~1d6+14} or fall prone.  You gain an Opportunity Attack on the creature struck.
+5,Creature Disarmed. Weapon falls {Dice~1d6} ft. away in {Dice~1d8} direction. All adjacent Opponents gain an Opportunity Attack on the creature struck.  Don't forget the double damage for the Critical being successful as well.
+4,Crippling Injury! Roll Double Damage as normal, but creature now at 1/2 Movment for {Dice~1d6} Rounds.
+2,Shield (or off hand) arm severed. {Dice~1d8} hp/round blood loss. All adjacent Opponents gain an Opportunity Attack on the creature struck. A Cure Wounds cast at 4th spell level or above is needed to stem the flow of blood from this wound.  A HEAL is needed to re-attach the arm, but only during the first 24 hours.  After that, a REGENERATION spell is needed. 
+2,Weapon (or Main Hand) arm severed. {Dice~1d8} hp/round blood loss. All adjacent Opponents gain an Opportunity Attack on the creature struck. A Cure Wounds cast at 4th spell level or above is needed to stem the flow of blood from this wound.  A HEAL is needed to re-attach the arm, but only during the first 24 hours.  After that, a REGENERATION spell is needed. 
+2,Major Wound; Bleeding at {Dice~1d8} hp/round, applied on creature's turn.  All adjacent Opponents gain an Opportunity Attack on the creature struck. A Cure Wounds cast at 4th spell level or above is needed to stem the flow of blood from this wound.  A HEAL is needed to repair the damage.  Until such a spell is cast, the wound remains (but 6 months of bedrest would do it).
+1,Mortal Wound; opponent goes instantly to 0 hp and must make first death save immediately.
+
+Helm Slips; Roll DEX vs DC{Dice~1d10+10} each round to fix- PC effectively Blinded until fixed.  (See "blinded" effects under the blindness spell).
+2,Helm Removed; thrown {Dice~1d10} feet away, {Dice~1d8} for direction thrown.
+3,Helm is Damaged; Helms get Fortitude Save of owner vs. DC{Dice~1d6+15} or it takes {Dice~1d8} damage (don't forget hardness).  Excess damage if helm destroyed goes to PC.
+2,Helm is Damaged; Helms get Fortitude Save of owner vs. DC{Dice~1d8+15} or they take {Dice~1d10} damage (don't forget hardness); Owner Stunned {Dice~1d4} rounds.  Excess damage if helm destroyed goes to PC.
+2,Helm is Damaged; Helms get Fortitude Save of owner vs. DC{Dice~1d10+15} or they take {Dice~1d12} damage (don't forget hardness); Owner Stunned {Dice~1d6} rounds.  Excess damage if helm destroyed goes to PC.
+1,Helm is Damaged - no saving throw; Helm takes {Dice~2d8+5} damage (don't forget the hardness; Helm-owner stunned {Dice~1d6+2} rounds.  Excess damage if helm destroyed goes to PC.
+7,Shield is Damaged; Shield gets Reflex Save of owner vs. DC{Dice~1d6+15} or it takes {Dice~1d8} damage (don't forget hardness).  Excess damage if shield destroyed goes to PC.
+7,Shield is Damaged; Shield gets Reflex Save of owner vs. DC{Dice~1d8+15} or it takes {Dice~1d10} damage (don't forget hardness).  Arm numb (no shield defense if shield survived for {Dice~1d4} rounds).  Excess damage if shield destroyed goes to PC.
+7,Shield is Damaged; Shield gets Reflex Save of owner vs. DC{Dice~1d10+15} or it takes {Dice~1d12} damage (don't forget hardness); Arm numb (no shield defense if shield survived for {Dice~1d8} rounds).  Excess damage if shield destroyed goes to PC.
+4,Shield is Damaged - no saving throw; Shield takes {Dice~2d8+6} damage (don't forget the hardness; Arm broken (no use of shield-arm until Cure Critical Wounds or better is cast on the PC).  Excess damage if shield is destroyed goes to PC.
+6,Main Weapon Knocked Away; tossed {Dice~1d10} feet, Weapon goes [Direction] of PC. 
+5,Main Weapon Damaged; Weapon gets Reflex Save of owner vs. DC{Dice~1d8+15} or it takes {Dice~1d10} damage (don't forget hardness).  Arm numb (no attacks with Main Weapon if it survived for {Dice~1d3} rounds).  Excess damage if weapon broken goes to PC.  If damage indicates a broken weapon and the PC still tries to use it, drop the damage dice to a lower category and lose all magical qualities.
+3,Main Weapon is Damaged; Weapon gets Reflex Save of owner vs. DC{Dice~1d10+15} or it takes {Dice~1d12} damage (don't forget hardness); Arm numb (no attacks if weapon survived for {Dice~1d8-2} rounds).  Excess damage if weapon broken goes to PC.  If damage indicates a broken weapon and the PC still tries to use it, drop the damage dice to a lower category and lose all magical qualities.
+4,Weapon is Damaged - no saving throw; Weapon takes {Dice~2d8+6} damage (don't forget the hardness; Weapon arm broken (no use of weapon-arm until Cure Critical Wounds or better is cast on the PC).  Excess damage if weapon is broken goes to PC.  If damage indicates a broken weapon and the PC still tries to use it, drop the damage dice 2 categories lower and lose all magical qualities.
+4,Leather or Padded Armor Damaged; lose 1 AC until repaired unless Blunt weapon was used. Masterwork or Magic Armor Safe. 
+3,Leather or Padded Armor Damaged; lose 2 AC until repaired unless Blunt weapon was used. Masterwork or Magic Armor Safe.
+2,Leather or Padded Armor Damaged; lose 3 AC until repaired unless Blunt weapon was used. Masterwork or Magic Armor Safe.
+2,Leather or Padded Armor Damaged; lose 2 AC until repaired, Magic gets Reflex Save DC{Dice~1d6+13}. 
+4,Any Leather Damaged; lose 1 AC until repaired, No Effect on Masterwork or Magic, No Effect if Blunt Weapon was Used.
+2,Any Leather Damaged; lose 2 AC until repaired, Magic gets Reflex Save DC{Dice~1d6+13}. 
+3,Ring, Chain, and All Leathers Damaged; lose 2 AC if Missile or Thrusting was used, Masterwork and Magic armors are Safe. 
+1,Ring, Chain, Leathers Damaged; Lose 2 AC unless Blunt was used, Masterwork and Magic gets Reflex Save DC{Dice~1d8+20}.
+1,Ring, Chain, Leathers Damaged; Lose {Dice~1d4} AC, Magic or Mundane gets Reflex Save DC{1d6+13}. 
+4,Scale, Banded, or Splint Damaged; Lose {Dice~1d4} if Blunt Weapon Used, Masterwork or Magic Safe. 
+2,Scale, Banded, or Splint Damaged; Lose {Dice~1d4} AC, Masterwork or Magic gets Reflex Save DC{Dice~1d6+12}. 
+2,Any Mundane Armor Damaged by Blunt Weapon Only; Lose {Dice~1d6} AC 
+2,Any Mundane Armor Damaged by Edged Weapon Only; Lose {Dice~1d6} AC 
+2,Any Mundane Armor Damaged by Missile or Thrusting Only; Lose {Dice~1d6} AC 
+4,Any Mundane Armor Mangled by Any Weapon; Lose {Dice~1d8} AC! 
+1,ANY Armor Damaged; Lose {Dice~1d4} on AC plus Reflex Save DC{Dice~1d10+15} or Lose all other Magical Properties.
+1,ANY Armor Damaged; Lose {Dice~1d6} on AC plus Lose ALL other Magical Properties. 
