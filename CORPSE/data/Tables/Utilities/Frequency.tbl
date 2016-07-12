@@ -1,5 +1,9 @@
+: Frequency = Rarely + Some
+
+: Rarely
 never
 rarely
+
 : Some
 occasionally
 sometimes

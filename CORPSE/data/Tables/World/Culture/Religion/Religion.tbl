@@ -194,6 +194,21 @@ volcanoes
 {{mythical creature}+}
 {{terrain}+}
 
+: Depiction
+{:what}{75% {:with}}
+
+: What 
+{profession}
+{pseudo class}
+
+: With
+adorned with a {~{jewelry:wearable}}
+bearing a {~{equipment}}
+dressed in a {~{outfit:clothing}}
+holding a {~{tiny item}}
+using a {~{tool}}
+wielding a {~{weapon}}
+
 ===
 / http://random-generator.com/index.php?title=Fantasy_Religious_History
 

@@ -28,3 +28,35 @@ Unaware; You hit an adjacent companion for half damage.  Determine randomly a co
 Liability; You hit an adjacent companion for half damage and leave yourself open to attack.  Determine randomly a companion within the threat zone who is to be hit.  Roll damage and half the result.  Opponent gets an immediate Attack of Opportunity on the attacker and the target loses any Dexterity bonus to AC.  -4 penalty on next attack roll.  If no one is adjacent, ignore result.
 Very Unaware; You hit an adjacent companion for full damage.  Determine randomly a companion within the threat zone who is to be hit.  Roll full damage.  -4 penalty on next attack roll.  If no one is adjacent, ignore result.
 Big Liability; You hit an adjacent companion for full damage and leave yourself open to attack.  Determine randomly a companion within the threat zone who is to be hit.  Roll full damage.  Opponent gets an immediate Attack of Opportunity on the attacker with a +2 bonus and target loses any Dexterity bonus to AC.  -4 penalty on next initiative roll.
+
+===
+20,Miss - you suck at this!
+3,This effect happens to attacker: [5e SAWD.Start]
+2,Trip and Stumble (perhaps Fall); make DEX check vs. DC{Dice~1d10+10} or fall prone.  If you fall prone make a CON check vs. DC {Dice~1d8+14} or be stunned for {Dice~1d6} rounds. Opponent attacked gains an Opportunity Attack regardless.
+3,Trip and Stumble (perhaps Fall); make DEX check vs. DC{Dice~1d8+14} or fall prone. Opponent attacked gains an Opportunity Attack regardless. 
+3,Shield Tangled with Opponent; No use of Shield, nor can you move away from this opponent, until successful Athletic check against DC{Dice~1d8+8} is made.  This check takes an action. Regardless, the opponent you were attacking gains an Opportunity Attack. No shield? Use this result instead: [Fumble1]  
+4,Slip; Off Balance - No more Attack(s) this round and take disadvantage on main attack next round.  Opponent attacked gains an Opportunity Attack. 
+5,Unsteady - make DEX check vs. DC{Dice~1d4+8} or fall and be prone. If you have movement remaining, you can use it to stand up immediately.
+5,Unsteady - make DEX check vs. DC{Dice~1d4+8} or fall and be prone. If you have movement remaining, you can use it to stand up immediately, but take AoO from attacked Opponent.
+4,Slip; make DEX check vs. DC{Dice~1d6+9} or fall and be prone.  
+4,Slip; make DEX check vs. DC{Dice~1d6+9} or fall and be prone.  If you fall, the opponent you attacked gains an Opportunity Attack. 
+3,Stumble; make DEX check vs. DC{Dice~1d6+14} or fall and be prone. If you fall, the opponent you attacked gains an Opportunity Attack. 
+2,Stumble; make DEX check vs. DC{Dice~1d6+14} or fall stunned for 1 round for every number you missed the DC by.  The opponent you attacked gains an Opportunity Attack.
+2,Stumble; make DEX check vs. DC{Dice~1d6+18} or fall stunned for 1 round for every number you missed the DC by. The opponent you attacked gains an Opportunity Attack regardless.
+3,Twist Ankle; 1/2 MV for {Dice~1d6} Rounds, Half normal Attacks (round down but minimum of 1). Need CLW or better to restore ankle.
+2,Twist Ankle Badly - Sprained; 1/2 MV for {Dice~1d10} Rounds, Half normal Attacks (round down but minimum of 1 attack). PLUS roll DEX check vs. DC{Dice~1d6+14} or fall prone.  Cure Moderate Wounds or better to restore ankle.
+5,Grip slips on Weapon; Roll DEX check vs. DC{Dice~1d4+6} or lose very next attack with same weapon. The opponent you attacked gains an Opportunity Attack.
+4,Grip slips on Weapon; Roll DEX check vs. DC{Dice~1d6+8} or lose very next attack with same weapon. The opponent you attacked gains an Opportunity Attack.
+2,Lose Grip on Weapon; Roll DEX check vs. DC{Dice~1d6+14} or weapon falls {Dice~1d3*5} feet away to the [Direction] of you; Lose your next attack regardless. Opponent attacked gets an Opportunity Attack regardless of result; all other adjacent opponents gain Attacks of Opportunity if weapon is lost.
+1,Lose Grip on Weapon; Roll DEX vs. DC{Dice~1d8+16} or Weapon falls {Dice~1d6*5} feet away to the [Direction] the PC, Lose next attack regardless. All opponents within 5 feet gain an Opportunity Attack.
+1,Lose Grip;  Roll DEX vs. DC{Dice~1d20+25} or Weapon falls {Dice~1d3*5} feet away to the [Direction] the PC, no DEX save. All adjacent opponents gain an Opportunity Attack.
+2,Slip; Possibly Off Balance - Roll a DEX check vs. {Dice~1d10+10}. Failed check gives these results: No Attack(s) Next Round and for the remainder of this round - Character is flat-footed until they are next able to take an action. Opponent attacked gains an Opportunity Attack if DEX roll is failed.
+3,Slip; Possibly Off Balance - Roll a DEX check at DC{Dice~1d6+14}. Failed check gives these results: No Attack(s) Next Round and for the remainder of this round - Character is flat-footed until they are next able to take an action. Opponent attacked gains an Opportunity Attack if DEX roll is failed.
+2,Shield (or off-hand weapon) Tangled with Opponent; Neither can use shield next round.  All adjacent opponents except for the one attacked gain Attacks of Opportunity.  If there is no shield or off-hand weapon, Use this result: [Fumble1]
+3,Weapon Tangled with Opponent; Lose {Dice~1d4} Attacks (Maximum: remaining round and following round).  All adjacent opponents gain an Opportunity Attack.
+3,Weapon Knocked Away; {Dice~1d3*5} feet to the [Direction] the PC) retain grip if Dex check successful - DC{Dice~1d20+20}.  Regardless, opponent attacked gains Opportunity Attack, all other adjacent opponents gain Opportunity Attack if the weapon is not retained.
+3,Helm Slips; Roll DEX to fix (attack at -4 until fixed - requires DEX roll with DC{Dice~1d5+9}); Roll again if not Helmed.  Adjacent opponents gain Opportunity Attack.
+4,Distracted by Battle; your next attack is at Disadvantage.
+3,Distracted by Battle; opponent attacked gains an Opportunity Attack.
+2,Distracted by Battle; all adjacent opponents with reactions remaining gain Opportunity Attack at +1 to hit. 
+1,<B><FONT COLOR="#ff1520">CRITICAL MISS!</FONT></B> <BR> [Critical Misses.CritMiss2]

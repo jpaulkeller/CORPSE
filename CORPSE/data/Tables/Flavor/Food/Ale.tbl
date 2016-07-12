@@ -1,0 +1,65 @@
+: Ale
+{20%{:SPECIAL} }{:type} {:style}
+{20%{:SPECIAL} }{:fruit} {:type} {:style}
+{20%{:SPECIAL} }{:grain} {:style}
+
+: Named
+{:Name} {20%{:Modifier} }{20%{:Seasonal} }{10%{:Fruit} }{:Type} {:Style}
+
+: Special 
+{:Name}
+{:modifier}
+{:seasonal}
+
+: Type
+amber
+bitter
+black
+blonde
+brown
+cream
+dark
+golden
+pale
+red
+
+: Style
+ale
+beer
+lager
+stout
+
+: Grain
+barley
+corn
+oat
+rice
+rye
+wheat
+
+: Seasonal
+autumn
+spring
+summer
+winter
+
+: Modifier
+chocolate
+coffee
+heather
+honey
+imperial
+smoked
+
+: Fruit
+blackberry
+cherry
+huckleberry
+raspberry
+strawberry
+
+: Name
+{Name}'s
+{Place Name}
+{Pseudo Class}'s
+{Race:All}

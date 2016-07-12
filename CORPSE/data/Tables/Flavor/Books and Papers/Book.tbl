@@ -101,8 +101,11 @@ Formulas
 Incantations
 Letters
 Limericks
+Lore
 Manuscripts
 Maps
+Mysteries
+Myths
 Notes
 Parchments
 Plays
@@ -113,6 +116,7 @@ Proverbs
 Quotes
 Recipes
 Research Notes
+Sagas
 Schematics
 Scrolls
 Secrets
@@ -139,12 +143,14 @@ Arcane
 Authoritative
 Basic
 Best-Loved
+Classic
 Collated
 Collected
 Complete
 Comprehensive
 Concise
 Cryptic
+Definitive
 Detailed
 Esoteric
 Essential
@@ -157,10 +163,12 @@ Illustrated
 Little-Known
 Mystic
 Practical
+Primary
 Redacted
 Revised
 Secret
 Selected
+Ultimate
 Unabridged
 Unexplained
 Unholy
@@ -199,6 +207,7 @@ for
 about
 concerning
 pertaining to
+regarding
 
 : Quality
 ancient
@@ -232,7 +241,6 @@ Customs
 Daily Life
 Espionage
 Etiquette
-Fables
 Family Life
 Fashion
 Fauna
@@ -251,11 +259,9 @@ Manners
 Merchant Ships
 Mixed Drinks
 Monastic Orders
-Myths
 Nobility
 People
 Poisons
-Recipes
 Religions
 Riddles
 Secret Societies
@@ -286,6 +292,7 @@ Wilderness Lore
 {Pseudo Class}
 {Region}
 {Settlement:Simple}
+{Short}
 {Structure}
 {{Fauna}+}
 {{Flora}+}

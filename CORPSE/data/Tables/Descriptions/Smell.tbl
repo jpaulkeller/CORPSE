@@ -44,11 +44,14 @@ strongly
 subtly
 
 : Degree
+heavy
+hint of
 light
 lingering
 mild
 musty
 overwhelming
+penetrating
 pungent
 sharp
 slight
@@ -137,7 +140,9 @@ wood
 / [Wampus Country Potions.taste]
 
 : Cooking
+almonds
 bread
+butter
 cheese
 cinnamon
 citrus
@@ -148,6 +153,7 @@ roast meat
 vanilla
 wine
 wood smoke
+{fruit}
 {herb}
 {provisions}
 {spice}
@@ -163,14 +169,17 @@ incense
 mint
 rain
 vanilla
+{flower}
 
 : Foul
 a slaughterhouse
+ammonia
 animal spoor
 bile
 blood
 brimstone
 burnt hair
+cabbage
 charred flesh
 death
 decay
@@ -180,8 +189,10 @@ mold
 moldering corpses
 old fish
 rancid milk
-rotting {food|vegetation}
+raw onion
+rotting {eggs|food|meat|vegetation}
 sewer effluvia
+skunk
 sour milk
 stagnant water
 stale beer

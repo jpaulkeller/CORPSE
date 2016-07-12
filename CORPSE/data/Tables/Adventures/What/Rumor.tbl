@@ -147,7 +147,7 @@ Dwarfs carve their children out of stone and precious jewels.
 Dwarfs have no souls, so you can do whatever you want to them with no moral repercussions.
 Dwarfs worship a deity best likened to a living slot machine who rewards their greed with increased material returns.
 Dwarven immigrants are arriving in southern cities in droves.
-Elf-Queen {Elf Name:Female}, whom elves revere as the pinnacle of natural beauty, is really a dog-ugly hag glamoured up with fae charms.
+Elf-Queen {Elf Name}, whom elves revere as the pinnacle of natural beauty, is really a dog-ugly hag glamoured up with fae charms.
 Elves are lazy do-nothings, keeping dozens of specialized slaves; one’s entire purpose might be to turn a certain doorknob, while another would open the door; still another would remove a guest’s cloak, while a fourth hangs the cloak.
 Elves are useless; their bones are too brittle to perform any real work without risking injury.
 Elves were only recently ‘uplifted’ by a meddlesome inter-dimensional imp, who gave them their beautiful cities and culture. Before that, they were primitive ulfs, graceless clods too stupid to even develop a language.
@@ -339,3 +339,4408 @@ thousands of {metal:precious} pieces
 “No, no, no – what you’re describing isn’t an orc; it’s a Green Tusked Ape. Tons of apes out there in the ‘Mark; white apes with four arms, mandrills that can burst into flames, orangutans , and my brother-in-law says he once saw a winged ape flying overhead. A veritable plethora of primates, yessir. Orcs, now they’re a different thing. Nasty, despicable creatures. Got snouts like pigs or boars.”
 “You know those wetlands south of the woods, where that river runs into that deep black lake? There’s a village of these creatures there, and probably other villages throughout the mark, of these creatures called…eh, Swamp Grumps or something like that. Anyway, they’re a deeply religious lot, and they’re always praying to their gods – strange old gods, the kind we should be glad we don’t have to pray to anymore. The kind of gods who are going to end the world someday….according to these Muddy Bumps or whatever they’re called, anyway.”
 Person A: “Of course it isn’t flat! Everyone knows that. If it was flat, we wouldn’t have a horizon. No, it’s curved. But that doesn’t mean it’s round like a ball! If it were a ball, you could travel in the same direction for a long, long time, go all the way around the ball, and end up back where you started. Ever heard of someone doing that? No, instead, it’s more like an infinite spiral in all directions through the aether-space. Every direction you go, the world curls in on itself, infinitely. You could walk forever across the world, and still have forever left to go unexplored!”  Person B: “You sure have some odd ideas in that head of yours, Crazy Tom.”
+
+<!-- -----------------------
+Name:	Rumors
+Date:	2015-06-12
+By:	Astrangeaeon
+----------------------- -->
+
+{{Purge}}
+
+<!-- -----------------------
+=Rumors (a work in progress!)=
+
+Welcome to the Rumors page! 
+
+GMs can use this page to quickly produce evocative ‘facts’ about their worlds. Written for no particular setting, the goal was only to create, through whispers and oblique suggestions, a world that would be fun to adventure and intrigue in, making it widely applicable to (and hopefully not too generic for) nearly any fantasy environment.
+
+Mythology and the history of antiquity inspired much of the content, with some twists; I steer more towards literary content than game mechanics, but I know as a GM what inspired me most were always simple ideas I could flesh out and run with, so I offer these in that same spirit: may these rumors provide a spark that lets your creativity mold something memorable at the game table.
+
+If you’d like to help this project, check out the 6 main subtables (Dungeon, Local, Prophecy, Strange_Custom, Urban, Wilds) to see how the main content is being generated. Also, Rumors’ “Discussion” page contains some very useful resources that call ALL external and internal subtables, with 3 examples of each, for a quick overview of what a given subtable is doing. Have fun!
+------------------------ -->
+
+{{Cols|3|
+{{Nobreak|
+== (Cities) <sgdisplay iterations="1">__NOTOC__[I_Herd] …</sgdisplay> ==
+<ul><sgdisplay iterations="4"><li>{{ucfirst:[Urban]}}.</sgdisplay></ul>
+}}{{Nobreak|
+== (Wilderness) <sgdisplay iterations="1">[I_Herd] …</sgdisplay> ==
+<ul><sgdisplay iterations="4"><li>{{ucfirst:[Wilds]}}.</sgdisplay></ul>
+}}{{Nobreak|
+== (Maritime) <sgdisplay iterations="1">[I_Herd] …</sgdisplay> ==
+<ul><sgdisplay iterations="4"><li>{{ucfirst:[Maritime]}}.</sgdisplay></ul>
+}}{{Nobreak|
+== (Dungeon) <sgdisplay iterations="1">[I_Herd] …</sgdisplay> ==
+<ul><sgdisplay iterations="4"><li>[Dungeon].</sgdisplay></ul>
+}}{{Nobreak|
+== (Local) <sgdisplay iterations="1">[I_Herd] …</sgdisplay> ==
+<ul><sgdisplay iterations="4"><li>[Local].</sgdisplay></ul>
+}}{{Nobreak|
+== Prophecies (needs work) ==
+<ul><sgdisplay iterations="4"><li>[Prophecy].</sgdisplay></ul>
+}}{{Nobreak|
+== (Strange Customs) <sgdisplay iterations="1">[I_Herd] …</sgdisplay> ==
+<ul><sgdisplay iterations="4"><li>{{ucfirst:[Strange_Custom]}}.</sgdisplay></ul>
+}}{{Nobreak|
+== (Holidays, Punishments and Funerals) <sgdisplay iterations="1">[I_Herd] …</sgdisplay> ==
+<ul><sgdisplay iterations="4"><li>{{ucfirst:[HPandF]}}.</sgdisplay></ul>
+}}}}
+<sgtable><!-- * alphabetized, as there were 209 at last count * -->
+
+<!-- * Chance tables * -->
+
+;%foreign_adj
+0,**add space at end**
+7,
+1,ancient 
+1,bleak 
+1,buried 
+1,eerie 
+1,lost 
+1,low 
+1,mirrored 
+1,stony 
+1,sunken 
+1,treacherous 
+1,unhappy 
+
+;%foreign_phrase
+7,
+1, amid the dragons and the weeds
+1, by the sea
+1,, haunt of doves
+1,, haunt of jackals
+1,, haunt of scorpions
+1,, land of jade
+1,, rich in cedar
+1,, rich in fish
+1,, rich in silver
+1,, rich in vineyards
+1, that lies upon the chalk
+1, upon the gulf
+1, with its forests
+1, with its lakes
+1, with its mountains
+
+;%herdwith
+5,
+1, wearing fitted chain mail barding
+1, wielding swords between their teeth
+1, who bleed out black sand instead of blood
+1, who burn their dead on pyres
+1, who cast golden shadows
+1, who perform a ritual eerily similar to one practiced by men
+1, who shed tears of gold
+1, with extremely long necks
+1, with eyes strange and full of power
+1, with high operatic calls
+1, with human voices
+1, with manes of fire
+1, with mechanical parts
+1, with mouths full of holes
+1, with swords for teeth
+1, with the feet of humans
+1, with the hair of maidens
+
+;%sign
+5,
+1, with a sign of {{ia|[Animal.Weirdsymbol]}} hanging outside of it
+1, with a sign of [Utility.MiscSymbol] hanging outside of it
+
+;%smellslike
+5,
+1, that smells like [Wampus Country Potions.taste]
+
+;%tomb_anecdote
+5,
+3,[%tomb_anecdote] [%tomb_anecdote]
+1, also known as the Chimera,
+1, at whose touch the beams of dry wood bore lotus blooms,
+1, born with a snake in each hand,
+1, burnt to ash by flames of divine love,
+1, counter of the stars,
+1, for whom the depths of night are his vast form,
+1, keeper of the Cat and the Jackal,
+1, looter of rare trees from foreign lands, roots encased in great chests of earth,
+1, lord of nine kinds of sleep,
+1, lord of the double scroll,
+1, lord over the nine and 40 kings of serpents,
+1, lotus-eyed and lion-shouldered,
+1, may he dream eternally in the cave of night,
+1, may his bones be crushed,
+1, measurer and enumerator of the earth,
+1, of whom it is said that when dead, the whole world stank of the corpse,
+1, preacher of the word of Dagon to the fish,
+1, receiver of a dowry of fairy tales,
+1, recorder of souls,
+1, seeker of the roots of dragons deep below the earth,
+1, the friend of everyone,
+1, the only ruler to die of natural causes,
+1, twice great and thrice great Lord of Books,
+1, wearer of the holy crown of feathers,
+1, who, armed by Health, gained many victories over Disease,
+1, who ate souls as you or I might an apple,
+1, who beheld the breadth of his domain and wept, for there were no more worlds to conquer,
+1, who broke the heart of the world,
+1, who broke the wing of the southern wind,
+1, who brought the gift of algebra and fire,
+1, who carved the bones of his enemies into chess pieces,
+1, who conquered the birds in the sky and the ants in the ground, once the kingdoms of men were won,
+1, who created three worlds to test his hypothesis
+1, who cut the wings off the wyrms and forced them into the sea,
+1, who died laughing as his heart was torn out by [huntingmonster],
+1, who drew a circle on the face of the Deeps,
+1, who escaped his assassins’ flames by building, with his sons, a bridge to safety,
+1, who fed on sunlight until his body resembled it,
+1, who fought the armies of [heroes_and_villains] to the last breath, using saddles and backpacks to fortify a hopeless position,
+1, who gave his daughter the whole world and a pair of ice skates,
+1, who had an orgy with ten women in a tent above his father’s tomb,
+1, who hid his greatest treasures inside living slaves,
+1, who learned the language of ants,
+1, who led a mighty army of slaves, all attached to a great chain 5 miles long,
+1, who lived on snakes alone,
+1, who lived with his end in full view, like Odin gazing upon Fenrir bound,
+1, who made a desert and called it peace,
+1, who made the yew tree extinct due to harvesting bow staves for his archers,
+1, who melted the bronze weapons of his enemies and forged from them a dozen 28-ton statues,
+1, who never forgave his parents for bringing him into the world,
+1, who played dice with the goddess of hell, sometimes winning, sometimes losing,
+1, who quaked the earth with his truth,
+1, who raised an army of children, the most vicious the world has ever seen, afraid of nothing but the dark,
+1, who rode the elephant of state beneath the umbrella of dominion,
+1, who sat upon a living throne comprised of his defeated enemies,
+1, who settled the Scratch Lands by providing his subjects with as much land as they could plow in a day,
+1, who sits in black silence until his rage quiesces,
+1, who sleeps the sleep of bronze,
+1, who slept with his favorite nine concubines in an Emperor size bed,
+1, who slew the great dryad Quelana and made a banquet table from her oak tree,
+1, who solved the riddle of steel,
+1, who split up the dead after each battle, half to Valhalla and half to Sessrumnir,
+1, who spilled more wine under his table than you or I keep in a cellar,
+1, who stripped the feathers from the sirens,
+1, who taught men to build houses,
+1, who traveled across the Lake of Dreams on a marble slab made seaworthy by faith,
+1, who turned back the light with eyes that never closed,
+1, who united the warring tribes of monkeys, orangutans, gorillas, apes and baboons into a deadly army,
+1, who walks ankle-deep in scattered flowers,
+1, who wounded the goddess of love,
+1, who, cursed to strangle his lovers after the act, entombed thousands of victims in a special chamber,
+1, who was murdered and became a bull, then two acacia trees, then his wife’s son to gain vengeance,
+1, who was so big, he strode across oceans, his head above the waves,
+1, who wed the moon goddess and begat two score and ten daughters by her,
+1, who wore a diving helmet and marched across the bed of the Lake of Dreams,
+1, whom disaster followed like a loyal hound,
+1, whose army rode peacocks into war,
+1, whose beard was so magnificent that his enemies surrendered to it,
+1, whose bed was abyss, whose pillow tornado,
+1, whose body remained incorruptible, both supple and warm,
+1, whose death all the waves off the coast of [coastal] lamented,
+1, whose dynasty stretches back to the creation of the world,
+1, whose eyes blazed with the light of 30 torches,
+1, whose immense body lays in the City of the Not-Dead shrouded in cobwebs,
+1, whose kiss turned men to ice,
+1, whose mighty ancestor fashioned the first men upon a potter’s wheel using sacred clay from the Nile River,
+1, whose name is written on all the rocks of the desert,
+1, whose palace contained an indoor waterfall, pumped from a faraway mountain,
+1, whose sacred breath turned water holy,
+1, whose sleep was guarded by a horse, a bull and a stag,
+1, whose soul split into a dozen parts, causing storms at sea and mischief on land,
+1, whose wife, horse, charioteer, disciple and holy tree were all born at the same moment,
+1, with the strength of a dozen men,
+1, without whom the gods would not know their hour,
+
+<!-- * A * -->
+
+;100_words
+1,fire
+1,murder
+1,sand
+1,sea-ice
+1,sex
+1,stone
+
+;actionbeyond
+3,can be traded to the high priestess in the Temple of Throp for [beyondreward]
+1,attracts the fae
+1,can bring the past or future of a location into the present
+1,can restore an undead creature’s soul
+1,causes children to be born with the souls of animals
+1,causes dogs to fall into a deep sleep
+1,causes men to be ashamed of the terribleness that fills them
+1,causes the pain of childbirth for five days if consumed
+1,causes those who possess it to grow sick
+1,has magnetic properties
+1,is always cold to the touch
+1,is always hot to the touch
+1,is fatal to [huntingmonster]
+1,is worth a fortune to an unethical alchemist
+1,provides protection from Law
+1,smells like [Wampus Country Potions.taste]
+1,turns cows into bears on sight
+1,turns to silver under a full moon
+
+;addiction
+1,[mysterymeat] meat
+1,adrenaline
+1,alcohol
+1,corpse play
+1,dream lotos
+1,eel hearts
+1,gambling
+1,gloom wine
+1,goblin tobacco
+1,gold water
+1,magical healing
+1,near death experiences
+1,opium
+1,Peepum’s nasty gum
+1,violence
+1,weird sex
+
+;allergy
+1,art
+1,chain mail
+1,darkness
+1,dwarfs
+1,elves
+1,lightning
+1,mirrors
+1,moonlight
+1,poverty
+1,silver
+1,starlight
+1,the bark of a dog
+1,the sound of rain
+1,the touch of a woman
+
+;ancientpeople
+1,Assyrians
+1,Chaldeans
+1,Durdzuks
+1,Hagrites
+1,Mazdakites
+1,Phoenicians
+1,Samothracians
+1,Ungannians
+
+;ancientthing
+1,a distant planet
+1,a doomsday weapon
+1,a terraforming operation
+1,an evolution machine
+1,an experiment gone wrong
+1,the spawning grounds
+
+;animateverb
+1,bear witness to
+1,learn the habits of
+1,serve
+1,sing the praises of
+1,worship
+
+;annualcontest
+1,archery contest
+1,demigod lookalike contest
+1,feign death festival
+1,fire chess tournament
+1,hot dog eating contest
+1,kite-flying festival
+1,spelling bee
+1,swamp toad hunting contest
+1,ugliness pageant
+
+<!-- * B * -->
+
+;bad_thing
+1,[creepyvillain] enter through the north gate
+1,[heroes_and_villains] return
+1,a [Color.all] tornado sweep away all evidence of civilization
+1,all the women of the region become barren
+1,control of the city return to its pre-human rulers
+1,dolphins feed in the forests of Erymanthus
+1,leaf rust coat the orchards, dooming the harvest
+1,the city sink beneath the waves
+1,the gods, tormented into sleeplessness by a storm, bring their anger
+1,the great wyvern Bororos wake
+1,the hill tribes cross the frozen river and attack
+1,the mountains tumble to the sea
+1,the price of grain increase one thousandfold
+1,the rains come for 36 years
+1,the river serpent Jothecol devour the land
+1,the stars fall
+1,the sun freeze in the sky
+1,those who cry ’kata-tartaroo! kata-tartaroo!’ hurl the innocent and wicked alike into Tartaros
+1,time stop, causing all things to succumb to eternal stillness
+
+;behind_mask
+1,a black flame
+1,a conglomeration of insects
+1,a yawning void
+1,blazing light
+1,garish tattoos
+1,ordinary faces
+1,no face
+1,slavers’ brands
+1,the northern face of God
+1,utter darkness
+1,vistas of the sky at night
+
+;beyondreward
+1,a glimpse into the afterlife
+1,a Janspor pearl
+1,a jewel that can grant life to inanimate objects
+1,a kiss
+1,a list of things the devil made you do (as evidence of your innocence in certain matters)
+1,a Throp guardian
+1,a timebird feather
+1,a wish
+1,one item from the Vault of Korfu
+1,one of the 240,000 spells of the [ancientpeople]
+1,the answer to any question
+1,the boon of choosing your own death
+1,the other horn of the unicorn
+
+;bizarrecompanion
+1,constructed of knives
+1,covered with freakish, deformed wads of lumpy scar tissue
+1,formed of stolen shadows
+1,known as Nakki the Water Sprite
+1,known as the Woman of Furious Gold
+1,made from witchclaw sticks
+1,made of blue smoke
+1,made of dust and other peoples’ organs
+1,named Gooey Louie
+1,named the Custodian of Rain
+1,resembling a dog-headed ape
+1,said to be the daughter of [ntc]
+1,said to be the son of [ntc]
+1,shaped like a pyramid
+1,with arms made of metal
+1,with sapphires for teeth
+1,with skin made from the metal of lost coins
+1,with the skin of a wolf
+
+;body_part_fate
+1,baked into the meal of a noble
+1,buried beneath the Tree of Crime
+1,cast into a fire
+1,fed to the dogs
+1,fed to them, piece by piece if necessary
+1,stitched to a wild dog
+
+;body_part
+1,bones
+1,ears
+1,fingers ([Dice.1d10])
+1,genitals
+1,hair
+1,heart
+1,left eye
+1,left hand
+1,liver
+1,lungs
+1,organs
+1,right eye
+1,right hand
+1,skin
+1,teeth
+1,tongue
+1,thumbs
+
+;brigandnames
+1,Kiblini
+1,Caxton’s Crew
+1,Fyran Steel
+1,Panther Black
+1,Sacre-Bleu
+1,the Bluejackets of Iddah
+1,the Companions of the Rass
+1,the Crows of Solomon
+1,the Followers of Chiron
+1,the Hounds of Rutilor
+1,the L’Karm
+1,the Maidens Seven
+1,the Men of the Chain and Lance
+1,the Merrimen
+1,the Night
+1,the Red Eyebrow Gang
+1,Thee Valkyries
+
+;buryingplace
+1,a cold stone altar upon which reindeer are sacrificed
+1,a fence post
+1,a large stone
+1,a painted [lawnornament]
+1,a stone bench
+1,a crooked witchclaw tree
+1,a very dangerous snake pit
+1,the grave marker of an animal
+
+<!-- * C * -->
+
+;catastrophe_or_eucatastrophe
+1,[catastrophe]
+1,[eucatastrophe]
+
+;catastrophe
+1,[coveringthing] will cover all the great cities
+1,[creepyvillain] will speak the name of every soul three times, abolishing all life and afterlife
+1,[creepyvillain] will remove the thumbs from all the archers on the frontier, leaving us defenseless
+1,[Animal.animalmammal] packs shall overthrow civilization and replace it with their own
+1,a horrible creature forced long ago by [ntc] to recede into the future, until time is old, will return
+1,a world with no sun but where everything glows with a light that reflects its moral power will replace this one
+1,angry Shiva will smash the world like a cup
+1,animals will be born with hungers that cannot be satisfied; with no food source, they will wither and die, dooming the race of man
+1,babies will be born old, with gray hair, and soon to die
+1,Basmus the Mermaid, mastering multilocation, will rise from all the wells and baths at once, fouling them irrevocably
+1,Charon will need a fleet
+1,Chiron with his square hammer comes to cave in the skulls of the sleeping
+1,endless war, where borders bleed eternally, will visit mankind
+1,the Lord of Speech will abandon man, leaving his kind to communicate through a language of sobs
+1,Lanival the Redeemer will dispel chaos forever, leaving only violent, ruthless order
+1,Shiva of the East will come to beat us with scorpions, as was promised
+1,swarms of [Animal.animalinsect] descend upon the world
+1,the beings who roam beneath the lakes and seas in their bleak purgatories will return to the realms of sun and wind
+1,the Black Mirror of Creation will be smashed to powder, and the powder will cover the world
+1,the days will get shorter as the world returns to the chaos and emptiness before Creation
+1,the uncountable shades stranded on the shore without Totenpass to the land of the dead will migrate back to the land of the living
+1,the dread {{ucfirst:[ordinal]}} Legion, who marched into a strange [Color.all] fog over [when] ago and disappeared, will return to terrorize the world
+1,the Garuda bird will flap its mighty wings, drying up the Ocean so it can feast on the exposed and helpless sea dragons
+1,the great [Demon name.Main] will awaken, hungry for souls
+1,the Great Librarian shall roll the sky up like a scroll
+1,the Iku Tree will grow so large that it blocks the sun and moon, and the starlight dies in heaven
+1,the Kindly One will give birth to a massive dust storm swirling with razor sharp sand
+1,the kingdom of [%foreign_adj][foreignland][%foreign_phrase] will be spirited away in a peal of thunder, leaving behind a haunted wasteland
+1,the Lake of Dreams will freeze over
+1,the moon will hatch a chaos butterfly
+1,the mother of the muses, Memory, will leave the world, and men will become once more like beasts
+1,the nefastus days, days wrong in the sight of the gods, will become the entire calendar
+1,the Northmen will dream no more
+1,the sun, which was born from the earth, will be forced back into the womb
+1,the sky will become a ceiling of writhing snakes
+1,the thousand years of tarantulas begins
+1,thunder shall speak from the cup of hunger
+
+;coastal
+1,Afrika
+1,Almagiro Sur
+1,Chastity
+1,Chrysolem
+1,De La Rosa
+1,Denmark
+1,Gadara
+1,Hyliadade
+1,Kom Ombo
+1,Kryopigi
+1,Lintukoto
+1,Storm Reach
+1,Yoo Lang
+
+;collection
+1,abjads from antiquity
+1,antique attack kites
+1,black ivory
+1,broken bulla praetextas
+1,broken dream crystals
+1,coins from different realms
+1,different colored will o’wisps in glass jars
+1,erotic playing cards
+1,exotic animal pelts
+1,fanciful notions
+1,failed prophecies
+1,fetishes carved from witchclaw
+1,historical artifacts from the Combine Empire
+1,illustrations of bodies in various stages of decomposition
+1,illustrations of cicatrices
+1,insects trapped in amber
+1,journals by great adventurers
+1,lantern beetles
+1,letters from the Black Kingdom of Dis, from a time when the dead could still write to the living world above
+1,living rocks from a future apocalypse
+1,lucky charms
+1,old-fashioned toys that modern children despise
+1,placentas and still-born fetuses
+1,pornographic illustrations
+1,ritual daggers that have tasted blood
+1,rocks from outer space
+1,tales of terror
+1,talismans of dead gods
+1,the broken shackles of escaped slaves
+1,the crutches of orphans
+1,the garments of false popes
+1,the thoughts of the dying
+1,the tiny iron shoes of crows
+1,the unconfessed sins that leak out as black grease from a corpse
+1,the wings of a thousand [Animal.animalinsect]
+1,volumes of wild history not written by court historians
+1,wedding rings that are no longer in use
+1,wine from fallen cultures
+
+;construction_help
+1,a horn that turned a mountain into a rain cloud to clear the ground
+1,help from alien allies
+1,intelligent red-legged spiders
+1,monstrous labor-saving devices
+1,powerful lasers
+1,the guidance of a master architect and 24 elephants
+1,the raw muscle of a hundred thousand slaves
+
+;coveringthing
+1,[Color.all] sand
+1,chthonic drakaina
+1,fire ants
+1,flesh-eating beetles
+1,ghost grass
+1,gray ash
+1,grim red soil
+1,hot blood
+1,salt clouds
+1,salt fire
+1,sea water
+1,sword weed
+
+;creepyvillain
+1,a limbless angel wearing a tunic of insect larvae
+1,a massive deadly eye whose lid must be lifted by 4 slaves
+1,a mutilated devil
+1,a ram with a man’s head
+1,a small boy with the Devil’s voice
+1,Ammut the Devourer
+1,Cythrawl, the opposite of a loving, creative god
+1,Enyo, the waster of cities
+1,four floating rams’ heads and a headless human body
+1,Gibil the Furnace
+1,Grandmother Hunger
+1,Half of Natho
+1,Scream-Three-Times
+1,Shalyat of the Seven Heads
+1,the [Dice.1d9]2 Conspirators
+1,the [elemntl_type] wyvern Bororos
+1,the Armoured Dancers
+1,the Banu Musa Brothers
+1,the bearded she-daemon Jezi Baba
+1,the Brothers Three
+1,the creeping things of Mimir
+1,the Daemon in Green
+1,the Daemon of Silence
+1,the Doorkeeper, the Watchman, and the Questioner
+1,the Eavesdropper
+1,the Father of Diamonds
+1,the Hooded Judges
+1,the Imp of Crows
+1,the lich of frost
+1,the Light Devourer
+1,the Limmungerran
+1,the Lion Daemon Bes
+1,the Nymph of Tartaros
+1,the One Broken in Pieces
+1,the One with Lamenting Voice
+1,the One-Legged Goddess
+1,the Phallic Saints
+1,the Philosopher of Wolves
+1,the Punisher of Lost Sheep
+1,the Queen of Rats, attended by [Dice.1d9][Dice.100] of her children
+1,the Seven Hathors
+1,the Sisters of the Eagle
+1,the Slaughter-Horse
+1,the Spirit Who Has Half of Everything
+1,the Sultan of Murder
+1,the Wood-Daemon Barbatos
+1,Those Who Wait
+1,Yog-Sothoth
+
+;criminals
+1,[thief_type] thieves
+1,actors
+1,arsonists
+1,cheats
+1,con-artists
+1,counterfeiters
+1,deserters
+1,drunks
+1,false counselors
+1,false prophets
+1,food hoarders
+1,fornicators
+1,grave robbers
+1,heretics
+1,idolaters
+1,kidnappers
+1,liars
+1,loiterers
+1,magic users
+1,masturbators
+1,murderers
+1,mutineers
+1,poachers
+1,prostitutes
+1,seditionists
+1,slanderers
+1,swindlers
+1,tomb raiders
+1,traitors
+1,undocumented foreigners
+1,usurers
+1,vandals
+1,water squanderers
+
+;culprit
+1,a species of sentient light
+1,a star named Dilgan or Cetus
+1,beings from another world
+1,malicious daemons
+1,the ancients
+1,the monsters who used to stalk the earth
+1,the old gods
+1,the spirits who live on the rim
+1,the Vykathi, who retreated deep underground
+1,well-meaning precursors, now extinct
+
+;custom_holiday
+1,the people celebrate [holiday] by [holiday_celebration]
+
+<!-- * D-E * -->
+
+;daemontype
+1,blood
+1,crane
+1,crying
+1,crystal
+1,feather
+1,fester
+1,glass
+1,grass
+1,hunger
+1,iron
+1,lightning
+1,spider
+1,time
+1,water
+1,weeping
+1,wood
+
+;dance
+1,the Cockroach dance
+1,the dance of the black spiral
+1,the Karo Batak dance
+1,the Mirror Waltz
+1,the Scorpion Ballet
+1,the tarantella dance
+1,the Tykon Wiggle
+
+;heroes_and_villains
+25,[tc],
+167,[ntc]
+
+;tc
+0,** gets trailing comma **
+1,Aava, the King’s Pet
+1,Aiolos Hippotades, the King of the Winds
+1,Aldia, Scholar of the First Sin
+1,Ani, the Flame of the Sun
+1,Arpad Vass, the Corpselight
+1,Biorr, of the Twin Fangs
+1,Boldwin, the Dirty Colossus
+1,Cerah, the Old Explorer
+1,daKlurker, the Smelter Daemon
+1,Eingyi, Lord of the Forge-City
+1,Elana, the Squalid Queen
+1,Hagar, the Flexile Sentry
+1,Kal-Purysh, the Time-man
+1,Kirk, Knight of Thorns
+1,Lud, the Old Iron King
+1,Meejhon Drao, the Zircus Master
+1,Mir, the Old Dragonslayer
+1,Mytha, the Baneful Queen
+1,Nashandra, the Daemon of Song
+1,Prowlers, the Last Giant
+1,Sinh, the Slumbering Dragon
+1,Vamos, the Crestfallen Merchant
+1,Velstadt, the Royal Aegis
+1,Vendrick, the Throne Watcher
+1,Yurt, the Silent Chief
+1,Zallen, the Burnt Ivory King
+
+;ntc
+0,** no trailing comma **
+1,Abbess Feeva
+1,Aldolphus the Plump
+1,Andre of Astora
+1,Apollonius Molon
+1,Arcus the {{ucfirst:[Color.all]}}
+1,Arhat the Fire-Lion
+1,Ashen Knight Boyd
+1,Aslatiel of Mirrah
+1,Basmus the Mermaid
+1,Benhart of Jugo
+1,Big Hat Logan
+1,Black Iron Tarkus
+1,Blacksmith Lenigrast
+1,Blue Sentinel Targray
+1,Bowman Guthrie
+1,Broodwife Greyjoy
+1,Captain Drummond
+1,Carhillion of the Fold
+1,Castaway Witch Donna
+1,Chancellor Wellager
+1,Chap the Cartographer
+1,Charito the Whore
+1,Chief Sarkhhl
+1,Chrysanthius of Sardis
+1,Corik the Black Cloud
+1,Covetous Daemon Ingward
+1,Cromwell the Pardoner
+1,Crooked Holly
+1,Damoxenos the Heretic
+1,Damoxenos the Orthodox
+1,Darkdiver Grandahl
+1,Darkstalker Kaathe
+1,Despicable Pap
+1,Diagoras of Melos
+1,Domhnall of Zena
+1,Dragonfang Villard
+1,Drifter Swordsman Aidel
+1,Dusk of Oolacile
+1,Elf-Queen Morganae
+1,Elisabeth the Pursuer
+1,Empress Moliko the Balance
+1,Eudoxus of Cnidus
+1,Fabious the Delayer
+1,Felicia the Brave
+1,Felkin the Outcast
+1,Filthy Edd
+1,Flying Swallow
+1,Garos of Assam
+1,Gragna the Builder
+1,Graverobber Blige
+1,Grey-clad Geshtinanna
+1,Griggs of Vinheim
+1,Gronas of Kadak
+1,Hagen of Troneck
+1,Hawkeye Gough
+1,Herr Bock of Golm
+1,Hexer Nicholai
+1,Holy Knight Aurheim
+1,Hypertheticles of Generica
+1,Janaka, Raja of Mithila
+1,Jatayu, King of Vultures
+1,Jester Thomas
+1,Jurgen the Witch
+1,Khonsu, Expeller of Daemons
+1,Kingseeker Frampt
+1,Kinnara the Bird
+1,Knight Lautrec of Carim
+1,Labra the Mariner
+1,Laddersmith Gilligan
+1,Lanival the Redeemer
+1,Larry the Triumphant
+1,Laurentius of the Great Swamp
+1,Licia of Lindeldt
+1,Little Jube the Caretaker
+1,Little Stooping Lugh
+1,Lone Hunter Schmidt
+1,Lonesome Gavlan
+1,Lost Sinner Patches
+1,Lucatiel of Mirrah
+1,Magerold of Lanafir
+1,Maldron the Assassin
+1,Maneater Mildred
+1,Manscorpion Tark
+1,Marvelous Chester
+1,Masterless Glencour
+1,Maughlin the Armorer
+1,Melinda the Butcher
+1,Merchant Hag Melentia
+1,Merciless Roenna
+1,Mhalduum the Singer
+1,Mild-Mannered Pate
+1,Mohammed Rafi
+1,Nennius of Clain
+1,Ortwin of Metz
+1,Oswald of Carim
+1,Paladin Leeroy
+1,Pandafilando of the Sour Face
+1,Patches the Hyena
+1,Peculiar Kindalur
+1,Pepi the First
+1,Petrus of Thorolund
+1,Phylomedusa
+1,Pilgrim Bellclaire
+1,Piotr the Skeptic
+1,Piper Su
+1,Piru the Devil
+1,Praise-God Barebones
+1,Queen Xaramilla
+1,Quelana of Izalith
+1,Quicksword Rachel
+1,Rapacious Andrei
+1,Reah of Thorolund
+1,Rhoy the Explorer
+1,Rickert of Vinheim
+1,Rimsin of Larsa
+1,Rockshield Baldyr
+1,Rosabeth of Melfia
+1,Royal Sorcerer Navlaan
+1,Ruined Aflis
+1,Sage Freke the Visionary
+1,Sarah Threeneedles
+1,Sargon of Akkad
+1,Saxo Grammaticus
+1,Scorpioness Najka
+1,Selk the Scorpion
+1,Sesphra of the Dreams
+1,Shaman-queen Kimiko
+1,Shiva of the East
+1,Silph the Uncanny
+1,Sir Alonne
+1,Solaire of Astora
+1,Solemn Veiled Orual
+1,Steady Hand McDuff
+1,Steel-willed Lorrie
+1,Steelheart Ellie
+1,Stone Trader Chloanne
+1,Straid of Olaphis
+1,Sweet Shalquoir
+1,Swimming Reindeer
+1,Tawnos the Light-smith
+1,The Child Emperor Chong
+1,The Dark Madonna
+1,The Duke’s Dear Freja
+1,The Fume Knight
+1,The Great Grey Wolf Sif
+1,The Great Orm
+1,The Hound of Rutilor
+1,The Lady of Teka
+1,The Lady of the Pillar
+1,The Looking Glass Knight
+1,The Lord of Rubbish
+1,The Mage of Storms
+1,The Maiden in Black
+1,The Nameless Usurper
+1,The Perfect Fool
+1,The Prowling Magus and her Congregation
+1,The Royal Rat Authority
+1,The Warlord 8 Deer Jaguar Claw
+1,The Wild Historian
+1,The Worm of Haftvad
+1,Thragon the Troll King
+1,Tiero the Rotten
+1,Tinacrio the Sage
+1,Titchy Gren
+1,Titus the Moneylender
+1,Tjorn the Rhymer
+1,Transcendent Edde
+1,Twiggy Shei
+1,Venerable Bede
+1,Volker of Alzei
+1,Vorgel the Sinner
+1,War Captain Sokrates
+1,Weaponsmith Ornifex
+1,Witch Beatrice
+1,Wounded Peri’el
+1,Xanthous King Jeremiah
+2,Grave Warden Agdayne
+2,Vengarl of Forossa
+
+;deadadventurerloot
+1,[deadlootmisc]
+1,a band of [posse_quality] [posse] from the {{lcfirst:[Utility.CompassDirection]}}
+1,a bizarre companion [bizarrecompanion]
+1,the enchanted [magicalcommonobject] of [heroes_and_villains]
+1,the famous [HaftedWeapons.StartNoDescription] called the [Compound Word Names.main]
+
+;deadlootmisc
+1,a [magicalcommonobject] that lets the holder grow as tall as a forest tree at will
+1,a blue-green antasura blade
+1,a bottomless jug of nutritious but bland yogurt
+1,the chisel of Lucatiel of Mirrah, said to have some magical power,
+1,a compass that always points towards the nearest [magic_compass]
+1,a great poisonous sword
+1,a head of troll
+1,a healing plant pressed in his palm
+1,a living chunk of the Deer Moon
+1,a key to the House of [housething]
+1,a loyal mechanical dog
+1,a lucky jewel cut in the shape of {{ia|[Animal.ordinaryanimal]}}
+1,a magic cloak which, when shaken between two people, ensures that they will never be able to see each other again
+1,a magic sword annointed with the blood of a slave in its forging; if drawn from its scabbard, the sun darkens and men and beasts fall asleep, and if completely removed, the world comes to an end,
+1,a magic word clenched between his teeth
+1,a map sold by Chap, who charted the [Dice.1d9],[Dice.1d9][Dice.1d9][Dice.1d9] islands of the sky
+1,a noose for the souls of the dead
+1,a piece of the Shield of Eagles
+1,a pure white jewel that hums
+1,a quiver of poisoned arrows from the star elves
+1,a salve that restores sight to the eyes of the dead
+1,a scroll that can return the shaft of a flying arrow back to the living wood and return the feathers to the bird’s wings
+1,a singing sword, one of the last,
+1,a staff that creates mountains
+1,a stone axe with the power to heal
+1,a sword that naturally rests pointing towards the nearest [magic_compass]
+1,a vial of sand from beyond the Lake of Dreams
+1,a wooden great-axe coated with steel venom, a poison that sickens metal, making it weak and easy to bend
+1,a Wyrd Stone, said to cause strange and improbable events to occur,
+1,an ancient stone mirror
+1,an impenetrable breastplate made of linen
+1,the armor of wasps
+1,the Book of the Opening of the Mouth
+1,the daemon familiar ABBA
+1,the fae lovers Whimsy and Caprice
+1,the familiar of Jurgen the Witch
+1,the Gloomy Shroud of Dark Days
+1,the heir to the Dornish throne
+1,the last writings of the Emerald Sage
+1,the ruby tribute from the hill tribes
+1,the sacred rod of Velstadt, the Royal Aegis
+1,the warbow of Chief Sarkhhl
+1,the wolf's tooth
+
+;decade_event
+1,for a convention
+1,for a counting of their number
+1,for a sacrificial ritual
+1,for an enormous flea market
+1,for an orgy of violence
+1,for the airing of grievances
+1,to appeal the high judge
+1,to compete for the Planto trophy
+1,to elect a new hierophant
+1,to exchange rumors and knowledge
+1,to perform some grim deed which preserves their youth
+1,to rebuild the 12 houses of night
+1,to renew a blood oath
+1,to sign their names to the Book of Time
+1,to settle conflicts through a team sport not unlike soccer
+1,to swap body parts
+1,to swap faces
+1,to honor and give relief to one of the four dwarfs who hold up the corners of the sky
+
+;decaying_corpse
+1,a celestial titan
+1,a fester daemon
+1,a gorging sprite
+1,a minor godling
+1,a sentient star
+1,a whale spider
+1,Baal, Lord of Murder,
+1,the deceased giant Antero Vipunan
+1,the first cyclops
+1,the great serpent [Demon name.Main]
+1,the Leviathan Queen
+
+;dominant_grp
+1,the idols of power
+1,the priesthood
+1,the senators
+1,the thing which neither eats nor drinks
+1,the wealthy
+1,their masters
+
+;Dungeon
+1,[feature]
+1,[hero]
+1,[monster]
+1,[origin]
+1,[treasure]
+
+;№1-6
+0,clear 4 potential reuse! :)
+1,first
+1,second
+1,third
+1,fourth
+1,fifth
+1,sixth
+
+;dwarfclanname
+1,Bascna
+1,Boar
+1,Bone
+1,Fire
+1,Gold Blood
+1,Iron Tooth
+1,Knife
+1,Morna
+1,November-Soul
+1,Ox
+1,Scorpion
+1,Stone
+1,Tiger
+1,Wind
+
+;elemntl_type
+1,earth
+1,fire
+1,ice
+1,lightning
+1,slime
+1,stone
+1,time
+1,water
+1,wind
+
+;eucatastrophe
+1,[good_rain] will fall from the sky
+1,[oppressed_grp] will receive their reward
+1,a [Color.all] tornado will carry all true believers to paradise
+1,a beetle will be placed on the tongues of the just
+1,Amenti will bring water to the parched and gaping earth
+1,Euthanatos, the good death, shall enter the homes of the virtuous on silent feet
+1,every grape shall yield 30 full measures of wine
+1,famine shall become plenty
+1,God’s angels will complete their census of all souled creatures and the world will at last be judged
+1,light will penetrate the house where we sit in darkness, dust our bread and clay our meat
+1,our friends will sail up from the underworld
+1,our rat friends will gnaw and devour the bow-strings and shield-straps of the invader, ending the siege
+1,our wicked race will be slain but for five pregnant women
+1,Sparklephus will swim from the south pole, bearing gifts
+1,Sweet Shalquoir shall make the fiery desert bloom
+1,the Arkangel will breathe new souls into our old bodies
+1,the blood of all the common men and women who died so Lud, the Old Iron King, could ascend to the throne will pour from the walls of the palace and end his cruel line
+1,the crones who make lament on the ruin mounds will cease their mourning for lost Combia
+1,the earth shall shine like fine copper
+1,the eggs of the soul-bird who protects souls from being lost on the paths of dreams will hatch into glorious winged light
+1,the elephant worm Tiero will be slain, molten metal poured down its throat
+1,the four-faced shining Reshupu will gaze upon the righteous
+1,the great {{ucfirst:[ordinal]}} Legion, who marched into a strange [Color.all] fog over [when] ago and vanished, will return to defend the world
+1,the Lord of Summer will no longer descend below the earth but reign forever in triumph over the Dry God
+1,the occult shall be made plain
+1,the peacocks will dance at the sight of heavy rain-clouds
+1,the rats and owls who live in ruined buildings will hear the good news and depart the city
+1,the secret doors of heaven will open and the air we breathe will become sweeter
+1,the wicked shall act as footstools for the humble
+1,Transcendent Edde will come to turn all our silver to gold and all our copper to tin-bronze
+1,we shall be slain by Vishnu, and Vishnu’s great spear will take us to Vishnu’s heaven, for even the wrath of Vishnu is a blessing
+1,we shall drink from the cup that is too sweet to pass
+1,we will lose our immunity to the virus whose side effect is happiness
+
+;exchangething
+1,addictive spiced jerky
+1,amulets from pillaged tombs
+1,baby skunks
+1,backpacks full of fingernails
+1,bitter white fish
+1,black paint made from the burnt bones of animals
+1,blood green mushrooms
+1,bronze axes
+1,charged magical batteries
+1,crystals from the moon
+1,cursed rings and bracelets
+1,dirty brown coal
+1,discarded skins
+1,docile tongueless halflings
+1,edible beetles
+1,exotic brightly colored feathers
+1,exotic fruits and vegetables
+1,fist-sized clumps of greasy hair
+1,foreign coin
+1,fresh corpses
+1,frozen cubes of blood
+1,garments sewn by virgins
+1,historical artifacts
+1,inscribed oracular bones
+1,iron rations and dwarf loafs
+1,jewels by the shieldful
+1,just hatched [Animal.animalreptile]s
+1,leaves from last fall
+1,loaves of bread with stones baked into them
+1,luminous plants
+1,news of faraway places
+1,old bones
+1,painful secrets
+1,petrified blood
+1,pieces of mummified bodies used for medicine
+1,pregnant [Animal.animalmammal]s
+1,pulsating [Animal.animalinsect] eggs
+1,relics of dubious saints
+1,serpents with healing venom
+1,soap rendered from angel fat
+1,spent magic wands
+1,stolen memories
+1,subterranean perfumes
+1,sweet honey from a virgin swarm
+1,tales of sad adventures
+1,tattered scrolls
+1,the birthslime of Reshupu
+1,the dark oily meat of gryphons
+1,the dust of disintegrated vampires
+1,the fingers of Chalkidiki
+1,the regalia of extinct houses
+1,the tears of lions
+1,the whereabouts of elderly family members
+1,tobacco leaves
+1,trinkets from the future
+1,unfamiliar flags from distant lands
+1,unnaturally smooth stones
+1,unwholesome recipes
+
+;excitingemployer
+1,during the war
+1,for a foreign power
+1,for the [royals]
+1,for the military
+1,for the Thieves’ Guild
+
+;excitingpast
+1,assassin
+1,enforcer
+1,field surgeon
+1,informant
+1,saboteur
+1,smuggler
+1,spy
+
+<!-- * F-G * -->
+
+;fab_pad
+3,in a tower [ruinedtower] near [landmark_natural]
+3,on an island [is] somewhere [maritime_locn]
+2,with the [huntingmonster] who dwell beneath the sands of the plateau
+1,on a barge pulled by swimming [herdanimal]
+
+;facial_desc
+10,with [fd]
+2,who tells a tale of [fd_tale]
+1,bearing mace and discus and conch
+1,bellowing and drunk
+1,clad in yellow robes
+1,cursed to weep until he goes blind
+1,filled with sorrow and rage
+1,from a class of birdcatchers and beggars
+1,from a land of crumbled brick, palm-scrub and dead water
+1,from [%foreign_adj][foreignland][%foreign_phrase], where soldiers tame bat-like dragons to ride into war
+1,from [%foreign_adj][foreignland][%foreign_phrase], where survivors of the flood dwell
+1,from [%foreign_adj][foreignland][%foreign_phrase], where witches take to the field in full armor like knights
+1,from the plains outside [%foreign_adj][foreignland], where many a shield and helm has fallen
+1,gaunt from fasting
+1,thin from eating roots and withered grass
+1,wearing a bloodstained toga
+1,wearing a costume, gaudy and sinister
+1,wearing a flaming glory coat
+1,wearing a suit of coin mail
+1,wearing a threadbare cloak stitched together from field mouse pelts
+1,who casts a golden shadow
+1,who smells like [Wampus Country Potions.taste]
+1,whose fleas have fleas
+1,whose only pleasure is the flame
+
+;fd
+1,a blazing torch in each hand
+1,a devil in his eye that burns like a meteor
+1,a dozen facial piercings
+1,a face permanently distorted by fear
+1,a false shadow
+1,a gleaming halo
+1,a halo of flies
+1,a heart big with war
+1,a kinder, gentler machine gun hand
+1,a metal hand
+1,a missing eye
+1,a net and a whirlwind
+1,a pet [pet]
+1,a shameful brand
+1,a sharkbite facial scar
+1,a shock of platinum hair
+1,a tattoo of [Utility.MiscSymbol]
+1,a thousand ears to hear oath-breakers
+1,a toothless grin
+1,a wind instrument made from a minotaur’s horn
+1,an artificial leg
+1,an unnatural odor
+1,bloody knees
+1,feet like gnarled roots
+1,hair of spun silver
+1,hands like terrible 5-headed serpents
+1,powers to loose and bind
+1,terrifying burns
+1,the hair of a bear
+1,the pall of many sleepless nights
+1,the reek of holiness
+1,the uncommon ability to turn into a toad
+1,wine-stained lips
+
+;fd_tale
+1,an adventurer who explored the palaces and catacombs of a great titan's memory
+1,an army who fights armorless and naked
+1,an assassin who kills all his victims by falling on them
+1,an assassin who works exclusively with flowers
+1,a beautiful woman with poison in her breasts disguised as a wet nurse and used as an assassin of infants
+1,a blue dragon which is simultaneously a river that floods
+1,a canteen full of gold coins found near a skeleton in the desert
+1,a city with pastries as tall as buildings
+1,a cook who makes the most exquisite meals in the world, but they can only be eaten once
+1,a cult the sultan burned alive who shouted cries of cheerfulness and joy as they perished
+1,a hero who built sky walls that blocked the sacrifices of men from reaching the sky, thus starving the gods
+1,a hollow cow made of gold with a little girl inside
+1,a king in chains from the country on the other side of the fire
+1,a mountain that’s actually the speech of a god
+1,a powerful shah, god-like, and filled with god-like grief
+1,a prince who gave his very eyes to a beggar
+1,a queen who gave birth to a gourd filled with 60,000 ants who she cherishes as her sons
+1,a saint cursed to live forever as an ooze
+1,a traveling bard who played the harp so badly, men died weeping with sorrow
+1,a villain reborn 550 times and the time-traveling bounty hunters who track down his past lives
+1,assassins who split a bounty, killing a prince partially by poison and partially by the sword
+1,birds who transform into rings with red stones when killed
+1,men so filthy rich they dye the stuffing of their pillows purple
+1,mermaids and sea serpents and magnetic boulders that send a compass wild
+1,stealing the cap off of a hobgoblin’s head and being led to a great treasure
+1,the dreams a poor man’s limbs had when they fell asleep
+1,the great adventurer Aurheim, who turned out to be a graverobber like all the rest
+1,the head of a gigantic black ox used as bait to catch the world serpent
+1,winged rabbits and the hounds which hunt them in the skies
+1,worshippers of [list of gods.real] from whose heads owls rise when slain in battle
+
+;feature
+1,{{ucfirst:{{ia|[Dungeon Overview.dungeonobject]}}}} on the [№1-6] floor [featureverb]
+
+;featureverb
+2,tells a tale of [fd_tale]
+1,can summon warrior maidens made of [elemntl_type], who visit dying soldiers, or those soon to die
+1,can transport a person to a matching one found [wilds_locn]
+1,causes food and drink consumed near it to become blood red
+1,causes time in the room containing it to pass at a much slower rate; every minute spent within is a day lost outside
+1,causes those who touch it to become stranger
+1,causes those who touch it to trade places with one of the four dwarfs who hold up the corners of the sky
+1,conceals a great treasure
+1,conceals a portal that leads to [landmark]
+1,emits a distinctive silence
+1,emits a strange noise that sounds like [strangenoises]
+1,exerts influence over butterflies, birds, bats and other creatures of the air
+1,exudes a slime that can be used as an ointment which prevents dead bodies from decaying
+1,exudes dungeon oozes and slimes
+1,has been imbued with intelligence and limited animation
+1,has evidence of having been used as a torture device for butterflies
+1,heals those who lick it
+1,is a masterpiece of the form; it should probably be in a museum
+1,is a one-way gate to Aphania, a snowy pure white hell
+1,is a one-way gate to a crowded dimension of insects
+1,is a one-way gate to a hobbit hole in Staddle
+1,is a one-way gate to a lush valley dotted with towers of blood
+1,is a one-way gate to a misty world where the buzz of dissonant trumpets make everything seem just out of reach
+1,is a one-way gate to one of the dozens of quiet, cheerless hells
+1,is a pilgrimage site for the Order of the Silver Beard
+1,is a sacred object blessed by [heroes_and_villains] in a previous age
+1,is a universal memory jar—when something is forgotten in the universe, the memory of it is stored here
+1,is all that remains of the mighty Combine Empire
+1,is covered in ancient graffiti
+1,is defended vigorously by [urbn_subjectsingular]
+1,is feared by [huntingmonster]
+1,is haunted by a cursed adventurer who shrunk to nothingness, until only their voice remained
+1,is haunted by [urbn_subjectsingular]
+1,is made of fool’s gold
+1,is made of hard light
+1,is made of solid gold
+1,is only visible to elves
+1,is sacred to [List of gods.real]
+1,is worshiped by [urbn_subjectplural]
+1,points the way to a secret passage
+1,poisons those who lick it
+1,recites the sad tale of Rosabeth of Melfia, beautiful and doomed
+1,repels followers of Law
+1,rests in the same room as a coffin which has a secret door at the bottom of it
+1,, if properly used, can render even a god nameless, natureless, futureless
+1,casts a shadow which, if stood in, renders someone invisible to the gods
+1,traps the spirits of things that die in the dungeon
+
+;fetishtype
+1,banana
+1,chainmail
+1,dice
+1,fire
+1,goblin
+1,leather
+1,magic wand
+1,Peepum’s nasty gum
+1,puppet
+1,unicorn
+
+;fire_tender
+1,barren women
+1,castrated boys
+1,celibate priests
+1,dying elders
+1,starving eunuchs
+1,temple whores
+
+;foreignland
+1,Adommim
+1,Astora
+1,Boleria
+1,Calatin
+1,Carim
+1,Dilmun
+1,Dokora
+1,Forossa
+1,Ith
+1,Izalith
+1,Kamikos
+1,Lanafir
+1,Langenfirth
+1,Lindeldt
+1,Lintukoko
+1,Lothal
+1,Marruka
+1,Melfia
+1,Mirrah
+1,Olaphis
+1,Old Calabar
+1,Semper
+1,Tartessos
+1,Tegea
+1,Thorolund
+1,Zaragoza
+1,Zena
+
+;funeralcustom
+1,bodies are put on display in elaborate sepulchers made from crystal, silver and marble
+1,coins are placed under the eyelids of the dead to pay the Dweller in the Hennu Boat
+1,it is considered an act of piety to mummify a cat
+1,rich men without any name to protect them are thrown into a furnace that heats the temple
+1,the blood of executed [criminals] is used to treat epilepsy
+1,the bodies of sacred bulls are buried so their horns protrude from the ground
+1,the bodies of elders are tied to horses, which are then driven into the sea
+1,the bones of the dead are ground up and baked into bread, which the living consume in accordance with the scripture
+1,the brains of the dead are stored in opaque “dream” jars
+1,the corpse of a father is embalmed, stuffed with fragrant herbs, and kept in the home to maintain its seat at the table. The corpse is served, bathed, and shares a bed with the mother of his children, for whom it is forbidden to remarry
+1,the dead are left on the roof of the church instead of buried, so they will be eaten by the angels of God instead of the worms of the earth
+1,the dead are left on a high plateau to be devoured by carrion birds
+1,the dead are not burned, as this would defile the Flame; instead, they are thrown into the ocean
+1,the dead are placed on trial, their corpse set before their fellows, who condemn the faults and mistakes of the deceased
+1,the dead are preserved by means of drugs, spices and linen bandages
+1,the dead are said to live again for one hour every year
+1,the dying are left out on the great ice-fields to freeze, in the hopes that future generations may find a cure for death
+1,the dying are lit on fire, serving as human torches to illuminate cruel parties
+1,the elderly, upon reaching their 300th year, voluntarily begin an exclusive diet of honey. When death comes, they are laid to rest in a stone coffin filled with honey and stored alongside the others of their generation to be consumed by their descendants in a hundred years, as they themselves consumed their mellified ancestors
+1,the king, upon death, is laid on a pyre in the great arena, his prized hunting falcon chained to his wrist, his people in solemn mourning. As the king burns, the falcon beats its wings at the length of the chain, trying to escape the heat and smoke
+1,the people, effectively immortal, are arbitrarily assigned a number between 1 and 1,000 at birth. When that age is reached, the person is euthanized in a religious ceremony necessary to control the population
+1,the sick are smothered by specially trained dogs
+1,the skin of the deceased is used to bind large books, which are lovingly cared for in a community library
+1,the spirits of the dead live in stone houses and must be fed or they will starve, cursing their neglectful family
+1,the teeth of the dead are extracted and used as artificial teeth by the living
+1,wax masks are made of the dead and worn by professional actors at the funeral, who imitate the dead’s mannerisms and speech. Every family has a cupboard which contains the masks of their loved ones throughout history, along with instructions to future actors, and large funerals employ many actors who bring the dead back to life in this manner
+1,a great feast is held in honor of every [№1-6] bear killed. Much of the celebration consists of attempting to persuade the spirit of the bear that it died accidentally and was not murdered
+
+;geas
+1,bellow always
+1,never harm a bird
+1,never refuse an invitation to a feast
+1,sleep under the stars each night
+
+;geyserspray
+1,arrows with the faces of lions and tigers and the gaping mouths of wolves
+1,thick bubbles, each containing a shade from the underworld,
+1,clouds of insects
+1,frigid quicksilver
+1,holy water
+1,hot blood
+1,hundreds of bats
+1,surplus honey from an immense underground hive
+1,sweet-smelling wine
+1,the sighs and moans of the damned
+1,thick yellow smoke
+
+;ghostriver
+1,a black sailed ship crewed by beautiful women ferrying souls to the underworld
+1,an eerie mist that settles above the water
+1,corpses of people floating past who are not dead yet, but will be before the next full moon
+1,dead friends drifting downriver in a yellow rowboat
+1,primitive river travelers from the past paddling by lazily
+1,spirits of those who have drowned standing silently in rows, their heads visible above the waterline
+1,strangely dressed men and women in loud, fast-moving boats buzz past
+
+;ghostverb
+1,communicate
+1,dance
+1,end their days
+1,exchange memories
+1,fornicate
+1,play chess
+1,trade lies
+
+;good_rain
+1,holy bread
+1,liquid gold
+1,sweet water
+
+<!-- * H * -->
+
+;harbors
+1,Barge Town
+1,Belcher’s Bay
+1,Black Harbor
+1,Dalmatian Point
+1,Ras Shamra
+1,the Bay of Pigs
+1,the Cape of Tsargoth
+1,the Horn
+
+;herd_adj
+1,carnivorous
+1,fire breathing
+1,insect-like
+1,man-eating
+1,metallic
+1,telepathic
+1,translucent
+1,two-headed
+1,undead
+1,winged
+
+;herdanimal
+1,camels
+1,dogs
+1,elephants
+1,horses
+1,salamanders
+1,reindeer
+1,wolves
+
+;hero
+1,[heroname] entered the dungeon with [deadadventurerloot] [hero_goal] and never saw daylight again
+
+;hero_goal
+1,to dispel the [elemntl_type] curse placed on them for laughing at the lama's pyre
+1,to purge it of [huntingmonster]
+1,to put an end to [creepyvillain]
+1,to question the oldest [oldest] in the world
+1,to reclaim the [prophecyartifact] rumored to be hidden within
+1,to recover the bones of [heroes_and_villains]
+1,to rescue [urbn_subjectsingular] trapped in {{ia|[urbn_place]}} on the [№1-6] floor
+1,to seek their family members who were transformed into [herdanimal] by [creepyvillain]
+
+;heroname
+1,[Fantasy Names.mainNoLabel]
+3,[heroes_and_villains]
+
+;historicalperson
+1,{{ucfirst:[brigandnames]}}, a legendary gang of brigands,
+1,[heroes_and_villains]
+1,[Fantasy Names.mainNoLabel], the legendary [occupation],
+1,Prince [Fantasy Names.mainNoLabel]
+1,Princess [Fantasy Names.mainNoLabel]
+1,The [dwarfclanname] Clan elders
+
+;HPandF
+2,in [%foreign_adj][foreignland][%foreign_phrase], [funeralcustom]
+4,in [%foreign_adj][foreignland][%foreign_phrase], [punishment_custom]
+4,in [%foreign_adj][foreignland][%foreign_phrase], [custom_holiday]
+
+;holiday
+1,birthdays
+1,Black Lodge Day
+1,King's Day
+1,Mandatory Organized Joy Day
+1,Seeking Day
+1,the Abundance of Enlil
+1,the anniversary of the victory at [urbn_cityname]
+1,the birth of [heroes_and_villains]
+1,the defeat of [heroes_and_villains]
+1,the Dragon-Boat Festival
+1,the end of winter
+1,the Feast of Lamps
+1,the harvest-time
+1,the Kronia on the [ordinal] day of Hekatombaion
+1,the martyrdom of Saint [Irish Celtic Names.irishsurname]
+1,the month of Karttik
+1,the Punishment of the Dogs
+1,the Purification of the Trumpets
+1,the vernal equinox
+1,the winter solstice
+
+;holiday_celebration
+3,embarking on a pilgrimage to [landmark]
+1,a 36-hour party financed by the state
+1,burning seven longbows and seven quivers of arrows in the lama's pyre
+1,burying two [ancientpeople] alive in the marketplace
+1,carrying sacred shields around the city
+1,carrying statues of [List of gods.real] around the city
+1,cutting the lips, ears, and tail off the sacred horse
+1,dissolving pearls in vinegar and drinking the magistery of pearl
+1,dressing up as [huntingmonster]
+1,drunk, naked caroling
+1,eating a traditional meal of [FantasyMenu.MainMealsExotic]
+1,eating live [Animal.animalmammal]
+1,emptying the barrel of sacred fish into the Lake of Dreams
+1,exchanging names; the best loved end up with more than one name, while the pariahs end up with no name at all
+1,fasting and quiet contemplation
+1,freeing that year’s best-behaved slave
+1,genital painting
+1,going to a holy hill and separating the lambs from their mothers in the hope that their plaintive bleating will move a god to pity
+1,hanging masks from trees
+1,having {{ia|[annualcontest]}}
+1,inhaling smoke from the burning of sacred wood to gain visions of other lives
+1,lavish public games
+1,letting children add laws to the law-books
+1,offering black sheep to the gods of night
+1,partying with permission on the king’s personal pleasure barge
+1,performing mysterious rituals to extract the sunlight from vegetables
+1,planting trees
+1,playing fishermen’s games
+1,practicing bird hatred
+1,racing in chariots pulled by ostriches
+1,sacrificing three [herdanimal] on a ten-colored stone
+1,sailing thousands of burning candles down the river, illuminating the night
+1,sharpening wooden swords and fighting to first blood
+1,releasing hundreds of helium-filled canvas balloons from a crack in the ground
+1,smoking a sacred herb
+1,sowing organs to be harvested in the coming year
+1,spreading the fat of wild dogs and carpet snakes on their faces
+1,swapping spouses
+1,tearing down and rebuilding the Hall of the Shoemakers
+1,telling tales around a bonfire
+1,unbinding the feet of statues, so they can participate in the holy dances
+1,using slaves and foreigners as furniture
+1,wearing black garments and eating black food
+
+;housething
+1,1000 Eyes
+1,Aten, where the Sun God dwells
+1,Black and White
+1,Blue Light
+1,Caesar
+1,Glad Music
+1,Glee
+1,Jurgen the Witch
+1,Love
+1,Salamanders
+1,Stone
+1,Swans
+1,the Pyramidion
+1,Wasps
+
+;howitwaslost
+1,during the Long Night
+1,in the [propheticwar]
+1,in the Annihilation of Zhao
+1,in the Battle of [propheticbattle]
+1,in the Catastrophe of [urbn_cityname]
+1,in the days of King Psammetichus
+1,in the Great Abyss
+1,in the Great Chaos
+1,in the mutinies of 14 AD
+1,in the Red Scarf Rebellion
+1,in the sacking of Rome
+1,in the Year of the Four Emperors
+1,to barbarian raiders
+1,to pirates in the Sea of Blood
+1,to the master thief Piper Su
+1,when it sank into the Ocean of Tears
+1,when it was buried under a waterfall of sand
+1,when the Temple of the Fluvial Mysteries was looted
+
+;huntingmonster
+2,[daemontype] daemons
+1,[elemntl_type] spirits
+1,angels
+1,centaurs
+1,dinosaurs
+1,djinni
+1,dryads
+1,fire yetis
+1,ghosts
+1,ghouls
+1,human rats
+1,minotaurs
+1,pseudo-giants
+1,sea serpents
+1,sky elves
+1,unicorns
+1,vampires
+1,werewolves
+1,witches
+
+;husband_adj
+1,brainwashed
+1,brutish
+1,childlike
+1,foul-smelling
+1,handsome
+1,homesick
+1,idiotic
+1,ignored
+1,silent
+
+<!-- * IJKL * -->
+
+;island
+1,an island [is]
+
+;is
+4,populated by [islandpop]
+4,sacred to [island_sacred] and protected by [islandprotector]
+4,where [washups] washed up,
+4,with [island_riches]. The island is protected by [islandprotector]
+2,populated by [islandpop] bound by a spell to [island_riches],
+2,where [landmark_manmade] can be found
+1,of naked rock with an indestructible bronze wall surrounding the palace where Aiolos Hippotades, the King of the Winds, lives in incest with his sisterwife (and six sonefews and doterneeces),
+1,of penguins all baptized by St. [Irish Celtic Names.irishsurname],
+1,surrounded by courteous fish who answer questions in return for news of faraway places
+1,that breathes and bleeds, the last example of a prehistoric creature,
+1,where all the objects and people lost at sea eventually wash up,
+1,where dryads perform the spring rites each year to wake the dreaming earth from its winter sleep,
+1,where no one who leaves it can ever find it again
+1,where the beaches are made from precious jewels instead of sand
+1,where the hero [heroes_and_villains] was born holding a golden blade
+1,where the Jaguar Lady is propitiated by both the lighting of candles and grisly blood rituals
+1,where the lion-god Aker guards the Gate of the Dawn through which the sun passes
+1,where the towering pole which holds up the tent of the sky is found, protected by [islandprotector],
+1,where the world’s [Animal.animalinsect] population arrives every seventeen years to honor their obscure god,
+
+;islandpop
+1,75 great bearded serpents who live in peace and prosperity and get drunk off milk
+1,a heinous war criminal [facial_desc]
+1,a living throne supported by 32 stone angels
+1,a monster with a dozen heads, all speaking at once, some in the language of the gods, others bellowing like a bull or yelping like a puppy
+1,a powerful wizard and his daughter
+1,a race of ancient stonemen
+1,a reclusive hermit [facial_desc]
+1,a religious community, disgusted with the world,
+1,a seductive witch
+1,a simple harmonious people
+1,a somber miller who grinds all the grudges in the world
+1,a transparent woman whose child can be seen growing within her womb as though in a crystal casket
+1,a tribe of weresharks
+1,a woman of furious gold
+1,alluring women
+1,an enormous lizard
+1,an exiled royal family
+1,an incredibly venomous species of spider known as the tropical widow
+1,an order of rogue scholars
+1,baby [elemntl_type] elementals who enter the world here through a planar hole
+1,birdmen who spin long pearly webs of cloud from a high mountain
+1,birds 14 feet tall
+1,bloodthirsty pirates
+1,craftsmen who make tables that stand without legs through a closely guarded secret process
+1,crones who sell winds to sailors in the shape of knotted handkerchiefs
+1,decadent nobles
+1,druidic children who make rain by bathing a female and male cat
+1,enemies of magic
+1,intelligent apes who sing songs of praise to their ape-gods
+1,invisible daemons with human familiars who act as their agents
+1,men who, forbidden from taking human wives, have wed a species of tall storks
+1,men who hate nothing
+1,one of the Boddhis
+1,retired adventurers
+1,salt pixies
+1,sand dwarfs
+1,savage sorcerers
+1,shipwrecked mariners
+1,snails with ornately decorated house-sized shells
+1,stone men who mine fire which they eat
+1,the dreams of Thethomos
+1,the last siren
+1,the sad remnants of the Combine Empire
+1,washed-up survivors from a future calamity
+1,wise giant tortoises
+
+;islandprotector
+1,a continuous hurricane
+1,a crystal labyrinth
+1,a giant bird with a beak made of bone
+1,a huge man made of brass
+1,a security system of crucified cyborgs with laser eyes
+1,a threescore-and-ten-headed [elemntl_type] hydra
+1,a two-hundred foot long black and white sea serpent
+1,a strange time distortion field
+1,an elephant known as Cloud-Mountain
+1,ancient magical wards
+1,angels mounted on steeds of fire
+1,birds with emerald talons
+1,clouds of fruit flies so thick they clog the lungs
+1,dozens of fearsome fire cats
+1,ferocious dogbirds
+1,fifty maidens armed with water knives
+1,fires, each with their own voice and face
+1,handsome men who race across the skies in chariots pulled by vultures, hurling javelins down from on high
+1,high, unscalable cliffs pocketed with harpy nests
+1,hostile giants who hurl stones from shore
+1,hostile vegetation
+1,huge red hippopotami
+1,impenetrable thorns
+1,innocuous lizards that devour magic 
+1,jellyfish that move on currents of air
+1,manslaying robins
+1,nine maidens who share the same name
+1,poisonous red eel-toads
+1,ravenous sharks
+1,robed, pipe-smoking tigermen
+1,scaly jaguars with crocodile-like back ridges
+1,scores of traps
+1,shores of jagged glass
+1,the 16th Armored Women’s Phalanx
+1,the agency of daemons
+1,the deadly effluvia emanating from mounds of decaying fruit unique to the island
+1,the Great Pretender
+1,the Order of the Silver Heart
+1,the Rune of the Blackbird
+1,the Voyeur
+1,thousands of bird-sized moths attracted to human blood and sweat
+1,tiger crabs the size of dogs
+1,twenty living statues with emerald eyes
+1,undead guardians who slay with ruthless gusto
+1,undetonated mines from an ancient war
+1,unintelligent dragons with bat wings and the faces of wolves
+1,violent and monstrous sea gods
+1,waves large as castles
+1,white fire and a living red wind
+
+;island_riches
+1,{{ia|[elemntl_type]}} elemental trapped in a golden cube
+1,a bush whose berries, when eaten, turn the eater invisible
+1,a feast table where a hero can never leave hungry, but a coward will never eat his fill
+1,a feather of the archangel Uriel, said to transform even the worst sinner into a saint
+1,a golden dog, god-forged
+1,a great tower of [Color.all] stone
+1,a healing sanctuary that welcomes any who are in need
+1,a map of the universe constructed from stone
+1,a massive bronze gong, visible from the sea
+1,a massive purple pyramid made from amethyst crystal
+1,a pool of desire fire
+1,a pool of unearthly liquid metal, waiting to be forged
+1,a ring of standing stones which can transport believers to other rings
+1,a round stone table with thirteen seats around it; anyone sitting at this table will see the other seats fill with the ghostly forms of their fathers and grandfathers, six generations back, and their children, six generations forward, and be able to communicate with them all
+1,a spring whose water grants eternal youth
+1,a temple dedicated to an ancient sea-god where the bones of a great sea serpent hang above the coral altar
+1,a temple dedicated to Chronus, which holds Time’s Great Healing Claws
+1,a waterfall whose magic water can annul any curse, if stood under for the length of a full moon
+1,a ziggurat built seventeen thousand years before the reign of Amasis
+1,an alien tomb that looks like a towering electric blue beehive
+1,chryselephantine statues of the elder gods
+1,gold-producing trees
+1,nests of magical birds of prey whose feathers allow men to fly
+1,priceless relics carved from multi-hued coral
+1,shining metal buildings with no doors
+1,the buried treasure of [Pirate Names.main]
+1,the holy chair of Mukhtar
+1,the legendary Library of Axumandria, whose doors no one has passed through for over a century
+1,the Mysteries of the Cabiri
+1,the World Toad, who keeps an entire dimension in its mouth
+1,vast fields of {{lc:[Utility.Jewels]}}
+
+;island_sacred
+3,[Fantasy Pantheon.fulldescription],
+1,[membership], a group which strives to [order_purpose]
+1,a many-armed god of silk
+1,an old god, said to keep darkness fettered by a chain
+1,an unnamed god with four faces who brings the storm
+1,Apep, the great serpent
+1,Ba’al Hammon, who gave law to the fauns and nymphs,
+1,fire yetis who live near one of the hells
+1,Korvak, the Hunting Lord
+1,superstitious sailors
+1,the [huntingmonster] of [%foreign_adj][foreignland][%foreign_phrase]
+1,the Anunnaki who dwell at the world’s secret ends
+1,the Buried People
+1,the cult of Serapis
+1,the Dream Legion, a half-cult, half-vigilante group that punishes and rewards people for the deeds they do in dreams
+1,the goddess of the death which is not eternal
+1,the Kurgarru and the Kalaturru, whom none remember
+1,the Mermaid Queen Amanbella, whose servants will grab onto passing ships, stopping them in place in order to ask “Does Prince Axum yet live?” If the sailors answer “Yes, Prince Axum is alive and still rules the world of men,” the mermaids will ensure fine winds blow. If the sailors answer “No”, the mermaids will gnaw holes into the ship, then drown all survivors. The island is beautiful
+1,the Numina, divine beings without form or face,
+1,the obscure banana gods
+1,the Prince of 7 Madnesses
+1,the salt elves
+1,the Seagull, Osprey and Albatross Company
+1,the snake-haired, darkness-vomiting Limmungerran
+1,worshipers of [List of gods.real]
+
+;kinganimal
+2,bear
+2,duck
+2,gibbon
+2,jackal
+2,lion
+2,mouse
+2,terrible swan
+2,wolf
+1,snake
+1,stuffed animal
+1,young boy
+1,young girl
+
+;knowledgething
+1,ancient languages
+1,Darkness-With-No-Bottom
+1,ghost rock
+1,stones which fall from the sky
+1,the [huntingmonster] of [%foreign_adj][foreignland][%foreign_phrase]
+1,the Aten Heresy
+1,the “bonus” bones found in ancient skeletons
+1,the broken places
+1,the cruelty of angels
+1,the gods of blood and thunder
+1,the history of gray elves
+1,the iron ratio
+1,the Kavorka, a sect of [huntingmonster] of which there can only be 40 at a given time
+1,the Limmungerran
+1,the others
+1,the paintings, poems, and architecture—in short, the culture—of daemons
+1,the Turnings and Windings
+
+;landmark
+1,[landmark_manmade]
+1,[landmark_natural]
+
+;landmark_manmade
+1,[urbn_cityname]
+1,Fort Vonnegut
+1,Sana’ati Dyaus Drui’tas Fortress
+1,Taako’s Folly
+1,the Alchemist’s Tower
+1,the Arch of Neferatem
+1,the artificial mountains
+1,the Black Pyramids
+1,the Bridge of Chains
+1,the Bridge of Flowers
+1,the Bridge of Keys
+1,the Chapel of Foxes
+1,the Church of St. Oswald, built from the bones of pagans
+1,the Doors of Pharros
+1,the Faces in the Mountain
+1,the Gates of Dawn
+1,the Golden Ossuary
+1,the grave mound of Lerga
+1,the Graveyard of Empires
+1,the Ice Fort
+1,the Imitation Zone
+1,the Kingsmen’s Lodge
+1,the Lantern Forest
+1,the Minaret of Jam
+1,the Nursery of Stars
+1,the Oasis-city ruins
+1,the old festival grounds
+1,the old toll road
+1,the old tournament grounds
+1,the Orectic Enclave
+1,the Parakku Sanctuary
+1,the Porcelain City
+1,the Rainbow Gardens of the Lady
+1,the Sin Gate and the Holy Gate
+1,the Soul-Palace of Orual
+1,the statue of the horse
+1,the Steps of Lamentation
+1,the temple of the Holy Order of Saint [Irish Celtic Names.irishsurname]
+1,the Tantalus Arbor
+1,the Teutoburg Memorial
+1,the Tower of Glass
+1,the Wandering Tower
+1,the Watchtower of Perseus
+1,the Xyloid Spires
+1,the Zaulfung Stones
+
+;landmark_natural
+1,a field of black flowers
+1,a mountain carved into a boar by an ancient god
+1,Bakhau and Manu, the mountains of sunrise and sunset
+1,Corsair’s Rock
+1,Crastor’s Gap
+1,Elmet’s Remains
+1,Gibbet Marsh
+1,Kai Canyon
+1,Mirror Lake
+1,Querti, a double cavern shaped like 2 breasts
+1,Shit Creek
+1,Snake-Bone Gorge
+1,the {{ucfirst:[Color.all]}} River
+1,the Boiling River
+1,the Bonefields
+1,the Borderlands
+1,the Casawary Islands
+1,the corpse of the river
+1,the Cradle-land of Zazamanc
+1,the Desert of Ro
+1,the Eagle’s Nest
+1,the Fangs of Ushnish
+1,the Greater Fist of Heaven
+1,the Grinderwald
+1,the haunt of jackals
+1,the high pass
+1,the Hollow Chasm
+1,the jackal-trails
+1,the Jealous Queen’s Peak
+1,the Knotty River
+1,the Lake of the Gazelle
+1,the Mousemarch Mountains
+1,the Oasis of Marr
+1,the Outer Wilds
+1,the Place of Truth
+1,the Quiet Forest
+1,the Region of Stone
+1,the River of Filth
+1,the River of Rubble
+1,the Salt Country
+1,the Scratch Lands
+1,the steel-colored Wolflake
+1,the Sweetwoods
+1,the Troll Pines
+1,the Uncanny Valley
+1,the Ushas Shores
+1,the Vale of the Acacia
+1,the Vile Coast
+1,the Yestern Shoals
+
+;lawnornament
+2,[Animal.ordinaryanimal]
+1,dragon
+1,dwarf
+1,elf
+1,gnome
+1,goblin
+1,troll
+
+;light_source
+1,a glowing [Color.all] pool
+1,a feather of the archangel Uriel
+1,a seventieth part of the moon’s light, stolen from the moon goddess
+1,a shaft through which light from Heaven descends
+1,a sword that recounts all of the deeds it has performed
+1,a thousand beautiful boys holding golden cups
+1,an artificial star
+1,bio-luminescent fish kept in towering wall aquariums
+1,bricks of hard light
+1,fire kept static in time cubes
+1,human arms that grow from the walls holding torches
+1,jars of different colored will o'wisps
+1,modern electric lighting powered by a generator
+1,rigid embalmed snakes with torches in their mouths
+1,silver skeletons with glowing ruby eyes
+1,tall candles with [Color.all] flames
+1,the ever-burning corpse of [heroes_and_villains] hanging from the ceiling
+1,the high beams of a pristine 1954 cherry red Cadillac Eldorado
+1,the Queen of Northgales and the Queen of Wastelands
+1,white, star-like ants
+
+
+
+;Local
+2,{{po|[Fantasy Names.mainNoLabel]}} secret desire is to [local_desire]
+2,[Fantasy Names.mainNoLabel] fished up something really strange from the Lake of Dreams: [strange_fish]
+2,[Fantasy Names.mainNoLabel], [Quick NPC.main] and a racist, believes [local_racist]
+2,There are strange things happening every day. For instance, [local_strange_thing]
+1,[Fantasy Names.mainNoLabel] wanted to be {{ia|[Quick NPC.RichNPC]}} but ended up {{ia|[Quick NPC.PoorNPC]}}
+1,[Fantasy Names.mainNoLabel], [Quick NPC.main], recently inherited {{ia|[urbn_place]}} in [urbn_cityname] from their uncle, a notorious [lucrativecareer]
+1,[Fantasy Names.mainNoLabel], [Quick NPC.main], [npctonpc] [Fantasy Names.mainNoLabel], [Quick NPC.main]
+1,[Fantasy Names.mainNoLabel], [Quick NPC.main], is descended from the King of [foreignland][%foreign_phrase], known as a friend of [criminals] and driven from power [when] ago. He supposedly held his exiled court in {{ia|[urbn_place]}}
+1,[Fantasy Names.mainNoLabel], [Quick NPC.main], is related to [heroes_and_villains] by mother’s blood
+1,[Fantasy Names.mainNoLabel], [Quick NPC.main], [slander] … (but you didn’t hear that from me!)
+1,[Fantasy Names.mainNoLabel], [Quick NPC.main], keeps [secret] buried under [buryingplace] in their yard
+1,[Fantasy Names.mainNoLabel], [Quick NPC.main], knows more about [localtopic] than they let on
+1,[Fantasy Names.mainNoLabel], now [Quick NPC.main], used to be {{ia|[excitingpast]}} [excitingemployer]
+
+
+;local_desire
+3,find the tomb of [who_is_buried] while there’s still time
+3,prove they’re a better [occupation] than [Fantasy Names.mainNoLabel]
+3,explore the lands beyond [sea_landmark]
+1,be a better archer than Bowman Guthrie, whose arrows transformed into hunting birds mid-flight
+1,become a Royal Remembrancer, reminding the king of everything because kings have no memory
+1,breed a new, hardier strain of dream lotos
+1,bring the [huntingmonster] back from extinction
+1,build a trophy from the broken ship prows of the Chaldean fleet
+1,complete a history of the [Dice.1d100] emperors of the Combine Empire
+1,debate with the philosopher-kings of [%foreign_adj][foreignland][%foreign_phrase]
+1,die in a weightlifting competition
+1,drink dragon's blood and learn the speech of birds
+1,drive a chariot pulled by lions and bears
+1,dry their hands on the long hair of a slave
+1,feed the lions who pull the chariot of the sun
+1,find a cure for stomach-worms
+1,free a slave
+1,get over their fear of [prejudicetarget]
+1,have 12 palaces, one for each month of the year, and in each palace, a concubine for each day of the month
+1,hunt the Gray Panther and make a cloak from its skin
+1,live like the sons of the wise
+1,never marry and childless die
+1,oversee the construction of a cathedral that will take a dozen generations to complete
+1,publish a cookbook of recipes for swan and peacock meat
+1,replace living oracles with a kind of fortune-telling slot machine
+1,rival the crime of Chrysanthius of Sardis, which horrified the gods
+1,sail the 3000 rivers and steal a kiss from the sister nymphs of each river
+1,sleep forever in a cave without aging
+1,spill the blood of infidels to water the lawns of paradise
+1,spread civilization with fire and a Combine sword
+1,swim across the Lake of Dreams
+1,tie fluttering white birds to his chariot
+1,train the fish and eels in the pond to respond to their names
+1,visit [%foreign_adj][foreignland][%foreign_phrase] when the grapes begin to change color
+1,write a law that stands the test of time
+
+;local_racist
+1,[local_racist_dwarf]
+1,[local_racist_elf]
+1,[local_racist_hobbit]
+1,[local_racist_human]
+
+;local_racist_dwarf
+1,dwarfs all come from a group of human criminals condemned to work in a gold mine who ended up trapped underground due to an earthquake. After thousands of years of inbreeding and cannibalism, the modern dwarf began to emerge
+1,dwarfs are so dumb, their greatest general, Steady Hand McDuff, laid siege to an empty city for over a year
+1,dwarfs are so obsessed with justice, their great king Zallen is commended for having tried and hung a mouse for eating one of his subject’s kernels of corn
+1,dwarfs carve their children out of stone and precious jewels
+1,dwarfs have no souls, so you can do whatever you want to them with no moral repercussions
+1,dwarfs, having lived underground, think of Hell as a high tower ascending into a limitless void
+1,dwarfs were formed from maggots in the rotting corpse of [decaying_corpse]
+1,dwarfs worship a deity best likened to a living slot machine who rewards their greed with increased material returns
+1,female dwarfs have beards that rival the males’
+
+;local_racist_elf
+1,Elf-Queen Morganae, whom elves revere as the pinnacle of natural beauty, is really a dog-ugly hag glamoured up with fae charms
+1,elves were only recently ‘uplifted’ by a meddlesome interdimensional imp, who gave them their beautiful cities and culture. Before that, they were primitive ulfs, graceless clods too stupid to even develop a language
+1,elves are closer to trees than to humans, with wooden bones and 'organs' that process food into internally stored fertilizer
+1,elves are useless; their bones are too brittle to perform any real work without risking injury
+1,elves’ longevity comes from bathing in the blood of humans, kept stored in a great well
+1,elves are lazy do-nothings, keeping dozens of specialized slaves; one’s entire purpose might be to turn a certain doorknob, while another would open the door; still another would remove a guest’s cloak, while a fourth hangs the cloak
+1,female elves must bewitch men in order to get pregnant—all male elves are sterile
+1,one should never accept an elf’s dinner invitation: they’ll serve non-elves their own sweet-smelling waste
+1,the great elf folk-hero Peri’el actually died during an epileptic fit among a herd of swine
+
+;local_racist_hobbit
+1,hobbit magicians are a joke because the hobbit brain is objectively smaller than the brains of other races
+1,hobbits are all hicks with no family values who esteem pigs more than their own sons
+1,hobbits were forged from the blood of the arch-criminal Chrysanthius
+1,hobbits love one sound above all others: that of others working
+1,hobbits never wash their foot hair because they nurture the parasites that grow there
+1,pixies and Pyms arise as a result of disgusting unnatural acts hobbits perform with the trees surrounding their homes
+1,hobbits steal luck from everyone they encounter, deliberately ruining the fortunes of their neighbors
+1,Titchy Gren, the great hobbit burglar who supposedly stole a dragon’s hoard, actually just snuck into the king’s treasury the day of the great castle fire like a common looter
+
+;local_racist_human
+1,humans engage in a gross act likened to a “wet hug” in order to further their miserable species
+1,humans ruin their own lands, which is why they’re always out conquering
+1,humans think the most learned man of all is the man who commands 30 legions
+1,humans were crafted by the elven gods as a kind of art experiment to create an ugly elf
+1,humans would rather climb a mountain for a moment of glory than write a poem that lasts through the ages
+1,King Jeremiah, far from being the brave lord the humans believe, dressed in slave garments to escape capture at the Battle of [propheticbattle]
+1,Oswald of Carim, worshiped as a living saint, is a charlatan who uses cheap magic powders to impress his feeble-minded human followers
+1,that the philosophies of humans obscure the truth, like a torch which gives off smoke but no light
+1,when a human is talking, he’s lying; when silent, he’s stealing
+
+;local_strange_thing
+1,{{ia|{{po|[Quick NPC.PoorNPC]}}}} dog has started to speak the language of men
+1,{{ia|{{po|[Quick NPC.PoorNPC]}}}} child was caught in an enormous spider web; luckily the spider was no where to be found
+1,{{lcfirst:[Quick NPC.main]}} found a map behind a painting bought at an estate sale
+1,{{lcfirst:[Quick NPC.main]}} has started calling themselves the Knight of the Kestrel
+1,{{ia|{{lcfirst:[Quick NPC.PoorNPC]}}}} vanished from their bed and a large serpent was found in their place
+1,a baby was born wearing earrings and a coat of mail
+1,a child dug up a stone mirror
+1,a chill wind has begun causing the mirrors to rot
+1,a daughter not born of men sprang from the furrow as a wheat field was being plowed
+1,a drunkard swears he saw a vision of [mirage] just down the road, but it vanished when he approached
+1,a farmer has unearthed an old chain five miles long that stretches beneath his fields
+1,a girl's hair has grown as literal golden strands--her parents are ecstatic
+1,a gravedigger has grown a second head
+1,a great boar with tusks like fat white worms has been seen in the forest
+1,a hare has offered itself as food alms to the local priest
+1,a harmless green snake has arrived in every bedroom
+1,a horse whose eyes shine with the rainbow light has been seen on the outskirts of town
+1,a hunter returned with a deer that had the feet of a woman
+1,a mysterious white bull has recently emerged from the waves
+1,a neighborhood dog gave birth to a [lawnornament]
+1,a pit filled with flame has appeared in the town square
+1,a pumpkin with the face of [heroes_and_villains] on it appeared overnight in the pumpkin patch
+1,a serpent with a golden key in its mouth sleeps outside the door of the cobbler
+1,a snake has been seen riding on a black horse
+1,a group of stinging insects have been causing bad tattoos to appear on their victims
+1,a stray cat has painted a mural depicting the afterlife as one endless sun-filled afternoon
+1,a stray dog passed in the night and all the stones in town wept for a week
+1,a swan has begun preaching the gentle faith of Boddhism
+1,a wainwright has uncovered a giant set of scales that could weigh a cart and two oxen at once
+1,a washer has been seen at the ford, weeping and wailing as she rinses a heap of bloody raiment that resembles those worn by [heroes_and_villains] when they were last seen
+1,children have been having nightmares of a hellish place they call Redgauntlet Hall
+1,everyone has been having nightmares of a brutal minotaur on the throne
+1,everyone must sing instead of speaking since the carpenter carved an ugly totem from enchanted wood
+1,for the past decade, people have been born with a third eye and two extra arms that fall away sometime in childhood
+1,four birds have been hovering around the head of the baker’s child
+1,pregnancy has become a contagious ailment passed through the air
+1,river thieves have stolen an actual river
+1,the decomposing corpse of a famous [profession] appeared overnight in the town square
+1,the next village over has been enjoying 36-hour days
+1,the people have begun worshipping the first thing they see leaving their house each morning and building primitive idols which get discarded the next day
+1,the poor have begun worshipping {{ia|[Animal.animalmammal]}} they believe is an incarnation of [List of gods.real]
+1,the seer has been having visions of [naturalthing]
+1,the wheat crop has grown three times as tall as usual
+1,thousands of spiders have been seen migrating to their summer webs
+1,vicious wasps have made a nest from a discarded volume of the poet Domhnall’s bitter verses
+
+;localtopic
+1,[huntingmonster]
+1,ancient riddles
+1,barbarian magic
+1,mechanical traps
+1,military strategy
+1,picking locks
+1,psionic mind crystals
+1,royal vices
+1,seeds and soil
+1,statecraft
+1,the art of magic
+1,the Bone Assassins, who travel back in time to dissolve the skeletons of people raised from the dead to cause mischief in their own future time
+1,the cruelty of angels
+1,the Double-house of Life
+1,the mysteries, the Thesmophoria
+1,the ocean
+1,the outer planes
+1,the politics of heaven
+1,the politics of hell
+1,the treasure-chamber of Rhampsinites
+1,time vortexes
+1,what happened to all the [missingthings]
+
+;lucrativecareer
+1,adventurer
+1,assassin
+1,bandit
+1,gambler
+1,prostitute
+1,smuggler
+1,treasure hunter
+
+<!-- * M * -->
+
+;magic_compass
+3,[urbn_place]
+1,[magicusertype]
+1,[mysterymeat]
+1,cemetery
+1,dimensional gateway
+1,fruit-bearing tree
+1,holy place
+1,non-human intelligence
+1,pregnancy
+1,roving city
+1,settlement
+1,source of gold
+1,source of royal blood
+1,source of water
+1,undead creature
+
+;magicalcommonobject
+1,backpack
+1,breastplate
+1,broadsword
+1,candle
+1,chain
+1,feather pen
+1,gauntlets
+1,hat
+1,helmet
+1,paint brush
+1,pole
+1,pot and pan
+1,rope
+1,stick
+1,tower shield
+1,umbrella
+1,volleyball
+1,war bow
+
+;magictype
+1,blood magic
+1,clone magic
+1,fire
+1,necromantic
+1,summoning
+1,teleportation
+
+;magicuserlandtype
+1,desert
+1,swamp
+1,woods
+
+;magicusertype
+1,charlatan
+1,conjurer
+1,magician
+1,shaman
+1,sorcerer
+1,warlock
+1,witch
+1,wizard
+
+;main
+1,[Urban]
+1,[Wilds]
+1,[Maritime]
+1,[Dungeon]
+1,[Local]
+1,[Prophecy]
+1,[Strange_Custom]
+
+;Maritime
+0,somewhere [maritime_locn] is [maritime_branch] (this is a great idea to vary the syntax, but it plays havoc with commas. I'll revisit the phrasing so either way looks good at some point--I was getting several ",."s)
+1,there’s [maritime_branch] somewhere [maritime_locn]
+
+;maritime_locn
+3,{{lc:[Utility.CompassDirection]}} of [sea_landmark]
+1,in the northern seas
+1,off the coast of [coastal]
+
+;maritime_branch
+3,[island]
+1,a [shipwreck]
+
+;marriage_devotion
+1,biting a snake into pieces
+1,exchanging septum rings
+1,getting matching tattoos
+1,getting surgery to look like their spouse
+1,sacrificing a flamingo and letting the blood stain both their hands
+1,sewing their life threads, obtained at great cost from the Sisters, together
+1,strangling all former lovers
+1,swearing a sacred oath before the bonfire
+1,trading shadows
+1,wearing a strange garment meant for two people to be attached together
+1,wearing vials of each others’ blood
+
+;mazeprize
+1,a cask of magic from Orenda Kramat, the ancient magical reservoir, long since depleted
+1,a ceremonial great sword made from Valeryian steel
+1,a chest full of black pearls
+1,a flying trunk of ash wood
+1,a gift from the gray elves to honor their alliance
+1,a harp strung with angel hair
+1,a large, deep red space crystal
+1,a painting by the great artist Rimsin of Larsa depicting a bunch of grapes so perfectly that birds fly at the painting to eat the fruit
+1,a dried fruit from the Tree of Life
+1,a set of horseshoes that lift the horse slightly above the ground so it makes no noise when running
+1,a set of keys that open every door in the Eternal City
+1,a shimmering cloak from the hobbits of Arthe Dale
+1,a wish scroll
+1,a wondrous magic carpet
+1,a wondrous book of poetry from which grows an ethereal tree with the glowing heads of a hundred singing maidens in its branches
+1,an ancient stone servant given by the dwarves to honor their alliance
+1,an exquisite mechanical bird from the workshop of Twiddle Thumb, the gnomish Master of Crafts
+1,an hourglass that collects time you've lost track of
+1,the Book of Slaying the Hippopotamus
+1,the Book of the White Cat
+1,the deed to Sen’s Fortress
+1,the Libation Table of Wennofie
+1,the ''Red and White Ladies of Paviland''
+1,the one thousand and twenty four volumes of Diagoras of Melos’ ''Political, Social and Military History of the Ants''
+
+;membership
+1,[brigandnames]
+1,[dwarfclanname] Clan
+1,Maneater Mildred’s Man-eaten Men
+1,the Academy of Masters
+1,the Brotherhood of Sleeping Car Porters
+1,the Chuckle Fraternity
+1,the Dragon’s Disciples
+1,the Eastern Arcanum
+1,the Foreign Brotherhood
+1,the Greenway Consortium
+1,the Men Who Hate Nothing
+1,the Order of the Silver Beard
+1,the Pythagorean Cult
+1,the Seekers of the Perfect Thought
+
+;mindaltering
+1,consume hallucinogenic serpent venom
+1,eat rainbow-colored dream fish
+1,ingest hallucinogenic spiders
+1,ingest mind-altering fungi
+1,lick psychedelic jungle toads
+
+;minename
+1,[dwarfclanname] Clan
+1,Howling
+1,Kirk and Raven
+1,Neebo
+1,Third Imperial
+
+;mineobject
+1,a god's slaves, who built the giant machinery of nature
+1,a great immortal owl
+1,a great reservoir filled with ashes
+1,a strange circular door carved into the stone
+1,a time capsule from a pre-human civilization
+1,a vast and inexhaustible supply of the dead
+1,a virulent toxic smoke attracted to the living
+1,a winged and wheeled throne
+1,Deep Ore, known to drive men berserk
+1,evidence of fish that swim through stone
+1,float rock, a gravity resistant mineral
+1,fossils of [huntingmonster]
+1,idiotic, two-headed doppelgängers of the miners
+1,objects from the future
+1,some manner of metal building deep underground
+1,the bones of daemons
+1,the lost city-state of Hermanubis
+1,tortured souls, which fled out into the mine
+
+;mirage
+1,[landmark]
+1,[ntc] in battle with [huntingmonster]
+1,[urbn_cityname], City of [urbn_citynickname]
+
+;missingthings
+1,birds
+1,children
+1,cows
+1,crops last year
+1,grass
+1,neighborhood dogs
+1,town’s records
+1,trees
+
+;monster
+1,[monstertype] can be placated with [thingbeyond] from [placebeyond]
+1,[monstertype] cares for a shrine on the [№1-6] floor that emits a noise that sounds like [strangenoises] and contains an offering consisting of [washups] within
+1,[monstertype] is widely believed to have slain [heroes_and_villains] though others blame [creepyvillain]
+1,[monstertype] makes its lair in the ruins of {{lc:{{ia|[Dungeon Room.Type]}}}} lit by [light_source]
+1,[monstertype] values reason above all things and operates {{ia|[urbn_place]}} on the [№1-6] floor
+1,[monstertype] waits on the [№1-6] floor disguised in one of its learned forms; usually [urbn_subjectsingular] but, sometimes, a pool, or a worm
+1,A greedy [monsterA] on the [№1-6] floor can be bargained with if its desire for [collection] to add to its collection is appeased
+1,{{ucfirst:{{ia|[monsterA]}}}} on the [№1-6] floor, pregnant for over a decade, offers to free [urbn_subjectsingular] they hold captive if any can offer relief
+1,Here the [huntingmonster] of [%foreign_adj][foreignland][%foreign_phrase] dwell amid squalor and noise, bellowing and vomiting black gore
+
+;monsterA
+1,beholder
+1,centaur
+1,chimera
+1,ghost crocodile
+1,harpy
+1,manticore
+1,polar bear
+1,root treant
+1,satyr
+1,serpent
+1,slug
+1,snail
+1,spider
+1,spider wife
+1,time ghost
+1,wasp queen
+1,witch owl
+
+;monstertype
+1,[Demon name.Main] the {{ucfirst:[QuickAdjective.⚥]}}, a lesser daemon,
+1,[Demon name.Main], {{ia|[elemntl_type]}} prince,
+1,[Demon name.Main], a great serpent,
+1,[Demon name.Main], a weeping dragon,
+1,{{ucfirst:{{ia|[Dungeon Overview.adj]}}}} [monsterA]
+1,{{ucfirst:[Weird Fantasy Monster.main]}}
+
+;mysterymeat
+1,dog
+1,dwarf
+1,elf
+1,giraffe
+1,halfling
+1,horse
+1,lizard
+1,peacock
+1,swan
+1,tarantula
+1,unicorn
+
+<!-- * N-O * -->
+
+;naturalthing
+1,a howling wilderness waste
+1,a plethora of bird corpses
+1,black-reeded pools
+1,blankets of sickly-sweet-smelling fungi
+1,constant low vibrations
+1,frequent whirlwinds, actually the ghosts of giants,
+1,golden footprints
+1,herds of curious blue pigs
+1,intangible floating scimitars, golden and begemmed,
+1,melted trees and puddles of wooden water
+1,metallic birds
+1,monstrous vegetable growths
+1,mushrooms that emit flame when broken
+1,perpetual dust storms
+1,piles of corn kernels large as a man's fist
+1,plants with fruits shaped like many-fingered human hands
+1,scorpion-infested swamplands
+1,skeletal trees that grow bones
+1,skin-blistering waves of heat
+1,strange rains
+1,the [shapes] carved into every tree
+1,thick banks of sickly yellow fog
+1,towering stacks of rocks
+1,toxic clouds, lethal to birds
+1,trees with red bark (actually crimson beetles)
+1,unseasonable snows
+
+;nontextualprophecysource
+1,[ancientpeople]
+1,augurs
+1,Oracles at Delphi
+1,star signs
+
+;npctonpc
+1,begot a bastard with
+1,has a strange relationship with
+1,is an estranged sibling of
+1,is blackmailing
+1,is fucking
+1,is jealous of
+1,is secretly in love with
+1,openly despises
+1,secretly despises
+1,would love to murder
+
+;obj_or_room
+5,[preposition] {{ia|[Dungeon Overview.dungeonobject]}}
+5,in {{lc:{{ia|[Dungeon Room.Type]}}}} lit by [light_source]
+1,[preposition] {{ia|[Dungeon Overview.dungeonobject]}} in {{lc:{{ia|[Dungeon Room.Type]}}}}
+1,in {{lc:{{ia|[Dungeon Room.Type]}}}} that smells like [room_smell]
+
+;occupation
+1,[Quick NPC.MidNPC]
+1,[Quick NPC.PoorNPC]
+1,[Quick NPC.RichNPC]
+
+;oldest
+1,centaur
+1,daemon
+1,harpy
+1,man
+1,serpent
+1,swan
+1,tree
+1,unicorn
+1,vampire
+
+;oppressed_grp
+1,children
+1,domesticated animals
+1,slaves
+1,the lonely
+1,the poor
+
+;oppressverb
+1,break the bonds placed on them by
+1,cast down
+1,devour
+1,rise up against
+
+;order_purpose
+1,capture [criminals] to feed the roots of the great black Tree of Justice
+1,hide the [prophecyartifact] from [creepyvillain]
+1,keep the works of [heroes_and_villains] hidden from the [thief_type] cults
+1,maintain the mystery of [holiday]
+1,protect [landmark] from malicious [huntingmonster]
+1,rehabilitate [criminals] and turn them into [profession]s
+1,train [profession]s in the ways of old
+1,uncover the [ordinal] name of [List of gods.real]
+
+;ordinal
+1,first
+1,second
+1,third
+1,fourth
+1,fifth
+1,sixth
+1,seventh
+1,eighth
+1,ninth
+1,tenth
+1,eleventh
+1,twelfth
+1,thirteenth
+1,fourteenth
+1,fifteenth
+1,sixteenth
+1,seventeenth
+1,eighteenth
+1,nineteenth
+1,twentieth
+1,twenty-first
+1,twenty-second
+1,twenty-third
+
+;ordinary_god
+1,boulder
+1,hill
+1,horse
+1,stream
+1,tree
+
+;origin
+2,The dungeon was originally built by [origin_builder] in the days of [heroes_and_villains] in order to [order_purpose]
+1,The dungeon was originally built by [origin_builder] as a prison for [origin_prison]
+1,The dungeon was originally built by [origin_builder] to keep the [prophecyartifact] safe from [urbn_subjectsingular] whom the prophecies say is fated to find it
+1,The dungeon was originally built by [origin_builder] as a home for serious students of [studysubject]
+1,The dungeon was originally built by devout worshippers of [Fantasy Pantheon.fulldescription]
+
+;origin_builder
+1,[heroes_and_villains]
+1,[membership]
+1,[urbn_subjectplural]
+1,a fabulously wealthy [profession]
+1,benevolent [huntingmonster]
+1,the [ancientpeople]
+1,the [royals]
+1,the brother of [heroes_and_villains]
+
+;origin_prison
+1,[creepyvillain]
+1,[huntingmonster]
+1,[ntc]
+1,the [huntingmonster] of [%foreign_adj][foreignland][%foreign_phrase]
+1,the half-decomposed Queen of [foreignland]
+1,unrepentant [criminals]
+
+<!-- * PQR * -->
+
+;pet
+1,bear
+1,bird
+1,cat
+1,dog
+1,dwarf
+1,fish
+1,leopard
+1,lion
+1,monkey
+1,snake
+
+;placebeyond
+1,Far Leng
+1,Finsternis Unter
+1,Letoon near Xanthos
+1,North Celebes
+1,Rathcroghan in Roscommon
+1,Shesh or Ananta
+1,the Green Desert
+1,the Lake of Dreams
+1,the Land of Punt
+
+;posse_quality
+1,bloodthirsty
+1,blue-skinned
+1,charmed
+1,clueless
+1,corpse-devouring
+1,devil-worshiping
+1,experienced
+1,foreign
+1,geased
+1,ill-equipped
+1,spell-versed
+1,well-equipped
+
+;posse
+1,adventurers
+1,berserkers
+1,centaurs
+1,children
+1,clerics
+1,criminals
+1,great apes
+1,henchmen
+1,men-at-arm
+1,mercenaries
+1,ninjas
+1,pixies
+1,rogues
+1,samurai
+1,townsfolk
+
+;prejudicetarget
+1,adventurers
+1,bards
+1,clerics
+1,dwarfs
+1,elves
+1,fighters
+1,foreigners
+1,gypsies
+1,hobbits
+1,magic users
+1,paladins
+1,the poor
+1,the wealthy
+1,thieves
+1,traders
+
+;preposition
+1,above
+1,behind
+1,below
+1,by
+1,directly opposite
+1,in
+1,near
+1,on
+1,on top of
+1,under
+1,underneath
+1,with
+1,within
+
+;preservation_item
+1,Aldophus the Plump
+1,blasphemous illustrations
+1,forbidden philosophies
+1,the half-decomposed Queen of [foreignland]
+1,the oral histories of the hill tribes
+1,the 240-year-old cloak of Prince Axum
+1,treasonous writings
+1,two bronze rams from the Punic Wars
+
+;profession
+1,[Modern Occupations.lc]
+1,animal trainer
+1,archer
+1,architect
+1,assassin
+1,barber
+1,burglar
+1,cartographer
+1,chef
+1,comedian
+1,commander
+1,competitive eater
+1,gladiator
+1,horse archer
+1,horse rider
+1,lover
+1,magician
+1,navigator
+1,negotiator
+1,opera singer
+1,orator
+1,poet
+1,prankster
+1,sailor
+1,sculptor
+1,ship captain
+1,surgeon
+1,tactician
+
+;Prophecy
+3,As interpreted by the followers of [propheticleader] the [symbols] in the [textualprophecysource] describe a future time when [catastrophe_or_eucatastrophe]
+1,The [textualprophecysource] are a forgery perpetuated by [propheticleader] to gain temporal power
+2,The [textualprophecysource] are variously translated to state that [heroes_and_villains] lives, or lived once, or will live, [fab_pad]
+2,The [prophecysource] claim that the [prophecyartifact], lost [when] ago [howitwaslost], will be found by [who_finds_it] from [propheticnearcity] [urbn_cityname]
+1,The [prophecysource] claim that [who_finds_it] will usher in a new Age of [prophecy_age]
+2,The [prophecysource] foretold that [prophecysubject] will be [prophecyfateverb] [prophecyfate]
+2,The [prophecysource] portend that [timeframe], [catastrophe], and that the [Animal.animalmammal] shall inherit the earth
+1,The [prophecysource] promise that [oppressed_grp] will [oppressverb] [dominant_grp] [timeframe]
+1,The [prophecysource] promise that [heroes_and_villains] will die by the [Animal.animalinsect], the [Animal.animalother], or the [Animal.animalmammal]
+
+;prophecy_age
+1,Blood
+1,Chaos
+1,Darkness
+1,Fire
+1,Law
+1,Stone
+
+;prophecyartifact
+1,Black Eye of Horus
+1,box containing the Silk Jewels
+1,Candelabra of Tawnos
+1,Charm of Hanabi
+1,Crown of the Witch King
+1,delicate chest which holds the Ettin Crowns
+1,Dragoon Horn of Dusk
+1,egg of the black phoenix
+1,Erichthonius Snake-Box
+1,Golden Attack Helicopter of Saddam
+1,Hyper Cube of Myr
+1,jeweled double-sheath which holds the Crystal Knives of Joy
+1,Kalendar of Filocalus
+1,Mask of Gorgon
+1,mummified hand of Vibx which still wears the Rings of Saturnus
+1,Platohedron
+1,quiver holding the deadly arrows of the disease goddess Eresh’kigal
+1,Rektangel
+1,Scimitar of Abdullah Abdullah
+1,Silver Time Sphere
+1,Spear of Marius
+1,Tome of Lagash
+1,Trismegistos Stone
+1,War Chariot of Hannibal the Golden
+1,Winter Orb
+
+;prophecyfate
+1,Anshar and Kishar, the very sky and earth
+1,a cabal of primitive sorceresses
+1,a dread serpent
+1,a poisonous rain
+1,a sentient smoke monster
+1,a wasting disease
+1,an army of sleepwalking [sleepwalkers]
+1,dark worms
+1,heatless flames
+1,hordes of bestial things
+1,internal strife
+1,the hell of Jain
+
+;prophecyfateverb
+1,beset by
+1,consumed by
+1,destroyed by
+1,ravaged by
+
+;prophecysource
+5,[textualprophecysource]
+1,[nontextualprophecysource]
+
+;prophecysubject
+1,the Combine Empire
+1,the followers of [List of gods.real]
+1,the great city [urbn_cityname]
+1,the Kingdom of [%foreign_adj][foreignland][%foreign_phrase]
+1,the Troll Pines
+
+;propheticbattle
+1,Butcher’s Bay
+1,Exarchate Ravenna
+1,Lasmodi Mine
+1,Porto Field
+1,the Camel
+1,Potato Valley
+1,the Gorge of Laments
+
+;propheticbook
+1,Fry
+1,Leeto
+1,Leng
+1,Stone
+1,Euclidean
+1,Tender Mercy
+1,Tierasyphus
+
+;propheticchronicles
+1,Blue Frog
+1,Jade
+1,Painted Tiger
+1,Ruby
+1,Yellow
+1,Amber
+1,Silver
+
+;propheticfragment
+1,Carpathian
+1,Kobalt
+1,Neco
+1,Iron
+1,Sorilla
+
+;propheticleader
+2,[heroes_and_villains]
+2,[List of gods.real],
+1,Ravos,
+
+;propheticnearcity
+1,a farm near
+1,a hill made from broken pottery shards just outside of
+1,the deserts surrounding
+1,the hills bordering
+1,the mountains near
+1,the outskirts of
+
+;propheticprophecies
+1,Andalweiss
+1,Ashland
+1,Eight
+1,Jobbott
+1,Scaphandra
+
+;propheticscriptures
+1,Altarian
+1,Antikythera
+1,Contact
+1,Esoteric
+1,Gran Peem
+1,Hermetic
+1,Gnostic
+1,Mazatlan
+1,Meloneese
+1,Potato
+1,Sea Salt
+1,Snow
+1,Voynich
+
+
+;propheticwar
+1,Children’s War
+1,War of the Five Kings
+1,War of the Rings
+1,War of Tulips
+1,The [propheticscriptures] Wars
+
+;punishment_custom
+3,[criminals] are punished by [punishment]
+1,any who mention the 12th Dynasty have their eyes and tongues plucked out and their home burned down
+1,bad poets are devoured by wolf-hounds
+1,breaking and entering is punished by being buried beneath the threshold of the victim’s building
+1,criminals are branded with a letter signifying their crime. The letter [Letters (uppercase).normal] is considered so heinous, no outsider knows what crime it signifies
+1,criminals must enter the priesthood to care for a bloated, cranky demigod
+1,disobedient dogs are beheaded by a canine guillotine
+1,false teachers are stabbed to death by their students’ pens
+1,forgers of counterfeit coins are forced to swallow their debased currency
+1,garbage pickers, sex workers and street urchins are routinely massacred by right-wing social cleansing squads whipped into a frenzy by the priesthood, who consider them more spiritually malignant than [criminals]
+1,gods are put in jail if they don't answer prayers
+1,if a man kills a hawk or ibis, he is fed to the crocodiles
+1,murderers are confined in a tiny cell and sewn to the corpse of their victim
+1,no one is punished directly for any crime, but a lottery is held once a year where the losers must undergo hideous, sometimes fatal, torture to pay for the license enjoyed by all
+1,robbery victims are punished for not protecting their property well enough, and thus weakening society
+1,speaking the name of any person imprisoned in the Castle of Oblivion is punished by death
+1,the angels banished here for falling in love with men are pelted with stones
+1,the murder of a writer of fables is punished by the circumstances of the crime becoming a fable
+1,the names of political enemies are posted on a public list, allowing any citizen to legally kill those named to earn a bounty
+1,the tongues of unbelivers are fed to cats
+1,thefts occurring during the day are punished by fines, but those occurring at night are punished by death
+1,those guilty of measuring the space between the stars are pulled apart by two ships
+
+
+;punishment
+1,a chemical which causes the body to enter into a state of autolysis, or self-digestion
+1,ant torture
+1,being bled by river leeches affixed to the inside of the mouth
+1,being bled to death from all seven orifices
+1,being buried alive with great dishonor in the tophet
+1,being exiled outside the city walls and forbidden to return
+1,being fed to the Black Hog
+1,being forced to brush the teeth of the dead
+1,being forced to watch an autopsy performed on their closest loved one
+1,being left for wild animals to devour
+1,being locked in the Tomb of Leopards
+1,being lowered naked into the spider pit
+1,being made to carry sand from the East to the West
+1,being suffocated by beetles
+1,being suffocated to death inside a sewn up camel hide
+1,being thrown from the high castle
+1,being tied into a sack with an also guilty dog, cat, chicken and rat, and having the sack tossed into the river
+1,being tied overnight to the fever tree
+1,being tied to a tree in the forest and the forest being set on fire
+1,being trampled by pigs
+1,being unceremoniously put to the sword
+1,crucifixion
+1,exile to the moon
+1,exile to the town without pity
+1,exorbitant fines
+1,gruesome scalp-to-chin lacerations
+1,hanging
+1.hanging and then dissection
+1,having their [body_part] removed and [body_part_fate]
+1,having their veins replaced by wires in horrendous experiments
+1,public humiliation
+1,public starvation
+1,soul colorings both auspicious and inauspicious
+1,sterilization
+1,the creative use of 300 nails
+1,vivisection
+
+;rm
+1,A brightly-feathered mynah bird alights on a branch and squawks
+1,A cat wearing fancy clothes calls out
+1,A charismatic bard convinces you
+1,A chubby man who advocates soft living and the arts shares with you
+1,A crude sailor swears on the wet head of his first case of gonorrhea
+1,A great warrior brought low confides to you
+1,A gypsy, light-hearted and gay, sings a tune implying
+1,A haggard woman waiting behind you in line at the general store believes
+1,A helpful innkeeper mentions to you
+1,A little bird tells you
+1,A little girl runs up and whispers into your ear
+1,A local hunter shares with you
+1,A loudmouth at the bar says
+1,A nebbish man with a thick accent shouts
+1,A note found tucked in the back of a book reads
+1,A paranoid woman with a ridiculous hat confides
+1,A raving madman, chained to a post in the town square, shouts
+1,A street puppet show implies
+1,A traveling merchant believes
+1,Amid crude chalk illustrations on the alley wall, you read
+1,An obese man on the street calls you over to inform you
+1,An old man whose eyes have seen much tells you
+1,An old woman, wisdom written into her wrinkles, says
+1,By listening closely to a children’s counting game, you come to understand
+1,Everyone knows
+1,One card player mentions between hands
+1,The barber, just making conversation, mentions
+1,The barkeep swears
+1,The church pastor shares
+1,The grateful beggar tells you
+1,The gregarious market vendor tells you
+1,The maid has it on good authority
+1,The stable boy’s heard
+1,The town drunk mutters
+1,To get you to go to sleep at night, your grandmother told you
+1,You overhear a mother telling her daughter
+1,Unfolding a crumpled piece of paper, you read
+
+;robbedplace
+1,churches
+1,graves
+1,merchant caravans
+1,museums
+1,powerful magicians
+1,private homes
+1,temples
+1,the future
+1,the poor
+1,the sky elves
+1,the water dwarfs
+1,the wealthy
+1,widows
+
+;room_smell
+3,[Wampus Country Potions.taste]
+1,the copper tang of bloodstained axes
+
+;royal_secret
+1,a bastard born of incest
+1,a closet necromancer
+1,a doppelgänger
+1,a mechanical robot
+1,a nincompoop who willed his estate to a horse
+1,a time vampire who steals youth, not blood
+1,an immortal head that is placed on a wax body when forced to make appearances
+1,an undead puppet
+1,in love with a lady in a tapestry
+1,keeping the body of [heroes_and_villains] stuffed and mounted for display in their chambers
+1,married to dozens of statues who used to be men and women
+1,plotting to take away the swords of their citizens to pre-empt armed rebellion
+1,unspeakably cruel; they keep a pool of huge lampreys and feed slaves to the voracious beasts
+
+;royals
+3,[Ranks and Titles.RankEnglishRoyaltyFemale]
+3,[Ranks and Titles.RankEnglishRoyaltyMale]
+1,Grand Carver
+1,Hand of the King
+1,Hereditary Falconer
+1,Master of Coin
+1,Master of Horse
+1,Queen’s Swan Marker
+1,Royal Remembrancer
+
+;ruinedtower
+1,that ascends into the clouds
+1,that belonged to Silph the Uncanny
+1,that descends deep underground
+1,that has a library infested with lacunae worms, who feed on the ancient ink of old words in tomes
+1,that has no doors
+1,that holds a wretch, more wrinkles than man, abandoned centuries ago by his lover, a fickle goddess who won him immortality but not eternal youth
+1,that is much larger inside than it appears
+1,that looks out upon the iron walls that gird the universe
+1,that spirals upwards through alternate dimensions
+1,that, time-glitched, is built on the ruins of itself
+1,that transforms clouds which pass overhead into the shapes of things to come
+1,that was used to convey beings from their world to this one
+1,that’s constructed out of one of the tusks of Behemoth
+1,that's home to spirits of [elemntl_type]
+1,that's one of the seven towers the Kings of Fire and Water live in for a year at a time, before moving on to the next
+1,upon whose roof stands a statue of Hawkeye Gough, standing on top of a lion
+1,where an elderly giant whose toes are living falcons dwells
+1,where appalling flora and fauna fawn for their creator's attention
+1,where creatures from the last incarnation of the universe dwell
+1,where elderly barbarians test themselves against deadly defenses
+1,which contains a magic mirror
+1,whose many doors open to other realms
+1,whose walls are made of thick glass cubes
+1,whose window looks out on another time
+
+;I_herd
+30,[rm] that
+2,You were told that {{lcfirst:[rm]}} that
+1,[rm] that {{lcfirst:[rm]}} that it is said that
+
+<!-- * S * -->
+
+;sculptr_adj
+1,abstract
+1,giant
+1,glowing
+1,life-like
+1,painted
+1,perfectly preserved
+1,primitive
+1,shadowless
+1,terrifying
+
+;sculptr_arr
+1,haphazardly
+1,in a circle
+1,in a line
+1,in a strange pattern
+1,symmetrically
+
+;sculptr_subj
+1,ancient kings
+1,beautiful succubi
+1,dancing dryads
+1,elven rulers
+1,[daemontype] daemons
+1,jubilant hobbits
+1,liars, thieves, and fornicators
+1,men of different ages
+1,men with goat-like features
+1,serious dwarfs
+1,severe, avenging angels
+
+;sculptr_subst
+1,bone
+1,hardened slime
+1,ice
+1,jade
+1,sea clay
+1,silver
+1,stone
+1,wood
+
+;sea_landmark
+1,Far-Fetched Reach
+1,the Black Gutter
+1,the Dormant Tortoise
+1,the Head of [List of gods.real]
+1,the Horse Line
+1,the Iron Islands
+1,the Jelly Abyss
+1,the Maelstrom
+1,the ruins of the demon settlement
+1,the western waters of Mert
+
+;seaterror
+1,a black pillar rising from the sea to the sky and moving
+1,a living island
+1,a red mist
+1,a wondrous silver column rising from the sea to the clouds with an enormous net cast off of it
+1,a sunken city
+1,ghost crocodiles
+1,giants made of water
+1,gray fires
+1,headless creatures with the bodies of men
+1,hideous fruit with bones
+1,ladders jeweled, silver and golden, between worlds
+1,magic cows and the underwater fields they live on
+1,men who hate nothing
+1,mermaids who make sausage from the limbs of sailors
+1,tentacles
+1,the werewolf light
+1,underwater rivers lit by daemonic candle-fish
+1,water wasps
+1,waves large as castles
+
+;secret
+1,a family heirloom
+1,a glowing [Color.all] stone that fell from the sky
+1,a golden double-axe
+1,a jug of desire fire
+1,a rusted iron skull
+1,a secret
+1,a wax crocodile 7 fingers long
+1,an unwanted gift from [unwantedgiftgiver]
+1,riches from a lucrative career as {{ia|[lucrativecareer]}}
+1,the bones of their former lover
+1,the head of a living statue
+1,the repeating crossbow used to assassinate Empress Moliko the Balance
+1,the sacred rites of [list of gods.real] written on ivory in silver ink
+1,their life savings
+
+;shapes
+1,diamonds
+1,inverted stars
+1,Ls
+1,triangles
+1,Ws
+1,Xs
+
+;shipwreck
+1,ship named [Ship Names.main] that carried the second prince and his bride and was lost
+1,ship that sails under the waves, crewed by a fearless captain and her dozen [husband_adj] husbands
+1,ship that sank carrying [Trade Goods.main], among other goods,
+1,ship that set sail from [harbors] with a full crew; a lone survivor, sea-mad, muttering about [seaterror], was later found
+1,ship that was blown off course, now crewed by the Father of Fish and his children
+1,ship that was lost carrying a mated pair of mimic birds descended from the mimic bird who heard the Prophet’s voice and passed the sound down through generations of other birds
+1,ship that was part of the treasure fleet of [who_is_buried] which delivered precious gifts to foreign dignitaries and sank
+
+;slander
+5,is addicted to [addiction]
+3,is notoriously prejudiced against [prejudicetarget]
+1,abandoned their spouse and children to move here
+1,always smells like [Wampus Country Potions.taste]
+1,beats their pet [pet]
+1,collects erotic wood cuts
+1,doesn’t believe in bathing
+1,grows black carrots
+1,grows dream lotos in the basement
+1,had a child out of wedlock
+1,had a child who grew up to be a criminal
+1,had a child whose head burst into flames while sleeping, a terrible omen
+1,has a disgusting [fetishtype] fetish
+1,has a house full of hoarded junk
+1,has a skeleton of a mermaid in their closet
+1,has a troubled marriage
+1,has never kissed another person
+1,has never left the town, not even once
+1,has never paid a fair price for anything
+1,is a damned liar
+1,is a voyeur, through and through
+1,is attracted to exotic prostitutes
+1,is cheating on their spouse with [Quick NPC.main]
+1,masturbates at least [Dice.1d6] times a day
+1,murdered their spouse in a jealous rage
+1,owes Titus the Moneylender over a hundred gold
+1,raises river leeches
+1,reads too many books
+1,sells dog chops on the side
+1,will fuck anything that moves
+1,was born from a cherry tree and has the wooden teeth to prove it
+1,worships strange gods
+1,would sell out their own mother for a few silver
+1,writes fantasy stories starring great adventurers
+1,writes really bad erotic poetry
+
+;sleepwalkers
+1,children
+1,dwarfs
+1,elves
+1,halflings
+
+;slumberplace
+1,Abydos
+1,Knossos
+1,Passaron
+1,Perkunos
+1,Pharros
+1,Tantamounou
+1,Tartessos
+
+;Strange_Custom
+1,in [%foreign_adj][foreignland][%foreign_phrase], there’s {{ia|[strange]}} [custom] where [strangecustom]
+
+;strange
+4,strange
+1,bizarre
+1,curious
+1,extraordinary
+1,freaky
+1,kooky
+1,mysterious
+1,odd
+1,outlandish
+1,peculiar
+1,queer
+1,quirky
+1,unusual
+1,weird
+
+;custom
+3,custom
+1,convention
+1,habit
+1,observance
+1,practice
+1,ritual
+1,tradition
+
+;strange_fish
+1,a disturbing story carved into a stone titled the Tale of the Magician
+1,a dog-tag with the name [heroes_and_villains] inscribed on it
+1,a fine saddle that summons an invisible horse
+1,a footpan made of gold
+1,a globe of an unfamiliar planet
+1,a golden fish that offered to grant a wish if it was thrown back
+1,a hideous flat fish half an acre large
+1,a household god named Fat Profit
+1,a Krag–Jørgensen harpoon rifle
+1,a ladle so large a man and woman could sleep together in it
+1,a map that details an invisible bridge that offers safe passage above the Maelstrom
+1,a mighty man of bronze
+1,a pure white stone that hums
+1,a riddle written in the scales on the side of a corpulfish
+1,a ruby the size and shape of an infant’s skull
+1,a rusted but rideable bicycle
+1,a sealed jar covered in dark sigils
+1,a silver horseshoe inscribed with the name [Horse Names.main], the name of {{po|[ntc]}} famous steed
+1,a skeleton deformed by longbow use
+1,a spyglass that looks ten minutes into the future
+1,a stone handaxe over a million years old
+1,a stone inscribed with the names of the 4,601,200 spirits of Heaven
+1,a treatise on copper mining whose undertext contains the letters of Chancellor Wellager
+1,a treatise on how lessons from astronomy can be applied to human anatomy
+1,a waterlogged book written in poison ink
+1,a wind instrument that seems designed for a man with two mouths
+1,a Wyrd Stone
+1,an egg from the black swan who dwells in the river of the dead
+1,an ivory carving of a sphinx
+1,an old boot with an undecayed foot inside
+1,an old coin for a slot machine in the Casino House
+1,an old sword bearing the name of the Pharaoh [SGNP egyptian.ancient_male]
+1,an unhatched wind stone
+1,the silver tongue of Tjorn the Rhymer, with which he could persuade sickness to leave a body, and spirits to leave a haunting place
+1,the skeleton of a mermaid
+
+;strangecustom
+1,a bare-breasted girl stands on a pedestal in the town square, her breasts covered by the hands of a boy who calls out her heartbeats. In this way the hours are kept
+1,a Bureau of Fame offers fame for purchase at all scales, from local rumors to massive public demonstrations, employing traveling bards, merchants, and itinerant journeymen to spread the word across the land
+1,a king must place a new lock on a massive door on the day of his coronation. The door has dozens of locks already and no one knows what’s behind it
+1,a sacred area of the city bars weapons from being carried and the powerful can have people beaten but not killed
+1,a single black hair renders a person impure in the eyes of the gods
+1,a thriving marketplace exists for [exchangething]
+1,all art is public, and every wall is covered in colorful graffiti
+1,all visitors must take part in [dance]
+1,ancient art depicts towering blue-skinned beings teaching early man the secret of agriculture
+1,beginning at age seven, children enter a golf-like tournament with over 3,000 holes that will carry them into their adolescence
+1,cats are fed cat meat in the belief that it improves their coats
+1,children demonstrate filial piety to their elderly family members by removing pieces of their body and cooking them into a dish which their ailing elder eats
+1,children hunt for turtle shells and snake skins that their parents have hidden for them
+1,children never know their fathers; after a woman gets impregnated, the father dies
+1,children play racing games with rules that state the last place finisher is hanged
+1,on their birthday, children receive a fish, which they raise in a tub, ceremonially cooking and eating it on their next birthday
+1,children trade eyes with their parents as a rite of passage
+1,citizens all wear identical masks, recognizing each other by elaborate body tattoos
+1,crimes committed on Black Lodge Day are unpunishable
+1,crying in public is punishable by ruinous fines or exile
+1,dead crocodiles are mourned as though they were relatives
+1,doctors use the tongues of living baby basilisks as a local anesthetic, as the basilisk tongue only numbs at this stage of development
+1,each citizen must reign as king or queen for a day, in order to prevent the corruption that comes from extended power. The schedule is kept decades in advance on a community calendar
+1,each of the 1743 castes have their own Fire Temple and unique religious festivals
+1,elders must remove a finger every year they wish to remain in power
+1,even the most minor infractions must be resolved by duels to first blood
+1,every day on the calendar is considered a holy day
+1,every family feeds and grooms a hideous four-legged creature that lives in their home
+1,fantastic games are held once a generation, such that no living man will have ever seen their like
+1,fishermen catch man-eating fish by using human bait they obtain from outsiders
+1,followers of [List of gods.real] pay almost nothing in taxes, while everyone else pays a great amount
+1,for entertainment, the people watch four naked men hurl insults at each other until a fifth man, armed with an iron-tipped whip, silently beats them all into unconsciousness
+1,for one week a year, masters become slaves and slaves become masters
+1,hair is viewed as a corrupt bond to the material world; the hairy are distrusted, and priests perform thorough hair-removal rituals every three hours
+1,holy men open their mouths to send forth their souls in the form of birds
+1,impoverished families sell the amputated limbs of their children to medical societies
+1,instead of armies, the numerous city-states each maintain five champions who fight the champions of other city-states to resolve disputes without needless bloodshed
+1,it is considered wise and good to lie to and cheat strangers
+1,it is forbidden to injure fruit trees by picking fruit; only windfalls may be gathered from the ground
+1,liquid alcohol is forbidden; instead, wine is poured over a bowlful of snow, which is eaten with a spoon
+1,livestock are cared for only to serve as hosts for a parasitic beetle whose by-products are an immense source of wealth
+1,males are kept in a pen until they turn fifteen, whereupon they engage in mirthless procreation before being released to the Thorn Forest, to be hunted by the women. In this way mothers can slay their own children
+1,married couples express their devotion by [marriage_devotion]
+1,men get one vote, but women get one vote, plus an extra vote for each child they’ve given birth to
+1,mirrors and procreation are heretical because they are believed to create souls, which is a duty of the gods alone
+1,no animal is harmed, because it is believed they hold the souls of the ancestors
+1,one day a year, farmers trade places with the scarecrows in their fields (apparently, the wives look forward to it!)
+1,only royalty can wear [Color.all] clothing, only priests can wear [Color.all] clothing, and only the unmarried can wear clothing at all
+1,parents never name their third child, because boy or girl, they are drowned the day they turn twelve
+1,people alternate between forty years of war-mongering and forty years of peaceful coexistence
+1,people believe the Ennead, a company of nine gods and goddesses, dwell in a nearby hill
+1,people believe the phenomena of nature are worked by a multitude of invisible animals
+1,people have chosen to stop aging; children have remained children for decades
+1,people import tears which they apply like makeup at appropriate occasions, because they are incapable of producing their own
+1,people all suffer from advanced mirror-touch synesthesia, being literal empaths who feel whatever pain they see inflicted on another human
+1,people venerate a clearly living saint in a reliquary, but behave as though the saint’s life has already ended
+1,people worship a bronze image of [list of gods.real], with palms outstretched and slanted downwards, where infants are placed to slide into a gaping fiery pit
+1,people worship what appears to be an ordinary [ordinary_god]
+1,physicians write holy prayers onto scrolls, which their patients must ingest to get better
+1,potential brides must eat the raw heart of a horse in order to gain its strength
+1,priests cannot sleep outside the city walls, touch a horse, or touch iron, on pain of torture
+1,saliva from the imperial family is believed to be blessed
+1,seven young men and seven young women are sent as tribute to a mysterious island every seven years
+1,strangers are forced to rule the docile people until new strangers arrive, who take their place
+1,strangers must pierce their tongues with a communal wooden spike
+1,stray cats serve as firefighters, rushing into burning buildings in groups to drag trapped people to safety. For their service, all households place water and food outside their doors
+1,tame and gentle crocodiles are fed bread and honey
+1,the capital has no walls of stone, but instead the walls are made of armed men
+1,the children of [List of gods.real] are believed to be animals with red hair or skin, including red-haired men and women, and venerated accordingly
+1,the influential must never be seen without a leashed baby lion, less than one year old, accompanying them
+1,the influential wear purple robes created from a rare sea snail; one robe takes thousands of snails to dye
+1,the king or queen takes both a husband and a wife, known as the Brother King and Sister King or Brother Queen and Sister Queen, to share the triple throne
+1,the last man to show up for a levy is burned alive
+1,the man is considered fortunate who is eaten by a crocodile
+1,the native tongue has over a hundred different words to describe [100_words]
+1,the people are forced to pay a daily tribute of 500 loaves of bread and 700 draughts of beer to the giant Antero Vipunan
+1,the people are ruled by a caste of blacksmith priests
+1,the prince of the Rituli is chosen every decade from among the 40 families in a great celebration, but afterwards is ignored entirely
+1,the rat population obsessively steals and buries marbles and other trinkets in the fields, but the law protects them from harm
+1,the religion requires adherents to arbitrarily determine each morning whether to practice extreme generosity or extreme cruelty that day
+1,the state provides everything and nothing can be bought, sold or given away
+1,the superstitious spit on a dog for good luck
+1,the unmarried must throw their 7th most valuable possession over a cliff into the ocean on the 7th day of the 7th month
+1,the wealthy throw gold coins on the street to watch the poor fight over them
+1,the winner of the annual [annualcontest] is granted incredible political power
+1,the word ‘peace’ has been removed from the language
+1,to prepare for war, envoys must enter the hostile land and inform the first child that they meet of their intentions
+1,twins are believed to be transformed salmon, and must not go near water or they will turn back into fish
+1,twins are thought to represent all the good and all the evil a soul will do in its life, so soothsayers are consulted and the ‘evil’ infant is left to die
+1,warriors believe that if an enemy’s blood lands on you, you will be cursed by his dead spirit, and so they use only ranged weapons
+1,weddings are considered 'dog marriages' and the couple fornicate in public to consummate the union
+1,women become pregnant by eating a seed bud from a special tree; the babies are always girls and can speak as soon as they are born
+1,women breastfeed the sacred calves
+
+;strangenoises
+1,a chorus of enormous toads
+1,a gelatinous slurping
+1,a giant snoring
+1,a girl singing a sad song in an unknown tongue
+1,a dog barking loudly
+1,garbled radio static
+1,massive sheets of ice cracking
+1,periodic gunshots, explosions and screams
+1,some animal being tortured
+1,stone being quarried
+1,the beating of powerful wings
+1,the buzzing of a thousand wasps
+1,the clash of arms of an ancient battle
+1,the crackle of a bonfire
+1,the low rumble of continuous thunder
+1,the screech of two subterranean dragons fighting
+
+;studysubject
+1,advanced economics
+1,ancient history
+1,chaos
+1,child rearing
+1,ghost farming
+1,magic
+1,mortality
+1,the book of love
+1,the life of winds and tides
+1,the nature of fate
+1,the price of peace
+1,the science of anti-daemons
+1,the Twilights and the Law
+1,war
+
+;symbols
+1,ciphers
+1,riddles
+1,runes
+1,symbols
+1,words
+
+<!-- * T * -->
+
+;textualprophecysource
+1,[propheticchronicles] Chronicles
+1,[propheticfragment] Fragments
+1,[propheticprophecies] Prophecies
+1,[propheticscriptures] Scriptures
+1,Scrolls of [propheticbook]
+1,Sifl Tablets
+
+;thief_type
+1,fire
+1,gold
+1,horse
+1,jewel
+1,pig
+1,water
+
+;thingbeyond
+1,a flower
+1,a stone
+1,fruit
+1,sand
+1,soil
+1,water
+
+;timeframe
+1,when [heroes_and_villains] returns from across the Lake of Dreams
+1,when [heroes_and_villains] wakes from a long slumber in [slumberplace]
+1,when [Quick NPC.main] ascends the Long Stairs
+1,when [Quick NPC.main] recovers the [prophecyartifact], lost [when] ago
+1,when the [Color.all] comet stains the sky
+1,when the blood moon shines in the full light of day
+1,when the prayer of a mistreated child reaches the ears of [list of gods.real]
+
+;tomb_loot
+1,a bag containing the wind of heaven
+1,a barrel of preserved mya stalk, a powerful magic herb long extinct
+1,a bed that keeps the dreams of those who sleep in it, imparting them to the present sleeper
+1,a blessed sky-blade, known to cut through diamond
+1,a bloodstained census of Hell
+1,a bow so great it must be pulled on an 8-wheeled cart by 5,000 tall men
+1,a cloak of monsoons
+1,a golden ring that produces eight similar golden rings every nine days, buried underneath millions of its spawn
+1,a half-dozen fire eggs
+1,a huge book the size of a barn door
+1,a ladder by means of which a soul can reach heaven
+1,a large diamond said to contain the soul of a goblin demigod
+1,a library card to the Library of Axumandria
+1,a living throne made from roaring lions and songbirds
+1,a magnificent life-sized golden lion with crystal eyes and a man hiding inside
+1,a mural depicting in detail all who came to pay tribute, including alien beings, elementals, shadows, angels, daemons, and demi-gods
+1,a pair of magnetic wings worked by a dynamo
+1,a perfume so potent, if it spilled, the scent would pervade all of earth and heaven
+1,a poisonous seed from the Garden of Eden
+1,a quiver of dog arrows
+1,a quiver of wolf arrows
+1,a scale map of the world, precious jewels representing the lands and mercury the rivers and seas
+1,a scroll containing the names of power compiled by Peculiar Kindalur
+1,a seventieth part of the moon’s light, which the moon goddess lost in a wager
+1,a sickle to harvest the souls of men
+1,a soaring throne
+1,a splendidly decorated boat
+1,a statue by Lucatiel of Mirrah, whose works were so lifelike the feet were chained to the ground to prevent them from running away
+1,a torch still burning with chaos flame from the beginning of the world
+1,a vial of water containing the sum of knowledge from the lost library of Axumandria
+1,a vicious knife forged to tear out the hearts of the wicked
+1,a winged disk which makes friends appear as enemies on the battlefield
+1,a woman of furious gold
+1,an airship powered by float rock and a wish granted from a djinn
+1,an alabaster block inscribed with letters of lapis-lazuli detailing what Anu, the only man to have returned from death, witnessed
+1,an army of clay soldiers
+1,frozen cattle in suspended animation, enough to count by the hundred thousand head
+1,four golden jugs holding pure water from the four oceans
+1,one of the indestructible adamantine plates inscribed by the Sisters with the fate of every man
+1,row upon row of jars containing desire fire, all attuned to different substances, such as spider webs, water, and leaves
+1,suppressed papyrus scrolls with details of the Atem heresy
+1,the accumulated knowledge of the Rass people contained in the talking skull of Jaka the Elder
+1,the autobiography of [heroes_and_villains] annotated by Saxo Grammaticus
+1,the Book of True and False Miracles, compiled by Piotr the Skeptic
+1,the broken sword Anabriel
+1,the club of Epimetheus, so great it must be dragged along on wheels
+1,the concentrated shadow of Saint [Irish Celtic Names.irishsurname]
+1,the entrance to the Labyrinth of Epimetheus, said to be modeled after the great titan’s veins and arteries
+1,the Fisherman’s Ring
+1,the glittering pearls and branches of pink coral pillaged from the sea palace of Ringu
+1,the gold-price of the throne of [foreignland][%foreign_phrase], sold at auction and won by Patches the Hyena, which began the Great Chaos
+1,the lance of Empress Moliko, who rode pregnant into battle against the [ancientpeople]
+1,the last known key to the Lust Garden of Abdullah Abdullah
+1,the last Snickers bar
+1,the memory jar of Sage Freke the Visionary
+1,the metal of the north and the metal of the south
+1,the Miracle of Lightning
+1,the missing link between the primitive ulfs and modern elves
+1,the Nine Cemetery Contemplations
+1,the Pesh-Ken, a terrible hook made from pink flint
+1,the proceedings of the Ninth Stapp Senate as recorded by Pliny the Elder
+1,the original twelve bronze tablets of law upon which the realm’s jurisprudence is said to be based
+1,the Ring of Doubt
+1,the Shugurra, the desert crown
+1,the spellbook of Magerold of Lanafir, the first page of which reveals all the secrets of heaven and earth
+1,the vase of Eos which holds the morning dew
+1,the white, cone-shaped crown of the South
+1,their collection of [collection]
+1,thirty wooden statues of concubines, all without hands
+1,thousands of loaves of bread and thousands of jugs of ale
+1,twenty jugs of Sweet Combine Ale, the last in the world
+
+;tombprotection
+1,[creepyvillain]
+2,[tombprotection] and [creepyvillain]
+1,a beautiful girl with the blood of a serpent
+1,a carnivorous green mist that feeds on soft tissue like eyes
+1,a clay giant animated by the gray heart of a dead mare
+1,a dancing scimitar
+1,a darkness that can only be pierced by the light that comes from burning sacred scrolls
+1,a door of fire
+1,a gate which allows only [profession]s and [criminals] to pass through without harm
+1,a goddess bound in mid air with a golden chain, two anvils on her feet preventing her from falling upwards
+1,a golem made of keys, the last of its kind
+1,a half-medusa trap, which turns the lower body to stone
+1,a labyrinth of doors openable only through the recitation of complex formulae
+1,a nuclear-armed Combine infantry unit in suspended animation
+1,a parasitic virus that swept the earth in the distant past
+1,a sea vast and fearful
+1,a sinister hieroglyph of a throne and an eye
+1,a tiger-footed saint of Shiva
+1,a tornado of coins
+1,a trap that causes trespassers to trade their souls with flies in the beer-haus
+1,a vampire wearing mail of rust and filth, with broken fangs
+1,a very hungry moose and a deserving porcupine
+1,a very mean giraffe
+1,a violent door
+1,a wolf pit and hundreds of sleeping bats
+1,an ancient merciless ram sphinx
+1,an elaborate knot
+1,an invisible power
+1,an undying cheetah
+1,dozens of still-functioning booby traps
+1,eternally-vigilant gold crocodiles who will snap their teeth on more than just your cigarette
+1,futuristic traps installed by allies from space
+1,hateful bloodstains on a crystal floor
+1,hives of artificial hornets
+1,iron-beaked, copper-winged stone birds
+1,invisible presences cloaked in swatches of purple spider silk
+1,labyrinths of flame
+1,long-famished lions
+1,sex gas
+1,the sacred teeth of the Boddhi
+1,the servants, pets, and royal guardsmen who were executed for this purpose
+1,the two million tiny gods of sand
+1,thousands of skull beetles
+1,war spirits, numerous of shape
+
+;treasure_adj
+1,a magical
+1,a one-of-a-kind
+1,a stolen
+1,a talking
+1,an exquisite
+
+;treasure
+1,[monstertype] guards a treasure hoard valuable to the [ancientpeople] who used [exchangething] as currency
+2,[historicalperson] hid [treasure_adj] [treasureA] [obj_or_room] on the [№1-6] floor
+
+;treasureA
+1,[HaftedWeapons.StartNoDescription]
+1,bag
+1,bracelet
+1,common object
+1,finger-ring
+1,hammer
+1,helmet
+1,jewel
+1,necklace
+1,pair of boots
+1,potion
+1,shield
+1,spittoon
+1,sword
+
+;treebears
+1,a branch for every lie told since Creation
+1,a fruit for every soul that forms, ripens, and eventually falls
+1,fiery, pyramid-shaped fruits
+1,fruit larger than elephants
+1,keys to every lock that exists or will exist
+1,leaves upon which are written the names of the immortals
+1,prophetic heads which speak one oracular word, then expire
+1,the dreams of elves who have passed on to the Undying Lands
+
+;tunnelceiling
+1,cracks
+1,false stars
+1,graffiti
+1,perplexing bones
+1,poison-dripping stalactites
+1,prehistoric runes
+1,stone elemental waste
+1,the claw marks of the dwarf-crafted stone birds
+1,the figure of 56 angles expressive of the nature of Typho
+
+;unwantedgiftgiver
+1,[Quick NPC.NPCDescriptor] ex-lover
+1,[Quick NPC.NPCDescriptor] magician
+1,[Quick NPC.NPCDescriptor] priest
+1,a childhood friend
+1,a complete stranger
+1,a despised rival
+1,an estranged sibling
+
+<!-- * U * -->
+
+;Urban
+20,there’s {{ia|[urbn_place_adj]}} [urbn_place] [%sign] [%smellslike] [urbn_locn]. It’s said that here, [urbn_subjectverb]
+5,in [urbn_cityname], [fire_tender] tend a sacred flame that must never go out, lest [bad_thing]
+3,the [royals] in [%foreign_adj][foreignland] is actually [royal_secret]
+3,the city of [urbn_cityname] has been crippled by [urbn_strife]
+3,the lost city of [urbn_cityname] is [Random fantasy world of origin.placeknowledge]
+1,a day and a night in [urbn_cityname] is better than a whole year of medicine
+1,[urbn_cityname] is a roving city, never found in the same place twice
+1,[urbn_cityname], City of [urbn_citynickname], is ruled by a mated pair of sentient [herdanimal] who hold court in a haunted [urbn_place]
+1,[urbn_cityname], City of [urbn_citynickname], is surrounded by a labyrinth with walls covered in [symbols] written in graffiti
+1,[urbn_cityname] lies {{lcfirst:[Utility.CompassDirection]}} of [landmark], and the way is made dangerous by [urbn_subjectplural] who won't take no for an answer
+1,[urbn_cityname] was founded by a married couple guilty of gruesome murders. They were thrown into a volcano, but lived among the flames for 7,000 years until they gnawed their way through the rock
+1,an insane architect-king has constructed a baffling and deadly labyrinth, promising his kingdom to any who can navigate their way through it
+1,in [urbn_cityname], City of [urbn_citynickname], there stands a sinister clock tower whose haunting tones enforce a merciless punctuality
+1,the city of [urbn_cityname] has been in mourning for the past 25 years, ever since the child of the duke disappeared
+1,the city of [urbn_cityname] was built as an exact copy of [urbn_cityname], down to the puddles, the stray cats, and the people
+1,the city of [urbn_cityname], once a bright haven for [prejudicetarget], now boasts little more than {{ia|[urbn_place]}} and {{ia|[urbn_place]}} since the gods allowed [urbn_strife] to ruin the city
+1,the great city of [urbn_cityname] has walls so wide, they race chariots on top of them
+1,the great city of [urbn_cityname] took the gods a year and twenty days to build
+1,the Queen of [%foreign_adj][foreignland][%foreign_phrase] has claimed all the gold wedding bands of her people, melting them down to swell the treasury and providing in return identical iron bands
+1,the twin cities of [urbn_cityname] and [urbn_cityname] are controlled by brothers who hate each other; they have a different answer for any question asked except “Do you hate your brother?”
+1,in [urbn_cityname], the farmers are so wealthy they adorn their cows with diamond earrings
+1,in [urbn_cityname], they keep the wine-preserved [body_part] of [heroes_and_villains] on display in order to protect the city from [creepyvillain]
+
+;urbn_cityname
+3,[Afrika Names.main]
+1,Almux
+1,Anor
+1,Axumandria
+1,Baeroni
+1,Clain
+1,Harappa
+1,Highshaws
+1,Jippa
+1,Krokodilopolis
+1,Munhall
+1,New Noldo
+1,Pektoa
+1,Poona
+1,Qi Ressela
+1,Shurrupak
+1,Swammerdam
+1,Teos
+1,Ur-Hadad
+1,Vornheim
+1,Zakkala
+
+;urbn_citynickname
+1,[List of gods.real]
+1,Angels
+1,Blood
+1,Crags
+1,Crows
+1,Dogs
+1,Dust
+1,Eden
+1,Fool’s Gold
+1,Ghosts
+1,Giants
+1,Greed
+1,Havens
+1,Holes
+1,Innocence
+1,Jabbering
+1,Jails
+1,Kitlings
+1,Koines
+1,Lanterns
+1,Lies
+1,Madmen
+1,Metal
+1,Mourning
+1,Novices
+1,Observers
+1,Pigs
+1,Pleasure
+1,Quiet
+1,Ravens
+1,Shadow
+1,Sisterly Love
+1,Thieves
+1,Traitors
+1,Undead
+1,Vines
+1,Winter
+1,Xenium
+1,Youth
+1,Zodiac
+
+;urbn_locn
+3,{{lcfirst:[Utility.CompassDirection]}} of [landmark]
+2,in [urbn_cityname], the City of [urbn_citynickname]
+1,across the Narrow Sea
+1,beyond the Wall
+1,far to the {{lcfirst:[Utility.CompassDirection]}}
+1,in France
+1,in the North Country
+1,on the other side of the world
+1,only visible at night
+1,that you need a password to enter
+1,to the {{lcfirst:[Utility.CompassDirection]}}
+
+;urbn_place_adj
+1,anachronistic
+1,aristocratic
+1,back-room
+1,crowded
+1,damp
+1,dimly-lit
+1,finely-appointed
+1,garishly-painted
+1,giant-sized
+1,hard-to-find
+1,immaculately clean
+1,members-only
+1,neglected
+1,noisy
+1,normal-looking
+1,primitive
+1,secret
+1,seedy
+1,subtly-discomfiting
+1,tackily decorated
+1,uncannily quiet
+1,underground
+1,well-guarded
+
+;urbn_place
+1,academy
+1,alleyway
+1,asylum
+1,aviary
+1,bakery
+1,barber shop
+1,bathhouse
+1,bazaar
+1,beer-haus
+1,boardinghouse
+1,bookstore
+1,brewery
+1,brothel
+1,cathedral
+1,church
+1,club
+1,college
+1,comedy club
+1,court of law
+1,courtyard
+1,dock
+1,dockside warehouse
+1,fighting pit
+1,forge
+1,gambling den
+1,garden
+1,general store
+1,graveyard
+1,greenhouse
+1,house
+1,icehouse
+1,inn
+1,junkyard
+1,kennel
+1,leatherworks
+1,library
+1,market
+1,orphanage
+1,park
+1,pawnshop
+1,playhouse
+1,prison
+1,rattery
+1,room
+1,sanctuary
+1,shelter
+1,smithy
+1,stable
+1,store
+1,tavern
+1,temple
+1,theater
+1,warehouse
+1,zoo
+
+;urbn_strife
+1,a [thief_type] cult out of [coastal]
+1,a disease spread by vermin
+1,a federation of nomadic hill tribes united around [Weird Fantasy Monster.main]
+1,a pervasive hostility that affects all interactions
+1,a senate of crooked old liars
+1,an earthquake
+1,an invading army led by [Weird Fantasy Monster.main]
+1,anarchist riots
+1,civil clashes between opposing political parties
+1,crop failure
+1,food riots
+1,labor strikes
+1,ruinous over-taxation
+1,the vanity of old men
+1,thieving monkeys who break into homes and steal food
+1,water contaminated with infected water fleas
+1,widespread drought
+
+;urbn_subjectplural
+1,a gang of burglars known for watching their victims sleep
+1,a gang of wicked, parentless children 
+1,a gathering of musical clowns
+1,a group of desperate zealots
+1,a group of well-dressed, genteel vampires
+1,a married zombie couple, heavily perfumed,
+1,a sweet girl and her brothers, the invisible men,
+1,an old robber-queen and her daughter, with long knives that glitter horribly,
+1,angels who lie
+1,arrogant and illiterate nobles
+1,beautiful sisters whose hunched, malformed bodies they claim occurred due to having spent 900 years in the form of swans, which left their bones bent and misshapen
+1,beings draped in wrath and grief
+1,bodyguards of [urbn_subjectsingular]
+1,brooding worshipers of the two-faced god
+1,brutal, unkempt elves
+1,burned holy men who have breathed the smoke of their own burning
+1,cavemen who view fire as a hideous modern invention
+1,children of the wealthy
+1,clanless, hearthless outlaws
+1,desperate [addiction] addicts
+1,despised plagiarists
+1,diplomats from the Tyranny of Fun
+1,disgraced, beardless dwarfs
+1,exiled angels, cast out of Paradise,
+1,farmers enslaved by the land itself
+1,fierce virgins
+1,foreign bounty hunters
+1,forgers of swords and letters
+1,gorgeous babes
+1,graceful women who sound like birds
+1,has-been adventurers
+1,imperial spies
+1,intelligent animals disguised as people
+1,knights who must answer any challenge, from battle to baking,
+1,laughing philosophers
+1,lycanthropic bandits
+1,magi of fire and ice
+1,masked mages with [behind_mask] behind their masks
+1,members of an exclusive gentlemen’s club
+1,members of the cult of Maximinus Thrax
+1,members of the old stinking 9th, the lowest social class, reserved for scholars,
+1,members of the royal family in disguise
+1,men who have been killed twice
+1,metal giants
+1,musket-armed samurai
+1,naked ladies
+1,pacifistic daemons attracted to the stench of sin
+1,paladins who practice relentless, joyless virtue
+1,peddlers of influence
+1,quixotic immortals
+1,rage-addicted griefers
+1,recruiters from the College of Anu
+1,religious bandits tempted by heaven or plunder
+1,representatives of the labor and craft guilds
+1,scholars of antiquity
+1,silent monks
+1,soldiers riding ostriches of steel
+1,the heartbroken
+1,the restless, gloomy and sick at heart
+1,the struggling, the failed and the disliked
+1,the thousand sons of [List of gods.real]
+1,the world’s population of crows
+1,time-traveling tourists
+1,unknowable beings from beyond the stars wrapped in human guise
+1,unscrupulous merchants disguised as monks selling counterfeit relics
+1,unsmiling, blue-robed halflings
+1,vicious halflings interbred with animals
+1,wild druids
+1,wise silver-beards addicted to [addiction]
+1,youthful maidens in diaphanous dresses
+
+;urbn_subjectsingular
+5,[Quick NPC.main]
+1,{{ia|[profession]}} from a timeline when the Combine Empire never formed, strangled in its cradle by a mad conquerer named Prince Axum
+1,a barber known for cutting hair, tooth pulling and amputations
+1,a bard whose songs wake the dead and put the living to sleep
+1,a blind master of Tae Kwon Do
+1,a blue djinn, bound to no man,
+1,a brittle academic [facial_desc]
+1,a charismatic leader of a slave revolt [facial_desc]
+1,a clay giant animated by the gray heart of a dead mare
+1,a common [Animal.animalmammal], given the ‘terrible gift’ of self-awareness,
+1,a concubine so light she can dance in the palm of the emperor
+1,a crocodile wearing earrings of gold and glass bracelets
+1,a disgraced, beardless dwarf
+1,a dragon disguised as [urbn_subjectsingular]
+1,a eunuch [facial_desc]
+1,a famine-stalked child [facial_desc]
+1,a fire ecologist [facial_desc]
+1,a foreign sultan who fantasizes about roads lined with crucified thieves
+1,a gaunt minotaur with a broken horn
+1,a generous warlock [facial_desc]
+1,a gigantic master of riddles
+1,a girl with the fierce beauty of a seven-year-old
+1,a god punished by another god to be the slave of a mortal man
+1,a gorgeous naked man (actually the devil) who smells unmistakably like shit
+1,a grail knight, virtuous but loyal,
+1,a gray-haired merchant, deep in his cups,
+1,a great knight, raised from the dead,
+1,a grizzled centaur with a missing arm
+1,a heinous war criminal [facial_desc]
+1,a hungover and irritable warrior queen
+1,a jealous lover having fled their crime
+1,a kindly knight without a master
+1,a living suit of armor bearing the scars of its making
+1,a lonely nereid, who misses her sisters,
+1,a meddlesome interdimensional imp
+1,a member of [membership]
+1,a minstrel, once renowned, but never the same after venturing beyond the Lake of Dreams,
+1,a noble from [%foreign_adj][foreignland][%foreign_phrase], recently awoken from an enchanted sleep,
+1,a nostalgic immortal [facial_desc]
+1,a pagan executioner, blade slathered in the blood of saints
+1,a pampered princeling, allergic to [allergy],
+1,a paranoid mage clothed in obscurity
+1,a plucky mortal who tricked the gods into granting him divine power
+1,a poet whose verses flattered draconian vanity
+1,a pornographer of genius
+1,a precocious babe in swaddling clothes
+1,a queer druid draped in furs
+1,a randy hunter longing for companionship
+1,a scientist of pleasure [facial_desc]
+1,a shadow consultant [facial_desc]
+1,a sick puppy with the brain of a man, harboring fleas and kennel cough,
+1,a six-winged angel with a shoulder of ivory
+1,a statuesque ranger with beautiful blonde hair
+1,a strapping young lad without a wrinkle on his face
+1,a sun-burned refugee [facial_desc]
+1,a tax collector [facial_desc]
+1,a tiny, dragonfly-riding Pym
+1,a tired old king whose kingdom is no more
+1,a traveling hypnotist
+1,a tree surgeon, only called in for emergencies,
+1,a tyrant with democratic fantasies
+1,a veteran of a dozen campaigns
+1,a wandering swordsmith armed with his finest creation
+1,a witch from [%foreign_adj][foreignland][%foreign_phrase]
+1,a youthful monk ashamed of his indiscretions
+1,an angelic teenager, whose breath is more fragrant than the odour of flowers,
+1,an archangel visible only to [profession]s
+1,an assassin who works exclusively with lightning bolts
+1,an elf with teeth sharpened to points
+1,an enemy of God and his saints
+1,an exile [facial_desc]
+1,an exotic princess dressed in a royal wedding dress
+1,an idealistic warrior
+1,an ignorant, self-mutilating psychopath
+1,an old musketeer [facial_desc]
+1,an undefeated gladiator [facial_desc]
+1,an unsmiling, blue-robed halfling
+1,Bingo, the talking mastiff,
+1,Krishna, the butter-thief,
+1,Ninurta, the south wind,
+1,some god’s brat, eager to tell his mom on you,
+1,the dread daughter of the Queen of Hell
+1,the half-decomposed Queen of [foreignland]
+1,the ghost of a girl, feet bloody from running,
+1,the ghost of a pregnant woman
+1,the midwife to the Birth of Nine Diseases
+1,the pee-stained and pea-brained Prince of Idiots
+1,the wife of God
+
+
+;urbn_subjectverb
+5,[urbn_subjectplural] [urbn_verbplural]
+5,[urbn_subjectsingular] [urbn_verbsingular]
+1,[urbn_subjectplural] gather to [animateverb] [urbn_subjectsingular] every night
+
+;urbn_verbplural
+3,exchange [exchangething] for [exchangething]
+2,gather once every decade [decade_event]
+1,[ghostverb] with sullen ghosts
+1,[mindaltering] to enter the dreams of others
+1,advise true seekers in the ways of power
+1,argue over the difference between a hag and a crone
+1,believe [urbn_subjectsingular] is the reincarnation of their redeemer
+1,bury all reminders of their former lives
+1,chase down storms and fight the storm daemons with boomerangs
+1,come to brag and boast of their deeds
+1,come to seek justice from the high judge
+1,debate the merits of abdication and suicide
+1,dedicate their lives to the preservation of [preservation_item]
+1,despise themselves and are despised by all
+1,don masks and exchange secrets anonymously
+1,drink tea and write poetry about their plight
+1,engage in endless conversations about blade width and sharpness
+1,fated to die in prison hold raucous parties while they still can
+1,fence valuables stolen from [robbedplace]
+1,fight each other with knives made of chocolate
+1,forcefeed their bloated idiot queen
+1,gather to [animateverb] [Found in a crate.main], granted animation and volition
+1,get tattoos of the secret sign
+1,grow a secret crop of dream lotus
+1,have been paid to recruit interesting new acts for Dejenho Maro’s Wandering Zircus
+1,have been quarantined in a makeshift pesthouse
+1,have guessed the name of God
+1,have learned the secret of turning men into animals
+1,have more knowledge about [knowledgething] than anyone in the world
+1,labor on a decades-long art project
+1,languish; if they leave, they will be cursed to end their days wandering in a black field, lost
+1,long to dye rivers black with ink from the books they’ve destroyed
+1,perform experimental surgeries to implant strange additional organs into patients
+1,perform religious rituals with oil and wine
+1,play a deadly game of hide and seek
+1,play a sadistic game with living pieces
+1,plot dark deeds in service to the red spectre, Ithbal
+1,plot to undermine the status quo
+1,practice complicated forgeries by candlelight
+1,practice their unearthly scales on [Musical Instruments.iamain]
+1,preach extreme covetousness as the sure path to salvation
+1,preach nihilistic surrender to Chaos
+1,prepare for psychic combat against Tyco the Bad Dream
+1,process applications for artistic licenses
+1,promote a service to remove and store the mind, discarding the body and face, allowing a pure life confined to memory and thought
+1,protest against the relentlessness of time
+1,quaff strong poisons but do not die
+1,question the nature of the one who created the world
+1,run an auction for powerful magical items where all the bids must be in blood
+1,seek justice for the ghost of a strange and helpless beast slaughtered in the arena long ago
+1,seek others to help them explore the pleasures of evil
+1,seek to slake a dark thirst
+1,sell the love and mercy from [%foreign_adj][foreignland][%foreign_phrase], sunk beneath the waves, as that town no longer needs it
+1,sing songs popular over a thousand years ago
+1,speak only in echoes of words they spoke in youth
+1,speak the holy word and slip between worlds
+1,study the future by gazing through a magical spyglass
+1,take pity on a group of confused foreigners who claim they are [Modern Occupations.lc]s attending a convention in some place called Pittsburgh
+1,teach all who are willing to learn the Universal Tongue
+1,tickle each other with long sharp knives
+1,unleash their passions on both the virtuous and the villainous
+1,urgently wish to tell you about the insides of your hands
+1,vex visitors with nigh impossible to solve riddles
+1,violate their oaths in mockery of those who would control them
+1,wait patiently for a celestial sign
+1,with severed tongues are learning telepathy
+
+;urbn_verbsingular
+1,attempts to forget a sacred text memorized in youth
+1,attempts to paint the quality of light of the saddest hour of the day
+1,attempts to unravel the knot that binds the planes
+1,attracts bad rains that leave the plants wet with poison
+1,can be bribed into showing the way to a magical shop
+1,can lead customers safely along the Avenue of Sphinxes
+1,can teach children to hear the sounds of the spirit world
+1,can trade one curse for another
+1,challenges all comers to a sparring match
+1,challenges all comers to philosophical debate
+1,claims the other gods sleep, or dwell far away, or are not
+1,claims to be the founder of Combia
+1,claims to be the last of the Diadochi, the surviving generals and heirs of Prince Axum, who carved up his empire between themselves
+1,claims to know the name of every door in Duat
+1,claims to know the secret Shkunri told the elephants
+1,collects [collection]
+1,comes to pray in an unknown tongue
+1,cries over a chariot race lost long ago
+1,cut out their heart and buried it in four places, then left, and grew another heart
+1,dreams of things to come, portents dire and merry
+1,exists in five other places at the same time as well
+1,gives blessings to unborn children
+1,grows a patch of heirloom strawberries so addictive they’re illegal
+1,has a laugh that causes men to draw blades, eager to spill blood
+1,has been sleeping for over a decade
+1,has been waiting for their lover for over a hundred years
+1,has carved a riddle into a gigantic pumpkin
+1,has earned the enmity of the 4,601,200 spirits of Heaven
+1,has not slept for over a year
+1,hawks the King’s Drops, a distillation of human skull
+1,howls mournfully for a lost master
+1,is haunted by invisible scalpels
+1,is paying great sums for [exchangething]
+1,is said to have slain twenty men, not counting hobbits
+1,is seeking hearty lads and lasses to hunt down pirates [maritime_locn]
+1,is supposedly the greatest [profession] in the realm
+1,is the last speaker of Etruscan, a complicated language with an alphabet of 257 letters
+1,is trying to find buyers for a key to the House of [housething]
+1,is trying to sell a wish-bestowing cow
+1,joins the dead in their dreams when they sleep
+1,knows all there is to know about hunting [huntingmonster]
+1,knows the secret of breathing under water
+1,knows the secret of passing through stone
+1,knows the secret of walking through walls
+1,knows why the Sibyl weeps
+1,labors to rid the slumbering of their nightmares
+1,longs for {{ia|[Random fantasy world of origin.landmark]}} they will never see again
+1,longs for death but is unable to die
+1,longs for the world to be cleansed by catastrophe
+1,meditates beneath a thorn tree
+1,monitors the skies for signs of the end times
+1,mourns over the body of a slain fairy worn as a necklace
+1,notes the arrival of every stranger
+1,offers no-nonsense advice on love and sex
+1,offers eternal spiritual bliss from a spigot
+1,offers trips to the ruins on the moon for 10,000 GP a seat
+1,peddles a miracle cure for quinsy, glanders, farcy, tetter, and hectic fever
+1,plays a discordant tune on [Musical Instruments.iamain]
+1,plays people like instruments, a world class torturer making beautiful sounds
+1,practices contemplation by ascending and descending 39 irregular steps
+1,praises Boddhi with words like a flowing river of gold
+1,preaches an unpopular doctrine praising agony without redemption or reward
+1,preaches the secret of Living Fire
+1,promotes a chess-like game called Tapos played on a 40x40 grid with hundreds of pieces on each side
+1,recites the tale of Lonesome Gavlan, who returned from beyond the Lake of Dreams to find his friends long dead, his heart sad, and his country bleak
+1,regales the locals with stories about the Combine Empire
+1,runs a den of vice
+1,seeks alms for a bankrupt kingdom
+1,seeks bold souls for companionship on a journey to visit a Utopia beneath the waves
+1,seeks oath-breakers to punish
+1,sells a book said to contain the secret history of [heroes_and_villains] with details of their many lovers
+1,sells a map to the Place of Reeds
+1,sells an exotic creature that lives on scents and can die if it smells something bad
+1,sells fish-milk and bird-milk from another dimension
+1,sells maps of a dwarf clan’s hall
+1,sells self-powered mechanical dragonflies
+1,sings a song against the enemies of the dead
+1,sings the Song of Rain
+1,sips wine from a thousand years ago
+1,sits in a bathtub, singing the future history of the world
+1,speaks the language of stone
+1,spouts cutting edge art criticism
+1,stays up all night waiting for the perfect thought
+1,suspiciously fits the description of a trickster god
+1,teaches cantrips to the disenfranchised
+1,teaches the high art of hypocrisy
+1,tells lies about a dark red ocean and rainbows of only three colors
+1,trades wishes for wine
+1,trains hounds to smell and track [huntingmonster]
+1,transmutes wood into stone
+1,travels with a singing mouse kept in a birdcage
+1,tries to drum up sales for an adventure insurance policy
+1,unconsciously fashions the dreams of great men
+1,visits the thoughts of all who visit
+1,was dragged down into the underworld
+1,was told that they would find their soul mate in this place
+1,weeps over a masterfully constructed sonnet
+1,whose body emits a strange noise that sounds like [strangenoises] advertises the way to [slumberplace]
+1,whose feet have never once touched the ground studies [studysubject]
+1,whose touch invokes a geas to [geas]
+1,whose unhealing holy wounds bleed perfume-scented blood studies [studysubject]
+1,wields a powerful weapon built with unknown technology
+1,will pay for news of their family
+1,will trade 14 years of prosperity for a mysterious favor
+1,yearns for a release from all their suffering
+1,zealously guards the innocent from the wicked
+
+<!-- * W * -->
+
+;washups
+1,a battered chest with a lock no one can figure out
+1,a crate of stone phalluses
+1,a golden six-gun with five bullets
+1,a great-anchor made from a strange green metal
+1,a huge book, the size of a barn door,
+1,a huge cylinder carved with intricate designs, believed to be a wheel that fell off the chariot of the moon,
+1,a large pearl, round as a spinning wheel,
+1,a large seahorse wearing a saddle
+1,a living body without a head
+1,a massive tooth, taller than a troll,
+1,a vast mollusk
+1,a vast tangled silver thread
+1,an enormous dead crab
+1,an enormous jellyfish corpse
+1,the Book of Gates, missing since Silph the Uncanny’s disappearance and actually an inscribed sphere,
+1,the fires of Bel, which burn underwater and can never be extinguished,
+1,the Prince of the Sea, in a stupor,
+1,thousands upon thousands of severed noses and ears
+
+;weapon_land_type
+1,Desert
+1,Jungle
+1,Pale
+1,Salt Lake
+1,Swamp
+1,Volcano
+1,Waste
+
+;when
+0,formerly “howlongago”
+4,[Dice.onedfourplusone] hundred years
+1,a century
+1,a generation
+1,a millennium
+1,long years
+
+;who_finds_it
+10,[Quick NPC.main]
+7,[urbn_subjectsingular]
+5,a descendant of [heroes_and_villains]
+1,a foreign enemy
+1,a hapless child
+1,a peasant’s pet
+1,a stray dog
+1,a whining and corrupt satrap
+1,an ignorant farmhand
+
+;who_is_buried
+2,[tc],[%tomb_anecdote]
+1,[SGNP egyptian.ancient_male], the [ordinal] prince of the {{ucfirst:[ordinal]}} Dynasty,[%tomb_anecdote]
+1,Prince Axum, the shining son,[%tomb_anecdote]
+1,Sultan Abdullah Abdullah, the djinn-slayer,[%tomb_anecdote]
+1,the God-Emperor Vibx, first of his race,[%tomb_anecdote]
+1,the King of Dust, in glorious bandages arrayed,[%tomb_anecdote]
+
+;wilds_adj
+1,abnormally large
+1,ancient
+1,black
+1,blindingly bright
+1,foul-smelling
+1,mist-shrouded
+1,rainbow-hued
+1,vibrating
+1,whispering
+
+;wilds_hook
+3,conceals the entrance to a dungeon built by [culprit]
+3,emits a strange noise that sounds like [strangenoises]
+3,stands near a chapterhouse of [membership], a group which strives to [order_purpose]
+1,[heroes_and_villains] buried a fourth of their heart beneath
+1,allows the living to enter the underworld
+1,attracts the forgetful gods who live among the dolmens, cromlechs and chambered tumuli
+1,a group of frenzied maenads dance around
+1,attracts fragile beings from another world
+1,attracts songbirds whose voices mimic [strangenoises]
+1,causes nearby plants to grow monstrously large
+1,causes those who sleep nearby to dream of [fd_tale]
+1,causes unfamiliar constellations to appear in the skies nearby
+1,conceals a great treasure
+1,conceals an entrance to a cavern which echoes with the voices of gods
+1,conceals the last of the [huntingmonster], the rest believed extinct
+1,depicts the secret history of the world
+1,guards a functioning flying machine with an entombed astronaut
+1,holds a clue to the last remains of the Elmet people
+1,if reached by a slave, will grant them their freedom by divine law
+1,is a prison for a powerful spirit
+1,is actually an illusion which hides the great tree that has grown around the casket of [List of gods.real]
+1,is haunted by gods and angels, sinless and sin-destroying
+1,is part of an abandoned garden, overgrown with strange flora
+1,is referenced by [heroes_and_villains] as one of the eleven ancient places of power
+1,is surrounded by the scattered bones of children
+1,is the home of an otherworldly oracle who reads divinations from turtle bones
+1,is the home of the oldest [oldest] in the world
+1,is the only visible part of an underground psychological warfare facility
+1,is where the Great Cackler lays its eggs
+1,marks a small opening into a hall of the underworld, where a grim monarch can be seen hearing the confessions of the dead
+1,marks a spot where the barrier between worlds is gossamer-thin and easily torn
+1,marks a temple where the gods sleep, awoken each morning by the chanting of a holy order
+1,marks an entrance to an underground bunker, still sealed
+1,marks one of the dozens of heavens located underground
+1,marks the entrance to a mass grave containing 8 million mummified dogs
+1,marks the entrance to a secret shop that sells [exchangething]
+1,marks the last place the great hero [heroes_and_villains] was seen
+1,marks the location of a buried cache of books written by necromancers who lived before the flood
+1,marks the spot where two immortal knights agreed to meet in combat every May Day until the end of time; the victor on the Last Day wins the right to woo the Damsel Alluring
+1,promises great power to those who sleep near it
+1,protects one of the eight pieces of the Boddhi’s body enshrined in a nearby stupa
+1,rings with echoes from long ago
+
+
+;wilds_hook2
+0,Ex: “There’s a rumor that in a shady grove …”
+3,a [kinganimal] sits, enthroned, at a court of animals, wearing a crown of flowers
+3,a geyser sprays out [geyserspray] like clockwork at dawn on the 17th day of each year
+3,a tree older than the world itself grows, which bears [treebears]
+3,there stands a ruined tower [ruinedtower]
+1,[Weird Fantasy Monster.main] lies entombed in ice
+1,/ there’s a lady who’s sure / all that glitters is [bizarrecompanion] / and she’s buying [beyondreward]
+1,a bed has been carved from the massive stump of a tree, still rooted to the ground
+1,a chamber carved from one massive stone emits the scent of [Wampus Country Potions.taste]
+1,a chest full of cursèd gold lies, surrounded by skeletons
+1,a clan of frogmen worship an old log
+1,a common-house connects to multiple other times and planes of existence
+1,a crop of devil-eye weed grows; when smoked, it allows one to go without sleep, at the cost of the eyes appearing completely black
+1,a dream of [fd_tale] is given form and substance
+1,a flower grows; its scent cures all maladies
+1,a forest grows, whose trees assume the shapes of the bodies buried beneath them
+1,a great bird nests who grabs hold of its prey by their shadows
+1,a great hall sprawls, its roof covered with fire and symbols of truth, wherein the deified barbarian prince Gronas of Kadak dwells in splendor
+1,a group of high trees psionically compel trespassers to climb them and then leap off to their death
+1,a heavy stone slab, blessed by Mhalduum the Singer, may be lifted for one day every threescore years, allowing the spirits of the dead to walk among the sunlight and breezes of the upper world
+1,a hideous figure sits perched on a throne of red marble
+1,a hundred chests lie scattered, all but one containing cobweb and shadow
+1,a mighty wolf is bound to a boulder, a sword forcing its jaws open so it cannot bite down
+1,a Minoan Basilisk has been ruining the economy by turning nearby plantlife into gold
+1,a moving staircase descends deep into the earth (“Easy is the descent to Avernus, for the door to the underworld lies open both day and night. But to retrace your steps and return to the breezes above—that’s the task, that’s the toil”)
+1,a neglected palace with a ghost on the throne sinks slowly into the earth
+1,a party of men on horseback bearing the colors and sigil of a house thought extinct when the heirs all perished in the [propheticwar] [when] ago have been seen
+1,a prestigious cemetery, where the dead have their résumés carved on their gravestones in the hopes a necromancer will return them to life for a job (or at least an interview), has opened its gates
+1,a rose garden grows, watered by the tears of Little Jube the Caretaker
+1,a shade (unlike the underworld’s other inhabitants, not overcome by forgetfulness) has opened a tavern
+1,a soldier dressed in clothes from [when] ago stands frozen in a block of magical ice
+1,a statue of [list of gods.real] weeps tears of blood
+1,a tall marble column depicting the life and deeds of [heroes_and_villains] attracts wildlife who act as caretakers
+1,a temple stands where a divine being manifests herself in the movement of the fish kept in a pond below her statue
+1,a temple stands, wherein the voices of children playing outside assume a rhythmic answer to the seeker’s question
+1,a temple stands, whose doors only open in times of great conflict
+1,a thousand broken statues endure the elements
+1,a tree stands, from whose upper branches climbers can peer into the underworld
+1,a tree stands, whose upper branches turn climbers into monkeys
+1,a vast white fungus that spreads for miles underground breaches the surface
+1,an abandoned doll-maker’s workshop sinks into ruin
+1,an ancient image of a human bone is placed before the head of a death-god, said to be the hieroglyph for North
+1,an emerald tablet the size of a house is embedded in the ground
+1,an empty doorframe stands; whosoever passes through will age a score of years, in as many seconds
+1,an entire people live there, in a forest of towering trees, amid the treetops, never setting foot on the ground
+1,an old clock tower keeps time on an almost imperceptible scale
+1,Artemis dwells, a terrifying hag as tall as ten men
+1,artists descend by rope down a hole to the buried Golden Palace, abandoned centuries ago by the Combine Empire, to sketch great works of art contained within
+1,authorless tomes grow on trees in the Garden of Books
+1,ghostly travelers sit around a campfire which is always lit
+1,grows a crop tended by skeletal farmers that must be watered with blood
+1,grows a trio of lying trees dedicated to Chaos
+1,hundreds of pale green chrysalides the size of saddle-bags wait
+1,on a high, sombre hill there, 120 knights in silver armor sleep in a cave
+1,on warm summer nights, strains of elegant music drift from a fallen mansion
+1,the ancient lights of the Sealed City can be seen
+1,the massive mallet used to hammer out the sky at the dawn of time lies half-buried where it was cast
+1,there stands a shrine to Korvak, the Hunting Lord
+1,there’s a 10×10 patch of ground upon which it is impossible to die
+1,there's a flat golden stone where tired gods rest on their travels
+1,there's a large paw print in the stone, left by the hound of [heroes_and_villains] long ago
+1,there’s a storm of distorted time, where slow lightning descends over minutes
+1,thick stranglevine conceals an entrance to a dungeon
+1,what appears to be an immaculate city of metal and glass is protected by a forcefield
+
+;wilds_locn
+2,{{lcfirst:[Utility.CompassDirection]}} of [landmark]
+2,across the Narrow Sea
+2,at the bottom of the ocean
+2,beyond the Wall
+2,deep in the jungle
+2,far to the {{lcfirst:[Utility.CompassDirection]}}
+2,in the North Country
+2,on the other side of the world
+2,to the {{lcfirst:[Utility.CompassDirection]}}
+1,only visible by starlight
+1,that you must say a holy word to see
+
+;wilds_noun
+1,cairn
+1,cave
+1,column
+1,gate
+1,great tree
+1,hole
+1,machine
+1,metal rod
+1,pool
+1,rock pillar
+1,totem pole
+1,well
+
+;wilds_people
+1,Bone tribes
+1,Chosen of Elmet
+1,earth giants
+1,gray elves
+1,lizardfolk
+1,ogre children
+1,Pythagorean sorcerers
+1,Republic of Spiders
+1,witch-kin
+
+;wilds_specific_locn
+1,among the trackless sands of the southern deserts
+1,at the bottom of Drear Lake
+1,at the crest of Mockingbird Hill
+1,beside the mouth of a vast cave
+1,by the banks of the Mitares
+1,in a clearing protected by a low red wall
+1,in a shady grove
+1,in the Valley of Broken Promises
+1,near the Oasis of Marr
+1,on the peak of Rathe Mountain
+1,on the snow-fields of Säberhagen
+1,out on the black plains of Pôrto
+1,somewhere in a darkling forest
+1,somewhere within the innumerable gorges
+
+;Wilds
+0,Ex: “There’s a rumor that in a shady grove …”
+4,[who_is_buried] was buried in a hidden tomb with [tomb_loot]. The tomb is protected by [tombprotection]
+4,[thingbeyond] from [placebeyond] [actionbeyond]
+4,[wilds_specific_locn] [wilds_hook2]
+4,there’s {{ia|[wilds_adj]}} [wilds_noun] [wilds_locn] that [wilds_hook]
+1,[huntingmonster], not seen since they were exiled below the earth by [heroes_and_villains] centuries ago, have been reported near [landmark]
+1,[naturalthing] mark the former lands of the [wilds_people]
+1,[who_is_buried] constructed [landmark_manmade] using [construction_help] as a sign in future days for men to marvel at
+1,[wilds_locn], a dozen [sculptr_adj] statues carved from [sculptr_subst] and depicting [sculptr_subj] are arranged [sculptr_arr]
+1,a great [Color.all] fire that neither spreads nor goes out has burned for over a hundred years [wilds_locn]
+1,a pack of [herd_adj] [herdanimal] [%herdwith] have made their home [wilds_specific_locn]
+1,a wild gray horse, large enough to hold 14 men on its back, has been seen [wilds_specific_locn]
+1,a young [magicusertype] performs dangerous [magictype] rituals out in the [magicuserlandtype]
+1,an entire alien ecosystem surrounds the slowly decaying corpse of [decaying_corpse] [wilds_locn]
+1,an old dwarven tunnel travels beneath the Yellow River, the high ceiling littered with [tunnelceiling]
+1,four baboons guard a lake of fire near [landmark]
+1,inside a ruined castle, a golden bowl is fastened by four chains to a marble slab
+1,no one who travels beyond the Lake of Dreams returns the same person
+1,the [minename] Mine was abandoned when the workers began to unearth [mineobject]
+1,the deep elves, homesick for lands they would never see again, built an artificial sun and stars underground
+1,the ever-growing Great [weapon_land_type] is all that remains of [ancientthing] left behind by [culprit]
+1,the faint smell of [Wampus Country Potions.taste] often means there’s [Weird Fantasy Monster.main] nearby, or so it is said
+1,the King of Dust rules without mercy under the [Color.all] light of a strange sun
+1,the Ocean of Tears, a great desert littered with ancient ships and the bones of marine life, formed when [heroes_and_villains] ate the sacred fish of [List of gods.real] instead of throwing it back
+1,the River of Ghosts is so named because on quiet mornings, you can see [ghostriver]
+1,the River of Rubble is actually a trail of ants that have been carrying away crumbs of marble and stone from the fallen city Combia for over a thousand years in order to furnish their ant-mound in the splendor of antiquity
+1,the Salt River is filled with the tears of the widows, daughters, mothers, and sisters of the male population of [%foreign_adj][foreignland][%foreign_phrase], all murdered by [creepyvillain]
+1,there’s a beach where dozens of stranded undead whales bellow and sing to each other
+1,there’s a cave where, granted immortality, the first lovers live together, primitives gnawing on the same bone
+1,there’s a flat stone around which gods gather like flies over a sacrifice
+1,there's a forest where wild animals and monsters live in harmony, constrained by the mind of a peaceful hermit who dwells among them
+1,there’s a land [wilds_locn] “so infested with divinity that one might meet a god more easily than a man”
+1,there's a plain where cities themselves do battle, their gates and walls and buildings clashing against one another
+1,there’s a tent on the mountain where God lives, which is the source of all pure water
+1,there's an entrance to an abandoned dwarven mall [wilds_specific_locn]
+1,there’s an overgrown hedge maze, created by a magician for the Royal Jubilee 25 years ago. The duke’s child wandered in and never came out, and several rescuers were lost as well, so the magician was executed and the maze abandoned, with the prize—said to be [mazeprize]—still unclaimed at the center
+1,those traveling the road from [landmark] to [landmark] get old before they reach their destination
+
+</sgtable>
+
+==Subtables==
+* You can view just the subtables by looking at the “Discussion” page, where three calls per table are displayed.
+
+[[Category:Fantasy]][[Category:Rumors]][[Category:Work in Progress]][[Category:Old School]][[Category:Fantasy place]]

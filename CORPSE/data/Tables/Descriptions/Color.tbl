@@ -1,5 +1,5 @@
 : Simple = Common + Black + Blue + Brown + Green + Red + Violet + White + Yellow
-: Standard = Common + Simple + Light + Dark + Fancy + Metallic
+: Standard = Simple + Light + Dark + Fancy + Metallic
 : Color = Standard + Special + Example
 
 : Common
@@ -15,17 +15,17 @@ yellow
 
 : Black
 black
-charcoal-grey
+charcoal grey
 ebony
 grey
-ink-black
+ink black
 jet
-pitch-black
+pitch black
 raven
 sable
-shadowy-grey
-smokey-grey
-sooty-black
+shadowy grey
+smokey grey
+sooty black
 
 : Blue
 aqua
@@ -33,15 +33,15 @@ aquamarine
 azure
 blue
 cerulean
-cornflower-blue
+cornflower blue
 cyan
 marine
-navy-blue
-periwinkle-blue
-royal-blue
+navy blue
+periwinkle blue
+royal blue
 sapphire
-sky-blue
-slate-blue
+sky blue
+slate blue
 teal
 turquoise
 
@@ -56,7 +56,7 @@ chocolate
 cream
 ecru
 fallow
-flax-colored
+flax colored
 khaki
 mahogany
 ochre
@@ -67,39 +67,39 @@ taupe
 
 : Green
 chartreuse
-emerald-green
-forest-green
+emerald green
+forest green
 green
-juniper-green
-lime-green
-olive-green
-pea-green
-sage-green
-sea-green
+juniper green
+lime green
+olive green
+pea green
+sage green
+sea green
 verdant
 viridian
 
 : Red
 auburn
-blood-red
+blood red
 blush
-brick-red
+brick red
 cardinal
 carmine
-cherry-red
+cherry red
 coral
 crimson
-flame-red
+flame red
 fuchsia
 gules
-garnet-colored
+garnet colored
 magenta
 maroon
 orange
 peach
 red
 rose
-ruby-red
+ruby red
 pink
 puce
 russet
@@ -109,7 +109,7 @@ scarlet
 sienna
 terra cotta
 vermilion
-wine-colored
+wine colored
 
 : Violet
 indigo
@@ -124,7 +124,7 @@ violet
 
 : White
 alabaster
-bone-colored
+bone colored
 chalky
 cream
 dove
@@ -134,7 +134,7 @@ milky
 pale
 pearl
 porcelain
-snow-white
+snow white
 white
 
 : Yellow
@@ -142,14 +142,14 @@ amber
 apricot
 blond
 buff
-canary-yellow
+canary yellow
 ecru
 fallow
 flaxen
 golden
-honey-colored
-lemon-yellow
-mustard-yellow
+honey colored
+lemon yellow
+mustard yellow
 sandy
 saffron
 straw
@@ -176,9 +176,9 @@ wheat
 almond
 brown
 fallow
-forest-green
+forest green
 green
-sea-green
+sea green
 
 : Drab
 beige

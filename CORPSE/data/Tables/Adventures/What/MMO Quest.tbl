@@ -5,14 +5,23 @@ Deliver a package to the {profession}
 Free a {NPC} from a band of {{humanoid}+}
 Gather {d4x5} {{~{spell component}}+}
 Get {reagent}
-{Capture/Kill} beast: {beast:encounter}
-{Capture/Kill} demon: {Demon Name}
-{Capture/Kill} dragon: <Dragon={Dragon Name}>
-{Capture/Kill} monstrosity: <Monstrosity={Monster Name}>
-{Capture/Kill} {d4x5} {{fauna}+}
-{Capture/Kill} {d2x5} {{monster}+}
+{Non-Lethal} {NPC}
+{Capture|Kill} beast: {beast:encounter}
+{Capture|Kill} demon: {Demon Name}
+{Capture|Kill} dragon: <Dragon={Dragon Name}>
+{Capture|Kill} monstrosity: <Monstrosity={Monster Name}>
+{Capture|Kill} {d4x5} {{fauna}+}
+{Capture|Kill} {d2x5} {{monster}+}
 
 : Mundane Object
 {jewelry}
 {merchandise}
 {tiny item}
+
+: Non-Lethal
+Apprehend
+Arrest
+Capture
+Delay
+Incapacitate
+Locate

@@ -1,3 +1,6 @@
+: Terrain
+
+canyon
 civilized area
 coastal area
 cropland
@@ -35,3 +38,12 @@ taiga
 tundra
 wasteland
 wetlands
+
+: Basic
+arctic
+coastal
+desert
+forest
+mountain
+swamp
+tropical

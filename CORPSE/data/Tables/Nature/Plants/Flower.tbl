@@ -111,3 +111,256 @@ yucca flower
 zinnia
 zinnias
 {color:common} lotus
+
+===
+/ https://groups.yahoo.com/neo/groups/TableSmith/files/Flora/
+
+#
+# Flower
+#
+%Pfew%,2
+%PSeveral%,15
+%PMany%,3
+%CY%,1
+%CN%,19
+%Cfew%,3
+%CSeveral%,6
+%CMany%,1
+%CCone%,4
+%CBall%,6
+%CLine%,2
+%FTiny%,18
+%FSmall%,30
+%FLarge%,4
+%FMedium%,35
+%FGargantuan%,1
+
+
+:Start
+1,<b>Flower:</b>-----<br>
+_<b>Shape:</b>[Shape]
+_<b>Size:</b>[Size]<br>
+_<b>Cluster:</b>[Cluster]<br>
+_<b>Color:</b>[Color]<br>
+_<b>Pattern:</b>[Pattern] [Speckle]<br>
+_<b>Texture:</b>[Texture]<br>
+_<b>Scent:</b>[Odor]
+
+
+;Shape
+2,Bell Shape|CN=5||Cfew=3||FMedium=15||FTiny=30|<br>
+4,Funnel-Shape|Cfew=4||CSeveral=4||PMany=1|<br><b>Number of Petals:</b>[Petal]<br>
+4,Trumpet Shape|Cfew=4||CSeveral=4||PMany=1|<br><b>Number of Petals:</b>[Petal]<br><b>Depth:</b> [Depth1]<br>
+3,Salverform (Long thin tube, then flattens out)|Cfew=2||FTiny=14||CSeveral=3||PMany=1|<br><b>Number of Petals:</b>[Petal]<br><b>Depth:</b> [Depth1]<br>
+1,Tubular|CY=4||CN=3||CMany=2||FMedium=18||FTiny=25||FLarge=2|<br><b>Depth:</b> [Depth]<br>
+1,Urn Shaped (Similar to a ball with a sudden opening)|FMedium=18||FTiny=20||CY=4||CN=3||CMany=2|<br>
+4,Bowl-Shaped|Cfew=4||CSeveral=4||PMany=2|<br><b>Number of Petals:</b>[Petal]<br>
+6,Saucer-Shaped|Cfew=4||CSeveral=4||Pfew=1||PSeveral=18|<br><b>Number of Petals:</b>[Petal]<br>
+6,Stellate (Star-shaped)|CN=30||Cfew=4||CSeveral=4||PMany=4||Pfew=1||PSeveral=18|<br><b>Number of Petals:</b>[Petal]<br>
+3,Cruciform (Cross-Shaped - four petals at right angles)<br><b>Number of Petals:</b> 4<br>
+1,Labiate (lipped)|CN=8|<br>
+1,Pea-shaped (two small petals at bottom, two side petals with one large petal at top. Kinda like a boat)<br>
+1,Ligulate (strap-shaped - One large Petal)<br><b>Width of Petal:</b>[Width]<br>
+3,Bulbous(like a hybrid Rose)|Cfew=5||CSeveral=4|<br><b>Number of Petals:</b> Many<br>
+
+;Depth
+2,Short (Aspect~2:1) 
+5,Medium (Aspect~3:1)
+1,Long (Aspect~{1d2+3}:1)
+
+;Depth1
+1,Short (~[SubShort])
+1,Medium (~Equal to Diameter)
+1,Long (~1.5 times the Diameter)
+
+;Subshort
+1,1/2 the Diameter
+1,3/4 the Diameter
+
+;Width
+2,Broad (Near-circular)
+5,Medium (1/4 to 1/2 of length)
+3,Narrow (1/8 of length)
+
+;Petal
+?%Pfew%, 3
+?%PSeveral%, [Several]
+?%PMany%, Many
+
+
+;Several
+1,4
+3,5
+3,6
+2,7
+2,8
+1,9
+1,10
+
+;Cluster
+?%CY%, [Yes] Flowers<br><b>Shape of Cluster:</b> [Cshape]
+?%CN%, No
+
+;Yes
+?%Cfew%,[Few]|CLine=6|
+?%CSeveral%,[CSeveral]
+?%CMany%,[Many]|CLine=0|
+
+;Few
+1,3
+1,4
+1,5
+
+;CSeveral
+1,5-7
+1,6-8
+1,7-10
+1,8-12
+1,9-14
+1,10-15
+1,12-18
+
+;Many
+3,~{2d2}0
+2,~{3d4}0
+1,Hundreds of
+
+;Cshape
+?%CCone%,Conical
+?%CBall%,Spheroid
+?%CLine%,String
+
+;Size
+?%FTiny%,Tiny-[Tiny] inch|CY+4|
+?%FSmall%,Small-[Small]
+?%FMedium%,Medium-[Medium]|CN=25|
+?%FLarge%,Large-[Large]|CN=50|
+?%FGargantuan%,Gargantuan- [Gargantuan]|CY=0|
+
+;Tiny
+1,1/16
+1,1/8
+1,3/16
+2,1/4
+2,5/16
+2,3/8
+2,7/16
+3,1/2
+3,9/16
+3,5/8
+2,11/16
+4,3/4
+4,13/16
+3,7/8
+3,15/16
+2,1
+
+;Small
+2,1 in.
+2,1.5 in.
+1,2 in.
+
+;Medium
+6,2.5 in.
+3,3 in.
+1,3.5 in.
+
+;Large
+8,4 in.
+4,4.5 in.
+3,5 in.
+2,6 in.
+1,7 in.
+1,8 in.
+
+
+;Gargantuan
+6,~10 in.
+5,~1 ft.
+5,~1.5 ft.
+4,~2 ft.
+4,~2.5 ft.
+3,~3 ft.
+3,~4 ft.
+2,~5 ft.
+2,~6 ft.
+1,~7 ft.
+1,~8 ft.
+
+;Pattern
+50,Flat
+5,Sunburst<br><b>2nd Color:</b>[Color]
+3,Rayed<br><b>2nd Color:</b>[Color]
+1,Veins<br><b>2nd Color:</b>[Color]
+3,Spotted: [Spot]<br><b>2nd Color:</b>[Color]
+2,Edges:<br><b>2nd Color:</b>[Color]
+
+;Speckle
+24,
+1,and speckled with [Specks][Color.Start]
+
+;Specks
+1,Iridescent 
+1,Metallic 
+1,Pale 
+1,Smudgy 
+7,
+
+;Spot
+1,One per petal
+1,Two per petal
+1,Three per petal in a [Org]
+
+;Org
+1,line along the petal
+1,line crossing the petal
+1,triangle with the vertex out
+1,triangle with the vertex in
+
+;Texture
+1,Waxy
+15,Silky
+1,Sticky
+15,Satiny
+2,Papery
+4,Ribbed
+4,Crinkled
+
+;Strength
+1,Penetrating
+2,Heavy
+4,Strong
+20,Mild
+18,Slight
+12,Weak
+10,A Hint of
+
+;Odor
+11,[Strength] [Scent Modifier] [Scent]
+1,None
+15,[Strength] [Scent]
+8,[Strength]  [Scent] with [Scent]
+8,[Scent Modifier] [Scent] with [Scent]
+
+;Scent Modifier
+9,[Smells.Modifierp]
+1,[Smells.Modifiern]
+
+;Scent
+15,[Smells.Positive]
+10,[Smells.Neutral]
+1,[Smells.Negative]
+
+;Color
+12,[Color.Violet] (Violet)
+10,[Color.Pink] (Pink)
+12,[Color.Red] (Red)
+6,[Color.Orange] (Orange)
+2,[Color.Brown] (Brown)
+12,[Color.Yellow] (Yellow)
+2,[Color.Grey] (Grey)
+3,[Color.Green] (Green)
+4,[Color.Cyan] (Cyan)
+8,[Color.Blue] (Blue)
+15,[Color.White] (White)
+1,Black

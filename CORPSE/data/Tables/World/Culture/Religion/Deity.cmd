@@ -13,7 +13,7 @@
   <ul>
     <li>Dominion – What does the deity hold sway over?
     <li>Myth - What is the most well known myth associated with the god?
-    <li>Manifestation - How do the god's worshippers depict the deity?
+    <li>Manifestation: {frequency:some} {religion:depiction}
     <li>Rituals - What ceremonies and offerings does the god expect?
     <li>Divine Rewards and Punishments - How does the god reward true believers and punish those who work against it?
   </ul>
@@ -24,6 +24,13 @@
 
 ===
 
+/ Final Fantasy XIV
+Name, ruler of x and x, and god of x,
+is the guardian deity of x.  He commands the
+element of x and is associated with the x moon
+of the x calendar.  Name is the father/x of x,
+and the teacher of name/x.  He is most often depicted as a
+adj psuedo holding a x.  His symbols is the x.
 
 2. Portfolio
 

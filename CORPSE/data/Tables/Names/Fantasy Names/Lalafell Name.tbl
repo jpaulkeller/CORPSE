@@ -1,0 +1,7 @@
+/ Final Fantasy
+
+: Lalafell Name
+{:Part}{:part}
+
+: Part
+{CON={Generated Name:Simple Consonant}}{VWL={generated name:vl}}{Con}{vwl}{75%{{con|generated name:simple consonant}}{{vwl|generated name:vl}}}

@@ -21,8 +21,11 @@
 <ul>
 !loop {S}
    <li>{container:small loot} holding {N={{S}d20}}{C:=currency}{N} {C.nickname}s ({C.coin}s, worth about {{N}*{C.cp}} cp)
+   {{R}% <li>salvage: {salvage}}
+   {{R}% <li>gathered: {GATHERED}}
    {{R}% <li>{container:small loot} holding {{S}d20} coins: {coin}}
    {{R}% <li>{container:small loot} holding {{S}d{L}} {{~{gem cost.gem}}+}{50% and {{S}d{L}} {{~{gem cost.gem{!different}}}+}}}
+   {{R}% <li>{{S}d100} {coin:simple}s, {coin:storage}}
    {{R}% <li>{container:medium loot} holding {{S}d4} {metal} {ingots|bars}}
    {{R}% <li><font color=green>Luxury: {LUXURY:ITEM} (worth {{L}d25}0 gp)</font>}
    {{R}% <li><font color=brown>Art: {ART}{50% (by {ART:ARTIST})}</font>}

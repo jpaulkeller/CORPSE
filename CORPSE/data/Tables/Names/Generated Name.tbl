@@ -66,6 +66,28 @@
 9x {:vowel}
 {:vowel unicode lower}
 
+: simple consonant
+b
+c
+d
+f
+g
+h
+j
+k
+l
+m
+n
+p
+r
+s
+t
+v
+w
+x
+y
+z
+
 : consonant
 b
 c

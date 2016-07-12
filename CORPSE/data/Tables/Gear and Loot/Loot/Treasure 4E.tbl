@@ -1,0 +1,2559 @@
+/ https://xa.yimg.com/df/TableSmith/4E+Treasure.tab
+#
+# 4E Treasure
+#
+# Note: Magic item generation for level 30 might not be
+# entirely correct; the RC is a little unclear on this.
+#
+
+%level%,0
+%groupmod%,0
+%groupsize%,0
+%coins%,none
+%gems%,none
+%art%,none
+%magic%,none
+%dieroll%,0
+%modroll%,0
+%nat20%,0
+%group%,0
+%type%,0
+%list%,0
+%x%,0
+%min%,0
+%max%,0
+%val%,0
+%magicdie%,0
+%magiclvl%,0
+%magicrarity%,0
+
+@level,1,Enter level (1-30):
+@groupsize,5,Enter size of group:
+
+:Start
+1,|groupmod={Calc~(%groupsize%-5)*2}|
+_{Bold~Coins: }|type=Coins|[Generate]{CR~}
+_{Bold~Gems: }|type=Gems|[Generate]{CR~}
+_{Bold~Art: }|type=Art|[Generate]{CR~}
+_{Bold~Magic: }[GenMagic]
+
+:Generate
+1,|group=L%level%_%type%|
+_|dieroll={Dice~1d20}||modroll={Calc~%dieroll%+%groupmod%}|
+_{If~%dieroll%=20?[Nat20Roll]}
+_[%group%=%modroll%]
+
+:GenMagic
+1,|dieroll={Dice~1d20}||modroll={Calc~%dieroll%+%groupmod%}|
+_|magicdie={If~%level%>26?{Calc~30-%level%}/4}|
+_{If~%level%<30?[Magic1to29=%modroll%]/[Magic30=%modroll%]}
+
+:Magic1to29
+1-12,none
+13-20,|magiclvl={Dice~1d%magicdie%+%level%}|[MagicRarity][MagicL%magiclvl%%magicrarity%] (level %magiclvl%, %magicrarity%)
+
+:Magic30
+1-12,none
+13-18,|magiclvl=30|[MagicRarity][MagicL%magiclvl%%magicrarity%] (level %magiclvl%, %magicrarity%)
+19-20,[Magic30=18], [Magic30=18]
+
+:Nat20Roll
+1,{If~[%group%=%modroll%]=none?[GiveLesser]/|modroll=20|}
+
+:GiveLesser
+1,{If~{Count~%group%}=2?|modroll=20|/|modroll={MinVal~%group%,2}|}
+
+:MagicRarity
+1,|magicrarity={If~{Mod~%dieroll%,2}=1?common/{If~%dieroll%=20?rare/uncommon}}|
+
+:FixList
+1,|list={Left~{Calc~{Length~%list%}-2},%list%}|
+
+:GenGems
+1,{Split~x,",",min,max,val}|list={Loop~{Dice~%min%d%max%},[Gems%val%] (%val% gp), }|[FixList]%list%
+
+:GenArt
+1,{Split~x,",",min,max,val}|list={Loop~{Dice~%min%d%max%},[Art%val%] (%val% gp), }|[FixList]%list%
+
+:L1_Coins
+1-10,none
+11-14,{Dice~2d6*100} sp
+15-20,{Dice~2d6*10} gp
+
+:L1_Gems
+1-17,none
+18-20,|x=1,2,100|[GenGems]
+
+:L1_Art
+1-19,none
+20,|x=1,1,250|[GenArt]
+
+:L2_Coins
+1-10,none
+11-13,{Dice~3d6*100} sp
+14-20,{Dice~3d6*10} gp
+
+:L2_Gems
+1-17,none
+18-20,|x=1,3,100|[GenGems]
+
+:L2_Art
+1-18,none
+19-20,|x=1,1,250|[GenArt]
+
+:L3_Coins
+1-10,none
+11-12,{Dice~3d8*100} sp
+13-20,{Dice~3d8*10} gp
+
+:L3_Gems
+1-16,none
+17-20,|x=1,3,100|[GenGems]
+
+:L3_Art
+1-18,none
+19-20,|x=1,1,250|[GenArt]
+
+:L4_Coins
+1-10,none
+11,{Dice~5d6*100} sp
+12-20,{Dice~5d6*10} gp
+
+:L4_Gems
+1-15,none
+16-20,|x=1,3,100|[GenGems]
+
+:L4_Art
+1-18,none
+19-20,|x=1,2,250|[GenArt]
+
+:L5_Coins
+1-10,none
+11-20,{Dice~4d8*10} gp
+
+:L5_Gems
+1-15,none
+16-20,|x=1,4,100|[GenGems]
+
+:L5_Art
+1-18,none
+19-20,|x=1,3,250|[GenArt]
+
+:L6_Coins
+1-10,none
+11-20,{Dice~8d8*10} gp
+
+:L6_Gems
+1-13,none
+14-19,|x=1,4,100|[GenGems]
+20,|x=1,1,500|[GenGems]
+
+:L6_Art
+1-17,none
+18-20,|x=1,3,250|[GenArt]
+
+:L7_Coins
+1-10,none
+11-20,{Dice~2d4*100} gp
+
+:L7_Gems
+1-13,none
+14-19,|x=1,1,500|[GenGems]
+20,|x=1,1,1000|[GenGems]
+
+:L7_Art
+1-17,none
+18-20,|x=1,3,250|[GenArt]
+
+:L8_Coins
+1-10,none
+11-20,{Dice~2d6*100} gp
+
+:L8_Gems
+1-12,none
+13-19,|x=1,1,500|[GenGems]
+20,|x=1,1,1000|[GenGems]
+
+:L8_Art
+1-17,none
+18-19,|x=1,3,250|[GenArt]
+20,|x=1,1,1500|[GenArt]
+
+:L9_Coins
+1-10,none
+11-20,{Dice~2d8*100} gp
+
+:L9_Gems
+1-12,none
+13-19,|x=1,1,500|[GenGems]
+20,|x=1,1,1000|[GenGems]
+
+:L9_Art
+1-17,none
+18-19,|x=1,4,250|[GenArt]
+20,|x=1,1,1500|[GenArt]
+
+:L10_Coins
+1-10,none
+11-20,{Dice~2d10*100} gp
+
+:L10_Gems
+1-12,none
+13-19,|x=1,1,500|[GenGems]
+20,|x=1,1,1000|[GenGems]
+
+:L10_Art
+1-17,none
+18-19,|x=1,1,1500|[GenArt]
+20,|x=1,1,2500|[GenArt]
+
+:L11_Coins
+1-10,none
+11-20,{Dice~4d8*100} gp
+
+:L11_Gems
+1-12,none
+13-19,|x=1,1,1000|[GenGems]
+20,|x=1,1,5000|[GenGems]
+
+:L11_Art
+1-17,none
+18-19,|x=1,1,1500|[GenArt]
+20,|x=1,1,2500|[GenArt]
+
+:L12_Coins
+1-10,none
+11-20,{Dice~4d12*100} gp
+
+:L12_Gems
+1-12,none
+13-19,|x=1,2,1000|[GenGems]
+20,|x=1,1,5000|[GenGems]
+
+:L12_Art
+1-16,none
+17-18,|x=1,3,1500|[GenArt]
+19-20,|x=1,1,2500|[GenArt]
+
+:L13_Coins
+1-10,none
+11-20,{Dice~1d6*1000} gp
+
+:L13_Gems
+1-12,none
+13-19,|x=1,3,1000|[GenGems]
+20,|x=1,1,5000|[GenGems]
+
+:L13_Art
+1-16,none
+17-19,|x=1,1,2500|[GenArt]
+20,|x=1,1,7500|[GenArt]
+
+:L14_Coins
+1-10,none
+11-19,{Dice~1d8*1000} gp
+20,{Dice~1d6*10} pp
+
+:L14_Gems
+1-12,none
+13-18,|x=1,4,1000|[GenGems]
+19-20,|x=1,1,5000|[GenGems]
+
+:L14_Art
+1-16,none
+17-19,|x=1,2,2500|[GenArt]
+20,|x=1,1,7500|[GenArt]
+
+:L15_Coins
+1-10,none
+11-18,{Dice~1d10*1000} gp
+19-20,{Dice~1d8*10} pp
+
+:L15_Gems
+1-12,none
+13-17,|x=1,4,1000|[GenGems]
+18-20,|x=1,1,5000|[GenGems]
+
+:L15_Art
+1-16,none
+17-18,|x=1,2,2500|[GenArt]
+19-20,|x=1,1,7500|[GenArt]
+
+:L16_Coins
+1-10,none
+11-17,{Dice~2d8*1000} gp
+18-20,{Dice~2d8*10} pp
+
+:L16_Gems
+1-12,none
+13-20,|x=1,2,5000|[GenGems]
+
+:L16_Art
+1-16,none
+17-18,|x=1,6,1500|[GenArt]
+19-20,|x=1,1,7500|[GenArt]
+
+:L17_Coins
+1-10,none
+11-16,{Dice~4d6*1000} gp
+17-20,{Dice~4d6*10} pp
+
+:L17_Gems
+1-12,none
+13-20,|x=1,3,5000|[GenGems]
+
+:L17_Art
+1-16,none
+17-19,|x=1,1,7500|[GenArt]
+20,|x=1,1,15000|[GenArt]
+
+:L18_Coins
+1-10,none
+11-14,{Dice~4d8*1000} gp
+15-20,{Dice~4d8*10} pp
+
+:L18_Gems
+1-13,none
+14-20,|x=1,4,5000|[GenGems]
+
+:L18_Art
+1-16,none
+17-19,|x=1,3,7500|[GenArt]
+20,|x=1,1,15000|[GenArt]
+
+:L19_Coins
+1-10,none
+11-12,{Dice~4d10*1000} gp
+13-20,{Dice~4d10*10} pp
+
+:L19_Gems
+1-12,none
+13-20,|x=1,6,5000|[GenGems]
+
+:L19_Art
+1-16,none
+17-19,|x=1,3,7500|[GenArt]
+20,|x=1,1,15000|[GenArt]
+
+:L20_Coins
+1-10,none
+11,{Dice~4d12*1000} gp
+12-20,{Dice~4d12*10} pp
+
+:L20_Gems
+1-12,none
+13-20,|x=1,8,5000|[GenGems]
+
+:L20_Art
+1-16,none
+17-19,|x=1,3,7500|[GenArt]
+20,|x=1,1,15000|[GenArt]
+
+:L21_Coins
+1-10,none
+11-20,{Dice~1d8*100} pp
+
+:L21_Gems
+1-12,none
+13-20,|x=2,6,5000|[GenGems]
+
+:L21_Art
+1-15,none
+16-18,|x=1,3,15000|[GenArt]
+19-20,|x=1,1,50000|[GenArt]
+
+:L22_Coins
+1-10,none
+11-20,{Dice~1d12*100} pp
+
+:L22_Gems
+1-12,none
+13-20,|x=2,8,5000|[GenGems]
+
+:L22_Art
+1-15,none
+16-18,|x=1,6,15000|[GenArt]
+19-20,|x=1,2,50000|[GenArt]
+
+:L23_Coins
+1-10,none
+11-20,{Dice~2d8*100} pp
+
+:L23_Gems
+1-12,none
+13-20,|x=2,8,5000|[GenGems]
+
+:L23_Art
+1-15,none
+16-17,|x=1,8,15000|[GenArt]
+18-20,|x=1,3,50000|[GenArt]
+
+:L24_Coins
+1-10,none
+11-19,{Dice~2d10*100} pp
+20,{Dice~1d3*5} ad
+
+:L24_Gems
+1-12,none
+13-20,|x=2,6,5000|[GenGems]
+
+:L24_Art
+1-15,none
+16-17,|x=1,10,15000|[GenArt]
+18-20,|x=1,6,50000|[GenArt]
+
+:L25_Coins
+1-10,none
+11-19,{Dice~2d12*100} pp
+20,{Dice~1d4*5} ad
+
+:L25_Gems
+1-12,none
+13-20,|x=2,4,5000|[GenGems]
+
+:L25_Art
+1-14,none
+15-16,|x=2,8,15000|[GenArt]
+17-20,|x=1,6,50000|[GenArt]
+
+:L26_Coins
+1-10,none
+11-18,{Dice~1d4*1000} pp
+19-20,{Dice~1d6*5} ad
+
+:L26_Gems
+1-12,none
+13-20,|x=2,6,5000|[GenGems]
+
+:L26_Art
+1-14,none
+15-16,|x=3,6,15000|[GenArt]
+17-20,|x=1,12,50000|[GenArt]
+
+:L27_Coins
+1-10,none
+11-18,{Dice~1d6*1000} pp
+19-20,{Dice~2d6*5} ad
+
+:L27_Gems
+1-12,none
+13-20,|x=2,8,5000|[GenGems]
+
+:L27_Art
+1-14,none
+15-16,|x=3,6,15000|[GenArt]
+17-20,|x=3,6,50000|[GenArt]
+
+:L28_Coins
+1-10,none
+11-17,{Dice~1d8*1000} pp
+18-20,{Dice~2d6*5} ad
+
+:L28_Gems
+1-12,none
+13-20,none
+
+:L28_Art
+1-12,none
+13-20,|x=3,6,50000|[GenArt]
+
+:L29_Coins
+1-10,none
+11-17,{Dice~1d10*1000} pp
+18-20,{Dice~3d6*5} ad
+
+:L29_Gems
+1-12,none
+13-20,none
+
+:L29_Art
+1-12,none
+13-20,|x=2,12,50000|[GenArt]
+
+:L30_Coins
+1-10,none
+11-16,{Dice~1d10*1000} pp
+17-20,{Dice~2d12*5} ad
+
+:L30_Gems
+1-12,none
+13-20,none
+
+:L30_Art
+1-12,none
+13-20,|x=4,6,50000|[GenArt]
+
+# ===============
+# Gems
+# ===============
+;Gems100
+1,amber
+1,amethyst
+1,garnet
+1,moonstone
+1,jade
+1,pearl
+1,peridot
+1,turquoise
+
+;Gems500
+1,alexandrite
+1,aquamarine
+1,black pearl
+1,topaz
+
+;Gems1000
+1,emerald
+1,fire opal
+1,sapphire
+
+;Gems5000
+1,diamond
+1,jacinth
+1,ruby
+
+# ===============
+# Art objects
+# ===============
+;Art250
+1,gold ring with [Gems100]
+1,{If~{Dice~1d2}=1?bone/ivory} statuette
+1,gold bracelet
+1,silver necklace
+1,bronze crown
+1,silver-plated sword
+1,silk robe
+
+;Art1500
+1,gold ring with [Gems1000]
+1,{If~{Dice~1d2}=1?gold/silver} statuette
+1,gold bracelet with {Plural~[Gems500]}
+1,gold necklace with {Plural~[Gems100]}
+1,silver {If~{Dice~1d2}=1?tiara/crown} with {Plural~[Gems100]}
+1,ivory comb with {Plural~[Gems500]}
+1,cloth of gold vestments
+
+;Art2500
+1,{If~{Dice~1d2}=1?gold/platinum} ring with {Plural~[Gems1000]}
+1,{If~{Dice~1d2}=1?gold/silver} statuette with {Plural~[Gems500]}
+1,gold necklace with {Plural~[Gems500]}
+1,gold crown with {Plural~[Gems500]}
+1,gold chalice with {Plural~[Gems100]}
+1,ceremonial gold breastplate
+
+;Art7500
+1,platinum ring with {Plural~[Gems5000]}
+1,gold statuette with {Plural~[Gems1000]}
+1,mithral necklace with {Plural~[Gems1000]}
+1,adamantine crown with {Plural~[Gems1000]}
+1,adamantine box containing elemental flame
+1,black tunic woven of pure shadow
+
+;Art15000
+1,mithral ring with an astral diamond
+1,gold statuette with {Plural~[Gems5000]}
+1,gold necklace with {Plural~[Gems5000]}
+1,mithral tiara with {Plural~[Gems5000]}
+1,cup of celestial gold that glows with a soft inner light
+1,silvery cloak of astral thread
+1,enormous {If~{Dice~1d2}=1?emerald/sapphire}
+
+;Art50000
+1,bracelet formed of cold elemental lightning
+1,gown woven of elemental water
+1,brass ring with bound elemental fire
+1,celestial gold statuette with astral diamonds
+1,royal attire of astral thread with {Plural~[Gems5000]}
+1,enormous {If~{Dice~1d2}=1?diamond/ruby}
+
+# ===============
+# Magic Items
+# ===============
+;MagicL1common
+1,magic item
+
+;MagicL1uncommon
+1,magic item
+
+;MagicL1rare
+1,magic item
+
+;MagicL2common
+1,magic item
+
+;MagicL2uncommon
+1,magic item
+
+;MagicL2rare
+1,magic item
+
+;MagicL3common
+1,magic item
+
+;MagicL3uncommon
+1,magic item
+
+;MagicL3rare
+1,magic item
+
+;MagicL4common
+1,magic item
+
+;MagicL4uncommon
+1,magic item
+
+;MagicL4rare
+1,magic item
+
+;MagicL5common
+1,magic item
+
+;MagicL5uncommon
+1,magic item
+
+;MagicL5rare
+1,magic item
+
+;MagicL6common
+1,magic item
+
+;MagicL6uncommon
+1,magic item
+
+;MagicL6rare
+1,magic item
+
+;MagicL7common
+1,magic item
+
+;MagicL7uncommon
+1,magic item
+
+;MagicL7rare
+1,magic item
+
+;MagicL8common
+1,magic item
+
+;MagicL8uncommon
+1,magic item
+
+;MagicL8rare
+1,magic item
+
+;MagicL9common
+1,magic item
+
+;MagicL9uncommon
+1,magic item
+
+;MagicL9rare
+1,magic item
+
+;MagicL10common
+1,magic item
+
+;MagicL10uncommon
+1,magic item
+
+;MagicL10rare
+1,magic item
+
+;MagicL11common
+1,magic item
+
+;MagicL11uncommon
+1,magic item
+
+;MagicL11rare
+1,magic item
+
+;MagicL12common
+1,magic item
+
+;MagicL12uncommon
+1,magic item
+
+;MagicL12rare
+1,magic item
+
+;MagicL13common
+1,magic item
+
+;MagicL13uncommon
+1,magic item
+
+;MagicL13rare
+1,magic item
+
+;MagicL14common
+1,magic item
+
+;MagicL14uncommon
+1,magic item
+
+;MagicL14rare
+1,magic item
+
+;MagicL15common
+1,magic item
+
+;MagicL15uncommon
+1,magic item
+
+;MagicL15rare
+1,magic item
+
+;MagicL16common
+1,magic item
+
+;MagicL16uncommon
+1,magic item
+
+;MagicL16rare
+1,magic item
+
+;MagicL17common
+1,magic item
+
+;MagicL17uncommon
+1,magic item
+
+;MagicL17rare
+1,magic item
+
+;MagicL18common
+1,magic item
+
+;MagicL18uncommon
+1,magic item
+
+;MagicL18rare
+1,magic item
+
+;MagicL19common
+1,magic item
+
+;MagicL19uncommon
+1,magic item
+
+;MagicL19rare
+1,magic item
+
+;MagicL20common
+1,magic item
+
+;MagicL20uncommon
+1,magic item
+
+;MagicL20rare
+1,magic item
+
+;MagicL21common
+1,magic item
+
+;MagicL21uncommon
+1,magic item
+
+;MagicL21rare
+1,magic item
+
+;MagicL22common
+1,magic item
+
+;MagicL22uncommon
+1,magic item
+
+;MagicL22rare
+1,magic item
+
+;MagicL23common
+1,magic item
+
+;MagicL23uncommon
+1,magic item
+
+;MagicL23rare
+1,magic item
+
+;MagicL24common
+1,magic item
+
+;MagicL24uncommon
+1,magic item
+
+;MagicL24rare
+1,magic item
+
+;MagicL25common
+1,magic item
+
+;MagicL25uncommon
+1,magic item
+
+;MagicL25rare
+1,magic item
+
+;MagicL26common
+1,magic item
+
+;MagicL26uncommon
+1,magic item
+
+;MagicL26rare
+1,magic item
+
+;MagicL27common
+1,magic item
+
+;MagicL27uncommon
+1,magic item
+
+;MagicL27rare
+1,magic item
+
+;MagicL28common
+1,magic item
+
+;MagicL28uncommon
+1,magic item
+
+;MagicL28rare
+1,magic item
+
+;MagicL29common
+1,magic item
+
+;MagicL29uncommon
+1,magic item
+
+;MagicL29rare
+1,magic item
+
+;MagicL30common
+1,magic item
+
+;MagicL30uncommon
+1,magic item
+
+;MagicL30rare
+1,magic item
+
+====
+/ https://xa.yimg.com/df/TableSmith/4E+Individual+Treasure.tab
+#
+# 4E Individual Treasure
+#
+%level%,0
+%levelb%,0
+%levela%,0
+%type%,0
+%lootDB%,0
+%idx%,0
+%base%,0
+%numRolls%,0
+%source%,0
+%compVal%,0
+%coin1%,0
+%coin2%,0
+
+@level,1,Enter level (1-30):
+@type,1,Enter monster type:,Standard,Minion,Elite,Solo
+
+:Start
+1,{DSCreate~lootDB,name,xxx,value,0,type,gp,source,xxx,sort,2}
+_[GenTreasure][DisplayTreasure]
+
+;DisplayTreasure
+1,{Bold~Level %level% {Param~type,%type%} ({DSCalc~lootDB,sum,value} gp total)}{CR~}
+_{DSSort~lootDB,sort,0,name,0}
+_|idx=1|{Loop~{DSCount~lootDB},
+_{If~%idx%>1?• }{DSGet~lootDB,%idx%,name} ({DSGet~lootDB,%idx%,value} {DSGet~lootDB,%idx%,type}{If~[DBSrc]!=xxx?, [DBSrc]})
+_|idx+1|{CR~}}
+
+:GenTreasure
+1,|base=[TreasureBase=%level%]|[ModBaseByType=%type%][ModBase]
+_|numRolls={Select~%type%,1,1,2,0,3,2,5}|
+_|levela={Min~{Calc~%level%+1},30}|
+_|levelb={Max~{Calc~%level%-1},1}|
+_{Loop~%numRolls%,[Tier=%level%]}
+_[CalcCoins=%level%]
+
+:CalcCoins
+1-5,|coin1={Trunc~%base%}||coin2={Calc~(%base%-{Trunc~%base%})*10}|
+_{DSAddNR~lootDB,name,{If~%coin1%>0?%coin1% gp }{If~%coin2%>0?%coin2% sp},type,gp,value,{Calc~%coin1%+(%coin2%/10)},sort,1}
+6-15 ,{DSAddNR~lootDB,name,%base% gp,type,gp,value,%base%,sort,1}
+16-25,|coin1={Calc~%base%\100}||coin2={Trunc~{Calc~%base%-(%coin1%*100)}}|
+_{DSAddNR~lootDB,name,{If~%coin1%>0?%coin1% pp }{If~%coin2%>0?%coin2% gp},type,gp,value,{Calc~(%coin1%*100)+%coin2%},sort,1}
+26-30,|coin1={Calc~%base%\10000}||coin2={Calc~(%base%-(%coin1%*10000))\100}|
+_{DSAddNR~lootDB,name,{If~%coin1%>0?%coin1% ad }{If~%coin2%>0?%coin2% pp},type,gp,value,%base%,sort,1}
+
+:ModBaseByType
+1,
+2,|base/5|
+3,|base*2|
+4,|base*5|
+
+:ModBase
+1,|base*.8|
+2-3,|base*.9|
+4-7,
+8-9,|base*1.1|
+10,|base*1.2|
+
+:Tier
+1-5  ,|compVal={Calc~%level%*5*(1+{Dice~2d4-5}/10)}|[HeroicLower]
+6-10 ,|compVal={Calc~%level%*10*(1+{Dice~2d4-5}/10)}|[HeroicUpper]
+11-15,|compVal={Calc~%level%*50*(1+{Dice~2d4-5}/10)}|[ParagonLower]
+16-20,|compVal={Calc~%level%*100*(1+{Dice~2d4-5}/10)}|[ParagonUpper]
+21-25,|compVal={Calc~%level%*500*(1+{Dice~2d4-5}/10)}|[EpicLower]
+26-30,|compVal={Calc~%level%*1000*(1+{Dice~2d4-5}/10)}|[EpicUpper]
+
+;HeroicLower
+8,
+4,{If~%base%>=100?{DSAddNR~lootDB,name,[Goods100],value,100,sort,2}|base-100|}
+2,{If~%base%>=%compVal%?{DSAddNR~lootDB,name,[RitualComp],value,%compVal%,sort,4}|base-%compVal%|}
+7,[MagicConsum]
+
+;HeroicUpper
+8,{If~%base%>=100?{DSAddNR~lootDB,name,[Goods100],value,100,sort,2}|base-100|}
+4,{If~%base%>=250?{DSAddNR~lootDB,name,[Goods250],value,250,sort,2}|base-250|}
+2,{If~%base%>=%compVal%?{DSAddNR~lootDB,name,[RitualComp],value,%compVal%,sort,4}|base-%compVal%|}
+7,[MagicConsum]
+
+;ParagonLower
+8,{If~%base%>=500?{DSAddNR~lootDB,name,[Goods500],value,500,sort,2}|base-500|}
+4,{If~%base%>=1000?{DSAddNR~lootDB,name,[Goods1000],value,1000,sort,2}|base-1000|}
+2,{If~%base%>=%compVal%?{DSAddNR~lootDB,name,[RitualComp],value,%compVal%,sort,4}|base-%compVal%|}
+7,[MagicConsum]
+
+;ParagonUpper
+8,{If~%base%>=1500?{DSAddNR~lootDB,name,[Goods1500],value,1500,sort,2}|base-1500|}
+4,{If~%base%>=2500?{DSAddNR~lootDB,name,[Goods2500],value,2500,sort,2}|base-2500|}
+3,{If~%base%>=5000?{DSAddNR~lootDB,name,[Goods5000],value,5000,sort,2}|base-5000|}
+3,{If~%base%>=%compVal%?{DSAddNR~lootDB,name,[RitualComp],value,%compVal%,sort,4}|base-%compVal%|}
+9,[MagicConsum]
+
+;EpicLower
+8,{If~%base%>=7500?{DSAddNR~lootDB,name,[Goods7500],value,7500,sort,2}|base-7500|}
+4,{If~%base%>=15000?{DSAddNR~lootDB,name,[Goods15000],value,15000,sort,2}|base-15000|}
+2,{If~%base%>=%compVal%?{DSAddNR~lootDB,name,[RitualComp],value,%compVal%,sort,4}|base-%compVal%|}
+7,[MagicConsum]	
+
+;EpicUpper
+12,{If~%base%>=50000?{DSAddNR~lootDB,name,[Goods50000],value,50000,sort,2}|base-50000|}
+2,{If~%base%>=%compVal%?{DSAddNR~lootDB,name,[RitualComp],value,%compVal%,sort,4}|base-%compVal%|}
+7,[MagicConsum]	
+
+;MagicConsum
+4,{If~%base%>=[ConsumCost=%levelb%]?{DSAddNR~lootDB,name,{Italic~[L%levelb%Consum]},value,[ConsumCost=%levelb%],source,%source%,sort,3}|base-[ConsumCost=%levelb%]|}
+2,{If~%base%>=[ConsumCost=%level%]?{DSAddNR~lootDB,name,{Italic~[L%level%Consum]},value,[ConsumCost=%level%],source,%source%,sort,3}|base-[ConsumCost=%level%]|}
+1,{If~%base%>=[ConsumCost=%levela%]?{DSAddNR~lootDB,name,{Italic~[L%levela%Consum]},value,[ConsumCost=%levela%],source,%source%,sort,3}|base-[ConsumCost=%levela%]|}
+
+# =============== GOODS ===============
+;Goods100
+1,amber
+1,amethyst
+1,garnet
+1,moonstone
+1,jade
+1,pearl
+1,peridot
+1,turquoise
+
+;Goods250
+1,gold ring with [Goods100]
+1,gold bracelet
+1,silver necklace
+
+;Goods500
+1,alexandrite
+1,aquamarine
+1,black pearl
+1,topaz
+
+;Goods1000
+1,emerald
+1,fire opal
+1,sapphire
+
+;Goods5000
+1,diamond
+1,jacinth
+1,ruby
+
+;Goods1500
+1,gold ring with [Goods1000]
+1,gold bracelet with [Goods500]s
+1,gold necklace with [Goods100]s
+1,ivory comb with [Goods500]s
+
+;Goods2500
+1,gold ring with [Goods1000]s
+1,platinum ring with [Goods1000]s
+1,gold necklace with [Goods500]s
+
+;Goods7500
+1,platinum ring with [Goods5000]
+1,mithral necklace with [Goods1000]
+1,adamantine box containing elemental flame
+
+;Goods15000
+1,mithral ring with an astral diamond
+1,gold necklace with [Goods5000]s
+1,enormous emerald
+1,enormous sapphire
+
+;Goods50000
+1,bracelet formed of cold elemental lightning
+1,brass ring with bound elemental fire
+1,enormous diamond
+1,enormous ruby
+
+# =============== CONSUMABLES ===============
+;L1Consum
+1,[sAV]alchemist’s acid - L1
+1,[sAV]alchemist’s fire - L1
+1,[sAV]alchemist’s frost - L1
+1,[sAV]antivenom - L1
+1,[sAV]clearsense powder - L1
+1,[sAV]clearwater solution - L1
+
+;L2Consum
+1,[sAV]alchemist’s acid (ammunition) - L2
+1,[sAV]alchemist’s fire (ammunition) - L2
+1,[sAV]alchemist’s frost (ammunition) - L2
+1,[sAV]tanglefoot bag - L2
+
+;L3Consum
+1,[sAV]stonemeal biscuit - L3
+1,[sAV]blinding bomb - L3
+1,[sAV]bloodstinger poison - L3
+1,[sAV]dragonfire tar - L3
+1,[sAV]ghoststrike oil - L3
+1,[sAV]herbal poultice - L3
+1,[sAV]slow-step oil - L3
+1,[sPH3]talent shard - L3
+
+;L4Consum
+1,[sAV]life shroud - L4
+1,[sAV]nail of sealing - L4
+1,[sAV]potion of resistance - L4
+#1,[sAV]beastbane - L4
+1,[sAV]blastpatch - L4
+1,[sAV]lockbust chalk - L4
+1,[sAV]tracking dust - L4
+1,[sPH3]cognizance crystal - L4
+
+;L5Consum
+1,[sPH]potion of healing - L5
+1,[sAV]elixir of aptitude - L5
+1,[sAV]gravespawn potion - L5
+1,[sAV]potion of clarity - L5
+1,[sAV]potion of spirit - L5
+1,[sAV]alchemical silver - L5
+1,[sAV]thunderstone - L5
+
+;L6Consum
+1,[sAV]augmenting whetstone - L6
+1,[sAV]fire beetle potion - L6
+1,[sAV]vision sand - L6
+1,[sAV]alchemist’s acid - L6
+1,[sAV]alchemist’s fire - L6
+1,[sAV]alchemist’s frost - L6
+1,[sAV]clearsense powder - L6
+1,[sAV]goodnight tincture - L6
+1,[sAV]smokestick - L6
+
+;L7Consum
+1,[sAV]desert rose - L7
+1,[sAV]elixir of dragon breath - L7
+1,[sAV]frozen whetstone - L7
+1,[sAV]glassteel shard - L7
+1,[sAV]potion of lifeshield - L7
+1,[sAV]potion of mimicry - L7
+1,[sAV2]clay of creation - L7
+1,[sAV]alchemist’s acid (ammunition) - L7
+1,[sAV]alchemist’s fire (ammunition) - L7
+1,[sAV]alchemist’s frost (ammunition) - L7
+1,[sAV]tanglefoot bag - L7
+
+;L8Consum
+1,[sAV]brightleaf - L8
+1,[sAV]dark clover - L8
+1,[sAV]elixir of accuracy - L8
+1,[sAV]elixir of fortitude - L8
+1,[sAV]elixir of reflexes - L8
+1,[sAV]elixir of will - L8
+1,[sAV]potion of stormshield - L8
+1,[sAV2]silver sand - L8
+1,[sAV2]vortex stone - L8
+1,[sAV]blinding bomb - L8
+1,[sAV]bloodstinger poison - L8
+1,[sAV]dragonfire tar - L8
+1,[sAV]ghoststrike oil - L8
+1,[sAV]herbal poultice - L8
+1,[sAV]salve of slipperiness - L8
+1,[sAV]slow-step oil - L8
+1,[sAV]sovereign glue - L8
+1,[sPH3]talent shard - L8
+
+;L9Consum
+1,[sAV]black dragon bile - L9
+1,[sAV]potion of regeneration - L9
+1,[sAV]potion of vigor - L9
+1,[sAV]terror ichor - L9
+1,[sAV]whetstone of venom - L9
+#1,[sAV]beastbane - L9
+1,[sAV]beastbane - L4
+1,[sAV]blastpatch - L9
+1,[sAV]lockbust chalk - L9
+1,[sAV]tracking dust - L9
+
+;L10Consum
+1,[sAV]caustic whetstone - L10
+1,[sAV]creeping gatevine - L10
+1,[sAV]flame rose - L10
+1,[sAV]fundamental ice - L10
+1,[sAV]glowstone - L10
+1,[sAV]kruthik potion - L10
+1,[sAV]oil of flesh returned - L10
+1,[sAV]potion of clarity - L10
+1,[sAV]potion of spirit - L10
+1,[sAV]tempest whetstone - L10
+1,[sAV]whetstone of combustion - L10
+1,[sAV]jolt flask - L10
+1,[sAV]thunderstone - L10
+1,[sAV]universal solvent - L10
+
+;L11Consum
+1,[sAV]augmenting whetstone - L11
+1,[sAV]elixir of speed - L11
+1,[sAV]unguent of darkvision - L11
+1,[sAV2]flash flower - L11
+1,[sAV2]rust bark - L11
+1,[sAV]alchemist’s acid - L11
+1,[sAV]alchemist’s fire - L11
+1,[sAV]alchemist’s frost - L11
+1,[sAV]antivenom - L11
+1,[sAV]clearsense powder - L11
+1,[sAV]goodnight tincture - L11
+
+;L12Consum
+1,[sAV]alchemist’s acid (ammunition) - L12
+1,[sAV]alchemist’s fire (ammunition) - L12
+1,[sAV]alchemist’s frost (ammunition) - L12
+1,[sAV]tanglefoot bag - L12
+
+;L13Consum
+1,[sAV]elixir of accuracy - L13
+1,[sAV]elixir of fortitude - L13
+1,[sAV]elixir of reflexes - L13
+1,[sAV]elixir of will - L13
+1,[sAV]feybread biscuit - L13
+1,[sAV]blinding bomb - L13
+1,[sAV]bloodstinger poison - L13
+1,[sAV]dragonfire tar - L13
+1,[sAV]ghoststrike oil - L13
+1,[sAV]herbal poultice - L13
+1,[sAV]salve of slipperiness - L13
+1,[sAV]slow-step oil - L13
+1,[sPH3]talent shard - L3
+
+;L14Consum
+1,[sAV]black cave pearl - L14
+1,[sAV]potion of resistance - L14
+#1,[sAV]beastbane - L14
+1,[sAV]beastbane - L9
+1,[sAV]blastpatch - L14
+1,[sAV]lockbust chalk - L14
+1,[sAV]tracking dust - L14
+1,[sPH3]cognizance crystal - L14
+
+;L15Consum
+1,[sPH]potion of vitality - L15
+1,[sAV]cryptspawn potion - L15
+1,[sAV]dread nightshade - L15
+1,[sAV]elixir of aptitude - L15
+1,[sAV]mind dust - L15
+1,[sAV]potion of clarity - L15
+1,[sAV]potion of spirit - L15
+1,[sAV]alchemical silver - L15
+1,[sAV]jolt flask - L15
+1,[sAV]thunderstone - L15
+
+;L16Consum
+1,[sAV]augmenting whetstone - L16
+1,[sAV]elixir of invisibility - L16
+1,[sAV]alchemist’s acid - L16
+1,[sAV]alchemist’s fire - L16
+1,[sAV]alchemist’s frost - L16
+1,[sAV]clearsense powder - L16
+1,[sAV]goodnight tincture - L16
+
+;L17Consum
+1,[sAV]desert rose - L17
+1,[sAV]elixir of dragon breath - L17
+1,[sAV]frozen whetstone - L17
+1,[sAV]glassteel shard - L17
+1,[sAV]potion of lifeshield - L17
+1,[sAV]potion of mimicry - L17
+1,[sAV2]clay of creation - L17
+1,[sAV]alchemist’s acid (ammunition) - L17
+1,[sAV]alchemist’s fire (ammunition) - L17
+1,[sAV]alchemist’s frost (ammunition) - L17
+1,[sAV]tanglefoot bag - L17
+
+;L18Consum
+1,[sAV]brightleaf - L18
+1,[sAV]dark clover - L18
+1,[sAV]elixir of accuracy - L18
+1,[sAV]elixir of fortitude - L18
+1,[sAV]elixir of reflexes - L18
+1,[sAV]elixir of will - L18
+1,[sAV]potion of stormshield - L18
+1,[sAV2]silver sand - L18
+1,[sAV2]vortex stone - L18
+1,[sAV]blinding bomb - L18
+1,[sAV]bloodstinger poison - L18
+1,[sAV]dragonfire tar - L18
+1,[sAV]ghoststrike oil - L18
+1,[sAV]herbal poultice - L18
+1,[sAV]salve of slipperiness - L18
+1,[sAV]slow-step oil - L18
+1,[sAV]sovereign glue - L18
+1,[sPH3]talent shard - L18
+
+;L19Consum
+1,[sAV]black dragon bile - L19
+1,[sAV]potion of regeneration - L19
+1,[sAV]potion of vigor - L19
+1,[sAV]terror ichor - L19
+1,[sAV]whetstone of venom - L19
+#1,[sAV]beastbane - L19
+1,[sAV]beastbane - L14
+1,[sAV]blastpatch - L19
+1,[sAV]lockbust chalk - L19
+1,[sAV]tracking dust - L19
+
+;L20Consum
+1,[sAV]caustic whetstone - L20
+1,[sAV]creeping gatevine - L20
+1,[sAV]flame rose - L20
+1,[sAV]fundamental ice - L20
+1,[sAV]gem of valor - L20
+1,[sAV]potion of clarity - L20
+1,[sAV]potion of spirit - L20
+1,[sAV]spider potion - L20
+1,[sAV]tempest whetstone - L20
+1,[sAV]whetstone of combustion - L20
+1,[sAV]jolt flask - L20
+1,[sAV]thunderstone - L20
+
+;L21Consum
+1,[sAV]augmenting whetstone - L21
+1,[sAV]elixir of flying - L21
+1,[sAV]unguent of blindsight - L21
+1,[sAV]alchemist’s acid - L21
+1,[sAV]alchemist’s fire - L21
+1,[sAV]alchemist’s frost - L21
+1,[sAV]antivenom - L21
+1,[sAV]clearsense powder - L21
+1,[sAV]goodnight tincture - L21
+
+;L22Consum
+1,[sAV]alchemist’s acid (ammunition) - L22
+1,[sAV]alchemist’s fire (ammunition) - L22
+1,[sAV]alchemist’s frost (ammunition) - L22
+1,[sAV]tanglefoot bag - L22
+
+;L23Consum
+1,[sAV]astral mead - L23
+1,[sAV]elixir of accuracy - L23
+1,[sAV]elixir of fortitude - L23
+1,[sAV]elixir of reflexes - L23
+1,[sAV]elixir of will - L23
+1,[sAV]blinding bomb - L23
+1,[sAV]bloodstinger poison - L23
+1,[sAV]dragonfire tar - L23
+1,[sAV]ghoststrike oil - L23
+1,[sAV]herbal poultice - L23
+1,[sAV]salve of slipperiness - L23
+1,[sAV]slow-step oil - L23
+1,[sPH3]talent shard - L23
+
+;L24Consum
+1,[sAV]black cave pearl - L24
+1,[sAV]potion of resistance - L24
+#1,[sAV]beastbane - L24
+1,[sAV]beastbane - L19
+1,[sAV]blastpatch - L24
+1,[sAV]lockbust chalk - L24
+1,[sAV]tracking dust - L24
+1,[sPH3]cognizance crystal - L24
+
+;L25Consum
+1,[sPH]potion of recovery - L25
+1,[sAV]deathspawn potion - L25
+1,[sAV]dread nightshade - L25
+1,[sAV]elixir of aptitude - L25
+1,[sAV]mind dust - L25
+1,[sAV]potion of clarity - L25
+1,[sAV]potion of spirit - L25
+1,[sAV]alchemical silver - L25
+1,[sAV]jolt flask - L25
+1,[sAV]thunderstone - L25
+
+;L26Consum
+1,[sAV]augmenting whetstone - L26
+1,[sAV2]immurement of seething scoria - L26
+1,[sAV2]immurement of the vengeful river - L26
+1,[sAV]alchemist’s acid - L26
+1,[sAV]alchemist’s fire - L26
+1,[sAV]alchemist’s frost - L26
+1,[sAV]clearsense powder - L26
+1,[sAV]goodnight tincture - L26
+
+;L27Consum
+1,[sAV]desert rose - L27
+1,[sAV]elixir of dragon breath - L27
+1,[sAV]frozen whetstone - L27
+1,[sAV]glassteel shard - L27
+1,[sAV]potion of lifeshield - L27
+1,[sAV]potion of mimicry - L27
+1,[sAV2]clay of creation - L27
+1,[sAV]alchemist’s acid (ammunition) - L27
+1,[sAV]alchemist’s fire (ammunition) - L27
+1,[sAV]alchemist’s frost (ammunition) - L27
+1,[sAV]tanglefoot bag - L27
+
+;L28Consum
+1,[sAV]brightleaf - L28
+1,[sAV]dark clover - L28
+1,[sAV]elixir of accuracy - L28
+1,[sAV]elixir of fortitude - L28
+1,[sAV]elixir of reflexes - L28
+1,[sAV]elixir of will - L28
+1,[sAV]potion of stormshield - L28
+1,[sAV2]immurement of baleful gossamer - L28
+1,[sAV2]immurement of mordant hideaway - L28
+1,[sAV2]immurement of the strident statuary - L28
+1,[sAV2]silver sand - L28
+1,[sAV2]vortex stone - L28
+1,[sAV]blinding bomb - L28
+1,[sAV]bloodstinger poison - L28
+1,[sAV]dragonfire tar - L28
+1,[sAV]ghoststrike oil - L28
+1,[sAV]herbal poultice - L28
+1,[sAV]salve of slipperiness - L28
+1,[sAV]slow-step oil - L28
+1,[sAV]sovereign glue - L28
+1,[sPH3]talent shard - L28
+
+;L29Consum
+1,[sAV]black dragon bile - L29
+1,[sAV]potion of regeneration - L29
+1,[sAV]potion of vigor - L29
+1,[sAV]terror ichor - L29
+1,[sAV]whetstone of venom - L29
+#1,[sAV]beastbane - L29
+1,[sAV]beastbane - L24
+1,[sAV]blastpatch - L29
+1,[sAV]lockbust chalk - L29
+1,[sAV]tracking dust - L29
+
+;L30Consum
+1,[sPH]potion of life - L30
+1,[sAV]caustic whetstone - L30
+1,[sAV]creeping gatevine - L30
+1,[sAV]flame rose - L30
+1,[sAV]fundamental ice - L30
+1,[sAV]potion of clarity - L30
+1,[sAV]potion of spirit - L30
+1,[sAV]tempest whetstone - L30
+1,[sAV]whetstone of combustion - L30
+1,[sAV]jolt flask - L30
+1,[sAV]thunderstone - L30
+
+# =============== GENERAL/LOOKUP TABLES ===============
+:TreasureBase
+1,15
+2,20
+3,30
+4,40
+5,60
+6,75
+7,105
+8,150
+9,210
+10,280
+11,380
+12,540
+13,760
+14,1050
+15,1400
+16,1880
+17,2680
+18,3800
+19,5240
+20,7000
+21,9400
+22,13400
+23,19000
+24,26200
+25,35000
+26,47000
+27,57000
+28,65000
+29,71000
+30,87500
+
+:ConsumCost
+1,20
+2,25
+3,30
+4,40
+5,50
+6,75
+7,100
+8,125
+9,160
+10,200
+11,350
+12,500
+13,650
+14,800
+15,1000
+16,1800
+17,2600
+18,3400
+19,4200
+20,5000
+21,9000
+22,13000
+23,17000
+24,21000
+25,25000
+26,45000
+27,65000
+28,85000
+29,105000
+30,125000
+
+;RitualComp
+4,alchemical reagents (arcana)
+4,mystic salves (heal)
+4,rare herbs (nature)
+4,sanctified incense (religion)
+1,orichalcum (any)
+
+# =============== MACROS ===============
+;DBSrc
+1,{DSGet~lootDB,%idx%,source}
+
+:sAV
+1,|source=AV|
+
+:sPH
+1,|source=PH|
+
+:sAV2
+1,|source=AV2|
+
+:sPH3
+1,|source=PH3|
+
+===
+
+/Overriderolls 1
+# Treasure Parcel Generator by Level & Number of PCs
+# By Jacob H
+# Dependency: 4e Magic Items.tab
+
+%Level%,1
+%PCs%,5
+%A%,1
+%B%,1
+%C%,1
+%D%,1
+%E%,1
+%F%,1
+%G%,1
+
+@Level,1,Please enter the party level:
+@PCs,5,Please enter the number of PCs:
+
+:Start
+1,<b>Party Level:</b> %Level%{CR~}<b>Number of Members:</b> %PCs%{Line~center,100}{CR~}[PartySize=%PCs%]
+
+:PartySize
+1,<ul><li>[~Parcel3]<li>[~Parcel6=%Level%]<li>[~Parcel7=%Level%]<li>[~Parcel8=%Level%]<li>[~Parcel9=%Level%]<li>[~Parcel10=%Level%]</ul>
+2,<ul><li>[~Parcel3]<li>[~Parcel5=%Level%]<li>[~Parcel6=%Level%]<li>[~Parcel7=%Level%]<li>[~Parcel8=%Level%]<li>[~Parcel9=%Level%]<li>[~Parcel10=%Level%]</ul>
+3,<ul><li>[~Parcel1]<li>[~Parcel3]<li>[~Parcel5=%Level%]<li>[~Parcel6=%Level%]<li>[~Parcel7=%Level%]<li>[~Parcel8=%Level%]<li>[~Parcel9=%Level%]<li>[~Parcel10=%Level%]</ul>
+4,<ul><li>[~Parcel1]<li>[~Parcel2]<li>[~Parcel4]<li>[~Parcel5=%Level%]<li>[~Parcel6=%Level%]<li>[~Parcel7=%Level%]<li>[~Parcel8=%Level%]<li>[~Parcel9=%Level%]<li>[~Parcel10=%Level%]</ul>
+5,<ul><li>[~Parcel1]<li>[~Parcel2]<li>[~Parcel3]<li>[~Parcel4]<li>[~Parcel5=%Level%]<li>[~Parcel6=%Level%]<li>[~Parcel7=%Level%]<li>[~Parcel8=%Level%]<li>[~Parcel9=%Level%]<li>[~Parcel10=%Level%]</ul>
+6,<ul><li>[~Parcel1]<li>[~Parcel2]<li>[~Parcel3]<li>[~Parcel4]<li>[~Parcel5=%Level%]<li>[~Parcel6=%Level%]<li>[~Parcel7=%Level%]<li>[~Parcel8=%Level%]<li>[~Parcel9=%Level%]<li>[~Parcel10=%Level%]<li>[~Parcel11]</ul>
+7,<ul><li>[~Parcel1]<li>[~Parcel2]<li>[~Parcel3]<li>[~Parcel4]<li>[~Parcel5=%Level%]<li>[~Parcel6=%Level%]<li>[~Parcel7=%Level%]<li>[~Parcel8=%Level%]<li>[~Parcel9=%Level%]<li>[~Parcel10=%Level%]<li>[~Parcel11]<li>[~Parcel12]</ul>
+8,<ul><li>[~Parcel1]<li>[~Parcel2]<li>[~Parcel3]<li>[~Parcel4]<li>[~Parcel5=%Level%]<li>[~Parcel6=%Level%]<li>[~Parcel7=%Level%]<li>[~Parcel8=%Level%]<li>[~Parcel9=%Level%]<li>[~Parcel10=%Level%]<li>[~Parcel11]<li>[~Parcel12]<li>[~Parcel13]</ul>
+9,<ul><li>[~Parcel1]<li>[~Parcel2]<li>[~Parcel3]<li>[~Parcel4]</ul>
+
+
+
+:Parcel1
+1,<b>Parcel 1:</b> Lvl {Calc~%Level%+4} Magic Item: [~4eMagicItems.{Calc~%Level%+4}]
+
+:Parcel2
+1,<b>Parcel 2:</b> Lvl {Calc~%Level%+3} Magic Item: [~4eMagicItems.{Calc~%Level%+3}]
+
+:Parcel3
+1,<b>Parcel 3:</b> Lvl {Calc~%Level%+2} Magic Item: [~4eMagicItems.{Calc~%Level%+2}]
+
+:Parcel4
+1,<b>Parcel 4:</b> Lvl {Calc~%Level%+1} Magic Item: [~4eMagicItems.{Calc~%Level%+1}]
+
+:Parcel5
+1,<b>Parcel 5:</b> |A={Dice~1d3}|{If~%A%=1?200gp/{If~%A%=2?Two 100gp Gem/Two Potions of Healing +100gp}}
+2,<b>Parcel 5:</b> |A={Dice~1d3}|{If~%A%=1?290gp/{If~%A%=2?100gp Gem(x2)+90gp/Two Potions of Healing +190gp}}
+3,<b>Parcel 5:</b> |A={Dice~1d3}|{If~%A%=1?380gp/{If~%A%=2?250gp Art Object + 130gp/Two Potions of Healing + Two 100gp Gems + 80gp}}
+4,<b>Parcel 5:</b> |A={Dice~1d3}|{If~%A%=1?470gp/{If~%A%=2?One 250gp Art Object + Two potions of healing + 120gp/Four 100gp gems + 70gp}}
+5,<b>Parcel 5:</b> |A={Dice~1d3}|{If~%A%=1?550gp/{If~%A%=2?Two 250gp Art Objects + 50gp/500gp gem + 50gp}}
+6,<b>Parcel 5:</b> |A={Dice~1d3}|{If~%A%=1?1,000gp/{If~%A%=2?500gp gem + 250gp art object + 250gp/two 250gp art objects + 500gp}}
+7,<b>Parcel 5:</b> |A={Dice~1d3}|{If~%A%=1?1,500gp/{If~%A%=2?two 500gp gems + 500gp/1,000gp gem + 500gp}}
+8,<b>Parcel 5:</b> |A={Dice~1d3}|{If~%A%=1?1,900gp/{If~%A%=2?1,000gp gem + 900gp/1,500gp art object + 400gp}}
+9,<b>Parcel 5:</b> |A={Dice~1d3}|{If~%A%=1?2,400gp/{If~%A%=2?two 1,000gp gems + 400gp/1,500gp art object + 900gp}}
+10,<b>Parcel 5:</b> |A={Dice~1d3}|{If~%A%=1?2,800gp/{If~%A%=2?2,500 art object + 300gp/two 1,000gp gems + 800gp}}
+11,<b>Parcel 5:</b> 
+12,<b>Parcel 5:</b> 
+13,<b>Parcel 5:</b> 
+14,<b>Parcel 5:</b> 
+15,<b>Parcel 5:</b> 
+16,<b>Parcel 5:</b> 
+17,<b>Parcel 5:</b> 
+18,<b>Parcel 5:</b> 
+19,<b>Parcel 5:</b> 
+20,<b>Parcel 5:</b> 
+21,<b>Parcel 5:</b> 
+22,<b>Parcel 5:</b> 
+23,<b>Parcel 5:</b> 
+24,<b>Parcel 5:</b> 
+25,<b>Parcel 5:</b> 
+26,<b>Parcel 5:</b> 
+27,<b>Parcel 5:</b> 
+28,<b>Parcel 5:</b> 
+29,<b>Parcel 5:</b> 
+30,<b>Parcel 5:</b> 
+
+:Parcel6
+1,<b>Parcel 6:</b> |B={Dice~1d3}|{If~%B%=1?180gp/{If~%B%=2?100gp gem + 80gp/potion of healing + 180gp}}
+2,<b>Parcel 6:</b> |B={Dice~1d3}|{If~%B%=1?260gp/{If~%B%=2?250gp Art Object + 10gp/two potions of healing + 100gp gem +60gp}}
+3,<b>Parcel 6:</b> |B={Dice~1d3}|{If~%B%=1?340gp/{If~%B%=2?three 100gp gems + 40gp/one potion of healing + one 250gp art object +40gp}}
+4,<b>Parcel 6:</b> |B={Dice~1d3}|{If~%B%=1?420gp/{If~%B%=2?250gp art object + 170/three 100gp gems + potion of healing + 70gp}}
+5,<b>Parcel 6:</b> |B={Dice~1d3}|{If~%B%=1?500gp/{If~%B%=2?250gp art object + 250gp/five 100gp gems}}
+6,<b>Parcel 6:</b> |B={Dice~1d3}|{If~%B%=1?900gp/{If~%B%=2?500gp gem + 400gp/one 250gp art object + 650gp}}
+7,<b>Parcel 6:</b> |B={Dice~1d3}|{If~%B%=1?1,300gp/{If~%B%=2?500gp gem + 800gp/five 250gp art objects + one healing potion}}
+8,<b>Parcel 6:</b> |B={Dice~1d3}|{If~%B%=1?1,700gp/{If~%B%=2?1,500 art object + 200gp/three 500gp gems + 200gp}}
+9,<b>Parcel 6:</b> |B={Dice~1d3}|{If~%B%=1?2,100gp/{If~%B%=2?four 500gp gems + 100gp/1,500gp art object + 600gp}}
+10,<b>Parcel 6:</b> |B={Dice~1d3}|{If~%B%=1?2,500gp/{If~%B%=2?1,500gp art object + 1,000gp gem/two 1,000gp gem + 500gp gem}}
+
+:Parcel7
+1,<b>Parcel 7:</b> |C={Dice~1d3}|{If~%C%=1?120gp/{If~%C%=2?100gp gem + 20gp/potion of healing + 70gp}}
+2,<b>Parcel 7:</b> |C={Dice~1d3}|{If~%C%=1?170gp/{If~%C%=2?100gp gem + 70gp/100gp gem + potion of healing + 20gp}}
+3,<b>Parcel 7:</b> |C={Dice~1d3}|{If~%C%=1?225gp/{If~%C%=2?two 100gp gems + 25gp/100gp gem + potion of healing + 75gp}}
+4,<b>Parcel 7:</b> |C={Dice~1d3}|{If~%C%=1?280gp/{If~%C%=2?two 100gp gems + 80gp/100gp gem + two potions of healing + 80gp}}
+5,<b>Parcel 7:</b> |C={Dice~1d3}|{If~%C%=1?340gp/{If~%C%=2?three 100gp gems +40gp/250gp art object + potion of healing + 40gp}}
+6,<b>Parcel 7:</b> |C={Dice~1d3}|{If~%C%=1?600gp/{If~%C%=2?four 100gp gems + 200gp/250gp art object + two potions of healing + 250gp}}
+7,<b>Parcel 7:</b> |C={Dice~1d3}|{If~%C%=1?850gp/{If~%C%=2?three 250gp art objects + two potions of healing/six 100gp gems + 250gp}}
+8,<b>Parcel 7:</b> |C={Dice~1d3}|{If~%C%=1?1,100gp/{If~%C%=2?two 500gp gems + 100gp/1,000gp gem + 100gp}}
+9,<b>Parcel 7:</b> |C={Dice~1d3}|{If~%C%=1?1,400gp/{If~%C%=2?1,000gp gem + 400gp/four 250gp art objects + 400gp}}
+10,<b>Parcel 7:</b> |C={Dice~1d3}|{If~%C%=1?1,700gp/{If~%C%=2?1,000gp gem + 700gp/1,500gp art object + 200gp}}
+
+:Parcel8
+1,<b>Parcel 8:</b> |D={Dice~1d3}|{If~%D%=1?120gp/{If~%D%=2?100gp + 20sp/100gp gem + 200sp}}
+2,<b>Parcel 8:</b> |D={Dice~1d3}|{If~%D%=1?170gp/{If~%D%=2?150gp +200sp/100gp gem + 70gp}}
+3,<b>Parcel 8:</b> |D={Dice~1d3}|{If~%D%=1?225gp/{If~%D%=2?two 100gp gems + 250sp/180gp + 450sp}}
+4,<b>Parcel 8:</b> |D={Dice~1d3}|{If~%D%=1?280gp/{If~%D%=2?250gp art object + 30gp/250gp + 300sp}}
+5,<b>Parcel 8:</b> |D={Dice~1d3}|{If~%D%=1?340gp/{If~%D%=2?250gp art object + 90gp/300gp + 400sp}}
+6,<b>Parcel 8:</b> |D={Dice~1d3}|{If~%D%=1?600gp/{If~%D%=2?two 250gp art objects + 100gp/two 100gp gems + 400gp}}
+7,<b>Parcel 8:</b> |D={Dice~1d3}|{If~%D%=1?850gp/{If~%D%=2?two 250gp art objects + 350gp/four 100gp gems + 450gp}}
+8,<b>Parcel 8:</b> |D={Dice~1d3}|{If~%D%=1?1,100gp/{If~%D%=2?two 250gp art objects + 600gp/eleven 100gp gems}}
+9,<b>Parcel 8:</b> |D={Dice~1d3}|{If~%D%=1?1,400gp/{If~%D%=2?two 500gp gems + 400gp/three 250gp art objects + 650gp gem}}
+10,<b>Parcel 8:</b> |D={Dice~1d3}|{If~%D%=1?1,700gp/{If~%D%=2?1,500gp art objects + two 100gp gems/six 250gp art objects + 200gp}}
+
+:Parcel9
+1,<b>Parcel 9:</b> |E={Dice~1d3}|{If~%E%=1?60gp/{If~%E%=2?potion of healing + 10gp/50gp + 100sp}}
+2,<b>Parcel 9:</b> |E={Dice~1d3}|{If~%E%=1?90gp/{If~%E%=2?potion of healing + 40gp/60gp + 300sp}}
+3,<b>Parcel 9:</b> |E={Dice~1d3}|{If~%E%=1?110gp/{If~%E%=2?potion of healing + 60gp/80gp + 300sp}}
+4,<b>Parcel 9:</b> |E={Dice~1d3}|{If~%E%=1?140gp/{If~%E%=2?100gp gem + 40gp/potion of healing + 90gp}}
+5,<b>Parcel 9:</b> |E={Dice~1d3}|{If~%E%=1?160gp/{If~%E%=2?100gp gem + 60gp/potion of healing + 110gp}}
+6,<b>Parcel 9:</b> |E={Dice~1d3}|{If~%E%=1?300gpgp/{If~%E%=2?250gp art object + 50gp/potion of healing + two100gp gems + 50gp}}
+7,<b>Parcel 9:</b> |E={Dice~1d3}|{If~%E%=1?400gp/{If~%E%=2?250gp art object + 150gp/three potions of healing + 250gp}}
+8,<b>Parcel 9:</b> |E={Dice~1d3}|{If~%E%=1?600gp/{If~%E%=2?500gp gem + 100gp/two 250gp art objects + 100gp gem}}
+9,<b>Parcel 9:</b> |E={Dice~1d3}|{If~%E%=1?700gp/{If~%E%=2?seven 100gp gems/five potions of healing + 450gp}}
+10,<b>Parcel 9:</b> |E={Dice~1d3}|{If~%E%=1?800gp/{If~%E%=2?three 250gp art objects + 50gp/eight 100gp gems}}
+
+:Parcel10
+1,<b>Parcel 10:</b> |F={Dice~1d3}|{If~%F%=1?40gp/{If~%F%=2?400sp/30gp + 100sp}}
+2,<b>Parcel 10:</b> |F={Dice~1d3}|{If~%F%=1?60gp/{If~%F%=2?30gp + 300sp/potion of healing + 10gp}}
+3,<b>Parcel 10:</b> |F={Dice~1d3}|{If~%F%=1?75gp/{If~%F%=2?50gp + 250sp/potion of healing + 25gp}}
+4,<b>Parcel 10:</b> |F={Dice~1d3}|{If~%F%=1?90gp/{If~%F%=2?50gp + 400sp/potion of healing + 40gp}}
+5,<b>Parcel 10:</b> |F={Dice~1d3}|{If~%F%=1?110gp/{If~%F%=2?100gp gem + 60gp/potion of healing + 60gp}}
+6,<b>Parcel 10:</b> |F={Dice~1d3}|{If~%F%=1?200gp/{If~%F%=2?two 100gp gems/two potions of healing + 100gp}}
+7,<b>Parcel 10:</b> |F={Dice~1d3}|{If~%F%=1?300gp/{If~%F%=2?250gp art object + 50gp/three 100gp gems}}
+8,<b>Parcel 10:</b> |F={Dice~1d3}|{If~%F%=1?400gp/{If~%F%=2?250gp art object + 150gp/four 100gp gems}}
+9,<b>Parcel 10:</b> |F={Dice~1d3}|{If~%F%=1?400gp/{If~%F%=2?four 100gp gems + 250gp art object + 150gp/}}
+10,<b>Parcel 10:</b> |F={Dice~1d3}|{If~%F%=1?500gp/{If~%F%=2?two 250gp art objects/500gp gem}}
+
+:Parcel11
+1,<b>Parcel 11:</b> Lvl {Calc~%Level%+2} Magic Item: [~4eMagicItems.{Calc~%Level%+2}]
+
+:Parcel12
+1,<b>Parcel 12:</b> Lvl {Calc~%Level%+1} Magic Item: [~4eMagicItems.{Calc~%Level%+1}]
+
+:Parcel13
+1,<b>Parcel 13:</b> Lvl {Calc~%Level%+3} Magic Item: [~4eMagicItems.{Calc~%Level%+3}]
+
+===
+
+#4e Magic Weapon Random Generator
+#by Jake H
+#Includes magic items from the following sources:
+#PHB,DMG,Dragon Magazines (364,365)
+
+%Level%,1
+
+@Level,1,Enter the level of the magic item to generate
+
+:Start
+1,Level %Level%: [LevelItem=%Level%]
+
+:LevelItem
+1,[1]
+2,[2]
+3,[3]
+4,[4]
+5,[5]
+6,[6]
+7,[7]
+8,[8]
+9,[9]
+10,[10]
+11,[11]
+12,[12]
+13,[13]
+14,[14]
+15,[15]
+16,[16]
+17,[17]
+18,[18]
+19,[19]
+20,[20]
+21,[21]
+22,[22]
+23,[23]
+24,[24]
+25,[25]
+26,[26]
+27,[27]
+28,[28]
+29,[29]
+30,[30]
+
+# LEVEL ONE
+;1
+1,Armor, Magic +1 360 Any
+1,Staff, Magic staff +1 360
+1,Orb, Magic orb +1 360
+1,Rod, Magic rod +1 360
+1,Weapon, Magic +1 360 Any
+1,Wand, Magic wand +1 360
+1,Holy Symbol, Magic holy symbol +1 360
+1,Hand, Burglar’s gloves 360
+1,Neck, Amulet of protection +1 360
+1,Head, Cannith Goggles 360 (Dragon 365 p15)
+
+# LEVEL TWO
+;2
+1,Armor, Dwarven +1 520 Chain, Scale, Plate
+1,Arm Slot, Bracers of mighty striking (heroic tier) 520
+1,Holy Symbol, Symbol of life +1 520
+1,Weapon, Resounding +1 520 Hammer, Flail,Mace, Sling, Staff
+1,Weapon, Vicious +1 520 Any
+1,Waist, Belt of vigor (heroic tier) 520
+1,Feet Slot, Acrobat boots 520
+1,Staff, Staff of fiery might +1 520
+1,Rod, Rod of dark reward +1 520
+1,Neck, Cloak of resistance +1 520
+1,Armor, Razor +1 520 Scale
+1,Implement(Rod), Rod of Deadly Casting +1 520 (Dragon 365 p14)
+1,Weapon, Relentless Weapon +1 520 Flail, Hammer, Mace (Dragon 365 p56)
+1,Implement(Holy Symbol), Symbol of Excellence +1 520 (Dragon 365 p57)
+1,Implement(Staff), Staff of Expansion +1 520 (Dragon 365 p57)
+
+# LEVEL THREE
+;3
+1,Wand, Wand of (power level 1) +1 680
+1,Wand, Wand of ray of enfeeblement +1 680
+1,Wand, Wand of witchfire +1 680
+1,Feet Slot, Catstep boots 680
+1,Arm Slot, Shield of protection (heroic tier) 680
+1,Weapon, Thundering +1 680 Any
+1,Weapon, Duelist’s +1 680 Light Blade
+1,Neck, Amulet of health +1 680
+1,Weapon, Frost +1 680 Any
+1,Weapon, Flameburst +1 680 Any ranged
+1,Armor, Delver’s +1 680 Any
+1,Weapon, Pact Blade +1 680 Light Blade
+1,Rod, Rod of corruption +1 680
+1,Staff, Staff of the war mage +1 680
+1,Orb, Orb of inevitable continuance +1 680
+1,Holy Symbol, Symbol of hope +1 680
+1,Hand, Gloves of piercing 680
+1,Armor, Fireburst +1 680 Cloth
+1,Armor, Eladrin +1 680 Chain
+1,Neck, Safewing amulet +1 680
+1,Armor, Sylvan +1 680 Cloth, Leather, Hide
+1,Armor, Curseforged +1 680 Chain, Scale
+1,Arm Slot, Bracers of the perfect shot (heroic tier) 680
+1,Weapon, Vitriolic Weapon +1 680 Flail, Hammer, Mace (Dragon 365 p56)
+1,Implement(Staff), Staff of Verdant Growth +1 680 (Dragon 365 p57)
+1,Wondrous Item, Flask of the Dragon's Breath 680 (Dragon 365 p60)
+
+# LEVEL FOUR
+;4
+1,Feet Slot, Wavestrider boots 840
+1,Armor, Darkleaf +1 840 Cloth, Leather, Hide
+1,Armor, Black Iron +1 840 Scale, Plate
+1,Armor, Bloodcut +1 840 Leather, Hide
+1,Staff, Staff of winter +1 840
+1,Weapon, Thunderburst +1 840 Any ranged
+1,Weapon, Terror +1 840 Axe, Hammer,Heavy Blade
+1,Wondrous Item, Everlasting provisions 840
+1,Weapon, Myrdroon's Shard +1 840 Spear (Dragon 364 p24)
+1,Holy Symbol, Symbol of Turning +1 840 (Dragon 364 p44)
+1,Armor, Dragonclaw Armor +1 840 Leather, Hide (Dragon 365 p55)
+1,Weapon, Impaling Weapon +1 840 Pick, Spear (Dragon 365 p55)
+1,Implement(Rod), Rod of Draconic Fury +1 840 (Dragon 365 p57)
+
+# LEVEL FIVE
+;5
+1,Armor, Battleforged +1 1,000 Plate
+1,Hand, Gauntlets of ogre power 1,000
+1,Arm Slot, Bashing shield (heroic tier) 1,000
+1,Weapon, Flaming +1 1,000 Any
+1,Feet Slot, Boots of spider climbing 1,000
+1,Holy Symbol, Symbol of battle +1 1,000
+1,Staff, Staff of storms +1 1,000
+1,Armor, Deathcut +1 1,000 Leather, Hide
+1,Armor, Exalted +1 1,000 Chain
+1,Orb, Orb of sanguinary repercussions +1 1,000
+1,Armor, Barkskin +1 1,000 Hide, Scale
+1,Armor, Bloodthread +1 1,000 Cloth
+1,Waist, Ironskin belt (heroic tier) 1,000
+1,Weapon, Lightning +1 1,000 Any
+1,Rod, Rod of reaving +1 1,000
+1,Weapon, Lifedrinker +1 1,000 Any melee
+1,Wondrous Item, Bag of holding 1,000
+1,Weapon, Final Word Weapon +1 1,000 Axe, Heavy Blade (Dragon 365 p55)
+1,Implement(Staff), Staff of Draconic Power +1 1,000 (Dragon 365 p57)
+
+# LEVEL SIX
+;6
+1,Holy Symbol, Magic holy symbol +2 1,800
+1,Hand, Shadowfell gloves (heroic tier) 1,800
+1,Weapon, Magic +2 1,800 Any
+1,Neck, Amulet of protection +2 1,800
+1,Wand, Magic wand +2 1,800
+1,Rod, Magic rod +2 1,800
+1,Armor, Magic +2 1,800 Any
+1,Staff, Magic staff +2 1,800
+1,Orb, Magic orb +2 1,800
+1,Head, Horned helm (heroic tier) 1,800
+1,Hands, Reparation Apparatus 1,800 (Dragon 365 p15)
+
+# LEVEL SEVEN
+;7
+1,Staff, Staff of fiery might +2 2,600
+1,Orb, Orb of indisputable gravity +2 2,600
+1,Feet Slot, Dwarven greaves 2,600
+1,Weapon, Vicious +2 2,600 Any
+1,Arm Slot, Bracers of defense (heroic tier) 2,600
+1,Rod, Rod of dark reward +2 2,600
+1,Holy Symbol, Symbol of life +2 2,600
+1,Armor, Sunleaf +2 2,600 Cloth, Leather, Hide
+1,Weapon, Resounding +2 2,600 Hammer, Flail,Mace, Sling, Staff
+1,Holy Symbol, Symbol of power +2 2,600
+1,Armor, Dwarven +2 2,600 Chain, Scale, Plate
+1,Neck, Elven cloak +2 2,600
+1,Armor, Razor +2 2,600 Scale
+1,Neck, Cloak of resistance +2 2,600
+1,Waist, Belt of sacrifice (heroic tier) 2,600
+1,Head, Circlet of authority 2,600
+1,Implement(Rod), Rod of Deadly Casting +2 2,600 (Dragon 365 p14)
+1,Armor, Immolating Armor +2 2,600 Chain, Scale (Dragon 365 p55)
+1,Weapon, Homing Weapon +2 2,600 Bow, Crossbow (Dragon 365 p55)
+1,Weapon, Relentless Weapon +2 2,600 Flail, Hammer, Mace (Dragon 365 p56)
+1,Implement(Holy Symbol), Symbol of Excellence +2 2,600 (Dragon 365 p57)
+1,Implement(Staff), Staff of Expansion +2 2,600 (Dragon 365 p57)
+1,Arms, Bracers of Escape 2,600 (Dragon 365 p57)
+
+# LEVEL EIGHT
+;8
+1,Armor, Fireburst +2 3,400 Cloth
+1,Weapon, Flameburst +2 3,400 Any ranged
+1,Wand, Wand of icy rays +2 3,400
+1,Hand, Gauntlets of the ram 3,400
+1,Neck, Amulet of health +2 3,400
+1,Armor, Curseforged +2 3,400 Chain, Scale
+1,Head, Diadem of acuity 3,400
+1,Weapon, Pact Blade +2 3,400 Light Blade
+1,Holy Symbol, Symbol of hope +2 3,400
+1,Neck, Safewing amulet +2 3,400
+1,Weapon, Duelist’s +2 3,400 Light Blade
+1,Weapon, Thundering +2 3,400 Any
+1,Weapon, Frost +2 3,400 Any
+1,Staff, Staff of the war mage +2 3,400
+1,Arm Slot, Shield of defiance (heroic tier) 3,400
+1,Orb, Orb of inevitable continuance +2 3,400
+1,Armor, Delver’s +2 3,400 Any
+1,Staff, Thunderwave staff +2 3,400
+1,Rod, Rod of first blood +2 3,400
+1,Wand, Wand of fiery bolt +2 3,400
+1,Armor, Eladrin +2 3,400 Chain
+1,Wand, Wand of shield +2 3,400
+1,Armor, Sylvan +2 3,400 Cloth, Leather, Hide
+1,Wand, Wand of (power level 3 or lower) +2 3,400
+1,Armor, Mountain +2 3,400 Plate
+1,Rod, Rod of corruption +2 3,400
+1,Armor, Elven battle +2 3,400 Leather, Hide
+1,Wand, Wand of eldritch rain +2 3,400
+1,Wand, Wand of ray of enfeeblement +2 3,400
+1,Wand, Wand of witchfire +2 3,400
+1,Weapon, Disrupting +1 3,400  Flail, Hammer, Mace (Dragon 364 p44)
+1,Implement(Rod), Rod of Runic Resistance +2 3,400 (Dragon 365 p14)
+1,Armor, Stonemeld Armor +2 3,400 Cloth, Leather (Dragon 365 p15)
+1,Weapon, Vitriolic Weapon +2 3,400 Flail, Hammer, Mace (Dragon 365 p56)
+1,Implement(Orb), Orb of Inexplicable Contention +2 3,400 (Dragon 365 p57)
+1,Implement(Staff), Staff of Verdant Growth +2 3,400 (Dragon 365 p57)
+1,Waist, Belt of Lucky Strikes 3,400 (Dragon 365 p60)
+
+# LEVEL NINE
+;9
+1,Weapon, Terror +2 4,200 Axe, Hammer,Heavy Blade
+1,Armor, Darkleaf +2 4,200 Cloth, Leather, Hide
+1,Orb, Orb of reversed polarities +2 4,200
+1,Armor, Black Iron +2 4,200 Scale, Plate
+1,Holy Symbol, Symbol of victory +2 4,200
+1,Head, Helm of battle (heroic tier) 4,200
+1,Staff, Staff of winter +2 4,200
+1,Feet Slot, Boots of striding 4,200
+1,Neck, Cloak of survival +2 4,200
+1,Armor, Bloodcut +2 4,200 Leather, Hide
+1,Waist, Dynamic belt (heroic tier) 4,200
+1,Armor, Ghostphase +2 4,200 Cloth
+1,Neck, Amulet of false life +2 4,200
+1,Weapon, Thunderburst +2 4,200 Any ranged
+1,Weapon, Dragonslayer +2 4,200 Any
+1,Weapon, Myrdroon's Shard +2 4,200 Spear (Dragon 364 p24)
+1,Holy Symbol, Symbol of Turning +2 4,200 (Dragon 364 p44)
+1,Weapon, Wolfen Weapon +2 4,200 Heavy Blade, Light Blade (Dragon 364 p52)
+1,Armor, Dragonclaw Armor +2 4,200 Leather, Hide (Dragon 365 p55)
+1,Armor, Fortified Armor +2 4,200 Plate (Dragon 365 p55)
+1,Weapon, Impaling Weapon +2 4,200 Pick, Spear (Dragon 365 p55)
+1,Implement(Holy Symbol), Symbol of Courage +2 4,200 (Dragon 365 p56)
+1,Implement(Rod), Rod of Draconic Fury +2 4,200 (Dragon 365 p57)
+
+# LEVEL TEN
+;10
+1,Wondrous Item, Handy haversack 5,000
+1,Arm Slot, Guardian shield (heroic tier) 5,000
+1,Weapon, Lightning +2 5,000 Any
+1,Armor, Battleforged +2 5,000 Plate
+1,Staff, Staff of storms +2 5,000
+1,Head, Helm of heroes (heroic tier) 5,000
+1,Wondrous Item, Rope of climbing 5,000
+1,Armor, Barkskin +2 5,000 Hide, Scale
+1,Orb, Orb of sanguinary repercussions +2 5,000
+1,Weapon, Lifedrinker +2 5,000 Any melee
+1,Weapon, Flaming +2 5,000 Any
+1,Holy Symbol, Symbol of battle +2 5,000
+1,Rod, Rod of reaving +2 5,000
+1,Rod, Rod of the pyre +2 5,000
+1,Armor, Deathcut +2 5,000 Leather, Hide
+1,Weapon, Berserker +2 5,000 Axe, Heavy Blade
+1,Armor, Bloodthread +2 5,000 Cloth
+1,Armor, Exalted +2 5,000 Chain
+1,Weapon, Wraithblade +2 5,000 Light Blade (Dragon 364 p44)
+1,Weapon, Final Word Weapon +2 5,000 Axe, Heavy Blade (Dragon 365 p55)
+1,Implement(Staff), Staff of Draconic Power +2 5,000 (Dragon 365 p57)
+
+# LEVEL ELEVEN
+;11
+1,Armor, Magic +3 9,000 Any
+1,Neck, Amulet of protection +3 9,000
+1,Orb, Magic orb +3 9,000
+1,Wondrous Item, Sending stones (pair) 9,000
+1,Rod, Magic rod +3 9,000
+1,Wondrous Item, Ritual candle 9,000
+1,Holy Symbol, Magic holy symbol +3 9,000
+1,Staff, Magic staff +3 9,000
+1,Weapon, Magic +3 9,000 Any
+1,Wand, Magic wand +3 9,000
+1,Feet Slot, Elven boots 9,000
+1,Armor, Dragonrider Armor +3 9,000 Scale (Dragon 365 p55)
+
+# LEVEL TWELVE
+;12
+1,Holy Symbol, Symbol of life +3 13,000
+1,Neck, Cloak of resistance +3 13,000
+1,Arm Slot, Shield of deflection (paragon tier) 13,000
+1,Armor, Sunleaf +3 13,000 Cloth, Leather, Hide
+1,Weapon, Resounding +3 13,000 Hammer, Flail,Mace, Sling, Staff
+1,Armor, Razor +3 13,000 Scale
+1,Orb, Orb of indisputable gravity +3 13,000
+1,Holy Symbol, Symbol of power +3 13,000
+1,Weapon, Vicious +3 13,000 Any
+1,Wondrous Item, Keoghtom’s ointment 13,000
+1,Hand, Rogue’s gloves 13,000
+1,Armor, Dwarven +3 13,000 Chain, Scale, Plate
+1,Waist, Belt of vigor (paragon tier) 13,000
+1,Head, Helm of the eagle 13,000
+1,Arm Slot, Bracers of mighty striking (paragon tier) 13,000
+1,Neck, Elven cloak +3 13,000
+1,Feet Slot, Battlestrider greaves 13,000
+1,Staff, Staff of fiery might +3 13,000
+1,Rod, Rod of dark reward +3 13,000
+1,Head, Skull Helm 13,000 (Dragon 364 p45)
+1,Feet, Greaves of Maideen 13,000 (Dragon 364 p 52)
+1,Implement(Rod), Rod of Deadly Casting +3 13,000 (Dragon 365 p14)
+1,Armor, Immolating Armor +3 13,000 Chain, Scale (Dragon 365 p55)
+1,Armor, Rimewrought Armor +3 13,000 Scale, Plate (Dragon 365 p55)
+1,Weapon, Homing Weapon +3 13,000 Bow, Crossbow (Dragon 365 p55)
+1,Weapon, Relentless Weapon +3 13,000 Flail, Hammer, Mace (Dragon 365 p56)
+1,Implement(Holy Symbol), Symbol of Excellence +3 13,000 (Dragon 365 p57)
+1,Implement(Rod), Rod of Baleful Geas +3 13,000 (Dragon 365 p57)
+1,Implement(Staff), Staff of Expansion +3 13,000 (Dragon 365 p57)
+1,Feet, Quickstride Boots 13,000 (Dragon 365 p59)
+
+# LEVEL THIRTEEN
+;13
+1,Neck, Periapt of wisdom +3 17,000
+1,Armor, Mountain +3 17,000 Plate
+1,Wand, Wand of witchfire +3 17,000
+1,Armor, Sylvan +3 17,000 Cloth, Leather, Hide
+1,Wand, Wand of shield +3 17,000
+1,Arm Slot, Bracers of the perfect shot (paragon tier) 17,000
+1,Wand, Wand of ray of enfeeblement +3 17,000
+1,Weapon, Thundering +3 17,000 Any
+1,Armor, Curseforged +3 17,000 Chain, Scale
+1,Orb, Orb of inevitable continuance +3 17,000
+1,Wand, Wand of fiery bolt +3 17,000
+1,Weapon, Flameburst +3 17,000 Any ranged
+1,Rod, Rod of corruption +3 17,000
+1,Neck, Safewing amulet +3 17,000
+1,Orb, Orb of drastic resolutions +3 17,000
+1,Wondrous Item, Dust of appearance 17,000
+1,Holy Symbol, Symbol of hope +3 17,000
+1,Weapon, Duelist’s +3 17,000 Light Blade
+1,Feet Slot, Winged boots 17,000
+1,Wand, Wand of icy rays +3 17,000
+1,Wand, Wand of (power level 7 or lower) +3 17,000
+1,Weapon, Pact Blade +3 17,000 Light Blade
+1,Armor, Delver’s +3 17,000 Any
+1,Staff, Thunderwave staff +3 17,000
+1,Staff, Staff of the war mage +3 17,000
+1,Neck, Amulet of health +3 17,000
+1,Weapon, Frost +3 17,000 Any
+1,Armor, Fireburst +3 17,000 Cloth
+1,Armor, Hydra +3 17,000 Scale
+1,Armor, Shadowflow +3 17,000 Cloth, Leather
+1,Rod, Rod of first blood +3 17,000
+1,Wand, Wand of eldritch rain +3 17,000
+1,Wand, Wand of fire burst +3 17,000
+1,Armor, Eladrin +3 17,000 Chain
+1,Arm Slot, Shield of protection (paragon tier) 17,000
+1,Armor, Elven battle +3 17,000 Leather, Hide
+1,Weapon, Disrupting +2 17,000 Flail, Hammer, Mace (Dragon 364 p 44)
+1,Implement(Staff), Staff of the Lich +2 17,000 (Dragon 364 p44)
+1,Implement(Rod), Rod of Runic Resistance +3 17,000 (Dragon 365 p14)
+1,Armor, Stonemeld Armor +3 17,000 Cloth, Leather (Dragon 365 p15)
+1,Ring, Purple Dragon Commander's Ring 17,000 (Dragon 365 p20)
+1,Weapon, Mind-Rending Weapon + Heavy Blade, Light Blade (Dragon 365 p55)
+1,Weapon, Vitriolic Weapon +3 17,000 Flail, Hammer, Mace (Dragon 365 p56)
+1,Implement(Holy Symbol), Symbol of the Dragon +3 17,000 (Dragon 365 p57)
+1,Implement(Orb), Orb of Inexplicable Contention +3 17,000 (Dragon 365 p57)
+1,Implement(Orb), Orb of Temporal Dissonance +3 17,000 (Dragon 365 p57)
+1,Implement(Staff), Staff of Verdant Growth +3 17,000 (Dragon 365 p57)
+1,Arms, Netherdark Shield 17,000 (Dragon 365 p59)
+1,Neck, Amulet of Scales +3 17,000 (Dragon 365 p59)
+
+# LEVEL FOURTEEN
+;14
+1,Feet Slot, Boots of striding and springing 21,000
+1,Orb, Orb of reversed polarities +3 21,000
+1,Arm Slot, Shield of warding (paragon tier) 21,000
+1,Neck, Amulet of false life +3 21,000
+1,Wondrous Item, Feather boat 21,000
+1,Holy Symbol, Symbol of victory +3 21,000
+1,Staff, Staff of winter +3 21,000
+1,Rod, Rod of harvest +3 21,000
+1,Neck, Cloak of survival +3 21,000
+1,Armor, Ghostphase +3 21,000 Cloth
+1,Ring, Iron ring of the dwarf lords 21,000
+1,Head, Goggles of night 21,000
+1,Armor, Black Iron +3 21,000 Scale, Plate
+1,Armor, Tombforged +3 21,000 Chain
+1,Armor, Flamedrinker +3 21,000 Plate
+1,Armor, Bloodcut +3 21,000 Leather, Hide
+1,Armor, Darkleaf +3 21,000 Cloth, Leather, Hide
+1,Weapon, Terror +3 21,000 Axe, Hammer,Heavy Blade
+1,Weapon, Phasing +3 21,000 Any ranged
+1,Weapon, Dragonslayer +3 21,000 Any
+1,Weapon, Thunderburst +3 21,000 Any ranged
+1,Weapon, Myrdroon's Shard +3 21,000 Spear (Dragon 364 p24)
+1,Holy Symbol, Symbol of Turning +3 21,000 (Dragon 364 p44)
+1,Ring, Ring of Invigoration 13,000 (Dragon 364 p45)
+1,Weapon, Wolfen Weapon +3 21,000 Heavy Blade, Light Blade (Dragon 364 p52)
+1,Armor, Dragonclaw Armor +3 21,000 Leather, Hide (Dragon 365 p55)
+1,Armor, Fortified Armor +3 21,000 Plate (Dragon 365 p55)
+1,Weapon, Impaling Weapon +3 21,000 Pick, Spear (Dragon 365 p55)
+1,Implement(Holy Symbol), Symbol of Courage +3 21,000 (Dragon 365 p56)
+1,Implement(Rod), Rod of Draconic Fury +3 21,000 (Dragon 365 p57)
+1,Head, Mask of Terrors 21,000 (Dragon 365 p59)
+1,Head, Ruby Lenses 21,000 (Dragon 365 p59)
+
+# LEVEL FIFTEEN
+;15
+1,Arm Slot, Bashing shield (paragon tier) 25,000
+1,Waist, Belt of giant strength 25,000
+1,Holy Symbol, Symbol of battle +3 25,000
+1,Orb, Orb of sanguinary repercussions +3 25,000
+1,Weapon, Lightning +3 25,000 Any
+1,Weapon, Flaming +3 25,000 Any
+1,Neck, Stormwalker’s cloak +3 25,000
+1,Armor, Bloodthread +3 25,000 Cloth
+1,Armor, Barkskin +3 25,000 Hide, Scale
+1,Staff, Staff of storms +3 25,000
+1,Rod, Rod of reaving +3 25,000
+1,Armor, Exalted +3 25,000 Chain
+1,Weapon, Berserker +3 25,000 Axe, Heavy Blade
+1,Rod, Rod of the pyre +3 25,000
+1,Armor, Battleforged +3 25,000 Plate
+1,Waist, Ironskin belt (paragon tier) 25,000
+1,Ring, Ring of freedom of movement 25,000
+1,Armor, Trollskin +3 25,000 Hide, Scale
+1,Weapon, Lifedrinker +3 25,000 Any melee
+1,Armor, Deathcut +3 25,000 Leather, Hide
+1,Weapon, Wraithblade +3 25,000 Light Blade (Dragon 364 p44)
+1,Wondrous Item, Pouch of Ghost-Grounding Dust 25,000 (Dragon 364 p45)
+1,Weapon, Final Word Weapon +3 25,000 Axe, Heavy Blade (Dragon 365 p55)
+1,Implement(Orb), Orb of Fiery Condemnation +3 25,000 (Dragon 365 p57)
+1,Implement(Staff), Staff of Draconic Power +3 25,000 (Dragon 365 p57)
+
+# LEVEL SIXTEEN
+;16
+1,Hand, Shadowfell gloves (paragon tier) 45,000
+1,Feet Slot, Eladrin boots 45,000
+1,Head, Horned helm (paragon tier) 45,000
+1,Wand, Magic wand +4 45,000
+1,Staff, Magic staff +4 45,000
+1,Rod, Magic rod +4 45,000
+1,Weapon, Magic +4 45,000 Any
+1,Holy Symbol, Magic holy symbol +4 45,000
+1,Neck, Amulet of protection +4 45,000
+1,Armor, Magic +4 45,000 Any
+1,Orb, Magic orb +4 45,000
+1,Arm Slot, Dragondaunt shield (paragon tier) 45,000
+1,Armor, Dragonrider Armor +4 45,000 Scale (Dragon 365 p55)
+
+# LEVEL SEVENTEEN
+;17
+1,Head, Crown of command 65,000
+1,Wondrous Item, Dimensional shackles 65,000
+1,Armor, Dwarven +4 65,000 Chain, Scale, Plate
+1,Ring, Ring of protection 65,000
+1,Staff, Staff of fiery might +4 65,000
+1,Waist, Belt of sacrifice (paragon tier) 65,000
+1,Weapon, Vicious +4 65,000 Any
+1,Armor, Sunleaf +4 65,000 Cloth, Leather, Hide
+1,Holy Symbol, Symbol of power +4 65,000
+1,Armor, Razor +4 65,000 Scale
+1,Holy Symbol, Symbol of life +4 65,000
+1,Neck, Cloak of resistance +4 65,000
+1,Neck, Elven cloak +4 65,000
+1,Rod, Rod of dark reward +4 65,000
+1,Weapon, Resounding +4 65,000 Hammer, Flail,Mace, Sling, Staff
+1,Orb, Orb of indisputable gravity +4 65,000
+1,Arm Slot, Bracers of defense (paragon tier) 65,000
+1,Implement(Rod), Rod of Deadly Casting +4 65,000 (Dragon 365 p14)
+1,Armor, Immolating Armor +4 65,000 Chain, Scale (Dragon 365 p55)
+1,Armor, Rimewrought Armor +4 65,000 Scale, Plate (Dragon 365 p55)
+1,Weapon, Relentless Weapon +4 65,000 Flail, Hammer, Mace (Dragon 365 p56)
+1,Implement(Holy Symbol), Symbol of Excellence +4 65,000 (Dragon 365 p57)
+1,Implement(Rod), Rod of Baleful Geas +4 65,000 (Dragon 365 p57)
+1,Implement(Staff), Staff of Expansion +4 65,000 (Dragon 365 p57)
+1,Arms, Bracers of Escape 65,000 (Dragon 365 p57)
+
+# LEVEL EIGHTEEN
+;18
+1,Wand, Wand of ray of enfeeblement +4 85,000
+1,Wand, Wand of icy rays +4 85,000
+1,Weapon, Pact Blade +4 85,000 Light Blade
+1,Weapon, Thundering +4 85,000 Any
+1,Wand, Wand of eldritch rain +4 85,000
+1,Armor, Mountain +4 85,000 Plate
+1,Orb, Orb of inevitable continuance +4 85,000
+1,Weapon, Duelist’s +4 85,000 Light Blade
+1,Hand, Gauntlets of destruction 85,000
+1,Weapon, Frost +4 85,000 Any
+1,Armor, Delver’s +4 85,000 Any
+1,Armor, Sylvan +4 85,000 Cloth, Leather, Hide
+1,Staff, Thunderwave staff +4 85,000
+1,Arm Slot, Shield of defiance (paragon tier) 85,000
+1,Armor, Curseforged +4 85,000 Chain, Scale
+1,Armor, Elven battle +4 85,000 Leather, Hide
+1,Wand, Wand of soul flaying +4 85,000
+1,Wand, Wand of fiery bolt +4 85,000
+1,Weapon, Flameburst +4 85,000 Any ranged
+1,Head, Basilisk helm 85,000
+1,Rod, Rod of corruption +4 85,000
+1,Holy Symbol, Symbol of hope +4 85,000
+1,Wand, Wand of fire burst +4 85,000
+1,Rod, Rod of first blood +4 85,000
+1,Neck, Safewing amulet +4 85,000
+1,Wand, Wand of (power level 13 or lower) +4 85,000
+1,Wand, Wand of shield +4 85,000
+1,Armor, Eladrin +4 85,000 Chain
+1,Neck, Amulet of health +4 85,000
+1,Armor, Shadowflow +4 85,000 Cloth, Leather
+1,Ring, Ring of invisibility 85,000
+1,Armor, Hydra +4 85,000 Scale
+1,Staff, Staff of the war mage +4 85,000
+1,Wand, Wand of witchfire +4 85,000
+1,Armor, Fireburst +4 85,000 Cloth
+1,Neck, Periapt of wisdom +4 85,000
+1,Orb, Orb of drastic resolutions +4 85,000
+1,Weapon, Disrupting +3 85,000 Flail, Hammer, Mace (Dragon 364 p 44)
+1,Implement(Staff), Staff of the Lich +3 85,000 (Dragon 364 p44)
+1,Implement(Rod), Rod of Runic Resistance +4 85,000 (Dragon 365 p14)
+1,Armor, Stonemeld Armor +4 85,000 Cloth, Leather (Dragon 365 p15)
+1,Weapon, Mind-Rending Weapon +4 85,000 Heavy Blade, Light Blade (Dragon 365 p55)
+1,Weapon, Vitriolic Weapon +85,000 Flail, Hammer, Mace (Dragon 365 p56)
+1,Implement(Holy Symbol), Symbol of the Dragon +4 85,000 (Dragon 365 p57)
+1,Implement(Orb), Orb of Inexplicable Contention +4 85,000 (Dragon 365 p57)
+1,Implement(Orb), Orb of Temporal Dissonance +4 85,000 (Dragon 365 p57)
+1,Implement(Staff), Staff of Verdant Growth +4 85,000 (Dragon 365 p57)
+1,Head, Circlet of Clear Thought 85,000 (Dragon 365 p59)
+1,Neck, Amulet of Scales +4 85,000 (Dragon 365 p59)
+1,Ring, Ring of Draconic Zeal 85,000 (Dragon 365 p59)
+1,Waist, Belt of Mountain Endurance 85,000 (Dragon 365 p60)
+
+# LEVEL NINETEEN
+;19
+1,Weapon, Dragonslayer +4 105,000 Any
+1,Armor, Flamedrinker +4 105,000 Plate
+1,Armor, Darkleaf +4 105,000 Cloth, Leather, Hide
+1,Weapon, Phasing +4 105,000 Any ranged
+1,Ring, Ring of true seeing 105,000
+1,Staff, Staff of power +4 105,000
+1,Staff, Staff of winter +4 105,000
+1,Waist, Dynamic belt (paragon tier) 105,000
+1,Wondrous Item, Portable hole 105,000
+1,Armor, Ghostphase +4 105,000 Cloth
+1,Armor, Tombforged +4 105,000 Chain
+1,Neck, Amulet of false life +4 105,000
+1,Armor, Black Iron +4 105,000 Scale, Plate
+1,Rod, Rod of harvest +4 105,000
+1,Weapon, Thunderburst +4 105,000 Any ranged
+1,Head, Helm of battle (paragon tier) 105,000
+1,Armor, Bloodcut +4 105,000 Leather, Hide
+1,Weapon, Terror +4 105,000 Axe, Hammer,Heavy Blade
+1,Armor, Angelsteel +4 105,000 Chain
+1,Orb, Orb of reversed polarities +4 105,000
+1,Neck, Cloak of survival +4 105,000
+1,Holy Symbol, Symbol of victory +4 105,000
+1,Armor, Soulforged +4 105,000 Plate
+1,Weapon, Myrdroon's Shard +4 105,000 Spear (Dragon 364 p24)
+1,Holy Symbol, Symbol of Turning +4 105,000 (Dragon 364 p44)
+1,Weapon, Wolfen Weapon +4 105,000 Heavy Blade, Light Blade (Dragon 364 p52)
+1,Implement(Rod), Ingot Liberatis +4 105,000 (Dragon 365 p14)
+1,Armor, Dragonclaw Armor +4 105,000 Leather, Hide (Dragon 365 p55)
+1,Armor, Fortified Armor +4 105,000 Plate (Dragon 365 p55)
+1,Weapon, Impaling Weapon +4 105,000 Pick, Spear (Dragon 365 p55)
+1,Implement(Holy Symbol), Symbol of Courage +4 105,000 (Dragon 365 p56)
+1,Implement(Rod), Rod of Draconic Fury +4 105,000 (Dragon 365 p57)
+1,Arms, Dragonscale Shield 105,000 (Dragon 365 p57)
+
+# LEVEL TWENTY
+;20
+1,Holy Symbol, Symbol of battle +4 125,000
+1,Rod, Rod of reaving +4 125,000
+1,Armor, Battleforged +4 125,000 Plate
+1,Armor, Barkskin +4 125,000 Hide, Scale
+1,Staff, Staff of storms +4 125,000
+1,Orb, Orb of sanguinary repercussions +4 125,000
+1,Orb, Orb of invasive fortune +4 125,000
+1,Wondrous Item, Revenant ankh 125,000
+1,Ring, Ring of flight 125,000
+1,Rod, Rod of the pyre +4 125,000
+1,Armor, Deathcut +4 125,000 Leather, Hide
+1,Wondrous Item, Flying carpet 125,000
+1,Neck, Guardian’s cape +4 125,000
+1,Weapon, Berserker +4 125,000 Axe, Heavy Blade
+1,Armor, Trollskin +4 125,000 Hide, Scale
+1,Arm Slot, Guardian shield (paragon tier) 125,000
+1,Head, Helm of heroes (paragon tier) 125,000
+1,Weapon, Dancing +4 125,000 Heavy Blade,Light Blade
+1,Weapon, Lightning +4 125,000 Any
+1,Armor, Bloodthread +4 125,000 Cloth
+1,Weapon, Lifedrinker +4 125,000 Any melee
+1,Weapon, Flaming +4 125,000 Any
+1,Armor, Exalted +4 125,000 Chain
+1,Neck, Stormwalker’s cloak +4 125,000
+1,Neck, Cloak of feywild escape +4 125,000
+1,Weapon, Wraithblade +4 125,000 Light Blade (Dragon 364 p44)
+1,Head, Hood of the Wolf 125,000 (Dragon 364 p52)
+1,Weapon, Final Word Weapon +4 125,000 Axe, Heavy Blade (Dragon 365 p55)
+1,Implement(Orb), Orb of Fiery Condemnation +4 125,000 (Dragon 365 p57)
+1,Implement(Staff), Staff of Draconic Power +4 125,000 (Dragon 365 p57)
+
+# LEVEL TWENTY-ONE
+;21
+1,Rod, Magic rod +5 225,000
+1,Neck, Amulet of protection +5 225,000
+1,Holy Symbol, Magic holy symbol +5 225,000
+1,Orb, Magic orb +5 225,000
+1,Ring, Ring of wizardry 225,000
+1,Staff, Magic staff +5 225,000
+1,Weapon, Magic +5 225,000 Any
+1,Wand, Magic wand +5 225,000
+1,Armor, Magic +5 225,000 Any
+1,Armor, Dragonrider Armor +5 225,000 Scale (Dragon 365 p55)
+
+# LEVEL TWENTY-TWO
+;22
+1,Arm Slot, Bracers of mighty striking (epic tier) 325,000
+1,Armor, Razor +5 325,000 Scale
+1,Armor, Dwarven +5 325,000 Chain, Scale, Plate
+1,Holy Symbol, Symbol of life +5 325,000
+1,Feet Slot, Boots of balance 325,000
+1,Arm Slot, Shield of deflection (epic tier) 325,000
+1,Weapon, Vicious +5 325,000 Any
+1,Staff, Staff of fiery might +5 325,000
+1,Armor, Sunleaf +5 325,000 Cloth, Leather, Hide
+1,Weapon, Resounding +5 325,000 Hammer, Flail,Mace, Sling, Staff
+1,Orb, Orb of indisputable gravity +5 325,000
+1,Rod, Rod of dark reward +5 325,000
+1,Head, Helm of ghostly defense 325,000
+1,Neck, Elven cloak +5 325,000
+1,Holy Symbol, Symbol of power +5 325,000
+1,Neck, Cloak of resistance +5 325,000
+1,Waist, Belt of vigor (epic tier) 325,000
+1,Implement(Rod), Rod of Deadly Casting +5 325,000 (Dragon 365 p14)
+1,Armor, Immolating Armor +5 325,000 Chain, Scale (Dragon 365 p55)
+1,Armor, Rimewrought Armor +5 325,000 Scale, Plate (Dragon 365 p55)
+1,Weapon, Relentless Weapon +5 325,000 Flail, Hammer, Mace (Dragon 365 p56)
+1,Implement(Holy Symbol), Symbol of Excellence +5 325,000 (Dragon 365 p57)
+1,Implement(Rod), Rod of Baleful Geas +5 325,000 (Dragon 365 p57)
+1,Implement(Staff), Staff of Expansion +5 325,000 (Dragon 365 p57)
+1,Hands, Far Hand Gloves 325,000 (Dragon 365 p59)
+
+# LEVEL TWENTY-THREE
+;23
+1,Weapon, Frost +5 425,000 Any
+1,Wand, Wand of icy rays +5 425,000
+1,Weapon, Duelist’s +5 425,000 Light Blade
+1,Weapon, Pact Blade +5 425,000 Light Blade
+1,Wand, Wand of shield +5 425,000
+1,Weapon, Flameburst +5 425,000 Any ranged
+1,Weapon, Thundering +5 425,000 Any
+1,Armor, Hydra +5 425,000 Scale
+1,Rod, Rod of death’s grasp +5 425,000
+1,Wand, Wand of ray of enfeeblement +5 425,000
+1,Hand, Guildmaster’s gloves 425,000
+1,Staff, Staff of the war mage +5 425,000
+1,Wand, Wand of soul flaying +5 425,000
+1,Wand, Wand of (power level 17 or lower) +5 425,000
+1,Armor, Sylvan +5 425,000 Cloth, Leather, Hide
+1,Neck, Safewing amulet +5 425,000
+1,Armor, Fireburst +5 425,000 Cloth
+1,Armor, Mountain +5 425,000 Plate
+1,Armor, Curseforged +5 425,000 Chain, Scale
+1,Arm Slot, Shield of protection (epic tier) 425,000
+1,Orb, Orb of inevitable continuance +5 425,000
+1,Orb, Orb of drastic resolutions +5 425,000
+1,Wand, Wand of fiery bolt +5 425,000
+1,Wand, Wand of eldritch rain +5 425,000
+1,Armor, Shadowflow +5 425,000 Cloth, Leather
+1,Rod, Rod of first blood +5 425,000
+1,Armor, Delver’s +5 425,000 Any
+1,Head, Phoenix helm 425,000
+1,Staff, Thunderwave staff +5 425,000
+1,Wand, Wand of witchfire +5 425,000
+1,Holy Symbol, Symbol of radiance +5 425,000
+1,Holy Symbol, Symbol of hope +5 425,000
+1,Armor, Mantle of the Seventh Wind +5 425,000 Cloth
+1,Neck, Cloak of invisibility +5 425,000
+1,Neck, Periapt of wisdom +5 425,000
+1,Wand, Wand of fire burst +5 425,000
+1,Neck, Amulet of health +5 425,000
+1,Arm Slot, Bracers of the perfect shot (epic tier) 425,000
+1,Armor, Elven battle +5 425,000 Leather, Hide
+1,Armor, Eladrin +5 425,000 Chain
+1,Rod, Rod of corruption +5 425,000
+1,Weapon, Disrupting +4 425,000 Flail, Hammer, Mace (Dragon 364 p 44)
+1,Implement(Staff), Staff of the Lich +4 425,000 (Dragon 364 p44)
+1,Implement(Rod), Rod of Runic Resistance +5 425,000 (Dragon 365 p14)
+1,Armor, Stonemeld Armor +5 425,000 Cloth, Leather (Dragon 365 p15)
+1,Weapon, Mind-Rending Weapon +5 425,000 Heavy Blade, Light Blade (Dragon 365 p55)
+1,Weapon, Vitriolic Weapon +5 425,000 Flail, Hammer, Mace (Dragon 365 p56)
+1,Implement(Holy Symbol), Symbol of the Dragon +5 425,000 (Dragon 365 p57)
+1,Implement(Orb), Orb of Inexplicable Contention +5 425,000 (Dragon 365 p57)
+1,Implement(Orb), Orb of Temporal Dissonance +5 425,000 (Dragon 365 p57)
+1,Implement(Rod), Rod of The Dragon's Heart +5 425,000 (Dragon 365 p57)
+1,Implement(Staff), Staff of Verdant Growth +5 425,000 (Dragon 365 p57)
+1,Arms, Netherdark Shield 425,000 (Dragon 365 p59)
+1,Feet, Earthwalker's Boots (Dragon 365 p59)
+1,Head, Eyes of the Dragon 425,000 (Dragon 365 p59)
+1,Neck, Amulet of Scales +5 425,000 (Dragon 365 p59)
+
+# LEVEL TWENTY-FOUR
+;24
+1,Armor, Soulforged +5 525,000 Plate
+1,Arm Slot, Shield of warding (epic tier) 525,000
+1,Staff, Staff of winter +5 525,000
+1,Armor, Ghostphase +5 525,000 Cloth
+1,Weapon, Phasing +5 525,000 Any ranged
+1,Ring, Ring of regeneration 525,000
+1,Armor, Tombforged +5 525,000 Chain
+1,Rod, Rod of harvest +5 525,000
+1,Staff, Staff of power +5 525,000
+1,Weapon, Terror +5 525,000 Axe, Hammer,Heavy Blade
+1,Weapon, Dragonslayer +5 525,000 Any
+1,Holy Symbol, Symbol of victory +5 525,000
+1,Armor, Bloodcut +5 525,000 Leather, Hide
+1,Neck, Amulet of false life +5 525,000
+1,Armor, Angelsteel +5 525,000 Chain
+1,Armor, Flamedrinker +5 525,000 Plate
+1,Weapon, Thunderburst +5 525,000 Any ranged
+1,Neck, Cloak of survival +5 525,000
+1,Armor, Black Iron +5 525,000 Scale, Plate
+1,Orb, Orb of reversed polarities +5 525,000
+1,Armor, Darkleaf +5 525,000 Cloth, Leather, Hide
+1,Weapon, Myrdroon's Shard +5 525,000 Spear (Dragon 364 p24)
+1,Holy Symbol, Symbol of Turning +5 525,000 (Dragon 364 p44)
+1,Weapon, Wolfen Weapon +5 525,000 Heavy Blade, Light Blade (Dragon 364 p52)
+1,Implement(Rod), Ingot Liberatis +5 525,000 (Dragon 365 p14)
+1,Armor, Dragonclaw Armor +5 525,000 Leather, Hide (Dragon 365 p55)
+1,Armor, Fortified Armor +5 525,000 Plate (Dragon 365 p55)
+1,Weapon, Impaling Weapon +5 525,000 Pick, Spear (Dragon 365 p55)
+1,Implement(Holy Symbol), Symbol of Courage +5 525,000 (Dragon 365 p56)
+1,Implement(Rod), Rod of Draconic Fury +5 525,000 (Dragon 365 p57)
+1,Ring, Ring of the Ghost Knight 525,000 (Dragon 365 p60)
+
+# LEVEL TWENTY-FIVE
+;25
+1,Staff, Staff of storms +5 625,000
+1,Armor, Barkskin +5 625,000 Hide, Scale
+1,Holy Symbol, Symbol of battle +5 625,000
+1,Head, Halo of fallen stars 625,000
+1,Neck, Stormwalker’s cloak +5 625,000
+1,Neck, Guardian’s cape +5 625,000
+1,Weapon, Flaming +5 625,000 Any
+1,Weapon, Dancing +5 625,000 Heavy Blade,Light Blade
+1,Waist, Belt of titan strength 625,000
+1,Neck, Cloak of feywild escape +5 625,000
+1,Armor, Bloodthread +5 625,000 Cloth
+1,Weapon, Holy Avenger +5 625,000 Axe, Hammer,Heavy Blade
+1,Weapon, Lightning +5 625,000 Any
+1,Weapon, Lifedrinker +5 625,000 Any melee
+1,Rod, Rod of reaving +5 625,000
+1,Weapon, Berserker +5 625,000 Axe, Heavy Blade
+1,Waist, Ironskin belt (epic tier) 625,000
+1,Arm Slot, Bashing shield (epic tier) 625,000
+1,Rod, Rod of the pyre +5 625,000
+1,Armor, Battleforged +5 625,000 Plate
+1,Orb, Orb of sanguinary repercussions +5 625,000
+1,Armor, Exalted +5 625,000 Chain
+1,Armor, Trollskin +5 625,000 Hide, Scale
+1,Armor, Deathcut +5 625,000 Leather, Hide
+1,Orb, Orb of invasive fortune +5 625,000
+1,Weapon, Wraithblade +5 625,000 Light Blade (Dragon 364 p44)
+1,Weapon, Final Word Weapon +5 625,000 Axe, Heavy Blade (Dragon 365 p55)
+1,Implement(Orb), Orb of Fiery Condemnation +5 625,000 (Dragon 365 p57)
+1,Implement(Staff), Staff of Draconic Power +5 625,000 (Dragon 365 p57)
+
+# LEVEL TWENTY-SIX
+;26
+1,Neck, Amulet of protection +6 1,125,000
+1,Weapon, Magic +6 1,125,000 Any
+1,Ring, Star opal ring 1,125,000
+1,Head, Horned helm (epic tier) 1,125,000
+1,Hand, Shadowfell gloves (epic tier) 1,125,000
+1,Orb, Magic orb +6 1,125,000
+1,Armor, Magic +6 1,125,000 Any
+1,Holy Symbol, Magic holy symbol +6 1,125,000
+1,Arm Slot, Dragondaunt shield (epic tier) 1,125,000
+1,Staff, Magic staff +6 1,125,000
+1,Rod, Magic rod +6 1,125,000
+1,Wand, Magic wand +6 1,125,000
+1,Armor, Dragonrider Armor +6 1,125,000 Scale (Dragon 365 p55)
+
+# LEVEL TWENTY-SEVEN
+;27
+1,Arm Slot, Bracers of defense (epic tier) 1,625,000
+1,Armor, Dwarven +6 1,625,000 Chain, Scale, Plate
+1,Staff, Staff of fiery might +6 1,625,000
+1,Orb, Orb of indisputable gravity +6 1,625,000
+1,Holy Symbol, Symbol of life +6 1,625,000
+1,Waist, Belt of sacrifice (epic tier) 1,625,000
+1,Rod, Rod of dark reward +6 1,625,000
+1,Neck, Cloak of resistance +6 1,625,000
+1,Holy Symbol, Symbol of power +6 1,625,000
+1,Neck, Elven cloak +6 1,625,000
+1,Weapon, Vicious +6 1,625,000 Any
+1,Armor, Razor +6 1,625,000 Scale
+1,Head, Iron of spite 1,625,000
+1,Armor, Sunleaf +6 1,625,000 Cloth, Leather, Hide
+1,Weapon, Resounding +6 1,625,000 Hammer, Flail,Mace, Sling, Staff
+1,Implement(Rod), Rod of Deadly Casting +6 1,625,000 (Dragon 365 p14)
+1,Armor, Immolating Armor +6 1,625,000 Chain, Scale (Dragon 365 p55)
+1,Armor, Rimewrought Armor +6 1,625,000 Scale, Plate (Dragon 365 p55)
+1,Weapon, Relentless Weapon +6 1,625,000 Flail, Hammer, Mace (Dragon 365 p56)
+1,Implement(Holy Symbol), Symbol of Excellence +6 1,625,000 (Dragon 365 p57)
+1,Implement(Rod), Rod of Baleful Geas +6 1,625,000 (Dragon 365 p57)
+1,Implement(Staff), Staff of Expansion +6 1,625,000 (Dragon 365 p57)
+1,Arms, Bracers of Escape 1,625,000 (Dragon 365 p57)
+
+# LEVEL TWENTY-EIGHT
+;28
+1,Feet Slot, Boots of the infinite stride 2,125,000
+1,Wand, Wand of fiery bolt +6 2,125,000
+1,Wand, Wand of fire burst +6 2,125,000
+1,Wand, Wand of (power level 23 or lower) +6 2,125,000
+1,Staff, Thunderwave staff +6 2,125,000
+1,Armor, Shadowflow +6 2,125,000 Cloth, Leather
+1,Wand, Wand of witchfire +6 2,125,000
+1,Wand, Wand of soul flaying +6 2,125,000
+1,Wand, Wand of ray of enfeeblement +6 2,125,000
+1,Wand, Wand of icy rays +6 2,125,000
+1,Armor, Delver’s +6 2,125,000 Any
+1,Armor, Eladrin +6 2,125,000 Chain
+1,Arm Slot, Shield of defiance (epic tier) 2,125,000
+1,Armor, Elven battle +6 2,125,000 Leather, Hide
+1,Orb, Orb of drastic resolutions +6 2,125,000
+1,Armor, Curseforged +6 2,125,000 Chain, Scale
+1,Rod, Rod of first blood +6 2,125,000
+1,Head, Ioun stone of true sight 2,125,000
+1,Wand, Wand of eldritch rain +6 2,125,000
+1,Rod, Rod of corruption +6 2,125,000
+1,Rod, Rod of death’s grasp +6 2,125,000
+1,Orb, Orb of inevitable continuance +6 2,125,000
+1,Armor, Hydra +6 2,125,000 Scale
+1,Armor, Mountain +6 2,125,000 Plate
+1,Armor, Fireburst +6 2,125,000 Cloth
+1,Weapon, Pact Blade +6 2,125,000 Light Blade
+1,Neck, Amulet of health +6 2,125,000
+1,Neck, Cloak of invisibility +6 2,125,000
+1,Holy Symbol, Symbol of hope +6 2,125,000
+1,Neck, Periapt of wisdom +6 2,125,000
+1,Staff, Staff of the war mage +6 2,125,000
+1,Weapon, Flameburst +6 2,125,000 Any ranged
+1,Weapon, Frost +6 2,125,000 Any
+1,Weapon, Thundering +6 2,125,000 Any
+1,Wand, Wand of shield +6 2,125,000
+1,Armor, Mantle of the Seventh Wind +6 2,125,000 Cloth
+1,Armor, Sylvan +6 2,125,000 Cloth, Leather, Hide
+1,Neck, Safewing amulet +6 2,125,000
+1,Weapon, Duelist’s +6 2,125,000 Light Blade
+1,Holy Symbol, Symbol of radiance +6 2,125,000
+1,Weapon, Disrupting +5 2,125,000 Flail, Hammer, Mace (Dragon 364 p 44)
+1,Implement(Staff), Staff of the Lich +5 2,125,000 (Dragon 364 p44)
+1,Implement(Rod), Rod of Runic Resistance +6 2,125,000 (Dragon 365 p14)
+1,Armor, Stonemeld Armor +6 2,125,000 Cloth, Leather (Dragon 365 p15)
+1,Weapon, Mind-Rending Weapon +6 2,125,000 Heavy Blade, Light Blade (Dragon 365 p55)
+1,Weapon, Vitriolic Weapon +6 2,125,000 Flail, Hammer, Mace (Dragon 365 p56)
+1,Implement(Holy Symbol), Symbol of the Dragon +6 2,125,000 (Dragon 365 p57)
+1,Implement(Orb), Orb of Inexplicable Contention +6 2,125,000 (Dragon 365 p57)
+1,Implement(Orb), Orb of Temporal Dissonance +6 2,125,000 (Dragon 365 p57)
+1,Implement(Rod), Rod of The Dragon's Heart +6 2,125,000 (Dragon 365 p57)
+1,Implement(Staff), Staff of Verdant Growth +6 2,125,000 (Dragon 365 p57)
+1,Neck, Amulet of Scales +6 2,125,000 (Dragon 365 p59)
+
+# LEVEL TWENTY-NINE
+;29
+1,Waist, Dynamic belt (epic tier) 2,625,000
+1,Weapon, Phasing +6 2,625,000 Any ranged
+1,Armor, Bloodcut +6 2,625,000 Leather, Hide
+1,Armor, Ghostphase +6 2,625,000 Cloth
+1,Neck, Cloak of survival +6 2,625,000
+1,Head, Helm of battle (epic tier) 2,625,000
+1,Armor, Flamedrinker +6 2,625,000 Plate
+1,Neck, Amulet of false life +6 2,625,000
+1,Weapon, Terror +6 2,625,000 Axe, Hammer,Heavy Blade
+1,Staff, Staff of power +6 2,625,000
+1,Armor, Soulforged +6 2,625,000 Plate
+1,Weapon, Thunderburst +6 2,625,000 Any ranged
+1,Rod, Rod of harvest +6 2,625,000
+1,Holy Symbol, Symbol of victory +6 2,625,000
+1,Armor, Darkleaf +6 2,625,000 Cloth, Leather, Hide
+1,Armor, Angelsteel +6 2,625,000 Chain
+1,Armor, Black Iron +6 2,625,000 Scale, Plate
+1,Weapon, Dragonslayer +6 2,625,000 Any
+1,Orb, Orb of reversed polarities +6 2,625,000
+1,Armor, Tombforged +6 2,625,000 Chain
+1,Staff, Staff of winter +6 2,625,000
+1,Weapon, Myrdroon's Shard +6 2,625,000 Spear (Dragon 364 p24)
+1,Holy Symbol, Symbol of Turning +6 2,625,000 (Dragon 364 p44)
+1,Weapon, Wolfen Weapon +6 2,625,000 Heavy Blade, Light Blade (Dragon 364 p52)
+1,Implement(Rod), Ingot Liberatis +6 2,625,000 (Dragon 365 p14)
+1,Armor, Dragonclaw Armor +6 2,625,000 Leather, Hide (Dragon 365 p55)
+1,Armor, Fortified Armor +6 2,625,000 Plate (Dragon 365 p55)
+1,Weapon, Impaling Weapon +6 2,625,000 Pick, Spear (Dragon 365 p55)
+1,Implement(Holy Symbol), Symbol of Courage +6 2,625,000 (Dragon 365 p56)
+1,Implement(Rod), Rod of Draconic Fury +6 2,625,000 (Dragon 365 p57)
+1,Arms, Dragonscale Shield 2,625,000 (Dragon 365 p57)
+
+# LEVEL THIRTY
+;30
+1,Weapon, Lifedrinker +6 3,125,000 Any melee
+1,Rod, Rod of reaving +6 3,125,000
+1,Staff, Staff of storms +6 3,125,000
+1,Rod, Rod of the pyre +6 3,125,000
+1,Weapon, Berserker +6 3,125,000 Axe, Heavy Blade
+1,Weapon, Vorpal +6 3,125,000 Axe, Heavy Blade
+1,Weapon, Perfect Hunter’s +6 3,125,000 Any ranged
+1,Weapon, Lightning +6 3,125,000 Any
+1,Weapon, Holy Avenger +6 3,125,000 Axe, Hammer,Heavy Blade
+1,Weapon, Dancing +6 3,125,000 Heavy Blade,Light Blade
+1,Armor, Exalted +6 3,125,000 Chain
+1,Weapon, Flaming +6 3,125,000 Any
+1,Orb, Orb of sanguinary repercussions +6 3,125,000
+1,Head, Helm of heroes (epic tier) 3,125,000
+1,Armor, Bloodthread +6 3,125,000 Cloth
+1,Neck, Cloak of feywild escape +6 3,125,000
+1,Armor, Trollskin +6 3,125,000 Hide, Scale
+1,Armor, Deathcut +6 3,125,000 Leather, Hide
+1,Armor, Battleforged +6 3,125,000 Plate
+1,Neck, Scarab of invulnerability +6 3,125,000
+1,Neck, Guardian’s cape +6 3,125,000
+1,Orb, Orb of invasive fortune +6 3,125,000
+1,Holy Symbol, Symbol of battle +6 3,125,000
+1,Arm Slot, Guardian shield (epic tier) 3,125,000
+1,Neck, Stormwalker’s cloak +6 3,125,000
+1,Armor, Barkskin +6 3,125,000 Hide, Scale
+1,Weapon, Wraithblade +6 3,125,000 Light Blade (Dragon 364 p44)
+1,Weapon, Final Word Weapon +6 3,125,000 Axe, Heavy Blade (Dragon 365 p55)
+1,Implement(Orb), Orb of Fiery Condemnation +6 3,125,000 (Dragon 365 p57)
+1,Implement(Staff), Staff of Draconic Power +6 3,125,000 (Dragon 365 p57)
+
+:31
+1,[30]
+
+:32
+1,[30]
+
+:33
+1,[30]
+
+:34
+1,[30]

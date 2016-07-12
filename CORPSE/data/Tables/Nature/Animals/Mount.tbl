@@ -1,43 +1,65 @@
 / Sources: Best of DRAGON, Volume IV, page 48
 / http://eberronunlimited.wikidot.com/mounts
+/ http://www.dandwiki.com/wiki/Category:Mount
 
-.Mount           Price    Carry     Rider Size   Speed   Distance/day  Source          Diet
+.Mount                    Price    Carry     Rider Size    Speed   Distance/day  Source             Diet
 
 : Mount
 destrier
-donkey               8 gp    50 lbs    Small        3 mph     24 miles   Monster Manual
-heavy horse        200 gp   200 lbs    Medium       5 mph     40 miles   Monster Manual
-heavy warhorse     400 gp   300 lbs    Medium       5 mph     40 miles   Monster Manual
+donkey                       8 gp    50 lbs    Small        3 mph     24 miles   Monster Manual
+heavy horse                200 gp   200 lbs    Medium       5 mph     40 miles   Monster Manual
+heavy warhorse             400 gp   300 lbs    Medium       5 mph     40 miles   Monster Manual
 horse
-light horse         75 gp   150 lbs    Medium       6 mph     48 miles   Monster Manual
-light warhorse     150 gp   230 lbs    Medium       6 mph     48 miles   Monster Manual
+light horse                 75 gp   150 lbs    Medium       6 mph     48 miles   Monster Manual
+light warhorse             150 gp   230 lbs    Medium       6 mph     48 miles   Monster Manual
 mule
-pony                30 gp    75 lbs    Small        4 mph     32 miles   Monster Manual
+pony                        30 gp    75 lbs    Small        4 mph     32 miles   Monster Manual
 warhorse
 
 : Special
 androsphinx
-ashworm            200 gp                                                Sandstorm
+ashworm                    200 gp                                                Sandstorm
 axebeak
 bantha
+boar
 camel
+cauchemar nightmare
+celestial charger
+celestial elephant
+celestial giant eagle
+celestial giant owl
+celestial griffon
+celestial hippogriff
+celestial riding dog
 chimera
+collar of health
+collar of mighty attack
+collar of natural armor
 criosphinx
 crooda
+crop of animal taming
+death knight minion's
 dinosaur
 dire boar
 dire lion
 dire stag
 dire wolf
 dragon
-dromedary camel     75 gp                                                Sandstorm
-dust twister     1,500 gp                                                Sandstorm
+dromedary camel             75 gp                                                Sandstorm
+dust twister             1,500 gp                                                Sandstorm
+dwarven war-boar
+elephant
+fiendish dire wolf
+fiendish wolf
+figurine of wondrous power
 giant ant
 giant beetle
 giant centipede
 giant crab
-giant gecko                                                              Pathfinder #1
+giant eagle
+giant gecko                                                                     Pathfinder #1
 giant lizard
+giant owl
 giant tortoise
 giant wolf
 giant {avian}
@@ -46,29 +68,42 @@ griffon
 gynosphynx
 hieracosphinx
 hippogryph
+hoary steed
+howler
 huskies
+large cat mount
 leopard
 mammoth
 manticore
 mastodon
 nightmare
+oxen
 panther
 pegasus
 pteranodon
 pterosaur
 rhinoceros
-riding dog         150 gp   100 lbs    Small        4 mph     32 miles   Monster Manual
+riding dog                 150 gp   100 lbs    Small        4 mph     32 miles   Monster Manual
 roc
 sabre cat
 sabre-toothed tiger
+sail cart
+scorpion mount
+spider eater
 steam-powered horse
+stone horse
 taun-taun
 tiger
-two-humped camel   100 gp                                                Sandstorm
+two-humped camel           100 gp                                                Sandstorm
+unicorn
 war bull
 war camel
 war elephant
 war giraffe
+war pony
+winter wolf
+wolf
+worg
 wyvern
 
 ===

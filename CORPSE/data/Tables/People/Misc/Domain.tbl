@@ -80,30 +80,45 @@ theology
 zoology
 
 : Arcane
-[utility.creaturetypes] crossbreeding
-[utility.creaturetypes] dissection
-[utility.creaturetypes] sentience
 abjuration
+alchemy
 alteration
 animation
+artifacts and relics
+artificing
+astrology
 binding rituals
+blact arts
+charms
 chirurgery
 chronomancy
 communication with {order}
 conjuration
 construct creation
+curses
+daemonology
+dark pacts
+death magic
+demon binding
 demonology
 diabolism
 divination
+dweomercrafting
+dweomers
 elementalism
 empathic
+enchanment
 enchantment
 environmental magic
 evocation
 fetish magic
+forbidden lore
+forbidden magic
+hexes
 hexology
 hypnotism
 illusion
+invocation
 kinetic magic
 ley lines
 magical crossbreeding
@@ -112,18 +127,27 @@ necromancy
 numerology
 occultism
 planar travel
+polymorphing
 rune magic
+runes
 sorcery
 spellcasting
 spellcraft
 spiritual magic
+summoning
 summoning {order:arcane}
 thaumaturgy
+the arcane arts
 the orders of {order:arcane} beings
 theurgy
 transference
+transmogrification
+transmutation
+undead lore
 witchcraft
 wizardry
+{monster} {crossbreeding|dissection|sentience}
+{mythical creature} lore
 {order:arcane} energies
 {order:arcane} hierarchy
 {order:arcane} knowledge
@@ -133,6 +157,8 @@ wizardry
 {order:arcane} runes
 {order:arcane} structures
 {order:arcane} symbols
+{spell category:type}
+{undead} lore
 
 : Divination
 aeromancy

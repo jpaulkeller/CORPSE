@@ -13,8 +13,7 @@ The {weapon:hilted} {:of legend} {:called} {Weapon Name}
 / wicked-looking
 / spell-forged
 
-: Sword Parts
-2x {:Hilted Sword Parts}
+: Sword Parts2x {:Hilted Sword Parts}
 {:Basketed Sword Parts}
 
 : Hilted Sword Parts
@@ -39,7 +38,7 @@ knotwork
 maritime
 
 : Sword Blade Style
-.
+-
 The blade is of Kris style (wavy and serpentine).
 The blade is serrated, giving it a wicked appearance.
 A blood groove runs the length of the blade on each side.
@@ -102,7 +101,7 @@ The basket has the appearance of spiderwebs.
 The basket has a scalloped, clamshell appearance.
 
 : Decor Metal
-.
+-
 The decorative elements of the sword are composed of {metal:enchantable} {:MetalHistoryChance}.
 
 : Pommel Shapes

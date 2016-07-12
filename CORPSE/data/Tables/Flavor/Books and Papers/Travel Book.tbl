@@ -1,8 +1,9 @@
 : Travel Book
-The {:Subject} of {20%{Rank} }{Name}{20% the {Evocative Title}}
-{:Gerund} {around|to|through} the {Region}
+The {:Subject} of {:WHO}
+{:Gerund} {around|to|through} {:WHERE}
 
 : Subject
+Adventures
 Days
 Diary
 Excursions
@@ -10,11 +11,29 @@ Expeditions
 Explorations
 Journal
 Journeys
+Misadventures
 Travelogue
 Travels
+Trek
 Voyages
 Wanderings
 
 : Gerund
+Adventuring
 Journeying
 Traveling
+Trekking
+Voyaging
+Wandering
+
+: Who
+{Name}{20% the {Evocative Title}}
+{Name} the {Pseudo Class:Bard}
+{Name} the {Pseudo Class:Ranger}
+{20%{Rank} }{Name}
+
+: Where
+the {Biome} of the {Place Name} 
+the {Region}
+the {Place Name}
+the {Terrain} of {Place Name} 

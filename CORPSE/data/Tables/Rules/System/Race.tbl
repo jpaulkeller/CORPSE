@@ -17,6 +17,7 @@
 . Avg Weight (lbs) 4
 
 : Race = Common + Humanoid
+: All = Common + Humanoid + Fae + Mythical
  
 /         |---------------------------------------------------------|
 /         |     N  S  D   P  |  ATTRIBUTE  MODIFIERS   |     A      |

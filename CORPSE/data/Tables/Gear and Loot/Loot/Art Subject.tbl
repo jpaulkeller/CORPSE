@@ -35,10 +35,10 @@ the {Act} of {Feudal Rank:Noble}
 trees
 unknown mountains
 weapons
-{: water} water
-{:OF}
-{BATTLE NAME}
 {:BOATS}
+{:water} water
+{ART:OF}
+{BATTLE NAME}
 {Group Name}
 {minstrels|musicians|performers} in the court of {Noble Name}
 

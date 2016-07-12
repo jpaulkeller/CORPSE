@@ -6,51 +6,54 @@
 
 : Name
 {25%{Trait{!OneWord}} }{:Who}'s {:Type}
-{:Creature} and {:Creature{!MaybeSameFirst}} {80%{:Type}}
+{:Creature} and {:Creature} {80%{:Type}}
 {:Creature}'s {Home}
-{:Creature}'s {Organ{!OneMaybeSame}} {80%{:Type}}
+{:Creature}'s {Organ} {50%{:Type}}
 {:Type} by the {Site}
 {:Type} of {Evocative Concept}
 {:Who}'s {Evocative Concept{!OneWithSame}} {80%{:Type}}
-{Adjective{!OneWord}} {:Creature{!MaybeSameFirst}} {80%{:Type}}
+{Adjective{!OneWord}} {:Creature} {80%{:Type}}
 {Adjective{!OneWord}} {:Type}
 {Adjective{!OneWord}} {:Who} {80%{:Type}}
 {Charge{!OneWord}} and {Charge{!OneWord}}
-{Color:Common{!OneWord}} and {Color:Common{!OneMaybeSame}} {80%{:Type}}
-{Color:Common{!OneWord}} {:What{!MaybeSameFirst}} {80%{:Type}}
-{Condition:Wood Weapon} {Flotsam:Simple{!OneMaybeSame}} {80%{:Type}}
+{Color:Common{!OneWord}} and {Color:Simple} {80%{:Type}}
+{Color:Simple{!OneWord}} {:What} {80%{:Type}}
+{Condition:Wood Weapon} {Flotsam:Simple} {80%{:Type}}
 {Container{!OneWord}} of {Contents.Item{!OneWord}} {80%{:Type}}
-{Disposition} {:Who{!MaybeSameFirst}} {80%{:Type}}
+{Disposition} {:Who} {80%{:Type}}
 {Famous Inn}
-{Metal:Common} {:Creature{!MaybeSameFirst}} {80%{:Type}}
-{Metal:Common} {Tiny Item{!OneMaybeSame}} {80%{:Type}}
-{Mood} {:Who{!MaybeSameFirst}} {80%{:Type}}
+{Metal:Common} {:Creature} {80%{:Type}}
+{Metal:Common} {Tiny Item} {80%{:Type}}
+{Mood} {:Who} {80%{:Type}}
 {Name}'s {:Type}
-{Noise{!OneWord}} {:Who{!MaybeSameFirst}} {80%{:Type}}
-{Noise{!OneWord}} {Musical Instrument{!OneMaybeSame}} {80%{:Type}}
-{Number:TwoToFive} {{:What{!MaybeSameFirst}}+} {80%{:Type}}
-{Texture{!OneWord}} {Site:Artificial{!OneMaybeSame}} {80%{:Type}}
-{Trait{!OneWord}} {:Who{!MaybeSameFirst}} {80%{:Type}}
+{Noise{!OneWord}} {:Who} {80%{:Type}}
+{Noise{!OneWord}} {Musical Instrument} {80%{:Type}}
+{Number:TwoToFive} {{:What}+} {80%{:Type}}
+{Participle} {:What}
+{Texture{!OneWord}} {Site:Artificial} {80%{:Type}}
+{Tool{!OneWord}} and {Tool{!OneWord}} {80%{:Type}}
+{Trait{!OneWord}} {:Who} {80%{:Type}}
+{Verb:Person Action} {:Who} {80%{:Type}}
 {{Flora{!OneWord}}+} and {{Flora{!OneWord}}+} {80%{:Type}}
 
 : Port Name
-{Aquatic} and {Aquatic{!MaybeSameFirst}} {80%{:Type}}
-{Aquatic}'s {Home}
-{Aquatic}'s {Organ{!OneMaybeSame}} {80%{:Type}}
 {:Type} by the {Structure:Coastal}
+{Aquatic} and {Aquatic} {80%{:Type}}
+{Aquatic}'s {Home}
+{Aquatic}'s {Organ} {80%{:Type}}
+{Condition:Wood Weapon} {Flotsam:Simple} {80%{:Type}}
+{Container{!OneWord}} of {Contents.Item{!OneWord}} {80%{:Type}}
+{Disposition} {Profession:Sailor{!OneWord}} {80%{:Type}}
+{Metal:Common} {Aquatic} {80%{:Type}}
+{Mood} {Profession:Sailor{!OneWord}} {80%{:Type}}
+{Noise{!OneWord}} {Musical Instrument} {80%{:Type}}
+{Noise{!OneWord}} {Profession:Sailor{!OneWord}} {80%{:Type}}
+{Pirate Name}'s {:Type}
 {Profession:Sailor{!OneWord}}'s {Evocative Concept{!OneWithSame}} {80%{:Type}}
-{Ship Name:Nautical Adj{!OneWord}} {Aquatic{!MaybeSameFirst}} {80%{:Type}}
+{Ship Name:Nautical Adj{!OneWord}} {Aquatic} {80%{:Type}}
 {Ship Name:Nautical Adj{!OneWord}} {Profession:Sailor{!OneWord}} {80%{:Type}}
 {Ship Name:Nautical Noun{!OneWord}} and {Ship Name:Nautical Noun{!OneWord}}
-{Condition:Wood Weapon} {Flotsam:Simple{!OneMaybeSame}} {80%{:Type}}
-{Container{!OneWord}} of {Contents.Item{!OneWord}} {80%{:Type}}
-{Disposition} {Profession:Sailor{!OneWord}{!MaybeSameFirst}} {80%{:Type}}
-{Metal:Common} {Aquatic{!MaybeSameFirst}} {80%{:Type}}
-{Mood} {Profession:Sailor{!OneWord}{!MaybeSameFirst}} {80%{:Type}}
-{Pirate Name}'s {:Type}
-{Noise{!OneWord}} {Profession:Sailor{!OneWord}{!MaybeSameFirst}} {80%{:Type}}
-{Noise{!OneWord}} {Musical Instrument{!OneMaybeSame}} {80%{:Type}}
-{Trait{!OneWord}} {Profession:Sailor{!OneWord}{!MaybeSameFirst}} {80%{:Type}}
+{Trait{!OneWord}} {Profession:Sailor{!OneWord}} {80%{:Type}}
 
 : Who
 {:creature}
@@ -79,8 +82,8 @@
 : Type
 inn
 tavern
-{:food} and {:drink}
-{:lodging}{33% and {:{food|drink}}}
+{:food}{50% and {:drink}}
+{:lodging}{10% and {:{food|drink}}}
 {:type uncommon}
 
 : Lodging
@@ -122,4 +125,5 @@ hospice
 house
 meeting hall
 oasis
+rest
 retreat

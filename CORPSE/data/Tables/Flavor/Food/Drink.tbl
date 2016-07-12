@@ -12,7 +12,6 @@
 {birch|ginger|root} beer
 
 : Alcoholic
-beer
 bitter
 brandy
 brandywine
@@ -21,37 +20,12 @@ hard cider
 {25%{sweet|thick} }mead
 perry
 porter
-{:ale}
-{:stout}
+{ale}
 {25%{light|summer|winter} }lager
-{hot|mulled} wine{25% spiced with {spice}}
+{hot|mulled} {wine}{25% spiced with {spice}}
 {:liquor}
 {20%{dry|sweet|sparkling|spiced} }{75%{red|white|rose|port|ice} }wine
 {:rare alcohol}
-
-: ale
-ale
-autumn ale
-brown ale
-heather ale
-honey ale
-honey-brown ale
-pale ale
-red ale
-spring ale
-summer ale
-winter ale
-
-: stout
-autumn stout
-black stout
-coffee stout
-dark stout
-fine stout
-oat stout
-stout
-summer stout
-thick stout
 
 : Liquor
 gin

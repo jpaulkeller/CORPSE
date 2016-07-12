@@ -26,6 +26,7 @@
 {:Beorning}
 {:Bree}
 {:Dale}
+{:Dol Amroth}
 {:Dunlending}
 {:Easterling}
 {:Gondor}
@@ -37,6 +38,7 @@
 {:Beorning Male}
 {:Bree Male}
 {:Dale Male}
+{:Dol Amroth Male}
 {:Dunlending Male}
 {:Easterling Male}
 {:Gondor Male}
@@ -48,6 +50,7 @@
 {:Beorning Female}
 {:Bree Female}
 {:Dale Female}
+{:Dol Amroth Female}
 {:Dunlending Female}
 {:Easterling Female}
 {:Gondor Female}
@@ -658,6 +661,55 @@ Una
 Valdis
 Vigdis
 Walda
+
+: Dol Amroth
+{:Dol Amroth Male}
+{:Dol Amroth Female}
+{:Dol Amroth Neutral}
+
+: Dol Amroth Male
+Aerion "Son of the sea"
+Alagastor "Windstrom brother"
+Alphanar "Swan brother"
+Amarthon "Brother of fate"
+Calaeron "Light of the sea"
+Círchon "Ship brother"
+Dauchon "Warrior brother"
+Glirdirion "Son of poetry"
+Gorfuithor "Brother of dreaded gloom"
+Hûben "Harbor husband"
+Nûrdir "Deep man"
+Thavron "Carpenter"
+{:Dol Amroth Neutral}
+
+: Dol Amroth Female
+Aearwen "Sea maiden"
+Annunien "Daughter of the sunset"
+Baingollil "Fair and wise one"
+Curuhel "Skilled girl"
+Dinenthel "Silent sister"
+Drauges "Wolf woman"
+Esgarel  "Shore"
+Gaernith "Sea sister"
+Limlugiel "Daughter of the sea-serpent"
+Maechenebeth "Sharp-eyed one"
+Remil "Fisherwoman"
+Trevedril "Traveller"
+{:Dol Amroth Neutral}
+
+: Dol Amroth Neutral
+Alphen "Swan person"
+Alphroval "Swan’s wing"
+Ciror "Sailor"
+Edlemben "Exile"
+Gaeruil "Seaweed"
+Gulor "Sorcerer"
+Half "Seashell"
+Harthor "Hopeful one"
+Horphen "Driven/Impelled person"
+Nemir "Water jewel"
+Renior "Wanderer"
+Ýridhren "Wise course"
 
 : Dunlending
 {:Dunlending Male}

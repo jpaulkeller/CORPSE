@@ -1,130 +1,130 @@
 / http://www.random-generator.com/index.php?title=Potion
 / Based on ChaoticShiny and SeventhSanctum's Potion generators.
-/ Potions/Philters/Elixirs are consumed to activate
-/ Oils are applied topically
-/ Tinctures are organic extractions
 
 : Potion
-<Potion={:Type}>
+<Potion={:NAME}>
+
+: Name
+{Apothecary:Type} of {:EFFECT}
 
 : Loot
-{:TYPE} ({2d4} doses in a {2d3-1}-{volume:portable} {container:potions})
+{:NAME} ({2d4} doses in a {2d3-1}-{volume:portable} {container:potions})
 
-: Type
-Elixir of Health
-Elixir of Madness ({neurosis})
-Elixir of youth
-Oil of Acid Resistance
-Oil of Disenchantment
-Oil of Etherealness
-Oil of Fiery Burning
-Oil of Fumbling
-Oil of Impact
-Oil of Slipperiness
-Oil of Timelessness
-Oil of Enchantment: {Spell:enchantment}
-Oil of Evocation: {Spell:evocation}
-Oil of Illusion: {Spell:illusion}
-Oil of Defense: {special defense}
-Philter of Glibness
-Philter of Love
-Philter of Persuasiveness
-Philter of Stammering and Stuttering
+: Effect
+Acid Resistance
+Aid
+Alteration: {Spell:Alteration}
+Animal Control ({Order})
+Barkskin
+Bear's Endurance
+Blur
+Bull's Strength
+Cat's Grace
+Clairaudience
+Clairvoyance
+Climbing
+Cure Light Wounds
+Cure Moderate Wounds
+Cure Serious Wounds
+Darkvision
+Defense: {special defense}
+Delay Poison
+Delusion ({:EFFECT})
+Diminution
+Disenchantment
+Displacement
+Divination: {Spell:Divination}
+Eagle's Splendor
+Empathy: {Spell:Empathic}
+Enchantment: {Spell:enchantment}
+Endure Elements
+Enlarge Person
+ESP
+Etherealness
+Evocation: {Spell:evocation}
+Extra Healing
+Fiery Burning
+Fire Breath
+Fire Resistance
+Fly
+Flying
+Fox's Cunning
+Fumbling
+Gaseous Form
+Glibness
+Good Hope
+Greater Magic Fang 
+Growth
+Haste
+Healing
+Health
+Heroism
+Hide from Animals
+Hide from Undead
+Illusion: {Spell:illusion}
+Impact
+Invisibility
+Invulnerability
+Jump
+Jumping
+Lesser Restoration 
+Levitate
+Levitation
+Longevity
+Love
+Madness ({neurosis})
+Mage Armor
+Magic Circle against Chaos
+Magic Circle against Evil
+Magic Circle against Good
+Magic Circle against Law
+Magic Fang
+Misdirection
+Neutralize Poison
+Nondetection
+Owl's Wisdom
+Persuasiveness
+Plant Control
 Poison ({poison})
-Potion of Aid
-Potion of Alteration: {Spell:Alteration}
-Potion of Animal Control ({Order})
-Potion of Barkskin
-Potion of Bear's Endurance
-Potion of Blur
-Potion of Bull's Strength
-Potion of Cat's Grace
-Potion of Clairaudience
-Potion of Clairvoyance
-Potion of Climbing
-Potion of Cure Light Wounds
-Potion of Cure Moderate Wounds
-Potion of Cure Serious Wounds
-Potion of Darkvision
-Potion of Delay Poison
-Potion of Delusion ({:TYPE})
-Potion of Diminution
-Potion of Displacement
-Potion of Divination: {Spell:Divination}
-Potion of ESP
-Potion of Eagle's Splendor
-Potion of Empathy: {Spell:Empathic}
-Potion of Endure Elements
-Potion of Enlarge Person
-Potion of Extra Healing
-Potion of Fire Breath
-Potion of Fire Resistance
-Potion of Fly
-Potion of Flying
-Potion of Fox's Cunning
-Potion of Gaseous Form
-Potion of Good Hope
-Potion of Greater Magic Fang 
-Potion of Growth
-Potion of Haste
-Potion of Healing
-Potion of Heroism
-Potion of Hide from Animals
-Potion of Hide from Undead
-Potion of Invisibility
-Potion of Invulnerability
-Potion of Jump
-Potion of Jumping
-Potion of Lesser Restoration 
-Potion of Levitate
-Potion of Levitation
-Potion of Longevity
-Potion of Mage Armor
-Potion of Magic Circle against Chaos
-Potion of Magic Circle against Evil
-Potion of Magic Circle against Good
-Potion of Magic Circle against Law
-Potion of Magic Fang
-Potion of Misdirection
-Potion of Neutralize Poison
-Potion of Nondetection
-Potion of Owl's Wisdom
-Potion of Plant Control
-Potion of Polymorph Self
-Potion of Protection from Arrows
-Potion of Protection from Chaos
-Potion of Protection from Energy: {Element:4E}
-Potion of Protection from Evil
-Potion of Protection from Good
-Potion of Protection from Law
-Potion of Rage
-Potion of Rainbow Hues
-Potion of Reduce Person
-Potion of Remove Blindness/Deafness
-Potion of Remove Curse
-Potion of Remove Disease
-Potion of Remove Fear
-Potion of Remove Paralysis
-Potion of Resist Energy: {Element:4E}
-Potion of Speed
-Potion of Super-heroism
-Potion of Sweet Water
-Potion of Treasure Finding
-Potion of Undead Control ({Undead})
-Potion of Ventriloquism
-Potion of Vitality
-Potion of Water Breathing
-Potion of {Eating Fungi:Mushroom}
-Potion of {Spell:Abjuration}
-Potion of {Spell:Divination}
-Potion of {Spell:Empathic}
-Potion of {Enchanted Item:Potion}
-Potion of {Humanoid} control
-Potion of {Spell:Hypnotic}
-Potion of {Spell:Necromantic}
-Potion of {Spell:Spiritual}
-Potion of {TSR Dragon} Dragon Control
-Potion of {TSR Giant} Giant Control
-Potion of {TSR Giant} Giant Strength
-Potion of {Spell:Transference}
+Polymorph Self
+Protection from Arrows
+Protection from Chaos
+Protection from Energy: {Element:4E}
+Protection from Evil
+Protection from Good
+Protection from Law
+Rage
+Rainbow Hues
+Reduce Person
+Remove Blindness/Deafness
+Remove Curse
+Remove Disease
+Remove Fear
+Remove Paralysis
+Resist Energy: {Element:4E}
+Slipperiness
+Speed
+Stammering and Stuttering
+Super-heroism
+Sweet Water
+Timelessness
+Treasure Finding
+Undead Control ({Undead})
+Ventriloquism
+Vitality
+Water Breathing
+Youth
 {d12 potion}
+{Eating Fungi:Mushroom}
+{Enchanted Item:Potion}
+{Humanoid} control
+{Spell:Abjuration}
+{Spell:Divination}
+{Spell:Empathic}
+{Spell:Hypnotic}
+{Spell:Necromantic}
+{Spell:Spiritual}
+{Spell:Transference}
+{TSR Dragon} Dragon Control
+{TSR Giant} Giant Control
+{TSR Giant} Giant Strength
