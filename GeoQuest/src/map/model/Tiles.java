@@ -13,11 +13,11 @@ public class Tiles extends HashMap<String, Tile>
    {
       return new Tiles();
    }
-   
+
    private Tiles()
    {
    }
-   
+
    @Override
    public Tile get(final Object tileName)
    {
@@ -28,10 +28,10 @@ public class Tiles extends HashMap<String, Tile>
          if (tile == null)
          {
             String fullPath = MapMaker.IMAGE_ROOT + File.separator + tileName;
-            if (!new File (fullPath).exists())
-               System.err.println ("Missing tile image: " + fullPath); // TODO use default "missing" image?
-            tile = new Tile (tileName.toString());
-            put(tileName.toString(),  tile); // cache it
+            if (!new File(fullPath).exists())
+               System.err.println("Missing tile image: " + fullPath); // TODO use default "missing" image?
+            tile = new Tile(tileName.toString());
+            put(tileName.toString(), tile); // cache it
          }
       }
       return tile;

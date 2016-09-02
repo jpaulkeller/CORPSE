@@ -35,6 +35,7 @@ import utils.PrintUtil;
 // better tool icons
 // custom lines: styles/fills, width, randomness, grid-alignment
 // text!
+// properties - scale, grid?
 
 // tile sources:
 /*
@@ -58,7 +59,7 @@ https://app.box.com/shared/ljb15vae1b (Dundjinni)
 
 public class MapMaker implements Observer
 {
-   public static final String IMAGE_ROOT = "D:/pkgs/workspace/personal/geoquest/icons";
+   public static final String IMAGE_ROOT = "G:/pkgs/workspace/GeoQuest/icons";
    
    private Map map;
    private JFrame frame;
@@ -166,8 +167,9 @@ public class MapMaker implements Observer
    {
       if (map.needsSave())
          saveAs(); // offer to save
-      int cellsPerMap = Scale.GRID_COUNT * Scale.CELLS_PER_GRID;
-      map.create (cellsPerMap, cellsPerMap);
+      // int cellsPerMap = Scale.GRID_COUNT * Scale.CELLS_PER_GRID;
+      // map.create (cellsPerMap, cellsPerMap);
+      map.create (map.getRowCount(), map.getColumnCount());
    }
    
    public void load()
@@ -175,6 +177,9 @@ public class MapMaker implements Observer
       File file = menus.getFile ("Open");
       if (file != null && file.exists())
       {
+         menus.reset();
+         map.getMapPanel().setScale(Scale.Full);
+         
          map.load (file);
          map.backup (MapModel.BACKUP_0);
          frame.setTitle (FileUtils.getNameWithoutSuffix (file));

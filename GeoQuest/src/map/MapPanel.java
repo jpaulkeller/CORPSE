@@ -30,7 +30,7 @@ public class MapPanel extends JPanel implements Observer
    private static final long serialVersionUID = 1L;
 
    private static Stroke pathPoint = getStroke(3);
-   private static Component observer = null; // TBD
+   private static Component observer = null;
 
    private MapModel model;
    private Scale scale;
@@ -102,7 +102,7 @@ public class MapPanel extends JPanel implements Observer
    {
       return model.getRowCount() * scale.getCellSize();
    }
-   
+
    public int getLineWidth()
    {
       return outerWidth;
@@ -241,7 +241,7 @@ public class MapPanel extends JPanel implements Observer
    }
 
    private final Random random = new Random();
-   
+
    private void paintTile(final Graphics2D g, final Tile tile, final int row, final int col, final int depth)
    {
       int size = scale.getCellSize();
@@ -267,9 +267,9 @@ public class MapPanel extends JPanel implements Observer
                int maxOffset = size / 2;
                int half = maxOffset / 2;
                random.setSeed((row + 1) * (col + 1)); // use a seed which is constant for the icon
-               random.nextFloat(); // skip the first one, it's not very random 
-               dx1 += Math.round(random.nextFloat() * maxOffset - half); 
-               dy1 += Math.round(random.nextFloat() * maxOffset - half); 
+               random.nextFloat(); // skip the first one, it's not very random
+               dx1 += Math.round(random.nextFloat() * maxOffset - half);
+               dy1 += Math.round(random.nextFloat() * maxOffset - half);
             }
             int dx2 = dx1 + size;
             int dy2 = dy1 + size;
@@ -280,7 +280,7 @@ public class MapPanel extends JPanel implements Observer
 
    // blend 2 terrain tiles so there's a smooth transition
    // https://ryzomcore.atlassian.net/wiki/display/RC/Landscape+Texture+Constraints
-   
+
    public static BufferedImage blend(final BufferedImage srcBuf, final int size)
    {
       int[] srcRGB = srcBuf.getRGB(0, 0, size, size, null, 0, size);
@@ -303,10 +303,10 @@ public class MapPanel extends JPanel implements Observer
       Stroke oldStroke = g.getStroke();
       Composite oldComp = g.getComposite();
       // Graphics2D g2d = (Graphics2D) g.create(); // temporary copy
-      g.setComposite (AlphaComposite.getInstance (AlphaComposite.SRC_OVER, 0.75f)); // translucent
+      g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.75f)); // translucent
       model.getStreams().paintLines(g, scale, anchorPt, cursorPt, mode == Mode.Stream);
       model.getPaths().paintLines(g, scale, anchorPt, cursorPt, mode == Mode.Path);
-      g.setComposite (oldComp);
+      g.setComposite(oldComp);
       g.setStroke(oldStroke);
       // g2d.dispose();
    }

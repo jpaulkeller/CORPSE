@@ -24,97 +24,97 @@ public class PaletteTile extends JButton
    private Tile tile;
    private Map<String, Object> properties; // used for the tool-tip table and refining
 
-   public PaletteTile (final DynamicPalette palette, final String relativePath)
+   public PaletteTile(final DynamicPalette palette, final String relativePath)
    {
-      properties = new LinkedHashMap<String, Object>();
-      putFile (relativePath);
-      
+      properties = new LinkedHashMap<>();
+      putFile(relativePath);
+
       this.tile = tiles.get(relativePath);
-      ImageIcon icon = new ImageIcon (tile.getImage(DynamicPalette.getIconSize()));
-      setIcon (icon);
-      
-      setBackground (Color.white);
-      setMargin (new Insets (0, 0, 0, 0));
+      ImageIcon icon = new ImageIcon(tile.getImage(DynamicPalette.getIconSize()));
+      setIcon(icon);
+
+      setBackground(Color.white);
+      setMargin(new Insets(0, 0, 0, 0));
       if (palette != null)
-         addActionListener (palette.getButtonListener());
-      
+         addActionListener(palette.getButtonListener());
+
       // enable lazy-loaded tool-tips for this component
       this.palette = palette;
-      ToolTipManager.sharedInstance().registerComponent (this);
+      ToolTipManager.sharedInstance().registerComponent(this);
    }
-   
+
    public Tile getTile()
    {
       return tile;
    }
-   
-   public void putFile (final String file)
+
+   public void putFile(final String file)
    {
-      put ("FILE", file);
+      put("FILE", file);
    }
-   
+
    public String getFile()
    {
-      return (String) get ("FILE");
+      return (String) get("FILE");
    }
-   
-   public void put (final String key, final Object value)
+
+   public void put(final String key, final Object value)
    {
-      properties.put (key, value);
+      properties.put(key, value);
    }
-   
-   public Object get (final String key)
+
+   public Object get(final String key)
    {
-      return properties.get (key);      
+      return properties.get(key);
    }
-   
+
    public Map<String, Object> getProperties()
    {
       return properties;
    }
-   
-   public boolean matches (final Pattern pattern)
+
+   public boolean matches(final Pattern pattern)
    {
       for (Object value : properties.values())
-         if (value instanceof String && pattern.matcher ((String) value).find())
+         if (value instanceof String && pattern.matcher((String) value).find())
             return true;
       return false;
    }
-   
+
    @Override
    public String getToolTipText()
    {
       StringBuilder sb = new StringBuilder();
-      sb.append ("<html>\n");
-      sb.append ("<table border=1 cellspacing=1 width=400>\n");
-      
+      sb.append("<html>\n");
+      sb.append("<table border=1 cellspacing=1 width=400>\n");
+
       for (Entry<String, Object> entry : properties.entrySet())
-         if (entry.getValue() instanceof String && !entry.getValue().equals (""))
+         if (entry.getValue() instanceof String && !entry.getValue().equals(""))
          {
-            sb.append ("<tr>");
-            sb.append ("<td>" + entry.getKey());
-            sb.append ("<td>" + hilightPattern ((String) entry.getValue()));
-            sb.append ("</tr>\n");
+            sb.append("<tr>");
+            sb.append("<td>" + entry.getKey());
+            sb.append("<td>" + hilightPattern((String) entry.getValue()));
+            sb.append("</tr>\n");
          }
-      sb.append ("</table>\n");
-      sb.append ("</html>");
-      
+      sb.append("</table>\n");
+      sb.append("</html>");
+
       return sb.toString();
    }
-   
+
    // highlight the matching pattern(s)
-   private String hilightPattern (final String target)
+   private String hilightPattern(final String target)
    {
       Pattern pattern = palette.getHighlightPattern();
       if (pattern != null)
       {
-         Matcher m = pattern.matcher (target);
+         Matcher m = pattern.matcher(target);
          String replacement = "<b style=\"background-color:yellow\">$0</b>";
-         return m.replaceAll (replacement);
+         return m.replaceAll(replacement);
       }
       return target;
    }
-   
+
    @Override
    public String toString()
    {

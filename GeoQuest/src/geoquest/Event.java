@@ -18,7 +18,7 @@ public class Event implements Card, Comparable<Event>
    
    private static final Pattern SPECIAL_EQUIPMENT = Pattern.compile ("\\[(.+)\\]");
 
-   static final Map<String, Event> EVENTS = new TreeMap<String, Event>();
+   static final Map<String, Event> EVENTS = new TreeMap<>();
    static { populate(); }
 
    private String name;
@@ -27,8 +27,8 @@ public class Event implements Card, Comparable<Event>
    private Type type;
    
    // ignore event if you have any of these   
-   private List<String> equipment = new ArrayList<String>();
-   private List<String> specialEquipment = new ArrayList<String>(); // these require special text
+   private List<String> equipment = new ArrayList<>();
+   private List<String> specialEquipment = new ArrayList<>(); // these require special text
 
    public Event (final String name, final Type type,
                  final int points, final String effect,
@@ -72,9 +72,9 @@ public class Event implements Card, Comparable<Event>
          if (text.length() > 0)
             text.append ("  ");
          if (points > 0)
-            text.append ("You gain " + points + " point");
+            text.append ("Gain " + points + " point");
          else if (points < 0)
-            text.append ("You lose " + (-points) + " point");
+            text.append ("Lose " + (-points) + " point");
          if (points > 1 || points < -1)
             text.append ("s");
          text.append (".");
@@ -125,7 +125,7 @@ public class Event implements Card, Comparable<Event>
    
    public List<String> getEquipment()
    {
-      List<String> allEquipment = new ArrayList<String>(); 
+      List<String> allEquipment = new ArrayList<>(); 
       allEquipment.addAll (equipment);
       allEquipment.addAll (specialEquipment);
       return allEquipment;
@@ -161,28 +161,29 @@ public class Event implements Card, Comparable<Event>
    {
       add ("13-Year Cicadas", Type.Now, 0, "All players get -1 on all Search rolls in Forest tiles for the next 2 rounds.", null);
       add ("Ancient Ruins", Type.Std, 1, "You discover an artifact.  Draw 1 Equipment card.", null);
-      add ("Archive Cache", Type.Now, -2, "Choose any cache (not on the same tile as a player's token), and remove it from the board.", null, "Repair Kit");
-      add ("Bad Coordinates", Type.Std, 0, "End your turn.", null, "Cell Phone", "PDA");
+      add ("Angry Bees", Type.Std, 0, "You accidentally disturb a hive of bees; end your turn. The player on your right moves your token 2 tiles in any direction.", "Killer Bees");
+      add ("Archive Cache", Type.Now, -2, "Remove any unoccupied cache from the board.", null, "Repair Kit");
+      add ("Bad Coordinates", Type.Std, 0, "End your turn.", null, "Cell Phone");
       add ("Bad Weather", Type.Std, 0, "End your turn.", null, "Emergency Radio", "Waterproof Jacket");
       add ("Barbed Wire", Type.Std, 0, "-2 to your roll.", null, "Gloves", "Utility Tool");
       add ("Bear Encounter", Type.Std, 0, "End your turn. The player on your right moves your token 1 tile in any direction.", null,  "Ol' Blue", "Whistle");
       add ("Blisters", Type.Std, 0, "You may move at most 2 tiles (per turn) until you skip a turn.", null, "Hiking Boots", "First-aid Kit");
       add ("Bomb Squad", Type.Std, 0, "Remove the cache closest to your token from the board.  Ignore caches with player tokens in the same tile.", null);
       add ("Bragging Rights", Type.Std, 0, "Gain 1 point for every FTF coin you have.  Lose 2 points if you have none, unless" , null, "Geocoin");
+      add ("Broken Wrist", Type.Std, 0, " Jump your token to the Hospital.  End your turn, and skip your next turn.  Lose 4 points if you play this card on another player.", null, "[First-aid Kit]");
       add ("Bug Hog", Type.Std, 0, "Lose 1 point for each Travel Bug you have.", null, "Swag Bag");
       add ("Bug Swap", Type.Std, 0, "Trade travel bugs with any other player.  You both gain 1 point.  If you have none, you may draw one first.", null);
-      add ("Broken Wrist", Type.Std, 0, " Jump your token to the Hospital.  End your turn, and skip your next turn.  Lose 4 points if you play this card on another player.", null, "[First-aid Kit]");
       add ("Bushwhacked", Type.Std, 0, "If you are not on a path or Urban tile, lose 1 point and get -2 on your roll.", null, "Ol' Blue", "Trail Guide");
       add ("Cache Maintenance", Type.Std, 0, "The cache nearest to you needed maintenance.  The player on your right moves the cache 1 tile in any direction.", null);
       add ("Cache Pirates", Type.Now, 0, "Remove the cache farthest from your token from the board.", null);
       add ("Call from the Boss", Type.Std, 0, "End your turn and skip the next one.  Then draw one Equipment card.", null, "Laptop");
-      add ("Careless Cacher", Type.Std, -2, "You failed to properly re-hide the last cache you found.  All Search rolls for it get +1 (until it's found).", null, "Mirror");
+      add ("Campsite Confusion", Type.Now, 0, "All players give one Equipment card to the player on their left.", null);
+      add ("Careless Cacher", Type.Std, -1, "You didn't re-hide your last cache well.  All Search rolls for it get +1.", null, "Mirror");
       add ("Caught in the Rain", Type.Std, 0, "Discard any one piece of equipment.", null, "Waterproof Jacket", "Emergency Radio");
       add ("Creek Crossing", Type.Std, 0, "Oops! You slip crossing a small creek. End your turn.", null, "Walking Stick", "Hiking Staff");
       add ("Dead Batteries", Type.Std, 0, "End your turn.  You may discard any Equipment card instead.", "Batteries", "Extra Batteries");
       add ("Dollar Store", Type.Std, 0, "If you're within 3 tiles of an Urban tile, end your turn.", null, "Swag Bag");
       add ("Drought", Type.Now, 0, "Streams only cost 1 movement point to cross (for the next 2 rounds).", null);
-      add ("Early Frost", Type.Std, 0, "End your turn.", null, "Coat", "Gloves");
       add ("Equipment Rental", Type.Std, 0, "Select any equipment card from the deck.  You may keeps this equipment until you roll a <em class=dnf>DNF</em>.", null);
       add ("Eureka!", Type.Discard, 0, "Keep this card.  You may discard it to solve any Puzzle Cache, or make a successful Search roll.", null);
       add ("Feed The Trolls", Type.Std, 0, "You stop to read the forums; end your turn.", null, "Laptop");
@@ -193,21 +194,22 @@ public class Event implements Card, Comparable<Event>
       add ("Ground Zero", Type.Std, 0, "You may jump your token to the nearest cache location.  If you do, this counts as your turn.", null);
       add ("Happy Birthday!", Type.Std, 0, "Draw 1 Equipment card.", null);
       add ("Heat Stroke", Type.Std, 0, "-2 to your roll.", null, "Hydration Pack", "Bandana", "Hat", "Water Bottle");
+      add ("Heavy Rain", Type.Now, 0, "Streams cost 4 movement points to cross (for the next 3 rounds).", null);
       add ("Helpful Hint", Type.Discard, 0, "Keep this card.  You may discard it to get +2 on your roll.", null);
       add ("Hidden Path", Type.Std, 0, "You find a hidden path.  If you were moving, you get +3 on your Move roll.  If you were searching, you may take another turn.", null);
       add ("It's All About the Numbers!", Type.Std, 0, "Jump to the nearest level 1 cache you have not yet found.  End your turn unless", "Numbers", "Mountain Bike", "Yellow Jeep");
-      add ("It's Not About the Numbers!", Type.Std, 0, "You gain 1 point for each Multi-cache or Difficulty 5 cache you have found.  You lose 2 points if you have found none, unless", "Trophy", "Binoculars", "Rope");
+      add ("It's Not About the Numbers!", Type.Std, 0, "Gain 1 point for each Multi-cache or Difficulty 5 cache you have found.  If none, lose 2 points unless", "Trophy", "Binoculars", "Rope");
       add ("Ivory-billed Woodpecker", Type.Std, 0, "You spot a very rare bird.  Gain 2 points (4 if you have the <em class=equipment>Camera</em>).", null);
       add ("Leave No Trace", Type.Std, 2, "You carefully avoided the fragile flora.", null);
       add ("Litterbug", Type.Std, -4, "You left some garbage in the woods.", null, "CITO Bag");
-      add ("Lost!", Type.Std, 0, "The player on your right moves your token in any direction the number tiles equal to your roll.", "Lost", "Map", "Whistle");
-      add ("Lost Travel Bug", Type.Std, 0, "Discard a Travel Bug.  You lose 3 points.  Ignore this card if you don't have a Travel Bug.", null, "Belt Pack");
       add ("Lost and Found", Type.Std, 2, "Draw 1 Equipment card and give it to any other player.", null);
+      add ("Lost Travel Bug", Type.Std, 0, "Discard a Travel Bug.  Lose 3 points.  Ignore this card if you don't have a Travel Bug.", null, "Belt Pack");
+      add ("Lost!", Type.Std, 0, "The player on your right moves your token in any direction the number tiles equal to your roll.", "Lost", "Compass", "Map", "Whistle");
       add ("May I Borrow That?", Type.Std, -1, "Take any Equipment card from any player that has more points than you.", "Borrow");
       add ("Meet and Greet", Type.Now, 0, "Roll a random location.  Any player may jump to that tile.  All players who do receive 2 points.  Shuffle this card back into the deck.", "Event Cache");
       add ("Meet the Muggles", Type.Std, 2, "You stop to explain geocaching.  End your turn unless", null, "CITO Bag", "Safari Vest");
       add ("Missed Anniversary", Type.Std, -1, "Skip your next turn.  Discard any Equipment card.", null);
-      add ("Mosquitoes", Type.Std, 0, "-1 to your roll; -2 if you are in a Forest tile; end your turn if you are in a Swamp tile.", null, "Insect Repellent");
+      add ("Mosquitoes", Type.Std, 0, "-1 to your roll; -2 if you are in a Forest tile; end your turn if you are in a Swamp tile.", null, "Bandana", "Insect Repellent");
       add ("Mud Slide", Type.Std, 0, "End your turn.  Discard one of your Equipment cards unless", null, "Survival Strap");
       add ("Muggled!", Type.Std, 0, "The nearest level 1 or 2 Traditional cache has been emptied.  Remove any Travel Bugs it has.  It may still be found, but finders don't get to draw Equipment cards.", null);
       add ("Night Caching", Type.Std, 0, "All players not on an Urban tile skip their next turn.", null, "Flashlight", "Head Lamp");
@@ -215,17 +217,18 @@ public class Event implements Card, Comparable<Event>
       add ("Park Closed", Type.Std, 0, "End your turn.  Does not affect <em class=cacher>Ranger&nbsp;Rachel</em>.", null);
       add ("Parking Ticket", Type.Std, -1, "Discard an Equipment card.", null, "Lucky Charm");
       add ("Pawn Shop", Type.Std, 0, "Draw five Equipment cards.  You may trade any of your Equipment cards for any of those five.", null);
+      add ("Perfect Pair", Type.Std, 0, "You may discard one Equipment card to select any other one from the deck.", null);
       add ("Point of Interest", Type.Std, 0, "End your turn.  Gain 2 points (3 if you have the <em class=equipment>Binoculars</em> or <em class=equipment>Camera</em>).", "Scenic View", "[Binoculars]", "[Camera]");
       add ("Poison Ivy", Type.Std, 0, "After finding your next cache, jump your token to your starting tile, and skip a turn.", null, "Gloves", "Field Guide");
       add ("Private Property", Type.Std, -2, "Explain what you're up to; end your turn.", null, "CITO Bag", "Trail Guide");
       add ("Quench Your Thirst", Type.Std, 0, "End your turn.", null, "Hydration Pack", "Water Bottle");
+      add ("Recycle", Type.Std, 0, "Discard this card to draw any Event card from the discard pile.", null);
       add ("Repair a Cache", Type.Std, 3, "You stop to repair a cache.  End your turn unless", null, "Duct Tape", "Repair Kit", "Utility Tool");
       add ("Save a Turtle", Type.Std, 3, "You stop to help a turtle across the road.  End your turn unless", null, "Field Guide");
       add ("Shortcut", Type.Std, 0, "Instead of rolling, you may jump up to 6 tiles this turn (or on your next move if you were searching).", null);
-      add ("Signal Bounce", Type.Std, 0, "The player on your right moves your token 1 tile in any direction.", null, "External Antenna");
-      add ("Sneaky Search", Type.Discard, -1, "Keep this card.  When you find a cache, you may discard it.  Other cachers on that tile do not get credit for the find.", null);
+      add ("Signal Bounce", Type.Std, 0, "The player on your right moves your token 1 tile in any direction.", null, "Compass", "External Antenna");
       add ("Soggy Log", Type.Std, -1, "Skip a turn after finding your next cache (does not apply to multi-cache stages).", null, "Waterproof Jacket");
-      add ("Solar Flares", Type.Now, 0, "No one is able to get a good signal; -2 on all Search rolls this round.", null, "External Antenna");
+      add ("Solar Flares", Type.Now, 0, "-2 on all Search rolls this round.", null, "External Antenna");
       add ("Souvenir Day", Type.Std, 0, "Anyone finding a cache this round gains 1 extra point.", null);
       add ("Spider Webs", Type.Std, 0, "-1 to your roll.", null, "Walking Stick");
       add ("Steep Slope", Type.Std, 0, "If moving, end your turn.  If searching, -1 to your roll.", null, "Hiking Staff", "Rope");
@@ -233,34 +236,29 @@ public class Event implements Card, Comparable<Event>
       add ("Stop For Directions", Type.Std, 0, "End your turn, but get +3 to your next Move roll.", null, "Cell Phone", "Map");
       add ("Suspicious Activity", Type.Std, 0, "End your turn.  Roll the dice: if you roll a <em class=dnf>DNF</em>, jump to the Police tile.", "Police", "Backpack", "CITO Bag");
       add ("TFTC", Type.Std, 0, "You may move an additional 2 tiles this turn.  Lose 1 point unless", null, "Letterbox Stamp");
+      add ("There's the Path!", Type.Std, 0, "You stumble upon the path you should have taken. You get -2 on this roll, but +2 on your next roll.", "Path", "Trail Guide");
       add ("Thorns", Type.Std, 0, "-2 to your roll.", null, "Gloves", "Long Pants");
       add ("Ticks", Type.Std, 0, "Skip your next turn (you may finish this turn normally).", null, "Gaiters", "Insect Repellent", "Long Pants");
       add ("Trade Up", Type.Std, 2, "You helped restock an empty cache.  Discard an Equipment card unless", null, "Swag Bag");
       add ("Trash Out", Type.Std, 3, "You stop to pick up some trash.  End your turn unless", null, "CITO Bag");
+      add ("Twist and Shout", Type.Now, 0, "All event cards (in play or held) are moved to the next player (clockwise).", null);
       add ("Twisted Ankle", Type.Std, 0, "End your turn.  If you are not on a path, skip your next turn too.  Lose 2 points if you play this card on another player.", null, "FRS Radio", "[First-aid Kit]");
       add ("Upgrade", Type.Std, 1, "Draw an Equipment card, then give any one Equipment card you have to the player with the fewest equipment cards (other than yourself).", null);
+      add ("Wasp Nest", Type.Std, 0, "+1 if moving, or -1 if searching.", "Wasp", "Insect Repellent");
       add ("Waterfall", Type.Now, 0, "The next player to end their turn at a waterfall gets 3 points (4 if they have the <em class=equipment>Camera</em>).", null, "[Camera]");
       add ("Waypoint My Car?", Type.Std, 0, "The player on your right moves your token 2 tiles in any direction.", "Waypoint", "Map", "Trail Guide");
       add ("Well-stocked Cache", Type.Discard, 0, "Keep this card.  You may discard it when you find a cache, to choose from 3 extra Equipment cards.", null);
       add ("What Kind of Snake Is That?", Type.Std, 0, "End your turn.  Roll the dice.  If you roll a <em class=dnf>DNF</em>, jump your token to the Hospital.", "Snake", "Field Guide", "Hiking Staff");
       add ("Where's George?", Type.Std, -1, "You ran out of trinkets to trade.", "Wheres George", "Swag Bag");
-      add ("Winter is Coming", Type.Std, 0, "Sometimes it's just too cold for caching.  End your turn, and jump your token back to your starting location.", null, "Coat", "Emergency Radio");
+      add ("Winter is Coming", Type.Std, 0, "Sometimes it's just too cold for caching.  End your turn, and jump your token back to your starting location.", null, "Emergency Radio");
       add ("You're Fired!", Type.Std, 0, "Discard any Equipment card.  Take an extra turn after this one.", null);
-
-      // TODO: new cards, not yet printed
-      add ("Angry Bees", Type.Std, 0, "You accidentally disturb a hive of bees; end your turn. The player on your right moves your token 2 tiles in any direction.", "Killer Bees", "Bandana");
-      add ("Heavy Rain", Type.Now, 0, "Streams cost 4 movement points to cross (for the next 3 rounds).", null);
-      add ("Twist and Shout", Type.Now, 0, "All event cards (in play or held) are moved to the next player (clockwise).", null);
-      add ("Perfect Pair", Type.Std, 0, "You may discard one Equipment card to select any other one from the deck.", null);
-      add ("Campsite Confusion", Type.Now, 0, "All players give one Equipment card to the player on their left.", null);
-      add ("Wasp Nest", Type.Std, 0, "+1 if moving, or -1 if searching.", "Wasp", "Insect Repellent");
-      add ("Deja Vu", Type.Std, 0, "Discard this card to draw any Event card from the discard pile.", null);
       
-      // add ("It's a Dry Heat", EventType.Normal, 0, "-2 to your roll.", null, "Hydration Pack", "Canteen");
-      // add ("Weather Forecast", EventType.Discard, 0, "Keep this card.  You may discard it to avoid the effects of any weather event played on you.", null);
+      // add ("Early Frost", Type.Std, 0, "End your turn.", null, "Gloves");
       // add ("Hide a Cache", EventType.Normal, 2, "Add a new cache onto the board (in a random location).  Shuffle this card back into the deck.", null);
+      // add ("It's a Dry Heat", EventType.Normal, 0, "-2 to your roll.", null, "Hydration Pack", "Canteen");
       // add ("No Trespassing", EventType.Normal, -1, "The player on your right moves your token 1 tile in any direction.", null, "Trail Guide");
-      // There's the Path! (after finding a cache by bushwhacking in, you discover the path you should have taken. +2 to your next Move roll.
+      // add ("Sneaky Search", Type.Discard, -1, "Keep this card.  When you find a cache, you may discard it.  Other cachers on that tile do not get credit for the find.", null);
+      // add ("Weather Forecast", EventType.Discard, 0, "Keep this card.  You may discard it to avoid the effects of any weather event played on you.", null);
    }
    
    private static void add (final String name, final Type type,
@@ -309,35 +307,35 @@ public class Event implements Card, Comparable<Event>
    private static final int CardsPerPage = 9;
    private static final int CardsPerRow  = 3;
    private static final int Width    = 200;
-   private static final int PictureH = 100;
-   private static final int TextH    = 150;
+   private static final int PictureH =  95;
+   private static final int ImageH   =  90;
+   private static final int TextH    = 142;
 
    private static void printCard (final PrintWriter out, final Event event, final int i)
    {
-      if (i % CardsPerPage == 0) out.println ("<table cellpadding=15>\n");
+      if (i % CardsPerPage == 0) out.println ("<table>\n");
       if (i % CardsPerRow == 0) out.println ("<tr>");
 
       out.println ("<td valign=top>");
-      out.println ("  <table border=1>");
+      out.println ("  <table class=\"event\">");
       out.println ("    <tr><td align=center bgcolor=" + COLOR + "><b>" + event.name + "</b></td></tr>");
       
-      out.print    ("    <tr><td colspan=2 align=center height=" + PictureH + " width=" + Width + ">");
+      out.print    ("    <tr><td align=center height=" + PictureH + " width=" + Width + ">");
       if (event.image != null)
       {
          out.print    ("<img align=center src=\"" + event.image + "\"");
          if (event.image.startsWith ("Good"))
-            out.print (" style=\"border:5px solid yellow\"");
+            out.print (" style=\"border:2px solid yellow\"");
          else if (!event.image.startsWith ("Events"))
-            out.print (" style=\"border:5px solid red\"");
-         out.print    (" height=" + PictureH + ">");
+            out.print (" style=\"border:2px solid red\"");
+         out.print    (" height=" + ImageH + ">");
       }
       out.println  ("</td></tr>");
 
-      int h = event.type != Type.Std ? TextH - 25 : TextH;
-      out.println ("    <tr><td height=" + h + " width=" + Width + ">");
-      out.println ("        <table cellpadding=5>");
-      out.println ("          <tr><td align=center>" + event.text + "</td></tr>");
-      out.println ("        </table></td></tr>");
+      int h = event.type == Type.Std ? TextH : TextH - 25;
+      out.print ("    <tr><td align=center height=" + h + " width=" + Width + ">");
+      out.print (event.text);
+      out.println ("</td></tr>");
 
       if (event.type == Type.Now)
          out.println ("    <tr><td align=center bgcolor=salmon><b>Resolve Now</b></td></tr>");
@@ -348,16 +346,16 @@ public class Event implements Card, Comparable<Event>
 
       if (i % CardsPerRow == CardsPerRow - 1) out.println ("</tr>\n");
       if (i % CardsPerPage == CardsPerPage - 1)
-         out.println ("</table></td>\n<p><hr><p>\n");
+         out.println ("</table></td>\n<p><p>\n");
       
-      dump (event);
+      // dump (event);
    }
 
    private static void dump (final Event event)
    {
       StringBuilder sb = new StringBuilder();
       sb.append (event.name);
-      sb.append (",\"");
+      sb.append (", \"");
       sb.append (event.text);
       sb.append ("\"");
 
@@ -369,19 +367,21 @@ public class Event implements Card, Comparable<Event>
    
    private static void showEvents()
    {
+      /*
       for (Event event : EVENTS.values())
          System.out.println(event.name.replaceAll("&nbsp;", " "));
       System.out.println();
+      */
 
       for (Event event : EVENTS.values())
       {
          if (event.name == CardUtils.BLANK)
             continue;
-         System.out.print (StringUtils.pad (event.toString(), 30));
+         System.out.print (StringUtils.pad (event.toString().replaceAll("&nbsp;", " "), 30));
          for (String eq : event.equipment)
-            System.out.print (eq + ", ");
+            System.out.print (eq.replaceAll("&nbsp;", " ") + ", ");
          for (String eq : event.specialEquipment)
-            System.out.print (eq + ", ");
+            System.out.print (eq.replaceAll("&nbsp;", " ") + ", ");
          System.out.println();
       }
       System.out.println();
