@@ -57,7 +57,7 @@ public final class PointCoins
          label++;
       }
       
-      ImageTools.saveImageAsJpeg (path, image);
+      ImageTools.saveImage (path, image);
    }
 
    private void paintCoin (final Graphics2D g, final int x, final int y,

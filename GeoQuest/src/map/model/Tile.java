@@ -13,17 +13,17 @@ import utils.ImageTools;
 public class Tile
 {
    private String file;
-   private Map<Integer, Image> images = new HashMap<Integer, Image>();
-   
-   public Tile (final String relativePath)
+   private Map<Integer, Image> images = new HashMap<>();
+
+   public Tile(final String relativePath)
    {
       String fullPath = MapMaker.IMAGE_ROOT + File.separator + relativePath;
-      if (!new File (fullPath).exists())
-         System.err.println ("Missing tile image: " + fullPath);
-      
+      if (!new File(fullPath).exists())
+         System.err.println("Missing tile image: " + fullPath);
+
       file = relativePath;
    }
-   
+
    public String getFile()
    {
       return file;
@@ -35,14 +35,14 @@ public class Tile
       if (image == null)
       {
          String fullPath = MapMaker.IMAGE_ROOT + File.separator + file;
-         image = new ImageIcon (fullPath).getImage();
+         image = new ImageIcon(fullPath).getImage();
          if (image != null)
-            image = ImageTools.scaleImage (image, size, size, Image.SCALE_SMOOTH, null);
-         images.put(size,  image); // cache it
+            image = ImageTools.scaleImage(image, size, size, Image.SCALE_SMOOTH, null);
+         images.put(size, image); // cache it
       }
       return image;
    }
-   
+
    @Override
    public String toString()
    {
@@ -56,12 +56,12 @@ public class Tile
    }
 
    @Override
-   public boolean equals (final Object obj)
+   public boolean equals(final Object obj)
    {
       if (this == obj)
          return true;
       if (!(obj instanceof Tile))
          return false;
-      return file.equals (((Tile) obj).file);
+      return file.equals(((Tile) obj).file);
    }
 }

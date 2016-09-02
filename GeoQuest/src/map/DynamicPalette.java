@@ -34,15 +34,14 @@ import model.queue.Task;
 import utils.Utils;
 
 /**
- * The DynamicPalette class is a Visio-like GUI that provides a palette of
- * icons matching user-entered search terms.
+ * The DynamicPalette class is a Visio-like GUI that provides a palette of icons matching user-entered search terms.
  */
 public class DynamicPalette
 {
    public static final int MAX_ICONS = 200;
-   
+
    // private static final Icon SEARCH_ICON =
-   //    ComponentTools.loadImageIcon ("icons/buttons/Magnify.gif", null);
+   // ComponentTools.loadImageIcon ("icons/buttons/Magnify.gif", null);
 
    private String path;
    private JPanel panel;
@@ -52,18 +51,18 @@ public class DynamicPalette
    private JLabel countLabel;
    private JPanel iconPanel;
    private ActionListener buttonListener;
-   
+
    private ScheduleQueue queue;
    private Task finished;
-   
+
    private BlockingQueue<PaletteTile> iconQueue;
    private Thread scanner;
-   
+
    private int total;
-   private Set<String> urls = new HashSet<String>();
-   private Set<String> searches = new HashSet<String>();
+   private Set<String> urls = new HashSet<>();
+   private Set<String> searches = new HashSet<>();
    private Pattern highlightPattern;
-   
+
    public static int getIconSize()
    {
       return 48; // TODO make this dynamic
@@ -71,221 +70,191 @@ public class DynamicPalette
 
    public static int getMinIconsPerRow()
    {
-      if (getIconSize() <= 32) return 4;
-      else if (getIconSize() <= 64) return 3;
-      else return 2;
+      if (getIconSize() <= 32)
+         return 4;
+      else if (getIconSize() <= 64)
+         return 3;
+      else
+         return 2;
    }
-   
-   public DynamicPalette (final Map map, final String title, final String path, 
-                          final String searchTerm, final ActionListener buttonListener)
+
+   public DynamicPalette(final Map map, final String title, final String path, final String searchTerm,
+            final ActionListener buttonListener)
    {
       this.path = path;
       this.buttonListener = buttonListener;
-      
-      iconPanel = new JPanel (new GridLayout (0, getMinIconsPerRow()));
-      JPanel top = new JPanel (new BorderLayout());
-      top.add (iconPanel, BorderLayout.NORTH); // so icons don't stretch
-      JScrollPane scroll = new JScrollPane (top);
-      scroll.setHorizontalScrollBarPolicy
-         (ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-      scroll.getVerticalScrollBar().setUnitIncrement (Math.round((getIconSize() + 3) / 3f));
-      scroll.addComponentListener (new ResizeListener());
 
-      panel = new JPanel (new BorderLayout());
-      panel.setBorder (BorderFactory.createTitledBorder (title));
-      panel.setPreferredSize (new Dimension (50, 200));
+      iconPanel = new JPanel(new GridLayout(0, getMinIconsPerRow()));
+      JPanel top = new JPanel(new BorderLayout());
+      top.add(iconPanel, BorderLayout.NORTH); // so icons don't stretch
+      JScrollPane scroll = new JScrollPane(top);
+      scroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+      scroll.getVerticalScrollBar().setUnitIncrement(Math.round((getIconSize() + 3) / 3f));
+      scroll.addComponentListener(new ResizeListener());
+
+      panel = new JPanel(new BorderLayout());
+      panel.setBorder(BorderFactory.createTitledBorder(title));
+      panel.setPreferredSize(new Dimension(50, 200));
       if (searchTerm != null)
-         panel.add (makeSearchPanel(), BorderLayout.NORTH);
-      panel.add (scroll, BorderLayout.CENTER);
-      
-      iconQueue = new LinkedBlockingQueue<PaletteTile>();
+         panel.add(makeSearchPanel(), BorderLayout.NORTH);
+      panel.add(scroll, BorderLayout.CENTER);
+
+      iconQueue = new LinkedBlockingQueue<>();
       scanner = new PaletteScanner();
       scanner.start();
 
       // create one task that's called whenever a search if finished
       finished = new FinishedTask();
-      finished.setRequiresSwing (true);
-      finished.setPriority (Integer.MAX_VALUE);
+      finished.setRequiresSwing(true);
+      finished.setPriority(Integer.MAX_VALUE);
 
-      queue = new ScheduleQueue (500, 1000);
+      queue = new ScheduleQueue(500, 1000);
       queue.start();
 
       if (searchTerm != null)
       {
-         searchItem.setInitialValue (searchTerm);
-         spawnSearch (false);
+         searchItem.setInitialValue(searchTerm);
+         spawnSearch(false);
       }
       else
-         new IconInUse (DynamicPalette.this, map, path);
+         new IconInUse(DynamicPalette.this, map, path);
    }
-   
+
    private JPanel makeSearchPanel()
    {
       ActivationListener listener = new ActivationListener();
-      
-      /*
-      searchButton = new JButton (SEARCH_ICON);
-      searchButton.setToolTipText
-         ("Click to find matching symbols (right-click for more options)");
-      searchButton.setMargin (new Insets (0, 0, 0, 0));
-      searchButton.setFocusable (false);
-      searchButton.addActionListener (listener);
-      
-      PopupListener popupListener = new PopupListener();
-      popupMenu = getPopup (popupListener);
-      searchButton.addMouseListener (popupListener);
-      */
-      
-      searchItem = new TextItem (null, 15);
-      searchItem.getComponent().addKeyListener (listener);
 
-      countLabel = new JLabel ("");
-      countLabel.setToolTipText ("Number of matching symbols");
-      
-      JPanel searchPanel = new JPanel (new BorderLayout());
+      /*
+       * searchButton = new JButton (SEARCH_ICON); searchButton.setToolTipText (
+       * "Click to find matching symbols (right-click for more options)"); searchButton.setMargin (new Insets (0, 0, 0,
+       * 0)); searchButton.setFocusable (false); searchButton.addActionListener (listener);
+       * 
+       * PopupListener popupListener = new PopupListener(); popupMenu = getPopup (popupListener);
+       * searchButton.addMouseListener (popupListener);
+       */
+
+      searchItem = new TextItem(null, 15);
+      searchItem.getComponent().addKeyListener(listener);
+
+      countLabel = new JLabel("");
+      countLabel.setToolTipText("Number of matching symbols");
+
+      JPanel searchPanel = new JPanel(new BorderLayout());
       // searchPanel.add (searchButton, BorderLayout.WEST);
-      searchPanel.add (new JLabel ("Filter"), BorderLayout.WEST);
-      searchPanel.add (searchItem.getComponent(), BorderLayout.CENTER);
-      searchPanel.add (countLabel, BorderLayout.EAST);
+      searchPanel.add(new JLabel("Filter"), BorderLayout.WEST);
+      searchPanel.add(searchItem.getComponent(), BorderLayout.CENTER);
+      searchPanel.add(countLabel, BorderLayout.EAST);
       return searchPanel;
    }
-   
+
    public JPanel getPanel()
    {
       return panel;
    }
-   
+
    public Set<String> getURLs()
    {
       return urls;
    }
-   
-   public void queueTile (final PaletteTile tile)
+
+   public void queueTile(final PaletteTile tile)
    {
-      iconQueue.add (tile);
+      iconQueue.add(tile);
    }
-   
+
    public ActionListener getButtonListener()
    {
       return buttonListener;
    }
-   
+
    // set the number of columns based on current size of the scroll panel
    class ResizeListener extends ComponentAdapter
    {
       @Override
-      public void componentResized (final ComponentEvent e)
+      public void componentResized(final ComponentEvent e)
       {
          JScrollPane scroll = (JScrollPane) e.getSource();
          Dimension dim = scroll.getSize();
          int width = dim.width - scroll.getVerticalScrollBar().getWidth();
-         int columns = Math.max (getMinIconsPerRow(), (width / (getIconSize() + 2)) - 1);
-         iconPanel.setLayout (new GridLayout (0, columns));
+         int columns = Math.max(getMinIconsPerRow(), (width / (getIconSize() + 2)) - 1);
+         iconPanel.setLayout(new GridLayout(0, columns));
       }
    }
 
    class ActivationListener extends KeyAdapter implements ActionListener
    {
       @Override
-      public void keyReleased (final KeyEvent e)
+      public void keyReleased(final KeyEvent e)
       {
          int keyCode = e.getKeyCode();
          if (keyCode == KeyEvent.VK_ENTER)
          {
             clearMatches();
-            spawnSearch (false);
+            spawnSearch(false);
          }
       }
-      
+
       @Override
-      public void actionPerformed (final ActionEvent e)
+      public void actionPerformed(final ActionEvent e)
       {
          clearMatches();
-         spawnSearch (false);
+         spawnSearch(false);
       }
    }
 
    /*
-   private JPopupMenu getPopup (ActionListener listener)
-   {
-      JPopupMenu menu = new JPopupMenu ("Search Modes");
-         
-      JMenuItem mi = new JMenuItem ("Append");
-      mi.setToolTipText ("Append matching symbols into the current palette");
-      mi.addActionListener (listener);
-      menu.add (mi);
-         
-      mi = new JMenuItem ("Refine");
-      mi.setToolTipText 
-         ("Find symbols matching ALL of the search terms (\"AND\" search)");
-      mi.addActionListener (listener);
-      menu.add (mi);
-      
-      mi = new JMenuItem ("Replace");
-      mi.setToolTipText
-         ("Find symbols matching ANY of the search terms (\"OR\" search)");
-      mi.addActionListener (listener);
-      menu.add (mi);
-      
-      menu.addSeparator();
-      
-      mi = new JMenuItem ("Clear");
-      mi.setToolTipText ("Empty the current palette");
-      mi.addActionListener (listener);
-      menu.add (mi);
-      
-      return menu;
-   }
-   
-   class PopupListener extends MouseAdapter implements ActionListener
-   {
-      @Override public void mousePressed  (MouseEvent e) { maybeShowPopup(e); }
-      @Override public void mouseReleased (MouseEvent e) { maybeShowPopup(e); }
+    * private JPopupMenu getPopup (ActionListener listener) { JPopupMenu menu = new JPopupMenu ("Search Modes");
+    * 
+    * JMenuItem mi = new JMenuItem ("Append"); mi.setToolTipText ("Append matching symbols into the current palette");
+    * mi.addActionListener (listener); menu.add (mi);
+    * 
+    * mi = new JMenuItem ("Refine"); mi.setToolTipText ("Find symbols matching ALL of the search terms (\"AND\" search)"
+    * ); mi.addActionListener (listener); menu.add (mi);
+    * 
+    * mi = new JMenuItem ("Replace"); mi.setToolTipText ("Find symbols matching ANY of the search terms (\"OR\" search)"
+    * ); mi.addActionListener (listener); menu.add (mi);
+    * 
+    * menu.addSeparator();
+    * 
+    * mi = new JMenuItem ("Clear"); mi.setToolTipText ("Empty the current palette"); mi.addActionListener (listener);
+    * menu.add (mi);
+    * 
+    * return menu; }
+    * 
+    * class PopupListener extends MouseAdapter implements ActionListener {
+    * 
+    * @Override public void mousePressed (MouseEvent e) { maybeShowPopup(e); }
+    * 
+    * @Override public void mouseReleased (MouseEvent e) { maybeShowPopup(e); }
+    * 
+    * private void maybeShowPopup (MouseEvent e) { if (e.isPopupTrigger()) popupMenu.show (e.getComponent(), e.getX(),
+    * e.getY()); }
+    * 
+    * public void actionPerformed (ActionEvent e) { String cmd = e.getActionCommand(); if (cmd.equals ("Append"))
+    * spawnSearch (false); else if (cmd.equals ("Refine")) spawnSearch (true); else if (cmd.equals ("Replace")) {
+    * clearMatches(); spawnSearch (false); } else if (cmd.equals ("Clear")) clearMatches(); } }
+    */
 
-      private void maybeShowPopup (MouseEvent e)
-      {
-          if (e.isPopupTrigger())
-             popupMenu.show (e.getComponent(), e.getX(), e.getY());
-      }
-      
-      public void actionPerformed (ActionEvent e)
-      {
-         String cmd = e.getActionCommand();
-         if (cmd.equals ("Append"))
-            spawnSearch (false);
-         else if (cmd.equals ("Refine"))
-            spawnSearch (true);
-         else if (cmd.equals ("Replace"))
-         {
-            clearMatches();
-            spawnSearch (false);
-         }
-         else if (cmd.equals ("Clear"))
-            clearMatches();
-      }
-   }
-   */
-   
-   private void spawnSearch (final boolean refine)
+   private void spawnSearch(final boolean refine)
    {
-      searchItem.setEnabled (false);
-      
+      searchItem.setEnabled(false);
+
       String searchTerms = (String) searchItem.getValue();
-      if (searchTerms != null && !searchTerms.equals (""))
+      if (searchTerms != null && !searchTerms.equals(""))
       {
-         String[] terms = searchTerms.split ("[,\\s]+");
+         String[] terms = searchTerms.split("[,\\s]+");
          for (int term = 0; term < terms.length; term++)
          {
             boolean refineThisPass = refine && (term > 0 || !urls.isEmpty());
-            queue.add (new SearchTask (terms[term], refineThisPass));
+            queue.add(new SearchTask(terms[term], refineThisPass));
          }
       }
       else
-         queue.add (new SearchTask (null, false));
-      
-      queue.add (finished);
+         queue.add(new SearchTask(null, false));
+
+      queue.add(finished);
    }
-   
+
    Pattern getHighlightPattern()
    {
       if (highlightPattern == null)
@@ -294,11 +263,10 @@ public class DynamicPalette
          for (String term : searches)
          {
             if (sb.length() > 0)
-               sb.append ("|");
-            sb.append (Pattern.quote (term));
+               sb.append("|");
+            sb.append(Pattern.quote(term));
          }
-         highlightPattern = Pattern.compile
-            (sb.toString(), Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
+         highlightPattern = Pattern.compile(sb.toString(), Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
       }
       return highlightPattern;
    }
@@ -313,7 +281,7 @@ public class DynamicPalette
       panel.validate();
       panel.repaint();
    }
-   
+
    class SearchTask extends Task
    {
       private static final long serialVersionUID = 1;
@@ -322,64 +290,68 @@ public class DynamicPalette
       private boolean refine;
       private IconSource source;
 
-      SearchTask (final String searchTerm, final boolean refine)
+      SearchTask(final String searchTerm, final boolean refine)
       {
          if (searchTerm != null)
          {
             this.searchTermUpper = searchTerm.toUpperCase();
-            if (!searchTerm.equals (""))
+            if (!searchTerm.equals(""))
             {
-               searches.add (searchTerm);
+               searches.add(searchTerm);
                highlightPattern = null;
             }
          }
          this.refine = refine;
-         source = new IconSource (DynamicPalette.this, searchTermUpper);
+         source = new IconSource(DynamicPalette.this, searchTermUpper);
       }
 
-      @Override public String getID() { return searchTermUpper; }
-
-      @Override public void run()
+      @Override
+      public String getID()
       {
-         countLabel.setText ("Searching...");
+         return searchTermUpper;
+      }
+
+      @Override
+      public void run()
+      {
+         countLabel.setText("Searching...");
          panel.repaint();
-         
+
          // wait here until the previous search thread is done queuing
          while (!iconQueue.isEmpty())
-            Utils.sleep (100);
-         
+            Utils.sleep(100);
+
          if (refine)
          {
             if (iconPanel.getComponentCount() > 0) // if there are any left
                total = refineSearch();
          }
          else
-            total += source.searchFiles (path);
+            total += source.searchFiles(path);
       }
-      
+
       private int refineSearch()
       {
-         Pattern refinePattern = Pattern.compile
-            (searchTermUpper, Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
+         Pattern refinePattern = Pattern.compile(searchTermUpper, Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
 
          Component[] components = iconPanel.getComponents();
-         List<PaletteTile> icons = new ArrayList<PaletteTile>();
+         List<PaletteTile> icons = new ArrayList<>();
          for (Component pi : components)
-            icons.add ((PaletteTile) pi);
-            
+            icons.add((PaletteTile) pi);
+
          // if the icon doesn't match the new search pattern, remove it
          Iterator<PaletteTile> iter = icons.iterator();
          while (iter.hasNext())
          {
             PaletteTile pi = iter.next();
-            if (!pi.matches (refinePattern))
+            if (!pi.matches(refinePattern))
             {
-               iconPanel.remove (pi);
+               iconPanel.remove(pi);
                iter.remove();
                panel.repaint();
             }
          }
-         
+
          return iconPanel.getComponentCount(); // return the number left
       }
    }
@@ -388,28 +360,29 @@ public class DynamicPalette
    {
       private static final long serialVersionUID = 1;
 
-      @Override public void run()
+      @Override
+      public void run()
       {
          int count = iconPanel.getComponentCount();
-         updateCount (count);
-         searchItem.setEnabled (true);
+         updateCount(count);
+         searchItem.setEnabled(true);
       }
    }
 
    // The number of symbols (URLs) shown may be less than the total
    // found because of invalid data, or because there were too many (more
    // than MAX_ICONS).
-   private void updateCount (final int count)
+   private void updateCount(final int count)
    {
       if (total > count)
-         countLabel.setText (count + " of " + total);
+         countLabel.setText(count + " of " + total);
       else if (total > 0)
-         countLabel.setText ("" + total);
+         countLabel.setText("" + total);
       else
-         countLabel.setText ("No matches");
+         countLabel.setText("No matches");
       panel.repaint();
    }
-   
+
    // This thread is responsible for processing PaletteTile objects as they
    // are added to the iconQueue.
 
@@ -417,43 +390,46 @@ public class DynamicPalette
    {
       public PaletteScanner()
       {
-         setDaemon (true);
+         setDaemon(true);
       }
 
-      @Override public void run()
+      @Override
+      public void run()
       {
          // loop forever; blocking if the queue is empty
          try
          {
             while (true)
-               addIcon (iconQueue.take());
+               addIcon(iconQueue.take());
          }
-         catch (InterruptedException x) { }
+         catch (InterruptedException x)
+         {
+         }
       }
-      
-      private void addIcon (final PaletteTile icon)
+
+      private void addIcon(final PaletteTile icon)
       {
          // do the following on the GUI event-dispatching thread
-         SwingUtilities.invokeLater (new Runnable() 
+         SwingUtilities.invokeLater(new Runnable()
          {
             @Override
             public void run()
             {
-               iconPanel.add (icon);
+               iconPanel.add(icon);
                if (countLabel != null)
-                  countLabel.setText (iconPanel.getComponentCount() + "");
+                  countLabel.setText(iconPanel.getComponentCount() + "");
                panel.validate();
                panel.repaint();
             }
          });
       }
    }
-   
-   public static void main (final String[] args)
+
+   public static void main(final String[] args)
    {
       Map map = null; // TODO
-      DynamicPalette dp = new DynamicPalette (map, "Dynamic Palette", ".", null, null);
+      DynamicPalette dp = new DynamicPalette(map, "Dynamic Palette", ".", null, null);
       ComponentTools.setDefaults();
-      ComponentTools.open (dp.getPanel(), "Palette");
+      ComponentTools.open(dp.getPanel(), "Palette");
    }
 }
