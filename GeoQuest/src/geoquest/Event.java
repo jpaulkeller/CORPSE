@@ -1,14 +1,33 @@
 package geoquest;
 
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Stack;
+import java.util.StringTokenizer;
 import java.util.TreeMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
+import gui.ComponentTools;
 import str.StringUtils;
+import str.Token;
+import utils.ImageTools;
 
 public class Event implements Card, Comparable<Event>
 {
@@ -118,9 +137,14 @@ public class Event implements Card, Comparable<Event>
    }
    
    @Override
-   public String getText()
+   public String getText() // for HTML
    {
       return text.toString();
+   }
+   
+   public String getTextForImage()
+   {
+      return text.toString().replace("&nbsp;", " ");
    }
    
    public List<String> getEquipment()
@@ -166,7 +190,7 @@ public class Event implements Card, Comparable<Event>
       add ("Bad Coordinates", Type.Std, 0, "End your turn.", null, "Cell Phone");
       add ("Bad Weather", Type.Std, 0, "End your turn.", null, "Emergency Radio", "Waterproof Jacket");
       add ("Barbed Wire", Type.Std, 0, "-2 to your roll.", null, "Gloves", "Utility Tool");
-      add ("Bear Encounter", Type.Std, 0, "End your turn. The player on your right moves your token 1 tile in any direction.", null,  "Ol' Blue", "Whistle");
+      add ("Bear Encounter", Type.Std, 0, "End your turn. The player on your right moves your token 1 tile in any direction.", null,  "Whistle", "Ol' Blue");
       add ("Blisters", Type.Std, 0, "You may move at most 2 tiles (per turn) until you skip a turn.", null, "Hiking Boots", "First-aid Kit");
       add ("Bomb Squad", Type.Std, 0, "Remove the cache closest to your token from the board.  Ignore caches with player tokens in the same tile.", null);
       add ("Bragging Rights", Type.Std, 0, "Gain 1 point for every FTF coin you have.  Lose 2 points if you have none, unless" , null, "Geocoin");
@@ -174,7 +198,6 @@ public class Event implements Card, Comparable<Event>
       add ("Bug Hog", Type.Std, 0, "Lose 1 point for each Travel Bug you have.", null, "Swag Bag");
       add ("Bug Swap", Type.Std, 0, "Trade travel bugs with any other player.  You both gain 1 point.  If you have none, you may draw one first.", null);
       add ("Bushwhacked", Type.Std, 0, "If you are not on a path or Urban tile, lose 1 point and get -2 on your roll.", null, "Ol' Blue", "Trail Guide");
-      add ("Cache Maintenance", Type.Std, 0, "The cache nearest to you needed maintenance.  The player on your right moves the cache 1 tile in any direction.", null);
       add ("Cache Pirates", Type.Now, 0, "Remove the cache farthest from your token from the board.", null);
       add ("Call from the Boss", Type.Std, 0, "End your turn and skip the next one.  Then draw one Equipment card.", null, "Laptop");
       add ("Campsite Confusion", Type.Now, 0, "All players give one Equipment card to the player on their left.", null);
@@ -183,11 +206,11 @@ public class Event implements Card, Comparable<Event>
       add ("Creek Crossing", Type.Std, 0, "Oops! You slip crossing a small creek. End your turn.", null, "Walking Stick", "Hiking Staff");
       add ("Dead Batteries", Type.Std, 0, "End your turn.  You may discard any Equipment card instead.", "Batteries", "Extra Batteries");
       add ("Dollar Store", Type.Std, 0, "If you're within 3 tiles of an Urban tile, end your turn.", null, "Swag Bag");
-      add ("Drought", Type.Now, 0, "Streams only cost 1 movement point to cross (for the next 2 rounds).", null);
-      add ("Equipment Rental", Type.Std, 0, "Select any equipment card from the deck.  You may keeps this equipment until you roll a <em class=dnf>DNF</em>.", null);
+      add ("Drought", Type.Now, 0, "Streams only cost 1 movement point to cross (for the next 3 rounds).", null);
+      add ("Equipment Rental", Type.Std, 0, "Select any equipment card from the deck.  You may keep this equipment until you roll a <em class=dnf>DNF</em>.", null);
       add ("Eureka!", Type.Discard, 0, "Keep this card.  You may discard it to solve any Puzzle Cache, or make a successful Search roll.", null);
       add ("Feed The Trolls", Type.Std, 0, "You stop to read the forums; end your turn.", null, "Laptop");
-      add ("Fire Ants", Type.Std, 0, "End your turn.  The player on your right moves your token 1 tile in any direction.", null, "Gorp", "Long Pants");
+      add ("Fire Ants", Type.Std, 0, "End your turn.  The player on your right moves your token 1 tile in any direction.", null, "GORP", "Long Pants");
       add ("Flash Flood", Type.Std, 0, "Remove the nearest cache that is next to a stream from the board.  End your turn.", null, "Waders");
       add ("Fox Hunt", Type.Std, 1, "You spot a red fox.  If you have <em class=equipment>Ol'&nbsp;Blue</em>, end your turn.", null);
       add ("Fresh Snow", Type.Now, 0, "-1 to all rolls this round.", "Snow");
@@ -197,8 +220,8 @@ public class Event implements Card, Comparable<Event>
       add ("Heavy Rain", Type.Now, 0, "Streams cost 4 movement points to cross (for the next 3 rounds).", null);
       add ("Helpful Hint", Type.Discard, 0, "Keep this card.  You may discard it to get +2 on your roll.", null);
       add ("Hidden Path", Type.Std, 0, "You find a hidden path.  If you were moving, you get +3 on your Move roll.  If you were searching, you may take another turn.", null);
-      add ("It's All About the Numbers!", Type.Std, 0, "Jump to the nearest level 1 cache you have not yet found.  End your turn unless", "Numbers", "Mountain Bike", "Yellow Jeep");
-      add ("It's Not About the Numbers!", Type.Std, 0, "Gain 1 point for each Multi-cache or Difficulty 5 cache you have found.  If none, lose 2 points unless", "Trophy", "Binoculars", "Rope");
+      add ("It's ALL About the Numbers!", Type.Std, 0, "Jump to the nearest level 1 cache you have not yet found.  End your turn unless", "Numbers", "Mountain Bike", "Yellow Jeep");
+      add ("It's NOT About the Numbers!", Type.Std, 0, "Gain 1 point for each Multi-cache or Difficulty 5 cache you have found.  If none, lose 2 points unless", "Trophy", "Binoculars", "Rope");
       add ("Ivory-billed Woodpecker", Type.Std, 0, "You spot a very rare bird.  Gain 2 points (4 if you have the <em class=equipment>Camera</em>).", null);
       add ("Leave No Trace", Type.Std, 2, "You carefully avoided the fragile flora.", null);
       add ("Litterbug", Type.Std, -4, "You left some garbage in the woods.", null, "CITO Bag");
@@ -217,7 +240,6 @@ public class Event implements Card, Comparable<Event>
       add ("Park Closed", Type.Std, 0, "End your turn.  Does not affect <em class=cacher>Ranger&nbsp;Rachel</em>.", null);
       add ("Parking Ticket", Type.Std, -1, "Discard an Equipment card.", null, "Lucky Charm");
       add ("Pawn Shop", Type.Std, 0, "Draw five Equipment cards.  You may trade any of your Equipment cards for any of those five.", null);
-      add ("Perfect Pair", Type.Std, 0, "You may discard one Equipment card to select any other one from the deck.", null);
       add ("Point of Interest", Type.Std, 0, "End your turn.  Gain 2 points (3 if you have the <em class=equipment>Binoculars</em> or <em class=equipment>Camera</em>).", "Scenic View", "[Binoculars]", "[Camera]");
       add ("Poison Ivy", Type.Std, 0, "After finding your next cache, jump your token to your starting tile, and skip a turn.", null, "Gloves", "Field Guide");
       add ("Private Property", Type.Std, -2, "Explain what you're up to; end your turn.", null, "CITO Bag", "Trail Guide");
@@ -241,7 +263,6 @@ public class Event implements Card, Comparable<Event>
       add ("Ticks", Type.Std, 0, "Skip your next turn (you may finish this turn normally).", null, "Gaiters", "Insect Repellent", "Long Pants");
       add ("Trade Up", Type.Std, 2, "You helped restock an empty cache.  Discard an Equipment card unless", null, "Swag Bag");
       add ("Trash Out", Type.Std, 3, "You stop to pick up some trash.  End your turn unless", null, "CITO Bag");
-      add ("Twist and Shout", Type.Now, 0, "All event cards (in play or held) are moved to the next player (clockwise).", null);
       add ("Twisted Ankle", Type.Std, 0, "End your turn.  If you are not on a path, skip your next turn too.  Lose 2 points if you play this card on another player.", null, "FRS Radio", "[First-aid Kit]");
       add ("Upgrade", Type.Std, 1, "Draw an Equipment card, then give any one Equipment card you have to the player with the fewest equipment cards (other than yourself).", null);
       add ("Wasp Nest", Type.Std, 0, "+1 if moving, or -1 if searching.", "Wasp", "Insect Repellent");
@@ -252,6 +273,10 @@ public class Event implements Card, Comparable<Event>
       add ("Where's George?", Type.Std, -1, "You ran out of trinkets to trade.", "Wheres George", "Swag Bag");
       add ("Winter is Coming", Type.Std, 0, "Sometimes it's just too cold for caching.  End your turn, and jump your token back to your starting location.", null, "Emergency Radio");
       add ("You're Fired!", Type.Std, 0, "Discard any Equipment card.  Take an extra turn after this one.", null);
+      
+      // add ("Cache Maintenance", Type.Std, 0, "The cache nearest to you needed maintenance.  The player on your right moves the cache 1 tile in any direction.", null);
+      // add ("Perfect Pair", Type.Std, 0, "You may discard one Equipment card to select any other one from the deck.", null);
+      // add ("Twist and Shout", Type.Now, 0, "All event cards (in play or held) are moved to the next player (clockwise).", null);
       
       // add ("Early Frost", Type.Std, 0, "End your turn.", null, "Gloves");
       // add ("Hide a Cache", EventType.Normal, 2, "Add a new cache onto the board (in a random location).  Shuffle this card back into the deck.", null);
@@ -348,9 +373,193 @@ public class Event implements Card, Comparable<Event>
       if (i % CardsPerPage == CardsPerPage - 1)
          out.println ("</table></td>\n<p><p>\n");
       
+      createImageFile(event);
       // dump (event);
    }
+   
+   private static final int CARD_W = 825;
+   private static final int CARD_H = 1125;
+   // size of the art on the final card
+   private static final int ART_W = 650;
+   private static final int ART_H = 400;
+   private static final int CENTER_X = CARD_W / 2;
+   private static final int CENTER_Y = CARD_H / 2;
+   private static final int LABEL_H = (CARD_H - (2 * ART_H)) / 2; // 222
+   private static final Font LABEL_FONT = new Font("Gill Sans MT Condensed", Font.PLAIN, 72);
+   private static final Font TEXT_FONT = new Font("Arial", Font.PLAIN, 60);
+   
+   private static final String CARD_DIR = "G:/pkgs/workspace/GeoQuest/docs/TGC/Events/";
+   private static final String ART_DIR = "G:/pkgs/workspace/GeoQuest/docs/";
 
+   // TODO
+   // Resolve types
+   // color for em-class
+   // convert all images to PNG with transparent backgrounds
+   // if too many lines, decrease font size
+   
+   private static void createImageFile(final Event event) // in TheGameCrafter format
+   {
+      OutputStream os = null;
+      try
+      {
+         String name = event.getName().replace ("&nbsp;", " ");
+         
+         BufferedImage cardImage = new BufferedImage(CARD_W, CARD_H, BufferedImage.TYPE_INT_ARGB);
+         Graphics2D g = (Graphics2D) cardImage.getGraphics();
+         
+         BufferedImage background = ImageIO.read(new File(CARD_DIR + "Event.png"));
+         g.drawImage(background, 0, 0, null);
+         
+         g.setColor(Color.black);
+         g.drawLine(CENTER_X, 0, CENTER_X, CARD_H);
+         g.drawLine(0, CENTER_Y, CARD_W, CENTER_Y);
+
+         // safe box
+         g.setColor(Color.blue);
+         int safeTop = Math.round(CARD_H / 100f * 6.7f);
+         int safeLeft = Math.round(CARD_W / 100f * 9.5f);
+         int safeWidth = CARD_W - (safeLeft * 2);
+         int safeHeight = CARD_H - (safeTop * 2);
+         g.drawRect(safeLeft, safeTop, safeWidth, safeHeight);
+         
+         // cut line
+         g.setColor(Color.red);
+         int cutTop = Math.round(CARD_H / 100f * 3.5f);
+         int cutLeft = Math.round(CARD_W / 100f * 4.8f);
+         g.drawRect(cutLeft, cutTop, CARD_W - (cutLeft * 2), CARD_H - (cutTop * 2));
+         
+         // art
+         ImageIcon artImage = new ImageIcon(ART_DIR + event.image);
+         ImageIcon artScaled = ImageTools.scaleImage(artImage, ART_W, ART_H, Image.SCALE_SMOOTH, null);
+         BufferedImage artBuf = ImageTools.imageToBufferedImage(artScaled.getImage());
+         g.drawImage(artBuf, (CARD_W - artBuf.getWidth()) / 2, LABEL_H, null); // upper-left
+         
+         System.out.println(" > " + name + ": " + event.getText()); // TODO
+
+         // title (and box)
+         FontMetrics fm = g.getFontMetrics(LABEL_FONT);
+         int textHeight = fm.getHeight();
+         int textWidth = fm.stringWidth(name);
+         g.setColor(Color.black);
+         g.setFont(LABEL_FONT);
+         int textLeft = (CARD_W - textWidth) / 2;
+         g.drawRect(textLeft , safeTop + 20, textWidth, textHeight);
+         g.drawString(name, textLeft, safeTop + textHeight); // lower-left
+         
+         // text box
+         g.setColor(Color.green);
+         g.drawRect(safeLeft + 1, (CARD_H / 2) + 1, safeWidth - 2, (safeHeight / 2) - 2);
+         // text
+         g.setFont(TEXT_FONT);
+         g.setColor(Color.black);
+         fm = g.getFontMetrics(TEXT_FONT);
+         int lineHeight = fm.getHeight();
+         List<String> lines = splitText(event.getTextForImage(), fm, safeWidth);
+         textHeight = lineHeight * lines.size(); // approximate
+         int y = (CARD_H / 2) + lineHeight + 20;
+         for (String line : lines)
+         {
+            drawLine(line, g, fm, y);
+            y += lineHeight;
+         }
+         
+         g.dispose();
+         cardImage.flush();
+         
+         File path = new File(CARD_DIR + name.replace("?", "") + ".png");
+         os = new FileOutputStream(path);
+         ImageTools.saveAs(cardImage, "png", os, 0f);
+
+         if (name.contains("Rental")) ComponentTools.open(new JLabel(new ImageIcon(cardImage)), name);
+      }
+      catch (Exception x)
+      {
+         x.printStackTrace();
+      }
+      finally
+      {
+         try
+         {
+            if (os != null)
+            {
+               os.flush();
+               os.close();
+            }
+         }
+         catch (IOException x) { }
+      }
+   }
+
+   private static List<String> splitText(final String text, final FontMetrics fm, final int safeWidth)
+   {
+      List<String> lines = new ArrayList<>();
+      
+      String[] words = Token.tokenize (new StringTokenizer (text, " "));
+      Stack<String> wordStack = new Stack<>();
+      for (int i = words.length - 1; i >= 0; i--)
+         wordStack.push(words[i]);
+
+      String line = "";
+      while (!wordStack.isEmpty())
+      {
+         String word = wordStack.peek();
+         // if (text.contains("dnf")) System.out.println("[" + word + "]"); // TODO
+         
+         // if (word.startsWith("<em class=equipment"))
+         if (word.equals("<em"))
+         {
+            wordStack.pop();
+            word = wordStack.peek();
+         }
+         if (word.startsWith("class="))
+         {
+            // TODO color
+            word = word.replaceAll("class=[^>]+>", "");
+         }
+         if (word.contains("</em>"))
+            word = word.replace("</em>", "");
+            
+         if (fm.stringWidth(line + " " + word) < safeWidth - 20) // is there room for the next word?
+         {
+            if (!line.isEmpty())
+               line += " ";
+            line += word;
+            wordStack.pop();
+            if (wordStack.isEmpty())
+               lines.add(line);
+         }
+         else
+         {
+            lines.add(line);
+            line = "";
+         }
+      }
+         
+
+      /*
+      int start = 0;
+      int charsPerLine = text.length() / count;
+      for (int i = 0; i < count; i++)
+      {
+         int end = start + charsPerLine;
+         if (end < text.length())
+            lines.add(text.substring(start, end));
+         else
+            lines.add(text.substring(start));
+         start = end;
+      }
+      */
+      return lines;
+   }
+   
+   private static void drawLine(final String line, final Graphics2D g, final FontMetrics fm, final int y)
+   {
+      int textWidth = fm.stringWidth(line);
+      int textLeft = (CARD_W - textWidth) / 2;
+      g.drawString(line, textLeft, y); // lower-left
+   }
+
+   /*
    private static void dump (final Event event)
    {
       StringBuilder sb = new StringBuilder();
@@ -360,10 +569,11 @@ public class Event implements Card, Comparable<Event>
       sb.append ("\"");
 
       String s = sb.toString();
-      s = s.replaceAll ("&nbsp;", " ");
+      s = s.replace ("&nbsp;", " ");
       s = s.replaceAll ("<[^>]+>", "");
       System.out.println (s);
    }
+   */
    
    private static void showEvents()
    {

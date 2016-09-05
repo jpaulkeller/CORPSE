@@ -90,7 +90,7 @@ public class Combo implements Card, Comparable<Combo>
          "instead roll the dice to determine how many points you earn.");
       add("Photographer", "Camera", "Mirror", "Safari Vest", "",
          "You get 2 points if you end your turn on a <em class=tile>Scenic View</em> or on the same tile as another player.  (You may only get points once per <em class=tile>View</em> or player.)");
-      add("Road Warrior", "Gorp", "Hydration Pack", "Mountain Bike", "If you roll 5 or higher while on a Path, ",
+      add("Road Warrior", "GORP", "Hydration Pack", "Mountain Bike", "If you roll 5 or higher while on a Path, ",
          "you may jump to any tile on that Path.</em>");
       add("Search and Rescue", "Binoculars", "FRS Radio", "Yellow Jeep",
          "Whenever anyone rolls the <em class=roll>blank side</em>, ", "you may immediately jump to the roller's location.");

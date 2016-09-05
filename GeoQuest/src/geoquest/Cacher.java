@@ -87,7 +87,7 @@ public class Cacher implements Card, Comparable<Cacher>
 
       add("Independent Isabel", "Insect Repellent",
          "Other players may only play events on Isabel if they are in the same map quadrant.");
-      add("Jolly Jamie", "Gorp", "Other players can't play events on Jamie (unless she has the most points).");
+      add("Jolly Jamie", "GORP", "Other players can't play events on Jamie (unless she has the most points).");
       add("Kindly Kate", "First-aid Kit", "During her turn, Kate can discard an Event card to gain 1 point.");
       add("Lucky Lisa", "Long Pants", "Lisa gets +1 whenever she rolls doubles.");
       add("Marathon Mike", "Mountain Bike", "Tiles next to a path count as a path for Mike.");
