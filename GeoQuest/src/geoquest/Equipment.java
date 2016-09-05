@@ -93,7 +93,7 @@ public class Equipment implements Card, Comparable<Equipment>
       add("Gaiters", "+1 on Move rolls in Swamp terrain and when crossing a stream.", null, "Veteran");
       add("Geocoin", "This card counts as 3 points.", "Geocoin", "Event Coordinator");
       add("Gloves", "+1 on Search rolls for any level 3 or higher cache in a Forest tile.", null, "Weatherman");
-      add("Gorp", "Discard this card to take another turn.", null, "Road Warrior");
+      add("GORP", "Discard this card to take another turn.", null, "Road Warrior");
       add("Hat", "You earn an extra point for every Event cache you attend.", null, "Lifeguard");
       add("Head Lamp", "+2 on Move rolls if both dice are blue.", null, "Night Cacher");
       add("Hiking Boots", "+1 to Move rolls in Forest terrain.", "HikingBoots", "Through Hiker");
