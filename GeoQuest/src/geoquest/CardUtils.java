@@ -53,7 +53,7 @@ public final class CardUtils
       pw.println("em.equipment { font-style: normal; font-weight: bold; " +
                  "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + Equipment.COLOR + "; }");
       pw.println("em.event     { font-style: normal; font-weight: bold; " +
-                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + Event.COLOR + "; }");
+                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.EVENT_COLOR + "; }");
       pw.println("em.geocache  { font-style: normal; font-weight: bold; " +
                  "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + Geocache.COLOR + "; }");
       pw.println("em.tb        { font-style: normal; font-weight: bold; " +
