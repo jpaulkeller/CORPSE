@@ -21,9 +21,9 @@ public class Equipment extends Card implements Comparable<Equipment>
 
    public Equipment(final String name, final String text, final String imageName, final String icon, final String combo)
    {
-      this.name = name.replaceAll(" ", "&nbsp;");
+      this.name = name;
       this.text = text.length() > 0 ? text : CardUtils.BLANK;
-      this.combo = combo != null ? combo.replaceAll(" ", "&nbsp;") : null;
+      this.combo = combo;
       this.image = CardUtils.findImage("Equipment", imageName != null ? imageName : name);
       if (icon != null)
       {
@@ -143,74 +143,45 @@ public class Equipment extends Card implements Comparable<Equipment>
       EQUIPMENT.put(equip.getName(), equip);
    }
 
-   /*
-   private static void dump(final Equipment eq)
-   {
-      StringBuilder sb = new StringBuilder();
-      sb.append(eq.name);
-      sb.append(",");
-      sb.append(eq.combo);
-      sb.append(",\"");
-      sb.append(eq.text);
-      sb.append("\"");
-
-      String s = sb.toString();
-      s = s.replaceAll("&nbsp;", " ");
-      s = s.replaceAll("<[^>]+>", "");
-      System.out.println(s);
-   }
-   */
-
-   private static void showEquipment()
+   private static void show()
    {
       for (Equipment eq : EQUIPMENT.values())
-         System.out.println(eq.getName().replace("&nbsp;", " "));
+         System.out.println(eq.getName() + ": " + eq.getText());
       System.out.println();
 
       System.out.println("\nASSOCIATED CACHERS/EVENTS/COMBOS");
       for (Equipment eq : EQUIPMENT.values())
       {
-         System.out.println(eq.getName().replace("&nbsp;", " ") + ":");
+         System.out.println(eq.getName() + ":");
 
          System.out.print("  Combo: ");
          for (Combo combo : Combo.COMBOS.values())
             if (eq.getName().equals(combo.eq1) || eq.getName().equals(combo.eq2) || eq.getName().equals(combo.eq3))
-               System.out.print(combo.getName().replace("&nbsp;", " "));
+               System.out.print(combo.getName());
          System.out.println();
-
-         /*
-          * System.out.print ("  Cachers: "); for (Cacher cacher : Cacher.CACHERS.values()) if
-          * (cacher.getEquipment().contains (eq.name)) { eq.usedByCacher = true; System.out.print (cacher + ", "); }
-          * System.out.println();
-          */
 
          System.out.print("  Events: ");
          for (Event ev : Event.EVENTS.values())
             if (ev.getEquipment().contains(eq.name) || ev.getText().contains(eq.name))
             {
                eq.usedByEvent = true;
-               System.out.print(ev.getName().replace("&nbsp;", " ") + ", ");
+               System.out.print(ev.getName() + ", ");
             }
          System.out.println();
       }
       System.out.println();
       System.out.flush();
 
-      /*
-       * System.out.println ("Equipment not referenced by any cacher:"); for (Equipment eq : EQUIPMENT.values()) if
-       * (!eq.usedByCacher) System.out.println ("  " + eq.name.replace ("&nbsp;", " ")); System.out.println();
-       * System.out.flush();
-       */
-
       System.out.println("Equipment not referenced by any event:");
       for (Equipment eq : EQUIPMENT.values())
          if (!eq.usedByEvent)
-            System.out.println("  " + eq.name.replace("&nbsp;", " "));
+            System.out.println("  " + eq.name);
       System.out.println();
       System.out.flush();
+      System.out.println();
    }
 
-   private static void validateEquipment()
+   private static void validate()
    {
       for (Equipment eq : EQUIPMENT.values())
       {
@@ -228,7 +199,7 @@ public class Equipment extends Card implements Comparable<Equipment>
 
    public static void main(final String[] args)
    {
-      HtmlGenerator htmlGen = new HtmlGenerator(9, 3, 200, 95, 90, 142);
+      HtmlGenerator htmlGen = new HtmlGenerator(12, 4, 150, 85, 75, 80);
       htmlGen.printEquipment(EQUIPMENT);
 
       ImageGenerator imgGen = new ImageGenerator(ImageStats.getEquipmentStats(), false);
@@ -236,9 +207,7 @@ public class Equipment extends Card implements Comparable<Equipment>
          imgGen.publish(event);
       System.out.println();
 
-      showEquipment();
-      System.out.println();
-
-      validateEquipment();
+      show();
+      validate();
    }
 }

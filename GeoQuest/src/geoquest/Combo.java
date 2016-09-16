@@ -21,12 +21,12 @@ public class Combo extends Card implements Comparable<Combo>
 
    public Combo(final String name, final String eq1, final String eq2, final String eq3, final String trigger, final String text)
    {
-      this.name = name.replaceAll(" ", "&nbsp;");
+      this.name = name;
       this.trigger = trigger;
       this.text = text.length() > 0 ? text : CardUtils.BLANK;
-      this.eq1 = eq1.replaceAll(" ", "&nbsp;");
-      this.eq2 = eq2.replaceAll(" ", "&nbsp;");
-      this.eq3 = eq3.replaceAll(" ", "&nbsp;");
+      this.eq1 = eq1;
+      this.eq2 = eq2;
+      this.eq3 = eq3;
    }
 
    @Override
@@ -161,7 +161,6 @@ public class Combo extends Card implements Comparable<Combo>
       sb.append("\"");
 
       String s = sb.toString();
-      s = s.replaceAll("&nbsp;", " ");
       s = s.replaceAll("<[^>]+>", "");
       System.out.println(s);
    }
