@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 import str.StringUtils;
 
-public class Cacher implements Card, Comparable<Cacher>
+public class Cacher extends Card implements Comparable<Cacher>
 {
    public static final String COLOR = "#F8E484";
 
@@ -65,15 +65,9 @@ public class Cacher implements Card, Comparable<Cacher>
       return name.hashCode();
    }
 
-   @Override
-   public String toString()
-   {
-      return name;
-   }
-
    private static void populate()
    {
-      add("Athletic Amanda", "Hiking Boots", "Amanda gets +1 for all Search rolls on Rocky terrain.");
+      add("Athletic Amanda", "Hiking Boots", "Amanda gets +1 to all rolls on Rocky tiles.");
       add("Birder Brandon", "Binoculars", "Brandon has an eye for details; he gets +1 when searching for Multi-caches.");
       add("Collector Colin", "Geocoin",
          "Colin can carry any number of Travel Bugs; and he starts the game with a (random) Travel Bug.");
@@ -87,7 +81,7 @@ public class Cacher implements Card, Comparable<Cacher>
 
       add("Independent Isabel", "Insect Repellent",
          "Other players may only play events on Isabel if they are in the same map quadrant.");
-      add("Jolly Jamie", "GORP", "Other players can't play events on Jamie (unless she has the most points).");
+      add("Jolly Jamie", "Gorp", "Other players can't play events on Jamie (unless she has the most points).");
       add("Kindly Kate", "First-aid Kit", "During her turn, Kate can discard an Event card to gain 1 point.");
       add("Lucky Lisa", "Long Pants", "Lisa gets +1 whenever she rolls doubles.");
       add("Marathon Mike", "Mountain Bike", "Tiles next to a path count as a path for Mike.");
@@ -109,9 +103,9 @@ public class Cacher implements Card, Comparable<Cacher>
       add("Wandering Warren", "Waders",
          "Warren finds his own path.  He doesn't get the +1 path bonus, but if he rolls a <em class=find>FIND</em> while moving, he may take an extra turn.");
       // TODO: change Scenic View to Point of Interest?
-      add("Xander the Explorer", "External Antenna",
+      add("Xander the Explorer", "Antenna",
          "Xander gets 2 points for every <em class=tile>Scenic View</em> he visits (once per).  He must end his turn on that tile.");
-      add("Yuppie Yuri", "Yellow Jeep",
+      add("Yuppie Yuri", "Jeep",
          "When Yuri finds a cache, he may keep both Equipment cards by disarding one of his current Equipment cards.");
       // TODO
       add("Zealous Zach", "1 (random) Equipment Card",

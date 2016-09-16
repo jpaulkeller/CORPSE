@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Geocache implements Card, Comparable<Geocache>
+public class Geocache extends Card implements Comparable<Geocache>
 {
    public static final String COLOR = "#254C00"; // dark olive green
 
@@ -72,18 +72,6 @@ public class Geocache implements Card, Comparable<Geocache>
       if (other instanceof Geocache)
          return name.equals(((Geocache) other).name);
       return false;
-   }
-
-   @Override
-   public int hashCode()
-   {
-      return name.hashCode();
-   }
-
-   @Override
-   public String toString()
-   {
-      return name;
    }
 
    private static void populate()

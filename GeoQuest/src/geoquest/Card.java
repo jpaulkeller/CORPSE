@@ -1,7 +1,26 @@
 package geoquest;
 
-public interface Card
+public abstract class Card
 {
-   String getName();
-   String getText();
+   public abstract String getName();
+   
+   public abstract String getText();
+   
+   public String getTextForImage()
+   {
+      String s = getText();
+      s = s.replace("&nbsp;", " ");
+      s = s.replace("<em class=", "<");
+      return s;
+   }
+   
+   public int hashCode()
+   {
+      return getName().hashCode();
+   }
+
+   public String toString()
+   {
+      return getName();
+   }
 }
