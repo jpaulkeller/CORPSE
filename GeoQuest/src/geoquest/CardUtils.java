@@ -17,7 +17,7 @@ public final class CardUtils
 
    private static final SortedSet<String> REFERENCES = new TreeSet<>();
 
-   private static String[] dirs = { "Good", "Free", "Cards" };
+   private static String[] dirs = { null, "Good", "Free", "Cards", "Icons" }; // under GeoQuest/docs
    private static String[] suffixes = { "png", "jpg", "gif" };
 
    private CardUtils()
@@ -27,7 +27,7 @@ public final class CardUtils
 
    static String findImage(final String preferredDir, final String image)
    {
-      dirs[1] = preferredDir;
+      dirs[0] = preferredDir;
       for (String dir : dirs)
          for (String suffix : suffixes)
          {
@@ -51,7 +51,7 @@ public final class CardUtils
       pw.println("em.combo     { font-style: normal; font-weight: bold; " +
                  "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + Combo.COLOR + "; }");
       pw.println("em.equipment { font-style: normal; font-weight: bold; " +
-                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + Equipment.COLOR + "; }");
+                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.EQUIP_COLOR + "; }");
       pw.println("em.event     { font-style: normal; font-weight: bold; " +
                  "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.EVENT_COLOR + "; }");
       pw.println("em.geocache  { font-style: normal; font-weight: bold; " +

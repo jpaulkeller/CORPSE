@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class TravelBug implements Card, Comparable<TravelBug>
+public class TravelBug extends Card implements Comparable<TravelBug>
 {
    public static final String COLOR = "#F2F2F2";
 
@@ -47,18 +47,6 @@ public class TravelBug implements Card, Comparable<TravelBug>
       if (other instanceof TravelBug)
          return name.equals(((TravelBug) other).name);
       return false;
-   }
-
-   @Override
-   public int hashCode()
-   {
-      return name.hashCode();
-   }
-
-   @Override
-   public String toString()
-   {
-      return name;
    }
 
    private static void populate()
