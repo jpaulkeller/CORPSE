@@ -1,0 +1,21 @@
+Andada
+Cabin
+Dosis
+Equip
+Infini
+Lilly
+Malgun Gothic
+Merriweather Sans
+Verdana
+
+Draw an Equipment card,
+then give any one Equipment
+card you have to the player
+with the fewest Equipment
+cards (other than yourself).
+
+Not About the Numbers
+
+PLAY AFTER ROLL
+
+Play After Roll
