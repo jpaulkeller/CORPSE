@@ -47,7 +47,7 @@ public final class CardUtils
       pw.println("td, th { padding: 5px; }");
 
       pw.println("em.cacher    { font-style: normal; font-weight: bold; " +
-                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + Cacher.COLOR + "; }");
+                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.CACHER_COLOR + "; }");
       pw.println("em.combo     { font-style: normal; font-weight: bold; " +
                  "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + Combo.COLOR + "; }");
       pw.println("em.equipment { font-style: normal; font-weight: bold; " +
@@ -122,7 +122,7 @@ public final class CardUtils
          while (m.find())
          {
             String type = m.group(1);
-            String cardName = m.group(2).replaceAll("\n", " ").trim();
+            String cardName = m.group(2).replace("\n", " ").replace("&nbsp;", " ").trim();
             String status = findCard(cardName, type);
             REFERENCES.add(status + type + " [" + cardName + "]" + " referenced by " + source);
          }
@@ -132,6 +132,7 @@ public final class CardUtils
    private static String findCard(final String cardName, final String type)
    {
       Card card = null;
+      
       if (type.equals("cacher"))
          card = Cacher.CACHERS.get(cardName);
       else if (type.equals("equipment"))
@@ -144,6 +145,7 @@ public final class CardUtils
          card = Geocache.CACHES.get(cardName);
       else if (type.equals("tb"))
          card = TravelBug.BUGS.get(cardName);
+      
       return card != null ? "Found: " : "MISSING: ";
    }
 

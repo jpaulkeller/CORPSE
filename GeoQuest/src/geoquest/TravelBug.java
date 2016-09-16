@@ -19,7 +19,7 @@ public class TravelBug extends Card implements Comparable<TravelBug>
 
    public TravelBug(final String name, final String goal)
    {
-      this.name = name.replaceAll(" ", "&nbsp;");
+      this.name = name;
       this.goal = goal.length() > 0 ? goal : CardUtils.BLANK;
    }
 
@@ -135,7 +135,7 @@ public class TravelBug extends Card implements Comparable<TravelBug>
       out.print("<td style=\"" + " background-image: url(images/rules/TravelBug.png); " + " font-family: arial;" +
                 " font-size: small;" + " color: black;" + "\" align=center height=70 width=113>");
       // out.print ("<span style=\"max-width: 90;\">");
-      out.print("<b>" + bug.name + "</b><br />" + bug.goal);
+      out.print("<b>" + bug.name.replace(" ",  "&nbsp;") + "</b><br />" + bug.goal);
       out.println("</td>");
 
       if (i % PER_ROW == PER_ROW - 1)
@@ -155,7 +155,6 @@ public class TravelBug extends Card implements Comparable<TravelBug>
       sb.append("\"");
 
       String s = sb.toString();
-      s = s.replaceAll("&nbsp;", " ");
       s = s.replaceAll("<[^>]+>", "");
       System.out.println(s);
    }

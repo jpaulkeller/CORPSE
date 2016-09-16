@@ -9,7 +9,6 @@ public abstract class Card
    public String getTextForImage()
    {
       String s = getText();
-      s = s.replace("&nbsp;", " ");
       s = s.replace("<em class=", "<");
       return s;
    }

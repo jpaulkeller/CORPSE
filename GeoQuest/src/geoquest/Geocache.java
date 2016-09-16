@@ -278,7 +278,6 @@ public class Geocache extends Card implements Comparable<Geocache>
       sb.append("\"");
 
       String s = sb.toString();
-      s = s.replaceAll("&nbsp;", " ");
       s = s.replaceAll("<[^>]+>", "");
       System.out.println(s);
    }

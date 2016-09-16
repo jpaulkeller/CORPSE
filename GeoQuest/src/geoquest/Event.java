@@ -31,7 +31,7 @@ public class Event extends Card implements Comparable<Event>
                  final int points, final String effect,
                  final String image, final String... protection)
    {
-      this.name = name.replaceAll (" ", "&nbsp;");
+      this.name = name;
       this.image = CardUtils.findImage ("Events", image != null ? image : name);
       this.type = type;
       
@@ -40,9 +40,9 @@ public class Event extends Card implements Comparable<Event>
          Matcher m = SPECIAL_EQUIPMENT.matcher (eqName);
          boolean special = m.matches(); 
          if (special)
-            specialEquipment.add (m.group (1).replaceAll (" ", "&nbsp;"));
+            specialEquipment.add (m.group(1));
          else
-            equipment.add (eqName.replaceAll (" ", "&nbsp;"));
+            equipment.add (eqName);
       }
 
       // build the text
@@ -182,7 +182,7 @@ public class Event extends Card implements Comparable<Event>
       add ("Feed The Trolls", Type.STD, 0, "You stop to read the forums; end your turn.", null, "Laptop");
       add ("Fire Ants", Type.STD, 0, "End your turn.  The player on your right moves your token 1 tile in any direction.", null, "Gorp", "Long Pants");
       add ("Flash Flood", Type.STD, 0, "Remove the nearest cache that is next to a stream from the board.  End your turn.", null, "Waders");
-      add ("Fox Hunt", Type.STD, 1, "You spot a red fox.  If you have <em class=equipment>Ol'&nbsp;Blue</em>, end your turn.", null);
+      add ("Fox Hunt", Type.STD, 1, "You spot a red fox.  If you have <em class=equipment>Ol' Blue</em>, end your turn.", null);
       add ("Fresh Snow", Type.NOW, 0, "-1 to all rolls this round.", "Snow");
       add ("Ground Zero", Type.ANY, 0, "You may jump your token to the nearest cache location.", null);
       add ("Happy Birthday!", Type.STD, 0, "Draw 1 Equipment card.", null);
@@ -208,7 +208,7 @@ public class Event extends Card implements Comparable<Event>
       add ("Night Caching", Type.STD, 0, "All players not on an Urban tile skip their next turn.", null, "Flashlight", "Head Lamp");
       add ("Not About the Numbers", Type.STD, 0, "Gain 1 point for each level <em class=diff5>5</em> cache you have found.  If none, lose 2 points unless", null, "Binoculars", "Rope");
       add ("Out of Ink", Type.STD, 0, "End your turn while you try to improvise something to write with.", null, "Letterbox Stamp", "Pocket Knife");
-      add ("Park Closed", Type.STD, 0, "End your turn.  Does not affect <em class=cacher>Ranger&nbsp;Rachel</em>.", null);
+      add ("Park Closed", Type.STD, 0, "End your turn.  Does not affect <em class=cacher>Ranger Rachel</em>.", null);
       add ("Parking Ticket", Type.STD, -1, "Discard an Equipment card.", null, "Lucky Charm");
       add ("Pawn Shop", Type.STD, 0, "Draw five Equipment cards.  You may trade any of your Equipment cards for any of those five.", null);
       // TODO rename? maybe Well Equipped?
@@ -267,57 +267,24 @@ public class Event extends Card implements Comparable<Event>
       EVENTS.put (event.getName(), event);
    }
    
-   /*
-   private static void dump (final Event event)
-   {
-      StringBuilder sb = new StringBuilder();
-      sb.append (event.name);
-      sb.append (", \"");
-      sb.append (event.text);
-      sb.append ("\"");
-
-      String s = sb.toString();
-      s = s.replace ("&nbsp;", " ");
-      s = s.replaceAll ("<[^>]+>", "");
-      System.out.println (s);
-   }
-   */
-   
    private static void showEvents()
    {
-      /*
-      for (Event event : EVENTS.values())
-         System.out.println(event.name.replaceAll("&nbsp;", " "));
-      System.out.println();
-      */
-
       for (Event event : EVENTS.values())
       {
          if (event.name == CardUtils.BLANK)
             continue;
-         System.out.print (StringUtils.pad (event.toString().replaceAll("&nbsp;", " "), 30));
+         System.out.print (StringUtils.pad (event.toString(), 30));
          for (String eq : event.equipment)
-            System.out.print (eq.replaceAll("&nbsp;", " ") + ", ");
+            System.out.print (eq + ", ");
          for (String eq : event.specialEquipment)
-            System.out.print (eq.replaceAll("&nbsp;", " ") + ", ");
+            System.out.print (eq + ", ");
          System.out.println();
       }
       System.out.println();
    }
    
-   public static void main (final String[] args)
+   private static void validate()
    {
-      showEvents();
-      
-      HtmlGenerator htmlGen = new HtmlGenerator(12, 4, 150, 85, 75, 80);
-      // HtmlGenerator htmlGen = new HtmlGenerator(12, 4, 180, 120, 100, 120);
-      htmlGen.printEvents(EVENTS);
-      
-      ImageGenerator imgGen = new ImageGenerator(ImageStats.getEventStats(), false);
-      for (Event event : EVENTS.values())
-         imgGen.publish(event);
-      System.out.println();
-      
       System.out.println ("Validating Equipment References:");
       System.out.flush();
       for (Event event : EVENTS.values())
@@ -334,8 +301,23 @@ public class Event extends Card implements Comparable<Event>
          if (pattern.matcher (event.text).find() && // bad event
              !event.text.toString().contains ("gain") && // no points gained
              event.equipment.isEmpty() && event.specialEquipment.isEmpty()) // no counter
-            System.out.println ("  " + event.name.replace ("&nbsp;", " "));
+            System.out.println ("  " + event.name);
       System.out.println();
       System.out.flush();
+   }
+   
+   public static void main (final String[] args)
+   {
+      showEvents();
+      
+      HtmlGenerator htmlGen = new HtmlGenerator(9, 3, 200, 95, 90, 142);
+      htmlGen.printEvents(EVENTS);
+      
+      ImageGenerator imgGen = new ImageGenerator(ImageStats.getEventStats(), false);
+      for (Event event : EVENTS.values())
+         imgGen.publish(event);
+      System.out.println();
+      
+      validate();
    }
 }

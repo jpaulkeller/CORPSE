@@ -75,7 +75,7 @@ public class ImageGenerator
       OutputStream os = null;
       try
       {
-         String name = eq.getName().replace ("&nbsp;", " ");
+         String name = eq.getName();
          System.out.println(" > " + name + ": " + eq.getText());
          
          BufferedImage cardImage = new BufferedImage(stats.cardW, stats.cardH, BufferedImage.TYPE_INT_ARGB);
@@ -131,7 +131,7 @@ public class ImageGenerator
       OutputStream os = null;
       try
       {
-         String name = event.getName().replace ("&nbsp;", " ");
+         String name = event.getName();
          System.out.println(" > " + name + ": " + event.getText());
          
          BufferedImage cardImage = new BufferedImage(stats.cardW, stats.cardH, BufferedImage.TYPE_INT_ARGB);
@@ -277,7 +277,7 @@ public class ImageGenerator
 
    private int paintCombo(final Graphics2D g, final Equipment eq)
    {
-      String combo = eq.getCombo().replace("&nbsp;", " ");
+      String combo = eq.getCombo();
       g.setFont(stats.comboFont);
       FontMetrics fm = g.getFontMetrics(stats.comboFont);
       int textHeight = fm.getHeight();
