@@ -33,6 +33,35 @@ public class ImageStats
    Font playFont;
    Color playAnyColor, playNowColor;
    
+   public static ImageStats getCacherStats()
+   {
+      ImageStats stats = new ImageStats();
+      
+      stats.cardW = 825;
+      stats.cardH = 600;
+      stats.centerX = stats.cardW / 2;
+      stats.centerY = stats.cardH / 2;
+      
+      stats.safeMarginW = Math.round(stats.cardW / 100f * 9f);
+      stats.safeMarginH = Math.round(stats.cardH / 100f * 12.4f);
+      stats.safeW = stats.cardW - (stats.safeMarginW * 2);
+      stats.safeH = stats.cardH - (stats.safeMarginH * 2);
+
+      stats.cutMarginH = Math.round(stats.cardH / 100f * 6.1f);
+      stats.cutMarginW = Math.round(stats.cardW / 100f * 4.5f);
+
+      stats.titleFontName = "Bree Serif";
+      stats.titleFont = new Font(stats.titleFontName, Font.PLAIN, 60);
+      stats.titleFont2 = new Font(stats.titleFontName, Font.PLAIN, 50);
+      stats.titleFont3 = new Font(stats.titleFontName, Font.PLAIN, 42);
+      stats.titleBg = new Color(0, 229, 91); // green
+         
+      stats.textFont = new Font("Cabin", Font.PLAIN, 70);
+      stats.textFont2 = new Font("Cabin", Font.PLAIN, 60);
+      
+      return stats;
+   }
+   
    public static ImageStats getEquipmentStats()
    {
       ImageStats stats = new ImageStats();
