@@ -119,7 +119,7 @@ public class HtmlGenerator
             printCard(out, event, i++);
 
          // pad with blanks to fill out the sheet
-         Event blankCard = new Event(CardUtils.BLANK, Type.STD, 0, CardUtils.BLANK, "Blank");
+         Event blankCard = new Event(CardUtils.BLANK, Type.STD, 0, CardUtils.BLANK, "Blank", null);
          if (events.size() % cardsPerPage > 0)
             for (i = 0; i < cardsPerPage - (events.size() % cardsPerPage); i++)
                printCard(out, blankCard, i + events.size());

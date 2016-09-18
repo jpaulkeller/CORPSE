@@ -17,7 +17,6 @@ public final class CardUtils
 
    private static final SortedSet<String> REFERENCES = new TreeSet<>();
 
-   private static String[] dirs = { null, "Good", "Free", "Cards", "Icons" }; // under GeoQuest/docs
    private static String[] suffixes = { "png", "jpg", "gif" };
 
    private CardUtils()
@@ -25,18 +24,17 @@ public final class CardUtils
       // prevent instantiation
    }
 
-   static String findImage(final String preferredDir, final String image)
+   static String findImage(final String dir, final String image)
    {
-      dirs[0] = preferredDir;
-      for (String dir : dirs)
-         for (String suffix : suffixes)
-         {
-            String imagePath = dir + "/" + image + "." + suffix;
-            if (new File("docs/" + imagePath).exists())
-               return imagePath;
-         }
-      System.err.println("Missing " + preferredDir + " image: " + image);
-      return null;
+      for (String suffix : suffixes)
+      {
+         String imagePath = dir + "/" + image + "." + suffix;
+         if (new File("docs/" + imagePath).exists())
+            return imagePath;
+      }
+      System.err.println("Missing image: " + dir + "/" + image);
+      System.err.flush();
+      return null; 
    }
 
    public static void printStyle(final PrintWriter pw)
