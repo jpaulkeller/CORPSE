@@ -167,7 +167,7 @@ public class HtmlGenerator
       if (event.getType() == Type.NOW)
          out.println("    <tr><td align=center bgcolor=salmon><b>Play Now</b></td></tr>");
       else if (event.getType() == Type.ANY)
-         out.println("    <tr><td align=center bgcolor=lightgreen><b>Discard To Play</b></td></tr>");
+         out.println("    <tr><td align=center bgcolor=lightgreen><b>Play Any Time</b></td></tr>");
 
       out.println("  </table></td>\n");
 
