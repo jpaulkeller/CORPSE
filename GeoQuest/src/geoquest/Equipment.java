@@ -76,56 +76,56 @@ public class Equipment extends Card implements Comparable<Equipment>
 
    static void populate()
    {
-      add("Antenna", "+1 to Search rolls on Forest and Urban tiles", "Antenna", "Search +1", "Engineer");
+      add("Antenna", "+1 when Searching on Forest and Urban tiles", "Antenna", "Search +1", "Engineer");
       add("Backpack", "Provides 4 extra equipment slots, but you can't move more than 5 per turn", null, "Slot 4", "Through Hiker");
       add("Bandana", "You may trade this for another player's equipment card (if they agree)", null, null, "Lifeguard");
       add("Batteries", "You may reroll any Move roll of 1 or less", null, "Reroll", "Eagle Scout");
       add("Belt Pack", "Provides 2 extra equipment slots", null, "Slot 2", "MacGyver");
-      add("Binoculars", "+1 to Move rolls of 4 or higher", null, "Move 1", "Search and Rescue");
+      add("Binoculars", "+1 to Move when you roll 4 or higher", null, "Move 1", "Search and Rescue");
       add("Camel Pack", "Provides 2 extra equipment slots", null, "Slot 2", "Road Warrior");
       add("Camera", "Gain 1 point for each other <em class=event>Meet and Greet</em> attendee (if you attend)", null, "Point +1", "Photographer");
       add("Cell Phone", "You may add 1 to your Search roll (if you do, gain 1 less point)", null, "Search +1", "Engineer");
       add("CITO Bag", "You may discard this card to gain 3 points", "CITO", "Point +3", "Naturalist");
-      add("Compass", "+1 to Search rolls for all Multi-caches", null, "Search +1", "Eagle Scout");
-      add("Duct Tape", "You may discard this Equipment to prevent any Event from affecting you", null, null, "MacGyver");
-      add("Emergency Radio", "+1 to Move rolls if any weather Event is in effect", null, "Move 1", "Weatherman");
+      add("Compass", "+1 when Searching for all Multi-caches", null, "Search +1", "Eagle Scout");
+      add("Duct Tape", "You may discard this Equipment to ignore any Event played on you", null, null, "MacGyver");
+      add("Emergency Radio", "+1 when Moving if any weather Event is in effect", null, "Move 1", "Weatherman");
       add("Field Guide", "You may discard this to solve any puzzle cache", null, "Cache Puzzle", "Naturalist");
       add("First-aid Kit", "Discard to prevent any injury Event; gain 4 points if used on another player", null, "Point +4", "Paramedic");
-      add("Flashlight", "+1 to Search rolls for caches not yet found by anyone", null, "Search +1", "Night Cacher");
+      add("Flashlight", "+1 when Searching for caches not yet found by anyone", null, "Search +1", "Night Cacher");
+      // TODO too good?
       add("FRS Radio", "If you roll <em class=find>.F.</em>, you may jump to any tile occupied by another player", null, "Move Run", "Search and Rescue");
-      add("Gaiters", "+1 to Move rolls on Swamp tiles, and when crossing a stream", null, "Move 1", "Veteran");
+      add("Gaiters", "+1 when Moving on Swamp tiles, and when crossing a stream", null, "Move 1", "Veteran");
       add("Geocoin", "This card counts as 3 points, or discard it for 1 point", null, "Point +3", "Event Coordinator");
-      add("Gloves", "+1 to Search rolls for any level <em class=diff3>.3.</em> or higher cache on a Forest tile", null, "Search +1", "Weatherman");
+      add("Gloves", "+1 when Searching for any level 3 or higher cache on a Forest tile", null, "Search +1", "Weatherman");
       add("Gorp", "Discard this card to take another turn", null, null, "Road Warrior");
       add("Hat", "You earn an extra point for every <em class=event>Meet and Greet</em> you attend", null, "Point +1", "Lifeguard");
-      add("Head Lamp", "+2 on Move rolls if both dice are black", null, "Move 2", "Night Cacher");
-      add("Hiking Boots", "+1 to Move rolls on Forest tiles", null, "Move 1", "Through Hiker");
-      add("Hiking Staff", "+1 to Move rolls on Rocky tiles", null, "Move 1", "Event Coordinator");
-      // TODO art!
-      add("Insect Repellent", "Can prevent several bug-related events", "BugSpray", null, "Night Cacher");
-      add("Jeep", "+2 to Move rolls on Urban tiles; provides 1 extra equipment slot", null, "Slot 1", "Paramedic");
+      add("Head Lamp", "+2 when Moving if both dice are black", null, "Move 2", "Night Cacher");
+      add("Hiking Boots", "+1 when Moving on Forest tiles", null, "Move 1", "Through Hiker");
+      add("Hiking Staff", "+1 when Moving on Rocky tiles", null, "Move 1", "Event Coordinator");
+      add("Insect Repellent", "+1 when Searching on Swamp tiles", null, "Search +1", "Night Cacher");
+      add("Jeep", "+2 when Moving on Urban tiles; provides 1 extra equipment slot", null, "Slot 1", "Paramedic");
       add("Laptop", "You may solve any Puzzle cache using only 1 of the letters", null, "Cache Puzzle", "Engineer");
-      add("Letterbox Stamp", "+1 point whenever you find a level <em class=diff3>.3.</em> cache", null, "Point +1", "Event Coordinator");
+      add("Letterbox Stamp", "+1 point whenever you find a level 3 cache", null, "Point +1", "Event Coordinator");
       add("Long Pants", "Provides 1 extra equipment slot", null, "Slot 1", "Veteran");
       add("Lucky Charm", "You get +1 whenever you roll doubles", null, "Roll +1", "Hitchhiker");
-      add("Map", "+1 to Move rolls if either die is white", null, "Move 1", "Tracker");
+      add("Map", "+1 when Moving if either die is white", null, "Move 1", "Tracker");
       add("Mirror", "Ignore any <em class=dnf>.D.</em> when searching on Urban tiles", null, "Search", "Photographer");
-      add("Mountain Bike", "+1 to Move rolls if either die is 1", null, "Move 1", "Road Warrior");
-      add("Ol' Blue", "You may search for caches in adjacent tiles as if you were on them", "Dog", null, "Tracker");
-      add("Pocket Knife", "+1 to Search rolls for any level <em class=diff5>.5.</em> cache", null, "Search +1", "Eagle Scout");
+      add("Mountain Bike", "+1 when Moving if either die is 1", null, "Move 1", "Road Warrior");
+      add("Ol' Blue", "You may search for caches in adjacent tiles as if you were on them", "Dog", "Search", "Tracker");
+      add("Pocket Knife", "+1 when Searching for any level 5 cache", null, "Search +1", "Eagle Scout");
       add("Rain Jacket", "Provides 1 extra equipment slot", null, "Slot 1", "Weatherman");
       add("Repair Kit", "You may discard to gain 2 points if you are on a cache", null, "Point +2", "Paramedic");
-      // TODO - no-event icon (and also on Jamie)?
       add("Rope", "No other player may play Events on you if you are on a Rocky tile", null, null, "Search and Rescue");
       add("Safari Vest", "Provides 3 extra equipment slots", null, "Slot 3", "Photographer");
       add("Survival Strap", "You may reroll if both dice are 1", null, "Reroll", "Hitchhiker");
       add("Swag Bag", "Provides 1 extra equipment slot", null, "Slot 1", "Hitchhiker");
       add("Trail Guide", "You may move 1 extra tile along a path each turn", null, "Move 1", "Through Hiker");
-      add("Utility Tool", "+1 to Search rolls on Urban tiles", null, "Search +1", "MacGyver");
-      add("Waders", "+2 to Move rolls when crossing a stream", null, "Move 2", "Tracker");
-      add("Walking Stick", "+1 to Move rolls on Clear tiles", null, "Move 1", "Naturalist");
-      add("Water Bottle", "+1 to Move rolls if either die is zero", null, "Move 1", "Veteran");
-      add("Whistle", "Moving onto an occupied tile costs you no movement points", null, "Move Join", "Lifeguard");
+      add("Utility Tool", "+1 when Searching on Urban tiles", null, "Search +1", "MacGyver");
+      add("Waders", "+2 when crossing a stream", null, "Move 2", "Tracker");
+      add("Walking Stick", "+1 when Moving on Clear tiles", null, "Move 1", "Naturalist");
+      add("Water Bottle", "+1 when Moving if either die is zero", null, "Move 1", "Veteran");
+      // add("Whistle", "Moving onto an occupied tile costs you no movement points", null, "Move Join", "Lifeguard");
+      add("Whistle", "Moving onto a tile occupied by another player costs you no movement points", null, "Move Join", "Lifeguard");
 
       // add ("Coat", "Protects against some cold-related effects", null, "Insulation");
       // add ("Emergency Blanket", "Discard to ignore any weather-related effect", null, "Just In Case");
