@@ -1,0 +1,67 @@
+Font
+   Segoe Script 18+ bold
+   Arial 22
+
+--------------- Best
+5-LETTER WORDS
+ANIMALS
+BLACK or WHITE
+BOOKS & AUTHORS
+FICTIONAL CHARACTERS
+HOT or COLD
+NOISY THINGS
+ON A FARM
+PLACES
+QUOTATIONS
+SCIENCE FICTION
+SMALL THINGS
+SOFT THINGS
+SOMEONE YOU KNOW 
+SOUNDS 
+THINGS THAT FLY
+THINGS YOU EAT
+
+--------------- Good (but maybe not intuitive):
+FAR AWAY - anything far away from where you currently are
+FIRST & LAST - puzzle letters must be first and last in solution word ("C/H" could be solved by "CoucH")
+IN THIS ROOM - anything in the current room
+-- INSIDE - puzzle letters must be in the word, but not first or last ("C/H" could be solved by "sHoCk")
+OPPOSITES - each word must have one of the puzzle letters ("C/H" could be solved by "thiCk/tHin" or "Cold/Hot")
+SIDE BY SIDE - puzzle letters must be adjacent ("C/H" could be solved by "CHild")
+
+--------------- Pretty Good:
+BODY PARTS
+COUPLES
+DANGEROUS THINGS
+EVENTS (or maybe CURRENT EVENTS?)
+FAMOUS AND LIVING
+FLOWERS
+FOREIGN WORDS
+GAMES
+HERBS & SPICES
+HISTORICAL FIGURES
+IN A LABORATORY 
+MOVIES, PLAYS, or TV
+OUTER SPACE  
+-- PLANTS 
+ROUND THINGS
+SCARY THINGS
+SEA CREATURES
+SPORTS & ATHLETES  
+THINGS IN A GARDEN
+THINGS IN A KITCHEN
+THINGS YOU WEAR
+ART and ARTISTS
+
+--------------- Okay:
+ACTORS
+COLORS
+COMICS & CARTOONS
+DRINKS & BEVERAGES
+FIRST NAMES
+FRUITS & VEGGIES
+INSECTS
+MUSICAL INSTRUMENTS
+MYTHOLOGY
+RIVERS
+THINGS YOU CARRY
