@@ -15,21 +15,21 @@ public class Equipment extends Card implements Comparable<Equipment>
    private String text;
    private String image;
    private String icon;
-   private String combo;
+   private String ensemble;
    private boolean usedByEvent; // true if used by Event
 
-   public Equipment(final String name, final String text, final String imageName, final String icon, final String combo)
+   public Equipment(final String name, final String text, final String imageName, final String icon, final String ensemble)
    {
       this.name = name;
       this.text = text.length() > 0 ? text : CardUtils.BLANK;
-      this.combo = combo;
-      this.image = CardUtils.findImage("Equipment", imageName != null ? imageName : name);
+      this.ensemble = ensemble;
+      this.image = CardUtils.findImage("Art/Equipment", imageName != null ? imageName : name);
       
       if (icon != null)
       {
-         this.icon = CardUtils.findImage("TGC/Icons", icon);
+         this.icon = CardUtils.findImage("Icons", icon);
          if (this.icon == null)
-            this.icon = CardUtils.findImage("TGC/Icons", "Missing");
+            this.icon = CardUtils.findImage("Icons", "Missing");
       }
    }
 
@@ -55,9 +55,9 @@ public class Equipment extends Card implements Comparable<Equipment>
       return icon;
    }
 
-   public String getCombo()
+   public String getEnsemble()
    {
-      return combo;
+      return ensemble;
    }
 
    @Override
@@ -136,9 +136,9 @@ public class Equipment extends Card implements Comparable<Equipment>
    }
 
    private static void add(final String cardName, final String cardText, final String image, 
-                           final String icon, final String combo)
+                           final String icon, final String ensemble)
    {
-      Equipment equip = new Equipment(cardName, cardText, image, icon, combo);
+      Equipment equip = new Equipment(cardName, cardText, image, icon, ensemble);
       EQUIPMENT.put(equip.getName(), equip);
    }
 
@@ -148,15 +148,15 @@ public class Equipment extends Card implements Comparable<Equipment>
          System.out.println(eq.getName() + ": " + eq.getText());
       System.out.println();
 
-      System.out.println("\nASSOCIATED CACHERS/EVENTS/COMBOS");
+      System.out.println("\nASSOCIATED CACHERS/EVENTS/ENSEMBLES");
       for (Equipment eq : EQUIPMENT.values())
       {
          System.out.println(eq.getName() + ":");
 
-         System.out.print("  Combo: ");
-         for (Combo combo : Combo.COMBOS.values())
-            if (eq.getName().equals(combo.eq1) || eq.getName().equals(combo.eq2) || eq.getName().equals(combo.eq3))
-               System.out.print(combo.getName());
+         System.out.print("  Ensemble: ");
+         for (Ensemble ensemble : Ensemble.ENSEMBLES.values())
+            if (eq.getName().equals(ensemble.eq1) || eq.getName().equals(ensemble.eq2) || eq.getName().equals(ensemble.eq3))
+               System.out.print(ensemble.getName());
          System.out.println();
 
          System.out.print("  Events: ");
@@ -187,11 +187,11 @@ public class Equipment extends Card implements Comparable<Equipment>
          if (eq.text == null || eq.text.equals("") || eq.text.equals(CardUtils.BLANK))
             System.err.println("No text for: " + eq);
 
-         Combo combo = Combo.COMBOS.get(eq.combo);
-         if (combo == null)
-            System.err.println("Missing combo for " + eq.name + ": " + eq.combo);
-         else if (!combo.eq1.equals(eq.name) && !combo.eq2.equals(eq.name) && !combo.eq3.equals(eq.name))
-            System.err.println("Invalid combo for " + eq.name + ": " + eq.combo);
+         Ensemble ensemble = Ensemble.ENSEMBLES.get(eq.ensemble);
+         if (ensemble == null)
+            System.err.println("Missing ensemble for " + eq.name + ": " + eq.ensemble);
+         else if (!ensemble.eq1.equals(eq.name) && !ensemble.eq2.equals(eq.name) && !ensemble.eq3.equals(eq.name))
+            System.err.println("Invalid ensemble for " + eq.name + ": " + eq.ensemble);
       }
       System.err.flush();
    }
@@ -202,8 +202,8 @@ public class Equipment extends Card implements Comparable<Equipment>
       htmlGen.printEquipment(EQUIPMENT);
 
       ImageGenerator imgGen = new ImageGenerator(ImageStats.getEquipmentStats(), false);
-      for (Equipment event : EQUIPMENT.values())
-         imgGen.publish(event);
+      for (Equipment eq : EQUIPMENT.values())
+         imgGen.publish(eq);
       System.out.println();
 
       show();

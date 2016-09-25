@@ -46,8 +46,8 @@ public final class CardUtils
 
       pw.println("em.cacher    { font-style: normal; font-weight: bold; " +
                  "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.CACHER_COLOR + "; }");
-      pw.println("em.combo     { font-style: normal; font-weight: bold; " +
-                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + Combo.COLOR + "; }");
+      pw.println("em.ensemble  { font-style: normal; font-weight: bold; " +
+                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.ENSEMBLE_COLOR + "; }");
       pw.println("em.equipment { font-style: normal; font-weight: bold; " +
                  "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.EQUIP_COLOR + "; }");
       pw.println("em.event     { font-style: normal; font-weight: bold; " +
@@ -55,7 +55,7 @@ public final class CardUtils
       pw.println("em.geocache  { font-style: normal; font-weight: bold; " +
                  "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + Geocache.COLOR + "; }");
       pw.println("em.tb        { font-style: normal; font-weight: bold; " +
-                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + TravelBug.COLOR + "; }");
+                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.TB_COLOR + "; }");
 
       pw.println("em.dnf       { font-style: normal; font-weight: bold; background-color: salmon }");
       pw.println("em.find      { font-style: normal; font-weight: bold; background-color: lightgreen }");
@@ -71,7 +71,7 @@ public final class CardUtils
       System.out.println("Cachers  : " + Cacher.CACHERS.size());
       System.out.println("Equipment: " + Equipment.EQUIPMENT.size());
       System.out.println("Events   : " + Event.EVENTS.size());
-      System.out.println("Combos   : " + Combo.COMBOS.size());
+      System.out.println("Ensembles: " + Ensemble.ENSEMBLES.size());
       System.out.println("Caches   : " + Geocache.CACHES.size());
       System.out.println("Trvl Bugs: " + TravelBug.BUGS.size());
       System.out.println();
@@ -79,15 +79,15 @@ public final class CardUtils
 
    private static void checkAllCardReferences()
    {
-      Pattern pattern = Pattern.compile("<em class=(cacher|combo|equipment|event|tb)>([^<]*)</em>",
+      Pattern pattern = Pattern.compile("<em class=(cacher|ensemble|equipment|event|tb)>([^<]*)</em>",
          Pattern.DOTALL | Pattern.CASE_INSENSITIVE);
 
       for (Card card : Cacher.CACHERS.values())
          checkCard(pattern, card.getText(), "Cacher: " + card.getName());
       for (Card card : Equipment.EQUIPMENT.values())
          checkCard(pattern, card.getText(), "Equipment: " + card.getName());
-      for (Card card : Combo.COMBOS.values())
-         checkCard(pattern, card.getText(), "Combo: " + card.getName());
+      for (Card card : Ensemble.ENSEMBLES.values())
+         checkCard(pattern, card.getText(), "Ensemble: " + card.getName());
       for (Card card : Event.EVENTS.values())
          checkCard(pattern, card.getText(), "Event: " + card.getName());
       for (Card card : Geocache.CACHES.values())
@@ -135,8 +135,8 @@ public final class CardUtils
          card = Cacher.CACHERS.get(cardName);
       else if (type.equals("equipment"))
          card = Equipment.EQUIPMENT.get(cardName);
-      else if (type.equals("combo"))
-         card = Combo.COMBOS.get(cardName);
+      else if (type.equals("ensemble"))
+         card = Ensemble.ENSEMBLES.get(cardName);
       else if (type.equals("event"))
          card = Event.EVENTS.get(cardName);
       else if (type.equals("geocache"))
@@ -151,7 +151,7 @@ public final class CardUtils
    {
       findUnannotatedCardReferences("docs/Rules.html");
       findUnannotatedCardReferences("src/geoquest/Cacher.java");
-      findUnannotatedCardReferences("src/geoquest/Combo.java");
+      findUnannotatedCardReferences("src/geoquest/Ensemble.java");
       findUnannotatedCardReferences("src/geoquest/Equipment.java");
       findUnannotatedCardReferences("src/geoquest/Event.java");
       findUnannotatedCardReferences("src/geoquest/Geocache.java");
@@ -167,8 +167,8 @@ public final class CardUtils
          checkCard(card.getName(), "cacher", textToCheck);
       for (Card card : Equipment.EQUIPMENT.values())
          checkCard(card.getName(), "equipment", textToCheck);
-      for (Card card : Combo.COMBOS.values())
-         checkCard(card.getName(), "combo", textToCheck);
+      for (Card card : Ensemble.ENSEMBLES.values())
+         checkCard(card.getName(), "ensemble", textToCheck);
       for (Card card : Event.EVENTS.values())
          checkCard(card.getName(), "event", textToCheck);
       for (Card card : Geocache.CACHES.values())

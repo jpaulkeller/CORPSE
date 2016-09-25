@@ -11,7 +11,9 @@ public class HtmlGenerator
 {
    public static final String CACHER_COLOR = "#F8E484";
    public static final String EVENT_COLOR = "#FFC4D2";
+   public static final String ENSEMBLE_COLOR = "#DDCCFF";
    public static final String EQUIP_COLOR = "#93F3FF";
+   public static final String TB_COLOR = "#F2F2F2";
 
    int cardsPerPage;
    int cardsPerRow;
@@ -30,10 +32,57 @@ public class HtmlGenerator
       this.imageH = imageH;
       this.textH = textH;
    }
+   
+   public void printTravelBugs(final Map<String, TravelBug> bugs)
+   {
+      String target = "docs/HTML/TravelBugs.html";
+
+      try
+      {
+         PrintWriter out = null;
+
+         out = new PrintWriter(target);
+         out.println("<html>");
+         out.println("<body>\n");
+         CardUtils.printStyle(out);
+
+         int i = 0;
+         for (TravelBug bug : bugs.values())
+            printToken(out, bug, i++);
+
+         out.println("</body>");
+         out.println("</html>");
+         out.close();
+
+         System.out.println(bugs.size() + " bugs written to: " + target);
+      }
+      catch (Exception x)
+      {
+         x.printStackTrace();
+      }
+   }
+
+   private void printToken(final PrintWriter out, final TravelBug bug, final int i)
+   {
+      if (i % cardsPerPage == 0)
+         out.println("<table cellspacing=10>\n");
+      if (i % cardsPerRow == 0)
+         out.println("<tr>");
+
+      out.print("<td style=\"" + " background-image: url(images/rules/TravelBug.png); " + " font-family: arial;" +
+                " font-size: small;" + " color: black;" + "\" align=center height=70 width=113>");
+      out.print("<b>" + bug.getName().replace(" ",  "&nbsp;") + "</b><br/>" + bug.getText().replace("\n", "<br/>"));
+      out.println("</td>");
+
+      if (i % cardsPerRow == cardsPerRow - 1)
+         out.println("</tr>\n");
+      if (i % cardsPerPage == cardsPerPage - 1)
+         out.println("</table></td>\n<p><hr><p>\n");
+   }
 
    public void printEquipment(final Map<String, Equipment> equipment)
    {
-      String target = "docs/Equipment.html";
+      String target = "docs/HTML/Equipment.html";
 
       try
       {
@@ -80,7 +129,7 @@ public class HtmlGenerator
       if (eq.getImage() != null)
       {
          out.println("  <tr><td align=center height=" + artH + " width=" + width + ">");
-         out.print("      <img align=center src=\"" + eq.getImage() + "\"");
+         out.print("      <img align=center src=\"../" + eq.getImage() + "\"");
          if (!eq.getImage().startsWith("Equipment"))
             out.print(" style=\"border:3px solid red\"");
          out.print(" height=" + imageH + ">");
@@ -92,8 +141,8 @@ public class HtmlGenerator
       out.println(getText(eq.getText()));
       out.println("</td></tr>");
       
-      String combo = eq.getCombo() != null ? eq.getCombo().replace(" ", "&nbsp;") : CardUtils.BLANK;
-      out.println("  <tr><td align=center bgcolor=" + Combo.COLOR + "><b>" + combo + "</b></td></tr>");
+      String ensemble = eq.getEnsemble() != null ? eq.getEnsemble().replace(" ", "&nbsp;") : CardUtils.BLANK;
+      out.println("  <tr><td align=center bgcolor=" + ENSEMBLE_COLOR + "><b>" + ensemble + "</b></td></tr>");
       out.println("</table></td>\n");
 
       if (i % cardsPerRow == cardsPerRow - 1)
@@ -102,9 +151,45 @@ public class HtmlGenerator
          out.println("</table></td>\n<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>\n");
    }
 
+   public void printEnsebles(final Map<String, Ensemble> ENSEMBLES)
+   {
+      String target = "docs/HTML/Ensembles.html";
+
+      try
+      {
+         PrintWriter out = null;
+
+         out = new PrintWriter(target);
+         out.println("<html>");
+         out.println("<body>\n");
+         CardUtils.printStyle(out);
+
+         out.println("<dl>");
+         for (Ensemble ensemble : ENSEMBLES.values())
+         {
+            out.println("  <dt><b><em class=ensemble>" + ensemble.getName() + "</em>:</b>");
+            out.println("      <em class=equipment>" + ensemble.eq1 + "</em> + ");
+            out.println("      <em class=equipment>" + ensemble.eq2 + "</em> + ");
+            out.println("      <em class=equipment>" + ensemble.eq3 + "</em></dt>");
+            out.println("  <dd>" + ensemble.getText() + "</dd>");
+         }
+         out.println("</dl>\n");
+
+         out.println("</body>");
+         out.println("</html>");
+         out.close();
+
+         System.out.println(ENSEMBLES.size() + " ensembles written to: " + target);
+      }
+      catch (Exception x)
+      {
+         x.printStackTrace();
+      }
+   }
+
    public void printEvents(final Map<String, Event> events)
    {
-      String target = "docs/Events.html";
+      String target = "docs/HTML/Events.html";
 
       try
       {
@@ -152,7 +237,7 @@ public class HtmlGenerator
       out.print("    <tr><td align=center height=" + artH + " width=" + width + ">");
       if (event.getImage() != null)
       {
-         out.print("<img align=center src=\"" + event.getImage() + "\"");
+         out.print("<img align=center src=\"../" + event.getImage() + "\"");
          if (!event.getImage().startsWith("Events"))
             out.print(" style=\"border:2px solid red\"");
          out.print(" height=" + imageH + ">");
@@ -179,7 +264,7 @@ public class HtmlGenerator
 
    public void printCachers(final Map<String, Cacher> cachers)
    {
-      String target = "docs/Cachers.html";
+      String target = "docs/HTML/Cachers.html";
 
       try
       {

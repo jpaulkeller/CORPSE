@@ -34,15 +34,15 @@ public class Event extends Card implements Comparable<Event>
    {
       this.name = name;
       this.type = type;
-      this.image = CardUtils.findImage ("Events", image != null ? image : name);
+      this.image = CardUtils.findImage ("Art/Events", image != null ? image : name);
       if (this.image == null)
-         this.image = CardUtils.findImage("TGC/Icons", "Missing");
+         this.image = CardUtils.findImage("Icons", "Missing");
       
       if (icon != null)
       {
-         this.icon = CardUtils.findImage("TGC/Icons", icon);
+         this.icon = CardUtils.findImage("Icons", icon);
          if (this.icon == null)
-            this.icon = CardUtils.findImage("TGC/Icons", "Missing");
+            this.icon = CardUtils.findImage("Icons", "Missing");
       }
       
       for (String eqName : protection)

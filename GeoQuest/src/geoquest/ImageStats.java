@@ -29,8 +29,8 @@ public class ImageStats
    Font letterFont;
    
    // Equipment cards only
-   Font comboFont, comboFont2;
-   Color comboColor;
+   Font ensembleFont, ensembleFont2;
+   Color ensembleColor;
    
    // Event cards only
    Font playFont;
@@ -62,7 +62,7 @@ public class ImageStats
       return stats;
    }
    
-   public static ImageStats getHexStats() // travel bugs, puzzle tokens, and FTF coins 
+   public static ImageStats getShardStats(final int fontSize) // travel bugs, puzzle tokens, and FTF coins 
    {
       ImageStats stats = new ImageStats();
       
@@ -71,8 +71,13 @@ public class ImageStats
       stats.centerX = stats.w / 2;
       stats.centerY = stats.h / 2;
       
-      stats.textFont = new Font("Cabin", Font.PLAIN, 32);
-      
+      // String fontName = "Cabin";
+      String fontName = "Archivo Narrow";
+      // String fontName = "Gill Sans MT Condensed";
+      // String fontName = "Steelfish";
+      // String fontName = "WinterthurCondensed";
+      stats.textFont = new Font(fontName, Font.PLAIN, fontSize);
+
       return stats;
    }
    
@@ -113,6 +118,34 @@ public class ImageStats
       return stats;
    }
    
+   public static ImageStats getEnsembleStats()
+   {
+      ImageStats stats = new ImageStats();
+      
+      stats.w = 825;
+      stats.h = 600;
+      stats.centerX = stats.w / 2;
+      stats.centerY = stats.h / 2;
+      
+      stats.safeMarginW = Math.round(stats.w / 100f * 9f);
+      stats.safeMarginH = Math.round(stats.h / 100f * 12.4f);
+      stats.safeW = stats.w - (stats.safeMarginW * 2);
+      stats.safeH = stats.h - (stats.safeMarginH * 2);
+
+      stats.cutMarginH = Math.round(stats.h / 100f * 6.1f);
+      stats.cutMarginW = Math.round(stats.w / 100f * 4.5f);
+
+      stats.titleFontName = "Bree Serif";
+      stats.titleFont = new Font(stats.titleFontName, Font.BOLD, 60);
+      stats.titleFont2 = new Font(stats.titleFontName, Font.BOLD, 50);
+      stats.titleBg = new Color(220, 160, 220); // plum (should match Equipment)
+         
+      stats.textFont = new Font("Cabin", Font.PLAIN, 70);
+      stats.textFont2 = new Font("Cabin", Font.PLAIN, 60);
+      
+      return stats;
+   }
+   
    public static ImageStats getEquipmentStats()
    {
       ImageStats stats = new ImageStats();
@@ -143,9 +176,9 @@ public class ImageStats
       stats.textFont = new Font("Cabin", Font.PLAIN, 50);
       stats.textFont2 = new Font("Cabin", Font.PLAIN, 40);
       
-      stats.comboFont = new Font(stats.titleFontName, Font.BOLD, 60);
-      stats.comboFont2 = new Font(stats.titleFontName, Font.BOLD, 50);
-      stats.comboColor = new Color(220, 160, 220); // plum
+      stats.ensembleFont = new Font(stats.titleFontName, Font.BOLD, 60);
+      stats.ensembleFont2 = new Font(stats.titleFontName, Font.BOLD, 50);
+      stats.ensembleColor = new Color(220, 160, 220); // plum
       
       return stats;
    }
