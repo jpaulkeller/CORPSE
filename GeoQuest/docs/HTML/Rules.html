@@ -1,0 +1,818 @@
+<html>
+
+<head>
+  <style type="text/css">
+  em.cacher    { font-style: normal; font-weight: bold; background-color: #F8E484;
+                 outline-style: solid; outline-width: thin; margin: 2px; 
+                 padding-left: 3; padding-right: 3; }
+  em.ensemble     { font-style: normal; font-weight: bold; background-color: #DDCCFF;
+                 outline-style: solid; outline-width: thin; margin: 2px;
+                 padding-left: 3; padding-right: 3; }
+  em.equipment { font-style: normal; font-weight: bold; background-color: #93F3FF;
+                 outline-style: solid; outline-width: thin; margin: 2px;
+                 padding-left: 3; padding-right: 3; }
+  em.event     { font-style: normal; font-weight: bold; background-color: #FFC4D2;
+                 outline-style: solid; outline-width: thin; margin: 2px;
+                 padding-left: 3; padding-right: 3; }
+  em.geocache  { font-style: normal; font-weight: bold; background-color: #84F9A6;
+                 outline-style: solid; outline-width: thin; margin: 2px;
+                 padding-left: 3; padding-right: 3; }
+  em.puzzle    { font-style: normal; font-weight: bold; background-color: #DD99DD;
+                 outline-style: solid; outline-width: thin; margin: 2px;
+                 padding-left: 3; padding-right: 3; }
+  em.tb        { font-style: normal; font-weight: bold; background-color: #F2F2F2;
+                 outline-style: solid; outline-width: thin; margin: 2px;
+                 padding-left: 3; padding-right: 3; }
+  
+  em.tile      { font-style: italic; color: blue }
+  em.coord     { font-style: normal; font-weight: bold; background-color: yellow;
+                 outline-style: solid; outline-width: thin; margin: 2px; 
+                 padding-left: 4; padding-right: 4; }
+  em.roll      { font-style: normal; font-weight: bold; }
+  em.dnf       { font-style: normal; font-weight: bold; background-color: salmon;
+                 outline-style: solid; outline-width: thin; margin: 1px; 
+                 padding-left: 3; padding-right: 3; }
+  em.find      { font-style: normal; font-weight: bold; background-color: lightgreen;
+                 outline-style: solid; outline-width: thin; margin: 1px; 
+                 padding-left: 3; padding-right: 3; }
+                 
+  em.ftf       { font-style: normal; font-weight: bold; color: blue; background-color: yellow }
+  em.tbd       { font-style: normal; background-color: pink }
+    
+  em.concept   { font-style: italic }
+  em.gameitem  { font-style: italic; color: blue }
+  em.section   { font-style: normal; font-weight: bold }
+  
+  .header      { font-style: normal; background-color: yellow }
+  .subheader   { font-style: normal; background-color: #FFFFDD }
+  .advanced    { font-style: normal; background-color: #DDFFEE }
+  </style>
+</head>
+
+<body>
+
+<center>
+ <h1 style=background-color:lightgreen>GeoQuest</h1>
+ <h3><i>The closest you can get to geocaching in a box!</i></h3>
+</center>
+
+<h2 class=header>INTRODUCTION and GOAL</h2>
+
+Geocaching is a high-tech adventure game enjoyed world-wide by players equipped with
+GPS receivers.  The basic idea is to find containers called geocaches, hidden outdoors
+by other players.  The geocaches are often located in interesting places that you 
+might not otherwise find.  If you're not familiar with geocaching, you can learn about
+it at <em class=gameitem>www.geocaching.com</em>.
+
+<p>
+GeoQuest is a board game based on geocaching, for 2 to 6 players, ages 12 and up.
+Once you learn how to play, a typical game takes about 30 minutes.  
+The object of the game is to be the first player to reach 25 points, or
+find all of the caches on the board.  You gain points by finding caches, 
+helping Travel Bugs reach their goal, or from various events that happen 
+randomly during the game. It is possible to lose points, but you can never
+go below zero.
+
+<p class=advanced>
+If you're just learning to play, you can skip the sections highlighted like this
+for now.
+</p>
+
+<h2 class=header>CONTENTS</h2>
+
+Your GeoQuest game comes with the following components:
+<ul>
+ <li>Game Board (includes map frame and 4 double-sided map sections)
+ <li>Two special 6-sided dice (for moving, searching, and triggering events)
+ <li>A 30-sided <em class=gameitem>Alphabet die</em> (for rolling random locations)
+ <li>Colored Cacher tokens (1 per player, for marking your position on the map)
+ <li>Colored chips (1 set per player, for marking caches as they are found)
+ <li>Three decks of cards: <em class=cacher>Cacher&nbsp;Characters</em>,
+     <em class=equipment>Equipment</em>, and <em class=event>Events</em>
+ <li>Cache disks showing the type and difficulty rating of the caches
+     (placed on the map board to mark cache locations)
+ <li>Puzzle Category chips (used for Puzzle caches; see below)
+ <li>Six color-coded Cacher Tracking panels
+ <li>Assorted Point and First-to-Find (FTF) coins, for keeping track of your points
+ <li class=advanced>Travel Bug disks (these show the Travel Bug's goal)</li>
+ <li class=advanced>A few blank cards are provided for you to make up your own.</li>
+</ul>
+
+<h3 class=subheader>THE MAP BOARD</h3>
+
+The map board is made up of separate sections called 
+<em class=concept>quadrants</em>.  Grid lines are marked so that each section
+is divided into 169 (13 x 13) smaller squares called <em class=tile>tiles</em>.
+Four sections are placed together in the map frame to create the map board.
+Each section is double-sided; you may place either side face up.  The sections
+are square; you may rotate them any way you like.  Sometimes paths or streams from
+one section may connect with another, but it's okay if they don't.  By flipping,
+moving, or rotating the sections, you can produce thousands of different map boards.
+
+<div style="page-break-before: always;"></div>
+
+<p></p>
+
+<table class="image" cellspacing=0 cellpadding=2 border=1 align=right>
+<caption align="bottom">
+  <em class=gameitem>The five types of terrain on the map board, along with
+  paths and streams.</em>
+</caption>
+<tr bgcolor=yellow>
+  <td align=center>Urban</td>
+  <td align=center>Clear</td>
+  <td align=center>Forest</td>
+  <td align=center>Swamp</td>
+  <td align=center>Rocky</td>
+  <td align=center bgcolor=cyan>Path</td>
+  <td align=center bgcolor=cyan>Stream</td>
+</tr>
+<tr>
+  <td><img src="images/TileUrban.jpg" width=50 height=50></td>
+  <td><img src="images/TileClear.jpg" width=50 height=50></td>
+  <td><img src="images/TileForest.jpg" width=50 height=50></td>
+  <td><img src="images/TileSwamp.jpg" width=50 height=50></td>
+  <td><img src="images/TileRocky.jpg" width=50 height=50></td>
+  <td><img src="images/TilePath.jpg" width=50 height=50></td>
+  <td><img src="images/TileStream.jpg" width=50 height=50></td>
+</tr>
+</table>
+
+<p>
+There are five types of terrain on the map board, as well as Paths and Streams.
+Even though some Rocky tiles might have a few trees, or some Forest tiles might
+have clear spots, each tile is treated as a single terrain type.  Tiles can 
+contain Paths or Streams, but these do not affect the terrain type.
+
+<p>
+The type of terrain does not affect movement directly.  However, some types of 
+equipment let you move faster on certain types of terrain.   Similarly, some 
+events can have different effects depending on what type of terrain you are in
+when they occur.  Paths and Streams do affect movement (see the 
+<em class=section>MOVEMENT</em> section below).
+
+<div class=advanced>
+
+<h4>Special Locations</h4>
+
+<table>
+<td><img src="markers/Hospital Blue.jpg" align=left></td>
+<td>There are several special locations marked on the map.  Some of these are 
+man-made, such as the <em class=tile>Hospital</em> and the <em class=tile>Police Station</em>.
+Others are natural, such as the <em class=tile>Waterfalls</em> and the <em class=tile>Scenic Views</em>.
+These locations are used by some of the Event cards, and also by some of the Travel Bugs.</td>
+</table>
+
+</div>
+
+<h2 class=header>PREPARATION</h2>
+
+Unfold the map frame, and arrange the 4 map quadrants to form the map board.
+
+<h3 class=subheader>INITIAL CACHE PLACEMENT</h3>
+
+<ol>
+ <li>Pick 8 random <em class=gameitem>Cache Disks</em>, and place them face-up
+     on any map tiles (except the lake).  Only one cache can occupy a tile.  
+     Spread them around the board (2 in each quadrant), among the various terrain types.
+     For any Puzzle caches, select a random <em class=gameitem>Puzzle Category
+     chip</em>, and place it with the cache chip.</li>  
+ <li>Add a <em class=ftf>FTF</em> coin under each cache disk; these
+     are bonus prizes (worth 1 point) for the first person to find the cache.</li>
+ <li class=advanced>Each player draws one <em class=gameitem>Travel Bug</em>, 
+     and places that chip under any cache chip.</li>
+</ol>     
+
+<p>
+Any player may view any of these tokens at any time; the puzzle categories or 
+Travel Bugs are not secret.  Usually it's best to keep the Cache Disk on top,
+since that's the most important one to know about when you're planning your moves. 
+
+<h3 class=subheader>PLAYER SETUP</h3>
+
+<p>
+Shuffle the Equipment and Event cards (separately), and place the decks within reach.
+Give each player the following:
+<ul>     
+  <li>one of the colored <em class=gameitem>Cacher Tokens</em> (to mark your position on the map)</li>
+  <li>the matching set of colored chips (to mark caches you've found)</li>
+  <li>the matching <em class=gameitem>Tracking Panel</em> (to help organize your items)</li>
+  <li>one random <em class=gameitem>Cacher Character</em> card</li>
+  <li>one random <em class=gameitem>Equipment</em> card</li>
+</ul>     
+
+<p>
+Note that Cacher Characters also have unique advantages and disadvantages.  For 
+example, <em class=cacher>Grampa&nbsp;Gary</em> gets +1 when searching.
+Don't forget to apply these special rules during the game.
+Each player starts with a random Equipment card.  Place that card on your
+<em class=gameitem>Tracking Panel</em>.
+
+<div style="page-break-before: always;"></div>
+
+<h3 class=subheader>STARTING LOCATION</h3>
+
+After all caches have been placed, roll the <em class=gameitem>Alphabet die</em>
+to determine your starting location.  Each Cacher Token starts on one of the
+<em class=gameitem>Latitude/Longitude Arrows</em> around the map frame.  There
+are 4 arrows for each letter (one on each side of the map); you may start on any
+of these four arrows not already occupied by another player's token.  You can use
+one of your colored chips to mark your starting location; an Event may require you
+to return to that spot later.
+
+<h2 class=header>PLAYING THE GAME</h2>
+
+<h3 class=subheader>TURN SEQUENCE</h3>
+
+A <em class=concept>turn</em> refers to a single player.  A <em class=concept>
+round</em> refers to one turn for all players (it still counts as a round, even
+if some players had to skip their turn).
+
+<p>
+Each turn has two parts: (1) events, and (2) moving/searching.  At the beginning
+of your turn, you must resolve any Event card which has been played on you.
+Follow the instructions on the Event card.  In some cases, this may cause you to
+end your turn before you get a chance to roll.  
+<p>
+Each turn, you declare whether you are going to Move, or Search.  You may only
+Search if your token is located in the same tile as a Cache you have not yet 
+found.  You roll both 6-sided dice to Move or Search and add the numbers 
+together to determine how far you can move (or how well you searched).
+
+<p>
+The dice are slightly different.  Both have sides with pips like normal dice, 
+representing numbers from zero to four.  Various combinations are possible, so
+that you can roll a total between 0 and 7; the average is 3.  Rolling doubles 
+triggers an event; see the <em class=section>EVENTS </em> section below for more
+information.  Each die also has one special (red or green) side with a cache icon,
+which is explained in the <em class=section>SEARCHING</em> and <em class=section>
+New Cache Event</em> sections below.
+
+<h3 class=subheader>MOVING</h3>
+
+<table cellspacing=0 cellpadding=2 border=1>
+<tr>
+<td align=center><img src="images/Moving.jpg"></td>
+<td>
+<em class=section>Normal Movement</em><br>
+When moving, you may move your token up to the total number you rolled on both 
+dice (plus any bonuses you may get).  This can be from 0 to 7 tiles (or more 
+with bonuses). You don't have to move the full amount.   Each step of your move
+must be to an adjacent tile; you may not move diagonally.  The <em class=find>
+FIND</em> and <em class=dnf>DNF</em> sides count as zero.
+</td></tr>
+
+<tr class=advanced>
+<td align=center><img src="images/MovePathBonus.png"></td>
+<td>
+<em class=section>Paths</em><br>
+Using a Path gives you a +1 bonus when moving.  Each turn, your first move 
+<em>along a Path</em> is free.  Even if you roll zero, if your token is 
+on a Path, you can move one tile along that path.  Note that all Urban tiles
+count as Paths.  You don't get the free move just by <i>crossing</i> a path.
+</td></tr>
+
+<tr class=advanced>
+<td align=center><img src="images/MoveStreamCrossing.png"></td>
+<td>
+<em class=section>Streams</em><br>
+Unlike Paths, Streams occur at the edge between tiles.  Crossing a stream
+costs 3 movement points, so you'll need to roll at least a 3 (including
+any move bonuses) in order to get across.  If you roll less than 3, you 
+can still move, but you can't cross the stream.
+This rule does not apply if you cross the Stream using one of the bridges.
+</td></tr>
+
+</table>
+
+<div style="page-break-before: always;"></div>
+
+<h4>Movement Bonuses</h4>
+
+Some Cacher Characters and Equipment cards gives you a bonus (or penalty) to move.
+For example, if you have the <em class=equipment>Binoculars</em>, you may move an 
+extra tile if you rolled a 4 or higher.  In some cases, this bonus requires a 
+certain type of terrain.  For example, the <em class=equipment>Hiking&nbsp;Boots</em>
+give you a +1 when you are moving in Forest terrain (you get the +1 if you move
+<i>into</i> any Forest tile during your turn).  You may use more than one movement bonus
+per turn.  So, if you happen to have the <em class=equipment>Hiking&nbsp;Boots</em>
+and the <em class=equipment>Binoculars</em>, you can combine them to move 2 extra 
+tiles on a single turn.
+	
+<h4>Jumping</h4>
+
+Some equipment (such as the <em class=equipment>FRS&nbsp;Radio</em>) and events (such
+as <em class=event>Broken&nbsp;Wrist</em> and <em class=event>Meet&nbsp;and&nbsp;Greet</em>)
+allow you to <em class=concept>jump</em> to other locations.  This simply means that 
+you move your token to another location, ignoring any movement bonuses, 
+penalties, or other terrain effects (such as Stream crossing restrictions).  
+
+<h3 class=subheader>SEARCHING</h3>
+
+Each cache has a <em class=concept>Difficulty Rating</em> -- from 1 (the easiest)
+to 5 (the hardest).  In order to find the cache, you must roll equal to or higher
+than the Difficulty Rating.  Some Cacher Characters and Equipment cards gives you
+a bonus (or penalty) to search.  For example, if you have the <em class=equipment>
+Flashlight</em>, you add 1 to your roll if you're searching for a cache no one
+has found yet. 
+
+<p>
+One die has a special <em class=find>FIND</em> side.  If you roll this, you 
+automatically find any cache you are searching for.  The other die has a special
+<em class=dnf>DNF</em> (<i>did not find</i>) side.  If you roll the DNF, you fail to 
+find the cache (no matter what your rolled on the other die).  You must wait 
+until your next turn to try again.  Otherwise, apply any bonuses or penalties 
+to determine your Search score.  If your Search score is equal to or higher than
+the cache Difficulty Rating, you find the cache!
+
+<p>
+Geocachers often team up to find caches.  Any time two or more cachers are both 
+on the same tile, they all get credit for the find if any one of them finds the
+cache.  Only the player who makes the successful Search roll gets the 
+<em class=ftf>FTF</em> bonus point.  If another play finds the cache for you, 
+you get the points and equipment on your next turn; you don't need to roll (and 
+you don't get to move).
+
+<h3 class=subheader>FINDING A CACHE</h3>
+<table>
+<tr>
+  <td>When you find a cache:</td>
+  <td align=center rowspan=2>
+    <img src="images/FTF.gif" align=left hspace=10 height=60 width=60><br/>
+    <img src="images/PointCoin-3.gif" align=left hspace=10 height=60 width=60>
+  </td>
+</tr>
+<tr>
+  <td align=left>
+  <ul>
+   <li>get a Point Coin equal to the Difficulty Rating of the cache
+   <li>if you were the first to find this cache, take the <em class=ftf>FTF</em> coin
+   <li>put one of your colored chips under the cache chip to show you found it
+   <li>draw two Equipment cards, keep one, and put one the other back in the deck
+   <li class=advanced>take and/or leave Travel Bugs (see the <em class=section>Travel Bug</em> section)
+  </ul>
+  </td>
+</tr>
+</table>
+
+Finding a cache is the main way to earn points and get equipment in the game.
+You score points equal to the cache Difficulty Rating (add the appropriate coin
+to your pile of Point coins on your <em class=gameitem>Tracking Panel</em>).  
+If you were the final player to find a cache (in other words, all players have 
+now found it), you remove it from the board. Otherwise, put one of your colored
+chips under the cache chip.  This allows everyone to keep track of which players
+have found which caches.
+
+<p>
+When you find a cache while geocaching, you typically trade items.  This means
+you take a trinket out of the cache, and leave something to replace it.  When you find
+a cache in the GeoQuest game, you get to draw 2 Equipment cards from the deck.
+You can keep either of these, but you must return the other card
+(to the bottom of the deck).  So, you'll gain 1 Equipment card each time you find a
+cache (as long as you have room for the Equipment).
+</p>
+
+<h2 class=header>GEOCACHES</h2>
+
+<h4>Normal (Traditional) Caches</h4>
+
+<img src="images/Geocache-Normal-2.png" align=left hspace=10>
+
+Caches are represented by the <em class=gameitem>Cache Chip</em> on the
+map.  Each cache has a type which corresponds to the picture on the chip. 
+Each cache also has a Difficulty Rating (from 1 to 5), which is shown in a
+circle on the bottom-right side of the chip.  For example, the cache on the 
+left is a Normal one, and has a Difficulty rating of 2.  Normal caches have 
+no special rules associated with them; the other cache types are described below.
+
+<div class=advanced>
+
+<h4>Multi Caches</h4>
+
+<img src="images/Geocache-Multi2-3.png" align=left hspace=10>
+
+Multiple-stage caches (Multi-cache for short) require you to find one or more
+<em class=concept>stages</em>, before you can find the actual cache.  In
+geocaching, each stage usually contains a clue or the coordinates that lead to
+the next stage.  In GeoQuest, you must make a separate Search roll for
+each stage.  The number of stages is specified on the cache chip.  
+To find a 2-stage Multi-cache (with Difficulty 3) like the one shown, you would 
+have to make 2 successful Search rolls of 3 or better.
+
+<p>
+<b>Each time you successfully find a stage, you may continue rolling to 
+try and find the next stage.</b>  So it is possible to find a Multi-cache in a
+single turn, although it may take several turns (especially for those level 4 or higher).
+You only have to find each stage once (keep count each time you make a successful
+Search roll); you don't have to start over each turn.  If more than one cacher is
+on the same spot, each successful Search roll counts for everyone on the tile.
+Note that only the first roll on any turn may trigger an event.
+
+</div>
+
+<h4>Puzzle Caches</h4>
+
+<img src="images/Geocache-Puzzle-4.png" align=left hspace=10>
+
+Puzzle caches require that you solve a puzzle in order to get the location of 
+the cache.  In GeoQuest, the row and column letters (of the tile where the 
+cache is hidden) are used as part of the puzzle.  Before a player can search for the
+cache, she must <em class=concept> solve the puzzle</em> by supplying a name 
+that contains those two letters and fits the Category (shown on the puzzle 
+category chip).  The letters can appear anywhere in the solution, in any order.
+The puzzle can only be solved when the player's token is at the cache location.
+
+<p>
+Let's say you want to find a Puzzle cache with the category
+of <em class=concept>Animals</em> at row <em class=coord>U</em> and column
+<em class=coord>Z</em>.  You could solve this puzzle using the word "buzzard".
+Another player could also solve it using a different animal such as "zebra mussel".
+Multi-word names are acceptable; some categories allow proper names as well.
+
+<p>
+Each player who wants to search for the cache must come up with her own solution.
+Once you've solved the puzzle, treat it just like a normal cache.  You still need
+to make a successful Search roll in order to find it.  If you fail to find it 
+with your first Search roll, that's okay.  You don't need to solve the puzzle 
+again; just continue to search as you would for any other cache.
+
+<div style="page-break-before: always;"></div>
+
+<h2 class=header>EQUIPMENT</h2>
+
+Various types of geocaching gear are represented in the game using the deck of 
+Equipment cards.  Although you don't need any special equipment to geocache 
+(other than a GPS receiver), some of it can be quite helpful.  Sometimes the
+equipment will have a built-in bonus, such as the <em class=equipment>Flashlight</em>, 
+which helps you when searching.
+
+<img src="images/BugSpray.jpg" align=left>
+
+<p>
+Other Equipment cards can prevent the effects of certain events.  For example, 
+the <em class=equipment>Insect&nbsp;Repellent</em> can prevent the 
+<em class=event>Mosquitoes</em> or <em class=event>Ticks</em>
+from bothering you.  Most of the time you just need to have the Equipment card 
+on your Tracking Panel to benefit from it.  Sometimes, you must discard the card
+in order to use it.  For example, the <em class=equipment>First-aid&nbsp;Kit</em> can
+be discarded to prevent various injury events in the game.  Unlike Event cards, 
+<b>when an Equipment card is discarded, shuffle it back into the deck</b>.
+
+<img src="images/Backpack.png" align=right>
+
+<p>
+You may have up to 4 Equipment cards (played face up on your Tracking Panel).
+If you already have all the Equipment cards that you are allowed when you draw
+a new one, you must either discard it or one of your other Equipment cards. 
+Some Equipment cards (such as the <em class=equipment>Backpack</em>) 
+allow you to have more than 4 Equipment cards in play.
+
+<div class=advanced>
+
+<h3>EQUIPMENT ENSEMBLES</h3>
+
+At the bottom of each Equipment card, there is a <em class=concept>Ensemble</em>
+name.  For example, the <em class=equipment>Compass</em>, <em class=equipment>Batteries</em>, and 
+<em class=equipment>Pocket&nbsp;Knife</em> cards comprise the 
+<em class=ensemble>Eagle&nbsp;Scout</em> Ensemble.  Each Ensemble is made up of three
+Equipment cards.  If you're lucky enough to get two or more of the cards in a particular Ensemble,
+you get a special bonus (shown below). You can refer to the list
+below to remind yourself of the effects.
+
+<p>
+Some of these special effects (such as the <em class=ensemble>Engineer</em>
+Ensemble) are triggered when a particular roll is made.  When a game effect (such as
+<em class=cacher>Determined&nbsp;Dan</em>) allows a player to re-roll the dice, the
+original (ignored) roll doesn't trigger the effect.  However if a player takes another turn, 
+each roll has a chance of triggering a Ensemble bonus.
+When a player makes multiple rolls while searching for a Multi-cache,
+each roll has a chance to trigger ensemble effects.
+   
+</div>
+
+<h2 class=header>EVENTS</h2>
+
+<img src="images/EventRoll.png" align=left hspace=10>
+
+Whenever you want to Move or Search, you roll the two 6-sided dice.  If you roll 
+doubles, you draw an Event card (before moving or searching).  Don't reveal the card
+to the other players yet.  You may keep it, or play it on yourself or any
+other player.  Players may only keep one Event card at a time though, so if you 
+already have one, you'll have to play or discard one of them.  
+
+<p>
+To play an Event card, simply place it face-up in front of the player you want
+to target.  The event will take effect at the beginning of that player's next turn.
+Only one Event card can be played on a person at a time though, so you can't target
+a player who already has an Event card in play.  Unlike Equipment cards, <b>when an
+Event card is discarded or resolved, remove it from the game</b>.  
+
+<h4>Special Events</h4>
+
+Some event cards (such as <em class=event>Fresh&nbsp;Snow</em>) are marked <em class=dnf>Play Now</em>.
+If you draw one of these, you must follow the instructions immediately, before 
+moving or searching.  Others (such as <em class=event>Helpful&nbsp;Hint</em>) are marked 
+<em class=find>Discard To Play</em>.  You may discard this type of event 
+card (<b>even after you roll</b>), to have it take effect. 
+
+Most events only affect the current player.  In some cases, an event may 
+affect more that one player, or may last one or more rounds.  For multi-round events you may
+want to add markers on the card, and remove one as each round ends.
+
+See the <em class=section>Clarifications</em> section if you have questions about these events.
+
+<div class=advanced>
+
+<h4>New Cache Event and Random Cache Placement</h4>
+
+<img src="images/CacheDice.png" align=left hspace=10>
+
+If you roll both Cache icons (the <em class=find>FIND</em> and <em class=dnf>DNF</em>
+sides), you have triggered a New Cache Event.  Your turn is over (you don't move, 
+or find any cache you may have been searching for), but you get to add a new cache
+onto the board, and you earn 2 points!  Randomly select a cache chip to place.  
+
+<p>
+<img src="images/AlphabetDice.png" align=right>
+
+New caches should be placed randomly.  You can choose a random location by rolling
+the <em class=gameitem>Alphabet die</em> twice (once to determine the latitude/row,
+and once to determine the longitude/column).  The rows and columns are marked 
+with the letters of the alphabet.  For example, if you roll "S" and "V", place
+the cache token in row <em class=coord>S</em>, column <em class=coord>V</em>.
+Two caches cannot be on the same tile; roll again if necessary to avoid that.
+
+<p>
+The <em class=gameitem>Alphabet die</em> has all 26 letters of the alphabet, as
+well as 4 <em class=concept>wilds</em>.  If you roll one of the wilds, you can
+choose any letter you like.  If you roll a wild for your column (for example),
+you may choose any tile along the row you rolled.  If you roll wild on your
+first roll, you may roll for the column before choosing which row you want.
+
+</div>
+
+<div class=advanced>
+
+<h3>TRAVEL BUGS</h3>
+
+Travel Bugs are represented in GeoQuest using small chips.  Players start
+the game with one Travel Bug, and can acquire more by finding a cache that
+contains them.  If the cache you found contains any Travel Bugs, you may take one.
+If you do, move it from the map onto your Tracking Panel.  You may only take one
+Travel Bug, and only if you don't already have two.
+
+<p>
+If you have any Travel Bugs with you when you end your turn on a tile that contains a 
+cache that you have found, you may leave them in that cache.  To do so, move the
+Travel Bug chip from your Tracking Panel onto the cache.
+You can leave any number of these in the cache; you gain 1 point for each 
+one you leave.  You can't leave one in the same cache that you got it from.
+
+<img src="images/TravelBug.jpg" align=right>
+
+<p>
+Each Travel Bug has a goal (shown on the <em class=gameitem>Travel Bug chip</em>).
+If you help it reach its goal, then you score 3 points (instead of the 1 point 
+you normally get).  For example, you could leave the Travel Bug shown on the right
+in any cache which is next to a Stream to achieve its goal.  You may want to re-visit
+a cache which you have previously found in order to leave a Travel Bug.  That's fine;
+you don't have to search for the cache again once you've found it; just end your turn
+on the tile containing that cache.
+
+<p>
+Sometimes a Travel Bug might start out in a cache that would satisfy its goal;
+if that happens, you must find another cache in order to earn the 3 points.
+<b>When a Travel Bug reaches its goal, it is removed from the game.</b>  In some
+cases, it may not be possible for a Travel Bug to reach its goal; but you can 
+still score 1 point by leaving it in a cache.
+
+</div>
+
+<div class=advanced style="page-break-before: always; font-size: 80%; line-height: 1.35">
+
+<center><h2 class=header>CLARIFICATIONS</h2></center>	
+
+<b>Unless the card says otherwise...</b>  Some cards will contradict the basic game rules.
+When that happens, follow the instructions on the card.
+
+<h4>Cache Characters</h4>
+
+<ul>
+
+<li><em class=cacher>Jolly&nbsp;Jamie</em>:
+The <em class=equipment>Geocoin</em> Equipment cards do count towards a 
+player's total points, but the <em class=equipment>CITO&nbsp;Bag</em> does not.
+
+<li><em class=cacher>Independent&nbsp;Isabel</em>: A map <em class=concept>quadrant
+</em> is the separate board piece that represents a quarter of the total map area.
+
+</ul>
+
+<h4>Puzzle Cache Categories</h4>
+
+<ul>
+
+<li><em class=puzzle>5-LETTER WORDS</em>: The solution must be a five letter word.
+<li><em class=puzzle>___ & ___ PHRASES</em>: The solution must be a common phrase
+such as <i>Salt & Pepper</i> (don't count the word "and").
+<li><em class=puzzle>BLACK or WHITE</em>: The solution must be something that is
+either black or white (or both). 
+<li><em class=puzzle>FIRST & LAST</em>: The solution can be any word, with the 
+puzzle letters as the first and last letters in the word (either order). 
+<li><em class=puzzle>SIDE BY SIDE</em>: The solution can be any word, but the 
+puzzle letters must be next to each other. 
+
+</ul> 
+
+<h4>Equipment and Ensembles</h4>
+
+<ul>
+
+<li><em class=equipment>Cell&nbsp;Phone</em>: You may choose to take the +1 
+bonus after you roll.
+
+<li><em class=ensemble>Event&nbsp;Coordinator</em>: If the event is discarded, other events may still
+be played on you this turn.
+
+<li><em class=equipment>First-aid&nbsp;Kit</em>: Injury Event cards include 
+<em class=event>Blisters</em>, 
+<em class=event>Broken&nbsp;Wrist</em>, and
+<em class=event>Twisted&nbsp;Ankle</em>.
+
+<li><em class=ensemble>Naturalist</em>: Wildlife Event cards include 
+<em class=event>Angry&nbsp;Bees</em>, 
+<em class=event>Bear&nbsp;Encounter</em>, 
+<em class=event>Fire&nbsp;Ants</em>, 
+<em class=event>Fox&nbsp;Hunt</em>, 
+<em class=event>Is&nbsp;That&nbsp;Venomous?</em>,
+<em class=event>Mosquitoes</em>, 
+<em class=event>Rare&nbsp;Bird</em>, 
+<em class=event>Ticks</em>, and
+<em class=event>Yellow&nbsp;Jackets</em>.
+
+<li><em class=ensemble>Night&nbsp;Cacher</em>: For example, if the
+<em class=event>Litterbug</em> event card is played on you, you would only lose 
+1 point instead of 4.
+ 
+<li><em class=ensemble>Weatherman</em>: Weather Event cards include
+<em class=event>Bad&nbsp;Weather</em>,  
+<em class=event>Caught&nbsp;in&nbsp;the&nbsp;Rain</em>, 
+<em class=event>Winter&nbsp;is&nbsp;Coming</em>, 
+<em class=event>Drought</em>, 
+<em class=event>Flash&nbsp;Flood</em>,
+<em class=event>Fresh&nbsp;Snow</em>, and
+<em class=event>Heavy&nbsp;Rain</em>.
+ 
+</ul>
+
+<h4>Events</h4>
+
+<ul>
+
+<li><em class=event>Drought</em>: This event lasts two rounds.  In
+other words, it affects all players for their next two turns.  Place this card on
+the map board, so all players can see it.  Remove it from the game after
+it has been in effect for two rounds.  Although only one Event card may be played
+per turn, other events may be played while a multi-turn event is in effect.
+Other Event cards that last a round or more include:
+<em class=event>Fresh&nbsp;Snow</em>,
+<em class=event>Heavy&nbsp;Rain</em>, and  
+<em class=event>Solar&nbsp;Flares</em>.
+<em class=event>Souvenir&nbsp;Day</em>.
+
+<li><em class=event>Bug&nbsp;Swap</em>: If no one else has a Travel Bug, ignore this
+event.
+
+<li><em class=event>Cache&nbsp;Pirates</em>: Any Travel Bug in the cache is removed
+from the game.
+
+<li><em class=event>Equipment&nbsp;Rental</em>: If you lose the equipment you rented
+for any reason, return it to the deck. 
+
+<li><em class=event>Eureka!</em>: If you're having trouble solving a particular
+Puzzle cache, you may play this card instead.  Or you can play it to find a hard
+cache.  It only replaces as a single Search roll though, so you would still have
+to roll for the other stages of a Multi-cache.  Since this is a <em class=find>
+Discard To Resolve</em> card, you may play it after you roll.
+
+<li><em class=event>Meet&nbsp;and&nbsp;Greet</em>: This is known as an Event Cache
+in geocaching.  Roll the <em class=gameitem>Alphabet&nbsp;die</em> twice to 
+determine the location of the party.
+
+<li><em class=event>Lost&nbsp;and&nbsp;Found</em>: If the player you give the card to
+doesn't have room, that player must discard a card (they may discard the one
+you gave them).
+
+<li><em class=event>May&nbsp;I&nbsp;Borrow&nbsp;That?</em>: You can only borrow a 
+<em class=concept>pack</em> Equipment card (such as the <em class=equipment>
+Backpack</em>, <em class=equipment>Belt&nbsp;Pack</em>, <em class=equipment>
+Camel&nbsp;Pack</em>, <em class=equipment>Safari&nbsp;Vest</em>,
+<em class=equipment>Swag&nbsp;Bag</em> or <em class=equipment>
+Rain&nbsp;Jacket</em>) if doing so would not cause that player to have 
+more Equipment cards than he's allowed to hold.  You can't borrow rented equipment.
+
+<li><em class=event>Shortcut</em>: Allows you to move up to 6 tiles even if you
+cross a stream.
+
+<li><em class=event>Upgrade</em>: If there is more than one player with the 
+fewest Equipment cards, you may choose the player.  See the <em class=event>
+Lost&nbsp;and&nbsp;Found</em> clarification above. 
+
+</ul>
+
+</div>
+
+<div class=advanced style="page-break-before: always; font-size: 85%; line-height: 1.35">
+
+<center><h2 class=header>EQUIPMENT ENSEMBLES</h2></center>
+
+<!-- don't edit these here, use Ensemble.java instead! -->
+
+<dl>
+  <dt><b><em class=ensemble>Eagle&nbsp;Scout</em>:</b>
+      <em class=equipment>Batteries</em> + 
+      <em class=equipment>Compass</em> + 
+      <em class=equipment>Pocket&nbsp;Knife</em></dt>
+  <dd>When an event would affect you, you may discard any Equipment card to ignore it.</dd>
+  <dt><b><em class=ensemble>Engineer</em>:</b>
+      <em class=equipment>Antenna</em> + 
+      <em class=equipment>Cell&nbsp;Phone</em> + 
+      <em class=equipment>Laptop</em></dt>
+  <dd>Whenever another player rolls a <em class=find>FIND</em>, you get +1 on your next roll.  (This is not limited to once per turn.)</dd>
+  <dt><b><em class=ensemble>Event&nbsp;Coordinator</em>:</b>
+      <em class=equipment>Geocoin</em> + 
+      <em class=equipment>Hiking&nbsp;Staff</em> + 
+      <em class=equipment>Letterbox&nbsp;Stamp</em></dt>
+  <dd>Whenever someone tries to play an Event card on you, you both roll the dice.  If you roll higher, the event does not affect you (it is discarded).</dd>
+  <dt><b><em class=ensemble>Hitchhiker</em>:</b>
+      <em class=equipment>Lucky&nbsp;Charm</em> + 
+      <em class=equipment>Survival&nbsp;Strap</em> + 
+      <em class=equipment>Swag&nbsp;Bag</em></dt>
+  <dd>Whenever you roll <em class=roll>4+2</em>,you may jump to any tile as your move.</dd>
+  <dt><b><em class=ensemble>Lifeguard</em>:</b>
+      <em class=equipment>Bandana</em> + 
+      <em class=equipment>Hat</em> + 
+      <em class=equipment>Whistle</em></dt>
+  <dd>If a player next to a stream or lake rolls a <em class=roll>1</em> on either die, you may immediately jump to their location.</dd>
+  <dt><b><em class=ensemble>MacGyver</em>:</b>
+      <em class=equipment>Belt&nbsp;Pack</em> + 
+      <em class=equipment>Duct&nbsp;Tape</em> + 
+      <em class=equipment>Utility&nbsp;Tool</em></dt>
+  <dd>You may skip your turn to draw an Equipment card.</dd>
+  <dt><b><em class=ensemble>Naturalist</em>:</b>
+      <em class=equipment>CITO&nbsp;Bag</em> + 
+      <em class=equipment>Field&nbsp;Guide</em> + 
+      <em class=equipment>Walking&nbsp;Stick</em></dt>
+  <dd>All wildlife Event cards (drawn, in play, or in a player's hand) are discarded, and you gain 2 points for each one.</dd>
+  <dt><b><em class=ensemble>Night&nbsp;Cacher</em>:</b>
+      <em class=equipment>Flashlight</em> + 
+      <em class=equipment>Head&nbsp;Lamp</em> + 
+      <em class=equipment>Insect&nbsp;Repellent</em></dt>
+  <dd>All roll and point penalties against you are treated as -1.</dd>
+  <dt><b><em class=ensemble>Paramedic</em>:</b>
+      <em class=equipment>First-aid&nbsp;Kit</em> + 
+      <em class=equipment>Repair&nbsp;Kit</em> + 
+      <em class=equipment>Rope</em></dt>
+  <dd>If an Event card would award you points, instead roll the dice to determine how many points you earn.</dd>
+  <dt><b><em class=ensemble>Photographer</em>:</b>
+      <em class=equipment>Camera</em> + 
+      <em class=equipment>Mirror</em> + 
+      <em class=equipment>Safari&nbsp;Vest</em></dt>
+  <dd>You get 2 points if you end your turn on a <em class=tile>Scenic View</em> or on the same tile as another player.  (You may only get points once per <em class=tile>View</em> or player.)</dd>
+  <dt><b><em class=ensemble>Road&nbsp;Warrior</em>:</b>
+      <em class=equipment>Gorp</em> + 
+      <em class=equipment>Camel&nbsp;Pack</em> + 
+      <em class=equipment>Mountain&nbsp;Bike</em></dt>
+  <dd>If you roll 5 or higher while on a Path, you may jump to any tile on that Path.</em></dd>
+  <dt><b><em class=ensemble>Search&nbsp;and&nbsp;Rescue</em>:</b>
+      <em class=equipment>Binoculars</em> + 
+      <em class=equipment>FRS&nbsp;Radio</em> + 
+      <em class=equipment>Jeep</em></dt>
+  <dd>Whenever anyone rolls the <em class=roll>blank side</em>, you may immediately jump to the roller's location.</dd>
+  <dt><b><em class=ensemble>Through&nbsp;Hiker</em>:</b>
+      <em class=equipment>Backpack</em> + 
+      <em class=equipment>Hiking&nbsp;Boots</em> + 
+      <em class=equipment>Trail&nbsp;Guide</em></dt>
+  <dd>Each time you roll doubles while on a Path, you may take an extra turn.  (This is not limited to once per turn.)</dd>
+  <dt><b><em class=ensemble>Tracker</em>:</b>
+      <em class=equipment>Ol'&nbsp;Blue</em> + 
+      <em class=equipment>Map</em> + 
+      <em class=equipment>Waders</em></dt>
+  <dd>If a player in your quadrant rolls <em class=find>FIND</em> or <em class=dnf>DNF</em>, you may immediately jump to their location.</dd>
+  <dt><b><em class=ensemble>Veteran</em>:</b>
+      <em class=equipment>Gaiters</em> + 
+      <em class=equipment>Long&nbsp;Pants</em> + 
+      <em class=equipment>Water&nbsp;Bottle</em></dt>
+  <dd>If you roll a <em class=find>FIND</em> or <em class=dnf>DNF</em> while moving, you may ignore it, and add 2 to your roll.</dd>
+  <dt><b><em class=ensemble>Weatherman</em>:</b>
+      <em class=equipment>Emergency&nbsp;Radio</em> + 
+      <em class=equipment>Gloves</em> + 
+      <em class=equipment>Rain&nbsp;Jacket</em></dt>
+  <dd>All weather Event cards (drawn, in play, or in a player's hand) are discarded, and you gain 2 points for each one.</dd>
+</dl>
+
+</div>
+
+</body>
+</html>
+

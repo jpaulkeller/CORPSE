@@ -1,0 +1,105 @@
+<html>
+<body>
+
+<style type="text/css">
+table.event { border: 1px solid black; padding: 2px; }
+td, th { padding: 5px; }
+em.cacher    { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #F8E484; }
+em.ensemble  { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #DDCCFF; }
+em.equipment { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #93F3FF; }
+em.event     { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #FFC4D2; }
+em.geocache  { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #254C00; }
+em.tb        { font-style: normal; font-weight: bold; outline-style: solid; outline-width: thin; margin: 2px; background-color: #F2F2F2; }
+em.dnf       { font-style: normal; font-weight: bold; background-color: salmon }
+em.find      { font-style: normal; font-weight: bold; background-color: lightgreen }
+em.roll      { font-style: normal; font-weight: bold; background-color: yellow }
+em.ftf       { font-style: normal; font-weight: bold; color: blue; background-color: yellow }
+em.tbd       { font-style: normal; background-color: pink }
+.bug         { font-size: small; }
+</style>
+
+<dl>
+  <dt><b><em class=ensemble>Eagle Scout</em>:</b>
+      <em class=equipment>Batteries</em> + 
+      <em class=equipment>Compass</em> + 
+      <em class=equipment>Pocket Knife</em></dt>
+  <dd>When an event would affect you, you may discard any Equipment card to ignore it.</dd>
+  <dt><b><em class=ensemble>Engineer</em>:</b>
+      <em class=equipment>Antenna</em> + 
+      <em class=equipment>Cell Phone</em> + 
+      <em class=equipment>Laptop</em></dt>
+  <dd>Whenever another player rolls a <em class=find>.F.</em>, you get +1 on your next roll.  (not limited to once per turn.)</dd>
+  <dt><b><em class=ensemble>Event Coordinator</em>:</b>
+      <em class=equipment>Geocoin</em> + 
+      <em class=equipment>Hiking Staff</em> + 
+      <em class=equipment>Letterbox Stamp</em></dt>
+  <dd>Whenever someone plays an Event card on you, you both roll the dice.  If you roll higher, it does not affect you (discard it).</dd>
+  <dt><b><em class=ensemble>Hitchhiker</em>:</b>
+      <em class=equipment>Lucky Charm</em> + 
+      <em class=equipment>Survival Strap</em> + 
+      <em class=equipment>Swag Bag</em></dt>
+  <dd>Whenever you roll <em class=roll>4+2</em>,you may jump to any tile as your move.</dd>
+  <dt><b><em class=ensemble>Lifeguard</em>:</b>
+      <em class=equipment>Bandana</em> + 
+      <em class=equipment>Hat</em> + 
+      <em class=equipment>Whistle</em></dt>
+  <dd>If a player next to a stream or lake rolls a <em class=roll>1</em> on either die, you may immediately jump to their location.</dd>
+  <dt><b><em class=ensemble>MacGyver</em>:</b>
+      <em class=equipment>Belt Pack</em> + 
+      <em class=equipment>Duct Tape</em> + 
+      <em class=equipment>Utility Tool</em></dt>
+  <dd>You may skip your turn to draw an Equipment card.</dd>
+  <dt><b><em class=ensemble>Naturalist</em>:</b>
+      <em class=equipment>CITO Bag</em> + 
+      <em class=equipment>Field Guide</em> + 
+      <em class=equipment>Walking Stick</em></dt>
+  <dd>All wildlife Event cards (drawn, in play, or in a player's hand) are discarded, and you gain 2 points for each one.</dd>
+  <dt><b><em class=ensemble>Night Cacher</em>:</b>
+      <em class=equipment>Flashlight</em> + 
+      <em class=equipment>Head Lamp</em> + 
+      <em class=equipment>Insect Repellent</em></dt>
+  <dd>All roll and point penalties against you are treated as -1.</dd>
+  <dt><b><em class=ensemble>Paramedic</em>:</b>
+      <em class=equipment>First-aid Kit</em> + 
+      <em class=equipment>Jeep</em> + 
+      <em class=equipment>Repair Kit</em></dt>
+  <dd>If an Event card would award you points, instead roll the dice to determine how many points you earn.</dd>
+  <dt><b><em class=ensemble>Photographer</em>:</b>
+      <em class=equipment>Camera</em> + 
+      <em class=equipment>Mirror</em> + 
+      <em class=equipment>Safari Vest</em></dt>
+  <dd>You get 2 points if you end your turn on a <em class=tile>Scenic View</em> or <em class=tile>Waterfall</em>.  (You may only get the points once each.)</dd>
+  <dt><b><em class=ensemble>Road Warrior</em>:</b>
+      <em class=equipment>Gorp</em> + 
+      <em class=equipment>Camel Pack</em> + 
+      <em class=equipment>Mountain Bike</em></dt>
+  <dd>If you roll 5 or higher while on a Path, you may jump to any tile on that Path.</em></dd>
+  <dt><b><em class=ensemble>Search and Rescue</em>:</b>
+      <em class=equipment>Binoculars</em> + 
+      <em class=equipment>FRS Radio</em> + 
+      <em class=equipment>Rope</em></dt>
+  <dd>Whenever anyone rolls a <em class=dnf>.D.</em>, you may immediately jump to their location.</dd>
+  <dt><b><em class=ensemble>Through Hiker</em>:</b>
+      <em class=equipment>Backpack</em> + 
+      <em class=equipment>Hiking Boots</em> + 
+      <em class=equipment>Trail Guide</em></dt>
+  <dd>Each time you roll doubles while on a Path, you may take an extra turn (not limited to once per turn).</dd>
+  <dt><b><em class=ensemble>Tracker</em>:</b>
+      <em class=equipment>Ol' Blue</em> + 
+      <em class=equipment>Map</em> + 
+      <em class=equipment>Waders</em></dt>
+  <dd>If a player in your quadrant rolls <em class=find>.F.</em> or <em class=dnf>.D.</em>, you may immediately jump to their location.</dd>
+  <dt><b><em class=ensemble>Veteran</em>:</b>
+      <em class=equipment>Gaiters</em> + 
+      <em class=equipment>Long Pants</em> + 
+      <em class=equipment>Water Bottle</em></dt>
+  <dd>If you roll a <em class=find>.F.</em> or <em class=dnf>.D.</em> while moving, you may ignore it, and add 2 to your roll.</dd>
+  <dt><b><em class=ensemble>Weatherman</em>:</b>
+      <em class=equipment>Emergency Radio</em> + 
+      <em class=equipment>Gloves</em> + 
+      <em class=equipment>Rain Jacket</em></dt>
+  <dd>All weather Event cards (drawn, in play, or in a player's hand) are discarded, and you gain 2 points for each one.</dd>
+</dl>
+
+</body>
+</html>
