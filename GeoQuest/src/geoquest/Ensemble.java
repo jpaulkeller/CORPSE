@@ -1,25 +1,19 @@
 package geoquest;
 
-import java.io.PrintWriter;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Combo extends Card implements Comparable<Combo>
+public class Ensemble extends Card implements Comparable<Ensemble>
 {
-   public static final String COLOR = "#DDCCFF";
-
-   static final Map<String, Combo> COMBOS = new TreeMap<>();
-   static
-   {
-      populate();
-   }
+   static final Map<String, Ensemble> ENSEMBLES = new TreeMap<>();
+   static { populate(); }
 
    private String name;
    private String trigger;
    private String text;
    String eq1, eq2, eq3;
 
-   public Combo(final String name, final String eq1, final String eq2, final String eq3, final String trigger, final String text)
+   public Ensemble(final String name, final String eq1, final String eq2, final String eq3, final String trigger, final String text)
    {
       this.name = name;
       this.trigger = trigger;
@@ -42,7 +36,7 @@ public class Combo extends Card implements Comparable<Combo>
    }
 
    @Override
-   public int compareTo(final Combo c)
+   public int compareTo(final Ensemble c)
    {
       return name.compareTo(c.name);
    }
@@ -56,8 +50,8 @@ public class Combo extends Card implements Comparable<Combo>
    @Override
    public boolean equals(final Object other)
    {
-      if (other instanceof Combo)
-         return name.equals(((Combo) other).name);
+      if (other instanceof Ensemble)
+         return name.equals(((Ensemble) other).name);
       return false;
    }
 
@@ -65,11 +59,11 @@ public class Combo extends Card implements Comparable<Combo>
    {
       add("Eagle Scout", "Batteries", "Compass", "Pocket Knife", "When an event would affect you, ",
          "you may discard any Equipment card to ignore it.");
-      add("Engineer", "Antenna", "Cell Phone", "Laptop", "Whenever another player rolls a <em class=find>FIND</em>, ",
-         "you get +1 on your next roll.  (This is not limited to once per turn.)");
+      add("Engineer", "Antenna", "Cell Phone", "Laptop", "Whenever another player rolls a <em class=find>.F.</em>, ",
+         "you get +1 on your next roll.  (not limited to once per turn.)");
       add("Event Coordinator", "Geocoin", "Hiking Staff", "Letterbox Stamp",
-         "Whenever someone tries to play an Event card on you, ",
-         "you both roll the dice.  If you roll higher, the event does not affect you (it is discarded).");
+         "Whenever someone plays an Event card on you, ",
+         "you both roll the dice.  If you roll higher, it does not affect you (discard it).");
       add("Lifeguard", "Bandana", "Hat", "Whistle",
          "If a player next to a stream or lake rolls a <em class=roll>1</em> on either die, ",
          "you may immediately jump to their location.");
@@ -83,18 +77,18 @@ public class Combo extends Card implements Comparable<Combo>
       add("Paramedic", "First-aid Kit", "Jeep", "Repair Kit", "If an Event card would award you points, ",
          "instead roll the dice to determine how many points you earn.");
       add("Photographer", "Camera", "Mirror", "Safari Vest", "",
-         "You get 2 points if you end your turn on a <em class=tile>Scenic View</em> or on the same tile as another player.  (You may only get points once per <em class=tile>View</em> or player.)");
+         "You get 2 points if you end your turn on a <em class=tile>Scenic View</em> or <em class=tile>Waterfall</em>.  (You may only get the points once each.)");
       add("Road Warrior", "Gorp", "Camel Pack", "Mountain Bike", "If you roll 5 or higher while on a Path, ",
          "you may jump to any tile on that Path.</em>");
       add("Search and Rescue", "Binoculars", "FRS Radio", "Rope",
-         "Whenever anyone rolls a <em class=dnf>DNF</em>, ", "you may immediately jump to the roller's location.");
+         "Whenever anyone rolls a <em class=dnf>.D.</em>, ", "you may immediately jump to their location.");
       add("Through Hiker", "Backpack", "Hiking Boots", "Trail Guide", "Each time you roll doubles while on a Path, ",
-         "you may take an extra turn.  (This is not limited to once per turn.)");
+         "you may take an extra turn (not limited to once per turn).");
       add("Tracker", "Ol' Blue", "Map", "Waders",
-         "If a player in your quadrant rolls <em class=find>FIND</em> or <em class=dnf>DNF</em>, ",
+         "If a player in your quadrant rolls <em class=find>.F.</em> or <em class=dnf>.D.</em>, ",
          "you may immediately jump to their location.");
       add("Veteran", "Gaiters", "Long Pants", "Water Bottle",
-         "If you roll a <em class=find>FIND</em> or <em class=dnf>DNF</em> while moving, ",
+         "If you roll a <em class=find>.F.</em> or <em class=dnf>.D.</em> while moving, ",
          "you may ignore it, and add 2 to your roll.");
       add("Weatherman", "Emergency Radio", "Gloves", "Rain Jacket", "",
          "All weather Event cards (drawn, in play, or in a player's hand) are discarded, and you gain 2 points for each one.");
@@ -103,61 +97,24 @@ public class Combo extends Card implements Comparable<Combo>
    private static void add(final String cardName, final String eq1, final String eq2, final String eq3, final String trigger,
                            final String text)
    {
-      Combo combo = new Combo(cardName, eq1, eq2, eq3, trigger, text);
-      COMBOS.put(combo.getName(), combo);
+      Ensemble ensemble = new Ensemble(cardName, eq1, eq2, eq3, trigger, text);
+      ENSEMBLES.put(ensemble.getName(), ensemble);
    }
 
-   static void print()
-   {
-      String target = "docs/Combos.html";
-
-      try
-      {
-         PrintWriter out = null;
-
-         out = new PrintWriter(target);
-         out.println("<html>");
-         out.println("<body>\n");
-         CardUtils.printStyle(out);
-
-         out.println("<dl>");
-         for (Combo combo : COMBOS.values())
-         {
-            out.println("  <dt><b><em class=combo>" + combo.name + "</em>:</b>");
-            out.println("      <em class=equipment>" + combo.eq1 + "</em> + ");
-            out.println("      <em class=equipment>" + combo.eq2 + "</em> + ");
-            out.println("      <em class=equipment>" + combo.eq3 + "</em></dt>");
-            out.println("  <dd>" + combo.getText() + "</dd>");
-            dump(combo);
-         }
-         out.println("</dl>\n");
-
-         out.println("</body>");
-         out.println("</html>");
-         out.close();
-
-         System.out.println(COMBOS.size() + " combos written to: " + target);
-      }
-      catch (Exception x)
-      {
-         x.printStackTrace();
-      }
-   }
-
-   private static void dump(final Combo combo)
+   private static void dump(final Ensemble ensemble)
    {
       StringBuilder sb = new StringBuilder();
-      sb.append(combo.name);
+      sb.append(ensemble.name);
       sb.append(": ");
-      sb.append(combo.eq1);
+      sb.append(ensemble.eq1);
       sb.append(", ");
-      sb.append(combo.eq2);
+      sb.append(ensemble.eq2);
       sb.append(", ");
-      sb.append(combo.eq3);
+      sb.append(ensemble.eq3);
       sb.append(", \"");
-      sb.append(combo.trigger);
+      sb.append(ensemble.trigger);
       sb.append(" ");
-      sb.append(combo.text);
+      sb.append(ensemble.text);
       sb.append("\"");
 
       String s = sb.toString();
@@ -165,35 +122,47 @@ public class Combo extends Card implements Comparable<Combo>
       System.out.println(s);
    }
 
-   public static void main(final String[] args)
+   private static void validate()
    {
-      Combo.print();
-      System.out.println();
-
       System.out.println("Validating Equipment References:");
       System.out.flush();
-      for (Combo c : COMBOS.values())
+      for (Ensemble c : ENSEMBLES.values())
       {
          Equipment eq = Equipment.EQUIPMENT.get(c.eq1);
          if (eq == null)
             System.err.println("  Missing equipment for " + c.name + ": " + c.eq1);
-         else if (!c.name.equalsIgnoreCase(eq.getCombo()))
-            System.err.println("  Invalid combo for " + c.name + " " + c.eq1 + ": " + eq.getCombo());
+         else if (!c.name.equalsIgnoreCase(eq.getEnsemble()))
+            System.err.println("  Invalid ensemble for " + c.name + " " + c.eq1 + ": " + eq.getEnsemble());
          
          eq = Equipment.EQUIPMENT.get(c.eq2);
          if (eq == null)
             System.err.println("  Missing equipment for " + c.name + ": " + c.eq2);
-         else if (!c.name.equalsIgnoreCase(eq.getCombo()))
-            System.err.println("  Invalid combo for " + c.name + " " + c.eq2 + ": " + eq.getCombo());
+         else if (!c.name.equalsIgnoreCase(eq.getEnsemble()))
+            System.err.println("  Invalid ensemble for " + c.name + " " + c.eq2 + ": " + eq.getEnsemble());
 
          eq = Equipment.EQUIPMENT.get(c.eq3);
          if (eq == null)
             System.err.println("  Missing equipment for " + c.name + ": " + c.eq3);
-         else if (!c.name.equalsIgnoreCase(eq.getCombo()))
-            System.err.println("  Invalid combo for " + c.name + " " + c.eq3 + ": " + eq.getCombo());
+         else if (!c.name.equalsIgnoreCase(eq.getEnsemble()))
+            System.err.println("  Invalid ensemble for " + c.name + " " + c.eq3 + ": " + eq.getEnsemble());
          System.err.flush();
       }
       System.out.println();
       System.out.flush();
+   }
+   
+   public static void main(final String[] args)
+   {
+      validate();
+      
+      HtmlGenerator htmlGen = new HtmlGenerator(12, 4, 150, 85, 75, 80);
+      htmlGen.printEnsebles(ENSEMBLES);
+      System.out.println();
+      
+      ImageGenerator imgGen = new ImageGenerator(ImageStats.getEnsembleStats(), false);
+      for (Ensemble ensemble : ENSEMBLES.values())
+         imgGen.publish(ensemble);
+      System.out.println();
+
    }
 }

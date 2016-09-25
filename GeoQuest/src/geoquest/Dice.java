@@ -70,8 +70,8 @@ public class Dice
       ACTUAL Avg: 3, Stream: 58%, Find%: 94,81,58,39,17, New Cache: 0%, Doubles: 17% 50/50 same/diff
       */
       
-      Sides[] d1 = new Sides[] { Sides.FIND,  Sides.B1, Sides.B2, Sides.W3, Sides.W2, Sides.W0 }; // black die
-      Sides[] d2 = new Sides[] { Sides.DNF,  Sides.B1, Sides.B2, Sides.W1, Sides.W2, Sides.B4 }; // white die
+      Sides[] d1 = new Sides[] { Sides.FIND,  Sides.B1, Sides.B2, Sides.W0, Sides.W2, Sides.W3 }; // green die
+      Sides[] d2 = new Sides[] { Sides.DNF,  Sides.B1, Sides.B2, Sides.B4, Sides.W1, Sides.W2 }; // red die
       
       for (Sides s1 : d1)
       {
@@ -128,7 +128,7 @@ public class Dice
       System.out.print (", blk/blk: " + Math.round (blackBoth * 100f / 36) + "%"); 
       System.out.print (", wht/wht: " + Math.round (whiteBoth * 100f / 36) + "%");
       System.out.print (", same color: " + Math.round (sameColor * 100f / 36) + "%");
-      System.out.print (", Unique: " + Math.round (unique * 100f / 36) + "%");
+      System.out.print (", unique: " + Math.round (unique * 100f / 36) + "%");
       System.out.println();
       
       System.out.print ("Chance to roll (total): ");

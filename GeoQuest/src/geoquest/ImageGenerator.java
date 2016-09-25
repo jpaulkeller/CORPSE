@@ -44,10 +44,12 @@ import utils.ImageTools;
 public class ImageGenerator
 {
    private static final String ART_DIR = "G:/pkgs/workspace/GeoQuest/docs/";
-   private static final String CACHER_DIR = "G:/pkgs/workspace/GeoQuest/docs/TGC/Cachers/";
-   private static final String EVENT_DIR = "G:/pkgs/workspace/GeoQuest/docs/TGC/Events/";
-   private static final String EQUIP_DIR = "G:/pkgs/workspace/GeoQuest/docs/TGC/Equipment/";
-   private static final String TB_DIR = "G:/pkgs/workspace/GeoQuest/docs/TGC/Travel Bugs/";
+   private static final String CACHER_DIR = "G:/pkgs/workspace/GeoQuest/docs/Cards/Cachers/";
+   private static final String ENSEMBLE_DIR = "G:/pkgs/workspace/GeoQuest/docs/Cards/Ensembles/";
+   private static final String EVENT_DIR = "G:/pkgs/workspace/GeoQuest/docs/Cards/Events/";
+   private static final String EQUIP_DIR = "G:/pkgs/workspace/GeoQuest/docs/Cards/Equipment/";
+   private static final String PUZZLE_DIR = "G:/pkgs/workspace/GeoQuest/docs/Tokens/Puzzles/";
+   private static final String TB_DIR = "G:/pkgs/workspace/GeoQuest/docs/Tokens/Travel Bugs/";
 
    private static final Pattern EM = Pattern.compile("([^<]+)</em>(.+)?");
    
@@ -74,28 +76,70 @@ public class ImageGenerator
       this.drawBoxes = drawBoxes;
    }
    
-   public void publish(final TravelBug tb) // in TheGameCrafter format
+   public void publish(final String puzzle, final int index) // in TheGameCrafter format
+   {
+      OutputStream os = null;
+      try
+      {
+         String name = puzzle.replace("\n", " ");
+         System.out.println(" " + index + ") " + name);
+         
+         BufferedImage image = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
+         Graphics2D g = (Graphics2D) image.getGraphics();
+
+         BufferedImage background = ImageIO.read(new File(PUZZLE_DIR + "Puzzle Face.png"));
+         g.drawImage(background, 0, 0, null);
+         if (drawBoxes)
+         {
+            background = ImageIO.read(new File(TB_DIR + "TB Borders.png"));
+            g.drawImage(background, 0, 0, null);
+         }
+
+         String[] lines = Token.tokenize(puzzle, "\n");
+         g.setFont(stats.textFont);
+         g.setColor(Color.BLACK);
+         paintText(g, name, lines);
+
+         g.dispose();
+         image.flush();
+         
+         File path = new File(PUZZLE_DIR + name.replaceAll("[^A-Za-z0-9& ]", "") + ".png");
+         os = new FileOutputStream(path);
+         ImageTools.saveAs(image, "png", os, 0f);
+      }
+      catch (Exception x)
+      {
+         x.printStackTrace();
+      }
+      finally
+      {
+         close(os);
+      }
+   }
+   
+   public void publish(final TravelBug tb, final int index) // in TheGameCrafter format
    {
       OutputStream os = null;
       try
       {
          String name = tb.getName();
-         String text = tb.getText().replaceAll("<br */>", " ");
-         System.out.println(" > " + name + ": " + text);
+         System.out.println(" " + index + ") " + name + ": " + tb.getText().replaceAll("\n", " "));
          
          BufferedImage image = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
          Graphics2D g = (Graphics2D) image.getGraphics();
 
+         BufferedImage background = ImageIO.read(new File(TB_DIR + "TB Face.png"));
+         g.drawImage(background, 0, 0, null);
          if (drawBoxes)
          {
-            BufferedImage background = ImageIO.read(new File(TB_DIR + "TB Face.png"));
+            background = ImageIO.read(new File(TB_DIR + "TB Borders.png"));
             g.drawImage(background, 0, 0, null);
          }
 
-         // letter
+         String[] lines = Token.tokenize(tb.getText(), "\n");
          g.setFont(stats.textFont);
          g.setColor(Color.BLACK);
-         paintText(g, name, text);
+         paintText(g, name, lines);
 
          g.dispose();
          image.flush();
@@ -110,18 +154,27 @@ public class ImageGenerator
       }
       finally
       {
-         try
-         {
-            if (os != null)
-            {
-               os.flush();
-               os.close();
-            }
-         }
-         catch (IOException x) { }
+         close(os);
       }
    }
    
+   private void paintText(final Graphics2D g, final String name, final String[] lines)
+   {
+      g.setColor(Color.BLACK);
+      g.setFont(stats.textFont);
+      FontMetrics fm = g.getFontMetrics(stats.textFont);
+      int lineHeight = fm.getHeight() - 5;
+      int textHeight = lines.length * lineHeight;
+      
+      int y = ((stats.h - textHeight) / 2) + lineHeight - 7;
+      for (String line : lines)
+      {
+         int x = (stats.w - fm.stringWidth(line)) / 2;
+         g.drawString(line, x, y); // lower-left
+         y += lineHeight;
+      }
+   }
+
    public void publish(final Cacher cacher) // in TheGameCrafter format
    {
       OutputStream os = null;
@@ -139,7 +192,7 @@ public class ImageGenerator
          paintGrid(g);
          int titleHeight = paintTitleRight(g, name, cacher.getText());
          int titleBottom =  stats.safeMarginH + 2 + titleHeight;
-         addIcon(g, ART_DIR + "TGC/Cachers/Letter Box.png", 150, 150, stats.safeMarginW + 5, stats.safeMarginH + 5);
+         addIcon(g, ART_DIR + "Cards/Cachers/Letter Box.png", 150, 150, stats.safeMarginW + 5, stats.safeMarginH + 5);
          
          // letter
          g.setFont(stats.letterFont);
@@ -171,15 +224,49 @@ public class ImageGenerator
       }
       finally
       {
-         try
-         {
-            if (os != null)
-            {
-               os.flush();
-               os.close();
-            }
-         }
-         catch (IOException x) { }
+         close(os);
+      }
+   }
+   
+   public void publish(final Ensemble ensemble) // in TheGameCrafter format
+   {
+      OutputStream os = null;
+      try
+      {
+         String name = ensemble.getName();
+         System.out.println(" > " + name + ": " + ensemble.getText());
+         
+         BufferedImage cardImage = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
+         Graphics2D g = (Graphics2D) cardImage.getGraphics();
+         
+         BufferedImage background = ImageIO.read(new File(ENSEMBLE_DIR + "Ensemble Face.png"));
+         g.drawImage(background, 0, 0, null);
+
+         int titleHeight = paintTitle(g, name, ensemble.getText());
+         int top =  stats.safeMarginH + titleHeight - 50;
+         int bottom = stats.h - stats.safeMarginH;
+         paintText(g, ensemble, name, top, bottom, 4);
+         hackIcons(g, name);
+
+         // safe box
+         g.setColor(Color.BLUE);
+         g.setStroke(DASHED);
+         // g.drawRect(stats.safeMarginW, stats.safeMarginH, stats.safeW, stats.safeH);
+         
+         g.dispose();
+         cardImage.flush();
+         
+         File path = new File(ENSEMBLE_DIR + name.replaceAll("[?!]", "") + ".png");
+         os = new FileOutputStream(path);
+         ImageTools.saveAs(cardImage, "png", os, 0f);
+      }
+      catch (Exception x)
+      {
+         x.printStackTrace();
+      }
+      finally
+      {
+         close(os);
       }
    }
    
@@ -204,9 +291,9 @@ public class ImageGenerator
             paintArt(g, eq.getImage(), titleBottom + 40);
          if (eq.getIcon() != null)
             paintIcon(g, eq.getIcon(), titleHeight);
-         int comboHeight = paintCombo(g, eq);
+         int ensembleHeight = paintEnsemble(g, eq);
          int top = (stats.h / 2);
-         int bottom = stats.h - stats.safeMarginH - comboHeight;
+         int bottom = stats.h - stats.safeMarginH - ensembleHeight;
          paintText(g, eq, name, top, bottom, 4);
          hackIcons(g, name);
 
@@ -228,15 +315,7 @@ public class ImageGenerator
       }
       finally
       {
-         try
-         {
-            if (os != null)
-            {
-               os.flush();
-               os.close();
-            }
-         }
-         catch (IOException x) { }
+         close(os);
       }
    }
    
@@ -288,15 +367,7 @@ public class ImageGenerator
       }
       finally
       {
-         try
-         {
-            if (os != null)
-            {
-               os.flush();
-               os.close();
-            }
-         }
-         catch (IOException x) { }
+         close(os);
       }
    }
 
@@ -347,66 +418,67 @@ public class ImageGenerator
    {
       // Cachers
       if (name.equals("Determined Dan"))
-         addIcon(g, ART_DIR + "TGC/Icons/Roll DNF.png", 90, 90, 473, 325);
+         addIcon(g, ART_DIR + "Icons/Roll DNF.png", 90, 90, 473, 325);
       else if (name.equals("Wandering Warren"))
-         addIcon(g, ART_DIR + "TGC/Icons/Roll FIND.png", 80, 80, 170, 350);
+         addIcon(g, ART_DIR + "Icons/Roll FIND.png", 80, 80, 170, 350);
       
       // Equipment
       else if (name.equals("Backpack"))
-         addIcon(g, ART_DIR + "TGC/Icons/Move 5 Cap.png", 90, 90, stats.centerX + 60, stats.safeMarginH + 10);
+         addIcon(g, ART_DIR + "Icons/Move 5 Cap.png", 90, 90, stats.centerX + 60, stats.safeMarginH + 10);
       else if (name.equals("FRS Radio"))
-         addIcon(g, ART_DIR + "TGC/Icons/Roll FIND.png", 68, 68, stats.centerX + 27, stats.centerY + 40);
+         addIcon(g, ART_DIR + "Icons/Roll FIND.png", 68, 68, stats.centerX + 27, stats.centerY + 40);
       else if (name.equals("Jeep"))
-         addIcon(g, ART_DIR + "TGC/Icons/Move 2.png", 90, 90, stats.centerX + 60, stats.safeMarginH + 10);
+         addIcon(g, ART_DIR + "Icons/Move 2.png", 90, 90, stats.centerX + 60, stats.safeMarginH + 10);
       else if (name.equals("Mirror"))
-         addIcon(g, ART_DIR + "TGC/Icons/Roll DNF.png", 60, 60, stats.centerX + 22, stats.centerY + 64);
-      // else if (name.equals("Gloves")) addIcon(g, ART_DIR + "TGC/Icons/Cache 3.png", 95, 95, stats.centerX + 62, stats.centerY + 75);
-      // else if (name.equals("Letterbox Stamp")) addIcon(g, ART_DIR + "TGC/Icons/Cache 3.png", 95, 95, stats.centerX + 120, stats.centerY + 105);
-      // else if (name.equals("Pocket Knife")) addIcon(g, ART_DIR + "TGC/Icons/Cache 5.png", 95, 95, stats.centerX + 90, stats.centerY + 100);
-      // else if (name.equals("Utility Tool")) addIcon(g, ART_DIR + "TGC/Icons/Cache 3.png", 95, 95, stats.centerX + 25, stats.centerY + 75);
-      // else if (name.equals("Waders")) addIcon(g, ART_DIR + "TGC/Icons/Move 2.png", 90, 90, stats.centerX + 60, stats.safeMarginH + 10);
+         addIcon(g, ART_DIR + "Icons/Roll DNF.png", 60, 60, stats.centerX + 22, stats.centerY + 64);
       
       // Events
       else if (name.equals("All About the Numbers"))
       {
-         addIcon(g, ART_DIR + "TGC/Icons/Move Run.png", 120, 120, stats.safeW - 50, stats.safeMarginH + 45);
-         addIcon(g, ART_DIR + "TGC/Icons/Cache 1.png", 100, 100, stats.safeMarginW + 5, stats.centerY + 148);
-         addIcon(g, ART_DIR + "TGC/Icons/Cache 2.png", 100, 100, stats.safeMarginW + 145, stats.centerY + 148);
+         addIcon(g, ART_DIR + "Icons/Move Run.png", 120, 120, stats.safeW - 50, stats.safeMarginH + 45);
+         addIcon(g, ART_DIR + "Icons/Cache 1.png", 100, 100, stats.safeMarginW + 5, stats.centerY + 148);
+         addIcon(g, ART_DIR + "Icons/Cache 2.png", 100, 100, stats.safeMarginW + 145, stats.centerY + 148);
       }
       else if (name.equals("Bragging Rights"))
-         addIcon(g, ART_DIR + "TGC/Icons/Point FTF.png", 125, 125, 72, 700);
+         addIcon(g, ART_DIR + "Icons/Point FTF.png", 100, 100, 84, 712);
       else if (name.equals("Bushwhacked"))
-         addIcon(g, ART_DIR + "TGC/Icons/Roll -2.png", 125, 125, 630, 160);
+         addIcon(g, ART_DIR + "Icons/Roll -2.png", 125, 125, 630, 160);
       else if (name.equals("Equipment Rental"))
-         addIcon(g, ART_DIR + "TGC/Icons/Roll DNF.png", 70, 70, 555, 878);
+         addIcon(g, ART_DIR + "Icons/Roll DNF.png", 70, 70, 555, 878);
       else if (name.equals("In a Hurry"))
-         addIcon(g, ART_DIR + "TGC/Icons/Point -1.png", 125, 125, 620, 170);
+         addIcon(g, ART_DIR + "Icons/Point -1.png", 125, 125, 620, 170);
       else if (name.equals("Is That Venomous?"))
-         addIcon(g, ART_DIR + "TGC/Icons/Roll DNF.png", 65, 65, 383, 726);
+         addIcon(g, ART_DIR + "Icons/Roll DNF.png", 65, 65, 383, 726);
       else if (name.equals("Meet and Greet"))
-         addIcon(g, ART_DIR + "TGC/Icons/Move Join.png", 100, 100, 550, 75);
-      /*
-      else if (name.equals("Muggled!"))
-      {
-         addIcon(g, ART_DIR + "TGC/Icons/Cache 1.png", 110, 110, 498, 622);
-         addIcon(g, ART_DIR + "TGC/Icons/Cache 2.png", 110, 110, 618, 622);
-      }
-      */
+         addIcon(g, ART_DIR + "Icons/Move Join.png", 100, 100, 550, 75);
       else if (name.equals("Not About the Numbers"))
-      {
-         addIcon(g, ART_DIR + "TGC/Icons/Points +1.png", 120, 120, stats.safeW - 50, stats.safeMarginH + 45);
-         // addIcon(g, ART_DIR + "TGC/Icons/Cache 5.png", 110, 110, 225, 700);
-      }
+         addIcon(g, ART_DIR + "Icons/Points +1.png", 120, 120, stats.safeW - 50, stats.safeMarginH + 45);
       else if (name.equals("Parking Ticket"))
-         addIcon(g, ART_DIR + "TGC/Icons/Point -1.png", 100, 100, 650, 170);
+         addIcon(g, ART_DIR + "Icons/Point -1.png", 100, 100, 650, 170);
       else if (name.equals("Stick Race"))
-         addIcon(g, ART_DIR + "TGC/Icons/Point +1.png", 100, 100, 640, 170);
+         addIcon(g, ART_DIR + "Icons/Point +1.png", 100, 100, 640, 170);
       else if (name.equals("Suspicious Activity"))
-         addIcon(g, ART_DIR + "TGC/Icons/Roll DNF.png", 65, 65, 514, 720);
+         addIcon(g, ART_DIR + "Icons/Roll DNF.png", 65, 65, 514, 720);
       else if (name.equals("Trade Up"))
-         addIcon(g, ART_DIR + "TGC/Icons/Equip -1.png", 100, 100, 660, 170);
+         addIcon(g, ART_DIR + "Icons/Equip -1.png", 100, 100, 660, 170);
       else if (name.equals("Yellow Jackets"))
-         addIcon(g, ART_DIR + "TGC/Icons/Move 2.png", 100, 100, 580, 75);
+         addIcon(g, ART_DIR + "Icons/Move 2.png", 100, 100, 580, 75);
+
+      // Ensembles
+      else if (name.equals("Engineer"))
+         addIcon(g, ART_DIR + "Icons/Roll FIND.png", 65, 65, stats.centerX - 135, stats.centerY - 37);
+      else if (name.equals("Search and Rescue"))
+         addIcon(g, ART_DIR + "Icons/Roll DNF.png", 76, 76, stats.centerX - 86, stats.centerY - 43);
+      else if (name.equals("Tracker"))
+      {
+         addIcon(g, ART_DIR + "Icons/Roll FIND.png", 70, 70, stats.centerX + 65, stats.centerY - 40);
+         addIcon(g, ART_DIR + "Icons/Roll DNF.png", 70, 70, stats.centerX + 208, stats.centerY - 40);
+      }
+      else if (name.equals("Veteran"))
+      {
+         addIcon(g, ART_DIR + "Icons/Roll FIND.png", 75, 75, stats.centerX + 48, 175);
+         addIcon(g, ART_DIR + "Icons/Roll DNF.png", 75, 75, stats.centerX + 211, 175);
+      }
    }
 
    private void addIcon(final Graphics2D g, final String path, final int w, final int h, final int left, final int top)
@@ -455,24 +527,24 @@ public class ImageGenerator
       return textHeight;
    }
 
-   private int paintCombo(final Graphics2D g, final Equipment eq)
+   private int paintEnsemble(final Graphics2D g, final Equipment eq)
    {
-      String combo = eq.getCombo();
-      g.setFont(stats.comboFont);
-      FontMetrics fm = g.getFontMetrics(stats.comboFont);
+      String ensemble = eq.getEnsemble();
+      g.setFont(stats.ensembleFont);
+      FontMetrics fm = g.getFontMetrics(stats.ensembleFont);
       int textHeight = fm.getHeight();
-      int textWidth = fm.stringWidth(combo);
+      int textWidth = fm.stringWidth(ensemble);
       if (textWidth > stats.safeW)
       {
-         System.out.println(" [COMBO TOO WIDE] > " + eq.getName() + ": " + combo);
-         g.setFont(stats.comboFont2);
-         fm = g.getFontMetrics(stats.comboFont2);
+         System.out.println(" [ENSEMBLE TOO WIDE] > " + eq.getName() + ": " + ensemble);
+         g.setFont(stats.ensembleFont2);
+         fm = g.getFontMetrics(stats.ensembleFont2);
          textHeight = fm.getHeight();
-         textWidth = fm.stringWidth(combo);
+         textWidth = fm.stringWidth(ensemble);
       }
       
       // background
-      g.setColor(stats.comboColor);
+      g.setColor(stats.ensembleColor);
       int top = stats.h - stats.safeMarginH - textHeight - 2;
       g.fillRect(0, top, stats.w, textHeight);
       // borders
@@ -489,7 +561,7 @@ public class ImageGenerator
       g.setColor(Color.BLACK);
       int left = (stats.w - textWidth) / 2;
       int bottom = top + textHeight - 15;
-      g.drawString(combo, left, bottom); // lower-left
+      g.drawString(ensemble, left, bottom); // lower-left
       
       return textHeight;
    }
@@ -497,10 +569,15 @@ public class ImageGenerator
    private int paintTitle(final Graphics2D g, final String title, final String text)
    {
       String name = title; // .toUpperCase();
+      Font font = stats.titleFont;
+      
+      // hack for long titles with icons
+      if (name.equals("Event Coordinator") || name.equals("Search and Rescue"))
+         font = stats.titleFont2;
       
       int margin = 10;
-      FontMetrics fm = g.getFontMetrics(stats.titleFont);
-      g.setFont(stats.titleFont);
+      FontMetrics fm = g.getFontMetrics(font);
+      g.setFont(font);
       int textHeight = fm.getHeight();
       int textWidth = fm.stringWidth(name);
       if (textWidth + margin > stats.safeW)
@@ -648,24 +725,6 @@ public class ImageGenerator
       return textHeight + 4;
    }
 
-   private void paintText(final Graphics2D g, final String name, final String text)
-   {
-      g.setColor(Color.BLACK);
-      g.setFont(stats.textFont);
-      FontMetrics fm = g.getFontMetrics(stats.textFont);
-      int lineHeight = fm.getHeight();
-      List<Line> lines = splitText(text, fm, stats.w - 120); // TODO (150 for hex/circle)
-      
-      int textHeight = lines.size() * lineHeight;
-      int textTop = ((stats.h - textHeight) / 2) + 25;
-      int y = textTop; // + lineHeight;
-      for (Line line : lines)
-      {
-         paintWords(line, g, fm, y);
-         y += lineHeight;
-      }
-   }
-
    private void paintText(final Graphics2D g, final Card card, final String name, final int top, final int bottom,
                           final int maxLines)
    {
@@ -780,6 +839,7 @@ public class ImageGenerator
          word = cleanWord(g, word, "find", FIND_COLOR); // green
          word = cleanWord(g, word, "ftf", FTF_COLOR); // gold
          word = cleanWord(g, word, "roll", Color.BLUE.darker());
+         word = cleanWord(g, word, "tile", CACHER_COLOR);
 
          Matcher m = EM.matcher(word);
          resetColor = m.matches(); // end of annotation
@@ -814,5 +874,18 @@ public class ImageGenerator
          g.setColor(color);
       }
       return word;
+   }
+
+   private void close(final OutputStream os)
+   {
+      try
+      {
+         if (os != null)
+         {
+            os.flush();
+            os.close();
+         }
+      }
+      catch (IOException x) { }
    }
 }
