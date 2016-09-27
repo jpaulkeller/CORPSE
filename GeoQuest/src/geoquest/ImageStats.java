@@ -138,7 +138,7 @@ public class ImageStats
       stats.titleFontName = "Bree Serif";
       stats.titleFont = new Font(stats.titleFontName, Font.BOLD, 60);
       stats.titleFont2 = new Font(stats.titleFontName, Font.BOLD, 50);
-      stats.titleBg = new Color(220, 160, 220); // plum (should match Equipment)
+      stats.titleBg = ImageGenerator.DIFF1_COLOR;
          
       stats.textFont = new Font("Cabin", Font.PLAIN, 70);
       stats.textFont2 = new Font("Cabin", Font.PLAIN, 60);
@@ -171,7 +171,8 @@ public class ImageStats
       stats.titleFont = new Font(stats.titleFontName, Font.PLAIN, 60);
       stats.titleFont2 = new Font(stats.titleFontName, Font.PLAIN, 50);
       stats.titleFont3 = new Font(stats.titleFontName, Font.PLAIN, 42);
-      stats.titleBg = new Color(255, 215, 0); // gold
+      // stats.titleBg = new Color(255, 215, 0); // gold
+      stats.titleBg = new Color(255, 121, 0); // orange
          
       stats.textFont = new Font("Cabin", Font.PLAIN, 50);
       stats.textFont2 = new Font("Cabin", Font.PLAIN, 40);
