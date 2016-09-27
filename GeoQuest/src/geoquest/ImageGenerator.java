@@ -57,7 +57,7 @@ public class ImageGenerator
    private static final Color EVENT_COLOR = new Color(200, 30, 30); // dark red
    private static final Color FIND_COLOR = new Color(25, 125, 25); // dark green
    private static final Color FTF_COLOR = new Color(228, 205, 0); // gold
-   private static final Color DIFF1_COLOR = new Color(0, 201, 255); // light blue
+   public static final Color DIFF1_COLOR = new Color(0, 201, 255); // light blue
    private static final Color DIFF3_COLOR = Color.YELLOW;
    private static final Color DIFF5_COLOR = new Color(255, 104, 104); // reddish
    private static final Color TEXT_BG = new Color(255, 255, 255, 128); // translucent white
