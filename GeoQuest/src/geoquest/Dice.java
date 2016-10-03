@@ -70,6 +70,8 @@ public class Dice
       ACTUAL Avg: 3, Stream: 58%, Find%: 94,81,58,39,17, New Cache: 0%, Doubles: 17% 50/50 same/diff
       */
       
+      // TODO: consider changing Blank to a TB icon, and making DNF/TB a "new bug event"
+      
       Sides[] d1 = new Sides[] { Sides.FIND,  Sides.B1, Sides.B2, Sides.W0, Sides.W2, Sides.W3 }; // green die
       Sides[] d2 = new Sides[] { Sides.DNF,  Sides.B1, Sides.B2, Sides.B4, Sides.W1, Sides.W2 }; // red die
       

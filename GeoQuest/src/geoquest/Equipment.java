@@ -3,7 +3,7 @@ package geoquest;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Equipment extends Card implements Comparable<Equipment>
+public class Equipment extends Component implements Comparable<Equipment>
 {
    static final Map<String, Equipment> EQUIPMENT = new TreeMap<>();
    static
@@ -123,8 +123,7 @@ public class Equipment extends Card implements Comparable<Equipment>
       add("Utility Tool", "+1 when Searching on Urban tiles", null, "Search +1", "MacGyver");
       add("Waders", "+2 when crossing a stream", null, "Move 2", "Tracker");
       add("Walking Stick", "+1 when Moving on Clear tiles", null, "Move 1", "Naturalist");
-      add("Water Bottle", "+1 when Moving if either die is zero", null, "Move 1", "Veteran");
-      // add("Whistle", "Moving onto an occupied tile costs you no movement points", null, "Move Join", "Lifeguard");
+      add("Water Bottle", "+1 when Moving if either die is black", null, "Move 1", "Veteran");
       add("Whistle", "Moving onto a tile occupied by another player costs you no movement points", null, "Move Join", "Lifeguard");
 
       // add ("Coat", "Protects against some cold-related effects", null, "Insulation");
@@ -198,7 +197,7 @@ public class Equipment extends Card implements Comparable<Equipment>
 
    public static void main(final String[] args)
    {
-      HtmlGenerator htmlGen = new HtmlGenerator(12, 4, 150, 85, 75, 80);
+      HtmlGenerator htmlGen = new HtmlGenerator(12, 4);
       htmlGen.printEquipment(EQUIPMENT);
 
       ImageGenerator imgGen = new ImageGenerator(ImageStats.getEquipmentStats(), false);

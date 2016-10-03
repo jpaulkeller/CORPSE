@@ -1,36 +1,19 @@
 package geoquest;
 
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import geoquest.Event.Type;
 
 public class HtmlGenerator
 {
-   public static final String CACHER_COLOR = "#F8E484";
-   public static final String EVENT_COLOR = "#FFC4D2";
-   public static final String ENSEMBLE_COLOR = "#DDCCFF";
-   public static final String EQUIP_COLOR = "#93F3FF";
-   public static final String TB_COLOR = "#F2F2F2";
-
    int cardsPerPage;
    int cardsPerRow;
-   int width;
-   int artH;
-   int imageH;
-   int textH;
 
-   public HtmlGenerator(final int cardsPerPage, final int cardsPerRow, final int width,
-                        final int pictureH, final int imageH, final int textH)
+   public HtmlGenerator(final int cardsPerPage, final int cardsPerRow)
    {
       this.cardsPerPage = cardsPerPage;
       this.cardsPerRow = cardsPerRow;
-      this.width = width;
-      this.artH = pictureH;
-      this.imageH = imageH;
-      this.textH = textH;
    }
    
    public void printTravelBugs(final Map<String, TravelBug> bugs)
@@ -62,7 +45,7 @@ public class HtmlGenerator
       }
    }
 
-   private void printToken(final PrintWriter out, final TravelBug bug, final int i)
+   private void printToken(final PrintWriter out, final Component token, final int i)
    {
       if (i % cardsPerPage == 0)
          out.println("<table cellspacing=10>\n");
@@ -71,13 +54,177 @@ public class HtmlGenerator
 
       out.print("<td style=\"" + " background-image: url(images/rules/TravelBug.png); " + " font-family: arial;" +
                 " font-size: small;" + " color: black;" + "\" align=center height=70 width=113>");
-      out.print("<b>" + bug.getName().replace(" ",  "&nbsp;") + "</b><br/>" + bug.getText().replace("\n", "<br/>"));
+      out.print("<b>" + token.getName().replace(" ",  "&nbsp;") + "</b><br/>" + token.getText().replace("\n", "<br/>"));
       out.println("</td>");
 
       if (i % cardsPerRow == cardsPerRow - 1)
          out.println("</tr>\n");
       if (i % cardsPerPage == cardsPerPage - 1)
          out.println("</table></td>\n<p><hr><p>\n");
+   }
+   
+   // Page settings in Chrome -- Margins: Custom, Top = 0.5, Left = 0.1, Right = 0.2
+   
+   public void printTokens()
+   {
+      String target = "docs/HTML/Tokens.html";
+
+      try
+      {
+         List<String> tokens = new ArrayList<>();
+         int width = 70;
+         
+         addDice(tokens, width);
+         addCaches(tokens, width);
+
+         PrintWriter out = new PrintWriter(target);
+         out.println("<html>");
+         out.println("<body>\n");
+
+         int i = 0;
+         for (String token : tokens)
+         {
+            if (i % cardsPerPage == 0)
+               out.println("<table cellpadding=1 cellspacing=10>\n");
+            if (i % cardsPerRow == 0)
+               out.println("<tr>");
+            
+            out.print("  <td align=center><img align=center " + token + "></td>");
+            
+            if (i % cardsPerRow == cardsPerRow - 1)
+               out.println("</tr>\n");
+            if (i % cardsPerPage == cardsPerPage - 1)
+               out.println("</table>\n");
+            
+            i++;
+         }
+         
+         out.println("</body>");
+         out.println("</html>");
+         out.close();
+
+         System.out.println(tokens.size() + " tokens written to: " + target);
+      }
+      catch (Exception x)
+      {
+         x.printStackTrace();
+      }
+   }
+   
+   private void addDice(final List<String> tokens, final int width)
+   {
+      // green die
+      tokens.add("src=\"../Tokens/Dice/GD-FIND.png\" width=" + width + "\"");
+      tokens.add("src=\"../Tokens/Dice/GD-Black-1.png\" width=" + width + "\"");
+      tokens.add("src=\"../Tokens/Dice/GD-Black-2.png\" width=" + width + "\"");
+      tokens.add("src=\"../Tokens/Dice/GD-White-0.png\" width=" + width + "\"");
+      tokens.add("src=\"../Tokens/Dice/GD-White-2.png\" width=" + width + "\"");
+      tokens.add("src=\"../Tokens/Dice/GD-White-3.png\" width=" + width + "\"");
+
+      // red die
+      tokens.add("src=\"../Tokens/Dice/RD-DNF.png\" width=" + width + "\"");
+      tokens.add("src=\"../Tokens/Dice/RD-Black-1.png\" width=" + width + "\"");
+      tokens.add("src=\"../Tokens/Dice/RD-Black-2.png\" width=" + width + "\"");
+      tokens.add("src=\"../Tokens/Dice/RD-Black-4.png\" width=" + width + "\"");
+      tokens.add("src=\"../Tokens/Dice/RD-White-1.png\" width=" + width + "\"");
+      tokens.add("src=\"../Tokens/Dice/RD-White-2.png\" width=" + width + "\"");
+   }
+
+   private void addCaches(final List<String> tokens, final int width)
+   {
+      int level = 1;
+      addNormal(tokens, "Cache", 11, level++, width);
+      addNormal(tokens, "Cache", 11, level++, width); // 14
+      addNormal(tokens, "Cache", 11, level++, width); // 16
+      addNormal(tokens, "Cache", 11, level++, width); // 14
+      addNormal(tokens, "Cache", 11, level++, width);
+
+      level = 1;
+      addNormal(tokens, "Puzzle cache", 8, level++, width);
+      addNormal(tokens, "Puzzle cache", 8, level++, width); // 10
+      addNormal(tokens, "Puzzle cache", 8, level++, width); // 12
+      addNormal(tokens, "Puzzle cache", 8, level++, width); // 10
+      addNormal(tokens, "Puzzle cache", 8, level++, width);
+      
+      addMultis(tokens, 2, 2, 5, width);
+      addMultis(tokens, 3, 1, 5, width);
+      addMultis(tokens, 4, 2, 4, width);
+   }
+   
+   private void addNormal(final List<String> tokens, final String prefix, final int qty, final int level, final int width)
+   {
+      for (int count = 0; count < qty; count++)
+         tokens.add("src=\"../Tokens/Caches/" + prefix + " " + level + ".png\" " + 
+                  "width=" + width + " height=" + (width - 1) + "\"");
+   }
+
+   private void addMultis(final List<String> tokens, final int stages, final int minLevel, final int maxLevel, final int width)
+   {
+      for (int level = minLevel; level <= maxLevel; level++)
+         tokens.add("src=\"../Tokens/Caches/Multi-cache " + stages + "x " + level + ".png\" " + 
+                  "width=" + width + " height=" + (width - 1) + "\"");
+   }
+
+   public void printCachers(final Map<String, Cacher> cachers)
+   {
+      String target = "docs/HTML/Cachers.html";
+
+      try
+      {
+         PrintWriter out = null;
+
+         out = new PrintWriter(target);
+         out.println("<html>");
+         out.println("<body>\n");
+
+         int i = 0;
+         for (Cacher cacher : cachers.values())
+            printCard(out, "../Cards/Cachers/", "height=210", cacher, i++);
+
+         out.println("</body>");
+         out.println("</html>");
+         out.close();
+
+         System.out.println(cachers.size() + " cachers written to: " + target);
+      }
+      catch (Exception x)
+      {
+         x.printStackTrace();
+      }
+   }
+
+   public void printEnsembles(final Map<String, Ensemble> ensembles)
+   {
+      String target = "docs/HTML/Ensembles.html";
+
+      try
+      {
+         PrintWriter out = null;
+
+         out = new PrintWriter(target);
+         out.println("<html>");
+         out.println("<body>\n");
+
+         int i = 0;
+         for (Ensemble en : ensembles.values())
+            printCard(out, "../Cards/Ensembles/", "height=210", en, i++);
+
+         // pad with blanks to fill out the sheet
+         Equipment blankCard = new Equipment(CardUtils.BLANK, "", "Blank", null, null);
+         if (ensembles.size() % cardsPerPage > 0)
+            for (i = 0; i < cardsPerPage - (ensembles.size() % cardsPerPage); i++)
+               printCard(out, "../Cards/Ensembles/", "height=210", blankCard, i + ensembles.size());
+
+         out.println("</body>");
+         out.println("</html>");
+         out.close();
+
+         System.out.println(ensembles.size() + " ensembles written to: " + target);
+      }
+      catch (Exception x)
+      {
+         x.printStackTrace();
+      }
    }
 
    public void printEquipment(final Map<String, Equipment> equipment)
@@ -91,95 +238,23 @@ public class HtmlGenerator
          out = new PrintWriter(target);
          out.println("<html>");
          out.println("<body>\n");
-         CardUtils.printStyle(out);
+         // CardUtils.printStyle(out); // old
 
          int i = 0;
          for (Equipment eq : equipment.values())
-            printCard(out, eq, i++);
+            printCard(out, "../Cards/Equipment/", "width=210", eq, i++);
 
          // pad with blanks to fill out the sheet
          Equipment blankCard = new Equipment(CardUtils.BLANK, "", "Blank", null, null);
          if (equipment.size() % cardsPerPage > 0)
             for (i = 0; i < cardsPerPage - (equipment.size() % cardsPerPage); i++)
-               printCard(out, blankCard, i + equipment.size());
+               printCard(out, "../Cards/Equipment/", "width=210", blankCard, i + equipment.size());
 
          out.println("</body>");
          out.println("</html>");
          out.close();
 
-         System.out.println(equipment.size() + " events written to: " + target);
-      }
-      catch (Exception x)
-      {
-         x.printStackTrace();
-      }
-   }
-
-   private void printCard(final PrintWriter out, final Equipment eq, final int i)
-   {
-      if (i % cardsPerPage == 0)
-         out.println("<table cellpadding=10>\n");
-      if (i % cardsPerRow == 0)
-         out.println("<tr>");
-
-      out.println("<td valign=top><table border=1>");
-      out.println(
-         "  <tr><td align=center bgcolor=" + EQUIP_COLOR + "><b>" + eq.getName().replace(" ", "&nbsp;") + "</b></td></tr>");
-
-      if (eq.getImage() != null)
-      {
-         out.println("  <tr><td align=center height=" + artH + " width=" + width + ">");
-         out.print("      <img align=center src=\"../" + eq.getImage() + "\"");
-         if (!eq.getImage().startsWith("Equipment"))
-            out.print(" style=\"border:3px solid red\"");
-         out.print(" height=" + imageH + ">");
-      }
-
-      out.println("</td></tr>");
-
-      out.println("  <tr><td align=center height=" + textH + " width=" + width + ">");
-      out.println(getText(eq.getText()));
-      out.println("</td></tr>");
-      
-      String ensemble = eq.getEnsemble() != null ? eq.getEnsemble().replace(" ", "&nbsp;") : CardUtils.BLANK;
-      out.println("  <tr><td align=center bgcolor=" + ENSEMBLE_COLOR + "><b>" + ensemble + "</b></td></tr>");
-      out.println("</table></td>\n");
-
-      if (i % cardsPerRow == cardsPerRow - 1)
-         out.println("</tr>\n");
-      if (i % cardsPerPage == cardsPerPage - 1)
-         out.println("</table></td>\n<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>\n");
-   }
-
-   public void printEnsebles(final Map<String, Ensemble> ENSEMBLES)
-   {
-      String target = "docs/HTML/Ensembles.html";
-
-      try
-      {
-         PrintWriter out = null;
-
-         out = new PrintWriter(target);
-         out.println("<html>");
-         out.println("<body>\n");
-         CardUtils.printStyle(out);
-
-         out.println("<dl>");
-         for (Ensemble ensemble : ENSEMBLES.values())
-         {
-            out.println("  <dt><b><em class=ensemble>" + ensemble.getName() + "</em>:</b>");
-            out.println("      <em class=equipment>" + ensemble.eq1 + "</em> + ");
-            out.println("      <em class=equipment>" + ensemble.eq2 + "</em> + ");
-            out.println("      <em class=equipment>" + ensemble.eq3 + "</em></dt>");
-            out.println("  <dd>" + ensemble.getText() + "</dd>");
-         }
-         out.println("</dl>\n");
-
-         out.println("</body>");
-         out.println("</html>");
-         out.close();
-
-         System.out.println(ENSEMBLES.size() + " ensembles written to: " + target);
+         System.out.println(equipment.size() + " equipment written to: " + target);
       }
       catch (Exception x)
       {
@@ -201,13 +276,7 @@ public class HtmlGenerator
 
          int i = 0;
          for (Event event : events.values())
-            printCard(out, event, i++);
-
-         // pad with blanks to fill out the sheet
-         Event blankCard = new Event(CardUtils.BLANK, Type.STD, 0, CardUtils.BLANK, "Blank", null);
-         if (events.size() % cardsPerPage > 0)
-            for (i = 0; i < cardsPerPage - (events.size() % cardsPerPage); i++)
-               printCard(out, blankCard, i + events.size());
+            printCard(out, "../Cards/Events/", "width=200", event, i++);
 
          out.println("</body>");
          out.println("</html>");
@@ -221,110 +290,29 @@ public class HtmlGenerator
          x.printStackTrace();
       }
    }
-
-   private void printCard(final PrintWriter out, final Event event, final int i)
-   {
-      if (i % cardsPerPage == 0)
-         out.println("<table>\n");
-      if (i % cardsPerRow == 0)
-         out.println("<tr>");
-
-      out.println("<td valign=top>");
-      out.println("  <table class=\"event\">");
-      out.println(
-         "    <tr><td align=center bgcolor=" + EVENT_COLOR + "><b>" + event.getName().replace(" ", "&nbsp;") + "</b></td></tr>");
-
-      out.print("    <tr><td align=center height=" + artH + " width=" + width + ">");
-      if (event.getImage() != null)
-      {
-         out.print("<img align=center src=\"../" + event.getImage() + "\"");
-         if (!event.getImage().startsWith("Events"))
-            out.print(" style=\"border:2px solid red\"");
-         out.print(" height=" + imageH + ">");
-      }
-      out.println("</td></tr>");
-
-      int h = event.getType() == Type.STD ? textH : textH - 25;
-      out.print("    <tr><td align=center height=" + h + " width=" + width + ">");
-      out.print(getText(event.getText()));
-      out.println("</td></tr>");
-
-      if (event.getType() == Type.NOW)
-         out.println("    <tr><td align=center bgcolor=salmon><b>Play Now</b></td></tr>");
-      else if (event.getType() == Type.ANY)
-         out.println("    <tr><td align=center bgcolor=lightgreen><b>Play Any Time</b></td></tr>");
-
-      out.println("  </table></td>\n");
-
-      if (i % cardsPerRow == cardsPerRow - 1)
-         out.println("</tr>\n");
-      if (i % cardsPerPage == cardsPerPage - 1)
-         out.println("</table></td>\n<p><p>\n");
-   }
-
-   public void printCachers(final Map<String, Cacher> cachers)
-   {
-      String target = "docs/HTML/Cachers.html";
-
-      try
-      {
-         PrintWriter out = null;
-
-         out = new PrintWriter(target);
-         out.println("<html>");
-         out.println("<body>\n");
-         CardUtils.printStyle(out);
-
-         int i = 0;
-         for (Cacher cacher : cachers.values())
-            printCard(out, cacher, i++);
-
-         // pad with blanks to fill out the sheet
-         Cacher blankCard = new Cacher(CardUtils.BLANK, CardUtils.BLANK);
-         for (i = 0; i < cardsPerPage - (cachers.size() % cardsPerPage); i++)
-            printCard(out, blankCard, i + cachers.size());
-
-         out.println("</body>");
-         out.println("</html>");
-         out.close();
-
-         System.out.println(cachers.size() + " cachers written to: " + target);
-      }
-      catch (Exception x)
-      {
-         x.printStackTrace();
-      }
-   }
-
-   private void printCard(final PrintWriter out, final Cacher cacher, final int i)
-   {
-      if (i % cardsPerPage == 0)
-         out.println("<table cellpadding=12>\n");
-      if (i % cardsPerRow == 0)
-         out.println("<tr>");
-
-      out.println("<td><table border=1 valign=top>");
-      out.print("  <tr><th align=center bgcolor=" + CACHER_COLOR + " width=" + width + ">");
-      out.println("<b>" + cacher.getName().replace(" ", "&nbsp;") + "</b></th></tr>");
-      out.print("  <tr><td height=" + textH + ">");
-      out.print("<table cellpadding=10><tr><td align=center>" + getText(cacher.getText()) + "</td></tr></table>");
-      out.println("</td></tr>");
-      out.println("</table></td>\n");
-
-      if (i % cardsPerRow == cardsPerRow - 1)
-         out.println("</tr>\n");
-      if (i % cardsPerPage == cardsPerPage - 1)
-         out.println("</table></td><br/><br/><br/><br/><br/><br/><hr><p>");
-   }
-
-   private static final Pattern REF = Pattern.compile(">[^<]+ [^<]+?</em>");
    
-   private String getText(final String text)
+   private void printCard(final PrintWriter out, final String path, final String size, final Component card, final int i)
    {
-      String html = text;
-      Matcher m;
-      while ((m = REF.matcher(html)).find())
-         html = m.replaceFirst(m.group(0).replace(" ", "&nbsp;"));
-      return html;
+      String name = path + card.getName().replaceAll("[^-A-Za-z0-9' ]", "") + ".png";
+
+      if (i % cardsPerPage == 0)
+         out.println("<table cellpadding=10>\n");
+      if (i % cardsPerRow == 0)
+         out.println("<tr>");
+
+      out.print("  <td align=center>");
+      out.print("<img align=center src=\"" + name + "\" " + size + ">");
+      out.println("</td>");
+
+      if (i % cardsPerRow == cardsPerRow - 1)
+         out.println("</tr>\n");
+      if (i % cardsPerPage == cardsPerPage - 1)
+         out.println("</table></td>\n<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>\n");
+   }
+
+   public static void main(final String[] args)
+   {
+      HtmlGenerator htmlGen = new HtmlGenerator(30, 10);
+      htmlGen.printTokens();
    }
 }

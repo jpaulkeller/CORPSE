@@ -3,7 +3,7 @@ package geoquest;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Ensemble extends Card implements Comparable<Ensemble>
+public class Ensemble extends Component implements Comparable<Ensemble>
 {
    static final Map<String, Ensemble> ENSEMBLES = new TreeMap<>();
    static { populate(); }
@@ -155,8 +155,8 @@ public class Ensemble extends Card implements Comparable<Ensemble>
    {
       validate();
       
-      HtmlGenerator htmlGen = new HtmlGenerator(12, 4, 150, 85, 75, 80);
-      htmlGen.printEnsebles(ENSEMBLES);
+      HtmlGenerator htmlGen = new HtmlGenerator(12, 3);
+      htmlGen.printEnsembles(ENSEMBLES);
       System.out.println();
       
       ImageGenerator imgGen = new ImageGenerator(ImageStats.getEnsembleStats(), false);

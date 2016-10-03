@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Geocache extends Card implements Comparable<Geocache>
+public class Geocache extends Component implements Comparable<Geocache>
 {
    public static final String COLOR = "#254C00"; // dark olive green
 
