@@ -87,11 +87,16 @@ public class ImageGenerator
          BufferedImage image = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
          Graphics2D g = (Graphics2D) image.getGraphics();
 
-         BufferedImage background = ImageIO.read(new File(PUZZLE_DIR + "Puzzle Face.png"));
-         g.drawImage(background, 0, 0, null);
+         File face = new File(PUZZLE_DIR + "Puzzle Face.png");
+         if (face.exists())
+         {
+            BufferedImage background = ImageIO.read(face);
+            g.drawImage(background, 0, 0, null);
+         }
+         
          if (drawBoxes)
          {
-            background = ImageIO.read(new File(TB_DIR + "TB Borders.png"));
+            BufferedImage background = ImageIO.read(new File(TB_DIR + "TB Borders.png"));
             g.drawImage(background, 0, 0, null);
          }
 
@@ -128,11 +133,16 @@ public class ImageGenerator
          BufferedImage image = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
          Graphics2D g = (Graphics2D) image.getGraphics();
 
-         BufferedImage background = ImageIO.read(new File(TB_DIR + "TB Face.png"));
-         g.drawImage(background, 0, 0, null);
+         File face = new File(TB_DIR + "TB Face.png");
+         if (face.exists())
+         {
+            BufferedImage background = ImageIO.read(face);
+            g.drawImage(background, 0, 0, null);
+         }
+         
          if (drawBoxes)
          {
-            background = ImageIO.read(new File(TB_DIR + "TB Borders.png"));
+            BufferedImage background = ImageIO.read(new File(TB_DIR + "TB Borders.png"));
             g.drawImage(background, 0, 0, null);
          }
 
@@ -186,8 +196,12 @@ public class ImageGenerator
          BufferedImage cardImage = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
          Graphics2D g = (Graphics2D) cardImage.getGraphics();
          
-         BufferedImage background = ImageIO.read(new File(CACHER_DIR + "Cacher Face.png"));
-         g.drawImage(background, 0, 0, null);
+         File face = new File(CACHER_DIR + "Cacher Face.png");
+         if (face.exists())
+         {
+            BufferedImage background = ImageIO.read(face);
+            g.drawImage(background, 0, 0, null);
+         }
 
          paintGrid(g);
          int titleHeight = paintTitleRight(g, name, cacher.getText());
@@ -239,8 +253,12 @@ public class ImageGenerator
          BufferedImage cardImage = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
          Graphics2D g = (Graphics2D) cardImage.getGraphics();
          
-         BufferedImage background = ImageIO.read(new File(ENSEMBLE_DIR + "Ensemble Face.png"));
-         g.drawImage(background, 0, 0, null);
+         File face = new File(ENSEMBLE_DIR + "Ensemble Face.png");
+         if (face.exists())
+         {
+            BufferedImage background = ImageIO.read(face);
+            g.drawImage(background, 0, 0, null);
+         }
 
          int titleHeight = paintTitle(g, name, ensemble.getText());
          int top =  stats.safeMarginH + titleHeight - 50;
@@ -280,9 +298,13 @@ public class ImageGenerator
          
          BufferedImage cardImage = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
          Graphics2D g = (Graphics2D) cardImage.getGraphics();
-         
-         BufferedImage background = ImageIO.read(new File(EQUIP_DIR + "Equipment Face.png"));
-         g.drawImage(background, 0, 0, null);
+
+         File face = new File(EQUIP_DIR + "Equipment Face.png");
+         if (face.exists())
+         {
+            BufferedImage background = ImageIO.read(face);
+            g.drawImage(background, 0, 0, null);
+         }
 
          paintGrid(g);
          int titleHeight = paintTitleLeft(g, name, eq.getText());
@@ -330,8 +352,12 @@ public class ImageGenerator
          BufferedImage cardImage = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
          Graphics2D g = (Graphics2D) cardImage.getGraphics();
          
-         BufferedImage background = ImageIO.read(new File(EVENT_DIR + "Event Face.png"));
-         g.drawImage(background, 0, 0, null);
+         File face = new File(EVENT_DIR + "Event Face.png");
+         if (face.exists())
+         {
+            BufferedImage background = ImageIO.read(face);
+            g.drawImage(background, 0, 0, null);
+         }
 
          paintGrid(g);
          int playHeight = paintPlayRule(g, event);
@@ -420,7 +446,7 @@ public class ImageGenerator
       if (name.equals("Determined Dan"))
          addIcon(g, ART_DIR + "Icons/Roll DNF.png", 90, 90, 473, 325);
       else if (name.equals("Wandering Warren"))
-         addIcon(g, ART_DIR + "Icons/Roll FIND.png", 80, 80, 170, 350);
+         addIcon(g, ART_DIR + "Icons/Roll FIND.png", 80, 80, 620, 257);
       
       // Equipment
       else if (name.equals("Backpack"))
@@ -437,10 +463,10 @@ public class ImageGenerator
       {
          addIcon(g, ART_DIR + "Icons/Move Run.png", 120, 120, stats.safeW - 50, stats.safeMarginH + 45);
          addIcon(g, ART_DIR + "Icons/Cache 1.png", 100, 100, stats.safeMarginW + 5, stats.centerY + 148);
-         addIcon(g, ART_DIR + "Icons/Cache 2.png", 100, 100, stats.safeMarginW + 145, stats.centerY + 148);
+         addIcon(g, ART_DIR + "Icons/Cache 2.png", 70, 70, stats.safeMarginW + 160, stats.centerY + 163);
       }
       else if (name.equals("Bragging Rights"))
-         addIcon(g, ART_DIR + "Icons/Point FTF.png", 100, 100, 84, 712);
+         addIcon(g, ART_DIR + "Icons/Point FTF.png", 90, 90, 84, 712);
       else if (name.equals("Bushwhacked"))
          addIcon(g, ART_DIR + "Icons/Roll -2.png", 125, 125, 630, 160);
       else if (name.equals("Equipment Rental"))
@@ -541,7 +567,7 @@ public class ImageGenerator
          fm = g.getFontMetrics(stats.ensembleFont2);
          textHeight = fm.getHeight();
          textWidth = fm.stringWidth(ensemble);
-      }
+     }
       
       // background
       g.setColor(stats.ensembleColor);
@@ -725,7 +751,7 @@ public class ImageGenerator
       return textHeight + 4;
    }
 
-   private void paintText(final Graphics2D g, final Card card, final String name, final int top, final int bottom,
+   private void paintText(final Graphics2D g, final Component card, final String name, final int top, final int bottom,
                           final int maxLines)
    {
       int boxHeight = bottom - top;

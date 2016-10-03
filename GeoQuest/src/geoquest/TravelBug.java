@@ -1,10 +1,9 @@
 package geoquest;
 
-import java.io.PrintWriter;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class TravelBug extends Card implements Comparable<TravelBug>
+public class TravelBug extends Component implements Comparable<TravelBug>
 {
    static final Map<String, TravelBug> BUGS = new TreeMap<>();
    static
@@ -54,7 +53,7 @@ public class TravelBug extends Card implements Comparable<TravelBug>
       add("Apropos", "Lat or\nLon with\nCacher's\nletter");
       add("Beast of Burden", "With 5+\nequipment\ncards");
       add("Bridge Too Far", "Within\n3 tiles of\na bridge");
-      add("Bushwhacker", "At least\n5 tiles from\nany path");
+      add("Bushwhacker", "At least\n4 tiles from\nany path");
       add("Camper", "Within 3\ntiles of the\ncampground");
       add("Can't Fool Me", "Search\nroll must\nbe 5+");
       add("Cornered", "In a\ncorner\nof any\nquadrant");
@@ -101,7 +100,7 @@ public class TravelBug extends Card implements Comparable<TravelBug>
 
    public static void main(final String[] args)
    {
-      HtmlGenerator htmlGen = new HtmlGenerator(80, 8, 0, 0, 0, 0);
+      HtmlGenerator htmlGen = new HtmlGenerator(80, 8);
       htmlGen.printTravelBugs(BUGS);
       
       ImageGenerator imgGen = new ImageGenerator(ImageStats.getShardStats(32), false);

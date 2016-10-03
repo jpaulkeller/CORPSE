@@ -13,6 +13,12 @@ import utils.Utils;
 
 public final class CardUtils
 {
+   public static final String CACHER_COLOR = "#F8E484";
+   public static final String EVENT_COLOR = "#FFC4D2";
+   public static final String ENSEMBLE_COLOR = "#DDCCFF";
+   public static final String EQUIP_COLOR = "#93F3FF";
+   public static final String TB_COLOR = "#F2F2F2";
+
    public static final String BLANK = "&nbsp";
 
    private static final SortedSet<String> REFERENCES = new TreeSet<>();
@@ -45,17 +51,17 @@ public final class CardUtils
       pw.println("td, th { padding: 5px; }");
 
       pw.println("em.cacher    { font-style: normal; font-weight: bold; " +
-                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.CACHER_COLOR + "; }");
+                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + CACHER_COLOR + "; }");
       pw.println("em.ensemble  { font-style: normal; font-weight: bold; " +
-                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.ENSEMBLE_COLOR + "; }");
+                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + ENSEMBLE_COLOR + "; }");
       pw.println("em.equipment { font-style: normal; font-weight: bold; " +
-                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.EQUIP_COLOR + "; }");
+                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + EQUIP_COLOR + "; }");
       pw.println("em.event     { font-style: normal; font-weight: bold; " +
-                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.EVENT_COLOR + "; }");
+                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + EVENT_COLOR + "; }");
       pw.println("em.geocache  { font-style: normal; font-weight: bold; " +
                  "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + Geocache.COLOR + "; }");
       pw.println("em.tb        { font-style: normal; font-weight: bold; " +
-                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + HtmlGenerator.TB_COLOR + "; }");
+                 "outline-style: solid; outline-width: thin; margin: 2px; " + "background-color: " + TB_COLOR + "; }");
 
       pw.println("em.dnf       { font-style: normal; font-weight: bold; background-color: salmon }");
       pw.println("em.find      { font-style: normal; font-weight: bold; background-color: lightgreen }");
@@ -82,17 +88,17 @@ public final class CardUtils
       Pattern pattern = Pattern.compile("<em class=(cacher|ensemble|equipment|event|tb)>([^<]*)</em>",
          Pattern.DOTALL | Pattern.CASE_INSENSITIVE);
 
-      for (Card card : Cacher.CACHERS.values())
+      for (Component card : Cacher.CACHERS.values())
          checkCard(pattern, card.getText(), "Cacher: " + card.getName());
-      for (Card card : Equipment.EQUIPMENT.values())
+      for (Component card : Equipment.EQUIPMENT.values())
          checkCard(pattern, card.getText(), "Equipment: " + card.getName());
-      for (Card card : Ensemble.ENSEMBLES.values())
+      for (Component card : Ensemble.ENSEMBLES.values())
          checkCard(pattern, card.getText(), "Ensemble: " + card.getName());
-      for (Card card : Event.EVENTS.values())
+      for (Component card : Event.EVENTS.values())
          checkCard(pattern, card.getText(), "Event: " + card.getName());
-      for (Card card : Geocache.CACHES.values())
+      for (Component card : Geocache.CACHES.values())
          checkCard(pattern, card.getText(), "Geocache: " + card.getName());
-      for (Card card : TravelBug.BUGS.values())
+      for (Component card : TravelBug.BUGS.values())
          checkCard(pattern, card.getText(), "Travel Bug: " + card.getName());
 
       String rules = FileUtils.getText("docs/Rules.html");
@@ -129,7 +135,7 @@ public final class CardUtils
 
    private static String findCard(final String cardName, final String type)
    {
-      Card card = null;
+      Component card = null;
       
       if (type.equals("cacher"))
          card = Cacher.CACHERS.get(cardName);
@@ -149,7 +155,7 @@ public final class CardUtils
 
    private static void findUnannotatedCardReferences()
    {
-      findUnannotatedCardReferences("docs/Rules.html");
+      findUnannotatedCardReferences("docs/Rules - TGC.html");
       findUnannotatedCardReferences("src/geoquest/Cacher.java");
       findUnannotatedCardReferences("src/geoquest/Ensemble.java");
       findUnannotatedCardReferences("src/geoquest/Equipment.java");
@@ -163,17 +169,17 @@ public final class CardUtils
       System.out.println("Checking " + fileName + "...");
       String textToCheck = FileUtils.getText(fileName);
 
-      for (Card card : Cacher.CACHERS.values())
+      for (Component card : Cacher.CACHERS.values())
          checkCard(card.getName(), "cacher", textToCheck);
-      for (Card card : Equipment.EQUIPMENT.values())
+      for (Component card : Equipment.EQUIPMENT.values())
          checkCard(card.getName(), "equipment", textToCheck);
-      for (Card card : Ensemble.ENSEMBLES.values())
+      for (Component card : Ensemble.ENSEMBLES.values())
          checkCard(card.getName(), "ensemble", textToCheck);
-      for (Card card : Event.EVENTS.values())
+      for (Component card : Event.EVENTS.values())
          checkCard(card.getName(), "event", textToCheck);
-      for (Card card : Geocache.CACHES.values())
+      for (Component card : Geocache.CACHES.values())
          checkCard(card.getName(), "geocache", textToCheck);
-      for (Card card : TravelBug.BUGS.values())
+      for (Component card : TravelBug.BUGS.values())
          checkCard(card.getName(), "tb", textToCheck);
 
       System.out.println();

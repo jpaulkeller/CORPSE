@@ -1,6 +1,6 @@
 package geoquest;
 
-public abstract class Card
+public abstract class Component
 {
    public abstract String getName();
    

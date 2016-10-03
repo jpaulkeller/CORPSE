@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 import str.StringUtils;
 
-public class Event extends Card implements Comparable<Event>
+public class Event extends Component implements Comparable<Event>
 {
    enum Type { STD, NOW, ANY };
    
@@ -186,14 +186,14 @@ public class Event extends Card implements Comparable<Event>
       add ("Call from the Boss", Type.STD, 0, "End your turn and skip the next one.  Then draw one Equipment card.", null, "Equip 1", "Laptop");
       add ("Campsite Confusion", Type.NOW, 0, "All players give one Equipment card to the player on their left.", null, "Equip Cycle");
       add ("Careless Hide", Type.NOW, -2, "From now on, all Search rolls for the last cache you found get +1.", null, "Point -2", "Mirror");
-      add ("Caught in the Rain", Type.STD, 0, "Discard any one piece of equipment.", null, "Equip -1", "Rain Jacket", "Emergency Radio");
+      add ("Caught in the Rain", Type.STD, 0, "Discard a random Equipment card.", null, "Equip -1", "Rain Jacket", "Emergency Radio");
+      add ("Complete Collection", Type.STD, 0, "You may discard 3 points to select any Equipment card from the deck.", "Ensemble", null);
       add ("Creek Crossing", Type.STD, 0, "Oops! You slip crossing a small creek. End your turn.", null, null, "Walking Stick", "Hiking Staff");
-      add ("Dead Batteries", Type.STD, 0, "End your turn.  You may discard any Equipment card instead.", null, null, "Batteries");
+      add ("Dead Batteries", Type.STD, 0, "End your turn.  You may discard an Equipment card instead.", null, null, "Batteries");
       add ("Dollar Store", Type.STD, 0, "If you're within 3 tiles of an Urban tile, end your turn.", null, null, "Swag Bag");
       add ("Drought", Type.NOW, 0, "For the next 3 rounds, streams only cost 1 movement point to cross.", null, "Move Stream 1");
       add ("Earth Cache", Type.STD, 3, "You learn some interesting facts while logging an Earth Cache.", null, "Point +3");
-      add ("Ensemble", Type.STD, 0, "You may discard one Equipment card to select any other one you want from the deck.", null, null);
-      add ("Equipment Rental", Type.STD, 0, "Select any equipment card from the deck.  You may keep this equipment until you roll a <em class=dnf>.D.</em>.", null, "Equip 1");
+      add ("Equipment Rental", Type.STD, 0, "Select any Equipment card from the deck.  You may keep this equipment until you roll a <em class=dnf>.D.</em>.", null, "Equip 1");
       add ("Eureka!", Type.ANY, 0, "You may discard this card to solve any Puzzle Cache, or guarantee a successful Search roll.", null, "Search");
       add ("Feed The Trolls", Type.STD, 0, "You stop to read the forums; end your turn.", null, null, "Laptop");
       add ("Fire Ants", Type.STD, 0, "End your turn.  The player on your right moves your token 1 tile in any direction.", null, "Move Other 1", "Gorp", "Long Pants");
@@ -208,14 +208,14 @@ public class Event extends Card implements Comparable<Event>
       add ("Hidden Path", Type.ANY, 0, "You find a hidden path.  Double your Move roll this turn.", null, "Move x2");
       add ("In a Hurry", Type.STD, 0, "You may move 2 extra tiles this turn (even after searching).  Lose 1 point unless", null, "Move 2", "Letterbox Stamp");
       add ("Is That Venomous?", Type.STD, 0, "End your turn.  Roll the dice.  If you roll a <em class=dnf>.D.</em>, jump your token to the Hospital.", "Black Widow", "Move Hospital", "Field Guide", "Gloves");
-      add ("Landslide", Type.STD, 0, "End your turn.  Discard one of your Equipment cards unless", null, "Equip -1", "Survival Strap");
+      add ("Landslide", Type.STD, 0, "End your turn.  Discard a random Equipment card unless", null, "Equip -1", "Survival Strap");
       add ("Leave No Trace", Type.STD, 2, "You carefully avoided the fragile flora.", null, "Point +2");
       add ("Letterbox", Type.STD, 0, "You find a Letterbox Hybrid cache.  Gain 1 point (3 if you have the <em class=equipment>Letterbox Stamp</em>).", null, "Point +1", "[Letterbox Stamp]");
-      add ("Litterbug", Type.STD, -4, "You left some garbage in the woods.", null, "Point -4", "CITO Bag");
+      add ("Litterbug", Type.STD, -3, "You left some garbage in the woods.", null, "Point -4", "CITO Bag");
       add ("Lost and Found", Type.STD, 2, "Draw 1 Equipment card and give it to any other player.", null, "Point +2");
-      add ("Lost Travel Bug", Type.STD, 0, "If you have a <em class=bug>Travel Bug</em>, discard it and lose 3 points.", null, "Point -3", "Belt Pack");
+      add ("Lost Travel Bug", Type.STD, 0, "If you have a <em class=bug>Travel Bug</em>, discard it and lose 2 points.", null, "Point -3", "Belt Pack");
       add ("Lost!", Type.STD, 0, "The player on your right moves your token in any direction the number tiles equal to your roll.", "Lost", "Move Other Roll", "Compass", "Map", "Whistle");
-      add ("May I Borrow That?", Type.STD, -1, "Take any Equipment card from any player that has more equipment cards than you.", "Borrow", "Point -1");
+      add ("May I Borrow That?", Type.STD, -1, "Take any Equipment card from any player that has more Equipment cards than you.", "Borrow", "Point -1");
       add ("Meet and Greet", Type.NOW, 0, "Select a random location; any player may jump to that tile.  All players who do receive 2 points.  Shuffle this card back into the deck.", null, "Point +2");
       add ("Meet the Muggles", Type.STD, 2, "You stop to explain geocaching.  End your turn unless", null, "Point +2", "CITO Bag", "Safari Vest");
       add ("Mega Event", Type.NOW, 0, "Select a random location; all players jump to that tile.  Each player rolls the dice and gains that many points.", null, "Point +Roll");
@@ -268,11 +268,6 @@ public class Event extends Card implements Comparable<Event>
       // Webcam Cache
       // Virtual Cache
       // etc
-      
-      // Famous Quotes series:
-      // Not all those who wander are lost.
-      // Pascal - We seek the very seeking...
-      // I took the path less travelled...
       
       // add ("13-Year Cicadas", Type.NOW, 0, "All players get -1 on all Search rolls in Forest tiles for the next 2 rounds.", null, null);
       // add ("Ancient Ruins", Type.STD, 1, "You discover an artifact.  Draw 1 Equipment card.", null, null);
@@ -338,7 +333,7 @@ public class Event extends Card implements Comparable<Event>
    {
       showEvents();
       
-      HtmlGenerator htmlGen = new HtmlGenerator(9, 3, 200, 95, 90, 142);
+      HtmlGenerator htmlGen = new HtmlGenerator(9, 3);
       htmlGen.printEvents(EVENTS);
       
       ImageGenerator imgGen = new ImageGenerator(ImageStats.getEventStats(), false);
