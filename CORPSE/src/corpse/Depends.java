@@ -101,9 +101,11 @@ public final class Depends
                      token = "{" + FileUtils.getNameWithoutSuffix(file) + token.substring(1); // resolve local refs
                   if (!TOKENS.containsKey(token))
                   {
+                     int tokenStart = line.indexOf(token);
+                     int tokenEnd = tokenStart + token.length();
                      int open = line.indexOf("{{");
                      int close = line.indexOf("}}");
-                     checkToken(token, open >= 0 && close > open);
+                     checkToken(token, open >= 0 && open <= tokenStart && close > open && close >= tokenEnd);
                   }
                   TOKENS.put(token, file.toString());
                }
@@ -157,7 +159,7 @@ public final class Depends
          if (!MISSING_TABLES.contains(tbl) && !Table.TABLES.containsKey(tbl))
          {
             if (tbl.length() > 3 && // ignore short names (probably variables)
-               !Quantity.isNumeric("{" + tbl + "}")) // ignore and roll tokens
+               !Quantity.isNumeric("{" + tbl + "}")) // ignore roll tokens
                System.err.println("    Missing table: " + tbl);
             MISSING_TABLES.add(tbl);
          }

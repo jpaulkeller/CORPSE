@@ -31,8 +31,12 @@ import corpse.ui.ScriptPanel;
 import corpse.ui.TabPane;
 import corpse.ui.TokenRenderer;
 import corpse.ui.TreePanel;
+import file.FileUtils;
 
 /** CORPSE - Computer-Oriented Role-Playing System & Environment */
+
+// TODO - fix:
+// {Evocative Adj:Negative#[A-Z]{1,6}#}{evocative concept:negative#[A-Z]{1,6}#}
 
 // TODO - main UI
 // DDL for Table / Subset / Column / xQty / regex?
@@ -278,6 +282,12 @@ public final class CORPSE
    public void export()
    {
       System.out.println("CORPSE.export()"); // TODO
+      String text = scripts.getText();
+      if (text != null)
+      {
+         String desk = System.getProperty ("user.home") + "/Desktop";
+         FileUtils.writeFile(new File(desk + "/CORPSE.html"), text, false, FileUtils.UTF8);
+      }
    }
 
    public void setQuickSlot(final String text)
