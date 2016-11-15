@@ -14,10 +14,16 @@ import corpse.Script;
 public class ScriptPanel extends TreePanel
 {
    private static final long serialVersionUID = 1L;
-
+   private String text;
+   
    public ScriptPanel(final CORPSE app, final String dir, final String suffix)
    {
       super(app, dir, suffix);
+   }
+
+   public String getText()
+   {
+      return text;
    }
 
    @Override
@@ -31,7 +37,7 @@ public class ScriptPanel extends TreePanel
    {
       return getRawCaretPosition();
    }
-
+   
    @Override
    protected void loadResolved(final String name, final int caret)
    {
@@ -44,7 +50,7 @@ public class ScriptPanel extends TreePanel
          else
             resolved = makeResolved(name);
 
-         String text = script.resolve();
+         text = script.resolve();
          if (text.contains("<html>"))
          {
             JTextPane htmlPane = new JTextPane();
