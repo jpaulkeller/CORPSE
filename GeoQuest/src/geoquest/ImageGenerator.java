@@ -108,7 +108,7 @@ public class ImageGenerator
          g.dispose();
          image.flush();
          
-         File path = new File(PUZZLE_DIR + name.replaceAll("[^A-Za-z0-9& ]", "") + ".png");
+         File path = new File(PUZZLE_DIR + "PZ " + name.replaceAll("[^-A-Za-z0-9& ]", "") + ".png");
          os = new FileOutputStream(path);
          ImageTools.saveAs(image, "png", os, 0f);
       }
@@ -154,7 +154,7 @@ public class ImageGenerator
          g.dispose();
          image.flush();
          
-         File path = new File(TB_DIR + name.replaceAll("[^A-Za-z ]", "") + ".png");
+         File path = new File(TB_DIR + "TB " + name.replaceAll("[^A-Za-z ]", "") + ".png");
          os = new FileOutputStream(path);
          ImageTools.saveAs(image, "png", os, 0f);
       }
@@ -260,6 +260,7 @@ public class ImageGenerator
             g.drawImage(background, 0, 0, null);
          }
 
+         g.setColor(Color.WHITE);
          int titleHeight = paintTitle(g, name, ensemble.getText());
          int top =  stats.safeMarginH + titleHeight - 50;
          int bottom = stats.h - stats.safeMarginH;
@@ -312,7 +313,7 @@ public class ImageGenerator
          if (eq.getImage() != null)
             paintArt(g, eq.getImage(), titleBottom + 40);
          if (eq.getIcon() != null)
-            paintIcon(g, eq.getIcon(), titleHeight);
+            paintIcon(g, eq.getIcon(), 70);
          int ensembleHeight = paintEnsemble(g, eq);
          int top = (stats.h / 2);
          int bottom = stats.h - stats.safeMarginH - ensembleHeight;
@@ -367,7 +368,7 @@ public class ImageGenerator
          if (event.getImage() != null)
             paintArt(g, event.getImage(), top);
          if (event.getIcon() != null)
-            paintIcon(g, event.getIcon(), titleHeight);
+            paintIcon(g, event.getIcon(), 110);
          top = (stats.h / 2) + playHeight + 1;
          int bottom = stats.h - stats.safeMarginH;
          paintText(g, event, name, top, bottom, 5);
@@ -436,7 +437,7 @@ public class ImageGenerator
       BufferedImage bi = ImageTools.imageToBufferedImage(scaled.getImage());
       int top = stats.safeMarginH + 2; // on title
       // int top = stats.safeMarginH + (h / 2) + 5; // super-imposed on title, shadowed
-      int left = stats.w - stats.safeMarginW - bi.getWidth();
+      int left = stats.w - stats.safeMarginW - bi.getWidth() + 5;
       g.drawImage(bi, left, top, null);
    }
 
@@ -450,11 +451,13 @@ public class ImageGenerator
       
       // Equipment
       else if (name.equals("Backpack"))
-         addIcon(g, ART_DIR + "Icons/Move 5 Cap.png", 90, 90, stats.centerX + 60, stats.safeMarginH + 10);
+         addIcon(g, ART_DIR + "Icons/Move 5 Cap.png", 100, 100, stats.centerX + 130, stats.safeMarginH + 105);
       else if (name.equals("FRS Radio"))
-         addIcon(g, ART_DIR + "Icons/Roll FIND.png", 68, 68, stats.centerX + 27, stats.centerY + 40);
+         addIcon(g, ART_DIR + "Icons/Roll FIND.png", 58, 58, stats.centerX + 15, stats.centerY + 68);
       else if (name.equals("Jeep"))
-         addIcon(g, ART_DIR + "Icons/Move 2.png", 90, 90, stats.centerX + 60, stats.safeMarginH + 10);
+         addIcon(g, ART_DIR + "Icons/Move 2.png", 100, 100, stats.centerX + 50, stats.safeMarginH + 5);
+      else if (name.equals("Lucky Charm"))
+         addIcon(g, ART_DIR + "Icons/Roll +1.png", 90, 90, stats.centerX + 150, stats.safeMarginH);
       else if (name.equals("Mirror"))
          addIcon(g, ART_DIR + "Icons/Roll DNF.png", 60, 60, stats.centerX + 22, stats.centerY + 64);
       
@@ -462,49 +465,71 @@ public class ImageGenerator
       else if (name.equals("All About the Numbers"))
       {
          addIcon(g, ART_DIR + "Icons/Move Run.png", 120, 120, stats.safeW - 50, stats.safeMarginH + 45);
-         addIcon(g, ART_DIR + "Icons/Cache 1.png", 100, 100, stats.safeMarginW + 5, stats.centerY + 148);
+         addIcon(g, ART_DIR + "Icons/Cache 1.png", 70, 70, stats.safeMarginW + 20, stats.centerY + 163);
          addIcon(g, ART_DIR + "Icons/Cache 2.png", 70, 70, stats.safeMarginW + 160, stats.centerY + 163);
       }
       else if (name.equals("Bragging Rights"))
          addIcon(g, ART_DIR + "Icons/Point FTF.png", 90, 90, 84, 712);
       else if (name.equals("Bushwhacked"))
-         addIcon(g, ART_DIR + "Icons/Roll -2.png", 125, 125, 630, 160);
+         addIcon(g, ART_DIR + "Icons/Roll -2.png", 145, 145, 605, 225);
       else if (name.equals("Equipment Rental"))
          addIcon(g, ART_DIR + "Icons/Roll DNF.png", 70, 70, 555, 878);
       else if (name.equals("In a Hurry"))
-         addIcon(g, ART_DIR + "Icons/Point -1.png", 125, 125, 620, 170);
+         addIcon(g, ART_DIR + "Icons/Point -1.png", 150, 150, 585, 235);
       else if (name.equals("Is That Venomous?"))
          addIcon(g, ART_DIR + "Icons/Roll DNF.png", 65, 65, 383, 726);
       else if (name.equals("Meet and Greet"))
-         addIcon(g, ART_DIR + "Icons/Move Join.png", 100, 100, 550, 75);
+         addIcon(g, ART_DIR + "Icons/Move Join.png", 150, 150, 595, 225);
       else if (name.equals("Not About the Numbers"))
-         addIcon(g, ART_DIR + "Icons/Points +1.png", 120, 120, stats.safeW - 50, stats.safeMarginH + 45);
+         addIcon(g, ART_DIR + "Icons/Points +1.png", 150, 150, stats.safeW - 60, stats.safeMarginH + 65);
       else if (name.equals("Parking Ticket"))
-         addIcon(g, ART_DIR + "Icons/Point -1.png", 100, 100, 650, 170);
+         addIcon(g, ART_DIR + "Icons/Point -1.png", 145, 145, 610, 220);
       else if (name.equals("Stick Race"))
-         addIcon(g, ART_DIR + "Icons/Point +1.png", 100, 100, 640, 170);
+         addIcon(g, ART_DIR + "Icons/Point +1.png", 150, 150, 445, 85);
       else if (name.equals("Suspicious Activity"))
          addIcon(g, ART_DIR + "Icons/Roll DNF.png", 65, 65, 514, 720);
       else if (name.equals("Trade Up"))
-         addIcon(g, ART_DIR + "Icons/Equip -1.png", 100, 100, 660, 170);
+         addIcon(g, ART_DIR + "Icons/Equip -1.png", 150, 150, 475, 85);
       else if (name.equals("Yellow Jackets"))
-         addIcon(g, ART_DIR + "Icons/Move 2.png", 100, 100, 580, 75);
+         addIcon(g, ART_DIR + "Icons/Move 2.png", 150, 150, 515, 80);
 
       // Ensembles
       else if (name.equals("Engineer"))
+      {
+         addIcon(g, ART_DIR + "Icons/Roll +1.png", 90, 90, 665, 70);
          addIcon(g, ART_DIR + "Icons/Roll FIND.png", 65, 65, stats.centerX - 135, stats.centerY - 37);
+      }
+      else if (name.equals("Hitchhiker"))
+         addIcon(g, ART_DIR + "Icons/Move.png", 90, 90, 665, 70);
+      else if (name.equals("Lifeguard"))
+         addIcon(g, ART_DIR + "Icons/Move.png", 90, 90, 665, 70);
+      else if (name.equals("MacGyver"))
+         addIcon(g, ART_DIR + "Icons/Equip 1.png", 90, 90, 680, 70);
+      else if (name.equals("Naturalist"))
+         addIcon(g, ART_DIR + "Icons/Point +2.png", 90, 90, 665, 70);
+      else if (name.equals("Photographer"))
+         addIcon(g, ART_DIR + "Icons/Point +2.png", 90, 90, 665, 70);
+      else if (name.equals("Road Warrior"))
+         addIcon(g, ART_DIR + "Icons/Move.png", 90, 90, 665, 70);
       else if (name.equals("Search and Rescue"))
+      {
+         addIcon(g, ART_DIR + "Icons/Move.png", 90, 90, 665, 70);
          addIcon(g, ART_DIR + "Icons/Roll DNF.png", 76, 76, stats.centerX - 86, stats.centerY - 43);
+      }
       else if (name.equals("Tracker"))
       {
+         addIcon(g, ART_DIR + "Icons/Move.png", 90, 90, 665, 70);
          addIcon(g, ART_DIR + "Icons/Roll FIND.png", 70, 70, stats.centerX + 65, stats.centerY - 40);
          addIcon(g, ART_DIR + "Icons/Roll DNF.png", 70, 70, stats.centerX + 208, stats.centerY - 40);
       }
       else if (name.equals("Veteran"))
       {
+         addIcon(g, ART_DIR + "Icons/Roll +2.png", 90, 90, 665, 70);
          addIcon(g, ART_DIR + "Icons/Roll FIND.png", 75, 75, stats.centerX + 48, 175);
          addIcon(g, ART_DIR + "Icons/Roll DNF.png", 75, 75, stats.centerX + 211, 175);
       }
+      else if (name.equals("Weatherman"))
+         addIcon(g, ART_DIR + "Icons/Point +2.png", 90, 90, 665, 70);
    }
 
    private void addIcon(final Graphics2D g, final String path, final int w, final int h, final int left, final int top)
@@ -630,7 +655,7 @@ public class ImageGenerator
       int top = stats.safeMarginH + 2;
       RoundRectangle2D bg = new RoundRectangle2D.Float(left - 10, top + 2, textWidth + 20, textHeight + 4, 20, 20);
       g.fill(bg);
-      g.setColor(Color.BLACK);
+      g.setColor(stats.titleFg);
       Stroke origStroke = g.getStroke();
       g.setStroke(STROKE5);
       g.draw(bg);
@@ -755,7 +780,7 @@ public class ImageGenerator
                           final int maxLines)
    {
       int boxHeight = bottom - top;
-      
+
       if (drawBoxes) // text box
       {
          g.setColor(Color.GREEN);

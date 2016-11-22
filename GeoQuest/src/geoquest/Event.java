@@ -184,7 +184,7 @@ public class Event extends Component implements Comparable<Event>
       add ("Bug Swap", Type.STD, 0, "Trade <em class=bug>Travel Bugs</em> with any other player.  You both gain 1 point.  If you have none, you may draw one first.", null, "Point +1");
       add ("Bushwhacked", Type.STD, 0, "If you are not on a path or Urban tile, lose 1 point and get -2 on your roll.", null, "Point -1", "Trail Guide", "Ol' Blue");
       add ("Call from the Boss", Type.STD, 0, "End your turn and skip the next one.  Then draw one Equipment card.", null, "Equip 1", "Laptop");
-      add ("Campsite Confusion", Type.NOW, 0, "All players give one Equipment card to the player on their left.", null, "Equip Cycle");
+      add ("Campsite Confusion", Type.NOW, 0, "All players give one Equipment card to the player on their left.", null, null);
       add ("Careless Hide", Type.NOW, -2, "From now on, all Search rolls for the last cache you found get +1.", null, "Point -2", "Mirror");
       add ("Caught in the Rain", Type.STD, 0, "Discard a random Equipment card.", null, "Equip -1", "Rain Jacket", "Emergency Radio");
       add ("Complete Collection", Type.STD, 0, "You may discard 3 points to select any Equipment card from the deck.", "Ensemble", null);
