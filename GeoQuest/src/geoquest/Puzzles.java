@@ -21,7 +21,7 @@ public class Puzzles
       PUZZLES.add("Books &\nAuthors");
       PUZZLES.add("Couples");
       PUZZLES.add("Dangerous\nThings");
-      PUZZLES.add("Events"); // or maybe current events?
+      PUZZLES.add("Events"); // or maybe current events? 
       PUZZLES.add("Famous\nand\nLiving");
       PUZZLES.add("Far Away"); // anything far away from where you currently are
       PUZZLES.add("Fictional\nCharacters");
@@ -34,7 +34,7 @@ public class Puzzles
       PUZZLES.add("Hot or\nCold");
       PUZZLES.add("In a\nLaboratory"); 
       PUZZLES.add("In This\nRoom"); // anything in the current room
-      PUZZLES.add("Inside Word"); // puzzle letters must be in the word, but not first or last ("c/h" could be solved by\n"shock")
+      PUZZLES.add("Inside\nWord"); // puzzle letters must be in the word, but not first or last ("c/h" could be solved by\n"shock")
       PUZZLES.add("Movies,\nPlays,\nor TV");
       PUZZLES.add("Noisy\nThings");
       PUZZLES.add("On a\nfarm");

@@ -11,7 +11,7 @@ public class ImageStats
    // private static final String FONT_NAME = "Eurostile";
    // private static final String FONT_NAME = "Veggieburger";
    // "Enigmatic Regular"
-   // "Hattori Hanzo";
+   // "Hattori Hanzo"; 
    
    int w, h; // component (card or token)
    int centerX, centerY;
@@ -24,6 +24,7 @@ public class ImageStats
    Font titleFont, titleFont2, titleFont3;
    Font textFont, textFont2;
    Color titleBg;
+   Color titleFg = Color.BLACK;
 
    // Cacher cards only
    Font letterFont;
@@ -138,7 +139,7 @@ public class ImageStats
       stats.titleFontName = "Bree Serif";
       stats.titleFont = new Font(stats.titleFontName, Font.BOLD, 60);
       stats.titleFont2 = new Font(stats.titleFontName, Font.BOLD, 50);
-      stats.titleBg = ImageGenerator.DIFF1_COLOR;
+      stats.titleBg = Color.WHITE;
          
       stats.textFont = new Font("Cabin", Font.PLAIN, 70);
       stats.textFont2 = new Font("Cabin", Font.PLAIN, 60);
@@ -179,7 +180,7 @@ public class ImageStats
       
       stats.ensembleFont = new Font(stats.titleFontName, Font.BOLD, 60);
       stats.ensembleFont2 = new Font(stats.titleFontName, Font.BOLD, 50);
-      stats.ensembleColor = new Color(220, 160, 220); // plum
+      stats.ensembleColor = new Color(150, 150, 150); // grey
       
       return stats;
    }
