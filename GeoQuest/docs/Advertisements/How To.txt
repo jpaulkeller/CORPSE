@@ -1,0 +1,6 @@
+Animated GIF:
+
+Use "// Background" as the static part.
+Save-as: animated GIF
+Compress using: http://ezgif.com/
+
