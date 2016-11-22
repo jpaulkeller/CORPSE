@@ -76,7 +76,7 @@ public class Equipment extends Component implements Comparable<Equipment>
 
    static void populate()
    {
-      add("Antenna", "+1 when Searching on Forest and Urban tiles", "Antenna", "Search +1", "Engineer");
+      add("Antenna", "+1 when Searching on Forest tiles", "Antenna", "Search +1", "Engineer");
       add("Backpack", "Provides 4 extra equipment slots, but you can't move more than 5 per turn", null, "Slot 4", "Through Hiker");
       add("Bandana", "You may trade this for another player's equipment card (if they agree)", null, null, "Lifeguard");
       add("Batteries", "You may reroll any Move roll of 1 or less", null, "Reroll", "Eagle Scout");
@@ -93,7 +93,7 @@ public class Equipment extends Component implements Comparable<Equipment>
       add("First-aid Kit", "Discard to prevent any injury Event; gain 4 points if used on another player", null, "Point +4", "Paramedic");
       add("Flashlight", "+1 when Searching for caches not yet found by anyone", null, "Search +1", "Night Cacher");
       // TODO too good?
-      add("FRS Radio", "If you roll <em class=find>.F.</em>, you may jump to any tile occupied by another player", null, "Move Run", "Search and Rescue");
+      add("FRS Radio", "If you roll <em class=find>.F.</em> while moving, you gain 1 point", null, "Point +1", "Search and Rescue");
       add("Gaiters", "+1 when Moving on Swamp tiles, and when crossing a stream", null, "Move 1", "Veteran");
       add("Geocoin", "This card counts as 3 points, or discard it for 1 point", null, "Point +3", "Event Coordinator");
       add("Gloves", "+1 when Searching for any level 3 or higher cache on a Forest tile", null, "Search +1", "Weatherman");
@@ -107,7 +107,7 @@ public class Equipment extends Component implements Comparable<Equipment>
       add("Laptop", "You may solve any Puzzle cache using only 1 of the letters", null, "Cache Puzzle", "Engineer");
       add("Letterbox Stamp", "+1 point whenever you find a level 3 cache", null, "Point +1", "Event Coordinator");
       add("Long Pants", "Provides 1 extra equipment slot", null, "Slot 1", "Veteran");
-      add("Lucky Charm", "You get +1 whenever you roll doubles", null, "Roll +1", "Hitchhiker");
+      add("Lucky Charm", "You get +1 whenever you roll doubles", null, null, "Hitchhiker");
       add("Map", "+1 when Moving if either die is white", null, "Move 1", "Tracker");
       add("Mirror", "Ignore any <em class=dnf>.D.</em> when searching on Urban tiles", null, "Search", "Photographer");
       add("Mountain Bike", "+1 when Moving if either die is 1", null, "Move 1", "Road Warrior");
