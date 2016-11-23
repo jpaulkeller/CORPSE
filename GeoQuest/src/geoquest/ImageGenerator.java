@@ -204,7 +204,7 @@ public class ImageGenerator
          }
 
          paintGrid(g);
-         int titleHeight = paintTitleRight(g, name, cacher.getText());
+         int titleHeight = paintTitleRight(g, name);
          int titleBottom =  stats.safeMarginH + 2 + titleHeight;
          addIcon(g, ART_DIR + "Cards/Cachers/Letter Box.png", 150, 150, stats.safeMarginW + 5, stats.safeMarginH + 5);
          
@@ -217,7 +217,7 @@ public class ImageGenerator
          g.drawString(letter, stats.safeMarginW + 60 - (letterWidth / 2), 180); // TODO
          
          int bottom = stats.h - stats.safeMarginH;
-         paintText(g, cacher, name, titleBottom, bottom, 4);
+         paintText(g, cacher, titleBottom, bottom, 4);
          hackIcons(g, name);
 
          // safe box
@@ -261,10 +261,10 @@ public class ImageGenerator
          }
 
          g.setColor(Color.WHITE);
-         int titleHeight = paintTitle(g, name, ensemble.getText());
+         int titleHeight = paintTitle(g, name);
          int top =  stats.safeMarginH + titleHeight - 50;
          int bottom = stats.h - stats.safeMarginH;
-         paintText(g, ensemble, name, top, bottom, 4);
+         paintText(g, ensemble, top, bottom, 4);
          hackIcons(g, name);
 
          // safe box
@@ -308,16 +308,16 @@ public class ImageGenerator
          }
 
          paintGrid(g);
-         int titleHeight = paintTitleLeft(g, name, eq.getText());
+         int titleHeight = paintTitleLeft(g, eq);
          int titleBottom =  stats.safeMarginH + 2 + titleHeight;
          if (eq.getImage() != null)
-            paintArt(g, eq.getImage(), titleBottom + 40);
+            paintArt(g, eq.getImage(), titleBottom + 35);
          if (eq.getIcon() != null)
-            paintIcon(g, eq.getIcon(), 70);
+             paintIcon(g, eq.getIcon(), 70);
          int ensembleHeight = paintEnsemble(g, eq);
          int top = (stats.h / 2);
          int bottom = stats.h - stats.safeMarginH - ensembleHeight;
-         paintText(g, eq, name, top, bottom, 4);
+         paintText(g, eq, top, bottom, 4);
          hackIcons(g, name);
 
          // safe box
@@ -328,8 +328,11 @@ public class ImageGenerator
          g.dispose();
          cardImage.flush();
          
-         File path = new File(EQUIP_DIR + name.replaceAll("[?!]", "") + ".png");
-         os = new FileOutputStream(path);
+         String path = EQUIP_DIR;
+         if (stats.language != Language.ENGLISH)
+            path = path.replace("Cards", "Cards/" + stats.language); 
+         File file = new File(path + name.replaceAll("[?!]", "") + ".png");
+         os = new FileOutputStream(file);
          ImageTools.saveAs(cardImage, "png", os, 0f);
       }
       catch (Exception x)
@@ -362,7 +365,7 @@ public class ImageGenerator
 
          paintGrid(g);
          int playHeight = paintPlayRule(g, event);
-         int titleHeight = paintTitleLeft(g, name, event.getText());
+         int titleHeight = paintTitleLeft(g, event);
          int titleBottom =  stats.safeMarginH + 2 + titleHeight;
          int top = titleBottom + (event.getType() == Type.STD ? 75 : 40);
          if (event.getImage() != null)
@@ -371,7 +374,7 @@ public class ImageGenerator
             paintIcon(g, event.getIcon(), 110);
          top = (stats.h / 2) + playHeight + 1;
          int bottom = stats.h - stats.safeMarginH;
-         paintText(g, event, name, top, bottom, 5);
+         paintText(g, event, top, bottom, 5);
          hackIcons(g, name);
 
          // safe box
@@ -429,7 +432,7 @@ public class ImageGenerator
       }
    }
 
-   private void paintIcon(final Graphics2D g, final String imageName, final int titleHeight)
+   private int paintIcon(final Graphics2D g, final String imageName, final int titleHeight)
    {
       int h = Math.round(titleHeight * 1.5f);
       ImageIcon icon = new ImageIcon(ART_DIR + imageName);
@@ -439,6 +442,7 @@ public class ImageGenerator
       // int top = stats.safeMarginH + (h / 2) + 5; // super-imposed on title, shadowed
       int left = stats.w - stats.safeMarginW - bi.getWidth() + 5;
       g.drawImage(bi, left, top, null);
+      return h;
    }
 
    private void hackIcons(final Graphics2D g, final String name)
@@ -453,13 +457,19 @@ public class ImageGenerator
       else if (name.equals("Backpack"))
          addIcon(g, ART_DIR + "Icons/Move 5 Cap.png", 100, 100, stats.centerX + 130, stats.safeMarginH + 105);
       else if (name.equals("FRS Radio"))
-         addIcon(g, ART_DIR + "Icons/Roll FIND.png", 58, 58, stats.centerX + 15, stats.centerY + 68);
+      {
+         int x = stats.language == Language.FRENCH ? 390 : 315;
+         addIcon(g, ART_DIR + "Icons/Roll FIND.png", 58, 58, x, stats.centerY + 68);
+      }
       else if (name.equals("Jeep"))
          addIcon(g, ART_DIR + "Icons/Move 2.png", 100, 100, stats.centerX + 50, stats.safeMarginH + 5);
       else if (name.equals("Lucky Charm"))
          addIcon(g, ART_DIR + "Icons/Roll +1.png", 90, 90, stats.centerX + 150, stats.safeMarginH);
       else if (name.equals("Mirror"))
-         addIcon(g, ART_DIR + "Icons/Roll DNF.png", 60, 60, stats.centerX + 22, stats.centerY + 64);
+      {
+         int x = stats.language == Language.FRENCH ? 280 : 322;
+         addIcon(g, ART_DIR + "Icons/Roll DNF.png", 60, 60, x, stats.centerY + 64);
+      }
       
       // Events
       else if (name.equals("All About the Numbers"))
@@ -617,7 +627,7 @@ public class ImageGenerator
       return textHeight;
    }
 
-   private int paintTitle(final Graphics2D g, final String title, final String text)
+   private int paintTitle(final Graphics2D g, final String title)
    {
       String name = title; // .toUpperCase();
       Font font = stats.titleFont;
@@ -633,14 +643,14 @@ public class ImageGenerator
       int textWidth = fm.stringWidth(name);
       if (textWidth + margin > stats.safeW)
       {
-         System.out.println(" [NAME TOO WIDE] > " + name + ": " + text);
+         System.out.println(" [NAME TOO WIDE] > " + name);
          fm = g.getFontMetrics(stats.titleFont2);
          g.setFont(stats.titleFont2);
          textHeight = fm.getHeight();
          textWidth = fm.stringWidth(name);
          if (textWidth + margin > stats.safeW)
          {
-            System.err.println(" [NAME TOO WIDE] > " + name + ": " + text);
+            System.err.println(" [NAME TOO WIDE] > " + name);
             fm = g.getFontMetrics(stats.titleFont3);
             g.setFont(stats.titleFont3);
             textHeight = fm.getHeight();
@@ -667,35 +677,30 @@ public class ImageGenerator
       return textHeight + 20;
    }
 
-   private int paintTitleLeft(final Graphics2D g, final String title, final String text)
+   private int paintTitleLeft(final Graphics2D g, final Component card)
    {
-      String name = title; // .toUpperCase();
+      String name = card.getName(stats.language);
       Font font = stats.titleFont;
-      
-      // hack for long titles with icons
-      if (name.equals("Insect Repellent") || 
-          name.equals("Mountain Bike") || 
-          name.equals("Survival Strap") || 
-          name.equals("Walking Stick"))
-         font = stats.titleFont2;
-      else if (name.equals("Emergency Radio") || name.equals("Letterbox Stamp"))
-         font = stats.titleFont3;
       
       int margin = 10;
       FontMetrics fm = g.getFontMetrics(font);
       g.setFont(font);
       int textHeight = fm.getHeight();
       int textWidth = fm.stringWidth(name);
-      if (textWidth + margin > stats.safeW)
+      int iconWidth = card.getIcon() != null ? Math.round(textHeight * 1.5f) : 0;
+      
+      if (textWidth + margin + iconWidth > stats.safeW)
       {
-         System.out.println(" [NAME TOO WIDE] > " + name + ": " + text);
+         System.out.println(" [NAME TOO WIDE 1] > " + name);
          fm = g.getFontMetrics(stats.titleFont2);
          g.setFont(stats.titleFont2);
          textHeight = fm.getHeight();
          textWidth = fm.stringWidth(name);
-         if (textWidth + margin > stats.safeW)
+         iconWidth = card.getIcon() != null ? Math.round(textHeight * 1.5f) : 0;
+         
+         if (textWidth + margin + iconWidth > stats.safeW)
          {
-            System.err.println(" [NAME TOO WIDE] > " + name + ": " + text);
+            System.err.println(" [NAME TOO WIDE 2] > " + name);
             fm = g.getFontMetrics(stats.titleFont3);
             g.setFont(stats.titleFont3);
             textHeight = fm.getHeight();
@@ -724,7 +729,7 @@ public class ImageGenerator
       return textHeight + 4;
    }
 
-   private int paintTitleRight(final Graphics2D g, final String title, final String text)
+   private int paintTitleRight(final Graphics2D g, final String title)
    {
       String name = title;
       Font font = stats.titleFont;
@@ -740,14 +745,14 @@ public class ImageGenerator
       int textWidth = fm.stringWidth(name);
       if (textWidth + margin > stats.safeW)
       {
-         System.out.println(" [NAME TOO WIDE] > " + name + ": " + text);
+         System.out.println(" [NAME TOO WIDE] > " + name);
          fm = g.getFontMetrics(stats.titleFont2);
          g.setFont(stats.titleFont2);
          textHeight = fm.getHeight();
          textWidth = fm.stringWidth(name);
          if (textWidth + margin > stats.safeW)
          {
-            System.err.println(" [NAME TOO WIDE] > " + name + ": " + text);
+            System.err.println(" [NAME TOO WIDE] > " + name);
             fm = g.getFontMetrics(stats.titleFont3);
             g.setFont(stats.titleFont3);
             textHeight = fm.getHeight();
@@ -776,8 +781,7 @@ public class ImageGenerator
       return textHeight + 4;
    }
 
-   private void paintText(final Graphics2D g, final Component card, final String name, final int top, final int bottom,
-                          final int maxLines)
+   private void paintText(final Graphics2D g, final Component card, final int top, final int bottom, final int maxLines)
    {
       int boxHeight = bottom - top;
 
@@ -792,18 +796,18 @@ public class ImageGenerator
       g.setColor(Color.BLACK);
       FontMetrics fm = g.getFontMetrics(stats.textFont);
       int lineHeight = fm.getHeight();
-      List<Line> lines = splitText(card.getTextForImage(), fm, stats.safeW);
+      List<Line> lines = splitText(card.getTextForImage(stats.language), fm, stats.safeW);
       
       if (lines.size() > maxLines) // too much text, use a smaller font
       {
-         System.out.println(" [TEXT TOO BIG] > " + name + ": " + card.getText());
+         System.out.println(" [TEXT TOO BIG] > " + card.getName());
          g.setFont(stats.textFont2);
          g.setColor(Color.BLACK);
          fm = g.getFontMetrics(stats.textFont2);
          lineHeight = fm.getHeight();
-         lines = splitText(card.getTextForImage(), fm, stats.safeW);
+         lines = splitText(card.getTextForImage(stats.language), fm, stats.safeW);
          if (lines.size() > maxLines + 1) // too much text, use a smaller font
-            System.err.println(" [TEXT TOO BIG] > " + name + ": " + card.getText());
+            System.err.println(" [TEXT TOO BIG] > " + card.getName());
       }
       
       

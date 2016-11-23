@@ -5,6 +5,8 @@ import java.awt.Font;
 
 public class ImageStats
 {
+   Language language;
+   
    // Fonts
    // private static final String FONT_NAME = "Artifika";
    // private static final String FONT_NAME = "Bubblegum Sans";
@@ -36,6 +38,16 @@ public class ImageStats
    // Event cards only
    Font playFont;
    Color playAnyColor, playNowColor;
+
+   public ImageStats()
+   {
+      this(Language.ENGLISH);
+   }
+
+   public ImageStats(final Language language)
+   {
+      this.language = language;
+   }
    
    // TOKENS -----------------------------------------------------------------------------
    
@@ -147,9 +159,9 @@ public class ImageStats
       return stats;
    }
    
-   public static ImageStats getEquipmentStats()
+   public static ImageStats getEquipmentStats(final Language language)
    {
-      ImageStats stats = new ImageStats();
+      ImageStats stats = new ImageStats(language);
       
       stats.w = 600;
       stats.h = 825;
@@ -167,11 +179,15 @@ public class ImageStats
       // size of the art on the final card
       stats.artW = 450;
       stats.artH = 275;
-      
-      stats.titleFontName = "Bree Serif";
+
+      if (language == Language.FRENCH)
+         stats.titleFontName = "EB Garamond 12";
+      else
+         stats.titleFontName = "Bree Serif";
+         
       stats.titleFont = new Font(stats.titleFontName, Font.PLAIN, 60);
       stats.titleFont2 = new Font(stats.titleFontName, Font.PLAIN, 50);
-      stats.titleFont3 = new Font(stats.titleFontName, Font.PLAIN, 42);
+      stats.titleFont3 = new Font(stats.titleFontName, Font.PLAIN, 44);
       // stats.titleBg = new Color(255, 215, 0); // gold
       stats.titleBg = new Color(255, 121, 0); // orange
          
