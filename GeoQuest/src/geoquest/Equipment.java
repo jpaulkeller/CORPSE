@@ -1,14 +1,19 @@
 package geoquest;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class Equipment extends Component implements Comparable<Equipment>
 {
    static final Map<String, Equipment> EQUIPMENT = new TreeMap<>();
+   private static final Map<String, String> NAMES_FR = new HashMap<>();
+   private static final Map<String, String> TEXT_FR = new HashMap<>();
+   
    static
    {
       populate();
+      populateFR();
    }
 
    private String name;
@@ -40,8 +45,24 @@ public class Equipment extends Component implements Comparable<Equipment>
    }
 
    @Override
+   public String getName(final Language language)
+   {
+      if (language == Language.FRENCH)
+         return NAMES_FR.get(name);
+      return name;
+   }
+
+   @Override
    public String getText()
    {
+      return text;
+   }
+
+   @Override
+   public String getText(final Language language)
+   {
+      if (language == Language.FRENCH)
+         return TEXT_FR.get(name);
       return text;
    }
 
@@ -50,6 +71,7 @@ public class Equipment extends Component implements Comparable<Equipment>
       return image;
    }
 
+   @Override
    public String getIcon()
    {
       return icon;
@@ -92,7 +114,6 @@ public class Equipment extends Component implements Comparable<Equipment>
       add("Field Guide", "You may discard this to solve any puzzle cache", null, "Cache Puzzle", "Naturalist");
       add("First-aid Kit", "Discard to prevent any injury Event; gain 4 points if used on another player", null, "Point +4", "Paramedic");
       add("Flashlight", "+1 when Searching for caches not yet found by anyone", null, "Search +1", "Night Cacher");
-      // TODO too good?
       add("FRS Radio", "If you roll <em class=find>.F.</em> while moving, you gain 1 point", null, "Point +1", "Search and Rescue");
       add("Gaiters", "+1 when Moving on Swamp tiles, and when crossing a stream", null, "Move 1", "Veteran");
       add("Geocoin", "This card counts as 3 points, or discard it for 1 point", null, "Point +3", "Event Coordinator");
@@ -134,11 +155,69 @@ public class Equipment extends Component implements Comparable<Equipment>
       // add ("Umbrella", "Protects against some rain-related effects", null, "");
    }
 
+   static void populateFR()
+   {
+      addFR("Antenna", "Antenne", "+1 en Recherche en Forêt et case Urbaine");
+      addFR("Backpack", "Sac à dos", "Ajoute 4 places  d'équipement, mais restreint le déplacement maximum à 5 par tour");
+      addFR("Bandana", "Bandana", "Échangeable contre une carte d'équipement d'un autre joueur (S'il accepte)");
+      addFR("Batteries", "Batteries", "Vous pouvez rouler à nouveau un jet de Déplacement de 1 ou moins");
+      addFR("Belt Pack", "Sac de taille", "Ajoute 2 places d'équipement");
+      addFR("Binoculars", "Jumelle", "+1 au Déplacement lorsque vous roulez 4 ou plus");
+      addFR("Camel Pack", "Sac à eau", "Ajoute 2 places d'équipement");
+      addFR("Camera", "Caméra", "Gagner 1 point pour chaque participant à l'<em class=event>Évènement de Rencontre</em>");
+      addFR("Cell Phone", "Mobile", "Vous pouvez ajouter 1 à vos jets de Recherche (Dans ce cas, gagner 1 point de moins)");
+      addFR("CITO Bag", "Sac CITO", "Vous pouvez défaussez cette carte pour gagner 3 points");
+      addFR("Compass", "Compas", "+1 lors de Recherche pour toutes les Multi-Caches");
+      addFR("Duct Tape", "Ruban adhésif", "Défaussez cet Équipement pour ignorer un Évènement joué contre vous");
+      addFR("Emergency Radio", "Radio d'urgence", "+1 au Déplacement lors d'Évènement climatique en jeu");
+      addFR("Field Guide", "Guide pratique", "Défaussez cette carte pour résoudre une cache puzzle");
+      addFR("First-aid Kit", "Trousse de premier soin", "Défaussez pour prévenir un Évènement de blessure; +4 points si utilisée sur un autre joueur");
+      addFR("Flashlight", "Lampe de poche", "+1 lors de Recherche pour les caches que personne n'a encore trouvées");
+      addFR("FRS Radio", "Radio bidirectionnelle", "Si vous roulez <em class=find>.F.</em> en vous déplaçant, vous gagnez 1 point");
+      addFR("Gaiters", "Guêtre", "+1 lors de Déplacement sur case Marécage et lors de traversée de courant d'eau");
+      addFR("Geocoin", "Géocoin", "Cette carte compte pour 3 points ou défaussez la pour 1 point");
+      addFR("Gloves", "Gants", "+1 lors de Recherche pour les caches sur case Forêt de niveau 3 ou plus");
+      addFR("Gorp", "Barre tendre", "Défaussez cette carte et jouez un autre tour");
+      addFR("Hat", "Chapeau", "Vous gagnez 1 point à chaque <em class=event>Évènement de Rencontre</em> que vous participez");
+      addFR("Head Lamp", "Lampe Frontale", "+2 lors de Déplacement si les 2 dés sont noirs");
+      addFR("Hiking Boots", "Bottes de randonnée", "+1 lors de Déplacement sur case Forêt");
+      addFR("Hiking Staff", "Bâton de Randonnée", "+1 lors de Déplacement sur case Rocheuse");
+      addFR("Insect Repellent", "Chasse moustique", "+1 lors de Recherche sur case Marécageuse");
+      addFR("Jeep", "Jeep", "+2 lors de déplacement sur case Urbaine; ajoute 1 place d'équipement");
+      addFR("Laptop", "Portable", "Vous pouvez résoudre les caches Puzzle en utilisant uniquement 1 des lettres");
+      addFR("Letterbox Stamp", "Étampe", "+1 point lorsque vous trouvez une cache de niveau 3");
+      addFR("Long Pants", "Pantalon long", "Ajoute 1 place d'équipement");
+      addFR("Lucky Charm", "Porte-Bonheur", "Ajouter +1 lorsque vous roulez un double");
+      addFR("Map", "Carte", "+1 lors de Déplacement si un dé est blanc");
+      addFR("Mirror", "Miroir", "Ignorez <em class=dnf>.D.</em> lors de Recherche sur case Urbaine");
+      addFR("Mountain Bike", "Vélo de montagne", "+1 lors de Déplacement si un des dés est 1");
+      addFR("Ol' Blue", "Chien Pisteur", "Vous pouvez rechercher des caches sur des cases adjacentes comme si vous y étiez");
+      addFR("Pocket Knife", "Couteau de poche", "+1 lors de Recherche sur des caches niveau 5");
+      addFR("Rain Jacket", "Imperméable", "Ajoute 1 place d'équipement");
+      addFR("Repair Kit", "Trousse de réparation", "Sur une cache, vous pouvez défausser pour gagner 2 points");
+      addFR("Rope", "Corde", "Sur une case Rocheuse, aucun autre joueur ne peut jouer d'Évènements sur vous");
+      addFR("Safari Vest", "Gilet Safari", "Ajoute 3 places d'équipement");
+      addFR("Survival Strap", "Bracelet de corde", "Vous pouvez rouler à nouveau les doubles 1");
+      addFR("Swag Bag", "Sac au trésors", "Ajout 1 place d'équipement");
+      addFR("Trail Guide", "Guide des sentiers", "Vous pouvez ajouter 1 case de déplacement le long d'un chemin chaque tour");
+      addFR("Utility Tool", "Pince multi-usage", "+1 lors de Recherche sur case Urbaine");
+      addFR("Waders", "Bottes-Pantalon", "+2 lors de traversée de courant d'eau");
+      addFR("Walking Stick", "Bâton de marche", "+1 lors de Déplacement sur case Claire");
+      addFR("Water Bottle", "Bouteille d'eau", "+1 lors de Déplacement si un dé est noir");
+      addFR("Whistle", "Sifflet", "Se déplacer sur une case occupée par un autre joueur ne coute aucun point de déplacement.");
+   }
+
    private static void add(final String cardName, final String cardText, final String image, 
                            final String icon, final String ensemble)
    {
       Equipment equip = new Equipment(cardName, cardText, image, icon, ensemble);
       EQUIPMENT.put(equip.getName(), equip);
+   }
+
+   private static void addFR(final String cardNameEN, final String cardNameFR, final String cardTextFR)
+   {
+      NAMES_FR.put(cardNameEN, cardNameFR);
+      TEXT_FR.put(cardNameEN, cardTextFR);
    }
 
    private static void show()
@@ -200,11 +279,16 @@ public class Equipment extends Component implements Comparable<Equipment>
       HtmlGenerator htmlGen = new HtmlGenerator(12, 4);
       htmlGen.printEquipment(EQUIPMENT);
 
-      ImageGenerator imgGen = new ImageGenerator(ImageStats.getEquipmentStats(), false);
+      ImageGenerator imgGen = new ImageGenerator(ImageStats.getEquipmentStats(Language.ENGLISH), false);
       for (Equipment eq : EQUIPMENT.values())
          imgGen.publish(eq);
       System.out.println();
-
+      
+      imgGen = new ImageGenerator(ImageStats.getEquipmentStats(Language.FRENCH), false);
+      for (Equipment eq : EQUIPMENT.values())
+         imgGen.publish(eq);
+      System.out.println();
+      
       show();
       validate();
    }
