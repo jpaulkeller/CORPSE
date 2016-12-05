@@ -1,12 +1,20 @@
 package geoquest;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class Ensemble extends Component implements Comparable<Ensemble>
 {
    static final Map<String, Ensemble> ENSEMBLES = new TreeMap<>();
-   static { populate(); }
+   private static final Map<String, String> NAMES_FR = new HashMap<>();
+   private static final Map<String, String> TEXT_FR = new HashMap<>();
+   
+   static
+   {
+      populate();
+      populateFR();
+   }
 
    private String name;
    private String trigger;
@@ -30,11 +38,27 @@ public class Ensemble extends Component implements Comparable<Ensemble>
    }
 
    @Override
+   public String getName(final Language language)
+   {
+      if (language == Language.FRENCH)
+         return NAMES_FR.get(name);
+      return name;
+   }
+
+   @Override
    public String getText()
    {
       return trigger + text;
    }
 
+   @Override
+   public String getText(final Language language)
+   {
+      if (language == Language.FRENCH)
+         return TEXT_FR.get(name);
+      return getText();
+   }
+   
    @Override
    public int compareTo(final Ensemble c)
    {
@@ -79,7 +103,7 @@ public class Ensemble extends Component implements Comparable<Ensemble>
       add("Photographer", "Camera", "Mirror", "Safari Vest", "",
          "You get 2 points if you end your turn on a <em class=tile>Scenic View</em> or <em class=tile>Waterfall</em>.  (You may only get the points once each.)");
       add("Road Warrior", "Gorp", "Camel Pack", "Mountain Bike", "If you roll 5 or higher while on a Path, ",
-         "you may jump to any tile on that Path.</em>");
+         "you may jump to any tile on that Path.");
       add("Search and Rescue", "Binoculars", "FRS Radio", "Rope",
          "Whenever anyone rolls a <em class=dnf>.D.</em>, ", "you may immediately jump to their location.");
       add("Through Hiker", "Backpack", "Hiking Boots", "Trail Guide", "Each time you roll doubles while on a Path, ",
@@ -93,12 +117,38 @@ public class Ensemble extends Component implements Comparable<Ensemble>
       add("Weatherman", "Emergency Radio", "Gloves", "Rain Jacket", "",
          "All weather Event cards (drawn, in play, or in a player's hand) are discarded, and you gain 2 points for each one.");
    }
+   
+   static void populateFR()
+   {
+      addFR("Eagle Scout", "Eagle Scout", "Lorsqu'un événement vous affecte, vous pouvez détruire toute carte d'équipement pour l'ignorer.");
+      addFR("Engineer", "Ingénieur", "Chaque fois qu'un autre joueur lance un <em class=find>.F.</em>, vous obtenez +1 sur votre prochain jet (non limité à une fois par tour)");
+      addFR("Event Coordinator", "Coordinateur d'évenements", "Chaque fois que quelqu'un joue une carte Event sur vous, vous lancez tous les deux les dés. Si vous roulez plus haut, cela ne vous affecte pas (jetez-le).");
+      addFR("Lifeguard", "Maître Nageur", "Si un joueur à côté d'un ruisseau ou d'un lac lance un <em class=roll>1</em> sur chaque dé, vous pouvez immédiatement sauter à leur emplacement.");
+      addFR("Hitchhiker", "Auto Stoppeur", "Chaque fois que vous lancez <em class=roll>4 + 2</em>, vous pouvez passer à n'importe quelle tuile lors de votre déplacement.");
+      addFR("MacGyver", "MacGyver", "Vous pouvez sauter votre tour pour dessiner une carte d'équipement.");
+      addFR("Naturalist", "Naturaliste", "Toutes les cartes d'événement de la faune (tirées, en jeu ou dans la main d'un joueur) sont éliminées et vous gagnez 2 points pour chacune d'elles.");
+      addFR("Night Cacher", "Nuit Cacher", "Toutes les pénalités de roulis et de points contre vous sont traitées comme -1.");
+      addFR("Paramedic", "Paramédical", "Si une carte Event vous accorde des points, lancez plutôt les dés pour déterminer combien de points vous gagnez.");
+      addFR("Photographer", "Photographe", "Vous obtenez 2 points si vous terminez votre tour sur une <em class=tile>Vue Panoramique</em> ou <em class=tile>Cascade</em>. (Vous ne pouvez obtenir les points qu'une seule fois.)");
+      addFR("Road Warrior", "Guerrier de la route", "Si vous roulez 5 ou plus sur un Chemin, vous pouvez passer à n'importe quelle tuile sur ce Chemin.");
+      addFR("Search and Rescue", "Chercher et sauver", "Chaque fois que quelqu'un lance une <em class=dnf>.D.</em>, vous pouvez immédiatement passer à leur emplacement.");
+      addFR("Through Hiker", "Par le randonneur", "Chaque fois que vous doublez sur un chemin, vous pouvez prendre un tour supplémentaire (non limité à une fois par tour).");
+      addFR("Tracker", "Traqueur", "Si un joueur de votre quadrant lance <em class=find>.F.</em> ou <em class=dnf>.D.</em>, vous pouvez immédiatement passer à leur emplacement.");
+      addFR("Veteran", "Vétéran", "Si vous lancez une <em class=find>.F.</em> ou <em class=dnf>.D.</em> en déplacement, vous pouvez l'ignorer et ajouter 2 à votre rouleau.");
+      addFR("Weatherman", "Météorologue", "Toutes les cartes d'événement météorologiques (tirées, en jeu ou dans la main d'un joueur) sont éliminées et vous gagnez 2 points pour chacune d'elles.");
+   }
 
    private static void add(final String cardName, final String eq1, final String eq2, final String eq3, final String trigger,
                            final String text)
    {
       Ensemble ensemble = new Ensemble(cardName, eq1, eq2, eq3, trigger, text);
       ENSEMBLES.put(ensemble.getName(), ensemble);
+   }
+
+   private static void addFR(final String cardNameEN, final String cardNameFR, final String cardTextFR)
+   {
+      NAMES_FR.put(cardNameEN, cardNameFR);
+      TEXT_FR.put(cardNameEN, cardTextFR);
    }
 
    private static void dump(final Ensemble ensemble)
@@ -159,10 +209,14 @@ public class Ensemble extends Component implements Comparable<Ensemble>
       htmlGen.printEnsembles(ENSEMBLES);
       System.out.println();
       
-      ImageGenerator imgGen = new ImageGenerator(ImageStats.getEnsembleStats(), false);
+      ImageGenerator imgGen = new ImageGenerator(ImageStats.getEnsembleStats(Language.ENGLISH), false);
       for (Ensemble ensemble : ENSEMBLES.values())
          imgGen.publish(ensemble);
       System.out.println();
 
+      imgGen = new ImageGenerator(ImageStats.getEnsembleStats(Language.FRENCH), false);
+      for (Ensemble ensemble : ENSEMBLES.values())
+         imgGen.publish(ensemble);
+      System.out.println();
    }
 }
