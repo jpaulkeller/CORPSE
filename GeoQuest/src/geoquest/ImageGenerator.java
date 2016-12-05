@@ -261,7 +261,7 @@ public class ImageGenerator
          }
 
          g.setColor(Color.WHITE);
-         int titleHeight = paintTitle(g, name);
+         int titleHeight = paintTitle(g, ensemble);
          int top =  stats.safeMarginH + titleHeight - 50;
          int bottom = stats.h - stats.safeMarginH;
          paintText(g, ensemble, top, bottom, 4);
@@ -275,8 +275,11 @@ public class ImageGenerator
          g.dispose();
          cardImage.flush();
          
-         File path = new File(ENSEMBLE_DIR + name.replaceAll("[?!]", "") + ".png");
-         os = new FileOutputStream(path);
+         String path = ENSEMBLE_DIR;
+         if (stats.language != Language.ENGLISH)
+            path = path.replace("Cards", "Cards/" + stats.language); 
+         File file = new File(path + name.replaceAll("[?!]", "") + ".png");
+         os = new FileOutputStream(file);
          ImageTools.saveAs(cardImage, "png", os, 0f);
       }
       catch (Exception x)
@@ -627,9 +630,9 @@ public class ImageGenerator
       return textHeight;
    }
 
-   private int paintTitle(final Graphics2D g, final String title)
+   private int paintTitle(final Graphics2D g, final Component card)
    {
-      String name = title; // .toUpperCase();
+      String name = card.getName(stats.language);
       Font font = stats.titleFont;
       
       // hack for long titles with icons

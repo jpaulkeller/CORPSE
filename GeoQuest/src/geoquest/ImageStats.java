@@ -131,9 +131,9 @@ public class ImageStats
       return stats;
    }
    
-   public static ImageStats getEnsembleStats()
+   public static ImageStats getEnsembleStats(final Language language)
    {
-      ImageStats stats = new ImageStats();
+      ImageStats stats = new ImageStats(language);
       
       stats.w = 825;
       stats.h = 600;

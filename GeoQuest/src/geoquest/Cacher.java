@@ -57,7 +57,7 @@ public class Cacher extends Component implements Comparable<Cacher>
    {
       add("Athletic Alex", "Alex gets +1 to Move for each empty Equipment slot (not counting extra slots).");
       add("Birder Brandon", "Brandon gets +1 when searching for Multi-caches.");
-      add("Collector Colin", "Colin starts the game with a random Travel Bug.");
+      add("Collector Colin", "Colin starts the game with a random Travel Bug ®.");
       add("Determined Dan", "Once per turn, Dan may re-roll a <em class=dnf>.D.</em> when searching.");
       add("Eager Earl", "Whenever a new cache is placed on the board, Earl may immediately move 4 tiles.");
       add("Fast Freddie", "Freddie gets +1 to all Move rolls in Clear and Urban tiles.");
