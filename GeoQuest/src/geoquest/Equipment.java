@@ -1,23 +1,75 @@
 package geoquest;
 
-import java.util.HashMap;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics2D;
+import java.awt.Stroke;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.util.Map;
 import java.util.TreeMap;
+
+import javax.imageio.ImageIO;
+
+import utils.ImageTools;
 
 public class Equipment extends Component implements Comparable<Equipment>
 {
    static final Map<String, Equipment> EQUIPMENT = new TreeMap<>();
-   private static final Map<String, String> NAMES_FR = new HashMap<>();
-   private static final Map<String, String> TEXT_FR = new HashMap<>();
    
    static
    {
       populate();
       populateFR();
+      setStats();
    }
 
-   private String name;
-   private String text;
+   private static void setStats()
+   {
+      stats.w = 600;
+      stats.h = 825;
+      stats.centerX = stats.w / 2;
+      stats.centerY = stats.h / 2;
+      
+      stats.safeMarginW = Math.round(stats.w / 100f * 12.4f);
+      stats.safeMarginH = Math.round(stats.h / 100f * 9f);
+      stats.safeW = stats.w - (stats.safeMarginW * 2);
+      stats.safeH = stats.h - (stats.safeMarginH * 2);
+
+      stats.cutMarginH = Math.round(stats.h / 100f * 4.5f);
+      stats.cutMarginW = Math.round(stats.w / 100f * 6.1f);
+
+      // size of the art on the final card
+      stats.artW = 450;
+      stats.artH = 275;
+
+      if (Factory.LANGUAGE == Language.FRENCH)
+         stats.titleFontName = "EB Garamond 12";
+      else
+         stats.titleFontName = "Bree Serif";
+         
+      stats.titleFont = new Font(stats.titleFontName, Font.PLAIN, 60);
+      stats.titleFont2 = new Font(stats.titleFontName, Font.PLAIN, 50);
+      stats.titleFont3 = new Font(stats.titleFontName, Font.PLAIN, 44);
+      // stats.titleBg = new Color(255, 215, 0); // gold
+      stats.titleBg = new Color(255, 121, 0); // orange
+         
+      stats.textFont = new Font("Cabin", Font.PLAIN, 50);
+      stats.textFont2 = new Font("Cabin", Font.PLAIN, 40);
+      
+      stats.ensembleFont = new Font(stats.titleFontName, Font.BOLD, 60);
+      stats.ensembleFont2 = new Font(stats.titleFontName, Font.BOLD, 50);
+      stats.ensembleColor = new Color(150, 150, 150); // grey
+   }
+   
+   public static ImageStats getImageStats()
+   {
+      return stats;
+   }
+   
    private String image;
    private String icon;
    private String ensemble;
@@ -38,34 +90,6 @@ public class Equipment extends Component implements Comparable<Equipment>
       }
    }
 
-   @Override
-   public String getName()
-   {
-      return name;
-   }
-
-   @Override
-   public String getName(final Language language)
-   {
-      if (language == Language.FRENCH)
-         return NAMES_FR.get(name);
-      return name;
-   }
-
-   @Override
-   public String getText()
-   {
-      return text;
-   }
-
-   @Override
-   public String getText(final Language language)
-   {
-      if (language == Language.FRENCH)
-         return TEXT_FR.get(name);
-      return text;
-   }
-
    public String getImage()
    {
       return image;
@@ -79,6 +103,8 @@ public class Equipment extends Component implements Comparable<Equipment>
 
    public String getEnsemble()
    {
+      if (Factory.LANGUAGE != Language.ENGLISH)
+         return Ensemble.ENSEMBLES.get(ensemble).getName();
       return ensemble;
    }
 
@@ -158,52 +184,52 @@ public class Equipment extends Component implements Comparable<Equipment>
    static void populateFR()
    {
       addFR("Antenna", "Antenne", "+1 en Recherche en Forêt et case Urbaine");
-      addFR("Backpack", "Sac à dos", "Ajoute 4 places  d'équipement, mais restreint le déplacement maximum à 5 par tour");
+      addFR("Backpack", "Sac à Dos", "Ajoute 4 places  d'équipement, mais restreint le déplacement maximum à 5 par tour");
       addFR("Bandana", "Bandana", "Échangeable contre une carte d'équipement d'un autre joueur (S'il accepte)");
       addFR("Batteries", "Batteries", "Vous pouvez rouler à nouveau un jet de Déplacement de 1 ou moins");
-      addFR("Belt Pack", "Sac de taille", "Ajoute 2 places d'équipement");
+      addFR("Belt Pack", "Sac de Taille", "Ajoute 2 places d'équipement");
       addFR("Binoculars", "Jumelle", "+1 au Déplacement lorsque vous roulez 4 ou plus");
-      addFR("Camel Pack", "Sac à eau", "Ajoute 2 places d'équipement");
+      addFR("Camel Pack", "Sac à Eau", "Ajoute 2 places d'équipement");
       addFR("Camera", "Caméra", "Gagner 1 point pour chaque participant à l'<em class=event>Évènement de Rencontre</em>");
       addFR("Cell Phone", "Mobile", "Vous pouvez ajouter 1 à vos jets de Recherche (Dans ce cas, gagner 1 point de moins)");
       addFR("CITO Bag", "Sac CITO", "Vous pouvez défaussez cette carte pour gagner 3 points");
       addFR("Compass", "Compas", "+1 lors de Recherche pour toutes les Multi-Caches");
-      addFR("Duct Tape", "Ruban adhésif", "Défaussez cet Équipement pour ignorer un Évènement joué contre vous");
+      addFR("Duct Tape", "Ruban Adhésif", "Défaussez cet Équipement pour ignorer un Évènement joué contre vous");
       addFR("Emergency Radio", "Radio d'urgence", "+1 au Déplacement lors d'Évènement climatique en jeu");
-      addFR("Field Guide", "Guide pratique", "Défaussez cette carte pour résoudre une cache puzzle");
-      addFR("First-aid Kit", "Trousse de premier soin", "Défaussez pour prévenir un Évènement de blessure; +4 points si utilisée sur un autre joueur");
-      addFR("Flashlight", "Lampe de poche", "+1 lors de Recherche pour les caches que personne n'a encore trouvées");
-      addFR("FRS Radio", "Radio bidirectionnelle", "Si vous roulez <em class=find>.F.</em> en vous déplaçant, vous gagnez 1 point");
+      addFR("Field Guide", "Guide Pratique", "Défaussez cette carte pour résoudre une cache puzzle");
+      addFR("First-aid Kit", "Trousse de Premier Soin", "Défaussez pour prévenir un Évènement de blessure; +4 points si utilisée sur un autre joueur");
+      addFR("Flashlight", "Lampe de Poche", "+1 lors de Recherche pour les caches que personne n'a encore trouvées");
+      addFR("FRS Radio", "Radio Bidirectionnelle", "Si vous roulez <em class=find>.F.</em> en vous déplaçant, vous gagnez 1 point");
       addFR("Gaiters", "Guêtre", "+1 lors de Déplacement sur case Marécage et lors de traversée de courant d'eau");
       addFR("Geocoin", "Géocoin", "Cette carte compte pour 3 points ou défaussez la pour 1 point");
       addFR("Gloves", "Gants", "+1 lors de Recherche pour les caches sur case Forêt de niveau 3 ou plus");
-      addFR("Gorp", "Barre tendre", "Défaussez cette carte et jouez un autre tour");
+      addFR("Gorp", "Barre Tendre", "Défaussez cette carte et jouez un autre tour");
       addFR("Hat", "Chapeau", "Vous gagnez 1 point à chaque <em class=event>Évènement de Rencontre</em> que vous participez");
       addFR("Head Lamp", "Lampe Frontale", "+2 lors de Déplacement si les 2 dés sont noirs");
-      addFR("Hiking Boots", "Bottes de randonnée", "+1 lors de Déplacement sur case Forêt");
+      addFR("Hiking Boots", "Bottes de Randonnée", "+1 lors de Déplacement sur case Forêt");
       addFR("Hiking Staff", "Bâton de Randonnée", "+1 lors de Déplacement sur case Rocheuse");
-      addFR("Insect Repellent", "Chasse moustique", "+1 lors de Recherche sur case Marécageuse");
-      addFR("Jeep", "Jeep", "+2 lors de déplacement sur case Urbaine; ajoute 1 place d'équipement");
+      addFR("Insect Repellent", "Chasse Moustique", "+1 lors de Recherche sur case Marécageuse");
+      addFR("Jeep", "Jeep", "+2 lors de Déplacement sur case Urbaine; ajoute 1 place d'équipement");
       addFR("Laptop", "Portable", "Vous pouvez résoudre les caches Puzzle en utilisant uniquement 1 des lettres");
       addFR("Letterbox Stamp", "Étampe", "+1 point lorsque vous trouvez une cache de niveau 3");
-      addFR("Long Pants", "Pantalon long", "Ajoute 1 place d'équipement");
+      addFR("Long Pants", "Pantalon Long", "Ajoute 1 place d'équipement");
       addFR("Lucky Charm", "Porte-Bonheur", "Ajouter +1 lorsque vous roulez un double");
       addFR("Map", "Carte", "+1 lors de Déplacement si un dé est blanc");
       addFR("Mirror", "Miroir", "Ignorez <em class=dnf>.D.</em> lors de Recherche sur case Urbaine");
-      addFR("Mountain Bike", "Vélo de montagne", "+1 lors de Déplacement si un des dés est 1");
+      addFR("Mountain Bike", "Vélo de Montagne", "+1 lors de Déplacement si un des dés est 1");
       addFR("Ol' Blue", "Chien Pisteur", "Vous pouvez rechercher des caches sur des cases adjacentes comme si vous y étiez");
-      addFR("Pocket Knife", "Couteau de poche", "+1 lors de Recherche sur des caches niveau 5");
+      addFR("Pocket Knife", "Couteau de Poche", "+1 lors de Recherche sur des caches niveau 5");
       addFR("Rain Jacket", "Imperméable", "Ajoute 1 place d'équipement");
-      addFR("Repair Kit", "Trousse de réparation", "Sur une cache, vous pouvez défausser pour gagner 2 points");
+      addFR("Repair Kit", "Trousse de Réparation", "Sur une cache, vous pouvez défausser pour gagner 2 points");
       addFR("Rope", "Corde", "Sur une case Rocheuse, aucun autre joueur ne peut jouer d'Évènements sur vous");
       addFR("Safari Vest", "Gilet Safari", "Ajoute 3 places d'équipement");
-      addFR("Survival Strap", "Bracelet de corde", "Vous pouvez rouler à nouveau les doubles 1");
-      addFR("Swag Bag", "Sac au trésors", "Ajout 1 place d'équipement");
-      addFR("Trail Guide", "Guide des sentiers", "Vous pouvez ajouter 1 case de déplacement le long d'un chemin chaque tour");
-      addFR("Utility Tool", "Pince multi-usage", "+1 lors de Recherche sur case Urbaine");
+      addFR("Survival Strap", "Bracelet de Corde", "Vous pouvez rouler à nouveau les doubles 1");
+      addFR("Swag Bag", "Sac au Trésors", "Ajout 1 place d'équipement");
+      addFR("Trail Guide", "Guide des Sentiers", "Vous pouvez ajouter 1 case de déplacement le long d'un chemin chaque tour");
+      addFR("Utility Tool", "Pince Multi-usage", "+1 lors de Recherche sur case Urbaine");
       addFR("Waders", "Bottes-Pantalon", "+2 lors de traversée de courant d'eau");
-      addFR("Walking Stick", "Bâton de marche", "+1 lors de Déplacement sur case Claire");
-      addFR("Water Bottle", "Bouteille d'eau", "+1 lors de Déplacement si un dé est noir");
+      addFR("Walking Stick", "Bâton de Marche", "+1 lors de Déplacement sur case Claire");
+      addFR("Water Bottle", "Bouteille d'Eau", "+1 lors de Déplacement si un dé est noir");
       addFR("Whistle", "Sifflet", "Se déplacer sur une case occupée par un autre joueur ne coute aucun point de déplacement.");
    }
 
@@ -212,12 +238,6 @@ public class Equipment extends Component implements Comparable<Equipment>
    {
       Equipment equip = new Equipment(cardName, cardText, image, icon, ensemble);
       EQUIPMENT.put(equip.getName(), equip);
-   }
-
-   private static void addFR(final String cardNameEN, final String cardNameFR, final String cardTextFR)
-   {
-      NAMES_FR.put(cardNameEN, cardNameFR);
-      TEXT_FR.put(cardNameEN, cardTextFR);
    }
 
    private static void show()
@@ -239,7 +259,7 @@ public class Equipment extends Component implements Comparable<Equipment>
 
          System.out.print("  Events: ");
          for (Event ev : Event.EVENTS.values())
-            if (ev.getEquipment().contains(eq.name) || ev.getText().contains(eq.name))
+            if (ev.getEquipment().contains(eq.name) || ev.getText().toString().contains(eq.name))
             {
                eq.usedByEvent = true;
                System.out.print(ev.getName() + ", ");
@@ -274,20 +294,144 @@ public class Equipment extends Component implements Comparable<Equipment>
       System.err.flush();
    }
 
+   public void publish() // in TheGameCrafter format
+   {
+      ImageGenerator imgGen = Factory.getImageGenerator();
+      OutputStream os = null;
+      try
+      {
+         String name = getName();
+         System.out.println(" > " + name + ": " + getText());
+         
+         BufferedImage cardImage = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
+         Graphics2D g = (Graphics2D) cardImage.getGraphics();
+
+         File face = new File(Factory.ROOT + "Cards/Equipment/Equipment Face.png");
+         if (face.exists())
+         {
+            BufferedImage background = ImageIO.read(face);
+            g.drawImage(background, 0, 0, null);
+         }
+
+         imgGen.paintGrid(g);
+         int titleHeight = imgGen.paintTitleLeft(g, this);
+         int titleBottom =  stats.safeMarginH + 2 + titleHeight;
+         if (getImage() != null)
+            imgGen.paintArt(g, getImage(), titleBottom + 35);
+         if (getIcon() != null)
+            imgGen.paintIcon(g, getIcon(), 70);
+         int ensembleHeight = paintEnsemble(g);
+         int top = (stats.h / 2);
+         int bottom = stats.h - stats.safeMarginH - ensembleHeight;
+         imgGen.paintText(g, this, top, bottom, 4);
+         hackIcons(g);
+
+         // safe box
+         g.setColor(Color.BLUE);
+         g.setStroke(ImageGenerator.DASHED);
+         // g.drawRect(stats.safeMarginW, stats.safeMarginH, stats.safeW, stats.safeH);
+         
+         g.dispose();
+         cardImage.flush();
+         
+         String path = Factory.getRoot() + "Cards/Equipment/";
+         File file = new File(path + name.replaceAll("[?!]", "") + ".png");
+         os = new FileOutputStream(file);
+         ImageTools.saveAs(cardImage, "png", os, 0f);
+      }
+      catch (Exception x)
+      {
+         x.printStackTrace();
+      }
+      finally
+      {
+         imgGen.close(os);
+      }
+   }
+   
+   private int paintEnsemble(final Graphics2D g)
+   {
+      String ensemble = getEnsemble();
+      g.setFont(stats.ensembleFont);
+      FontMetrics fm = g.getFontMetrics(stats.ensembleFont);
+      int textHeight = fm.getHeight();
+      int textWidth = fm.stringWidth(ensemble);
+      if (textWidth > stats.safeW)
+      {
+         System.out.println(" [ENSEMBLE TOO WIDE] > " + getName() + ": " + ensemble);
+         g.setFont(stats.ensembleFont2);
+         fm = g.getFontMetrics(stats.ensembleFont2);
+         textHeight = fm.getHeight();
+         textWidth = fm.stringWidth(ensemble);
+     }
+      
+      // background
+      g.setColor(stats.ensembleColor);
+      int top = stats.h - stats.safeMarginH - textHeight - 2;
+      g.fillRect(0, top, stats.w, textHeight);
+      // borders
+      g.setColor(Color.BLACK);
+      Stroke origStroke = g.getStroke();
+      g.setStroke(ImageGenerator.STROKE3);
+      int y = top - 1;
+      g.drawLine(0, y, stats.w, y);
+      y = stats.h - stats.safeMarginH - 1;
+      g.drawLine(0, y, stats.w, y);
+      g.setStroke(origStroke);
+      
+      // text
+      g.setColor(Color.BLACK);
+      int left = (stats.w - textWidth) / 2;
+      int bottom = top + textHeight - 15;
+      g.drawString(ensemble, left, bottom); // lower-left
+      
+      return textHeight;
+   }
+
+   private void hackIcons(final Graphics2D g)
+   {
+      ImageGenerator imgGen = Factory.getImageGenerator();
+      String name = getNameEnglish();
+      
+      if (name.equals("Backpack"))
+         imgGen.addIcon(g, Factory.ART_DIR + "Icons/Move 5 Cap.png", 100, 100, stats.centerX + 130, stats.safeMarginH + 105);
+      else if (name.equals("FRS Radio"))
+      {
+         int x = Factory.LANGUAGE == Language.FRENCH ? 390 : 315;
+         imgGen.addIcon(g, Factory.ART_DIR + "Icons/Roll FIND.png", 58, 58, x, stats.centerY + 68);
+      }
+      else if (name.equals("Jeep"))
+         imgGen.addIcon(g, Factory.ART_DIR + "Icons/Move 2.png", 100, 100, stats.centerX + 50, stats.safeMarginH + 5);
+      else if (name.equals("Lucky Charm"))
+         imgGen.addIcon(g, Factory.ART_DIR + "Icons/Roll +1.png", 90, 90, stats.centerX + 150, stats.safeMarginH);
+      else if (name.equals("Mirror"))
+      {
+         int x = Factory.LANGUAGE == Language.FRENCH ? 280 : 322;
+         imgGen.addIcon(g, Factory.ART_DIR + "Icons/Roll DNF.png", 60, 60, x, stats.centerY + 64);
+      }
+   }
+   
    public static void main(final String[] args)
    {
+      /*
       HtmlGenerator htmlGen = new HtmlGenerator(12, 4);
       htmlGen.printEquipment(EQUIPMENT);
 
-      ImageGenerator imgGen = new ImageGenerator(ImageStats.getEquipmentStats(Language.ENGLISH), false);
+      ImageStats stats = Equipment.getStats(Language.ENGLISH);
+      ImageGenerator imgGen = new ImageGenerator(stats, false);
       for (Equipment eq : EQUIPMENT.values())
-         imgGen.publish(eq);
+         eq.publish(imgGen);
       System.out.println();
       
-      imgGen = new ImageGenerator(ImageStats.getEquipmentStats(Language.FRENCH), false);
+      stats = Equipment.getStats(Language.FRENCH);
+      imgGen = new ImageGenerator(stats, false);
       for (Equipment eq : EQUIPMENT.values())
-         imgGen.publish(eq);
+      {
+         eq.setLanguage(Language.FRENCH);
+         eq.publish(imgGen);
+      }
       System.out.println();
+      */
       
       show();
       validate();

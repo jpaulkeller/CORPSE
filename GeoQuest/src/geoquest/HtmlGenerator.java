@@ -54,7 +54,8 @@ public class HtmlGenerator
 
       out.print("<td style=\"" + " background-image: url(images/rules/TravelBug.png); " + " font-family: arial;" +
                 " font-size: small;" + " color: black;" + "\" align=center height=70 width=113>");
-      out.print("<b>" + token.getName().replace(" ",  "&nbsp;") + "</b><br/>" + token.getText().replace("\n", "<br/>"));
+      out.print("<b>" + token.getName().replace(" ",  "&nbsp;") + "</b><br/>" + 
+                token.getText().toString().replace("\n", "<br/>"));
       out.println("</td>");
 
       if (i % cardsPerRow == cardsPerRow - 1)
