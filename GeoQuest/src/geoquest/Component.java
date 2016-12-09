@@ -1,24 +1,39 @@
 package geoquest;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public abstract class Component
 {
-   public abstract String getName();
+   protected static final Map<String, String> NAMES_FR = new HashMap<>();
+   protected static final Map<String, CharSequence> TEXT_FR = new HashMap<>();
+   protected static final ImageStats stats = new ImageStats();
    
-   public String getName(final Language language)
-   {
-      return getName();
-   }
-   
-   public abstract String getText();
+   protected String name;
+   protected CharSequence text;
 
-   public String getText(final Language language)
+   public String getNameEnglish()
    {
-      return getText();
+      return name;
    }
    
-   public String getTextForImage(final Language language)
+   public String getName()
    {
-      String s = getText(language);
+      if (Factory.LANGUAGE == Language.FRENCH)
+         return NAMES_FR.get(name);
+      return name;
+   }
+
+   public CharSequence getText()
+   {
+      if (Factory.LANGUAGE == Language.FRENCH)
+         return TEXT_FR.get(name);
+      return text;
+   }
+   
+   public String getTextForImage()
+   {
+      String s = getText().toString();
       s = s.replace("<em class=", "<");
       return s;
    }
@@ -26,6 +41,13 @@ public abstract class Component
    public String getIcon()
    {
       return null;
+   }
+
+   public static void addFR(final String cardNameEN, final String cardNameFR, final String cardTextFR)
+   {
+      NAMES_FR.put(cardNameEN, cardNameFR);
+      if (cardTextFR != null)
+         TEXT_FR.put(cardNameEN, cardTextFR);
    }
 
    public int hashCode()

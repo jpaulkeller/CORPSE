@@ -118,7 +118,7 @@ public final class CardUtils
       System.out.println();
    }
 
-   private static void checkCard(final Pattern pattern, final String textToCheck, final String source)
+   private static void checkCard(final Pattern pattern, final CharSequence textToCheck, final String source)
    {
       if (textToCheck != null)
       {
