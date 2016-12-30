@@ -19,6 +19,7 @@ import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
 
+import file.FileUtils;
 import str.StringUtils;
 import utils.ImageTools;
 
@@ -549,7 +550,7 @@ public class Event extends Component implements Comparable<Event>
       System.out.flush();
    }
 
-   public void publish() // in TheGameCrafter format
+   public void publishTGC() // in TheGameCrafter format
    {
       ImageGenerator imgGen = Factory.getImageGenerator();
       
@@ -679,36 +680,78 @@ public class Event extends Component implements Comparable<Event>
          imgGen.addIcon(g, Factory.ART_DIR + "Icons/Move 2.png", 150, 150, 515, 80);
    }
    
-   public static void main(final String[] args)
+   private static void publishTTS() // for Tabletop Simulator
    {
-      // showEvents();
+      int columns = 7;
+      int rows = 7;
       
-      /*
+      List<String> lines = new ArrayList<>();
+      List<String> lines2 = new ArrayList<>();
+      lines.add("# Save File");
+      lines.add("cardsx=" + columns);
+      lines.add("cardsy=" + rows);
+      lines.add("card-width=825");
+      lines.add("card-height=1125");
+      lines.add("zoom=0.15");
+      lines.add("background-color=-16777216");
+      lines2.addAll(lines);
+
+      String path = Factory.TGC.replace(":", "\\:").replace("/", "\\\\");
+      int col = 0, row = 0;
+      
+      for (Event event : EVENTS.values())
+      {
+         if ((col + 1) * (row + 1) <= (columns * rows))
+            lines.add(col + "_" + row + "=" + path + "Cards\\\\Events\\\\" + event.getName() + ".png");
+         else
+            lines2.add(col + "_" + (row - rows) + "=" + path + "Cards\\\\Events\\\\" + event.getName() + ".png");
+         
+         col++;
+         if (col == columns)
+         {
+            col = 0;
+            row++;
+         }
+      }
+      
+      // TODO: add "col_row=null" up to 49
+      
+      path = Factory.TTS + "Cards/Events.tsdb";
+      FileUtils.writeList(lines, path, false);
+      System.out.println("Tabletop Simulator: " + path);
+      
+      path = Factory.TTS + "Cards/Events2.tsdb";
+      FileUtils.writeList(lines2, path, false);
+      System.out.println("Tabletop Simulator: " + path);
+      
+      System.out.println();
+   }
+   
+   public static void publish()
+   {
+      Factory.setImageStats(Event.getImageStats());
+      
       HtmlGenerator htmlGen = new HtmlGenerator(9, 3);
       htmlGen.printEvents(EVENTS);
 
-      ImageStats stats = Event.getStats(Language.ENGLISH);
-      ImageGenerator imgGen = new ImageGenerator(stats, false);
-      
-      // TODO
       // for (Event event : EVENTS.values())
-         // event.publish(imgGen);
-      // System.out.println();
+      //    event.publishTGC();
+      System.out.println();
+      
+      publishTTS();
 
-      stats = Event.getStats(Language.FRENCH);
-      imgGen = new ImageGenerator(stats, false);
+      /*
+      Factory.setLanguage(Language.FRENCH);
       for (Event event : EVENTS.values())
-      {
-         event.setLanguage(Language.FRENCH);
-         if (event.getName() != null)
-         {
-            System.out.println("  : " + event.getTextForImage()); // TODO
-            event.publish(imgGen);
-         }
-      }
+         event.publishTGC();
       System.out.println();
       */
+   }
 
-      validate();
+   public static void main(final String[] args)
+   {
+      // Event.showEvents();
+      Event.validate();
+      Event.publish();
    }
 }

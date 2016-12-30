@@ -8,11 +8,14 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
 import javax.imageio.ImageIO;
 
+import file.FileUtils;
 import str.StringUtils;
 import utils.ImageTools;
 
@@ -163,7 +166,7 @@ public class Cacher extends Component implements Comparable<Cacher>
       System.out.println();
    }
 
-   public void publish() // in TheGameCrafter format
+   public void publishTGC() // in TheGameCrafter format
    {
       ImageGenerator imgGen = Factory.getImageGenerator();
       OutputStream os = null;
@@ -175,7 +178,7 @@ public class Cacher extends Component implements Comparable<Cacher>
          BufferedImage cardImage = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
          Graphics2D g = (Graphics2D) cardImage.getGraphics();
          
-         File face = new File(Factory.ROOT + "Cards/Cachers/Cacher Face.png"); // use ROOT to ignore language
+         File face = new File(Factory.TGC + "Cards/Cachers/Cacher Face.png"); // use ROOT to ignore language
          if (face.exists())
          {
             BufferedImage background = ImageIO.read(face);
@@ -185,7 +188,7 @@ public class Cacher extends Component implements Comparable<Cacher>
          imgGen.paintGrid(g);
          int titleHeight = imgGen.paintTitleRight(g, this);
          int titleBottom =  stats.safeMarginH + 2 + titleHeight;
-         imgGen.addIcon(g, Factory.ART_DIR + "Cards/Cachers/Letter Box.png", 150, 150, stats.safeMarginW + 5, stats.safeMarginH + 5);
+         imgGen.addIcon(g, Factory.TGC + "Cards/Cachers/Letter Box.png", 150, 150, stats.safeMarginW + 5, stats.safeMarginH + 5);
          
          // letter
          g.setFont(stats.letterFont);
@@ -207,7 +210,7 @@ public class Cacher extends Component implements Comparable<Cacher>
          g.dispose();
          cardImage.flush();
          
-         String path = Factory.getRoot() + "Cards/Cachers/";
+         String path = Factory.getTGC() + "Cards/Cachers/";
          File file = new File(path + cardName.replaceAll("[?!]", "") + ".png");
          os = new FileOutputStream(file);
          ImageTools.saveAs(cardImage, "png", os, 0f);
@@ -237,8 +240,64 @@ public class Cacher extends Component implements Comparable<Cacher>
          imgGen.addIcon(g, Factory.ART_DIR + "Icons/Roll FIND.png", 80, 80, 620, 257);
    }
    
+   private static void publishTTS() // for Tabletop Simulator
+   {
+      int columns = 4;
+      int rows = CACHERS.size() / columns;
+      
+      List<String> lines = new ArrayList<>();
+      lines.add("# Save File");
+      lines.add("cardsx=" + columns);
+      lines.add("cardsy=" + rows);
+      lines.add("card-width=825");
+      lines.add("card-height=600");
+      lines.add("zoom=0.2");
+      lines.add("background-color=-16777216");
+
+      String path = Factory.TGC.replace(":", "\\:").replace("/", "\\\\");
+      int col = 0, row = 0;
+      
+      for (Cacher cacher : CACHERS.values())
+      {
+         lines.add(col + "_" + row + "=" + path + "Cards\\\\Cachers\\\\" + cacher.getName() + ".png");
+         col++;
+         if (col == columns)
+         {
+            col = 0;
+            row++;
+         }
+      }
+      
+      path = Factory.TTS + "Cards/Cachers.tsdb";
+      FileUtils.writeList(lines, path, false);
+      System.out.println("Tabletop Simulator: " + path);
+      System.out.println();
+   }
+   
+   public static void publish()
+   {
+      Factory.setImageStats(Cacher.getImageStats());
+      
+      HtmlGenerator htmlGen = new HtmlGenerator(12, 3);
+      htmlGen.printCachers(Cacher.CACHERS);
+
+      // for (Cacher cacher : Cacher.CACHERS.values())
+      //    cacher.publishTGC();
+      System.out.println();
+      
+      publishTTS();
+
+      /*
+      Factory.setLanguage(Language.FRENCH);
+      for (Cacher cacher : Cacher.CACHERS.values())
+         cacher.publishTGC();
+      System.out.println();
+      */
+   }
+
    public static void main(final String[] args)
    {
-      show();
+      Cacher.show();
+      Cacher.publish();
    }
 }

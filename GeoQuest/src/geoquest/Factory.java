@@ -3,6 +3,8 @@ package geoquest;
 public class Factory
 {
    public static final String ROOT = "G:/pkgs/workspace/GeoQuest/docs/";
+   public static final String TGC = ROOT + "The Game Crafter/";
+   public static final String TTS = ROOT + "Tabletop Simulator/";
    public static final String ART_DIR = ROOT;
    public static Language LANGUAGE = Language.ENGLISH;
    
@@ -19,6 +21,13 @@ public class Factory
       if (LANGUAGE == Language.FRENCH)
          return ROOT + Language.FRENCH + "/";
       return ROOT;
+   }
+
+   public static String getTGC()
+   {
+      if (LANGUAGE == Language.FRENCH)
+         return TGC + Language.FRENCH + "/";
+      return TGC;
    }
 
    public static void setImageStats(final ImageStats stats)
