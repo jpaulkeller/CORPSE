@@ -16,6 +16,8 @@ import utils.ImageTools;
 
 public class TravelBug extends Component implements Comparable<TravelBug>
 {
+   static final String TGC_TB_DIR = Factory.TGC + "Tokens/Travel Bugs/";
+   
    static final Map<String, TravelBug> BUGS = new TreeMap<>();
    static
    {
@@ -148,7 +150,7 @@ public class TravelBug extends Component implements Comparable<TravelBug>
       BUGS.put(name, new TravelBug(name, goal));
    }
 
-   public void publish(final int index) // in TheGameCrafter format
+   public void publishTGC(final int index) // in TheGameCrafter format
    {
       ImageGenerator imgGen = Factory.getImageGenerator();
       ImageStats stats = Factory.getImageStats();
@@ -162,7 +164,7 @@ public class TravelBug extends Component implements Comparable<TravelBug>
          BufferedImage image = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
          Graphics2D g = (Graphics2D) image.getGraphics();
 
-         File face = new File(Factory.ROOT + "Tokens/Travel Bugs/TB Face.png");
+         File face = new File(Factory.TGC + "Tokens/Travel Bugs/TB Face.png");
          if (face.exists())
          {
             BufferedImage background = ImageIO.read(face);
@@ -183,7 +185,51 @@ public class TravelBug extends Component implements Comparable<TravelBug>
          g.dispose();
          image.flush();
 
-         String path = Factory.getRoot() + "Tokens/Travel Bugs/";
+         String path = Factory.getTGC() + "Tokens/Travel Bugs/";
+         File file = new File(path + "TB " + name.replaceAll("[^A-Za-z ]", "") + ".png");
+         os = new FileOutputStream(file);
+         ImageTools.saveAs(image, "png", os, 0f);
+      }
+      catch (Exception x)
+      {
+         x.printStackTrace();
+      }
+      finally
+      {
+         imgGen.close(os);
+      }
+   }
+   
+   public void publishTTS(final int index) // for Tabletop Simulator
+   {
+      ImageGenerator imgGen = Factory.getImageGenerator();
+      ImageStats stats = Factory.getImageStats();
+      OutputStream os = null;
+      
+      try
+      {
+         String name = getName();
+         System.out.println(" " + index + ") " + name + ": " + getText().toString().replaceAll("\n", " "));
+         
+         BufferedImage image = new BufferedImage(150, 150, BufferedImage.TYPE_INT_ARGB);
+         Graphics2D g = (Graphics2D) image.getGraphics();
+
+         File face = new File(TGC_TB_DIR + "TB Face.png");
+         if (face.exists())
+         {
+            BufferedImage background = ImageIO.read(face);
+            g.drawImage(background, 0, 0, null);
+         }
+         
+         String[] lines = Token.tokenize(getText().toString(), "\n");
+         g.setFont(stats.textFont);
+         g.setColor(Color.BLACK);
+         imgGen.paintTextTTS(g, name, lines);
+
+         g.dispose();
+         image.flush();
+
+         String path = Factory.TTS + "Tokens/Travel Bugs/";
          File file = new File(path + "TB " + name.replaceAll("[^A-Za-z ]", "") + ".png");
          os = new FileOutputStream(file);
          ImageTools.saveAs(image, "png", os, 0f);
@@ -203,14 +249,18 @@ public class TravelBug extends Component implements Comparable<TravelBug>
       Factory.setImageStats(ImageStats.getShardStats(32));
       int i = 1;
       for (TravelBug tb : BUGS.values())
-         tb.publish(i++);
+      {
+         // tb.publishTGC(i);
+         tb.publishTTS(i);
+         i++;
+      }
       System.out.println();
       
       Factory.setLanguage(Language.FRENCH);
       i = 1;
       for (TravelBug tb : BUGS.values())
          if (tb.getText() != null)
-            tb.publish(i++);
+            ; // tb.publishTGC(i++);
       System.out.println();
    }
 }

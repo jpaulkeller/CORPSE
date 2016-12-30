@@ -16,8 +16,6 @@ import utils.ImageTools;
 
 public class Puzzle extends Component implements Comparable<Puzzle>
 {
-   private static final String TB_DIR = "G:/pkgs/workspace/GeoQuest/docs/Tokens/Travel Bugs/";
-   
    static final List<Puzzle> PUZZLES = new ArrayList<>();
    static final List<Puzzle> PUZZLES_FR = new ArrayList<>();
    static
@@ -148,7 +146,7 @@ public class Puzzle extends Component implements Comparable<Puzzle>
       PUZZLES_FR.add(new Puzzle("Choses\nque vous\nPortez"));
    }
 
-   public void publish(final int index) // in TheGameCrafter format
+   public void publishTGC(final int index) // in TheGameCrafter format
    {
       ImageGenerator imgGen = Factory.getImageGenerator();       
       ImageStats stats = Factory.getImageStats();
@@ -162,7 +160,7 @@ public class Puzzle extends Component implements Comparable<Puzzle>
          BufferedImage image = new BufferedImage(stats.w, stats.h, BufferedImage.TYPE_INT_ARGB);
          Graphics2D g = (Graphics2D) image.getGraphics();
 
-         File face = new File(Factory.ROOT + "Tokens/Puzzles/Puzzle Face.png");
+         File face = new File(Factory.TGC + "Tokens/Puzzles/Puzzle Face.png");
          if (face.exists())
          {
             BufferedImage background = ImageIO.read(face);
@@ -171,7 +169,7 @@ public class Puzzle extends Component implements Comparable<Puzzle>
          
          if (imgGen.getDrawBoxes())
          {
-            BufferedImage background = ImageIO.read(new File(TB_DIR + "TB Borders.png"));
+            BufferedImage background = ImageIO.read(new File(TravelBug.TGC_TB_DIR + "TB Borders.png"));
             g.drawImage(background, 0, 0, null);
          }
 
@@ -183,7 +181,51 @@ public class Puzzle extends Component implements Comparable<Puzzle>
          g.dispose();
          image.flush();
          
-         String path = Factory.getRoot() + "Tokens/Puzzles/";
+         String path = Factory.getTGC() + "Tokens/Puzzles/";
+         File file = new File(path + "PZ " + name.replaceAll("[^-A-Za-z0-9& ]", "") + ".png");
+         os = new FileOutputStream(file);
+         ImageTools.saveAs(image, "png", os, 0f);
+      }
+      catch (Exception x)
+      {
+         x.printStackTrace();
+      }
+      finally
+      {
+         imgGen.close(os);
+      }
+   }
+   
+   public void publishTTS(final int index) // for Tabletop Simulator
+   {
+      ImageGenerator imgGen = Factory.getImageGenerator();       
+      ImageStats stats = Factory.getImageStats();
+      
+      OutputStream os = null;
+      try
+      {
+         String name = getName().replace("\n", " ");
+         System.out.println(" " + index + ") " + name);
+         
+         BufferedImage image = new BufferedImage(150, 150, BufferedImage.TYPE_INT_ARGB);
+         Graphics2D g = (Graphics2D) image.getGraphics();
+
+         File face = new File(Factory.TGC + "Tokens/Puzzles/Puzzle Face.png");
+         if (face.exists())
+         {
+            BufferedImage background = ImageIO.read(face);
+            g.drawImage(background, 0, 0, null);
+         }
+         
+         String[] lines = Token.tokenize(getName(), "\n");
+         g.setFont(stats.textFont);
+         g.setColor(Color.BLACK);
+         imgGen.paintTextTTS(g, name, lines);
+
+         g.dispose();
+         image.flush();
+         
+         String path = Factory.TTS + "Tokens/Puzzles/";
          File file = new File(path + "PZ " + name.replaceAll("[^-A-Za-z0-9& ]", "") + ".png");
          os = new FileOutputStream(file);
          ImageTools.saveAs(image, "png", os, 0f);
@@ -203,12 +245,16 @@ public class Puzzle extends Component implements Comparable<Puzzle>
       Factory.setImageStats(ImageStats.getShardStats(36));
       int i = 1;
       for (Puzzle puzzle : PUZZLES)
-         puzzle.publish(i++);
+      {
+         // puzzle.publishTGC(i);
+         puzzle.publishTTS(i);
+         i++;
+      }
       System.out.println();
       
       Factory.setLanguage(Language.FRENCH);
       i = 1;
       for (Puzzle puzzle : PUZZLES_FR)
-         puzzle.publish(i++);
+         ; // puzzle.publishTGC(i++);
    }
 }

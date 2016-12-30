@@ -81,6 +81,23 @@ public class ImageGenerator
       }
    }
 
+   public void paintTextTTS(final Graphics2D g, final String name, final String[] lines)
+   {
+      g.setColor(Color.BLACK);
+      g.setFont(stats.textFont);
+      FontMetrics fm = g.getFontMetrics(stats.textFont);
+      int lineHeight = fm.getHeight() - 5;
+      int textHeight = lines.length * lineHeight;
+      
+      int y = ((150 - textHeight) / 2) + lineHeight;
+      for (String line : lines)
+      {
+         int x = (150 - fm.stringWidth(line)) / 2;
+         g.drawString(line, x, y); // lower-left
+         y += lineHeight;
+      }
+   }
+
    public void paintGrid(final Graphics2D g)
    {
       if (drawBoxes)

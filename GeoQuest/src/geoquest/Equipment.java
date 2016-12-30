@@ -9,11 +9,14 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
 import javax.imageio.ImageIO;
 
+import file.FileUtils;
 import utils.ImageTools;
 
 public class Equipment extends Component implements Comparable<Equipment>
@@ -294,7 +297,7 @@ public class Equipment extends Component implements Comparable<Equipment>
       System.err.flush();
    }
 
-   public void publish() // in TheGameCrafter format
+   public void publishTGC() // in TheGameCrafter format
    {
       ImageGenerator imgGen = Factory.getImageGenerator();
       OutputStream os = null;
@@ -411,29 +414,65 @@ public class Equipment extends Component implements Comparable<Equipment>
       }
    }
    
-   public static void main(final String[] args)
+   private static void publishTTS() // for Tabletop Simulator
    {
-      /*
+      int columns = 8;
+      int rows = EQUIPMENT.size() / columns;
+      
+      List<String> lines = new ArrayList<>();
+      lines.add("# Save File");
+      lines.add("cardsx=" + columns);
+      lines.add("cardsy=" + rows);
+      lines.add("card-width=600");
+      lines.add("card-height=825");
+      lines.add("zoom=0.25");
+      lines.add("background-color=-16777216");
+
+      String path = Factory.TGC.replace(":", "\\:").replace("/", "\\\\");
+      int col = 0, row = 0;
+      
+      for (Equipment eq : EQUIPMENT.values())
+      {
+         lines.add(col + "_" + row + "=" + path + "Cards\\\\Equipment\\\\" + eq.getName() + ".png");
+         col++;
+         if (col == columns)
+         {
+            col = 0;
+            row++;
+         }
+      }
+      
+      path = Factory.TTS + "Cards/Equipment.tsdb";
+      FileUtils.writeList(lines, path, false);
+      System.out.println("Tabletop Simulator: " + path);
+      System.out.println();
+   }
+   
+   public static void publish()
+   {
+      Factory.setImageStats(Equipment.getImageStats());
+      
       HtmlGenerator htmlGen = new HtmlGenerator(12, 4);
       htmlGen.printEquipment(EQUIPMENT);
 
-      ImageStats stats = Equipment.getStats(Language.ENGLISH);
-      ImageGenerator imgGen = new ImageGenerator(stats, false);
-      for (Equipment eq : EQUIPMENT.values())
-         eq.publish(imgGen);
+      // for (Equipment eq : EQUIPMENT.values())
+      //    eq.publishTGC();
       System.out.println();
       
-      stats = Equipment.getStats(Language.FRENCH);
-      imgGen = new ImageGenerator(stats, false);
+      publishTTS();
+
+      /*
+      Factory.setLanguage(Language.FRENCH);
       for (Equipment eq : EQUIPMENT.values())
-      {
-         eq.setLanguage(Language.FRENCH);
-         eq.publish(imgGen);
-      }
+         eq.publishTGC();
       System.out.println();
       */
-      
+   }
+
+   public static void main(final String[] args)
+   {
       show();
       validate();
+      publish();
    }
 }

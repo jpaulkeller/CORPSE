@@ -207,7 +207,7 @@ public class Ensemble extends Component implements Comparable<Ensemble>
       System.out.flush();
    }
 
-   public void publish() // in TheGameCrafter format
+   public void publishTGC() // in TheGameCrafter format
    {
       ImageGenerator imgGen = Factory.getImageGenerator();
       OutputStream os = null;
@@ -299,30 +299,27 @@ public class Ensemble extends Component implements Comparable<Ensemble>
       else if (name.equals("Weatherman"))
          imgGen.addIcon(g, Factory.ART_DIR + "Icons/Point +2.png", 90, 90, 665, 70);
    }
-   
+
+   public static void publish()
+   {
+      Factory.setImageStats(Ensemble.getImageStats());
+      
+      HtmlGenerator htmlGen = new HtmlGenerator(12, 3);
+      htmlGen.printEnsembles(ENSEMBLES);
+
+      for (Ensemble ensemble : ENSEMBLES.values())
+         ensemble.publishTGC();
+      System.out.println();
+
+      Factory.setLanguage(Language.FRENCH);
+      for (Ensemble ensemble : ENSEMBLES.values())
+         ensemble.publishTGC();
+      System.out.println();
+   }
+
    public static void main(final String[] args)
    {
       validate();
-      
-      /*
-      HtmlGenerator htmlGen = new HtmlGenerator(12, 3);
-      htmlGen.printEnsembles(ENSEMBLES);
-      System.out.println();
-      
-      ImageStats stats = Ensemble.getStats(Language.ENGLISH);
-      ImageGenerator imgGen = new ImageGenerator(stats, false);
-      for (Ensemble ensemble : ENSEMBLES.values())
-         ensemble.publish(imgGen);
-      System.out.println();
-
-      stats = Ensemble.getStats(Language.FRENCH);
-      imgGen = new ImageGenerator(stats, false);
-      for (Ensemble ensemble : ENSEMBLES.values())
-      {
-         ensemble.setLanguage(Language.FRENCH);
-         ensemble.publish(imgGen);
-      }
-      System.out.println();
-      */
+      Ensemble.publish();
    }
 }
